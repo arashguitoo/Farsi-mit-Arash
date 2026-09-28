@@ -1,0 +1,586 @@
+{
+ "id": "ug",
+ "art": "umgangssprache",
+ "titel": "Umgangssprache: So spricht man im Alltag",
+ "beschreibung": "Freiwilliger Extra-Teil. Die Lektionen üben die Schriftsprache – hier hörst und liest du, wie Persisch im Gespräch klingt.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "Schreiben ≠ Sprechen",
+   "vorschau": "خوب اَست → خوبِه",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Zwei Arten Persisch",
+     "text": "<p>Persisch wird anders <b>geschrieben</b> als <b>gesprochen</b>. In den Lektionen lernst du die <b>Schriftsprache</b> – die verstehen alle, und sie gilt in Texten und Prüfungen. Hier siehst du, wie man im <b>Alltag</b> spricht:</p><ul><li><span class='fa'>اَست</span> wird zu <b>-e</b>: <span class='fa'>خوب اَست → خوبِه</span> <i>chūbe</i></li><li><b>-īd</b> wird zu <b>-īn</b>: <span class='fa'>خوب هَستید → خوبین</span> <i>chūbīn</i></li><li><b>-and</b> wird zu <b>-an</b>: <span class='fa'>خوب هَستَند → خوبَن</span> <i>chūban</i></li><li><b>ān</b> wird oft zu <b>ūn</b>: <span class='fa'>آنها → اونا</span> <i>ūnā</i></li><li><span class='fa'>بَله</span> → <span class='fa'>آرِه</span> <i>āre</i></li></ul>",
+     "stil": "merke",
+     "beispiele": [
+      {
+       "fa": "خوبِه",
+       "tr": "chūbe",
+       "de": "er/sie ist gut"
+      },
+      {
+       "fa": "خوبین",
+       "tr": "chūbīn",
+       "de": "ihr seid / Sie sind gut"
+      },
+      {
+       "fa": "خوبَن",
+       "tr": "chūban",
+       "de": "sie sind gut"
+      },
+      {
+       "fa": "اونا",
+       "tr": "ūnā",
+       "de": "sie (Mehrzahl)"
+      },
+      {
+       "fa": "آرِه",
+       "tr": "āre",
+       "de": "ja"
+      }
+     ]
+    },
+    {
+     "typ": "paare",
+     "links": "x",
+     "paare": [
+      {
+       "fa": "خوب اَست",
+       "tr": "chūb ast",
+       "de": "er/sie ist gut",
+       "x": "خوبِه"
+      },
+      {
+       "fa": "خوب هَستید",
+       "tr": "chūb hastīd",
+       "de": "ihr seid / Sie sind gut",
+       "x": "خوبین"
+      },
+      {
+       "fa": "خوب هَستَند",
+       "tr": "chūb hastand",
+       "de": "sie sind gut",
+       "x": "خوبَن"
+      },
+      {
+       "fa": "آنها",
+       "tr": "ānhā",
+       "de": "sie (Mehrzahl)",
+       "x": "اونا"
+      },
+      {
+       "fa": "بَله",
+       "tr": "bale",
+       "de": "ja",
+       "x": "آرِه"
+      },
+      {
+       "fa": "مُعَلِّم اَست",
+       "tr": "moʿallem ast",
+       "de": "er/sie ist Lehrer/in",
+       "x": "مُعَلِّمِه"
+      }
+     ],
+     "titel": "Schrift ↔ Gespräch",
+     "text": "Welche gesprochene Form gehört zur geschriebenen?"
+    },
+    {
+     "typ": "sortieren",
+     "titel": "Schrift oder Gespräch?",
+     "frage": "Ist das Schriftsprache oder Umgangssprache?",
+     "kategorien": [
+      "✍️ Schriftsprache",
+      "🗣️ Umgangssprache"
+     ],
+     "items": [
+      {
+       "fa": "خوب اَست",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "خوب هَستید",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "خوب هَستَند",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "آنها",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "بَله",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "خوبِه",
+       "k": 1,
+       "e": "<i>chūbe</i> – geschrieben: <span class='fa'>خوب اَست</span>",
+       "say": false
+      },
+      {
+       "fa": "خوبین",
+       "k": 1,
+       "e": "<i>chūbīn</i> – geschrieben: <span class='fa'>خوب هَستید</span>",
+       "say": false
+      },
+      {
+       "fa": "خوبَن",
+       "k": 1,
+       "e": "<i>chūban</i> – geschrieben: <span class='fa'>خوب هَستَند</span>",
+       "say": false
+      },
+      {
+       "fa": "اونا",
+       "k": 1,
+       "e": "<i>ūnā</i> – geschrieben: <span class='fa'>آنها</span>",
+       "say": false
+      },
+      {
+       "fa": "آرِه",
+       "k": 1,
+       "e": "<i>āre</i> – geschrieben: <span class='fa'>بَله</span>",
+       "say": false
+      },
+      {
+       "fa": "مَمنون",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "مِرسی",
+       "k": 1,
+       "say": false,
+       "e": "<i>mersī</i> – aus dem Französischen, sehr häufig im Gespräch"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Zurück in die Schriftsprache",
+     "fragen": [
+      {
+       "frage": "Wie schreibt man <span class='fa'>خوبِه</span> in der Schriftsprache?",
+       "optionen": [
+        "خوب اَست",
+        "بَله",
+        "خوب هَستَند"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "erkl": "<i>chūbe</i> → <span class='fa'>خوب اَست</span> <i>chūb ast</i>"
+      },
+      {
+       "frage": "Wie schreibt man <span class='fa'>خوبین</span> in der Schriftsprache?",
+       "optionen": [
+        "خوب هَستید",
+        "خوب اَست",
+        "مُعَلِّم اَست"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "erkl": "<i>chūbīn</i> → <span class='fa'>خوب هَستید</span> <i>chūb hastīd</i>"
+      },
+      {
+       "frage": "Wie schreibt man <span class='fa'>خوبَن</span> in der Schriftsprache?",
+       "optionen": [
+        "خوب هَستَند",
+        "آنها",
+        "خوب هَستید"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "erkl": "<i>chūban</i> → <span class='fa'>خوب هَستَند</span> <i>chūb hastand</i>"
+      },
+      {
+       "frage": "Wie schreibt man <span class='fa'>اونا</span> in der Schriftsprache?",
+       "optionen": [
+        "آنها",
+        "بَله",
+        "مُعَلِّم اَست"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "erkl": "<i>ūnā</i> → <span class='fa'>آنها</span> <i>ānhā</i>"
+      },
+      {
+       "frage": "Wie schreibt man <span class='fa'>آرِه</span> in der Schriftsprache?",
+       "optionen": [
+        "بَله",
+        "مُعَلِّم اَست",
+        "خوب هَستید"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "erkl": "<i>āre</i> → <span class='fa'>بَله</span> <i>bale</i>"
+      },
+      {
+       "frage": "Wie schreibt man <span class='fa'>مُعَلِّمِه</span> in der Schriftsprache?",
+       "optionen": [
+        "مُعَلِّم اَست",
+        "خوب هَستَند",
+        "آنها"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "erkl": "<i>moʿalleme</i> → <span class='fa'>مُعَلِّم اَست</span> <i>moʿallem ast</i>"
+      }
+     ]
+    },
+    {
+     "typ": "memory",
+     "links": "x",
+     "paare": [
+      {
+       "fa": "خوب اَست",
+       "tr": "chūb ast",
+       "de": "er/sie ist gut",
+       "x": "خوبِه"
+      },
+      {
+       "fa": "خوب هَستید",
+       "tr": "chūb hastīd",
+       "de": "ihr seid / Sie sind gut",
+       "x": "خوبین"
+      },
+      {
+       "fa": "خوب هَستَند",
+       "tr": "chūb hastand",
+       "de": "sie sind gut",
+       "x": "خوبَن"
+      },
+      {
+       "fa": "آنها",
+       "tr": "ānhā",
+       "de": "sie (Mehrzahl)",
+       "x": "اونا"
+      },
+      {
+       "fa": "بَله",
+       "tr": "bale",
+       "de": "ja",
+       "x": "آرِه"
+      },
+      {
+       "fa": "مُعَلِّم اَست",
+       "tr": "moʿallem ast",
+       "de": "er/sie ist Lehrer/in",
+       "x": "مُعَلِّمِه"
+      }
+     ],
+     "titel": "Memory: Schrift & Gespräch"
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Begrüßen wie im Alltag",
+   "vorschau": "چِطوری؟ خوبی؟",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Zwei Freundinnen treffen sich",
+     "text": "Umgangssprache! Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "سَلام نِگار! چِطوری؟",
+       "tr": "salām negār! tschetorī?",
+       "de": "Hallo Negar! Wie geht’s?"
+      },
+      {
+       "fa": "سَلام! مِرسی، خوبَم. تو خوبی؟",
+       "tr": "salām! mersī, chūbam. to chūbī?",
+       "de": "Hallo! Danke, gut. Und dir – alles gut?"
+      },
+      {
+       "fa": "آرِه، خوبَم. وَلی یه کَم خَستِه‌اَم.",
+       "tr": "āre, chūbam. walī ye kam chaste-am.",
+       "de": "Ja, gut. Aber ich bin ein bisschen müde."
+      },
+      {
+       "fa": "چِرا؟",
+       "tr": "tscherā?",
+       "de": "Warum?"
+      },
+      {
+       "fa": "آخِه اِمروز خِیلی کار دارَم.",
+       "tr": "āche emrūz cheylī kār dāram.",
+       "de": "Na ja, ich habe heute viel Arbeit."
+      },
+      {
+       "fa": "پَس بُرو اِستِراحَت کُن! خُداحافِظ!",
+       "tr": "pas boro esterāhat kon! chodāhāfez!",
+       "de": "Dann ruh dich aus! Tschüss!"
+      }
+     ]
+    },
+    {
+     "typ": "info",
+     "titel": "Alltags-Wendungen",
+     "text": "<p>Die gleiche Begrüßung in der Schriftsprache kennst du aus Lektion 2: <span class='fa'>حالِت چِطور اَست؟</span></p><p>Im Gespräch sagt man einfach <span class='fa'>چِطوری؟</span> <i>tschetorī?</i> oder <span class='fa'>خوبی؟</span> <i>chūbī?</i> – und bedankt sich mit <span class='fa'>مِرسی</span> <i>mersī</i>.</p>",
+     "stil": "merke",
+     "beispiele": [
+      {
+       "fa": "چِطوری؟",
+       "tr": "tschetorī?",
+       "de": "Wie geht’s?"
+      },
+      {
+       "fa": "خوبی؟",
+       "tr": "chūbī?",
+       "de": "Alles gut?"
+      },
+      {
+       "fa": "مِرسی",
+       "tr": "mersī",
+       "de": "danke"
+      },
+      {
+       "fa": "یه کَم",
+       "tr": "ye kam",
+       "de": "ein bisschen"
+      },
+      {
+       "fa": "وَلی",
+       "tr": "walī",
+       "de": "aber"
+      },
+      {
+       "fa": "خُداحافِظ",
+       "tr": "chodāhāfez",
+       "de": "tschüss / auf Wiedersehen"
+      }
+     ]
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "چِطوری؟",
+       "tr": "tschetorī?",
+       "de": "Wie geht’s?"
+      },
+      {
+       "fa": "خوبی؟",
+       "tr": "chūbī?",
+       "de": "Alles gut?"
+      },
+      {
+       "fa": "مِرسی",
+       "tr": "mersī",
+       "de": "danke"
+      },
+      {
+       "fa": "یه کَم",
+       "tr": "ye kam",
+       "de": "ein bisschen"
+      },
+      {
+       "fa": "وَلی",
+       "tr": "walī",
+       "de": "aber"
+      },
+      {
+       "fa": "خُداحافِظ",
+       "tr": "chodāhāfez",
+       "de": "tschüss / auf Wiedersehen"
+      }
+     ],
+     "titel": "Wendungen"
+    },
+    {
+     "typ": "wahl",
+     "titel": "Verstanden?",
+     "fragen": [
+      {
+       "frage": "Wie geht es Negar?",
+       "optionen": [
+        "gut",
+        "sie ist müde",
+        "schlecht"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Warum ist die andere Person müde?",
+       "optionen": [
+        "Sie hat heute viel Arbeit.",
+        "Sie ist krank.",
+        "Sie hat Hunger."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "<span class='fa'>چِطوری؟</span> in der Schriftsprache:",
+       "optionen": [
+        "حالِت چِطور اَست؟",
+        "تو چِرا هَستی؟",
+        "چِطور هَستَم؟"
+       ],
+       "richtig": 0,
+       "optFa": true
+      },
+      {
+       "frage": "<span class='fa'>خُداحافِظ</span> bedeutet …",
+       "optionen": [
+        "tschüss / auf Wiedersehen",
+        "hallo",
+        "danke"
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "memory",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "چِطوری؟",
+       "tr": "tschetorī?",
+       "de": "Wie geht’s?"
+      },
+      {
+       "fa": "خوبی؟",
+       "tr": "chūbī?",
+       "de": "Alles gut?"
+      },
+      {
+       "fa": "مِرسی",
+       "tr": "mersī",
+       "de": "danke"
+      },
+      {
+       "fa": "یه کَم",
+       "tr": "ye kam",
+       "de": "ein bisschen"
+      },
+      {
+       "fa": "وَلی",
+       "tr": "walī",
+       "de": "aber"
+      },
+      {
+       "fa": "خُداحافِظ",
+       "tr": "chodāhāfez",
+       "de": "tschüss / auf Wiedersehen"
+      }
+     ],
+     "titel": "Memory: Alltags-Wendungen"
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "titel": "Gesprochen verstehen",
+   "vorschau": "اونا مُعَلِّمَن",
+   "karten": [
+    {
+     "typ": "wahl",
+     "titel": "Was hörst du?",
+     "fragen": [
+      {
+       "frage": "Was bedeutet das?",
+       "optionen": [
+        "Sie sind Lehrer/innen.",
+        "Er ist Lehrer.",
+        "Wir sind Lehrer/innen."
+       ],
+       "richtig": 0,
+       "fa": "اونا مُعَلِّمَن.",
+       "erkl": "Schrift: <span class='fa'>آنها مُعَلِّم هَستَند.</span>"
+      },
+      {
+       "frage": "Was bedeutet das?",
+       "optionen": [
+        "Ali geht’s gut.",
+        "Ali ist krank.",
+        "Bist du Ali?"
+       ],
+       "richtig": 0,
+       "fa": "عَلی خوبِه.",
+       "erkl": "Schrift: <span class='fa'>عَلی خوب اَست.</span>"
+      },
+      {
+       "frage": "Was bedeutet das?",
+       "optionen": [
+        "Sind Sie müde?",
+        "Ich bin müde.",
+        "Sie sind müde."
+       ],
+       "richtig": 0,
+       "fa": "شُما خَستِه‌این؟",
+       "erkl": "Schrift: <span class='fa'>شُما خَستِه هَستید؟</span>"
+      },
+      {
+       "frage": "Was bedeutet das?",
+       "optionen": [
+        "Nein, ich bin nicht krank.",
+        "Ja, ich bin krank.",
+        "Er ist nicht krank."
+       ],
+       "richtig": 0,
+       "fa": "نَه، مَریض نیسَم.",
+       "erkl": "Schrift: <span class='fa'>نَه، مَریض نیستَم.</span> – im Gespräch fällt das t oft weg."
+      },
+      {
+       "frage": "Was bedeutet das?",
+       "optionen": [
+        "Meine Schwester ist Ärztin.",
+        "Meine Schwester ist Lehrerin.",
+        "Ich bin Ärztin."
+       ],
+       "richtig": 0,
+       "fa": "خواهَرَم دُکتُرِه.",
+       "erkl": "Schrift: <span class='fa'>خواهَرَم دُکتُر اَست.</span> (<span class='fa'>خواهَرَم</span> – meine Schwester)"
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: gesprochen → geschrieben",
+     "aufgabe": "Tippe die geschriebene Form an.",
+     "modus": "de",
+     "sekunden": 40,
+     "ziel": 8,
+     "optFa": true,
+     "woerter": [
+      {
+       "fa": "خوبِه",
+       "a": "خوب اَست"
+      },
+      {
+       "fa": "خوبین",
+       "a": "خوب هَستید"
+      },
+      {
+       "fa": "خوبَن",
+       "a": "خوب هَستَند"
+      },
+      {
+       "fa": "اونا",
+       "a": "آنها"
+      },
+      {
+       "fa": "آرِه",
+       "a": "بَله"
+      },
+      {
+       "fa": "مُعَلِّمِه",
+       "a": "مُعَلِّم اَست"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -25,6 +25,9 @@
     return verbindet ? [L, L + ZWJ, ZWJ + L + ZWJ, ZWJ + L] : [L, L, ZWJ + L, ZWJ + L];
   }
   const FORM_LABEL = ["allein", "am Anfang", "in der Mitte", "am Ende"];
+  const ohneVokale = t => String(t || "").replace(/[\u064B-\u0652]/g, "");
+  let aufraeumen = [];
+  const raeumeAuf = () => { aufraeumen.forEach(f => { try { f(); } catch (e) { } }); aufraeumen = []; };
 
   function beispiele(list) {
     if (!list || !list.length) return "";
@@ -83,7 +86,7 @@
   R.paare = (k, el, fertig) => {
     const n = k.paare.length;
     const links = k.links || "de"; // was gegenüber dem Persischen steht: de | tr | emoji
-    const txt = p => links === "tr" ? `<span class="tr">${esc(p.tr)}</span>`
+    const txt = p => links === "x" ? `<span class="fa">${esc(p.x)}</span>` : links === "tr" ? `<span class="tr">${esc(p.tr)}</span>`
       : links === "emoji" ? `<span class="emo">${p.emoji || ""}</span>`
         : `${p.emoji ? `<span class="emo">${p.emoji}</span>` : ""}<span>${esc(p.de)}</span>`;
     const faSeite = mischen(k.paare.map((p, i) => ({ p, i })));
@@ -165,23 +168,28 @@
       const kacheln = mischen(w.teile.concat(w.extra || []).map((t, j) => ({ t, j })));
       let gebaut = [], ersterVersuch = true, gesperrt = false;
       el.innerHTML = `<div class="karte">
-        <h2 style="margin-top:0">${k.titel || "Baue das Wort"}</h2>
-        <div class="zaehler">Wort ${i + 1} von ${k.woerter.length}</div>
+        <h2 style="margin-top:0">${k.titel || (k.zeigen ? "Schreib das Wort ab" : "Baue das Wort")}</h2>
+        <div class="zaehler">${k.trenner ? "Satz" : "Wort"} ${i + 1} von ${k.woerter.length}</div>
         <div class="bau-ziel">
           ${w.emoji ? `<div class="emo">${w.emoji}</div>` : ""}
-          <div><span class="tr" style="font-size:1.3rem">${esc(w.tr)}</span> · <span class="de">${esc(w.de)}</span></div>
+          ${k.zeigen
+            ? `<div class="fa" style="font-size:2.8rem;font-weight:700;color:var(--tinte);line-height:1.6">${esc(ohneVokale(w.fa))}</div><div class="de klein">${esc(w.de || "")} · Aus welchen Buchstaben besteht das Wort?</div>`
+            : k.trenner && !k.mitUmschrift
+              ? `<div style="font-size:1.25rem;font-weight:800">${esc(w.de)}</div>`
+              : `<div><span class="tr" style="font-size:1.3rem">${esc(w.tr)}</span> · <span class="de">${esc(w.de)}</span></div>`}
         </div>
         <div class="bau-anzeige" id="anz"><div class="wort" id="wort"></div></div>
         <div class="einzeln" id="einz"></div>
-        <div class="kacheln">${kacheln.map(o => `<button class="kachel" data-j="${o.j}" data-t="${esc(o.t)}">${esc(o.t)}</button>`).join("")}</div>
+        <div class="kacheln">${kacheln.map(o => `<button class="kachel ${k.trenner ? "wortk" : ""}" data-j="${o.j}" data-t="${esc(o.t)}">${esc(o.t)}</button>`).join("")}</div>
         <div class="btnreihe" style="justify-content:space-between;margin-top:14px">
           <button class="btn zwei klein" id="zurueck">⌫ zurück</button>
-          <div id="erg" class="klein muted">Tippe die Buchstaben in der richtigen Reihenfolge – das Wort beginnt rechts.</div>
-          <button class="btn safran versteckt" id="naechste">Nächstes Wort →</button>
+          <div id="erg" class="klein muted">${k.trenner ? "Tippe die Wörter in der richtigen Reihenfolge – der Satz beginnt rechts." : "Tippe die Buchstaben in der richtigen Reihenfolge – das Wort beginnt rechts."}</div>
+          <button class="btn safran versteckt" id="naechste">${k.trenner ? "Nächster Satz →" : "Nächstes Wort →"}</button>
         </div>
       </div>`;
       const anz = $("#anz", el), wort = $("#wort", el), einz = $("#einz", el);
-      const zeichne = () => { wort.textContent = gebaut.map(g => g.t).join(""); einz.textContent = gebaut.map(g => g.t).join(" "); };
+      const tr_ = k.trenner || "";
+      const zeichne = () => { wort.textContent = gebaut.map(g => g.t).join(tr_); einz.textContent = tr_ ? "" : gebaut.map(g => g.t).join(" "); };
       $$(".kachel", el).forEach(b => b.addEventListener("click", () => {
         if (gesperrt) return;
         gebaut.push({ t: b.dataset.t, b }); b.disabled = true; zeichne();
@@ -297,37 +305,161 @@
     zeige();
   };
 
+  R.text = (k, el, fertig) => {
+    el.innerHTML = `<div class="karte">
+      ${k.titel ? `<h2 style="margin-top:0">${k.titel}</h2>` : ""}
+      ${k.text ? `<p class="muted klein" style="margin-top:0">${k.text}</p>` : `<p class="muted klein" style="margin-top:0">Lies den Text. Tippe auf eine Zeile, um Umschrift und Übersetzung zu sehen.</p>`}
+      <div class="lesetext">${k.zeilen.map((z, i) => `<div class="lz" data-i="${i}">
+        <div class="fa">${esc(z.fa)}</div>
+        <div class="lz-hilfe versteckt">${z.tr ? `<span class="tr">${esc(z.tr)}</span>` : ""}${z.de ? `<span class="de">${esc(z.de)}</span>` : ""}</div></div>`).join("")}</div>
+      <div class="btnreihe" style="margin-top:12px">
+        <button class="btn zwei klein" id="alleHilfe">Alle Hilfen zeigen</button>
+        <button class="btn zwei klein" ${say(k.zeilen.map(z => z.fa).join(" "))}>🔊 ganzen Text hören</button>
+      </div></div>`;
+    bindeSprechen(el);
+    $$(".lz", el).forEach(z => z.addEventListener("click", () => { z.querySelector(".lz-hilfe").classList.toggle("versteckt"); sprich(k.zeilen[+z.dataset.i].fa); }));
+    $("#alleHilfe", el).onclick = () => { const h = $$(".lz-hilfe", el), zu = h.some(x => x.classList.contains("versteckt")); h.forEach(x => x.classList.toggle("versteckt", !zu)); };
+    fertig(0, 0);
+  };
+
+  R.memory = (k, el, fertig) => {
+    const n = k.paare.length, links = k.links || "tr";
+    const rueck = p => links === "x" ? `<span class="fa x">${esc(p.x)}</span>` : links === "tr" ? `<span class="tr">${esc(p.tr)}</span>`
+      : links === "emoji" ? `<span class="emo">${p.emoji || ""}</span>`
+        : `${p.emoji ? `<span class="emo">${p.emoji}</span>` : ""}<span>${esc(p.de)}</span>`;
+    const karten = mischen(k.paare.flatMap((p, i) => [{ i, s: "fa", h: `<span class="fa q">${esc(p.fa)}</span>` }, { i, s: "x", h: rueck(p) }]));
+    el.innerHTML = `<div class="karte">
+      <h2 style="margin-top:0">${k.titel || "Memory"}</h2>
+      <p class="muted klein" style="margin-top:0">${k.text || "Decke immer zwei Karten auf und finde die Paare: persisches Wort + passende Karte."}</p>
+      <div class="mem-gitter">${karten.map((c, j) => `<button class="mem" data-j="${j}"><span class="vorder">✦</span><span class="rueck">${c.h}</span></button>`).join("")}</div>
+      <div class="zaehler" style="margin-top:12px" id="mz"></div></div>`;
+    let offen = [], gefunden = 0, fehl = 0, sperre = false;
+    const zaehl = () => $("#mz", el).textContent = `${gefunden} von ${n} Paaren · ${fehl} Fehlversuche`;
+    zaehl();
+    $$(".mem", el).forEach(b => b.addEventListener("click", () => {
+      if (sperre || b.classList.contains("auf")) return;
+      const c = karten[+b.dataset.j];
+      b.classList.add("auf"); offen.push({ b, c });
+      if (c.s === "fa") sprich(k.paare[c.i].say || k.paare[c.i].fa, k.paare[c.i].audio);
+      if (offen.length < 2) return;
+      const [a, d] = offen; offen = [];
+      if (a.c.i === d.c.i && a.c.s !== d.c.s) {
+        [a.b, d.b].forEach(x => x.classList.add("gef")); gefunden++; ton("ok"); zaehl();
+        if (gefunden === n) fertig(Math.max(Math.ceil(n / 2), n - Math.max(0, fehl - n)), n);
+      } else {
+        fehl++; sperre = true; zaehl();
+        const t = setTimeout(() => { [a.b, d.b].forEach(x => x.classList.remove("auf")); sperre = false; }, 950);
+        aufraeumen.push(() => clearTimeout(t));
+      }
+    }));
+  };
+
+  R.tempo = (k, el, fertig) => {
+    const pool = k.woerter.filter(w => (w.a || (k.modus === "de" ? w.de : w.tr)));
+    const ziel = Math.min(k.ziel || 10, 99), sek = k.sekunden || 60, modus = k.modus === "de" ? "de" : "tr";
+    const antwort = w => w.a || (modus === "de" ? w.de : w.tr);
+    el.innerHTML = `<div class="karte" style="text-align:center">
+      <div style="font-size:2.4rem">⏱️</div>
+      <h2 style="margin:4px 0">${k.titel || "Blitzlesen"}</h2>
+      <p>Du hast <b>${sek} Sekunden</b>. ${k.aufgabe || `Lies das Wort und tippe die richtige ${modus === "de" ? "Bedeutung" : "Aussprache"} an.`}<br>Ziel: <b>${ziel} richtige</b> – dann bist du fertig.</p>
+      <button class="btn safran" id="los">Los geht’s!</button></div>`;
+    $("#los", el).onclick = () => {
+      let richtig = 0, falsch = 0, letzt = null, ende = Date.now() + sek * 1000, vorbei = false;
+      el.innerHTML = `<div class="karte">
+        <div class="tempo-kopf"><span id="tr">✓ 0 / ${ziel}</span><span id="tz">${sek}s</span></div>
+        <div class="spur" style="margin:8px 0 4px"><i id="tb" style="width:100%;transition:width .25s linear"></i></div>
+        <div class="frage"><div class="fa-gross" id="tw"></div></div>
+        <div class="optionen" id="to"></div></div>`;
+      const takt = setInterval(() => {
+        const rest = Math.max(0, ende - Date.now());
+        $("#tz", el).textContent = Math.ceil(rest / 1000) + "s";
+        $("#tb", el).style.width = (100 * rest / (sek * 1000)) + "%";
+        if (!rest) schluss();
+      }, 250);
+      aufraeumen.push(() => clearInterval(takt));
+      function naechstes() {
+        let w; do { w = pool[Math.floor(Math.random() * pool.length)]; } while (pool.length > 1 && w === letzt);
+        letzt = w;
+        const falsche = mischen(pool.filter(x => antwort(x) !== antwort(w))).reduce((a, x) => (a.includes(antwort(x)) ? a : a.concat(antwort(x))), []).slice(0, 2);
+        const opts = mischen([antwort(w)].concat(falsche));
+        $("#tw", el).textContent = w.fa;
+        $("#to", el).innerHTML = opts.map(o => `<button class="opt ${k.optFa ? "fa" : ""}">${esc(o)}</button>`).join("");
+        $$("#to .opt", el).forEach(b => b.onclick = () => {
+          if (vorbei) return;
+          if (b.textContent === antwort(w)) {
+            richtig++; ton("ok"); $("#tr", el).textContent = `✓ ${richtig} / ${ziel}`;
+            if (richtig >= ziel) return schluss(); naechstes();
+          } else {
+            falsch++; ton("falsch"); b.classList.add("falsch");
+            $$("#to .opt", el).forEach(x => { x.disabled = true; if (x.textContent === antwort(w)) x.classList.add("ok"); });
+            const t = setTimeout(() => { if (!vorbei) naechstes(); }, 700); aufraeumen.push(() => clearTimeout(t));
+          }
+        });
+      }
+      function schluss() {
+        if (vorbei) return; vorbei = true; clearInterval(takt);
+        const zeit = Math.round((sek * 1000 - Math.max(0, ende - Date.now())) / 1000);
+        el.innerHTML = `<div class="karte" style="text-align:center">
+          <div style="font-size:2.4rem">${richtig >= ziel ? "🏁" : "⌛"}</div>
+          <h2 style="margin:4px 0">${richtig >= ziel ? `Geschafft in ${zeit} Sekunden!` : "Zeit ist um!"}</h2>
+          <p>${richtig} richtig · ${falsch} falsch</p>
+          <p class="klein muted">${richtig >= ziel ? "Stark! Beim Wiederholen der Station kannst du deine Zeit verbessern." : "Wiederhole die Station später – es zählt dein bestes Ergebnis."}</p></div>`;
+        fertig(Math.min(richtig, ziel), ziel);
+      }
+      naechstes();
+    };
+  };
+
   /* ---------- Ablauf ---------- */
   const qs = new URLSearchParams(location.search);
   const LEK_ID = qs.get("id") || "01";
 
   function stationsSumme() {
-    let p = 0, m = 0, fertigZahl = 0;
-    LEK.stationen.forEach(s => { const f = FORT[s.id]; if (f) { p += f.p; m += f.m; fertigZahl++; } });
-    return { p, m, fertigZahl };
+    let p = 0, m = 0, fertigZahl = 0, pflicht = 0;
+    LEK.stationen.forEach(s => { const f = FORT[s.id]; if (f) { p += f.p; m += f.m; fertigZahl++; if (!s.zusatz) pflicht++; } });
+    return { p, m, fertigZahl, pflicht };
+  }
+
+  function stLabel(i) {
+    const s = LEK.stationen[i];
+    if (!s.zusatz) return "Station " + (LEK.stationen.slice(0, i + 1).filter(x => !x.zusatz).length);
+    return (s.paketArt === "umgangssprache" ? "Umgangssprache " : "Zusatz ") + (LEK.stationen.slice(0, i + 1).filter(x => x.paketId === s.paketId).length);
   }
 
   function zeigeUebersicht() {
     aktSt = -1;
     history.replaceState(null, "", `?id=${encodeURIComponent(LEK_ID)}`);
+    raeumeAuf();
     const sum = stationsSumme();
-    const naechste = LEK.stationen.findIndex(s => !FORT[s.id]);
+    const naechste = LEK.stationen.findIndex(s => !s.zusatz && !FORT[s.id]);
+    const kachel = (s, i) => {
+      const f = FORT[s.id];
+      return `<button class="st ${f ? "fertig" : ""} ${i === naechste ? "naechste" : ""} ${s.zusatz ? "zus" : ""} ${s.paketArt === "umgangssprache" ? "ug" : ""}" data-i="${i}">
+          <div class="kopfzeile"><span class="n">${stLabel(i)}</span>${f ? `<span class="chip ok">✓ ${f.p}/${f.m}</span>` : (i === naechste ? `<span class="chip neu">als Nächstes</span>` : "")}</div>
+          <div class="vor">${esc(s.vorschau || "")}</div>
+          <div style="font-weight:800">${esc(s.titel)}</div>
+        </button>`;
+    };
+    const idx = LEK.stationen.map((s, i) => ({ s, i }));
     $("#buehne").innerHTML = `
       <div class="lek-kopf">
         <div><div class="muted klein">Lektion ${esc(LEK.nummer || "")}</div><h2>${esc(LEK.titel)}</h2>
         <div class="fa" style="font-size:1.3rem;color:var(--lapis);font-weight:800">${esc(LEK.titelFa || "")}</div></div>
-        <div style="text-align:right"><div class="chip ok">${sum.fertigZahl} / ${LEK.stationen.length} Stationen</div>
+        <div style="text-align:right"><div class="chip ok">${sum.pflicht} / ${LEK.stationen.filter(s => !s.zusatz).length} Stationen</div>
         <div class="klein muted" style="margin-top:4px">${sum.p} Punkte</div></div>
       </div>
       ${LEK.einleitung ? `<p>${LEK.einleitung}</p>` : ""}
-      <div class="stationen">${LEK.stationen.map((s, i) => {
-      const f = FORT[s.id];
-      return `<button class="st ${f ? "fertig" : ""} ${i === naechste ? "naechste" : ""}" data-i="${i}">
-          <div class="kopfzeile"><span class="n">Station ${i + 1}</span>${f ? `<span class="chip ok">✓ ${f.p}/${f.m}</span>` : (i === naechste ? `<span class="chip neu">als Nächstes</span>` : "")}</div>
-          <div class="vor">${esc(s.vorschau || "")}</div>
-          <div style="font-weight:800">${esc(s.titel)}</div>
-        </button>`;
-    }).join("")}</div>`;
+      <div class="stationen">${idx.filter(x => !x.s.zusatz).map(x => kachel(x.s, x.i)).join("")}</div>
+      ${(LEK.pakete || []).map(pk => {
+        const liste = idx.filter(x => x.s.paketId === pk.id);
+        const erl = liste.filter(x => FORT[x.s.id]).length;
+        const ug = pk.art === "umgangssprache";
+        return `<div class="paket-kopf ${ug ? "ug" : ""}"><div><span class="badge" style="background:${ug ? "var(--granat)" : "var(--tuerkis)"};color:#fff">${ug ? "🗣️ Extra: Umgangssprache" : "Zusatzübungen"}</span>
+          <h3 style="margin:4px 0 2px">${esc(pk.titel)}</h3>${pk.beschreibung ? `<div class="klein muted">${esc(pk.beschreibung)}</div>` : ""}</div>
+          <span class="chip ok">${erl} / ${liste.length}</span></div>
+          ${ug ? `<p class="klein" style="margin:-4px 0 10px;color:var(--granat)">So spricht man im Alltag – <b>nicht</b> so schreiben! In den Lektionen lernst du die Schriftsprache.</p>` : ""}
+          <div class="stationen">${liste.map(x => kachel(x.s, x.i)).join("")}</div>`;
+      }).join("")}`;
     $$(".st").forEach(b => b.addEventListener("click", () => starteStation(+b.dataset.i)));
     window.scrollTo(0, 0);
   }
@@ -339,11 +471,13 @@
   }
 
   function zeigeKarte() {
+    raeumeAuf();
     const st = LEK.stationen[aktSt];
     const k = st.karten[aktK];
     $("#buehne").innerHTML = `
-      <div class="st-titel"><h2>Station ${aktSt + 1}: ${esc(st.titel)}</h2>
+      <div class="st-titel"><h2>${stLabel(aktSt)}: ${esc(st.titel)}</h2>
         <button class="btn zwei klein" id="zurUebersicht">☰ Übersicht</button></div>
+      ${st.paketArt === "umgangssprache" ? `<div class="ug-banner">🗣️ <b>Umgangssprache</b> – so spricht man im Alltag. In Texten und Prüfungen gilt die Schriftsprache.</div>` : ""}
       <div class="fortschritt-punkte">${st.karten.map((_, j) => `<i class="${j < aktK ? "an" : j === aktK ? "jetzt" : ""}"></i>`).join("")}</div>
       <div id="karte"></div>
       <div class="buehne-fuss">
@@ -374,10 +508,11 @@
     const sterne = quote >= .9 ? 3 : quote >= .6 ? 2 : 1;
     const alt = FORT[st.id];
     if (!alt || summe.p > alt.p) FORT[st.id] = { p: summe.p, m: summe.m };
+    raeumeAuf();
     const naechste = aktSt < LEK.stationen.length - 1;
     $("#buehne").innerHTML = `<div class="karte abschluss">
       <div class="sterne">${"⭐".repeat(sterne)}${"☆".repeat(3 - sterne)}</div>
-      <h2>Station ${aktSt + 1} geschafft!</h2>
+      <h2>${stLabel(aktSt)} geschafft!</h2>
       <div class="fa" style="font-size:1.6rem;color:var(--lapis);font-weight:800">${["آفَرین!", "عالی!", "خِیلی خوب!"][sterne - 1]}</div>
       <p>${summe.p} von ${summe.m} Punkten${alt && alt.p > summe.p ? ` · dein Bestwert bleibt ${alt.p}` : ""}</p>
       <p class="klein muted" id="speicher">Speichere …</p>
@@ -396,12 +531,14 @@
   }
 
   /* ---------- Buchstaben-Tafel ---------- */
-  function tafel() {
-    const alle = [];
-    LEK.stationen.forEach((s, si) => s.karten.forEach(k => {
+  async function tafel() {
+    let alle = [], quelle = LEK, alleFrei = false;
+    const sammle = L => L.stationen.forEach((s, si) => s.karten.forEach(k => {
       if (k.typ === "buchstaben") k.buchstaben.forEach(b => { if (b.typ !== "vokal") alle.push({ b, si }); });
     }));
-    const erreicht = si => FORT[LEK.stationen[si].id] || si <= aktSt;
+    sammle(LEK);
+    if (!alle.length) { try { quelle = await F.ladeJSON("lektionen/01-alphabet.json"); sammle(quelle); alleFrei = true; } catch (e) { } }
+    const erreicht = si => alleFrei || FORT[LEK.stationen[si].id] || si <= aktSt;
     const m = document.createElement("div");
     m.className = "modal";
     m.innerHTML = `<div class="karte">
@@ -434,7 +571,7 @@
         $("#buehne").innerHTML = `<div class="karte abschluss"><div class="sterne">🔒</div><h2>Diese Lektion ist noch nicht freigeschaltet.</h2><p><a href="index.html">Zurück zum Lernpfad</a></p></div>`;
         return;
       }
-      LEK = await F.ladeJSON("lektionen/" + eintrag.datei);
+      LEK = await F.ladeLektion(eintrag);
       LEK.nummer = eintrag.nummer;
       document.title = LEK.titel + " · Farsi-Lernpfad";
       $("#lekTitel").textContent = "Lektion " + eintrag.nummer + " · " + LEK.titel;

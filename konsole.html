@@ -161,7 +161,7 @@
         </div>
       </div>
       <div class="karte"><div class="tabelle-scroll"><table class="t" id="fortTabelle"></table></div>
-        <p class="mini" style="margin-bottom:0">Zelle = erledigte Stationen / alle · darunter Erfolgsquote. Antippen für Details.</p></div>
+        <p class="mini" style="margin-bottom:0">Zelle = erledigte Stationen / alle (+Z = Zusatzübungen) · darunter Erfolgsquote. Antippen für Details.</p></div>
       <div class="karte versteckt" id="detail" style="margin-top:14px"></div>
     </div>
 
@@ -261,7 +261,7 @@
     try {
       INDEX = await F.ladeJSON("lektionen/index.json");
       await Promise.all(INDEX.lektionen.filter(l => l.datei).map(async l => {
-        try { LEKDATEN[l.id] = await F.ladeJSON("lektionen/" + l.datei); } catch (e) { }
+        try { LEKDATEN[l.id] = await F.ladeLektion(l); } catch (e) { }
       }));
     } catch (e) { toast("Lektionsliste konnte nicht geladen werden."); }
     ["klassen", "tn", "freigabe", "fortschritt"].forEach(k => {
@@ -285,12 +285,15 @@
   function tnStats(code) {
     const f = D.fortschritt[code] || {};
     let stationen = 0, p = 0, m = 0, zuletzt = (f._zuletzt && f._zuletzt.ts) || 0;
+    let zusatz = 0;
     offeneLek().forEach(l => LEKDATEN[l.id].stationen.forEach(s => {
-      const e = (f[l.id] || {})[s.id]; if (e) { stationen++; p += e.p; m += e.m; zuletzt = Math.max(zuletzt, e.ts || 0); }
+      const e = (f[l.id] || {})[s.id]; if (e) { if (s.zusatz) zusatz++; else stationen++; p += e.p; m += e.m; zuletzt = Math.max(zuletzt, e.ts || 0); }
     }));
-    return { stationen, p, m, quote: m ? p / m : null, zuletzt };
+    return { stationen, zusatz, p, m, quote: m ? p / m : null, zuletzt };
   }
-  const gesamtStationen = () => offeneLek().reduce((a, l) => a + LEKDATEN[l.id].stationen.length, 0);
+  const pflicht = l => LEKDATEN[l.id].stationen.filter(s => !s.zusatz);
+  const gesamtStationen = () => offeneLek().reduce((a, l) => a + pflicht(l).length, 0);
+  const stNr = (L, i) => { const s = L.stationen[i]; return s.zusatz ? (s.paketArt === "umgangssprache" ? "Umgangssprache " : "Zusatz ") + L.stationen.slice(0, i + 1).filter(x => x.paketId === s.paketId).length : "Station " + L.stationen.slice(0, i + 1).filter(x => !x.zusatz).length; };
   const pct = x => x == null ? "–" : Math.round(100 * x) + " %";
   function vorZeit(ts) {
     if (!ts) return "noch nie";
@@ -393,14 +396,14 @@
     $("#feed").innerHTML = ev.length ? ev.slice(0, 12).map(x => {
       const t = D.tn[x.code], L = LEKDATEN[x.lid], q = x.e.m ? x.e.p / x.e.m : 1;
       return `<li><span class="punkt">${Math.round(q * 100)}</span>
-        <span><b>${esc(t.name)}</b> <span class="dunkel">· ${esc(klName(t.klasse))}</span><br><span class="mini">L${esc(INDEX.lektionen.find(l => l.id === x.lid)?.nummer || "")} · Station ${x.i + 1}: ${esc(L.stationen[x.i].titel)} · ${x.e.p}/${x.e.m}</span></span>
+        <span><b>${esc(t.name)}</b> <span class="dunkel">· ${esc(klName(t.klasse))}</span><br><span class="mini">L${esc(INDEX.lektionen.find(l => l.id === x.lid)?.nummer || "")} · ${stNr(L, x.i)}: ${esc(L.stationen[x.i].titel)} · ${x.e.p}/${x.e.m}</span></span>
         <span class="zeit">${vorZeit(x.e.ts)}</span></li>`;
     }).join("") : `<li class="muted">Noch keine Ergebnisse. Sobald jemand eine Station abschließt, erscheint sie hier.</li>`;
 
     // Rangliste (aktuelle Klasse)
     $("#rangKlasse").textContent = "· " + klName(aktKlasse);
     const rang = tnListe(aktKlasse).filter(t => t.aktiv !== false).map(t => ({ t, s: tnStats(t.code) })).sort((a, b) => b.s.p - a.s.p || b.s.stationen - a.s.stationen);
-    $("#rangliste").innerHTML = rang.length ? `<table class="t">${rang.slice(0, 10).map((x, i) => `<tr><td class="rang">${["🥇", "🥈", "🥉"][i] || i + 1}</td><td><b>${esc(x.t.name)}</b></td><td class="mini">${x.s.stationen} Stationen</td><td style="text-align:right"><b>${x.s.p}</b> <span class="mini">Pkt.</span></td></tr>`).join("")}</table>`
+    $("#rangliste").innerHTML = rang.length ? `<table class="t">${rang.slice(0, 10).map((x, i) => `<tr><td class="rang">${["🥇", "🥈", "🥉"][i] || i + 1}</td><td><b>${esc(x.t.name)}</b></td><td class="mini">${x.s.stationen} Stationen${x.s.zusatz ? ` + ${x.s.zusatz} Zusatz` : ""}</td><td style="text-align:right"><b>${x.s.p}</b> <span class="mini">Pkt.</span></td></tr>`).join("")}</table>`
       : `<p class="muted">Noch niemand in dieser Klasse.</p>`;
 
     // Aufmerksamkeit
@@ -433,7 +436,7 @@
         return `<tr data-c="${t.code}" class="${t.aktiv === false ? "inaktiv" : ""}">
           <td><b>${esc(t.name)}</b></td>
           <td><span class="code">${t.code}</span></td>
-          <td style="min-width:120px"><div class="leiste" style="margin:0"><i style="width:${G ? Math.round(100 * s.stationen / G) : 0}%"></i></div><span class="mini">${s.stationen}/${G} · ${pct(s.quote)}</span></td>
+          <td style="min-width:120px"><div class="leiste" style="margin:0"><i style="width:${G ? Math.round(100 * s.stationen / G) : 0}%"></i></div><span class="mini">${s.stationen}/${G}${s.zusatz ? ` +${s.zusatz}Z` : ""} · ${pct(s.quote)}</span></td>
           <td class="mini">${vorZeit(s.zuletzt)}</td>
           <td><select class="feld" style="padding:4px 8px;width:auto" data-act="klasse">${kl.map(k => `<option value="${k.id}" ${k.id === t.klasse ? "selected" : ""}>${esc(k.name)}</option>`).join("")}</select></td>
           <td><input type="checkbox" data-act="aktiv" ${t.aktiv !== false ? "checked" : ""} title="Inaktive können sich nicht anmelden"></td>
@@ -541,12 +544,12 @@
       (liste.length ? liste.map(({ t, s }) => {
         const f = D.fortschritt[t.code] || {};
         return `<tr class="${t.aktiv === false ? "inaktiv" : ""}"><td><b>${esc(t.name)}</b></td>${lek.map(l => {
-          const st = LEKDATEN[l.id].stationen, fl = f[l.id] || {};
-          const fertig = st.filter(x => fl[x.id]).length;
-          const p = st.reduce((a, x) => a + (fl[x.id] ? fl[x.id].p : 0), 0), m = st.reduce((a, x) => a + (fl[x.id] ? fl[x.id].m : 0), 0);
+          const alle = LEKDATEN[l.id].stationen, st = pflicht(l), fl = f[l.id] || {};
+          const fertig = st.filter(x => fl[x.id]).length, zf = alle.filter(x => x.zusatz && fl[x.id]).length;
+          const p = alle.reduce((a, x) => a + (fl[x.id] ? fl[x.id].p : 0), 0), m = alle.reduce((a, x) => a + (fl[x.id] ? fl[x.id].m : 0), 0);
           const q = fertig / st.length;
           const bg = fertig === 0 ? "var(--papier2)" : q >= 1 ? "var(--gruen-hell)" : "var(--safran-hell)";
-          return `<td><button class="zelle" style="background:${bg};border:0" data-c="${t.code}" data-l="${l.id}">${fertig}/${st.length}<br><span class="klein" style="font-weight:400">${m ? Math.round(100 * p / m) + " %" : "–"}</span></button></td>`;
+          return `<td><button class="zelle" style="background:${bg};border:0" data-c="${t.code}" data-l="${l.id}">${fertig}/${st.length}${zf ? ` <span style="color:var(--tuerkis)">+${zf}Z</span>` : ""}<br><span class="klein" style="font-weight:400">${m ? Math.round(100 * p / m) + " %" : "–"}</span></button></td>`;
         }).join("")}<td><b>${s.p}</b></td><td class="mini">${vorZeit(s.zuletzt)}</td></tr>`;
       }).join("") : `<tr><td class="muted">Noch niemand in dieser Klasse.</td></tr>`);
     $$("button[data-l]", tab).forEach(b => b.onclick = () => detail(b.dataset.c, b.dataset.l));
@@ -556,7 +559,7 @@
     const el = $("#detail"); el.classList.remove("versteckt");
     el.innerHTML = `<div class="st-titel"><h3 style="margin:0">${esc(t.name)} · ${esc(L.titel)}</h3>
       <button class="btn rot klein" id="reset">Diese Lektion zurücksetzen</button></div>
-      ${L.stationen.map((s, i) => { const e = fl[s.id], q = e && e.m ? e.p / e.m : null; return `<div class="balken"><span>${i + 1}. ${esc(s.titel)}</span>
+      ${L.stationen.map((s, i) => { const e = fl[s.id], q = e && e.m ? e.p / e.m : null; return `<div class="balken"><span><span class="mini">${stNr(L, i)}</span><br>${esc(s.titel)}</span>
         <div class="spur quote" title="${e ? e.p + " von " + e.m + " Punkten" : "noch nicht gemacht"}"><i style="width:${q == null ? 0 : Math.round(q * 100)}%"></i></div>
         <span class="mini">${e ? `${e.p}/${e.m}<br>${fmtTs(e.ts)}` : "–"}</span></div>`; }).join("")}`;
     $("#reset").onclick = () => { if (confirm("Fortschritt von " + t.name + " in dieser Lektion wirklich löschen?")) { schreib(F.ref(`fortschritt/${code}/${lid}`).remove(), "Zurückgesetzt."); el.classList.add("versteckt"); } };
@@ -564,7 +567,7 @@
   }
   $("#csv").onclick = () => {
     const lek = offeneLek();
-    const kopf = ["Name", "Code", "Klasse"]; lek.forEach(l => LEKDATEN[l.id].stationen.forEach((s, i) => kopf.push(`L${l.nummer} S${i + 1} ${s.titel}`)));
+    const kopf = ["Name", "Code", "Klasse"]; lek.forEach(l => LEKDATEN[l.id].stationen.forEach((s, i) => kopf.push(`L${l.nummer} ${stNr(LEKDATEN[l.id], i)} ${s.titel}`)));
     kopf.push("Punkte gesamt", "zuletzt aktiv");
     const zeilen = [kopf];
     tnListe(fortKlasse).forEach(t => {
@@ -587,7 +590,7 @@
         const es = tl.map(t => ((D.fortschritt[t.code] || {})[l.id] || {})[s.id]).filter(Boolean);
         const P = es.reduce((a, e) => a + e.p, 0), M = es.reduce((a, e) => a + e.m, 0), q = M ? P / M : null;
         const anteil = tl.length ? es.length / tl.length : 0;
-        return `<div class="balken"><span>${i + 1}. ${esc(s.titel)} ${q != null && q < .7 ? `<span class="warn">schwer</span>` : ""}</span>
+        return `<div class="balken"><span><span class="mini">${stNr(L, i)}</span><br>${esc(s.titel)} ${q != null && q < .7 ? `<span class="warn">schwer</span>` : ""}</span>
           <div style="display:grid;gap:4px">
             <div class="spur" title="${es.length} von ${tl.length} haben die Station erledigt"><i style="width:${Math.round(anteil * 100)}%"></i></div>
             <div class="spur quote" title="Ø ${pct(q)} richtig"><i style="width:${q == null ? 0 : Math.round(q * 100)}%"></i></div>
@@ -606,7 +609,7 @@
     const kl = klassenListe(), tab = $("#freiTabelle");
     tab.innerHTML = `<tr><th>Lektion</th><th>Stationen</th>${kl.map(k => `<th>${esc(k.name)}</th>`).join("")}</tr>` +
       INDEX.lektionen.map(l => `<tr><td><b>${l.nummer}. ${esc(l.titel)}</b><br><span class="mini">Standard: ${l.datei ? (l.standard === "offen" ? "offen" : "gesperrt") : "in Vorbereitung"}</span></td>
-        <td class="mini">${LEKDATEN[l.id] ? LEKDATEN[l.id].stationen.length : "–"}</td>
+        <td class="mini">${LEKDATEN[l.id] ? pflicht(l).length + (LEKDATEN[l.id].pakete.length ? ` + ${LEKDATEN[l.id].stationen.length - pflicht(l).length} Zusatz` : "") : "–"}</td>
         ${kl.map(k => {
           const v = (D.freigabe[k.id] || {})[l.id];
           const wert = v === true ? "an" : v === false ? "aus" : "std";

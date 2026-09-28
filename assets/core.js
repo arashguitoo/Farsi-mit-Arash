@@ -222,12 +222,28 @@
     return r.json();
   }
 
+  /* Lektion + Zusatzpakete (index.json: "zusatz": ["01-zusatz-1.json", …]) */
+  async function ladeLektion(eintrag) {
+    const L = await ladeJSON("lektionen/" + eintrag.datei);
+    L.stationen.forEach(s => { s.zusatz = false; });
+    L.pakete = [];
+    for (const datei of (eintrag.zusatz || [])) {
+      try {
+        const P = await ladeJSON("lektionen/" + datei);
+        const pid = P.id || datei.replace(/\.json$/, "").replace(/[.#$\[\]\/]/g, "_");
+        P.stationen.forEach(s => { s.id = pid + "-" + s.id; s.zusatz = true; s.paketId = pid; s.paketArt = P.art || "zusatz"; L.stationen.push(s); });
+        L.pakete.push({ id: pid, art: P.art || "zusatz", titel: P.titel || "Zusatzübungen", beschreibung: P.beschreibung || "", anzahl: P.stationen.length });
+      } catch (e) { console.warn("Zusatzpaket nicht geladen:", datei, e); }
+    }
+    return L;
+  }
+
   window.FARSI = {
     CFG, $, $$, esc, mischen, faZiffern, normCode, toast, mitTimeout,
     initFB, ref, sitzung, anmelden, abmelden,
     einst, setEinst, anwendenEinst,
     ladeFortschritt, ladeAlleFortschritte, speichereStation,
     ladeFreigaben, istOffen,
-    sprich, ton, ladeJSON
+    sprich, ton, ladeJSON, ladeLektion
   };
 })();

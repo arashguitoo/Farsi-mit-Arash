@@ -35,6 +35,23 @@ Jede Person hat einen eigenen Code und gehört zu einer Klasse. Unter **Freigabe
 2. In `lektionen/index.json` beim Eintrag `"datei": "02-….json"` ergänzen und `"standard": "offen"` oder `"bald"` setzen.
 3. Hochladen – fertig. Die Konsole erkennt die Lektion automatisch.
 
+## Zusatzaufgaben nachreichen (für jede Lektion)
+
+Zusätzliche Übungen kommen als **eigene JSON-Datei** – die Lektion selbst bleibt unverändert:
+
+1. Datei anlegen, z. B. `lektionen/01-zusatz-2.json`:
+   ```json
+   { "id": "z2", "titel": "Trainingspaket 2", "beschreibung": "…",
+     "stationen": [ { "id": "a", "titel": "…", "vorschau": "…", "karten": [ … ] } ] }
+   ```
+2. In `lektionen/index.json` beim Eintrag der Lektion ergänzen:
+   `"zusatz": ["01-zusatz-1.json", "01-zusatz-2.json"]`
+3. Hochladen – die Pakete erscheinen in der Lektion unter „Zusatzübungen“, der Fortschritt wird gespeichert und in der Konsole mit „+Z“ angezeigt.
+
+**Umgangssprache** kommt immer in ein eigenes Paket mit `"art": "umgangssprache"` (z. B. `02-umgangssprache.json`). Es erscheint dann rot abgesetzt als „Extra: Umgangssprache“ mit dem Hinweis, dass man so nicht schreibt. Die Lektionen selbst bleiben reine Schriftsprache.
+
+Wichtig: Jedes Paket braucht eine **eigene `id`** (z1, z2, …), und die Stations-`id`s darin nie nachträglich ändern.
+
 ### Aufbau einer Lektion
 
 ```json
@@ -56,6 +73,13 @@ Die `id` einer Station nie nachträglich ändern – daran hängt der gespeicher
 | `sortieren` | Kategorien zuordnen | `kategorien:[…]`, `items:[{fa,k,e}]` (`k` = Index der richtigen Kategorie) |
 | `finden` | alle passenden Wörter antippen | `frage`, `woerter:[{fa,ja}]` |
 | `lesen` | Karteikarten (lesen → aufdecken) | `karten:[{fa,tr,de,emoji}]` |
+| `memory` | Memory-Spiel (Karten aufdecken) | `paare:[{fa,tr,de,emoji}]`, `links`: `"tr"` / `"de"` / `"emoji"` |
+| `tempo` | Blitzlesen auf Zeit | `woerter:[{fa,tr,de}]`, `modus`: `"tr"` oder `"de"`, `sekunden`, `ziel` |
+| `bauen` + `"zeigen": true` | Abschreiben: Wort wird gezeigt, aus Buchstaben nachbauen | wie `bauen` |
+| `bauen` + `"trenner": " "` | Satzbau: Wörter in die richtige Reihenfolge bringen | `woerter:[{fa,tr,de,teile:[Wörter],extra:[…]}]` |
+| `text` | Lesetext, Zeile antippen → Umschrift + Übersetzung | `zeilen:[{fa,tr,de}]` |
+
+Bei `paare` und `memory` kann mit `"links": "x"` auf beiden Seiten Persisch stehen (Feld `x`, z. B. Pronomen ↔ Verbform). Bei `tempo` kann jedes Wort mit `a` eine eigene Antwort haben (`"optFa": true` für persische Antworten).
 
 `richtig` zählt ab 0. In `bauen` müssen die `teile` genau die Buchstaben des Wortes ohne Vokalzeichen sein.
 

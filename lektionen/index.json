@@ -1,11 +1,54 @@
 {
   "titel": "Farsi-Lernpfad",
   "lektionen": [
-    { "id": "01", "nummer": 1, "titel": "Das persische Alphabet", "titelFa": "اَلِفبای فارسی", "untertitel": "Alle 32 Buchstaben Schritt für Schritt – vokalisiert", "datei": "01-alphabet.json", "standard": "offen" },
-    { "id": "02", "nummer": 2, "titel": "Ich, du, er – und „sein“", "titelFa": "مَن، تو، او – بودَن", "untertitel": "Personalpronomen, hastam / nīstam", "standard": "bald" },
-    { "id": "03", "nummer": 3, "titel": "Haben – und nicht haben", "titelFa": "داشتَن", "untertitel": "dāram / nadāram", "standard": "bald" },
-    { "id": "04", "nummer": 4, "titel": "Wie geht’s? Gefühle & Berufe", "titelFa": "حال و کار", "untertitel": "müde, hungrig, froh … Lehrerin, Koch …", "standard": "bald" },
-    { "id": "05", "nummer": 5, "titel": "Mögen: Gemüse & Co.", "titelFa": "دوست داشتَن", "untertitel": "dūst dāram / dūst nadāram", "standard": "bald" },
-    { "id": "06", "nummer": 6, "titel": "Wo? Wann? Orte & Tageszeiten", "titelFa": "کُجا؟ کِی؟", "untertitel": "Uni, Café, Kino … morgens, mittags, abends", "standard": "bald" }
+    {
+      "id": "01",
+      "nummer": 1,
+      "titel": "Das persische Alphabet",
+      "titelFa": "اَلِفبای فارسی",
+      "untertitel": "Alle 32 Buchstaben Schritt für Schritt – vokalisiert",
+      "datei": "01-alphabet.json",
+      "standard": "offen",
+      "zusatz": [
+        "01-zusatz-1.json"
+      ]
+    },
+    {
+      "id": "02",
+      "nummer": 2,
+      "titel": "Wer bin ich? – sein, Berufe, Gefühle",
+      "titelFa": "مَن کیستَم؟",
+      "untertitel": "Pronomen, hastam / nīstam, Fragen, Berufe, Gefühle, erste Texte",
+      "datei": "02-sein.json",
+      "standard": "offen",
+      "zusatz": [
+        "02-zusatz-1.json",
+        "02-umgangssprache.json"
+      ]
+    },
+    {
+      "id": "03",
+      "nummer": 3,
+      "titel": "Haben – und nicht haben",
+      "titelFa": "داشتَن",
+      "untertitel": "dāram / nadāram",
+      "standard": "bald"
+    },
+    {
+      "id": "04",
+      "nummer": 4,
+      "titel": "Mögen: Gemüse & Co.",
+      "titelFa": "دوست داشتَن",
+      "untertitel": "dūst dāram / dūst nadāram",
+      "standard": "bald"
+    },
+    {
+      "id": "05",
+      "nummer": 5,
+      "titel": "Wo? Wann? Orte & Tageszeiten",
+      "titelFa": "کُجا؟ کِی؟",
+      "untertitel": "Uni, Café, Kino … morgens, mittags, abends",
+      "standard": "bald"
+    }
   ]
 }

@@ -1,0 +1,1485 @@
+{
+ "id": "z1",
+ "titel": "Trainingspaket 1",
+ "beschreibung": "Konjugation auf Zeit, Satzbau-Werkstatt, Berufe- und Gefühle-Training.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "Konjugations-Blitz",
+   "vorschau": "هَستَم ⇄ نیستَم",
+   "karten": [
+    {
+     "typ": "tempo",
+     "titel": "Blitz: sein",
+     "aufgabe": "Tippe die passende Form von „sein“ an.",
+     "modus": "de",
+     "sekunden": 45,
+     "ziel": 15,
+     "optFa": true,
+     "woerter": [
+      {
+       "fa": "مَن",
+       "a": "هَستَم"
+      },
+      {
+       "fa": "تو",
+       "a": "هَستی"
+      },
+      {
+       "fa": "او",
+       "a": "اَست"
+      },
+      {
+       "fa": "ما",
+       "a": "هَستیم"
+      },
+      {
+       "fa": "شُما",
+       "a": "هَستید"
+      },
+      {
+       "fa": "آنها",
+       "a": "هَستَند"
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: nicht sein",
+     "aufgabe": "Tippe die verneinte Form an.",
+     "modus": "de",
+     "sekunden": 45,
+     "ziel": 15,
+     "optFa": true,
+     "woerter": [
+      {
+       "fa": "مَن",
+       "a": "نیستَم"
+      },
+      {
+       "fa": "تو",
+       "a": "نیستی"
+      },
+      {
+       "fa": "او",
+       "a": "نیست"
+      },
+      {
+       "fa": "ما",
+       "a": "نیستیم"
+      },
+      {
+       "fa": "شُما",
+       "a": "نیستید"
+      },
+      {
+       "fa": "آنها",
+       "a": "نیستَند"
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: ja → nein",
+     "aufgabe": "Tippe das Gegenstück (verneint) an.",
+     "modus": "de",
+     "sekunden": 45,
+     "ziel": 12,
+     "optFa": true,
+     "woerter": [
+      {
+       "fa": "هَستَم",
+       "a": "نیستَم"
+      },
+      {
+       "fa": "هَستی",
+       "a": "نیستی"
+      },
+      {
+       "fa": "اَست",
+       "a": "نیست"
+      },
+      {
+       "fa": "هَستیم",
+       "a": "نیستیم"
+      },
+      {
+       "fa": "هَستید",
+       "a": "نیستید"
+      },
+      {
+       "fa": "هَستَند",
+       "a": "نیستَند"
+      }
+     ]
+    },
+    {
+     "typ": "memory",
+     "links": "x",
+     "paare": [
+      {
+       "fa": "مَن",
+       "tr": "",
+       "de": "",
+       "x": "هَستَم"
+      },
+      {
+       "fa": "تو",
+       "tr": "",
+       "de": "",
+       "x": "هَستی"
+      },
+      {
+       "fa": "او",
+       "tr": "",
+       "de": "",
+       "x": "اَست"
+      },
+      {
+       "fa": "ما",
+       "tr": "",
+       "de": "",
+       "x": "هَستیم"
+      },
+      {
+       "fa": "شُما",
+       "tr": "",
+       "de": "",
+       "x": "هَستید"
+      },
+      {
+       "fa": "آنها",
+       "tr": "",
+       "de": "",
+       "x": "هَستَند"
+      }
+     ],
+     "titel": "Memory: Pronomen & Form"
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Satzbau-Werkstatt",
+   "vorschau": "مَن … هَستَم",
+   "karten": [
+    {
+     "typ": "bauen",
+     "titel": "Satzbau: Gefühle",
+     "trenner": " ",
+     "woerter": [
+      {
+       "fa": "او عاشِق اَست.",
+       "tr": "ū ʿāschegh ast.",
+       "de": "Er/Sie ist verliebt.",
+       "emoji": "😍",
+       "teile": [
+        "او",
+        "عاشِق",
+        "اَست"
+       ],
+       "extra": [
+        "هَستی"
+       ]
+      },
+      {
+       "fa": "ما سیر هَستیم.",
+       "tr": "mā sīr hastīm.",
+       "de": "Wir sind satt.",
+       "emoji": "😌",
+       "teile": [
+        "ما",
+        "سیر",
+        "هَستیم"
+       ],
+       "extra": [
+        "هَستیم"
+       ]
+      },
+      {
+       "fa": "آنها عَصَبانی هَستَند.",
+       "tr": "ānhā ʿasabānī hastand.",
+       "de": "Sie sind wütend.",
+       "emoji": "😠",
+       "teile": [
+        "آنها",
+        "عَصَبانی",
+        "هَستَند"
+       ],
+       "extra": [
+        "هَستید"
+       ]
+      },
+      {
+       "fa": "ما نِگَران هَستیم.",
+       "tr": "mā negarān hastīm.",
+       "de": "Wir sind besorgt.",
+       "emoji": "😟",
+       "teile": [
+        "ما",
+        "نِگَران",
+        "هَستیم"
+       ],
+       "extra": [
+        "هَستی"
+       ]
+      },
+      {
+       "fa": "ما آرام هَستیم.",
+       "tr": "mā ārām hastīm.",
+       "de": "Wir sind ruhig.",
+       "emoji": "🧘",
+       "teile": [
+        "ما",
+        "آرام",
+        "هَستیم"
+       ],
+       "extra": [
+        "هَستیم"
+       ]
+      }
+     ]
+    },
+    {
+     "typ": "bauen",
+     "titel": "Satzbau: Berufe",
+     "trenner": " ",
+     "woerter": [
+      {
+       "fa": "او فُروشَندِه اَست.",
+       "tr": "ū forūschande ast.",
+       "de": "Er/Sie ist Verkäufer/in.",
+       "emoji": "🛒",
+       "teile": [
+        "او",
+        "فُروشَندِه",
+        "اَست"
+       ],
+       "extra": [
+        "نیست"
+       ]
+      },
+      {
+       "fa": "شُما خوانَندِه هَستید.",
+       "tr": "schomā chānande hastīd.",
+       "de": "Ihr seid Sänger/innen.",
+       "emoji": "🎤",
+       "teile": [
+        "شُما",
+        "خوانَندِه",
+        "هَستید"
+       ],
+       "extra": [
+        "اَست"
+       ]
+      },
+      {
+       "fa": "مَن پَرَستار هَستَم.",
+       "tr": "man parastār hastam.",
+       "de": "Ich bin Pfleger/in.",
+       "emoji": "💉",
+       "teile": [
+        "مَن",
+        "پَرَستار",
+        "هَستَم"
+       ],
+       "extra": [
+        "نیست"
+       ]
+      },
+      {
+       "fa": "شُما بَنّا هَستید.",
+       "tr": "schomā bannā hastīd.",
+       "de": "Ihr seid Bauarbeiter/innen.",
+       "emoji": "🧱",
+       "teile": [
+        "شُما",
+        "بَنّا",
+        "هَستید"
+       ],
+       "extra": [
+        "نیست"
+       ]
+      },
+      {
+       "fa": "مَن خوانَندِه هَستَم.",
+       "tr": "man chānande hastam.",
+       "de": "Ich bin Sänger/in.",
+       "emoji": "🎤",
+       "teile": [
+        "مَن",
+        "خوانَندِه",
+        "هَستَم"
+       ],
+       "extra": [
+        "نیست"
+       ]
+      }
+     ]
+    },
+    {
+     "typ": "bauen",
+     "titel": "Satzbau: verneint",
+     "trenner": " ",
+     "woerter": [
+      {
+       "fa": "ما مُعَلِّم نیستیم.",
+       "tr": "mā moʿallem nīstīm.",
+       "de": "Wir sind nicht Lehrer/innen.",
+       "emoji": "🧑‍🏫",
+       "teile": [
+        "ما",
+        "مُعَلِّم",
+        "نیستیم"
+       ],
+       "extra": [
+        "هَستی"
+       ]
+      },
+      {
+       "fa": "آنها بَنّا نیستَند.",
+       "tr": "ānhā bannā nīstand.",
+       "de": "Sie sind nicht Bauarbeiter/innen.",
+       "emoji": "🧱",
+       "teile": [
+        "آنها",
+        "بَنّا",
+        "نیستَند"
+       ],
+       "extra": [
+        "هَستی"
+       ]
+      },
+      {
+       "fa": "آنها باغبان نیستَند.",
+       "tr": "ānhā bāghbān nīstand.",
+       "de": "Sie sind nicht Gärtner/innen.",
+       "emoji": "🧑‍🌾",
+       "teile": [
+        "آنها",
+        "باغبان",
+        "نیستَند"
+       ],
+       "extra": [
+        "هَستی"
+       ]
+      },
+      {
+       "fa": "ما پُلیس نیستیم.",
+       "tr": "mā polīs nīstīm.",
+       "de": "Wir sind nicht Polizist/innen.",
+       "emoji": "👮",
+       "teile": [
+        "ما",
+        "پُلیس",
+        "نیستیم"
+       ],
+       "extra": [
+        "هَستی"
+       ]
+      },
+      {
+       "fa": "شُما نَجّار نیستید.",
+       "tr": "schomā nadschdschār nīstīd.",
+       "de": "Ihr seid nicht Tischler/innen.",
+       "emoji": "🪚",
+       "teile": [
+        "شُما",
+        "نَجّار",
+        "نیستید"
+       ],
+       "extra": [
+        "هَستَم"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "titel": "Berufe-Training",
+   "vorschau": "مُعَلِّم دانِشجو",
+   "karten": [
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "آشپَز",
+       "tr": "āschpaz",
+       "de": "Koch / Köchin",
+       "emoji": "🧑‍🍳",
+       "pl": "Köch/innen"
+      },
+      {
+       "fa": "پُلیس",
+       "tr": "polīs",
+       "de": "Polizist/in",
+       "emoji": "👮",
+       "pl": "Polizist/innen"
+      },
+      {
+       "fa": "بَنّا",
+       "tr": "bannā",
+       "de": "Bauarbeiter/in",
+       "emoji": "🧱",
+       "pl": "Bauarbeiter/innen"
+      },
+      {
+       "fa": "پِزِشک",
+       "tr": "pezeschk",
+       "de": "Arzt / Ärztin",
+       "emoji": "🩺",
+       "pl": "Ärzt/innen"
+      },
+      {
+       "fa": "مُهَندِس",
+       "tr": "mohandes",
+       "de": "Ingenieur/in",
+       "emoji": "📐",
+       "pl": "Ingenieur/innen"
+      },
+      {
+       "fa": "باغبان",
+       "tr": "bāghbān",
+       "de": "Gärtner/in",
+       "emoji": "🧑‍🌾",
+       "pl": "Gärtner/innen"
+      }
+     ],
+     "titel": "Memory: Bild & Wort"
+    },
+    {
+     "typ": "memory",
+     "links": "tr",
+     "paare": [
+      {
+       "fa": "دانِشجو",
+       "tr": "dāneschdschū",
+       "de": "Student/in",
+       "emoji": "🧑‍🎓",
+       "pl": "Student/innen"
+      },
+      {
+       "fa": "مُعَلِّم",
+       "tr": "moʿallem",
+       "de": "Lehrer/in",
+       "emoji": "🧑‍🏫",
+       "pl": "Lehrer/innen"
+      },
+      {
+       "fa": "مُتَرجِم",
+       "tr": "motardschem",
+       "de": "Übersetzer/in",
+       "emoji": "🗣️",
+       "pl": "Übersetzer/innen"
+      },
+      {
+       "fa": "باغبان",
+       "tr": "bāghbān",
+       "de": "Gärtner/in",
+       "emoji": "🧑‍🌾",
+       "pl": "Gärtner/innen"
+      },
+      {
+       "fa": "پِزِشک",
+       "tr": "pezeschk",
+       "de": "Arzt / Ärztin",
+       "emoji": "🩺",
+       "pl": "Ärzt/innen"
+      },
+      {
+       "fa": "خوانَندِه",
+       "tr": "chānande",
+       "de": "Sänger/in",
+       "emoji": "🎤",
+       "pl": "Sänger/innen"
+      }
+     ],
+     "titel": "Memory: Schrift & Aussprache"
+    },
+    {
+     "typ": "bauen",
+     "titel": "Schreib das Wort ab",
+     "zeigen": true,
+     "woerter": [
+      {
+       "fa": "کارمَند",
+       "tr": "kārmand",
+       "de": "Angestellte/r",
+       "emoji": "💼",
+       "pl": "Angestellte",
+       "teile": [
+        "ک",
+        "ا",
+        "ر",
+        "م",
+        "ن",
+        "د"
+       ],
+       "extra": [
+        "ش"
+       ]
+      },
+      {
+       "fa": "مُهَندِس",
+       "tr": "mohandes",
+       "de": "Ingenieur/in",
+       "emoji": "📐",
+       "pl": "Ingenieur/innen",
+       "teile": [
+        "م",
+        "ه",
+        "ن",
+        "د",
+        "س"
+       ],
+       "extra": [
+        "ت"
+       ]
+      },
+      {
+       "fa": "رانَندِه",
+       "tr": "rānande",
+       "de": "Fahrer/in",
+       "emoji": "🚕",
+       "pl": "Fahrer/innen",
+       "teile": [
+        "ر",
+        "ا",
+        "ن",
+        "ن",
+        "د",
+        "ه"
+       ],
+       "extra": [
+        "ب"
+       ]
+      },
+      {
+       "fa": "فُروشَندِه",
+       "tr": "forūschande",
+       "de": "Verkäufer/in",
+       "emoji": "🛒",
+       "pl": "Verkäufer/innen",
+       "teile": [
+        "ف",
+        "ر",
+        "و",
+        "ش",
+        "ن",
+        "د",
+        "ه"
+       ],
+       "extra": [
+        "س"
+       ]
+      },
+      {
+       "fa": "خوانَندِه",
+       "tr": "chānande",
+       "de": "Sänger/in",
+       "emoji": "🎤",
+       "pl": "Sänger/innen",
+       "teile": [
+        "خ",
+        "و",
+        "ا",
+        "ن",
+        "ن",
+        "د",
+        "ه"
+       ],
+       "extra": [
+        "س"
+       ]
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitzlesen: Bedeutung",
+     "modus": "de",
+     "sekunden": 60,
+     "ziel": 12,
+     "woerter": [
+      {
+       "fa": "مُعَلِّم",
+       "de": "Lehrer/in"
+      },
+      {
+       "fa": "دانِشجو",
+       "de": "Student/in"
+      },
+      {
+       "fa": "پِزِشک",
+       "de": "Arzt / Ärztin"
+      },
+      {
+       "fa": "پَرَستار",
+       "de": "Pfleger/in"
+      },
+      {
+       "fa": "آشپَز",
+       "de": "Koch / Köchin"
+      },
+      {
+       "fa": "مُهَندِس",
+       "de": "Ingenieur/in"
+      },
+      {
+       "fa": "پُلیس",
+       "de": "Polizist/in"
+      },
+      {
+       "fa": "نَجّار",
+       "de": "Tischler/in"
+      },
+      {
+       "fa": "باغبان",
+       "de": "Gärtner/in"
+      },
+      {
+       "fa": "بَنّا",
+       "de": "Bauarbeiter/in"
+      },
+      {
+       "fa": "رانَندِه",
+       "de": "Fahrer/in"
+      },
+      {
+       "fa": "فُروشَندِه",
+       "de": "Verkäufer/in"
+      },
+      {
+       "fa": "کارمَند",
+       "de": "Angestellte/r"
+      },
+      {
+       "fa": "خوانَندِه",
+       "de": "Sänger/in"
+      },
+      {
+       "fa": "مُتَرجِم",
+       "de": "Übersetzer/in"
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitzlesen: Aussprache",
+     "modus": "tr",
+     "sekunden": 60,
+     "ziel": 12,
+     "woerter": [
+      {
+       "fa": "مُعَلِّم",
+       "tr": "moʿallem"
+      },
+      {
+       "fa": "دانِشجو",
+       "tr": "dāneschdschū"
+      },
+      {
+       "fa": "پِزِشک",
+       "tr": "pezeschk"
+      },
+      {
+       "fa": "پَرَستار",
+       "tr": "parastār"
+      },
+      {
+       "fa": "آشپَز",
+       "tr": "āschpaz"
+      },
+      {
+       "fa": "مُهَندِس",
+       "tr": "mohandes"
+      },
+      {
+       "fa": "پُلیس",
+       "tr": "polīs"
+      },
+      {
+       "fa": "نَجّار",
+       "tr": "nadschdschār"
+      },
+      {
+       "fa": "باغبان",
+       "tr": "bāghbān"
+      },
+      {
+       "fa": "بَنّا",
+       "tr": "bannā"
+      },
+      {
+       "fa": "رانَندِه",
+       "tr": "rānande"
+      },
+      {
+       "fa": "فُروشَندِه",
+       "tr": "forūschande"
+      },
+      {
+       "fa": "کارمَند",
+       "tr": "kārmand"
+      },
+      {
+       "fa": "خوانَندِه",
+       "tr": "chānande"
+      },
+      {
+       "fa": "مُتَرجِم",
+       "tr": "motardschem"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d",
+   "titel": "Gefühle-Training",
+   "vorschau": "گُرُسنِه تِشنِه",
+   "karten": [
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "خَستِه",
+       "tr": "chaste",
+       "de": "müde",
+       "emoji": "🥱"
+      },
+      {
+       "fa": "سیر",
+       "tr": "sīr",
+       "de": "satt",
+       "emoji": "😌"
+      },
+      {
+       "fa": "گُرُسنِه",
+       "tr": "gorosne",
+       "de": "hungrig",
+       "emoji": "🍽️"
+      },
+      {
+       "fa": "عاشِق",
+       "tr": "ʿāschegh",
+       "de": "verliebt",
+       "emoji": "😍"
+      },
+      {
+       "fa": "بیمار",
+       "tr": "bīmār",
+       "de": "krank",
+       "emoji": "🤒"
+      },
+      {
+       "fa": "آرام",
+       "tr": "ārām",
+       "de": "ruhig",
+       "emoji": "🧘"
+      }
+     ],
+     "titel": "Memory: Bild & Wort"
+    },
+    {
+     "typ": "memory",
+     "links": "tr",
+     "paare": [
+      {
+       "fa": "تِشنِه",
+       "tr": "teschne",
+       "de": "durstig",
+       "emoji": "🥤"
+      },
+      {
+       "fa": "گُرُسنِه",
+       "tr": "gorosne",
+       "de": "hungrig",
+       "emoji": "🍽️"
+      },
+      {
+       "fa": "غَمگین",
+       "tr": "ghamgīn",
+       "de": "traurig",
+       "emoji": "😢"
+      },
+      {
+       "fa": "نِگَران",
+       "tr": "negarān",
+       "de": "besorgt",
+       "emoji": "😟"
+      },
+      {
+       "fa": "سیر",
+       "tr": "sīr",
+       "de": "satt",
+       "emoji": "😌"
+      },
+      {
+       "fa": "عاشِق",
+       "tr": "ʿāschegh",
+       "de": "verliebt",
+       "emoji": "😍"
+      }
+     ],
+     "titel": "Memory: Schrift & Aussprache"
+    },
+    {
+     "typ": "bauen",
+     "titel": "Schreib das Wort ab",
+     "zeigen": true,
+     "woerter": [
+      {
+       "fa": "غَمگین",
+       "tr": "ghamgīn",
+       "de": "traurig",
+       "emoji": "😢",
+       "teile": [
+        "غ",
+        "م",
+        "گ",
+        "ی",
+        "ن"
+       ],
+       "extra": [
+        "ت"
+       ]
+      },
+      {
+       "fa": "شاد",
+       "tr": "schād",
+       "de": "froh",
+       "emoji": "😊",
+       "teile": [
+        "ش",
+        "ا",
+        "د"
+       ],
+       "extra": [
+        "ش"
+       ]
+      },
+      {
+       "fa": "آرام",
+       "tr": "ārām",
+       "de": "ruhig",
+       "emoji": "🧘",
+       "teile": [
+        "آ",
+        "ر",
+        "ا",
+        "م"
+       ],
+       "extra": [
+        "پ"
+       ]
+      },
+      {
+       "fa": "عاشِق",
+       "tr": "ʿāschegh",
+       "de": "verliebt",
+       "emoji": "😍",
+       "teile": [
+        "ع",
+        "ا",
+        "ش",
+        "ق"
+       ],
+       "extra": [
+        "ر"
+       ]
+      },
+      {
+       "fa": "بَد",
+       "tr": "bad",
+       "de": "schlecht",
+       "emoji": "👎",
+       "teile": [
+        "ب",
+        "د"
+       ],
+       "extra": [
+        "ش"
+       ]
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitzlesen: Bedeutung",
+     "modus": "de",
+     "sekunden": 60,
+     "ziel": 12,
+     "woerter": [
+      {
+       "fa": "گُرُسنِه",
+       "de": "hungrig"
+      },
+      {
+       "fa": "تِشنِه",
+       "de": "durstig"
+      },
+      {
+       "fa": "سیر",
+       "de": "satt"
+      },
+      {
+       "fa": "خَستِه",
+       "de": "müde"
+      },
+      {
+       "fa": "بیمار",
+       "de": "krank"
+      },
+      {
+       "fa": "خوب",
+       "de": "gut"
+      },
+      {
+       "fa": "بَد",
+       "de": "schlecht"
+      },
+      {
+       "fa": "شاد",
+       "de": "froh"
+      },
+      {
+       "fa": "غَمگین",
+       "de": "traurig"
+      },
+      {
+       "fa": "عَصَبانی",
+       "de": "wütend"
+      },
+      {
+       "fa": "نِگَران",
+       "de": "besorgt"
+      },
+      {
+       "fa": "آرام",
+       "de": "ruhig"
+      },
+      {
+       "fa": "عاشِق",
+       "de": "verliebt"
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitzlesen: Aussprache",
+     "modus": "tr",
+     "sekunden": 60,
+     "ziel": 12,
+     "woerter": [
+      {
+       "fa": "گُرُسنِه",
+       "tr": "gorosne"
+      },
+      {
+       "fa": "تِشنِه",
+       "tr": "teschne"
+      },
+      {
+       "fa": "سیر",
+       "tr": "sīr"
+      },
+      {
+       "fa": "خَستِه",
+       "tr": "chaste"
+      },
+      {
+       "fa": "بیمار",
+       "tr": "bīmār"
+      },
+      {
+       "fa": "خوب",
+       "tr": "chūb"
+      },
+      {
+       "fa": "بَد",
+       "tr": "bad"
+      },
+      {
+       "fa": "شاد",
+       "tr": "schād"
+      },
+      {
+       "fa": "غَمگین",
+       "tr": "ghamgīn"
+      },
+      {
+       "fa": "عَصَبانی",
+       "tr": "ʿasabānī"
+      },
+      {
+       "fa": "نِگَران",
+       "tr": "negarān"
+      },
+      {
+       "fa": "آرام",
+       "tr": "ārām"
+      },
+      {
+       "fa": "عاشِق",
+       "tr": "ʿāschegh"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "e",
+   "titel": "Richtig konjugiert?",
+   "vorschau": "___ ؟",
+   "karten": [
+    {
+     "typ": "wahl",
+     "titel": "Welche Form fehlt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>او پَرَستار ___.</span>",
+       "optionen": [
+        "اَست",
+        "هَستَند",
+        "هَستید"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "erkl": "<span class='fa'>او پَرَستار اَست.</span> – Er/Sie ist Pfleger/in."
+      },
+      {
+       "frage": "<span class='fa'>او گُرُسنِه ___.</span>",
+       "optionen": [
+        "اَست",
+        "هَستی",
+        "هَستیم"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "erkl": "<span class='fa'>او گُرُسنِه اَست.</span> – Er/Sie ist hungrig."
+      },
+      {
+       "frage": "<span class='fa'>او کارمَند ___.</span>",
+       "optionen": [
+        "اَست",
+        "هَستَم",
+        "هَستیم"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "erkl": "<span class='fa'>او کارمَند اَست.</span> – Er/Sie ist Angestellte/r."
+      },
+      {
+       "frage": "<span class='fa'>ما تِشنِه ___.</span>",
+       "optionen": [
+        "هَستیم",
+        "هَستید",
+        "هَستی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "erkl": "<span class='fa'>ما تِشنِه هَستیم.</span> – Wir sind durstig."
+      },
+      {
+       "frage": "<span class='fa'>ما مُهَندِس ___.</span>",
+       "optionen": [
+        "هَستیم",
+        "هَستَم",
+        "هَستید"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "erkl": "<span class='fa'>ما مُهَندِس هَستیم.</span> – Wir sind Ingenieur/innen."
+      },
+      {
+       "frage": "<span class='fa'>آنها پِزِشک ___.</span>",
+       "optionen": [
+        "هَستَند",
+        "هَستَم",
+        "هَستیم"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "erkl": "<span class='fa'>آنها پِزِشک هَستَند.</span> – Sie sind Ärzt/innen."
+      },
+      {
+       "frage": "<span class='fa'>مَن گُرُسنِه ___.</span>",
+       "optionen": [
+        "نیستَم",
+        "نیستَند",
+        "نیست"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "erkl": "<span class='fa'>مَن گُرُسنِه نیستَم.</span> – Ich bin nicht hungrig."
+      },
+      {
+       "frage": "<span class='fa'>او پِزِشک ___.</span>",
+       "optionen": [
+        "نیست",
+        "نیستَم",
+        "نیستیم"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "erkl": "<span class='fa'>او پِزِشک نیست.</span> – Er/Sie ist nicht Arzt / Ärztin."
+      },
+      {
+       "frage": "<span class='fa'>آنها گُرُسنِه ___.</span>",
+       "optionen": [
+        "نیستَند",
+        "نیست",
+        "نیستَم"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "erkl": "<span class='fa'>آنها گُرُسنِه نیستَند.</span> – Sie sind nicht hungrig."
+      },
+      {
+       "frage": "<span class='fa'>ما رانَندِه ___.</span>",
+       "optionen": [
+        "هَستیم",
+        "هَستَم",
+        "هَستید"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "erkl": "<span class='fa'>ما رانَندِه هَستیم.</span> – Wir sind Fahrer/innen."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "f",
+   "titel": "Bejaht → verneint",
+   "vorschau": "هَست → نیست",
+   "karten": [
+    {
+     "typ": "wahl",
+     "titel": "Mach den Satz negativ",
+     "fragen": [
+      {
+       "frage": "Verneine: <span class='fa'>شُما نَجّار هَستید.</span>",
+       "optionen": [
+        "شُما نَجّار نیستید.",
+        "تو نَجّار نیستی.",
+        "شُما نَجّار هَستید."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "Ihr seid nicht Tischler/innen."
+      },
+      {
+       "frage": "Verneine: <span class='fa'>ما دانِشجو هَستیم.</span>",
+       "optionen": [
+        "ما دانِشجو نیستیم.",
+        "مَن دانِشجو نیستَم.",
+        "ما دانِشجو هَستیم."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "Wir sind nicht Student/innen."
+      },
+      {
+       "frage": "Verneine: <span class='fa'>مَن بیمار هَستَم.</span>",
+       "optionen": [
+        "مَن بیمار نیستَم.",
+        "ما بیمار نیستیم.",
+        "مَن بیمار هَستَم."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "Ich bin nicht krank."
+      },
+      {
+       "frage": "Verneine: <span class='fa'>ما دانِشجو هَستیم.</span>",
+       "optionen": [
+        "ما دانِشجو نیستیم.",
+        "مَن دانِشجو نیستَم.",
+        "ما دانِشجو هَستیم."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "Wir sind nicht Student/innen."
+      },
+      {
+       "frage": "Verneine: <span class='fa'>او کارمَند اَست.</span>",
+       "optionen": [
+        "او کارمَند نیست.",
+        "آنها کارمَند نیستَند.",
+        "او کارمَند اَست."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "Er/Sie ist nicht Angestellte/r."
+      },
+      {
+       "frage": "Verneine: <span class='fa'>تو عاشِق هَستی.</span>",
+       "optionen": [
+        "تو عاشِق نیستی.",
+        "شُما عاشِق نیستید.",
+        "تو عاشِق هَستی."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "Du bist nicht verliebt."
+      },
+      {
+       "frage": "Verneine: <span class='fa'>ما فُروشَندِه هَستیم.</span>",
+       "optionen": [
+        "ما فُروشَندِه نیستیم.",
+        "مَن فُروشَندِه نیستَم.",
+        "ما فُروشَندِه هَستیم."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "Wir sind nicht Verkäufer/innen."
+      },
+      {
+       "frage": "Verneine: <span class='fa'>مَن کارمَند هَستَم.</span>",
+       "optionen": [
+        "مَن کارمَند نیستَم.",
+        "ما کارمَند نیستیم.",
+        "مَن کارمَند هَستَم."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "Ich bin nicht Angestellte/r."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "g",
+   "titel": "Blitz-Marathon",
+   "vorschau": "⏱️ ⏱️",
+   "karten": [
+    {
+     "typ": "tempo",
+     "titel": "Marathon: Bedeutung",
+     "modus": "de",
+     "sekunden": 90,
+     "ziel": 20,
+     "woerter": [
+      {
+       "fa": "مُعَلِّم",
+       "de": "Lehrer/in"
+      },
+      {
+       "fa": "دانِشجو",
+       "de": "Student/in"
+      },
+      {
+       "fa": "پِزِشک",
+       "de": "Arzt / Ärztin"
+      },
+      {
+       "fa": "پَرَستار",
+       "de": "Pfleger/in"
+      },
+      {
+       "fa": "آشپَز",
+       "de": "Koch / Köchin"
+      },
+      {
+       "fa": "مُهَندِس",
+       "de": "Ingenieur/in"
+      },
+      {
+       "fa": "پُلیس",
+       "de": "Polizist/in"
+      },
+      {
+       "fa": "نَجّار",
+       "de": "Tischler/in"
+      },
+      {
+       "fa": "باغبان",
+       "de": "Gärtner/in"
+      },
+      {
+       "fa": "بَنّا",
+       "de": "Bauarbeiter/in"
+      },
+      {
+       "fa": "رانَندِه",
+       "de": "Fahrer/in"
+      },
+      {
+       "fa": "فُروشَندِه",
+       "de": "Verkäufer/in"
+      },
+      {
+       "fa": "کارمَند",
+       "de": "Angestellte/r"
+      },
+      {
+       "fa": "خوانَندِه",
+       "de": "Sänger/in"
+      },
+      {
+       "fa": "مُتَرجِم",
+       "de": "Übersetzer/in"
+      },
+      {
+       "fa": "گُرُسنِه",
+       "de": "hungrig"
+      },
+      {
+       "fa": "تِشنِه",
+       "de": "durstig"
+      },
+      {
+       "fa": "سیر",
+       "de": "satt"
+      },
+      {
+       "fa": "خَستِه",
+       "de": "müde"
+      },
+      {
+       "fa": "بیمار",
+       "de": "krank"
+      },
+      {
+       "fa": "خوب",
+       "de": "gut"
+      },
+      {
+       "fa": "بَد",
+       "de": "schlecht"
+      },
+      {
+       "fa": "شاد",
+       "de": "froh"
+      },
+      {
+       "fa": "غَمگین",
+       "de": "traurig"
+      },
+      {
+       "fa": "عَصَبانی",
+       "de": "wütend"
+      },
+      {
+       "fa": "نِگَران",
+       "de": "besorgt"
+      },
+      {
+       "fa": "آرام",
+       "de": "ruhig"
+      },
+      {
+       "fa": "عاشِق",
+       "de": "verliebt"
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Marathon: Sätze verstehen",
+     "modus": "de",
+     "sekunden": 90,
+     "ziel": 12,
+     "woerter": [
+      {
+       "fa": "آنها گُرُسنِه نیستَند.",
+       "de": "Sie sind nicht hungrig."
+      },
+      {
+       "fa": "آنها سیر نیستَند.",
+       "de": "Sie sind nicht satt."
+      },
+      {
+       "fa": "آنها آرام هَستَند.",
+       "de": "Sie sind ruhig."
+      },
+      {
+       "fa": "مَن خَستِه هَستَم.",
+       "de": "Ich bin müde."
+      },
+      {
+       "fa": "او آرام اَست.",
+       "de": "Er/Sie ist ruhig."
+      },
+      {
+       "fa": "شُما گُرُسنِه نیستید.",
+       "de": "Ihr seid nicht hungrig."
+      },
+      {
+       "fa": "آنها نِگَران هَستَند.",
+       "de": "Sie sind besorgt."
+      },
+      {
+       "fa": "تو بیمار نیستی.",
+       "de": "Du bist nicht krank."
+      },
+      {
+       "fa": "شُما بیمار هَستید.",
+       "de": "Ihr seid krank."
+      },
+      {
+       "fa": "مَن آرام هَستَم.",
+       "de": "Ich bin ruhig."
+      },
+      {
+       "fa": "مَن گُرُسنِه هَستَم.",
+       "de": "Ich bin hungrig."
+      },
+      {
+       "fa": "ما شاد نیستیم.",
+       "de": "Wir sind nicht froh."
+      },
+      {
+       "fa": "شُما گُرُسنِه هَستید.",
+       "de": "Ihr seid hungrig."
+      },
+      {
+       "fa": "او آرام اَست.",
+       "de": "Er/Sie ist ruhig."
+      },
+      {
+       "fa": "ما عَصَبانی هَستیم.",
+       "de": "Wir sind wütend."
+      },
+      {
+       "fa": "آنها گُرُسنِه هَستَند.",
+       "de": "Sie sind hungrig."
+      },
+      {
+       "fa": "تو سیر هَستی.",
+       "de": "Du bist satt."
+      },
+      {
+       "fa": "او آرام اَست.",
+       "de": "Er/Sie ist ruhig."
+      },
+      {
+       "fa": "او تِشنِه نیست.",
+       "de": "Er/Sie ist nicht durstig."
+      },
+      {
+       "fa": "مَن نِگَران هَستَم.",
+       "de": "Ich bin besorgt."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

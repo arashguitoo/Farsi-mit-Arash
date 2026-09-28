@@ -1,0 +1,4152 @@
+{
+ "id": "z1",
+ "titel": "Trainingspaket 1",
+ "beschreibung": "Memory, Blitzlesen auf Zeit, Abschreiben, Formen erkennen und Rechtschreibung – zum Wiederholen und Festigen.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "Training A: آ bis و",
+   "vorschau": "آ ا ب د م ر",
+   "karten": [
+    {
+     "typ": "memory",
+     "gen": true,
+     "links": "tr",
+     "titel": "Memory: Schrift & Aussprache",
+     "paare": [
+      {
+       "fa": "تاب",
+       "tr": "tāb",
+       "de": "Schaukel",
+       "emoji": "🌳"
+      },
+      {
+       "fa": "اَبر",
+       "tr": "abr",
+       "de": "Wolke",
+       "emoji": "☁️"
+      },
+      {
+       "fa": "تَب",
+       "tr": "tab",
+       "de": "Fieber",
+       "emoji": "🤒"
+      },
+      {
+       "fa": "نان",
+       "tr": "nān",
+       "de": "Brot",
+       "emoji": "🍞"
+      },
+      {
+       "fa": "بَنّا",
+       "tr": "bannā",
+       "de": "Bauarbeiter/in",
+       "emoji": "👷"
+      },
+      {
+       "fa": "سَرد",
+       "tr": "sard",
+       "de": "kalt",
+       "emoji": "🥶"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "gen": true,
+     "titel": "Welcher Buchstabe versteckt sich hier?",
+     "fragen": [
+      {
+       "fa": "‍م",
+       "hoeren": false,
+       "frage": "Welcher Buchstabe ist das? <span class='mini'>(Form: am Ende)</span>",
+       "optFa": true,
+       "optionen": [
+        "م",
+        "س",
+        "ث"
+       ],
+       "richtig": 0,
+       "erkl": "<span class='fa'>م</span> – Mīm"
+      },
+      {
+       "fa": "‍پ",
+       "hoeren": false,
+       "frage": "Welcher Buchstabe ist das? <span class='mini'>(Form: am Ende)</span>",
+       "optFa": true,
+       "optionen": [
+        "پ",
+        "ب",
+        "ت"
+       ],
+       "richtig": 0,
+       "erkl": "<span class='fa'>پ</span> – Pe"
+      },
+      {
+       "fa": "‍ت‍",
+       "hoeren": false,
+       "frage": "Welcher Buchstabe ist das? <span class='mini'>(Form: in der Mitte)</span>",
+       "optFa": true,
+       "optionen": [
+        "ت",
+        "ب",
+        "پ"
+       ],
+       "richtig": 0,
+       "erkl": "<span class='fa'>ت</span> – Te"
+      },
+      {
+       "fa": "‍ا",
+       "hoeren": false,
+       "frage": "Welcher Buchstabe ist das? <span class='mini'>(Form: am Ende)</span>",
+       "optFa": true,
+       "optionen": [
+        "ا",
+        "آ",
+        "ر"
+       ],
+       "richtig": 0,
+       "erkl": "<span class='fa'>ا</span> – Alef"
+      },
+      {
+       "fa": "‍ب‍",
+       "hoeren": false,
+       "frage": "Welcher Buchstabe ist das? <span class='mini'>(Form: in der Mitte)</span>",
+       "optFa": true,
+       "optionen": [
+        "ب",
+        "پ",
+        "ت"
+       ],
+       "richtig": 0,
+       "erkl": "<span class='fa'>ب</span> – Be"
+      },
+      {
+       "fa": "‍آ",
+       "hoeren": false,
+       "frage": "Welcher Buchstabe ist das? <span class='mini'>(Form: am Ende)</span>",
+       "optFa": true,
+       "optionen": [
+        "آ",
+        "ا",
+        "ب"
+       ],
+       "richtig": 0,
+       "erkl": "<span class='fa'>آ</span> – Alef mit Madde"
+      }
+     ]
+    },
+    {
+     "typ": "bauen",
+     "gen": true,
+     "zeigen": true,
+     "woerter": [
+      {
+       "fa": "مَرد",
+       "tr": "mard",
+       "de": "Mann",
+       "emoji": "👨",
+       "teile": [
+        "م",
+        "ر",
+        "د"
+       ],
+       "extra": [
+        "ژ",
+        "ز"
+       ]
+      },
+      {
+       "fa": "تار",
+       "tr": "tār",
+       "de": "Tar (Laute)",
+       "emoji": "🎸",
+       "teile": [
+        "ت",
+        "ا",
+        "ر"
+       ],
+       "extra": [
+        "ن",
+        "ث"
+       ]
+      },
+      {
+       "fa": "دَست",
+       "tr": "dast",
+       "de": "Hand",
+       "emoji": "✋",
+       "teile": [
+        "د",
+        "س",
+        "ت"
+       ],
+       "extra": [
+        "پ",
+        "ض"
+       ]
+      },
+      {
+       "fa": "باران",
+       "tr": "bārān",
+       "de": "Regen",
+       "emoji": "🌧️",
+       "teile": [
+        "ب",
+        "ا",
+        "ر",
+        "ا",
+        "ن"
+       ],
+       "extra": [
+        "آ",
+        "ز"
+       ]
+      },
+      {
+       "fa": "مادَر",
+       "tr": "mādar",
+       "de": "Mutter",
+       "emoji": "👩‍👧",
+       "teile": [
+        "م",
+        "ا",
+        "د",
+        "ر"
+       ],
+       "extra": [
+        "ز",
+        "ژ"
+       ]
+      }
+     ]
+    },
+    {
+     "typ": "finden",
+     "gen": true,
+     "titel": "Buchstabenjagd",
+     "frage": "Tippe alle Wörter an, in denen <span class='fa'>س</span> (Sīn) vorkommt – egal in welcher Form.",
+     "woerter": [
+      {
+       "fa": "سَبَد",
+       "tr": "sabad",
+       "ja": true
+      },
+      {
+       "fa": "پِسَر",
+       "tr": "pesar",
+       "ja": true
+      },
+      {
+       "fa": "سَرو",
+       "tr": "sarw",
+       "ja": true
+      },
+      {
+       "fa": "سَرد",
+       "tr": "sard",
+       "ja": true
+      },
+      {
+       "fa": "بَنّا",
+       "tr": "bannā",
+       "ja": false
+      },
+      {
+       "fa": "مادَر",
+       "tr": "mādar",
+       "ja": false
+      },
+      {
+       "fa": "اَبر",
+       "tr": "abr",
+       "ja": false
+      },
+      {
+       "fa": "او",
+       "tr": "ū",
+       "ja": false
+      },
+      {
+       "fa": "تَب",
+       "tr": "tab",
+       "ja": false
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "gen": true,
+     "modus": "tr",
+     "sekunden": 60,
+     "ziel": 12,
+     "titel": "Blitzlesen",
+     "woerter": [
+      {
+       "fa": "آب",
+       "tr": "āb",
+       "de": "Wasser"
+      },
+      {
+       "fa": "بابا",
+       "tr": "bābā",
+       "de": "Papa"
+      },
+      {
+       "fa": "باد",
+       "tr": "bād",
+       "de": "Wind"
+      },
+      {
+       "fa": "بَد",
+       "tr": "bad",
+       "de": "schlecht"
+      },
+      {
+       "fa": "داد",
+       "tr": "dād",
+       "de": "(er/sie) gab"
+      },
+      {
+       "fa": "اَبر",
+       "tr": "abr",
+       "de": "Wolke"
+      },
+      {
+       "fa": "بَرادَر",
+       "tr": "barādar",
+       "de": "Bruder"
+      },
+      {
+       "fa": "دَر",
+       "tr": "dar",
+       "de": "Tür"
+      },
+      {
+       "fa": "مادَر",
+       "tr": "mādar",
+       "de": "Mutter"
+      },
+      {
+       "fa": "مار",
+       "tr": "mār",
+       "de": "Schlange"
+      },
+      {
+       "fa": "مَرد",
+       "tr": "mard",
+       "de": "Mann"
+      },
+      {
+       "fa": "تاب",
+       "tr": "tāb",
+       "de": "Schaukel"
+      },
+      {
+       "fa": "تار",
+       "tr": "tār",
+       "de": "Tar (Laute)"
+      },
+      {
+       "fa": "تَب",
+       "tr": "tab",
+       "de": "Fieber"
+      },
+      {
+       "fa": "پا",
+       "tr": "pā",
+       "de": "Fuß, Bein"
+      },
+      {
+       "fa": "او",
+       "tr": "ū",
+       "de": "er / sie"
+      },
+      {
+       "fa": "باران",
+       "tr": "bārān",
+       "de": "Regen"
+      },
+      {
+       "fa": "بَنّا",
+       "tr": "bannā",
+       "de": "Bauarbeiter/in"
+      },
+      {
+       "fa": "تو",
+       "tr": "to",
+       "de": "du"
+      },
+      {
+       "fa": "دَست",
+       "tr": "dast",
+       "de": "Hand"
+      },
+      {
+       "fa": "دو",
+       "tr": "do",
+       "de": "zwei"
+      },
+      {
+       "fa": "دوست",
+       "tr": "dūst",
+       "de": "Freund"
+      },
+      {
+       "fa": "سَبَد",
+       "tr": "sabad",
+       "de": "Korb"
+      },
+      {
+       "fa": "سَر",
+       "tr": "sar",
+       "de": "Kopf"
+      },
+      {
+       "fa": "سَرد",
+       "tr": "sard",
+       "de": "kalt"
+      },
+      {
+       "fa": "سَرو",
+       "tr": "sarw",
+       "de": "Zypresse"
+      },
+      {
+       "fa": "مَن",
+       "tr": "man",
+       "de": "ich"
+      },
+      {
+       "fa": "نان",
+       "tr": "nān",
+       "de": "Brot"
+      },
+      {
+       "fa": "پِسَر",
+       "tr": "pesar",
+       "de": "Junge, Sohn"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Training B: ش bis ی",
+   "vorschau": "ش ک ز خ ه ی",
+   "karten": [
+    {
+     "typ": "memory",
+     "gen": true,
+     "links": "tr",
+     "titel": "Memory: Schrift & Aussprache",
+     "paare": [
+      {
+       "fa": "بیمار",
+       "tr": "bīmār",
+       "de": "krank",
+       "emoji": "🤒"
+      },
+      {
+       "fa": "شَب",
+       "tr": "schab",
+       "de": "Nacht",
+       "emoji": "🌃"
+      },
+      {
+       "fa": "اُمید",
+       "tr": "omīd",
+       "de": "Hoffnung",
+       "emoji": "🌱"
+      },
+      {
+       "fa": "زَمین",
+       "tr": "zamīn",
+       "de": "Erde, Boden",
+       "emoji": "🌍"
+      },
+      {
+       "fa": "هَشت",
+       "tr": "hascht",
+       "de": "acht",
+       "emoji": "8️⃣"
+      },
+      {
+       "fa": "خوب",
+       "tr": "chūb",
+       "de": "gut",
+       "emoji": "👍"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "gen": true,
+     "titel": "Welcher Buchstabe versteckt sich hier?",
+     "fragen": [
+      {
+       "fa": "‍ه",
+       "hoeren": false,
+       "frage": "Welcher Buchstabe ist das? <span class='mini'>(Form: am Ende)</span>",
+       "optFa": true,
+       "optionen": [
+        "ه",
+        "ث",
+        "و"
+       ],
+       "richtig": 0,
+       "erkl": "<span class='fa'>ه</span> – He"
+      },
+      {
+       "fa": "‍ک",
+       "hoeren": false,
+       "frage": "Welcher Buchstabe ist das? <span class='mini'>(Form: am Ende)</span>",
+       "optFa": true,
+       "optionen": [
+        "ک",
+        "ه",
+        "م"
+       ],
+       "richtig": 0,
+       "erkl": "<span class='fa'>ک</span> – Kāf"
+      },
+      {
+       "fa": "ی‍",
+       "hoeren": false,
+       "frage": "Welcher Buchstabe ist das? <span class='mini'>(Form: am Anfang)</span>",
+       "optFa": true,
+       "optionen": [
+        "ی",
+        "ب",
+        "پ"
+       ],
+       "richtig": 0,
+       "erkl": "<span class='fa'>ی</span> – Ye"
+      },
+      {
+       "fa": "‍ز",
+       "hoeren": false,
+       "frage": "Welcher Buchstabe ist das? <span class='mini'>(Form: am Ende)</span>",
+       "optFa": true,
+       "optionen": [
+        "ز",
+        "ر",
+        "ش"
+       ],
+       "richtig": 0,
+       "erkl": "<span class='fa'>ز</span> – Ze"
+      },
+      {
+       "fa": "‍ش",
+       "hoeren": false,
+       "frage": "Welcher Buchstabe ist das? <span class='mini'>(Form: am Ende)</span>",
+       "optFa": true,
+       "optionen": [
+        "ش",
+        "س",
+        "ر"
+       ],
+       "richtig": 0,
+       "erkl": "<span class='fa'>ش</span> – Schīn"
+      },
+      {
+       "fa": "‍خ",
+       "hoeren": false,
+       "frage": "Welcher Buchstabe ist das? <span class='mini'>(Form: am Ende)</span>",
+       "optFa": true,
+       "optionen": [
+        "خ",
+        "س",
+        "ش"
+       ],
+       "richtig": 0,
+       "erkl": "<span class='fa'>خ</span> – Che"
+      }
+     ]
+    },
+    {
+     "typ": "bauen",
+     "gen": true,
+     "zeigen": true,
+     "woerter": [
+      {
+       "fa": "اُمید",
+       "tr": "omīd",
+       "de": "Hoffnung",
+       "emoji": "🌱",
+       "teile": [
+        "ا",
+        "م",
+        "ی",
+        "د"
+       ],
+       "extra": [
+        "ب",
+        "ت"
+       ]
+      },
+      {
+       "fa": "بیمار",
+       "tr": "bīmār",
+       "de": "krank",
+       "emoji": "🤒",
+       "teile": [
+        "ب",
+        "ی",
+        "م",
+        "ا",
+        "ر"
+       ],
+       "extra": [
+        "ث",
+        "ز"
+       ]
+      },
+      {
+       "fa": "دُختَر",
+       "tr": "dochtar",
+       "de": "Mädchen, Tochter",
+       "emoji": "👧",
+       "teile": [
+        "د",
+        "خ",
+        "ت",
+        "ر"
+       ],
+       "extra": [
+        "ج",
+        "چ"
+       ]
+      },
+      {
+       "fa": "ایران",
+       "tr": "īrān",
+       "de": "Iran",
+       "emoji": "🏔️",
+       "teile": [
+        "ا",
+        "ی",
+        "ر",
+        "ا",
+        "ن"
+       ],
+       "extra": [
+        "ت",
+        "آ"
+       ]
+      },
+      {
+       "fa": "خورشید",
+       "tr": "chorschīd",
+       "de": "Sonne",
+       "emoji": "☀️",
+       "teile": [
+        "خ",
+        "و",
+        "ر",
+        "ش",
+        "ی",
+        "د"
+       ],
+       "extra": [
+        "ح",
+        "پ"
+       ]
+      }
+     ]
+    },
+    {
+     "typ": "finden",
+     "gen": true,
+     "titel": "Buchstabenjagd",
+     "frage": "Tippe alle Wörter an, in denen <span class='fa'>ی</span> (Ye) vorkommt – egal in welcher Form.",
+     "woerter": [
+      {
+       "fa": "خورشید",
+       "tr": "chorschīd",
+       "ja": true
+      },
+      {
+       "fa": "بیمار",
+       "tr": "bīmār",
+       "ja": true
+      },
+      {
+       "fa": "سیب",
+       "tr": "sīb",
+       "ja": true
+      },
+      {
+       "fa": "میز",
+       "tr": "mīz",
+       "ja": true
+      },
+      {
+       "fa": "سَرد",
+       "tr": "sard",
+       "ja": false
+      },
+      {
+       "fa": "زَن",
+       "tr": "zan",
+       "ja": false
+      },
+      {
+       "fa": "او",
+       "tr": "ū",
+       "ja": false
+      },
+      {
+       "fa": "آب",
+       "tr": "āb",
+       "ja": false
+      },
+      {
+       "fa": "مادَر",
+       "tr": "mādar",
+       "ja": false
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "gen": true,
+     "modus": "tr",
+     "sekunden": 60,
+     "ziel": 12,
+     "titel": "Blitzlesen",
+     "woerter": [
+      {
+       "fa": "آب",
+       "tr": "āb",
+       "de": "Wasser"
+      },
+      {
+       "fa": "بابا",
+       "tr": "bābā",
+       "de": "Papa"
+      },
+      {
+       "fa": "باد",
+       "tr": "bād",
+       "de": "Wind"
+      },
+      {
+       "fa": "بَد",
+       "tr": "bad",
+       "de": "schlecht"
+      },
+      {
+       "fa": "داد",
+       "tr": "dād",
+       "de": "(er/sie) gab"
+      },
+      {
+       "fa": "اَبر",
+       "tr": "abr",
+       "de": "Wolke"
+      },
+      {
+       "fa": "بَرادَر",
+       "tr": "barādar",
+       "de": "Bruder"
+      },
+      {
+       "fa": "دَر",
+       "tr": "dar",
+       "de": "Tür"
+      },
+      {
+       "fa": "مادَر",
+       "tr": "mādar",
+       "de": "Mutter"
+      },
+      {
+       "fa": "مار",
+       "tr": "mār",
+       "de": "Schlange"
+      },
+      {
+       "fa": "مَرد",
+       "tr": "mard",
+       "de": "Mann"
+      },
+      {
+       "fa": "تاب",
+       "tr": "tāb",
+       "de": "Schaukel"
+      },
+      {
+       "fa": "تار",
+       "tr": "tār",
+       "de": "Tar (Laute)"
+      },
+      {
+       "fa": "تَب",
+       "tr": "tab",
+       "de": "Fieber"
+      },
+      {
+       "fa": "پا",
+       "tr": "pā",
+       "de": "Fuß, Bein"
+      },
+      {
+       "fa": "او",
+       "tr": "ū",
+       "de": "er / sie"
+      },
+      {
+       "fa": "باران",
+       "tr": "bārān",
+       "de": "Regen"
+      },
+      {
+       "fa": "بَنّا",
+       "tr": "bannā",
+       "de": "Bauarbeiter/in"
+      },
+      {
+       "fa": "تو",
+       "tr": "to",
+       "de": "du"
+      },
+      {
+       "fa": "دَست",
+       "tr": "dast",
+       "de": "Hand"
+      },
+      {
+       "fa": "دو",
+       "tr": "do",
+       "de": "zwei"
+      },
+      {
+       "fa": "دوست",
+       "tr": "dūst",
+       "de": "Freund"
+      },
+      {
+       "fa": "سَبَد",
+       "tr": "sabad",
+       "de": "Korb"
+      },
+      {
+       "fa": "سَر",
+       "tr": "sar",
+       "de": "Kopf"
+      },
+      {
+       "fa": "سَرد",
+       "tr": "sard",
+       "de": "kalt"
+      },
+      {
+       "fa": "سَرو",
+       "tr": "sarw",
+       "de": "Zypresse"
+      },
+      {
+       "fa": "مَن",
+       "tr": "man",
+       "de": "ich"
+      },
+      {
+       "fa": "نان",
+       "tr": "nān",
+       "de": "Brot"
+      },
+      {
+       "fa": "پِسَر",
+       "tr": "pesar",
+       "de": "Junge, Sohn"
+      },
+      {
+       "fa": "شَب",
+       "tr": "schab",
+       "de": "Nacht"
+      },
+      {
+       "fa": "شِش",
+       "tr": "schesch",
+       "de": "sechs"
+      },
+      {
+       "fa": "کار",
+       "tr": "kār",
+       "de": "Arbeit"
+      },
+      {
+       "fa": "کِتاب",
+       "tr": "ketāb",
+       "de": "Buch"
+      },
+      {
+       "fa": "کِشوَر",
+       "tr": "keschwar",
+       "de": "Land, Staat"
+      },
+      {
+       "fa": "آشپَز",
+       "tr": "āschpaz",
+       "de": "Koch / Köchin"
+      },
+      {
+       "fa": "اِمروز",
+       "tr": "emrūz",
+       "de": "heute"
+      },
+      {
+       "fa": "خانِه",
+       "tr": "chāne",
+       "de": "Haus"
+      },
+      {
+       "fa": "خواب",
+       "tr": "chāb",
+       "de": "Schlaf"
+      },
+      {
+       "fa": "خواهَر",
+       "tr": "chāhar",
+       "de": "Schwester"
+      },
+      {
+       "fa": "خوب",
+       "tr": "chūb",
+       "de": "gut"
+      },
+      {
+       "fa": "دُختَر",
+       "tr": "dochtar",
+       "de": "Mädchen, Tochter"
+      },
+      {
+       "fa": "روز",
+       "tr": "rūz",
+       "de": "Tag"
+      },
+      {
+       "fa": "زَن",
+       "tr": "zan",
+       "de": "Frau"
+      },
+      {
+       "fa": "سِتارِه",
+       "tr": "setāre",
+       "de": "Stern"
+      },
+      {
+       "fa": "ماه",
+       "tr": "māh",
+       "de": "Mond, Monat"
+      },
+      {
+       "fa": "مُهَندِس",
+       "tr": "mohandes",
+       "de": "Ingenieur/in"
+      },
+      {
+       "fa": "هَشت",
+       "tr": "hascht",
+       "de": "acht"
+      },
+      {
+       "fa": "اُمید",
+       "tr": "omīd",
+       "de": "Hoffnung"
+      },
+      {
+       "fa": "ایران",
+       "tr": "īrān",
+       "de": "Iran"
+      },
+      {
+       "fa": "بیمار",
+       "tr": "bīmār",
+       "de": "krank"
+      },
+      {
+       "fa": "خورشید",
+       "tr": "chorschīd",
+       "de": "Sonne"
+      },
+      {
+       "fa": "زَمین",
+       "tr": "zamīn",
+       "de": "Erde, Boden"
+      },
+      {
+       "fa": "سیب",
+       "tr": "sīb",
+       "de": "Apfel"
+      },
+      {
+       "fa": "میز",
+       "tr": "mīz",
+       "de": "Tisch"
+      },
+      {
+       "fa": "یِک",
+       "tr": "yek",
+       "de": "eins"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "titel": "Training C: ج bis ط",
+   "vorschau": "ج چ ح ف گ ل",
+   "karten": [
+    {
+     "typ": "memory",
+     "gen": true,
+     "links": "tr",
+     "titel": "Memory: Schrift & Aussprache",
+     "paare": [
+      {
+       "fa": "سَگ",
+       "tr": "sag",
+       "de": "Hund",
+       "emoji": "🐶"
+      },
+      {
+       "fa": "مِثل",
+       "tr": "mesl",
+       "de": "wie (Vergleich)"
+      },
+      {
+       "fa": "طَلا",
+       "tr": "talā",
+       "de": "Gold"
+      },
+      {
+       "fa": "گُربِه",
+       "tr": "gorbe",
+       "de": "Katze",
+       "emoji": "🐱"
+      },
+      {
+       "fa": "فارسی",
+       "tr": "fārsī",
+       "de": "Persisch",
+       "emoji": "🗣️"
+      },
+      {
+       "fa": "اُتاق",
+       "tr": "otāgh",
+       "de": "Zimmer",
+       "emoji": "🛏️"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "gen": true,
+     "titel": "Welcher Buchstabe versteckt sich hier?",
+     "fragen": [
+      {
+       "fa": "چ‍",
+       "hoeren": false,
+       "frage": "Welcher Buchstabe ist das? <span class='mini'>(Form: am Anfang)</span>",
+       "optFa": true,
+       "optionen": [
+        "چ",
+        "ج",
+        "ح"
+       ],
+       "richtig": 0,
+       "erkl": "<span class='fa'>چ</span> – Tsche"
+      },
+      {
+       "fa": "‍ژ",
+       "hoeren": false,
+       "frage": "Welcher Buchstabe ist das? <span class='mini'>(Form: am Ende)</span>",
+       "optFa": true,
+       "optionen": [
+        "ژ",
+        "ر",
+        "ز"
+       ],
+       "richtig": 0,
+       "erkl": "<span class='fa'>ژ</span> – Zhe"
+      },
+      {
+       "fa": "‍ع",
+       "hoeren": false,
+       "frage": "Welcher Buchstabe ist das? <span class='mini'>(Form: am Ende)</span>",
+       "optFa": true,
+       "optionen": [
+        "ع",
+        "غ",
+        "گ"
+       ],
+       "richtig": 0,
+       "erkl": "<span class='fa'>ع</span> – ʿEyn"
+      },
+      {
+       "fa": "‍ق‍",
+       "hoeren": false,
+       "frage": "Welcher Buchstabe ist das? <span class='mini'>(Form: in der Mitte)</span>",
+       "optFa": true,
+       "optionen": [
+        "ق",
+        "ف",
+        "خ"
+       ],
+       "richtig": 0,
+       "erkl": "<span class='fa'>ق</span> – Ghāf"
+      },
+      {
+       "fa": "‍ج",
+       "hoeren": false,
+       "frage": "Welcher Buchstabe ist das? <span class='mini'>(Form: am Ende)</span>",
+       "optFa": true,
+       "optionen": [
+        "ج",
+        "چ",
+        "ح"
+       ],
+       "richtig": 0,
+       "erkl": "<span class='fa'>ج</span> – Dschīm"
+      },
+      {
+       "fa": "‍ل‍",
+       "hoeren": false,
+       "frage": "Welcher Buchstabe ist das? <span class='mini'>(Form: in der Mitte)</span>",
+       "optFa": true,
+       "optionen": [
+        "ل",
+        "ک",
+        "گ"
+       ],
+       "richtig": 0,
+       "erkl": "<span class='fa'>ل</span> – Lām"
+      }
+     ]
+    },
+    {
+     "typ": "bauen",
+     "gen": true,
+     "zeigen": true,
+     "woerter": [
+      {
+       "fa": "کیف",
+       "tr": "kīf",
+       "de": "Tasche",
+       "emoji": "👜",
+       "teile": [
+        "ک",
+        "ی",
+        "ف"
+       ],
+       "extra": [
+        "ب",
+        "ت"
+       ]
+      },
+      {
+       "fa": "گُربِه",
+       "tr": "gorbe",
+       "de": "Katze",
+       "emoji": "🐱",
+       "teile": [
+        "گ",
+        "ر",
+        "ب",
+        "ه"
+       ],
+       "extra": [
+        "ث",
+        "پ"
+       ]
+      },
+      {
+       "fa": "باغبان",
+       "tr": "bāghbān",
+       "de": "Gärtner/in",
+       "emoji": "🧑‍🌾",
+       "teile": [
+        "ب",
+        "ا",
+        "غ",
+        "ب",
+        "ا",
+        "ن"
+       ],
+       "extra": [
+        "ت",
+        "پ"
+       ]
+      },
+      {
+       "fa": "بَرف",
+       "tr": "barf",
+       "de": "Schnee",
+       "emoji": "❄️",
+       "teile": [
+        "ب",
+        "ر",
+        "ف"
+       ],
+       "extra": [
+        "ژ",
+        "ز"
+       ]
+      },
+      {
+       "fa": "باغ",
+       "tr": "bāgh",
+       "de": "Garten",
+       "emoji": "🌳",
+       "teile": [
+        "ب",
+        "ا",
+        "غ"
+       ],
+       "extra": [
+        "ث",
+        "ن"
+       ]
+      }
+     ]
+    },
+    {
+     "typ": "finden",
+     "gen": true,
+     "titel": "Buchstabenjagd",
+     "frage": "Tippe alle Wörter an, in denen <span class='fa'>چ</span> (Tsche) vorkommt – egal in welcher Form.",
+     "woerter": [
+      {
+       "fa": "چَتر",
+       "tr": "tschatr",
+       "ja": true
+      },
+      {
+       "fa": "چَرخ",
+       "tr": "tscharch",
+       "ja": true
+      },
+      {
+       "fa": "چوب",
+       "tr": "tschūb",
+       "ja": true
+      },
+      {
+       "fa": "فارسی",
+       "tr": "fārsī",
+       "ja": false
+      },
+      {
+       "fa": "غَذا",
+       "tr": "ghazā",
+       "ja": false
+      },
+      {
+       "fa": "کیف",
+       "tr": "kīf",
+       "ja": false
+      },
+      {
+       "fa": "داد",
+       "tr": "dād",
+       "ja": false
+      },
+      {
+       "fa": "طَلا",
+       "tr": "talā",
+       "ja": false
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "gen": true,
+     "modus": "tr",
+     "sekunden": 60,
+     "ziel": 12,
+     "titel": "Blitzlesen",
+     "woerter": [
+      {
+       "fa": "آب",
+       "tr": "āb",
+       "de": "Wasser"
+      },
+      {
+       "fa": "بابا",
+       "tr": "bābā",
+       "de": "Papa"
+      },
+      {
+       "fa": "باد",
+       "tr": "bād",
+       "de": "Wind"
+      },
+      {
+       "fa": "بَد",
+       "tr": "bad",
+       "de": "schlecht"
+      },
+      {
+       "fa": "داد",
+       "tr": "dād",
+       "de": "(er/sie) gab"
+      },
+      {
+       "fa": "اَبر",
+       "tr": "abr",
+       "de": "Wolke"
+      },
+      {
+       "fa": "بَرادَر",
+       "tr": "barādar",
+       "de": "Bruder"
+      },
+      {
+       "fa": "دَر",
+       "tr": "dar",
+       "de": "Tür"
+      },
+      {
+       "fa": "مادَر",
+       "tr": "mādar",
+       "de": "Mutter"
+      },
+      {
+       "fa": "مار",
+       "tr": "mār",
+       "de": "Schlange"
+      },
+      {
+       "fa": "مَرد",
+       "tr": "mard",
+       "de": "Mann"
+      },
+      {
+       "fa": "تاب",
+       "tr": "tāb",
+       "de": "Schaukel"
+      },
+      {
+       "fa": "تار",
+       "tr": "tār",
+       "de": "Tar (Laute)"
+      },
+      {
+       "fa": "تَب",
+       "tr": "tab",
+       "de": "Fieber"
+      },
+      {
+       "fa": "پا",
+       "tr": "pā",
+       "de": "Fuß, Bein"
+      },
+      {
+       "fa": "او",
+       "tr": "ū",
+       "de": "er / sie"
+      },
+      {
+       "fa": "باران",
+       "tr": "bārān",
+       "de": "Regen"
+      },
+      {
+       "fa": "بَنّا",
+       "tr": "bannā",
+       "de": "Bauarbeiter/in"
+      },
+      {
+       "fa": "تو",
+       "tr": "to",
+       "de": "du"
+      },
+      {
+       "fa": "دَست",
+       "tr": "dast",
+       "de": "Hand"
+      },
+      {
+       "fa": "دو",
+       "tr": "do",
+       "de": "zwei"
+      },
+      {
+       "fa": "دوست",
+       "tr": "dūst",
+       "de": "Freund"
+      },
+      {
+       "fa": "سَبَد",
+       "tr": "sabad",
+       "de": "Korb"
+      },
+      {
+       "fa": "سَر",
+       "tr": "sar",
+       "de": "Kopf"
+      },
+      {
+       "fa": "سَرد",
+       "tr": "sard",
+       "de": "kalt"
+      },
+      {
+       "fa": "سَرو",
+       "tr": "sarw",
+       "de": "Zypresse"
+      },
+      {
+       "fa": "مَن",
+       "tr": "man",
+       "de": "ich"
+      },
+      {
+       "fa": "نان",
+       "tr": "nān",
+       "de": "Brot"
+      },
+      {
+       "fa": "پِسَر",
+       "tr": "pesar",
+       "de": "Junge, Sohn"
+      },
+      {
+       "fa": "شَب",
+       "tr": "schab",
+       "de": "Nacht"
+      },
+      {
+       "fa": "شِش",
+       "tr": "schesch",
+       "de": "sechs"
+      },
+      {
+       "fa": "کار",
+       "tr": "kār",
+       "de": "Arbeit"
+      },
+      {
+       "fa": "کِتاب",
+       "tr": "ketāb",
+       "de": "Buch"
+      },
+      {
+       "fa": "کِشوَر",
+       "tr": "keschwar",
+       "de": "Land, Staat"
+      },
+      {
+       "fa": "آشپَز",
+       "tr": "āschpaz",
+       "de": "Koch / Köchin"
+      },
+      {
+       "fa": "اِمروز",
+       "tr": "emrūz",
+       "de": "heute"
+      },
+      {
+       "fa": "خانِه",
+       "tr": "chāne",
+       "de": "Haus"
+      },
+      {
+       "fa": "خواب",
+       "tr": "chāb",
+       "de": "Schlaf"
+      },
+      {
+       "fa": "خواهَر",
+       "tr": "chāhar",
+       "de": "Schwester"
+      },
+      {
+       "fa": "خوب",
+       "tr": "chūb",
+       "de": "gut"
+      },
+      {
+       "fa": "دُختَر",
+       "tr": "dochtar",
+       "de": "Mädchen, Tochter"
+      },
+      {
+       "fa": "روز",
+       "tr": "rūz",
+       "de": "Tag"
+      },
+      {
+       "fa": "زَن",
+       "tr": "zan",
+       "de": "Frau"
+      },
+      {
+       "fa": "سِتارِه",
+       "tr": "setāre",
+       "de": "Stern"
+      },
+      {
+       "fa": "ماه",
+       "tr": "māh",
+       "de": "Mond, Monat"
+      },
+      {
+       "fa": "مُهَندِس",
+       "tr": "mohandes",
+       "de": "Ingenieur/in"
+      },
+      {
+       "fa": "هَشت",
+       "tr": "hascht",
+       "de": "acht"
+      },
+      {
+       "fa": "اُمید",
+       "tr": "omīd",
+       "de": "Hoffnung"
+      },
+      {
+       "fa": "ایران",
+       "tr": "īrān",
+       "de": "Iran"
+      },
+      {
+       "fa": "بیمار",
+       "tr": "bīmār",
+       "de": "krank"
+      },
+      {
+       "fa": "خورشید",
+       "tr": "chorschīd",
+       "de": "Sonne"
+      },
+      {
+       "fa": "زَمین",
+       "tr": "zamīn",
+       "de": "Erde, Boden"
+      },
+      {
+       "fa": "سیب",
+       "tr": "sīb",
+       "de": "Apfel"
+      },
+      {
+       "fa": "میز",
+       "tr": "mīz",
+       "de": "Tisch"
+      },
+      {
+       "fa": "یِک",
+       "tr": "yek",
+       "de": "eins"
+      },
+      {
+       "fa": "جَوان",
+       "tr": "dschawān",
+       "de": "jung"
+      },
+      {
+       "fa": "جوراب",
+       "tr": "dschūrāb",
+       "de": "Socke"
+      },
+      {
+       "fa": "دانِشجو",
+       "tr": "dāneschdschū",
+       "de": "Student/in"
+      },
+      {
+       "fa": "نَجّار",
+       "tr": "nadschdschār",
+       "de": "Tischler/in"
+      },
+      {
+       "fa": "چَتر",
+       "tr": "tschatr",
+       "de": "Schirm"
+      },
+      {
+       "fa": "چَرخ",
+       "tr": "tscharch",
+       "de": "Rad"
+      },
+      {
+       "fa": "چوب",
+       "tr": "tschūb",
+       "de": "Holz"
+      },
+      {
+       "fa": "بالا",
+       "tr": "bālā",
+       "de": "oben"
+      },
+      {
+       "fa": "بَرف",
+       "tr": "barf",
+       "de": "Schnee"
+      },
+      {
+       "fa": "حال",
+       "tr": "hāl",
+       "de": "Befinden"
+      },
+      {
+       "fa": "سَلام",
+       "tr": "salām",
+       "de": "Hallo"
+      },
+      {
+       "fa": "سَگ",
+       "tr": "sag",
+       "de": "Hund"
+      },
+      {
+       "fa": "فارسی",
+       "tr": "fārsī",
+       "de": "Persisch"
+      },
+      {
+       "fa": "لَب",
+       "tr": "lab",
+       "de": "Lippe"
+      },
+      {
+       "fa": "لوبیا",
+       "tr": "lūbiyā",
+       "de": "Bohnen"
+      },
+      {
+       "fa": "مِثل",
+       "tr": "mesl",
+       "de": "wie (Vergleich)"
+      },
+      {
+       "fa": "کَفش",
+       "tr": "kafsch",
+       "de": "Schuh"
+      },
+      {
+       "fa": "کیف",
+       "tr": "kīf",
+       "de": "Tasche"
+      },
+      {
+       "fa": "گُربِه",
+       "tr": "gorbe",
+       "de": "Katze"
+      },
+      {
+       "fa": "گَرم",
+       "tr": "garm",
+       "de": "warm"
+      },
+      {
+       "fa": "گُل",
+       "tr": "gol",
+       "de": "Blume"
+      },
+      {
+       "fa": "اُتاق",
+       "tr": "otāgh",
+       "de": "Zimmer"
+      },
+      {
+       "fa": "باغ",
+       "tr": "bāgh",
+       "de": "Garten"
+      },
+      {
+       "fa": "باغبان",
+       "tr": "bāghbān",
+       "de": "Gärtner/in"
+      },
+      {
+       "fa": "صابون",
+       "tr": "sābūn",
+       "de": "Seife"
+      },
+      {
+       "fa": "ضَعیف",
+       "tr": "zaʿīf",
+       "de": "schwach"
+      },
+      {
+       "fa": "طَلا",
+       "tr": "talā",
+       "de": "Gold"
+      },
+      {
+       "fa": "ظُهر",
+       "tr": "zohr",
+       "de": "Mittag"
+      },
+      {
+       "fa": "غَذا",
+       "tr": "ghazā",
+       "de": "Essen"
+      },
+      {
+       "fa": "قُفل",
+       "tr": "ghofl",
+       "de": "Schloss"
+      },
+      {
+       "fa": "مُعَلِّم",
+       "tr": "moʿallem",
+       "de": "Lehrer/in"
+      },
+      {
+       "fa": "ژاکَت",
+       "tr": "zhākat",
+       "de": "Jacke"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "i",
+   "titel": "Alef am Wortanfang",
+   "vorschau": "آ اَ اِ اُ ای او",
+   "karten": [
+    {
+     "typ": "info",
+     "gen": true,
+     "stil": "merke",
+     "titel": "Die sechs Gesichter des Alef",
+     "text": "<p>Ein persisches Wort beginnt nie mit einem „nackten“ Vokal. Am Wortanfang trägt <span class='fa'>ا</span> den Vokal – und je nach Zeichen oder Partner-Buchstabe klingt es anders:</p><ul><li><span class='fa'>آ</span> → <b>ā</b> (langes a, mit Madde)</li><li><span class='fa'>اَ</span> → <b>a</b> (kurz, Strich oben)</li><li><span class='fa'>اِ</span> → <b>e</b> (kurz, Strich unten)</li><li><span class='fa'>اُ</span> → <b>o</b> (kurz, kleines و oben)</li><li><span class='fa'>ای</span> → <b>ī</b> (Alef + <span class='fa'>ی</span>)</li><li><span class='fa'>او</span> → <b>ū</b> (Alef + <span class='fa'>و</span>)</li></ul><p>Bei <b>a, e, o</b> sieht man den Unterschied nur an den Vokalzeichen – im normalen Text fehlen sie. Dann hilft nur: das Wort kennen.</p>",
+     "beispiele": [
+      {
+       "fa": "آب",
+       "tr": "āb",
+       "de": "Wasser",
+       "emoji": "💧"
+      },
+      {
+       "fa": "اَبر",
+       "tr": "abr",
+       "de": "Wolke",
+       "emoji": "☁️"
+      },
+      {
+       "fa": "اِسم",
+       "tr": "esm",
+       "de": "Name",
+       "emoji": "🏷️"
+      },
+      {
+       "fa": "اُتاق",
+       "tr": "otāgh",
+       "de": "Zimmer",
+       "emoji": "🛏️"
+      },
+      {
+       "fa": "ایران",
+       "tr": "īrān",
+       "de": "Iran",
+       "emoji": "🏔️"
+      },
+      {
+       "fa": "او",
+       "tr": "ū",
+       "de": "er / sie",
+       "emoji": "🧑"
+      }
+     ]
+    },
+    {
+     "typ": "sortieren",
+     "gen": true,
+     "titel": "Mit welchem Laut beginnt das Wort?",
+     "frage": "Schau auf den Anfang: Welcher Vokal steckt im Alef?",
+     "kategorien": [
+      "ā",
+      "a",
+      "e",
+      "o",
+      "ī",
+      "ū"
+     ],
+     "items": [
+      {
+       "fa": "اِمروز",
+       "k": 2,
+       "e": "<span class='fa'>اِمروز</span> <i>emrūz</i> – heute"
+      },
+      {
+       "fa": "اُردَک",
+       "k": 3,
+       "e": "<span class='fa'>اُردَک</span> <i>ordak</i> – Ente"
+      },
+      {
+       "fa": "اَنار",
+       "k": 1,
+       "e": "<span class='fa'>اَنار</span> <i>anār</i> – Granatapfel"
+      },
+      {
+       "fa": "او",
+       "k": 5,
+       "e": "<span class='fa'>او</span> <i>ū</i> – er / sie"
+      },
+      {
+       "fa": "آتَش",
+       "k": 0,
+       "e": "<span class='fa'>آتَش</span> <i>ātasch</i> – Feuer"
+      },
+      {
+       "fa": "آش",
+       "k": 0,
+       "e": "<span class='fa'>آش</span> <i>āsch</i> – Suppe"
+      },
+      {
+       "fa": "اُتاق",
+       "k": 3,
+       "e": "<span class='fa'>اُتاق</span> <i>otāgh</i> – Zimmer"
+      },
+      {
+       "fa": "اَسب",
+       "k": 1,
+       "e": "<span class='fa'>اَسب</span> <i>asb</i> – Pferd"
+      },
+      {
+       "fa": "آب",
+       "k": 0,
+       "e": "<span class='fa'>آب</span> <i>āb</i> – Wasser"
+      },
+      {
+       "fa": "آسِمان",
+       "k": 0,
+       "e": "<span class='fa'>آسِمان</span> <i>āsemān</i> – Himmel"
+      },
+      {
+       "fa": "اَنگور",
+       "k": 1,
+       "e": "<span class='fa'>اَنگور</span> <i>angūr</i> – Weintrauben"
+      },
+      {
+       "fa": "اینجا",
+       "k": 4,
+       "e": "<span class='fa'>اینجا</span> <i>īndschā</i> – hier"
+      }
+     ]
+    },
+    {
+     "typ": "bauen",
+     "gen": true,
+     "titel": "Baue das Wort – aber welches Alef?",
+     "woerter": [
+      {
+       "fa": "آسِمان",
+       "tr": "āsemān",
+       "de": "Himmel",
+       "emoji": "🌌",
+       "teile": [
+        "آ",
+        "س",
+        "م",
+        "ا",
+        "ن"
+       ],
+       "extra": [
+        "ا"
+       ]
+      },
+      {
+       "fa": "اَنگور",
+       "tr": "angūr",
+       "de": "Weintrauben",
+       "emoji": "🍇",
+       "teile": [
+        "ا",
+        "ن",
+        "گ",
+        "و",
+        "ر"
+       ],
+       "extra": [
+        "آ"
+       ]
+      },
+      {
+       "fa": "اینجا",
+       "tr": "īndschā",
+       "de": "hier",
+       "emoji": "📍",
+       "teile": [
+        "ا",
+        "ی",
+        "ن",
+        "ج",
+        "ا"
+       ],
+       "extra": [
+        "آ",
+        "و"
+       ]
+      },
+      {
+       "fa": "اُردَک",
+       "tr": "ordak",
+       "de": "Ente",
+       "emoji": "🦆",
+       "teile": [
+        "ا",
+        "ر",
+        "د",
+        "ک"
+       ],
+       "extra": [
+        "آ"
+       ]
+      },
+      {
+       "fa": "اوج",
+       "tr": "ūdsch",
+       "de": "Höhepunkt",
+       "emoji": "⛰️",
+       "teile": [
+        "ا",
+        "و",
+        "ج"
+       ],
+       "extra": [
+        "ی"
+       ]
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "gen": true,
+     "titel": "Wie liest man das?",
+     "fragen": [
+      {
+       "fa": "اِسم",
+       "frage": "Wie liest man das?",
+       "optionen": [
+        "esm",
+        "asm",
+        "osm"
+       ],
+       "richtig": 0,
+       "erkl": "<i>esm</i> – Name 🏷️"
+      },
+      {
+       "fa": "اُتوبوس",
+       "frage": "Wie liest man das?",
+       "optionen": [
+        "otobūs",
+        "ūtobūs",
+        "atobūs"
+       ],
+       "richtig": 0,
+       "erkl": "<i>otobūs</i> – Bus 🚌"
+      },
+      {
+       "fa": "آش",
+       "frage": "Wie liest man das?",
+       "optionen": [
+        "āsch",
+        "asch",
+        "īsch"
+       ],
+       "richtig": 0,
+       "erkl": "<i>āsch</i> – Suppe 🍲"
+      },
+      {
+       "fa": "این",
+       "frage": "Wie liest man das?",
+       "optionen": [
+        "īn",
+        "en",
+        "ūn"
+       ],
+       "richtig": 0,
+       "erkl": "<i>īn</i> – dies, diese/r 👇"
+      },
+      {
+       "fa": "او",
+       "frage": "Wie liest man das?",
+       "optionen": [
+        "ū",
+        "o",
+        "ā"
+       ],
+       "richtig": 0,
+       "erkl": "<i>ū</i> – er / sie 🧑"
+      },
+      {
+       "fa": "اَسب",
+       "frage": "Wie liest man das?",
+       "optionen": [
+        "asb",
+        "esb",
+        "āsb"
+       ],
+       "richtig": 0,
+       "erkl": "<i>asb</i> – Pferd 🐴"
+      }
+     ]
+    },
+    {
+     "typ": "memory",
+     "gen": true,
+     "links": "tr",
+     "titel": "Memory: Alef-Wörter",
+     "paare": [
+      {
+       "fa": "اَسب",
+       "tr": "asb",
+       "de": "Pferd",
+       "emoji": "🐴"
+      },
+      {
+       "fa": "ایران",
+       "tr": "īrān",
+       "de": "Iran",
+       "emoji": "🏔️"
+      },
+      {
+       "fa": "اُردَک",
+       "tr": "ordak",
+       "de": "Ente",
+       "emoji": "🦆"
+      },
+      {
+       "fa": "اِسم",
+       "tr": "esm",
+       "de": "Name",
+       "emoji": "🏷️"
+      },
+      {
+       "fa": "آتَش",
+       "tr": "ātasch",
+       "de": "Feuer",
+       "emoji": "🔥"
+      },
+      {
+       "fa": "اِمشَب",
+       "tr": "emschab",
+       "de": "heute Abend",
+       "emoji": "🌙"
+      }
+     ]
+    },
+    {
+     "typ": "info",
+     "gen": true,
+     "stil": "merke",
+     "titel": "Und ohne Vokalzeichen?",
+     "text": "<p>Im echten Leben stehen die Vokalzeichen fast nie da. Dann sieht <span class='fa'>ا</span> am Anfang bei <b>a</b>, <b>e</b> und <b>o</b> gleich aus:</p><p><span class='fa'>ابر</span> <i>abr</i> · <span class='fa'>اسم</span> <i>esm</i> · <span class='fa'>اتاق</span> <i>otāgh</i></p><p>Nur <span class='fa'>آ</span> (ā), <span class='fa'>ای</span> (ī) und <span class='fa'>او</span> (ū) erkennst du immer sofort. Und Achtung: <span class='fa'>او</span> kann auch <i>aw</i> sein, z. B. <span class='fa'>اَوَّل</span> <i>awwal</i> – erste/r.</p>"
+    },
+    {
+     "typ": "wahl",
+     "gen": true,
+     "titel": "Profi-Lesen: ohne Vokalzeichen",
+     "fragen": [
+      {
+       "fa": "ابر",
+       "emoji": "☁️",
+       "frage": "„Wolke“ – wie spricht man das aus?",
+       "optionen": [
+        "abr",
+        "ebr",
+        "obr"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "erkl": "<span class='fa'>اَبر</span> <i>abr</i>"
+      },
+      {
+       "fa": "امروز",
+       "emoji": "📅",
+       "frage": "„heute“ – wie spricht man das aus?",
+       "optionen": [
+        "emrūz",
+        "amrūz",
+        "omrūz"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "erkl": "<span class='fa'>اِمروز</span> <i>emrūz</i>"
+      },
+      {
+       "fa": "امید",
+       "emoji": "🌱",
+       "frage": "„Hoffnung“ – wie spricht man das aus?",
+       "optionen": [
+        "omīd",
+        "amīd",
+        "emīd"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "erkl": "<span class='fa'>اُمید</span> <i>omīd</i>"
+      },
+      {
+       "fa": "انار",
+       "emoji": "",
+       "frage": "„Granatapfel“ – wie spricht man das aus?",
+       "optionen": [
+        "anār",
+        "enār",
+        "onār"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "erkl": "<span class='fa'>اَنار</span> <i>anār</i>"
+      },
+      {
+       "fa": "اردک",
+       "emoji": "🦆",
+       "frage": "„Ente“ – wie spricht man das aus?",
+       "optionen": [
+        "ordak",
+        "ardak",
+        "erdak"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "erkl": "<span class='fa'>اُردَک</span> <i>ordak</i>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d",
+   "titel": "Bedeutungs-Memory",
+   "vorschau": "🧩 ⇄ فا",
+   "karten": [
+    {
+     "typ": "memory",
+     "gen": true,
+     "links": "emoji",
+     "titel": "Memory: Bild & Wort",
+     "paare": [
+      {
+       "fa": "دانِشجو",
+       "tr": "dāneschdschū",
+       "de": "Student/in",
+       "emoji": "🧑‍🎓"
+      },
+      {
+       "fa": "خوب",
+       "tr": "chūb",
+       "de": "gut",
+       "emoji": "👍"
+      },
+      {
+       "fa": "قُفل",
+       "tr": "ghofl",
+       "de": "Schloss",
+       "emoji": "🔒"
+      },
+      {
+       "fa": "دوست",
+       "tr": "dūst",
+       "de": "Freund",
+       "emoji": "🤝"
+      },
+      {
+       "fa": "غَذا",
+       "tr": "ghazā",
+       "de": "Essen",
+       "emoji": "🍲"
+      },
+      {
+       "fa": "اُتاق",
+       "tr": "otāgh",
+       "de": "Zimmer",
+       "emoji": "🛏️"
+      }
+     ]
+    },
+    {
+     "typ": "memory",
+     "gen": true,
+     "links": "de",
+     "titel": "Memory: Deutsch & Persisch",
+     "paare": [
+      {
+       "fa": "آب",
+       "tr": "āb",
+       "de": "Wasser",
+       "emoji": "💧"
+      },
+      {
+       "fa": "کِشوَر",
+       "tr": "keschwar",
+       "de": "Land, Staat",
+       "emoji": "🗺️"
+      },
+      {
+       "fa": "بَد",
+       "tr": "bad",
+       "de": "schlecht",
+       "emoji": "👎"
+      },
+      {
+       "fa": "چَرخ",
+       "tr": "tscharch",
+       "de": "Rad",
+       "emoji": "🛞"
+      },
+      {
+       "fa": "مُهَندِس",
+       "tr": "mohandes",
+       "de": "Ingenieur/in",
+       "emoji": "👷‍♀️"
+      },
+      {
+       "fa": "کار",
+       "tr": "kār",
+       "de": "Arbeit",
+       "emoji": "💼"
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "gen": true,
+     "modus": "de",
+     "sekunden": 60,
+     "ziel": 12,
+     "titel": "Blitzlesen: Was bedeutet das?",
+     "woerter": [
+      {
+       "fa": "آب",
+       "tr": "āb",
+       "de": "Wasser"
+      },
+      {
+       "fa": "بابا",
+       "tr": "bābā",
+       "de": "Papa"
+      },
+      {
+       "fa": "باد",
+       "tr": "bād",
+       "de": "Wind"
+      },
+      {
+       "fa": "بَد",
+       "tr": "bad",
+       "de": "schlecht"
+      },
+      {
+       "fa": "داد",
+       "tr": "dād",
+       "de": "(er/sie) gab"
+      },
+      {
+       "fa": "اَبر",
+       "tr": "abr",
+       "de": "Wolke"
+      },
+      {
+       "fa": "بَرادَر",
+       "tr": "barādar",
+       "de": "Bruder"
+      },
+      {
+       "fa": "دَر",
+       "tr": "dar",
+       "de": "Tür"
+      },
+      {
+       "fa": "مادَر",
+       "tr": "mādar",
+       "de": "Mutter"
+      },
+      {
+       "fa": "مار",
+       "tr": "mār",
+       "de": "Schlange"
+      },
+      {
+       "fa": "مَرد",
+       "tr": "mard",
+       "de": "Mann"
+      },
+      {
+       "fa": "تاب",
+       "tr": "tāb",
+       "de": "Schaukel"
+      },
+      {
+       "fa": "تار",
+       "tr": "tār",
+       "de": "Tar (Laute)"
+      },
+      {
+       "fa": "تَب",
+       "tr": "tab",
+       "de": "Fieber"
+      },
+      {
+       "fa": "پا",
+       "tr": "pā",
+       "de": "Fuß, Bein"
+      },
+      {
+       "fa": "او",
+       "tr": "ū",
+       "de": "er / sie"
+      },
+      {
+       "fa": "باران",
+       "tr": "bārān",
+       "de": "Regen"
+      },
+      {
+       "fa": "بَنّا",
+       "tr": "bannā",
+       "de": "Bauarbeiter/in"
+      },
+      {
+       "fa": "تو",
+       "tr": "to",
+       "de": "du"
+      },
+      {
+       "fa": "دَست",
+       "tr": "dast",
+       "de": "Hand"
+      },
+      {
+       "fa": "دو",
+       "tr": "do",
+       "de": "zwei"
+      },
+      {
+       "fa": "دوست",
+       "tr": "dūst",
+       "de": "Freund"
+      },
+      {
+       "fa": "سَبَد",
+       "tr": "sabad",
+       "de": "Korb"
+      },
+      {
+       "fa": "سَر",
+       "tr": "sar",
+       "de": "Kopf"
+      },
+      {
+       "fa": "سَرد",
+       "tr": "sard",
+       "de": "kalt"
+      },
+      {
+       "fa": "سَرو",
+       "tr": "sarw",
+       "de": "Zypresse"
+      },
+      {
+       "fa": "مَن",
+       "tr": "man",
+       "de": "ich"
+      },
+      {
+       "fa": "نان",
+       "tr": "nān",
+       "de": "Brot"
+      },
+      {
+       "fa": "پِسَر",
+       "tr": "pesar",
+       "de": "Junge, Sohn"
+      },
+      {
+       "fa": "شَب",
+       "tr": "schab",
+       "de": "Nacht"
+      },
+      {
+       "fa": "شِش",
+       "tr": "schesch",
+       "de": "sechs"
+      },
+      {
+       "fa": "کار",
+       "tr": "kār",
+       "de": "Arbeit"
+      },
+      {
+       "fa": "کِتاب",
+       "tr": "ketāb",
+       "de": "Buch"
+      },
+      {
+       "fa": "کِشوَر",
+       "tr": "keschwar",
+       "de": "Land, Staat"
+      },
+      {
+       "fa": "آشپَز",
+       "tr": "āschpaz",
+       "de": "Koch / Köchin"
+      },
+      {
+       "fa": "اِمروز",
+       "tr": "emrūz",
+       "de": "heute"
+      },
+      {
+       "fa": "خانِه",
+       "tr": "chāne",
+       "de": "Haus"
+      },
+      {
+       "fa": "خواب",
+       "tr": "chāb",
+       "de": "Schlaf"
+      },
+      {
+       "fa": "خواهَر",
+       "tr": "chāhar",
+       "de": "Schwester"
+      },
+      {
+       "fa": "خوب",
+       "tr": "chūb",
+       "de": "gut"
+      },
+      {
+       "fa": "دُختَر",
+       "tr": "dochtar",
+       "de": "Mädchen, Tochter"
+      },
+      {
+       "fa": "روز",
+       "tr": "rūz",
+       "de": "Tag"
+      },
+      {
+       "fa": "زَن",
+       "tr": "zan",
+       "de": "Frau"
+      },
+      {
+       "fa": "سِتارِه",
+       "tr": "setāre",
+       "de": "Stern"
+      },
+      {
+       "fa": "ماه",
+       "tr": "māh",
+       "de": "Mond, Monat"
+      },
+      {
+       "fa": "مُهَندِس",
+       "tr": "mohandes",
+       "de": "Ingenieur/in"
+      },
+      {
+       "fa": "هَشت",
+       "tr": "hascht",
+       "de": "acht"
+      },
+      {
+       "fa": "اُمید",
+       "tr": "omīd",
+       "de": "Hoffnung"
+      },
+      {
+       "fa": "ایران",
+       "tr": "īrān",
+       "de": "Iran"
+      },
+      {
+       "fa": "بیمار",
+       "tr": "bīmār",
+       "de": "krank"
+      },
+      {
+       "fa": "خورشید",
+       "tr": "chorschīd",
+       "de": "Sonne"
+      },
+      {
+       "fa": "زَمین",
+       "tr": "zamīn",
+       "de": "Erde, Boden"
+      },
+      {
+       "fa": "سیب",
+       "tr": "sīb",
+       "de": "Apfel"
+      },
+      {
+       "fa": "میز",
+       "tr": "mīz",
+       "de": "Tisch"
+      },
+      {
+       "fa": "یِک",
+       "tr": "yek",
+       "de": "eins"
+      },
+      {
+       "fa": "جَوان",
+       "tr": "dschawān",
+       "de": "jung"
+      },
+      {
+       "fa": "جوراب",
+       "tr": "dschūrāb",
+       "de": "Socke"
+      },
+      {
+       "fa": "دانِشجو",
+       "tr": "dāneschdschū",
+       "de": "Student/in"
+      },
+      {
+       "fa": "نَجّار",
+       "tr": "nadschdschār",
+       "de": "Tischler/in"
+      },
+      {
+       "fa": "چَتر",
+       "tr": "tschatr",
+       "de": "Schirm"
+      },
+      {
+       "fa": "چَرخ",
+       "tr": "tscharch",
+       "de": "Rad"
+      },
+      {
+       "fa": "چوب",
+       "tr": "tschūb",
+       "de": "Holz"
+      },
+      {
+       "fa": "بالا",
+       "tr": "bālā",
+       "de": "oben"
+      },
+      {
+       "fa": "بَرف",
+       "tr": "barf",
+       "de": "Schnee"
+      },
+      {
+       "fa": "حال",
+       "tr": "hāl",
+       "de": "Befinden"
+      },
+      {
+       "fa": "سَلام",
+       "tr": "salām",
+       "de": "Hallo"
+      },
+      {
+       "fa": "سَگ",
+       "tr": "sag",
+       "de": "Hund"
+      },
+      {
+       "fa": "فارسی",
+       "tr": "fārsī",
+       "de": "Persisch"
+      },
+      {
+       "fa": "لَب",
+       "tr": "lab",
+       "de": "Lippe"
+      },
+      {
+       "fa": "لوبیا",
+       "tr": "lūbiyā",
+       "de": "Bohnen"
+      },
+      {
+       "fa": "مِثل",
+       "tr": "mesl",
+       "de": "wie (Vergleich)"
+      },
+      {
+       "fa": "کَفش",
+       "tr": "kafsch",
+       "de": "Schuh"
+      },
+      {
+       "fa": "کیف",
+       "tr": "kīf",
+       "de": "Tasche"
+      },
+      {
+       "fa": "گُربِه",
+       "tr": "gorbe",
+       "de": "Katze"
+      },
+      {
+       "fa": "گَرم",
+       "tr": "garm",
+       "de": "warm"
+      },
+      {
+       "fa": "گُل",
+       "tr": "gol",
+       "de": "Blume"
+      },
+      {
+       "fa": "اُتاق",
+       "tr": "otāgh",
+       "de": "Zimmer"
+      },
+      {
+       "fa": "باغ",
+       "tr": "bāgh",
+       "de": "Garten"
+      },
+      {
+       "fa": "باغبان",
+       "tr": "bāghbān",
+       "de": "Gärtner/in"
+      },
+      {
+       "fa": "صابون",
+       "tr": "sābūn",
+       "de": "Seife"
+      },
+      {
+       "fa": "ضَعیف",
+       "tr": "zaʿīf",
+       "de": "schwach"
+      },
+      {
+       "fa": "طَلا",
+       "tr": "talā",
+       "de": "Gold"
+      },
+      {
+       "fa": "ظُهر",
+       "tr": "zohr",
+       "de": "Mittag"
+      },
+      {
+       "fa": "غَذا",
+       "tr": "ghazā",
+       "de": "Essen"
+      },
+      {
+       "fa": "قُفل",
+       "tr": "ghofl",
+       "de": "Schloss"
+      },
+      {
+       "fa": "مُعَلِّم",
+       "tr": "moʿallem",
+       "de": "Lehrer/in"
+      },
+      {
+       "fa": "ژاکَت",
+       "tr": "zhākat",
+       "de": "Jacke"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "e",
+   "titel": "Abschreib-Werkstatt",
+   "vorschau": "✍️ کِتاب",
+   "karten": [
+    {
+     "typ": "bauen",
+     "gen": true,
+     "zeigen": true,
+     "titel": "Schreib das Wort ab",
+     "woerter": [
+      {
+       "fa": "کِشوَر",
+       "tr": "keschwar",
+       "de": "Land, Staat",
+       "emoji": "🗺️",
+       "teile": [
+        "ک",
+        "ش",
+        "و",
+        "ر"
+       ],
+       "extra": [
+        "ز",
+        "ص"
+       ]
+      },
+      {
+       "fa": "ایران",
+       "tr": "īrān",
+       "de": "Iran",
+       "emoji": "🏔️",
+       "teile": [
+        "ا",
+        "ی",
+        "ر",
+        "ا",
+        "ن"
+       ],
+       "extra": [
+        "ژ",
+        "ب"
+       ]
+      },
+      {
+       "fa": "سِتارِه",
+       "tr": "setāre",
+       "de": "Stern",
+       "emoji": "⭐",
+       "teile": [
+        "س",
+        "ت",
+        "ا",
+        "ر",
+        "ه"
+       ],
+       "extra": [
+        "ص",
+        "آ"
+       ]
+      },
+      {
+       "fa": "اِمروز",
+       "tr": "emrūz",
+       "de": "heute",
+       "emoji": "📅",
+       "teile": [
+        "ا",
+        "م",
+        "ر",
+        "و",
+        "ز"
+       ],
+       "extra": [
+        "ژ",
+        "آ"
+       ]
+      },
+      {
+       "fa": "فارسی",
+       "tr": "fārsī",
+       "de": "Persisch",
+       "emoji": "🗣️",
+       "teile": [
+        "ف",
+        "ا",
+        "ر",
+        "س",
+        "ی"
+       ],
+       "extra": [
+        "ش",
+        "ب"
+       ]
+      },
+      {
+       "fa": "خواب",
+       "tr": "chāb",
+       "de": "Schlaf",
+       "emoji": "😴",
+       "teile": [
+        "خ",
+        "و",
+        "ا",
+        "ب"
+       ],
+       "extra": [
+        "ث",
+        "ج"
+       ]
+      },
+      {
+       "fa": "خواهَر",
+       "tr": "chāhar",
+       "de": "Schwester",
+       "emoji": "👩",
+       "teile": [
+        "خ",
+        "و",
+        "ا",
+        "ه",
+        "ر"
+       ],
+       "extra": [
+        "ز",
+        "آ"
+       ]
+      },
+      {
+       "fa": "بابا",
+       "tr": "bābā",
+       "de": "Papa",
+       "emoji": "👨‍👧",
+       "teile": [
+        "ب",
+        "ا",
+        "ب",
+        "ا"
+       ],
+       "extra": [
+        "آ",
+        "پ"
+       ]
+      }
+     ]
+    },
+    {
+     "typ": "bauen",
+     "gen": true,
+     "zeigen": true,
+     "titel": "Noch mehr Profi-Wörter",
+     "woerter": [
+      {
+       "fa": "اُتاق",
+       "tr": "otāgh",
+       "de": "Zimmer",
+       "emoji": "🛏️",
+       "teile": [
+        "ا",
+        "ت",
+        "ا",
+        "ق"
+       ],
+       "extra": [
+        "پ",
+        "ن"
+       ]
+      },
+      {
+       "fa": "ضَعیف",
+       "tr": "zaʿīf",
+       "de": "schwach",
+       "teile": [
+        "ض",
+        "ع",
+        "ی",
+        "ف"
+       ],
+       "extra": [
+        "ش",
+        "ب"
+       ]
+      },
+      {
+       "fa": "مُعَلِّم",
+       "tr": "moʿallem",
+       "de": "Lehrer/in",
+       "emoji": "🧑‍🏫",
+       "teile": [
+        "م",
+        "ع",
+        "ل",
+        "م"
+       ],
+       "extra": [
+        "گ",
+        "ک"
+       ]
+      },
+      {
+       "fa": "جَوان",
+       "tr": "dschawān",
+       "de": "jung",
+       "emoji": "🧑",
+       "teile": [
+        "ج",
+        "و",
+        "ا",
+        "ن"
+       ],
+       "extra": [
+        "چ",
+        "خ"
+       ]
+      },
+      {
+       "fa": "اُمید",
+       "tr": "omīd",
+       "de": "Hoffnung",
+       "emoji": "🌱",
+       "teile": [
+        "ا",
+        "م",
+        "ی",
+        "د"
+       ],
+       "extra": [
+        "ب",
+        "ت"
+       ]
+      },
+      {
+       "fa": "سَلام",
+       "tr": "salām",
+       "de": "Hallo",
+       "emoji": "👋",
+       "teile": [
+        "س",
+        "ل",
+        "ا",
+        "م"
+       ],
+       "extra": [
+        "آ",
+        "ض"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "f",
+   "titel": "Blitz-Marathon",
+   "vorschau": "⏱️ ⏱️",
+   "karten": [
+    {
+     "typ": "tempo",
+     "gen": true,
+     "modus": "tr",
+     "sekunden": 90,
+     "ziel": 20,
+     "titel": "Marathon: Aussprache",
+     "woerter": [
+      {
+       "fa": "آب",
+       "tr": "āb",
+       "de": "Wasser"
+      },
+      {
+       "fa": "بابا",
+       "tr": "bābā",
+       "de": "Papa"
+      },
+      {
+       "fa": "باد",
+       "tr": "bād",
+       "de": "Wind"
+      },
+      {
+       "fa": "بَد",
+       "tr": "bad",
+       "de": "schlecht"
+      },
+      {
+       "fa": "داد",
+       "tr": "dād",
+       "de": "(er/sie) gab"
+      },
+      {
+       "fa": "اَبر",
+       "tr": "abr",
+       "de": "Wolke"
+      },
+      {
+       "fa": "بَرادَر",
+       "tr": "barādar",
+       "de": "Bruder"
+      },
+      {
+       "fa": "دَر",
+       "tr": "dar",
+       "de": "Tür"
+      },
+      {
+       "fa": "مادَر",
+       "tr": "mādar",
+       "de": "Mutter"
+      },
+      {
+       "fa": "مار",
+       "tr": "mār",
+       "de": "Schlange"
+      },
+      {
+       "fa": "مَرد",
+       "tr": "mard",
+       "de": "Mann"
+      },
+      {
+       "fa": "تاب",
+       "tr": "tāb",
+       "de": "Schaukel"
+      },
+      {
+       "fa": "تار",
+       "tr": "tār",
+       "de": "Tar (Laute)"
+      },
+      {
+       "fa": "تَب",
+       "tr": "tab",
+       "de": "Fieber"
+      },
+      {
+       "fa": "پا",
+       "tr": "pā",
+       "de": "Fuß, Bein"
+      },
+      {
+       "fa": "او",
+       "tr": "ū",
+       "de": "er / sie"
+      },
+      {
+       "fa": "باران",
+       "tr": "bārān",
+       "de": "Regen"
+      },
+      {
+       "fa": "بَنّا",
+       "tr": "bannā",
+       "de": "Bauarbeiter/in"
+      },
+      {
+       "fa": "تو",
+       "tr": "to",
+       "de": "du"
+      },
+      {
+       "fa": "دَست",
+       "tr": "dast",
+       "de": "Hand"
+      },
+      {
+       "fa": "دو",
+       "tr": "do",
+       "de": "zwei"
+      },
+      {
+       "fa": "دوست",
+       "tr": "dūst",
+       "de": "Freund"
+      },
+      {
+       "fa": "سَبَد",
+       "tr": "sabad",
+       "de": "Korb"
+      },
+      {
+       "fa": "سَر",
+       "tr": "sar",
+       "de": "Kopf"
+      },
+      {
+       "fa": "سَرد",
+       "tr": "sard",
+       "de": "kalt"
+      },
+      {
+       "fa": "سَرو",
+       "tr": "sarw",
+       "de": "Zypresse"
+      },
+      {
+       "fa": "مَن",
+       "tr": "man",
+       "de": "ich"
+      },
+      {
+       "fa": "نان",
+       "tr": "nān",
+       "de": "Brot"
+      },
+      {
+       "fa": "پِسَر",
+       "tr": "pesar",
+       "de": "Junge, Sohn"
+      },
+      {
+       "fa": "شَب",
+       "tr": "schab",
+       "de": "Nacht"
+      },
+      {
+       "fa": "شِش",
+       "tr": "schesch",
+       "de": "sechs"
+      },
+      {
+       "fa": "کار",
+       "tr": "kār",
+       "de": "Arbeit"
+      },
+      {
+       "fa": "کِتاب",
+       "tr": "ketāb",
+       "de": "Buch"
+      },
+      {
+       "fa": "کِشوَر",
+       "tr": "keschwar",
+       "de": "Land, Staat"
+      },
+      {
+       "fa": "آشپَز",
+       "tr": "āschpaz",
+       "de": "Koch / Köchin"
+      },
+      {
+       "fa": "اِمروز",
+       "tr": "emrūz",
+       "de": "heute"
+      },
+      {
+       "fa": "خانِه",
+       "tr": "chāne",
+       "de": "Haus"
+      },
+      {
+       "fa": "خواب",
+       "tr": "chāb",
+       "de": "Schlaf"
+      },
+      {
+       "fa": "خواهَر",
+       "tr": "chāhar",
+       "de": "Schwester"
+      },
+      {
+       "fa": "خوب",
+       "tr": "chūb",
+       "de": "gut"
+      },
+      {
+       "fa": "دُختَر",
+       "tr": "dochtar",
+       "de": "Mädchen, Tochter"
+      },
+      {
+       "fa": "روز",
+       "tr": "rūz",
+       "de": "Tag"
+      },
+      {
+       "fa": "زَن",
+       "tr": "zan",
+       "de": "Frau"
+      },
+      {
+       "fa": "سِتارِه",
+       "tr": "setāre",
+       "de": "Stern"
+      },
+      {
+       "fa": "ماه",
+       "tr": "māh",
+       "de": "Mond, Monat"
+      },
+      {
+       "fa": "مُهَندِس",
+       "tr": "mohandes",
+       "de": "Ingenieur/in"
+      },
+      {
+       "fa": "هَشت",
+       "tr": "hascht",
+       "de": "acht"
+      },
+      {
+       "fa": "اُمید",
+       "tr": "omīd",
+       "de": "Hoffnung"
+      },
+      {
+       "fa": "ایران",
+       "tr": "īrān",
+       "de": "Iran"
+      },
+      {
+       "fa": "بیمار",
+       "tr": "bīmār",
+       "de": "krank"
+      },
+      {
+       "fa": "خورشید",
+       "tr": "chorschīd",
+       "de": "Sonne"
+      },
+      {
+       "fa": "زَمین",
+       "tr": "zamīn",
+       "de": "Erde, Boden"
+      },
+      {
+       "fa": "سیب",
+       "tr": "sīb",
+       "de": "Apfel"
+      },
+      {
+       "fa": "میز",
+       "tr": "mīz",
+       "de": "Tisch"
+      },
+      {
+       "fa": "یِک",
+       "tr": "yek",
+       "de": "eins"
+      },
+      {
+       "fa": "جَوان",
+       "tr": "dschawān",
+       "de": "jung"
+      },
+      {
+       "fa": "جوراب",
+       "tr": "dschūrāb",
+       "de": "Socke"
+      },
+      {
+       "fa": "دانِشجو",
+       "tr": "dāneschdschū",
+       "de": "Student/in"
+      },
+      {
+       "fa": "نَجّار",
+       "tr": "nadschdschār",
+       "de": "Tischler/in"
+      },
+      {
+       "fa": "چَتر",
+       "tr": "tschatr",
+       "de": "Schirm"
+      },
+      {
+       "fa": "چَرخ",
+       "tr": "tscharch",
+       "de": "Rad"
+      },
+      {
+       "fa": "چوب",
+       "tr": "tschūb",
+       "de": "Holz"
+      },
+      {
+       "fa": "بالا",
+       "tr": "bālā",
+       "de": "oben"
+      },
+      {
+       "fa": "بَرف",
+       "tr": "barf",
+       "de": "Schnee"
+      },
+      {
+       "fa": "حال",
+       "tr": "hāl",
+       "de": "Befinden"
+      },
+      {
+       "fa": "سَلام",
+       "tr": "salām",
+       "de": "Hallo"
+      },
+      {
+       "fa": "سَگ",
+       "tr": "sag",
+       "de": "Hund"
+      },
+      {
+       "fa": "فارسی",
+       "tr": "fārsī",
+       "de": "Persisch"
+      },
+      {
+       "fa": "لَب",
+       "tr": "lab",
+       "de": "Lippe"
+      },
+      {
+       "fa": "لوبیا",
+       "tr": "lūbiyā",
+       "de": "Bohnen"
+      },
+      {
+       "fa": "مِثل",
+       "tr": "mesl",
+       "de": "wie (Vergleich)"
+      },
+      {
+       "fa": "کَفش",
+       "tr": "kafsch",
+       "de": "Schuh"
+      },
+      {
+       "fa": "کیف",
+       "tr": "kīf",
+       "de": "Tasche"
+      },
+      {
+       "fa": "گُربِه",
+       "tr": "gorbe",
+       "de": "Katze"
+      },
+      {
+       "fa": "گَرم",
+       "tr": "garm",
+       "de": "warm"
+      },
+      {
+       "fa": "گُل",
+       "tr": "gol",
+       "de": "Blume"
+      },
+      {
+       "fa": "اُتاق",
+       "tr": "otāgh",
+       "de": "Zimmer"
+      },
+      {
+       "fa": "باغ",
+       "tr": "bāgh",
+       "de": "Garten"
+      },
+      {
+       "fa": "باغبان",
+       "tr": "bāghbān",
+       "de": "Gärtner/in"
+      },
+      {
+       "fa": "صابون",
+       "tr": "sābūn",
+       "de": "Seife"
+      },
+      {
+       "fa": "ضَعیف",
+       "tr": "zaʿīf",
+       "de": "schwach"
+      },
+      {
+       "fa": "طَلا",
+       "tr": "talā",
+       "de": "Gold"
+      },
+      {
+       "fa": "ظُهر",
+       "tr": "zohr",
+       "de": "Mittag"
+      },
+      {
+       "fa": "غَذا",
+       "tr": "ghazā",
+       "de": "Essen"
+      },
+      {
+       "fa": "قُفل",
+       "tr": "ghofl",
+       "de": "Schloss"
+      },
+      {
+       "fa": "مُعَلِّم",
+       "tr": "moʿallem",
+       "de": "Lehrer/in"
+      },
+      {
+       "fa": "ژاکَت",
+       "tr": "zhākat",
+       "de": "Jacke"
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "gen": true,
+     "modus": "de",
+     "sekunden": 90,
+     "ziel": 20,
+     "titel": "Marathon: Bedeutung",
+     "woerter": [
+      {
+       "fa": "آب",
+       "tr": "āb",
+       "de": "Wasser"
+      },
+      {
+       "fa": "بابا",
+       "tr": "bābā",
+       "de": "Papa"
+      },
+      {
+       "fa": "باد",
+       "tr": "bād",
+       "de": "Wind"
+      },
+      {
+       "fa": "بَد",
+       "tr": "bad",
+       "de": "schlecht"
+      },
+      {
+       "fa": "داد",
+       "tr": "dād",
+       "de": "(er/sie) gab"
+      },
+      {
+       "fa": "اَبر",
+       "tr": "abr",
+       "de": "Wolke"
+      },
+      {
+       "fa": "بَرادَر",
+       "tr": "barādar",
+       "de": "Bruder"
+      },
+      {
+       "fa": "دَر",
+       "tr": "dar",
+       "de": "Tür"
+      },
+      {
+       "fa": "مادَر",
+       "tr": "mādar",
+       "de": "Mutter"
+      },
+      {
+       "fa": "مار",
+       "tr": "mār",
+       "de": "Schlange"
+      },
+      {
+       "fa": "مَرد",
+       "tr": "mard",
+       "de": "Mann"
+      },
+      {
+       "fa": "تاب",
+       "tr": "tāb",
+       "de": "Schaukel"
+      },
+      {
+       "fa": "تار",
+       "tr": "tār",
+       "de": "Tar (Laute)"
+      },
+      {
+       "fa": "تَب",
+       "tr": "tab",
+       "de": "Fieber"
+      },
+      {
+       "fa": "پا",
+       "tr": "pā",
+       "de": "Fuß, Bein"
+      },
+      {
+       "fa": "او",
+       "tr": "ū",
+       "de": "er / sie"
+      },
+      {
+       "fa": "باران",
+       "tr": "bārān",
+       "de": "Regen"
+      },
+      {
+       "fa": "بَنّا",
+       "tr": "bannā",
+       "de": "Bauarbeiter/in"
+      },
+      {
+       "fa": "تو",
+       "tr": "to",
+       "de": "du"
+      },
+      {
+       "fa": "دَست",
+       "tr": "dast",
+       "de": "Hand"
+      },
+      {
+       "fa": "دو",
+       "tr": "do",
+       "de": "zwei"
+      },
+      {
+       "fa": "دوست",
+       "tr": "dūst",
+       "de": "Freund"
+      },
+      {
+       "fa": "سَبَد",
+       "tr": "sabad",
+       "de": "Korb"
+      },
+      {
+       "fa": "سَر",
+       "tr": "sar",
+       "de": "Kopf"
+      },
+      {
+       "fa": "سَرد",
+       "tr": "sard",
+       "de": "kalt"
+      },
+      {
+       "fa": "سَرو",
+       "tr": "sarw",
+       "de": "Zypresse"
+      },
+      {
+       "fa": "مَن",
+       "tr": "man",
+       "de": "ich"
+      },
+      {
+       "fa": "نان",
+       "tr": "nān",
+       "de": "Brot"
+      },
+      {
+       "fa": "پِسَر",
+       "tr": "pesar",
+       "de": "Junge, Sohn"
+      },
+      {
+       "fa": "شَب",
+       "tr": "schab",
+       "de": "Nacht"
+      },
+      {
+       "fa": "شِش",
+       "tr": "schesch",
+       "de": "sechs"
+      },
+      {
+       "fa": "کار",
+       "tr": "kār",
+       "de": "Arbeit"
+      },
+      {
+       "fa": "کِتاب",
+       "tr": "ketāb",
+       "de": "Buch"
+      },
+      {
+       "fa": "کِشوَر",
+       "tr": "keschwar",
+       "de": "Land, Staat"
+      },
+      {
+       "fa": "آشپَز",
+       "tr": "āschpaz",
+       "de": "Koch / Köchin"
+      },
+      {
+       "fa": "اِمروز",
+       "tr": "emrūz",
+       "de": "heute"
+      },
+      {
+       "fa": "خانِه",
+       "tr": "chāne",
+       "de": "Haus"
+      },
+      {
+       "fa": "خواب",
+       "tr": "chāb",
+       "de": "Schlaf"
+      },
+      {
+       "fa": "خواهَر",
+       "tr": "chāhar",
+       "de": "Schwester"
+      },
+      {
+       "fa": "خوب",
+       "tr": "chūb",
+       "de": "gut"
+      },
+      {
+       "fa": "دُختَر",
+       "tr": "dochtar",
+       "de": "Mädchen, Tochter"
+      },
+      {
+       "fa": "روز",
+       "tr": "rūz",
+       "de": "Tag"
+      },
+      {
+       "fa": "زَن",
+       "tr": "zan",
+       "de": "Frau"
+      },
+      {
+       "fa": "سِتارِه",
+       "tr": "setāre",
+       "de": "Stern"
+      },
+      {
+       "fa": "ماه",
+       "tr": "māh",
+       "de": "Mond, Monat"
+      },
+      {
+       "fa": "مُهَندِس",
+       "tr": "mohandes",
+       "de": "Ingenieur/in"
+      },
+      {
+       "fa": "هَشت",
+       "tr": "hascht",
+       "de": "acht"
+      },
+      {
+       "fa": "اُمید",
+       "tr": "omīd",
+       "de": "Hoffnung"
+      },
+      {
+       "fa": "ایران",
+       "tr": "īrān",
+       "de": "Iran"
+      },
+      {
+       "fa": "بیمار",
+       "tr": "bīmār",
+       "de": "krank"
+      },
+      {
+       "fa": "خورشید",
+       "tr": "chorschīd",
+       "de": "Sonne"
+      },
+      {
+       "fa": "زَمین",
+       "tr": "zamīn",
+       "de": "Erde, Boden"
+      },
+      {
+       "fa": "سیب",
+       "tr": "sīb",
+       "de": "Apfel"
+      },
+      {
+       "fa": "میز",
+       "tr": "mīz",
+       "de": "Tisch"
+      },
+      {
+       "fa": "یِک",
+       "tr": "yek",
+       "de": "eins"
+      },
+      {
+       "fa": "جَوان",
+       "tr": "dschawān",
+       "de": "jung"
+      },
+      {
+       "fa": "جوراب",
+       "tr": "dschūrāb",
+       "de": "Socke"
+      },
+      {
+       "fa": "دانِشجو",
+       "tr": "dāneschdschū",
+       "de": "Student/in"
+      },
+      {
+       "fa": "نَجّار",
+       "tr": "nadschdschār",
+       "de": "Tischler/in"
+      },
+      {
+       "fa": "چَتر",
+       "tr": "tschatr",
+       "de": "Schirm"
+      },
+      {
+       "fa": "چَرخ",
+       "tr": "tscharch",
+       "de": "Rad"
+      },
+      {
+       "fa": "چوب",
+       "tr": "tschūb",
+       "de": "Holz"
+      },
+      {
+       "fa": "بالا",
+       "tr": "bālā",
+       "de": "oben"
+      },
+      {
+       "fa": "بَرف",
+       "tr": "barf",
+       "de": "Schnee"
+      },
+      {
+       "fa": "حال",
+       "tr": "hāl",
+       "de": "Befinden"
+      },
+      {
+       "fa": "سَلام",
+       "tr": "salām",
+       "de": "Hallo"
+      },
+      {
+       "fa": "سَگ",
+       "tr": "sag",
+       "de": "Hund"
+      },
+      {
+       "fa": "فارسی",
+       "tr": "fārsī",
+       "de": "Persisch"
+      },
+      {
+       "fa": "لَب",
+       "tr": "lab",
+       "de": "Lippe"
+      },
+      {
+       "fa": "لوبیا",
+       "tr": "lūbiyā",
+       "de": "Bohnen"
+      },
+      {
+       "fa": "مِثل",
+       "tr": "mesl",
+       "de": "wie (Vergleich)"
+      },
+      {
+       "fa": "کَفش",
+       "tr": "kafsch",
+       "de": "Schuh"
+      },
+      {
+       "fa": "کیف",
+       "tr": "kīf",
+       "de": "Tasche"
+      },
+      {
+       "fa": "گُربِه",
+       "tr": "gorbe",
+       "de": "Katze"
+      },
+      {
+       "fa": "گَرم",
+       "tr": "garm",
+       "de": "warm"
+      },
+      {
+       "fa": "گُل",
+       "tr": "gol",
+       "de": "Blume"
+      },
+      {
+       "fa": "اُتاق",
+       "tr": "otāgh",
+       "de": "Zimmer"
+      },
+      {
+       "fa": "باغ",
+       "tr": "bāgh",
+       "de": "Garten"
+      },
+      {
+       "fa": "باغبان",
+       "tr": "bāghbān",
+       "de": "Gärtner/in"
+      },
+      {
+       "fa": "صابون",
+       "tr": "sābūn",
+       "de": "Seife"
+      },
+      {
+       "fa": "ضَعیف",
+       "tr": "zaʿīf",
+       "de": "schwach"
+      },
+      {
+       "fa": "طَلا",
+       "tr": "talā",
+       "de": "Gold"
+      },
+      {
+       "fa": "ظُهر",
+       "tr": "zohr",
+       "de": "Mittag"
+      },
+      {
+       "fa": "غَذا",
+       "tr": "ghazā",
+       "de": "Essen"
+      },
+      {
+       "fa": "قُفل",
+       "tr": "ghofl",
+       "de": "Schloss"
+      },
+      {
+       "fa": "مُعَلِّم",
+       "tr": "moʿallem",
+       "de": "Lehrer/in"
+      },
+      {
+       "fa": "ژاکَت",
+       "tr": "zhākat",
+       "de": "Jacke"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "g",
+   "titel": "Die sieben Einzelgänger",
+   "vorschau": "ا د ذ ر ز ژ و",
+   "karten": [
+    {
+     "typ": "sortieren",
+     "gen": true,
+     "titel": "Hand reichen – oder nicht?",
+     "frage": "Verbindet sich dieser Buchstabe nach links?",
+     "kategorien": [
+      "✓ verbindet sich",
+      "✗ verbindet sich nicht"
+     ],
+     "items": [
+      {
+       "fa": "ج",
+       "k": 0,
+       "say": "جیم"
+      },
+      {
+       "fa": "ی",
+       "k": 0,
+       "say": "یِه"
+      },
+      {
+       "fa": "پ",
+       "k": 0,
+       "say": "پِه"
+      },
+      {
+       "fa": "ف",
+       "k": 0,
+       "say": "فِه"
+      },
+      {
+       "fa": "ض",
+       "k": 0,
+       "say": "ضاد"
+      },
+      {
+       "fa": "ک",
+       "k": 0,
+       "say": "کاف"
+      },
+      {
+       "fa": "خ",
+       "k": 0,
+       "say": "خِه"
+      },
+      {
+       "fa": "ه",
+       "k": 0,
+       "say": "هِه"
+      },
+      {
+       "fa": "ر",
+       "k": 1,
+       "say": "رِه"
+      },
+      {
+       "fa": "س",
+       "k": 0,
+       "say": "سین"
+      },
+      {
+       "fa": "ذ",
+       "k": 1,
+       "say": "ذال"
+      },
+      {
+       "fa": "ص",
+       "k": 0,
+       "say": "صاد"
+      },
+      {
+       "fa": "ل",
+       "k": 0,
+       "say": "لام"
+      },
+      {
+       "fa": "ح",
+       "k": 0,
+       "say": "حِه"
+      },
+      {
+       "fa": "ظ",
+       "k": 0,
+       "say": "ظا"
+      },
+      {
+       "fa": "و",
+       "k": 1,
+       "say": "واو"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "gen": true,
+     "titel": "Einzelgänger in Wörtern erkennen",
+     "fragen": [
+      {
+       "fa": "‍ژ",
+       "hoeren": false,
+       "frage": "Welcher Buchstabe ist das? <span class='mini'>(Form: am Ende)</span>",
+       "optFa": true,
+       "optionen": [
+        "ژ",
+        "ر",
+        "ز"
+       ],
+       "richtig": 0,
+       "erkl": "<span class='fa'>ژ</span> – Zhe"
+      },
+      {
+       "fa": "‍د",
+       "hoeren": false,
+       "frage": "Welcher Buchstabe ist das? <span class='mini'>(Form: am Ende)</span>",
+       "optFa": true,
+       "optionen": [
+        "د",
+        "ذ",
+        "ج"
+       ],
+       "richtig": 0,
+       "erkl": "<span class='fa'>د</span> – Dāl"
+      },
+      {
+       "fa": "‍ز",
+       "hoeren": false,
+       "frage": "Welcher Buchstabe ist das? <span class='mini'>(Form: am Ende)</span>",
+       "optFa": true,
+       "optionen": [
+        "ز",
+        "ر",
+        "ژ"
+       ],
+       "richtig": 0,
+       "erkl": "<span class='fa'>ز</span> – Ze"
+      },
+      {
+       "fa": "‍ذ",
+       "hoeren": false,
+       "frage": "Welcher Buchstabe ist das? <span class='mini'>(Form: am Ende)</span>",
+       "optFa": true,
+       "optionen": [
+        "ذ",
+        "د",
+        "ث"
+       ],
+       "richtig": 0,
+       "erkl": "<span class='fa'>ذ</span> – Zāl"
+      },
+      {
+       "fa": "‍ا",
+       "hoeren": false,
+       "frage": "Welcher Buchstabe ist das? <span class='mini'>(Form: am Ende)</span>",
+       "optFa": true,
+       "optionen": [
+        "ا",
+        "آ",
+        "ی"
+       ],
+       "richtig": 0,
+       "erkl": "<span class='fa'>ا</span> – Alef"
+      },
+      {
+       "fa": "‍آ",
+       "hoeren": false,
+       "frage": "Welcher Buchstabe ist das? <span class='mini'>(Form: am Ende)</span>",
+       "optFa": true,
+       "optionen": [
+        "آ",
+        "ا",
+        "چ"
+       ],
+       "richtig": 0,
+       "erkl": "<span class='fa'>آ</span> – Alef mit Madde"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "h",
+   "titel": "Rechtschreibung: gleicher Laut, andere Buchstaben",
+   "vorschau": "س ث ص · ز ذ ض ظ",
+   "karten": [
+    {
+     "typ": "info",
+     "gen": true,
+     "stil": "merke",
+     "titel": "Hören ist leicht – schreiben muss man lernen",
+     "text": "<p>s: <span class='fa'>س ث ص</span> · z: <span class='fa'>ز ذ ض ظ</span> · t: <span class='fa'>ت ط</span> · h: <span class='fa'>ه ح</span> · gh: <span class='fa'>ق غ</span></p><p>Welche Schreibweise ist richtig? Du erkennst sie nur, wenn du das Wort kennst – also: viel lesen!</p>"
+    },
+    {
+     "typ": "wahl",
+     "gen": true,
+     "titel": "Welche Schreibweise stimmt?",
+     "fragen": [
+      {
+       "frage": "Wie schreibt man <i>setāre</i> – Stern?",
+       "emoji": "⭐",
+       "optFa": true,
+       "optionen": [
+        "ستاره",
+        "ستارح"
+       ],
+       "richtig": 0,
+       "erkl": "<span class='fa'>سِتارِه</span> – hier mit <span class='fa'>ه</span>."
+      },
+      {
+       "frage": "Wie schreibt man <i>sarw</i> – Zypresse?",
+       "emoji": "🌲",
+       "optFa": true,
+       "optionen": [
+        "سرو",
+        "ثرو",
+        "صرو"
+       ],
+       "richtig": 0,
+       "erkl": "<span class='fa'>سَرو</span> – hier mit <span class='fa'>س</span>."
+      },
+      {
+       "frage": "Wie schreibt man <i>dast</i> – Hand?",
+       "emoji": "✋",
+       "optFa": true,
+       "optionen": [
+        "دست",
+        "دسط"
+       ],
+       "richtig": 0,
+       "erkl": "<span class='fa'>دَست</span> – hier mit <span class='fa'>ت</span>."
+      },
+      {
+       "frage": "Wie schreibt man <i>mesl</i> – wie (Vergleich)?",
+       "optFa": true,
+       "optionen": [
+        "مثل",
+        "مسل",
+        "مصل"
+       ],
+       "richtig": 0,
+       "erkl": "<span class='fa'>مِثل</span> – hier mit <span class='fa'>ث</span>."
+      },
+      {
+       "frage": "Wie schreibt man <i>chāne</i> – Haus?",
+       "emoji": "🏠",
+       "optFa": true,
+       "optionen": [
+        "خانه",
+        "خانح"
+       ],
+       "richtig": 0,
+       "erkl": "<span class='fa'>خانِه</span> – hier mit <span class='fa'>ه</span>."
+      },
+      {
+       "frage": "Wie schreibt man <i>ghofl</i> – Schloss?",
+       "emoji": "🔒",
+       "optFa": true,
+       "optionen": [
+        "قفل",
+        "غفل"
+       ],
+       "richtig": 0,
+       "erkl": "<span class='fa'>قُفل</span> – hier mit <span class='fa'>ق</span>."
+      },
+      {
+       "frage": "Wie schreibt man <i>rūz</i> – Tag?",
+       "emoji": "🌤️",
+       "optFa": true,
+       "optionen": [
+        "روز",
+        "روذ",
+        "روض"
+       ],
+       "richtig": 0,
+       "erkl": "<span class='fa'>روز</span> – hier mit <span class='fa'>ز</span>."
+      },
+      {
+       "frage": "Wie schreibt man <i>tāb</i> – Schaukel?",
+       "emoji": "🌳",
+       "optFa": true,
+       "optionen": [
+        "تاب",
+        "طاب"
+       ],
+       "richtig": 0,
+       "erkl": "<span class='fa'>تاب</span> – hier mit <span class='fa'>ت</span>."
+      },
+      {
+       "frage": "Wie schreibt man <i>chāhar</i> – Schwester?",
+       "emoji": "👩",
+       "optFa": true,
+       "optionen": [
+        "خواهر",
+        "خواحر"
+       ],
+       "richtig": 0,
+       "erkl": "<span class='fa'>خواهَر</span> – hier mit <span class='fa'>ه</span>."
+      },
+      {
+       "frage": "Wie schreibt man <i>salām</i> – Hallo?",
+       "emoji": "👋",
+       "optFa": true,
+       "optionen": [
+        "سلام",
+        "ثلام",
+        "صلام"
+       ],
+       "richtig": 0,
+       "erkl": "<span class='fa'>سَلام</span> – hier mit <span class='fa'>س</span>."
+      },
+      {
+       "frage": "Wie schreibt man <i>ghazā</i> – Essen?",
+       "emoji": "🍲",
+       "optFa": true,
+       "optionen": [
+        "غذا",
+        "غزا",
+        "غضا"
+       ],
+       "richtig": 0,
+       "erkl": "<span class='fa'>غَذا</span> – hier mit <span class='fa'>ذ</span>."
+      },
+      {
+       "frage": "Wie schreibt man <i>tschatr</i> – Schirm?",
+       "emoji": "☂️",
+       "optFa": true,
+       "optionen": [
+        "چتر",
+        "چطر"
+       ],
+       "richtig": 0,
+       "erkl": "<span class='fa'>چَتر</span> – hier mit <span class='fa'>ت</span>."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
