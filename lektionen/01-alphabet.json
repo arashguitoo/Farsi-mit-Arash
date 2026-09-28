@@ -1,0 +1,936 @@
+{
+  "id": "01",
+  "titel": "Das persische Alphabet",
+  "titelFa": "اَلِفبای فارسی",
+  "einleitung": "Schritt für Schritt durch alle 32 Buchstaben – in derselben Reihenfolge wie im Heft. Alle Wörter sind vokalisiert, damit du sie sicher lesen kannst. Tipp: Oben rechts findest du die Buchstaben-Tafel (ا ب پ), den Umschrift-Schalter (abc) und den Ton.",
+  "stationen": [
+    {
+      "id": "s00",
+      "titel": "Bevor es losgeht",
+      "vorschau": "اَلِفبا",
+      "karten": [
+        {
+          "typ": "info",
+          "titel": "Willkommen bei der persischen Schrift!",
+          "text": "<p>Persisch (Farsi) wird mit einem Alphabet aus <b>32 Buchstaben</b> geschrieben. Es beruht auf dem arabischen Alphabet – Persisch hat aber <b>vier eigene Buchstaben</b> dazu: <span class='fa'>پ چ ژ گ</span> (p, tsch, zh, g).</p><p>Geschrieben wird <b>von rechts nach links</b>. Ein Buch beginnt also dort, wo bei uns die letzte Seite ist.</p><p>Es gibt keine Groß- und Kleinbuchstaben. Dafür hat fast jeder Buchstabe bis zu <b>vier Formen</b> – je nachdem, ob er allein, am Anfang, in der Mitte oder am Ende eines Wortes steht. Die Buchstaben werden nämlich <b>miteinander verbunden</b>.</p><p>Tippe auf ein Wort, um es zu hören.</p>",
+          "beispiele": [
+            { "fa": "فارسی", "tr": "fārsī", "de": "Persisch", "emoji": "🗣️" },
+            { "fa": "سَلام", "tr": "salām", "de": "Hallo", "emoji": "👋" }
+          ]
+        },
+        {
+          "typ": "info",
+          "stil": "merke",
+          "titel": "Kurze Vokale sieht man (meistens) nicht",
+          "text": "<p>Die kurzen Vokale <b>a, e, o</b> werden im normalen Schreiben <b>nicht</b> geschrieben. Die Schrift ist keine vollständige Lautschrift, sondern eine <b>Gedächtnisstütze</b>: Wer das Wort kennt, kann es lesen.</p><p>Beispiel: <span class='fa'>مرد</span> steht für <i>mard</i> (Mann) – das a sieht man nicht.</p><p>In dieser Lektion schreiben wir die kurzen Vokale mit kleinen Zeichen <b>über oder unter</b> den Buchstaben dazu: <span class='fa'>مَرد</span>. Das nennt man <b>vokalisieren</b>. Später lassen wir die Zeichen Schritt für Schritt weg.</p>",
+          "beispiele": [
+            { "fa": "مرد", "tr": "mard", "de": "ohne Vokalzeichen", "emoji": "👨" },
+            { "fa": "مَرد", "tr": "mard", "de": "mit Vokalzeichen", "emoji": "👨" }
+          ]
+        },
+        {
+          "typ": "info",
+          "titel": "So liest du die Umschrift",
+          "text": "<ul><li><b>ā</b> – langes, dunkles a (zwischen a und o, wie im engl. „ball“)</li><li><b>a</b> – kurzes, helles a (wie in „Katze“, fast wie ä)</li><li><b>e, o</b> – kurz · <b>ī, ū</b> – lang (wie in „Biene“, „Blume“)</li><li><b>sch</b> wie „Schule“ · <b>ch</b> wie „Bach“ (nie wie „ich“) · <b>tsch</b> wie „Tschüss“ · <b>dsch</b> wie „Dschungel“</li><li><b>z</b> – weiches s wie in „Sonne“ · <b>s</b> – scharfes s wie in „Haus“</li><li><b>zh</b> – wie das g in „Garage“ · <b>gh</b> – ein g/r tief im Rachen</li><li><b>y</b> – wie deutsches j („ja“) · <b>w</b> – wie deutsches w · <b>r</b> – mit der Zungenspitze gerollt</li><li><b>ʿ</b> – ein kurzer Stopp im Hals, wie in „be‑achten“</li></ul><p class='klein'>Mit dem Knopf <b>abc</b> oben kannst du die Umschrift bei Beispielen ausblenden – eine gute Übung, sobald du sicherer bist.</p>"
+        },
+        {
+          "typ": "wahl",
+          "titel": "Kurzes Start-Quiz",
+          "fragen": [
+            { "frage": "In welche Richtung schreibt man Persisch?", "optionen": ["von rechts nach links", "von links nach rechts", "von oben nach unten"], "richtig": 0 },
+            { "frage": "Wie viele Buchstaben hat das persische Alphabet?", "optionen": ["32", "26", "28"], "richtig": 0, "erkl": "32 – das arabische Alphabet hat 28, Persisch hat vier dazu: <span class='fa'>پ چ ژ گ</span>." },
+            { "frage": "Welche Vokale werden normalerweise nicht geschrieben?", "optionen": ["die kurzen: a, e, o", "die langen: ā, ī, ū", "gar keine"], "richtig": 0 },
+            { "frage": "Gibt es Großbuchstaben?", "optionen": ["Nein – aber bis zu vier Formen je Buchstabe", "Ja, am Satzanfang", "Ja, bei Namen"], "richtig": 0 }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "s01",
+      "titel": "Alef, Be, Dāl",
+      "vorschau": "آ ا ب د",
+      "karten": [
+        {
+          "typ": "buchstaben",
+          "titel": "Deine ersten Buchstaben",
+          "buchstaben": [
+            { "fa": "آ", "name": "Alef mit Madde", "nameFa": "آ", "laut": "ā", "verbindet": false, "hinweis": "Steht am <b>Wortanfang</b>, wenn das Wort mit langem ā beginnt. Das Häkchen oben heißt <i>madde</i>.", "beispiel": { "fa": "آب", "tr": "āb", "de": "Wasser" } },
+            { "fa": "ا", "name": "Alef", "nameFa": "اَلِف", "laut": "ā", "verbindet": false, "hinweis": "In der Wortmitte und am Ende steht <b>ا</b> für ein langes <b>ā</b>. Am Wortanfang ist es ein Träger für Vokale – dazu später mehr.", "beispiel": { "fa": "باد", "tr": "bād", "de": "Wind" } },
+            { "fa": "ب", "name": "Be", "nameFa": "بِه", "laut": "b", "hinweis": "Eine Schale mit einem Punkt <b>unter</b> der Linie. Am Anfang und in der Mitte schrumpft ب zu einem kleinen Zahn mit Punkt: <span class='fa'>بـ ـبـ</span>.", "beispiel": { "fa": "بابا", "tr": "bābā", "de": "Papa" } },
+            { "fa": "د", "name": "Dāl", "nameFa": "دال", "laut": "d", "verbindet": false, "hinweis": "د verbindet sich <b>nur nach rechts</b> – nach د entsteht eine kleine Lücke.", "beispiel": { "fa": "داد", "tr": "dād", "de": "(er/sie) gab" } }
+          ]
+        },
+        {
+          "typ": "info",
+          "stil": "merke",
+          "titel": "Nicht jeder Buchstabe reicht die Hand",
+          "text": "<p>Die meisten Buchstaben verbinden sich mit dem nächsten Buchstaben – also nach <b>links</b>. <span class='fa'>ا</span> und <span class='fa'>د</span> tun das <b>nicht</b>: Sie verbinden sich nur mit dem Buchstaben davor (rechts).</p><p>Darum hat <span class='fa'>بابا</span> nach jedem ا eine kleine Lücke – das Wort ist aber trotzdem <b>ein</b> Wort.</p><p>Insgesamt gibt es <b>sieben</b> solche „Einzelgänger“: <span class='fa'>ا د ذ ر ز ژ و</span>. Zwei davon kennst du schon!</p>",
+          "beispiele": [
+            { "fa": "بابا", "tr": "bā | bā", "de": "Lücke nach ا", "emoji": "👨‍👧" },
+            { "fa": "باد", "tr": "bā | d", "de": "Lücke nach ا", "emoji": "🌬️" }
+          ]
+        },
+        {
+          "typ": "bauen",
+          "titel": "Baue das Wort",
+          "woerter": [
+            { "fa": "آب", "tr": "āb", "de": "Wasser", "emoji": "💧", "teile": ["آ", "ب"], "extra": ["د"] },
+            { "fa": "باد", "tr": "bād", "de": "Wind", "emoji": "🌬️", "teile": ["ب", "ا", "د"], "extra": ["آ"], "hinweis": "Am Wortanfang steht آ – in der Mitte ا." },
+            { "fa": "بابا", "tr": "bābā", "de": "Papa", "emoji": "👨‍👧", "teile": ["ب", "ا", "ب", "ا"], "extra": ["د"] },
+            { "fa": "داد", "tr": "dād", "de": "(er/sie) gab", "emoji": "🎁", "teile": ["د", "ا", "د"], "extra": ["ب"] }
+          ]
+        },
+        {
+          "typ": "paare",
+          "links": "de",
+          "paare": [
+            { "fa": "آب", "tr": "āb", "de": "Wasser", "emoji": "💧" },
+            { "fa": "بابا", "tr": "bābā", "de": "Papa", "emoji": "👨‍👧" },
+            { "fa": "باد", "tr": "bād", "de": "Wind", "emoji": "🌬️" },
+            { "fa": "داد", "tr": "dād", "de": "gab", "emoji": "🎁" }
+          ]
+        },
+        {
+          "typ": "paare",
+          "titel": "Schrift und Aussprache",
+          "text": "Welche Umschrift gehört zu welchem Wort?",
+          "links": "tr",
+          "paare": [
+            { "fa": "آب", "tr": "āb" },
+            { "fa": "بابا", "tr": "bābā" },
+            { "fa": "باد", "tr": "bād" },
+            { "fa": "داد", "tr": "dād" }
+          ]
+        },
+        {
+          "typ": "wahl",
+          "titel": "Lesen",
+          "fragen": [
+            { "fa": "آب", "frage": "Wie liest man das?", "optionen": ["āb", "bād", "dād"], "richtig": 0 },
+            { "fa": "باد", "frage": "Wie liest man das?", "optionen": ["bād", "bābā", "dād"], "richtig": 0 },
+            { "frage": "Welches Wort heißt „Wind“?", "optFa": true, "optionen": ["باد", "داد", "آب"], "richtig": 0 },
+            { "fa": "بابا آب داد.", "frage": "Was bedeutet der Satz?", "optionen": ["Papa gab Wasser.", "Papa trinkt Wasser.", "Der Wind weht."], "richtig": 0, "erkl": "<span class='fa'>بابا آب داد.</span> <i>bābā āb dād.</i> – Das Verb steht im Persischen am <b>Ende</b> des Satzes." }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "s02",
+      "titel": "Mīm, Re und das kurze a",
+      "vorschau": "م ر ـَ",
+      "karten": [
+        {
+          "typ": "buchstaben",
+          "buchstaben": [
+            { "fa": "م", "name": "Mīm", "nameFa": "میم", "laut": "m", "hinweis": "Ein kleiner Kreis. Am Ende bekommt er einen Schwanz nach unten: <span class='fa'>ـم</span>.", "beispiel": { "fa": "مادَر", "tr": "mādar", "de": "Mutter" } },
+            { "fa": "ر", "name": "Re", "nameFa": "رِه", "laut": "r", "verbindet": false, "hinweis": "Ein kleiner Bogen, der <b>unter</b> die Linie reicht. Das r wird mit der Zungenspitze gerollt.", "beispiel": { "fa": "بَرادَر", "tr": "barādar", "de": "Bruder" } },
+            { "typ": "vokal", "fa": "ـَ", "name": "Zebar (Fathe)", "nameFa": "زِبَر", "laut": "a (kurz)", "hinweis": "Ein kleiner Schrägstrich <b>über</b> dem Buchstaben = kurzes, helles <b>a</b>. Im Alltag wird er meistens weggelassen!", "traeger": [ { "fa": "بَ", "tr": "ba" }, { "fa": "دَ", "tr": "da" }, { "fa": "مَ", "tr": "ma" }, { "fa": "رَ", "tr": "ra" } ] }
+          ]
+        },
+        {
+          "typ": "info",
+          "stil": "merke",
+          "titel": "Langes ā oder kurzes a?",
+          "text": "<p><span class='fa'>ا</span> ist ein langes, dunkles <b>ā</b>. Das kurze, helle <b>a</b> ist nur ein Strich über dem Buchstaben: <span class='fa'>ـَ</span>.</p><p>Vergleiche: <span class='fa'>مار</span> <i>mār</i> (Schlange) – <span class='fa'>مَرد</span> <i>mard</i> (Mann).</p><p>Und: <span class='fa'>ر</span> ist der dritte „Einzelgänger“ – er verbindet sich nicht nach links.</p>",
+          "beispiele": [
+            { "fa": "مار", "tr": "mār", "de": "Schlange", "emoji": "🐍" },
+            { "fa": "دَر", "tr": "dar", "de": "Tür", "emoji": "🚪" },
+            { "fa": "بَد", "tr": "bad", "de": "schlecht", "emoji": "👎" }
+          ]
+        },
+        {
+          "typ": "bauen",
+          "woerter": [
+            { "fa": "مادَر", "tr": "mādar", "de": "Mutter", "emoji": "👩‍👧", "teile": ["م", "ا", "د", "ر"], "extra": ["ب"], "hinweis": "Das kurze a zwischen د und ر wird nicht geschrieben – hier zeigt es nur der kleine Strich." },
+            { "fa": "بَرادَر", "tr": "barādar", "de": "Bruder", "emoji": "👦", "teile": ["ب", "ر", "ا", "د", "ر"], "extra": ["م"] },
+            { "fa": "مار", "tr": "mār", "de": "Schlange", "emoji": "🐍", "teile": ["م", "ا", "ر"], "extra": ["د"] },
+            { "fa": "دَر", "tr": "dar", "de": "Tür", "emoji": "🚪", "teile": ["د", "ر"], "extra": ["ا"] },
+            { "fa": "مَرد", "tr": "mard", "de": "Mann", "emoji": "👨", "teile": ["م", "ر", "د"], "extra": ["ا"] }
+          ]
+        },
+        {
+          "typ": "sortieren",
+          "titel": "Hand reichen – oder nicht?",
+          "frage": "Verbindet sich dieser Buchstabe nach links mit dem nächsten Buchstaben?",
+          "kategorien": ["✓ verbindet sich", "✗ verbindet sich nicht"],
+          "items": [
+            { "fa": "ب", "k": 0, "say": "بِه" },
+            { "fa": "ا", "k": 1, "say": "اَلِف", "e": "ا gehört zu den sieben Einzelgängern: <span class='fa'>ا د ذ ر ز ژ و</span>" },
+            { "fa": "م", "k": 0, "say": "میم" },
+            { "fa": "د", "k": 1, "say": "دال", "e": "د gehört zu den sieben Einzelgängern: <span class='fa'>ا د ذ ر ز ژ و</span>" },
+            { "fa": "ر", "k": 1, "say": "رِه", "e": "ر gehört zu den sieben Einzelgängern: <span class='fa'>ا د ذ ر ز ژ و</span>" },
+            { "fa": "آ", "k": 1, "say": "آ", "e": "آ ist ein Alef – auch ein Einzelgänger." }
+          ]
+        },
+        {
+          "typ": "paare",
+          "links": "de",
+          "paare": [
+            { "fa": "مادَر", "de": "Mutter", "emoji": "👩‍👧" },
+            { "fa": "بَرادَر", "de": "Bruder", "emoji": "👦" },
+            { "fa": "مار", "de": "Schlange", "emoji": "🐍" },
+            { "fa": "دَر", "de": "Tür", "emoji": "🚪" },
+            { "fa": "مَرد", "de": "Mann", "emoji": "👨" }
+          ]
+        },
+        {
+          "typ": "wahl",
+          "titel": "Lesen",
+          "fragen": [
+            { "fa": "مَرد", "frage": "Wie liest man das?", "optionen": ["mard", "mārd", "mādar"], "richtig": 0, "erkl": "Der Strich über <span class='fa'>م</span> ist ein kurzes a: <i>mard</i> – Mann." },
+            { "frage": "Welches Wort hat ein langes ā?", "optFa": true, "optionen": ["مار", "مَرد", "دَر"], "richtig": 0 },
+            { "fa": "بَرادَر", "frage": "Wie viele kurze a (Strich oben) siehst du?", "optionen": ["2", "1", "3"], "richtig": 0, "erkl": "<i>ba‑rā‑dar</i>: zwei kurze a (<span class='fa'>بَ</span> und <span class='fa'>دَ</span>) und ein langes ā (<span class='fa'>ا</span>)." },
+            { "fa": "مادَر بَرادَر دارَد.", "frage": "Was bedeutet der Satz?", "optionen": ["Die Mutter hat einen Bruder.", "Der Bruder hat eine Mutter.", "Die Mutter gab Wasser."], "richtig": 0, "erkl": "<i>mādar barādar dārad.</i> – <span class='fa'>دارَد</span> <i>dārad</i> = (sie/er) hat. Wieder steht das Verb am Ende." }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "s03",
+      "titel": "Die b-Familie: Pe, Te, Se",
+      "vorschau": "ب پ ت ث",
+      "karten": [
+        {
+          "typ": "info",
+          "titel": "Eine Form – vier Buchstaben",
+          "text": "<p><span class='fa'>ب</span>, <span class='fa'>پ</span>, <span class='fa'>ت</span> und <span class='fa'>ث</span> haben <b>dieselbe Grundform</b>. Nur die <b>Punkte</b> machen den Unterschied:</p><ul><li><span class='fa'>ب</span> <b>b</b> – ein Punkt unten</li><li><span class='fa'>پ</span> <b>p</b> – drei Punkte unten</li><li><span class='fa'>ت</span> <b>t</b> – zwei Punkte oben</li><li><span class='fa'>ث</span> <b>s</b> – drei Punkte oben</li></ul><p>Punkte sind im Persischen also sehr wichtig – schau immer genau hin!</p>"
+        },
+        {
+          "typ": "buchstaben",
+          "buchstaben": [
+            { "fa": "پ", "name": "Pe", "nameFa": "پِه", "laut": "p", "hinweis": "Einer der vier persischen Extra‑Buchstaben – im Arabischen gibt es ihn nicht.", "beispiel": { "fa": "پا", "tr": "pā", "de": "Fuß, Bein" } },
+            { "fa": "ت", "name": "Te", "nameFa": "تِه", "laut": "t", "hinweis": "Zwei Punkte oben.", "beispiel": { "fa": "تاب", "tr": "tāb", "de": "Schaukel" } },
+            { "fa": "ث", "name": "Se", "nameFa": "ثِه", "laut": "s", "hinweis": "Klingt wie ein scharfes s. Kommt fast nur in Wörtern aus dem Arabischen vor.", "beispiel": { "fa": "مِثل", "tr": "mesl", "de": "wie (Vergleich)" } }
+          ]
+        },
+        {
+          "typ": "wahl",
+          "titel": "Welcher Buchstabe fehlt?",
+          "fragen": [
+            { "emoji": "🦶", "fa": "□ا", "hoeren": false, "frage": "<i>pā</i> – Fuß", "optFa": true, "optionen": ["پ", "ب", "ت"], "richtig": 0 },
+            { "emoji": "🤒", "fa": "□ب", "hoeren": false, "frage": "<i>tab</i> – Fieber", "optFa": true, "optionen": ["ت", "ث", "پ"], "richtig": 0 },
+            { "fa": "تا□", "hoeren": false, "frage": "<i>tāb</i> – Schaukel", "optFa": true, "optionen": ["ب", "پ", "ت"], "richtig": 0 },
+            { "emoji": "👨‍👧", "fa": "□ابا", "hoeren": false, "frage": "<i>bābā</i> – Papa", "optFa": true, "optionen": ["ب", "پ", "ث"], "richtig": 0 }
+          ]
+        },
+        {
+          "typ": "bauen",
+          "woerter": [
+            { "fa": "پا", "tr": "pā", "de": "Fuß, Bein", "emoji": "🦶", "teile": ["پ", "ا"], "extra": ["ب"] },
+            { "fa": "تاب", "tr": "tāb", "de": "Schaukel", "emoji": "🌳", "teile": ["ت", "ا", "ب"], "extra": ["پ"] },
+            { "fa": "تَب", "tr": "tab", "de": "Fieber", "emoji": "🤒", "teile": ["ت", "ب"], "extra": ["ث"] },
+            { "fa": "تار", "tr": "tār", "de": "Tar (Laute)", "emoji": "🎸", "teile": ["ت", "ا", "ر"], "extra": ["ب"] }
+          ]
+        },
+        {
+          "typ": "finden",
+          "titel": "Punkte zählen",
+          "frage": "Tippe alle Wörter an, in denen ein <b>p</b> (<span class='fa'>پ</span> – drei Punkte unten) vorkommt.",
+          "woerter": [
+            { "fa": "پا", "ja": true, "tr": "pā" },
+            { "fa": "پَر", "ja": true, "tr": "par" },
+            { "fa": "پَرتاب", "ja": true, "tr": "partāb" },
+            { "fa": "تاب", "ja": false, "tr": "tāb" },
+            { "fa": "بابا", "ja": false, "tr": "bābā" },
+            { "fa": "تَب", "ja": false, "tr": "tab" },
+            { "fa": "بَرادَر", "ja": false, "tr": "barādar" },
+            { "fa": "ثابِت", "ja": false, "tr": "sābet" }
+          ]
+        },
+        {
+          "typ": "wahl",
+          "titel": "ā oder a?",
+          "fragen": [
+            { "fa": "تاب", "frage": "Was steht hier?", "fest": true, "optionen": ["tāb – Schaukel", "tab – Fieber"], "richtig": 0, "erkl": "Mit <span class='fa'>ا</span> = langes ā." },
+            { "fa": "تَب", "frage": "Was steht hier?", "fest": true, "optionen": ["tāb – Schaukel", "tab – Fieber"], "richtig": 1, "erkl": "Nur der kleine Strich = kurzes a." }
+          ]
+        },
+        {
+          "typ": "paare",
+          "links": "de",
+          "paare": [
+            { "fa": "پا", "de": "Fuß", "emoji": "🦶" },
+            { "fa": "تاب", "de": "Schaukel", "emoji": "🌳" },
+            { "fa": "تَب", "de": "Fieber", "emoji": "🤒" },
+            { "fa": "تار", "de": "Tar (Laute)", "emoji": "🎸" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "s04",
+      "titel": "Sīn, Nūn, Wāw",
+      "vorschau": "س ن و",
+      "karten": [
+        {
+          "typ": "buchstaben",
+          "buchstaben": [
+            { "fa": "س", "name": "Sīn", "nameFa": "سین", "laut": "s (scharf)", "hinweis": "Drei kleine Zähne. Klingt immer scharf wie „ss“ in „Wasser“.", "beispiel": { "fa": "سَر", "tr": "sar", "de": "Kopf" } },
+            { "fa": "ن", "name": "Nūn", "nameFa": "نون", "laut": "n", "hinweis": "Eine Schale mit Punkt oben. Am Anfang und in der Mitte sieht ن aus wie ب – nur mit dem Punkt <b>oben</b>: <span class='fa'>نـ</span>.", "beispiel": { "fa": "نان", "tr": "nān", "de": "Brot" } },
+            { "fa": "و", "name": "Wāw", "nameFa": "واو", "laut": "w · ū · o", "verbindet": false, "hinweis": "Ein Allrounder mit drei Aussprachen – siehe nächste Karte. Einzelgänger Nr. 4!", "beispiel": { "fa": "دوست", "tr": "dūst", "de": "Freund, Freundin" } }
+          ]
+        },
+        {
+          "typ": "info",
+          "stil": "merke",
+          "titel": "و hat drei Aussprachen",
+          "text": "<ul><li><b>ū</b> (langes u): <span class='fa'>دوست</span> <i>dūst</i> – Freund</li><li><b>o</b> (kurzes o, oft am Wortende): <span class='fa'>تو</span> <i>to</i> – du · <span class='fa'>دو</span> <i>do</i> – zwei</li><li><b>w</b> (als Konsonant): <span class='fa'>سَرو</span> <i>sarw</i> – Zypresse</li></ul><p>Allein stehend heißt <span class='fa'>و</span> „und“ – und wird dann <b>o</b> gesprochen: <span class='fa'>مَن و تو</span> <i>man o to</i> – ich und du.</p>",
+          "beispiele": [
+            { "fa": "دوست", "tr": "dūst", "de": "Freund", "emoji": "🤝" },
+            { "fa": "تو", "tr": "to", "de": "du", "emoji": "👉" },
+            { "fa": "دو", "tr": "do", "de": "zwei", "emoji": "2️⃣" },
+            { "fa": "سَرو", "tr": "sarw", "de": "Zypresse", "emoji": "🌲" }
+          ]
+        },
+        {
+          "typ": "bauen",
+          "woerter": [
+            { "fa": "مَن", "tr": "man", "de": "ich", "emoji": "🙋", "teile": ["م", "ن"], "extra": ["ب"] },
+            { "fa": "نان", "tr": "nān", "de": "Brot", "emoji": "🍞", "teile": ["ن", "ا", "ن"], "extra": ["ب"] },
+            { "fa": "سَر", "tr": "sar", "de": "Kopf", "emoji": "👤", "teile": ["س", "ر"], "extra": ["د"] },
+            { "fa": "دَست", "tr": "dast", "de": "Hand", "emoji": "✋", "teile": ["د", "س", "ت"], "extra": ["ث"] },
+            { "fa": "دوست", "tr": "dūst", "de": "Freund", "emoji": "🤝", "teile": ["د", "و", "س", "ت"], "extra": ["ن"] }
+          ]
+        },
+        {
+          "typ": "paare",
+          "links": "de",
+          "paare": [
+            { "fa": "مَن", "de": "ich", "emoji": "🙋" },
+            { "fa": "دوست", "de": "Freund", "emoji": "🤝" },
+            { "fa": "دَست", "de": "Hand", "emoji": "✋" },
+            { "fa": "سَر", "de": "Kopf", "emoji": "👤" },
+            { "fa": "نان", "de": "Brot", "emoji": "🍞" }
+          ]
+        },
+        {
+          "typ": "wahl",
+          "titel": "ū, o oder w?",
+          "fragen": [
+            { "fa": "دوست", "frage": "Wie klingt <span class='fa'>و</span> hier?", "fest": true, "optionen": ["ū", "o", "w"], "richtig": 0 },
+            { "fa": "تو", "frage": "Wie klingt <span class='fa'>و</span> hier? (du)", "fest": true, "optionen": ["ū", "o", "w"], "richtig": 1 },
+            { "fa": "سَرو", "frage": "Wie klingt <span class='fa'>و</span> hier? (Zypresse)", "fest": true, "optionen": ["ū", "o", "w"], "richtig": 2, "erkl": "<i>sarw</i> – die Zypresse ist ein altes Symbol in der persischen Dichtung." },
+            { "fa": "مَن و تو", "frage": "Was bedeutet das?", "optionen": ["ich und du", "du und ich", "mein Freund"], "richtig": 0, "erkl": "<i>man o to</i> – <span class='fa'>و</span> als „und“ spricht man <b>o</b>." }
+          ]
+        },
+        {
+          "typ": "sortieren",
+          "titel": "Hand reichen – oder nicht?",
+          "frage": "Verbindet sich dieser Buchstabe nach links?",
+          "kategorien": ["✓ verbindet sich", "✗ verbindet sich nicht"],
+          "items": [
+            { "fa": "س", "k": 0, "say": "سین" },
+            { "fa": "ن", "k": 0, "say": "نون" },
+            { "fa": "و", "k": 1, "say": "واو", "e": "Einzelgänger: <span class='fa'>ا د ذ ر ز ژ و</span>" },
+            { "fa": "ت", "k": 0, "say": "تِه" },
+            { "fa": "ر", "k": 1, "say": "رِه", "e": "Einzelgänger: <span class='fa'>ا د ذ ر ز ژ و</span>" },
+            { "fa": "پ", "k": 0, "say": "پِه" },
+            { "fa": "د", "k": 1, "say": "دال", "e": "Einzelgänger: <span class='fa'>ا د ذ ر ز ژ و</span>" }
+          ]
+        },
+        {
+          "typ": "lesen",
+          "titel": "Lies das Wort",
+          "karten": [
+            { "fa": "سَر", "tr": "sar", "de": "Kopf", "emoji": "👤" },
+            { "fa": "نان", "tr": "nān", "de": "Brot", "emoji": "🍞" },
+            { "fa": "دَست", "tr": "dast", "de": "Hand", "emoji": "✋" },
+            { "fa": "دوست", "tr": "dūst", "de": "Freund", "emoji": "🤝" },
+            { "fa": "تو", "tr": "to", "de": "du", "emoji": "👉" },
+            { "fa": "سَبَد", "tr": "sabad", "de": "Korb", "emoji": "🧺" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "s05",
+      "titel": "Schīn, Kāf und das kurze e",
+      "vorschau": "ش ک ـِ",
+      "karten": [
+        {
+          "typ": "buchstaben",
+          "buchstaben": [
+            { "fa": "ش", "name": "Schīn", "nameFa": "شین", "laut": "sch", "hinweis": "Wie <span class='fa'>س</span> – mit drei Punkten oben.", "beispiel": { "fa": "شَب", "tr": "schab", "de": "Nacht" } },
+            { "fa": "ک", "name": "Kāf", "nameFa": "کاف", "laut": "k", "hinweis": "Achtung: Am Anfang und in der Mitte sieht ک ganz anders aus: <span class='fa'>کـ ـکـ</span>.", "beispiel": { "fa": "کار", "tr": "kār", "de": "Arbeit" } },
+            { "typ": "vokal", "fa": "ـِ", "name": "Zīr (Kasre)", "nameFa": "زیر", "laut": "e (kurz)", "hinweis": "Ein kleiner Strich <b>unter</b> dem Buchstaben = kurzes <b>e</b>.", "traeger": [ { "fa": "کِ", "tr": "ke" }, { "fa": "بِ", "tr": "be" }, { "fa": "مِ", "tr": "me" }, { "fa": "شِ", "tr": "sche" } ] }
+          ]
+        },
+        {
+          "typ": "bauen",
+          "woerter": [
+            { "fa": "کِتاب", "tr": "ketāb", "de": "Buch", "emoji": "📕", "teile": ["ک", "ت", "ا", "ب"], "extra": ["پ"] },
+            { "fa": "شَب", "tr": "schab", "de": "Nacht", "emoji": "🌃", "teile": ["ش", "ب"], "extra": ["س"] },
+            { "fa": "کار", "tr": "kār", "de": "Arbeit", "emoji": "💼", "teile": ["ک", "ا", "ر"], "extra": ["د"] },
+            { "fa": "کِشوَر", "tr": "keschwar", "de": "Land, Staat", "emoji": "🗺️", "teile": ["ک", "ش", "و", "ر"], "extra": ["س"] },
+            { "fa": "شِش", "tr": "schesch", "de": "sechs", "emoji": "6️⃣", "teile": ["ش", "ش"], "extra": ["س"] }
+          ]
+        },
+        {
+          "typ": "paare",
+          "links": "de",
+          "paare": [
+            { "fa": "کِتاب", "de": "Buch", "emoji": "📕" },
+            { "fa": "شَب", "de": "Nacht", "emoji": "🌃" },
+            { "fa": "کار", "de": "Arbeit", "emoji": "💼" },
+            { "fa": "کِشوَر", "de": "Land", "emoji": "🗺️" },
+            { "fa": "شِش", "de": "sechs", "emoji": "6️⃣" }
+          ]
+        },
+        {
+          "typ": "finden",
+          "titel": "Wo steckt das k?",
+          "frage": "Tippe alle Wörter mit <b>k</b> (<span class='fa'>ک</span>) an – Achtung: Am Anfang sieht es so aus: <span class='fa'>کـ</span>",
+          "woerter": [
+            { "fa": "کِتاب", "ja": true, "tr": "ketāb" },
+            { "fa": "کار", "ja": true, "tr": "kār" },
+            { "fa": "کِشوَر", "ja": true, "tr": "keschwar" },
+            { "fa": "مَکتَب", "ja": true, "tr": "maktab" },
+            { "fa": "تاک", "ja": true, "tr": "tāk" },
+            { "fa": "شَب", "ja": false, "tr": "schab" },
+            { "fa": "دوست", "ja": false, "tr": "dūst" },
+            { "fa": "سَر", "ja": false, "tr": "sar" },
+            { "fa": "نان", "ja": false, "tr": "nān" }
+          ]
+        },
+        {
+          "typ": "wahl",
+          "titel": "Lesen",
+          "fragen": [
+            { "frage": "Welches Wort heißt „Nacht“?", "optFa": true, "optionen": ["شَب", "سَب", "تَب"], "richtig": 0, "erkl": "<span class='fa'>ش</span> hat drei Punkte, <span class='fa'>س</span> keine." },
+            { "fa": "کِتاب", "frage": "Wie liest man das?", "optionen": ["ketāb", "kātab", "katab"], "richtig": 0, "erkl": "Strich <b>unter</b> ک = kurzes e: <i>ke‑tāb</i>." },
+            { "fa": "شِش", "frage": "Welche Zahl ist das?", "optionen": ["6", "3", "2"], "richtig": 0 },
+            { "fa": "مَن کار دارَم.", "frage": "Was bedeutet das?", "optionen": ["Ich habe (etwas zu) tun.", "Ich arbeite nicht.", "Das ist mein Buch."], "richtig": 0, "erkl": "<span class='fa'>دارَم</span> <i>dāram</i> = ich habe. Wörtlich: „Ich habe Arbeit.“" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "s06",
+      "titel": "Ze, Che, He und das kurze o",
+      "vorschau": "ز خ ه ـُ",
+      "karten": [
+        {
+          "typ": "buchstaben",
+          "buchstaben": [
+            { "fa": "ز", "name": "Ze", "nameFa": "زِه", "laut": "z (weiches s)", "verbindet": false, "hinweis": "Wie <span class='fa'>ر</span> – mit einem Punkt. Klingt wie das s in „Sonne“. Einzelgänger Nr. 5!", "beispiel": { "fa": "زَن", "tr": "zan", "de": "Frau" } },
+            { "fa": "خ", "name": "Che", "nameFa": "خِه", "laut": "ch", "hinweis": "Wie „ch“ in „Bach“ – nie wie in „ich“!", "beispiel": { "fa": "خوب", "tr": "chūb", "de": "gut" } },
+            { "fa": "ه", "name": "He", "nameFa": "هِه", "laut": "h · e (am Ende)", "hinweis": "Heißt auch <i>he‑ye do‑tscheschm</i> („zweiäugiges h“), weil die Mittelform <span class='fa'>ـهـ</span> wie zwei Augen aussieht.", "beispiel": { "fa": "ماه", "tr": "māh", "de": "Mond, Monat" } },
+            { "typ": "vokal", "fa": "ـُ", "name": "Pīsch (Zamme)", "nameFa": "پیش", "laut": "o (kurz)", "hinweis": "Ein kleines <span class='fa'>و</span> <b>über</b> dem Buchstaben = kurzes <b>o</b>.", "traeger": [ { "fa": "دُ", "tr": "do" }, { "fa": "بُ", "tr": "bo" }, { "fa": "خُ", "tr": "cho" }, { "fa": "زُ", "tr": "zo" } ] }
+          ]
+        },
+        {
+          "typ": "info",
+          "stil": "merke",
+          "titel": "Das h, das man nicht hört",
+          "text": "<p>Am <b>Wortende</b> nach einem Konsonanten ist <span class='fa'>ه</span> oft <b>stumm</b>: Es zeigt nur ein kurzes <b>e</b> an.</p><p><span class='fa'>خانِه</span> <i>chāne</i> – Haus · <span class='fa'>سِتارِه</span> <i>setāre</i> – Stern</p><p>Sonst hört man ein richtiges <b>h</b>: <span class='fa'>ماه</span> <i>māh</i> – Mond · <span class='fa'>کوه</span> <i>kūh</i> – Berg · <span class='fa'>هَشت</span> <i>hascht</i> – acht.</p><p class='klein'>Übrigens: Auch <span class='fa'>ه</span> verbindet sich nach links – nur am Wortende hat es nichts mehr zum Verbinden.</p>",
+          "beispiele": [
+            { "fa": "خانِه", "tr": "chāne", "de": "Haus", "emoji": "🏠" },
+            { "fa": "ماه", "tr": "māh", "de": "Mond", "emoji": "🌙" },
+            { "fa": "هَشت", "tr": "hascht", "de": "acht", "emoji": "8️⃣" }
+          ]
+        },
+        {
+          "typ": "bauen",
+          "woerter": [
+            { "fa": "خانِه", "tr": "chāne", "de": "Haus", "emoji": "🏠", "teile": ["خ", "ا", "ن", "ه"], "extra": ["ز"], "hinweis": "Das ه am Ende ist stumm – es zeigt das e an." },
+            { "fa": "خوب", "tr": "chūb", "de": "gut", "emoji": "👍", "teile": ["خ", "و", "ب"], "extra": ["ن"] },
+            { "fa": "زَن", "tr": "zan", "de": "Frau", "emoji": "👩", "teile": ["ز", "ن"], "extra": ["ر"] },
+            { "fa": "دُختَر", "tr": "dochtar", "de": "Mädchen, Tochter", "emoji": "👧", "teile": ["د", "خ", "ت", "ر"], "extra": ["ث"] },
+            { "fa": "پِسَر", "tr": "pesar", "de": "Junge, Sohn", "emoji": "👦", "teile": ["پ", "س", "ر"], "extra": ["ب"] }
+          ]
+        },
+        {
+          "typ": "paare",
+          "links": "de",
+          "paare": [
+            { "fa": "خانِه", "de": "Haus", "emoji": "🏠" },
+            { "fa": "خوب", "de": "gut", "emoji": "👍" },
+            { "fa": "مَرد", "de": "Mann", "emoji": "👨" },
+            { "fa": "زَن", "de": "Frau", "emoji": "👩" },
+            { "fa": "دُختَر", "de": "Mädchen", "emoji": "👧" },
+            { "fa": "پِسَر", "de": "Junge", "emoji": "👦" }
+          ]
+        },
+        {
+          "typ": "sortieren",
+          "titel": "h hörbar oder stumm?",
+          "frage": "Wie klingt <span class='fa'>ه</span> in diesem Wort?",
+          "kategorien": ["h ist hörbar", "stumm → e"],
+          "items": [
+            { "fa": "خانِه", "tr": "chāne", "k": 1 },
+            { "fa": "ماه", "tr": "māh", "k": 0 },
+            { "fa": "سِتارِه", "tr": "setāre", "k": 1 },
+            { "fa": "کوه", "tr": "kūh", "k": 0 },
+            { "fa": "هَشت", "tr": "hascht", "k": 0, "e": "Am Wortanfang ist <span class='fa'>ه</span> immer ein h." },
+            { "fa": "نامِه", "tr": "nāme", "k": 1, "e": "<i>nāme</i> – Brief" },
+            { "fa": "راه", "tr": "rāh", "k": 0, "e": "Nach einem langen ā hört man das h: <i>rāh</i> – Weg." }
+          ]
+        },
+        {
+          "typ": "wahl",
+          "titel": "Lesen",
+          "fragen": [
+            { "fa": "دُختَر", "frage": "Wie liest man das?", "optionen": ["dochtar", "dāchtar", "duchtār"], "richtig": 0, "erkl": "Das kleine <span class='fa'>و</span> oben (<span class='fa'>ـُ</span>) ist ein kurzes o." },
+            { "fa": "زَن و مَرد", "frage": "Was bedeutet das?", "optionen": ["Frau und Mann", "Mann und Frau", "Mädchen und Junge"], "richtig": 0, "erkl": "<i>zan o mard</i> – Persisch liest man von rechts: zuerst <span class='fa'>زَن</span>." },
+            { "frage": "Welcher Buchstabe ist das weiche s (wie in „Sonne“)?", "optFa": true, "optionen": ["ز", "س", "ر"], "richtig": 0 },
+            { "fa": "خانِه", "frage": "Was macht das ه am Ende?", "optionen": ["Es ist stumm und zeigt ein e an.", "Man spricht ein deutliches h.", "Es ist ein langes ā."], "richtig": 0 }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "s07",
+      "titel": "Ye und die Gesichter des Alef",
+      "vorschau": "ی ای اَ اِ اُ",
+      "karten": [
+        {
+          "typ": "buchstaben",
+          "buchstaben": [
+            { "fa": "ی", "name": "Ye", "nameFa": "یِه", "laut": "y · ī", "hinweis": "Am Ende und allein ohne Punkte: <span class='fa'>ی</span>. Am Anfang und in der Mitte mit zwei Punkten unten: <span class='fa'>یـ ـیـ</span>. Als Konsonant wie deutsches <b>j</b> (<i>y</i>), als Vokal ein langes <b>ī</b>.", "beispiel": { "fa": "سیب", "tr": "sīb", "de": "Apfel" } }
+          ]
+        },
+        {
+          "typ": "info",
+          "stil": "merke",
+          "titel": "Alef am Wortanfang",
+          "text": "<p>Ein persisches Wort beginnt nie mit einem „nackten“ Vokal – <span class='fa'>ا</span> ist dann der <b>Träger</b> für den Vokal:</p><ul><li><span class='fa'>آ</span> → <b>ā</b>: <span class='fa'>آب</span> <i>āb</i> – Wasser</li><li><span class='fa'>اَ</span> → <b>a</b>: <span class='fa'>اَبر</span> <i>abr</i> – Wolke</li><li><span class='fa'>اِ</span> → <b>e</b>: <span class='fa'>اِمروز</span> <i>emrūz</i> – heute</li><li><span class='fa'>اُ</span> → <b>o</b>: <span class='fa'>اُمید</span> <i>omīd</i> – Hoffnung</li><li><span class='fa'>ای</span> → <b>ī</b>: <span class='fa'>ایران</span> <i>īrān</i> – Iran</li><li><span class='fa'>او</span> → <b>ū</b>: <span class='fa'>او</span> <i>ū</i> – er / sie</li></ul><p>In der Wortmitte und am Ende ist <span class='fa'>ا</span> dagegen immer ein langes <b>ā</b>.</p>",
+          "beispiele": [
+            { "fa": "اَبر", "tr": "abr", "de": "Wolke", "emoji": "☁️" },
+            { "fa": "اِمروز", "tr": "emrūz", "de": "heute", "emoji": "📅" },
+            { "fa": "او", "tr": "ū", "de": "er / sie", "emoji": "🧑" }
+          ]
+        },
+        {
+          "typ": "wahl",
+          "titel": "Wie klingt das Alef?",
+          "fragen": [
+            { "fa": "اَبر", "frage": "Mit welchem Laut beginnt das Wort?", "fest": true, "optionen": ["a", "ā", "e"], "richtig": 0, "erkl": "<i>abr</i> – Wolke ☁️" },
+            { "fa": "آب", "frage": "Mit welchem Laut beginnt das Wort?", "fest": true, "optionen": ["a", "ā", "o"], "richtig": 1 },
+            { "fa": "اِمروز", "frage": "Mit welchem Laut beginnt das Wort?", "fest": true, "optionen": ["a", "e", "ī"], "richtig": 1, "erkl": "<i>emrūz</i> – heute" },
+            { "fa": "ایران", "frage": "Mit welchem Laut beginnt das Wort?", "fest": true, "optionen": ["e", "ā", "ī"], "richtig": 2 },
+            { "fa": "اُمید", "frage": "Mit welchem Laut beginnt das Wort?", "fest": true, "optionen": ["o", "ū", "a"], "richtig": 0, "erkl": "<i>omīd</i> – Hoffnung (auch ein Vorname)" },
+            { "fa": "او", "frage": "Wie liest man das? (er / sie)", "fest": true, "optionen": ["ū", "o", "aw"], "richtig": 0, "erkl": "Persisch unterscheidet nicht zwischen „er“ und „sie“ – <span class='fa'>او</span> heißt beides!" }
+          ]
+        },
+        {
+          "typ": "bauen",
+          "woerter": [
+            { "fa": "سیب", "tr": "sīb", "de": "Apfel", "emoji": "🍎", "teile": ["س", "ی", "ب"], "extra": ["ش"] },
+            { "fa": "ایران", "tr": "īrān", "de": "Iran", "emoji": "🏔️", "teile": ["ا", "ی", "ر", "ا", "ن"], "extra": ["آ"], "hinweis": "Am Anfang: ا + ی = ī." },
+            { "fa": "یِک", "tr": "yek", "de": "eins", "emoji": "1️⃣", "teile": ["ی", "ک"], "extra": ["ب"] },
+            { "fa": "زَمین", "tr": "zamīn", "de": "Erde, Boden", "emoji": "🌍", "teile": ["ز", "م", "ی", "ن"], "extra": ["ر"] },
+            { "fa": "میز", "tr": "mīz", "de": "Tisch", "emoji": "🍽️", "teile": ["م", "ی", "ز"], "extra": ["ر"] }
+          ]
+        },
+        {
+          "typ": "paare",
+          "links": "de",
+          "paare": [
+            { "fa": "سیب", "de": "Apfel", "emoji": "🍎" },
+            { "fa": "ایران", "de": "Iran", "emoji": "🏔️" },
+            { "fa": "یِک", "de": "eins", "emoji": "1️⃣" },
+            { "fa": "زَمین", "de": "Erde", "emoji": "🌍" },
+            { "fa": "میز", "de": "Tisch", "emoji": "🍽️" },
+            { "fa": "اَبر", "de": "Wolke", "emoji": "☁️" }
+          ]
+        },
+        {
+          "typ": "lesen",
+          "karten": [
+            { "fa": "سیب", "tr": "sīb", "de": "Apfel", "emoji": "🍎" },
+            { "fa": "میز", "tr": "mīz", "de": "Tisch", "emoji": "🍽️" },
+            { "fa": "زَمین", "tr": "zamīn", "de": "Erde", "emoji": "🌍" },
+            { "fa": "اِمروز", "tr": "emrūz", "de": "heute", "emoji": "📅" },
+            { "fa": "بیمار", "tr": "bīmār", "de": "krank", "emoji": "🤒" },
+            { "fa": "اُمید", "tr": "omīd", "de": "Hoffnung", "emoji": "🌱" },
+            { "fa": "یِک", "tr": "yek", "de": "eins", "emoji": "1️⃣" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "s08",
+      "titel": "Die ch-Familie: Dschīm, Tsche, He",
+      "vorschau": "ج چ ح خ",
+      "karten": [
+        {
+          "typ": "info",
+          "titel": "Noch eine Familie",
+          "text": "<p><span class='fa'>ج</span>, <span class='fa'>چ</span>, <span class='fa'>ح</span> und <span class='fa'>خ</span> teilen sich eine Form – wieder entscheiden die Punkte:</p><ul><li><span class='fa'>ج</span> <b>dsch</b> – ein Punkt im Bauch</li><li><span class='fa'>چ</span> <b>tsch</b> – drei Punkte im Bauch (persischer Extra‑Buchstabe)</li><li><span class='fa'>ح</span> <b>h</b> – ganz ohne Punkt</li><li><span class='fa'>خ</span> <b>ch</b> – ein Punkt oben (kennst du schon)</li></ul>"
+        },
+        {
+          "typ": "buchstaben",
+          "buchstaben": [
+            { "fa": "ج", "name": "Dschīm", "nameFa": "جیم", "laut": "dsch", "hinweis": "Wie „dsch“ in „Dschungel“.", "beispiel": { "fa": "جوراب", "tr": "dschūrāb", "de": "Socke" } },
+            { "fa": "چ", "name": "Tsche", "nameFa": "چِه", "laut": "tsch", "hinweis": "Wie „tsch“ in „tschüss“.", "beispiel": { "fa": "چَتر", "tr": "tschatr", "de": "Schirm" } },
+            { "fa": "ح", "name": "He", "nameFa": "حِه", "laut": "h", "hinweis": "Klingt genau wie <span class='fa'>ه</span>. Heißt auch <i>he‑ye dschīmī</i>. Kommt meist in Wörtern aus dem Arabischen vor.", "beispiel": { "fa": "حال", "tr": "hāl", "de": "Befinden" } }
+          ]
+        },
+        {
+          "typ": "wahl",
+          "titel": "Welcher Buchstabe fehlt?",
+          "fragen": [
+            { "emoji": "🧦", "fa": "□وراب", "hoeren": false, "frage": "<i>dschūrāb</i> – Socke", "optFa": true, "optionen": ["ج", "چ", "خ"], "richtig": 0 },
+            { "emoji": "☂️", "fa": "□تر", "hoeren": false, "frage": "<i>tschatr</i> – Schirm", "optFa": true, "optionen": ["چ", "ج", "ح"], "richtig": 0 },
+            { "emoji": "👍", "fa": "□وب", "hoeren": false, "frage": "<i>chūb</i> – gut", "optFa": true, "optionen": ["خ", "ح", "ج"], "richtig": 0 },
+            { "emoji": "🪵", "fa": "□وب", "hoeren": false, "frage": "<i>tschūb</i> – Holz", "optFa": true, "optionen": ["چ", "خ", "ج"], "richtig": 0, "erkl": "<span class='fa'>خوب</span> <i>chūb</i> = gut, <span class='fa'>چوب</span> <i>tschūb</i> = Holz. Die Punkte machen's!" },
+            { "fa": "□ال", "hoeren": false, "frage": "<i>hāl</i> – Befinden", "optFa": true, "optionen": ["ح", "خ", "چ"], "richtig": 0 }
+          ]
+        },
+        {
+          "typ": "bauen",
+          "woerter": [
+            { "fa": "جوراب", "tr": "dschūrāb", "de": "Socke", "emoji": "🧦", "teile": ["ج", "و", "ر", "ا", "ب"], "extra": ["چ"] },
+            { "fa": "جَوان", "tr": "dschawān", "de": "jung", "emoji": "🧑", "teile": ["ج", "و", "ا", "ن"], "extra": ["چ"] },
+            { "fa": "چوب", "tr": "tschūb", "de": "Holz", "emoji": "🪵", "teile": ["چ", "و", "ب"], "extra": ["خ"] },
+            { "fa": "چَرخ", "tr": "tscharch", "de": "Rad", "emoji": "🛞", "teile": ["چ", "ر", "خ"], "extra": ["ح"] },
+            { "fa": "چَتر", "tr": "tschatr", "de": "Schirm", "emoji": "☂️", "teile": ["چ", "ت", "ر"], "extra": ["ج"] }
+          ]
+        },
+        {
+          "typ": "paare",
+          "links": "de",
+          "paare": [
+            { "fa": "جوراب", "de": "Socke", "emoji": "🧦" },
+            { "fa": "جَوان", "de": "jung", "emoji": "🧑" },
+            { "fa": "چوب", "de": "Holz", "emoji": "🪵" },
+            { "fa": "چَرخ", "de": "Rad", "emoji": "🛞" },
+            { "fa": "چَتر", "de": "Schirm", "emoji": "☂️" },
+            { "fa": "خوب", "de": "gut", "emoji": "👍" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "s09",
+      "titel": "Fe, Gāf, Lām",
+      "vorschau": "ف گ ل",
+      "karten": [
+        {
+          "typ": "buchstaben",
+          "buchstaben": [
+            { "fa": "ف", "name": "Fe", "nameFa": "فِه", "laut": "f", "hinweis": "Ein kleiner Kreis mit einem Punkt oben.", "beispiel": { "fa": "کیف", "tr": "kīf", "de": "Tasche" } },
+            { "fa": "گ", "name": "Gāf", "nameFa": "گاف", "laut": "g", "hinweis": "Wie <span class='fa'>ک</span> – mit einem <b>zweiten Strich</b> oben. Der vierte persische Extra‑Buchstabe.", "beispiel": { "fa": "گُل", "tr": "gol", "de": "Blume" } },
+            { "fa": "ل", "name": "Lām", "nameFa": "لام", "laut": "l", "hinweis": "Hoch wie <span class='fa'>ا</span>, aber mit einem Bogen nach unten.", "beispiel": { "fa": "لَب", "tr": "lab", "de": "Lippe" } }
+          ]
+        },
+        {
+          "typ": "info",
+          "stil": "merke",
+          "titel": "Ein besonderes Paar: لا",
+          "text": "<p>Wenn <span class='fa'>ل</span> vor <span class='fa'>ا</span> steht, verschmelzen beide zu einer eigenen Figur: <span class='fa'>لا</span> (<i>lā</i>). Man nennt sie <i>lām‑alef</i>.</p><p>Du wirst sie gleich beim Bauen von <span class='fa'>سَلام</span> sehen!</p>",
+          "beispiele": [
+            { "fa": "سَلام", "tr": "salām", "de": "Hallo", "emoji": "👋" },
+            { "fa": "بالا", "tr": "bālā", "de": "oben", "emoji": "⬆️" }
+          ]
+        },
+        {
+          "typ": "bauen",
+          "woerter": [
+            { "fa": "سَلام", "tr": "salām", "de": "Hallo", "emoji": "👋", "teile": ["س", "ل", "ا", "م"], "extra": ["ن"], "hinweis": "Siehst du? <span class='fa'>ل</span> und <span class='fa'>ا</span> verschmelzen zu <span class='fa'>لا</span>." },
+            { "fa": "لوبیا", "tr": "lūbiyā", "de": "Bohnen", "emoji": "🫘", "teile": ["ل", "و", "ب", "ی", "ا"], "extra": ["پ"] },
+            { "fa": "کیف", "tr": "kīf", "de": "Tasche", "emoji": "👜", "teile": ["ک", "ی", "ف"], "extra": ["گ"] },
+            { "fa": "کَفش", "tr": "kafsch", "de": "Schuh", "emoji": "👟", "teile": ["ک", "ف", "ش"], "extra": ["س"] },
+            { "fa": "گُربِه", "tr": "gorbe", "de": "Katze", "emoji": "🐱", "teile": ["گ", "ر", "ب", "ه"], "extra": ["ک"] },
+            { "fa": "سَگ", "tr": "sag", "de": "Hund", "emoji": "🐶", "teile": ["س", "گ"], "extra": ["ک"] }
+          ]
+        },
+        {
+          "typ": "finden",
+          "titel": "k oder g?",
+          "frage": "Tippe alle Wörter mit <b>g</b> (<span class='fa'>گ</span> – zwei Striche oben) an.",
+          "woerter": [
+            { "fa": "گُل", "ja": true, "tr": "gol" },
+            { "fa": "گُربِه", "ja": true, "tr": "gorbe" },
+            { "fa": "سَگ", "ja": true, "tr": "sag" },
+            { "fa": "بَرگ", "ja": true, "tr": "barg" },
+            { "fa": "گَرم", "ja": true, "tr": "garm" },
+            { "fa": "کیف", "ja": false, "tr": "kīf" },
+            { "fa": "کَفش", "ja": false, "tr": "kafsch" },
+            { "fa": "کار", "ja": false, "tr": "kār" },
+            { "fa": "کِتاب", "ja": false, "tr": "ketāb" }
+          ]
+        },
+        {
+          "typ": "paare",
+          "links": "de",
+          "paare": [
+            { "fa": "لوبیا", "de": "Bohnen", "emoji": "🫘" },
+            { "fa": "کیف", "de": "Tasche", "emoji": "👜" },
+            { "fa": "کَفش", "de": "Schuh", "emoji": "👟" },
+            { "fa": "لَب", "de": "Lippe", "emoji": "👄" },
+            { "fa": "گُربِه", "de": "Katze", "emoji": "🐱" },
+            { "fa": "سَگ", "de": "Hund", "emoji": "🐶" }
+          ]
+        },
+        {
+          "typ": "wahl",
+          "titel": "Lesen",
+          "fragen": [
+            { "fa": "سَلام", "frage": "Wie liest man das?", "optionen": ["salām", "slām", "sālam"], "richtig": 0 },
+            { "fa": "گُل", "frage": "Was bedeutet das?", "optionen": ["Blume", "Katze", "Lippe"], "richtig": 0 },
+            { "fa": "مَن گُربِه دارَم.", "frage": "Was bedeutet der Satz?", "optionen": ["Ich habe eine Katze.", "Ich habe einen Hund.", "Du hast eine Katze."], "richtig": 0 }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "s10",
+      "titel": "Die restlichen Buchstaben",
+      "vorschau": "ژ ق غ ص ع ض ظ ذ ط",
+      "karten": [
+        {
+          "typ": "info",
+          "titel": "Viele Buchstaben – ein Laut",
+          "text": "<p>Im Persischen klingen manche Buchstaben gleich. Sie stammen aus dem Arabischen, wo man sie unterschiedlich ausspricht. Für dich heißt das: <b>Hören ist leicht – schreiben muss man lernen.</b></p><ul><li><b>s</b>: <span class='fa'>س ث ص</span></li><li><b>z</b>: <span class='fa'>ز ذ ض ظ</span></li><li><b>t</b>: <span class='fa'>ت ط</span></li><li><b>h</b>: <span class='fa'>ه ح</span></li><li><b>gh</b>: <span class='fa'>ق غ</span></li></ul><p>Die häufigsten sind jeweils die ersten: <span class='fa'>س ز ت ه</span>.</p>"
+        },
+        {
+          "typ": "buchstaben",
+          "titel": "Teil 1",
+          "buchstaben": [
+            { "fa": "ژ", "name": "Zhe", "nameFa": "ژِه", "laut": "zh", "verbindet": false, "hinweis": "Wie <span class='fa'>ز</span> mit drei Punkten. Klingt wie das g in „Garage“. Kommt vor allem in Wörtern aus dem Französischen vor. Einzelgänger Nr. 6!", "beispiel": { "fa": "ژاکَت", "tr": "zhākat", "de": "Jacke" } },
+            { "fa": "ق", "name": "Ghāf", "nameFa": "قاف", "laut": "gh", "hinweis": "Ein tiefes g, weit hinten im Rachen.", "beispiel": { "fa": "اُتاق", "tr": "otāgh", "de": "Zimmer" } },
+            { "fa": "غ", "name": "Gheyn", "nameFa": "غِین", "laut": "gh", "hinweis": "Klingt im Persischen wie <span class='fa'>ق</span>.", "beispiel": { "fa": "باغ", "tr": "bāgh", "de": "Garten" } },
+            { "fa": "ص", "name": "Sād", "nameFa": "صاد", "laut": "s", "hinweis": "Klingt wie <span class='fa'>س</span>.", "beispiel": { "fa": "صابون", "tr": "sābūn", "de": "Seife" } },
+            { "fa": "ع", "name": "ʿEyn", "nameFa": "عِین", "laut": "ʿ (Stopp)", "hinweis": "Ein kurzer Stopp im Hals – manchmal hört man ihn kaum.", "beispiel": { "fa": "مُعَلِّم", "tr": "moʿallem", "de": "Lehrer/in" } }
+          ]
+        },
+        {
+          "typ": "buchstaben",
+          "titel": "Teil 2",
+          "buchstaben": [
+            { "fa": "ض", "name": "Zād", "nameFa": "ضاد", "laut": "z", "hinweis": "Wie <span class='fa'>ص</span> mit einem Punkt. Klingt wie <span class='fa'>ز</span>.", "beispiel": { "fa": "ضَعیف", "tr": "zaʿīf", "de": "schwach" } },
+            { "fa": "ظ", "name": "Zā", "nameFa": "ظا", "laut": "z", "hinweis": "Wie <span class='fa'>ط</span> mit einem Punkt. Klingt wie <span class='fa'>ز</span>.", "beispiel": { "fa": "ظُهر", "tr": "zohr", "de": "Mittag" } },
+            { "fa": "ذ", "name": "Zāl", "nameFa": "ذال", "laut": "z", "verbindet": false, "hinweis": "Wie <span class='fa'>د</span> mit einem Punkt – und genau wie د ein Einzelgänger (Nr. 7).", "beispiel": { "fa": "غَذا", "tr": "ghazā", "de": "Essen" } },
+            { "fa": "ط", "name": "Tā", "nameFa": "طا", "laut": "t", "hinweis": "Klingt wie <span class='fa'>ت</span>.", "beispiel": { "fa": "طَلا", "tr": "talā", "de": "Gold" } }
+          ]
+        },
+        {
+          "typ": "bauen",
+          "woerter": [
+            { "fa": "اُتاق", "tr": "otāgh", "de": "Zimmer", "emoji": "🛏️", "teile": ["ا", "ت", "ا", "ق"], "extra": ["غ"], "hinweis": "<span class='fa'>اُ</span> am Anfang = o." },
+            { "fa": "قُفل", "tr": "ghofl", "de": "Schloss", "emoji": "🔒", "teile": ["ق", "ف", "ل"], "extra": ["غ"] },
+            { "fa": "صابون", "tr": "sābūn", "de": "Seife", "emoji": "🧼", "teile": ["ص", "ا", "ب", "و", "ن"], "extra": ["س"] },
+            { "fa": "باغ", "tr": "bāgh", "de": "Garten", "emoji": "🌳", "teile": ["ب", "ا", "غ"], "extra": ["ق"] },
+            { "fa": "غَذا", "tr": "ghazā", "de": "Essen", "emoji": "🍲", "teile": ["غ", "ذ", "ا"], "extra": ["ز"] }
+          ]
+        },
+        {
+          "typ": "sortieren",
+          "titel": "Welcher Laut?",
+          "frage": "Wie spricht man diesen Buchstaben aus?",
+          "kategorien": ["s", "z", "t", "h", "gh"],
+          "items": [
+            { "fa": "ث", "k": 0, "say": "ثِه" },
+            { "fa": "ص", "k": 0, "say": "صاد" },
+            { "fa": "ذ", "k": 1, "say": "ذال" },
+            { "fa": "ض", "k": 1, "say": "ضاد" },
+            { "fa": "ظ", "k": 1, "say": "ظا" },
+            { "fa": "ط", "k": 2, "say": "طا" },
+            { "fa": "ح", "k": 3, "say": "حِه" },
+            { "fa": "ق", "k": 4, "say": "قاف" },
+            { "fa": "غ", "k": 4, "say": "غِین" },
+            { "fa": "ز", "k": 1, "say": "زِه" }
+          ]
+        },
+        {
+          "typ": "wahl",
+          "titel": "Die sieben Einzelgänger",
+          "fragen": [
+            { "frage": "Welche Gruppe enthält genau die Buchstaben, die sich <b>nicht</b> nach links verbinden?", "optFa": true, "optionen": ["ا د ذ ر ز ژ و", "ا ب د ر ز س و", "د ر ز ک گ و ی"], "richtig": 0, "hoeren": false },
+            { "frage": "Welcher Buchstabe klingt wie das g in „Garage“?", "optFa": true, "optionen": ["ژ", "ز", "ر"], "richtig": 0 },
+            { "fa": "اُتاق", "frage": "Wie liest man das?", "optionen": ["otāgh", "ūtāgh", "atāgh"], "richtig": 0 }
+          ]
+        },
+        {
+          "typ": "paare",
+          "links": "de",
+          "paare": [
+            { "fa": "اُتاق", "de": "Zimmer", "emoji": "🛏️" },
+            { "fa": "قُفل", "de": "Schloss", "emoji": "🔒" },
+            { "fa": "صابون", "de": "Seife", "emoji": "🧼" },
+            { "fa": "باغ", "de": "Garten", "emoji": "🌳" },
+            { "fa": "غَذا", "de": "Essen", "emoji": "🍲" },
+            { "fa": "ژاکَت", "de": "Jacke", "emoji": "🧥" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "s11",
+      "titel": "Taschdīd und das stumme w",
+      "vorschau": "ـّ خوا",
+      "karten": [
+        {
+          "typ": "info",
+          "titel": "Taschdīd: ein Buchstabe – doppelt gesprochen",
+          "text": "<p>Wenn ein Konsonant <b>doppelt</b> gesprochen wird, schreibt man ihn nur <b>einmal</b> und setzt ein kleines, w‑förmiges Zeichen darüber: <span class='fa'>ـّ</span> (<i>taschdīd</i>).</p><p><span class='fa'>بَنّا</span> <i>bannā</i> – Bauarbeiter · <span class='fa'>مُعَلِّم</span> <i>moʿallem</i> – Lehrer · <span class='fa'>نَجّار</span> <i>nadschdschār</i> – Tischler</p><p>Wie die kurzen Vokale wird auch das Taschdīd im Alltag meistens weggelassen.</p>",
+          "beispiele": [
+            { "fa": "بَنّا", "tr": "bannā", "de": "Bauarbeiter/in", "emoji": "👷" },
+            { "fa": "مُعَلِّم", "tr": "moʿallem", "de": "Lehrer/in", "emoji": "🧑‍🏫" },
+            { "fa": "نَجّار", "tr": "nadschdschār", "de": "Tischler/in", "emoji": "🪚" }
+          ]
+        },
+        {
+          "typ": "info",
+          "stil": "merke",
+          "titel": "خوا = خا: das w, das man nicht hört",
+          "text": "<p>Steht <span class='fa'>و</span> zwischen <span class='fa'>خ</span> und <span class='fa'>ا</span>, wird es <b>nicht gesprochen</b>: <span class='fa'>خوا</span> klingt wie <span class='fa'>خا</span>.</p><p><span class='fa'>خواهَر</span> <i>chāhar</i> – Schwester · <span class='fa'>خواب</span> <i>chāb</i> – Schlaf · <span class='fa'>خوابیدَن</span> <i>chābīdan</i> – schlafen</p><p>Ähnlich: In <span class='fa'>خورشید</span> <i>chorschīd</i> (Sonne) klingt <span class='fa'>خو</span> wie <i>cho</i>.</p>",
+          "beispiele": [
+            { "fa": "خواهَر", "tr": "chāhar", "de": "Schwester", "emoji": "👩" },
+            { "fa": "خواب", "tr": "chāb", "de": "Schlaf", "emoji": "😴" }
+          ]
+        },
+        {
+          "typ": "wahl",
+          "titel": "Lesen",
+          "fragen": [
+            { "fa": "خواهَر", "frage": "Wie liest man das?", "optionen": ["chāhar", "chwāhar", "chūhar"], "richtig": 0 },
+            { "fa": "بَنّا", "frage": "Wie liest man das?", "optionen": ["bannā", "banā", "bānā"], "richtig": 0, "erkl": "Das Taschdīd über <span class='fa'>ن</span> verdoppelt es: <i>ban‑nā</i>." },
+            { "fa": "خواب", "frage": "Wie liest man das?", "optionen": ["chāb", "chūb", "chwāb"], "richtig": 0, "erkl": "<i>chūb</i> ist <span class='fa'>خوب</span> (gut) – ohne ا!" },
+            { "fa": "خوابیدَن", "frage": "Wie liest man das?", "optionen": ["chābīdan", "chūbīdan", "chwābdan"], "richtig": 0 }
+          ]
+        },
+        {
+          "typ": "paare",
+          "links": "de",
+          "paare": [
+            { "fa": "بَنّا", "de": "Bauarbeiter/in", "emoji": "👷" },
+            { "fa": "مُعَلِّم", "de": "Lehrer/in", "emoji": "🧑‍🏫" },
+            { "fa": "نَجّار", "de": "Tischler/in", "emoji": "🪚" },
+            { "fa": "خواهَر", "de": "Schwester", "emoji": "👩" },
+            { "fa": "خواب", "de": "Schlaf", "emoji": "😴" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "s12",
+      "titel": "Wiederholung: Himmel & Wetter",
+      "vorschau": "روز شَب باران",
+      "karten": [
+        {
+          "typ": "paare",
+          "titel": "Am Himmel",
+          "links": "de",
+          "paare": [
+            { "fa": "روز", "de": "Tag", "emoji": "🌤️" },
+            { "fa": "شَب", "de": "Nacht", "emoji": "🌃" },
+            { "fa": "آفتاب", "de": "Sonne", "emoji": "☀️" },
+            { "fa": "ماه", "de": "Mond", "emoji": "🌙" },
+            { "fa": "سِتارِه", "de": "Stern", "emoji": "⭐" },
+            { "fa": "زَمین", "de": "Erde", "emoji": "🌍" }
+          ]
+        },
+        {
+          "typ": "paare",
+          "titel": "Das Wetter",
+          "links": "emoji",
+          "text": "Welches Bild passt zu welchem Wort?",
+          "paare": [
+            { "fa": "باد", "de": "Wind", "emoji": "🌬️" },
+            { "fa": "اَبر", "de": "Wolke", "emoji": "☁️" },
+            { "fa": "باران", "de": "Regen", "emoji": "🌧️" },
+            { "fa": "بَرف", "de": "Schnee", "emoji": "❄️" },
+            { "fa": "گَرم", "de": "warm", "emoji": "🥵" },
+            { "fa": "سَرد", "de": "kalt", "emoji": "🥶" }
+          ]
+        },
+        {
+          "typ": "wahl",
+          "titel": "Gegenteile & Gleiches",
+          "fragen": [
+            { "fa": "روز", "frage": "Was ist das Gegenteil?", "optFa": true, "optionen": ["شَب", "ماه", "باد"], "richtig": 0 },
+            { "fa": "گَرم", "frage": "Was ist das Gegenteil?", "optFa": true, "optionen": ["سَرد", "بَرف", "اَبر"], "richtig": 0 },
+            { "fa": "آفتاب", "frage": "Welches Wort bedeutet dasselbe?", "optFa": true, "optionen": ["خورشید", "سِتارِه", "ماه"], "richtig": 0, "erkl": "<span class='fa'>آفتاب = خورشید</span> – beide heißen Sonne." },
+            { "fa": "اِمروز باران اَست.", "frage": "Was bedeutet der Satz?", "optionen": ["Heute regnet es.", "Heute schneit es.", "Heute ist es warm."], "richtig": 0, "erkl": "<i>emrūz bārān ast.</i> – wörtlich „Heute ist Regen.“ <span class='fa'>اَست</span> <i>ast</i> = ist." }
+          ]
+        },
+        {
+          "typ": "lesen",
+          "karten": [
+            { "fa": "روز", "tr": "rūz", "de": "Tag", "emoji": "🌤️" },
+            { "fa": "خورشید", "tr": "chorschīd", "de": "Sonne", "emoji": "☀️" },
+            { "fa": "سِتارِه", "tr": "setāre", "de": "Stern", "emoji": "⭐" },
+            { "fa": "باران", "tr": "bārān", "de": "Regen", "emoji": "🌧️" },
+            { "fa": "بَرف", "tr": "barf", "de": "Schnee", "emoji": "❄️" },
+            { "fa": "اَبر", "tr": "abr", "de": "Wolke", "emoji": "☁️" },
+            { "fa": "سَرد", "tr": "sard", "de": "kalt", "emoji": "🥶" },
+            { "fa": "گَرم", "tr": "garm", "de": "warm", "emoji": "🥵" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "s13",
+      "titel": "Großer Alphabet-Check",
+      "vorschau": "ا … ی ✓",
+      "karten": [
+        {
+          "typ": "sortieren",
+          "titel": "Die Einzelgänger",
+          "frage": "Verbindet sich dieser Buchstabe nach links?",
+          "kategorien": ["✓ verbindet sich", "✗ verbindet sich nicht"],
+          "items": [
+            { "fa": "ذ", "k": 1, "say": "ذال" },
+            { "fa": "ک", "k": 0, "say": "کاف" },
+            { "fa": "ژ", "k": 1, "say": "ژِه" },
+            { "fa": "و", "k": 1, "say": "واو" },
+            { "fa": "ل", "k": 0, "say": "لام" },
+            { "fa": "ز", "k": 1, "say": "زِه" },
+            { "fa": "ه", "k": 0, "say": "هِه" },
+            { "fa": "ع", "k": 0, "say": "عِین" },
+            { "fa": "ا", "k": 1, "say": "اَلِف" },
+            { "fa": "ی", "k": 0, "say": "یِه" }
+          ]
+        },
+        {
+          "typ": "wahl",
+          "titel": "Lesen – quer durchs Alphabet",
+          "fragen": [
+            { "fa": "کِتاب", "frage": "Wie liest man das?", "optionen": ["ketāb", "kotob", "kātab"], "richtig": 0 },
+            { "fa": "خانِه", "frage": "Wie liest man das?", "optionen": ["chāne", "chāneh", "hāne"], "richtig": 0 },
+            { "fa": "گُربِه", "frage": "Wie liest man das?", "optionen": ["gorbe", "korbe", "gārbe"], "richtig": 0 },
+            { "fa": "خواهَر", "frage": "Wie liest man das?", "optionen": ["chāhar", "chwāhar", "hāwar"], "richtig": 0 },
+            { "fa": "ایران", "frage": "Wie liest man das?", "optionen": ["īrān", "erān", "ayrān"], "richtig": 0 },
+            { "fa": "صابون", "frage": "Wie liest man das?", "optionen": ["sābūn", "sabun", "zābūn"], "richtig": 0 },
+            { "fa": "مُعَلِّم", "frage": "Was bedeutet das?", "optionen": ["Lehrer/in", "Tischler/in", "Bauarbeiter/in"], "richtig": 0 },
+            { "fa": "دوست", "frage": "Was bedeutet das?", "optionen": ["Freund/in", "Hand", "Kopf"], "richtig": 0 }
+          ]
+        },
+        {
+          "typ": "bauen",
+          "titel": "Profi-Wörter: Berufe",
+          "woerter": [
+            { "fa": "دانِشجو", "tr": "dāneschdschū", "de": "Student/in", "emoji": "🧑‍🎓", "teile": ["د", "ا", "ن", "ش", "ج", "و"], "extra": ["چ"] },
+            { "fa": "باغبان", "tr": "bāghbān", "de": "Gärtner/in", "emoji": "🧑‍🌾", "teile": ["ب", "ا", "غ", "ب", "ا", "ن"], "extra": ["ق"] },
+            { "fa": "مُهَندِس", "tr": "mohandes", "de": "Ingenieur/in", "emoji": "👷‍♀️", "teile": ["م", "ه", "ن", "د", "س"], "extra": ["ح"] },
+            { "fa": "آشپَز", "tr": "āschpaz", "de": "Koch / Köchin", "emoji": "🧑‍🍳", "teile": ["آ", "ش", "پ", "ز"], "extra": ["ب"] }
+          ]
+        },
+        {
+          "typ": "info",
+          "titel": "آفَرین! Du kennst jetzt alle 32 Buchstaben.",
+          "text": "<p>Du kannst jetzt jedes persische Wort <b>entziffern</b> – wenn es vokalisiert ist. Ab den nächsten Lektionen lassen wir die kleinen Vokalzeichen nach und nach weg; dann hilft dir dein Wortschatz beim Lesen.</p><p>Wiederhole die Stationen ruhig mehrmals: Es zählt immer dein <b>bestes</b> Ergebnis.</p>",
+          "beispiele": [
+            { "fa": "آفَرین!", "tr": "āfarīn!", "de": "Bravo!", "emoji": "🎉" },
+            { "fa": "خِیلی خوب!", "tr": "cheylī chūb!", "de": "Sehr gut!", "emoji": "🌟" }
+          ]
+        }
+      ]
+    }
+  ]
+}

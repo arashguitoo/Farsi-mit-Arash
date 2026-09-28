@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lektion · Farsi-Lernpfad</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Vazirmatn:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+<header class="kopf">
+  <div class="wrap">
+    <a href="index.html" class="medaillon" style="text-decoration:none" aria-label="Zum Lernpfad">فا</a>
+    <div>
+      <h1 id="lekTitel">Lektion</h1>
+      <div class="unter">Farsi-Lernpfad · Lern Farsi mit Arash</div>
+    </div>
+    <div class="rechts">
+      <button class="kopf-btn" id="btnTafel" title="Alle Buchstaben">ا ب پ</button>
+      <button class="kopf-btn" id="btnUmschrift" title="Umschrift ein/aus">abc</button>
+      <button class="kopf-btn" id="btnTon">🔊 Ton</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="buehne" id="buehne"><p class="muted">Lade Lektion …</p></div>
+</main>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+<script src="assets/core.js"></script>
+<script src="assets/lektion.js"></script>
+<script data-goatcounter="https://aguitoo.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

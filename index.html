@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Farsi-Lernpfad · Lern Farsi mit Arash</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Vazirmatn:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+<header class="kopf">
+  <div class="wrap">
+    <div class="medaillon">فا</div>
+    <div>
+      <h1>Farsi-Lernpfad</h1>
+      <div class="unter">Lern Farsi mit Arash</div>
+    </div>
+    <div class="rechts" id="kopfRechts"></div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="gruss" id="bereichLogin">
+    <div class="karte login">
+      <div>
+        <div class="fa" style="font-size:1.8rem;font-weight:800;color:var(--lapis)">خوش آمَدید!</div>
+        <div class="muted"><i>chosch āmadīd</i> – Willkommen! Gib deinen persönlichen Code ein.</div>
+      </div>
+      <form class="zeile" id="loginForm" autocomplete="off">
+        <input class="feld" id="codeFeld" maxlength="8" placeholder="CODE" aria-label="Dein Code" autocapitalize="characters" spellcheck="false">
+        <button class="btn" type="submit">Los</button>
+      </form>
+      <div class="klein" id="loginMeldung"></div>
+      <div class="klein muted">Noch keinen Code? <a href="#" id="gastLink">Ohne Code ausprobieren</a> – dann wird dein Fortschritt nur auf diesem Gerät gespeichert.</div>
+    </div>
+  </section>
+
+  <section class="gruss versteckt" id="bereichHallo">
+    <div class="karte" style="display:flex;align-items:center;gap:14px;flex-wrap:wrap">
+      <div style="flex:1;min-width:200px">
+        <div class="fa" style="font-size:1.6rem;font-weight:800;color:var(--lapis)" id="halloFa">سَلام!</div>
+        <div id="halloText"></div>
+      </div>
+      <button class="btn zwei klein" id="abmelden">Abmelden</button>
+    </div>
+  </section>
+
+  <div class="pfad" id="pfad"></div>
+
+  <p class="klein muted" style="text-align:center;margin-bottom:40px"><a href="konsole.html" style="color:var(--tinte2)">Lehrkraft</a></p>
+</main>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+<script src="assets/core.js"></script>
+<script>
+(function(){
+  const F = window.FARSI, { $, esc } = F;
+  let INDEX = null;
+  const GAST_KEY = "farsi_gast_v1";
+  const istGast = () => { try { return localStorage.getItem(GAST_KEY) === "1"; } catch(e){ return false; } };
+  const setGast = v => { try { v ? localStorage.setItem(GAST_KEY,"1") : localStorage.removeItem(GAST_KEY); } catch(e){} };
+
+  async function zeige(){
+    const s = F.sitzung();
+    $("#bereichLogin").classList.toggle("versteckt", !!s || istGast());
+    $("#bereichHallo").classList.toggle("versteckt", !s && !istGast());
+    if (s) {
+      $("#halloFa").textContent = "سَلام " + (s.name || "") + "!";
+      $("#halloText").innerHTML = `<b>${esc(s.name)}</b>${s.klassenName ? " · " + esc(s.klassenName) : ""} · Code <span class="code">${esc(s.code)}</span>`;
+      $("#halloFa").setAttribute("dir","auto");
+    } else if (istGast()) {
+      $("#halloFa").textContent = "سَلام!";
+      $("#halloText").innerHTML = `Du übst im <b>Gast-Modus</b>. Dein Fortschritt bleibt auf diesem Gerät. <a href="#" id="dochCode">Code eingeben</a>`;
+      const d = $("#dochCode"); if (d) d.onclick = e => { e.preventDefault(); setGast(false); zeige(); };
+    }
+    await zeichnePfad();
+  }
+
+  async function zeichnePfad(){
+    const pfad = $("#pfad");
+    if (!INDEX) {
+      try { INDEX = await F.ladeJSON("lektionen/index.json"); }
+      catch(e){ pfad.innerHTML = `<div class="karte">Die Lektionsliste konnte nicht geladen werden.${location.protocol==="file:"?" Die Seite läuft nur über GitHub Pages oder einen Webserver.":""}</div>`; return; }
+    }
+    pfad.innerHTML = INDEX.lektionen.map(l => `<div class="station-lek zu"><div class="nr">${l.nummer}</div><div><h3>${esc(l.titel)}</h3><div class="muted klein">lädt …</div></div></div>`).join("");
+    const [frei, fort] = await Promise.all([F.ladeFreigaben(), F.ladeAlleFortschritte()]);
+    const zahlen = await Promise.all(INDEX.lektionen.map(async l => {
+      if (!l.datei) return 0;
+      try { const d = await F.ladeJSON("lektionen/" + l.datei); return d.stationen.length; } catch(e){ return 0; }
+    }));
+    pfad.innerHTML = INDEX.lektionen.map((l, i) => {
+      const offen = l.datei && F.istOffen(l, frei);
+      const f = fort[l.id] || {};
+      const erledigt = Object.keys(f).length, gesamt = zahlen[i] || 0;
+      const pct = gesamt ? Math.round(100 * Math.min(erledigt, gesamt) / gesamt) : 0;
+      const fertig = gesamt && erledigt >= gesamt;
+      const inhalt = `<div class="nr">${fertig ? "✓" : l.nummer}</div>
+        <div style="flex:1;min-width:0">
+          <div style="display:flex;justify-content:space-between;gap:8px;align-items:baseline;flex-wrap:wrap">
+            <h3>${esc(l.titel)}</h3><span class="fa-titel">${esc(l.titelFa || "")}</span>
+          </div>
+          <div class="muted klein">${esc(l.untertitel || "")}</div>
+          ${offen ? `<div class="leiste"><i style="width:${pct}%"></i></div>
+            <div class="klein muted" style="margin-top:4px">${erledigt} von ${gesamt} Stationen</div>`
+            : `<div style="margin-top:6px"><span class="chip">${l.datei ? "🔒 noch gesperrt" : "in Vorbereitung"}</span></div>`}
+        </div>`;
+      return offen
+        ? `<a class="station-lek ${fertig ? "fertig" : ""}" href="lektion.html?id=${encodeURIComponent(l.id)}">${inhalt}</a>`
+        : `<div class="station-lek zu">${inhalt}</div>`;
+    }).join("");
+  }
+
+  $("#loginForm").addEventListener("submit", async e => {
+    e.preventDefault();
+    const m = $("#loginMeldung");
+    m.textContent = "Prüfe Code …";
+    const r = await F.anmelden($("#codeFeld").value);
+    if (r.ok) { setGast(false); m.textContent = ""; zeige(); return; }
+    m.innerHTML = { kurz: "Der Code ist zu kurz.", unbekannt: "Diesen Code kenne ich nicht. Bitte prüfe ihn noch einmal.", inaktiv: "Dieser Code ist gerade nicht aktiv. Frag deine Lehrkraft.", offline: "Keine Verbindung. Bitte später noch einmal versuchen." }[r.grund] || "Das hat nicht geklappt.";
+    m.style.color = "var(--granat)";
+  });
+  $("#gastLink").addEventListener("click", e => { e.preventDefault(); setGast(true); zeige(); });
+  $("#abmelden").addEventListener("click", () => { F.abmelden(); setGast(false); zeige(); });
+  zeige();
+})();
+</script>
+<script data-goatcounter="https://aguitoo.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

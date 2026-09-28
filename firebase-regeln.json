@@ -1,0 +1,21 @@
+{
+  "rules": {
+    "farsi": {
+      "klassen":  { ".read": true, ".write": "auth != null" },
+      "freigabe": { ".read": true, ".write": "auth != null" },
+      "tn": {
+        ".read": "auth != null",
+        ".write": "auth != null",
+        "$code": { ".read": true }
+      },
+      "fortschritt": {
+        ".read": "auth != null",
+        ".write": "auth != null",
+        "$code": {
+          ".read": true,
+          ".write": "auth != null || root.child('farsi/tn/' + $code).exists()"
+        }
+      }
+    }
+  }
+}
