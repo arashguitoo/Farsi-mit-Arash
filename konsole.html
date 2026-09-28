@@ -9,86 +9,201 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Vazirmatn:wght@400;600;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/app.css">
+<style>
+  .wrap{max-width:1180px}
+  .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-bottom:16px}
+  .kpi{background:var(--karte);border:1px solid var(--linie);border-radius:16px;padding:14px 16px;box-shadow:var(--schatten)}
+  .kpi .zahl{font-size:2rem;font-weight:800;line-height:1.1;color:var(--tinte)}
+  .kpi .lab{font-size:.82rem;color:var(--tinte2);font-weight:700}
+  .kpi .sub{font-size:.78rem;color:var(--tinte2)}
+  .raster{display:grid;grid-template-columns:1.4fr 1fr;gap:14px}
+  @media (max-width:860px){.raster{grid-template-columns:1fr}}
+  .karte h3{margin:0 0 10px;font-size:1.05rem}
+  .kl-karten{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}
+  .kl-karte{border:1px solid var(--linie);border-radius:14px;padding:12px 14px;background:#fff;display:grid;gap:6px}
+  .kl-karte .name{font-weight:800;font-size:1.05rem}
+  .feed{list-style:none;margin:0;padding:0;display:grid;gap:2px}
+  .feed li{display:flex;gap:10px;align-items:center;padding:7px 4px;border-bottom:1px solid var(--linie);font-size:.9rem}
+  .feed li:last-child{border-bottom:0}
+  .feed .punkt{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-size:.75rem;font-weight:800;flex:0 0 auto;background:var(--tuerkis-hell);color:var(--tuerkis)}
+  .feed .zeit{margin-left:auto;color:var(--tinte2);font-size:.78rem;white-space:nowrap}
+  .balken{display:grid;grid-template-columns:minmax(150px,1.3fr) 2fr 70px;gap:10px;align-items:center;padding:6px 0;border-bottom:1px solid var(--linie);font-size:.9rem}
+  .balken:last-child{border-bottom:0}
+  .spur{height:12px;background:var(--papier2);border-radius:6px;position:relative;overflow:hidden}
+  .spur>i{position:absolute;left:0;top:0;bottom:0;background:var(--tuerkis);border-radius:0 4px 4px 0}
+  .spur.quote>i{background:var(--lapis)}
+  .warn{display:inline-block;font-size:.72rem;font-weight:800;border-radius:6px;padding:1px 6px;background:var(--safran-hell);color:#8a5400}
+  .banner{border-radius:14px;padding:14px 16px;margin:16px 0;background:var(--granat-hell);border:1px solid #efc2bd}
+  .banner code{background:#fff;border-radius:6px;padding:1px 6px}
+  .onboard{max-width:620px;margin:30px auto;text-align:center}
+  .onboard .zeile{display:flex;gap:10px;margin-top:14px}
+  .suche{max-width:260px}
+  .kopfleiste{display:flex;gap:10px;justify-content:space-between;align-items:center;flex-wrap:wrap;margin-bottom:10px}
+  .tab .anz{background:rgba(0,0,0,.08);border-radius:999px;padding:0 7px;margin-left:4px;font-size:.75rem}
+  .tab.an .anz{background:rgba(255,255,255,.25)}
+  .dunkel{color:var(--tinte2)}
+  .mini{font-size:.75rem;color:var(--tinte2)}
+  tr.inaktiv td{opacity:.55}
+  .modal textarea{width:100%;min-height:220px}
+  .rang{font-weight:800;color:var(--tinte2);width:28px}
+</style>
 </head>
 <body>
 <header class="kopf">
   <div class="wrap">
     <a href="index.html" class="medaillon" style="text-decoration:none">فا</a>
     <div><h1>Konsole</h1><div class="unter">Farsi-Lernpfad · Lehrkraft</div></div>
-    <div class="rechts"><button class="kopf-btn versteckt" id="btnLogout">Abmelden</button></div>
+    <div class="rechts">
+      <span class="kopf-btn versteckt" id="nutzer" style="background:transparent;border-color:transparent"></span>
+      <a class="kopf-btn" href="index.html" target="_blank">↗ Lernpfad</a>
+      <button class="kopf-btn versteckt" id="btnLogout">Abmelden</button>
+    </div>
   </div>
 </header>
 
 <main class="wrap" style="padding-bottom:60px">
+  <div id="regelBanner" class="banner versteckt"></div>
+
   <!-- Login -->
   <section id="login" class="gruss">
-    <div class="karte login" style="max-width:440px">
+    <div class="karte login" style="max-width:440px;margin:0 auto">
       <h2 style="margin:0">Anmelden</h2>
       <p class="muted klein" style="margin:0">Mit deinem Konto aus Firebase → Authentication (Projekt lern-farsi-arash).</p>
-      <input class="feld" id="email" type="email" placeholder="E-Mail" autocomplete="username" style="letter-spacing:0;text-transform:none;font-weight:400;font-size:1rem">
-      <input class="feld" id="pw" type="password" placeholder="Passwort" autocomplete="current-password" style="letter-spacing:0;text-transform:none;font-weight:400;font-size:1rem">
+      <input class="feld" id="email" type="email" placeholder="E-Mail" autocomplete="username">
+      <input class="feld" id="pw" type="password" placeholder="Passwort" autocomplete="current-password">
       <button class="btn" id="btnLogin">Anmelden</button>
       <div class="klein" id="loginMsg" style="color:var(--granat)"></div>
     </div>
   </section>
 
+  <!-- Erste Klasse anlegen -->
+  <section id="onboard" class="versteckt">
+    <div class="karte onboard">
+      <div style="font-size:2.4rem">👋</div>
+      <h2 style="margin:6px 0">Willkommen in deiner Konsole!</h2>
+      <p class="muted">Lege zuerst eine Klasse an. Danach trägst du die Namen ein – die Codes entstehen automatisch.</p>
+      <div class="zeile">
+        <input class="feld" id="obName" placeholder="Name der Klasse, z. B. Persisch A1 – Montag">
+        <button class="btn" id="obAnlegen">Anlegen</button>
+      </div>
+      <p class="klein muted" style="margin-top:14px">oder mit einem Klick: <button class="btn zwei klein" id="obZwei">Klasse A + Klasse B anlegen</button></p>
+      <div class="klein" id="obMsg" style="color:var(--granat)"></div>
+    </div>
+  </section>
+
   <section id="app" class="versteckt">
     <div class="tabs">
-      <button class="tab an" data-tab="tn">👥 Klassen & Teilnehmende</button>
-      <button class="tab" data-tab="frei">🔓 Freigaben</button>
+      <button class="tab an" data-tab="uebersicht">🏠 Übersicht</button>
+      <button class="tab" data-tab="tn">👥 Teilnehmende</button>
       <button class="tab" data-tab="fort">📊 Fortschritt</button>
+      <button class="tab" data-tab="stat">📈 Statistik</button>
+      <button class="tab" data-tab="frei">🔓 Lektionen</button>
+      <button class="tab" data-tab="backup">💾 Backup</button>
     </div>
 
-    <!-- Klassen & TN -->
-    <div data-panel="tn">
+    <!-- ÜBERSICHT -->
+    <div data-panel="uebersicht">
+      <div class="kpis" id="kpis"></div>
+      <div class="raster">
+        <div class="karte"><h3>Klassen</h3><div class="kl-karten" id="klKarten"></div>
+          <div class="btnreihe" style="margin-top:12px"><button class="btn zwei klein" data-neueklasse>+ weitere Klasse</button></div></div>
+        <div class="karte"><h3>Letzte Aktivitäten</h3><ul class="feed" id="feed"></ul></div>
+      </div>
+      <div class="raster" style="margin-top:14px">
+        <div class="karte"><h3>🏆 Rangliste <span class="mini" id="rangKlasse"></span></h3><div id="rangliste"></div></div>
+        <div class="karte"><h3>👀 Braucht Aufmerksamkeit</h3><div id="achtung"></div></div>
+      </div>
+    </div>
+
+    <!-- TEILNEHMENDE -->
+    <div data-panel="tn" class="versteckt">
       <div class="karte" style="margin-bottom:14px">
         <div class="btnreihe" id="klassenChips"></div>
         <div class="btnreihe" style="margin-top:12px">
-          <button class="btn zwei klein" id="klasseNeu">+ Klasse</button>
-          <button class="btn zwei klein" id="klasseUmb">✏️ Klasse umbenennen</button>
-          <button class="btn zwei klein" id="klasseDel">🗑 Klasse löschen</button>
+          <button class="btn zwei klein" data-neueklasse>+ Klasse</button>
+          <button class="btn zwei klein" id="klasseUmb">✏️ umbenennen</button>
+          <button class="btn zwei klein" id="klasseDel">🗑 löschen</button>
         </div>
       </div>
       <div class="gitter2">
         <div class="karte">
-          <h3 style="margin-top:0">Teilnehmende hinzufügen</h3>
-          <p class="klein muted" style="margin-top:0">Ein Name pro Zeile. Die Codes werden automatisch erzeugt.</p>
-          <textarea class="feld" id="neueNamen" rows="5" placeholder="Anna&#10;Jonas&#10;Leyla"></textarea>
+          <h3>Teilnehmende hinzufügen</h3>
+          <p class="klein muted" style="margin-top:0">Ein Name pro Zeile – die Codes werden automatisch erzeugt.</p>
+          <textarea class="feld" id="neueNamen" rows="4" placeholder="Anna&#10;Jonas&#10;Leyla"></textarea>
           <div class="btnreihe" style="margin-top:10px"><button class="btn" id="tnAdd">Hinzufügen</button></div>
         </div>
         <div class="karte">
-          <h3 style="margin-top:0">Codes weitergeben</h3>
-          <p class="klein muted" style="margin-top:0">Zettel zum Ausschneiden drucken – oder pro Person den Text mit 📋 kopieren (z. B. für E-Mail oder Messenger).</p>
-          <div class="btnreihe"><button class="btn safran" id="druck">🖨 Code-Zettel drucken</button></div>
-          <p class="klein muted">Link für Studierende:<br><span class="code" id="linkTN" style="letter-spacing:0"></span></p>
+          <h3>Codes weitergeben</h3>
+          <p class="klein muted" style="margin-top:0">Mit QR-Code: Scannen öffnet den Lernpfad und meldet direkt an.</p>
+          <div class="btnreihe">
+            <button class="btn safran klein" id="druckZettel">🖨 Code-Zettel (2 pro Zeile)</button>
+            <button class="btn zwei klein" id="druckBriefe">📄 Anleitungen A4 (je Person)</button>
+          </div>
+          <p class="klein muted" style="margin-bottom:0">Link für alle: <span class="code" id="linkTN" style="letter-spacing:0;word-break:break-all"></span></p>
         </div>
       </div>
       <div class="karte" style="margin-top:14px">
+        <div class="kopfleiste"><h3 style="margin:0" id="tnTitel">Teilnehmende</h3><input class="feld suche" id="suche" placeholder="🔍 Suchen …"></div>
         <div class="tabelle-scroll"><table class="t" id="tnTabelle"></table></div>
       </div>
     </div>
 
-    <!-- Freigaben -->
+    <!-- FORTSCHRITT -->
+    <div data-panel="fort" class="versteckt">
+      <div class="karte" style="margin-bottom:14px">
+        <div class="btnreihe" id="fortChips"></div>
+        <div class="btnreihe" style="margin-top:12px">
+          <label class="klein">Sortieren:
+            <select class="feld" id="fortSort" style="width:auto;padding:4px 8px">
+              <option value="name">Name</option><option value="punkte">Punkte</option><option value="zuletzt">zuletzt aktiv</option>
+            </select></label>
+          <button class="btn zwei klein" id="csv">⬇ CSV (Excel)</button>
+        </div>
+      </div>
+      <div class="karte"><div class="tabelle-scroll"><table class="t" id="fortTabelle"></table></div>
+        <p class="mini" style="margin-bottom:0">Zelle = erledigte Stationen / alle · darunter Erfolgsquote. Antippen für Details.</p></div>
+      <div class="karte versteckt" id="detail" style="margin-top:14px"></div>
+    </div>
+
+    <!-- STATISTIK -->
+    <div data-panel="stat" class="versteckt">
+      <div class="karte" style="margin-bottom:14px">
+        <div class="btnreihe" id="statChips"></div>
+        <p class="klein muted" style="margin-bottom:0">Für jede Station: wie viele sie erledigt haben (türkis) und wie gut im Schnitt (blau). Stationen unter 70 % sind markiert – gut für die Wiederholung im Unterricht.</p>
+      </div>
+      <div id="statInhalt"></div>
+    </div>
+
+    <!-- LEKTIONEN / FREIGABEN -->
     <div data-panel="frei" class="versteckt">
       <div class="karte">
-        <h3 style="margin-top:0">Welche Lektion ist für welche Klasse offen?</h3>
-        <p class="klein muted" style="margin-top:0">„Standard“ folgt der Einstellung in <code>lektionen/index.json</code> (offen oder bald). Lektionen ohne Datei bleiben immer „in Vorbereitung“.</p>
+        <h3>Welche Lektion ist für welche Klasse offen?</h3>
+        <p class="klein muted" style="margin-top:0">„Standard“ folgt <code>lektionen/index.json</code>. Lektionen ohne Datei sind „in Vorbereitung“.</p>
         <div class="tabelle-scroll"><table class="t" id="freiTabelle"></table></div>
       </div>
     </div>
 
-    <!-- Fortschritt -->
-    <div data-panel="fort" class="versteckt">
-      <div class="karte" style="margin-bottom:14px">
-        <div class="btnreihe" id="fortChips"></div>
-        <div class="btnreihe" style="margin-top:12px"><button class="btn zwei klein" id="csv">⬇ CSV exportieren</button></div>
+    <!-- BACKUP -->
+    <div data-panel="backup" class="versteckt">
+      <div class="gitter2">
+        <div class="karte">
+          <h3>Backup herunterladen</h3>
+          <p class="klein muted" style="margin-top:0">Alle Klassen, Teilnehmenden, Codes, Freigaben und Ergebnisse als JSON-Datei.</p>
+          <button class="btn" id="bkDown">⬇ Backup speichern</button>
+          <p class="mini" id="bkLetzt"></p>
+        </div>
+        <div class="karte">
+          <h3>Backup einspielen</h3>
+          <p class="klein muted" style="margin-top:0">Ersetzt alle aktuellen Daten durch den Stand aus der Datei.</p>
+          <input type="file" id="bkDatei" accept=".json,application/json">
+          <div class="btnreihe" style="margin-top:10px"><button class="btn rot" id="bkUp">Einspielen</button></div>
+        </div>
       </div>
-      <div class="karte"><div class="tabelle-scroll"><table class="t" id="fortTabelle"></table></div></div>
-      <div class="karte versteckt" id="detail" style="margin-top:14px"></div>
     </div>
   </section>
 </main>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
@@ -98,28 +213,51 @@
   const F = window.FARSI, { $, $$, esc, toast } = F;
   const CODE_CHARS = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
   const D = { klassen:{}, tn:{}, freigabe:{}, fortschritt:{} };
+  const geladen = { klassen:false, tn:false, freigabe:false, fortschritt:false };
   let INDEX = { lektionen: [] }, LEKDATEN = {};
-  let aktKlasse = null, fortKlasse = null;
+  let aktKlasse = null, fortKlasse = null, statKlasse = "alle", aktTab = "uebersicht";
   const basisURL = () => location.href.replace(/[^/]*([?#].*)?$/, "");
+  const lernURL = code => basisURL() + "index.html" + (code ? "?code=" + code : "");
+  const TAG = 86400000;
 
   F.initFB();
   const auth = firebase.auth();
+
+  /* ---------- Fehler verständlich machen ---------- */
+  function regelFehler() {
+    const b = $("#regelBanner"); b.classList.remove("versteckt");
+    b.innerHTML = `<b>⚠️ Firebase lässt nicht zu.</b> Wahrscheinlich sind die Datenbank-Regeln noch nicht veröffentlicht.<br>
+      Firebase → <b>Realtime Database → Regeln</b> → Inhalt von <code>firebase-regeln.json</code> einfügen → <b>Veröffentlichen</b>. Danach diese Seite neu laden.`;
+  }
+  async function schreib(promise, okMsg) {
+    try { await promise; if (okMsg) toast(okMsg); return true; }
+    catch (e) {
+      console.error(e);
+      if (/permission|denied/i.test(e.code || e.message || "")) regelFehler();
+      else toast("Speichern fehlgeschlagen: " + (e.message || e));
+      return false;
+    }
+  }
 
   /* ---------- Login ---------- */
   $("#btnLogin").onclick = async () => {
     $("#loginMsg").textContent = "";
     try { await auth.signInWithEmailAndPassword($("#email").value.trim(), $("#pw").value); }
-    catch (e) { $("#loginMsg").textContent = "Anmeldung fehlgeschlagen: " + (e.code || e.message); }
+    catch (e) {
+      const m = { "auth/invalid-credential": "E-Mail oder Passwort stimmt nicht.", "auth/user-not-found": "Dieses Konto gibt es nicht – in Firebase → Authentication → Nutzer anlegen.", "auth/wrong-password": "Falsches Passwort.", "auth/operation-not-allowed": "E-Mail/Passwort ist in Firebase → Authentication noch nicht aktiviert.", "auth/unauthorized-domain": "Diese Domain ist nicht erlaubt: Firebase → Authentication → Einstellungen → Autorisierte Domains." };
+      $("#loginMsg").textContent = m[e.code] || ("Anmeldung fehlgeschlagen: " + (e.code || e.message));
+    }
   };
   $("#pw").addEventListener("keydown", e => { if (e.key === "Enter") $("#btnLogin").click(); });
   $("#btnLogout").onclick = () => auth.signOut();
 
   auth.onAuthStateChanged(async user => {
     $("#login").classList.toggle("versteckt", !!user);
-    $("#app").classList.toggle("versteckt", !user);
     $("#btnLogout").classList.toggle("versteckt", !user);
-    if (!user) return;
-    $("#linkTN").textContent = basisURL() + "index.html";
+    $("#nutzer").classList.toggle("versteckt", !user);
+    if (!user) { $("#app").classList.add("versteckt"); $("#onboard").classList.add("versteckt"); return; }
+    $("#nutzer").textContent = user.email || "";
+    $("#linkTN").textContent = lernURL();
     try {
       INDEX = await F.ladeJSON("lektionen/index.json");
       await Promise.all(INDEX.lektionen.filter(l => l.datei).map(async l => {
@@ -127,141 +265,348 @@
       }));
     } catch (e) { toast("Lektionsliste konnte nicht geladen werden."); }
     ["klassen", "tn", "freigabe", "fortschritt"].forEach(k => {
-      F.ref(k).on("value", s => { D[k] = s.val() || {}; neuZeichnen(); }, err => toast("Keine Leserechte für " + k + " – Regeln prüfen!"));
+      F.ref(k).on("value", s => { D[k] = s.val() || {}; geladen[k] = true; neuZeichnen(); }, () => regelFehler());
     });
   });
 
   /* ---------- Tabs ---------- */
-  $$(".tab").forEach(t => t.onclick = () => {
-    $$(".tab").forEach(x => x.classList.toggle("an", x === t));
-    $$("[data-panel]").forEach(p => p.classList.toggle("versteckt", p.dataset.panel !== t.dataset.tab));
-  });
-
-  /* ---------- Helfer ---------- */
-  const klassenListe = () => Object.entries(D.klassen).map(([id, k]) => ({ id, ...k })).sort((a, b) => (a.erstellt || 0) - (b.erstellt || 0));
-  const tnDerKlasse = kid => Object.entries(D.tn).filter(([c, t]) => t.klasse === kid).map(([code, t]) => ({ code, ...t })).sort((a, b) => a.name.localeCompare(b.name, "de"));
-  function neuerCode() {
-    let c; do { c = Array.from({ length: 5 }, () => CODE_CHARS[Math.floor(Math.random() * CODE_CHARS.length)]).join(""); } while (D.tn[c]);
-    return c;
+  $$(".tab[data-tab]").forEach(t => t.onclick = () => zeigeTab(t.dataset.tab));
+  function zeigeTab(name) {
+    aktTab = name;
+    $$(".tab[data-tab]").forEach(x => x.classList.toggle("an", x.dataset.tab === name));
+    $$("[data-panel]").forEach(p => p.classList.toggle("versteckt", p.dataset.panel !== name));
   }
-  const fmtTs = ts => { if (!ts) return "–"; const d = new Date(ts); const p = n => String(n).padStart(2, "0"); return `${p(d.getDate())}.${p(d.getMonth() + 1)}. ${p(d.getHours())}:${p(d.getMinutes())}`; };
-  const tnText = t => `Hallo ${t.name}!\n\nDein persönlicher Code für den Farsi-Lernpfad: ${t.code}\n\nSo geht's:\n1. Öffne ${basisURL()}index.html\n2. Gib deinen Code ein und tippe auf „Los“.\n3. Wähle eine Lektion und arbeite die Stationen der Reihe nach durch.\n\nDein Fortschritt wird automatisch gespeichert. Du kannst jede Station wiederholen – es zählt dein bestes Ergebnis.`;
 
-  function chips(el, aktiv, onPick) {
+  /* ---------- Daten-Helfer ---------- */
+  const klassenListe = () => Object.entries(D.klassen).map(([id, k]) => ({ id, ...k })).sort((a, b) => (a.erstellt || 0) - (b.erstellt || 0));
+  const tnListe = kid => Object.entries(D.tn).filter(([c, t]) => !kid || kid === "alle" || t.klasse === kid).map(([code, t]) => ({ code, ...t })).sort((a, b) => (a.name || "").localeCompare(b.name || "", "de"));
+  const offeneLek = () => INDEX.lektionen.filter(l => LEKDATEN[l.id]);
+  function neuerCode() { let c; do { c = Array.from({ length: 5 }, () => CODE_CHARS[Math.floor(Math.random() * CODE_CHARS.length)]).join(""); } while (D.tn[c]); return c; }
+  function tnStats(code) {
+    const f = D.fortschritt[code] || {};
+    let stationen = 0, p = 0, m = 0, zuletzt = (f._zuletzt && f._zuletzt.ts) || 0;
+    offeneLek().forEach(l => LEKDATEN[l.id].stationen.forEach(s => {
+      const e = (f[l.id] || {})[s.id]; if (e) { stationen++; p += e.p; m += e.m; zuletzt = Math.max(zuletzt, e.ts || 0); }
+    }));
+    return { stationen, p, m, quote: m ? p / m : null, zuletzt };
+  }
+  const gesamtStationen = () => offeneLek().reduce((a, l) => a + LEKDATEN[l.id].stationen.length, 0);
+  const pct = x => x == null ? "–" : Math.round(100 * x) + " %";
+  function vorZeit(ts) {
+    if (!ts) return "noch nie";
+    const d = Date.now() - ts, min = Math.round(d / 60000);
+    if (min < 2) return "gerade eben"; if (min < 60) return `vor ${min} Min.`;
+    const h = Math.round(min / 60); if (h < 24) return `vor ${h} Std.`;
+    const t = Math.round(h / 24); if (t < 30) return `vor ${t} Tag${t > 1 ? "en" : ""}`;
+    return new Date(ts).toLocaleDateString("de-DE");
+  }
+  const fmtTs = ts => ts ? new Date(ts).toLocaleString("de-DE", { day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit" }) : "–";
+  const klName = id => (D.klassen[id] || {}).name || "–";
+
+  function chips(el, aktiv, onPick, mitAlle) {
     const kl = klassenListe();
-    el.innerHTML = kl.length ? kl.map(k => `<button class="tab ${k.id === aktiv ? "an" : ""}" data-k="${k.id}">${esc(k.name)} <span class="muted klein">(${tnDerKlasse(k.id).length})</span></button>`).join("")
-      : `<span class="muted">Noch keine Klasse – lege zuerst eine an.</span>`;
+    el.innerHTML = (mitAlle ? `<button class="tab ${aktiv === "alle" ? "an" : ""}" data-k="alle">Alle <span class="anz">${tnListe().length}</span></button>` : "") +
+      kl.map(k => `<button class="tab ${k.id === aktiv ? "an" : ""}" data-k="${k.id}">${esc(k.name)} <span class="anz">${tnListe(k.id).length}</span></button>`).join("");
     $$("[data-k]", el).forEach(b => b.onclick = () => onPick(b.dataset.k));
   }
 
   function neuZeichnen() {
+    if (!geladen.klassen) return;
     const kl = klassenListe();
-    if (!aktKlasse || !D.klassen[aktKlasse]) aktKlasse = kl[0] ? kl[0].id : null;
+    $("#onboard").classList.toggle("versteckt", kl.length > 0);
+    $("#app").classList.toggle("versteckt", kl.length === 0);
+    if (!kl.length) { setTimeout(() => $("#obName").focus(), 50); return; }
+    if (!aktKlasse || !D.klassen[aktKlasse]) aktKlasse = kl[0].id;
     if (!fortKlasse || !D.klassen[fortKlasse]) fortKlasse = aktKlasse;
-    zeichneTN(); zeichneFrei(); zeichneFort();
+    if (statKlasse !== "alle" && !D.klassen[statKlasse]) statKlasse = "alle";
+    zeichneUebersicht(); zeichneTN(); zeichneFort(); zeichneStat(); zeichneFrei(); zeichneBackupInfo();
   }
 
-  /* ---------- Klassen ---------- */
-  $("#klasseNeu").onclick = async () => {
-    const name = prompt("Name der neuen Klasse (z. B. „Persisch A1 – Mo“):", kl2Vorschlag());
-    if (!name) return;
-    const id = "k" + Date.now().toString(36);
-    await F.ref("klassen/" + id).set({ name: name.trim(), erstellt: Date.now() });
-    aktKlasse = id; toast("Klasse angelegt.");
-  };
-  const kl2Vorschlag = () => "Klasse " + "ABCDEFG"[klassenListe().length] ;
-  $("#klasseUmb").onclick = async () => {
+  /* ---------- Klassen anlegen ---------- */
+  async function klasseAnlegen(name) {
+    name = (name || "").trim(); if (!name) return false;
+    const id = "k" + Date.now().toString(36) + Math.random().toString(36).slice(2, 5);
+    const ok = await schreib(F.ref("klassen/" + id).set({ name, erstellt: Date.now() }), "Klasse „" + name + "“ angelegt.");
+    if (ok) aktKlasse = id;
+    return ok;
+  }
+  $("#obAnlegen").onclick = async () => { if (!$("#obName").value.trim()) return $("#obMsg").textContent = "Bitte einen Namen eingeben."; if (await klasseAnlegen($("#obName").value)) { $("#obName").value = ""; zeigeTab("tn"); } };
+  $("#obName").addEventListener("keydown", e => { if (e.key === "Enter") $("#obAnlegen").click(); });
+  $("#obZwei").onclick = async () => { if (await klasseAnlegen("Klasse A")) { await klasseAnlegen("Klasse B"); zeigeTab("tn"); } };
+  $$("[data-neueklasse]").forEach(b => b.onclick = async () => {
+    const name = prompt("Name der neuen Klasse:", "Klasse " + "ABCDEFGHIJ"[klassenListe().length]);
+    if (name && await klasseAnlegen(name)) zeigeTab("tn");
+  });
+  $("#klasseUmb").onclick = () => {
     if (!aktKlasse) return;
-    const name = prompt("Neuer Name:", D.klassen[aktKlasse].name); if (!name) return;
-    await F.ref("klassen/" + aktKlasse + "/name").set(name.trim());
+    const name = prompt("Neuer Name:", klName(aktKlasse));
+    if (name) schreib(F.ref("klassen/" + aktKlasse + "/name").set(name.trim()));
   };
-  $("#klasseDel").onclick = async () => {
+  $("#klasseDel").onclick = () => {
     if (!aktKlasse) return;
-    if (tnDerKlasse(aktKlasse).length) return alert("Die Klasse hat noch Teilnehmende. Bitte zuerst löschen oder in eine andere Klasse verschieben.");
-    if (!confirm("Klasse „" + D.klassen[aktKlasse].name + "“ löschen?")) return;
-    await F.ref().update({ ["klassen/" + aktKlasse]: null, ["freigabe/" + aktKlasse]: null });
+    if (tnListe(aktKlasse).length) return alert("Die Klasse hat noch Teilnehmende. Bitte zuerst löschen oder in eine andere Klasse verschieben.");
+    if (!confirm("Klasse „" + klName(aktKlasse) + "“ löschen?")) return;
+    schreib(F.ref().update({ ["klassen/" + aktKlasse]: null, ["freigabe/" + aktKlasse]: null }), "Klasse gelöscht.");
   };
 
-  /* ---------- Teilnehmende ---------- */
+  /* ---------- ÜBERSICHT ---------- */
+  function zeichneUebersicht() {
+    const alle = tnListe(), aktive = alle.filter(t => t.aktiv !== false);
+    const st = aktive.map(t => ({ t, s: tnStats(t.code) }));
+    const woche = st.filter(x => Date.now() - x.s.zuletzt < 7 * TAG).length;
+    const heute = st.filter(x => Date.now() - x.s.zuletzt < TAG).length;
+    const summeSt = st.reduce((a, x) => a + x.s.stationen, 0);
+    const P = st.reduce((a, x) => a + x.s.p, 0), M = st.reduce((a, x) => a + x.s.m, 0);
+    const G = gesamtStationen();
+    $("#kpis").innerHTML = [
+      { z: aktive.length, l: "Teilnehmende", s: `${klassenListe().length} Klasse(n)` },
+      { z: woche, l: "aktiv in 7 Tagen", s: `heute: ${heute}` },
+      { z: summeSt, l: "Stationen erledigt", s: aktive.length && G ? `Ø ${Math.round(100 * summeSt / (aktive.length * G))} % des Angebots` : "" },
+      { z: M ? Math.round(100 * P / M) + " %" : "–", l: "Ø Erfolgsquote", s: "richtig beim ersten Versuch" }
+    ].map(k => `<div class="kpi"><div class="lab">${k.l}</div><div class="zahl">${k.z}</div><div class="sub">${k.s}</div></div>`).join("");
+
+    $("#klKarten").innerHTML = klassenListe().map(k => {
+      const tl = tnListe(k.id).filter(t => t.aktiv !== false), s = tl.map(t => tnStats(t.code));
+      const erl = s.reduce((a, x) => a + x.stationen, 0), prog = tl.length && G ? erl / (tl.length * G) : 0;
+      const akt = s.filter(x => Date.now() - x.zuletzt < 7 * TAG).length;
+      return `<div class="kl-karte"><div class="name">${esc(k.name)}</div>
+        <div class="mini">${tl.length} Teilnehmende · ${akt} aktiv (7 Tage)</div>
+        <div class="leiste" title="Ø Fortschritt"><i style="width:${Math.round(prog * 100)}%"></i></div>
+        <div class="mini">Ø Fortschritt ${Math.round(prog * 100)} %</div>
+        <div class="btnreihe"><button class="btn zwei klein" data-gehe="tn" data-kl="${k.id}">👥 Liste</button><button class="btn zwei klein" data-gehe="fort" data-kl="${k.id}">📊 Fortschritt</button></div></div>`;
+    }).join("");
+    $$("[data-gehe]", $("#klKarten")).forEach(b => b.onclick = () => { aktKlasse = fortKlasse = b.dataset.kl; neuZeichnen(); zeigeTab(b.dataset.gehe); });
+
+    // Aktivitäten
+    const ev = [];
+    Object.entries(D.fortschritt).forEach(([code, f]) => {
+      if (!D.tn[code]) return;
+      Object.entries(f).forEach(([lid, stn]) => {
+        if (lid.startsWith("_") || !LEKDATEN[lid]) return;
+        Object.entries(stn).forEach(([sid, e]) => {
+          const i = LEKDATEN[lid].stationen.findIndex(s => s.id === sid);
+          if (i >= 0) ev.push({ code, lid, i, e });
+        });
+      });
+    });
+    ev.sort((a, b) => (b.e.ts || 0) - (a.e.ts || 0));
+    $("#feed").innerHTML = ev.length ? ev.slice(0, 12).map(x => {
+      const t = D.tn[x.code], L = LEKDATEN[x.lid], q = x.e.m ? x.e.p / x.e.m : 1;
+      return `<li><span class="punkt">${Math.round(q * 100)}</span>
+        <span><b>${esc(t.name)}</b> <span class="dunkel">· ${esc(klName(t.klasse))}</span><br><span class="mini">L${esc(INDEX.lektionen.find(l => l.id === x.lid)?.nummer || "")} · Station ${x.i + 1}: ${esc(L.stationen[x.i].titel)} · ${x.e.p}/${x.e.m}</span></span>
+        <span class="zeit">${vorZeit(x.e.ts)}</span></li>`;
+    }).join("") : `<li class="muted">Noch keine Ergebnisse. Sobald jemand eine Station abschließt, erscheint sie hier.</li>`;
+
+    // Rangliste (aktuelle Klasse)
+    $("#rangKlasse").textContent = "· " + klName(aktKlasse);
+    const rang = tnListe(aktKlasse).filter(t => t.aktiv !== false).map(t => ({ t, s: tnStats(t.code) })).sort((a, b) => b.s.p - a.s.p || b.s.stationen - a.s.stationen);
+    $("#rangliste").innerHTML = rang.length ? `<table class="t">${rang.slice(0, 10).map((x, i) => `<tr><td class="rang">${["🥇", "🥈", "🥉"][i] || i + 1}</td><td><b>${esc(x.t.name)}</b></td><td class="mini">${x.s.stationen} Stationen</td><td style="text-align:right"><b>${x.s.p}</b> <span class="mini">Pkt.</span></td></tr>`).join("")}</table>`
+      : `<p class="muted">Noch niemand in dieser Klasse.</p>`;
+
+    // Aufmerksamkeit
+    const nie = st.filter(x => !x.s.zuletzt), lange = st.filter(x => x.s.zuletzt && Date.now() - x.s.zuletzt > 7 * TAG), schwach = st.filter(x => x.s.m >= 20 && x.s.quote < .6);
+    const block = (titel, arr, info) => arr.length ? `<p style="margin:.4em 0 .2em"><b>${titel}</b> <span class="chip">${arr.length}</span></p><div class="klein">${arr.map(x => `${esc(x.t.name)} <span class="mini">(${esc(klName(x.t.klasse))}${info ? ", " + info(x) : ""})</span>`).join(" · ")}</div>` : "";
+    const html = block("Noch nicht angefangen", nie) + block("Seit über 7 Tagen nicht aktiv", lange, x => vorZeit(x.s.zuletzt)) + block("Erfolgsquote unter 60 %", schwach, x => pct(x.s.quote));
+    $("#achtung").innerHTML = html || `<p class="muted">Alles im grünen Bereich 🌿</p>`;
+  }
+
+  /* ---------- TEILNEHMENDE ---------- */
   $("#tnAdd").onclick = async () => {
-    if (!aktKlasse) return alert("Bitte zuerst eine Klasse anlegen.");
     const namen = $("#neueNamen").value.split(/\n+/).map(s => s.trim()).filter(Boolean);
-    if (!namen.length) return;
+    if (!namen.length) return toast("Bitte mindestens einen Namen eingeben.");
     const upd = {};
     namen.forEach(n => { const c = neuerCode(); D.tn[c] = { name: n, klasse: aktKlasse, aktiv: true }; upd["tn/" + c] = { name: n, klasse: aktKlasse, aktiv: true, erstellt: Date.now() }; });
-    await F.ref().update(upd);
-    $("#neueNamen").value = ""; toast(namen.length + " Person(en) hinzugefügt.");
+    if (await schreib(F.ref().update(upd), namen.length + " Person(en) hinzugefügt – Codes sind erstellt.")) $("#neueNamen").value = "";
   };
+  $("#suche").addEventListener("input", zeichneTN);
 
   function zeichneTN() {
     chips($("#klassenChips"), aktKlasse, k => { aktKlasse = k; neuZeichnen(); });
+    const q = $("#suche").value.trim().toLowerCase();
+    const liste = tnListe(aktKlasse).filter(t => !q || t.name.toLowerCase().includes(q) || t.code.toLowerCase().includes(q));
+    $("#tnTitel").textContent = `${klName(aktKlasse)} · ${tnListe(aktKlasse).length} Teilnehmende`;
+    const kl = klassenListe(), G = gesamtStationen();
     const tab = $("#tnTabelle");
-    if (!aktKlasse) { tab.innerHTML = ""; return; }
-    const liste = tnDerKlasse(aktKlasse);
-    const kl = klassenListe();
-    tab.innerHTML = `<tr><th>Name</th><th>Code</th><th>Klasse</th><th>Aktiv</th><th>Zuletzt</th><th></th></tr>` +
+    tab.innerHTML = `<tr><th>Name</th><th>Code</th><th>Fortschritt</th><th>Zuletzt</th><th>Klasse</th><th>Aktiv</th><th></th></tr>` +
       (liste.length ? liste.map(t => {
-        const z = (D.fortschritt[t.code] || {})._zuletzt;
-        return `<tr data-c="${t.code}">
+        const s = tnStats(t.code);
+        return `<tr data-c="${t.code}" class="${t.aktiv === false ? "inaktiv" : ""}">
           <td><b>${esc(t.name)}</b></td>
           <td><span class="code">${t.code}</span></td>
+          <td style="min-width:120px"><div class="leiste" style="margin:0"><i style="width:${G ? Math.round(100 * s.stationen / G) : 0}%"></i></div><span class="mini">${s.stationen}/${G} · ${pct(s.quote)}</span></td>
+          <td class="mini">${vorZeit(s.zuletzt)}</td>
           <td><select class="feld" style="padding:4px 8px;width:auto" data-act="klasse">${kl.map(k => `<option value="${k.id}" ${k.id === t.klasse ? "selected" : ""}>${esc(k.name)}</option>`).join("")}</select></td>
-          <td><input type="checkbox" data-act="aktiv" ${t.aktiv !== false ? "checked" : ""}></td>
-          <td class="klein muted">${fmtTs(z && z.ts)}</td>
+          <td><input type="checkbox" data-act="aktiv" ${t.aktiv !== false ? "checked" : ""} title="Inaktive können sich nicht anmelden"></td>
           <td style="white-space:nowrap">
-            <button class="btn zwei klein" data-act="kopie" title="Anleitung kopieren">📋</button>
+            <button class="btn zwei klein" data-act="anl" title="Anleitung / QR">📨</button>
             <button class="btn zwei klein" data-act="name" title="Umbenennen">✏️</button>
             <button class="btn zwei klein" data-act="code" title="Neuer Code">🔄</button>
             <button class="btn zwei klein" data-act="del" title="Löschen">🗑</button>
           </td></tr>`;
-      }).join("") : `<tr><td colspan="6" class="muted">Noch niemand in dieser Klasse.</td></tr>`);
+      }).join("") : `<tr><td colspan="7" class="muted">${q ? "Keine Treffer." : "Noch niemand in dieser Klasse – oben Namen eintragen."}</td></tr>`);
     $$("tr[data-c]", tab).forEach(tr => {
       const code = tr.dataset.c, t = D.tn[code];
-      tr.querySelector('[data-act="aktiv"]').onchange = e => F.ref("tn/" + code + "/aktiv").set(e.target.checked);
-      tr.querySelector('[data-act="klasse"]').onchange = e => F.ref("tn/" + code + "/klasse").set(e.target.value);
-      tr.querySelector('[data-act="kopie"]').onclick = async () => {
-        try { await navigator.clipboard.writeText(tnText({ ...t, code })); toast("Anleitung für " + t.name + " kopiert."); }
-        catch (e) { prompt("Zum Kopieren:", tnText({ ...t, code })); }
-      };
-      tr.querySelector('[data-act="name"]').onclick = () => { const n = prompt("Neuer Name:", t.name); if (n) F.ref("tn/" + code + "/name").set(n.trim()); };
+      tr.querySelector('[data-act="aktiv"]').onchange = e => schreib(F.ref("tn/" + code + "/aktiv").set(e.target.checked));
+      tr.querySelector('[data-act="klasse"]').onchange = e => schreib(F.ref("tn/" + code + "/klasse").set(e.target.value), t.name + " → " + klName(e.target.value));
+      tr.querySelector('[data-act="anl"]').onclick = () => anleitung({ ...t, code });
+      tr.querySelector('[data-act="name"]').onclick = () => { const n = prompt("Neuer Name:", t.name); if (n) schreib(F.ref("tn/" + code + "/name").set(n.trim())); };
       tr.querySelector('[data-act="code"]').onclick = async () => {
-        let neu = prompt("Neuer Code für " + t.name + " (leer lassen = automatisch):", "");
+        let neu = prompt("Neuer Code für " + t.name + " (leer = automatisch):", "");
         if (neu === null) return;
         neu = F.normCode(neu) || neuerCode();
         if (neu.length < 4) return alert("Mindestens 4 Zeichen.");
         if (D.tn[neu]) return alert("Diesen Code gibt es schon.");
-        await F.ref().update({ ["tn/" + neu]: { ...t }, ["tn/" + code]: null, ["fortschritt/" + neu]: D.fortschritt[code] || null, ["fortschritt/" + code]: null });
-        toast("Neuer Code: " + neu + " – der Fortschritt wurde übernommen.");
+        schreib(F.ref().update({ ["tn/" + neu]: { ...t }, ["tn/" + code]: null, ["fortschritt/" + neu]: D.fortschritt[code] || null, ["fortschritt/" + code]: null }), "Neuer Code: " + neu + " – Fortschritt übernommen.");
       };
-      tr.querySelector('[data-act="del"]').onclick = async () => {
+      tr.querySelector('[data-act="del"]').onclick = () => {
         if (!confirm(t.name + " und den gesamten Fortschritt löschen?")) return;
-        await F.ref().update({ ["tn/" + code]: null, ["fortschritt/" + code]: null });
+        schreib(F.ref().update({ ["tn/" + code]: null, ["fortschritt/" + code]: null }), t.name + " gelöscht.");
       };
     });
   }
 
-  $("#druck").onclick = () => {
-    if (!aktKlasse) return;
-    const liste = tnDerKlasse(aktKlasse), url = basisURL() + "index.html";
+  /* Anleitung / QR */
+  const qrSvg = (text, zelle = 4) => { try { const q = qrcode(0, "M"); q.addData(text); q.make(); return q.createSvgTag(zelle, 0); } catch (e) { return ""; } };
+  const tnText = t => `Hallo ${t.name}!\n\nDein persönlicher Code für den Farsi-Lernpfad: ${t.code}\n\nSo geht's:\n1. Öffne ${lernURL()}\n   (oder direkt angemeldet: ${lernURL(t.code)})\n2. Gib deinen Code ein und tippe auf „Los“.\n3. Wähle eine Lektion und arbeite die Stationen der Reihe nach durch.\n\nDein Fortschritt wird automatisch gespeichert. Jede Station kannst du wiederholen – es zählt dein bestes Ergebnis.`;
+  function anleitung(t) {
+    const m = document.createElement("div"); m.className = "modal";
+    m.innerHTML = `<div class="karte">
+      <div class="st-titel"><h3 style="margin:0">Anleitung für ${esc(t.name)}</h3><button class="btn zwei klein" data-zu>✕</button></div>
+      <div style="display:flex;gap:16px;flex-wrap:wrap;margin-top:12px;align-items:flex-start">
+        <div style="text-align:center">${qrSvg(lernURL(t.code), 5)}<div class="mini">scannen = direkt angemeldet</div></div>
+        <textarea class="feld" readonly style="flex:1;min-width:240px">${esc(tnText(t))}</textarea>
+      </div>
+      <div class="btnreihe" style="margin-top:12px">
+        <button class="btn" data-kopie>📋 Text kopieren</button>
+        <a class="btn zwei" style="text-decoration:none" target="_blank" href="https://wa.me/?text=${encodeURIComponent(tnText(t))}">WhatsApp</a>
+        <a class="btn zwei" style="text-decoration:none" href="mailto:?subject=${encodeURIComponent("Dein Code für den Farsi-Lernpfad")}&body=${encodeURIComponent(tnText(t))}">E-Mail</a>
+        <button class="btn safran" data-druck>🖨 als Brief drucken</button>
+      </div></div>`;
+    document.body.appendChild(m);
+    m.addEventListener("click", e => { if (e.target === m || e.target.hasAttribute("data-zu")) m.remove(); });
+    m.querySelector("[data-kopie]").onclick = async () => { try { await navigator.clipboard.writeText(tnText(t)); toast("Kopiert."); } catch (e) { m.querySelector("textarea").select(); } };
+    m.querySelector("[data-druck]").onclick = () => druckeBriefe([t]);
+  }
+
+  function druckFenster(titel, body, css) {
     const w = window.open("", "_blank");
-    if (!w) return alert("Bitte Pop-ups erlauben.");
-    w.document.write(`<!DOCTYPE html><html lang="de"><head><meta charset="utf-8"><title>Codes – ${esc(D.klassen[aktKlasse].name)}</title>
+    if (!w) return alert("Bitte Pop-ups für diese Seite erlauben.");
+    w.document.write(`<!DOCTYPE html><html lang="de"><head><meta charset="utf-8"><title>${esc(titel)}</title>
       <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&family=Vazirmatn:wght@800&display=swap" rel="stylesheet">
-      <style>body{font-family:Nunito,sans-serif;margin:12mm}.g{display:grid;grid-template-columns:1fr 1fr;gap:0}
-      .z{border:1px dashed #999;padding:10px 14px;break-inside:avoid}.fa{font-family:Vazirmatn;font-size:20px;color:#1F4E8C}
-      .c{font-family:monospace;font-size:26px;font-weight:800;letter-spacing:.15em}.k{font-size:11px;color:#555}</style></head><body>
-      <h3>Farsi-Lernpfad · ${esc(D.klassen[aktKlasse].name)}</h3><div class="g">
-      ${liste.map(t => `<div class="z"><div class="fa">سَلام ${esc(t.name)}!</div><div>Dein Code:</div><div class="c">${t.code}</div><div class="k">${esc(url)}</div></div>`).join("")}
-      </div><script>setTimeout(()=>print(),600)<\/script></body></html>`);
+      <style>body{font-family:Nunito,sans-serif;margin:0;color:#1E2A44}.fa{font-family:Vazirmatn;color:#1F4E8C}.c{font-family:monospace;font-weight:800;letter-spacing:.15em}${css}</style></head>
+      <body>${body}<script>setTimeout(()=>print(),700)<\/script></body></html>`);
     w.document.close();
+  }
+  $("#druckZettel").onclick = () => {
+    const liste = tnListe(aktKlasse).filter(t => t.aktiv !== false);
+    if (!liste.length) return toast("Keine aktiven Teilnehmenden in dieser Klasse.");
+    druckFenster("Codes – " + klName(aktKlasse),
+      `<h3 style="margin:10mm 10mm 4mm">Farsi-Lernpfad · ${esc(klName(aktKlasse))}</h3><div class="g">${liste.map(t => `
+        <div class="z"><div>${qrSvg(lernURL(t.code), 3)}</div><div><div class="fa" style="font-size:18px">سَلام ${esc(t.name)}!</div>
+        <div style="font-size:12px">Dein Code:</div><div class="c" style="font-size:24px">${t.code}</div>
+        <div style="font-size:10px;color:#555;word-break:break-all">${esc(lernURL())}</div></div></div>`).join("")}</div>`,
+      `.g{display:grid;grid-template-columns:1fr 1fr;margin:0 10mm}.z{border:1px dashed #999;padding:10px;display:flex;gap:12px;align-items:center;break-inside:avoid}`);
+  };
+  $("#druckBriefe").onclick = () => {
+    const liste = tnListe(aktKlasse).filter(t => t.aktiv !== false);
+    if (!liste.length) return toast("Keine aktiven Teilnehmenden in dieser Klasse.");
+    druckeBriefe(liste);
+  };
+  function druckeBriefe(liste) {
+    druckFenster("Anleitungen", liste.map(t => `<section class="s">
+      <div class="fa" style="font-size:30px">سَلام ${esc(t.name)}!</div>
+      <h1>Willkommen im Farsi-Lernpfad</h1>
+      <p>Hier lernst du Schritt für Schritt die persische Schrift und Sprache – am Handy, Tablet oder Computer.</p>
+      <div class="box"><div>${qrSvg(lernURL(t.code), 5)}</div>
+        <div><div style="font-size:14px">Dein persönlicher Code</div><div class="c" style="font-size:40px">${t.code}</div>
+        <div style="font-size:12px;color:#555">Klasse: ${esc(klName(t.klasse))}</div></div></div>
+      <h2>So geht's</h2>
+      <ol><li><b>QR-Code scannen</b> – du bist sofort angemeldet.<br>Oder öffne <b>${esc(lernURL())}</b> und gib deinen Code ein.</li>
+      <li>Wähle <b>Lektion 1</b> und arbeite die <b>Stationen</b> der Reihe nach durch.</li>
+      <li>Tippe auf persische Wörter, um sie zu hören (🔊). Mit <b>abc</b> blendest du die Umschrift aus.</li>
+      <li>Dein Fortschritt wird <b>automatisch gespeichert</b>. Du kannst jede Station wiederholen – es zählt dein bestes Ergebnis.</li></ol>
+      <p style="font-size:13px;color:#555">Gib deinen Code nicht weiter – er ist nur für dich.</p></section>`).join(""),
+      `.s{padding:18mm;min-height:250mm;page-break-after:always}h1{margin:4px 0 8px}h2{margin-top:22px}.box{display:flex;gap:22px;align-items:center;border:2px solid #1F4E8C;border-radius:14px;padding:16px;margin:18px 0}li{margin:8px 0;line-height:1.5}`);
+  }
+
+  /* ---------- FORTSCHRITT ---------- */
+  $("#fortSort").onchange = zeichneFort;
+  function zeichneFort() {
+    chips($("#fortChips"), fortKlasse, k => { fortKlasse = k; $("#detail").classList.add("versteckt"); zeichneFort(); });
+    const tab = $("#fortTabelle"), lek = offeneLek();
+    const sort = $("#fortSort").value;
+    const liste = tnListe(fortKlasse).map(t => ({ t, s: tnStats(t.code) }))
+      .sort((a, b) => sort === "punkte" ? b.s.p - a.s.p : sort === "zuletzt" ? b.s.zuletzt - a.s.zuletzt : 0);
+    tab.innerHTML = `<tr><th>Name</th>${lek.map(l => `<th>L${l.nummer}<br><span style="text-transform:none;font-weight:400">${esc(l.titel)}</span></th>`).join("")}<th>Punkte</th><th>Zuletzt</th></tr>` +
+      (liste.length ? liste.map(({ t, s }) => {
+        const f = D.fortschritt[t.code] || {};
+        return `<tr class="${t.aktiv === false ? "inaktiv" : ""}"><td><b>${esc(t.name)}</b></td>${lek.map(l => {
+          const st = LEKDATEN[l.id].stationen, fl = f[l.id] || {};
+          const fertig = st.filter(x => fl[x.id]).length;
+          const p = st.reduce((a, x) => a + (fl[x.id] ? fl[x.id].p : 0), 0), m = st.reduce((a, x) => a + (fl[x.id] ? fl[x.id].m : 0), 0);
+          const q = fertig / st.length;
+          const bg = fertig === 0 ? "var(--papier2)" : q >= 1 ? "var(--gruen-hell)" : "var(--safran-hell)";
+          return `<td><button class="zelle" style="background:${bg};border:0" data-c="${t.code}" data-l="${l.id}">${fertig}/${st.length}<br><span class="klein" style="font-weight:400">${m ? Math.round(100 * p / m) + " %" : "–"}</span></button></td>`;
+        }).join("")}<td><b>${s.p}</b></td><td class="mini">${vorZeit(s.zuletzt)}</td></tr>`;
+      }).join("") : `<tr><td class="muted">Noch niemand in dieser Klasse.</td></tr>`);
+    $$("button[data-l]", tab).forEach(b => b.onclick = () => detail(b.dataset.c, b.dataset.l));
+  }
+  function detail(code, lid) {
+    const t = D.tn[code], L = LEKDATEN[lid], fl = ((D.fortschritt[code] || {})[lid]) || {};
+    const el = $("#detail"); el.classList.remove("versteckt");
+    el.innerHTML = `<div class="st-titel"><h3 style="margin:0">${esc(t.name)} · ${esc(L.titel)}</h3>
+      <button class="btn rot klein" id="reset">Diese Lektion zurücksetzen</button></div>
+      ${L.stationen.map((s, i) => { const e = fl[s.id], q = e && e.m ? e.p / e.m : null; return `<div class="balken"><span>${i + 1}. ${esc(s.titel)}</span>
+        <div class="spur quote" title="${e ? e.p + " von " + e.m + " Punkten" : "noch nicht gemacht"}"><i style="width:${q == null ? 0 : Math.round(q * 100)}%"></i></div>
+        <span class="mini">${e ? `${e.p}/${e.m}<br>${fmtTs(e.ts)}` : "–"}</span></div>`; }).join("")}`;
+    $("#reset").onclick = () => { if (confirm("Fortschritt von " + t.name + " in dieser Lektion wirklich löschen?")) { schreib(F.ref(`fortschritt/${code}/${lid}`).remove(), "Zurückgesetzt."); el.classList.add("versteckt"); } };
+    el.scrollIntoView({ behavior: "smooth" });
+  }
+  $("#csv").onclick = () => {
+    const lek = offeneLek();
+    const kopf = ["Name", "Code", "Klasse"]; lek.forEach(l => LEKDATEN[l.id].stationen.forEach((s, i) => kopf.push(`L${l.nummer} S${i + 1} ${s.titel}`)));
+    kopf.push("Punkte gesamt", "zuletzt aktiv");
+    const zeilen = [kopf];
+    tnListe(fortKlasse).forEach(t => {
+      const f = D.fortschritt[t.code] || {}, s = tnStats(t.code), z = [t.name, t.code, klName(t.klasse)];
+      lek.forEach(l => LEKDATEN[l.id].stationen.forEach(st => { const e = (f[l.id] || {})[st.id]; z.push(e ? `${e.p}/${e.m}` : ""); }));
+      z.push(s.p, s.zuletzt ? new Date(s.zuletzt).toLocaleString("de-DE") : "");
+      zeilen.push(z);
+    });
+    const csv = "\uFEFF" + zeilen.map(r => r.map(c => `"${String(c).replace(/"/g, '""')}"`).join(";")).join("\n");
+    herunterladen(csv, "farsi-fortschritt-" + klName(fortKlasse).replace(/\W+/g, "_") + ".csv", "text/csv;charset=utf-8");
   };
 
-  /* ---------- Freigaben ---------- */
+  /* ---------- STATISTIK ---------- */
+  function zeichneStat() {
+    chips($("#statChips"), statKlasse, k => { statKlasse = k; zeichneStat(); }, true);
+    const tl = tnListe(statKlasse).filter(t => t.aktiv !== false);
+    const out = offeneLek().map(l => {
+      const L = LEKDATEN[l.id];
+      const zeilen = L.stationen.map((s, i) => {
+        const es = tl.map(t => ((D.fortschritt[t.code] || {})[l.id] || {})[s.id]).filter(Boolean);
+        const P = es.reduce((a, e) => a + e.p, 0), M = es.reduce((a, e) => a + e.m, 0), q = M ? P / M : null;
+        const anteil = tl.length ? es.length / tl.length : 0;
+        return `<div class="balken"><span>${i + 1}. ${esc(s.titel)} ${q != null && q < .7 ? `<span class="warn">schwer</span>` : ""}</span>
+          <div style="display:grid;gap:4px">
+            <div class="spur" title="${es.length} von ${tl.length} haben die Station erledigt"><i style="width:${Math.round(anteil * 100)}%"></i></div>
+            <div class="spur quote" title="Ø ${pct(q)} richtig"><i style="width:${q == null ? 0 : Math.round(q * 100)}%"></i></div>
+          </div>
+          <span class="mini">${es.length}/${tl.length}<br>Ø ${pct(q)}</span></div>`;
+      }).join("");
+      return `<div class="karte" style="margin-bottom:14px"><h3>Lektion ${l.nummer}: ${esc(l.titel)}</h3>
+        <div class="mini" style="margin-bottom:6px"><span style="display:inline-block;width:10px;height:10px;border-radius:3px;background:var(--tuerkis)"></span> erledigt &nbsp; <span style="display:inline-block;width:10px;height:10px;border-radius:3px;background:var(--lapis)"></span> Ø Erfolgsquote</div>
+        ${zeilen}</div>`;
+    }).join("");
+    $("#statInhalt").innerHTML = tl.length ? out : `<div class="karte muted">Noch keine Teilnehmenden in dieser Auswahl.</div>`;
+  }
+
+  /* ---------- FREIGABEN ---------- */
   function zeichneFrei() {
     const kl = klassenListe(), tab = $("#freiTabelle");
-    if (!kl.length) { tab.innerHTML = `<tr><td class="muted">Noch keine Klasse.</td></tr>`; return; }
-    tab.innerHTML = `<tr><th>Lektion</th>${kl.map(k => `<th>${esc(k.name)}</th>`).join("")}</tr>` +
-      INDEX.lektionen.map(l => `<tr><td><b>${l.nummer}. ${esc(l.titel)}</b><br><span class="klein muted">Standard: ${l.datei ? (l.standard === "offen" ? "offen" : "gesperrt") : "in Vorbereitung"}</span></td>
+    tab.innerHTML = `<tr><th>Lektion</th><th>Stationen</th>${kl.map(k => `<th>${esc(k.name)}</th>`).join("")}</tr>` +
+      INDEX.lektionen.map(l => `<tr><td><b>${l.nummer}. ${esc(l.titel)}</b><br><span class="mini">Standard: ${l.datei ? (l.standard === "offen" ? "offen" : "gesperrt") : "in Vorbereitung"}</span></td>
+        <td class="mini">${LEKDATEN[l.id] ? LEKDATEN[l.id].stationen.length : "–"}</td>
         ${kl.map(k => {
           const v = (D.freigabe[k.id] || {})[l.id];
           const wert = v === true ? "an" : v === false ? "aus" : "std";
@@ -272,58 +617,32 @@
         }).join("")}</tr>`).join("");
     $$("select[data-l]", tab).forEach(s => s.onchange = () => {
       const v = s.value === "an" ? true : s.value === "aus" ? false : null;
-      F.ref(`freigabe/${s.dataset.k}/${s.dataset.l}`).set(v);
+      schreib(F.ref(`freigabe/${s.dataset.k}/${s.dataset.l}`).set(v), "Freigabe gespeichert.");
     });
   }
 
-  /* ---------- Fortschritt ---------- */
-  function zeichneFort() {
-    chips($("#fortChips"), fortKlasse, k => { fortKlasse = k; $("#detail").classList.add("versteckt"); zeichneFort(); });
-    const tab = $("#fortTabelle");
-    if (!fortKlasse) { tab.innerHTML = ""; return; }
-    const lek = INDEX.lektionen.filter(l => LEKDATEN[l.id]);
-    const liste = tnDerKlasse(fortKlasse);
-    tab.innerHTML = `<tr><th>Name</th>${lek.map(l => `<th>L${l.nummer}<br><span style="text-transform:none;font-weight:400">${esc(l.titel)}</span></th>`).join("")}<th>Zuletzt</th></tr>` +
-      (liste.length ? liste.map(t => {
-        const f = D.fortschritt[t.code] || {};
-        return `<tr><td><b>${esc(t.name)}</b>${t.aktiv === false ? ` <span class="chip">inaktiv</span>` : ""}</td>${lek.map(l => {
-          const st = LEKDATEN[l.id].stationen, fl = f[l.id] || {};
-          const fertig = st.filter(s => fl[s.id]).length;
-          const p = st.reduce((a, s) => a + (fl[s.id] ? fl[s.id].p : 0), 0), m = st.reduce((a, s) => a + (fl[s.id] ? fl[s.id].m : 0), 0);
-          const q = fertig / st.length;
-          const bg = fertig === 0 ? "var(--papier2)" : q >= 1 ? "var(--gruen-hell)" : "var(--safran-hell)";
-          return `<td><button class="zelle" style="background:${bg};border:0" data-c="${t.code}" data-l="${l.id}">${fertig}/${st.length}<br><span class="klein" style="font-weight:400">${m ? Math.round(100 * p / m) + " %" : "–"}</span></button></td>`;
-        }).join("")}<td class="klein muted">${fmtTs(f._zuletzt && f._zuletzt.ts)}</td></tr>`;
-      }).join("") : `<tr><td class="muted">Noch niemand in dieser Klasse.</td></tr>`);
-    $$("button[data-l]", tab).forEach(b => b.onclick = () => detail(b.dataset.c, b.dataset.l));
-  }
-
-  function detail(code, lid) {
-    const t = D.tn[code], L = LEKDATEN[lid], fl = ((D.fortschritt[code] || {})[lid]) || {};
-    const el = $("#detail"); el.classList.remove("versteckt");
-    el.innerHTML = `<div class="st-titel"><h3 style="margin:0">${esc(t.name)} · ${esc(L.titel)}</h3>
-      <button class="btn rot klein" id="reset">Fortschritt dieser Lektion zurücksetzen</button></div>
-      <table class="t" style="margin-top:10px"><tr><th>Station</th><th>Punkte</th><th>Datum</th></tr>
-      ${L.stationen.map((s, i) => { const e = fl[s.id]; return `<tr><td>${i + 1}. ${esc(s.titel)}</td><td>${e ? `${e.p} / ${e.m}` : "–"}</td><td class="klein muted">${e ? fmtTs(e.ts) : ""}</td></tr>`; }).join("")}</table>`;
-    $("#reset").onclick = () => { if (confirm("Wirklich zurücksetzen?")) { F.ref(`fortschritt/${code}/${lid}`).remove(); el.classList.add("versteckt"); } };
-    el.scrollIntoView({ behavior: "smooth" });
-  }
-
-  $("#csv").onclick = () => {
-    if (!fortKlasse) return;
-    const lek = INDEX.lektionen.filter(l => LEKDATEN[l.id]);
-    const kopf = ["Name", "Code"]; lek.forEach(l => L_(l).forEach(s => kopf.push(`L${l.nummer} ${s.titel}`)));
-    function L_(l) { return LEKDATEN[l.id].stationen; }
-    const zeilen = [kopf];
-    tnDerKlasse(fortKlasse).forEach(t => {
-      const f = D.fortschritt[t.code] || {}, z = [t.name, t.code];
-      lek.forEach(l => L_(l).forEach(s => { const e = (f[l.id] || {})[s.id]; z.push(e ? `${e.p}/${e.m}` : ""); }));
-      zeilen.push(z);
-    });
-    const csv = "\uFEFF" + zeilen.map(r => r.map(c => `"${String(c).replace(/"/g, '""')}"`).join(";")).join("\n");
+  /* ---------- BACKUP ---------- */
+  function herunterladen(inhalt, name, typ) {
     const a = document.createElement("a");
-    a.href = URL.createObjectURL(new Blob([csv], { type: "text/csv;charset=utf-8" }));
-    a.download = "farsi-fortschritt-" + D.klassen[fortKlasse].name.replace(/\W+/g, "_") + ".csv"; a.click();
+    a.href = URL.createObjectURL(new Blob([inhalt], { type: typ })); a.download = name; a.click();
+  }
+  function zeichneBackupInfo() {
+    let t = null; try { t = +localStorage.getItem("farsi_konsole_backup") || null; } catch (e) { }
+    $("#bkLetzt").textContent = t ? "Letztes Backup von diesem Gerät: " + new Date(t).toLocaleString("de-DE") : "Auf diesem Gerät noch kein Backup gespeichert.";
+  }
+  $("#bkDown").onclick = () => {
+    const d = new Date(), p = n => String(n).padStart(2, "0");
+    herunterladen(JSON.stringify({ farsiBackup: 1, erstellt: d.toISOString(), daten: D }, null, 1), `farsi-backup-${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())}.json`, "application/json");
+    try { localStorage.setItem("farsi_konsole_backup", Date.now()); } catch (e) { }
+    zeichneBackupInfo();
+  };
+  $("#bkUp").onclick = async () => {
+    const f = $("#bkDatei").files[0]; if (!f) return toast("Bitte zuerst eine Backup-Datei wählen.");
+    let j; try { j = JSON.parse(await f.text()); } catch (e) { return alert("Die Datei ist kein gültiges Backup."); }
+    if (!j.farsiBackup || !j.daten) return alert("Die Datei ist kein Farsi-Backup.");
+    if (!confirm(`Backup vom ${new Date(j.erstellt).toLocaleString("de-DE")} einspielen? Alle aktuellen Daten werden ersetzt.`)) return;
+    const d = j.daten;
+    schreib(F.ref().update({ klassen: d.klassen || null, tn: d.tn || null, freigabe: d.freigabe || null, fortschritt: d.fortschritt || null }), "Backup eingespielt.");
   };
 })();
 </script>

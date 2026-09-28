@@ -124,7 +124,15 @@
   });
   $("#gastLink").addEventListener("click", e => { e.preventDefault(); setGast(true); zeige(); });
   $("#abmelden").addEventListener("click", () => { F.abmelden(); setGast(false); zeige(); });
-  zeige();
+
+  /* Anmeldung per Link/QR-Code: index.html?code=XXXXX */
+  const qcode = new URLSearchParams(location.search).get("code");
+  if (qcode) {
+    history.replaceState(null, "", location.pathname);
+    $("#codeFeld").value = F.normCode(qcode);
+    zeige();
+    $("#loginForm").dispatchEvent(new Event("submit", { cancelable: true }));
+  } else zeige();
 })();
 </script>
 <script data-goatcounter="https://aguitoo.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
