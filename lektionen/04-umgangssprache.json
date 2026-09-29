@@ -1,0 +1,192 @@
+{
+ "id": "ug",
+ "art": "umgangssprache",
+ "titel": "Umgangssprache: So spricht man im Alltag",
+ "beschreibung": "Freiwilliger Extra-Teil: mögen und Essen im Gespräch.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "So spricht man: mögen",
+   "vorschau": "دوس دارَم",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Schrift ≠ Gespräch",
+     "text": "<ul><li><span class='fa'>دوست → دوس</span> <i>dūs</i> – das t verschwindet im Gespräch</li><li><span class='fa'>دارَد → داره</span> <i>dāre</i></li><li><span class='fa'>چه → چی</span> <i>tschī</i> – was?</li><li><span class='fa'>خوشمَزه اَست → خوشمَزه‌س</span> <i>choschmazas</i> – ist lecker</li></ul>",
+     "stil": "merke"
+    },
+    {
+     "typ": "paare",
+     "links": "x",
+     "paare": [
+      {
+       "fa": "دوست دارَم",
+       "tr": "dūst dāram",
+       "de": "ich mag",
+       "x": "دوس دارَم"
+      },
+      {
+       "fa": "دوست دارَد",
+       "tr": "dūst dārad",
+       "de": "er/sie mag",
+       "x": "دوس داره"
+      },
+      {
+       "fa": "چه",
+       "tr": "tsche",
+       "de": "was",
+       "x": "چی"
+      },
+      {
+       "fa": "خوشمَزه اَست",
+       "tr": "choschmaze ast",
+       "de": "es ist lecker",
+       "x": "خوشمَزه‌س"
+      },
+      {
+       "fa": "دوست نَدارید",
+       "tr": "dūst nadārīd",
+       "de": "ihr mögt nicht",
+       "x": "دوس نَدارین"
+      }
+     ],
+     "titel": "Schrift ↔ Gespräch"
+    },
+    {
+     "typ": "sortieren",
+     "titel": "Schrift oder Gespräch?",
+     "frage": "Schriftsprache oder Umgangssprache?",
+     "kategorien": [
+      "✍️ Schriftsprache",
+      "🗣️ Umgangssprache"
+     ],
+     "items": [
+      {
+       "fa": "دوست دارَم",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "دوست دارَد",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "چه",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "خوشمَزه اَست",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "دوست نَدارید",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "دوس دارَم",
+       "k": 1,
+       "say": false,
+       "e": "<i>dūs dāram</i> – geschrieben: <span class='fa'>دوست دارَم</span>"
+      },
+      {
+       "fa": "دوس داره",
+       "k": 1,
+       "say": false,
+       "e": "<i>dūs dāre</i> – geschrieben: <span class='fa'>دوست دارَد</span>"
+      },
+      {
+       "fa": "چی",
+       "k": 1,
+       "say": false,
+       "e": "<i>tschī</i> – geschrieben: <span class='fa'>چه</span>"
+      },
+      {
+       "fa": "خوشمَزه‌س",
+       "k": 1,
+       "say": false,
+       "e": "<i>choschmazas</i> – geschrieben: <span class='fa'>خوشمَزه اَست</span>"
+      },
+      {
+       "fa": "دوس نَدارین",
+       "k": 1,
+       "say": false,
+       "e": "<i>dūs nadārīn</i> – geschrieben: <span class='fa'>دوست نَدارید</span>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Am Tisch",
+   "vorschau": "چی دوس داری؟",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Kaffee oder Tee?",
+     "text": "Umgangssprache! Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "چی دوس داری؟ چای یا قَهوِه؟",
+       "tr": "tschī dūs dārī? tschāy yā ghahwe?",
+       "de": "Was magst du? Tee oder Kaffee?"
+      },
+      {
+       "fa": "قَهوِه دوس دارَم. چای دوس نَدارَم.",
+       "tr": "ghahwe dūs dāram. tschāy dūs nadāram.",
+       "de": "Ich mag Kaffee. Tee mag ich nicht."
+      },
+      {
+       "fa": "کِیک هَم می‌خوای؟ خِیلی خوشمَزه‌س!",
+       "tr": "keyk ham mīchāy? cheylī choschmazas!",
+       "de": "Willst du auch Kuchen? Der ist super lecker!"
+      },
+      {
+       "fa": "آرِه، مِرسی! کِیک خِیلی دوس دارَم.",
+       "tr": "āre, mersī! keyk cheylī dūs dāram.",
+       "de": "Ja, danke! Ich mag Kuchen sehr."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Verstanden?",
+     "fragen": [
+      {
+       "frage": "Was mag die zweite Person?",
+       "optionen": [
+        "Kaffee",
+        "Tee",
+        "beides"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie ist der Kuchen?",
+       "optionen": [
+        "sehr lecker",
+        "nicht lecker",
+        "zu süß"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "<span class='fa'>چی دوس داری؟</span> in der Schriftsprache:",
+       "optionen": [
+        "چه چیزی دوست داری؟",
+        "چه دوست دارَد؟",
+        "چی دوست دارَم؟"
+       ],
+       "richtig": 0,
+       "optFa": true
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

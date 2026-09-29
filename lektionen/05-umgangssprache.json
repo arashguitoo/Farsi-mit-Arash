@@ -1,0 +1,192 @@
+{
+ "id": "ug",
+ "art": "umgangssprache",
+ "titel": "Umgangssprache: So spricht man im Alltag",
+ "beschreibung": "Freiwilliger Extra-Teil: vom Tag erzählen im Gespräch.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "So spricht man: gestern",
+   "vorschau": "اومَدَم خونه",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Schrift ≠ Gespräch",
+     "text": "<ul><li><span class='fa'>آمَدَم → اومَدَم</span> <i>ūmadam</i> – ā vor m/n wird oft ū</li><li><span class='fa'>خانِه → خونه</span> <i>chūne</i> · <span class='fa'>صُبحانِه → صُبحونه</span> <i>sobhūne</i></li><li>Im Gespräch fällt <span class='fa'>به</span> oft weg und der Ort steht <b>nach</b> dem Verb: <span class='fa'>رَفتَم خونه</span> – ich bin nach Hause gegangen.</li><li><span class='fa'>چه → چی</span>: <span class='fa'>چی کار کَردی؟</span> – Was hast du gemacht?</li></ul>",
+     "stil": "merke"
+    },
+    {
+     "typ": "paare",
+     "links": "x",
+     "paare": [
+      {
+       "fa": "آمَدَم",
+       "tr": "āmadam",
+       "de": "ich bin gekommen",
+       "x": "اومَدَم"
+      },
+      {
+       "fa": "به خانِه رَفتَم",
+       "tr": "be chāne raftam",
+       "de": "ich bin nach Hause gegangen",
+       "x": "رَفتَم خونه"
+      },
+      {
+       "fa": "صُبحانِه",
+       "tr": "sobhāne",
+       "de": "Frühstück",
+       "x": "صُبحونه"
+      },
+      {
+       "fa": "چه کار کَردی؟",
+       "tr": "tsche kār kardī?",
+       "de": "Was hast du gemacht?",
+       "x": "چی کار کَردی؟"
+      },
+      {
+       "fa": "به سینِما رَفتیم",
+       "tr": "be sīnemā raftīm",
+       "de": "wir sind ins Kino gegangen",
+       "x": "رَفتیم سینِما"
+      }
+     ],
+     "titel": "Schrift ↔ Gespräch"
+    },
+    {
+     "typ": "sortieren",
+     "titel": "Schrift oder Gespräch?",
+     "frage": "Schriftsprache oder Umgangssprache?",
+     "kategorien": [
+      "✍️ Schriftsprache",
+      "🗣️ Umgangssprache"
+     ],
+     "items": [
+      {
+       "fa": "آمَدَم",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "به خانِه رَفتَم",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "صُبحانِه",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "چه کار کَردی؟",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "به سینِما رَفتیم",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "اومَدَم",
+       "k": 1,
+       "say": false,
+       "e": "<i>ūmadam</i> – geschrieben: <span class='fa'>آمَدَم</span>"
+      },
+      {
+       "fa": "رَفتَم خونه",
+       "k": 1,
+       "say": false,
+       "e": "<i>raftam chūne</i> – geschrieben: <span class='fa'>به خانِه رَفتَم</span>"
+      },
+      {
+       "fa": "صُبحونه",
+       "k": 1,
+       "say": false,
+       "e": "<i>sobhūne</i> – geschrieben: <span class='fa'>صُبحانِه</span>"
+      },
+      {
+       "fa": "چی کار کَردی؟",
+       "k": 1,
+       "say": false,
+       "e": "<i>tschī kār kardī?</i> – geschrieben: <span class='fa'>چه کار کَردی؟</span>"
+      },
+      {
+       "fa": "رَفتیم سینِما",
+       "k": 1,
+       "say": false,
+       "e": "<i>raftīm sīnemā</i> – geschrieben: <span class='fa'>به سینِما رَفتیم</span>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Was hast du gestern gemacht?",
+   "vorschau": "چی کار کَردی؟",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Zwei Freunde erzählen",
+     "text": "Umgangssprache! Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "دیروز چی کار کَردی؟",
+       "tr": "dīrūz tschī kār kardī?",
+       "de": "Was hast du gestern gemacht?"
+      },
+      {
+       "fa": "صُبح رَفتَم دانِشگاه، بَعد رَفتَم کِتابخونه.",
+       "tr": "sobh raftam dāneschgāh, baʿd raftam ketābchūne.",
+       "de": "Morgens war ich an der Uni, dann in der Bibliothek."
+      },
+      {
+       "fa": "شَب چی؟",
+       "tr": "schab tschī?",
+       "de": "Und am Abend?"
+      },
+      {
+       "fa": "با دوستام رَفتیم سینِما. ساعَتِ دوازدَه اومَدَم خونه!",
+       "tr": "bā dūstām raftīm sīnemā. sāʿat-e dawāzdah ūmadam chūne!",
+       "de": "Mit Freunden im Kino. Um zwölf bin ich nach Hause gekommen!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Verstanden?",
+     "fragen": [
+      {
+       "frage": "Wo war die Person am Abend?",
+       "optionen": [
+        "im Kino",
+        "in der Bibliothek",
+        "zu Hause"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wann ist sie nach Hause gekommen?",
+       "optionen": [
+        "um zwölf",
+        "um elf",
+        "um zehn"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "<span class='fa'>اومَدَم خونه</span> in der Schriftsprache:",
+       "optionen": [
+        "به خانِه آمَدَم",
+        "به خانِه رَفتَم",
+        "در خانِه بودَم"
+       ],
+       "richtig": 0,
+       "optFa": true
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

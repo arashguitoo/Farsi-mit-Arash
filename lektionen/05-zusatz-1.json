@@ -1,0 +1,1383 @@
+{
+ "id": "z1",
+ "titel": "Trainingspaket 1",
+ "beschreibung": "Konjugation auf Zeit, Stämme, Satzbau, Tagesablauf ordnen, Verben, Zeit & Orte.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "Konjugations-Blitz",
+   "vorschau": "رَفتَم رَفتی رَفت",
+   "karten": [
+    {
+     "typ": "tempo",
+     "titel": "Blitz: schlafen",
+     "aufgabe": "Welche Form von „schlafen“?",
+     "modus": "de",
+     "sekunden": 45,
+     "ziel": 12,
+     "optFa": true,
+     "woerter": [
+      {
+       "fa": "مَن …",
+       "a": "خوابیدَم"
+      },
+      {
+       "fa": "تو …",
+       "a": "خوابیدی"
+      },
+      {
+       "fa": "او …",
+       "a": "خوابید"
+      },
+      {
+       "fa": "ما …",
+       "a": "خوابیدیم"
+      },
+      {
+       "fa": "شُما …",
+       "a": "خوابیدید"
+      },
+      {
+       "fa": "آنها …",
+       "a": "خوابیدَند"
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: einen Film sehen",
+     "aufgabe": "Welche Form?",
+     "modus": "de",
+     "sekunden": 45,
+     "ziel": 12,
+     "optFa": true,
+     "woerter": [
+      {
+       "fa": "مَن …",
+       "a": "فیلم دیدَم"
+      },
+      {
+       "fa": "تو …",
+       "a": "فیلم دیدی"
+      },
+      {
+       "fa": "او …",
+       "a": "فیلم دید"
+      },
+      {
+       "fa": "ما …",
+       "a": "فیلم دیدیم"
+      },
+      {
+       "fa": "شُما …",
+       "a": "فیلم دیدید"
+      },
+      {
+       "fa": "آنها …",
+       "a": "فیلم دیدَند"
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Stamm finden",
+     "aufgabe": "Tippe den Vergangenheitsstamm an.",
+     "modus": "de",
+     "sekunden": 60,
+     "ziel": 10,
+     "optFa": true,
+     "woerter": [
+      {
+       "fa": "خوابیدَن",
+       "a": "خوابید"
+      },
+      {
+       "fa": "رَفتَن ",
+       "a": "رَفت"
+      },
+      {
+       "fa": "کَردَن ",
+       "a": "کَرد"
+      },
+      {
+       "fa": "خواندَن ",
+       "a": "خواند"
+      },
+      {
+       "fa": "گِرِفتَن ",
+       "a": "گِرِفت"
+      },
+      {
+       "fa": "دیدَن ",
+       "a": "دید"
+      },
+      {
+       "fa": "پُختَن ",
+       "a": "پُخت"
+      },
+      {
+       "fa": "نِوِشتَن ",
+       "a": "نِوِشت"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Satzbau-Werkstatt",
+   "vorschau": "دیروز …",
+   "karten": [
+    {
+     "typ": "bauen",
+     "titel": "Satzbau: gestern",
+     "trenner": " ",
+     "woerter": [
+      {
+       "fa": "آنها به خانِه آمَدَند.",
+       "tr": "ānhā be chāne āmadand.",
+       "de": "Sie sind nach Hause gekommen.",
+       "emoji": "🏠",
+       "teile": [
+        "آنها",
+        "به",
+        "خانِه",
+        "آمَدَند"
+       ],
+       "extra": []
+      },
+      {
+       "fa": "شُما شام پُختید.",
+       "tr": "schomā schām pochtīd.",
+       "de": "Ihr habt Abendessen gekocht.",
+       "emoji": "🍲",
+       "teile": [
+        "شُما",
+        "شام",
+        "پُختید"
+       ],
+       "extra": [
+        "دیروز"
+       ]
+      },
+      {
+       "fa": "مَن نامِه نِوِشتَم.",
+       "tr": "man nāme neweschtam.",
+       "de": "Ich habe einen Brief geschrieben.",
+       "emoji": "✉️",
+       "teile": [
+        "مَن",
+        "نامِه",
+        "نِوِشتَم"
+       ],
+       "extra": [
+        "رَفتَم"
+       ]
+      },
+      {
+       "fa": "دیروز صُبح شُما دوش گِرِفتید.",
+       "tr": "dīrūz sobh schomā dūsch gereftīd.",
+       "de": "Gestern Morgen habt ihr geduscht.",
+       "emoji": "🚿",
+       "teile": [
+        "دیروز",
+        "صُبح",
+        "شُما",
+        "دوش",
+        "گِرِفتید"
+       ],
+       "extra": [
+        "به"
+       ]
+      },
+      {
+       "fa": "مَن شام خوردَم.",
+       "tr": "man schām chordam.",
+       "de": "Ich habe zu Abend gegessen.",
+       "emoji": "🍽️",
+       "teile": [
+        "مَن",
+        "شام",
+        "خوردَم"
+       ],
+       "extra": [
+        "دیروز"
+       ]
+      },
+      {
+       "fa": "دیروز شُما نامِه نَنِوِشتید.",
+       "tr": "dīrūz schomā nāme naneweschtīd.",
+       "de": "Gestern habt ihr keinen Brief geschrieben.",
+       "emoji": "✉️",
+       "teile": [
+        "دیروز",
+        "شُما",
+        "نامِه",
+        "نَنِوِشتید"
+       ],
+       "extra": [
+        "نَخوردَم"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "titel": "Verben-Training",
+   "vorschau": "رَفتَن خوردَن",
+   "karten": [
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "دَرس خواندَن",
+       "tr": "dars chāndan",
+       "de": "lernen",
+       "emoji": "📚"
+      },
+      {
+       "fa": "چای نوشیدَن",
+       "tr": "tschāy nūschīdan",
+       "de": "Tee trinken",
+       "emoji": "🍵"
+      },
+      {
+       "fa": "به خانِه آمَدَن",
+       "tr": "be chāne āmadan",
+       "de": "nach Hause kommen",
+       "emoji": "🏠"
+      },
+      {
+       "fa": "صُبحانِه خوردَن",
+       "tr": "sobhāne chordan",
+       "de": "frühstücken",
+       "emoji": "🥐"
+      },
+      {
+       "fa": "کار کَردَن",
+       "tr": "kār kardan",
+       "de": "arbeiten",
+       "emoji": "💼"
+      },
+      {
+       "fa": "شام پُختَن",
+       "tr": "schām pochtan",
+       "de": "Abendessen kochen",
+       "emoji": "🍲"
+      }
+     ],
+     "titel": "Memory: Bild & Tätigkeit"
+    },
+    {
+     "typ": "memory",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "دَرس خواندَن",
+       "tr": "dars chāndan",
+       "de": "lernen"
+      },
+      {
+       "fa": "چای نوشیدَن",
+       "tr": "tschāy nūschīdan",
+       "de": "Tee trinken"
+      },
+      {
+       "fa": "به دانِشگاه رَفتَن",
+       "tr": "be dāneschgāh raftan",
+       "de": "zur Uni gehen"
+      },
+      {
+       "fa": "کِتاب خواندَن",
+       "tr": "ketāb chāndan",
+       "de": "ein Buch lesen"
+      },
+      {
+       "fa": "به خانِه آمَدَن",
+       "tr": "be chāne āmadan",
+       "de": "nach Hause kommen"
+      },
+      {
+       "fa": "نامِه نِوِشتَن",
+       "tr": "nāme neweschtan",
+       "de": "einen Brief schreiben"
+      }
+     ],
+     "titel": "Memory: Tätigkeit & Bedeutung"
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Tätigkeiten",
+     "modus": "de",
+     "sekunden": 60,
+     "ziel": 12,
+     "woerter": [
+      {
+       "fa": "بیدار شُدَن",
+       "de": "aufwachen"
+      },
+      {
+       "fa": "دوش گِرِفتَن",
+       "de": "duschen"
+      },
+      {
+       "fa": "صُبحانِه خوردَن",
+       "de": "frühstücken"
+      },
+      {
+       "fa": "چای نوشیدَن",
+       "de": "Tee trinken"
+      },
+      {
+       "fa": "به دانِشگاه رَفتَن",
+       "de": "zur Uni gehen"
+      },
+      {
+       "fa": "کار کَردَن",
+       "de": "arbeiten"
+      },
+      {
+       "fa": "دَرس خواندَن",
+       "de": "lernen"
+      },
+      {
+       "fa": "ناهار خوردَن",
+       "de": "zu Mittag essen"
+      },
+      {
+       "fa": "کِتاب خواندَن",
+       "de": "ein Buch lesen"
+      },
+      {
+       "fa": "نامِه نِوِشتَن",
+       "de": "einen Brief schreiben"
+      },
+      {
+       "fa": "به خانِه آمَدَن",
+       "de": "nach Hause kommen"
+      },
+      {
+       "fa": "شام پُختَن",
+       "de": "Abendessen kochen"
+      },
+      {
+       "fa": "شام خوردَن",
+       "de": "zu Abend essen"
+      },
+      {
+       "fa": "فیلم دیدَن",
+       "de": "einen Film sehen"
+      },
+      {
+       "fa": "خوابیدَن",
+       "de": "schlafen"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d",
+   "titel": "Zeit & Orte",
+   "vorschau": "دیروز دیشَب",
+   "karten": [
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "عَصر",
+       "tr": "ʿasr",
+       "de": "später Nachmittag, früher Abend",
+       "emoji": "🌇"
+      },
+      {
+       "fa": "ظُهر",
+       "tr": "zohr",
+       "de": "Mittag, mittags",
+       "emoji": "🕛"
+      },
+      {
+       "fa": "اِمروز",
+       "tr": "emrūz",
+       "de": "heute",
+       "emoji": "📅"
+      },
+      {
+       "fa": "شَب",
+       "tr": "schab",
+       "de": "Abend, Nacht",
+       "emoji": "🌌"
+      },
+      {
+       "fa": "خوابگاه",
+       "tr": "chābgāh",
+       "de": "Wohnheim",
+       "emoji": "🛏️"
+      },
+      {
+       "fa": "رِستوران",
+       "tr": "restorān",
+       "de": "Restaurant",
+       "emoji": "🍽️"
+      }
+     ],
+     "titel": "Memory: Bild & Wort"
+    },
+    {
+     "typ": "memory",
+     "links": "tr",
+     "paare": [
+      {
+       "fa": "صُبح",
+       "tr": "sobh",
+       "de": "Morgen, morgens",
+       "emoji": "🌅"
+      },
+      {
+       "fa": "رِستوران",
+       "tr": "restorān",
+       "de": "Restaurant",
+       "emoji": "🍽️"
+      },
+      {
+       "fa": "دانِشگاه",
+       "tr": "dāneschgāh",
+       "de": "Universität",
+       "emoji": "🎓"
+      },
+      {
+       "fa": "پارک",
+       "tr": "pārk",
+       "de": "Park",
+       "emoji": "🌳"
+      },
+      {
+       "fa": "اِمشَب",
+       "tr": "emschab",
+       "de": "heute Abend",
+       "emoji": "🌃"
+      },
+      {
+       "fa": "مَدرِسِه",
+       "tr": "madrese",
+       "de": "Schule",
+       "emoji": "🏫"
+      }
+     ],
+     "titel": "Memory: Schrift & Aussprache"
+    },
+    {
+     "typ": "bauen",
+     "titel": "Schreib das Wort ab",
+     "zeigen": true,
+     "woerter": [
+      {
+       "fa": "شَب",
+       "tr": "schab",
+       "de": "Abend, Nacht",
+       "emoji": "🌌",
+       "teile": [
+        "ش",
+        "ب"
+       ],
+       "extra": [
+        "ت"
+       ]
+      },
+      {
+       "fa": "دانِشگاه",
+       "tr": "dāneschgāh",
+       "de": "Universität",
+       "emoji": "🎓",
+       "teile": [
+        "د",
+        "ا",
+        "ن",
+        "ش",
+        "گ",
+        "ا",
+        "ه"
+       ],
+       "extra": [
+        "ش"
+       ]
+      },
+      {
+       "fa": "عَصر",
+       "tr": "ʿasr",
+       "de": "später Nachmittag, früher Abend",
+       "emoji": "🌇",
+       "teile": [
+        "ع",
+        "ص",
+        "ر"
+       ],
+       "extra": [
+        "پ"
+       ]
+      },
+      {
+       "fa": "اِمروز",
+       "tr": "emrūz",
+       "de": "heute",
+       "emoji": "📅",
+       "teile": [
+        "ا",
+        "م",
+        "ر",
+        "و",
+        "ز"
+       ],
+       "extra": [
+        "ر"
+       ]
+      },
+      {
+       "fa": "خانِه",
+       "tr": "chāne",
+       "de": "Haus, Zuhause",
+       "emoji": "🏠",
+       "teile": [
+        "خ",
+        "ا",
+        "ن",
+        "ه"
+       ],
+       "extra": [
+        "ک"
+       ]
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitzlesen: Bedeutung",
+     "modus": "de",
+     "sekunden": 60,
+     "ziel": 12,
+     "woerter": [
+      {
+       "fa": "دیروز",
+       "de": "gestern"
+      },
+      {
+       "fa": "دیشَب",
+       "de": "gestern Abend / letzte Nacht"
+      },
+      {
+       "fa": "اِمروز",
+       "de": "heute"
+      },
+      {
+       "fa": "اِمشَب",
+       "de": "heute Abend"
+      },
+      {
+       "fa": "صُبح",
+       "de": "Morgen, morgens"
+      },
+      {
+       "fa": "ظُهر",
+       "de": "Mittag, mittags"
+      },
+      {
+       "fa": "بَعد اَز ظُهر",
+       "de": "Nachmittag"
+      },
+      {
+       "fa": "عَصر",
+       "de": "später Nachmittag, früher Abend"
+      },
+      {
+       "fa": "شَب",
+       "de": "Abend, Nacht"
+      },
+      {
+       "fa": "دانِشگاه",
+       "de": "Universität"
+      },
+      {
+       "fa": "کِتابخانِه",
+       "de": "Bibliothek"
+      },
+      {
+       "fa": "خوابگاه",
+       "de": "Wohnheim"
+      },
+      {
+       "fa": "خانِه",
+       "de": "Haus, Zuhause"
+      },
+      {
+       "fa": "مَدرِسِه",
+       "de": "Schule"
+      },
+      {
+       "fa": "سینِما",
+       "de": "Kino"
+      },
+      {
+       "fa": "کافی‌شاپ",
+       "de": "Café"
+      },
+      {
+       "fa": "پارک",
+       "de": "Park"
+      },
+      {
+       "fa": "رِستوران",
+       "de": "Restaurant"
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitzlesen: Aussprache",
+     "modus": "tr",
+     "sekunden": 60,
+     "ziel": 12,
+     "woerter": [
+      {
+       "fa": "دیروز",
+       "tr": "dīrūz"
+      },
+      {
+       "fa": "دیشَب",
+       "tr": "dīschab"
+      },
+      {
+       "fa": "اِمروز",
+       "tr": "emrūz"
+      },
+      {
+       "fa": "اِمشَب",
+       "tr": "emschab"
+      },
+      {
+       "fa": "صُبح",
+       "tr": "sobh"
+      },
+      {
+       "fa": "ظُهر",
+       "tr": "zohr"
+      },
+      {
+       "fa": "بَعد اَز ظُهر",
+       "tr": "baʿd az zohr"
+      },
+      {
+       "fa": "عَصر",
+       "tr": "ʿasr"
+      },
+      {
+       "fa": "شَب",
+       "tr": "schab"
+      },
+      {
+       "fa": "دانِشگاه",
+       "tr": "dāneschgāh"
+      },
+      {
+       "fa": "کِتابخانِه",
+       "tr": "ketābchāne"
+      },
+      {
+       "fa": "خوابگاه",
+       "tr": "chābgāh"
+      },
+      {
+       "fa": "خانِه",
+       "tr": "chāne"
+      },
+      {
+       "fa": "مَدرِسِه",
+       "tr": "madrese"
+      },
+      {
+       "fa": "سینِما",
+       "tr": "sīnemā"
+      },
+      {
+       "fa": "کافی‌شاپ",
+       "tr": "kāfī-schāp"
+      },
+      {
+       "fa": "پارک",
+       "tr": "pārk"
+      },
+      {
+       "fa": "رِستوران",
+       "tr": "restorān"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "e",
+   "titel": "Tagesablauf ordnen",
+   "vorschau": "صُبح → شَب",
+   "karten": [
+    {
+     "typ": "ordnen",
+     "titel": "Ein normaler Tag",
+     "frage": "Welche Reihenfolge ist logisch?",
+     "items": [
+      {
+       "fa": "بیدار شُدَم.",
+       "tr": "bīdār schodam.",
+       "de": "Ich bin aufgewacht.",
+       "emoji": "⏰"
+      },
+      {
+       "fa": "دوش گِرِفتَم.",
+       "tr": "dūsch gereftam.",
+       "de": "Ich habe geduscht.",
+       "emoji": "🚿"
+      },
+      {
+       "fa": "صُبحانِه خوردَم.",
+       "tr": "sobhāne chordam.",
+       "de": "Ich habe gefrühstückt.",
+       "emoji": "🥐"
+      },
+      {
+       "fa": "به دانِشگاه رَفتَم.",
+       "tr": "be dāneschgāh raftam.",
+       "de": "Ich bin zur Uni gegangen.",
+       "emoji": "🏫"
+      },
+      {
+       "fa": "به خانِه آمَدَم.",
+       "tr": "be chāne āmadam.",
+       "de": "Ich bin nach Hause gekommen.",
+       "emoji": "🏠"
+      },
+      {
+       "fa": "خوابیدَم.",
+       "tr": "chābīdam.",
+       "de": "Ich habe geschlafen.",
+       "emoji": "😴"
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Uhrzeiten ordnen",
+     "frage": "Von früh bis spät!",
+     "items": [
+      {
+       "fa": "ساعَتِ شِش",
+       "tr": "sāʿat-e schesch",
+       "de": "um 6 Uhr"
+      },
+      {
+       "fa": "ساعَتِ هَشت",
+       "tr": "sāʿat-e hascht",
+       "de": "um 8 Uhr"
+      },
+      {
+       "fa": "ساعَتِ نُه",
+       "tr": "sāʿat-e noh",
+       "de": "um 9 Uhr"
+      },
+      {
+       "fa": "ساعَتِ دَه",
+       "tr": "sāʿat-e dah",
+       "de": "um 10 Uhr"
+      },
+      {
+       "fa": "ساعَتِ دَوازدَه",
+       "tr": "sāʿat-e dawāzdah",
+       "de": "um 12 Uhr"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "f",
+   "titel": "Bejaht → verneint",
+   "vorschau": "رَفت → نَرَفت",
+   "karten": [
+    {
+     "typ": "wahl",
+     "titel": "Mach den Satz negativ",
+     "fragen": [
+      {
+       "frage": "Verneine: <span class='fa'>او کار کَرد.</span>",
+       "optionen": [
+        "او کار نَکَرد.",
+        "ما کار نَکَردیم.",
+        "او کار کَرد."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "Er/Sie hat nicht gearbeitet."
+      },
+      {
+       "frage": "Verneine: <span class='fa'>شُما چای نوشیدید.</span>",
+       "optionen": [
+        "شُما چای نَنوشیدید.",
+        "آنها چای نَنوشیدَند.",
+        "شُما چای نوشیدید."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "Ihr habt keinen Tee getrunken."
+      },
+      {
+       "frage": "Verneine: <span class='fa'>ما نامِه نِوِشتیم.</span>",
+       "optionen": [
+        "ما نامِه نَنِوِشتیم.",
+        "شُما نامِه نَنِوِشتید.",
+        "ما نامِه نِوِشتیم."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "Wir haben keinen Brief geschrieben."
+      },
+      {
+       "frage": "Verneine: <span class='fa'>او به خانِه آمَد.</span>",
+       "optionen": [
+        "او به خانِه نیامَد.",
+        "ما به خانِه نیامَدیم.",
+        "او به خانِه آمَد."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "Er/Sie ist nicht nach Hause gekommen."
+      },
+      {
+       "frage": "Verneine: <span class='fa'>تو ناهار خوردی.</span>",
+       "optionen": [
+        "تو ناهار نَخوردی.",
+        "او ناهار نَخورد.",
+        "تو ناهار خوردی."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "Du hast nicht zu Mittag gegessen."
+      },
+      {
+       "frage": "Verneine: <span class='fa'>او بیدار شُد.</span>",
+       "optionen": [
+        "او بیدار نَشُد.",
+        "ما بیدار نَشُدیم.",
+        "او بیدار شُد."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "Er/Sie ist nicht aufgewacht."
+      },
+      {
+       "frage": "Verneine: <span class='fa'>مَن به دانِشگاه رَفتَم.</span>",
+       "optionen": [
+        "مَن به دانِشگاه نَرَفتَم.",
+        "تو به دانِشگاه نَرَفتی.",
+        "مَن به دانِشگاه رَفتَم."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "Ich bin nicht zur Uni gegangen."
+      },
+      {
+       "frage": "Verneine: <span class='fa'>تو شام خوردی.</span>",
+       "optionen": [
+        "تو شام نَخوردی.",
+        "او شام نَخورد.",
+        "تو شام خوردی."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "Du hast nicht zu Abend gegessen."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "g",
+   "titel": "Blitz-Marathon",
+   "vorschau": "⏱️ ⏱️",
+   "karten": [
+    {
+     "typ": "tempo",
+     "titel": "Marathon: Sätze verstehen",
+     "modus": "de",
+     "sekunden": 90,
+     "ziel": 15,
+     "woerter": [
+      {
+       "fa": "دیروز شُما شام نَپُختید.",
+       "de": "Gestern habt ihr kein Abendessen gekocht."
+      },
+      {
+       "fa": "ما دَرس نَخواندیم.",
+       "de": "Wir haben nicht gelernt."
+      },
+      {
+       "fa": "دیروز او ناهار خورد.",
+       "de": "Gestern hat er/sie zu Mittag gegessen."
+      },
+      {
+       "fa": "دیروز صُبح ما دوش گِرِفتیم.",
+       "de": "Gestern Morgen haben wir geduscht."
+      },
+      {
+       "fa": "شُما کار کَردید.",
+       "de": "Ihr habt gearbeitet."
+      },
+      {
+       "fa": "ما کِتاب خواندیم.",
+       "de": "Wir haben ein Buch gelesen."
+      },
+      {
+       "fa": "ما صُبحانِه نَخوردیم.",
+       "de": "Wir haben nicht gefrühstückt."
+      },
+      {
+       "fa": "تو صُبحانِه نَخوردی.",
+       "de": "Du hast nicht gefrühstückt."
+      },
+      {
+       "fa": "شُما چای نَنوشیدید.",
+       "de": "Ihr habt keinen Tee getrunken."
+      },
+      {
+       "fa": "دیشَب او فیلم نَدید.",
+       "de": "Gestern Abend hat er/sie keinen Film gesehen."
+      },
+      {
+       "fa": "تو کِتاب نَخواندی.",
+       "de": "Du hast kein Buch gelesen."
+      },
+      {
+       "fa": "دیروز مَن دوش نَگِرِفتَم.",
+       "de": "Gestern habe ich nicht geduscht."
+      },
+      {
+       "fa": "دیروز مَن خوابیدَم.",
+       "de": "Gestern habe ich geschlafen."
+      },
+      {
+       "fa": "تو نامِه نِوِشتی.",
+       "de": "Du hast einen Brief geschrieben."
+      },
+      {
+       "fa": "آنها به خانِه آمَدَند.",
+       "de": "Sie sind nach Hause gekommen."
+      },
+      {
+       "fa": "مَن چای نوشیدَم.",
+       "de": "Ich habe Tee getrunken."
+      },
+      {
+       "fa": "ما فیلم نَدیدیم.",
+       "de": "Wir haben keinen Film gesehen."
+      },
+      {
+       "fa": "او دوش نَگِرِفت.",
+       "de": "Er/Sie hat nicht geduscht."
+      },
+      {
+       "fa": "دیروز صُبح تو چای نَنوشیدی.",
+       "de": "Gestern Morgen hast du keinen Tee getrunken."
+      },
+      {
+       "fa": "دیشَب تو به خانِه آمَدی.",
+       "de": "Gestern Abend bist du nach Hause gekommen."
+      },
+      {
+       "fa": "آنها دَرس نَخواندَند.",
+       "de": "Sie haben nicht gelernt."
+      },
+      {
+       "fa": "او خوابید.",
+       "de": "Er/Sie hat geschlafen."
+      },
+      {
+       "fa": "شُما شام نَپُختید.",
+       "de": "Ihr habt kein Abendessen gekocht."
+      },
+      {
+       "fa": "او فیلم دید.",
+       "de": "Er/Sie hat einen Film gesehen."
+      },
+      {
+       "fa": "دیروز او کار نَکَرد.",
+       "de": "Gestern hat er/sie nicht gearbeitet."
+      },
+      {
+       "fa": "دیشَب آنها شام نَخوردَند.",
+       "de": "Gestern Abend haben sie nicht zu Abend gegessen."
+      },
+      {
+       "fa": "دیشَب ما شام پُختیم.",
+       "de": "Gestern Abend haben wir Abendessen gekocht."
+      },
+      {
+       "fa": "ما شام نَپُختیم.",
+       "de": "Wir haben kein Abendessen gekocht."
+      },
+      {
+       "fa": "دیروز مَن فیلم نَدیدَم.",
+       "de": "Gestern habe ich keinen Film gesehen."
+      },
+      {
+       "fa": "دیشَب مَن شام پُختَم.",
+       "de": "Gestern Abend habe ich Abendessen gekocht."
+      },
+      {
+       "fa": "دیشَب ما فیلم دیدیم.",
+       "de": "Gestern Abend haben wir einen Film gesehen."
+      },
+      {
+       "fa": "دیروز تو شام پُختی.",
+       "de": "Gestern hast du Abendessen gekocht."
+      },
+      {
+       "fa": "دیروز او کِتاب نَخواند.",
+       "de": "Gestern hat er/sie kein Buch gelesen."
+      },
+      {
+       "fa": "دیروز شُما به خانِه آمَدید.",
+       "de": "Gestern seid ihr nach Hause gekommen."
+      },
+      {
+       "fa": "دیروز او کِتاب خواند.",
+       "de": "Gestern hat er/sie ein Buch gelesen."
+      },
+      {
+       "fa": "آنها به دانِشگاه رَفتَند.",
+       "de": "Sie sind zur Uni gegangen."
+      },
+      {
+       "fa": "دیروز ما شام خوردیم.",
+       "de": "Gestern haben wir zu Abend gegessen."
+      },
+      {
+       "fa": "دیروز آنها دوش گِرِفتَند.",
+       "de": "Gestern haben sie geduscht."
+      },
+      {
+       "fa": "آنها کِتاب خواندَند.",
+       "de": "Sie haben ein Buch gelesen."
+      },
+      {
+       "fa": "دیروز صُبح آنها صُبحانِه خوردَند.",
+       "de": "Gestern Morgen haben sie gefrühstückt."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "h",
+   "titel": "Infinitiv & Stämme",
+   "vorschau": "رَفتَن · رَفت · رو",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Jedes Verb hat zwei Stämme",
+     "text": "<p>Den <b>Vergangenheitsstamm</b> bekommst du, indem du <b>-an</b> wegnimmst: <span class='fa'>رَفتَن → رَفت</span>.</p><p>Der <b>Präsensstamm</b> sieht oft ganz anders aus: <span class='fa'>رَفتَن → رو</span>, <span class='fa'>دیدَن → بین</span>. Man muss ihn mitlernen – deshalb steht er im <b>Wortschatz-Trainer</b> immer in Klammern dabei!</p>",
+     "stil": "merke",
+     "beispiele": [
+      {
+       "fa": "رَفتَن · رَفت · رو",
+       "tr": "",
+       "de": "gehen"
+      },
+      {
+       "fa": "آمَدَن · آمَد · آ",
+       "tr": "",
+       "de": "kommen"
+      },
+      {
+       "fa": "خوردَن · خورد · خور",
+       "tr": "",
+       "de": "essen"
+      },
+      {
+       "fa": "دیدَن · دید · بین",
+       "tr": "",
+       "de": "sehen"
+      }
+     ]
+    },
+    {
+     "typ": "memory",
+     "links": "x",
+     "paare": [
+      {
+       "fa": "رَفتَن",
+       "tr": "",
+       "de": "",
+       "x": "رَفت"
+      },
+      {
+       "fa": "آمَدَن",
+       "tr": "",
+       "de": "",
+       "x": "آمَد"
+      },
+      {
+       "fa": "خوردَن",
+       "tr": "",
+       "de": "",
+       "x": "خورد"
+      },
+      {
+       "fa": "دیدَن",
+       "tr": "",
+       "de": "",
+       "x": "دید"
+      },
+      {
+       "fa": "کَردَن",
+       "tr": "",
+       "de": "",
+       "x": "کَرد"
+      },
+      {
+       "fa": "خواندَن",
+       "tr": "",
+       "de": "",
+       "x": "خواند"
+      }
+     ],
+     "titel": "Memory: Infinitiv ↔ Vergangenheitsstamm"
+    },
+    {
+     "typ": "memory",
+     "links": "x",
+     "paare": [
+      {
+       "fa": "خوردَن",
+       "tr": "",
+       "de": "",
+       "x": "خور"
+      },
+      {
+       "fa": "دیدَن",
+       "tr": "",
+       "de": "",
+       "x": "بین"
+      },
+      {
+       "fa": "کَردَن",
+       "tr": "",
+       "de": "",
+       "x": "کُن"
+      },
+      {
+       "fa": "خواندَن",
+       "tr": "",
+       "de": "",
+       "x": "خوان"
+      },
+      {
+       "fa": "نِوِشتَن",
+       "tr": "",
+       "de": "",
+       "x": "نِویس"
+      },
+      {
+       "fa": "پُختَن",
+       "tr": "",
+       "de": "",
+       "x": "پَز"
+      }
+     ],
+     "titel": "Memory: Infinitiv ↔ Präsensstamm"
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Vergangenheitsstamm",
+     "aufgabe": "Tippe den Vergangenheitsstamm an.",
+     "modus": "de",
+     "sekunden": 45,
+     "ziel": 10,
+     "optFa": true,
+     "woerter": [
+      {
+       "fa": "رَفتَن",
+       "a": "رَفت"
+      },
+      {
+       "fa": "آمَدَن",
+       "a": "آمَد"
+      },
+      {
+       "fa": "خوردَن",
+       "a": "خورد"
+      },
+      {
+       "fa": "دیدَن",
+       "a": "دید"
+      },
+      {
+       "fa": "کَردَن",
+       "a": "کَرد"
+      },
+      {
+       "fa": "خواندَن",
+       "a": "خواند"
+      },
+      {
+       "fa": "نِوِشتَن",
+       "a": "نِوِشت"
+      },
+      {
+       "fa": "پُختَن",
+       "a": "پُخت"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "i",
+   "titel": "Noch mehr Satzbau",
+   "vorschau": "دیشَب …",
+   "karten": [
+    {
+     "typ": "bauen",
+     "titel": "Satzbau: gestern 2",
+     "trenner": " ",
+     "woerter": [
+      {
+       "fa": "آنها شام خوردَند.",
+       "tr": "ānhā schām chordand.",
+       "de": "Sie haben zu Abend gegessen.",
+       "emoji": "🍽️",
+       "teile": [
+        "آنها",
+        "شام",
+        "خوردَند"
+       ],
+       "extra": [
+        "خوردَم"
+       ]
+      },
+      {
+       "fa": "شُما ناهار نَخوردید.",
+       "tr": "schomā nāhār nachordīd.",
+       "de": "Ihr habt nicht zu Mittag gegessen.",
+       "emoji": "🍛",
+       "teile": [
+        "شُما",
+        "ناهار",
+        "نَخوردید"
+       ],
+       "extra": [
+        "دیشَب"
+       ]
+      },
+      {
+       "fa": "ما دوش گِرِفتیم.",
+       "tr": "mā dūsch gereftīm.",
+       "de": "Wir haben geduscht.",
+       "emoji": "🚿",
+       "teile": [
+        "ما",
+        "دوش",
+        "گِرِفتیم"
+       ],
+       "extra": [
+        "خوردَم"
+       ]
+      },
+      {
+       "fa": "دیروز صُبح او دوش گِرِفت.",
+       "tr": "dīrūz sobh ū dūsch gereft.",
+       "de": "Gestern Morgen hat er/sie geduscht.",
+       "emoji": "🚿",
+       "teile": [
+        "دیروز",
+        "صُبح",
+        "او",
+        "دوش",
+        "گِرِفت"
+       ],
+       "extra": [
+        "نَرَفتیم"
+       ]
+      },
+      {
+       "fa": "دیشَب او فیلم دید.",
+       "tr": "dīschab ū fīlm dīd.",
+       "de": "Gestern Abend hat er/sie einen Film gesehen.",
+       "emoji": "🎬",
+       "teile": [
+        "دیشَب",
+        "او",
+        "فیلم",
+        "دید"
+       ],
+       "extra": []
+      },
+      {
+       "fa": "ما نامِه نَنِوِشتیم.",
+       "tr": "mā nāme naneweschtīm.",
+       "de": "Wir haben keinen Brief geschrieben.",
+       "emoji": "✉️",
+       "teile": [
+        "ما",
+        "نامِه",
+        "نَنِوِشتیم"
+       ],
+       "extra": [
+        "دیشَب"
+       ]
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Ein Tag in der Bibliothek",
+     "frage": "Welche Reihenfolge ist logisch?",
+     "items": [
+      {
+       "fa": "صُبح به کِتابخانِه رَفتَم.",
+       "tr": "sobh be ketābchāne raftam.",
+       "de": "Morgens bin ich in die Bibliothek gegangen."
+      },
+      {
+       "fa": "دو ساعَت دَرس خواندَم.",
+       "tr": "do sāʿat dars chāndam.",
+       "de": "Ich habe zwei Stunden gelernt."
+      },
+      {
+       "fa": "ظُهر ناهار خوردَم.",
+       "tr": "zohr nāhār chordam.",
+       "de": "Mittags habe ich gegessen."
+      },
+      {
+       "fa": "بَعد اَز ظُهر یِک کِتاب خواندَم.",
+       "tr": "baʿd az zohr yek ketāb chāndam.",
+       "de": "Am Nachmittag habe ich ein Buch gelesen."
+      },
+      {
+       "fa": "شَب به خانِه آمَدَم.",
+       "tr": "schab be chāne āmadam.",
+       "de": "Abends bin ich nach Hause gekommen."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,214 @@
+{
+ "id": "ug",
+ "art": "umgangssprache",
+ "titel": "Umgangssprache: So spricht man im Alltag",
+ "beschreibung": "Freiwilliger Extra-Teil: mein, dein und را im Gespräch.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "So spricht man: mein, dein & را",
+   "vorschau": "کِتابو · کِتابِمون",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Schrift ≠ Gespräch",
+     "text": "<ul><li><b>-ān</b> wird oft <b>-ūn</b>: <span class='fa'>کِتابِمان → کِتابِمون</span>, <span class='fa'>خیابان → خیابون</span>, <span class='fa'>نان → نون</span></li><li><span class='fa'>را</span> wird zu <b>-o</b> (nach Konsonant) oder <span class='fa'>رو</span> <i>ro</i>: <span class='fa'>کِتاب را → کِتابو</span></li><li><span class='fa'>خواندَم → خوندَم</span> <i>chūndam</i></li><li><span class='fa'>در</span> wird im Gespräch oft <span class='fa'>تو</span> <i>tū</i> (in)</li></ul>",
+     "stil": "merke"
+    },
+    {
+     "typ": "paare",
+     "links": "x",
+     "paare": [
+      {
+       "fa": "کِتابِمان",
+       "tr": "ketābemān",
+       "de": "unser Buch",
+       "x": "کِتابِمون"
+      },
+      {
+       "fa": "کِتابِتان",
+       "tr": "ketābetān",
+       "de": "euer Buch",
+       "x": "کِتابِتون"
+      },
+      {
+       "fa": "کِتابِشان",
+       "tr": "ketābeschān",
+       "de": "ihr Buch",
+       "x": "کِتابِشون"
+      },
+      {
+       "fa": "کِتاب را",
+       "tr": "ketāb rā",
+       "de": "das Buch (Objekt)",
+       "x": "کِتابو"
+      },
+      {
+       "fa": "خیابان",
+       "tr": "chiyābān",
+       "de": "Straße",
+       "x": "خیابون"
+      },
+      {
+       "fa": "خواندَم",
+       "tr": "chāndam",
+       "de": "ich habe gelesen",
+       "x": "خوندَم"
+      }
+     ],
+     "titel": "Schrift ↔ Gespräch"
+    },
+    {
+     "typ": "sortieren",
+     "titel": "Schrift oder Gespräch?",
+     "frage": "Schriftsprache oder Umgangssprache?",
+     "kategorien": [
+      "✍️ Schriftsprache",
+      "🗣️ Umgangssprache"
+     ],
+     "items": [
+      {
+       "fa": "کِتابِمان",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "کِتابِتان",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "کِتابِشان",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "کِتاب را",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "خیابان",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "خواندَم",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "کِتابِمون",
+       "k": 1,
+       "say": false,
+       "e": "<i>ketābemūn</i> – geschrieben: <span class='fa'>کِتابِمان</span>"
+      },
+      {
+       "fa": "کِتابِتون",
+       "k": 1,
+       "say": false,
+       "e": "<i>ketābetūn</i> – geschrieben: <span class='fa'>کِتابِتان</span>"
+      },
+      {
+       "fa": "کِتابِشون",
+       "k": 1,
+       "say": false,
+       "e": "<i>ketābeschūn</i> – geschrieben: <span class='fa'>کِتابِشان</span>"
+      },
+      {
+       "fa": "کِتابو",
+       "k": 1,
+       "say": false,
+       "e": "<i>ketābo</i> – geschrieben: <span class='fa'>کِتاب را</span>"
+      },
+      {
+       "fa": "خیابون",
+       "k": 1,
+       "say": false,
+       "e": "<i>chiyābūn</i> – geschrieben: <span class='fa'>خیابان</span>"
+      },
+      {
+       "fa": "خوندَم",
+       "k": 1,
+       "say": false,
+       "e": "<i>chūndam</i> – geschrieben: <span class='fa'>خواندَم</span>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Weißt du, wen ich gesehen habe?",
+   "vorschau": "خواهَرِتو دیدَم",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Zwei Freunde erzählen",
+     "text": "Umgangssprache! Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "دیروز خواهَرِتو تو خیابون دیدَم!",
+       "tr": "dīrūz chāhareto tū chiyābūn dīdam!",
+       "de": "Gestern hab ich deine Schwester auf der Straße gesehen!"
+      },
+      {
+       "fa": "آرِه؟ کُجا؟",
+       "tr": "āre? kodschā?",
+       "de": "Echt? Wo?"
+      },
+      {
+       "fa": "نَزدیکِ بازار. نون خَرید.",
+       "tr": "nazdīk-e bāzār. nūn charīd.",
+       "de": "In der Nähe vom Markt. Sie hat Brot gekauft."
+      },
+      {
+       "fa": "راستی، کِلیدَمو پِیدا کَردی؟",
+       "tr": "rāstī, kelīdamo peydā kardī?",
+       "de": "Übrigens – hast du meinen Schlüssel gefunden?"
+      },
+      {
+       "fa": "نَه، پِیدا نَکَردَم. بِبَخشید!",
+       "tr": "na, peydā nakardam. bebachschīd!",
+       "de": "Nein, hab ich nicht gefunden. Tut mir leid!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Verstanden?",
+     "fragen": [
+      {
+       "frage": "Wen hat die Person gesehen?",
+       "optionen": [
+        "die Schwester des Freundes",
+        "den Bruder",
+        "die Nachbarin"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was hat die Schwester gekauft?",
+       "optionen": [
+        "Brot",
+        "Obst",
+        "ein Geschenk"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "<span class='fa'>کِلیدَمو</span> in der Schriftsprache:",
+       "optionen": [
+        "کِلیدَم را",
+        "کِلیدِ مَن",
+        "کِلیدَم"
+       ],
+       "richtig": 0,
+       "optFa": true
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

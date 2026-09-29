@@ -11,7 +11,8 @@
       "standard": "offen",
       "zusatz": [
         "01-zusatz-1.json"
-      ]
+      ],
+      "wortschatz": "ws-01.json"
     },
     {
       "id": "02",
@@ -24,31 +25,78 @@
       "zusatz": [
         "02-zusatz-1.json",
         "02-umgangssprache.json"
-      ]
+      ],
+      "wortschatz": "ws-02.json"
     },
     {
       "id": "03",
       "nummer": 3,
-      "titel": "Haben – und nicht haben",
+      "titel": "Haben – Familie, Zahlen, Dinge",
       "titelFa": "داشتَن",
-      "untertitel": "dāram / nadāram",
-      "standard": "bald"
+      "untertitel": "dāram / nadāram, Familie, Zahlen 1–5, ein … / der … (یک / ـی)",
+      "standard": "offen",
+      "wortschatz": "ws-03.json",
+      "datei": "03-haben.json",
+      "zusatz": [
+        "03-zusatz-1.json",
+        "03-umgangssprache.json"
+      ]
     },
     {
       "id": "04",
       "nummer": 4,
-      "titel": "Mögen: Gemüse & Co.",
+      "titel": "Mögen – Gemüse, Obst & Getränke",
       "titelFa": "دوست داشتَن",
-      "untertitel": "dūst dāram / dūst nadāram",
-      "standard": "bald"
+      "untertitel": "dūst dāram / dūst nadāram, 23 Gemüse, Obst, Essen, را",
+      "standard": "offen",
+      "datei": "04-moegen.json",
+      "zusatz": [
+        "04-zusatz-1.json",
+        "04-umgangssprache.json"
+      ],
+      "wortschatz": "ws-04.json"
     },
     {
       "id": "05",
       "nummer": 5,
-      "titel": "Wo? Wann? Orte & Tageszeiten",
-      "titelFa": "کُجا؟ کِی؟",
-      "untertitel": "Uni, Café, Kino … morgens, mittags, abends",
-      "standard": "bald"
+      "titel": "Gestern – das Präteritum",
+      "titelFa": "گُذَشتِه‌ی ساده",
+      "untertitel": "Tagesablauf, Uhrzeit, Orte, Verneinung, Fragen, war & hatte",
+      "standard": "offen",
+      "datei": "05-gestern.json",
+      "zusatz": [
+        "05-zusatz-1.json",
+        "05-umgangssprache.json"
+      ],
+      "wortschatz": "ws-05.json"
+    },
+    {
+      "id": "06",
+      "nummer": 6,
+      "titel": "Wen hast du gesehen? – mein, dein & را",
+      "titelFa": "خواهَرَت را دیدَم",
+      "untertitel": "Präteritum, Possessivpronomen, Objekt mit را, in der Stadt",
+      "datei": "06-wen.json",
+      "standard": "offen",
+      "zusatz": [
+        "06-zusatz-1.json",
+        "06-umgangssprache.json"
+      ],
+      "wortschatz": "ws-06.json"
+    },
+    {
+      "id": "07",
+      "nummer": 7,
+      "titel": "Die Feier – Plural",
+      "titelFa": "جَمع",
+      "untertitel": "Präteritum, Mehrzahl mit ـها / ـان, Zahlen bis 100, Alter",
+      "datei": "07-plural.json",
+      "standard": "offen",
+      "zusatz": [
+        "07-zusatz-1.json",
+        "07-umgangssprache.json"
+      ],
+      "wortschatz": "ws-07.json"
     }
   ]
 }

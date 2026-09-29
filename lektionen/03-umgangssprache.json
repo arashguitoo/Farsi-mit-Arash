@@ -1,0 +1,272 @@
+{
+ "id": "ug",
+ "art": "umgangssprache",
+ "titel": "Umgangssprache: So spricht man im Alltag",
+ "beschreibung": "Freiwilliger Extra-Teil: haben, Familie und Zählen im Gespräch.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "So spricht man: haben",
+   "vorschau": "داره دارین",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Schrift ≠ Gespräch",
+     "text": "<p>Im Gespräch klingt <b>haben</b> etwas anders:</p><ul><li><span class='fa'>دارَد → داره</span> <i>dāre</i> (-ad wird -e)</li><li><span class='fa'>دارید → دارین</span> <i>dārīn</i></li><li><span class='fa'>دارَند → دارَن</span> <i>dāran</i></li><li><span class='fa'>یِک → یه</span> <i>ye</i> (ein)</li></ul><p>In der Familie sagt man liebevoll <span class='fa'>داداش</span> <i>dādāsch</i> (Bruder), <span class='fa'>آبجی</span> <i>ābdschī</i> (Schwester), <span class='fa'>مامان</span> <i>māmān</i> und <span class='fa'>بابا</span> <i>bābā</i>.</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "paare",
+     "links": "x",
+     "paare": [
+      {
+       "fa": "دارَد",
+       "tr": "dārad",
+       "de": "er/sie hat",
+       "x": "داره"
+      },
+      {
+       "fa": "دارید",
+       "tr": "dārīd",
+       "de": "ihr habt / Sie haben",
+       "x": "دارین"
+      },
+      {
+       "fa": "دارَند",
+       "tr": "dārand",
+       "de": "sie haben",
+       "x": "دارَن"
+      },
+      {
+       "fa": "نَدارَد",
+       "tr": "nadārad",
+       "de": "er/sie hat nicht",
+       "x": "نَداره"
+      },
+      {
+       "fa": "یِک",
+       "tr": "yek",
+       "de": "ein/eins",
+       "x": "یه"
+      },
+      {
+       "fa": "بَرادَر",
+       "tr": "barādar",
+       "de": "Bruder",
+       "x": "داداش"
+      }
+     ],
+     "titel": "Schrift ↔ Gespräch"
+    },
+    {
+     "typ": "sortieren",
+     "titel": "Schrift oder Gespräch?",
+     "frage": "Schriftsprache oder Umgangssprache?",
+     "kategorien": [
+      "✍️ Schriftsprache",
+      "🗣️ Umgangssprache"
+     ],
+     "items": [
+      {
+       "fa": "دارَد",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "دارید",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "دارَند",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "نَدارَد",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "یِک",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "داره",
+       "k": 1,
+       "say": false,
+       "e": "<i>dāre</i> – geschrieben: <span class='fa'>دارَد</span>"
+      },
+      {
+       "fa": "دارین",
+       "k": 1,
+       "say": false,
+       "e": "<i>dārīn</i> – geschrieben: <span class='fa'>دارید</span>"
+      },
+      {
+       "fa": "دارَن",
+       "k": 1,
+       "say": false,
+       "e": "<i>dāran</i> – geschrieben: <span class='fa'>دارَند</span>"
+      },
+      {
+       "fa": "نَداره",
+       "k": 1,
+       "say": false,
+       "e": "<i>nadāre</i> – geschrieben: <span class='fa'>نَدارَد</span>"
+      },
+      {
+       "fa": "یه",
+       "k": 1,
+       "say": false,
+       "e": "<i>ye</i> – geschrieben: <span class='fa'>یِک</span>"
+      },
+      {
+       "fa": "داداش",
+       "k": 1,
+       "say": false,
+       "e": "<i>dādāsch</i> – geschrieben: <span class='fa'>بَرادَر</span>"
+      }
+     ]
+    },
+    {
+     "typ": "memory",
+     "links": "x",
+     "paare": [
+      {
+       "fa": "دارَد",
+       "tr": "dārad",
+       "de": "er/sie hat",
+       "x": "داره"
+      },
+      {
+       "fa": "دارید",
+       "tr": "dārīd",
+       "de": "ihr habt / Sie haben",
+       "x": "دارین"
+      },
+      {
+       "fa": "دارَند",
+       "tr": "dārand",
+       "de": "sie haben",
+       "x": "دارَن"
+      },
+      {
+       "fa": "نَدارَد",
+       "tr": "nadārad",
+       "de": "er/sie hat nicht",
+       "x": "نَداره"
+      },
+      {
+       "fa": "یِک",
+       "tr": "yek",
+       "de": "ein/eins",
+       "x": "یه"
+      },
+      {
+       "fa": "بَرادَر",
+       "tr": "barādar",
+       "de": "Bruder",
+       "x": "داداش"
+      }
+     ],
+     "titel": "Memory: Schrift & Gespräch"
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Wie viele? – im Gespräch",
+   "vorschau": "چَندتا؟ دوتا",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Zwei Freunde unterhalten sich",
+     "text": "Umgangssprache! Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "تو خواهَر بَرادَر داری؟",
+       "tr": "to chāhar barādar dārī?",
+       "de": "Hast du Geschwister?"
+      },
+      {
+       "fa": "آرِه، یه داداش دارَم و دوتا آبجی.",
+       "tr": "āre, ye dādāsch dāram o dotā ābdschī.",
+       "de": "Ja, ich hab einen Bruder und zwei Schwestern."
+      },
+      {
+       "fa": "داداشِت ماشین داره؟",
+       "tr": "dādāschet māschīn dāre?",
+       "de": "Hat dein Bruder ein Auto?"
+      },
+      {
+       "fa": "آرِه، یه ماشینِ نو داره!",
+       "tr": "āre, ye māschīn-e no dāre!",
+       "de": "Ja, er hat ein neues Auto!"
+      },
+      {
+       "fa": "تو چَندتا گُربِه داری؟",
+       "tr": "to tschandtā gorbe dārī?",
+       "de": "Wie viele Katzen hast du?"
+      },
+      {
+       "fa": "سه‌تا!",
+       "tr": "setā!",
+       "de": "Drei!"
+      }
+     ]
+    },
+    {
+     "typ": "info",
+     "titel": "Zählen im Gespräch: ـتا",
+     "text": "<p>Im Gespräch hängt man beim Zählen gern <span class='fa'>تا</span> <i>tā</i> an die Zahl:</p><p>Schriftsprache: <span class='fa'>چَند گُربِه داری؟ – سِه گُربِه دارَم.</span></p><p>Im Gespräch: <span class='fa'>چَندتا گُربِه داری؟ – سه‌تا.</span> <i>tschandtā gorbe dārī? – setā.</i></p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "wahl",
+     "titel": "Verstanden?",
+     "fragen": [
+      {
+       "frage": "Wie viele Schwestern hat die Person?",
+       "optionen": [
+        "zwei",
+        "eine",
+        "drei"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was hat der Bruder?",
+       "optionen": [
+        "ein neues Auto",
+        "eine Katze",
+        "keine Zeit"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "<span class='fa'>داره</span> in der Schriftsprache:",
+       "optionen": [
+        "دارَد",
+        "دارَم",
+        "دارَند"
+       ],
+       "richtig": 0,
+       "optFa": true
+      },
+      {
+       "frage": "<span class='fa'>چَندتا؟</span> bedeutet …",
+       "optionen": [
+        "Wie viele?",
+        "Wie alt?",
+        "Wann?"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

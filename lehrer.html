@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Lehrer-Übersicht · Farsi-Lernpfad</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Vazirmatn:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css">
+<style>
+  .wrap{max-width:1180px}
+  .leiste-oben{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:16px 0}
+  .leiste-oben .feld{max-width:280px}
+  .lk-kopf{margin:24px 0 8px;display:flex;justify-content:space-between;align-items:flex-end;gap:10px;flex-wrap:wrap}
+  .lk-kopf h2{margin:0}
+  .ziele{columns:2 280px;margin:6px 0 0;padding-left:1.2em;font-size:.9rem}
+  .paket-t{margin:26px 0 6px;padding:6px 12px;border-radius:10px;background:var(--lapis-hell);font-weight:800}
+  .paket-t.ug{background:var(--granat-hell);color:var(--granat)}
+  .paket-t.zus{background:var(--tuerkis-hell);color:var(--tuerkis)}
+  details.st-block{background:var(--karte);border:1px solid var(--linie);border-radius:14px;margin:8px 0;box-shadow:var(--schatten)}
+  details.st-block>summary{cursor:pointer;padding:10px 14px;display:flex;gap:10px;align-items:center;list-style:none}
+  details.st-block>summary::-webkit-details-marker{display:none}
+  details.st-block>summary::before{content:"▸";color:var(--tinte2);transition:transform .15s}
+  details.st-block[open]>summary::before{transform:rotate(90deg)}
+  .st-id{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.78rem;background:var(--papier2);border-radius:6px;padding:2px 7px;color:var(--tinte2);white-space:nowrap}
+  .st-inhalt{padding:0 14px 12px}
+  .kk{border-top:1px dashed var(--linie);padding:10px 0;position:relative}
+  .kk-kopf{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:6px}
+  .typ{font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:.05em;border-radius:6px;padding:1px 7px;background:var(--safran-hell);color:#8a5400}
+  .kk-kopf b{font-size:.95rem}
+  .kk .ab{margin-left:auto;display:flex;gap:6px}
+  .kk table.t td,.kk table.t th{padding:4px 6px;font-size:.88rem}
+  .kk .fa{font-size:1.2rem;font-weight:700;color:var(--lapis)}
+  .kk .tr{font-size:.85rem}
+  .opt-r{display:inline-block;border-radius:8px;padding:1px 8px;margin:2px 4px 2px 0;background:var(--papier2);font-size:.88rem}
+  .opt-r.ok{background:var(--gruen-hell);color:var(--gruen);font-weight:800}
+  .frage-z{padding:4px 0;border-bottom:1px solid var(--papier2)}
+  .erkl-z{font-size:.8rem;color:var(--tinte2)}
+  .info-txt{font-size:.9rem;background:var(--papier);border-radius:10px;padding:6px 10px}
+  .info-txt .fa{font-size:1.1rem}
+  .notiz{margin-top:6px;border-left:4px solid var(--safran);background:var(--safran-hell);border-radius:8px;padding:6px 10px;font-size:.88rem}
+  .notiz.erledigt{opacity:.5;text-decoration:line-through}
+  .hat-notiz{outline:2px solid var(--safran);outline-offset:4px;border-radius:6px}
+  .treffer{background:#fff3b0}
+  .seitenleiste{position:fixed;right:16px;bottom:16px;z-index:30}
+  .ws-tab td .fa{font-size:1.1rem}
+  @media print{
+    .kopf,.leiste-oben,.ab,.seitenleiste,.tabs,.no-print{display:none !important}
+    details.st-block{box-shadow:none;break-inside:avoid-page}
+    body{background:#fff}
+  }
+</style>
+</head>
+<body>
+<header class="kopf">
+  <div class="wrap">
+    <a href="konsole.html" class="medaillon" style="text-decoration:none">فا</a>
+    <div><h1>Lehrer-Übersicht</h1><div class="unter">Alle Lektionen mit Lösungen · zum schnellen Prüfen und Korrigieren</div></div>
+    <div class="rechts"><a class="kopf-btn" href="konsole.html">← Konsole</a><button class="kopf-btn versteckt" id="btnLogout">Abmelden</button></div>
+  </div>
+</header>
+
+<main class="wrap" style="padding-bottom:80px">
+  <section id="login" class="gruss">
+    <div class="karte login" style="max-width:440px;margin:0 auto">
+      <h2 style="margin:0">Anmelden</h2>
+      <p class="muted klein" style="margin:0">Mit demselben Konto wie in der Konsole.</p>
+      <input class="feld" id="email" type="email" placeholder="E-Mail" autocomplete="username">
+      <input class="feld" id="pw" type="password" placeholder="Passwort" autocomplete="current-password">
+      <button class="btn" id="btnLogin">Anmelden</button>
+      <div class="klein" id="loginMsg" style="color:var(--granat)"></div>
+    </div>
+  </section>
+
+  <section id="app" class="versteckt">
+    <div class="tabs" id="lekTabs"></div>
+    <div class="leiste-oben">
+      <input class="feld" id="suche" placeholder="🔍 in allen Lektionen suchen (Persisch, Umschrift, Deutsch) …">
+      <label class="klein"><input type="checkbox" id="zeigeZus" checked> Zusatzübungen</label>
+      <label class="klein"><input type="checkbox" id="zeigeUg" checked> Umgangssprache</label>
+      <label class="klein"><input type="checkbox" id="zeigeWs" checked> Wortschatz</label>
+      <button class="btn zwei klein" id="alleAuf">alle aufklappen</button>
+      <button class="btn zwei klein" id="alleZu">alle zuklappen</button>
+      <button class="btn zwei klein" id="drucken">🖨 drucken</button>
+    </div>
+    <div id="inhalt"><p class="muted">Lade Lektionen …</p></div>
+  </section>
+</main>
+
+<div class="seitenleiste versteckt" id="notizKnopf"><button class="btn safran" id="btnNotizen">✏️ Korrekturen <span id="anzNotizen">0</span></button></div>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+<script src="assets/core.js"></script>
+<script>
+(function () {
+  const F = window.FARSI, { $, $$, esc, toast } = F;
+  const LS = "farsi_korrekturen_v1";
+  let INDEX = null, LEK = {}, WS = {}, aktLek = null, NOTIZEN = {}, fbAktiv = false;
+
+  F.initFB();
+  const auth = firebase.auth();
+  $("#btnLogin").onclick = async () => {
+    $("#loginMsg").textContent = "";
+    try { await auth.signInWithEmailAndPassword($("#email").value.trim(), $("#pw").value); }
+    catch (e) { $("#loginMsg").textContent = "Anmeldung fehlgeschlagen: " + (e.code || e.message); }
+  };
+  $("#pw").addEventListener("keydown", e => { if (e.key === "Enter") $("#btnLogin").click(); });
+  $("#btnLogout").onclick = () => auth.signOut();
+  auth.onAuthStateChanged(async user => {
+    $("#login").classList.toggle("versteckt", !!user);
+    $("#app").classList.toggle("versteckt", !user);
+    $("#btnLogout").classList.toggle("versteckt", !user);
+    $("#notizKnopf").classList.toggle("versteckt", !user);
+    if (user) await start();
+  });
+
+  /* ---------- Notizen: lokal + Firebase ---------- */
+  function ladeLokal() { try { return JSON.parse(localStorage.getItem(LS)) || {}; } catch (e) { return {}; } }
+  function speichereLokal() { try { localStorage.setItem(LS, JSON.stringify(NOTIZEN)); } catch (e) { } }
+  function notizenStart() {
+    NOTIZEN = ladeLokal();
+    try {
+      F.ref("korrekturen").on("value", s => {
+        fbAktiv = true;
+        const r = s.val() || {};
+        NOTIZEN = Object.assign({}, NOTIZEN, r);
+        Object.keys(NOTIZEN).forEach(k => { if (!r[k] && NOTIZEN[k] && NOTIZEN[k].sync) delete NOTIZEN[k]; });
+        speichereLokal(); markiereNotizen();
+      }, () => { fbAktiv = false; });
+    } catch (e) { }
+    markiereNotizen();
+  }
+  const schluessel = id => id.replace(/[.#$\[\]\/·\s]+/g, "_");
+  async function setzeNotiz(id, daten) {
+    const k = schluessel(id);
+    if (daten) NOTIZEN[k] = Object.assign({ id, ts: Date.now(), sync: true }, daten); else delete NOTIZEN[k];
+    speichereLokal(); markiereNotizen();
+    try { await F.mitTimeout(F.ref("korrekturen/" + k).set(daten ? NOTIZEN[k] : null), 6000); }
+    catch (e) { toast("Lokal gespeichert (Firebase: Regel „korrekturen“ fehlt oder offline)."); }
+  }
+  function markiereNotizen() {
+    const offen = Object.values(NOTIZEN).filter(n => !n.erledigt).length;
+    $("#anzNotizen").textContent = offen;
+    $$(".kk[data-id]").forEach(el => {
+      const n = NOTIZEN[schluessel(el.dataset.id)];
+      el.classList.toggle("hat-notiz", !!n && !n.erledigt);
+      const box = el.querySelector(".notiz-box");
+      box.innerHTML = n ? `<div class="notiz ${n.erledigt ? "erledigt" : ""}">✏️ ${esc(n.text)} <span class="mini">· ${new Date(n.ts).toLocaleString("de-DE")}</span></div>` : "";
+    });
+  }
+
+  /* ---------- Laden ---------- */
+  async function start() {
+    if (INDEX) return;
+    INDEX = await F.ladeJSON("lektionen/index.json");
+    await Promise.all(INDEX.lektionen.filter(l => l.datei).map(async l => {
+      try { LEK[l.id] = await F.ladeLektion(l); } catch (e) { console.warn(e); }
+      if (l.wortschatz) { try { WS[l.id] = (await F.ladeJSON("lektionen/" + l.wortschatz)).woerter; } catch (e) { } }
+    }));
+    const lks = INDEX.lektionen.filter(l => LEK[l.id]);
+    aktLek = (new URLSearchParams(location.search)).get("l") || lks[0].id;
+    $("#lekTabs").innerHTML = lks.map(l => `<button class="tab" data-l="${l.id}">L${l.nummer} <span class="klein">${esc(l.titel.split(/[–:]/)[0].trim())}</span></button>`).join("");
+    $$("#lekTabs [data-l]").forEach(b => b.onclick = () => { aktLek = b.dataset.l; $("#suche").value = ""; zeichne(); });
+    ["zeigeZus", "zeigeUg", "zeigeWs"].forEach(id => $("#" + id).onchange = zeichne);
+    $("#suche").oninput = () => zeichne();
+    $("#alleAuf").onclick = () => $$("details.st-block").forEach(d => d.open = true);
+    $("#alleZu").onclick = () => $$("details.st-block").forEach(d => d.open = false);
+    $("#drucken").onclick = () => { $$("details.st-block").forEach(d => d.open = true); setTimeout(() => print(), 200); };
+    $("#btnNotizen").onclick = notizenDialog;
+    notizenStart();
+    zeichne();
+  }
+
+  /* ---------- Labels (wie in der Lektion) ---------- */
+  function stLabel(L, i) {
+    const s = L.stationen[i];
+    if (!s.zusatz) return { kurz: "S" + L.stationen.slice(0, i + 1).filter(x => !x.zusatz).length, lang: "Station " + L.stationen.slice(0, i + 1).filter(x => !x.zusatz).length };
+    const n = L.stationen.slice(0, i + 1).filter(x => x.paketId === s.paketId).length;
+    return s.paketArt === "umgangssprache" ? { kurz: "U" + n, lang: "Umgangssprache " + n } : { kurz: "Z" + n, lang: "Zusatz " + n };
+  }
+
+  /* ---------- Karten-Darstellung ---------- */
+  const fa = t => `<span class="fa">${esc(t)}</span>`;
+  const z3 = (a, b, c) => `<tr><td>${a}</td><td class="tr">${esc(b || "")}</td><td>${esc(c || "")}</td></tr>`;
+  function tabelle(zeilen) { return `<table class="t"><tr><th>Persisch</th><th>Umschrift</th><th>Deutsch / Lösung</th></tr>${zeilen.join("")}</table>`; }
+  function karteHTML(k) {
+    const t = k.typ;
+    if (t === "info") return `<div class="info-txt">${k.text || ""}</div>${k.beispiele ? tabelle(k.beispiele.map(b => z3(fa(b.fa), b.tr, (b.emoji ? b.emoji + " " : "") + (b.de || "")))) : ""}`;
+    if (t === "buchstaben") return tabelle(k.buchstaben.map(b => z3(fa(b.fa) + (b.nameFa ? " " + fa(b.nameFa) : ""), b.laut, `${b.name}${b.verbindet === false ? " · verbindet nicht" : ""}${b.beispiel ? " · Bsp.: " + b.beispiel.fa + " " + b.beispiel.tr + " " + (b.beispiel.de || "") : ""}`)));
+    if (t === "paare" || t === "memory") return `<div class="mini">Gegenseite: ${esc(k.links || "de")}</div>` + tabelle(k.paare.map(p => z3(fa(p.fa), p.tr, k.links === "x" ? p.x : k.links === "emoji" ? `${p.emoji || ""} ${p.de || ""}` : p.de)));
+    if (t === "wahl") return k.fragen.map((f, i) => `<div class="frage-z"><b>F${i + 1}</b> ${f.emoji || ""} ${f.fa ? fa(f.fa) : ""} ${f.frage || ""}<br>
+        ${f.optionen.map((o, j) => `<span class="opt-r ${j === f.richtig ? "ok" : ""} ${f.optFa ? "fa" : ""}">${j === f.richtig ? "✓ " : ""}${esc(o)}</span>`).join("")}
+        ${f.erkl ? `<div class="erkl-z">💡 ${f.erkl}</div>` : ""}</div>`).join("");
+    if (t === "bauen") return `<div class="mini">${k.trenner ? "Satzbau" : k.zeigen ? "Abschreiben" : "Wort bauen"}</div>` + tabelle(k.woerter.map(w => z3(fa(w.fa), w.tr, `${w.de || ""} · Kacheln: ${w.teile.join(" | ")}${w.extra && w.extra.length ? " · Ablenker: " + w.extra.join(" | ") : ""}`)));
+    if (t === "sortieren") return `<div class="mini">${k.frage || ""} · Kategorien: ${k.kategorien.map((c, i) => (i + 1) + ") " + c).join(" · ")}</div>` + tabelle(k.items.map(it => z3(fa(it.fa), it.tr, `→ ${k.kategorien[it.k]}${it.e ? " · " + it.e.replace(/<[^>]+>/g, "") : ""}`)));
+    if (t === "finden") return `<div class="mini">${k.frage}</div>` + tabelle(k.woerter.map(w => z3(fa(w.fa), w.tr, w.ja ? "✓ gehört dazu" : "– gehört nicht dazu")));
+    if (t === "lesen") return tabelle(k.karten.map(w => z3(fa(w.fa), w.tr, (w.emoji ? w.emoji + " " : "") + w.de)));
+    if (t === "tempo") return `<div class="mini">${k.aufgabe || ""} · ${k.sekunden}s · Ziel ${k.ziel} · Modus ${k.modus}</div>` + tabelle(k.woerter.map(w => z3(fa(w.fa), w.tr, w.a || (k.modus === "de" ? w.de : w.tr))));
+    if (t === "text") return tabelle(k.zeilen.map(z => z3(fa(z.fa), z.tr, z.de)));
+    if (t === "ordnen") return `<div class="mini">${k.frage || ""} (richtige Reihenfolge)</div>` + tabelle(k.items.map((z, i) => z3(`${i + 1}. ` + fa(z.fa), z.tr, z.de)));
+    return `<pre>${esc(JSON.stringify(k, null, 1))}</pre>`;
+  }
+  const TYPNAME = { info: "Info", buchstaben: "Buchstaben", paare: "Paare", memory: "Memory", wahl: "Auswahl", bauen: "Bauen", sortieren: "Sortieren", finden: "Finden", lesen: "Karteikarten", tempo: "Blitz", text: "Lesetext", ordnen: "Reihenfolge" };
+  function kartenTitel(k) { return k.titel || (k.typ === "bauen" && k.trenner ? "Satzbau" : TYPNAME[k.typ]); }
+  const textAus = k => JSON.stringify(k).toLowerCase();
+
+  function zeichne() {
+    const q = $("#suche").value.trim().toLowerCase();
+    const zus = $("#zeigeZus").checked, ug = $("#zeigeUg").checked, zws = $("#zeigeWs").checked;
+    $$("#lekTabs [data-l]").forEach(b => b.classList.toggle("an", !q && b.dataset.l === aktLek));
+    const lks = q ? INDEX.lektionen.filter(l => LEK[l.id]) : INDEX.lektionen.filter(l => l.id === aktLek);
+    let html = "", treffer = 0;
+    for (const l of lks) {
+      const L = LEK[l.id];
+      let block = "";
+      if (!q) {
+        const ziele = L.stationen.filter(s => !s.zusatz).map(s => s.titel);
+        block += `<div class="lk-kopf"><div><div class="muted klein">Lektion ${l.nummer} · Datei <code>${esc(l.datei)}</code></div><h2>${esc(L.titel)} <span class="fa" style="font-size:1.2rem;color:var(--lapis)">${esc(L.titelFa || "")}</span></h2></div>
+          <a class="btn zwei klein no-print" href="lektion.html?id=${l.id}" target="_blank">▶ Lektion öffnen</a></div>
+          <div class="karte"><b>Inhalt:</b> ${esc(L.einleitung || "")}<ol class="ziele">${ziele.map(z => `<li>${esc(z)}</li>`).join("")}</ol></div>`;
+      }
+      let letztesPaket = null;
+      L.stationen.forEach((s, i) => {
+        if (s.zusatz && s.paketArt === "umgangssprache" && !ug) return;
+        if (s.zusatz && s.paketArt !== "umgangssprache" && !zus) return;
+        const lab = stLabel(L, i);
+        const karten = s.karten.map((k, ki) => ({ k, ki })).filter(x => !q || textAus(x.k).includes(q) || s.titel.toLowerCase().includes(q));
+        if (q && !karten.length) return;
+        treffer += karten.length;
+        if (!q && s.paketId !== letztesPaket && s.zusatz) {
+          const pk = L.pakete.find(p => p.id === s.paketId);
+          block += `<div class="paket-t ${s.paketArt === "umgangssprache" ? "ug" : "zus"}">${s.paketArt === "umgangssprache" ? "🗣️ " : "➕ "}${esc(pk ? pk.titel : "Zusatz")} <span class="mini">(${esc(s.paketId)})</span></div>`;
+        }
+        letztesPaket = s.paketId || null;
+        block += `<details class="st-block" ${q ? "open" : ""}><summary><span class="st-id">L${l.nummer}·${lab.kurz}</span><b>${esc(lab.lang)}: ${esc(s.titel)}</b>
+          <span class="mini">${s.karten.length} Karten · id <code>${esc(s.id)}</code></span>
+          <a class="btn zwei klein no-print" style="margin-left:auto" href="lektion.html?id=${l.id}&st=${i + 1}" target="_blank" onclick="event.stopPropagation()">▶ ausprobieren</a></summary>
+          <div class="st-inhalt">${karten.map(({ k, ki }) => {
+            const id = `L${l.nummer}·${lab.kurz}·K${ki + 1}`;
+            return `<div class="kk" data-id="${esc(id)}" data-info="${esc(`${lab.lang}: ${s.titel} · Karte ${ki + 1} (${TYPNAME[k.typ] || k.typ}: ${kartenTitel(k)})`)}">
+              <div class="kk-kopf"><span class="st-id">${esc(id)}</span><span class="typ">${esc(TYPNAME[k.typ] || k.typ)}</span><b>${kartenTitel(k)}</b>
+                <span class="ab"><button class="btn zwei klein" data-notiz>✏️ Korrektur</button></span></div>
+              ${karteHTML(k)}<div class="notiz-box"></div></div>`;
+          }).join("")}</div></details>`;
+      });
+      if (zws && WS[l.id] && !q) {
+        const w = WS[l.id];
+        block += `<div class="paket-t">📚 Wortschatz-Trainer · ${w.length} Wörter <span class="mini">(${esc(l.wortschatz)})</span></div>
+          <details class="st-block"><summary><span class="st-id">L${l.nummer}·WS</span><b>Wortliste</b></summary><div class="st-inhalt">
+          <div class="kk" data-id="L${l.nummer}·WS" data-info="Wortschatz Lektion ${l.nummer}"><div class="kk-kopf"><span class="st-id">L${l.nummer}·WS</span><span class="typ">Wortschatz</span><b>alle Wörter</b><span class="ab"><button class="btn zwei klein" data-notiz>✏️ Korrektur</button></span></div>
+          <table class="t ws-tab"><tr><th>Persisch</th><th>Umschrift</th><th>Deutsch</th><th>Kategorie</th></tr>${w.map(e => `<tr><td>${fa(e.fa)}${e.stamm ? ` <span class="mini">(Präsensstamm ${fa(e.stamm)} ${esc(e.stammTr)})</span>` : ""}</td><td class="tr">${esc(e.tr)}</td><td>${e.emoji || ""} ${esc(e.de)}</td><td class="mini">${esc(e.kat)}</td></tr>`).join("")}</table>
+          <div class="notiz-box"></div></div></div></details>`;
+      }
+      html += block;
+    }
+    if (q) html = `<p class="muted">${treffer} Karte(n) mit „${esc(q)}“ gefunden.</p>` + html;
+    $("#inhalt").innerHTML = html || `<p class="muted">Nichts gefunden.</p>`;
+    $$("#inhalt [data-notiz]").forEach(b => b.onclick = () => notizBearbeiten(b.closest(".kk")));
+    markiereNotizen();
+  }
+
+  /* ---------- Notiz-Dialoge ---------- */
+  function notizBearbeiten(el) {
+    const id = el.dataset.id, n = NOTIZEN[schluessel(id)];
+    const m = document.createElement("div"); m.className = "modal";
+    m.innerHTML = `<div class="karte"><div class="st-titel"><h3 style="margin:0">Korrektur · <span class="st-id">${esc(id)}</span></h3><button class="btn zwei klein" data-zu>✕</button></div>
+      <p class="klein muted">${esc(el.dataset.info)}</p>
+      <textarea class="feld" rows="5" placeholder="Was soll geändert werden? z. B. „F2: richtige Antwort ist …“ oder „Umschrift: …“">${esc(n ? n.text : "")}</textarea>
+      <div class="btnreihe" style="margin-top:10px"><button class="btn" data-ok>Speichern</button>
+      ${n ? `<button class="btn zwei" data-erl>${n.erledigt ? "↺ wieder offen" : "✓ erledigt"}</button><button class="btn rot" data-del>Löschen</button>` : ""}</div></div>`;
+    document.body.appendChild(m);
+    const ta = m.querySelector("textarea"); ta.focus();
+    m.addEventListener("click", e => { if (e.target === m || e.target.hasAttribute("data-zu")) m.remove(); });
+    m.querySelector("[data-ok]").onclick = async () => { const t = ta.value.trim(); await setzeNotiz(id, t ? { text: t, info: el.dataset.info, erledigt: n ? !!n.erledigt : false } : null); m.remove(); };
+    const erl = m.querySelector("[data-erl]"); if (erl) erl.onclick = async () => { await setzeNotiz(id, Object.assign({}, n, { erledigt: !n.erledigt })); m.remove(); };
+    const del = m.querySelector("[data-del]"); if (del) del.onclick = async () => { await setzeNotiz(id, null); m.remove(); };
+  }
+  function exportText(nurOffen) {
+    const liste = Object.values(NOTIZEN).filter(n => !nurOffen || !n.erledigt).sort((a, b) => a.id.localeCompare(b.id, "de", { numeric: true }));
+    return `Korrekturen Farsi-Lernpfad – ${new Date().toLocaleDateString("de-DE")}\n\n` + liste.map(n => `[${n.id}] ${n.info || ""}${n.erledigt ? " (erledigt)" : ""}\n→ ${n.text}`).join("\n\n");
+  }
+  function notizenDialog() {
+    const liste = Object.values(NOTIZEN).sort((a, b) => a.id.localeCompare(b.id, "de", { numeric: true }));
+    const m = document.createElement("div"); m.className = "modal";
+    m.innerHTML = `<div class="karte"><div class="st-titel"><h3 style="margin:0">✏️ Korrekturen (${liste.filter(n => !n.erledigt).length} offen)</h3><button class="btn zwei klein" data-zu>✕</button></div>
+      <p class="klein muted">${fbAktiv ? "Gespeichert in Firebase – auf allen Geräten sichtbar." : "Nur auf diesem Gerät gespeichert (für Firebase: Regel „korrekturen“ ergänzen)."} Zum Einarbeiten: offene Korrekturen kopieren und an Claude schicken.</p>
+      ${liste.length ? `<table class="t">${liste.map(n => `<tr class="${n.erledigt ? "inaktiv" : ""}"><td><button class="st-id" data-spring="${esc(n.id)}" style="border:0;cursor:pointer">${esc(n.id)}</button></td><td class="klein">${esc(n.text)}<div class="mini">${esc(n.info || "")}</div></td><td>${n.erledigt ? "✓" : ""}</td></tr>`).join("")}</table>` : `<p class="muted">Noch keine Korrekturen.</p>`}
+      <div class="btnreihe" style="margin-top:12px"><button class="btn" data-kopie>📋 offene kopieren</button><button class="btn zwei" data-datei>⬇ als Textdatei</button>
+      ${liste.some(n => n.erledigt) ? `<button class="btn zwei" data-aufr>🧹 erledigte löschen</button>` : ""}</div></div>`;
+    document.body.appendChild(m);
+    m.addEventListener("click", e => { if (e.target === m || e.target.hasAttribute("data-zu")) m.remove(); });
+    m.querySelector("[data-kopie]").onclick = async () => { try { await navigator.clipboard.writeText(exportText(true)); toast("Kopiert – jetzt einfach im Chat einfügen."); } catch (e) { prompt("Zum Kopieren:", exportText(true)); } };
+    m.querySelector("[data-datei]").onclick = () => { const a = document.createElement("a"); a.href = URL.createObjectURL(new Blob([exportText(false)], { type: "text/plain;charset=utf-8" })); a.download = "farsi-korrekturen.txt"; a.click(); };
+    const aufr = m.querySelector("[data-aufr]"); if (aufr) aufr.onclick = async () => { for (const n of liste.filter(n => n.erledigt)) await setzeNotiz(n.id, null); m.remove(); notizenDialog(); };
+    $$("[data-spring]", m).forEach(b => b.onclick = () => {
+      const id = b.dataset.spring, nr = (id.match(/^L(\d+)/) || [])[1];
+      const l = INDEX.lektionen.find(x => String(x.nummer) === nr); if (!l) return;
+      m.remove(); $("#suche").value = ""; aktLek = l.id; zeichne();
+      const el = $$(".kk[data-id]").find(x => x.dataset.id === id);
+      if (el) { el.closest("details").open = true; el.scrollIntoView({ behavior: "smooth", block: "center" }); }
+    });
+  }
+  window.LEHRER = { start, zeichne, setzeNotiz, notizen: () => NOTIZEN, exportText };
+})();
+</script>
+</body>
+</html>

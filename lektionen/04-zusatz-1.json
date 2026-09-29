@@ -1,0 +1,1744 @@
+{
+ "id": "z1",
+ "titel": "Trainingspaket 1",
+ "beschreibung": "Konjugation auf Zeit, Satzbau, Gemüse-, Obst- und Essens-Training.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "Konjugations-Blitz",
+   "vorschau": "دوست دارَم",
+   "karten": [
+    {
+     "typ": "tempo",
+     "titel": "Blitz: mögen",
+     "aufgabe": "Passende Form?",
+     "modus": "de",
+     "sekunden": 45,
+     "ziel": 15,
+     "optFa": true,
+     "woerter": [
+      {
+       "fa": "مَن",
+       "a": "دوست دارَم"
+      },
+      {
+       "fa": "تو",
+       "a": "دوست داری"
+      },
+      {
+       "fa": "او",
+       "a": "دوست دارَد"
+      },
+      {
+       "fa": "ما",
+       "a": "دوست داریم"
+      },
+      {
+       "fa": "شُما",
+       "a": "دوست دارید"
+      },
+      {
+       "fa": "آنها",
+       "a": "دوست دارَند"
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: nicht mögen",
+     "aufgabe": "Passende verneinte Form?",
+     "modus": "de",
+     "sekunden": 45,
+     "ziel": 15,
+     "optFa": true,
+     "woerter": [
+      {
+       "fa": "مَن",
+       "a": "دوست نَدارَم"
+      },
+      {
+       "fa": "تو",
+       "a": "دوست نَداری"
+      },
+      {
+       "fa": "او",
+       "a": "دوست نَدارَد"
+      },
+      {
+       "fa": "ما",
+       "a": "دوست نَداریم"
+      },
+      {
+       "fa": "شُما",
+       "a": "دوست نَدارید"
+      },
+      {
+       "fa": "آنها",
+       "a": "دوست نَدارَند"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Satzbau-Werkstatt",
+   "vorschau": "مَن … دوست دارَم",
+   "karten": [
+    {
+     "typ": "bauen",
+     "titel": "Satzbau: mögen",
+     "trenner": " ",
+     "woerter": [
+      {
+       "fa": "ما کَرَفس خِیلی دوست داریم.",
+       "tr": "mā karafs cheylī dūst dārīm.",
+       "de": "Wir mögen Sellerie sehr.",
+       "teile": [
+        "ما",
+        "کَرَفس",
+        "خِیلی",
+        "دوست",
+        "داریم"
+       ],
+       "extra": []
+      },
+      {
+       "fa": "شُما موز دوست نَدارید.",
+       "tr": "schomā mūz dūst nadārīd.",
+       "de": "Ihr mögt keine Bananen.",
+       "emoji": "🍌",
+       "teile": [
+        "شُما",
+        "موز",
+        "دوست",
+        "نَدارید"
+       ],
+       "extra": []
+      },
+      {
+       "fa": "شُما اِسفِناج خِیلی دوست دارید.",
+       "tr": "schomā esfenādsch cheylī dūst dārīd.",
+       "de": "Ihr mögt Spinat sehr.",
+       "teile": [
+        "شُما",
+        "اِسفِناج",
+        "خِیلی",
+        "دوست",
+        "دارید"
+       ],
+       "extra": []
+      },
+      {
+       "fa": "شُما شیر دوست دارید.",
+       "tr": "schomā schīr dūst dārīd.",
+       "de": "Ihr mögt Milch.",
+       "emoji": "🥛",
+       "teile": [
+        "شُما",
+        "شیر",
+        "دوست",
+        "دارید"
+       ],
+       "extra": []
+      },
+      {
+       "fa": "شُما بِرِنج دوست نَدارید.",
+       "tr": "schomā berendsch dūst nadārīd.",
+       "de": "Ihr mögt keinen Reis.",
+       "emoji": "🍚",
+       "teile": [
+        "شُما",
+        "بِرِنج",
+        "دوست",
+        "نَدارید"
+       ],
+       "extra": []
+      },
+      {
+       "fa": "شُما فِلفِل‌دُلمه‌ای دوست دارید.",
+       "tr": "schomā felfel-dolmeʾī dūst dārīd.",
+       "de": "Ihr mögt Paprika.",
+       "emoji": "🫑",
+       "teile": [
+        "شُما",
+        "فِلفِل‌دُلمه‌ای",
+        "دوست",
+        "دارید"
+       ],
+       "extra": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "titel": "Gemüse-Training",
+   "vorschau": "سیب‌زَمینی پیاز",
+   "karten": [
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "پیاز",
+       "tr": "piyāz",
+       "de": "Zwiebel",
+       "emoji": "🧅",
+       "gen": "Zwiebeln",
+       "kein": "keine Zwiebeln"
+      },
+      {
+       "fa": "سیب‌زَمینی",
+       "tr": "sīb-zamīnī",
+       "de": "Kartoffel",
+       "emoji": "🥔",
+       "gen": "Kartoffeln",
+       "kein": "keine Kartoffeln"
+      },
+      {
+       "fa": "بُروکُلی",
+       "tr": "brokolī",
+       "de": "Brokkoli",
+       "emoji": "🥦",
+       "gen": "Brokkoli",
+       "kein": "keinen Brokkoli"
+      },
+      {
+       "fa": "سیر",
+       "tr": "sīr",
+       "de": "Knoblauch",
+       "emoji": "🧄",
+       "gen": "Knoblauch",
+       "kein": "keinen Knoblauch"
+      },
+      {
+       "fa": "کَدو تَنبَل",
+       "tr": "kadū tanbal",
+       "de": "Kürbis",
+       "emoji": "🎃",
+       "gen": "Kürbis",
+       "kein": "keinen Kürbis"
+      },
+      {
+       "fa": "کاهو",
+       "tr": "kāhū",
+       "de": "Salat (Kopfsalat)",
+       "emoji": "🥬",
+       "gen": "Salat",
+       "kein": "keinen Salat"
+      }
+     ],
+     "titel": "Memory: Bild & Wort"
+    },
+    {
+     "typ": "memory",
+     "links": "tr",
+     "paare": [
+      {
+       "fa": "ذُرَّت",
+       "tr": "zorrat",
+       "de": "Mais",
+       "emoji": "🌽",
+       "gen": "Mais",
+       "kein": "keinen Mais"
+      },
+      {
+       "fa": "سیب‌زَمینی",
+       "tr": "sīb-zamīnī",
+       "de": "Kartoffel",
+       "emoji": "🥔",
+       "gen": "Kartoffeln",
+       "kein": "keine Kartoffeln"
+      },
+      {
+       "fa": "اِسفِناج",
+       "tr": "esfenādsch",
+       "de": "Spinat",
+       "gen": "Spinat",
+       "kein": "keinen Spinat"
+      },
+      {
+       "fa": "فِلفِل‌دُلمه‌ای",
+       "tr": "felfel-dolmeʾī",
+       "de": "Paprika",
+       "emoji": "🫑",
+       "gen": "Paprika",
+       "kein": "keine Paprika"
+      },
+      {
+       "fa": "لوبیا سَبز",
+       "tr": "lūbiyā sabz",
+       "de": "grüne Bohnen",
+       "gen": "grüne Bohnen",
+       "kein": "keine grünen Bohnen"
+      },
+      {
+       "fa": "خیار",
+       "tr": "chiyār",
+       "de": "Gurke",
+       "emoji": "🥒",
+       "gen": "Gurken",
+       "kein": "keine Gurken"
+      }
+     ],
+     "titel": "Memory: Schrift & Aussprache"
+    },
+    {
+     "typ": "bauen",
+     "titel": "Schreib das Wort ab",
+     "zeigen": true,
+     "woerter": [
+      {
+       "fa": "هَویج",
+       "tr": "hawīdsch",
+       "de": "Karotte",
+       "emoji": "🥕",
+       "gen": "Karotten",
+       "kein": "keine Karotten",
+       "teile": [
+        "ه",
+        "و",
+        "ی",
+        "ج"
+       ],
+       "extra": [
+        "ت"
+       ]
+      },
+      {
+       "fa": "کاهو",
+       "tr": "kāhū",
+       "de": "Salat (Kopfsalat)",
+       "emoji": "🥬",
+       "gen": "Salat",
+       "kein": "keinen Salat",
+       "teile": [
+        "ک",
+        "ا",
+        "ه",
+        "و"
+       ],
+       "extra": [
+        "ب"
+       ]
+      },
+      {
+       "fa": "بُروکُلی",
+       "tr": "brokolī",
+       "de": "Brokkoli",
+       "emoji": "🥦",
+       "gen": "Brokkoli",
+       "kein": "keinen Brokkoli",
+       "teile": [
+        "ب",
+        "ر",
+        "و",
+        "ک",
+        "ل",
+        "ی"
+       ],
+       "extra": [
+        "ک"
+       ]
+      },
+      {
+       "fa": "ذُرَّت",
+       "tr": "zorrat",
+       "de": "Mais",
+       "emoji": "🌽",
+       "gen": "Mais",
+       "kein": "keinen Mais",
+       "teile": [
+        "ذ",
+        "ر",
+        "ت"
+       ],
+       "extra": [
+        "ش"
+       ]
+      },
+      {
+       "fa": "اِسفِناج",
+       "tr": "esfenādsch",
+       "de": "Spinat",
+       "gen": "Spinat",
+       "kein": "keinen Spinat",
+       "teile": [
+        "ا",
+        "س",
+        "ف",
+        "ن",
+        "ا",
+        "ج"
+       ],
+       "extra": [
+        "ت"
+       ]
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitzlesen: Bedeutung",
+     "modus": "de",
+     "sekunden": 60,
+     "ziel": 12,
+     "woerter": [
+      {
+       "fa": "سیب‌زَمینی",
+       "de": "Kartoffel"
+      },
+      {
+       "fa": "پیاز",
+       "de": "Zwiebel"
+      },
+      {
+       "fa": "سیر",
+       "de": "Knoblauch"
+      },
+      {
+       "fa": "هَویج",
+       "de": "Karotte"
+      },
+      {
+       "fa": "خیار",
+       "de": "Gurke"
+      },
+      {
+       "fa": "گوجه‌فَرَنگی",
+       "de": "Tomate"
+      },
+      {
+       "fa": "ذُرَّت",
+       "de": "Mais"
+      },
+      {
+       "fa": "فِلفِل‌دُلمه‌ای",
+       "de": "Paprika"
+      },
+      {
+       "fa": "بُروکُلی",
+       "de": "Brokkoli"
+      },
+      {
+       "fa": "کاهو",
+       "de": "Salat (Kopfsalat)"
+      },
+      {
+       "fa": "بادِمجان",
+       "de": "Aubergine"
+      },
+      {
+       "fa": "نُخود سَبز",
+       "de": "Erbsen"
+      },
+      {
+       "fa": "زَنجَبیل",
+       "de": "Ingwer"
+      },
+      {
+       "fa": "کَدو تَنبَل",
+       "de": "Kürbis"
+      },
+      {
+       "fa": "لوبیا سَبز",
+       "de": "grüne Bohnen"
+      },
+      {
+       "fa": "اِسفِناج",
+       "de": "Spinat"
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitzlesen: Aussprache",
+     "modus": "tr",
+     "sekunden": 60,
+     "ziel": 12,
+     "woerter": [
+      {
+       "fa": "سیب‌زَمینی",
+       "tr": "sīb-zamīnī"
+      },
+      {
+       "fa": "پیاز",
+       "tr": "piyāz"
+      },
+      {
+       "fa": "سیر",
+       "tr": "sīr"
+      },
+      {
+       "fa": "هَویج",
+       "tr": "hawīdsch"
+      },
+      {
+       "fa": "خیار",
+       "tr": "chiyār"
+      },
+      {
+       "fa": "گوجه‌فَرَنگی",
+       "tr": "gūdsche-farangī"
+      },
+      {
+       "fa": "ذُرَّت",
+       "tr": "zorrat"
+      },
+      {
+       "fa": "فِلفِل‌دُلمه‌ای",
+       "tr": "felfel-dolmeʾī"
+      },
+      {
+       "fa": "بُروکُلی",
+       "tr": "brokolī"
+      },
+      {
+       "fa": "کاهو",
+       "tr": "kāhū"
+      },
+      {
+       "fa": "بادِمجان",
+       "tr": "bādemdschān"
+      },
+      {
+       "fa": "نُخود سَبز",
+       "tr": "nochod sabz"
+      },
+      {
+       "fa": "زَنجَبیل",
+       "tr": "zandschabīl"
+      },
+      {
+       "fa": "کَدو تَنبَل",
+       "tr": "kadū tanbal"
+      },
+      {
+       "fa": "لوبیا سَبز",
+       "tr": "lūbiyā sabz"
+      },
+      {
+       "fa": "اِسفِناج",
+       "tr": "esfenādsch"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d",
+   "titel": "Gemüse-Training 2",
+   "vorschau": "گُل‌کَلَم کَلَم",
+   "karten": [
+    {
+     "typ": "memory",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "کَدو سَبز",
+       "tr": "kadū sabz",
+       "de": "Zucchini",
+       "gen": "Zucchini",
+       "kein": "keine Zucchini"
+      },
+      {
+       "fa": "مارچوبه",
+       "tr": "mārtschūbe",
+       "de": "Spargel",
+       "gen": "Spargel",
+       "kein": "keinen Spargel"
+      },
+      {
+       "fa": "لَبو",
+       "tr": "labū",
+       "de": "Rote Bete",
+       "gen": "Rote Bete",
+       "kein": "keine Rote Bete"
+      },
+      {
+       "fa": "سیب‌زَمینی",
+       "tr": "sīb-zamīnī",
+       "de": "Kartoffel",
+       "emoji": "🥔",
+       "gen": "Kartoffeln",
+       "kein": "keine Kartoffeln"
+      },
+      {
+       "fa": "پیاز",
+       "tr": "piyāz",
+       "de": "Zwiebel",
+       "emoji": "🧅",
+       "gen": "Zwiebeln",
+       "kein": "keine Zwiebeln"
+      },
+      {
+       "fa": "کَلَم",
+       "tr": "kalam",
+       "de": "Kohl",
+       "gen": "Kohl",
+       "kein": "keinen Kohl"
+      }
+     ],
+     "titel": "Memory: Wort & Bedeutung"
+    },
+    {
+     "typ": "memory",
+     "links": "tr",
+     "paare": [
+      {
+       "fa": "سیر",
+       "tr": "sīr",
+       "de": "Knoblauch",
+       "emoji": "🧄",
+       "gen": "Knoblauch",
+       "kein": "keinen Knoblauch"
+      },
+      {
+       "fa": "کَلَم",
+       "tr": "kalam",
+       "de": "Kohl",
+       "gen": "Kohl",
+       "kein": "keinen Kohl"
+      },
+      {
+       "fa": "کَدو سَبز",
+       "tr": "kadū sabz",
+       "de": "Zucchini",
+       "gen": "Zucchini",
+       "kein": "keine Zucchini"
+      },
+      {
+       "fa": "لَبو",
+       "tr": "labū",
+       "de": "Rote Bete",
+       "gen": "Rote Bete",
+       "kein": "keine Rote Bete"
+      },
+      {
+       "fa": "گُل‌کَلَم",
+       "tr": "gol-kalam",
+       "de": "Blumenkohl",
+       "gen": "Blumenkohl",
+       "kein": "keinen Blumenkohl"
+      },
+      {
+       "fa": "کَرَفس",
+       "tr": "karafs",
+       "de": "Sellerie",
+       "gen": "Sellerie",
+       "kein": "keinen Sellerie"
+      }
+     ],
+     "titel": "Memory: Schrift & Aussprache"
+    },
+    {
+     "typ": "bauen",
+     "titel": "Schreib das Wort ab",
+     "zeigen": true,
+     "woerter": [
+      {
+       "fa": "سیر",
+       "tr": "sīr",
+       "de": "Knoblauch",
+       "emoji": "🧄",
+       "gen": "Knoblauch",
+       "kein": "keinen Knoblauch",
+       "teile": [
+        "س",
+        "ی",
+        "ر"
+       ],
+       "extra": [
+        "ک"
+       ]
+      },
+      {
+       "fa": "کَرَفس",
+       "tr": "karafs",
+       "de": "Sellerie",
+       "gen": "Sellerie",
+       "kein": "keinen Sellerie",
+       "teile": [
+        "ک",
+        "ر",
+        "ف",
+        "س"
+       ],
+       "extra": [
+        "ک"
+       ]
+      },
+      {
+       "fa": "لَبو",
+       "tr": "labū",
+       "de": "Rote Bete",
+       "gen": "Rote Bete",
+       "kein": "keine Rote Bete",
+       "teile": [
+        "ل",
+        "ب",
+        "و"
+       ],
+       "extra": [
+        "پ"
+       ]
+      },
+      {
+       "fa": "پیاز",
+       "tr": "piyāz",
+       "de": "Zwiebel",
+       "emoji": "🧅",
+       "gen": "Zwiebeln",
+       "kein": "keine Zwiebeln",
+       "teile": [
+        "پ",
+        "ی",
+        "ا",
+        "ز"
+       ],
+       "extra": [
+        "س"
+       ]
+      },
+      {
+       "fa": "کَلَم",
+       "tr": "kalam",
+       "de": "Kohl",
+       "gen": "Kohl",
+       "kein": "keinen Kohl",
+       "teile": [
+        "ک",
+        "ل",
+        "م"
+       ],
+       "extra": [
+        "ت"
+       ]
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitzlesen: Bedeutung",
+     "modus": "de",
+     "sekunden": 60,
+     "ziel": 12,
+     "woerter": [
+      {
+       "fa": "گُل‌کَلَم",
+       "de": "Blumenkohl"
+      },
+      {
+       "fa": "کَلَم",
+       "de": "Kohl"
+      },
+      {
+       "fa": "کَدو سَبز",
+       "de": "Zucchini"
+      },
+      {
+       "fa": "کَرَفس",
+       "de": "Sellerie"
+      },
+      {
+       "fa": "لَبو",
+       "de": "Rote Bete"
+      },
+      {
+       "fa": "مارچوبه",
+       "de": "Spargel"
+      },
+      {
+       "fa": "تَره‌فَرَنگی",
+       "de": "Lauch"
+      },
+      {
+       "fa": "سیب‌زَمینی",
+       "de": "Kartoffel"
+      },
+      {
+       "fa": "پیاز",
+       "de": "Zwiebel"
+      },
+      {
+       "fa": "سیر",
+       "de": "Knoblauch"
+      },
+      {
+       "fa": "هَویج",
+       "de": "Karotte"
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitzlesen: Aussprache",
+     "modus": "tr",
+     "sekunden": 60,
+     "ziel": 12,
+     "woerter": [
+      {
+       "fa": "گُل‌کَلَم",
+       "tr": "gol-kalam"
+      },
+      {
+       "fa": "کَلَم",
+       "tr": "kalam"
+      },
+      {
+       "fa": "کَدو سَبز",
+       "tr": "kadū sabz"
+      },
+      {
+       "fa": "کَرَفس",
+       "tr": "karafs"
+      },
+      {
+       "fa": "لَبو",
+       "tr": "labū"
+      },
+      {
+       "fa": "مارچوبه",
+       "tr": "mārtschūbe"
+      },
+      {
+       "fa": "تَره‌فَرَنگی",
+       "tr": "tare-farangī"
+      },
+      {
+       "fa": "سیب‌زَمینی",
+       "tr": "sīb-zamīnī"
+      },
+      {
+       "fa": "پیاز",
+       "tr": "piyāz"
+      },
+      {
+       "fa": "سیر",
+       "tr": "sīr"
+      },
+      {
+       "fa": "هَویج",
+       "tr": "hawīdsch"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "e",
+   "titel": "Obst-Training",
+   "vorschau": "سیب پُرتِقال",
+   "karten": [
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "پُرتِقال",
+       "tr": "porteghāl",
+       "de": "Orange",
+       "emoji": "🍊",
+       "gen": "Orangen",
+       "kein": "keine Orangen"
+      },
+      {
+       "fa": "سیب",
+       "tr": "sīb",
+       "de": "Apfel",
+       "emoji": "🍎",
+       "gen": "Äpfel",
+       "kein": "keine Äpfel"
+      },
+      {
+       "fa": "آناناس",
+       "tr": "ānānās",
+       "de": "Ananas",
+       "emoji": "🍍",
+       "gen": "Ananas",
+       "kein": "keine Ananas"
+      },
+      {
+       "fa": "هِندِوانِه",
+       "tr": "hendewāne",
+       "de": "Wassermelone",
+       "emoji": "🍉",
+       "gen": "Wassermelone",
+       "kein": "keine Wassermelone"
+      },
+      {
+       "fa": "هُلو",
+       "tr": "holū",
+       "de": "Pfirsich",
+       "emoji": "🍑",
+       "gen": "Pfirsiche",
+       "kein": "keine Pfirsiche"
+      },
+      {
+       "fa": "اَنگور",
+       "tr": "angūr",
+       "de": "Weintrauben",
+       "emoji": "🍇",
+       "gen": "Weintrauben",
+       "kein": "keine Weintrauben"
+      }
+     ],
+     "titel": "Memory: Bild & Wort"
+    },
+    {
+     "typ": "memory",
+     "links": "tr",
+     "paare": [
+      {
+       "fa": "گیلاس",
+       "tr": "gīlās",
+       "de": "Kirsche",
+       "emoji": "🍒",
+       "gen": "Kirschen",
+       "kein": "keine Kirschen"
+      },
+      {
+       "fa": "توت‌فَرَنگی",
+       "tr": "tūt-farangī",
+       "de": "Erdbeere",
+       "emoji": "🍓",
+       "gen": "Erdbeeren",
+       "kein": "keine Erdbeeren"
+      },
+      {
+       "fa": "لیمو",
+       "tr": "līmū",
+       "de": "Zitrone",
+       "emoji": "🍋",
+       "gen": "Zitronen",
+       "kein": "keine Zitronen"
+      },
+      {
+       "fa": "موز",
+       "tr": "mūz",
+       "de": "Banane",
+       "emoji": "🍌",
+       "gen": "Bananen",
+       "kein": "keine Bananen"
+      },
+      {
+       "fa": "هُلو",
+       "tr": "holū",
+       "de": "Pfirsich",
+       "emoji": "🍑",
+       "gen": "Pfirsiche",
+       "kein": "keine Pfirsiche"
+      },
+      {
+       "fa": "سیب",
+       "tr": "sīb",
+       "de": "Apfel",
+       "emoji": "🍎",
+       "gen": "Äpfel",
+       "kein": "keine Äpfel"
+      }
+     ],
+     "titel": "Memory: Schrift & Aussprache"
+    },
+    {
+     "typ": "bauen",
+     "titel": "Schreib das Wort ab",
+     "zeigen": true,
+     "woerter": [
+      {
+       "fa": "موز",
+       "tr": "mūz",
+       "de": "Banane",
+       "emoji": "🍌",
+       "gen": "Bananen",
+       "kein": "keine Bananen",
+       "teile": [
+        "م",
+        "و",
+        "ز"
+       ],
+       "extra": [
+        "ر"
+       ]
+      },
+      {
+       "fa": "هُلو",
+       "tr": "holū",
+       "de": "Pfirsich",
+       "emoji": "🍑",
+       "gen": "Pfirsiche",
+       "kein": "keine Pfirsiche",
+       "teile": [
+        "ه",
+        "ل",
+        "و"
+       ],
+       "extra": [
+        "ک"
+       ]
+      },
+      {
+       "fa": "گیلاس",
+       "tr": "gīlās",
+       "de": "Kirsche",
+       "emoji": "🍒",
+       "gen": "Kirschen",
+       "kein": "keine Kirschen",
+       "teile": [
+        "گ",
+        "ی",
+        "ل",
+        "ا",
+        "س"
+       ],
+       "extra": [
+        "پ"
+       ]
+      },
+      {
+       "fa": "پُرتِقال",
+       "tr": "porteghāl",
+       "de": "Orange",
+       "emoji": "🍊",
+       "gen": "Orangen",
+       "kein": "keine Orangen",
+       "teile": [
+        "پ",
+        "ر",
+        "ت",
+        "ق",
+        "ا",
+        "ل"
+       ],
+       "extra": [
+        "س"
+       ]
+      },
+      {
+       "fa": "سیب",
+       "tr": "sīb",
+       "de": "Apfel",
+       "emoji": "🍎",
+       "gen": "Äpfel",
+       "kein": "keine Äpfel",
+       "teile": [
+        "س",
+        "ی",
+        "ب"
+       ],
+       "extra": [
+        "پ"
+       ]
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitzlesen: Bedeutung",
+     "modus": "de",
+     "sekunden": 60,
+     "ziel": 12,
+     "woerter": [
+      {
+       "fa": "سیب",
+       "de": "Apfel"
+      },
+      {
+       "fa": "پُرتِقال",
+       "de": "Orange"
+      },
+      {
+       "fa": "موز",
+       "de": "Banane"
+      },
+      {
+       "fa": "اَنگور",
+       "de": "Weintrauben"
+      },
+      {
+       "fa": "هِندِوانِه",
+       "de": "Wassermelone"
+      },
+      {
+       "fa": "توت‌فَرَنگی",
+       "de": "Erdbeere"
+      },
+      {
+       "fa": "هُلو",
+       "de": "Pfirsich"
+      },
+      {
+       "fa": "گیلاس",
+       "de": "Kirsche"
+      },
+      {
+       "fa": "آناناس",
+       "de": "Ananas"
+      },
+      {
+       "fa": "لیمو",
+       "de": "Zitrone"
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitzlesen: Aussprache",
+     "modus": "tr",
+     "sekunden": 60,
+     "ziel": 12,
+     "woerter": [
+      {
+       "fa": "سیب",
+       "tr": "sīb"
+      },
+      {
+       "fa": "پُرتِقال",
+       "tr": "porteghāl"
+      },
+      {
+       "fa": "موز",
+       "tr": "mūz"
+      },
+      {
+       "fa": "اَنگور",
+       "tr": "angūr"
+      },
+      {
+       "fa": "هِندِوانِه",
+       "tr": "hendewāne"
+      },
+      {
+       "fa": "توت‌فَرَنگی",
+       "tr": "tūt-farangī"
+      },
+      {
+       "fa": "هُلو",
+       "tr": "holū"
+      },
+      {
+       "fa": "گیلاس",
+       "tr": "gīlās"
+      },
+      {
+       "fa": "آناناس",
+       "tr": "ānānās"
+      },
+      {
+       "fa": "لیمو",
+       "tr": "līmū"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "f",
+   "titel": "Essen & Getränke",
+   "vorschau": "چای قَهوِه",
+   "karten": [
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "کِیک",
+       "tr": "keyk",
+       "de": "Kuchen",
+       "emoji": "🍰",
+       "gen": "Kuchen",
+       "kein": "keinen Kuchen"
+      },
+      {
+       "fa": "آبمیوه",
+       "tr": "ābmīwe",
+       "de": "Saft",
+       "emoji": "🧃",
+       "gen": "Saft",
+       "kein": "keinen Saft"
+      },
+      {
+       "fa": "نان",
+       "tr": "nān",
+       "de": "Brot",
+       "emoji": "🍞",
+       "gen": "Brot",
+       "kein": "kein Brot"
+      },
+      {
+       "fa": "بِرِنج",
+       "tr": "berendsch",
+       "de": "Reis",
+       "emoji": "🍚",
+       "gen": "Reis",
+       "kein": "keinen Reis"
+      },
+      {
+       "fa": "تُخم‌مُرغ",
+       "tr": "tochm-morgh",
+       "de": "Ei",
+       "emoji": "🥚",
+       "gen": "Eier",
+       "kein": "keine Eier"
+      },
+      {
+       "fa": "ماهی",
+       "tr": "māhī",
+       "de": "Fisch",
+       "emoji": "🐟",
+       "gen": "Fisch",
+       "kein": "keinen Fisch"
+      }
+     ],
+     "titel": "Memory: Bild & Wort"
+    },
+    {
+     "typ": "memory",
+     "links": "tr",
+     "paare": [
+      {
+       "fa": "بِرِنج",
+       "tr": "berendsch",
+       "de": "Reis",
+       "emoji": "🍚",
+       "gen": "Reis",
+       "kein": "keinen Reis"
+      },
+      {
+       "fa": "قَهوِه",
+       "tr": "ghahwe",
+       "de": "Kaffee",
+       "emoji": "☕",
+       "gen": "Kaffee",
+       "kein": "keinen Kaffee"
+      },
+      {
+       "fa": "تُخم‌مُرغ",
+       "tr": "tochm-morgh",
+       "de": "Ei",
+       "emoji": "🥚",
+       "gen": "Eier",
+       "kein": "keine Eier"
+      },
+      {
+       "fa": "چای",
+       "tr": "tschāy",
+       "de": "Tee",
+       "emoji": "🍵",
+       "gen": "Tee",
+       "kein": "keinen Tee"
+      },
+      {
+       "fa": "پَنیر",
+       "tr": "panīr",
+       "de": "Käse",
+       "emoji": "🧀",
+       "gen": "Käse",
+       "kein": "keinen Käse"
+      },
+      {
+       "fa": "آب",
+       "tr": "āb",
+       "de": "Wasser",
+       "emoji": "💧",
+       "gen": "Wasser",
+       "kein": "kein Wasser"
+      }
+     ],
+     "titel": "Memory: Schrift & Aussprache"
+    },
+    {
+     "typ": "bauen",
+     "titel": "Schreib das Wort ab",
+     "zeigen": true,
+     "woerter": [
+      {
+       "fa": "ماهی",
+       "tr": "māhī",
+       "de": "Fisch",
+       "emoji": "🐟",
+       "gen": "Fisch",
+       "kein": "keinen Fisch",
+       "teile": [
+        "م",
+        "ا",
+        "ه",
+        "ی"
+       ],
+       "extra": [
+        "ب"
+       ]
+      },
+      {
+       "fa": "چای",
+       "tr": "tschāy",
+       "de": "Tee",
+       "emoji": "🍵",
+       "gen": "Tee",
+       "kein": "keinen Tee",
+       "teile": [
+        "چ",
+        "ا",
+        "ی"
+       ],
+       "extra": [
+        "ک"
+       ]
+      },
+      {
+       "fa": "گوشت",
+       "tr": "gūscht",
+       "de": "Fleisch",
+       "emoji": "🥩",
+       "gen": "Fleisch",
+       "kein": "kein Fleisch",
+       "teile": [
+        "گ",
+        "و",
+        "ش",
+        "ت"
+       ],
+       "extra": [
+        "ب"
+       ]
+      },
+      {
+       "fa": "کِیک",
+       "tr": "keyk",
+       "de": "Kuchen",
+       "emoji": "🍰",
+       "gen": "Kuchen",
+       "kein": "keinen Kuchen",
+       "teile": [
+        "ک",
+        "ی",
+        "ک"
+       ],
+       "extra": [
+        "ش"
+       ]
+      },
+      {
+       "fa": "بِرِنج",
+       "tr": "berendsch",
+       "de": "Reis",
+       "emoji": "🍚",
+       "gen": "Reis",
+       "kein": "keinen Reis",
+       "teile": [
+        "ب",
+        "ر",
+        "ن",
+        "ج"
+       ],
+       "extra": [
+        "س"
+       ]
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitzlesen: Bedeutung",
+     "modus": "de",
+     "sekunden": 60,
+     "ziel": 12,
+     "woerter": [
+      {
+       "fa": "چای",
+       "de": "Tee"
+      },
+      {
+       "fa": "قَهوِه",
+       "de": "Kaffee"
+      },
+      {
+       "fa": "شیر",
+       "de": "Milch"
+      },
+      {
+       "fa": "آبمیوه",
+       "de": "Saft"
+      },
+      {
+       "fa": "بِرِنج",
+       "de": "Reis"
+      },
+      {
+       "fa": "پَنیر",
+       "de": "Käse"
+      },
+      {
+       "fa": "تُخم‌مُرغ",
+       "de": "Ei"
+      },
+      {
+       "fa": "گوشت",
+       "de": "Fleisch"
+      },
+      {
+       "fa": "ماهی",
+       "de": "Fisch"
+      },
+      {
+       "fa": "کِیک",
+       "de": "Kuchen"
+      },
+      {
+       "fa": "نان",
+       "de": "Brot"
+      },
+      {
+       "fa": "آب",
+       "de": "Wasser"
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitzlesen: Aussprache",
+     "modus": "tr",
+     "sekunden": 60,
+     "ziel": 12,
+     "woerter": [
+      {
+       "fa": "چای",
+       "tr": "tschāy"
+      },
+      {
+       "fa": "قَهوِه",
+       "tr": "ghahwe"
+      },
+      {
+       "fa": "شیر",
+       "tr": "schīr"
+      },
+      {
+       "fa": "آبمیوه",
+       "tr": "ābmīwe"
+      },
+      {
+       "fa": "بِرِنج",
+       "tr": "berendsch"
+      },
+      {
+       "fa": "پَنیر",
+       "tr": "panīr"
+      },
+      {
+       "fa": "تُخم‌مُرغ",
+       "tr": "tochm-morgh"
+      },
+      {
+       "fa": "گوشت",
+       "tr": "gūscht"
+      },
+      {
+       "fa": "ماهی",
+       "tr": "māhī"
+      },
+      {
+       "fa": "کِیک",
+       "tr": "keyk"
+      },
+      {
+       "fa": "نان",
+       "tr": "nān"
+      },
+      {
+       "fa": "آب",
+       "tr": "āb"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "g",
+   "titel": "Blitz-Marathon",
+   "vorschau": "⏱️ ⏱️",
+   "karten": [
+    {
+     "typ": "tempo",
+     "titel": "Marathon: alle Wörter",
+     "modus": "de",
+     "sekunden": 90,
+     "ziel": 25,
+     "woerter": [
+      {
+       "fa": "سیب‌زَمینی",
+       "de": "Kartoffel"
+      },
+      {
+       "fa": "پیاز",
+       "de": "Zwiebel"
+      },
+      {
+       "fa": "سیر",
+       "de": "Knoblauch"
+      },
+      {
+       "fa": "هَویج",
+       "de": "Karotte"
+      },
+      {
+       "fa": "خیار",
+       "de": "Gurke"
+      },
+      {
+       "fa": "گوجه‌فَرَنگی",
+       "de": "Tomate"
+      },
+      {
+       "fa": "ذُرَّت",
+       "de": "Mais"
+      },
+      {
+       "fa": "فِلفِل‌دُلمه‌ای",
+       "de": "Paprika"
+      },
+      {
+       "fa": "بُروکُلی",
+       "de": "Brokkoli"
+      },
+      {
+       "fa": "کاهو",
+       "de": "Salat (Kopfsalat)"
+      },
+      {
+       "fa": "بادِمجان",
+       "de": "Aubergine"
+      },
+      {
+       "fa": "نُخود سَبز",
+       "de": "Erbsen"
+      },
+      {
+       "fa": "زَنجَبیل",
+       "de": "Ingwer"
+      },
+      {
+       "fa": "کَدو تَنبَل",
+       "de": "Kürbis"
+      },
+      {
+       "fa": "لوبیا سَبز",
+       "de": "grüne Bohnen"
+      },
+      {
+       "fa": "اِسفِناج",
+       "de": "Spinat"
+      },
+      {
+       "fa": "گُل‌کَلَم",
+       "de": "Blumenkohl"
+      },
+      {
+       "fa": "کَلَم",
+       "de": "Kohl"
+      },
+      {
+       "fa": "کَدو سَبز",
+       "de": "Zucchini"
+      },
+      {
+       "fa": "کَرَفس",
+       "de": "Sellerie"
+      },
+      {
+       "fa": "لَبو",
+       "de": "Rote Bete"
+      },
+      {
+       "fa": "مارچوبه",
+       "de": "Spargel"
+      },
+      {
+       "fa": "تَره‌فَرَنگی",
+       "de": "Lauch"
+      },
+      {
+       "fa": "سیب",
+       "de": "Apfel"
+      },
+      {
+       "fa": "پُرتِقال",
+       "de": "Orange"
+      },
+      {
+       "fa": "موز",
+       "de": "Banane"
+      },
+      {
+       "fa": "اَنگور",
+       "de": "Weintrauben"
+      },
+      {
+       "fa": "هِندِوانِه",
+       "de": "Wassermelone"
+      },
+      {
+       "fa": "توت‌فَرَنگی",
+       "de": "Erdbeere"
+      },
+      {
+       "fa": "هُلو",
+       "de": "Pfirsich"
+      },
+      {
+       "fa": "گیلاس",
+       "de": "Kirsche"
+      },
+      {
+       "fa": "آناناس",
+       "de": "Ananas"
+      },
+      {
+       "fa": "لیمو",
+       "de": "Zitrone"
+      },
+      {
+       "fa": "چای",
+       "de": "Tee"
+      },
+      {
+       "fa": "قَهوِه",
+       "de": "Kaffee"
+      },
+      {
+       "fa": "شیر",
+       "de": "Milch"
+      },
+      {
+       "fa": "آبمیوه",
+       "de": "Saft"
+      },
+      {
+       "fa": "بِرِنج",
+       "de": "Reis"
+      },
+      {
+       "fa": "پَنیر",
+       "de": "Käse"
+      },
+      {
+       "fa": "تُخم‌مُرغ",
+       "de": "Ei"
+      },
+      {
+       "fa": "گوشت",
+       "de": "Fleisch"
+      },
+      {
+       "fa": "ماهی",
+       "de": "Fisch"
+      },
+      {
+       "fa": "کِیک",
+       "de": "Kuchen"
+      },
+      {
+       "fa": "نان",
+       "de": "Brot"
+      },
+      {
+       "fa": "آب",
+       "de": "Wasser"
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Marathon: Sätze verstehen",
+     "modus": "de",
+     "sekunden": 90,
+     "ziel": 12,
+     "woerter": [
+      {
+       "fa": "مَن قَهوِه دوست دارَم.",
+       "de": "Ich mag Kaffee."
+      },
+      {
+       "fa": "شُما کاهو دوست دارید.",
+       "de": "Ihr mögt Salat."
+      },
+      {
+       "fa": "شُما چای دوست دارید.",
+       "de": "Ihr mögt Tee."
+      },
+      {
+       "fa": "مَن لَبو دوست دارَم.",
+       "de": "Ich mag Rote Bete."
+      },
+      {
+       "fa": "آنها ذُرَّت دوست دارَند.",
+       "de": "Sie mögen Mais."
+      },
+      {
+       "fa": "شُما کَرَفس دوست نَدارید.",
+       "de": "Ihr mögt keinen Sellerie."
+      },
+      {
+       "fa": "تو هِندِوانِه دوست نَداری.",
+       "de": "Du magst keine Wassermelone."
+      },
+      {
+       "fa": "مَن نُخود سَبز دوست نَدارَم.",
+       "de": "Ich mag keine Erbsen."
+      },
+      {
+       "fa": "مَن ماهی دوست دارَم.",
+       "de": "Ich mag Fisch."
+      },
+      {
+       "fa": "آنها پَنیر دوست دارَند.",
+       "de": "Sie mögen Käse."
+      },
+      {
+       "fa": "او گوشت دوست نَدارَد.",
+       "de": "Er/Sie mag kein Fleisch."
+      },
+      {
+       "fa": "او گُل‌کَلَم دوست نَدارَد.",
+       "de": "Er/Sie mag keinen Blumenkohl."
+      },
+      {
+       "fa": "آنها بادِمجان دوست دارَند.",
+       "de": "Sie mögen Auberginen."
+      },
+      {
+       "fa": "مَن کَلَم دوست دارَم.",
+       "de": "Ich mag Kohl."
+      },
+      {
+       "fa": "تو گیلاس دوست داری.",
+       "de": "Du magst Kirschen."
+      },
+      {
+       "fa": "مَن اَنگور دوست دارَم.",
+       "de": "Ich mag Weintrauben."
+      },
+      {
+       "fa": "ما آب دوست نَداریم.",
+       "de": "Wir mögen kein Wasser."
+      },
+      {
+       "fa": "مَن کِیک دوست نَدارَم.",
+       "de": "Ich mag keinen Kuchen."
+      },
+      {
+       "fa": "ما بُروکُلی دوست داریم.",
+       "de": "Wir mögen Brokkoli."
+      },
+      {
+       "fa": "تو کَدو تَنبَل دوست نَداری.",
+       "de": "Du magst keinen Kürbis."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

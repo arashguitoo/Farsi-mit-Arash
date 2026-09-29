@@ -1,0 +1,192 @@
+{
+ "id": "ug",
+ "art": "umgangssprache",
+ "titel": "Umgangssprache: So spricht man im Alltag",
+ "beschreibung": "Freiwilliger Extra-Teil: Plural und Feiern im Gespräch.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "So spricht man: Plural",
+   "vorschau": "کِتابا دوستام",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Schrift ≠ Gespräch",
+     "text": "<ul><li><span class='fa'>ـها</span> wird im Gespräch zu <b>-ā</b>: <span class='fa'>کِتاب‌ها → کِتابا</span> <i>ketābā</i></li><li><span class='fa'>دوستانَم / دوست‌هایَم → دوستام</span> <i>dūstām</i></li><li><span class='fa'>مِهمان → مِهمون</span> (ān → ūn), <span class='fa'>آمَدَند → اومَدَن</span></li><li><span class='fa'>کادو</span> <i>kādo</i> (aus dem Französischen) – Geschenk</li></ul>",
+     "stil": "merke"
+    },
+    {
+     "typ": "paare",
+     "links": "x",
+     "paare": [
+      {
+       "fa": "کِتاب‌ها",
+       "tr": "ketābhā",
+       "de": "die Bücher",
+       "x": "کِتابا"
+      },
+      {
+       "fa": "دوستانَم",
+       "tr": "dūstānam",
+       "de": "meine Freunde",
+       "x": "دوستام"
+      },
+      {
+       "fa": "آمَدَند",
+       "tr": "āmadand",
+       "de": "sie kamen",
+       "x": "اومَدَن"
+      },
+      {
+       "fa": "مِهمان‌ها",
+       "tr": "mehmānhā",
+       "de": "die Gäste",
+       "x": "مِهمونا"
+      },
+      {
+       "fa": "هِدیه",
+       "tr": "hedye",
+       "de": "Geschenk",
+       "x": "کادو"
+      }
+     ],
+     "titel": "Schrift ↔ Gespräch"
+    },
+    {
+     "typ": "sortieren",
+     "titel": "Schrift oder Gespräch?",
+     "frage": "Schriftsprache oder Umgangssprache?",
+     "kategorien": [
+      "✍️ Schriftsprache",
+      "🗣️ Umgangssprache"
+     ],
+     "items": [
+      {
+       "fa": "کِتاب‌ها",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "دوستانَم",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "آمَدَند",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "مِهمان‌ها",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "هِدیه",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "کِتابا",
+       "k": 1,
+       "say": false,
+       "e": "<i>ketābā</i> – geschrieben: <span class='fa'>کِتاب‌ها</span>"
+      },
+      {
+       "fa": "دوستام",
+       "k": 1,
+       "say": false,
+       "e": "<i>dūstām</i> – geschrieben: <span class='fa'>دوستانَم</span>"
+      },
+      {
+       "fa": "اومَدَن",
+       "k": 1,
+       "say": false,
+       "e": "<i>ūmadan</i> – geschrieben: <span class='fa'>آمَدَند</span>"
+      },
+      {
+       "fa": "مِهمونا",
+       "k": 1,
+       "say": false,
+       "e": "<i>mehmūnā</i> – geschrieben: <span class='fa'>مِهمان‌ها</span>"
+      },
+      {
+       "fa": "کادو",
+       "k": 1,
+       "say": false,
+       "e": "<i>kādo</i> – geschrieben: <span class='fa'>هِدیه</span>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Wie war die Party?",
+   "vorschau": "کی اومَد؟",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Nach der Feier",
+     "text": "Umgangssprache! Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "دیروز تَوَلُّدِ سارا بود. کی اومَد؟",
+       "tr": "dīrūz tawallod-e sārā būd. kī ūmad?",
+       "de": "Gestern war Saras Geburtstag. Wer ist gekommen?"
+      },
+      {
+       "fa": "هَمه‌ی دوستاش اومَدَن!",
+       "tr": "hame-ye dūstāsch ūmadan!",
+       "de": "Alle ihre Freunde sind gekommen!"
+      },
+      {
+       "fa": "کادو چی بُردی؟",
+       "tr": "kādo tschī bordī?",
+       "de": "Was hast du als Geschenk mitgenommen?"
+      },
+      {
+       "fa": "یه کِتاب. بَقیه هَم کُلّی گُل آوُردَن.",
+       "tr": "ye ketāb. baghīye ham kollī gol āwordan.",
+       "de": "Ein Buch. Die anderen haben jede Menge Blumen mitgebracht."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Verstanden?",
+     "fragen": [
+      {
+       "frage": "Wer ist zur Feier gekommen?",
+       "optionen": [
+        "alle ihre Freunde",
+        "nur die Familie",
+        "niemand"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was hat die Person geschenkt?",
+       "optionen": [
+        "ein Buch",
+        "Blumen",
+        "einen Kuchen"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "<span class='fa'>دوستاش</span> in der Schriftsprache:",
+       "optionen": [
+        "دوستانَش",
+        "دوستَش",
+        "دوستانَم"
+       ],
+       "richtig": 0,
+       "optFa": true
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

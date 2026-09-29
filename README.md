@@ -35,6 +35,30 @@ Jede Person hat einen eigenen Code und gehört zu einer Klasse. Unter **Freigabe
 2. In `lektionen/index.json` beim Eintrag `"datei": "02-….json"` ergänzen und `"standard": "offen"` oder `"bald"` setzen.
 3. Hochladen – fertig. Die Konsole erkennt die Lektion automatisch.
 
+## Lehrer-Übersicht (`lehrer.html`)
+
+Passwortgeschützt (gleiches Konto wie die Konsole), erreichbar über **📖 Lehrer-Übersicht** in der Konsole. Zeigt alle Lektionen mit Zusatz- und Umgangssprache-Teil und Wortschatz – jede Karte lesbar mit **Lösungen**, Umschrift, Übersetzung, Ablenkern.
+
+- Jede Karte hat eine Nummer, z. B. **L3·S8·K4** = Lektion 3, Station 8, Karte 4 (Z = Zusatz, U = Umgangssprache, WS = Wortschatz).
+- **▶ ausprobieren** öffnet die Station direkt so, wie die Studierenden sie sehen.
+- **✏️ Korrektur** speichert eine Notiz zur Karte. Über den Knopf unten rechts kannst du alle offenen Korrekturen **kopieren** und an Claude schicken – mit Nummer und Inhalt, damit sie gezielt eingearbeitet werden.
+- Suche über alle Lektionen (Persisch, Umschrift, Deutsch) und Druckansicht.
+- Damit die Korrekturen auf allen Geräten gespeichert werden, braucht Firebase die Regel `korrekturen` (in `firebase-regeln.json` enthalten). Ohne sie bleiben die Notizen im Browser.
+
+## Wortschatz-Trainer (`wortschatz.html`)
+
+Eigene Seite mit dem **gesamten Wortschatz** aller Lektionen, die für die Klasse freigeschaltet sind – er wächst also automatisch mit. Spiele: Paare (Bedeutung / Aussprache), Memory, Blitzlesen, Karteikarten, Abschreiben, Wortliste. Filter: „bis Lektion X“ oder „nur Lektion X“ und nach Kategorie.
+
+Jede Lektion hat dafür eine Datei `lektionen/ws-0X.json`, eingetragen in `index.json` unter `"wortschatz"`:
+
+```json
+{ "lektion": "03", "woerter": [
+  { "fa": "پِدَر", "tr": "pedar", "de": "Vater", "emoji": "👨", "kat": "Menschen & Familie" },
+  { "fa": "داشتَن", "tr": "dāschtan", "de": "haben", "kat": "Verben", "stamm": "دار", "stammTr": "dār" } ] }
+```
+
+**Regel:** Verben stehen im Wortschatz **nie konjugiert**, sondern nur als Infinitiv mit Präsensstamm (`stamm`). Kategorien: Menschen & Familie, Berufe, Gefühle & Zustände, Körper, Natur & Wetter, Essen & Trinken, Dinge, Orte, Tiere, Zahlen, Zeit, Verben, Kleine Wörter, Wendungen.
+
 ## Zusatzaufgaben nachreichen (für jede Lektion)
 
 Zusätzliche Übungen kommen als **eigene JSON-Datei** – die Lektion selbst bleibt unverändert:
@@ -78,6 +102,7 @@ Die `id` einer Station nie nachträglich ändern – daran hängt der gespeicher
 | `bauen` + `"zeigen": true` | Abschreiben: Wort wird gezeigt, aus Buchstaben nachbauen | wie `bauen` |
 | `bauen` + `"trenner": " "` | Satzbau: Wörter in die richtige Reihenfolge bringen | `woerter:[{fa,tr,de,teile:[Wörter],extra:[…]}]` |
 | `text` | Lesetext, Zeile antippen → Umschrift + Übersetzung | `zeilen:[{fa,tr,de}]` |
+| `ordnen` | Sätze in die richtige Reihenfolge bringen | `items:[{fa,tr,de}]` (in richtiger Reihenfolge angeben) |
 
 Bei `paare` und `memory` kann mit `"links": "x"` auf beiden Seiten Persisch stehen (Feld `x`, z. B. Pronomen ↔ Verbform). Bei `tempo` kann jedes Wort mit `a` eine eigene Antwort haben (`"optFa": true` für persische Antworten).
 

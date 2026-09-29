@@ -1,0 +1,1328 @@
+{
+ "id": "z1",
+ "titel": "Trainingspaket 1",
+ "beschreibung": "Konjugation auf Zeit, Satzbau, Familie, Dinge und Zahlen trainieren.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "Konjugations-Blitz",
+   "vorschau": "دارَم ⇄ نَدارَم",
+   "karten": [
+    {
+     "typ": "tempo",
+     "titel": "Blitz: haben",
+     "aufgabe": "Passende Form von „haben“?",
+     "modus": "de",
+     "sekunden": 45,
+     "ziel": 15,
+     "optFa": true,
+     "woerter": [
+      {
+       "fa": "مَن",
+       "a": "دارَم"
+      },
+      {
+       "fa": "تو",
+       "a": "داری"
+      },
+      {
+       "fa": "او",
+       "a": "دارَد"
+      },
+      {
+       "fa": "ما",
+       "a": "داریم"
+      },
+      {
+       "fa": "شُما",
+       "a": "دارید"
+      },
+      {
+       "fa": "آنها",
+       "a": "دارَند"
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: nicht haben",
+     "aufgabe": "Passende verneinte Form?",
+     "modus": "de",
+     "sekunden": 45,
+     "ziel": 15,
+     "optFa": true,
+     "woerter": [
+      {
+       "fa": "مَن",
+       "a": "نَدارَم"
+      },
+      {
+       "fa": "تو",
+       "a": "نَداری"
+      },
+      {
+       "fa": "او",
+       "a": "نَدارَد"
+      },
+      {
+       "fa": "ما",
+       "a": "نَداریم"
+      },
+      {
+       "fa": "شُما",
+       "a": "نَدارید"
+      },
+      {
+       "fa": "آنها",
+       "a": "نَدارَند"
+      }
+     ]
+    },
+    {
+     "typ": "memory",
+     "links": "x",
+     "paare": [
+      {
+       "fa": "دارَم",
+       "tr": "",
+       "de": "",
+       "x": "نَدارَم"
+      },
+      {
+       "fa": "داری",
+       "tr": "",
+       "de": "",
+       "x": "نَداری"
+      },
+      {
+       "fa": "دارَد",
+       "tr": "",
+       "de": "",
+       "x": "نَدارَد"
+      },
+      {
+       "fa": "داریم",
+       "tr": "",
+       "de": "",
+       "x": "نَداریم"
+      },
+      {
+       "fa": "دارید",
+       "tr": "",
+       "de": "",
+       "x": "نَدارید"
+      },
+      {
+       "fa": "دارَند",
+       "tr": "",
+       "de": "",
+       "x": "نَدارَند"
+      }
+     ],
+     "titel": "Memory: ja ↔ nein"
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Satzbau-Werkstatt",
+   "vorschau": "مَن … دارَم",
+   "karten": [
+    {
+     "typ": "bauen",
+     "titel": "Satzbau: Familie & Dinge",
+     "trenner": " ",
+     "woerter": [
+      {
+       "fa": "تو یِک پِدَر داری.",
+       "tr": "to yek pedar dārī.",
+       "de": "Du hast einen Vater.",
+       "emoji": "👨",
+       "teile": [
+        "تو",
+        "یِک",
+        "پِدَر",
+        "داری"
+       ],
+       "extra": [
+        "داریم"
+       ]
+      },
+      {
+       "fa": "آنها چَهار سَگ دارَند.",
+       "tr": "ānhā tschahār sag dārand.",
+       "de": "Sie haben vier Hunde.",
+       "emoji": "🐶",
+       "teile": [
+        "آنها",
+        "چَهار",
+        "سَگ",
+        "دارَند"
+       ],
+       "extra": [
+        "یِک"
+       ]
+      },
+      {
+       "fa": "شُما سِه دوچَرخِه دارید.",
+       "tr": "schomā se dotscharche dārīd.",
+       "de": "Ihr habt drei Fahrräder.",
+       "emoji": "🚲",
+       "teile": [
+        "شُما",
+        "سِه",
+        "دوچَرخِه",
+        "دارید"
+       ],
+       "extra": [
+        "نَدارَد"
+       ]
+      },
+      {
+       "fa": "او چَهار کامپیوتِر دارَد.",
+       "tr": "ū tschahār kāmpyūter dārad.",
+       "de": "Er/Sie hat vier Computer.",
+       "emoji": "💻",
+       "teile": [
+        "او",
+        "چَهار",
+        "کامپیوتِر",
+        "دارَد"
+       ],
+       "extra": [
+        "داریم"
+       ]
+      },
+      {
+       "fa": "شُما مادَر نَدارید.",
+       "tr": "schomā mādar nadārīd.",
+       "de": "Ihr habt keine Mutter.",
+       "emoji": "👩",
+       "teile": [
+        "شُما",
+        "مادَر",
+        "نَدارید"
+       ],
+       "extra": [
+        "داریم"
+       ]
+      },
+      {
+       "fa": "مَن یِک پِدَر دارَم.",
+       "tr": "man yek pedar dāram.",
+       "de": "Ich habe einen Vater.",
+       "emoji": "👨",
+       "teile": [
+        "مَن",
+        "یِک",
+        "پِدَر",
+        "دارَم"
+       ],
+       "extra": [
+        "داریم"
+       ]
+      }
+     ]
+    },
+    {
+     "typ": "bauen",
+     "titel": "Satzbau: ein … / der …",
+     "trenner": " ",
+     "woerter": [
+      {
+       "fa": "او ماشینی دارَد.",
+       "tr": "ū māschīnī dārad.",
+       "de": "Er/Sie hat ein Auto.",
+       "emoji": "🚗",
+       "teile": [
+        "او",
+        "ماشینی",
+        "دارَد"
+       ],
+       "extra": [
+        "نیست"
+       ]
+      },
+      {
+       "fa": "مَن پِدَری دارَم.",
+       "tr": "man pedarī dāram.",
+       "de": "Ich habe einen Vater.",
+       "emoji": "👨",
+       "teile": [
+        "مَن",
+        "پِدَری",
+        "دارَم"
+       ],
+       "extra": [
+        "نیست"
+       ]
+      },
+      {
+       "fa": "شُما خواهَری دارید.",
+       "tr": "schomā chāharī dārīd.",
+       "de": "Ihr habt eine Schwester.",
+       "emoji": "👧",
+       "teile": [
+        "شُما",
+        "خواهَری",
+        "دارید"
+       ],
+       "extra": [
+        "یِک"
+       ]
+      },
+      {
+       "fa": "ماشین نو اَست.",
+       "tr": "māschīn no ast.",
+       "de": "Das Auto ist neu.",
+       "emoji": "🚗",
+       "teile": [
+        "ماشین",
+        "نو",
+        "اَست"
+       ],
+       "extra": [
+        "یِک"
+       ]
+      },
+      {
+       "fa": "سَگ کوچَک اَست.",
+       "tr": "sag kūtschak ast.",
+       "de": "Der Hund ist klein.",
+       "emoji": "🐶",
+       "teile": [
+        "سَگ",
+        "کوچَک",
+        "اَست"
+       ],
+       "extra": [
+        "دارَند"
+       ]
+      },
+      {
+       "fa": "خانِه بُزُرگ اَست.",
+       "tr": "chāne bozorg ast.",
+       "de": "Das Haus ist groß.",
+       "emoji": "🏠",
+       "teile": [
+        "خانِه",
+        "بُزُرگ",
+        "اَست"
+       ],
+       "extra": [
+        "نیست"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "titel": "Familien-Training",
+   "vorschau": "پِدَر مادَر",
+   "karten": [
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "پِدَر",
+       "tr": "pedar",
+       "de": "Vater",
+       "emoji": "👨",
+       "ak": "einen Vater",
+       "kein": "keinen Vater",
+       "pl": "Väter",
+       "yek": true
+      },
+      {
+       "fa": "مادَربُزُرگ",
+       "tr": "mādarbozorg",
+       "de": "Großmutter",
+       "emoji": "👵",
+       "ak": "eine Großmutter",
+       "kein": "keine Großmutter",
+       "pl": "Großmütter",
+       "yek": true
+      },
+      {
+       "fa": "دُختَر",
+       "tr": "dochtar",
+       "de": "Tochter",
+       "emoji": "👱‍♀️",
+       "ak": "eine Tochter",
+       "kein": "keine Tochter",
+       "pl": "Töchter",
+       "yek": true
+      },
+      {
+       "fa": "خواهَر",
+       "tr": "chāhar",
+       "de": "Schwester",
+       "emoji": "👧",
+       "ak": "eine Schwester",
+       "kein": "keine Schwester",
+       "pl": "Schwestern",
+       "yek": true
+      },
+      {
+       "fa": "فَرزَند",
+       "tr": "farzand",
+       "de": "Kind (Sohn/Tochter)",
+       "emoji": "👶",
+       "ak": "ein Kind",
+       "kein": "kein Kind",
+       "pl": "Kinder",
+       "yek": true
+      },
+      {
+       "fa": "هَمسَر",
+       "tr": "hamsar",
+       "de": "Ehepartner/in",
+       "emoji": "💍",
+       "ak": "eine/n Ehepartner/in",
+       "kein": "keine/n Ehepartner/in",
+       "pl": "Ehepartner",
+       "yek": true
+      }
+     ],
+     "titel": "Memory: Bild & Wort"
+    },
+    {
+     "typ": "memory",
+     "links": "tr",
+     "paare": [
+      {
+       "fa": "دایی",
+       "tr": "dāyī",
+       "de": "Onkel (Bruder der Mutter)",
+       "ak": "einen Onkel",
+       "kein": "keinen Onkel",
+       "pl": "Onkel",
+       "yek": true
+      },
+      {
+       "fa": "پِدَر",
+       "tr": "pedar",
+       "de": "Vater",
+       "emoji": "👨",
+       "ak": "einen Vater",
+       "kein": "keinen Vater",
+       "pl": "Väter",
+       "yek": true
+      },
+      {
+       "fa": "هَمسَر",
+       "tr": "hamsar",
+       "de": "Ehepartner/in",
+       "emoji": "💍",
+       "ak": "eine/n Ehepartner/in",
+       "kein": "keine/n Ehepartner/in",
+       "pl": "Ehepartner",
+       "yek": true
+      },
+      {
+       "fa": "دُختَر",
+       "tr": "dochtar",
+       "de": "Tochter",
+       "emoji": "👱‍♀️",
+       "ak": "eine Tochter",
+       "kein": "keine Tochter",
+       "pl": "Töchter",
+       "yek": true
+      },
+      {
+       "fa": "پِسَر",
+       "tr": "pesar",
+       "de": "Sohn",
+       "emoji": "🧒",
+       "ak": "einen Sohn",
+       "kein": "keinen Sohn",
+       "pl": "Söhne",
+       "yek": true
+      },
+      {
+       "fa": "عَمو",
+       "tr": "ʿamū",
+       "de": "Onkel (Bruder des Vaters)",
+       "ak": "einen Onkel",
+       "kein": "keinen Onkel",
+       "pl": "Onkel",
+       "yek": true
+      }
+     ],
+     "titel": "Memory: Schrift & Aussprache"
+    },
+    {
+     "typ": "bauen",
+     "titel": "Schreib das Wort ab",
+     "zeigen": true,
+     "woerter": [
+      {
+       "fa": "دُختَر",
+       "tr": "dochtar",
+       "de": "Tochter",
+       "emoji": "👱‍♀️",
+       "ak": "eine Tochter",
+       "kein": "keine Tochter",
+       "pl": "Töchter",
+       "yek": true,
+       "teile": [
+        "د",
+        "خ",
+        "ت",
+        "ر"
+       ],
+       "extra": [
+        "ر"
+       ]
+      },
+      {
+       "fa": "فَرزَند",
+       "tr": "farzand",
+       "de": "Kind (Sohn/Tochter)",
+       "emoji": "👶",
+       "ak": "ein Kind",
+       "kein": "kein Kind",
+       "pl": "Kinder",
+       "yek": true,
+       "teile": [
+        "ف",
+        "ر",
+        "ز",
+        "ن",
+        "د"
+       ],
+       "extra": [
+        "ب"
+       ]
+      },
+      {
+       "fa": "خالِه",
+       "tr": "chāle",
+       "de": "Tante (Schwester der Mutter)",
+       "ak": "eine Tante",
+       "kein": "keine Tante",
+       "pl": "Tanten",
+       "yek": true,
+       "teile": [
+        "خ",
+        "ا",
+        "ل",
+        "ه"
+       ],
+       "extra": [
+        "س"
+       ]
+      },
+      {
+       "fa": "مادَربُزُرگ",
+       "tr": "mādarbozorg",
+       "de": "Großmutter",
+       "emoji": "👵",
+       "ak": "eine Großmutter",
+       "kein": "keine Großmutter",
+       "pl": "Großmütter",
+       "yek": true,
+       "teile": [
+        "م",
+        "ا",
+        "د",
+        "ر",
+        "ب",
+        "ز",
+        "ر",
+        "گ"
+       ],
+       "extra": [
+        "ش"
+       ]
+      },
+      {
+       "fa": "مادَر",
+       "tr": "mādar",
+       "de": "Mutter",
+       "emoji": "👩",
+       "ak": "eine Mutter",
+       "kein": "keine Mutter",
+       "pl": "Mütter",
+       "yek": true,
+       "teile": [
+        "م",
+        "ا",
+        "د",
+        "ر"
+       ],
+       "extra": [
+        "ر"
+       ]
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitzlesen: Bedeutung",
+     "modus": "de",
+     "sekunden": 60,
+     "ziel": 12,
+     "woerter": [
+      {
+       "fa": "پِدَر",
+       "de": "Vater"
+      },
+      {
+       "fa": "مادَر",
+       "de": "Mutter"
+      },
+      {
+       "fa": "بَرادَر",
+       "de": "Bruder"
+      },
+      {
+       "fa": "خواهَر",
+       "de": "Schwester"
+      },
+      {
+       "fa": "پِسَر",
+       "de": "Sohn"
+      },
+      {
+       "fa": "دُختَر",
+       "de": "Tochter"
+      },
+      {
+       "fa": "فَرزَند",
+       "de": "Kind (Sohn/Tochter)"
+      },
+      {
+       "fa": "پِدَربُزُرگ",
+       "de": "Großvater"
+      },
+      {
+       "fa": "مادَربُزُرگ",
+       "de": "Großmutter"
+      },
+      {
+       "fa": "عَمو",
+       "de": "Onkel (Bruder des Vaters)"
+      },
+      {
+       "fa": "دایی",
+       "de": "Onkel (Bruder der Mutter)"
+      },
+      {
+       "fa": "عَمّه",
+       "de": "Tante (Schwester des Vaters)"
+      },
+      {
+       "fa": "خالِه",
+       "de": "Tante (Schwester der Mutter)"
+      },
+      {
+       "fa": "هَمسَر",
+       "de": "Ehepartner/in"
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitzlesen: Aussprache",
+     "modus": "tr",
+     "sekunden": 60,
+     "ziel": 12,
+     "woerter": [
+      {
+       "fa": "پِدَر",
+       "tr": "pedar"
+      },
+      {
+       "fa": "مادَر",
+       "tr": "mādar"
+      },
+      {
+       "fa": "بَرادَر",
+       "tr": "barādar"
+      },
+      {
+       "fa": "خواهَر",
+       "tr": "chāhar"
+      },
+      {
+       "fa": "پِسَر",
+       "tr": "pesar"
+      },
+      {
+       "fa": "دُختَر",
+       "tr": "dochtar"
+      },
+      {
+       "fa": "فَرزَند",
+       "tr": "farzand"
+      },
+      {
+       "fa": "پِدَربُزُرگ",
+       "tr": "pedarbozorg"
+      },
+      {
+       "fa": "مادَربُزُرگ",
+       "tr": "mādarbozorg"
+      },
+      {
+       "fa": "عَمو",
+       "tr": "ʿamū"
+      },
+      {
+       "fa": "دایی",
+       "tr": "dāyī"
+      },
+      {
+       "fa": "عَمّه",
+       "tr": "ʿamme"
+      },
+      {
+       "fa": "خالِه",
+       "tr": "chāle"
+      },
+      {
+       "fa": "هَمسَر",
+       "tr": "hamsar"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d",
+   "titel": "Dinge & Alltag",
+   "vorschau": "ماشین دوچَرخِه",
+   "karten": [
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "گوشی",
+       "tr": "gūschī",
+       "de": "Handy",
+       "emoji": "📱",
+       "ak": "ein Handy",
+       "kein": "kein Handy",
+       "pl": "Handys",
+       "yek": true
+      },
+      {
+       "fa": "کِلاس",
+       "tr": "kelās",
+       "de": "Unterricht, Kurs",
+       "emoji": "🏫",
+       "ak": "Unterricht",
+       "kein": "keinen Unterricht",
+       "pl": "",
+       "yek": false
+      },
+      {
+       "fa": "خانِه",
+       "tr": "chāne",
+       "de": "Haus, Wohnung",
+       "emoji": "🏠",
+       "ak": "ein Haus",
+       "kein": "kein Haus",
+       "pl": "Häuser",
+       "yek": true
+      },
+      {
+       "fa": "گُربِه",
+       "tr": "gorbe",
+       "de": "Katze",
+       "emoji": "🐱",
+       "ak": "eine Katze",
+       "kein": "keine Katze",
+       "pl": "Katzen",
+       "yek": true
+      },
+      {
+       "fa": "دوچَرخِه",
+       "tr": "dotscharche",
+       "de": "Fahrrad",
+       "emoji": "🚲",
+       "ak": "ein Fahrrad",
+       "kein": "kein Fahrrad",
+       "pl": "Fahrräder",
+       "yek": true
+      },
+      {
+       "fa": "ماشین",
+       "tr": "māschīn",
+       "de": "Auto",
+       "emoji": "🚗",
+       "ak": "ein Auto",
+       "kein": "kein Auto",
+       "pl": "Autos",
+       "yek": true
+      }
+     ],
+     "titel": "Memory: Bild & Wort"
+    },
+    {
+     "typ": "memory",
+     "links": "tr",
+     "paare": [
+      {
+       "fa": "گوشی",
+       "tr": "gūschī",
+       "de": "Handy",
+       "emoji": "📱",
+       "ak": "ein Handy",
+       "kein": "kein Handy",
+       "pl": "Handys",
+       "yek": true
+      },
+      {
+       "fa": "گُربِه",
+       "tr": "gorbe",
+       "de": "Katze",
+       "emoji": "🐱",
+       "ak": "eine Katze",
+       "kein": "keine Katze",
+       "pl": "Katzen",
+       "yek": true
+      },
+      {
+       "fa": "دوچَرخِه",
+       "tr": "dotscharche",
+       "de": "Fahrrad",
+       "emoji": "🚲",
+       "ak": "ein Fahrrad",
+       "kein": "kein Fahrrad",
+       "pl": "Fahrräder",
+       "yek": true
+      },
+      {
+       "fa": "وَقت",
+       "tr": "waght",
+       "de": "Zeit",
+       "emoji": "⏰",
+       "ak": "Zeit",
+       "kein": "keine Zeit",
+       "pl": "",
+       "yek": false
+      },
+      {
+       "fa": "کِتاب",
+       "tr": "ketāb",
+       "de": "Buch",
+       "emoji": "📕",
+       "ak": "ein Buch",
+       "kein": "kein Buch",
+       "pl": "Bücher",
+       "yek": true
+      },
+      {
+       "fa": "کار",
+       "tr": "kār",
+       "de": "Arbeit",
+       "emoji": "💼",
+       "ak": "zu tun",
+       "kein": "nichts zu tun",
+       "pl": "",
+       "yek": false
+      }
+     ],
+     "titel": "Memory: Schrift & Aussprache"
+    },
+    {
+     "typ": "bauen",
+     "titel": "Schreib das Wort ab",
+     "zeigen": true,
+     "woerter": [
+      {
+       "fa": "کار",
+       "tr": "kār",
+       "de": "Arbeit",
+       "emoji": "💼",
+       "ak": "zu tun",
+       "kein": "nichts zu tun",
+       "pl": "",
+       "yek": false,
+       "teile": [
+        "ک",
+        "ا",
+        "ر"
+       ],
+       "extra": [
+        "س"
+       ]
+      },
+      {
+       "fa": "سَگ",
+       "tr": "sag",
+       "de": "Hund",
+       "emoji": "🐶",
+       "ak": "einen Hund",
+       "kein": "keinen Hund",
+       "pl": "Hunde",
+       "yek": true,
+       "teile": [
+        "س",
+        "گ"
+       ],
+       "extra": [
+        "ب"
+       ]
+      },
+      {
+       "fa": "خانِه",
+       "tr": "chāne",
+       "de": "Haus, Wohnung",
+       "emoji": "🏠",
+       "ak": "ein Haus",
+       "kein": "kein Haus",
+       "pl": "Häuser",
+       "yek": true,
+       "teile": [
+        "خ",
+        "ا",
+        "ن",
+        "ه"
+       ],
+       "extra": [
+        "ش"
+       ]
+      },
+      {
+       "fa": "دوچَرخِه",
+       "tr": "dotscharche",
+       "de": "Fahrrad",
+       "emoji": "🚲",
+       "ak": "ein Fahrrad",
+       "kein": "kein Fahrrad",
+       "pl": "Fahrräder",
+       "yek": true,
+       "teile": [
+        "د",
+        "و",
+        "چ",
+        "ر",
+        "خ",
+        "ه"
+       ],
+       "extra": [
+        "ب"
+       ]
+      },
+      {
+       "fa": "پول",
+       "tr": "pūl",
+       "de": "Geld",
+       "emoji": "💶",
+       "ak": "Geld",
+       "kein": "kein Geld",
+       "pl": "",
+       "yek": false,
+       "teile": [
+        "پ",
+        "و",
+        "ل"
+       ],
+       "extra": [
+        "ت"
+       ]
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitzlesen: Bedeutung",
+     "modus": "de",
+     "sekunden": 60,
+     "ziel": 12,
+     "woerter": [
+      {
+       "fa": "ماشین",
+       "de": "Auto"
+      },
+      {
+       "fa": "دوچَرخِه",
+       "de": "Fahrrad"
+      },
+      {
+       "fa": "گوشی",
+       "de": "Handy"
+      },
+      {
+       "fa": "کامپیوتِر",
+       "de": "Computer"
+      },
+      {
+       "fa": "خانِه",
+       "de": "Haus, Wohnung"
+      },
+      {
+       "fa": "گُربِه",
+       "de": "Katze"
+      },
+      {
+       "fa": "سَگ",
+       "de": "Hund"
+      },
+      {
+       "fa": "کِتاب",
+       "de": "Buch"
+      },
+      {
+       "fa": "وَقت",
+       "de": "Zeit"
+      },
+      {
+       "fa": "پول",
+       "de": "Geld"
+      },
+      {
+       "fa": "سُوال",
+       "de": "Frage"
+      },
+      {
+       "fa": "کِلاس",
+       "de": "Unterricht, Kurs"
+      },
+      {
+       "fa": "اِمتِحان",
+       "de": "Prüfung"
+      },
+      {
+       "fa": "کار",
+       "de": "Arbeit"
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitzlesen: Aussprache",
+     "modus": "tr",
+     "sekunden": 60,
+     "ziel": 12,
+     "woerter": [
+      {
+       "fa": "ماشین",
+       "tr": "māschīn"
+      },
+      {
+       "fa": "دوچَرخِه",
+       "tr": "dotscharche"
+      },
+      {
+       "fa": "گوشی",
+       "tr": "gūschī"
+      },
+      {
+       "fa": "کامپیوتِر",
+       "tr": "kāmpyūter"
+      },
+      {
+       "fa": "خانِه",
+       "tr": "chāne"
+      },
+      {
+       "fa": "گُربِه",
+       "tr": "gorbe"
+      },
+      {
+       "fa": "سَگ",
+       "tr": "sag"
+      },
+      {
+       "fa": "کِتاب",
+       "tr": "ketāb"
+      },
+      {
+       "fa": "وَقت",
+       "tr": "waght"
+      },
+      {
+       "fa": "پول",
+       "tr": "pūl"
+      },
+      {
+       "fa": "سُوال",
+       "tr": "soʾāl"
+      },
+      {
+       "fa": "کِلاس",
+       "tr": "kelās"
+      },
+      {
+       "fa": "اِمتِحان",
+       "tr": "emtehān"
+      },
+      {
+       "fa": "کار",
+       "tr": "kār"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "e",
+   "titel": "Zahlen-Training",
+   "vorschau": "۱۲۳",
+   "karten": [
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Zahlen 1–5",
+     "aufgabe": "Welche Zahl ist das?",
+     "modus": "de",
+     "sekunden": 40,
+     "ziel": 15,
+     "woerter": [
+      {
+       "fa": "۱",
+       "a": "1"
+      },
+      {
+       "fa": "۲",
+       "a": "2"
+      },
+      {
+       "fa": "۳",
+       "a": "3"
+      },
+      {
+       "fa": "۴",
+       "a": "4"
+      },
+      {
+       "fa": "۵",
+       "a": "5"
+      },
+      {
+       "fa": "یِک",
+       "a": "1"
+      },
+      {
+       "fa": "دو",
+       "a": "2"
+      },
+      {
+       "fa": "سِه",
+       "a": "3"
+      },
+      {
+       "fa": "چَهار",
+       "a": "4"
+      },
+      {
+       "fa": "پَنج",
+       "a": "5"
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Wie viele?",
+     "aufgabe": "Was bedeutet der Satz?",
+     "modus": "de",
+     "sekunden": 60,
+     "ziel": 10,
+     "woerter": [
+      {
+       "fa": "مَن دو بَرادَر دارَم.",
+       "a": "Ich habe zwei Brüder."
+      },
+      {
+       "fa": "مَن سِه بَرادَر دارَم.",
+       "a": "Ich habe drei Brüder."
+      },
+      {
+       "fa": "مَن چَهار بَرادَر دارَم.",
+       "a": "Ich habe vier Brüder."
+      },
+      {
+       "fa": "مَن پَنج بَرادَر دارَم.",
+       "a": "Ich habe fünf Brüder."
+      },
+      {
+       "fa": "مَن دو کِتاب دارَم.",
+       "a": "Ich habe zwei Bücher."
+      },
+      {
+       "fa": "مَن سِه کِتاب دارَم.",
+       "a": "Ich habe drei Bücher."
+      },
+      {
+       "fa": "مَن چَهار کِتاب دارَم.",
+       "a": "Ich habe vier Bücher."
+      },
+      {
+       "fa": "مَن پَنج کِتاب دارَم.",
+       "a": "Ich habe fünf Bücher."
+      },
+      {
+       "fa": "مَن دو گُربِه دارَم.",
+       "a": "Ich habe zwei Katzen."
+      },
+      {
+       "fa": "مَن سِه گُربِه دارَم.",
+       "a": "Ich habe drei Katzen."
+      },
+      {
+       "fa": "مَن چَهار گُربِه دارَم.",
+       "a": "Ich habe vier Katzen."
+      },
+      {
+       "fa": "مَن پَنج گُربِه دارَم.",
+       "a": "Ich habe fünf Katzen."
+      }
+     ]
+    },
+    {
+     "typ": "memory",
+     "links": "x",
+     "paare": [
+      {
+       "fa": "یِک",
+       "tr": "yek",
+       "de": "1",
+       "x": "۱"
+      },
+      {
+       "fa": "دو",
+       "tr": "do",
+       "de": "2",
+       "x": "۲"
+      },
+      {
+       "fa": "سِه",
+       "tr": "se",
+       "de": "3",
+       "x": "۳"
+      },
+      {
+       "fa": "چَهار",
+       "tr": "tschahār",
+       "de": "4",
+       "x": "۴"
+      },
+      {
+       "fa": "پَنج",
+       "tr": "pandsch",
+       "de": "5",
+       "x": "۵"
+      }
+     ],
+     "titel": "Memory: Zahlwort ↔ Ziffer"
+    }
+   ]
+  },
+  {
+   "id": "f",
+   "titel": "Bejaht → verneint",
+   "vorschau": "دار → نَدار",
+   "karten": [
+    {
+     "typ": "wahl",
+     "titel": "Mach den Satz negativ",
+     "fragen": [
+      {
+       "frage": "Verneine: <span class='fa'>آنها یِک کامپیوتِر دارَند.</span>",
+       "optionen": [
+        "آنها کامپیوتِر نَدارَند.",
+        "او کامپیوتِر نَدارَد.",
+        "آنها یِک کامپیوتِر دارَند."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "Sie haben keinen Computer."
+      },
+      {
+       "frage": "Verneine: <span class='fa'>آنها یِک فَرزَند دارَند.</span>",
+       "optionen": [
+        "آنها فَرزَند نَدارَند.",
+        "او فَرزَند نَدارَد.",
+        "آنها یِک فَرزَند دارَند."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "Sie haben kein Kind."
+      },
+      {
+       "frage": "Verneine: <span class='fa'>آنها یِک کِتاب دارَند.</span>",
+       "optionen": [
+        "آنها کِتاب نَدارَند.",
+        "او کِتاب نَدارَد.",
+        "آنها یِک کِتاب دارَند."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "Sie haben kein Buch."
+      },
+      {
+       "frage": "Verneine: <span class='fa'>آنها یِک سُوال دارَند.</span>",
+       "optionen": [
+        "آنها سُوال نَدارَند.",
+        "او سُوال نَدارَد.",
+        "آنها یِک سُوال دارَند."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "Sie haben keine Frage."
+      },
+      {
+       "frage": "Verneine: <span class='fa'>شُما یِک سُوال دارید.</span>",
+       "optionen": [
+        "شُما سُوال نَدارید.",
+        "تو سُوال نَداری.",
+        "شُما یِک سُوال دارید."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "Ihr habt keine Frage."
+      },
+      {
+       "frage": "Verneine: <span class='fa'>ما یِک ماشین داریم.</span>",
+       "optionen": [
+        "ما ماشین نَداریم.",
+        "مَن ماشین نَدارَم.",
+        "ما یِک ماشین داریم."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "Wir haben kein Auto."
+      },
+      {
+       "frage": "Verneine: <span class='fa'>آنها یِک گُربِه دارَند.</span>",
+       "optionen": [
+        "آنها گُربِه نَدارَند.",
+        "او گُربِه نَدارَد.",
+        "آنها یِک گُربِه دارَند."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "Sie haben keine Katze."
+      },
+      {
+       "frage": "Verneine: <span class='fa'>آنها یِک فَرزَند دارَند.</span>",
+       "optionen": [
+        "آنها فَرزَند نَدارَند.",
+        "او فَرزَند نَدارَد.",
+        "آنها یِک فَرزَند دارَند."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "Sie haben kein Kind."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wortschatz-Trainer · Farsi-Lernpfad</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Vazirmatn:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css">
+<style>
+  .wahlreihe{display:flex;gap:8px;flex-wrap:wrap}
+  .spiele{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:12px;margin:14px 0 30px}
+  .spiel{border:1px solid var(--linie);background:var(--karte);border-radius:16px;padding:14px;text-align:left;box-shadow:var(--schatten);display:grid;gap:4px;transition:transform .12s}
+  .spiel:hover{transform:translateY(-2px)}
+  .spiel .ico{font-size:1.8rem}
+  .spiel b{font-size:1rem}
+  .spiel .mini{font-size:.8rem;color:var(--tinte2)}
+  .spiel .best{font-size:.75rem;font-weight:800;color:var(--gruen)}
+  .wl-kat{margin:18px 0 6px;font-size:1rem}
+  .wl{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:8px}
+  .wl-e{border:1px solid var(--linie);background:#fff;border-radius:12px;padding:8px 12px;display:grid;grid-template-columns:1fr auto;gap:2px 8px;align-items:center;cursor:pointer}
+  .wl-e .fa{font-size:1.5rem;font-weight:700;color:var(--lapis);text-align:right;grid-column:1/3}
+  .wl-e .stamm{font-size:.8rem;color:var(--tinte2);grid-column:1/3;text-align:right}
+  .wl-e .stamm .fa{font-size:1.05rem;display:inline;color:var(--tuerkis)}
+  .zusammen{display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin-top:12px}
+  .zahl-gross{font-size:1.6rem;font-weight:800;color:var(--lapis)}
+</style>
+</head>
+<body>
+<header class="kopf">
+  <div class="wrap">
+    <a href="index.html" class="medaillon" style="text-decoration:none" aria-label="Zum Lernpfad">فا</a>
+    <div><h1>Wortschatz-Trainer</h1><div class="unter">Farsi-Lernpfad · Lern Farsi mit Arash</div></div>
+    <div class="rechts">
+      <button class="kopf-btn" id="btnUmschrift" title="Umschrift ein/aus">abc</button>
+      <button class="kopf-btn" id="btnTon">🔊 Ton</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap" style="padding-bottom:60px">
+  <section id="auswahl">
+    <div class="karte" style="margin-top:20px">
+      <h3 style="margin:0 0 8px">Welche Wörter?</h3>
+      <div class="wahlreihe" id="lekChips"></div>
+      <label class="klein" style="display:inline-flex;gap:6px;align-items:center;margin-top:10px"><input type="checkbox" id="nurDiese"> nur Wörter dieser Lektion (sonst: alles bis hier)</label>
+      <div class="wahlreihe" id="katChips" style="margin-top:12px"></div>
+      <div class="zusammen"><div><span class="zahl-gross" id="anzahl">0</span> <span class="muted">Wörter ausgewählt</span></div>
+        <span class="klein muted">Verben stehen immer im Infinitiv – mit Präsensstamm in Klammern.</span></div>
+    </div>
+    <div class="spiele" id="spiele"></div>
+  </section>
+
+  <section id="spielfeld" class="versteckt" style="margin:18px 0 60px">
+    <div class="st-titel"><h2 id="spielTitel" style="margin:0"></h2><button class="btn zwei klein" id="zurueck">☰ Auswahl</button></div>
+    <div id="karte" style="margin-top:12px"></div>
+    <div class="buehne-fuss" id="fuss"></div>
+  </section>
+
+  <section id="liste" class="versteckt" style="margin:18px 0 60px">
+    <div class="st-titel"><h2 style="margin:0">Wortliste</h2>
+      <div class="btnreihe"><input class="feld" id="suche" placeholder="🔍 suchen …" style="max-width:220px"><button class="btn zwei klein" id="zurueck2">☰ Auswahl</button></div></div>
+    <div id="wl"></div>
+  </section>
+</main>
+
+<script>window.OHNE_LEKTION = true;</script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+<script src="assets/core.js"></script>
+<script src="assets/lektion.js"></script>
+<script>
+(function () {
+  const F = window.FARSI, { $, $$, esc, mischen, toast } = F;
+  const E = window.LEKTION_ENGINE;
+  let LEKS = [], WS = [], bis = null, nurDiese = false, kat = "Alle";
+  const LS_BEST = "farsi_ws_best_v1";
+
+  const anzeige = w => w.stamm ? `${w.fa} (${w.stamm})` : w.fa;
+  const anzeigeTr = w => w.stamm ? `${w.tr} (${w.stammTr})` : w.tr;
+  const auswahl = () => {
+    const idx = LEKS.findIndex(l => l.id === bis);
+    const erlaubt = nurDiese ? [bis] : LEKS.slice(0, idx + 1).map(l => l.id);
+    return WS.filter(w => erlaubt.includes(w.lek) && (kat === "Alle" || w.kat === kat));
+  };
+  function eindeutig(liste, key, n) {  // n Einträge mit verschiedenen Schlüsseln
+    const seen = new Set(), out = [];
+    for (const w of mischen(liste)) { const k = key(w); if (!k || seen.has(k)) continue; seen.add(k); out.push(w); if (out.length === n) break; }
+    return out;
+  }
+
+  const SPIELE = [
+    { id: "paare", ico: "🔗", titel: "Paare: Wort ↔ Bedeutung", text: "6 Paare zuordnen", min: 4,
+      karte: l => ({ typ: "paare", links: "de", titel: "Finde die Paare", paare: eindeutig(l, w => w.de, 6).map(w => ({ fa: anzeige(w), de: w.de, emoji: w.emoji || "" })) }) },
+    { id: "paare-tr", ico: "🗣️", titel: "Paare: Schrift ↔ Aussprache", text: "6 Paare zuordnen", min: 4,
+      karte: l => ({ typ: "paare", links: "tr", titel: "Schrift und Aussprache", paare: eindeutig(l, w => w.tr, 6).map(w => ({ fa: anzeige(w), tr: anzeigeTr(w) })) }) },
+    { id: "memory", ico: "🧠", titel: "Memory", text: "Bilder oder Bedeutungen aufdecken", min: 4,
+      karte: l => { const mitBild = eindeutig(l.filter(w => w.emoji), w => w.emoji, 6);
+        return mitBild.length >= 6 ? { typ: "memory", links: "emoji", titel: "Memory: Bild & Wort", paare: mitBild.map(w => ({ fa: anzeige(w), emoji: w.emoji, de: w.de })) }
+          : { typ: "memory", links: "de", titel: "Memory: Wort & Bedeutung", paare: eindeutig(l, w => w.de, 6).map(w => ({ fa: anzeige(w), de: w.de })) }; } },
+    { id: "blitz-de", ico: "⏱️", titel: "Blitzlesen: Bedeutung", text: "60 Sekunden, Ziel 15", min: 6,
+      karte: l => ({ typ: "tempo", modus: "de", sekunden: 60, ziel: 15, titel: "Blitzlesen: Was bedeutet das?", woerter: eindeutig(l, w => anzeige(w), 999).map(w => ({ fa: anzeige(w), de: w.de })) }) },
+    { id: "blitz-tr", ico: "⚡", titel: "Blitzlesen: Aussprache", text: "60 Sekunden, Ziel 15", min: 6,
+      karte: l => ({ typ: "tempo", modus: "tr", sekunden: 60, ziel: 15, titel: "Blitzlesen: Wie spricht man das?", woerter: eindeutig(l, w => anzeige(w), 999).map(w => ({ fa: anzeige(w), tr: anzeigeTr(w) })) }) },
+    { id: "karten", ico: "🃏", titel: "Karteikarten", text: "10 Wörter lesen & aufdecken", min: 1,
+      karte: l => ({ typ: "lesen", titel: "Lies das Wort", karten: eindeutig(l, w => w.fa, 10).map(w => ({ fa: anzeige(w), tr: anzeigeTr(w), de: w.de, emoji: w.emoji || "" })) }) },
+    { id: "abschreiben", ico: "✍️", titel: "Abschreiben", text: "5 Wörter aus Buchstaben bauen", min: 3,
+      karte: l => { const ok = l.filter(w => !/[\s‌!?؟.]/.test(w.fa));
+        const buch = "بپتسشزرکگدنمل";
+        return { typ: "bauen", zeigen: true, titel: "Schreib das Wort ab", woerter: eindeutig(ok, w => w.fa, 5).map(w => {
+          const teile = [...w.fa.replace(/[ً-ْ]/g, "")];
+          const extra = mischen([...buch].filter(c => !teile.includes(c))).slice(0, 2);
+          return { fa: w.fa, tr: w.tr, de: w.de, emoji: w.emoji || "", teile, extra }; }) }; } },
+    { id: "liste", ico: "📋", titel: "Wortliste", text: "alle Wörter zum Nachschlagen", min: 1 }
+  ];
+
+  function best() { try { return JSON.parse(localStorage.getItem(LS_BEST)) || {}; } catch (e) { return {}; } }
+  function merkeBest(id, p, m) { const b = best(), k = id + "|" + (nurDiese ? "nur" : "bis") + bis + "|" + kat; if (!b[k] || p / m > b[k].p / b[k].m) { b[k] = { p, m }; try { localStorage.setItem(LS_BEST, JSON.stringify(b)); } catch (e) { } } }
+
+  function zeichneAuswahl() {
+    $("#lekChips").innerHTML = LEKS.map(l => `<button class="tab ${l.id === bis ? "an" : ""}" data-l="${l.id}">L${l.nummer} <span class="klein">${esc(l.kurz)}</span></button>`).join("");
+    $$("#lekChips [data-l]").forEach(b => b.onclick = () => { bis = b.dataset.l; kat = "Alle"; zeichneAuswahl(); });
+    $("#nurDiese").checked = nurDiese;
+    const basis = (() => { const k0 = kat; kat = "Alle"; const r = auswahl(); kat = k0; return r; })();
+    const kats = [...new Set(basis.map(w => w.kat))];
+    if (kat !== "Alle" && !kats.includes(kat)) kat = "Alle";
+    $("#katChips").innerHTML = ["Alle", ...kats].map(k => `<button class="tab ${k === kat ? "an" : ""}" data-k="${esc(k)}">${esc(k)} <span class="klein">${k === "Alle" ? basis.length : basis.filter(w => w.kat === k).length}</span></button>`).join("");
+    $$("#katChips [data-k]").forEach(b => b.onclick = () => { kat = b.dataset.k; zeichneAuswahl(); });
+    const l = auswahl();
+    $("#anzahl").textContent = l.length;
+    const b_ = best();
+    $("#spiele").innerHTML = SPIELE.map(s => {
+      const bk = b_[s.id + "|" + (nurDiese ? "nur" : "bis") + bis + "|" + kat];
+      const aus = l.length < s.min;
+      return `<button class="spiel" data-s="${s.id}" ${aus ? "disabled style='opacity:.45'" : ""}>
+        <span class="ico">${s.ico}</span><b>${s.titel}</b><span class="mini">${aus ? `braucht mind. ${s.min} Wörter` : s.text}</span>
+        ${bk ? `<span class="best">Bestwert: ${bk.p}/${bk.m}</span>` : ""}</button>`;
+    }).join("");
+    $$(".spiel[data-s]").forEach(b => b.onclick = () => starte(b.dataset.s));
+  }
+  $("#nurDiese").onchange = e => { nurDiese = e.target.checked; zeichneAuswahl(); };
+
+  function zeige(bereich) { ["auswahl", "spielfeld", "liste"].forEach(id => $("#" + id).classList.toggle("versteckt", id !== bereich)); window.scrollTo(0, 0); }
+  $("#zurueck").onclick = $("#zurueck2").onclick = () => { E.raeumeAuf(); zeige("auswahl"); zeichneAuswahl(); };
+
+  function starte(id) {
+    if (id === "liste") return zeigeListe();
+    const s = SPIELE.find(x => x.id === id);
+    E.raeumeAuf();
+    zeige("spielfeld");
+    $("#spielTitel").textContent = s.ico + " " + s.titel;
+    $("#fuss").innerHTML = `<span class="klein muted" id="kp"></span><button class="btn safran versteckt" id="nochmal">🔁 Neue Runde</button>`;
+    $("#nochmal").onclick = () => starte(id);
+    const karte = s.karte(auswahl());
+    window.WS_TRAINER.letzteKarte = karte;
+    E.R[karte.typ](karte, $("#karte"), (p, m) => {
+      if (m) { $("#kp").textContent = `${p} von ${m} Punkten`; merkeBest(id, p, m); F.speichereStation("ws", id, p, m); }
+      $("#nochmal").classList.remove("versteckt");
+    });
+  }
+
+  function zeigeListe() {
+    zeige("liste");
+    const zeichne = () => {
+      const q = $("#suche").value.trim().toLowerCase();
+      const l = auswahl().filter(w => !q || w.de.toLowerCase().includes(q) || w.tr.toLowerCase().includes(q) || w.fa.includes(q));
+      const kats = [...new Set(l.map(w => w.kat))];
+      $("#wl").innerHTML = kats.map(k => `<h3 class="wl-kat">${esc(k)} <span class="klein muted">(${l.filter(w => w.kat === k).length})</span></h3>
+        <div class="wl">${l.filter(w => w.kat === k).map(w => `<div class="wl-e" data-say="${esc(w.fa)}">
+          <div class="fa">${esc(w.fa)}</div>
+          ${w.stamm ? `<div class="stamm">Präsensstamm: <span class="fa">${esc(w.stamm)}</span> <i>${esc(w.stammTr)}</i></div>` : ""}
+          <span class="tr us">${esc(w.tr)}</span><span class="de klein" style="text-align:right">${w.emoji ? w.emoji + " " : ""}${esc(w.de)}</span></div>`).join("")}</div>`).join("") || `<p class="muted">Keine Treffer.</p>`;
+      $$("#wl [data-say]").forEach(e => e.onclick = () => F.sprich(e.dataset.say));
+    };
+    $("#suche").oninput = zeichne; zeichne();
+  }
+
+  let gestartet = null;
+  function start() { return gestartet || (gestartet = starteEinmal()); }
+  async function starteEinmal() {
+    F.anwendenEinst();
+    const setzeKnoepfe = () => { const x = F.einst(); $("#btnTon").textContent = x.ton ? "🔊 Ton" : "🔇 Ton"; $("#btnTon").classList.toggle("aus", !x.ton); $("#btnUmschrift").classList.toggle("aus", !x.umschrift); };
+    $("#btnTon").onclick = () => { F.setEinst({ ton: !F.einst().ton }); setzeKnoepfe(); };
+    $("#btnUmschrift").onclick = () => { F.setEinst({ umschrift: !F.einst().umschrift }); setzeKnoepfe(); };
+    setzeKnoepfe();
+    try {
+      const index = await F.ladeJSON("lektionen/index.json");
+      const frei = await F.ladeFreigaben();
+      const gesehen = new Set();
+      for (const l of index.lektionen) {
+        if (!l.wortschatz || !l.datei || !F.istOffen(l, frei)) continue;
+        const d = await F.ladeJSON("lektionen/" + l.wortschatz);
+        LEKS.push({ id: l.id, nummer: l.nummer, kurz: l.titel.split(/[–:]/)[0].trim() });
+        d.woerter.forEach(w => { if (gesehen.has(w.fa)) return; gesehen.add(w.fa); WS.push({ ...w, lek: l.id }); });
+      }
+    } catch (e) { console.error(e); $("#auswahl").innerHTML = `<div class="karte" style="margin-top:20px">Der Wortschatz konnte nicht geladen werden.</div>`; return; }
+    if (!LEKS.length) { $("#auswahl").innerHTML = `<div class="karte" style="margin-top:20px">Noch keine Lektion freigeschaltet.</div>`; return; }
+    bis = LEKS[LEKS.length - 1].id;
+    zeichneAuswahl();
+  }
+  window.WS_TRAINER = { start, auswahl: () => auswahl(), starte };
+  document.addEventListener("DOMContentLoaded", start);
+})();
+</script>
+<script data-goatcounter="https://aguitoo.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

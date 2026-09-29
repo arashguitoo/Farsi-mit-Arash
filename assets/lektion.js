@@ -322,6 +322,30 @@
     fertig(0, 0);
   };
 
+  R.ordnen = (k, el, fertig) => {
+    const n = k.items.length; let pos = 0, fehler = 0;
+    const gem = mischen(k.items.map((it, i) => ({ it, i })));
+    el.innerHTML = `<div class="karte">
+      <h2 style="margin-top:0">${k.titel || "Bring in die richtige Reihenfolge"}</h2>
+      <p class="muted" style="margin-top:0">${k.frage || "Tippe die Sätze in der richtigen Reihenfolge an."}</p>
+      <ol class="ordnen-liste" id="ol"></ol>
+      <div class="ordnen-pool" id="pool">${gem.map(g => `<button class="ord-btn" data-i="${g.i}"><span class="fa">${esc(g.it.fa)}</span></button>`).join("")}</div>
+      <div class="zaehler" id="oz">0 von ${n}</div></div>`;
+    $$(".ord-btn", el).forEach(b => b.addEventListener("click", () => {
+      const i = +b.dataset.i;
+      if (i === pos) {
+        const it = k.items[i];
+        const li = document.createElement("li");
+        li.innerHTML = `<div class="fa">${esc(it.fa)}</div>${it.tr ? `<div class="tr us klein">${esc(it.tr)}</div>` : ""}${it.de ? `<div class="de klein">${esc(it.de)}</div>` : ""}`;
+        $("#ol", el).appendChild(li); b.remove(); pos++; ton("ok"); sprich(it.say || it.fa, it.audio);
+        $("#oz", el).textContent = `${pos} von ${n}`;
+        if (pos === n) fertig(Math.max(0, n - fehler), n);
+      } else {
+        fehler++; ton("falsch"); b.classList.add("falsch"); setTimeout(() => b.classList.remove("falsch"), 450);
+      }
+    }));
+  };
+
   R.memory = (k, el, fertig) => {
     const n = k.paare.length, links = k.links || "tr";
     const rueck = p => links === "x" ? `<span class="fa x">${esc(p.x)}</span>` : links === "tr" ? `<span class="tr">${esc(p.tr)}</span>`
@@ -585,6 +609,6 @@
     if (st >= 1 && st <= LEK.stationen.length) starteStation(st - 1); else zeigeUebersicht();
   }
 
-  window.LEKTION_ENGINE = { R, start, formen };
-  document.addEventListener("DOMContentLoaded", start);
+  window.LEKTION_ENGINE = { R, start, formen, raeumeAuf: () => raeumeAuf() };
+  if (!window.OHNE_LEKTION) document.addEventListener("DOMContentLoaded", start);
 })();
