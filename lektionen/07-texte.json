@@ -1,0 +1,740 @@
+{
+ "id": "tx",
+ "art": "texte",
+ "titel": "Texte & Dialoge",
+ "beschreibung": "Lesetexte mit Fragen und Dialoge zum Ordnen.",
+ "stationen": [
+  {
+   "id": "t1",
+   "titel": "Kurztext: Ein Fest im Park",
+   "vorschau": "جَشن در پارک",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Kurztext: Ein Fest im Park",
+     "zeilen": [
+      {
+       "fa": "دیروز تَوَلُّدِ مَریَم بود.",
+       "tr": "dīrūz tawallod-e maryam būd.",
+       "de": "Gestern war Maryams Geburtstag."
+      },
+      {
+       "fa": "او دوستانَش را به پارک دَعوَت کَرد.",
+       "tr": "ū dūstānasch rā be pārk daʿwat kard.",
+       "de": "Sie hat ihre Freunde in den Park eingeladen."
+      },
+      {
+       "fa": "دَه نَفَر آمَدَند.",
+       "tr": "dah nafar āmadand.",
+       "de": "Zehn Leute sind gekommen."
+      },
+      {
+       "fa": "مِهمان‌ها گُل و هِدیه آوَردَند.",
+       "tr": "mehmānhā gol o hedye āwardand.",
+       "de": "Die Gäste haben Blumen und Geschenke mitgebracht."
+      },
+      {
+       "fa": "مَریَم هِدیه‌ها را باز کَرد.",
+       "tr": "maryam hedyehā rā bāz kard.",
+       "de": "Maryam hat die Geschenke aufgemacht."
+      },
+      {
+       "fa": "بَعد، هَمه کیک خوردَند و آهَنگ خواندَند.",
+       "tr": "baʿd, hame keyk chordand o āhang chāndand.",
+       "de": "Danach haben alle Kuchen gegessen und Lieder gesungen."
+      },
+      {
+       "fa": "دُختَران و پِسَران در پارک رَقصیدَند.",
+       "tr": "dochtarān o pesarān dar pārk raghsīdand.",
+       "de": "Die Mädchen und Jungen haben im Park getanzt."
+      },
+      {
+       "fa": "مَریَم سی سال دارَد.",
+       "tr": "maryam sī sāl dārad.",
+       "de": "Maryam ist dreißig Jahre alt."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "جَشن در خانِه بود.",
+       "fest": true,
+       "erkl": "Das Fest war im <b>Park</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "دَه نَفَر آمَدَند.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "مِهمان‌ها گُل آوَردَند.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "مَریَم بیست سال دارَد.",
+       "fest": true,
+       "erkl": "Maryam ist <b>dreißig</b> (<span class='fa'>سی</span>)."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Wo war das Fest?",
+       "optionen": [
+        "im Park",
+        "zu Hause",
+        "im Restaurant"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie viele Leute sind gekommen?",
+       "optionen": [
+        "zehn",
+        "zwanzig",
+        "drei"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was hat Maryam aufgemacht?",
+       "optionen": [
+        "die Geschenke",
+        "den Kuchen",
+        "die Tür"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was haben alle gegessen?",
+       "optionen": [
+        "Kuchen",
+        "Reis",
+        "Obst"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "a1",
+   "titel": "Lesen: Saras Geburtstag",
+   "vorschau": "تَوَلُّدَت مُبارَک!",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neu im Text",
+     "text": "<p><span class='fa'>تا</span> <i>tā</i> – bis · <span class='fa'>طول کِشیدَن</span> <i>tūl keschīdan</i> – dauern · <span class='fa'>هَمه</span> – alle</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Saras Geburtstag",
+     "zeilen": [
+      {
+       "fa": "دیروز جَشنِ تَوَلُّدِ سارا بود.",
+       "tr": "dīrūz dschaschn-e tawallod-e sārā būd.",
+       "de": "Gestern war Saras Geburtstagsfeier.",
+       "emoji": "🎂"
+      },
+      {
+       "fa": "سارا بیست و یِک سال دارَد.",
+       "tr": "sārā bīst o yek sāl dārad.",
+       "de": "Sara ist 21 Jahre alt.",
+       "emoji": "🎂"
+      },
+      {
+       "fa": "سارا دوستانَش را دَعوَت کَرد.",
+       "tr": "sārā dūstānasch rā daʿwat kard.",
+       "de": "Sara hat ihre Freunde eingeladen.",
+       "emoji": "💌"
+      },
+      {
+       "fa": "مِهمان‌ها ساعَتِ شِش آمَدَند.",
+       "tr": "mehmānhā sāʿat-e schesch āmadand.",
+       "de": "Die Gäste sind um sechs gekommen.",
+       "emoji": "🧑‍🤝‍🧑"
+      },
+      {
+       "fa": "دوستانَم هِدیه آوَردَند.",
+       "tr": "dūstānam hedye āwardand.",
+       "de": "Meine Freunde haben Geschenke mitgebracht.",
+       "emoji": "🎁"
+      },
+      {
+       "fa": "بیست و یِک شَمع روی کیک بود.",
+       "tr": "bīst o yek schamʿ rū-ye keyk būd.",
+       "de": "Auf dem Kuchen waren 21 Kerzen.",
+       "emoji": "🕯️"
+      },
+      {
+       "fa": "هَمه آهَنگِ تَوَلُّد خواندَند.",
+       "tr": "hame āhang-e tawallod chāndand.",
+       "de": "Alle haben das Geburtstagslied gesungen."
+      },
+      {
+       "fa": "سارا هِدیه‌ها را باز کَرد.",
+       "tr": "sārā hedyehā rā bāz kard.",
+       "de": "Sara hat die Geschenke aufgemacht.",
+       "emoji": "🎁"
+      },
+      {
+       "fa": "بَعد، مِهمان‌ها رَقصیدَند و خَندیدَند.",
+       "tr": "baʿd, mehmānhā raghsīdand o chandīdand.",
+       "de": "Danach haben die Gäste getanzt und gelacht."
+      },
+      {
+       "fa": "جَشن تا ساعَتِ دَوازدَه طول کِشید.",
+       "tr": "dschaschn tā sāʿat-e dawāzdah tūl keschīd.",
+       "de": "Die Feier hat bis zwölf Uhr gedauert."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Wie alt ist Sara geworden?",
+       "optionen": [
+        "21",
+        "12",
+        "20"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie viele Kerzen waren auf dem Kuchen?",
+       "optionen": [
+        "21",
+        "12",
+        "20"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was haben die Freunde mitgebracht?",
+       "optionen": [
+        "Geschenke",
+        "Blumen",
+        "Kuchen"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Bis wann ging die Feier?",
+       "optionen": [
+        "bis 12 Uhr",
+        "bis 6 Uhr",
+        "bis 11 Uhr"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wann sind die Gäste gekommen?",
+       "optionen": [
+        "um sechs",
+        "um sieben",
+        "um zwölf"
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was ist wann passiert?",
+     "frage": "Bring die Sätze in die richtige Reihenfolge.",
+     "items": [
+      {
+       "fa": "مِهمان‌ها ساعَتِ شِش آمَدَند.",
+       "tr": "mehmānhā sāʿat-e schesch āmadand.",
+       "de": "Die Gäste sind um sechs gekommen.",
+       "emoji": "🧑‍🤝‍🧑"
+      },
+      {
+       "fa": "دوستانَم هِدیه آوَردَند.",
+       "tr": "dūstānam hedye āwardand.",
+       "de": "Meine Freunde haben Geschenke mitgebracht.",
+       "emoji": "🎁"
+      },
+      {
+       "fa": "هَمه آهَنگِ تَوَلُّد خواندَند.",
+       "tr": "hame āhang-e tawallod chāndand.",
+       "de": "Alle haben das Geburtstagslied gesungen."
+      },
+      {
+       "fa": "سارا هِدیه‌ها را باز کَرد.",
+       "tr": "sārā hedyehā rā bāz kard.",
+       "de": "Sara hat die Geschenke aufgemacht.",
+       "emoji": "🎁"
+      },
+      {
+       "fa": "بَعد، مِهمان‌ها رَقصیدَند و خَندیدَند.",
+       "tr": "baʿd, mehmānhā raghsīdand o chandīdand.",
+       "de": "Danach haben die Gäste getanzt und gelacht."
+      },
+      {
+       "fa": "جَشن تا ساعَتِ دَوازدَه طول کِشید.",
+       "tr": "dschaschn tā sāʿat-e dawāzdah tūl keschīd.",
+       "de": "Die Feier hat bis zwölf Uhr gedauert."
+      }
+     ]
+    },
+    {
+     "typ": "finden",
+     "titel": "Plural-Jagd",
+     "frage": "Tippe alle Wörter im <b>Plural</b> an.",
+     "woerter": [
+      {
+       "fa": "مِهمان‌ها",
+       "tr": "mehmānhā",
+       "ja": true
+      },
+      {
+       "fa": "دوستانَش",
+       "tr": "dūstānasch",
+       "ja": true
+      },
+      {
+       "fa": "هِدیه‌ها",
+       "tr": "hedyehā",
+       "ja": true
+      },
+      {
+       "fa": "شَمع",
+       "tr": "schamʿ",
+       "ja": false
+      },
+      {
+       "fa": "کیک",
+       "tr": "keyk",
+       "ja": false
+      },
+      {
+       "fa": "دُختَران",
+       "tr": "dochtarān",
+       "ja": true
+      },
+      {
+       "fa": "جَشن",
+       "tr": "dschaschn",
+       "ja": false
+      },
+      {
+       "fa": "نَفَر",
+       "tr": "nafar",
+       "ja": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "a2",
+   "titel": "Profi-Text: Gäste bei uns",
+   "vorschau": "مهمان داشتیم",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neu im Text",
+     "text": "<p><span class='fa'>شیرینی</span> – Gebäck, Süßes · <span class='fa'>سَفَر</span> – Reise · <span class='fa'>نِشان دادَن</span> – zeigen</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Gäste bei uns",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "دیروز ما مهمان داشتیم.",
+       "tr": "dīrūz mā mehmān dāschtīm.",
+       "de": "Gestern hatten wir Gäste."
+      },
+      {
+       "fa": "دوستان پدرم ساعت هفت آمدند.",
+       "tr": "dūstān-e pedaram sāʿat-e haft āmadand.",
+       "de": "Die Freunde meines Vaters kamen um sieben."
+      },
+      {
+       "fa": "آنها گل و شیرینی آوردند.",
+       "tr": "ānhā gol o schīrīnī āwardand.",
+       "de": "Sie haben Blumen und Gebäck mitgebracht."
+      },
+      {
+       "fa": "مادرم غذا پخت و ما شام خوردیم.",
+       "tr": "mādaram ghazā pocht o mā schām chordīm.",
+       "de": "Meine Mutter hat gekocht und wir haben zu Abend gegessen."
+      },
+      {
+       "fa": "بعد، مهمان‌ها عکس‌های سفرشان را نشان دادند.",
+       "tr": "baʿd, mehmānhā ʿakshā-ye safareschān rā neschān dādand.",
+       "de": "Danach haben die Gäste die Fotos von ihrer Reise gezeigt."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Profi-Text",
+     "fragen": [
+      {
+       "frage": "Wer ist gekommen?",
+       "optionen": [
+        "die Freunde des Vaters",
+        "die Freunde der Mutter",
+        "die Nachbarn"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wann?",
+       "optionen": [
+        "um sieben",
+        "um sechs",
+        "um acht"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was haben die Gäste mitgebracht?",
+       "optionen": [
+        "Blumen und Gebäck",
+        "Fotos",
+        "Kuchen"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was haben die Gäste gezeigt?",
+       "optionen": [
+        "Fotos von ihrer Reise",
+        "Geschenke",
+        "Bücher"
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "finden",
+     "titel": "Plural-Jagd",
+     "frage": "Tippe alle Wörter im <b>Plural</b> an.",
+     "woerter": [
+      {
+       "fa": "دوستان",
+       "tr": "dūstān",
+       "ja": true
+      },
+      {
+       "fa": "مهمان‌ها",
+       "tr": "mehmānhā",
+       "ja": true
+      },
+      {
+       "fa": "عکس‌های",
+       "tr": "ʿakshā-ye",
+       "ja": true
+      },
+      {
+       "fa": "گل",
+       "tr": "gol",
+       "ja": false
+      },
+      {
+       "fa": "غذا",
+       "tr": "ghazā",
+       "ja": false
+      },
+      {
+       "fa": "شام",
+       "tr": "schām",
+       "ja": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d1",
+   "titel": "Dialog: Wie war das Fest?",
+   "vorschau": "جَشن خوب بود؟",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Ali fragt Sara nach ihrer Geburtstagsfeier.</p><p><span class='fa'>گِرِفتَن</span> heißt auch <b>bekommen</b>: <span class='fa'>هِدیه گِرِفتَم</span> – ich habe ein Geschenk bekommen.</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "عَلی: دیشَب جَشن خوب بود؟",
+       "tr": "dīschab dschaschn chūb būd?",
+       "de": "War das Fest gestern Abend gut?"
+      },
+      {
+       "fa": "سارا: بَله، خِیلی خوب بود!",
+       "tr": "bale, cheylī chūb būd!",
+       "de": "Ja, sehr gut!"
+      },
+      {
+       "fa": "عَلی: چَند نَفَر آمَدَند؟",
+       "tr": "tschand nafar āmadand?",
+       "de": "Wie viele Leute sind gekommen?"
+      },
+      {
+       "fa": "سارا: بیست نَفَر. دوستانَم و هَمکارانَم آمَدَند.",
+       "tr": "bīst nafar. dūstānam o hamkārānam āmadand.",
+       "de": "Zwanzig. Meine Freunde und Kollegen sind gekommen."
+      },
+      {
+       "fa": "عَلی: هِدیه‌ها را باز کَردی؟",
+       "tr": "hedyehā rā bāz kardī?",
+       "de": "Hast du die Geschenke aufgemacht?"
+      },
+      {
+       "fa": "سارا: بَله، سِه کِتاب و یِک عَکس گِرِفتَم.",
+       "tr": "bale, se ketāb o yek ʿaks gereftam.",
+       "de": "Ja, ich habe drei Bücher und ein Foto bekommen."
+      },
+      {
+       "fa": "عَلی: تَوَلُّدَت مُبارَک!",
+       "tr": "tawallodat mobārak!",
+       "de": "Alles Gute zum Geburtstag!"
+      },
+      {
+       "fa": "سارا: مَمنون!",
+       "tr": "mamnūn!",
+       "de": "Danke!"
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "عَلی: دیشَب جَشن خوب بود؟",
+       "tr": "dīschab dschaschn chūb būd?",
+       "de": "War das Fest gestern Abend gut?"
+      },
+      {
+       "fa": "سارا: بَله، خِیلی خوب بود!",
+       "tr": "bale, cheylī chūb būd!",
+       "de": "Ja, sehr gut!"
+      },
+      {
+       "fa": "عَلی: چَند نَفَر آمَدَند؟",
+       "tr": "tschand nafar āmadand?",
+       "de": "Wie viele Leute sind gekommen?"
+      },
+      {
+       "fa": "سارا: بیست نَفَر. دوستانَم و هَمکارانَم آمَدَند.",
+       "tr": "bīst nafar. dūstānam o hamkārānam āmadand.",
+       "de": "Zwanzig. Meine Freunde und Kollegen sind gekommen."
+      },
+      {
+       "fa": "عَلی: هِدیه‌ها را باز کَردی؟",
+       "tr": "hedyehā rā bāz kardī?",
+       "de": "Hast du die Geschenke aufgemacht?"
+      },
+      {
+       "fa": "سارا: بَله، سِه کِتاب و یِک عَکس گِرِفتَم.",
+       "tr": "bale, se ketāb o yek ʿaks gereftam.",
+       "de": "Ja, ich habe drei Bücher und ein Foto bekommen."
+      },
+      {
+       "fa": "عَلی: تَوَلُّدَت مُبارَک!",
+       "tr": "tawallodat mobārak!",
+       "de": "Alles Gute zum Geburtstag!"
+      },
+      {
+       "fa": "سارا: مَمنون!",
+       "tr": "mamnūn!",
+       "de": "Danke!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Wie viele Leute kamen zu Saras Fest?",
+       "optionen": [
+        "zwanzig",
+        "zehn",
+        "fünfzehn"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was hat Sara bekommen?",
+       "optionen": [
+        "drei Bücher und ein Foto",
+        "Blumen",
+        "einen Kuchen"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d2",
+   "titel": "Dialog: Alles bereit?",
+   "vorschau": "بادکُنَک‌ها را خَریدی؟",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Eine Mutter und ihre Tochter bereiten ein Fest vor.</p>"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "مادَر: بادکُنَک‌ها را خَریدی؟",
+       "tr": "bādkonakhā rā charīdī?",
+       "de": "Hast du die Luftballons gekauft?"
+      },
+      {
+       "fa": "دُختَر: بَله، بیست بادکُنَک خَریدَم.",
+       "tr": "bale, bīst bādkonak charīdam.",
+       "de": "Ja, ich habe zwanzig Luftballons gekauft."
+      },
+      {
+       "fa": "مادَر: شَمع‌ها کُجا هَستَند؟",
+       "tr": "schamʿhā kodschā hastand?",
+       "de": "Wo sind die Kerzen?"
+      },
+      {
+       "fa": "دُختَر: شَمع‌ها در کیفِ مَن هَستَند.",
+       "tr": "schamʿhā dar kīf-e man hastand.",
+       "de": "Die Kerzen sind in meiner Tasche."
+      },
+      {
+       "fa": "مادَر: مِهمان‌ها را دَعوَت کَردی؟",
+       "tr": "mehmānhā rā daʿwat kardī?",
+       "de": "Hast du die Gäste eingeladen?"
+      },
+      {
+       "fa": "دُختَر: بَله، دوستانَم را دَعوَت کَردَم.",
+       "tr": "bale, dūstānam rā daʿwat kardam.",
+       "de": "Ja, ich habe meine Freunde eingeladen."
+      },
+      {
+       "fa": "مادَر: خوب اَست!",
+       "tr": "chūb ast!",
+       "de": "Gut!"
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "مادَر: بادکُنَک‌ها را خَریدی؟",
+       "tr": "bādkonakhā rā charīdī?",
+       "de": "Hast du die Luftballons gekauft?"
+      },
+      {
+       "fa": "دُختَر: بَله، بیست بادکُنَک خَریدَم.",
+       "tr": "bale, bīst bādkonak charīdam.",
+       "de": "Ja, ich habe zwanzig Luftballons gekauft."
+      },
+      {
+       "fa": "مادَر: شَمع‌ها کُجا هَستَند؟",
+       "tr": "schamʿhā kodschā hastand?",
+       "de": "Wo sind die Kerzen?"
+      },
+      {
+       "fa": "دُختَر: شَمع‌ها در کیفِ مَن هَستَند.",
+       "tr": "schamʿhā dar kīf-e man hastand.",
+       "de": "Die Kerzen sind in meiner Tasche."
+      },
+      {
+       "fa": "مادَر: مِهمان‌ها را دَعوَت کَردی؟",
+       "tr": "mehmānhā rā daʿwat kardī?",
+       "de": "Hast du die Gäste eingeladen?"
+      },
+      {
+       "fa": "دُختَر: بَله، دوستانَم را دَعوَت کَردَم.",
+       "tr": "bale, dūstānam rā daʿwat kardam.",
+       "de": "Ja, ich habe meine Freunde eingeladen."
+      },
+      {
+       "fa": "مادَر: خوب اَست!",
+       "tr": "chūb ast!",
+       "de": "Gut!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Wie viele Luftballons hat die Tochter gekauft?",
+       "optionen": [
+        "zwanzig",
+        "zehn",
+        "zwölf"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wo sind die Kerzen?",
+       "optionen": [
+        "in der Tasche der Tochter",
+        "auf dem Kuchen",
+        "im Laden"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

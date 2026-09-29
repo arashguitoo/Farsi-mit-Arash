@@ -78,7 +78,7 @@
     <div class="tabs" id="lekTabs"></div>
     <div class="leiste-oben">
       <input class="feld" id="suche" placeholder="🔍 in allen Lektionen suchen (Persisch, Umschrift, Deutsch) …">
-      <label class="klein"><input type="checkbox" id="zeigeZus" checked> Zusatzübungen</label>
+      <label class="klein"><input type="checkbox" id="zeigeZus" checked> Texte & Übungen</label>
       <label class="klein"><input type="checkbox" id="zeigeUg" checked> Umgangssprache</label>
       <label class="klein"><input type="checkbox" id="zeigeWs" checked> Wortschatz</label>
       <button class="btn zwei klein" id="alleAuf">alle aufklappen</button>
@@ -180,7 +180,9 @@
     const s = L.stationen[i];
     if (!s.zusatz) return { kurz: "S" + L.stationen.slice(0, i + 1).filter(x => !x.zusatz).length, lang: "Station " + L.stationen.slice(0, i + 1).filter(x => !x.zusatz).length };
     const n = L.stationen.slice(0, i + 1).filter(x => x.paketId === s.paketId).length;
-    return s.paketArt === "umgangssprache" ? { kurz: "U" + n, lang: "Umgangssprache " + n } : { kurz: "Z" + n, lang: "Zusatz " + n };
+    if (s.paketArt === "umgangssprache") return { kurz: "U" + n, lang: "Umgangssprache " + n };
+    if (s.paketArt === "texte") return { kurz: "T" + n, lang: "Text " + n };
+    return { kurz: "Ü" + n, lang: "Übung " + n };
   }
 
   /* ---------- Karten-Darstellung ---------- */
@@ -193,7 +195,7 @@
     if (t === "buchstaben") return tabelle(k.buchstaben.map(b => z3(fa(b.fa) + (b.nameFa ? " " + fa(b.nameFa) : ""), b.laut, `${b.name}${b.verbindet === false ? " · verbindet nicht" : ""}${b.beispiel ? " · Bsp.: " + b.beispiel.fa + " " + b.beispiel.tr + " " + (b.beispiel.de || "") : ""}`)));
     if (t === "paare" || t === "memory") return `<div class="mini">Gegenseite: ${esc(k.links || "de")}</div>` + tabelle(k.paare.map(p => z3(fa(p.fa), p.tr, k.links === "x" ? p.x : k.links === "emoji" ? `${p.emoji || ""} ${p.de || ""}` : p.de)));
     if (t === "wahl") return k.fragen.map((f, i) => `<div class="frage-z"><b>F${i + 1}</b> ${f.emoji || ""} ${f.fa ? fa(f.fa) : ""} ${f.frage || ""}<br>
-        ${f.optionen.map((o, j) => `<span class="opt-r ${j === f.richtig ? "ok" : ""} ${f.optFa ? "fa" : ""}">${j === f.richtig ? "✓ " : ""}${esc(o)}</span>`).join("")}
+        ${f.optionen.map((o, j) => `<span class="opt-r ${j === f.richtig ? "ok" : ""} ${f.optFa ? "fa" : ""}">${j === f.richtig ? "✓ " : ""}${/<[a-z]/i.test(o) ? o : esc(o)}</span>`).join("")}
         ${f.erkl ? `<div class="erkl-z">💡 ${f.erkl}</div>` : ""}</div>`).join("");
     if (t === "bauen") return `<div class="mini">${k.trenner ? "Satzbau" : k.zeigen ? "Abschreiben" : "Wort bauen"}</div>` + tabelle(k.woerter.map(w => z3(fa(w.fa), w.tr, `${w.de || ""} · Kacheln: ${w.teile.join(" | ")}${w.extra && w.extra.length ? " · Ablenker: " + w.extra.join(" | ") : ""}`)));
     if (t === "sortieren") return `<div class="mini">${k.frage || ""} · Kategorien: ${k.kategorien.map((c, i) => (i + 1) + ") " + c).join(" · ")}</div>` + tabelle(k.items.map(it => z3(fa(it.fa), it.tr, `→ ${k.kategorien[it.k]}${it.e ? " · " + it.e.replace(/<[^>]+>/g, "") : ""}`)));
@@ -233,7 +235,7 @@
         treffer += karten.length;
         if (!q && s.paketId !== letztesPaket && s.zusatz) {
           const pk = L.pakete.find(p => p.id === s.paketId);
-          block += `<div class="paket-t ${s.paketArt === "umgangssprache" ? "ug" : "zus"}">${s.paketArt === "umgangssprache" ? "🗣️ " : "➕ "}${esc(pk ? pk.titel : "Zusatz")} <span class="mini">(${esc(s.paketId)})</span></div>`;
+          block += `<div class="paket-t ${s.paketArt === "umgangssprache" ? "ug" : "zus"}">${{ umgangssprache: "Extra: ", texte: "Teil 2: ", zusatz: "Teil 3: " }[s.paketArt] || ""}${esc(pk ? pk.titel : "Zusatz")} <span class="mini">(${esc(s.paketId)})</span></div>`;
         }
         letztesPaket = s.paketId || null;
         block += `<details class="st-block" ${q ? "open" : ""}><summary><span class="st-id">L${l.nummer}·${lab.kurz}</span><b>${esc(lab.lang)}: ${esc(s.titel)}</b>

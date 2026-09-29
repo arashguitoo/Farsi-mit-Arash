@@ -3,24 +3,24 @@
    Gemeinsames Stylesheet für Lernpfad, Lektionen, Konsole
    ========================================================= */
 :root{
-  --papier:#FBF7EF;
-  --papier2:#F3ECDD;
+  --papier:#F6F6F3;
+  --papier2:#EDEDE8;
   --karte:#FFFFFF;
-  --tinte:#1E2A44;
-  --tinte2:#56607A;
-  --linie:#E4DAC6;
-  --lapis:#1F4E8C;
-  --lapis-hell:#E6EEF8;
-  --tuerkis:#12909D;
-  --tuerkis-hell:#E1F4F5;
-  --safran:#E39B2E;
-  --safran-hell:#FCF1DD;
-  --granat:#B8413A;
-  --granat-hell:#FBE7E5;
-  --gruen:#2A8A56;
-  --gruen-hell:#E3F4EA;
-  --schatten:0 1px 2px rgba(30,42,68,.06),0 6px 20px rgba(30,42,68,.07);
-  --r:18px;
+  --tinte:#1E2326;
+  --tinte2:#6A7076;
+  --linie:#E2E2DC;
+  --lapis:#2F5D62;       /* Akzent: gedecktes Petrol */
+  --lapis-hell:#E9F0EF;
+  --tuerkis:#2F5D62;
+  --tuerkis-hell:#EEF3F2;
+  --safran:#B98A3E;      /* dezentes Ocker, nur für „als Nächstes“ */
+  --safran-hell:#F6F0E4;
+  --granat:#A5483F;
+  --granat-hell:#F7EAE8;
+  --gruen:#3C7A55;
+  --gruen-hell:#EAF3ED;
+  --schatten:0 1px 2px rgba(20,24,28,.05);
+  --r:14px;
   --fa:"Vazirmatn",system-ui,sans-serif;
   --ui:"Nunito","Vazirmatn",system-ui,-apple-system,"Segoe UI",sans-serif;
 }
@@ -29,9 +29,6 @@ html,body{margin:0}
 body{
   font-family:var(--ui);color:var(--tinte);background:var(--papier);
   line-height:1.5;font-size:17px;-webkit-font-smoothing:antialiased;
-  background-image:
-    radial-gradient(circle at 12px 12px, rgba(31,78,140,.045) 2px, transparent 2.5px);
-  background-size:24px 24px;
   min-height:100vh;
 }
 button{font:inherit;color:inherit;cursor:pointer}
@@ -342,3 +339,61 @@ table.t th{font-size:.78rem;text-transform:uppercase;letter-spacing:.05em;color:
 .ord-btn .fa{font-size:1.35rem;font-weight:700}
 .ord-btn:hover{border-color:var(--lapis)}
 .ord-btn.falsch{border-color:var(--granat);background:var(--granat-hell);animation:wackeln .35s}
+
+
+/* ================= Schlichtes Design (Überschreibungen) ================= */
+.kopf{background:var(--karte);color:var(--tinte);border-bottom:1px solid var(--linie)}
+.kopf::after{display:none}
+.kopf .wrap{padding-top:12px;padding-bottom:12px}
+.kopf .unter{color:var(--tinte2);opacity:1}
+.medaillon{width:44px;height:44px;border-radius:12px;background:var(--lapis);color:#fff;box-shadow:none;font-size:1.05rem}
+.kopf-btn{background:var(--karte);border:1px solid var(--linie);color:var(--tinte)}
+.kopf-btn:hover{background:var(--papier)}
+.kopf h1{font-size:1.15rem}
+.btn{font-weight:700;border-radius:10px}
+.btn.safran{background:var(--lapis);color:#fff}
+.btn.zwei{background:var(--papier2);color:var(--tinte)}
+.karte{box-shadow:none}
+.chip.neu{background:var(--safran-hell);color:#7a5a20}
+.badge{background:var(--papier2);color:var(--tinte2)}
+.k-info.merke{border-left:4px solid var(--lapis);background:var(--lapis-hell)}
+.k-info.merke .badge{background:var(--lapis);color:#fff}
+.bst-gross{background:var(--papier2);color:var(--tinte)}
+.bst-gross.nv{background:var(--safran-hell);color:#7a5a20}
+.frage .fa-gross,.sort-item .fa,.bau-anzeige .wort,.lk .fa{color:var(--tinte)}
+.mem{background:var(--lapis);border-color:var(--lapis)}
+.st.naechste{outline:2px solid var(--lapis)}
+.fortschritt-punkte i.jetzt{background:var(--lapis)}
+.fortschritt-punkte i.an{background:var(--tuerkis);opacity:.45}
+.nr{background:var(--lapis)}
+.leiste>i{background:var(--lapis)}
+
+/* Lektionsübersicht: drei Teile als Listen */
+.lek-kopf2{margin:22px 0 16px}
+.lek-kopf2 h2{margin:.1em 0 0;font-size:1.5rem}
+details.teil{background:var(--karte);border:1px solid var(--linie);border-radius:var(--r);margin:10px 0}
+details.teil>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:12px;padding:14px 16px}
+details.teil>summary::-webkit-details-marker{display:none}
+.t-nr{width:32px;height:32px;border-radius:50%;display:grid;place-items:center;background:var(--papier2);font-weight:800;flex:0 0 auto}
+details.teil[open] .t-nr{background:var(--lapis);color:#fff}
+.t-txt{display:grid;flex:1;min-width:0}
+.t-txt b{font-size:1.02rem}
+.t-stand{font-size:.85rem;color:var(--tinte2);font-weight:700;white-space:nowrap}
+details.teil>summary::after{content:"▾";color:var(--tinte2);transition:transform .15s}
+details.teil:not([open])>summary::after{transform:rotate(-90deg)}
+.t-leiste{height:3px;background:var(--papier2);margin:0 16px}
+.t-leiste>i{display:block;height:100%;background:var(--lapis)}
+.zeilen{display:grid;padding:6px 8px 10px}
+.zeile{display:flex;align-items:center;gap:12px;border:0;background:transparent;text-align:left;padding:10px 8px;border-radius:10px}
+.zeile:hover{background:var(--papier)}
+.z-nr{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font-size:.8rem;font-weight:800;border:1px solid var(--linie);color:var(--tinte2);flex:0 0 auto}
+.zeile.fertig .z-nr{background:var(--gruen-hell);border-color:transparent;color:var(--gruen)}
+.zeile.naechste .z-nr{background:var(--lapis);border-color:transparent;color:#fff}
+.z-titel{flex:1;min-width:0}
+.zeile.naechste .z-titel{font-weight:800}
+.z-status{font-size:.8rem;color:var(--tinte2);white-space:nowrap}
+.zeile.naechste .z-status{color:var(--lapis);font-weight:800}
+.teil-umgangssprache .t-nr{background:var(--granat-hell);color:var(--granat)}
+details.teil-umgangssprache[open] .t-nr{background:var(--granat);color:#fff}
+.ug-banner{background:var(--granat-hell);border:0}
+.frage .fa-gross.satz{font-size:1.75rem;line-height:1.9}

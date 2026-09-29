@@ -1,0 +1,608 @@
+{
+ "id": "tx",
+ "art": "texte",
+ "titel": "Texte & Dialoge",
+ "beschreibung": "Lesetexte mit Fragen und Dialoge zum Ordnen.",
+ "stationen": [
+  {
+   "id": "t1",
+   "titel": "Kurztext: Wo ist das Handy?",
+   "vorschau": "گوشی‌اَش را گُم کَرد",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Kurztext: Wo ist das Handy?",
+     "zeilen": [
+      {
+       "fa": "دیروز سَمیرا با مادَرَش به بازار رَفت.",
+       "tr": "dīrūz samīrā bā mādarasch be bāzār raft.",
+       "de": "Gestern ist Samira mit ihrer Mutter zum Markt gegangen."
+      },
+      {
+       "fa": "آنها میوه و نان خَریدَند.",
+       "tr": "ānhā mīwe o nān charīdand.",
+       "de": "Sie haben Obst und Brot gekauft."
+      },
+      {
+       "fa": "سَمیرا یِک هِدیه بَرایِ بَرادَرَش خَرید.",
+       "tr": "samīrā yek hedye barā-ye barādarasch charīd.",
+       "de": "Samira hat ein Geschenk für ihren Bruder gekauft."
+      },
+      {
+       "fa": "در اُتوبوس، سَمیرا گوشی‌اَش را گُم کَرد.",
+       "tr": "dar otobūs, samīrā gūschī-asch rā gom kard.",
+       "de": "Im Bus hat Samira ihr Handy verloren."
+      },
+      {
+       "fa": "یِک مَرد گوشی را پِیدا کَرد.",
+       "tr": "yek mard gūschī rā peydā kard.",
+       "de": "Ein Mann hat das Handy gefunden."
+      },
+      {
+       "fa": "مَرد گوشی را به سَمیرا داد.",
+       "tr": "mard gūschī rā be samīrā dād.",
+       "de": "Der Mann hat Samira das Handy gegeben."
+      },
+      {
+       "fa": "سَمیرا خِیلی خوشحال شُد.",
+       "tr": "samīrā cheylī choschhāl schod.",
+       "de": "Samira hat sich sehr gefreut."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "سَمیرا با پِدَرَش به بازار رَفت.",
+       "fest": true,
+       "erkl": "Sie ist mit ihrer <b>Mutter</b> gegangen."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "آنها میوه خَریدَند.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "هِدیه بَرایِ خواهَرَش بود.",
+       "fest": true,
+       "erkl": "Das Geschenk war für ihren <b>Bruder</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "یِک مَرد گوشی را پِیدا کَرد.",
+       "fest": true
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Wo hat Samira ihr Handy verloren?",
+       "optionen": [
+        "im Bus",
+        "auf dem Markt",
+        "zu Hause"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Für wen war das Geschenk?",
+       "optionen": [
+        "für ihren Bruder",
+        "für ihre Mutter",
+        "für ihre Schwester"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was haben sie auf dem Markt gekauft?",
+       "optionen": [
+        "Obst und Brot",
+        "Fleisch und Reis",
+        "Kleidung"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie hat sich Samira am Ende gefühlt?",
+       "optionen": [
+        "sehr froh",
+        "traurig",
+        "wütend"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "a1",
+   "titel": "Lesen: Ein Tag in der Stadt",
+   "vorschau": "کیفَم را گُم کَردَم",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neu im Text",
+     "text": "<p><span class='fa'>برای</span> <i>barā-ye</i> – für · <span class='fa'>خوشحال شُدَن</span> – sich freuen (froh werden)</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Ein Tag in der Stadt",
+     "zeilen": [
+      {
+       "fa": "دیروز صُبح به شَهر رَفتَم.",
+       "tr": "dīrūz sobh be schahr raftam.",
+       "de": "Gestern Morgen bin ich in die Stadt gefahren."
+      },
+      {
+       "fa": "در ایستگاه، هَمکارَم را دیدَم.",
+       "tr": "dar īstgāh, hamkāram rā dīdam.",
+       "de": "An der Haltestelle habe ich meine Kollegin gesehen."
+      },
+      {
+       "fa": "در بازار میوه و یِک هِدیه خَریدَم.",
+       "tr": "dar bāzār mīwe o yek hedye charīdam.",
+       "de": "Auf dem Markt habe ich Obst und ein Geschenk gekauft."
+      },
+      {
+       "fa": "هِدیه را بَرایِ خواهَرَم خَریدَم.",
+       "tr": "hedye rā barā-ye chāharam charīdam.",
+       "de": "Das Geschenk habe ich für meine Schwester gekauft."
+      },
+      {
+       "fa": "وَلی در اُتوبوس کیفَم را گُم کَردَم!",
+       "tr": "walī dar otobūs kīfam rā gom kardam!",
+       "de": "Aber im Bus habe ich meine Tasche verloren!"
+      },
+      {
+       "fa": "به دوستَم زَنگ زَدَم.",
+       "tr": "be dūstam zang zadam.",
+       "de": "Ich habe meine Freundin angerufen."
+      },
+      {
+       "fa": "او کیفَم را در ایستگاه پِیدا کَرد.",
+       "tr": "ū kīfam rā dar īstgāh peydā kard.",
+       "de": "Sie hat meine Tasche an der Haltestelle gefunden."
+      },
+      {
+       "fa": "عَصر هِدیه را به خواهَرَم دادَم.",
+       "tr": "ʿasr hedye rā be chāharam dādam.",
+       "de": "Am späten Nachmittag habe ich meiner Schwester das Geschenk gegeben."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Wen hat die Person an der Haltestelle gesehen?",
+       "optionen": [
+        "ihre Kollegin",
+        "ihre Schwester",
+        "ihre Freundin"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Für wen war das Geschenk?",
+       "optionen": [
+        "für die Schwester",
+        "für die Mutter",
+        "für die Kollegin"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was hat die Person im Bus verloren?",
+       "optionen": [
+        "ihre Tasche",
+        "ihren Schlüssel",
+        "ihr Handy"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wer hat die Tasche gefunden?",
+       "optionen": [
+        "die Freundin",
+        "die Kollegin",
+        "die Schwester"
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring die Geschichte in die richtige Reihenfolge",
+     "frage": "Tippe die Sätze der Reihe nach an.",
+     "items": [
+      {
+       "fa": "دیروز صُبح به شَهر رَفتَم.",
+       "tr": "dīrūz sobh be schahr raftam.",
+       "de": "Gestern Morgen bin ich in die Stadt gefahren."
+      },
+      {
+       "fa": "در ایستگاه، هَمکارَم را دیدَم.",
+       "tr": "dar īstgāh, hamkāram rā dīdam.",
+       "de": "An der Haltestelle habe ich meine Kollegin gesehen."
+      },
+      {
+       "fa": "در بازار میوه و یِک هِدیه خَریدَم.",
+       "tr": "dar bāzār mīwe o yek hedye charīdam.",
+       "de": "Auf dem Markt habe ich Obst und ein Geschenk gekauft."
+      },
+      {
+       "fa": "هِدیه را بَرایِ خواهَرَم خَریدَم.",
+       "tr": "hedye rā barā-ye chāharam charīdam.",
+       "de": "Das Geschenk habe ich für meine Schwester gekauft."
+      },
+      {
+       "fa": "وَلی در اُتوبوس کیفَم را گُم کَردَم!",
+       "tr": "walī dar otobūs kīfam rā gom kardam!",
+       "de": "Aber im Bus habe ich meine Tasche verloren!"
+      },
+      {
+       "fa": "به دوستَم زَنگ زَدَم.",
+       "tr": "be dūstam zang zadam.",
+       "de": "Ich habe meine Freundin angerufen."
+      },
+      {
+       "fa": "او کیفَم را در ایستگاه پِیدا کَرد.",
+       "tr": "ū kīfam rā dar īstgāh peydā kard.",
+       "de": "Sie hat meine Tasche an der Haltestelle gefunden."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Profi-Text: Reza und der Schlüssel",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "دیروز رضا به نانوایی رفت.",
+       "tr": "dīrūz rezā be nānwāyī raft.",
+       "de": "Gestern ist Reza zur Bäckerei gegangen."
+      },
+      {
+       "fa": "او نان خرید و همسایه‌اش را دید.",
+       "tr": "ū nān charīd o hamsāye-asch rā dīd.",
+       "de": "Er hat Brot gekauft und seinen Nachbarn gesehen."
+      },
+      {
+       "fa": "همسایه‌اش کلیدش را گم کرد.",
+       "tr": "hamsāye-asch kelīdasch rā gom kard.",
+       "de": "Sein Nachbar hatte seinen Schlüssel verloren."
+      },
+      {
+       "fa": "رضا کلید را در خیابان پیدا کرد.",
+       "tr": "rezā kelīd rā dar chiyābān peydā kard.",
+       "de": "Reza hat den Schlüssel auf der Straße gefunden."
+      },
+      {
+       "fa": "همسایه خیلی خوشحال شد.",
+       "tr": "hamsāye cheylī choschhāl schod.",
+       "de": "Der Nachbar hat sich sehr gefreut."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "رضا به نانوایی رفت.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "رضا کلیدش را گم کرد.",
+       "fest": true,
+       "erkl": "Der <b>Nachbar</b> hat seinen Schlüssel verloren."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "رضا کلید را پیدا کرد.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "همسایه ناراحت شد.",
+       "fest": true,
+       "erkl": "Er hat sich <b>gefreut</b> (<span class='fa'>خوشحال شد</span>)."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d1",
+   "titel": "Dialog: Hast du meinen Schlüssel gesehen?",
+   "vorschau": "کِلیدَم را دیدی؟",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Arasch sucht seinen Schlüssel. Er fragt seine Schwester Mina.</p>"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "آرَش: مینا، کِلیدَم را دیدی؟",
+       "tr": "mīnā, kelīdam rā dīdī?",
+       "de": "Mina, hast du meinen Schlüssel gesehen?"
+      },
+      {
+       "fa": "مینا: نَه، نَدیدَم. کُجا بود؟",
+       "tr": "na, nadīdam. kodschā būd?",
+       "de": "Nein. Wo war er?"
+      },
+      {
+       "fa": "آرَش: در کیفَم بود.",
+       "tr": "dar kīfam būd.",
+       "de": "Er war in meiner Tasche."
+      },
+      {
+       "fa": "مینا: کیفَت را کُجا بُردی؟",
+       "tr": "kīfat rā kodschā bordī?",
+       "de": "Wohin hast du deine Tasche mitgenommen?"
+      },
+      {
+       "fa": "آرَش: دیروز کیفَم را به دانِشگاه بُردَم.",
+       "tr": "dīrūz kīfam rā be dāneschgāh bordam.",
+       "de": "Gestern habe ich meine Tasche zur Uni mitgenommen."
+      },
+      {
+       "fa": "مینا: به دوستَت زَنگ زَدی؟",
+       "tr": "be dūstat zang zadī?",
+       "de": "Hast du deinen Freund angerufen?"
+      },
+      {
+       "fa": "آرَش: بَله! او کِلیدَم را پِیدا کَرد.",
+       "tr": "bale! ū kelīdam rā peydā kard.",
+       "de": "Ja! Er hat meinen Schlüssel gefunden."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "آرَش: مینا، کِلیدَم را دیدی؟",
+       "tr": "mīnā, kelīdam rā dīdī?",
+       "de": "Mina, hast du meinen Schlüssel gesehen?"
+      },
+      {
+       "fa": "مینا: نَه، نَدیدَم. کُجا بود؟",
+       "tr": "na, nadīdam. kodschā būd?",
+       "de": "Nein. Wo war er?"
+      },
+      {
+       "fa": "آرَش: در کیفَم بود.",
+       "tr": "dar kīfam būd.",
+       "de": "Er war in meiner Tasche."
+      },
+      {
+       "fa": "مینا: کیفَت را کُجا بُردی؟",
+       "tr": "kīfat rā kodschā bordī?",
+       "de": "Wohin hast du deine Tasche mitgenommen?"
+      },
+      {
+       "fa": "آرَش: دیروز کیفَم را به دانِشگاه بُردَم.",
+       "tr": "dīrūz kīfam rā be dāneschgāh bordam.",
+       "de": "Gestern habe ich meine Tasche zur Uni mitgenommen."
+      },
+      {
+       "fa": "مینا: به دوستَت زَنگ زَدی؟",
+       "tr": "be dūstat zang zadī?",
+       "de": "Hast du deinen Freund angerufen?"
+      },
+      {
+       "fa": "آرَش: بَله! او کِلیدَم را پِیدا کَرد.",
+       "tr": "bale! ū kelīdam rā peydā kard.",
+       "de": "Ja! Er hat meinen Schlüssel gefunden."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Was sucht Arasch?",
+       "optionen": [
+        "seinen Schlüssel",
+        "seine Tasche",
+        "sein Handy"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wohin hat Arasch seine Tasche mitgenommen?",
+       "optionen": [
+        "zur Uni",
+        "zum Markt",
+        "in die Stadt"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wer hat den Schlüssel gefunden?",
+       "optionen": [
+        "sein Freund",
+        "Mina",
+        "seine Mutter"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d2",
+   "titel": "Dialog: Hast du das Brot gekauft?",
+   "vorschau": "نان را خَریدی؟",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Eine Mutter spricht mit ihrem Sohn.</p>"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "مادَر: نان را خَریدی؟",
+       "tr": "nān rā charīdī?",
+       "de": "Hast du das Brot gekauft?"
+      },
+      {
+       "fa": "پِسَر: بَله، از نانوایی خَریدَم.",
+       "tr": "bale, az nānwāyī charīdam.",
+       "de": "Ja, in der Bäckerei."
+      },
+      {
+       "fa": "مادَر: میوه هَم خَریدی؟",
+       "tr": "mīwe ham charīdī?",
+       "de": "Hast du auch Obst gekauft?"
+      },
+      {
+       "fa": "پِسَر: نَه، پول نَداشتَم.",
+       "tr": "na, pūl nadāschtam.",
+       "de": "Nein, ich hatte kein Geld."
+      },
+      {
+       "fa": "مادَر: چِرا؟ پول به تو دادَم!",
+       "tr": "tscherā? pūl be to dādam!",
+       "de": "Warum? Ich habe dir Geld gegeben!"
+      },
+      {
+       "fa": "پِسَر: بَله، وَلی پول را در خیابان گُم کَردَم.",
+       "tr": "bale, walī pūl rā dar chiyābān gom kardam.",
+       "de": "Ja, aber ich habe das Geld auf der Straße verloren."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "مادَر: نان را خَریدی؟",
+       "tr": "nān rā charīdī?",
+       "de": "Hast du das Brot gekauft?"
+      },
+      {
+       "fa": "پِسَر: بَله، از نانوایی خَریدَم.",
+       "tr": "bale, az nānwāyī charīdam.",
+       "de": "Ja, in der Bäckerei."
+      },
+      {
+       "fa": "مادَر: میوه هَم خَریدی؟",
+       "tr": "mīwe ham charīdī?",
+       "de": "Hast du auch Obst gekauft?"
+      },
+      {
+       "fa": "پِسَر: نَه، پول نَداشتَم.",
+       "tr": "na, pūl nadāschtam.",
+       "de": "Nein, ich hatte kein Geld."
+      },
+      {
+       "fa": "مادَر: چِرا؟ پول به تو دادَم!",
+       "tr": "tscherā? pūl be to dādam!",
+       "de": "Warum? Ich habe dir Geld gegeben!"
+      },
+      {
+       "fa": "پِسَر: بَله، وَلی پول را در خیابان گُم کَردَم.",
+       "tr": "bale, walī pūl rā dar chiyābān gom kardam.",
+       "de": "Ja, aber ich habe das Geld auf der Straße verloren."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Wo hat der Sohn das Brot gekauft?",
+       "optionen": [
+        "in der Bäckerei",
+        "auf dem Markt",
+        "im Laden"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Warum hat er kein Obst gekauft?",
+       "optionen": [
+        "Er hat das Geld verloren.",
+        "Er mag kein Obst.",
+        "Der Markt war zu."
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -59,6 +59,15 @@ Jede Lektion hat dafür eine Datei `lektionen/ws-0X.json`, eingetragen in `index
 
 **Regel:** Verben stehen im Wortschatz **nie konjugiert**, sondern nur als Infinitiv mit Präsensstamm (`stamm`). Kategorien: Menschen & Familie, Berufe, Gefühle & Zustände, Körper, Natur & Wetter, Essen & Trinken, Dinge, Orte, Tiere, Zahlen, Zeit, Verben, Kleine Wörter, Wendungen.
 
+## Aufbau jeder Lektion
+
+1. **Lernpfad** – die Stationen in `lektionen/0X-….json`
+2. **Texte & Dialoge** – Paket mit `"art": "texte"` (`0X-texte.json`): kurzer Lesetext mit Richtig/Falsch- und Multiple-Choice-Fragen, zwei Dialoge zum Ordnen, weitere Lesetexte
+3. **Übungen** – Trainingspaket (`0X-zusatz-1.json`)
+4. **Extra: Umgangssprache** – Paket mit `"art": "umgangssprache"` (eingeklappt)
+
+In `index.json` stehen die Pakete unter `"zusatz"` in dieser Reihenfolge. Die Übersicht der Lektion zeigt die Teile als aufklappbare Listen; geöffnet ist immer der Teil mit der nächsten offenen Station.
+
 ## Zusatzaufgaben nachreichen (für jede Lektion)
 
 Zusätzliche Übungen kommen als **eigene JSON-Datei** – die Lektion selbst bleibt unverändert:

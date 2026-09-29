@@ -1,0 +1,456 @@
+{
+ "id": "tx",
+ "art": "texte",
+ "titel": "Texte & Dialoge",
+ "beschreibung": "Lesetexte mit Fragen und Dialoge zum Ordnen.",
+ "stationen": [
+  {
+   "id": "a1",
+   "titel": "Lesen: Wer ist das?",
+   "vorschau": "مَریَم و عَلی",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Maryam und Ali",
+     "zeilen": [
+      {
+       "fa": "این مَریَم اَست.",
+       "tr": "īn maryam ast.",
+       "de": "Das ist Maryam."
+      },
+      {
+       "fa": "مَریَم پَرَستار اَست.",
+       "tr": "maryam parastār ast.",
+       "de": "Maryam ist Pflegerin."
+      },
+      {
+       "fa": "او اِمروز خِیلی خَستِه اَست.",
+       "tr": "ū emrūz cheylī chaste ast.",
+       "de": "Sie ist heute sehr müde."
+      },
+      {
+       "fa": "این عَلی اَست.",
+       "tr": "īn ʿalī ast.",
+       "de": "Das ist Ali."
+      },
+      {
+       "fa": "عَلی آشپَز اَست.",
+       "tr": "ʿalī āschpaz ast.",
+       "de": "Ali ist Koch."
+      },
+      {
+       "fa": "عَلی گُرُسنِه نیست، او سیر اَست.",
+       "tr": "ʿalī gorosne nīst, ū sīr ast.",
+       "de": "Ali ist nicht hungrig, er ist satt."
+      },
+      {
+       "fa": "مَریَم و عَلی دوست هَستَند.",
+       "tr": "maryam o ʿalī dūst hastand.",
+       "de": "Maryam und Ali sind Freunde."
+      },
+      {
+       "fa": "آنها اِمروز شاد هَستَند.",
+       "tr": "ānhā emrūz schād hastand.",
+       "de": "Sie sind heute froh."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Was ist Maryam von Beruf?",
+       "optionen": [
+        "Pflegerin",
+        "Köchin",
+        "Lehrerin"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie geht es Maryam heute?",
+       "optionen": [
+        "Sie ist sehr müde.",
+        "Sie ist hungrig.",
+        "Sie ist wütend."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Ist Ali hungrig?",
+       "optionen": [
+        "Nein, er ist satt.",
+        "Ja, sehr.",
+        "Ein bisschen."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was sind Maryam und Ali?",
+       "optionen": [
+        "Freunde",
+        "Geschwister",
+        "Kollegen"
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "lesen",
+     "titel": "Lies die Sätze noch einmal",
+     "karten": [
+      {
+       "fa": "مَریَم پَرَستار اَست.",
+       "tr": "maryam parastār ast.",
+       "de": "Maryam ist Pflegerin."
+      },
+      {
+       "fa": "او اِمروز خِیلی خَستِه اَست.",
+       "tr": "ū emrūz cheylī chaste ast.",
+       "de": "Sie ist heute sehr müde."
+      },
+      {
+       "fa": "عَلی آشپَز اَست.",
+       "tr": "ʿalī āschpaz ast.",
+       "de": "Ali ist Koch."
+      },
+      {
+       "fa": "عَلی گُرُسنِه نیست، او سیر اَست.",
+       "tr": "ʿalī gorosne nīst, ū sīr ast.",
+       "de": "Ali ist nicht hungrig, er ist satt."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "مَریَم آشپَز اَست.",
+       "fest": true,
+       "erkl": "Maryam ist <b>Pflegerin</b> (<span class='fa'>پَرَستار</span>)."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "عَلی سیر اَست.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "مَریَم و عَلی غَمگین هَستَند.",
+       "fest": true,
+       "erkl": "Sie sind <b>froh</b> (<span class='fa'>شاد</span>)."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "عَلی آشپَز اَست.",
+       "fest": true
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Profi-Text: ohne Vokalzeichen",
+     "text": "Jetzt ohne Vokalzeichen – wie im echten Leben! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "سلام! من سارا هستم.",
+       "tr": "salām! man sārā hastam.",
+       "de": "Hallo! Ich bin Sara."
+      },
+      {
+       "fa": "من دانشجو هستم.",
+       "tr": "man dāneschdschū hastam.",
+       "de": "Ich bin Studentin."
+      },
+      {
+       "fa": "امروز کمی نگران هستم،",
+       "tr": "emrūz kamī negarān hastam,",
+       "de": "Heute bin ich ein bisschen besorgt,"
+      },
+      {
+       "fa": "چون امتحان دارم.",
+       "tr": "tschūn emtehān dāram.",
+       "de": "weil ich eine Prüfung habe."
+      },
+      {
+       "fa": "نگار مترجم است.",
+       "tr": "negār motardschem ast.",
+       "de": "Negar ist Übersetzerin."
+      },
+      {
+       "fa": "او خیلی آرام است.",
+       "tr": "ū cheylī ārām ast.",
+       "de": "Sie ist sehr ruhig."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Profi-Text",
+     "fragen": [
+      {
+       "frage": "Was ist Sara?",
+       "optionen": [
+        "Studentin",
+        "Übersetzerin",
+        "Lehrerin"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie fühlt sich Sara heute?",
+       "optionen": [
+        "ein bisschen besorgt",
+        "sehr froh",
+        "krank"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Warum?",
+       "optionen": [
+        "Sie hat eine Prüfung.",
+        "Sie ist müde.",
+        "Sie hat viel Arbeit."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie ist Negar?",
+       "optionen": [
+        "sehr ruhig",
+        "wütend",
+        "traurig"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d1",
+   "titel": "Dialog: Wie geht’s?",
+   "vorschau": "حالِت چِطور اَست؟",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Zwei Freundinnen treffen sich.</p>"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "نِگار: سَلام مَریَم! حالِت چِطور اَست؟",
+       "tr": "salām maryam! hālet tschetor ast?",
+       "de": "Hallo Maryam! Wie geht es dir?"
+      },
+      {
+       "fa": "مَریَم: سَلام! مَمنون، خوب هَستَم. و تو؟",
+       "tr": "salām! mamnūn, chūb hastam. o to?",
+       "de": "Hallo! Danke, mir geht’s gut. Und dir?"
+      },
+      {
+       "fa": "نِگار: مَن کَمی خَستِه هَستَم.",
+       "tr": "man kamī chaste hastam.",
+       "de": "Ich bin ein bisschen müde."
+      },
+      {
+       "fa": "مَریَم: چِرا؟",
+       "tr": "tscherā?",
+       "de": "Warum?"
+      },
+      {
+       "fa": "نِگار: چون اِمروز خِیلی کار دارَم.",
+       "tr": "tschūn emrūz cheylī kār dāram.",
+       "de": "Weil ich heute viel Arbeit habe."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "نِگار: سَلام مَریَم! حالِت چِطور اَست؟",
+       "tr": "salām maryam! hālet tschetor ast?",
+       "de": "Hallo Maryam! Wie geht es dir?"
+      },
+      {
+       "fa": "مَریَم: سَلام! مَمنون، خوب هَستَم. و تو؟",
+       "tr": "salām! mamnūn, chūb hastam. o to?",
+       "de": "Hallo! Danke, mir geht’s gut. Und dir?"
+      },
+      {
+       "fa": "نِگار: مَن کَمی خَستِه هَستَم.",
+       "tr": "man kamī chaste hastam.",
+       "de": "Ich bin ein bisschen müde."
+      },
+      {
+       "fa": "مَریَم: چِرا؟",
+       "tr": "tscherā?",
+       "de": "Warum?"
+      },
+      {
+       "fa": "نِگار: چون اِمروز خِیلی کار دارَم.",
+       "tr": "tschūn emrūz cheylī kār dāram.",
+       "de": "Weil ich heute viel Arbeit habe."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Wie geht es Maryam?",
+       "optionen": [
+        "gut",
+        "schlecht",
+        "sie ist müde"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Warum ist Negar müde?",
+       "optionen": [
+        "Sie hat viel Arbeit.",
+        "Sie ist krank.",
+        "Sie ist hungrig."
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d2",
+   "titel": "Dialog: Im Kurs",
+   "vorschau": "شُما دانِشجو هَستید؟",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Die Lehrerin spricht mit einer neuen Teilnehmerin.</p>"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "مُعَلِّم: سَلام! شُما دانِشجو هَستید؟",
+       "tr": "salām! schomā dāneschdschū hastīd?",
+       "de": "Hallo! Sind Sie Studentin?"
+      },
+      {
+       "fa": "لیلا: بَله، مَن دانِشجو هَستَم.",
+       "tr": "bale, man dāneschdschū hastam.",
+       "de": "Ja, ich bin Studentin."
+      },
+      {
+       "fa": "مُعَلِّم: شُما خَستِه هَستید؟",
+       "tr": "schomā chaste hastīd?",
+       "de": "Sind Sie müde?"
+      },
+      {
+       "fa": "لیلا: نَه، خَستِه نیستَم. خِیلی شاد هَستَم!",
+       "tr": "na, chaste nīstam. cheylī schād hastam!",
+       "de": "Nein, ich bin nicht müde. Ich bin sehr froh!"
+      },
+      {
+       "fa": "مُعَلِّم: آفَرین!",
+       "tr": "āfarīn!",
+       "de": "Bravo!"
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "مُعَلِّم: سَلام! شُما دانِشجو هَستید؟",
+       "tr": "salām! schomā dāneschdschū hastīd?",
+       "de": "Hallo! Sind Sie Studentin?"
+      },
+      {
+       "fa": "لیلا: بَله، مَن دانِشجو هَستَم.",
+       "tr": "bale, man dāneschdschū hastam.",
+       "de": "Ja, ich bin Studentin."
+      },
+      {
+       "fa": "مُعَلِّم: شُما خَستِه هَستید؟",
+       "tr": "schomā chaste hastīd?",
+       "de": "Sind Sie müde?"
+      },
+      {
+       "fa": "لیلا: نَه، خَستِه نیستَم. خِیلی شاد هَستَم!",
+       "tr": "na, chaste nīstam. cheylī schād hastam!",
+       "de": "Nein, ich bin nicht müde. Ich bin sehr froh!"
+      },
+      {
+       "fa": "مُعَلِّم: آفَرین!",
+       "tr": "āfarīn!",
+       "de": "Bravo!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Was ist Leila?",
+       "optionen": [
+        "Studentin",
+        "Lehrerin",
+        "Ärztin"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie fühlt sich Leila?",
+       "optionen": [
+        "sehr froh",
+        "müde",
+        "traurig"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

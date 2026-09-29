@@ -1,0 +1,726 @@
+{
+ "id": "tx",
+ "art": "texte",
+ "titel": "Texte & Dialoge",
+ "beschreibung": "Lesetexte mit Fragen und Dialoge zum Ordnen.",
+ "stationen": [
+  {
+   "id": "t1",
+   "titel": "Kurztext: Negars Tag",
+   "vorschau": "نِگار دیروز …",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Kurztext: Negars Tag",
+     "zeilen": [
+      {
+       "fa": "دیروز نِگار ساعَتِ شِش بیدار شُد.",
+       "tr": "dīrūz negār sāʿat-e schesch bīdār schod.",
+       "de": "Gestern ist Negar um sechs aufgewacht."
+      },
+      {
+       "fa": "او دوش گِرِفت و صُبحانِه خورد.",
+       "tr": "ū dūsch gereft o sobhāne chord.",
+       "de": "Sie hat geduscht und gefrühstückt."
+      },
+      {
+       "fa": "نِگار پَرَستار اَست.",
+       "tr": "negār parastār ast.",
+       "de": "Negar ist Pflegerin."
+      },
+      {
+       "fa": "ساعَتِ هَفت به کار رَفت.",
+       "tr": "sāʿat-e haft be kār raft.",
+       "de": "Um sieben ist sie zur Arbeit gegangen."
+      },
+      {
+       "fa": "او هَشت ساعَت کار کَرد.",
+       "tr": "ū hascht sāʿat kār kard.",
+       "de": "Sie hat acht Stunden gearbeitet."
+      },
+      {
+       "fa": "بَعد اَز ظُهر به خانِه آمَد.",
+       "tr": "baʿd az zohr be chāne āmad.",
+       "de": "Am Nachmittag ist sie nach Hause gekommen."
+      },
+      {
+       "fa": "عَصر کِتاب خواند.",
+       "tr": "ʿasr ketāb chānd.",
+       "de": "Am späten Nachmittag hat sie gelesen."
+      },
+      {
+       "fa": "شَب خِیلی خَستِه بود و ساعَتِ دَه خوابید.",
+       "tr": "schab cheylī chaste būd o sāʿat-e dah chābīd.",
+       "de": "Abends war sie sehr müde und hat um zehn geschlafen."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "نِگار ساعَتِ هَفت بیدار شُد.",
+       "fest": true,
+       "erkl": "Sie ist um <b>sechs</b> aufgewacht – um sieben ging sie zur Arbeit."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "نِگار صُبحانِه نَخورد.",
+       "fest": true,
+       "erkl": "Sie hat gefrühstückt (<span class='fa'>صُبحانِه خورد</span>)."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "نِگار هَشت ساعَت کار کَرد.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "شَب نِگار خَستِه بود.",
+       "fest": true
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Was ist Negar von Beruf?",
+       "optionen": [
+        "Pflegerin",
+        "Ärztin",
+        "Lehrerin"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wann ist sie nach Hause gekommen?",
+       "optionen": [
+        "am Nachmittag",
+        "am Abend",
+        "mittags"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was hat sie am späten Nachmittag gemacht?",
+       "optionen": [
+        "gelesen",
+        "gekocht",
+        "geschlafen"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Um wie viel Uhr hat sie geschlafen?",
+       "optionen": [
+        "um 10",
+        "um 11",
+        "um 6"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "a1",
+   "titel": "Rezas Tag gestern",
+   "vorschau": "رِضا دیروز …",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Rezas gestriger Tag",
+     "text": "Reza erzählt. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "دیروز ساعَتِ هَفت بیدار شُدَم.",
+       "tr": "dīrūz sāʿat-e haft bīdār schodam.",
+       "de": "Gestern bin ich um sieben aufgewacht."
+      },
+      {
+       "fa": "دوش گِرِفتَم.",
+       "tr": "dūsch gereftam.",
+       "de": "Ich habe geduscht."
+      },
+      {
+       "fa": "صُبحانِه خوردَم و چای نوشیدَم.",
+       "tr": "sobhāne chordam o tschāy nūschīdam.",
+       "de": "Ich habe gefrühstückt und Tee getrunken."
+      },
+      {
+       "fa": "ساعَتِ نُه به دانِشگاه رَفتَم.",
+       "tr": "sāʿat-e noh be dāneschgāh raftam.",
+       "de": "Um neun bin ich zur Uni gegangen."
+      },
+      {
+       "fa": "ظُهر ناهار خوردَم.",
+       "tr": "zohr nāhār chordam.",
+       "de": "Mittags habe ich zu Mittag gegessen."
+      },
+      {
+       "fa": "بَعد اَز ظُهر در کِتابخانِه دَرس خواندَم.",
+       "tr": "baʿd az zohr dar ketābchāne dars chāndam.",
+       "de": "Am Nachmittag habe ich in der Bibliothek gelernt."
+      },
+      {
+       "fa": "عَصر به پارک رَفتَم.",
+       "tr": "ʿasr be pārk raftam.",
+       "de": "Am frühen Abend bin ich in den Park gegangen."
+      },
+      {
+       "fa": "شَب شام پُختَم و فیلم دیدَم.",
+       "tr": "schab schām pochtam o fīlm dīdam.",
+       "de": "Abends habe ich gekocht und einen Film gesehen."
+      },
+      {
+       "fa": "ساعَتِ یازدَه خوابیدَم.",
+       "tr": "sāʿat-e yāzdah chābīdam.",
+       "de": "Um elf habe ich geschlafen."
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring Rezas Tag in die richtige Reihenfolge",
+     "frage": "Achte auf die Uhrzeiten und Tageszeiten!",
+     "items": [
+      {
+       "fa": "دیروز ساعَتِ هَفت بیدار شُدَم.",
+       "tr": "dīrūz sāʿat-e haft bīdār schodam.",
+       "de": "Gestern bin ich um sieben aufgewacht."
+      },
+      {
+       "fa": "دوش گِرِفتَم.",
+       "tr": "dūsch gereftam.",
+       "de": "Ich habe geduscht."
+      },
+      {
+       "fa": "صُبحانِه خوردَم و چای نوشیدَم.",
+       "tr": "sobhāne chordam o tschāy nūschīdam.",
+       "de": "Ich habe gefrühstückt und Tee getrunken."
+      },
+      {
+       "fa": "ساعَتِ نُه به دانِشگاه رَفتَم.",
+       "tr": "sāʿat-e noh be dāneschgāh raftam.",
+       "de": "Um neun bin ich zur Uni gegangen."
+      },
+      {
+       "fa": "ظُهر ناهار خوردَم.",
+       "tr": "zohr nāhār chordam.",
+       "de": "Mittags habe ich zu Mittag gegessen."
+      },
+      {
+       "fa": "بَعد اَز ظُهر در کِتابخانِه دَرس خواندَم.",
+       "tr": "baʿd az zohr dar ketābchāne dars chāndam.",
+       "de": "Am Nachmittag habe ich in der Bibliothek gelernt."
+      },
+      {
+       "fa": "عَصر به پارک رَفتَم.",
+       "tr": "ʿasr be pārk raftam.",
+       "de": "Am frühen Abend bin ich in den Park gegangen."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Wann ist Reza aufgewacht?",
+       "optionen": [
+        "um 7 Uhr",
+        "um 9 Uhr",
+        "um 11 Uhr"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wo hat Reza gelernt?",
+       "optionen": [
+        "in der Bibliothek",
+        "zu Hause",
+        "im Café"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was hat Reza am Abend gemacht?",
+       "optionen": [
+        "gekocht und einen Film gesehen",
+        "gearbeitet",
+        "im Park gelesen"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wann ist er schlafen gegangen?",
+       "optionen": [
+        "um 11",
+        "um 9",
+        "um 12"
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "رِضا ساعَتِ هَشت بیدار شُد.",
+       "fest": true,
+       "erkl": "Er ist um <b>sieben</b> aufgewacht."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "رِضا ظُهر ناهار خورد.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "رِضا عَصر به سینِما رَفت.",
+       "fest": true,
+       "erkl": "Er ist in den <b>Park</b> gegangen."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "رِضا شَب فیلم دید.",
+       "fest": true,
+       "erkl": "Beachte: Hier steht die 3. Person – <span class='fa'>دید</span>, ohne Endung."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "a2",
+   "titel": "Profi-Text: Minas Freitag",
+   "vorschau": "مینا",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>جُمعه</span> <i>dschomʿe</i> – Freitag (im Iran: Wochenende!) · <span class='fa'>با</span> <i>bā</i> – mit · <span class='fa'>زود</span> <i>zūd</i> – früh</p><p>Im Text erzählt jemand <b>über</b> Mina – also 3. Person: Verben ohne Endung!</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Minas Freitag",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "دیروز جمعه بود.",
+       "tr": "dīrūz dschomʿe būd.",
+       "de": "Gestern war Freitag."
+      },
+      {
+       "fa": "مینا ساعت ده بیدار شد.",
+       "tr": "mīnā sāʿat-e dah bīdār schod.",
+       "de": "Mina ist um zehn aufgewacht."
+      },
+      {
+       "fa": "صبحانه نان و پنیر خورد.",
+       "tr": "sobhāne nān o panīr chord.",
+       "de": "Zum Frühstück hat sie Brot und Käse gegessen."
+      },
+      {
+       "fa": "ظهر با خانواده به رستوران رفت.",
+       "tr": "zohr bā chānewāde be restorān raft.",
+       "de": "Mittags ist sie mit der Familie ins Restaurant gegangen."
+      },
+      {
+       "fa": "عصر در پارک کتاب خواند.",
+       "tr": "ʿasr dar pārk ketāb chānd.",
+       "de": "Am frühen Abend hat sie im Park ein Buch gelesen."
+      },
+      {
+       "fa": "شب خسته بود و زود خوابید.",
+       "tr": "schab chaste būd o zūd chābīd.",
+       "de": "Abends war sie müde und ist früh schlafen gegangen."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Wann ist Mina aufgewacht?",
+       "optionen": [
+        "um 10 Uhr",
+        "um 7 Uhr",
+        "um 11 Uhr"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wohin ist sie mittags gegangen?",
+       "optionen": [
+        "ins Restaurant",
+        "zur Uni",
+        "ins Kino"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Mit wem?",
+       "optionen": [
+        "mit der Familie",
+        "allein",
+        "mit Freundinnen"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Warum ist sie früh schlafen gegangen?",
+       "optionen": [
+        "Sie war müde.",
+        "Sie war krank.",
+        "Sie hatte eine Prüfung."
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Minas Tag in der richtigen Reihenfolge",
+     "frage": "Tippe die Sätze in der Reihenfolge des Textes an.",
+     "items": [
+      {
+       "fa": "مینا ساعت ده بیدار شد.",
+       "tr": "mīnā sāʿat-e dah bīdār schod.",
+       "de": "Mina ist um zehn aufgewacht."
+      },
+      {
+       "fa": "صبحانه نان و پنیر خورد.",
+       "tr": "sobhāne nān o panīr chord.",
+       "de": "Zum Frühstück hat sie Brot und Käse gegessen."
+      },
+      {
+       "fa": "ظهر با خانواده به رستوران رفت.",
+       "tr": "zohr bā chānewāde be restorān raft.",
+       "de": "Mittags ist sie mit der Familie ins Restaurant gegangen."
+      },
+      {
+       "fa": "عصر در پارک کتاب خواند.",
+       "tr": "ʿasr dar pārk ketāb chānd.",
+       "de": "Am frühen Abend hat sie im Park ein Buch gelesen."
+      },
+      {
+       "fa": "شب خسته بود و زود خوابید.",
+       "tr": "schab chaste būd o zūd chābīd.",
+       "de": "Abends war sie müde und ist früh schlafen gegangen."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d1",
+   "titel": "Dialog: Was hast du gestern gemacht?",
+   "vorschau": "دیروز چه کار کَردی؟",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Ali fragt Sara nach ihrem gestrigen Tag.</p>"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "عَلی: سارا، دیروز چه کار کَردی؟",
+       "tr": "sārā, dīrūz tsche kār kardī?",
+       "de": "Sara, was hast du gestern gemacht?"
+      },
+      {
+       "fa": "سارا: صُبح به دانِشگاه رَفتَم.",
+       "tr": "sobh be dāneschgāh raftam.",
+       "de": "Morgens bin ich zur Uni gegangen."
+      },
+      {
+       "fa": "عَلی: بَعد اَز ظُهر چه کار کَردی؟",
+       "tr": "baʿd az zohr tsche kār kardī?",
+       "de": "Und was hast du am Nachmittag gemacht?"
+      },
+      {
+       "fa": "سارا: در کِتابخانِه دَرس خواندَم.",
+       "tr": "dar ketābchāne dars chāndam.",
+       "de": "Ich habe in der Bibliothek gelernt."
+      },
+      {
+       "fa": "عَلی: شَب کُجا بودی؟",
+       "tr": "schab kodschā būdī?",
+       "de": "Wo warst du am Abend?"
+      },
+      {
+       "fa": "سارا: با مینا به سینِما رَفتیم.",
+       "tr": "bā mīnā be sīnemā raftīm.",
+       "de": "Mina und ich sind ins Kino gegangen."
+      },
+      {
+       "fa": "عَلی: فیلم خوب بود؟",
+       "tr": "fīlm chūb būd?",
+       "de": "War der Film gut?"
+      },
+      {
+       "fa": "سارا: بَله، خِیلی خوب بود!",
+       "tr": "bale, cheylī chūb būd!",
+       "de": "Ja, sehr gut!"
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "عَلی: سارا، دیروز چه کار کَردی؟",
+       "tr": "sārā, dīrūz tsche kār kardī?",
+       "de": "Sara, was hast du gestern gemacht?"
+      },
+      {
+       "fa": "سارا: صُبح به دانِشگاه رَفتَم.",
+       "tr": "sobh be dāneschgāh raftam.",
+       "de": "Morgens bin ich zur Uni gegangen."
+      },
+      {
+       "fa": "عَلی: بَعد اَز ظُهر چه کار کَردی؟",
+       "tr": "baʿd az zohr tsche kār kardī?",
+       "de": "Und was hast du am Nachmittag gemacht?"
+      },
+      {
+       "fa": "سارا: در کِتابخانِه دَرس خواندَم.",
+       "tr": "dar ketābchāne dars chāndam.",
+       "de": "Ich habe in der Bibliothek gelernt."
+      },
+      {
+       "fa": "عَلی: شَب کُجا بودی؟",
+       "tr": "schab kodschā būdī?",
+       "de": "Wo warst du am Abend?"
+      },
+      {
+       "fa": "سارا: با مینا به سینِما رَفتیم.",
+       "tr": "bā mīnā be sīnemā raftīm.",
+       "de": "Mina und ich sind ins Kino gegangen."
+      },
+      {
+       "fa": "عَلی: فیلم خوب بود؟",
+       "tr": "fīlm chūb būd?",
+       "de": "War der Film gut?"
+      },
+      {
+       "fa": "سارا: بَله، خِیلی خوب بود!",
+       "tr": "bale, cheylī chūb būd!",
+       "de": "Ja, sehr gut!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Wo hat Sara gelernt?",
+       "optionen": [
+        "in der Bibliothek",
+        "zu Hause",
+        "im Café"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Mit wem war Sara im Kino?",
+       "optionen": [
+        "mit Mina",
+        "mit Ali",
+        "allein"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie war der Film?",
+       "optionen": [
+        "sehr gut",
+        "schlecht",
+        "langweilig"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d2",
+   "titel": "Dialog: Warum warst du nicht da?",
+   "vorschau": "چِرا نَیامَدی؟",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Die Lehrerin spricht mit einem Studenten.</p>"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "مُعَلِّم: دیروز چِرا به کِلاس نَیامَدی؟",
+       "tr": "dīrūz tscherā be kelās nayāmadī?",
+       "de": "Warum bist du gestern nicht zum Unterricht gekommen?"
+      },
+      {
+       "fa": "دانِشجو: بیمار بودَم.",
+       "tr": "bīmār būdam.",
+       "de": "Ich war krank."
+      },
+      {
+       "fa": "مُعَلِّم: اِمروز خوب هَستی؟",
+       "tr": "emrūz chūb hastī?",
+       "de": "Geht es dir heute gut?"
+      },
+      {
+       "fa": "دانِشجو: بَله، مَمنون. اِمروز خوب هَستَم.",
+       "tr": "bale, mamnūn. emrūz chūb hastam.",
+       "de": "Ja, danke. Heute geht es mir gut."
+      },
+      {
+       "fa": "مُعَلِّم: دَرس خواندی؟",
+       "tr": "dars chāndī?",
+       "de": "Hast du gelernt?"
+      },
+      {
+       "fa": "دانِشجو: بَله، دیشَب دو ساعَت دَرس خواندَم.",
+       "tr": "bale, dīschab do sāʿat dars chāndam.",
+       "de": "Ja, gestern Abend habe ich zwei Stunden gelernt."
+      },
+      {
+       "fa": "مُعَلِّم: آفَرین!",
+       "tr": "āfarīn!",
+       "de": "Bravo!"
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "مُعَلِّم: دیروز چِرا به کِلاس نَیامَدی؟",
+       "tr": "dīrūz tscherā be kelās nayāmadī?",
+       "de": "Warum bist du gestern nicht zum Unterricht gekommen?"
+      },
+      {
+       "fa": "دانِشجو: بیمار بودَم.",
+       "tr": "bīmār būdam.",
+       "de": "Ich war krank."
+      },
+      {
+       "fa": "مُعَلِّم: اِمروز خوب هَستی؟",
+       "tr": "emrūz chūb hastī?",
+       "de": "Geht es dir heute gut?"
+      },
+      {
+       "fa": "دانِشجو: بَله، مَمنون. اِمروز خوب هَستَم.",
+       "tr": "bale, mamnūn. emrūz chūb hastam.",
+       "de": "Ja, danke. Heute geht es mir gut."
+      },
+      {
+       "fa": "مُعَلِّم: دَرس خواندی؟",
+       "tr": "dars chāndī?",
+       "de": "Hast du gelernt?"
+      },
+      {
+       "fa": "دانِشجو: بَله، دیشَب دو ساعَت دَرس خواندَم.",
+       "tr": "bale, dīschab do sāʿat dars chāndam.",
+       "de": "Ja, gestern Abend habe ich zwei Stunden gelernt."
+      },
+      {
+       "fa": "مُعَلِّم: آفَرین!",
+       "tr": "āfarīn!",
+       "de": "Bravo!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Warum war der Student nicht im Unterricht?",
+       "optionen": [
+        "Er war krank.",
+        "Er hatte keine Zeit.",
+        "Er war müde."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie lange hat er gestern Abend gelernt?",
+       "optionen": [
+        "zwei Stunden",
+        "eine Stunde",
+        "gar nicht"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

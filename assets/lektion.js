@@ -134,10 +134,10 @@
         <div class="zaehler">Frage ${i + 1} von ${fragen.length}</div>
         <div class="frage">
           ${f.emoji ? `<div class="emo">${f.emoji}</div>` : ""}
-          ${f.fa ? `<div class="fa-gross">${esc(f.fa)} ${f.hoeren === false ? "" : hoer(f.say || f.fa, f.audio)}</div>` : ""}
+          ${f.fa ? `<div class="fa-gross ${f.fa.length > 14 ? "satz" : ""}">${esc(f.fa)} ${f.hoeren === false ? "" : hoer(f.say || f.fa, f.audio)}</div>` : ""}
           <div style="font-weight:800;font-size:1.1rem">${f.frage}</div>
         </div>
-        <div class="optionen">${reihenfolge.map(j => `<button class="opt ${f.optFa ? "fa" : ""}" data-j="${j}">${esc(f.optionen[j])}</button>`).join("")}</div>
+        <div class="optionen">${reihenfolge.map(j => `<button class="opt ${f.optFa ? "fa" : ""}" data-j="${j}">${/<[a-z]/i.test(f.optionen[j]) ? f.optionen[j] : esc(f.optionen[j])}</button>`).join("")}</div>
         <div id="erkl"></div>
         <div class="btnreihe" style="justify-content:flex-end;margin-top:12px"><button class="btn safran versteckt" id="naechste">Nächste Frage →</button></div>
       </div>`;
@@ -149,7 +149,7 @@
           if (ersterVersuch) p++;
           $$(".opt", el).forEach(o => o.disabled = true);
           if (f.erkl) { $("#erkl", el).innerHTML = `<div class="erkl">${f.erkl}</div>`; bindeSprechen($("#erkl", el)); }
-          if (f.fa && f.sprichNachher !== false && f.optFa) sprich(f.optionen[j]);
+          if (f.fa && f.sprichNachher !== false && f.optFa) sprich(f.optionen[j].replace(/<[^>]+>/g, ""));
           if (i < fragen.length - 1) { const n = $("#naechste", el); n.classList.remove("versteckt"); n.onclick = () => { i++; zeige(); }; n.focus(); }
           else fertig(p, fragen.length);
         } else {
@@ -444,47 +444,50 @@
     return { p, m, fertigZahl, pflicht };
   }
 
+  const TEILE = [
+    { art: "lernpfad", nr: "1", titel: "Lernpfad", text: "Schritt für Schritt: Wortschatz und Grammatik" },
+    { art: "texte", nr: "2", titel: "Texte & Dialoge", text: "Lesen, verstehen, Dialoge ordnen" },
+    { art: "zusatz", nr: "3", titel: "Übungen", text: "Wiederholen und festigen" },
+    { art: "umgangssprache", nr: "+", titel: "Extra: Umgangssprache", text: "So spricht man im Alltag – nicht so schreiben!" }];
+  const artVon = s => s.zusatz ? (s.paketArt || "zusatz") : "lernpfad";
+  const LABEL = { lernpfad: "Station", texte: "Text", zusatz: "Übung", umgangssprache: "Umgangssprache" };
   function stLabel(i) {
-    const s = LEK.stationen[i];
-    if (!s.zusatz) return "Station " + (LEK.stationen.slice(0, i + 1).filter(x => !x.zusatz).length);
-    return (s.paketArt === "umgangssprache" ? "Umgangssprache " : "Zusatz ") + (LEK.stationen.slice(0, i + 1).filter(x => x.paketId === s.paketId).length);
+    const s = LEK.stationen[i], art = artVon(s);
+    return LABEL[art] + " " + LEK.stationen.slice(0, i + 1).filter(x => artVon(x) === art).length;
   }
 
   function zeigeUebersicht() {
     aktSt = -1;
     history.replaceState(null, "", `?id=${encodeURIComponent(LEK_ID)}`);
     raeumeAuf();
-    const sum = stationsSumme();
-    const naechste = LEK.stationen.findIndex(s => !s.zusatz && !FORT[s.id]);
-    const kachel = (s, i) => {
-      const f = FORT[s.id];
-      return `<button class="st ${f ? "fertig" : ""} ${i === naechste ? "naechste" : ""} ${s.zusatz ? "zus" : ""} ${s.paketArt === "umgangssprache" ? "ug" : ""}" data-i="${i}">
-          <div class="kopfzeile"><span class="n">${stLabel(i)}</span>${f ? `<span class="chip ok">✓ ${f.p}/${f.m}</span>` : (i === naechste ? `<span class="chip neu">als Nächstes</span>` : "")}</div>
-          <div class="vor">${esc(s.vorschau || "")}</div>
-          <div style="font-weight:800">${esc(s.titel)}</div>
-        </button>`;
+    const idx = LEK.stationen.map((s, i) => ({ s, i, art: artVon(s) }));
+    const naechste = (idx.find(x => x.art !== "umgangssprache" && !FORT[x.s.id]) || {}).i;
+    const naechsteArt = naechste != null ? artVon(LEK.stationen[naechste]) : null;
+    const zeile = x => {
+      const f = FORT[x.s.id];
+      return `<button class="zeile ${f ? "fertig" : ""} ${x.i === naechste ? "naechste" : ""}" data-i="${x.i}">
+        <span class="z-nr">${f ? "✓" : LEK.stationen.slice(0, x.i + 1).filter(y => artVon(y) === x.art).length}</span>
+        <span class="z-titel">${esc(x.s.titel)}</span>
+        <span class="z-status">${f ? `${f.p}/${f.m}` : x.i === naechste ? "weiter →" : ""}</span></button>`;
     };
-    const idx = LEK.stationen.map((s, i) => ({ s, i }));
     $("#buehne").innerHTML = `
-      <div class="lek-kopf">
-        <div><div class="muted klein">Lektion ${esc(LEK.nummer || "")}</div><h2>${esc(LEK.titel)}</h2>
-        <div class="fa" style="font-size:1.3rem;color:var(--lapis);font-weight:800">${esc(LEK.titelFa || "")}</div></div>
-        <div style="text-align:right"><div class="chip ok">${sum.pflicht} / ${LEK.stationen.filter(s => !s.zusatz).length} Stationen</div>
-        <div class="klein muted" style="margin-top:4px">${sum.p} Punkte</div></div>
+      <div class="lek-kopf2">
+        <div class="muted klein">Lektion ${esc(LEK.nummer || "")}</div>
+        <h2>${esc(LEK.titel)}</h2>
+        ${LEK.einleitung ? `<p class="muted" style="margin:.3em 0 0">${LEK.einleitung}</p>` : ""}
       </div>
-      ${LEK.einleitung ? `<p>${LEK.einleitung}</p>` : ""}
-      <div class="stationen">${idx.filter(x => !x.s.zusatz).map(x => kachel(x.s, x.i)).join("")}</div>
-      ${(LEK.pakete || []).map(pk => {
-        const liste = idx.filter(x => x.s.paketId === pk.id);
+      ${TEILE.map(t => {
+        const liste = idx.filter(x => x.art === t.art);
+        if (!liste.length) return "";
         const erl = liste.filter(x => FORT[x.s.id]).length;
-        const ug = pk.art === "umgangssprache";
-        return `<div class="paket-kopf ${ug ? "ug" : ""}"><div><span class="badge" style="background:${ug ? "var(--granat)" : "var(--tuerkis)"};color:#fff">${ug ? "🗣️ Extra: Umgangssprache" : "Zusatzübungen"}</span>
-          <h3 style="margin:4px 0 2px">${esc(pk.titel)}</h3>${pk.beschreibung ? `<div class="klein muted">${esc(pk.beschreibung)}</div>` : ""}</div>
-          <span class="chip ok">${erl} / ${liste.length}</span></div>
-          ${ug ? `<p class="klein" style="margin:-4px 0 10px;color:var(--granat)">So spricht man im Alltag – <b>nicht</b> so schreiben! In den Lektionen lernst du die Schriftsprache.</p>` : ""}
-          <div class="stationen">${liste.map(x => kachel(x.s, x.i)).join("")}</div>`;
+        const offen = t.art === naechsteArt || (naechsteArt == null && t.art === "lernpfad");
+        return `<details class="teil teil-${t.art}" ${offen ? "open" : ""}>
+          <summary><span class="t-nr">${t.nr}</span><span class="t-txt"><b>${t.titel}</b><span class="klein muted">${t.text}</span></span>
+            <span class="t-stand">${erl} / ${liste.length}</span></summary>
+          <div class="t-leiste"><i style="width:${Math.round(100 * erl / liste.length)}%"></i></div>
+          <div class="zeilen">${liste.map(zeile).join("")}</div></details>`;
       }).join("")}`;
-    $$(".st").forEach(b => b.addEventListener("click", () => starteStation(+b.dataset.i)));
+    $$(".zeile").forEach(b => b.addEventListener("click", () => starteStation(+b.dataset.i)));
     window.scrollTo(0, 0);
   }
 
@@ -499,7 +502,7 @@
     const st = LEK.stationen[aktSt];
     const k = st.karten[aktK];
     $("#buehne").innerHTML = `
-      <div class="st-titel"><h2>${stLabel(aktSt)}: ${esc(st.titel)}</h2>
+      <div class="st-titel"><div><div class="klein muted">Lektion ${esc(LEK.nummer || "")} · ${stLabel(aktSt)}</div><h2>${esc(st.titel)}</h2></div>
         <button class="btn zwei klein" id="zurUebersicht">☰ Übersicht</button></div>
       ${st.paketArt === "umgangssprache" ? `<div class="ug-banner">🗣️ <b>Umgangssprache</b> – so spricht man im Alltag. In Texten und Prüfungen gilt die Schriftsprache.</div>` : ""}
       <div class="fortschritt-punkte">${st.karten.map((_, j) => `<i class="${j < aktK ? "an" : j === aktK ? "jetzt" : ""}"></i>`).join("")}</div>

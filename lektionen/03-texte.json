@@ -1,0 +1,729 @@
+{
+ "id": "tx",
+ "art": "texte",
+ "titel": "Texte & Dialoge",
+ "beschreibung": "Lesetexte mit Fragen und Dialoge zum Ordnen.",
+ "stationen": [
+  {
+   "id": "t1",
+   "titel": "Kurztext: Naders Familie",
+   "vorschau": "نادِر",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Kurztext: Naders Familie",
+     "zeilen": [
+      {
+       "fa": "این نادِر اَست.",
+       "tr": "īn nāder ast.",
+       "de": "Das ist Nader."
+      },
+      {
+       "fa": "نادِر یِک خواهَر و دو بَرادَر دارَد.",
+       "tr": "nāder yek chāhar o do barādar dārad.",
+       "de": "Nader hat eine Schwester und zwei Brüder."
+      },
+      {
+       "fa": "خواهَر مُعَلِّم اَست.",
+       "tr": "chāhar moʿallem ast.",
+       "de": "Die Schwester ist Lehrerin."
+      },
+      {
+       "fa": "نادِر ماشین نَدارَد، وَلی دوچَرخِه‌ای دارَد.",
+       "tr": "nāder māschīn nadārad, walī dotscharche-ī dārad.",
+       "de": "Nader hat kein Auto, aber er hat ein Fahrrad."
+      },
+      {
+       "fa": "دوچَرخِه نو اَست.",
+       "tr": "dotscharche no ast.",
+       "de": "Das Fahrrad ist neu."
+      },
+      {
+       "fa": "نادِر یِک گُربِه هَم دارَد.",
+       "tr": "nāder yek gorbe ham dārad.",
+       "de": "Nader hat auch eine Katze."
+      },
+      {
+       "fa": "گُربِه کوچَک اَست.",
+       "tr": "gorbe kūtschak ast.",
+       "de": "Die Katze ist klein."
+      },
+      {
+       "fa": "اِمروز نادِر کِلاس دارَد و وَقت نَدارَد.",
+       "tr": "emrūz nāder kelās dārad o waght nadārad.",
+       "de": "Heute hat Nader Unterricht und keine Zeit."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "نادِر دو خواهَر دارَد.",
+       "fest": true,
+       "erkl": "Nader hat <b>eine</b> Schwester und <b>zwei</b> Brüder."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "خواهَر مُعَلِّم اَست.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "نادِر ماشین دارَد.",
+       "fest": true,
+       "erkl": "Er hat <b>kein</b> Auto – aber ein Fahrrad."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "دوچَرخِه نو اَست.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "گُربِه بُزُرگ اَست.",
+       "fest": true,
+       "erkl": "Die Katze ist <b>klein</b> (<span class='fa'>کوچَک</span>)."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Wie viele Geschwister hat Nader?",
+       "optionen": [
+        "drei",
+        "zwei",
+        "eins"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was ist die Schwester von Beruf?",
+       "optionen": [
+        "Lehrerin",
+        "Ärztin",
+        "Studentin"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was hat Nader?",
+       "optionen": [
+        "ein Fahrrad und eine Katze",
+        "ein Auto und einen Hund",
+        "ein Auto und eine Katze"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Warum hat Nader heute keine Zeit?",
+       "optionen": [
+        "Er hat Unterricht.",
+        "Er hat eine Prüfung.",
+        "Er ist krank."
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "a1",
+   "titel": "Lesen: Rezas Familie",
+   "vorschau": "رِضا و آرَش",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neu: mein, dein …",
+     "text": "<p>Im Text liest du einmal <span class='fa'>بَرادَرِ مَن</span> <i>barādar-e man</i> – <b>mein Bruder</b>. Das kleine <b>-e</b> (Ezāfe) verbindet zwei Wörter. Es wird meist nicht geschrieben – hier zeigt es der Strich unter <span class='fa'>ر</span>. Mehr dazu in einer späteren Lektion!</p><p><span class='fa'>هَم</span> <i>ham</i> – auch · <span class='fa'>وَلی</span> <i>walī</i> – aber</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Rezas Familie",
+     "zeilen": [
+      {
+       "fa": "سَلام! مَن رِضا هَستَم.",
+       "tr": "salām! man rezā hastam.",
+       "de": "Hallo! Ich bin Reza."
+      },
+      {
+       "fa": "مَن دانِشجو هَستَم.",
+       "tr": "man dāneschdschū hastam.",
+       "de": "Ich bin Student."
+      },
+      {
+       "fa": "مَن یِک بَرادَر و دو خواهَر دارَم.",
+       "tr": "man yek barādar o do chāhar dāram.",
+       "de": "Ich habe einen Bruder und zwei Schwestern."
+      },
+      {
+       "fa": "بَرادَرِ مَن آرَش اَست.",
+       "tr": "barādar-e man ārasch ast.",
+       "de": "Mein Bruder heißt Arasch."
+      },
+      {
+       "fa": "آرَش پِزِشک اَست.",
+       "tr": "ārasch pezeschk ast.",
+       "de": "Arasch ist Arzt."
+      },
+      {
+       "fa": "او دو فَرزَند دارَد.",
+       "tr": "ū do farzand dārad.",
+       "de": "Er hat zwei Kinder."
+      },
+      {
+       "fa": "آرَش ماشینی دارَد. ماشین نو اَست.",
+       "tr": "ārasch māschīnī dārad. māschīn no ast.",
+       "de": "Arasch hat ein Auto. Das Auto ist neu."
+      },
+      {
+       "fa": "مَن ماشین نَدارَم، وَلی یِک دوچَرخِه دارَم.",
+       "tr": "man māschīn nadāram, walī yek dotscharche dāram.",
+       "de": "Ich habe kein Auto, aber ich habe ein Fahrrad."
+      },
+      {
+       "fa": "ما یِک گُربِه هَم داریم.",
+       "tr": "mā yek gorbe ham dārīm.",
+       "de": "Wir haben auch eine Katze."
+      },
+      {
+       "fa": "اِمروز کِلاس دارَم و وَقت نَدارَم.",
+       "tr": "emrūz kelās dāram o waght nadāram.",
+       "de": "Heute habe ich Unterricht und keine Zeit."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Was ist Reza?",
+       "optionen": [
+        "Student",
+        "Arzt",
+        "Lehrer"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie viele Geschwister hat Reza?",
+       "optionen": [
+        "drei: einen Bruder und zwei Schwestern",
+        "zwei Schwestern",
+        "einen Bruder"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was ist Arasch von Beruf?",
+       "optionen": [
+        "Arzt",
+        "Lehrer",
+        "Ingenieur"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Hat Reza ein Auto?",
+       "optionen": [
+        "Nein, aber ein Fahrrad.",
+        "Ja.",
+        "Nein, und kein Fahrrad."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Warum hat Reza heute keine Zeit?",
+       "optionen": [
+        "Er hat Unterricht.",
+        "Er ist krank.",
+        "Er hat eine Prüfung."
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "آرَش یِک ماشین دارَد.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "ماشینِ آرَش کوچَک اَست.",
+       "fest": true,
+       "erkl": "Im Text steht nur: Das Auto ist <b>neu</b> (<span class='fa'>نو</span>)."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "آنها یِک گُربِه دارَند.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "رِضا دو بَرادَر دارَد.",
+       "fest": true,
+       "erkl": "Reza hat <b>einen</b> Bruder."
+      }
+     ]
+    },
+    {
+     "typ": "lesen",
+     "titel": "Lies die Sätze noch einmal",
+     "karten": [
+      {
+       "fa": "مَن دانِشجو هَستَم.",
+       "tr": "man dāneschdschū hastam.",
+       "de": "Ich bin Student."
+      },
+      {
+       "fa": "مَن یِک بَرادَر و دو خواهَر دارَم.",
+       "tr": "man yek barādar o do chāhar dāram.",
+       "de": "Ich habe einen Bruder und zwei Schwestern."
+      },
+      {
+       "fa": "بَرادَرِ مَن آرَش اَست.",
+       "tr": "barādar-e man ārasch ast.",
+       "de": "Mein Bruder heißt Arasch."
+      },
+      {
+       "fa": "مَن ماشین نَدارَم، وَلی یِک دوچَرخِه دارَم.",
+       "tr": "man māschīn nadāram, walī yek dotscharche dāram.",
+       "de": "Ich habe kein Auto, aber ich habe ein Fahrrad."
+      },
+      {
+       "fa": "ما یِک گُربِه هَم داریم.",
+       "tr": "mā yek gorbe ham dārīm.",
+       "de": "Wir haben auch eine Katze."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "a2",
+   "titel": "Profi-Text: Minas Familie",
+   "vorschau": "مینا",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Minas Familie",
+     "text": "Ohne Vokalzeichen – wie im echten Leben! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "سلام! من مینا هستم.",
+       "tr": "salām! man mīnā hastam.",
+       "de": "Hallo! Ich bin Mina."
+      },
+      {
+       "fa": "من معلم هستم.",
+       "tr": "man moʿallem hastam.",
+       "de": "Ich bin Lehrerin."
+      },
+      {
+       "fa": "من همسر و دو فرزند دارم:",
+       "tr": "man hamsar o do farzand dāram:",
+       "de": "Ich habe einen Mann und zwei Kinder:"
+      },
+      {
+       "fa": "یک پسر و یک دختر.",
+       "tr": "yek pesar o yek dochtar.",
+       "de": "einen Sohn und eine Tochter."
+      },
+      {
+       "fa": "ما خانه‌ای بزرگ نداریم.",
+       "tr": "mā chāneʾī bozorg nadārīm.",
+       "de": "Wir haben kein großes Haus."
+      },
+      {
+       "fa": "ما سگ نداریم، ولی دو گربه داریم.",
+       "tr": "mā sag nadārīm, walī do gorbe dārīm.",
+       "de": "Wir haben keinen Hund, aber zwei Katzen."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Profi-Text",
+     "fragen": [
+      {
+       "frage": "Was ist Mina von Beruf?",
+       "optionen": [
+        "Lehrerin",
+        "Ärztin",
+        "Studentin"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie viele Kinder hat Mina?",
+       "optionen": [
+        "zwei",
+        "eins",
+        "drei"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was hat die Familie nicht?",
+       "optionen": [
+        "ein großes Haus und einen Hund",
+        "zwei Katzen",
+        "Kinder"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Welche Tiere hat die Familie?",
+       "optionen": [
+        "zwei Katzen",
+        "einen Hund",
+        "einen Hund und zwei Katzen"
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Minas Text in der richtigen Reihenfolge",
+     "frage": "Tippe die Sätze in der Reihenfolge des Textes an.",
+     "items": [
+      {
+       "fa": "سلام! من مینا هستم.",
+       "tr": "salām! man mīnā hastam.",
+       "de": "Hallo! Ich bin Mina."
+      },
+      {
+       "fa": "من معلم هستم.",
+       "tr": "man moʿallem hastam.",
+       "de": "Ich bin Lehrerin."
+      },
+      {
+       "fa": "من همسر و دو فرزند دارم:",
+       "tr": "man hamsar o do farzand dāram:",
+       "de": "Ich habe einen Mann und zwei Kinder:"
+      },
+      {
+       "fa": "یک پسر و یک دختر.",
+       "tr": "yek pesar o yek dochtar.",
+       "de": "einen Sohn und eine Tochter."
+      },
+      {
+       "fa": "ما خانه‌ای بزرگ نداریم.",
+       "tr": "mā chāneʾī bozorg nadārīm.",
+       "de": "Wir haben kein großes Haus."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d1",
+   "titel": "Dialog: Hast du Geschwister?",
+   "vorschau": "خواهَر و بَرادَر داری؟",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Lina und Babak lernen sich kennen.</p>"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "لینا: سَلام بابَک! تو خواهَر و بَرادَر داری؟",
+       "tr": "salām bābak! to chāhar o barādar dārī?",
+       "de": "Hallo Babak! Hast du Geschwister?"
+      },
+      {
+       "fa": "بابَک: بَله، دو خواهَر دارَم.",
+       "tr": "bale, do chāhar dāram.",
+       "de": "Ja, ich habe zwei Schwestern."
+      },
+      {
+       "fa": "لینا: بَرادَر هَم داری؟",
+       "tr": "barādar ham dārī?",
+       "de": "Hast du auch einen Bruder?"
+      },
+      {
+       "fa": "بابَک: نَه، بَرادَر نَدارَم. تو چِطور؟",
+       "tr": "na, barādar nadāram. to tschetor?",
+       "de": "Nein, ich habe keinen Bruder. Und du?"
+      },
+      {
+       "fa": "لینا: مَن یِک بَرادَر دارَم.",
+       "tr": "man yek barādar dāram.",
+       "de": "Ich habe einen Bruder."
+      },
+      {
+       "fa": "بابَک: بَرادَر فَرزَند دارَد؟",
+       "tr": "barādar farzand dārad?",
+       "de": "Hat der Bruder Kinder?"
+      },
+      {
+       "fa": "لینا: بَله، سِه فَرزَند دارَد: یِک پِسَر و دو دُختَر.",
+       "tr": "bale, se farzand dārad: yek pesar o do dochtar.",
+       "de": "Ja, er hat drei Kinder: einen Sohn und zwei Töchter."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "لینا: سَلام بابَک! تو خواهَر و بَرادَر داری؟",
+       "tr": "salām bābak! to chāhar o barādar dārī?",
+       "de": "Hallo Babak! Hast du Geschwister?"
+      },
+      {
+       "fa": "بابَک: بَله، دو خواهَر دارَم.",
+       "tr": "bale, do chāhar dāram.",
+       "de": "Ja, ich habe zwei Schwestern."
+      },
+      {
+       "fa": "لینا: بَرادَر هَم داری؟",
+       "tr": "barādar ham dārī?",
+       "de": "Hast du auch einen Bruder?"
+      },
+      {
+       "fa": "بابَک: نَه، بَرادَر نَدارَم. تو چِطور؟",
+       "tr": "na, barādar nadāram. to tschetor?",
+       "de": "Nein, ich habe keinen Bruder. Und du?"
+      },
+      {
+       "fa": "لینا: مَن یِک بَرادَر دارَم.",
+       "tr": "man yek barādar dāram.",
+       "de": "Ich habe einen Bruder."
+      },
+      {
+       "fa": "بابَک: بَرادَر فَرزَند دارَد؟",
+       "tr": "barādar farzand dārad?",
+       "de": "Hat der Bruder Kinder?"
+      },
+      {
+       "fa": "لینا: بَله، سِه فَرزَند دارَد: یِک پِسَر و دو دُختَر.",
+       "tr": "bale, se farzand dārad: yek pesar o do dochtar.",
+       "de": "Ja, er hat drei Kinder: einen Sohn und zwei Töchter."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Wie viele Schwestern hat Babak?",
+       "optionen": [
+        "zwei",
+        "eine",
+        "keine"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Hat Babak einen Bruder?",
+       "optionen": [
+        "nein",
+        "ja, einen",
+        "ja, zwei"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie viele Kinder hat Linas Bruder?",
+       "optionen": [
+        "drei",
+        "zwei",
+        "eins"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d2",
+   "titel": "Dialog: Im Kurs",
+   "vorschau": "یِک سُوال دارَم",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Die Lehrerin spricht mit den Studierenden.</p><p><span class='fa'>بَفَرمایید!</span> <i>befarmāyīd!</i> – Bitte (schön)! – sehr höflich: Man bietet etwas an oder bittet jemanden zu sprechen.</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "مُعَلِّم: سَلام! کِتاب دارید؟",
+       "tr": "salām! ketāb dārīd?",
+       "de": "Hallo! Habt ihr ein Buch?"
+      },
+      {
+       "fa": "دانِشجو: بَله، کِتاب داریم.",
+       "tr": "bale, ketāb dārīm.",
+       "de": "Ja, wir haben ein Buch."
+      },
+      {
+       "fa": "مُعَلِّم: سُوال دارید؟",
+       "tr": "soʾāl dārīd?",
+       "de": "Habt ihr Fragen?"
+      },
+      {
+       "fa": "دانِشجو: بَله، مَن یِک سُوال دارَم.",
+       "tr": "bale, man yek soʾāl dāram.",
+       "de": "Ja, ich habe eine Frage."
+      },
+      {
+       "fa": "مُعَلِّم: بَفَرمایید!",
+       "tr": "befarmāyīd!",
+       "de": "Bitte schön!"
+      },
+      {
+       "fa": "دانِشجو: فَردا اِمتِحان داریم؟",
+       "tr": "fardā emtehān dārīm?",
+       "de": "Haben wir morgen eine Prüfung?"
+      },
+      {
+       "fa": "مُعَلِّم: نَه، فَردا اِمتِحان نَداریم.",
+       "tr": "na, fardā emtehān nadārīm.",
+       "de": "Nein, morgen haben wir keine Prüfung."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "مُعَلِّم: سَلام! کِتاب دارید؟",
+       "tr": "salām! ketāb dārīd?",
+       "de": "Hallo! Habt ihr ein Buch?"
+      },
+      {
+       "fa": "دانِشجو: بَله، کِتاب داریم.",
+       "tr": "bale, ketāb dārīm.",
+       "de": "Ja, wir haben ein Buch."
+      },
+      {
+       "fa": "مُعَلِّم: سُوال دارید؟",
+       "tr": "soʾāl dārīd?",
+       "de": "Habt ihr Fragen?"
+      },
+      {
+       "fa": "دانِشجو: بَله، مَن یِک سُوال دارَم.",
+       "tr": "bale, man yek soʾāl dāram.",
+       "de": "Ja, ich habe eine Frage."
+      },
+      {
+       "fa": "مُعَلِّم: بَفَرمایید!",
+       "tr": "befarmāyīd!",
+       "de": "Bitte schön!"
+      },
+      {
+       "fa": "دانِشجو: فَردا اِمتِحان داریم؟",
+       "tr": "fardā emtehān dārīm?",
+       "de": "Haben wir morgen eine Prüfung?"
+      },
+      {
+       "fa": "مُعَلِّم: نَه، فَردا اِمتِحان نَداریم.",
+       "tr": "na, fardā emtehān nadārīm.",
+       "de": "Nein, morgen haben wir keine Prüfung."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Was hat die Studentin?",
+       "optionen": [
+        "eine Frage",
+        "keine Zeit",
+        "kein Buch"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Gibt es morgen eine Prüfung?",
+       "optionen": [
+        "nein",
+        "ja",
+        "das sagt die Lehrerin nicht"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

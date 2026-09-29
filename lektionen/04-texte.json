@@ -1,0 +1,589 @@
+{
+ "id": "tx",
+ "art": "texte",
+ "titel": "Texte & Dialoge",
+ "beschreibung": "Lesetexte mit Fragen und Dialoge zum Ordnen.",
+ "stationen": [
+  {
+   "id": "t1",
+   "titel": "Kurztext: Reza und sein Essen",
+   "vorschau": "رِضا آشپَز اَست",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Kurztext: Reza und sein Essen",
+     "zeilen": [
+      {
+       "fa": "رِضا آشپَز اَست.",
+       "tr": "rezā āschpaz ast.",
+       "de": "Reza ist Koch."
+      },
+      {
+       "fa": "او غَذا خِیلی دوست دارَد.",
+       "tr": "ū ghazā cheylī dūst dārad.",
+       "de": "Er mag Essen sehr."
+      },
+      {
+       "fa": "رِضا ماهی و بِرِنج دوست دارَد.",
+       "tr": "rezā māhī o berendsch dūst dārad.",
+       "de": "Reza mag Fisch und Reis."
+      },
+      {
+       "fa": "وَلی گوشت دوست نَدارَد.",
+       "tr": "walī gūscht dūst nadārad.",
+       "de": "Aber Fleisch mag er nicht."
+      },
+      {
+       "fa": "او سَبزی هَم دوست دارَد: هَویج، کاهو و بادِمجان.",
+       "tr": "ū sabzī ham dūst dārad: hawīdsch, kāhū o bādemdschān.",
+       "de": "Er mag auch Gemüse: Karotten, Salat und Auberginen."
+      },
+      {
+       "fa": "رِضا قَهوِه اَصلاً دوست نَدارَد.",
+       "tr": "rezā ghahwe aslan dūst nadārad.",
+       "de": "Kaffee mag Reza gar nicht."
+      },
+      {
+       "fa": "او چای دوست دارَد.",
+       "tr": "ū tschāy dūst dārad.",
+       "de": "Er mag Tee."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "رِضا آشپَز اَست.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "رِضا گوشت دوست دارَد.",
+       "fest": true,
+       "erkl": "Fleisch mag er <b>nicht</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "رِضا بادِمجان دوست دارَد.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "رِضا قَهوِه خِیلی دوست دارَد.",
+       "fest": true,
+       "erkl": "Kaffee mag er <b>gar nicht</b> (<span class='fa'>اَصلاً</span>)."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Was ist Reza von Beruf?",
+       "optionen": [
+        "Koch",
+        "Arzt",
+        "Verkäufer"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was mag Reza nicht?",
+       "optionen": [
+        "Fleisch",
+        "Fisch",
+        "Reis"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was trinkt Reza gern?",
+       "optionen": [
+        "Tee",
+        "Kaffee",
+        "Milch"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Welches Gemüse steht <b>nicht</b> im Text?",
+       "optionen": [
+        "Kartoffeln",
+        "Karotten",
+        "Auberginen"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "a1",
+   "titel": "Lesen: Wer mag was?",
+   "vorschau": "سارا و عَلی",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Sara und Ali",
+     "zeilen": [
+      {
+       "fa": "سَلام! مَن سارا هَستَم.",
+       "tr": "salām! man sārā hastam.",
+       "de": "Hallo! Ich bin Sara."
+      },
+      {
+       "fa": "مَن میوه خِیلی دوست دارَم.",
+       "tr": "man mīwe cheylī dūst dāram.",
+       "de": "Ich mag Obst sehr."
+      },
+      {
+       "fa": "مَن سیب و موز دوست دارَم، وَلی پُرتِقال دوست نَدارَم.",
+       "tr": "man sīb o mūz dūst dāram, walī porteghāl dūst nadāram.",
+       "de": "Ich mag Äpfel und Bananen, aber keine Orangen."
+      },
+      {
+       "fa": "بَرادَرِ مَن، عَلی، سَبزی دوست دارَد.",
+       "tr": "barādar-e man, ʿalī, sabzī dūst dārad.",
+       "de": "Mein Bruder Ali mag Gemüse."
+      },
+      {
+       "fa": "او هَویج و کاهو خِیلی دوست دارَد.",
+       "tr": "ū hawīdsch o kāhū cheylī dūst dārad.",
+       "de": "Er mag Karotten und Salat sehr."
+      },
+      {
+       "fa": "وَلی پیاز اَصلاً دوست نَدارَد.",
+       "tr": "walī piyāz aslan dūst nadārad.",
+       "de": "Aber Zwiebeln mag er gar nicht."
+      },
+      {
+       "fa": "ما هَر دو چای دوست داریم.",
+       "tr": "mā har do tschāy dūst dārīm.",
+       "de": "Wir beide mögen Tee."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Was mag Sara nicht?",
+       "optionen": [
+        "Orangen",
+        "Äpfel",
+        "Bananen"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was mag Ali sehr?",
+       "optionen": [
+        "Karotten und Salat",
+        "Zwiebeln",
+        "Obst"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was mag Ali gar nicht?",
+       "optionen": [
+        "Zwiebeln",
+        "Salat",
+        "Tee"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was mögen beide?",
+       "optionen": [
+        "Tee",
+        "Kaffee",
+        "Obst"
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Profi-Text: Maryam und Negar",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "مریم قهوه خیلی دوست دارد.",
+       "tr": "maryam ghahwe cheylī dūst dārad.",
+       "de": "Maryam mag Kaffee sehr."
+      },
+      {
+       "fa": "ولی چای دوست ندارد.",
+       "tr": "walī tschāy dūst nadārad.",
+       "de": "Aber sie mag keinen Tee."
+      },
+      {
+       "fa": "نگار ماهی و برنج دوست دارد.",
+       "tr": "negār māhī o berendsch dūst dārad.",
+       "de": "Negar mag Fisch und Reis."
+      },
+      {
+       "fa": "او گوشت اصلاً دوست ندارد.",
+       "tr": "ū gūscht aslan dūst nadārad.",
+       "de": "Fleisch mag sie gar nicht."
+      },
+      {
+       "fa": "آنها هر دو کیک دوست دارند.",
+       "tr": "ānhā har do keyk dūst dārand.",
+       "de": "Beide mögen Kuchen."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "مریم چای دوست دارد.",
+       "fest": true,
+       "erkl": "Maryam mag <b>keinen</b> Tee."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "نگار ماهی دوست دارد.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "نگار گوشت خیلی دوست دارد.",
+       "fest": true,
+       "erkl": "Negar mag Fleisch <b>gar nicht</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "آنها کیک دوست دارند.",
+       "fest": true
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Saras Text in der richtigen Reihenfolge",
+     "frage": "Tippe die Sätze in der Reihenfolge des Textes an.",
+     "items": [
+      {
+       "fa": "مَن میوه خِیلی دوست دارَم.",
+       "tr": "man mīwe cheylī dūst dāram.",
+       "de": "Ich mag Obst sehr."
+      },
+      {
+       "fa": "مَن سیب و موز دوست دارَم، وَلی پُرتِقال دوست نَدارَم.",
+       "tr": "man sīb o mūz dūst dāram, walī porteghāl dūst nadāram.",
+       "de": "Ich mag Äpfel und Bananen, aber keine Orangen."
+      },
+      {
+       "fa": "بَرادَرِ مَن، عَلی، سَبزی دوست دارَد.",
+       "tr": "barādar-e man, ʿalī, sabzī dūst dārad.",
+       "de": "Mein Bruder Ali mag Gemüse."
+      },
+      {
+       "fa": "او هَویج و کاهو خِیلی دوست دارَد.",
+       "tr": "ū hawīdsch o kāhū cheylī dūst dārad.",
+       "de": "Er mag Karotten und Salat sehr."
+      },
+      {
+       "fa": "وَلی پیاز اَصلاً دوست نَدارَد.",
+       "tr": "walī piyāz aslan dūst nadārad.",
+       "de": "Aber Zwiebeln mag er gar nicht."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d1",
+   "titel": "Dialog: Was magst du?",
+   "vorschau": "چه چیزی دوست داری؟",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Mina und Arasch sprechen über Obst.</p>"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "مینا: آرَش، تو میوه دوست داری؟",
+       "tr": "ārasch, to mīwe dūst dārī?",
+       "de": "Arasch, magst du Obst?"
+      },
+      {
+       "fa": "آرَش: بَله، خِیلی دوست دارَم.",
+       "tr": "bale, cheylī dūst dāram.",
+       "de": "Ja, sehr."
+      },
+      {
+       "fa": "مینا: چه چیزی دوست داری؟",
+       "tr": "tsche tschīzī dūst dārī?",
+       "de": "Was magst du?"
+      },
+      {
+       "fa": "آرَش: سیب و موز دوست دارَم. تو چِطور؟",
+       "tr": "sīb o mūz dūst dāram. to tschetor?",
+       "de": "Äpfel und Bananen. Und du?"
+      },
+      {
+       "fa": "مینا: مَن هِندِوانِه خِیلی دوست دارَم.",
+       "tr": "man hendewāne cheylī dūst dāram.",
+       "de": "Ich mag Wassermelone sehr."
+      },
+      {
+       "fa": "آرَش: پُرتِقال هَم دوست داری؟",
+       "tr": "porteghāl ham dūst dārī?",
+       "de": "Magst du auch Orangen?"
+      },
+      {
+       "fa": "مینا: نَه، پُرتِقال دوست نَدارَم.",
+       "tr": "na, porteghāl dūst nadāram.",
+       "de": "Nein, Orangen mag ich nicht."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "مینا: آرَش، تو میوه دوست داری؟",
+       "tr": "ārasch, to mīwe dūst dārī?",
+       "de": "Arasch, magst du Obst?"
+      },
+      {
+       "fa": "آرَش: بَله، خِیلی دوست دارَم.",
+       "tr": "bale, cheylī dūst dāram.",
+       "de": "Ja, sehr."
+      },
+      {
+       "fa": "مینا: چه چیزی دوست داری؟",
+       "tr": "tsche tschīzī dūst dārī?",
+       "de": "Was magst du?"
+      },
+      {
+       "fa": "آرَش: سیب و موز دوست دارَم. تو چِطور؟",
+       "tr": "sīb o mūz dūst dāram. to tschetor?",
+       "de": "Äpfel und Bananen. Und du?"
+      },
+      {
+       "fa": "مینا: مَن هِندِوانِه خِیلی دوست دارَم.",
+       "tr": "man hendewāne cheylī dūst dāram.",
+       "de": "Ich mag Wassermelone sehr."
+      },
+      {
+       "fa": "آرَش: پُرتِقال هَم دوست داری؟",
+       "tr": "porteghāl ham dūst dārī?",
+       "de": "Magst du auch Orangen?"
+      },
+      {
+       "fa": "مینا: نَه، پُرتِقال دوست نَدارَم.",
+       "tr": "na, porteghāl dūst nadāram.",
+       "de": "Nein, Orangen mag ich nicht."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Was mag Arasch?",
+       "optionen": [
+        "Äpfel und Bananen",
+        "Wassermelone",
+        "Orangen"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was mag Mina nicht?",
+       "optionen": [
+        "Orangen",
+        "Wassermelone",
+        "Obst"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d2",
+   "titel": "Dialog: Tee oder Kaffee?",
+   "vorschau": "چای یا قَهوِه؟",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Sima ist bei Negar zu Besuch.</p><p><span class='fa'>یا</span> <i>yā</i> – oder · <span class='fa'>بَفَرمایید!</span> – Bitte (schön)! (beim Anbieten)</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "نِگار: چای دوست دارید یا قَهوِه؟",
+       "tr": "tschāy dūst dārīd yā ghahwe?",
+       "de": "Mögen Sie Tee oder Kaffee?"
+      },
+      {
+       "fa": "سیما: چای دوست دارَم، مَمنون.",
+       "tr": "tschāy dūst dāram, mamnūn.",
+       "de": "Ich mag Tee, danke."
+      },
+      {
+       "fa": "نِگار: شیر هَم دوست دارید؟",
+       "tr": "schīr ham dūst dārīd?",
+       "de": "Mögen Sie auch Milch?"
+      },
+      {
+       "fa": "سیما: نَه، شیر دوست نَدارَم.",
+       "tr": "na, schīr dūst nadāram.",
+       "de": "Nein, Milch mag ich nicht."
+      },
+      {
+       "fa": "نِگار: کیک دوست دارید؟",
+       "tr": "keyk dūst dārīd?",
+       "de": "Mögen Sie Kuchen?"
+      },
+      {
+       "fa": "سیما: بَله، کیک خِیلی دوست دارَم!",
+       "tr": "bale, keyk cheylī dūst dāram!",
+       "de": "Ja, Kuchen mag ich sehr!"
+      },
+      {
+       "fa": "نِگار: بَفَرمایید!",
+       "tr": "befarmāyīd!",
+       "de": "Bitte schön!"
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "نِگار: چای دوست دارید یا قَهوِه؟",
+       "tr": "tschāy dūst dārīd yā ghahwe?",
+       "de": "Mögen Sie Tee oder Kaffee?"
+      },
+      {
+       "fa": "سیما: چای دوست دارَم، مَمنون.",
+       "tr": "tschāy dūst dāram, mamnūn.",
+       "de": "Ich mag Tee, danke."
+      },
+      {
+       "fa": "نِگار: شیر هَم دوست دارید؟",
+       "tr": "schīr ham dūst dārīd?",
+       "de": "Mögen Sie auch Milch?"
+      },
+      {
+       "fa": "سیما: نَه، شیر دوست نَدارَم.",
+       "tr": "na, schīr dūst nadāram.",
+       "de": "Nein, Milch mag ich nicht."
+      },
+      {
+       "fa": "نِگار: کیک دوست دارید؟",
+       "tr": "keyk dūst dārīd?",
+       "de": "Mögen Sie Kuchen?"
+      },
+      {
+       "fa": "سیما: بَله، کیک خِیلی دوست دارَم!",
+       "tr": "bale, keyk cheylī dūst dāram!",
+       "de": "Ja, Kuchen mag ich sehr!"
+      },
+      {
+       "fa": "نِگار: بَفَرمایید!",
+       "tr": "befarmāyīd!",
+       "de": "Bitte schön!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Was trinkt Sima?",
+       "optionen": [
+        "Tee",
+        "Kaffee",
+        "Milch"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was bekommt Sima am Ende?",
+       "optionen": [
+        "Kuchen",
+        "Milch",
+        "Obst"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

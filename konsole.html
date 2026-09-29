@@ -162,7 +162,7 @@
         </div>
       </div>
       <div class="karte"><div class="tabelle-scroll"><table class="t" id="fortTabelle"></table></div>
-        <p class="mini" style="margin-bottom:0">Zelle = erledigte Stationen / alle (+Z = Zusatzübungen) · darunter Erfolgsquote. Antippen für Details.</p></div>
+        <p class="mini" style="margin-bottom:0">Zelle = erledigte Stationen / alle (+Z = Texte & Übungen) · darunter Erfolgsquote. Antippen für Details.</p></div>
       <div class="karte versteckt" id="detail" style="margin-top:14px"></div>
     </div>
 
@@ -294,7 +294,7 @@
   }
   const pflicht = l => LEKDATEN[l.id].stationen.filter(s => !s.zusatz);
   const gesamtStationen = () => offeneLek().reduce((a, l) => a + pflicht(l).length, 0);
-  const stNr = (L, i) => { const s = L.stationen[i]; return s.zusatz ? (s.paketArt === "umgangssprache" ? "Umgangssprache " : "Zusatz ") + L.stationen.slice(0, i + 1).filter(x => x.paketId === s.paketId).length : "Station " + L.stationen.slice(0, i + 1).filter(x => !x.zusatz).length; };
+  const stNr = (L, i) => { const s = L.stationen[i]; return s.zusatz ? ({ umgangssprache: "Umgangssprache ", texte: "Text " }[s.paketArt] || "Übung ") + L.stationen.slice(0, i + 1).filter(x => x.paketId === s.paketId).length : "Station " + L.stationen.slice(0, i + 1).filter(x => !x.zusatz).length; };
   const pct = x => x == null ? "–" : Math.round(100 * x) + " %";
   function vorZeit(ts) {
     if (!ts) return "noch nie";

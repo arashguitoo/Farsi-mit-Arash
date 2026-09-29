@@ -111,7 +111,7 @@
           </div>
           <div class="muted klein">${esc(l.untertitel || "")}</div>
           ${offen ? `<div class="leiste"><i style="width:${pct}%"></i></div>
-            <div class="klein muted" style="margin-top:4px">${erledigt} von ${gesamt} Stationen${zus.length ? ` · <span style="color:var(--tuerkis);font-weight:700">+ ${zus.length} Zusatzübungen</span>${zErl ? ` (${zErl} erledigt)` : ""}` : ""}</div>`
+            <div class="klein muted" style="margin-top:4px">${erledigt} von ${gesamt} Stationen${zus.length ? ` · + ${zus.length} Texte & Übungen${zErl ? ` (${zErl} erledigt)` : ""}` : ""}</div>`
             : `<div style="margin-top:6px"><span class="chip">${l.datei ? "🔒 noch gesperrt" : "in Vorbereitung"}</span></div>`}
         </div>`;
       return offen
