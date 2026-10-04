@@ -1,0 +1,204 @@
+{
+ "id": "ug",
+ "art": "umgangssprache",
+ "titel": "Umgangssprache: So spricht man im Alltag",
+ "beschreibung": "Freiwilliger Extra-Teil: Wetter und „weil“ im Gespräch (آخه، واسه هَمین).",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "So spricht man: Wetter & weil",
+   "vorschau": "بارون میاد · آخه",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Schrift ≠ Gespräch",
+     "text": "<ul><li><span class='fa'>باران → بارون</span> <i>bārūn</i> (ān → ūn) · Regen „kommt“: <span class='fa'>بارون میاد</span></li><li><span class='fa'>چون</span> hört man oft als <span class='fa'>آخه</span> <i>āche</i> – „na ja, weil …“, auch: „aber warum denn?“</li><li><span class='fa'>بَرای → واسه</span> <i>wāse</i> · <span class='fa'>بَرای هَمین → واسه هَمین</span></li><li><span class='fa'>باشه</span> <i>bāsche</i> – okay · <span class='fa'>دیگه</span> <i>dīge</i> – doch (verstärkt)</li></ul>",
+     "stil": "merke"
+    },
+    {
+     "typ": "paare",
+     "links": "x",
+     "paare": [
+      {
+       "fa": "باران می‌بارَد",
+       "tr": "bārān mībārad",
+       "de": "es regnet",
+       "x": "بارون میاد"
+      },
+      {
+       "fa": "هَوا سَرد اَست",
+       "tr": "hawā sard ast",
+       "de": "es ist kalt",
+       "x": "هَوا سَرده"
+      },
+      {
+       "fa": "وَلی",
+       "tr": "walī",
+       "de": "aber",
+       "x": "وَلی / اَمّا"
+      },
+      {
+       "fa": "چون",
+       "tr": "tschūn",
+       "de": "weil",
+       "x": "آخه"
+      },
+      {
+       "fa": "بَرای هَمین",
+       "tr": "barāye hamīn",
+       "de": "deshalb",
+       "x": "واسه هَمین"
+      },
+      {
+       "fa": "خوب اَست",
+       "tr": "chūb ast",
+       "de": "okay",
+       "x": "باشه"
+      }
+     ],
+     "titel": "Schrift ↔ Gespräch"
+    },
+    {
+     "typ": "sortieren",
+     "titel": "Schrift oder Gespräch?",
+     "frage": "Schriftsprache oder Umgangssprache?",
+     "kategorien": [
+      "✍️ Schriftsprache",
+      "🗣️ Umgangssprache"
+     ],
+     "items": [
+      {
+       "fa": "باران می‌بارَد",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "هَوا سَرد اَست",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "چون",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "بَرای هَمین",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "خوب اَست",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "بارون میاد",
+       "k": 1,
+       "say": false,
+       "e": "<i>bārūn miyād</i> – geschrieben: <span class='fa'>باران می‌بارَد</span>"
+      },
+      {
+       "fa": "هَوا سَرده",
+       "k": 1,
+       "say": false,
+       "e": "<i>hawā sarde</i> – geschrieben: <span class='fa'>هَوا سَرد اَست</span>"
+      },
+      {
+       "fa": "آخه",
+       "k": 1,
+       "say": false,
+       "e": "<i>āche</i> – geschrieben: <span class='fa'>چون</span>"
+      },
+      {
+       "fa": "واسه هَمین",
+       "k": 1,
+       "say": false,
+       "e": "<i>wāse hamīn</i> – geschrieben: <span class='fa'>بَرای هَمین</span>"
+      },
+      {
+       "fa": "باشه",
+       "k": 1,
+       "say": false,
+       "e": "<i>bāsche</i> – geschrieben: <span class='fa'>خوب اَست</span>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Regen in Kiel",
+   "vorschau": "واسه هَمین",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Am Telefon",
+     "text": "Umgangssprache! Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "وای، چه بارونی میاد!",
+       "tr": "wāy, tsche bārūnī miyād!",
+       "de": "Oh, was für ein Regen!"
+      },
+      {
+       "fa": "آره، واسه هَمین نِمیام بیرون.",
+       "tr": "āre, wāse hamīn nemiyām bīrūn.",
+       "de": "Ja, deshalb komme ich nicht raus."
+      },
+      {
+       "fa": "آخه چِرا؟ چَتر داری دیگه!",
+       "tr": "āche tscherā? tschatr dārī dīge!",
+       "de": "Aber warum? Du hast doch einen Schirm!"
+      },
+      {
+       "fa": "آره، وَلی هَوا خِیلی سَرده.",
+       "tr": "āre, walī hawā cheylī sarde.",
+       "de": "Ja, aber es ist sehr kalt."
+      },
+      {
+       "fa": "باشه، پَس فَردا می‌ریم.",
+       "tr": "bāsche, pas fardā mīrīm.",
+       "de": "Okay, dann gehen wir morgen."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Verstanden?",
+     "fragen": [
+      {
+       "frage": "Warum will die Person nicht raus?",
+       "optionen": [
+        "Es regnet und ist kalt.",
+        "Sie ist krank.",
+        "Sie hat keinen Schirm."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wann gehen sie?",
+       "optionen": [
+        "morgen",
+        "heute Abend",
+        "gar nicht"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "<span class='fa'>واسه هَمین</span> in der Schriftsprache:",
+       "optionen": [
+        "بَرای هَمین",
+        "با اینکه",
+        "چون"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,231 @@
+{
+ "id": "ug",
+ "art": "umgangssprache",
+ "titel": "Umgangssprache: So spricht man im Alltag",
+ "beschreibung": "Freiwilliger Extra-Teil: Präsens im Gespräch (می‌رَم، میام، می‌گَم).",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "So spricht man: Präsens",
+   "vorschau": "می‌رَم · میام",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Schrift ≠ Gespräch",
+     "text": "<ul><li>Viele Präsensstämme werden im Gespräch <b>kürzer</b>: <span class='fa'>می‌رَوَم → می‌رَم</span>, <span class='fa'>می‌شَوَد → می‌شه</span>, <span class='fa'>می‌گویَم → می‌گَم</span>, <span class='fa'>می‌آیَم → میام</span></li><li>Die Endung <b>-and</b> wird zu <b>-an</b>, <b>-ad</b> zu <b>-e</b>: <span class='fa'>می‌خورَند → می‌خورَن</span>, <span class='fa'>می‌خورَد → می‌خوره</span></li><li><span class='fa'>بیدار شُدَن</span> sagt man im Alltag oft <span class='fa'>پا شُدَن</span> (aufstehen).</li><li>Die Präposition fällt oft weg: <span class='fa'>میرَم دانِشگاه</span> – ich gehe (zur) Uni.</li></ul>",
+     "stil": "merke"
+    },
+    {
+     "typ": "paare",
+     "links": "x",
+     "paare": [
+      {
+       "fa": "می‌رَوَم",
+       "tr": "mīrawam",
+       "de": "ich gehe",
+       "x": "می‌رَم"
+      },
+      {
+       "fa": "می‌آیَم",
+       "tr": "mīāyam",
+       "de": "ich komme",
+       "x": "میام"
+      },
+      {
+       "fa": "می‌گویَم",
+       "tr": "mīgūyam",
+       "de": "ich sage",
+       "x": "می‌گَم"
+      },
+      {
+       "fa": "می‌شَوَد",
+       "tr": "mīschawad",
+       "de": "es wird",
+       "x": "می‌شه"
+      },
+      {
+       "fa": "ساعَت چَند اَست؟",
+       "tr": "sāʿat tschand ast?",
+       "de": "Wie spät ist es?",
+       "x": "ساعَت چَنده؟"
+      },
+      {
+       "fa": "می‌خورَند",
+       "tr": "mīchorand",
+       "de": "sie essen",
+       "x": "می‌خورَن"
+      }
+     ],
+     "titel": "Schrift ↔ Gespräch"
+    },
+    {
+     "typ": "sortieren",
+     "titel": "Schrift oder Gespräch?",
+     "frage": "Schriftsprache oder Umgangssprache?",
+     "kategorien": [
+      "✍️ Schriftsprache",
+      "🗣️ Umgangssprache"
+     ],
+     "items": [
+      {
+       "fa": "می‌رَوَم",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "می‌آیَم",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "می‌گویَم",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "می‌شَوَد",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "ساعَت چَند اَست؟",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "می‌خورَند",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "می‌رَم",
+       "k": 1,
+       "say": false,
+       "e": "<i>mīram</i> – geschrieben: <span class='fa'>می‌رَوَم</span>"
+      },
+      {
+       "fa": "میام",
+       "k": 1,
+       "say": false,
+       "e": "<i>miyām</i> – geschrieben: <span class='fa'>می‌آیَم</span>"
+      },
+      {
+       "fa": "می‌گَم",
+       "k": 1,
+       "say": false,
+       "e": "<i>mīgam</i> – geschrieben: <span class='fa'>می‌گویَم</span>"
+      },
+      {
+       "fa": "می‌شه",
+       "k": 1,
+       "say": false,
+       "e": "<i>mīsche</i> – geschrieben: <span class='fa'>می‌شَوَد</span>"
+      },
+      {
+       "fa": "ساعَت چَنده؟",
+       "k": 1,
+       "say": false,
+       "e": "<i>sāʿat tschande?</i> – geschrieben: <span class='fa'>ساعَت چَند اَست؟</span>"
+      },
+      {
+       "fa": "می‌خورَن",
+       "k": 1,
+       "say": false,
+       "e": "<i>mīchoran</i> – geschrieben: <span class='fa'>می‌خورَند</span>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Unter Freunden",
+   "vorschau": "کِی میای خونه؟",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Was machst du so?",
+     "text": "Umgangssprache! Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "صُبحا ساعَتِ چَند پا می‌شی؟",
+       "tr": "sobhā sāʿat-e tschand pā mīschī?",
+       "de": "Um wie viel Uhr stehst du morgens auf?"
+      },
+      {
+       "fa": "هَفت. بَعد میرَم دانِشگاه.",
+       "tr": "haft. baʿd mīram dāneschgāh.",
+       "de": "Um sieben. Dann gehe ich zur Uni."
+      },
+      {
+       "fa": "ناهار کُجا می‌خوری؟",
+       "tr": "nāhār kodschā mīchorī?",
+       "de": "Wo isst du zu Mittag?"
+      },
+      {
+       "fa": "تو سَلف. غَذاش بَد نیست!",
+       "tr": "tū salf. ghazāsch bad nīst!",
+       "de": "In der Mensa. Das Essen ist nicht schlecht!"
+      },
+      {
+       "fa": "شَب کِی میای خونه؟",
+       "tr": "schab key miyāy chūne?",
+       "de": "Wann kommst du abends nach Hause?"
+      },
+      {
+       "fa": "مَعمولاً ساعَتِ شیش.",
+       "tr": "maʿmūlan sāʿat-e schīsch.",
+       "de": "Normalerweise um sechs."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Verstanden?",
+     "fragen": [
+      {
+       "frage": "Wann steht die Person auf?",
+       "optionen": [
+        "um sieben",
+        "um sechs",
+        "um acht"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wo isst sie zu Mittag?",
+       "optionen": [
+        "in der Mensa",
+        "zu Hause",
+        "im Café"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "<span class='fa'>میرَم</span> in der Schriftsprache:",
+       "optionen": [
+        "می‌رَوَم",
+        "می‌آیَم",
+        "رَفتَم"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>شیش</span> ist gesprochen für …",
+       "optionen": [
+        "شِش",
+        "شَب",
+        "شیر"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

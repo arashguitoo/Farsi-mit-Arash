@@ -1,0 +1,181 @@
+{
+ "id": "ug",
+ "art": "umgangssprache",
+ "titel": "Umgangssprache: So spricht man im Alltag",
+ "beschreibung": "Freiwilliger Extra-Teil: „damit“ und „besser“ im Gespräch.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "So spricht man: damit & besser",
+   "vorschau": "بِهتَره · مُمکِنه",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Schrift ≠ Gespräch",
+     "text": "<ul><li><span class='fa'>اَست → ـه</span>: <span class='fa'>بِهتَره، مُمکِنه، لازِمه</span></li><li><span class='fa'>تا</span> (damit) wird im Gespräch oft zu <span class='fa'>که</span> – oder fällt ganz weg: <span class='fa'>پول جَمع می‌کُنَم بِرَم سَفَر.</span></li><li><span class='fa'>بَرای → واسه</span> · <span class='fa'>پول جَمع کَردَن</span> – Geld sparen · <span class='fa'>خَرج کَردَن</span> – ausgeben</li></ul>",
+     "stil": "merke"
+    },
+    {
+     "typ": "paare",
+     "links": "x",
+     "paare": [
+      {
+       "fa": "تا بِرَوَم",
+       "tr": "tā beravam",
+       "de": "damit ich gehe",
+       "x": "که بِرَم"
+      },
+      {
+       "fa": "بِهتَر اَست بِخوابی",
+       "tr": "behtar ast bechābī",
+       "de": "schlaf besser",
+       "x": "بِهتَره بِخوابی"
+      },
+      {
+       "fa": "مُمکِن اَست بیایَد",
+       "tr": "momken ast biyāyad",
+       "de": "kann sein, dass er/sie kommt",
+       "x": "مُمکِنه بیاد"
+      },
+      {
+       "fa": "بَرای اینکه",
+       "tr": "barāye īnke",
+       "de": "damit",
+       "x": "واسه اینکه"
+      }
+     ],
+     "titel": "Schrift ↔ Gespräch"
+    },
+    {
+     "typ": "sortieren",
+     "titel": "Schrift oder Gespräch?",
+     "frage": "Schriftsprache oder Umgangssprache?",
+     "kategorien": [
+      "✍️ Schriftsprache",
+      "🗣️ Umgangssprache"
+     ],
+     "items": [
+      {
+       "fa": "تا بِرَوَم",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "بِهتَر اَست بِخوابی",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "مُمکِن اَست بیایَد",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "بَرای اینکه",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "که بِرَم",
+       "k": 1,
+       "say": false,
+       "e": "<i>ke beram</i> – geschrieben: <span class='fa'>تا بِرَوَم</span>"
+      },
+      {
+       "fa": "بِهتَره بِخوابی",
+       "k": 1,
+       "say": false,
+       "e": "<i>behtare bechābī</i> – geschrieben: <span class='fa'>بِهتَر اَست بِخوابی</span>"
+      },
+      {
+       "fa": "مُمکِنه بیاد",
+       "k": 1,
+       "say": false,
+       "e": "<i>momkene biyād</i> – geschrieben: <span class='fa'>مُمکِن اَست بیایَد</span>"
+      },
+      {
+       "fa": "واسه اینکه",
+       "k": 1,
+       "say": false,
+       "e": "<i>wāse īnke</i> – geschrieben: <span class='fa'>بَرای اینکه</span>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Sparen für die Reise",
+   "vorschau": "واسه اینکه …",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Unter Freunden",
+     "text": "Umgangssprache! Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "چِرا اِنقَدر کار می‌کُنی؟",
+       "tr": "tscherā enghadr kār mīkonī?",
+       "de": "Warum arbeitest du so viel?"
+      },
+      {
+       "fa": "واسه اینکه پول جَمع کُنَم بِرَم سَفَر.",
+       "tr": "wāse īnke pūl dscham konam beram safar.",
+       "de": "Um Geld zu sparen und auf Reisen zu gehen."
+      },
+      {
+       "fa": "کُجا می‌خوای بِری؟",
+       "tr": "kodschā mīchāy berī?",
+       "de": "Wohin willst du?"
+      },
+      {
+       "fa": "ژاپُن! وَلی مُمکِنه تا تابِستون طول بِکِشه.",
+       "tr": "zhāpon! walī momkene tā tābestūn tūl bekesche.",
+       "de": "Japan! Aber es kann bis zum Sommer dauern."
+      },
+      {
+       "fa": "بِهتَره یه کَم کَمتَر خَرج کُنی!",
+       "tr": "behtare ye kam kamtar charsch konī!",
+       "de": "Du solltest ein bisschen weniger ausgeben!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Verstanden?",
+     "fragen": [
+      {
+       "frage": "Warum arbeitet die Person so viel?",
+       "optionen": [
+        "um für eine Reise zu sparen",
+        "weil sie muss",
+        "weil sie gern arbeitet"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wohin will sie reisen?",
+       "optionen": [
+        "nach Japan",
+        "nach Iran",
+        "nach Spanien"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "<span class='fa'>بِهتَره</span> in der Schriftsprache:",
+       "optionen": [
+        "بهتر است",
+        "بهترین",
+        "بهتر هستم"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

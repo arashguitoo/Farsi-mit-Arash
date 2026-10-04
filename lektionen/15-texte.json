@@ -1,0 +1,792 @@
+{
+ "id": "tx",
+ "art": "texte",
+ "titel": "Texte & Dialoge",
+ "beschreibung": "Lesetexte mit Fragen und Dialoge zum Ordnen.",
+ "stationen": [
+  {
+   "id": "t1",
+   "titel": "Kurztext: Mast-o-Chiar",
+   "vorschau": "ماست و خیار",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>خوشمزه</span> – lecker · <span class='fa'>کیلو</span> – Kilo · <span class='fa'>خشک</span> – getrocknet · <span class='fa'>کشمش</span> – Rosinen · <span class='fa'>ریز</span> – klein, fein · <span class='fa'>یخچال</span> – Kühlschrank · <span class='fa'>گذاشتن</span> – legen, stellen</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Kurztext: Mast-o-Chiar",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "ماست و خیار یک غذای ساده و خوشمزه است. ایرانی‌ها در تابستان آن را خیلی دوست دارند.",
+       "tr": "māst-o-chiyār yek ghazā-ye sāde o choschmaze ast. īrānīhā dar tābestān ān rā cheylī dūst dārand.",
+       "de": "Mast-o-Chiar ist ein einfaches, leckeres Gericht. Iraner mögen es im Sommer sehr."
+      },
+      {
+       "fa": "برای چهار نفر، این‌ها را بخرید: یک کیلو ماست، دو خیار، کمی نعناع خشک، گردو و کشمش.",
+       "tr": "barāye tschahār nafar, īnhā rā becharīd: yek kīlo māst, do chiyār, kamī naʿnāʿ-e choschk, gerdū o keschmesch.",
+       "de": "Für vier Personen kaufen Sie: ein Kilo Joghurt, zwei Gurken, etwas getrocknete Minze, Walnüsse und Rosinen."
+      },
+      {
+       "fa": "اول خیارها را بشویید و خیلی ریز خرد کنید.",
+       "tr": "awwal chiyārhā rā beschūyīd o cheylī rīz chord konīd.",
+       "de": "Waschen Sie zuerst die Gurken und schneiden Sie sie sehr klein."
+      },
+      {
+       "fa": "ماست را در یک کاسه‌ی بزرگ بریزید.",
+       "tr": "māst rā dar yek kāse-ye bozorg berīzīd.",
+       "de": "Geben Sie den Joghurt in eine große Schüssel."
+      },
+      {
+       "fa": "خیار و نعناع را اضافه کنید و خوب هم بزنید.",
+       "tr": "chiyār o naʿnāʿ rā ezāfe konīd o chūb ham bezanīd.",
+       "de": "Fügen Sie Gurke und Minze hinzu und rühren Sie gut um."
+      },
+      {
+       "fa": "کمی نمک بزنید. زیاد نمک نریزید!",
+       "tr": "kamī namak bezanīd. ziyād namak narīzīd!",
+       "de": "Salzen Sie ein wenig. Nicht zu viel Salz!"
+      },
+      {
+       "fa": "روی آن گردو و کشمش بریزید.",
+       "tr": "rū-ye ān gerdū o keschmesch berīzīd.",
+       "de": "Streuen Sie Walnüsse und Rosinen darüber."
+      },
+      {
+       "fa": "نیم ساعت در یخچال بگذارید و سرد بخورید. نوش جان!",
+       "tr": "nīm sāʿat dar yachtschāl begozārīd o sard bechorīd. nūsch-e dschān!",
+       "de": "Stellen Sie es eine halbe Stunde in den Kühlschrank und essen Sie es kalt. Guten Appetit!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "ماست و خیار غذای زمستانی است.",
+       "fest": true,
+       "erkl": "Man mag es besonders im <b>Sommer</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "اول باید خیارها را بشویید.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "باید خیلی نمک بریزید.",
+       "fest": true,
+       "erkl": "Nur <b>ein wenig</b> Salz."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "ماست و خیار را سرد می‌خورند.",
+       "fest": true
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Für wie viele Personen ist das Rezept?",
+       "optionen": [
+        "vier",
+        "zwei",
+        "sechs"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was kommt obendrauf?",
+       "optionen": [
+        "Walnüsse und Rosinen",
+        "Tomaten",
+        "Zwiebeln"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie lange kommt es in den Kühlschrank?",
+       "optionen": [
+        "eine halbe Stunde",
+        "zehn Minuten",
+        "zwei Stunden"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie soll man die Gurken schneiden?",
+       "optionen": [
+        "sehr klein",
+        "in große Stücke",
+        "gar nicht"
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "برای چهار نفر، این‌ها را بخرید: یک کیلو ماست، دو خیار، کمی نعناع خشک، گردو و کشمش.",
+       "tr": "barāye tschahār nafar, īnhā rā becharīd: yek kīlo māst, do chiyār, kamī naʿnāʿ-e choschk, gerdū o keschmesch.",
+       "de": "Für vier Personen kaufen Sie: ein Kilo Joghurt, zwei Gurken, etwas getrocknete Minze, Walnüsse und Rosinen."
+      },
+      {
+       "fa": "اول خیارها را بشویید و خیلی ریز خرد کنید.",
+       "tr": "awwal chiyārhā rā beschūyīd o cheylī rīz chord konīd.",
+       "de": "Waschen Sie zuerst die Gurken und schneiden Sie sie sehr klein."
+      },
+      {
+       "fa": "ماست را در یک کاسه‌ی بزرگ بریزید.",
+       "tr": "māst rā dar yek kāse-ye bozorg berīzīd.",
+       "de": "Geben Sie den Joghurt in eine große Schüssel."
+      },
+      {
+       "fa": "خیار و نعناع را اضافه کنید و خوب هم بزنید.",
+       "tr": "chiyār o naʿnāʿ rā ezāfe konīd o chūb ham bezanīd.",
+       "de": "Fügen Sie Gurke und Minze hinzu und rühren Sie gut um."
+      },
+      {
+       "fa": "کمی نمک بزنید. زیاد نمک نریزید!",
+       "tr": "kamī namak bezanīd. ziyād namak narīzīd!",
+       "de": "Salzen Sie ein wenig. Nicht zu viel Salz!"
+      },
+      {
+       "fa": "روی آن گردو و کشمش بریزید.",
+       "tr": "rū-ye ān gerdū o keschmesch berīzīd.",
+       "de": "Streuen Sie Walnüsse und Rosinen darüber."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t2",
+   "titel": "Text: Kuku Sabzi – Kräuteromelett",
+   "vorschau": "کوکوسبزی",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>مواد لازم</span> – Zutaten · <span class='fa'>جعفری، گشنیز، شوید، تره</span> – Petersilie, Koriander, Dill, Schnittlauch · <span class='fa'>زرشک</span> – Berberitzen · <span class='fa'>زردچوبه</span> – Kurkuma · <span class='fa'>شکستن</span> – (Ei) aufschlagen · <span class='fa'>مخلوط کردن</span> – mischen · <span class='fa'>حرارت</span> – Hitze · <span class='fa'>برگرداندن</span> – wenden · <span class='fa'>طرف</span> – Seite · <span class='fa'>نکته</span> – Tipp</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Text: Kuku Sabzi – Kräuteromelett",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "کوکوسبزی یکی از غذاهای معروف ایرانی است و در نوروز خیلی‌ها آن را درست می‌کنند.",
+       "tr": "kūkūsabzī yekī az ghazāhā-ye maʿrūf-e īrānī ast o dar nourūz cheylīhā ān rā dorost mīkonand.",
+       "de": "Kuku Sabzi ist eines der bekannten iranischen Gerichte, und zu Nouruz machen es viele."
+      },
+      {
+       "fa": "مواد لازم: نیم کیلو سبزی تازه (جعفری، گشنیز، شوید و تره)، پنج تخم‌مرغ، یک پیاز، کمی گردو، زرشک، نمک، فلفل و زردچوبه.",
+       "tr": "mawādd-e lāzem: nīm kīlo sabzī-ye tāze (dschaʿfarī, geschnīz, schewīd o tare), pandsch tochmmorgh, yek piyāz, kamī gerdū, zereschk, namak, felfel o zardtschūbe.",
+       "de": "Zutaten: ein halbes Kilo frische Kräuter (Petersilie, Koriander, Dill und Schnittlauch), fünf Eier, eine Zwiebel, ein paar Walnüsse, Berberitzen, Salz, Pfeffer und Kurkuma."
+      },
+      {
+       "fa": "اول سبزی‌ها را خوب بشویید و بگذارید خشک شوند.",
+       "tr": "awwal sabzīhā rā chūb beschūyīd o begozārīd choschk schawand.",
+       "de": "Waschen Sie zuerst die Kräuter gut und lassen Sie sie trocknen."
+      },
+      {
+       "fa": "بعد سبزی‌ها و پیاز را خیلی ریز خرد کنید.",
+       "tr": "baʿd sabzīhā o piyāz rā cheylī rīz chord konīd.",
+       "de": "Dann schneiden Sie die Kräuter und die Zwiebel sehr fein."
+      },
+      {
+       "fa": "تخم‌مرغ‌ها را در یک کاسه بشکنید و هم بزنید.",
+       "tr": "tochmmorghhā rā dar yek kāse beschkanīd o ham bezanīd.",
+       "de": "Schlagen Sie die Eier in eine Schüssel und verquirlen Sie sie."
+      },
+      {
+       "fa": "سبزی، پیاز، گردو و زرشک را به تخم‌مرغ‌ها اضافه کنید.",
+       "tr": "sabzī, piyāz, gerdū o zereschk rā be tochmmorghhā ezāfe konīd.",
+       "de": "Geben Sie Kräuter, Zwiebel, Walnüsse und Berberitzen zu den Eiern."
+      },
+      {
+       "fa": "نمک، فلفل و کمی زردچوبه بزنید و همه را خوب مخلوط کنید.",
+       "tr": "namak, felfel o kamī zardtschūbe bezanīd o hame rā chūb machlūt konīd.",
+       "de": "Würzen Sie mit Salz, Pfeffer und etwas Kurkuma und mischen Sie alles gut."
+      },
+      {
+       "fa": "در یک ماهیتابه‌ی بزرگ روغن بریزید و بگذارید داغ شود.",
+       "tr": "dar yek māhītābe-ye bozorg roughan berīzīd o begozārīd dāgh schawad.",
+       "de": "Geben Sie Öl in eine große Pfanne und lassen Sie es heiß werden."
+      },
+      {
+       "fa": "مواد را در ماهیتابه بریزید، درش را بگذارید و با حرارت کم بپزید.",
+       "tr": "mawādd rā dar māhītābe berīzīd, darasch rā begozārīd o bā harārat-e kam bepazīd.",
+       "de": "Geben Sie die Masse in die Pfanne, legen Sie den Deckel darauf und garen Sie bei kleiner Hitze."
+      },
+      {
+       "fa": "بعد از بیست دقیقه کوکو را برگردانید تا طرف دیگرش هم سرخ شود.",
+       "tr": "baʿd az bīst daghīghe kūkū rā bargardānīd tā taraf-e dīgarasch ham sorch schawad.",
+       "de": "Nach zwanzig Minuten wenden Sie das Kuku, damit auch die andere Seite braun wird."
+      },
+      {
+       "fa": "کوکو را با نان، ماست و سبزی خوردن بخورید.",
+       "tr": "kūkū rā bā nān, māst o sabzī-ye chordan bechorīd.",
+       "de": "Essen Sie das Kuku mit Brot, Joghurt und frischen Kräutern."
+      },
+      {
+       "fa": "نکته: اگر کوکو نمی‌خورید، می‌توانید آن را سرد هم بخورید؛ فردا خوشمزه‌تر است!",
+       "tr": "nokte: agar kūkū nemīchorīd, mītawānīd ān rā sard ham bechorīd; fardā choschmazetar ast!",
+       "de": "Tipp: Sie können Kuku auch kalt essen; am nächsten Tag ist es noch leckerer!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "کوکوسبزی غذای معروفی است.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "سبزی‌ها را نباید بشویید.",
+       "fest": true,
+       "erkl": "Man soll sie <b>gut waschen</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "برای کوکو شش تخم‌مرغ لازم است.",
+       "fest": true,
+       "erkl": "Man braucht <b>fünf</b> Eier."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "کوکو را با حرارت کم می‌پزند.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "کوکو را فقط گرم می‌خورند.",
+       "fest": true,
+       "erkl": "Man kann es auch <b>kalt</b> essen."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Wann machen viele Kuku Sabzi?",
+       "optionen": [
+        "zu Nouruz",
+        "zum Frühstück",
+        "im Winter"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was macht man nach 20 Minuten?",
+       "optionen": [
+        "das Kuku wenden",
+        "Salz hinzufügen",
+        "die Kräuter waschen"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Womit isst man Kuku?",
+       "optionen": [
+        "mit Brot, Joghurt und Kräutern",
+        "mit Reis",
+        "mit Suppe"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Welches Gewürz kommt hinein?",
+       "optionen": [
+        "Kurkuma",
+        "Zimt",
+        "Safran"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t3",
+   "titel": "Profi-Text: Regeln im Wohnheim",
+   "vorschau": "قوانین خوابگاه",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>قوانین</span> – Regeln · <span class='fa'>خوش آمدید</span> – willkommen · <span class='fa'>زباله</span> – Müll · <span class='fa'>جدا کردن</span> – trennen · <span class='fa'>کاغذ</span> – Papier · <span class='fa'>معمولی</span> – normal</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Profi-Text: Regeln im Wohnheim",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "به خوابگاه دانشجویی خوش آمدید! لطفا این قوانین را بخوانید:",
+       "tr": "be chābgāh-e dāneschdschūyī chosch āmadīd! lotfan īn ghawānīn rā bechānīd:",
+       "de": "Willkommen im Studentenwohnheim! Bitte lesen Sie diese Regeln:"
+      },
+      {
+       "fa": "بعد از ساعت ده شب، آهسته صحبت کنید و موسیقی بلند گوش ندهید.",
+       "tr": "baʿd az sāʿat-e dah-e schab, āheste sohbat konīd o mūsīghī-ye boland gūsch nadahīd.",
+       "de": "Sprechen Sie nach 22 Uhr leise und hören Sie keine laute Musik."
+      },
+      {
+       "fa": "در اتاق‌ها سیگار نکشید.",
+       "tr": "dar otāghhā sīgār nakeschīd.",
+       "de": "Rauchen Sie nicht in den Zimmern."
+      },
+      {
+       "fa": "آشپزخانه را بعد از غذا پختن تمیز کنید.",
+       "tr": "āschpazchāne rā baʿd az ghazā pochtan tamīz konīd.",
+       "de": "Machen Sie die Küche nach dem Kochen sauber."
+      },
+      {
+       "fa": "زباله‌ها را جدا کنید: کاغذ، پلاستیک و زباله‌ی معمولی.",
+       "tr": "zobālehā rā dschodā konīd: kāghaz, plāstīk o zobāle-ye maʿmūlī.",
+       "de": "Trennen Sie den Müll: Papier, Plastik und Restmüll."
+      },
+      {
+       "fa": "کلیدتان را گم نکنید! کلید جدید گران است.",
+       "tr": "kelīdetān rā gom nakonīd! kelīd-e dschadīd gerān ast.",
+       "de": "Verlieren Sie Ihren Schlüssel nicht! Ein neuer Schlüssel ist teuer."
+      },
+      {
+       "fa": "اگر مشکلی دارید، به دفتر خوابگاه بیایید.",
+       "tr": "agar moschkelī dārīd, be daftar-e chābgāh biyāyīd.",
+       "de": "Wenn Sie ein Problem haben, kommen Sie ins Wohnheimbüro."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "بعد از ساعت ده باید آهسته صحبت کنید.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "در اتاق‌ها می‌توانید سیگار بکشید.",
+       "fest": true,
+       "erkl": "Rauchen ist <b>verboten</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "باید زباله‌ها را جدا کنید.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "کلید جدید ارزان است.",
+       "fest": true,
+       "erkl": "Er ist <b>teuer</b>."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Was soll man nach dem Kochen tun?",
+       "optionen": [
+        "die Küche sauber machen",
+        "das Fenster öffnen",
+        "Musik hören"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie viele Müllsorten gibt es?",
+       "optionen": [
+        "drei",
+        "zwei",
+        "vier"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wohin soll man bei Problemen gehen?",
+       "optionen": [
+        "ins Wohnheimbüro",
+        "zur Polizei",
+        "zur Uni"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d1",
+   "titel": "Dialog: Wie komme ich zur Post?",
+   "vorschau": "اداره‌ی پست کجاست؟",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Jonas ist in Schiras und sucht die Post.</p><p><span class='fa'>اداره‌ی پست</span> – Post(amt) · <span class='fa'>مواظبِ … باشید</span> – passen Sie auf … auf</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "یوناس: ببخشید آقا، اداره‌ی پست کجاست؟",
+       "tr": "bebachschīd āghā, edāre-ye post kodschāst?",
+       "de": "Entschuldigung, wo ist die Post?"
+      },
+      {
+       "fa": "مرد: زیاد دور نیست. این خیابان را مستقیم بروید.",
+       "tr": "ziyād dūr nīst. īn chiyābān rā mostaghīm berawīd.",
+       "de": "Nicht sehr weit. Gehen Sie diese Straße geradeaus."
+      },
+      {
+       "fa": "یوناس: تا کجا؟",
+       "tr": "tā kodschā?",
+       "de": "Bis wohin?"
+      },
+      {
+       "fa": "مرد: تا چهارراه دوم. آنجا به چپ بپیچید.",
+       "tr": "tā tschahārrāh-e dowwom. āndschā be tschap bepīchīd.",
+       "de": "Bis zur zweiten Kreuzung. Dort biegen Sie links ab."
+      },
+      {
+       "fa": "یوناس: بعد چه کار کنم؟",
+       "tr": "baʿd tsche kār konam?",
+       "de": "Und dann?"
+      },
+      {
+       "fa": "مرد: از خیابان رد شوید. پست روبه‌روی یک نانوایی است.",
+       "tr": "az chiyābān rad schawīd. post rūberū-ye yek nānwāyī ast.",
+       "de": "Überqueren Sie die Straße. Die Post ist gegenüber einer Bäckerei."
+      },
+      {
+       "fa": "یوناس: خیلی ممنون!",
+       "tr": "cheylī mamnūn!",
+       "de": "Vielen Dank!"
+      },
+      {
+       "fa": "مرد: خواهش می‌کنم. مواظب ماشین‌ها باشید!",
+       "tr": "chāhesch mīkonam. mowāzeb-e māschīnhā bāschīd!",
+       "de": "Gern geschehen. Passen Sie auf die Autos auf!"
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "یوناس: ببخشید آقا، اداره‌ی پست کجاست؟",
+       "tr": "bebachschīd āghā, edāre-ye post kodschāst?",
+       "de": "Entschuldigung, wo ist die Post?"
+      },
+      {
+       "fa": "مرد: زیاد دور نیست. این خیابان را مستقیم بروید.",
+       "tr": "ziyād dūr nīst. īn chiyābān rā mostaghīm berawīd.",
+       "de": "Nicht sehr weit. Gehen Sie diese Straße geradeaus."
+      },
+      {
+       "fa": "یوناس: تا کجا؟",
+       "tr": "tā kodschā?",
+       "de": "Bis wohin?"
+      },
+      {
+       "fa": "مرد: تا چهارراه دوم. آنجا به چپ بپیچید.",
+       "tr": "tā tschahārrāh-e dowwom. āndschā be tschap bepīchīd.",
+       "de": "Bis zur zweiten Kreuzung. Dort biegen Sie links ab."
+      },
+      {
+       "fa": "یوناس: بعد چه کار کنم؟",
+       "tr": "baʿd tsche kār konam?",
+       "de": "Und dann?"
+      },
+      {
+       "fa": "مرد: از خیابان رد شوید. پست روبه‌روی یک نانوایی است.",
+       "tr": "az chiyābān rad schawīd. post rūberū-ye yek nānwāyī ast.",
+       "de": "Überqueren Sie die Straße. Die Post ist gegenüber einer Bäckerei."
+      },
+      {
+       "fa": "یوناس: خیلی ممنون!",
+       "tr": "cheylī mamnūn!",
+       "de": "Vielen Dank!"
+      },
+      {
+       "fa": "مرد: خواهش می‌کنم. مواظب ماشین‌ها باشید!",
+       "tr": "chāhesch mīkonam. mowāzeb-e māschīnhā bāschīd!",
+       "de": "Gern geschehen. Passen Sie auf die Autos auf!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Wie weit ist die Post?",
+       "optionen": [
+        "nicht sehr weit",
+        "sehr weit",
+        "direkt hier"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wo soll Jonas abbiegen?",
+       "optionen": [
+        "an der zweiten Kreuzung links",
+        "an der ersten Kreuzung rechts",
+        "am Platz links"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was ist gegenüber der Post?",
+       "optionen": [
+        "eine Bäckerei",
+        "eine Bank",
+        "ein Park"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d2",
+   "titel": "Dialog: Beim Arzt",
+   "vorschau": "در مطب",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Leila ist erkältet und geht zur Ärztin.</p><p><span class='fa'>مطب</span> – Arztpraxis · <span class='fa'>سرما خوردن</span> – sich erkälten</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "دکتر: بفرمایید بنشینید. چه مشکلی دارید؟",
+       "tr": "befarmāyīd beneschīnīd. tsche moschkelī dārīd?",
+       "de": "Bitte setzen Sie sich. Was fehlt Ihnen?"
+      },
+      {
+       "fa": "لیلا: از دیروز گلویم درد می‌کند و کمی تب دارم.",
+       "tr": "az dīrūz galūyam dard mīkonad o kamī tab dāram.",
+       "de": "Seit gestern tut mein Hals weh und ich habe etwas Fieber."
+      },
+      {
+       "fa": "دکتر: لطفا دهانتان را باز کنید... بله، گلویتان قرمز است.",
+       "tr": "lotfan dahānetān rā bāz konīd... bale, galūyetān ghermez ast.",
+       "de": "Bitte öffnen Sie den Mund … Ja, Ihr Hals ist rot."
+      },
+      {
+       "fa": "لیلا: خیلی بد است؟",
+       "tr": "cheylī bad ast?",
+       "de": "Ist es schlimm?"
+      },
+      {
+       "fa": "دکتر: نه، نگران نباشید. سرما خورده‌اید.",
+       "tr": "na, negarān nabāschīd. sarmā chorde-īd.",
+       "de": "Nein, keine Sorge. Sie haben sich erkältet."
+      },
+      {
+       "fa": "دکتر: این قرص‌ها را روزی دو بار بخورید و زیاد چای و آب بنوشید.",
+       "tr": "īn ghorshā rā rūzī do bār bechorīd o ziyād tschāy o āb benūschīd.",
+       "de": "Nehmen Sie diese Tabletten zweimal am Tag und trinken Sie viel Tee und Wasser."
+      },
+      {
+       "fa": "لیلا: می‌توانم سر کار بروم؟",
+       "tr": "mītawānam sar-e kār beravam?",
+       "de": "Kann ich zur Arbeit gehen?"
+      },
+      {
+       "fa": "دکتر: نه، سه روز در خانه استراحت کنید. زود خوب شوید!",
+       "tr": "na, se rūz dar chāne esterāhat konīd. zūd chūb schawīd!",
+       "de": "Nein, ruhen Sie sich drei Tage zu Hause aus. Gute Besserung!"
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "دکتر: بفرمایید بنشینید. چه مشکلی دارید؟",
+       "tr": "befarmāyīd beneschīnīd. tsche moschkelī dārīd?",
+       "de": "Bitte setzen Sie sich. Was fehlt Ihnen?"
+      },
+      {
+       "fa": "لیلا: از دیروز گلویم درد می‌کند و کمی تب دارم.",
+       "tr": "az dīrūz galūyam dard mīkonad o kamī tab dāram.",
+       "de": "Seit gestern tut mein Hals weh und ich habe etwas Fieber."
+      },
+      {
+       "fa": "دکتر: لطفا دهانتان را باز کنید... بله، گلویتان قرمز است.",
+       "tr": "lotfan dahānetān rā bāz konīd... bale, galūyetān ghermez ast.",
+       "de": "Bitte öffnen Sie den Mund … Ja, Ihr Hals ist rot."
+      },
+      {
+       "fa": "لیلا: خیلی بد است؟",
+       "tr": "cheylī bad ast?",
+       "de": "Ist es schlimm?"
+      },
+      {
+       "fa": "دکتر: نه، نگران نباشید. سرما خورده‌اید.",
+       "tr": "na, negarān nabāschīd. sarmā chorde-īd.",
+       "de": "Nein, keine Sorge. Sie haben sich erkältet."
+      },
+      {
+       "fa": "دکتر: این قرص‌ها را روزی دو بار بخورید و زیاد چای و آب بنوشید.",
+       "tr": "īn ghorshā rā rūzī do bār bechorīd o ziyād tschāy o āb benūschīd.",
+       "de": "Nehmen Sie diese Tabletten zweimal am Tag und trinken Sie viel Tee und Wasser."
+      },
+      {
+       "fa": "لیلا: می‌توانم سر کار بروم؟",
+       "tr": "mītawānam sar-e kār beravam?",
+       "de": "Kann ich zur Arbeit gehen?"
+      },
+      {
+       "fa": "دکتر: نه، سه روز در خانه استراحت کنید. زود خوب شوید!",
+       "tr": "na, se rūz dar chāne esterāhat konīd. zūd chūb schawīd!",
+       "de": "Nein, ruhen Sie sich drei Tage zu Hause aus. Gute Besserung!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Was hat Leila?",
+       "optionen": [
+        "Halsschmerzen und etwas Fieber",
+        "Kopfschmerzen",
+        "Bauchschmerzen"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie oft soll sie die Tabletten nehmen?",
+       "optionen": [
+        "zweimal am Tag",
+        "dreimal am Tag",
+        "einmal am Tag"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie lange soll sie zu Hause bleiben?",
+       "optionen": [
+        "drei Tage",
+        "eine Woche",
+        "einen Tag"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

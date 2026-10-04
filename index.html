@@ -47,13 +47,17 @@
     </div>
   </section>
 
-  <a href="wortschatz.html" class="karte" id="wsLink" style="display:flex;gap:14px;align-items:center;text-decoration:none;color:inherit;margin-top:14px;border-left:6px solid var(--tuerkis)">
-    <span style="font-size:2rem">📚</span>
-    <span style="flex:1"><b style="font-size:1.05rem">Wortschatz-Trainer</b><br><span class="klein muted">Alle Wörter aus deinen Lektionen – mit Paaren, Memory, Blitzlesen und Wortliste. Wächst mit jeder Lektion.</span></span>
-    <span class="fa" style="font-size:1.4rem;color:var(--lapis);font-weight:800">واژه‌ها</span>
-  </a>
+  <div class="bereiche" id="bereiche"></div>
 
-  <div class="pfad" id="pfad"></div>
+  <div id="bereichInhalt" class="versteckt">
+    <div class="bereich-kopf"><div><div class="klein muted" id="bKlein"></div><h2 id="bTitel"></h2></div><span class="fa" id="bFa"></span></div>
+    <a href="wortschatz.html" class="karte" id="wsLink" style="display:flex;gap:14px;align-items:center;text-decoration:none;color:inherit;margin-top:6px">
+      <span style="font-size:1.6rem">📚</span>
+      <span style="flex:1"><b>Wortschatz-Trainer</b><br><span class="klein muted">Alle Wörter aus deinen Lektionen – Paare, Memory, Blitzlesen, Wortliste.</span></span>
+      <span class="fa" style="font-size:1.3rem;color:var(--lapis);font-weight:800">واژه‌ها</span>
+    </a>
+    <div class="pfad" id="pfad"></div>
+  </div>
 
   <p class="klein muted" style="text-align:center;margin-bottom:40px"><a href="konsole.html" style="color:var(--tinte2)">Lehrkraft</a></p>
 </main>
@@ -63,7 +67,7 @@
 <script src="assets/core.js"></script>
 <script>
 (function(){
-  const F = window.FARSI, { $, esc } = F;
+  const F = window.FARSI, { $, $$, esc } = F;
   let INDEX = null;
   const GAST_KEY = "farsi_gast_v1";
   const istGast = () => { try { return localStorage.getItem(GAST_KEY) === "1"; } catch(e){ return false; } };
@@ -85,25 +89,70 @@
     await zeichnePfad();
   }
 
+  const B_KEY = "farsi_bereich_v1";
+  const merkB = v => { try { v ? localStorage.setItem(B_KEY, v) : localStorage.removeItem(B_KEY); } catch(e){} };
+  const holB = () => { try { return localStorage.getItem(B_KEY); } catch(e){ return null; } };
+  let FREI = {}, FORT = {}, ZAHLEN = {};
+  const BEREICHE_STD = [{ id: "a", titel: "Anfänger", untertitel: "Persisch I", fa: "مُقَدَّماتی", icon: "🌱" }];
+
   async function zeichnePfad(){
     const pfad = $("#pfad");
     if (!INDEX) {
       try { INDEX = await F.ladeJSON("lektionen/index.json"); }
-      catch(e){ pfad.innerHTML = `<div class="karte">Die Lektionsliste konnte nicht geladen werden.${location.protocol==="file:"?" Die Seite läuft nur über GitHub Pages oder einen Webserver.":""}</div>`; return; }
+      catch(e){ $("#bereiche").innerHTML = `<div class="karte">Die Lektionsliste konnte nicht geladen werden.${location.protocol==="file:"?" Die Seite läuft nur über GitHub Pages oder einen Webserver.":""}</div>`; return; }
+      if (!INDEX.bereiche || !INDEX.bereiche.length) INDEX.bereiche = BEREICHE_STD;
     }
-    pfad.innerHTML = INDEX.lektionen.map(l => `<div class="station-lek zu"><div class="nr">${l.nummer}</div><div><h3>${esc(l.titel)}</h3><div class="muted klein">lädt …</div></div></div>`).join("");
-    const [frei, fort] = await Promise.all([F.ladeFreigaben(), F.ladeAlleFortschritte()]);
-    const zahlen = await Promise.all(INDEX.lektionen.map(async l => {
-      if (!l.datei) return [];
-      try { const d = await F.ladeLektion(l); return d.stationen; } catch(e){ return []; }
+    [FREI, FORT] = await Promise.all([F.ladeFreigaben(), F.ladeAlleFortschritte()]);
+    zeichneBereiche();
+    const h = (location.hash.match(/b=([\w-]+)/) || [])[1];
+    const wahl = h || holB();
+    if (wahl && INDEX.bereiche.some(b => b.id === wahl)) await zeigeBereich(wahl);
+    else $("#bereichInhalt").classList.add("versteckt");
+  }
+
+  const lekVon = b => INDEX.lektionen.filter(l => (l.bereich || INDEX.bereiche[0].id) === b.id);
+
+  function zeichneBereiche(aktiv){
+    $("#bereiche").innerHTML = INDEX.bereiche.map(b => {
+      const offen = F.istBereichOffen(b, FREI);
+      const ls = lekVon(b).filter(l => l.datei);
+      const auf = ls.filter(l => F.istOffen(l, FREI, INDEX, FORT)).length;
+      const info = !ls.length ? "in Vorbereitung" : !offen ? "🔒 noch gesperrt" : `${ls.length} ${ls.length === 1 ? "Lektion" : "Lektionen"}${auf < ls.length ? ` · ${auf} offen` : ""}`;
+      return `<button class="bereich ${b.id === aktiv ? "an" : ""} ${offen && ls.length ? "" : "zu"}" data-b="${esc(b.id)}">
+        <span class="b-icon">${esc(b.icon || "📘")}</span>
+        <span class="b-text"><b>${esc(b.titel)}</b>${b.untertitel ? `<span class="klein muted">${esc(b.untertitel)}</span>` : ""}<span class="klein b-info">${info}</span></span>
+        <span class="fa b-fa">${esc(b.fa || "")}</span></button>`;
+    }).join("");
+    $$(".bereich", $("#bereiche")).forEach(x => x.onclick = () => zeigeBereich(x.dataset.b, true));
+  }
+
+  async function zeigeBereich(bid, scroll){
+    const b = INDEX.bereiche.find(x => x.id === bid); if (!b) return;
+    merkB(bid); history.replaceState(null, "", location.pathname + "#b=" + bid);
+    zeichneBereiche(bid);
+    $("#bereichInhalt").classList.remove("versteckt");
+    $("#bTitel").textContent = b.titel; $("#bKlein").textContent = b.untertitel || ""; $("#bFa").textContent = b.fa || "";
+    const pfad = $("#pfad");
+    const ls = lekVon(b);
+    if (!F.istBereichOffen(b, FREI)) { pfad.innerHTML = `<div class="karte muted">🔒 Dieser Bereich ist für deine Klasse noch nicht freigeschaltet.</div>`; $("#wsLink").style.display = "none"; return; }
+    if (!ls.length) { pfad.innerHTML = `<div class="karte muted">Die Lektionen für diesen Bereich sind in Vorbereitung.</div>`; $("#wsLink").style.display = "none"; return; }
+    $("#wsLink").style.display = "flex";
+    pfad.innerHTML = ls.map(l => `<div class="station-lek zu"><div class="nr">${l.nummer}</div><div><h3>${esc(l.titel)}</h3><div class="muted klein">lädt …</div></div></div>`).join("");
+    await Promise.all(ls.map(async l => {
+      if (ZAHLEN[l.id] || !l.datei) return;
+      try { ZAHLEN[l.id] = (await F.ladeLektion(l)).stationen; } catch(e){ ZAHLEN[l.id] = []; }
     }));
-    pfad.innerHTML = INDEX.lektionen.map((l, i) => {
-      const offen = l.datei && F.istOffen(l, frei);
-      const f = fort[l.id] || {};
-      const st = zahlen[i] || [], haupt = st.filter(s => !s.zusatz), zus = st.filter(s => s.zusatz);
+    pfad.innerHTML = ls.map(l => {
+      const grund = l.datei ? F.sperrGrund(l, FREI, INDEX, FORT) : "bald";
+      const offen = !grund;
+      const test = l.testStationen ? F.testStand(l, FORT) : null;
+      const vt = l.voraussetzung ? INDEX.lektionen.find(x => x.id === l.voraussetzung) : null;
+      const sperrText = grund === "test" && vt ? `🔒 öffnet sich, wenn du den Test bestehst (${F.testStand(vt, FORT).prozent} % von mind. ${F.testStand(vt, FORT).grenze} %)` : grund === "bald" ? "in Vorbereitung" : "🔒 noch gesperrt";
+      const f = FORT[l.id] || {};
+      const st = ZAHLEN[l.id] || [], haupt = st.filter(s => !s.zusatz), zus = st.filter(s => s.zusatz);
       const erledigt = haupt.filter(s => f[s.id]).length, gesamt = haupt.length, zErl = zus.filter(s => f[s.id]).length;
       const pct = gesamt ? Math.round(100 * Math.min(erledigt, gesamt) / gesamt) : 0;
-      const fertig = gesamt && erledigt >= gesamt;
+      const fertig = l.testStationen ? F.testStand(l, FORT).bestanden : gesamt && erledigt >= gesamt;
       const inhalt = `<div class="nr">${fertig ? "✓" : l.nummer}</div>
         <div style="flex:1;min-width:0">
           <div style="display:flex;justify-content:space-between;gap:8px;align-items:baseline;flex-wrap:wrap">
@@ -111,13 +160,15 @@
           </div>
           <div class="muted klein">${esc(l.untertitel || "")}</div>
           ${offen ? `<div class="leiste"><i style="width:${pct}%"></i></div>
-            <div class="klein muted" style="margin-top:4px">${erledigt} von ${gesamt} Stationen${zus.length ? ` · + ${zus.length} Texte & Übungen${zErl ? ` (${zErl} erledigt)` : ""}` : ""}</div>`
-            : `<div style="margin-top:6px"><span class="chip">${l.datei ? "🔒 noch gesperrt" : "in Vorbereitung"}</span></div>`}
+            <div class="klein muted" style="margin-top:4px">${test ? `${test.erledigt} von ${test.gesamt} Abschnitten · ${test.m ? test.prozent + " %" : "–"} · ${test.bestanden ? "<b style='color:var(--gruen)'>✓ bestanden</b>" : `bestehen ab ${test.grenze} %`}`
+              : `${erledigt} von ${gesamt} Stationen${zus.length ? ` · + ${zus.length} Texte & Übungen${zErl ? ` (${zErl} erledigt)` : ""}` : ""}`}</div>`
+            : `<div style="margin-top:6px"><span class="chip">${sperrText}</span></div>`}
         </div>`;
       return offen
         ? `<a class="station-lek ${fertig ? "fertig" : ""}" href="lektion.html?id=${encodeURIComponent(l.id)}">${inhalt}</a>`
         : `<div class="station-lek zu">${inhalt}</div>`;
     }).join("");
+    if (scroll) $("#bereichInhalt").scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
   $("#loginForm").addEventListener("submit", async e => {

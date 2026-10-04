@@ -1,0 +1,181 @@
+{
+ "id": "ug",
+ "art": "umgangssprache",
+ "titel": "Umgangssprache: So spricht man im Alltag",
+ "beschreibung": "Freiwilliger Extra-Teil: wollen und können im Gespräch (می‌خوام، می‌تونَم).",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "So spricht man: wollen & können",
+   "vorschau": "می‌خوام · می‌تونَم",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Schrift ≠ Gespräch",
+     "text": "<ul><li><span class='fa'>می‌خواهَم → می‌خوام</span> <i>mīchām</i> (das h fällt weg)</li><li><span class='fa'>می‌تَوانَم → می‌تونَم</span> <i>mītūnam</i> (ān → ūn)</li><li><span class='fa'>بِرَوَم → بِرَم</span>, <span class='fa'>بیایی → بیای</span>, <span class='fa'>بِخوانَم → بُخونَم</span></li><li><span class='fa'>چه کار → چیکار</span> <i>tschīkār</i></li><li><span class='fa'>ای بابا!</span> – ach komm! / na so was!</li></ul>",
+     "stil": "merke"
+    },
+    {
+     "typ": "paare",
+     "links": "x",
+     "paare": [
+      {
+       "fa": "می‌خواهَم بِرَوَم",
+       "tr": "mīchāham beravam",
+       "de": "ich will gehen",
+       "x": "می‌خوام بِرَم"
+      },
+      {
+       "fa": "می‌تَوانی بیایی؟",
+       "tr": "mītawānī biyāyī?",
+       "de": "kannst du kommen?",
+       "x": "می‌تونی بیای؟"
+      },
+      {
+       "fa": "بیا بِرَویم!",
+       "tr": "biyā berawīm!",
+       "de": "lass uns gehen!",
+       "x": "بیا بِریم!"
+      },
+      {
+       "fa": "چه کار کُنیم؟",
+       "tr": "tsche kār konīm?",
+       "de": "was sollen wir machen?",
+       "x": "چیکار کُنیم؟"
+      }
+     ],
+     "titel": "Schrift ↔ Gespräch"
+    },
+    {
+     "typ": "sortieren",
+     "titel": "Schrift oder Gespräch?",
+     "frage": "Schriftsprache oder Umgangssprache?",
+     "kategorien": [
+      "✍️ Schriftsprache",
+      "🗣️ Umgangssprache"
+     ],
+     "items": [
+      {
+       "fa": "می‌خواهَم بِرَوَم",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "می‌تَوانی بیایی؟",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "بیا بِرَویم!",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "چه کار کُنیم؟",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "می‌خوام بِرَم",
+       "k": 1,
+       "say": false,
+       "e": "<i>mīchām beram</i> – geschrieben: <span class='fa'>می‌خواهَم بِرَوَم</span>"
+      },
+      {
+       "fa": "می‌تونی بیای؟",
+       "k": 1,
+       "say": false,
+       "e": "<i>mītūnī biyāy?</i> – geschrieben: <span class='fa'>می‌تَوانی بیایی؟</span>"
+      },
+      {
+       "fa": "بیا بِریم!",
+       "k": 1,
+       "say": false,
+       "e": "<i>biyā berīm!</i> – geschrieben: <span class='fa'>بیا بِرَویم!</span>"
+      },
+      {
+       "fa": "چیکار کُنیم؟",
+       "k": 1,
+       "say": false,
+       "e": "<i>tschīkār konīm?</i> – geschrieben: <span class='fa'>چه کار کُنیم؟</span>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Pläne für heute Abend",
+   "vorschau": "بیا بِریم!",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Am Telefon",
+     "text": "Umgangssprache! Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "اِمشَب چیکار کُنیم؟",
+       "tr": "emschab tschīkār konīm?",
+       "de": "Was machen wir heute Abend?"
+      },
+      {
+       "fa": "بیا بِریم سینِما!",
+       "tr": "biyā berīm sīnemā!",
+       "de": "Lass uns ins Kino gehen!"
+      },
+      {
+       "fa": "نِمی‌تونَم، باید دَرس بُخونَم.",
+       "tr": "nemītūnam, bāyad dars bochūnam.",
+       "de": "Ich kann nicht, ich muss lernen."
+      },
+      {
+       "fa": "ای بابا! فَردا چی؟",
+       "tr": "ey bābā! fardā tschī?",
+       "de": "Ach komm! Und morgen?"
+      },
+      {
+       "fa": "فَردا شاید بِتونَم. بِهِت زَنگ می‌زَنَم.",
+       "tr": "fardā schāyad betūnam. behet zang mīzanam.",
+       "de": "Morgen kann ich vielleicht. Ich ruf dich an."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Verstanden?",
+     "fragen": [
+      {
+       "frage": "Was schlägt die erste Person vor?",
+       "optionen": [
+        "ins Kino zu gehen",
+        "zu lernen",
+        "zu kochen"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Warum kann die andere Person nicht?",
+       "optionen": [
+        "Sie muss lernen.",
+        "Sie ist krank.",
+        "Sie hat kein Geld."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "<span class='fa'>نِمی‌تونَم</span> in der Schriftsprache:",
+       "optionen": [
+        "نمی‌توانم",
+        "نمی‌خواهم",
+        "نباید"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

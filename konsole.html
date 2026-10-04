@@ -98,7 +98,7 @@
       <button class="tab" data-tab="tn">👥 Teilnehmende</button>
       <button class="tab" data-tab="fort">📊 Fortschritt</button>
       <button class="tab" data-tab="stat">📈 Statistik</button>
-      <button class="tab" data-tab="frei">🔓 Lektionen</button>
+      <button class="tab" data-tab="frei">🔓 Freigaben</button>
       <button class="tab" data-tab="backup">💾 Backup</button>
     </div>
 
@@ -178,8 +178,8 @@
     <!-- LEKTIONEN / FREIGABEN -->
     <div data-panel="frei" class="versteckt">
       <div class="karte">
-        <h3>Welche Lektion ist für welche Klasse offen?</h3>
-        <p class="klein muted" style="margin-top:0">„Standard“ folgt <code>lektionen/index.json</code>. Lektionen ohne Datei sind „in Vorbereitung“.</p>
+        <h3>Welche Bereiche und Lektionen sind für welche Klasse offen?</h3>
+        <p class="klein muted" style="margin-top:0">Die <b>fett</b> gedruckte Zeile schaltet den <b>ganzen Bereich</b> (Anfänger, Fortgeschritten 1/2, Konversation). Ist ein Bereich gesperrt, sind alle seine Lektionen zu – egal, was darunter steht. „Standard“ folgt <code>lektionen/index.json</code>.</p>
         <div class="tabelle-scroll"><table class="t" id="freiTabelle"></table></div>
       </div>
     </div>
@@ -608,20 +608,26 @@
   /* ---------- FREIGABEN ---------- */
   function zeichneFrei() {
     const kl = klassenListe(), tab = $("#freiTabelle");
-    tab.innerHTML = `<tr><th>Lektion</th><th>Stationen</th>${kl.map(k => `<th>${esc(k.name)}</th>`).join("")}</tr>` +
-      INDEX.lektionen.map(l => `<tr><td><b>${l.nummer}. ${esc(l.titel)}</b><br><span class="mini">Standard: ${l.datei ? (l.standard === "offen" ? "offen" : "gesperrt") : "in Vorbereitung"}</span></td>
-        <td class="mini">${LEKDATEN[l.id] ? pflicht(l).length + (LEKDATEN[l.id].pakete.length ? ` + ${LEKDATEN[l.id].stationen.length - pflicht(l).length} Zusatz` : "") : "–"}</td>
-        ${kl.map(k => {
-          const v = (D.freigabe[k.id] || {})[l.id];
-          const wert = v === true ? "an" : v === false ? "aus" : "std";
-          return `<td><select class="feld" style="padding:4px 8px;width:auto" data-k="${k.id}" data-l="${l.id}" ${l.datei ? "" : "disabled"}>
+    const bs = (INDEX.bereiche && INDEX.bereiche.length) ? INDEX.bereiche : [{ id: "a", titel: "Lektionen" }];
+    const sel = (k, key, wert, dis, istB) => `<select class="feld" style="padding:4px 8px;width:auto${istB ? ";font-weight:700" : ""}" data-k="${k.id}" data-l="${key}" ${dis ? "disabled" : ""}>
             <option value="std" ${wert === "std" ? "selected" : ""}>Standard</option>
             <option value="an" ${wert === "an" ? "selected" : ""}>🔓 offen</option>
-            <option value="aus" ${wert === "aus" ? "selected" : ""}>🔒 gesperrt</option></select></td>`;
-        }).join("")}</tr>`).join("");
+            <option value="aus" ${wert === "aus" ? "selected" : ""}>🔒 gesperrt</option></select>`;
+    const wertVon = v => v === true ? "an" : v === false ? "aus" : "std";
+    let html = `<tr><th>Bereich / Lektion</th><th>Stationen</th>${kl.map(k => `<th>${esc(k.name)}</th>`).join("")}</tr>`;
+    bs.forEach(b => {
+      const ls = INDEX.lektionen.filter(l => (l.bereich || bs[0].id) === b.id);
+      html += `<tr style="background:var(--papier2)"><td><b>${esc(b.icon || "")} ${esc(b.titel)}</b>${b.untertitel ? ` <span class="mini">· ${esc(b.untertitel)}</span>` : ""}<br><span class="mini">ganzer Bereich · Standard: ${b.standard === "gesperrt" ? "gesperrt" : "offen"} · ${ls.length} Lektionen</span></td><td></td>
+        ${kl.map(k => `<td>${sel(k, "_b_" + b.id, wertVon((D.freigabe[k.id] || {})["_b_" + b.id]), false, true)}</td>`).join("")}</tr>`;
+      if (!ls.length) html += `<tr><td colspan="${2 + kl.length}" class="mini muted" style="padding-left:24px">noch keine Lektionen</td></tr>`;
+      html += ls.map(l => `<tr><td style="padding-left:24px">${l.nummer}. ${esc(l.titel)}<br><span class="mini">Standard: ${l.datei ? (l.standard === "offen" ? "offen" : "gesperrt") : "in Vorbereitung"}</span></td>
+        <td class="mini">${LEKDATEN[l.id] ? pflicht(l).length + (LEKDATEN[l.id].pakete.length ? ` + ${LEKDATEN[l.id].stationen.length - pflicht(l).length} Zusatz` : "") : "–"}</td>
+        ${kl.map(k => `<td>${sel(k, l.id, wertVon((D.freigabe[k.id] || {})[l.id]), !l.datei)}</td>`).join("")}</tr>`).join("");
+    });
+    tab.innerHTML = html;
     $$("select[data-l]", tab).forEach(s => s.onchange = () => {
       const v = s.value === "an" ? true : s.value === "aus" ? false : null;
-      schreib(F.ref(`freigabe/${s.dataset.k}/${s.dataset.l}`).set(v), "Freigabe gespeichert.");
+      schreib(F.ref(`freigabe/${s.dataset.k}/${s.dataset.l}`).set(v), s.dataset.l.startsWith("_b_") ? "Bereich gespeichert." : "Freigabe gespeichert.");
     });
   }
 

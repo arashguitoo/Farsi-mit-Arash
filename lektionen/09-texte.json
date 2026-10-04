@@ -1,0 +1,821 @@
+{
+ "id": "tx",
+ "art": "texte",
+ "titel": "Texte & Dialoge",
+ "beschreibung": "Lesetexte mit Fragen und Dialoge zum Ordnen.",
+ "stationen": [
+  {
+   "id": "t1",
+   "titel": "Kurztext: Lenas neue Wohnung",
+   "vorschau": "آپارتِمانِ جَدیدِ لِنا",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>شِمال</span> <i>schemāl</i> – Norden · <span class='fa'>سِوُّم</span> <i>sewwom</i> – dritte/r · <span class='fa'>میلیون</span> <i>milyon</i> – Million · <span class='fa'>هَمسایه‌ها</span> – die Nachbarn</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Kurztext: Lenas neue Wohnung",
+     "text": "Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "لِنا دانِشجویِ آلمانی اَست و یِک سال دَر تِهران زِندِگی می‌کُنَد.",
+       "tr": "lenā dāneschdschū-ye ālmānī ast o yek sāl dar tehrān zendegī mīkonad.",
+       "de": "Lena ist eine deutsche Studentin und lebt ein Jahr in Teheran."
+      },
+      {
+       "fa": "او یِک آپارتِمانِ کوچَک دَر شِمالِ شَهر دارَد.",
+       "tr": "ū yek āpārtemān-e kūtschak dar schemāl-e schahr dārad.",
+       "de": "Sie hat eine kleine Wohnung im Norden der Stadt."
+      },
+      {
+       "fa": "آپارتِمان دَر طَبَقه‌ی سِوُّم اَست، وَلی آسانسور نَدارَد.",
+       "tr": "āpārtemān dar tabaghe-ye sewwom ast, walī āsānsor nadārad.",
+       "de": "Die Wohnung ist im dritten Stock, aber sie hat keinen Aufzug."
+      },
+      {
+       "fa": "آپارتِمان یِک اُتاقِ خواب، یِک آشپَزخانه‌ی کوچَک و یِک حَمّام دارَد.",
+       "tr": "āpārtemān yek otāgh-e chāb, yek āschpazchāne-ye kūtschak o yek hammām dārad.",
+       "de": "Die Wohnung hat ein Schlafzimmer, eine kleine Küche und ein Bad."
+      },
+      {
+       "fa": "بالکُنِ آپارتِمان خِیلی قَشَنگ اَست.",
+       "tr": "bālkon-e āpārtemān cheylī ghaschang ast.",
+       "de": "Der Balkon der Wohnung ist sehr hübsch."
+      },
+      {
+       "fa": "کِرایه ماهی بیست میلیون تومان اَست.",
+       "tr": "kerāye māhī bīst milyon tomān ast.",
+       "de": "Die Miete beträgt zwanzig Millionen Toman im Monat."
+      },
+      {
+       "fa": "مَحَلّه ساکِت اَست و هَمسایه‌ها مِهرَبان هَستَند.",
+       "tr": "mahalle sāket ast o hamsāyehā mehrabān hastand.",
+       "de": "Das Viertel ist ruhig und die Nachbarn sind freundlich."
+      },
+      {
+       "fa": "نَزدیکِ خانِه یِک نانوایی و یِک سوپِرمارکِت هَست.",
+       "tr": "nazdīk-e chāne yek nānwāyī o yek sūpermārket hast.",
+       "de": "In der Nähe des Hauses gibt es eine Bäckerei und einen Supermarkt."
+      },
+      {
+       "fa": "لِنا با مِترو بِه دانِشگاه می‌رَوَد. راه نیم ساعَت طول می‌کِشَد.",
+       "tr": "lenā bā metro be dāneschgāh mīrawad. rāh nīm sāʿat tūl mīkeschad.",
+       "de": "Lena fährt mit der U-Bahn zur Uni. Der Weg dauert eine halbe Stunde."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "لِنا اَهلِ ایران اَست.",
+       "fest": true,
+       "erkl": "Sie ist <b>Deutsche</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "آپارتِمان آسانسور دارَد.",
+       "fest": true,
+       "erkl": "Sie hat <b>keinen</b> Aufzug."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "مَحَلّه ساکِت اَست.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "نَزدیکِ خانِه یِک نانوایی هَست.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "لِنا با اُتوبوس بِه دانِشگاه می‌رَوَد.",
+       "fest": true,
+       "erkl": "Sie fährt mit der <b>U-Bahn</b>."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "In welchem Stock ist die Wohnung?",
+       "optionen": [
+        "im dritten",
+        "im ersten",
+        "im fünften"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie viele Schlafzimmer hat die Wohnung?",
+       "optionen": [
+        "eins",
+        "zwei",
+        "drei"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was ist sehr hübsch?",
+       "optionen": [
+        "der Balkon",
+        "die Küche",
+        "das Bad"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie lange dauert der Weg zur Uni?",
+       "optionen": [
+        "eine halbe Stunde",
+        "zehn Minuten",
+        "eine Stunde"
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "او یِک آپارتِمانِ کوچَک دَر شِمالِ شَهر دارَد.",
+       "tr": "ū yek āpārtemān-e kūtschak dar schemāl-e schahr dārad.",
+       "de": "Sie hat eine kleine Wohnung im Norden der Stadt."
+      },
+      {
+       "fa": "آپارتِمان دَر طَبَقه‌ی سِوُّم اَست، وَلی آسانسور نَدارَد.",
+       "tr": "āpārtemān dar tabaghe-ye sewwom ast, walī āsānsor nadārad.",
+       "de": "Die Wohnung ist im dritten Stock, aber sie hat keinen Aufzug."
+      },
+      {
+       "fa": "آپارتِمان یِک اُتاقِ خواب، یِک آشپَزخانه‌ی کوچَک و یِک حَمّام دارَد.",
+       "tr": "āpārtemān yek otāgh-e chāb, yek āschpazchāne-ye kūtschak o yek hammām dārad.",
+       "de": "Die Wohnung hat ein Schlafzimmer, eine kleine Küche und ein Bad."
+      },
+      {
+       "fa": "بالکُنِ آپارتِمان خِیلی قَشَنگ اَست.",
+       "tr": "bālkon-e āpārtemān cheylī ghaschang ast.",
+       "de": "Der Balkon der Wohnung ist sehr hübsch."
+      },
+      {
+       "fa": "کِرایه ماهی بیست میلیون تومان اَست.",
+       "tr": "kerāye māhī bīst milyon tomān ast.",
+       "de": "Die Miete beträgt zwanzig Millionen Toman im Monat."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t2",
+   "titel": "Text: Wohnen in Teheran",
+   "vorschau": "زِندِگی در تِهران",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>پایتَخت</span> <i>pāytacht</i> – Hauptstadt · <span class='fa'>حُدودِ</span> <i>hodūd-e</i> – etwa · <span class='fa'>بیشتَرِ</span> – die meisten · <span class='fa'>جُنوب</span> <i>dschonūb</i> – Süden · <span class='fa'>ـتَر</span> – -er (billiger, voller) · <span class='fa'>کِرایه کَردَن</span> – mieten · <span class='fa'>تِرافیک</span> – Verkehr · <span class='fa'>مَعروف</span> – berühmt · <span class='fa'>بَرای هَمین</span> – deshalb · <span class='fa'>سَرِ کار</span> – zur Arbeit · <span class='fa'>سَریع</span> – schnell · <span class='fa'>پُر</span> – voll</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Text: Wohnen in Teheran",
+     "text": "Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "تِهران پایتَختِ ایران اَست و حُدودِ نُه میلیون نَفَر دَر آن زِندِگی می‌کُنَند.",
+       "tr": "tehrān pāytacht-e īrān ast o hodūd-e noh milyon nafar dar ān zendegī mīkonand.",
+       "de": "Teheran ist die Hauptstadt Irans, und dort leben etwa neun Millionen Menschen."
+      },
+      {
+       "fa": "بیشتَرِ مَردُم دَر آپارتِمان زِندِگی می‌کُنَند.",
+       "tr": "bīschtar-e mardom dar āpārtemān zendegī mīkonand.",
+       "de": "Die meisten Menschen wohnen in Wohnungen."
+      },
+      {
+       "fa": "دَر شِمالِ شَهر کِرایه خِیلی گِران اَست.",
+       "tr": "dar schemāl-e schahr kerāye cheylī gerān ast.",
+       "de": "Im Norden der Stadt ist die Miete sehr teuer."
+      },
+      {
+       "fa": "جُنوبِ شَهر اَرزان‌تَر اَست، وَلی شُلوغ‌تَر هَم هَست.",
+       "tr": "dschonūb-e schahr arzāntar ast, walī schologhtar ham hast.",
+       "de": "Der Süden der Stadt ist billiger, aber auch voller."
+      },
+      {
+       "fa": "خِیلی اَز جَوان‌ها با خانِواده‌شان زِندِگی می‌کُنَند.",
+       "tr": "cheylī az dschawānhā bā chānewādeschān zendegī mīkonand.",
+       "de": "Viele junge Leute wohnen bei ihrer Familie."
+      },
+      {
+       "fa": "بَعضی اَز دانِشجوها با دوستانَشان یِک آپارتِمان کِرایه می‌کُنَند.",
+       "tr": "baʿzī az dāneschdschūhā bā dūstānaschān yek āpārtemān kerāye mīkonand.",
+       "de": "Einige Studierende mieten mit ihren Freunden eine Wohnung."
+      },
+      {
+       "fa": "تِرافیکِ تِهران مَعروف اَست!",
+       "tr": "terāfīk-e tehrān maʿrūf ast!",
+       "de": "Der Verkehr in Teheran ist berühmt!"
+      },
+      {
+       "fa": "بَرای هَمین خِیلی‌ها با مِترو سَرِ کار می‌رَوَند.",
+       "tr": "barāye hamīn cheylīhā bā metro sar-e kār mīrawand.",
+       "de": "Deshalb fahren viele mit der U-Bahn zur Arbeit."
+      },
+      {
+       "fa": "مِترو اَرزان و سَریع اَست، وَلی صُبح‌ها خِیلی پُر اَست.",
+       "tr": "metro arzān o sarīʿ ast, walī sobhhā cheylī por ast.",
+       "de": "Die U-Bahn ist billig und schnell, aber morgens sehr voll."
+      },
+      {
+       "fa": "دَر هَر مَحَلّه نانوایی، سوپِرمارکِت و پارک هَست.",
+       "tr": "dar har mahalle nānwāyī, sūpermārket o pārk hast.",
+       "de": "In jedem Viertel gibt es eine Bäckerei, einen Supermarkt und einen Park."
+      },
+      {
+       "fa": "شَب‌ها پارک‌ها پُر اَز خانِواده‌ها اَست.",
+       "tr": "schabhā pārkhā por az chānewādehā ast.",
+       "de": "Abends sind die Parks voller Familien."
+      },
+      {
+       "fa": "آیا تو دوست داری دَر تِهران زِندِگی کُنی؟",
+       "tr": "āyā to dūst dārī dar tehrān zendegī konī?",
+       "de": "Würdest du gern in Teheran wohnen?"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "تِهران پایتَختِ ایران اَست.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "دَر شِمالِ شَهر کِرایه اَرزان اَست.",
+       "fest": true,
+       "erkl": "Im Norden ist die Miete <b>teuer</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "خِیلی اَز جَوان‌ها با خانِواده‌شان زِندِگی می‌کُنَند.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "مِترو صُبح‌ها خالی اَست.",
+       "fest": true,
+       "erkl": "Morgens ist sie sehr <b>voll</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "شَب‌ها پارک‌ها پُر اَز خانِواده‌ها اَست.",
+       "fest": true
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Wie viele Menschen leben etwa in Teheran?",
+       "optionen": [
+        "neun Millionen",
+        "drei Millionen",
+        "zwanzig Millionen"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wo ist die Miete billiger?",
+       "optionen": [
+        "im Süden",
+        "im Norden",
+        "im Zentrum"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Warum fahren viele mit der U-Bahn?",
+       "optionen": [
+        "wegen des Verkehrs",
+        "weil sie kein Geld haben",
+        "weil sie nah wohnen"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was gibt es in jedem Viertel?",
+       "optionen": [
+        "Bäckerei, Supermarkt, Park",
+        "eine Uni",
+        "ein Kino"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t3",
+   "titel": "Profi-Text: Eine Wohnungsanzeige",
+   "vorschau": "آگهی",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>آگهی</span> <i>āgahī</i> – Anzeige · <span class='fa'>اجاره</span> <i>edschāre</i> – Miete, Vermietung · <span class='fa'>دوم</span> – zweite/r · <span class='fa'>لطفاً</span> <i>lotfan</i> – bitte · <span class='fa'>زنگ بزنید</span> – rufen Sie an</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Profi-Text: Eine Wohnungsanzeige",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "آپارتمان برای اجاره – کیل، نزدیک دانشگاه",
+       "tr": "āpārtemān barāye edschāre – kīl, nazdīk-e dāneschgāh",
+       "de": "Wohnung zu vermieten – Kiel, nahe der Uni"
+      },
+      {
+       "fa": "دو اتاق خواب، یک پذیرایی بزرگ، آشپزخانه و حمام",
+       "tr": "do otāgh-e chāb, yek pazīrāyī-ye bozorg, āschpazchāne o hammām",
+       "de": "zwei Schlafzimmer, ein großes Wohnzimmer, Küche und Bad"
+      },
+      {
+       "fa": "طبقه‌ی دوم، با آسانسور و بالکن",
+       "tr": "tabaghe-ye dowwom, bā āsānsor o bālkon",
+       "de": "zweiter Stock, mit Aufzug und Balkon"
+      },
+      {
+       "fa": "کرایه: ماهی هشتصد و پنجاه یورو",
+       "tr": "kerāye: māhī haschtsad o pandschāh yūro",
+       "de": "Miete: 850 Euro im Monat"
+      },
+      {
+       "fa": "ایستگاه اتوبوس: پنج دقیقه پیاده",
+       "tr": "īstgāh-e otobūs: pandsch daghīghe piyāde",
+       "de": "Bushaltestelle: fünf Minuten zu Fuß"
+      },
+      {
+       "fa": "محله ساکت است و یک پارک بزرگ نزدیک خانه است.",
+       "tr": "mahalle sāket ast o yek pārk-e bozorg nazdīk-e chāne ast.",
+       "de": "Das Viertel ist ruhig und ein großer Park ist in der Nähe."
+      },
+      {
+       "fa": "برای دیدن آپارتمان، لطفا از ساعت پنج تا هفت زنگ بزنید.",
+       "tr": "barāye dīdan-e āpārtemān, lotfan az sāʿat-e pandsch tā haft zang bezanīd.",
+       "de": "Um die Wohnung zu besichtigen, rufen Sie bitte zwischen fünf und sieben an."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "آپارتمان سه اتاق خواب دارد.",
+       "fest": true,
+       "erkl": "Sie hat <b>zwei</b> Schlafzimmer."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "آپارتمان آسانسور دارد.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "کرایه ماهی هشتصد و پنجاه یورو است.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "ایستگاه اتوبوس خیلی دور است.",
+       "fest": true,
+       "erkl": "Nur fünf Minuten zu Fuß."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "In welchem Stock ist die Wohnung?",
+       "optionen": [
+        "im zweiten",
+        "im dritten",
+        "im ersten"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wann soll man anrufen?",
+       "optionen": [
+        "zwischen fünf und sieben",
+        "morgens",
+        "um zehn"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was ist in der Nähe?",
+       "optionen": [
+        "ein großer Park",
+        "ein Kino",
+        "das Meer"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d1",
+   "titel": "Dialog: Ist die Wohnung noch frei?",
+   "vorschau": "هَنوز آزاد اَست؟",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Jonas ruft wegen der Anzeige an.</p>"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "یوناس: سَلام، بِبَخشید. آپارتِمان هَنوز آزاد اَست؟",
+       "tr": "salām, bebachschīd. āpārtemān hanūz āzād ast?",
+       "de": "Hallo, Entschuldigung. Ist die Wohnung noch frei?"
+      },
+      {
+       "fa": "خانُمِ اَحمَدی: بَله، هَنوز آزاد اَست.",
+       "tr": "bale, hanūz āzād ast.",
+       "de": "Ja, sie ist noch frei."
+      },
+      {
+       "fa": "یوناس: کِرایه چِقَدر اَست؟",
+       "tr": "kerāye tscheghadr ast?",
+       "de": "Wie hoch ist die Miete?"
+      },
+      {
+       "fa": "خانُمِ اَحمَدی: ماهی هَشتصَد و پَنجاه یورو.",
+       "tr": "māhī haschtsad o pandschāh yūro.",
+       "de": "850 Euro im Monat."
+      },
+      {
+       "fa": "یوناس: آپارتِمان دَر کُدام طَبَقه اَست؟",
+       "tr": "āpārtemān dar kodām tabaghe ast?",
+       "de": "In welchem Stock ist die Wohnung?"
+      },
+      {
+       "fa": "خانُمِ اَحمَدی: طَبَقه‌ی دُوُّم. آسانسور هَم دارَد.",
+       "tr": "tabaghe-ye dowwom. āsānsor ham dārad.",
+       "de": "Im zweiten. Einen Aufzug gibt es auch."
+      },
+      {
+       "fa": "یوناس: کِی می‌تَوانَم آپارتِمان را بِبینَم؟",
+       "tr": "key mītawānam āpārtemān rā bebīnam?",
+       "de": "Wann kann ich die Wohnung ansehen?"
+      },
+      {
+       "fa": "خانُمِ اَحمَدی: فَردا ساعَتِ پَنج خوب اَست؟",
+       "tr": "fardā sāʿat-e pandsch chūb ast?",
+       "de": "Ist morgen um fünf gut?"
+      },
+      {
+       "fa": "یوناس: بَله، عالی اَست. مَمنون!",
+       "tr": "bale, ʿālī ast. mamnūn!",
+       "de": "Ja, super. Danke!"
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "یوناس: سَلام، بِبَخشید. آپارتِمان هَنوز آزاد اَست؟",
+       "tr": "salām, bebachschīd. āpārtemān hanūz āzād ast?",
+       "de": "Hallo, Entschuldigung. Ist die Wohnung noch frei?"
+      },
+      {
+       "fa": "خانُمِ اَحمَدی: بَله، هَنوز آزاد اَست.",
+       "tr": "bale, hanūz āzād ast.",
+       "de": "Ja, sie ist noch frei."
+      },
+      {
+       "fa": "یوناس: کِرایه چِقَدر اَست؟",
+       "tr": "kerāye tscheghadr ast?",
+       "de": "Wie hoch ist die Miete?"
+      },
+      {
+       "fa": "خانُمِ اَحمَدی: ماهی هَشتصَد و پَنجاه یورو.",
+       "tr": "māhī haschtsad o pandschāh yūro.",
+       "de": "850 Euro im Monat."
+      },
+      {
+       "fa": "یوناس: آپارتِمان دَر کُدام طَبَقه اَست؟",
+       "tr": "āpārtemān dar kodām tabaghe ast?",
+       "de": "In welchem Stock ist die Wohnung?"
+      },
+      {
+       "fa": "خانُمِ اَحمَدی: طَبَقه‌ی دُوُّم. آسانسور هَم دارَد.",
+       "tr": "tabaghe-ye dowwom. āsānsor ham dārad.",
+       "de": "Im zweiten. Einen Aufzug gibt es auch."
+      },
+      {
+       "fa": "یوناس: کِی می‌تَوانَم آپارتِمان را بِبینَم؟",
+       "tr": "key mītawānam āpārtemān rā bebīnam?",
+       "de": "Wann kann ich die Wohnung ansehen?"
+      },
+      {
+       "fa": "خانُمِ اَحمَدی: فَردا ساعَتِ پَنج خوب اَست؟",
+       "tr": "fardā sāʿat-e pandsch chūb ast?",
+       "de": "Ist morgen um fünf gut?"
+      },
+      {
+       "fa": "یوناس: بَله، عالی اَست. مَمنون!",
+       "tr": "bale, ʿālī ast. mamnūn!",
+       "de": "Ja, super. Danke!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Was fragt Jonas zuerst?",
+       "optionen": [
+        "ob die Wohnung noch frei ist",
+        "wie groß die Küche ist",
+        "wo die Wohnung ist"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wann sieht er die Wohnung an?",
+       "optionen": [
+        "morgen um fünf",
+        "heute um fünf",
+        "morgen um sieben"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was hat die Wohnung?",
+       "optionen": [
+        "einen Aufzug",
+        "einen Garten",
+        "zwei Bäder"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d2",
+   "titel": "Dialog: Was kostet das?",
+   "vorschau": "این چَند اَست؟",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Mina kauft in einem kleinen Laden ein.</p><p><span class='fa'>آقا</span> <i>āghā</i> – (höfliche Anrede für Männer) · <span class='fa'>فُروشَندِه</span> – Verkäufer/in · <span class='fa'>قیمَتَش</span> – sein Preis · <span class='fa'>بِفَرمایید</span> – bitte schön · <span class='fa'>چیزِ دیگَری</span> – noch etwas</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "مینا: سَلام آقا. این نان چَند اَست؟",
+       "tr": "salām āghā. īn nān tschand ast?",
+       "de": "Hallo. Was kostet dieses Brot?"
+      },
+      {
+       "fa": "فُروشَندِه: پانزدَه هِزار تومان.",
+       "tr": "pānzdah hezār tomān.",
+       "de": "Fünfzehntausend Toman."
+      },
+      {
+       "fa": "مینا: پَنیر هَم دارید؟",
+       "tr": "panīr ham dārīd?",
+       "de": "Haben Sie auch Käse?"
+      },
+      {
+       "fa": "فُروشَندِه: بَله. کُدام پَنیر را می‌خواهید؟",
+       "tr": "bale. kodām panīr rā mīchāhīd?",
+       "de": "Ja. Welchen Käse möchten Sie?"
+      },
+      {
+       "fa": "مینا: آن پَنیرِ سِفید. قیمَتَش چِقَدر اَست؟",
+       "tr": "ān panīr-e sefīd. gheymatasch tscheghadr ast?",
+       "de": "Den weißen Käse dort. Wie viel kostet er?"
+      },
+      {
+       "fa": "فُروشَندِه: صَد و بیست هِزار تومان.",
+       "tr": "sad o bīst hezār tomān.",
+       "de": "Hundertzwanzigtausend Toman."
+      },
+      {
+       "fa": "مینا: خوب اَست. چَند تا تُخم‌مُرغ هَم می‌خواهَم – شِش تا.",
+       "tr": "chūb ast. tschand tā tochm-e morgh ham mīchāham – schesch tā.",
+       "de": "Gut. Ich möchte auch ein paar Eier – sechs Stück."
+      },
+      {
+       "fa": "فُروشَندِه: بِفَرمایید. چیزِ دیگَری می‌خواهید؟",
+       "tr": "befarmāyīd. tschīz-e dīgarī mīchāhīd?",
+       "de": "Bitte schön. Möchten Sie noch etwas?"
+      },
+      {
+       "fa": "مینا: نَه، مَمنون.",
+       "tr": "na, mamnūn.",
+       "de": "Nein, danke."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "مینا: سَلام آقا. این نان چَند اَست؟",
+       "tr": "salām āghā. īn nān tschand ast?",
+       "de": "Hallo. Was kostet dieses Brot?"
+      },
+      {
+       "fa": "فُروشَندِه: پانزدَه هِزار تومان.",
+       "tr": "pānzdah hezār tomān.",
+       "de": "Fünfzehntausend Toman."
+      },
+      {
+       "fa": "مینا: پَنیر هَم دارید؟",
+       "tr": "panīr ham dārīd?",
+       "de": "Haben Sie auch Käse?"
+      },
+      {
+       "fa": "فُروشَندِه: بَله. کُدام پَنیر را می‌خواهید؟",
+       "tr": "bale. kodām panīr rā mīchāhīd?",
+       "de": "Ja. Welchen Käse möchten Sie?"
+      },
+      {
+       "fa": "مینا: آن پَنیرِ سِفید. قیمَتَش چِقَدر اَست؟",
+       "tr": "ān panīr-e sefīd. gheymatasch tscheghadr ast?",
+       "de": "Den weißen Käse dort. Wie viel kostet er?"
+      },
+      {
+       "fa": "فُروشَندِه: صَد و بیست هِزار تومان.",
+       "tr": "sad o bīst hezār tomān.",
+       "de": "Hundertzwanzigtausend Toman."
+      },
+      {
+       "fa": "مینا: خوب اَست. چَند تا تُخم‌مُرغ هَم می‌خواهَم – شِش تا.",
+       "tr": "chūb ast. tschand tā tochm-e morgh ham mīchāham – schesch tā.",
+       "de": "Gut. Ich möchte auch ein paar Eier – sechs Stück."
+      },
+      {
+       "fa": "فُروشَندِه: بِفَرمایید. چیزِ دیگَری می‌خواهید؟",
+       "tr": "befarmāyīd. tschīz-e dīgarī mīchāhīd?",
+       "de": "Bitte schön. Möchten Sie noch etwas?"
+      },
+      {
+       "fa": "مینا: نَه، مَمنون.",
+       "tr": "na, mamnūn.",
+       "de": "Nein, danke."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Was kostet das Brot?",
+       "optionen": [
+        "15 000 Toman",
+        "50 000 Toman",
+        "120 000 Toman"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Welchen Käse nimmt Mina?",
+       "optionen": [
+        "den weißen",
+        "den gelben",
+        "keinen"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie viele Eier kauft sie?",
+       "optionen": [
+        "sechs",
+        "drei",
+        "zwölf"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

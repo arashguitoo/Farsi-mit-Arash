@@ -1,0 +1,1365 @@
+{
+ "id": "z1",
+ "titel": "Trainingspaket 1",
+ "beschreibung": "Fragewörter auf Zeit, Frage & Antwort, große Zahlen, Satzbau, Wortschatz Wohnung & Stadt.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "Fragewörter-Blitz",
+   "vorschau": "کُجا کِی چِرا",
+   "karten": [
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Fragewörter",
+     "modus": "de",
+     "sekunden": 45,
+     "ziel": 10,
+     "woerter": [
+      {
+       "fa": "چه کَسی؟",
+       "a": "wer?"
+      },
+      {
+       "fa": "چه؟",
+       "a": "was?"
+      },
+      {
+       "fa": "کُجا؟",
+       "a": "wo? wohin?"
+      },
+      {
+       "fa": "اَز کُجا؟",
+       "a": "woher?"
+      },
+      {
+       "fa": "کِی؟",
+       "a": "wann?"
+      },
+      {
+       "fa": "چِرا؟",
+       "a": "warum?"
+      },
+      {
+       "fa": "چِطور؟",
+       "a": "wie?"
+      },
+      {
+       "fa": "چَند؟",
+       "a": "wie viele? (+ Einzahl)"
+      },
+      {
+       "fa": "چِقَدر؟",
+       "a": "wie viel? wie sehr?"
+      },
+      {
+       "fa": "کُدام؟",
+       "a": "welche/r/s?"
+      },
+      {
+       "fa": "آیا",
+       "a": "Fragewort für Ja/Nein-Fragen (formell)"
+      },
+      {
+       "fa": "با چه؟",
+       "a": "womit?"
+      }
+     ]
+    },
+    {
+     "typ": "memory",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "اَز کُجا؟",
+       "tr": "az kodschā?",
+       "de": "woher?",
+       "emoji": "🧭"
+      },
+      {
+       "fa": "چه کَسی؟",
+       "tr": "tsche kasī?",
+       "de": "wer?",
+       "emoji": "🙋"
+      },
+      {
+       "fa": "چه؟",
+       "tr": "tsche?",
+       "de": "was?",
+       "emoji": "❓"
+      },
+      {
+       "fa": "چِطور؟",
+       "tr": "tschetor?",
+       "de": "wie?",
+       "emoji": "🔧"
+      },
+      {
+       "fa": "کِی؟",
+       "tr": "key?",
+       "de": "wann?",
+       "emoji": "📅"
+      },
+      {
+       "fa": "چِقَدر؟",
+       "tr": "tscheghadr?",
+       "de": "wie viel? wie sehr?",
+       "emoji": "⚖️"
+      }
+     ],
+     "titel": "Memory: Fragewörter"
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Fragen verstehen",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 75,
+     "ziel": 10,
+     "woerter": [
+      {
+       "fa": "تو دانِشجو هَستی؟",
+       "a": "Bist du Student/in?"
+      },
+      {
+       "fa": "آیا شُما فارسی صُحبَت می‌کُنید؟",
+       "a": "Sprechen Sie Persisch?"
+      },
+      {
+       "fa": "این آپارتِمان آسانسور دارَد؟",
+       "a": "Hat diese Wohnung einen Aufzug?"
+      },
+      {
+       "fa": "تو قَهوِه نِمی‌نوشی؟ – چِرا، می‌نوشَم!",
+       "a": "Trinkst du keinen Kaffee? – Doch, ich trinke (welchen)!"
+      },
+      {
+       "fa": "فَردا می‌آیی یا نَه؟",
+       "a": "Kommst du morgen oder nicht?"
+      },
+      {
+       "fa": "چه کَسی اینجا زِندِگی می‌کُنَد؟",
+       "a": "Wer wohnt hier?"
+      },
+      {
+       "fa": "خانُمِ رِضایی اینجا زِندِگی می‌کُنَد.",
+       "a": "Frau Rezaei wohnt hier."
+      },
+      {
+       "fa": "تو چه می‌خوری؟",
+       "a": "Was isst du?"
+      },
+      {
+       "fa": "مَن نان و پَنیر می‌خورَم.",
+       "a": "Ich esse Brot und Käse."
+      },
+      {
+       "fa": "این کیست؟",
+       "a": "Wer ist das?"
+      },
+      {
+       "fa": "این چیست؟",
+       "a": "Was ist das?"
+      },
+      {
+       "fa": "او چه کار می‌کُنَد؟",
+       "a": "Was macht er/sie (beruflich)?"
+      },
+      {
+       "fa": "تو کُجا زِندِگی می‌کُنی؟",
+       "a": "Wo wohnst du?"
+      },
+      {
+       "fa": "مَن دَر خیابانِ اَصلی زِندِگی می‌کُنَم.",
+       "a": "Ich wohne in der Hauptstraße."
+      },
+      {
+       "fa": "کُجا می‌رَوی؟",
+       "a": "Wohin gehst du?"
+      },
+      {
+       "fa": "بِه بانک می‌رَوَم.",
+       "a": "Ich gehe zur Bank."
+      },
+      {
+       "fa": "اَز کُجا می‌آیی؟",
+       "a": "Woher kommst du (gerade)?"
+      },
+      {
+       "fa": "اَز دانِشگاه می‌آیَم.",
+       "a": "Ich komme von der Uni."
+      },
+      {
+       "fa": "نَزدیک‌تَرین داروخانِه کُجاست؟",
+       "a": "Wo ist die nächste Apotheke?"
+      },
+      {
+       "fa": "کِی بِه خانِه بَرمی‌گَردی؟",
+       "a": "Wann kommst du nach Hause zurück?"
+      },
+      {
+       "fa": "ساعَتِ هَفت بَرمی‌گَردَم.",
+       "a": "Ich komme um sieben zurück."
+      },
+      {
+       "fa": "بانک ساعَتِ چَند باز می‌شَوَد؟",
+       "a": "Um wie viel Uhr öffnet die Bank?"
+      },
+      {
+       "fa": "راه تا دانِشگاه چِقَدر طول می‌کِشَد؟",
+       "a": "Wie lange dauert der Weg zur Uni?"
+      },
+      {
+       "fa": "با دوچَرخِه دَه دَقیقه طول می‌کِشَد.",
+       "a": "Mit dem Fahrrad dauert es zehn Minuten."
+      },
+      {
+       "fa": "چِرا اینجا زِندِگی می‌کُنی؟",
+       "a": "Warum wohnst du hier?"
+      },
+      {
+       "fa": "چون مَحَلّه ساکِت اَست.",
+       "a": "Weil das Viertel ruhig ist."
+      },
+      {
+       "fa": "چِرا با اُتوبوس نِمی‌آیی؟",
+       "a": "Warum kommst du nicht mit dem Bus?"
+      },
+      {
+       "fa": "چون ایستگاه خِیلی دور اَست.",
+       "a": "Weil die Haltestelle sehr weit weg ist."
+      },
+      {
+       "fa": "حالِ شُما چِطور اَست؟",
+       "a": "Wie geht es Ihnen?"
+      },
+      {
+       "fa": "آپارتِمانِ جَدیدَت چِطور اَست؟",
+       "a": "Wie ist deine neue Wohnung?"
+      },
+      {
+       "fa": "با چه بِه دانِشگاه می‌رَوی؟",
+       "a": "Womit fährst du zur Uni?"
+      },
+      {
+       "fa": "با مِترو می‌رَوَم.",
+       "a": "Ich fahre mit der U-Bahn."
+      },
+      {
+       "fa": "مَن پیاده می‌رَوَم.",
+       "a": "Ich gehe zu Fuß."
+      },
+      {
+       "fa": "آپارتِمان چَند اُتاق دارَد؟",
+       "a": "Wie viele Zimmer hat die Wohnung?"
+      },
+      {
+       "fa": "سِه اُتاق دارَد.",
+       "a": "Sie hat drei Zimmer."
+      },
+      {
+       "fa": "کِرایه چِقَدر اَست؟",
+       "a": "Wie viel kostet die Miete?"
+      },
+      {
+       "fa": "ماهی هَفتصَد یورو.",
+       "a": "700 Euro im Monat."
+      },
+      {
+       "fa": "این نان چَند اَست؟",
+       "a": "Wie viel kostet dieses Brot?"
+      },
+      {
+       "fa": "بیست هِزار تومان.",
+       "a": "Zwanzigtausend Toman."
+      },
+      {
+       "fa": "چَند تا سیب می‌خواهی؟",
+       "a": "Wie viele Äpfel möchtest du?"
+      },
+      {
+       "fa": "کُدام اُتاق مالِ توست؟",
+       "a": "Welches Zimmer gehört dir?"
+      },
+      {
+       "fa": "اُتاقِ کوچَک مالِ مَن اَست.",
+       "a": "Das kleine Zimmer gehört mir."
+      },
+      {
+       "fa": "کُدام اُتوبوس بِه دانِشگاه می‌رَوَد؟",
+       "a": "Welcher Bus fährt zur Uni?"
+      },
+      {
+       "fa": "کُدام را می‌خواهی، این یا آن؟",
+       "a": "Welche/n willst du, diese/n oder die/den?"
+      },
+      {
+       "fa": "بِبَخشید، این آپارتِمان هَنوز آزاد اَست؟",
+       "a": "Entschuldigung, ist diese Wohnung noch frei?"
+      },
+      {
+       "fa": "آپارتِمان دَر کُدام طَبَقه اَست؟",
+       "a": "In welchem Stock ist die Wohnung?"
+      },
+      {
+       "fa": "آشپَزخانِه بُزُرگ اَست؟",
+       "a": "Ist die Küche groß?"
+      },
+      {
+       "fa": "مَحَلّه ساکِت اَست یا شُلوغ؟",
+       "a": "Ist das Viertel ruhig oder belebt?"
+      },
+      {
+       "fa": "نَزدیکِ آپارتِمان سوپِرمارکِت هَست؟",
+       "a": "Gibt es in der Nähe der Wohnung einen Supermarkt?"
+      },
+      {
+       "fa": "کِی می‌تَوانَم آپارتِمان را بِبینَم؟",
+       "a": "Wann kann ich die Wohnung ansehen?"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Frage & Antwort",
+   "vorschau": "؟ ↔ .",
+   "karten": [
+    {
+     "typ": "sortieren",
+     "titel": "Welche Frage?",
+     "frage": "Auf welche Frage passt die Antwort?",
+     "kategorien": [
+      "📍 کُجا؟",
+      "📅 کِی؟",
+      "🙋 چه کَسی؟",
+      "🚌 با چه؟"
+     ],
+     "items": [
+      {
+       "fa": "دَر خیابانِ اَصلی.",
+       "k": 0
+      },
+      {
+       "fa": "اَز دانِشگاه.",
+       "k": 0
+      },
+      {
+       "fa": "ساعَتِ هَشت.",
+       "k": 1
+      },
+      {
+       "fa": "شَنبه.",
+       "k": 1
+      },
+      {
+       "fa": "خانُمِ رِضایی.",
+       "k": 2
+      },
+      {
+       "fa": "بَرادَرَم.",
+       "k": 2
+      },
+      {
+       "fa": "با مِترو.",
+       "k": 3
+      },
+      {
+       "fa": "با تاکسی.",
+       "k": 3
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welche Frage ist das?",
+     "fragen": [
+      {
+       "frage": "„Wie ist deine neue Wohnung?“",
+       "optionen": [
+        "آپارتِمانِ جَدیدَت چِطور اَست؟",
+        "چَند تا سیب می‌خواهی؟",
+        "آپارتِمان دَر کُدام طَبَقه اَست؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Ich komme von der Uni.“",
+       "optionen": [
+        "اَز دانِشگاه می‌آیَم.",
+        "آپارتِمانِ جَدیدَت چِطور اَست؟",
+        "سِه اُتاق دارَد."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Frau Rezaei wohnt hier.“",
+       "optionen": [
+        "خانُمِ رِضایی اینجا زِندِگی می‌کُنَد.",
+        "نَزدیکِ آپارتِمان سوپِرمارکِت هَست؟",
+        "با مِترو می‌رَوَم."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Ist die Küche groß?“",
+       "optionen": [
+        "آشپَزخانِه بُزُرگ اَست؟",
+        "کُدام اُتاق مالِ توست؟",
+        "کِرایه چِقَدر اَست؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Sprechen Sie Persisch?“",
+       "optionen": [
+        "آیا شُما فارسی صُحبَت می‌کُنید؟",
+        "تو قَهوِه نِمی‌نوشی؟ – چِرا، می‌نوشَم!",
+        "این کیست؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Wann kommst du nach Hause zurück?“",
+       "optionen": [
+        "کِی بِه خانِه بَرمی‌گَردی؟",
+        "حالِ شُما چِطور اَست؟",
+        "آپارتِمان چَند اُتاق دارَد؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "titel": "Zahlen-Training",
+   "vorschau": "۱۰۰ … ۱۰۰۰۰",
+   "karten": [
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Zahlwörter bis 1000",
+     "aufgabe": "Welche Zahl?",
+     "modus": "de",
+     "sekunden": 75,
+     "ziel": 10,
+     "woerter": [
+      {
+       "fa": "شِشصَد و سی و پَنج",
+       "a": "635"
+      },
+      {
+       "fa": "پانصَد و هَشتاد و یِک",
+       "a": "581"
+      },
+      {
+       "fa": "نُهصَد و پَنجاه و سِه",
+       "a": "953"
+      },
+      {
+       "fa": "پانصَد و شَصت و سِه",
+       "a": "563"
+      },
+      {
+       "fa": "پانصَد و چِهِل و چَهار",
+       "a": "544"
+      },
+      {
+       "fa": "چَهارصَد و شَصت و نُه",
+       "a": "469"
+      },
+      {
+       "fa": "صَد و بیست و هَفت",
+       "a": "127"
+      },
+      {
+       "fa": "نُهصَد و هَفتاد و شِش",
+       "a": "976"
+      },
+      {
+       "fa": "سیصَد و بیست و پَنج",
+       "a": "325"
+      },
+      {
+       "fa": "پانصَد و بیست و هَفت",
+       "a": "527"
+      },
+      {
+       "fa": "هَشتصَد و نَوَد و دو",
+       "a": "892"
+      },
+      {
+       "fa": "هَفتصَد و بیست و سِه",
+       "a": "723"
+      },
+      {
+       "fa": "دِویست و بیست و نُه",
+       "a": "229"
+      },
+      {
+       "fa": "صَد و شَصت و سِه",
+       "a": "163"
+      },
+      {
+       "fa": "چَهارصَد و شَصت و هَفت",
+       "a": "467"
+      },
+      {
+       "fa": "صَد و سی و هَفت",
+       "a": "137"
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Tausender",
+     "aufgabe": "Welche Zahl?",
+     "modus": "de",
+     "sekunden": 60,
+     "ziel": 8,
+     "woerter": [
+      {
+       "fa": "نُه هِزار و پانصَد",
+       "a": "9500"
+      },
+      {
+       "fa": "پَنج هِزار و پانصَد",
+       "a": "5500"
+      },
+      {
+       "fa": "بیست و چَهار هِزار و پانصَد",
+       "a": "24500"
+      },
+      {
+       "fa": "بیست و هَفت هِزار",
+       "a": "27000"
+      },
+      {
+       "fa": "بیست و دو هِزار",
+       "a": "22000"
+      },
+      {
+       "fa": "یازدَه هِزار و پانصَد",
+       "a": "11500"
+      },
+      {
+       "fa": "شانزدَه هِزار",
+       "a": "16000"
+      },
+      {
+       "fa": "دَه هِزار و پانصَد",
+       "a": "10500"
+      },
+      {
+       "fa": "چَهاردَه هِزار",
+       "a": "14000"
+      },
+      {
+       "fa": "بیست و نُه هِزار",
+       "a": "29000"
+      },
+      {
+       "fa": "دو هِزار و پانصَد",
+       "a": "2500"
+      },
+      {
+       "fa": "بیست و هَشت هِزار و پانصَد",
+       "a": "28500"
+      }
+     ]
+    },
+    {
+     "typ": "memory",
+     "links": "x",
+     "paare": [
+      {
+       "fa": "صَد و نَوَد و یِک",
+       "tr": "",
+       "de": "",
+       "x": "۱۹۱"
+      },
+      {
+       "fa": "سیصَد و پَنجاه و نُه",
+       "tr": "",
+       "de": "",
+       "x": "۳۵۹"
+      },
+      {
+       "fa": "دِویست و پَنجاه و چَهار",
+       "tr": "",
+       "de": "",
+       "x": "۲۵۴"
+      },
+      {
+       "fa": "سیصَد و شَصت و هَفت",
+       "tr": "",
+       "de": "",
+       "x": "۳۶۷"
+      },
+      {
+       "fa": "هَفتصَد و یِک",
+       "tr": "",
+       "de": "",
+       "x": "۷۰۱"
+      },
+      {
+       "fa": "نُهصَد و هَفتاد و هَفت",
+       "tr": "",
+       "de": "",
+       "x": "۹۷۷"
+      }
+     ],
+     "titel": "Memory: Zahlwort ↔ Ziffer"
+    }
+   ]
+  },
+  {
+   "id": "d",
+   "titel": "Satzbau: Fragen",
+   "vorschau": "… ؟",
+   "karten": [
+    {
+     "typ": "bauen",
+     "titel": "Baue die Frage",
+     "trenner": " ",
+     "woerter": [
+      {
+       "fa": "چه کَسی اینجا زِندِگی می‌کُنَد؟",
+       "tr": "tsche kasī īndschā zendegī mīkonad?",
+       "de": "Wer wohnt hier?",
+       "emoji": "🙋",
+       "teile": [
+        "چه",
+        "کَسی",
+        "اینجا",
+        "زِندِگی",
+        "می‌کُنَد"
+       ],
+       "extra": [
+        "کِی"
+       ]
+      },
+      {
+       "fa": "تو چه می‌خوری؟",
+       "tr": "to tsche mīchorī?",
+       "de": "Was isst du?",
+       "emoji": "🍽️",
+       "teile": [
+        "تو",
+        "چه",
+        "می‌خوری"
+       ],
+       "extra": [
+        "چِرا"
+       ]
+      },
+      {
+       "fa": "با مِترو می‌رَوَم.",
+       "tr": "bā metro mīrawam.",
+       "de": "Ich fahre mit der U-Bahn.",
+       "emoji": "🚇",
+       "teile": [
+        "با",
+        "مِترو",
+        "می‌رَوَم"
+       ],
+       "extra": [
+        "چِرا"
+       ]
+      },
+      {
+       "fa": "چِرا با اُتوبوس نِمی‌آیی؟",
+       "tr": "tscherā bā otobūs nemīāyī?",
+       "de": "Warum kommst du nicht mit dem Bus?",
+       "emoji": "🚌",
+       "teile": [
+        "چِرا",
+        "با",
+        "اُتوبوس",
+        "نِمی‌آیی"
+       ],
+       "extra": [
+        "چَند"
+       ]
+      },
+      {
+       "fa": "بِه بانک می‌رَوَم.",
+       "tr": "be bānk mīrawam.",
+       "de": "Ich gehe zur Bank.",
+       "emoji": "🏦",
+       "teile": [
+        "بِه",
+        "بانک",
+        "می‌رَوَم"
+       ],
+       "extra": [
+        "چَند"
+       ]
+      },
+      {
+       "fa": "این چیست؟",
+       "tr": "īn tschīst?",
+       "de": "Was ist das?",
+       "emoji": "❓",
+       "teile": [
+        "این",
+        "چیست"
+       ],
+       "extra": [
+        "کُجا"
+       ]
+      },
+      {
+       "fa": "کُدام اُتاق مالِ توست؟",
+       "tr": "kodām otāgh māl-e tost?",
+       "de": "Welches Zimmer gehört dir?",
+       "emoji": "🚪",
+       "teile": [
+        "کُدام",
+        "اُتاق",
+        "مالِ",
+        "توست"
+       ],
+       "extra": [
+        "کُجا"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "e",
+   "titel": "Wortschatz: Wohnung",
+   "vorschau": "آپارتِمان اُتاقِ خواب",
+   "karten": [
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "بالکُن",
+       "tr": "bālkon",
+       "de": "Balkon",
+       "emoji": "🪴"
+      },
+      {
+       "fa": "اُتاقِ خواب",
+       "tr": "otāgh-e chāb",
+       "de": "Schlafzimmer",
+       "emoji": "🛏️"
+      },
+      {
+       "fa": "آسانسور",
+       "tr": "āsānsor",
+       "de": "Aufzug",
+       "emoji": "🛗"
+      },
+      {
+       "fa": "دَستشویی",
+       "tr": "dastschūyī",
+       "de": "Toilette",
+       "emoji": "🚽"
+      },
+      {
+       "fa": "هَمسایه",
+       "tr": "hamsāye",
+       "de": "Nachbar/in",
+       "emoji": "🧑‍🤝‍🧑"
+      },
+      {
+       "fa": "پَذیرایی",
+       "tr": "pazīrāyī",
+       "de": "Wohnzimmer",
+       "emoji": "🛋️"
+      }
+     ],
+     "titel": "Memory: Bild & Wort"
+    },
+    {
+     "typ": "memory",
+     "links": "tr",
+     "paare": [
+      {
+       "fa": "مَحَلّه",
+       "tr": "mahalle",
+       "de": "Viertel, Gegend",
+       "emoji": "🏘️"
+      },
+      {
+       "fa": "کِرایه",
+       "tr": "kerāye",
+       "de": "Miete",
+       "emoji": "💶"
+      },
+      {
+       "fa": "دَستشویی",
+       "tr": "dastschūyī",
+       "de": "Toilette",
+       "emoji": "🚽"
+      },
+      {
+       "fa": "حَیاط",
+       "tr": "hayāt",
+       "de": "Hof",
+       "emoji": "🌳"
+      },
+      {
+       "fa": "آشپَزخانِه",
+       "tr": "āschpazchāne",
+       "de": "Küche",
+       "emoji": "🍳"
+      },
+      {
+       "fa": "آسانسور",
+       "tr": "āsānsor",
+       "de": "Aufzug",
+       "emoji": "🛗"
+      }
+     ],
+     "titel": "Memory: Schrift & Aussprache"
+    },
+    {
+     "typ": "bauen",
+     "titel": "Schreib das Wort ab",
+     "zeigen": true,
+     "woerter": [
+      {
+       "fa": "بالکُن",
+       "tr": "bālkon",
+       "de": "Balkon",
+       "emoji": "🪴",
+       "teile": [
+        "ب",
+        "ا",
+        "ل",
+        "ک",
+        "ن"
+       ],
+       "extra": [
+        "ت"
+       ]
+      },
+      {
+       "fa": "دَستشویی",
+       "tr": "dastschūyī",
+       "de": "Toilette",
+       "emoji": "🚽",
+       "teile": [
+        "د",
+        "س",
+        "ت",
+        "ش",
+        "و",
+        "ی",
+        "ی"
+       ],
+       "extra": [
+        "س"
+       ]
+      },
+      {
+       "fa": "آسانسور",
+       "tr": "āsānsor",
+       "de": "Aufzug",
+       "emoji": "🛗",
+       "teile": [
+        "آ",
+        "س",
+        "ا",
+        "ن",
+        "س",
+        "و",
+        "ر"
+       ],
+       "extra": [
+        "ر"
+       ]
+      },
+      {
+       "fa": "کِرایه",
+       "tr": "kerāye",
+       "de": "Miete",
+       "emoji": "💶",
+       "teile": [
+        "ک",
+        "ر",
+        "ا",
+        "ی",
+        "ه"
+       ],
+       "extra": [
+        "ب"
+       ]
+      },
+      {
+       "fa": "آشپَزخانِه",
+       "tr": "āschpazchāne",
+       "de": "Küche",
+       "emoji": "🍳",
+       "teile": [
+        "آ",
+        "ش",
+        "پ",
+        "ز",
+        "خ",
+        "ا",
+        "ن",
+        "ه"
+       ],
+       "extra": [
+        "ت"
+       ]
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitzlesen: Bedeutung",
+     "modus": "de",
+     "sekunden": 60,
+     "ziel": 12,
+     "woerter": [
+      {
+       "fa": "آپارتِمان",
+       "de": "Wohnung"
+      },
+      {
+       "fa": "اُتاقِ خواب",
+       "de": "Schlafzimmer"
+      },
+      {
+       "fa": "آشپَزخانِه",
+       "de": "Küche"
+      },
+      {
+       "fa": "حَمّام",
+       "de": "Bad"
+      },
+      {
+       "fa": "دَستشویی",
+       "de": "Toilette"
+      },
+      {
+       "fa": "پَذیرایی",
+       "de": "Wohnzimmer"
+      },
+      {
+       "fa": "بالکُن",
+       "de": "Balkon"
+      },
+      {
+       "fa": "طَبَقه",
+       "de": "Stockwerk"
+      },
+      {
+       "fa": "آسانسور",
+       "de": "Aufzug"
+      },
+      {
+       "fa": "کِرایه",
+       "de": "Miete"
+      },
+      {
+       "fa": "هَمسایه",
+       "de": "Nachbar/in"
+      },
+      {
+       "fa": "مَحَلّه",
+       "de": "Viertel, Gegend"
+      },
+      {
+       "fa": "حَیاط",
+       "de": "Hof"
+      },
+      {
+       "fa": "پارکینگ",
+       "de": "Parkplatz"
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitzlesen: Aussprache",
+     "modus": "tr",
+     "sekunden": 60,
+     "ziel": 12,
+     "woerter": [
+      {
+       "fa": "آپارتِمان",
+       "tr": "āpārtemān"
+      },
+      {
+       "fa": "اُتاقِ خواب",
+       "tr": "otāgh-e chāb"
+      },
+      {
+       "fa": "آشپَزخانِه",
+       "tr": "āschpazchāne"
+      },
+      {
+       "fa": "حَمّام",
+       "tr": "hammām"
+      },
+      {
+       "fa": "دَستشویی",
+       "tr": "dastschūyī"
+      },
+      {
+       "fa": "پَذیرایی",
+       "tr": "pazīrāyī"
+      },
+      {
+       "fa": "بالکُن",
+       "tr": "bālkon"
+      },
+      {
+       "fa": "طَبَقه",
+       "tr": "tabaghe"
+      },
+      {
+       "fa": "آسانسور",
+       "tr": "āsānsor"
+      },
+      {
+       "fa": "کِرایه",
+       "tr": "kerāye"
+      },
+      {
+       "fa": "هَمسایه",
+       "tr": "hamsāye"
+      },
+      {
+       "fa": "مَحَلّه",
+       "tr": "mahalle"
+      },
+      {
+       "fa": "حَیاط",
+       "tr": "hayāt"
+      },
+      {
+       "fa": "پارکینگ",
+       "tr": "pārkīng"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "f",
+   "titel": "Wortschatz: In der Stadt",
+   "vorschau": "بانک بیمارِستان",
+   "karten": [
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "داروخانِه",
+       "tr": "dārūchāne",
+       "de": "Apotheke",
+       "emoji": "💊"
+      },
+      {
+       "fa": "پُستخانِه",
+       "tr": "postchāne",
+       "de": "Post",
+       "emoji": "📮"
+      },
+      {
+       "fa": "کِتابخانِه",
+       "tr": "ketābchāne",
+       "de": "Bibliothek",
+       "emoji": "📚"
+      },
+      {
+       "fa": "سینَما",
+       "tr": "sīnamā",
+       "de": "Kino",
+       "emoji": "🎬"
+      },
+      {
+       "fa": "بیمارِستان",
+       "tr": "bīmārestān",
+       "de": "Krankenhaus",
+       "emoji": "🏥"
+      },
+      {
+       "fa": "باشگاه",
+       "tr": "bāschgāh",
+       "de": "Fitnessstudio, Club",
+       "emoji": "🏋️"
+      }
+     ],
+     "titel": "Memory: Bild & Wort"
+    },
+    {
+     "typ": "memory",
+     "links": "tr",
+     "paare": [
+      {
+       "fa": "پارک",
+       "tr": "pārk",
+       "de": "Park",
+       "emoji": "🌳"
+      },
+      {
+       "fa": "ایستگاه",
+       "tr": "īstgāh",
+       "de": "Haltestelle, Station",
+       "emoji": "🚏"
+      },
+      {
+       "fa": "نانوایی",
+       "tr": "nānwāyī",
+       "de": "Bäckerei",
+       "emoji": "🥖"
+      },
+      {
+       "fa": "داروخانِه",
+       "tr": "dārūchāne",
+       "de": "Apotheke",
+       "emoji": "💊"
+      },
+      {
+       "fa": "سوپِرمارکِت",
+       "tr": "sūpermārket",
+       "de": "Supermarkt",
+       "emoji": "🛒"
+      },
+      {
+       "fa": "سینَما",
+       "tr": "sīnamā",
+       "de": "Kino",
+       "emoji": "🎬"
+      }
+     ],
+     "titel": "Memory: Schrift & Aussprache"
+    },
+    {
+     "typ": "bauen",
+     "titel": "Schreib das Wort ab",
+     "zeigen": true,
+     "woerter": [
+      {
+       "fa": "ایستگاه",
+       "tr": "īstgāh",
+       "de": "Haltestelle, Station",
+       "emoji": "🚏",
+       "teile": [
+        "ا",
+        "ی",
+        "س",
+        "ت",
+        "گ",
+        "ا",
+        "ه"
+       ],
+       "extra": [
+        "ت"
+       ]
+      },
+      {
+       "fa": "سینَما",
+       "tr": "sīnamā",
+       "de": "Kino",
+       "emoji": "🎬",
+       "teile": [
+        "س",
+        "ی",
+        "ن",
+        "م",
+        "ا"
+       ],
+       "extra": [
+        "ز"
+       ]
+      },
+      {
+       "fa": "باشگاه",
+       "tr": "bāschgāh",
+       "de": "Fitnessstudio, Club",
+       "emoji": "🏋️",
+       "teile": [
+        "ب",
+        "ا",
+        "ش",
+        "گ",
+        "ا",
+        "ه"
+       ],
+       "extra": [
+        "ز"
+       ]
+      },
+      {
+       "fa": "سوپِرمارکِت",
+       "tr": "sūpermārket",
+       "de": "Supermarkt",
+       "emoji": "🛒",
+       "teile": [
+        "س",
+        "و",
+        "پ",
+        "ر",
+        "م",
+        "ا",
+        "ر",
+        "ک",
+        "ت"
+       ],
+       "extra": [
+        "ک"
+       ]
+      },
+      {
+       "fa": "رِستوران",
+       "tr": "restorān",
+       "de": "Restaurant",
+       "emoji": "🍽️",
+       "teile": [
+        "ر",
+        "س",
+        "ت",
+        "و",
+        "ر",
+        "ا",
+        "ن"
+       ],
+       "extra": [
+        "ب"
+       ]
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitzlesen: Bedeutung",
+     "modus": "de",
+     "sekunden": 60,
+     "ziel": 12,
+     "woerter": [
+      {
+       "fa": "بانک",
+       "de": "Bank"
+      },
+      {
+       "fa": "بیمارِستان",
+       "de": "Krankenhaus"
+      },
+      {
+       "fa": "داروخانِه",
+       "de": "Apotheke"
+      },
+      {
+       "fa": "نانوایی",
+       "de": "Bäckerei"
+      },
+      {
+       "fa": "سوپِرمارکِت",
+       "de": "Supermarkt"
+      },
+      {
+       "fa": "پارک",
+       "de": "Park"
+      },
+      {
+       "fa": "ایستگاه",
+       "de": "Haltestelle, Station"
+      },
+      {
+       "fa": "رِستوران",
+       "de": "Restaurant"
+      },
+      {
+       "fa": "سینَما",
+       "de": "Kino"
+      },
+      {
+       "fa": "کِتابخانِه",
+       "de": "Bibliothek"
+      },
+      {
+       "fa": "باشگاه",
+       "de": "Fitnessstudio, Club"
+      },
+      {
+       "fa": "پُستخانِه",
+       "de": "Post"
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitzlesen: Aussprache",
+     "modus": "tr",
+     "sekunden": 60,
+     "ziel": 12,
+     "woerter": [
+      {
+       "fa": "بانک",
+       "tr": "bānk"
+      },
+      {
+       "fa": "بیمارِستان",
+       "tr": "bīmārestān"
+      },
+      {
+       "fa": "داروخانِه",
+       "tr": "dārūchāne"
+      },
+      {
+       "fa": "نانوایی",
+       "tr": "nānwāyī"
+      },
+      {
+       "fa": "سوپِرمارکِت",
+       "tr": "sūpermārket"
+      },
+      {
+       "fa": "پارک",
+       "tr": "pārk"
+      },
+      {
+       "fa": "ایستگاه",
+       "tr": "īstgāh"
+      },
+      {
+       "fa": "رِستوران",
+       "tr": "restorān"
+      },
+      {
+       "fa": "سینَما",
+       "tr": "sīnamā"
+      },
+      {
+       "fa": "کِتابخانِه",
+       "tr": "ketābchāne"
+      },
+      {
+       "fa": "باشگاه",
+       "tr": "bāschgāh"
+      },
+      {
+       "fa": "پُستخانِه",
+       "tr": "postchāne"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

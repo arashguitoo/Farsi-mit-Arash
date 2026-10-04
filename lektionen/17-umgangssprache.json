@@ -1,0 +1,157 @@
+{
+ "id": "ug",
+ "art": "umgangssprache",
+ "titel": "Umgangssprache: So spricht man im Alltag",
+ "beschreibung": "Freiwilliger Extra-Teil: vergessen und sobald im Gespräch.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "So spricht man: vorher & nachher",
+   "vorschau": "یادَم رَفته بود",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Schrift ≠ Gespräch",
+     "text": "<ul><li><span class='fa'>فَراموش کَردَن</span> sagt man im Alltag oft <span class='fa'>یادَم رَفت</span> – „es ging mir aus dem Kopf“: <span class='fa'>یادَم رَفته بود</span> – ich hatte vergessen</li><li><span class='fa'>هَمین که</span> (sobald) → im Gespräch oft <span class='fa'>تا</span>: <span class='fa'>تا رِسیدَم …</span></li><li><span class='fa'>راه اُفتادَن</span> – losgehen, losfahren</li><li><span class='fa'>یه ساعَته مُنتَظِرَم</span> – ich warte seit einer Stunde</li></ul>",
+     "stil": "merke"
+    },
+    {
+     "typ": "paare",
+     "links": "x",
+     "paare": [
+      {
+       "fa": "قَبل اَز اینکه بِرَوی",
+       "tr": "ghabl az īnke berawī",
+       "de": "bevor du gehst",
+       "x": "قَبل اَز این که بِری"
+      },
+      {
+       "fa": "هَمین که رِسیدَم",
+       "tr": "hamīn ke resīdam",
+       "de": "sobald ich ankam",
+       "x": "تا رِسیدَم"
+      },
+      {
+       "fa": "فَراموش کَردِه بودَم",
+       "tr": "farāmūsch karde būdam",
+       "de": "ich hatte vergessen",
+       "x": "یادَم رَفته بود"
+      }
+     ],
+     "titel": "Schrift ↔ Gespräch"
+    },
+    {
+     "typ": "sortieren",
+     "titel": "Schrift oder Gespräch?",
+     "frage": "Schriftsprache oder Umgangssprache?",
+     "kategorien": [
+      "✍️ Schriftsprache",
+      "🗣️ Umgangssprache"
+     ],
+     "items": [
+      {
+       "fa": "قَبل اَز اینکه بِرَوی",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "هَمین که رِسیدَم",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "فَراموش کَردِه بودَم",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "قَبل اَز این که بِری",
+       "k": 1,
+       "say": false,
+       "e": "<i>ghabl az īn ke berī</i> – geschrieben: <span class='fa'>قَبل اَز اینکه بِرَوی</span>"
+      },
+      {
+       "fa": "تا رِسیدَم",
+       "k": 1,
+       "say": false,
+       "e": "<i>tā resīdam</i> – geschrieben: <span class='fa'>هَمین که رِسیدَم</span>"
+      },
+      {
+       "fa": "یادَم رَفته بود",
+       "k": 1,
+       "say": false,
+       "e": "<i>yādam rafte būd</i> – geschrieben: <span class='fa'>فَراموش کَردِه بودَم</span>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Wo warst du?",
+   "vorschau": "یه ساعَته مُنتَظِرَم!",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Treffpunkt",
+     "text": "Umgangssprache! Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "کُجا بودی؟ یه ساعَته مُنتَظِرَم!",
+       "tr": "kodschā būdī? ye sāʿate montazeram!",
+       "de": "Wo warst du? Ich warte seit einer Stunde!"
+      },
+      {
+       "fa": "ببخشید! یادَم رَفته بود گوشیمو شارژ کُنَم.",
+       "tr": "bebachschīd! yādam rafte būd gūschīmo schārzh konam.",
+       "de": "Entschuldige! Ich hatte vergessen, mein Handy zu laden."
+      },
+      {
+       "fa": "تا رِسیدَم ایستگاه، مِترو رَفته بود.",
+       "tr": "tā resīdam īstgāh, metro rafte būd.",
+       "de": "Kaum war ich an der Station, war die U-Bahn weg."
+      },
+      {
+       "fa": "قَبل اَز این که راه بیُفتی، یه پیام بِده!",
+       "tr": "ghabl az īn ke rāh biyoftī, ye payām bede!",
+       "de": "Bevor du losgehst, schick eine Nachricht!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Verstanden?",
+     "fragen": [
+      {
+       "frage": "Wie lange wartet die Person schon?",
+       "optionen": [
+        "eine Stunde",
+        "zehn Minuten",
+        "zwei Stunden"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was hatte die andere Person vergessen?",
+       "optionen": [
+        "das Handy zu laden",
+        "den Schlüssel",
+        "das Ticket"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "<span class='fa'>یادَم رَفته بود</span> bedeutet …",
+       "optionen": [
+        "ich hatte vergessen",
+        "ich war gegangen",
+        "ich erinnerte mich"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,771 @@
+{
+ "id": "tx",
+ "art": "texte",
+ "titel": "Texte & Dialoge",
+ "beschreibung": "Lesetexte mit Fragen und Dialoge zum Ordnen.",
+ "stationen": [
+  {
+   "id": "t1",
+   "titel": "Kurztext: Ein schlechter Tag",
+   "vorschau": "یک روز بد",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>کوک کردن</span> – (Wecker) stellen · <span class='fa'>بیرون دویدن</span> – hinausrennen · <span class='fa'>بعدی</span> – nächste/r · <span class='fa'>فهمیدن</span> – merken, verstehen · <span class='fa'>خوشبختانه</span> – zum Glück · <span class='fa'>اتوبوسرانی</span> – Busbetrieb</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Kurztext: Ein schlechter Tag",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "دیروز روز خیلی بدی بود.",
+       "tr": "dīrūz rūz-e cheylī badī būd.",
+       "de": "Gestern war ein sehr schlechter Tag."
+      },
+      {
+       "fa": "شب قبل، ساعت زنگ‌دارم را کوک نکرده بودم.",
+       "tr": "schab-e ghabl, sāʿat-e zangdāram rā kūk nakarde būdam.",
+       "de": "Am Abend vorher hatte ich meinen Wecker nicht gestellt."
+      },
+      {
+       "fa": "وقتی بیدار شدم، ساعت هشت و نیم بود و کلاس شروع شده بود!",
+       "tr": "waghtī bīdār schodam, sāʿat hascht o nīm būd o kelās schorūʿ schode būd!",
+       "de": "Als ich aufwachte, war es halb neun, und der Unterricht hatte schon angefangen!"
+      },
+      {
+       "fa": "قبل از اینکه صبحانه بخورم، از خانه بیرون دویدم.",
+       "tr": "ghabl az īnke sobhāne bechoram, az chāne bīrūn dawīdam.",
+       "de": "Bevor ich frühstücken konnte, rannte ich aus dem Haus."
+      },
+      {
+       "fa": "وقتی به ایستگاه رسیدم، اتوبوس رفته بود.",
+       "tr": "waghtī be īstgāh resīdam, otobūs rafte būd.",
+       "de": "Als ich an der Haltestelle ankam, war der Bus schon weg."
+      },
+      {
+       "fa": "بعد از اینکه بیست دقیقه منتظر ماندم، اتوبوس بعدی آمد.",
+       "tr": "baʿd az īnke bīst daghīghe montazer māndam, otobūs-e baʿdī āmad.",
+       "de": "Nachdem ich zwanzig Minuten gewartet hatte, kam der nächste Bus."
+      },
+      {
+       "fa": "همین که به دانشگاه رسیدم، فهمیدم کیفم را در اتوبوس جا گذاشته‌ام.",
+       "tr": "hamīn ke be dāneschgāh resīdam, fahmīdam kīfam rā dar otobūs dschā gozāschte-am.",
+       "de": "Sobald ich an der Uni ankam, merkte ich, dass ich meine Tasche im Bus liegen gelassen hatte."
+      },
+      {
+       "fa": "خوشبختانه راننده کیف را پیدا کرده بود و به دفتر اتوبوسرانی برده بود.",
+       "tr": "choschbachtāne rānande kīf rā peydā karde būd o be daftar-e otobūsrānī borde būd.",
+       "de": "Zum Glück hatte der Fahrer die Tasche gefunden und zum Busbüro gebracht."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "نویسنده ساعتش را کوک کرده بود.",
+       "fest": true,
+       "erkl": "Er/Sie hatte den Wecker <b>nicht</b> gestellt."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "وقتی بیدار شد، کلاس شروع شده بود.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "او صبحانه خورد.",
+       "fest": true,
+       "erkl": "Er/Sie rannte los, <b>bevor</b> er/sie frühstücken konnte."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "اتوبوس اول رفته بود.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "راننده کیف را پیدا کرده بود.",
+       "fest": true
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Wann wachte die Person auf?",
+       "optionen": [
+        "um halb neun",
+        "um sieben",
+        "um zehn"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie lange wartete sie auf den nächsten Bus?",
+       "optionen": [
+        "zwanzig Minuten",
+        "zehn Minuten",
+        "eine Stunde"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was hatte sie im Bus liegen lassen?",
+       "optionen": [
+        "ihre Tasche",
+        "ihr Handy",
+        "ihren Schlüssel"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wohin hatte der Fahrer die Tasche gebracht?",
+       "optionen": [
+        "zum Busbüro",
+        "zur Polizei",
+        "zur Uni"
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "شب قبل، ساعت زنگ‌دارم را کوک نکرده بودم.",
+       "tr": "schab-e ghabl, sāʿat-e zangdāram rā kūk nakarde būdam.",
+       "de": "Am Abend vorher hatte ich meinen Wecker nicht gestellt."
+      },
+      {
+       "fa": "وقتی بیدار شدم، ساعت هشت و نیم بود و کلاس شروع شده بود!",
+       "tr": "waghtī bīdār schodam, sāʿat hascht o nīm būd o kelās schorūʿ schode būd!",
+       "de": "Als ich aufwachte, war es halb neun, und der Unterricht hatte schon angefangen!"
+      },
+      {
+       "fa": "قبل از اینکه صبحانه بخورم، از خانه بیرون دویدم.",
+       "tr": "ghabl az īnke sobhāne bechoram, az chāne bīrūn dawīdam.",
+       "de": "Bevor ich frühstücken konnte, rannte ich aus dem Haus."
+      },
+      {
+       "fa": "وقتی به ایستگاه رسیدم، اتوبوس رفته بود.",
+       "tr": "waghtī be īstgāh resīdam, otobūs rafte būd.",
+       "de": "Als ich an der Haltestelle ankam, war der Bus schon weg."
+      },
+      {
+       "fa": "بعد از اینکه بیست دقیقه منتظر ماندم، اتوبوس بعدی آمد.",
+       "tr": "baʿd az īnke bīst daghīghe montazer māndam, otobūs-e baʿdī āmad.",
+       "de": "Nachdem ich zwanzig Minuten gewartet hatte, kam der nächste Bus."
+      },
+      {
+       "fa": "همین که به دانشگاه رسیدم، فهمیدم کیفم را در اتوبوس جا گذاشته‌ام.",
+       "tr": "hamīn ke be dāneschgāh resīdam, fahmīdam kīfam rā dar otobūs dschā gozāschte-am.",
+       "de": "Sobald ich an der Uni ankam, merkte ich, dass ich meine Tasche im Bus liegen gelassen hatte."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t2",
+   "titel": "Text: Mit dem Nachtzug nach Yazd",
+   "vorschau": "با قطار شبانه به یزد",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>تصمیم گرفتن</span> – beschließen · <span class='fa'>اینترنتی</span> – online · <span class='fa'>هیجان</span> – Aufregung · <span class='fa'>تعارف کردن</span> – (höflich) anbieten · <span class='fa'>نیمه‌شب</span> – Mitternacht · <span class='fa'>طلوع آفتاب</span> – Sonnenaufgang · <span class='fa'>ساکت</span> – still</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Text: Mit dem Nachtzug nach Yazd",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "پارسال من و دوستم یوناس تصمیم گرفتیم با قطار از تهران به یزد سفر کنیم.",
+       "tr": "pārsāl man o dūstam yūnās tasmīm gereftīm bā ghatār az tehrān be yazd safar konīm.",
+       "de": "Letztes Jahr beschlossen mein Freund Jonas und ich, mit dem Zug von Teheran nach Yazd zu reisen."
+      },
+      {
+       "fa": "قبل از اینکه حرکت کنیم، بلیت‌ها را اینترنتی خریده بودیم.",
+       "tr": "ghabl az īnke harakat konīm, belīthā rā īnternetī charīde būdīm.",
+       "de": "Bevor wir losfuhren, hatten wir die Fahrkarten online gekauft."
+      },
+      {
+       "fa": "قطار ساعت ده شب حرکت می‌کرد، اما ما ساعت هشت در ایستگاه بودیم.",
+       "tr": "ghatār sāʿat-e dah-e schab harakat mīkard, ammā mā sāʿat-e hascht dar īstgāh būdīm.",
+       "de": "Der Zug fuhr um zehn Uhr abends ab, aber wir waren schon um acht am Bahnhof."
+      },
+      {
+       "fa": "یوناس تا آن روز هرگز با قطار شبانه سفر نکرده بود و خیلی هیجان داشت.",
+       "tr": "yūnās tā ān rūz hargez bā ghatār-e schabāne safar nakarde būd o cheylī heydschān dāscht.",
+       "de": "Jonas war bis zu jenem Tag nie mit einem Nachtzug gereist und war sehr aufgeregt."
+      },
+      {
+       "fa": "در کوپه‌ی ما یک خانواده‌ی یزدی هم بود.",
+       "tr": "dar kūpe-ye mā yek chānewāde-ye yazdī ham būd.",
+       "de": "In unserem Abteil war auch eine Familie aus Yazd."
+      },
+      {
+       "fa": "آنها برای سفر غذا و چای آورده بودند و به ما هم تعارف کردند.",
+       "tr": "ānhā barāye safar ghazā o tschāy āwarde būdand o be mā ham taʿārof kardand.",
+       "de": "Sie hatten für die Reise Essen und Tee mitgebracht und boten uns auch etwas an."
+      },
+      {
+       "fa": "بعد از اینکه شام خوردیم، تا نیمه‌شب حرف زدیم.",
+       "tr": "baʿd az īnke schām chordīm, tā nīmeschab harf zadīm.",
+       "de": "Nachdem wir zu Abend gegessen hatten, unterhielten wir uns bis Mitternacht."
+      },
+      {
+       "fa": "وقتی صبح بیدار شدیم، قطار به کویر رسیده بود.",
+       "tr": "waghtī sobh bīdār schodīm, ghatār be kawīr resīde būd.",
+       "de": "Als wir morgens aufwachten, hatte der Zug die Wüste erreicht."
+      },
+      {
+       "fa": "یوناس تا آن روز طلوع آفتاب در کویر را ندیده بود. او ساکت پشت پنجره نشسته بود.",
+       "tr": "yūnās tā ān rūz tolūʿ-e āftāb dar kawīr rā nadīde būd. ū sāket poscht-e pandschere neschaste būd.",
+       "de": "Jonas hatte noch nie einen Sonnenaufgang in der Wüste gesehen. Er saß still am Fenster."
+      },
+      {
+       "fa": "همین که به یزد رسیدیم، خانواده‌ی یزدی ما را به خانه‌شان دعوت کرد.",
+       "tr": "hamīn ke be yazd resīdīm, chānewāde-ye yazdī mā rā be chāneschān daʿwat kard.",
+       "de": "Sobald wir in Yazd ankamen, lud die Familie aus Yazd uns zu sich nach Hause ein."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "آنها بلیت‌ها را در ایستگاه خریدند.",
+       "fest": true,
+       "erkl": "Sie hatten sie <b>online</b> gekauft."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "قطار ساعت ده شب حرکت کرد.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "یوناس قبلا با قطار شبانه سفر کرده بود.",
+       "fest": true,
+       "erkl": "Er war <b>noch nie</b> mit dem Nachtzug gereist."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "خانواده‌ی یزدی غذا آورده بود.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "صبح قطار به کویر رسیده بود.",
+       "fest": true
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Wann waren sie am Bahnhof?",
+       "optionen": [
+        "um acht",
+        "um zehn",
+        "um Mitternacht"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wer war im Abteil?",
+       "optionen": [
+        "eine Familie aus Yazd",
+        "Studierende aus Teheran",
+        "niemand"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was hatte Jonas noch nie gesehen?",
+       "optionen": [
+        "einen Sonnenaufgang in der Wüste",
+        "einen Zug",
+        "die Stadt Yazd"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was passierte in Yazd?",
+       "optionen": [
+        "Die Familie lud sie ein.",
+        "Sie verpassten den Bus.",
+        "Es regnete."
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t3",
+   "titel": "Profi-Text: Eine Zeitungsmeldung",
+   "vorschau": "خبر",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>گمشده</span> – verloren gegangen · <span class='fa'>همه جا</span> – überall · <span class='fa'>صدا کردن</span> – Geräusche machen, rufen · <span class='fa'>لاغر</span> – dünn · <span class='fa'>سالم</span> – gesund · <span class='fa'>هیچ‌کس</span> – niemand</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Profi-Text: Eine Zeitungsmeldung",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "سگ گمشده بعد از سه ماه به خانه برگشت",
+       "tr": "sag-e gomschode baʿd az se māh be chāne bargascht",
+       "de": "Verlorener Hund kehrte nach drei Monaten nach Hause zurück"
+      },
+      {
+       "fa": "خانواده‌ی رحیمی در اصفهان سه ماه پیش سگشان را در پارک گم کرده بودند.",
+       "tr": "chānewāde-ye rahīmī dar esfahān se māh pīsch sagaschān rā dar pārk gom karde būdand.",
+       "de": "Die Familie Rahimi in Isfahan hatte vor drei Monaten ihren Hund im Park verloren."
+      },
+      {
+       "fa": "آنها همه جا را گشته بودند و در اینترنت آگهی گذاشته بودند.",
+       "tr": "ānhā hame dschā rā gaschte būdand o dar īnternet āgahī gozāschte būdand.",
+       "de": "Sie hatten überall gesucht und im Internet eine Anzeige aufgegeben."
+      },
+      {
+       "fa": "دیروز صبح، قبل از اینکه بچه‌ها به مدرسه بروند، کسی پشت در صدا کرد.",
+       "tr": "dīrūz sobh, ghabl az īnke batschehā be madrese berawand, kasī poscht-e dar sedā kard.",
+       "de": "Gestern Morgen, bevor die Kinder zur Schule gingen, machte jemand vor der Tür Geräusche."
+      },
+      {
+       "fa": "همین که در را باز کردند، سگشان را دیدند!",
+       "tr": "hamīn ke dar rā bāz kardand, sagaschān rā dīdand!",
+       "de": "Sobald sie die Tür öffneten, sahen sie ihren Hund!"
+      },
+      {
+       "fa": "سگ خسته و لاغر شده بود، اما سالم بود.",
+       "tr": "sag chaste o lāghar schode būd, ammā sālem būd.",
+       "de": "Der Hund war müde und dünn geworden, aber gesund."
+      },
+      {
+       "fa": "هیچ‌کس نمی‌داند در این سه ماه کجا بوده است.",
+       "tr": "hīchkas nemīdānad dar īn se māh kodschā būde ast.",
+       "de": "Niemand weiß, wo er in diesen drei Monaten gewesen ist."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "سگ در پارک گم شده بود.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "خانواده هیچ آگهی نگذاشته بود.",
+       "fest": true,
+       "erkl": "Sie hatten eine Anzeige <b>im Internet</b> aufgegeben."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "سگ بعد از اینکه بچه‌ها به مدرسه رفتند برگشت.",
+       "fest": true,
+       "erkl": "<b>Bevor</b> die Kinder zur Schule gingen."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "سگ لاغر شده بود.",
+       "fest": true
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Wie lange war der Hund weg?",
+       "optionen": [
+        "drei Monate",
+        "drei Wochen",
+        "drei Tage"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wo wohnt die Familie?",
+       "optionen": [
+        "in Isfahan",
+        "in Teheran",
+        "in Yazd"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie ging es dem Hund?",
+       "optionen": [
+        "müde und dünn, aber gesund",
+        "sehr krank",
+        "dick und fröhlich"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d1",
+   "titel": "Dialog: Warum bist du zu spät?",
+   "vorschau": "چرا دیر کردی؟",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Tara kommt zu spät ins Kino; Nima wartet schon.</p><p><span class='fa'>دیر کردن</span> – sich verspäten · <span class='fa'>داخل</span> – hinein, drinnen</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "نیما: تارا! فیلم بیست دقیقه پیش شروع شده!",
+       "tr": "tārā! fīlm bīst daghīghe pīsch schorūʿ schode!",
+       "de": "Tara! Der Film hat vor zwanzig Minuten angefangen!"
+      },
+      {
+       "fa": "تارا: ببخشید! وقتی به ایستگاه رسیدم، مترو رفته بود.",
+       "tr": "bebachschīd! waghtī be īstgāh resīdam, metro rafte būd.",
+       "de": "Entschuldige! Als ich an der Station ankam, war die U-Bahn weg."
+      },
+      {
+       "fa": "نیما: چرا زودتر از خانه بیرون نیامدی؟",
+       "tr": "tscherā zūdtar az chāne bīrūn nayāmadī?",
+       "de": "Warum bist du nicht früher losgegangen?"
+      },
+      {
+       "fa": "تارا: آمده بودم بیرون، ولی دیدم گوشی‌ام را جا گذاشته‌ام. برگشتم.",
+       "tr": "āmade būdam bīrūn, walī dīdam gūschīam rā dschā gozāschte-am. bargaschtam.",
+       "de": "Ich war schon draußen, aber dann merkte ich, dass ich mein Handy vergessen hatte. Ich bin zurückgegangen."
+      },
+      {
+       "fa": "نیما: خب، قبل از اینکه بیرون بیایی، باید کیفت را نگاه کنی!",
+       "tr": "chob, ghabl az īnke bīrūn biyāyī, bāyad kīfat rā negāh konī!",
+       "de": "Na ja, bevor du rausgehst, solltest du in deine Tasche schauen!"
+      },
+      {
+       "fa": "تارا: حق با توست. حالا برویم داخل؟",
+       "tr": "hagh bā tost. hālā berawīm dāchel?",
+       "de": "Du hast recht. Gehen wir jetzt rein?"
+      },
+      {
+       "fa": "نیما: برویم. بلیت‌ها را قبلا خریده‌ام.",
+       "tr": "berawīm. belīthā rā ghablan charīde-am.",
+       "de": "Gehen wir. Die Karten habe ich schon gekauft."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "نیما: تارا! فیلم بیست دقیقه پیش شروع شده!",
+       "tr": "tārā! fīlm bīst daghīghe pīsch schorūʿ schode!",
+       "de": "Tara! Der Film hat vor zwanzig Minuten angefangen!"
+      },
+      {
+       "fa": "تارا: ببخشید! وقتی به ایستگاه رسیدم، مترو رفته بود.",
+       "tr": "bebachschīd! waghtī be īstgāh resīdam, metro rafte būd.",
+       "de": "Entschuldige! Als ich an der Station ankam, war die U-Bahn weg."
+      },
+      {
+       "fa": "نیما: چرا زودتر از خانه بیرون نیامدی؟",
+       "tr": "tscherā zūdtar az chāne bīrūn nayāmadī?",
+       "de": "Warum bist du nicht früher losgegangen?"
+      },
+      {
+       "fa": "تارا: آمده بودم بیرون، ولی دیدم گوشی‌ام را جا گذاشته‌ام. برگشتم.",
+       "tr": "āmade būdam bīrūn, walī dīdam gūschīam rā dschā gozāschte-am. bargaschtam.",
+       "de": "Ich war schon draußen, aber dann merkte ich, dass ich mein Handy vergessen hatte. Ich bin zurückgegangen."
+      },
+      {
+       "fa": "نیما: خب، قبل از اینکه بیرون بیایی، باید کیفت را نگاه کنی!",
+       "tr": "chob, ghabl az īnke bīrūn biyāyī, bāyad kīfat rā negāh konī!",
+       "de": "Na ja, bevor du rausgehst, solltest du in deine Tasche schauen!"
+      },
+      {
+       "fa": "تارا: حق با توست. حالا برویم داخل؟",
+       "tr": "hagh bā tost. hālā berawīm dāchel?",
+       "de": "Du hast recht. Gehen wir jetzt rein?"
+      },
+      {
+       "fa": "نیما: برویم. بلیت‌ها را قبلا خریده‌ام.",
+       "tr": "berawīm. belīthā rā ghablan charīde-am.",
+       "de": "Gehen wir. Die Karten habe ich schon gekauft."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Warum kam Tara zu spät?",
+       "optionen": [
+        "Die U-Bahn war weg.",
+        "Sie hatte verschlafen.",
+        "Sie hatte keine Karte."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was hatte sie vergessen?",
+       "optionen": [
+        "ihr Handy",
+        "ihren Schlüssel",
+        "ihre Karte"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wer hat die Kinokarten gekauft?",
+       "optionen": [
+        "Nima",
+        "Tara",
+        "niemand"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d2",
+   "titel": "Dialog: Vor der Reise",
+   "vorschau": "قبل از سفر",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Mina und ihre Mutter packen für eine Reise nach Schiras.</p><p><span class='fa'>شارژر</span> – Ladegerät · <span class='fa'>حتماً</span> – bestimmt, unbedingt · <span class='fa'>همین که برسم</span> – sobald ich ankomme (Zukunft: Konjunktiv) · <span class='fa'>سفر بخیر!</span> – gute Reise!</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "مادر: مینا، قبل از اینکه چمدان را ببندی، همه چیز را نگاه کن!",
+       "tr": "mīnā, ghabl az īnke tschamadān rā bebandī, hame tschīz rā negāh kon!",
+       "de": "Mina, bevor du den Koffer schließt, schau alles durch!"
+      },
+      {
+       "fa": "مینا: باشه. گذرنامه، بلیت، شارژر... همه را گذاشته‌ام.",
+       "tr": "bāsche. gozarnāme, belīt, schārzher... hame rā gozāschte-am.",
+       "de": "Okay. Pass, Ticket, Ladegerät … alles habe ich eingepackt."
+      },
+      {
+       "fa": "مادر: دارویت را چطور؟",
+       "tr": "dārūyat rā tschetor?",
+       "de": "Und dein Medikament?"
+      },
+      {
+       "fa": "مینا: وای! فراموش کرده بودم! ممنون مامان.",
+       "tr": "wāy! farāmūsch karde būdam! mamnūn māmān.",
+       "de": "Oh! Das hatte ich vergessen! Danke, Mama."
+      },
+      {
+       "fa": "مادر: بعد از اینکه به شیراز رسیدی، زنگ بزن!",
+       "tr": "baʿd az īnke be schīrāz resīdī, zang bezan!",
+       "de": "Ruf an, nachdem du in Schiras angekommen bist!"
+      },
+      {
+       "fa": "مینا: حتما. همین که برسم، پیام می‌دهم.",
+       "tr": "hatman. hamīn ke beresam, payām mīdeham.",
+       "de": "Bestimmt. Sobald ich ankomme, schreibe ich eine Nachricht."
+      },
+      {
+       "fa": "مادر: سفر بخیر عزیزم!",
+       "tr": "safar becheyr ʿazīzam!",
+       "de": "Gute Reise, mein Schatz!"
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "مادر: مینا، قبل از اینکه چمدان را ببندی، همه چیز را نگاه کن!",
+       "tr": "mīnā, ghabl az īnke tschamadān rā bebandī, hame tschīz rā negāh kon!",
+       "de": "Mina, bevor du den Koffer schließt, schau alles durch!"
+      },
+      {
+       "fa": "مینا: باشه. گذرنامه، بلیت، شارژر... همه را گذاشته‌ام.",
+       "tr": "bāsche. gozarnāme, belīt, schārzher... hame rā gozāschte-am.",
+       "de": "Okay. Pass, Ticket, Ladegerät … alles habe ich eingepackt."
+      },
+      {
+       "fa": "مادر: دارویت را چطور؟",
+       "tr": "dārūyat rā tschetor?",
+       "de": "Und dein Medikament?"
+      },
+      {
+       "fa": "مینا: وای! فراموش کرده بودم! ممنون مامان.",
+       "tr": "wāy! farāmūsch karde būdam! mamnūn māmān.",
+       "de": "Oh! Das hatte ich vergessen! Danke, Mama."
+      },
+      {
+       "fa": "مادر: بعد از اینکه به شیراز رسیدی، زنگ بزن!",
+       "tr": "baʿd az īnke be schīrāz resīdī, zang bezan!",
+       "de": "Ruf an, nachdem du in Schiras angekommen bist!"
+      },
+      {
+       "fa": "مینا: حتما. همین که برسم، پیام می‌دهم.",
+       "tr": "hatman. hamīn ke beresam, payām mīdeham.",
+       "de": "Bestimmt. Sobald ich ankomme, schreibe ich eine Nachricht."
+      },
+      {
+       "fa": "مادر: سفر بخیر عزیزم!",
+       "tr": "safar becheyr ʿazīzam!",
+       "de": "Gute Reise, mein Schatz!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Was hatte Mina vergessen?",
+       "optionen": [
+        "ihr Medikament",
+        "ihren Pass",
+        "ihr Ladegerät"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wann soll Mina anrufen?",
+       "optionen": [
+        "nachdem sie angekommen ist",
+        "bevor sie losfährt",
+        "im Zug"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was sagt die Mutter am Ende?",
+       "optionen": [
+        "Gute Reise!",
+        "Gute Besserung!",
+        "Guten Appetit!"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

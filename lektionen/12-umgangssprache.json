@@ -1,0 +1,198 @@
+{
+ "id": "ug",
+ "art": "umgangssprache",
+ "titel": "Umgangssprache: So spricht man im Alltag",
+ "beschreibung": "Freiwilliger Extra-Teil: Vergleiche und Shopping im Gespräch.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "So spricht man: Vergleiche",
+   "vorschau": "بِهتَرینه · گِرونه",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Schrift ≠ Gespräch",
+     "text": "<ul><li><span class='fa'>اَست → ـه</span>: <span class='fa'>بُزُرگ‌تَره، بِهتَرینه، قَشَنگه</span></li><li><b>ān → ūn</b>: <span class='fa'>گِران → گِرون</span>, <span class='fa'>اَرزان → اَرزون</span>, <span class='fa'>آن → اون</span></li><li><span class='fa'>خوشگِل</span> <i>choschgel</i> – hübsch (sehr häufig im Gespräch)</li><li><span class='fa'>مانتو</span> – leichter Mantel (in Iran Alltagskleidung)</li></ul>",
+     "stil": "merke"
+    },
+    {
+     "typ": "paare",
+     "links": "x",
+     "paare": [
+      {
+       "fa": "بُزُرگ‌تَر اَست",
+       "tr": "bozorgtar ast",
+       "de": "ist größer",
+       "x": "بُزُرگ‌تَره"
+      },
+      {
+       "fa": "بِهتَرین اَست",
+       "tr": "behtarīn ast",
+       "de": "ist das Beste",
+       "x": "بِهتَرینه"
+      },
+      {
+       "fa": "گِران اَست",
+       "tr": "gerān ast",
+       "de": "ist teuer",
+       "x": "گِرونه"
+      },
+      {
+       "fa": "خوشَم می‌آیَد",
+       "tr": "choscham mīāyad",
+       "de": "gefällt mir",
+       "x": "خوشَم میاد"
+      },
+      {
+       "fa": "چَند اَست؟",
+       "tr": "tschand ast?",
+       "de": "was kostet?",
+       "x": "چَنده؟"
+      }
+     ],
+     "titel": "Schrift ↔ Gespräch"
+    },
+    {
+     "typ": "sortieren",
+     "titel": "Schrift oder Gespräch?",
+     "frage": "Schriftsprache oder Umgangssprache?",
+     "kategorien": [
+      "✍️ Schriftsprache",
+      "🗣️ Umgangssprache"
+     ],
+     "items": [
+      {
+       "fa": "بُزُرگ‌تَر اَست",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "بِهتَرین اَست",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "گِران اَست",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "خوشَم می‌آیَد",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "چَند اَست؟",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "بُزُرگ‌تَره",
+       "k": 1,
+       "say": false,
+       "e": "<i>bozorgtare</i> – geschrieben: <span class='fa'>بُزُرگ‌تَر اَست</span>"
+      },
+      {
+       "fa": "بِهتَرینه",
+       "k": 1,
+       "say": false,
+       "e": "<i>behtarīne</i> – geschrieben: <span class='fa'>بِهتَرین اَست</span>"
+      },
+      {
+       "fa": "گِرونه",
+       "k": 1,
+       "say": false,
+       "e": "<i>gerūne</i> – geschrieben: <span class='fa'>گِران اَست</span>"
+      },
+      {
+       "fa": "خوشَم میاد",
+       "k": 1,
+       "say": false,
+       "e": "<i>choscham miyād</i> – geschrieben: <span class='fa'>خوشَم می‌آیَد</span>"
+      },
+      {
+       "fa": "چَنده؟",
+       "k": 1,
+       "say": false,
+       "e": "<i>tschande?</i> – geschrieben: <span class='fa'>چَند اَست؟</span>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Shopping mit einer Freundin",
+   "vorschau": "خِیلی گِرونه!",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Im Einkaufszentrum",
+     "text": "Umgangssprache! Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "وای، این مانتو چه قَشَنگه!",
+       "tr": "wāy, īn mānto tsche ghaschange!",
+       "de": "Wow, wie hübsch dieser Mantel ist!"
+      },
+      {
+       "fa": "آره، وَلی اون یکی خوشگِل‌تَره.",
+       "tr": "āre, walī ūn yekī choschgeltare.",
+       "de": "Ja, aber der andere ist schöner."
+      },
+      {
+       "fa": "چَنده؟",
+       "tr": "tschande?",
+       "de": "Was kostet der?"
+      },
+      {
+       "fa": "دو میلیون. خِیلی گِرونه!",
+       "tr": "do milyon. cheylī gerūne!",
+       "de": "Zwei Millionen. Sehr teuer!"
+      },
+      {
+       "fa": "بیا بِریم یه جایِ اَرزون‌تَر.",
+       "tr": "biyā berīm ye dschā-ye arzūntar.",
+       "de": "Komm, lass uns woanders hin, wo es billiger ist."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Verstanden?",
+     "fragen": [
+      {
+       "frage": "Was kostet der Mantel?",
+       "optionen": [
+        "zwei Millionen",
+        "zweihunderttausend",
+        "eine Million"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was wollen sie am Ende?",
+       "optionen": [
+        "woanders hin, wo es billiger ist",
+        "den Mantel kaufen",
+        "nach Hause"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "<span class='fa'>اَرزون‌تَر</span> in der Schriftsprache:",
+       "optionen": [
+        "ارزان‌تر",
+        "ارزان‌ترین",
+        "گران‌تر"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

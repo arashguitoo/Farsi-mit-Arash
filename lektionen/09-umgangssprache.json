@@ -1,0 +1,220 @@
+{
+ "id": "ug",
+ "art": "umgangssprache",
+ "titel": "Umgangssprache: So spricht man im Alltag",
+ "beschreibung": "Freiwilliger Extra-Teil: Fragen im Gespräch und auf dem Markt handeln.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "So fragt man im Alltag",
+   "vorschau": "چی؟ کی؟ چَنده؟",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Schrift ≠ Gespräch",
+     "text": "<ul><li><span class='fa'>چه → چی</span> <i>tschī</i> · <span class='fa'>چه کَسی → کی</span> <i>kī</i> (Achtung: geschrieben <span class='fa'>کِی</span> = wann!)</li><li><span class='fa'>کُجا اَست → کُجاست / کو</span> <i>kū</i> – wo ist …?</li><li><span class='fa'>چَند اَست → چَنده</span> – was kostet …? · Preise sagt man oft ohne „tausend“: <span class='fa'>سی تومَن</span> = 30 000 Toman</li><li><span class='fa'>-īd → -īn</span>: <span class='fa'>می‌خواین، می‌دین، بِفَرمایین</span></li></ul>",
+     "stil": "merke"
+    },
+    {
+     "typ": "paare",
+     "links": "x",
+     "paare": [
+      {
+       "fa": "چه؟",
+       "tr": "tsche?",
+       "de": "was?",
+       "x": "چی؟"
+      },
+      {
+       "fa": "چه کَسی؟",
+       "tr": "tsche kasī?",
+       "de": "wer?",
+       "x": "کی؟"
+      },
+      {
+       "fa": "کُجا اَست؟",
+       "tr": "kodschā ast?",
+       "de": "wo ist?",
+       "x": "کُجاست؟ / کو؟"
+      },
+      {
+       "fa": "چَند اَست؟",
+       "tr": "tschand ast?",
+       "de": "was kostet?",
+       "x": "چَنده؟"
+      },
+      {
+       "fa": "چِطور اَست؟",
+       "tr": "tschetor ast?",
+       "de": "wie ist?",
+       "x": "چِطوره؟"
+      },
+      {
+       "fa": "می‌خواهید",
+       "tr": "mīchāhīd",
+       "de": "Sie möchten",
+       "x": "می‌خواین"
+      }
+     ],
+     "titel": "Schrift ↔ Gespräch"
+    },
+    {
+     "typ": "sortieren",
+     "titel": "Schrift oder Gespräch?",
+     "frage": "Schriftsprache oder Umgangssprache?",
+     "kategorien": [
+      "✍️ Schriftsprache",
+      "🗣️ Umgangssprache"
+     ],
+     "items": [
+      {
+       "fa": "چه؟",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "چه کَسی؟",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "کُجا اَست؟",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "چَند اَست؟",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "چِطور اَست؟",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "می‌خواهید",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "چی؟",
+       "k": 1,
+       "say": false,
+       "e": "<i>tschī?</i> – geschrieben: <span class='fa'>چه؟</span>"
+      },
+      {
+       "fa": "کی؟",
+       "k": 1,
+       "say": false,
+       "e": "<i>kī?</i> – geschrieben: <span class='fa'>چه کَسی؟</span>"
+      },
+      {
+       "fa": "کُجاست؟ / کو؟",
+       "k": 1,
+       "say": false,
+       "e": "<i>kodschāst? / kū?</i> – geschrieben: <span class='fa'>کُجا اَست؟</span>"
+      },
+      {
+       "fa": "چَنده؟",
+       "k": 1,
+       "say": false,
+       "e": "<i>tschande?</i> – geschrieben: <span class='fa'>چَند اَست؟</span>"
+      },
+      {
+       "fa": "چِطوره؟",
+       "k": 1,
+       "say": false,
+       "e": "<i>tschetore?</i> – geschrieben: <span class='fa'>چِطور اَست؟</span>"
+      },
+      {
+       "fa": "می‌خواین",
+       "k": 1,
+       "say": false,
+       "e": "<i>mīchāyn</i> – geschrieben: <span class='fa'>می‌خواهید</span>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Auf dem Markt handeln",
+   "vorschau": "تَخفیف نِمی‌دین؟",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Am Marktstand",
+     "text": "Umgangssprache! Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "ببخشید، این چَنده؟",
+       "tr": "bebachschīd, īn tschande?",
+       "de": "Entschuldigung, was kostet das?"
+      },
+      {
+       "fa": "سی تومَن.",
+       "tr": "sī toman.",
+       "de": "Dreißig (tausend) Toman."
+      },
+      {
+       "fa": "چه گرون! تَخفیف نِمی‌دین؟",
+       "tr": "tsche gerūn! tachfīf nemīdīn?",
+       "de": "Wie teuer! Geben Sie keinen Rabatt?"
+      },
+      {
+       "fa": "بَرا شُما بیست و پَنج.",
+       "tr": "barā schomā bīst o pandsch.",
+       "de": "Für Sie fünfundzwanzig."
+      },
+      {
+       "fa": "مِرسی! کارت می‌گیرین؟",
+       "tr": "mersī! kārt mīgīrīn?",
+       "de": "Danke! Nehmen Sie Karte?"
+      },
+      {
+       "fa": "آره، بِفَرمایین.",
+       "tr": "āre, befarmāyīn.",
+       "de": "Ja, bitte schön."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Verstanden?",
+     "fragen": [
+      {
+       "frage": "Wie viel kostet es am Ende?",
+       "optionen": [
+        "25 000 Toman",
+        "30 000 Toman",
+        "20 000 Toman"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was bedeutet <span class='fa'>تَخفیف</span>?",
+       "optionen": [
+        "Rabatt",
+        "Karte",
+        "Preis"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "<span class='fa'>چَنده؟</span> in der Schriftsprache:",
+       "optionen": [
+        "چَند اَست؟",
+        "چه کَسی اَست؟",
+        "کُجا اَست؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

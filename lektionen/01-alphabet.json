@@ -124,13 +124,13 @@
        "fa": "ا",
        "name": "Alef",
        "nameFa": "اَلِف",
-       "laut": "ā",
+       "laut": "a e o · ā ī ū",
        "verbindet": false,
-       "hinweis": "In der Wortmitte und am Ende steht <b>ا</b> für ein langes <b>ā</b>. Am Wortanfang ist es ein Träger für Vokale – dazu später mehr.",
+       "hinweis": "<b>Am Wortanfang</b> trägt Alef jeden Vokal: kurz <b>a, e, o</b> und lang <b>ā, ī, ū</b> – wie, zeigt dir die nächste Karte. <b>In der Mitte und am Ende</b> ist Alef immer ein langes <b>ā</b>.",
        "beispiel": {
-        "fa": "باد",
-        "tr": "bād",
-        "de": "Wind"
+        "fa": "اَبر",
+        "tr": "abr",
+        "de": "Wolke"
        }
       },
       {
@@ -157,6 +157,50 @@
         "tr": "dād",
         "de": "(er/sie) gab"
        }
+      }
+     ]
+    },
+    {
+     "typ": "info",
+     "stil": "merke",
+     "titel": "Alef – am Anfang ein Vokalträger",
+     "text": "<p>Kein persisches Wort beginnt „nackt“ mit einem Vokal: Am <b>Wortanfang</b> steht immer <span class='fa'>ا</span> als <b>Träger</b>. Welcher Vokal gemeint ist, zeigen Zeichen oder ein zweiter Buchstabe:</p><ul><li>kurz: <span class='fa'>اَ</span> <b>a</b> · <span class='fa'>اِ</span> <b>e</b> · <span class='fa'>اُ</span> <b>o</b> (die Zeichen lernst du gleich)</li><li>lang: <span class='fa'>آ</span> <b>ā</b> · <span class='fa'>ای</span> <b>ī</b> · <span class='fa'>او</span> <b>ū</b></li></ul><p><b>In der Wortmitte und am Ende</b> ist <span class='fa'>ا</span> dagegen immer das lange <b>ā</b>: <span class='fa'>باد</span> <i>bād</i>, <span class='fa'>بابا</span> <i>bābā</i>.</p>",
+     "beispiele": [
+      {
+       "fa": "اَبر",
+       "tr": "abr",
+       "de": "Wolke",
+       "emoji": "☁️"
+      },
+      {
+       "fa": "اِسم",
+       "tr": "esm",
+       "de": "Name",
+       "emoji": "🏷️"
+      },
+      {
+       "fa": "اُردَک",
+       "tr": "ordak",
+       "de": "Ente",
+       "emoji": "🦆"
+      },
+      {
+       "fa": "آب",
+       "tr": "āb",
+       "de": "Wasser",
+       "emoji": "💧"
+      },
+      {
+       "fa": "ایران",
+       "tr": "īrān",
+       "de": "Iran",
+       "emoji": "🗺️"
+      },
+      {
+       "fa": "او",
+       "tr": "ū",
+       "de": "er / sie",
+       "emoji": "🧑"
       }
      ]
     },
@@ -558,7 +602,7 @@
      "typ": "info",
      "stil": "merke",
      "titel": "Langes ā oder kurzes a?",
-     "text": "<p><span class='fa'>ا</span> ist ein langes, dunkles <b>ā</b>. Das kurze, helle <b>a</b> ist nur ein Strich über dem Buchstaben: <span class='fa'>ـَ</span>.</p><p>Vergleiche: <span class='fa'>مار</span> <i>mār</i> (Schlange) – <span class='fa'>مَرد</span> <i>mard</i> (Mann).</p><p>Und: <span class='fa'>ر</span> ist der dritte „Einzelgänger“ – er verbindet sich nicht nach links.</p>",
+     "text": "<p>In der Wortmitte und am Ende ist <span class='fa'>ا</span> ein langes, dunkles <b>ā</b>. Das kurze, helle <b>a</b> ist nur ein Strich über dem Buchstaben: <span class='fa'>ـَ</span>.</p><p>Vergleiche: <span class='fa'>مار</span> <i>mār</i> (Schlange) – <span class='fa'>مَرد</span> <i>mard</i> (Mann).</p><p>Und: <span class='fa'>ر</span> ist der dritte „Einzelgänger“ – er verbindet sich nicht nach links.</p>",
      "beispiele": [
       {
        "fa": "مار",

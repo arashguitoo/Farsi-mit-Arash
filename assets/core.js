@@ -161,10 +161,36 @@
     try { const snap = await mitTimeout(ref("freigabe/" + s.klasse).once("value"), 6000); return snap.val() || {}; }
     catch (e) { return {}; }
   }
-  function istOffen(lek, freigaben) {
-    if (freigaben && typeof freigaben[lek.id] === "boolean") return freigaben[lek.id];
-    return lek.standard === "offen";
+  /* Bereiche (Anfänger, Fortgeschritten 1/2, Konversation): Freigabe unter freigabe/{klasse}/_b_{bereich} */
+  function bereichVon(lek, index) {
+    const bs = (index && index.bereiche) || [];
+    return bs.find(b => b.id === (lek.bereich || (bs[0] && bs[0].id))) || null;
   }
+  function istBereichOffen(b, freigaben) {
+    if (!b) return true;
+    if (freigaben && typeof freigaben["_b_" + b.id] === "boolean") return freigaben["_b_" + b.id];
+    return b.standard !== "gesperrt";
+  }
+  /* Einstufungstest: Lektion mit "testStationen"; andere Lektionen mit "voraussetzung": testId */
+  function testStand(test, fortAll) {
+    const f = (fortAll || {})[test.id] || {}, ids = test.testStationen || [];
+    let p = 0, m = 0, n = 0;
+    ids.forEach(id => { const e = f[id]; if (e) { p += e.p; m += e.m; n++; } });
+    const grenze = (test.bestehen || 70) / 100, quote = m ? p / m : 0;
+    return { p, m, erledigt: n, gesamt: ids.length, quote, prozent: Math.round(quote * 100), grenze: Math.round(grenze * 100),
+             bestanden: ids.length > 0 && n === ids.length && quote >= grenze - 1e-9 };
+  }
+  function sperrGrund(lek, freigaben, index, fortAll) {
+    if (index && !istBereichOffen(bereichVon(lek, index), freigaben)) return "bereich";
+    if (freigaben && typeof freigaben[lek.id] === "boolean") return freigaben[lek.id] ? null : "lehrkraft";
+    if (lek.standard !== "offen") return "lehrkraft";
+    if (lek.voraussetzung && index) {
+      const t = index.lektionen.find(l => l.id === lek.voraussetzung);
+      if (t && !testStand(t, fortAll).bestanden) return "test";
+    }
+    return null;
+  }
+  function istOffen(lek, freigaben, index, fortAll) { return !sperrGrund(lek, freigaben, index, fortAll); }
 
   /* ---------- Audio: eigene MP3 vor Sprachausgabe ---------- */
   let faStimme = null, stimmeGesucht = false, stimmeHinweis = false;
@@ -243,7 +269,7 @@
     initFB, ref, sitzung, anmelden, abmelden,
     einst, setEinst, anwendenEinst,
     ladeFortschritt, ladeAlleFortschritte, speichereStation,
-    ladeFreigaben, istOffen,
+    ladeFreigaben, istOffen, istBereichOffen, bereichVon, testStand, sperrGrund,
     sprich, ton, ladeJSON, ladeLektion
   };
 })();

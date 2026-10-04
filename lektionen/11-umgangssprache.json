@@ -1,0 +1,201 @@
+{
+ "id": "ug",
+ "art": "umgangssprache",
+ "titel": "Umgangssprache: So spricht man im Alltag",
+ "beschreibung": "Freiwilliger Extra-Teil: Perfekt im Gespräch – die Betonung macht’s.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "So spricht man: Perfekt",
+   "vorschau": "رَفتَم = رَفتِه‌اَم",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Schrift ≠ Gespräch",
+     "text": "<ul><li>Im Gespräch fällt das Partizip-<b>e</b> weg: <span class='fa'>رَفتِه‌اَم → رَفتَم</span>. Das klingt fast wie das Präteritum – aber die <b>Betonung</b> ist anders: Präteritum <i><b>raf</b>tam</i>, Perfekt <i>raf<b>tám</b></i>.</li><li>Bei er/sie bleibt nur das Partizip: <span class='fa'>آمَدِه اَست → اومَده</span> <i>ūmade</i></li><li><span class='fa'>را → رو</span> <i>ro</i> · <span class='fa'>مَعلومه!</span> – klar!</li></ul>",
+     "stil": "merke"
+    },
+    {
+     "typ": "paare",
+     "links": "x",
+     "paare": [
+      {
+       "fa": "رَفتِه‌اَم",
+       "tr": "rafte-am",
+       "de": "ich bin gegangen",
+       "x": "رَفتَم (raf-tám)"
+      },
+      {
+       "fa": "دیدِه‌ای",
+       "tr": "dīde-ī",
+       "de": "du hast gesehen",
+       "x": "دیدی (dī-dí)"
+      },
+      {
+       "fa": "آمَدِه اَست",
+       "tr": "āmade ast",
+       "de": "er/sie ist gekommen",
+       "x": "اومَده"
+      },
+      {
+       "fa": "خوردِه‌اَند",
+       "tr": "chorde-and",
+       "de": "sie haben gegessen",
+       "x": "خوردَن (chor-dán)"
+      },
+      {
+       "fa": "بودِه‌ای",
+       "tr": "būde-ī",
+       "de": "du bist gewesen",
+       "x": "بودی (bū-dí)"
+      }
+     ],
+     "titel": "Schrift ↔ Gespräch"
+    },
+    {
+     "typ": "sortieren",
+     "titel": "Schrift oder Gespräch?",
+     "frage": "Schriftsprache oder Umgangssprache?",
+     "kategorien": [
+      "✍️ Schriftsprache",
+      "🗣️ Umgangssprache"
+     ],
+     "items": [
+      {
+       "fa": "رَفتِه‌اَم",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "دیدِه‌ای",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "آمَدِه اَست",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "خوردِه‌اَند",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "بودِه‌ای",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "رَفتَم",
+       "k": 1,
+       "say": false,
+       "e": "<i>raftám</i> – geschrieben: <span class='fa'>رَفتِه‌اَم</span>"
+      },
+      {
+       "fa": "دیدی",
+       "k": 1,
+       "say": false,
+       "e": "<i>dīdí</i> – geschrieben: <span class='fa'>دیدِه‌ای</span>"
+      },
+      {
+       "fa": "اومَده",
+       "k": 1,
+       "say": false,
+       "e": "<i>ūmade</i> – geschrieben: <span class='fa'>آمَدِه اَست</span>"
+      },
+      {
+       "fa": "خوردَن",
+       "k": 1,
+       "say": false,
+       "e": "<i>chordán</i> – geschrieben: <span class='fa'>خوردِه‌اَند</span>"
+      },
+      {
+       "fa": "بودی",
+       "k": 1,
+       "say": false,
+       "e": "<i>būdí</i> – geschrieben: <span class='fa'>بودِه‌ای</span>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Hast du die Brücke gesehen?",
+   "vorschau": "رَفتی؟",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Unter Freunden",
+     "text": "Umgangssprache! Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "تا حالا اِصفَهان رَفتی؟",
+       "tr": "tā hālā esfahān raftí?",
+       "de": "Warst du schon mal in Isfahan?"
+      },
+      {
+       "fa": "آره، دو بار رَفتَم.",
+       "tr": "āre, do bār raftám.",
+       "de": "Ja, zweimal."
+      },
+      {
+       "fa": "سی‌وسه‌پُل رو دیدی؟",
+       "tr": "sī-o-se pol ro dīdí?",
+       "de": "Hast du die Si-o-se-Pol gesehen?"
+      },
+      {
+       "fa": "مَعلومه! خِیلی قَشَنگه.",
+       "tr": "maʿlūme! cheylī ghaschange.",
+       "de": "Klar! Sie ist sehr schön."
+      },
+      {
+       "fa": "مَن هَنوز نَرَفتَم…",
+       "tr": "man hanūz naraftám…",
+       "de": "Ich war noch nicht da …"
+      },
+      {
+       "fa": "پَس حَتماً بِرو!",
+       "tr": "pas hatman borou!",
+       "de": "Dann geh unbedingt hin!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Verstanden?",
+     "fragen": [
+      {
+       "frage": "Wie oft war die Person in Isfahan?",
+       "optionen": [
+        "zweimal",
+        "einmal",
+        "noch nie"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was bedeutet <span class='fa'>مَعلومه!</span>?",
+       "optionen": [
+        "Klar!",
+        "Schade!",
+        "Vielleicht!"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "<span class='fa'>رَفتی؟</span> (betont auf -tí) heißt hier …",
+       "optionen": [
+        "Warst du schon (dort)?",
+        "Gingst du gestern?",
+        "Gehst du?"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

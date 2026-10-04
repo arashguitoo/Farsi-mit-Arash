@@ -1,0 +1,174 @@
+{
+ "id": "ug",
+ "art": "umgangssprache",
+ "titel": "Umgangssprache: So spricht man im Alltag",
+ "beschreibung": "Freiwilliger Extra-Teil: Wie man das Passiv im Gespräch umgeht.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "So spricht man: Passiv",
+   "vorschau": "می‌گَن · دُرُستِش کَردَن",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Schrift ≠ Gespräch",
+     "text": "<p>Im Gespräch benutzt man das Passiv viel <b>seltener</b>. Stattdessen sagt man „<b>sie</b> haben …“ (3. Person Plural):</p><ul><li><span class='fa'>ساختِه شُد → ساختَنِش</span> – „sie haben es gebaut“</li><li><span class='fa'>گُفتِه می‌شَوَد → می‌گَن</span> – „man sagt“</li><li><span class='fa'>دَعوَت شُدیم → دَعوَتِمون کَردَن</span> – „sie haben uns eingeladen“</li><li><span class='fa'>یه تومَن</span> – im Gespräch oft: eine Million Toman!</li></ul>",
+     "stil": "merke"
+    },
+    {
+     "typ": "paare",
+     "links": "x",
+     "paare": [
+      {
+       "fa": "ساختِه شُد",
+       "tr": "sāchte schod",
+       "de": "wurde gebaut",
+       "x": "ساختَنِش"
+      },
+      {
+       "fa": "گُفتِه می‌شَوَد",
+       "tr": "gofte mīschawad",
+       "de": "es heißt",
+       "x": "می‌گَن"
+      },
+      {
+       "fa": "تَعمیر شُد",
+       "tr": "taʿmīr schod",
+       "de": "wurde repariert",
+       "x": "دُرُستِش کَردَن"
+      },
+      {
+       "fa": "دَعوَت شُدیم",
+       "tr": "daʿwat schodīm",
+       "de": "wir wurden eingeladen",
+       "x": "دَعوَتِمون کَردَن"
+      }
+     ],
+     "titel": "Schrift ↔ Gespräch"
+    },
+    {
+     "typ": "sortieren",
+     "titel": "Schrift oder Gespräch?",
+     "frage": "Schriftsprache oder Umgangssprache?",
+     "kategorien": [
+      "✍️ Schriftsprache",
+      "🗣️ Umgangssprache"
+     ],
+     "items": [
+      {
+       "fa": "ساختِه شُد",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "گُفتِه می‌شَوَد",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "تَعمیر شُد",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "دَعوَت شُدیم",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "ساختَنِش",
+       "k": 1,
+       "say": false,
+       "e": "<i>sāchtanesch</i> – geschrieben: <span class='fa'>ساختِه شُد</span>"
+      },
+      {
+       "fa": "می‌گَن",
+       "k": 1,
+       "say": false,
+       "e": "<i>mīgan</i> – geschrieben: <span class='fa'>گُفتِه می‌شَوَد</span>"
+      },
+      {
+       "fa": "دُرُستِش کَردَن",
+       "k": 1,
+       "say": false,
+       "e": "<i>dorostesch kardan</i> – geschrieben: <span class='fa'>تَعمیر شُد</span>"
+      },
+      {
+       "fa": "دَعوَتِمون کَردَن",
+       "k": 1,
+       "say": false,
+       "e": "<i>daʿwatemūn kardan</i> – geschrieben: <span class='fa'>دَعوَت شُدیم</span>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Das Handy ist wieder da",
+   "vorschau": "دُرُست شُد؟",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Unter Freunden",
+     "text": "Umgangssprache! Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "گوشیت دُرُست شُد؟",
+       "tr": "gūschīt dorost schod?",
+       "de": "Ist dein Handy wieder heil?"
+      },
+      {
+       "fa": "آره، صَفحه‌شو عَوَض کَردَن.",
+       "tr": "āre, safhascho ʿawaz kardan.",
+       "de": "Ja, sie haben das Display ausgetauscht."
+      },
+      {
+       "fa": "چَند گِرِفتَن؟",
+       "tr": "tschand gereftan?",
+       "de": "Wie viel haben sie genommen?"
+      },
+      {
+       "fa": "یه تومَن و نیم. می‌گَن قیمَتا بازَم میره بالا.",
+       "tr": "ye toman o nīm. mīgan gheymatā bāzam mīre bālā.",
+       "de": "Anderthalb Millionen. Es heißt, die Preise steigen noch weiter."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Verstanden?",
+     "fragen": [
+      {
+       "frage": "Was wurde am Handy gemacht?",
+       "optionen": [
+        "Das Display wurde ausgetauscht.",
+        "Der Akku wurde gewechselt.",
+        "Nichts."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was heißt <span class='fa'>می‌گَن</span>?",
+       "optionen": [
+        "man sagt / es heißt",
+        "ich sage",
+        "sag!"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was bedeutet <span class='fa'>یه تومَن</span> im Gespräch meistens?",
+       "optionen": [
+        "eine Million Toman",
+        "ein Toman",
+        "tausend Toman"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

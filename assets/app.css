@@ -397,3 +397,26 @@ details.teil:not([open])>summary::after{transform:rotate(-90deg)}
 details.teil-umgangssprache[open] .t-nr{background:var(--granat);color:#fff}
 .ug-banner{background:var(--granat-hell);border:0}
 .frage .fa-gross.satz{font-size:1.75rem;line-height:1.9}
+
+/* ---------- Bereiche auf der Startseite ---------- */
+.bereiche{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:18px 0 8px}
+@media (max-width:560px){.bereiche{grid-template-columns:1fr}}
+.bereich{display:flex;align-items:center;gap:12px;text-align:left;font:inherit;color:inherit;cursor:pointer;
+  background:var(--karte);border:1px solid var(--linie);border-radius:var(--r);padding:16px;box-shadow:var(--schatten);transition:border-color .15s, transform .15s}
+.bereich:hover{transform:translateY(-1px);border-color:var(--lapis)}
+.bereich.an{border:2px solid var(--lapis);background:var(--lapis-hell);padding:15px}
+.bereich.zu{opacity:.65}
+.bereich .b-icon{font-size:1.7rem}
+.bereich .b-text{flex:1;display:flex;flex-direction:column;gap:2px;min-width:0}
+.bereich .b-text b{font-size:1.08rem}
+.bereich .b-info{color:var(--lapis);font-weight:700}
+.bereich .b-fa{font-size:1.15rem;color:var(--tinte2)}
+.bereich-kopf{display:flex;justify-content:space-between;align-items:flex-end;gap:10px;margin:22px 0 4px;border-bottom:1px solid var(--linie);padding-bottom:8px}
+.bereich-kopf h2{margin:2px 0 0}
+.bereich-kopf .fa{font-size:1.3rem;color:var(--lapis)}
+span.fa{unicode-bidi:isolate}
+/* Regeltabellen in Info-Karten */
+table.ktab{width:100%;border-collapse:collapse;margin:10px 0;font-size:.95em}
+table.ktab th,table.ktab td{border:1px solid var(--linie);padding:7px 9px;text-align:left;vertical-align:top}
+table.ktab th{background:rgba(0,0,0,.04);font-weight:700}
+@media (max-width:560px){table.ktab{font-size:.85em}table.ktab th,table.ktab td{padding:5px 6px}}

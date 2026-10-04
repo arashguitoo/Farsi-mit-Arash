@@ -1,0 +1,836 @@
+{
+ "id": "tx",
+ "art": "texte",
+ "titel": "Texte & Dialoge",
+ "beschreibung": "Lesetexte mit Fragen und Dialoge zum Ordnen.",
+ "stationen": [
+  {
+   "id": "t1",
+   "titel": "Kurztext: Ein Tag von Reza",
+   "vorschau": "یِک روزِ رِضا",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>مِترو</span> <i>metro</i> – U-Bahn · <span class='fa'>شُروع شُدَن</span> <i>schorūʿ schodan</i> – beginnen · <span class='fa'>خانِواده‌اَش</span> – seine Familie</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Kurztext: Ein Tag von Reza",
+     "text": "Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "رِضا دانِشجو اَست و دَر تِهران زِندِگی می‌کُنَد.",
+       "tr": "rezā dāneschdschū ast o dar tehrān zendegī mīkonad.",
+       "de": "Reza ist Student und wohnt in Teheran."
+      },
+      {
+       "fa": "او هَر روز ساعَتِ شِش و نیم بیدار می‌شَوَد.",
+       "tr": "ū har rūz sāʿat-e schesch o nīm bīdār mīschawad.",
+       "de": "Er wacht jeden Tag um halb sieben auf."
+      },
+      {
+       "fa": "صُبحانِه نان و پَنیر و گِردو می‌خورَد و چای می‌نوشَد.",
+       "tr": "sobhāne nān o panīr o gerdū mīchorad o tschāy mīnūschad.",
+       "de": "Zum Frühstück isst er Brot, Käse und Walnüsse und trinkt Tee."
+      },
+      {
+       "fa": "ساعَتِ یِک رُبع بِه هَشت با مِترو بِه دانِشگاه می‌رَوَد.",
+       "tr": "sāʿat-e yek robʿ be hascht bā metro be dāneschgāh mīrawad.",
+       "de": "Um Viertel vor acht fährt er mit der U-Bahn zur Uni."
+      },
+      {
+       "fa": "کِلاس ساعَتِ هَشت و نیم شُروع می‌شَوَد.",
+       "tr": "kelās sāʿat-e hascht o nīm schorūʿ mīschawad.",
+       "de": "Der Unterricht beginnt um halb neun."
+      },
+      {
+       "fa": "ظُهر با دوستانَش دَر دانِشگاه ناهار می‌خورَد.",
+       "tr": "zohr bā dūstānasch dar dāneschgāh nāhār mīchorad.",
+       "de": "Mittags isst er mit seinen Freunden an der Uni zu Mittag."
+      },
+      {
+       "fa": "بَعدازظُهر دو ساعَت دَر کِتابخانِه دَرس می‌خوانَد.",
+       "tr": "baʿdazzohr do sāʿat dar ketābchāne dars mīchānad.",
+       "de": "Nachmittags lernt er zwei Stunden in der Bibliothek."
+      },
+      {
+       "fa": "ساعَتِ شِش بِه خانِه بَرمی‌گَردَد.",
+       "tr": "sāʿat-e schesch be chāne barmīgardad.",
+       "de": "Um sechs kommt er nach Hause zurück."
+      },
+      {
+       "fa": "شَب با خانِواده‌اَش شام می‌خورَد.",
+       "tr": "schab bā chānewādeasch schām mīchorad.",
+       "de": "Abends isst er mit seiner Familie zu Abend."
+      },
+      {
+       "fa": "رِضا جُمعه‌ها دَرس نِمی‌خوانَد؛ او فوتبال بازی می‌کُنَد.",
+       "tr": "rezā dschomʿehā dars nemīchānad; ū fūtbāl bāzī mīkonad.",
+       "de": "Freitags lernt Reza nicht; er spielt Fußball."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "رِضا دَر کیل زِندِگی می‌کُنَد.",
+       "fest": true,
+       "erkl": "Er wohnt in <b>Teheran</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "او ساعَتِ شِش و نیم بیدار می‌شَوَد.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "او با اُتوبوس بِه دانِشگاه می‌رَوَد.",
+       "fest": true,
+       "erkl": "Er fährt mit der <b>U-Bahn</b> (<span class='fa'>مِترو</span>)."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "کِلاس ساعَتِ هَشت و نیم شُروع می‌شَوَد.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "رِضا جُمعه‌ها دَرس می‌خوانَد.",
+       "fest": true,
+       "erkl": "Freitags spielt er Fußball."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Was trinkt Reza zum Frühstück?",
+       "optionen": [
+        "Tee",
+        "Kaffee",
+        "Milch"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wann fährt er zur Uni?",
+       "optionen": [
+        "um 7:45",
+        "um 8:30",
+        "um 6:30"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was macht er nachmittags?",
+       "optionen": [
+        "Er lernt in der Bibliothek.",
+        "Er arbeitet.",
+        "Er schläft."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Mit wem isst er zu Abend?",
+       "optionen": [
+        "mit seiner Familie",
+        "mit seinen Freunden",
+        "allein"
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "او هَر روز ساعَتِ شِش و نیم بیدار می‌شَوَد.",
+       "tr": "ū har rūz sāʿat-e schesch o nīm bīdār mīschawad.",
+       "de": "Er wacht jeden Tag um halb sieben auf."
+      },
+      {
+       "fa": "صُبحانِه نان و پَنیر و گِردو می‌خورَد و چای می‌نوشَد.",
+       "tr": "sobhāne nān o panīr o gerdū mīchorad o tschāy mīnūschad.",
+       "de": "Zum Frühstück isst er Brot, Käse und Walnüsse und trinkt Tee."
+      },
+      {
+       "fa": "ساعَتِ یِک رُبع بِه هَشت با مِترو بِه دانِشگاه می‌رَوَد.",
+       "tr": "sāʿat-e yek robʿ be hascht bā metro be dāneschgāh mīrawad.",
+       "de": "Um Viertel vor acht fährt er mit der U-Bahn zur Uni."
+      },
+      {
+       "fa": "کِلاس ساعَتِ هَشت و نیم شُروع می‌شَوَد.",
+       "tr": "kelās sāʿat-e hascht o nīm schorūʿ mīschawad.",
+       "de": "Der Unterricht beginnt um halb neun."
+      },
+      {
+       "fa": "ظُهر با دوستانَش دَر دانِشگاه ناهار می‌خورَد.",
+       "tr": "zohr bā dūstānasch dar dāneschgāh nāhār mīchorad.",
+       "de": "Mittags isst er mit seinen Freunden an der Uni zu Mittag."
+      },
+      {
+       "fa": "بَعدازظُهر دو ساعَت دَر کِتابخانِه دَرس می‌خوانَد.",
+       "tr": "baʿdazzohr do sāʿat dar ketābchāne dars mīchānad.",
+       "de": "Nachmittags lernt er zwei Stunden in der Bibliothek."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t2",
+   "titel": "Text: Was essen die Iraner am Tag?",
+   "vorschau": "ایرانی‌ها چه می‌خورَند؟",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>وَعده</span> <i>waʿde</i> – Mahlzeit · <span class='fa'>ساده</span> <i>sāde</i> – einfach · <span class='fa'>بَعضی‌ها</span> – manche · <span class='fa'>تَقریباً</span> <i>taghrīban</i> – fast · <span class='fa'>اَصلی</span> <i>aslī</i> – Haupt- · <span class='fa'>مَثَلاً</span> – zum Beispiel · <span class='fa'>دوباره</span> – wieder · <span class='fa'>سَبُک</span> <i>sabok</i> – leicht · <span class='fa'>هَست</span> – es gibt</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Text: Was essen die Iraner am Tag?",
+     "text": "Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "ایرانی‌ها مَعمولاً روزی سِه وَعده غَذا می‌خورَند: صُبحانِه، ناهار و شام.",
+       "tr": "īrānīhā maʿmūlan rūzī se waʿde ghazā mīchorand: sobhāne, nāhār o schām.",
+       "de": "Iraner essen normalerweise drei Mahlzeiten am Tag: Frühstück, Mittag- und Abendessen."
+      },
+      {
+       "fa": "صُبحانِه مَعمولاً ساده اَست.",
+       "tr": "sobhāne maʿmūlan sāde ast.",
+       "de": "Das Frühstück ist normalerweise einfach."
+      },
+      {
+       "fa": "خِیلی‌ها صُبح نان و پَنیر می‌خورَند.",
+       "tr": "cheylīhā sobh nān o panīr mīchorand.",
+       "de": "Viele essen morgens Brot und Käse."
+      },
+      {
+       "fa": "بَعضی‌ها با نان و پَنیر گِردو یا سَبزی هَم می‌خورَند.",
+       "tr": "baʿzīhā bā nān o panīr gerdū yā sabzī ham mīchorand.",
+       "de": "Manche essen zu Brot und Käse auch Walnüsse oder frische Kräuter."
+      },
+      {
+       "fa": "بَعضی‌ها کَرِه و مُرَبّا یا عَسَل دوست دارَند.",
+       "tr": "baʿzīhā kare o morabbā yā ʿasal dūst dārand.",
+       "de": "Manche mögen Butter und Marmelade oder Honig."
+      },
+      {
+       "fa": "با صُبحانِه تَقریباً هَمه چای می‌نوشَند.",
+       "tr": "bā sobhāne taghrīban hame tschāy mīnūschand.",
+       "de": "Zum Frühstück trinken fast alle Tee."
+      },
+      {
+       "fa": "ناهار غَذایِ اَصلیِ روز اَست.",
+       "tr": "nāhār ghazā-ye aslī-ye rūz ast.",
+       "de": "Das Mittagessen ist die Hauptmahlzeit des Tages."
+      },
+      {
+       "fa": "ایرانی‌ها مَعمولاً ساعَتِ یِک یا دو ناهار می‌خورَند.",
+       "tr": "īrānīhā maʿmūlan sāʿat-e yek yā do nāhār mīchorand.",
+       "de": "Iraner essen normalerweise um eins oder zwei zu Mittag."
+      },
+      {
+       "fa": "بَرای ناهار اَغلَب بِرِنج با خورِش می‌خورَند، مَثَلاً قورمه‌سَبزی.",
+       "tr": "barāye nāhār aghlab berendsch bā choresch mīchorand, masalan ghormesabzī.",
+       "de": "Zu Mittag essen sie oft Reis mit Schmorgericht, zum Beispiel Ghorme Sabzi."
+      },
+      {
+       "fa": "کِنارِ غَذا ماست، سالاد یا دوغ هَم هَست.",
+       "tr": "kenār-e ghazā māst, sālād yā dūgh ham hast.",
+       "de": "Zum Essen gibt es auch Joghurt, Salat oder Dugh."
+      },
+      {
+       "fa": "ساعَتِ پَنجِ بَعدازظُهر دوباره چای می‌نوشَند و میوه می‌خورَند.",
+       "tr": "sāʿat-e pandsch-e baʿdazzohr dobāre tschāy mīnūschand o mīwe mīchorand.",
+       "de": "Um fünf Uhr nachmittags trinken sie wieder Tee und essen Obst."
+      },
+      {
+       "fa": "شام را دیر می‌خورَند، مَعمولاً ساعَتِ نُه یا دَهِ شَب.",
+       "tr": "schām rā dīr mīchorand, maʿmūlan sāʿat-e noh yā dah-e schab.",
+       "de": "Zu Abend essen sie spät, normalerweise um neun oder zehn Uhr abends."
+      },
+      {
+       "fa": "شام گاهی سَبُک اَست: نان و پَنیر، آش یا عَدَسی.",
+       "tr": "schām gāhī sabok ast: nān o panīr, āsch yā ʿadasī.",
+       "de": "Das Abendessen ist manchmal leicht: Brot und Käse, Āsch oder Linsensuppe."
+      },
+      {
+       "fa": "جُمعه‌ها خانِواده‌ها اَغلَب با هَم ناهار می‌خورَند و کَباب دُرُست می‌کُنَند.",
+       "tr": "dschomʿehā chānewādehā aghlab bā ham nāhār mīchorand o kabāb dorost mīkonand.",
+       "de": "Freitags essen Familien oft zusammen zu Mittag und machen Kebab."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "صُبحانِه دَر ایران مَعمولاً ساده اَست.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "ناهار غَذایِ اَصلیِ روز اَست.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "ایرانی‌ها ساعَتِ شِش شام می‌خورَند.",
+       "fest": true,
+       "erkl": "Sie essen spät – um <b>neun oder zehn</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "بَعدازظُهر هَم چای می‌نوشَند.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "جُمعه‌ها هَمه تَنها غَذا می‌خورَند.",
+       "fest": true,
+       "erkl": "Freitags essen Familien oft <b>zusammen</b>."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Was isst man oft zum Frühstück?",
+       "optionen": [
+        "Brot und Käse",
+        "Reis mit Schmorgericht",
+        "Kebab"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was trinken fast alle zum Frühstück?",
+       "optionen": [
+        "Tee",
+        "Kaffee",
+        "Dugh"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was ist die Hauptmahlzeit?",
+       "optionen": [
+        "das Mittagessen",
+        "das Frühstück",
+        "das Abendessen"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was ist Ghorme Sabzi?",
+       "optionen": [
+        "ein Schmorgericht",
+        "ein Getränk",
+        "eine Brotsorte"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was macht man freitags oft?",
+       "optionen": [
+        "mit der Familie essen und Kebab machen",
+        "nicht essen",
+        "ins Restaurant gehen"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t3",
+   "titel": "Profi-Text: Familie Karimi in Kiel",
+   "vorschau": "خانواده‌ی کریمی",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>شرکت</span> <i>scherkat</i> – Firma · <span class='fa'>مدرسه</span> <i>madrese</i> – Schule · <span class='fa'>درس دادن</span> – unterrichten · <span class='fa'>بیرون</span> – draußen, auswärts · <span class='fa'>بازار</span> – Markt · <span class='fa'>قدم زدن</span> – spazieren gehen · <span class='fa'>آقای … / خانمِ …</span> – Herr … / Frau …</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Profi-Text: Familie Karimi in Kiel",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "خانواده‌ی کریمی در کیل زندگی می‌کند.",
+       "tr": "chānewāde-ye karīmī dar kīl zendegī mīkonad.",
+       "de": "Die Familie Karimi wohnt in Kiel."
+      },
+      {
+       "fa": "آقای کریمی مهندس است و در یک شرکت کار می‌کند.",
+       "tr": "āghā-ye karīmī mohandes ast o dar yek scherkat kār mīkonad.",
+       "de": "Herr Karimi ist Ingenieur und arbeitet in einer Firma."
+      },
+      {
+       "fa": "خانم کریمی معلم است و صبح‌ها در مدرسه درس می‌دهد.",
+       "tr": "chānom-e karīmī moʿallem ast o sobhhā dar madrese dars mīdahad.",
+       "de": "Frau Karimi ist Lehrerin und unterrichtet vormittags in der Schule."
+      },
+      {
+       "fa": "آنها دو بچه دارند: سارا و امید.",
+       "tr": "ānhā do batsche dārand: sārā o omīd.",
+       "de": "Sie haben zwei Kinder: Sara und Omid."
+      },
+      {
+       "fa": "بچه‌ها ساعت هفت و نیم با دوچرخه به مدرسه می‌روند.",
+       "tr": "batschehā sāʿat-e haft o nīm bā dotscharche be madrese mīrawand.",
+       "de": "Die Kinder fahren um halb acht mit dem Fahrrad zur Schule."
+      },
+      {
+       "fa": "ظهر همه بیرون غذا می‌خورند.",
+       "tr": "zohr hame bīrūn ghazā mīchorand.",
+       "de": "Mittags essen alle auswärts."
+      },
+      {
+       "fa": "شب‌ها خانواده با هم شام می‌خورد و فارسی صحبت می‌کند.",
+       "tr": "schabhā chānewāde bā ham schām mīchorad o fārsī sohbat mīkonad.",
+       "de": "Abends isst die Familie zusammen und spricht Persisch."
+      },
+      {
+       "fa": "سارا و امید آلمانی خیلی خوب صحبت می‌کنند.",
+       "tr": "sārā o omīd ālmānī cheylī chūb sohbat mīkonand.",
+       "de": "Sara und Omid sprechen sehr gut Deutsch."
+      },
+      {
+       "fa": "شنبه‌ها خانم کریمی به بازار می‌رود و میوه و سبزی می‌خرد.",
+       "tr": "schanbehā chānom-e karīmī be bāzār mīrawad o mīwe o sabzī mīcharad.",
+       "de": "Samstags geht Frau Karimi auf den Markt und kauft Obst und Gemüse."
+      },
+      {
+       "fa": "یکشنبه‌ها آنها کنار دریا قدم می‌زنند.",
+       "tr": "yekschanbehā ānhā kenār-e daryā ghadam mīzanand.",
+       "de": "Sonntags gehen sie am Meer spazieren."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "آقای کریمی معلم است.",
+       "fest": true,
+       "erkl": "Er ist <b>Ingenieur</b>; seine Frau ist Lehrerin."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "بچه‌ها با دوچرخه به مدرسه می‌روند.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "خانواده شب‌ها فارسی صحبت می‌کند.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "یکشنبه‌ها به بازار می‌روند.",
+       "fest": true,
+       "erkl": "Auf den Markt geht Frau Karimi <b>samstags</b>."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Wie viele Kinder haben die Karimis?",
+       "optionen": [
+        "zwei",
+        "drei",
+        "eins"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wann fahren die Kinder zur Schule?",
+       "optionen": [
+        "um halb acht",
+        "um acht",
+        "um sieben"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was macht die Familie sonntags?",
+       "optionen": [
+        "am Meer spazieren gehen",
+        "auf den Markt gehen",
+        "Kebab machen"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d1",
+   "titel": "Dialog: Wann stehst du auf?",
+   "vorschau": "ساعَتِ چَند بیدار می‌شَوی؟",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Mina und Ali vergleichen ihren Morgen.</p><p><span class='fa'>اِینقَدر</span> <i>īnghadr</i> – so (sehr) · <span class='fa'>قَبل اَز</span> – vor · <span class='fa'>بَعد اَز</span> – nach · <span class='fa'>فَقَط</span> <i>faghat</i> – nur</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "مینا: عَلی، تو صُبح‌ها ساعَتِ چَند بیدار می‌شَوی؟",
+       "tr": "ʿalī, to sobhhā sāʿat-e tschand bīdār mīschawī?",
+       "de": "Ali, um wie viel Uhr wachst du morgens auf?"
+      },
+      {
+       "fa": "عَلی: ساعَتِ هَفت. و تو؟",
+       "tr": "sāʿat-e haft. o to?",
+       "de": "Um sieben. Und du?"
+      },
+      {
+       "fa": "مینا: مَن خِیلی زود بیدار می‌شَوَم، ساعَتِ شِش.",
+       "tr": "man cheylī zūd bīdār mīschawam, sāʿat-e schesch.",
+       "de": "Ich wache sehr früh auf, um sechs."
+      },
+      {
+       "fa": "عَلی: چِرا اِینقَدر زود؟",
+       "tr": "tscherā īnghadr zūd?",
+       "de": "Warum so früh?"
+      },
+      {
+       "fa": "مینا: چون قَبل اَز کِلاس وَرزِش می‌کُنَم.",
+       "tr": "tschūn ghabl az kelās warzesch mīkonam.",
+       "de": "Weil ich vor dem Unterricht Sport mache."
+      },
+      {
+       "fa": "عَلی: صُبحانِه هَم می‌خوری؟",
+       "tr": "sobhāne ham mīchorī?",
+       "de": "Frühstückst du auch?"
+      },
+      {
+       "fa": "مینا: بَله، بَعد اَز وَرزِش نان و پَنیر می‌خورَم.",
+       "tr": "bale, baʿd az warzesch nān o panīr mīchoram.",
+       "de": "Ja, nach dem Sport esse ich Brot und Käse."
+      },
+      {
+       "fa": "عَلی: مَن صُبحانِه نِمی‌خورَم، فَقَط قَهوِه می‌نوشَم!",
+       "tr": "man sobhāne nemīchoram, faghat ghahwe mīnūscham!",
+       "de": "Ich frühstücke nicht, ich trinke nur Kaffee!"
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "مینا: عَلی، تو صُبح‌ها ساعَتِ چَند بیدار می‌شَوی؟",
+       "tr": "ʿalī, to sobhhā sāʿat-e tschand bīdār mīschawī?",
+       "de": "Ali, um wie viel Uhr wachst du morgens auf?"
+      },
+      {
+       "fa": "عَلی: ساعَتِ هَفت. و تو؟",
+       "tr": "sāʿat-e haft. o to?",
+       "de": "Um sieben. Und du?"
+      },
+      {
+       "fa": "مینا: مَن خِیلی زود بیدار می‌شَوَم، ساعَتِ شِش.",
+       "tr": "man cheylī zūd bīdār mīschawam, sāʿat-e schesch.",
+       "de": "Ich wache sehr früh auf, um sechs."
+      },
+      {
+       "fa": "عَلی: چِرا اِینقَدر زود؟",
+       "tr": "tscherā īnghadr zūd?",
+       "de": "Warum so früh?"
+      },
+      {
+       "fa": "مینا: چون قَبل اَز کِلاس وَرزِش می‌کُنَم.",
+       "tr": "tschūn ghabl az kelās warzesch mīkonam.",
+       "de": "Weil ich vor dem Unterricht Sport mache."
+      },
+      {
+       "fa": "عَلی: صُبحانِه هَم می‌خوری؟",
+       "tr": "sobhāne ham mīchorī?",
+       "de": "Frühstückst du auch?"
+      },
+      {
+       "fa": "مینا: بَله، بَعد اَز وَرزِش نان و پَنیر می‌خورَم.",
+       "tr": "bale, baʿd az warzesch nān o panīr mīchoram.",
+       "de": "Ja, nach dem Sport esse ich Brot und Käse."
+      },
+      {
+       "fa": "عَلی: مَن صُبحانِه نِمی‌خورَم، فَقَط قَهوِه می‌نوشَم!",
+       "tr": "man sobhāne nemīchoram, faghat ghahwe mīnūscham!",
+       "de": "Ich frühstücke nicht, ich trinke nur Kaffee!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Wann wacht Mina auf?",
+       "optionen": [
+        "um sechs",
+        "um sieben",
+        "um halb sieben"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was macht Mina vor dem Unterricht?",
+       "optionen": [
+        "Sport",
+        "Sie lernt.",
+        "Sie kocht."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was frühstückt Ali?",
+       "optionen": [
+        "nichts – nur Kaffee",
+        "Brot und Käse",
+        "Tee und Honig"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d2",
+   "titel": "Dialog: Hast du am Dienstag Zeit?",
+   "vorschau": "سه‌شَنبه وَقت داری؟",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Sara und Babak suchen einen Termin zum gemeinsamen Lernen.</p><p><span class='fa'>مُتَأَسِّفَم</span> <i>motaʾassefam</i> – tut mir leid · <span class='fa'>تا</span> – bis · <span class='fa'>پَس</span> – also · <span class='fa'>بِخوانیم؟</span> – sollen wir lernen? (diese Form lernst du später)</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "سارا: بابَک، سه‌شَنبه وَقت داری؟ با هَم فارسی بِخوانیم؟",
+       "tr": "bābak, seschanbe waght dārī? bā ham fārsī bechānīm?",
+       "de": "Babak, hast du Dienstag Zeit? Wollen wir zusammen Persisch lernen?"
+      },
+      {
+       "fa": "بابَک: نَه، مُتَأَسِّفَم. سه‌شَنبه‌ها تا ساعَتِ شِش کار می‌کُنَم.",
+       "tr": "na, motaʾassefam. seschanbehā tā sāʿat-e schesch kār mīkonam.",
+       "de": "Nein, tut mir leid. Dienstags arbeite ich bis sechs."
+      },
+      {
+       "fa": "سارا: چَهارشَنبه چِطور؟",
+       "tr": "tschahārschanbe tschetor?",
+       "de": "Wie wäre Mittwoch?"
+      },
+      {
+       "fa": "بابَک: چَهارشَنبه خوب اَست. ساعَتِ چَند؟",
+       "tr": "tschahārschanbe chūb ast. sāʿat-e tschand?",
+       "de": "Mittwoch ist gut. Um wie viel Uhr?"
+      },
+      {
+       "fa": "سارا: ساعَتِ چَهار و نیم دَر کِتابخانِه؟",
+       "tr": "sāʿat-e tschahār o nīm dar ketābchāne?",
+       "de": "Um halb fünf in der Bibliothek?"
+      },
+      {
+       "fa": "بابَک: عالی اَست! پَس چَهارشَنبه، ساعَتِ چَهار و نیم.",
+       "tr": "ʿālī ast! pas tschahārschanbe, sāʿat-e tschahār o nīm.",
+       "de": "Super! Also Mittwoch um halb fünf."
+      },
+      {
+       "fa": "سارا: خوب اَست. خُداحافِظ!",
+       "tr": "chūb ast. chodāhāfez!",
+       "de": "Gut. Tschüss!"
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "سارا: بابَک، سه‌شَنبه وَقت داری؟ با هَم فارسی بِخوانیم؟",
+       "tr": "bābak, seschanbe waght dārī? bā ham fārsī bechānīm?",
+       "de": "Babak, hast du Dienstag Zeit? Wollen wir zusammen Persisch lernen?"
+      },
+      {
+       "fa": "بابَک: نَه، مُتَأَسِّفَم. سه‌شَنبه‌ها تا ساعَتِ شِش کار می‌کُنَم.",
+       "tr": "na, motaʾassefam. seschanbehā tā sāʿat-e schesch kār mīkonam.",
+       "de": "Nein, tut mir leid. Dienstags arbeite ich bis sechs."
+      },
+      {
+       "fa": "سارا: چَهارشَنبه چِطور؟",
+       "tr": "tschahārschanbe tschetor?",
+       "de": "Wie wäre Mittwoch?"
+      },
+      {
+       "fa": "بابَک: چَهارشَنبه خوب اَست. ساعَتِ چَند؟",
+       "tr": "tschahārschanbe chūb ast. sāʿat-e tschand?",
+       "de": "Mittwoch ist gut. Um wie viel Uhr?"
+      },
+      {
+       "fa": "سارا: ساعَتِ چَهار و نیم دَر کِتابخانِه؟",
+       "tr": "sāʿat-e tschahār o nīm dar ketābchāne?",
+       "de": "Um halb fünf in der Bibliothek?"
+      },
+      {
+       "fa": "بابَک: عالی اَست! پَس چَهارشَنبه، ساعَتِ چَهار و نیم.",
+       "tr": "ʿālī ast! pas tschahārschanbe, sāʿat-e tschahār o nīm.",
+       "de": "Super! Also Mittwoch um halb fünf."
+      },
+      {
+       "fa": "سارا: خوب اَست. خُداحافِظ!",
+       "tr": "chūb ast. chodāhāfez!",
+       "de": "Gut. Tschüss!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Warum hat Babak am Dienstag keine Zeit?",
+       "optionen": [
+        "Er arbeitet bis sechs.",
+        "Er hat Unterricht.",
+        "Er ist krank."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wann treffen sie sich?",
+       "optionen": [
+        "Mittwoch, 16:30",
+        "Dienstag, 18:00",
+        "Mittwoch, 14:30"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wo treffen sie sich?",
+       "optionen": [
+        "in der Bibliothek",
+        "im Café",
+        "an der Uni-Mensa"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

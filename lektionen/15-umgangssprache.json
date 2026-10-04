@@ -1,0 +1,215 @@
+{
+ "id": "ug",
+ "art": "umgangssprache",
+ "titel": "Umgangssprache: So spricht man im Alltag",
+ "beschreibung": "Freiwilliger Extra-Teil: Imperativ und Gastfreundschaft im Gespräch.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "So spricht man: Imperativ",
+   "vorschau": "بِرین · بیاین",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Schrift ≠ Gespräch",
+     "text": "<ul><li><b>-īd → -īn</b>: <span class='fa'>بِرَوید → بِرین</span>, <span class='fa'>بیایید → بیاین</span>, <span class='fa'>بِفَرمایید → بِفَرمایین</span></li><li><span class='fa'>بِنِشین → بِشین</span> · <span class='fa'>بیا تو!</span> – komm rein!</li><li><span class='fa'>تَعارُف نَکُن!</span> – zier dich nicht! (Taarof = höfliches Ablehnen)</li><li><span class='fa'>دَستِت دَرد نَکُنه!</span> – Dank für Essen oder Hilfe (wörtl. „deine Hand soll nicht schmerzen“)</li></ul>",
+     "stil": "merke"
+    },
+    {
+     "typ": "paare",
+     "links": "x",
+     "paare": [
+      {
+       "fa": "بِرَوید",
+       "tr": "berawīd",
+       "de": "geht / gehen Sie",
+       "x": "بِرین"
+      },
+      {
+       "fa": "بیایید",
+       "tr": "biyāyīd",
+       "de": "kommt / kommen Sie",
+       "x": "بیاین"
+      },
+      {
+       "fa": "بِگو",
+       "tr": "begū",
+       "de": "sag!",
+       "x": "بُگو"
+      },
+      {
+       "fa": "بِفَرمایید",
+       "tr": "befarmāyīd",
+       "de": "bitte schön",
+       "x": "بِفَرمایین"
+      },
+      {
+       "fa": "بِنِشینید",
+       "tr": "beneschīnīd",
+       "de": "setzen Sie sich",
+       "x": "بِشینین"
+      },
+      {
+       "fa": "بِدِه",
+       "tr": "bede",
+       "de": "gib!",
+       "x": "بِده"
+      }
+     ],
+     "titel": "Schrift ↔ Gespräch"
+    },
+    {
+     "typ": "sortieren",
+     "titel": "Schrift oder Gespräch?",
+     "frage": "Schriftsprache oder Umgangssprache?",
+     "kategorien": [
+      "✍️ Schriftsprache",
+      "🗣️ Umgangssprache"
+     ],
+     "items": [
+      {
+       "fa": "بِرَوید",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "بیایید",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "بِگو",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "بِفَرمایید",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "بِنِشینید",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "بِدِه",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "بِرین",
+       "k": 1,
+       "say": false,
+       "e": "<i>berīn</i> – geschrieben: <span class='fa'>بِرَوید</span>"
+      },
+      {
+       "fa": "بیاین",
+       "k": 1,
+       "say": false,
+       "e": "<i>biyāyn</i> – geschrieben: <span class='fa'>بیایید</span>"
+      },
+      {
+       "fa": "بُگو",
+       "k": 1,
+       "say": false,
+       "e": "<i>bogū</i> – geschrieben: <span class='fa'>بِگو</span>"
+      },
+      {
+       "fa": "بِفَرمایین",
+       "k": 1,
+       "say": false,
+       "e": "<i>befarmāyīn</i> – geschrieben: <span class='fa'>بِفَرمایید</span>"
+      },
+      {
+       "fa": "بِشینین",
+       "k": 1,
+       "say": false,
+       "e": "<i>beschīnīn</i> – geschrieben: <span class='fa'>بِنِشینید</span>"
+      },
+      {
+       "fa": "بِده",
+       "k": 1,
+       "say": false,
+       "e": "<i>bede</i> – geschrieben: <span class='fa'>بِدِه</span>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Zu Besuch",
+   "vorschau": "تَعارُف نَکُن!",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Bei Freunden zum Essen",
+     "text": "Umgangssprache! Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "بیا تو! بِشین!",
+       "tr": "biyā tū! beschīn!",
+       "de": "Komm rein! Setz dich!"
+      },
+      {
+       "fa": "مِرسی. چه بوی خوبی میاد!",
+       "tr": "mersī. tsche bū-ye chūbī miyād!",
+       "de": "Danke. Wie gut das riecht!"
+      },
+      {
+       "fa": "کوکو دُرُست کَردَم. بُخور، تَعارُف نَکُن!",
+       "tr": "kūkū dorost kardam. bochor, taʿārof nakon!",
+       "de": "Ich habe Kuku gemacht. Iss, zier dich nicht!"
+      },
+      {
+       "fa": "دَستِت دَرد نَکُنه! خِیلی خوشمَزه‌ست.",
+       "tr": "dastet dard nakone! cheylī choschmazast.",
+       "de": "Danke dir! (wörtl.: Deine Hand soll nicht schmerzen) Sehr lecker."
+      },
+      {
+       "fa": "نوشِ جون! بازَم بَردار!",
+       "tr": "nūsch-e dschūn! bāzam bardār!",
+       "de": "Guten Appetit! Nimm noch mehr!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Verstanden?",
+     "fragen": [
+      {
+       "frage": "Was hat die Gastgeberin gekocht?",
+       "optionen": [
+        "Kuku",
+        "Kebab",
+        "Suppe"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was sagt man, um sich für Essen zu bedanken?",
+       "optionen": [
+        "دستت درد نکنه!",
+        "نوش جون!",
+        "بیا تو!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>تَعارُف نَکُن!</span> bedeutet …",
+       "optionen": [
+        "Zier dich nicht! / Greif zu!",
+        "Iss nicht!",
+        "Komm nicht!"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

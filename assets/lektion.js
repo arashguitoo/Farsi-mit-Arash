@@ -453,7 +453,18 @@
   const LABEL = { lernpfad: "Station", texte: "Text", zusatz: "Übung", umgangssprache: "Umgangssprache" };
   function stLabel(i) {
     const s = LEK.stationen[i], art = artVon(s);
-    return LABEL[art] + " " + LEK.stationen.slice(0, i + 1).filter(x => artVon(x) === art).length;
+    return (LEK.testStationen && art === "lernpfad" ? "Abschnitt" : LABEL[art]) + " " + LEK.stationen.slice(0, i + 1).filter(x => artVon(x) === art).length;
+  }
+
+  function testBox() {
+    const t = F.testStand({ id: LEK_ID, testStationen: LEK.testStationen, bestehen: LEK.bestehen }, { [LEK_ID]: FORT });
+    const farbe = t.bestanden ? "var(--gruen)" : "var(--lapis)";
+    return `<div class="karte testbox" style="border-left:6px solid ${farbe};margin-bottom:14px">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+        <div><b>${t.bestanden ? "✓ Bestanden!" : "Dein Stand"}</b><br><span class="klein muted">${t.erledigt} von ${t.gesamt} Abschnitten erledigt · bestehen ab ${t.grenze} %</span></div>
+        <div style="font-size:1.8rem;font-weight:800;color:${farbe}">${t.m ? t.prozent + " %" : "–"}</div></div>
+      <div class="t-leiste" style="margin-top:8px"><i style="width:${t.prozent}%;background:${farbe}"></i></div>
+      <p class="klein muted" style="margin:.6em 0 0">${t.bestanden ? "Die nächsten Lektionen sind jetzt offen." : t.erledigt === t.gesamt ? "Wiederhole einzelne Abschnitte – es zählt immer dein bestes Ergebnis." : "Du kannst die Abschnitte in beliebiger Reihenfolge und an verschiedenen Tagen machen. Dein Stand wird gespeichert."}</p></div>`;
   }
 
   function zeigeUebersicht() {
@@ -476,7 +487,8 @@
         <h2>${esc(LEK.titel)}</h2>
         ${LEK.einleitung ? `<p class="muted" style="margin:.3em 0 0">${LEK.einleitung}</p>` : ""}
       </div>
-      ${TEILE.map(t => {
+      ${LEK.testStationen ? testBox() : ""}
+      ${(LEK.testStationen ? [{ art: "lernpfad", nr: "✎", titel: "Abschnitte", text: "Alle Abschnitte bearbeiten – ab " + (LEK.bestehen || 70) + " % bestanden" }] : TEILE).map(t => {
         const liste = idx.filter(x => x.art === t.art);
         if (!liste.length) return "";
         const erl = liste.filter(x => FORT[x.s.id]).length;
@@ -594,12 +606,16 @@
       const eintrag = index.lektionen.find(l => l.id === LEK_ID);
       if (!eintrag) throw new Error("Lektion nicht gefunden");
       const frei = await F.ladeFreigaben();
-      if (!F.istOffen(eintrag, frei)) {
-        $("#buehne").innerHTML = `<div class="karte abschluss"><div class="sterne">🔒</div><h2>Diese Lektion ist noch nicht freigeschaltet.</h2><p><a href="index.html">Zurück zum Lernpfad</a></p></div>`;
+      const fortAll = eintrag.voraussetzung ? await F.ladeAlleFortschritte() : null;
+      const grund = F.sperrGrund(eintrag, frei, index, fortAll);
+      if (grund) {
+        const vt = grund === "test" ? index.lektionen.find(l => l.id === eintrag.voraussetzung) : null;
+        $("#buehne").innerHTML = `<div class="karte abschluss"><div class="sterne">🔒</div><h2>Diese Lektion ist noch nicht freigeschaltet.</h2>${vt ? `<p>Sie öffnet sich, sobald du <b>${esc(vt.titel)}</b> mit mindestens ${F.testStand(vt, fortAll).grenze} % bestanden hast (im Moment: ${F.testStand(vt, fortAll).prozent} %).</p><p><a class="btn" href="lektion.html?id=${encodeURIComponent(vt.id)}" style="text-decoration:none">Zum Test</a></p>` : ""}<p><a href="index.html">Zurück zum Lernpfad</a></p></div>`;
         return;
       }
       LEK = await F.ladeLektion(eintrag);
       LEK.nummer = eintrag.nummer;
+      if (eintrag.testStationen) { LEK.testStationen = eintrag.testStationen; LEK.bestehen = eintrag.bestehen || 70; }
       document.title = LEK.titel + " · Farsi-Lernpfad";
       $("#lekTitel").textContent = "Lektion " + eintrag.nummer + " · " + LEK.titel;
     } catch (err) {

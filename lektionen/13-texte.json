@@ -1,0 +1,777 @@
+{
+ "id": "tx",
+ "art": "texte",
+ "titel": "Texte & Dialoge",
+ "beschreibung": "Lesetexte mit Fragen und Dialoge zum Ordnen.",
+ "stationen": [
+  {
+   "id": "t1",
+   "titel": "Kurztext: Nimas Wochenende",
+   "vorschau": "آخر هفته‌ی نیما",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>ریاضی</span> – Mathe · <span class='fa'>در این صورت</span> – in diesem Fall · <span class='fa'>به کسی سر زدن</span> – jemanden kurz besuchen · <span class='fa'>راه رفتن</span> – laufen, gehen</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Kurztext: Nimas Wochenende",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "نیما آخر هفته کارهای زیادی دارد.",
+       "tr": "nīmā āchar-e hafte kārhā-ye ziyādī dārad.",
+       "de": "Nima hat am Wochenende viel zu tun."
+      },
+      {
+       "fa": "شنبه صبح باید برای امتحان ریاضی درس بخواند.",
+       "tr": "schanbe sobh bāyad barāye emtehān-e riyāzī dars bechānad.",
+       "de": "Samstagmorgen muss er für die Mathe-Prüfung lernen."
+      },
+      {
+       "fa": "بعدازظهر می‌خواهد با دوستانش فوتبال بازی کند.",
+       "tr": "baʿdazzohr mīchāhad bā dūstānasch fūtbāl bāzī konad.",
+       "de": "Nachmittags will er mit seinen Freunden Fußball spielen."
+      },
+      {
+       "fa": "اما شاید باران بیاید؛ در این صورت به سینما می‌روند.",
+       "tr": "ammā schāyad bārān biyāyad; dar īn sūrat be sīnamā mīrawand.",
+       "de": "Aber vielleicht regnet es; in diesem Fall gehen sie ins Kino."
+      },
+      {
+       "fa": "یکشنبه نیما می‌خواهد به مادربزرگش سر بزند.",
+       "tr": "yekschanbe nīmā mīchāhad be mādarbozorgasch sar bezanad.",
+       "de": "Am Sonntag will Nima seine Großmutter besuchen."
+      },
+      {
+       "fa": "مادربزرگش نمی‌تواند خوب راه برود، برای همین نیما باید برایش خرید کند.",
+       "tr": "mādarbozorgasch nemītawānad chūb rāh beravad, barāye hamīn nīmā bāyad barāyasch charīd konad.",
+       "de": "Seine Großmutter kann nicht gut laufen, deshalb muss Nima für sie einkaufen."
+      },
+      {
+       "fa": "شب دوست دارد استراحت کند و گیتار بزند.",
+       "tr": "schab dūst dārad esterāhat konad o gītār bezanad.",
+       "de": "Abends möchte er sich ausruhen und Gitarre spielen."
+      },
+      {
+       "fa": "نیما می‌گوید: «آخر هفته‌ام از روزهای هفته شلوغ‌تر است!»",
+       "tr": "nīmā mīgūyad: «āchar-e hafteam az rūzhā-ye hafte schologhtar ast!»",
+       "de": "Nima sagt: „Mein Wochenende ist voller als die Wochentage!“"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "نیما شنبه صبح باید درس بخواند.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "او می‌خواهد شنبه بعدازظهر شنا کند.",
+       "fest": true,
+       "erkl": "Er will <b>Fußball spielen</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "اگر باران بیاید، به سینما می‌روند.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "مادربزرگش خوب راه می‌رود.",
+       "fest": true,
+       "erkl": "Sie kann <b>nicht gut</b> laufen."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "نیما شب می‌خواهد گیتار بزند.",
+       "fest": true
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Für welches Fach muss Nima lernen?",
+       "optionen": [
+        "Mathe",
+        "Persisch",
+        "Englisch"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wen will er am Sonntag besuchen?",
+       "optionen": [
+        "seine Großmutter",
+        "seinen Bruder",
+        "seine Freunde"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was muss er für sie tun?",
+       "optionen": [
+        "einkaufen",
+        "kochen",
+        "putzen"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was sagt Nima über sein Wochenende?",
+       "optionen": [
+        "Es ist voller als die Woche.",
+        "Es ist langweilig.",
+        "Es ist zu kurz."
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "شنبه صبح باید برای امتحان ریاضی درس بخواند.",
+       "tr": "schanbe sobh bāyad barāye emtehān-e riyāzī dars bechānad.",
+       "de": "Samstagmorgen muss er für die Mathe-Prüfung lernen."
+      },
+      {
+       "fa": "بعدازظهر می‌خواهد با دوستانش فوتبال بازی کند.",
+       "tr": "baʿdazzohr mīchāhad bā dūstānasch fūtbāl bāzī konad.",
+       "de": "Nachmittags will er mit seinen Freunden Fußball spielen."
+      },
+      {
+       "fa": "اما شاید باران بیاید؛ در این صورت به سینما می‌روند.",
+       "tr": "ammā schāyad bārān biyāyad; dar īn sūrat be sīnamā mīrawand.",
+       "de": "Aber vielleicht regnet es; in diesem Fall gehen sie ins Kino."
+      },
+      {
+       "fa": "یکشنبه نیما می‌خواهد به مادربزرگش سر بزند.",
+       "tr": "yekschanbe nīmā mīchāhad be mādarbozorgasch sar bezanad.",
+       "de": "Am Sonntag will Nima seine Großmutter besuchen."
+      },
+      {
+       "fa": "مادربزرگش نمی‌تواند خوب راه برود، برای همین نیما باید برایش خرید کند.",
+       "tr": "mādarbozorgasch nemītawānad chūb rāh beravad, barāye hamīn nīmā bāyad barāyasch charīd konad.",
+       "de": "Seine Großmutter kann nicht gut laufen, deshalb muss Nima für sie einkaufen."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t2",
+   "titel": "Text: Freizeit in Iran",
+   "vorschau": "اوقات فراغت در ایران",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>اوقات فراغت</span> – Freizeit · <span class='fa'>می‌توان</span> – man kann · <span class='fa'>صدها</span> – Hunderte · <span class='fa'>محبوب</span> – beliebt · <span class='fa'>قله</span> – Gipfel · <span class='fa'>طبیعت</span> – Natur · <span class='fa'>تیم ملی</span> – Nationalmannschaft · <span class='fa'>کشتی</span> – Ringen · <span class='fa'>طرفدار</span> – Fan · <span class='fa'>سه‌تار</span> – Setar (Langhalslaute)</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Text: Freizeit in Iran",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "جوان‌های ایرانی در وقت آزادشان چه کار می‌کنند؟",
+       "tr": "dschawānhā-ye īrānī dar waght-e āzādeschān tsche kār mīkonand?",
+       "de": "Was machen junge Iraner in ihrer Freizeit?"
+      },
+      {
+       "fa": "خیلی‌ها دوست دارند با دوستانشان به کافه بروند.",
+       "tr": "cheylīhā dūst dārand bā dūstāneschān be kāfe berawand.",
+       "de": "Viele gehen gern mit ihren Freunden ins Café."
+      },
+      {
+       "fa": "در تهران می‌توان صدها کافه‌ی کوچک و مدرن پیدا کرد.",
+       "tr": "dar tehrān mītawān sadhā kāfe-ye kūtschak o modern peydā kard.",
+       "de": "In Teheran kann man Hunderte kleiner, moderner Cafés finden."
+      },
+      {
+       "fa": "کوهنوردی هم خیلی محبوب است.",
+       "tr": "kūhnawardī ham cheylī mahbūb ast.",
+       "de": "Bergwandern ist auch sehr beliebt."
+      },
+      {
+       "fa": "جمعه‌ها هزاران نفر از تهران به کوه‌های شمال شهر می‌روند.",
+       "tr": "dschomʿehā hezārān nafar az tehrān be kūhhā-ye schemāl-e schahr mīrawand.",
+       "de": "Freitags fahren Tausende Menschen aus Teheran in die Berge im Norden der Stadt."
+      },
+      {
+       "fa": "بعضی‌ها می‌خواهند تا قله‌ی توچال بروند؛ بعضی فقط می‌خواهند در طبیعت قدم بزنند و صبحانه بخورند.",
+       "tr": "baʿzīhā mīchāhand tā gholle-ye tūtschāl berawand; baʿzī faghat mīchāhand dar tabīʿat ghadam bezanand o sobhāne bechorand.",
+       "de": "Manche wollen bis zum Gipfel des Totschal gehen; manche wollen nur in der Natur spazieren und frühstücken."
+      },
+      {
+       "fa": "فوتبال محبوب‌ترین ورزش ایران است.",
+       "tr": "fūtbāl mahbūbtarīn warzesch-e īrān ast.",
+       "de": "Fußball ist der beliebteste Sport Irans."
+      },
+      {
+       "fa": "وقتی تیم ملی بازی دارد، همه می‌خواهند بازی را ببینند.",
+       "tr": "waghtī tīm-e mellī bāzī dārad, hame mīchāhand bāzī rā bebīnand.",
+       "de": "Wenn die Nationalmannschaft spielt, wollen alle das Spiel sehen."
+      },
+      {
+       "fa": "والیبال و کشتی هم طرفداران زیادی دارند.",
+       "tr": "wālībāl o koschtī ham tarafdārān-e ziyādī dārand.",
+       "de": "Volleyball und Ringen haben auch viele Fans."
+      },
+      {
+       "fa": "خیلی از جوان‌ها می‌خواهند موسیقی یاد بگیرند؛ گیتار و سه‌تار خیلی طرفدار دارد.",
+       "tr": "cheylī az dschawānhā mīchāhand mūsīghī yād begīrand; gītār o setār cheylī tarafdār dārad.",
+       "de": "Viele junge Leute wollen Musik lernen; Gitarre und Setar sind sehr beliebt."
+      },
+      {
+       "fa": "در شب‌های تابستان، خانواده‌ها دوست دارند در پارک‌ها پیک‌نیک کنند.",
+       "tr": "dar schabhā-ye tābestān, chānewādehā dūst dārand dar pārkhā pīknīk konand.",
+       "de": "An Sommerabenden machen Familien gern Picknick in den Parks."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "خیلی از جوان‌ها دوست دارند به کافه بروند.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "کوهنوردی در ایران محبوب نیست.",
+       "fest": true,
+       "erkl": "Es ist <b>sehr beliebt</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "فوتبال محبوب‌ترین ورزش ایران است.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "هیچ‌کس نمی‌خواهد موسیقی یاد بگیرد.",
+       "fest": true,
+       "erkl": "<b>Viele</b> wollen Musik lernen."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "خانواده‌ها در زمستان در پارک پیک‌نیک می‌کنند.",
+       "fest": true,
+       "erkl": "An <b>Sommerabenden</b>."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Wohin fahren freitags Tausende Teheraner?",
+       "optionen": [
+        "in die Berge",
+        "ans Meer",
+        "in die Wüste"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was wollen manche nur in den Bergen tun?",
+       "optionen": [
+        "spazieren und frühstücken",
+        "Ski fahren",
+        "Fußball spielen"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Welche Instrumente sind beliebt?",
+       "optionen": [
+        "Gitarre und Setar",
+        "Klavier und Geige",
+        "Trommel"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was ist der beliebteste Sport?",
+       "optionen": [
+        "Fußball",
+        "Volleyball",
+        "Ringen"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t3",
+   "titel": "Profi-Text: Ein Sprachcafé",
+   "vorschau": "کافه‌ی زبان",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>حرف زدن</span> – sprechen, reden · <span class='fa'>ثبت‌نام کردن</span> – sich anmelden · <span class='fa'>محدود</span> – begrenzt · <span class='fa'>شرکت</span> – Teilnahme (auch: Firma) · <span class='fa'>رایگان</span> – kostenlos</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Profi-Text: Ein Sprachcafé",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "کافه‌ی زبان فارسی – هر چهارشنبه، ساعت هفت شب",
+       "tr": "kāfe-ye zabān-e fārsī – har tschahārschanbe, sāʿat-e haft-e schab",
+       "de": "Persisches Sprachcafé – jeden Mittwoch, 19 Uhr"
+      },
+      {
+       "fa": "می‌خواهید فارسی صحبت کنید؟ می‌خواهید با ایرانی‌ها آشنا شوید؟",
+       "tr": "mīchāhīd fārsī sohbat konīd? mīchāhīd bā īrānīhā āschnā schawīd?",
+       "de": "Möchten Sie Persisch sprechen? Möchten Sie Iraner kennenlernen?"
+      },
+      {
+       "fa": "لازم نیست فارسی‌تان خیلی خوب باشد!",
+       "tr": "lāzem nīst fārsīetān cheylī chūb bāschad!",
+       "de": "Ihr Persisch muss nicht sehr gut sein!"
+      },
+      {
+       "fa": "می‌توانید چای بنوشید، بازی کنید و حرف بزنید.",
+       "tr": "mītawānīd tschāy benūschīd, bāzī konīd o harf bezanīd.",
+       "de": "Sie können Tee trinken, spielen und sich unterhalten."
+      },
+      {
+       "fa": "فقط باید تا سه‌شنبه ثبت‌نام کنید، چون جا محدود است.",
+       "tr": "faghat bāyad tā seschanbe sabtnām konīd, tschūn dschā mahdūd ast.",
+       "de": "Sie müssen sich nur bis Dienstag anmelden, weil die Plätze begrenzt sind."
+      },
+      {
+       "fa": "شرکت در کافه رایگان است.",
+       "tr": "scherkat dar kāfe rāygān ast.",
+       "de": "Die Teilnahme am Café ist kostenlos."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "کافه‌ی زبان هر جمعه است.",
+       "fest": true,
+       "erkl": "Es ist jeden <b>Mittwoch</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "فارسی شما باید خیلی خوب باشد.",
+       "fest": true,
+       "erkl": "Es muss <b>nicht</b> sehr gut sein."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "باید تا سه‌شنبه ثبت‌نام کنید.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "شرکت در کافه گران است.",
+       "fest": true,
+       "erkl": "Die Teilnahme ist <b>kostenlos</b>."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Um wie viel Uhr ist das Sprachcafé?",
+       "optionen": [
+        "um 19 Uhr",
+        "um 17 Uhr",
+        "um 21 Uhr"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Warum muss man sich anmelden?",
+       "optionen": [
+        "weil die Plätze begrenzt sind",
+        "weil es teuer ist",
+        "weil es online ist"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was kann man im Sprachcafé tun?",
+       "optionen": [
+        "Tee trinken, spielen und sprechen",
+        "nur Bücher lesen",
+        "kochen"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d1",
+   "titel": "Dialog: Hast du am Samstag Zeit?",
+   "vorschau": "شنبه وقت داری؟",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Tara möchte mit Babak etwas unternehmen.</p><p><span class='fa'>عوض کردن</span> – wechseln · <span class='fa'>حیف شد!</span> – schade! · <span class='fa'>بتوانم</span> – (dass) ich kann (Konjunktiv von können) · <span class='fa'>قبلش</span> – davor</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "تارا: بابک، شنبه می‌خواهی با من به کنسرت بیایی؟",
+       "tr": "bābak, schanbe mīchāhī bā man be konsert biyāyī?",
+       "de": "Babak, willst du am Samstag mit mir ins Konzert kommen?"
+      },
+      {
+       "fa": "بابک: دوست دارم بیایم، ولی شنبه نمی‌توانم.",
+       "tr": "dūst dāram biyāyam, walī schanbe nemītawānam.",
+       "de": "Ich würde gern kommen, aber Samstag kann ich nicht."
+      },
+      {
+       "fa": "تارا: چرا؟",
+       "tr": "tscherā?",
+       "de": "Warum?"
+      },
+      {
+       "fa": "بابک: باید به خواهرم کمک کنم؛ او می‌خواهد خانه‌اش را عوض کند.",
+       "tr": "bāyad be chāharam komak konam; ū mīchāhad chāneasch rā ʿawaz konad.",
+       "de": "Ich muss meiner Schwester helfen; sie will umziehen."
+      },
+      {
+       "fa": "تارا: حیف شد! یکشنبه چطور؟",
+       "tr": "heyf schod! yekschanbe tschetor?",
+       "de": "Schade! Wie wäre Sonntag?"
+      },
+      {
+       "fa": "بابک: یکشنبه شاید بتوانم. کنسرت ساعت چند است؟",
+       "tr": "yekschanbe schāyad betawānam. konsert sāʿat-e tschand ast?",
+       "de": "Sonntag kann ich vielleicht. Um wie viel Uhr ist das Konzert?"
+      },
+      {
+       "fa": "تارا: ساعت هشت شب. بیا قبلش با هم شام بخوریم!",
+       "tr": "sāʿat-e hascht-e schab. biyā ghablasch bā ham schām bechorīm!",
+       "de": "Um acht Uhr abends. Lass uns vorher zusammen zu Abend essen!"
+      },
+      {
+       "fa": "بابک: فکر خوبی است!",
+       "tr": "fekr-e chūbī ast!",
+       "de": "Gute Idee!"
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "تارا: بابک، شنبه می‌خواهی با من به کنسرت بیایی؟",
+       "tr": "bābak, schanbe mīchāhī bā man be konsert biyāyī?",
+       "de": "Babak, willst du am Samstag mit mir ins Konzert kommen?"
+      },
+      {
+       "fa": "بابک: دوست دارم بیایم، ولی شنبه نمی‌توانم.",
+       "tr": "dūst dāram biyāyam, walī schanbe nemītawānam.",
+       "de": "Ich würde gern kommen, aber Samstag kann ich nicht."
+      },
+      {
+       "fa": "تارا: چرا؟",
+       "tr": "tscherā?",
+       "de": "Warum?"
+      },
+      {
+       "fa": "بابک: باید به خواهرم کمک کنم؛ او می‌خواهد خانه‌اش را عوض کند.",
+       "tr": "bāyad be chāharam komak konam; ū mīchāhad chāneasch rā ʿawaz konad.",
+       "de": "Ich muss meiner Schwester helfen; sie will umziehen."
+      },
+      {
+       "fa": "تارا: حیف شد! یکشنبه چطور؟",
+       "tr": "heyf schod! yekschanbe tschetor?",
+       "de": "Schade! Wie wäre Sonntag?"
+      },
+      {
+       "fa": "بابک: یکشنبه شاید بتوانم. کنسرت ساعت چند است؟",
+       "tr": "yekschanbe schāyad betawānam. konsert sāʿat-e tschand ast?",
+       "de": "Sonntag kann ich vielleicht. Um wie viel Uhr ist das Konzert?"
+      },
+      {
+       "fa": "تارا: ساعت هشت شب. بیا قبلش با هم شام بخوریم!",
+       "tr": "sāʿat-e hascht-e schab. biyā ghablasch bā ham schām bechorīm!",
+       "de": "Um acht Uhr abends. Lass uns vorher zusammen zu Abend essen!"
+      },
+      {
+       "fa": "بابک: فکر خوبی است!",
+       "tr": "fekr-e chūbī ast!",
+       "de": "Gute Idee!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Warum kann Babak am Samstag nicht?",
+       "optionen": [
+        "Er muss seiner Schwester beim Umzug helfen.",
+        "Er muss arbeiten.",
+        "Er ist krank."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wann ist das Konzert am Sonntag?",
+       "optionen": [
+        "um 20 Uhr",
+        "um 18 Uhr",
+        "um 21 Uhr"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was schlägt Tara vor?",
+       "optionen": [
+        "vorher zusammen zu Abend zu essen",
+        "ins Kino zu gehen",
+        "zu Hause zu bleiben"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d2",
+   "titel": "Dialog: Was soll ich tun?",
+   "vorschau": "چه کار کنم؟",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Leila fühlt sich gestresst und spricht mit ihrem Freund Ali.</p>"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "لیلا: خیلی خسته‌ام. نمی‌دانم چه کار کنم.",
+       "tr": "cheylī chasteam. nemīdānam tsche kār konam.",
+       "de": "Ich bin sehr müde. Ich weiß nicht, was ich tun soll."
+      },
+      {
+       "fa": "علی: باید کمتر کار کنی و بیشتر استراحت کنی.",
+       "tr": "bāyad kamtar kār konī o bīschtar esterāhat konī.",
+       "de": "Du solltest weniger arbeiten und dich mehr ausruhen."
+      },
+      {
+       "fa": "لیلا: ولی نمی‌توانم؛ کارهای زیادی دارم.",
+       "tr": "walī nemītawānam; kārhā-ye ziyādī dāram.",
+       "de": "Aber ich kann nicht; ich habe viel zu tun."
+      },
+      {
+       "fa": "علی: شاید بتوانی هر روز نیم ساعت ورزش کنی؟ یوگا خیلی خوب است.",
+       "tr": "schāyad betawānī har rūz nīm sāʿat warzesch konī? yogā cheylī chūb ast.",
+       "de": "Vielleicht kannst du jeden Tag eine halbe Stunde Sport machen? Yoga ist sehr gut."
+      },
+      {
+       "fa": "لیلا: یوگا؟ همیشه دوست داشتم یوگا یاد بگیرم.",
+       "tr": "yogā? hamīsche dūst dāschtam yogā yād begīram.",
+       "de": "Yoga? Ich wollte schon immer Yoga lernen."
+      },
+      {
+       "fa": "علی: پس بیا با هم به کلاس یوگا برویم!",
+       "tr": "pas biyā bā ham be kelās-e yogā berawīm!",
+       "de": "Dann lass uns zusammen zum Yogakurs gehen!"
+      },
+      {
+       "fa": "لیلا: موافقم! ولی نباید خیلی صبح زود باشد!",
+       "tr": "mowāfegham! walī nabāyad cheylī sobh-e zūd bāschad!",
+       "de": "Einverstanden! Aber er darf nicht zu früh am Morgen sein!"
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "لیلا: خیلی خسته‌ام. نمی‌دانم چه کار کنم.",
+       "tr": "cheylī chasteam. nemīdānam tsche kār konam.",
+       "de": "Ich bin sehr müde. Ich weiß nicht, was ich tun soll."
+      },
+      {
+       "fa": "علی: باید کمتر کار کنی و بیشتر استراحت کنی.",
+       "tr": "bāyad kamtar kār konī o bīschtar esterāhat konī.",
+       "de": "Du solltest weniger arbeiten und dich mehr ausruhen."
+      },
+      {
+       "fa": "لیلا: ولی نمی‌توانم؛ کارهای زیادی دارم.",
+       "tr": "walī nemītawānam; kārhā-ye ziyādī dāram.",
+       "de": "Aber ich kann nicht; ich habe viel zu tun."
+      },
+      {
+       "fa": "علی: شاید بتوانی هر روز نیم ساعت ورزش کنی؟ یوگا خیلی خوب است.",
+       "tr": "schāyad betawānī har rūz nīm sāʿat warzesch konī? yogā cheylī chūb ast.",
+       "de": "Vielleicht kannst du jeden Tag eine halbe Stunde Sport machen? Yoga ist sehr gut."
+      },
+      {
+       "fa": "لیلا: یوگا؟ همیشه دوست داشتم یوگا یاد بگیرم.",
+       "tr": "yogā? hamīsche dūst dāschtam yogā yād begīram.",
+       "de": "Yoga? Ich wollte schon immer Yoga lernen."
+      },
+      {
+       "fa": "علی: پس بیا با هم به کلاس یوگا برویم!",
+       "tr": "pas biyā bā ham be kelās-e yogā berawīm!",
+       "de": "Dann lass uns zusammen zum Yogakurs gehen!"
+      },
+      {
+       "fa": "لیلا: موافقم! ولی نباید خیلی صبح زود باشد!",
+       "tr": "mowāfegham! walī nabāyad cheylī sobh-e zūd bāschad!",
+       "de": "Einverstanden! Aber er darf nicht zu früh am Morgen sein!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Was rät Ali zuerst?",
+       "optionen": [
+        "weniger arbeiten, mehr ausruhen",
+        "mehr arbeiten",
+        "früher aufstehen"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was wollte Leila schon immer lernen?",
+       "optionen": [
+        "Yoga",
+        "Gitarre",
+        "Schwimmen"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was ist Leilas Bedingung?",
+       "optionen": [
+        "Der Kurs darf nicht zu früh sein.",
+        "Der Kurs muss billig sein.",
+        "Ali muss bezahlen."
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

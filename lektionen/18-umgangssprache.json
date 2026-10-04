@@ -1,0 +1,193 @@
+{
+ "id": "ug",
+ "art": "umgangssprache",
+ "titel": "Umgangssprache: So spricht man im Alltag",
+ "beschreibung": "Freiwilliger Extra-Teil: über die Zukunft im Gespräch.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "So spricht man über die Zukunft",
+   "vorschau": "می‌رَم · قَراره",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Schrift ≠ Gespräch",
+     "text": "<ul><li>Das Futur mit <span class='fa'>خواهم</span> hört man im Gespräch <b>kaum</b> – man sagt einfach das Präsens: <span class='fa'>فَردا می‌رَم</span>.</li><li><span class='fa'>قَرار اَست → قَراره</span> – es ist geplant</li><li><span class='fa'>خوش به حالِت!</span> – du Glückliche/r!</li><li><span class='fa'>عیبی نَداره</span> – macht nichts</li></ul>",
+     "stil": "merke"
+    },
+    {
+     "typ": "paare",
+     "links": "x",
+     "paare": [
+      {
+       "fa": "خواهَم رَفت",
+       "tr": "chāham raft",
+       "de": "ich werde gehen",
+       "x": "می‌رَم"
+      },
+      {
+       "fa": "خواهَد آمَد",
+       "tr": "chāhad āmad",
+       "de": "er/sie wird kommen",
+       "x": "میاد"
+      },
+      {
+       "fa": "قَرار اَست بِرَویم",
+       "tr": "gharār ast berawīm",
+       "de": "wir wollen (geplant) gehen",
+       "x": "قَراره بِریم"
+      },
+      {
+       "fa": "خواهیم دید",
+       "tr": "chāhīm dīd",
+       "de": "wir werden sehen",
+       "x": "می‌بینیم"
+      },
+      {
+       "fa": "قول می‌دَهَم",
+       "tr": "ghoul mīdeham",
+       "de": "ich verspreche",
+       "x": "قول می‌دَم"
+      }
+     ],
+     "titel": "Schrift ↔ Gespräch"
+    },
+    {
+     "typ": "sortieren",
+     "titel": "Schrift oder Gespräch?",
+     "frage": "Schriftsprache oder Umgangssprache?",
+     "kategorien": [
+      "✍️ Schriftsprache",
+      "🗣️ Umgangssprache"
+     ],
+     "items": [
+      {
+       "fa": "خواهَم رَفت",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "خواهَد آمَد",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "قَرار اَست بِرَویم",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "خواهیم دید",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "قول می‌دَهَم",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "می‌رَم",
+       "k": 1,
+       "say": false,
+       "e": "<i>mīram</i> – geschrieben: <span class='fa'>خواهَم رَفت</span>"
+      },
+      {
+       "fa": "میاد",
+       "k": 1,
+       "say": false,
+       "e": "<i>miyād</i> – geschrieben: <span class='fa'>خواهَد آمَد</span>"
+      },
+      {
+       "fa": "قَراره بِریم",
+       "k": 1,
+       "say": false,
+       "e": "<i>gharāre berīm</i> – geschrieben: <span class='fa'>قَرار اَست بِرَویم</span>"
+      },
+      {
+       "fa": "می‌بینیم",
+       "k": 1,
+       "say": false,
+       "e": "<i>mībīnīm</i> – geschrieben: <span class='fa'>خواهیم دید</span>"
+      },
+      {
+       "fa": "قول می‌دَم",
+       "k": 1,
+       "say": false,
+       "e": "<i>ghoul mīdam</i> – geschrieben: <span class='fa'>قول می‌دَهَم</span>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Ferienpläne",
+   "vorschau": "قَراره بِریم شُمال",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Vor den Ferien",
+     "text": "Umgangssprache! Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "عید کُجا می‌ری؟",
+       "tr": "ʿeyd kodschā mīrī?",
+       "de": "Wohin fährst du zu Nouruz?"
+      },
+      {
+       "fa": "قَراره بِریم شُمال، ویلای خالِه‌م.",
+       "tr": "gharāre berīm schomāl, wīlā-ye chālam.",
+       "de": "Wir fahren in den Norden, ins Ferienhaus meiner Tante."
+      },
+      {
+       "fa": "خوش به حالِت! من باید بِمونَم تِهرون.",
+       "tr": "chosch be hālet! man bāyad bemūnam tehrūn.",
+       "de": "Du Glückliche/r! Ich muss in Teheran bleiben."
+      },
+      {
+       "fa": "عیبی نَداره، سیزده‌بِدَر میای پیشِمون!",
+       "tr": "ʿeybī nadāre, sīzdahbedar miyāy pīschemūn!",
+       "de": "Macht nichts, zum Sizdah-Bedar kommst du zu uns!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Verstanden?",
+     "fragen": [
+      {
+       "frage": "Wohin fährt die Person?",
+       "optionen": [
+        "in den Norden, ins Ferienhaus der Tante",
+        "nach Teheran",
+        "ins Ausland"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was bedeutet <span class='fa'>خوش به حالِت!</span>?",
+       "optionen": [
+        "Du Glückliche/r!",
+        "Gute Reise!",
+        "Schade!"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie sagt man „ich werde gehen“ im Gespräch?",
+       "optionen": [
+        "می‌رم",
+        "خواهم رفت",
+        "خواهم برم"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

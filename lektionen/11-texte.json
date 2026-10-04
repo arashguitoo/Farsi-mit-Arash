@@ -1,0 +1,758 @@
+{
+ "id": "tx",
+ "art": "texte",
+ "titel": "Texte & Dialoge",
+ "beschreibung": "Lesetexte mit Fragen und Dialoge zum Ordnen.",
+ "stationen": [
+  {
+   "id": "t1",
+   "titel": "Kurztext: Taras Reisen",
+   "vorschau": "سفرهای تارا",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>عاشقِ … بودن</span> – … lieben · <span class='fa'>فالوده</span> <i>fālūde</i> – kalte Süßspeise aus Reisnudeln · <span class='fa'>بعدی</span> – nächste/r</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Kurztext: Taras Reisen",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "تارا عاشق سفر است.",
+       "tr": "tārā ʿāschegh-e safar ast.",
+       "de": "Tara liebt das Reisen."
+      },
+      {
+       "fa": "او تا حالا به ده کشور سفر کرده است.",
+       "tr": "ū tā hālā be dah keschwar safar karde ast.",
+       "de": "Sie ist bis jetzt in zehn Länder gereist."
+      },
+      {
+       "fa": "دو بار به ایران رفته است: یک بار به تهران و یک بار به شیراز.",
+       "tr": "do bār be īrān rafte ast: yek bār be tehrān o yek bār be schīrāz.",
+       "de": "Sie war zweimal in Iran: einmal in Teheran und einmal in Schiras."
+      },
+      {
+       "fa": "در شیراز باغ ارم و آرامگاه حافظ را دیده است.",
+       "tr": "dar schīrāz bāgh-e eram o ārāmgāh-e hāfez rā dīde ast.",
+       "de": "In Schiras hat sie den Eram-Garten und das Grab von Hafis gesehen."
+      },
+      {
+       "fa": "تخت‌جمشید را هم دیده است و آنجا خیلی عکس گرفته است.",
+       "tr": "tacht-e dschamschīd rā ham dīde ast o āndschā cheylī ʿaks gerefte ast.",
+       "de": "Persepolis hat sie auch gesehen und dort viel fotografiert."
+      },
+      {
+       "fa": "او فالوده‌ی شیرازی امتحان کرده و خیلی دوست داشته است.",
+       "tr": "ū fālūde-ye schīrāzī emtehān karde o cheylī dūst dāschte ast.",
+       "de": "Sie hat Faludeh aus Schiras probiert und es sehr gemocht."
+      },
+      {
+       "fa": "اما هنوز به اصفهان نرفته است.",
+       "tr": "ammā hanūz be esfahān narafte ast.",
+       "de": "Aber in Isfahan war sie noch nicht."
+      },
+      {
+       "fa": "تارا هرگز کویر ندیده است؛ برای همین سفر بعدی‌اش به یزد است.",
+       "tr": "tārā hargez kawīr nadīde ast; barāye hamīn safar-e baʿdīasch be yazd ast.",
+       "de": "Tara hat noch nie die Wüste gesehen; deshalb geht ihre nächste Reise nach Yazd."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "تارا سه بار به ایران رفته است.",
+       "fest": true,
+       "erkl": "Sie war <b>zweimal</b> dort."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "او تخت‌جمشید را دیده است.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "تارا به اصفهان رفته است.",
+       "fest": true,
+       "erkl": "Dort war sie <b>noch nicht</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "او فالوده را دوست داشته است.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "تارا تا حالا کویر دیده است.",
+       "fest": true,
+       "erkl": "Sie hat <b>noch nie</b> eine Wüste gesehen."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "In wie viele Länder ist Tara gereist?",
+       "optionen": [
+        "zehn",
+        "zwei",
+        "drei"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was hat sie in Schiras gesehen?",
+       "optionen": [
+        "den Eram-Garten und das Grab von Hafis",
+        "die Si-o-se-Pol",
+        "die Windtürme"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wohin geht ihre nächste Reise?",
+       "optionen": [
+        "nach Yazd",
+        "nach Isfahan",
+        "nach Teheran"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was ist Faludeh?",
+       "optionen": [
+        "eine kalte Süßspeise",
+        "ein Garten",
+        "ein Getränk aus Joghurt"
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "او تا حالا به ده کشور سفر کرده است.",
+       "tr": "ū tā hālā be dah keschwar safar karde ast.",
+       "de": "Sie ist bis jetzt in zehn Länder gereist."
+      },
+      {
+       "fa": "دو بار به ایران رفته است: یک بار به تهران و یک بار به شیراز.",
+       "tr": "do bār be īrān rafte ast: yek bār be tehrān o yek bār be schīrāz.",
+       "de": "Sie war zweimal in Iran: einmal in Teheran und einmal in Schiras."
+      },
+      {
+       "fa": "در شیراز باغ ارم و آرامگاه حافظ را دیده است.",
+       "tr": "dar schīrāz bāgh-e eram o ārāmgāh-e hāfez rā dīde ast.",
+       "de": "In Schiras hat sie den Eram-Garten und das Grab von Hafis gesehen."
+      },
+      {
+       "fa": "تخت‌جمشید را هم دیده است و آنجا خیلی عکس گرفته است.",
+       "tr": "tacht-e dschamschīd rā ham dīde ast o āndschā cheylī ʿaks gerefte ast.",
+       "de": "Persepolis hat sie auch gesehen und dort viel fotografiert."
+      },
+      {
+       "fa": "او فالوده‌ی شیرازی امتحان کرده و خیلی دوست داشته است.",
+       "tr": "ū fālūde-ye schīrāzī emtehān karde o cheylī dūst dāschte ast.",
+       "de": "Sie hat Faludeh aus Schiras probiert und es sehr gemocht."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t2",
+   "titel": "Text: Persepolis",
+   "vorschau": "تخت‌جمشید",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>یکی از</span> – eine/r von · <span class='fa'>معروف‌ترین</span> – die berühmtesten · <span class='fa'>پیش</span> – vor (zeitlich) · <span class='fa'>شاه</span> – König · <span class='fa'>هخامنشی</span> – achämenidisch · <span class='fa'>گردشگر</span> – Tourist/in · <span class='fa'>دنیا</span> – Welt · <span class='fa'>ستون</span> – Säule · <span class='fa'>نقش</span> – Relief, Bild · <span class='fa'>سنگی</span> – aus Stein · <span class='fa'>مختلف</span> – verschieden · <span class='fa'>آتش زدن</span> – in Brand stecken · <span class='fa'>ساختمان</span> – Gebäude · <span class='fa'>خراب</span> – kaputt, zerstört</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Text: Persepolis",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "تخت‌جمشید یکی از معروف‌ترین جاهای دیدنی ایران است.",
+       "tr": "tacht-e dschamschīd yekī az maʿrūftarīn dschāhā-ye dīdanī-ye īrān ast.",
+       "de": "Persepolis ist eine der berühmtesten Sehenswürdigkeiten Irans."
+      },
+      {
+       "fa": "این شهر قدیمی نزدیک شیراز است.",
+       "tr": "īn schahr-e ghadīmī nazdīk-e schīrāz ast.",
+       "de": "Diese alte Stadt liegt nahe Schiras."
+      },
+      {
+       "fa": "حدود دو هزار و پانصد سال پیش، شاهان هخامنشی آن را ساخته‌اند.",
+       "tr": "hodūd-e do hezār o pānsad sāl pīsch, schāhān-e hachāmaneschī ān rā sāchte-and.",
+       "de": "Vor etwa 2500 Jahren haben die achämenidischen Könige sie gebaut."
+      },
+      {
+       "fa": "هر سال هزاران گردشگر از همه‌ی دنیا به تخت‌جمشید آمده‌اند.",
+       "tr": "har sāl hezārān gardeschgar az hame-ye donyā be tacht-e dschamschīd āmade-and.",
+       "de": "Jedes Jahr sind Tausende Touristen aus der ganzen Welt nach Persepolis gekommen."
+      },
+      {
+       "fa": "آنها ستون‌های بلند و نقش‌های زیبای سنگی را دیده‌اند.",
+       "tr": "ānhā sotūnhā-ye boland o naghschhā-ye zībā-ye sangī rā dīde-and.",
+       "de": "Sie haben die hohen Säulen und die schönen Steinreliefs gesehen."
+      },
+      {
+       "fa": "در این نقش‌ها مردم از کشورهای مختلف هدیه آورده‌اند.",
+       "tr": "dar īn naghschhā mardom az keschwarhā-ye mochtalef hedye āwarde-and.",
+       "de": "Auf diesen Reliefs bringen Menschen aus verschiedenen Ländern Geschenke."
+      },
+      {
+       "fa": "بعضی می‌گویند مردم در نوروز این هدیه‌ها را برای شاه آورده‌اند.",
+       "tr": "baʿzī mīgūyand mardom dar nourūz īn hedyehā rā barāye schāh āwarde-and.",
+       "de": "Manche sagen, die Menschen haben diese Geschenke zu Nouruz für den König gebracht."
+      },
+      {
+       "fa": "اسکندر مقدونی تخت‌جمشید را آتش زده است.",
+       "tr": "eskandar-e maghdūnī tacht-e dschamschīd rā ātasch zade ast.",
+       "de": "Alexander der Große hat Persepolis in Brand gesteckt."
+      },
+      {
+       "fa": "با اینکه خیلی از ساختمان‌ها خراب شده‌اند، تخت‌جمشید هنوز خیلی زیباست.",
+       "tr": "bā īnke cheylī az sāchtemānhā charāb schode-and, tacht-e dschamschīd hanūz cheylī zībāst.",
+       "de": "Obwohl viele Gebäude zerstört sind, ist Persepolis immer noch sehr schön."
+      },
+      {
+       "fa": "شما تا حالا تخت‌جمشید را دیده‌اید؟",
+       "tr": "schomā tā hālā tacht-e dschamschīd rā dīde-īd?",
+       "de": "Haben Sie Persepolis schon gesehen?"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "تخت‌جمشید نزدیک تهران است.",
+       "fest": true,
+       "erkl": "Es liegt nahe <b>Schiras</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "شاهان هخامنشی تخت‌جمشید را ساخته‌اند.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "در نقش‌ها مردم هدیه آورده‌اند.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "همه‌ی ساختمان‌ها سالم هستند.",
+       "fest": true,
+       "erkl": "Viele Gebäude sind <b>zerstört</b>."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Wie alt ist Persepolis etwa?",
+       "optionen": [
+        "2500 Jahre",
+        "500 Jahre",
+        "1000 Jahre"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was sieht man in Persepolis?",
+       "optionen": [
+        "hohe Säulen und Steinreliefs",
+        "einen großen Garten",
+        "eine Brücke"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wer hat Persepolis in Brand gesteckt?",
+       "optionen": [
+        "Alexander der Große",
+        "die Touristen",
+        "ein König aus Schiras"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t3",
+   "titel": "Profi-Text: Ein Reiseblog",
+   "vorschau": "وبلاگ سفر",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>یک ماه است که …</span> – seit einem Monat … · <span class='fa'>مهمان‌نواز</span> – gastfreundlich · <span class='fa'>مدت</span> – Zeitraum · <span class='fa'>بهتر</span> – besser · <span class='fa'>مشکل</span> – Problem · <span class='fa'>راننده</span> – Fahrer/in · <span class='fa'>نویسنده</span> – Verfasser/in</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Profi-Text: Ein Reiseblog",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "سلام دوستان! من الان یک ماه است که در ایران سفر می‌کنم.",
+       "tr": "salām dūstān! man alān yek māh ast ke dar īrān safar mīkonam.",
+       "de": "Hallo Freunde! Ich reise jetzt seit einem Monat durch Iran."
+      },
+      {
+       "fa": "تا حالا شش شهر دیده‌ام و با خیلی از مردم آشنا شده‌ام.",
+       "tr": "tā hālā schesch schahr dīde-am o bā cheylī az mardom āschnā schode-am.",
+       "de": "Bis jetzt habe ich sechs Städte gesehen und viele Leute kennengelernt."
+      },
+      {
+       "fa": "ایرانی‌ها خیلی مهمان‌نواز هستند؛ سه بار من را به خانه‌شان دعوت کرده‌اند.",
+       "tr": "īrānīhā cheylī mehmānnawāz hastand; se bār man rā be chāneschān daʿwat karde-and.",
+       "de": "Iraner sind sehr gastfreundlich; dreimal haben sie mich zu sich nach Hause eingeladen."
+      },
+      {
+       "fa": "در این مدت خیلی غذاهای جدید امتحان کرده‌ام.",
+       "tr": "dar īn moddat cheylī ghazāhā-ye dschadīd emtehān karde-am.",
+       "de": "In dieser Zeit habe ich viele neue Gerichte probiert."
+      },
+      {
+       "fa": "فارسی‌ام هم بهتر شده است!",
+       "tr": "fārsīam ham behtar schode ast!",
+       "de": "Mein Persisch ist auch besser geworden!"
+      },
+      {
+       "fa": "فقط یک مشکل: دیروز گوشی‌ام را در اتوبوس گم کردم.",
+       "tr": "faghat yek moschkel: dīrūz gūschīam rā dar otobūs gom kardam.",
+       "de": "Nur ein Problem: Gestern habe ich mein Handy im Bus verloren."
+      },
+      {
+       "fa": "اما راننده آن را پیدا کرده و به هتل آورده است!",
+       "tr": "ammā rānande ān rā peydā karde o be hotel āwarde ast!",
+       "de": "Aber der Fahrer hat es gefunden und zum Hotel gebracht!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "نویسنده شش شهر دیده است.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "ایرانی‌ها او را دعوت نکرده‌اند.",
+       "fest": true,
+       "erkl": "Sie haben ihn/sie <b>dreimal</b> eingeladen."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "فارسی او بهتر شده است.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "راننده گوشی را پیدا نکرده است.",
+       "fest": true,
+       "erkl": "Der Fahrer hat es <b>gefunden</b> und zum Hotel gebracht."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Wie lange reist die Person schon?",
+       "optionen": [
+        "einen Monat",
+        "eine Woche",
+        "ein Jahr"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was ist gestern passiert?",
+       "optionen": [
+        "Das Handy ging im Bus verloren.",
+        "Der Pass ging verloren.",
+        "Der Bus kam nicht."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie beschreibt die Person die Iraner?",
+       "optionen": [
+        "sehr gastfreundlich",
+        "sehr ruhig",
+        "sehr streng"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d1",
+   "titel": "Dialog: Warst du schon mal in Iran?",
+   "vorschau": "تا حالا به ایران رفته‌ای؟",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Jonas und Maryam sprechen in der Pause über Reisen.</p><p><span class='fa'>البته</span> <i>albatte</i> – natürlich · <span class='fa'>بروم</span> – (dass) ich gehe – Konjunktiv, kommt in Lektion 14! · <span class='fa'>واقعاً</span> – wirklich</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "یوناس: مریم، تو تا حالا به اصفهان رفته‌ای؟",
+       "tr": "maryam, to tā hālā be esfahān rafte-ī?",
+       "de": "Maryam, warst du schon mal in Isfahan?"
+      },
+      {
+       "fa": "مریم: بله، چند بار رفته‌ام. خانواده‌ی مادرم آنجا زندگی می‌کنند.",
+       "tr": "bale, tschand bār rafte-am. chānewāde-ye mādaram āndschā zendegī mīkonand.",
+       "de": "Ja, mehrmals. Die Familie meiner Mutter wohnt dort."
+      },
+      {
+       "fa": "یوناس: سی‌وسه‌پل را دیده‌ای؟",
+       "tr": "sī-o-se pol rā dīde-ī?",
+       "de": "Hast du die Si-o-se-Pol gesehen?"
+      },
+      {
+       "fa": "مریم: البته! شب‌ها خیلی زیباست. تو چی؟ تا حالا ایران بوده‌ای؟",
+       "tr": "albatte! schabhā cheylī zībāst. to tschī? tā hālā īrān būde-ī?",
+       "de": "Natürlich! Nachts ist sie sehr schön. Und du? Warst du schon mal in Iran?"
+      },
+      {
+       "fa": "یوناس: نه، هنوز نرفته‌ام. ولی خیلی دوست دارم بروم.",
+       "tr": "na, hanūz narafte-am. walī cheylī dūst dāram beravam.",
+       "de": "Nein, noch nicht. Aber ich würde sehr gern hinfahren."
+      },
+      {
+       "fa": "مریم: پس تابستان با ما بیا!",
+       "tr": "pas tābestān bā mā biyā!",
+       "de": "Dann komm im Sommer mit uns!"
+      },
+      {
+       "fa": "یوناس: واقعا؟ عالی است!",
+       "tr": "wāgheʿan? ʿālī ast!",
+       "de": "Wirklich? Super!"
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "یوناس: مریم، تو تا حالا به اصفهان رفته‌ای؟",
+       "tr": "maryam, to tā hālā be esfahān rafte-ī?",
+       "de": "Maryam, warst du schon mal in Isfahan?"
+      },
+      {
+       "fa": "مریم: بله، چند بار رفته‌ام. خانواده‌ی مادرم آنجا زندگی می‌کنند.",
+       "tr": "bale, tschand bār rafte-am. chānewāde-ye mādaram āndschā zendegī mīkonand.",
+       "de": "Ja, mehrmals. Die Familie meiner Mutter wohnt dort."
+      },
+      {
+       "fa": "یوناس: سی‌وسه‌پل را دیده‌ای؟",
+       "tr": "sī-o-se pol rā dīde-ī?",
+       "de": "Hast du die Si-o-se-Pol gesehen?"
+      },
+      {
+       "fa": "مریم: البته! شب‌ها خیلی زیباست. تو چی؟ تا حالا ایران بوده‌ای؟",
+       "tr": "albatte! schabhā cheylī zībāst. to tschī? tā hālā īrān būde-ī?",
+       "de": "Natürlich! Nachts ist sie sehr schön. Und du? Warst du schon mal in Iran?"
+      },
+      {
+       "fa": "یوناس: نه، هنوز نرفته‌ام. ولی خیلی دوست دارم بروم.",
+       "tr": "na, hanūz narafte-am. walī cheylī dūst dāram beravam.",
+       "de": "Nein, noch nicht. Aber ich würde sehr gern hinfahren."
+      },
+      {
+       "fa": "مریم: پس تابستان با ما بیا!",
+       "tr": "pas tābestān bā mā biyā!",
+       "de": "Dann komm im Sommer mit uns!"
+      },
+      {
+       "fa": "یوناس: واقعا؟ عالی است!",
+       "tr": "wāgheʿan? ʿālī ast!",
+       "de": "Wirklich? Super!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Warum war Maryam oft in Isfahan?",
+       "optionen": [
+        "Die Familie ihrer Mutter wohnt dort.",
+        "Sie hat dort studiert.",
+        "Sie arbeitet dort."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "War Jonas schon in Iran?",
+       "optionen": [
+        "Nein, noch nicht.",
+        "Ja, einmal.",
+        "Ja, oft."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was schlägt Maryam vor?",
+       "optionen": [
+        "im Sommer mitzukommen",
+        "ein Buch zu lesen",
+        "einen Film zu sehen"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d2",
+   "titel": "Dialog: Am Flughafen",
+   "vorschau": "گذرنامه‌ام را گم کرده‌ام!",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Arasch ist mit seiner Schwester Nasrin am Flughafen.</p><p><span class='fa'>آرام باش!</span> – bleib ruhig! · <span class='fa'>نگاه کردن</span> – (an)schauen, nachsehen · <span class='fa'>خب</span> <i>chob</i> – na, also · <span class='fa'>اینجاست</span> – hier ist er/sie/es · <span class='fa'>چه خوب!</span> – wie gut!</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "آرش: وای! گذرنامه‌ام را گم کرده‌ام!",
+       "tr": "wāy! gozarnāmeam rā gom karde-am!",
+       "de": "Oh nein! Ich habe meinen Pass verloren!"
+      },
+      {
+       "fa": "نسرین: آرام باش! در کیفت را نگاه کرده‌ای؟",
+       "tr": "ārām bāsch! dar kīfat rā negāh karde-ī?",
+       "de": "Ganz ruhig! Hast du in deiner Tasche nachgesehen?"
+      },
+      {
+       "fa": "آرش: بله، دو بار نگاه کرده‌ام. نیست!",
+       "tr": "bale, do bār negāh karde-am. nīst!",
+       "de": "Ja, zweimal. Er ist nicht da!"
+      },
+      {
+       "fa": "نسرین: چمدانت را چطور؟",
+       "tr": "tschamadānat rā tschetor?",
+       "de": "Und deinen Koffer?"
+      },
+      {
+       "fa": "آرش: نه، چمدان را هنوز باز نکرده‌ام.",
+       "tr": "na, tschamadān rā hanūz bāz nakarde-am.",
+       "de": "Nein, den Koffer habe ich noch nicht aufgemacht."
+      },
+      {
+       "fa": "نسرین: خب، بازش کن!",
+       "tr": "chob, bāzasch kon!",
+       "de": "Na dann, mach ihn auf!"
+      },
+      {
+       "fa": "آرش: آهان! اینجاست! وای، چه خوب!",
+       "tr": "āhān! īndschāst! wāy, tsche chūb!",
+       "de": "Aha! Hier ist er! Oh, wie gut!"
+      },
+      {
+       "fa": "نسرین: خب، بلیت‌ها را که گم نکرده‌ای؟",
+       "tr": "chob, belīthā rā ke gom nakarde-ī?",
+       "de": "Na, die Tickets hast du aber nicht verloren, oder?"
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "آرش: وای! گذرنامه‌ام را گم کرده‌ام!",
+       "tr": "wāy! gozarnāmeam rā gom karde-am!",
+       "de": "Oh nein! Ich habe meinen Pass verloren!"
+      },
+      {
+       "fa": "نسرین: آرام باش! در کیفت را نگاه کرده‌ای؟",
+       "tr": "ārām bāsch! dar kīfat rā negāh karde-ī?",
+       "de": "Ganz ruhig! Hast du in deiner Tasche nachgesehen?"
+      },
+      {
+       "fa": "آرش: بله، دو بار نگاه کرده‌ام. نیست!",
+       "tr": "bale, do bār negāh karde-am. nīst!",
+       "de": "Ja, zweimal. Er ist nicht da!"
+      },
+      {
+       "fa": "نسرین: چمدانت را چطور؟",
+       "tr": "tschamadānat rā tschetor?",
+       "de": "Und deinen Koffer?"
+      },
+      {
+       "fa": "آرش: نه، چمدان را هنوز باز نکرده‌ام.",
+       "tr": "na, tschamadān rā hanūz bāz nakarde-am.",
+       "de": "Nein, den Koffer habe ich noch nicht aufgemacht."
+      },
+      {
+       "fa": "نسرین: خب، بازش کن!",
+       "tr": "chob, bāzasch kon!",
+       "de": "Na dann, mach ihn auf!"
+      },
+      {
+       "fa": "آرش: آهان! اینجاست! وای، چه خوب!",
+       "tr": "āhān! īndschāst! wāy, tsche chūb!",
+       "de": "Aha! Hier ist er! Oh, wie gut!"
+      },
+      {
+       "fa": "نسرین: خب، بلیت‌ها را که گم نکرده‌ای؟",
+       "tr": "chob, belīthā rā ke gom nakarde-ī?",
+       "de": "Na, die Tickets hast du aber nicht verloren, oder?"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Was hat Arasch verloren?",
+       "optionen": [
+        "seinen Pass",
+        "sein Ticket",
+        "sein Handy"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wo hat er schon gesucht?",
+       "optionen": [
+        "in seiner Tasche",
+        "im Koffer",
+        "im Auto"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wo ist der Pass am Ende?",
+       "optionen": [
+        "im Koffer",
+        "in der Tasche",
+        "am Schalter"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

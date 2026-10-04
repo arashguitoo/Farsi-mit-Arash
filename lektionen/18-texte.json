@@ -1,0 +1,737 @@
+{
+ "id": "tx",
+ "art": "texte",
+ "titel": "Texte & Dialoge",
+ "beschreibung": "Lesetexte mit Fragen und Dialoge zum Ordnen.",
+ "stationen": [
+  {
+   "id": "t1",
+   "titel": "Kurztext: Nach dem Studium",
+   "vorschau": "بعد از درس",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>ترم آخر</span> – letztes Semester · <span class='fa'>پیشنهاد</span> – Angebot, Vorschlag · <span class='fa'>مهم</span> – wichtig · <span class='fa'>بماند</span> – (dass) sie bleibt</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Kurztext: Nach dem Studium",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "لنا ترم آخر است و ماه آینده پایان‌نامه‌اش را تمام خواهد کرد.",
+       "tr": "lenā term-e āchar ast o māh-e āyande pāyānnāmeasch rā tamām chāhad kard.",
+       "de": "Lena ist im letzten Semester und wird nächsten Monat ihre Abschlussarbeit beenden."
+      },
+      {
+       "fa": "بعد از آن، شش ماه در تهران کار خواهد کرد.",
+       "tr": "baʿd az ān, schesch māh dar tehrān kār chāhad kard.",
+       "de": "Danach wird sie sechs Monate in Teheran arbeiten."
+      },
+      {
+       "fa": "یک شرکت آلمانی به او پیشنهاد کار داده است.",
+       "tr": "yek scherkat-e ālmānī be ū pīschnahād-e kār dāde ast.",
+       "de": "Eine deutsche Firma hat ihr ein Jobangebot gemacht."
+      },
+      {
+       "fa": "او آنجا مترجم خواهد بود.",
+       "tr": "ū āndschā motardschem chāhad būd.",
+       "de": "Sie wird dort Übersetzerin sein."
+      },
+      {
+       "fa": "قرار است در خانه‌ی یک خانواده‌ی ایرانی زندگی کند.",
+       "tr": "gharār ast dar chāne-ye yek chānewāde-ye īrānī zendegī konad.",
+       "de": "Es ist geplant, dass sie bei einer iranischen Familie wohnt."
+      },
+      {
+       "fa": "لنا می‌گوید: «فارسی‌ام آنجا خیلی بهتر خواهد شد.»",
+       "tr": "lenā mīgūyad: «fārsīam āndschā cheylī behtar chāhad schod.»",
+       "de": "Lena sagt: „Mein Persisch wird dort viel besser werden.“"
+      },
+      {
+       "fa": "شاید بعد از آن به کیل برگردد، شاید هم در ایران بماند.",
+       "tr": "schāyad baʿd az ān be kīl bargardad, schāyad ham dar īrān bemānad.",
+       "de": "Vielleicht kehrt sie danach nach Kiel zurück, vielleicht bleibt sie auch in Iran."
+      },
+      {
+       "fa": "او هنوز نمی‌داند، اما می‌داند که سال آینده سال مهمی خواهد بود.",
+       "tr": "ū hanūz nemīdānad, ammā mīdānad ke sāl-e āyande sāl-e mohemmī chāhad būd.",
+       "de": "Sie weiß es noch nicht, aber sie weiß, dass das nächste Jahr ein wichtiges Jahr sein wird."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "لنا ماه آینده پایان‌نامه‌اش را تمام خواهد کرد.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "او یک سال در تهران کار خواهد کرد.",
+       "fest": true,
+       "erkl": "<b>Sechs Monate</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "او آنجا مترجم خواهد بود.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "لنا می‌داند که بعد از آن کجا زندگی خواهد کرد.",
+       "fest": true,
+       "erkl": "Sie weiß es <b>noch nicht</b>."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Wer hat Lena ein Jobangebot gemacht?",
+       "optionen": [
+        "eine deutsche Firma",
+        "eine iranische Uni",
+        "ihre Professorin"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wo wird sie wohnen?",
+       "optionen": [
+        "bei einer iranischen Familie",
+        "in einem Hotel",
+        "im Wohnheim"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was wird laut Lena besser?",
+       "optionen": [
+        "ihr Persisch",
+        "ihr Deutsch",
+        "ihr Gehalt"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie wird das nächste Jahr?",
+       "optionen": [
+        "wichtig",
+        "langweilig",
+        "kurz"
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "بعد از آن، شش ماه در تهران کار خواهد کرد.",
+       "tr": "baʿd az ān, schesch māh dar tehrān kār chāhad kard.",
+       "de": "Danach wird sie sechs Monate in Teheran arbeiten."
+      },
+      {
+       "fa": "یک شرکت آلمانی به او پیشنهاد کار داده است.",
+       "tr": "yek scherkat-e ālmānī be ū pīschnahād-e kār dāde ast.",
+       "de": "Eine deutsche Firma hat ihr ein Jobangebot gemacht."
+      },
+      {
+       "fa": "او آنجا مترجم خواهد بود.",
+       "tr": "ū āndschā motardschem chāhad būd.",
+       "de": "Sie wird dort Übersetzerin sein."
+      },
+      {
+       "fa": "قرار است در خانه‌ی یک خانواده‌ی ایرانی زندگی کند.",
+       "tr": "gharār ast dar chāne-ye yek chānewāde-ye īrānī zendegī konad.",
+       "de": "Es ist geplant, dass sie bei einer iranischen Familie wohnt."
+      },
+      {
+       "fa": "لنا می‌گوید: «فارسی‌ام آنجا خیلی بهتر خواهد شد.»",
+       "tr": "lenā mīgūyad: «fārsīam āndschā cheylī behtar chāhad schod.»",
+       "de": "Lena sagt: „Mein Persisch wird dort viel besser werden.“"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t2",
+   "titel": "Text: Kiel im Jahr 2050",
+   "vorschau": "کیل در سال ۲۰۵۰",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>کارشناس</span> – Experte · <span class='fa'>برقی</span> – elektrisch · <span class='fa'>رفت و آمد</span> – Verkehr, Hin und Her · <span class='fa'>کشتی</span> – Schiff · <span class='fa'>بدون</span> – ohne · <span class='fa'>آلودگی</span> – Verschmutzung · <span class='fa'>تغییر آب و هوا</span> – Klimawandel · <span class='fa'>سطح</span> – Spiegel, Ebene · <span class='fa'>بالا آمدن</span> – steigen</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Text: Kiel im Jahr 2050",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "شهر ما در سال دو هزار و پنجاه چطور خواهد بود؟",
+       "tr": "schahr-e mā dar sāl-e do hezār o pandschāh tschetor chāhad būd?",
+       "de": "Wie wird unsere Stadt im Jahr 2050 sein?"
+      },
+      {
+       "fa": "کارشناسان می‌گویند که در آینده ماشین‌های کمتری در خیابان‌ها خواهند بود.",
+       "tr": "kārschenāsān mīgūyand ke dar āyande māschīnhā-ye kamtarī dar chiyābānhā chāhand būd.",
+       "de": "Experten sagen, dass es in Zukunft weniger Autos auf den Straßen geben wird."
+      },
+      {
+       "fa": "بیشتر مردم با دوچرخه یا اتوبوس‌های برقی رفت و آمد خواهند کرد.",
+       "tr": "bīschtar-e mardom bā dotscharche yā otobūshā-ye barghī raft o āmad chāhand kard.",
+       "de": "Die meisten Menschen werden mit dem Fahrrad oder mit Elektrobussen unterwegs sein."
+      },
+      {
+       "fa": "کشتی‌های جدید بدون آلودگی به اسکاندیناوی خواهند رفت.",
+       "tr": "keschtīhā-ye dschadīd bedūn-e ālūdegī be eskāndīnāwī chāhand raft.",
+       "de": "Neue Schiffe werden ohne Verschmutzung nach Skandinavien fahren."
+      },
+      {
+       "fa": "به خاطر تغییر آب و هوا، سطح آب دریا بالاتر خواهد آمد.",
+       "tr": "be chāter-e taghyīr-e āb o hawā, sath-e āb-e daryā bālātar chāhad āmad.",
+       "de": "Wegen des Klimawandels wird der Meeresspiegel steigen."
+      },
+      {
+       "fa": "برای همین، شهر دیوارهای جدیدی کنار ساحل خواهد ساخت.",
+       "tr": "barāye hamīn, schahr dīwārhā-ye dschadīdī kenār-e sāhel chāhad sācht.",
+       "de": "Deshalb wird die Stadt neue Mauern an der Küste bauen."
+      },
+      {
+       "fa": "دانشگاه بزرگ‌تر خواهد شد و دانشجویان بیشتری از همه‌ی دنیا به کیل خواهند آمد.",
+       "tr": "dāneschgāh bozorgtar chāhad schod o dāneschdschūyān-e bīschtarī az hame-ye donyā be kīl chāhand āmad.",
+       "de": "Die Universität wird größer werden, und mehr Studierende aus der ganzen Welt werden nach Kiel kommen."
+      },
+      {
+       "fa": "شاید آن موقع در کیل هم یک کافه‌ی ایرانی باشد!",
+       "tr": "schāyad ān mowgheʿ dar kīl ham yek kāfe-ye īrānī bāschad!",
+       "de": "Vielleicht gibt es dann in Kiel auch ein iranisches Café!"
+      },
+      {
+       "fa": "اما یک چیز تغییر نخواهد کرد: باد کیل!",
+       "tr": "ammā yek tschīz taghyīr nachāhad kard: bād-e kīl!",
+       "de": "Aber eines wird sich nicht ändern: der Wind in Kiel!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "در آینده ماشین‌های بیشتری در خیابان‌ها خواهند بود.",
+       "fest": true,
+       "erkl": "Es wird <b>weniger</b> Autos geben."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "سطح آب دریا بالاتر خواهد آمد.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "دانشگاه کوچک‌تر خواهد شد.",
+       "fest": true,
+       "erkl": "Sie wird <b>größer</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "باد کیل تغییر نخواهد کرد.",
+       "fest": true
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Womit werden die meisten unterwegs sein?",
+       "optionen": [
+        "Fahrrad oder Elektrobus",
+        "Auto",
+        "Flugzeug"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Warum baut die Stadt neue Mauern?",
+       "optionen": [
+        "wegen des steigenden Meeresspiegels",
+        "wegen des Verkehrs",
+        "wegen der Touristen"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was gibt es dann vielleicht in Kiel?",
+       "optionen": [
+        "ein iranisches Café",
+        "eine Wüste",
+        "eine U-Bahn"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t3",
+   "titel": "Profi-Text: Eine Nachrichtenmeldung",
+   "vorschau": "خبر",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>خط</span> – Linie · <span class='fa'>افتتاح شدن</span> – eröffnet werden · <span class='fa'>وصل کردن</span> – verbinden · <span class='fa'>شهرداری</span> – Stadtverwaltung</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Profi-Text: Eine Nachrichtenmeldung",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "خط جدید متروی تهران هفته‌ی آینده افتتاح خواهد شد.",
+       "tr": "chatt-e dschadīd-e metro-ye tehrān hafte-ye āyande eftetāh chāhad schod.",
+       "de": "Die neue U-Bahn-Linie in Teheran wird nächste Woche eröffnet."
+      },
+      {
+       "fa": "این خط شمال شهر را به فرودگاه وصل خواهد کرد.",
+       "tr": "īn chatt schemāl-e schahr rā be forūdgāh wasl chāhad kard.",
+       "de": "Diese Linie wird den Norden der Stadt mit dem Flughafen verbinden."
+      },
+      {
+       "fa": "مسافران در کمتر از یک ساعت به فرودگاه خواهند رسید.",
+       "tr": "mosāferān dar kamtar az yek sāʿat be forūdgāh chāhand resīd.",
+       "de": "Fahrgäste werden den Flughafen in weniger als einer Stunde erreichen."
+      },
+      {
+       "fa": "قطارها هر ده دقیقه یک بار حرکت خواهند کرد.",
+       "tr": "ghatārhā har dah daghīghe yek bār harakat chāhand kard.",
+       "de": "Die Züge werden alle zehn Minuten fahren."
+      },
+      {
+       "fa": "در هفته‌ی اول، سفر با این خط رایگان خواهد بود.",
+       "tr": "dar hafte-ye awwal, safar bā īn chatt rāygān chāhad būd.",
+       "de": "In der ersten Woche wird die Fahrt auf dieser Linie kostenlos sein."
+      },
+      {
+       "fa": "شهرداری امیدوار است که ترافیک شهر کمتر شود.",
+       "tr": "schahrdārī omīdwār ast ke terāfīk-e schahr kamtar schawad.",
+       "de": "Die Stadtverwaltung hofft, dass der Verkehr in der Stadt abnimmt."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "خط جدید مترو امروز افتتاح شد.",
+       "fest": true,
+       "erkl": "Sie wird <b>nächste Woche</b> eröffnet."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "قطارها هر ده دقیقه حرکت خواهند کرد.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "در هفته‌ی اول، سفر رایگان خواهد بود.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "این خط به دانشگاه می‌رود.",
+       "fest": true,
+       "erkl": "Sie verbindet den Norden mit dem <b>Flughafen</b>."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Wie lange wird die Fahrt zum Flughafen dauern?",
+       "optionen": [
+        "weniger als eine Stunde",
+        "zwei Stunden",
+        "zehn Minuten"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was hofft die Stadtverwaltung?",
+       "optionen": [
+        "dass der Verkehr abnimmt",
+        "dass mehr Autos fahren",
+        "dass es billiger wird"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie oft fahren die Züge?",
+       "optionen": [
+        "alle zehn Minuten",
+        "jede Stunde",
+        "zweimal am Tag"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d1",
+   "titel": "Dialog: Was machst du in den Nouruz-Ferien?",
+   "vorschau": "تعطیلات نوروز چه کار می‌کنی؟",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Babak und Tara sprechen über ihre Pläne.</p><p><span class='fa'>مطمئن</span> – sicher · <span class='fa'>ارشد</span> – Master- · <span class='fa'>تا آن موقع</span> – bis dahin</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "بابک: تارا، برای تعطیلات نوروز چه برنامه‌ای داری؟",
+       "tr": "tārā, barāye taʿtīlāt-e nourūz tsche barnāmeī dārī?",
+       "de": "Tara, was hast du für die Nouruz-Ferien vor?"
+      },
+      {
+       "fa": "تارا: قرار است با خانواده‌ام به شمال برویم.",
+       "tr": "gharār ast bā chānewādeam be schomāl berawīm.",
+       "de": "Ich fahre mit meiner Familie in den Norden. (ist ausgemacht)"
+      },
+      {
+       "fa": "بابک: چه خوب! چند روز آنجا می‌مانید؟",
+       "tr": "tsche chūb! tschand rūz āndschā mīmānīd?",
+       "de": "Wie schön! Wie viele Tage bleibt ihr dort?"
+      },
+      {
+       "fa": "تارا: یک هفته. و تو؟",
+       "tr": "yek hafte. o to?",
+       "de": "Eine Woche. Und du?"
+      },
+      {
+       "fa": "بابک: من در تهران می‌مانم. باید برای کنکور ارشد درس بخوانم.",
+       "tr": "man dar tehrān mīmānam. bāyad barāye konkūr-e arschad dars bechānam.",
+       "de": "Ich bleibe in Teheran. Ich muss für die Master-Aufnahmeprüfung lernen."
+      },
+      {
+       "fa": "تارا: حیف! ولی مطمئنم قبول خواهی شد.",
+       "tr": "heyf! walī motmaʾennam ghabūl chāhī schod.",
+       "de": "Schade! Aber ich bin sicher, du wirst bestehen."
+      },
+      {
+       "fa": "بابک: امیدوارم! سیزده‌بدر با ما به پارک می‌آیی؟",
+       "tr": "omīdwāram! sīzdahbedar bā mā be pārk mīāyī?",
+       "de": "Hoffentlich! Kommst du am Sizdah-Bedar mit uns in den Park?"
+      },
+      {
+       "fa": "تارا: حتما! تا آن موقع برگشته‌ام.",
+       "tr": "hatman! tā ān mowgheʿ bargaschte-am.",
+       "de": "Bestimmt! Bis dahin bin ich zurück."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "بابک: تارا، برای تعطیلات نوروز چه برنامه‌ای داری؟",
+       "tr": "tārā, barāye taʿtīlāt-e nourūz tsche barnāmeī dārī?",
+       "de": "Tara, was hast du für die Nouruz-Ferien vor?"
+      },
+      {
+       "fa": "تارا: قرار است با خانواده‌ام به شمال برویم.",
+       "tr": "gharār ast bā chānewādeam be schomāl berawīm.",
+       "de": "Ich fahre mit meiner Familie in den Norden. (ist ausgemacht)"
+      },
+      {
+       "fa": "بابک: چه خوب! چند روز آنجا می‌مانید؟",
+       "tr": "tsche chūb! tschand rūz āndschā mīmānīd?",
+       "de": "Wie schön! Wie viele Tage bleibt ihr dort?"
+      },
+      {
+       "fa": "تارا: یک هفته. و تو؟",
+       "tr": "yek hafte. o to?",
+       "de": "Eine Woche. Und du?"
+      },
+      {
+       "fa": "بابک: من در تهران می‌مانم. باید برای کنکور ارشد درس بخوانم.",
+       "tr": "man dar tehrān mīmānam. bāyad barāye konkūr-e arschad dars bechānam.",
+       "de": "Ich bleibe in Teheran. Ich muss für die Master-Aufnahmeprüfung lernen."
+      },
+      {
+       "fa": "تارا: حیف! ولی مطمئنم قبول خواهی شد.",
+       "tr": "heyf! walī motmaʾennam ghabūl chāhī schod.",
+       "de": "Schade! Aber ich bin sicher, du wirst bestehen."
+      },
+      {
+       "fa": "بابک: امیدوارم! سیزده‌بدر با ما به پارک می‌آیی؟",
+       "tr": "omīdwāram! sīzdahbedar bā mā be pārk mīāyī?",
+       "de": "Hoffentlich! Kommst du am Sizdah-Bedar mit uns in den Park?"
+      },
+      {
+       "fa": "تارا: حتما! تا آن موقع برگشته‌ام.",
+       "tr": "hatman! tā ān mowgheʿ bargaschte-am.",
+       "de": "Bestimmt! Bis dahin bin ich zurück."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Wohin fährt Tara?",
+       "optionen": [
+        "in den Norden",
+        "nach Schiras",
+        "ins Ausland"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Warum bleibt Babak in Teheran?",
+       "optionen": [
+        "Er muss für eine Prüfung lernen.",
+        "Er muss arbeiten.",
+        "Er ist krank."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was ist Tara sicher?",
+       "optionen": [
+        "dass Babak bestehen wird",
+        "dass es regnen wird",
+        "dass sie zurückkommt"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d2",
+   "titel": "Dialog: Ein Versprechen",
+   "vorschau": "قول می‌دهم!",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Arasch hat schon wieder vergessen, seiner Mitbewohnerin Nasrin beim Putzen zu helfen.</p><p><span class='fa'>سرم شلوغ است</span> – ich habe viel zu tun · <span class='fa'>قول دادن</span> – versprechen · <span class='fa'>دیگر … نـ</span> – nicht mehr</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "نسرین: آرش! باز هم آشپزخانه را تمیز نکردی!",
+       "tr": "ārasch! bāz ham āschpazchāne rā tamīz nakardī!",
+       "de": "Arasch! Du hast schon wieder die Küche nicht sauber gemacht!"
+      },
+      {
+       "fa": "آرش: ببخشید! این هفته خیلی سرم شلوغ بود.",
+       "tr": "bebachschīd! īn hafte cheylī saram schologh būd.",
+       "de": "Entschuldige! Diese Woche hatte ich sehr viel zu tun."
+      },
+      {
+       "fa": "نسرین: هر هفته همین را می‌گویی!",
+       "tr": "har hafte hamīn rā mīgūyī!",
+       "de": "Das sagst du jede Woche!"
+      },
+      {
+       "fa": "آرش: قول می‌دهم از هفته‌ی آینده هر شنبه آشپزخانه را تمیز خواهم کرد.",
+       "tr": "ghoul mīdeham az hafte-ye āyande har schanbe āschpazchāne rā tamīz chāham kard.",
+       "de": "Ich verspreche, ab nächster Woche werde ich jeden Samstag die Küche putzen."
+      },
+      {
+       "fa": "نسرین: و زباله‌ها؟",
+       "tr": "o zobālehā?",
+       "de": "Und der Müll?"
+      },
+      {
+       "fa": "آرش: زباله‌ها را هم بیرون خواهم برد. دیگر فراموش نخواهم کرد!",
+       "tr": "zobālehā rā ham bīrūn chāham bord. dīgar farāmūsch nachāham kard!",
+       "de": "Den Müll werde ich auch rausbringen. Ich werde es nicht mehr vergessen!"
+      },
+      {
+       "fa": "نسرین: خواهیم دید!",
+       "tr": "chāhīm dīd!",
+       "de": "Wir werden sehen!"
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "نسرین: آرش! باز هم آشپزخانه را تمیز نکردی!",
+       "tr": "ārasch! bāz ham āschpazchāne rā tamīz nakardī!",
+       "de": "Arasch! Du hast schon wieder die Küche nicht sauber gemacht!"
+      },
+      {
+       "fa": "آرش: ببخشید! این هفته خیلی سرم شلوغ بود.",
+       "tr": "bebachschīd! īn hafte cheylī saram schologh būd.",
+       "de": "Entschuldige! Diese Woche hatte ich sehr viel zu tun."
+      },
+      {
+       "fa": "نسرین: هر هفته همین را می‌گویی!",
+       "tr": "har hafte hamīn rā mīgūyī!",
+       "de": "Das sagst du jede Woche!"
+      },
+      {
+       "fa": "آرش: قول می‌دهم از هفته‌ی آینده هر شنبه آشپزخانه را تمیز خواهم کرد.",
+       "tr": "ghoul mīdeham az hafte-ye āyande har schanbe āschpazchāne rā tamīz chāham kard.",
+       "de": "Ich verspreche, ab nächster Woche werde ich jeden Samstag die Küche putzen."
+      },
+      {
+       "fa": "نسرین: و زباله‌ها؟",
+       "tr": "o zobālehā?",
+       "de": "Und der Müll?"
+      },
+      {
+       "fa": "آرش: زباله‌ها را هم بیرون خواهم برد. دیگر فراموش نخواهم کرد!",
+       "tr": "zobālehā rā ham bīrūn chāham bord. dīgar farāmūsch nachāham kard!",
+       "de": "Den Müll werde ich auch rausbringen. Ich werde es nicht mehr vergessen!"
+      },
+      {
+       "fa": "نسرین: خواهیم دید!",
+       "tr": "chāhīm dīd!",
+       "de": "Wir werden sehen!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Was hat Arasch nicht gemacht?",
+       "optionen": [
+        "die Küche sauber gemacht",
+        "eingekauft",
+        "gekocht"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was verspricht er?",
+       "optionen": [
+        "jeden Samstag die Küche zu putzen",
+        "jeden Tag zu kochen",
+        "auszuziehen"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was antwortet Nasrin am Ende?",
+       "optionen": [
+        "Wir werden sehen!",
+        "Danke!",
+        "Gut so!"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

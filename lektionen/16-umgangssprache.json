@@ -1,0 +1,191 @@
+{
+ "id": "ug",
+ "art": "umgangssprache",
+ "titel": "Umgangssprache: So spricht man im Alltag",
+ "beschreibung": "Freiwilliger Extra-Teil: Erinnerungen im Gespräch.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "So spricht man: früher",
+   "vorschau": "یادِته؟ · اون موقِع‌ها",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Schrift ≠ Gespräch",
+     "text": "<ul><li>Die durative Vergangenheit bleibt fast gleich: <span class='fa'>می‌رَفتَم</span>; <b>-and → -an</b>: <span class='fa'>می‌رَفتَن</span></li><li><span class='fa'>یادَت هَست؟ → یادِته؟</span> – weißt du noch?</li><li><span class='fa'>آن وَقت‌ها / آن زَمان → اون موقِع‌ها</span> – damals</li><li><span class='fa'>خوش گُذَشتَن</span> – schön sein, Spaß machen: <span class='fa'>خِیلی خوش می‌گُذَشت</span></li></ul>",
+     "stil": "merke"
+    },
+    {
+     "typ": "paare",
+     "links": "x",
+     "paare": [
+      {
+       "fa": "یادَت هَست؟",
+       "tr": "yādat hast?",
+       "de": "erinnerst du dich?",
+       "x": "یادِته؟"
+      },
+      {
+       "fa": "بَچّه که بودیم",
+       "tr": "batsche ke būdīm",
+       "de": "als wir Kinder waren",
+       "x": "بَچه که بودیم"
+      },
+      {
+       "fa": "آن وَقت‌ها",
+       "tr": "ān waghthā",
+       "de": "damals",
+       "x": "اون موقِع‌ها"
+      },
+      {
+       "fa": "می‌رَفتَند",
+       "tr": "mīraftand",
+       "de": "sie gingen",
+       "x": "می‌رَفتَن"
+      },
+      {
+       "fa": "نِمی‌دانِستَم",
+       "tr": "nemīdānestam",
+       "de": "ich wusste nicht",
+       "x": "نِمی‌دونِستَم"
+      }
+     ],
+     "titel": "Schrift ↔ Gespräch"
+    },
+    {
+     "typ": "sortieren",
+     "titel": "Schrift oder Gespräch?",
+     "frage": "Schriftsprache oder Umgangssprache?",
+     "kategorien": [
+      "✍️ Schriftsprache",
+      "🗣️ Umgangssprache"
+     ],
+     "items": [
+      {
+       "fa": "یادَت هَست؟",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "بَچّه که بودیم",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "آن وَقت‌ها",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "می‌رَفتَند",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "نِمی‌دانِستَم",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "یادِته؟",
+       "k": 1,
+       "say": false,
+       "e": "<i>yādete?</i> – geschrieben: <span class='fa'>یادَت هَست؟</span>"
+      },
+      {
+       "fa": "بَچه که بودیم",
+       "k": 1,
+       "say": false,
+       "e": "<i>batsche ke būdīm</i> – geschrieben: <span class='fa'>بَچّه که بودیم</span>"
+      },
+      {
+       "fa": "اون موقِع‌ها",
+       "k": 1,
+       "say": false,
+       "e": "<i>ūn mowgheʿhā</i> – geschrieben: <span class='fa'>آن وَقت‌ها</span>"
+      },
+      {
+       "fa": "می‌رَفتَن",
+       "k": 1,
+       "say": false,
+       "e": "<i>mīraftan</i> – geschrieben: <span class='fa'>می‌رَفتَند</span>"
+      },
+      {
+       "fa": "نِمی‌دونِستَم",
+       "k": 1,
+       "say": false,
+       "e": "<i>nemīdūnestam</i> – geschrieben: <span class='fa'>نِمی‌دانِستَم</span>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Weißt du noch?",
+   "vorschau": "یادِته؟",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Erinnerungen",
+     "text": "Umgangssprache! Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "یادِته بَچه که بودیم چیکار می‌کَردیم؟",
+       "tr": "yādete batsche ke būdīm tschīkār mīkardīm?",
+       "de": "Weißt du noch, was wir als Kinder gemacht haben?"
+      },
+      {
+       "fa": "آره! کُل روز تو کوچه بودیم.",
+       "tr": "āre! kol-e rūz tū kūtsche būdīm.",
+       "de": "Ja! Wir waren den ganzen Tag in der Gasse."
+      },
+      {
+       "fa": "اون موقِع‌ها گوشی نَداشتیم، وَلی خِیلی خوش می‌گُذَشت.",
+       "tr": "ūn mowgheʿhā gūschī nadāschtīm, walī cheylī chosch mīgozascht.",
+       "de": "Damals hatten wir keine Handys, aber es war sehr schön."
+      },
+      {
+       "fa": "مامانِم هَمیشه داد می‌زَد: «بیاین تو، شام حاضِره!»",
+       "tr": "māmānam hamīsche dād mīzad: «biyāyn tū, schām hāzere!»",
+       "de": "Meine Mama rief immer: „Kommt rein, das Abendessen ist fertig!“"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Verstanden?",
+     "fragen": [
+      {
+       "frage": "Wo waren die Kinder den ganzen Tag?",
+       "optionen": [
+        "in der Gasse",
+        "in der Schule",
+        "im Park"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was rief die Mutter immer?",
+       "optionen": [
+        "Kommt rein, das Essen ist fertig!",
+        "Macht Hausaufgaben!",
+        "Geht schlafen!"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "<span class='fa'>اون موقِع‌ها</span> bedeutet …",
+       "optionen": [
+        "damals",
+        "jetzt",
+        "manchmal"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

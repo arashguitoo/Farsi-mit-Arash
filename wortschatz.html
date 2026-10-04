@@ -186,10 +186,10 @@
     setzeKnoepfe();
     try {
       const index = await F.ladeJSON("lektionen/index.json");
-      const frei = await F.ladeFreigaben();
+      const frei = await F.ladeFreigaben(), fortAll = await F.ladeAlleFortschritte();
       const gesehen = new Set();
       for (const l of index.lektionen) {
-        if (!l.wortschatz || !l.datei || !F.istOffen(l, frei)) continue;
+        if (!l.wortschatz || !l.datei || !F.istOffen(l, frei, index, fortAll)) continue;
         const d = await F.ladeJSON("lektionen/" + l.wortschatz);
         LEKS.push({ id: l.id, nummer: l.nummer, kurz: l.titel.split(/[–:]/)[0].trim() });
         d.woerter.forEach(w => { if (gesehen.has(w.fa)) return; gesehen.add(w.fa); WS.push({ ...w, lek: l.id }); });

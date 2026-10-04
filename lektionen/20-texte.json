@@ -1,0 +1,708 @@
+{
+ "id": "tx",
+ "art": "texte",
+ "titel": "Texte & Dialoge",
+ "beschreibung": "Lesetexte mit Fragen und Dialoge zum Ordnen.",
+ "stationen": [
+  {
+   "id": "t1",
+   "titel": "Kurztext: Kiel wird grüner",
+   "vorschau": "کیل سبزتر می‌شود",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>گذشته</span> – vergangen, letzte · <span class='fa'>انجام شدن</span> – getan werden · <span class='fa'>شیشه</span> – Glas · <span class='fa'>بندر</span> – Hafen</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Kurztext: Kiel wird grüner",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "در چند سال گذشته در کیل کارهای زیادی برای محیط زیست انجام شده است.",
+       "tr": "dar tschand sāl-e gozaschte dar kīl kārhā-ye ziyādī barāye mohīt-e zīst andschām schode ast.",
+       "de": "In den letzten Jahren ist in Kiel viel für die Umwelt getan worden."
+      },
+      {
+       "fa": "راه‌های دوچرخه‌ی جدید ساخته شده‌اند.",
+       "tr": "rāhhā-ye dotscharche-ye dschadīd sāchte schode-and.",
+       "de": "Neue Radwege sind gebaut worden."
+      },
+      {
+       "fa": "در پارک‌ها صدها درخت کاشته شده است.",
+       "tr": "dar pārkhā sadhā deracht kāschte schode ast.",
+       "de": "In den Parks sind Hunderte Bäume gepflanzt worden."
+      },
+      {
+       "fa": "زباله‌ها در خانه‌ها جدا می‌شوند: کاغذ، پلاستیک، شیشه و زباله‌ی معمولی.",
+       "tr": "zobālehā dar chānehā dschodā mīschawand: kāghaz, plāstīk, schīsche o zobāle-ye maʿmūlī.",
+       "de": "Der Müll wird in den Haushalten getrennt: Papier, Plastik, Glas und Restmüll."
+      },
+      {
+       "fa": "قبلا کشتی‌ها در بندر برق نداشتند، اما حالا برق به آنها داده می‌شود.",
+       "tr": "ghablan keschtīhā dar bandar bargh nadāschtand, ammā hālā bargh be ānhā dāde mīschawad.",
+       "de": "Früher hatten die Schiffe im Hafen keinen Strom, aber jetzt wird ihnen Strom geliefert."
+      },
+      {
+       "fa": "سال آینده اتوبوس‌های برقی بیشتری خریده خواهد شد.",
+       "tr": "sāl-e āyande otobūshā-ye barghī-ye bīschtarī charīde chāhad schod.",
+       "de": "Nächstes Jahr werden mehr Elektrobusse gekauft werden."
+      },
+      {
+       "fa": "بعضی‌ها می‌گویند که هنوز کارهای بیشتری باید انجام شود.",
+       "tr": "baʿzīhā mīgūyand ke hanūz kārhā-ye bīschtarī bāyad andschām schawad.",
+       "de": "Manche sagen, dass noch mehr getan werden muss."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "در کیل راه‌های دوچرخه‌ی جدید ساخته شده‌اند.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "زباله‌ها در کیل جدا نمی‌شوند.",
+       "fest": true,
+       "erkl": "Der Müll <b>wird getrennt</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "حالا به کشتی‌ها در بندر برق داده می‌شود.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "همه می‌گویند که کار دیگری لازم نیست.",
+       "fest": true,
+       "erkl": "Manche sagen, es muss <b>noch mehr</b> getan werden."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Was ist in den Parks passiert?",
+       "optionen": [
+        "Hunderte Bäume wurden gepflanzt.",
+        "Neue Cafés wurden eröffnet.",
+        "Sie wurden geschlossen."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "In wie viele Sorten wird der Müll getrennt?",
+       "optionen": [
+        "vier",
+        "zwei",
+        "drei"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was wird nächstes Jahr gekauft?",
+       "optionen": [
+        "mehr Elektrobusse",
+        "neue Schiffe",
+        "Fahrräder"
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "راه‌های دوچرخه‌ی جدید ساخته شده‌اند.",
+       "tr": "rāhhā-ye dotscharche-ye dschadīd sāchte schode-and.",
+       "de": "Neue Radwege sind gebaut worden."
+      },
+      {
+       "fa": "در پارک‌ها صدها درخت کاشته شده است.",
+       "tr": "dar pārkhā sadhā deracht kāschte schode ast.",
+       "de": "In den Parks sind Hunderte Bäume gepflanzt worden."
+      },
+      {
+       "fa": "زباله‌ها در خانه‌ها جدا می‌شوند: کاغذ، پلاستیک، شیشه و زباله‌ی معمولی.",
+       "tr": "zobālehā dar chānehā dschodā mīschawand: kāghaz, plāstīk, schīsche o zobāle-ye maʿmūlī.",
+       "de": "Der Müll wird in den Haushalten getrennt: Papier, Plastik, Glas und Restmüll."
+      },
+      {
+       "fa": "قبلا کشتی‌ها در بندر برق نداشتند، اما حالا برق به آنها داده می‌شود.",
+       "tr": "ghablan keschtīhā dar bandar bargh nadāschtand, ammā hālā bargh be ānhā dāde mīschawad.",
+       "de": "Früher hatten die Schiffe im Hafen keinen Strom, aber jetzt wird ihnen Strom geliefert."
+      },
+      {
+       "fa": "سال آینده اتوبوس‌های برقی بیشتری خریده خواهد شد.",
+       "tr": "sāl-e āyande otobūshā-ye barghī-ye bīschtarī charīde chāhad schod.",
+       "de": "Nächstes Jahr werden mehr Elektrobusse gekauft werden."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t2",
+   "titel": "Text: Der Urmia-See",
+   "vorschau": "دریاچه‌ی ارومیه",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>شمال غربی</span> – Nordwesten · <span class='fa'>قرار داشتن</span> – liegen · <span class='fa'>زمانی</span> – einst · <span class='fa'>شور</span> – salzig · <span class='fa'>بخش</span> – Teil · <span class='fa'>از دست رفتن</span> – verloren gehen · <span class='fa'>نجات</span> – Rettung · <span class='fa'>صبر کرد</span> – (man muss) warten / Geduld haben</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Text: Der Urmia-See",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "دریاچه‌ی ارومیه در شمال غربی ایران قرار دارد.",
+       "tr": "daryātsche-ye orūmiye dar schemāl-e gharbī-ye īrān gharār dārad.",
+       "de": "Der Urmia-See liegt im Nordwesten Irans."
+      },
+      {
+       "fa": "این دریاچه زمانی یکی از بزرگ‌ترین دریاچه‌های شور دنیا بود.",
+       "tr": "īn daryātsche zamānī yekī az bozorgtarīn daryātschehā-ye schūr-e donyā būd.",
+       "de": "Dieser See war einmal einer der größten Salzseen der Welt."
+      },
+      {
+       "fa": "هر سال هزاران پرنده، مثلا فلامینگو، در آنجا دیده می‌شدند.",
+       "tr": "har sāl hezārān parande, masalan flāmīngo, dar āndschā dīde mīschodand.",
+       "de": "Jedes Jahr waren dort Tausende Vögel zu sehen, zum Beispiel Flamingos."
+      },
+      {
+       "fa": "اما در سی سال گذشته، بخش بزرگی از آب دریاچه از دست رفته است.",
+       "tr": "ammā dar sī sāl-e gozaschte, bachsch-e bozorgī az āb-e daryātsche az dast rafte ast.",
+       "de": "Aber in den letzten dreißig Jahren ist ein großer Teil des Seewassers verloren gegangen."
+      },
+      {
+       "fa": "روی رودخانه‌ها سدهای زیادی ساخته شد.",
+       "tr": "rū-ye rūdchānehā saddhā-ye ziyādī sāchte schod.",
+       "de": "An den Flüssen wurden viele Staudämme gebaut."
+      },
+      {
+       "fa": "آب رودخانه‌ها برای کشاورزی استفاده می‌شد و به دریاچه نمی‌رسید.",
+       "tr": "āb-e rūdchānehā barāye keschāwarzī estefāde mīschod o be daryātsche nemīresīd.",
+       "de": "Das Flusswasser wurde für die Landwirtschaft genutzt und erreichte den See nicht."
+      },
+      {
+       "fa": "خشکسالی و گرمایش زمین هم مشکل را بزرگ‌تر کرده‌اند.",
+       "tr": "choschksālī o garmāyesch-e zamīn ham moschkel rā bozorgtar karde-and.",
+       "de": "Dürre und Erderwärmung haben das Problem auch vergrößert."
+      },
+      {
+       "fa": "از چند سال پیش، برنامه‌ای برای نجات دریاچه شروع شده است.",
+       "tr": "az tschand sāl pīsch, barnāmeī barāye nedschāt-e daryātsche schorūʿ schode ast.",
+       "de": "Seit einigen Jahren läuft ein Programm zur Rettung des Sees."
+      },
+      {
+       "fa": "در این برنامه، آب بیشتری به دریاچه فرستاده می‌شود و در کشاورزی صرفه‌جویی می‌شود.",
+       "tr": "dar īn barnāme, āb-e bīschtarī be daryātsche ferestāde mīschawad o dar keschāwarzī sarfedschūyī mīschawad.",
+       "de": "In diesem Programm wird mehr Wasser in den See geleitet und in der Landwirtschaft gespart."
+      },
+      {
+       "fa": "کارشناسان می‌گویند که دریاچه می‌تواند نجات داده شود، اما باید صبر کرد.",
+       "tr": "kārschenāsān mīgūyand ke daryātsche mītawānad nedschāt dāde schawad, ammā bāyad sabr kard.",
+       "de": "Experten sagen, dass der See gerettet werden kann, aber man muss Geduld haben."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "دریاچه‌ی ارومیه در جنوب ایران است.",
+       "fest": true,
+       "erkl": "Er liegt im <b>Nordwesten</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "در گذشته پرندگان زیادی در آنجا دیده می‌شدند.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "روی رودخانه‌ها سدهای زیادی ساخته شد.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "هیچ برنامه‌ای برای نجات دریاچه وجود ندارد.",
+       "fest": true,
+       "erkl": "Es gibt ein <b>Rettungsprogramm</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "کارشناسان می‌گویند دریاچه می‌تواند نجات داده شود.",
+       "fest": true
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Was für ein See ist der Urmia-See?",
+       "optionen": [
+        "ein Salzsee",
+        "ein Süßwassersee",
+        "ein Stausee"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Warum erreichte das Flusswasser den See nicht?",
+       "optionen": [
+        "Es wurde für die Landwirtschaft genutzt.",
+        "Es war zu salzig.",
+        "Es regnete zu viel."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was haben das Problem noch vergrößert?",
+       "optionen": [
+        "Dürre und Erderwärmung",
+        "Touristen",
+        "Vögel"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was sagen Experten?",
+       "optionen": [
+        "Man braucht Geduld.",
+        "Es ist zu spät.",
+        "Das Problem ist gelöst."
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t3",
+   "titel": "Profi-Text: Kurznachrichten",
+   "vorschau": "خبرهای کوتاه",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>پایان</span> – Ende · <span class='fa'>تن</span> – Tonne · <span class='fa'>به گفته‌ی</span> – laut, nach Angaben von · <span class='fa'>سالن</span> – Halle · <span class='fa'>برگزار شدن</span> – stattfinden</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Profi-Text: Kurznachrichten",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "۱. پل قدیمی شهر برای تعمیر بسته شده است. پل تا پایان ماه باز نخواهد شد.",
+       "tr": "yek. pol-e ghadīmī-ye schahr barāye taʿmīr baste schode ast. pol tā pāyān-e māh bāz nachāhad schod.",
+       "de": "1. Die alte Brücke der Stadt ist zur Reparatur gesperrt worden. Sie wird bis Monatsende nicht geöffnet."
+      },
+      {
+       "fa": "۲. در هفته‌ی گذشته بیش از دو تن زباله از ساحل جمع‌آوری شد.",
+       "tr": "do. dar hafte-ye gozaschte bīsch az do tan zobāle az sāhel dschamʿāwarī schod.",
+       "de": "2. Letzte Woche wurden mehr als zwei Tonnen Müll vom Strand gesammelt."
+      },
+      {
+       "fa": "۳. به گفته‌ی شهرداری، باید در مصرف آب صرفه‌جویی شود.",
+       "tr": "se. be gofte-ye schahrdārī, bāyad dar masraf-e āb sarfedschūyī schawad.",
+       "de": "3. Laut Stadtverwaltung muss beim Wasserverbrauch gespart werden."
+      },
+      {
+       "fa": "۴. نمایشگاه کتاب امسال در سالن جدید برگزار خواهد شد.",
+       "tr": "tschahār. namāyeschgāh-e ketāb emsāl dar sālon-e dschadīd bargozār chāhad schod.",
+       "de": "4. Die Buchmesse wird dieses Jahr in der neuen Halle stattfinden."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "پل قدیمی بسته شده است.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "از ساحل زباله جمع‌آوری نشد.",
+       "fest": true,
+       "erkl": "Es wurden mehr als <b>zwei Tonnen</b> gesammelt."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "نمایشگاه کتاب در سالن قدیمی برگزار خواهد شد.",
+       "fest": true,
+       "erkl": "In der <b>neuen</b> Halle."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Warum ist die Brücke gesperrt?",
+       "optionen": [
+        "zur Reparatur",
+        "wegen eines Festes",
+        "wegen Hochwasser"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wobei soll gespart werden?",
+       "optionen": [
+        "beim Wasserverbrauch",
+        "beim Strom",
+        "beim Müll"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d1",
+   "titel": "Dialog: Mülltrennung",
+   "vorschau": "زباله‌ها جدا شده‌اند؟",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Im Wohnheim: Mina erklärt dem neuen Mitbewohner Arasch die Mülltrennung.</p><p><span class='fa'>قبلی</span> – vorherige/r · <span class='fa'>فرق داشتن</span> – anders sein · <span class='fa'>سطل</span> – Eimer, Tonne · <span class='fa'>نوبت</span> – an der Reihe</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "مینا: آرش، اینجا زباله‌ها باید جدا شوند.",
+       "tr": "ārasch, īndschā zobālehā bāyad dschodā schawand.",
+       "de": "Arasch, hier muss der Müll getrennt werden."
+      },
+      {
+       "fa": "آرش: واقعا؟ در خوابگاه قبلی‌ام زباله‌ها جدا نمی‌شد.",
+       "tr": "wāgheʿan? dar chābgāh-e ghablīam zobālehā dschodā nemīschod.",
+       "de": "Wirklich? In meinem alten Wohnheim wurde der Müll nicht getrennt."
+      },
+      {
+       "fa": "مینا: اینجا فرق دارد. کاغذ در سطل آبی ریخته می‌شود و پلاستیک در سطل زرد.",
+       "tr": "īndschā fargh dārad. kāghaz dar satl-e ābī rīchte mīschawad o plāstīk dar satl-e zard.",
+       "de": "Hier ist es anders. Papier kommt in die blaue Tonne und Plastik in die gelbe."
+      },
+      {
+       "fa": "آرش: و شیشه؟",
+       "tr": "o schīsche?",
+       "de": "Und Glas?"
+      },
+      {
+       "fa": "مینا: شیشه‌ها به سطل‌های کنار خیابان برده می‌شوند.",
+       "tr": "schīschehā be satlhā-ye kenār-e chiyābān borde mīschawand.",
+       "de": "Glas wird zu den Containern an der Straße gebracht."
+      },
+      {
+       "fa": "آرش: باشه. این هفته زباله‌ها بیرون برده شده‌اند؟",
+       "tr": "bāsche. īn hafte zobālehā bīrūn borde schode-and?",
+       "de": "Okay. Ist der Müll diese Woche schon rausgebracht worden?"
+      },
+      {
+       "fa": "مینا: نه، هنوز نه. این دفعه نوبت توست!",
+       "tr": "na, hanūz na. īn dafʿe noubat-e tost!",
+       "de": "Nein, noch nicht. Diesmal bist du dran!"
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "مینا: آرش، اینجا زباله‌ها باید جدا شوند.",
+       "tr": "ārasch, īndschā zobālehā bāyad dschodā schawand.",
+       "de": "Arasch, hier muss der Müll getrennt werden."
+      },
+      {
+       "fa": "آرش: واقعا؟ در خوابگاه قبلی‌ام زباله‌ها جدا نمی‌شد.",
+       "tr": "wāgheʿan? dar chābgāh-e ghablīam zobālehā dschodā nemīschod.",
+       "de": "Wirklich? In meinem alten Wohnheim wurde der Müll nicht getrennt."
+      },
+      {
+       "fa": "مینا: اینجا فرق دارد. کاغذ در سطل آبی ریخته می‌شود و پلاستیک در سطل زرد.",
+       "tr": "īndschā fargh dārad. kāghaz dar satl-e ābī rīchte mīschawad o plāstīk dar satl-e zard.",
+       "de": "Hier ist es anders. Papier kommt in die blaue Tonne und Plastik in die gelbe."
+      },
+      {
+       "fa": "آرش: و شیشه؟",
+       "tr": "o schīsche?",
+       "de": "Und Glas?"
+      },
+      {
+       "fa": "مینا: شیشه‌ها به سطل‌های کنار خیابان برده می‌شوند.",
+       "tr": "schīschehā be satlhā-ye kenār-e chiyābān borde mīschawand.",
+       "de": "Glas wird zu den Containern an der Straße gebracht."
+      },
+      {
+       "fa": "آرش: باشه. این هفته زباله‌ها بیرون برده شده‌اند؟",
+       "tr": "bāsche. īn hafte zobālehā bīrūn borde schode-and?",
+       "de": "Okay. Ist der Müll diese Woche schon rausgebracht worden?"
+      },
+      {
+       "fa": "مینا: نه، هنوز نه. این دفعه نوبت توست!",
+       "tr": "na, hanūz na. īn dafʿe noubat-e tost!",
+       "de": "Nein, noch nicht. Diesmal bist du dran!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Wohin kommt Papier?",
+       "optionen": [
+        "in die blaue Tonne",
+        "in die gelbe Tonne",
+        "an die Straße"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wurde der Müll im alten Wohnheim getrennt?",
+       "optionen": [
+        "Nein.",
+        "Ja.",
+        "Nur Glas."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wer bringt diesmal den Müll raus?",
+       "optionen": [
+        "Arasch",
+        "Mina",
+        "niemand"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d2",
+   "titel": "Dialog: Stadtspaziergang",
+   "vorschau": "اینجا چه ساخته شده؟",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Nima zeigt seiner Besucherin Lina sein Viertel in Isfahan.</p><p><span class='fa'>تبدیل شدن به</span> – umgewandelt werden in · <span class='fa'>گالری</span> – Galerie · <span class='fa'>زمین خالی</span> – leeres Grundstück</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "لینا: این ساختمان چقدر قشنگ است! کی ساخته شده؟",
+       "tr": "īn sāchtemān tscheghadr ghaschang ast! key sāchte schode?",
+       "de": "Wie schön dieses Gebäude ist! Wann ist es gebaut worden?"
+      },
+      {
+       "fa": "نیما: حدود چهارصد سال پیش. اما سال گذشته تعمیر شد.",
+       "tr": "hodūd-e tschahārsad sāl pīsch. ammā sāl-e gozaschte taʿmīr schod.",
+       "de": "Vor etwa vierhundert Jahren. Aber letztes Jahr wurde es renoviert."
+      },
+      {
+       "fa": "لینا: حالا از آن چه استفاده‌ای می‌شود؟",
+       "tr": "hālā az ān tsche estefādeī mīschawad?",
+       "de": "Wofür wird es jetzt genutzt?"
+      },
+      {
+       "fa": "نیما: به یک کافه و گالری تبدیل شده است.",
+       "tr": "be yek kāfe o gālerī tabdīl schode ast.",
+       "de": "Es ist in ein Café und eine Galerie umgewandelt worden."
+      },
+      {
+       "fa": "لینا: و آن زمین خالی؟",
+       "tr": "o ān zamīn-e chālī?",
+       "de": "Und das leere Grundstück dort?"
+      },
+      {
+       "fa": "نیما: آنجا یک پارک ساخته خواهد شد. درخت‌ها همین ماه کاشته می‌شوند.",
+       "tr": "āndschā yek pārk sāchte chāhad schod. derachthā hamīn māh kāschte mīschawand.",
+       "de": "Dort wird ein Park gebaut werden. Die Bäume werden noch diesen Monat gepflanzt."
+      },
+      {
+       "fa": "لینا: عالی! شهر شما خیلی سبز است.",
+       "tr": "ʿālī! schahr-e schomā cheylī sabz ast.",
+       "de": "Super! Eure Stadt ist sehr grün."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "لینا: این ساختمان چقدر قشنگ است! کی ساخته شده؟",
+       "tr": "īn sāchtemān tscheghadr ghaschang ast! key sāchte schode?",
+       "de": "Wie schön dieses Gebäude ist! Wann ist es gebaut worden?"
+      },
+      {
+       "fa": "نیما: حدود چهارصد سال پیش. اما سال گذشته تعمیر شد.",
+       "tr": "hodūd-e tschahārsad sāl pīsch. ammā sāl-e gozaschte taʿmīr schod.",
+       "de": "Vor etwa vierhundert Jahren. Aber letztes Jahr wurde es renoviert."
+      },
+      {
+       "fa": "لینا: حالا از آن چه استفاده‌ای می‌شود؟",
+       "tr": "hālā az ān tsche estefādeī mīschawad?",
+       "de": "Wofür wird es jetzt genutzt?"
+      },
+      {
+       "fa": "نیما: به یک کافه و گالری تبدیل شده است.",
+       "tr": "be yek kāfe o gālerī tabdīl schode ast.",
+       "de": "Es ist in ein Café und eine Galerie umgewandelt worden."
+      },
+      {
+       "fa": "لینا: و آن زمین خالی؟",
+       "tr": "o ān zamīn-e chālī?",
+       "de": "Und das leere Grundstück dort?"
+      },
+      {
+       "fa": "نیما: آنجا یک پارک ساخته خواهد شد. درخت‌ها همین ماه کاشته می‌شوند.",
+       "tr": "āndschā yek pārk sāchte chāhad schod. derachthā hamīn māh kāschte mīschawand.",
+       "de": "Dort wird ein Park gebaut werden. Die Bäume werden noch diesen Monat gepflanzt."
+      },
+      {
+       "fa": "لینا: عالی! شهر شما خیلی سبز است.",
+       "tr": "ʿālī! schahr-e schomā cheylī sabz ast.",
+       "de": "Super! Eure Stadt ist sehr grün."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Wie alt ist das Gebäude?",
+       "optionen": [
+        "etwa 400 Jahre",
+        "etwa 40 Jahre",
+        "etwa 100 Jahre"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wofür wird es jetzt genutzt?",
+       "optionen": [
+        "als Café und Galerie",
+        "als Museum",
+        "als Wohnung"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was wird auf dem leeren Grundstück gebaut?",
+       "optionen": [
+        "ein Park",
+        "ein Hotel",
+        "eine Schule"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

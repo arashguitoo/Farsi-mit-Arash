@@ -1,0 +1,781 @@
+{
+ "id": "tx",
+ "art": "texte",
+ "titel": "Texte & Dialoge",
+ "beschreibung": "Lesetexte mit Fragen und Dialoge zum Ordnen.",
+ "stationen": [
+  {
+   "id": "t1",
+   "titel": "Kurztext: Meine Kindheit in Täbris",
+   "vorschau": "بچگی من در تبریز",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>به دنیا آمدن</span> – geboren werden · <span class='fa'>سالگی</span> – Lebensjahr · <span class='fa'>درخت</span> – Baum · <span class='fa'>انار</span> – Granatapfel · <span class='fa'>آدم‌برفی</span> – Schneemann · <span class='fa'>برق رفت</span> – der Strom fiel aus · <span class='fa'>تاریکی</span> – Dunkelheit</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Kurztext: Meine Kindheit in Täbris",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "من در تبریز به دنیا آمدم و تا دوازده سالگی آنجا زندگی می‌کردم.",
+       "tr": "man dar tabrīz be donyā āmadam o tā dawāzdah sālegī āndschā zendegī mīkardam.",
+       "de": "Ich bin in Täbris geboren und habe bis zu meinem zwölften Lebensjahr dort gewohnt."
+      },
+      {
+       "fa": "خانه‌ی ما یک حیاط بزرگ داشت با یک درخت انار.",
+       "tr": "chāne-ye mā yek hayāt-e bozorg dāscht bā yek derachat-e anār.",
+       "de": "Unser Haus hatte einen großen Hof mit einem Granatapfelbaum."
+      },
+      {
+       "fa": "هر روز بعد از مدرسه با بچه‌های همسایه در کوچه بازی می‌کردیم.",
+       "tr": "har rūz baʿd az madrese bā batschehā-ye hamsāye dar kūtsche bāzī mīkardīm.",
+       "de": "Jeden Tag nach der Schule spielten wir mit den Nachbarskindern in der Gasse."
+      },
+      {
+       "fa": "بیشتر فوتبال یا قایم‌باشک بازی می‌کردیم.",
+       "tr": "bīschtar fūtbāl yā ghāyembāschak bāzī mīkardīm.",
+       "de": "Meistens spielten wir Fußball oder Verstecken."
+      },
+      {
+       "fa": "زمستان‌ها برف زیادی می‌بارید و ما آدم‌برفی درست می‌کردیم.",
+       "tr": "zemestānhā barf-e ziyādī mībārīd o mā ādambarfī dorost mīkardīm.",
+       "de": "Im Winter schneite es viel, und wir bauten Schneemänner."
+      },
+      {
+       "fa": "مادربزرگم با ما زندگی می‌کرد. هر شب برایمان قصه می‌گفت.",
+       "tr": "mādarbozorgam bā mā zendegī mīkard. har schab barāyemān ghesse mīgoft.",
+       "de": "Meine Großmutter wohnte bei uns. Jeden Abend erzählte sie uns Geschichten."
+      },
+      {
+       "fa": "یک شب داشت قصه می‌گفت که برق رفت.",
+       "tr": "yek schab dāscht ghesse mīgoft ke bargh raft.",
+       "de": "Eines Abends erzählte sie gerade eine Geschichte, als der Strom ausfiel."
+      },
+      {
+       "fa": "ما در تاریکی نشستیم و او قصه را تا آخر تعریف کرد. آن شب را هیچ‌وقت فراموش نمی‌کنم.",
+       "tr": "mā dar tārīkī neschastīm o ū ghesse rā tā āchar taʿrīf kard. ān schab rā hīchwaght farāmūsch nemīkonam.",
+       "de": "Wir saßen im Dunkeln, und sie erzählte die Geschichte bis zum Ende. Diese Nacht vergesse ich nie."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "نویسنده تا دوازده سالگی در تبریز زندگی می‌کرد.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "خانه‌شان حیاط نداشت.",
+       "fest": true,
+       "erkl": "Es hatte einen <b>großen Hof</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "زمستان‌ها برف زیادی می‌بارید.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "مادربزرگ هر صبح قصه می‌گفت.",
+       "fest": true,
+       "erkl": "Jeden <b>Abend</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "یک شب برق رفت.",
+       "fest": true
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Was stand im Hof?",
+       "optionen": [
+        "ein Granatapfelbaum",
+        "ein Apfelbaum",
+        "ein Auto"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was spielten die Kinder meistens?",
+       "optionen": [
+        "Fußball oder Verstecken",
+        "Computerspiele",
+        "Karten"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was machten sie im Winter?",
+       "optionen": [
+        "Schneemänner bauen",
+        "schwimmen",
+        "in den Süden fahren"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was passierte eines Abends?",
+       "optionen": [
+        "Der Strom fiel aus.",
+        "Großmutter wurde krank.",
+        "Es kamen Gäste."
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "خانه‌ی ما یک حیاط بزرگ داشت با یک درخت انار.",
+       "tr": "chāne-ye mā yek hayāt-e bozorg dāscht bā yek derachat-e anār.",
+       "de": "Unser Haus hatte einen großen Hof mit einem Granatapfelbaum."
+      },
+      {
+       "fa": "هر روز بعد از مدرسه با بچه‌های همسایه در کوچه بازی می‌کردیم.",
+       "tr": "har rūz baʿd az madrese bā batschehā-ye hamsāye dar kūtsche bāzī mīkardīm.",
+       "de": "Jeden Tag nach der Schule spielten wir mit den Nachbarskindern in der Gasse."
+      },
+      {
+       "fa": "بیشتر فوتبال یا قایم‌باشک بازی می‌کردیم.",
+       "tr": "bīschtar fūtbāl yā ghāyembāschak bāzī mīkardīm.",
+       "de": "Meistens spielten wir Fußball oder Verstecken."
+      },
+      {
+       "fa": "زمستان‌ها برف زیادی می‌بارید و ما آدم‌برفی درست می‌کردیم.",
+       "tr": "zemestānhā barf-e ziyādī mībārīd o mā ādambarfī dorost mīkardīm.",
+       "de": "Im Winter schneite es viel, und wir bauten Schneemänner."
+      },
+      {
+       "fa": "مادربزرگم با ما زندگی می‌کرد. هر شب برایمان قصه می‌گفت.",
+       "tr": "mādarbozorgam bā mā zendegī mīkard. har schab barāyemān ghesse mīgoft.",
+       "de": "Meine Großmutter wohnte bei uns. Jeden Abend erzählte sie uns Geschichten."
+      },
+      {
+       "fa": "یک شب داشت قصه می‌گفت که برق رفت.",
+       "tr": "yek schab dāscht ghesse mīgoft ke bargh raft.",
+       "de": "Eines Abends erzählte sie gerade eine Geschichte, als der Strom ausfiel."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t2",
+   "titel": "Text: Teheran früher und heute",
+   "vorschau": "تهران دیروز و امروز",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>قدیم</span> – alt, früher · <span class='fa'>حیاط‌دار</span> – mit Hof · <span class='fa'>شناختن</span> – kennen · <span class='fa'>کسی … نبود</span> – niemand war … · <span class='fa'>میلیون‌ها</span> – Millionen</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Text: Teheran früher und heute",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "پدربزرگم همیشه می‌گوید: «تهران قدیم شهر دیگری بود.»",
+       "tr": "pedarbozorgam hamīsche mīgūyad: «tehrān-e ghadīm schahr-e dīgarī būd.»",
+       "de": "Mein Großvater sagt immer: „Das alte Teheran war eine andere Stadt.“"
+      },
+      {
+       "fa": "آن زمان تهران خیلی کوچک‌تر بود و مردم بیشتر در خانه‌های حیاط‌دار زندگی می‌کردند.",
+       "tr": "ān zamān tehrān cheylī kūtschaktar būd o mardom bīschtar dar chānehā-ye hayātdār zendegī mīkardand.",
+       "de": "Damals war Teheran viel kleiner, und die Menschen lebten meist in Häusern mit Hof."
+      },
+      {
+       "fa": "همسایه‌ها همدیگر را خوب می‌شناختند و درهای خانه‌ها اغلب باز بود.",
+       "tr": "hamsāyehā hamdīgar rā chūb mīschenāchtand o darhā-ye chānehā aghlab bāz būd.",
+       "de": "Die Nachbarn kannten sich gut, und die Haustüren standen oft offen."
+      },
+      {
+       "fa": "بچه‌ها در کوچه‌ها بازی می‌کردند و کسی نگران نبود.",
+       "tr": "batschehā dar kūtschehā bāzī mīkardand o kasī negarān nabūd.",
+       "de": "Die Kinder spielten in den Gassen, und niemand machte sich Sorgen."
+      },
+      {
+       "fa": "ماشین کم بود؛ مردم بیشتر پیاده یا با اتوبوس می‌رفتند.",
+       "tr": "māschīn kam būd; mardom bīschtar piyāde yā bā otobūs mīraftand.",
+       "de": "Es gab wenige Autos; die Leute gingen meist zu Fuß oder fuhren Bus."
+      },
+      {
+       "fa": "هوا تمیزتر بود و از خانه‌ها کوه‌های البرز را می‌دیدند.",
+       "tr": "hawā tamīztar būd o az chānehā kūhhā-ye alborz rā mīdīdand.",
+       "de": "Die Luft war sauberer, und von den Häusern aus sah man das Elburs-Gebirge."
+      },
+      {
+       "fa": "امروزه تهران یک شهر بزرگ با میلیون‌ها نفر است.",
+       "tr": "emrūze tehrān yek schahr-e bozorg bā milyonhā nafar ast.",
+       "de": "Heute ist Teheran eine Großstadt mit Millionen Menschen."
+      },
+      {
+       "fa": "بیشتر مردم در آپارتمان زندگی می‌کنند و همسایه‌هایشان را کمتر می‌شناسند.",
+       "tr": "bīschtar-e mardom dar āpārtemān zendegī mīkonand o hamsāyehāyeschān rā kamtar mīschenāsand.",
+       "de": "Die meisten wohnen in Wohnungen und kennen ihre Nachbarn weniger."
+      },
+      {
+       "fa": "اما شهر حالا مترو، کافه‌های مدرن و دانشگاه‌های زیادی دارد.",
+       "tr": "ammā schahr hālā metro, kāfehā-ye modern o dāneschgāhhā-ye ziyādī dārad.",
+       "de": "Aber die Stadt hat jetzt eine U-Bahn, moderne Cafés und viele Universitäten."
+      },
+      {
+       "fa": "پدربزرگم می‌گوید: «قبلا زندگی آرام‌تر بود، ولی حالا راحت‌تر است.»",
+       "tr": "pedarbozorgam mīgūyad: «ghablan zendegī ārāmtar būd, walī hālā rāhattar ast.»",
+       "de": "Mein Großvater sagt: „Früher war das Leben ruhiger, aber jetzt ist es bequemer.“"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "آن زمان تهران بزرگ‌تر بود.",
+       "fest": true,
+       "erkl": "Sie war viel <b>kleiner</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "همسایه‌ها همدیگر را خوب می‌شناختند.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "قبلا ماشین زیاد بود.",
+       "fest": true,
+       "erkl": "Es gab <b>wenige</b> Autos."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "امروز بیشتر مردم در آپارتمان زندگی می‌کنند.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "پدربزرگ می‌گوید زندگی حالا راحت‌تر است.",
+       "fest": true
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Wie wohnten die Menschen früher meist?",
+       "optionen": [
+        "in Häusern mit Hof",
+        "in Wohnungen",
+        "in Hochhäusern"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was sah man früher von den Häusern aus?",
+       "optionen": [
+        "das Elburs-Gebirge",
+        "das Meer",
+        "die Wüste"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was hat die Stadt heute?",
+       "optionen": [
+        "U-Bahn, moderne Cafés, viele Unis",
+        "keine Autos",
+        "nur Häuser mit Hof"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie war das Leben früher laut Großvater?",
+       "optionen": [
+        "ruhiger",
+        "bequemer",
+        "teurer"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t3",
+   "titel": "Profi-Text: Ein Brief vom Großvater",
+   "vorschau": "نامه‌ی پدربزرگ",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>نوه</span> – Enkelkind · <span class='fa'>منتظر ماندن</span> – warten · <span class='fa'>دور</span> – um … herum · <span class='fa'>برنامه</span> – Sendung, Programm · <span class='fa'>کارخانه</span> – Fabrik · <span class='fa'>بقیه</span> – Rest · <span class='fa'>دفعه‌ی بعد</span> – nächstes Mal · <span class='fa'>پرسیده بودی</span> – du hattest gefragt (Plusquamperfekt – nächste Lektion!)</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Profi-Text: Ein Brief vom Großvater",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "نوه‌ی عزیزم، سلام!",
+       "tr": "nawe-ye ʿazīzam, salām!",
+       "de": "Mein liebes Enkelkind, hallo!"
+      },
+      {
+       "fa": "پرسیده بودی وقتی من جوان بودم، زندگی چطور بود.",
+       "tr": "porsīde būdī waghtī man dschawān būdam, zendegī tschetor būd.",
+       "de": "Du hattest gefragt, wie das Leben war, als ich jung war."
+      },
+      {
+       "fa": "آن وقت‌ها ما تلفن همراه نداشتیم. برای دوستانمان نامه می‌نوشتیم و هفته‌ها منتظر جواب می‌ماندیم.",
+       "tr": "ān waghthā mā telefon-e hamrāh nadāschtīm. barāye dūstānemān nāme mīneweschtīm o haftehā montazer-e dschawāb mīmāndīm.",
+       "de": "Damals hatten wir keine Handys. Wir schrieben unseren Freunden Briefe und warteten wochenlang auf eine Antwort."
+      },
+      {
+       "fa": "شب‌ها همه‌ی خانواده دور رادیو می‌نشستند و برنامه‌های موسیقی گوش می‌دادند.",
+       "tr": "schabhā hame-ye chānewāde dour-e rādiyo mīneschastand o barnāmehā-ye mūsīghī gūsch mīdādand.",
+       "de": "Abends saß die ganze Familie um das Radio und hörte Musiksendungen."
+      },
+      {
+       "fa": "من هر روز با دوچرخه به کارخانه می‌رفتم؛ راه یک ساعت طول می‌کشید.",
+       "tr": "man har rūz bā dotscharche be kārchāne mīraftam; rāh yek sāʿat tūl mīkeschīd.",
+       "de": "Ich fuhr jeden Tag mit dem Fahrrad zur Fabrik; der Weg dauerte eine Stunde."
+      },
+      {
+       "fa": "یک روز داشتم به خانه برمی‌گشتم که مادربزرگت را در ایستگاه اتوبوس دیدم...",
+       "tr": "yek rūz dāschtam be chāne barmīgaschtam ke mādarbozorgat rā dar īstgāh-e otobūs dīdam...",
+       "de": "Eines Tages war ich gerade auf dem Heimweg, als ich deine Großmutter an der Bushaltestelle sah …"
+      },
+      {
+       "fa": "بقیه‌ی قصه را دفعه‌ی بعد برایت تعریف می‌کنم! قربانت، پدربزرگ",
+       "tr": "baghīye-ye ghesse rā dafʿe-ye baʿd barāyat taʿrīf mīkonam! ghorbānat, pedarbozorg",
+       "de": "Den Rest der Geschichte erzähle ich dir nächstes Mal! Alles Liebe, Großvater"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "پدربزرگ در جوانی تلفن همراه داشت.",
+       "fest": true,
+       "erkl": "Damals gab es <b>keine</b> Handys."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "خانواده شب‌ها رادیو گوش می‌داد.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "پدربزرگ با اتوبوس به کارخانه می‌رفت.",
+       "fest": true,
+       "erkl": "Er fuhr mit dem <b>Fahrrad</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "او مادربزرگ را در ایستگاه اتوبوس دید.",
+       "fest": true
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Wie lange wartete man auf Antwortbriefe?",
+       "optionen": [
+        "wochenlang",
+        "einen Tag",
+        "eine Stunde"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie lange dauerte der Weg zur Fabrik?",
+       "optionen": [
+        "eine Stunde",
+        "zehn Minuten",
+        "einen halben Tag"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wann erzählt der Großvater den Rest der Geschichte?",
+       "optionen": [
+        "nächstes Mal",
+        "nie",
+        "morgen früh"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d1",
+   "titel": "Dialog: Was hast du gerade gemacht?",
+   "vorschau": "داشتی چه کار می‌کردی؟",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Sara ruft Babak zum dritten Mal an.</p><p><span class='fa'>جواب دادن</span> – antworten, rangehen · <span class='fa'>بار دوم / سوم</span> – das zweite / dritte Mal · <span class='fa'>حداقل</span> – wenigstens · <span class='fa'>حق با توست</span> – du hast recht</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "سارا: بابک! چرا جواب نمی‌دادی؟ سه بار زنگ زدم!",
+       "tr": "bābak! tscherā dschawāb nemīdādī? se bār zang zadam!",
+       "de": "Babak! Warum bist du nicht rangegangen? Ich habe dreimal angerufen!"
+      },
+      {
+       "fa": "بابک: ببخشید، داشتم دوش می‌گرفتم.",
+       "tr": "bebachschīd, dāschtam dūsch mīgereftam.",
+       "de": "Entschuldige, ich war gerade unter der Dusche."
+      },
+      {
+       "fa": "سارا: و بار دوم؟",
+       "tr": "o bār-e dowwom?",
+       "de": "Und beim zweiten Mal?"
+      },
+      {
+       "fa": "بابک: داشتم غذا می‌پختم و گوشی در اتاق بود.",
+       "tr": "dāschtam ghazā mīpochtam o gūschī dar otāgh būd.",
+       "de": "Ich habe gerade gekocht, und das Handy war im Zimmer."
+      },
+      {
+       "fa": "سارا: و بار سوم؟!",
+       "tr": "o bār-e sewwom?!",
+       "de": "Und beim dritten Mal?!"
+      },
+      {
+       "fa": "بابک: خب... داشتم فوتبال تماشا می‌کردم!",
+       "tr": "chob... dāschtam fūtbāl tamāschā mīkardam!",
+       "de": "Na ja … ich habe gerade Fußball geschaut!"
+      },
+      {
+       "fa": "سارا: همیشه همین کار را می‌کنی! قبلا حداقل پیام می‌دادی.",
+       "tr": "hamīsche hamīn kār rā mīkonī! ghablan hadde aghall payām mīdādī.",
+       "de": "Das machst du immer! Früher hast du wenigstens eine Nachricht geschickt."
+      },
+      {
+       "fa": "بابک: حق با توست. ببخشید!",
+       "tr": "hagh bā tost. bebachschīd!",
+       "de": "Du hast recht. Entschuldige!"
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "سارا: بابک! چرا جواب نمی‌دادی؟ سه بار زنگ زدم!",
+       "tr": "bābak! tscherā dschawāb nemīdādī? se bār zang zadam!",
+       "de": "Babak! Warum bist du nicht rangegangen? Ich habe dreimal angerufen!"
+      },
+      {
+       "fa": "بابک: ببخشید، داشتم دوش می‌گرفتم.",
+       "tr": "bebachschīd, dāschtam dūsch mīgereftam.",
+       "de": "Entschuldige, ich war gerade unter der Dusche."
+      },
+      {
+       "fa": "سارا: و بار دوم؟",
+       "tr": "o bār-e dowwom?",
+       "de": "Und beim zweiten Mal?"
+      },
+      {
+       "fa": "بابک: داشتم غذا می‌پختم و گوشی در اتاق بود.",
+       "tr": "dāschtam ghazā mīpochtam o gūschī dar otāgh būd.",
+       "de": "Ich habe gerade gekocht, und das Handy war im Zimmer."
+      },
+      {
+       "fa": "سارا: و بار سوم؟!",
+       "tr": "o bār-e sewwom?!",
+       "de": "Und beim dritten Mal?!"
+      },
+      {
+       "fa": "بابک: خب... داشتم فوتبال تماشا می‌کردم!",
+       "tr": "chob... dāschtam fūtbāl tamāschā mīkardam!",
+       "de": "Na ja … ich habe gerade Fußball geschaut!"
+      },
+      {
+       "fa": "سارا: همیشه همین کار را می‌کنی! قبلا حداقل پیام می‌دادی.",
+       "tr": "hamīsche hamīn kār rā mīkonī! ghablan hadde aghall payām mīdādī.",
+       "de": "Das machst du immer! Früher hast du wenigstens eine Nachricht geschickt."
+      },
+      {
+       "fa": "بابک: حق با توست. ببخشید!",
+       "tr": "hagh bā tost. bebachschīd!",
+       "de": "Du hast recht. Entschuldige!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Was tat Babak beim ersten Anruf?",
+       "optionen": [
+        "Er duschte.",
+        "Er kochte.",
+        "Er schaute Fußball."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was tat er beim dritten Anruf?",
+       "optionen": [
+        "Er schaute Fußball.",
+        "Er schlief.",
+        "Er duschte."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was tat Babak früher wenigstens?",
+       "optionen": [
+        "eine Nachricht schicken",
+        "zurückrufen",
+        "vorbeikommen"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d2",
+   "titel": "Dialog: Als wir Kinder waren",
+   "vorschau": "وقتی بچه بودیم",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Die Geschwister Maryam und Reza sehen sich alte Fotos an.</p><p><span class='fa'>یادت هست؟</span> – erinnerst du dich? · <span class='fa'>بالا رفتن</span> – hinaufklettern · <span class='fa'>برداشتن</span> – (weg)nehmen · <span class='fa'>خندیدن</span> – lachen</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "مریم: این عکس را ببین! یادت هست؟",
+       "tr": "īn ʿaks rā bebīn! yādat hast?",
+       "de": "Schau dir dieses Foto an! Erinnerst du dich?"
+      },
+      {
+       "fa": "رضا: آره! خانه‌ی مادربزرگ در رشت. هر تابستان آنجا می‌رفتیم.",
+       "tr": "āre! chāne-ye mādarbozorg dar rascht. har tābestān āndschā mīraftīm.",
+       "de": "Ja! Großmutters Haus in Rascht. Jeden Sommer fuhren wir dorthin."
+      },
+      {
+       "fa": "مریم: تو همیشه از درخت‌ها بالا می‌رفتی و مادر نگران می‌شد.",
+       "tr": "to hamīsche az derachthā bālā mīraftī o mādar negarān mīschod.",
+       "de": "Du bist immer auf die Bäume geklettert, und Mama hat sich Sorgen gemacht."
+      },
+      {
+       "fa": "رضا: و تو همیشه با گربه‌ی مادربزرگ بازی می‌کردی!",
+       "tr": "o to hamīsche bā gorbe-ye mādarbozorg bāzī mīkardī!",
+       "de": "Und du hast immer mit Großmutters Katze gespielt!"
+      },
+      {
+       "fa": "مریم: یادت هست یک روز داشتیم ناهار می‌خوردیم که گربه ماهی را برداشت؟",
+       "tr": "yādat hast yek rūz dāschtīm nāhār mīchordīm ke gorbe māhī rā bardāscht?",
+       "de": "Erinnerst du dich, wie die Katze eines Tages den Fisch nahm, als wir gerade zu Mittag aßen?"
+      },
+      {
+       "fa": "رضا: آره! همه می‌خندیدیم، ولی مادربزرگ عصبانی بود!",
+       "tr": "āre! hame mīchandīdīm, walī mādarbozorg ʿasabānī būd!",
+       "de": "Ja! Alle lachten, aber Großmutter war wütend!"
+      },
+      {
+       "fa": "مریم: چه روزهای خوبی بود!",
+       "tr": "tsche rūzhā-ye chūbī būd!",
+       "de": "Was waren das für schöne Tage!"
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "مریم: این عکس را ببین! یادت هست؟",
+       "tr": "īn ʿaks rā bebīn! yādat hast?",
+       "de": "Schau dir dieses Foto an! Erinnerst du dich?"
+      },
+      {
+       "fa": "رضا: آره! خانه‌ی مادربزرگ در رشت. هر تابستان آنجا می‌رفتیم.",
+       "tr": "āre! chāne-ye mādarbozorg dar rascht. har tābestān āndschā mīraftīm.",
+       "de": "Ja! Großmutters Haus in Rascht. Jeden Sommer fuhren wir dorthin."
+      },
+      {
+       "fa": "مریم: تو همیشه از درخت‌ها بالا می‌رفتی و مادر نگران می‌شد.",
+       "tr": "to hamīsche az derachthā bālā mīraftī o mādar negarān mīschod.",
+       "de": "Du bist immer auf die Bäume geklettert, und Mama hat sich Sorgen gemacht."
+      },
+      {
+       "fa": "رضا: و تو همیشه با گربه‌ی مادربزرگ بازی می‌کردی!",
+       "tr": "o to hamīsche bā gorbe-ye mādarbozorg bāzī mīkardī!",
+       "de": "Und du hast immer mit Großmutters Katze gespielt!"
+      },
+      {
+       "fa": "مریم: یادت هست یک روز داشتیم ناهار می‌خوردیم که گربه ماهی را برداشت؟",
+       "tr": "yādat hast yek rūz dāschtīm nāhār mīchordīm ke gorbe māhī rā bardāscht?",
+       "de": "Erinnerst du dich, wie die Katze eines Tages den Fisch nahm, als wir gerade zu Mittag aßen?"
+      },
+      {
+       "fa": "رضا: آره! همه می‌خندیدیم، ولی مادربزرگ عصبانی بود!",
+       "tr": "āre! hame mīchandīdīm, walī mādarbozorg ʿasabānī būd!",
+       "de": "Ja! Alle lachten, aber Großmutter war wütend!"
+      },
+      {
+       "fa": "مریم: چه روزهای خوبی بود!",
+       "tr": "tsche rūzhā-ye chūbī būd!",
+       "de": "Was waren das für schöne Tage!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Wo wohnte die Großmutter?",
+       "optionen": [
+        "in Rascht",
+        "in Teheran",
+        "in Täbris"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was tat Reza immer?",
+       "optionen": [
+        "auf Bäume klettern",
+        "mit der Katze spielen",
+        "schwimmen"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was nahm die Katze?",
+       "optionen": [
+        "den Fisch",
+        "das Brot",
+        "ein Foto"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

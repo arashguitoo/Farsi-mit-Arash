@@ -1,0 +1,774 @@
+{
+ "id": "tx",
+ "art": "texte",
+ "titel": "Texte & Dialoge",
+ "beschreibung": "Lesetexte mit Fragen und Dialoge zum Ordnen.",
+ "stationen": [
+  {
+   "id": "t1",
+   "titel": "Kurztext: Kleidung für das Vorstellungsgespräch",
+   "vorschau": "مصاحبه‌ی کاری",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>مصاحبه‌ی کاری</span> <i>mosāhebe-ye kārī</i> – Vorstellungsgespräch · <span class='fa'>مناسب</span> – passend · <span class='fa'>تیره</span> – dunkel (Farbe) · <span class='fa'>درصد</span> – Prozent · <span class='fa'>مشکی</span> – schwarz (Kleidung, Haare)</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Kurztext: Kleidung für das Vorstellungsgespräch",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "نیما فردا یک مصاحبه‌ی کاری دارد.",
+       "tr": "nīmā fardā yek mosāhebe-ye kārī dārad.",
+       "de": "Nima hat morgen ein Vorstellungsgespräch."
+      },
+      {
+       "fa": "او لباس مناسب ندارد، برای همین امروز به فروشگاه رفته است.",
+       "tr": "ū lebās-e monāseb nadārad, barāye hamīn emrūz be forūschgāh rafte ast.",
+       "de": "Er hat keine passende Kleidung, deshalb ist er heute ins Kaufhaus gegangen."
+      },
+      {
+       "fa": "اول یک کت خاکستری پرو کرده است، اما برایش گشاد بوده است.",
+       "tr": "awwal yek kot-e chākestarī porow karde ast, ammā barāyasch goschād būde ast.",
+       "de": "Zuerst hat er ein graues Sakko anprobiert, aber es war ihm zu weit."
+      },
+      {
+       "fa": "بعد یک کت آبی تیره پوشیده است. این کت از کت خاکستری کوچک‌تر و شیک‌تر بوده است.",
+       "tr": "baʿd yek kot-e ābī-ye tīre pūschīde ast. īn kot az kot-e chākestarī kūtschaktar o schīktar būde ast.",
+       "de": "Dann hat er ein dunkelblaues Sakko angezogen. Dieses Sakko war kleiner und schicker als das graue."
+      },
+      {
+       "fa": "فروشنده گفته است: «این کت خیلی به شما می‌آید!»",
+       "tr": "forūschande gofte ast: «īn kot cheylī be schomā mīāyad!»",
+       "de": "Die Verkäuferin hat gesagt: „Dieses Sakko steht Ihnen sehr gut!“"
+      },
+      {
+       "fa": "کت آبی گران‌تر بوده است، ولی ده درصد تخفیف داشته است.",
+       "tr": "kot-e ābī gerāntar būde ast, walī dah darsad tachfīf dāschte ast.",
+       "de": "Das blaue Sakko war teurer, hatte aber zehn Prozent Rabatt."
+      },
+      {
+       "fa": "نیما یک پیراهن سفید و یک کمربند مشکی هم خریده است.",
+       "tr": "nīmā yek pīrāhan-e sefīd o yek kamarband-e meschkī ham charīde ast.",
+       "de": "Nima hat auch ein weißes Hemd und einen schwarzen Gürtel gekauft."
+      },
+      {
+       "fa": "او می‌گوید: «این بهترین کتی است که تا حالا داشته‌ام!»",
+       "tr": "ū mīgūyad: «īn behtarīn kotī ast ke tā hālā dāschte-am!»",
+       "de": "Er sagt: „Das ist das beste Sakko, das ich je hatte!“"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "نیما فردا مصاحبه‌ی کاری دارد.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "کت خاکستری برایش تنگ بوده است.",
+       "fest": true,
+       "erkl": "Es war ihm zu <b>weit</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "کت آبی ارزان‌تر بوده است.",
+       "fest": true,
+       "erkl": "Es war <b>teurer</b>, aber mit Rabatt."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "نیما یک پیراهن سفید هم خریده است.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "نیما کت آبی را دوست ندارد.",
+       "fest": true,
+       "erkl": "Er sagt, es ist das <b>beste</b> Sakko, das er je hatte."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Warum geht Nima einkaufen?",
+       "optionen": [
+        "Er hat keine passende Kleidung.",
+        "Er hat Geburtstag.",
+        "Seine Kleidung ist kaputt."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Welche Farbe hat das Sakko, das er kauft?",
+       "optionen": [
+        "dunkelblau",
+        "grau",
+        "schwarz"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie viel Rabatt gab es?",
+       "optionen": [
+        "10 %",
+        "20 %",
+        "keinen"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was kauft er noch?",
+       "optionen": [
+        "ein weißes Hemd und einen schwarzen Gürtel",
+        "Schuhe",
+        "einen Mantel"
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "او لباس مناسب ندارد، برای همین امروز به فروشگاه رفته است.",
+       "tr": "ū lebās-e monāseb nadārad, barāye hamīn emrūz be forūschgāh rafte ast.",
+       "de": "Er hat keine passende Kleidung, deshalb ist er heute ins Kaufhaus gegangen."
+      },
+      {
+       "fa": "اول یک کت خاکستری پرو کرده است، اما برایش گشاد بوده است.",
+       "tr": "awwal yek kot-e chākestarī porow karde ast, ammā barāyasch goschād būde ast.",
+       "de": "Zuerst hat er ein graues Sakko anprobiert, aber es war ihm zu weit."
+      },
+      {
+       "fa": "بعد یک کت آبی تیره پوشیده است. این کت از کت خاکستری کوچک‌تر و شیک‌تر بوده است.",
+       "tr": "baʿd yek kot-e ābī-ye tīre pūschīde ast. īn kot az kot-e chākestarī kūtschaktar o schīktar būde ast.",
+       "de": "Dann hat er ein dunkelblaues Sakko angezogen. Dieses Sakko war kleiner und schicker als das graue."
+      },
+      {
+       "fa": "فروشنده گفته است: «این کت خیلی به شما می‌آید!»",
+       "tr": "forūschande gofte ast: «īn kot cheylī be schomā mīāyad!»",
+       "de": "Die Verkäuferin hat gesagt: „Dieses Sakko steht Ihnen sehr gut!“"
+      },
+      {
+       "fa": "کت آبی گران‌تر بوده است، ولی ده درصد تخفیف داشته است.",
+       "tr": "kot-e ābī gerāntar būde ast, walī dah darsad tachfīf dāschte ast.",
+       "de": "Das blaue Sakko war teurer, hatte aber zehn Prozent Rabatt."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t2",
+   "titel": "Text: Teheran oder Isfahan?",
+   "vorschau": "تهران یا اصفهان؟",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>بسیاری از</span> – viele · <span class='fa'>جمعیت</span> – Bevölkerung · <span class='fa'>برابر</span> – -mal so … · <span class='fa'>مدرن</span> – modern · <span class='fa'>آلوده</span> – verschmutzt · <span class='fa'>جواب</span> – Antwort · <span class='fa'>اگر</span> – wenn · <span class='fa'>هنر</span> – Kunst · <span class='fa'>تاریخ</span> – Geschichte</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Text: Teheran oder Isfahan?",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "بسیاری از گردشگران می‌پرسند: «تهران بهتر است یا اصفهان؟»",
+       "tr": "besyārī az gardeschgarān mīporsand: «tehrān behtar ast yā esfahān?»",
+       "de": "Viele Touristen fragen: „Ist Teheran besser oder Isfahan?“"
+      },
+      {
+       "fa": "تهران خیلی بزرگ‌تر از اصفهان است و جمعیتش تقریبا پنج برابر است.",
+       "tr": "tehrān cheylī bozorgtar az esfahān ast o dschamʿiyatasch taghrīban pandsch barābar ast.",
+       "de": "Teheran ist viel größer als Isfahan, und seine Bevölkerung ist fast fünfmal so groß."
+      },
+      {
+       "fa": "در تهران زندگی سریع‌تر و شلوغ‌تر است.",
+       "tr": "dar tehrān zendegī sarīʿtar o schologhtar ast.",
+       "de": "In Teheran ist das Leben schneller und hektischer."
+      },
+      {
+       "fa": "بهترین موزه‌های ایران در تهران هستند و رستوران‌ها و کافه‌های مدرن زیادی دارد.",
+       "tr": "behtarīn mūzehā-ye īrān dar tehrān hastand o restorānhā o kāfehā-ye modern-e ziyādī dārad.",
+       "de": "Die besten Museen Irans sind in Teheran, und es hat viele moderne Restaurants und Cafés."
+      },
+      {
+       "fa": "اما هوای تهران آلوده‌تر است و ترافیکش از همه‌ی شهرها بدتر است.",
+       "tr": "ammā hawā-ye tehrān ālūdetar ast o terāfīkasch az hame-ye schahrhā badtar ast.",
+       "de": "Aber die Luft in Teheran ist schmutziger und der Verkehr ist schlimmer als in allen anderen Städten."
+      },
+      {
+       "fa": "اصفهان آرام‌تر و قدیمی‌تر است.",
+       "tr": "esfahān ārāmtar o ghadīmītar ast.",
+       "de": "Isfahan ist ruhiger und älter."
+      },
+      {
+       "fa": "خیلی‌ها می‌گویند اصفهان زیباترین شهر ایران است.",
+       "tr": "cheylīhā mīgūyand esfahān zībātarīn schahr-e īrān ast.",
+       "de": "Viele sagen, Isfahan ist die schönste Stadt Irans."
+      },
+      {
+       "fa": "میدان نقش جهان یکی از بزرگ‌ترین میدان‌های دنیاست.",
+       "tr": "meydān-e naghsch-e dschahān yekī az bozorgtarīn meydānhā-ye donyāst.",
+       "de": "Der Naghsch-e-Dschahan-Platz ist einer der größten Plätze der Welt."
+      },
+      {
+       "fa": "پل‌های قدیمی اصفهان شب‌ها از همه زیباتر هستند.",
+       "tr": "polhā-ye ghadīmī-ye esfahān schabhā az hame zībātar hastand.",
+       "de": "Die alten Brücken Isfahans sind nachts am schönsten."
+      },
+      {
+       "fa": "قیمت‌ها در اصفهان کمی ارزان‌تر از تهران است.",
+       "tr": "gheymathā dar esfahān kamī arzāntar az tehrān ast.",
+       "de": "Die Preise in Isfahan sind etwas niedriger als in Teheran."
+      },
+      {
+       "fa": "پس جواب چیست؟ اگر هنر و تاریخ را دوست دارید، اصفهان؛ اگر شهر بزرگ و مدرن، تهران!",
+       "tr": "pas dschawāb tschīst? agar honar o tārīch rā dūst dārīd, esfahān; agar schahr-e bozorg o modern, tehrān!",
+       "de": "Also, was ist die Antwort? Wenn Sie Kunst und Geschichte mögen: Isfahan; wenn eine große, moderne Stadt: Teheran!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "تهران از اصفهان کوچک‌تر است.",
+       "fest": true,
+       "erkl": "Teheran ist viel <b>größer</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "هوای تهران آلوده‌تر است.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "اصفهان آرام‌تر از تهران است.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "قیمت‌ها در اصفهان گران‌تر است.",
+       "fest": true,
+       "erkl": "Sie sind etwas <b>billiger</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "بهترین موزه‌های ایران در اصفهان هستند.",
+       "fest": true,
+       "erkl": "Die besten Museen sind in <b>Teheran</b>."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Wie viel größer ist Teherans Bevölkerung?",
+       "optionen": [
+        "fast fünfmal",
+        "doppelt",
+        "zehnmal"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was ist in Teheran schlimmer?",
+       "optionen": [
+        "der Verkehr",
+        "das Essen",
+        "die Museen"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wann sind die Brücken Isfahans am schönsten?",
+       "optionen": [
+        "nachts",
+        "morgens",
+        "im Winter"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Für wen ist Isfahan laut Text die richtige Wahl?",
+       "optionen": [
+        "für Leute, die Kunst und Geschichte mögen",
+        "für Leute, die moderne Cafés suchen",
+        "für Leute, die Berge mögen"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t3",
+   "titel": "Profi-Text: Eine Bewertung im Internet",
+   "vorschau": "نظر مشتری",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>نظر</span> – Meinung · <span class='fa'>مشتری</span> – Kunde/Kundin · <span class='fa'>ستاره</span> – Stern · <span class='fa'>خرید کردن</span> – einkaufen · <span class='fa'>کمک کردن</span> – helfen · <span class='fa'>پشمی</span> – aus Wolle</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Profi-Text: Eine Bewertung im Internet",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "★★★★☆ – فروشگاه «لباس نو»، خیابان ولیعصر",
+       "tr": "tschahār setāre – forūschgāh-e «lebās-e no», chiyābān-e waliʿasr",
+       "de": "4 Sterne – Geschäft „Neue Kleidung“, Valiasr-Straße"
+      },
+      {
+       "fa": "من چند بار از این فروشگاه خرید کرده‌ام.",
+       "tr": "man tschand bār az īn forūschgāh charīd karde-am.",
+       "de": "Ich habe schon mehrmals in diesem Geschäft eingekauft."
+      },
+      {
+       "fa": "قیمت‌ها از فروشگاه‌های دیگر این خیابان کمی ارزان‌تر است.",
+       "tr": "gheymathā az forūschgāhhā-ye dīgar-e īn chiyābān kamī arzāntar ast.",
+       "de": "Die Preise sind etwas billiger als in den anderen Geschäften dieser Straße."
+      },
+      {
+       "fa": "جنس لباس‌ها خوب است، ولی سایزها کمی کوچک‌تر هستند.",
+       "tr": "dschens-e lebāshā chūb ast, walī sāyzhā kamī kūtschaktar hastand.",
+       "de": "Die Qualität der Kleidung ist gut, aber die Größen fallen etwas kleiner aus."
+      },
+      {
+       "fa": "فروشنده‌ها خیلی مهربان‌اند و همیشه کمک کرده‌اند.",
+       "tr": "forūschandehā cheylī mehrabān-and o hamīsche komak karde-and.",
+       "de": "Die Verkäufer sind sehr freundlich und haben immer geholfen."
+      },
+      {
+       "fa": "بهترین چیزی که اینجا خریده‌ام یک پالتوی پشمی است.",
+       "tr": "behtarīn tschīzī ke īndschā charīde-am yek pālto-ye paschmī ast.",
+       "de": "Das Beste, was ich hier gekauft habe, ist ein Wollmantel."
+      },
+      {
+       "fa": "فقط اتاق پرو خیلی کوچک است!",
+       "tr": "faghat otāgh-e porow cheylī kūtschak ast!",
+       "de": "Nur die Umkleidekabine ist sehr klein!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "قیمت‌ها از فروشگاه‌های دیگر گران‌تر است.",
+       "fest": true,
+       "erkl": "Sie sind etwas <b>billiger</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "سایزها کمی کوچک‌تر هستند.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "فروشنده‌ها مهربان نیستند.",
+       "fest": true,
+       "erkl": "Sie sind <b>sehr freundlich</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "اتاق پرو بزرگ است.",
+       "fest": true,
+       "erkl": "Sie ist <b>sehr klein</b>."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Wie viele Sterne gibt die Person?",
+       "optionen": [
+        "vier",
+        "fünf",
+        "drei"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was ist das Beste, das die Person dort gekauft hat?",
+       "optionen": [
+        "ein Wollmantel",
+        "ein Hemd",
+        "Schuhe"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was ist das Problem?",
+       "optionen": [
+        "Die Umkleidekabine ist sehr klein.",
+        "Die Preise sind zu hoch.",
+        "Die Verkäufer sind unfreundlich."
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d1",
+   "titel": "Dialog: Eine Nummer größer?",
+   "vorschau": "سایز بزرگ‌تر دارید؟",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Lina ist in einem Kleidungsgeschäft in Teheran.</p><p><span class='fa'>این یکی</span> – diese/r hier · <span class='fa'>همین</span> – genau diese/n</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "لینا: ببخشید، این شلوار را در سایز بزرگ‌تر دارید؟",
+       "tr": "bebachschīd, īn schalwār rā dar sāyz-e bozorgtar dārīd?",
+       "de": "Entschuldigung, haben Sie diese Hose eine Nummer größer?"
+      },
+      {
+       "fa": "فروشنده: بله، بفرمایید. اتاق پرو آنجاست.",
+       "tr": "bale, befarmāyīd. otāgh-e porow āndschāst.",
+       "de": "Ja, bitte schön. Die Umkleidekabine ist dort."
+      },
+      {
+       "fa": "لینا: این یکی خیلی بهتر است. اما رنگ مشکی را بیشتر دوست دارم.",
+       "tr": "īn yekī cheylī behtar ast. ammā rang-e meschkī rā bīschtar dūst dāram.",
+       "de": "Diese hier ist viel besser. Aber ich mag Schwarz lieber."
+      },
+      {
+       "fa": "فروشنده: مشکی هم داریم، ولی کمی گران‌تر است.",
+       "tr": "meschkī ham dārīm, walī kamī gerāntar ast.",
+       "de": "Schwarz haben wir auch, aber sie ist etwas teurer."
+      },
+      {
+       "fa": "لینا: چند است؟",
+       "tr": "tschand ast?",
+       "de": "Wie viel kostet sie?"
+      },
+      {
+       "fa": "فروشنده: یک میلیون و دویست هزار تومان. امروز ده درصد تخفیف دارد.",
+       "tr": "yek milyon o dewīst hezār tomān. emrūz dah darsad tachfīf dārad.",
+       "de": "Eine Million zweihunderttausend Toman. Heute gibt es zehn Prozent Rabatt."
+      },
+      {
+       "fa": "لینا: عالی است! همین را می‌خرم. با کارت حساب می‌کنم.",
+       "tr": "ʿālī ast! hamīn rā mīcharam. bā kārt hesāb mīkonam.",
+       "de": "Super! Die nehme ich. Ich zahle mit Karte."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "لینا: ببخشید، این شلوار را در سایز بزرگ‌تر دارید؟",
+       "tr": "bebachschīd, īn schalwār rā dar sāyz-e bozorgtar dārīd?",
+       "de": "Entschuldigung, haben Sie diese Hose eine Nummer größer?"
+      },
+      {
+       "fa": "فروشنده: بله، بفرمایید. اتاق پرو آنجاست.",
+       "tr": "bale, befarmāyīd. otāgh-e porow āndschāst.",
+       "de": "Ja, bitte schön. Die Umkleidekabine ist dort."
+      },
+      {
+       "fa": "لینا: این یکی خیلی بهتر است. اما رنگ مشکی را بیشتر دوست دارم.",
+       "tr": "īn yekī cheylī behtar ast. ammā rang-e meschkī rā bīschtar dūst dāram.",
+       "de": "Diese hier ist viel besser. Aber ich mag Schwarz lieber."
+      },
+      {
+       "fa": "فروشنده: مشکی هم داریم، ولی کمی گران‌تر است.",
+       "tr": "meschkī ham dārīm, walī kamī gerāntar ast.",
+       "de": "Schwarz haben wir auch, aber sie ist etwas teurer."
+      },
+      {
+       "fa": "لینا: چند است؟",
+       "tr": "tschand ast?",
+       "de": "Wie viel kostet sie?"
+      },
+      {
+       "fa": "فروشنده: یک میلیون و دویست هزار تومان. امروز ده درصد تخفیف دارد.",
+       "tr": "yek milyon o dewīst hezār tomān. emrūz dah darsad tachfīf dārad.",
+       "de": "Eine Million zweihunderttausend Toman. Heute gibt es zehn Prozent Rabatt."
+      },
+      {
+       "fa": "لینا: عالی است! همین را می‌خرم. با کارت حساب می‌کنم.",
+       "tr": "ʿālī ast! hamīn rā mīcharam. bā kārt hesāb mīkonam.",
+       "de": "Super! Die nehme ich. Ich zahle mit Karte."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Was sucht Lina?",
+       "optionen": [
+        "eine Hose in einer größeren Größe",
+        "ein Hemd",
+        "einen Mantel"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Welche Farbe mag sie lieber?",
+       "optionen": [
+        "Schwarz",
+        "Blau",
+        "Grau"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie bezahlt sie?",
+       "optionen": [
+        "mit Karte",
+        "bar",
+        "gar nicht"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d2",
+   "titel": "Dialog: Kiel oder Hamburg?",
+   "vorschau": "کیل یا هامبورگ؟",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Maryam überlegt, wo sie studieren soll, und fragt Jonas.</p><p><span class='fa'>به نظر من</span> – meiner Meinung nach · <span class='fa'>بهترند</span> = <span class='fa'>بهتر هستند</span></p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "مریم: یوناس، تو هم در کیل زندگی کرده‌ای هم در هامبورگ. کدام بهتر است؟",
+       "tr": "yūnās, to ham dar kīl zendegī karde-ī ham dar hāmbūrg. kodām behtar ast?",
+       "de": "Jonas, du hast sowohl in Kiel als auch in Hamburg gewohnt. Was ist besser?"
+      },
+      {
+       "fa": "یوناس: هامبورگ خیلی بزرگ‌تر و شلوغ‌تر است.",
+       "tr": "hāmbūrg cheylī bozorgtar o schologhtar ast.",
+       "de": "Hamburg ist viel größer und belebter."
+      },
+      {
+       "fa": "مریم: کرایه‌ها چطور؟",
+       "tr": "kerāyehā tschetor?",
+       "de": "Und die Mieten?"
+      },
+      {
+       "fa": "یوناس: در هامبورگ کرایه‌ها گران‌تر است. کیل ارزان‌تر و آرام‌تر است.",
+       "tr": "dar hāmbūrg kerāyehā gerāntar ast. kīl arzāntar o ārāmtar ast.",
+       "de": "In Hamburg sind die Mieten teurer. Kiel ist billiger und ruhiger."
+      },
+      {
+       "fa": "مریم: و دانشگاه؟",
+       "tr": "o dāneschgāh?",
+       "de": "Und die Uni?"
+      },
+      {
+       "fa": "یوناس: به نظر من دانشگاه کیل کوچک‌تر است، ولی کلاس‌ها بهترند.",
+       "tr": "be nazar-e man dāneschgāh-e kīl kūtschaktar ast, walī kelāshā behtarand.",
+       "de": "Meiner Meinung nach ist die Uni Kiel kleiner, aber die Kurse sind besser."
+      },
+      {
+       "fa": "مریم: پس کیل! من شهرهای آرام را بیشتر دوست دارم.",
+       "tr": "pas kīl! man schahrhā-ye ārām rā bīschtar dūst dāram.",
+       "de": "Dann Kiel! Ich mag ruhige Städte lieber."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "مریم: یوناس، تو هم در کیل زندگی کرده‌ای هم در هامبورگ. کدام بهتر است؟",
+       "tr": "yūnās, to ham dar kīl zendegī karde-ī ham dar hāmbūrg. kodām behtar ast?",
+       "de": "Jonas, du hast sowohl in Kiel als auch in Hamburg gewohnt. Was ist besser?"
+      },
+      {
+       "fa": "یوناس: هامبورگ خیلی بزرگ‌تر و شلوغ‌تر است.",
+       "tr": "hāmbūrg cheylī bozorgtar o schologhtar ast.",
+       "de": "Hamburg ist viel größer und belebter."
+      },
+      {
+       "fa": "مریم: کرایه‌ها چطور؟",
+       "tr": "kerāyehā tschetor?",
+       "de": "Und die Mieten?"
+      },
+      {
+       "fa": "یوناس: در هامبورگ کرایه‌ها گران‌تر است. کیل ارزان‌تر و آرام‌تر است.",
+       "tr": "dar hāmbūrg kerāyehā gerāntar ast. kīl arzāntar o ārāmtar ast.",
+       "de": "In Hamburg sind die Mieten teurer. Kiel ist billiger und ruhiger."
+      },
+      {
+       "fa": "مریم: و دانشگاه؟",
+       "tr": "o dāneschgāh?",
+       "de": "Und die Uni?"
+      },
+      {
+       "fa": "یوناس: به نظر من دانشگاه کیل کوچک‌تر است، ولی کلاس‌ها بهترند.",
+       "tr": "be nazar-e man dāneschgāh-e kīl kūtschaktar ast, walī kelāshā behtarand.",
+       "de": "Meiner Meinung nach ist die Uni Kiel kleiner, aber die Kurse sind besser."
+      },
+      {
+       "fa": "مریم: پس کیل! من شهرهای آرام را بیشتر دوست دارم.",
+       "tr": "pas kīl! man schahrhā-ye ārām rā bīschtar dūst dāram.",
+       "de": "Dann Kiel! Ich mag ruhige Städte lieber."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Wo sind die Mieten teurer?",
+       "optionen": [
+        "in Hamburg",
+        "in Kiel",
+        "überall gleich"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was sagt Jonas über die Kurse in Kiel?",
+       "optionen": [
+        "Sie sind besser.",
+        "Sie sind teurer.",
+        "Sie sind voller."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wofür entscheidet sich Maryam?",
+       "optionen": [
+        "Kiel",
+        "Hamburg",
+        "Berlin"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

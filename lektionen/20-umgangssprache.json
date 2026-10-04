@@ -1,0 +1,176 @@
+{
+ "id": "ug",
+ "art": "umgangssprache",
+ "titel": "Umgangssprache: So spricht man im Alltag",
+ "beschreibung": "Freiwilliger Extra-Teil: das Passiv im Gespräch vermeiden.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "So spricht man: Passiv vermeiden",
+   "vorschau": "بَستَنِش · می‌گَن",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Schrift ≠ Gespräch",
+     "text": "<p>Auch in den anderen Zeiten ersetzt man das Passiv im Gespräch fast immer durch „<b>sie</b> …“ + Objekt-Endung:</p><ul><li><span class='fa'>بَستِه شُد → بَستَنِش</span> – „sie haben es geschlossen“</li><li><span class='fa'>دارَن تَعمیرِش می‌کُنَن</span> – „sie reparieren es gerade“</li><li><span class='fa'>باید جُدا شَوَند → باید جُداشون کُنیم</span> – „wir müssen sie trennen“</li><li><span class='fa'>مَعلوم نیست</span> – es ist unklar</li></ul>",
+     "stil": "merke"
+    },
+    {
+     "typ": "paare",
+     "links": "x",
+     "paare": [
+      {
+       "fa": "ساختِه شُدِه اَست",
+       "tr": "sāchte schode ast",
+       "de": "ist gebaut worden",
+       "x": "ساختَنِش"
+      },
+      {
+       "fa": "باید جُدا شَوَند",
+       "tr": "bāyad dschodā schawand",
+       "de": "müssen getrennt werden",
+       "x": "باید جُداشون کُنیم"
+      },
+      {
+       "fa": "بَستِه شُد",
+       "tr": "baste schod",
+       "de": "wurde geschlossen",
+       "x": "بَستَنِش"
+      },
+      {
+       "fa": "بازیافت می‌شَوَد",
+       "tr": "bāzyāft mīschawad",
+       "de": "wird recycelt",
+       "x": "بازیافتِش می‌کُنَن"
+      }
+     ],
+     "titel": "Schrift ↔ Gespräch"
+    },
+    {
+     "typ": "sortieren",
+     "titel": "Schrift oder Gespräch?",
+     "frage": "Schriftsprache oder Umgangssprache?",
+     "kategorien": [
+      "✍️ Schriftsprache",
+      "🗣️ Umgangssprache"
+     ],
+     "items": [
+      {
+       "fa": "ساختِه شُدِه اَست",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "باید جُدا شَوَند",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "بَستِه شُد",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "بازیافت می‌شَوَد",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "ساختَنِش",
+       "k": 1,
+       "say": false,
+       "e": "<i>sāchtanesch</i> – geschrieben: <span class='fa'>ساختِه شُدِه اَست</span>"
+      },
+      {
+       "fa": "باید جُداشون کُنیم",
+       "k": 1,
+       "say": false,
+       "e": "<i>bāyad dschodāschūn konīm</i> – geschrieben: <span class='fa'>باید جُدا شَوَند</span>"
+      },
+      {
+       "fa": "بَستَنِش",
+       "k": 1,
+       "say": false,
+       "e": "<i>bastanesch</i> – geschrieben: <span class='fa'>بَستِه شُد</span>"
+      },
+      {
+       "fa": "بازیافتِش می‌کُنَن",
+       "k": 1,
+       "say": false,
+       "e": "<i>bāzyāftesch mīkonan</i> – geschrieben: <span class='fa'>بازیافت می‌شَوَد</span>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Die Brücke ist zu",
+   "vorschau": "پُل رو بَستَن",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Unter Nachbarn",
+     "text": "Umgangssprache! Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "شَنیدی پُل رو بَستَن؟",
+       "tr": "schenīdī pol ro bastan?",
+       "de": "Hast du gehört, dass sie die Brücke gesperrt haben?"
+      },
+      {
+       "fa": "آره، می‌گَن دارَن تَعمیرِش می‌کُنَن.",
+       "tr": "āre, mīgan dāran taʿmīresch mīkonan.",
+       "de": "Ja, es heißt, sie reparieren sie gerade."
+      },
+      {
+       "fa": "کِی بازِش می‌کُنَن؟",
+       "tr": "key bāzesch mīkonan?",
+       "de": "Wann machen sie sie wieder auf?"
+      },
+      {
+       "fa": "مَعلوم نیست. شاید آخَرِ ماه.",
+       "tr": "maʿlūm nīst. schāyad āchar-e māh.",
+       "de": "Unklar. Vielleicht Ende des Monats."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Verstanden?",
+     "fragen": [
+      {
+       "frage": "Was ist mit der Brücke?",
+       "optionen": [
+        "Sie ist gesperrt.",
+        "Sie ist neu.",
+        "Sie ist kaputt gegangen."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wann wird sie vielleicht wieder geöffnet?",
+       "optionen": [
+        "Ende des Monats",
+        "morgen",
+        "nächstes Jahr"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "<span class='fa'>بَستَنِش</span> in der Schriftsprache:",
+       "optionen": [
+        "بسته شد",
+        "بست",
+        "بسته است"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,738 @@
+{
+ "id": "tx",
+ "art": "texte",
+ "titel": "Texte & Dialoge",
+ "beschreibung": "Lesetexte mit Fragen und Dialoge zum Ordnen.",
+ "stationen": [
+  {
+   "id": "t1",
+   "titel": "Kurztext: Warum lernt Lena Persisch?",
+   "vorschau": "چرا لنا فارسی یاد می‌گیرد؟",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>مردم‌شناسی</span> – Ethnologie · <span class='fa'>تحقیق کردن</span> – forschen · <span class='fa'>داستان</span> – Geschichte, Erzählung · <span class='fa'>امیدوار</span> – hoffnungsvoll</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Kurztext: Warum lernt Lena Persisch?",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "لنا دانشجوی ترم پنجم مردم‌شناسی در کیل است.",
+       "tr": "lenā dāneschdschū-ye term-e pandschom-e mardomschenāsī dar kīl ast.",
+       "de": "Lena studiert im fünften Semester Ethnologie in Kiel."
+      },
+      {
+       "fa": "او دو سال است که فارسی یاد می‌گیرد.",
+       "tr": "ū do sāl ast ke fārsī yād mīgīrad.",
+       "de": "Sie lernt seit zwei Jahren Persisch."
+      },
+      {
+       "fa": "لنا فارسی یاد می‌گیرد تا بتواند برای پایان‌نامه‌اش در ایران تحقیق کند.",
+       "tr": "lenā fārsī yād mīgīrad tā betawānad barāye pāyānnāmeasch dar īrān tahghīgh konad.",
+       "de": "Lena lernt Persisch, um für ihre Abschlussarbeit in Iran forschen zu können."
+      },
+      {
+       "fa": "او می‌خواهد با مردم حرف بزند و داستان‌هایشان را بشنود.",
+       "tr": "ū mīchāhad bā mardom harf bezanad o dāstānhāyeschān rā beschenawad.",
+       "de": "Sie will mit den Leuten sprechen und ihre Geschichten hören."
+      },
+      {
+       "fa": "برای اینکه بهتر صحبت کند، هر هفته با یک دانشجوی ایرانی تمرین می‌کند.",
+       "tr": "barāye īnke behtar sohbat konad, har hafte bā yek dāneschdschū-ye īrānī tamrīn mīkonad.",
+       "de": "Damit sie besser spricht, übt sie jede Woche mit einem iranischen Studenten."
+      },
+      {
+       "fa": "او کنار درسش در یک کافه کار می‌کند تا پول سفرش را دربیاورد.",
+       "tr": "ū kenār-e darsasch dar yek kāfe kār mīkonad tā pūl-e safarasch rā darbiyāwarad.",
+       "de": "Neben dem Studium arbeitet sie in einem Café, um das Geld für ihre Reise zu verdienen."
+      },
+      {
+       "fa": "استادش به او گفته است که برای بورسیه درخواست بدهد.",
+       "tr": "ostādasch be ū gofte ast ke barāye būrsiye darchāst bedahad.",
+       "de": "Ihre Professorin hat ihr gesagt, sie soll sich für ein Stipendium bewerben."
+      },
+      {
+       "fa": "لنا امیدوار است که بورسیه را بگیرد.",
+       "tr": "lenā omīdwār ast ke būrsiye rā begīrad.",
+       "de": "Lena hofft, dass sie das Stipendium bekommt."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "لنا ترم سوم است.",
+       "fest": true,
+       "erkl": "Sie ist im <b>fünften</b> Semester."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "او برای پایان‌نامه‌اش می‌خواهد در ایران تحقیق کند.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "لنا هر روز با یک دانشجوی ایرانی تمرین می‌کند.",
+       "fest": true,
+       "erkl": "<b>Jede Woche</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "او در یک کافه کار می‌کند.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "لنا بورسیه گرفته است.",
+       "fest": true,
+       "erkl": "Sie <b>hofft</b>, es zu bekommen."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Seit wann lernt Lena Persisch?",
+       "optionen": [
+        "seit zwei Jahren",
+        "seit fünf Semestern",
+        "seit einem Jahr"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Warum arbeitet sie im Café?",
+       "optionen": [
+        "um das Geld für ihre Reise zu verdienen",
+        "weil sie Kaffee mag",
+        "um Persisch zu üben"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was hat ihre Professorin ihr geraten?",
+       "optionen": [
+        "sich für ein Stipendium zu bewerben",
+        "mehr zu lernen",
+        "nach Teheran zu ziehen"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was will sie in Iran tun?",
+       "optionen": [
+        "mit Menschen sprechen und ihre Geschichten hören",
+        "Urlaub machen",
+        "arbeiten"
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "او دو سال است که فارسی یاد می‌گیرد.",
+       "tr": "ū do sāl ast ke fārsī yād mīgīrad.",
+       "de": "Sie lernt seit zwei Jahren Persisch."
+      },
+      {
+       "fa": "لنا فارسی یاد می‌گیرد تا بتواند برای پایان‌نامه‌اش در ایران تحقیق کند.",
+       "tr": "lenā fārsī yād mīgīrad tā betawānad barāye pāyānnāmeasch dar īrān tahghīgh konad.",
+       "de": "Lena lernt Persisch, um für ihre Abschlussarbeit in Iran forschen zu können."
+      },
+      {
+       "fa": "او می‌خواهد با مردم حرف بزند و داستان‌هایشان را بشنود.",
+       "tr": "ū mīchāhad bā mardom harf bezanad o dāstānhāyeschān rā beschenawad.",
+       "de": "Sie will mit den Leuten sprechen und ihre Geschichten hören."
+      },
+      {
+       "fa": "برای اینکه بهتر صحبت کند، هر هفته با یک دانشجوی ایرانی تمرین می‌کند.",
+       "tr": "barāye īnke behtar sohbat konad, har hafte bā yek dāneschdschū-ye īrānī tamrīn mīkonad.",
+       "de": "Damit sie besser spricht, übt sie jede Woche mit einem iranischen Studenten."
+      },
+      {
+       "fa": "او کنار درسش در یک کافه کار می‌کند تا پول سفرش را دربیاورد.",
+       "tr": "ū kenār-e darsasch dar yek kāfe kār mīkonad tā pūl-e safarasch rā darbiyāwarad.",
+       "de": "Neben dem Studium arbeitet sie in einem Café, um das Geld für ihre Reise zu verdienen."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t2",
+   "titel": "Text: Studieren in Iran – der Konkur",
+   "vorschau": "کنکور",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>دانش‌آموز</span> – Schüler/in · <span class='fa'>شرکت کردن در</span> – teilnehmen an · <span class='fa'>آماده شدن</span> – sich vorbereiten · <span class='fa'>پزشکی</span> – Medizin · <span class='fa'>مهندسی</span> – Ingenieurwesen · <span class='fa'>تغییر کردن</span> – sich ändern</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Text: Studieren in Iran – der Konkur",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "در ایران، دانش‌آموزان برای اینکه به دانشگاه بروند، باید در کنکور شرکت کنند.",
+       "tr": "dar īrān, dāneschāmūzān barāye īnke be dāneschgāh berawand, bāyad dar konkūr scherkat konand.",
+       "de": "In Iran müssen Schüler am Konkur teilnehmen, um an die Uni zu gehen."
+      },
+      {
+       "fa": "کنکور یک امتحان بزرگ و سخت است.",
+       "tr": "konkūr yek emtehān-e bozorg o sacht ast.",
+       "de": "Der Konkur ist eine große, schwere Prüfung."
+      },
+      {
+       "fa": "هر سال حدود یک میلیون نفر در آن شرکت می‌کنند.",
+       "tr": "har sāl hodūd-e yek milyon nafar dar ān scherkat mīkonand.",
+       "de": "Jedes Jahr nehmen etwa eine Million Menschen daran teil."
+      },
+      {
+       "fa": "خیلی از دانش‌آموزان یک یا دو سال فقط درس می‌خوانند تا نمره‌ی خوبی بگیرند.",
+       "tr": "cheylī az dāneschāmūzān yek yā do sāl faghat dars mīchānand tā nomre-ye chūbī begīrand.",
+       "de": "Viele Schüler lernen ein oder zwei Jahre lang nur, um eine gute Note zu bekommen."
+      },
+      {
+       "fa": "بعضی‌ها به کلاس‌های کنکور می‌روند تا بهتر آماده شوند.",
+       "tr": "baʿzīhā be kelāshā-ye konkūr mīrawand tā behtar āmāde schawand.",
+       "de": "Manche gehen in Konkur-Kurse, um sich besser vorzubereiten."
+      },
+      {
+       "fa": "رشته‌های پزشکی و مهندسی خیلی محبوب هستند.",
+       "tr": "reschtehā-ye pezeschkī o mohandesī cheylī mahbūb hastand.",
+       "de": "Die Fächer Medizin und Ingenieurwesen sind sehr beliebt."
+      },
+      {
+       "fa": "برای قبول شدن در این رشته‌ها، باید نمره‌ی خیلی خوبی داشته باشی.",
+       "tr": "barāye ghabūl schodan dar īn reschtehā, bāyad nomre-ye cheylī chūbī dāschte bāschī.",
+       "de": "Um für diese Fächer angenommen zu werden, musst du eine sehr gute Note haben."
+      },
+      {
+       "fa": "بعد از کنکور، دانشجوها معمولا چهار سال کارشناسی می‌خوانند.",
+       "tr": "baʿd az konkūr, dāneschdschūhā maʿmūlan tschahār sāl kārschenāsī mīchānand.",
+       "de": "Nach dem Konkur studieren die Studierenden normalerweise vier Jahre Bachelor."
+      },
+      {
+       "fa": "خیلی‌ها می‌گویند بهتر است سیستم کنکور تغییر کند.",
+       "tr": "cheylīhā mīgūyand behtar ast sīstem-e konkūr taghyīr konad.",
+       "de": "Viele sagen, es wäre besser, das Konkur-System zu ändern."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "کنکور یک امتحان آسان است.",
+       "fest": true,
+       "erkl": "Er ist <b>groß und schwer</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "هر سال حدود یک میلیون نفر در کنکور شرکت می‌کنند.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "پزشکی و مهندسی محبوب هستند.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "کارشناسی معمولا دو سال است.",
+       "fest": true,
+       "erkl": "Normalerweise <b>vier</b> Jahre."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Wozu gehen manche in Konkur-Kurse?",
+       "optionen": [
+        "um sich besser vorzubereiten",
+        "um Freunde zu finden",
+        "um Geld zu verdienen"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie lange lernen manche nur für den Konkur?",
+       "optionen": [
+        "ein oder zwei Jahre",
+        "einen Monat",
+        "vier Jahre"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was sagen viele über das System?",
+       "optionen": [
+        "Es wäre besser, es zu ändern.",
+        "Es ist perfekt.",
+        "Es ist zu leicht."
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t3",
+   "titel": "Profi-Text: Eine Stellenanzeige",
+   "vorschau": "آگهی استخدام",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>نرم‌افزاری</span> – Software- · <span class='fa'>نیاز داشتن به</span> – brauchen · <span class='fa'>ایمیل</span> – E-Mail · <span class='fa'>محیط کار</span> – Arbeitsumfeld · <span class='fa'>دوستانه</span> – freundlich</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Profi-Text: Eine Stellenanzeige",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "یک شرکت نرم‌افزاری در تهران به یک مترجم آلمانی–فارسی نیاز دارد.",
+       "tr": "yek scherkat-e narmafzārī dar tehrān be yek motardschem-e ālmānī–fārsī niyāz dārad.",
+       "de": "Eine Softwarefirma in Teheran braucht einen Übersetzer Deutsch–Persisch."
+      },
+      {
+       "fa": "کار پاره‌وقت است: روزی چهار ساعت.",
+       "tr": "kār pārewaght ast: rūzī tschahār sāʿat.",
+       "de": "Die Arbeit ist Teilzeit: vier Stunden am Tag."
+      },
+      {
+       "fa": "لازم است دو سال تجربه‌ی کاری داشته باشید.",
+       "tr": "lāzem ast do sāl tadschrobe-ye kārī dāschte bāschīd.",
+       "de": "Sie müssen zwei Jahre Berufserfahrung haben."
+      },
+      {
+       "fa": "ممکن است گاهی لازم باشد به آلمان سفر کنید.",
+       "tr": "momken ast gāhī lāzem bāschad be ālmān safar konīd.",
+       "de": "Es kann sein, dass Sie manchmal nach Deutschland reisen müssen."
+      },
+      {
+       "fa": "برای درخواست، لطفا رزومه‌تان را تا پانزدهم آبان به این ایمیل بفرستید.",
+       "tr": "barāye darchāst, lotfan rezūmetān rā tā pānzdahom-e ābān be īn īmeyl beferestīd.",
+       "de": "Für die Bewerbung schicken Sie bitte Ihren Lebenslauf bis zum 15. Aban an diese E-Mail."
+      },
+      {
+       "fa": "حقوق خوب و محیط کار دوستانه است.",
+       "tr": "hoghūgh chūb o mohīt-e kār dūstāne ast.",
+       "de": "Das Gehalt ist gut und das Arbeitsumfeld freundlich."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "کار تمام‌وقت است.",
+       "fest": true,
+       "erkl": "Sie ist <b>Teilzeit</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "لازم است دو سال تجربه داشته باشید.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "باید رزومه را تا پانزدهم آبان بفرستید.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "هیچ‌وقت لازم نیست به آلمان سفر کنید.",
+       "fest": true,
+       "erkl": "Es kann <b>manchmal nötig</b> sein."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Wen sucht die Firma?",
+       "optionen": [
+        "einen Übersetzer Deutsch–Persisch",
+        "einen Programmierer",
+        "einen Lehrer"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie viele Stunden am Tag?",
+       "optionen": [
+        "vier",
+        "acht",
+        "sechs"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie ist das Arbeitsumfeld?",
+       "optionen": [
+        "freundlich",
+        "streng",
+        "laut"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d1",
+   "titel": "Dialog: Wie finde ich einen Job?",
+   "vorschau": "چطور کار پیدا کنم؟",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Arasch sucht einen Nebenjob und fragt seine Kommilitonin Sara um Rat.</p><p><span class='fa'>دفتر کاریابی</span> – Jobbörse, Arbeitsvermittlung · <span class='fa'>برو</span> – geh! (Imperativ, kommt in der nächsten Lektion) · <span class='fa'>فکر می‌کنی …؟</span> – glaubst du …?</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "آرش: سارا، می‌خواهم یک کار پاره‌وقت پیدا کنم. چه کار کنم؟",
+       "tr": "sārā, mīchāham yek kār-e pārewaght peydā konam. tsche kār konam?",
+       "de": "Sara, ich möchte einen Teilzeitjob finden. Was soll ich tun?"
+      },
+      {
+       "fa": "سارا: بهتر است اول یک رزومه‌ی خوب بنویسی.",
+       "tr": "behtar ast awwal yek rezūme-ye chūb benewīsī.",
+       "de": "Am besten schreibst du zuerst einen guten Lebenslauf."
+      },
+      {
+       "fa": "آرش: به آلمانی یا به انگلیسی؟",
+       "tr": "be ālmānī yā be engelīsī?",
+       "de": "Auf Deutsch oder auf Englisch?"
+      },
+      {
+       "fa": "سارا: به آلمانی. بعد به دفتر کاریابی دانشگاه برو تا آگهی‌ها را ببینی.",
+       "tr": "be ālmānī. baʿd be daftar-e kāryābī-ye dāneschgāh borou tā āgahīhā rā bebīnī.",
+       "de": "Auf Deutsch. Dann geh zur Jobbörse der Uni, damit du die Anzeigen siehst."
+      },
+      {
+       "fa": "آرش: فکر می‌کنی می‌توانم در کتابخانه کار کنم؟",
+       "tr": "fekr mīkonī mītawānam dar ketābchāne kār konam?",
+       "de": "Glaubst du, ich kann in der Bibliothek arbeiten?"
+      },
+      {
+       "fa": "سارا: شاید. ولی لازم است زود درخواست بدهی، چون خیلی‌ها آنجا کار می‌خواهند.",
+       "tr": "schāyad. walī lāzem ast zūd darchāst bedahī, tschūn cheylīhā āndschā kār mīchāhand.",
+       "de": "Vielleicht. Aber du musst dich schnell bewerben, weil viele dort arbeiten wollen."
+      },
+      {
+       "fa": "آرش: باشه. امشب رزومه‌ام را می‌نویسم تا فردا بفرستم.",
+       "tr": "bāsche. emschab rezūmeam rā mīnewīsam tā fardā beferestam.",
+       "de": "Okay. Heute Abend schreibe ich meinen Lebenslauf, damit ich ihn morgen abschicke."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "آرش: سارا، می‌خواهم یک کار پاره‌وقت پیدا کنم. چه کار کنم؟",
+       "tr": "sārā, mīchāham yek kār-e pārewaght peydā konam. tsche kār konam?",
+       "de": "Sara, ich möchte einen Teilzeitjob finden. Was soll ich tun?"
+      },
+      {
+       "fa": "سارا: بهتر است اول یک رزومه‌ی خوب بنویسی.",
+       "tr": "behtar ast awwal yek rezūme-ye chūb benewīsī.",
+       "de": "Am besten schreibst du zuerst einen guten Lebenslauf."
+      },
+      {
+       "fa": "آرش: به آلمانی یا به انگلیسی؟",
+       "tr": "be ālmānī yā be engelīsī?",
+       "de": "Auf Deutsch oder auf Englisch?"
+      },
+      {
+       "fa": "سارا: به آلمانی. بعد به دفتر کاریابی دانشگاه برو تا آگهی‌ها را ببینی.",
+       "tr": "be ālmānī. baʿd be daftar-e kāryābī-ye dāneschgāh borou tā āgahīhā rā bebīnī.",
+       "de": "Auf Deutsch. Dann geh zur Jobbörse der Uni, damit du die Anzeigen siehst."
+      },
+      {
+       "fa": "آرش: فکر می‌کنی می‌توانم در کتابخانه کار کنم؟",
+       "tr": "fekr mīkonī mītawānam dar ketābchāne kār konam?",
+       "de": "Glaubst du, ich kann in der Bibliothek arbeiten?"
+      },
+      {
+       "fa": "سارا: شاید. ولی لازم است زود درخواست بدهی، چون خیلی‌ها آنجا کار می‌خواهند.",
+       "tr": "schāyad. walī lāzem ast zūd darchāst bedahī, tschūn cheylīhā āndschā kār mīchāhand.",
+       "de": "Vielleicht. Aber du musst dich schnell bewerben, weil viele dort arbeiten wollen."
+      },
+      {
+       "fa": "آرش: باشه. امشب رزومه‌ام را می‌نویسم تا فردا بفرستم.",
+       "tr": "bāsche. emschab rezūmeam rā mīnewīsam tā fardā beferestam.",
+       "de": "Okay. Heute Abend schreibe ich meinen Lebenslauf, damit ich ihn morgen abschicke."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Was soll Arasch zuerst tun?",
+       "optionen": [
+        "einen guten Lebenslauf schreiben",
+        "zur Bibliothek gehen",
+        "Deutsch lernen"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Warum soll er zur Jobbörse gehen?",
+       "optionen": [
+        "um die Anzeigen zu sehen",
+        "um zu lernen",
+        "um Sara zu treffen"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Warum muss er sich schnell bewerben?",
+       "optionen": [
+        "weil viele dort arbeiten wollen",
+        "weil er kein Geld hat",
+        "weil die Bibliothek schließt"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d2",
+   "titel": "Dialog: In der Studienberatung",
+   "vorschau": "در دفتر مشاوره",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Mina möchte ihr Studienfach wechseln.</p><p><span class='fa'>مشاوره / مشاور</span> – Beratung / Berater/in · <span class='fa'>اقتصاد</span> – Wirtschaft · <span class='fa'>فرم پر کردن</span> – ein Formular ausfüllen · <span class='fa'>قبول کردن</span> – anerkennen, annehmen · <span class='fa'>استاد راهنما</span> – Betreuer/in</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "مینا: سلام. می‌خواهم رشته‌ام را عوض کنم.",
+       "tr": "salām. mīchāham reschteam rā ʿawaz konam.",
+       "de": "Hallo. Ich möchte mein Studienfach wechseln."
+      },
+      {
+       "fa": "مشاور: سلام. الان چه رشته‌ای می‌خوانید؟",
+       "tr": "salām. alān tsche reschteī mīchānīd?",
+       "de": "Hallo. Was studieren Sie jetzt?"
+      },
+      {
+       "fa": "مینا: اقتصاد. ولی می‌خواهم زبان‌شناسی بخوانم.",
+       "tr": "eghtesād. walī mīchāham zabānschenāsī bechānam.",
+       "de": "Wirtschaft. Aber ich möchte Sprachwissenschaft studieren."
+      },
+      {
+       "fa": "مشاور: برای اینکه رشته‌تان را عوض کنید، باید تا آخر ماه یک فرم پر کنید.",
+       "tr": "barāye īnke reschtetān rā ʿawaz konīd, bāyad tā āchar-e māh yek form por konīd.",
+       "de": "Um Ihr Fach zu wechseln, müssen Sie bis Ende des Monats ein Formular ausfüllen."
+      },
+      {
+       "fa": "مینا: ممکن است نمره‌های ترم قبلم را قبول کنند؟",
+       "tr": "momken ast nomrehā-ye term-e ghablam rā ghabūl konand?",
+       "de": "Kann es sein, dass meine Noten aus dem letzten Semester anerkannt werden?"
+      },
+      {
+       "fa": "مشاور: بعضی‌ها را بله. بهتر است با استاد راهنمای جدیدتان هم صحبت کنید.",
+       "tr": "baʿzīhā rā bale. behtar ast bā ostād-e rāhnamā-ye dschadīdetān ham sohbat konīd.",
+       "de": "Einige ja. Es ist besser, wenn Sie auch mit Ihrem neuen Betreuer sprechen."
+      },
+      {
+       "fa": "مینا: خیلی ممنون. همین امروز فرم را پر می‌کنم.",
+       "tr": "cheylī mamnūn. hamīn emrūz form rā por mīkonam.",
+       "de": "Vielen Dank. Ich fülle das Formular noch heute aus."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "مینا: سلام. می‌خواهم رشته‌ام را عوض کنم.",
+       "tr": "salām. mīchāham reschteam rā ʿawaz konam.",
+       "de": "Hallo. Ich möchte mein Studienfach wechseln."
+      },
+      {
+       "fa": "مشاور: سلام. الان چه رشته‌ای می‌خوانید؟",
+       "tr": "salām. alān tsche reschteī mīchānīd?",
+       "de": "Hallo. Was studieren Sie jetzt?"
+      },
+      {
+       "fa": "مینا: اقتصاد. ولی می‌خواهم زبان‌شناسی بخوانم.",
+       "tr": "eghtesād. walī mīchāham zabānschenāsī bechānam.",
+       "de": "Wirtschaft. Aber ich möchte Sprachwissenschaft studieren."
+      },
+      {
+       "fa": "مشاور: برای اینکه رشته‌تان را عوض کنید، باید تا آخر ماه یک فرم پر کنید.",
+       "tr": "barāye īnke reschtetān rā ʿawaz konīd, bāyad tā āchar-e māh yek form por konīd.",
+       "de": "Um Ihr Fach zu wechseln, müssen Sie bis Ende des Monats ein Formular ausfüllen."
+      },
+      {
+       "fa": "مینا: ممکن است نمره‌های ترم قبلم را قبول کنند؟",
+       "tr": "momken ast nomrehā-ye term-e ghablam rā ghabūl konand?",
+       "de": "Kann es sein, dass meine Noten aus dem letzten Semester anerkannt werden?"
+      },
+      {
+       "fa": "مشاور: بعضی‌ها را بله. بهتر است با استاد راهنمای جدیدتان هم صحبت کنید.",
+       "tr": "baʿzīhā rā bale. behtar ast bā ostād-e rāhnamā-ye dschadīdetān ham sohbat konīd.",
+       "de": "Einige ja. Es ist besser, wenn Sie auch mit Ihrem neuen Betreuer sprechen."
+      },
+      {
+       "fa": "مینا: خیلی ممنون. همین امروز فرم را پر می‌کنم.",
+       "tr": "cheylī mamnūn. hamīn emrūz form rā por mīkonam.",
+       "de": "Vielen Dank. Ich fülle das Formular noch heute aus."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Was studiert Mina jetzt?",
+       "optionen": [
+        "Wirtschaft",
+        "Sprachwissenschaft",
+        "Medizin"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was muss sie bis Monatsende tun?",
+       "optionen": [
+        "ein Formular ausfüllen",
+        "eine Prüfung machen",
+        "bezahlen"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Mit wem soll sie noch sprechen?",
+       "optionen": [
+        "mit ihrem neuen Betreuer",
+        "mit ihren Eltern",
+        "mit der Bibliothek"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,747 @@
+{
+ "id": "tx",
+ "art": "texte",
+ "titel": "Texte & Dialoge",
+ "beschreibung": "Lesetexte mit Fragen und Dialoge zum Ordnen.",
+ "stationen": [
+  {
+   "id": "t1",
+   "titel": "Kurztext: Das rote Gold",
+   "vorschau": "طلای سرخ",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>طلا</span> – Gold · <span class='fa'>سرخ</span> – rot · <span class='fa'>تولید شدن</span> – produziert werden · <span class='fa'>مخصوصاً</span> – besonders · <span class='fa'>استان</span> – Provinz · <span class='fa'>استفاده شدن</span> – verwendet werden · <span class='fa'>بستنی</span> – Eis</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Kurztext: Das rote Gold",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "به زعفران «طلای سرخ» گفته می‌شود، چون خیلی گران است.",
+       "tr": "be zaʿfarān «talā-ye sorch» gofte mīschawad, tschūn cheylī gerān ast.",
+       "de": "Safran wird „rotes Gold“ genannt, weil er sehr teuer ist."
+      },
+      {
+       "fa": "بیشترین زعفران دنیا در ایران تولید می‌شود، مخصوصا در استان خراسان.",
+       "tr": "bīschtarīn zaʿfarān-e donyā dar īrān tolīd mīschawad, machsūsan dar ostān-e chorāsān.",
+       "de": "Der meiste Safran der Welt wird in Iran produziert, besonders in der Provinz Chorasan."
+      },
+      {
+       "fa": "گل‌های زعفران در پاییز باز می‌شوند.",
+       "tr": "golhā-ye zaʿfarān dar pāyīz bāz mīschawand.",
+       "de": "Die Safranblüten öffnen sich im Herbst."
+      },
+      {
+       "fa": "آنها صبح خیلی زود با دست چیده می‌شوند.",
+       "tr": "ānhā sobh cheylī zūd bā dast tschīde mīschawand.",
+       "de": "Sie werden sehr früh am Morgen von Hand gepflückt."
+      },
+      {
+       "fa": "برای یک کیلو زعفران، حدود صد و پنجاه هزار گل لازم است!",
+       "tr": "barāye yek kīlo zaʿfarān, hodūd-e sad o pandschāh hezār gol lāzem ast!",
+       "de": "Für ein Kilo Safran braucht man etwa 150 000 Blüten!"
+      },
+      {
+       "fa": "رشته‌های قرمز جدا و خشک می‌شوند.",
+       "tr": "reschtehā-ye ghermez dschodā o choschk mīschawand.",
+       "de": "Die roten Fäden werden getrennt und getrocknet."
+      },
+      {
+       "fa": "زعفران در غذاهای ایرانی، مثلا در برنج و شیرینی، استفاده می‌شود.",
+       "tr": "zaʿfarān dar ghazāhā-ye īrānī, masalan dar berendsch o schīrīnī, estefāde mīschawad.",
+       "de": "Safran wird in iranischen Gerichten verwendet, zum Beispiel in Reis und Süßigkeiten."
+      },
+      {
+       "fa": "بستنی زعفرانی هم خیلی معروف است!",
+       "tr": "bastanī-ye zaʿfarānī ham cheylī maʿrūf ast!",
+       "de": "Safraneis ist auch sehr berühmt!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "زعفران ارزان است.",
+       "fest": true,
+       "erkl": "Er ist sehr <b>teuer</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "بیشتر زعفران دنیا در ایران تولید می‌شود.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "گل‌ها با ماشین چیده می‌شوند.",
+       "fest": true,
+       "erkl": "Sie werden <b>von Hand</b> gepflückt."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "زعفران در برنج استفاده می‌شود.",
+       "fest": true
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Wie nennt man Safran?",
+       "optionen": [
+        "rotes Gold",
+        "gelbes Gold",
+        "roter Stein"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wann blühen die Safranblüten?",
+       "optionen": [
+        "im Herbst",
+        "im Frühling",
+        "im Sommer"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie viele Blüten braucht man für ein Kilo?",
+       "optionen": [
+        "etwa 150 000",
+        "etwa 1500",
+        "etwa 15 000"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wo wird der meiste Safran angebaut?",
+       "optionen": [
+        "in Chorasan",
+        "in Teheran",
+        "in Gilan"
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "بیشترین زعفران دنیا در ایران تولید می‌شود، مخصوصا در استان خراسان.",
+       "tr": "bīschtarīn zaʿfarān-e donyā dar īrān tolīd mīschawad, machsūsan dar ostān-e chorāsān.",
+       "de": "Der meiste Safran der Welt wird in Iran produziert, besonders in der Provinz Chorasan."
+      },
+      {
+       "fa": "گل‌های زعفران در پاییز باز می‌شوند.",
+       "tr": "golhā-ye zaʿfarān dar pāyīz bāz mīschawand.",
+       "de": "Die Safranblüten öffnen sich im Herbst."
+      },
+      {
+       "fa": "آنها صبح خیلی زود با دست چیده می‌شوند.",
+       "tr": "ānhā sobh cheylī zūd bā dast tschīde mīschawand.",
+       "de": "Sie werden sehr früh am Morgen von Hand gepflückt."
+      },
+      {
+       "fa": "برای یک کیلو زعفران، حدود صد و پنجاه هزار گل لازم است!",
+       "tr": "barāye yek kīlo zaʿfarān, hodūd-e sad o pandschāh hezār gol lāzem ast!",
+       "de": "Für ein Kilo Safran braucht man etwa 150 000 Blüten!"
+      },
+      {
+       "fa": "رشته‌های قرمز جدا و خشک می‌شوند.",
+       "tr": "reschtehā-ye ghermez dschodā o choschk mīschawand.",
+       "de": "Die roten Fäden werden getrennt und getrocknet."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t2",
+   "titel": "Text: Wie ein Teppich entsteht",
+   "vorschau": "فرش چگونه بافته می‌شود؟",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>شناخته شدن</span> – bekannt sein · <span class='fa'>کشیدن</span> – zeichnen; ziehen · <span class='fa'>گوسفند</span> – Schaf · <span class='fa'>گیاه</span> – Pflanze · <span class='fa'>ریشه</span> – Wurzel · <span class='fa'>گره</span> – Knoten · <span class='fa'>سانتی‌متر مربع</span> – Quadratzentimeter · <span class='fa'>ارزش</span> – Wert · <span class='fa'>گرفته می‌شد</span> – wurde (immer) gewonnen (durativ!)</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Text: Wie ein Teppich entsteht",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "فرش ایرانی در همه‌ی دنیا شناخته می‌شود.",
+       "tr": "farsch-e īrānī dar hame-ye donyā schenāchte mīschawad.",
+       "de": "Der persische Teppich ist auf der ganzen Welt bekannt."
+      },
+      {
+       "fa": "یک فرش دستی خوب گاهی در یک سال یا بیشتر بافته می‌شود.",
+       "tr": "yek farsch-e dastī-ye chūb gāhī dar yek sāl yā bīschtar bāfte mīschawad.",
+       "de": "Ein guter handgeknüpfter Teppich wird manchmal in einem Jahr oder länger geknüpft."
+      },
+      {
+       "fa": "اول، طرح فرش روی کاغذ کشیده می‌شود.",
+       "tr": "awwal, tarh-e farsch rū-ye kāghaz keschīde mīschawad.",
+       "de": "Zuerst wird das Muster des Teppichs auf Papier gezeichnet."
+      },
+      {
+       "fa": "بعد، پشم گوسفند شسته و رنگ می‌شود.",
+       "tr": "baʿd, pascham-e gūsfand schoste o rang mīschawad.",
+       "de": "Dann wird die Schafwolle gewaschen und gefärbt."
+      },
+      {
+       "fa": "در گذشته، رنگ‌ها فقط از گیاهان گرفته می‌شد؛ مثلا قرمز از ریشه‌ی روناس.",
+       "tr": "dar gozaschte, ranghā faghat az giyāhān gerefte mīschod; masalan ghermez az rīsche-ye rūnās.",
+       "de": "Früher wurden die Farben nur aus Pflanzen gewonnen, zum Beispiel Rot aus der Krappwurzel."
+      },
+      {
+       "fa": "سپس فرش گره به گره با دست بافته می‌شود.",
+       "tr": "sepas farsch gereh be gereh bā dast bāfte mīschawad.",
+       "de": "Danach wird der Teppich Knoten für Knoten von Hand geknüpft."
+      },
+      {
+       "fa": "در فرش‌های خوب، در هر سانتی‌متر مربع ده‌ها گره زده می‌شود.",
+       "tr": "dar farschhā-ye chūb, dar har sāntīmetr-e morabbaʿ dahhā gereh zade mīschawad.",
+       "de": "In guten Teppichen werden auf jedem Quadratzentimeter Dutzende Knoten geknüpft."
+      },
+      {
+       "fa": "بعد از بافتن، فرش شسته و در آفتاب خشک می‌شود.",
+       "tr": "baʿd az bāftan, farsch schoste o dar āftāb choschk mīschawad.",
+       "de": "Nach dem Knüpfen wird der Teppich gewaschen und in der Sonne getrocknet."
+      },
+      {
+       "fa": "فرش‌های تبریز، کاشان و اصفهان خیلی معروف هستند.",
+       "tr": "farschhā-ye tabrīz, kāschān o esfahān cheylī maʿrūf hastand.",
+       "de": "Die Teppiche aus Täbris, Kaschan und Isfahan sind sehr berühmt."
+      },
+      {
+       "fa": "امروزه فرش ماشینی هم زیاد تولید می‌شود، اما فرش دستی هنوز ارزش بیشتری دارد.",
+       "tr": "emrūze farsch-e māschīnī ham ziyād tolīd mīschawad, ammā farsch-e dastī hanūz arzesch-e bīschtarī dārad.",
+       "de": "Heute werden auch viele Maschinenteppiche hergestellt, aber handgeknüpfte Teppiche haben noch immer mehr Wert."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "فرش دستی در یک روز بافته می‌شود.",
+       "fest": true,
+       "erkl": "Manchmal dauert es <b>ein Jahr oder länger</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "اول طرح روی کاغذ کشیده می‌شود.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "در گذشته رنگ‌ها از گیاهان گرفته می‌شد.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "فرش در سایه خشک می‌شود.",
+       "fest": true,
+       "erkl": "Er wird in der <b>Sonne</b> getrocknet."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "فرش دستی ارزش بیشتری دارد.",
+       "fest": true
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Woraus wurde früher Rot gewonnen?",
+       "optionen": [
+        "aus der Krappwurzel",
+        "aus Safran",
+        "aus Granatäpfeln"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was passiert mit der Wolle vor dem Knüpfen?",
+       "optionen": [
+        "Sie wird gewaschen und gefärbt.",
+        "Sie wird verkauft.",
+        "Sie wird getrocknet."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Welche Städte sind für Teppiche berühmt?",
+       "optionen": [
+        "Täbris, Kaschan, Isfahan",
+        "Teheran, Kiel, Yazd",
+        "Rascht, Schiras, Kerman"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t3",
+   "titel": "Profi-Text: Ein Museumsschild",
+   "vorschau": "موزه‌ی ملی",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>جام</span> – Becher, Pokal · <span class='fa'>گاو بالدار</span> – geflügelter Stier · <span class='fa'>ویترین</span> – Vitrine · <span class='fa'>مجاز</span> – erlaubt · <span class='fa'>ساخته شده بود</span> – war angefertigt worden (Passiv Plusquamperfekt – nächste Lektion)</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Profi-Text: Ein Museumsschild",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "جام طلا – حدود ۳۰۰۰ سال پیش",
+       "tr": "dschām-e talā – hodūd-e se hezār sāl pīsch",
+       "de": "Goldener Becher – vor etwa 3000 Jahren"
+      },
+      {
+       "fa": "این جام در سال ۱۳۴۰ در شمال ایران کشف شد.",
+       "tr": "īn dschām dar sāl-e hezār o sīsad o tschehel dar schemāl-e īrān kaschf schod.",
+       "de": "Dieser Becher wurde 1340 (iranischer Kalender, = 1961) im Norden Irans entdeckt."
+      },
+      {
+       "fa": "گفته می‌شود که برای جشن‌های شاهان ساخته شده بود.",
+       "tr": "gofte mīschawad ke barāye dschaschnhā-ye schāhān sāchte schode būd.",
+       "de": "Es heißt, dass er für die Feste der Könige angefertigt worden war."
+      },
+      {
+       "fa": "روی آن نقش دو گاو بالدار دیده می‌شود.",
+       "tr": "rū-ye ān naghsch-e do gāw-e bāldār dīde mīschawad.",
+       "de": "Darauf sind zwei geflügelte Stiere zu sehen."
+      },
+      {
+       "fa": "لطفا به ویترین دست نزنید. عکاسی بدون فلاش مجاز است.",
+       "tr": "lotfan be vītrīn dast nazanīd. ʿakkāsī bedūn-e flāsch modschāz ast.",
+       "de": "Bitte berühren Sie die Vitrine nicht. Fotografieren ohne Blitz ist erlaubt."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "جام در جنوب ایران کشف شد.",
+       "fest": true,
+       "erkl": "Im <b>Norden</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "روی جام دو گاو دیده می‌شود.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "عکاسی با فلاش مجاز است.",
+       "fest": true,
+       "erkl": "Nur <b>ohne</b> Blitz."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Wie alt ist der Becher?",
+       "optionen": [
+        "etwa 3000 Jahre",
+        "etwa 300 Jahre",
+        "etwa 30 Jahre"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wofür wurde er angeblich gemacht?",
+       "optionen": [
+        "für die Feste der Könige",
+        "für Soldaten",
+        "für ein Museum"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was darf man nicht tun?",
+       "optionen": [
+        "die Vitrine berühren",
+        "fotografieren",
+        "lesen"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d1",
+   "titel": "Dialog: In der Handywerkstatt",
+   "vorschau": "در تعمیرگاه",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Sara holt ihr Handy aus der Werkstatt ab.</p><p><span class='fa'>تعمیرگاه / تعمیرکار</span> – Werkstatt / Mechaniker · <span class='fa'>صفحه</span> – Display, Seite · <span class='fa'>باتری</span> – Akku · <span class='fa'>پاک شدن</span> – gelöscht werden · <span class='fa'>حفظ شدن</span> – erhalten bleiben · <span class='fa'>چقدر می‌شود؟</span> – was macht das? · <span class='fa'>قبض</span> – Quittung</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "سارا: سلام. گوشی‌ام تعمیر شد؟",
+       "tr": "salām. gūschīam taʿmīr schod?",
+       "de": "Hallo. Ist mein Handy repariert worden?"
+      },
+      {
+       "fa": "تعمیرکار: بله، صفحه‌اش عوض شد.",
+       "tr": "bale, safheasch ʿawaz schod.",
+       "de": "Ja, das Display wurde ausgetauscht."
+      },
+      {
+       "fa": "سارا: و باتری؟",
+       "tr": "o bātrī?",
+       "de": "Und der Akku?"
+      },
+      {
+       "fa": "تعمیرکار: باتری هم چک شد. مشکلی نداشت.",
+       "tr": "bātrī ham tschek schod. moschkelī nadāscht.",
+       "de": "Der Akku wurde auch geprüft. Er hatte kein Problem."
+      },
+      {
+       "fa": "سارا: عکس‌هایم پاک نشدند؟",
+       "tr": "ʿakshāyam pāk naschodand?",
+       "de": "Wurden meine Fotos nicht gelöscht?"
+      },
+      {
+       "fa": "تعمیرکار: نه، همه چیز حفظ شد.",
+       "tr": "na, hame tschīz hefz schod.",
+       "de": "Nein, alles wurde gespeichert."
+      },
+      {
+       "fa": "سارا: عالی! چقدر می‌شود؟",
+       "tr": "ʿālī! tscheghadr mīschawad?",
+       "de": "Super! Was macht das?"
+      },
+      {
+       "fa": "تعمیرکار: یک میلیون و نیم. قبض شما اینجاست.",
+       "tr": "yek milyon o nīm. ghabz-e schomā īndschāst.",
+       "de": "Anderthalb Millionen. Hier ist Ihre Quittung."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "سارا: سلام. گوشی‌ام تعمیر شد؟",
+       "tr": "salām. gūschīam taʿmīr schod?",
+       "de": "Hallo. Ist mein Handy repariert worden?"
+      },
+      {
+       "fa": "تعمیرکار: بله، صفحه‌اش عوض شد.",
+       "tr": "bale, safheasch ʿawaz schod.",
+       "de": "Ja, das Display wurde ausgetauscht."
+      },
+      {
+       "fa": "سارا: و باتری؟",
+       "tr": "o bātrī?",
+       "de": "Und der Akku?"
+      },
+      {
+       "fa": "تعمیرکار: باتری هم چک شد. مشکلی نداشت.",
+       "tr": "bātrī ham tschek schod. moschkelī nadāscht.",
+       "de": "Der Akku wurde auch geprüft. Er hatte kein Problem."
+      },
+      {
+       "fa": "سارا: عکس‌هایم پاک نشدند؟",
+       "tr": "ʿakshāyam pāk naschodand?",
+       "de": "Wurden meine Fotos nicht gelöscht?"
+      },
+      {
+       "fa": "تعمیرکار: نه، همه چیز حفظ شد.",
+       "tr": "na, hame tschīz hefz schod.",
+       "de": "Nein, alles wurde gespeichert."
+      },
+      {
+       "fa": "سارا: عالی! چقدر می‌شود؟",
+       "tr": "ʿālī! tscheghadr mīschawad?",
+       "de": "Super! Was macht das?"
+      },
+      {
+       "fa": "تعمیرکار: یک میلیون و نیم. قبض شما اینجاست.",
+       "tr": "yek milyon o nīm. ghabz-e schomā īndschāst.",
+       "de": "Anderthalb Millionen. Hier ist Ihre Quittung."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Was wurde ausgetauscht?",
+       "optionen": [
+        "das Display",
+        "der Akku",
+        "die Kamera"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wurden Saras Fotos gelöscht?",
+       "optionen": [
+        "Nein, alles wurde gespeichert.",
+        "Ja, alle.",
+        "Ja, einige."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie viel kostet die Reparatur?",
+       "optionen": [
+        "anderthalb Millionen",
+        "eine Million",
+        "zwei Millionen"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d2",
+   "titel": "Dialog: Im Museum",
+   "vorschau": "در موزه",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Jonas besucht mit seiner Freundin Maryam das Nationalmuseum in Teheran.</p><p><span class='fa'>هخامنشیان</span> – die Achämeniden · <span class='fa'>جالب</span> – interessant · <span class='fa'>اشیا</span> – Gegenstände · <span class='fa'>می‌شود … ؟</span> – darf man …? (+ verkürzter Infinitiv)</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "یوناس: این کتیبه کی نوشته شد؟",
+       "tr": "īn katībe key neweschte schod?",
+       "de": "Wann wurde diese Inschrift geschrieben?"
+      },
+      {
+       "fa": "مریم: حدود دو هزار و پانصد سال پیش، در زمان هخامنشیان.",
+       "tr": "hodūd-e do hezār o pānsad sāl pīsch, dar zamān-e hachāmaneschiyān.",
+       "de": "Vor etwa 2500 Jahren, zur Zeit der Achämeniden."
+      },
+      {
+       "fa": "یوناس: به چه زبانی نوشته شده؟",
+       "tr": "be tsche zabānī neweschte schode?",
+       "de": "In welcher Sprache ist sie geschrieben?"
+      },
+      {
+       "fa": "مریم: به سه زبان: فارسی باستان، ایلامی و بابلی.",
+       "tr": "be se zabān: fārsī-ye bāstān, īlāmī o bābolī.",
+       "de": "In drei Sprachen: Altpersisch, Elamisch und Babylonisch."
+      },
+      {
+       "fa": "یوناس: جالب است! کجا پیدا شد؟",
+       "tr": "dschāleb ast! kodschā peydā schod?",
+       "de": "Interessant! Wo wurde sie gefunden?"
+      },
+      {
+       "fa": "مریم: در تخت‌جمشید. خیلی از این اشیا آنجا کشف شدند.",
+       "tr": "dar tacht-e dschamschīd. cheylī az īn aschyā āndschā kaschf schodand.",
+       "de": "In Persepolis. Viele dieser Gegenstände wurden dort entdeckt."
+      },
+      {
+       "fa": "یوناس: می‌شود اینجا عکس گرفت؟",
+       "tr": "mīschawad īndschā ʿaks gereft?",
+       "de": "Darf man hier fotografieren?"
+      },
+      {
+       "fa": "مریم: بله، ولی بدون فلاش.",
+       "tr": "bale, walī bedūn-e flāsch.",
+       "de": "Ja, aber ohne Blitz."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "یوناس: این کتیبه کی نوشته شد؟",
+       "tr": "īn katībe key neweschte schod?",
+       "de": "Wann wurde diese Inschrift geschrieben?"
+      },
+      {
+       "fa": "مریم: حدود دو هزار و پانصد سال پیش، در زمان هخامنشیان.",
+       "tr": "hodūd-e do hezār o pānsad sāl pīsch, dar zamān-e hachāmaneschiyān.",
+       "de": "Vor etwa 2500 Jahren, zur Zeit der Achämeniden."
+      },
+      {
+       "fa": "یوناس: به چه زبانی نوشته شده؟",
+       "tr": "be tsche zabānī neweschte schode?",
+       "de": "In welcher Sprache ist sie geschrieben?"
+      },
+      {
+       "fa": "مریم: به سه زبان: فارسی باستان، ایلامی و بابلی.",
+       "tr": "be se zabān: fārsī-ye bāstān, īlāmī o bābolī.",
+       "de": "In drei Sprachen: Altpersisch, Elamisch und Babylonisch."
+      },
+      {
+       "fa": "یوناس: جالب است! کجا پیدا شد؟",
+       "tr": "dschāleb ast! kodschā peydā schod?",
+       "de": "Interessant! Wo wurde sie gefunden?"
+      },
+      {
+       "fa": "مریم: در تخت‌جمشید. خیلی از این اشیا آنجا کشف شدند.",
+       "tr": "dar tacht-e dschamschīd. cheylī az īn aschyā āndschā kaschf schodand.",
+       "de": "In Persepolis. Viele dieser Gegenstände wurden dort entdeckt."
+      },
+      {
+       "fa": "یوناس: می‌شود اینجا عکس گرفت؟",
+       "tr": "mīschawad īndschā ʿaks gereft?",
+       "de": "Darf man hier fotografieren?"
+      },
+      {
+       "fa": "مریم: بله، ولی بدون فلاش.",
+       "tr": "bale, walī bedūn-e flāsch.",
+       "de": "Ja, aber ohne Blitz."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Wie alt ist die Inschrift?",
+       "optionen": [
+        "etwa 2500 Jahre",
+        "etwa 500 Jahre",
+        "etwa 1000 Jahre"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "In wie vielen Sprachen ist sie geschrieben?",
+       "optionen": [
+        "drei",
+        "zwei",
+        "eine"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wo wurde sie gefunden?",
+       "optionen": [
+        "in Persepolis",
+        "in Teheran",
+        "in Isfahan"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

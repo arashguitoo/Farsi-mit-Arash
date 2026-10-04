@@ -25,6 +25,18 @@ Ohne Code können Studierende „ohne Code ausprobieren“ – der Fortschritt b
 
 > Die Seiten laufen über GitHub Pages bzw. einen Webserver, **nicht** per Doppelklick auf die Datei (die Lektionen werden als JSON nachgeladen).
 
+## Bereiche: Anfänger · Fortgeschritten 1 · Fortgeschritten 2 · Konversation
+
+Die Startseite zeigt vier Knöpfe. Jede Lektion gehört zu einem Bereich (Feld `"bereich"` in `lektionen/index.json`: `a`, `f1`, `f2`, `k`). Die Bereiche selbst stehen oben in `index.json` unter `"bereiche"`.
+
+In der Konsole unter **🔓 Freigaben** schaltest du pro Klasse
+- den **ganzen Bereich** (fette Zeile) – gesperrt heißt: alle Lektionen darin sind zu,
+- und darunter **jede Lektion einzeln** frei.
+
+### Einstufungstest vor Fortgeschritten 1
+
+`f1-test.json` („Großer Test Persisch I“, 13 Abschnitte) steht am Anfang von Fortgeschritten 1. Die Lektionen von Fortgeschritten 1 haben in `index.json` `"voraussetzung": "f1test"` und öffnen sich erst, wenn **alle Abschnitte** gemacht sind und **insgesamt ≥ 70 %** (`"bestehen": 70`) erreicht sind. Der Stand hängt am persönlichen Code. Stellst du eine Lektion in der Konsole ausdrücklich auf „🔓 offen“, ist sie auch ohne Test offen.
+
 ## Zwei (oder mehr) Klassen
 
 Jede Person hat einen eigenen Code und gehört zu einer Klasse. Unter **Freigaben** stellst du pro Klasse ein, welche Lektion offen ist – so kann Klasse A schon Lektion 2 haben, während Klasse B noch bei Lektion 1 ist. „Standard“ richtet sich nach `standard` in `lektionen/index.json`.

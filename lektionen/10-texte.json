@@ -1,0 +1,778 @@
+{
+ "id": "tx",
+ "art": "texte",
+ "titel": "Texte & Dialoge",
+ "beschreibung": "Lesetexte mit Fragen und Dialoge zum Ordnen.",
+ "stationen": [
+  {
+   "id": "t1",
+   "titel": "Kurztext: Kiel und Schiras",
+   "vorschau": "کیل و شیراز",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>اَلان</span> <i>alān</i> – jetzt · <span class='fa'>هَوایَش</span> – sein Wetter · <span class='fa'>تاریک</span> – dunkel · <span class='fa'>گُل‌هاست</span> = <span class='fa'>گُل‌ها اَست</span></p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Kurztext: Kiel und Schiras",
+     "text": "Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "سارا اَهلِ شیراز اَست، اَمّا اَلان دَر کیل زِندِگی می‌کُنَد.",
+       "tr": "sārā ahl-e schīrāz ast, ammā alān dar kīl zendegī mīkonad.",
+       "de": "Sara kommt aus Schiras, aber jetzt wohnt sie in Kiel."
+      },
+      {
+       "fa": "شیراز دَر جُنوبِ ایران اَست و هَوایَش اَغلَب گَرم و آفتابی اَست.",
+       "tr": "schīrāz dar dschonūb-e īrān ast o hawāyasch aghlab garm o āftābī ast.",
+       "de": "Schiras liegt im Süden Irans, und das Wetter dort ist oft warm und sonnig."
+      },
+      {
+       "fa": "دَر کیل هَوا اَغلَب اَبری اَست و باد می‌آیَد.",
+       "tr": "dar kīl hawā aghlab abrī ast o bād mīāyad.",
+       "de": "In Kiel ist es oft bewölkt und windig."
+      },
+      {
+       "fa": "سارا زِمِستانِ کیل را دوست نَدارَد، چون خِیلی تاریک اَست.",
+       "tr": "sārā zemestān-e kīl rā dūst nadārad, tschūn cheylī tārīk ast.",
+       "de": "Sara mag den Kieler Winter nicht, weil er sehr dunkel ist."
+      },
+      {
+       "fa": "وَلی تابِستانِ کیل را خِیلی دوست دارَد.",
+       "tr": "walī tābestān-e kīl rā cheylī dūst dārad.",
+       "de": "Aber den Kieler Sommer mag sie sehr."
+      },
+      {
+       "fa": "دَر تابِستان هَوا نَه خِیلی گَرم اَست نَه خِیلی سَرد.",
+       "tr": "dar tābestān hawā na cheylī garm ast na cheylī sard.",
+       "de": "Im Sommer ist es weder sehr warm noch sehr kalt."
+      },
+      {
+       "fa": "او هَفته‌ای دو بار بِه ساحِل می‌رَوَد و شِنا می‌کُنَد.",
+       "tr": "ū hafteī do bār be sāhel mīrawad o schenā mīkonad.",
+       "de": "Sie geht zweimal pro Woche an den Strand und schwimmt."
+      },
+      {
+       "fa": "با اینکه آبِ دَریا سَرد اَست، سارا شِنا را دوست دارَد.",
+       "tr": "bā īnke āb-e daryā sard ast, sārā schenā rā dūst dārad.",
+       "de": "Obwohl das Meerwasser kalt ist, schwimmt Sara gern."
+      },
+      {
+       "fa": "بَهار دَر شیراز فَصلِ گُل‌هاست؛ بَرای هَمین سارا دَر بَهار بِه شیراز سَفَر می‌کُنَد.",
+       "tr": "bahār dar schīrāz fasl-e golhāst; barāye hamīn sārā dar bahār be schīrāz safar mīkonad.",
+       "de": "Der Frühling ist in Schiras die Jahreszeit der Blumen; deshalb reist Sara im Frühling nach Schiras."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "شیراز دَر شِمالِ ایران اَست.",
+       "fest": true,
+       "erkl": "Schiras liegt im <b>Süden</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "دَر کیل اَغلَب باد می‌آیَد.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "سارا زِمِستانِ کیل را دوست دارَد.",
+       "fest": true,
+       "erkl": "Sie mag ihn <b>nicht</b> – er ist zu dunkel."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "آبِ دَریا گَرم اَست.",
+       "fest": true,
+       "erkl": "Das Wasser ist <b>kalt</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "سارا دَر بَهار بِه شیراز می‌رَوَد.",
+       "fest": true
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Warum mag Sara den Kieler Winter nicht?",
+       "optionen": [
+        "Er ist sehr dunkel.",
+        "Es schneit viel.",
+        "Es ist zu warm."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie oft geht sie an den Strand?",
+       "optionen": [
+        "zweimal pro Woche",
+        "jeden Tag",
+        "nie"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wann reist Sara nach Schiras?",
+       "optionen": [
+        "im Frühling",
+        "im Winter",
+        "im Herbst"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie ist der Sommer in Kiel?",
+       "optionen": [
+        "weder sehr warm noch sehr kalt",
+        "sehr heiß",
+        "sehr kalt"
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "شیراز دَر جُنوبِ ایران اَست و هَوایَش اَغلَب گَرم و آفتابی اَست.",
+       "tr": "schīrāz dar dschonūb-e īrān ast o hawāyasch aghlab garm o āftābī ast.",
+       "de": "Schiras liegt im Süden Irans, und das Wetter dort ist oft warm und sonnig."
+      },
+      {
+       "fa": "دَر کیل هَوا اَغلَب اَبری اَست و باد می‌آیَد.",
+       "tr": "dar kīl hawā aghlab abrī ast o bād mīāyad.",
+       "de": "In Kiel ist es oft bewölkt und windig."
+      },
+      {
+       "fa": "سارا زِمِستانِ کیل را دوست نَدارَد، چون خِیلی تاریک اَست.",
+       "tr": "sārā zemestān-e kīl rā dūst nadārad, tschūn cheylī tārīk ast.",
+       "de": "Sara mag den Kieler Winter nicht, weil er sehr dunkel ist."
+      },
+      {
+       "fa": "وَلی تابِستانِ کیل را خِیلی دوست دارَد.",
+       "tr": "walī tābestān-e kīl rā cheylī dūst dārad.",
+       "de": "Aber den Kieler Sommer mag sie sehr."
+      },
+      {
+       "fa": "دَر تابِستان هَوا نَه خِیلی گَرم اَست نَه خِیلی سَرد.",
+       "tr": "dar tābestān hawā na cheylī garm ast na cheylī sard.",
+       "de": "Im Sommer ist es weder sehr warm noch sehr kalt."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t2",
+   "titel": "Text: Die vier Jahreszeiten in Iran",
+   "vorschau": "چَهار فَصلِ ایران",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>آب و هَوا</span> – Klima · <span class='fa'>مُتَفاوِت</span> <i>motafāwet</i> – unterschiedlich · <span class='fa'>دَریایِ خَزَر</span> – Kaspisches Meer · <span class='fa'>مَرطوب</span> – feucht · <span class='fa'>خَلیجِ فارس</span> – Persischer Golf · <span class='fa'>رِسیدَن</span> – erreichen · <span class='fa'>جَزیره</span> – Insel · <span class='fa'>آخَرِ هَفته</span> – Wochenende · <span class='fa'>مَرکَز</span> – Zentrum · <span class='fa'>خُشک</span> – trocken</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Text: Die vier Jahreszeiten in Iran",
+     "text": "Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "ایران کِشوَرِ بُزُرگی اَست و آب و هَوایِ آن خِیلی مُتَفاوِت اَست.",
+       "tr": "īrān keschwar-e bozorgī ast o āb o hawā-ye ān cheylī motafāwet ast.",
+       "de": "Iran ist ein großes Land, und sein Klima ist sehr unterschiedlich."
+      },
+      {
+       "fa": "دَر شِمال، کِنارِ دَریایِ خَزَر، هَوا مَرطوب اَست و زیاد باران می‌بارَد.",
+       "tr": "dar schemāl, kenār-e daryā-ye chazar, hawā martūb ast o ziyād bārān mībārad.",
+       "de": "Im Norden, am Kaspischen Meer, ist die Luft feucht und es regnet viel."
+      },
+      {
+       "fa": "بَرای هَمین شِمالِ ایران خِیلی سَبز اَست و جَنگَل‌هایِ بُزُرگ دارَد.",
+       "tr": "barāye hamīn schemāl-e īrān cheylī sabz ast o dschangalhā-ye bozorg dārad.",
+       "de": "Deshalb ist der Norden Irans sehr grün und hat große Wälder."
+      },
+      {
+       "fa": "دَر جُنوب، کِنارِ خَلیجِ فارس، تابِستان خِیلی داغ اَست.",
+       "tr": "dar dschonūb, kenār-e chalīdsch-e fārs, tābestān cheylī dāgh ast.",
+       "de": "Im Süden, am Persischen Golf, ist der Sommer sehr heiß."
+      },
+      {
+       "fa": "گاهی دَما بِه پَنجاه دَرَجه می‌رِسَد!",
+       "tr": "gāhī damā be pandschāh daradsche mīresad!",
+       "de": "Manchmal steigt die Temperatur auf fünfzig Grad!"
+      },
+      {
+       "fa": "اَمّا زِمِستانِ جُنوب گَرم و خوب اَست، بَرای هَمین خِیلی‌ها دَر زِمِستان بِه جَزیره‌ی کیش سَفَر می‌کُنَند.",
+       "tr": "ammā zemestān-e dschonūb garm o chūb ast, barāye hamīn cheylīhā dar zemestān be dschazīre-ye kīsch safar mīkonand.",
+       "de": "Aber der Winter im Süden ist warm und angenehm, deshalb reisen viele im Winter auf die Insel Kisch."
+      },
+      {
+       "fa": "دَر کوه‌هایِ اَلبُرز، نَزدیکِ تِهران، زِمِستان سَرد اَست و بَرف می‌بارَد.",
+       "tr": "dar kūhhā-ye alborz, nazdīk-e tehrān, zemestān sard ast o barf mībārad.",
+       "de": "Im Elburs-Gebirge bei Teheran ist der Winter kalt, und es schneit."
+      },
+      {
+       "fa": "خِیلی اَز تِهرانی‌ها آخَرِ هَفته بِه کوه می‌رَوَند؛ هَم کوهنَوَردی می‌کُنَند هَم اِسکی.",
+       "tr": "cheylī az tehrānīhā āchar-e hafte be kūh mīrawand; ham kūhnawardī mīkonand ham eskī.",
+       "de": "Viele Teheraner fahren am Wochenende in die Berge; sie wandern und fahren Ski."
+      },
+      {
+       "fa": "دَر مَرکَزِ ایران، مَثَلاً دَر اِصفَهان و یَزد، هَوا خُشک اَست.",
+       "tr": "dar markaz-e īrān, masalan dar esfahān o yazd, hawā choschk ast.",
+       "de": "Im Zentrum Irans, zum Beispiel in Isfahan und Yazd, ist die Luft trocken."
+      },
+      {
+       "fa": "تابِستان روزها گَرم اَست، وَلی شَب‌ها خُنَک اَست.",
+       "tr": "tābestān rūzhā garm ast, walī schabhā chonak ast.",
+       "de": "Im Sommer ist es tagsüber warm, aber nachts kühl."
+      },
+      {
+       "fa": "بیشتَرِ ایرانی‌ها بَهار را دوست دارَند، چون هَوا خوب اَست و نوروز دَر بَهار اَست.",
+       "tr": "bīschtar-e īrānīhā bahār rā dūst dārand, tschūn hawā chūb ast o nourūz dar bahār ast.",
+       "de": "Die meisten Iraner mögen den Frühling, weil das Wetter gut ist und Nouruz im Frühling ist."
+      },
+      {
+       "fa": "پاییز هَم زیباست، با بَرگ‌هایِ زَرد و قِرمِز.",
+       "tr": "pāyīz ham zībāst, bā barghā-ye zard o ghermez.",
+       "de": "Der Herbst ist auch schön, mit gelben und roten Blättern."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "دَر شِمالِ ایران زیاد باران می‌بارَد.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "تابِستانِ جُنوب خُنَک اَست.",
+       "fest": true,
+       "erkl": "Er ist sehr <b>heiß</b> – bis 50 Grad."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "خِیلی‌ها دَر زِمِستان بِه کیش سَفَر می‌کُنَند.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "دَر اِصفَهان هَوا مَرطوب اَست.",
+       "fest": true,
+       "erkl": "Dort ist die Luft <b>trocken</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "بیشتَرِ ایرانی‌ها پاییز را دوست دارَند.",
+       "fest": true,
+       "erkl": "Die meisten mögen den <b>Frühling</b>."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Warum ist der Norden so grün?",
+       "optionen": [
+        "weil es viel regnet",
+        "weil es heiß ist",
+        "weil es Berge gibt"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie heiß kann es im Süden werden?",
+       "optionen": [
+        "bis 50 Grad",
+        "bis 30 Grad",
+        "bis 40 Grad"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was machen viele Teheraner am Wochenende?",
+       "optionen": [
+        "Sie wandern und fahren Ski.",
+        "Sie fahren ans Meer.",
+        "Sie bleiben zu Hause."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie ist es in Isfahan im Sommer nachts?",
+       "optionen": [
+        "kühl",
+        "heiß",
+        "regnerisch"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t3",
+   "titel": "Profi-Text: Eine Nachricht aus Isfahan",
+   "vorschau": "پیام",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>جان</span> <i>dschān</i> – (liebevoll nach Namen: „liebe/r“) · <span class='fa'>میدان</span> – Platz · <span class='fa'>قربانت</span> – (herzlicher Briefschluss)</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Profi-Text: Eine Nachricht aus Isfahan",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "سلام مریم جان! حالت چطور است؟",
+       "tr": "salām maryam dschān! hālat tschetor ast?",
+       "de": "Hallo liebe Maryam! Wie geht es dir?"
+      },
+      {
+       "fa": "من الان در اصفهان هستم و هوا خیلی خوب است.",
+       "tr": "man alān dar esfahān hastam o hawā cheylī chūb ast.",
+       "de": "Ich bin gerade in Isfahan, und das Wetter ist sehr gut."
+      },
+      {
+       "fa": "روزها آفتابی است، ولی شب‌ها کمی سرد است، برای همین ژاکت می‌پوشم.",
+       "tr": "rūzhā āftābī ast, walī schabhā kamī sard ast, barāye hamīn zhākat mīpūscham.",
+       "de": "Tagsüber ist es sonnig, aber nachts etwas kalt, deshalb ziehe ich eine Jacke an."
+      },
+      {
+       "fa": "صبح‌ها اول به میدان نقش جهان می‌روم، بعد در بازار چای می‌نوشم.",
+       "tr": "sobhhā awwal be meydān-e naghsch-e dschahān mīrawam, baʿd dar bāzār tschāy mīnūscham.",
+       "de": "Morgens gehe ich zuerst zum Naghsch-e-Dschahan-Platz, dann trinke ich im Basar Tee."
+      },
+      {
+       "fa": "با اینکه اینجا خیلی شلوغ است، شهر را خیلی دوست دارم.",
+       "tr": "bā īnke īndschā cheylī schologh ast, schahr rā cheylī dūst dāram.",
+       "de": "Obwohl es hier sehr voll ist, mag ich die Stadt sehr."
+      },
+      {
+       "fa": "فردا یا به کاشان می‌روم یا به یزد.",
+       "tr": "fardā yā be kāschān mīrawam yā be yazd.",
+       "de": "Morgen fahre ich entweder nach Kaschan oder nach Yazd."
+      },
+      {
+       "fa": "هوای کیل چطور است؟ هنوز باران می‌بارد؟",
+       "tr": "hawā-ye kīl tschetor ast? hanūz bārān mībārad?",
+       "de": "Wie ist das Wetter in Kiel? Regnet es immer noch?"
+      },
+      {
+       "fa": "قربانت، تارا",
+       "tr": "ghorbānat, tārā",
+       "de": "Alles Liebe, Tara"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "هوای اصفهان بد است.",
+       "fest": true,
+       "erkl": "Das Wetter ist <b>sehr gut</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "شب‌ها کمی سرد است.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "تارا شهر را دوست ندارد.",
+       "fest": true,
+       "erkl": "Sie mag die Stadt <b>sehr</b>, obwohl es voll ist."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "فردا تارا به شیراز می‌رود.",
+       "fest": true,
+       "erkl": "Entweder nach <b>Kaschan</b> oder nach <b>Yazd</b>."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Wo trinkt Tara morgens Tee?",
+       "optionen": [
+        "im Basar",
+        "zu Hause",
+        "im Hotel"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Warum zieht sie eine Jacke an?",
+       "optionen": [
+        "weil es nachts kalt ist",
+        "weil es regnet",
+        "weil es windig ist"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was fragt Tara am Ende?",
+       "optionen": [
+        "wie das Wetter in Kiel ist",
+        "wann Maryam kommt",
+        "was Maryam isst"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d1",
+   "titel": "Dialog: Kommst du mit in die Berge?",
+   "vorschau": "به کوه می‌آیی؟",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Arasch lädt Nima zum Wandern ein.</p><p><span class='fa'>نِمی‌دانَم</span> – ich weiß nicht · <span class='fa'>باشه</span> <i>bāsche</i> – okay · <span class='fa'>بیاوَر</span> – bring mit!</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "آرَش: نیما، جُمعه با ما بِه کوه می‌آیی؟",
+       "tr": "nīmā, dschomʿe bā mā be kūh mīāyī?",
+       "de": "Nima, kommst du am Freitag mit uns in die Berge?"
+      },
+      {
+       "fa": "نیما: نِمی‌دانَم. هَوا چِطور اَست؟",
+       "tr": "nemīdānam. hawā tschetor ast?",
+       "de": "Ich weiß nicht. Wie ist das Wetter?"
+      },
+      {
+       "fa": "آرَش: صُبح آفتابی اَست، وَلی بَعدازظُهر باران می‌بارَد.",
+       "tr": "sobh āftābī ast, walī baʿdazzohr bārān mībārad.",
+       "de": "Morgens ist es sonnig, aber nachmittags regnet es."
+      },
+      {
+       "fa": "نیما: پَس زود می‌رَویم؟",
+       "tr": "pas zūd mīrawīm?",
+       "de": "Also gehen wir früh?"
+      },
+      {
+       "fa": "آرَش: بَله، ساعَتِ شِشِ صُبح. چون ظُهر بِه خانِه بَرمی‌گَردیم.",
+       "tr": "bale, sāʿat-e schesch-e sobh. tschūn zohr be chāne barmīgardīm.",
+       "de": "Ja, um sechs Uhr morgens. Weil wir mittags nach Hause zurückkommen."
+      },
+      {
+       "fa": "نیما: ساعَتِ شِش؟ خِیلی زود اَست! اَمّا باشه، می‌آیَم.",
+       "tr": "sāʿat-e schesch? cheylī zūd ast! ammā bāsche, mīāyam.",
+       "de": "Um sechs? Das ist sehr früh! Aber okay, ich komme."
+      },
+      {
+       "fa": "آرَش: عالی! هَم ژاکَت بیاوَر هَم چَتر.",
+       "tr": "ʿālī! ham zhākat biyāwar ham tschatr.",
+       "de": "Super! Bring sowohl eine Jacke als auch einen Schirm mit."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "آرَش: نیما، جُمعه با ما بِه کوه می‌آیی؟",
+       "tr": "nīmā, dschomʿe bā mā be kūh mīāyī?",
+       "de": "Nima, kommst du am Freitag mit uns in die Berge?"
+      },
+      {
+       "fa": "نیما: نِمی‌دانَم. هَوا چِطور اَست؟",
+       "tr": "nemīdānam. hawā tschetor ast?",
+       "de": "Ich weiß nicht. Wie ist das Wetter?"
+      },
+      {
+       "fa": "آرَش: صُبح آفتابی اَست، وَلی بَعدازظُهر باران می‌بارَد.",
+       "tr": "sobh āftābī ast, walī baʿdazzohr bārān mībārad.",
+       "de": "Morgens ist es sonnig, aber nachmittags regnet es."
+      },
+      {
+       "fa": "نیما: پَس زود می‌رَویم؟",
+       "tr": "pas zūd mīrawīm?",
+       "de": "Also gehen wir früh?"
+      },
+      {
+       "fa": "آرَش: بَله، ساعَتِ شِشِ صُبح. چون ظُهر بِه خانِه بَرمی‌گَردیم.",
+       "tr": "bale, sāʿat-e schesch-e sobh. tschūn zohr be chāne barmīgardīm.",
+       "de": "Ja, um sechs Uhr morgens. Weil wir mittags nach Hause zurückkommen."
+      },
+      {
+       "fa": "نیما: ساعَتِ شِش؟ خِیلی زود اَست! اَمّا باشه، می‌آیَم.",
+       "tr": "sāʿat-e schesch? cheylī zūd ast! ammā bāsche, mīāyam.",
+       "de": "Um sechs? Das ist sehr früh! Aber okay, ich komme."
+      },
+      {
+       "fa": "آرَش: عالی! هَم ژاکَت بیاوَر هَم چَتر.",
+       "tr": "ʿālī! ham zhākat biyāwar ham tschatr.",
+       "de": "Super! Bring sowohl eine Jacke als auch einen Schirm mit."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Wann wollen sie in die Berge?",
+       "optionen": [
+        "am Freitag",
+        "am Samstag",
+        "am Sonntag"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Warum gehen sie so früh?",
+       "optionen": [
+        "weil es nachmittags regnet",
+        "weil es heiß wird",
+        "weil Nima arbeitet"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was soll Nima mitbringen?",
+       "optionen": [
+        "eine Jacke und einen Schirm",
+        "Essen",
+        "eine Sonnenbrille"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d2",
+   "titel": "Dialog: Was machen wir am Wochenende?",
+   "vorschau": "آخَرِ هَفته چه کار کُنیم؟",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Lina und Tara planen ihr Wochenende.</p>"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "لینا: آخَرِ هَفته هَوا چِطور اَست؟",
+       "tr": "āchar-e hafte hawā tschetor ast?",
+       "de": "Wie ist das Wetter am Wochenende?"
+      },
+      {
+       "fa": "تارا: شَنبه سَرد و بارانی اَست، وَلی یِکشَنبه آفتابی اَست.",
+       "tr": "schanbe sard o bārānī ast, walī yekschanbe āftābī ast.",
+       "de": "Samstag ist es kalt und regnerisch, aber Sonntag ist es sonnig."
+      },
+      {
+       "fa": "لینا: پَس شَنبه بِه سینَما می‌رَویم؟",
+       "tr": "pas schanbe be sīnamā mīrawīm?",
+       "de": "Gehen wir dann am Samstag ins Kino?"
+      },
+      {
+       "fa": "تارا: خوب اَست. و یِکشَنبه یا بِه ساحِل می‌رَویم یا بِه پارک.",
+       "tr": "chūb ast. o yekschanbe yā be sāhel mīrawīm yā be pārk.",
+       "de": "Gut. Und am Sonntag gehen wir entweder an den Strand oder in den Park."
+      },
+      {
+       "fa": "لینا: بِه ساحِل! با اینکه آب سَرد اَست، ساحِل را دوست دارَم.",
+       "tr": "be sāhel! bā īnke āb sard ast, sāhel rā dūst dāram.",
+       "de": "An den Strand! Obwohl das Wasser kalt ist, mag ich den Strand."
+      },
+      {
+       "fa": "تارا: باشه. مَن هَم غَذا می‌آوَرَم هَم چای.",
+       "tr": "bāsche. man ham ghazā mīāwaram ham tschāy.",
+       "de": "Okay. Ich bringe sowohl Essen als auch Tee mit."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "لینا: آخَرِ هَفته هَوا چِطور اَست؟",
+       "tr": "āchar-e hafte hawā tschetor ast?",
+       "de": "Wie ist das Wetter am Wochenende?"
+      },
+      {
+       "fa": "تارا: شَنبه سَرد و بارانی اَست، وَلی یِکشَنبه آفتابی اَست.",
+       "tr": "schanbe sard o bārānī ast, walī yekschanbe āftābī ast.",
+       "de": "Samstag ist es kalt und regnerisch, aber Sonntag ist es sonnig."
+      },
+      {
+       "fa": "لینا: پَس شَنبه بِه سینَما می‌رَویم؟",
+       "tr": "pas schanbe be sīnamā mīrawīm?",
+       "de": "Gehen wir dann am Samstag ins Kino?"
+      },
+      {
+       "fa": "تارا: خوب اَست. و یِکشَنبه یا بِه ساحِل می‌رَویم یا بِه پارک.",
+       "tr": "chūb ast. o yekschanbe yā be sāhel mīrawīm yā be pārk.",
+       "de": "Gut. Und am Sonntag gehen wir entweder an den Strand oder in den Park."
+      },
+      {
+       "fa": "لینا: بِه ساحِل! با اینکه آب سَرد اَست، ساحِل را دوست دارَم.",
+       "tr": "be sāhel! bā īnke āb sard ast, sāhel rā dūst dāram.",
+       "de": "An den Strand! Obwohl das Wasser kalt ist, mag ich den Strand."
+      },
+      {
+       "fa": "تارا: باشه. مَن هَم غَذا می‌آوَرَم هَم چای.",
+       "tr": "bāsche. man ham ghazā mīāwaram ham tschāy.",
+       "de": "Okay. Ich bringe sowohl Essen als auch Tee mit."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Wie ist das Wetter am Samstag?",
+       "optionen": [
+        "kalt und regnerisch",
+        "sonnig",
+        "warm"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was machen sie am Samstag?",
+       "optionen": [
+        "ins Kino gehen",
+        "an den Strand gehen",
+        "wandern"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was bringt Tara mit?",
+       "optionen": [
+        "Essen und Tee",
+        "einen Schirm",
+        "nichts"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

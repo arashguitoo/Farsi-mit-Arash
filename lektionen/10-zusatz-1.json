@@ -1,0 +1,1453 @@
+{
+ "id": "z1",
+ "titel": "Trainingspaket 1",
+ "beschreibung": "Verbinder auf Zeit, Grund & Folge, Wetter, Monate, Ordnungszahlen, Satzbau, Wortschatz.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "Verbinder-Blitz",
+   "vorschau": "وَلی چون",
+   "karten": [
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Verbinder",
+     "modus": "de",
+     "sekunden": 50,
+     "ziel": 12,
+     "woerter": [
+      {
+       "fa": "و",
+       "a": "und"
+      },
+      {
+       "fa": "یا",
+       "a": "oder"
+      },
+      {
+       "fa": "وَلی",
+       "a": "aber"
+      },
+      {
+       "fa": "اَمّا",
+       "a": "aber (gehobener)"
+      },
+      {
+       "fa": "چون",
+       "a": "weil, da"
+      },
+      {
+       "fa": "زیرا",
+       "a": "denn, weil (schriftlich)"
+      },
+      {
+       "fa": "بَرای هَمین",
+       "a": "deshalb"
+      },
+      {
+       "fa": "پَس",
+       "a": "also, dann"
+      },
+      {
+       "fa": "هَم … هَم",
+       "a": "sowohl … als auch"
+      },
+      {
+       "fa": "نَه … نَه",
+       "a": "weder … noch"
+      },
+      {
+       "fa": "یا … یا",
+       "a": "entweder … oder"
+      },
+      {
+       "fa": "با اینکه",
+       "a": "obwohl"
+      },
+      {
+       "fa": "اَوَّل",
+       "a": "zuerst"
+      },
+      {
+       "fa": "بَعد",
+       "a": "dann, danach"
+      },
+      {
+       "fa": "سِپَس",
+       "a": "danach (schriftlich)"
+      },
+      {
+       "fa": "دَر آخَر",
+       "a": "am Ende, zum Schluss"
+      }
+     ]
+    },
+    {
+     "typ": "memory",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "چون",
+       "tr": "tschūn",
+       "de": "weil, da",
+       "emoji": "💡"
+      },
+      {
+       "fa": "نَه … نَه",
+       "tr": "na … na",
+       "de": "weder … noch",
+       "emoji": "❌❌"
+      },
+      {
+       "fa": "بَرای هَمین",
+       "tr": "barāye hamīn",
+       "de": "deshalb",
+       "emoji": "➡️"
+      },
+      {
+       "fa": "پَس",
+       "tr": "pas",
+       "de": "also, dann",
+       "emoji": "⏩"
+      },
+      {
+       "fa": "با اینکه",
+       "tr": "bā īnke",
+       "de": "obwohl",
+       "emoji": "🤨"
+      },
+      {
+       "fa": "اَمّا",
+       "tr": "ammā",
+       "de": "aber (gehobener)",
+       "emoji": "↪️"
+      }
+     ],
+     "titel": "Memory: Verbinder"
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Sätze mit Verbindern",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 75,
+     "ziel": 8,
+     "woerter": [
+      {
+       "fa": "هَوا آفتابی اَست وَلی سَرد اَست.",
+       "a": "Es ist sonnig, aber kalt."
+      },
+      {
+       "fa": "چای می‌نوشی یا قَهوِه؟",
+       "a": "Trinkst du Tee oder Kaffee?"
+      },
+      {
+       "fa": "مَن کِتاب می‌خوانَم و او موسیقی گوش می‌دَهَد.",
+       "a": "Ich lese ein Buch, und er/sie hört Musik."
+      },
+      {
+       "fa": "دَر کیل اَغلَب باران می‌بارَد، اَمّا مَردُم شاد هَستَند.",
+       "a": "In Kiel regnet es oft, aber die Leute sind fröhlich."
+      },
+      {
+       "fa": "اِمروز دَر خانِه می‌مانَم، چون باران می‌بارَد.",
+       "a": "Heute bleibe ich zu Hause, weil es regnet."
+      },
+      {
+       "fa": "چون هَوا سَرد اَست، ژاکَت می‌پوشَم.",
+       "a": "Weil es kalt ist, ziehe ich eine Jacke an."
+      },
+      {
+       "fa": "ما تابِستان را دوست داریم، چون بِه دَریا می‌رَویم.",
+       "a": "Wir mögen den Sommer, weil wir ans Meer fahren."
+      },
+      {
+       "fa": "او قَهوِه نِمی‌نوشَد، زیرا شَب خوب نِمی‌خوابَد.",
+       "a": "Er/Sie trinkt keinen Kaffee, denn er/sie schläft nachts sonst nicht gut."
+      },
+      {
+       "fa": "باران می‌بارَد، بَرای هَمین چَتر می‌بَرَم.",
+       "a": "Es regnet, deshalb nehme ich einen Schirm mit."
+      },
+      {
+       "fa": "فَردا اِمتِحان دارَم، بَرای هَمین اِمشَب دَرس می‌خوانَم.",
+       "a": "Morgen habe ich eine Prüfung, deshalb lerne ich heute Abend."
+      },
+      {
+       "fa": "هَوا خِیلی گَرم اَست، پَس بِه ساحِل می‌رَویم!",
+       "a": "Es ist sehr warm, also gehen wir an den Strand!"
+      },
+      {
+       "fa": "خَستِه‌ای؟ پَس زود بِخواب!",
+       "a": "Bist du müde? Dann schlaf früh!"
+      },
+      {
+       "fa": "مَن هَم چای می‌نوشَم هَم قَهوِه.",
+       "a": "Ich trinke sowohl Tee als auch Kaffee."
+      },
+      {
+       "fa": "او هَم فارسی صُحبَت می‌کُنَد هَم آلمانی.",
+       "a": "Er/Sie spricht sowohl Persisch als auch Deutsch."
+      },
+      {
+       "fa": "مَن نَه گوشَت می‌خورَم نَه ماهی.",
+       "a": "Ich esse weder Fleisch noch Fisch."
+      },
+      {
+       "fa": "یا بِه سینَما می‌رَویم یا بِه پارک.",
+       "a": "Entweder gehen wir ins Kino oder in den Park."
+      },
+      {
+       "fa": "با اینکه هَوا سَرد اَست، او شِنا می‌کُنَد.",
+       "a": "Obwohl es kalt ist, schwimmt er/sie."
+      },
+      {
+       "fa": "با اینکه خَستِه‌اَم، بِه باشگاه می‌رَوَم.",
+       "a": "Obwohl ich müde bin, gehe ich ins Fitnessstudio."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Grund & Folge",
+   "vorschau": "چون / بَرای هَمین",
+   "karten": [
+    {
+     "typ": "paare",
+     "links": "x",
+     "paare": [
+      {
+       "fa": "هَوا گَرم اَست، …",
+       "tr": "",
+       "de": "",
+       "x": "… بَرای هَمین بِه دَریا می‌رَویم."
+      },
+      {
+       "fa": "خَستِه‌اَم، …",
+       "tr": "",
+       "de": "",
+       "x": "… بَرای هَمین زود می‌خوابَم."
+      },
+      {
+       "fa": "ژاکَت می‌پوشَم …",
+       "tr": "",
+       "de": "",
+       "x": "… چون سَرد اَست."
+      },
+      {
+       "fa": "دَرس می‌خوانَم …",
+       "tr": "",
+       "de": "",
+       "x": "… چون فَردا اِمتِحان دارَم."
+      }
+     ],
+     "titel": "Was gehört zusammen?"
+    },
+    {
+     "typ": "wahl",
+     "titel": "Was passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>هَوا بارانی اَست، ___ دَر خانِه می‌مانیم.</span><br><span class='mini'>Es ist regnerisch, deshalb bleiben wir zu Hause.</span>",
+       "optionen": [
+        "بَرای هَمین",
+        "چون",
+        "با اینکه"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>هَوا بارانی اَست، بَرای هَمین دَر خانِه می‌مانیم.</span>"
+      },
+      {
+       "frage": "<span class='fa'>___ بَرف می‌بارَد، او با دوچَرخِه می‌رَوَد.</span><br><span class='mini'>Obwohl es schneit, fährt er/sie Fahrrad.</span>",
+       "optionen": [
+        "با اینکه",
+        "بَرای هَمین",
+        "پَس"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>با اینکه بَرف می‌بارَد، او با دوچَرخِه می‌رَوَد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>مَن بِه پارک نِمی‌رَوَم، ___ هَوا سَرد اَست.</span><br><span class='mini'>Ich gehe nicht in den Park, weil es kalt ist.</span>",
+       "optionen": [
+        "چون",
+        "پَس",
+        "بَرای هَمین"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>مَن بِه پارک نِمی‌رَوَم، چون هَوا سَرد اَست.</span>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "titel": "Wetter & Jahreszeiten",
+   "vorschau": "☀️🌧️",
+   "karten": [
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "آفتابی",
+       "tr": "āftābī",
+       "de": "sonnig",
+       "emoji": "☀️"
+      },
+      {
+       "fa": "خُنَک",
+       "tr": "chonak",
+       "de": "kühl",
+       "emoji": "🍃"
+      },
+      {
+       "fa": "سَرد",
+       "tr": "sard",
+       "de": "kalt",
+       "emoji": "🥶"
+      },
+      {
+       "fa": "اَبری",
+       "tr": "abrī",
+       "de": "bewölkt",
+       "emoji": "☁️"
+      },
+      {
+       "fa": "بارانی",
+       "tr": "bārānī",
+       "de": "regnerisch",
+       "emoji": "🌧️"
+      },
+      {
+       "fa": "داغ",
+       "tr": "dāgh",
+       "de": "heiß",
+       "emoji": "🥵"
+      }
+     ],
+     "titel": "Memory: Wetter"
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Wetter-Sätze",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 60,
+     "ziel": 8,
+     "woerter": [
+      {
+       "fa": "هَوا چِطور اَست؟",
+       "a": "Wie ist das Wetter?"
+      },
+      {
+       "fa": "هَوا آفتابی و گَرم اَست.",
+       "a": "Es ist sonnig und warm."
+      },
+      {
+       "fa": "باران می‌بارَد.",
+       "a": "Es regnet."
+      },
+      {
+       "fa": "بَرف می‌بارَد.",
+       "a": "Es schneit."
+      },
+      {
+       "fa": "باد می‌آیَد.",
+       "a": "Es ist windig. (Wind kommt)"
+      },
+      {
+       "fa": "دَما بیست دَرَجه اَست.",
+       "a": "Es sind zwanzig Grad."
+      },
+      {
+       "fa": "هَوا اَبری اَست.",
+       "a": "Es ist bewölkt."
+      },
+      {
+       "fa": "فَردا هَوا خُنَک اَست.",
+       "a": "Morgen ist es kühl."
+      },
+      {
+       "fa": "دَر بَهار هَوا خُنَک و زیباست.",
+       "a": "Im Frühling ist es kühl und schön."
+      },
+      {
+       "fa": "دَر تابِستان هَوا داغ اَست، بَرای هَمین بِه دَریا می‌رَویم.",
+       "a": "Im Sommer ist es heiß, deshalb fahren wir ans Meer."
+      },
+      {
+       "fa": "پاییز فَصلِ باران و بَرگ‌هایِ زَرد اَست.",
+       "a": "Der Herbst ist die Jahreszeit des Regens und der gelben Blätter."
+      },
+      {
+       "fa": "دَر زِمِستان دَر کوه‌ها بَرف می‌بارَد.",
+       "a": "Im Winter schneit es in den Bergen."
+      },
+      {
+       "fa": "کُدام فَصل را بیشتَر دوست داری؟",
+       "a": "Welche Jahreszeit magst du am meisten?"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d",
+   "titel": "Monate & Datum",
+   "vorschau": "فَروَردین …",
+   "karten": [
+    {
+     "typ": "ordnen",
+     "titel": "Alle zwölf Monate (1–6)",
+     "frage": "Der Reihe nach!",
+     "items": [
+      {
+       "fa": "فَروَردین",
+       "tr": "farwardīn",
+       "de": "1. Monat (21.3.–20.4.)",
+       "emoji": "🌸"
+      },
+      {
+       "fa": "اُردیبِهِشت",
+       "tr": "ordībehescht",
+       "de": "2. Monat (21.4.–21.5.)",
+       "emoji": "🌷"
+      },
+      {
+       "fa": "خُرداد",
+       "tr": "chordād",
+       "de": "3. Monat (22.5.–21.6.)",
+       "emoji": "🌿"
+      },
+      {
+       "fa": "تیر",
+       "tr": "tīr",
+       "de": "4. Monat (22.6.–22.7.)",
+       "emoji": "☀️"
+      },
+      {
+       "fa": "مُرداد",
+       "tr": "mordād",
+       "de": "5. Monat (23.7.–22.8.)",
+       "emoji": "🌞"
+      },
+      {
+       "fa": "شَهریوَر",
+       "tr": "schahrīwar",
+       "de": "6. Monat (23.8.–22.9.)",
+       "emoji": "🍉"
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Alle zwölf Monate (7–12)",
+     "frage": "Der Reihe nach!",
+     "items": [
+      {
+       "fa": "مِهر",
+       "tr": "mehr",
+       "de": "7. Monat (23.9.–22.10.)",
+       "emoji": "🍂"
+      },
+      {
+       "fa": "آبان",
+       "tr": "ābān",
+       "de": "8. Monat (23.10.–21.11.)",
+       "emoji": "🍁"
+      },
+      {
+       "fa": "آذَر",
+       "tr": "āzar",
+       "de": "9. Monat (22.11.–21.12.)",
+       "emoji": "🌧️"
+      },
+      {
+       "fa": "دِی",
+       "tr": "dey",
+       "de": "10. Monat (22.12.–20.1.)",
+       "emoji": "❄️"
+      },
+      {
+       "fa": "بَهمَن",
+       "tr": "bahman",
+       "de": "11. Monat (21.1.–19.2.)",
+       "emoji": "⛄"
+      },
+      {
+       "fa": "اِسفَند",
+       "tr": "esfand",
+       "de": "12. Monat (20.2.–20.3.)",
+       "emoji": "🌱"
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Monat → Jahreszeit",
+     "aufgabe": "In welcher Jahreszeit?",
+     "modus": "de",
+     "sekunden": 60,
+     "ziel": 10,
+     "optFa": true,
+     "woerter": [
+      {
+       "fa": "فَروَردین",
+       "a": "بَهار"
+      },
+      {
+       "fa": "اُردیبِهِشت",
+       "a": "بَهار"
+      },
+      {
+       "fa": "خُرداد",
+       "a": "بَهار"
+      },
+      {
+       "fa": "تیر",
+       "a": "تابِستان"
+      },
+      {
+       "fa": "مُرداد",
+       "a": "تابِستان"
+      },
+      {
+       "fa": "شَهریوَر",
+       "a": "تابِستان"
+      },
+      {
+       "fa": "مِهر",
+       "a": "پاییز"
+      },
+      {
+       "fa": "آبان",
+       "a": "پاییز"
+      },
+      {
+       "fa": "آذَر",
+       "a": "پاییز"
+      },
+      {
+       "fa": "دِی",
+       "a": "زِمِستان"
+      },
+      {
+       "fa": "بَهمَن",
+       "a": "زِمِستان"
+      },
+      {
+       "fa": "اِسفَند",
+       "a": "زِمِستان"
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Ordnungszahlen",
+     "modus": "de",
+     "sekunden": 40,
+     "ziel": 8,
+     "woerter": [
+      {
+       "fa": "اَوَّل",
+       "a": "erste/r"
+      },
+      {
+       "fa": "دُوُّم",
+       "a": "zweite/r"
+      },
+      {
+       "fa": "سِوُّم",
+       "a": "dritte/r"
+      },
+      {
+       "fa": "چَهارُم",
+       "a": "vierte/r"
+      },
+      {
+       "fa": "پَنجُم",
+       "a": "fünfte/r"
+      },
+      {
+       "fa": "دَهُم",
+       "a": "zehnte/r"
+      },
+      {
+       "fa": "بیستُم",
+       "a": "zwanzigste/r"
+      },
+      {
+       "fa": "سی و یِکُم",
+       "a": "einunddreißigste/r"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "e",
+   "titel": "Satzbau-Werkstatt",
+   "vorschau": "… چون …",
+   "karten": [
+    {
+     "typ": "bauen",
+     "titel": "Satzbau: lange Sätze",
+     "trenner": " ",
+     "woerter": [
+      {
+       "fa": "باران می‌بارَد، بَرای هَمین چَتر می‌بَرَم.",
+       "tr": "bārān mībārad, barāye hamīn tschatr mībaram.",
+       "de": "Es regnet, deshalb nehme ich einen Schirm mit.",
+       "emoji": "☂️",
+       "teile": [
+        "باران",
+        "می‌بارَد",
+        "بَرای",
+        "هَمین",
+        "چَتر",
+        "می‌بَرَم"
+       ],
+       "extra": [
+        "چون"
+       ]
+      },
+      {
+       "fa": "با اینکه خَستِه‌اَم، بِه باشگاه می‌رَوَم.",
+       "tr": "bā īnke chasteam, be bāschgāh mīrawam.",
+       "de": "Obwohl ich müde bin, gehe ich ins Fitnessstudio.",
+       "emoji": "🏋️",
+       "teile": [
+        "با",
+        "اینکه",
+        "خَستِه‌اَم",
+        "بِه",
+        "باشگاه",
+        "می‌رَوَم"
+       ],
+       "extra": [
+        "وَلی"
+       ]
+      },
+      {
+       "fa": "فَردا اِمتِحان دارَم، بَرای هَمین اِمشَب دَرس می‌خوانَم.",
+       "tr": "fardā emtehān dāram, barāye hamīn emschab dars mīchānam.",
+       "de": "Morgen habe ich eine Prüfung, deshalb lerne ich heute Abend.",
+       "emoji": "📚",
+       "teile": [
+        "فَردا",
+        "اِمتِحان",
+        "دارَم",
+        "بَرای",
+        "هَمین",
+        "اِمشَب",
+        "دَرس",
+        "می‌خوانَم"
+       ],
+       "extra": [
+        "هَم"
+       ]
+      },
+      {
+       "fa": "چون هَوا سَرد اَست، ژاکَت می‌پوشَم.",
+       "tr": "tschūn hawā sard ast, zhākat mīpūscham.",
+       "de": "Weil es kalt ist, ziehe ich eine Jacke an.",
+       "emoji": "🧥",
+       "teile": [
+        "چون",
+        "هَوا",
+        "سَرد",
+        "اَست",
+        "ژاکَت",
+        "می‌پوشَم"
+       ],
+       "extra": [
+        "پَس"
+       ]
+      },
+      {
+       "fa": "مَن هَم چای می‌نوشَم هَم قَهوِه.",
+       "tr": "man ham tschāy mīnūscham ham ghahwe.",
+       "de": "Ich trinke sowohl Tee als auch Kaffee.",
+       "emoji": "✅",
+       "teile": [
+        "مَن",
+        "هَم",
+        "چای",
+        "می‌نوشَم",
+        "هَم",
+        "قَهوِه"
+       ],
+       "extra": [
+        "پَس"
+       ]
+      },
+      {
+       "fa": "با اینکه هَوا سَرد اَست، او شِنا می‌کُنَد.",
+       "tr": "bā īnke hawā sard ast, ū schenā mīkonad.",
+       "de": "Obwohl es kalt ist, schwimmt er/sie.",
+       "emoji": "🏊",
+       "teile": [
+        "با",
+        "اینکه",
+        "هَوا",
+        "سَرد",
+        "اَست",
+        "او",
+        "شِنا",
+        "می‌کُنَد"
+       ],
+       "extra": [
+        "هَم"
+       ]
+      },
+      {
+       "fa": "اَوَّل صُبحانِه می‌خورَم.",
+       "tr": "awwal sobhāne mīchoram.",
+       "de": "Zuerst frühstücke ich.",
+       "emoji": "1️⃣",
+       "teile": [
+        "اَوَّل",
+        "صُبحانِه",
+        "می‌خورَم"
+       ],
+       "extra": [
+        "هَم"
+       ]
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welcher Satz ist das?",
+     "fragen": [
+      {
+       "frage": "„Bist du müde? Dann schlaf früh!“",
+       "optionen": [
+        "خَستِه‌ای؟ پَس زود بِخواب!",
+        "هَوا آفتابی اَست وَلی سَرد اَست.",
+        "هَوا خِیلی گَرم اَست، پَس بِه ساحِل می‌رَویم!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„In Kiel regnet es oft, aber die Leute sind fröhlich.“",
+       "optionen": [
+        "دَر کیل اَغلَب باران می‌بارَد، اَمّا مَردُم شاد هَستَند.",
+        "هَوا آفتابی اَست وَلی سَرد اَست.",
+        "خَستِه‌ای؟ پَس زود بِخواب!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Es regnet, deshalb nehme ich einen Schirm mit.“",
+       "optionen": [
+        "باران می‌بارَد، بَرای هَمین چَتر می‌بَرَم.",
+        "هَوا آفتابی اَست وَلی سَرد اَست.",
+        "ما تابِستان را دوست داریم، چون بِه دَریا می‌رَویم."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Er/Sie spricht sowohl Persisch als auch Deutsch.“",
+       "optionen": [
+        "او هَم فارسی صُحبَت می‌کُنَد هَم آلمانی.",
+        "چای می‌نوشی یا قَهوِه؟",
+        "با اینکه خَستِه‌اَم، بِه باشگاه می‌رَوَم."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Ich lese ein Buch, und er/sie hört Musik.“",
+       "optionen": [
+        "مَن کِتاب می‌خوانَم و او موسیقی گوش می‌دَهَد.",
+        "چون هَوا سَرد اَست، ژاکَت می‌پوشَم.",
+        "او قَهوِه نِمی‌نوشَد، زیرا شَب خوب نِمی‌خوابَد."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Obwohl ich müde bin, gehe ich ins Fitnessstudio.“",
+       "optionen": [
+        "با اینکه خَستِه‌اَم، بِه باشگاه می‌رَوَم.",
+        "هَوا خِیلی گَرم اَست، پَس بِه ساحِل می‌رَویم!",
+        "خَستِه‌ای؟ پَس زود بِخواب!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "f",
+   "titel": "Wortschatz: Wetter & Jahreszeiten",
+   "vorschau": "هَوا آفتابی",
+   "karten": [
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "داغ",
+       "tr": "dāgh",
+       "de": "heiß",
+       "emoji": "🥵"
+      },
+      {
+       "fa": "خُنَک",
+       "tr": "chonak",
+       "de": "kühl",
+       "emoji": "🍃"
+      },
+      {
+       "fa": "باران",
+       "tr": "bārān",
+       "de": "Regen",
+       "emoji": "☔"
+      },
+      {
+       "fa": "بَهار",
+       "tr": "bahār",
+       "de": "Frühling",
+       "emoji": "🌸"
+      },
+      {
+       "fa": "گَرم",
+       "tr": "garm",
+       "de": "warm",
+       "emoji": "🔥"
+      },
+      {
+       "fa": "زِمِستان",
+       "tr": "zemestān",
+       "de": "Winter",
+       "emoji": "⛄"
+      }
+     ],
+     "titel": "Memory: Bild & Wort"
+    },
+    {
+     "typ": "memory",
+     "links": "tr",
+     "paare": [
+      {
+       "fa": "خُنَک",
+       "tr": "chonak",
+       "de": "kühl",
+       "emoji": "🍃"
+      },
+      {
+       "fa": "بَهار",
+       "tr": "bahār",
+       "de": "Frühling",
+       "emoji": "🌸"
+      },
+      {
+       "fa": "مِه",
+       "tr": "meh",
+       "de": "Nebel",
+       "emoji": "🌫️"
+      },
+      {
+       "fa": "پاییز",
+       "tr": "pāyīz",
+       "de": "Herbst",
+       "emoji": "🍂"
+      },
+      {
+       "fa": "تابِستان",
+       "tr": "tābestān",
+       "de": "Sommer",
+       "emoji": "🏖️"
+      },
+      {
+       "fa": "زِمِستان",
+       "tr": "zemestān",
+       "de": "Winter",
+       "emoji": "⛄"
+      }
+     ],
+     "titel": "Memory: Schrift & Aussprache"
+    },
+    {
+     "typ": "bauen",
+     "titel": "Schreib das Wort ab",
+     "zeigen": true,
+     "woerter": [
+      {
+       "fa": "پاییز",
+       "tr": "pāyīz",
+       "de": "Herbst",
+       "emoji": "🍂",
+       "teile": [
+        "پ",
+        "ا",
+        "ی",
+        "ی",
+        "ز"
+       ],
+       "extra": [
+        "ز"
+       ]
+      },
+      {
+       "fa": "گَرم",
+       "tr": "garm",
+       "de": "warm",
+       "emoji": "🔥",
+       "teile": [
+        "گ",
+        "ر",
+        "م"
+       ],
+       "extra": [
+        "س"
+       ]
+      },
+      {
+       "fa": "باد",
+       "tr": "bād",
+       "de": "Wind",
+       "emoji": "💨",
+       "teile": [
+        "ب",
+        "ا",
+        "د"
+       ],
+       "extra": [
+        "ش"
+       ]
+      },
+      {
+       "fa": "دَما",
+       "tr": "damā",
+       "de": "Temperatur",
+       "emoji": "🌡️",
+       "teile": [
+        "د",
+        "م",
+        "ا"
+       ],
+       "extra": [
+        "ب"
+       ]
+      },
+      {
+       "fa": "داغ",
+       "tr": "dāgh",
+       "de": "heiß",
+       "emoji": "🥵",
+       "teile": [
+        "د",
+        "ا",
+        "غ"
+       ],
+       "extra": [
+        "ز"
+       ]
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitzlesen: Bedeutung",
+     "modus": "de",
+     "sekunden": 60,
+     "ziel": 12,
+     "woerter": [
+      {
+       "fa": "هَوا",
+       "de": "Wetter, Luft"
+      },
+      {
+       "fa": "آفتابی",
+       "de": "sonnig"
+      },
+      {
+       "fa": "اَبری",
+       "de": "bewölkt"
+      },
+      {
+       "fa": "بارانی",
+       "de": "regnerisch"
+      },
+      {
+       "fa": "بَرفی",
+       "de": "verschneit"
+      },
+      {
+       "fa": "طوفانی",
+       "de": "stürmisch"
+      },
+      {
+       "fa": "گَرم",
+       "de": "warm"
+      },
+      {
+       "fa": "سَرد",
+       "de": "kalt"
+      },
+      {
+       "fa": "خُنَک",
+       "de": "kühl"
+      },
+      {
+       "fa": "داغ",
+       "de": "heiß"
+      },
+      {
+       "fa": "دَما",
+       "de": "Temperatur"
+      },
+      {
+       "fa": "دَرَجه",
+       "de": "Grad"
+      },
+      {
+       "fa": "باران",
+       "de": "Regen"
+      },
+      {
+       "fa": "بَرف",
+       "de": "Schnee"
+      },
+      {
+       "fa": "باد",
+       "de": "Wind"
+      },
+      {
+       "fa": "آفتاب",
+       "de": "Sonne(nschein)"
+      },
+      {
+       "fa": "مِه",
+       "de": "Nebel"
+      },
+      {
+       "fa": "بَهار",
+       "de": "Frühling"
+      },
+      {
+       "fa": "تابِستان",
+       "de": "Sommer"
+      },
+      {
+       "fa": "پاییز",
+       "de": "Herbst"
+      },
+      {
+       "fa": "زِمِستان",
+       "de": "Winter"
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitzlesen: Aussprache",
+     "modus": "tr",
+     "sekunden": 60,
+     "ziel": 12,
+     "woerter": [
+      {
+       "fa": "هَوا",
+       "tr": "hawā"
+      },
+      {
+       "fa": "آفتابی",
+       "tr": "āftābī"
+      },
+      {
+       "fa": "اَبری",
+       "tr": "abrī"
+      },
+      {
+       "fa": "بارانی",
+       "tr": "bārānī"
+      },
+      {
+       "fa": "بَرفی",
+       "tr": "barfī"
+      },
+      {
+       "fa": "طوفانی",
+       "tr": "tūfānī"
+      },
+      {
+       "fa": "گَرم",
+       "tr": "garm"
+      },
+      {
+       "fa": "سَرد",
+       "tr": "sard"
+      },
+      {
+       "fa": "خُنَک",
+       "tr": "chonak"
+      },
+      {
+       "fa": "داغ",
+       "tr": "dāgh"
+      },
+      {
+       "fa": "دَما",
+       "tr": "damā"
+      },
+      {
+       "fa": "دَرَجه",
+       "tr": "daradsche"
+      },
+      {
+       "fa": "باران",
+       "tr": "bārān"
+      },
+      {
+       "fa": "بَرف",
+       "tr": "barf"
+      },
+      {
+       "fa": "باد",
+       "tr": "bād"
+      },
+      {
+       "fa": "آفتاب",
+       "tr": "āftāb"
+      },
+      {
+       "fa": "مِه",
+       "tr": "meh"
+      },
+      {
+       "fa": "بَهار",
+       "tr": "bahār"
+      },
+      {
+       "fa": "تابِستان",
+       "tr": "tābestān"
+      },
+      {
+       "fa": "پاییز",
+       "tr": "pāyīz"
+      },
+      {
+       "fa": "زِمِستان",
+       "tr": "zemestān"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "g",
+   "titel": "Wortschatz: Freizeit & Monate",
+   "vorschau": "دَریا کوه",
+   "karten": [
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "فَروَردین",
+       "tr": "farwardīn",
+       "de": "1. Monat (21.3.–20.4.)",
+       "emoji": "🌸"
+      },
+      {
+       "fa": "خُرداد",
+       "tr": "chordād",
+       "de": "3. Monat (22.5.–21.6.)",
+       "emoji": "🌿"
+      },
+      {
+       "fa": "اُردیبِهِشت",
+       "tr": "ordībehescht",
+       "de": "2. Monat (21.4.–21.5.)",
+       "emoji": "🌷"
+      },
+      {
+       "fa": "کُلاه",
+       "tr": "kolāh",
+       "de": "Mütze, Hut",
+       "emoji": "🧢"
+      },
+      {
+       "fa": "دَریا",
+       "tr": "daryā",
+       "de": "Meer",
+       "emoji": "🌊"
+      },
+      {
+       "fa": "جَنگَل",
+       "tr": "dschangal",
+       "de": "Wald",
+       "emoji": "🌲"
+      }
+     ],
+     "titel": "Memory: Bild & Wort"
+    },
+    {
+     "typ": "memory",
+     "links": "tr",
+     "paare": [
+      {
+       "fa": "عینَکِ آفتابی",
+       "tr": "ʿeynak-e āftābī",
+       "de": "Sonnenbrille",
+       "emoji": "🕶️"
+      },
+      {
+       "fa": "چَتر",
+       "tr": "tschatr",
+       "de": "Regenschirm",
+       "emoji": "☂️"
+      },
+      {
+       "fa": "ساحِل",
+       "tr": "sāhel",
+       "de": "Strand, Küste",
+       "emoji": "🏖️"
+      },
+      {
+       "fa": "کوه",
+       "tr": "kūh",
+       "de": "Berg",
+       "emoji": "⛰️"
+      },
+      {
+       "fa": "دَریا",
+       "tr": "daryā",
+       "de": "Meer",
+       "emoji": "🌊"
+      },
+      {
+       "fa": "ژاکَت",
+       "tr": "zhākat",
+       "de": "Jacke",
+       "emoji": "🧥"
+      }
+     ],
+     "titel": "Memory: Schrift & Aussprache"
+    },
+    {
+     "typ": "bauen",
+     "titel": "Schreib das Wort ab",
+     "zeigen": true,
+     "woerter": [
+      {
+       "fa": "فَروَردین",
+       "tr": "farwardīn",
+       "de": "1. Monat (21.3.–20.4.)",
+       "emoji": "🌸",
+       "teile": [
+        "ف",
+        "ر",
+        "و",
+        "ر",
+        "د",
+        "ی",
+        "ن"
+       ],
+       "extra": [
+        "ک"
+       ]
+      },
+      {
+       "fa": "ژاکَت",
+       "tr": "zhākat",
+       "de": "Jacke",
+       "emoji": "🧥",
+       "teile": [
+        "ژ",
+        "ا",
+        "ک",
+        "ت"
+       ],
+       "extra": [
+        "ش"
+       ]
+      },
+      {
+       "fa": "خُرداد",
+       "tr": "chordād",
+       "de": "3. Monat (22.5.–21.6.)",
+       "emoji": "🌿",
+       "teile": [
+        "خ",
+        "ر",
+        "د",
+        "ا",
+        "د"
+       ],
+       "extra": [
+        "ب"
+       ]
+      },
+      {
+       "fa": "کوه",
+       "tr": "kūh",
+       "de": "Berg",
+       "emoji": "⛰️",
+       "teile": [
+        "ک",
+        "و",
+        "ه"
+       ],
+       "extra": [
+        "پ"
+       ]
+      },
+      {
+       "fa": "جَنگَل",
+       "tr": "dschangal",
+       "de": "Wald",
+       "emoji": "🌲",
+       "teile": [
+        "ج",
+        "ن",
+        "گ",
+        "ل"
+       ],
+       "extra": [
+        "پ"
+       ]
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitzlesen: Bedeutung",
+     "modus": "de",
+     "sekunden": 60,
+     "ziel": 12,
+     "woerter": [
+      {
+       "fa": "دَریا",
+       "de": "Meer"
+      },
+      {
+       "fa": "کوه",
+       "de": "Berg"
+      },
+      {
+       "fa": "جَنگَل",
+       "de": "Wald"
+      },
+      {
+       "fa": "ساحِل",
+       "de": "Strand, Küste"
+      },
+      {
+       "fa": "چَتر",
+       "de": "Regenschirm"
+      },
+      {
+       "fa": "ژاکَت",
+       "de": "Jacke"
+      },
+      {
+       "fa": "کُلاه",
+       "de": "Mütze, Hut"
+      },
+      {
+       "fa": "عینَکِ آفتابی",
+       "de": "Sonnenbrille"
+      },
+      {
+       "fa": "فَروَردین",
+       "de": "1. Monat (21.3.–20.4.)"
+      },
+      {
+       "fa": "اُردیبِهِشت",
+       "de": "2. Monat (21.4.–21.5.)"
+      },
+      {
+       "fa": "خُرداد",
+       "de": "3. Monat (22.5.–21.6.)"
+      },
+      {
+       "fa": "تیر",
+       "de": "4. Monat (22.6.–22.7.)"
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitzlesen: Aussprache",
+     "modus": "tr",
+     "sekunden": 60,
+     "ziel": 12,
+     "woerter": [
+      {
+       "fa": "دَریا",
+       "tr": "daryā"
+      },
+      {
+       "fa": "کوه",
+       "tr": "kūh"
+      },
+      {
+       "fa": "جَنگَل",
+       "tr": "dschangal"
+      },
+      {
+       "fa": "ساحِل",
+       "tr": "sāhel"
+      },
+      {
+       "fa": "چَتر",
+       "tr": "tschatr"
+      },
+      {
+       "fa": "ژاکَت",
+       "tr": "zhākat"
+      },
+      {
+       "fa": "کُلاه",
+       "tr": "kolāh"
+      },
+      {
+       "fa": "عینَکِ آفتابی",
+       "tr": "ʿeynak-e āftābī"
+      },
+      {
+       "fa": "فَروَردین",
+       "tr": "farwardīn"
+      },
+      {
+       "fa": "اُردیبِهِشت",
+       "tr": "ordībehescht"
+      },
+      {
+       "fa": "خُرداد",
+       "tr": "chordād"
+      },
+      {
+       "fa": "تیر",
+       "tr": "tīr"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
