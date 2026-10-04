@@ -420,3 +420,5 @@ table.ktab{width:100%;border-collapse:collapse;margin:10px 0;font-size:.95em}
 table.ktab th,table.ktab td{border:1px solid var(--linie);padding:7px 9px;text-align:left;vertical-align:top}
 table.ktab th{background:rgba(0,0,0,.04);font-weight:700}
 @media (max-width:560px){table.ktab{font-size:.85em}table.ktab th,table.ktab td{padding:5px 6px}}
+.optionen.lang{grid-template-columns:1fr}
+.optionen.lang .opt{text-align:center}

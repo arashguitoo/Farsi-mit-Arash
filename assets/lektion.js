@@ -137,7 +137,7 @@
           ${f.fa ? `<div class="fa-gross ${f.fa.length > 14 ? "satz" : ""}">${esc(f.fa)} ${f.hoeren === false ? "" : hoer(f.say || f.fa, f.audio)}</div>` : ""}
           <div style="font-weight:800;font-size:1.1rem">${f.frage}</div>
         </div>
-        <div class="optionen">${reihenfolge.map(j => `<button class="opt ${f.optFa ? "fa" : ""}" data-j="${j}">${/<[a-z]/i.test(f.optionen[j]) ? f.optionen[j] : esc(f.optionen[j])}</button>`).join("")}</div>
+        <div class="optionen ${f.optionen.some(o => String(o).replace(/<[^>]+>/g, "").length > 16) ? "lang" : ""}">${reihenfolge.map(j => `<button class="opt ${f.optFa ? "fa" : ""}" data-j="${j}">${/<[a-z]/i.test(f.optionen[j]) ? f.optionen[j] : esc(f.optionen[j])}</button>`).join("")}</div>
         <div id="erkl"></div>
         <div class="btnreihe" style="justify-content:flex-end;margin-top:12px"><button class="btn safran versteckt" id="naechste">Nächste Frage →</button></div>
       </div>`;
@@ -407,6 +407,7 @@
         const falsche = mischen(pool.filter(x => antwort(x) !== antwort(w))).reduce((a, x) => (a.includes(antwort(x)) ? a : a.concat(antwort(x))), []).slice(0, 2);
         const opts = mischen([antwort(w)].concat(falsche));
         $("#tw", el).textContent = w.fa;
+        $("#to", el).classList.toggle("lang", opts.some(o => String(o).length > 16));
         $("#to", el).innerHTML = opts.map(o => `<button class="opt ${k.optFa ? "fa" : ""}">${esc(o)}</button>`).join("");
         $$("#to .opt", el).forEach(b => b.onclick = () => {
           if (vorbei) return;

@@ -264,12 +264,57 @@
     return L;
   }
 
+  /* ---------- Schreibrichtung: Persisch immer rechts-nach-links ----------
+     Läuft automatisch auf jeder Seite. Persische Stücke in deutschem Text werden in
+     <span class="fa" dir="rtl"> gekapselt; Elemente, die nur persischen Text enthalten,
+     bekommen dir="rtl". So stehen Satzzeichen (! ؟ .) und Wortfolge immer richtig. */
+  const AR = /[؀-ۿﭐ-﷿ﹰ-﻿]/;
+  const LAT = /[A-Za-zÀ-ÿĀ-ž]/;
+  const LAUF = /[؀-ۿﭐ-﷿ﹰ-﻿](?:[؀-ۿﭐ-﷿ﹰ-﻿‌‏ً-ٰٟ 0-9۰-۹«»"'()\-–…]*[؀-ۿﭐ-﷿ﹰ-﻿‌])?[؟!.،؛…»]*/g;
+  const SKIP = "script,style,textarea,input,select,.fa,[dir=rtl],[data-nobidi],.tr,code";
+  function bidiText(node) {
+    const t = node.nodeValue;
+    if (!AR.test(t)) return;
+    const par = node.parentElement;
+    if (!par || par.closest(SKIP)) return;
+    // ganzes Element nur persisch → Richtung am Element setzen
+    if (!LAT.test(par.textContent) && par.children.length === 0) { par.setAttribute("dir", "rtl"); return; }
+    const frag = document.createDocumentFragment();
+    let last = 0; LAUF.lastIndex = 0; let m;
+    while ((m = LAUF.exec(t))) {
+      if (m.index > last) frag.appendChild(document.createTextNode(t.slice(last, m.index)));
+      const sp = document.createElement("span"); sp.className = "fa"; sp.dir = "rtl"; sp.textContent = m[0];
+      frag.appendChild(sp); last = m.index + m[0].length;
+    }
+    if (last < t.length) frag.appendChild(document.createTextNode(t.slice(last)));
+    par.replaceChild(frag, node);
+  }
+  function bidi(root) {
+    if (!root || !document.createTreeWalker) return;
+    const w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT), liste = [];
+    while (w.nextNode()) liste.push(w.currentNode);
+    liste.forEach(bidiText);
+    // reine Persisch-Blöcke (z. B. Buttons, Zeilen mit mehreren Kindern) → rtl
+    root.querySelectorAll && root.querySelectorAll("button,li,p,div,td,th,label").forEach(el => {
+      if (el.hasAttribute("dir") || el.closest("[data-nobidi]")) return;
+      const tx = el.textContent;
+      if (tx && AR.test(tx) && !LAT.test(tx) && !el.querySelector("button,input,div,p,li,table")) el.setAttribute("dir", "rtl");
+    });
+  }
+  if (typeof MutationObserver !== "undefined" && typeof document !== "undefined") {
+    let geplant = false;
+    const lauf = () => { geplant = false; try { bidi(document.body); } catch (e) { console.warn(e); } };
+    const plane = () => { if (!geplant) { geplant = true; (window.requestAnimationFrame || setTimeout)(lauf); } };
+    const start = () => { lauf(); new MutationObserver(plane).observe(document.body, { childList: true, subtree: true, characterData: true }); };
+    if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", start); else start();
+  }
+
   window.FARSI = {
     CFG, $, $$, esc, mischen, faZiffern, normCode, toast, mitTimeout,
     initFB, ref, sitzung, anmelden, abmelden,
     einst, setEinst, anwendenEinst,
     ladeFortschritt, ladeAlleFortschritte, speichereStation,
     ladeFreigaben, istOffen, istBereichOffen, bereichVon, testStand, sperrGrund,
-    sprich, ton, ladeJSON, ladeLektion
+    sprich, ton, ladeJSON, ladeLektion, bidi
   };
 })();
