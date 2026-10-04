@@ -31,7 +31,8 @@
 
   function beispiele(list) {
     if (!list || !list.length) return "";
-    return `<div class="bsp-gitter">${list.map(b => `
+    const satz = list.some(b => (b.fa || "").length > 22);
+    return `<div class="bsp-gitter ${satz ? "saetze" : ""}">${list.map(b => `
       <div class="bsp" ${say(b.say || b.fa, b.audio)}>
         ${b.emoji ? `<div class="emo">${b.emoji}</div>` : ""}
         <div class="fa">${esc(b.fa)}</div>

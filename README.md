@@ -37,7 +37,8 @@ In der Konsole unter **🔓 Freigaben** schaltest du pro Klasse
 
 - **Anfänger (Persisch I / Grundkurs):** alle Lektionen 1–25 – vom Alphabet bis zu den Bedingungssätzen.
 - **Fortgeschritten 1:** beginnt mit dem Einstufungstest; Lektionen folgen (in Planung). Neue F1-Lektionen in `index_bauen.py` unter `BEREICH` ("f1") und `VORAUS` ("f1test") eintragen.
-- **Fortgeschritten 2, Konversation:** in Planung.
+- **Fortgeschritten 2:** in Planung.
+- **Konversation:** 15 Sitzungen (K1–K15). Jede Lektion ist die Hausaufgabe zur Vorbereitung, im Unterricht wird nur gesprochen. Aufbau: Worum geht’s → Wörter → Redemittel (gesprochen + Schriftform) → Modelldialog in Umgangssprache → Lesetext → Gut zu wissen (Kultur) → Vorbereitung (Gesprächsfragen, Rollenspiel, Checkliste). Kein Hörverstehen. Erzeugt mit `farsi-werkzeuge/k_bauen.py` aus `k_daten1–3.py`.
 
 ### Einstufungstest vor Fortgeschritten 1
 

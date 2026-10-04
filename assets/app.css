@@ -422,3 +422,9 @@ table.ktab th{background:rgba(0,0,0,.04);font-weight:700}
 @media (max-width:560px){table.ktab{font-size:.85em}table.ktab th,table.ktab td{padding:5px 6px}}
 .optionen.lang{grid-template-columns:1fr}
 .optionen.lang .opt{text-align:center}
+/* Beispiel-Sätze: eine Spalte, persisch rechtsbündig */
+.bsp-gitter.saetze{grid-template-columns:1fr}
+.bsp-gitter.saetze .bsp{text-align:left;grid-template-columns:auto 1fr;column-gap:12px;align-items:center}
+.bsp-gitter.saetze .bsp .emo{grid-row:span 3;font-size:1.5rem}
+.bsp-gitter.saetze .bsp .fa{font-size:1.35rem;line-height:1.8;text-align:right}
+.bsp-gitter.saetze .bsp .fa,.bsp-gitter.saetze .bsp .tr,.bsp-gitter.saetze .bsp .de{grid-column:2}
