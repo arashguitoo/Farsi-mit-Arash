@@ -33,9 +33,15 @@ In der Konsole unter **🔓 Freigaben** schaltest du pro Klasse
 - den **ganzen Bereich** (fette Zeile) – gesperrt heißt: alle Lektionen darin sind zu,
 - und darunter **jede Lektion einzeln** frei.
 
+### Aufteilung
+
+- **Anfänger (Persisch I / Grundkurs):** alle Lektionen 1–25 – vom Alphabet bis zu den Bedingungssätzen.
+- **Fortgeschritten 1:** beginnt mit dem Einstufungstest; Lektionen folgen (in Planung). Neue F1-Lektionen in `index_bauen.py` unter `BEREICH` ("f1") und `VORAUS` ("f1test") eintragen.
+- **Fortgeschritten 2, Konversation:** in Planung.
+
 ### Einstufungstest vor Fortgeschritten 1
 
-`f1-test.json` („Großer Test Persisch I“, 13 Abschnitte) steht am Anfang von Fortgeschritten 1. Die Lektionen von Fortgeschritten 1 haben in `index.json` `"voraussetzung": "f1test"` und öffnen sich erst, wenn **alle Abschnitte** gemacht sind und **insgesamt ≥ 70 %** (`"bestehen": 70`) erreicht sind. Der Stand hängt am persönlichen Code. Stellst du eine Lektion in der Konsole ausdrücklich auf „🔓 offen“, ist sie auch ohne Test offen.
+`f1-test.json` („Großer Test Persisch I“, 20 Abschnitte, über 200 Aufgaben – deckt den ganzen Grundkurs ab) steht am Anfang von Fortgeschritten 1. Die Lektionen von Fortgeschritten 1 haben in `index.json` `"voraussetzung": "f1test"` und öffnen sich erst, wenn **alle Abschnitte** gemacht sind und **insgesamt ≥ 70 %** (`"bestehen": 70`) erreicht sind. Der Stand hängt am persönlichen Code. Stellst du eine Lektion in der Konsole ausdrücklich auf „🔓 offen“, ist sie auch ohne Test offen.
 
 ## Zwei (oder mehr) Klassen
 

@@ -2,7 +2,7 @@
  "id": "f1test",
  "titel": "Großer Test Persisch I",
  "titelFa": "آزمونِ وُرودی",
- "einleitung": "Dieser Test prüft alles aus Persisch I – von der Schrift bis zu den Konnektoren. Er hat 13 Abschnitte. Du kannst sie in beliebiger Reihenfolge und an verschiedenen Tagen machen; es zählt jeweils dein bestes Ergebnis. Wenn du alle Abschnitte gemacht hast und insgesamt mindestens 70 % erreichst, öffnen sich die Lektionen von Fortgeschritten 1.",
+ "einleitung": "Dieser Test prüft alles aus Persisch I – von der Schrift bis zu den Bedingungssätzen. Er hat 20 Abschnitte. Du kannst sie in beliebiger Reihenfolge und an verschiedenen Tagen machen; es zählt jeweils dein bestes Ergebnis. Wenn du alle Abschnitte gemacht hast und insgesamt mindestens 70 % erreichst, öffnen sich die Lektionen von Fortgeschritten 1.",
  "stationen": [
   {
    "id": "a",
@@ -1702,13 +1702,796 @@
    ]
   },
   {
+   "id": "n",
+   "titel": "M · Perfekt & Vergleich",
+   "vorschau": "رَفتِه‌اَم · بِهتَر",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "M · Perfekt & Vergleich",
+     "text": "<p>Perfekt, Komparativ und Superlativ.</p><p class='klein muted'>Jede Frage zählt. Du kannst den Abschnitt später wiederholen – es zählt dein bestes Ergebnis.</p>"
+    },
+    {
+     "typ": "wahl",
+     "titel": "Perfekt & Vergleich",
+     "fragen": [
+      {
+       "frage": "„Ich bin schon in Isfahan gewesen.“",
+       "optionen": [
+        "مَن بِه اِصفَهان رَفتِه‌اَم.",
+        "مَن بِه اِصفَهان می‌رَوَم.",
+        "مَن بِه اِصفَهان بِرَوَم."
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Hast du diesen Film gesehen?“",
+       "optionen": [
+        "این فیلم را دیدِه‌ای؟",
+        "این فیلم را بِبینی؟",
+        "این فیلم را می‌بینی بود؟"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Wir haben noch nicht gegessen.“",
+       "optionen": [
+        "ما هَنوز غَذا نَخوردِه‌ایم.",
+        "ما هَنوز غَذا نَخوردیم بودیم.",
+        "ما هَنوز غَذا نَخوریم."
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "Perfekt von <span class='fa'>رفتن</span>, „du“:",
+       "optionen": [
+        "رَفتِه‌ای",
+        "رَفتی بود",
+        "بِرَوی"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "Komparativ von <span class='fa'>خوب</span>:",
+       "optionen": [
+        "بِهتَر",
+        "خوب‌ترین",
+        "بیشتَر خوب"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Teheran ist größer als Kiel.“",
+       "optionen": [
+        "تِهران اَز کیل بُزُرگ‌تَر اَست.",
+        "تِهران بُزُرگ‌تَرین اَز کیل اَست.",
+        "تِهران کیل بُزُرگ‌تَر اَست."
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„das größte Zimmer“",
+       "optionen": [
+        "بُزُرگ‌تَرین اُتاق",
+        "اُتاق بُزُرگ‌تَرین",
+        "بُزُرگ‌تَر اُتاق‌ترین"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Sie ist die beste Studentin der Klasse.“",
+       "optionen": [
+        "او بِهتَرین دانِشجوی کِلاس اَست.",
+        "او دانِشجوی بِهتَرین کِلاس اَست.",
+        "او بِهتَر دانِشجو کِلاس اَست."
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "Was bedeutet <span class='fa'>تا حالا</span>?",
+       "optionen": [
+        "bis jetzt / schon mal",
+        "gestern",
+        "bald"
+       ],
+       "richtig": 0,
+       "hoeren": false
+      },
+      {
+       "frage": "Was bedeutet <span class='fa'>هرگز</span>?",
+       "optionen": [
+        "nie",
+        "immer",
+        "oft"
+       ],
+       "richtig": 0,
+       "hoeren": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "o",
+   "titel": "N · Konjunktiv & تا",
+   "vorschau": "بِرَوَم · تا",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "N · Konjunktiv & تا",
+     "text": "<p>wollen, können, müssen, vielleicht, damit – immer mit Konjunktiv.</p><p class='klein muted'>Jede Frage zählt. Du kannst den Abschnitt später wiederholen – es zählt dein bestes Ergebnis.</p>"
+    },
+    {
+     "typ": "wahl",
+     "titel": "Konjunktiv",
+     "fragen": [
+      {
+       "frage": "„Ich will Persisch lernen.“",
+       "optionen": [
+        "می‌خواهَم فارسی یاد بِگیرَم.",
+        "می‌خواهَم فارسی یاد می‌گیرَم.",
+        "می‌خواهَم فارسی یاد گِرِفتِه بودَم."
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Kannst du morgen kommen?“",
+       "optionen": [
+        "می‌تَوانی فَردا بِیایی؟",
+        "می‌تَوانی فَردا می‌آیی؟",
+        "می‌تَوانی فَردا آمَدِه بودی؟"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Wir müssen gehen.“",
+       "optionen": [
+        "باید بِرَویم.",
+        "باید می‌رَویم بود.",
+        "بایدیم بِرَویم."
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Ich gehe in die Bibliothek, um zu lernen.“",
+       "optionen": [
+        "بِه کِتابخانِه می‌رَوَم تا دَرس بِخوانَم.",
+        "بِه کِتابخانِه می‌رَوَم تا دَرس خواندِه بودَم.",
+        "بِه کِتابخانِه می‌رَوَم تا دَرس می‌خواندَم."
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "Konjunktiv von <span class='fa'>آمدن</span>, „ich“:",
+       "optionen": [
+        "بیایَم",
+        "بیامم",
+        "آمَدِه بودَم"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "Konjunktiv von <span class='fa'>داشتن</span>, „du“:",
+       "optionen": [
+        "داشتِه باشی",
+        "بِداری",
+        "داشتِه بودی"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Vielleicht regnet es morgen.“",
+       "optionen": [
+        "شایَد فَردا باران بیایَد.",
+        "شایَد فَردا باران آمَدِه بود.",
+        "شایَد فَردا باران می‌آمَدِه اَست."
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Es ist besser, dass du schläfst.“",
+       "optionen": [
+        "بِهتَر اَست بِخوابی.",
+        "بِهتَر اَست خوابیدِه بودی.",
+        "بِهتَر اَست بِخوابیدی."
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„(dass) ich nicht gehe“",
+       "optionen": [
+        "نَرَوَم",
+        "بنروم",
+        "نَرَفتِه بودَم"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "p",
+   "titel": "O · Imperativ",
+   "vorschau": "بیا! · نَرو!",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "O · Imperativ",
+     "text": "<p>Befehle und Bitten – du und ihr/Sie, bejaht und verneint.</p><p class='klein muted'>Jede Frage zählt. Du kannst den Abschnitt später wiederholen – es zählt dein bestes Ergebnis.</p>"
+    },
+    {
+     "typ": "wahl",
+     "titel": "Imperativ",
+     "fragen": [
+      {
+       "frage": "„Komm!“",
+       "optionen": [
+        "بیا!",
+        "بِیایی!",
+        "آمَدی!"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Esst!“ / „Essen Sie!“",
+       "optionen": [
+        "بِخورید!",
+        "خوردید!",
+        "بِخوریدی!"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Geh nicht!“",
+       "optionen": [
+        "نَرَو!",
+        "نمی‌رَو!",
+        "بنرو!"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Setzen Sie sich bitte!“",
+       "optionen": [
+        "لطفاً بِنِشینید!",
+        "لطفاً نِشَستید!",
+        "لطفاً بِنِشین‌اید!"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Sag!“",
+       "optionen": [
+        "بِگو!",
+        "بِگوی!",
+        "گُفتی!"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Arbeite!“ (کار کردن)",
+       "optionen": [
+        "کار کُن!",
+        "کار کَردی!",
+        "کارید!"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Sei ruhig!“ (آرام بودن)",
+       "optionen": [
+        "آرام باش!",
+        "آرام بود!",
+        "آرام هَست!"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "q",
+   "titel": "P · Früher & schon vorher",
+   "vorschau": "می‌رَفتَم · رَفتِه بود",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "P · Früher & schon vorher",
+     "text": "<p>durative Vergangenheit, Plusquamperfekt, nachdem/bevor/sobald.</p><p class='klein muted'>Jede Frage zählt. Du kannst den Abschnitt später wiederholen – es zählt dein bestes Ergebnis.</p>"
+    },
+    {
+     "typ": "wahl",
+     "titel": "Vergangenheit",
+     "fragen": [
+      {
+       "frage": "„Früher wohnte ich in Teheran.“",
+       "optionen": [
+        "قبلاً دَر تِهران زِندِگی می‌کَردَم.",
+        "قبلاً دَر تِهران زِندِگی کَردِه‌اَم بود.",
+        "قبلاً دَر تِهران زِندِگی بُکُنَم."
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Als ich ankam, war der Zug schon abgefahren.“",
+       "optionen": [
+        "وَقتی رِسیدَم، قَطار رَفتِه بود.",
+        "وَقتی رِسیدَم، قَطار بِرَوَد.",
+        "وَقتی رِسیدَم، قَطار خواهَد رَفت."
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Bevor du gehst, …“",
+       "optionen": [
+        "قَبل اَز اینکه بِرَوی، …",
+        "قَبل اَز اینکه رَفتی، …",
+        "قَبل اَز اینکه رَفتِه بودی، …"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "Plusquamperfekt von <span class='fa'>دیدن</span>, „ich“:",
+       "optionen": [
+        "دیدِه بودَم",
+        "دیدِه‌اَم",
+        "بِبینَم"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "durativ von <span class='fa'>رفتن</span>, „wir“:",
+       "optionen": [
+        "می‌رَفتیم",
+        "رَفتِه بودیم",
+        "بِرَویم"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "Was bedeutet <span class='fa'>بعد از اینکه</span>?",
+       "optionen": [
+        "nachdem",
+        "bevor",
+        "seit"
+       ],
+       "richtig": 0,
+       "hoeren": false
+      },
+      {
+       "frage": "Was bedeutet <span class='fa'>همین که</span>?",
+       "optionen": [
+        "sobald",
+        "seitdem",
+        "obwohl"
+       ],
+       "richtig": 0,
+       "hoeren": false
+      },
+      {
+       "frage": "„Als Kind spielte ich jeden Tag Fußball.“",
+       "optionen": [
+        "بَچّه کِه بودَم، هَر روز فوتبال بازی می‌کَردَم.",
+        "بَچّه کِه بودَم، هَر روز فوتبال بازی کُنَم.",
+        "بَچّه کِه بودَم، هَر روز فوتبال بازی خواهَم کَرد."
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "r",
+   "titel": "Q · Futur & Passiv",
+   "vorschau": "خواهَم رَفت · ساختِه شُد",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Q · Futur & Passiv",
+     "text": "<p>Futur mit خواستن, Passiv mit شدن.</p><p class='klein muted'>Jede Frage zählt. Du kannst den Abschnitt später wiederholen – es zählt dein bestes Ergebnis.</p>"
+    },
+    {
+     "typ": "wahl",
+     "titel": "Futur & Passiv",
+     "fragen": [
+      {
+       "frage": "„Ich werde morgen kommen.“",
+       "optionen": [
+        "فَردا خواهَم آمَد.",
+        "فَردا خواهَم می‌آیَم.",
+        "فَردا خواهَم بیایَم."
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Sie wird nicht fahren.“",
+       "optionen": [
+        "او نَخواهَد رَفت.",
+        "او خواهَد نَرَفت.",
+        "او نَخواهَد بِرَوَد."
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "Futur von <span class='fa'>دیدن</span>, „du“:",
+       "optionen": [
+        "خواهی دید",
+        "خواهی بِبینی",
+        "خواهی دیدی"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "Was ist im Alltag für die Zukunft am häufigsten?",
+       "optionen": [
+        "das Präsens (می‌روم)",
+        "das Plusquamperfekt",
+        "der Imperativ"
+       ],
+       "richtig": 0,
+       "hoeren": false
+      },
+      {
+       "frage": "„Das Haus wurde gebaut.“",
+       "optionen": [
+        "خانِه ساختِه شُد.",
+        "خانِه ساخت شُد.",
+        "خانِه ساختِه کَرد."
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Der Brief wird geschrieben.“",
+       "optionen": [
+        "نامِه نِوِشتِه می‌شَوَد.",
+        "نامِه نِوِشتِه می‌کُنَد.",
+        "نامِه نِوِشت می‌شَوَد."
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Die Tür ist geschlossen worden.“",
+       "optionen": [
+        "دَر بَستِه شُدِه اَست.",
+        "دَر بَستِه کَردِه اَست.",
+        "دَر بست شُدِه اَست."
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Hier wird Persisch gesprochen.“",
+       "optionen": [
+        "اینجا فارسی صُحبَت می‌شَوَد.",
+        "اینجا فارسی صُحبَت کَردِه می‌شَوَد.",
+        "اینجا فارسی صُحبَت شُدِه بودید."
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s",
+   "titel": "R · Wünsche & Formeln",
+   "vorschau": "کاش · خَستِه نَباشید",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "R · Wünsche & Formeln",
+     "text": "<p>امیدوارم, کاش, Höflichkeitsformeln, Redewendungen.</p><p class='klein muted'>Jede Frage zählt. Du kannst den Abschnitt später wiederholen – es zählt dein bestes Ergebnis.</p>"
+    },
+    {
+     "typ": "wahl",
+     "titel": "Wünsche & Formeln",
+     "fragen": [
+      {
+       "frage": "„Ich hoffe, du bestehst.“",
+       "optionen": [
+        "اُمیدوارَم قَبول شوی.",
+        "اُمیدوارَم قَبول شُدِه بودی.",
+        "اُمیدوارَم قَبول می‌شُدی."
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Hätte ich doch mehr Zeit!“",
+       "optionen": [
+        "کاش وَقت بیشتَری داشتَم!",
+        "کاش وَقت بیشتَری دارَم!",
+        "کاش وَقت بیشتَری خواهَم داشت!"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Wärst du doch gestern gekommen!“",
+       "optionen": [
+        "کاش دیروز آمَدِه بودی!",
+        "کاش دیروز بِیایی!",
+        "کاش دیروز می‌آیی!"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "Jemand arbeitet im Garten. Du sagst:",
+       "optionen": [
+        "خَستِه نَباشید!",
+        "عافیَت باشَد!",
+        "نوش جان!"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "Der Taxifahrer sagt <span class='fa'>قابلی ندارد</span>. Das bedeutet:",
+       "optionen": [
+        "Nicht der Rede wert – eine Höflichkeitsfloskel, man zahlt trotzdem.",
+        "Die Fahrt ist kostenlos.",
+        "Er hat kein Wechselgeld."
+       ],
+       "richtig": 0,
+       "hoeren": false
+      },
+      {
+       "frage": "„Ich vermisse dich.“",
+       "optionen": [
+        "دِلَم بَرایَت تَنگ شُدِه اَست.",
+        "دِلَم بَرایَت گِرِفتِه اَست.",
+        "دِلَم بَرایَت می‌خواهَد."
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "Was bedeutet <span class='fa'>سرم شلوغ است</span>?",
+       "optionen": [
+        "Ich habe viel zu tun.",
+        "Ich habe Kopfschmerzen.",
+        "Es ist laut hier."
+       ],
+       "richtig": 0,
+       "hoeren": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t",
+   "titel": "S · Bedingungen",
+   "vorschau": "اَگَر …",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "S · Bedingungen",
+     "text": "<p>real und irreal, Gegenwart und Vergangenheit.</p><p class='klein muted'>Jede Frage zählt. Du kannst den Abschnitt später wiederholen – es zählt dein bestes Ergebnis.</p>"
+    },
+    {
+     "typ": "wahl",
+     "titel": "Bedingungen",
+     "fragen": [
+      {
+       "frage": "„Wenn du willst, gehen wir.“",
+       "optionen": [
+        "اَگَر بِخواهی، می‌رَویم.",
+        "اَگَر خواستِه بودی، می‌رَویم.",
+        "اَگَر بِخواهی، رَفتِه بودیم."
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "<span class='fa'>اگر فردا آمدی …</span> bedeutet:",
+       "optionen": [
+        "Wenn du morgen kommst …",
+        "Wenn du gestern gekommen wärst …",
+        "Komm morgen!"
+       ],
+       "richtig": 0,
+       "hoeren": false
+      },
+      {
+       "frage": "„Falls er schon gegangen ist, rufe ich ihn an.“",
+       "optionen": [
+        "اَگَر رَفتِه باشَد، بِه او زَنگ می‌زَنَم.",
+        "اَگَر رَفتِه بود، بِه او زَنگ زَدِه بودَم.",
+        "اَگَر بِرَوَد، بِه او زَنگ زَدِه بودَم."
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Wenn ich Zeit hätte, käme ich.“",
+       "optionen": [
+        "اَگَر وَقت داشتَم، می‌آمَدَم.",
+        "اَگَر وَقت داشتِه باشَم، آمَدِه بودَم.",
+        "اَگَر وَقت دارَم، آمَدِه بودَم."
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Wärst du gekommen, hättest du sie gesehen.“",
+       "optionen": [
+        "اَگَر آمَدِه بودی، او را می‌دیدی.",
+        "اَگَر بِیایی، او را دیدِه بودی.",
+        "اَگَر آمَدِه‌ای، او را دیدِه بودی."
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„An deiner Stelle würde ich gehen.“",
+       "optionen": [
+        "اَگَر جای تو بودَم، می‌رَفتَم.",
+        "اَگَر جای تو باشَم، رَفتِه بودَم.",
+        "اَگَر جای تو هَستَم، می‌رَفتَم."
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Selbst wenn es regnet, komme ich.“",
+       "optionen": [
+        "حتی اَگَر باران بیایَد، می‌آیَم.",
+        "وَگَرنه باران بیایَد، می‌آیَم.",
+        "اَگَر هَم باران آمَدِه بود، می‌آیَم."
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "Welche Bedingung ist <b>irreal</b>?",
+       "optionen": [
+        "اَگَر می‌دانِستَم …",
+        "اَگَر بِدانَم …",
+        "اَگَر دانِستِه باشَم …"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      }
+     ]
+    },
+    {
+     "typ": "bauen",
+     "titel": "Baue den Satz",
+     "trenner": " ",
+     "woerter": [
+      {
+       "fa": "اَگَر وَقت داشتِه باشَم، فَردا می‌آیَم.",
+       "tr": "agar waght dāschte bāscham, fardā mīāyam.",
+       "de": "Wenn ich Zeit habe, komme ich morgen.",
+       "teile": [
+        "اَگَر",
+        "وَقت",
+        "داشتِه",
+        "باشَم",
+        "فَردا",
+        "می‌آیَم"
+       ],
+       "extra": [
+        "بودَم"
+       ]
+      },
+      {
+       "fa": "اَگَر پولدار بودَم، سَفَر می‌کَردَم.",
+       "tr": "agar pūldār būdam, safar mīkardam.",
+       "de": "Wenn ich reich wäre, würde ich reisen.",
+       "teile": [
+        "اَگَر",
+        "پولدار",
+        "بودَم",
+        "سَفَر",
+        "می‌کَردَم"
+       ],
+       "extra": [
+        "باشَم"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
    "id": "m",
-   "titel": "M · Lesetext & Satzbau",
+   "titel": "T · Lesetext & Satzbau",
    "vorschau": "📖",
    "karten": [
     {
      "typ": "info",
-     "titel": "M · Lesetext & Satzbau",
+     "titel": "T · Lesetext & Satzbau",
      "text": "<p>Lies den Text. Tippe eine Zeile an, wenn du Hilfe brauchst. Danach kommen Fragen.</p>"
     },
     {
