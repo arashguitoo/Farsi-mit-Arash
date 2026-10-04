@@ -1,0 +1,193 @@
+{
+ "id": "ug",
+ "art": "umgangssprache",
+ "titel": "Umgangssprache: So spricht man im Alltag",
+ "beschreibung": "Freiwilliger Extra-Teil: Bedingungen im Gespräch.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "So spricht man",
+   "vorschau": "خَریدی · گِرِفته باشه",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Schrift ≠ Gespräch",
+     "text": "<ul><li>Statt Perfekt hört man im Gespräch oft das <b>Präteritum</b>: <span class='fa'>اگه خریدی</span> = <span class='fa'>اگر خریده‌ای</span>; das Perfekt klingt gesprochen <span class='fa'>خریدی</span> <i>charīdī</i> (nur die Betonung ist anders).</li><li><span class='fa'>باشد → باشه</span> · <span class='fa'>خانه → خونه</span> · <span class='fa'>می‌مانم → می‌مونم</span></li></ul>",
+     "stil": "merke"
+    },
+    {
+     "typ": "paare",
+     "links": "x",
+     "paare": [
+      {
+       "fa": "خَریدِه‌ای",
+       "tr": "charīde-ī",
+       "de": "du hast gekauft",
+       "x": "خَریدی"
+      },
+      {
+       "fa": "گِرِفتِه باشَد",
+       "tr": "gerefte bāschad",
+       "de": "(dass) er/sie bekommen hat",
+       "x": "گِرِفته باشه"
+      },
+      {
+       "fa": "خانه",
+       "tr": "chāne",
+       "de": "Haus",
+       "x": "خونه"
+      },
+      {
+       "fa": "می‌مانَم",
+       "tr": "mīmānam",
+       "de": "ich bleibe",
+       "x": "می‌مونَم"
+      },
+      {
+       "fa": "نِمی‌آیَم",
+       "tr": "nemīāyam",
+       "de": "ich komme nicht",
+       "x": "نِمیام"
+      }
+     ],
+     "titel": "Schrift ↔ Gespräch"
+    },
+    {
+     "typ": "sortieren",
+     "titel": "Schrift oder Gespräch?",
+     "frage": "Schriftsprache oder Umgangssprache?",
+     "kategorien": [
+      "✍️ Schriftsprache",
+      "🗣️ Umgangssprache"
+     ],
+     "items": [
+      {
+       "fa": "خَریدِه‌ای",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "گِرِفتِه باشَد",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "خانه",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "می‌مانَم",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "نِمی‌آیَم",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "خَریدی",
+       "k": 1,
+       "say": false,
+       "e": "<i>charīdī</i> – geschrieben: <span class='fa'>خَریدِه‌ای</span>"
+      },
+      {
+       "fa": "گِرِفته باشه",
+       "k": 1,
+       "say": false,
+       "e": "<i>gerefte bāsche</i> – geschrieben: <span class='fa'>گِرِفتِه باشَد</span>"
+      },
+      {
+       "fa": "خونه",
+       "k": 1,
+       "say": false,
+       "e": "<i>chūne</i> – geschrieben: <span class='fa'>خانه</span>"
+      },
+      {
+       "fa": "می‌مونَم",
+       "k": 1,
+       "say": false,
+       "e": "<i>mīmūnam</i> – geschrieben: <span class='fa'>می‌مانَم</span>"
+      },
+      {
+       "fa": "نِمیام",
+       "k": 1,
+       "say": false,
+       "e": "<i>nemiyām</i> – geschrieben: <span class='fa'>نِمی‌آیَم</span>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Am Telefon",
+   "vorschau": "شایَد نَیام",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Dienstag – umgangssprachlich",
+     "text": "Umgangssprache! Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "شیما، فَردا شایَد نَیام.",
+       "tr": "schīmā, fardā schāyad nayām.",
+       "de": "Shima, morgen komm ich vielleicht nicht."
+      },
+      {
+       "fa": "وای، چی شُده؟",
+       "tr": "wāy, tschī schode?",
+       "de": "Oh, was ist los?"
+      },
+      {
+       "fa": "هَمخونه‌م مَریض شُده. اَگه کُرونا گِرِفته باشه، خونه می‌مونَم.",
+       "tr": "hamchūnam marīz schode. age koronā gerefte bāsche, chūne mīmūnam.",
+       "de": "Meine Mitbewohnerin ist krank. Falls sie Corona hat, bleib ich zu Hause."
+      },
+      {
+       "fa": "کارِ خوبی می‌کُنی. اَگه چیزی لازِم داشتی، بِهِم بِگو!",
+       "tr": "kār-e chūbī mīkonī. age tschīzī lāzem dāschtī, behem begū!",
+       "de": "Machst du richtig. Wenn du was brauchst, sag’s mir!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Verstanden?",
+     "fragen": [
+      {
+       "frage": "Wer ist krank?",
+       "optionen": [
+        "die Mitbewohnerin",
+        "Shima",
+        "Minu"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "<span class='fa'>گرفته باشه</span> ist gesprochen für …",
+       "optionen": [
+        "گرفته باشد",
+        "گرفته بود",
+        "گرفته است"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "Was bietet Shima an?",
+       "optionen": [
+        "Hilfe, wenn er etwas braucht",
+        "ein Geschenk",
+        "eine Fahrt"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

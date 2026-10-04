@@ -1,0 +1,1101 @@
+{
+ "id": "z1",
+ "titel": "Trainingspaket 1",
+ "beschreibung": "Perfekt, Konjunktiv Vergangenheit, Wenn-Blitz, Lücken, Wortschatz.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "Perfekt-Training",
+   "vorschau": "خَریدِه‌ای",
+   "karten": [
+    {
+     "typ": "wahl",
+     "titel": "Welche Perfektform?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>او ___</span> <span class='mini'>(kaufen)</span>",
+       "optionen": [
+        "خَریدِه اَست",
+        "خَریدِه‌ای",
+        "خَریدِه‌اَند"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>او خَریدِه اَست</span> – <i>ū charīde ast</i>"
+      },
+      {
+       "frage": "<span class='fa'>ما ___</span> <span class='mini'>(sehen)</span>",
+       "optionen": [
+        "دیدِه‌ایم",
+        "دیدِه‌اید",
+        "دیدِه اَست"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>ما دیدِه‌ایم</span> – <i>mā dīde-īm</i>"
+      },
+      {
+       "frage": "<span class='fa'>مَن ___</span> <span class='mini'>(essen)</span>",
+       "optionen": [
+        "خوردِه‌اَم",
+        "خوردِه‌ایم",
+        "خوردِه‌اید"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>مَن خوردِه‌اَم</span> – <i>man chorde-am</i>"
+      },
+      {
+       "frage": "<span class='fa'>تو ___</span> <span class='mini'>(gehen, fahren)</span>",
+       "optionen": [
+        "رَفتِه‌ای",
+        "رَفتِه‌اَند",
+        "رَفتِه‌اید"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>تو رَفتِه‌ای</span> – <i>to rafte-ī</i>"
+      },
+      {
+       "frage": "<span class='fa'>شُما ___</span> <span class='mini'>(kommen)</span>",
+       "optionen": [
+        "آمَدِه‌اید",
+        "آمَدِه‌اَند",
+        "آمَدِه‌ای"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>شُما آمَدِه‌اید</span> – <i>schomā āmade-īd</i>"
+      },
+      {
+       "frage": "<span class='fa'>او ___</span> <span class='mini'>(finden)</span>",
+       "optionen": [
+        "پِیدا کَردِه اَست",
+        "پِیدا کَردِه‌اَند",
+        "پِیدا کَردِه‌اید"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>او پِیدا کَردِه اَست</span> – <i>ū peydā karde ast</i>"
+      },
+      {
+       "frage": "<span class='fa'>مَن ___</span> <span class='mini'>(kaufen)</span>",
+       "optionen": [
+        "خَریدِه‌اَم",
+        "خَریدِه‌اید",
+        "خَریدِه‌ایم"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>مَن خَریدِه‌اَم</span> – <i>man charīde-am</i>"
+      },
+      {
+       "frage": "<span class='fa'>آنها ___</span> <span class='mini'>(sehen)</span>",
+       "optionen": [
+        "دیدِه‌اَند",
+        "دیدِه‌ای",
+        "دیدِه‌ایم"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>آنها دیدِه‌اَند</span> – <i>ānhā dīde-and</i>"
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Perfekt",
+     "aufgabe": "Welche Form passt zum Pronomen?",
+     "modus": "de",
+     "sekunden": 50,
+     "ziel": 10,
+     "optFa": true,
+     "woerter": [
+      {
+       "fa": "خَریدِه‌اَم",
+       "a": "مَن"
+      },
+      {
+       "fa": "خَریدِه‌ای",
+       "a": "تو"
+      },
+      {
+       "fa": "خَریدِه اَست",
+       "a": "او"
+      },
+      {
+       "fa": "خَریدِه‌ایم",
+       "a": "ما"
+      },
+      {
+       "fa": "خَریدِه‌اید",
+       "a": "شُما"
+      },
+      {
+       "fa": "خَریدِه‌اَند",
+       "a": "آنها"
+      },
+      {
+       "fa": "دیدِه‌اَم",
+       "a": "مَن"
+      },
+      {
+       "fa": "دیدِه‌ای",
+       "a": "تو"
+      },
+      {
+       "fa": "دیدِه اَست",
+       "a": "او"
+      },
+      {
+       "fa": "دیدِه‌ایم",
+       "a": "ما"
+      },
+      {
+       "fa": "دیدِه‌اید",
+       "a": "شُما"
+      },
+      {
+       "fa": "دیدِه‌اَند",
+       "a": "آنها"
+      },
+      {
+       "fa": "رَفتِه‌اَم",
+       "a": "مَن"
+      },
+      {
+       "fa": "رَفتِه‌ای",
+       "a": "تو"
+      },
+      {
+       "fa": "رَفتِه اَست",
+       "a": "او"
+      },
+      {
+       "fa": "رَفتِه‌ایم",
+       "a": "ما"
+      },
+      {
+       "fa": "رَفتِه‌اید",
+       "a": "شُما"
+      },
+      {
+       "fa": "رَفتِه‌اَند",
+       "a": "آنها"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Konjunktiv Vergangenheit",
+   "vorschau": "خَریدِه باشَم",
+   "karten": [
+    {
+     "typ": "wahl",
+     "titel": "Welche Form?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>ما ___</span> <span class='mini'>(kaufen)</span>",
+       "optionen": [
+        "خَریدِه باشیم",
+        "خَریدِه باشَد",
+        "خَریدِه باشَم"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>ما خَریدِه باشیم</span> – <i>mā charīde bāschīm</i>"
+      },
+      {
+       "frage": "<span class='fa'>تو ___</span> <span class='mini'>(sehen)</span>",
+       "optionen": [
+        "دیدِه باشی",
+        "دیدِه باشید",
+        "دیدِه باشَم"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>تو دیدِه باشی</span> – <i>to dīde bāschī</i>"
+      },
+      {
+       "frage": "<span class='fa'>او ___</span> <span class='mini'>(essen)</span>",
+       "optionen": [
+        "خوردِه باشَد",
+        "خوردِه باشیم",
+        "خوردِه باشی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>او خوردِه باشَد</span> – <i>ū chorde bāschad</i>"
+      },
+      {
+       "frage": "<span class='fa'>او ___</span> <span class='mini'>(gehen, fahren)</span>",
+       "optionen": [
+        "رَفتِه باشَد",
+        "رَفتِه باشَم",
+        "رَفتِه باشی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>او رَفتِه باشَد</span> – <i>ū rafte bāschad</i>"
+      },
+      {
+       "frage": "<span class='fa'>مَن ___</span> <span class='mini'>(kommen)</span>",
+       "optionen": [
+        "آمَدِه باشَم",
+        "آمَدِه باشید",
+        "آمَدِه باشیم"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>مَن آمَدِه باشَم</span> – <i>man āmade bāscham</i>"
+      },
+      {
+       "frage": "<span class='fa'>تو ___</span> <span class='mini'>(finden)</span>",
+       "optionen": [
+        "پِیدا کَردِه باشی",
+        "پِیدا کَردِه باشَد",
+        "پِیدا کَردِه باشَند"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>تو پِیدا کَردِه باشی</span> – <i>to peydā karde bāschī</i>"
+      },
+      {
+       "frage": "<span class='fa'>آنها ___</span> <span class='mini'>(kaufen)</span>",
+       "optionen": [
+        "خَریدِه باشَند",
+        "خَریدِه باشید",
+        "خَریدِه باشَد"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>آنها خَریدِه باشَند</span> – <i>ānhā charīde bāschand</i>"
+      },
+      {
+       "frage": "<span class='fa'>آنها ___</span> <span class='mini'>(sehen)</span>",
+       "optionen": [
+        "دیدِه باشَند",
+        "دیدِه باشیم",
+        "دیدِه باشَد"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>آنها دیدِه باشَند</span> – <i>ānhā dīde bāschand</i>"
+      }
+     ]
+    },
+    {
+     "typ": "memory",
+     "links": "x",
+     "paare": [
+      {
+       "fa": "ما",
+       "tr": "",
+       "de": "",
+       "x": "خَریدِه باشیم"
+      },
+      {
+       "fa": "آنها",
+       "tr": "",
+       "de": "",
+       "x": "خَریدِه باشَند"
+      },
+      {
+       "fa": "مَن",
+       "tr": "",
+       "de": "",
+       "x": "خَریدِه باشَم"
+      },
+      {
+       "fa": "شُما",
+       "tr": "",
+       "de": "",
+       "x": "خَریدِه باشید"
+      },
+      {
+       "fa": "او",
+       "tr": "",
+       "de": "",
+       "x": "خَریدِه باشَد"
+      },
+      {
+       "fa": "تو",
+       "tr": "",
+       "de": "",
+       "x": "خَریدِه باشی"
+      }
+     ],
+     "titel": "Memory: خریده باشم …"
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Konjunktiv Vergangenheit",
+     "aufgabe": "Welche Form passt zum Pronomen?",
+     "modus": "de",
+     "sekunden": 55,
+     "ziel": 10,
+     "optFa": true,
+     "woerter": [
+      {
+       "fa": "خَریدِه باشَم",
+       "a": "مَن"
+      },
+      {
+       "fa": "خَریدِه باشی",
+       "a": "تو"
+      },
+      {
+       "fa": "خَریدِه باشَد",
+       "a": "او"
+      },
+      {
+       "fa": "خَریدِه باشیم",
+       "a": "ما"
+      },
+      {
+       "fa": "خَریدِه باشید",
+       "a": "شُما"
+      },
+      {
+       "fa": "خَریدِه باشَند",
+       "a": "آنها"
+      },
+      {
+       "fa": "دیدِه باشَم",
+       "a": "مَن"
+      },
+      {
+       "fa": "دیدِه باشی",
+       "a": "تو"
+      },
+      {
+       "fa": "دیدِه باشَد",
+       "a": "او"
+      },
+      {
+       "fa": "دیدِه باشیم",
+       "a": "ما"
+      },
+      {
+       "fa": "دیدِه باشید",
+       "a": "شُما"
+      },
+      {
+       "fa": "دیدِه باشَند",
+       "a": "آنها"
+      },
+      {
+       "fa": "رَفتِه باشَم",
+       "a": "مَن"
+      },
+      {
+       "fa": "رَفتِه باشی",
+       "a": "تو"
+      },
+      {
+       "fa": "رَفتِه باشَد",
+       "a": "او"
+      },
+      {
+       "fa": "رَفتِه باشیم",
+       "a": "ما"
+      },
+      {
+       "fa": "رَفتِه باشید",
+       "a": "شُما"
+      },
+      {
+       "fa": "رَفتِه باشَند",
+       "a": "آنها"
+      },
+      {
+       "fa": "رِسیدِه باشَم",
+       "a": "مَن"
+      },
+      {
+       "fa": "رِسیدِه باشی",
+       "a": "تو"
+      },
+      {
+       "fa": "رِسیدِه باشَد",
+       "a": "او"
+      },
+      {
+       "fa": "رِسیدِه باشیم",
+       "a": "ما"
+      },
+      {
+       "fa": "رِسیدِه باشید",
+       "a": "شُما"
+      },
+      {
+       "fa": "رِسیدِه باشَند",
+       "a": "آنها"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "titel": "Wenn-Blitz",
+   "vorschau": "اَگَر … باشی",
+   "karten": [
+    {
+     "typ": "tempo",
+     "titel": "Blitz: alle Sätze",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 70,
+     "ziel": 12,
+     "woerter": [
+      {
+       "fa": "اگر تصمیمت را گرفته‌ای، به من بگو!",
+       "a": "Wenn du dich entschieden hast, sag es mir!"
+      },
+      {
+       "fa": "اگر برای مینو هدیه خریده‌ای، به من خبر بده!",
+       "a": "Wenn du schon ein Geschenk für Minu gekauft hast, sag mir Bescheid!"
+      },
+      {
+       "fa": "اگر این فیلم را دیده‌ای، آخرش را نگو!",
+       "a": "Wenn du den Film schon gesehen hast, verrat das Ende nicht!"
+      },
+      {
+       "fa": "اگر تکالیفت را تمام کرده‌ای، می‌توانی بیرون بروی.",
+       "a": "Wenn du deine Hausaufgaben fertig hast, darfst du rausgehen."
+      },
+      {
+       "fa": "اگر نامه را فرستاده‌ای، فردا به دستش می‌رسد.",
+       "a": "Wenn du den Brief abgeschickt hast, kommt er morgen bei ihm/ihr an."
+      },
+      {
+       "fa": "اگر غذا نخورده‌ای، در یخچال سوپ هست.",
+       "a": "Wenn du noch nichts gegessen hast: Im Kühlschrank ist Suppe."
+      },
+      {
+       "fa": "اگر تا چهارشنبه چیزی نخریده باشی، می‌توانی در هدیه‌ی ما شریک شوی.",
+       "a": "Falls du bis Mittwoch nichts gekauft hast, kannst du dich an unserem Geschenk beteiligen."
+      },
+      {
+       "fa": "اگر کرونا گرفته باشد، من هم در خانه می‌مانم.",
+       "a": "Falls er/sie Corona hat, bleibe ich auch zu Hause."
+      },
+      {
+       "fa": "اگر تا ساعت هشت نرسیده باشند، بدون آنها شروع می‌کنیم.",
+       "a": "Falls sie bis acht Uhr nicht angekommen sind, fangen wir ohne sie an."
+      },
+      {
+       "fa": "اگر تا آخر ماه کار پیدا کرده باشم، یک جشن خواهم گرفت.",
+       "a": "Wenn ich bis Ende des Monats Arbeit gefunden habe, werde ich eine Party feiern."
+      },
+      {
+       "fa": "اگر قطار رفته باشد، با تاکسی می‌رویم.",
+       "a": "Falls der Zug schon weg ist, nehmen wir ein Taxi."
+      },
+      {
+       "fa": "ممکن است که تو هم کرونا گرفته باشی.",
+       "a": "Es kann sein, dass du dich auch angesteckt hast."
+      },
+      {
+       "fa": "شاید او هنوز به خانه نرسیده باشد.",
+       "a": "Vielleicht ist er/sie noch nicht zu Hause angekommen."
+      },
+      {
+       "fa": "فکر نمی‌کنم که او این را گفته باشد.",
+       "a": "Ich glaube nicht, dass er/sie das gesagt hat."
+      },
+      {
+       "fa": "امیدوارم که به شما خوش گذشته باشد.",
+       "a": "Ich hoffe, Sie hatten eine schöne Zeit."
+      },
+      {
+       "fa": "شاید کلیدم را در کلاس جا گذاشته باشم.",
+       "a": "Vielleicht habe ich meinen Schlüssel im Kurs liegen lassen."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welcher Satz ist das?",
+     "fragen": [
+      {
+       "frage": "„Wenn du den Brief abgeschickt hast, kommt er morgen bei ihm/ihr an.“",
+       "optionen": [
+        "اگر نامه را فرستاده‌ای، فردا به دستش می‌رسد.",
+        "شاید کلیدم را در کلاس جا گذاشته باشم.",
+        "اگر این فیلم را دیده‌ای، آخرش را نگو!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Wenn du noch nichts gegessen hast: Im Kühlschrank ist Suppe.“",
+       "optionen": [
+        "اگر غذا نخورده‌ای، در یخچال سوپ هست.",
+        "اگر نامه را فرستاده‌ای، فردا به دستش می‌رسد.",
+        "اگر کرونا گرفته باشد، من هم در خانه می‌مانم."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Falls du bis Mittwoch nichts gekauft hast, kannst du dich an unserem Geschenk beteiligen.“",
+       "optionen": [
+        "اگر تا چهارشنبه چیزی نخریده باشی، می‌توانی در هدیه‌ی ما شریک شوی.",
+        "فکر نمی‌کنم که او این را گفته باشد.",
+        "اگر قطار رفته باشد، با تاکسی می‌رویم."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Falls der Zug schon weg ist, nehmen wir ein Taxi.“",
+       "optionen": [
+        "اگر قطار رفته باشد، با تاکسی می‌رویم.",
+        "اگر این فیلم را دیده‌ای، آخرش را نگو!",
+        "شاید کلیدم را در کلاس جا گذاشته باشم."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Wenn du deine Hausaufgaben fertig hast, darfst du rausgehen.“",
+       "optionen": [
+        "اگر تکالیفت را تمام کرده‌ای، می‌توانی بیرون بروی.",
+        "اگر این فیلم را دیده‌ای، آخرش را نگو!",
+        "شاید او هنوز به خانه نرسیده باشد."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Wenn ich bis Ende des Monats Arbeit gefunden habe, werde ich eine Party feiern.“",
+       "optionen": [
+        "اگر تا آخر ماه کار پیدا کرده باشم، یک جشن خواهم گرفت.",
+        "شاید او هنوز به خانه نرسیده باشد.",
+        "اگر غذا نخورده‌ای، در یخچال سوپ هست."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Falls er/sie Corona hat, bleibe ich auch zu Hause.“",
+       "optionen": [
+        "اگر کرونا گرفته باشد، من هم در خانه می‌مانم.",
+        "شاید کلیدم را در کلاس جا گذاشته باشم.",
+        "اگر تا آخر ماه کار پیدا کرده باشم، یک جشن خواهم گرفت."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Ich hoffe, Sie hatten eine schöne Zeit.“",
+       "optionen": [
+        "امیدوارم که به شما خوش گذشته باشد.",
+        "اگر کرونا گرفته باشد، من هم در خانه می‌مانم.",
+        "فکر نمی‌کنم که او این را گفته باشد."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d",
+   "titel": "Lücken & Satzbau",
+   "vorschau": "… ___ باشَد",
+   "karten": [
+    {
+     "typ": "wahl",
+     "titel": "Was passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>اگر تا جمعه کار پیدا نکرده ___، به برلین می‌روم.</span><br><span class='mini'>Falls ich bis Freitag keine Arbeit gefunden habe …</span>",
+       "optionen": [
+        "باشم",
+        "بودم",
+        "هستم"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>اگر تا جمعه کار پیدا نکرده باشم، به برلین می‌روم.</span>"
+      },
+      {
+       "frage": "<span class='fa'>اگر نان ___، لطفا بخر.</span><br><span class='mini'>Wenn du noch kein Brot gekauft hast …</span>",
+       "optionen": [
+        "نخریده‌ای",
+        "نخریده بودی",
+        "نمی‌خریدی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>اگر نان نخریده‌ای، لطفا بخر.</span>"
+      },
+      {
+       "frage": "<span class='fa'>شاید او ___ باشد.</span><br><span class='mini'>Vielleicht ist er/sie gegangen.</span>",
+       "optionen": [
+        "رفته",
+        "برود",
+        "می‌رفت"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>شاید او رفته باشد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>ممکن است ___ باشند.</span><br><span class='mini'>Es kann sein, dass sie angekommen sind.</span>",
+       "optionen": [
+        "رسیده",
+        "برسند",
+        "می‌رسیدند"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>ممکن است رسیده باشند.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "bauen",
+     "titel": "Baue den Satz",
+     "trenner": " ",
+     "woerter": [
+      {
+       "fa": "اگر نامه را فرستاده‌ای، فردا به دستش می‌رسد.",
+       "tr": "agar nāme rā ferestāde-ī, fardā be dastasch mīresad.",
+       "de": "Wenn du den Brief abgeschickt hast, kommt er morgen bei ihm/ihr an.",
+       "emoji": "✉️",
+       "teile": [
+        "اگر",
+        "نامه",
+        "را",
+        "فرستاده‌ای",
+        "فردا",
+        "به",
+        "دستش",
+        "می‌رسد"
+       ],
+       "extra": [
+        "بودی"
+       ]
+      },
+      {
+       "fa": "اگر تا ساعت هشت نرسیده باشند، بدون آنها شروع می‌کنیم.",
+       "tr": "agar tā sāʿat-e hascht naresīde bāschand, bedūn-e ānhā schorūʿ mīkonīm.",
+       "de": "Falls sie bis acht Uhr nicht angekommen sind, fangen wir ohne sie an.",
+       "emoji": "🕗",
+       "teile": [
+        "اگر",
+        "تا",
+        "ساعت",
+        "هشت",
+        "نرسیده",
+        "باشند",
+        "بدون",
+        "آنها",
+        "شروع",
+        "می‌کنیم"
+       ],
+       "extra": [
+        "بودی"
+       ]
+      },
+      {
+       "fa": "اگر برای مینو هدیه خریده‌ای، به من خبر بده!",
+       "tr": "agar barāye mīnū hedye charīde-ī, be man chabar bede!",
+       "de": "Wenn du schon ein Geschenk für Minu gekauft hast, sag mir Bescheid!",
+       "emoji": "🎁",
+       "teile": [
+        "اگر",
+        "برای",
+        "مینو",
+        "هدیه",
+        "خریده‌ای",
+        "به",
+        "من",
+        "خبر",
+        "بده"
+       ],
+       "extra": [
+        "بودی"
+       ]
+      },
+      {
+       "fa": "فکر نمی‌کنم که او این را گفته باشد.",
+       "tr": "fekr nemīkonam ke ū īn rā gofte bāschad.",
+       "de": "Ich glaube nicht, dass er/sie das gesagt hat.",
+       "emoji": "🤨",
+       "teile": [
+        "فکر",
+        "نمی‌کنم",
+        "که",
+        "او",
+        "این",
+        "را",
+        "گفته",
+        "باشد"
+       ],
+       "extra": [
+        "بودی"
+       ]
+      },
+      {
+       "fa": "اگر کرونا گرفته باشد، من هم در خانه می‌مانم.",
+       "tr": "agar koronā gerefte bāschad, man ham dar chāne mīmānam.",
+       "de": "Falls er/sie Corona hat, bleibe ich auch zu Hause.",
+       "emoji": "🦠",
+       "teile": [
+        "اگر",
+        "کرونا",
+        "گرفته",
+        "باشد",
+        "من",
+        "هم",
+        "در",
+        "خانه",
+        "می‌مانم"
+       ],
+       "extra": [
+        "بودی"
+       ]
+      },
+      {
+       "fa": "اگر این فیلم را دیده‌ای، آخرش را نگو!",
+       "tr": "agar īn fīlm rā dīde-ī, ācharasch rā nagū!",
+       "de": "Wenn du den Film schon gesehen hast, verrat das Ende nicht!",
+       "emoji": "🎬",
+       "teile": [
+        "اگر",
+        "این",
+        "فیلم",
+        "را",
+        "دیده‌ای",
+        "آخرش",
+        "را",
+        "نگو"
+       ],
+       "extra": [
+        "بودی"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "e",
+   "titel": "Wortschatz: Lektion 23",
+   "vorschau": "هَمخانه مَریض",
+   "karten": [
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "مُمکِن",
+       "tr": "momken",
+       "de": "möglich",
+       "emoji": "🎲"
+      },
+      {
+       "fa": "تا",
+       "tr": "tā",
+       "de": "bis (zeitlich)",
+       "emoji": "🏁"
+      },
+      {
+       "fa": "شایَد",
+       "tr": "schāyad",
+       "de": "vielleicht",
+       "emoji": "🤷"
+      },
+      {
+       "fa": "هَمخانه",
+       "tr": "hamchāne",
+       "de": "Mitbewohner/in",
+       "emoji": "🏠"
+      },
+      {
+       "fa": "تِست",
+       "tr": "test",
+       "de": "Test",
+       "emoji": "🧪"
+      },
+      {
+       "fa": "مَریض",
+       "tr": "marīz",
+       "de": "krank",
+       "emoji": "🤒"
+      }
+     ],
+     "titel": "Memory: Bild & Wort"
+    },
+    {
+     "typ": "memory",
+     "links": "tr",
+     "paare": [
+      {
+       "fa": "هَمخانه",
+       "tr": "hamchāne",
+       "de": "Mitbewohner/in",
+       "emoji": "🏠"
+      },
+      {
+       "fa": "آفتابی",
+       "tr": "āftābī",
+       "de": "sonnig",
+       "emoji": "☀️"
+      },
+      {
+       "fa": "مُثبَت",
+       "tr": "mosbat",
+       "de": "positiv",
+       "emoji": "➕"
+      },
+      {
+       "fa": "کُرونا",
+       "tr": "koronā",
+       "de": "Corona",
+       "emoji": "🦠"
+      },
+      {
+       "fa": "مُمکِن",
+       "tr": "momken",
+       "de": "möglich",
+       "emoji": "🎲"
+      },
+      {
+       "fa": "شایَد",
+       "tr": "schāyad",
+       "de": "vielleicht",
+       "emoji": "🤷"
+      }
+     ],
+     "titel": "Memory: Schrift & Aussprache"
+    },
+    {
+     "typ": "bauen",
+     "titel": "Schreib das Wort ab",
+     "zeigen": true,
+     "woerter": [
+      {
+       "fa": "تِست",
+       "tr": "test",
+       "de": "Test",
+       "emoji": "🧪",
+       "teile": [
+        "ت",
+        "س",
+        "ت"
+       ],
+       "extra": [
+        "ک"
+       ]
+      },
+      {
+       "fa": "هَمخانه",
+       "tr": "hamchāne",
+       "de": "Mitbewohner/in",
+       "emoji": "🏠",
+       "teile": [
+        "ه",
+        "م",
+        "خ",
+        "ا",
+        "ن",
+        "ه"
+       ],
+       "extra": [
+        "س"
+       ]
+      },
+      {
+       "fa": "شایَد",
+       "tr": "schāyad",
+       "de": "vielleicht",
+       "emoji": "🤷",
+       "teile": [
+        "ش",
+        "ا",
+        "ی",
+        "د"
+       ],
+       "extra": [
+        "ب"
+       ]
+      },
+      {
+       "fa": "تا",
+       "tr": "tā",
+       "de": "bis (zeitlich)",
+       "emoji": "🏁",
+       "teile": [
+        "ت",
+        "ا"
+       ],
+       "extra": [
+        "ک"
+       ]
+      },
+      {
+       "fa": "آفتابی",
+       "tr": "āftābī",
+       "de": "sonnig",
+       "emoji": "☀️",
+       "teile": [
+        "آ",
+        "ف",
+        "ت",
+        "ا",
+        "ب",
+        "ی"
+       ],
+       "extra": [
+        "ک"
+       ]
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitzlesen: Bedeutung",
+     "modus": "de",
+     "sekunden": 60,
+     "ziel": 12,
+     "woerter": [
+      {
+       "fa": "هَمخانه",
+       "de": "Mitbewohner/in"
+      },
+      {
+       "fa": "مَریض",
+       "de": "krank"
+      },
+      {
+       "fa": "کُرونا",
+       "de": "Corona"
+      },
+      {
+       "fa": "تَماس",
+       "de": "Kontakt"
+      },
+      {
+       "fa": "آفتابی",
+       "de": "sonnig"
+      },
+      {
+       "fa": "تِست",
+       "de": "Test"
+      },
+      {
+       "fa": "مُثبَت",
+       "de": "positiv"
+      },
+      {
+       "fa": "مَنفی",
+       "de": "negativ"
+      },
+      {
+       "fa": "شایَد",
+       "de": "vielleicht"
+      },
+      {
+       "fa": "مُمکِن",
+       "de": "möglich"
+      },
+      {
+       "fa": "تا",
+       "de": "bis (zeitlich)"
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitzlesen: Aussprache",
+     "modus": "tr",
+     "sekunden": 60,
+     "ziel": 12,
+     "woerter": [
+      {
+       "fa": "هَمخانه",
+       "tr": "hamchāne"
+      },
+      {
+       "fa": "مَریض",
+       "tr": "marīz"
+      },
+      {
+       "fa": "کُرونا",
+       "tr": "koronā"
+      },
+      {
+       "fa": "تَماس",
+       "tr": "tamās"
+      },
+      {
+       "fa": "آفتابی",
+       "tr": "āftābī"
+      },
+      {
+       "fa": "تِست",
+       "tr": "test"
+      },
+      {
+       "fa": "مُثبَت",
+       "tr": "mosbat"
+      },
+      {
+       "fa": "مَنفی",
+       "tr": "manfī"
+      },
+      {
+       "fa": "شایَد",
+       "tr": "schāyad"
+      },
+      {
+       "fa": "مُمکِن",
+       "tr": "momken"
+      },
+      {
+       "fa": "تا",
+       "tr": "tā"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

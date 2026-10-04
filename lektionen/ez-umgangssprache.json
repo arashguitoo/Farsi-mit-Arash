@@ -1,0 +1,198 @@
+{
+ "id": "ug",
+ "art": "umgangssprache",
+ "titel": "Umgangssprache: So spricht man im Alltag",
+ "beschreibung": "Freiwilliger Extra-Teil: Ezāfe und „ist“ im Gespräch.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "So spricht man: Ezāfe & ist",
+   "vorschau": "قَشَنگه · خونه",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Schrift ≠ Gespräch",
+     "text": "<ul><li>Das Ezāfe bleibt auch im Gespräch: <span class='fa'>کیفِ قِرمِز</span>.</li><li><span class='fa'>اَست</span> wird zu <b>-e</b>: <span class='fa'>قَشَنگ اَست → قَشَنگه</span> <i>ghaschange</i></li><li><b>ān</b> wird oft zu <b>ūn</b>: <span class='fa'>خانِه → خونه</span> <i>chūne</i>, <span class='fa'>گِران → گِرون</span> <i>gerūn</i></li><li><span class='fa'>چیست؟ → چیه؟</span> <i>tschiye?</i> – was ist?</li><li><span class='fa'>کُجایی هَستی؟</span> – „Woher bist du?“ (wörtlich: Wo‑isch bist du?)</li></ul>",
+     "stil": "merke"
+    },
+    {
+     "typ": "paare",
+     "links": "x",
+     "paare": [
+      {
+       "fa": "خانِه‌ی مَن",
+       "tr": "chāne-ye man",
+       "de": "mein Haus",
+       "x": "خونه‌ی مَن"
+      },
+      {
+       "fa": "اِسمِ تو چیست؟",
+       "tr": "esm-e to tschīst?",
+       "de": "Wie heißt du?",
+       "x": "اِسمِت چیه؟"
+      },
+      {
+       "fa": "قَشَنگ اَست",
+       "tr": "ghaschang ast",
+       "de": "ist hübsch",
+       "x": "قَشَنگه"
+      },
+      {
+       "fa": "اَهلِ کُجا هَستی؟",
+       "tr": "ahl-e kodschā hastī?",
+       "de": "Woher kommst du?",
+       "x": "کُجایی هَستی؟"
+      },
+      {
+       "fa": "گِران اَست",
+       "tr": "gerān ast",
+       "de": "ist teuer",
+       "x": "گِرونه"
+      }
+     ],
+     "titel": "Schrift ↔ Gespräch"
+    },
+    {
+     "typ": "sortieren",
+     "titel": "Schrift oder Gespräch?",
+     "frage": "Schriftsprache oder Umgangssprache?",
+     "kategorien": [
+      "✍️ Schriftsprache",
+      "🗣️ Umgangssprache"
+     ],
+     "items": [
+      {
+       "fa": "خانِه‌ی مَن",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "اِسمِ تو چیست؟",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "قَشَنگ اَست",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "اَهلِ کُجا هَستی؟",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "گِران اَست",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "خونه‌ی مَن",
+       "k": 1,
+       "say": false,
+       "e": "<i>chūne-ye man</i> – geschrieben: <span class='fa'>خانِه‌ی مَن</span>"
+      },
+      {
+       "fa": "اِسمِت چیه؟",
+       "k": 1,
+       "say": false,
+       "e": "<i>esmet tschiye?</i> – geschrieben: <span class='fa'>اِسمِ تو چیست؟</span>"
+      },
+      {
+       "fa": "قَشَنگه",
+       "k": 1,
+       "say": false,
+       "e": "<i>ghaschange</i> – geschrieben: <span class='fa'>قَشَنگ اَست</span>"
+      },
+      {
+       "fa": "کُجایی هَستی؟",
+       "k": 1,
+       "say": false,
+       "e": "<i>kodschāyī hastī?</i> – geschrieben: <span class='fa'>اَهلِ کُجا هَستی؟</span>"
+      },
+      {
+       "fa": "گِرونه",
+       "k": 1,
+       "say": false,
+       "e": "<i>gerūne</i> – geschrieben: <span class='fa'>گِران اَست</span>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Kennenlernen auf der Party",
+   "vorschau": "اِسمِت چیه؟",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Auf einer Party",
+     "text": "Umgangssprache! Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "سَلام! اِسمِت چیه؟",
+       "tr": "salām! esmet tschiye?",
+       "de": "Hallo! Wie heißt du?"
+      },
+      {
+       "fa": "نیما. تو کُجایی هَستی؟",
+       "tr": "nīmā. to kodschāyī hastī?",
+       "de": "Nima. Woher kommst du?"
+      },
+      {
+       "fa": "مَن آلمانی‌اَم، اَهلِ کیل.",
+       "tr": "man ālmānī-am, ahl-e kīl.",
+       "de": "Ich bin Deutsche, aus Kiel."
+      },
+      {
+       "fa": "چه جالِب! کیل قَشَنگه؟",
+       "tr": "tsche dschāleb! kīl ghaschange?",
+       "de": "Wie interessant! Ist Kiel hübsch?"
+      },
+      {
+       "fa": "آره، خِیلی قَشَنگه، وَلی هَواش سَرده.",
+       "tr": "āre, cheylī ghaschange, walī hawāsch sarde.",
+       "de": "Ja, sehr hübsch, aber das Wetter ist kalt."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Verstanden?",
+     "fragen": [
+      {
+       "frage": "Woher kommt die Frau?",
+       "optionen": [
+        "aus Kiel",
+        "aus Teheran",
+        "aus Hamburg"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was sagt sie über Kiel?",
+       "optionen": [
+        "hübsch, aber kalt",
+        "groß und warm",
+        "hässlich"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "<span class='fa'>قَشَنگه</span> in der Schriftsprache:",
+       "optionen": [
+        "قَشَنگ اَست",
+        "قَشَنگ هَستَم",
+        "قَشَنگِ"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

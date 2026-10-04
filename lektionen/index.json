@@ -1,108 +1,471 @@
 {
-  "titel": "Farsi-Lernpfad",
-  "lektionen": [
-    {
-      "id": "01",
-      "nummer": 1,
-      "titel": "Das persische Alphabet",
-      "titelFa": "اَلِفبای فارسی",
-      "untertitel": "Alle 32 Buchstaben Schritt für Schritt – vokalisiert",
-      "datei": "01-alphabet.json",
-      "standard": "offen",
-      "zusatz": [
-        "01-zusatz-1.json"
-      ],
-      "wortschatz": "ws-01.json"
-    },
-    {
-      "id": "02",
-      "nummer": 2,
-      "titel": "Wer bin ich? – sein, Berufe, Gefühle",
-      "titelFa": "مَن کیستَم؟",
-      "untertitel": "Pronomen, hastam / nīstam, Fragen, Berufe, Gefühle, erste Texte",
-      "datei": "02-sein.json",
-      "standard": "offen",
-      "zusatz": [
-        "02-texte.json",
-        "02-zusatz-1.json",
-        "02-umgangssprache.json"
-      ],
-      "wortschatz": "ws-02.json"
-    },
-    {
-      "id": "03",
-      "nummer": 3,
-      "titel": "Haben – Familie, Zahlen, Dinge",
-      "titelFa": "داشتَن",
-      "untertitel": "dāram / nadāram, Familie, Zahlen 1–5, ein … / der … (یک / ـی)",
-      "standard": "offen",
-      "wortschatz": "ws-03.json",
-      "datei": "03-haben.json",
-      "zusatz": [
-        "03-texte.json",
-        "03-zusatz-1.json",
-        "03-umgangssprache.json"
-      ]
-    },
-    {
-      "id": "04",
-      "nummer": 4,
-      "titel": "Mögen – Gemüse, Obst & Getränke",
-      "titelFa": "دوست داشتَن",
-      "untertitel": "dūst dāram / dūst nadāram, 23 Gemüse, Obst, Essen, را",
-      "standard": "offen",
-      "datei": "04-moegen.json",
-      "zusatz": [
-        "04-texte.json",
-        "04-zusatz-1.json",
-        "04-umgangssprache.json"
-      ],
-      "wortschatz": "ws-04.json"
-    },
-    {
-      "id": "05",
-      "nummer": 5,
-      "titel": "Gestern – das Präteritum",
-      "titelFa": "گُذَشتِه‌ی ساده",
-      "untertitel": "Tagesablauf, Uhrzeit, Orte, Verneinung, Fragen, war & hatte",
-      "standard": "offen",
-      "datei": "05-gestern.json",
-      "zusatz": [
-        "05-texte.json",
-        "05-zusatz-1.json",
-        "05-umgangssprache.json"
-      ],
-      "wortschatz": "ws-05.json"
-    },
-    {
-      "id": "06",
-      "nummer": 6,
-      "titel": "Wen hast du gesehen? – mein, dein & را",
-      "titelFa": "خواهَرَت را دیدَم",
-      "untertitel": "Präteritum, Possessivpronomen, Objekt mit را, in der Stadt",
-      "datei": "06-wen.json",
-      "standard": "offen",
-      "zusatz": [
-        "06-texte.json",
-        "06-zusatz-1.json",
-        "06-umgangssprache.json"
-      ],
-      "wortschatz": "ws-06.json"
-    },
-    {
-      "id": "07",
-      "nummer": 7,
-      "titel": "Die Feier – Plural",
-      "titelFa": "جَمع",
-      "untertitel": "Präteritum, Mehrzahl mit ـها / ـان, Zahlen bis 100, Alter",
-      "datei": "07-plural.json",
-      "standard": "offen",
-      "zusatz": [
-        "07-texte.json",
-        "07-zusatz-1.json",
-        "07-umgangssprache.json"
-      ],
-      "wortschatz": "ws-07.json"
-    }
-  ]
+ "titel": "Farsi-Lernpfad",
+ "bereiche": [
+  {
+   "id": "a",
+   "titel": "Anfänger",
+   "untertitel": "Persisch I",
+   "fa": "مُقَدَّماتی",
+   "icon": "🌱",
+   "standard": "offen"
+  },
+  {
+   "id": "f1",
+   "titel": "Fortgeschritten 1",
+   "untertitel": "Persisch II",
+   "fa": "پیشرَفتِه ۱",
+   "icon": "🌿",
+   "standard": "offen"
+  },
+  {
+   "id": "f2",
+   "titel": "Fortgeschritten 2",
+   "untertitel": "Persisch III",
+   "fa": "پیشرَفتِه ۲",
+   "icon": "🌳",
+   "standard": "offen"
+  },
+  {
+   "id": "k",
+   "titel": "Konversation",
+   "untertitel": "Sprechen im Alltag",
+   "fa": "گُفت‌وگو",
+   "icon": "💬",
+   "standard": "offen"
+  }
+ ],
+ "lektionen": [
+  {
+   "id": "01",
+   "bereich": "a",
+   "nummer": 1,
+   "titel": "Das persische Alphabet",
+   "titelFa": "اَلِفبای فارسی",
+   "untertitel": "Alle 32 Buchstaben Schritt für Schritt – vokalisiert",
+   "datei": "01-alphabet.json",
+   "standard": "offen",
+   "zusatz": [
+    "01-zusatz-1.json"
+   ],
+   "wortschatz": "ws-01.json"
+  },
+  {
+   "id": "02",
+   "bereich": "a",
+   "nummer": 2,
+   "titel": "Wer bin ich? – sein, Berufe, Gefühle",
+   "titelFa": "مَن کیستَم؟",
+   "untertitel": "Pronomen, hastam / nīstam, Fragen, Berufe, Gefühle, erste Texte",
+   "datei": "02-sein.json",
+   "standard": "offen",
+   "zusatz": [
+    "02-texte.json",
+    "02-zusatz-1.json",
+    "02-umgangssprache.json"
+   ],
+   "wortschatz": "ws-02.json"
+  },
+  {
+   "id": "ez",
+   "bereich": "a",
+   "nummer": 3,
+   "titel": "Das große Haus – Ezāfe & Farben",
+   "titelFa": "اِضافِه",
+   "untertitel": "Nomen + -e + Adjektiv, mein Buch, Farben, Herkunft, mein Zimmer",
+   "datei": "ez-ezafe.json",
+   "standard": "offen",
+   "zusatz": [
+    "ez-texte.json",
+    "ez-zusatz-1.json",
+    "ez-umgangssprache.json"
+   ],
+   "wortschatz": "ws-ez.json"
+  },
+  {
+   "id": "03",
+   "bereich": "a",
+   "nummer": 4,
+   "titel": "Haben – Familie, Zahlen, Dinge",
+   "titelFa": "داشتَن",
+   "untertitel": "dāram / nadāram, Familie, Zahlen 1–5, ein … / der … (یک / ـی)",
+   "datei": "03-haben.json",
+   "standard": "offen",
+   "zusatz": [
+    "03-texte.json",
+    "03-zusatz-1.json",
+    "03-umgangssprache.json"
+   ],
+   "wortschatz": "ws-03.json"
+  },
+  {
+   "id": "04",
+   "bereich": "a",
+   "nummer": 5,
+   "titel": "Mögen – Gemüse, Obst & Getränke",
+   "titelFa": "دوست داشتَن",
+   "untertitel": "dūst dāram / dūst nadāram, 23 Gemüse, Obst, Essen, را",
+   "datei": "04-moegen.json",
+   "standard": "offen",
+   "zusatz": [
+    "04-texte.json",
+    "04-zusatz-1.json",
+    "04-umgangssprache.json"
+   ],
+   "wortschatz": "ws-04.json"
+  },
+  {
+   "id": "05",
+   "bereich": "a",
+   "nummer": 6,
+   "titel": "Gestern – das Präteritum",
+   "titelFa": "گُذَشتِه‌ی ساده",
+   "untertitel": "Tagesablauf, Uhrzeit, Orte, Verneinung, Fragen, war & hatte",
+   "datei": "05-gestern.json",
+   "standard": "offen",
+   "zusatz": [
+    "05-texte.json",
+    "05-zusatz-1.json",
+    "05-umgangssprache.json"
+   ],
+   "wortschatz": "ws-05.json"
+  },
+  {
+   "id": "06",
+   "bereich": "a",
+   "nummer": 7,
+   "titel": "Wen hast du gesehen? – mein, dein & را",
+   "titelFa": "خواهَرَت را دیدَم",
+   "untertitel": "Präteritum, Possessivpronomen, Objekt mit را, in der Stadt",
+   "datei": "06-wen.json",
+   "standard": "offen",
+   "zusatz": [
+    "06-texte.json",
+    "06-zusatz-1.json",
+    "06-umgangssprache.json"
+   ],
+   "wortschatz": "ws-06.json"
+  },
+  {
+   "id": "07",
+   "bereich": "a",
+   "nummer": 8,
+   "titel": "Die Feier – Plural",
+   "titelFa": "جَمع",
+   "untertitel": "Präteritum, Mehrzahl mit ـها / ـان, Zahlen bis 100, Alter",
+   "datei": "07-plural.json",
+   "standard": "offen",
+   "zusatz": [
+    "07-texte.json",
+    "07-zusatz-1.json",
+    "07-umgangssprache.json"
+   ],
+   "wortschatz": "ws-07.json"
+  },
+  {
+   "id": "08",
+   "bereich": "a",
+   "nummer": 9,
+   "titel": "Jeden Tag – das Präsens",
+   "titelFa": "حالِ ساده",
+   "untertitel": "mī- + Präsensstamm, Gewohnheiten, Mahlzeiten, Wochentage, Uhrzeit",
+   "datei": "08-alltag.json",
+   "standard": "offen",
+   "zusatz": [
+    "08-texte.json",
+    "08-zusatz-1.json",
+    "08-umgangssprache.json"
+   ],
+   "wortschatz": "ws-08.json"
+  },
+  {
+   "id": "09",
+   "bereich": "a",
+   "nummer": 10,
+   "titel": "Wo? Wann? Warum? – Fragen",
+   "titelFa": "کُجا؟ کِی؟ چِرا؟",
+   "untertitel": "Präsens, Fragewörter, Wohnen in der Stadt, Preise, Zahlen bis 1000",
+   "datei": "09-fragen.json",
+   "standard": "offen",
+   "zusatz": [
+    "09-texte.json",
+    "09-zusatz-1.json",
+    "09-umgangssprache.json"
+   ],
+   "wortschatz": "ws-09.json"
+  },
+  {
+   "id": "10",
+   "bereich": "a",
+   "nummer": 11,
+   "titel": "Weil, aber, deshalb – Konnektoren",
+   "titelFa": "چون، وَلی، بَرای هَمین",
+   "untertitel": "Präsens, Satzverbindungen, Wetter, Jahreszeiten, Monate, Datum",
+   "datei": "10-weil.json",
+   "standard": "offen",
+   "zusatz": [
+    "10-texte.json",
+    "10-zusatz-1.json",
+    "10-umgangssprache.json"
+   ],
+   "wortschatz": "ws-10.json"
+  },
+  {
+   "id": "f1test",
+   "bereich": "f1",
+   "nummer": "Test",
+   "titel": "Großer Test Persisch I",
+   "titelFa": "آزمونِ وُرودی",
+   "untertitel": "Einstufungstest: alle Themen aus Persisch I – ab 70 % öffnet sich Fortgeschritten 1",
+   "datei": "f1-test.json",
+   "standard": "offen",
+   "testStationen": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g",
+    "h",
+    "i",
+    "j",
+    "k",
+    "l",
+    "m"
+   ],
+   "bestehen": 70
+  },
+  {
+   "id": "11",
+   "bereich": "f1",
+   "nummer": 12,
+   "titel": "Schon mal in Isfahan gewesen? – Perfekt",
+   "titelFa": "ماضیِ نَقلی",
+   "untertitel": "rafte-am: Erfahrungen, Reisen, schon / noch nicht",
+   "datei": "11-perfekt.json",
+   "standard": "offen",
+   "zusatz": [
+    "11-texte.json",
+    "11-zusatz-1.json",
+    "11-umgangssprache.json"
+   ],
+   "wortschatz": "ws-11.json",
+   "voraussetzung": "f1test"
+  },
+  {
+   "id": "12",
+   "bereich": "f1",
+   "nummer": 13,
+   "titel": "Größer, am größten – Perfekt & Vergleich",
+   "titelFa": "صِفَتِ بَرتَر و بَرتَرین",
+   "untertitel": "Perfekt, Komparativ mit ـتَر, Superlativ mit ـتَرین, Kleidung & Einkaufen",
+   "datei": "12-vergleich.json",
+   "standard": "offen",
+   "zusatz": [
+    "12-texte.json",
+    "12-zusatz-1.json",
+    "12-umgangssprache.json"
+   ],
+   "wortschatz": "ws-12.json",
+   "voraussetzung": "f1test"
+  },
+  {
+   "id": "13",
+   "bereich": "f1",
+   "nummer": 14,
+   "titel": "Ich will, ich kann, ich muss – Konjunktiv",
+   "titelFa": "مُضارِعِ اِلتِزامی",
+   "untertitel": "be- + Präsensstamm, wollen, können, müssen, Freizeit & Pläne",
+   "datei": "13-wollen.json",
+   "standard": "offen",
+   "zusatz": [
+    "13-texte.json",
+    "13-zusatz-1.json",
+    "13-umgangssprache.json"
+   ],
+   "wortschatz": "ws-13.json",
+   "voraussetzung": "f1test"
+  },
+  {
+   "id": "14",
+   "bereich": "f1",
+   "nummer": 15,
+   "titel": "Damit ich … – Finalsätze mit تا",
+   "titelFa": "تا / بَرای اینکه",
+   "untertitel": "Konjunktiv, Finalsätze, vielleicht, es ist besser, Studium & Arbeit",
+   "datei": "14-damit.json",
+   "standard": "offen",
+   "zusatz": [
+    "14-texte.json",
+    "14-zusatz-1.json",
+    "14-umgangssprache.json"
+   ],
+   "wortschatz": "ws-14.json",
+   "voraussetzung": "f1test"
+  },
+  {
+   "id": "15",
+   "bereich": "f1",
+   "nummer": 16,
+   "titel": "Komm! Iss! – der Imperativ",
+   "titelFa": "اَمر",
+   "untertitel": "Konjunktiv, Imperativ, Bitten, Rezepte, Wegbeschreibung, beim Arzt",
+   "datei": "15-imperativ.json",
+   "standard": "offen",
+   "zusatz": [
+    "15-texte.json",
+    "15-zusatz-1.json",
+    "15-umgangssprache.json"
+   ],
+   "wortschatz": "ws-15.json",
+   "voraussetzung": "f1test"
+  },
+  {
+   "id": "16",
+   "bereich": "f1",
+   "nummer": 17,
+   "titel": "Früher … – durative Vergangenheit",
+   "titelFa": "ماضیِ اِستِمراری",
+   "untertitel": "mī- + Vergangenheitsstamm, Kindheit, als / während / immer wenn",
+   "datei": "16-frueher.json",
+   "standard": "offen",
+   "zusatz": [
+    "16-texte.json",
+    "16-zusatz-1.json",
+    "16-umgangssprache.json"
+   ],
+   "wortschatz": "ws-16.json",
+   "voraussetzung": "f1test"
+  },
+  {
+   "id": "17",
+   "bereich": "f1",
+   "nummer": 18,
+   "titel": "Ich hatte schon … – Plusquamperfekt",
+   "titelFa": "ماضیِ بَعید",
+   "untertitel": "rafte būdam, nachdem, bevor (+ Konjunktiv), seit, sobald",
+   "datei": "17-plusquam.json",
+   "standard": "offen",
+   "zusatz": [
+    "17-texte.json",
+    "17-zusatz-1.json",
+    "17-umgangssprache.json"
+   ],
+   "wortschatz": "ws-17.json",
+   "voraussetzung": "f1test"
+  },
+  {
+   "id": "18",
+   "bereich": "f1",
+   "nummer": 19,
+   "titel": "Morgen und später – das Futur",
+   "titelFa": "آیَندِه",
+   "untertitel": "chāham raft, Pläne, Nouruz, Zukunft",
+   "datei": "18-futur.json",
+   "standard": "offen",
+   "zusatz": [
+    "18-texte.json",
+    "18-zusatz-1.json",
+    "18-umgangssprache.json"
+   ],
+   "wortschatz": "ws-18.json",
+   "voraussetzung": "f1test"
+  },
+  {
+   "id": "19",
+   "bereich": "f2",
+   "nummer": 20,
+   "titel": "Es wird gemacht – Passiv 1",
+   "titelFa": "مَجهول",
+   "untertitel": "Partizip + šodan, Präsens & Präteritum, Persepolis, Safran & Teppich",
+   "datei": "19-passiv1.json",
+   "standard": "offen",
+   "zusatz": [
+    "19-texte.json",
+    "19-zusatz-1.json",
+    "19-umgangssprache.json"
+   ],
+   "wortschatz": "ws-19.json"
+  },
+  {
+   "id": "20",
+   "bereich": "f2",
+   "nummer": 21,
+   "titel": "Es ist gebaut worden – Passiv 2",
+   "titelFa": "مَجهول ۲",
+   "untertitel": "Passiv im Perfekt, Konjunktiv und Futur, Nachrichten, Umwelt",
+   "datei": "20-passiv2.json",
+   "standard": "offen",
+   "zusatz": [
+    "20-texte.json",
+    "20-zusatz-1.json",
+    "20-umgangssprache.json"
+   ],
+   "wortschatz": "ws-20.json"
+  },
+  {
+   "id": "21",
+   "bereich": "f2",
+   "nummer": 22,
+   "titel": "Hoffentlich! – Wünsche & Redewendungen",
+   "titelFa": "آرِزوها و اِصطِلاحات",
+   "untertitel": "kāsch, omīdwāram, Höflichkeitsformeln, Taarof, Redewendungen",
+   "datei": "21-wuensche.json",
+   "standard": "offen",
+   "zusatz": [
+    "21-texte.json",
+    "21-zusatz-1.json",
+    "21-umgangssprache.json"
+   ],
+   "wortschatz": "ws-21.json"
+  },
+  {
+   "id": "22",
+   "bereich": "f2",
+   "nummer": 23,
+   "titel": "Wenn …, dann … – Bedingungen I",
+   "titelFa": "جُملِه‌هایِ شَرطی ۱",
+   "untertitel": "اگر + Präsens/Konjunktiv/Präteritum, حتی اگر, وگرنه – Minus neue Katze",
+   "datei": "22-wenn1.json",
+   "standard": "offen",
+   "zusatz": [
+    "22-texte.json",
+    "22-zusatz-1.json",
+    "22-umgangssprache.json"
+   ],
+   "wortschatz": "ws-22.json"
+  },
+  {
+   "id": "23",
+   "bereich": "f2",
+   "nummer": 24,
+   "titel": "Falls schon passiert – Bedingungen II",
+   "titelFa": "جُملِه‌هایِ شَرطی ۲",
+   "untertitel": "اگر + Perfekt, Konjunktiv Vergangenheit, شاید/ممکن است",
+   "datei": "23-wenn2.json",
+   "standard": "offen",
+   "zusatz": [
+    "23-texte.json",
+    "23-zusatz-1.json",
+    "23-umgangssprache.json"
+   ],
+   "wortschatz": "ws-23.json"
+  },
+  {
+   "id": "24",
+   "bereich": "f2",
+   "nummer": 25,
+   "titel": "Wenn es doch so wäre – Bedingungen III",
+   "titelFa": "جُملِه‌هایِ شَرطی ۳",
+   "untertitel": "irreale Bedingungen jetzt und früher, اگر جای تو بودم",
+   "datei": "24-wenn3.json",
+   "standard": "offen",
+   "zusatz": [
+    "24-texte.json",
+    "24-zusatz-1.json",
+    "24-umgangssprache.json"
+   ],
+   "wortschatz": "ws-24.json"
+  }
+ ]
 }

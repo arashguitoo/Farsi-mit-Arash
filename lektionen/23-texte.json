@@ -1,0 +1,664 @@
+{
+ "id": "tx",
+ "art": "texte",
+ "titel": "Texte & Dialoge",
+ "beschreibung": "Lesetexte mit Fragen und Dialoge zum Ordnen.",
+ "stationen": [
+  {
+   "id": "t1",
+   "titel": "Kurztext: Montag",
+   "vorschau": "دوشنبه",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>پیام</span> – Nachricht · <span class='fa'>قبول کردن</span> – annehmen, einverstanden sein</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Kurztext: Montag",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "دوشنبه شیما به شهریار پیام می‌دهد.",
+       "tr": "doschanbe schīmā be schahriyār payām mīdahad.",
+       "de": "Am Montag schreibt Shima Shahriyar eine Nachricht."
+      },
+      {
+       "fa": "او می‌پرسد: «اگر تصمیمت را گرفته‌ای، به من بگو.»",
+       "tr": "ū mīporsad: «agar tasmīmat rā gerefte-ī, be man begū.»",
+       "de": "Sie fragt: „Wenn du dich entschieden hast, sag es mir.“"
+      },
+      {
+       "fa": "«اگر هم برای مینو هدیه خریده‌ای، خبر بده.»",
+       "tr": "«agar ham barāye mīnū hedye charīde-ī, chabar bede.»",
+       "de": "„Und wenn du schon ein Geschenk für Minu gekauft hast, sag Bescheid.“"
+      },
+      {
+       "fa": "شهریار هنوز چیزی نخریده است.",
+       "tr": "schahriyār hanūz tschīzī nacharīde ast.",
+       "de": "Shahriyar hat noch nichts gekauft."
+      },
+      {
+       "fa": "شیما می‌گوید: «اگر تا چهارشنبه چیزی نخریده باشی، در هدیه‌ی ما شریک شو!»",
+       "tr": "schīmā mīgūyad: «agar tā tschahārschanbe tschīzī nacharīde bāschī, dar hedye-ye mā scharīk schou!»",
+       "de": "Shima sagt: „Falls du bis Mittwoch nichts gekauft hast, beteilige dich an unserem Geschenk!“"
+      },
+      {
+       "fa": "شهریار قبول می‌کند. او تصمیمش را گرفته است: می‌آید!",
+       "tr": "schahriyār ghabūl mīkonad. ū tasmīmasch rā gerefte ast: mīāyad!",
+       "de": "Shahriyar ist einverstanden. Er hat sich entschieden: Er kommt!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "شهریار برای مینو هدیه خریده است.",
+       "fest": true,
+       "erkl": "Er hat <b>noch nichts</b> gekauft."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "شهریار در هدیه‌ی شیما شریک می‌شود.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "شهریار نمی‌آید.",
+       "fest": true,
+       "erkl": "Er hat sich entschieden: Er <b>kommt</b>."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Wie kommuniziert Shima am Montag?",
+       "optionen": [
+        "per Nachricht",
+        "persönlich",
+        "per Brief"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was soll Shahriyar tun, falls er nichts kauft?",
+       "optionen": [
+        "sich am Geschenk beteiligen",
+        "zu Hause bleiben",
+        "Blumen mitbringen"
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "او می‌پرسد: «اگر تصمیمت را گرفته‌ای، به من بگو.»",
+       "tr": "ū mīporsad: «agar tasmīmat rā gerefte-ī, be man begū.»",
+       "de": "Sie fragt: „Wenn du dich entschieden hast, sag es mir.“"
+      },
+      {
+       "fa": "«اگر هم برای مینو هدیه خریده‌ای، خبر بده.»",
+       "tr": "«agar ham barāye mīnū hedye charīde-ī, chabar bede.»",
+       "de": "„Und wenn du schon ein Geschenk für Minu gekauft hast, sag Bescheid.“"
+      },
+      {
+       "fa": "شهریار هنوز چیزی نخریده است.",
+       "tr": "schahriyār hanūz tschīzī nacharīde ast.",
+       "de": "Shahriyar hat noch nichts gekauft."
+      },
+      {
+       "fa": "شیما می‌گوید: «اگر تا چهارشنبه چیزی نخریده باشی، در هدیه‌ی ما شریک شو!»",
+       "tr": "schīmā mīgūyad: «agar tā tschahārschanbe tschīzī nacharīde bāschī, dar hedye-ye mā scharīk schou!»",
+       "de": "Shima sagt: „Falls du bis Mittwoch nichts gekauft hast, beteilige dich an unserem Geschenk!“"
+      },
+      {
+       "fa": "شهریار قبول می‌کند. او تصمیمش را گرفته است: می‌آید!",
+       "tr": "schahriyār ghabūl mīkonad. ū tasmīmasch rā gerefte ast: mīāyad!",
+       "de": "Shahriyar ist einverstanden. Er hat sich entschieden: Er kommt!"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t2",
+   "titel": "Text: Wo ist mein Schlüssel?",
+   "vorschau": "کلیدم کجاست؟",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>ایستادن</span> – stehen · <span class='fa'>افتادن</span> – fallen · <span class='fa'>سر کوچه</span> – an der Ecke · <span class='fa'>سفارش دادن</span> – bestellen · <span class='fa'>جیب</span> – Tasche · <span class='fa'>کت</span> – Jacke · <span class='fa'>راه افتادن</span> – losgehen</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Text: Wo ist mein Schlüssel?",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "یوناس جلوی در خانه ایستاده است، اما کلیدش را پیدا نمی‌کند.",
+       "tr": "yūnās dschelou-ye dar-e chāne īstāde ast, ammā kelīdasch rā peydā nemīkonad.",
+       "de": "Jonas steht vor der Haustür, findet aber seinen Schlüssel nicht."
+      },
+      {
+       "fa": "او فکر می‌کند: «شاید کلیدم را در کلاس جا گذاشته باشم.»",
+       "tr": "ū fekr mīkonad: «schāyad kelīdam rā dar kelās dschā gozāschte bāscham.»",
+       "de": "Er denkt: „Vielleicht habe ich meinen Schlüssel im Kurs liegen lassen.“"
+      },
+      {
+       "fa": "«یا شاید در اتوبوس افتاده باشد …»",
+       "tr": "«yā schāyad dar otobūs oftāde bāschad …»",
+       "de": "„Oder vielleicht ist er im Bus heruntergefallen …“"
+      },
+      {
+       "fa": "او به همخانه‌اش، سارا، پیام می‌دهد: «اگر به خانه رسیده‌ای، لطفا در را باز کن!»",
+       "tr": "ū be hamchāneasch, sārā, payām mīdahad: «agar be chāne resīde-ī, lotfan dar rā bāz kon!»",
+       "de": "Er schreibt seiner Mitbewohnerin Sara: „Wenn du schon zu Hause bist, mach bitte die Tür auf!“"
+      },
+      {
+       "fa": "سارا جواب می‌دهد: «هنوز در کتابخانه‌ام. اگر تا ساعت شش نرسیده باشم، به کافه‌ی سر کوچه برو.»",
+       "tr": "sārā dschawāb mīdahad: «hanūz dar ketābchāne-am. agar tā sāʿat-e schesch naresīde bāscham, be kāfe-ye sar-e kūtsche borou.»",
+       "de": "Sara antwortet: „Ich bin noch in der Bibliothek. Falls ich bis sechs nicht da bin, geh ins Café an der Ecke.“"
+      },
+      {
+       "fa": "یوناس به کافه می‌رود و یک چای سفارش می‌دهد.",
+       "tr": "yūnās be kāfe mīravad o yek tschāy sefāresch mīdahad.",
+       "de": "Jonas geht ins Café und bestellt einen Tee."
+      },
+      {
+       "fa": "وقتی دستش را در جیب کتش می‌کند … کلید آنجاست!",
+       "tr": "waghtī dastasch rā dar dschīb-e katasch mīkonad … kelīd āndschāst!",
+       "de": "Als er die Hand in seine Jackentasche steckt … da ist der Schlüssel!"
+      },
+      {
+       "fa": "او می‌خندد و به سارا پیام می‌دهد: «اگر هنوز راه نیفتاده‌ای، عجله نکن! کلیدم را پیدا کردم.»",
+       "tr": "ū mīchandad o be sārā payām mīdahad: «agar hanūz rāh nayoftāde-ī, ʿadschale nakon! kelīdam rā peydā kardam.»",
+       "de": "Er lacht und schreibt Sara: „Wenn du noch nicht losgegangen bist, beeil dich nicht! Ich habe meinen Schlüssel gefunden.“"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "یوناس کلیدش را در کلاس جا گذاشته بود.",
+       "fest": true,
+       "erkl": "Der Schlüssel war in seiner <b>Jackentasche</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "سارا در کتابخانه است.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "یوناس در کافه قهوه سفارش می‌دهد.",
+       "fest": true,
+       "erkl": "Er bestellt einen <b>Tee</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "کلید در جیب کت یوناس بود.",
+       "fest": true
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Was soll Jonas tun, falls Sara bis sechs nicht da ist?",
+       "optionen": [
+        "ins Café an der Ecke gehen",
+        "in die Bibliothek kommen",
+        "nach Hause fahren"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wo war der Schlüssel?",
+       "optionen": [
+        "in seiner Jackentasche",
+        "im Bus",
+        "im Kurs"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "<span class='fa'>شاید افتاده باشد</span> bedeutet:",
+       "optionen": [
+        "vielleicht ist er heruntergefallen",
+        "er war heruntergefallen",
+        "er fällt bestimmt herunter"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t3",
+   "titel": "Profi-Text: Nachricht an die WG",
+   "vorschau": "پیام به همخانه‌ها",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>گذاشتن (گذار)</span> – legen, stellen · <span class='fa'>آب دادن</span> – gießen · <span class='fa'>خشک شدن</span> – vertrocknen</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Profi-Text: Nachricht an die WG",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "سلام بچه‌ها!",
+       "tr": "salām batschtschehā!",
+       "de": "Hallo Leute!"
+      },
+      {
+       "fa": "من تا یکشنبه در هامبورگ هستم.",
+       "tr": "man tā yekschanbe dar hāmbūrg hastam.",
+       "de": "Ich bin bis Sonntag in Hamburg."
+      },
+      {
+       "fa": "اگر کسی نان نخریده است، لطفا امروز بخرد؛ یخچال خالی است.",
+       "tr": "agar kasī nān nacharīde ast, lotfan emrūz becharad; yachtschāl chālī ast.",
+       "de": "Wenn noch niemand Brot gekauft hat, kauft bitte heute welches – der Kühlschrank ist leer."
+      },
+      {
+       "fa": "اگر نامه‌ای برای من آمده باشد، روی میزم بگذارید.",
+       "tr": "agar nāmeī barāye man āmade bāschad, rū-ye mīzam begozārīd.",
+       "de": "Falls ein Brief für mich gekommen ist, legt ihn auf meinen Tisch."
+      },
+      {
+       "fa": "اگر تا جمعه گل‌ها را آب نداده باشید، خشک می‌شوند!",
+       "tr": "agar tā dschomʿe golhā rā āb nadāde bāschīd, chosch mīschawand!",
+       "de": "Wenn ihr die Blumen bis Freitag nicht gegossen habt, vertrocknen sie!"
+      },
+      {
+       "fa": "ممنون! شاید هم زودتر برگردم. نسرین",
+       "tr": "mamnūn! schāyad ham zūdtar bargardam. nasrīn",
+       "de": "Danke! Vielleicht komme ich auch früher zurück. Nasrin"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "نسرین تا یکشنبه در هامبورگ است.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "یخچال پر است.",
+       "fest": true,
+       "erkl": "Der Kühlschrank ist <b>leer</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "گل‌ها آب لازم دارند.",
+       "fest": true
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Wohin soll ein Brief für Nasrin?",
+       "optionen": [
+        "auf ihren Tisch",
+        "in den Briefkasten",
+        "in den Kühlschrank"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was passiert, wenn die Blumen kein Wasser bekommen?",
+       "optionen": [
+        "Sie vertrocknen.",
+        "Sie blühen.",
+        "Nichts."
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d1",
+   "titel": "Dialog: Montag",
+   "vorschau": "دوشنبه",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Shima trifft Shahriyar in der Uni-Cafeteria.</p><p><span class='fa'>همان‌طور که</span> – so wie · <span class='fa'>ماندن (مان)</span> – bleiben</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "شیما: شهریار، اگر تصمیمت را برای چهارشنبه گرفته‌ای، لطفا به من بگو.",
+       "tr": "schahriyār, agar tasmīmat rā barāye tschahārschanbe gerefte-ī, lotfan be man begū.",
+       "de": "Shahriyar, wenn du dich für Mittwoch entschieden hast, sag es mir bitte."
+      },
+      {
+       "fa": "شیما: اگر هم خودت برای مینو هدیه خریده‌ای، به من خبر بده.",
+       "tr": "agar ham chodat barāye mīnū hedye charīde-ī, be man chabar bede.",
+       "de": "Und wenn du selbst schon ein Geschenk für Minu gekauft hast, sag mir Bescheid."
+      },
+      {
+       "fa": "شهریار: نه، هنوز چیزی نخریده‌ام.",
+       "tr": "na, hanūz tschīzī nacharīde-am.",
+       "de": "Nein, ich habe noch nichts gekauft."
+      },
+      {
+       "fa": "شیما: همان‌طور که گفتم: اگر تا چهارشنبه چیزی نخریده باشی، می‌توانی در هدیه‌ی ما شریک شوی!",
+       "tr": "hamāntor ke goftam: agar tā tschahārschanbe tschīzī nacharīde bāschī, mītawānī dar hedye-ye mā scharīk schawī!",
+       "de": "Wie gesagt: Falls du bis Mittwoch nichts gekauft hast, kannst du dich an unserem Geschenk beteiligen!"
+      },
+      {
+       "fa": "شهریار: عالی! تصمیمم را گرفته‌ام: می‌آیم!",
+       "tr": "ʿālī! tasmīmam rā gerefte-am: mīāyam!",
+       "de": "Super! Ich habe mich entschieden: Ich komme!"
+      },
+      {
+       "fa": "شیما: با دوچرخه؟",
+       "tr": "bā dotscharche?",
+       "de": "Mit dem Fahrrad?"
+      },
+      {
+       "fa": "شهریار: بله، اگر هوا آفتابی بماند، با دوچرخه می‌آیم.",
+       "tr": "bale, agar hawā āftābī bemānad, bā dotscharche mīāyam.",
+       "de": "Ja, wenn es sonnig bleibt, komme ich mit dem Fahrrad."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "شیما: شهریار، اگر تصمیمت را برای چهارشنبه گرفته‌ای، لطفا به من بگو.",
+       "tr": "schahriyār, agar tasmīmat rā barāye tschahārschanbe gerefte-ī, lotfan be man begū.",
+       "de": "Shahriyar, wenn du dich für Mittwoch entschieden hast, sag es mir bitte."
+      },
+      {
+       "fa": "شیما: اگر هم خودت برای مینو هدیه خریده‌ای، به من خبر بده.",
+       "tr": "agar ham chodat barāye mīnū hedye charīde-ī, be man chabar bede.",
+       "de": "Und wenn du selbst schon ein Geschenk für Minu gekauft hast, sag mir Bescheid."
+      },
+      {
+       "fa": "شهریار: نه، هنوز چیزی نخریده‌ام.",
+       "tr": "na, hanūz tschīzī nacharīde-am.",
+       "de": "Nein, ich habe noch nichts gekauft."
+      },
+      {
+       "fa": "شیما: همان‌طور که گفتم: اگر تا چهارشنبه چیزی نخریده باشی، می‌توانی در هدیه‌ی ما شریک شوی!",
+       "tr": "hamāntor ke goftam: agar tā tschahārschanbe tschīzī nacharīde bāschī, mītawānī dar hedye-ye mā scharīk schawī!",
+       "de": "Wie gesagt: Falls du bis Mittwoch nichts gekauft hast, kannst du dich an unserem Geschenk beteiligen!"
+      },
+      {
+       "fa": "شهریار: عالی! تصمیمم را گرفته‌ام: می‌آیم!",
+       "tr": "ʿālī! tasmīmam rā gerefte-am: mīāyam!",
+       "de": "Super! Ich habe mich entschieden: Ich komme!"
+      },
+      {
+       "fa": "شیما: با دوچرخه؟",
+       "tr": "bā dotscharche?",
+       "de": "Mit dem Fahrrad?"
+      },
+      {
+       "fa": "شهریار: بله، اگر هوا آفتابی بماند، با دوچرخه می‌آیم.",
+       "tr": "bale, agar hawā āftābī bemānad, bā dotscharche mīāyam.",
+       "de": "Ja, wenn es sonnig bleibt, komme ich mit dem Fahrrad."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Hat Shahriyar schon ein Geschenk gekauft?",
+       "optionen": [
+        "Nein, noch nicht.",
+        "Ja, ein Buch.",
+        "Ja, Blumen."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie hat Shahriyar sich entschieden?",
+       "optionen": [
+        "Er kommt mit.",
+        "Er bleibt zu Hause.",
+        "Er geht in die Bibliothek."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Unter welcher Bedingung kommt er mit dem Fahrrad?",
+       "optionen": [
+        "wenn es sonnig bleibt",
+        "wenn es regnet",
+        "wenn Shima mitfährt"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d2",
+   "titel": "Dialog: Dienstag",
+   "vorschau": "سه‌شنبه",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Shahriyar ruft Shima an.</p><p><span class='fa'>پیش …</span> – zu … (einer Person) · <span class='fa'>چه شده است؟</span> – was ist passiert?</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "شهریار: شیما، من شاید فردا با شما پیش مینو نیایم.",
+       "tr": "schīmā, man schāyad fardā bā schomā pīsch-e mīnū nayāyam.",
+       "de": "Shima, vielleicht komme ich morgen doch nicht mit zu Minu."
+      },
+      {
+       "fa": "شیما: چرا؟ چه شده است؟",
+       "tr": "tscherā? tsche schode ast?",
+       "de": "Warum? Was ist passiert?"
+      },
+      {
+       "fa": "شهریار: همخانه‌ام مریض شده است. اگر کرونا گرفته باشد، من هم در خانه می‌مانم.",
+       "tr": "hamchāneam marīz schode ast. agar koronā gerefte bāschad, man ham dar chāne mīmānam.",
+       "de": "Meine Mitbewohnerin ist krank geworden. Falls sie Corona hat, bleibe ich auch zu Hause."
+      },
+      {
+       "fa": "شیما: آه، چه بد! کار خوبی می‌کنی.",
+       "tr": "āh, tsche bad! kār-e chūbī mīkonī.",
+       "de": "Oh, wie blöd! Das ist richtig so."
+      },
+      {
+       "fa": "شیما: اگر با او زیاد تماس داشته‌ای، ممکن است که تو هم کرونا گرفته باشی.",
+       "tr": "agar bā ū ziyād tamās dāschte-ī, momken ast ke to ham koronā gerefte bāschī.",
+       "de": "Wenn du viel Kontakt mit ihr hattest, kann es sein, dass du dich auch angesteckt hast."
+      },
+      {
+       "fa": "شهریار: درست است. اگر تستش مثبت بوده باشد، به تو خبر می‌دهم.",
+       "tr": "dorost ast. agar testasch mosbat būde bāschad, be to chabar mīdeham.",
+       "de": "Stimmt. Falls ihr Test positiv war, sage ich dir Bescheid."
+      },
+      {
+       "fa": "شیما: امیدوارم که تو مریض نشده باشی!",
+       "tr": "omīdwāram ke to marīz naschode bāschī!",
+       "de": "Ich hoffe, du bist nicht krank geworden!"
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "شهریار: شیما، من شاید فردا با شما پیش مینو نیایم.",
+       "tr": "schīmā, man schāyad fardā bā schomā pīsch-e mīnū nayāyam.",
+       "de": "Shima, vielleicht komme ich morgen doch nicht mit zu Minu."
+      },
+      {
+       "fa": "شیما: چرا؟ چه شده است؟",
+       "tr": "tscherā? tsche schode ast?",
+       "de": "Warum? Was ist passiert?"
+      },
+      {
+       "fa": "شهریار: همخانه‌ام مریض شده است. اگر کرونا گرفته باشد، من هم در خانه می‌مانم.",
+       "tr": "hamchāneam marīz schode ast. agar koronā gerefte bāschad, man ham dar chāne mīmānam.",
+       "de": "Meine Mitbewohnerin ist krank geworden. Falls sie Corona hat, bleibe ich auch zu Hause."
+      },
+      {
+       "fa": "شیما: آه، چه بد! کار خوبی می‌کنی.",
+       "tr": "āh, tsche bad! kār-e chūbī mīkonī.",
+       "de": "Oh, wie blöd! Das ist richtig so."
+      },
+      {
+       "fa": "شیما: اگر با او زیاد تماس داشته‌ای، ممکن است که تو هم کرونا گرفته باشی.",
+       "tr": "agar bā ū ziyād tamās dāschte-ī, momken ast ke to ham koronā gerefte bāschī.",
+       "de": "Wenn du viel Kontakt mit ihr hattest, kann es sein, dass du dich auch angesteckt hast."
+      },
+      {
+       "fa": "شهریار: درست است. اگر تستش مثبت بوده باشد، به تو خبر می‌دهم.",
+       "tr": "dorost ast. agar testasch mosbat būde bāschad, be to chabar mīdeham.",
+       "de": "Stimmt. Falls ihr Test positiv war, sage ich dir Bescheid."
+      },
+      {
+       "fa": "شیما: امیدوارم که تو مریض نشده باشی!",
+       "tr": "omīdwāram ke to marīz naschode bāschī!",
+       "de": "Ich hoffe, du bist nicht krank geworden!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Wer ist krank geworden?",
+       "optionen": [
+        "Shahriyars Mitbewohnerin",
+        "Shima",
+        "Minu"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was macht Shahriyar, falls es Corona ist?",
+       "optionen": [
+        "Er bleibt zu Hause.",
+        "Er geht zum Arzt.",
+        "Er kommt trotzdem."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was hofft Shima?",
+       "optionen": [
+        "dass Shahriyar nicht krank ist",
+        "dass die Katze gesund ist",
+        "dass es regnet"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

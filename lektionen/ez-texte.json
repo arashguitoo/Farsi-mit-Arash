@@ -1,0 +1,631 @@
+{
+ "id": "tx",
+ "art": "texte",
+ "titel": "Texte & Dialoge",
+ "beschreibung": "Lesetexte mit Fragen und Dialoge zum Ordnen.",
+ "stationen": [
+  {
+   "id": "t1",
+   "titel": "Kurztext: Mein Zimmer",
+   "vorschau": "اُتاقِ مَن",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>روی</span> <i>rū-ye</i> – auf · <span class='fa'>هَمیشه</span> <i>hamīsche</i> – immer · <span class='fa'>دیوارها</span> – die Wände (Mehrzahl, kommt in Lektion 8)</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Kurztext: Mein Zimmer",
+     "text": "Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "اِسمِ مَن لِیلا اَست.",
+       "tr": "esm-e man leylā ast.",
+       "de": "Mein Name ist Leila."
+      },
+      {
+       "fa": "مَن اَهلِ تِهران هَستَم، وَلی اِمروز دانِشجو دَر کیل هَستَم.",
+       "tr": "man ahl-e tehrān hastam, walī emrūz dāneschdschū dar kīl hastam.",
+       "de": "Ich komme aus Teheran, aber heute bin ich Studentin in Kiel."
+      },
+      {
+       "fa": "اُتاقِ مَن کوچَک اَست، وَلی خِیلی روشَن اَست.",
+       "tr": "otāgh-e man kūtschak ast, walī cheylī rouschan ast.",
+       "de": "Mein Zimmer ist klein, aber sehr hell."
+      },
+      {
+       "fa": "پَنجِره‌ی اُتاق بُزُرگ اَست.",
+       "tr": "pandschere-ye otāgh bozorg ast.",
+       "de": "Das Fenster des Zimmers ist groß."
+      },
+      {
+       "fa": "دیوارها سِفید اَست و فَرشِ اُتاق قِرمِز اَست.",
+       "tr": "dīwārhā sefīd ast o farsch-e otāgh ghermez ast.",
+       "de": "Die Wände sind weiß und der Teppich des Zimmers ist rot."
+      },
+      {
+       "fa": "تَختِ مَن کِنارِ پَنجِره اَست.",
+       "tr": "tacht-e man kenār-e pandschere ast.",
+       "de": "Mein Bett steht neben dem Fenster."
+      },
+      {
+       "fa": "میزِ مَن کُهنِه اَست، وَلی صَندَلیِ مَن نو اَست.",
+       "tr": "mīz-e man kohne ast, walī sandalī-ye man no ast.",
+       "de": "Mein Tisch ist alt, aber mein Stuhl ist neu."
+      },
+      {
+       "fa": "کِتاب‌هایِ فارسیِ مَن روی میز اَست.",
+       "tr": "ketābhā-ye fārsī-ye man rū-ye mīz ast.",
+       "de": "Meine Persischbücher liegen auf dem Tisch."
+      },
+      {
+       "fa": "اُتاقِ مَن هَمیشه تَمیز اَست!",
+       "tr": "otāgh-e man hamīsche tamīz ast!",
+       "de": "Mein Zimmer ist immer sauber!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "لِیلا اَهلِ کیل اَست.",
+       "fest": true,
+       "erkl": "Leila kommt aus <b>Teheran</b> – in Kiel studiert sie."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "اُتاقِ لِیلا روشَن اَست.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "فَرشِ اُتاق سَبز اَست.",
+       "fest": true,
+       "erkl": "Der Teppich ist <b>rot</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "صَندَلی نو اَست.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "میز نو اَست.",
+       "fest": true,
+       "erkl": "Der Tisch ist <b>alt</b> (<span class='fa'>کُهنِه</span>)."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Wie ist Leilas Zimmer?",
+       "optionen": [
+        "klein, aber hell",
+        "groß und dunkel",
+        "groß und hell"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Welche Farbe haben die Wände?",
+       "optionen": [
+        "weiß",
+        "rot",
+        "blau"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wo steht das Bett?",
+       "optionen": [
+        "neben dem Fenster",
+        "neben der Tür",
+        "neben dem Schrank"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was liegt auf dem Tisch?",
+       "optionen": [
+        "ihre Persischbücher",
+        "ihr Handy",
+        "eine Lampe"
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "مَن اَهلِ تِهران هَستَم، وَلی اِمروز دانِشجو دَر کیل هَستَم.",
+       "tr": "man ahl-e tehrān hastam, walī emrūz dāneschdschū dar kīl hastam.",
+       "de": "Ich komme aus Teheran, aber heute bin ich Studentin in Kiel."
+      },
+      {
+       "fa": "اُتاقِ مَن کوچَک اَست، وَلی خِیلی روشَن اَست.",
+       "tr": "otāgh-e man kūtschak ast, walī cheylī rouschan ast.",
+       "de": "Mein Zimmer ist klein, aber sehr hell."
+      },
+      {
+       "fa": "پَنجِره‌ی اُتاق بُزُرگ اَست.",
+       "tr": "pandschere-ye otāgh bozorg ast.",
+       "de": "Das Fenster des Zimmers ist groß."
+      },
+      {
+       "fa": "دیوارها سِفید اَست و فَرشِ اُتاق قِرمِز اَست.",
+       "tr": "dīwārhā sefīd ast o farsch-e otāgh ghermez ast.",
+       "de": "Die Wände sind weiß und der Teppich des Zimmers ist rot."
+      },
+      {
+       "fa": "تَختِ مَن کِنارِ پَنجِره اَست.",
+       "tr": "tacht-e man kenār-e pandschere ast.",
+       "de": "Mein Bett steht neben dem Fenster."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t2",
+   "titel": "Text: Meine Stadt Kiel",
+   "vorschau": "شَهرِ کیل",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>اَغلَب</span> <i>aghlab</i> – oft · <span class='fa'>هَوا</span> <i>hawā</i> – Luft, Wetter · <span class='fa'>مَردُم</span> <i>mardom</i> – die Leute · <span class='fa'>مِهرَبان</span> <i>mehrabān</i> – freundlich, lieb · <span class='fa'>قَدیمی</span> <i>ghadīmī</i> – alt, historisch</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Text: Meine Stadt Kiel",
+     "text": "Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "اِسمِ مَن یوناس اَست. مَن آلمانی هَستَم.",
+       "tr": "esm-e man yūnās ast. man ālmānī hastam.",
+       "de": "Mein Name ist Jonas. Ich bin Deutscher."
+      },
+      {
+       "fa": "مَن اَهلِ هامبورگ هَستَم، وَلی دَر کیل دانِشجو هَستَم.",
+       "tr": "man ahl-e hāmbūrg hastam, walī dar kīl dāneschdschū hastam.",
+       "de": "Ich komme aus Hamburg, aber ich studiere in Kiel."
+      },
+      {
+       "fa": "کیل شَهرِ بُزُرگی نیست، وَلی شَهرِ زیبایی اَست.",
+       "tr": "kīl schahr-e bozorgī nīst, walī schahr-e zībāyī ast.",
+       "de": "Kiel ist keine große Stadt, aber es ist eine schöne Stadt."
+      },
+      {
+       "fa": "کیل کِنارِ دَریا اَست.",
+       "tr": "kīl kenār-e daryā ast.",
+       "de": "Kiel liegt am Meer."
+      },
+      {
+       "fa": "آسِمانِ کیل اَغلَب خاکِستَری اَست.",
+       "tr": "āsemān-e kīl aghlab chākestarī ast.",
+       "de": "Der Himmel von Kiel ist oft grau."
+      },
+      {
+       "fa": "هَوا اَغلَب سَرد اَست، وَلی مَردُمِ کیل مِهرَبان هَستَند.",
+       "tr": "hawā aghlab sard ast, walī mardom-e kīl mehrabān hastand.",
+       "de": "Das Wetter ist oft kalt, aber die Menschen in Kiel sind freundlich."
+      },
+      {
+       "fa": "دانِشگاهِ کیل بُزُرگ و قَدیمی اَست.",
+       "tr": "dāneschgāh-e kīl bozorg o ghadīmī ast.",
+       "de": "Die Uni Kiel ist groß und alt."
+      },
+      {
+       "fa": "مُعَلِّمِ فارسیِ ما اَهلِ شیراز اَست.",
+       "tr": "moʿallem-e fārsī-ye mā ahl-e schīrāz ast.",
+       "de": "Unser Persischlehrer kommt aus Schiras."
+      },
+      {
+       "fa": "کِلاسِ فارسی سَخت نیست. زَبانِ فارسی زیبا اَست!",
+       "tr": "kelās-e fārsī sacht nīst. zabān-e fārsī zībā ast!",
+       "de": "Der Persischkurs ist nicht schwer. Die persische Sprache ist schön!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "یوناس اَهلِ کیل اَست.",
+       "fest": true,
+       "erkl": "Er kommt aus <b>Hamburg</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "کیل کِنارِ دَریا اَست.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "آسِمانِ کیل اَغلَب آبی اَست.",
+       "fest": true,
+       "erkl": "Er ist oft <b>grau</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "مَردُمِ کیل مِهرَبان هَستَند.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "مُعَلِّمِ فارسی اَهلِ تِهران اَست.",
+       "fest": true,
+       "erkl": "Er kommt aus <b>Schiras</b>."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Was ist Jonas?",
+       "optionen": [
+        "Student in Kiel",
+        "Lehrer in Hamburg",
+        "Arzt in Kiel"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie ist Kiel?",
+       "optionen": [
+        "nicht groß, aber schön",
+        "groß und laut",
+        "klein und hässlich"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie ist das Wetter oft?",
+       "optionen": [
+        "kalt",
+        "warm",
+        "heiß"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was sagt Jonas über den Persischkurs?",
+       "optionen": [
+        "Er ist nicht schwer.",
+        "Er ist sehr schwer.",
+        "Er ist langweilig."
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d1",
+   "titel": "Dialog: Woher kommst du?",
+   "vorschau": "اَهلِ کُجا هَستی؟",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Zwei neue Studierende lernen sich in der Mensa kennen.</p>"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "آرَش: سَلام! اِسمِ مَن آرَش اَست. اِسمِ تو چیست؟",
+       "tr": "salām! esm-e man ārasch ast. esm-e to tschīst?",
+       "de": "Hallo! Ich heiße Arasch. Wie heißt du?"
+      },
+      {
+       "fa": "تارا: سَلام! اِسمِ مَن تارا اَست.",
+       "tr": "salām! esm-e man tārā ast.",
+       "de": "Hallo! Ich heiße Tara."
+      },
+      {
+       "fa": "آرَش: تو اَهلِ کُجا هَستی؟",
+       "tr": "to ahl-e kodschā hastī?",
+       "de": "Woher kommst du?"
+      },
+      {
+       "fa": "تارا: مَن اَهلِ اُتریش هَستَم. و تو؟",
+       "tr": "man ahl-e otrīsch hastam. o to?",
+       "de": "Ich komme aus Österreich. Und du?"
+      },
+      {
+       "fa": "آرَش: مَن ایرانی هَستَم، اَهلِ اِصفَهان.",
+       "tr": "man īrānī hastam, ahl-e esfahān.",
+       "de": "Ich bin Iraner, aus Isfahan."
+      },
+      {
+       "fa": "تارا: اِصفَهان شَهرِ خِیلی زیبایی اَست!",
+       "tr": "esfahān schahr-e cheylī zībāyī ast!",
+       "de": "Isfahan ist eine sehr schöne Stadt!"
+      },
+      {
+       "fa": "آرَش: بَله. کیل هَم قَشَنگ اَست.",
+       "tr": "bale. kīl ham ghaschang ast.",
+       "de": "Ja. Kiel ist auch hübsch."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "آرَش: سَلام! اِسمِ مَن آرَش اَست. اِسمِ تو چیست؟",
+       "tr": "salām! esm-e man ārasch ast. esm-e to tschīst?",
+       "de": "Hallo! Ich heiße Arasch. Wie heißt du?"
+      },
+      {
+       "fa": "تارا: سَلام! اِسمِ مَن تارا اَست.",
+       "tr": "salām! esm-e man tārā ast.",
+       "de": "Hallo! Ich heiße Tara."
+      },
+      {
+       "fa": "آرَش: تو اَهلِ کُجا هَستی؟",
+       "tr": "to ahl-e kodschā hastī?",
+       "de": "Woher kommst du?"
+      },
+      {
+       "fa": "تارا: مَن اَهلِ اُتریش هَستَم. و تو؟",
+       "tr": "man ahl-e otrīsch hastam. o to?",
+       "de": "Ich komme aus Österreich. Und du?"
+      },
+      {
+       "fa": "آرَش: مَن ایرانی هَستَم، اَهلِ اِصفَهان.",
+       "tr": "man īrānī hastam, ahl-e esfahān.",
+       "de": "Ich bin Iraner, aus Isfahan."
+      },
+      {
+       "fa": "تارا: اِصفَهان شَهرِ خِیلی زیبایی اَست!",
+       "tr": "esfahān schahr-e cheylī zībāyī ast!",
+       "de": "Isfahan ist eine sehr schöne Stadt!"
+      },
+      {
+       "fa": "آرَش: بَله. کیل هَم قَشَنگ اَست.",
+       "tr": "bale. kīl ham ghaschang ast.",
+       "de": "Ja. Kiel ist auch hübsch."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Woher kommt Tara?",
+       "optionen": [
+        "aus Österreich",
+        "aus Isfahan",
+        "aus Kiel"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Woher kommt Arasch?",
+       "optionen": [
+        "aus Isfahan",
+        "aus Teheran",
+        "aus Schiras"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was sagt Tara über Isfahan?",
+       "optionen": [
+        "Es ist eine sehr schöne Stadt.",
+        "Es ist eine kleine Stadt.",
+        "Es ist kalt."
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d2",
+   "titel": "Dialog: Die rote oder die blaue?",
+   "vorschau": "کیفِ قِرمِز یا آبی؟",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Mina und ihre Schwester Nasrin sind in einem Laden.</p><p><span class='fa'>آن</span> <i>ān</i> – jene/r, das dort · <span class='fa'>عالی</span> <i>ʿālī</i> – super, ausgezeichnet</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "مینا: این کیفِ قِرمِز خِیلی قَشَنگ اَست!",
+       "tr": "īn kīf-e ghermez cheylī ghaschang ast!",
+       "de": "Diese rote Tasche ist sehr hübsch!"
+      },
+      {
+       "fa": "نَسرین: بَله، وَلی گِران اَست.",
+       "tr": "bale, walī gerān ast.",
+       "de": "Ja, aber sie ist teuer."
+      },
+      {
+       "fa": "مینا: و آن کیفِ آبی؟",
+       "tr": "o ān kīf-e ābī?",
+       "de": "Und die blaue Tasche dort?"
+      },
+      {
+       "fa": "نَسرین: کیفِ آبی اَرزان اَست، وَلی کوچَک اَست.",
+       "tr": "kīf-e ābī arzān ast, walī kūtschak ast.",
+       "de": "Die blaue Tasche ist billig, aber klein."
+      },
+      {
+       "fa": "مینا: کیفِ سیاه چِطور اَست؟",
+       "tr": "kīf-e siyāh tschetor ast?",
+       "de": "Wie ist die schwarze Tasche?"
+      },
+      {
+       "fa": "نَسرین: کیفِ سیاه بُزُرگ و اَرزان اَست.",
+       "tr": "kīf-e siyāh bozorg o arzān ast.",
+       "de": "Die schwarze Tasche ist groß und billig."
+      },
+      {
+       "fa": "مینا: عالی اَست! کیفِ سیاه خوب اَست.",
+       "tr": "ʿālī ast! kīf-e siyāh chūb ast.",
+       "de": "Super! Die schwarze Tasche ist gut."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "مینا: این کیفِ قِرمِز خِیلی قَشَنگ اَست!",
+       "tr": "īn kīf-e ghermez cheylī ghaschang ast!",
+       "de": "Diese rote Tasche ist sehr hübsch!"
+      },
+      {
+       "fa": "نَسرین: بَله، وَلی گِران اَست.",
+       "tr": "bale, walī gerān ast.",
+       "de": "Ja, aber sie ist teuer."
+      },
+      {
+       "fa": "مینا: و آن کیفِ آبی؟",
+       "tr": "o ān kīf-e ābī?",
+       "de": "Und die blaue Tasche dort?"
+      },
+      {
+       "fa": "نَسرین: کیفِ آبی اَرزان اَست، وَلی کوچَک اَست.",
+       "tr": "kīf-e ābī arzān ast, walī kūtschak ast.",
+       "de": "Die blaue Tasche ist billig, aber klein."
+      },
+      {
+       "fa": "مینا: کیفِ سیاه چِطور اَست؟",
+       "tr": "kīf-e siyāh tschetor ast?",
+       "de": "Wie ist die schwarze Tasche?"
+      },
+      {
+       "fa": "نَسرین: کیفِ سیاه بُزُرگ و اَرزان اَست.",
+       "tr": "kīf-e siyāh bozorg o arzān ast.",
+       "de": "Die schwarze Tasche ist groß und billig."
+      },
+      {
+       "fa": "مینا: عالی اَست! کیفِ سیاه خوب اَست.",
+       "tr": "ʿālī ast! kīf-e siyāh chūb ast.",
+       "de": "Super! Die schwarze Tasche ist gut."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Was ist das Problem mit der roten Tasche?",
+       "optionen": [
+        "Sie ist teuer.",
+        "Sie ist klein.",
+        "Sie ist alt."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie ist die blaue Tasche?",
+       "optionen": [
+        "billig, aber klein",
+        "teuer und groß",
+        "schön und neu"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Welche Tasche ist am Ende gut?",
+       "optionen": [
+        "die schwarze",
+        "die rote",
+        "die blaue"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

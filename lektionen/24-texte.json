@@ -1,0 +1,709 @@
+{
+ "id": "tx",
+ "art": "texte",
+ "titel": "Texte & Dialoge",
+ "beschreibung": "Lesetexte mit Fragen und Dialoge zum Ordnen.",
+ "stationen": [
+  {
+   "id": "t1",
+   "titel": "Kurztext: Mittwoch",
+   "vorschau": "چهارشنبه",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>سرماخوردگی</span> – Erkältung · <span class='fa'>ای بابا</span> – ach Mensch · <span class='fa'>حیف شد</span> – wie schade</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Kurztext: Mittwoch",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "چهارشنبه صبح شهریار با سرماخوردگی بیدار می‌شود.",
+       "tr": "tschahārschanbe sobh schahriyār bā sarmāchordegī bīdār mīschawad.",
+       "de": "Am Mittwochmorgen wacht Shahriyar mit einer Erkältung auf."
+      },
+      {
+       "fa": "او به شیما پیام می‌دهد: «من مریض شده‌ام و باید در خانه بمانم.»",
+       "tr": "ū be schīmā payām mīdahad: «man marīz schode-am o bāyad dar chāne bemānam.»",
+       "de": "Er schreibt Shima: „Ich bin krank geworden und muss zu Hause bleiben.“"
+      },
+      {
+       "fa": "«اگر مریض نشده بودم، حتما با شما می‌آمدم.»",
+       "tr": "«agar marīz naschode būdam, hatman bā schomā mīāmadam.»",
+       "de": "„Wenn ich nicht krank geworden wäre, wäre ich bestimmt mitgekommen.“"
+      },
+      {
+       "fa": "شیما جواب می‌دهد: «ای بابا، حیف شد!»",
+       "tr": "schīmā dschawāb mīdahad: «ey bābā, heyf schod!»",
+       "de": "Shima antwortet: „Ach Mensch, wie schade!“"
+      },
+      {
+       "fa": "«اگر می‌توانستی بیایی، مینو خیلی خوشحال می‌شد.»",
+       "tr": "«agar mītawānestī biyāyī, mīnū cheylī choschhāl mīschod.»",
+       "de": "„Wenn du kommen könntest, würde Minu sich sehr freuen.“"
+      },
+      {
+       "fa": "بعد شیما، سهیل و مریم با یک هدیه‌ی بزرگ به خانه‌ی مینو می‌روند.",
+       "tr": "baʿd schīmā, soheyl o maryam bā yek hedye-ye bozorg be chāne-ye mīnū mīravand.",
+       "de": "Dann fahren Shima, Soheil und Maryam mit einem großen Geschenk zu Minu."
+      },
+      {
+       "fa": "در هدیه یک خانه‌ی کوچک برای پشمک است!",
+       "tr": "dar hedye yek chāne-ye kūtschak barāye paschmak ast!",
+       "de": "Im Geschenk ist ein kleines Häuschen für Paschmak!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "شهریار با شیما به خانه‌ی مینو می‌رود.",
+       "fest": true,
+       "erkl": "Er ist krank und bleibt <b>zu Hause</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "شیما ناراحت است که شهریار نمی‌آید.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "هدیه یک خانه‌ی کوچک برای گربه است.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "سهیل و مریم نمی‌آیند.",
+       "fest": true,
+       "erkl": "Sie fahren <b>mit</b>."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Was hat Shahriyar?",
+       "optionen": [
+        "eine Erkältung",
+        "keine Zeit",
+        "kein Fahrrad"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was ist das Geschenk?",
+       "optionen": [
+        "ein Häuschen für Paschmak",
+        "ein Buch",
+        "Blumen"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "<span class='fa'>اگر مریض نشده بودم</span> – ist er krank?",
+       "optionen": [
+        "Ja.",
+        "Nein.",
+        "Man weiß es nicht."
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "او به شیما پیام می‌دهد: «من مریض شده‌ام و باید در خانه بمانم.»",
+       "tr": "ū be schīmā payām mīdahad: «man marīz schode-am o bāyad dar chāne bemānam.»",
+       "de": "Er schreibt Shima: „Ich bin krank geworden und muss zu Hause bleiben.“"
+      },
+      {
+       "fa": "«اگر مریض نشده بودم، حتما با شما می‌آمدم.»",
+       "tr": "«agar marīz naschode būdam, hatman bā schomā mīāmadam.»",
+       "de": "„Wenn ich nicht krank geworden wäre, wäre ich bestimmt mitgekommen.“"
+      },
+      {
+       "fa": "شیما جواب می‌دهد: «ای بابا، حیف شد!»",
+       "tr": "schīmā dschawāb mīdahad: «ey bābā, heyf schod!»",
+       "de": "Shima antwortet: „Ach Mensch, wie schade!“"
+      },
+      {
+       "fa": "«اگر می‌توانستی بیایی، مینو خیلی خوشحال می‌شد.»",
+       "tr": "«agar mītawānestī biyāyī, mīnū cheylī choschhāl mīschod.»",
+       "de": "„Wenn du kommen könntest, würde Minu sich sehr freuen.“"
+      },
+      {
+       "fa": "بعد شیما، سهیل و مریم با یک هدیه‌ی بزرگ به خانه‌ی مینو می‌روند.",
+       "tr": "baʿd schīmā, soheyl o maryam bā yek hedye-ye bozorg be chāne-ye mīnū mīravand.",
+       "de": "Dann fahren Shima, Soheil und Maryam mit einem großen Geschenk zu Minu."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t2",
+   "titel": "Text: Wenn ich eine Katze wäre",
+   "vorschau": "اگر من گربه بودم",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>ظهر</span> – Mittag · <span class='fa'>امتحان</span> – Prüfung · <span class='fa'>بستنی</span> – Eis · <span class='fa'>قصه</span> – Geschichte · <span class='fa'>این‌قدر</span> – so viel</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Text: Wenn ich eine Katze wäre",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "سلام! من پشمک هستم، گربه‌ی مینو.",
+       "tr": "salām! man paschmak hastam, gorbe-ye mīnū.",
+       "de": "Hallo! Ich bin Paschmak, Minus Katze."
+      },
+      {
+       "fa": "مینو همیشه می‌گوید: «کاش من هم گربه بودم!»",
+       "tr": "mīnū hamīsche mīgūyad: «kāsch man ham gorbe būdam!»",
+       "de": "Minu sagt immer: „Wäre ich doch auch eine Katze!“"
+      },
+      {
+       "fa": "اگر مینو گربه بود، هر روز تا ظهر می‌خوابید.",
+       "tr": "agar mīnū gorbe būd, har rūz tā zohr mīchābīd.",
+       "de": "Wenn Minu eine Katze wäre, würde sie jeden Tag bis Mittag schlafen."
+      },
+      {
+       "fa": "اگر گربه بود، دیگر امتحان نداشت و درس نمی‌خواند.",
+       "tr": "agar gorbe būd, dīgar emtehān nadāscht o dars nemīchānd.",
+       "de": "Wenn sie eine Katze wäre, hätte sie keine Prüfungen mehr und würde nicht lernen."
+      },
+      {
+       "fa": "اما اگر گربه بود، نمی‌توانست بستنی بخورد یا با دوستانش به سینما برود!",
+       "tr": "ammā agar gorbe būd, nemītawānest bastanī bechorad yā bā dūstānasch be sīnemā beravad!",
+       "de": "Aber wenn sie eine Katze wäre, könnte sie kein Eis essen oder mit ihren Freunden ins Kino gehen!"
+      },
+      {
+       "fa": "دیروز دوستان مینو برای من یک خانه‌ی کوچک آوردند.",
+       "tr": "dīrūz dūstān-e mīnū barāye man yek chāne-ye kūtschak āwardand.",
+       "de": "Gestern haben Minus Freunde mir ein kleines Häuschen gebracht."
+      },
+      {
+       "fa": "اگر شهریار هم آمده بود، با او هم بازی کرده بودم.",
+       "tr": "agar schahriyār ham āmade būd, bā ū ham bāzī karde būdam.",
+       "de": "Wenn Shahriyar auch gekommen wäre, hätte ich auch mit ihm gespielt."
+      },
+      {
+       "fa": "اما اگر او مریض نشده بود، این قصه این‌قدر «اما و اگر» نداشت!",
+       "tr": "ammā agar ū marīz naschode būd, īn ghesse īnghadr «ammā o agar» nadāscht!",
+       "de": "Aber wenn er nicht krank geworden wäre, hätte diese Geschichte nicht so viele „Wenns und Abers“!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "پشمک گربه‌ی شیما است.",
+       "fest": true,
+       "erkl": "Paschmak ist <b>Minus</b> Katze."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "اگر مینو گربه بود، تا ظهر می‌خوابید.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "گربه‌ها می‌توانند بستنی بخورند.",
+       "fest": true,
+       "erkl": "Als Katze <b>könnte</b> sie kein Eis essen."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "پشمک با شهریار بازی کرده است.",
+       "fest": true,
+       "erkl": "Shahriyar ist <b>nicht gekommen</b>."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Wer erzählt die Geschichte?",
+       "optionen": [
+        "Paschmak, die Katze",
+        "Minu",
+        "Shahriyar"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was wünscht sich Minu?",
+       "optionen": [
+        "eine Katze zu sein",
+        "ein Eis",
+        "keine Freunde"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was haben die Freunde mitgebracht?",
+       "optionen": [
+        "ein kleines Häuschen",
+        "Futter",
+        "einen Ball"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t3",
+   "titel": "Profi-Text: Ein verpasster Zug",
+   "vorschau": "قطاری که رفت",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>قرار بودن</span> – geplant sein · <span class='fa'>مجبور شدن</span> – gezwungen sein · <span class='fa'>طول کشیدن</span> – dauern · <span class='fa'>مسن</span> – älter · <span class='fa'>آشنا شدن</span> – kennenlernen · <span class='fa'>تعریف کردن</span> – erzählen</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Profi-Text: Ein verpasster Zug",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "پارسال قرار بود با دوستانم از تهران به شیراز بروم.",
+       "tr": "pārsāl gharār būd bā dūstānam az tehrān be schīrāz beravam.",
+       "de": "Letztes Jahr wollte ich mit Freunden von Teheran nach Schiras fahren."
+      },
+      {
+       "fa": "شب قبل تا ساعت دو فیلم دیدم و صبح دیر بیدار شدم.",
+       "tr": "schab-e ghabl tā sāʿat-e do fīlm dīdam o sobh dīr bīdār schodam.",
+       "de": "Am Abend davor habe ich bis zwei Uhr Filme geschaut und bin morgens spät aufgewacht."
+      },
+      {
+       "fa": "وقتی به ایستگاه رسیدم، قطار رفته بود.",
+       "tr": "waghtī be īstgāh resīdam, ghatār rafte būd.",
+       "de": "Als ich am Bahnhof ankam, war der Zug schon weg."
+      },
+      {
+       "fa": "اگر آن شب زودتر خوابیده بودم، به قطار می‌رسیدم.",
+       "tr": "agar ān schab zūdtar chābīde būdam, be ghatār mīresīdam.",
+       "de": "Wenn ich an dem Abend früher schlafen gegangen wäre, hätte ich den Zug erreicht."
+      },
+      {
+       "fa": "مجبور شدم با اتوبوس بروم. سفر دوازده ساعت طول کشید!",
+       "tr": "madschbūr schodam bā otobūs beravam. safar dawāzdah sāʿat tūl keschīd!",
+       "de": "Ich musste mit dem Bus fahren. Die Fahrt hat zwölf Stunden gedauert!"
+      },
+      {
+       "fa": "اما در اتوبوس با یک خانم مسن آشنا شدم که داستان‌های زیبایی درباره‌ی شیراز تعریف کرد.",
+       "tr": "ammā dar otobūs bā yek chānom-e mosen āschnā schodam ke dāstānhā-ye zībāyī darbāre-ye schīrāz taʿrīf kard.",
+       "de": "Aber im Bus habe ich eine ältere Dame kennengelernt, die schöne Geschichten über Schiras erzählt hat."
+      },
+      {
+       "fa": "اگر با قطار رفته بودم، هرگز او را نمی‌دیدم.",
+       "tr": "agar bā ghatār rafte būdam, hargez ū rā nemīdīdam.",
+       "de": "Wenn ich mit dem Zug gefahren wäre, hätte ich sie nie getroffen."
+      },
+      {
+       "fa": "حالا فکر می‌کنم: شاید آن قطار باید بدون من می‌رفت!",
+       "tr": "hālā fekr mīkonam: schāyad ān ghatār bāyad bedūn-e man mīraft!",
+       "de": "Jetzt denke ich: Vielleicht sollte dieser Zug ohne mich fahren!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "نویسنده به قطار رسید.",
+       "fest": true,
+       "erkl": "Der Zug war <b>schon weg</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "سفر با اتوبوس طولانی بود.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "نویسنده از اینکه قطار را از دست داد، هنوز ناراحت است.",
+       "fest": true,
+       "erkl": "Er/Sie findet es jetzt <b>gut</b> – wegen der Dame im Bus."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Warum hat der/die Erzähler/in den Zug verpasst?",
+       "optionen": [
+        "zu lange Filme geschaut",
+        "Stau",
+        "falscher Bahnhof"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie lange hat die Busfahrt gedauert?",
+       "optionen": [
+        "zwölf Stunden",
+        "zwei Stunden",
+        "einen Tag"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wen hat er/sie im Bus kennengelernt?",
+       "optionen": [
+        "eine ältere Dame",
+        "einen Freund aus Kiel",
+        "Minu"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d1",
+   "titel": "Dialog: Mittwoch",
+   "vorschau": "چهارشنبه",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Shahriyar ruft Shima am Mittwochmorgen an.</p><p><span class='fa'>سرما خوردن</span> – sich erkälten · <span class='fa'>از طرف من</span> – von mir · <span class='fa'>ناز کردن</span> – streicheln</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "شهریار: سلام شیما. بد شد … من مریض شده‌ام و باید در خانه بمانم.",
+       "tr": "salām schīmā. bad schod … man marīz schode-am o bāyad dar chāne bemānam.",
+       "de": "Hallo Shima. Blöd gelaufen … Ich bin krank geworden und muss zu Hause bleiben."
+      },
+      {
+       "fa": "شیما: ای بابا، حیف شد! کروناست؟",
+       "tr": "ey bābā, heyf schod! koronāst?",
+       "de": "Ach Mensch, wie schade! Ist es Corona?"
+      },
+      {
+       "fa": "شهریار: نه، تستم منفی است. فقط سرما خورده‌ام.",
+       "tr": "na, testam manfī ast. faghat sarmā chorde-am.",
+       "de": "Nein, mein Test ist negativ. Ich bin nur erkältet."
+      },
+      {
+       "fa": "شهریار: اگر مریض نشده بودم، حتما با شما می‌آمدم.",
+       "tr": "agar marīz naschode būdam, hatman bā schomā mīāmadam.",
+       "de": "Wenn ich nicht krank geworden wäre, wäre ich auf jeden Fall mitgekommen."
+      },
+      {
+       "fa": "شیما: می‌دانم. اگر می‌توانستی بیایی، مینو خیلی خوشحال می‌شد.",
+       "tr": "mīdānam. agar mītawānestī biyāyī, mīnū cheylī choschhāl mīschod.",
+       "de": "Ich weiß. Wenn du kommen könntest, würde Minu sich sehr freuen."
+      },
+      {
+       "fa": "شهریار: از طرف من به او تبریک بگو! و پشمک را ناز کن!",
+       "tr": "az taraf-e man be ū tabrīk begū! wa paschmak rā nāz kon!",
+       "de": "Gratulier ihr von mir! Und streichel Paschmak!"
+      },
+      {
+       "fa": "شیما: چشم! زود خوب شو!",
+       "tr": "tscheschm! zūd chūb schou!",
+       "de": "Mach ich! Gute Besserung!"
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "شهریار: سلام شیما. بد شد … من مریض شده‌ام و باید در خانه بمانم.",
+       "tr": "salām schīmā. bad schod … man marīz schode-am o bāyad dar chāne bemānam.",
+       "de": "Hallo Shima. Blöd gelaufen … Ich bin krank geworden und muss zu Hause bleiben."
+      },
+      {
+       "fa": "شیما: ای بابا، حیف شد! کروناست؟",
+       "tr": "ey bābā, heyf schod! koronāst?",
+       "de": "Ach Mensch, wie schade! Ist es Corona?"
+      },
+      {
+       "fa": "شهریار: نه، تستم منفی است. فقط سرما خورده‌ام.",
+       "tr": "na, testam manfī ast. faghat sarmā chorde-am.",
+       "de": "Nein, mein Test ist negativ. Ich bin nur erkältet."
+      },
+      {
+       "fa": "شهریار: اگر مریض نشده بودم، حتما با شما می‌آمدم.",
+       "tr": "agar marīz naschode būdam, hatman bā schomā mīāmadam.",
+       "de": "Wenn ich nicht krank geworden wäre, wäre ich auf jeden Fall mitgekommen."
+      },
+      {
+       "fa": "شیما: می‌دانم. اگر می‌توانستی بیایی، مینو خیلی خوشحال می‌شد.",
+       "tr": "mīdānam. agar mītawānestī biyāyī, mīnū cheylī choschhāl mīschod.",
+       "de": "Ich weiß. Wenn du kommen könntest, würde Minu sich sehr freuen."
+      },
+      {
+       "fa": "شهریار: از طرف من به او تبریک بگو! و پشمک را ناز کن!",
+       "tr": "az taraf-e man be ū tabrīk begū! wa paschmak rā nāz kon!",
+       "de": "Gratulier ihr von mir! Und streichel Paschmak!"
+      },
+      {
+       "fa": "شیما: چشم! زود خوب شو!",
+       "tr": "tscheschm! zūd chūb schou!",
+       "de": "Mach ich! Gute Besserung!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Warum kommt Shahriyar nicht?",
+       "optionen": [
+        "Er ist erkältet.",
+        "Er hat Corona.",
+        "Er muss arbeiten."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was soll Shima für ihn tun?",
+       "optionen": [
+        "Minu gratulieren und Paschmak streicheln",
+        "ein Geschenk kaufen",
+        "ihn abholen"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "<span class='fa'>زود خوب شو!</span> bedeutet:",
+       "optionen": [
+        "Gute Besserung!",
+        "Beeil dich!",
+        "Sei brav!"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d2",
+   "titel": "Dialog: Donnerstag",
+   "vorschau": "پنجشنبه",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Am Donnerstag ruft Shima den kranken Shahriyar an.</p><p><span class='fa'>عیبی ندارد</span> – macht nichts · <span class='fa'>هر وقت</span> – wann immer · <span class='fa'>باز هم</span> – schon wieder</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "شیما: آخ شهریار، اگر می‌دانستی که گربه‌ی مینو چقدر زیباست!",
+       "tr": "āch schahriyār, agar mīdānestī ke gorbe-ye mīnū tscheghadr zībāst!",
+       "de": "Ach Shahriyar, wenn du wüsstest, wie schön Minus Katze ist!"
+      },
+      {
+       "fa": "شیما: اگر آمده بودی، عاشق این حیوان می‌شدی!",
+       "tr": "agar āmade būdī, ʿāschegh-e īn heywān mīschodī!",
+       "de": "Wenn du gekommen wärst, hättest du dich in das Tier verliebt!"
+      },
+      {
+       "fa": "شهریار: خیلی دلم می‌خواست ببینمش.",
+       "tr": "cheylī delam mīchāst bebīnamasch.",
+       "de": "Ich hätte sie so gern gesehen."
+      },
+      {
+       "fa": "شهریار: اگر مریض نشده بودم، حتما آن گربه‌ی کوچک را دیده بودم.",
+       "tr": "agar marīz naschode būdam, hatman ān gorbe-ye kūtschak rā dīde būdam.",
+       "de": "Wenn ich nicht krank geworden wäre, hätte ich das kleine Kätzchen bestimmt gesehen."
+      },
+      {
+       "fa": "شیما: عیبی ندارد. مینو گفت اگر خوب شدی، هر وقت بخواهی می‌توانی بیایی.",
+       "tr": "ʿeybī nadārad. mīnū goft agar chūb schodī, har waght bechāhī mītawānī biyāyī.",
+       "de": "Macht nichts. Minu hat gesagt, wenn du gesund bist, kannst du kommen, wann immer du willst."
+      },
+      {
+       "fa": "شهریار: عالی! اگر هفته‌ی بعد هوا آفتابی باشد، با دوچرخه می‌روم!",
+       "tr": "ʿālī! agar hafte-ye baʿd hawā āftābī bāschad, bā dotscharche mīravam!",
+       "de": "Super! Wenn nächste Woche die Sonne scheint, fahre ich mit dem Fahrrad hin!"
+      },
+      {
+       "fa": "شیما: باز هم «اگر»؟!",
+       "tr": "bāz ham «agar»?!",
+       "de": "Schon wieder ein „Wenn“?!"
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "شیما: آخ شهریار، اگر می‌دانستی که گربه‌ی مینو چقدر زیباست!",
+       "tr": "āch schahriyār, agar mīdānestī ke gorbe-ye mīnū tscheghadr zībāst!",
+       "de": "Ach Shahriyar, wenn du wüsstest, wie schön Minus Katze ist!"
+      },
+      {
+       "fa": "شیما: اگر آمده بودی، عاشق این حیوان می‌شدی!",
+       "tr": "agar āmade būdī, ʿāschegh-e īn heywān mīschodī!",
+       "de": "Wenn du gekommen wärst, hättest du dich in das Tier verliebt!"
+      },
+      {
+       "fa": "شهریار: خیلی دلم می‌خواست ببینمش.",
+       "tr": "cheylī delam mīchāst bebīnamasch.",
+       "de": "Ich hätte sie so gern gesehen."
+      },
+      {
+       "fa": "شهریار: اگر مریض نشده بودم، حتما آن گربه‌ی کوچک را دیده بودم.",
+       "tr": "agar marīz naschode būdam, hatman ān gorbe-ye kūtschak rā dīde būdam.",
+       "de": "Wenn ich nicht krank geworden wäre, hätte ich das kleine Kätzchen bestimmt gesehen."
+      },
+      {
+       "fa": "شیما: عیبی ندارد. مینو گفت اگر خوب شدی، هر وقت بخواهی می‌توانی بیایی.",
+       "tr": "ʿeybī nadārad. mīnū goft agar chūb schodī, har waght bechāhī mītawānī biyāyī.",
+       "de": "Macht nichts. Minu hat gesagt, wenn du gesund bist, kannst du kommen, wann immer du willst."
+      },
+      {
+       "fa": "شهریار: عالی! اگر هفته‌ی بعد هوا آفتابی باشد، با دوچرخه می‌روم!",
+       "tr": "ʿālī! agar hafte-ye baʿd hawā āftābī bāschad, bā dotscharche mīravam!",
+       "de": "Super! Wenn nächste Woche die Sonne scheint, fahre ich mit dem Fahrrad hin!"
+      },
+      {
+       "fa": "شیما: باز هم «اگر»؟!",
+       "tr": "bāz ham «agar»?!",
+       "de": "Schon wieder ein „Wenn“?!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Wie findet Shima die Katze?",
+       "optionen": [
+        "sehr schön",
+        "zu klein",
+        "laut"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was hat Minu gesagt?",
+       "optionen": [
+        "Shahriyar kann kommen, wann er will.",
+        "Shahriyar soll nicht kommen.",
+        "Die Katze ist krank."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was plant Shahriyar für nächste Woche?",
+       "optionen": [
+        "mit dem Fahrrad zu Minu fahren",
+        "in die Bibliothek gehen",
+        "eine Katze kaufen"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

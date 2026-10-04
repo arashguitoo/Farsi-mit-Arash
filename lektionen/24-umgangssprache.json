@@ -1,0 +1,191 @@
+{
+ "id": "ug",
+ "art": "umgangssprache",
+ "titel": "Umgangssprache: So spricht man im Alltag",
+ "beschreibung": "Freiwilliger Extra-Teil: irreale Sätze im Gespräch.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "So spricht man: irreal",
+   "vorschau": "اَگه می‌دونِستی …",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Schrift ≠ Gespräch",
+     "text": "<ul><li><span class='fa'>اگر → اَگه</span> · <span class='fa'>می‌دانستی → می‌دونستی</span> · <span class='fa'>آمده → اومده</span></li><li>Im Gespräch ist die irreale Vergangenheit fast immer: <span class='fa'>اَگه</span> + Plusquamperfekt, Hauptsatz <b>durativ</b>: <span class='fa'>اگه اومده بودی، می‌دیدیش</span>.</li><li><span class='fa'>خوب که شدم</span> – sobald ich gesund bin (<span class='fa'>… که</span> = sobald)</li></ul>",
+     "stil": "merke"
+    },
+    {
+     "typ": "paare",
+     "links": "x",
+     "paare": [
+      {
+       "fa": "اَگَر می‌دانِستی",
+       "tr": "agar mīdānestī",
+       "de": "wenn du wüsstest",
+       "x": "اَگه می‌دونِستی"
+      },
+      {
+       "fa": "آمَدِه بودی",
+       "tr": "āmade būdī",
+       "de": "du wärst gekommen",
+       "x": "اومَده بودی"
+      },
+      {
+       "fa": "می‌خواهَم",
+       "tr": "mīchāham",
+       "de": "ich will",
+       "x": "می‌خوام"
+      },
+      {
+       "fa": "بِبینَمَش",
+       "tr": "bebīnamasch",
+       "de": "(dass) ich sie/ihn sehe",
+       "x": "بِبینَمِش"
+      },
+      {
+       "fa": "چِقَدر",
+       "tr": "tscheghadr",
+       "de": "wie (sehr)",
+       "x": "چِقَد"
+      }
+     ],
+     "titel": "Schrift ↔ Gespräch"
+    },
+    {
+     "typ": "sortieren",
+     "titel": "Schrift oder Gespräch?",
+     "frage": "Schriftsprache oder Umgangssprache?",
+     "kategorien": [
+      "✍️ Schriftsprache",
+      "🗣️ Umgangssprache"
+     ],
+     "items": [
+      {
+       "fa": "اَگَر می‌دانِستی",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "آمَدِه بودی",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "می‌خواهَم",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "بِبینَمَش",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "چِقَدر",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "اَگه می‌دونِستی",
+       "k": 1,
+       "say": false,
+       "e": "<i>age mīdūnestī</i> – geschrieben: <span class='fa'>اَگَر می‌دانِستی</span>"
+      },
+      {
+       "fa": "اومَده بودی",
+       "k": 1,
+       "say": false,
+       "e": "<i>ūmade būdī</i> – geschrieben: <span class='fa'>آمَدِه بودی</span>"
+      },
+      {
+       "fa": "می‌خوام",
+       "k": 1,
+       "say": false,
+       "e": "<i>mīchām</i> – geschrieben: <span class='fa'>می‌خواهَم</span>"
+      },
+      {
+       "fa": "بِبینَمِش",
+       "k": 1,
+       "say": false,
+       "e": "<i>bebīnamesch</i> – geschrieben: <span class='fa'>بِبینَمَش</span>"
+      },
+      {
+       "fa": "چِقَد",
+       "k": 1,
+       "say": false,
+       "e": "<i>tscheghad</i> – geschrieben: <span class='fa'>چِقَدر</span>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Donnerstag – umgangssprachlich",
+   "vorschau": "کاشکی اومَده بودَم",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Shima & Shahriyar",
+     "text": "Umgangssprache! Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "اَگه می‌دونِستی پَشمَک چِقَد نازه!",
+       "tr": "age mīdūnestī paschmak tscheghad nāze!",
+       "de": "Wenn du wüsstest, wie süß Paschmak ist!"
+      },
+      {
+       "fa": "وای، کاشکی اومَده بودَم!",
+       "tr": "wāy, kāschkī ūmade būdam!",
+       "de": "Oh, wär ich doch gekommen!"
+      },
+      {
+       "fa": "اَگه اومَده بودی، عاشِقِش می‌شُدی.",
+       "tr": "age ūmade būdī, ʿāscheghesch mīschodī.",
+       "de": "Wärst du gekommen, hättest du dich in sie verliebt."
+      },
+      {
+       "fa": "خوب که شُدَم، حَتماً میام بِبینَمِش!",
+       "tr": "chūb ke schodam, hatman miyām bebīnamesch!",
+       "de": "Sobald ich gesund bin, komm ich sie auf jeden Fall besuchen!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Verstanden?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>کاشکی اومده بودم</span> bedeutet:",
+       "optionen": [
+        "Wär ich doch gekommen!",
+        "Ich komme bestimmt!",
+        "Ich bin gekommen."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "<span class='fa'>خوب که شدم …</span> bedeutet:",
+       "optionen": [
+        "sobald ich gesund bin …",
+        "weil ich gesund bin …",
+        "obwohl ich gesund bin …"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "<span class='fa'>نازه</span> (von <span class='fa'>ناز است</span>) heißt:",
+       "optionen": [
+        "ist süß",
+        "ist laut",
+        "ist müde"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1922 @@
+{
+ "id": "f1test",
+ "titel": "Großer Test Persisch I",
+ "titelFa": "آزمونِ وُرودی",
+ "einleitung": "Dieser Test prüft alles aus Persisch I – von der Schrift bis zu den Konnektoren. Er hat 13 Abschnitte. Du kannst sie in beliebiger Reihenfolge und an verschiedenen Tagen machen; es zählt jeweils dein bestes Ergebnis. Wenn du alle Abschnitte gemacht hast und insgesamt mindestens 70 % erreichst, öffnen sich die Lektionen von Fortgeschritten 1.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "A · Schrift & Lesen",
+   "vorschau": "اَلِفبا",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "A · Schrift & Lesen",
+     "text": "<p>Buchstaben, Verbindungen, Vokalzeichen und Umschrift.</p><p class='klein muted'>Jede Frage zählt. Du kannst den Abschnitt später wiederholen – es zählt dein bestes Ergebnis.</p>"
+    },
+    {
+     "typ": "wahl",
+     "titel": "Lesen",
+     "fragen": [
+      {
+       "frage": "Wie liest man das?",
+       "optionen": [
+        "ketāb",
+        "kotob",
+        "kātib"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "fa": "کِتاب"
+      },
+      {
+       "frage": "Wie liest man das?",
+       "optionen": [
+        "dāneschgāh",
+        "dānesch",
+        "dāneschdschū"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "fa": "دانِشگاه"
+      },
+      {
+       "frage": "Welcher Buchstabe verbindet sich <b>nicht</b> nach links?",
+       "optionen": [
+        "ر",
+        "ب",
+        "م"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "Welcher Buchstabe ist ein „Einzelgänger“?",
+       "optionen": [
+        "و",
+        "س",
+        "ن"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "Wie klingt <span class='fa'>اُ</span> am Wortanfang?",
+       "optionen": [
+        "o",
+        "ū",
+        "ā"
+       ],
+       "richtig": 0,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>ای</span> am Wortanfang klingt wie …",
+       "optionen": [
+        "ī",
+        "e",
+        "a"
+       ],
+       "richtig": 0,
+       "hoeren": false
+      },
+      {
+       "frage": "Welches Wort beginnt mit langem ā?",
+       "optionen": [
+        "آب",
+        "اَبر",
+        "اِسم"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "Wie liest man das?",
+       "optionen": [
+        "chāne",
+        "chāneh",
+        "chān"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "fa": "خانِه",
+       "erkl": "Das ه am Ende ist stumm – man hört nur -e."
+      },
+      {
+       "frage": "Welche Buchstaben gibt es nur im Persischen (nicht im Arabischen)?",
+       "optionen": [
+        "پ چ ژ گ",
+        "ب ج ز ک",
+        "ث ذ ص ض"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "Wie liest man das?",
+       "optionen": [
+        "chāhar",
+        "chwāhar",
+        "chohar"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "fa": "خواهَر",
+       "erkl": "Das و nach خ in <span class='fa'>خوا</span> ist stumm."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Wörter erkennen",
+     "fragen": [
+      {
+       "frage": "Wie liest man das?",
+       "optionen": [
+        "schīrīnī",
+        "schīrīn",
+        "schorī"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "fa": "شیرینی"
+      },
+      {
+       "frage": "Wie liest man das?",
+       "optionen": [
+        "ghazā",
+        "ghazāl",
+        "ghāz"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "fa": "غَذا"
+      },
+      {
+       "frage": "Welches Wort heißt „Wasser“?",
+       "optionen": [
+        "آب",
+        "باد",
+        "داد"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "Welches Wort heißt „Mutter“?",
+       "optionen": [
+        "مادَر",
+        "بَرادَر",
+        "مار"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "B · sein & Pronomen",
+   "vorschau": "هَستَم",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "B · sein & Pronomen",
+     "text": "<p>Personalpronomen, sein, Verneinung, Berufe und Gefühle.</p><p class='klein muted'>Jede Frage zählt. Du kannst den Abschnitt später wiederholen – es zählt dein bestes Ergebnis.</p>"
+    },
+    {
+     "typ": "wahl",
+     "titel": "sein",
+     "fragen": [
+      {
+       "frage": "„Ich bin müde.“",
+       "optionen": [
+        "مَن خَستِه هَستَم.",
+        "مَن خَستِه اَست.",
+        "مَن هَستَم خَستِه."
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Wir sind Studierende.“",
+       "optionen": [
+        "ما دانِشجو هَستیم.",
+        "ما دانِشجو هَستَند.",
+        "ما دانِشجو هَستید."
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Er ist nicht krank.“",
+       "optionen": [
+        "او مَریض نیست.",
+        "او مَریض نَهَست.",
+        "او نیست مَریض."
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Bist du Ärztin?“",
+       "optionen": [
+        "تو پِزِشک هَستی؟",
+        "تو پِزِشک هَستیم؟",
+        "پِزِشک تو هَستی؟"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "<span class='fa'>شُما</span> heißt …",
+       "optionen": [
+        "ihr / Sie (höflich)",
+        "du",
+        "sie (Mehrzahl)"
+       ],
+       "richtig": 0,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>او</span> heißt …",
+       "optionen": [
+        "er und sie",
+        "nur er",
+        "nur sie"
+       ],
+       "richtig": 0,
+       "hoeren": false
+      },
+      {
+       "frage": "„Sie (Pl.) sind traurig.“",
+       "optionen": [
+        "آنها غَمگین هَستَند.",
+        "آنها غَمگین اَست.",
+        "آنها غَمگین هَستیم."
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Ich bin nicht hungrig.“",
+       "optionen": [
+        "مَن گُرُسنِه نیستَم.",
+        "مَن گُرُسنِه نیست.",
+        "مَن نیستَم گُرُسنِه."
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "Was bedeutet <span class='fa'>پَرَستار</span>?",
+       "optionen": [
+        "Pfleger/in",
+        "Polizist/in",
+        "Fahrer/in"
+       ],
+       "richtig": 0,
+       "hoeren": false
+      },
+      {
+       "frage": "Was bedeutet <span class='fa'>نِگَران</span>?",
+       "optionen": [
+        "besorgt",
+        "ruhig",
+        "froh"
+       ],
+       "richtig": 0,
+       "hoeren": false
+      }
+     ]
+    },
+    {
+     "typ": "bauen",
+     "titel": "Baue den Satz",
+     "trenner": " ",
+     "woerter": [
+      {
+       "fa": "شُما مُتَرجِم هَستید؟",
+       "tr": "schomā motardschem hastīd?",
+       "de": "Sind Sie Übersetzer/in?",
+       "teile": [
+        "شُما",
+        "مُتَرجِم",
+        "هَستید"
+       ],
+       "extra": [
+        "هَستَم"
+       ]
+      },
+      {
+       "fa": "آنها خِیلی شاد هَستَند.",
+       "tr": "ānhā cheylī schād hastand.",
+       "de": "Sie sind sehr froh.",
+       "teile": [
+        "آنها",
+        "خِیلی",
+        "شاد",
+        "هَستَند"
+       ],
+       "extra": [
+        "اَست"
+       ]
+      },
+      {
+       "fa": "مَن تِشنِه نیستَم.",
+       "tr": "man teschne nīstam.",
+       "de": "Ich bin nicht durstig.",
+       "teile": [
+        "مَن",
+        "تِشنِه",
+        "نیستَم"
+       ],
+       "extra": [
+        "هَستَم"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "titel": "C · Ezāfe, Adjektive & Farben",
+   "vorschau": "ـِ",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "C · Ezāfe, Adjektive & Farben",
+     "text": "<p>Nomen + -e + Adjektiv / Person, -ye nach Vokalen, Farben, Herkunft.</p><p class='klein muted'>Jede Frage zählt. Du kannst den Abschnitt später wiederholen – es zählt dein bestes Ergebnis.</p>"
+    },
+    {
+     "typ": "wahl",
+     "titel": "Ezāfe",
+     "fragen": [
+      {
+       "frage": "„das große Haus“",
+       "optionen": [
+        "خانِه‌ی بُزُرگ",
+        "بُزُرگِ خانِه",
+        "خانِه بُزُرگ اَست"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Das Haus ist groß.“",
+       "optionen": [
+        "خانِه بُزُرگ اَست.",
+        "خانِه‌ی بُزُرگ",
+        "بُزُرگِ خانِه اَست."
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„mein neues Auto“",
+       "optionen": [
+        "ماشینِ نوِ مَن",
+        "ماشینِ مَنِ نو",
+        "نوِ ماشینِ مَن"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„der junge Student“",
+       "optionen": [
+        "دانِشجویِ جَوان",
+        "دانِشجوِ جَوان",
+        "جَوانِ دانِشجو"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "Wie spricht man <span class='fa'>گوشیِ گِران</span>?",
+       "optionen": [
+        "gūschī-ye gerān",
+        "gūschī gerān",
+        "gūschīe-gerān"
+       ],
+       "richtig": 0,
+       "hoeren": false
+      },
+      {
+       "frage": "„Woher kommen Sie?“",
+       "optionen": [
+        "شُما اَهلِ کُجا هَستید؟",
+        "شُما کُجا اَهل هَستید؟",
+        "اَهلِ شُما کُجا اَست؟"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "Welche Farbe ist <span class='fa'>سَبز</span>?",
+       "optionen": [
+        "grün",
+        "gelb",
+        "blau"
+       ],
+       "richtig": 0,
+       "hoeren": false
+      },
+      {
+       "frage": "„die rote Tasche“",
+       "optionen": [
+        "کیفِ قِرمِز",
+        "قِرمِزِ کیف",
+        "کیف قِرمِز اَست"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "Gegenteil von <span class='fa'>تَمیز</span>:",
+       "optionen": [
+        "کَثیف",
+        "زیبا",
+        "اَرزان"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„alt“ (Mensch):",
+       "optionen": [
+        "پیر",
+        "کُهنِه",
+        "کوتاه"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Wie ist dein Name?“",
+       "optionen": [
+        "اِسمِ تو چیست؟",
+        "اِسم تو چیست؟",
+        "تو اِسم چیست؟"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d",
+   "titel": "D · haben, Familie & ein/der",
+   "vorschau": "دارَم",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "D · haben, Familie & ein/der",
+     "text": "<p>dāschtan, Familie, Zahlen, ein … / der … mit یک und ـی.</p><p class='klein muted'>Jede Frage zählt. Du kannst den Abschnitt später wiederholen – es zählt dein bestes Ergebnis.</p>"
+    },
+    {
+     "typ": "wahl",
+     "titel": "haben",
+     "fragen": [
+      {
+       "frage": "„Ich habe zwei Schwestern.“",
+       "optionen": [
+        "مَن دو خواهَر دارَم.",
+        "مَن دو خواهَرها دارَم.",
+        "مَن دارَم دو خواهَر."
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Hast du ein Auto?“",
+       "optionen": [
+        "ماشین داری؟",
+        "ماشین می‌داری؟",
+        "ماشین داریم؟"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Er/Sie hat keine Zeit.“",
+       "optionen": [
+        "او وَقت نَدارَد.",
+        "او وَقت نِمی‌دارَد.",
+        "او نَدارَد وَقت نیست."
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„ein Buch“ (zwei Möglichkeiten): Welche ist richtig?",
+       "optionen": [
+        "یِک کِتاب / کِتابی",
+        "کِتابِ یِک",
+        "یِک کِتاب‌ها"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "<span class='fa'>عَمو</span> ist …",
+       "optionen": [
+        "der Bruder des Vaters",
+        "der Bruder der Mutter",
+        "die Schwester des Vaters"
+       ],
+       "richtig": 0,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>خالِه</span> ist …",
+       "optionen": [
+        "die Schwester der Mutter",
+        "die Schwester des Vaters",
+        "die Großmutter"
+       ],
+       "richtig": 0,
+       "hoeren": false
+      },
+      {
+       "frage": "„Wir haben ein kleines Haus.“",
+       "optionen": [
+        "ما یِک خانِه‌ی کوچَک داریم.",
+        "ما یِک خانِه کوچَک داریم.",
+        "ما خانِه‌ی کوچَک دارید."
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "Was bedeutet <span class='fa'>چَند فَرزَند دارید؟</span>?",
+       "optionen": [
+        "Wie viele Kinder haben Sie?",
+        "Haben Sie Geschwister?",
+        "Wie alt sind Ihre Kinder?"
+       ],
+       "richtig": 0,
+       "hoeren": false
+      },
+      {
+       "frage": "Welche Zahl ist <span class='fa'>چَهار</span>?",
+       "optionen": [
+        "4",
+        "5",
+        "40"
+       ],
+       "richtig": 0,
+       "hoeren": false
+      },
+      {
+       "frage": "„Ich habe auch einen Bruder.“",
+       "optionen": [
+        "مَن یِک بَرادَر هَم دارَم.",
+        "مَن هَم یِک بَرادَر هَستَم.",
+        "مَن بَرادَر هَم نَدارَم."
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "e",
+   "titel": "E · mögen & را",
+   "vorschau": "دوست دارَم",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "E · mögen & را",
+     "text": "<p>dūst dāschtan, Essen & Trinken, bestimmtes Objekt mit را.</p><p class='klein muted'>Jede Frage zählt. Du kannst den Abschnitt später wiederholen – es zählt dein bestes Ergebnis.</p>"
+    },
+    {
+     "typ": "wahl",
+     "titel": "mögen & را",
+     "fragen": [
+      {
+       "frage": "„Ich mag Tee.“",
+       "optionen": [
+        "مَن چای دوست دارَم.",
+        "مَن چای دوست هَستَم.",
+        "مَن دوست چای دارَم."
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Magst du diesen Apfel?“",
+       "optionen": [
+        "این سیب را دوست داری؟",
+        "این سیب دوست داری را؟",
+        "این سیب را دوست هَستی؟"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Er/Sie mag keinen Fisch.“",
+       "optionen": [
+        "او ماهی دوست نَدارَد.",
+        "او ماهی نَدوست دارَد.",
+        "او ماهی دوست نِمی‌دارَد."
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "Wann steht <span class='fa'>را</span>?",
+       "optionen": [
+        "nach einem bestimmten Objekt",
+        "nach jedem Subjekt",
+        "nach Zahlen"
+       ],
+       "richtig": 0,
+       "hoeren": false
+      },
+      {
+       "frage": "„Ich habe das Buch gelesen.“",
+       "optionen": [
+        "کِتاب را خواندَم.",
+        "کِتاب خواندَم را.",
+        "را کِتاب خواندَم."
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "Was ist <span class='fa'>هَویج</span>?",
+       "optionen": [
+        "Karotte",
+        "Zwiebel",
+        "Gurke"
+       ],
+       "richtig": 0,
+       "hoeren": false
+      },
+      {
+       "frage": "Was ist <span class='fa'>گوجه‌فَرَنگی</span>?",
+       "optionen": [
+        "Tomate",
+        "Kartoffel",
+        "Paprika"
+       ],
+       "richtig": 0,
+       "hoeren": false
+      },
+      {
+       "frage": "„Wir mögen beide Obst.“",
+       "optionen": [
+        "ما هَر دو میوه دوست داریم.",
+        "ما هَر دو میوه دوست دارَند.",
+        "ما میوه هَر دو داریم دوست."
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Was magst du?“",
+       "optionen": [
+        "چِه چیزی دوست داری؟",
+        "چِه چیزی دوست هَستی؟",
+        "دوست داری چِه؟"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "Was bedeutet <span class='fa'>اَصلاً</span> (in verneinten Sätzen)?",
+       "optionen": [
+        "gar nicht",
+        "sehr",
+        "immer"
+       ],
+       "richtig": 0,
+       "hoeren": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "f",
+   "titel": "F · Präteritum",
+   "vorschau": "رَفتَم",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "F · Präteritum",
+     "text": "<p>Vergangenheitsstamm, Endungen, Verneinung, gestern.</p><p class='klein muted'>Jede Frage zählt. Du kannst den Abschnitt später wiederholen – es zählt dein bestes Ergebnis.</p>"
+    },
+    {
+     "typ": "wahl",
+     "titel": "Präteritum",
+     "fragen": [
+      {
+       "frage": "„Ich ging.“",
+       "optionen": [
+        "رَفتَم",
+        "می‌رَوَم",
+        "رَفت"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Er/Sie kam.“",
+       "optionen": [
+        "آمَد",
+        "آمَدَد",
+        "آمَدَم"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Wir haben nicht gegessen.“",
+       "optionen": [
+        "ما غَذا نَخوردیم.",
+        "ما غَذا نِمی‌خوریم.",
+        "ما غَذا خوردیم نَه."
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "Vergangenheitsstamm von <span class='fa'>دیدَن</span>:",
+       "optionen": [
+        "دید",
+        "بین",
+        "دِی"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Sie (Pl.) haben gearbeitet.“",
+       "optionen": [
+        "آنها کار کَردَند.",
+        "آنها کار کَرد.",
+        "آنها کار کَردیم."
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Er/Sie kam nicht.“",
+       "optionen": [
+        "او نَیامَد.",
+        "او نَآمَد.",
+        "او نِمی‌آمَد."
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Gestern war ich zu Hause.“",
+       "optionen": [
+        "دیروز دَر خانِه بودَم.",
+        "دیروز دَر خانِه هَستَم.",
+        "دیروز دَر خانِه بود."
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Hattest du Zeit?“",
+       "optionen": [
+        "وَقت داشتی؟",
+        "وَقت داری؟",
+        "وَقت داشتَم؟"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "Was bedeutet <span class='fa'>صُبحانِه خوردی؟</span>?",
+       "optionen": [
+        "Hast du gefrühstückt?",
+        "Frühstückst du?",
+        "Hat er gefrühstückt?"
+       ],
+       "richtig": 0,
+       "hoeren": false
+      },
+      {
+       "frage": "„um 7 Uhr“",
+       "optionen": [
+        "ساعَتِ هَفت",
+        "هَفت ساعَت",
+        "ساعَت هَفت اَست"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      }
+     ]
+    },
+    {
+     "typ": "bauen",
+     "titel": "Baue den Satz",
+     "trenner": " ",
+     "woerter": [
+      {
+       "fa": "دیروز ساعَتِ هَفت بیدار شُدَم.",
+       "tr": "dīrūz sāʿat-e haft bīdār schodam.",
+       "de": "Gestern bin ich um sieben aufgewacht.",
+       "teile": [
+        "دیروز",
+        "ساعَتِ",
+        "هَفت",
+        "بیدار",
+        "شُدَم"
+       ],
+       "extra": [
+        "می‌شَوَم"
+       ]
+      },
+      {
+       "fa": "او دیشَب فیلم دید.",
+       "tr": "ū dīschab fīlm dīd.",
+       "de": "Er/Sie hat gestern Abend einen Film gesehen.",
+       "teile": [
+        "او",
+        "دیشَب",
+        "فیلم",
+        "دید"
+       ],
+       "extra": [
+        "بین"
+       ]
+      },
+      {
+       "fa": "ما بِه دانِشگاه نَرَفتیم.",
+       "tr": "mā be dāneschgāh naraftīm.",
+       "de": "Wir sind nicht zur Uni gegangen.",
+       "teile": [
+        "ما",
+        "بِه",
+        "دانِشگاه",
+        "نَرَفتیم"
+       ],
+       "extra": [
+        "رَفت"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "g",
+   "titel": "G · mein, dein – kurz & lang",
+   "vorschau": "کِتابَم",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "G · mein, dein – kurz & lang",
+     "text": "<p>Possessiv-Endungen, Ezāfe mit Pronomen, را.</p><p class='klein muted'>Jede Frage zählt. Du kannst den Abschnitt später wiederholen – es zählt dein bestes Ergebnis.</p>"
+    },
+    {
+     "typ": "wahl",
+     "titel": "Possessiv & را",
+     "fragen": [
+      {
+       "frage": "„mein Buch“ (kurz)",
+       "optionen": [
+        "کِتابَم",
+        "کِتابِ",
+        "کِتاب‌ها"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„dein Haus“ (kurz)",
+       "optionen": [
+        "خانِه‌اَت",
+        "خانِه‌ت",
+        "خانِه‌تو"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„unser Lehrer“ (kurz)",
+       "optionen": [
+        "مُعَلِّمِمان",
+        "مُعَلِّمِ ما‌ن",
+        "مُعَلِّمیم"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "<span class='fa'>کِلیدَش</span> heißt …",
+       "optionen": [
+        "sein/ihr Schlüssel",
+        "mein Schlüssel",
+        "dein Schlüssel"
+       ],
+       "richtig": 0,
+       "hoeren": false
+      },
+      {
+       "frage": "„Ich habe deine Schwester gesehen.“",
+       "optionen": [
+        "خواهَرَت را دیدَم.",
+        "خواهَرَت دیدَم را.",
+        "خواهَرَم را دیدی."
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "Lang = kurz: <span class='fa'>کِتابِ آنها</span> = …",
+       "optionen": [
+        "کِتابِشان",
+        "کِتابِتان",
+        "کِتابِمان"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Wo ist euer Auto?“",
+       "optionen": [
+        "ماشینِتان کُجاست؟",
+        "ماشینِشان کُجاست؟",
+        "ماشینَت کُجاست؟"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Ich habe sein Handy gefunden.“",
+       "optionen": [
+        "گوشی‌اَش را پِیدا کَردَم.",
+        "گوشیَم را پِیدا کَرد.",
+        "گوشی‌اَش پِیدا کَردَم را."
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„meine Mutter“ (lang)",
+       "optionen": [
+        "مادَرِ مَن",
+        "مَنِ مادَر",
+        "مادَر مَن اَست"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Ich habe ein Buch gekauft.“ (unbestimmt)",
+       "optionen": [
+        "یِک کِتاب خَریدَم.",
+        "یِک کِتاب را خَریدَم.",
+        "کِتاب را خَریدَم یِک."
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true,
+       "erkl": "Unbestimmtes Objekt: <b>ohne</b> را."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "h",
+   "titel": "H · Plural, Zahlen & Alter",
+   "vorschau": "ـها · ـان",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "H · Plural, Zahlen & Alter",
+     "text": "<p>Mehrzahl mit ـها und ـان, Zahlen bis 100 und darüber, Alter.</p><p class='klein muted'>Jede Frage zählt. Du kannst den Abschnitt später wiederholen – es zählt dein bestes Ergebnis.</p>"
+    },
+    {
+     "typ": "wahl",
+     "titel": "Plural & Zahlen",
+     "fragen": [
+      {
+       "frage": "Mehrzahl von <span class='fa'>کِتاب</span>:",
+       "optionen": [
+        "کِتاب‌ها",
+        "کِتابان",
+        "کِتاب‌هایان"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "Mehrzahl von <span class='fa'>دانِشجو</span> mit ـان:",
+       "optionen": [
+        "دانِشجویان",
+        "دانِشجوان",
+        "دانِشجوها‌ن"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„drei Bücher“",
+       "optionen": [
+        "سِه کِتاب",
+        "سِه کِتاب‌ها",
+        "کِتاب‌ها سِه"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Die Gäste sind gekommen.“",
+       "optionen": [
+        "مِهمان‌ها آمَدَند.",
+        "مِهمان‌ها آمَد.",
+        "مِهمان آمَدَند‌ها."
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Wie alt bist du?“",
+       "optionen": [
+        "چَند سال داری؟",
+        "چَند سال هَستی؟",
+        "چِقَدر سال داری؟"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "Welche Zahl ist <span class='fa'>شَصت و هَشت</span>?",
+       "optionen": [
+        "68",
+        "86",
+        "58"
+       ],
+       "richtig": 0,
+       "hoeren": false
+      },
+      {
+       "frage": "Welche Zahl ist <span class='fa'>پانزدَه</span>?",
+       "optionen": [
+        "15",
+        "50",
+        "5"
+       ],
+       "richtig": 0,
+       "hoeren": false
+      },
+      {
+       "frage": "Wie heißt 300?",
+       "optionen": [
+        "سیصَد",
+        "سِه صَد",
+        "سی"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„meine Bücher“",
+       "optionen": [
+        "کِتاب‌هایَم",
+        "کِتابَم‌ها",
+        "کِتاب‌ها‌م"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "Welche Zahl ist <span class='fa'>هِزار و پانصَد</span>?",
+       "optionen": [
+        "1500",
+        "1050",
+        "5100"
+       ],
+       "richtig": 0,
+       "hoeren": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "i",
+   "titel": "I · Präsens",
+   "vorschau": "می‌خورَم",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "I · Präsens",
+     "text": "<p>mī- + Präsensstamm + Endung, Verneinung mit نِمی‌, Präsensstämme.</p><p class='klein muted'>Jede Frage zählt. Du kannst den Abschnitt später wiederholen – es zählt dein bestes Ergebnis.</p>"
+    },
+    {
+     "typ": "wahl",
+     "titel": "Präsens",
+     "fragen": [
+      {
+       "frage": "„ich esse“",
+       "optionen": [
+        "می‌خورَم",
+        "خوردَم",
+        "می‌خوردَم"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„er/sie geht“",
+       "optionen": [
+        "می‌رَوَد",
+        "می‌رَفت",
+        "رَوَد"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„wir kommen“",
+       "optionen": [
+        "می‌آییم",
+        "می‌آیَم",
+        "آمَدیم"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "Präsensstamm von <span class='fa'>دیدَن</span>:",
+       "optionen": [
+        "بین",
+        "دید",
+        "دِی"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "Präsensstamm von <span class='fa'>پُختَن</span>:",
+       "optionen": [
+        "پَز",
+        "پُخت",
+        "پُخ"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Ich arbeite nicht.“",
+       "optionen": [
+        "کار نِمی‌کُنَم.",
+        "نِمی‌کار کُنَم.",
+        "کار نَکَردَم."
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Ich habe keine Zeit.“ (jetzt)",
+       "optionen": [
+        "وَقت نَدارَم.",
+        "وَقت نِمی‌دارَم.",
+        "وَقت نَداشتَم."
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Ich komme um sechs zurück.“",
+       "optionen": [
+        "ساعَتِ شِش بَرمی‌گَردَم.",
+        "ساعَتِ شِش می‌بَرگَردَم.",
+        "ساعَتِ شِش بَرگَشتَم."
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Was sagst du?“",
+       "optionen": [
+        "چِه می‌گویی؟",
+        "چِه می‌گوی؟",
+        "چِه گُفتی؟"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Ich gehe nie spät schlafen.“",
+       "optionen": [
+        "هیچ‌وَقت دیر نِمی‌خوابَم.",
+        "هیچ‌وَقت دیر می‌خوابَم.",
+        "هَمیشه دیر نِمی‌خوابَم."
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Iraner essen spät zu Abend.“",
+       "optionen": [
+        "ایرانی‌ها دیر شام می‌خورَند.",
+        "ایرانی‌ها دیر شام می‌خورَد.",
+        "ایرانی‌ها دیر شام خوردَند."
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      }
+     ]
+    },
+    {
+     "typ": "bauen",
+     "titel": "Baue den Satz",
+     "trenner": " ",
+     "woerter": [
+      {
+       "fa": "مَن هَر روز ساعَتِ هَفت بیدار می‌شَوَم.",
+       "tr": "man har rūz sāʿat-e haft bīdār mīschawam.",
+       "de": "Ich wache jeden Tag um sieben auf.",
+       "teile": [
+        "مَن",
+        "هَر",
+        "روز",
+        "ساعَتِ",
+        "هَفت",
+        "بیدار",
+        "می‌شَوَم"
+       ],
+       "extra": [
+        "شُدَم"
+       ]
+      },
+      {
+       "fa": "آنها جُمعه‌ها کار نِمی‌کُنَند.",
+       "tr": "ānhā dschomʿehā kār nemīkonand.",
+       "de": "Freitags arbeiten sie nicht.",
+       "teile": [
+        "آنها",
+        "جُمعه‌ها",
+        "کار",
+        "نِمی‌کُنَند"
+       ],
+       "extra": [
+        "کَردَند"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "j",
+   "titel": "J · Uhrzeit, Wochentage & Datum",
+   "vorschau": "ساعَت · شَنبه",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "J · Uhrzeit, Wochentage & Datum",
+     "text": "<p>Uhrzeit mit halb und Viertel, Wochentage, Monate, Ordnungszahlen.</p><p class='klein muted'>Jede Frage zählt. Du kannst den Abschnitt später wiederholen – es zählt dein bestes Ergebnis.</p>"
+    },
+    {
+     "typ": "wahl",
+     "titel": "Zeit",
+     "fragen": [
+      {
+       "frage": "7:30",
+       "optionen": [
+        "هَفت و نیم",
+        "هَشت و نیم",
+        "نیم بِه هَشت"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "8:45",
+       "optionen": [
+        "یِک رُبع بِه نُه",
+        "هَشت و رُبع",
+        "یِک رُبع بِه هَشت"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„um 10 Uhr“",
+       "optionen": [
+        "ساعَتِ دَه",
+        "ساعَت دَه اَست",
+        "دَه ساعَت"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "Welcher Tag ist <span class='fa'>دوشَنبه</span>?",
+       "optionen": [
+        "Montag",
+        "Dienstag",
+        "Sonntag"
+       ],
+       "richtig": 0,
+       "hoeren": false
+      },
+      {
+       "frage": "Welcher Tag ist in Iran frei?",
+       "optionen": [
+        "جُمعه",
+        "یِکشَنبه",
+        "شَنبه"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "Was bedeutet <span class='fa'>ساعَت چَند اَست؟</span>?",
+       "optionen": [
+        "Wie spät ist es?",
+        "Wie viele Stunden?",
+        "Um wie viel Uhr?"
+       ],
+       "richtig": 0,
+       "hoeren": false
+      },
+      {
+       "frage": "Erster Monat des iranischen Jahres:",
+       "optionen": [
+        "فَروَردین",
+        "مِهر",
+        "دِی"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„der dritte“",
+       "optionen": [
+        "سِوُّم",
+        "سِهُم",
+        "سِه"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "Welche Jahreszeit ist <span class='fa'>پاییز</span>?",
+       "optionen": [
+        "Herbst",
+        "Frühling",
+        "Winter"
+       ],
+       "richtig": 0,
+       "hoeren": false
+      },
+      {
+       "frage": "„Heute ist der fünfte Mehr.“",
+       "optionen": [
+        "اِمروز پَنجُمِ مِهر اَست.",
+        "اِمروز پَنج مِهر اَست.",
+        "اِمروز مِهرِ پَنجُم اَست."
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "k",
+   "titel": "K · Fragen",
+   "vorschau": "کُجا؟ کِی؟",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "K · Fragen",
+     "text": "<p>Fragewörter und Wortstellung in Fragen.</p><p class='klein muted'>Jede Frage zählt. Du kannst den Abschnitt später wiederholen – es zählt dein bestes Ergebnis.</p>"
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen",
+     "fragen": [
+      {
+       "frage": "„Wo wohnst du?“",
+       "optionen": [
+        "کُجا زِندِگی می‌کُنی؟",
+        "زِندِگی می‌کُنی کُجا؟",
+        "کِی زِندِگی می‌کُنی؟"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Wann kommst du?“",
+       "optionen": [
+        "کِی می‌آیی؟",
+        "کُجا می‌آیی؟",
+        "چِه می‌آیی؟"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Wer ist das?“",
+       "optionen": [
+        "این کیست؟",
+        "این چیست؟",
+        "این کُجاست؟"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Wie viele Zimmer?“",
+       "optionen": [
+        "چَند اُتاق؟",
+        "چَند اُتاق‌ها؟",
+        "چِقَدر اُتاق‌ها؟"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Was kostet das?“",
+       "optionen": [
+        "این چَند اَست؟",
+        "این کُدام اَست؟",
+        "این کِی اَست؟"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Womit fährst du?“",
+       "optionen": [
+        "با چِه می‌رَوی؟",
+        "چِه با می‌رَوی؟",
+        "با کِی رَفتی؟"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Welcher Bus?“",
+       "optionen": [
+        "کُدام اُتوبوس؟",
+        "چِه کَسی اُتوبوس؟",
+        "اُتوبوسِ کُدام؟"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Doch!“ (auf eine verneinte Frage)",
+       "optionen": [
+        "چِرا",
+        "بَله",
+        "آیا"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "Wo steht das Fragewort?",
+       "optionen": [
+        "dort, wo die Antwort stehen würde",
+        "immer am Satzanfang",
+        "immer am Ende"
+       ],
+       "richtig": 0,
+       "hoeren": false
+      },
+      {
+       "frage": "„Warum bist du müde?“",
+       "optionen": [
+        "چِرا خَستِه هَستی؟",
+        "چون خَستِه هَستی؟",
+        "چِطور خَستِه هَستی؟"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "l",
+   "titel": "L · Sätze verbinden",
+   "vorschau": "چون · وَلی",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "L · Sätze verbinden",
+     "text": "<p>und, aber, weil, deshalb, obwohl, weder … noch …</p><p class='klein muted'>Jede Frage zählt. Du kannst den Abschnitt später wiederholen – es zählt dein bestes Ergebnis.</p>"
+    },
+    {
+     "typ": "wahl",
+     "titel": "Verbinder",
+     "fragen": [
+      {
+       "frage": "„… weil es regnet.“",
+       "optionen": [
+        "… چون باران می‌بارَد.",
+        "… بَرای هَمین باران می‌بارَد.",
+        "… با اینکه باران می‌بارَد."
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Es ist kalt, deshalb ziehe ich eine Jacke an.“",
+       "optionen": [
+        "هَوا سَرد اَست، بَرای هَمین ژاکَت می‌پوشَم.",
+        "هَوا سَرد اَست، چون ژاکَت می‌پوشَم.",
+        "بَرای هَمین هَوا سَرد اَست، ژاکَت می‌پوشَم."
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Obwohl ich müde bin, …“",
+       "optionen": [
+        "با اینکه خَستِه‌اَم، …",
+        "چون خَستِه‌اَم، …",
+        "پَس خَستِه‌اَم، …"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„sowohl Tee als auch Kaffee“",
+       "optionen": [
+        "هَم چای هَم قَهوِه",
+        "نَه چای نَه قَهوِه",
+        "یا چای یا قَهوِه"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„entweder … oder …“",
+       "optionen": [
+        "یا … یا …",
+        "هَم … هَم …",
+        "نَه … نَه …"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "Was bedeutet <span class='fa'>اَمّا</span>?",
+       "optionen": [
+        "aber",
+        "oder",
+        "weil"
+       ],
+       "richtig": 0,
+       "hoeren": false
+      },
+      {
+       "frage": "„zuerst … dann …“",
+       "optionen": [
+        "اَوَّل … بَعد …",
+        "بَعد … اَوَّل …",
+        "دَر آخَر … اَوَّل …"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "Was bedeutet <span class='fa'>پَس</span>?",
+       "optionen": [
+        "also, dann",
+        "weil",
+        "obwohl"
+       ],
+       "richtig": 0,
+       "hoeren": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "m",
+   "titel": "M · Lesetext & Satzbau",
+   "vorschau": "📖",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "M · Lesetext & Satzbau",
+     "text": "<p>Lies den Text. Tippe eine Zeile an, wenn du Hilfe brauchst. Danach kommen Fragen.</p>"
+    },
+    {
+     "typ": "text",
+     "titel": "Negar",
+     "text": "Lies genau – danach kommen Fragen.",
+     "zeilen": [
+      {
+       "fa": "اِسمِ مَن نِگار اَست و دانِشجویِ پِزِشکی هَستَم.",
+       "tr": "esm-e man negār ast o dāneschdschū-ye pezeschkī hastam.",
+       "de": "Ich heiße Negar und studiere Medizin."
+      },
+      {
+       "fa": "مَن با دو دوستَم دَر یِک آپارتِمانِ کوچَک زِندِگی می‌کُنَم.",
+       "tr": "man bā do dūstam dar yek āpārtemān-e kūtschak zendegī mīkonam.",
+       "de": "Ich wohne mit zwei Freundinnen in einer kleinen Wohnung."
+      },
+      {
+       "fa": "آپارتِمانِ ما نَزدیکِ دانِشگاه اَست، بَرای هَمین پیاده می‌رَوَم.",
+       "tr": "āpārtemān-e mā nazdīk-e dāneschgāh ast, barāye hamīn piyāde mīrawam.",
+       "de": "Unsere Wohnung ist nahe der Uni, deshalb gehe ich zu Fuß."
+      },
+      {
+       "fa": "دیروز اِمتِحان داشتَم و تا ساعَتِ دَوازدَه دَرس خواندَم.",
+       "tr": "dīrūz emtehān dāschtam o tā sāʿat-e dawāzdah dars chāndam.",
+       "de": "Gestern hatte ich eine Prüfung und habe bis zwölf gelernt."
+      },
+      {
+       "fa": "اِمتِحان سَخت بود، وَلی فِکر می‌کُنَم خوب بود.",
+       "tr": "emtehān sacht būd, walī fekr mīkonam chūb būd.",
+       "de": "Die Prüfung war schwer, aber ich glaube, sie war gut."
+      },
+      {
+       "fa": "اِمروز هَوا آفتابی اَست. بَعدازظُهر با دوستانَم بِه پارک می‌رَوَم.",
+       "tr": "emrūz hawā āftābī ast. baʿdazzohr bā dūstānam be pārk mīrawam.",
+       "de": "Heute ist es sonnig. Am Nachmittag gehe ich mit meinen Freundinnen in den Park."
+      },
+      {
+       "fa": "ما چای و میوه می‌بَریم، چون هَمه چای دوست دارَند.",
+       "tr": "mā tschāy o mīwe mībarīm, tschūn hame tschāy dūst dārand.",
+       "de": "Wir nehmen Tee und Obst mit, weil alle Tee mögen."
+      },
+      {
+       "fa": "جُمعه‌ها بِه خانِه‌ی پِدَر و مادَرَم می‌رَوَم و با هَم ناهار می‌خوریم.",
+       "tr": "dschomʿehā be chāne-ye pedar o mādaram mīrawam o bā ham nāhār mīchorīm.",
+       "de": "Freitags gehe ich zum Haus meiner Eltern und wir essen zusammen zu Mittag."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "نِگار مُعَلِّم اَست.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "آپارتِمان دور اَز دانِشگاه اَست.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "دیروز نِگار اِمتِحان داشت.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "اِمروز هَوا بارانی اَست.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "جُمعه‌ها نِگار با خانِواده‌اَش ناهار می‌خورَد.",
+       "fest": true
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Warum geht Negar zu Fuß zur Uni?",
+       "optionen": [
+        "Die Wohnung ist nah.",
+        "Sie hat kein Fahrrad.",
+        "Es ist sonnig."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Bis wann hat sie gestern gelernt?",
+       "optionen": [
+        "bis zwölf",
+        "bis zehn",
+        "bis sechs"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Warum nehmen sie Tee mit?",
+       "optionen": [
+        "Alle mögen Tee.",
+        "Es ist kalt.",
+        "Sie haben keinen Kaffee."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Mit wem wohnt Negar?",
+       "optionen": [
+        "mit zwei Freundinnen",
+        "mit ihren Eltern",
+        "allein"
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "bauen",
+     "titel": "Baue den Satz",
+     "trenner": " ",
+     "woerter": [
+      {
+       "fa": "با اینکه اِمتِحان سَخت بود، خوب بود.",
+       "tr": "bā īnke emtehān sacht būd, chūb būd.",
+       "de": "Obwohl die Prüfung schwer war, war sie gut.",
+       "teile": [
+        "با",
+        "اینکه",
+        "اِمتِحان",
+        "سَخت",
+        "بود",
+        "خوب",
+        "بود"
+       ],
+       "extra": [
+        "بَرای هَمین"
+       ]
+      },
+      {
+       "fa": "کُدام روز بِه خانِه‌ی پِدَر و مادَرَت می‌رَوی؟",
+       "tr": "kodām rūz be chāne-ye pedar o mādarat mīrawī?",
+       "de": "An welchem Tag gehst du zum Haus deiner Eltern?",
+       "teile": [
+        "کُدام",
+        "روز",
+        "بِه",
+        "خانِه‌ی",
+        "پِدَر",
+        "و",
+        "مادَرَت",
+        "می‌رَوی"
+       ],
+       "extra": [
+        "کِی"
+       ]
+      },
+      {
+       "fa": "ما چای می‌بَریم، چون هَمه چای دوست دارَند.",
+       "tr": "mā tschāy mībarīm, tschūn hame tschāy dūst dārand.",
+       "de": "Wir nehmen Tee mit, weil alle Tee mögen.",
+       "teile": [
+        "ما",
+        "چای",
+        "می‌بَریم",
+        "چون",
+        "هَمه",
+        "چای",
+        "دوست",
+        "دارَند"
+       ],
+       "extra": [
+        "وَلی"
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

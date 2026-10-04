@@ -1,0 +1,946 @@
+{
+ "id": "z1",
+ "titel": "Trainingspaket 1",
+ "beschreibung": "Formen, real oder irreal, Bedingungs-Marathon, Wortschatz.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "Formen: durativ & Plusquamperfekt",
+   "vorschau": "می‌آمَدَم · آمَدِه بودَم",
+   "karten": [
+    {
+     "typ": "wahl",
+     "titel": "durativ",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>آنها ___</span> <span class='mini'>(kommen)</span>",
+       "optionen": [
+        "می‌آمَدَند",
+        "می‌آمَد",
+        "می‌آمَدید"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>آنها می‌آمَدَند</span> – <i>ānhā mīāmadand</i>"
+      },
+      {
+       "frage": "<span class='fa'>ما ___</span> <span class='mini'>(gehen, fahren)</span>",
+       "optionen": [
+        "می‌رَفتیم",
+        "می‌رَفت",
+        "می‌رَفتید"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>ما می‌رَفتیم</span> – <i>mā mīraftīm</i>"
+      },
+      {
+       "frage": "<span class='fa'>آنها ___</span> <span class='mini'>(sehen)</span>",
+       "optionen": [
+        "می‌دیدَند",
+        "می‌دیدید",
+        "می‌دیدی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>آنها می‌دیدَند</span> – <i>ānhā mīdīdand</i>"
+      },
+      {
+       "frage": "<span class='fa'>تو ___</span> <span class='mini'>(kaufen)</span>",
+       "optionen": [
+        "می‌خَریدی",
+        "می‌خَرید",
+        "می‌خَریدَم"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>تو می‌خَریدی</span> – <i>to mīcharīdī</i>"
+      },
+      {
+       "frage": "<span class='fa'>تو ___</span> <span class='mini'>(essen)</span>",
+       "optionen": [
+        "می‌خوردی",
+        "می‌خوردَند",
+        "می‌خورد"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>تو می‌خوردی</span> – <i>to mīchordī</i>"
+      },
+      {
+       "frage": "<span class='fa'>مَن ___</span> <span class='mini'>(können)</span>",
+       "optionen": [
+        "می‌تَوانِستَم",
+        "می‌تَوانِستی",
+        "می‌تَوانِستید"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>مَن می‌تَوانِستَم</span> – <i>man mītawānestam</i>"
+      },
+      {
+       "frage": "<span class='fa'>مَن ___</span> <span class='mini'>(kommen)</span>",
+       "optionen": [
+        "می‌آمَدَم",
+        "می‌آمَدی",
+        "می‌آمَدَند"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>مَن می‌آمَدَم</span> – <i>man mīāmadam</i>"
+      },
+      {
+       "frage": "<span class='fa'>تو ___</span> <span class='mini'>(gehen, fahren)</span>",
+       "optionen": [
+        "می‌رَفتی",
+        "می‌رَفتیم",
+        "می‌رَفتَم"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>تو می‌رَفتی</span> – <i>to mīraftī</i>"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Plusquamperfekt",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>ما ___</span> <span class='mini'>(kommen)</span>",
+       "optionen": [
+        "آمَدِه بودیم",
+        "آمَدِه بودید",
+        "آمَدِه بود"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>ما آمَدِه بودیم</span> – <i>mā āmade būdīm</i>"
+      },
+      {
+       "frage": "<span class='fa'>شُما ___</span> <span class='mini'>(gehen, fahren)</span>",
+       "optionen": [
+        "رَفتِه بودید",
+        "رَفتِه بودَم",
+        "رَفتِه بودیم"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>شُما رَفتِه بودید</span> – <i>schomā rafte būdīd</i>"
+      },
+      {
+       "frage": "<span class='fa'>تو ___</span> <span class='mini'>(sehen)</span>",
+       "optionen": [
+        "دیدِه بودی",
+        "دیدِه بود",
+        "دیدِه بودیم"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>تو دیدِه بودی</span> – <i>to dīde būdī</i>"
+      },
+      {
+       "frage": "<span class='fa'>شُما ___</span> <span class='mini'>(kaufen)</span>",
+       "optionen": [
+        "خَریدِه بودید",
+        "خَریدِه بودَند",
+        "خَریدِه بود"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>شُما خَریدِه بودید</span> – <i>schomā charīde būdīd</i>"
+      },
+      {
+       "frage": "<span class='fa'>تو ___</span> <span class='mini'>(essen)</span>",
+       "optionen": [
+        "خوردِه بودی",
+        "خوردِه بود",
+        "خوردِه بودیم"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>تو خوردِه بودی</span> – <i>to chorde būdī</i>"
+      },
+      {
+       "frage": "<span class='fa'>مَن ___</span> <span class='mini'>(aufwachen)</span>",
+       "optionen": [
+        "بیدار شُدِه بودَم",
+        "بیدار شُدِه بودید",
+        "بیدار شُدِه بود"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>مَن بیدار شُدِه بودَم</span> – <i>man bīdār schode būdam</i>"
+      },
+      {
+       "frage": "<span class='fa'>آنها ___</span> <span class='mini'>(kommen)</span>",
+       "optionen": [
+        "آمَدِه بودَند",
+        "آمَدِه بودید",
+        "آمَدِه بودی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>آنها آمَدِه بودَند</span> – <i>ānhā āmade būdand</i>"
+      },
+      {
+       "frage": "<span class='fa'>ما ___</span> <span class='mini'>(gehen, fahren)</span>",
+       "optionen": [
+        "رَفتِه بودیم",
+        "رَفتِه بودَم",
+        "رَفتِه بودید"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>ما رَفتِه بودیم</span> – <i>mā rafte būdīm</i>"
+      }
+     ]
+    },
+    {
+     "typ": "memory",
+     "links": "x",
+     "paare": [
+      {
+       "fa": "تو",
+       "tr": "",
+       "de": "",
+       "x": "می‌تَوانِستی"
+      },
+      {
+       "fa": "او",
+       "tr": "",
+       "de": "",
+       "x": "می‌تَوانِست"
+      },
+      {
+       "fa": "شُما",
+       "tr": "",
+       "de": "",
+       "x": "می‌تَوانِستید"
+      },
+      {
+       "fa": "ما",
+       "tr": "",
+       "de": "",
+       "x": "می‌تَوانِستیم"
+      },
+      {
+       "fa": "آنها",
+       "tr": "",
+       "de": "",
+       "x": "می‌تَوانِستَند"
+      },
+      {
+       "fa": "مَن",
+       "tr": "",
+       "de": "",
+       "x": "می‌تَوانِستَم"
+      }
+     ],
+     "titel": "Memory: می‌توانستم …"
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Real oder irreal?",
+   "vorschau": "✅ / 💭",
+   "karten": [
+    {
+     "typ": "sortieren",
+     "titel": "Real oder irreal?",
+     "frage": "Kann die Bedingung (noch) wahr sein?",
+     "kategorien": [
+      "✅ real",
+      "💭 irreal"
+     ],
+     "items": [
+      {
+       "fa": "اگر وقت داشته باشی …",
+       "k": 0
+      },
+      {
+       "fa": "اگر دیده‌ای …",
+       "k": 0
+      },
+      {
+       "fa": "اگر بیایند …",
+       "k": 0
+      },
+      {
+       "fa": "اگر وقت داشتی …",
+       "k": 1
+      },
+      {
+       "fa": "اگر دیده بودی …",
+       "k": 1
+      },
+      {
+       "fa": "اگر می‌آمدند …",
+       "k": 1
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welcher Satz ist das?",
+     "fragen": [
+      {
+       "frage": "„Wenn Winter wäre, würde es früh dunkel.“",
+       "optionen": [
+        "اگر زمستان بود، زود تاریک می‌شد.",
+        "اگر پولدار بودم، یک خانه کنار دریا می‌خریدم.",
+        "اگر فارسی را خوب می‌دانستم، رمان‌های فارسی را می‌خواندم."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Wenn ich etwas gekauft hätte, hätte ich es dir bestimmt gesagt.“",
+       "optionen": [
+        "اگر چیزی خریده بودم، حتما به تو می‌گفتم.",
+        "اگر دیروز باران نمی‌آمد، به ساحل رفته بودیم.",
+        "اگر مریض نشده بودم، حتما با شما می‌آمدم."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„An deiner Stelle würde ich ihn/sie anrufen.“",
+       "optionen": [
+        "اگر جای تو بودم، به او زنگ می‌زدم.",
+        "اگر دیروز باران نمی‌آمد، به ساحل رفته بودیم.",
+        "اگر مریض نشده بودم، آن گربه را دیده بودم."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Wenn ich nicht krank geworden wäre, hätte ich die Katze gesehen.“",
+       "optionen": [
+        "اگر مریض نشده بودم، آن گربه را دیده بودم.",
+        "اگر می‌توانستی بیایی، مینو خیلی خوشحال می‌شد.",
+        "اگر چیزی خریده بودم، حتما به تو می‌گفتم."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Wenn ich früher aufgewacht wäre, hätte ich den Zug erreicht.“",
+       "optionen": [
+        "اگر زودتر بیدار شده بودم، به قطار رسیده بودم.",
+        "اگر جای تو بودم، به او زنگ می‌زدم.",
+        "اگر مریض نشده بودم، آن گربه را دیده بودم."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Wenn ich nicht krank geworden wäre, wäre ich bestimmt mit euch gekommen.“",
+       "optionen": [
+        "اگر مریض نشده بودم، حتما با شما می‌آمدم.",
+        "اگر پولدار بودم، یک خانه کنار دریا می‌خریدم.",
+        "اگر آمده بودی، عاشق این حیوان می‌شدی!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Wenn du gekommen wärst, hättest du dich in dieses Tier verliebt!“",
+       "optionen": [
+        "اگر آمده بودی، عاشق این حیوان می‌شدی!",
+        "اگر دیروز باران نمی‌آمد، به ساحل رفته بودیم.",
+        "اگر پولدار بودم، یک خانه کنار دریا می‌خریدم."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Wenn es gestern nicht geregnet hätte, wären wir an den Strand gefahren.“",
+       "optionen": [
+        "اگر دیروز باران نمی‌آمد، به ساحل رفته بودیم.",
+        "اگر پولدار بودم، یک خانه کنار دریا می‌خریدم.",
+        "اگر فارسی را خوب می‌دانستم، رمان‌های فارسی را می‌خواندم."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "titel": "Bedingungs-Marathon",
+   "vorschau": "اَگَر × ۲۴",
+   "karten": [
+    {
+     "typ": "tempo",
+     "titel": "Blitz: irreal",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 70,
+     "ziel": 12,
+     "woerter": [
+      {
+       "fa": "اگر وقت داشتم، با شما می‌آمدم.",
+       "a": "Wenn ich Zeit hätte, käme ich mit euch."
+      },
+      {
+       "fa": "اگر پولدار بودم، یک خانه کنار دریا می‌خریدم.",
+       "a": "Wenn ich reich wäre, würde ich ein Haus am Meer kaufen."
+      },
+      {
+       "fa": "اگر جای تو بودم، به او زنگ می‌زدم.",
+       "a": "An deiner Stelle würde ich ihn/sie anrufen."
+      },
+      {
+       "fa": "اگر فارسی را خوب می‌دانستم، رمان‌های فارسی را می‌خواندم.",
+       "a": "Wenn ich gut Persisch könnte, würde ich persische Romane lesen."
+      },
+      {
+       "fa": "اگر زمستان بود، زود تاریک می‌شد.",
+       "a": "Wenn Winter wäre, würde es früh dunkel."
+      },
+      {
+       "fa": "اگر می‌توانستی بیایی، مینو خیلی خوشحال می‌شد.",
+       "a": "Wenn du kommen könntest, würde sich Minu sehr freuen."
+      },
+      {
+       "fa": "اگر مریض نشده بودم، حتما با شما می‌آمدم.",
+       "a": "Wenn ich nicht krank geworden wäre, wäre ich bestimmt mit euch gekommen."
+      },
+      {
+       "fa": "اگر آمده بودی، عاشق این حیوان می‌شدی!",
+       "a": "Wenn du gekommen wärst, hättest du dich in dieses Tier verliebt!"
+      },
+      {
+       "fa": "اگر مریض نشده بودم، آن گربه را دیده بودم.",
+       "a": "Wenn ich nicht krank geworden wäre, hätte ich die Katze gesehen."
+      },
+      {
+       "fa": "اگر چیزی خریده بودم، حتما به تو می‌گفتم.",
+       "a": "Wenn ich etwas gekauft hätte, hätte ich es dir bestimmt gesagt."
+      },
+      {
+       "fa": "اگر زودتر بیدار شده بودم، به قطار رسیده بودم.",
+       "a": "Wenn ich früher aufgewacht wäre, hätte ich den Zug erreicht."
+      },
+      {
+       "fa": "اگر دیروز باران نمی‌آمد، به ساحل رفته بودیم.",
+       "a": "Wenn es gestern nicht geregnet hätte, wären wir an den Strand gefahren."
+      },
+      {
+       "fa": "اگر به حرفم گوش داده بودی، این‌طور نمی‌شد.",
+       "a": "Hättest du auf mich gehört, wäre das nicht passiert."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Alle Bedingungen",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>اگر پولدار ___، سفر می‌کردم.</span><br><span class='mini'>Wenn ich reich wäre …</span>",
+       "optionen": [
+        "بودم",
+        "باشم",
+        "هستم"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>اگر پولدار بودم، سفر می‌کردم.</span>"
+      },
+      {
+       "frage": "<span class='fa'>اگر بخواهی، ___ برویم.</span><br><span class='mini'>Wenn du willst, können wir gehen.</span>",
+       "optionen": [
+        "می‌توانیم",
+        "می‌توانستیم",
+        "توانسته بودیم"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>اگر بخواهی، می‌توانیم برویم.</span>"
+      },
+      {
+       "frage": "<span class='fa'>اگر آمده بودی، او را ___.</span><br><span class='mini'>Wärst du gekommen, hättest du sie gesehen.</span>",
+       "optionen": [
+        "می‌دیدی",
+        "ببینی",
+        "دیده‌ای"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>اگر آمده بودی، او را می‌دیدی.</span>"
+      },
+      {
+       "frage": "<span class='fa'>اگر تا جمعه نرسیده ___، بدون آنها می‌رویم.</span><br><span class='mini'>Falls sie bis Freitag nicht da sind …</span>",
+       "optionen": [
+        "باشند",
+        "بودند",
+        "هستند"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>اگر تا جمعه نرسیده باشند، بدون آنها می‌رویم.</span>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d",
+   "titel": "An deiner Stelle …",
+   "vorschau": "اَگَر جایِ تو بودَم",
+   "karten": [
+    {
+     "typ": "bauen",
+     "titel": "Baue den Satz",
+     "trenner": " ",
+     "woerter": [
+      {
+       "fa": "اگر می‌توانستی بیایی، مینو خیلی خوشحال می‌شد.",
+       "tr": "agar mītawānestī biyāyī, mīnū cheylī choschhāl mīschod.",
+       "de": "Wenn du kommen könntest, würde sich Minu sehr freuen.",
+       "emoji": "😊",
+       "teile": [
+        "اگر",
+        "می‌توانستی",
+        "بیایی",
+        "مینو",
+        "خیلی",
+        "خوشحال",
+        "می‌شد"
+       ],
+       "extra": [
+        "باشم"
+       ]
+      },
+      {
+       "fa": "اگر چیزی خریده بودم، حتما به تو می‌گفتم.",
+       "tr": "agar tschīzī charīde būdam, hatman be to mīgoftam.",
+       "de": "Wenn ich etwas gekauft hätte, hätte ich es dir bestimmt gesagt.",
+       "emoji": "🎁",
+       "teile": [
+        "اگر",
+        "چیزی",
+        "خریده",
+        "بودم",
+        "حتما",
+        "به",
+        "تو",
+        "می‌گفتم"
+       ],
+       "extra": [
+        "باشم"
+       ]
+      },
+      {
+       "fa": "اگر زودتر بیدار شده بودم، به قطار رسیده بودم.",
+       "tr": "agar zūdtar bīdār schode būdam, be ghatār resīde būdam.",
+       "de": "Wenn ich früher aufgewacht wäre, hätte ich den Zug erreicht.",
+       "emoji": "🚆",
+       "teile": [
+        "اگر",
+        "زودتر",
+        "بیدار",
+        "شده",
+        "بودم",
+        "به",
+        "قطار",
+        "رسیده",
+        "بودم"
+       ],
+       "extra": [
+        "باشم"
+       ]
+      },
+      {
+       "fa": "اگر پولدار بودم، یک خانه کنار دریا می‌خریدم.",
+       "tr": "agar pūldār būdam, yek chāne kenār-e daryā mīcharīdam.",
+       "de": "Wenn ich reich wäre, würde ich ein Haus am Meer kaufen.",
+       "emoji": "🏖️",
+       "teile": [
+        "اگر",
+        "پولدار",
+        "بودم",
+        "یک",
+        "خانه",
+        "کنار",
+        "دریا",
+        "می‌خریدم"
+       ],
+       "extra": [
+        "باشم"
+       ]
+      },
+      {
+       "fa": "اگر به حرفم گوش داده بودی، این‌طور نمی‌شد.",
+       "tr": "agar be harfam gūsch dāde būdī, īntour nemīschod.",
+       "de": "Hättest du auf mich gehört, wäre das nicht passiert.",
+       "emoji": "👂",
+       "teile": [
+        "اگر",
+        "به",
+        "حرفم",
+        "گوش",
+        "داده",
+        "بودی",
+        "این‌طور",
+        "نمی‌شد"
+       ],
+       "extra": [
+        "باشم"
+       ]
+      },
+      {
+       "fa": "اگر زمستان بود، زود تاریک می‌شد.",
+       "tr": "agar zemestān būd, zūd tārīk mīschod.",
+       "de": "Wenn Winter wäre, würde es früh dunkel.",
+       "emoji": "🌙",
+       "teile": [
+        "اگر",
+        "زمستان",
+        "بود",
+        "زود",
+        "تاریک",
+        "می‌شد"
+       ],
+       "extra": [
+        "باشم"
+       ]
+      }
+     ]
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "اگر پولدار بودم، یک خانه کنار دریا می‌خریدم.",
+       "tr": "agar pūldār būdam, yek chāne kenār-e daryā mīcharīdam.",
+       "de": "Wenn ich reich wäre, würde ich ein Haus am Meer kaufen.",
+       "emoji": "🏖️"
+      },
+      {
+       "fa": "اگر می‌توانستی بیایی، مینو خیلی خوشحال می‌شد.",
+       "tr": "agar mītawānestī biyāyī, mīnū cheylī choschhāl mīschod.",
+       "de": "Wenn du kommen könntest, würde sich Minu sehr freuen.",
+       "emoji": "😊"
+      },
+      {
+       "fa": "اگر مریض نشده بودم، حتما با شما می‌آمدم.",
+       "tr": "agar marīz naschode būdam, hatman bā schomā mīāmadam.",
+       "de": "Wenn ich nicht krank geworden wäre, wäre ich bestimmt mit euch gekommen.",
+       "emoji": "🤒"
+      },
+      {
+       "fa": "اگر وقت داشتم، با شما می‌آمدم.",
+       "tr": "agar waght dāschtam, bā schomā mīāmadam.",
+       "de": "Wenn ich Zeit hätte, käme ich mit euch.",
+       "emoji": "⏰"
+      },
+      {
+       "fa": "اگر چیزی خریده بودم، حتما به تو می‌گفتم.",
+       "tr": "agar tschīzī charīde būdam, hatman be to mīgoftam.",
+       "de": "Wenn ich etwas gekauft hätte, hätte ich es dir bestimmt gesagt.",
+       "emoji": "🎁"
+      },
+      {
+       "fa": "اگر زودتر بیدار شده بودم، به قطار رسیده بودم.",
+       "tr": "agar zūdtar bīdār schode būdam, be ghatār resīde būdam.",
+       "de": "Wenn ich früher aufgewacht wäre, hätte ich den Zug erreicht.",
+       "emoji": "🚆"
+      }
+     ],
+     "titel": "Memory: Bild & Satz"
+    }
+   ]
+  },
+  {
+   "id": "e",
+   "titel": "Wortschatz: Lektion 24",
+   "vorschau": "عاشِق حِیوان",
+   "karten": [
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "کِنارِ",
+       "tr": "kenār-e",
+       "de": "neben, am",
+       "emoji": "↔️"
+      },
+      {
+       "fa": "پولدار",
+       "tr": "pūldār",
+       "de": "reich",
+       "emoji": "💰"
+      },
+      {
+       "fa": "تاریک",
+       "tr": "tārīk",
+       "de": "dunkel",
+       "emoji": "🌑"
+      },
+      {
+       "fa": "عاشِق",
+       "tr": "ʿāschegh",
+       "de": "verliebt",
+       "emoji": "😍"
+      },
+      {
+       "fa": "حِیف",
+       "tr": "heyf",
+       "de": "schade",
+       "emoji": "😕"
+      },
+      {
+       "fa": "جایِ تو",
+       "tr": "dschā-ye to",
+       "de": "an deiner Stelle",
+       "emoji": "🔁"
+      }
+     ],
+     "titel": "Memory: Bild & Wort"
+    },
+    {
+     "typ": "memory",
+     "links": "tr",
+     "paare": [
+      {
+       "fa": "رُمان",
+       "tr": "romān",
+       "de": "Roman",
+       "emoji": "📖"
+      },
+      {
+       "fa": "حِیف",
+       "tr": "heyf",
+       "de": "schade",
+       "emoji": "😕"
+      },
+      {
+       "fa": "عاشِق",
+       "tr": "ʿāschegh",
+       "de": "verliebt",
+       "emoji": "😍"
+      },
+      {
+       "fa": "تاریک",
+       "tr": "tārīk",
+       "de": "dunkel",
+       "emoji": "🌑"
+      },
+      {
+       "fa": "پولدار",
+       "tr": "pūldār",
+       "de": "reich",
+       "emoji": "💰"
+      },
+      {
+       "fa": "حِیوان",
+       "tr": "heywān",
+       "de": "Tier",
+       "emoji": "🐾"
+      }
+     ],
+     "titel": "Memory: Schrift & Aussprache"
+    },
+    {
+     "typ": "bauen",
+     "titel": "Schreib das Wort ab",
+     "zeigen": true,
+     "woerter": [
+      {
+       "fa": "تاریک",
+       "tr": "tārīk",
+       "de": "dunkel",
+       "emoji": "🌑",
+       "teile": [
+        "ت",
+        "ا",
+        "ر",
+        "ی",
+        "ک"
+       ],
+       "extra": [
+        "ش"
+       ]
+      },
+      {
+       "fa": "حِیف",
+       "tr": "heyf",
+       "de": "schade",
+       "emoji": "😕",
+       "teile": [
+        "ح",
+        "ی",
+        "ف"
+       ],
+       "extra": [
+        "ر"
+       ]
+      },
+      {
+       "fa": "عاشِق",
+       "tr": "ʿāschegh",
+       "de": "verliebt",
+       "emoji": "😍",
+       "teile": [
+        "ع",
+        "ا",
+        "ش",
+        "ق"
+       ],
+       "extra": [
+        "ت"
+       ]
+      },
+      {
+       "fa": "رُمان",
+       "tr": "romān",
+       "de": "Roman",
+       "emoji": "📖",
+       "teile": [
+        "ر",
+        "م",
+        "ا",
+        "ن"
+       ],
+       "extra": [
+        "ت"
+       ]
+      },
+      {
+       "fa": "کِنارِ",
+       "tr": "kenār-e",
+       "de": "neben, am",
+       "emoji": "↔️",
+       "teile": [
+        "ک",
+        "ن",
+        "ا",
+        "ر"
+       ],
+       "extra": [
+        "س"
+       ]
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitzlesen: Bedeutung",
+     "modus": "de",
+     "sekunden": 60,
+     "ziel": 12,
+     "woerter": [
+      {
+       "fa": "عاشِق",
+       "de": "verliebt"
+      },
+      {
+       "fa": "حِیوان",
+       "de": "Tier"
+      },
+      {
+       "fa": "پولدار",
+       "de": "reich"
+      },
+      {
+       "fa": "تاریک",
+       "de": "dunkel"
+      },
+      {
+       "fa": "جایِ تو",
+       "de": "an deiner Stelle"
+      },
+      {
+       "fa": "حِیف",
+       "de": "schade"
+      },
+      {
+       "fa": "کِنارِ",
+       "de": "neben, am"
+      },
+      {
+       "fa": "رُمان",
+       "de": "Roman"
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitzlesen: Aussprache",
+     "modus": "tr",
+     "sekunden": 60,
+     "ziel": 12,
+     "woerter": [
+      {
+       "fa": "عاشِق",
+       "tr": "ʿāschegh"
+      },
+      {
+       "fa": "حِیوان",
+       "tr": "heywān"
+      },
+      {
+       "fa": "پولدار",
+       "tr": "pūldār"
+      },
+      {
+       "fa": "تاریک",
+       "tr": "tārīk"
+      },
+      {
+       "fa": "جایِ تو",
+       "tr": "dschā-ye to"
+      },
+      {
+       "fa": "حِیف",
+       "tr": "heyf"
+      },
+      {
+       "fa": "کِنارِ",
+       "tr": "kenār-e"
+      },
+      {
+       "fa": "رُمان",
+       "tr": "romān"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
