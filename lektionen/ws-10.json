@@ -1,0 +1,613 @@
+{
+ "lektion": "10",
+ "woerter": [
+  {
+   "fa": "اَمّا",
+   "tr": "ammā",
+   "de": "aber (gehobener)",
+   "kat": "Kleine Wörter",
+   "emoji": "↪️"
+  },
+  {
+   "fa": "زیرا",
+   "tr": "zīrā",
+   "de": "denn, weil (schriftlich)",
+   "kat": "Kleine Wörter",
+   "emoji": "📜"
+  },
+  {
+   "fa": "پَس",
+   "tr": "pas",
+   "de": "also, dann",
+   "kat": "Kleine Wörter",
+   "emoji": "⏩"
+  },
+  {
+   "fa": "هَم … هَم",
+   "tr": "ham … ham",
+   "de": "sowohl … als auch",
+   "kat": "Kleine Wörter",
+   "emoji": "✅✅"
+  },
+  {
+   "fa": "نَه … نَه",
+   "tr": "na … na",
+   "de": "weder … noch",
+   "kat": "Kleine Wörter",
+   "emoji": "❌❌"
+  },
+  {
+   "fa": "یا … یا",
+   "tr": "yā … yā",
+   "de": "entweder … oder",
+   "kat": "Kleine Wörter",
+   "emoji": "1️⃣2️⃣"
+  },
+  {
+   "fa": "با اینکه",
+   "tr": "bā īnke",
+   "de": "obwohl",
+   "kat": "Kleine Wörter",
+   "emoji": "🤨"
+  },
+  {
+   "fa": "سِپَس",
+   "tr": "sepas",
+   "de": "danach (schriftlich)",
+   "kat": "Kleine Wörter",
+   "emoji": "⏭️"
+  },
+  {
+   "fa": "دَر آخَر",
+   "tr": "dar āchar",
+   "de": "am Ende, zum Schluss",
+   "kat": "Kleine Wörter",
+   "emoji": "🏁"
+  },
+  {
+   "fa": "آفتابی",
+   "tr": "āftābī",
+   "de": "sonnig",
+   "kat": "Natur & Wetter",
+   "emoji": "☀️"
+  },
+  {
+   "fa": "اَبری",
+   "tr": "abrī",
+   "de": "bewölkt",
+   "kat": "Natur & Wetter",
+   "emoji": "☁️"
+  },
+  {
+   "fa": "بارانی",
+   "tr": "bārānī",
+   "de": "regnerisch",
+   "kat": "Natur & Wetter",
+   "emoji": "🌧️"
+  },
+  {
+   "fa": "بَرفی",
+   "tr": "barfī",
+   "de": "verschneit",
+   "kat": "Natur & Wetter",
+   "emoji": "🌨️"
+  },
+  {
+   "fa": "طوفانی",
+   "tr": "tūfānī",
+   "de": "stürmisch",
+   "kat": "Natur & Wetter",
+   "emoji": "🌪️"
+  },
+  {
+   "fa": "خُنَک",
+   "tr": "chonak",
+   "de": "kühl",
+   "kat": "Natur & Wetter",
+   "emoji": "🍃"
+  },
+  {
+   "fa": "داغ",
+   "tr": "dāgh",
+   "de": "heiß",
+   "kat": "Natur & Wetter",
+   "emoji": "🥵"
+  },
+  {
+   "fa": "دَما",
+   "tr": "damā",
+   "de": "Temperatur",
+   "kat": "Natur & Wetter",
+   "emoji": "🌡️"
+  },
+  {
+   "fa": "دَرَجه",
+   "tr": "daradsche",
+   "de": "Grad",
+   "kat": "Natur & Wetter",
+   "emoji": "°"
+  },
+  {
+   "fa": "مِه",
+   "tr": "meh",
+   "de": "Nebel",
+   "kat": "Natur & Wetter",
+   "emoji": "🌫️"
+  },
+  {
+   "fa": "بَهار",
+   "tr": "bahār",
+   "de": "Frühling",
+   "kat": "Natur & Wetter",
+   "emoji": "🌸"
+  },
+  {
+   "fa": "تابِستان",
+   "tr": "tābestān",
+   "de": "Sommer",
+   "kat": "Natur & Wetter",
+   "emoji": "🏖️"
+  },
+  {
+   "fa": "پاییز",
+   "tr": "pāyīz",
+   "de": "Herbst",
+   "kat": "Natur & Wetter",
+   "emoji": "🍂"
+  },
+  {
+   "fa": "زِمِستان",
+   "tr": "zemestān",
+   "de": "Winter",
+   "kat": "Natur & Wetter",
+   "emoji": "⛄"
+  },
+  {
+   "fa": "دَریا",
+   "tr": "daryā",
+   "de": "Meer",
+   "kat": "Natur & Wetter",
+   "emoji": "🌊"
+  },
+  {
+   "fa": "کوه",
+   "tr": "kūh",
+   "de": "Berg",
+   "kat": "Natur & Wetter",
+   "emoji": "⛰️"
+  },
+  {
+   "fa": "جَنگَل",
+   "tr": "dschangal",
+   "de": "Wald",
+   "kat": "Natur & Wetter",
+   "emoji": "🌲"
+  },
+  {
+   "fa": "ساحِل",
+   "tr": "sāhel",
+   "de": "Strand, Küste",
+   "kat": "Natur & Wetter",
+   "emoji": "🏖️"
+  },
+  {
+   "fa": "کُلاه",
+   "tr": "kolāh",
+   "de": "Mütze, Hut",
+   "kat": "Dinge",
+   "emoji": "🧢"
+  },
+  {
+   "fa": "عینَکِ آفتابی",
+   "tr": "ʿeynak-e āftābī",
+   "de": "Sonnenbrille",
+   "kat": "Dinge",
+   "emoji": "🕶️"
+  },
+  {
+   "fa": "فَروَردین",
+   "tr": "farwardīn",
+   "de": "1. Monat (21.3.–20.4.)",
+   "kat": "Zeit",
+   "emoji": "🌸"
+  },
+  {
+   "fa": "اُردیبِهِشت",
+   "tr": "ordībehescht",
+   "de": "2. Monat (21.4.–21.5.)",
+   "kat": "Zeit",
+   "emoji": "🌷"
+  },
+  {
+   "fa": "خُرداد",
+   "tr": "chordād",
+   "de": "3. Monat (22.5.–21.6.)",
+   "kat": "Zeit",
+   "emoji": "🌿"
+  },
+  {
+   "fa": "تیر",
+   "tr": "tīr",
+   "de": "4. Monat (22.6.–22.7.)",
+   "kat": "Zeit",
+   "emoji": "☀️"
+  },
+  {
+   "fa": "مُرداد",
+   "tr": "mordād",
+   "de": "5. Monat (23.7.–22.8.)",
+   "kat": "Zeit",
+   "emoji": "🌞"
+  },
+  {
+   "fa": "شَهریوَر",
+   "tr": "schahrīwar",
+   "de": "6. Monat (23.8.–22.9.)",
+   "kat": "Zeit",
+   "emoji": "🍉"
+  },
+  {
+   "fa": "مِهر",
+   "tr": "mehr",
+   "de": "7. Monat (23.9.–22.10.)",
+   "kat": "Zeit",
+   "emoji": "🍂"
+  },
+  {
+   "fa": "آبان",
+   "tr": "ābān",
+   "de": "8. Monat (23.10.–21.11.)",
+   "kat": "Zeit",
+   "emoji": "🍁"
+  },
+  {
+   "fa": "آذَر",
+   "tr": "āzar",
+   "de": "9. Monat (22.11.–21.12.)",
+   "kat": "Zeit",
+   "emoji": "🌧️"
+  },
+  {
+   "fa": "دِی",
+   "tr": "dey",
+   "de": "10. Monat (22.12.–20.1.)",
+   "kat": "Zeit",
+   "emoji": "❄️"
+  },
+  {
+   "fa": "بَهمَن",
+   "tr": "bahman",
+   "de": "11. Monat (21.1.–19.2.)",
+   "kat": "Zeit",
+   "emoji": "⛄"
+  },
+  {
+   "fa": "اِسفَند",
+   "tr": "esfand",
+   "de": "12. Monat (20.2.–20.3.)",
+   "kat": "Zeit",
+   "emoji": "🌱"
+  },
+  {
+   "fa": "ژانویه",
+   "tr": "zhānwiye",
+   "de": "Januar",
+   "kat": "Zeit"
+  },
+  {
+   "fa": "فِوریه",
+   "tr": "fewriye",
+   "de": "Februar",
+   "kat": "Zeit"
+  },
+  {
+   "fa": "مارس",
+   "tr": "mārs",
+   "de": "März",
+   "kat": "Zeit"
+  },
+  {
+   "fa": "آوریل",
+   "tr": "āwrīl",
+   "de": "April",
+   "kat": "Zeit"
+  },
+  {
+   "fa": "مه",
+   "tr": "me",
+   "de": "Mai",
+   "kat": "Zeit"
+  },
+  {
+   "fa": "ژوئَن",
+   "tr": "zhuan",
+   "de": "Juni",
+   "kat": "Zeit"
+  },
+  {
+   "fa": "ژوئیه",
+   "tr": "zhuiye",
+   "de": "Juli",
+   "kat": "Zeit"
+  },
+  {
+   "fa": "اوت",
+   "tr": "ūt",
+   "de": "August",
+   "kat": "Zeit"
+  },
+  {
+   "fa": "سِپتامبر",
+   "tr": "septāmbr",
+   "de": "September",
+   "kat": "Zeit"
+  },
+  {
+   "fa": "اُکتُبر",
+   "tr": "oktobr",
+   "de": "Oktober",
+   "kat": "Zeit"
+  },
+  {
+   "fa": "نُوامبر",
+   "tr": "nowāmbr",
+   "de": "November",
+   "kat": "Zeit"
+  },
+  {
+   "fa": "دِسامبر",
+   "tr": "desāmbr",
+   "de": "Dezember",
+   "kat": "Zeit"
+  },
+  {
+   "fa": "اَوَّل",
+   "tr": "awwal",
+   "de": "erste/r",
+   "kat": "Zahlen",
+   "emoji": "1️⃣"
+  },
+  {
+   "fa": "دُوُّم",
+   "tr": "dowwom",
+   "de": "zweite/r",
+   "kat": "Zahlen",
+   "emoji": "2️⃣"
+  },
+  {
+   "fa": "سِوُّم",
+   "tr": "sewwom",
+   "de": "dritte/r",
+   "kat": "Zahlen",
+   "emoji": "3️⃣"
+  },
+  {
+   "fa": "چَهارُم",
+   "tr": "tschahārom",
+   "de": "vierte/r",
+   "kat": "Zahlen",
+   "emoji": "4️⃣"
+  },
+  {
+   "fa": "پَنجُم",
+   "tr": "pandschom",
+   "de": "fünfte/r",
+   "kat": "Zahlen",
+   "emoji": "5️⃣"
+  },
+  {
+   "fa": "دَهُم",
+   "tr": "dahom",
+   "de": "zehnte/r",
+   "kat": "Zahlen",
+   "emoji": "🔟"
+  },
+  {
+   "fa": "بیستُم",
+   "tr": "bīstom",
+   "de": "zwanzigste/r",
+   "kat": "Zahlen",
+   "emoji": "🔢"
+  },
+  {
+   "fa": "سی و یِکُم",
+   "tr": "sī o yekom",
+   "de": "einunddreißigste/r",
+   "kat": "Zahlen",
+   "emoji": "📅"
+  },
+  {
+   "fa": "فَصل",
+   "tr": "fasl",
+   "de": "Jahreszeit",
+   "kat": "Zeit",
+   "emoji": "🗓️"
+  },
+  {
+   "fa": "سال",
+   "tr": "sāl",
+   "de": "Jahr",
+   "kat": "Zeit",
+   "emoji": "📆"
+  },
+  {
+   "fa": "نوروز",
+   "tr": "nourūz",
+   "de": "Nouruz (iranisches Neujahr)",
+   "kat": "Zeit",
+   "emoji": "🌸"
+  },
+  {
+   "fa": "آخَرِ هَفته",
+   "tr": "āchar-e hafte",
+   "de": "Wochenende",
+   "kat": "Zeit",
+   "emoji": "🛋️"
+  },
+  {
+   "fa": "اَلان",
+   "tr": "alān",
+   "de": "jetzt",
+   "kat": "Zeit",
+   "emoji": "⏱️"
+  },
+  {
+   "fa": "اِمشَب",
+   "tr": "emschab",
+   "de": "heute Abend",
+   "kat": "Zeit",
+   "emoji": "🌃"
+  },
+  {
+   "fa": "آب و هَوا",
+   "tr": "āb o hawā",
+   "de": "Klima",
+   "kat": "Natur & Wetter",
+   "emoji": "🌍"
+  },
+  {
+   "fa": "مَرطوب",
+   "tr": "martūb",
+   "de": "feucht",
+   "kat": "Natur & Wetter",
+   "emoji": "💧"
+  },
+  {
+   "fa": "خُشک",
+   "tr": "choschk",
+   "de": "trocken",
+   "kat": "Natur & Wetter",
+   "emoji": "🏜️"
+  },
+  {
+   "fa": "جَزیره",
+   "tr": "dschazīre",
+   "de": "Insel",
+   "kat": "Natur & Wetter",
+   "emoji": "🏝️"
+  },
+  {
+   "fa": "بَرگ",
+   "tr": "barg",
+   "de": "Blatt",
+   "kat": "Natur & Wetter",
+   "emoji": "🍃"
+  },
+  {
+   "fa": "مُتَفاوِت",
+   "tr": "motafāwet",
+   "de": "unterschiedlich",
+   "kat": "Eigenschaften",
+   "emoji": "🔀"
+  },
+  {
+   "fa": "تاریک",
+   "tr": "tārīk",
+   "de": "dunkel",
+   "kat": "Eigenschaften",
+   "emoji": "🌑"
+  },
+  {
+   "fa": "مَرکَز",
+   "tr": "markaz",
+   "de": "Zentrum",
+   "kat": "Orte",
+   "emoji": "🎯"
+  },
+  {
+   "fa": "میدان",
+   "tr": "meydān",
+   "de": "Platz",
+   "kat": "Orte",
+   "emoji": "⛲"
+  },
+  {
+   "fa": "اِمتِحان",
+   "tr": "emtehān",
+   "de": "Prüfung",
+   "kat": "Dinge",
+   "emoji": "📝"
+  },
+  {
+   "fa": "باریدَن",
+   "tr": "bārīdan",
+   "de": "regnen, schneien (fallen)",
+   "kat": "Verben",
+   "emoji": "🌧️",
+   "stamm": "بار",
+   "stammTr": "bār"
+  },
+  {
+   "fa": "شِنا کَردَن",
+   "tr": "schenā kardan",
+   "de": "schwimmen",
+   "kat": "Verben",
+   "emoji": "🏊",
+   "stamm": "شِنا کُن",
+   "stammTr": "schenā kon"
+  },
+  {
+   "fa": "کوهنَوَردی کَردَن",
+   "tr": "kūhnawardī kardan",
+   "de": "wandern (in den Bergen)",
+   "kat": "Verben",
+   "emoji": "🥾",
+   "stamm": "کوهنَوَردی کُن",
+   "stammTr": "kūhnawardī kon"
+  },
+  {
+   "fa": "سَفَر کَردَن",
+   "tr": "safar kardan",
+   "de": "reisen",
+   "kat": "Verben",
+   "emoji": "✈️",
+   "stamm": "سَفَر کُن",
+   "stammTr": "safar kon"
+  },
+  {
+   "fa": "ماندَن",
+   "tr": "māndan",
+   "de": "bleiben",
+   "kat": "Verben",
+   "emoji": "🏠",
+   "stamm": "مان",
+   "stammTr": "mān"
+  },
+  {
+   "fa": "پوشیدَن",
+   "tr": "pūschīdan",
+   "de": "anziehen, tragen",
+   "kat": "Verben",
+   "emoji": "👕",
+   "stamm": "پوش",
+   "stammTr": "pūsch"
+  },
+  {
+   "fa": "رِسیدَن",
+   "tr": "resīdan",
+   "de": "ankommen, erreichen",
+   "kat": "Verben",
+   "emoji": "🏁",
+   "stamm": "رِس",
+   "stammTr": "res"
+  },
+  {
+   "fa": "آوَردَن",
+   "tr": "āwardan",
+   "de": "bringen, mitbringen",
+   "kat": "Verben",
+   "emoji": "📦",
+   "stamm": "آوَر",
+   "stammTr": "āwar"
+  },
+  {
+   "fa": "بُردَن",
+   "tr": "bordan",
+   "de": "(weg)bringen, mitnehmen",
+   "kat": "Verben",
+   "emoji": "🧳",
+   "stamm": "بَر",
+   "stammTr": "bar"
+  }
+ ]
+}
