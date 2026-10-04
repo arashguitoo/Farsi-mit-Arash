@@ -1,0 +1,309 @@
+{
+ "id": "tx",
+ "art": "texte",
+ "titel": "Texte & Dialoge",
+ "beschreibung": "Ein zweiter Dialog und ein weiterer Lesetext.",
+ "stationen": [
+  {
+   "id": "d2",
+   "titel": "Dialog: Zu Gast bei Familie Ahmadi",
+   "vorschau": "Zu Gast bei Familie Ahmadi",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Tobias ist bei der Familie seiner Kommilitonin Sara zum Abendessen eingeladen. Saras Mutter hat gekocht.</p>"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "مادر سارا: بفرمایید، خوش اومدید! بفرمایید سر سفره.",
+       "tr": "befarmāyīd, chosch ūmadīd! befarmāyīd sar-e sofre.",
+       "de": "Bitte, willkommen! Setzen Sie sich bitte an den Tisch."
+      },
+      {
+       "fa": "توبیاس: خیلی ممنون. وای، چه سفره‌ای! زحمت کشیدید.",
+       "tr": "cheylī mamnūn. wāy, tsche sofreī! zahmat keschīdīd.",
+       "de": "Vielen Dank. Oh, was für ein Essen! Das wäre nicht nötig gewesen."
+      },
+      {
+       "fa": "مادر سارا: قابلی نداره. این فسنجونه، اینم زرشک‌پلو.",
+       "tr": "ghābelī nadāre. īn fesendschūne, īnam zereschkpolou.",
+       "de": "Nicht der Rede wert. Das ist Fesendschan, und das Berberitzenreis."
+      },
+      {
+       "fa": "توبیاس: فسنجون رو تا حالا نخورده بودم. خیلی خوشمزه‌ست!",
+       "tr": "fesendschūn ro tā hālā nachorde būdam. cheylī choschmazast!",
+       "de": "Fesendschan hatte ich noch nie gegessen. Sehr lecker!"
+      },
+      {
+       "fa": "مادر سارا: نوش جان! بازم بکشید، تعارف نکنید.",
+       "tr": "nūsch-e dschān! bāzam bekeschīd, taʿārof nakonīd.",
+       "de": "Wohl bekomm’s! Nehmen Sie noch, keine falsche Bescheidenheit."
+      },
+      {
+       "fa": "توبیاس: مرسی، دیگه واقعا سیرم.",
+       "tr": "mersī, dīge wāgheʿan sīram.",
+       "de": "Danke, ich bin jetzt wirklich satt."
+      },
+      {
+       "fa": "سارا: مامان، توبیاس تعارف نمی‌کنه، واقعا سیره!",
+       "tr": "māmān, tobiyās taʿārof nemīkone, wāgheʿan sīre!",
+       "de": "Mama, Tobias macht kein Taarof, er ist wirklich satt!"
+      },
+      {
+       "fa": "توبیاس: دستتون درد نکنه، خیلی خوشمزه بود.",
+       "tr": "dastetūn dard nakone, cheylī choschmaze būd.",
+       "de": "Vielen Dank, es war sehr lecker."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "مادر سارا: بفرمایید، خوش اومدید! بفرمایید سر سفره.",
+       "tr": "befarmāyīd, chosch ūmadīd! befarmāyīd sar-e sofre.",
+       "de": "Bitte, willkommen! Setzen Sie sich bitte an den Tisch."
+      },
+      {
+       "fa": "توبیاس: خیلی ممنون. وای، چه سفره‌ای! زحمت کشیدید.",
+       "tr": "cheylī mamnūn. wāy, tsche sofreī! zahmat keschīdīd.",
+       "de": "Vielen Dank. Oh, was für ein Essen! Das wäre nicht nötig gewesen."
+      },
+      {
+       "fa": "مادر سارا: قابلی نداره. این فسنجونه، اینم زرشک‌پلو.",
+       "tr": "ghābelī nadāre. īn fesendschūne, īnam zereschkpolou.",
+       "de": "Nicht der Rede wert. Das ist Fesendschan, und das Berberitzenreis."
+      },
+      {
+       "fa": "توبیاس: فسنجون رو تا حالا نخورده بودم. خیلی خوشمزه‌ست!",
+       "tr": "fesendschūn ro tā hālā nachorde būdam. cheylī choschmazast!",
+       "de": "Fesendschan hatte ich noch nie gegessen. Sehr lecker!"
+      },
+      {
+       "fa": "مادر سارا: نوش جان! بازم بکشید، تعارف نکنید.",
+       "tr": "nūsch-e dschān! bāzam bekeschīd, taʿārof nakonīd.",
+       "de": "Wohl bekomm’s! Nehmen Sie noch, keine falsche Bescheidenheit."
+      },
+      {
+       "fa": "توبیاس: مرسی، دیگه واقعا سیرم.",
+       "tr": "mersī, dīge wāgheʿan sīram.",
+       "de": "Danke, ich bin jetzt wirklich satt."
+      },
+      {
+       "fa": "سارا: مامان، توبیاس تعارف نمی‌کنه، واقعا سیره!",
+       "tr": "māmān, tobiyās taʿārof nemīkone, wāgheʿan sīre!",
+       "de": "Mama, Tobias macht kein Taarof, er ist wirklich satt!"
+      },
+      {
+       "fa": "توبیاس: دستتون درد نکنه، خیلی خوشمزه بود.",
+       "tr": "dastetūn dard nakone, cheylī choschmaze būd.",
+       "de": "Vielen Dank, es war sehr lecker."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Was hat Saras Mutter gekocht?",
+       "optionen": [
+        "Fesendschan und Berberitzenreis",
+        "Kebab",
+        "Ghormeh Sabzi"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Kannte Tobias Fesendschan schon?",
+       "optionen": [
+        "Nein",
+        "Ja",
+        "Er kocht es selbst."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Warum sagt Sara etwas zu ihrer Mutter?",
+       "optionen": [
+        "Damit sie Tobias nicht weiter nötigt.",
+        "Weil das Essen kalt ist.",
+        "Weil Tobias gehen will."
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t2",
+   "titel": "Text: Tahdig – die goldene Kruste",
+   "vorschau": "Tahdig – die goldene Kruste",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Text: Tahdig – die goldene Kruste",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "ته‌دیگ محبوب‌ترین بخش غذای ایرانی است.",
+       "tr": "tahdīg mahbūbtarīn bachsch-e ghazā-ye īrānī ast.",
+       "de": "Tahdig ist der beliebteste Teil des iranischen Essens."
+      },
+      {
+       "fa": "ته‌دیگ لایه‌ی طلایی و ترد برنج در ته قابلمه است.",
+       "tr": "tahdīg lāye-ye talāyī o tord-e berendsch dar tah-e ghābleme ast.",
+       "de": "Tahdig ist die goldene, knusprige Reisschicht am Topfboden."
+      },
+      {
+       "fa": "بعضی‌ها ته‌دیگ را با سیب‌زمینی یا نان درست می‌کنند.",
+       "tr": "baʿzīhā tahdīg rā bā sībzamīnī yā nān dorost mīkonand.",
+       "de": "Manche machen Tahdig mit Kartoffeln oder Brot."
+      },
+      {
+       "fa": "درست کردن ته‌دیگ خوب مهارت می‌خواهد: نباید بسوزد، اما باید ترد باشد.",
+       "tr": "dorost kardan-e tahdīg-e chūb mahārat mīchāhad: nabāyad besūzad, ammā bāyad tord bāschad.",
+       "de": "Gutes Tahdig erfordert Können: Es darf nicht anbrennen, muss aber knusprig sein."
+      },
+      {
+       "fa": "سر سفره، همه منتظر ته‌دیگ هستند.",
+       "tr": "sar-e sofre, hame montazer-e tahdīg hastand.",
+       "de": "Am Tisch warten alle auf das Tahdig."
+      },
+      {
+       "fa": "در خیلی از خانواده‌ها برای آخرین تکه‌ی ته‌دیگ تعارف می‌کنند.",
+       "tr": "dar cheylī az chānewādehā barā-ye āchirīn tekke-ye tahdīg taʿārof mīkonand.",
+       "de": "In vielen Familien wird um das letzte Stück Tahdig Taarof gemacht."
+      },
+      {
+       "fa": "امروز ته‌دیگ در رستوران‌های ایرانی خارج از کشور هم خیلی معروف است.",
+       "tr": "emrūz tahdīg dar restorānhā-ye īrānī-ye chāredsch az keschwar ham cheylī maʿrūf ast.",
+       "de": "Heute ist Tahdig auch in iranischen Restaurants im Ausland sehr bekannt."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "ته‌دیگ بالای قابلمه است.",
+       "fest": true,
+       "erkl": "Es ist am <b>Topfboden</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "ته‌دیگ را می‌شود با سیب‌زمینی درست کرد.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "ته‌دیگ خوب باید بسوزد.",
+       "fest": true,
+       "erkl": "Es darf <b>nicht</b> anbrennen."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "سر آخرین تکه‌ی ته‌دیگ تعارف می‌کنند.",
+       "fest": true
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Wie ist gutes Tahdig?",
+       "optionen": [
+        "golden und knusprig",
+        "weich und weiß",
+        "schwarz und hart"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Womit kann man Tahdig auch machen?",
+       "optionen": [
+        "mit Kartoffeln oder Brot",
+        "mit Äpfeln",
+        "mit Käse"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was passiert mit dem letzten Stück?",
+       "optionen": [
+        "Man macht Taarof darum.",
+        "Man wirft es weg.",
+        "Der Koch isst es."
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "ته‌دیگ لایه‌ی طلایی و ترد برنج در ته قابلمه است.",
+       "tr": "tahdīg lāye-ye talāyī o tord-e berendsch dar tah-e ghābleme ast.",
+       "de": "Tahdig ist die goldene, knusprige Reisschicht am Topfboden."
+      },
+      {
+       "fa": "بعضی‌ها ته‌دیگ را با سیب‌زمینی یا نان درست می‌کنند.",
+       "tr": "baʿzīhā tahdīg rā bā sībzamīnī yā nān dorost mīkonand.",
+       "de": "Manche machen Tahdig mit Kartoffeln oder Brot."
+      },
+      {
+       "fa": "درست کردن ته‌دیگ خوب مهارت می‌خواهد: نباید بسوزد، اما باید ترد باشد.",
+       "tr": "dorost kardan-e tahdīg-e chūb mahārat mīchāhad: nabāyad besūzad, ammā bāyad tord bāschad.",
+       "de": "Gutes Tahdig erfordert Können: Es darf nicht anbrennen, muss aber knusprig sein."
+      },
+      {
+       "fa": "سر سفره، همه منتظر ته‌دیگ هستند.",
+       "tr": "sar-e sofre, hame montazer-e tahdīg hastand.",
+       "de": "Am Tisch warten alle auf das Tahdig."
+      },
+      {
+       "fa": "در خیلی از خانواده‌ها برای آخرین تکه‌ی ته‌دیگ تعارف می‌کنند.",
+       "tr": "dar cheylī az chānewādehā barā-ye āchirīn tekke-ye tahdīg taʿārof mīkonand.",
+       "de": "In vielen Familien wird um das letzte Stück Tahdig Taarof gemacht."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

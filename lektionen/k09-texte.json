@@ -1,0 +1,309 @@
+{
+ "id": "tx",
+ "art": "texte",
+ "titel": "Texte & Dialoge",
+ "beschreibung": "Ein zweiter Dialog und ein weiterer Lesetext.",
+ "stationen": [
+  {
+   "id": "d2",
+   "titel": "Dialog: Liebeskummer",
+   "vorschau": "Liebeskummer",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Neda ist traurig. Ihre beste Freundin Lili ruft sie an.</p>"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "لیلی: ندا جان، چی شده؟ صدات خیلی گرفته‌ست.",
+       "tr": "nedā dschān, tschī schode? sedāt cheylī gereftast.",
+       "de": "Neda, was ist los? Deine Stimme klingt so bedrückt."
+      },
+      {
+       "fa": "ندا: با آرش به هم زدیم.",
+       "tr": "bā ārasch be ham zadīm.",
+       "de": "Ich habe mit Arasch Schluss gemacht."
+      },
+      {
+       "fa": "لیلی: وای، نه! کی؟ چرا؟",
+       "tr": "wāy, na! key? tscherā?",
+       "de": "Oh nein! Wann? Warum?"
+      },
+      {
+       "fa": "ندا: دیروز. می‌خواد برای کار بره کانادا و رابطه‌ی از راه دور رو نمی‌خواد.",
+       "tr": "dīrūz. mīchād barā-ye kār bere kānādā o rābete-ye az rāh-e dūr ro nemīchād.",
+       "de": "Gestern. Er will für die Arbeit nach Kanada und möchte keine Fernbeziehung."
+      },
+      {
+       "fa": "لیلی: خیلی متأسفم. حق داری ناراحت باشی.",
+       "tr": "cheylī mota’assefam. hagh dārī nārāhat bāschī.",
+       "de": "Das tut mir so leid. Du hast jedes Recht, traurig zu sein."
+      },
+      {
+       "fa": "ندا: دلم براش تنگ می‌شه …",
+       "tr": "delam barāsch tang mīsche …",
+       "de": "Ich werde ihn vermissen …"
+      },
+      {
+       "fa": "لیلی: می‌دونم. بیا امشب بریم بیرون، یه بستنی بخوریم و گپ بزنیم.",
+       "tr": "mīdūnam. biyā emschab berīm bīrūn, ye bastanī bochorīm o gap bezanīm.",
+       "de": "Ich weiß. Komm, lass uns heute Abend rausgehen, ein Eis essen und quatschen."
+      },
+      {
+       "fa": "ندا: مرسی لیلی. تو بهترین دوست دنیایی.",
+       "tr": "mersī līlī. to behtarīn dūst-e donyāyī.",
+       "de": "Danke, Lili. Du bist die beste Freundin der Welt."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "لیلی: ندا جان، چی شده؟ صدات خیلی گرفته‌ست.",
+       "tr": "nedā dschān, tschī schode? sedāt cheylī gereftast.",
+       "de": "Neda, was ist los? Deine Stimme klingt so bedrückt."
+      },
+      {
+       "fa": "ندا: با آرش به هم زدیم.",
+       "tr": "bā ārasch be ham zadīm.",
+       "de": "Ich habe mit Arasch Schluss gemacht."
+      },
+      {
+       "fa": "لیلی: وای، نه! کی؟ چرا؟",
+       "tr": "wāy, na! key? tscherā?",
+       "de": "Oh nein! Wann? Warum?"
+      },
+      {
+       "fa": "ندا: دیروز. می‌خواد برای کار بره کانادا و رابطه‌ی از راه دور رو نمی‌خواد.",
+       "tr": "dīrūz. mīchād barā-ye kār bere kānādā o rābete-ye az rāh-e dūr ro nemīchād.",
+       "de": "Gestern. Er will für die Arbeit nach Kanada und möchte keine Fernbeziehung."
+      },
+      {
+       "fa": "لیلی: خیلی متأسفم. حق داری ناراحت باشی.",
+       "tr": "cheylī mota’assefam. hagh dārī nārāhat bāschī.",
+       "de": "Das tut mir so leid. Du hast jedes Recht, traurig zu sein."
+      },
+      {
+       "fa": "ندا: دلم براش تنگ می‌شه …",
+       "tr": "delam barāsch tang mīsche …",
+       "de": "Ich werde ihn vermissen …"
+      },
+      {
+       "fa": "لیلی: می‌دونم. بیا امشب بریم بیرون، یه بستنی بخوریم و گپ بزنیم.",
+       "tr": "mīdūnam. biyā emschab berīm bīrūn, ye bastanī bochorīm o gap bezanīm.",
+       "de": "Ich weiß. Komm, lass uns heute Abend rausgehen, ein Eis essen und quatschen."
+      },
+      {
+       "fa": "ندا: مرسی لیلی. تو بهترین دوست دنیایی.",
+       "tr": "mersī līlī. to behtarīn dūst-e donyāyī.",
+       "de": "Danke, Lili. Du bist die beste Freundin der Welt."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Warum ist Neda traurig?",
+       "optionen": [
+        "Sie hat sich von Arasch getrennt.",
+        "Sie hat ihren Job verloren.",
+        "Sie ist krank."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Warum gibt es eine Trennung?",
+       "optionen": [
+        "Arasch geht nach Kanada und will keine Fernbeziehung.",
+        "Arasch hat gelogen.",
+        "Neda zieht um."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was schlägt Lili vor?",
+       "optionen": [
+        "Eis essen und quatschen",
+        "ins Kino gehen",
+        "Arasch anrufen"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t2",
+   "titel": "Text: Kummerkasten: Meine beste Freundin hat keine Zeit mehr",
+   "vorschau": "Kummerkasten: Meine beste Freundin hat keine Zeit mehr",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Text: Kummerkasten: Meine beste Freundin hat keine Zeit mehr",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "سلام. من و بهترین دوستم از بچگی با هم بودیم.",
+       "tr": "salām. man o behtarīn dūstam az batschtschegī bā ham būdīm.",
+       "de": "Hallo. Meine beste Freundin und ich sind seit der Kindheit zusammen."
+      },
+      {
+       "fa": "اما از وقتی که کار جدیدش را شروع کرده، دیگر برای من وقت ندارد.",
+       "tr": "ammā az waghtī ke kār-e dschadīdasch rā schorūʿ karde, dīgar barā-ye man waght nadārad.",
+       "de": "Aber seit sie ihren neuen Job angefangen hat, hat sie keine Zeit mehr für mich."
+      },
+      {
+       "fa": "به پیام‌هایم دیر جواب می‌دهد و قرارهایمان را لغو می‌کند.",
+       "tr": "be payāmhāyam dīr dschawāb mīdahad o gharārhāyemān rā laghw mīkonad.",
+       "de": "Sie antwortet spät auf meine Nachrichten und sagt unsere Treffen ab."
+      },
+      {
+       "fa": "احساس تنهایی می‌کنم. چه کار کنم؟ – سارا",
+       "tr": "ehsās-e tanhāyī mīkonam. tsche kār konam? – sārā",
+       "de": "Ich fühle mich einsam. Was soll ich tun? – Sara"
+      },
+      {
+       "fa": "پاسخ: سارای عزیز، دوستی‌ها هم مثل آدم‌ها تغییر می‌کنند.",
+       "tr": "pāsoch: sārā-ye ʿazīz, dūstīhā ham mesl-e ādamhā taghyīr mīkonand.",
+       "de": "Antwort: Liebe Sara, auch Freundschaften verändern sich wie Menschen."
+      },
+      {
+       "fa": "صادقانه با دوستت صحبت کن و بگو که دلت برایش تنگ شده است.",
+       "tr": "sādeghāne bā dūstat sohbat kon o begū ke delat barāyasch tang schode ast.",
+       "de": "Sprich ehrlich mit deiner Freundin und sag ihr, dass du sie vermisst."
+      },
+      {
+       "fa": "شاید او هم تحت فشار است و به حمایت تو نیاز دارد.",
+       "tr": "schāyad ū ham taht-e feschār ast o be hemāyat-e to niyāz dārad.",
+       "de": "Vielleicht steht sie auch unter Druck und braucht deine Unterstützung."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "سارا و دوستش از بچگی با هم دوست هستند.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "دوست سارا کار جدیدی ندارد.",
+       "fest": true,
+       "erkl": "Sie hat einen <b>neuen Job</b> angefangen."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "سارا احساس تنهایی می‌کند.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "پاسخ می‌گوید: دوستی را تمام کن.",
+       "fest": true,
+       "erkl": "Die Antwort rät, <b>ehrlich zu reden</b>."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Was macht Saras Freundin?",
+       "optionen": [
+        "Sie sagt Treffen ab.",
+        "Sie zieht weg.",
+        "Sie streitet viel."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was rät die Antwort?",
+       "optionen": [
+        "ehrlich reden und sagen, dass sie sie vermisst",
+        "nichts tun",
+        "neue Freunde suchen"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was könnte der Grund sein?",
+       "optionen": [
+        "Die Freundin steht unter Druck.",
+        "Sie mag Sara nicht mehr.",
+        "Sie ist krank."
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "اما از وقتی که کار جدیدش را شروع کرده، دیگر برای من وقت ندارد.",
+       "tr": "ammā az waghtī ke kār-e dschadīdasch rā schorūʿ karde, dīgar barā-ye man waght nadārad.",
+       "de": "Aber seit sie ihren neuen Job angefangen hat, hat sie keine Zeit mehr für mich."
+      },
+      {
+       "fa": "به پیام‌هایم دیر جواب می‌دهد و قرارهایمان را لغو می‌کند.",
+       "tr": "be payāmhāyam dīr dschawāb mīdahad o gharārhāyemān rā laghw mīkonad.",
+       "de": "Sie antwortet spät auf meine Nachrichten und sagt unsere Treffen ab."
+      },
+      {
+       "fa": "احساس تنهایی می‌کنم. چه کار کنم؟ – سارا",
+       "tr": "ehsās-e tanhāyī mīkonam. tsche kār konam? – sārā",
+       "de": "Ich fühle mich einsam. Was soll ich tun? – Sara"
+      },
+      {
+       "fa": "پاسخ: سارای عزیز، دوستی‌ها هم مثل آدم‌ها تغییر می‌کنند.",
+       "tr": "pāsoch: sārā-ye ʿazīz, dūstīhā ham mesl-e ādamhā taghyīr mīkonand.",
+       "de": "Antwort: Liebe Sara, auch Freundschaften verändern sich wie Menschen."
+      },
+      {
+       "fa": "صادقانه با دوستت صحبت کن و بگو که دلت برایش تنگ شده است.",
+       "tr": "sādeghāne bā dūstat sohbat kon o begū ke delat barāyasch tang schode ast.",
+       "de": "Sprich ehrlich mit deiner Freundin und sag ihr, dass du sie vermisst."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

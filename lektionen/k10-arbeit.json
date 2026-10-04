@@ -17,19 +17,19 @@
     {
      "typ": "info",
      "titel": "So läuft die Sitzung",
-     "text": "<p>Diese Lektion ist deine <b>Hausaufgabe</b>: Hier lernst du Wörter und Redemittel und liest einen Modelldialog. Im Unterricht wird dann <b>nur gesprochen</b>.</p><p><b>Im Unterricht:</b></p><ul><li>Berufe-Raten: 20 Fragen</li><li>Simulation: Vorstellungsgespräch bei einem Teheraner Start-up</li><li>Debatte: Homeoffice – Segen oder Fluch?</li></ul>",
+     "text": "<p>Diese Lektion ist deine <b>Hausaufgabe</b>: Wortschatz, Redemittel, Dialoge und Texte. Im Unterricht wird dann <b>nur gesprochen</b>.</p><p><b>Im Unterricht:</b></p><ul><li>Berufe-Raten: 20 Fragen</li><li>Simulation: Vorstellungsgespräch bei einem Teheraner Start-up</li><li>Debatte: Homeoffice – Segen oder Fluch?</li></ul><p class='klein muted'>Wortschatz dieser Lektion: 61 Wörter · 17 Redemittel</p>",
      "stil": "merke"
     }
    ]
   },
   {
-   "id": "s1",
-   "titel": "Wörter",
+   "id": "w0",
+   "titel": "Rund ums Thema",
    "vorschau": "شغل · کارفرما · کارمند",
    "karten": [
     {
      "typ": "info",
-     "titel": "Wörter zum Thema – Teil 1",
+     "titel": "🧩 Rund ums Thema (1)",
      "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
      "beispiele": [
       {
@@ -84,7 +84,7 @@
     },
     {
      "typ": "info",
-     "titel": "Wörter zum Thema – Teil 2",
+     "titel": "🧩 Rund ums Thema (2)",
      "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
      "beispiele": [
       {
@@ -138,43 +138,6 @@
      ]
     },
     {
-     "typ": "info",
-     "titel": "Verben",
-     "text": "<p>Infinitiv – im Gespräch brauchst du sie gleich in allen Zeiten.</p>",
-     "beispiele": [
-      {
-       "fa": "استخدام کردن",
-       "tr": "estechdām kardan",
-       "de": "einstellen",
-       "emoji": "🤝"
-      },
-      {
-       "fa": "درخواست دادن",
-       "tr": "darchāst dādan",
-       "de": "sich bewerben",
-       "emoji": "📨"
-      },
-      {
-       "fa": "استعفا دادن",
-       "tr": "esteʿfā dādan",
-       "de": "kündigen",
-       "emoji": "🚪"
-      },
-      {
-       "fa": "فارغ‌التحصیل شدن",
-       "tr": "fāreghottahsīl schodan",
-       "de": "den Abschluss machen",
-       "emoji": "🎓"
-      },
-      {
-       "fa": "کار کردن",
-       "tr": "kār kardan",
-       "de": "arbeiten",
-       "emoji": "💻"
-      }
-     ]
-    },
-    {
      "typ": "paare",
      "links": "de",
      "paare": [
@@ -222,16 +185,16 @@
      "links": "de",
      "paare": [
       {
-       "fa": "کارآموزی",
-       "tr": "kārāmūzī",
-       "de": "Praktikum",
-       "emoji": "🧑‍🎓"
+       "fa": "نقطه‌ی ضعف",
+       "tr": "noghte-ye zaʿf",
+       "de": "Schwäche",
+       "emoji": "🫤"
       },
       {
-       "fa": "رزومه",
-       "tr": "rezūme",
-       "de": "Lebenslauf",
-       "emoji": "📄"
+       "fa": "استارتاپ",
+       "tr": "estārtāp",
+       "de": "Start-up",
+       "emoji": "🚀"
       },
       {
        "fa": "همکار",
@@ -240,35 +203,10 @@
        "emoji": "👥"
       },
       {
-       "fa": "درخواست دادن",
-       "tr": "darchāst dādan",
-       "de": "sich bewerben",
-       "emoji": "📨"
-      },
-      {
-       "fa": "مصاحبه",
-       "tr": "mosāhebe",
-       "de": "Vorstellungsgespräch, Interview",
-       "emoji": "🎤"
-      },
-      {
-       "fa": "نقطه‌ی قوت",
-       "tr": "noghte-ye ghowwat",
-       "de": "Stärke",
-       "emoji": "💪"
-      }
-     ],
-     "titel": "Was bedeutet das?"
-    },
-    {
-     "typ": "memory",
-     "links": "emoji",
-     "paare": [
-      {
-       "fa": "کارمند",
-       "tr": "kārmand",
-       "de": "Angestellte/r",
-       "emoji": "🧑‍💼"
+       "fa": "پایان‌نامه",
+       "tr": "pāyānnāme",
+       "de": "Abschlussarbeit",
+       "emoji": "📚"
       },
       {
        "fa": "پاره‌وقت",
@@ -277,11 +215,18 @@
        "emoji": "⏳"
       },
       {
-       "fa": "نقطه‌ی قوت",
-       "tr": "noghte-ye ghowwat",
-       "de": "Stärke",
-       "emoji": "💪"
-      },
+       "fa": "حقوق",
+       "tr": "hoghūgh",
+       "de": "Gehalt",
+       "emoji": "💶"
+      }
+     ],
+     "titel": "Noch einmal: Was bedeutet das?"
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
       {
        "fa": "کارآموزی",
        "tr": "kārāmūzī",
@@ -289,27 +234,1269 @@
        "emoji": "🧑‍🎓"
       },
       {
-       "fa": "رزومه",
-       "tr": "rezūme",
-       "de": "Lebenslauf",
-       "emoji": "📄"
+       "fa": "نقطه‌ی قوت",
+       "tr": "noghte-ye ghowwat",
+       "de": "Stärke",
+       "emoji": "💪"
       },
       {
-       "fa": "مصاحبه",
-       "tr": "mosāhebe",
-       "de": "Vorstellungsgespräch, Interview",
-       "emoji": "🎤"
+       "fa": "استارتاپ",
+       "tr": "estārtāp",
+       "de": "Start-up",
+       "emoji": "🚀"
+      },
+      {
+       "fa": "پاره‌وقت",
+       "tr": "pārewaght",
+       "de": "Teilzeit",
+       "emoji": "⏳"
+      },
+      {
+       "fa": "تمام‌وقت",
+       "tr": "tamāmwaght",
+       "de": "Vollzeit",
+       "emoji": "⏱️"
+      },
+      {
+       "fa": "نقطه‌ی ضعف",
+       "tr": "noghte-ye zaʿf",
+       "de": "Schwäche",
+       "emoji": "🫤"
       }
      ],
      "titel": "Memory: Bild & Wort"
     },
     {
      "typ": "tempo",
-     "titel": "Blitz: Wörter",
+     "titel": "Blitz: Rund ums Thema",
      "aufgabe": "Was bedeutet das?",
      "modus": "de",
-     "sekunden": 60,
-     "ziel": 12,
+     "sekunden": 50,
+     "ziel": 10,
+     "woerter": [
+      {
+       "fa": "شغل",
+       "a": "Beruf, Job"
+      },
+      {
+       "fa": "کارفرما",
+       "a": "Arbeitgeber/in"
+      },
+      {
+       "fa": "کارمند",
+       "a": "Angestellte/r"
+      },
+      {
+       "fa": "همکار",
+       "a": "Kolleg/in"
+      },
+      {
+       "fa": "حقوق",
+       "a": "Gehalt"
+      },
+      {
+       "fa": "رزومه",
+       "a": "Lebenslauf"
+      },
+      {
+       "fa": "مصاحبه",
+       "a": "Vorstellungsgespräch, Interview"
+      },
+      {
+       "fa": "کارآموزی",
+       "a": "Praktikum"
+      },
+      {
+       "fa": "تجربه‌ی کاری",
+       "a": "Berufserfahrung"
+      },
+      {
+       "fa": "نقطه‌ی قوت",
+       "a": "Stärke"
+      },
+      {
+       "fa": "نقطه‌ی ضعف",
+       "a": "Schwäche"
+      },
+      {
+       "fa": "دورکاری",
+       "a": "Homeoffice"
+      },
+      {
+       "fa": "پایان‌نامه",
+       "a": "Abschlussarbeit"
+      },
+      {
+       "fa": "استارتاپ",
+       "a": "Start-up"
+      },
+      {
+       "fa": "تمام‌وقت",
+       "a": "Vollzeit"
+      },
+      {
+       "fa": "پاره‌وقت",
+       "a": "Teilzeit"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "w1",
+   "titel": "Berufe",
+   "vorschau": "مهندس · پزشک · معلم",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "👷 Berufe (1)",
+     "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
+     "beispiele": [
+      {
+       "fa": "مهندس",
+       "tr": "mohandes",
+       "de": "Ingenieur/in",
+       "emoji": "👷"
+      },
+      {
+       "fa": "پزشک",
+       "tr": "pezeschk",
+       "de": "Arzt, Ärztin",
+       "emoji": "🩺"
+      },
+      {
+       "fa": "معلم",
+       "tr": "moʿallem",
+       "de": "Lehrer/in",
+       "emoji": "🧑‍🏫"
+      },
+      {
+       "fa": "وکیل",
+       "tr": "wakīl",
+       "de": "Anwalt, Anwältin",
+       "emoji": "⚖️"
+      },
+      {
+       "fa": "برنامه‌نویس",
+       "tr": "barnāmenewīs",
+       "de": "Programmierer/in",
+       "emoji": "💻"
+      },
+      {
+       "fa": "حسابدار",
+       "tr": "hesābdār",
+       "de": "Buchhalter/in",
+       "emoji": "🧮"
+      }
+     ]
+    },
+    {
+     "typ": "info",
+     "titel": "👷 Berufe (2)",
+     "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
+     "beispiele": [
+      {
+       "fa": "روزنامه‌نگار",
+       "tr": "rūznāmenegār",
+       "de": "Journalist/in",
+       "emoji": "📰"
+      },
+      {
+       "fa": "مترجم",
+       "tr": "motardschem",
+       "de": "Übersetzer/in",
+       "emoji": "🗣️"
+      },
+      {
+       "fa": "طراح",
+       "tr": "tarrāh",
+       "de": "Designer/in",
+       "emoji": "🎨"
+      },
+      {
+       "fa": "آشپز",
+       "tr": "āschpaz",
+       "de": "Koch, Köchin",
+       "emoji": "👨‍🍳"
+      },
+      {
+       "fa": "فروشنده",
+       "tr": "forūschande",
+       "de": "Verkäufer/in",
+       "emoji": "🛍️"
+      },
+      {
+       "fa": "کارآفرین",
+       "tr": "kārāfarīn",
+       "de": "Unternehmer/in",
+       "emoji": "🚀"
+      }
+     ]
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "معلم",
+       "tr": "moʿallem",
+       "de": "Lehrer/in",
+       "emoji": "🧑‍🏫"
+      },
+      {
+       "fa": "مترجم",
+       "tr": "motardschem",
+       "de": "Übersetzer/in",
+       "emoji": "🗣️"
+      },
+      {
+       "fa": "وکیل",
+       "tr": "wakīl",
+       "de": "Anwalt, Anwältin",
+       "emoji": "⚖️"
+      },
+      {
+       "fa": "طراح",
+       "tr": "tarrāh",
+       "de": "Designer/in",
+       "emoji": "🎨"
+      },
+      {
+       "fa": "حسابدار",
+       "tr": "hesābdār",
+       "de": "Buchhalter/in",
+       "emoji": "🧮"
+      },
+      {
+       "fa": "پزشک",
+       "tr": "pezeschk",
+       "de": "Arzt, Ärztin",
+       "emoji": "🩺"
+      }
+     ],
+     "titel": "Was bedeutet das?"
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "مترجم",
+       "tr": "motardschem",
+       "de": "Übersetzer/in",
+       "emoji": "🗣️"
+      },
+      {
+       "fa": "حسابدار",
+       "tr": "hesābdār",
+       "de": "Buchhalter/in",
+       "emoji": "🧮"
+      },
+      {
+       "fa": "فروشنده",
+       "tr": "forūschande",
+       "de": "Verkäufer/in",
+       "emoji": "🛍️"
+      },
+      {
+       "fa": "مهندس",
+       "tr": "mohandes",
+       "de": "Ingenieur/in",
+       "emoji": "👷"
+      },
+      {
+       "fa": "روزنامه‌نگار",
+       "tr": "rūznāmenegār",
+       "de": "Journalist/in",
+       "emoji": "📰"
+      },
+      {
+       "fa": "پزشک",
+       "tr": "pezeschk",
+       "de": "Arzt, Ärztin",
+       "emoji": "🩺"
+      }
+     ],
+     "titel": "Noch einmal: Was bedeutet das?"
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "کارآفرین",
+       "tr": "kārāfarīn",
+       "de": "Unternehmer/in",
+       "emoji": "🚀"
+      },
+      {
+       "fa": "فروشنده",
+       "tr": "forūschande",
+       "de": "Verkäufer/in",
+       "emoji": "🛍️"
+      },
+      {
+       "fa": "طراح",
+       "tr": "tarrāh",
+       "de": "Designer/in",
+       "emoji": "🎨"
+      },
+      {
+       "fa": "وکیل",
+       "tr": "wakīl",
+       "de": "Anwalt, Anwältin",
+       "emoji": "⚖️"
+      },
+      {
+       "fa": "پزشک",
+       "tr": "pezeschk",
+       "de": "Arzt, Ärztin",
+       "emoji": "🩺"
+      },
+      {
+       "fa": "برنامه‌نویس",
+       "tr": "barnāmenewīs",
+       "de": "Programmierer/in",
+       "emoji": "💻"
+      }
+     ],
+     "titel": "Memory: Bild & Wort"
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>او ___ است و در یک بیمارستان کار می‌کند.</span><br><span class='mini'>Sie ist Ärztin und arbeitet in einem Krankenhaus.</span>",
+       "optionen": [
+        "پزشک",
+        "مصاحبه",
+        "کارمند"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>او پزشک است و در یک بیمارستان کار می‌کند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>من ___ هستم و متن‌های آلمانی را به فارسی ترجمه می‌کنم.</span><br><span class='mini'>Ich bin Übersetzer und übersetze deutsche Texte ins Persische.</span>",
+       "optionen": [
+        "مترجم",
+        "اضافه‌کاری",
+        "تازه‌کار"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>من مترجم هستم و متن‌های آلمانی را به فارسی ترجمه می‌کنم.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Berufe",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 50,
+     "ziel": 10,
+     "woerter": [
+      {
+       "fa": "مهندس",
+       "a": "Ingenieur/in"
+      },
+      {
+       "fa": "پزشک",
+       "a": "Arzt, Ärztin"
+      },
+      {
+       "fa": "معلم",
+       "a": "Lehrer/in"
+      },
+      {
+       "fa": "وکیل",
+       "a": "Anwalt, Anwältin"
+      },
+      {
+       "fa": "برنامه‌نویس",
+       "a": "Programmierer/in"
+      },
+      {
+       "fa": "حسابدار",
+       "a": "Buchhalter/in"
+      },
+      {
+       "fa": "روزنامه‌نگار",
+       "a": "Journalist/in"
+      },
+      {
+       "fa": "مترجم",
+       "a": "Übersetzer/in"
+      },
+      {
+       "fa": "طراح",
+       "a": "Designer/in"
+      },
+      {
+       "fa": "آشپز",
+       "a": "Koch, Köchin"
+      },
+      {
+       "fa": "فروشنده",
+       "a": "Verkäufer/in"
+      },
+      {
+       "fa": "کارآفرین",
+       "a": "Unternehmer/in"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "w2",
+   "titel": "Im Büro",
+   "vorschau": "دفتر · جلسه · رئیس",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "🏢 Im Büro (1)",
+     "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
+     "beispiele": [
+      {
+       "fa": "دفتر",
+       "tr": "daftar",
+       "de": "Büro",
+       "emoji": "🏢"
+      },
+      {
+       "fa": "جلسه",
+       "tr": "dschalase",
+       "de": "Besprechung, Meeting",
+       "emoji": "👥"
+      },
+      {
+       "fa": "رئیس",
+       "tr": "raʾīs",
+       "de": "Chef/in",
+       "emoji": "👔"
+      },
+      {
+       "fa": "مدیر",
+       "tr": "modīr",
+       "de": "Leiter/in, Manager/in",
+       "emoji": "📊"
+      },
+      {
+       "fa": "پروژه",
+       "tr": "prozhe",
+       "de": "Projekt",
+       "emoji": "📁"
+      },
+      {
+       "fa": "ایمیل",
+       "tr": "īmeyl",
+       "de": "E-Mail",
+       "emoji": "📧"
+      }
+     ]
+    },
+    {
+     "typ": "info",
+     "titel": "🏢 Im Büro (2)",
+     "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
+     "beispiele": [
+      {
+       "fa": "مهلت",
+       "tr": "mohlat",
+       "de": "Frist, Deadline",
+       "emoji": "⏳"
+      },
+      {
+       "fa": "مرخصی",
+       "tr": "morachasī",
+       "de": "Urlaub (vom Job)",
+       "emoji": "🏖️"
+      },
+      {
+       "fa": "اضافه‌کاری",
+       "tr": "ezāfekārī",
+       "de": "Überstunden",
+       "emoji": "🕰️"
+      },
+      {
+       "fa": "قرارداد",
+       "tr": "gharārdād",
+       "de": "Vertrag",
+       "emoji": "📃"
+      },
+      {
+       "fa": "ترفیع",
+       "tr": "tarfīʿ",
+       "de": "Beförderung",
+       "emoji": "📈"
+      },
+      {
+       "fa": "ناهار کاری",
+       "tr": "nāhār-e kārī",
+       "de": "Arbeitsessen",
+       "emoji": "🥪"
+      }
+     ]
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "رئیس",
+       "tr": "raʾīs",
+       "de": "Chef/in",
+       "emoji": "👔"
+      },
+      {
+       "fa": "قرارداد",
+       "tr": "gharārdād",
+       "de": "Vertrag",
+       "emoji": "📃"
+      },
+      {
+       "fa": "ترفیع",
+       "tr": "tarfīʿ",
+       "de": "Beförderung",
+       "emoji": "📈"
+      },
+      {
+       "fa": "پروژه",
+       "tr": "prozhe",
+       "de": "Projekt",
+       "emoji": "📁"
+      },
+      {
+       "fa": "مرخصی",
+       "tr": "morachasī",
+       "de": "Urlaub (vom Job)",
+       "emoji": "🏖️"
+      },
+      {
+       "fa": "مهلت",
+       "tr": "mohlat",
+       "de": "Frist, Deadline",
+       "emoji": "⏳"
+      }
+     ],
+     "titel": "Was bedeutet das?"
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "مدیر",
+       "tr": "modīr",
+       "de": "Leiter/in, Manager/in",
+       "emoji": "📊"
+      },
+      {
+       "fa": "ترفیع",
+       "tr": "tarfīʿ",
+       "de": "Beförderung",
+       "emoji": "📈"
+      },
+      {
+       "fa": "مرخصی",
+       "tr": "morachasī",
+       "de": "Urlaub (vom Job)",
+       "emoji": "🏖️"
+      },
+      {
+       "fa": "مهلت",
+       "tr": "mohlat",
+       "de": "Frist, Deadline",
+       "emoji": "⏳"
+      },
+      {
+       "fa": "ناهار کاری",
+       "tr": "nāhār-e kārī",
+       "de": "Arbeitsessen",
+       "emoji": "🥪"
+      },
+      {
+       "fa": "قرارداد",
+       "tr": "gharārdād",
+       "de": "Vertrag",
+       "emoji": "📃"
+      }
+     ],
+     "titel": "Noch einmal: Was bedeutet das?"
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "جلسه",
+       "tr": "dschalase",
+       "de": "Besprechung, Meeting",
+       "emoji": "👥"
+      },
+      {
+       "fa": "قرارداد",
+       "tr": "gharārdād",
+       "de": "Vertrag",
+       "emoji": "📃"
+      },
+      {
+       "fa": "پروژه",
+       "tr": "prozhe",
+       "de": "Projekt",
+       "emoji": "📁"
+      },
+      {
+       "fa": "مهلت",
+       "tr": "mohlat",
+       "de": "Frist, Deadline",
+       "emoji": "⏳"
+      },
+      {
+       "fa": "مرخصی",
+       "tr": "morachasī",
+       "de": "Urlaub (vom Job)",
+       "emoji": "🏖️"
+      },
+      {
+       "fa": "ایمیل",
+       "tr": "īmeyl",
+       "de": "E-Mail",
+       "emoji": "📧"
+      }
+     ],
+     "titel": "Memory: Bild & Wort"
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>هر دوشنبه ساعت نه با همکاران ___ داریم.</span><br><span class='mini'>Jeden Montag um neun haben wir ein Meeting mit den Kollegen.</span>",
+       "optionen": [
+        "جلسه",
+        "پزشک",
+        "مهندس"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>هر دوشنبه ساعت نه با همکاران جلسه داریم.</span>"
+      },
+      {
+       "frage": "<span class='fa'>___ این پروژه جمعه است؛ باید عجله کنیم.</span><br><span class='mini'>Die Deadline des Projekts ist Freitag; wir müssen uns beeilen.</span>",
+       "optionen": [
+        "مهلت",
+        "مهارت",
+        "استارتاپ"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>مهلت این پروژه جمعه است؛ باید عجله کنیم.</span>"
+      },
+      {
+       "frage": "<span class='fa'>تابستان دو هفته ___ می‌گیرم و به ایران می‌روم.</span><br><span class='mini'>Im Sommer nehme ich zwei Wochen Urlaub und fahre nach Iran.</span>",
+       "optionen": [
+        "مرخصی",
+        "شغل",
+        "تجربه‌ی کاری"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>تابستان دو هفته مرخصی می‌گیرم و به ایران می‌روم.</span>"
+      },
+      {
+       "frage": "<span class='fa'>بعد از دو سال، ___ گرفت و مدیر شد.</span><br><span class='mini'>Nach zwei Jahren wurde er/sie befördert und Manager.</span>",
+       "optionen": [
+        "ترفیع",
+        "آگهی استخدام",
+        "همکار"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>بعد از دو سال، ترفیع گرفت و مدیر شد.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Im Büro",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 50,
+     "ziel": 10,
+     "woerter": [
+      {
+       "fa": "دفتر",
+       "a": "Büro"
+      },
+      {
+       "fa": "جلسه",
+       "a": "Besprechung, Meeting"
+      },
+      {
+       "fa": "رئیس",
+       "a": "Chef/in"
+      },
+      {
+       "fa": "مدیر",
+       "a": "Leiter/in, Manager/in"
+      },
+      {
+       "fa": "پروژه",
+       "a": "Projekt"
+      },
+      {
+       "fa": "ایمیل",
+       "a": "E-Mail"
+      },
+      {
+       "fa": "مهلت",
+       "a": "Frist, Deadline"
+      },
+      {
+       "fa": "مرخصی",
+       "a": "Urlaub (vom Job)"
+      },
+      {
+       "fa": "اضافه‌کاری",
+       "a": "Überstunden"
+      },
+      {
+       "fa": "قرارداد",
+       "a": "Vertrag"
+      },
+      {
+       "fa": "ترفیع",
+       "a": "Beförderung"
+      },
+      {
+       "fa": "ناهار کاری",
+       "a": "Arbeitsessen"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "w3",
+   "titel": "Bewerbung & Fähigkeiten",
+   "vorschau": "آگهی استخدام · درخواست · مدرک",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "📄 Bewerbung & Fähigkeiten (1)",
+     "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
+     "beispiele": [
+      {
+       "fa": "آگهی استخدام",
+       "tr": "āgahī-ye estechdām",
+       "de": "Stellenanzeige",
+       "emoji": "📢"
+      },
+      {
+       "fa": "درخواست",
+       "tr": "darchāst",
+       "de": "Bewerbung, Antrag",
+       "emoji": "📨"
+      },
+      {
+       "fa": "مدرک",
+       "tr": "madrak",
+       "de": "Abschluss, Zeugnis",
+       "emoji": "🎓"
+      },
+      {
+       "fa": "مهارت",
+       "tr": "mahārat",
+       "de": "Fähigkeit",
+       "emoji": "🛠️"
+      },
+      {
+       "fa": "انگیزه",
+       "tr": "angīze",
+       "de": "Motivation",
+       "emoji": "🔥"
+      },
+      {
+       "fa": "کار تیمی",
+       "tr": "kār-e tīmī",
+       "de": "Teamarbeit",
+       "emoji": "🤝"
+      }
+     ]
+    },
+    {
+     "typ": "info",
+     "titel": "📄 Bewerbung & Fähigkeiten (2)",
+     "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
+     "beispiele": [
+      {
+       "fa": "مسئولیت",
+       "tr": "masʾūliyat",
+       "de": "Verantwortung",
+       "emoji": "🎯"
+      },
+      {
+       "fa": "خلاق",
+       "tr": "challāgh",
+       "de": "kreativ",
+       "emoji": "💡"
+      },
+      {
+       "fa": "منظم",
+       "tr": "monazzam",
+       "de": "ordentlich, organisiert",
+       "emoji": "🗂️"
+      },
+      {
+       "fa": "دقیق",
+       "tr": "daghīgh",
+       "de": "genau",
+       "emoji": "🔬"
+      },
+      {
+       "fa": "مسلط",
+       "tr": "mosallat",
+       "de": "fließend, versiert",
+       "emoji": "🗣️"
+      },
+      {
+       "fa": "تازه‌کار",
+       "tr": "tāzekār",
+       "de": "Berufseinsteiger/in",
+       "emoji": "🌱"
+      }
+     ]
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "انگیزه",
+       "tr": "angīze",
+       "de": "Motivation",
+       "emoji": "🔥"
+      },
+      {
+       "fa": "منظم",
+       "tr": "monazzam",
+       "de": "ordentlich, organisiert",
+       "emoji": "🗂️"
+      },
+      {
+       "fa": "تازه‌کار",
+       "tr": "tāzekār",
+       "de": "Berufseinsteiger/in",
+       "emoji": "🌱"
+      },
+      {
+       "fa": "کار تیمی",
+       "tr": "kār-e tīmī",
+       "de": "Teamarbeit",
+       "emoji": "🤝"
+      },
+      {
+       "fa": "دقیق",
+       "tr": "daghīgh",
+       "de": "genau",
+       "emoji": "🔬"
+      },
+      {
+       "fa": "درخواست",
+       "tr": "darchāst",
+       "de": "Bewerbung, Antrag",
+       "emoji": "📨"
+      }
+     ],
+     "titel": "Was bedeutet das?"
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "آگهی استخدام",
+       "tr": "āgahī-ye estechdām",
+       "de": "Stellenanzeige",
+       "emoji": "📢"
+      },
+      {
+       "fa": "مدرک",
+       "tr": "madrak",
+       "de": "Abschluss, Zeugnis",
+       "emoji": "🎓"
+      },
+      {
+       "fa": "مسئولیت",
+       "tr": "masʾūliyat",
+       "de": "Verantwortung",
+       "emoji": "🎯"
+      },
+      {
+       "fa": "مسلط",
+       "tr": "mosallat",
+       "de": "fließend, versiert",
+       "emoji": "🗣️"
+      },
+      {
+       "fa": "انگیزه",
+       "tr": "angīze",
+       "de": "Motivation",
+       "emoji": "🔥"
+      },
+      {
+       "fa": "کار تیمی",
+       "tr": "kār-e tīmī",
+       "de": "Teamarbeit",
+       "emoji": "🤝"
+      }
+     ],
+     "titel": "Noch einmal: Was bedeutet das?"
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "دقیق",
+       "tr": "daghīgh",
+       "de": "genau",
+       "emoji": "🔬"
+      },
+      {
+       "fa": "درخواست",
+       "tr": "darchāst",
+       "de": "Bewerbung, Antrag",
+       "emoji": "📨"
+      },
+      {
+       "fa": "آگهی استخدام",
+       "tr": "āgahī-ye estechdām",
+       "de": "Stellenanzeige",
+       "emoji": "📢"
+      },
+      {
+       "fa": "تازه‌کار",
+       "tr": "tāzekār",
+       "de": "Berufseinsteiger/in",
+       "emoji": "🌱"
+      },
+      {
+       "fa": "کار تیمی",
+       "tr": "kār-e tīmī",
+       "de": "Teamarbeit",
+       "emoji": "🤝"
+      },
+      {
+       "fa": "مهارت",
+       "tr": "mahārat",
+       "de": "Fähigkeit",
+       "emoji": "🛠️"
+      }
+     ],
+     "titel": "Memory: Bild & Wort"
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>برای این کار ___ کامپیوتری لازم است.</span><br><span class='mini'>Für diese Arbeit sind Computerkenntnisse nötig.</span>",
+       "optionen": [
+        "مهارت",
+        "طراح",
+        "ترفیع"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>برای این کار مهارت کامپیوتری لازم است.</span>"
+      },
+      {
+       "frage": "<span class='fa'>من ___ هستم؛ اولین کارم است.</span><br><span class='mini'>Ich bin Berufseinsteiger; es ist mein erster Job.</span>",
+       "optionen": [
+        "تازه‌کار",
+        "رئیس",
+        "حقوق"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>من تازه‌کار هستم؛ اولین کارم است.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Bewerbung & Fähigkeiten",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 50,
+     "ziel": 10,
+     "woerter": [
+      {
+       "fa": "آگهی استخدام",
+       "a": "Stellenanzeige"
+      },
+      {
+       "fa": "درخواست",
+       "a": "Bewerbung, Antrag"
+      },
+      {
+       "fa": "مدرک",
+       "a": "Abschluss, Zeugnis"
+      },
+      {
+       "fa": "مهارت",
+       "a": "Fähigkeit"
+      },
+      {
+       "fa": "انگیزه",
+       "a": "Motivation"
+      },
+      {
+       "fa": "کار تیمی",
+       "a": "Teamarbeit"
+      },
+      {
+       "fa": "مسئولیت",
+       "a": "Verantwortung"
+      },
+      {
+       "fa": "خلاق",
+       "a": "kreativ"
+      },
+      {
+       "fa": "منظم",
+       "a": "ordentlich, organisiert"
+      },
+      {
+       "fa": "دقیق",
+       "a": "genau"
+      },
+      {
+       "fa": "مسلط",
+       "a": "fließend, versiert"
+      },
+      {
+       "fa": "تازه‌کار",
+       "a": "Berufseinsteiger/in"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "v",
+   "titel": "Verben & Wiederholung",
+   "vorschau": "استخدام کردن · درخواست دادن · استعفا دادن",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Verben",
+     "text": "<p>Infinitiv – im Gespräch brauchst du sie in allen Zeiten.</p>",
+     "beispiele": [
+      {
+       "fa": "استخدام کردن",
+       "tr": "estechdām kardan",
+       "de": "einstellen",
+       "emoji": "🤝"
+      },
+      {
+       "fa": "درخواست دادن",
+       "tr": "darchāst dādan",
+       "de": "sich bewerben",
+       "emoji": "📨"
+      },
+      {
+       "fa": "استعفا دادن",
+       "tr": "esteʿfā dādan",
+       "de": "kündigen",
+       "emoji": "🚪"
+      },
+      {
+       "fa": "فارغ‌التحصیل شدن",
+       "tr": "fāreghottahsīl schodan",
+       "de": "den Abschluss machen",
+       "emoji": "🎓"
+      },
+      {
+       "fa": "کار کردن",
+       "tr": "kār kardan",
+       "de": "arbeiten",
+       "emoji": "💻"
+      },
+      {
+       "fa": "مصاحبه کردن",
+       "tr": "mosāhebe kardan",
+       "de": "ein Interview führen",
+       "emoji": "🎤"
+      },
+      {
+       "fa": "بازنشسته شدن",
+       "tr": "bāzneschaste schodan",
+       "de": "in Rente gehen",
+       "emoji": "👴"
+      },
+      {
+       "fa": "مرخصی گرفتن",
+       "tr": "morachasī gereftan",
+       "de": "Urlaub nehmen",
+       "emoji": "🏖️"
+      },
+      {
+       "fa": "ارائه دادن",
+       "tr": "erāʾe dādan",
+       "de": "präsentieren",
+       "emoji": "📊"
+      }
+     ]
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "مرخصی گرفتن",
+       "tr": "morachasī gereftan",
+       "de": "Urlaub nehmen",
+       "emoji": "🏖️"
+      },
+      {
+       "fa": "درخواست دادن",
+       "tr": "darchāst dādan",
+       "de": "sich bewerben",
+       "emoji": "📨"
+      },
+      {
+       "fa": "فارغ‌التحصیل شدن",
+       "tr": "fāreghottahsīl schodan",
+       "de": "den Abschluss machen",
+       "emoji": "🎓"
+      },
+      {
+       "fa": "مصاحبه کردن",
+       "tr": "mosāhebe kardan",
+       "de": "ein Interview führen",
+       "emoji": "🎤"
+      },
+      {
+       "fa": "بازنشسته شدن",
+       "tr": "bāzneschaste schodan",
+       "de": "in Rente gehen",
+       "emoji": "👴"
+      },
+      {
+       "fa": "استعفا دادن",
+       "tr": "esteʿfā dādan",
+       "de": "kündigen",
+       "emoji": "🚪"
+      }
+     ],
+     "titel": "Was bedeutet das?"
+    },
+    {
+     "typ": "sortieren",
+     "titel": "Welches Wortfeld?",
+     "frage": "Ordne die Wörter dem Wortfeld zu.",
+     "kategorien": [
+      "🧩 Rund ums Thema",
+      "👷 Berufe",
+      "🏢 Im Büro",
+      "📄 Bewerbung & Fähigkeiten"
+     ],
+     "items": [
+      {
+       "fa": "کارمند",
+       "k": 0,
+       "e": "Angestellte/r",
+       "say": false
+      },
+      {
+       "fa": "کارفرما",
+       "k": 0,
+       "e": "Arbeitgeber/in",
+       "say": false
+      },
+      {
+       "fa": "کارآموزی",
+       "k": 0,
+       "e": "Praktikum",
+       "say": false
+      },
+      {
+       "fa": "کارآفرین",
+       "k": 1,
+       "e": "Unternehmer/in",
+       "say": false
+      },
+      {
+       "fa": "روزنامه‌نگار",
+       "k": 1,
+       "e": "Journalist/in",
+       "say": false
+      },
+      {
+       "fa": "حسابدار",
+       "k": 1,
+       "e": "Buchhalter/in",
+       "say": false
+      },
+      {
+       "fa": "جلسه",
+       "k": 2,
+       "e": "Besprechung, Meeting",
+       "say": false
+      },
+      {
+       "fa": "رئیس",
+       "k": 2,
+       "e": "Chef/in",
+       "say": false
+      },
+      {
+       "fa": "پروژه",
+       "k": 2,
+       "e": "Projekt",
+       "say": false
+      },
+      {
+       "fa": "خلاق",
+       "k": 3,
+       "e": "kreativ",
+       "say": false
+      },
+      {
+       "fa": "منظم",
+       "k": 3,
+       "e": "ordentlich, organisiert",
+       "say": false
+      },
+      {
+       "fa": "انگیزه",
+       "k": 3,
+       "e": "Motivation",
+       "say": false
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: alle Wörter",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 75,
+     "ziel": 15,
      "woerter": [
       {
        "fa": "شغل",
@@ -376,6 +1563,150 @@
        "a": "Teilzeit"
       },
       {
+       "fa": "مهندس",
+       "a": "Ingenieur/in"
+      },
+      {
+       "fa": "پزشک",
+       "a": "Arzt, Ärztin"
+      },
+      {
+       "fa": "معلم",
+       "a": "Lehrer/in"
+      },
+      {
+       "fa": "وکیل",
+       "a": "Anwalt, Anwältin"
+      },
+      {
+       "fa": "برنامه‌نویس",
+       "a": "Programmierer/in"
+      },
+      {
+       "fa": "حسابدار",
+       "a": "Buchhalter/in"
+      },
+      {
+       "fa": "روزنامه‌نگار",
+       "a": "Journalist/in"
+      },
+      {
+       "fa": "مترجم",
+       "a": "Übersetzer/in"
+      },
+      {
+       "fa": "طراح",
+       "a": "Designer/in"
+      },
+      {
+       "fa": "آشپز",
+       "a": "Koch, Köchin"
+      },
+      {
+       "fa": "فروشنده",
+       "a": "Verkäufer/in"
+      },
+      {
+       "fa": "کارآفرین",
+       "a": "Unternehmer/in"
+      },
+      {
+       "fa": "دفتر",
+       "a": "Büro"
+      },
+      {
+       "fa": "جلسه",
+       "a": "Besprechung, Meeting"
+      },
+      {
+       "fa": "رئیس",
+       "a": "Chef/in"
+      },
+      {
+       "fa": "مدیر",
+       "a": "Leiter/in, Manager/in"
+      },
+      {
+       "fa": "پروژه",
+       "a": "Projekt"
+      },
+      {
+       "fa": "ایمیل",
+       "a": "E-Mail"
+      },
+      {
+       "fa": "مهلت",
+       "a": "Frist, Deadline"
+      },
+      {
+       "fa": "مرخصی",
+       "a": "Urlaub (vom Job)"
+      },
+      {
+       "fa": "اضافه‌کاری",
+       "a": "Überstunden"
+      },
+      {
+       "fa": "قرارداد",
+       "a": "Vertrag"
+      },
+      {
+       "fa": "ترفیع",
+       "a": "Beförderung"
+      },
+      {
+       "fa": "ناهار کاری",
+       "a": "Arbeitsessen"
+      },
+      {
+       "fa": "آگهی استخدام",
+       "a": "Stellenanzeige"
+      },
+      {
+       "fa": "درخواست",
+       "a": "Bewerbung, Antrag"
+      },
+      {
+       "fa": "مدرک",
+       "a": "Abschluss, Zeugnis"
+      },
+      {
+       "fa": "مهارت",
+       "a": "Fähigkeit"
+      },
+      {
+       "fa": "انگیزه",
+       "a": "Motivation"
+      },
+      {
+       "fa": "کار تیمی",
+       "a": "Teamarbeit"
+      },
+      {
+       "fa": "مسئولیت",
+       "a": "Verantwortung"
+      },
+      {
+       "fa": "خلاق",
+       "a": "kreativ"
+      },
+      {
+       "fa": "منظم",
+       "a": "ordentlich, organisiert"
+      },
+      {
+       "fa": "دقیق",
+       "a": "genau"
+      },
+      {
+       "fa": "مسلط",
+       "a": "fließend, versiert"
+      },
+      {
+       "fa": "تازه‌کار",
+       "a": "Berufseinsteiger/in"
+      },
+      {
        "fa": "استخدام کردن",
        "a": "einstellen"
       },
@@ -394,19 +1725,35 @@
       {
        "fa": "کار کردن",
        "a": "arbeiten"
+      },
+      {
+       "fa": "مصاحبه کردن",
+       "a": "ein Interview führen"
+      },
+      {
+       "fa": "بازنشسته شدن",
+       "a": "in Rente gehen"
+      },
+      {
+       "fa": "مرخصی گرفتن",
+       "a": "Urlaub nehmen"
+      },
+      {
+       "fa": "ارائه دادن",
+       "a": "präsentieren"
       }
      ]
     }
    ]
   },
   {
-   "id": "s2",
+   "id": "r1",
    "titel": "Redemittel",
    "vorschau": "رشته‌م ادبیاته، ترم آخرم.",
    "karten": [
     {
      "typ": "info",
-     "titel": "Redemittel – Teil 1",
+     "titel": "Redemittel (1)",
      "text": "<p>So sagt man das im Gespräch. Tippe einen Satz an, um ihn zu hören.</p>",
      "stil": "merke",
      "beispiele": [
@@ -439,21 +1786,21 @@
        "tr": "tū kār-e tīmī chūbam.",
        "de": "Ich bin gut im Teamwork.",
        "x": "در کار تیمی خوبم."
-      }
-     ]
-    },
-    {
-     "typ": "info",
-     "titel": "Redemittel – Teil 2",
-     "text": "<p>Die Schriftform findest du gleich in der Übung „Geschrieben ↔ gesprochen“.</p>",
-     "stil": "merke",
-     "beispiele": [
+      },
       {
        "fa": "نقطه‌ی ضعفم اینه که گاهی زیادی کمال‌گرام.",
        "tr": "noghte-ye zaʿfam īne ke gāhī ziyādī kamālgarām.",
        "de": "Meine Schwäche: Ich bin manchmal zu perfektionistisch.",
        "x": "نقطه‌ی ضعفم این است که گاهی زیادی کمال‌گرا هستم."
-      },
+      }
+     ]
+    },
+    {
+     "typ": "info",
+     "titel": "Redemittel (2)",
+     "text": "<p>So sagt man das im Gespräch. Tippe einen Satz an, um ihn zu hören.</p>",
+     "stil": "merke",
+     "beispiele": [
       {
        "fa": "سه سال سابقه‌ی کار دارم.",
        "tr": "se sāl sābeghe-ye kār dāram.",
@@ -477,6 +1824,56 @@
        "tr": "key chabaram mīkonīd?",
        "de": "Wann geben Sie mir Bescheid?",
        "x": "کی خبرم می‌کنید؟"
+      },
+      {
+       "fa": "فردا جلسه داریم؟",
+       "tr": "fardā dschalase dārīm?",
+       "de": "Haben wir morgen ein Meeting?",
+       "x": "فردا جلسه داریم؟"
+      },
+      {
+       "fa": "مهلت پروژه کی تموم می‌شه؟",
+       "tr": "mohlat-e prozhe key tamūm mīsche?",
+       "de": "Wann ist die Projektdeadline?",
+       "x": "مهلت پروژه کی تمام می‌شود؟"
+      }
+     ]
+    },
+    {
+     "typ": "info",
+     "titel": "Redemittel (3)",
+     "text": "<p>So sagt man das im Gespräch. Tippe einen Satz an, um ihn zu hören.</p>",
+     "stil": "merke",
+     "beispiele": [
+      {
+       "fa": "می‌تونم هفته‌ی بعد مرخصی بگیرم؟",
+       "tr": "mītūnam hafte-ye baʿd morachasī begīram?",
+       "de": "Kann ich nächste Woche Urlaub nehmen?",
+       "x": "می‌توانم هفته‌ی بعد مرخصی بگیرم؟"
+      },
+      {
+       "fa": "به فارسی و انگلیسی مسلطم.",
+       "tr": "be fārsī o engelīsī mosallatam.",
+       "de": "Ich spreche fließend Persisch und Englisch.",
+       "x": "به فارسی و انگلیسی مسلط هستم."
+      },
+      {
+       "fa": "تو این زمینه تجربه دارم.",
+       "tr": "tū īn zamīne tadschrobe dāram.",
+       "de": "Ich habe Erfahrung in diesem Bereich.",
+       "x": "در این زمینه تجربه دارم."
+      },
+      {
+       "fa": "حقوقش چقدره؟",
+       "tr": "hoghūghesch tscheghadre?",
+       "de": "Wie hoch ist das Gehalt?",
+       "x": "حقوق چقدر است؟"
+      },
+      {
+       "fa": "کار جدیدت چطوره؟",
+       "tr": "kār-e dschadīdet tschetoure?",
+       "de": "Wie ist dein neuer Job?",
+       "x": "کار جدیدت چطور است؟"
       }
      ]
     },
@@ -485,10 +1882,59 @@
      "links": "de",
      "paare": [
       {
-       "fa": "امکان دورکاری هم هست؟",
-       "tr": "emkān-e dūrkārī ham hast?",
-       "de": "Gibt es auch Homeoffice?",
-       "x": "امکان دورکاری هم هست؟"
+       "fa": "کی خبرم می‌کنید؟",
+       "tr": "key chabaram mīkonīd?",
+       "de": "Wann geben Sie mir Bescheid?",
+       "x": "کی خبرم می‌کنید؟"
+      },
+      {
+       "fa": "رشته‌م ادبیاته، ترم آخرم.",
+       "tr": "reschtam adabiyyāte, term-e ācharam.",
+       "de": "Ich studiere Literatur, im letzten Semester.",
+       "x": "رشته‌ی من ادبیات است و ترم آخر هستم."
+      },
+      {
+       "fa": "می‌تونم هفته‌ی بعد مرخصی بگیرم؟",
+       "tr": "mītūnam hafte-ye baʿd morachasī begīram?",
+       "de": "Kann ich nächste Woche Urlaub nehmen?",
+       "x": "می‌توانم هفته‌ی بعد مرخصی بگیرم؟"
+      },
+      {
+       "fa": "کار جدیدت چطوره؟",
+       "tr": "kār-e dschadīdet tschetoure?",
+       "de": "Wie ist dein neuer Job?",
+       "x": "کار جدیدت چطور است؟"
+      },
+      {
+       "fa": "نقطه‌ی ضعفم اینه که گاهی زیادی کمال‌گرام.",
+       "tr": "noghte-ye zaʿfam īne ke gāhī ziyādī kamālgarām.",
+       "de": "Meine Schwäche: Ich bin manchmal zu perfektionistisch.",
+       "x": "نقطه‌ی ضعفم این است که گاهی زیادی کمال‌گرا هستم."
+      },
+      {
+       "fa": "ساعت کاری چطوریه؟",
+       "tr": "sāʿat-e kārī tschetourīye?",
+       "de": "Wie sind die Arbeitszeiten?",
+       "x": "ساعت کاری چطور است؟"
+      }
+     ],
+     "titel": "Was bedeutet das?"
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "من آدم منظم و دقیقی‌ام.",
+       "tr": "man ādam-e monazzam o daghīghīam.",
+       "de": "Ich bin ordentlich und genau.",
+       "x": "من آدم منظم و دقیقی هستم."
+      },
+      {
+       "fa": "می‌تونم هفته‌ی بعد مرخصی بگیرم؟",
+       "tr": "mītūnam hafte-ye baʿd morachasī begīram?",
+       "de": "Kann ich nächste Woche Urlaub nehmen?",
+       "x": "می‌توانم هفته‌ی بعد مرخصی بگیرم؟"
       },
       {
        "fa": "ساعت کاری چطوریه؟",
@@ -503,25 +1949,19 @@
        "x": "رشته‌ی من ادبیات است و ترم آخر هستم."
       },
       {
-       "fa": "سه سال سابقه‌ی کار دارم.",
-       "tr": "se sāl sābeghe-ye kār dāram.",
-       "de": "Ich habe drei Jahre Berufserfahrung.",
-       "x": "سه سال تجربه‌ی کاری دارم."
-      },
-      {
        "fa": "تو کار تیمی خوبم.",
        "tr": "tū kār-e tīmī chūbam.",
        "de": "Ich bin gut im Teamwork.",
        "x": "در کار تیمی خوبم."
       },
       {
-       "fa": "بعد از درسم می‌خوام تو زمینه‌ی … کار کنم.",
-       "tr": "baʿd az darsam mīchām tū zamīne-ye … kār konam.",
-       "de": "Nach dem Studium will ich im Bereich … arbeiten.",
-       "x": "بعد از درسم می‌خواهم در زمینه‌ی … کار کنم."
+       "fa": "کار جدیدت چطوره؟",
+       "tr": "kār-e dschadīdet tschetoure?",
+       "de": "Wie ist dein neuer Job?",
+       "x": "کار جدیدت چطور است؟"
       }
      ],
-     "titel": "Was bedeutet das?"
+     "titel": "Noch einmal: Was bedeutet das?"
     },
     {
      "typ": "sortieren",
@@ -592,12 +2032,188 @@
        "k": 2,
        "e": "Wann geben Sie mir Bescheid?",
        "say": false
+      },
+      {
+       "fa": "فردا جلسه داریم؟",
+       "k": 2,
+       "e": "Haben wir morgen ein Meeting?",
+       "say": false
+      },
+      {
+       "fa": "مهلت پروژه کی تموم می‌شه؟",
+       "k": 2,
+       "e": "Wann ist die Projektdeadline?",
+       "say": false
+      },
+      {
+       "fa": "می‌تونم هفته‌ی بعد مرخصی بگیرم؟",
+       "k": 2,
+       "e": "Kann ich nächste Woche Urlaub nehmen?",
+       "say": false
+      },
+      {
+       "fa": "به فارسی و انگلیسی مسلطم.",
+       "k": 1,
+       "e": "Ich spreche fließend Persisch und Englisch.",
+       "say": false
+      },
+      {
+       "fa": "تو این زمینه تجربه دارم.",
+       "k": 1,
+       "e": "Ich habe Erfahrung in diesem Bereich.",
+       "say": false
+      },
+      {
+       "fa": "حقوقش چقدره؟",
+       "k": 2,
+       "e": "Wie hoch ist das Gehalt?",
+       "say": false
+      },
+      {
+       "fa": "کار جدیدت چطوره؟",
+       "k": 0,
+       "e": "Wie ist dein neuer Job?",
+       "say": false
       }
      ]
     },
     {
+     "typ": "paare",
+     "links": "x",
+     "paare": [
+      {
+       "fa": "در این زمینه تجربه دارم.",
+       "tr": "",
+       "de": "Ich habe Erfahrung in diesem Bereich.",
+       "x": "تو این زمینه تجربه دارم."
+      },
+      {
+       "fa": "بعد از درسم می‌خواهم در زمینه‌ی … کار کنم.",
+       "tr": "",
+       "de": "Nach dem Studium will ich im Bereich … arbeiten.",
+       "x": "بعد از درسم می‌خوام تو زمینه‌ی … کار کنم."
+      },
+      {
+       "fa": "رشته‌ی من ادبیات است و ترم آخر هستم.",
+       "tr": "",
+       "de": "Ich studiere Literatur, im letzten Semester.",
+       "x": "رشته‌م ادبیاته، ترم آخرم."
+      },
+      {
+       "fa": "کار جدیدت چطور است؟",
+       "tr": "",
+       "de": "Wie ist dein neuer Job?",
+       "x": "کار جدیدت چطوره؟"
+      },
+      {
+       "fa": "به فارسی و انگلیسی مسلط هستم.",
+       "tr": "",
+       "de": "Ich spreche fließend Persisch und Englisch.",
+       "x": "به فارسی و انگلیسی مسلطم."
+      },
+      {
+       "fa": "نقطه‌ی ضعفم این است که گاهی زیادی کمال‌گرا هستم.",
+       "tr": "",
+       "de": "Meine Schwäche: Ich bin manchmal zu perfektionistisch.",
+       "x": "نقطه‌ی ضعفم اینه که گاهی زیادی کمال‌گرام."
+      }
+     ],
+     "titel": "Geschrieben ↔ gesprochen"
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Redemittel",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 70,
+     "ziel": 12,
+     "woerter": [
+      {
+       "fa": "رشته‌م ادبیاته، ترم آخرم.",
+       "a": "Ich studiere Literatur, im letzten Semester."
+      },
+      {
+       "fa": "الان تو یه شرکت کارآموزی می‌کنم.",
+       "a": "Ich mache gerade ein Praktikum in einer Firma."
+      },
+      {
+       "fa": "بعد از درسم می‌خوام تو زمینه‌ی … کار کنم.",
+       "a": "Nach dem Studium will ich im Bereich … arbeiten."
+      },
+      {
+       "fa": "من آدم منظم و دقیقی‌ام.",
+       "a": "Ich bin ordentlich und genau."
+      },
+      {
+       "fa": "تو کار تیمی خوبم.",
+       "a": "Ich bin gut im Teamwork."
+      },
+      {
+       "fa": "نقطه‌ی ضعفم اینه که گاهی زیادی کمال‌گرام.",
+       "a": "Meine Schwäche: Ich bin manchmal zu perfektionistisch."
+      },
+      {
+       "fa": "سه سال سابقه‌ی کار دارم.",
+       "a": "Ich habe drei Jahre Berufserfahrung."
+      },
+      {
+       "fa": "ساعت کاری چطوریه؟",
+       "a": "Wie sind die Arbeitszeiten?"
+      },
+      {
+       "fa": "امکان دورکاری هم هست؟",
+       "a": "Gibt es auch Homeoffice?"
+      },
+      {
+       "fa": "کی خبرم می‌کنید؟",
+       "a": "Wann geben Sie mir Bescheid?"
+      },
+      {
+       "fa": "فردا جلسه داریم؟",
+       "a": "Haben wir morgen ein Meeting?"
+      },
+      {
+       "fa": "مهلت پروژه کی تموم می‌شه؟",
+       "a": "Wann ist die Projektdeadline?"
+      },
+      {
+       "fa": "می‌تونم هفته‌ی بعد مرخصی بگیرم؟",
+       "a": "Kann ich nächste Woche Urlaub nehmen?"
+      },
+      {
+       "fa": "به فارسی و انگلیسی مسلطم.",
+       "a": "Ich spreche fließend Persisch und Englisch."
+      },
+      {
+       "fa": "تو این زمینه تجربه دارم.",
+       "a": "Ich habe Erfahrung in diesem Bereich."
+      },
+      {
+       "fa": "حقوقش چقدره؟",
+       "a": "Wie hoch ist das Gehalt?"
+      },
+      {
+       "fa": "کار جدیدت چطوره؟",
+       "a": "Wie ist dein neuer Job?"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "r2",
+   "titel": "Situationen & Reaktionen",
+   "vorschau": "چی بگم؟",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Reagieren",
+     "text": "<p>Im Gespräch kommt es auf die <b>Reaktion</b> an. Lies, was jemand sagt – und was man darauf antwortet.</p><div class='karte' style='margin:10px 0;padding:10px 14px'><div class='fa' style='font-size:1.3rem;text-align:right'>💬 چی کاره‌ای؟</div><div class='fa' style='font-size:1.3rem;text-align:right;color:var(--lapis)'>↩️ برنامه‌نویسم، تو یه استارتاپ.</div><div class='klein muted'>Was machst du beruflich?</div></div><div class='karte' style='margin:10px 0;padding:10px 14px'><div class='fa' style='font-size:1.3rem;text-align:right'>💬 کار جدیدت چطوره؟</div><div class='fa' style='font-size:1.3rem;text-align:right;color:var(--lapis)'>↩️ عالیه، همکارام خیلی خوبن.</div><div class='klein muted'>Wie ist dein neuer Job?</div></div><div class='karte' style='margin:10px 0;padding:10px 14px'><div class='fa' style='font-size:1.3rem;text-align:right'>💬 استخدام شدم!</div><div class='fa' style='font-size:1.3rem;text-align:right;color:var(--lapis)'>↩️ وای، تبریک می‌گم! مبارکه!</div><div class='klein muted'>Ich wurde eingestellt!</div></div><div class='karte' style='margin:10px 0;padding:10px 14px'><div class='fa' style='font-size:1.3rem;text-align:right'>💬 خسته نباشید!</div><div class='fa' style='font-size:1.3rem;text-align:right;color:var(--lapis)'>↩️ سلامت باشید!</div><div class='klein muted'>Gute Arbeit! / Schönen Feierabend!</div></div>",
+     "stil": "merke"
+    },
+    {
      "typ": "wahl",
-     "titel": "Was sagst du?",
+     "titel": "Was sagst du? (1)",
      "fragen": [
       {
        "frage": "Im Interview fragt man nach deiner Schwäche:",
@@ -646,102 +2262,185 @@
      ]
     },
     {
+     "typ": "wahl",
+     "titel": "Was sagst du? (2)",
+     "fragen": [
+      {
+       "frage": "Du willst im Bewerbungsgespräch deine Sprachkenntnisse nennen:",
+       "optionen": [
+        "به فارسی و انگلیسی مسلطم.",
+        "حقوقش چقدره؟",
+        "فردا جلسه داریم؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "Du fragst deine Chefin nach Urlaub:",
+       "optionen": [
+        "می‌تونم هفته‌ی بعد مرخصی بگیرم؟",
+        "مهلت پروژه کی تموم می‌شه؟",
+        "کار جدیدت چطوره؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "Eine Freundin hat gerade eine neue Stelle angefangen:",
+       "optionen": [
+        "کار جدیدت چطوره؟",
+        "تو این زمینه تجربه دارم.",
+        "حقوقش چقدره؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    },
+    {
      "typ": "paare",
      "links": "x",
      "paare": [
       {
-       "fa": "رشته‌ی من ادبیات است و ترم آخر هستم.",
+       "fa": "چی کاره‌ای؟",
        "tr": "",
-       "de": "Ich studiere Literatur, im letzten Semester.",
-       "x": "رشته‌م ادبیاته، ترم آخرم."
+       "de": "Was machst du beruflich?",
+       "x": "برنامه‌نویسم، تو یه استارتاپ."
       },
       {
-       "fa": "الان در یک شرکت کارآموزی می‌کنم.",
+       "fa": "کار جدیدت چطوره؟",
        "tr": "",
-       "de": "Ich mache gerade ein Praktikum in einer Firma.",
-       "x": "الان تو یه شرکت کارآموزی می‌کنم."
+       "de": "Wie ist dein neuer Job?",
+       "x": "عالیه، همکارام خیلی خوبن."
       },
       {
-       "fa": "بعد از درسم می‌خواهم در زمینه‌ی … کار کنم.",
+       "fa": "استخدام شدم!",
        "tr": "",
-       "de": "Nach dem Studium will ich im Bereich … arbeiten.",
-       "x": "بعد از درسم می‌خوام تو زمینه‌ی … کار کنم."
+       "de": "Ich wurde eingestellt!",
+       "x": "وای، تبریک می‌گم! مبارکه!"
       },
       {
-       "fa": "من آدم منظم و دقیقی هستم.",
+       "fa": "خسته نباشید!",
        "tr": "",
-       "de": "Ich bin ordentlich und genau.",
-       "x": "من آدم منظم و دقیقی‌ام."
+       "de": "Gute Arbeit! / Schönen Feierabend!",
+       "x": "سلامت باشید!"
       },
       {
-       "fa": "در کار تیمی خوبم.",
+       "fa": "نقطه‌ی ضعفتون چیه؟",
        "tr": "",
-       "de": "Ich bin gut im Teamwork.",
-       "x": "تو کار تیمی خوبم."
-      },
-      {
-       "fa": "نقطه‌ی ضعفم این است که گاهی زیادی کمال‌گرا هستم.",
-       "tr": "",
-       "de": "Meine Schwäche: Ich bin manchmal zu perfektionistisch.",
-       "x": "نقطه‌ی ضعفم اینه که گاهی زیادی کمال‌گرام."
-      }
-     ],
-     "titel": "Geschrieben ↔ gesprochen"
-    },
-    {
-     "typ": "tempo",
-     "titel": "Blitz: Redemittel",
-     "aufgabe": "Was bedeutet das?",
-     "modus": "de",
-     "sekunden": 60,
-     "ziel": 10,
-     "woerter": [
-      {
-       "fa": "رشته‌م ادبیاته، ترم آخرم.",
-       "a": "Ich studiere Literatur, im letzten Semester."
-      },
-      {
-       "fa": "الان تو یه شرکت کارآموزی می‌کنم.",
-       "a": "Ich mache gerade ein Praktikum in einer Firma."
-      },
-      {
-       "fa": "بعد از درسم می‌خوام تو زمینه‌ی … کار کنم.",
-       "a": "Nach dem Studium will ich im Bereich … arbeiten."
-      },
-      {
-       "fa": "من آدم منظم و دقیقی‌ام.",
-       "a": "Ich bin ordentlich und genau."
-      },
-      {
-       "fa": "تو کار تیمی خوبم.",
-       "a": "Ich bin gut im Teamwork."
-      },
-      {
-       "fa": "نقطه‌ی ضعفم اینه که گاهی زیادی کمال‌گرام.",
-       "a": "Meine Schwäche: Ich bin manchmal zu perfektionistisch."
-      },
-      {
-       "fa": "سه سال سابقه‌ی کار دارم.",
-       "a": "Ich habe drei Jahre Berufserfahrung."
-      },
-      {
-       "fa": "ساعت کاری چطوریه؟",
-       "a": "Wie sind die Arbeitszeiten?"
-      },
-      {
-       "fa": "امکان دورکاری هم هست؟",
-       "a": "Gibt es auch Homeoffice?"
+       "de": "Was ist Ihre Schwäche?",
+       "x": "گاهی زیادی کمال‌گرام."
       },
       {
        "fa": "کی خبرم می‌کنید؟",
-       "a": "Wann geben Sie mir Bescheid?"
+       "tr": "",
+       "de": "Wann geben Sie mir Bescheid?",
+       "x": "تا آخر هفته باهاتون تماس می‌گیریم."
+      }
+     ],
+     "titel": "Was antwortest du?"
+    },
+    {
+     "typ": "wahl",
+     "titel": "Die passende Reaktion",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>چی کاره‌ای؟</span>",
+       "optionen": [
+        "برنامه‌نویسم، تو یه استارتاپ.",
+        "تا آخر هفته باهاتون تماس می‌گیریم.",
+        "وای، تبریک می‌گم! مبارکه!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>کار جدیدت چطوره؟</span>",
+       "optionen": [
+        "عالیه، همکارام خیلی خوبن.",
+        "گاهی زیادی کمال‌گرام.",
+        "آره، ولی حقوقش کمه."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>استخدام شدم!</span>",
+       "optionen": [
+        "وای، تبریک می‌گم! مبارکه!",
+        "سلامت باشید!",
+        "تا آخر هفته باهاتون تماس می‌گیریم."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>خسته نباشید!</span>",
+       "optionen": [
+        "سلامت باشید!",
+        "تا آخر هفته باهاتون تماس می‌گیریم.",
+        "گاهی زیادی کمال‌گرام."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>نقطه‌ی ضعفتون چیه؟</span>",
+       "optionen": [
+        "گاهی زیادی کمال‌گرام.",
+        "آره، تا هشت شب.",
+        "آره، ولی حقوقش کمه."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>کی خبرم می‌کنید؟</span>",
+       "optionen": [
+        "تا آخر هفته باهاتون تماس می‌گیریم.",
+        "برنامه‌نویسم، تو یه استارتاپ.",
+        "عالیه، همکارام خیلی خوبن."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>امروز اضافه‌کاری داری؟</span>",
+       "optionen": [
+        "آره، تا هشت شب.",
+        "گاهی زیادی کمال‌گرام.",
+        "عالیه، همکارام خیلی خوبن."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>از کارت راضی هستی؟</span>",
+       "optionen": [
+        "آره، ولی حقوقش کمه.",
+        "گاهی زیادی کمال‌گرام.",
+        "وای، تبریک می‌گم! مبارکه!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
       }
      ]
     }
    ]
   },
   {
-   "id": "s3",
+   "id": "d",
    "titel": "Modelldialog",
    "vorschau": "Vorstellungsgespräch",
    "karten": [
@@ -841,6 +2540,67 @@
      ]
     },
     {
+     "typ": "wahl",
+     "titel": "Wie geht es weiter?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>خوش اومدید. لطفاً یه کم از خودتون بگید.</span><br><span class='klein muted'>Was kommt als Nächstes?</span>",
+       "optionen": [
+        "من سوفی‌ام، ایران‌شناسی و انفورماتیک خوندم و الان ترم آخرم.",
+        "نقطه‌ی ضعفتون چیه؟",
+        "گاهی زیادی کمال‌گرام، ولی دارم یاد می‌گیرم کارها رو به موقع تحویل بدم."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>چه ترکیب جالبی! تجربه‌ی کاری هم دارید؟</span><br><span class='klein muted'>Was kommt als Nächstes?</span>",
+       "optionen": [
+        "بله، یه سال تو برلین تو یه استارتاپ کارآموزی کردم.",
+        "چرا می‌خواید تو ایران کار کنید؟",
+        "خوش اومدید. لطفاً یه کم از خودتون بگید."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>چرا می‌خواید تو ایران کار کنید؟</span><br><span class='klein muted'>Was kommt als Nächstes?</span>",
+       "optionen": [
+        "عاشق این فرهنگم و می‌خوام فارسی‌م رو بهتر کنم. این شغل هر دو رو داره.",
+        "خوبه. سؤالی از ما دارید؟",
+        "خوش اومدید. لطفاً یه کم از خودتون بگید."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>نقطه‌ی ضعفتون چیه؟</span><br><span class='klein muted'>Was kommt als Nächstes?</span>",
+       "optionen": [
+        "گاهی زیادی کمال‌گرام، ولی دارم یاد می‌گیرم کارها رو به موقع تحویل بدم.",
+        "چه ترکیب جالبی! تجربه‌ی کاری هم دارید؟",
+        "عاشق این فرهنگم و می‌خوام فارسی‌م رو بهتر کنم. این شغل هر دو رو داره."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>خوبه. سؤالی از ما دارید؟</span><br><span class='klein muted'>Was kommt als Nächstes?</span>",
+       "optionen": [
+        "بله، امکان دورکاری هم هست؟ و کی خبرم می‌کنید؟",
+        "گاهی زیادی کمال‌گرام، ولی دارم یاد می‌گیرم کارها رو به موقع تحویل بدم.",
+        "چرا می‌خواید تو ایران کار کنید؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    },
+    {
      "typ": "ordnen",
      "titel": "Bring den Dialog in die richtige Reihenfolge",
      "frage": "Tippe die Sätze der Reihe nach an.",
@@ -886,11 +2646,84 @@
        "de": "Manchmal bin ich zu perfektionistisch, aber ich lerne, Dinge rechtzeitig abzugeben."
       }
      ]
+    },
+    {
+     "typ": "bauen",
+     "titel": "Baue die Sätze aus dem Dialog",
+     "trenner": " ",
+     "woerter": [
+      {
+       "fa": "خوش اومدید. لطفاً یه کم از خودتون بگید.",
+       "tr": "chosch ūmadīd. lotfan ye kam az chodetūn begīd.",
+       "de": "Willkommen. Erzählen Sie bitte etwas über sich.",
+       "teile": [
+        "خوش",
+        "اومدید",
+        "لطفاً",
+        "یه",
+        "کم",
+        "از",
+        "خودتون",
+        "بگید"
+       ],
+       "extra": [
+        "ایران"
+       ]
+      },
+      {
+       "fa": "چه ترکیب جالبی! تجربه‌ی کاری هم دارید؟",
+       "tr": "tsche tarkīb-e dschālebī! tadschrobe-ye kārī ham dārīd?",
+       "de": "Was für eine interessante Kombination! Haben Sie auch Berufserfahrung?",
+       "teile": [
+        "چه",
+        "ترکیب",
+        "جالبی",
+        "تجربه‌ی",
+        "کاری",
+        "هم",
+        "دارید"
+       ],
+       "extra": [
+        "هست؟"
+       ]
+      },
+      {
+       "fa": "چرا می‌خواید تو ایران کار کنید؟",
+       "tr": "tscherā mīchāyd tū īrān kār konīd?",
+       "de": "Warum wollen Sie in Iran arbeiten?",
+       "teile": [
+        "چرا",
+        "می‌خواید",
+        "تو",
+        "ایران",
+        "کار",
+        "کنید"
+       ],
+       "extra": [
+        "کی"
+       ]
+      },
+      {
+       "fa": "خوبه. سؤالی از ما دارید؟",
+       "tr": "chūbe. soʾālī az mā dārīd?",
+       "de": "Gut. Haben Sie Fragen an uns?",
+       "teile": [
+        "خوبه",
+        "سؤالی",
+        "از",
+        "ما",
+        "دارید"
+       ],
+       "extra": [
+        "جالبی!"
+       ]
+      }
+     ]
     }
    ]
   },
   {
-   "id": "s4",
+   "id": "t",
    "titel": "Lesen",
    "vorschau": "Junge Iraner und der Arbeitsmarkt",
    "karten": [
@@ -1016,11 +2849,43 @@
        "richtig": 0
       }
      ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "در ایران تعداد فارغ‌التحصیلان دانشگاه خیلی زیاد است.",
+       "tr": "dar īrān teʿdād-e fāreghottahsīlān-e dāneschgāh cheylī ziyād ast.",
+       "de": "In Iran gibt es sehr viele Hochschulabsolventen."
+      },
+      {
+       "fa": "اما پیدا کردن کار مناسب با رشته‌ی تحصیلی همیشه آسان نیست.",
+       "tr": "ammā peydā kardan-e kār-e monāseb bā reschte-ye tahsīlī hamīsche āsān nīst.",
+       "de": "Aber eine passende Arbeit zum Studienfach zu finden, ist nicht immer leicht."
+      },
+      {
+       "fa": "به همین دلیل بسیاری از جوانان کسب‌وکار خودشان را راه می‌اندازند.",
+       "tr": "be hamīn dalīl besyārī az dschawānān kasb-o-kār-e chodeschān rā rāh mīandāzand.",
+       "de": "Deshalb gründen viele junge Leute ihr eigenes Geschäft."
+      },
+      {
+       "fa": "در ده سال گذشته صدها استارتاپ در تهران به وجود آمده است.",
+       "tr": "dar dah sāl-e gozaschte sadhā estārtāp dar tehrān be wodschūd āmade ast.",
+       "de": "In den letzten zehn Jahren sind in Teheran Hunderte Start-ups entstanden."
+      },
+      {
+       "fa": "از اپلیکیشن تاکسی گرفته تا فروشگاه‌های اینترنتی و سفارش غذا.",
+       "tr": "az aplīkeyschen-e tāksī gerefte tā forūschgāhhā-ye īnternetī o sefāresch-e ghazā.",
+       "de": "Von Taxi-Apps über Online-Shops bis zur Essenslieferung."
+      }
+     ]
     }
    ]
   },
   {
-   "id": "s5",
+   "id": "k",
    "titel": "Gut zu wissen",
    "vorschau": "Titel und Höflichkeit im Beruf",
    "karten": [
@@ -1070,7 +2935,7 @@
    ]
   },
   {
-   "id": "s6",
+   "id": "p",
    "titel": "Vorbereitung für die Sitzung",
    "vorschau": "آماده‌ای؟",
    "karten": [
@@ -1116,11 +2981,6 @@
      "links": "de",
      "paare": [
       {
-       "fa": "بدترین کاری که تا حالا کردی چی بوده؟",
-       "tr": "badtarīn kārī ke tā hālā kardī tschī būde?",
-       "de": "Was war dein schlimmster Job?"
-      },
-      {
        "fa": "چی خوندی یا چی می‌خونی؟ چرا این رشته رو انتخاب کردی؟",
        "tr": "tschī chūndī yā tschī mīchūnī? tscherā īn reschte ro entechāb kardī?",
        "de": "Was hast du studiert / studierst du? Warum dieses Fach?"
@@ -1131,19 +2991,24 @@
        "de": "Homeoffice oder Büro?"
       },
       {
+       "fa": "بدترین کاری که تا حالا کردی چی بوده؟",
+       "tr": "badtarīn kārī ke tā hālā kardī tschī būde?",
+       "de": "Was war dein schlimmster Job?"
+      },
+      {
        "fa": "ده سال دیگه خودتو کجا می‌بینی؟",
        "tr": "dah sāl-e dīge chodeto kodschā mībīnī?",
        "de": "Wo siehst du dich in zehn Jahren?"
       },
       {
-       "fa": "شغل رؤیایی‌ت چیه؟",
-       "tr": "schoghl-e roʾyāyīt tschīye?",
-       "de": "Was ist dein Traumberuf?"
-      },
-      {
        "fa": "پول مهم‌تره یا علاقه؟",
        "tr": "pūl mohemtare yā ʿalāghe?",
        "de": "Ist Geld wichtiger oder Leidenschaft?"
+      },
+      {
+       "fa": "شغل رؤیایی‌ت چیه؟",
+       "tr": "schoghl-e roʾyāyīt tschīye?",
+       "de": "Was ist dein Traumberuf?"
       }
      ],
      "titel": "Welche Frage ist das?"

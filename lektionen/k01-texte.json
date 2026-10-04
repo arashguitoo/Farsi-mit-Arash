@@ -1,0 +1,309 @@
+{
+ "id": "tx",
+ "art": "texte",
+ "titel": "Texte & Dialoge",
+ "beschreibung": "Ein zweiter Dialog und ein weiterer Lesetext.",
+ "stationen": [
+  {
+   "id": "d2",
+   "titel": "Dialog: Erster Tag im Sprachkurs",
+   "vorschau": "Erster Tag im Sprachkurs",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Erster Tag im Persischkurs in Teheran. Die Lehrerin, Frau Rahimi, bittet alle, sich vorzustellen.</p>"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "خانم رحیمی: سلام به همه! لطفا خودتون رو معرفی کنید.",
+       "tr": "salām be hame! lotfan chodetūn ro moʿarrefī konīd.",
+       "de": "Hallo zusammen! Bitte stellen Sie sich vor."
+      },
+      {
+       "fa": "یان: سلام، من یان هستم. از هلند اومدم.",
+       "tr": "salām, man yān hastam. az holand ūmadam.",
+       "de": "Hallo, ich bin Jan. Ich komme aus den Niederlanden."
+      },
+      {
+       "fa": "خانم رحیمی: خوش اومدید. چرا فارسی یاد می‌گیرید؟",
+       "tr": "chosch ūmadīd. tscherā fārsī yād mīgīrīd?",
+       "de": "Willkommen. Warum lernen Sie Persisch?"
+      },
+      {
+       "fa": "یان: برای کارم. تو یه شرکت فرش کار می‌کنم.",
+       "tr": "barā-ye kāram. tū ye scherkat-e farsch kār mīkonam.",
+       "de": "Für meine Arbeit. Ich arbeite bei einer Teppichfirma."
+      },
+      {
+       "fa": "ماریا: منم ماریام، از اسپانیا. من شعر فارسی دوست دارم، مخصوصا حافظ.",
+       "tr": "manam māriyām, az espāniyā. man scheʿr-e fārsī dūst dāram, machsūsan hāfez.",
+       "de": "Ich bin Maria, aus Spanien. Ich liebe persische Lyrik, besonders Hafes."
+      },
+      {
+       "fa": "خانم رحیمی: چه عالی! تا حالا ایران اومده بودید؟",
+       "tr": "tsche ʿālī! tā hālā īrān ūmade būdīd?",
+       "de": "Wie schön! Waren Sie schon einmal in Iran?"
+      },
+      {
+       "fa": "ماریا: نه، اولین باره. خیلی هیجان دارم!",
+       "tr": "na, awwalīn bāre. cheylī hayadschān dāram!",
+       "de": "Nein, es ist das erste Mal. Ich bin sehr aufgeregt!"
+      },
+      {
+       "fa": "خانم رحیمی: خیلی خوبه. امیدوارم اینجا بهتون خوش بگذره!",
+       "tr": "cheylī chūbe. omīdwāram īndschā behetūn chosch begzare!",
+       "de": "Sehr gut. Ich hoffe, Sie haben hier eine schöne Zeit!"
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "خانم رحیمی: سلام به همه! لطفا خودتون رو معرفی کنید.",
+       "tr": "salām be hame! lotfan chodetūn ro moʿarrefī konīd.",
+       "de": "Hallo zusammen! Bitte stellen Sie sich vor."
+      },
+      {
+       "fa": "یان: سلام، من یان هستم. از هلند اومدم.",
+       "tr": "salām, man yān hastam. az holand ūmadam.",
+       "de": "Hallo, ich bin Jan. Ich komme aus den Niederlanden."
+      },
+      {
+       "fa": "خانم رحیمی: خوش اومدید. چرا فارسی یاد می‌گیرید؟",
+       "tr": "chosch ūmadīd. tscherā fārsī yād mīgīrīd?",
+       "de": "Willkommen. Warum lernen Sie Persisch?"
+      },
+      {
+       "fa": "یان: برای کارم. تو یه شرکت فرش کار می‌کنم.",
+       "tr": "barā-ye kāram. tū ye scherkat-e farsch kār mīkonam.",
+       "de": "Für meine Arbeit. Ich arbeite bei einer Teppichfirma."
+      },
+      {
+       "fa": "ماریا: منم ماریام، از اسپانیا. من شعر فارسی دوست دارم، مخصوصا حافظ.",
+       "tr": "manam māriyām, az espāniyā. man scheʿr-e fārsī dūst dāram, machsūsan hāfez.",
+       "de": "Ich bin Maria, aus Spanien. Ich liebe persische Lyrik, besonders Hafes."
+      },
+      {
+       "fa": "خانم رحیمی: چه عالی! تا حالا ایران اومده بودید؟",
+       "tr": "tsche ʿālī! tā hālā īrān ūmade būdīd?",
+       "de": "Wie schön! Waren Sie schon einmal in Iran?"
+      },
+      {
+       "fa": "ماریا: نه، اولین باره. خیلی هیجان دارم!",
+       "tr": "na, awwalīn bāre. cheylī hayadschān dāram!",
+       "de": "Nein, es ist das erste Mal. Ich bin sehr aufgeregt!"
+      },
+      {
+       "fa": "خانم رحیمی: خیلی خوبه. امیدوارم اینجا بهتون خوش بگذره!",
+       "tr": "cheylī chūbe. omīdwāram īndschā behetūn chosch begzare!",
+       "de": "Sehr gut. Ich hoffe, Sie haben hier eine schöne Zeit!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Warum lernt Jan Persisch?",
+       "optionen": [
+        "für seine Arbeit",
+        "für das Studium",
+        "wegen seiner Familie"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was liebt Maria?",
+       "optionen": [
+        "persische Lyrik",
+        "persisches Essen",
+        "persische Filme"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "War Maria schon in Iran?",
+       "optionen": [
+        "Nein, es ist das erste Mal.",
+        "Ja, zweimal.",
+        "Ja, als Kind."
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t2",
+   "titel": "Text: Steckbrief: Neue Mitglieder im Tandemclub",
+   "vorschau": "Steckbrief: Neue Mitglieder im Tandemclub",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Text: Steckbrief: Neue Mitglieder im Tandemclub",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "باشگاه هم‌زبانی دانشگاه کیل هر ترم اعضای جدید را معرفی می‌کند.",
+       "tr": "bāschgāh-e hamzabānī-ye dāneschgāh-e kīl har term aʿzā-ye dschadīd rā moʿarrefī mīkonad.",
+       "de": "Der Tandemclub der Uni Kiel stellt jedes Semester neue Mitglieder vor."
+      },
+      {
+       "fa": "نیلوفر بیست و شش سال دارد و از اصفهان آمده است.",
+       "tr": "nīlūfar bīst o schesch sāl dārad o az esfahān āmade ast.",
+       "de": "Niloufar ist 26 und kommt aus Isfahan."
+      },
+      {
+       "fa": "او کارشناسی ارشد زیست‌شناسی می‌خواند و عاشق دریاست.",
+       "tr": "ū kārschenāsī-ye arschad-e zīstschenāsī mīchānad o ʿāschegh-e daryāst.",
+       "de": "Sie macht einen Master in Biologie und liebt das Meer."
+      },
+      {
+       "fa": "نیلوفر می‌خواهد آلمانی‌اش را بهتر کند و در عوض فارسی یاد بدهد.",
+       "tr": "nīlūfar mīchāhad ālmānīasch rā behtar konad o dar ʿawaz fārsī yād bedahad.",
+       "de": "Niloufar möchte ihr Deutsch verbessern und dafür Persisch beibringen."
+      },
+      {
+       "fa": "فلیکس بیست و دو ساله است و در هامبورگ بزرگ شده است.",
+       "tr": "feliks bīst o do sāle ast o dar hāmburg bozorg schode ast.",
+       "de": "Felix ist 22 und in Hamburg aufgewachsen."
+      },
+      {
+       "fa": "مادر او اهل مشهد است، اما فلیکس هنوز فارسی را خوب بلد نیست.",
+       "tr": "mādar-e ū ahl-e maschhad ast, ammā feliks hanūz fārsī rā chūb balad nīst.",
+       "de": "Seine Mutter kommt aus Maschhad, aber Felix kann noch nicht gut Persisch."
+      },
+      {
+       "fa": "او می‌خواهد با پدربزرگ و مادربزرگش در ایران راحت‌تر حرف بزند.",
+       "tr": "ū mīchāhad bā pedarbozorg o mādarbozorgasch dar īrān rāhattar harf bezanad.",
+       "de": "Er möchte mit seinen Großeltern in Iran leichter sprechen können."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "نیلوفر اهل اصفهان است.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "نیلوفر پزشکی می‌خواند.",
+       "fest": true,
+       "erkl": "Sie studiert <b>Biologie</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "فلیکس در مشهد بزرگ شده است.",
+       "fest": true,
+       "erkl": "Er ist in <b>Hamburg</b> aufgewachsen."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "فلیکس می‌خواهد با پدربزرگ و مادربزرگش حرف بزند.",
+       "fest": true
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Was möchte Niloufar verbessern?",
+       "optionen": [
+        "ihr Deutsch",
+        "ihr Englisch",
+        "ihr Persisch"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Woher kommt Felix’ Mutter?",
+       "optionen": [
+        "aus Maschhad",
+        "aus Isfahan",
+        "aus Hamburg"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie alt ist Felix?",
+       "optionen": [
+        "22",
+        "26",
+        "24"
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "نیلوفر بیست و شش سال دارد و از اصفهان آمده است.",
+       "tr": "nīlūfar bīst o schesch sāl dārad o az esfahān āmade ast.",
+       "de": "Niloufar ist 26 und kommt aus Isfahan."
+      },
+      {
+       "fa": "او کارشناسی ارشد زیست‌شناسی می‌خواند و عاشق دریاست.",
+       "tr": "ū kārschenāsī-ye arschad-e zīstschenāsī mīchānad o ʿāschegh-e daryāst.",
+       "de": "Sie macht einen Master in Biologie und liebt das Meer."
+      },
+      {
+       "fa": "نیلوفر می‌خواهد آلمانی‌اش را بهتر کند و در عوض فارسی یاد بدهد.",
+       "tr": "nīlūfar mīchāhad ālmānīasch rā behtar konad o dar ʿawaz fārsī yād bedahad.",
+       "de": "Niloufar möchte ihr Deutsch verbessern und dafür Persisch beibringen."
+      },
+      {
+       "fa": "فلیکس بیست و دو ساله است و در هامبورگ بزرگ شده است.",
+       "tr": "feliks bīst o do sāle ast o dar hāmburg bozorg schode ast.",
+       "de": "Felix ist 22 und in Hamburg aufgewachsen."
+      },
+      {
+       "fa": "مادر او اهل مشهد است، اما فلیکس هنوز فارسی را خوب بلد نیست.",
+       "tr": "mādar-e ū ahl-e maschhad ast, ammā feliks hanūz fārsī rā chūb balad nīst.",
+       "de": "Seine Mutter kommt aus Maschhad, aber Felix kann noch nicht gut Persisch."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

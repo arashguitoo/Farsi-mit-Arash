@@ -1,0 +1,309 @@
+{
+ "id": "tx",
+ "art": "texte",
+ "titel": "Texte & Dialoge",
+ "beschreibung": "Ein zweiter Dialog und ein weiterer Lesetext.",
+ "stationen": [
+  {
+   "id": "d2",
+   "titel": "Dialog: An der Hotelrezeption",
+   "vorschau": "An der Hotelrezeption",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Clara und Ben kommen spät abends in einem traditionellen Hotel in Yazd an.</p>"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "پذیرش: شب بخیر، خوش اومدید! رزرو دارید؟",
+       "tr": "schab becheyr, chosch ūmadīd! rezerw dārīd?",
+       "de": "Guten Abend, willkommen! Haben Sie reserviert?"
+      },
+      {
+       "fa": "کلارا: بله، به اسم کلارا مایر، دو شب.",
+       "tr": "bale, be esm-e klārā māyer, do schab.",
+       "de": "Ja, auf den Namen Clara Mayer, zwei Nächte."
+      },
+      {
+       "fa": "پذیرش: بله، یه اتاق دوتخته رو به حیاط. پاسپورتاتون رو لطف می‌کنید؟",
+       "tr": "bale, ye otāgh-e dotachte rū be hayāt. pāsportātūn ro lotf mīkonīd?",
+       "de": "Ja, ein Doppelzimmer zum Innenhof. Dürfte ich Ihre Pässe haben?"
+      },
+      {
+       "fa": "بن: بفرمایید. صبحونه ساعت چنده؟",
+       "tr": "befarmāyīd. sobhūne sāʿat-e tschande?",
+       "de": "Bitte. Wann gibt es Frühstück?"
+      },
+      {
+       "fa": "پذیرش: از هفت تا ده، تو حیاط.",
+       "tr": "az haft tā dah, tū hayāt.",
+       "de": "Von sieben bis zehn, im Innenhof."
+      },
+      {
+       "fa": "کلارا: برای فردا تور کویر هم دارید؟",
+       "tr": "barā-ye fardā tūr-e kawīr ham dārīd?",
+       "de": "Haben Sie für morgen auch eine Wüstentour?"
+      },
+      {
+       "fa": "پذیرش: بله، ساعت چهار بعدازظهر حرکت می‌کنه، برای غروب. شام هم تو کویره.",
+       "tr": "bale, sāʿat-e tschahār-e baʿdazzohr harakat mīkone, barā-ye ghorūb. schām ham tū kawīre.",
+       "de": "Ja, sie startet um vier Uhr nachmittags, zum Sonnenuntergang. Das Abendessen ist auch in der Wüste."
+      },
+      {
+       "fa": "بن: عالیه! برای دو نفر رزرو کنید، لطفا.",
+       "tr": "ʿālīye! barā-ye do nafar rezerw konīd, lotfan.",
+       "de": "Super! Buchen Sie bitte für zwei Personen."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "پذیرش: شب بخیر، خوش اومدید! رزرو دارید؟",
+       "tr": "schab becheyr, chosch ūmadīd! rezerw dārīd?",
+       "de": "Guten Abend, willkommen! Haben Sie reserviert?"
+      },
+      {
+       "fa": "کلارا: بله، به اسم کلارا مایر، دو شب.",
+       "tr": "bale, be esm-e klārā māyer, do schab.",
+       "de": "Ja, auf den Namen Clara Mayer, zwei Nächte."
+      },
+      {
+       "fa": "پذیرش: بله، یه اتاق دوتخته رو به حیاط. پاسپورتاتون رو لطف می‌کنید؟",
+       "tr": "bale, ye otāgh-e dotachte rū be hayāt. pāsportātūn ro lotf mīkonīd?",
+       "de": "Ja, ein Doppelzimmer zum Innenhof. Dürfte ich Ihre Pässe haben?"
+      },
+      {
+       "fa": "بن: بفرمایید. صبحونه ساعت چنده؟",
+       "tr": "befarmāyīd. sobhūne sāʿat-e tschande?",
+       "de": "Bitte. Wann gibt es Frühstück?"
+      },
+      {
+       "fa": "پذیرش: از هفت تا ده، تو حیاط.",
+       "tr": "az haft tā dah, tū hayāt.",
+       "de": "Von sieben bis zehn, im Innenhof."
+      },
+      {
+       "fa": "کلارا: برای فردا تور کویر هم دارید؟",
+       "tr": "barā-ye fardā tūr-e kawīr ham dārīd?",
+       "de": "Haben Sie für morgen auch eine Wüstentour?"
+      },
+      {
+       "fa": "پذیرش: بله، ساعت چهار بعدازظهر حرکت می‌کنه، برای غروب. شام هم تو کویره.",
+       "tr": "bale, sāʿat-e tschahār-e baʿdazzohr harakat mīkone, barā-ye ghorūb. schām ham tū kawīre.",
+       "de": "Ja, sie startet um vier Uhr nachmittags, zum Sonnenuntergang. Das Abendessen ist auch in der Wüste."
+      },
+      {
+       "fa": "بن: عالیه! برای دو نفر رزرو کنید، لطفا.",
+       "tr": "ʿālīye! barā-ye do nafar rezerw konīd, lotfan.",
+       "de": "Super! Buchen Sie bitte für zwei Personen."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Wie lange bleiben Clara und Ben?",
+       "optionen": [
+        "zwei Nächte",
+        "eine Woche",
+        "eine Nacht"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wo gibt es Frühstück?",
+       "optionen": [
+        "im Innenhof",
+        "auf dem Dach",
+        "im Zimmer"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wann startet die Wüstentour?",
+       "optionen": [
+        "um 16 Uhr",
+        "um 7 Uhr",
+        "um 22 Uhr"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t2",
+   "titel": "Text: Rucksackreisen in Iran",
+   "vorschau": "Rucksackreisen in Iran",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Text: Rucksackreisen in Iran",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "ایران برای کوله‌پشتی‌گردها کشور جذابی است.",
+       "tr": "īrān barā-ye kūleposchtīgardhā keschwar-e dschazzābī ast.",
+       "de": "Iran ist ein attraktives Land für Rucksackreisende."
+      },
+      {
+       "fa": "سفر با اتوبوس بین شهرها ارزان و راحت است.",
+       "tr": "safar bā otobūs beyn-e schahrhā arzān o rāhat ast.",
+       "de": "Reisen mit dem Bus zwischen den Städten ist günstig und bequem."
+      },
+      {
+       "fa": "بسیاری از گردشگرها در بوم‌گردی‌ها یا خانه‌ی مردم محلی می‌مانند.",
+       "tr": "besyārī az gardeschgarhā dar būmgardīhā yā chāne-ye mardom-e mahallī mīmānand.",
+       "de": "Viele Touristen übernachten in Gästehäusern oder bei Einheimischen."
+      },
+      {
+       "fa": "مهمان‌نوازی ایرانی‌ها معروف است؛ ممکن است کسی شما را به چای یا شام دعوت کند.",
+       "tr": "mehmānnawāzī-ye īrānīhā maʿrūf ast; momken ast kasī schomā rā be tschāy yā schām daʿwat konad.",
+       "de": "Die iranische Gastfreundschaft ist berühmt; es kann sein, dass Sie jemand zum Tee oder Abendessen einlädt."
+      },
+      {
+       "fa": "برای سفر بهتر است کمی پول نقد همراه داشته باشید.",
+       "tr": "barā-ye safar behtar ast kamī pūl-e naghd hamrāh dāschte bāschīd.",
+       "de": "Für die Reise sollten Sie etwas Bargeld dabeihaben."
+      },
+      {
+       "fa": "یک سیم‌کارت ایرانی هم کار را خیلی آسان‌تر می‌کند.",
+       "tr": "yek sīmkārt-e īrānī ham kār rā cheylī āsāntar mīkonad.",
+       "de": "Eine iranische SIM-Karte macht vieles auch viel einfacher."
+      },
+      {
+       "fa": "مهم‌ترین توصیه: کمی فارسی یاد بگیرید – درها به رویتان باز می‌شود!",
+       "tr": "mohemtarīn tousiye: kamī fārsī yād begīrīd – darhā be rūyetān bāz mīschawad!",
+       "de": "Wichtigster Tipp: Lernen Sie etwas Persisch – dann öffnen sich Ihnen alle Türen!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "سفر با اتوبوس در ایران گران است.",
+       "fest": true,
+       "erkl": "Es ist <b>günstig</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "ممکن است مردم شما را به چای دعوت کنند.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "پول نقد اصلا لازم نیست.",
+       "fest": true,
+       "erkl": "Man sollte <b>etwas Bargeld</b> dabeihaben."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "سیم‌کارت ایرانی کار را آسان‌تر می‌کند.",
+       "fest": true
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Wo übernachten viele Touristen?",
+       "optionen": [
+        "in Gästehäusern oder bei Einheimischen",
+        "nur in Luxushotels",
+        "im Auto"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wofür sind Iraner bekannt?",
+       "optionen": [
+        "für ihre Gastfreundschaft",
+        "für Pünktlichkeit",
+        "für Ruhe"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was ist der wichtigste Tipp?",
+       "optionen": [
+        "etwas Persisch lernen",
+        "viel Gepäck mitnehmen",
+        "immer fliegen"
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "سفر با اتوبوس بین شهرها ارزان و راحت است.",
+       "tr": "safar bā otobūs beyn-e schahrhā arzān o rāhat ast.",
+       "de": "Reisen mit dem Bus zwischen den Städten ist günstig und bequem."
+      },
+      {
+       "fa": "بسیاری از گردشگرها در بوم‌گردی‌ها یا خانه‌ی مردم محلی می‌مانند.",
+       "tr": "besyārī az gardeschgarhā dar būmgardīhā yā chāne-ye mardom-e mahallī mīmānand.",
+       "de": "Viele Touristen übernachten in Gästehäusern oder bei Einheimischen."
+      },
+      {
+       "fa": "مهمان‌نوازی ایرانی‌ها معروف است؛ ممکن است کسی شما را به چای یا شام دعوت کند.",
+       "tr": "mehmānnawāzī-ye īrānīhā maʿrūf ast; momken ast kasī schomā rā be tschāy yā schām daʿwat konad.",
+       "de": "Die iranische Gastfreundschaft ist berühmt; es kann sein, dass Sie jemand zum Tee oder Abendessen einlädt."
+      },
+      {
+       "fa": "برای سفر بهتر است کمی پول نقد همراه داشته باشید.",
+       "tr": "barā-ye safar behtar ast kamī pūl-e naghd hamrāh dāschte bāschīd.",
+       "de": "Für die Reise sollten Sie etwas Bargeld dabeihaben."
+      },
+      {
+       "fa": "یک سیم‌کارت ایرانی هم کار را خیلی آسان‌تر می‌کند.",
+       "tr": "yek sīmkārt-e īrānī ham kār rā cheylī āsāntar mīkonad.",
+       "de": "Eine iranische SIM-Karte macht vieles auch viel einfacher."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,309 @@
+{
+ "id": "tx",
+ "art": "texte",
+ "titel": "Texte & Dialoge",
+ "beschreibung": "Ein zweiter Dialog und ein weiterer Lesetext.",
+ "stationen": [
+  {
+   "id": "d2",
+   "titel": "Dialog: Ein Anruf beim Vermieter",
+   "vorschau": "Ein Anruf beim Vermieter",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>In Pouyas Wohnung in Teheran ist die Heizung kaputt. Er ruft den Vermieter, Herrn Karimi, an.</p>"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "پویا: سلام آقای کریمی، پویا هستم از طبقه‌ی سوم.",
+       "tr": "salām āghā-ye karīmī, pūyā hastam az tabaghe-ye sewwom.",
+       "de": "Hallo Herr Karimi, hier ist Pouya aus dem dritten Stock."
+      },
+      {
+       "fa": "آقای کریمی: سلام، بفرمایید. مشکلی پیش اومده؟",
+       "tr": "salām, befarmāyīd. moschkelī pīsch ūmade?",
+       "de": "Hallo, bitte. Gibt es ein Problem?"
+      },
+      {
+       "fa": "پویا: بله، از دیروز شوفاژ کار نمی‌کنه و خونه خیلی سرده.",
+       "tr": "bale, az dīrūz schūfāzh kār nemīkone o chūne cheylī sarde.",
+       "de": "Ja, seit gestern funktioniert die Heizung nicht, und es ist sehr kalt."
+      },
+      {
+       "fa": "آقای کریمی: ای بابا! حتما پکیج خراب شده. فردا صبح تعمیرکار رو می‌فرستم.",
+       "tr": "ey bābā! hatman pakīdsch charāb schode. fardā sobh taʿmīrkār ro mīferestam.",
+       "de": "Ach je! Bestimmt ist der Boiler kaputt. Morgen früh schicke ich einen Handwerker."
+      },
+      {
+       "fa": "پویا: ممنون. ساعت چند میاد؟",
+       "tr": "mamnūn. sāʿat-e tschand miyād?",
+       "de": "Danke. Um wie viel Uhr kommt er?"
+      },
+      {
+       "fa": "آقای کریمی: حدود ساعت نه. خونه هستید؟",
+       "tr": "hodūd-e sāʿat-e noh. chūne hastīd?",
+       "de": "Gegen neun. Sind Sie zu Hause?"
+      },
+      {
+       "fa": "پویا: نه، کلاس دارم، ولی کلید رو به همسایه می‌دم.",
+       "tr": "na, kelās dāram, walī kelīd ro be hamsāye mīdam.",
+       "de": "Nein, ich habe Kurs, aber ich gebe den Schlüssel der Nachbarin."
+      },
+      {
+       "fa": "آقای کریمی: خیلی خب. ببخشید بابت این زحمت.",
+       "tr": "cheylī chob. bebachschīd bābat-e īn zahmat.",
+       "de": "In Ordnung. Entschuldigen Sie die Umstände."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "پویا: سلام آقای کریمی، پویا هستم از طبقه‌ی سوم.",
+       "tr": "salām āghā-ye karīmī, pūyā hastam az tabaghe-ye sewwom.",
+       "de": "Hallo Herr Karimi, hier ist Pouya aus dem dritten Stock."
+      },
+      {
+       "fa": "آقای کریمی: سلام، بفرمایید. مشکلی پیش اومده؟",
+       "tr": "salām, befarmāyīd. moschkelī pīsch ūmade?",
+       "de": "Hallo, bitte. Gibt es ein Problem?"
+      },
+      {
+       "fa": "پویا: بله، از دیروز شوفاژ کار نمی‌کنه و خونه خیلی سرده.",
+       "tr": "bale, az dīrūz schūfāzh kār nemīkone o chūne cheylī sarde.",
+       "de": "Ja, seit gestern funktioniert die Heizung nicht, und es ist sehr kalt."
+      },
+      {
+       "fa": "آقای کریمی: ای بابا! حتما پکیج خراب شده. فردا صبح تعمیرکار رو می‌فرستم.",
+       "tr": "ey bābā! hatman pakīdsch charāb schode. fardā sobh taʿmīrkār ro mīferestam.",
+       "de": "Ach je! Bestimmt ist der Boiler kaputt. Morgen früh schicke ich einen Handwerker."
+      },
+      {
+       "fa": "پویا: ممنون. ساعت چند میاد؟",
+       "tr": "mamnūn. sāʿat-e tschand miyād?",
+       "de": "Danke. Um wie viel Uhr kommt er?"
+      },
+      {
+       "fa": "آقای کریمی: حدود ساعت نه. خونه هستید؟",
+       "tr": "hodūd-e sāʿat-e noh. chūne hastīd?",
+       "de": "Gegen neun. Sind Sie zu Hause?"
+      },
+      {
+       "fa": "پویا: نه، کلاس دارم، ولی کلید رو به همسایه می‌دم.",
+       "tr": "na, kelās dāram, walī kelīd ro be hamsāye mīdam.",
+       "de": "Nein, ich habe Kurs, aber ich gebe den Schlüssel der Nachbarin."
+      },
+      {
+       "fa": "آقای کریمی: خیلی خب. ببخشید بابت این زحمت.",
+       "tr": "cheylī chob. bebachschīd bābat-e īn zahmat.",
+       "de": "In Ordnung. Entschuldigen Sie die Umstände."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Was ist kaputt?",
+       "optionen": [
+        "die Heizung",
+        "der Wasserhahn",
+        "die Klingel"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wann kommt der Handwerker?",
+       "optionen": [
+        "morgen gegen neun",
+        "heute Abend",
+        "nächste Woche"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wem gibt Pouya den Schlüssel?",
+       "optionen": [
+        "der Nachbarin",
+        "dem Vermieter",
+        "seinem Mitbewohner"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t2",
+   "titel": "Text: WG-Regeln an der Kühlschranktür",
+   "vorschau": "WG-Regeln an der Kühlschranktür",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Text: WG-Regeln an der Kühlschranktür",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "قانون‌های خانه‌ی ما",
+       "tr": "ghānūnhā-ye chāne-ye mā",
+       "de": "Die Regeln unserer WG"
+      },
+      {
+       "fa": "۱. هر کس ظرف‌هایش را همان روز می‌شوید.",
+       "tr": "yek. har kas zarfhāyasch rā hamān rūz mīschūyad.",
+       "de": "1. Jede/r spült das eigene Geschirr am selben Tag."
+      },
+      {
+       "fa": "۲. نوبت آشغال‌ها: هر هفته یک نفر؛ برنامه روی یخچال است.",
+       "tr": "do. nobat-e āschghālhā: har hafte yek nafar; barnāme rū-ye yachtschāl ast.",
+       "de": "2. Müll: jede Woche eine Person; der Plan hängt am Kühlschrank."
+      },
+      {
+       "fa": "۳. بعد از ساعت ده شب، موسیقی فقط با هدفون!",
+       "tr": "se. baʿd az sāʿat-e dah-e schab, mūsīghī faghat bā hedfon!",
+       "de": "3. Nach 22 Uhr Musik nur mit Kopfhörern!"
+      },
+      {
+       "fa": "۴. خرید مشترک (نان، شیر، روغن، صابون) را با هم تقسیم می‌کنیم.",
+       "tr": "tschahār. charīd-e moschtarak (nān, schīr, roughan, sābūn) rā bā ham taghsīm mīkonīm.",
+       "de": "4. Gemeinsame Einkäufe (Brot, Milch, Öl, Seife) teilen wir."
+      },
+      {
+       "fa": "۵. اگر مهمان شب می‌ماند، قبلا به بقیه خبر بدهید.",
+       "tr": "pandsch. agar mehmān schab mīmānad, ghablan be baghiye chabar bedahīd.",
+       "de": "5. Wenn ein Gast übernachtet, sagt den anderen vorher Bescheid."
+      },
+      {
+       "fa": "۶. و مهم‌ترین قانون: یکشنبه‌ها با هم صبحانه می‌خوریم!",
+       "tr": "schesch. wa mohemtarīn ghānūn: yekschanbehā bā ham sobhāne mīchorīm!",
+       "de": "6. Und die wichtigste Regel: Sonntags frühstücken wir zusammen!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "هر کس ظرف‌هایش را همان روز می‌شوید.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "بعد از ساعت ده موسیقی بلند مجاز است.",
+       "fest": true,
+       "erkl": "Nur mit <b>Kopfhörern</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "هر کس خرید خودش را می‌کند.",
+       "fest": true,
+       "erkl": "Gemeinsame Einkäufe werden <b>geteilt</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "یکشنبه‌ها با هم صبحانه می‌خورند.",
+       "fest": true
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Wo hängt der Müllplan?",
+       "optionen": [
+        "am Kühlschrank",
+        "an der Tür",
+        "im Bad"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was muss man tun, wenn ein Gast übernachtet?",
+       "optionen": [
+        "vorher Bescheid sagen",
+        "Miete zahlen",
+        "nichts"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was ist die wichtigste Regel?",
+       "optionen": [
+        "sonntags gemeinsam frühstücken",
+        "keine Gäste",
+        "kein Lärm"
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "۱. هر کس ظرف‌هایش را همان روز می‌شوید.",
+       "tr": "yek. har kas zarfhāyasch rā hamān rūz mīschūyad.",
+       "de": "1. Jede/r spült das eigene Geschirr am selben Tag."
+      },
+      {
+       "fa": "۲. نوبت آشغال‌ها: هر هفته یک نفر؛ برنامه روی یخچال است.",
+       "tr": "do. nobat-e āschghālhā: har hafte yek nafar; barnāme rū-ye yachtschāl ast.",
+       "de": "2. Müll: jede Woche eine Person; der Plan hängt am Kühlschrank."
+      },
+      {
+       "fa": "۳. بعد از ساعت ده شب، موسیقی فقط با هدفون!",
+       "tr": "se. baʿd az sāʿat-e dah-e schab, mūsīghī faghat bā hedfon!",
+       "de": "3. Nach 22 Uhr Musik nur mit Kopfhörern!"
+      },
+      {
+       "fa": "۴. خرید مشترک (نان، شیر، روغن، صابون) را با هم تقسیم می‌کنیم.",
+       "tr": "tschahār. charīd-e moschtarak (nān, schīr, roughan, sābūn) rā bā ham taghsīm mīkonīm.",
+       "de": "4. Gemeinsame Einkäufe (Brot, Milch, Öl, Seife) teilen wir."
+      },
+      {
+       "fa": "۵. اگر مهمان شب می‌ماند، قبلا به بقیه خبر بدهید.",
+       "tr": "pandsch. agar mehmān schab mīmānad, ghablan be baghiye chabar bedahīd.",
+       "de": "5. Wenn ein Gast übernachtet, sagt den anderen vorher Bescheid."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

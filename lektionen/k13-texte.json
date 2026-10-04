@@ -1,0 +1,309 @@
+{
+ "id": "tx",
+ "art": "texte",
+ "titel": "Texte & Dialoge",
+ "beschreibung": "Ein zweiter Dialog und ein weiterer Lesetext.",
+ "stationen": [
+  {
+   "id": "d2",
+   "titel": "Dialog: Die Uni-Debatte",
+   "vorschau": "Die Uni-Debatte",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Im Iranistik-Seminar diskutieren Studierende: Sollen Hausaufgaben abgeschafft werden?</p>"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "مجری: موضوع امروز: تکلیف شب باید حذف شود؟ سارا، نظر تو چیه؟",
+       "tr": "mozūʿ-e emrūz: taklīf-e schab bāyad hazf schawad? sārā, nazar-e to tschīye?",
+       "de": "Das heutige Thema: Sollen Hausaufgaben abgeschafft werden? Sara, was meinst du?"
+      },
+      {
+       "fa": "سارا: به نظر من بله. اول اینکه دانشجوها وقت کافی ندارن.",
+       "tr": "be nazar-e man bale. awwal īnke dāneschdschūhā waght-e kāfī nadāran.",
+       "de": "Ich finde ja. Erstens haben Studierende nicht genug Zeit."
+      },
+      {
+       "fa": "سارا: دوم اینکه خیلی‌ها کار پاره‌وقت هم دارن.",
+       "tr": "dowwom īnke cheylīhā kār-e pārewaght ham dāran.",
+       "de": "Zweitens haben viele auch einen Teilzeitjob."
+      },
+      {
+       "fa": "نیما: حرفتو قطع نمی‌کنم، ولی بدون تمرین زبان یاد نمی‌گیریم!",
+       "tr": "harfeto ghatʿ nemīkonam, walī bedūn-e tamrīn zabān yād nemīgīrīm!",
+       "de": "Ich will dich nicht unterbrechen, aber ohne Übung lernen wir keine Sprache!"
+      },
+      {
+       "fa": "سارا: تا حدی موافقم. ولی تمرین می‌تونه سر کلاس باشه.",
+       "tr": "tā haddī mowāfegham. walī tamrīn mītūne sar-e kelās bāsche.",
+       "de": "Teilweise einverstanden. Aber Übung kann im Unterricht stattfinden."
+      },
+      {
+       "fa": "نیما: سر کلاس وقت کمه. علاوه بر این، تکلیف یعنی مسئولیت.",
+       "tr": "sar-e kelās waght kame. ʿalāwe bar īn, taklīf yaʿnī masʾūliyat.",
+       "de": "Im Unterricht ist wenig Zeit. Außerdem bedeutet Hausaufgabe Verantwortung."
+      },
+      {
+       "fa": "مجری: پس شاید راه وسط: تکلیف کمتر، ولی مفیدتر؟",
+       "tr": "pas schāyad rāh-e wasat: taklīf-e kamtar, walī mofīdtar?",
+       "de": "Also vielleicht ein Mittelweg: weniger, aber sinnvollere Hausaufgaben?"
+      },
+      {
+       "fa": "سارا و نیما: قبول!",
+       "tr": "ghabūl!",
+       "de": "Einverstanden!"
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "مجری: موضوع امروز: تکلیف شب باید حذف شود؟ سارا، نظر تو چیه؟",
+       "tr": "mozūʿ-e emrūz: taklīf-e schab bāyad hazf schawad? sārā, nazar-e to tschīye?",
+       "de": "Das heutige Thema: Sollen Hausaufgaben abgeschafft werden? Sara, was meinst du?"
+      },
+      {
+       "fa": "سارا: به نظر من بله. اول اینکه دانشجوها وقت کافی ندارن.",
+       "tr": "be nazar-e man bale. awwal īnke dāneschdschūhā waght-e kāfī nadāran.",
+       "de": "Ich finde ja. Erstens haben Studierende nicht genug Zeit."
+      },
+      {
+       "fa": "سارا: دوم اینکه خیلی‌ها کار پاره‌وقت هم دارن.",
+       "tr": "dowwom īnke cheylīhā kār-e pārewaght ham dāran.",
+       "de": "Zweitens haben viele auch einen Teilzeitjob."
+      },
+      {
+       "fa": "نیما: حرفتو قطع نمی‌کنم، ولی بدون تمرین زبان یاد نمی‌گیریم!",
+       "tr": "harfeto ghatʿ nemīkonam, walī bedūn-e tamrīn zabān yād nemīgīrīm!",
+       "de": "Ich will dich nicht unterbrechen, aber ohne Übung lernen wir keine Sprache!"
+      },
+      {
+       "fa": "سارا: تا حدی موافقم. ولی تمرین می‌تونه سر کلاس باشه.",
+       "tr": "tā haddī mowāfegham. walī tamrīn mītūne sar-e kelās bāsche.",
+       "de": "Teilweise einverstanden. Aber Übung kann im Unterricht stattfinden."
+      },
+      {
+       "fa": "نیما: سر کلاس وقت کمه. علاوه بر این، تکلیف یعنی مسئولیت.",
+       "tr": "sar-e kelās waght kame. ʿalāwe bar īn, taklīf yaʿnī masʾūliyat.",
+       "de": "Im Unterricht ist wenig Zeit. Außerdem bedeutet Hausaufgabe Verantwortung."
+      },
+      {
+       "fa": "مجری: پس شاید راه وسط: تکلیف کمتر، ولی مفیدتر؟",
+       "tr": "pas schāyad rāh-e wasat: taklīf-e kamtar, walī mofīdtar?",
+       "de": "Also vielleicht ein Mittelweg: weniger, aber sinnvollere Hausaufgaben?"
+      },
+      {
+       "fa": "سارا و نیما: قبول!",
+       "tr": "ghabūl!",
+       "de": "Einverstanden!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Was ist Saras erstes Argument?",
+       "optionen": [
+        "Studierende haben nicht genug Zeit.",
+        "Hausaufgaben sind zu leicht.",
+        "Lehrer korrigieren nicht."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was meint Nima?",
+       "optionen": [
+        "Ohne Übung lernt man keine Sprache.",
+        "Hausaufgaben sind unnötig.",
+        "Der Unterricht ist zu lang."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Worauf einigen sie sich?",
+       "optionen": [
+        "weniger, aber sinnvollere Hausaufgaben",
+        "keine Hausaufgaben",
+        "mehr Hausaufgaben"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t2",
+   "titel": "Text: Warum wir streiten – und wie wir uns versöhnen",
+   "vorschau": "Warum wir streiten – und wie wir uns versöhnen",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Text: Warum wir streiten – und wie wir uns versöhnen",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "روان‌شناس‌ها می‌گویند دعوا در هر رابطه‌ای طبیعی است.",
+       "tr": "rawānschenāshā mīgūyand daʿwā dar har rābeteī tabīʿī ast.",
+       "de": "Psychologen sagen, dass Streit in jeder Beziehung normal ist."
+      },
+      {
+       "fa": "مهم این است که چطور دعوا کنیم.",
+       "tr": "mohem īn ast ke tschetour daʿwā konīm.",
+       "de": "Wichtig ist, wie wir streiten."
+      },
+      {
+       "fa": "وقتی عصبانی هستیم، بهتر است کمی صبر کنیم و بعد صحبت کنیم.",
+       "tr": "waghtī ʿasabānī hastīm, behtar ast kamī sabr konīm o baʿd sohbat konīm.",
+       "de": "Wenn wir wütend sind, sollten wir kurz warten und dann reden."
+      },
+      {
+       "fa": "به جای سرزنش، احساس خودمان را بگوییم.",
+       "tr": "be dschā-ye sarzanesch, ehsās-e chodemān rā begūyīm.",
+       "de": "Statt Vorwürfen sollten wir unser Gefühl ausdrücken."
+      },
+      {
+       "fa": "عذرخواهی کردن نشانه‌ی ضعف نیست، بلکه نشانه‌ی بلوغ است.",
+       "tr": "ʿozrchāhī kardan neschāne-ye zaʿf nīst, balke neschāne-ye bolūgh ast.",
+       "de": "Sich zu entschuldigen ist kein Zeichen von Schwäche, sondern von Reife."
+      },
+      {
+       "fa": "در فرهنگ ایرانی، گاهی آشتی با یک هدیه‌ی کوچک یا دعوت به چای انجام می‌شود.",
+       "tr": "dar farhang-e īrānī, gāhī āschtī bā yek hedye-ye kūtschak yā daʿwat be tschāy andschām mīschawad.",
+       "de": "In der iranischen Kultur geschieht Versöhnung manchmal mit einem kleinen Geschenk oder einer Einladung zum Tee."
+      },
+      {
+       "fa": "و یادتان باشد: هیچ دعوایی ارزش از دست دادن یک دوست خوب را ندارد.",
+       "tr": "wa yādetān bāschad: hītsch daʿwāyī arzesch-e az dast dādan-e yek dūst-e chūb rā nadārad.",
+       "de": "Und denken Sie daran: Kein Streit ist es wert, einen guten Freund zu verlieren."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "روان‌شناس‌ها می‌گویند دعوا غیرطبیعی است.",
+       "fest": true,
+       "erkl": "Streit ist <b>normal</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "وقتی عصبانی هستیم، بهتر است کمی صبر کنیم.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "عذرخواهی نشانه‌ی ضعف است.",
+       "fest": true,
+       "erkl": "Es ist ein Zeichen von <b>Reife</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "در ایران گاهی با دعوت به چای آشتی می‌کنند.",
+       "fest": true
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Was soll man statt Vorwürfen tun?",
+       "optionen": [
+        "das eigene Gefühl ausdrücken",
+        "schweigen",
+        "lauter sprechen"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was ist wichtig?",
+       "optionen": [
+        "wie wir streiten",
+        "wer gewinnt",
+        "wie lange wir streiten"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie versöhnt man sich in Iran manchmal?",
+       "optionen": [
+        "mit einem kleinen Geschenk oder Tee",
+        "mit einem Brief",
+        "gar nicht"
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "مهم این است که چطور دعوا کنیم.",
+       "tr": "mohem īn ast ke tschetour daʿwā konīm.",
+       "de": "Wichtig ist, wie wir streiten."
+      },
+      {
+       "fa": "وقتی عصبانی هستیم، بهتر است کمی صبر کنیم و بعد صحبت کنیم.",
+       "tr": "waghtī ʿasabānī hastīm, behtar ast kamī sabr konīm o baʿd sohbat konīm.",
+       "de": "Wenn wir wütend sind, sollten wir kurz warten und dann reden."
+      },
+      {
+       "fa": "به جای سرزنش، احساس خودمان را بگوییم.",
+       "tr": "be dschā-ye sarzanesch, ehsās-e chodemān rā begūyīm.",
+       "de": "Statt Vorwürfen sollten wir unser Gefühl ausdrücken."
+      },
+      {
+       "fa": "عذرخواهی کردن نشانه‌ی ضعف نیست، بلکه نشانه‌ی بلوغ است.",
+       "tr": "ʿozrchāhī kardan neschāne-ye zaʿf nīst, balke neschāne-ye bolūgh ast.",
+       "de": "Sich zu entschuldigen ist kein Zeichen von Schwäche, sondern von Reife."
+      },
+      {
+       "fa": "در فرهنگ ایرانی، گاهی آشتی با یک هدیه‌ی کوچک یا دعوت به چای انجام می‌شود.",
+       "tr": "dar farhang-e īrānī, gāhī āschtī bā yek hedye-ye kūtschak yā daʿwat be tschāy andschām mīschawad.",
+       "de": "In der iranischen Kultur geschieht Versöhnung manchmal mit einem kleinen Geschenk oder einer Einladung zum Tee."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

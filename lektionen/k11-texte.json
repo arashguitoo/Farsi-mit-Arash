@@ -1,0 +1,309 @@
+{
+ "id": "tx",
+ "art": "texte",
+ "titel": "Texte & Dialoge",
+ "beschreibung": "Ein zweiter Dialog und ein weiterer Lesetext.",
+ "stationen": [
+  {
+   "id": "d2",
+   "titel": "Dialog: Neu im Fitnessstudio",
+   "vorschau": "Neu im Fitnessstudio",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Jonas meldet sich in einem Fitnessstudio in Teheran an. Der Trainer Saeed berät ihn.</p>"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "سعید: سلام، خوش اومدی. اولین باره میای باشگاه؟",
+       "tr": "salām, chosch ūmadī. awwalīn bāre miyāy bāschgāh?",
+       "de": "Hallo, willkommen. Ist es dein erstes Mal im Fitnessstudio?"
+      },
+      {
+       "fa": "یوناس: تو ایران آره. تو آلمان یه کم بدنسازی می‌کردم.",
+       "tr": "tū īrān āre. tū ālmān ye kam badansāzī mīkardam.",
+       "de": "In Iran ja. In Deutschland habe ich ein bisschen Krafttraining gemacht."
+      },
+      {
+       "fa": "سعید: هدفت چیه؟ عضله یا تناسب اندام؟",
+       "tr": "hadafet tschīye? ʿazole yā tanāsob-e andām?",
+       "de": "Was ist dein Ziel? Muskeln oder Fitness?"
+      },
+      {
+       "fa": "یوناس: بیشتر تناسب اندام. و می‌خوام کمرم دیگه درد نکنه.",
+       "tr": "bīschtar tanāsob-e andām. o mīchām kamaram dīge dard nakone.",
+       "de": "Eher Fitness. Und ich möchte, dass mein Rücken nicht mehr wehtut."
+      },
+      {
+       "fa": "سعید: پس اول با یوگا و شنا شروع کن. هفته‌ای سه بار.",
+       "tr": "pas awwal bā yogā o schenā schorūʿ kon. haftei se bār.",
+       "de": "Dann fang zuerst mit Yoga und Schwimmen an. Dreimal pro Woche."
+      },
+      {
+       "fa": "یوناس: شهریه‌ی ماهانه چقدره؟",
+       "tr": "schahriye-ye māhāne tscheghadre?",
+       "de": "Wie hoch ist der Monatsbeitrag?"
+      },
+      {
+       "fa": "سعید: یک میلیون و پونصد. برای دانشجوها تخفیف داریم.",
+       "tr": "yek mīliyūn o pūnsad. barā-ye dāneschdschūhā tachfīf dārīm.",
+       "de": "1,5 Millionen. Für Studierende gibt es Rabatt."
+      },
+      {
+       "fa": "یوناس: عالیه، من دانشجوام! ثبت‌نام می‌کنم.",
+       "tr": "ʿālīye, man dāneschdschūam! sabtenām mīkonam.",
+       "de": "Super, ich bin Student! Ich melde mich an."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "سعید: سلام، خوش اومدی. اولین باره میای باشگاه؟",
+       "tr": "salām, chosch ūmadī. awwalīn bāre miyāy bāschgāh?",
+       "de": "Hallo, willkommen. Ist es dein erstes Mal im Fitnessstudio?"
+      },
+      {
+       "fa": "یوناس: تو ایران آره. تو آلمان یه کم بدنسازی می‌کردم.",
+       "tr": "tū īrān āre. tū ālmān ye kam badansāzī mīkardam.",
+       "de": "In Iran ja. In Deutschland habe ich ein bisschen Krafttraining gemacht."
+      },
+      {
+       "fa": "سعید: هدفت چیه؟ عضله یا تناسب اندام؟",
+       "tr": "hadafet tschīye? ʿazole yā tanāsob-e andām?",
+       "de": "Was ist dein Ziel? Muskeln oder Fitness?"
+      },
+      {
+       "fa": "یوناس: بیشتر تناسب اندام. و می‌خوام کمرم دیگه درد نکنه.",
+       "tr": "bīschtar tanāsob-e andām. o mīchām kamaram dīge dard nakone.",
+       "de": "Eher Fitness. Und ich möchte, dass mein Rücken nicht mehr wehtut."
+      },
+      {
+       "fa": "سعید: پس اول با یوگا و شنا شروع کن. هفته‌ای سه بار.",
+       "tr": "pas awwal bā yogā o schenā schorūʿ kon. haftei se bār.",
+       "de": "Dann fang zuerst mit Yoga und Schwimmen an. Dreimal pro Woche."
+      },
+      {
+       "fa": "یوناس: شهریه‌ی ماهانه چقدره؟",
+       "tr": "schahriye-ye māhāne tscheghadre?",
+       "de": "Wie hoch ist der Monatsbeitrag?"
+      },
+      {
+       "fa": "سعید: یک میلیون و پونصد. برای دانشجوها تخفیف داریم.",
+       "tr": "yek mīliyūn o pūnsad. barā-ye dāneschdschūhā tachfīf dārīm.",
+       "de": "1,5 Millionen. Für Studierende gibt es Rabatt."
+      },
+      {
+       "fa": "یوناس: عالیه، من دانشجوام! ثبت‌نام می‌کنم.",
+       "tr": "ʿālīye, man dāneschdschūam! sabtenām mīkonam.",
+       "de": "Super, ich bin Student! Ich melde mich an."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Was ist Jonas’ Ziel?",
+       "optionen": [
+        "Fitness und kein Rückenschmerz mehr",
+        "große Muskeln",
+        "einen Marathon"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Womit soll er anfangen?",
+       "optionen": [
+        "Yoga und Schwimmen",
+        "Gewichtheben",
+        "Boxen"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Warum bekommt Jonas Rabatt?",
+       "optionen": [
+        "Er ist Student.",
+        "Er ist Ausländer.",
+        "Er kommt mit Freunden."
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t2",
+   "titel": "Text: Volleyball – Irans zweite Liebe",
+   "vorschau": "Volleyball – Irans zweite Liebe",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Text: Volleyball – Irans zweite Liebe",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "بعد از فوتبال، والیبال محبوب‌ترین ورزش تیمی در ایران است.",
+       "tr": "baʿd az fūtbāl, wālībāl mahbūbtarīn warzesch-e tīmī dar īrān ast.",
+       "de": "Nach Fußball ist Volleyball die beliebteste Mannschaftssportart in Iran."
+      },
+      {
+       "fa": "تیم ملی والیبال ایران در آسیا یکی از قوی‌ترین تیم‌هاست.",
+       "tr": "tīm-e mellī-ye wālībāl-e īrān dar āsiyā yekī az ghawītarīn tīmhāst.",
+       "de": "Die iranische Volleyball-Nationalmannschaft ist eine der stärksten Asiens."
+      },
+      {
+       "fa": "وقتی تیم ملی بازی دارد، میلیون‌ها نفر بازی را از تلویزیون تماشا می‌کنند.",
+       "tr": "waghtī tīm-e mellī bāzī dārad, mīliyūnhā nafar bāzī rā az televiziyon tamāschā mīkonand.",
+       "de": "Wenn die Nationalmannschaft spielt, schauen Millionen Menschen im Fernsehen zu."
+      },
+      {
+       "fa": "بچه‌ها در مدرسه و پارک‌ها والیبال بازی می‌کنند.",
+       "tr": "batschtschehā dar madrese o pārkhā wālībāl bāzī mīkonand.",
+       "de": "Kinder spielen in der Schule und in Parks Volleyball."
+      },
+      {
+       "fa": "والیبال ساحلی هم در کیش و سواحل شمال طرفداران زیادی دارد.",
+       "tr": "wālībāl-e sāhelī ham dar kīsch o sawāhel-e schomāl tarafdārān-e ziyādī dārad.",
+       "de": "Auch Beachvolleyball hat auf Kisch und an den Nordküsten viele Fans."
+      },
+      {
+       "fa": "بازیکنان معروف والیبال در ایران مثل ستاره‌ی سینما هستند.",
+       "tr": "bāzīkonān-e maʿrūf-e wālībāl dar īrān mesl-e setāre-ye sīnemā hastand.",
+       "de": "Bekannte Volleyballspieler sind in Iran wie Filmstars."
+      },
+      {
+       "fa": "شما هم والیبال بازی می‌کنید؟",
+       "tr": "schomā ham wālībāl bāzī mīkonīd?",
+       "de": "Spielen Sie auch Volleyball?"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "والیبال محبوب‌ترین ورزش ایران است.",
+       "fest": true,
+       "erkl": "Es ist die <b>zweitbeliebteste</b> nach Fußball."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "تیم ملی والیبال ایران در آسیا قوی است.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "والیبال ساحلی در ایران طرفدار ندارد.",
+       "fest": true,
+       "erkl": "Es hat <b>viele</b> Fans."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "بازیکنان معروف مثل ستاره‌ی سینما هستند.",
+       "fest": true
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Wo spielt man Beachvolleyball?",
+       "optionen": [
+        "auf Kisch und an den Nordküsten",
+        "in Teheran",
+        "in Yazd"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie verfolgen viele die Spiele?",
+       "optionen": [
+        "im Fernsehen",
+        "im Radio",
+        "gar nicht"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wo spielen Kinder Volleyball?",
+       "optionen": [
+        "in Schulen und Parks",
+        "nur im Verein",
+        "auf der Straße"
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "تیم ملی والیبال ایران در آسیا یکی از قوی‌ترین تیم‌هاست.",
+       "tr": "tīm-e mellī-ye wālībāl-e īrān dar āsiyā yekī az ghawītarīn tīmhāst.",
+       "de": "Die iranische Volleyball-Nationalmannschaft ist eine der stärksten Asiens."
+      },
+      {
+       "fa": "وقتی تیم ملی بازی دارد، میلیون‌ها نفر بازی را از تلویزیون تماشا می‌کنند.",
+       "tr": "waghtī tīm-e mellī bāzī dārad, mīliyūnhā nafar bāzī rā az televiziyon tamāschā mīkonand.",
+       "de": "Wenn die Nationalmannschaft spielt, schauen Millionen Menschen im Fernsehen zu."
+      },
+      {
+       "fa": "بچه‌ها در مدرسه و پارک‌ها والیبال بازی می‌کنند.",
+       "tr": "batschtschehā dar madrese o pārkhā wālībāl bāzī mīkonand.",
+       "de": "Kinder spielen in der Schule und in Parks Volleyball."
+      },
+      {
+       "fa": "والیبال ساحلی هم در کیش و سواحل شمال طرفداران زیادی دارد.",
+       "tr": "wālībāl-e sāhelī ham dar kīsch o sawāhel-e schomāl tarafdārān-e ziyādī dārad.",
+       "de": "Auch Beachvolleyball hat auf Kisch und an den Nordküsten viele Fans."
+      },
+      {
+       "fa": "بازیکنان معروف والیبال در ایران مثل ستاره‌ی سینما هستند.",
+       "tr": "bāzīkonān-e maʿrūf-e wālībāl dar īrān mesl-e setāre-ye sīnemā hastand.",
+       "de": "Bekannte Volleyballspieler sind in Iran wie Filmstars."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

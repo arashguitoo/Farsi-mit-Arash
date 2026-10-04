@@ -1,0 +1,874 @@
+{
+ "id": "z1",
+ "titel": "Trainingspaket",
+ "beschreibung": "Wort-Marathon, Redemittel, Lückensätze und Satzbau.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "Wort-Marathon",
+   "vorschau": "⏱️",
+   "karten": [
+    {
+     "typ": "tempo",
+     "titel": "Marathon: alle Wörter",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 120,
+     "ziel": 25,
+     "woerter": [
+      {
+       "fa": "ورزش",
+       "a": "Sport"
+      },
+      {
+       "fa": "باشگاه",
+       "a": "Fitnessstudio, Verein"
+      },
+      {
+       "fa": "کوهنوردی",
+       "a": "Bergwandern"
+      },
+      {
+       "fa": "دوچرخه‌سواری",
+       "a": "Radfahren"
+      },
+      {
+       "fa": "شنا",
+       "a": "Schwimmen"
+      },
+      {
+       "fa": "تیم",
+       "a": "Mannschaft"
+      },
+      {
+       "fa": "بازیکن",
+       "a": "Spieler/in"
+      },
+      {
+       "fa": "تماشاچی",
+       "a": "Zuschauer/in"
+      },
+      {
+       "fa": "ورزشگاه",
+       "a": "Stadion"
+      },
+      {
+       "fa": "گل",
+       "a": "Tor"
+      },
+      {
+       "fa": "مساوی",
+       "a": "unentschieden"
+      },
+      {
+       "fa": "قهرمان",
+       "a": "Meister/in, Champion"
+      },
+      {
+       "fa": "سرگرمی",
+       "a": "Hobby, Zeitvertreib"
+      },
+      {
+       "fa": "آخر هفته",
+       "a": "Wochenende"
+      },
+      {
+       "fa": "حوصله",
+       "a": "Lust, Geduld"
+      },
+      {
+       "fa": "خسته‌کننده",
+       "a": "langweilig, ermüdend"
+      },
+      {
+       "fa": "فوتبال",
+       "a": "Fußball"
+      },
+      {
+       "fa": "والیبال",
+       "a": "Volleyball"
+      },
+      {
+       "fa": "بسکتبال",
+       "a": "Basketball"
+      },
+      {
+       "fa": "کشتی",
+       "a": "Ringen"
+      },
+      {
+       "fa": "تنیس",
+       "a": "Tennis"
+      },
+      {
+       "fa": "اسکی",
+       "a": "Skifahren"
+      },
+      {
+       "fa": "یوگا",
+       "a": "Yoga"
+      },
+      {
+       "fa": "دویدن",
+       "a": "Laufen, Joggen"
+      },
+      {
+       "fa": "بدنسازی",
+       "a": "Krafttraining"
+      },
+      {
+       "fa": "کوه‌پیمایی",
+       "a": "Bergwandern"
+      },
+      {
+       "fa": "شطرنج",
+       "a": "Schach"
+      },
+      {
+       "fa": "صخره‌نوردی",
+       "a": "Klettern"
+      },
+      {
+       "fa": "داور",
+       "a": "Schiedsrichter/in"
+      },
+      {
+       "fa": "دروازه‌بان",
+       "a": "Torwart/-wartin"
+      },
+      {
+       "fa": "مربی",
+       "a": "Trainer/in"
+      },
+      {
+       "fa": "هوادار",
+       "a": "Fan"
+      },
+      {
+       "fa": "پنالتی",
+       "a": "Elfmeter"
+      },
+      {
+       "fa": "آفساید",
+       "a": "Abseits"
+      },
+      {
+       "fa": "کارت زرد",
+       "a": "Gelbe Karte"
+      },
+      {
+       "fa": "نیمه‌ی اول",
+       "a": "erste Halbzeit"
+      },
+      {
+       "fa": "جام جهانی",
+       "a": "Weltmeisterschaft"
+      },
+      {
+       "fa": "تیم ملی",
+       "a": "Nationalmannschaft"
+      },
+      {
+       "fa": "لیگ",
+       "a": "Liga"
+      },
+      {
+       "fa": "نتیجه",
+       "a": "Ergebnis"
+      },
+      {
+       "fa": "گیتار",
+       "a": "Gitarre"
+      },
+      {
+       "fa": "پیانو",
+       "a": "Klavier"
+      },
+      {
+       "fa": "آواز",
+       "a": "Gesang"
+      },
+      {
+       "fa": "باغبانی",
+       "a": "Gärtnern"
+      },
+      {
+       "fa": "بافتنی",
+       "a": "Stricken"
+      },
+      {
+       "fa": "بازی کامپیوتری",
+       "a": "Computerspiel"
+      },
+      {
+       "fa": "ماهیگیری",
+       "a": "Angeln"
+      },
+      {
+       "fa": "خطاطی",
+       "a": "Kalligrafie"
+      },
+      {
+       "fa": "تئاتر",
+       "a": "Theater"
+      },
+      {
+       "fa": "کلاس رقص",
+       "a": "Tanzkurs"
+      },
+      {
+       "fa": "کتاب‌خوانی",
+       "a": "Lesen"
+      },
+      {
+       "fa": "کمپینگ",
+       "a": "Camping"
+      },
+      {
+       "fa": "ورزش کردن",
+       "a": "Sport treiben"
+      },
+      {
+       "fa": "بردن",
+       "a": "gewinnen"
+      },
+      {
+       "fa": "باختن",
+       "a": "verlieren"
+      },
+      {
+       "fa": "تماشا کردن",
+       "a": "zuschauen"
+      },
+      {
+       "fa": "طرفدار بودن",
+       "a": "Fan sein"
+      },
+      {
+       "fa": "تمرین کردن",
+       "a": "trainieren, üben"
+      },
+      {
+       "fa": "شنا کردن",
+       "a": "schwimmen"
+      },
+      {
+       "fa": "ساز زدن",
+       "a": "ein Instrument spielen"
+      }
+     ]
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "کشتی",
+       "tr": "koschtī",
+       "de": "Ringen",
+       "emoji": "🤼"
+      },
+      {
+       "fa": "دوچرخه‌سواری",
+       "tr": "dotscharchesawārī",
+       "de": "Radfahren",
+       "emoji": "🚴"
+      },
+      {
+       "fa": "شطرنج",
+       "tr": "schatrandsch",
+       "de": "Schach",
+       "emoji": "♟️"
+      },
+      {
+       "fa": "بازی کامپیوتری",
+       "tr": "bāzī-ye kāmpiyūterī",
+       "de": "Computerspiel",
+       "emoji": "🎮"
+      },
+      {
+       "fa": "بافتنی",
+       "tr": "bāftanī",
+       "de": "Stricken",
+       "emoji": "🧶"
+      },
+      {
+       "fa": "کارت زرد",
+       "tr": "kārt-e zard",
+       "de": "Gelbe Karte",
+       "emoji": "🟨"
+      }
+     ],
+     "titel": "Memory"
+    },
+    {
+     "typ": "memory",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "اسکی",
+       "tr": "eskī",
+       "de": "Skifahren",
+       "emoji": "⛷️"
+      },
+      {
+       "fa": "ورزشگاه",
+       "tr": "warzeschgāh",
+       "de": "Stadion",
+       "emoji": "🏟️"
+      },
+      {
+       "fa": "فوتبال",
+       "tr": "fūtbāl",
+       "de": "Fußball",
+       "emoji": "⚽"
+      },
+      {
+       "fa": "خسته‌کننده",
+       "tr": "chastekonande",
+       "de": "langweilig, ermüdend",
+       "emoji": "🥱"
+      },
+      {
+       "fa": "شطرنج",
+       "tr": "schatrandsch",
+       "de": "Schach",
+       "emoji": "♟️"
+      },
+      {
+       "fa": "آفساید",
+       "tr": "āfsāyd",
+       "de": "Abseits",
+       "emoji": "🚩"
+      }
+     ],
+     "titel": "Memory: Wort & Bedeutung"
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Redemittel-Training",
+   "vorschau": "💬",
+   "karten": [
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Redemittel",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 80,
+     "ziel": 15,
+     "woerter": [
+      {
+       "fa": "آخر هفته چه برنامه‌ای داری؟",
+       "a": "Was hast du am Wochenende vor?"
+      },
+      {
+       "fa": "پایه‌ی کوهی؟",
+       "a": "Bist du fürs Wandern zu haben?"
+      },
+      {
+       "fa": "عاشق … ام.",
+       "a": "Ich liebe …"
+      },
+      {
+       "fa": "طرفدار کدوم تیمی؟",
+       "a": "Für welches Team bist du?"
+      },
+      {
+       "fa": "بازی چند چند شد؟",
+       "a": "Wie ist das Spiel ausgegangen?"
+      },
+      {
+       "fa": "گل! گل! عالی بود!",
+       "a": "Tor! Tor! Großartig!"
+      },
+      {
+       "fa": "داور اشتباه کرد!",
+       "a": "Der Schiedsrichter hat falsch entschieden!"
+      },
+      {
+       "fa": "حوصله ندارم.",
+       "a": "Ich habe keine Lust."
+      },
+      {
+       "fa": "این دفعه نه، دفعه‌ی بعد!",
+       "a": "Diesmal nicht, nächstes Mal!"
+      },
+      {
+       "fa": "حال ندارم، خیلی خسته‌م.",
+       "a": "Ich bin nicht in Stimmung, total müde."
+      },
+      {
+       "fa": "هر چند وقت یه بار ورزش می‌کنی؟",
+       "a": "Wie oft machst du Sport?"
+      },
+      {
+       "fa": "هفته‌ای سه بار باشگاه می‌رم.",
+       "a": "Ich gehe dreimal pro Woche ins Fitnessstudio."
+      },
+      {
+       "fa": "ساز می‌زنی؟",
+       "a": "Spielst du ein Instrument?"
+      },
+      {
+       "fa": "تیممون برد!",
+       "a": "Unser Team hat gewonnen!"
+      },
+      {
+       "fa": "بازی مساوی شد.",
+       "a": "Das Spiel ging unentschieden aus."
+      },
+      {
+       "fa": "حال و حوصله‌شو ندارم.",
+       "a": "Dazu habe ich keine Nerven."
+      },
+      {
+       "fa": "شاید یه وقت دیگه.",
+       "a": "Vielleicht ein andermal."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welcher Satz ist das?",
+     "fragen": [
+      {
+       "frage": "„Bist du fürs Wandern zu haben?“",
+       "optionen": [
+        "پایه‌ی کوهی؟",
+        "تیممون برد!",
+        "حال ندارم، خیلی خسته‌م."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Spielst du ein Instrument?“",
+       "optionen": [
+        "ساز می‌زنی؟",
+        "حال ندارم، خیلی خسته‌م.",
+        "داور اشتباه کرد!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Das Spiel ging unentschieden aus.“",
+       "optionen": [
+        "بازی مساوی شد.",
+        "گل! گل! عالی بود!",
+        "طرفدار کدوم تیمی؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Ich habe keine Lust.“",
+       "optionen": [
+        "حوصله ندارم.",
+        "بازی مساوی شد.",
+        "گل! گل! عالی بود!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Ich gehe dreimal pro Woche ins Fitnessstudio.“",
+       "optionen": [
+        "هفته‌ای سه بار باشگاه می‌رم.",
+        "حوصله ندارم.",
+        "عاشق … ام."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Vielleicht ein andermal.“",
+       "optionen": [
+        "شاید یه وقت دیگه.",
+        "داور اشتباه کرد!",
+        "این دفعه نه، دفعه‌ی بعد!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Wie ist das Spiel ausgegangen?“",
+       "optionen": [
+        "بازی چند چند شد؟",
+        "عاشق … ام.",
+        "گل! گل! عالی بود!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Der Schiedsrichter hat falsch entschieden!“",
+       "optionen": [
+        "داور اشتباه کرد!",
+        "هر چند وقت یه بار ورزش می‌کنی؟",
+        "پایه‌ی کوهی؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Wie sagt man das?",
+     "fragen": [
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Tor! Tor! Großartig!",
+        "Vielleicht ein andermal.",
+        "Wie oft machst du Sport?"
+       ],
+       "richtig": 0,
+       "fa": "گل! گل! عالی بود!"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Das Spiel ging unentschieden aus.",
+        "Diesmal nicht, nächstes Mal!",
+        "Ich liebe …"
+       ],
+       "richtig": 0,
+       "fa": "بازی مساوی شد."
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Bist du fürs Wandern zu haben?",
+        "Wie oft machst du Sport?",
+        "Ich liebe …"
+       ],
+       "richtig": 0,
+       "fa": "پایه‌ی کوهی؟"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Dazu habe ich keine Nerven.",
+        "Wie oft machst du Sport?",
+        "Diesmal nicht, nächstes Mal!"
+       ],
+       "richtig": 0,
+       "fa": "حال و حوصله‌شو ندارم."
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Was hast du am Wochenende vor?",
+        "Wie oft machst du Sport?",
+        "Für welches Team bist du?"
+       ],
+       "richtig": 0,
+       "fa": "آخر هفته چه برنامه‌ای داری؟"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Ich bin nicht in Stimmung, total müde.",
+        "Spielst du ein Instrument?",
+        "Für welches Team bist du?"
+       ],
+       "richtig": 0,
+       "fa": "حال ندارم، خیلی خسته‌م."
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Wie oft machst du Sport?",
+        "Vielleicht ein andermal.",
+        "Ich habe keine Lust."
+       ],
+       "richtig": 0,
+       "fa": "هر چند وقت یه بار ورزش می‌کنی؟"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Wie ist das Spiel ausgegangen?",
+        "Das Spiel ging unentschieden aus.",
+        "Unser Team hat gewonnen!"
+       ],
+       "richtig": 0,
+       "fa": "بازی چند چند شد؟"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "titel": "Lückensätze",
+   "vorschau": "___",
+   "karten": [
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>در ایران ___ ورزش سنتی و خیلی محبوب است.</span><br><span class='mini'>In Iran ist Ringen ein traditioneller und sehr beliebter Sport.</span>",
+       "optionen": [
+        "کشتی",
+        "دویدن",
+        "باشگاه"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>در ایران کشتی ورزش سنتی و خیلی محبوب است.</span>"
+      },
+      {
+       "frage": "<span class='fa'>زمستان‌ها در دیزین ___ می‌کنیم.</span><br><span class='mini'>Im Winter fahren wir in Dizin Ski.</span>",
+       "optionen": [
+        "اسکی",
+        "بافتنی",
+        "پنالتی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>زمستان‌ها در دیزین اسکی می‌کنیم.</span>"
+      },
+      {
+       "frage": "<span class='fa'>___ پنالتی را گرفت و تیم برد!</span><br><span class='mini'>Der Torwart hat den Elfmeter gehalten und das Team hat gewonnen!</span>",
+       "optionen": [
+        "دروازه‌بان",
+        "نیمه‌ی اول",
+        "آخر هفته"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>دروازه‌بان پنالتی را گرفت و تیم برد!</span>"
+      },
+      {
+       "frage": "<span class='fa'>___ به بازیکن کارت زرد داد.</span><br><span class='mini'>Der Schiedsrichter gab dem Spieler eine Gelbe Karte.</span>",
+       "optionen": [
+        "داور",
+        "سرگرمی",
+        "فوتبال"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>داور به بازیکن کارت زرد داد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>ایران چند بار در ___ فوتبال بازی کرده است.</span><br><span class='mini'>Iran hat schon mehrmals bei der Fußball-WM gespielt.</span>",
+       "optionen": [
+        "جام جهانی",
+        "آفساید",
+        "کشتی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>ایران چند بار در جام جهانی فوتبال بازی کرده است.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>پدربزرگم هر روز ___ بازی می‌کند و همیشه می‌برد.</span><br><span class='mini'>Mein Großvater spielt jeden Tag Schach und gewinnt immer.</span>",
+       "optionen": [
+        "شطرنج",
+        "حوصله",
+        "باشگاه"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>پدربزرگم هر روز شطرنج بازی می‌کند و همیشه می‌برد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>خواهرم در کلاس ___ اسم من را به خط نستعلیق نوشت.</span><br><span class='mini'>Meine Schwester hat im Kalligrafiekurs meinen Namen in Nastaliq geschrieben.</span>",
+       "optionen": [
+        "خطاطی",
+        "لیگ",
+        "خسته‌کننده"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>خواهرم در کلاس خطاطی اسم من را به خط نستعلیق نوشت.</span>"
+      },
+      {
+       "frage": "<span class='fa'>برادرم هر شب تا دیروقت ___ بازی می‌کند.</span><br><span class='mini'>Mein Bruder spielt jede Nacht bis spät Computerspiele.</span>",
+       "optionen": [
+        "بازی کامپیوتری",
+        "شنا",
+        "کوهنوردی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>برادرم هر شب تا دیروقت بازی کامپیوتری بازی می‌کند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>در باشگاه هفته‌ای سه بار ___ می‌کنم.</span><br><span class='mini'>Im Fitnessstudio mache ich dreimal pro Woche Krafttraining.</span>",
+       "optionen": [
+        "بدنسازی",
+        "بازی کامپیوتری",
+        "کمپینگ"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>در باشگاه هفته‌ای سه بار بدنسازی می‌کنم.</span>"
+      },
+      {
+       "frage": "<span class='fa'>نتیجه‌ی بازی ___ بود: یک – یک.</span><br><span class='mini'>Das Spiel endete unentschieden: 1:1.</span>",
+       "optionen": [
+        "مساوی",
+        "گل",
+        "خطاطی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>نتیجه‌ی بازی مساوی بود: یک – یک.</span>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "e",
+   "titel": "Satzbau-Profi",
+   "vorschau": "🧱",
+   "karten": [
+    {
+     "typ": "bauen",
+     "titel": "Baue den Satz",
+     "trenner": " ",
+     "woerter": [
+      {
+       "fa": "تو ایران آره. تو آلمان یه کم بدنسازی می‌کردم.",
+       "tr": "tū īrān āre. tū ālmān ye kam badansāzī mīkardam.",
+       "de": "In Iran ja. In Deutschland habe ich ein bisschen Krafttraining gemacht.",
+       "teile": [
+        "تو",
+        "ایران",
+        "آره",
+        "تو",
+        "آلمان",
+        "یه",
+        "کم",
+        "بدنسازی",
+        "می‌کردم"
+       ],
+       "extra": []
+      },
+      {
+       "fa": "ای خائن! … ببین، ببین، داره شوت می‌زنه …",
+       "tr": "ey chāʾen! … bebīn, bebīn, dāre schūt mīzane …",
+       "de": "Du Verräter! … Schau, schau, er schießt …",
+       "teile": [
+        "ای",
+        "خائن",
+        "…",
+        "ببین",
+        "ببین",
+        "داره",
+        "شوت",
+        "می‌زنه",
+        "…"
+       ],
+       "extra": [
+        "باره"
+       ]
+      },
+      {
+       "fa": "حتماً! تو طرفدار کدوم تیمی؟",
+       "tr": "hatman! to tarafdār-e kodūm tīmī?",
+       "de": "Klar! Für welches Team bist du?",
+       "teile": [
+        "حتماً",
+        "تو",
+        "طرفدار",
+        "کدوم",
+        "تیمی"
+       ],
+       "extra": [
+        "شوت"
+       ]
+      },
+      {
+       "fa": "سلام، خوش اومدی. اولین باره میای باشگاه؟",
+       "tr": "salām, chosch ūmadī. awwalīn bāre miyāy bāschgāh?",
+       "de": "Hallo, willkommen. Ist es dein erstes Mal im Fitnessstudio?",
+       "teile": [
+        "سلام",
+        "خوش",
+        "اومدی",
+        "اولین",
+        "باره",
+        "میای",
+        "باشگاه"
+       ],
+       "extra": [
+        "حتماً!"
+       ]
+      },
+      {
+       "fa": "پس من طرفدار استقلالم، که بازی هیجان داشته باشه!",
+       "tr": "pas man tarafdār-e esteghlālam, ke bāzī hayadschān dāschte bāsche!",
+       "de": "Dann bin ich für Esteghlal, damit es spannend wird!",
+       "teile": [
+        "پس",
+        "من",
+        "طرفدار",
+        "استقلالم",
+        "که",
+        "بازی",
+        "هیجان",
+        "داشته",
+        "باشه"
+       ],
+       "extra": [
+        "کرد!"
+       ]
+      },
+      {
+       "fa": "بیشتر تناسب اندام. و می‌خوام کمرم دیگه درد نکنه.",
+       "tr": "bīschtar tanāsob-e andām. o mīchām kamaram dīge dard nakone.",
+       "de": "Eher Fitness. Und ich möchte, dass mein Rücken nicht mehr wehtut.",
+       "teile": [
+        "بیشتر",
+        "تناسب",
+        "اندام",
+        "و",
+        "می‌خوام",
+        "کمرم",
+        "دیگه",
+        "درد",
+        "نکنه"
+       ],
+       "extra": [
+        "چیه؟"
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

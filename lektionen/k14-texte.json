@@ -1,0 +1,309 @@
+{
+ "id": "tx",
+ "art": "texte",
+ "titel": "Texte & Dialoge",
+ "beschreibung": "Ein zweiter Dialog und ein weiterer Lesetext.",
+ "stationen": [
+  {
+   "id": "d2",
+   "titel": "Dialog: Sprichwort-Duell",
+   "vorschau": "Sprichwort-Duell",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Lisa und ihr Persischlehrer Arash spielen in der Pause ein Spiel: Jeder nennt ein Sprichwort, der andere erklärt es.</p>"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "آرش: خب لیزا، من شروع می‌کنم: «جوجه رو آخر پاییز می‌شمرن.»",
+       "tr": "chob līzā, man schorūʿ mīkonam: «dschūdsche ro āchar-e pāyīz mīschoman.»",
+       "de": "So, Lisa, ich fange an: „Küken zählt man Ende Herbst.“"
+      },
+      {
+       "fa": "لیزا: یعنی قبل از اینکه کار تموم بشه، خوشحال نباش!",
+       "tr": "yaʿnī ghabl az īnke kār tamūm besche, choschhāl nabāsch!",
+       "de": "Das heißt: Freu dich nicht, bevor die Sache fertig ist!"
+      },
+      {
+       "fa": "آرش: آفرین! حالا تو بگو.",
+       "tr": "āfarīn! hālā to begū.",
+       "de": "Bravo! Jetzt du."
+      },
+      {
+       "fa": "لیزا: «ماهی رو هر وقت از آب بگیری تازه‌ست.»",
+       "tr": "«māhī ro har waght az āb begīrī tāzast.»",
+       "de": "„Den Fisch, wann immer du ihn fängst, ist er frisch.“"
+      },
+      {
+       "fa": "آرش: یعنی هیچ‌وقت برای شروع دیر نیست. مثل فارسی یاد گرفتن!",
+       "tr": "yaʿnī hīschwaght barā-ye schorūʿ dīr nīst. mesl-e fārsī yād gereftan!",
+       "de": "Es ist nie zu spät, anzufangen. Wie beim Persischlernen!"
+      },
+      {
+       "fa": "لیزا: دقیقا! حالا یه سخت‌تر بگو.",
+       "tr": "daghīghan! hālā ye sachttar begū.",
+       "de": "Genau! Jetzt sag ein schwierigeres."
+      },
+      {
+       "fa": "آرش: «کار از محکم‌کاری عیب نمی‌کنه.»",
+       "tr": "«kār az mohkamkārī ʿeyb nemīkone.»",
+       "de": "„Gründlichkeit schadet der Arbeit nicht.“"
+      },
+      {
+       "fa": "لیزا: آهان! به آلمانی می‌گیم: «Doppelt hält besser»!",
+       "tr": "āhān! be ālmānī mīgīm: «Doppelt hält besser»!",
+       "de": "Ah! Auf Deutsch sagen wir: „Doppelt hält besser“!"
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "آرش: خب لیزا، من شروع می‌کنم: «جوجه رو آخر پاییز می‌شمرن.»",
+       "tr": "chob līzā, man schorūʿ mīkonam: «dschūdsche ro āchar-e pāyīz mīschoman.»",
+       "de": "So, Lisa, ich fange an: „Küken zählt man Ende Herbst.“"
+      },
+      {
+       "fa": "لیزا: یعنی قبل از اینکه کار تموم بشه، خوشحال نباش!",
+       "tr": "yaʿnī ghabl az īnke kār tamūm besche, choschhāl nabāsch!",
+       "de": "Das heißt: Freu dich nicht, bevor die Sache fertig ist!"
+      },
+      {
+       "fa": "آرش: آفرین! حالا تو بگو.",
+       "tr": "āfarīn! hālā to begū.",
+       "de": "Bravo! Jetzt du."
+      },
+      {
+       "fa": "لیزا: «ماهی رو هر وقت از آب بگیری تازه‌ست.»",
+       "tr": "«māhī ro har waght az āb begīrī tāzast.»",
+       "de": "„Den Fisch, wann immer du ihn fängst, ist er frisch.“"
+      },
+      {
+       "fa": "آرش: یعنی هیچ‌وقت برای شروع دیر نیست. مثل فارسی یاد گرفتن!",
+       "tr": "yaʿnī hīschwaght barā-ye schorūʿ dīr nīst. mesl-e fārsī yād gereftan!",
+       "de": "Es ist nie zu spät, anzufangen. Wie beim Persischlernen!"
+      },
+      {
+       "fa": "لیزا: دقیقا! حالا یه سخت‌تر بگو.",
+       "tr": "daghīghan! hālā ye sachttar begū.",
+       "de": "Genau! Jetzt sag ein schwierigeres."
+      },
+      {
+       "fa": "آرش: «کار از محکم‌کاری عیب نمی‌کنه.»",
+       "tr": "«kār az mohkamkārī ʿeyb nemīkone.»",
+       "de": "„Gründlichkeit schadet der Arbeit nicht.“"
+      },
+      {
+       "fa": "لیزا: آهان! به آلمانی می‌گیم: «Doppelt hält besser»!",
+       "tr": "āhān! be ālmānī mīgīm: «Doppelt hält besser»!",
+       "de": "Ah! Auf Deutsch sagen wir: „Doppelt hält besser“!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Was bedeutet das erste Sprichwort?",
+       "optionen": [
+        "Freu dich nicht zu früh.",
+        "Küken sind im Herbst groß.",
+        "Arbeite gründlich."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Welches Sprichwort passt zum Persischlernen?",
+       "optionen": [
+        "Es ist nie zu spät.",
+        "Doppelt hält besser.",
+        "Küken zählt man im Herbst."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was ist das deutsche Gegenstück zu کار از محکم‌کاری عیب نمی‌کنه?",
+       "optionen": [
+        "Doppelt hält besser.",
+        "Übung macht den Meister.",
+        "Morgenstund hat Gold im Mund."
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t2",
+   "titel": "Text: Saadi – ein Dichter für den Alltag",
+   "vorschau": "Saadi – ein Dichter für den Alltag",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Text: Saadi – ein Dichter für den Alltag",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "سعدی شاعر بزرگ قرن سیزدهم میلادی از شیراز است.",
+       "tr": "saʿdī schāʿer-e bozorg-e gharn-e sīzdahom-e mīlādī az schīrāz ast.",
+       "de": "Saadi ist ein großer Dichter des 13. Jahrhunderts aus Schiras."
+      },
+      {
+       "fa": "کتاب‌های معروف او «گلستان» و «بوستان» نام دارند.",
+       "tr": "ketābhā-ye maʿrūf-e ū «golestān» o «būstān» nām dārand.",
+       "de": "Seine berühmten Bücher heißen „Golestan“ (Rosengarten) und „Bustan“ (Obstgarten)."
+      },
+      {
+       "fa": "بسیاری از ضرب‌المثل‌های فارسی از شعرهای سعدی آمده‌اند.",
+       "tr": "besyārī az zarbolmasalhā-ye fārsī az scheʿrhā-ye saʿdī āmadeand.",
+       "de": "Viele persische Sprichwörter stammen aus Saadis Gedichten."
+      },
+      {
+       "fa": "معروف‌ترین شعر او درباره‌ی انسانیت است: «بنی‌آدم اعضای یکدیگرند».",
+       "tr": "maʿrūftarīn scheʿr-e ū darbāre-ye ensāniyat ast: «banī ādam aʿzā-ye yekdīgarand».",
+       "de": "Sein berühmtestes Gedicht handelt von Menschlichkeit: „Die Menschen sind Glieder eines Körpers“."
+      },
+      {
+       "fa": "این شعر در سازمان ملل هم نوشته شده است.",
+       "tr": "īn scheʿr dar sāzmān-e melal ham neweschte schode ast.",
+       "de": "Dieses Gedicht steht auch bei den Vereinten Nationen geschrieben."
+      },
+      {
+       "fa": "ایرانی‌ها در گفت‌وگوهای روزمره هنوز جمله‌های سعدی را به کار می‌برند.",
+       "tr": "īrānīhā dar goftogūhā-ye rūzmarre hanūz dschomlehā-ye saʿdī rā be kār mībarand.",
+       "de": "Iraner verwenden Saadis Sätze noch heute in Alltagsgesprächen."
+      },
+      {
+       "fa": "آرامگاه سعدی در شیراز هر سال هزاران بازدیدکننده دارد.",
+       "tr": "ārāmgāh-e saʿdī dar schīrāz har sāl hezārān bāzdīdkonande dārad.",
+       "de": "Saadis Grabmal in Schiras hat jedes Jahr Tausende Besucher."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "سعدی اهل اصفهان است.",
+       "fest": true,
+       "erkl": "Er stammt aus <b>Schiras</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "بسیاری از ضرب‌المثل‌ها از سعدی آمده‌اند.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "شعر «بنی‌آدم» درباره‌ی جنگ است.",
+       "fest": true,
+       "erkl": "Es handelt von <b>Menschlichkeit</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "آرامگاه سعدی در شیراز است.",
+       "fest": true
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Wie heißen Saadis berühmte Bücher?",
+       "optionen": [
+        "Golestan und Bustan",
+        "Schahname und Divan",
+        "Masnavi und Rubaiyat"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wo steht sein Gedicht über Menschlichkeit?",
+       "optionen": [
+        "bei den Vereinten Nationen",
+        "in Berlin",
+        "auf einer Münze"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Aus welchem Jahrhundert stammt Saadi?",
+       "optionen": [
+        "13. Jahrhundert",
+        "18. Jahrhundert",
+        "5. Jahrhundert"
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "کتاب‌های معروف او «گلستان» و «بوستان» نام دارند.",
+       "tr": "ketābhā-ye maʿrūf-e ū «golestān» o «būstān» nām dārand.",
+       "de": "Seine berühmten Bücher heißen „Golestan“ (Rosengarten) und „Bustan“ (Obstgarten)."
+      },
+      {
+       "fa": "بسیاری از ضرب‌المثل‌های فارسی از شعرهای سعدی آمده‌اند.",
+       "tr": "besyārī az zarbolmasalhā-ye fārsī az scheʿrhā-ye saʿdī āmadeand.",
+       "de": "Viele persische Sprichwörter stammen aus Saadis Gedichten."
+      },
+      {
+       "fa": "معروف‌ترین شعر او درباره‌ی انسانیت است: «بنی‌آدم اعضای یکدیگرند».",
+       "tr": "maʿrūftarīn scheʿr-e ū darbāre-ye ensāniyat ast: «banī ādam aʿzā-ye yekdīgarand».",
+       "de": "Sein berühmtestes Gedicht handelt von Menschlichkeit: „Die Menschen sind Glieder eines Körpers“."
+      },
+      {
+       "fa": "این شعر در سازمان ملل هم نوشته شده است.",
+       "tr": "īn scheʿr dar sāzmān-e melal ham neweschte schode ast.",
+       "de": "Dieses Gedicht steht auch bei den Vereinten Nationen geschrieben."
+      },
+      {
+       "fa": "ایرانی‌ها در گفت‌وگوهای روزمره هنوز جمله‌های سعدی را به کار می‌برند.",
+       "tr": "īrānīhā dar goftogūhā-ye rūzmarre hanūz dschomlehā-ye saʿdī rā be kār mībarand.",
+       "de": "Iraner verwenden Saadis Sätze noch heute in Alltagsgesprächen."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

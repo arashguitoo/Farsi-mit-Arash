@@ -17,19 +17,19 @@
     {
      "typ": "info",
      "titel": "So läuft die Sitzung",
-     "text": "<p>Diese Lektion ist deine <b>Hausaufgabe</b>: Hier lernst du Wörter und Redemittel und liest einen Modelldialog. Im Unterricht wird dann <b>nur gesprochen</b>.</p><p><b>Im Unterricht:</b></p><ul><li>Festkalender-Quiz</li><li>Haft-Sin bauen: Was gehört auf den Tisch und warum?</li><li>Erzählrunde: Unser liebstes Fest</li></ul>",
+     "text": "<p>Diese Lektion ist deine <b>Hausaufgabe</b>: Wortschatz, Redemittel, Dialoge und Texte. Im Unterricht wird dann <b>nur gesprochen</b>.</p><p><b>Im Unterricht:</b></p><ul><li>Festkalender-Quiz</li><li>Haft-Sin bauen: Was gehört auf den Tisch und warum?</li><li>Erzählrunde: Unser liebstes Fest</li></ul><p class='klein muted'>Wortschatz dieser Lektion: 60 Wörter · 17 Redemittel</p>",
      "stil": "merke"
     }
    ]
   },
   {
-   "id": "s1",
-   "titel": "Wörter",
+   "id": "w0",
+   "titel": "Rund ums Thema",
    "vorschau": "نوروز · سفره‌ی هفت‌سین · سبزه",
    "karten": [
     {
      "typ": "info",
-     "titel": "Wörter zum Thema – Teil 1",
+     "titel": "🧩 Rund ums Thema (1)",
      "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
      "beispiele": [
       {
@@ -84,7 +84,7 @@
     },
     {
      "typ": "info",
-     "titel": "Wörter zum Thema – Teil 2",
+     "titel": "🧩 Rund ums Thema (2)",
      "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
      "beispiele": [
       {
@@ -138,43 +138,6 @@
      ]
     },
     {
-     "typ": "info",
-     "titel": "Verben",
-     "text": "<p>Infinitiv – im Gespräch brauchst du sie gleich in allen Zeiten.</p>",
-     "beispiele": [
-      {
-       "fa": "جشن گرفتن",
-       "tr": "dschaschn gereftan",
-       "de": "feiern",
-       "emoji": "🎉"
-      },
-      {
-       "fa": "تبریک گفتن",
-       "tr": "tabrīk goftan",
-       "de": "gratulieren",
-       "emoji": "💐"
-      },
-      {
-       "fa": "کادو دادن",
-       "tr": "kādo dādan",
-       "de": "schenken",
-       "emoji": "🎁"
-      },
-      {
-       "fa": "پریدن",
-       "tr": "parīdan",
-       "de": "springen",
-       "emoji": "🤸"
-      },
-      {
-       "fa": "دور هم جمع شدن",
-       "tr": "dour-e ham dscham schodan",
-       "de": "zusammenkommen",
-       "emoji": "👨‍👩‍👧"
-      }
-     ]
-    },
-    {
      "typ": "paare",
      "links": "de",
      "paare": [
@@ -222,10 +185,1206 @@
      "links": "de",
      "paare": [
       {
+       "fa": "آجیل",
+       "tr": "ādschīl",
+       "de": "Nussmischung",
+       "emoji": "🥜"
+      },
+      {
+       "fa": "آتش",
+       "tr": "ātesch",
+       "de": "Feuer",
+       "emoji": "🔥"
+      },
+      {
+       "fa": "انار",
+       "tr": "anār",
+       "de": "Granatapfel",
+       "emoji": "🍎"
+      },
+      {
+       "fa": "سیزده‌به‌در",
+       "tr": "sīzdahbedar",
+       "de": "Picknicktag (13. Tag)",
+       "emoji": "🧺"
+      },
+      {
+       "fa": "جشن",
+       "tr": "dschaschn",
+       "de": "Fest, Feier",
+       "emoji": "🎉"
+      },
+      {
+       "fa": "کادو",
+       "tr": "kādo",
+       "de": "Geschenk",
+       "emoji": "🎁"
+      }
+     ],
+     "titel": "Noch einmal: Was bedeutet das?"
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "سفره‌ی هفت‌سین",
+       "tr": "sofre-ye haftsīn",
+       "de": "Haft-Sin-Tisch",
+       "emoji": "🍎"
+      },
+      {
+       "fa": "شب یلدا",
+       "tr": "schab-e yaldā",
+       "de": "Yalda-Nacht",
+       "emoji": "🌙"
+      },
+      {
+       "fa": "چهارشنبه‌سوری",
+       "tr": "tschahārschanbesūrī",
+       "de": "Feuerfest",
+       "emoji": "🔥"
+      },
+      {
+       "fa": "نوروز",
+       "tr": "nourūz",
+       "de": "Nouruz (Neujahr)",
+       "emoji": "🌱"
+      },
+      {
+       "fa": "فال حافظ",
+       "tr": "fāl-e hāfez",
+       "de": "Hafes-Orakel",
+       "emoji": "📖"
+      },
+      {
+       "fa": "دید و بازدید",
+       "tr": "dīd o bāzdīd",
+       "de": "Neujahrsbesuche",
+       "emoji": "🏠"
+      }
+     ],
+     "titel": "Memory: Bild & Wort"
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>بچه‌ها از بزرگ‌ترها ___ می‌گیرند.</span><br><span class='mini'>Die Kinder bekommen Geldgeschenke von den Älteren.</span>",
+       "optionen": [
+        "عیدی",
+        "پدربزرگ",
+        "شیرینی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>بچه‌ها از بزرگ‌ترها عیدی می‌گیرند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>شب یلدا ___ و هندوانه می‌خوریم.</span><br><span class='mini'>An Yalda essen wir Granatäpfel und Wassermelone.</span>",
+       "optionen": [
+        "انار",
+        "سنجد",
+        "شمع"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>شب یلدا انار و هندوانه می‌خوریم.</span>"
+      },
+      {
+       "frage": "<span class='fa'>در چهارشنبه‌سوری از روی ___ می‌پرند.</span><br><span class='mini'>An Tschaharschanbe Suri springt man über das Feuer.</span>",
+       "optionen": [
+        "آتش",
+        "شیرینی",
+        "آرزو"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>در چهارشنبه‌سوری از روی آتش می‌پرند.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Rund ums Thema",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 50,
+     "ziel": 10,
+     "woerter": [
+      {
+       "fa": "نوروز",
+       "a": "Nouruz (Neujahr)"
+      },
+      {
+       "fa": "سفره‌ی هفت‌سین",
+       "a": "Haft-Sin-Tisch"
+      },
+      {
+       "fa": "سبزه",
+       "a": "Keimsprossen"
+      },
+      {
+       "fa": "عیدی",
+       "a": "Neujahrsgeschenk (Geld)"
+      },
+      {
+       "fa": "دید و بازدید",
+       "a": "Neujahrsbesuche"
+      },
+      {
+       "fa": "چهارشنبه‌سوری",
+       "a": "Feuerfest"
+      },
+      {
+       "fa": "سیزده‌به‌در",
+       "a": "Picknicktag (13. Tag)"
+      },
+      {
+       "fa": "شب یلدا",
+       "a": "Yalda-Nacht"
+      },
+      {
+       "fa": "انار",
+       "a": "Granatapfel"
+      },
+      {
+       "fa": "هندوانه",
+       "a": "Wassermelone"
+      },
+      {
+       "fa": "آجیل",
+       "a": "Nussmischung"
+      },
+      {
+       "fa": "فال حافظ",
+       "a": "Hafes-Orakel"
+      },
+      {
+       "fa": "تولد",
+       "a": "Geburtstag"
+      },
+      {
+       "fa": "کادو",
+       "a": "Geschenk"
+      },
+      {
+       "fa": "جشن",
+       "a": "Fest, Feier"
+      },
+      {
+       "fa": "آتش",
+       "a": "Feuer"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "w1",
+   "titel": "Haft-Sin & Nouruz",
+   "vorschau": "سیب · سکه · سیر",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "🌱 Haft-Sin & Nouruz (1)",
+     "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
+     "beispiele": [
+      {
+       "fa": "سیب",
+       "tr": "sīb",
+       "de": "Apfel",
+       "emoji": "🍎"
+      },
+      {
+       "fa": "سکه",
+       "tr": "sekke",
+       "de": "Münze",
+       "emoji": "🪙"
+      },
+      {
+       "fa": "سیر",
+       "tr": "sīr",
+       "de": "Knoblauch",
+       "emoji": "🧄"
+      },
+      {
+       "fa": "سرکه",
+       "tr": "serke",
+       "de": "Essig",
+       "emoji": "🫙"
+      },
+      {
+       "fa": "سماق",
+       "tr": "somāgh",
+       "de": "Sumach",
+       "emoji": "🌶️"
+      },
+      {
+       "fa": "سمنو",
+       "tr": "samanū",
+       "de": "Weizenkeimpudding",
+       "emoji": "🥣"
+      }
+     ]
+    },
+    {
+     "typ": "info",
+     "titel": "🌱 Haft-Sin & Nouruz (2)",
+     "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
+     "beispiele": [
+      {
+       "fa": "سنجد",
+       "tr": "sendsched",
+       "de": "Ölweidenfrucht",
+       "emoji": "🫒"
+      },
+      {
+       "fa": "ماهی قرمز",
+       "tr": "māhī-ye ghermez",
+       "de": "Goldfisch",
+       "emoji": "🐠"
+      },
+      {
+       "fa": "تخم‌مرغ رنگی",
+       "tr": "tochmmorgh-e rangī",
+       "de": "bemaltes Ei",
+       "emoji": "🥚"
+      },
+      {
+       "fa": "آینه",
+       "tr": "āyene",
+       "de": "Spiegel",
+       "emoji": "🪞"
+      },
+      {
+       "fa": "شمع",
+       "tr": "schamʿ",
+       "de": "Kerze",
+       "emoji": "🕯️"
+      },
+      {
+       "fa": "خانه‌تکانی",
+       "tr": "chānetekānī",
+       "de": "Frühjahrsputz",
+       "emoji": "🧹"
+      }
+     ]
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "سمنو",
+       "tr": "samanū",
+       "de": "Weizenkeimpudding",
+       "emoji": "🥣"
+      },
+      {
+       "fa": "سیب",
+       "tr": "sīb",
+       "de": "Apfel",
+       "emoji": "🍎"
+      },
+      {
+       "fa": "سرکه",
+       "tr": "serke",
+       "de": "Essig",
+       "emoji": "🫙"
+      },
+      {
+       "fa": "تخم‌مرغ رنگی",
+       "tr": "tochmmorgh-e rangī",
+       "de": "bemaltes Ei",
+       "emoji": "🥚"
+      },
+      {
+       "fa": "ماهی قرمز",
+       "tr": "māhī-ye ghermez",
+       "de": "Goldfisch",
+       "emoji": "🐠"
+      },
+      {
+       "fa": "شمع",
+       "tr": "schamʿ",
+       "de": "Kerze",
+       "emoji": "🕯️"
+      }
+     ],
+     "titel": "Was bedeutet das?"
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "سیر",
+       "tr": "sīr",
+       "de": "Knoblauch",
+       "emoji": "🧄"
+      },
+      {
+       "fa": "سماق",
+       "tr": "somāgh",
+       "de": "Sumach",
+       "emoji": "🌶️"
+      },
+      {
+       "fa": "شمع",
+       "tr": "schamʿ",
+       "de": "Kerze",
+       "emoji": "🕯️"
+      },
+      {
+       "fa": "سیب",
+       "tr": "sīb",
+       "de": "Apfel",
+       "emoji": "🍎"
+      },
+      {
+       "fa": "سمنو",
+       "tr": "samanū",
+       "de": "Weizenkeimpudding",
+       "emoji": "🥣"
+      },
+      {
+       "fa": "خانه‌تکانی",
+       "tr": "chānetekānī",
+       "de": "Frühjahrsputz",
+       "emoji": "🧹"
+      }
+     ],
+     "titel": "Noch einmal: Was bedeutet das?"
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "سیب",
+       "tr": "sīb",
+       "de": "Apfel",
+       "emoji": "🍎"
+      },
+      {
+       "fa": "سکه",
+       "tr": "sekke",
+       "de": "Münze",
+       "emoji": "🪙"
+      },
+      {
+       "fa": "شمع",
+       "tr": "schamʿ",
+       "de": "Kerze",
+       "emoji": "🕯️"
+      },
+      {
+       "fa": "سیر",
+       "tr": "sīr",
+       "de": "Knoblauch",
+       "emoji": "🧄"
+      },
+      {
+       "fa": "ماهی قرمز",
+       "tr": "māhī-ye ghermez",
+       "de": "Goldfisch",
+       "emoji": "🐠"
+      },
+      {
+       "fa": "سماق",
+       "tr": "somāgh",
+       "de": "Sumach",
+       "emoji": "🌶️"
+      }
+     ],
+     "titel": "Memory: Bild & Wort"
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>روی سفره‌ی هفت‌سین یک ___ قرمز در تنگ آب است.</span><br><span class='mini'>Auf dem Haft-Sin-Tisch ist ein Goldfisch im Glas.</span>",
+       "optionen": [
+        "ماهی قرمز",
+        "پدربزرگ",
+        "خاله"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>روی سفره‌ی هفت‌سین یک ماهی قرمز قرمز در تنگ آب است.</span>"
+      },
+      {
+       "frage": "<span class='fa'>___ نماد سلامتی و زیبایی است.</span><br><span class='mini'>Der Apfel ist ein Symbol für Gesundheit und Schönheit.</span>",
+       "optionen": [
+        "سیب",
+        "موسیقی",
+        "شیرینی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>سیب نماد سلامتی و زیبایی است.</span>"
+      },
+      {
+       "frage": "<span class='fa'>قبل از نوروز همه ___ می‌کنند و خانه را تمیز می‌کنند.</span><br><span class='mini'>Vor Nouruz machen alle Frühjahrsputz und putzen das Haus.</span>",
+       "optionen": [
+        "خانه‌تکانی",
+        "عمو",
+        "هندوانه"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>قبل از نوروز همه خانه‌تکانی می‌کنند و خانه را تمیز می‌کنند.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Haft-Sin & Nouruz",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 50,
+     "ziel": 10,
+     "woerter": [
+      {
+       "fa": "سیب",
+       "a": "Apfel"
+      },
+      {
+       "fa": "سکه",
+       "a": "Münze"
+      },
+      {
+       "fa": "سیر",
+       "a": "Knoblauch"
+      },
+      {
+       "fa": "سرکه",
+       "a": "Essig"
+      },
+      {
+       "fa": "سماق",
+       "a": "Sumach"
+      },
+      {
+       "fa": "سمنو",
+       "a": "Weizenkeimpudding"
+      },
+      {
+       "fa": "سنجد",
+       "a": "Ölweidenfrucht"
+      },
+      {
+       "fa": "ماهی قرمز",
+       "a": "Goldfisch"
+      },
+      {
+       "fa": "تخم‌مرغ رنگی",
+       "a": "bemaltes Ei"
+      },
+      {
+       "fa": "آینه",
+       "a": "Spiegel"
+      },
+      {
+       "fa": "شمع",
+       "a": "Kerze"
+      },
+      {
+       "fa": "خانه‌تکانی",
+       "a": "Frühjahrsputz"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "w2",
+   "titel": "Feiern & Party",
+   "vorschau": "کیک تولد · بادکنک · مهمان",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "🎉 Feiern & Party (1)",
+     "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
+     "beispiele": [
+      {
+       "fa": "کیک تولد",
+       "tr": "keyk-e tawallod",
+       "de": "Geburtstagstorte",
+       "emoji": "🎂"
+      },
+      {
+       "fa": "بادکنک",
+       "tr": "bādkonak",
+       "de": "Luftballon",
+       "emoji": "🎈"
+      },
+      {
+       "fa": "مهمان",
+       "tr": "mehmān",
+       "de": "Gast",
+       "emoji": "🙋"
+      },
+      {
+       "fa": "موسیقی",
+       "tr": "mūsīghī",
+       "de": "Musik",
+       "emoji": "🎶"
+      },
+      {
+       "fa": "رقص",
+       "tr": "raghs",
+       "de": "Tanz",
+       "emoji": "💃"
+      },
+      {
+       "fa": "شام",
+       "tr": "schām",
+       "de": "Abendessen",
+       "emoji": "🍽️"
+      }
+     ]
+    },
+    {
+     "typ": "info",
+     "titel": "🎉 Feiern & Party (2)",
+     "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
+     "beispiele": [
+      {
+       "fa": "آتش‌بازی",
+       "tr": "āteschbāzī",
+       "de": "Feuerwerk",
+       "emoji": "🎆"
+      },
+      {
+       "fa": "غافلگیری",
+       "tr": "ghāfelgīrī",
+       "de": "Überraschung",
+       "emoji": "🎁"
+      },
+      {
+       "fa": "آرزو",
+       "tr": "ārezū",
+       "de": "Wunsch",
+       "emoji": "🌠"
+      },
+      {
+       "fa": "شمع تولد",
+       "tr": "schamʿ-e tawallod",
+       "de": "Geburtstagskerze",
+       "emoji": "🕯️"
+      },
+      {
+       "fa": "عکس دسته‌جمعی",
+       "tr": "ʿaks-e dastedschamʿī",
+       "de": "Gruppenfoto",
+       "emoji": "📸"
+      },
+      {
+       "fa": "تبریک",
+       "tr": "tabrīk",
+       "de": "Glückwunsch",
+       "emoji": "💐"
+      }
+     ]
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "غافلگیری",
+       "tr": "ghāfelgīrī",
+       "de": "Überraschung",
+       "emoji": "🎁"
+      },
+      {
+       "fa": "موسیقی",
+       "tr": "mūsīghī",
+       "de": "Musik",
+       "emoji": "🎶"
+      },
+      {
+       "fa": "آرزو",
+       "tr": "ārezū",
+       "de": "Wunsch",
+       "emoji": "🌠"
+      },
+      {
+       "fa": "رقص",
+       "tr": "raghs",
+       "de": "Tanz",
+       "emoji": "💃"
+      },
+      {
+       "fa": "تبریک",
+       "tr": "tabrīk",
+       "de": "Glückwunsch",
+       "emoji": "💐"
+      },
+      {
+       "fa": "عکس دسته‌جمعی",
+       "tr": "ʿaks-e dastedschamʿī",
+       "de": "Gruppenfoto",
+       "emoji": "📸"
+      }
+     ],
+     "titel": "Was bedeutet das?"
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "موسیقی",
+       "tr": "mūsīghī",
+       "de": "Musik",
+       "emoji": "🎶"
+      },
+      {
+       "fa": "عکس دسته‌جمعی",
+       "tr": "ʿaks-e dastedschamʿī",
+       "de": "Gruppenfoto",
+       "emoji": "📸"
+      },
+      {
+       "fa": "آتش‌بازی",
+       "tr": "āteschbāzī",
+       "de": "Feuerwerk",
+       "emoji": "🎆"
+      },
+      {
+       "fa": "شمع تولد",
+       "tr": "schamʿ-e tawallod",
+       "de": "Geburtstagskerze",
+       "emoji": "🕯️"
+      },
+      {
+       "fa": "شام",
+       "tr": "schām",
+       "de": "Abendessen",
+       "emoji": "🍽️"
+      },
+      {
+       "fa": "تبریک",
+       "tr": "tabrīk",
+       "de": "Glückwunsch",
+       "emoji": "💐"
+      }
+     ],
+     "titel": "Noch einmal: Was bedeutet das?"
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "غافلگیری",
+       "tr": "ghāfelgīrī",
+       "de": "Überraschung",
+       "emoji": "🎁"
+      },
+      {
+       "fa": "بادکنک",
+       "tr": "bādkonak",
+       "de": "Luftballon",
+       "emoji": "🎈"
+      },
+      {
+       "fa": "مهمان",
+       "tr": "mehmān",
+       "de": "Gast",
+       "emoji": "🙋"
+      },
+      {
+       "fa": "تبریک",
+       "tr": "tabrīk",
+       "de": "Glückwunsch",
+       "emoji": "💐"
+      },
+      {
+       "fa": "آتش‌بازی",
+       "tr": "āteschbāzī",
+       "de": "Feuerwerk",
+       "emoji": "🎆"
+      },
+      {
+       "fa": "رقص",
+       "tr": "raghs",
+       "de": "Tanz",
+       "emoji": "💃"
+      }
+     ],
+     "titel": "Memory: Bild & Wort"
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>برای تولدش یک مهمانی ___ گرفتیم؛ اصلا خبر نداشت!</span><br><span class='mini'>Zu seinem Geburtstag haben wir eine Überraschungsparty gemacht; er wusste gar nichts!</span>",
+       "optionen": [
+        "غافلگیری",
+        "فال حافظ",
+        "جشن"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>برای تولدش یک مهمانی غافلگیری گرفتیم؛ اصلا خبر نداشت!</span>"
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Feiern & Party",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 50,
+     "ziel": 10,
+     "woerter": [
+      {
+       "fa": "کیک تولد",
+       "a": "Geburtstagstorte"
+      },
+      {
+       "fa": "بادکنک",
+       "a": "Luftballon"
+      },
+      {
+       "fa": "مهمان",
+       "a": "Gast"
+      },
+      {
+       "fa": "موسیقی",
+       "a": "Musik"
+      },
+      {
+       "fa": "رقص",
+       "a": "Tanz"
+      },
+      {
+       "fa": "شام",
+       "a": "Abendessen"
+      },
+      {
+       "fa": "آتش‌بازی",
+       "a": "Feuerwerk"
+      },
+      {
+       "fa": "غافلگیری",
+       "a": "Überraschung"
+      },
+      {
+       "fa": "آرزو",
+       "a": "Wunsch"
+      },
+      {
+       "fa": "شمع تولد",
+       "a": "Geburtstagskerze"
+      },
+      {
+       "fa": "عکس دسته‌جمعی",
+       "a": "Gruppenfoto"
+      },
+      {
+       "fa": "تبریک",
+       "a": "Glückwunsch"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "w3",
+   "titel": "Familie & Besuche",
+   "vorschau": "پدربزرگ · مادربزرگ · عمو",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "👨‍👩‍👧 Familie & Besuche (1)",
+     "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
+     "beispiele": [
+      {
+       "fa": "پدربزرگ",
+       "tr": "pedarbozorg",
+       "de": "Großvater",
+       "emoji": "👴"
+      },
+      {
+       "fa": "مادربزرگ",
+       "tr": "mādarbozorg",
+       "de": "Großmutter",
+       "emoji": "👵"
+      },
+      {
+       "fa": "عمو",
+       "tr": "ʿamū",
+       "de": "Onkel (väterlich)",
+       "emoji": "👨"
+      },
+      {
+       "fa": "خاله",
+       "tr": "chāle",
+       "de": "Tante (mütterlich)",
+       "emoji": "👩"
+      },
+      {
+       "fa": "پسرعمو",
+       "tr": "pesarʿamū",
+       "de": "Cousin",
+       "emoji": "👦"
+      },
+      {
+       "fa": "دخترخاله",
+       "tr": "dochtarchāle",
+       "de": "Cousine",
+       "emoji": "👧"
+      }
+     ]
+    },
+    {
+     "typ": "info",
+     "titel": "👨‍👩‍👧 Familie & Besuche (2)",
+     "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
+     "beispiele": [
+      {
+       "fa": "فامیل",
+       "tr": "fāmīl",
+       "de": "Verwandtschaft",
+       "emoji": "👪"
+      },
+      {
+       "fa": "بزرگ‌تر",
+       "tr": "bozorgtar",
+       "de": "Ältere/r",
+       "emoji": "🧓"
+      },
+      {
+       "fa": "شیرینی",
+       "tr": "schīrīnī",
+       "de": "Gebäck",
+       "emoji": "🍪"
+      },
+      {
+       "fa": "چای",
+       "tr": "tschāy",
+       "de": "Tee",
+       "emoji": "🍵"
+      },
+      {
+       "fa": "لباس نو",
+       "tr": "lebās-e nou",
+       "de": "neue Kleidung",
+       "emoji": "👗"
+      }
+     ]
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "خاله",
+       "tr": "chāle",
+       "de": "Tante (mütterlich)",
+       "emoji": "👩"
+      },
+      {
+       "fa": "مادربزرگ",
+       "tr": "mādarbozorg",
+       "de": "Großmutter",
+       "emoji": "👵"
+      },
+      {
+       "fa": "پسرعمو",
+       "tr": "pesarʿamū",
+       "de": "Cousin",
+       "emoji": "👦"
+      },
+      {
+       "fa": "پدربزرگ",
+       "tr": "pedarbozorg",
+       "de": "Großvater",
+       "emoji": "👴"
+      },
+      {
+       "fa": "چای",
+       "tr": "tschāy",
+       "de": "Tee",
+       "emoji": "🍵"
+      },
+      {
+       "fa": "لباس نو",
+       "tr": "lebās-e nou",
+       "de": "neue Kleidung",
+       "emoji": "👗"
+      }
+     ],
+     "titel": "Was bedeutet das?"
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "چای",
+       "tr": "tschāy",
+       "de": "Tee",
+       "emoji": "🍵"
+      },
+      {
+       "fa": "عمو",
+       "tr": "ʿamū",
+       "de": "Onkel (väterlich)",
+       "emoji": "👨"
+      },
+      {
+       "fa": "پسرعمو",
+       "tr": "pesarʿamū",
+       "de": "Cousin",
+       "emoji": "👦"
+      },
+      {
+       "fa": "لباس نو",
+       "tr": "lebās-e nou",
+       "de": "neue Kleidung",
+       "emoji": "👗"
+      },
+      {
+       "fa": "فامیل",
+       "tr": "fāmīl",
+       "de": "Verwandtschaft",
+       "emoji": "👪"
+      },
+      {
+       "fa": "بزرگ‌تر",
+       "tr": "bozorgtar",
+       "de": "Ältere/r",
+       "emoji": "🧓"
+      }
+     ],
+     "titel": "Noch einmal: Was bedeutet das?"
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "بزرگ‌تر",
+       "tr": "bozorgtar",
+       "de": "Ältere/r",
+       "emoji": "🧓"
+      },
+      {
+       "fa": "شیرینی",
+       "tr": "schīrīnī",
+       "de": "Gebäck",
+       "emoji": "🍪"
+      },
+      {
+       "fa": "دخترخاله",
+       "tr": "dochtarchāle",
+       "de": "Cousine",
+       "emoji": "👧"
+      },
+      {
+       "fa": "فامیل",
+       "tr": "fāmīl",
+       "de": "Verwandtschaft",
+       "emoji": "👪"
+      },
+      {
+       "fa": "خاله",
+       "tr": "chāle",
+       "de": "Tante (mütterlich)",
+       "emoji": "👩"
+      },
+      {
+       "fa": "لباس نو",
+       "tr": "lebās-e nou",
+       "de": "neue Kleidung",
+       "emoji": "👗"
+      }
+     ],
+     "titel": "Memory: Bild & Wort"
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>در روزهای نوروز به خانه‌ی ___ ها می‌رویم.</span><br><span class='mini'>In den Nouruz-Tagen besuchen wir die Älteren.</span>",
+       "optionen": [
+        "بزرگ‌تر",
+        "سفره‌ی هفت‌سین",
+        "سیب"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>در روزهای نوروز به خانه‌ی بزرگ‌تر ها می‌رویم.</span>"
+      },
+      {
+       "frage": "<span class='fa'>___ من، یعنی خواهر مادرم، در شیراز زندگی می‌کند.</span><br><span class='mini'>Meine Tante, also die Schwester meiner Mutter, wohnt in Schiras.</span>",
+       "optionen": [
+        "خاله",
+        "تبریک",
+        "عکس دسته‌جمعی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>خاله من، یعنی خواهر مادرم، در شیراز زندگی می‌کند.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Familie & Besuche",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 50,
+     "ziel": 10,
+     "woerter": [
+      {
+       "fa": "پدربزرگ",
+       "a": "Großvater"
+      },
+      {
+       "fa": "مادربزرگ",
+       "a": "Großmutter"
+      },
+      {
+       "fa": "عمو",
+       "a": "Onkel (väterlich)"
+      },
+      {
+       "fa": "خاله",
+       "a": "Tante (mütterlich)"
+      },
+      {
+       "fa": "پسرعمو",
+       "a": "Cousin"
+      },
+      {
+       "fa": "دخترخاله",
+       "a": "Cousine"
+      },
+      {
+       "fa": "فامیل",
+       "a": "Verwandtschaft"
+      },
+      {
+       "fa": "بزرگ‌تر",
+       "a": "Ältere/r"
+      },
+      {
+       "fa": "شیرینی",
+       "a": "Gebäck"
+      },
+      {
+       "fa": "چای",
+       "a": "Tee"
+      },
+      {
+       "fa": "لباس نو",
+       "a": "neue Kleidung"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "v",
+   "titel": "Verben & Wiederholung",
+   "vorschau": "جشن گرفتن · تبریک گفتن · کادو دادن",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Verben",
+     "text": "<p>Infinitiv – im Gespräch brauchst du sie in allen Zeiten.</p>",
+     "beispiele": [
+      {
+       "fa": "جشن گرفتن",
+       "tr": "dschaschn gereftan",
+       "de": "feiern",
+       "emoji": "🎉"
+      },
+      {
        "fa": "تبریک گفتن",
        "tr": "tabrīk goftan",
        "de": "gratulieren",
        "emoji": "💐"
+      },
+      {
+       "fa": "کادو دادن",
+       "tr": "kādo dādan",
+       "de": "schenken",
+       "emoji": "🎁"
+      },
+      {
+       "fa": "پریدن",
+       "tr": "parīdan",
+       "de": "springen",
+       "emoji": "🤸"
+      },
+      {
+       "fa": "دور هم جمع شدن",
+       "tr": "dour-e ham dscham schodan",
+       "de": "zusammenkommen",
+       "emoji": "👨‍👩‍👧"
+      },
+      {
+       "fa": "فوت کردن",
+       "tr": "fūt kardan",
+       "de": "auspusten",
+       "emoji": "🌬️"
+      },
+      {
+       "fa": "رقصیدن",
+       "tr": "raghsīdan",
+       "de": "tanzen",
+       "emoji": "💃"
+      },
+      {
+       "fa": "دعوت کردن",
+       "tr": "daʿwat kardan",
+       "de": "einladen",
+       "emoji": "💌"
+      },
+      {
+       "fa": "غافلگیر کردن",
+       "tr": "ghāfelgīr kardan",
+       "de": "überraschen",
+       "emoji": "🎁"
+      }
+     ]
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "کادو دادن",
+       "tr": "kādo dādan",
+       "de": "schenken",
+       "emoji": "🎁"
+      },
+      {
+       "fa": "فوت کردن",
+       "tr": "fūt kardan",
+       "de": "auspusten",
+       "emoji": "🌬️"
       },
       {
        "fa": "جشن گرفتن",
@@ -240,76 +1399,112 @@
        "emoji": "👨‍👩‍👧"
       },
       {
-       "fa": "چهارشنبه‌سوری",
-       "tr": "tschahārschanbesūrī",
-       "de": "Feuerfest",
-       "emoji": "🔥"
+       "fa": "غافلگیر کردن",
+       "tr": "ghāfelgīr kardan",
+       "de": "überraschen",
+       "emoji": "🎁"
       },
       {
-       "fa": "پریدن",
-       "tr": "parīdan",
-       "de": "springen",
-       "emoji": "🤸"
-      },
-      {
-       "fa": "دید و بازدید",
-       "tr": "dīd o bāzdīd",
-       "de": "Neujahrsbesuche",
-       "emoji": "🏠"
+       "fa": "دعوت کردن",
+       "tr": "daʿwat kardan",
+       "de": "einladen",
+       "emoji": "💌"
       }
      ],
      "titel": "Was bedeutet das?"
     },
     {
-     "typ": "memory",
-     "links": "emoji",
-     "paare": [
+     "typ": "sortieren",
+     "titel": "Welches Wortfeld?",
+     "frage": "Ordne die Wörter dem Wortfeld zu.",
+     "kategorien": [
+      "🧩 Rund ums Thema",
+      "🌱 Haft-Sin & Nouruz",
+      "🎉 Feiern & Party",
+      "👨‍👩‍👧 Familie & Besuche"
+     ],
+     "items": [
       {
-       "fa": "هندوانه",
-       "tr": "hendewāne",
-       "de": "Wassermelone",
-       "emoji": "🍉"
+       "fa": "آتش",
+       "k": 0,
+       "e": "Feuer",
+       "say": false
       },
       {
-       "fa": "چهارشنبه‌سوری",
-       "tr": "tschahārschanbesūrī",
-       "de": "Feuerfest",
-       "emoji": "🔥"
-      },
-      {
-       "fa": "جشن",
-       "tr": "dschaschn",
-       "de": "Fest, Feier",
-       "emoji": "🎉"
-      },
-      {
-       "fa": "فال حافظ",
-       "tr": "fāl-e hāfez",
-       "de": "Hafes-Orakel",
-       "emoji": "📖"
+       "fa": "نوروز",
+       "k": 0,
+       "e": "Nouruz (Neujahr)",
+       "say": false
       },
       {
        "fa": "آجیل",
-       "tr": "ādschīl",
-       "de": "Nussmischung",
-       "emoji": "🥜"
+       "k": 0,
+       "e": "Nussmischung",
+       "say": false
       },
       {
-       "fa": "دید و بازدید",
-       "tr": "dīd o bāzdīd",
-       "de": "Neujahrsbesuche",
-       "emoji": "🏠"
+       "fa": "سیب",
+       "k": 1,
+       "e": "Apfel",
+       "say": false
+      },
+      {
+       "fa": "تخم‌مرغ رنگی",
+       "k": 1,
+       "e": "bemaltes Ei",
+       "say": false
+      },
+      {
+       "fa": "سیر",
+       "k": 1,
+       "e": "Knoblauch",
+       "say": false
+      },
+      {
+       "fa": "آتش‌بازی",
+       "k": 2,
+       "e": "Feuerwerk",
+       "say": false
+      },
+      {
+       "fa": "غافلگیری",
+       "k": 2,
+       "e": "Überraschung",
+       "say": false
+      },
+      {
+       "fa": "موسیقی",
+       "k": 2,
+       "e": "Musik",
+       "say": false
+      },
+      {
+       "fa": "بزرگ‌تر",
+       "k": 3,
+       "e": "Ältere/r",
+       "say": false
+      },
+      {
+       "fa": "پسرعمو",
+       "k": 3,
+       "e": "Cousin",
+       "say": false
+      },
+      {
+       "fa": "پدربزرگ",
+       "k": 3,
+       "e": "Großvater",
+       "say": false
       }
-     ],
-     "titel": "Memory: Bild & Wort"
+     ]
     },
     {
      "typ": "tempo",
-     "titel": "Blitz: Wörter",
+     "titel": "Blitz: alle Wörter",
      "aufgabe": "Was bedeutet das?",
      "modus": "de",
-     "sekunden": 60,
-     "ziel": 12,
+     "sekunden": 75,
+     "ziel": 15,
      "woerter": [
       {
        "fa": "نوروز",
@@ -376,6 +1571,146 @@
        "a": "Feuer"
       },
       {
+       "fa": "سیب",
+       "a": "Apfel"
+      },
+      {
+       "fa": "سکه",
+       "a": "Münze"
+      },
+      {
+       "fa": "سیر",
+       "a": "Knoblauch"
+      },
+      {
+       "fa": "سرکه",
+       "a": "Essig"
+      },
+      {
+       "fa": "سماق",
+       "a": "Sumach"
+      },
+      {
+       "fa": "سمنو",
+       "a": "Weizenkeimpudding"
+      },
+      {
+       "fa": "سنجد",
+       "a": "Ölweidenfrucht"
+      },
+      {
+       "fa": "ماهی قرمز",
+       "a": "Goldfisch"
+      },
+      {
+       "fa": "تخم‌مرغ رنگی",
+       "a": "bemaltes Ei"
+      },
+      {
+       "fa": "آینه",
+       "a": "Spiegel"
+      },
+      {
+       "fa": "شمع",
+       "a": "Kerze"
+      },
+      {
+       "fa": "خانه‌تکانی",
+       "a": "Frühjahrsputz"
+      },
+      {
+       "fa": "کیک تولد",
+       "a": "Geburtstagstorte"
+      },
+      {
+       "fa": "بادکنک",
+       "a": "Luftballon"
+      },
+      {
+       "fa": "مهمان",
+       "a": "Gast"
+      },
+      {
+       "fa": "موسیقی",
+       "a": "Musik"
+      },
+      {
+       "fa": "رقص",
+       "a": "Tanz"
+      },
+      {
+       "fa": "شام",
+       "a": "Abendessen"
+      },
+      {
+       "fa": "آتش‌بازی",
+       "a": "Feuerwerk"
+      },
+      {
+       "fa": "غافلگیری",
+       "a": "Überraschung"
+      },
+      {
+       "fa": "آرزو",
+       "a": "Wunsch"
+      },
+      {
+       "fa": "شمع تولد",
+       "a": "Geburtstagskerze"
+      },
+      {
+       "fa": "عکس دسته‌جمعی",
+       "a": "Gruppenfoto"
+      },
+      {
+       "fa": "تبریک",
+       "a": "Glückwunsch"
+      },
+      {
+       "fa": "پدربزرگ",
+       "a": "Großvater"
+      },
+      {
+       "fa": "مادربزرگ",
+       "a": "Großmutter"
+      },
+      {
+       "fa": "عمو",
+       "a": "Onkel (väterlich)"
+      },
+      {
+       "fa": "خاله",
+       "a": "Tante (mütterlich)"
+      },
+      {
+       "fa": "پسرعمو",
+       "a": "Cousin"
+      },
+      {
+       "fa": "دخترخاله",
+       "a": "Cousine"
+      },
+      {
+       "fa": "فامیل",
+       "a": "Verwandtschaft"
+      },
+      {
+       "fa": "بزرگ‌تر",
+       "a": "Ältere/r"
+      },
+      {
+       "fa": "شیرینی",
+       "a": "Gebäck"
+      },
+      {
+       "fa": "چای",
+       "a": "Tee"
+      },
+      {
+       "fa": "لباس نو",
+       "a": "neue Kleidung"
+      },
+      {
        "fa": "جشن گرفتن",
        "a": "feiern"
       },
@@ -394,19 +1729,35 @@
       {
        "fa": "دور هم جمع شدن",
        "a": "zusammenkommen"
+      },
+      {
+       "fa": "فوت کردن",
+       "a": "auspusten"
+      },
+      {
+       "fa": "رقصیدن",
+       "a": "tanzen"
+      },
+      {
+       "fa": "دعوت کردن",
+       "a": "einladen"
+      },
+      {
+       "fa": "غافلگیر کردن",
+       "a": "überraschen"
       }
      ]
     }
    ]
   },
   {
-   "id": "s2",
+   "id": "r1",
    "titel": "Redemittel",
    "vorschau": "عیدتون مبارک!",
    "karten": [
     {
      "typ": "info",
-     "titel": "Redemittel – Teil 1",
+     "titel": "Redemittel (1)",
      "text": "<p>So sagt man das im Gespräch. Tippe einen Satz an, um ihn zu hören.</p>",
      "stil": "merke",
      "beispiele": [
@@ -439,21 +1790,21 @@
        "tr": "schanbe tawallodame, to ham biyā!",
        "de": "Samstag ist mein Geburtstag, komm doch auch!",
        "x": "شنبه تولد من است، تو هم بیا!"
-      }
-     ]
-    },
-    {
-     "typ": "info",
-     "titel": "Redemittel – Teil 2",
-     "text": "<p>Die Schriftform findest du gleich in der Übung „Geschrieben ↔ gesprochen“.</p>",
-     "stil": "merke",
-     "beispiele": [
+      },
       {
        "fa": "شب یلدا دور هم جمع می‌شیم.",
        "tr": "schab-e yaldā dour-e ham dscham mīschīm.",
        "de": "An Yalda kommen wir zusammen.",
        "x": "برای شب یلدا دور هم جمع می‌شویم."
-      },
+      }
+     ]
+    },
+    {
+     "typ": "info",
+     "titel": "Redemittel (2)",
+     "text": "<p>So sagt man das im Gespräch. Tippe einen Satz an, um ihn zu hören.</p>",
+     "stil": "merke",
+     "beispiele": [
       {
        "fa": "چی بیارم؟",
        "tr": "tschī biyāram?",
@@ -477,6 +1828,56 @@
        "tr": "batschtsche ke būdam, …",
        "de": "Als ich ein Kind war, …",
        "x": "بچه که بودم، …"
+      },
+      {
+       "fa": "آرزو کن و شمعا رو فوت کن!",
+       "tr": "ārezū kon o schamʿā ro fūt kon!",
+       "de": "Wünsch dir was und puste die Kerzen aus!",
+       "x": "آرزو کن و شمع‌ها را فوت کن!"
+      },
+      {
+       "fa": "صد سال زنده باشی!",
+       "tr": "sad sāl zende bāschī!",
+       "de": "Mögest du hundert Jahre alt werden!",
+       "x": "صد سال زنده باشی!"
+      }
+     ]
+    },
+    {
+     "typ": "info",
+     "titel": "Redemittel (3)",
+     "text": "<p>So sagt man das im Gespräch. Tippe einen Satz an, um ihn zu hören.</p>",
+     "stil": "merke",
+     "beispiele": [
+      {
+       "fa": "جات خالی بود!",
+       "tr": "dschāt chālī būd!",
+       "de": "Du hast uns gefehlt! (wörtl.: dein Platz war leer)",
+       "x": "جای تو خالی بود!"
+      },
+      {
+       "fa": "خوش بگذره!",
+       "tr": "chosch begzare!",
+       "de": "Viel Spaß!",
+       "x": "خوش بگذرد!"
+      },
+      {
+       "fa": "پارسال چی کار کردید؟",
+       "tr": "pārsāl tschī kār kardīd?",
+       "de": "Was habt ihr letztes Jahr gemacht?",
+       "x": "پارسال چه کار کردید؟"
+      },
+      {
+       "fa": "ساعت چند بیام؟",
+       "tr": "sāʿat-e tschand biyām?",
+       "de": "Um wie viel Uhr soll ich kommen?",
+       "x": "ساعت چند بیایم؟"
+      },
+      {
+       "fa": "مرسی که دعوتم کردی!",
+       "tr": "mersī ke daʿwatam kardī!",
+       "de": "Danke für die Einladung!",
+       "x": "ممنون از دعوتت!"
       }
      ]
     },
@@ -485,16 +1886,10 @@
      "links": "de",
      "paare": [
       {
-       "fa": "شب یلدا دور هم جمع می‌شیم.",
-       "tr": "schab-e yaldā dour-e ham dscham mīschīm.",
-       "de": "An Yalda kommen wir zusammen.",
-       "x": "برای شب یلدا دور هم جمع می‌شویم."
-      },
-      {
-       "fa": "عیدتون مبارک!",
-       "tr": "ʿeydetūn mobārak!",
-       "de": "Frohes Fest! / Frohes neues Jahr!",
-       "x": "عید شما مبارک!"
+       "fa": "مرسی که دعوتم کردی!",
+       "tr": "mersī ke daʿwatam kardī!",
+       "de": "Danke für die Einladung!",
+       "x": "ممنون از دعوتت!"
       },
       {
        "fa": "صد سال به این سالا!",
@@ -503,11 +1898,36 @@
        "x": "صد سال به این سال‌ها!"
       },
       {
-       "fa": "تولدت مبارک!",
-       "tr": "tawallodet mobārak!",
-       "de": "Alles Gute zum Geburtstag!",
-       "x": "تولدت مبارک!"
+       "fa": "شب یلدا دور هم جمع می‌شیم.",
+       "tr": "schab-e yaldā dour-e ham dscham mīschīm.",
+       "de": "An Yalda kommen wir zusammen.",
+       "x": "برای شب یلدا دور هم جمع می‌شویم."
       },
+      {
+       "fa": "خوش بگذره!",
+       "tr": "chosch begzare!",
+       "de": "Viel Spaß!",
+       "x": "خوش بگذرد!"
+      },
+      {
+       "fa": "ساعت چند بیام؟",
+       "tr": "sāʿat-e tschand biyām?",
+       "de": "Um wie viel Uhr soll ich kommen?",
+       "x": "ساعت چند بیایم؟"
+      },
+      {
+       "fa": "جات خالی بود!",
+       "tr": "dschāt chālī būd!",
+       "de": "Du hast uns gefehlt! (wörtl.: dein Platz war leer)",
+       "x": "جای تو خالی بود!"
+      }
+     ],
+     "titel": "Was bedeutet das?"
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
       {
        "fa": "نوروز معمولاً می‌ریم خونه‌ی بزرگ‌ترا.",
        "tr": "nourūz maʿmūlan mīrīm chūne-ye bozorgtarā.",
@@ -515,13 +1935,37 @@
        "x": "در نوروز معمولاً به خانه‌ی بزرگ‌ترها می‌رویم."
       },
       {
-       "fa": "سال نو مبارک!",
-       "tr": "sāl-e no mobārak!",
-       "de": "Frohes neues Jahr!",
-       "x": "سال نو مبارک!"
+       "fa": "خوش بگذره!",
+       "tr": "chosch begzare!",
+       "de": "Viel Spaß!",
+       "x": "خوش بگذرد!"
+      },
+      {
+       "fa": "صد سال به این سالا!",
+       "tr": "sad sāl be īn sālā!",
+       "de": "Noch viele schöne Jahre!",
+       "x": "صد سال به این سال‌ها!"
+      },
+      {
+       "fa": "شنبه تولدمه، تو هم بیا!",
+       "tr": "schanbe tawallodame, to ham biyā!",
+       "de": "Samstag ist mein Geburtstag, komm doch auch!",
+       "x": "شنبه تولد من است، تو هم بیا!"
+      },
+      {
+       "fa": "عیدتون مبارک!",
+       "tr": "ʿeydetūn mobārak!",
+       "de": "Frohes Fest! / Frohes neues Jahr!",
+       "x": "عید شما مبارک!"
+      },
+      {
+       "fa": "پارسال چی کار کردید؟",
+       "tr": "pārsāl tschī kār kardīd?",
+       "de": "Was habt ihr letztes Jahr gemacht?",
+       "x": "پارسال چه کار کردید؟"
       }
      ],
-     "titel": "Was bedeutet das?"
+     "titel": "Noch einmal: Was bedeutet das?"
     },
     {
      "typ": "sortieren",
@@ -592,12 +2036,188 @@
        "k": 2,
        "e": "Als ich ein Kind war, …",
        "say": false
+      },
+      {
+       "fa": "آرزو کن و شمعا رو فوت کن!",
+       "k": 0,
+       "e": "Wünsch dir was und puste die Kerzen aus!",
+       "say": false
+      },
+      {
+       "fa": "صد سال زنده باشی!",
+       "k": 0,
+       "e": "Mögest du hundert Jahre alt werden!",
+       "say": false
+      },
+      {
+       "fa": "جات خالی بود!",
+       "k": 2,
+       "e": "Du hast uns gefehlt! (wörtl.: dein Platz war leer)",
+       "say": false
+      },
+      {
+       "fa": "خوش بگذره!",
+       "k": 0,
+       "e": "Viel Spaß!",
+       "say": false
+      },
+      {
+       "fa": "پارسال چی کار کردید؟",
+       "k": 2,
+       "e": "Was habt ihr letztes Jahr gemacht?",
+       "say": false
+      },
+      {
+       "fa": "ساعت چند بیام؟",
+       "k": 1,
+       "e": "Um wie viel Uhr soll ich kommen?",
+       "say": false
+      },
+      {
+       "fa": "مرسی که دعوتم کردی!",
+       "k": 1,
+       "e": "Danke für die Einladung!",
+       "say": false
       }
      ]
     },
     {
+     "typ": "paare",
+     "links": "x",
+     "paare": [
+      {
+       "fa": "عید شما مبارک!",
+       "tr": "",
+       "de": "Frohes Fest! / Frohes neues Jahr!",
+       "x": "عیدتون مبارک!"
+      },
+      {
+       "fa": "پارسال چه کار کردید؟",
+       "tr": "",
+       "de": "Was habt ihr letztes Jahr gemacht?",
+       "x": "پارسال چی کار کردید؟"
+      },
+      {
+       "fa": "صد سال به این سال‌ها!",
+       "tr": "",
+       "de": "Noch viele schöne Jahre!",
+       "x": "صد سال به این سالا!"
+      },
+      {
+       "fa": "برای شب یلدا دور هم جمع می‌شویم.",
+       "tr": "",
+       "de": "An Yalda kommen wir zusammen.",
+       "x": "شب یلدا دور هم جمع می‌شیم."
+      },
+      {
+       "fa": "رسم است که …",
+       "tr": "",
+       "de": "Es ist Brauch, dass …",
+       "x": "رسمه که …"
+      },
+      {
+       "fa": "ممنون از دعوتت!",
+       "tr": "",
+       "de": "Danke für die Einladung!",
+       "x": "مرسی که دعوتم کردی!"
+      }
+     ],
+     "titel": "Geschrieben ↔ gesprochen"
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Redemittel",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 70,
+     "ziel": 12,
+     "woerter": [
+      {
+       "fa": "عیدتون مبارک!",
+       "a": "Frohes Fest! / Frohes neues Jahr!"
+      },
+      {
+       "fa": "سال نو مبارک!",
+       "a": "Frohes neues Jahr!"
+      },
+      {
+       "fa": "تولدت مبارک!",
+       "a": "Alles Gute zum Geburtstag!"
+      },
+      {
+       "fa": "صد سال به این سالا!",
+       "a": "Noch viele schöne Jahre!"
+      },
+      {
+       "fa": "شنبه تولدمه، تو هم بیا!",
+       "a": "Samstag ist mein Geburtstag, komm doch auch!"
+      },
+      {
+       "fa": "شب یلدا دور هم جمع می‌شیم.",
+       "a": "An Yalda kommen wir zusammen."
+      },
+      {
+       "fa": "چی بیارم؟",
+       "a": "Was soll ich mitbringen?"
+      },
+      {
+       "fa": "نوروز معمولاً می‌ریم خونه‌ی بزرگ‌ترا.",
+       "a": "Zu Nouruz besuchen wir meist die Älteren der Familie."
+      },
+      {
+       "fa": "رسمه که …",
+       "a": "Es ist Brauch, dass …"
+      },
+      {
+       "fa": "بچه که بودم، …",
+       "a": "Als ich ein Kind war, …"
+      },
+      {
+       "fa": "آرزو کن و شمعا رو فوت کن!",
+       "a": "Wünsch dir was und puste die Kerzen aus!"
+      },
+      {
+       "fa": "صد سال زنده باشی!",
+       "a": "Mögest du hundert Jahre alt werden!"
+      },
+      {
+       "fa": "جات خالی بود!",
+       "a": "Du hast uns gefehlt! (wörtl.: dein Platz war leer)"
+      },
+      {
+       "fa": "خوش بگذره!",
+       "a": "Viel Spaß!"
+      },
+      {
+       "fa": "پارسال چی کار کردید؟",
+       "a": "Was habt ihr letztes Jahr gemacht?"
+      },
+      {
+       "fa": "ساعت چند بیام؟",
+       "a": "Um wie viel Uhr soll ich kommen?"
+      },
+      {
+       "fa": "مرسی که دعوتم کردی!",
+       "a": "Danke für die Einladung!"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "r2",
+   "titel": "Situationen & Reaktionen",
+   "vorschau": "چی بگم؟",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Reagieren",
+     "text": "<p>Im Gespräch kommt es auf die <b>Reaktion</b> an. Lies, was jemand sagt – und was man darauf antwortet.</p><div class='karte' style='margin:10px 0;padding:10px 14px'><div class='fa' style='font-size:1.3rem;text-align:right'>💬 عیدت مبارک!</div><div class='fa' style='font-size:1.3rem;text-align:right;color:var(--lapis)'>↩️ عید تو هم مبارک!</div><div class='klein muted'>Frohes Fest!</div></div><div class='karte' style='margin:10px 0;padding:10px 14px'><div class='fa' style='font-size:1.3rem;text-align:right'>💬 تولدت مبارک!</div><div class='fa' style='font-size:1.3rem;text-align:right;color:var(--lapis)'>↩️ مرسی! لطف داری.</div><div class='klein muted'>Alles Gute zum Geburtstag!</div></div><div class='karte' style='margin:10px 0;padding:10px 14px'><div class='fa' style='font-size:1.3rem;text-align:right'>💬 جات خالی بود!</div><div class='fa' style='font-size:1.3rem;text-align:right;color:var(--lapis)'>↩️ حیف شد! دفعه‌ی بعد حتماً میام.</div><div class='klein muted'>Du hast uns gefehlt!</div></div><div class='karte' style='margin:10px 0;padding:10px 14px'><div class='fa' style='font-size:1.3rem;text-align:right'>💬 چی بیارم؟</div><div class='fa' style='font-size:1.3rem;text-align:right;color:var(--lapis)'>↩️ هیچی، فقط خودت بیا!</div><div class='klein muted'>Was soll ich mitbringen?</div></div>",
+     "stil": "merke"
+    },
+    {
      "typ": "wahl",
-     "titel": "Was sagst du?",
+     "titel": "Was sagst du? (1)",
      "fragen": [
       {
        "frage": "Am 21. März triffst du eine iranische Freundin:",
@@ -646,102 +2266,185 @@
      ]
     },
     {
+     "typ": "wahl",
+     "titel": "Was sagst du? (2)",
+     "fragen": [
+      {
+       "frage": "Deine Freundin war nicht auf der Party. Du sagst danach:",
+       "optionen": [
+        "جات خالی بود!",
+        "خوش بگذره!",
+        "ساعت چند بیام؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "Dein Freund geht heute Abend auf ein Fest:",
+       "optionen": [
+        "خوش بگذره!",
+        "جات خالی بود!",
+        "تولدت مبارک!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "Du wurdest eingeladen und bedankst dich:",
+       "optionen": [
+        "مرسی که دعوتم کردی! ساعت چند بیام؟",
+        "جات خالی بود!",
+        "رسمه که …"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    },
+    {
      "typ": "paare",
      "links": "x",
      "paare": [
       {
-       "fa": "عید شما مبارک!",
+       "fa": "عیدت مبارک!",
        "tr": "",
-       "de": "Frohes Fest! / Frohes neues Jahr!",
-       "x": "عیدتون مبارک!"
-      },
-      {
-       "fa": "صد سال به این سال‌ها!",
-       "tr": "",
-       "de": "Noch viele schöne Jahre!",
-       "x": "صد سال به این سالا!"
-      },
-      {
-       "fa": "شنبه تولد من است، تو هم بیا!",
-       "tr": "",
-       "de": "Samstag ist mein Geburtstag, komm doch auch!",
-       "x": "شنبه تولدمه، تو هم بیا!"
-      },
-      {
-       "fa": "برای شب یلدا دور هم جمع می‌شویم.",
-       "tr": "",
-       "de": "An Yalda kommen wir zusammen.",
-       "x": "شب یلدا دور هم جمع می‌شیم."
-      },
-      {
-       "fa": "چه چیزی بیاورم؟",
-       "tr": "",
-       "de": "Was soll ich mitbringen?",
-       "x": "چی بیارم؟"
-      },
-      {
-       "fa": "در نوروز معمولاً به خانه‌ی بزرگ‌ترها می‌رویم.",
-       "tr": "",
-       "de": "Zu Nouruz besuchen wir meist die Älteren der Familie.",
-       "x": "نوروز معمولاً می‌ریم خونه‌ی بزرگ‌ترا."
-      }
-     ],
-     "titel": "Geschrieben ↔ gesprochen"
-    },
-    {
-     "typ": "tempo",
-     "titel": "Blitz: Redemittel",
-     "aufgabe": "Was bedeutet das?",
-     "modus": "de",
-     "sekunden": 60,
-     "ziel": 10,
-     "woerter": [
-      {
-       "fa": "عیدتون مبارک!",
-       "a": "Frohes Fest! / Frohes neues Jahr!"
-      },
-      {
-       "fa": "سال نو مبارک!",
-       "a": "Frohes neues Jahr!"
+       "de": "Frohes Fest!",
+       "x": "عید تو هم مبارک!"
       },
       {
        "fa": "تولدت مبارک!",
-       "a": "Alles Gute zum Geburtstag!"
+       "tr": "",
+       "de": "Alles Gute zum Geburtstag!",
+       "x": "مرسی! لطف داری."
       },
       {
-       "fa": "صد سال به این سالا!",
-       "a": "Noch viele schöne Jahre!"
-      },
-      {
-       "fa": "شنبه تولدمه، تو هم بیا!",
-       "a": "Samstag ist mein Geburtstag, komm doch auch!"
-      },
-      {
-       "fa": "شب یلدا دور هم جمع می‌شیم.",
-       "a": "An Yalda kommen wir zusammen."
+       "fa": "جات خالی بود!",
+       "tr": "",
+       "de": "Du hast uns gefehlt!",
+       "x": "حیف شد! دفعه‌ی بعد حتماً میام."
       },
       {
        "fa": "چی بیارم؟",
-       "a": "Was soll ich mitbringen?"
+       "tr": "",
+       "de": "Was soll ich mitbringen?",
+       "x": "هیچی، فقط خودت بیا!"
       },
       {
-       "fa": "نوروز معمولاً می‌ریم خونه‌ی بزرگ‌ترا.",
-       "a": "Zu Nouruz besuchen wir meist die Älteren der Familie."
+       "fa": "سال نو مبارک!",
+       "tr": "",
+       "de": "Frohes neues Jahr!",
+       "x": "سال نو شما هم مبارک!"
       },
       {
-       "fa": "رسمه که …",
-       "a": "Es ist Brauch, dass …"
+       "fa": "خوش بگذره!",
+       "tr": "",
+       "de": "Viel Spaß!",
+       "x": "مرسی، به تو هم!"
+      }
+     ],
+     "titel": "Was antwortest du?"
+    },
+    {
+     "typ": "wahl",
+     "titel": "Die passende Reaktion",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>عیدت مبارک!</span>",
+       "optionen": [
+        "عید تو هم مبارک!",
+        "هیچی، فقط خودت بیا!",
+        "حیف شد! دفعه‌ی بعد حتماً میام."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
       },
       {
-       "fa": "بچه که بودم، …",
-       "a": "Als ich ein Kind war, …"
+       "frage": "<span class='fa'>تولدت مبارک!</span>",
+       "optionen": [
+        "مرسی! لطف داری.",
+        "سال نو شما هم مبارک!",
+        "حتماً، با کمال میل!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>جات خالی بود!</span>",
+       "optionen": [
+        "حیف شد! دفعه‌ی بعد حتماً میام.",
+        "سال نو شما هم مبارک!",
+        "مرسی! لطف داری."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>چی بیارم؟</span>",
+       "optionen": [
+        "هیچی، فقط خودت بیا!",
+        "مرسی! لطف داری.",
+        "وای، زحمت کشیدی!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>سال نو مبارک!</span>",
+       "optionen": [
+        "سال نو شما هم مبارک!",
+        "مرسی! لطف داری.",
+        "حتماً، با کمال میل!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>خوش بگذره!</span>",
+       "optionen": [
+        "مرسی، به تو هم!",
+        "مرسی! لطف داری.",
+        "حیف شد! دفعه‌ی بعد حتماً میام."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>این کادو برای توئه.</span>",
+       "optionen": [
+        "وای، زحمت کشیدی!",
+        "عید تو هم مبارک!",
+        "مرسی! لطف داری."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>شب یلدا میای خونه‌ی ما؟</span>",
+       "optionen": [
+        "حتماً، با کمال میل!",
+        "مرسی! لطف داری.",
+        "حیف شد! دفعه‌ی بعد حتماً میام."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
       }
      ]
     }
    ]
   },
   {
-   "id": "s3",
+   "id": "d",
    "titel": "Modelldialog",
    "vorschau": "Einladung zu Yalda",
    "karten": [
@@ -841,6 +2544,67 @@
      ]
     },
     {
+     "typ": "wahl",
+     "titel": "Wie geht es weiter?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>کلارا، شب یلدا چی کار می‌کنی؟</span><br><span class='klein muted'>Was kommt als Nächstes?</span>",
+       "optionen": [
+        "یلدا؟ اون چیه؟",
+        "یه آرزو می‌کنی، کتاب حافظ رو باز می‌کنی و یه شعر می‌خونی.",
+        "انار، هندونه، آجیل … و فال حافظ می‌گیریم!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>طولانی‌ترین شب ساله. دور هم جمع می‌شیم، تا دیروقت بیداریم.</span><br><span class='klein muted'>Was kommt als Nächstes?</span>",
+       "optionen": [
+        "چه جالب! چی می‌خورید؟",
+        "کلارا، شب یلدا چی کار می‌کنی؟",
+        "یلدا؟ اون چیه؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>انار، هندونه، آجیل … و فال حافظ می‌گیریم!</span><br><span class='klein muted'>Was kommt als Nächstes?</span>",
+       "optionen": [
+        "فال حافظ؟ یعنی چی؟",
+        "یه آرزو می‌کنی، کتاب حافظ رو باز می‌کنی و یه شعر می‌خونی.",
+        "چه جالب! چی می‌خورید؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>یه آرزو می‌کنی، کتاب حافظ رو باز می‌کنی و یه شعر می‌خونی.</span><br><span class='klein muted'>Was kommt als Nächstes?</span>",
+       "optionen": [
+        "عالیه، حتماً میام! چی بیارم؟",
+        "هیچی! فقط خودت بیا. … اگه خواستی یه کیک آلمانی!",
+        "فال حافظ؟ یعنی چی؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>هیچی! فقط خودت بیا. … اگه خواستی یه کیک آلمانی!</span><br><span class='klein muted'>Was kommt als Nächstes?</span>",
+       "optionen": [
+        "قبول! یه اشتولن میارم.",
+        "کلارا، شب یلدا چی کار می‌کنی؟",
+        "انار، هندونه، آجیل … و فال حافظ می‌گیریم!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    },
+    {
      "typ": "ordnen",
      "titel": "Bring den Dialog in die richtige Reihenfolge",
      "frage": "Tippe die Sätze der Reihe nach an.",
@@ -886,11 +2650,80 @@
        "de": "Toll, ich komme bestimmt! Was soll ich mitbringen?"
       }
      ]
+    },
+    {
+     "typ": "bauen",
+     "titel": "Baue die Sätze aus dem Dialog",
+     "trenner": " ",
+     "woerter": [
+      {
+       "fa": "کلارا، شب یلدا چی کار می‌کنی؟",
+       "tr": "klārā, schab-e yaldā tschī kār mīkonī?",
+       "de": "Clara, was machst du an Yalda?",
+       "teile": [
+        "کلارا",
+        "شب",
+        "یلدا",
+        "چی",
+        "کار",
+        "می‌کنی"
+       ],
+       "extra": [
+        "تا"
+       ]
+      },
+      {
+       "fa": "چه جالب! چی می‌خورید؟",
+       "tr": "tsche dschāleb! tschī mīchorīd?",
+       "de": "Wie interessant! Was esst ihr?",
+       "teile": [
+        "چه",
+        "جالب",
+        "چی",
+        "می‌خورید"
+       ],
+       "extra": [
+        "…"
+       ]
+      },
+      {
+       "fa": "انار، هندونه، آجیل … و فال حافظ می‌گیریم!",
+       "tr": "anār, hendūne, ādschīl … o fāl-e hāfez mīgīrīm!",
+       "de": "Granatäpfel, Wassermelone, Nüsse … und wir befragen Hafes!",
+       "teile": [
+        "انار",
+        "هندونه",
+        "آجیل",
+        "…",
+        "و",
+        "فال",
+        "حافظ",
+        "می‌گیریم"
+       ],
+       "extra": [
+        "طولانی‌ترین"
+       ]
+      },
+      {
+       "fa": "فال حافظ؟ یعنی چی؟",
+       "tr": "fāl-e hāfez? yaʿnī tschī?",
+       "de": "Hafes-Orakel? Was heißt das?",
+       "teile": [
+        "فال",
+        "حافظ",
+        "یعنی",
+        "چی"
+       ],
+       "extra": [
+        "خودت"
+       ]
+      }
+     ]
     }
    ]
   },
   {
-   "id": "s4",
+   "id": "t",
    "titel": "Lesen",
    "vorschau": "Nouruz – das Fest des neuen Tages",
    "karten": [
@@ -1016,11 +2849,43 @@
        "richtig": 0
       }
      ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "نوروز، جشن آغاز بهار، بیش از سه هزار سال قدمت دارد.",
+       "tr": "nourūz, dschaschn-e āghāz-e bahār, bīsch az se hezār sāl ghedmat dārad.",
+       "de": "Nouruz, das Fest des Frühlingsbeginns, ist über 3000 Jahre alt."
+      },
+      {
+       "fa": "سال نو دقیقاً در لحظه‌ی اعتدال بهاری، حدود بیست و یکم مارس، شروع می‌شود.",
+       "tr": "sāl-e no daghīghan dar lahze-ye eʿtedāl-e bahārī, hodūd-e bīst o yekom-e mārs, schorūʿ mīschawad.",
+       "de": "Das neue Jahr beginnt genau zur Frühlings-Tagundnachtgleiche, um den 21. März."
+      },
+      {
+       "fa": "مردم چند هفته قبل خانه‌تکانی می‌کنند و سبزه سبز می‌کنند.",
+       "tr": "mardom tschand hafte ghabl chānetekānī mīkonand o sabze sabz mīkonand.",
+       "de": "Wochen vorher macht man Frühjahrsputz und lässt Sprossen keimen."
+      },
+      {
+       "fa": "روی سفره‌ی هفت‌سین هفت چیز می‌گذارند که با «س» شروع می‌شود، مثل سیب و سکه.",
+       "tr": "rū-ye sofre-ye haftsīn haft tschīz mīgozārand ke bā «sīn» schorūʿ mīschawad, mesl-e sīb o sekke.",
+       "de": "Auf den Haft-Sin-Tisch legt man sieben Dinge mit „S“, z. B. Apfel und Münze."
+      },
+      {
+       "fa": "در روزهای نوروز به دید و بازدید می‌روند و بزرگ‌ترها به بچه‌ها عیدی می‌دهند.",
+       "tr": "dar rūzhā-ye nourūz be dīd o bāzdīd mīravand o bozorgtarhā be batschtschehā ʿeydī mīdahand.",
+       "de": "In den Nouruz-Tagen macht man Besuche, und die Älteren geben den Kindern Geldgeschenke."
+      }
+     ]
     }
    ]
   },
   {
-   "id": "s5",
+   "id": "k",
    "titel": "Gut zu wissen",
    "vorschau": "Der Festkalender",
    "karten": [
@@ -1066,7 +2931,7 @@
    ]
   },
   {
-   "id": "s6",
+   "id": "p",
    "titel": "Vorbereitung für die Sitzung",
    "vorschau": "آماده‌ای؟",
    "karten": [
@@ -1112,14 +2977,9 @@
      "links": "de",
      "paare": [
       {
-       "fa": "بهترین تولدت کدوم بود؟",
-       "tr": "behtarīn tawallodet kodūm būd?",
-       "de": "Welcher war dein schönster Geburtstag?"
-      },
-      {
-       "fa": "نوروز رو با سال نوی میلادی مقایسه کن.",
-       "tr": "nourūz ro bā sāl-e no-ye mīlādī moghāyese kon.",
-       "de": "Vergleiche Nouruz mit Silvester."
+       "fa": "کادو دادن رو دوست داری یا کادو گرفتن رو؟",
+       "tr": "kādo dādan ro dūst dārī yā kādo gereftan ro?",
+       "de": "Schenkst du lieber oder wirst du lieber beschenkt?"
       },
       {
        "fa": "مهم‌ترین جشن تو خانواده‌ت چیه؟ چطور جشن می‌گیرید؟",
@@ -1127,19 +2987,24 @@
        "de": "Welches Fest ist in deiner Familie das wichtigste? Wie feiert ihr?"
       },
       {
-       "fa": "کدوم رسم ایرانی رو بیشتر دوست داری؟",
-       "tr": "kodūm rasm-e īrānī ro bīschtar dūst dārī?",
-       "de": "Welchen iranischen Brauch magst du am liebsten?"
+       "fa": "نوروز رو با سال نوی میلادی مقایسه کن.",
+       "tr": "nourūz ro bā sāl-e no-ye mīlādī moghāyese kon.",
+       "de": "Vergleiche Nouruz mit Silvester."
       },
       {
-       "fa": "کادو دادن رو دوست داری یا کادو گرفتن رو؟",
-       "tr": "kādo dādan ro dūst dārī yā kādo gereftan ro?",
-       "de": "Schenkst du lieber oder wirst du lieber beschenkt?"
+       "fa": "بهترین تولدت کدوم بود؟",
+       "tr": "behtarīn tawallodet kodūm būd?",
+       "de": "Welcher war dein schönster Geburtstag?"
       },
       {
        "fa": "اگه می‌تونستی یه جشن جدید درست کنی، چی بود؟",
        "tr": "age mītūnestī ye dschaschn-e dschadīd dorost konī, tschī būd?",
        "de": "Wenn du ein neues Fest erfinden könntest – welches?"
+      },
+      {
+       "fa": "کدوم رسم ایرانی رو بیشتر دوست داری؟",
+       "tr": "kodūm rasm-e īrānī ro bīschtar dūst dārī?",
+       "de": "Welchen iranischen Brauch magst du am liebsten?"
       }
      ],
      "titel": "Welche Frage ist das?"

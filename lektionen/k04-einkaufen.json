@@ -17,19 +17,19 @@
     {
      "typ": "info",
      "titel": "So läuft die Sitzung",
-     "text": "<p>Diese Lektion ist deine <b>Hausaufgabe</b>: Hier lernst du Wörter und Redemittel und liest einen Modelldialog. Im Unterricht wird dann <b>nur gesprochen</b>.</p><p><b>Im Unterricht:</b></p><ul><li>Basar-Spiel: Händler/innen gegen Kund/innen</li><li>Reklamation: Das Handy ist kaputt!</li><li>Ratespiel: Was habe ich gekauft?</li></ul>",
+     "text": "<p>Diese Lektion ist deine <b>Hausaufgabe</b>: Wortschatz, Redemittel, Dialoge und Texte. Im Unterricht wird dann <b>nur gesprochen</b>.</p><p><b>Im Unterricht:</b></p><ul><li>Basar-Spiel: Händler/innen gegen Kund/innen</li><li>Reklamation: Das Handy ist kaputt!</li><li>Ratespiel: Was habe ich gekauft?</li></ul><p class='klein muted'>Wortschatz dieser Lektion: 61 Wörter · 18 Redemittel</p>",
      "stil": "merke"
     }
    ]
   },
   {
-   "id": "s1",
-   "titel": "Wörter",
+   "id": "w0",
+   "titel": "Rund ums Thema",
    "vorschau": "بازار · فروشنده · مشتری",
    "karten": [
     {
      "typ": "info",
-     "titel": "Wörter zum Thema – Teil 1",
+     "titel": "🧩 Rund ums Thema (1)",
      "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
      "beispiele": [
       {
@@ -84,7 +84,7 @@
     },
     {
      "typ": "info",
-     "titel": "Wörter zum Thema – Teil 2",
+     "titel": "🧩 Rund ums Thema (2)",
      "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
      "beispiele": [
       {
@@ -138,43 +138,6 @@
      ]
     },
     {
-     "typ": "info",
-     "titel": "Verben",
-     "text": "<p>Infinitiv – im Gespräch brauchst du sie gleich in allen Zeiten.</p>",
-     "beispiele": [
-      {
-       "fa": "خریدن",
-       "tr": "charīdan",
-       "de": "kaufen",
-       "emoji": "🛒"
-      },
-      {
-       "fa": "چانه زدن",
-       "tr": "tschāne zadan",
-       "de": "handeln, feilschen",
-       "emoji": "🤝"
-      },
-      {
-       "fa": "پس دادن",
-       "tr": "pas dādan",
-       "de": "zurückgeben",
-       "emoji": "↩️"
-      },
-      {
-       "fa": "عوض کردن",
-       "tr": "ʿawaz kardan",
-       "de": "umtauschen",
-       "emoji": "🔄"
-      },
-      {
-       "fa": "پوشیدن",
-       "tr": "pūschīdan",
-       "de": "anziehen, tragen",
-       "emoji": "👕"
-      }
-     ]
-    },
-    {
      "typ": "paare",
      "links": "de",
      "paare": [
@@ -222,16 +185,22 @@
      "links": "de",
      "paare": [
       {
-       "fa": "قیمت",
-       "tr": "gheymat",
-       "de": "Preis",
-       "emoji": "🏷️"
+       "fa": "ادویه",
+       "tr": "adwiye",
+       "de": "Gewürz",
+       "emoji": "🌶️"
       },
       {
-       "fa": "خریدن",
-       "tr": "charīdan",
-       "de": "kaufen",
-       "emoji": "🛒"
+       "fa": "زعفران",
+       "tr": "zaʿferān",
+       "de": "Safran",
+       "emoji": "🌸"
+      },
+      {
+       "fa": "گران",
+       "tr": "gerān",
+       "de": "teuer",
+       "emoji": "💎"
       },
       {
        "fa": "سایز",
@@ -246,41 +215,35 @@
        "emoji": "🧑‍💼"
       },
       {
-       "fa": "ادویه",
-       "tr": "adwiye",
-       "de": "Gewürz",
-       "emoji": "🌶️"
-      },
-      {
-       "fa": "رسید",
-       "tr": "resīd",
-       "de": "Quittung, Beleg",
-       "emoji": "🧾"
+       "fa": "ارزان",
+       "tr": "arzān",
+       "de": "billig",
+       "emoji": "👍"
       }
      ],
-     "titel": "Was bedeutet das?"
+     "titel": "Noch einmal: Was bedeutet das?"
     },
     {
      "typ": "memory",
      "links": "emoji",
      "paare": [
       {
-       "fa": "قیمت",
-       "tr": "gheymat",
-       "de": "Preis",
-       "emoji": "🏷️"
-      },
-      {
-       "fa": "ارزان",
-       "tr": "arzān",
-       "de": "billig",
-       "emoji": "👍"
-      },
-      {
        "fa": "فرش",
        "tr": "farsch",
        "de": "Teppich",
        "emoji": "🧶"
+      },
+      {
+       "fa": "نقد",
+       "tr": "naghd",
+       "de": "bar",
+       "emoji": "💵"
+      },
+      {
+       "fa": "سایز",
+       "tr": "sāyz",
+       "de": "Größe",
+       "emoji": "📏"
       },
       {
        "fa": "کارت بانکی",
@@ -289,27 +252,1275 @@
        "emoji": "💳"
       },
       {
-       "fa": "زعفران",
-       "tr": "zaʿferān",
-       "de": "Safran",
-       "emoji": "🌸"
+       "fa": "گران",
+       "tr": "gerān",
+       "de": "teuer",
+       "emoji": "💎"
       },
       {
-       "fa": "تخفیف",
-       "tr": "tachfīf",
-       "de": "Rabatt",
-       "emoji": "💸"
+       "fa": "مشتری",
+       "tr": "moschtarī",
+       "de": "Kunde, Kundin",
+       "emoji": "🛍️"
       }
      ],
      "titel": "Memory: Bild & Wort"
     },
     {
      "typ": "tempo",
-     "titel": "Blitz: Wörter",
+     "titel": "Blitz: Rund ums Thema",
      "aufgabe": "Was bedeutet das?",
      "modus": "de",
-     "sekunden": 60,
-     "ziel": 12,
+     "sekunden": 50,
+     "ziel": 10,
+     "woerter": [
+      {
+       "fa": "بازار",
+       "a": "Basar, Markt"
+      },
+      {
+       "fa": "فروشنده",
+       "a": "Verkäufer/in"
+      },
+      {
+       "fa": "مشتری",
+       "a": "Kunde, Kundin"
+      },
+      {
+       "fa": "قیمت",
+       "a": "Preis"
+      },
+      {
+       "fa": "تخفیف",
+       "a": "Rabatt"
+      },
+      {
+       "fa": "ارزان",
+       "a": "billig"
+      },
+      {
+       "fa": "گران",
+       "a": "teuer"
+      },
+      {
+       "fa": "سایز",
+       "a": "Größe"
+      },
+      {
+       "fa": "جنس",
+       "a": "Material, Qualität"
+      },
+      {
+       "fa": "رسید",
+       "a": "Quittung, Beleg"
+      },
+      {
+       "fa": "کارت بانکی",
+       "a": "Bankkarte"
+      },
+      {
+       "fa": "نقد",
+       "a": "bar"
+      },
+      {
+       "fa": "فرش",
+       "a": "Teppich"
+      },
+      {
+       "fa": "ادویه",
+       "a": "Gewürz"
+      },
+      {
+       "fa": "زعفران",
+       "a": "Safran"
+      },
+      {
+       "fa": "کیسه",
+       "a": "Tüte"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "w1",
+   "titel": "Kleidung & Farben",
+   "vorschau": "پیراهن · شلوار · کت",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "👗 Kleidung & Farben (1)",
+     "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
+     "beispiele": [
+      {
+       "fa": "پیراهن",
+       "tr": "pīrāhan",
+       "de": "Hemd, Kleid",
+       "emoji": "👔"
+      },
+      {
+       "fa": "شلوار",
+       "tr": "schalwār",
+       "de": "Hose",
+       "emoji": "👖"
+      },
+      {
+       "fa": "کت",
+       "tr": "kot",
+       "de": "Jacke, Sakko",
+       "emoji": "🧥"
+      },
+      {
+       "fa": "کفش",
+       "tr": "kafsch",
+       "de": "Schuh",
+       "emoji": "👟"
+      },
+      {
+       "fa": "شال",
+       "tr": "schāl",
+       "de": "Schal, Tuch",
+       "emoji": "🧣"
+      },
+      {
+       "fa": "روسری",
+       "tr": "rūsarī",
+       "de": "Kopftuch",
+       "emoji": "🧕"
+      }
+     ]
+    },
+    {
+     "typ": "info",
+     "titel": "👗 Kleidung & Farben (2)",
+     "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
+     "beispiele": [
+      {
+       "fa": "کلاه",
+       "tr": "kolāh",
+       "de": "Mütze, Hut",
+       "emoji": "🧢"
+      },
+      {
+       "fa": "کیف",
+       "tr": "kīf",
+       "de": "Tasche",
+       "emoji": "👜"
+      },
+      {
+       "fa": "آبی",
+       "tr": "ābī",
+       "de": "blau",
+       "emoji": "🔵"
+      },
+      {
+       "fa": "مشکی",
+       "tr": "meschkī",
+       "de": "schwarz",
+       "emoji": "⚫"
+      },
+      {
+       "fa": "سفید",
+       "tr": "sefīd",
+       "de": "weiß",
+       "emoji": "⚪"
+      },
+      {
+       "fa": "قرمز",
+       "tr": "ghermez",
+       "de": "rot",
+       "emoji": "🔴"
+      }
+     ]
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "کفش",
+       "tr": "kafsch",
+       "de": "Schuh",
+       "emoji": "👟"
+      },
+      {
+       "fa": "روسری",
+       "tr": "rūsarī",
+       "de": "Kopftuch",
+       "emoji": "🧕"
+      },
+      {
+       "fa": "قرمز",
+       "tr": "ghermez",
+       "de": "rot",
+       "emoji": "🔴"
+      },
+      {
+       "fa": "پیراهن",
+       "tr": "pīrāhan",
+       "de": "Hemd, Kleid",
+       "emoji": "👔"
+      },
+      {
+       "fa": "سفید",
+       "tr": "sefīd",
+       "de": "weiß",
+       "emoji": "⚪"
+      },
+      {
+       "fa": "کیف",
+       "tr": "kīf",
+       "de": "Tasche",
+       "emoji": "👜"
+      }
+     ],
+     "titel": "Was bedeutet das?"
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "پیراهن",
+       "tr": "pīrāhan",
+       "de": "Hemd, Kleid",
+       "emoji": "👔"
+      },
+      {
+       "fa": "کت",
+       "tr": "kot",
+       "de": "Jacke, Sakko",
+       "emoji": "🧥"
+      },
+      {
+       "fa": "مشکی",
+       "tr": "meschkī",
+       "de": "schwarz",
+       "emoji": "⚫"
+      },
+      {
+       "fa": "قرمز",
+       "tr": "ghermez",
+       "de": "rot",
+       "emoji": "🔴"
+      },
+      {
+       "fa": "آبی",
+       "tr": "ābī",
+       "de": "blau",
+       "emoji": "🔵"
+      },
+      {
+       "fa": "شلوار",
+       "tr": "schalwār",
+       "de": "Hose",
+       "emoji": "👖"
+      }
+     ],
+     "titel": "Noch einmal: Was bedeutet das?"
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "روسری",
+       "tr": "rūsarī",
+       "de": "Kopftuch",
+       "emoji": "🧕"
+      },
+      {
+       "fa": "کلاه",
+       "tr": "kolāh",
+       "de": "Mütze, Hut",
+       "emoji": "🧢"
+      },
+      {
+       "fa": "مشکی",
+       "tr": "meschkī",
+       "de": "schwarz",
+       "emoji": "⚫"
+      },
+      {
+       "fa": "سفید",
+       "tr": "sefīd",
+       "de": "weiß",
+       "emoji": "⚪"
+      },
+      {
+       "fa": "کیف",
+       "tr": "kīf",
+       "de": "Tasche",
+       "emoji": "👜"
+      },
+      {
+       "fa": "کت",
+       "tr": "kot",
+       "de": "Jacke, Sakko",
+       "emoji": "🧥"
+      }
+     ],
+     "titel": "Memory: Bild & Wort"
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>این ___ برایم کوچک است؛ سایز بزرگ‌تر می‌خواهم.</span><br><span class='mini'>Diese Hose ist mir zu klein; ich brauche eine größere Größe.</span>",
+       "optionen": [
+        "شلوار",
+        "سوغاتی",
+        "سایز"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>این شلوار برایم کوچک است؛ سایز بزرگ‌تر می‌خواهم.</span>"
+      },
+      {
+       "frage": "<span class='fa'>برای مادرم یک ___ ابریشمی خریدم.</span><br><span class='mini'>Für meine Mutter habe ich einen Seidenschal gekauft.</span>",
+       "optionen": [
+        "شال",
+        "گران",
+        "عابربانک"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>برای مادرم یک شال ابریشمی خریدم.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Kleidung & Farben",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 50,
+     "ziel": 10,
+     "woerter": [
+      {
+       "fa": "پیراهن",
+       "a": "Hemd, Kleid"
+      },
+      {
+       "fa": "شلوار",
+       "a": "Hose"
+      },
+      {
+       "fa": "کت",
+       "a": "Jacke, Sakko"
+      },
+      {
+       "fa": "کفش",
+       "a": "Schuh"
+      },
+      {
+       "fa": "شال",
+       "a": "Schal, Tuch"
+      },
+      {
+       "fa": "روسری",
+       "a": "Kopftuch"
+      },
+      {
+       "fa": "کلاه",
+       "a": "Mütze, Hut"
+      },
+      {
+       "fa": "کیف",
+       "a": "Tasche"
+      },
+      {
+       "fa": "آبی",
+       "a": "blau"
+      },
+      {
+       "fa": "مشکی",
+       "a": "schwarz"
+      },
+      {
+       "fa": "سفید",
+       "a": "weiß"
+      },
+      {
+       "fa": "قرمز",
+       "a": "rot"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "w2",
+   "titel": "Im Basar",
+   "vorschau": "مغازه · حجره · صنایع دستی",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "🏪 Im Basar (1)",
+     "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
+     "beispiele": [
+      {
+       "fa": "مغازه",
+       "tr": "maghāze",
+       "de": "Laden",
+       "emoji": "🏬"
+      },
+      {
+       "fa": "حجره",
+       "tr": "hodschre",
+       "de": "Basarladen",
+       "emoji": "🛖"
+      },
+      {
+       "fa": "صنایع دستی",
+       "tr": "sanāyeʿ-e dastī",
+       "de": "Kunsthandwerk",
+       "emoji": "🏺"
+      },
+      {
+       "fa": "مینیاتور",
+       "tr": "mīniyātor",
+       "de": "Miniaturmalerei",
+       "emoji": "🖼️"
+      },
+      {
+       "fa": "قلمکار",
+       "tr": "ghalamkār",
+       "de": "bedruckter Stoff (Ghalamkar)",
+       "emoji": "🎨"
+      },
+      {
+       "fa": "مس",
+       "tr": "mes",
+       "de": "Kupfer",
+       "emoji": "🥉"
+      }
+     ]
+    },
+    {
+     "typ": "info",
+     "titel": "🏪 Im Basar (2)",
+     "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
+     "beispiele": [
+      {
+       "fa": "نقره",
+       "tr": "noghre",
+       "de": "Silber",
+       "emoji": "🥈"
+      },
+      {
+       "fa": "طلا",
+       "tr": "talā",
+       "de": "Gold",
+       "emoji": "🥇"
+      },
+      {
+       "fa": "پسته",
+       "tr": "peste",
+       "de": "Pistazie",
+       "emoji": "🥜"
+      },
+      {
+       "fa": "خرما",
+       "tr": "chormā",
+       "de": "Dattel",
+       "emoji": "🌴"
+      },
+      {
+       "fa": "گز",
+       "tr": "gaz",
+       "de": "Nougat aus Isfahan",
+       "emoji": "🍬"
+      },
+      {
+       "fa": "سوغاتی",
+       "tr": "soughātī",
+       "de": "Mitbringsel, Souvenir",
+       "emoji": "🎁"
+      }
+     ]
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "نقره",
+       "tr": "noghre",
+       "de": "Silber",
+       "emoji": "🥈"
+      },
+      {
+       "fa": "گز",
+       "tr": "gaz",
+       "de": "Nougat aus Isfahan",
+       "emoji": "🍬"
+      },
+      {
+       "fa": "سوغاتی",
+       "tr": "soughātī",
+       "de": "Mitbringsel, Souvenir",
+       "emoji": "🎁"
+      },
+      {
+       "fa": "حجره",
+       "tr": "hodschre",
+       "de": "Basarladen",
+       "emoji": "🛖"
+      },
+      {
+       "fa": "صنایع دستی",
+       "tr": "sanāyeʿ-e dastī",
+       "de": "Kunsthandwerk",
+       "emoji": "🏺"
+      },
+      {
+       "fa": "مینیاتور",
+       "tr": "mīniyātor",
+       "de": "Miniaturmalerei",
+       "emoji": "🖼️"
+      }
+     ],
+     "titel": "Was bedeutet das?"
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "مس",
+       "tr": "mes",
+       "de": "Kupfer",
+       "emoji": "🥉"
+      },
+      {
+       "fa": "طلا",
+       "tr": "talā",
+       "de": "Gold",
+       "emoji": "🥇"
+      },
+      {
+       "fa": "قلمکار",
+       "tr": "ghalamkār",
+       "de": "bedruckter Stoff (Ghalamkar)",
+       "emoji": "🎨"
+      },
+      {
+       "fa": "نقره",
+       "tr": "noghre",
+       "de": "Silber",
+       "emoji": "🥈"
+      },
+      {
+       "fa": "مغازه",
+       "tr": "maghāze",
+       "de": "Laden",
+       "emoji": "🏬"
+      },
+      {
+       "fa": "مینیاتور",
+       "tr": "mīniyātor",
+       "de": "Miniaturmalerei",
+       "emoji": "🖼️"
+      }
+     ],
+     "titel": "Noch einmal: Was bedeutet das?"
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "قلمکار",
+       "tr": "ghalamkār",
+       "de": "bedruckter Stoff (Ghalamkar)",
+       "emoji": "🎨"
+      },
+      {
+       "fa": "پسته",
+       "tr": "peste",
+       "de": "Pistazie",
+       "emoji": "🥜"
+      },
+      {
+       "fa": "مغازه",
+       "tr": "maghāze",
+       "de": "Laden",
+       "emoji": "🏬"
+      },
+      {
+       "fa": "مس",
+       "tr": "mes",
+       "de": "Kupfer",
+       "emoji": "🥉"
+      },
+      {
+       "fa": "حجره",
+       "tr": "hodschre",
+       "de": "Basarladen",
+       "emoji": "🛖"
+      },
+      {
+       "fa": "طلا",
+       "tr": "talā",
+       "de": "Gold",
+       "emoji": "🥇"
+      }
+     ],
+     "titel": "Memory: Bild & Wort"
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>از اصفهان ___ و گز سوغاتی آوردم.</span><br><span class='mini'>Aus Isfahan habe ich Ghalamkar und Gaz als Mitbringsel mitgebracht.</span>",
+       "optionen": [
+        "قلمکار",
+        "ارزان",
+        "جنس"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>از اصفهان قلمکار و گز سوغاتی آوردم.</span>"
+      },
+      {
+       "frage": "<span class='fa'>در بازار کرمان ___ تازه می‌فروشند.</span><br><span class='mini'>Im Basar von Kerman verkauft man frische Pistazien.</span>",
+       "optionen": [
+        "پسته",
+        "سفید",
+        "جنس"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>در بازار کرمان پسته تازه می‌فروشند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>دستبندهای ___ ارزان‌تر از طلا هستند.</span><br><span class='mini'>Silberarmbänder sind billiger als goldene.</span>",
+       "optionen": [
+        "نقره",
+        "صرافی",
+        "مقطوع"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>دستبندهای نقره ارزان‌تر از طلا هستند.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Im Basar",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 50,
+     "ziel": 10,
+     "woerter": [
+      {
+       "fa": "مغازه",
+       "a": "Laden"
+      },
+      {
+       "fa": "حجره",
+       "a": "Basarladen"
+      },
+      {
+       "fa": "صنایع دستی",
+       "a": "Kunsthandwerk"
+      },
+      {
+       "fa": "مینیاتور",
+       "a": "Miniaturmalerei"
+      },
+      {
+       "fa": "قلمکار",
+       "a": "bedruckter Stoff (Ghalamkar)"
+      },
+      {
+       "fa": "مس",
+       "a": "Kupfer"
+      },
+      {
+       "fa": "نقره",
+       "a": "Silber"
+      },
+      {
+       "fa": "طلا",
+       "a": "Gold"
+      },
+      {
+       "fa": "پسته",
+       "a": "Pistazie"
+      },
+      {
+       "fa": "خرما",
+       "a": "Dattel"
+      },
+      {
+       "fa": "گز",
+       "a": "Nougat aus Isfahan"
+      },
+      {
+       "fa": "سوغاتی",
+       "a": "Mitbringsel, Souvenir"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "w3",
+   "titel": "Geld & Bezahlen",
+   "vorschau": "تومان · ریال · پول خرد",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "💳 Geld & Bezahlen (1)",
+     "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
+     "beispiele": [
+      {
+       "fa": "تومان",
+       "tr": "tomān",
+       "de": "Toman",
+       "emoji": "💵"
+      },
+      {
+       "fa": "ریال",
+       "tr": "riyāl",
+       "de": "Rial",
+       "emoji": "💴"
+      },
+      {
+       "fa": "پول خرد",
+       "tr": "pūl-e chord",
+       "de": "Kleingeld",
+       "emoji": "🪙"
+      },
+      {
+       "fa": "کارتخوان",
+       "tr": "kārtchān",
+       "de": "Kartenlesegerät",
+       "emoji": "📟"
+      },
+      {
+       "fa": "عابربانک",
+       "tr": "ʿāberbānk",
+       "de": "Geldautomat",
+       "emoji": "🏧"
+      },
+      {
+       "fa": "صرافی",
+       "tr": "sarrāfī",
+       "de": "Wechselstube",
+       "emoji": "💱"
+      }
+     ]
+    },
+    {
+     "typ": "info",
+     "titel": "💳 Geld & Bezahlen (2)",
+     "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
+     "beispiele": [
+      {
+       "fa": "حراج",
+       "tr": "harādsch",
+       "de": "Ausverkauf",
+       "emoji": "🏷️"
+      },
+      {
+       "fa": "ضمانت",
+       "tr": "zemānat",
+       "de": "Garantie",
+       "emoji": "🛡️"
+      },
+      {
+       "fa": "مرجوع",
+       "tr": "mardschūʿ",
+       "de": "Rückgabe",
+       "emoji": "↩️"
+      },
+      {
+       "fa": "مقطوع",
+       "tr": "maghtūʿ",
+       "de": "fest (Preis)",
+       "emoji": "📌"
+      },
+      {
+       "fa": "مناسب",
+       "tr": "monāseb",
+       "de": "angemessen, günstig",
+       "emoji": "👌"
+      },
+      {
+       "fa": "گران‌فروش",
+       "tr": "gerānforūsch",
+       "de": "Wucherer, zu teuer",
+       "emoji": "😠"
+      }
+     ]
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "تومان",
+       "tr": "tomān",
+       "de": "Toman",
+       "emoji": "💵"
+      },
+      {
+       "fa": "پول خرد",
+       "tr": "pūl-e chord",
+       "de": "Kleingeld",
+       "emoji": "🪙"
+      },
+      {
+       "fa": "مقطوع",
+       "tr": "maghtūʿ",
+       "de": "fest (Preis)",
+       "emoji": "📌"
+      },
+      {
+       "fa": "گران‌فروش",
+       "tr": "gerānforūsch",
+       "de": "Wucherer, zu teuer",
+       "emoji": "😠"
+      },
+      {
+       "fa": "کارتخوان",
+       "tr": "kārtchān",
+       "de": "Kartenlesegerät",
+       "emoji": "📟"
+      },
+      {
+       "fa": "عابربانک",
+       "tr": "ʿāberbānk",
+       "de": "Geldautomat",
+       "emoji": "🏧"
+      }
+     ],
+     "titel": "Was bedeutet das?"
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "مقطوع",
+       "tr": "maghtūʿ",
+       "de": "fest (Preis)",
+       "emoji": "📌"
+      },
+      {
+       "fa": "صرافی",
+       "tr": "sarrāfī",
+       "de": "Wechselstube",
+       "emoji": "💱"
+      },
+      {
+       "fa": "ریال",
+       "tr": "riyāl",
+       "de": "Rial",
+       "emoji": "💴"
+      },
+      {
+       "fa": "مناسب",
+       "tr": "monāseb",
+       "de": "angemessen, günstig",
+       "emoji": "👌"
+      },
+      {
+       "fa": "گران‌فروش",
+       "tr": "gerānforūsch",
+       "de": "Wucherer, zu teuer",
+       "emoji": "😠"
+      },
+      {
+       "fa": "تومان",
+       "tr": "tomān",
+       "de": "Toman",
+       "emoji": "💵"
+      }
+     ],
+     "titel": "Noch einmal: Was bedeutet das?"
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "مناسب",
+       "tr": "monāseb",
+       "de": "angemessen, günstig",
+       "emoji": "👌"
+      },
+      {
+       "fa": "پول خرد",
+       "tr": "pūl-e chord",
+       "de": "Kleingeld",
+       "emoji": "🪙"
+      },
+      {
+       "fa": "مرجوع",
+       "tr": "mardschūʿ",
+       "de": "Rückgabe",
+       "emoji": "↩️"
+      },
+      {
+       "fa": "کارتخوان",
+       "tr": "kārtchān",
+       "de": "Kartenlesegerät",
+       "emoji": "📟"
+      },
+      {
+       "fa": "ضمانت",
+       "tr": "zemānat",
+       "de": "Garantie",
+       "emoji": "🛡️"
+      },
+      {
+       "fa": "عابربانک",
+       "tr": "ʿāberbānk",
+       "de": "Geldautomat",
+       "emoji": "🏧"
+      }
+     ],
+     "titel": "Memory: Bild & Wort"
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>ببخشید، ___ ندارم؛ می‌شود با کارت حساب کنم؟</span><br><span class='mini'>Entschuldigung, ich habe kein Kleingeld; kann ich mit Karte zahlen?</span>",
+       "optionen": [
+        "پول خرد",
+        "کفش",
+        "پسته"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>ببخشید، پول خرد ندارم؛ می‌شود با کارت حساب کنم؟</span>"
+      },
+      {
+       "frage": "<span class='fa'>در ___ یورو را به تومان تبدیل کردم.</span><br><span class='mini'>In der Wechselstube habe ich Euro in Toman getauscht.</span>",
+       "optionen": [
+        "صرافی",
+        "خرما",
+        "بازار"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>در صرافی یورو را به تومان تبدیل کردم.</span>"
+      },
+      {
+       "frage": "<span class='fa'>این هفته ___ است و همه چیز پنجاه درصد ارزان‌تر است.</span><br><span class='mini'>Diese Woche ist Ausverkauf und alles ist 50 % billiger.</span>",
+       "optionen": [
+        "حراج",
+        "تخفیف",
+        "مس"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>این هفته حراج است و همه چیز پنجاه درصد ارزان‌تر است.</span>"
+      },
+      {
+       "frage": "<span class='fa'>این گوشی یک سال ___ دارد.</span><br><span class='mini'>Dieses Handy hat ein Jahr Garantie.</span>",
+       "optionen": [
+        "ضمانت",
+        "خرما",
+        "مشتری"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>این گوشی یک سال ضمانت دارد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>در سوپرمارکت قیمت‌ها ___ است و نمی‌شود چانه زد.</span><br><span class='mini'>Im Supermarkt sind die Preise fest und man kann nicht handeln.</span>",
+       "optionen": [
+        "مقطوع",
+        "رسید",
+        "بازار"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>در سوپرمارکت قیمت‌ها مقطوع است و نمی‌شود چانه زد.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Geld & Bezahlen",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 50,
+     "ziel": 10,
+     "woerter": [
+      {
+       "fa": "تومان",
+       "a": "Toman"
+      },
+      {
+       "fa": "ریال",
+       "a": "Rial"
+      },
+      {
+       "fa": "پول خرد",
+       "a": "Kleingeld"
+      },
+      {
+       "fa": "کارتخوان",
+       "a": "Kartenlesegerät"
+      },
+      {
+       "fa": "عابربانک",
+       "a": "Geldautomat"
+      },
+      {
+       "fa": "صرافی",
+       "a": "Wechselstube"
+      },
+      {
+       "fa": "حراج",
+       "a": "Ausverkauf"
+      },
+      {
+       "fa": "ضمانت",
+       "a": "Garantie"
+      },
+      {
+       "fa": "مرجوع",
+       "a": "Rückgabe"
+      },
+      {
+       "fa": "مقطوع",
+       "a": "fest (Preis)"
+      },
+      {
+       "fa": "مناسب",
+       "a": "angemessen, günstig"
+      },
+      {
+       "fa": "گران‌فروش",
+       "a": "Wucherer, zu teuer"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "v",
+   "titel": "Verben & Wiederholung",
+   "vorschau": "خریدن · چانه زدن · پس دادن",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Verben",
+     "text": "<p>Infinitiv – im Gespräch brauchst du sie in allen Zeiten.</p>",
+     "beispiele": [
+      {
+       "fa": "خریدن",
+       "tr": "charīdan",
+       "de": "kaufen",
+       "emoji": "🛒"
+      },
+      {
+       "fa": "چانه زدن",
+       "tr": "tschāne zadan",
+       "de": "handeln, feilschen",
+       "emoji": "🤝"
+      },
+      {
+       "fa": "پس دادن",
+       "tr": "pas dādan",
+       "de": "zurückgeben",
+       "emoji": "↩️"
+      },
+      {
+       "fa": "عوض کردن",
+       "tr": "ʿawaz kardan",
+       "de": "umtauschen",
+       "emoji": "🔄"
+      },
+      {
+       "fa": "پوشیدن",
+       "tr": "pūschīdan",
+       "de": "anziehen, tragen",
+       "emoji": "👕"
+      },
+      {
+       "fa": "پرداخت کردن",
+       "tr": "pardācht kardan",
+       "de": "bezahlen",
+       "emoji": "💳"
+      },
+      {
+       "fa": "امتحان کردن",
+       "tr": "emtehān kardan",
+       "de": "anprobieren",
+       "emoji": "👕"
+      },
+      {
+       "fa": "فروختن",
+       "tr": "forūchtan",
+       "de": "verkaufen",
+       "emoji": "🏪"
+      },
+      {
+       "fa": "ارزان شدن",
+       "tr": "arzān schodan",
+       "de": "billiger werden",
+       "emoji": "📉"
+      }
+     ]
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "پوشیدن",
+       "tr": "pūschīdan",
+       "de": "anziehen, tragen",
+       "emoji": "👕"
+      },
+      {
+       "fa": "امتحان کردن",
+       "tr": "emtehān kardan",
+       "de": "anprobieren",
+       "emoji": "👕"
+      },
+      {
+       "fa": "ارزان شدن",
+       "tr": "arzān schodan",
+       "de": "billiger werden",
+       "emoji": "📉"
+      },
+      {
+       "fa": "خریدن",
+       "tr": "charīdan",
+       "de": "kaufen",
+       "emoji": "🛒"
+      },
+      {
+       "fa": "پس دادن",
+       "tr": "pas dādan",
+       "de": "zurückgeben",
+       "emoji": "↩️"
+      },
+      {
+       "fa": "فروختن",
+       "tr": "forūchtan",
+       "de": "verkaufen",
+       "emoji": "🏪"
+      }
+     ],
+     "titel": "Was bedeutet das?"
+    },
+    {
+     "typ": "sortieren",
+     "titel": "Welches Wortfeld?",
+     "frage": "Ordne die Wörter dem Wortfeld zu.",
+     "kategorien": [
+      "🧩 Rund ums Thema",
+      "👗 Kleidung & Farben",
+      "🏪 Im Basar",
+      "💳 Geld & Bezahlen"
+     ],
+     "items": [
+      {
+       "fa": "ادویه",
+       "k": 0,
+       "e": "Gewürz",
+       "say": false
+      },
+      {
+       "fa": "نقد",
+       "k": 0,
+       "e": "bar",
+       "say": false
+      },
+      {
+       "fa": "سایز",
+       "k": 0,
+       "e": "Größe",
+       "say": false
+      },
+      {
+       "fa": "کفش",
+       "k": 1,
+       "e": "Schuh",
+       "say": false
+      },
+      {
+       "fa": "پیراهن",
+       "k": 1,
+       "e": "Hemd, Kleid",
+       "say": false
+      },
+      {
+       "fa": "سفید",
+       "k": 1,
+       "e": "weiß",
+       "say": false
+      },
+      {
+       "fa": "طلا",
+       "k": 2,
+       "e": "Gold",
+       "say": false
+      },
+      {
+       "fa": "مغازه",
+       "k": 2,
+       "e": "Laden",
+       "say": false
+      },
+      {
+       "fa": "سوغاتی",
+       "k": 2,
+       "e": "Mitbringsel, Souvenir",
+       "say": false
+      },
+      {
+       "fa": "گران‌فروش",
+       "k": 3,
+       "e": "Wucherer, zu teuer",
+       "say": false
+      },
+      {
+       "fa": "کارتخوان",
+       "k": 3,
+       "e": "Kartenlesegerät",
+       "say": false
+      },
+      {
+       "fa": "مناسب",
+       "k": 3,
+       "e": "angemessen, günstig",
+       "say": false
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: alle Wörter",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 75,
+     "ziel": 15,
      "woerter": [
       {
        "fa": "بازار",
@@ -376,6 +1587,150 @@
        "a": "Tüte"
       },
       {
+       "fa": "پیراهن",
+       "a": "Hemd, Kleid"
+      },
+      {
+       "fa": "شلوار",
+       "a": "Hose"
+      },
+      {
+       "fa": "کت",
+       "a": "Jacke, Sakko"
+      },
+      {
+       "fa": "کفش",
+       "a": "Schuh"
+      },
+      {
+       "fa": "شال",
+       "a": "Schal, Tuch"
+      },
+      {
+       "fa": "روسری",
+       "a": "Kopftuch"
+      },
+      {
+       "fa": "کلاه",
+       "a": "Mütze, Hut"
+      },
+      {
+       "fa": "کیف",
+       "a": "Tasche"
+      },
+      {
+       "fa": "آبی",
+       "a": "blau"
+      },
+      {
+       "fa": "مشکی",
+       "a": "schwarz"
+      },
+      {
+       "fa": "سفید",
+       "a": "weiß"
+      },
+      {
+       "fa": "قرمز",
+       "a": "rot"
+      },
+      {
+       "fa": "مغازه",
+       "a": "Laden"
+      },
+      {
+       "fa": "حجره",
+       "a": "Basarladen"
+      },
+      {
+       "fa": "صنایع دستی",
+       "a": "Kunsthandwerk"
+      },
+      {
+       "fa": "مینیاتور",
+       "a": "Miniaturmalerei"
+      },
+      {
+       "fa": "قلمکار",
+       "a": "bedruckter Stoff (Ghalamkar)"
+      },
+      {
+       "fa": "مس",
+       "a": "Kupfer"
+      },
+      {
+       "fa": "نقره",
+       "a": "Silber"
+      },
+      {
+       "fa": "طلا",
+       "a": "Gold"
+      },
+      {
+       "fa": "پسته",
+       "a": "Pistazie"
+      },
+      {
+       "fa": "خرما",
+       "a": "Dattel"
+      },
+      {
+       "fa": "گز",
+       "a": "Nougat aus Isfahan"
+      },
+      {
+       "fa": "سوغاتی",
+       "a": "Mitbringsel, Souvenir"
+      },
+      {
+       "fa": "تومان",
+       "a": "Toman"
+      },
+      {
+       "fa": "ریال",
+       "a": "Rial"
+      },
+      {
+       "fa": "پول خرد",
+       "a": "Kleingeld"
+      },
+      {
+       "fa": "کارتخوان",
+       "a": "Kartenlesegerät"
+      },
+      {
+       "fa": "عابربانک",
+       "a": "Geldautomat"
+      },
+      {
+       "fa": "صرافی",
+       "a": "Wechselstube"
+      },
+      {
+       "fa": "حراج",
+       "a": "Ausverkauf"
+      },
+      {
+       "fa": "ضمانت",
+       "a": "Garantie"
+      },
+      {
+       "fa": "مرجوع",
+       "a": "Rückgabe"
+      },
+      {
+       "fa": "مقطوع",
+       "a": "fest (Preis)"
+      },
+      {
+       "fa": "مناسب",
+       "a": "angemessen, günstig"
+      },
+      {
+       "fa": "گران‌فروش",
+       "a": "Wucherer, zu teuer"
+      },
+      {
        "fa": "خریدن",
        "a": "kaufen"
       },
@@ -394,19 +1749,35 @@
       {
        "fa": "پوشیدن",
        "a": "anziehen, tragen"
+      },
+      {
+       "fa": "پرداخت کردن",
+       "a": "bezahlen"
+      },
+      {
+       "fa": "امتحان کردن",
+       "a": "anprobieren"
+      },
+      {
+       "fa": "فروختن",
+       "a": "verkaufen"
+      },
+      {
+       "fa": "ارزان شدن",
+       "a": "billiger werden"
       }
      ]
     }
    ]
   },
   {
-   "id": "s2",
+   "id": "r1",
    "titel": "Redemittel",
    "vorschau": "این چنده؟",
    "karten": [
     {
      "typ": "info",
-     "titel": "Redemittel – Teil 1",
+     "titel": "Redemittel (1)",
      "text": "<p>So sagt man das im Gespräch. Tippe einen Satz an, um ihn zu hören.</p>",
      "stil": "merke",
      "beispiele": [
@@ -450,8 +1821,8 @@
     },
     {
      "typ": "info",
-     "titel": "Redemittel – Teil 2",
-     "text": "<p>Die Schriftform findest du gleich in der Übung „Geschrieben ↔ gesprochen“.</p>",
+     "titel": "Redemittel (2)",
+     "text": "<p>So sagt man das im Gespräch. Tippe einen Satz an, um ihn zu hören.</p>",
      "stil": "merke",
      "beispiele": [
       {
@@ -483,6 +1854,56 @@
        "tr": "mīsche pūlamo pas bedīd?",
        "de": "Kann ich mein Geld zurückbekommen?",
        "x": "می‌شود پولم را پس بدهید؟"
+      },
+      {
+       "fa": "فقط دارم نگاه می‌کنم، مرسی.",
+       "tr": "faghat dāram negāh mīkonam, mersī.",
+       "de": "Ich schaue nur, danke.",
+       "x": "فقط دارم نگاه می‌کنم، ممنون."
+      }
+     ]
+    },
+    {
+     "typ": "info",
+     "titel": "Redemittel (3)",
+     "text": "<p>So sagt man das im Gespräch. Tippe einen Satz an, um ihn zu hören.</p>",
+     "stil": "merke",
+     "beispiele": [
+      {
+       "fa": "رنگ دیگه‌ای هم دارید؟",
+       "tr": "rang-e dīgeī ham dārīd?",
+       "de": "Haben Sie es auch in einer anderen Farbe?",
+       "x": "رنگ دیگری هم دارید؟"
+      },
+      {
+       "fa": "کارتخوان دارید؟",
+       "tr": "kārtchān dārīd?",
+       "de": "Haben Sie ein Kartenlesegerät?",
+       "x": "کارتخوان دارید؟"
+      },
+      {
+       "fa": "ببخشید، پول خرد ندارم.",
+       "tr": "bebachschīd, pūl-e chord nadāram.",
+       "de": "Entschuldigung, ich habe kein Kleingeld.",
+       "x": "ببخشید، پول خرد ندارم."
+      },
+      {
+       "fa": "بیشتر از این نمی‌تونم بدم.",
+       "tr": "bīschtar az īn nemītūnam bedam.",
+       "de": "Mehr kann ich nicht zahlen.",
+       "x": "بیشتر از این نمی‌توانم بدهم."
+      },
+      {
+       "fa": "پس من می‌رم، مرسی!",
+       "tr": "pas man mīram, mersī!",
+       "de": "Dann gehe ich, danke!",
+       "x": "پس من می‌روم، ممنون!"
+      },
+      {
+       "fa": "گارانتی داره؟",
+       "tr": "gārāntī dāre?",
+       "de": "Gibt es Garantie?",
+       "x": "گارانتی دارد؟"
       }
      ]
     },
@@ -491,28 +1912,59 @@
      "links": "de",
      "paare": [
       {
-       "fa": "این چنده؟",
-       "tr": "īn tschande?",
-       "de": "Was kostet das?",
-       "x": "این چند است؟"
+       "fa": "بیشتر از این نمی‌تونم بدم.",
+       "tr": "bīschtar az īn nemītūnam bedam.",
+       "de": "Mehr kann ich nicht zahlen.",
+       "x": "بیشتر از این نمی‌توانم بدهم."
       },
       {
-       "fa": "می‌تونم بپوشمش؟",
-       "tr": "mītūnam bepūschamesch?",
-       "de": "Kann ich es anprobieren?",
-       "x": "می‌توانم بپوشمش؟"
+       "fa": "جنسش چیه؟",
+       "tr": "dschensesch tschīye?",
+       "de": "Aus welchem Material ist es?",
+       "x": "جنسش چیست؟"
       },
       {
-       "fa": "رسیدشو دارم.",
-       "tr": "resīdescho dāram.",
-       "de": "Ich habe den Beleg.",
-       "x": "رسیدش را دارم."
+       "fa": "پس من می‌رم، مرسی!",
+       "tr": "pas man mīram, mersī!",
+       "de": "Dann gehe ich, danke!",
+       "x": "پس من می‌روم، ممنون!"
       },
       {
-       "fa": "می‌شه پولمو پس بدید؟",
-       "tr": "mīsche pūlamo pas bedīd?",
-       "de": "Kann ich mein Geld zurückbekommen?",
-       "x": "می‌شود پولم را پس بدهید؟"
+       "fa": "آخرش چند می‌دی؟",
+       "tr": "ācharesch tschand mīdī?",
+       "de": "Was ist Ihr letzter Preis?",
+       "x": "آخرش چند می‌دهید؟"
+      },
+      {
+       "fa": "کارتخوان دارید؟",
+       "tr": "kārtchān dārīd?",
+       "de": "Haben Sie ein Kartenlesegerät?",
+       "x": "کارتخوان دارید؟"
+      },
+      {
+       "fa": "یه تخفیف بده دیگه!",
+       "tr": "ye tachfīf bede dīge!",
+       "de": "Geben Sie doch etwas Rabatt!",
+       "x": "یک تخفیف بدهید دیگر!"
+      }
+     ],
+     "titel": "Was bedeutet das?"
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "گارانتی داره؟",
+       "tr": "gārāntī dāre?",
+       "de": "Gibt es Garantie?",
+       "x": "گارانتی دارد؟"
+      },
+      {
+       "fa": "خیلی گرونه!",
+       "tr": "cheylī gerūne!",
+       "de": "Das ist sehr teuer!",
+       "x": "خیلی گران است!"
       },
       {
        "fa": "این خرابه. می‌خوام عوضش کنم.",
@@ -521,13 +1973,25 @@
        "x": "این خراب است. می‌خواهم عوضش کنم."
       },
       {
+       "fa": "جنسش چیه؟",
+       "tr": "dschensesch tschīye?",
+       "de": "Aus welchem Material ist es?",
+       "x": "جنسش چیست؟"
+      },
+      {
        "fa": "سایز بزرگ‌تر دارید؟",
        "tr": "sāyz-e bozorgtar dārīd?",
        "de": "Haben Sie eine größere Größe?",
        "x": "سایز بزرگ‌تر دارید؟"
+      },
+      {
+       "fa": "رسیدشو دارم.",
+       "tr": "resīdescho dāram.",
+       "de": "Ich habe den Beleg.",
+       "x": "رسیدش را دارم."
       }
      ],
-     "titel": "Was bedeutet das?"
+     "titel": "Noch einmal: Was bedeutet das?"
     },
     {
      "typ": "sortieren",
@@ -604,12 +2068,192 @@
        "k": 2,
        "e": "Kann ich mein Geld zurückbekommen?",
        "say": false
+      },
+      {
+       "fa": "فقط دارم نگاه می‌کنم، مرسی.",
+       "k": 0,
+       "e": "Ich schaue nur, danke.",
+       "say": false
+      },
+      {
+       "fa": "رنگ دیگه‌ای هم دارید؟",
+       "k": 0,
+       "e": "Haben Sie es auch in einer anderen Farbe?",
+       "say": false
+      },
+      {
+       "fa": "کارتخوان دارید؟",
+       "k": 0,
+       "e": "Haben Sie ein Kartenlesegerät?",
+       "say": false
+      },
+      {
+       "fa": "ببخشید، پول خرد ندارم.",
+       "k": 0,
+       "e": "Entschuldigung, ich habe kein Kleingeld.",
+       "say": false
+      },
+      {
+       "fa": "بیشتر از این نمی‌تونم بدم.",
+       "k": 1,
+       "e": "Mehr kann ich nicht zahlen.",
+       "say": false
+      },
+      {
+       "fa": "پس من می‌رم، مرسی!",
+       "k": 1,
+       "e": "Dann gehe ich, danke!",
+       "say": false
+      },
+      {
+       "fa": "گارانتی داره؟",
+       "k": 2,
+       "e": "Gibt es Garantie?",
+       "say": false
       }
      ]
     },
     {
+     "typ": "paare",
+     "links": "x",
+     "paare": [
+      {
+       "fa": "یک تخفیف بدهید دیگر!",
+       "tr": "",
+       "de": "Geben Sie doch etwas Rabatt!",
+       "x": "یه تخفیف بده دیگه!"
+      },
+      {
+       "fa": "رنگ دیگری هم دارید؟",
+       "tr": "",
+       "de": "Haben Sie es auch in einer anderen Farbe?",
+       "x": "رنگ دیگه‌ای هم دارید؟"
+      },
+      {
+       "fa": "اگر دو تا بخرم، ارزان‌تر می‌دهید؟",
+       "tr": "",
+       "de": "Wenn ich zwei nehme, wird es billiger?",
+       "x": "اگه دو تا بخرم، ارزون‌تر می‌دی؟"
+      },
+      {
+       "fa": "پس من می‌روم، ممنون!",
+       "tr": "",
+       "de": "Dann gehe ich, danke!",
+       "x": "پس من می‌رم، مرسی!"
+      },
+      {
+       "fa": "این چند است؟",
+       "tr": "",
+       "de": "Was kostet das?",
+       "x": "این چنده؟"
+      },
+      {
+       "fa": "رسیدش را دارم.",
+       "tr": "",
+       "de": "Ich habe den Beleg.",
+       "x": "رسیدشو دارم."
+      }
+     ],
+     "titel": "Geschrieben ↔ gesprochen"
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Redemittel",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 70,
+     "ziel": 12,
+     "woerter": [
+      {
+       "fa": "این چنده؟",
+       "a": "Was kostet das?"
+      },
+      {
+       "fa": "سایز بزرگ‌تر دارید؟",
+       "a": "Haben Sie eine größere Größe?"
+      },
+      {
+       "fa": "می‌تونم بپوشمش؟",
+       "a": "Kann ich es anprobieren?"
+      },
+      {
+       "fa": "جنسش چیه؟",
+       "a": "Aus welchem Material ist es?"
+      },
+      {
+       "fa": "خیلی گرونه!",
+       "a": "Das ist sehr teuer!"
+      },
+      {
+       "fa": "آخرش چند می‌دی؟",
+       "a": "Was ist Ihr letzter Preis?"
+      },
+      {
+       "fa": "یه تخفیف بده دیگه!",
+       "a": "Geben Sie doch etwas Rabatt!"
+      },
+      {
+       "fa": "اگه دو تا بخرم، ارزون‌تر می‌دی؟",
+       "a": "Wenn ich zwei nehme, wird es billiger?"
+      },
+      {
+       "fa": "این خرابه. می‌خوام عوضش کنم.",
+       "a": "Das ist kaputt. Ich möchte es umtauschen."
+      },
+      {
+       "fa": "رسیدشو دارم.",
+       "a": "Ich habe den Beleg."
+      },
+      {
+       "fa": "می‌شه پولمو پس بدید؟",
+       "a": "Kann ich mein Geld zurückbekommen?"
+      },
+      {
+       "fa": "فقط دارم نگاه می‌کنم، مرسی.",
+       "a": "Ich schaue nur, danke."
+      },
+      {
+       "fa": "رنگ دیگه‌ای هم دارید؟",
+       "a": "Haben Sie es auch in einer anderen Farbe?"
+      },
+      {
+       "fa": "کارتخوان دارید؟",
+       "a": "Haben Sie ein Kartenlesegerät?"
+      },
+      {
+       "fa": "ببخشید، پول خرد ندارم.",
+       "a": "Entschuldigung, ich habe kein Kleingeld."
+      },
+      {
+       "fa": "بیشتر از این نمی‌تونم بدم.",
+       "a": "Mehr kann ich nicht zahlen."
+      },
+      {
+       "fa": "پس من می‌رم، مرسی!",
+       "a": "Dann gehe ich, danke!"
+      },
+      {
+       "fa": "گارانتی داره؟",
+       "a": "Gibt es Garantie?"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "r2",
+   "titel": "Situationen & Reaktionen",
+   "vorschau": "چی بگم؟",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Reagieren",
+     "text": "<p>Im Gespräch kommt es auf die <b>Reaktion</b> an. Lies, was jemand sagt – und was man darauf antwortet.</p><div class='karte' style='margin:10px 0;padding:10px 14px'><div class='fa' style='font-size:1.3rem;text-align:right'>💬 این چنده؟</div><div class='fa' style='font-size:1.3rem;text-align:right;color:var(--lapis)'>↩️ برای شما، سیصد تومن.</div><div class='klein muted'>Was kostet das?</div></div><div class='karte' style='margin:10px 0;padding:10px 14px'><div class='fa' style='font-size:1.3rem;text-align:right'>💬 خیلی گرونه!</div><div class='fa' style='font-size:1.3rem;text-align:right;color:var(--lapis)'>↩️ خانم، جنسش عالیه! کار دسته.</div><div class='klein muted'>Das ist zu teuer!</div></div><div class='karte' style='margin:10px 0;padding:10px 14px'><div class='fa' style='font-size:1.3rem;text-align:right'>💬 آخرش چند می‌دی؟</div><div class='fa' style='font-size:1.3rem;text-align:right;color:var(--lapis)'>↩️ دویست و پنجاه، دیگه کمتر نمی‌شه.</div><div class='klein muted'>Was ist Ihr letzter Preis?</div></div><div class='karte' style='margin:10px 0;padding:10px 14px'><div class='fa' style='font-size:1.3rem;text-align:right'>💬 مبارکتون باشه!</div><div class='fa' style='font-size:1.3rem;text-align:right;color:var(--lapis)'>↩️ مرسی، خسته نباشید!</div><div class='klein muted'>Viel Freude damit!</div></div>",
+     "stil": "merke"
+    },
+    {
      "typ": "wahl",
-     "titel": "Was sagst du?",
+     "titel": "Was sagst du? (1)",
      "fragen": [
       {
        "frage": "Die Hose ist zu klein:",
@@ -658,106 +2302,185 @@
      ]
     },
     {
+     "typ": "wahl",
+     "titel": "Was sagst du? (2)",
+     "fragen": [
+      {
+       "frage": "Der Verkäufer drängt, du willst nur schauen:",
+       "optionen": [
+        "فقط دارم نگاه می‌کنم، مرسی.",
+        "گارانتی داره؟",
+        "یه تخفیف بده دیگه!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "Du gefällt das Hemd, aber nicht in Rot:",
+       "optionen": [
+        "رنگ دیگه‌ای هم دارید؟",
+        "پول خرد ندارم.",
+        "این خرابه."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "Der Händler kommt dir nicht entgegen. Letzter Trick:",
+       "optionen": [
+        "باشه، پس من می‌رم، مرسی!",
+        "سایز بزرگ‌تر دارید؟",
+        "رسیدشو دارم."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    },
+    {
      "typ": "paare",
      "links": "x",
      "paare": [
       {
-       "fa": "این چند است؟",
+       "fa": "این چنده؟",
        "tr": "",
        "de": "Was kostet das?",
-       "x": "این چنده؟"
-      },
-      {
-       "fa": "می‌توانم بپوشمش؟",
-       "tr": "",
-       "de": "Kann ich es anprobieren?",
-       "x": "می‌تونم بپوشمش؟"
-      },
-      {
-       "fa": "جنسش چیست؟",
-       "tr": "",
-       "de": "Aus welchem Material ist es?",
-       "x": "جنسش چیه؟"
-      },
-      {
-       "fa": "خیلی گران است!",
-       "tr": "",
-       "de": "Das ist sehr teuer!",
-       "x": "خیلی گرونه!"
-      },
-      {
-       "fa": "آخرش چند می‌دهید؟",
-       "tr": "",
-       "de": "Was ist Ihr letzter Preis?",
-       "x": "آخرش چند می‌دی؟"
-      },
-      {
-       "fa": "یک تخفیف بدهید دیگر!",
-       "tr": "",
-       "de": "Geben Sie doch etwas Rabatt!",
-       "x": "یه تخفیف بده دیگه!"
-      }
-     ],
-     "titel": "Geschrieben ↔ gesprochen"
-    },
-    {
-     "typ": "tempo",
-     "titel": "Blitz: Redemittel",
-     "aufgabe": "Was bedeutet das?",
-     "modus": "de",
-     "sekunden": 60,
-     "ziel": 10,
-     "woerter": [
-      {
-       "fa": "این چنده؟",
-       "a": "Was kostet das?"
-      },
-      {
-       "fa": "سایز بزرگ‌تر دارید؟",
-       "a": "Haben Sie eine größere Größe?"
-      },
-      {
-       "fa": "می‌تونم بپوشمش؟",
-       "a": "Kann ich es anprobieren?"
-      },
-      {
-       "fa": "جنسش چیه؟",
-       "a": "Aus welchem Material ist es?"
+       "x": "برای شما، سیصد تومن."
       },
       {
        "fa": "خیلی گرونه!",
-       "a": "Das ist sehr teuer!"
+       "tr": "",
+       "de": "Das ist zu teuer!",
+       "x": "خانم، جنسش عالیه! کار دسته."
       },
       {
        "fa": "آخرش چند می‌دی؟",
-       "a": "Was ist Ihr letzter Preis?"
+       "tr": "",
+       "de": "Was ist Ihr letzter Preis?",
+       "x": "دویست و پنجاه، دیگه کمتر نمی‌شه."
       },
       {
-       "fa": "یه تخفیف بده دیگه!",
-       "a": "Geben Sie doch etwas Rabatt!"
+       "fa": "مبارکتون باشه!",
+       "tr": "",
+       "de": "Viel Freude damit!",
+       "x": "مرسی، خسته نباشید!"
       },
       {
-       "fa": "اگه دو تا بخرم، ارزون‌تر می‌دی؟",
-       "a": "Wenn ich zwei nehme, wird es billiger?"
+       "fa": "این خرابه، می‌خوام عوضش کنم.",
+       "tr": "",
+       "de": "Das ist kaputt, ich möchte es umtauschen.",
+       "x": "رسیدشو دارید؟"
       },
       {
-       "fa": "این خرابه. می‌خوام عوضش کنم.",
-       "a": "Das ist kaputt. Ich möchte es umtauschen."
+       "fa": "قابل نداره.",
+       "tr": "",
+       "de": "Nicht der Rede wert.",
+       "x": "خواهش می‌کنم، بفرمایید چنده؟"
+      }
+     ],
+     "titel": "Was antwortest du?"
+    },
+    {
+     "typ": "wahl",
+     "titel": "Die passende Reaktion",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>این چنده؟</span>",
+       "optionen": [
+        "برای شما، سیصد تومن.",
+        "یه لحظه صبر کنید، الان میارم.",
+        "خانم، جنسش عالیه! کار دسته."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
       },
       {
-       "fa": "رسیدشو دارم.",
-       "a": "Ich habe den Beleg."
+       "frage": "<span class='fa'>خیلی گرونه!</span>",
+       "optionen": [
+        "خانم، جنسش عالیه! کار دسته.",
+        "دویست و پنجاه، دیگه کمتر نمی‌شه.",
+        "رسیدشو دارید؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
       },
       {
-       "fa": "می‌شه پولمو پس بدید؟",
-       "a": "Kann ich mein Geld zurückbekommen?"
+       "frage": "<span class='fa'>آخرش چند می‌دی؟</span>",
+       "optionen": [
+        "دویست و پنجاه، دیگه کمتر نمی‌شه.",
+        "خانم، جنسش عالیه! کار دسته.",
+        "مرسی، خسته نباشید!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>مبارکتون باشه!</span>",
+       "optionen": [
+        "مرسی، خسته نباشید!",
+        "خواهش می‌کنم، بفرمایید چنده؟",
+        "خانم، جنسش عالیه! کار دسته."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>این خرابه، می‌خوام عوضش کنم.</span>",
+       "optionen": [
+        "رسیدشو دارید؟",
+        "نه متأسفانه، فقط نقد.",
+        "خانم، جنسش عالیه! کار دسته."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>قابل نداره.</span>",
+       "optionen": [
+        "خواهش می‌کنم، بفرمایید چنده؟",
+        "برای شما، سیصد تومن.",
+        "خانم، جنسش عالیه! کار دسته."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>کارتخوان دارید؟</span>",
+       "optionen": [
+        "نه متأسفانه، فقط نقد.",
+        "رسیدشو دارید؟",
+        "مرسی، خسته نباشید!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>سایز بزرگ‌تر دارید؟</span>",
+       "optionen": [
+        "یه لحظه صبر کنید، الان میارم.",
+        "خانم، جنسش عالیه! کار دسته.",
+        "رسیدشو دارید؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
       }
      ]
     }
    ]
   },
   {
-   "id": "s3",
+   "id": "d",
    "titel": "Modelldialog",
    "vorschau": "Im Basar von Isfahan",
    "karten": [
@@ -857,6 +2580,67 @@
      ]
     },
     {
+     "typ": "wahl",
+     "titel": "Wie geht es weiter?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>بفرمایید خانم، چی لازم دارید؟</span><br><span class='klein muted'>Was kommt als Nächstes?</span>",
+       "optionen": [
+        "این رومیزی قلمکار چنده؟",
+        "دو تا، یک میلیون و هشتصد. دیگه ضرر می‌کنم!",
+        "وای، خیلی گرونه! هشتصد می‌دم."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>قابل نداره! … برای شما، یک میلیون و دویست.</span><br><span class='klein muted'>Was kommt als Nächstes?</span>",
+       "optionen": [
+        "وای، خیلی گرونه! هشتصد می‌دم.",
+        "خانم، کار دسته! جنسش عالیه. یک میلیون.",
+        "بفرمایید خانم، چی لازم دارید؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>خانم، کار دسته! جنسش عالیه. یک میلیون.</span><br><span class='klein muted'>Was kommt als Nächstes?</span>",
+       "optionen": [
+        "اگه دو تا بخرم چی؟ آخرش چند می‌دی؟",
+        "قابل نداره! … برای شما، یک میلیون و دویست.",
+        "وای، خیلی گرونه! هشتصد می‌دم."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>دو تا، یک میلیون و هشتصد. دیگه ضرر می‌کنم!</span><br><span class='klein muted'>Was kommt als Nächstes?</span>",
+       "optionen": [
+        "یک و هفتصد؟",
+        "خانم، کار دسته! جنسش عالیه. یک میلیون.",
+        "اگه دو تا بخرم چی؟ آخرش چند می‌دی؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>باشه، به خاطر شما! مبارکتون باشه.</span><br><span class='klein muted'>Was kommt als Nächstes?</span>",
+       "optionen": [
+        "مرسی، خسته نباشید!",
+        "بفرمایید خانم، چی لازم دارید؟",
+        "دو تا، یک میلیون و هشتصد. دیگه ضرر می‌کنم!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    },
+    {
      "typ": "ordnen",
      "titel": "Bring den Dialog in die richtige Reihenfolge",
      "frage": "Tippe die Sätze der Reihe nach an.",
@@ -902,11 +2686,81 @@
        "de": "1,7?"
       }
      ]
+    },
+    {
+     "typ": "bauen",
+     "titel": "Baue die Sätze aus dem Dialog",
+     "trenner": " ",
+     "woerter": [
+      {
+       "fa": "بفرمایید خانم، چی لازم دارید؟",
+       "tr": "befarmāyīd chānom, tschī lāzem dārīd?",
+       "de": "Bitte schön, was brauchen Sie?",
+       "teile": [
+        "بفرمایید",
+        "خانم",
+        "چی",
+        "لازم",
+        "دارید"
+       ],
+       "extra": [
+        "هفتصد؟"
+       ]
+      },
+      {
+       "fa": "این رومیزی قلمکار چنده؟",
+       "tr": "īn rūmīzī-ye ghalamkār tschande?",
+       "de": "Was kostet diese Ghalamkar-Tischdecke?",
+       "teile": [
+        "این",
+        "رومیزی",
+        "قلمکار",
+        "چنده"
+       ],
+       "extra": [
+        "اگه"
+       ]
+      },
+      {
+       "fa": "قابل نداره! … برای شما، یک میلیون و دویست.",
+       "tr": "ghābel nadāre! … barā-ye schomā, yek mīliyūn o dewīst.",
+       "de": "Nicht der Rede wert! … Für Sie eine Million zweihunderttausend.",
+       "teile": [
+        "قابل",
+        "نداره",
+        "…",
+        "برای",
+        "شما",
+        "یک",
+        "میلیون",
+        "و",
+        "دویست"
+       ],
+       "extra": [
+        "می‌دم."
+       ]
+      },
+      {
+       "fa": "وای، خیلی گرونه! هشتصد می‌دم.",
+       "tr": "wāy, cheylī gerūne! haschtsad mīdam.",
+       "de": "Oh, sehr teuer! Ich gebe achthunderttausend.",
+       "teile": [
+        "وای",
+        "خیلی",
+        "گرونه",
+        "هشتصد",
+        "می‌دم"
+       ],
+       "extra": [
+        "هفتصد؟"
+       ]
+      }
+     ]
     }
    ]
   },
   {
-   "id": "s4",
+   "id": "t",
    "titel": "Lesen",
    "vorschau": "Online kaufen oder im Laden?",
    "karten": [
@@ -1032,11 +2886,43 @@
        "richtig": 0
       }
      ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "این روزها بسیاری از ایرانی‌ها ترجیح می‌دهند آنلاین خرید کنند.",
+       "tr": "īn rūzhā besyārī az īrānīhā tardschīh mīdahand ānlāyn charīd konand.",
+       "de": "Heutzutage kaufen viele Iraner lieber online ein."
+      },
+      {
+       "fa": "سایت‌ها و اپلیکیشن‌های فروش اینترنتی در شهرهای بزرگ خیلی محبوب هستند.",
+       "tr": "sāythā o aplīkeyschenhā-ye forūsch-e īnternetī dar schahrhā-ye bozorg cheylī mahbūb hastand.",
+       "de": "Online-Shops und Apps sind in den Großstädten sehr beliebt."
+      },
+      {
+       "fa": "مزیت خرید آنلاین این است که وقت کمتری می‌گیرد و قیمت‌ها را راحت می‌شود مقایسه کرد.",
+       "tr": "maziyyat-e charīd-e ānlāyn īn ast ke waght-e kamtarī mīgīrad o gheymathā rā rāhat mīschawad moghāyese kard.",
+       "de": "Der Vorteil: Es kostet weniger Zeit, und man kann Preise leicht vergleichen."
+      },
+      {
+       "fa": "اما خیلی‌ها هنوز بازار را دوست دارند.",
+       "tr": "ammā cheylīhā hanūz bāzār rā dūst dārand.",
+       "de": "Aber viele lieben noch den Basar."
+      },
+      {
+       "fa": "در بازار می‌شود جنس را دید، لمس کرد و البته چانه زد.",
+       "tr": "dar bāzār mīschawad dschens rā dīd, lams kard o albatte tschāne zad.",
+       "de": "Im Basar kann man die Ware sehen, anfassen und natürlich handeln."
+      }
+     ]
     }
    ]
   },
   {
-   "id": "s5",
+   "id": "k",
    "titel": "Gut zu wissen",
    "vorschau": "Handeln – aber richtig",
    "karten": [
@@ -1082,7 +2968,7 @@
    ]
   },
   {
-   "id": "s6",
+   "id": "p",
    "titel": "Vorbereitung für die Sitzung",
    "vorschau": "آماده‌ای؟",
    "karten": [
@@ -1128,11 +3014,6 @@
      "links": "de",
      "paare": [
       {
-       "fa": "بیشتر آنلاین خرید می‌کنی یا تو مغازه؟ چرا؟",
-       "tr": "bīschtar ānlāyn charīd mīkonī yā tū maghāze? tscherā?",
-       "de": "Kaufst du eher online oder im Laden? Warum?"
-      },
-      {
        "fa": "یه خرید که پشیمونت کرد رو تعریف کن!",
        "tr": "ye charīd ke paschīmūnet kard ro taʿrīf kon!",
        "de": "Erzähl von einem Kauf, den du bereut hast!"
@@ -1148,14 +3029,19 @@
        "de": "Kaufen die Menschen deiner Meinung nach zu viel?"
       },
       {
-       "fa": "اگه یه میلیون یورو داشتی، اول چی می‌خریدی؟",
-       "tr": "age ye mīliyūn yūro dāschtī, awwal tschī mīcharīdī?",
-       "de": "Wenn du eine Million Euro hättest – was würdest du zuerst kaufen?"
+       "fa": "بیشتر آنلاین خرید می‌کنی یا تو مغازه؟ چرا؟",
+       "tr": "bīschtar ānlāyn charīd mīkonī yā tū maghāze? tscherā?",
+       "de": "Kaufst du eher online oder im Laden? Warum?"
       },
       {
        "fa": "تا حالا چونه زدی؟ کجا؟",
        "tr": "tā hālā tschūne zadī? kodschā?",
        "de": "Hast du schon mal gehandelt? Wo?"
+      },
+      {
+       "fa": "اگه یه میلیون یورو داشتی، اول چی می‌خریدی؟",
+       "tr": "age ye mīliyūn yūro dāschtī, awwal tschī mīcharīdī?",
+       "de": "Wenn du eine Million Euro hättest – was würdest du zuerst kaufen?"
       }
      ],
      "titel": "Welche Frage ist das?"

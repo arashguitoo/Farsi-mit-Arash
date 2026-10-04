@@ -17,19 +17,19 @@
     {
      "typ": "info",
      "titel": "So läuft die Sitzung",
-     "text": "<p>Diese Lektion ist deine <b>Hausaufgabe</b>: Hier lernst du Wörter und Redemittel und liest einen Modelldialog. Im Unterricht wird dann <b>nur gesprochen</b>.</p><p><b>Im Unterricht:</b></p><ul><li>Reisebüro-Spiel: Verkauft eure Region!</li><li>Gruppenplanung: Eine Woche Iran mit 500 Euro</li><li>Erzählrunde: Meine schlimmste Reise</li></ul>",
+     "text": "<p>Diese Lektion ist deine <b>Hausaufgabe</b>: Wortschatz, Redemittel, Dialoge und Texte. Im Unterricht wird dann <b>nur gesprochen</b>.</p><p><b>Im Unterricht:</b></p><ul><li>Reisebüro-Spiel: Verkauft eure Region!</li><li>Gruppenplanung: Eine Woche Iran mit 500 Euro</li><li>Erzählrunde: Meine schlimmste Reise</li></ul><p class='klein muted'>Wortschatz dieser Lektion: 61 Wörter · 17 Redemittel</p>",
      "stil": "merke"
     }
    ]
   },
   {
-   "id": "s1",
-   "titel": "Wörter",
+   "id": "w0",
+   "titel": "Rund ums Thema",
    "vorschau": "مقصد · اقامتگاه · بوم‌گردی",
    "karten": [
     {
      "typ": "info",
-     "titel": "Wörter zum Thema – Teil 1",
+     "titel": "🧩 Rund ums Thema (1)",
      "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
      "beispiele": [
       {
@@ -84,7 +84,7 @@
     },
     {
      "typ": "info",
-     "titel": "Wörter zum Thema – Teil 2",
+     "titel": "🧩 Rund ums Thema (2)",
      "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
      "beispiele": [
       {
@@ -138,43 +138,6 @@
      ]
     },
     {
-     "typ": "info",
-     "titel": "Verben",
-     "text": "<p>Infinitiv – im Gespräch brauchst du sie gleich in allen Zeiten.</p>",
-     "beispiele": [
-      {
-       "fa": "سفر کردن",
-       "tr": "safar kardan",
-       "de": "reisen",
-       "emoji": "✈️"
-      },
-      {
-       "fa": "رزرو کردن",
-       "tr": "rezerw kardan",
-       "de": "buchen, reservieren",
-       "emoji": "📅"
-      },
-      {
-       "fa": "پیشنهاد دادن",
-       "tr": "pīschnahād dādan",
-       "de": "vorschlagen",
-       "emoji": "💡"
-      },
-      {
-       "fa": "موافقت کردن",
-       "tr": "mowāfeghat kardan",
-       "de": "zustimmen",
-       "emoji": "👍"
-      },
-      {
-       "fa": "بستن",
-       "tr": "bastan",
-       "de": "packen, schließen",
-       "emoji": "🧳"
-      }
-     ]
-    },
-    {
      "typ": "paare",
      "links": "de",
      "paare": [
@@ -222,16 +185,16 @@
      "links": "de",
      "paare": [
       {
-       "fa": "سفر کردن",
-       "tr": "safar kardan",
-       "de": "reisen",
-       "emoji": "✈️"
+       "fa": "بوم‌گردی",
+       "tr": "būmgardī",
+       "de": "Ökotourismus-Unterkunft (Gästehaus)",
+       "emoji": "🏡"
       },
       {
-       "fa": "اقامتگاه",
-       "tr": "eghāmatgāh",
-       "de": "Unterkunft",
-       "emoji": "🏨"
+       "fa": "ماجراجویی",
+       "tr": "mādscherādschūyī",
+       "de": "Abenteuer",
+       "emoji": "🧗"
       },
       {
        "fa": "مقصد",
@@ -240,10 +203,1138 @@
        "emoji": "📍"
       },
       {
+       "fa": "برنامه",
+       "tr": "barnāme",
+       "de": "Plan, Programm",
+       "emoji": "🗓️"
+      },
+      {
+       "fa": "کویر",
+       "tr": "kawīr",
+       "de": "Wüste",
+       "emoji": "🏜️"
+      },
+      {
+       "fa": "فصل",
+       "tr": "fasl",
+       "de": "Jahreszeit",
+       "emoji": "🍂"
+      }
+     ],
+     "titel": "Noch einmal: Was bedeutet das?"
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "بوم‌گردی",
+       "tr": "būmgardī",
+       "de": "Ökotourismus-Unterkunft (Gästehaus)",
+       "emoji": "🏡"
+      },
+      {
+       "fa": "فصل",
+       "tr": "fasl",
+       "de": "Jahreszeit",
+       "emoji": "🍂"
+      },
+      {
+       "fa": "مقصد",
+       "tr": "maghsad",
+       "de": "Reiseziel",
+       "emoji": "📍"
+      },
+      {
+       "fa": "چمدان",
+       "tr": "tschamedān",
+       "de": "Koffer",
+       "emoji": "🧳"
+      },
+      {
+       "fa": "کوه",
+       "tr": "kūh",
+       "de": "Berg",
+       "emoji": "⛰️"
+      },
+      {
+       "fa": "ماجراجویی",
+       "tr": "mādscherādschūyī",
+       "de": "Abenteuer",
+       "emoji": "🧗"
+      }
+     ],
+     "titel": "Memory: Bild & Wort"
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Rund ums Thema",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 50,
+     "ziel": 10,
+     "woerter": [
+      {
+       "fa": "مقصد",
+       "a": "Reiseziel"
+      },
+      {
+       "fa": "اقامتگاه",
+       "a": "Unterkunft"
+      },
+      {
+       "fa": "بوم‌گردی",
+       "a": "Ökotourismus-Unterkunft (Gästehaus)"
+      },
+      {
+       "fa": "کویر",
+       "a": "Wüste"
+      },
+      {
+       "fa": "ساحل",
+       "a": "Strand"
+      },
+      {
+       "fa": "کوه",
+       "a": "Berg"
+      },
+      {
+       "fa": "جنگل",
+       "a": "Wald"
+      },
+      {
+       "fa": "بلیت هواپیما",
+       "a": "Flugticket"
+      },
+      {
+       "fa": "چمدان",
+       "a": "Koffer"
+      },
+      {
        "fa": "ویزا",
-       "tr": "wīzā",
-       "de": "Visum",
+       "a": "Visum"
+      },
+      {
+       "fa": "بودجه",
+       "a": "Budget"
+      },
+      {
+       "fa": "راهنمای تور",
+       "a": "Reiseleiter/in"
+      },
+      {
+       "fa": "جاذبه‌ی گردشگری",
+       "a": "Sehenswürdigkeit"
+      },
+      {
+       "fa": "فصل",
+       "a": "Jahreszeit"
+      },
+      {
+       "fa": "ماجراجویی",
+       "a": "Abenteuer"
+      },
+      {
+       "fa": "برنامه",
+       "a": "Plan, Programm"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "w1",
+   "titel": "Orte in Iran",
+   "vorschau": "اصفهان · شیراز · یزد",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "🗺️ Orte in Iran (1)",
+     "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
+     "beispiele": [
+      {
+       "fa": "اصفهان",
+       "tr": "esfahān",
+       "de": "Isfahan",
+       "emoji": "🌉"
+      },
+      {
+       "fa": "شیراز",
+       "tr": "schīrāz",
+       "de": "Schiras",
+       "emoji": "🌹"
+      },
+      {
+       "fa": "یزد",
+       "tr": "yazd",
+       "de": "Yazd",
+       "emoji": "🏜️"
+      },
+      {
+       "fa": "کاشان",
+       "tr": "kāschān",
+       "de": "Kaschan",
+       "emoji": "🌸"
+      },
+      {
+       "fa": "تبریز",
+       "tr": "tabrīz",
+       "de": "Täbris",
+       "emoji": "🧶"
+      },
+      {
+       "fa": "رشت",
+       "tr": "rascht",
+       "de": "Rascht",
+       "emoji": "🌧️"
+      }
+     ]
+    },
+    {
+     "typ": "info",
+     "titel": "🗺️ Orte in Iran (2)",
+     "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
+     "beispiele": [
+      {
+       "fa": "کیش",
+       "tr": "kīsch",
+       "de": "Kisch (Insel)",
+       "emoji": "🏝️"
+      },
+      {
+       "fa": "تخت جمشید",
+       "tr": "tacht-e dschamschīd",
+       "de": "Persepolis",
+       "emoji": "🏛️"
+      },
+      {
+       "fa": "خلیج فارس",
+       "tr": "chalīdsch-e fārs",
+       "de": "Persischer Golf",
+       "emoji": "🌊"
+      },
+      {
+       "fa": "دریای خزر",
+       "tr": "daryā-ye chazar",
+       "de": "Kaspisches Meer",
+       "emoji": "🌊"
+      },
+      {
+       "fa": "دماوند",
+       "tr": "damāwand",
+       "de": "Damavand (Berg)",
+       "emoji": "🏔️"
+      },
+      {
+       "fa": "روستای ابیانه",
+       "tr": "rūstā-ye abyāne",
+       "de": "Dorf Abyaneh",
+       "emoji": "🧱"
+      }
+     ]
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "کیش",
+       "tr": "kīsch",
+       "de": "Kisch (Insel)",
+       "emoji": "🏝️"
+      },
+      {
+       "fa": "کاشان",
+       "tr": "kāschān",
+       "de": "Kaschan",
+       "emoji": "🌸"
+      },
+      {
+       "fa": "شیراز",
+       "tr": "schīrāz",
+       "de": "Schiras",
+       "emoji": "🌹"
+      },
+      {
+       "fa": "دریای خزر",
+       "tr": "daryā-ye chazar",
+       "de": "Kaspisches Meer",
+       "emoji": "🌊"
+      },
+      {
+       "fa": "تخت جمشید",
+       "tr": "tacht-e dschamschīd",
+       "de": "Persepolis",
+       "emoji": "🏛️"
+      },
+      {
+       "fa": "یزد",
+       "tr": "yazd",
+       "de": "Yazd",
+       "emoji": "🏜️"
+      }
+     ],
+     "titel": "Was bedeutet das?"
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "روستای ابیانه",
+       "tr": "rūstā-ye abyāne",
+       "de": "Dorf Abyaneh",
+       "emoji": "🧱"
+      },
+      {
+       "fa": "کاشان",
+       "tr": "kāschān",
+       "de": "Kaschan",
+       "emoji": "🌸"
+      },
+      {
+       "fa": "دماوند",
+       "tr": "damāwand",
+       "de": "Damavand (Berg)",
+       "emoji": "🏔️"
+      },
+      {
+       "fa": "رشت",
+       "tr": "rascht",
+       "de": "Rascht",
+       "emoji": "🌧️"
+      },
+      {
+       "fa": "شیراز",
+       "tr": "schīrāz",
+       "de": "Schiras",
+       "emoji": "🌹"
+      },
+      {
+       "fa": "دریای خزر",
+       "tr": "daryā-ye chazar",
+       "de": "Kaspisches Meer",
+       "emoji": "🌊"
+      }
+     ],
+     "titel": "Noch einmal: Was bedeutet das?"
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "دماوند",
+       "tr": "damāwand",
+       "de": "Damavand (Berg)",
+       "emoji": "🏔️"
+      },
+      {
+       "fa": "رشت",
+       "tr": "rascht",
+       "de": "Rascht",
+       "emoji": "🌧️"
+      },
+      {
+       "fa": "تبریز",
+       "tr": "tabrīz",
+       "de": "Täbris",
+       "emoji": "🧶"
+      },
+      {
+       "fa": "روستای ابیانه",
+       "tr": "rūstā-ye abyāne",
+       "de": "Dorf Abyaneh",
+       "emoji": "🧱"
+      },
+      {
+       "fa": "یزد",
+       "tr": "yazd",
+       "de": "Yazd",
+       "emoji": "🏜️"
+      },
+      {
+       "fa": "کاشان",
+       "tr": "kāschān",
+       "de": "Kaschan",
+       "emoji": "🌸"
+      }
+     ],
+     "titel": "Memory: Bild & Wort"
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>در ___ می‌توانید ستون‌های سه هزار ساله را ببینید.</span><br><span class='mini'>In Persepolis können Sie 3000 Jahre alte Säulen sehen.</span>",
+       "optionen": [
+        "تخت جمشید",
+        "بوم‌گردی",
+        "پذیرش"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>در تخت جمشید می‌توانید ستون‌های سه هزار ساله را ببینید.</span>"
+      },
+      {
+       "frage": "<span class='fa'>در ___ کویر را ببینید و شب ستاره‌ها را تماشا کنید.</span><br><span class='mini'>Sehen Sie in Yazd die Wüste und schauen Sie nachts die Sterne an.</span>",
+       "optionen": [
+        "یزد",
+        "خاطره",
+        "جنگل"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>در یزد کویر را ببینید و شب ستاره‌ها را تماشا کنید.</span>"
+      },
+      {
+       "frage": "<span class='fa'>شمال ایران کنار ___ است و خیلی سبز است.</span><br><span class='mini'>Der Norden Irans liegt am Kaspischen Meer und ist sehr grün.</span>",
+       "optionen": [
+        "دریای خزر",
+        "اتاق یک‌تخته",
+        "پذیرش"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>شمال ایران کنار دریای خزر است و خیلی سبز است.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Orte in Iran",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 50,
+     "ziel": 10,
+     "woerter": [
+      {
+       "fa": "اصفهان",
+       "a": "Isfahan"
+      },
+      {
+       "fa": "شیراز",
+       "a": "Schiras"
+      },
+      {
+       "fa": "یزد",
+       "a": "Yazd"
+      },
+      {
+       "fa": "کاشان",
+       "a": "Kaschan"
+      },
+      {
+       "fa": "تبریز",
+       "a": "Täbris"
+      },
+      {
+       "fa": "رشت",
+       "a": "Rascht"
+      },
+      {
+       "fa": "کیش",
+       "a": "Kisch (Insel)"
+      },
+      {
+       "fa": "تخت جمشید",
+       "a": "Persepolis"
+      },
+      {
+       "fa": "خلیج فارس",
+       "a": "Persischer Golf"
+      },
+      {
+       "fa": "دریای خزر",
+       "a": "Kaspisches Meer"
+      },
+      {
+       "fa": "دماوند",
+       "a": "Damavand (Berg)"
+      },
+      {
+       "fa": "روستای ابیانه",
+       "a": "Dorf Abyaneh"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "w2",
+   "titel": "Unterkunft & Gepäck",
+   "vorschau": "هتل · مسافرخانه · اتاق یک‌تخته",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "🧳 Unterkunft & Gepäck (1)",
+     "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
+     "beispiele": [
+      {
+       "fa": "هتل",
+       "tr": "hotel",
+       "de": "Hotel",
+       "emoji": "🏨"
+      },
+      {
+       "fa": "مسافرخانه",
+       "tr": "mosāferchāne",
+       "de": "einfache Pension",
+       "emoji": "🛏️"
+      },
+      {
+       "fa": "اتاق یک‌تخته",
+       "tr": "otāgh-e yektachte",
+       "de": "Einzelzimmer",
+       "emoji": "🛏️"
+      },
+      {
+       "fa": "اتاق دوتخته",
+       "tr": "otāgh-e dotachte",
+       "de": "Doppelzimmer",
+       "emoji": "🛌"
+      },
+      {
+       "fa": "پذیرش",
+       "tr": "pazīresch",
+       "de": "Rezeption",
+       "emoji": "🛎️"
+      },
+      {
+       "fa": "پاسپورت",
+       "tr": "pāsport",
+       "de": "Reisepass",
        "emoji": "🛂"
+      }
+     ]
+    },
+    {
+     "typ": "info",
+     "titel": "🧳 Unterkunft & Gepäck (2)",
+     "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
+     "beispiele": [
+      {
+       "fa": "کوله‌پشتی",
+       "tr": "kūleposchtī",
+       "de": "Rucksack",
+       "emoji": "🎒"
+      },
+      {
+       "fa": "کیسه‌خواب",
+       "tr": "kīsechāb",
+       "de": "Schlafsack",
+       "emoji": "🏕️"
+      },
+      {
+       "fa": "چادر",
+       "tr": "tschādor",
+       "de": "Zelt",
+       "emoji": "⛺"
+      },
+      {
+       "fa": "ضدآفتاب",
+       "tr": "zeddeāftāb",
+       "de": "Sonnencreme",
+       "emoji": "🧴"
+      },
+      {
+       "fa": "شارژر",
+       "tr": "schārzher",
+       "de": "Ladegerät",
+       "emoji": "🔌"
+      },
+      {
+       "fa": "بیمه‌ی مسافرتی",
+       "tr": "bīme-ye mosāferatī",
+       "de": "Reiseversicherung",
+       "emoji": "🛡️"
+      }
+     ]
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "مسافرخانه",
+       "tr": "mosāferchāne",
+       "de": "einfache Pension",
+       "emoji": "🛏️"
+      },
+      {
+       "fa": "کیسه‌خواب",
+       "tr": "kīsechāb",
+       "de": "Schlafsack",
+       "emoji": "🏕️"
+      },
+      {
+       "fa": "هتل",
+       "tr": "hotel",
+       "de": "Hotel",
+       "emoji": "🏨"
+      },
+      {
+       "fa": "شارژر",
+       "tr": "schārzher",
+       "de": "Ladegerät",
+       "emoji": "🔌"
+      },
+      {
+       "fa": "پذیرش",
+       "tr": "pazīresch",
+       "de": "Rezeption",
+       "emoji": "🛎️"
+      },
+      {
+       "fa": "کوله‌پشتی",
+       "tr": "kūleposchtī",
+       "de": "Rucksack",
+       "emoji": "🎒"
+      }
+     ],
+     "titel": "Was bedeutet das?"
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "مسافرخانه",
+       "tr": "mosāferchāne",
+       "de": "einfache Pension",
+       "emoji": "🛏️"
+      },
+      {
+       "fa": "کوله‌پشتی",
+       "tr": "kūleposchtī",
+       "de": "Rucksack",
+       "emoji": "🎒"
+      },
+      {
+       "fa": "اتاق دوتخته",
+       "tr": "otāgh-e dotachte",
+       "de": "Doppelzimmer",
+       "emoji": "🛌"
+      },
+      {
+       "fa": "کیسه‌خواب",
+       "tr": "kīsechāb",
+       "de": "Schlafsack",
+       "emoji": "🏕️"
+      },
+      {
+       "fa": "اتاق یک‌تخته",
+       "tr": "otāgh-e yektachte",
+       "de": "Einzelzimmer",
+       "emoji": "🛏️"
+      },
+      {
+       "fa": "بیمه‌ی مسافرتی",
+       "tr": "bīme-ye mosāferatī",
+       "de": "Reiseversicherung",
+       "emoji": "🛡️"
+      }
+     ],
+     "titel": "Noch einmal: Was bedeutet das?"
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "اتاق دوتخته",
+       "tr": "otāgh-e dotachte",
+       "de": "Doppelzimmer",
+       "emoji": "🛌"
+      },
+      {
+       "fa": "کوله‌پشتی",
+       "tr": "kūleposchtī",
+       "de": "Rucksack",
+       "emoji": "🎒"
+      },
+      {
+       "fa": "کیسه‌خواب",
+       "tr": "kīsechāb",
+       "de": "Schlafsack",
+       "emoji": "🏕️"
+      },
+      {
+       "fa": "پاسپورت",
+       "tr": "pāsport",
+       "de": "Reisepass",
+       "emoji": "🛂"
+      },
+      {
+       "fa": "ضدآفتاب",
+       "tr": "zeddeāftāb",
+       "de": "Sonnencreme",
+       "emoji": "🧴"
+      },
+      {
+       "fa": "چادر",
+       "tr": "tschādor",
+       "de": "Zelt",
+       "emoji": "⛺"
+      }
+     ],
+     "titel": "Memory: Bild & Wort"
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>بدون ___ نمی‌توانید از کشور خارج شوید.</span><br><span class='mini'>Ohne Reisepass können Sie das Land nicht verlassen.</span>",
+       "optionen": [
+        "پاسپورت",
+        "دیدنی",
+        "رشت"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>بدون پاسپورت نمی‌توانید از کشور خارج شوید.</span>"
+      },
+      {
+       "frage": "<span class='fa'>در تابستان ___ فراموش نکن؛ آفتاب خیلی قوی است.</span><br><span class='mini'>Vergiss im Sommer die Sonnencreme nicht; die Sonne ist sehr stark.</span>",
+       "optionen": [
+        "ضدآفتاب",
+        "یزد",
+        "مقصد"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>در تابستان ضدآفتاب فراموش نکن؛ آفتاب خیلی قوی است.</span>"
+      },
+      {
+       "frage": "<span class='fa'>کلید اتاق را از ___ هتل گرفتیم.</span><br><span class='mini'>Den Zimmerschlüssel haben wir an der Hotelrezeption bekommen.</span>",
+       "optionen": [
+        "پذیرش",
+        "کاشان",
+        "کوه"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>کلید اتاق را از پذیرش هتل گرفتیم.</span>"
+      },
+      {
+       "frage": "<span class='fa'>برای کمپ در کوه یک ___ و کیسه‌خواب لازم داری.</span><br><span class='mini'>Zum Campen in den Bergen brauchst du ein Zelt und einen Schlafsack.</span>",
+       "optionen": [
+        "چادر",
+        "دیدنی",
+        "بوم‌گردی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>برای کمپ در کوه یک چادر و کیسه‌خواب لازم داری.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Unterkunft & Gepäck",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 50,
+     "ziel": 10,
+     "woerter": [
+      {
+       "fa": "هتل",
+       "a": "Hotel"
+      },
+      {
+       "fa": "مسافرخانه",
+       "a": "einfache Pension"
+      },
+      {
+       "fa": "اتاق یک‌تخته",
+       "a": "Einzelzimmer"
+      },
+      {
+       "fa": "اتاق دوتخته",
+       "a": "Doppelzimmer"
+      },
+      {
+       "fa": "پذیرش",
+       "a": "Rezeption"
+      },
+      {
+       "fa": "پاسپورت",
+       "a": "Reisepass"
+      },
+      {
+       "fa": "کوله‌پشتی",
+       "a": "Rucksack"
+      },
+      {
+       "fa": "کیسه‌خواب",
+       "a": "Schlafsack"
+      },
+      {
+       "fa": "چادر",
+       "a": "Zelt"
+      },
+      {
+       "fa": "ضدآفتاب",
+       "a": "Sonnencreme"
+      },
+      {
+       "fa": "شارژر",
+       "a": "Ladegerät"
+      },
+      {
+       "fa": "بیمه‌ی مسافرتی",
+       "a": "Reiseversicherung"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "w3",
+   "titel": "Unterwegs auf Reisen",
+   "vorschau": "پرواز · تأخیر · رفت و برگشت",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "🧭 Unterwegs auf Reisen (1)",
+     "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
+     "beispiele": [
+      {
+       "fa": "پرواز",
+       "tr": "parwāz",
+       "de": "Flug",
+       "emoji": "🛫"
+      },
+      {
+       "fa": "تأخیر",
+       "tr": "taʾchīr",
+       "de": "Verspätung",
+       "emoji": "⏰"
+      },
+      {
+       "fa": "رفت و برگشت",
+       "tr": "raft o bargascht",
+       "de": "Hin und zurück",
+       "emoji": "🔁"
+      },
+      {
+       "fa": "یک‌طرفه",
+       "tr": "yektarafe",
+       "de": "einfach (Fahrt)",
+       "emoji": "➡️"
+      },
+      {
+       "fa": "تور",
+       "tr": "tūr",
+       "de": "Tour, Gruppenreise",
+       "emoji": "🚌"
+      },
+      {
+       "fa": "گردشگر",
+       "tr": "gardeschgar",
+       "de": "Tourist/in",
+       "emoji": "📸"
+      }
+     ]
+    },
+    {
+     "typ": "info",
+     "titel": "🧭 Unterwegs auf Reisen (2)",
+     "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
+     "beispiele": [
+      {
+       "fa": "دیدنی",
+       "tr": "dīdanī",
+       "de": "sehenswert",
+       "emoji": "👀"
+      },
+      {
+       "fa": "منظره",
+       "tr": "manzare",
+       "de": "Aussicht, Landschaft",
+       "emoji": "🏞️"
+      },
+      {
+       "fa": "غروب",
+       "tr": "ghorūb",
+       "de": "Sonnenuntergang",
+       "emoji": "🌇"
+      },
+      {
+       "fa": "ستاره",
+       "tr": "setāre",
+       "de": "Stern",
+       "emoji": "⭐"
+      },
+      {
+       "fa": "خاطره",
+       "tr": "chātere",
+       "de": "Erinnerung",
+       "emoji": "💭"
+      },
+      {
+       "fa": "عکس یادگاری",
+       "tr": "ʿaks-e yādgārī",
+       "de": "Erinnerungsfoto",
+       "emoji": "🤳"
+      }
+     ]
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "پرواز",
+       "tr": "parwāz",
+       "de": "Flug",
+       "emoji": "🛫"
+      },
+      {
+       "fa": "منظره",
+       "tr": "manzare",
+       "de": "Aussicht, Landschaft",
+       "emoji": "🏞️"
+      },
+      {
+       "fa": "عکس یادگاری",
+       "tr": "ʿaks-e yādgārī",
+       "de": "Erinnerungsfoto",
+       "emoji": "🤳"
+      },
+      {
+       "fa": "دیدنی",
+       "tr": "dīdanī",
+       "de": "sehenswert",
+       "emoji": "👀"
+      },
+      {
+       "fa": "خاطره",
+       "tr": "chātere",
+       "de": "Erinnerung",
+       "emoji": "💭"
+      },
+      {
+       "fa": "غروب",
+       "tr": "ghorūb",
+       "de": "Sonnenuntergang",
+       "emoji": "🌇"
+      }
+     ],
+     "titel": "Was bedeutet das?"
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "خاطره",
+       "tr": "chātere",
+       "de": "Erinnerung",
+       "emoji": "💭"
+      },
+      {
+       "fa": "غروب",
+       "tr": "ghorūb",
+       "de": "Sonnenuntergang",
+       "emoji": "🌇"
+      },
+      {
+       "fa": "گردشگر",
+       "tr": "gardeschgar",
+       "de": "Tourist/in",
+       "emoji": "📸"
+      },
+      {
+       "fa": "ستاره",
+       "tr": "setāre",
+       "de": "Stern",
+       "emoji": "⭐"
+      },
+      {
+       "fa": "رفت و برگشت",
+       "tr": "raft o bargascht",
+       "de": "Hin und zurück",
+       "emoji": "🔁"
+      },
+      {
+       "fa": "تأخیر",
+       "tr": "taʾchīr",
+       "de": "Verspätung",
+       "emoji": "⏰"
+      }
+     ],
+     "titel": "Noch einmal: Was bedeutet das?"
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "غروب",
+       "tr": "ghorūb",
+       "de": "Sonnenuntergang",
+       "emoji": "🌇"
+      },
+      {
+       "fa": "دیدنی",
+       "tr": "dīdanī",
+       "de": "sehenswert",
+       "emoji": "👀"
+      },
+      {
+       "fa": "منظره",
+       "tr": "manzare",
+       "de": "Aussicht, Landschaft",
+       "emoji": "🏞️"
+      },
+      {
+       "fa": "گردشگر",
+       "tr": "gardeschgar",
+       "de": "Tourist/in",
+       "emoji": "📸"
+      },
+      {
+       "fa": "تأخیر",
+       "tr": "taʾchīr",
+       "de": "Verspätung",
+       "emoji": "⏰"
+      },
+      {
+       "fa": "ستاره",
+       "tr": "setāre",
+       "de": "Stern",
+       "emoji": "⭐"
+      }
+     ],
+     "titel": "Memory: Bild & Wort"
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>پرواز ما سه ساعت ___ داشت.</span><br><span class='mini'>Unser Flug hatte drei Stunden Verspätung.</span>",
+       "optionen": [
+        "تأخیر",
+        "روستای ابیانه",
+        "اتاق دوتخته"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>پرواز ما سه ساعت تأخیر داشت.</span>"
+      },
+      {
+       "frage": "<span class='fa'>از بالای کوه ___ شهر فوق‌العاده است.</span><br><span class='mini'>Von oben auf dem Berg ist die Aussicht auf die Stadt fantastisch.</span>",
+       "optionen": [
+        "منظره",
+        "یزد",
+        "فصل"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>از بالای کوه منظره شهر فوق‌العاده است.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Unterwegs auf Reisen",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 50,
+     "ziel": 10,
+     "woerter": [
+      {
+       "fa": "پرواز",
+       "a": "Flug"
+      },
+      {
+       "fa": "تأخیر",
+       "a": "Verspätung"
+      },
+      {
+       "fa": "رفت و برگشت",
+       "a": "Hin und zurück"
+      },
+      {
+       "fa": "یک‌طرفه",
+       "a": "einfach (Fahrt)"
+      },
+      {
+       "fa": "تور",
+       "a": "Tour, Gruppenreise"
+      },
+      {
+       "fa": "گردشگر",
+       "a": "Tourist/in"
+      },
+      {
+       "fa": "دیدنی",
+       "a": "sehenswert"
+      },
+      {
+       "fa": "منظره",
+       "a": "Aussicht, Landschaft"
+      },
+      {
+       "fa": "غروب",
+       "a": "Sonnenuntergang"
+      },
+      {
+       "fa": "ستاره",
+       "a": "Stern"
+      },
+      {
+       "fa": "خاطره",
+       "a": "Erinnerung"
+      },
+      {
+       "fa": "عکس یادگاری",
+       "a": "Erinnerungsfoto"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "v",
+   "titel": "Verben & Wiederholung",
+   "vorschau": "سفر کردن · رزرو کردن · پیشنهاد دادن",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Verben",
+     "text": "<p>Infinitiv – im Gespräch brauchst du sie in allen Zeiten.</p>",
+     "beispiele": [
+      {
+       "fa": "سفر کردن",
+       "tr": "safar kardan",
+       "de": "reisen",
+       "emoji": "✈️"
+      },
+      {
+       "fa": "رزرو کردن",
+       "tr": "rezerw kardan",
+       "de": "buchen, reservieren",
+       "emoji": "📅"
+      },
+      {
+       "fa": "پیشنهاد دادن",
+       "tr": "pīschnahād dādan",
+       "de": "vorschlagen",
+       "emoji": "💡"
       },
       {
        "fa": "موافقت کردن",
@@ -252,64 +1343,172 @@
        "emoji": "👍"
       },
       {
-       "fa": "بوم‌گردی",
-       "tr": "būmgardī",
-       "de": "Ökotourismus-Unterkunft (Gästehaus)",
-       "emoji": "🏡"
+       "fa": "بستن",
+       "tr": "bastan",
+       "de": "packen, schließen",
+       "emoji": "🧳"
+      },
+      {
+       "fa": "بلیت گرفتن",
+       "tr": "belīt gereftan",
+       "de": "ein Ticket kaufen",
+       "emoji": "🎫"
+      },
+      {
+       "fa": "تحویل گرفتن",
+       "tr": "tahwīl gereftan",
+       "de": "einchecken, in Empfang nehmen",
+       "emoji": "🔑"
+      },
+      {
+       "fa": "گشتن",
+       "tr": "gaschtan",
+       "de": "herumreisen, sich umsehen",
+       "emoji": "🚶"
+      },
+      {
+       "fa": "لغو کردن",
+       "tr": "laghw kardan",
+       "de": "stornieren, absagen",
+       "emoji": "❌"
+      }
+     ]
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "رزرو کردن",
+       "tr": "rezerw kardan",
+       "de": "buchen, reservieren",
+       "emoji": "📅"
+      },
+      {
+       "fa": "تحویل گرفتن",
+       "tr": "tahwīl gereftan",
+       "de": "einchecken, in Empfang nehmen",
+       "emoji": "🔑"
+      },
+      {
+       "fa": "سفر کردن",
+       "tr": "safar kardan",
+       "de": "reisen",
+       "emoji": "✈️"
+      },
+      {
+       "fa": "پیشنهاد دادن",
+       "tr": "pīschnahād dādan",
+       "de": "vorschlagen",
+       "emoji": "💡"
+      },
+      {
+       "fa": "موافقت کردن",
+       "tr": "mowāfeghat kardan",
+       "de": "zustimmen",
+       "emoji": "👍"
+      },
+      {
+       "fa": "لغو کردن",
+       "tr": "laghw kardan",
+       "de": "stornieren, absagen",
+       "emoji": "❌"
       }
      ],
      "titel": "Was bedeutet das?"
     },
     {
-     "typ": "memory",
-     "links": "emoji",
-     "paare": [
-      {
-       "fa": "جاذبه‌ی گردشگری",
-       "tr": "dschāzebe-ye gardeschgarī",
-       "de": "Sehenswürdigkeit",
-       "emoji": "🏛️"
-      },
-      {
-       "fa": "برنامه",
-       "tr": "barnāme",
-       "de": "Plan, Programm",
-       "emoji": "🗓️"
-      },
-      {
-       "fa": "راهنمای تور",
-       "tr": "rāhnamā-ye tūr",
-       "de": "Reiseleiter/in",
-       "emoji": "🧭"
-      },
-      {
-       "fa": "ساحل",
-       "tr": "sāhel",
-       "de": "Strand",
-       "emoji": "🏖️"
-      },
-      {
-       "fa": "بودجه",
-       "tr": "būdsche",
-       "de": "Budget",
-       "emoji": "💶"
-      },
+     "typ": "sortieren",
+     "titel": "Welches Wortfeld?",
+     "frage": "Ordne die Wörter dem Wortfeld zu.",
+     "kategorien": [
+      "🧩 Rund ums Thema",
+      "🗺️ Orte in Iran",
+      "🧳 Unterkunft & Gepäck",
+      "🧭 Unterwegs auf Reisen"
+     ],
+     "items": [
       {
        "fa": "کوه",
-       "tr": "kūh",
-       "de": "Berg",
-       "emoji": "⛰️"
+       "k": 0,
+       "e": "Berg",
+       "say": false
+      },
+      {
+       "fa": "ویزا",
+       "k": 0,
+       "e": "Visum",
+       "say": false
+      },
+      {
+       "fa": "چمدان",
+       "k": 0,
+       "e": "Koffer",
+       "say": false
+      },
+      {
+       "fa": "رشت",
+       "k": 1,
+       "e": "Rascht",
+       "say": false
+      },
+      {
+       "fa": "تخت جمشید",
+       "k": 1,
+       "e": "Persepolis",
+       "say": false
+      },
+      {
+       "fa": "دریای خزر",
+       "k": 1,
+       "e": "Kaspisches Meer",
+       "say": false
+      },
+      {
+       "fa": "بیمه‌ی مسافرتی",
+       "k": 2,
+       "e": "Reiseversicherung",
+       "say": false
+      },
+      {
+       "fa": "شارژر",
+       "k": 2,
+       "e": "Ladegerät",
+       "say": false
+      },
+      {
+       "fa": "هتل",
+       "k": 2,
+       "e": "Hotel",
+       "say": false
+      },
+      {
+       "fa": "گردشگر",
+       "k": 3,
+       "e": "Tourist/in",
+       "say": false
+      },
+      {
+       "fa": "پرواز",
+       "k": 3,
+       "e": "Flug",
+       "say": false
+      },
+      {
+       "fa": "ستاره",
+       "k": 3,
+       "e": "Stern",
+       "say": false
       }
-     ],
-     "titel": "Memory: Bild & Wort"
+     ]
     },
     {
      "typ": "tempo",
-     "titel": "Blitz: Wörter",
+     "titel": "Blitz: alle Wörter",
      "aufgabe": "Was bedeutet das?",
      "modus": "de",
-     "sekunden": 60,
-     "ziel": 12,
+     "sekunden": 75,
+     "ziel": 15,
      "woerter": [
       {
        "fa": "مقصد",
@@ -376,6 +1575,150 @@
        "a": "Plan, Programm"
       },
       {
+       "fa": "اصفهان",
+       "a": "Isfahan"
+      },
+      {
+       "fa": "شیراز",
+       "a": "Schiras"
+      },
+      {
+       "fa": "یزد",
+       "a": "Yazd"
+      },
+      {
+       "fa": "کاشان",
+       "a": "Kaschan"
+      },
+      {
+       "fa": "تبریز",
+       "a": "Täbris"
+      },
+      {
+       "fa": "رشت",
+       "a": "Rascht"
+      },
+      {
+       "fa": "کیش",
+       "a": "Kisch (Insel)"
+      },
+      {
+       "fa": "تخت جمشید",
+       "a": "Persepolis"
+      },
+      {
+       "fa": "خلیج فارس",
+       "a": "Persischer Golf"
+      },
+      {
+       "fa": "دریای خزر",
+       "a": "Kaspisches Meer"
+      },
+      {
+       "fa": "دماوند",
+       "a": "Damavand (Berg)"
+      },
+      {
+       "fa": "روستای ابیانه",
+       "a": "Dorf Abyaneh"
+      },
+      {
+       "fa": "هتل",
+       "a": "Hotel"
+      },
+      {
+       "fa": "مسافرخانه",
+       "a": "einfache Pension"
+      },
+      {
+       "fa": "اتاق یک‌تخته",
+       "a": "Einzelzimmer"
+      },
+      {
+       "fa": "اتاق دوتخته",
+       "a": "Doppelzimmer"
+      },
+      {
+       "fa": "پذیرش",
+       "a": "Rezeption"
+      },
+      {
+       "fa": "پاسپورت",
+       "a": "Reisepass"
+      },
+      {
+       "fa": "کوله‌پشتی",
+       "a": "Rucksack"
+      },
+      {
+       "fa": "کیسه‌خواب",
+       "a": "Schlafsack"
+      },
+      {
+       "fa": "چادر",
+       "a": "Zelt"
+      },
+      {
+       "fa": "ضدآفتاب",
+       "a": "Sonnencreme"
+      },
+      {
+       "fa": "شارژر",
+       "a": "Ladegerät"
+      },
+      {
+       "fa": "بیمه‌ی مسافرتی",
+       "a": "Reiseversicherung"
+      },
+      {
+       "fa": "پرواز",
+       "a": "Flug"
+      },
+      {
+       "fa": "تأخیر",
+       "a": "Verspätung"
+      },
+      {
+       "fa": "رفت و برگشت",
+       "a": "Hin und zurück"
+      },
+      {
+       "fa": "یک‌طرفه",
+       "a": "einfach (Fahrt)"
+      },
+      {
+       "fa": "تور",
+       "a": "Tour, Gruppenreise"
+      },
+      {
+       "fa": "گردشگر",
+       "a": "Tourist/in"
+      },
+      {
+       "fa": "دیدنی",
+       "a": "sehenswert"
+      },
+      {
+       "fa": "منظره",
+       "a": "Aussicht, Landschaft"
+      },
+      {
+       "fa": "غروب",
+       "a": "Sonnenuntergang"
+      },
+      {
+       "fa": "ستاره",
+       "a": "Stern"
+      },
+      {
+       "fa": "خاطره",
+       "a": "Erinnerung"
+      },
+      {
+       "fa": "عکس یادگاری",
+       "a": "Erinnerungsfoto"
+      },
+      {
        "fa": "سفر کردن",
        "a": "reisen"
       },
@@ -394,19 +1737,35 @@
       {
        "fa": "بستن",
        "a": "packen, schließen"
+      },
+      {
+       "fa": "بلیت گرفتن",
+       "a": "ein Ticket kaufen"
+      },
+      {
+       "fa": "تحویل گرفتن",
+       "a": "einchecken, in Empfang nehmen"
+      },
+      {
+       "fa": "گشتن",
+       "a": "herumreisen, sich umsehen"
+      },
+      {
+       "fa": "لغو کردن",
+       "a": "stornieren, absagen"
       }
      ]
     }
    ]
   },
   {
-   "id": "s2",
+   "id": "r1",
    "titel": "Redemittel",
    "vorschau": "چطوره بریم یزد؟",
    "karten": [
     {
      "typ": "info",
-     "titel": "Redemittel – Teil 1",
+     "titel": "Redemittel (1)",
      "text": "<p>So sagt man das im Gespräch. Tippe einen Satz an, um ihn zu hören.</p>",
      "stil": "merke",
      "beispiele": [
@@ -439,21 +1798,21 @@
        "tr": "man pāyam!",
        "de": "Ich bin dabei!",
        "x": "من پایه‌ام!"
-      }
-     ]
-    },
-    {
-     "typ": "info",
-     "titel": "Redemittel – Teil 2",
-     "text": "<p>Die Schriftform findest du gleich in der Übung „Geschrieben ↔ gesprochen“.</p>",
-     "stil": "merke",
-     "beispiele": [
+      },
       {
        "fa": "راستش زیاد موافق نیستم، چون …",
        "tr": "rāstesch ziyād mowāfegh nīstam, tschūn …",
        "de": "Ehrlich gesagt bin ich nicht ganz einverstanden, weil …",
        "x": "راستش زیاد موافق نیستم، چون …"
-      },
+      }
+     ]
+    },
+    {
+     "typ": "info",
+     "titel": "Redemittel (2)",
+     "text": "<p>So sagt man das im Gespräch. Tippe einen Satz an, um ihn zu hören.</p>",
+     "stil": "merke",
+     "beispiele": [
       {
        "fa": "بد نیست، ولی به نظرم … بهتره.",
        "tr": "bad nīst, walī be nazaram … behtare.",
@@ -477,6 +1836,56 @@
        "tr": "mīsche zūdtar tahwīl begīrīm?",
        "de": "Können wir früher einchecken?",
        "x": "می‌شود زودتر تحویل بگیریم؟"
+      },
+      {
+       "fa": "یه بلیت رفت و برگشت شیراز می‌خوام.",
+       "tr": "ye belīt-e raft o bargascht schīrāz mīchām.",
+       "de": "Ich möchte ein Hin- und Rückfahrticket nach Schiras.",
+       "x": "یک بلیت رفت و برگشت به شیراز می‌خواهم."
+      },
+      {
+       "fa": "پرواز تأخیر داره؟",
+       "tr": "parwāz taʾchīr dāre?",
+       "de": "Hat der Flug Verspätung?",
+       "x": "پرواز تأخیر دارد؟"
+      }
+     ]
+    },
+    {
+     "typ": "info",
+     "titel": "Redemittel (3)",
+     "text": "<p>So sagt man das im Gespräch. Tippe einen Satz an, um ihn zu hören.</p>",
+     "stil": "merke",
+     "beispiele": [
+      {
+       "fa": "اتاق رو به حیاط دارید؟",
+       "tr": "otāgh rū be hayāt dārīd?",
+       "de": "Haben Sie ein Zimmer zum Innenhof?",
+       "x": "اتاق رو به حیاط دارید؟"
+      },
+      {
+       "fa": "ترجیح می‌دم …",
+       "tr": "tardschīh mīdam …",
+       "de": "Ich würde lieber …",
+       "x": "ترجیح می‌دهم …"
+      },
+      {
+       "fa": "برام فرقی نمی‌کنه.",
+       "tr": "barām farghī nemīkone.",
+       "de": "Mir ist es egal.",
+       "x": "برای من فرقی نمی‌کند."
+      },
+      {
+       "fa": "بیا رأی‌گیری کنیم!",
+       "tr": "biyā raʾygīrī konīm!",
+       "de": "Lass uns abstimmen!",
+       "x": "بیا رأی بگیریم!"
+      },
+      {
+       "fa": "اگه هوا خوب باشه، بریم کوه.",
+       "tr": "age hawā chūb bāsche, berīm kūh.",
+       "de": "Wenn das Wetter gut ist, gehen wir in die Berge.",
+       "x": "اگر هوا خوب باشد، به کوه برویم."
       }
      ]
     },
@@ -485,28 +1894,16 @@
      "links": "de",
      "paare": [
       {
-       "fa": "بیا اول بریم شیراز.",
-       "tr": "biyā awwal berīm schīrāz.",
-       "de": "Lass uns zuerst nach Schiras fahren.",
-       "x": "بیا اول به شیراز برویم."
+       "fa": "اگه هوا خوب باشه، بریم کوه.",
+       "tr": "age hawā chūb bāsche, berīm kūh.",
+       "de": "Wenn das Wetter gut ist, gehen wir in die Berge.",
+       "x": "اگر هوا خوب باشد، به کوه برویم."
       },
       {
-       "fa": "برای دو شب اتاق خالی دارید؟",
-       "tr": "barā-ye do schab otāgh-e chālī dārīd?",
-       "de": "Haben Sie ein Zimmer für zwei Nächte frei?",
-       "x": "برای دو شب اتاق خالی دارید؟"
-      },
-      {
-       "fa": "پیشنهاد من اینه که …",
-       "tr": "pīschnahād-e man īne ke …",
-       "de": "Mein Vorschlag ist, dass …",
-       "x": "پیشنهاد من این است که …"
-      },
-      {
-       "fa": "صبحونه هم حسابه؟",
-       "tr": "sobhūne ham hesābe?",
-       "de": "Ist Frühstück inklusive?",
-       "x": "صبحانه هم حساب است؟"
+       "fa": "راستش زیاد موافق نیستم، چون …",
+       "tr": "rāstesch ziyād mowāfegh nīstam, tschūn …",
+       "de": "Ehrlich gesagt bin ich nicht ganz einverstanden, weil …",
+       "x": "راستش زیاد موافق نیستم، چون …"
       },
       {
        "fa": "می‌شه زودتر تحویل بگیریم؟",
@@ -515,13 +1912,68 @@
        "x": "می‌شود زودتر تحویل بگیریم؟"
       },
       {
+       "fa": "فکر خوبیه!",
+       "tr": "fekr-e chūbīye!",
+       "de": "Gute Idee!",
+       "x": "فکر خوبی است!"
+      },
+      {
+       "fa": "صبحونه هم حسابه؟",
+       "tr": "sobhūne ham hesābe?",
+       "de": "Ist Frühstück inklusive?",
+       "x": "صبحانه هم حساب است؟"
+      },
+      {
+       "fa": "برام فرقی نمی‌کنه.",
+       "tr": "barām farghī nemīkone.",
+       "de": "Mir ist es egal.",
+       "x": "برای من فرقی نمی‌کند."
+      }
+     ],
+     "titel": "Was bedeutet das?"
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "من پایه‌م!",
+       "tr": "man pāyam!",
+       "de": "Ich bin dabei!",
+       "x": "من پایه‌ام!"
+      },
+      {
+       "fa": "اگه هوا خوب باشه، بریم کوه.",
+       "tr": "age hawā chūb bāsche, berīm kūh.",
+       "de": "Wenn das Wetter gut ist, gehen wir in die Berge.",
+       "x": "اگر هوا خوب باشد، به کوه برویم."
+      },
+      {
+       "fa": "پرواز تأخیر داره؟",
+       "tr": "parwāz taʾchīr dāre?",
+       "de": "Hat der Flug Verspätung?",
+       "x": "پرواز تأخیر دارد؟"
+      },
+      {
+       "fa": "صبحونه هم حسابه؟",
+       "tr": "sobhūne ham hesābe?",
+       "de": "Ist Frühstück inklusive?",
+       "x": "صبحانه هم حساب است؟"
+      },
+      {
        "fa": "بد نیست، ولی به نظرم … بهتره.",
        "tr": "bad nīst, walī be nazaram … behtare.",
        "de": "Nicht schlecht, aber ich finde … besser.",
        "x": "بد نیست، ولی به نظرم … بهتر است."
+      },
+      {
+       "fa": "می‌شه زودتر تحویل بگیریم؟",
+       "tr": "mīsche zūdtar tahwīl begīrīm?",
+       "de": "Können wir früher einchecken?",
+       "x": "می‌شود زودتر تحویل بگیریم؟"
       }
      ],
-     "titel": "Was bedeutet das?"
+     "titel": "Noch einmal: Was bedeutet das?"
     },
     {
      "typ": "sortieren",
@@ -592,12 +2044,188 @@
        "k": 2,
        "e": "Können wir früher einchecken?",
        "say": false
+      },
+      {
+       "fa": "یه بلیت رفت و برگشت شیراز می‌خوام.",
+       "k": 2,
+       "e": "Ich möchte ein Hin- und Rückfahrticket nach Schiras.",
+       "say": false
+      },
+      {
+       "fa": "پرواز تأخیر داره؟",
+       "k": 2,
+       "e": "Hat der Flug Verspätung?",
+       "say": false
+      },
+      {
+       "fa": "اتاق رو به حیاط دارید؟",
+       "k": 2,
+       "e": "Haben Sie ein Zimmer zum Innenhof?",
+       "say": false
+      },
+      {
+       "fa": "ترجیح می‌دم …",
+       "k": 1,
+       "e": "Ich würde lieber …",
+       "say": false
+      },
+      {
+       "fa": "برام فرقی نمی‌کنه.",
+       "k": 1,
+       "e": "Mir ist es egal.",
+       "say": false
+      },
+      {
+       "fa": "بیا رأی‌گیری کنیم!",
+       "k": 0,
+       "e": "Lass uns abstimmen!",
+       "say": false
+      },
+      {
+       "fa": "اگه هوا خوب باشه، بریم کوه.",
+       "k": 0,
+       "e": "Wenn das Wetter gut ist, gehen wir in die Berge.",
+       "say": false
       }
      ]
     },
     {
+     "typ": "paare",
+     "links": "x",
+     "paare": [
+      {
+       "fa": "فکر خوبی است!",
+       "tr": "",
+       "de": "Gute Idee!",
+       "x": "فکر خوبیه!"
+      },
+      {
+       "fa": "ترجیح می‌دهم …",
+       "tr": "",
+       "de": "Ich würde lieber …",
+       "x": "ترجیح می‌دم …"
+      },
+      {
+       "fa": "یک بلیت رفت و برگشت به شیراز می‌خواهم.",
+       "tr": "",
+       "de": "Ich möchte ein Hin- und Rückfahrticket nach Schiras.",
+       "x": "یه بلیت رفت و برگشت شیراز می‌خوام."
+      },
+      {
+       "fa": "بد نیست، ولی به نظرم … بهتر است.",
+       "tr": "",
+       "de": "Nicht schlecht, aber ich finde … besser.",
+       "x": "بد نیست، ولی به نظرم … بهتره."
+      },
+      {
+       "fa": "اگر هوا خوب باشد، به کوه برویم.",
+       "tr": "",
+       "de": "Wenn das Wetter gut ist, gehen wir in die Berge.",
+       "x": "اگه هوا خوب باشه، بریم کوه."
+      },
+      {
+       "fa": "من پایه‌ام!",
+       "tr": "",
+       "de": "Ich bin dabei!",
+       "x": "من پایه‌م!"
+      }
+     ],
+     "titel": "Geschrieben ↔ gesprochen"
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Redemittel",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 70,
+     "ziel": 12,
+     "woerter": [
+      {
+       "fa": "چطوره بریم یزد؟",
+       "a": "Wie wäre es, wenn wir nach Yazd fahren?"
+      },
+      {
+       "fa": "پیشنهاد من اینه که …",
+       "a": "Mein Vorschlag ist, dass …"
+      },
+      {
+       "fa": "بیا اول بریم شیراز.",
+       "a": "Lass uns zuerst nach Schiras fahren."
+      },
+      {
+       "fa": "فکر خوبیه!",
+       "a": "Gute Idee!"
+      },
+      {
+       "fa": "من پایه‌م!",
+       "a": "Ich bin dabei!"
+      },
+      {
+       "fa": "راستش زیاد موافق نیستم، چون …",
+       "a": "Ehrlich gesagt bin ich nicht ganz einverstanden, weil …"
+      },
+      {
+       "fa": "بد نیست، ولی به نظرم … بهتره.",
+       "a": "Nicht schlecht, aber ich finde … besser."
+      },
+      {
+       "fa": "برای دو شب اتاق خالی دارید؟",
+       "a": "Haben Sie ein Zimmer für zwei Nächte frei?"
+      },
+      {
+       "fa": "صبحونه هم حسابه؟",
+       "a": "Ist Frühstück inklusive?"
+      },
+      {
+       "fa": "می‌شه زودتر تحویل بگیریم؟",
+       "a": "Können wir früher einchecken?"
+      },
+      {
+       "fa": "یه بلیت رفت و برگشت شیراز می‌خوام.",
+       "a": "Ich möchte ein Hin- und Rückfahrticket nach Schiras."
+      },
+      {
+       "fa": "پرواز تأخیر داره؟",
+       "a": "Hat der Flug Verspätung?"
+      },
+      {
+       "fa": "اتاق رو به حیاط دارید؟",
+       "a": "Haben Sie ein Zimmer zum Innenhof?"
+      },
+      {
+       "fa": "ترجیح می‌دم …",
+       "a": "Ich würde lieber …"
+      },
+      {
+       "fa": "برام فرقی نمی‌کنه.",
+       "a": "Mir ist es egal."
+      },
+      {
+       "fa": "بیا رأی‌گیری کنیم!",
+       "a": "Lass uns abstimmen!"
+      },
+      {
+       "fa": "اگه هوا خوب باشه، بریم کوه.",
+       "a": "Wenn das Wetter gut ist, gehen wir in die Berge."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "r2",
+   "titel": "Situationen & Reaktionen",
+   "vorschau": "چی بگم؟",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Reagieren",
+     "text": "<p>Im Gespräch kommt es auf die <b>Reaktion</b> an. Lies, was jemand sagt – und was man darauf antwortet.</p><div class='karte' style='margin:10px 0;padding:10px 14px'><div class='fa' style='font-size:1.3rem;text-align:right'>💬 چطوره بریم یزد؟</div><div class='fa' style='font-size:1.3rem;text-align:right;color:var(--lapis)'>↩️ فکر خوبیه! من پایه‌م.</div><div class='klein muted'>Wie wär’s mit Yazd?</div></div><div class='karte' style='margin:10px 0;padding:10px 14px'><div class='fa' style='font-size:1.3rem;text-align:right'>💬 برای دو شب اتاق خالی دارید؟</div><div class='fa' style='font-size:1.3rem;text-align:right;color:var(--lapis)'>↩️ بله، یه اتاق دوتخته داریم.</div><div class='klein muted'>Haben Sie ein Zimmer für zwei Nächte?</div></div><div class='karte' style='margin:10px 0;padding:10px 14px'><div class='fa' style='font-size:1.3rem;text-align:right'>💬 صبحونه هم حسابه؟</div><div class='fa' style='font-size:1.3rem;text-align:right;color:var(--lapis)'>↩️ بله، از هفت تا ده.</div><div class='klein muted'>Ist Frühstück inklusive?</div></div><div class='karte' style='margin:10px 0;padding:10px 14px'><div class='fa' style='font-size:1.3rem;text-align:right'>💬 پرواز تأخیر داره؟</div><div class='fa' style='font-size:1.3rem;text-align:right;color:var(--lapis)'>↩️ بله، متأسفانه دو ساعت.</div><div class='klein muted'>Hat der Flug Verspätung?</div></div>",
+     "stil": "merke"
+    },
+    {
      "typ": "wahl",
-     "titel": "Was sagst du?",
+     "titel": "Was sagst du? (1)",
      "fragen": [
       {
        "frage": "Dein Freund schlägt eine Wüstentour vor. Du findest das super:",
@@ -646,102 +2274,185 @@
      ]
     },
     {
+     "typ": "wahl",
+     "titel": "Was sagst du? (2)",
+     "fragen": [
+      {
+       "frage": "Ihr könnt euch nicht einigen:",
+       "optionen": [
+        "بیا رأی‌گیری کنیم!",
+        "پرواز تأخیر داره؟",
+        "اتاق رو به حیاط دارید؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "Am Bahnhofsschalter:",
+       "optionen": [
+        "یه بلیت رفت و برگشت شیراز می‌خوام.",
+        "برام فرقی نمی‌کنه.",
+        "من پایه‌م!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "Deine Freunde fragen, ob Meer oder Berge – dir ist beides recht:",
+       "optionen": [
+        "برام فرقی نمی‌کنه.",
+        "ترجیح می‌دم …",
+        "پرواز تأخیر داره؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    },
+    {
      "typ": "paare",
      "links": "x",
      "paare": [
       {
-       "fa": "چطور است به یزد برویم؟",
-       "tr": "",
-       "de": "Wie wäre es, wenn wir nach Yazd fahren?",
-       "x": "چطوره بریم یزد؟"
-      },
-      {
-       "fa": "پیشنهاد من این است که …",
-       "tr": "",
-       "de": "Mein Vorschlag ist, dass …",
-       "x": "پیشنهاد من اینه که …"
-      },
-      {
-       "fa": "بیا اول به شیراز برویم.",
-       "tr": "",
-       "de": "Lass uns zuerst nach Schiras fahren.",
-       "x": "بیا اول بریم شیراز."
-      },
-      {
-       "fa": "فکر خوبی است!",
-       "tr": "",
-       "de": "Gute Idee!",
-       "x": "فکر خوبیه!"
-      },
-      {
-       "fa": "من پایه‌ام!",
-       "tr": "",
-       "de": "Ich bin dabei!",
-       "x": "من پایه‌م!"
-      },
-      {
-       "fa": "بد نیست، ولی به نظرم … بهتر است.",
-       "tr": "",
-       "de": "Nicht schlecht, aber ich finde … besser.",
-       "x": "بد نیست، ولی به نظرم … بهتره."
-      }
-     ],
-     "titel": "Geschrieben ↔ gesprochen"
-    },
-    {
-     "typ": "tempo",
-     "titel": "Blitz: Redemittel",
-     "aufgabe": "Was bedeutet das?",
-     "modus": "de",
-     "sekunden": 60,
-     "ziel": 10,
-     "woerter": [
-      {
        "fa": "چطوره بریم یزد؟",
-       "a": "Wie wäre es, wenn wir nach Yazd fahren?"
-      },
-      {
-       "fa": "پیشنهاد من اینه که …",
-       "a": "Mein Vorschlag ist, dass …"
-      },
-      {
-       "fa": "بیا اول بریم شیراز.",
-       "a": "Lass uns zuerst nach Schiras fahren."
-      },
-      {
-       "fa": "فکر خوبیه!",
-       "a": "Gute Idee!"
-      },
-      {
-       "fa": "من پایه‌م!",
-       "a": "Ich bin dabei!"
-      },
-      {
-       "fa": "راستش زیاد موافق نیستم، چون …",
-       "a": "Ehrlich gesagt bin ich nicht ganz einverstanden, weil …"
-      },
-      {
-       "fa": "بد نیست، ولی به نظرم … بهتره.",
-       "a": "Nicht schlecht, aber ich finde … besser."
+       "tr": "",
+       "de": "Wie wär’s mit Yazd?",
+       "x": "فکر خوبیه! من پایه‌م."
       },
       {
        "fa": "برای دو شب اتاق خالی دارید؟",
-       "a": "Haben Sie ein Zimmer für zwei Nächte frei?"
+       "tr": "",
+       "de": "Haben Sie ein Zimmer für zwei Nächte?",
+       "x": "بله، یه اتاق دوتخته داریم."
       },
       {
        "fa": "صبحونه هم حسابه؟",
-       "a": "Ist Frühstück inklusive?"
+       "tr": "",
+       "de": "Ist Frühstück inklusive?",
+       "x": "بله، از هفت تا ده."
       },
       {
-       "fa": "می‌شه زودتر تحویل بگیریم؟",
-       "a": "Können wir früher einchecken?"
+       "fa": "پرواز تأخیر داره؟",
+       "tr": "",
+       "de": "Hat der Flug Verspätung?",
+       "x": "بله، متأسفانه دو ساعت."
+      },
+      {
+       "fa": "سفر بخیر!",
+       "tr": "",
+       "de": "Gute Reise!",
+       "x": "مرسی! برات سوغاتی میارم."
+      },
+      {
+       "fa": "بریم شمال؟",
+       "tr": "",
+       "de": "Fahren wir in den Norden?",
+       "x": "راستش زیاد موافق نیستم، خیلی شلوغه."
+      }
+     ],
+     "titel": "Was antwortest du?"
+    },
+    {
+     "typ": "wahl",
+     "titel": "Die passende Reaktion",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>چطوره بریم یزد؟</span>",
+       "optionen": [
+        "فکر خوبیه! من پایه‌م.",
+        "عالی بود! کلی عکس گرفتم.",
+        "بله، یه اتاق دوتخته داریم."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>برای دو شب اتاق خالی دارید؟</span>",
+       "optionen": [
+        "بله، یه اتاق دوتخته داریم.",
+        "مرسی! برات سوغاتی میارم.",
+        "راستش زیاد موافق نیستم، خیلی شلوغه."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>صبحونه هم حسابه؟</span>",
+       "optionen": [
+        "بله، از هفت تا ده.",
+        "بله، متأسفانه دو ساعت.",
+        "بله، یه اتاق دوتخته داریم."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>پرواز تأخیر داره؟</span>",
+       "optionen": [
+        "بله، متأسفانه دو ساعت.",
+        "عالی بود! کلی عکس گرفتم.",
+        "بله، از هفت تا ده."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>سفر بخیر!</span>",
+       "optionen": [
+        "مرسی! برات سوغاتی میارم.",
+        "بله، متأسفانه دو ساعت.",
+        "فکر خوبیه! من پایه‌م."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>بریم شمال؟</span>",
+       "optionen": [
+        "راستش زیاد موافق نیستم، خیلی شلوغه.",
+        "مرسی! برات سوغاتی میارم.",
+        "بله، متأسفانه دو ساعت."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>کیف پولمو گم کردم!</span>",
+       "optionen": [
+        "وای! بیا بریم پذیرش بپرسیم.",
+        "فکر خوبیه! من پایه‌م.",
+        "عالی بود! کلی عکس گرفتم."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>خوش گذشت؟</span>",
+       "optionen": [
+        "عالی بود! کلی عکس گرفتم.",
+        "وای! بیا بریم پذیرش بپرسیم.",
+        "بله، متأسفانه دو ساعت."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
       }
      ]
     }
    ]
   },
   {
-   "id": "s3",
+   "id": "d",
    "titel": "Modelldialog",
    "vorschau": "Wohin im Frühling?",
    "karten": [
@@ -841,6 +2552,67 @@
      ]
     },
     {
+     "typ": "wahl",
+     "titel": "Wie geht es weiter?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>برای تعطیلات نوروز کجا بریم؟</span><br><span class='klein muted'>Was kommt als Nächstes?</span>",
+       "optionen": [
+        "چطوره بریم شمال؟ دریا و جنگل!",
+        "پس امشب زنگ بزنیم رزرو کنیم!",
+        "اگه با اتوبوس بریم، خیلی ارزون درمیاد."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>نوروز شمال خیلی شلوغه، همه‌ی تهرانیا می‌رن اونجا!</span><br><span class='klein muted'>Was kommt als Nächstes?</span>",
+       "optionen": [
+        "پس چی پیشنهاد می‌کنی؟",
+        "کویر! بریم یزد و شب تو کویر ستاره‌ها رو ببینیم.",
+        "چرا، باید لباس گرم ببریم. یه بوم‌گردی قشنگ هم می‌شناسم."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>کویر! بریم یزد و شب تو کویر ستاره‌ها رو ببینیم.</span><br><span class='klein muted'>Was kommt als Nächstes?</span>",
+       "optionen": [
+        "وای، فکر خوبیه! من پایه‌م. ولی شبا سرد نیست؟",
+        "چرا، باید لباس گرم ببریم. یه بوم‌گردی قشنگ هم می‌شناسم.",
+        "عالیه! بودجه‌مون چقدره؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>چرا، باید لباس گرم ببریم. یه بوم‌گردی قشنگ هم می‌شناسم.</span><br><span class='klein muted'>Was kommt als Nächstes?</span>",
+       "optionen": [
+        "عالیه! بودجه‌مون چقدره؟",
+        "چطوره بریم شمال؟ دریا و جنگل!",
+        "برای تعطیلات نوروز کجا بریم؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>اگه با اتوبوس بریم، خیلی ارزون درمیاد.</span><br><span class='klein muted'>Was kommt als Nächstes?</span>",
+       "optionen": [
+        "پس امشب زنگ بزنیم رزرو کنیم!",
+        "وای، فکر خوبیه! من پایه‌م. ولی شبا سرد نیست؟",
+        "کویر! بریم یزد و شب تو کویر ستاره‌ها رو ببینیم."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    },
+    {
      "typ": "ordnen",
      "titel": "Bring den Dialog in die richtige Reihenfolge",
      "frage": "Tippe die Sätze der Reihe nach an.",
@@ -886,11 +2658,81 @@
        "de": "Super! Wie hoch ist unser Budget?"
       }
      ]
+    },
+    {
+     "typ": "bauen",
+     "titel": "Baue die Sätze aus dem Dialog",
+     "trenner": " ",
+     "woerter": [
+      {
+       "fa": "برای تعطیلات نوروز کجا بریم؟",
+       "tr": "barā-ye taʿtīlāt-e nourūz kodschā berīm?",
+       "de": "Wohin fahren wir in den Nouruz-Ferien?",
+       "teile": [
+        "برای",
+        "تعطیلات",
+        "نوروز",
+        "کجا",
+        "بریم"
+       ],
+       "extra": [
+        "شبا"
+       ]
+      },
+      {
+       "fa": "چطوره بریم شمال؟ دریا و جنگل!",
+       "tr": "tschetoure berīm schomāl? daryā o dschangal!",
+       "de": "Wie wär’s mit dem Norden? Meer und Wald!",
+       "teile": [
+        "چطوره",
+        "بریم",
+        "شمال",
+        "دریا",
+        "و",
+        "جنگل"
+       ],
+       "extra": [
+        "می‌رن"
+       ]
+      },
+      {
+       "fa": "نوروز شمال خیلی شلوغه، همه‌ی تهرانیا می‌رن اونجا!",
+       "tr": "nourūz schomāl cheylī schologhe, hame-ye tehrānīyā mīran ūndschā!",
+       "de": "Zu Nouruz ist der Norden total voll, alle Teheraner fahren hin!",
+       "teile": [
+        "نوروز",
+        "شمال",
+        "خیلی",
+        "شلوغه",
+        "همه‌ی",
+        "تهرانیا",
+        "می‌رن",
+        "اونجا"
+       ],
+       "extra": [
+        "پایه‌م."
+       ]
+      },
+      {
+       "fa": "پس چی پیشنهاد می‌کنی؟",
+       "tr": "pas tschī pīschnahād mīkonī?",
+       "de": "Was schlägst du dann vor?",
+       "teile": [
+        "پس",
+        "چی",
+        "پیشنهاد",
+        "می‌کنی"
+       ],
+       "extra": [
+        "ولی"
+       ]
+      }
+     ]
     }
    ]
   },
   {
-   "id": "s4",
+   "id": "t",
    "titel": "Lesen",
    "vorschau": "Ein Reiseblog: Drei Tage in Kaschan",
    "karten": [
@@ -1016,11 +2858,43 @@
        "richtig": 0
       }
      ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "کاشان شهر کوچکی بین تهران و اصفهان است، اما پر از جاذبه‌های دیدنی.",
+       "tr": "kāschān schahr-e kūtschakī beyn-e tehrān o esfahān ast, ammā por az dschāzebehā-ye dīdanī.",
+       "de": "Kaschan ist eine kleine Stadt zwischen Teheran und Isfahan, aber voller Sehenswürdigkeiten."
+      },
+      {
+       "fa": "روز اول از خانه‌های تاریخی مثل خانه‌ی بروجردی‌ها و طباطبایی‌ها دیدن کردیم.",
+       "tr": "rūz-e awwal az chānehā-ye tārīchī mesl-e chāne-ye borūdscherdīhā o tabātabāyīhā dīdan kardīm.",
+       "de": "Am ersten Tag haben wir historische Häuser wie das Borudscherdi- und das Tabatabai-Haus besichtigt."
+      },
+      {
+       "fa": "روز دوم به باغ فین رفتیم که یکی از زیباترین باغ‌های ایرانی است.",
+       "tr": "rūz-e dowwom be bāgh-e fīn raftīm ke yekī az zībātarīn bāghhā-ye īrānī ast.",
+       "de": "Am zweiten Tag waren wir im Fin-Garten, einem der schönsten persischen Gärten."
+      },
+      {
+       "fa": "اگر در اردیبهشت به کاشان بروید، می‌توانید جشن گلاب‌گیری را ببینید.",
+       "tr": "agar dar ordībehescht be kāschān berawīd, mītawānīd dschaschn-e golābgīrī rā bebīnīd.",
+       "de": "Wer im Mai nach Kaschan fährt, kann das Rosenwasserfest erleben."
+      },
+      {
+       "fa": "روز سوم به کویر مرنجاب رفتیم و شب را زیر آسمان پرستاره گذراندیم.",
+       "tr": "rūz-e sewwom be kawīr-e marandschāb raftīm o schab rā zīr-e āsemān-e porsetāre gozarāndīm.",
+       "de": "Am dritten Tag fuhren wir in die Maranjab-Wüste und verbrachten die Nacht unter dem Sternenhimmel."
+      }
+     ]
     }
    ]
   },
   {
-   "id": "s5",
+   "id": "k",
    "titel": "Gut zu wissen",
    "vorschau": "Reisen in Iran",
    "karten": [
@@ -1066,7 +2940,7 @@
    ]
   },
   {
-   "id": "s6",
+   "id": "p",
    "titel": "Vorbereitung für die Sitzung",
    "vorschau": "آماده‌ای؟",
    "karten": [
@@ -1112,16 +2986,6 @@
      "links": "de",
      "paare": [
       {
-       "fa": "اگه دو هفته تو ایران وقت داشتی، کجاها می‌رفتی؟",
-       "tr": "age do hafte tū īrān waght dāschtī, kodschāhā mīraftī?",
-       "de": "Wenn du zwei Wochen in Iran hättest – wohin würdest du fahren?"
-      },
-      {
-       "fa": "بهترین سفری که رفتی کجا بود؟ چرا؟",
-       "tr": "behtarīn safarī ke raftī kodschā būd? tscherā?",
-       "de": "Was war deine beste Reise? Warum?"
-      },
-      {
        "fa": "بدترین اتفاقی که تو سفر برات افتاده چی بوده؟",
        "tr": "badtarīn ettefāghī ke tū safar barāt oftāde tschī būde?",
        "de": "Was ist dir auf Reisen Schlimmes passiert?"
@@ -1132,14 +2996,24 @@
        "de": "Hotel oder Gästehaus – warum?"
       },
       {
+       "fa": "کویر، دریا یا کوه؟",
+       "tr": "kawīr, daryā yā kūh?",
+       "de": "Wüste, Meer oder Berge?"
+      },
+      {
+       "fa": "اگه دو هفته تو ایران وقت داشتی، کجاها می‌رفتی؟",
+       "tr": "age do hafte tū īrān waght dāschtī, kodschāhā mīraftī?",
+       "de": "Wenn du zwei Wochen in Iran hättest – wohin würdest du fahren?"
+      },
+      {
        "fa": "تنها سفر می‌کنی یا با دوستات؟",
        "tr": "tanhā safar mīkonī yā bā dūstāt?",
        "de": "Reist du allein oder mit Freunden?"
       },
       {
-       "fa": "کویر، دریا یا کوه؟",
-       "tr": "kawīr, daryā yā kūh?",
-       "de": "Wüste, Meer oder Berge?"
+       "fa": "بهترین سفری که رفتی کجا بود؟ چرا؟",
+       "tr": "behtarīn safarī ke raftī kodschā būd? tscherā?",
+       "de": "Was war deine beste Reise? Warum?"
       }
      ],
      "titel": "Welche Frage ist das?"

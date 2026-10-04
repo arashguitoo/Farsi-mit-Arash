@@ -17,19 +17,19 @@
     {
      "typ": "info",
      "titel": "So läuft die Sitzung",
-     "text": "<p>Diese Lektion ist deine <b>Hausaufgabe</b>: Hier lernst du Wörter und Redemittel und liest einen Modelldialog. Im Unterricht wird dann <b>nur gesprochen</b>.</p><p><b>Im Unterricht:</b></p><ul><li>Pro-und-Contra-Debatte zu einem lockeren Thema</li><li>Meinungs-Barometer: Stell dich auf!</li><li>Streitschlichtung im Rollenspiel</li></ul>",
+     "text": "<p>Diese Lektion ist deine <b>Hausaufgabe</b>: Wortschatz, Redemittel, Dialoge und Texte. Im Unterricht wird dann <b>nur gesprochen</b>.</p><p><b>Im Unterricht:</b></p><ul><li>Pro-und-Contra-Debatte zu einem lockeren Thema</li><li>Meinungs-Barometer: Stell dich auf!</li><li>Streitschlichtung im Rollenspiel</li></ul><p class='klein muted'>Wortschatz dieser Lektion: 61 Wörter · 17 Redemittel</p>",
      "stil": "merke"
     }
    ]
   },
   {
-   "id": "s1",
-   "titel": "Wörter",
+   "id": "w0",
+   "titel": "Rund ums Thema",
    "vorschau": "نظر · بحث · دلیل",
    "karten": [
     {
      "typ": "info",
-     "titel": "Wörter zum Thema – Teil 1",
+     "titel": "🧩 Rund ums Thema (1)",
      "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
      "beispiele": [
       {
@@ -84,7 +84,7 @@
     },
     {
      "typ": "info",
-     "titel": "Wörter zum Thema – Teil 2",
+     "titel": "🧩 Rund ums Thema (2)",
      "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
      "beispiele": [
       {
@@ -134,43 +134,6 @@
        "tr": "ghāneʿ",
        "de": "überzeugt",
        "emoji": "✅"
-      }
-     ]
-    },
-    {
-     "typ": "info",
-     "titel": "Verben",
-     "text": "<p>Infinitiv – im Gespräch brauchst du sie gleich in allen Zeiten.</p>",
-     "beispiele": [
-      {
-       "fa": "بحث کردن",
-       "tr": "bahs kardan",
-       "de": "diskutieren",
-       "emoji": "🗣️"
-      },
-      {
-       "fa": "قانع کردن",
-       "tr": "ghāneʿ kardan",
-       "de": "überzeugen",
-       "emoji": "🤝"
-      },
-      {
-       "fa": "مخالفت کردن",
-       "tr": "mochālefat kardan",
-       "de": "widersprechen",
-       "emoji": "✋"
-      },
-      {
-       "fa": "کوتاه آمدن",
-       "tr": "kūtāh āmadan",
-       "de": "nachgeben",
-       "emoji": "🙇"
-      },
-      {
-       "fa": "دعوا کردن",
-       "tr": "daʿwā kardan",
-       "de": "streiten",
-       "emoji": "⚡"
       }
      ]
     },
@@ -228,47 +191,16 @@
        "emoji": "🎯"
       },
       {
-       "fa": "قانع",
-       "tr": "ghāneʿ",
-       "de": "überzeugt",
-       "emoji": "✅"
+       "fa": "بحث",
+       "tr": "bahs",
+       "de": "Diskussion",
+       "emoji": "🗣️"
       },
       {
-       "fa": "بالاخره",
-       "tr": "belāchare",
-       "de": "schließlich, endlich",
-       "emoji": "🏁"
-      },
-      {
-       "fa": "مزیت",
-       "tr": "maziyyat",
-       "de": "Vorteil",
-       "emoji": "➕"
-      },
-      {
-       "fa": "راه‌حل",
-       "tr": "rāhhal",
-       "de": "Lösung",
-       "emoji": "💡"
-      },
-      {
-       "fa": "عیب",
-       "tr": "ʿeyb",
-       "de": "Nachteil, Fehler",
-       "emoji": "➖"
-      }
-     ],
-     "titel": "Was bedeutet das?"
-    },
-    {
-     "typ": "memory",
-     "links": "emoji",
-     "paare": [
-      {
-       "fa": "از یک طرف",
-       "tr": "az yek taraf",
-       "de": "einerseits",
-       "emoji": "⬅️"
+       "fa": "موافق",
+       "tr": "mowāfegh",
+       "de": "einverstanden, dafür",
+       "emoji": "👍"
       },
       {
        "fa": "اما",
@@ -277,39 +209,1318 @@
        "emoji": "🔀"
       },
       {
-       "fa": "سوءتفاهم",
-       "tr": "sūʾetafāhom",
-       "de": "Missverständnis",
-       "emoji": "❓"
-      },
-      {
        "fa": "نظر",
        "tr": "nazar",
        "de": "Meinung",
        "emoji": "💭"
       },
       {
-       "fa": "مخالف",
-       "tr": "mochālef",
-       "de": "dagegen",
-       "emoji": "👎"
-      },
+       "fa": "بالاخره",
+       "tr": "belāchare",
+       "de": "schließlich, endlich",
+       "emoji": "🏁"
+      }
+     ],
+     "titel": "Noch einmal: Was bedeutet das?"
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
       {
        "fa": "اصلاً",
        "tr": "aslan",
        "de": "überhaupt (nicht)",
        "emoji": "🚫"
+      },
+      {
+       "fa": "دلیل",
+       "tr": "dalīl",
+       "de": "Grund",
+       "emoji": "📌"
+      },
+      {
+       "fa": "از یک طرف",
+       "tr": "az yek taraf",
+       "de": "einerseits",
+       "emoji": "⬅️"
+      },
+      {
+       "fa": "سوءتفاهم",
+       "tr": "sūʾetafāhom",
+       "de": "Missverständnis",
+       "emoji": "❓"
+      },
+      {
+       "fa": "عیب",
+       "tr": "ʿeyb",
+       "de": "Nachteil, Fehler",
+       "emoji": "➖"
+      },
+      {
+       "fa": "اما",
+       "tr": "ammā",
+       "de": "aber",
+       "emoji": "🔀"
       }
      ],
      "titel": "Memory: Bild & Wort"
     },
     {
      "typ": "tempo",
-     "titel": "Blitz: Wörter",
+     "titel": "Blitz: Rund ums Thema",
      "aufgabe": "Was bedeutet das?",
      "modus": "de",
-     "sekunden": 60,
-     "ziel": 12,
+     "sekunden": 50,
+     "ziel": 10,
+     "woerter": [
+      {
+       "fa": "نظر",
+       "a": "Meinung"
+      },
+      {
+       "fa": "بحث",
+       "a": "Diskussion"
+      },
+      {
+       "fa": "دلیل",
+       "a": "Grund"
+      },
+      {
+       "fa": "موافق",
+       "a": "einverstanden, dafür"
+      },
+      {
+       "fa": "مخالف",
+       "a": "dagegen"
+      },
+      {
+       "fa": "مزیت",
+       "a": "Vorteil"
+      },
+      {
+       "fa": "عیب",
+       "a": "Nachteil, Fehler"
+      },
+      {
+       "fa": "راه‌حل",
+       "a": "Lösung"
+      },
+      {
+       "fa": "سوءتفاهم",
+       "a": "Missverständnis"
+      },
+      {
+       "fa": "بالاخره",
+       "a": "schließlich, endlich"
+      },
+      {
+       "fa": "در واقع",
+       "a": "eigentlich, tatsächlich"
+      },
+      {
+       "fa": "از یک طرف",
+       "a": "einerseits"
+      },
+      {
+       "fa": "از طرف دیگر",
+       "a": "andererseits"
+      },
+      {
+       "fa": "اما",
+       "a": "aber"
+      },
+      {
+       "fa": "اصلاً",
+       "a": "überhaupt (nicht)"
+      },
+      {
+       "fa": "قانع",
+       "a": "überzeugt"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "w1",
+   "titel": "Meinung & Argumente",
+   "vorschau": "استدلال · ادعا · مثال",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "💬 Meinung & Argumente (1)",
+     "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
+     "beispiele": [
+      {
+       "fa": "استدلال",
+       "tr": "estedlāl",
+       "de": "Argumentation",
+       "emoji": "🧠"
+      },
+      {
+       "fa": "ادعا",
+       "tr": "eddeʿā",
+       "de": "Behauptung",
+       "emoji": "📢"
+      },
+      {
+       "fa": "مثال",
+       "tr": "mesāl",
+       "de": "Beispiel",
+       "emoji": "📌"
+      },
+      {
+       "fa": "نتیجه",
+       "tr": "natīdsche",
+       "de": "Ergebnis, Schluss",
+       "emoji": "🏁"
+      },
+      {
+       "fa": "مخالفت",
+       "tr": "mochālefat",
+       "de": "Widerspruch",
+       "emoji": "✋"
+      },
+      {
+       "fa": "موافقت",
+       "tr": "mowāfeghat",
+       "de": "Zustimmung",
+       "emoji": "👍"
+      }
+     ]
+    },
+    {
+     "typ": "info",
+     "titel": "💬 Meinung & Argumente (2)",
+     "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
+     "beispiele": [
+      {
+       "fa": "دیدگاه",
+       "tr": "dīdgāh",
+       "de": "Standpunkt",
+       "emoji": "👁️"
+      },
+      {
+       "fa": "واقعیت",
+       "tr": "wāgheʿiyat",
+       "de": "Tatsache",
+       "emoji": "📊"
+      },
+      {
+       "fa": "تعصب",
+       "tr": "taʿassob",
+       "de": "Voreingenommenheit",
+       "emoji": "🙈"
+      },
+      {
+       "fa": "منطقی",
+       "tr": "manteghī",
+       "de": "logisch, vernünftig",
+       "emoji": "🧩"
+      },
+      {
+       "fa": "احساسی",
+       "tr": "ehsāsī",
+       "de": "emotional",
+       "emoji": "❤️‍🔥"
+      },
+      {
+       "fa": "بی‌طرف",
+       "tr": "bītaraf",
+       "de": "neutral",
+       "emoji": "⚖️"
+      }
+     ]
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "نتیجه",
+       "tr": "natīdsche",
+       "de": "Ergebnis, Schluss",
+       "emoji": "🏁"
+      },
+      {
+       "fa": "احساسی",
+       "tr": "ehsāsī",
+       "de": "emotional",
+       "emoji": "❤️‍🔥"
+      },
+      {
+       "fa": "منطقی",
+       "tr": "manteghī",
+       "de": "logisch, vernünftig",
+       "emoji": "🧩"
+      },
+      {
+       "fa": "مخالفت",
+       "tr": "mochālefat",
+       "de": "Widerspruch",
+       "emoji": "✋"
+      },
+      {
+       "fa": "استدلال",
+       "tr": "estedlāl",
+       "de": "Argumentation",
+       "emoji": "🧠"
+      },
+      {
+       "fa": "مثال",
+       "tr": "mesāl",
+       "de": "Beispiel",
+       "emoji": "📌"
+      }
+     ],
+     "titel": "Was bedeutet das?"
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "موافقت",
+       "tr": "mowāfeghat",
+       "de": "Zustimmung",
+       "emoji": "👍"
+      },
+      {
+       "fa": "دیدگاه",
+       "tr": "dīdgāh",
+       "de": "Standpunkt",
+       "emoji": "👁️"
+      },
+      {
+       "fa": "ادعا",
+       "tr": "eddeʿā",
+       "de": "Behauptung",
+       "emoji": "📢"
+      },
+      {
+       "fa": "احساسی",
+       "tr": "ehsāsī",
+       "de": "emotional",
+       "emoji": "❤️‍🔥"
+      },
+      {
+       "fa": "منطقی",
+       "tr": "manteghī",
+       "de": "logisch, vernünftig",
+       "emoji": "🧩"
+      },
+      {
+       "fa": "مثال",
+       "tr": "mesāl",
+       "de": "Beispiel",
+       "emoji": "📌"
+      }
+     ],
+     "titel": "Noch einmal: Was bedeutet das?"
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "تعصب",
+       "tr": "taʿassob",
+       "de": "Voreingenommenheit",
+       "emoji": "🙈"
+      },
+      {
+       "fa": "استدلال",
+       "tr": "estedlāl",
+       "de": "Argumentation",
+       "emoji": "🧠"
+      },
+      {
+       "fa": "دیدگاه",
+       "tr": "dīdgāh",
+       "de": "Standpunkt",
+       "emoji": "👁️"
+      },
+      {
+       "fa": "ادعا",
+       "tr": "eddeʿā",
+       "de": "Behauptung",
+       "emoji": "📢"
+      },
+      {
+       "fa": "مخالفت",
+       "tr": "mochālefat",
+       "de": "Widerspruch",
+       "emoji": "✋"
+      },
+      {
+       "fa": "احساسی",
+       "tr": "ehsāsī",
+       "de": "emotional",
+       "emoji": "❤️‍🔥"
+      }
+     ],
+     "titel": "Memory: Bild & Wort"
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>برای این ادعا یک ___ بزن!</span><br><span class='mini'>Nenn ein Beispiel für diese Behauptung!</span>",
+       "optionen": [
+        "مثال",
+        "مثلا",
+        "دلیل"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>برای این ادعا یک مثال بزن!</span>"
+      },
+      {
+       "frage": "<span class='fa'>قاضی باید ___ باشد.</span><br><span class='mini'>Ein Richter muss neutral sein.</span>",
+       "optionen": [
+        "بی‌طرف",
+        "علاوه بر این",
+        "در نتیجه"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>قاضی باید بی‌طرف باشد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>دیدگاه تو با ___ جور در نمی‌آید.</span><br><span class='mini'>Deine Sicht passt nicht zu den Tatsachen.</span>",
+       "optionen": [
+        "واقعیت",
+        "راه‌حل",
+        "با این حال"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>دیدگاه تو با واقعیت جور در نمی‌آید.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Meinung & Argumente",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 50,
+     "ziel": 10,
+     "woerter": [
+      {
+       "fa": "استدلال",
+       "a": "Argumentation"
+      },
+      {
+       "fa": "ادعا",
+       "a": "Behauptung"
+      },
+      {
+       "fa": "مثال",
+       "a": "Beispiel"
+      },
+      {
+       "fa": "نتیجه",
+       "a": "Ergebnis, Schluss"
+      },
+      {
+       "fa": "مخالفت",
+       "a": "Widerspruch"
+      },
+      {
+       "fa": "موافقت",
+       "a": "Zustimmung"
+      },
+      {
+       "fa": "دیدگاه",
+       "a": "Standpunkt"
+      },
+      {
+       "fa": "واقعیت",
+       "a": "Tatsache"
+      },
+      {
+       "fa": "تعصب",
+       "a": "Voreingenommenheit"
+      },
+      {
+       "fa": "منطقی",
+       "a": "logisch, vernünftig"
+      },
+      {
+       "fa": "احساسی",
+       "a": "emotional"
+      },
+      {
+       "fa": "بی‌طرف",
+       "a": "neutral"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "w2",
+   "titel": "Konnektoren",
+   "vorschau": "چون · بنابراین · با این حال",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "🔗 Konnektoren (1)",
+     "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
+     "beispiele": [
+      {
+       "fa": "چون",
+       "tr": "tschūn",
+       "de": "weil",
+       "emoji": "➰"
+      },
+      {
+       "fa": "بنابراین",
+       "tr": "banābarīn",
+       "de": "daher",
+       "emoji": "➡️"
+      },
+      {
+       "fa": "با این حال",
+       "tr": "bā īn hāl",
+       "de": "trotzdem",
+       "emoji": "↪️"
+      },
+      {
+       "fa": "در حالی که",
+       "tr": "dar hālī ke",
+       "de": "während (Gegensatz)",
+       "emoji": "⚖️"
+      },
+      {
+       "fa": "علاوه بر این",
+       "tr": "ʿalāwe bar īn",
+       "de": "außerdem",
+       "emoji": "➕"
+      },
+      {
+       "fa": "به عنوان مثال",
+       "tr": "be ʿonwān-e mesāl",
+       "de": "zum Beispiel",
+       "emoji": "📌"
+      }
+     ]
+    },
+    {
+     "typ": "info",
+     "titel": "🔗 Konnektoren (2)",
+     "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
+     "beispiele": [
+      {
+       "fa": "در نتیجه",
+       "tr": "dar natīdsche",
+       "de": "folglich",
+       "emoji": "🏁"
+      },
+      {
+       "fa": "اول اینکه",
+       "tr": "awwal īnke",
+       "de": "erstens",
+       "emoji": "1️⃣"
+      },
+      {
+       "fa": "دوم اینکه",
+       "tr": "dowwom īnke",
+       "de": "zweitens",
+       "emoji": "2️⃣"
+      },
+      {
+       "fa": "به هر حال",
+       "tr": "be har hāl",
+       "de": "jedenfalls",
+       "emoji": "🤷"
+      },
+      {
+       "fa": "مثلاً",
+       "tr": "masalan",
+       "de": "zum Beispiel (locker)",
+       "emoji": "💡"
+      },
+      {
+       "fa": "یعنی",
+       "tr": "yaʿnī",
+       "de": "das heißt",
+       "emoji": "🗨️"
+      }
+     ]
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "به هر حال",
+       "tr": "be har hāl",
+       "de": "jedenfalls",
+       "emoji": "🤷"
+      },
+      {
+       "fa": "علاوه بر این",
+       "tr": "ʿalāwe bar īn",
+       "de": "außerdem",
+       "emoji": "➕"
+      },
+      {
+       "fa": "دوم اینکه",
+       "tr": "dowwom īnke",
+       "de": "zweitens",
+       "emoji": "2️⃣"
+      },
+      {
+       "fa": "مثلاً",
+       "tr": "masalan",
+       "de": "zum Beispiel (locker)",
+       "emoji": "💡"
+      },
+      {
+       "fa": "بنابراین",
+       "tr": "banābarīn",
+       "de": "daher",
+       "emoji": "➡️"
+      },
+      {
+       "fa": "به عنوان مثال",
+       "tr": "be ʿonwān-e mesāl",
+       "de": "zum Beispiel",
+       "emoji": "📌"
+      }
+     ],
+     "titel": "Was bedeutet das?"
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "در حالی که",
+       "tr": "dar hālī ke",
+       "de": "während (Gegensatz)",
+       "emoji": "⚖️"
+      },
+      {
+       "fa": "با این حال",
+       "tr": "bā īn hāl",
+       "de": "trotzdem",
+       "emoji": "↪️"
+      },
+      {
+       "fa": "به عنوان مثال",
+       "tr": "be ʿonwān-e mesāl",
+       "de": "zum Beispiel",
+       "emoji": "📌"
+      },
+      {
+       "fa": "علاوه بر این",
+       "tr": "ʿalāwe bar īn",
+       "de": "außerdem",
+       "emoji": "➕"
+      },
+      {
+       "fa": "یعنی",
+       "tr": "yaʿnī",
+       "de": "das heißt",
+       "emoji": "🗨️"
+      },
+      {
+       "fa": "دوم اینکه",
+       "tr": "dowwom īnke",
+       "de": "zweitens",
+       "emoji": "2️⃣"
+      }
+     ],
+     "titel": "Noch einmal: Was bedeutet das?"
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "در حالی که",
+       "tr": "dar hālī ke",
+       "de": "während (Gegensatz)",
+       "emoji": "⚖️"
+      },
+      {
+       "fa": "اول اینکه",
+       "tr": "awwal īnke",
+       "de": "erstens",
+       "emoji": "1️⃣"
+      },
+      {
+       "fa": "مثلاً",
+       "tr": "masalan",
+       "de": "zum Beispiel (locker)",
+       "emoji": "💡"
+      },
+      {
+       "fa": "در نتیجه",
+       "tr": "dar natīdsche",
+       "de": "folglich",
+       "emoji": "🏁"
+      },
+      {
+       "fa": "بنابراین",
+       "tr": "banābarīn",
+       "de": "daher",
+       "emoji": "➡️"
+      },
+      {
+       "fa": "با این حال",
+       "tr": "bā īn hāl",
+       "de": "trotzdem",
+       "emoji": "↪️"
+      }
+     ],
+     "titel": "Memory: Bild & Wort"
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>___ هوا خیلی سرد بود، به کوه رفتیم.</span><br><span class='mini'>Das Wetter war sehr kalt; trotzdem sind wir in die Berge gegangen.</span>",
+       "optionen": [
+        "با این حال",
+        "تعصب",
+        "در واقع"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>با این حال هوا خیلی سرد بود، به کوه رفتیم.</span>"
+      },
+      {
+       "frage": "<span class='fa'>قیمت‌ها بالا رفت؛ ___ مردم کمتر خرید کردند.</span><br><span class='mini'>Die Preise stiegen; folglich kauften die Leute weniger.</span>",
+       "optionen": [
+        "در نتیجه",
+        "بحث داغ",
+        "موافقت"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>قیمت‌ها بالا رفت؛ در نتیجه مردم کمتر خرید کردند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>___ ، کلاس دیر شروع شد؛ دوم اینکه استاد مریض بود.</span><br><span class='mini'>Erstens fing der Kurs spät an; zweitens war der Professor krank.</span>",
+       "optionen": [
+        "اول اینکه",
+        "در واقع",
+        "احساسی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>اول اینکه ، کلاس دیر شروع شد؛ دوم اینکه استاد مریض بود.</span>"
+      },
+      {
+       "frage": "<span class='fa'>او موسیقی سنتی دوست دارد، ___ برادرش عاشق رپ است.</span><br><span class='mini'>Sie mag traditionelle Musik, während ihr Bruder Rap liebt.</span>",
+       "optionen": [
+        "در حالی که",
+        "مزیت",
+        "صبر"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>او موسیقی سنتی دوست دارد، در حالی که برادرش عاشق رپ است.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Konnektoren",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 50,
+     "ziel": 10,
+     "woerter": [
+      {
+       "fa": "چون",
+       "a": "weil"
+      },
+      {
+       "fa": "بنابراین",
+       "a": "daher"
+      },
+      {
+       "fa": "با این حال",
+       "a": "trotzdem"
+      },
+      {
+       "fa": "در حالی که",
+       "a": "während (Gegensatz)"
+      },
+      {
+       "fa": "علاوه بر این",
+       "a": "außerdem"
+      },
+      {
+       "fa": "به عنوان مثال",
+       "a": "zum Beispiel"
+      },
+      {
+       "fa": "در نتیجه",
+       "a": "folglich"
+      },
+      {
+       "fa": "اول اینکه",
+       "a": "erstens"
+      },
+      {
+       "fa": "دوم اینکه",
+       "a": "zweitens"
+      },
+      {
+       "fa": "به هر حال",
+       "a": "jedenfalls"
+      },
+      {
+       "fa": "مثلاً",
+       "a": "zum Beispiel (locker)"
+      },
+      {
+       "fa": "یعنی",
+       "a": "das heißt"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "w3",
+   "titel": "Streit & Versöhnung",
+   "vorschau": "عذرخواهی · آشتی · دلخوری",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "🕊️ Streit & Versöhnung (1)",
+     "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
+     "beispiele": [
+      {
+       "fa": "عذرخواهی",
+       "tr": "ʿozrchāhī",
+       "de": "Entschuldigung",
+       "emoji": "🙇"
+      },
+      {
+       "fa": "آشتی",
+       "tr": "āschtī",
+       "de": "Versöhnung",
+       "emoji": "🤝"
+      },
+      {
+       "fa": "دلخوری",
+       "tr": "delchorī",
+       "de": "Kränkung",
+       "emoji": "😔"
+      },
+      {
+       "fa": "کدورت",
+       "tr": "kodūrat",
+       "de": "Verstimmung",
+       "emoji": "🌫️"
+      },
+      {
+       "fa": "بحث داغ",
+       "tr": "bahs-e dāgh",
+       "de": "hitzige Debatte",
+       "emoji": "🔥"
+      },
+      {
+       "fa": "صلح",
+       "tr": "solh",
+       "de": "Frieden",
+       "emoji": "🕊️"
+      }
+     ]
+    },
+    {
+     "typ": "info",
+     "titel": "🕊️ Streit & Versöhnung (2)",
+     "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
+     "beispiele": [
+      {
+       "fa": "مقصر",
+       "tr": "moghasser",
+       "de": "schuld",
+       "emoji": "👉"
+      },
+      {
+       "fa": "لجباز",
+       "tr": "ladschbāz",
+       "de": "stur",
+       "emoji": "🐐"
+      },
+      {
+       "fa": "منصف",
+       "tr": "monsef",
+       "de": "fair",
+       "emoji": "⚖️"
+      },
+      {
+       "fa": "عصبانیت",
+       "tr": "ʿasabāniyat",
+       "de": "Wut",
+       "emoji": "😡"
+      },
+      {
+       "fa": "صبر",
+       "tr": "sabr",
+       "de": "Geduld",
+       "emoji": "⏳"
+      },
+      {
+       "fa": "گذشت",
+       "tr": "gozascht",
+       "de": "Nachsicht",
+       "emoji": "🫶"
+      }
+     ]
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "مقصر",
+       "tr": "moghasser",
+       "de": "schuld",
+       "emoji": "👉"
+      },
+      {
+       "fa": "عصبانیت",
+       "tr": "ʿasabāniyat",
+       "de": "Wut",
+       "emoji": "😡"
+      },
+      {
+       "fa": "لجباز",
+       "tr": "ladschbāz",
+       "de": "stur",
+       "emoji": "🐐"
+      },
+      {
+       "fa": "کدورت",
+       "tr": "kodūrat",
+       "de": "Verstimmung",
+       "emoji": "🌫️"
+      },
+      {
+       "fa": "صلح",
+       "tr": "solh",
+       "de": "Frieden",
+       "emoji": "🕊️"
+      },
+      {
+       "fa": "گذشت",
+       "tr": "gozascht",
+       "de": "Nachsicht",
+       "emoji": "🫶"
+      }
+     ],
+     "titel": "Was bedeutet das?"
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "لجباز",
+       "tr": "ladschbāz",
+       "de": "stur",
+       "emoji": "🐐"
+      },
+      {
+       "fa": "بحث داغ",
+       "tr": "bahs-e dāgh",
+       "de": "hitzige Debatte",
+       "emoji": "🔥"
+      },
+      {
+       "fa": "گذشت",
+       "tr": "gozascht",
+       "de": "Nachsicht",
+       "emoji": "🫶"
+      },
+      {
+       "fa": "کدورت",
+       "tr": "kodūrat",
+       "de": "Verstimmung",
+       "emoji": "🌫️"
+      },
+      {
+       "fa": "عذرخواهی",
+       "tr": "ʿozrchāhī",
+       "de": "Entschuldigung",
+       "emoji": "🙇"
+      },
+      {
+       "fa": "صلح",
+       "tr": "solh",
+       "de": "Frieden",
+       "emoji": "🕊️"
+      }
+     ],
+     "titel": "Noch einmal: Was bedeutet das?"
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "دلخوری",
+       "tr": "delchorī",
+       "de": "Kränkung",
+       "emoji": "😔"
+      },
+      {
+       "fa": "گذشت",
+       "tr": "gozascht",
+       "de": "Nachsicht",
+       "emoji": "🫶"
+      },
+      {
+       "fa": "لجباز",
+       "tr": "ladschbāz",
+       "de": "stur",
+       "emoji": "🐐"
+      },
+      {
+       "fa": "بحث داغ",
+       "tr": "bahs-e dāgh",
+       "de": "hitzige Debatte",
+       "emoji": "🔥"
+      },
+      {
+       "fa": "صلح",
+       "tr": "solh",
+       "de": "Frieden",
+       "emoji": "🕊️"
+      },
+      {
+       "fa": "آشتی",
+       "tr": "āschtī",
+       "de": "Versöhnung",
+       "emoji": "🤝"
+      }
+     ],
+     "titel": "Memory: Bild & Wort"
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>بعد از دعوا، او اول ___ کرد.</span><br><span class='mini'>Nach dem Streit hat er/sie sich zuerst entschuldigt.</span>",
+       "optionen": [
+        "عذرخواهی",
+        "استدلال",
+        "موافق"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>بعد از دعوا، او اول عذرخواهی کرد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>برادرم خیلی ___ است؛ هیچ‌وقت کوتاه نمی‌آید.</span><br><span class='mini'>Mein Bruder ist sehr stur; er gibt nie nach.</span>",
+       "optionen": [
+        "لجباز",
+        "مثال",
+        "موافقت"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>برادرم خیلی لجباز است؛ هیچ‌وقت کوتاه نمی‌آید.</span>"
+      },
+      {
+       "frage": "<span class='fa'>تو این دعوا هیچ‌کس ___ نیست؛ سوءتفاهم بود.</span><br><span class='mini'>In diesem Streit ist niemand schuld; es war ein Missverständnis.</span>",
+       "optionen": [
+        "مقصر",
+        "منطقی",
+        "به عنوان مثال"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>تو این دعوا هیچ‌کس مقصر نیست؛ سوءتفاهم بود.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Streit & Versöhnung",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 50,
+     "ziel": 10,
+     "woerter": [
+      {
+       "fa": "عذرخواهی",
+       "a": "Entschuldigung"
+      },
+      {
+       "fa": "آشتی",
+       "a": "Versöhnung"
+      },
+      {
+       "fa": "دلخوری",
+       "a": "Kränkung"
+      },
+      {
+       "fa": "کدورت",
+       "a": "Verstimmung"
+      },
+      {
+       "fa": "بحث داغ",
+       "a": "hitzige Debatte"
+      },
+      {
+       "fa": "صلح",
+       "a": "Frieden"
+      },
+      {
+       "fa": "مقصر",
+       "a": "schuld"
+      },
+      {
+       "fa": "لجباز",
+       "a": "stur"
+      },
+      {
+       "fa": "منصف",
+       "a": "fair"
+      },
+      {
+       "fa": "عصبانیت",
+       "a": "Wut"
+      },
+      {
+       "fa": "صبر",
+       "a": "Geduld"
+      },
+      {
+       "fa": "گذشت",
+       "a": "Nachsicht"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "v",
+   "titel": "Verben & Wiederholung",
+   "vorschau": "بحث کردن · قانع کردن · مخالفت کردن",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Verben",
+     "text": "<p>Infinitiv – im Gespräch brauchst du sie in allen Zeiten.</p>",
+     "beispiele": [
+      {
+       "fa": "بحث کردن",
+       "tr": "bahs kardan",
+       "de": "diskutieren",
+       "emoji": "🗣️"
+      },
+      {
+       "fa": "قانع کردن",
+       "tr": "ghāneʿ kardan",
+       "de": "überzeugen",
+       "emoji": "🤝"
+      },
+      {
+       "fa": "مخالفت کردن",
+       "tr": "mochālefat kardan",
+       "de": "widersprechen",
+       "emoji": "✋"
+      },
+      {
+       "fa": "کوتاه آمدن",
+       "tr": "kūtāh āmadan",
+       "de": "nachgeben",
+       "emoji": "🙇"
+      },
+      {
+       "fa": "دعوا کردن",
+       "tr": "daʿwā kardan",
+       "de": "streiten",
+       "emoji": "⚡"
+      },
+      {
+       "fa": "ثابت کردن",
+       "tr": "sābet kardan",
+       "de": "beweisen",
+       "emoji": "✅"
+      },
+      {
+       "fa": "عذرخواهی کردن",
+       "tr": "ʿozrchāhī kardan",
+       "de": "sich entschuldigen",
+       "emoji": "🙇"
+      },
+      {
+       "fa": "قبول کردن",
+       "tr": "ghabūl kardan",
+       "de": "akzeptieren, zustimmen",
+       "emoji": "👍"
+      },
+      {
+       "fa": "عوض کردن",
+       "tr": "ʿawaz kardan",
+       "de": "ändern",
+       "emoji": "🔄"
+      }
+     ]
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "کوتاه آمدن",
+       "tr": "kūtāh āmadan",
+       "de": "nachgeben",
+       "emoji": "🙇"
+      },
+      {
+       "fa": "مخالفت کردن",
+       "tr": "mochālefat kardan",
+       "de": "widersprechen",
+       "emoji": "✋"
+      },
+      {
+       "fa": "عوض کردن",
+       "tr": "ʿawaz kardan",
+       "de": "ändern",
+       "emoji": "🔄"
+      },
+      {
+       "fa": "دعوا کردن",
+       "tr": "daʿwā kardan",
+       "de": "streiten",
+       "emoji": "⚡"
+      },
+      {
+       "fa": "قبول کردن",
+       "tr": "ghabūl kardan",
+       "de": "akzeptieren, zustimmen",
+       "emoji": "👍"
+      },
+      {
+       "fa": "قانع کردن",
+       "tr": "ghāneʿ kardan",
+       "de": "überzeugen",
+       "emoji": "🤝"
+      }
+     ],
+     "titel": "Was bedeutet das?"
+    },
+    {
+     "typ": "sortieren",
+     "titel": "Welches Wortfeld?",
+     "frage": "Ordne die Wörter dem Wortfeld zu.",
+     "kategorien": [
+      "🧩 Rund ums Thema",
+      "💬 Meinung & Argumente",
+      "🔗 Konnektoren",
+      "🕊️ Streit & Versöhnung"
+     ],
+     "items": [
+      {
+       "fa": "عیب",
+       "k": 0,
+       "e": "Nachteil, Fehler",
+       "say": false
+      },
+      {
+       "fa": "مزیت",
+       "k": 0,
+       "e": "Vorteil",
+       "say": false
+      },
+      {
+       "fa": "در واقع",
+       "k": 0,
+       "e": "eigentlich, tatsächlich",
+       "say": false
+      },
+      {
+       "fa": "نتیجه",
+       "k": 1,
+       "e": "Ergebnis, Schluss",
+       "say": false
+      },
+      {
+       "fa": "تعصب",
+       "k": 1,
+       "e": "Voreingenommenheit",
+       "say": false
+      },
+      {
+       "fa": "ادعا",
+       "k": 1,
+       "e": "Behauptung",
+       "say": false
+      },
+      {
+       "fa": "علاوه بر این",
+       "k": 2,
+       "e": "außerdem",
+       "say": false
+      },
+      {
+       "fa": "به عنوان مثال",
+       "k": 2,
+       "e": "zum Beispiel",
+       "say": false
+      },
+      {
+       "fa": "در نتیجه",
+       "k": 2,
+       "e": "folglich",
+       "say": false
+      },
+      {
+       "fa": "کدورت",
+       "k": 3,
+       "e": "Verstimmung",
+       "say": false
+      },
+      {
+       "fa": "گذشت",
+       "k": 3,
+       "e": "Nachsicht",
+       "say": false
+      },
+      {
+       "fa": "عذرخواهی",
+       "k": 3,
+       "e": "Entschuldigung",
+       "say": false
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: alle Wörter",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 75,
+     "ziel": 15,
      "woerter": [
       {
        "fa": "نظر",
@@ -376,6 +1587,150 @@
        "a": "überzeugt"
       },
       {
+       "fa": "استدلال",
+       "a": "Argumentation"
+      },
+      {
+       "fa": "ادعا",
+       "a": "Behauptung"
+      },
+      {
+       "fa": "مثال",
+       "a": "Beispiel"
+      },
+      {
+       "fa": "نتیجه",
+       "a": "Ergebnis, Schluss"
+      },
+      {
+       "fa": "مخالفت",
+       "a": "Widerspruch"
+      },
+      {
+       "fa": "موافقت",
+       "a": "Zustimmung"
+      },
+      {
+       "fa": "دیدگاه",
+       "a": "Standpunkt"
+      },
+      {
+       "fa": "واقعیت",
+       "a": "Tatsache"
+      },
+      {
+       "fa": "تعصب",
+       "a": "Voreingenommenheit"
+      },
+      {
+       "fa": "منطقی",
+       "a": "logisch, vernünftig"
+      },
+      {
+       "fa": "احساسی",
+       "a": "emotional"
+      },
+      {
+       "fa": "بی‌طرف",
+       "a": "neutral"
+      },
+      {
+       "fa": "چون",
+       "a": "weil"
+      },
+      {
+       "fa": "بنابراین",
+       "a": "daher"
+      },
+      {
+       "fa": "با این حال",
+       "a": "trotzdem"
+      },
+      {
+       "fa": "در حالی که",
+       "a": "während (Gegensatz)"
+      },
+      {
+       "fa": "علاوه بر این",
+       "a": "außerdem"
+      },
+      {
+       "fa": "به عنوان مثال",
+       "a": "zum Beispiel"
+      },
+      {
+       "fa": "در نتیجه",
+       "a": "folglich"
+      },
+      {
+       "fa": "اول اینکه",
+       "a": "erstens"
+      },
+      {
+       "fa": "دوم اینکه",
+       "a": "zweitens"
+      },
+      {
+       "fa": "به هر حال",
+       "a": "jedenfalls"
+      },
+      {
+       "fa": "مثلاً",
+       "a": "zum Beispiel (locker)"
+      },
+      {
+       "fa": "یعنی",
+       "a": "das heißt"
+      },
+      {
+       "fa": "عذرخواهی",
+       "a": "Entschuldigung"
+      },
+      {
+       "fa": "آشتی",
+       "a": "Versöhnung"
+      },
+      {
+       "fa": "دلخوری",
+       "a": "Kränkung"
+      },
+      {
+       "fa": "کدورت",
+       "a": "Verstimmung"
+      },
+      {
+       "fa": "بحث داغ",
+       "a": "hitzige Debatte"
+      },
+      {
+       "fa": "صلح",
+       "a": "Frieden"
+      },
+      {
+       "fa": "مقصر",
+       "a": "schuld"
+      },
+      {
+       "fa": "لجباز",
+       "a": "stur"
+      },
+      {
+       "fa": "منصف",
+       "a": "fair"
+      },
+      {
+       "fa": "عصبانیت",
+       "a": "Wut"
+      },
+      {
+       "fa": "صبر",
+       "a": "Geduld"
+      },
+      {
+       "fa": "گذشت",
+       "a": "Nachsicht"
+      },
+      {
        "fa": "بحث کردن",
        "a": "diskutieren"
       },
@@ -394,19 +1749,35 @@
       {
        "fa": "دعوا کردن",
        "a": "streiten"
+      },
+      {
+       "fa": "ثابت کردن",
+       "a": "beweisen"
+      },
+      {
+       "fa": "عذرخواهی کردن",
+       "a": "sich entschuldigen"
+      },
+      {
+       "fa": "قبول کردن",
+       "a": "akzeptieren, zustimmen"
+      },
+      {
+       "fa": "عوض کردن",
+       "a": "ändern"
       }
      ]
     }
    ]
   },
   {
-   "id": "s2",
+   "id": "r1",
    "titel": "Redemittel",
    "vorschau": "به نظر من …",
    "karten": [
     {
      "typ": "info",
-     "titel": "Redemittel – Teil 1",
+     "titel": "Redemittel (1)",
      "text": "<p>So sagt man das im Gespräch. Tippe einen Satz an, um ihn zu hören.</p>",
      "stil": "merke",
      "beispiele": [
@@ -439,21 +1810,21 @@
        "tr": "hagh bā tūe, walī …",
        "de": "Du hast recht, aber …",
        "x": "حق با شماست، اما …"
-      }
-     ]
-    },
-    {
-     "typ": "info",
-     "titel": "Redemittel – Teil 2",
-     "text": "<p>Die Schriftform findest du gleich in der Übung „Geschrieben ↔ gesprochen“.</p>",
-     "stil": "merke",
-     "beispiele": [
+      },
       {
        "fa": "اصلاً موافق نیستم!",
        "tr": "aslan mowāfegh nīstam!",
        "de": "Da bin ich überhaupt nicht einverstanden!",
        "x": "اصلاً موافق نیستم!"
-      },
+      }
+     ]
+    },
+    {
+     "typ": "info",
+     "titel": "Redemittel (2)",
+     "text": "<p>So sagt man das im Gespräch. Tippe einen Satz an, um ihn zu hören.</p>",
+     "stil": "merke",
+     "beispiele": [
       {
        "fa": "یعنی چی؟ منظورت چیه؟",
        "tr": "yaʿnī tschī? manzūret tschīye?",
@@ -477,6 +1848,56 @@
        "tr": "biyā wasatescho begīrīm.",
        "de": "Lass uns einen Mittelweg finden.",
        "x": "بیا وسط را بگیریم."
+      },
+      {
+       "fa": "از یه طرف … ، از طرف دیگه …",
+       "tr": "az ye taraf … az taraf-e dīge …",
+       "de": "Einerseits …, andererseits …",
+       "x": "از یک طرف … ، از طرف دیگر …"
+      },
+      {
+       "fa": "دلیل اصلیم اینه که …",
+       "tr": "dalīl-e aslīam īne ke …",
+       "de": "Mein Hauptgrund ist, dass …",
+       "x": "دلیل اصلی من این است که …"
+      }
+     ]
+    },
+    {
+     "typ": "info",
+     "titel": "Redemittel (3)",
+     "text": "<p>So sagt man das im Gespräch. Tippe einen Satz an, um ihn zu hören.</p>",
+     "stil": "merke",
+     "beispiele": [
+      {
+       "fa": "تا حدی موافقم.",
+       "tr": "tā haddī mowāfegham.",
+       "de": "Ich stimme teilweise zu.",
+       "x": "تا حدی موافقم."
+      },
+      {
+       "fa": "می‌شه مثال بزنی؟",
+       "tr": "mīsche mesāl bezanī?",
+       "de": "Kannst du ein Beispiel geben?",
+       "x": "می‌شود مثال بزنی؟"
+      },
+      {
+       "fa": "حرفتو قطع نمی‌کنم، ولی …",
+       "tr": "harfeto ghatʿ nemīkonam, walī …",
+       "de": "Ich will dich nicht unterbrechen, aber …",
+       "x": "حرفت را قطع نمی‌کنم، ولی …"
+      },
+      {
+       "fa": "حق با تو بود، اشتباه کردم.",
+       "tr": "hagh bā to būd, eschtebāh kardam.",
+       "de": "Du hattest recht, ich lag falsch.",
+       "x": "حق با تو بود، من اشتباه کردم."
+      },
+      {
+       "fa": "بیا دیگه بحث نکنیم.",
+       "tr": "biyā dīge bahs nakonīm.",
+       "de": "Lass uns nicht mehr streiten.",
+       "x": "بیا دیگر بحث نکنیم."
       }
      ]
     },
@@ -485,22 +1906,59 @@
      "links": "de",
      "paare": [
       {
+       "fa": "فکر کنم سوءتفاهم شده.",
+       "tr": "fekr konam sūʾetafāhom schode.",
+       "de": "Ich glaube, das war ein Missverständnis.",
+       "x": "فکر کنم سوءتفاهم شده."
+      },
+      {
        "fa": "مطمئنم که …",
        "tr": "motmaʾennam ke …",
        "de": "Ich bin sicher, dass …",
        "x": "مطمئنم که …"
       },
       {
-       "fa": "یعنی چی؟ منظورت چیه؟",
-       "tr": "yaʿnī tschī? manzūret tschīye?",
-       "de": "Was heißt das? Was meinst du?",
-       "x": "یعنی چه؟ منظورت چیست؟"
+       "fa": "اصلاً موافق نیستم!",
+       "tr": "aslan mowāfegh nīstam!",
+       "de": "Da bin ich überhaupt nicht einverstanden!",
+       "x": "اصلاً موافق نیستم!"
       },
       {
-       "fa": "آروم باش، بیا منطقی حرف بزنیم.",
-       "tr": "ārūm bāsch, biyā manteghī harf bezanīm.",
-       "de": "Beruhig dich, lass uns sachlich reden.",
-       "x": "آرام باش، بیا منطقی صحبت کنیم."
+       "fa": "کاملاً موافقم!",
+       "tr": "kāmelan mowāfegham!",
+       "de": "Ganz meine Meinung!",
+       "x": "کاملاً موافقم!"
+      },
+      {
+       "fa": "دلیل اصلیم اینه که …",
+       "tr": "dalīl-e aslīam īne ke …",
+       "de": "Mein Hauptgrund ist, dass …",
+       "x": "دلیل اصلی من این است که …"
+      },
+      {
+       "fa": "حق با تو بود، اشتباه کردم.",
+       "tr": "hagh bā to būd, eschtebāh kardam.",
+       "de": "Du hattest recht, ich lag falsch.",
+       "x": "حق با تو بود، من اشتباه کردم."
+      }
+     ],
+     "titel": "Was bedeutet das?"
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "دلیل اصلیم اینه که …",
+       "tr": "dalīl-e aslīam īne ke …",
+       "de": "Mein Hauptgrund ist, dass …",
+       "x": "دلیل اصلی من این است که …"
+      },
+      {
+       "fa": "حق با تو بود، اشتباه کردم.",
+       "tr": "hagh bā to būd, eschtebāh kardam.",
+       "de": "Du hattest recht, ich lag falsch.",
+       "x": "حق با تو بود، من اشتباه کردم."
       },
       {
        "fa": "حق با توئه، ولی …",
@@ -509,10 +1967,16 @@
        "x": "حق با شماست، اما …"
       },
       {
-       "fa": "فکر کنم سوءتفاهم شده.",
-       "tr": "fekr konam sūʾetafāhom schode.",
-       "de": "Ich glaube, das war ein Missverständnis.",
-       "x": "فکر کنم سوءتفاهم شده."
+       "fa": "بیا دیگه بحث نکنیم.",
+       "tr": "biyā dīge bahs nakonīm.",
+       "de": "Lass uns nicht mehr streiten.",
+       "x": "بیا دیگر بحث نکنیم."
+      },
+      {
+       "fa": "مطمئنم که …",
+       "tr": "motmaʾennam ke …",
+       "de": "Ich bin sicher, dass …",
+       "x": "مطمئنم که …"
       },
       {
        "fa": "کاملاً موافقم!",
@@ -521,7 +1985,7 @@
        "x": "کاملاً موافقم!"
       }
      ],
-     "titel": "Was bedeutet das?"
+     "titel": "Noch einmal: Was bedeutet das?"
     },
     {
      "typ": "sortieren",
@@ -592,12 +2056,188 @@
        "k": 2,
        "e": "Lass uns einen Mittelweg finden.",
        "say": false
+      },
+      {
+       "fa": "از یه طرف … ، از طرف دیگه …",
+       "k": 0,
+       "e": "Einerseits …, andererseits …",
+       "say": false
+      },
+      {
+       "fa": "دلیل اصلیم اینه که …",
+       "k": 0,
+       "e": "Mein Hauptgrund ist, dass …",
+       "say": false
+      },
+      {
+       "fa": "تا حدی موافقم.",
+       "k": 1,
+       "e": "Ich stimme teilweise zu.",
+       "say": false
+      },
+      {
+       "fa": "می‌شه مثال بزنی؟",
+       "k": 1,
+       "e": "Kannst du ein Beispiel geben?",
+       "say": false
+      },
+      {
+       "fa": "حرفتو قطع نمی‌کنم، ولی …",
+       "k": 1,
+       "e": "Ich will dich nicht unterbrechen, aber …",
+       "say": false
+      },
+      {
+       "fa": "حق با تو بود، اشتباه کردم.",
+       "k": 2,
+       "e": "Du hattest recht, ich lag falsch.",
+       "say": false
+      },
+      {
+       "fa": "بیا دیگه بحث نکنیم.",
+       "k": 2,
+       "e": "Lass uns nicht mehr streiten.",
+       "say": false
       }
      ]
     },
     {
+     "typ": "paare",
+     "links": "x",
+     "paare": [
+      {
+       "fa": "دلیل اصلی من این است که …",
+       "tr": "",
+       "de": "Mein Hauptgrund ist, dass …",
+       "x": "دلیل اصلیم اینه که …"
+      },
+      {
+       "fa": "حرفت را قطع نمی‌کنم، ولی …",
+       "tr": "",
+       "de": "Ich will dich nicht unterbrechen, aber …",
+       "x": "حرفتو قطع نمی‌کنم، ولی …"
+      },
+      {
+       "fa": "آرام باش، بیا منطقی صحبت کنیم.",
+       "tr": "",
+       "de": "Beruhig dich, lass uns sachlich reden.",
+       "x": "آروم باش، بیا منطقی حرف بزنیم."
+      },
+      {
+       "fa": "حق با شماست، اما …",
+       "tr": "",
+       "de": "Du hast recht, aber …",
+       "x": "حق با توئه، ولی …"
+      },
+      {
+       "fa": "از یک طرف … ، از طرف دیگر …",
+       "tr": "",
+       "de": "Einerseits …, andererseits …",
+       "x": "از یه طرف … ، از طرف دیگه …"
+      },
+      {
+       "fa": "بیا دیگر بحث نکنیم.",
+       "tr": "",
+       "de": "Lass uns nicht mehr streiten.",
+       "x": "بیا دیگه بحث نکنیم."
+      }
+     ],
+     "titel": "Geschrieben ↔ gesprochen"
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Redemittel",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 70,
+     "ziel": 12,
+     "woerter": [
+      {
+       "fa": "به نظر من …",
+       "a": "Meiner Meinung nach …"
+      },
+      {
+       "fa": "فکر می‌کنم …",
+       "a": "Ich denke, …"
+      },
+      {
+       "fa": "مطمئنم که …",
+       "a": "Ich bin sicher, dass …"
+      },
+      {
+       "fa": "کاملاً موافقم!",
+       "a": "Ganz meine Meinung!"
+      },
+      {
+       "fa": "حق با توئه، ولی …",
+       "a": "Du hast recht, aber …"
+      },
+      {
+       "fa": "اصلاً موافق نیستم!",
+       "a": "Da bin ich überhaupt nicht einverstanden!"
+      },
+      {
+       "fa": "یعنی چی؟ منظورت چیه؟",
+       "a": "Was heißt das? Was meinst du?"
+      },
+      {
+       "fa": "آروم باش، بیا منطقی حرف بزنیم.",
+       "a": "Beruhig dich, lass uns sachlich reden."
+      },
+      {
+       "fa": "فکر کنم سوءتفاهم شده.",
+       "a": "Ich glaube, das war ein Missverständnis."
+      },
+      {
+       "fa": "بیا وسطشو بگیریم.",
+       "a": "Lass uns einen Mittelweg finden."
+      },
+      {
+       "fa": "از یه طرف … ، از طرف دیگه …",
+       "a": "Einerseits …, andererseits …"
+      },
+      {
+       "fa": "دلیل اصلیم اینه که …",
+       "a": "Mein Hauptgrund ist, dass …"
+      },
+      {
+       "fa": "تا حدی موافقم.",
+       "a": "Ich stimme teilweise zu."
+      },
+      {
+       "fa": "می‌شه مثال بزنی؟",
+       "a": "Kannst du ein Beispiel geben?"
+      },
+      {
+       "fa": "حرفتو قطع نمی‌کنم، ولی …",
+       "a": "Ich will dich nicht unterbrechen, aber …"
+      },
+      {
+       "fa": "حق با تو بود، اشتباه کردم.",
+       "a": "Du hattest recht, ich lag falsch."
+      },
+      {
+       "fa": "بیا دیگه بحث نکنیم.",
+       "a": "Lass uns nicht mehr streiten."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "r2",
+   "titel": "Situationen & Reaktionen",
+   "vorschau": "چی بگم؟",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Reagieren",
+     "text": "<p>Im Gespräch kommt es auf die <b>Reaktion</b> an. Lies, was jemand sagt – und was man darauf antwortet.</p><div class='karte' style='margin:10px 0;padding:10px 14px'><div class='fa' style='font-size:1.3rem;text-align:right'>💬 به نظر من شهر بهتره.</div><div class='fa' style='font-size:1.3rem;text-align:right;color:var(--lapis)'>↩️ تا حدی موافقم، ولی ترافیکش چی؟</div><div class='klein muted'>Ich finde die Stadt besser.</div></div><div class='karte' style='margin:10px 0;padding:10px 14px'><div class='fa' style='font-size:1.3rem;text-align:right'>💬 منظورت چیه؟</div><div class='fa' style='font-size:1.3rem;text-align:right;color:var(--lapis)'>↩️ یعنی اینکه هر دو حق داریم.</div><div class='klein muted'>Was meinst du?</div></div><div class='karte' style='margin:10px 0;padding:10px 14px'><div class='fa' style='font-size:1.3rem;text-align:right'>💬 کاملاً اشتباه می‌کنی!</div><div class='fa' style='font-size:1.3rem;text-align:right;color:var(--lapis)'>↩️ آروم باش، بیا منطقی حرف بزنیم.</div><div class='klein muted'>Du liegst völlig falsch!</div></div><div class='karte' style='margin:10px 0;padding:10px 14px'><div class='fa' style='font-size:1.3rem;text-align:right'>💬 ببخشید، تند رفتم.</div><div class='fa' style='font-size:1.3rem;text-align:right;color:var(--lapis)'>↩️ اشکالی نداره، منم عصبانی بودم.</div><div class='klein muted'>Sorry, ich war zu heftig.</div></div>",
+     "stil": "merke"
+    },
+    {
      "typ": "wahl",
-     "titel": "Was sagst du?",
+     "titel": "Was sagst du? (1)",
      "fragen": [
       {
        "frage": "Dein Freund sagt, Kiel sei die schönste Stadt der Welt. Du bist anderer Meinung, willst aber höflich bleiben:",
@@ -646,96 +2286,185 @@
      ]
     },
     {
+     "typ": "wahl",
+     "titel": "Was sagst du? (2)",
+     "fragen": [
+      {
+       "frage": "Du willst beide Seiten zeigen:",
+       "optionen": [
+        "از یه طرف خوبه، از طرف دیگه گرونه.",
+        "حق با تو بود.",
+        "بیا دیگه بحث نکنیم."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "Das Argument ist dir zu abstrakt:",
+       "optionen": [
+        "می‌شه مثال بزنی؟",
+        "تا حدی موافقم.",
+        "کاملاً موافقم!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "Nach dem Streit merkst du, dass du falsch lagst:",
+       "optionen": [
+        "حق با تو بود، اشتباه کردم.",
+        "اصلاً موافق نیستم!",
+        "یعنی چی؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    },
+    {
      "typ": "paare",
      "links": "x",
      "paare": [
       {
-       "fa": "فکر می‌کنم که …",
+       "fa": "به نظر من شهر بهتره.",
        "tr": "",
-       "de": "Ich denke, …",
-       "x": "فکر می‌کنم …"
+       "de": "Ich finde die Stadt besser.",
+       "x": "تا حدی موافقم، ولی ترافیکش چی؟"
       },
       {
-       "fa": "حق با شماست، اما …",
+       "fa": "منظورت چیه؟",
        "tr": "",
-       "de": "Du hast recht, aber …",
-       "x": "حق با توئه، ولی …"
+       "de": "Was meinst du?",
+       "x": "یعنی اینکه هر دو حق داریم."
       },
       {
-       "fa": "یعنی چه؟ منظورت چیست؟",
+       "fa": "کاملاً اشتباه می‌کنی!",
        "tr": "",
-       "de": "Was heißt das? Was meinst du?",
-       "x": "یعنی چی؟ منظورت چیه؟"
-      },
-      {
-       "fa": "آرام باش، بیا منطقی صحبت کنیم.",
-       "tr": "",
-       "de": "Beruhig dich, lass uns sachlich reden.",
+       "de": "Du liegst völlig falsch!",
        "x": "آروم باش، بیا منطقی حرف بزنیم."
       },
       {
-       "fa": "بیا وسط را بگیریم.",
+       "fa": "ببخشید، تند رفتم.",
        "tr": "",
-       "de": "Lass uns einen Mittelweg finden.",
-       "x": "بیا وسطشو بگیریم."
+       "de": "Sorry, ich war zu heftig.",
+       "x": "اشکالی نداره، منم عصبانی بودم."
+      },
+      {
+       "fa": "می‌شه مثال بزنی؟",
+       "tr": "",
+       "de": "Kannst du ein Beispiel geben?",
+       "x": "مثلاً همین هفته‌ی پیش …"
+      },
+      {
+       "fa": "بیا آشتی کنیم.",
+       "tr": "",
+       "de": "Lass uns uns versöhnen.",
+       "x": "باشه، دیگه تمومش کنیم."
       }
      ],
-     "titel": "Geschrieben ↔ gesprochen"
+     "titel": "Was antwortest du?"
     },
     {
-     "typ": "tempo",
-     "titel": "Blitz: Redemittel",
-     "aufgabe": "Was bedeutet das?",
-     "modus": "de",
-     "sekunden": 60,
-     "ziel": 10,
-     "woerter": [
+     "typ": "wahl",
+     "titel": "Die passende Reaktion",
+     "fragen": [
       {
-       "fa": "به نظر من …",
-       "a": "Meiner Meinung nach …"
+       "frage": "<span class='fa'>به نظر من شهر بهتره.</span>",
+       "optionen": [
+        "تا حدی موافقم، ولی ترافیکش چی؟",
+        "باشه، دیگه تمومش کنیم.",
+        "اشکالی نداره، منم عصبانی بودم."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
       },
       {
-       "fa": "فکر می‌کنم …",
-       "a": "Ich denke, …"
+       "frage": "<span class='fa'>منظورت چیه؟</span>",
+       "optionen": [
+        "یعنی اینکه هر دو حق داریم.",
+        "دیدی؟ گفتم که!",
+        "مثلاً همین هفته‌ی پیش …"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
       },
       {
-       "fa": "مطمئنم که …",
-       "a": "Ich bin sicher, dass …"
+       "frage": "<span class='fa'>کاملاً اشتباه می‌کنی!</span>",
+       "optionen": [
+        "آروم باش، بیا منطقی حرف بزنیم.",
+        "مثلاً همین هفته‌ی پیش …",
+        "تا حدی موافقم، ولی ترافیکش چی؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
       },
       {
-       "fa": "کاملاً موافقم!",
-       "a": "Ganz meine Meinung!"
+       "frage": "<span class='fa'>ببخشید، تند رفتم.</span>",
+       "optionen": [
+        "اشکالی نداره، منم عصبانی بودم.",
+        "یعنی اینکه هر دو حق داریم.",
+        "باشه، دیگه تمومش کنیم."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
       },
       {
-       "fa": "حق با توئه، ولی …",
-       "a": "Du hast recht, aber …"
+       "frage": "<span class='fa'>می‌شه مثال بزنی؟</span>",
+       "optionen": [
+        "مثلاً همین هفته‌ی پیش …",
+        "آره، منم همین فکرو می‌کنم.",
+        "تا حدی موافقم، ولی ترافیکش چی؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
       },
       {
-       "fa": "اصلاً موافق نیستم!",
-       "a": "Da bin ich überhaupt nicht einverstanden!"
+       "frage": "<span class='fa'>بیا آشتی کنیم.</span>",
+       "optionen": [
+        "باشه، دیگه تمومش کنیم.",
+        "آره، منم همین فکرو می‌کنم.",
+        "دیدی؟ گفتم که!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
       },
       {
-       "fa": "یعنی چی؟ منظورت چیه؟",
-       "a": "Was heißt das? Was meinst du?"
+       "frage": "<span class='fa'>فکر کنم سوءتفاهم شده.</span>",
+       "optionen": [
+        "آره، منم همین فکرو می‌کنم.",
+        "اشکالی نداره، منم عصبانی بودم.",
+        "باشه، دیگه تمومش کنیم."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
       },
       {
-       "fa": "آروم باش، بیا منطقی حرف بزنیم.",
-       "a": "Beruhig dich, lass uns sachlich reden."
-      },
-      {
-       "fa": "فکر کنم سوءتفاهم شده.",
-       "a": "Ich glaube, das war ein Missverständnis."
-      },
-      {
-       "fa": "بیا وسطشو بگیریم.",
-       "a": "Lass uns einen Mittelweg finden."
+       "frage": "<span class='fa'>قانعم کردی!</span>",
+       "optionen": [
+        "دیدی؟ گفتم که!",
+        "باشه، دیگه تمومش کنیم.",
+        "اشکالی نداره، منم عصبانی بودم."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
       }
      ]
     }
    ]
   },
   {
-   "id": "s3",
+   "id": "d",
    "titel": "Modelldialog",
    "vorschau": "Stadt oder Land?",
    "karten": [
@@ -835,6 +2564,67 @@
      ]
     },
     {
+     "typ": "wahl",
+     "titel": "Wie geht es weiter?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>به نظر من زندگی تو شهر بزرگ خیلی بهتره. همه چی هست!</span><br><span class='klein muted'>Was kommt als Nächstes?</span>",
+       "optionen": [
+        "اصلاً موافق نیستم! ترافیک، آلودگی، شلوغی …",
+        "خیلی خب، بیا وسطشو بگیریم: یه شهر کوچیک نزدیک طبیعت!",
+        "خب … اون یه کم ضعیفه. ولی هواش عالیه!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>حق با توئه، ولی کار و دانشگاه و سینما تو شهره.</span><br><span class='klein muted'>Was kommt als Nächstes?</span>",
+       "optionen": [
+        "الان با اینترنت از هر جا می‌شه کار کرد.",
+        "از هر جا؟ اینترنت روستای مادربزرگ رو یادت رفته؟!",
+        "به نظر من زندگی تو شهر بزرگ خیلی بهتره. همه چی هست!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>از هر جا؟ اینترنت روستای مادربزرگ رو یادت رفته؟!</span><br><span class='klein muted'>Was kommt als Nächstes?</span>",
+       "optionen": [
+        "خب … اون یه کم ضعیفه. ولی هواش عالیه!",
+        "به نظر من زندگی تو شهر بزرگ خیلی بهتره. همه چی هست!",
+        "حق با توئه، ولی کار و دانشگاه و سینما تو شهره."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>یعنی می‌خوای بقیه‌ی عمرت رو با گوسفندا حرف بزنی؟</span><br><span class='klein muted'>Was kommt als Nächstes?</span>",
+       "optionen": [
+        "گوسفندا حداقل بحث نمی‌کنن!",
+        "الان با اینترنت از هر جا می‌شه کار کرد.",
+        "از هر جا؟ اینترنت روستای مادربزرگ رو یادت رفته؟!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>خیلی خب، بیا وسطشو بگیریم: یه شهر کوچیک نزدیک طبیعت!</span><br><span class='klein muted'>Was kommt als Nächstes?</span>",
+       "optionen": [
+        "قبول! مثل کیل؟",
+        "اصلاً موافق نیستم! ترافیک، آلودگی، شلوغی …",
+        "گوسفندا حداقل بحث نمی‌کنن!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    },
+    {
      "typ": "ordnen",
      "titel": "Bring den Dialog in die richtige Reihenfolge",
      "frage": "Tippe die Sätze der Reihe nach an.",
@@ -880,11 +2670,92 @@
        "de": "Schafe diskutieren wenigstens nicht!"
       }
      ]
+    },
+    {
+     "typ": "bauen",
+     "titel": "Baue die Sätze aus dem Dialog",
+     "trenner": " ",
+     "woerter": [
+      {
+       "fa": "اصلاً موافق نیستم! ترافیک، آلودگی، شلوغی …",
+       "tr": "aslan mowāfegh nīstam! terāfīk, ālūdegī, schologhī …",
+       "de": "Überhaupt nicht! Stau, Smog, Gedränge …",
+       "teile": [
+        "اصلاً",
+        "موافق",
+        "نیستم",
+        "ترافیک",
+        "آلودگی",
+        "شلوغی",
+        "…"
+       ],
+       "extra": [
+        "بزنی؟"
+       ]
+      },
+      {
+       "fa": "الان با اینترنت از هر جا می‌شه کار کرد.",
+       "tr": "alān bā īnternet az har dschā mīsche kār kard.",
+       "de": "Mit Internet kann man heute von überall arbeiten.",
+       "teile": [
+        "الان",
+        "با",
+        "اینترنت",
+        "از",
+        "هر",
+        "جا",
+        "می‌شه",
+        "کار",
+        "کرد"
+       ],
+       "extra": [
+        "یه"
+       ]
+      },
+      {
+       "fa": "از هر جا؟ اینترنت روستای مادربزرگ رو یادت رفته؟!",
+       "tr": "az har dschā? īnternet-e rūstā-ye mādarbozorg ro yādet rafte?!",
+       "de": "Von überall? Hast du das Internet im Dorf von Oma vergessen?!",
+       "teile": [
+        "از",
+        "هر",
+        "جا",
+        "اینترنت",
+        "روستای",
+        "مادربزرگ",
+        "رو",
+        "یادت",
+        "رفته"
+       ],
+       "extra": [
+        "بقیه‌ی"
+       ]
+      },
+      {
+       "fa": "خب … اون یه کم ضعیفه. ولی هواش عالیه!",
+       "tr": "chob … ūn ye kam zaʿīfe. walī hawāsch ʿālīye!",
+       "de": "Na ja … das ist ein bisschen schwach. Aber die Luft ist toll!",
+       "teile": [
+        "خب",
+        "…",
+        "اون",
+        "یه",
+        "کم",
+        "ضعیفه",
+        "ولی",
+        "هواش",
+        "عالیه"
+       ],
+       "extra": [
+        "زندگی"
+       ]
+      }
+     ]
     }
    ]
   },
   {
-   "id": "s4",
+   "id": "t",
    "titel": "Lesen",
    "vorschau": "Die Kunst der Diskussion",
    "karten": [
@@ -1010,11 +2881,43 @@
        "richtig": 0
       }
      ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "بحث کردن یک مهارت است که می‌شود آن را یاد گرفت.",
+       "tr": "bahs kardan yek mahārat ast ke mīschawad ān rā yād gereft.",
+       "de": "Diskutieren ist eine Fähigkeit, die man lernen kann."
+      },
+      {
+       "fa": "اولین قانون: به حرف طرف مقابل خوب گوش کنید.",
+       "tr": "awwalīn ghānūn: be harf-e taraf-e moghābel chūb gūsch konīd.",
+       "de": "Erste Regel: Hören Sie Ihrem Gegenüber gut zu."
+      },
+      {
+       "fa": "بسیاری از دعواها به خاطر سوءتفاهم شروع می‌شوند.",
+       "tr": "besyārī az daʿwāhā be chāter-e sūʾetafāhom schorūʿ mīschawand.",
+       "de": "Viele Streits beginnen wegen eines Missverständnisses."
+      },
+      {
+       "fa": "دوم: به جای «تو همیشه …» بگویید «من احساس می‌کنم …».",
+       "tr": "dowwom: be dschā-ye «to hamīsche …» begūyīd «man ehsās mīkonam …».",
+       "de": "Zweitens: Sagen Sie statt „Du immer …“ lieber „Ich fühle …“."
+      },
+      {
+       "fa": "سوم: برای نظرتان دلیل بیاورید، نه فقط احساس.",
+       "tr": "sewwom: barā-ye nazaretān dalīl biyāwarīd, na faghat ehsās.",
+       "de": "Drittens: Begründen Sie Ihre Meinung, nicht nur mit Gefühlen."
+      }
+     ]
     }
    ]
   },
   {
-   "id": "s5",
+   "id": "k",
    "titel": "Gut zu wissen",
    "vorschau": "Höflich widersprechen",
    "karten": [
@@ -1062,7 +2965,7 @@
    ]
   },
   {
-   "id": "s6",
+   "id": "p",
    "titel": "Vorbereitung für die Sitzung",
    "vorschau": "آماده‌ای؟",
    "karten": [
@@ -1108,14 +3011,19 @@
      "links": "de",
      "paare": [
       {
+       "fa": "حیوون خونگی: گربه یا سگ؟",
+       "tr": "heywūn-e chūnegī: gorbe yā sag?",
+       "de": "Haustier: Katze oder Hund?"
+      },
+      {
        "fa": "کار کردن از خونه بهتره یا تو دفتر؟",
        "tr": "kār kardan az chūne behtare yā tū daftar?",
        "de": "Ist Arbeiten von zu Hause besser oder im Büro?"
       },
       {
-       "fa": "به نظرت بچه‌ها باید گوشی داشته باشن؟",
-       "tr": "be nazaret batschtschehā bāyad gūschī dāschte bāschan?",
-       "de": "Sollten Kinder ein Handy haben?"
+       "fa": "تو بحث‌ها زود کوتاه میای یا تا آخر می‌ایستی؟",
+       "tr": "tū bahshā zūd kūtāh miyāy yā tā āchar mīīstī?",
+       "de": "Gibst du in Diskussionen schnell nach oder bleibst du bis zum Ende dabei?"
       },
       {
        "fa": "شهر یا روستا؟ دلیلت چیه؟",
@@ -1123,19 +3031,14 @@
        "de": "Stadt oder Land? Was ist dein Grund?"
       },
       {
-       "fa": "حیوون خونگی: گربه یا سگ؟",
-       "tr": "heywūn-e chūnegī: gorbe yā sag?",
-       "de": "Haustier: Katze oder Hund?"
+       "fa": "به نظرت بچه‌ها باید گوشی داشته باشن؟",
+       "tr": "be nazaret batschtschehā bāyad gūschī dāschte bāschan?",
+       "de": "Sollten Kinder ein Handy haben?"
       },
       {
        "fa": "آخرین باری که نظرت عوض شد کی بود؟",
        "tr": "āchirīn bārī ke nazaret ʿawaz schod key būd?",
        "de": "Wann hast du zuletzt deine Meinung geändert?"
-      },
-      {
-       "fa": "تو بحث‌ها زود کوتاه میای یا تا آخر می‌ایستی؟",
-       "tr": "tū bahshā zūd kūtāh miyāy yā tā āchar mīīstī?",
-       "de": "Gibst du in Diskussionen schnell nach oder bleibst du bis zum Ende dabei?"
       }
      ],
      "titel": "Welche Frage ist das?"

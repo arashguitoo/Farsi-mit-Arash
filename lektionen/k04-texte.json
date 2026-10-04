@@ -1,0 +1,309 @@
+{
+ "id": "tx",
+ "art": "texte",
+ "titel": "Texte & Dialoge",
+ "beschreibung": "Ein zweiter Dialog und ein weiterer Lesetext.",
+ "stationen": [
+  {
+   "id": "d2",
+   "titel": "Dialog: Umtausch im Elektronikladen",
+   "vorschau": "Umtausch im Elektronikladen",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Simon hat letzte Woche Kopfhörer gekauft. Eine Seite funktioniert nicht mehr.</p>"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "فروشنده: سلام، بفرمایید.",
+       "tr": "salām, befarmāyīd.",
+       "de": "Hallo, bitte schön."
+      },
+      {
+       "fa": "سیمون: سلام. این هدفون رو هفته‌ی پیش از اینجا خریدم، ولی یه طرفش صدا نداره.",
+       "tr": "salām. īn hedfon ro hafte-ye pīsch az īndschā charīdam, walī ye tarafasch sedā nadāre.",
+       "de": "Hallo. Diese Kopfhörer habe ich letzte Woche hier gekauft, aber eine Seite hat keinen Ton."
+      },
+      {
+       "fa": "فروشنده: رسیدشو دارید؟",
+       "tr": "resīdescho dārīd?",
+       "de": "Haben Sie den Beleg?"
+      },
+      {
+       "fa": "سیمون: بله، بفرمایید.",
+       "tr": "bale, befarmāyīd.",
+       "de": "Ja, bitte."
+      },
+      {
+       "fa": "فروشنده: اجازه بدید امتحانش کنم … بله، حق با شماست. خرابه.",
+       "tr": "edschāze bedīd emtehānesch konam … bale, hagh bā schomāst. charābe.",
+       "de": "Lassen Sie mich testen … Ja, Sie haben recht. Er ist kaputt."
+      },
+      {
+       "fa": "سیمون: می‌شه عوضش کنید؟",
+       "tr": "mīsche ʿawazesch konīd?",
+       "de": "Können Sie ihn umtauschen?"
+      },
+      {
+       "fa": "فروشنده: همین مدل دیگه نداریم. یه مدل بهتر هست، فقط صد تومن بیشتر.",
+       "tr": "hamīn model dīge nadārīm. ye model-e behtar hast, faghat sad tomān bīschtar.",
+       "de": "Dieses Modell haben wir nicht mehr. Es gibt ein besseres, nur hunderttausend mehr."
+      },
+      {
+       "fa": "سیمون: ترجیح می‌دم پولمو پس بگیرم.",
+       "tr": "tardschīh mīdam pūlamo pas begīram.",
+       "de": "Ich bekomme lieber mein Geld zurück."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "فروشنده: سلام، بفرمایید.",
+       "tr": "salām, befarmāyīd.",
+       "de": "Hallo, bitte schön."
+      },
+      {
+       "fa": "سیمون: سلام. این هدفون رو هفته‌ی پیش از اینجا خریدم، ولی یه طرفش صدا نداره.",
+       "tr": "salām. īn hedfon ro hafte-ye pīsch az īndschā charīdam, walī ye tarafasch sedā nadāre.",
+       "de": "Hallo. Diese Kopfhörer habe ich letzte Woche hier gekauft, aber eine Seite hat keinen Ton."
+      },
+      {
+       "fa": "فروشنده: رسیدشو دارید؟",
+       "tr": "resīdescho dārīd?",
+       "de": "Haben Sie den Beleg?"
+      },
+      {
+       "fa": "سیمون: بله، بفرمایید.",
+       "tr": "bale, befarmāyīd.",
+       "de": "Ja, bitte."
+      },
+      {
+       "fa": "فروشنده: اجازه بدید امتحانش کنم … بله، حق با شماست. خرابه.",
+       "tr": "edschāze bedīd emtehānesch konam … bale, hagh bā schomāst. charābe.",
+       "de": "Lassen Sie mich testen … Ja, Sie haben recht. Er ist kaputt."
+      },
+      {
+       "fa": "سیمون: می‌شه عوضش کنید؟",
+       "tr": "mīsche ʿawazesch konīd?",
+       "de": "Können Sie ihn umtauschen?"
+      },
+      {
+       "fa": "فروشنده: همین مدل دیگه نداریم. یه مدل بهتر هست، فقط صد تومن بیشتر.",
+       "tr": "hamīn model dīge nadārīm. ye model-e behtar hast, faghat sad tomān bīschtar.",
+       "de": "Dieses Modell haben wir nicht mehr. Es gibt ein besseres, nur hunderttausend mehr."
+      },
+      {
+       "fa": "سیمون: ترجیح می‌دم پولمو پس بگیرم.",
+       "tr": "tardschīh mīdam pūlamo pas begīram.",
+       "de": "Ich bekomme lieber mein Geld zurück."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Was ist das Problem?",
+       "optionen": [
+        "Eine Seite der Kopfhörer hat keinen Ton.",
+        "Sie sind zu groß.",
+        "Sie haben die falsche Farbe."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Warum kann man nicht tauschen?",
+       "optionen": [
+        "Das Modell gibt es nicht mehr.",
+        "Simon hat keinen Beleg.",
+        "Die Garantie ist vorbei."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was möchte Simon am Ende?",
+       "optionen": [
+        "sein Geld zurück",
+        "das teurere Modell",
+        "einen Gutschein"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t2",
+   "titel": "Text: Der Große Basar von Teheran",
+   "vorschau": "Der Große Basar von Teheran",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Text: Der Große Basar von Teheran",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "بازار بزرگ تهران یکی از قدیمی‌ترین و بزرگ‌ترین بازارهای سرپوشیده‌ی جهان است.",
+       "tr": "bāzār-e bozorg-e tehrān yekī az ghadīmītarīn o bozorgtarīn bāzārhā-ye sarpūschīde-ye dschahān ast.",
+       "de": "Der Große Basar von Teheran ist einer der ältesten und größten überdachten Basare der Welt."
+      },
+      {
+       "fa": "در آن بیش از ده کیلومتر راهرو وجود دارد.",
+       "tr": "dar ān bīsch az dah kīlometr rāhrou wodschūd dārad.",
+       "de": "Er hat über zehn Kilometer Gänge."
+      },
+      {
+       "fa": "هر راهرو مخصوص یک صنف است: فرش‌فروش‌ها، طلافروش‌ها، ادویه‌فروش‌ها و …",
+       "tr": "har rāhrou machsūs-e yek senf ast: farschforūschhā, talāforūschhā, adwiyeforūschhā o …",
+       "de": "Jeder Gang gehört einer Zunft: Teppichhändlern, Goldhändlern, Gewürzhändlern usw."
+      },
+      {
+       "fa": "صبح‌ها بازار خیلی شلوغ است و باربرها با گاری‌های بزرگ از میان جمعیت رد می‌شوند.",
+       "tr": "sobhhā bāzār cheylī schologh ast o bārbarhā bā gārīhā-ye bozorg az miyān-e dschamʿiyat rad mīschawand.",
+       "de": "Morgens ist der Basar sehr voll, und Lastenträger schieben große Karren durch die Menge."
+      },
+      {
+       "fa": "بسیاری از مغازه‌دارها نسل‌هاست که در بازار کار می‌کنند.",
+       "tr": "besyārī az maghāzedārhā naslhāst ke dar bāzār kār mīkonand.",
+       "de": "Viele Ladenbesitzer arbeiten seit Generationen im Basar."
+      },
+      {
+       "fa": "برای گردشگرها، بازار جای خوبی برای خرید سوغاتی و چانه زدن است.",
+       "tr": "barā-ye gardeschgarhā, bāzār dschā-ye chūbī barā-ye charīd-e soughātī o tschāne zadan ast.",
+       "de": "Für Touristen ist der Basar ein guter Ort, um Souvenirs zu kaufen und zu handeln."
+      },
+      {
+       "fa": "فقط مواظب باشید گم نشوید!",
+       "tr": "faghat mowāzeb bāschīd gom naschawīd!",
+       "de": "Passen Sie nur auf, dass Sie sich nicht verlaufen!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "بازار تهران سرپوشیده است.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "بازار فقط یک کیلومتر راهرو دارد.",
+       "fest": true,
+       "erkl": "Es sind <b>über zehn Kilometer</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "هر راهرو مخصوص یک صنف است.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "بعدازظهرها بازار خیلی شلوغ است.",
+       "fest": true,
+       "erkl": "Es ist <b>morgens</b> sehr voll."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Wer schiebt Karren durch die Menge?",
+       "optionen": [
+        "Lastenträger",
+        "Touristen",
+        "Polizisten"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Seit wann arbeiten viele Händler dort?",
+       "optionen": [
+        "seit Generationen",
+        "seit einem Jahr",
+        "erst seit kurzem"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wovor warnt der Text?",
+       "optionen": [
+        "sich zu verlaufen",
+        "vor Taschendieben",
+        "vor hohen Preisen"
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "در آن بیش از ده کیلومتر راهرو وجود دارد.",
+       "tr": "dar ān bīsch az dah kīlometr rāhrou wodschūd dārad.",
+       "de": "Er hat über zehn Kilometer Gänge."
+      },
+      {
+       "fa": "هر راهرو مخصوص یک صنف است: فرش‌فروش‌ها، طلافروش‌ها، ادویه‌فروش‌ها و …",
+       "tr": "har rāhrou machsūs-e yek senf ast: farschforūschhā, talāforūschhā, adwiyeforūschhā o …",
+       "de": "Jeder Gang gehört einer Zunft: Teppichhändlern, Goldhändlern, Gewürzhändlern usw."
+      },
+      {
+       "fa": "صبح‌ها بازار خیلی شلوغ است و باربرها با گاری‌های بزرگ از میان جمعیت رد می‌شوند.",
+       "tr": "sobhhā bāzār cheylī schologh ast o bārbarhā bā gārīhā-ye bozorg az miyān-e dschamʿiyat rad mīschawand.",
+       "de": "Morgens ist der Basar sehr voll, und Lastenträger schieben große Karren durch die Menge."
+      },
+      {
+       "fa": "بسیاری از مغازه‌دارها نسل‌هاست که در بازار کار می‌کنند.",
+       "tr": "besyārī az maghāzedārhā naslhāst ke dar bāzār kār mīkonand.",
+       "de": "Viele Ladenbesitzer arbeiten seit Generationen im Basar."
+      },
+      {
+       "fa": "برای گردشگرها، بازار جای خوبی برای خرید سوغاتی و چانه زدن است.",
+       "tr": "barā-ye gardeschgarhā, bāzār dschā-ye chūbī barā-ye charīd-e soughātī o tschāne zadan ast.",
+       "de": "Für Touristen ist der Basar ein guter Ort, um Souvenirs zu kaufen und zu handeln."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

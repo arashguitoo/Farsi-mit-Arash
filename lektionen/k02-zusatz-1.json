@@ -1,0 +1,875 @@
+{
+ "id": "z1",
+ "titel": "Trainingspaket",
+ "beschreibung": "Wort-Marathon, Redemittel, Lückensätze und Satzbau.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "Wort-Marathon",
+   "vorschau": "⏱️",
+   "karten": [
+    {
+     "typ": "tempo",
+     "titel": "Marathon: alle Wörter",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 120,
+     "ziel": 25,
+     "woerter": [
+      {
+       "fa": "منو",
+       "a": "Speisekarte"
+      },
+      {
+       "fa": "گارسون",
+       "a": "Kellner/in"
+      },
+      {
+       "fa": "پیش‌غذا",
+       "a": "Vorspeise"
+      },
+      {
+       "fa": "غذای اصلی",
+       "a": "Hauptgericht"
+      },
+      {
+       "fa": "دسر",
+       "a": "Nachtisch"
+      },
+      {
+       "fa": "نوشیدنی",
+       "a": "Getränk"
+      },
+      {
+       "fa": "صورت‌حساب",
+       "a": "Rechnung"
+      },
+      {
+       "fa": "انعام",
+       "a": "Trinkgeld"
+      },
+      {
+       "fa": "تند",
+       "a": "scharf"
+      },
+      {
+       "fa": "گیاهی",
+       "a": "vegetarisch"
+      },
+      {
+       "fa": "خوشمزه",
+       "a": "lecker"
+      },
+      {
+       "fa": "شور",
+       "a": "salzig"
+      },
+      {
+       "fa": "کباب",
+       "a": "Kebab"
+      },
+      {
+       "fa": "خورش",
+       "a": "Schmorgericht"
+      },
+      {
+       "fa": "دوغ",
+       "a": "Joghurtgetränk"
+      },
+      {
+       "fa": "میز",
+       "a": "Tisch"
+      },
+      {
+       "fa": "چلوکباب",
+       "a": "Reis mit Kebab"
+      },
+      {
+       "fa": "قورمه‌سبزی",
+       "a": "Kräuter-Schmorgericht"
+      },
+      {
+       "fa": "فسنجان",
+       "a": "Walnuss-Granatapfel-Gericht"
+      },
+      {
+       "fa": "ته‌دیگ",
+       "a": "Reiskruste"
+      },
+      {
+       "fa": "آش رشته",
+       "a": "Nudel-Kräutersuppe"
+      },
+      {
+       "fa": "کشک بادمجان",
+       "a": "Auberginen-Dip"
+      },
+      {
+       "fa": "میرزاقاسمی",
+       "a": "Auberginen-Ei-Gericht"
+      },
+      {
+       "fa": "زرشک‌پلو",
+       "a": "Berberitzenreis"
+      },
+      {
+       "fa": "سبزی خوردن",
+       "a": "frische Kräuter"
+      },
+      {
+       "fa": "ماست و خیار",
+       "a": "Joghurt mit Gurke"
+      },
+      {
+       "fa": "نان سنگک",
+       "a": "Steinofenbrot"
+      },
+      {
+       "fa": "شله‌زرد",
+       "a": "Safran-Reispudding"
+      },
+      {
+       "fa": "سرآشپز",
+       "a": "Chefkoch, Chefköchin"
+      },
+      {
+       "fa": "غذای روز",
+       "a": "Tagesgericht"
+      },
+      {
+       "fa": "پرس",
+       "a": "Portion"
+      },
+      {
+       "fa": "نیم‌پرس",
+       "a": "halbe Portion"
+      },
+      {
+       "fa": "بشقاب",
+       "a": "Teller"
+      },
+      {
+       "fa": "قاشق",
+       "a": "Löffel"
+      },
+      {
+       "fa": "چنگال",
+       "a": "Gabel"
+      },
+      {
+       "fa": "چاقو",
+       "a": "Messer"
+      },
+      {
+       "fa": "لیوان",
+       "a": "Glas"
+      },
+      {
+       "fa": "دستمال",
+       "a": "Serviette"
+      },
+      {
+       "fa": "بیرون‌بر",
+       "a": "zum Mitnehmen"
+      },
+      {
+       "fa": "سرویس",
+       "a": "Bedienung, Service"
+      },
+      {
+       "fa": "شیرین",
+       "a": "süß"
+      },
+      {
+       "fa": "ترش",
+       "a": "sauer"
+      },
+      {
+       "fa": "تلخ",
+       "a": "bitter"
+      },
+      {
+       "fa": "بی‌مزه",
+       "a": "fade"
+      },
+      {
+       "fa": "چرب",
+       "a": "fettig"
+      },
+      {
+       "fa": "سوخته",
+       "a": "angebrannt"
+      },
+      {
+       "fa": "کبابی",
+       "a": "gegrillt"
+      },
+      {
+       "fa": "سرخ‌کرده",
+       "a": "frittiert"
+      },
+      {
+       "fa": "آب‌پز",
+       "a": "gekocht"
+      },
+      {
+       "fa": "تازه",
+       "a": "frisch"
+      },
+      {
+       "fa": "گرم",
+       "a": "warm, heiß"
+      },
+      {
+       "fa": "سرد",
+       "a": "kalt"
+      },
+      {
+       "fa": "سفارش دادن",
+       "a": "bestellen"
+      },
+      {
+       "fa": "حساب کردن",
+       "a": "bezahlen"
+      },
+      {
+       "fa": "دعوت کردن",
+       "a": "einladen"
+      },
+      {
+       "fa": "رزرو کردن",
+       "a": "reservieren"
+      },
+      {
+       "fa": "امتحان کردن",
+       "a": "probieren"
+      },
+      {
+       "fa": "پختن",
+       "a": "kochen, backen"
+      },
+      {
+       "fa": "چشیدن",
+       "a": "kosten, schmecken"
+      },
+      {
+       "fa": "انتخاب کردن",
+       "a": "auswählen"
+      },
+      {
+       "fa": "تعارف کردن",
+       "a": "anbieten, Taarof machen"
+      }
+     ]
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "سرخ‌کرده",
+       "tr": "sorchkarde",
+       "de": "frittiert",
+       "emoji": "🍟"
+      },
+      {
+       "fa": "دوغ",
+       "tr": "dūgh",
+       "de": "Joghurtgetränk",
+       "emoji": "🥛"
+      },
+      {
+       "fa": "کشک بادمجان",
+       "tr": "kaschk-e bādemdschān",
+       "de": "Auberginen-Dip",
+       "emoji": "🍆"
+      },
+      {
+       "fa": "بی‌مزه",
+       "tr": "bīmaze",
+       "de": "fade",
+       "emoji": "😐"
+      },
+      {
+       "fa": "چاقو",
+       "tr": "tschāghū",
+       "de": "Messer",
+       "emoji": "🔪"
+      },
+      {
+       "fa": "قاشق",
+       "tr": "ghāschogh",
+       "de": "Löffel",
+       "emoji": "🥄"
+      }
+     ],
+     "titel": "Memory"
+    },
+    {
+     "typ": "memory",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "دوغ",
+       "tr": "dūgh",
+       "de": "Joghurtgetränk",
+       "emoji": "🥛"
+      },
+      {
+       "fa": "سرخ‌کرده",
+       "tr": "sorchkarde",
+       "de": "frittiert",
+       "emoji": "🍟"
+      },
+      {
+       "fa": "میرزاقاسمی",
+       "tr": "mīrzāghāsemī",
+       "de": "Auberginen-Ei-Gericht",
+       "emoji": "🍳"
+      },
+      {
+       "fa": "لیوان",
+       "tr": "līwān",
+       "de": "Glas",
+       "emoji": "🥛"
+      },
+      {
+       "fa": "صورت‌حساب",
+       "tr": "sūrathesāb",
+       "de": "Rechnung",
+       "emoji": "🧾"
+      },
+      {
+       "fa": "بیرون‌بر",
+       "tr": "bīrūnbar",
+       "de": "zum Mitnehmen",
+       "emoji": "🥡"
+      }
+     ],
+     "titel": "Memory: Wort & Bedeutung"
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Redemittel-Training",
+   "vorschau": "💬",
+   "karten": [
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Redemittel",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 80,
+     "ziel": 15,
+     "woerter": [
+      {
+       "fa": "لطفاً منو رو بیارید.",
+       "a": "Bringen Sie bitte die Karte."
+      },
+      {
+       "fa": "چی پیشنهاد می‌کنید؟",
+       "a": "Was empfehlen Sie?"
+      },
+      {
+       "fa": "برای من یه چلوکباب، لطفاً.",
+       "a": "Für mich ein Tschelo-Kebab, bitte."
+      },
+      {
+       "fa": "این غذا تنده؟",
+       "a": "Ist das Essen scharf?"
+      },
+      {
+       "fa": "غذای گیاهی هم دارید؟",
+       "a": "Haben Sie auch vegetarisches Essen?"
+      },
+      {
+       "fa": "خیلی خوشمزه‌ست!",
+       "a": "Sehr lecker!"
+      },
+      {
+       "fa": "ببخشید، غذا سرده.",
+       "a": "Entschuldigung, das Essen ist kalt."
+      },
+      {
+       "fa": "یه کم شوره.",
+       "a": "Es ist ein bisschen salzig."
+      },
+      {
+       "fa": "صورت‌حساب رو بیارید، لطفاً.",
+       "a": "Die Rechnung, bitte."
+      },
+      {
+       "fa": "امروز مهمون منی!",
+       "a": "Heute bist du mein Gast!"
+      },
+      {
+       "fa": "نه، این دفعه نوبت منه!",
+       "a": "Nein, diesmal bin ich dran!"
+      },
+      {
+       "fa": "یه میز برای چهار نفر دارید؟",
+       "a": "Haben Sie einen Tisch für vier?"
+      },
+      {
+       "fa": "می‌شه بدون پیاز باشه؟",
+       "a": "Geht das ohne Zwiebeln?"
+      },
+      {
+       "fa": "نیم‌پرس هم دارید؟",
+       "a": "Gibt es auch halbe Portionen?"
+      },
+      {
+       "fa": "اینو سفارش نداده بودم.",
+       "a": "Das hatte ich nicht bestellt."
+      },
+      {
+       "fa": "غذا خیلی دیر شد.",
+       "a": "Das Essen hat sehr lange gedauert."
+      },
+      {
+       "fa": "بقیه‌شو بذارید بیرون‌بر.",
+       "a": "Packen Sie den Rest bitte ein."
+      },
+      {
+       "fa": "با کارت حساب می‌کنم.",
+       "a": "Ich zahle mit Karte."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welcher Satz ist das?",
+     "fragen": [
+      {
+       "frage": "„Gibt es auch halbe Portionen?“",
+       "optionen": [
+        "نیم‌پرس هم دارید؟",
+        "غذای گیاهی هم دارید؟",
+        "امروز مهمون منی!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Heute bist du mein Gast!“",
+       "optionen": [
+        "امروز مهمون منی!",
+        "یه میز برای چهار نفر دارید؟",
+        "خیلی خوشمزه‌ست!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Was empfehlen Sie?“",
+       "optionen": [
+        "چی پیشنهاد می‌کنید؟",
+        "امروز مهمون منی!",
+        "یه میز برای چهار نفر دارید؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Es ist ein bisschen salzig.“",
+       "optionen": [
+        "یه کم شوره.",
+        "می‌شه بدون پیاز باشه؟",
+        "با کارت حساب می‌کنم."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Das hatte ich nicht bestellt.“",
+       "optionen": [
+        "اینو سفارش نداده بودم.",
+        "بقیه‌شو بذارید بیرون‌بر.",
+        "غذا خیلی دیر شد."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Bringen Sie bitte die Karte.“",
+       "optionen": [
+        "لطفاً منو رو بیارید.",
+        "برای من یه چلوکباب، لطفاً.",
+        "اینو سفارش نداده بودم."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Haben Sie einen Tisch für vier?“",
+       "optionen": [
+        "یه میز برای چهار نفر دارید؟",
+        "غذای گیاهی هم دارید؟",
+        "صورت‌حساب رو بیارید، لطفاً."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Sehr lecker!“",
+       "optionen": [
+        "خیلی خوشمزه‌ست!",
+        "چی پیشنهاد می‌کنید؟",
+        "با کارت حساب می‌کنم."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Wie sagt man das?",
+     "fragen": [
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Das Essen hat sehr lange gedauert.",
+        "Ist das Essen scharf?",
+        "Das hatte ich nicht bestellt."
+       ],
+       "richtig": 0,
+       "fa": "غذا خیلی دیر شد."
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Geht das ohne Zwiebeln?",
+        "Gibt es auch halbe Portionen?",
+        "Das hatte ich nicht bestellt."
+       ],
+       "richtig": 0,
+       "fa": "می‌شه بدون پیاز باشه؟"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Haben Sie auch vegetarisches Essen?",
+        "Bringen Sie bitte die Karte.",
+        "Es ist ein bisschen salzig."
+       ],
+       "richtig": 0,
+       "fa": "غذای گیاهی هم دارید؟"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Bringen Sie bitte die Karte.",
+        "Es ist ein bisschen salzig.",
+        "Das hatte ich nicht bestellt."
+       ],
+       "richtig": 0,
+       "fa": "لطفاً منو رو بیارید."
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Was empfehlen Sie?",
+        "Nein, diesmal bin ich dran!",
+        "Das hatte ich nicht bestellt."
+       ],
+       "richtig": 0,
+       "fa": "چی پیشنهاد می‌کنید؟"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Das hatte ich nicht bestellt.",
+        "Sehr lecker!",
+        "Was empfehlen Sie?"
+       ],
+       "richtig": 0,
+       "fa": "اینو سفارش نداده بودم."
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Ist das Essen scharf?",
+        "Haben Sie einen Tisch für vier?",
+        "Was empfehlen Sie?"
+       ],
+       "richtig": 0,
+       "fa": "این غذا تنده؟"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Nein, diesmal bin ich dran!",
+        "Haben Sie auch vegetarisches Essen?",
+        "Für mich ein Tschelo-Kebab, bitte."
+       ],
+       "richtig": 0,
+       "fa": "نه، این دفعه نوبت منه!"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "titel": "Lückensätze",
+   "vorschau": "___",
+   "karten": [
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>قورمه‌سبزی را با برنج و ___ می‌خورند.</span><br><span class='mini'>Ghormeh Sabzi isst man mit Reis und Reiskruste.</span>",
+       "optionen": [
+        "ته‌دیگ",
+        "زرشک‌پلو",
+        "انعام"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>قورمه‌سبزی را با برنج و ته‌دیگ می‌خورند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>برای من یک ___ چلوکباب بیاورید؛ خیلی گرسنه نیستم.</span><br><span class='mini'>Bringen Sie mir eine halbe Portion Tschelo-Kebab; ich habe nicht so viel Hunger.</span>",
+       "optionen": [
+        "نیم‌پرس",
+        "کباب",
+        "سبزی خوردن"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>برای من یک نیم‌پرس چلوکباب بیاورید؛ خیلی گرسنه نیستم.</span>"
+      },
+      {
+       "frage": "<span class='fa'>لیمو خیلی ___ است.</span><br><span class='mini'>Zitrone ist sehr sauer.</span>",
+       "optionen": [
+        "ترش",
+        "دستمال",
+        "گرم"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>لیمو خیلی ترش است.</span>"
+      },
+      {
+       "frage": "<span class='fa'>قهوه بدون شکر ___ است.</span><br><span class='mini'>Kaffee ohne Zucker ist bitter.</span>",
+       "optionen": [
+        "تلخ",
+        "دوغ",
+        "چلوکباب"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>قهوه بدون شکر تلخ است.</span>"
+      },
+      {
+       "frage": "<span class='fa'>لطفا یک ___ آب برای من بیاورید.</span><br><span class='mini'>Bringen Sie mir bitte ein Glas Wasser.</span>",
+       "optionen": [
+        "لیوان",
+        "انعام",
+        "سوخته"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>لطفا یک لیوان آب برای من بیاورید.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>سوپ را با ___ می‌خوریم.</span><br><span class='mini'>Suppe isst man mit dem Löffel.</span>",
+       "optionen": [
+        "قاشق",
+        "غذای اصلی",
+        "نوشیدنی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>سوپ را با قاشق می‌خوریم.</span>"
+      },
+      {
+       "frage": "<span class='fa'>این غذا نمک ندارد؛ خیلی ___ است.</span><br><span class='mini'>Das Essen hat kein Salz; es ist sehr fade.</span>",
+       "optionen": [
+        "بی‌مزه",
+        "زرشک‌پلو",
+        "چاقو"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>این غذا نمک ندارد؛ خیلی بی‌مزه است.</span>"
+      },
+      {
+       "frage": "<span class='fa'>ته‌دیگ نباید ___ باشد!</span><br><span class='mini'>Tahdig darf nicht angebrannt sein!</span>",
+       "optionen": [
+        "سوخته",
+        "صورت‌حساب",
+        "بشقاب"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>ته‌دیگ نباید سوخته باشد!</span>"
+      },
+      {
+       "frage": "<span class='fa'>در رستوران‌های ایرانی کنار غذا ___ هم سرو می‌کنند.</span><br><span class='mini'>In iranischen Restaurants serviert man zum Essen auch frische Kräuter.</span>",
+       "optionen": [
+        "سبزی خوردن",
+        "نان سنگک",
+        "گرم"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>در رستوران‌های ایرانی کنار غذا سبزی خوردن هم سرو می‌کنند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>لطفا ___ را بیاورید؛ می‌خواهیم حساب کنیم.</span><br><span class='mini'>Bitte bringen Sie die Rechnung; wir möchten zahlen.</span>",
+       "optionen": [
+        "صورت‌حساب",
+        "سرد",
+        "ماست و خیار"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>لطفا صورت‌حساب را بیاورید؛ می‌خواهیم حساب کنیم.</span>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "e",
+   "titel": "Satzbau-Profi",
+   "vorschau": "🧱",
+   "karten": [
+    {
+     "typ": "bauen",
+     "titel": "Baue den Satz",
+     "trenner": " ",
+     "woerter": [
+      {
+       "fa": "برای من قورمه‌سبزی. … وای، چقدر خوشمزه‌ست!",
+       "tr": "barā-ye man ghormesabzī. … wāy, tscheghadr choschmazast!",
+       "de": "Für mich Ghormeh Sabzi. … Oh, wie lecker!",
+       "teile": [
+        "برای",
+        "من",
+        "قورمه‌سبزی",
+        "…",
+        "وای",
+        "چقدر",
+        "خوشمزه‌ست"
+       ],
+       "extra": [
+        "خوشمزه"
+       ]
+      },
+      {
+       "fa": "من گوشت نمی‌خورم. غذای گیاهی چی دارید؟",
+       "tr": "man gūscht nemīchoram. ghazā-ye giyāhī tschī dārīd?",
+       "de": "Ich esse kein Fleisch. Was haben Sie Vegetarisches?",
+       "teile": [
+        "من",
+        "گوشت",
+        "نمی‌خورم",
+        "غذای",
+        "گیاهی",
+        "چی",
+        "دارید"
+       ],
+       "extra": [
+        "اینجا"
+       ]
+      },
+      {
+       "fa": "بفرمایید، خوش اومدید! بفرمایید سر سفره.",
+       "tr": "befarmāyīd, chosch ūmadīd! befarmāyīd sar-e sofre.",
+       "de": "Bitte, willkommen! Setzen Sie sich bitte an den Tisch.",
+       "teile": [
+        "بفرمایید",
+        "خوش",
+        "اومدید",
+        "بفرمایید",
+        "سر",
+        "سفره"
+       ],
+       "extra": [
+        "بکشید،"
+       ]
+      },
+      {
+       "fa": "مرسی. امروز غذای مخصوص چی دارید؟",
+       "tr": "mersī. emrūz ghazā-ye machsūs tschī dārīd?",
+       "de": "Danke. Was ist heute das Tagesgericht?",
+       "teile": [
+        "مرسی",
+        "امروز",
+        "غذای",
+        "مخصوص",
+        "چی",
+        "دارید"
+       ],
+       "extra": [
+        "خیلی"
+       ]
+      },
+      {
+       "fa": "خیلی ممنون. وای، چه سفره‌ای! زحمت کشیدید.",
+       "tr": "cheylī mamnūn. wāy, tsche sofreī! zahmat keschīdīd.",
+       "de": "Vielen Dank. Oh, was für ein Essen! Das wäre nicht nötig gewesen.",
+       "teile": [
+        "خیلی",
+        "ممنون",
+        "وای",
+        "چه",
+        "سفره‌ای",
+        "زحمت",
+        "کشیدید"
+       ],
+       "extra": [
+        "چقدر"
+       ]
+      },
+      {
+       "fa": "باشه، ولی دفعه‌ی بعد نوبت منه!",
+       "tr": "bāsche, walī dafʿe-ye baʿd nobat-e mane!",
+       "de": "Okay, aber nächstes Mal bin ich dran!",
+       "teile": [
+        "باشه",
+        "ولی",
+        "دفعه‌ی",
+        "بعد",
+        "نوبت",
+        "منه"
+       ],
+       "extra": [
+        "کشیدید."
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

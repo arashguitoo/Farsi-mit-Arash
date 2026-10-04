@@ -17,19 +17,19 @@
     {
      "typ": "info",
      "titel": "So läuft die Sitzung",
-     "text": "<p>Diese Lektion ist deine <b>Hausaufgabe</b>: Hier lernst du Wörter und Redemittel und liest einen Modelldialog. Im Unterricht wird dann <b>nur gesprochen</b>.</p><p><b>Im Unterricht:</b></p><ul><li>Speed-Dating: In drei Minuten so viel wie möglich über dein Gegenüber herausfinden</li><li>Rollenspiel: neu auf einer Party</li><li>„Zwei Wahrheiten, eine Lüge“ – auf Persisch</li></ul>",
+     "text": "<p>Diese Lektion ist deine <b>Hausaufgabe</b>: Wortschatz, Redemittel, Dialoge und Texte. Im Unterricht wird dann <b>nur gesprochen</b>.</p><p><b>Im Unterricht:</b></p><ul><li>Speed-Dating: In drei Minuten so viel wie möglich über dein Gegenüber herausfinden</li><li>Rollenspiel: neu auf einer Party</li><li>„Zwei Wahrheiten, eine Lüge“ – auf Persisch</li></ul><p class='klein muted'>Wortschatz dieser Lektion: 60 Wörter · 18 Redemittel</p>",
      "stil": "merke"
     }
    ]
   },
   {
-   "id": "s1",
-   "titel": "Wörter",
+   "id": "w0",
+   "titel": "Rund ums Thema",
    "vorschau": "رشته · ترم · همکلاسی",
    "karten": [
     {
      "typ": "info",
-     "titel": "Wörter zum Thema – Teil 1",
+     "titel": "🧩 Rund ums Thema (1)",
      "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
      "beispiele": [
       {
@@ -84,7 +84,7 @@
     },
     {
      "typ": "info",
-     "titel": "Wörter zum Thema – Teil 2",
+     "titel": "🧩 Rund ums Thema (2)",
      "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
      "beispiele": [
       {
@@ -138,43 +138,6 @@
      ]
     },
     {
-     "typ": "info",
-     "titel": "Verben",
-     "text": "<p>Infinitiv – im Gespräch brauchst du sie gleich in allen Zeiten.</p>",
-     "beispiele": [
-      {
-       "fa": "آشنا شدن",
-       "tr": "āschnā schodan",
-       "de": "kennenlernen",
-       "emoji": "🤝"
-      },
-      {
-       "fa": "علاقه داشتن",
-       "tr": "ʿalāghe dāschtan",
-       "de": "sich interessieren",
-       "emoji": "❤️"
-      },
-      {
-       "fa": "درس خواندن",
-       "tr": "dars chāndan",
-       "de": "studieren, lernen",
-       "emoji": "📖"
-      },
-      {
-       "fa": "معرفی کردن",
-       "tr": "moʿarrefī kardan",
-       "de": "vorstellen",
-       "emoji": "🙋"
-      },
-      {
-       "fa": "بلد بودن",
-       "tr": "balad būdan",
-       "de": "können, kennen",
-       "emoji": "💡"
-      }
-     ]
-    },
-    {
      "typ": "paare",
      "links": "de",
      "paare": [
@@ -222,10 +185,16 @@
      "links": "de",
      "paare": [
       {
-       "fa": "ترم",
-       "tr": "term",
-       "de": "Semester",
-       "emoji": "🗓️"
+       "fa": "زبان مادری",
+       "tr": "zabān-e mādarī",
+       "de": "Muttersprache",
+       "emoji": "🗣️"
+      },
+      {
+       "fa": "رشته",
+       "tr": "reschte",
+       "de": "Studienfach",
+       "emoji": "📚"
       },
       {
        "fa": "زادگاه",
@@ -234,17 +203,30 @@
        "emoji": "🏡"
       },
       {
-       "fa": "بلد بودن",
-       "tr": "balad būdan",
-       "de": "können, kennen",
-       "emoji": "💡"
+       "fa": "لهجه",
+       "tr": "lahdsche",
+       "de": "Akzent, Dialekt",
+       "emoji": "🎙️"
       },
       {
-       "fa": "علاقه داشتن",
-       "tr": "ʿalāghe dāschtan",
-       "de": "sich interessieren",
-       "emoji": "❤️"
+       "fa": "خوابگاه",
+       "tr": "chābgāh",
+       "de": "Studentenwohnheim",
+       "emoji": "🏢"
       },
+      {
+       "fa": "هم‌زبان",
+       "tr": "hamzabān",
+       "de": "Tandempartner/in",
+       "emoji": "👯"
+      }
+     ],
+     "titel": "Noch einmal: Was bedeutet das?"
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
       {
        "fa": "وقت آزاد",
        "tr": "waght-e āzād",
@@ -256,31 +238,6 @@
        "tr": "hamzabān",
        "de": "Tandempartner/in",
        "emoji": "👯"
-      }
-     ],
-     "titel": "Was bedeutet das?"
-    },
-    {
-     "typ": "memory",
-     "links": "emoji",
-     "paare": [
-      {
-       "fa": "همکلاسی",
-       "tr": "hamkelāsī",
-       "de": "Kommiliton/in, Mitschüler/in",
-       "emoji": "🧑‍🎓"
-      },
-      {
-       "fa": "خوابگاه",
-       "tr": "chābgāh",
-       "de": "Studentenwohnheim",
-       "emoji": "🏢"
-      },
-      {
-       "fa": "آشنایی",
-       "tr": "āschnāyī",
-       "de": "Bekanntschaft",
-       "emoji": "🤝"
       },
       {
        "fa": "رشته",
@@ -295,21 +252,1275 @@
        "emoji": "🌍"
       },
       {
-       "fa": "علاقه",
-       "tr": "ʿalāghe",
-       "de": "Interesse",
-       "emoji": "❤️"
+       "fa": "لهجه",
+       "tr": "lahdsche",
+       "de": "Akzent, Dialekt",
+       "emoji": "🎙️"
+      },
+      {
+       "fa": "جالب",
+       "tr": "dschāleb",
+       "de": "interessant",
+       "emoji": "✨"
       }
      ],
      "titel": "Memory: Bild & Wort"
     },
     {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>رشته‌ی من ادبیات است و ___ آخر هستم.</span><br><span class='mini'>Mein Fach ist Literatur, ich bin im letzten Semester.</span>",
+       "optionen": [
+        "ترم",
+        "پرحرف",
+        "دانشگاه"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>رشته‌ی من ادبیات است و ترم آخر هستم.</span>"
+      }
+     ]
+    },
+    {
      "typ": "tempo",
-     "titel": "Blitz: Wörter",
+     "titel": "Blitz: Rund ums Thema",
      "aufgabe": "Was bedeutet das?",
      "modus": "de",
-     "sekunden": 60,
-     "ziel": 12,
+     "sekunden": 50,
+     "ziel": 10,
+     "woerter": [
+      {
+       "fa": "رشته",
+       "a": "Studienfach"
+      },
+      {
+       "fa": "ترم",
+       "a": "Semester"
+      },
+      {
+       "fa": "همکلاسی",
+       "a": "Kommiliton/in, Mitschüler/in"
+      },
+      {
+       "fa": "سرگرمی",
+       "a": "Hobby"
+      },
+      {
+       "fa": "زادگاه",
+       "a": "Geburtsort"
+      },
+      {
+       "fa": "علاقه",
+       "a": "Interesse"
+      },
+      {
+       "fa": "تجربه",
+       "a": "Erfahrung"
+      },
+      {
+       "fa": "آشنایی",
+       "a": "Bekanntschaft"
+      },
+      {
+       "fa": "خارجی",
+       "a": "ausländisch, Ausländer/in"
+      },
+      {
+       "fa": "زبان مادری",
+       "a": "Muttersprache"
+      },
+      {
+       "fa": "لهجه",
+       "a": "Akzent, Dialekt"
+      },
+      {
+       "fa": "شماره",
+       "a": "(Telefon-)Nummer"
+      },
+      {
+       "fa": "خوابگاه",
+       "a": "Studentenwohnheim"
+      },
+      {
+       "fa": "هم‌زبان",
+       "a": "Tandempartner/in"
+      },
+      {
+       "fa": "جالب",
+       "a": "interessant"
+      },
+      {
+       "fa": "وقت آزاد",
+       "a": "Freizeit"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "w1",
+   "titel": "Studium & Uni",
+   "vorschau": "دانشگاه · دانشکده · استاد",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "🎓 Studium & Uni (1)",
+     "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
+     "beispiele": [
+      {
+       "fa": "دانشگاه",
+       "tr": "dāneschgāh",
+       "de": "Universität",
+       "emoji": "🏛️"
+      },
+      {
+       "fa": "دانشکده",
+       "tr": "dāneschkade",
+       "de": "Fakultät",
+       "emoji": "🏫"
+      },
+      {
+       "fa": "استاد",
+       "tr": "ostād",
+       "de": "Professor/in",
+       "emoji": "🧑‍🏫"
+      },
+      {
+       "fa": "کلاس",
+       "tr": "kelās",
+       "de": "Kurs, Seminar",
+       "emoji": "📚"
+      },
+      {
+       "fa": "امتحان",
+       "tr": "emtehān",
+       "de": "Prüfung",
+       "emoji": "📝"
+      },
+      {
+       "fa": "کارشناسی",
+       "tr": "kārschenāsī",
+       "de": "Bachelor",
+       "emoji": "🎓"
+      }
+     ]
+    },
+    {
+     "typ": "info",
+     "titel": "🎓 Studium & Uni (2)",
+     "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
+     "beispiele": [
+      {
+       "fa": "کارشناسی ارشد",
+       "tr": "kārschenāsī-ye arschad",
+       "de": "Master",
+       "emoji": "🎓"
+      },
+      {
+       "fa": "دکترا",
+       "tr": "doktorā",
+       "de": "Promotion",
+       "emoji": "📜"
+      },
+      {
+       "fa": "بورسیه",
+       "tr": "būrsiye",
+       "de": "Stipendium",
+       "emoji": "💶"
+      },
+      {
+       "fa": "تبادل دانشجو",
+       "tr": "tabādol-e dāneschdschū",
+       "de": "Studierendenaustausch",
+       "emoji": "🔁"
+      },
+      {
+       "fa": "سلف",
+       "tr": "self",
+       "de": "Mensa",
+       "emoji": "🍽️"
+      },
+      {
+       "fa": "خوابگاه دانشجویی",
+       "tr": "chābgāh-e dāneschdschūyī",
+       "de": "Studentenwohnheim",
+       "emoji": "🛏️"
+      }
+     ]
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "سلف",
+       "tr": "self",
+       "de": "Mensa",
+       "emoji": "🍽️"
+      },
+      {
+       "fa": "تبادل دانشجو",
+       "tr": "tabādol-e dāneschdschū",
+       "de": "Studierendenaustausch",
+       "emoji": "🔁"
+      },
+      {
+       "fa": "خوابگاه دانشجویی",
+       "tr": "chābgāh-e dāneschdschūyī",
+       "de": "Studentenwohnheim",
+       "emoji": "🛏️"
+      },
+      {
+       "fa": "امتحان",
+       "tr": "emtehān",
+       "de": "Prüfung",
+       "emoji": "📝"
+      },
+      {
+       "fa": "استاد",
+       "tr": "ostād",
+       "de": "Professor/in",
+       "emoji": "🧑‍🏫"
+      },
+      {
+       "fa": "دانشگاه",
+       "tr": "dāneschgāh",
+       "de": "Universität",
+       "emoji": "🏛️"
+      }
+     ],
+     "titel": "Was bedeutet das?"
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "کارشناسی",
+       "tr": "kārschenāsī",
+       "de": "Bachelor",
+       "emoji": "🎓"
+      },
+      {
+       "fa": "امتحان",
+       "tr": "emtehān",
+       "de": "Prüfung",
+       "emoji": "📝"
+      },
+      {
+       "fa": "بورسیه",
+       "tr": "būrsiye",
+       "de": "Stipendium",
+       "emoji": "💶"
+      },
+      {
+       "fa": "کلاس",
+       "tr": "kelās",
+       "de": "Kurs, Seminar",
+       "emoji": "📚"
+      },
+      {
+       "fa": "دانشکده",
+       "tr": "dāneschkade",
+       "de": "Fakultät",
+       "emoji": "🏫"
+      },
+      {
+       "fa": "خوابگاه دانشجویی",
+       "tr": "chābgāh-e dāneschdschūyī",
+       "de": "Studentenwohnheim",
+       "emoji": "🛏️"
+      }
+     ],
+     "titel": "Noch einmal: Was bedeutet das?"
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "دکترا",
+       "tr": "doktorā",
+       "de": "Promotion",
+       "emoji": "📜"
+      },
+      {
+       "fa": "دانشگاه",
+       "tr": "dāneschgāh",
+       "de": "Universität",
+       "emoji": "🏛️"
+      },
+      {
+       "fa": "کارشناسی",
+       "tr": "kārschenāsī",
+       "de": "Bachelor",
+       "emoji": "🎓"
+      },
+      {
+       "fa": "دانشکده",
+       "tr": "dāneschkade",
+       "de": "Fakultät",
+       "emoji": "🏫"
+      },
+      {
+       "fa": "تبادل دانشجو",
+       "tr": "tabādol-e dāneschdschū",
+       "de": "Studierendenaustausch",
+       "emoji": "🔁"
+      },
+      {
+       "fa": "امتحان",
+       "tr": "emtehān",
+       "de": "Prüfung",
+       "emoji": "📝"
+      }
+     ],
+     "titel": "Memory: Bild & Wort"
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>من یک ___ گرفتم و یک سال در تهران درس می‌خوانم.</span><br><span class='mini'>Ich habe ein Stipendium bekommen und studiere ein Jahr in Teheran.</span>",
+       "optionen": [
+        "بورسیه",
+        "علاقه",
+        "زادگاه"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>من یک بورسیه گرفتم و یک سال در تهران درس می‌خوانم.</span>"
+      },
+      {
+       "frage": "<span class='fa'>ظهرها در ___ دانشگاه غذا می‌خوریم.</span><br><span class='mini'>Mittags essen wir in der Uni-Mensa.</span>",
+       "optionen": [
+        "سلف",
+        "همکلاسی",
+        "آشپزی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>ظهرها در سلف دانشگاه غذا می‌خوریم.</span>"
+      },
+      {
+       "frage": "<span class='fa'>فردا ___ سختی دارم.</span><br><span class='mini'>Morgen habe ich eine schwere Prüfung.</span>",
+       "optionen": [
+        "امتحان",
+        "ترکی",
+        "عکاسی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>فردا امتحان سختی دارم.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Studium & Uni",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 50,
+     "ziel": 10,
+     "woerter": [
+      {
+       "fa": "دانشگاه",
+       "a": "Universität"
+      },
+      {
+       "fa": "دانشکده",
+       "a": "Fakultät"
+      },
+      {
+       "fa": "استاد",
+       "a": "Professor/in"
+      },
+      {
+       "fa": "کلاس",
+       "a": "Kurs, Seminar"
+      },
+      {
+       "fa": "امتحان",
+       "a": "Prüfung"
+      },
+      {
+       "fa": "کارشناسی",
+       "a": "Bachelor"
+      },
+      {
+       "fa": "کارشناسی ارشد",
+       "a": "Master"
+      },
+      {
+       "fa": "دکترا",
+       "a": "Promotion"
+      },
+      {
+       "fa": "بورسیه",
+       "a": "Stipendium"
+      },
+      {
+       "fa": "تبادل دانشجو",
+       "a": "Studierendenaustausch"
+      },
+      {
+       "fa": "سلف",
+       "a": "Mensa"
+      },
+      {
+       "fa": "خوابگاه دانشجویی",
+       "a": "Studentenwohnheim"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "w2",
+   "titel": "Herkunft & Sprachen",
+   "vorschau": "کشور · پایتخت · روستا",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "🌍 Herkunft & Sprachen (1)",
+     "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
+     "beispiele": [
+      {
+       "fa": "کشور",
+       "tr": "keschwar",
+       "de": "Land",
+       "emoji": "🗺️"
+      },
+      {
+       "fa": "پایتخت",
+       "tr": "pāytacht",
+       "de": "Hauptstadt",
+       "emoji": "🏙️"
+      },
+      {
+       "fa": "روستا",
+       "tr": "rūstā",
+       "de": "Dorf",
+       "emoji": "🏡"
+      },
+      {
+       "fa": "آلمانی",
+       "tr": "ālmānī",
+       "de": "Deutsch, deutsch",
+       "emoji": "🇩🇪"
+      },
+      {
+       "fa": "انگلیسی",
+       "tr": "engelīsī",
+       "de": "Englisch",
+       "emoji": "🇬🇧"
+      },
+      {
+       "fa": "فرانسوی",
+       "tr": "farānsawī",
+       "de": "Französisch",
+       "emoji": "🇫🇷"
+      }
+     ]
+    },
+    {
+     "typ": "info",
+     "titel": "🌍 Herkunft & Sprachen (2)",
+     "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
+     "beispiele": [
+      {
+       "fa": "ترکی",
+       "tr": "torkī",
+       "de": "Türkisch",
+       "emoji": "🗣️"
+      },
+      {
+       "fa": "عربی",
+       "tr": "ʿarabī",
+       "de": "Arabisch",
+       "emoji": "🗣️"
+      },
+      {
+       "fa": "دوزبانه",
+       "tr": "dozabāne",
+       "de": "zweisprachig",
+       "emoji": "🗨️"
+      },
+      {
+       "fa": "مهاجر",
+       "tr": "mohādscher",
+       "de": "Migrant/in",
+       "emoji": "🧳"
+      },
+      {
+       "fa": "بزرگ شدن",
+       "tr": "bozorg schodan",
+       "de": "aufwachsen",
+       "emoji": "🌱"
+      },
+      {
+       "fa": "شمال",
+       "tr": "schomāl",
+       "de": "Norden",
+       "emoji": "🧭"
+      }
+     ]
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "انگلیسی",
+       "tr": "engelīsī",
+       "de": "Englisch",
+       "emoji": "🇬🇧"
+      },
+      {
+       "fa": "دوزبانه",
+       "tr": "dozabāne",
+       "de": "zweisprachig",
+       "emoji": "🗨️"
+      },
+      {
+       "fa": "کشور",
+       "tr": "keschwar",
+       "de": "Land",
+       "emoji": "🗺️"
+      },
+      {
+       "fa": "آلمانی",
+       "tr": "ālmānī",
+       "de": "Deutsch, deutsch",
+       "emoji": "🇩🇪"
+      },
+      {
+       "fa": "ترکی",
+       "tr": "torkī",
+       "de": "Türkisch",
+       "emoji": "🗣️"
+      },
+      {
+       "fa": "مهاجر",
+       "tr": "mohādscher",
+       "de": "Migrant/in",
+       "emoji": "🧳"
+      }
+     ],
+     "titel": "Was bedeutet das?"
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "آلمانی",
+       "tr": "ālmānī",
+       "de": "Deutsch, deutsch",
+       "emoji": "🇩🇪"
+      },
+      {
+       "fa": "دوزبانه",
+       "tr": "dozabāne",
+       "de": "zweisprachig",
+       "emoji": "🗨️"
+      },
+      {
+       "fa": "عربی",
+       "tr": "ʿarabī",
+       "de": "Arabisch",
+       "emoji": "🗣️"
+      },
+      {
+       "fa": "شمال",
+       "tr": "schomāl",
+       "de": "Norden",
+       "emoji": "🧭"
+      },
+      {
+       "fa": "مهاجر",
+       "tr": "mohādscher",
+       "de": "Migrant/in",
+       "emoji": "🧳"
+      },
+      {
+       "fa": "بزرگ شدن",
+       "tr": "bozorg schodan",
+       "de": "aufwachsen",
+       "emoji": "🌱"
+      }
+     ],
+     "titel": "Noch einmal: Was bedeutet das?"
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "بزرگ شدن",
+       "tr": "bozorg schodan",
+       "de": "aufwachsen",
+       "emoji": "🌱"
+      },
+      {
+       "fa": "مهاجر",
+       "tr": "mohādscher",
+       "de": "Migrant/in",
+       "emoji": "🧳"
+      },
+      {
+       "fa": "کشور",
+       "tr": "keschwar",
+       "de": "Land",
+       "emoji": "🗺️"
+      },
+      {
+       "fa": "شمال",
+       "tr": "schomāl",
+       "de": "Norden",
+       "emoji": "🧭"
+      },
+      {
+       "fa": "ترکی",
+       "tr": "torkī",
+       "de": "Türkisch",
+       "emoji": "🗣️"
+      },
+      {
+       "fa": "دوزبانه",
+       "tr": "dozabāne",
+       "de": "zweisprachig",
+       "emoji": "🗨️"
+      }
+     ],
+     "titel": "Memory: Bild & Wort"
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>او در یک ___ کوچک نزدیک شیراز بزرگ شد.</span><br><span class='mini'>Er/Sie ist in einem kleinen Dorf bei Schiras aufgewachsen.</span>",
+       "optionen": [
+        "روستا",
+        "آشنایی",
+        "شوخ"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>او در یک روستا کوچک نزدیک شیراز بزرگ شد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>برلین ___ آلمان است.</span><br><span class='mini'>Berlin ist die Hauptstadt Deutschlands.</span>",
+       "optionen": [
+        "پایتخت",
+        "امتحان",
+        "وقت آزاد"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>برلین پایتخت آلمان است.</span>"
+      },
+      {
+       "frage": "<span class='fa'>بچه‌های او ___ هستند؛ فارسی و آلمانی حرف می‌زنند.</span><br><span class='mini'>Seine Kinder sind zweisprachig; sie sprechen Persisch und Deutsch.</span>",
+       "optionen": [
+        "دوزبانه",
+        "تجربه",
+        "دانشکده"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>بچه‌های او دوزبانه هستند؛ فارسی و آلمانی حرف می‌زنند.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Herkunft & Sprachen",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 50,
+     "ziel": 10,
+     "woerter": [
+      {
+       "fa": "کشور",
+       "a": "Land"
+      },
+      {
+       "fa": "پایتخت",
+       "a": "Hauptstadt"
+      },
+      {
+       "fa": "روستا",
+       "a": "Dorf"
+      },
+      {
+       "fa": "آلمانی",
+       "a": "Deutsch, deutsch"
+      },
+      {
+       "fa": "انگلیسی",
+       "a": "Englisch"
+      },
+      {
+       "fa": "فرانسوی",
+       "a": "Französisch"
+      },
+      {
+       "fa": "ترکی",
+       "a": "Türkisch"
+      },
+      {
+       "fa": "عربی",
+       "a": "Arabisch"
+      },
+      {
+       "fa": "دوزبانه",
+       "a": "zweisprachig"
+      },
+      {
+       "fa": "مهاجر",
+       "a": "Migrant/in"
+      },
+      {
+       "fa": "بزرگ شدن",
+       "a": "aufwachsen"
+      },
+      {
+       "fa": "شمال",
+       "a": "Norden"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "w3",
+   "titel": "Charakter & Interessen",
+   "vorschau": "اجتماعی · آرام · پرحرف",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "✨ Charakter & Interessen (1)",
+     "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
+     "beispiele": [
+      {
+       "fa": "اجتماعی",
+       "tr": "edschtemāʿī",
+       "de": "gesellig",
+       "emoji": "🎉"
+      },
+      {
+       "fa": "آرام",
+       "tr": "ārām",
+       "de": "ruhig",
+       "emoji": "😌"
+      },
+      {
+       "fa": "پرحرف",
+       "tr": "porharf",
+       "de": "gesprächig",
+       "emoji": "🗯️"
+      },
+      {
+       "fa": "کنجکاو",
+       "tr": "kondschkāw",
+       "de": "neugierig",
+       "emoji": "🔍"
+      },
+      {
+       "fa": "خوش‌اخلاق",
+       "tr": "choschachlāgh",
+       "de": "umgänglich, nett",
+       "emoji": "😊"
+      },
+      {
+       "fa": "شوخ",
+       "tr": "schūch",
+       "de": "witzig",
+       "emoji": "😄"
+      }
+     ]
+    },
+    {
+     "typ": "info",
+     "titel": "✨ Charakter & Interessen (2)",
+     "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
+     "beispiele": [
+      {
+       "fa": "عکاسی",
+       "tr": "ʿakkāsī",
+       "de": "Fotografie",
+       "emoji": "📷"
+      },
+      {
+       "fa": "کتاب‌خوانی",
+       "tr": "ketābchānī",
+       "de": "Lesen",
+       "emoji": "📖"
+      },
+      {
+       "fa": "آشپزی",
+       "tr": "āschpazī",
+       "de": "Kochen",
+       "emoji": "🍳"
+      },
+      {
+       "fa": "موسیقی",
+       "tr": "mūsīghī",
+       "de": "Musik",
+       "emoji": "🎶"
+      },
+      {
+       "fa": "نقاشی",
+       "tr": "naghghāschī",
+       "de": "Malen",
+       "emoji": "🎨"
+      },
+      {
+       "fa": "سفر",
+       "tr": "safar",
+       "de": "Reisen",
+       "emoji": "✈️"
+      }
+     ]
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "سفر",
+       "tr": "safar",
+       "de": "Reisen",
+       "emoji": "✈️"
+      },
+      {
+       "fa": "شوخ",
+       "tr": "schūch",
+       "de": "witzig",
+       "emoji": "😄"
+      },
+      {
+       "fa": "آرام",
+       "tr": "ārām",
+       "de": "ruhig",
+       "emoji": "😌"
+      },
+      {
+       "fa": "آشپزی",
+       "tr": "āschpazī",
+       "de": "Kochen",
+       "emoji": "🍳"
+      },
+      {
+       "fa": "کنجکاو",
+       "tr": "kondschkāw",
+       "de": "neugierig",
+       "emoji": "🔍"
+      },
+      {
+       "fa": "خوش‌اخلاق",
+       "tr": "choschachlāgh",
+       "de": "umgänglich, nett",
+       "emoji": "😊"
+      }
+     ],
+     "titel": "Was bedeutet das?"
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "نقاشی",
+       "tr": "naghghāschī",
+       "de": "Malen",
+       "emoji": "🎨"
+      },
+      {
+       "fa": "موسیقی",
+       "tr": "mūsīghī",
+       "de": "Musik",
+       "emoji": "🎶"
+      },
+      {
+       "fa": "سفر",
+       "tr": "safar",
+       "de": "Reisen",
+       "emoji": "✈️"
+      },
+      {
+       "fa": "عکاسی",
+       "tr": "ʿakkāsī",
+       "de": "Fotografie",
+       "emoji": "📷"
+      },
+      {
+       "fa": "آرام",
+       "tr": "ārām",
+       "de": "ruhig",
+       "emoji": "😌"
+      },
+      {
+       "fa": "اجتماعی",
+       "tr": "edschtemāʿī",
+       "de": "gesellig",
+       "emoji": "🎉"
+      }
+     ],
+     "titel": "Noch einmal: Was bedeutet das?"
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "پرحرف",
+       "tr": "porharf",
+       "de": "gesprächig",
+       "emoji": "🗯️"
+      },
+      {
+       "fa": "خوش‌اخلاق",
+       "tr": "choschachlāgh",
+       "de": "umgänglich, nett",
+       "emoji": "😊"
+      },
+      {
+       "fa": "آشپزی",
+       "tr": "āschpazī",
+       "de": "Kochen",
+       "emoji": "🍳"
+      },
+      {
+       "fa": "شوخ",
+       "tr": "schūch",
+       "de": "witzig",
+       "emoji": "😄"
+      },
+      {
+       "fa": "موسیقی",
+       "tr": "mūsīghī",
+       "de": "Musik",
+       "emoji": "🎶"
+      },
+      {
+       "fa": "نقاشی",
+       "tr": "naghghāschī",
+       "de": "Malen",
+       "emoji": "🎨"
+      }
+     ],
+     "titel": "Memory: Bild & Wort"
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>سارا خیلی ___ است و همیشه سؤال می‌پرسد.</span><br><span class='mini'>Sara ist sehr neugierig und fragt immer.</span>",
+       "optionen": [
+        "کنجکاو",
+        "دکترا",
+        "ترم"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>سارا خیلی کنجکاو است و همیشه سؤال می‌پرسد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>در وقت آزادم ___ می‌کنم و عکس‌هایم را در اینستاگرام می‌گذارم.</span><br><span class='mini'>In meiner Freizeit fotografiere ich und poste die Bilder auf Instagram.</span>",
+       "optionen": [
+        "عکاسی",
+        "کشور",
+        "خوابگاه"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>در وقت آزادم عکاسی می‌کنم و عکس‌هایم را در اینستاگرام می‌گذارم.</span>"
+      },
+      {
+       "frage": "<span class='fa'>او خیلی ___ است؛ همه از او خوششان می‌آید.</span><br><span class='mini'>Er/Sie ist sehr nett; alle mögen ihn/sie.</span>",
+       "optionen": [
+        "خوش‌اخلاق",
+        "دکترا",
+        "انگلیسی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>او خیلی خوش‌اخلاق است؛ همه از او خوششان می‌آید.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Charakter & Interessen",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 50,
+     "ziel": 10,
+     "woerter": [
+      {
+       "fa": "اجتماعی",
+       "a": "gesellig"
+      },
+      {
+       "fa": "آرام",
+       "a": "ruhig"
+      },
+      {
+       "fa": "پرحرف",
+       "a": "gesprächig"
+      },
+      {
+       "fa": "کنجکاو",
+       "a": "neugierig"
+      },
+      {
+       "fa": "خوش‌اخلاق",
+       "a": "umgänglich, nett"
+      },
+      {
+       "fa": "شوخ",
+       "a": "witzig"
+      },
+      {
+       "fa": "عکاسی",
+       "a": "Fotografie"
+      },
+      {
+       "fa": "کتاب‌خوانی",
+       "a": "Lesen"
+      },
+      {
+       "fa": "آشپزی",
+       "a": "Kochen"
+      },
+      {
+       "fa": "موسیقی",
+       "a": "Musik"
+      },
+      {
+       "fa": "نقاشی",
+       "a": "Malen"
+      },
+      {
+       "fa": "سفر",
+       "a": "Reisen"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "v",
+   "titel": "Verben & Wiederholung",
+   "vorschau": "آشنا شدن · علاقه داشتن · درس خواندن",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Verben",
+     "text": "<p>Infinitiv – im Gespräch brauchst du sie in allen Zeiten.</p>",
+     "beispiele": [
+      {
+       "fa": "آشنا شدن",
+       "tr": "āschnā schodan",
+       "de": "kennenlernen",
+       "emoji": "🤝"
+      },
+      {
+       "fa": "علاقه داشتن",
+       "tr": "ʿalāghe dāschtan",
+       "de": "sich interessieren",
+       "emoji": "❤️"
+      },
+      {
+       "fa": "درس خواندن",
+       "tr": "dars chāndan",
+       "de": "studieren, lernen",
+       "emoji": "📖"
+      },
+      {
+       "fa": "معرفی کردن",
+       "tr": "moʿarrefī kardan",
+       "de": "vorstellen",
+       "emoji": "🙋"
+      },
+      {
+       "fa": "بلد بودن",
+       "tr": "balad būdan",
+       "de": "können, kennen",
+       "emoji": "💡"
+      },
+      {
+       "fa": "به دنیا آمدن",
+       "tr": "be donyā āmadan",
+       "de": "geboren werden",
+       "emoji": "👶"
+      },
+      {
+       "fa": "زندگی کردن",
+       "tr": "zendegī kardan",
+       "de": "leben, wohnen",
+       "emoji": "🏠"
+      },
+      {
+       "fa": "تماس گرفتن",
+       "tr": "tamās gereftan",
+       "de": "sich melden, anrufen",
+       "emoji": "📞"
+      }
+     ]
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "آشنا شدن",
+       "tr": "āschnā schodan",
+       "de": "kennenlernen",
+       "emoji": "🤝"
+      },
+      {
+       "fa": "به دنیا آمدن",
+       "tr": "be donyā āmadan",
+       "de": "geboren werden",
+       "emoji": "👶"
+      },
+      {
+       "fa": "زندگی کردن",
+       "tr": "zendegī kardan",
+       "de": "leben, wohnen",
+       "emoji": "🏠"
+      },
+      {
+       "fa": "درس خواندن",
+       "tr": "dars chāndan",
+       "de": "studieren, lernen",
+       "emoji": "📖"
+      },
+      {
+       "fa": "بلد بودن",
+       "tr": "balad būdan",
+       "de": "können, kennen",
+       "emoji": "💡"
+      },
+      {
+       "fa": "تماس گرفتن",
+       "tr": "tamās gereftan",
+       "de": "sich melden, anrufen",
+       "emoji": "📞"
+      }
+     ],
+     "titel": "Was bedeutet das?"
+    },
+    {
+     "typ": "sortieren",
+     "titel": "Welches Wortfeld?",
+     "frage": "Ordne die Wörter dem Wortfeld zu.",
+     "kategorien": [
+      "🧩 Rund ums Thema",
+      "🎓 Studium & Uni",
+      "🌍 Herkunft & Sprachen",
+      "✨ Charakter & Interessen"
+     ],
+     "items": [
+      {
+       "fa": "خارجی",
+       "k": 0,
+       "e": "ausländisch, Ausländer/in",
+       "say": false
+      },
+      {
+       "fa": "سرگرمی",
+       "k": 0,
+       "e": "Hobby",
+       "say": false
+      },
+      {
+       "fa": "تجربه",
+       "k": 0,
+       "e": "Erfahrung",
+       "say": false
+      },
+      {
+       "fa": "کلاس",
+       "k": 1,
+       "e": "Kurs, Seminar",
+       "say": false
+      },
+      {
+       "fa": "دکترا",
+       "k": 1,
+       "e": "Promotion",
+       "say": false
+      },
+      {
+       "fa": "امتحان",
+       "k": 1,
+       "e": "Prüfung",
+       "say": false
+      },
+      {
+       "fa": "کشور",
+       "k": 2,
+       "e": "Land",
+       "say": false
+      },
+      {
+       "fa": "آلمانی",
+       "k": 2,
+       "e": "Deutsch, deutsch",
+       "say": false
+      },
+      {
+       "fa": "شمال",
+       "k": 2,
+       "e": "Norden",
+       "say": false
+      },
+      {
+       "fa": "موسیقی",
+       "k": 3,
+       "e": "Musik",
+       "say": false
+      },
+      {
+       "fa": "شوخ",
+       "k": 3,
+       "e": "witzig",
+       "say": false
+      },
+      {
+       "fa": "کتاب‌خوانی",
+       "k": 3,
+       "e": "Lesen",
+       "say": false
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: alle Wörter",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 75,
+     "ziel": 15,
      "woerter": [
       {
        "fa": "رشته",
@@ -376,6 +1587,150 @@
        "a": "Freizeit"
       },
       {
+       "fa": "دانشگاه",
+       "a": "Universität"
+      },
+      {
+       "fa": "دانشکده",
+       "a": "Fakultät"
+      },
+      {
+       "fa": "استاد",
+       "a": "Professor/in"
+      },
+      {
+       "fa": "کلاس",
+       "a": "Kurs, Seminar"
+      },
+      {
+       "fa": "امتحان",
+       "a": "Prüfung"
+      },
+      {
+       "fa": "کارشناسی",
+       "a": "Bachelor"
+      },
+      {
+       "fa": "کارشناسی ارشد",
+       "a": "Master"
+      },
+      {
+       "fa": "دکترا",
+       "a": "Promotion"
+      },
+      {
+       "fa": "بورسیه",
+       "a": "Stipendium"
+      },
+      {
+       "fa": "تبادل دانشجو",
+       "a": "Studierendenaustausch"
+      },
+      {
+       "fa": "سلف",
+       "a": "Mensa"
+      },
+      {
+       "fa": "خوابگاه دانشجویی",
+       "a": "Studentenwohnheim"
+      },
+      {
+       "fa": "کشور",
+       "a": "Land"
+      },
+      {
+       "fa": "پایتخت",
+       "a": "Hauptstadt"
+      },
+      {
+       "fa": "روستا",
+       "a": "Dorf"
+      },
+      {
+       "fa": "آلمانی",
+       "a": "Deutsch, deutsch"
+      },
+      {
+       "fa": "انگلیسی",
+       "a": "Englisch"
+      },
+      {
+       "fa": "فرانسوی",
+       "a": "Französisch"
+      },
+      {
+       "fa": "ترکی",
+       "a": "Türkisch"
+      },
+      {
+       "fa": "عربی",
+       "a": "Arabisch"
+      },
+      {
+       "fa": "دوزبانه",
+       "a": "zweisprachig"
+      },
+      {
+       "fa": "مهاجر",
+       "a": "Migrant/in"
+      },
+      {
+       "fa": "بزرگ شدن",
+       "a": "aufwachsen"
+      },
+      {
+       "fa": "شمال",
+       "a": "Norden"
+      },
+      {
+       "fa": "اجتماعی",
+       "a": "gesellig"
+      },
+      {
+       "fa": "آرام",
+       "a": "ruhig"
+      },
+      {
+       "fa": "پرحرف",
+       "a": "gesprächig"
+      },
+      {
+       "fa": "کنجکاو",
+       "a": "neugierig"
+      },
+      {
+       "fa": "خوش‌اخلاق",
+       "a": "umgänglich, nett"
+      },
+      {
+       "fa": "شوخ",
+       "a": "witzig"
+      },
+      {
+       "fa": "عکاسی",
+       "a": "Fotografie"
+      },
+      {
+       "fa": "کتاب‌خوانی",
+       "a": "Lesen"
+      },
+      {
+       "fa": "آشپزی",
+       "a": "Kochen"
+      },
+      {
+       "fa": "موسیقی",
+       "a": "Musik"
+      },
+      {
+       "fa": "نقاشی",
+       "a": "Malen"
+      },
+      {
+       "fa": "سفر",
+       "a": "Reisen"
+      },
+      {
        "fa": "آشنا شدن",
        "a": "kennenlernen"
       },
@@ -394,19 +1749,31 @@
       {
        "fa": "بلد بودن",
        "a": "können, kennen"
+      },
+      {
+       "fa": "به دنیا آمدن",
+       "a": "geboren werden"
+      },
+      {
+       "fa": "زندگی کردن",
+       "a": "leben, wohnen"
+      },
+      {
+       "fa": "تماس گرفتن",
+       "a": "sich melden, anrufen"
       }
      ]
     }
    ]
   },
   {
-   "id": "s2",
+   "id": "r1",
    "titel": "Redemittel",
    "vorschau": "ببخشید، شما هم اینجا درس می‌خونید؟",
    "karten": [
     {
      "typ": "info",
-     "titel": "Redemittel – Teil 1",
+     "titel": "Redemittel (1)",
      "text": "<p>So sagt man das im Gespräch. Tippe einen Satz an, um ihn zu hören.</p>",
      "stil": "merke",
      "beispiele": [
@@ -450,8 +1817,8 @@
     },
     {
      "typ": "info",
-     "titel": "Redemittel – Teil 2",
-     "text": "<p>Die Schriftform findest du gleich in der Übung „Geschrieben ↔ gesprochen“.</p>",
+     "titel": "Redemittel (2)",
+     "text": "<p>So sagt man das im Gespräch. Tippe einen Satz an, um ihn zu hören.</p>",
      "stil": "merke",
      "beispiele": [
       {
@@ -483,6 +1850,56 @@
        "tr": "dar tamās bāschīm!",
        "de": "Lass uns in Kontakt bleiben!",
        "x": "در تماس باشیم!"
+      },
+      {
+       "fa": "کجا بزرگ شدی؟",
+       "tr": "kodschā bozorg schodī?",
+       "de": "Wo bist du aufgewachsen?",
+       "x": "کجا بزرگ شدی؟"
+      }
+     ]
+    },
+    {
+     "typ": "info",
+     "titel": "Redemittel (3)",
+     "text": "<p>So sagt man das im Gespräch. Tippe einen Satz an, um ihn zu hören.</p>",
+     "stil": "merke",
+     "beispiele": [
+      {
+       "fa": "از کی آلمانی؟",
+       "tr": "az key ālmānī?",
+       "de": "Seit wann bist du in Deutschland?",
+       "x": "از کی در آلمان زندگی می‌کنی؟"
+      },
+      {
+       "fa": "اسمتو چطوری می‌نویسن؟",
+       "tr": "esmeto tschetourī mīnevīsan?",
+       "de": "Wie schreibt man deinen Namen?",
+       "x": "اسمت را چطور می‌نویسند؟"
+      },
+      {
+       "fa": "ببخشید، اسمتونو نفهمیدم.",
+       "tr": "bebachschīd, esmetūno nafahmīdam.",
+       "de": "Entschuldigung, ich habe Ihren Namen nicht verstanden.",
+       "x": "ببخشید، اسمتان را نفهمیدم."
+      },
+      {
+       "fa": "منم همین‌طور!",
+       "tr": "manam hamīntour!",
+       "de": "Ich auch!",
+       "x": "من هم همین‌طور!"
+      },
+      {
+       "fa": "چه دنیای کوچیکی!",
+       "tr": "tsche donyā-ye kūtschīkī!",
+       "de": "Wie klein die Welt ist!",
+       "x": "چه دنیای کوچکی!"
+      },
+      {
+       "fa": "من دیگه باید برم.",
+       "tr": "man dīge bāyad beram.",
+       "de": "Ich muss jetzt los.",
+       "x": "من دیگر باید بروم."
       }
      ]
     },
@@ -497,22 +1914,65 @@
        "x": "چه رشته‌ای می‌خوانی؟"
       },
       {
-       "fa": "اهل کجایی؟",
-       "tr": "ahl-e kodschāyī?",
-       "de": "Woher kommst du?",
-       "x": "اهل کجا هستی؟"
+       "fa": "در تماس باشیم!",
+       "tr": "dar tamās bāschīm!",
+       "de": "Lass uns in Kontakt bleiben!",
+       "x": "در تماس باشیم!"
       },
       {
-       "fa": "خیلی خوشحال شدم. بعداً می‌بینمت!",
-       "tr": "cheylī choschhāl schodam. baʿdan mībīnamet!",
-       "de": "Hat mich sehr gefreut. Bis später!",
-       "x": "خیلی خوشحال شدم. بعداً می‌بینمت!"
+       "fa": "چند وقته فارسی یاد می‌گیری؟",
+       "tr": "tschand waghte fārsī yād mīgīrī?",
+       "de": "Seit wann lernst du Persisch?",
+       "x": "چند وقت است که فارسی یاد می‌گیری؟"
       },
       {
-       "fa": "تو وقت آزادت چی کار می‌کنی؟",
-       "tr": "tū waght-e āzādet tschī kār mīkonī?",
-       "de": "Was machst du in deiner Freizeit?",
-       "x": "در وقت آزادت چه کار می‌کنی؟"
+       "fa": "چه دنیای کوچیکی!",
+       "tr": "tsche donyā-ye kūtschīkī!",
+       "de": "Wie klein die Welt ist!",
+       "x": "چه دنیای کوچکی!"
+      },
+      {
+       "fa": "فارسی بلدی؟",
+       "tr": "fārsī baladī?",
+       "de": "Kannst du Persisch?",
+       "x": "فارسی بلدی؟"
+      },
+      {
+       "fa": "جدی؟ چه جالب!",
+       "tr": "dscheddī? tsche dschāleb!",
+       "de": "Echt? Wie interessant!",
+       "x": "واقعاً؟ چه جالب!"
+      }
+     ],
+     "titel": "Was bedeutet das?"
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "ببخشید، اسمتونو نفهمیدم.",
+       "tr": "bebachschīd, esmetūno nafahmīdam.",
+       "de": "Entschuldigung, ich habe Ihren Namen nicht verstanden.",
+       "x": "ببخشید، اسمتان را نفهمیدم."
+      },
+      {
+       "fa": "چی می‌خونی؟",
+       "tr": "tschī mīchūnī?",
+       "de": "Was studierst du?",
+       "x": "چه رشته‌ای می‌خوانی؟"
+      },
+      {
+       "fa": "از کی آلمانی؟",
+       "tr": "az key ālmānī?",
+       "de": "Seit wann bist du in Deutschland?",
+       "x": "از کی در آلمان زندگی می‌کنی؟"
+      },
+      {
+       "fa": "ببخشید، شما هم اینجا درس می‌خونید؟",
+       "tr": "bebachschīd, schomā ham īndschā dars mīchūnīd?",
+       "de": "Entschuldigung, studieren Sie auch hier?",
+       "x": "ببخشید، شما هم اینجا درس می‌خوانید؟"
       },
       {
        "fa": "جدی؟ چه جالب!",
@@ -527,7 +1987,7 @@
        "x": "در تماس باشیم!"
       }
      ],
-     "titel": "Was bedeutet das?"
+     "titel": "Noch einmal: Was bedeutet das?"
     },
     {
      "typ": "sortieren",
@@ -604,12 +2064,192 @@
        "k": 2,
        "e": "Lass uns in Kontakt bleiben!",
        "say": false
+      },
+      {
+       "fa": "کجا بزرگ شدی؟",
+       "k": 1,
+       "e": "Wo bist du aufgewachsen?",
+       "say": false
+      },
+      {
+       "fa": "از کی آلمانی؟",
+       "k": 1,
+       "e": "Seit wann bist du in Deutschland?",
+       "say": false
+      },
+      {
+       "fa": "اسمتو چطوری می‌نویسن؟",
+       "k": 1,
+       "e": "Wie schreibt man deinen Namen?",
+       "say": false
+      },
+      {
+       "fa": "ببخشید، اسمتونو نفهمیدم.",
+       "k": 0,
+       "e": "Entschuldigung, ich habe Ihren Namen nicht verstanden.",
+       "say": false
+      },
+      {
+       "fa": "منم همین‌طور!",
+       "k": 1,
+       "e": "Ich auch!",
+       "say": false
+      },
+      {
+       "fa": "چه دنیای کوچیکی!",
+       "k": 1,
+       "e": "Wie klein die Welt ist!",
+       "say": false
+      },
+      {
+       "fa": "من دیگه باید برم.",
+       "k": 2,
+       "e": "Ich muss jetzt los.",
+       "say": false
       }
      ]
     },
     {
+     "typ": "paare",
+     "links": "x",
+     "paare": [
+      {
+       "fa": "شماره‌ات را به من می‌دهی؟",
+       "tr": "",
+       "de": "Gibst du mir deine Nummer?",
+       "x": "شماره‌تو بهم می‌دی؟"
+      },
+      {
+       "fa": "ببخشید، شما هم اینجا درس می‌خوانید؟",
+       "tr": "",
+       "de": "Entschuldigung, studieren Sie auch hier?",
+       "x": "ببخشید، شما هم اینجا درس می‌خونید؟"
+      },
+      {
+       "fa": "اهل کجا هستی؟",
+       "tr": "",
+       "de": "Woher kommst du?",
+       "x": "اهل کجایی؟"
+      },
+      {
+       "fa": "چند وقت است که فارسی یاد می‌گیری؟",
+       "tr": "",
+       "de": "Seit wann lernst du Persisch?",
+       "x": "چند وقته فارسی یاد می‌گیری؟"
+      },
+      {
+       "fa": "در وقت آزادت چه کار می‌کنی؟",
+       "tr": "",
+       "de": "Was machst du in deiner Freizeit?",
+       "x": "تو وقت آزادت چی کار می‌کنی؟"
+      },
+      {
+       "fa": "اسمت را چطور می‌نویسند؟",
+       "tr": "",
+       "de": "Wie schreibt man deinen Namen?",
+       "x": "اسمتو چطوری می‌نویسن؟"
+      }
+     ],
+     "titel": "Geschrieben ↔ gesprochen"
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Redemittel",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 70,
+     "ziel": 12,
+     "woerter": [
+      {
+       "fa": "ببخشید، شما هم اینجا درس می‌خونید؟",
+       "a": "Entschuldigung, studieren Sie auch hier?"
+      },
+      {
+       "fa": "از آشنایی‌تون خوشحالم.",
+       "a": "Freut mich, Sie kennenzulernen."
+      },
+      {
+       "fa": "فارسی بلدی؟",
+       "a": "Kannst du Persisch?"
+      },
+      {
+       "fa": "اهل کجایی؟",
+       "a": "Woher kommst du?"
+      },
+      {
+       "fa": "چی می‌خونی؟",
+       "a": "Was studierst du?"
+      },
+      {
+       "fa": "چند وقته فارسی یاد می‌گیری؟",
+       "a": "Seit wann lernst du Persisch?"
+      },
+      {
+       "fa": "جدی؟ چه جالب!",
+       "a": "Echt? Wie interessant!"
+      },
+      {
+       "fa": "تو وقت آزادت چی کار می‌کنی؟",
+       "a": "Was machst du in deiner Freizeit?"
+      },
+      {
+       "fa": "شماره‌تو بهم می‌دی؟",
+       "a": "Gibst du mir deine Nummer?"
+      },
+      {
+       "fa": "خیلی خوشحال شدم. بعداً می‌بینمت!",
+       "a": "Hat mich sehr gefreut. Bis später!"
+      },
+      {
+       "fa": "در تماس باشیم!",
+       "a": "Lass uns in Kontakt bleiben!"
+      },
+      {
+       "fa": "کجا بزرگ شدی؟",
+       "a": "Wo bist du aufgewachsen?"
+      },
+      {
+       "fa": "از کی آلمانی؟",
+       "a": "Seit wann bist du in Deutschland?"
+      },
+      {
+       "fa": "اسمتو چطوری می‌نویسن؟",
+       "a": "Wie schreibt man deinen Namen?"
+      },
+      {
+       "fa": "ببخشید، اسمتونو نفهمیدم.",
+       "a": "Entschuldigung, ich habe Ihren Namen nicht verstanden."
+      },
+      {
+       "fa": "منم همین‌طور!",
+       "a": "Ich auch!"
+      },
+      {
+       "fa": "چه دنیای کوچیکی!",
+       "a": "Wie klein die Welt ist!"
+      },
+      {
+       "fa": "من دیگه باید برم.",
+       "a": "Ich muss jetzt los."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "r2",
+   "titel": "Situationen & Reaktionen",
+   "vorschau": "چی بگم؟",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Reagieren",
+     "text": "<p>Im Gespräch kommt es auf die <b>Reaktion</b> an. Lies, was jemand sagt – und was man darauf antwortet.</p><div class='karte' style='margin:10px 0;padding:10px 14px'><div class='fa' style='font-size:1.3rem;text-align:right'>💬 من از تهرانم.</div><div class='fa' style='font-size:1.3rem;text-align:right;color:var(--lapis)'>↩️ چه جالب! من تابستون می‌خوام برم تهران.</div><div class='klein muted'>Ich bin aus Teheran.</div></div><div class='karte' style='margin:10px 0;padding:10px 14px'><div class='fa' style='font-size:1.3rem;text-align:right'>💬 دو ساله فارسی می‌خونم.</div><div class='fa' style='font-size:1.3rem;text-align:right;color:var(--lapis)'>↩️ واقعاً؟ خیلی خوب حرف می‌زنی!</div><div class='klein muted'>Ich lerne seit zwei Jahren Persisch.</div></div><div class='karte' style='margin:10px 0;padding:10px 14px'><div class='fa' style='font-size:1.3rem;text-align:right'>💬 از آشنایی‌ت خوشحالم.</div><div class='fa' style='font-size:1.3rem;text-align:right;color:var(--lapis)'>↩️ منم همین‌طور!</div><div class='klein muted'>Freut mich, dich kennenzulernen.</div></div><div class='karte' style='margin:10px 0;padding:10px 14px'><div class='fa' style='font-size:1.3rem;text-align:right'>💬 فردا امتحان دارم.</div><div class='fa' style='font-size:1.3rem;text-align:right;color:var(--lapis)'>↩️ موفق باشی!</div><div class='klein muted'>Ich habe morgen eine Prüfung.</div></div>",
+     "stil": "merke"
+    },
+    {
      "typ": "wahl",
-     "titel": "Was sagst du?",
+     "titel": "Was sagst du? (1)",
      "fragen": [
       {
        "frage": "In der Mensa liest jemand ein persisches Buch. Du beginnst ein Gespräch:",
@@ -658,106 +2298,185 @@
      ]
     },
     {
+     "typ": "wahl",
+     "titel": "Was sagst du? (2)",
+     "fragen": [
+      {
+       "frage": "Du hast den Namen deines Gegenübers nicht verstanden:",
+       "optionen": [
+        "ببخشید، اسمتونو نفهمیدم.",
+        "چه دنیای کوچیکی!",
+        "منم همین‌طور!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "Ihr stellt fest, dass ihr dieselbe Person kennt:",
+       "optionen": [
+        "چه دنیای کوچیکی!",
+        "من دیگه باید برم.",
+        "کجا بزرگ شدی؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "Dein Gegenüber sagt, es liebt Wandern. Du auch:",
+       "optionen": [
+        "منم همین‌طور!",
+        "از کی آلمانی؟",
+        "ببخشید، اسمتونو نفهمیدم."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    },
+    {
      "typ": "paare",
      "links": "x",
      "paare": [
       {
-       "fa": "ببخشید، شما هم اینجا درس می‌خوانید؟",
+       "fa": "من از تهرانم.",
        "tr": "",
-       "de": "Entschuldigung, studieren Sie auch hier?",
-       "x": "ببخشید، شما هم اینجا درس می‌خونید؟"
+       "de": "Ich bin aus Teheran.",
+       "x": "چه جالب! من تابستون می‌خوام برم تهران."
       },
       {
-       "fa": "از آشنایی با شما خوشحالم.",
+       "fa": "دو ساله فارسی می‌خونم.",
        "tr": "",
-       "de": "Freut mich, Sie kennenzulernen.",
-       "x": "از آشنایی‌تون خوشحالم."
+       "de": "Ich lerne seit zwei Jahren Persisch.",
+       "x": "واقعاً؟ خیلی خوب حرف می‌زنی!"
       },
       {
-       "fa": "اهل کجا هستی؟",
+       "fa": "از آشنایی‌ت خوشحالم.",
        "tr": "",
-       "de": "Woher kommst du?",
-       "x": "اهل کجایی؟"
+       "de": "Freut mich, dich kennenzulernen.",
+       "x": "منم همین‌طور!"
       },
       {
-       "fa": "چه رشته‌ای می‌خوانی؟",
+       "fa": "فردا امتحان دارم.",
        "tr": "",
-       "de": "Was studierst du?",
-       "x": "چی می‌خونی؟"
+       "de": "Ich habe morgen eine Prüfung.",
+       "x": "موفق باشی!"
       },
       {
-       "fa": "چند وقت است که فارسی یاد می‌گیری؟",
+       "fa": "من عاشق کوهنوردی‌ام.",
        "tr": "",
-       "de": "Seit wann lernst du Persisch?",
-       "x": "چند وقته فارسی یاد می‌گیری؟"
-      },
-      {
-       "fa": "واقعاً؟ چه جالب!",
-       "tr": "",
-       "de": "Echt? Wie interessant!",
-       "x": "جدی؟ چه جالب!"
-      }
-     ],
-     "titel": "Geschrieben ↔ gesprochen"
-    },
-    {
-     "typ": "tempo",
-     "titel": "Blitz: Redemittel",
-     "aufgabe": "Was bedeutet das?",
-     "modus": "de",
-     "sekunden": 60,
-     "ziel": 10,
-     "woerter": [
-      {
-       "fa": "ببخشید، شما هم اینجا درس می‌خونید؟",
-       "a": "Entschuldigung, studieren Sie auch hier?"
-      },
-      {
-       "fa": "از آشنایی‌تون خوشحالم.",
-       "a": "Freut mich, Sie kennenzulernen."
-      },
-      {
-       "fa": "فارسی بلدی؟",
-       "a": "Kannst du Persisch?"
-      },
-      {
-       "fa": "اهل کجایی؟",
-       "a": "Woher kommst du?"
-      },
-      {
-       "fa": "چی می‌خونی؟",
-       "a": "Was studierst du?"
-      },
-      {
-       "fa": "چند وقته فارسی یاد می‌گیری؟",
-       "a": "Seit wann lernst du Persisch?"
-      },
-      {
-       "fa": "جدی؟ چه جالب!",
-       "a": "Echt? Wie interessant!"
-      },
-      {
-       "fa": "تو وقت آزادت چی کار می‌کنی؟",
-       "a": "Was machst du in deiner Freizeit?"
+       "de": "Ich liebe Bergwandern.",
+       "x": "جدی؟ منم! بیا یه بار با هم بریم."
       },
       {
        "fa": "شماره‌تو بهم می‌دی؟",
-       "a": "Gibst du mir deine Nummer?"
+       "tr": "",
+       "de": "Gibst du mir deine Nummer?",
+       "x": "حتماً، بنویس: …"
+      }
+     ],
+     "titel": "Was antwortest du?"
+    },
+    {
+     "typ": "wahl",
+     "titel": "Die passende Reaktion",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>من از تهرانم.</span>",
+       "optionen": [
+        "چه جالب! من تابستون می‌خوام برم تهران.",
+        "جدی؟ منم! بیا یه بار با هم بریم.",
+        "منم همین‌طور!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
       },
       {
-       "fa": "خیلی خوشحال شدم. بعداً می‌بینمت!",
-       "a": "Hat mich sehr gefreut. Bis später!"
+       "frage": "<span class='fa'>دو ساله فارسی می‌خونم.</span>",
+       "optionen": [
+        "واقعاً؟ خیلی خوب حرف می‌زنی!",
+        "چه جالب! من تابستون می‌خوام برم تهران.",
+        "منم همین‌طور!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
       },
       {
-       "fa": "در تماس باشیم!",
-       "a": "Lass uns in Kontakt bleiben!"
+       "frage": "<span class='fa'>از آشنایی‌ت خوشحالم.</span>",
+       "optionen": [
+        "منم همین‌طور!",
+        "حتماً، بنویس: …",
+        "باشه، خیلی خوشحال شدم!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>فردا امتحان دارم.</span>",
+       "optionen": [
+        "موفق باشی!",
+        "آره، نزدیک دانشگاه.",
+        "باشه، خیلی خوشحال شدم!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>من عاشق کوهنوردی‌ام.</span>",
+       "optionen": [
+        "جدی؟ منم! بیا یه بار با هم بریم.",
+        "حتماً، بنویس: …",
+        "واقعاً؟ خیلی خوب حرف می‌زنی!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>شماره‌تو بهم می‌دی؟</span>",
+       "optionen": [
+        "حتماً، بنویس: …",
+        "چه جالب! من تابستون می‌خوام برم تهران.",
+        "جدی؟ منم! بیا یه بار با هم بریم."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>من دیگه باید برم.</span>",
+       "optionen": [
+        "باشه، خیلی خوشحال شدم!",
+        "جدی؟ منم! بیا یه بار با هم بریم.",
+        "چه جالب! من تابستون می‌خوام برم تهران."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>تو هم کیل زندگی می‌کنی؟</span>",
+       "optionen": [
+        "آره، نزدیک دانشگاه.",
+        "منم همین‌طور!",
+        "جدی؟ منم! بیا یه بار با هم بریم."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
       }
      ]
     }
    ]
   },
   {
-   "id": "s3",
+   "id": "d",
    "titel": "Modelldialog",
    "vorschau": "In der Mensa",
    "karten": [
@@ -857,6 +2576,67 @@
      ]
     },
     {
+     "typ": "wahl",
+     "titel": "Wie geht es weiter?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>ببخشید، این کتاب فارسیه؟</span><br><span class='klein muted'>Was kommt als Nächstes?</span>",
+       "optionen": [
+        "آره! تو فارسی بلدی؟",
+        "از آشنایی‌ت خوشحالم! من لنام. تو چی می‌خونی؟",
+        "من ایران‌شناسی می‌خونم. تابستون می‌خوام برم اصفهان."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>یه کم. دو ساله دارم یاد می‌گیرم.</span><br><span class='klein muted'>Was kommt als Nächstes?</span>",
+       "optionen": [
+        "جدی؟ خیلی خوب حرف می‌زنی! من آرمانم، از تهران.",
+        "حتماً. اینستا هم دارم – بیا پیجم!",
+        "آره! تو فارسی بلدی؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>از آشنایی‌ت خوشحالم! من لنام. تو چی می‌خونی؟</span><br><span class='klein muted'>Was kommt als Nächstes?</span>",
+       "optionen": [
+        "مهندسی برق. یه ترم اینجام. تو چی؟",
+        "آره! تو فارسی بلدی؟",
+        "ببخشید، این کتاب فارسیه؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>من ایران‌شناسی می‌خونم. تابستون می‌خوام برم اصفهان.</span><br><span class='klein muted'>Was kommt als Nächstes?</span>",
+       "optionen": [
+        "عالیه! اگه سؤالی داشتی، بهم بگو.",
+        "ببخشید، این کتاب فارسیه؟",
+        "جدی؟ خیلی خوب حرف می‌زنی! من آرمانم، از تهران."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>مرسی! شماره‌تو بهم می‌دی؟</span><br><span class='klein muted'>Was kommt als Nächstes?</span>",
+       "optionen": [
+        "حتماً. اینستا هم دارم – بیا پیجم!",
+        "آره! تو فارسی بلدی؟",
+        "یه کم. دو ساله دارم یاد می‌گیرم."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    },
+    {
      "typ": "ordnen",
      "titel": "Bring den Dialog in die richtige Reihenfolge",
      "frage": "Tippe die Sätze der Reihe nach an.",
@@ -902,11 +2682,82 @@
        "de": "Super! Wenn du Fragen hast, sag Bescheid."
       }
      ]
+    },
+    {
+     "typ": "bauen",
+     "titel": "Baue die Sätze aus dem Dialog",
+     "trenner": " ",
+     "woerter": [
+      {
+       "fa": "ببخشید، این کتاب فارسیه؟",
+       "tr": "bebachschīd, īn ketāb fārsīye?",
+       "de": "Entschuldigung, ist das Buch auf Persisch?",
+       "teile": [
+        "ببخشید",
+        "این",
+        "کتاب",
+        "فارسیه"
+       ],
+       "extra": [
+        "تو"
+       ]
+      },
+      {
+       "fa": "آره! تو فارسی بلدی؟",
+       "tr": "āre! to fārsī baladī?",
+       "de": "Ja! Kannst du Persisch?",
+       "teile": [
+        "آره",
+        "تو",
+        "فارسی",
+        "بلدی"
+       ],
+       "extra": [
+        "بهم"
+       ]
+      },
+      {
+       "fa": "یه کم. دو ساله دارم یاد می‌گیرم.",
+       "tr": "ye kam. do sāle dāram yād mīgīram.",
+       "de": "Ein bisschen. Ich lerne es seit zwei Jahren.",
+       "teile": [
+        "یه",
+        "کم",
+        "دو",
+        "ساله",
+        "دارم",
+        "یاد",
+        "می‌گیرم"
+       ],
+       "extra": [
+        "جدی؟"
+       ]
+      },
+      {
+       "fa": "جدی؟ خیلی خوب حرف می‌زنی! من آرمانم، از تهران.",
+       "tr": "dscheddī? cheylī chūb harf mīzanī! man ārmānam, az tehrān.",
+       "de": "Echt? Du sprichst sehr gut! Ich bin Arman, aus Teheran.",
+       "teile": [
+        "جدی",
+        "خیلی",
+        "خوب",
+        "حرف",
+        "می‌زنی",
+        "من",
+        "آرمانم",
+        "از",
+        "تهران"
+       ],
+       "extra": [
+        "حتماً."
+       ]
+      }
+     ]
     }
    ]
   },
   {
-   "id": "s4",
+   "id": "t",
    "titel": "Lesen",
    "vorschau": "Ein Post in der Tandem-Gruppe",
    "karten": [
@@ -1037,11 +2888,43 @@
        "richtig": 0
       }
      ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "سلام به همه! اسم من یوناس است و بیست و چهار سال دارم.",
+       "tr": "salām be hame! esm-e man yūnās ast o bīst o tschahār sāl dāram.",
+       "de": "Hallo zusammen! Ich heiße Jonas und bin 24."
+      },
+      {
+       "fa": "در کیل زندگی می‌کنم و علوم سیاسی می‌خوانم.",
+       "tr": "dar kīl zendegī mīkonam o ʿolūm-e siyāsī mīchānam.",
+       "de": "Ich wohne in Kiel und studiere Politikwissenschaft."
+      },
+      {
+       "fa": "دو سال است که فارسی یاد می‌گیرم، اما هنوز در صحبت کردن مشکل دارم.",
+       "tr": "do sāl ast ke fārsī yād mīgīram, ammā hanūz dar sohbat kardan moschkel dāram.",
+       "de": "Seit zwei Jahren lerne ich Persisch, aber beim Sprechen habe ich noch Probleme."
+      },
+      {
+       "fa": "به همین دلیل دنبال یک هم‌زبان هستم.",
+       "tr": "be hamīn dalīl donbāl-e yek hamzabān hastam.",
+       "de": "Deshalb suche ich eine Tandempartnerin oder einen Tandempartner."
+      },
+      {
+       "fa": "در عوض می‌توانم با تو آلمانی یا انگلیسی تمرین کنم.",
+       "tr": "dar ʿawaz mītawānam bā to ālmānī yā engelīsī tamrīn konam.",
+       "de": "Im Gegenzug kann ich mit dir Deutsch oder Englisch üben."
+      }
+     ]
     }
    ]
   },
   {
-   "id": "s5",
+   "id": "k",
    "titel": "Gut zu wissen",
    "vorschau": "تو oder شما?",
    "karten": [
@@ -1089,7 +2972,7 @@
    ]
   },
   {
-   "id": "s6",
+   "id": "p",
    "titel": "Vorbereitung für die Sitzung",
    "vorschau": "آماده‌ای؟",
    "karten": [
@@ -1135,6 +3018,21 @@
      "links": "de",
      "paare": [
       {
+       "fa": "چرا فارسی یاد می‌گیری؟",
+       "tr": "tscherā fārsī yād mīgīrī?",
+       "de": "Warum lernst du Persisch?"
+      },
+      {
+       "fa": "یه چیز جالب درباره‌ی خودت بگو که کسی نمی‌دونه!",
+       "tr": "ye tschīz-e dschāleb darbāre-ye chodet begū ke kasī nemīdūne!",
+       "de": "Erzähl etwas Interessantes über dich, das niemand weiß!"
+      },
+      {
+       "fa": "تا حالا ایران رفتی؟ اگه نه، دوست داری کجا بری؟",
+       "tr": "tā hālā īrān raftī? age na, dūst dārī kodschā berī?",
+       "de": "Warst du schon in Iran? Wenn nicht – wohin möchtest du?"
+      },
+      {
        "fa": "تو وقت آزادت چی کار می‌کنی؟",
        "tr": "tū waght-e āzādet tschī kār mīkonī?",
        "de": "Was machst du in deiner Freizeit?"
@@ -1143,21 +3041,6 @@
        "fa": "به نظرت بهترین راه برای آشنا شدن با آدمای جدید چیه؟",
        "tr": "be nazaret behtarīn rāh barāye āschnā schodan bā ādamā-ye dschadīd tschīye?",
        "de": "Was ist für dich der beste Weg, neue Leute kennenzulernen?"
-      },
-      {
-       "fa": "یه چیز جالب درباره‌ی خودت بگو که کسی نمی‌دونه!",
-       "tr": "ye tschīz-e dschāleb darbāre-ye chodet begū ke kasī nemīdūne!",
-       "de": "Erzähl etwas Interessantes über dich, das niemand weiß!"
-      },
-      {
-       "fa": "چرا فارسی یاد می‌گیری؟",
-       "tr": "tscherā fārsī yād mīgīrī?",
-       "de": "Warum lernst du Persisch?"
-      },
-      {
-       "fa": "تا حالا ایران رفتی؟ اگه نه، دوست داری کجا بری؟",
-       "tr": "tā hālā īrān raftī? age na, dūst dārī kodschā berī?",
-       "de": "Warst du schon in Iran? Wenn nicht – wohin möchtest du?"
       },
       {
        "fa": "خودتو معرفی کن: اسمت چیه، اهل کجایی، چی کار می‌کنی؟",

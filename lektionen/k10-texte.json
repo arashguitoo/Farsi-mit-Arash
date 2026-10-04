@@ -1,0 +1,309 @@
+{
+ "id": "tx",
+ "art": "texte",
+ "titel": "Texte & Dialoge",
+ "beschreibung": "Ein zweiter Dialog und ein weiterer Lesetext.",
+ "stationen": [
+  {
+   "id": "d2",
+   "titel": "Dialog: Erster Arbeitstag",
+   "vorschau": "Erster Arbeitstag",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Sophie hat die Stelle bekommen! An ihrem ersten Tag zeigt ihr die Kollegin Mina das Büro.</p>"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "مینا: سلام سوفی، خوش اومدی! من مینام، همکارت.",
+       "tr": "salām sofī, chosch ūmadī! man mīnām, hamkāret.",
+       "de": "Hallo Sophie, willkommen! Ich bin Mina, deine Kollegin."
+      },
+      {
+       "fa": "سوفی: سلام مینا، خیلی خوشحالم! یه کم استرس دارم.",
+       "tr": "salām mīnā, cheylī choschhālam! ye kam esteres dāram.",
+       "de": "Hallo Mina, ich freue mich sehr! Ich bin etwas nervös."
+      },
+      {
+       "fa": "مینا: طبیعیه! بیا میزتو نشونت بدم. اینجاست، کنار پنجره.",
+       "tr": "tabīʿīye! biyā mīzeto neschūnet bedam. īndschāst, kenār-e pandschere.",
+       "de": "Ganz normal! Komm, ich zeig dir deinen Schreibtisch. Hier, am Fenster."
+      },
+      {
+       "fa": "سوفی: چه عالی! ساعت کاری از کیه تا کی؟",
+       "tr": "tsche ʿālī! sāʿat-e kārī az keye tā key?",
+       "de": "Toll! Von wann bis wann ist die Arbeitszeit?"
+      },
+      {
+       "fa": "مینا: از هشت تا چهار. پنجشنبه‌ها تا ظهره.",
+       "tr": "az hascht tā tschahār. pandschschanbehā tā zohre.",
+       "de": "Von acht bis vier. Donnerstags bis mittags."
+      },
+      {
+       "fa": "سوفی: ناهار کجا می‌خورید؟",
+       "tr": "nāhār kodschā mīchorīd?",
+       "de": "Wo esst ihr zu Mittag?"
+      },
+      {
+       "fa": "مینا: معمولا با هم تو آشپزخونه‌ی شرکت. امروز مهمون مایی!",
+       "tr": "maʿmūlan bā ham tū āschpazchūne-ye scherkat. emrūz mehmūn-e māyī!",
+       "de": "Meist zusammen in der Firmenküche. Heute bist du unser Gast!"
+      },
+      {
+       "fa": "سوفی: وای، مرسی! فکر کنم اینجا خیلی بهم خوش می‌گذره.",
+       "tr": "wāy, mersī! fekr konam īndschā cheylī behem chosch mīgzare.",
+       "de": "Oh, danke! Ich glaube, hier werde ich mich sehr wohlfühlen."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "مینا: سلام سوفی، خوش اومدی! من مینام، همکارت.",
+       "tr": "salām sofī, chosch ūmadī! man mīnām, hamkāret.",
+       "de": "Hallo Sophie, willkommen! Ich bin Mina, deine Kollegin."
+      },
+      {
+       "fa": "سوفی: سلام مینا، خیلی خوشحالم! یه کم استرس دارم.",
+       "tr": "salām mīnā, cheylī choschhālam! ye kam esteres dāram.",
+       "de": "Hallo Mina, ich freue mich sehr! Ich bin etwas nervös."
+      },
+      {
+       "fa": "مینا: طبیعیه! بیا میزتو نشونت بدم. اینجاست، کنار پنجره.",
+       "tr": "tabīʿīye! biyā mīzeto neschūnet bedam. īndschāst, kenār-e pandschere.",
+       "de": "Ganz normal! Komm, ich zeig dir deinen Schreibtisch. Hier, am Fenster."
+      },
+      {
+       "fa": "سوفی: چه عالی! ساعت کاری از کیه تا کی؟",
+       "tr": "tsche ʿālī! sāʿat-e kārī az keye tā key?",
+       "de": "Toll! Von wann bis wann ist die Arbeitszeit?"
+      },
+      {
+       "fa": "مینا: از هشت تا چهار. پنجشنبه‌ها تا ظهره.",
+       "tr": "az hascht tā tschahār. pandschschanbehā tā zohre.",
+       "de": "Von acht bis vier. Donnerstags bis mittags."
+      },
+      {
+       "fa": "سوفی: ناهار کجا می‌خورید؟",
+       "tr": "nāhār kodschā mīchorīd?",
+       "de": "Wo esst ihr zu Mittag?"
+      },
+      {
+       "fa": "مینا: معمولا با هم تو آشپزخونه‌ی شرکت. امروز مهمون مایی!",
+       "tr": "maʿmūlan bā ham tū āschpazchūne-ye scherkat. emrūz mehmūn-e māyī!",
+       "de": "Meist zusammen in der Firmenküche. Heute bist du unser Gast!"
+      },
+      {
+       "fa": "سوفی: وای، مرسی! فکر کنم اینجا خیلی بهم خوش می‌گذره.",
+       "tr": "wāy, mersī! fekr konam īndschā cheylī behem chosch mīgzare.",
+       "de": "Oh, danke! Ich glaube, hier werde ich mich sehr wohlfühlen."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Wo ist Sophies Schreibtisch?",
+       "optionen": [
+        "am Fenster",
+        "neben der Küche",
+        "im Keller"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie lange wird donnerstags gearbeitet?",
+       "optionen": [
+        "bis mittags",
+        "bis vier",
+        "gar nicht"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wo essen die Kollegen meist?",
+       "optionen": [
+        "in der Firmenküche",
+        "im Restaurant",
+        "am Schreibtisch"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t2",
+   "titel": "Text: Homeoffice – Traum oder Albtraum?",
+   "vorschau": "Homeoffice – Traum oder Albtraum?",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Text: Homeoffice – Traum oder Albtraum?",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "بعد از کرونا، دورکاری در خیلی از شرکت‌ها عادی شد.",
+       "tr": "baʿd az koronā, dūrkārī dar cheylī az scherkathā ʿādī schod.",
+       "de": "Nach Corona wurde Homeoffice in vielen Firmen normal."
+      },
+      {
+       "fa": "بعضی‌ها دورکاری را خیلی دوست دارند: وقتشان در ترافیک تلف نمی‌شود.",
+       "tr": "baʿzīhā dūrkārī rā cheylī dūst dārand: waghteschān dar terāfīk talaf nemīschawad.",
+       "de": "Manche lieben Homeoffice: Sie verlieren keine Zeit im Stau."
+      },
+      {
+       "fa": "آنها می‌توانند با لباس راحت کار کنند و ناهار را در خانه بخورند.",
+       "tr": "ānhā mītawānand bā lebās-e rāhat kār konand o nāhār rā dar chāne bechorand.",
+       "de": "Sie können in bequemer Kleidung arbeiten und zu Hause zu Mittag essen."
+      },
+      {
+       "fa": "اما برای بعضی‌ها دورکاری سخت است.",
+       "tr": "ammā barā-ye baʿzīhā dūrkārī sacht ast.",
+       "de": "Aber für manche ist Homeoffice schwer."
+      },
+      {
+       "fa": "آنها احساس تنهایی می‌کنند و مرز بین کار و زندگی را گم می‌کنند.",
+       "tr": "ānhā ehsās-e tanhāyī mīkonand o marz-e beyn-e kār o zendegī rā gom mīkonand.",
+       "de": "Sie fühlen sich einsam und verlieren die Grenze zwischen Arbeit und Leben."
+      },
+      {
+       "fa": "بسیاری از شرکت‌ها حالا مدل ترکیبی دارند: دو روز در خانه، سه روز در دفتر.",
+       "tr": "besyārī az scherkathā hālā model-e tarkībī dārand: do rūz dar chāne, se rūz dar daftar.",
+       "de": "Viele Firmen haben jetzt ein Mischmodell: zwei Tage zu Hause, drei im Büro."
+      },
+      {
+       "fa": "شما کدام را ترجیح می‌دهید؟",
+       "tr": "schomā kodām rā tardschīh mīdahīd?",
+       "de": "Was bevorzugen Sie?"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "دورکاری بعد از کرونا عادی شد.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "در دورکاری آدم وقتش را در ترافیک تلف می‌کند.",
+       "fest": true,
+       "erkl": "Man verliert <b>keine</b> Zeit im Stau."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "بعضی‌ها در دورکاری احساس تنهایی می‌کنند.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "مدل ترکیبی یعنی همیشه در خانه.",
+       "fest": true,
+       "erkl": "Es heißt: <b>zwei Tage zu Hause, drei im Büro</b>."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Was ist ein Vorteil von Homeoffice?",
+       "optionen": [
+        "kein Stau",
+        "mehr Kollegen",
+        "weniger Arbeit"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was ist ein Nachteil?",
+       "optionen": [
+        "Einsamkeit",
+        "zu viel Verkehr",
+        "schlechtes Essen"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was ist das Mischmodell?",
+       "optionen": [
+        "2 Tage zu Hause, 3 im Büro",
+        "nur Büro",
+        "nur Homeoffice"
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "بعضی‌ها دورکاری را خیلی دوست دارند: وقتشان در ترافیک تلف نمی‌شود.",
+       "tr": "baʿzīhā dūrkārī rā cheylī dūst dārand: waghteschān dar terāfīk talaf nemīschawad.",
+       "de": "Manche lieben Homeoffice: Sie verlieren keine Zeit im Stau."
+      },
+      {
+       "fa": "آنها می‌توانند با لباس راحت کار کنند و ناهار را در خانه بخورند.",
+       "tr": "ānhā mītawānand bā lebās-e rāhat kār konand o nāhār rā dar chāne bechorand.",
+       "de": "Sie können in bequemer Kleidung arbeiten und zu Hause zu Mittag essen."
+      },
+      {
+       "fa": "اما برای بعضی‌ها دورکاری سخت است.",
+       "tr": "ammā barā-ye baʿzīhā dūrkārī sacht ast.",
+       "de": "Aber für manche ist Homeoffice schwer."
+      },
+      {
+       "fa": "آنها احساس تنهایی می‌کنند و مرز بین کار و زندگی را گم می‌کنند.",
+       "tr": "ānhā ehsās-e tanhāyī mīkonand o marz-e beyn-e kār o zendegī rā gom mīkonand.",
+       "de": "Sie fühlen sich einsam und verlieren die Grenze zwischen Arbeit und Leben."
+      },
+      {
+       "fa": "بسیاری از شرکت‌ها حالا مدل ترکیبی دارند: دو روز در خانه، سه روز در دفتر.",
+       "tr": "besyārī az scherkathā hālā model-e tarkībī dārand: do rūz dar chāne, se rūz dar daftar.",
+       "de": "Viele Firmen haben jetzt ein Mischmodell: zwei Tage zu Hause, drei im Büro."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

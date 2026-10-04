@@ -1,0 +1,309 @@
+{
+ "id": "tx",
+ "art": "texte",
+ "titel": "Texte & Dialoge",
+ "beschreibung": "Ein zweiter Dialog und ein weiterer Lesetext.",
+ "stationen": [
+  {
+   "id": "d2",
+   "titel": "Dialog: Wo ist das Museum?",
+   "vorschau": "Wo ist das Museum?",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Lea steht in Isfahan am Naghsch-e-Dschahan-Platz und sucht das Musikmuseum. Sie fragt einen Passanten.</p>"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "لئا: ببخشید آقا، موزه‌ی موسیقی کجاست؟",
+       "tr": "bebachschīd āghā, mūze-ye mūsīghī kodschāst?",
+       "de": "Entschuldigung, wo ist das Musikmuseum?"
+      },
+      {
+       "fa": "رهگذر: موزه‌ی موسیقی؟ از اینجا خیلی دور نیست.",
+       "tr": "mūze-ye mūsīghī? az īndschā cheylī dūr nīst.",
+       "de": "Das Musikmuseum? Nicht weit von hier."
+      },
+      {
+       "fa": "رهگذر: از میدون برید بیرون، سمت پل خواجو.",
+       "tr": "az meydūn berīd bīrūn, samt-e pol-e chādschū.",
+       "de": "Gehen Sie aus dem Platz raus, Richtung Chadschu-Brücke."
+      },
+      {
+       "fa": "لئا: پیاده می‌شه رفت؟",
+       "tr": "piyāde mīsche raft?",
+       "de": "Kann man zu Fuß gehen?"
+      },
+      {
+       "fa": "رهگذر: آره، ولی بیست دقیقه راهه. با تاکسی پنج دقیقه‌ست.",
+       "tr": "āre, walī bīst daghīghe rāhe. bā tāksī pandsch daghīghast.",
+       "de": "Ja, aber es sind zwanzig Minuten. Mit dem Taxi fünf Minuten."
+      },
+      {
+       "fa": "لئا: پیاده می‌رم، هوا خوبه. بعد از پل کجا؟",
+       "tr": "piyāde mīram, hawā chūbe. baʿd az pol kodschā?",
+       "de": "Ich gehe zu Fuß, das Wetter ist schön. Wohin nach der Brücke?"
+      },
+      {
+       "fa": "رهگذر: سر کوچه‌ی دوم دست راست. یه در آبی داره.",
+       "tr": "sar-e kūtsche-ye dowwom dast-e rāst. ye dar-e ābī dāre.",
+       "de": "An der zweiten Gasse rechts. Es hat eine blaue Tür."
+      },
+      {
+       "fa": "لئا: خیلی ممنون، لطف کردید!",
+       "tr": "cheylī mamnūn, lotf kardīd!",
+       "de": "Vielen Dank, sehr freundlich!"
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "لئا: ببخشید آقا، موزه‌ی موسیقی کجاست؟",
+       "tr": "bebachschīd āghā, mūze-ye mūsīghī kodschāst?",
+       "de": "Entschuldigung, wo ist das Musikmuseum?"
+      },
+      {
+       "fa": "رهگذر: موزه‌ی موسیقی؟ از اینجا خیلی دور نیست.",
+       "tr": "mūze-ye mūsīghī? az īndschā cheylī dūr nīst.",
+       "de": "Das Musikmuseum? Nicht weit von hier."
+      },
+      {
+       "fa": "رهگذر: از میدون برید بیرون، سمت پل خواجو.",
+       "tr": "az meydūn berīd bīrūn, samt-e pol-e chādschū.",
+       "de": "Gehen Sie aus dem Platz raus, Richtung Chadschu-Brücke."
+      },
+      {
+       "fa": "لئا: پیاده می‌شه رفت؟",
+       "tr": "piyāde mīsche raft?",
+       "de": "Kann man zu Fuß gehen?"
+      },
+      {
+       "fa": "رهگذر: آره، ولی بیست دقیقه راهه. با تاکسی پنج دقیقه‌ست.",
+       "tr": "āre, walī bīst daghīghe rāhe. bā tāksī pandsch daghīghast.",
+       "de": "Ja, aber es sind zwanzig Minuten. Mit dem Taxi fünf Minuten."
+      },
+      {
+       "fa": "لئا: پیاده می‌رم، هوا خوبه. بعد از پل کجا؟",
+       "tr": "piyāde mīram, hawā chūbe. baʿd az pol kodschā?",
+       "de": "Ich gehe zu Fuß, das Wetter ist schön. Wohin nach der Brücke?"
+      },
+      {
+       "fa": "رهگذر: سر کوچه‌ی دوم دست راست. یه در آبی داره.",
+       "tr": "sar-e kūtsche-ye dowwom dast-e rāst. ye dar-e ābī dāre.",
+       "de": "An der zweiten Gasse rechts. Es hat eine blaue Tür."
+      },
+      {
+       "fa": "لئا: خیلی ممنون، لطف کردید!",
+       "tr": "cheylī mamnūn, lotf kardīd!",
+       "de": "Vielen Dank, sehr freundlich!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Wohin will Lea?",
+       "optionen": [
+        "zum Musikmuseum",
+        "zur Chadschu-Brücke",
+        "zum Basar"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie lange dauert es zu Fuß?",
+       "optionen": [
+        "20 Minuten",
+        "5 Minuten",
+        "eine Stunde"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Woran erkennt man das Museum?",
+       "optionen": [
+        "an einer blauen Tür",
+        "an einem großen Schild",
+        "an einem Garten"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t2",
+   "titel": "Text: Verkehr in Teheran",
+   "vorschau": "Verkehr in Teheran",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Text: Verkehr in Teheran",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "تهران با بیش از نه میلیون نفر جمعیت، ترافیک سنگینی دارد.",
+       "tr": "tehrān bā bīsch az noh mīliyūn nafar dschamʿiyat, terāfīk-e sangīnī dārad.",
+       "de": "Teheran hat mit über neun Millionen Einwohnern starken Verkehr."
+      },
+      {
+       "fa": "در ساعت‌های اوج، یک مسیر کوتاه ممکن است یک ساعت طول بکشد.",
+       "tr": "dar sāʿathā-ye oudsch, yek masīr-e kūtāh momken ast yek sāʿat tūl bekeschad.",
+       "de": "Zur Stoßzeit kann eine kurze Strecke eine Stunde dauern."
+      },
+      {
+       "fa": "برای کم کردن ترافیک، در مرکز شهر «طرح ترافیک» اجرا می‌شود.",
+       "tr": "barā-ye kam kardan-e terāfīk, dar markaz-e schahr «tarh-e terāfīk» edschrā mīschawad.",
+       "de": "Um den Verkehr zu verringern, gilt im Zentrum eine Verkehrszone."
+      },
+      {
+       "fa": "ماشین‌هایی که مجوز ندارند، نمی‌توانند وارد این منطقه شوند.",
+       "tr": "māschīnhāyī ke modschawwez nadārand, nemītawānand wāred-e īn mantaghe schawand.",
+       "de": "Autos ohne Genehmigung dürfen nicht in diese Zone fahren."
+      },
+      {
+       "fa": "به همین دلیل خیلی‌ها از مترو و موتور استفاده می‌کنند.",
+       "tr": "be hamīn dalīl cheylīhā az metro o motor estefāde mīkonand.",
+       "de": "Deshalb nutzen viele die Metro und Motorräder."
+      },
+      {
+       "fa": "آلودگی هوا هم در زمستان یک مشکل جدی است.",
+       "tr": "āludegī-ye hawā ham dar zemestān yek moschkel-e dschedī ast.",
+       "de": "Auch die Luftverschmutzung ist im Winter ein ernstes Problem."
+      },
+      {
+       "fa": "در روزهای آلوده، گاهی مدرسه‌ها و اداره‌ها تعطیل می‌شوند.",
+       "tr": "dar rūzhā-ye ālūde, gāhī madresehā o edārehā taʿtīl mīschawand.",
+       "de": "An Smogtagen werden manchmal Schulen und Behörden geschlossen."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "ترافیک تهران سبک است.",
+       "fest": true,
+       "erkl": "Der Verkehr ist <b>stark</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "در مرکز شهر طرح ترافیک وجود دارد.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "همه‌ی ماشین‌ها می‌توانند وارد مرکز شهر شوند.",
+       "fest": true,
+       "erkl": "Nur mit <b>Genehmigung</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "آلودگی هوا در زمستان مشکل است.",
+       "fest": true
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Was nutzen viele wegen des Verkehrs?",
+       "optionen": [
+        "Metro und Motorräder",
+        "Pferde",
+        "Boote"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was passiert an Smogtagen manchmal?",
+       "optionen": [
+        "Schulen werden geschlossen.",
+        "Die Metro ist gratis.",
+        "Autos fahren schneller."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie lange kann eine kurze Strecke zur Stoßzeit dauern?",
+       "optionen": [
+        "eine Stunde",
+        "fünf Minuten",
+        "einen Tag"
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "در ساعت‌های اوج، یک مسیر کوتاه ممکن است یک ساعت طول بکشد.",
+       "tr": "dar sāʿathā-ye oudsch, yek masīr-e kūtāh momken ast yek sāʿat tūl bekeschad.",
+       "de": "Zur Stoßzeit kann eine kurze Strecke eine Stunde dauern."
+      },
+      {
+       "fa": "برای کم کردن ترافیک، در مرکز شهر «طرح ترافیک» اجرا می‌شود.",
+       "tr": "barā-ye kam kardan-e terāfīk, dar markaz-e schahr «tarh-e terāfīk» edschrā mīschawad.",
+       "de": "Um den Verkehr zu verringern, gilt im Zentrum eine Verkehrszone."
+      },
+      {
+       "fa": "ماشین‌هایی که مجوز ندارند، نمی‌توانند وارد این منطقه شوند.",
+       "tr": "māschīnhāyī ke modschawwez nadārand, nemītawānand wāred-e īn mantaghe schawand.",
+       "de": "Autos ohne Genehmigung dürfen nicht in diese Zone fahren."
+      },
+      {
+       "fa": "به همین دلیل خیلی‌ها از مترو و موتور استفاده می‌کنند.",
+       "tr": "be hamīn dalīl cheylīhā az metro o motor estefāde mīkonand.",
+       "de": "Deshalb nutzen viele die Metro und Motorräder."
+      },
+      {
+       "fa": "آلودگی هوا هم در زمستان یک مشکل جدی است.",
+       "tr": "āludegī-ye hawā ham dar zemestān yek moschkel-e dschedī ast.",
+       "de": "Auch die Luftverschmutzung ist im Winter ein ernstes Problem."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,872 @@
+{
+ "id": "z1",
+ "titel": "Trainingspaket",
+ "beschreibung": "Wort-Marathon, Redemittel, Lückensätze und Satzbau.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "Wort-Marathon",
+   "vorschau": "⏱️",
+   "karten": [
+    {
+     "typ": "tempo",
+     "titel": "Marathon: alle Wörter",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 120,
+     "ziel": 25,
+     "woerter": [
+      {
+       "fa": "ایستگاه",
+       "a": "Haltestelle, Station"
+      },
+      {
+       "fa": "مترو",
+       "a": "U-Bahn"
+      },
+      {
+       "fa": "اتوبوس",
+       "a": "Bus"
+      },
+      {
+       "fa": "تاکسی",
+       "a": "Taxi"
+      },
+      {
+       "fa": "راننده",
+       "a": "Fahrer/in"
+      },
+      {
+       "fa": "مسافر",
+       "a": "Fahrgast, Reisende/r"
+      },
+      {
+       "fa": "چهارراه",
+       "a": "Kreuzung"
+      },
+      {
+       "fa": "میدان",
+       "a": "Platz"
+      },
+      {
+       "fa": "خیابان",
+       "a": "Straße"
+      },
+      {
+       "fa": "کوچه",
+       "a": "Gasse"
+      },
+      {
+       "fa": "ترافیک",
+       "a": "Stau, Verkehr"
+      },
+      {
+       "fa": "بلیت",
+       "a": "Fahrkarte"
+      },
+      {
+       "fa": "مستقیم",
+       "a": "geradeaus"
+      },
+      {
+       "fa": "سمت راست",
+       "a": "rechts"
+      },
+      {
+       "fa": "سمت چپ",
+       "a": "links"
+      },
+      {
+       "fa": "نزدیک",
+       "a": "nah"
+      },
+      {
+       "fa": "قطار",
+       "a": "Zug"
+      },
+      {
+       "fa": "هواپیما",
+       "a": "Flugzeug"
+      },
+      {
+       "fa": "موتور",
+       "a": "Motorrad"
+      },
+      {
+       "fa": "دوچرخه",
+       "a": "Fahrrad"
+      },
+      {
+       "fa": "اسکوتر",
+       "a": "Roller"
+      },
+      {
+       "fa": "ون",
+       "a": "Minibus"
+      },
+      {
+       "fa": "تاکسی تلفنی",
+       "a": "Funktaxi"
+      },
+      {
+       "fa": "آژانس",
+       "a": "Taxiunternehmen"
+      },
+      {
+       "fa": "پایانه",
+       "a": "Busbahnhof"
+      },
+      {
+       "fa": "فرودگاه",
+       "a": "Flughafen"
+      },
+      {
+       "fa": "ایستگاه قطار",
+       "a": "Bahnhof"
+      },
+      {
+       "fa": "خط",
+       "a": "Linie"
+      },
+      {
+       "fa": "بزرگراه",
+       "a": "Schnellstraße"
+      },
+      {
+       "fa": "پل",
+       "a": "Brücke"
+      },
+      {
+       "fa": "پیاده‌رو",
+       "a": "Gehweg"
+      },
+      {
+       "fa": "چراغ قرمز",
+       "a": "rote Ampel"
+      },
+      {
+       "fa": "خط عابر پیاده",
+       "a": "Zebrastreifen"
+      },
+      {
+       "fa": "پارکینگ",
+       "a": "Parkplatz"
+      },
+      {
+       "fa": "بیمارستان",
+       "a": "Krankenhaus"
+      },
+      {
+       "fa": "بانک",
+       "a": "Bank"
+      },
+      {
+       "fa": "داروخانه",
+       "a": "Apotheke"
+      },
+      {
+       "fa": "پمپ بنزین",
+       "a": "Tankstelle"
+      },
+      {
+       "fa": "مرکز خرید",
+       "a": "Einkaufszentrum"
+      },
+      {
+       "fa": "روبه‌روی",
+       "a": "gegenüber von"
+      },
+      {
+       "fa": "کنار",
+       "a": "neben"
+      },
+      {
+       "fa": "پشت",
+       "a": "hinter"
+      },
+      {
+       "fa": "جلوی",
+       "a": "vor"
+      },
+      {
+       "fa": "بین",
+       "a": "zwischen"
+      },
+      {
+       "fa": "سر کوچه",
+       "a": "an der Ecke"
+      },
+      {
+       "fa": "ته خیابان",
+       "a": "am Ende der Straße"
+      },
+      {
+       "fa": "دور",
+       "a": "weit"
+      },
+      {
+       "fa": "بالا",
+       "a": "oben, hinauf"
+      },
+      {
+       "fa": "پایین",
+       "a": "unten, hinunter"
+      },
+      {
+       "fa": "نقشه",
+       "a": "Karte, Stadtplan"
+      },
+      {
+       "fa": "آدرس",
+       "a": "Adresse"
+      },
+      {
+       "fa": "مسیر",
+       "a": "Route, Strecke"
+      },
+      {
+       "fa": "پیاده شدن",
+       "a": "aussteigen"
+      },
+      {
+       "fa": "سوار شدن",
+       "a": "einsteigen"
+      },
+      {
+       "fa": "پیچیدن",
+       "a": "abbiegen"
+      },
+      {
+       "fa": "دیر رسیدن",
+       "a": "zu spät kommen"
+      },
+      {
+       "fa": "گم شدن",
+       "a": "sich verlaufen"
+      },
+      {
+       "fa": "رد شدن",
+       "a": "vorbeigehen, überqueren"
+      },
+      {
+       "fa": "نگه داشتن",
+       "a": "anhalten"
+      },
+      {
+       "fa": "عوض کردن",
+       "a": "wechseln, umsteigen"
+      },
+      {
+       "fa": "رساندن",
+       "a": "jemanden hinbringen"
+      }
+     ]
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "موتور",
+       "tr": "motor",
+       "de": "Motorrad",
+       "emoji": "🏍️"
+      },
+      {
+       "fa": "سمت راست",
+       "tr": "samt-e rāst",
+       "de": "rechts",
+       "emoji": "➡️"
+      },
+      {
+       "fa": "مسیر",
+       "tr": "masīr",
+       "de": "Route, Strecke",
+       "emoji": "🧭"
+      },
+      {
+       "fa": "اتوبوس",
+       "tr": "otobūs",
+       "de": "Bus",
+       "emoji": "🚌"
+      },
+      {
+       "fa": "خط عابر پیاده",
+       "tr": "chatt-e ʿāber-e piyāde",
+       "de": "Zebrastreifen",
+       "emoji": "🦓"
+      },
+      {
+       "fa": "مرکز خرید",
+       "tr": "markaz-e charīd",
+       "de": "Einkaufszentrum",
+       "emoji": "🛍️"
+      }
+     ],
+     "titel": "Memory"
+    },
+    {
+     "typ": "memory",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "مستقیم",
+       "tr": "mostaghīm",
+       "de": "geradeaus",
+       "emoji": "⬆️"
+      },
+      {
+       "fa": "اتوبوس",
+       "tr": "otobūs",
+       "de": "Bus",
+       "emoji": "🚌"
+      },
+      {
+       "fa": "هواپیما",
+       "tr": "hawāpeymā",
+       "de": "Flugzeug",
+       "emoji": "✈️"
+      },
+      {
+       "fa": "چراغ قرمز",
+       "tr": "tscherāgh-e ghermez",
+       "de": "rote Ampel",
+       "emoji": "🚦"
+      },
+      {
+       "fa": "راننده",
+       "tr": "rānande",
+       "de": "Fahrer/in",
+       "emoji": "🧑‍✈️"
+      },
+      {
+       "fa": "نقشه",
+       "tr": "naghsche",
+       "de": "Karte, Stadtplan",
+       "emoji": "🗺️"
+      }
+     ],
+     "titel": "Memory: Wort & Bedeutung"
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Redemittel-Training",
+   "vorschau": "💬",
+   "karten": [
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Redemittel",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 80,
+     "ziel": 15,
+     "woerter": [
+      {
+       "fa": "ببخشید، ایستگاه مترو کجاست؟",
+       "a": "Entschuldigung, wo ist die U-Bahn-Station?"
+      },
+      {
+       "fa": "مستقیم برید، سر چهارراه بپیچید دست راست.",
+       "a": "Gehen Sie geradeaus, an der Kreuzung rechts."
+      },
+      {
+       "fa": "پیاده چقدر راهه؟",
+       "a": "Wie weit ist es zu Fuß?"
+      },
+      {
+       "fa": "آقا، دربست؟",
+       "a": "Taxi für mich allein?"
+      },
+      {
+       "fa": "همین‌جا نگه دارید، لطفاً.",
+       "a": "Halten Sie bitte hier."
+      },
+      {
+       "fa": "از کدوم طرف بریم که ترافیک نباشه؟",
+       "a": "Welchen Weg nehmen wir, damit wir nicht im Stau stehen?"
+      },
+      {
+       "fa": "کرایه چقدر می‌شه؟",
+       "a": "Wie viel kostet die Fahrt?"
+      },
+      {
+       "fa": "ببخشید، دیر کردم.",
+       "a": "Entschuldige, ich bin spät dran."
+      },
+      {
+       "fa": "تو ترافیک گیر کردم.",
+       "a": "Ich stecke im Stau."
+      },
+      {
+       "fa": "ده دقیقه دیگه می‌رسم.",
+       "a": "Ich bin in zehn Minuten da."
+      },
+      {
+       "fa": "ببخشید، این اتوبوس میره میدون آزادی؟",
+       "a": "Entschuldigung, fährt dieser Bus zum Azadi-Platz?"
+      },
+      {
+       "fa": "کجا باید پیاده شم؟",
+       "a": "Wo muss ich aussteigen?"
+      },
+      {
+       "fa": "کجا باید خطو عوض کنم؟",
+       "a": "Wo muss ich umsteigen?"
+      },
+      {
+       "fa": "لطفاً کولرو روشن کنید.",
+       "a": "Machen Sie bitte die Klimaanlage an."
+      },
+      {
+       "fa": "یه کم آروم‌تر برید، لطفاً.",
+       "a": "Fahren Sie bitte etwas langsamer."
+      },
+      {
+       "fa": "می‌تونی منو برسونی؟",
+       "a": "Kannst du mich hinbringen?"
+      },
+      {
+       "fa": "هنوز نرسیدم، شروع کنید!",
+       "a": "Ich bin noch nicht da, fangt schon an!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welcher Satz ist das?",
+     "fragen": [
+      {
+       "frage": "„Ich bin noch nicht da, fangt schon an!“",
+       "optionen": [
+        "هنوز نرسیدم، شروع کنید!",
+        "کرایه چقدر می‌شه؟",
+        "ده دقیقه دیگه می‌رسم."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Wie viel kostet die Fahrt?“",
+       "optionen": [
+        "کرایه چقدر می‌شه؟",
+        "لطفاً کولرو روشن کنید.",
+        "کجا باید خطو عوض کنم؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Wo muss ich aussteigen?“",
+       "optionen": [
+        "کجا باید پیاده شم؟",
+        "پیاده چقدر راهه؟",
+        "آقا، دربست؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Fahren Sie bitte etwas langsamer.“",
+       "optionen": [
+        "یه کم آروم‌تر برید، لطفاً.",
+        "ببخشید، این اتوبوس میره میدون آزادی؟",
+        "کرایه چقدر می‌شه؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Gehen Sie geradeaus, an der Kreuzung rechts.“",
+       "optionen": [
+        "مستقیم برید، سر چهارراه بپیچید دست راست.",
+        "تو ترافیک گیر کردم.",
+        "یه کم آروم‌تر برید، لطفاً."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Halten Sie bitte hier.“",
+       "optionen": [
+        "همین‌جا نگه دارید، لطفاً.",
+        "ببخشید، دیر کردم.",
+        "ببخشید، این اتوبوس میره میدون آزادی؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Welchen Weg nehmen wir, damit wir nicht im Stau stehen?“",
+       "optionen": [
+        "از کدوم طرف بریم که ترافیک نباشه؟",
+        "هنوز نرسیدم، شروع کنید!",
+        "همین‌جا نگه دارید، لطفاً."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Entschuldigung, fährt dieser Bus zum Azadi-Platz?“",
+       "optionen": [
+        "ببخشید، این اتوبوس میره میدون آزادی؟",
+        "یه کم آروم‌تر برید، لطفاً.",
+        "ببخشید، دیر کردم."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Wie sagt man das?",
+     "fragen": [
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Kannst du mich hinbringen?",
+        "Welchen Weg nehmen wir, damit wir nicht im Stau stehen?",
+        "Ich bin in zehn Minuten da."
+       ],
+       "richtig": 0,
+       "fa": "می‌تونی منو برسونی؟"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Ich stecke im Stau.",
+        "Wo muss ich aussteigen?",
+        "Wie weit ist es zu Fuß?"
+       ],
+       "richtig": 0,
+       "fa": "تو ترافیک گیر کردم."
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Ich bin in zehn Minuten da.",
+        "Wo muss ich umsteigen?",
+        "Entschuldigung, fährt dieser Bus zum Azadi-Platz?"
+       ],
+       "richtig": 0,
+       "fa": "ده دقیقه دیگه می‌رسم."
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Halten Sie bitte hier.",
+        "Wo muss ich aussteigen?",
+        "Wie weit ist es zu Fuß?"
+       ],
+       "richtig": 0,
+       "fa": "همین‌جا نگه دارید، لطفاً."
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Machen Sie bitte die Klimaanlage an.",
+        "Kannst du mich hinbringen?",
+        "Wo muss ich aussteigen?"
+       ],
+       "richtig": 0,
+       "fa": "لطفاً کولرو روشن کنید."
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Entschuldigung, fährt dieser Bus zum Azadi-Platz?",
+        "Ich stecke im Stau.",
+        "Wie viel kostet die Fahrt?"
+       ],
+       "richtig": 0,
+       "fa": "ببخشید، این اتوبوس میره میدون آزادی؟"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Welchen Weg nehmen wir, damit wir nicht im Stau stehen?",
+        "Wo muss ich aussteigen?",
+        "Halten Sie bitte hier."
+       ],
+       "richtig": 0,
+       "fa": "از کدوم طرف بریم که ترافیک نباشه؟"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Wo muss ich umsteigen?",
+        "Entschuldige, ich bin spät dran.",
+        "Ich bin noch nicht da, fangt schon an!"
+       ],
+       "richtig": 0,
+       "fa": "کجا باید خطو عوض کنم؟"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "titel": "Lückensätze",
+   "vorschau": "___",
+   "karten": [
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>برای رفتن به مشهد ___ گرفتم؛ دوازده ساعت طول می‌کشد.</span><br><span class='mini'>Um nach Maschhad zu fahren, habe ich den Zug genommen; es dauert zwölf Stunden.</span>",
+       "optionen": [
+        "قطار",
+        "مترو",
+        "سمت راست"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>برای رفتن به مشهد قطار گرفتم؛ دوازده ساعت طول می‌کشد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>پرواز ما ساعت شش صبح از ___ امام است.</span><br><span class='mini'>Unser Flug geht um sechs Uhr morgens vom Imam-Flughafen.</span>",
+       "optionen": [
+        "فرودگاه",
+        "تاکسی تلفنی",
+        "جلوی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>پرواز ما ساعت شش صبح از فرودگاه امام است.</span>"
+      },
+      {
+       "frage": "<span class='fa'>در تهران خیلی‌ها با ___ کار می‌کنند و از وسط ترافیک رد می‌شوند.</span><br><span class='mini'>In Teheran fahren viele mit dem Motorrad und schlängeln sich durch den Stau.</span>",
+       "optionen": [
+        "موتور",
+        "مستقیم",
+        "پل"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>در تهران خیلی‌ها با موتور کار می‌کنند و از وسط ترافیک رد می‌شوند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>اتوبوس‌های بین‌شهری از ___ جنوب حرکت می‌کنند.</span><br><span class='mini'>Überlandbusse fahren vom Südbusbahnhof ab.</span>",
+       "optionen": [
+        "پایانه",
+        "سمت چپ",
+        "چهارراه"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>اتوبوس‌های بین‌شهری از پایانه جنوب حرکت می‌کنند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>پشت ___ بایستید!</span><br><span class='mini'>Halten Sie an der roten Ampel!</span>",
+       "optionen": [
+        "چراغ قرمز",
+        "بانک",
+        "مترو"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>پشت چراغ قرمز بایستید!</span>"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>از روی ___ از خیابان رد شوید.</span><br><span class='mini'>Überqueren Sie die Straße am Zebrastreifen.</span>",
+       "optionen": [
+        "خط عابر پیاده",
+        "جلوی",
+        "بالا"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>از روی خط عابر پیاده از خیابان رد شوید.</span>"
+      },
+      {
+       "frage": "<span class='fa'>داروخانه ___ بانک است، آن طرف خیابان.</span><br><span class='mini'>Die Apotheke ist gegenüber der Bank, auf der anderen Straßenseite.</span>",
+       "optionen": [
+        "روبه‌روی",
+        "پایین",
+        "مترو"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>داروخانه روبه‌روی بانک است، آن طرف خیابان.</span>"
+      },
+      {
+       "frage": "<span class='fa'>کافه ___ کتابخانه و پارک است.</span><br><span class='mini'>Das Café ist zwischen der Bibliothek und dem Park.</span>",
+       "optionen": [
+        "بین",
+        "پیاده‌رو",
+        "نزدیک"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>کافه بین کتابخانه و پارک است.</span>"
+      },
+      {
+       "frage": "<span class='fa'>___ دقیق را برایم بفرست تا در اسنپ وارد کنم.</span><br><span class='mini'>Schick mir die genaue Adresse, damit ich sie bei Snapp eingebe.</span>",
+       "optionen": [
+        "آدرس",
+        "داروخانه",
+        "پارکینگ"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>آدرس دقیق را برایم بفرست تا در اسنپ وارد کنم.</span>"
+      },
+      {
+       "frage": "<span class='fa'>بدون ___ در بازار گم می‌شوی!</span><br><span class='mini'>Ohne Karte verläufst du dich im Basar!</span>",
+       "optionen": [
+        "نقشه",
+        "بیمارستان",
+        "دور"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>بدون نقشه در بازار گم می‌شوی!</span>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "e",
+   "titel": "Satzbau-Profi",
+   "vorschau": "🧱",
+   "karten": [
+    {
+     "typ": "bauen",
+     "titel": "Baue den Satz",
+     "trenner": " ",
+     "woerter": [
+      {
+       "fa": "همین‌جا جلوی میدون خوبه. مرسی، خسته نباشید!",
+       "tr": "hamīndschā dschelou-ye meydūn chūbe. mersī, chaste nabāschīd!",
+       "de": "Hier vor dem Platz ist gut. Danke, schönen Tag noch!",
+       "teile": [
+        "همین‌جا",
+        "جلوی",
+        "میدون",
+        "خوبه",
+        "مرسی",
+        "خسته",
+        "نباشید"
+       ],
+       "extra": [
+        "یه"
+       ]
+      },
+      {
+       "fa": "آره، ولی بیست دقیقه راهه. با تاکسی پنج دقیقه‌ست.",
+       "tr": "āre, walī bīst daghīghe rāhe. bā tāksī pandsch daghīghast.",
+       "de": "Ja, aber es sind zwanzig Minuten. Mit dem Taxi fünf Minuten.",
+       "teile": [
+        "آره",
+        "ولی",
+        "بیست",
+        "دقیقه",
+        "راهه",
+        "با",
+        "تاکسی",
+        "پنج",
+        "دقیقه‌ست"
+       ],
+       "extra": [
+        "از"
+       ]
+      },
+      {
+       "fa": "سر کوچه‌ی دوم دست راست. یه در آبی داره.",
+       "tr": "sar-e kūtsche-ye dowwom dast-e rāst. ye dar-e ābī dāre.",
+       "de": "An der zweiten Gasse rechts. Es hat eine blaue Tür.",
+       "teile": [
+        "سر",
+        "کوچه‌ی",
+        "دوم",
+        "دست",
+        "راست",
+        "یه",
+        "در",
+        "آبی",
+        "داره"
+       ],
+       "extra": [
+        "دقیقه‌ست."
+       ]
+      },
+      {
+       "fa": "خیلی ممنون، لطف کردید!",
+       "tr": "cheylī mamnūn, lotf kardīd!",
+       "de": "Vielen Dank, sehr freundlich!",
+       "teile": [
+        "خیلی",
+        "ممنون",
+        "لطف",
+        "کردید"
+       ],
+       "extra": [
+        "تاکسی"
+       ]
+      },
+      {
+       "fa": "از آلمان. مرسی، دارم تمرین می‌کنم!",
+       "tr": "az ālmān. mersī, dāram tamrīn mīkonam!",
+       "de": "Aus Deutschland. Danke, ich übe noch!",
+       "teile": [
+        "از",
+        "آلمان",
+        "مرسی",
+        "دارم",
+        "تمرین",
+        "می‌کنم"
+       ],
+       "extra": [
+        "موزه‌ی"
+       ]
+      },
+      {
+       "fa": "سلام، بله. می‌رم بازار تجریش.",
+       "tr": "salām, bale. mīram bāzār-e tadschrīsch.",
+       "de": "Hallo, ja. Ich fahre zum Tadschrisch-Basar.",
+       "teile": [
+        "سلام",
+        "بله",
+        "می‌رم",
+        "بازار",
+        "تجریش"
+       ],
+       "extra": [
+        "دوم"
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

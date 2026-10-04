@@ -1,0 +1,309 @@
+{
+ "id": "tx",
+ "art": "texte",
+ "titel": "Texte & Dialoge",
+ "beschreibung": "Ein zweiter Dialog und ein weiterer Lesetext.",
+ "stationen": [
+  {
+   "id": "d2",
+   "titel": "Dialog: In der Apotheke",
+   "vorschau": "In der Apotheke",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Daniel hat Schnupfen und Husten. Er geht abends in eine Apotheke in Teheran.</p>"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "داروساز: سلام، بفرمایید.",
+       "tr": "salām, befarmāyīd.",
+       "de": "Hallo, bitte schön."
+      },
+      {
+       "fa": "دانیل: سلام. سرما خوردم، آبریزش بینی و سرفه دارم.",
+       "tr": "salām. sarmā chordam, ābrīzesch-e bīnī o sorfe dāram.",
+       "de": "Hallo. Ich bin erkältet, habe Schnupfen und Husten."
+      },
+      {
+       "fa": "داروساز: تب هم دارید؟",
+       "tr": "tab ham dārīd?",
+       "de": "Haben Sie auch Fieber?"
+      },
+      {
+       "fa": "دانیل: نه، فقط یه کم خسته‌م.",
+       "tr": "na, faghat ye kam chastam.",
+       "de": "Nein, ich bin nur etwas müde."
+      },
+      {
+       "fa": "داروساز: این شربت سرفه رو شبی یه قاشق بخورید. این قرصا هم برای آبریزش بینیه.",
+       "tr": "īn scharbat-e sorfe ro schabī ye ghāschogh bochorīd. īn ghorsā ham barā-ye ābrīzesch-e bīnīye.",
+       "de": "Von diesem Hustensaft nehmen Sie abends einen Löffel. Diese Tabletten sind gegen Schnupfen."
+      },
+      {
+       "fa": "دانیل: خواب‌آور هستن؟ فردا باید رانندگی کنم.",
+       "tr": "chābāwar hastan? fardā bāyad rānandegī konam.",
+       "de": "Machen sie müde? Ich muss morgen Auto fahren."
+      },
+      {
+       "fa": "داروساز: شربت یه کم خواب‌آوره، ولی قرصا نه. شربت رو فقط شب بخورید.",
+       "tr": "scharbat ye kam chābāware, walī ghorsā na. scharbat ro faghat schab bochorīd.",
+       "de": "Der Saft macht etwas müde, die Tabletten nicht. Nehmen Sie den Saft nur abends."
+      },
+      {
+       "fa": "دانیل: خیلی ممنون. چقدر می‌شه؟",
+       "tr": "cheylī mamnūn. tscheghadr mīsche?",
+       "de": "Vielen Dank. Was macht das?"
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "داروساز: سلام، بفرمایید.",
+       "tr": "salām, befarmāyīd.",
+       "de": "Hallo, bitte schön."
+      },
+      {
+       "fa": "دانیل: سلام. سرما خوردم، آبریزش بینی و سرفه دارم.",
+       "tr": "salām. sarmā chordam, ābrīzesch-e bīnī o sorfe dāram.",
+       "de": "Hallo. Ich bin erkältet, habe Schnupfen und Husten."
+      },
+      {
+       "fa": "داروساز: تب هم دارید؟",
+       "tr": "tab ham dārīd?",
+       "de": "Haben Sie auch Fieber?"
+      },
+      {
+       "fa": "دانیل: نه، فقط یه کم خسته‌م.",
+       "tr": "na, faghat ye kam chastam.",
+       "de": "Nein, ich bin nur etwas müde."
+      },
+      {
+       "fa": "داروساز: این شربت سرفه رو شبی یه قاشق بخورید. این قرصا هم برای آبریزش بینیه.",
+       "tr": "īn scharbat-e sorfe ro schabī ye ghāschogh bochorīd. īn ghorsā ham barā-ye ābrīzesch-e bīnīye.",
+       "de": "Von diesem Hustensaft nehmen Sie abends einen Löffel. Diese Tabletten sind gegen Schnupfen."
+      },
+      {
+       "fa": "دانیل: خواب‌آور هستن؟ فردا باید رانندگی کنم.",
+       "tr": "chābāwar hastan? fardā bāyad rānandegī konam.",
+       "de": "Machen sie müde? Ich muss morgen Auto fahren."
+      },
+      {
+       "fa": "داروساز: شربت یه کم خواب‌آوره، ولی قرصا نه. شربت رو فقط شب بخورید.",
+       "tr": "scharbat ye kam chābāware, walī ghorsā na. scharbat ro faghat schab bochorīd.",
+       "de": "Der Saft macht etwas müde, die Tabletten nicht. Nehmen Sie den Saft nur abends."
+      },
+      {
+       "fa": "دانیل: خیلی ممنون. چقدر می‌شه؟",
+       "tr": "cheylī mamnūn. tscheghadr mīsche?",
+       "de": "Vielen Dank. Was macht das?"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Welche Beschwerden hat Daniel?",
+       "optionen": [
+        "Schnupfen und Husten",
+        "Fieber und Bauchschmerzen",
+        "Zahnschmerzen"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Warum fragt Daniel, ob die Mittel müde machen?",
+       "optionen": [
+        "Er muss morgen Auto fahren.",
+        "Er hat eine Prüfung.",
+        "Er kann nicht schlafen."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wann soll er den Hustensaft nehmen?",
+       "optionen": [
+        "nur abends",
+        "morgens",
+        "dreimal täglich"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t2",
+   "titel": "Text: Gesund leben – fünf Tipps",
+   "vorschau": "Gesund leben – fünf Tipps",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Text: Gesund leben – fünf Tipps",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "پنج پیشنهاد ساده برای یک زندگی سالم‌تر:",
+       "tr": "pandsch pīschnahād-e sāde barā-ye yek zendegī-ye sālemtar:",
+       "de": "Fünf einfache Tipps für ein gesünderes Leben:"
+      },
+      {
+       "fa": "۱. هر روز حداقل نیم ساعت پیاده‌روی کنید.",
+       "tr": "yek. har rūz haddeaghall nīm sāʿat piyāderawī konīd.",
+       "de": "1. Gehen Sie jeden Tag mindestens eine halbe Stunde spazieren."
+      },
+      {
+       "fa": "۲. روزی هشت لیوان آب بنوشید.",
+       "tr": "do. rūzī hascht līwān āb benūschīd.",
+       "de": "2. Trinken Sie täglich acht Gläser Wasser."
+      },
+      {
+       "fa": "۳. شب‌ها حداقل هفت ساعت بخوابید و قبل از خواب به گوشی نگاه نکنید.",
+       "tr": "se. schabhā haddeaghall haft sāʿat bechābīd o ghabl az chāb be gūschī negāh nakonīd.",
+       "de": "3. Schlafen Sie nachts mindestens sieben Stunden und schauen Sie vor dem Schlafen nicht aufs Handy."
+      },
+      {
+       "fa": "۴. میوه و سبزی تازه بخورید و کمتر قند و نمک مصرف کنید.",
+       "tr": "tschahār. mīwe o sabzī-ye tāze bochorīd o kamtar ghand o namak masraf konīd.",
+       "de": "4. Essen Sie frisches Obst und Gemüse und weniger Zucker und Salz."
+      },
+      {
+       "fa": "۵. با دوستانتان وقت بگذرانید؛ خندیدن هم برای سلامتی خوب است!",
+       "tr": "pandsch. bā dūstānetān waght begozarānīd; chandīdan ham barā-ye salāmatī chūb ast!",
+       "de": "5. Verbringen Sie Zeit mit Freunden – Lachen ist auch gut für die Gesundheit!"
+      },
+      {
+       "fa": "و یادتان باشد: هر سال یک بار برای چکاپ به پزشک بروید.",
+       "tr": "wa yādetān bāschad: har sāl yek bār barā-ye tschekāp be pezeschk berawīd.",
+       "de": "Und denken Sie daran: Gehen Sie einmal im Jahr zum Check-up zum Arzt."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "باید هر روز دو ساعت پیاده‌روی کرد.",
+       "fest": true,
+       "erkl": "Mindestens eine <b>halbe Stunde</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "روزی هشت لیوان آب خوب است.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "قبل از خواب گوشی خوب است.",
+       "fest": true,
+       "erkl": "Man soll vor dem Schlafen <b>nicht</b> aufs Handy schauen."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "خندیدن برای سلامتی خوب است.",
+       "fest": true
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Wie viele Stunden soll man schlafen?",
+       "optionen": [
+        "mindestens sieben",
+        "fünf",
+        "zehn"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wovon soll man weniger essen?",
+       "optionen": [
+        "Zucker und Salz",
+        "Obst",
+        "Gemüse"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie oft zum Check-up?",
+       "optionen": [
+        "einmal im Jahr",
+        "jeden Monat",
+        "nie"
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "۱. هر روز حداقل نیم ساعت پیاده‌روی کنید.",
+       "tr": "yek. har rūz haddeaghall nīm sāʿat piyāderawī konīd.",
+       "de": "1. Gehen Sie jeden Tag mindestens eine halbe Stunde spazieren."
+      },
+      {
+       "fa": "۲. روزی هشت لیوان آب بنوشید.",
+       "tr": "do. rūzī hascht līwān āb benūschīd.",
+       "de": "2. Trinken Sie täglich acht Gläser Wasser."
+      },
+      {
+       "fa": "۳. شب‌ها حداقل هفت ساعت بخوابید و قبل از خواب به گوشی نگاه نکنید.",
+       "tr": "se. schabhā haddeaghall haft sāʿat bechābīd o ghabl az chāb be gūschī negāh nakonīd.",
+       "de": "3. Schlafen Sie nachts mindestens sieben Stunden und schauen Sie vor dem Schlafen nicht aufs Handy."
+      },
+      {
+       "fa": "۴. میوه و سبزی تازه بخورید و کمتر قند و نمک مصرف کنید.",
+       "tr": "tschahār. mīwe o sabzī-ye tāze bochorīd o kamtar ghand o namak masraf konīd.",
+       "de": "4. Essen Sie frisches Obst und Gemüse und weniger Zucker und Salz."
+      },
+      {
+       "fa": "۵. با دوستانتان وقت بگذرانید؛ خندیدن هم برای سلامتی خوب است!",
+       "tr": "pandsch. bā dūstānetān waght begozarānīd; chandīdan ham barā-ye salāmatī chūb ast!",
+       "de": "5. Verbringen Sie Zeit mit Freunden – Lachen ist auch gut für die Gesundheit!"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

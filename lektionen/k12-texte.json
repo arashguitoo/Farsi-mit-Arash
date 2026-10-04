@@ -1,0 +1,309 @@
+{
+ "id": "tx",
+ "art": "texte",
+ "titel": "Texte & Dialoge",
+ "beschreibung": "Ein zweiter Dialog und ein weiterer Lesetext.",
+ "stationen": [
+  {
+   "id": "d2",
+   "titel": "Dialog: Konzertkarten",
+   "vorschau": "Konzertkarten",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Pegah hat zwei Karten für ein Konzert in Hamburg. Sie ruft ihren Freund Moritz an.</p>"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "پگاه: موریتس! دو تا بلیت کنسرت دارم. میای؟",
+       "tr": "moritz! do tā belīt-e konsert dāram. miyāy?",
+       "de": "Moritz! Ich habe zwei Konzertkarten. Kommst du mit?"
+      },
+      {
+       "fa": "موریتس: کنسرت کی؟",
+       "tr": "konsert-e kī?",
+       "de": "Von wem?"
+      },
+      {
+       "fa": "پگاه: یه گروه موسیقی تلفیقی ایرانی. تار و سنتور با موسیقی الکترونیک.",
+       "tr": "ye gorūh-e mūsīghī-ye talfīghī-ye īrānī. tār o santūr bā mūsīghī-ye elektronīk.",
+       "de": "Eine iranische Fusion-Band. Tar und Santur mit elektronischer Musik."
+      },
+      {
+       "fa": "موریتس: جالبه! تا حالا همچین چیزی نشنیدم.",
+       "tr": "dschālebe! tā hālā hamtschīn tschīzī naschnīdam.",
+       "de": "Interessant! So was habe ich noch nie gehört."
+      },
+      {
+       "fa": "پگاه: یه ویدیو ازشون تو اینستاگرام هست، لینکشو برات می‌فرستم.",
+       "tr": "ye wīdiyo azeschūn tū īnstāgrām hast, līnkescho barāt mīferestam.",
+       "de": "Es gibt ein Video von ihnen auf Instagram, ich schicke dir den Link."
+      },
+      {
+       "fa": "موریتس: … دیدمش. فوق‌العاده‌ست! کی هست؟",
+       "tr": "… dīdamesch. foghol ʿādast! key hast?",
+       "de": "… Hab’s gesehen. Fantastisch! Wann ist es?"
+      },
+      {
+       "fa": "پگاه: جمعه شب، ساعت هشت. با قطار می‌ریم.",
+       "tr": "dschomʿe schab, sāʿat-e hascht. bā ghatār mīrīm.",
+       "de": "Freitagabend, um acht. Wir fahren mit dem Zug."
+      },
+      {
+       "fa": "موریتس: قبول! من بلیت قطار رو می‌گیرم.",
+       "tr": "ghabūl! man belīt-e ghatār ro mīgīram.",
+       "de": "Abgemacht! Ich kaufe die Zugtickets."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "پگاه: موریتس! دو تا بلیت کنسرت دارم. میای؟",
+       "tr": "moritz! do tā belīt-e konsert dāram. miyāy?",
+       "de": "Moritz! Ich habe zwei Konzertkarten. Kommst du mit?"
+      },
+      {
+       "fa": "موریتس: کنسرت کی؟",
+       "tr": "konsert-e kī?",
+       "de": "Von wem?"
+      },
+      {
+       "fa": "پگاه: یه گروه موسیقی تلفیقی ایرانی. تار و سنتور با موسیقی الکترونیک.",
+       "tr": "ye gorūh-e mūsīghī-ye talfīghī-ye īrānī. tār o santūr bā mūsīghī-ye elektronīk.",
+       "de": "Eine iranische Fusion-Band. Tar und Santur mit elektronischer Musik."
+      },
+      {
+       "fa": "موریتس: جالبه! تا حالا همچین چیزی نشنیدم.",
+       "tr": "dschālebe! tā hālā hamtschīn tschīzī naschnīdam.",
+       "de": "Interessant! So was habe ich noch nie gehört."
+      },
+      {
+       "fa": "پگاه: یه ویدیو ازشون تو اینستاگرام هست، لینکشو برات می‌فرستم.",
+       "tr": "ye wīdiyo azeschūn tū īnstāgrām hast, līnkescho barāt mīferestam.",
+       "de": "Es gibt ein Video von ihnen auf Instagram, ich schicke dir den Link."
+      },
+      {
+       "fa": "موریتس: … دیدمش. فوق‌العاده‌ست! کی هست؟",
+       "tr": "… dīdamesch. foghol ʿādast! key hast?",
+       "de": "… Hab’s gesehen. Fantastisch! Wann ist es?"
+      },
+      {
+       "fa": "پگاه: جمعه شب، ساعت هشت. با قطار می‌ریم.",
+       "tr": "dschomʿe schab, sāʿat-e hascht. bā ghatār mīrīm.",
+       "de": "Freitagabend, um acht. Wir fahren mit dem Zug."
+      },
+      {
+       "fa": "موریتس: قبول! من بلیت قطار رو می‌گیرم.",
+       "tr": "ghabūl! man belīt-e ghatār ro mīgīram.",
+       "de": "Abgemacht! Ich kaufe die Zugtickets."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Was für Musik macht die Band?",
+       "optionen": [
+        "iranische Fusion mit Elektronik",
+        "klassische Musik",
+        "Rap"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wann ist das Konzert?",
+       "optionen": [
+        "Freitagabend um acht",
+        "Samstag um acht",
+        "Sonntagmittag"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was übernimmt Moritz?",
+       "optionen": [
+        "die Zugtickets",
+        "die Konzertkarten",
+        "das Essen"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t2",
+   "titel": "Text: Eine Woche ohne Handy",
+   "vorschau": "Eine Woche ohne Handy",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Text: Eine Woche ohne Handy",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "ماه پیش تصمیم گرفتم یک هفته بدون گوشی زندگی کنم.",
+       "tr": "māh-e pīsch tasmīm gereftam yek hafte bedūn-e gūschī zendegī konam.",
+       "de": "Letzten Monat habe ich beschlossen, eine Woche ohne Handy zu leben."
+      },
+      {
+       "fa": "روز اول خیلی سخت بود؛ دستم مدام دنبال گوشی می‌گشت.",
+       "tr": "rūz-e awwal cheylī sacht būd; dastam modām donbāl-e gūschī mīgascht.",
+       "de": "Der erste Tag war sehr schwer; meine Hand suchte ständig nach dem Handy."
+      },
+      {
+       "fa": "روز دوم یک کتاب برداشتم و تا شب خواندم.",
+       "tr": "rūz-e dowwom yek ketāb bardāschtam o tā schab chāndam.",
+       "de": "Am zweiten Tag nahm ich ein Buch und las bis abends."
+      },
+      {
+       "fa": "روز سوم با دوستانم قرار گذاشتم، بدون اینکه عکس بگیرم.",
+       "tr": "rūz-e sewwom bā dūstānam gharār gozāschtam, bedūn-e īnke ʿaks begīram.",
+       "de": "Am dritten Tag traf ich Freunde, ohne Fotos zu machen."
+      },
+      {
+       "fa": "کم‌کم متوجه شدم که بهتر می‌خوابم و آرام‌ترم.",
+       "tr": "kamkam motawadschdscheh schodam ke behtar mīchābam o ārāmtaram.",
+       "de": "Nach und nach merkte ich, dass ich besser schlafe und ruhiger bin."
+      },
+      {
+       "fa": "البته بعد از یک هفته دوباره گوشی‌ام را روشن کردم.",
+       "tr": "albatte baʿd az yek hafte dobāre gūschīam rā rouschan kardam.",
+       "de": "Natürlich habe ich nach einer Woche mein Handy wieder eingeschaltet."
+      },
+      {
+       "fa": "اما حالا شب‌ها گوشی را در اتاق دیگری می‌گذارم.",
+       "tr": "ammā hālā schabhā gūschī rā dar otāgh-e dīgarī mīgozāram.",
+       "de": "Aber jetzt lege ich das Handy nachts in ein anderes Zimmer."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "روز اول بدون گوشی آسان بود.",
+       "fest": true,
+       "erkl": "Er war <b>sehr schwer</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "روز دوم کتاب خواند.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "بدون گوشی بدتر می‌خوابید.",
+       "fest": true,
+       "erkl": "Sie/Er schlief <b>besser</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "حالا شب‌ها گوشی در اتاق دیگری است.",
+       "fest": true
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Wie lange war die Person ohne Handy?",
+       "optionen": [
+        "eine Woche",
+        "einen Monat",
+        "einen Tag"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was hat sich verbessert?",
+       "optionen": [
+        "Schlaf und Ruhe",
+        "Gehalt",
+        "Gewicht"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was macht die Person heute anders?",
+       "optionen": [
+        "Das Handy liegt nachts in einem anderen Zimmer.",
+        "Sie hat kein Handy mehr.",
+        "Sie postet mehr."
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "روز اول خیلی سخت بود؛ دستم مدام دنبال گوشی می‌گشت.",
+       "tr": "rūz-e awwal cheylī sacht būd; dastam modām donbāl-e gūschī mīgascht.",
+       "de": "Der erste Tag war sehr schwer; meine Hand suchte ständig nach dem Handy."
+      },
+      {
+       "fa": "روز دوم یک کتاب برداشتم و تا شب خواندم.",
+       "tr": "rūz-e dowwom yek ketāb bardāschtam o tā schab chāndam.",
+       "de": "Am zweiten Tag nahm ich ein Buch und las bis abends."
+      },
+      {
+       "fa": "روز سوم با دوستانم قرار گذاشتم، بدون اینکه عکس بگیرم.",
+       "tr": "rūz-e sewwom bā dūstānam gharār gozāschtam, bedūn-e īnke ʿaks begīram.",
+       "de": "Am dritten Tag traf ich Freunde, ohne Fotos zu machen."
+      },
+      {
+       "fa": "کم‌کم متوجه شدم که بهتر می‌خوابم و آرام‌ترم.",
+       "tr": "kamkam motawadschdscheh schodam ke behtar mīchābam o ārāmtaram.",
+       "de": "Nach und nach merkte ich, dass ich besser schlafe und ruhiger bin."
+      },
+      {
+       "fa": "البته بعد از یک هفته دوباره گوشی‌ام را روشن کردم.",
+       "tr": "albatte baʿd az yek hafte dobāre gūschīam rā rouschan kardam.",
+       "de": "Natürlich habe ich nach einer Woche mein Handy wieder eingeschaltet."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

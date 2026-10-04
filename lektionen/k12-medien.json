@@ -17,19 +17,19 @@
     {
      "typ": "info",
      "titel": "So läuft die Sitzung",
-     "text": "<p>Diese Lektion ist deine <b>Hausaufgabe</b>: Hier lernst du Wörter und Redemittel und liest einen Modelldialog. Im Unterricht wird dann <b>nur gesprochen</b>.</p><p><b>Im Unterricht:</b></p><ul><li>Filmkritik in 60 Sekunden</li><li>Rate den Film: Handlung ohne Titel erzählen</li><li>Umfrage: Wie viele Stunden am Handy?</li></ul>",
+     "text": "<p>Diese Lektion ist deine <b>Hausaufgabe</b>: Wortschatz, Redemittel, Dialoge und Texte. Im Unterricht wird dann <b>nur gesprochen</b>.</p><p><b>Im Unterricht:</b></p><ul><li>Filmkritik in 60 Sekunden</li><li>Rate den Film: Handlung ohne Titel erzählen</li><li>Umfrage: Wie viele Stunden am Handy?</li></ul><p class='klein muted'>Wortschatz dieser Lektion: 61 Wörter · 17 Redemittel</p>",
      "stil": "merke"
     }
    ]
   },
   {
-   "id": "s1",
-   "titel": "Wörter",
+   "id": "w0",
+   "titel": "Rund ums Thema",
    "vorschau": "فیلم · سریال · کارگردان",
    "karten": [
     {
      "typ": "info",
-     "titel": "Wörter zum Thema – Teil 1",
+     "titel": "🧩 Rund ums Thema (1)",
      "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
      "beispiele": [
       {
@@ -84,7 +84,7 @@
     },
     {
      "typ": "info",
-     "titel": "Wörter zum Thema – Teil 2",
+     "titel": "🧩 Rund ums Thema (2)",
      "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
      "beispiele": [
       {
@@ -138,43 +138,6 @@
      ]
     },
     {
-     "typ": "info",
-     "titel": "Verben",
-     "text": "<p>Infinitiv – im Gespräch brauchst du sie gleich in allen Zeiten.</p>",
-     "beispiele": [
-      {
-       "fa": "دیدن",
-       "tr": "dīdan",
-       "de": "sehen",
-       "emoji": "👀"
-      },
-      {
-       "fa": "گوش دادن",
-       "tr": "gūsch dādan",
-       "de": "(zu)hören",
-       "emoji": "🎧"
-      },
-      {
-       "fa": "پیشنهاد کردن",
-       "tr": "pīschnahād kardan",
-       "de": "empfehlen",
-       "emoji": "👉"
-      },
-      {
-       "fa": "دنبال کردن",
-       "tr": "donbāl kardan",
-       "de": "folgen",
-       "emoji": "➕"
-      },
-      {
-       "fa": "لو دادن",
-       "tr": "lou dādan",
-       "de": "spoilern, verraten",
-       "emoji": "🙊"
-      }
-     ]
-    },
-    {
      "typ": "paare",
      "links": "de",
      "paare": [
@@ -222,71 +185,22 @@
      "links": "de",
      "paare": [
       {
-       "fa": "کارگردان",
-       "tr": "kārgardān",
-       "de": "Regisseur/in",
-       "emoji": "🎥"
-      },
-      {
-       "fa": "زیرنویس",
-       "tr": "zīrnewīs",
-       "de": "Untertitel",
-       "emoji": "💬"
-      },
-      {
        "fa": "خنده‌دار",
        "tr": "chandedār",
        "de": "lustig",
        "emoji": "😂"
       },
       {
-       "fa": "داستان",
-       "tr": "dāstān",
-       "de": "Handlung, Geschichte",
-       "emoji": "📖"
+       "fa": "آهنگ",
+       "tr": "āhang",
+       "de": "Lied",
+       "emoji": "🎵"
       },
       {
-       "fa": "پست",
-       "tr": "post",
-       "de": "Post (Beitrag)",
-       "emoji": "📸"
-      },
-      {
-       "fa": "فالوور",
-       "tr": "fālower",
-       "de": "Follower",
-       "emoji": "👥"
-      }
-     ],
-     "titel": "Was bedeutet das?"
-    },
-    {
-     "typ": "memory",
-     "links": "emoji",
-     "paare": [
-      {
-       "fa": "پایان",
-       "tr": "pāyān",
-       "de": "Ende",
-       "emoji": "🏁"
-      },
-      {
-       "fa": "هیجان‌انگیز",
-       "tr": "hayadschānangīz",
-       "de": "spannend",
-       "emoji": "😮"
-      },
-      {
-       "fa": "لایک",
-       "tr": "lāyk",
-       "de": "Like",
-       "emoji": "👍"
-      },
-      {
-       "fa": "فالوور",
-       "tr": "fālower",
-       "de": "Follower",
-       "emoji": "👥"
+       "fa": "خواننده",
+       "tr": "chānande",
+       "de": "Sänger/in",
+       "emoji": "🎤"
       },
       {
        "fa": "بازیگر",
@@ -295,21 +209,1306 @@
        "emoji": "🎭"
       },
       {
+       "fa": "پایان",
+       "tr": "pāyān",
+       "de": "Ende",
+       "emoji": "🏁"
+      },
+      {
+       "fa": "پادکست",
+       "tr": "pādkast",
+       "de": "Podcast",
+       "emoji": "🎧"
+      }
+     ],
+     "titel": "Noch einmal: Was bedeutet das?"
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "هیجان‌انگیز",
+       "tr": "hayadschānangīz",
+       "de": "spannend",
+       "emoji": "😮"
+      },
+      {
+       "fa": "فالوور",
+       "tr": "fālower",
+       "de": "Follower",
+       "emoji": "👥"
+      },
+      {
+       "fa": "غمگین",
+       "tr": "ghamgīn",
+       "de": "traurig",
+       "emoji": "😢"
+      },
+      {
        "fa": "آهنگ",
        "tr": "āhang",
        "de": "Lied",
        "emoji": "🎵"
+      },
+      {
+       "fa": "بازیگر",
+       "tr": "bāzīgar",
+       "de": "Schauspieler/in",
+       "emoji": "🎭"
+      },
+      {
+       "fa": "خواننده",
+       "tr": "chānande",
+       "de": "Sänger/in",
+       "emoji": "🎤"
       }
      ],
      "titel": "Memory: Bild & Wort"
     },
     {
      "typ": "tempo",
-     "titel": "Blitz: Wörter",
+     "titel": "Blitz: Rund ums Thema",
      "aufgabe": "Was bedeutet das?",
      "modus": "de",
-     "sekunden": 60,
-     "ziel": 12,
+     "sekunden": 50,
+     "ziel": 10,
+     "woerter": [
+      {
+       "fa": "فیلم",
+       "a": "Film"
+      },
+      {
+       "fa": "سریال",
+       "a": "Serie"
+      },
+      {
+       "fa": "کارگردان",
+       "a": "Regisseur/in"
+      },
+      {
+       "fa": "بازیگر",
+       "a": "Schauspieler/in"
+      },
+      {
+       "fa": "خواننده",
+       "a": "Sänger/in"
+      },
+      {
+       "fa": "آهنگ",
+       "a": "Lied"
+      },
+      {
+       "fa": "داستان",
+       "a": "Handlung, Geschichte"
+      },
+      {
+       "fa": "پایان",
+       "a": "Ende"
+      },
+      {
+       "fa": "زیرنویس",
+       "a": "Untertitel"
+      },
+      {
+       "fa": "پست",
+       "a": "Post (Beitrag)"
+      },
+      {
+       "fa": "فالوور",
+       "a": "Follower"
+      },
+      {
+       "fa": "لایک",
+       "a": "Like"
+      },
+      {
+       "fa": "پادکست",
+       "a": "Podcast"
+      },
+      {
+       "fa": "هیجان‌انگیز",
+       "a": "spannend"
+      },
+      {
+       "fa": "غمگین",
+       "a": "traurig"
+      },
+      {
+       "fa": "خنده‌دار",
+       "a": "lustig"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "w1",
+   "titel": "Film & Serie",
+   "vorschau": "ژانر · کمدی · درام",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "🎬 Film & Serie (1)",
+     "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
+     "beispiele": [
+      {
+       "fa": "ژانر",
+       "tr": "zhānr",
+       "de": "Genre",
+       "emoji": "🎞️"
+      },
+      {
+       "fa": "کمدی",
+       "tr": "komedī",
+       "de": "Komödie",
+       "emoji": "😂"
+      },
+      {
+       "fa": "درام",
+       "tr": "derām",
+       "de": "Drama",
+       "emoji": "🎭"
+      },
+      {
+       "fa": "ترسناک",
+       "tr": "tarsnāk",
+       "de": "Horror-, gruselig",
+       "emoji": "👻"
+      },
+      {
+       "fa": "علمی تخیلی",
+       "tr": "ʿelmī-tachayyolī",
+       "de": "Science-Fiction",
+       "emoji": "🚀"
+      },
+      {
+       "fa": "مستند",
+       "tr": "mostanad",
+       "de": "Dokumentarfilm",
+       "emoji": "🎥"
+      }
+     ]
+    },
+    {
+     "typ": "info",
+     "titel": "🎬 Film & Serie (2)",
+     "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
+     "beispiele": [
+      {
+       "fa": "انیمیشن",
+       "tr": "anīmeyschen",
+       "de": "Animationsfilm",
+       "emoji": "🧸"
+      },
+      {
+       "fa": "فصل",
+       "tr": "fasl",
+       "de": "Staffel",
+       "emoji": "📦"
+      },
+      {
+       "fa": "قسمت",
+       "tr": "ghesmat",
+       "de": "Folge",
+       "emoji": "▶️"
+      },
+      {
+       "fa": "نقش اصلی",
+       "tr": "naghsch-e aslī",
+       "de": "Hauptrolle",
+       "emoji": "⭐"
+      },
+      {
+       "fa": "جشنواره",
+       "tr": "dschaschnwāre",
+       "de": "Festival",
+       "emoji": "🎪"
+      },
+      {
+       "fa": "جایزه",
+       "tr": "dschāyeze",
+       "de": "Preis, Auszeichnung",
+       "emoji": "🏆"
+      }
+     ]
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "ترسناک",
+       "tr": "tarsnāk",
+       "de": "Horror-, gruselig",
+       "emoji": "👻"
+      },
+      {
+       "fa": "جشنواره",
+       "tr": "dschaschnwāre",
+       "de": "Festival",
+       "emoji": "🎪"
+      },
+      {
+       "fa": "قسمت",
+       "tr": "ghesmat",
+       "de": "Folge",
+       "emoji": "▶️"
+      },
+      {
+       "fa": "نقش اصلی",
+       "tr": "naghsch-e aslī",
+       "de": "Hauptrolle",
+       "emoji": "⭐"
+      },
+      {
+       "fa": "جایزه",
+       "tr": "dschāyeze",
+       "de": "Preis, Auszeichnung",
+       "emoji": "🏆"
+      },
+      {
+       "fa": "فصل",
+       "tr": "fasl",
+       "de": "Staffel",
+       "emoji": "📦"
+      }
+     ],
+     "titel": "Was bedeutet das?"
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "نقش اصلی",
+       "tr": "naghsch-e aslī",
+       "de": "Hauptrolle",
+       "emoji": "⭐"
+      },
+      {
+       "fa": "جایزه",
+       "tr": "dschāyeze",
+       "de": "Preis, Auszeichnung",
+       "emoji": "🏆"
+      },
+      {
+       "fa": "جشنواره",
+       "tr": "dschaschnwāre",
+       "de": "Festival",
+       "emoji": "🎪"
+      },
+      {
+       "fa": "کمدی",
+       "tr": "komedī",
+       "de": "Komödie",
+       "emoji": "😂"
+      },
+      {
+       "fa": "مستند",
+       "tr": "mostanad",
+       "de": "Dokumentarfilm",
+       "emoji": "🎥"
+      },
+      {
+       "fa": "قسمت",
+       "tr": "ghesmat",
+       "de": "Folge",
+       "emoji": "▶️"
+      }
+     ],
+     "titel": "Noch einmal: Was bedeutet das?"
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "کمدی",
+       "tr": "komedī",
+       "de": "Komödie",
+       "emoji": "😂"
+      },
+      {
+       "fa": "نقش اصلی",
+       "tr": "naghsch-e aslī",
+       "de": "Hauptrolle",
+       "emoji": "⭐"
+      },
+      {
+       "fa": "درام",
+       "tr": "derām",
+       "de": "Drama",
+       "emoji": "🎭"
+      },
+      {
+       "fa": "قسمت",
+       "tr": "ghesmat",
+       "de": "Folge",
+       "emoji": "▶️"
+      },
+      {
+       "fa": "علمی تخیلی",
+       "tr": "ʿelmī-tachayyolī",
+       "de": "Science-Fiction",
+       "emoji": "🚀"
+      },
+      {
+       "fa": "فصل",
+       "tr": "fasl",
+       "de": "Staffel",
+       "emoji": "📦"
+      }
+     ],
+     "titel": "Memory: Bild & Wort"
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>این سریال سه ___ دارد و هر فصل ده قسمت.</span><br><span class='mini'>Diese Serie hat drei Staffeln mit je zehn Folgen.</span>",
+       "optionen": [
+        "فصل",
+        "اپلیکیشن",
+        "وای‌فای"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>این سریال سه فصل دارد و هر فصل ده قسمت.</span>"
+      },
+      {
+       "frage": "<span class='fa'>من فیلم‌های ___ دوست ندارم؛ شب خوابم نمی‌برد!</span><br><span class='mini'>Ich mag keine Horrorfilme; nachts kann ich nicht schlafen!</span>",
+       "optionen": [
+        "ترسناک",
+        "وای‌فای",
+        "سریال"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>من فیلم‌های ترسناک دوست ندارم؛ شب خوابم نمی‌برد!</span>"
+      },
+      {
+       "frage": "<span class='fa'>یک ___ درباره‌ی حیوانات کویر دیدم.</span><br><span class='mini'>Ich habe einen Dokumentarfilm über Wüstentiere gesehen.</span>",
+       "optionen": [
+        "مستند",
+        "پست",
+        "ویدیو"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>یک مستند درباره‌ی حیوانات کویر دیدم.</span>"
+      },
+      {
+       "frage": "<span class='fa'>این فیلم در ___ کن جایزه گرفت.</span><br><span class='mini'>Dieser Film hat beim Festival in Cannes einen Preis gewonnen.</span>",
+       "optionen": [
+        "جشنواره",
+        "پایان",
+        "بازیگر"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>این فیلم در جشنواره کن جایزه گرفت.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Film & Serie",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 50,
+     "ziel": 10,
+     "woerter": [
+      {
+       "fa": "ژانر",
+       "a": "Genre"
+      },
+      {
+       "fa": "کمدی",
+       "a": "Komödie"
+      },
+      {
+       "fa": "درام",
+       "a": "Drama"
+      },
+      {
+       "fa": "ترسناک",
+       "a": "Horror-, gruselig"
+      },
+      {
+       "fa": "علمی تخیلی",
+       "a": "Science-Fiction"
+      },
+      {
+       "fa": "مستند",
+       "a": "Dokumentarfilm"
+      },
+      {
+       "fa": "انیمیشن",
+       "a": "Animationsfilm"
+      },
+      {
+       "fa": "فصل",
+       "a": "Staffel"
+      },
+      {
+       "fa": "قسمت",
+       "a": "Folge"
+      },
+      {
+       "fa": "نقش اصلی",
+       "a": "Hauptrolle"
+      },
+      {
+       "fa": "جشنواره",
+       "a": "Festival"
+      },
+      {
+       "fa": "جایزه",
+       "a": "Preis, Auszeichnung"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "w2",
+   "titel": "Musik",
+   "vorschau": "گروه · آلبوم · کنسرت",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "🎵 Musik (1)",
+     "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
+     "beispiele": [
+      {
+       "fa": "گروه",
+       "tr": "gorūh",
+       "de": "Band, Gruppe",
+       "emoji": "🎸"
+      },
+      {
+       "fa": "آلبوم",
+       "tr": "ālbom",
+       "de": "Album",
+       "emoji": "💿"
+      },
+      {
+       "fa": "کنسرت",
+       "tr": "konsert",
+       "de": "Konzert",
+       "emoji": "🎤"
+      },
+      {
+       "fa": "متن ترانه",
+       "tr": "matn-e tarāne",
+       "de": "Liedtext",
+       "emoji": "📝"
+      },
+      {
+       "fa": "ملودی",
+       "tr": "melodī",
+       "de": "Melodie",
+       "emoji": "🎼"
+      },
+      {
+       "fa": "تار",
+       "tr": "tār",
+       "de": "Tar (Laute)",
+       "emoji": "🪕"
+      }
+     ]
+    },
+    {
+     "typ": "info",
+     "titel": "🎵 Musik (2)",
+     "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
+     "beispiele": [
+      {
+       "fa": "سنتور",
+       "tr": "santūr",
+       "de": "Santur (Hackbrett)",
+       "emoji": "🎶"
+      },
+      {
+       "fa": "تنبک",
+       "tr": "tombak",
+       "de": "Tombak (Trommel)",
+       "emoji": "🥁"
+      },
+      {
+       "fa": "رپ",
+       "tr": "rap",
+       "de": "Rap",
+       "emoji": "🎧"
+      },
+      {
+       "fa": "پاپ",
+       "tr": "pāp",
+       "de": "Pop",
+       "emoji": "🎙️"
+      },
+      {
+       "fa": "سنتی",
+       "tr": "sonnatī",
+       "de": "traditionell",
+       "emoji": "🏺"
+      },
+      {
+       "fa": "پخش زنده",
+       "tr": "pachsch-e zende",
+       "de": "Livestream",
+       "emoji": "🔴"
+      }
+     ]
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "سنتور",
+       "tr": "santūr",
+       "de": "Santur (Hackbrett)",
+       "emoji": "🎶"
+      },
+      {
+       "fa": "گروه",
+       "tr": "gorūh",
+       "de": "Band, Gruppe",
+       "emoji": "🎸"
+      },
+      {
+       "fa": "رپ",
+       "tr": "rap",
+       "de": "Rap",
+       "emoji": "🎧"
+      },
+      {
+       "fa": "تنبک",
+       "tr": "tombak",
+       "de": "Tombak (Trommel)",
+       "emoji": "🥁"
+      },
+      {
+       "fa": "پخش زنده",
+       "tr": "pachsch-e zende",
+       "de": "Livestream",
+       "emoji": "🔴"
+      },
+      {
+       "fa": "پاپ",
+       "tr": "pāp",
+       "de": "Pop",
+       "emoji": "🎙️"
+      }
+     ],
+     "titel": "Was bedeutet das?"
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "ملودی",
+       "tr": "melodī",
+       "de": "Melodie",
+       "emoji": "🎼"
+      },
+      {
+       "fa": "تار",
+       "tr": "tār",
+       "de": "Tar (Laute)",
+       "emoji": "🪕"
+      },
+      {
+       "fa": "کنسرت",
+       "tr": "konsert",
+       "de": "Konzert",
+       "emoji": "🎤"
+      },
+      {
+       "fa": "تنبک",
+       "tr": "tombak",
+       "de": "Tombak (Trommel)",
+       "emoji": "🥁"
+      },
+      {
+       "fa": "گروه",
+       "tr": "gorūh",
+       "de": "Band, Gruppe",
+       "emoji": "🎸"
+      },
+      {
+       "fa": "متن ترانه",
+       "tr": "matn-e tarāne",
+       "de": "Liedtext",
+       "emoji": "📝"
+      }
+     ],
+     "titel": "Noch einmal: Was bedeutet das?"
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "ملودی",
+       "tr": "melodī",
+       "de": "Melodie",
+       "emoji": "🎼"
+      },
+      {
+       "fa": "رپ",
+       "tr": "rap",
+       "de": "Rap",
+       "emoji": "🎧"
+      },
+      {
+       "fa": "گروه",
+       "tr": "gorūh",
+       "de": "Band, Gruppe",
+       "emoji": "🎸"
+      },
+      {
+       "fa": "پخش زنده",
+       "tr": "pachsch-e zende",
+       "de": "Livestream",
+       "emoji": "🔴"
+      },
+      {
+       "fa": "متن ترانه",
+       "tr": "matn-e tarāne",
+       "de": "Liedtext",
+       "emoji": "📝"
+      },
+      {
+       "fa": "سنتور",
+       "tr": "santūr",
+       "de": "Santur (Hackbrett)",
+       "emoji": "🎶"
+      }
+     ],
+     "titel": "Memory: Bild & Wort"
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>صدای ___ را در موسیقی سنتی ایرانی زیاد می‌شنوید.</span><br><span class='mini'>Den Klang des Santur hört man oft in traditioneller iranischer Musik.</span>",
+       "optionen": [
+        "سنتور",
+        "هشتگ",
+        "حریم خصوصی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>صدای سنتور را در موسیقی سنتی ایرانی زیاد می‌شنوید.</span>"
+      },
+      {
+       "frage": "<span class='fa'>من ___ این آهنگ را حفظ کرده‌ام.</span><br><span class='mini'>Ich habe den Text dieses Liedes auswendig gelernt.</span>",
+       "optionen": [
+        "متن ترانه",
+        "فیلترشکن",
+        "کمدی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>من متن ترانه این آهنگ را حفظ کرده‌ام.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Musik",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 50,
+     "ziel": 10,
+     "woerter": [
+      {
+       "fa": "گروه",
+       "a": "Band, Gruppe"
+      },
+      {
+       "fa": "آلبوم",
+       "a": "Album"
+      },
+      {
+       "fa": "کنسرت",
+       "a": "Konzert"
+      },
+      {
+       "fa": "متن ترانه",
+       "a": "Liedtext"
+      },
+      {
+       "fa": "ملودی",
+       "a": "Melodie"
+      },
+      {
+       "fa": "تار",
+       "a": "Tar (Laute)"
+      },
+      {
+       "fa": "سنتور",
+       "a": "Santur (Hackbrett)"
+      },
+      {
+       "fa": "تنبک",
+       "a": "Tombak (Trommel)"
+      },
+      {
+       "fa": "رپ",
+       "a": "Rap"
+      },
+      {
+       "fa": "پاپ",
+       "a": "Pop"
+      },
+      {
+       "fa": "سنتی",
+       "a": "traditionell"
+      },
+      {
+       "fa": "پخش زنده",
+       "a": "Livestream"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "w3",
+   "titel": "Internet & Social Media",
+   "vorschau": "گوشی · اپلیکیشن · صفحه",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "📱 Internet & Social Media (1)",
+     "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
+     "beispiele": [
+      {
+       "fa": "گوشی",
+       "tr": "gūschī",
+       "de": "Handy",
+       "emoji": "📱"
+      },
+      {
+       "fa": "اپلیکیشن",
+       "tr": "aplīkeyschen",
+       "de": "App",
+       "emoji": "📲"
+      },
+      {
+       "fa": "صفحه",
+       "tr": "safhe",
+       "de": "Seite, Profil",
+       "emoji": "📄"
+      },
+      {
+       "fa": "استوری",
+       "tr": "estorī",
+       "de": "Story",
+       "emoji": "⭕"
+      },
+      {
+       "fa": "کامنت",
+       "tr": "kāment",
+       "de": "Kommentar",
+       "emoji": "💬"
+      },
+      {
+       "fa": "هشتگ",
+       "tr": "haschtag",
+       "de": "Hashtag",
+       "emoji": "#️⃣"
+      }
+     ]
+    },
+    {
+     "typ": "info",
+     "titel": "📱 Internet & Social Media (2)",
+     "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
+     "beispiele": [
+      {
+       "fa": "ویدیو",
+       "tr": "wīdiyo",
+       "de": "Video",
+       "emoji": "📹"
+      },
+      {
+       "fa": "اینفلوئنسر",
+       "tr": "īnfluʾenser",
+       "de": "Influencer/in",
+       "emoji": "🤳"
+      },
+      {
+       "fa": "حریم خصوصی",
+       "tr": "harīm-e chosūsī",
+       "de": "Privatsphäre",
+       "emoji": "🔒"
+      },
+      {
+       "fa": "خبر جعلی",
+       "tr": "chabar-e dschaʿlī",
+       "de": "Fake News",
+       "emoji": "🤥"
+      },
+      {
+       "fa": "وای‌فای",
+       "tr": "wāyfāy",
+       "de": "WLAN",
+       "emoji": "📶"
+      },
+      {
+       "fa": "فیلترشکن",
+       "tr": "fīlterschekan",
+       "de": "VPN",
+       "emoji": "🛡️"
+      }
+     ]
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "اینفلوئنسر",
+       "tr": "īnfluʾenser",
+       "de": "Influencer/in",
+       "emoji": "🤳"
+      },
+      {
+       "fa": "صفحه",
+       "tr": "safhe",
+       "de": "Seite, Profil",
+       "emoji": "📄"
+      },
+      {
+       "fa": "ویدیو",
+       "tr": "wīdiyo",
+       "de": "Video",
+       "emoji": "📹"
+      },
+      {
+       "fa": "خبر جعلی",
+       "tr": "chabar-e dschaʿlī",
+       "de": "Fake News",
+       "emoji": "🤥"
+      },
+      {
+       "fa": "اپلیکیشن",
+       "tr": "aplīkeyschen",
+       "de": "App",
+       "emoji": "📲"
+      },
+      {
+       "fa": "حریم خصوصی",
+       "tr": "harīm-e chosūsī",
+       "de": "Privatsphäre",
+       "emoji": "🔒"
+      }
+     ],
+     "titel": "Was bedeutet das?"
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "وای‌فای",
+       "tr": "wāyfāy",
+       "de": "WLAN",
+       "emoji": "📶"
+      },
+      {
+       "fa": "کامنت",
+       "tr": "kāment",
+       "de": "Kommentar",
+       "emoji": "💬"
+      },
+      {
+       "fa": "استوری",
+       "tr": "estorī",
+       "de": "Story",
+       "emoji": "⭕"
+      },
+      {
+       "fa": "اینفلوئنسر",
+       "tr": "īnfluʾenser",
+       "de": "Influencer/in",
+       "emoji": "🤳"
+      },
+      {
+       "fa": "خبر جعلی",
+       "tr": "chabar-e dschaʿlī",
+       "de": "Fake News",
+       "emoji": "🤥"
+      },
+      {
+       "fa": "صفحه",
+       "tr": "safhe",
+       "de": "Seite, Profil",
+       "emoji": "📄"
+      }
+     ],
+     "titel": "Noch einmal: Was bedeutet das?"
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "هشتگ",
+       "tr": "haschtag",
+       "de": "Hashtag",
+       "emoji": "#️⃣"
+      },
+      {
+       "fa": "گوشی",
+       "tr": "gūschī",
+       "de": "Handy",
+       "emoji": "📱"
+      },
+      {
+       "fa": "حریم خصوصی",
+       "tr": "harīm-e chosūsī",
+       "de": "Privatsphäre",
+       "emoji": "🔒"
+      },
+      {
+       "fa": "استوری",
+       "tr": "estorī",
+       "de": "Story",
+       "emoji": "⭕"
+      },
+      {
+       "fa": "اینفلوئنسر",
+       "tr": "īnfluʾenser",
+       "de": "Influencer/in",
+       "emoji": "🤳"
+      },
+      {
+       "fa": "کامنت",
+       "tr": "kāment",
+       "de": "Kommentar",
+       "emoji": "💬"
+      }
+     ],
+     "titel": "Memory: Bild & Wort"
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>در ___ اینستاگرامم عکس‌های سفرم را گذاشتم.</span><br><span class='mini'>In meiner Instagram-Story habe ich Reisefotos gepostet.</span>",
+       "optionen": [
+        "استوری",
+        "فالوور",
+        "قسمت"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>در استوری اینستاگرامم عکس‌های سفرم را گذاشتم.</span>"
+      },
+      {
+       "frage": "<span class='fa'>بدون ___ نمی‌توانم کار کنم.</span><br><span class='mini'>Ohne WLAN kann ich nicht arbeiten.</span>",
+       "optionen": [
+        "وای‌فای",
+        "تنبک",
+        "قسمت"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>بدون وای‌فای نمی‌توانم کار کنم.</span>"
+      },
+      {
+       "frage": "<span class='fa'>در شبکه‌های اجتماعی باید مواظب ___ خود باشیم.</span><br><span class='mini'>In sozialen Netzwerken müssen wir auf unsere Privatsphäre achten.</span>",
+       "optionen": [
+        "حریم خصوصی",
+        "آلبوم",
+        "پست"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>در شبکه‌های اجتماعی باید مواظب حریم خصوصی خود باشیم.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Internet & Social Media",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 50,
+     "ziel": 10,
+     "woerter": [
+      {
+       "fa": "گوشی",
+       "a": "Handy"
+      },
+      {
+       "fa": "اپلیکیشن",
+       "a": "App"
+      },
+      {
+       "fa": "صفحه",
+       "a": "Seite, Profil"
+      },
+      {
+       "fa": "استوری",
+       "a": "Story"
+      },
+      {
+       "fa": "کامنت",
+       "a": "Kommentar"
+      },
+      {
+       "fa": "هشتگ",
+       "a": "Hashtag"
+      },
+      {
+       "fa": "ویدیو",
+       "a": "Video"
+      },
+      {
+       "fa": "اینفلوئنسر",
+       "a": "Influencer/in"
+      },
+      {
+       "fa": "حریم خصوصی",
+       "a": "Privatsphäre"
+      },
+      {
+       "fa": "خبر جعلی",
+       "a": "Fake News"
+      },
+      {
+       "fa": "وای‌فای",
+       "a": "WLAN"
+      },
+      {
+       "fa": "فیلترشکن",
+       "a": "VPN"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "v",
+   "titel": "Verben & Wiederholung",
+   "vorschau": "دیدن · گوش دادن · پیشنهاد کردن",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Verben",
+     "text": "<p>Infinitiv – im Gespräch brauchst du sie in allen Zeiten.</p>",
+     "beispiele": [
+      {
+       "fa": "دیدن",
+       "tr": "dīdan",
+       "de": "sehen",
+       "emoji": "👀"
+      },
+      {
+       "fa": "گوش دادن",
+       "tr": "gūsch dādan",
+       "de": "(zu)hören",
+       "emoji": "🎧"
+      },
+      {
+       "fa": "پیشنهاد کردن",
+       "tr": "pīschnahād kardan",
+       "de": "empfehlen",
+       "emoji": "👉"
+      },
+      {
+       "fa": "دنبال کردن",
+       "tr": "donbāl kardan",
+       "de": "folgen",
+       "emoji": "➕"
+      },
+      {
+       "fa": "لو دادن",
+       "tr": "lou dādan",
+       "de": "spoilern, verraten",
+       "emoji": "🙊"
+      },
+      {
+       "fa": "پخش کردن",
+       "tr": "pachsch kardan",
+       "de": "ausstrahlen, abspielen",
+       "emoji": "📺"
+      },
+      {
+       "fa": "دانلود کردن",
+       "tr": "dānlod kardan",
+       "de": "herunterladen",
+       "emoji": "⬇️"
+      },
+      {
+       "fa": "پست گذاشتن",
+       "tr": "post gozāschtan",
+       "de": "posten",
+       "emoji": "📸"
+      },
+      {
+       "fa": "کامنت گذاشتن",
+       "tr": "kāment gozāschtan",
+       "de": "kommentieren",
+       "emoji": "💬"
+      }
+     ]
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "پخش کردن",
+       "tr": "pachsch kardan",
+       "de": "ausstrahlen, abspielen",
+       "emoji": "📺"
+      },
+      {
+       "fa": "کامنت گذاشتن",
+       "tr": "kāment gozāschtan",
+       "de": "kommentieren",
+       "emoji": "💬"
+      },
+      {
+       "fa": "پست گذاشتن",
+       "tr": "post gozāschtan",
+       "de": "posten",
+       "emoji": "📸"
+      },
+      {
+       "fa": "دنبال کردن",
+       "tr": "donbāl kardan",
+       "de": "folgen",
+       "emoji": "➕"
+      },
+      {
+       "fa": "دیدن",
+       "tr": "dīdan",
+       "de": "sehen",
+       "emoji": "👀"
+      },
+      {
+       "fa": "لو دادن",
+       "tr": "lou dādan",
+       "de": "spoilern, verraten",
+       "emoji": "🙊"
+      }
+     ],
+     "titel": "Was bedeutet das?"
+    },
+    {
+     "typ": "sortieren",
+     "titel": "Welches Wortfeld?",
+     "frage": "Ordne die Wörter dem Wortfeld zu.",
+     "kategorien": [
+      "🧩 Rund ums Thema",
+      "🎬 Film & Serie",
+      "🎵 Musik",
+      "📱 Internet & Social Media"
+     ],
+     "items": [
+      {
+       "fa": "لایک",
+       "k": 0,
+       "e": "Like",
+       "say": false
+      },
+      {
+       "fa": "پایان",
+       "k": 0,
+       "e": "Ende",
+       "say": false
+      },
+      {
+       "fa": "هیجان‌انگیز",
+       "k": 0,
+       "e": "spannend",
+       "say": false
+      },
+      {
+       "fa": "نقش اصلی",
+       "k": 1,
+       "e": "Hauptrolle",
+       "say": false
+      },
+      {
+       "fa": "درام",
+       "k": 1,
+       "e": "Drama",
+       "say": false
+      },
+      {
+       "fa": "قسمت",
+       "k": 1,
+       "e": "Folge",
+       "say": false
+      },
+      {
+       "fa": "رپ",
+       "k": 2,
+       "e": "Rap",
+       "say": false
+      },
+      {
+       "fa": "کنسرت",
+       "k": 2,
+       "e": "Konzert",
+       "say": false
+      },
+      {
+       "fa": "تنبک",
+       "k": 2,
+       "e": "Tombak (Trommel)",
+       "say": false
+      },
+      {
+       "fa": "وای‌فای",
+       "k": 3,
+       "e": "WLAN",
+       "say": false
+      },
+      {
+       "fa": "فیلترشکن",
+       "k": 3,
+       "e": "VPN",
+       "say": false
+      },
+      {
+       "fa": "هشتگ",
+       "k": 3,
+       "e": "Hashtag",
+       "say": false
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: alle Wörter",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 75,
+     "ziel": 15,
      "woerter": [
       {
        "fa": "فیلم",
@@ -376,6 +1575,150 @@
        "a": "lustig"
       },
       {
+       "fa": "ژانر",
+       "a": "Genre"
+      },
+      {
+       "fa": "کمدی",
+       "a": "Komödie"
+      },
+      {
+       "fa": "درام",
+       "a": "Drama"
+      },
+      {
+       "fa": "ترسناک",
+       "a": "Horror-, gruselig"
+      },
+      {
+       "fa": "علمی تخیلی",
+       "a": "Science-Fiction"
+      },
+      {
+       "fa": "مستند",
+       "a": "Dokumentarfilm"
+      },
+      {
+       "fa": "انیمیشن",
+       "a": "Animationsfilm"
+      },
+      {
+       "fa": "فصل",
+       "a": "Staffel"
+      },
+      {
+       "fa": "قسمت",
+       "a": "Folge"
+      },
+      {
+       "fa": "نقش اصلی",
+       "a": "Hauptrolle"
+      },
+      {
+       "fa": "جشنواره",
+       "a": "Festival"
+      },
+      {
+       "fa": "جایزه",
+       "a": "Preis, Auszeichnung"
+      },
+      {
+       "fa": "گروه",
+       "a": "Band, Gruppe"
+      },
+      {
+       "fa": "آلبوم",
+       "a": "Album"
+      },
+      {
+       "fa": "کنسرت",
+       "a": "Konzert"
+      },
+      {
+       "fa": "متن ترانه",
+       "a": "Liedtext"
+      },
+      {
+       "fa": "ملودی",
+       "a": "Melodie"
+      },
+      {
+       "fa": "تار",
+       "a": "Tar (Laute)"
+      },
+      {
+       "fa": "سنتور",
+       "a": "Santur (Hackbrett)"
+      },
+      {
+       "fa": "تنبک",
+       "a": "Tombak (Trommel)"
+      },
+      {
+       "fa": "رپ",
+       "a": "Rap"
+      },
+      {
+       "fa": "پاپ",
+       "a": "Pop"
+      },
+      {
+       "fa": "سنتی",
+       "a": "traditionell"
+      },
+      {
+       "fa": "پخش زنده",
+       "a": "Livestream"
+      },
+      {
+       "fa": "گوشی",
+       "a": "Handy"
+      },
+      {
+       "fa": "اپلیکیشن",
+       "a": "App"
+      },
+      {
+       "fa": "صفحه",
+       "a": "Seite, Profil"
+      },
+      {
+       "fa": "استوری",
+       "a": "Story"
+      },
+      {
+       "fa": "کامنت",
+       "a": "Kommentar"
+      },
+      {
+       "fa": "هشتگ",
+       "a": "Hashtag"
+      },
+      {
+       "fa": "ویدیو",
+       "a": "Video"
+      },
+      {
+       "fa": "اینفلوئنسر",
+       "a": "Influencer/in"
+      },
+      {
+       "fa": "حریم خصوصی",
+       "a": "Privatsphäre"
+      },
+      {
+       "fa": "خبر جعلی",
+       "a": "Fake News"
+      },
+      {
+       "fa": "وای‌فای",
+       "a": "WLAN"
+      },
+      {
+       "fa": "فیلترشکن",
+       "a": "VPN"
+      },
+      {
        "fa": "دیدن",
        "a": "sehen"
       },
@@ -394,19 +1737,35 @@
       {
        "fa": "لو دادن",
        "a": "spoilern, verraten"
+      },
+      {
+       "fa": "پخش کردن",
+       "a": "ausstrahlen, abspielen"
+      },
+      {
+       "fa": "دانلود کردن",
+       "a": "herunterladen"
+      },
+      {
+       "fa": "پست گذاشتن",
+       "a": "posten"
+      },
+      {
+       "fa": "کامنت گذاشتن",
+       "a": "kommentieren"
       }
      ]
     }
    ]
   },
   {
-   "id": "s2",
+   "id": "r1",
    "titel": "Redemittel",
    "vorschau": "حتماً این فیلمو ببین!",
    "karten": [
     {
      "typ": "info",
-     "titel": "Redemittel – Teil 1",
+     "titel": "Redemittel (1)",
      "text": "<p>So sagt man das im Gespräch. Tippe einen Satz an, um ihn zu hören.</p>",
      "stil": "merke",
      "beispiele": [
@@ -439,21 +1798,21 @@
        "tr": "bāzī-ye bāzīgarā ʿālī būd.",
        "de": "Die Schauspieler waren großartig.",
        "x": "بازی بازیگرها عالی بود."
-      }
-     ]
-    },
-    {
-     "typ": "info",
-     "titel": "Redemittel – Teil 2",
-     "text": "<p>Die Schriftform findest du gleich in der Übung „Geschrieben ↔ gesprochen“.</p>",
-     "stil": "merke",
-     "beispiele": [
+      },
       {
        "fa": "داستانش یه کم کند بود.",
        "tr": "dāstānesch ye kam kond būd.",
        "de": "Die Handlung war etwas langsam.",
        "x": "داستانش یه کم کند بود."
-      },
+      }
+     ]
+    },
+    {
+     "typ": "info",
+     "titel": "Redemittel (2)",
+     "text": "<p>So sagt man das im Gespräch. Tippe einen Satz an, um ihn zu hören.</p>",
+     "stil": "merke",
+     "beispiele": [
       {
        "fa": "به نظرم ارزش دیدن داره.",
        "tr": "be nazaram arzesch-e dīdan dāre.",
@@ -477,6 +1836,56 @@
        "tr": "be nazaram schabakehā-ye edschtemāʿī waght-e ādamo mīgīran.",
        "de": "Ich finde, soziale Netzwerke fressen Zeit.",
        "x": "به نظرم شبکه‌های اجتماعی وقت آدم را می‌گیرند."
+      },
+      {
+       "fa": "چه ژانری دوست داری؟",
+       "tr": "tsche zhānrī dūst dārī?",
+       "de": "Welches Genre magst du?",
+       "x": "چه ژانری دوست داری؟"
+      },
+      {
+       "fa": "این سریال چند فصل داره؟",
+       "tr": "īn seriyāl tschand fasl dāre?",
+       "de": "Wie viele Staffeln hat die Serie?",
+       "x": "این سریال چند فصل دارد؟"
+      }
+     ]
+    },
+    {
+     "typ": "info",
+     "titel": "Redemittel (3)",
+     "text": "<p>So sagt man das im Gespräch. Tippe einen Satz an, um ihn zu hören.</p>",
+     "stil": "merke",
+     "beispiele": [
+      {
+       "fa": "آخرش خیلی غافلگیرکننده بود!",
+       "tr": "āchrasch cheylī ghāfelgīrkonande būd!",
+       "de": "Das Ende war total überraschend!",
+       "x": "آخرش خیلی غافلگیرکننده بود!"
+      },
+      {
+       "fa": "زیادی طولانی بود.",
+       "tr": "ziyādī tūlānī būd.",
+       "de": "Er war zu lang.",
+       "x": "زیادی طولانی بود."
+      },
+      {
+       "fa": "پستتو دیدم، خیلی قشنگ بود!",
+       "tr": "postato dīdam, cheylī ghaschang būd!",
+       "de": "Ich habe deinen Post gesehen, sehr schön!",
+       "x": "پستت را دیدم، خیلی قشنگ بود!"
+      },
+      {
+       "fa": "لینکشو برام بفرست.",
+       "tr": "līnkescho barām befrest.",
+       "de": "Schick mir den Link.",
+       "x": "لینکش را برایم بفرست."
+      },
+      {
+       "fa": "خبر فیکه، باور نکن!",
+       "tr": "chabar feyke, bāwar nakon!",
+       "de": "Das ist Fake News, glaub das nicht!",
+       "x": "خبر جعلی است، باور نکن!"
       }
      ]
     },
@@ -484,30 +1893,6 @@
      "typ": "paare",
      "links": "de",
      "paare": [
-      {
-       "fa": "این آهنگو گوش کن، فوق‌العاده‌ست!",
-       "tr": "īn āhango gūsch kon, foghol ʿādast!",
-       "de": "Hör dir das Lied an, es ist fantastisch!",
-       "x": "این آهنگ را گوش بده، فوق‌العاده است!"
-      },
-      {
-       "fa": "روزی چند ساعت با گوشی‌ای؟",
-       "tr": "rūzī tschand sāʿat bā gūschīī?",
-       "de": "Wie viele Stunden am Tag bist du am Handy?",
-       "x": "روزی چند ساعت با گوشی هستی؟"
-      },
-      {
-       "fa": "بازی بازیگرا عالی بود.",
-       "tr": "bāzī-ye bāzīgarā ʿālī būd.",
-       "de": "Die Schauspieler waren großartig.",
-       "x": "بازی بازیگرها عالی بود."
-      },
-      {
-       "fa": "آخرشو لو نده!",
-       "tr": "āchrescho lou nade!",
-       "de": "Verrat das Ende nicht!",
-       "x": "آخرش را لو نده!"
-      },
       {
        "fa": "منو تو اینستا فالو کن!",
        "tr": "mano tū īnstā fālo kon!",
@@ -519,9 +1904,76 @@
        "tr": "be nazaram schabakehā-ye edschtemāʿī waght-e ādamo mīgīran.",
        "de": "Ich finde, soziale Netzwerke fressen Zeit.",
        "x": "به نظرم شبکه‌های اجتماعی وقت آدم را می‌گیرند."
+      },
+      {
+       "fa": "حتماً این فیلمو ببین!",
+       "tr": "hatman īn fīlmo bebīn!",
+       "de": "Den Film musst du unbedingt sehen!",
+       "x": "حتماً این فیلم را ببین!"
+      },
+      {
+       "fa": "پستتو دیدم، خیلی قشنگ بود!",
+       "tr": "postato dīdam, cheylī ghaschang būd!",
+       "de": "Ich habe deinen Post gesehen, sehr schön!",
+       "x": "پستت را دیدم، خیلی قشنگ بود!"
+      },
+      {
+       "fa": "خبر فیکه، باور نکن!",
+       "tr": "chabar feyke, bāwar nakon!",
+       "de": "Das ist Fake News, glaub das nicht!",
+       "x": "خبر جعلی است، باور نکن!"
+      },
+      {
+       "fa": "داستانش یه کم کند بود.",
+       "tr": "dāstānesch ye kam kond būd.",
+       "de": "Die Handlung war etwas langsam.",
+       "x": "داستانش یه کم کند بود."
       }
      ],
      "titel": "Was bedeutet das?"
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "سریال خوب سراغ داری؟",
+       "tr": "seriyāl-e chūb sorāgh dārī?",
+       "de": "Kennst du eine gute Serie?",
+       "x": "سریال خوب سراغ داری؟"
+      },
+      {
+       "fa": "آخرشو لو نده!",
+       "tr": "āchrescho lou nade!",
+       "de": "Verrat das Ende nicht!",
+       "x": "آخرش را لو نده!"
+      },
+      {
+       "fa": "داستانش یه کم کند بود.",
+       "tr": "dāstānesch ye kam kond būd.",
+       "de": "Die Handlung war etwas langsam.",
+       "x": "داستانش یه کم کند بود."
+      },
+      {
+       "fa": "پستتو دیدم، خیلی قشنگ بود!",
+       "tr": "postato dīdam, cheylī ghaschang būd!",
+       "de": "Ich habe deinen Post gesehen, sehr schön!",
+       "x": "پستت را دیدم، خیلی قشنگ بود!"
+      },
+      {
+       "fa": "این آهنگو گوش کن، فوق‌العاده‌ست!",
+       "tr": "īn āhango gūsch kon, foghol ʿādast!",
+       "de": "Hör dir das Lied an, es ist fantastisch!",
+       "x": "این آهنگ را گوش بده، فوق‌العاده است!"
+      },
+      {
+       "fa": "حتماً این فیلمو ببین!",
+       "tr": "hatman īn fīlmo bebīn!",
+       "de": "Den Film musst du unbedingt sehen!",
+       "x": "حتماً این فیلم را ببین!"
+      }
+     ],
+     "titel": "Noch einmal: Was bedeutet das?"
     },
     {
      "typ": "sortieren",
@@ -592,12 +2044,188 @@
        "k": 2,
        "e": "Ich finde, soziale Netzwerke fressen Zeit.",
        "say": false
+      },
+      {
+       "fa": "چه ژانری دوست داری؟",
+       "k": 0,
+       "e": "Welches Genre magst du?",
+       "say": false
+      },
+      {
+       "fa": "این سریال چند فصل داره؟",
+       "k": 0,
+       "e": "Wie viele Staffeln hat die Serie?",
+       "say": false
+      },
+      {
+       "fa": "آخرش خیلی غافلگیرکننده بود!",
+       "k": 1,
+       "e": "Das Ende war total überraschend!",
+       "say": false
+      },
+      {
+       "fa": "زیادی طولانی بود.",
+       "k": 1,
+       "e": "Er war zu lang.",
+       "say": false
+      },
+      {
+       "fa": "پستتو دیدم، خیلی قشنگ بود!",
+       "k": 2,
+       "e": "Ich habe deinen Post gesehen, sehr schön!",
+       "say": false
+      },
+      {
+       "fa": "لینکشو برام بفرست.",
+       "k": 2,
+       "e": "Schick mir den Link.",
+       "say": false
+      },
+      {
+       "fa": "خبر فیکه، باور نکن!",
+       "k": 2,
+       "e": "Das ist Fake News, glaub das nicht!",
+       "say": false
       }
      ]
     },
     {
+     "typ": "paare",
+     "links": "x",
+     "paare": [
+      {
+       "fa": "بازی بازیگرها عالی بود.",
+       "tr": "",
+       "de": "Die Schauspieler waren großartig.",
+       "x": "بازی بازیگرا عالی بود."
+      },
+      {
+       "fa": "خبر جعلی است، باور نکن!",
+       "tr": "",
+       "de": "Das ist Fake News, glaub das nicht!",
+       "x": "خبر فیکه، باور نکن!"
+      },
+      {
+       "fa": "روزی چند ساعت با گوشی هستی؟",
+       "tr": "",
+       "de": "Wie viele Stunden am Tag bist du am Handy?",
+       "x": "روزی چند ساعت با گوشی‌ای؟"
+      },
+      {
+       "fa": "من را در اینستاگرام دنبال کن!",
+       "tr": "",
+       "de": "Folg mir auf Insta!",
+       "x": "منو تو اینستا فالو کن!"
+      },
+      {
+       "fa": "به نظرم شبکه‌های اجتماعی وقت آدم را می‌گیرند.",
+       "tr": "",
+       "de": "Ich finde, soziale Netzwerke fressen Zeit.",
+       "x": "به نظرم شبکه‌های اجتماعی وقت آدمو می‌گیرن."
+      },
+      {
+       "fa": "لینکش را برایم بفرست.",
+       "tr": "",
+       "de": "Schick mir den Link.",
+       "x": "لینکشو برام بفرست."
+      }
+     ],
+     "titel": "Geschrieben ↔ gesprochen"
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Redemittel",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 70,
+     "ziel": 12,
+     "woerter": [
+      {
+       "fa": "حتماً این فیلمو ببین!",
+       "a": "Den Film musst du unbedingt sehen!"
+      },
+      {
+       "fa": "سریال خوب سراغ داری؟",
+       "a": "Kennst du eine gute Serie?"
+      },
+      {
+       "fa": "این آهنگو گوش کن، فوق‌العاده‌ست!",
+       "a": "Hör dir das Lied an, es ist fantastisch!"
+      },
+      {
+       "fa": "آخرشو لو نده!",
+       "a": "Verrat das Ende nicht!"
+      },
+      {
+       "fa": "بازی بازیگرا عالی بود.",
+       "a": "Die Schauspieler waren großartig."
+      },
+      {
+       "fa": "داستانش یه کم کند بود.",
+       "a": "Die Handlung war etwas langsam."
+      },
+      {
+       "fa": "به نظرم ارزش دیدن داره.",
+       "a": "Ich finde, er ist sehenswert."
+      },
+      {
+       "fa": "روزی چند ساعت با گوشی‌ای؟",
+       "a": "Wie viele Stunden am Tag bist du am Handy?"
+      },
+      {
+       "fa": "منو تو اینستا فالو کن!",
+       "a": "Folg mir auf Insta!"
+      },
+      {
+       "fa": "به نظرم شبکه‌های اجتماعی وقت آدمو می‌گیرن.",
+       "a": "Ich finde, soziale Netzwerke fressen Zeit."
+      },
+      {
+       "fa": "چه ژانری دوست داری؟",
+       "a": "Welches Genre magst du?"
+      },
+      {
+       "fa": "این سریال چند فصل داره؟",
+       "a": "Wie viele Staffeln hat die Serie?"
+      },
+      {
+       "fa": "آخرش خیلی غافلگیرکننده بود!",
+       "a": "Das Ende war total überraschend!"
+      },
+      {
+       "fa": "زیادی طولانی بود.",
+       "a": "Er war zu lang."
+      },
+      {
+       "fa": "پستتو دیدم، خیلی قشنگ بود!",
+       "a": "Ich habe deinen Post gesehen, sehr schön!"
+      },
+      {
+       "fa": "لینکشو برام بفرست.",
+       "a": "Schick mir den Link."
+      },
+      {
+       "fa": "خبر فیکه، باور نکن!",
+       "a": "Das ist Fake News, glaub das nicht!"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "r2",
+   "titel": "Situationen & Reaktionen",
+   "vorschau": "چی بگم؟",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Reagieren",
+     "text": "<p>Im Gespräch kommt es auf die <b>Reaktion</b> an. Lies, was jemand sagt – und was man darauf antwortet.</p><div class='karte' style='margin:10px 0;padding:10px 14px'><div class='fa' style='font-size:1.3rem;text-align:right'>💬 فیلم چطور بود؟</div><div class='fa' style='font-size:1.3rem;text-align:right;color:var(--lapis)'>↩️ عالی بود، حتماً ببین!</div><div class='klein muted'>Wie war der Film?</div></div><div class='karte' style='margin:10px 0;padding:10px 14px'><div class='fa' style='font-size:1.3rem;text-align:right'>💬 سریال خوب سراغ داری؟</div><div class='fa' style='font-size:1.3rem;text-align:right;color:var(--lapis)'>↩️ آره، «شهرزاد» رو دیدی؟</div><div class='klein muted'>Kennst du eine gute Serie?</div></div><div class='karte' style='margin:10px 0;padding:10px 14px'><div class='fa' style='font-size:1.3rem;text-align:right'>💬 آخرش رو بگم؟</div><div class='fa' style='font-size:1.3rem;text-align:right;color:var(--lapis)'>↩️ نه! لو نده!</div><div class='klein muted'>Soll ich das Ende verraten?</div></div><div class='karte' style='margin:10px 0;padding:10px 14px'><div class='fa' style='font-size:1.3rem;text-align:right'>💬 منو تو اینستا فالو کن!</div><div class='fa' style='font-size:1.3rem;text-align:right;color:var(--lapis)'>↩️ باشه، آیدیت چیه؟</div><div class='klein muted'>Folg mir auf Insta!</div></div>",
+     "stil": "merke"
+    },
+    {
      "typ": "wahl",
-     "titel": "Was sagst du?",
+     "titel": "Was sagst du? (1)",
      "fragen": [
       {
        "frage": "Dein Freund will dir das Ende des Films erzählen:",
@@ -646,102 +2274,185 @@
      ]
     },
     {
+     "typ": "wahl",
+     "titel": "Was sagst du? (2)",
+     "fragen": [
+      {
+       "frage": "Deine Freundin hat ein tolles Video gepostet:",
+       "optionen": [
+        "پستتو دیدم، خیلی قشنگ بود!",
+        "زیادی طولانی بود.",
+        "لینکشو برام بفرست."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "Ein Freund erzählt dir von einem Video, das du sehen willst:",
+       "optionen": [
+        "لینکشو برام بفرست.",
+        "خبر فیکه، باور نکن!",
+        "آخرش خیلی غافلگیرکننده بود!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "Dein Onkel teilt eine absurde Nachricht:",
+       "optionen": [
+        "خبر فیکه، باور نکن!",
+        "پستتو دیدم!",
+        "چه ژانری دوست داری؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    },
+    {
      "typ": "paare",
      "links": "x",
      "paare": [
       {
-       "fa": "حتماً این فیلم را ببین!",
+       "fa": "فیلم چطور بود؟",
        "tr": "",
-       "de": "Den Film musst du unbedingt sehen!",
-       "x": "حتماً این فیلمو ببین!"
-      },
-      {
-       "fa": "این آهنگ را گوش بده، فوق‌العاده است!",
-       "tr": "",
-       "de": "Hör dir das Lied an, es ist fantastisch!",
-       "x": "این آهنگو گوش کن، فوق‌العاده‌ست!"
-      },
-      {
-       "fa": "آخرش را لو نده!",
-       "tr": "",
-       "de": "Verrat das Ende nicht!",
-       "x": "آخرشو لو نده!"
-      },
-      {
-       "fa": "بازی بازیگرها عالی بود.",
-       "tr": "",
-       "de": "Die Schauspieler waren großartig.",
-       "x": "بازی بازیگرا عالی بود."
-      },
-      {
-       "fa": "به نظرم ارزش دیدن دارد.",
-       "tr": "",
-       "de": "Ich finde, er ist sehenswert.",
-       "x": "به نظرم ارزش دیدن داره."
-      },
-      {
-       "fa": "روزی چند ساعت با گوشی هستی؟",
-       "tr": "",
-       "de": "Wie viele Stunden am Tag bist du am Handy?",
-       "x": "روزی چند ساعت با گوشی‌ای؟"
-      }
-     ],
-     "titel": "Geschrieben ↔ gesprochen"
-    },
-    {
-     "typ": "tempo",
-     "titel": "Blitz: Redemittel",
-     "aufgabe": "Was bedeutet das?",
-     "modus": "de",
-     "sekunden": 60,
-     "ziel": 10,
-     "woerter": [
-      {
-       "fa": "حتماً این فیلمو ببین!",
-       "a": "Den Film musst du unbedingt sehen!"
+       "de": "Wie war der Film?",
+       "x": "عالی بود، حتماً ببین!"
       },
       {
        "fa": "سریال خوب سراغ داری؟",
-       "a": "Kennst du eine gute Serie?"
+       "tr": "",
+       "de": "Kennst du eine gute Serie?",
+       "x": "آره، «شهرزاد» رو دیدی؟"
       },
       {
-       "fa": "این آهنگو گوش کن، فوق‌العاده‌ست!",
-       "a": "Hör dir das Lied an, es ist fantastisch!"
-      },
-      {
-       "fa": "آخرشو لو نده!",
-       "a": "Verrat das Ende nicht!"
-      },
-      {
-       "fa": "بازی بازیگرا عالی بود.",
-       "a": "Die Schauspieler waren großartig."
-      },
-      {
-       "fa": "داستانش یه کم کند بود.",
-       "a": "Die Handlung war etwas langsam."
-      },
-      {
-       "fa": "به نظرم ارزش دیدن داره.",
-       "a": "Ich finde, er ist sehenswert."
-      },
-      {
-       "fa": "روزی چند ساعت با گوشی‌ای؟",
-       "a": "Wie viele Stunden am Tag bist du am Handy?"
+       "fa": "آخرش رو بگم؟",
+       "tr": "",
+       "de": "Soll ich das Ende verraten?",
+       "x": "نه! لو نده!"
       },
       {
        "fa": "منو تو اینستا فالو کن!",
-       "a": "Folg mir auf Insta!"
+       "tr": "",
+       "de": "Folg mir auf Insta!",
+       "x": "باشه، آیدیت چیه؟"
       },
       {
-       "fa": "به نظرم شبکه‌های اجتماعی وقت آدمو می‌گیرن.",
-       "a": "Ich finde, soziale Netzwerke fressen Zeit."
+       "fa": "این آهنگو گوش کن!",
+       "tr": "",
+       "de": "Hör dir dieses Lied an!",
+       "x": "وای، چه ملودی قشنگی!"
+      },
+      {
+       "fa": "روزی چند ساعت با گوشی‌ای؟",
+       "tr": "",
+       "de": "Wie viele Stunden am Tag bist du am Handy?",
+       "x": "راستش، خیلی زیاد… شاید پنج ساعت."
+      }
+     ],
+     "titel": "Was antwortest du?"
+    },
+    {
+     "typ": "wahl",
+     "titel": "Die passende Reaktion",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>فیلم چطور بود؟</span>",
+       "optionen": [
+        "عالی بود، حتماً ببین!",
+        "راستش، خیلی زیاد… شاید پنج ساعت.",
+        "باشه، آیدیت چیه؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>سریال خوب سراغ داری؟</span>",
+       "optionen": [
+        "آره، «شهرزاد» رو دیدی؟",
+        "وای، چه ملودی قشنگی!",
+        "نه! لو نده!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>آخرش رو بگم؟</span>",
+       "optionen": [
+        "نه! لو نده!",
+        "راستش، خیلی زیاد… شاید پنج ساعت.",
+        "آره، کامنتم گذاشتم!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>منو تو اینستا فالو کن!</span>",
+       "optionen": [
+        "باشه، آیدیت چیه؟",
+        "نه! لو نده!",
+        "عالی بود، حتماً ببین!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>این آهنگو گوش کن!</span>",
+       "optionen": [
+        "وای، چه ملودی قشنگی!",
+        "آره، کامنتم گذاشتم!",
+        "عالی بود، حتماً ببین!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>روزی چند ساعت با گوشی‌ای؟</span>",
+       "optionen": [
+        "راستش، خیلی زیاد… شاید پنج ساعت.",
+        "آره، کامنتم گذاشتم!",
+        "عالی بود، حتماً ببین!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>کنسرت شنبه میای؟</span>",
+       "optionen": [
+        "حتماً! بلیت گرفتی؟",
+        "وای، چه ملودی قشنگی!",
+        "راستش، خیلی زیاد… شاید پنج ساعت."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>پستمو لایک کردی؟</span>",
+       "optionen": [
+        "آره، کامنتم گذاشتم!",
+        "راستش، خیلی زیاد… شاید پنج ساعت.",
+        "حتماً! بلیت گرفتی؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
       }
      ]
     }
    ]
   },
   {
-   "id": "s3",
+   "id": "d",
    "titel": "Modelldialog",
    "vorschau": "Was gucken wir heute?",
    "karten": [
@@ -841,6 +2552,67 @@
      ]
     },
     {
+     "typ": "wahl",
+     "titel": "Wie geht es weiter?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>امشب چی ببینیم؟ یه فیلم ایرانی؟</span><br><span class='klein muted'>Was kommt als Nächstes?</span>",
+       "optionen": [
+        "آره! «جدایی» رو دیدی؟ از اصغر فرهادی.",
+        "زیرنویس انگلیسی داره؟",
+        "وای، سخته … ولی باشه! پاپ‌کورن با تو!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>آره، سه بار! خیلی خوب بود، ولی خیلی هم غمگین.</span><br><span class='klein muted'>Was kommt als Nächstes?</span>",
+       "optionen": [
+        "پس یه چیز خنده‌دار؟",
+        "داستانش چیه؟",
+        "یه دزد از زندان فرار می‌کنه و … نه، لو نمی‌دم!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>«مارمولک» چطوره؟ کمدیه، خیلی معروفه.</span><br><span class='klein muted'>Was kommt als Nächstes?</span>",
+       "optionen": [
+        "داستانش چیه؟",
+        "یه دزد از زندان فرار می‌کنه و … نه، لو نمی‌دم!",
+        "وای، سخته … ولی باشه! پاپ‌کورن با تو!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>یه دزد از زندان فرار می‌کنه و … نه، لو نمی‌دم!</span><br><span class='klein muted'>Was kommt als Nächstes?</span>",
+       "optionen": [
+        "زیرنویس انگلیسی داره؟",
+        "وای، سخته … ولی باشه! پاپ‌کورن با تو!",
+        "آره، سه بار! خیلی خوب بود، ولی خیلی هم غمگین."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>آره، ولی بیا با زیرنویس فارسی ببینیم – برای تمرین!</span><br><span class='klein muted'>Was kommt als Nächstes?</span>",
+       "optionen": [
+        "وای، سخته … ولی باشه! پاپ‌کورن با تو!",
+        "امشب چی ببینیم؟ یه فیلم ایرانی؟",
+        "«مارمولک» چطوره؟ کمدیه، خیلی معروفه."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    },
+    {
      "typ": "ordnen",
      "titel": "Bring den Dialog in die richtige Reihenfolge",
      "frage": "Tippe die Sätze der Reihe nach an.",
@@ -886,11 +2658,80 @@
        "de": "Hat er englische Untertitel?"
       }
      ]
+    },
+    {
+     "typ": "bauen",
+     "titel": "Baue die Sätze aus dem Dialog",
+     "trenner": " ",
+     "woerter": [
+      {
+       "fa": "امشب چی ببینیم؟ یه فیلم ایرانی؟",
+       "tr": "emschab tschī bebīnīm? ye fīlm-e īrānī?",
+       "de": "Was schauen wir heute? Einen iranischen Film?",
+       "teile": [
+        "امشب",
+        "چی",
+        "ببینیم",
+        "یه",
+        "فیلم",
+        "ایرانی"
+       ],
+       "extra": [
+        "پاپ‌کورن"
+       ]
+      },
+      {
+       "fa": "آره! «جدایی» رو دیدی؟ از اصغر فرهادی.",
+       "tr": "āre! «dschodāyī» ro dīdī? az asghar farhādī.",
+       "de": "Ja! Hast du „Nader und Simin“ gesehen? Von Asghar Farhadi.",
+       "teile": [
+        "آره",
+        "«جدایی»",
+        "رو",
+        "دیدی",
+        "از",
+        "اصغر",
+        "فرهادی"
+       ],
+       "extra": [
+        "چطوره؟"
+       ]
+      },
+      {
+       "fa": "پس یه چیز خنده‌دار؟",
+       "tr": "pas ye tschīz-e chandedār?",
+       "de": "Dann etwas Lustiges?",
+       "teile": [
+        "پس",
+        "یه",
+        "چیز",
+        "خنده‌دار"
+       ],
+       "extra": [
+        "فرار"
+       ]
+      },
+      {
+       "fa": "«مارمولک» چطوره؟ کمدیه، خیلی معروفه.",
+       "tr": "«mārmūlak» tschetoure? komedīye, cheylī maʿrūfe.",
+       "de": "Wie wär’s mit „Die Eidechse“? Eine Komödie, sehr bekannt.",
+       "teile": [
+        "«مارمولک»",
+        "چطوره",
+        "کمدیه",
+        "خیلی",
+        "معروفه"
+       ],
+       "extra": [
+        "آره!"
+       ]
+      }
+     ]
     }
    ]
   },
   {
-   "id": "s4",
+   "id": "t",
    "titel": "Lesen",
    "vorschau": "Das iranische Kino",
    "karten": [
@@ -1016,11 +2857,43 @@
        "richtig": 0
       }
      ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "سینمای ایران یکی از مهم‌ترین سینماهای جهان است.",
+       "tr": "sīnemā-ye īrān yekī az mohemtarīn sīnemāhā-ye dschahān ast.",
+       "de": "Das iranische Kino ist eines der bedeutendsten der Welt."
+      },
+      {
+       "fa": "کارگردان‌هایی مثل عباس کیارستمی و اصغر فرهادی جایزه‌های بین‌المللی زیادی برده‌اند.",
+       "tr": "kārgardānhāyī mesl-e ʿabbās kiyārostamī o asghar farhādī dschāyezehā-ye beynolmelalī-ye ziyādī borde-and.",
+       "de": "Regisseure wie Abbas Kiarostami und Asghar Farhadi haben viele internationale Preise gewonnen."
+      },
+      {
+       "fa": "فیلم «جدایی نادر از سیمین» در سال ۲۰۱۲ اسکار گرفت.",
+       "tr": "fīlm-e «dschodāyī-ye nāder az sīmīn» dar sāl-e do hezār o dawāzdah oskār gereft.",
+       "de": "„Nader und Simin – Eine Trennung“ gewann 2012 einen Oscar."
+      },
+      {
+       "fa": "فیلم‌های ایرانی معمولاً داستان‌های ساده‌ای از زندگی روزمره دارند.",
+       "tr": "fīlmhā-ye īrānī maʿmūlan dāstānhā-ye sādeī az zendegī-ye rūzmarre dārand.",
+       "de": "Iranische Filme erzählen oft einfache Geschichten aus dem Alltag."
+      },
+      {
+       "fa": "اما همین داستان‌های ساده، سؤال‌های بزرگی درباره‌ی اخلاق و جامعه مطرح می‌کنند.",
+       "tr": "ammā hamīn dāstānhā-ye sāde, soʾālhā-ye bozorgī darbāre-ye achlāgh o dschāmeʿe matrah mīkonand.",
+       "de": "Doch gerade diese einfachen Geschichten werfen große Fragen über Moral und Gesellschaft auf."
+      }
+     ]
     }
    ]
   },
   {
-   "id": "s5",
+   "id": "k",
    "titel": "Gut zu wissen",
    "vorschau": "Musik – von Hafes bis Hip-Hop",
    "karten": [
@@ -1066,7 +2939,7 @@
    ]
   },
   {
-   "id": "s6",
+   "id": "p",
    "titel": "Vorbereitung für die Sitzung",
    "vorschau": "آماده‌ای؟",
    "karten": [
@@ -1112,14 +2985,24 @@
      "links": "de",
      "paare": [
       {
-       "fa": "چه جور موسیقی گوش می‌دی؟",
-       "tr": "tsche dschūr mūsīghī gūsch mīdī?",
-       "de": "Welche Musik hörst du?"
+       "fa": "آخرین فیلمی که دیدی چی بود؟ تعریف کن – بدون لو دادن!",
+       "tr": "āchirīn fīlmī ke dīdī tschī būd? taʿrīf kon – bedūn-e lou dādan!",
+       "de": "Welchen Film hast du zuletzt gesehen? Erzähl – ohne zu spoilern!"
+      },
+      {
+       "fa": "فیلم یا آهنگ ایرانی می‌شناسی؟",
+       "tr": "fīlm yā āhang-e īrānī mīschenāsī?",
+       "de": "Kennst du iranische Filme oder Lieder?"
       },
       {
        "fa": "شبکه‌های اجتماعی خوبن یا بد؟",
        "tr": "schabakehā-ye edschtemāʿī chūban yā bad?",
        "de": "Sind soziale Netzwerke gut oder schlecht?"
+      },
+      {
+       "fa": "چه جور موسیقی گوش می‌دی؟",
+       "tr": "tsche dschūr mūsīghī gūsch mīdī?",
+       "de": "Welche Musik hörst du?"
       },
       {
        "fa": "روزی چند ساعت با گوشی هستی؟ زیاده؟",
@@ -1130,16 +3013,6 @@
        "fa": "اگه یه فیلم درباره‌ی زندگیت بسازن، اسمش چی باشه؟",
        "tr": "age ye fīlm darbāre-ye zendegīt besāzan, esmesch tschī bāsche?",
        "de": "Wenn man einen Film über dein Leben drehen würde – wie hieße er?"
-      },
-      {
-       "fa": "آخرین فیلمی که دیدی چی بود؟ تعریف کن – بدون لو دادن!",
-       "tr": "āchirīn fīlmī ke dīdī tschī būd? taʿrīf kon – bedūn-e lou dādan!",
-       "de": "Welchen Film hast du zuletzt gesehen? Erzähl – ohne zu spoilern!"
-      },
-      {
-       "fa": "فیلم یا آهنگ ایرانی می‌شناسی؟",
-       "tr": "fīlm yā āhang-e īrānī mīschenāsī?",
-       "de": "Kennst du iranische Filme oder Lieder?"
       }
      ],
      "titel": "Welche Frage ist das?"

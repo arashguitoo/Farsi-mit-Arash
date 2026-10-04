@@ -17,19 +17,19 @@
     {
      "typ": "info",
      "titel": "So läuft die Sitzung",
-     "text": "<p>Diese Lektion ist deine <b>Hausaufgabe</b>: Hier lernst du Wörter und Redemittel und liest einen Modelldialog. Im Unterricht wird dann <b>nur gesprochen</b>.</p><p><b>Im Unterricht:</b></p><ul><li>Sprichwort-Pantomime</li><li>Domino: Anfang und Ende von Sprichwörtern</li><li>Erzähl eine Geschichte, die mit einem Sprichwort endet</li></ul>",
+     "text": "<p>Diese Lektion ist deine <b>Hausaufgabe</b>: Wortschatz, Redemittel, Dialoge und Texte. Im Unterricht wird dann <b>nur gesprochen</b>.</p><p><b>Im Unterricht:</b></p><ul><li>Sprichwort-Pantomime</li><li>Domino: Anfang und Ende von Sprichwörtern</li><li>Erzähl eine Geschichte, die mit einem Sprichwort endet</li></ul><p class='klein muted'>Wortschatz dieser Lektion: 60 Wörter · 18 Redemittel</p>",
      "stil": "merke"
     }
    ]
   },
   {
-   "id": "s1",
-   "titel": "Wörter",
+   "id": "w0",
+   "titel": "Rund ums Thema",
    "vorschau": "ضرب‌المثل · اصطلاح · شوخی",
    "karten": [
     {
      "typ": "info",
-     "titel": "Wörter zum Thema – Teil 1",
+     "titel": "🧩 Rund ums Thema (1)",
      "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
      "beispiele": [
       {
@@ -84,7 +84,7 @@
     },
     {
      "typ": "info",
-     "titel": "Wörter zum Thema – Teil 2",
+     "titel": "🧩 Rund ums Thema (2)",
      "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
      "beispiele": [
       {
@@ -138,43 +138,6 @@
      ]
     },
     {
-     "typ": "info",
-     "titel": "Verben",
-     "text": "<p>Infinitiv – im Gespräch brauchst du sie gleich in allen Zeiten.</p>",
-     "beispiele": [
-      {
-       "fa": "شوخی کردن",
-       "tr": "schūchī kardan",
-       "de": "scherzen",
-       "emoji": "😄"
-      },
-      {
-       "fa": "خندیدن",
-       "tr": "chandīdan",
-       "de": "lachen",
-       "emoji": "😂"
-      },
-      {
-       "fa": "دست انداختن",
-       "tr": "dast andāchtan",
-       "de": "auf den Arm nehmen",
-       "emoji": "🤪"
-      },
-      {
-       "fa": "جدی گرفتن",
-       "tr": "dschedī gereftan",
-       "de": "ernst nehmen",
-       "emoji": "🧐"
-      },
-      {
-       "fa": "تعریف کردن",
-       "tr": "taʿrīf kardan",
-       "de": "erzählen",
-       "emoji": "🗣️"
-      }
-     ]
-    },
-    {
      "typ": "paare",
      "links": "de",
      "paare": [
@@ -222,10 +185,22 @@
      "links": "de",
      "paare": [
       {
-       "fa": "آش",
-       "tr": "āsch",
-       "de": "Suppe (Ash)",
-       "emoji": "🍲"
+       "fa": "قطره",
+       "tr": "ghatre",
+       "de": "Tropfen",
+       "emoji": "💧"
+      },
+      {
+       "fa": "کلاغ",
+       "tr": "kalāgh",
+       "de": "Krähe",
+       "emoji": "🐦‍⬛"
+      },
+      {
+       "fa": "شوخی",
+       "tr": "schūchī",
+       "de": "Scherz",
+       "emoji": "😄"
       },
       {
        "fa": "بام",
@@ -234,10 +209,1138 @@
        "emoji": "🏠"
       },
       {
+       "fa": "اصطلاح",
+       "tr": "estelāh",
+       "de": "Redewendung",
+       "emoji": "💬"
+      },
+      {
+       "fa": "جوک",
+       "tr": "dschouk",
+       "de": "Witz",
+       "emoji": "🤣"
+      }
+     ],
+     "titel": "Noch einmal: Was bedeutet das?"
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "خر",
+       "tr": "char",
+       "de": "Esel",
+       "emoji": "🫏"
+      },
+      {
+       "fa": "کنایه",
+       "tr": "kenāye",
+       "de": "Anspielung",
+       "emoji": "😏"
+      },
+      {
+       "fa": "آش",
+       "tr": "āsch",
+       "de": "Suppe (Ash)",
+       "emoji": "🍲"
+      },
+      {
+       "fa": "معنی",
+       "tr": "maʿnī",
+       "de": "Bedeutung",
+       "emoji": "❓"
+      },
+      {
+       "fa": "کلاغ",
+       "tr": "kalāgh",
+       "de": "Krähe",
+       "emoji": "🐦‍⬛"
+      },
+      {
+       "fa": "دریا",
+       "tr": "daryā",
+       "de": "Meer",
+       "emoji": "🌊"
+      }
+     ],
+     "titel": "Memory: Bild & Wort"
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Rund ums Thema",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 50,
+     "ziel": 10,
+     "woerter": [
+      {
+       "fa": "ضرب‌المثل",
+       "a": "Sprichwort"
+      },
+      {
+       "fa": "اصطلاح",
+       "a": "Redewendung"
+      },
+      {
+       "fa": "شوخی",
+       "a": "Scherz"
+      },
+      {
+       "fa": "جوک",
+       "a": "Witz"
+      },
+      {
+       "fa": "معنی",
+       "a": "Bedeutung"
+      },
+      {
+       "fa": "کنایه",
+       "a": "Anspielung"
+      },
+      {
+       "fa": "قطره",
+       "a": "Tropfen"
+      },
+      {
+       "fa": "دریا",
+       "a": "Meer"
+      },
+      {
+       "fa": "شتر",
+       "a": "Kamel"
+      },
+      {
+       "fa": "خر",
+       "a": "Esel"
+      },
+      {
        "fa": "گربه",
-       "tr": "gorbe",
-       "de": "Katze",
-       "emoji": "🐈"
+       "a": "Katze"
+      },
+      {
+       "fa": "کلاغ",
+       "a": "Krähe"
+      },
+      {
+       "fa": "ماست",
+       "a": "Joghurt"
+      },
+      {
+       "fa": "آش",
+       "a": "Suppe (Ash)"
+      },
+      {
+       "fa": "ریش",
+       "a": "Bart"
+      },
+      {
+       "fa": "بام",
+       "a": "Dach"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "w1",
+   "titel": "Tiere in Sprichwörtern",
+   "vorschau": "سگ · گرگ · روباه",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "🐾 Tiere in Sprichwörtern (1)",
+     "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
+     "beispiele": [
+      {
+       "fa": "سگ",
+       "tr": "sag",
+       "de": "Hund",
+       "emoji": "🐕"
+      },
+      {
+       "fa": "گرگ",
+       "tr": "gorg",
+       "de": "Wolf",
+       "emoji": "🐺"
+      },
+      {
+       "fa": "روباه",
+       "tr": "rūbāh",
+       "de": "Fuchs",
+       "emoji": "🦊"
+      },
+      {
+       "fa": "مرغ",
+       "tr": "morgh",
+       "de": "Huhn",
+       "emoji": "🐔"
+      },
+      {
+       "fa": "خروس",
+       "tr": "chorūs",
+       "de": "Hahn",
+       "emoji": "🐓"
+      },
+      {
+       "fa": "ماهی",
+       "tr": "māhī",
+       "de": "Fisch",
+       "emoji": "🐟"
+      }
+     ]
+    },
+    {
+     "typ": "info",
+     "titel": "🐾 Tiere in Sprichwörtern (2)",
+     "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
+     "beispiele": [
+      {
+       "fa": "مار",
+       "tr": "mār",
+       "de": "Schlange",
+       "emoji": "🐍"
+      },
+      {
+       "fa": "شیر",
+       "tr": "schīr",
+       "de": "Löwe",
+       "emoji": "🦁"
+      },
+      {
+       "fa": "موش",
+       "tr": "mūsch",
+       "de": "Maus",
+       "emoji": "🐭"
+      },
+      {
+       "fa": "گنجشک",
+       "tr": "gondschischk",
+       "de": "Spatz",
+       "emoji": "🐦"
+      },
+      {
+       "fa": "فیل",
+       "tr": "fīl",
+       "de": "Elefant",
+       "emoji": "🐘"
+      },
+      {
+       "fa": "کبوتر",
+       "tr": "kabūtar",
+       "de": "Taube",
+       "emoji": "🕊️"
+      }
+     ]
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "مرغ",
+       "tr": "morgh",
+       "de": "Huhn",
+       "emoji": "🐔"
+      },
+      {
+       "fa": "مار",
+       "tr": "mār",
+       "de": "Schlange",
+       "emoji": "🐍"
+      },
+      {
+       "fa": "فیل",
+       "tr": "fīl",
+       "de": "Elefant",
+       "emoji": "🐘"
+      },
+      {
+       "fa": "خروس",
+       "tr": "chorūs",
+       "de": "Hahn",
+       "emoji": "🐓"
+      },
+      {
+       "fa": "ماهی",
+       "tr": "māhī",
+       "de": "Fisch",
+       "emoji": "🐟"
+      },
+      {
+       "fa": "موش",
+       "tr": "mūsch",
+       "de": "Maus",
+       "emoji": "🐭"
+      }
+     ],
+     "titel": "Was bedeutet das?"
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "خروس",
+       "tr": "chorūs",
+       "de": "Hahn",
+       "emoji": "🐓"
+      },
+      {
+       "fa": "مار",
+       "tr": "mār",
+       "de": "Schlange",
+       "emoji": "🐍"
+      },
+      {
+       "fa": "فیل",
+       "tr": "fīl",
+       "de": "Elefant",
+       "emoji": "🐘"
+      },
+      {
+       "fa": "سگ",
+       "tr": "sag",
+       "de": "Hund",
+       "emoji": "🐕"
+      },
+      {
+       "fa": "روباه",
+       "tr": "rūbāh",
+       "de": "Fuchs",
+       "emoji": "🦊"
+      },
+      {
+       "fa": "شیر",
+       "tr": "schīr",
+       "de": "Löwe",
+       "emoji": "🦁"
+      }
+     ],
+     "titel": "Noch einmal: Was bedeutet das?"
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "گرگ",
+       "tr": "gorg",
+       "de": "Wolf",
+       "emoji": "🐺"
+      },
+      {
+       "fa": "کبوتر",
+       "tr": "kabūtar",
+       "de": "Taube",
+       "emoji": "🕊️"
+      },
+      {
+       "fa": "مرغ",
+       "tr": "morgh",
+       "de": "Huhn",
+       "emoji": "🐔"
+      },
+      {
+       "fa": "فیل",
+       "tr": "fīl",
+       "de": "Elefant",
+       "emoji": "🐘"
+      },
+      {
+       "fa": "مار",
+       "tr": "mār",
+       "de": "Schlange",
+       "emoji": "🐍"
+      },
+      {
+       "fa": "گنجشک",
+       "tr": "gondschischk",
+       "de": "Spatz",
+       "emoji": "🐦"
+      }
+     ],
+     "titel": "Memory: Bild & Wort"
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>او ___ است و همه را گول می‌زند.</span><br><span class='mini'>Er/Sie ist ein Fuchs und trickst alle aus.</span>",
+       "optionen": [
+        "روباه",
+        "جوک",
+        "ضرب‌المثل"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>او روباه است و همه را گول می‌زند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>صدای ___ صبح زود همه را بیدار کرد.</span><br><span class='mini'>Das Krähen des Hahns weckte früh morgens alle.</span>",
+       "optionen": [
+        "خروس",
+        "خنده",
+        "پیشانی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>صدای خروس صبح زود همه را بیدار کرد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>مثل ___ از گربه می‌ترسد.</span><br><span class='mini'>Er/Sie hat Angst wie die Maus vor der Katze.</span>",
+       "optionen": [
+        "موش",
+        "ریش",
+        "کمدین"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>مثل موش از گربه می‌ترسد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>حافظه‌اش مثل ___ است؛ هیچ چیز را فراموش نمی‌کند.</span><br><span class='mini'>Er/Sie hat ein Gedächtnis wie ein Elefant; vergisst nichts.</span>",
+       "optionen": [
+        "فیل",
+        "ضرب‌المثل",
+        "بامزه"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>حافظه‌اش مثل فیل است؛ هیچ چیز را فراموش نمی‌کند.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Tiere in Sprichwörtern",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 50,
+     "ziel": 10,
+     "woerter": [
+      {
+       "fa": "سگ",
+       "a": "Hund"
+      },
+      {
+       "fa": "گرگ",
+       "a": "Wolf"
+      },
+      {
+       "fa": "روباه",
+       "a": "Fuchs"
+      },
+      {
+       "fa": "مرغ",
+       "a": "Huhn"
+      },
+      {
+       "fa": "خروس",
+       "a": "Hahn"
+      },
+      {
+       "fa": "ماهی",
+       "a": "Fisch"
+      },
+      {
+       "fa": "مار",
+       "a": "Schlange"
+      },
+      {
+       "fa": "شیر",
+       "a": "Löwe"
+      },
+      {
+       "fa": "موش",
+       "a": "Maus"
+      },
+      {
+       "fa": "گنجشک",
+       "a": "Spatz"
+      },
+      {
+       "fa": "فیل",
+       "a": "Elefant"
+      },
+      {
+       "fa": "کبوتر",
+       "a": "Taube"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "w2",
+   "titel": "Körper in Redewendungen",
+   "vorschau": "دل · سر · چشم",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "🫀 Körper in Redewendungen (1)",
+     "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
+     "beispiele": [
+      {
+       "fa": "دل",
+       "tr": "del",
+       "de": "Herz, Bauch",
+       "emoji": "❤️"
+      },
+      {
+       "fa": "سر",
+       "tr": "sar",
+       "de": "Kopf",
+       "emoji": "🧠"
+      },
+      {
+       "fa": "چشم",
+       "tr": "tscheschm",
+       "de": "Auge",
+       "emoji": "👁️"
+      },
+      {
+       "fa": "گوش",
+       "tr": "gūsch",
+       "de": "Ohr",
+       "emoji": "👂"
+      },
+      {
+       "fa": "زبان",
+       "tr": "zabān",
+       "de": "Zunge, Sprache",
+       "emoji": "👅"
+      },
+      {
+       "fa": "دست",
+       "tr": "dast",
+       "de": "Hand",
+       "emoji": "✋"
+      }
+     ]
+    },
+    {
+     "typ": "info",
+     "titel": "🫀 Körper in Redewendungen (2)",
+     "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
+     "beispiele": [
+      {
+       "fa": "پا",
+       "tr": "pā",
+       "de": "Fuß",
+       "emoji": "🦶"
+      },
+      {
+       "fa": "دماغ",
+       "tr": "damāgh",
+       "de": "Nase",
+       "emoji": "👃"
+      },
+      {
+       "fa": "جگر",
+       "tr": "dschegar",
+       "de": "Leber (Herz, Mut)",
+       "emoji": "🫁"
+      },
+      {
+       "fa": "مو",
+       "tr": "mū",
+       "de": "Haar",
+       "emoji": "💇"
+      },
+      {
+       "fa": "دهان",
+       "tr": "dahān",
+       "de": "Mund",
+       "emoji": "👄"
+      },
+      {
+       "fa": "پیشانی",
+       "tr": "pīschānī",
+       "de": "Stirn",
+       "emoji": "🙆"
+      }
+     ]
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "پا",
+       "tr": "pā",
+       "de": "Fuß",
+       "emoji": "🦶"
+      },
+      {
+       "fa": "پیشانی",
+       "tr": "pīschānī",
+       "de": "Stirn",
+       "emoji": "🙆"
+      },
+      {
+       "fa": "جگر",
+       "tr": "dschegar",
+       "de": "Leber (Herz, Mut)",
+       "emoji": "🫁"
+      },
+      {
+       "fa": "دست",
+       "tr": "dast",
+       "de": "Hand",
+       "emoji": "✋"
+      },
+      {
+       "fa": "دل",
+       "tr": "del",
+       "de": "Herz, Bauch",
+       "emoji": "❤️"
+      },
+      {
+       "fa": "سر",
+       "tr": "sar",
+       "de": "Kopf",
+       "emoji": "🧠"
+      }
+     ],
+     "titel": "Was bedeutet das?"
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "زبان",
+       "tr": "zabān",
+       "de": "Zunge, Sprache",
+       "emoji": "👅"
+      },
+      {
+       "fa": "سر",
+       "tr": "sar",
+       "de": "Kopf",
+       "emoji": "🧠"
+      },
+      {
+       "fa": "جگر",
+       "tr": "dschegar",
+       "de": "Leber (Herz, Mut)",
+       "emoji": "🫁"
+      },
+      {
+       "fa": "پیشانی",
+       "tr": "pīschānī",
+       "de": "Stirn",
+       "emoji": "🙆"
+      },
+      {
+       "fa": "چشم",
+       "tr": "tscheschm",
+       "de": "Auge",
+       "emoji": "👁️"
+      },
+      {
+       "fa": "دل",
+       "tr": "del",
+       "de": "Herz, Bauch",
+       "emoji": "❤️"
+      }
+     ],
+     "titel": "Noch einmal: Was bedeutet das?"
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "سر",
+       "tr": "sar",
+       "de": "Kopf",
+       "emoji": "🧠"
+      },
+      {
+       "fa": "پیشانی",
+       "tr": "pīschānī",
+       "de": "Stirn",
+       "emoji": "🙆"
+      },
+      {
+       "fa": "دل",
+       "tr": "del",
+       "de": "Herz, Bauch",
+       "emoji": "❤️"
+      },
+      {
+       "fa": "زبان",
+       "tr": "zabān",
+       "de": "Zunge, Sprache",
+       "emoji": "👅"
+      },
+      {
+       "fa": "گوش",
+       "tr": "gūsch",
+       "de": "Ohr",
+       "emoji": "👂"
+      },
+      {
+       "fa": "دهان",
+       "tr": "dahān",
+       "de": "Mund",
+       "emoji": "👄"
+      }
+     ],
+     "titel": "Memory: Bild & Wort"
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>از این ___ می‌گیرد، از آن ___ در می‌کند.</span><br><span class='mini'>Zum einen Ohr rein, zum anderen raus.</span>",
+       "optionen": [
+        "گوش",
+        "مرغ",
+        "موش"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>از این گوش می‌گیرد، از آن گوش در می‌کند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>او ___ درازی دارد؛ به همه جواب می‌دهد.</span><br><span class='mini'>Er/Sie ist frech (wörtl.: hat eine lange Zunge); gibt allen Widerworte.</span>",
+       "optionen": [
+        "زبان",
+        "بام",
+        "ماهی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>او زبان درازی دارد؛ به همه جواب می‌دهد.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Körper in Redewendungen",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 50,
+     "ziel": 10,
+     "woerter": [
+      {
+       "fa": "دل",
+       "a": "Herz, Bauch"
+      },
+      {
+       "fa": "سر",
+       "a": "Kopf"
+      },
+      {
+       "fa": "چشم",
+       "a": "Auge"
+      },
+      {
+       "fa": "گوش",
+       "a": "Ohr"
+      },
+      {
+       "fa": "زبان",
+       "a": "Zunge, Sprache"
+      },
+      {
+       "fa": "دست",
+       "a": "Hand"
+      },
+      {
+       "fa": "پا",
+       "a": "Fuß"
+      },
+      {
+       "fa": "دماغ",
+       "a": "Nase"
+      },
+      {
+       "fa": "جگر",
+       "a": "Leber (Herz, Mut)"
+      },
+      {
+       "fa": "مو",
+       "a": "Haar"
+      },
+      {
+       "fa": "دهان",
+       "a": "Mund"
+      },
+      {
+       "fa": "پیشانی",
+       "a": "Stirn"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "w3",
+   "titel": "Humor",
+   "vorschau": "طنز · لطیفه · بامزه",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "😄 Humor (1)",
+     "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
+     "beispiele": [
+      {
+       "fa": "طنز",
+       "tr": "tanz",
+       "de": "Satire",
+       "emoji": "🎭"
+      },
+      {
+       "fa": "لطیفه",
+       "tr": "latīfe",
+       "de": "Witz, Anekdote",
+       "emoji": "😂"
+      },
+      {
+       "fa": "بامزه",
+       "tr": "bāmaze",
+       "de": "witzig, süß",
+       "emoji": "😆"
+      },
+      {
+       "fa": "خنده",
+       "tr": "chande",
+       "de": "Lachen",
+       "emoji": "😁"
+      },
+      {
+       "fa": "شوخ‌طبع",
+       "tr": "schūchtabʿ",
+       "de": "humorvoll",
+       "emoji": "🤡"
+      },
+      {
+       "fa": "مسخره",
+       "tr": "masschare",
+       "de": "lächerlich",
+       "emoji": "🙃"
+      }
+     ]
+    },
+    {
+     "typ": "info",
+     "titel": "😄 Humor (2)",
+     "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
+     "beispiele": [
+      {
+       "fa": "خنده‌دار",
+       "tr": "chandedār",
+       "de": "lustig",
+       "emoji": "🤣"
+      },
+      {
+       "fa": "جدی",
+       "tr": "dschedī",
+       "de": "ernst",
+       "emoji": "😐"
+      },
+      {
+       "fa": "بازی با کلمات",
+       "tr": "bāzī bā kalamāt",
+       "de": "Wortspiel",
+       "emoji": "🔤"
+      },
+      {
+       "fa": "کاریکاتور",
+       "tr": "kārīkātor",
+       "de": "Karikatur",
+       "emoji": "✏️"
+      },
+      {
+       "fa": "کمدین",
+       "tr": "komedīn",
+       "de": "Comedian",
+       "emoji": "🎤"
+      },
+      {
+       "fa": "قهقهه",
+       "tr": "ghahghahe",
+       "de": "schallendes Lachen",
+       "emoji": "🤣"
+      }
+     ]
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "لطیفه",
+       "tr": "latīfe",
+       "de": "Witz, Anekdote",
+       "emoji": "😂"
+      },
+      {
+       "fa": "کاریکاتور",
+       "tr": "kārīkātor",
+       "de": "Karikatur",
+       "emoji": "✏️"
+      },
+      {
+       "fa": "بازی با کلمات",
+       "tr": "bāzī bā kalamāt",
+       "de": "Wortspiel",
+       "emoji": "🔤"
+      },
+      {
+       "fa": "مسخره",
+       "tr": "masschare",
+       "de": "lächerlich",
+       "emoji": "🙃"
+      },
+      {
+       "fa": "طنز",
+       "tr": "tanz",
+       "de": "Satire",
+       "emoji": "🎭"
+      },
+      {
+       "fa": "بامزه",
+       "tr": "bāmaze",
+       "de": "witzig, süß",
+       "emoji": "😆"
+      }
+     ],
+     "titel": "Was bedeutet das?"
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "جدی",
+       "tr": "dschedī",
+       "de": "ernst",
+       "emoji": "😐"
+      },
+      {
+       "fa": "قهقهه",
+       "tr": "ghahghahe",
+       "de": "schallendes Lachen",
+       "emoji": "🤣"
+      },
+      {
+       "fa": "مسخره",
+       "tr": "masschare",
+       "de": "lächerlich",
+       "emoji": "🙃"
+      },
+      {
+       "fa": "خنده",
+       "tr": "chande",
+       "de": "Lachen",
+       "emoji": "😁"
+      },
+      {
+       "fa": "لطیفه",
+       "tr": "latīfe",
+       "de": "Witz, Anekdote",
+       "emoji": "😂"
+      },
+      {
+       "fa": "خنده‌دار",
+       "tr": "chandedār",
+       "de": "lustig",
+       "emoji": "🤣"
+      }
+     ],
+     "titel": "Noch einmal: Was bedeutet das?"
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "طنز",
+       "tr": "tanz",
+       "de": "Satire",
+       "emoji": "🎭"
+      },
+      {
+       "fa": "کمدین",
+       "tr": "komedīn",
+       "de": "Comedian",
+       "emoji": "🎤"
+      },
+      {
+       "fa": "جدی",
+       "tr": "dschedī",
+       "de": "ernst",
+       "emoji": "😐"
+      },
+      {
+       "fa": "لطیفه",
+       "tr": "latīfe",
+       "de": "Witz, Anekdote",
+       "emoji": "😂"
+      },
+      {
+       "fa": "شوخ‌طبع",
+       "tr": "schūchtabʿ",
+       "de": "humorvoll",
+       "emoji": "🤡"
+      },
+      {
+       "fa": "مسخره",
+       "tr": "masschare",
+       "de": "lächerlich",
+       "emoji": "🙃"
+      }
+     ],
+     "titel": "Memory: Bild & Wort"
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>در ادبیات فارسی ___ سابقه‌ی طولانی دارد؛ مثلا عبید زاکانی.</span><br><span class='mini'>Satire hat in der persischen Literatur eine lange Tradition, z. B. Obeyd Zakani.</span>",
+       "optionen": [
+        "طنز",
+        "پا",
+        "گوش"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>در ادبیات فارسی طنز سابقه‌ی طولانی دارد؛ مثلا عبید زاکانی.</span>"
+      },
+      {
+       "frage": "<span class='fa'>این ___ خیلی بامزه بود؛ همه خندیدند.</span><br><span class='mini'>Dieser Witz war sehr lustig; alle haben gelacht.</span>",
+       "optionen": [
+        "لطیفه",
+        "گرگ",
+        "دست"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>این لطیفه خیلی بامزه بود؛ همه خندیدند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>او خیلی ___ است؛ همیشه شوخی می‌کند.</span><br><span class='mini'>Er/Sie ist sehr humorvoll; macht immer Witze.</span>",
+       "optionen": [
+        "شوخ‌طبع",
+        "مو",
+        "گرگ"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>او خیلی شوخ‌طبع است؛ همیشه شوخی می‌کند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>این ___ در روزنامه یک سیاستمدار را مسخره می‌کند.</span><br><span class='mini'>Diese Karikatur in der Zeitung macht sich über einen Politiker lustig.</span>",
+       "optionen": [
+        "کاریکاتور",
+        "چشم",
+        "ماست"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>این کاریکاتور در روزنامه یک سیاستمدار را مسخره می‌کند.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Humor",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 50,
+     "ziel": 10,
+     "woerter": [
+      {
+       "fa": "طنز",
+       "a": "Satire"
+      },
+      {
+       "fa": "لطیفه",
+       "a": "Witz, Anekdote"
+      },
+      {
+       "fa": "بامزه",
+       "a": "witzig, süß"
+      },
+      {
+       "fa": "خنده",
+       "a": "Lachen"
+      },
+      {
+       "fa": "شوخ‌طبع",
+       "a": "humorvoll"
+      },
+      {
+       "fa": "مسخره",
+       "a": "lächerlich"
+      },
+      {
+       "fa": "خنده‌دار",
+       "a": "lustig"
+      },
+      {
+       "fa": "جدی",
+       "a": "ernst"
+      },
+      {
+       "fa": "بازی با کلمات",
+       "a": "Wortspiel"
+      },
+      {
+       "fa": "کاریکاتور",
+       "a": "Karikatur"
+      },
+      {
+       "fa": "کمدین",
+       "a": "Comedian"
+      },
+      {
+       "fa": "قهقهه",
+       "a": "schallendes Lachen"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "v",
+   "titel": "Verben & Wiederholung",
+   "vorschau": "شوخی کردن · خندیدن · دست انداختن",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Verben",
+     "text": "<p>Infinitiv – im Gespräch brauchst du sie in allen Zeiten.</p>",
+     "beispiele": [
+      {
+       "fa": "شوخی کردن",
+       "tr": "schūchī kardan",
+       "de": "scherzen",
+       "emoji": "😄"
+      },
+      {
+       "fa": "خندیدن",
+       "tr": "chandīdan",
+       "de": "lachen",
+       "emoji": "😂"
       },
       {
        "fa": "دست انداختن",
@@ -246,10 +1349,70 @@
        "emoji": "🤪"
       },
       {
-       "fa": "قطره",
-       "tr": "ghatre",
-       "de": "Tropfen",
-       "emoji": "💧"
+       "fa": "جدی گرفتن",
+       "tr": "dschedī gereftan",
+       "de": "ernst nehmen",
+       "emoji": "🧐"
+      },
+      {
+       "fa": "تعریف کردن",
+       "tr": "taʿrīf kardan",
+       "de": "erzählen",
+       "emoji": "🗣️"
+      },
+      {
+       "fa": "خنداندن",
+       "tr": "chandāndan",
+       "de": "zum Lachen bringen",
+       "emoji": "😆"
+      },
+      {
+       "fa": "مسخره کردن",
+       "tr": "masschare kardan",
+       "de": "sich lustig machen",
+       "emoji": "🙃"
+      },
+      {
+       "fa": "ضرب‌المثل گفتن",
+       "tr": "zarbolmasal goftan",
+       "de": "ein Sprichwort sagen",
+       "emoji": "📜"
+      }
+     ]
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "خنداندن",
+       "tr": "chandāndan",
+       "de": "zum Lachen bringen",
+       "emoji": "😆"
+      },
+      {
+       "fa": "خندیدن",
+       "tr": "chandīdan",
+       "de": "lachen",
+       "emoji": "😂"
+      },
+      {
+       "fa": "شوخی کردن",
+       "tr": "schūchī kardan",
+       "de": "scherzen",
+       "emoji": "😄"
+      },
+      {
+       "fa": "مسخره کردن",
+       "tr": "masschare kardan",
+       "de": "sich lustig machen",
+       "emoji": "🙃"
+      },
+      {
+       "fa": "دست انداختن",
+       "tr": "dast andāchtan",
+       "de": "auf den Arm nehmen",
+       "emoji": "🤪"
       },
       {
        "fa": "جدی گرفتن",
@@ -261,55 +1424,97 @@
      "titel": "Was bedeutet das?"
     },
     {
-     "typ": "memory",
-     "links": "emoji",
-     "paare": [
-      {
-       "fa": "اصطلاح",
-       "tr": "estelāh",
-       "de": "Redewendung",
-       "emoji": "💬"
-      },
-      {
-       "fa": "ماست",
-       "tr": "māst",
-       "de": "Joghurt",
-       "emoji": "🥣"
-      },
-      {
-       "fa": "ریش",
-       "tr": "rīsch",
-       "de": "Bart",
-       "emoji": "🧔"
-      },
-      {
-       "fa": "کنایه",
-       "tr": "kenāye",
-       "de": "Anspielung",
-       "emoji": "😏"
-      },
-      {
-       "fa": "کلاغ",
-       "tr": "kalāgh",
-       "de": "Krähe",
-       "emoji": "🐦‍⬛"
-      },
-      {
-       "fa": "معنی",
-       "tr": "maʿnī",
-       "de": "Bedeutung",
-       "emoji": "❓"
-      }
+     "typ": "sortieren",
+     "titel": "Welches Wortfeld?",
+     "frage": "Ordne die Wörter dem Wortfeld zu.",
+     "kategorien": [
+      "🧩 Rund ums Thema",
+      "🐾 Tiere in Sprichwörtern",
+      "🫀 Körper in Redewendungen",
+      "😄 Humor"
      ],
-     "titel": "Memory: Bild & Wort"
+     "items": [
+      {
+       "fa": "ضرب‌المثل",
+       "k": 0,
+       "e": "Sprichwort",
+       "say": false
+      },
+      {
+       "fa": "خر",
+       "k": 0,
+       "e": "Esel",
+       "say": false
+      },
+      {
+       "fa": "دریا",
+       "k": 0,
+       "e": "Meer",
+       "say": false
+      },
+      {
+       "fa": "ماهی",
+       "k": 1,
+       "e": "Fisch",
+       "say": false
+      },
+      {
+       "fa": "روباه",
+       "k": 1,
+       "e": "Fuchs",
+       "say": false
+      },
+      {
+       "fa": "کبوتر",
+       "k": 1,
+       "e": "Taube",
+       "say": false
+      },
+      {
+       "fa": "دل",
+       "k": 2,
+       "e": "Herz, Bauch",
+       "say": false
+      },
+      {
+       "fa": "پیشانی",
+       "k": 2,
+       "e": "Stirn",
+       "say": false
+      },
+      {
+       "fa": "زبان",
+       "k": 2,
+       "e": "Zunge, Sprache",
+       "say": false
+      },
+      {
+       "fa": "جدی",
+       "k": 3,
+       "e": "ernst",
+       "say": false
+      },
+      {
+       "fa": "کاریکاتور",
+       "k": 3,
+       "e": "Karikatur",
+       "say": false
+      },
+      {
+       "fa": "طنز",
+       "k": 3,
+       "e": "Satire",
+       "say": false
+      }
+     ]
     },
     {
      "typ": "tempo",
-     "titel": "Blitz: Wörter",
+     "titel": "Blitz: alle Wörter",
      "aufgabe": "Was bedeutet das?",
      "modus": "de",
-     "sekunden": 60,
-     "ziel": 12,
+     "sekunden": 75,
+     "ziel": 15,
      "woerter": [
       {
        "fa": "ضرب‌المثل",
@@ -376,6 +1581,150 @@
        "a": "Dach"
       },
       {
+       "fa": "سگ",
+       "a": "Hund"
+      },
+      {
+       "fa": "گرگ",
+       "a": "Wolf"
+      },
+      {
+       "fa": "روباه",
+       "a": "Fuchs"
+      },
+      {
+       "fa": "مرغ",
+       "a": "Huhn"
+      },
+      {
+       "fa": "خروس",
+       "a": "Hahn"
+      },
+      {
+       "fa": "ماهی",
+       "a": "Fisch"
+      },
+      {
+       "fa": "مار",
+       "a": "Schlange"
+      },
+      {
+       "fa": "شیر",
+       "a": "Löwe"
+      },
+      {
+       "fa": "موش",
+       "a": "Maus"
+      },
+      {
+       "fa": "گنجشک",
+       "a": "Spatz"
+      },
+      {
+       "fa": "فیل",
+       "a": "Elefant"
+      },
+      {
+       "fa": "کبوتر",
+       "a": "Taube"
+      },
+      {
+       "fa": "دل",
+       "a": "Herz, Bauch"
+      },
+      {
+       "fa": "سر",
+       "a": "Kopf"
+      },
+      {
+       "fa": "چشم",
+       "a": "Auge"
+      },
+      {
+       "fa": "گوش",
+       "a": "Ohr"
+      },
+      {
+       "fa": "زبان",
+       "a": "Zunge, Sprache"
+      },
+      {
+       "fa": "دست",
+       "a": "Hand"
+      },
+      {
+       "fa": "پا",
+       "a": "Fuß"
+      },
+      {
+       "fa": "دماغ",
+       "a": "Nase"
+      },
+      {
+       "fa": "جگر",
+       "a": "Leber (Herz, Mut)"
+      },
+      {
+       "fa": "مو",
+       "a": "Haar"
+      },
+      {
+       "fa": "دهان",
+       "a": "Mund"
+      },
+      {
+       "fa": "پیشانی",
+       "a": "Stirn"
+      },
+      {
+       "fa": "طنز",
+       "a": "Satire"
+      },
+      {
+       "fa": "لطیفه",
+       "a": "Witz, Anekdote"
+      },
+      {
+       "fa": "بامزه",
+       "a": "witzig, süß"
+      },
+      {
+       "fa": "خنده",
+       "a": "Lachen"
+      },
+      {
+       "fa": "شوخ‌طبع",
+       "a": "humorvoll"
+      },
+      {
+       "fa": "مسخره",
+       "a": "lächerlich"
+      },
+      {
+       "fa": "خنده‌دار",
+       "a": "lustig"
+      },
+      {
+       "fa": "جدی",
+       "a": "ernst"
+      },
+      {
+       "fa": "بازی با کلمات",
+       "a": "Wortspiel"
+      },
+      {
+       "fa": "کاریکاتور",
+       "a": "Karikatur"
+      },
+      {
+       "fa": "کمدین",
+       "a": "Comedian"
+      },
+      {
+       "fa": "قهقهه",
+       "a": "schallendes Lachen"
+      },
+      {
        "fa": "شوخی کردن",
        "a": "scherzen"
       },
@@ -394,19 +1743,31 @@
       {
        "fa": "تعریف کردن",
        "a": "erzählen"
+      },
+      {
+       "fa": "خنداندن",
+       "a": "zum Lachen bringen"
+      },
+      {
+       "fa": "مسخره کردن",
+       "a": "sich lustig machen"
+      },
+      {
+       "fa": "ضرب‌المثل گفتن",
+       "a": "ein Sprichwort sagen"
       }
      ]
     }
    ]
   },
   {
-   "id": "s2",
+   "id": "r1",
    "titel": "Redemittel",
    "vorschau": "قطره قطره جمع گردد، وانگهی دریا شود.",
    "karten": [
     {
      "typ": "info",
-     "titel": "Redemittel – Teil 1",
+     "titel": "Redemittel (1)",
      "text": "<p>So sagt man das im Gespräch. Tippe einen Satz an, um ihn zu hören.</p>",
      "stil": "merke",
      "beispiele": [
@@ -450,8 +1811,8 @@
     },
     {
      "typ": "info",
-     "titel": "Redemittel – Teil 2",
-     "text": "<p>Die Schriftform findest du gleich in der Übung „Geschrieben ↔ gesprochen“.</p>",
+     "titel": "Redemittel (2)",
+     "text": "<p>So sagt man das im Gespräch. Tippe einen Satz an, um ihn zu hören.</p>",
      "stil": "merke",
      "beispiele": [
       {
@@ -483,6 +1844,56 @@
        "tr": "dārī sar be saram mīzārī?",
        "de": "Willst du mich auf den Arm nehmen?",
        "x": "داری سر به سرم می‌گذاری؟"
+      },
+      {
+       "fa": "ماهی رو هر وقت از آب بگیری تازه‌ست.",
+       "tr": "māhī ro har waght az āb begīrī tāzast.",
+       "de": "Es ist nie zu spät. (wörtl.: Den Fisch, wann immer du ihn fängst, ist er frisch)",
+       "x": "ماهی را هر وقت از آب بگیری تازه است."
+      }
+     ]
+    },
+    {
+     "typ": "info",
+     "titel": "Redemittel (3)",
+     "text": "<p>So sagt man das im Gespräch. Tippe einen Satz an, um ihn zu hören.</p>",
+     "stil": "merke",
+     "beispiele": [
+      {
+       "fa": "جوجه رو آخر پاییز می‌شمرن.",
+       "tr": "dschūdsche ro āchar-e pāyīz mīschoman.",
+       "de": "Man soll den Tag nicht vor dem Abend loben. (wörtl.: Küken zählt man Ende Herbst)",
+       "x": "جوجه را آخر پاییز می‌شمارند."
+      },
+      {
+       "fa": "از این گوش می‌گیره، از اون گوش در می‌کنه.",
+       "tr": "az īn gūsch mīgīre, az ūn gūsch dar mīkone.",
+       "de": "Zum einen Ohr rein, zum anderen raus.",
+       "x": "از این گوش می‌گیرد، از آن گوش در می‌کند."
+      },
+      {
+       "fa": "چشمم روشن!",
+       "tr": "tscheschmam rouschan!",
+       "de": "Na, das ist ja ein Ding! (ironisch)",
+       "x": "چشمم روشن!"
+      },
+      {
+       "fa": "زبونش درازه.",
+       "tr": "zabūnesch derāze.",
+       "de": "Er/Sie ist frech. (wörtl.: Seine/Ihre Zunge ist lang)",
+       "x": "زبانش دراز است."
+      },
+      {
+       "fa": "خیلی بامزه بود!",
+       "tr": "cheylī bāmaze būd!",
+       "de": "Das war echt witzig!",
+       "x": "خیلی بامزه بود!"
+      },
+      {
+       "fa": "نگرفتم، دوباره بگو!",
+       "tr": "nagereftam, dobāre begū!",
+       "de": "Hab ich nicht kapiert, sag’s nochmal!",
+       "x": "نگرفتم، دوباره بگو!"
       }
      ]
     },
@@ -491,16 +1902,28 @@
      "links": "de",
      "paare": [
       {
-       "fa": "آب از سرش گذشته.",
-       "tr": "āb az sarasch gozaschte.",
-       "de": "Jetzt ist es eh zu spät / egal.",
-       "x": "آب از سرش گذشته."
+       "fa": "کار از محکم‌کاری عیب نمی‌کنه.",
+       "tr": "kār az mohkamkārī ʿeyb nemīkone.",
+       "de": "Doppelt hält besser.",
+       "x": "کار از محکم‌کاری عیب نمی‌کند."
       },
       {
-       "fa": "دستش تو کاره.",
-       "tr": "dastesch tū kāre.",
-       "de": "Er/Sie kennt sich aus, ist vom Fach.",
-       "x": "دستش توی کار است."
+       "fa": "ماهی رو هر وقت از آب بگیری تازه‌ست.",
+       "tr": "māhī ro har waght az āb begīrī tāzast.",
+       "de": "Es ist nie zu spät. (wörtl.: Den Fisch, wann immer du ihn fängst, ist er frisch)",
+       "x": "ماهی را هر وقت از آب بگیری تازه است."
+      },
+      {
+       "fa": "دلم آب شد!",
+       "tr": "delam āb schod!",
+       "de": "Mir ist das Herz in die Hose gerutscht! (wörtl.: Mein Herz wurde zu Wasser)",
+       "x": "دلم آب شد!"
+      },
+      {
+       "fa": "جوجه رو آخر پاییز می‌شمرن.",
+       "tr": "dschūdsche ro āchar-e pāyīz mīschoman.",
+       "de": "Man soll den Tag nicht vor dem Abend loben. (wörtl.: Küken zählt man Ende Herbst)",
+       "x": "جوجه را آخر پاییز می‌شمارند."
       },
       {
        "fa": "شتر دیدی، ندیدی.",
@@ -509,25 +1932,56 @@
        "x": "شتر دیدی، ندیدی."
       },
       {
-       "fa": "جدی نگیر!",
-       "tr": "dschedī nagīr!",
-       "de": "Nimm’s nicht ernst!",
-       "x": "جدی نگیر!"
-      },
-      {
-       "fa": "سرش کلاه گذاشتن.",
-       "tr": "sarasch kolāh gozāschtan.",
-       "de": "Man hat ihn/sie übers Ohr gehauen.",
-       "x": "سرش کلاه گذاشتند."
-      },
-      {
-       "fa": "شوخی کردم!",
-       "tr": "schūchī kardam!",
-       "de": "War nur ein Scherz!",
-       "x": "شوخی کردم!"
+       "fa": "زبونش درازه.",
+       "tr": "zabūnesch derāze.",
+       "de": "Er/Sie ist frech. (wörtl.: Seine/Ihre Zunge ist lang)",
+       "x": "زبانش دراز است."
       }
      ],
      "titel": "Was bedeutet das?"
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "چشمم روشن!",
+       "tr": "tscheschmam rouschan!",
+       "de": "Na, das ist ja ein Ding! (ironisch)",
+       "x": "چشمم روشن!"
+      },
+      {
+       "fa": "ماستاشو کیسه کرد.",
+       "tr": "māstāscho kīse kard.",
+       "de": "Er/Sie hat klein beigegeben.",
+       "x": "ماست‌ها را کیسه کرد."
+      },
+      {
+       "fa": "جوجه رو آخر پاییز می‌شمرن.",
+       "tr": "dschūdsche ro āchar-e pāyīz mīschoman.",
+       "de": "Man soll den Tag nicht vor dem Abend loben. (wörtl.: Küken zählt man Ende Herbst)",
+       "x": "جوجه را آخر پاییز می‌شمارند."
+      },
+      {
+       "fa": "ماهی رو هر وقت از آب بگیری تازه‌ست.",
+       "tr": "māhī ro har waght az āb begīrī tāzast.",
+       "de": "Es ist nie zu spät. (wörtl.: Den Fisch, wann immer du ihn fängst, ist er frisch)",
+       "x": "ماهی را هر وقت از آب بگیری تازه است."
+      },
+      {
+       "fa": "شتر دیدی، ندیدی.",
+       "tr": "schotor dīdī, nadīdī.",
+       "de": "Du hast nichts gesehen! (wörtl.: Kamel gesehen? Nicht gesehen.)",
+       "x": "شتر دیدی، ندیدی."
+      },
+      {
+       "fa": "آب از سرش گذشته.",
+       "tr": "āb az sarasch gozaschte.",
+       "de": "Jetzt ist es eh zu spät / egal.",
+       "x": "آب از سرش گذشته."
+      }
+     ],
+     "titel": "Noch einmal: Was bedeutet das?"
     },
     {
      "typ": "sortieren",
@@ -604,12 +2058,192 @@
        "k": 2,
        "e": "Willst du mich auf den Arm nehmen?",
        "say": false
+      },
+      {
+       "fa": "ماهی رو هر وقت از آب بگیری تازه‌ست.",
+       "k": 0,
+       "e": "Es ist nie zu spät. (wörtl.: Den Fisch, wann immer du ihn fängst, ist er frisch)",
+       "say": false
+      },
+      {
+       "fa": "جوجه رو آخر پاییز می‌شمرن.",
+       "k": 0,
+       "e": "Man soll den Tag nicht vor dem Abend loben. (wörtl.: Küken zählt man Ende Herbst)",
+       "say": false
+      },
+      {
+       "fa": "از این گوش می‌گیره، از اون گوش در می‌کنه.",
+       "k": 1,
+       "e": "Zum einen Ohr rein, zum anderen raus.",
+       "say": false
+      },
+      {
+       "fa": "چشمم روشن!",
+       "k": 1,
+       "e": "Na, das ist ja ein Ding! (ironisch)",
+       "say": false
+      },
+      {
+       "fa": "زبونش درازه.",
+       "k": 1,
+       "e": "Er/Sie ist frech. (wörtl.: Seine/Ihre Zunge ist lang)",
+       "say": false
+      },
+      {
+       "fa": "خیلی بامزه بود!",
+       "k": 2,
+       "e": "Das war echt witzig!",
+       "say": false
+      },
+      {
+       "fa": "نگرفتم، دوباره بگو!",
+       "k": 2,
+       "e": "Hab ich nicht kapiert, sag’s nochmal!",
+       "say": false
       }
      ]
     },
     {
+     "typ": "paare",
+     "links": "x",
+     "paare": [
+      {
+       "fa": "از این گوش می‌گیرد، از آن گوش در می‌کند.",
+       "tr": "",
+       "de": "Zum einen Ohr rein, zum anderen raus.",
+       "x": "از این گوش می‌گیره، از اون گوش در می‌کنه."
+      },
+      {
+       "fa": "داری سر به سرم می‌گذاری؟",
+       "tr": "",
+       "de": "Willst du mich auf den Arm nehmen?",
+       "x": "داری سر به سرم می‌ذاری؟"
+      },
+      {
+       "fa": "زبانش دراز است.",
+       "tr": "",
+       "de": "Er/Sie ist frech. (wörtl.: Seine/Ihre Zunge ist lang)",
+       "x": "زبونش درازه."
+      },
+      {
+       "fa": "جوجه را آخر پاییز می‌شمارند.",
+       "tr": "",
+       "de": "Man soll den Tag nicht vor dem Abend loben. (wörtl.: Küken zählt man Ende Herbst)",
+       "x": "جوجه رو آخر پاییز می‌شمرن."
+      },
+      {
+       "fa": "ماهی را هر وقت از آب بگیری تازه است.",
+       "tr": "",
+       "de": "Es ist nie zu spät. (wörtl.: Den Fisch, wann immer du ihn fängst, ist er frisch)",
+       "x": "ماهی رو هر وقت از آب بگیری تازه‌ست."
+      },
+      {
+       "fa": "سرش کلاه گذاشتند.",
+       "tr": "",
+       "de": "Man hat ihn/sie übers Ohr gehauen.",
+       "x": "سرش کلاه گذاشتن."
+      }
+     ],
+     "titel": "Geschrieben ↔ gesprochen"
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Redemittel",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 70,
+     "ziel": 12,
+     "woerter": [
+      {
+       "fa": "قطره قطره جمع گردد، وانگهی دریا شود.",
+       "a": "Kleinvieh macht auch Mist."
+      },
+      {
+       "fa": "شتر دیدی، ندیدی.",
+       "a": "Du hast nichts gesehen! (wörtl.: Kamel gesehen? Nicht gesehen.)"
+      },
+      {
+       "fa": "کار از محکم‌کاری عیب نمی‌کنه.",
+       "a": "Doppelt hält besser."
+      },
+      {
+       "fa": "آب از سرش گذشته.",
+       "a": "Jetzt ist es eh zu spät / egal."
+      },
+      {
+       "fa": "دستش تو کاره.",
+       "a": "Er/Sie kennt sich aus, ist vom Fach."
+      },
+      {
+       "fa": "دلم آب شد!",
+       "a": "Mir ist das Herz in die Hose gerutscht! (wörtl.: Mein Herz wurde zu Wasser)"
+      },
+      {
+       "fa": "سرش کلاه گذاشتن.",
+       "a": "Man hat ihn/sie übers Ohr gehauen."
+      },
+      {
+       "fa": "ماستاشو کیسه کرد.",
+       "a": "Er/Sie hat klein beigegeben."
+      },
+      {
+       "fa": "شوخی کردم!",
+       "a": "War nur ein Scherz!"
+      },
+      {
+       "fa": "جدی نگیر!",
+       "a": "Nimm’s nicht ernst!"
+      },
+      {
+       "fa": "داری سر به سرم می‌ذاری؟",
+       "a": "Willst du mich auf den Arm nehmen?"
+      },
+      {
+       "fa": "ماهی رو هر وقت از آب بگیری تازه‌ست.",
+       "a": "Es ist nie zu spät. (wörtl.: Den Fisch, wann immer du ihn fängst, ist er frisch)"
+      },
+      {
+       "fa": "جوجه رو آخر پاییز می‌شمرن.",
+       "a": "Man soll den Tag nicht vor dem Abend loben. (wörtl.: Küken zählt man Ende Herbst)"
+      },
+      {
+       "fa": "از این گوش می‌گیره، از اون گوش در می‌کنه.",
+       "a": "Zum einen Ohr rein, zum anderen raus."
+      },
+      {
+       "fa": "چشمم روشن!",
+       "a": "Na, das ist ja ein Ding! (ironisch)"
+      },
+      {
+       "fa": "زبونش درازه.",
+       "a": "Er/Sie ist frech. (wörtl.: Seine/Ihre Zunge ist lang)"
+      },
+      {
+       "fa": "خیلی بامزه بود!",
+       "a": "Das war echt witzig!"
+      },
+      {
+       "fa": "نگرفتم، دوباره بگو!",
+       "a": "Hab ich nicht kapiert, sag’s nochmal!"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "r2",
+   "titel": "Situationen & Reaktionen",
+   "vorschau": "چی بگم؟",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Reagieren",
+     "text": "<p>Im Gespräch kommt es auf die <b>Reaktion</b> an. Lies, was jemand sagt – und was man darauf antwortet.</p><div class='karte' style='margin:10px 0;padding:10px 14px'><div class='fa' style='font-size:1.3rem;text-align:right'>💬 یه جوک بگم؟</div><div class='fa' style='font-size:1.3rem;text-align:right;color:var(--lapis)'>↩️ آره، بگو!</div><div class='klein muted'>Soll ich einen Witz erzählen?</div></div><div class='karte' style='margin:10px 0;padding:10px 14px'><div class='fa' style='font-size:1.3rem;text-align:right'>💬 شوخی کردم!</div><div class='fa' style='font-size:1.3rem;text-align:right;color:var(--lapis)'>↩️ آهان! منو ترسوندی!</div><div class='klein muted'>War nur ein Scherz!</div></div><div class='karte' style='margin:10px 0;padding:10px 14px'><div class='fa' style='font-size:1.3rem;text-align:right'>💬 یعنی چی؟</div><div class='fa' style='font-size:1.3rem;text-align:right;color:var(--lapis)'>↩️ یعنی هیچ‌وقت دیر نیست.</div><div class='klein muted'>Was heißt das?</div></div><div class='karte' style='margin:10px 0;padding:10px 14px'><div class='fa' style='font-size:1.3rem;text-align:right'>💬 سرم کلاه گذاشتن!</div><div class='fa' style='font-size:1.3rem;text-align:right;color:var(--lapis)'>↩️ ای بابا! چقدر دادی؟</div><div class='klein muted'>Man hat mich übers Ohr gehauen!</div></div>",
+     "stil": "merke"
+    },
+    {
      "typ": "wahl",
-     "titel": "Was sagst du?",
+     "titel": "Was sagst du? (1)",
      "fragen": [
       {
        "frage": "Dein Freund hat beim Autokauf viel zu viel bezahlt:",
@@ -658,100 +2292,185 @@
      ]
     },
     {
+     "typ": "wahl",
+     "titel": "Was sagst du? (2)",
+     "fragen": [
+      {
+       "frage": "Dein Freund will mit 40 noch Persisch lernen und zweifelt:",
+       "optionen": [
+        "ماهی رو هر وقت از آب بگیری تازه‌ست!",
+        "چشمم روشن!",
+        "زبونش درازه."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "Dein Mitbewohner freut sich zu früh über eine Note:",
+       "optionen": [
+        "جوجه رو آخر پاییز می‌شمرن!",
+        "خیلی بامزه بود!",
+        "نگرفتم، دوباره بگو!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "Du hast den Witz nicht verstanden:",
+       "optionen": [
+        "نگرفتم، دوباره بگو!",
+        "خیلی بامزه بود!",
+        "شتر دیدی، ندیدی."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    },
+    {
      "typ": "paare",
      "links": "x",
      "paare": [
       {
-       "fa": "کار از محکم‌کاری عیب نمی‌کند.",
+       "fa": "یه جوک بگم؟",
        "tr": "",
-       "de": "Doppelt hält besser.",
-       "x": "کار از محکم‌کاری عیب نمی‌کنه."
-      },
-      {
-       "fa": "دستش توی کار است.",
-       "tr": "",
-       "de": "Er/Sie kennt sich aus, ist vom Fach.",
-       "x": "دستش تو کاره."
-      },
-      {
-       "fa": "سرش کلاه گذاشتند.",
-       "tr": "",
-       "de": "Man hat ihn/sie übers Ohr gehauen.",
-       "x": "سرش کلاه گذاشتن."
-      },
-      {
-       "fa": "ماست‌ها را کیسه کرد.",
-       "tr": "",
-       "de": "Er/Sie hat klein beigegeben.",
-       "x": "ماستاشو کیسه کرد."
-      },
-      {
-       "fa": "داری سر به سرم می‌گذاری؟",
-       "tr": "",
-       "de": "Willst du mich auf den Arm nehmen?",
-       "x": "داری سر به سرم می‌ذاری؟"
-      }
-     ],
-     "titel": "Geschrieben ↔ gesprochen"
-    },
-    {
-     "typ": "tempo",
-     "titel": "Blitz: Redemittel",
-     "aufgabe": "Was bedeutet das?",
-     "modus": "de",
-     "sekunden": 60,
-     "ziel": 10,
-     "woerter": [
-      {
-       "fa": "قطره قطره جمع گردد، وانگهی دریا شود.",
-       "a": "Kleinvieh macht auch Mist."
-      },
-      {
-       "fa": "شتر دیدی، ندیدی.",
-       "a": "Du hast nichts gesehen! (wörtl.: Kamel gesehen? Nicht gesehen.)"
-      },
-      {
-       "fa": "کار از محکم‌کاری عیب نمی‌کنه.",
-       "a": "Doppelt hält besser."
-      },
-      {
-       "fa": "آب از سرش گذشته.",
-       "a": "Jetzt ist es eh zu spät / egal."
-      },
-      {
-       "fa": "دستش تو کاره.",
-       "a": "Er/Sie kennt sich aus, ist vom Fach."
-      },
-      {
-       "fa": "دلم آب شد!",
-       "a": "Mir ist das Herz in die Hose gerutscht! (wörtl.: Mein Herz wurde zu Wasser)"
-      },
-      {
-       "fa": "سرش کلاه گذاشتن.",
-       "a": "Man hat ihn/sie übers Ohr gehauen."
-      },
-      {
-       "fa": "ماستاشو کیسه کرد.",
-       "a": "Er/Sie hat klein beigegeben."
+       "de": "Soll ich einen Witz erzählen?",
+       "x": "آره، بگو!"
       },
       {
        "fa": "شوخی کردم!",
-       "a": "War nur ein Scherz!"
+       "tr": "",
+       "de": "War nur ein Scherz!",
+       "x": "آهان! منو ترسوندی!"
+      },
+      {
+       "fa": "یعنی چی؟",
+       "tr": "",
+       "de": "Was heißt das?",
+       "x": "یعنی هیچ‌وقت دیر نیست."
+      },
+      {
+       "fa": "سرم کلاه گذاشتن!",
+       "tr": "",
+       "de": "Man hat mich übers Ohr gehauen!",
+       "x": "ای بابا! چقدر دادی؟"
       },
       {
        "fa": "جدی نگیر!",
-       "a": "Nimm’s nicht ernst!"
+       "tr": "",
+       "de": "Nimm’s nicht ernst!",
+       "x": "باشه، ولی دیگه از این شوخیا نکن!"
       },
       {
-       "fa": "داری سر به سرم می‌ذاری؟",
-       "a": "Willst du mich auf den Arm nehmen?"
+       "fa": "خیلی بامزه بود!",
+       "tr": "",
+       "de": "Das war echt witzig!",
+       "x": "مرسی، از پدربزرگم یاد گرفتم."
+      }
+     ],
+     "titel": "Was antwortest du?"
+    },
+    {
+     "typ": "wahl",
+     "titel": "Die passende Reaktion",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>یه جوک بگم؟</span>",
+       "optionen": [
+        "آره، بگو!",
+        "آره: «Übung macht den Meister».",
+        "مرسی، از پدربزرگم یاد گرفتم."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>شوخی کردم!</span>",
+       "optionen": [
+        "آهان! منو ترسوندی!",
+        "آره: «Übung macht den Meister».",
+        "آره، بگو!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>یعنی چی؟</span>",
+       "optionen": [
+        "یعنی هیچ‌وقت دیر نیست.",
+        "آهان! منو ترسوندی!",
+        "آره، بگو!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>سرم کلاه گذاشتن!</span>",
+       "optionen": [
+        "ای بابا! چقدر دادی؟",
+        "آره: «Übung macht den Meister».",
+        "آره، بگو!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>جدی نگیر!</span>",
+       "optionen": [
+        "باشه، ولی دیگه از این شوخیا نکن!",
+        "ای بابا! چقدر دادی؟",
+        "آره: «Übung macht den Meister»."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>خیلی بامزه بود!</span>",
+       "optionen": [
+        "مرسی، از پدربزرگم یاد گرفتم.",
+        "آره: «Übung macht den Meister».",
+        "باشه، ولی دیگه از این شوخیا نکن!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>داری سر به سرم می‌ذاری؟</span>",
+       "optionen": [
+        "یه کم! ببخشید.",
+        "یعنی هیچ‌وقت دیر نیست.",
+        "آهان! منو ترسوندی!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>ضرب‌المثل آلمانی هم داری؟</span>",
+       "optionen": [
+        "آره: «Übung macht den Meister».",
+        "یه کم! ببخشید.",
+        "آره، بگو!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
       }
      ]
     }
    ]
   },
   {
-   "id": "s3",
+   "id": "d",
    "titel": "Modelldialog",
    "vorschau": "Der Weisheitsonkel",
    "karten": [
@@ -851,6 +2570,67 @@
      ]
     },
     {
+     "typ": "wahl",
+     "titel": "Wie geht es weiter?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>عمو، لیزا داره فارسی یاد می‌گیره، ولی می‌گه خیلی سخته.</span><br><span class='klein muted'>Was kommt als Nächstes?</span>",
+       "optionen": [
+        "قطره قطره جمع گردد، وانگهی دریا شود! هر روز یه کم.",
+        "صد یورو؟! دخترم، سرت کلاه گذاشتن!",
+        "ای بابا! داری سر به سرم می‌ذاری؟ آفرین، فارسی‌ت خوبه!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>ببخشید، یعنی چی؟</span><br><span class='klein muted'>Was kommt als Nächstes?</span>",
+       "optionen": [
+        "یعنی کم‌کم پیشرفت می‌کنی. عمو عاشق ضرب‌المثله!",
+        "هیچی. آب از سرت گذشته! دفعه‌ی بعد منو ببر، دستم تو کاره.",
+        "دیروز تو بازار یه شال خریدم، صد یورو!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>دیروز تو بازار یه شال خریدم، صد یورو!</span><br><span class='klein muted'>Was kommt als Nächstes?</span>",
+       "optionen": [
+        "صد یورو؟! دخترم، سرت کلاه گذاشتن!",
+        "یعنی کم‌کم پیشرفت می‌کنی. عمو عاشق ضرب‌المثله!",
+        "وای! حالا چی کار کنم؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>وای! حالا چی کار کنم؟</span><br><span class='klein muted'>Was kommt als Nächstes?</span>",
+       "optionen": [
+        "هیچی. آب از سرت گذشته! دفعه‌ی بعد منو ببر، دستم تو کاره.",
+        "یعنی کم‌کم پیشرفت می‌کنی. عمو عاشق ضرب‌المثله!",
+        "ببخشید، یعنی چی؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>عمو، شوخی کرد! شالش بیست یورو بود.</span><br><span class='klein muted'>Was kommt als Nächstes?</span>",
+       "optionen": [
+        "ای بابا! داری سر به سرم می‌ذاری؟ آفرین، فارسی‌ت خوبه!",
+        "قطره قطره جمع گردد، وانگهی دریا شود! هر روز یه کم.",
+        "صد یورو؟! دخترم، سرت کلاه گذاشتن!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    },
+    {
      "typ": "ordnen",
      "titel": "Bring den Dialog in die richtige Reihenfolge",
      "frage": "Tippe die Sätze der Reihe nach an.",
@@ -896,11 +2676,84 @@
        "de": "Nichts. Jetzt ist es eh zu spät! Nimm mich nächstes Mal mit, ich kenne mich aus."
       }
      ]
+    },
+    {
+     "typ": "bauen",
+     "titel": "Baue die Sätze aus dem Dialog",
+     "trenner": " ",
+     "woerter": [
+      {
+       "fa": "یعنی کم‌کم پیشرفت می‌کنی. عمو عاشق ضرب‌المثله!",
+       "tr": "yaʿnī kamkam pīschraft mīkonī. ʿamū ʿāschegh-e zarbolmasale!",
+       "de": "Dass du nach und nach Fortschritte machst. Mein Onkel liebt Sprichwörter!",
+       "teile": [
+        "یعنی",
+        "کم‌کم",
+        "پیشرفت",
+        "می‌کنی",
+        "عمو",
+        "عاشق",
+        "ضرب‌المثله"
+       ],
+       "extra": [
+        "کم."
+       ]
+      },
+      {
+       "fa": "دیروز تو بازار یه شال خریدم، صد یورو!",
+       "tr": "dīrūz tū bāzār ye schāl charīdam, sad yūro!",
+       "de": "Gestern habe ich im Basar einen Schal gekauft, hundert Euro!",
+       "teile": [
+        "دیروز",
+        "تو",
+        "بازار",
+        "یه",
+        "شال",
+        "خریدم",
+        "صد",
+        "یورو"
+       ],
+       "extra": [
+        "حالا"
+       ]
+      },
+      {
+       "fa": "صد یورو؟! دخترم، سرت کلاه گذاشتن!",
+       "tr": "sad yūro?! dochtaram, saret kolāh gozāschtan!",
+       "de": "Hundert Euro?! Mein Kind, die haben dich übers Ohr gehauen!",
+       "teile": [
+        "صد",
+        "یورو",
+        "دخترم",
+        "سرت",
+        "کلاه",
+        "گذاشتن"
+       ],
+       "extra": [
+        "لیزا"
+       ]
+      },
+      {
+       "fa": "وای! حالا چی کار کنم؟",
+       "tr": "wāy! hālā tschī kār konam?",
+       "de": "Oh nein! Was soll ich jetzt machen?",
+       "teile": [
+        "وای",
+        "حالا",
+        "چی",
+        "کار",
+        "کنم"
+       ],
+       "extra": [
+        "هیچی."
+       ]
+      }
+     ]
     }
    ]
   },
   {
-   "id": "s4",
+   "id": "t",
    "titel": "Lesen",
    "vorschau": "Mulla Nasreddin und die Suppe",
    "karten": [
@@ -1026,11 +2879,43 @@
        "richtig": 0
       }
      ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "ملانصرالدین شخصیت معروف داستان‌های طنز ایرانی است.",
+       "tr": "mollā nasreddīn schachsiyyat-e maʿrūf-e dāstānhā-ye tanz-e īrānī ast.",
+       "de": "Mulla Nasreddin ist eine berühmte Figur iranischer Humorgeschichten."
+      },
+      {
+       "fa": "یک روز ملا با لباس کهنه به یک مهمانی رفت.",
+       "tr": "yek rūz mollā bā lebās-e kohne be yek mehmānī raft.",
+       "de": "Eines Tages ging Mulla in alten Kleidern zu einem Fest."
+      },
+      {
+       "fa": "هیچ‌کس به او توجه نکرد و کسی برایش غذا نیاورد.",
+       "tr": "hīschkas be ū tawadschdschoh nakard o kasī barāyasch ghazā nayāward.",
+       "de": "Niemand beachtete ihn, und keiner brachte ihm Essen."
+      },
+      {
+       "fa": "ملا به خانه رفت، لباس نو و گران پوشید و برگشت.",
+       "tr": "mollā be chāne raft, lebās-e nou o gerān pūschīd o bargascht.",
+       "de": "Mulla ging nach Hause, zog teure neue Kleider an und kam zurück."
+      },
+      {
+       "fa": "این بار همه به او احترام گذاشتند و بهترین غذا را جلویش گذاشتند.",
+       "tr": "īn bār hame be ū ehterām gozāschtand o behtarīn ghazā rā dschelouyasch gozāschtand.",
+       "de": "Diesmal erwiesen ihm alle Respekt und stellten ihm das beste Essen hin."
+      }
+     ]
     }
    ]
   },
   {
-   "id": "s5",
+   "id": "k",
    "titel": "Gut zu wissen",
    "vorschau": "Mulla Nasreddin & Co.",
    "karten": [
@@ -1076,7 +2961,7 @@
    ]
   },
   {
-   "id": "s6",
+   "id": "p",
    "titel": "Vorbereitung für die Sitzung",
    "vorschau": "آماده‌ای؟",
    "karten": [
@@ -1122,19 +3007,14 @@
      "links": "de",
      "paare": [
       {
-       "fa": "از چی خنده‌ت می‌گیره؟",
-       "tr": "az tschī chandat mīgīre?",
-       "de": "Worüber musst du lachen?"
-      },
-      {
-       "fa": "یه جوک تعریف کن – به فارسی!",
-       "tr": "ye dschouk taʿrīf kon – be fārsī!",
-       "de": "Erzähl einen Witz – auf Persisch!"
-      },
-      {
        "fa": "یه بار شده سرت کلاه بذارن؟ تعریف کن!",
        "tr": "ye bār schode saret kolāh bezāran? taʿrīf kon!",
        "de": "Wurdest du schon mal übers Ohr gehauen? Erzähl!"
+      },
+      {
+       "fa": "ضرب‌المثل مورد علاقه‌ت به آلمانی چیه؟ به فارسی توضیحش بده.",
+       "tr": "zarbolmasal-e mored-e ʿalāghat be ālmānī tschīye? be fārsī touzīhasch bede.",
+       "de": "Was ist dein deutsches Lieblingssprichwort? Erklär es auf Persisch."
       },
       {
        "fa": "به نظرت شوخی تو فرهنگ‌های مختلف فرق داره؟",
@@ -1142,9 +3022,14 @@
        "de": "Ist Humor in verschiedenen Kulturen unterschiedlich?"
       },
       {
-       "fa": "ضرب‌المثل مورد علاقه‌ت به آلمانی چیه؟ به فارسی توضیحش بده.",
-       "tr": "zarbolmasal-e mored-e ʿalāghat be ālmānī tschīye? be fārsī touzīhasch bede.",
-       "de": "Was ist dein deutsches Lieblingssprichwort? Erklär es auf Persisch."
+       "fa": "یه جوک تعریف کن – به فارسی!",
+       "tr": "ye dschouk taʿrīf kon – be fārsī!",
+       "de": "Erzähl einen Witz – auf Persisch!"
+      },
+      {
+       "fa": "از چی خنده‌ت می‌گیره؟",
+       "tr": "az tschī chandat mīgīre?",
+       "de": "Worüber musst du lachen?"
       },
       {
        "fa": "کدوم ضرب‌المثل فارسی رو بیشتر دوست داری؟ چرا؟",

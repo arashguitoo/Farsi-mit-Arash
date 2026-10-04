@@ -17,19 +17,19 @@
     {
      "typ": "info",
      "titel": "So läuft die Sitzung",
-     "text": "<p>Diese Lektion ist deine <b>Hausaufgabe</b>: Hier lernst du Wörter und Redemittel und liest einen Modelldialog. Im Unterricht wird dann <b>nur gesprochen</b>.</p><p><b>Im Unterricht:</b></p><ul><li>Pantomime: Was tut mir weh?</li><li>Rollenspiel: Arztpraxis mit ungewöhnlichen Patient/innen</li><li>Hausmittel-Tausch: Was hilft bei Erkältung?</li></ul>",
+     "text": "<p>Diese Lektion ist deine <b>Hausaufgabe</b>: Wortschatz, Redemittel, Dialoge und Texte. Im Unterricht wird dann <b>nur gesprochen</b>.</p><p><b>Im Unterricht:</b></p><ul><li>Pantomime: Was tut mir weh?</li><li>Rollenspiel: Arztpraxis mit ungewöhnlichen Patient/innen</li><li>Hausmittel-Tausch: Was hilft bei Erkältung?</li></ul><p class='klein muted'>Wortschatz dieser Lektion: 61 Wörter · 18 Redemittel</p>",
      "stil": "merke"
     }
    ]
   },
   {
-   "id": "s1",
-   "titel": "Wörter",
+   "id": "w0",
+   "titel": "Rund ums Thema",
    "vorschau": "سرماخوردگی · سردرد · گلودرد",
    "karten": [
     {
      "typ": "info",
-     "titel": "Wörter zum Thema – Teil 1",
+     "titel": "🧩 Rund ums Thema (1)",
      "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
      "beispiele": [
       {
@@ -84,7 +84,7 @@
     },
     {
      "typ": "info",
-     "titel": "Wörter zum Thema – Teil 2",
+     "titel": "🧩 Rund ums Thema (2)",
      "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
      "beispiele": [
       {
@@ -138,43 +138,6 @@
      ]
     },
     {
-     "typ": "info",
-     "titel": "Verben",
-     "text": "<p>Infinitiv – im Gespräch brauchst du sie gleich in allen Zeiten.</p>",
-     "beispiele": [
-      {
-       "fa": "درد کردن",
-       "tr": "dard kardan",
-       "de": "wehtun",
-       "emoji": "🤕"
-      },
-      {
-       "fa": "سرما خوردن",
-       "tr": "sarmā chordan",
-       "de": "sich erkälten",
-       "emoji": "🤧"
-      },
-      {
-       "fa": "نوبت گرفتن",
-       "tr": "nobat gereftan",
-       "de": "einen Termin machen",
-       "emoji": "📅"
-      },
-      {
-       "fa": "خوب شدن",
-       "tr": "chūb schodan",
-       "de": "gesund werden",
-       "emoji": "💪"
-      },
-      {
-       "fa": "معاینه کردن",
-       "tr": "moʿāyene kardan",
-       "de": "untersuchen",
-       "emoji": "🩺"
-      }
-     ]
-    },
-    {
      "typ": "paare",
      "links": "de",
      "paare": [
@@ -222,22 +185,28 @@
      "links": "de",
      "paare": [
       {
+       "fa": "بیمه",
+       "tr": "bīme",
+       "de": "Versicherung",
+       "emoji": "🪪"
+      },
+      {
        "fa": "قرص",
        "tr": "ghors",
        "de": "Tablette",
        "emoji": "💊"
       },
       {
-       "fa": "حساسیت",
-       "tr": "hassāsiyat",
-       "de": "Allergie",
-       "emoji": "🌼"
+       "fa": "گلودرد",
+       "tr": "galūdard",
+       "de": "Halsschmerzen",
+       "emoji": "😷"
       },
       {
-       "fa": "درد کردن",
-       "tr": "dard kardan",
-       "de": "wehtun",
-       "emoji": "🤕"
+       "fa": "سرماخوردگی",
+       "tr": "sarmāchordegī",
+       "de": "Erkältung",
+       "emoji": "🤧"
       },
       {
        "fa": "سرفه",
@@ -246,29 +215,23 @@
        "emoji": "😮‍💨"
       },
       {
-       "fa": "داروخانه",
-       "tr": "dārūchāne",
-       "de": "Apotheke",
-       "emoji": "⚕️"
-      },
-      {
-       "fa": "دل‌درد",
-       "tr": "deldard",
-       "de": "Bauchschmerzen",
-       "emoji": "🤢"
+       "fa": "دارو",
+       "tr": "dārū",
+       "de": "Medikament",
+       "emoji": "💊"
       }
      ],
-     "titel": "Was bedeutet das?"
+     "titel": "Noch einmal: Was bedeutet das?"
     },
     {
      "typ": "memory",
      "links": "emoji",
      "paare": [
       {
-       "fa": "استراحت",
-       "tr": "esterāhat",
-       "de": "Ruhe, Erholung",
-       "emoji": "🛌"
+       "fa": "دارو",
+       "tr": "dārū",
+       "de": "Medikament",
+       "emoji": "💊"
       },
       {
        "fa": "تب",
@@ -277,39 +240,1281 @@
        "emoji": "🌡️"
       },
       {
+       "fa": "نسخه",
+       "tr": "noschche",
+       "de": "Rezept",
+       "emoji": "📝"
+      },
+      {
+       "fa": "سردرد",
+       "tr": "sardard",
+       "de": "Kopfschmerzen",
+       "emoji": "🤕"
+      },
+      {
        "fa": "بیمه",
        "tr": "bīme",
        "de": "Versicherung",
        "emoji": "🪪"
       },
       {
-       "fa": "دارو",
-       "tr": "dārū",
-       "de": "Medikament",
-       "emoji": "💊"
-      },
-      {
-       "fa": "دل‌درد",
-       "tr": "deldard",
-       "de": "Bauchschmerzen",
-       "emoji": "🤢"
-      },
-      {
-       "fa": "مطب",
-       "tr": "matab",
-       "de": "Arztpraxis",
-       "emoji": "🏥"
+       "fa": "سرماخوردگی",
+       "tr": "sarmāchordegī",
+       "de": "Erkältung",
+       "emoji": "🤧"
       }
      ],
      "titel": "Memory: Bild & Wort"
     },
     {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>برای ___ ، این قرص‌ها را بعد از غذا بخورید.</span><br><span class='mini'>Gegen die Erkältung nehmen Sie diese Tabletten nach dem Essen.</span>",
+       "optionen": [
+        "سرماخوردگی",
+        "پا",
+        "خستگی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>برای سرماخوردگی ، این قرص‌ها را بعد از غذا بخورید.</span>"
+      },
+      {
+       "frage": "<span class='fa'>این دارو بدون ___ فروخته نمی‌شود.</span><br><span class='mini'>Dieses Medikament gibt es nicht ohne Rezept.</span>",
+       "optionen": [
+        "نسخه",
+        "خستگی",
+        "دل"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>این دارو بدون نسخه فروخته نمی‌شود.</span>"
+      }
+     ]
+    },
+    {
      "typ": "tempo",
-     "titel": "Blitz: Wörter",
+     "titel": "Blitz: Rund ums Thema",
      "aufgabe": "Was bedeutet das?",
      "modus": "de",
-     "sekunden": 60,
-     "ziel": 12,
+     "sekunden": 50,
+     "ziel": 10,
+     "woerter": [
+      {
+       "fa": "سرماخوردگی",
+       "a": "Erkältung"
+      },
+      {
+       "fa": "سردرد",
+       "a": "Kopfschmerzen"
+      },
+      {
+       "fa": "گلودرد",
+       "a": "Halsschmerzen"
+      },
+      {
+       "fa": "تب",
+       "a": "Fieber"
+      },
+      {
+       "fa": "سرفه",
+       "a": "Husten"
+      },
+      {
+       "fa": "دل‌درد",
+       "a": "Bauchschmerzen"
+      },
+      {
+       "fa": "حساسیت",
+       "a": "Allergie"
+      },
+      {
+       "fa": "دارو",
+       "a": "Medikament"
+      },
+      {
+       "fa": "نسخه",
+       "a": "Rezept"
+      },
+      {
+       "fa": "قرص",
+       "a": "Tablette"
+      },
+      {
+       "fa": "شربت",
+       "a": "Sirup"
+      },
+      {
+       "fa": "داروخانه",
+       "a": "Apotheke"
+      },
+      {
+       "fa": "مطب",
+       "a": "Arztpraxis"
+      },
+      {
+       "fa": "نوبت",
+       "a": "Termin"
+      },
+      {
+       "fa": "بیمه",
+       "a": "Versicherung"
+      },
+      {
+       "fa": "استراحت",
+       "a": "Ruhe, Erholung"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "w1",
+   "titel": "Der Körper",
+   "vorschau": "سر · گلو · گوش",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "🧍 Der Körper (1)",
+     "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
+     "beispiele": [
+      {
+       "fa": "سر",
+       "tr": "sar",
+       "de": "Kopf",
+       "emoji": "🗣️"
+      },
+      {
+       "fa": "گلو",
+       "tr": "galū",
+       "de": "Hals (innen)",
+       "emoji": "😮"
+      },
+      {
+       "fa": "گوش",
+       "tr": "gūsch",
+       "de": "Ohr",
+       "emoji": "👂"
+      },
+      {
+       "fa": "چشم",
+       "tr": "tscheschm",
+       "de": "Auge",
+       "emoji": "👁️"
+      },
+      {
+       "fa": "دندان",
+       "tr": "dandān",
+       "de": "Zahn",
+       "emoji": "🦷"
+      },
+      {
+       "fa": "دل",
+       "tr": "del",
+       "de": "Bauch, Herz (Gefühl)",
+       "emoji": "🫃"
+      }
+     ]
+    },
+    {
+     "typ": "info",
+     "titel": "🧍 Der Körper (2)",
+     "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
+     "beispiele": [
+      {
+       "fa": "کمر",
+       "tr": "kamar",
+       "de": "Rücken (unten)",
+       "emoji": "🔙"
+      },
+      {
+       "fa": "پا",
+       "tr": "pā",
+       "de": "Bein, Fuß",
+       "emoji": "🦵"
+      },
+      {
+       "fa": "دست",
+       "tr": "dast",
+       "de": "Hand, Arm",
+       "emoji": "✋"
+      },
+      {
+       "fa": "قلب",
+       "tr": "ghalb",
+       "de": "Herz (Organ)",
+       "emoji": "❤️"
+      },
+      {
+       "fa": "معده",
+       "tr": "meʿde",
+       "de": "Magen",
+       "emoji": "🫄"
+      },
+      {
+       "fa": "پوست",
+       "tr": "pūst",
+       "de": "Haut",
+       "emoji": "🖐️"
+      }
+     ]
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "پا",
+       "tr": "pā",
+       "de": "Bein, Fuß",
+       "emoji": "🦵"
+      },
+      {
+       "fa": "قلب",
+       "tr": "ghalb",
+       "de": "Herz (Organ)",
+       "emoji": "❤️"
+      },
+      {
+       "fa": "چشم",
+       "tr": "tscheschm",
+       "de": "Auge",
+       "emoji": "👁️"
+      },
+      {
+       "fa": "کمر",
+       "tr": "kamar",
+       "de": "Rücken (unten)",
+       "emoji": "🔙"
+      },
+      {
+       "fa": "دست",
+       "tr": "dast",
+       "de": "Hand, Arm",
+       "emoji": "✋"
+      },
+      {
+       "fa": "گوش",
+       "tr": "gūsch",
+       "de": "Ohr",
+       "emoji": "👂"
+      }
+     ],
+     "titel": "Was bedeutet das?"
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "معده",
+       "tr": "meʿde",
+       "de": "Magen",
+       "emoji": "🫄"
+      },
+      {
+       "fa": "گوش",
+       "tr": "gūsch",
+       "de": "Ohr",
+       "emoji": "👂"
+      },
+      {
+       "fa": "دندان",
+       "tr": "dandān",
+       "de": "Zahn",
+       "emoji": "🦷"
+      },
+      {
+       "fa": "چشم",
+       "tr": "tscheschm",
+       "de": "Auge",
+       "emoji": "👁️"
+      },
+      {
+       "fa": "پوست",
+       "tr": "pūst",
+       "de": "Haut",
+       "emoji": "🖐️"
+      },
+      {
+       "fa": "کمر",
+       "tr": "kamar",
+       "de": "Rücken (unten)",
+       "emoji": "🔙"
+      }
+     ],
+     "titel": "Noch einmal: Was bedeutet das?"
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "گوش",
+       "tr": "gūsch",
+       "de": "Ohr",
+       "emoji": "👂"
+      },
+      {
+       "fa": "گلو",
+       "tr": "galū",
+       "de": "Hals (innen)",
+       "emoji": "😮"
+      },
+      {
+       "fa": "پوست",
+       "tr": "pūst",
+       "de": "Haut",
+       "emoji": "🖐️"
+      },
+      {
+       "fa": "پا",
+       "tr": "pā",
+       "de": "Bein, Fuß",
+       "emoji": "🦵"
+      },
+      {
+       "fa": "چشم",
+       "tr": "tscheschm",
+       "de": "Auge",
+       "emoji": "👁️"
+      },
+      {
+       "fa": "کمر",
+       "tr": "kamar",
+       "de": "Rücken (unten)",
+       "emoji": "🔙"
+      }
+     ],
+     "titel": "Memory: Bild & Wort"
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>از دیروز ___ درد می‌کند و نمی‌توانم چیزی بخورم.</span><br><span class='mini'>Seit gestern tut mir der Hals weh und ich kann nichts essen.</span>",
+       "optionen": [
+        "گلو",
+        "بیمه",
+        "پزشک عمومی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>از دیروز گلو درد می‌کند و نمی‌توانم چیزی بخورم.</span>"
+      },
+      {
+       "frage": "<span class='fa'>بعد از کار با کامپیوتر ___ خیلی درد می‌کند.</span><br><span class='mini'>Nach der Computerarbeit tut mir der Rücken sehr weh.</span>",
+       "optionen": [
+        "کمر",
+        "نسخه",
+        "سرماخوردگی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>بعد از کار با کامپیوتر کمر خیلی درد می‌کند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>___ درد دارم؛ باید پیش دندانپزشک بروم.</span><br><span class='mini'>Ich habe Zahnschmerzen; ich muss zum Zahnarzt.</span>",
+       "optionen": [
+        "دندان",
+        "اسهال",
+        "چسب زخم"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>دندان درد دارم؛ باید پیش دندانپزشک بروم.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Der Körper",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 50,
+     "ziel": 10,
+     "woerter": [
+      {
+       "fa": "سر",
+       "a": "Kopf"
+      },
+      {
+       "fa": "گلو",
+       "a": "Hals (innen)"
+      },
+      {
+       "fa": "گوش",
+       "a": "Ohr"
+      },
+      {
+       "fa": "چشم",
+       "a": "Auge"
+      },
+      {
+       "fa": "دندان",
+       "a": "Zahn"
+      },
+      {
+       "fa": "دل",
+       "a": "Bauch, Herz (Gefühl)"
+      },
+      {
+       "fa": "کمر",
+       "a": "Rücken (unten)"
+      },
+      {
+       "fa": "پا",
+       "a": "Bein, Fuß"
+      },
+      {
+       "fa": "دست",
+       "a": "Hand, Arm"
+      },
+      {
+       "fa": "قلب",
+       "a": "Herz (Organ)"
+      },
+      {
+       "fa": "معده",
+       "a": "Magen"
+      },
+      {
+       "fa": "پوست",
+       "a": "Haut"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "w2",
+   "titel": "Beschwerden",
+   "vorschau": "سرگیجه · حالت تهوع · اسهال",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "🤒 Beschwerden (1)",
+     "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
+     "beispiele": [
+      {
+       "fa": "سرگیجه",
+       "tr": "sargīdsche",
+       "de": "Schwindel",
+       "emoji": "😵"
+      },
+      {
+       "fa": "حالت تهوع",
+       "tr": "hālat-e tahawwoʿ",
+       "de": "Übelkeit",
+       "emoji": "🤢"
+      },
+      {
+       "fa": "اسهال",
+       "tr": "eshāl",
+       "de": "Durchfall",
+       "emoji": "🚽"
+      },
+      {
+       "fa": "آبریزش بینی",
+       "tr": "ābrīzesch-e bīnī",
+       "de": "Schnupfen",
+       "emoji": "🤧"
+      },
+      {
+       "fa": "بی‌خوابی",
+       "tr": "bīchābī",
+       "de": "Schlaflosigkeit",
+       "emoji": "😳"
+      },
+      {
+       "fa": "زخم",
+       "tr": "zachm",
+       "de": "Wunde",
+       "emoji": "🩹"
+      }
+     ]
+    },
+    {
+     "typ": "info",
+     "titel": "🤒 Beschwerden (2)",
+     "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
+     "beispiele": [
+      {
+       "fa": "ورم",
+       "tr": "waram",
+       "de": "Schwellung",
+       "emoji": "🎈"
+      },
+      {
+       "fa": "خارش",
+       "tr": "chāresch",
+       "de": "Juckreiz",
+       "emoji": "🦟"
+      },
+      {
+       "fa": "سوختگی",
+       "tr": "sūchtegī",
+       "de": "Verbrennung",
+       "emoji": "🔥"
+      },
+      {
+       "fa": "شکستگی",
+       "tr": "schekastegī",
+       "de": "Knochenbruch",
+       "emoji": "🦴"
+      },
+      {
+       "fa": "فشار خون",
+       "tr": "feschār-e chūn",
+       "de": "Blutdruck",
+       "emoji": "🩸"
+      },
+      {
+       "fa": "خستگی",
+       "tr": "chastegī",
+       "de": "Müdigkeit",
+       "emoji": "🥱"
+      }
+     ]
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "فشار خون",
+       "tr": "feschār-e chūn",
+       "de": "Blutdruck",
+       "emoji": "🩸"
+      },
+      {
+       "fa": "بی‌خوابی",
+       "tr": "bīchābī",
+       "de": "Schlaflosigkeit",
+       "emoji": "😳"
+      },
+      {
+       "fa": "اسهال",
+       "tr": "eshāl",
+       "de": "Durchfall",
+       "emoji": "🚽"
+      },
+      {
+       "fa": "سرگیجه",
+       "tr": "sargīdsche",
+       "de": "Schwindel",
+       "emoji": "😵"
+      },
+      {
+       "fa": "سوختگی",
+       "tr": "sūchtegī",
+       "de": "Verbrennung",
+       "emoji": "🔥"
+      },
+      {
+       "fa": "حالت تهوع",
+       "tr": "hālat-e tahawwoʿ",
+       "de": "Übelkeit",
+       "emoji": "🤢"
+      }
+     ],
+     "titel": "Was bedeutet das?"
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "فشار خون",
+       "tr": "feschār-e chūn",
+       "de": "Blutdruck",
+       "emoji": "🩸"
+      },
+      {
+       "fa": "شکستگی",
+       "tr": "schekastegī",
+       "de": "Knochenbruch",
+       "emoji": "🦴"
+      },
+      {
+       "fa": "سرگیجه",
+       "tr": "sargīdsche",
+       "de": "Schwindel",
+       "emoji": "😵"
+      },
+      {
+       "fa": "آبریزش بینی",
+       "tr": "ābrīzesch-e bīnī",
+       "de": "Schnupfen",
+       "emoji": "🤧"
+      },
+      {
+       "fa": "بی‌خوابی",
+       "tr": "bīchābī",
+       "de": "Schlaflosigkeit",
+       "emoji": "😳"
+      },
+      {
+       "fa": "اسهال",
+       "tr": "eshāl",
+       "de": "Durchfall",
+       "emoji": "🚽"
+      }
+     ],
+     "titel": "Noch einmal: Was bedeutet das?"
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "ورم",
+       "tr": "waram",
+       "de": "Schwellung",
+       "emoji": "🎈"
+      },
+      {
+       "fa": "آبریزش بینی",
+       "tr": "ābrīzesch-e bīnī",
+       "de": "Schnupfen",
+       "emoji": "🤧"
+      },
+      {
+       "fa": "اسهال",
+       "tr": "eshāl",
+       "de": "Durchfall",
+       "emoji": "🚽"
+      },
+      {
+       "fa": "خستگی",
+       "tr": "chastegī",
+       "de": "Müdigkeit",
+       "emoji": "🥱"
+      },
+      {
+       "fa": "بی‌خوابی",
+       "tr": "bīchābī",
+       "de": "Schlaflosigkeit",
+       "emoji": "😳"
+      },
+      {
+       "fa": "خارش",
+       "tr": "chāresch",
+       "de": "Juckreiz",
+       "emoji": "🦟"
+      }
+     ],
+     "titel": "Memory: Bild & Wort"
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>شب‌ها از ___ رنج می‌برم و فقط سه ساعت می‌خوابم.</span><br><span class='mini'>Nachts leide ich unter Schlaflosigkeit und schlafe nur drei Stunden.</span>",
+       "optionen": [
+        "بی‌خوابی",
+        "داروساز",
+        "تب"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>شب‌ها از بی‌خوابی رنج می‌برم و فقط سه ساعت می‌خوابم.</span>"
+      },
+      {
+       "frage": "<span class='fa'>پایش افتاد و ___ شد؛ او را به اورژانس بردند.</span><br><span class='mini'>Er/Sie ist gestürzt und hat sich das Bein gebrochen; man brachte ihn/sie in die Notaufnahme.</span>",
+       "optionen": [
+        "شکستگی",
+        "دندانپزشک",
+        "مطب"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>پایش افتاد و شکستگی شد؛ او را به اورژانس بردند.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Beschwerden",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 50,
+     "ziel": 10,
+     "woerter": [
+      {
+       "fa": "سرگیجه",
+       "a": "Schwindel"
+      },
+      {
+       "fa": "حالت تهوع",
+       "a": "Übelkeit"
+      },
+      {
+       "fa": "اسهال",
+       "a": "Durchfall"
+      },
+      {
+       "fa": "آبریزش بینی",
+       "a": "Schnupfen"
+      },
+      {
+       "fa": "بی‌خوابی",
+       "a": "Schlaflosigkeit"
+      },
+      {
+       "fa": "زخم",
+       "a": "Wunde"
+      },
+      {
+       "fa": "ورم",
+       "a": "Schwellung"
+      },
+      {
+       "fa": "خارش",
+       "a": "Juckreiz"
+      },
+      {
+       "fa": "سوختگی",
+       "a": "Verbrennung"
+      },
+      {
+       "fa": "شکستگی",
+       "a": "Knochenbruch"
+      },
+      {
+       "fa": "فشار خون",
+       "a": "Blutdruck"
+      },
+      {
+       "fa": "خستگی",
+       "a": "Müdigkeit"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "w3",
+   "titel": "Praxis & Behandlung",
+   "vorschau": "پزشک عمومی · دندانپزشک · پرستار",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "🏥 Praxis & Behandlung (1)",
+     "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
+     "beispiele": [
+      {
+       "fa": "پزشک عمومی",
+       "tr": "pezeschk-e ʿomūmī",
+       "de": "Allgemeinarzt/-ärztin",
+       "emoji": "🩺"
+      },
+      {
+       "fa": "دندانپزشک",
+       "tr": "dandānpezeschk",
+       "de": "Zahnarzt/-ärztin",
+       "emoji": "🦷"
+      },
+      {
+       "fa": "پرستار",
+       "tr": "parastār",
+       "de": "Pfleger/in",
+       "emoji": "👩‍⚕️"
+      },
+      {
+       "fa": "داروساز",
+       "tr": "dārūsāz",
+       "de": "Apotheker/in",
+       "emoji": "⚗️"
+      },
+      {
+       "fa": "اورژانس",
+       "tr": "urzhāns",
+       "de": "Notaufnahme",
+       "emoji": "🚑"
+      },
+      {
+       "fa": "آمپول",
+       "tr": "āmpūl",
+       "de": "Spritze",
+       "emoji": "💉"
+      }
+     ]
+    },
+    {
+     "typ": "info",
+     "titel": "🏥 Praxis & Behandlung (2)",
+     "text": "<p>Tippe ein Wort an, wenn du es hören möchtest.</p>",
+     "beispiele": [
+      {
+       "fa": "آزمایش خون",
+       "tr": "āzmāyesch-e chūn",
+       "de": "Bluttest",
+       "emoji": "🧪"
+      },
+      {
+       "fa": "عکس",
+       "tr": "ʿaks",
+       "de": "Röntgenbild",
+       "emoji": "🩻"
+      },
+      {
+       "fa": "پماد",
+       "tr": "pomād",
+       "de": "Salbe",
+       "emoji": "🧴"
+      },
+      {
+       "fa": "چسب زخم",
+       "tr": "tschasb-e zachm",
+       "de": "Pflaster",
+       "emoji": "🩹"
+      },
+      {
+       "fa": "گواهی پزشکی",
+       "tr": "gawāhī-ye pezeschkī",
+       "de": "Attest, Krankschreibung",
+       "emoji": "📄"
+      },
+      {
+       "fa": "عوارض جانبی",
+       "tr": "ʿawārez-e dschānebī",
+       "de": "Nebenwirkungen",
+       "emoji": "⚠️"
+      }
+     ]
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "پرستار",
+       "tr": "parastār",
+       "de": "Pfleger/in",
+       "emoji": "👩‍⚕️"
+      },
+      {
+       "fa": "عوارض جانبی",
+       "tr": "ʿawārez-e dschānebī",
+       "de": "Nebenwirkungen",
+       "emoji": "⚠️"
+      },
+      {
+       "fa": "آمپول",
+       "tr": "āmpūl",
+       "de": "Spritze",
+       "emoji": "💉"
+      },
+      {
+       "fa": "داروساز",
+       "tr": "dārūsāz",
+       "de": "Apotheker/in",
+       "emoji": "⚗️"
+      },
+      {
+       "fa": "اورژانس",
+       "tr": "urzhāns",
+       "de": "Notaufnahme",
+       "emoji": "🚑"
+      },
+      {
+       "fa": "عکس",
+       "tr": "ʿaks",
+       "de": "Röntgenbild",
+       "emoji": "🩻"
+      }
+     ],
+     "titel": "Was bedeutet das?"
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "پزشک عمومی",
+       "tr": "pezeschk-e ʿomūmī",
+       "de": "Allgemeinarzt/-ärztin",
+       "emoji": "🩺"
+      },
+      {
+       "fa": "اورژانس",
+       "tr": "urzhāns",
+       "de": "Notaufnahme",
+       "emoji": "🚑"
+      },
+      {
+       "fa": "پرستار",
+       "tr": "parastār",
+       "de": "Pfleger/in",
+       "emoji": "👩‍⚕️"
+      },
+      {
+       "fa": "دندانپزشک",
+       "tr": "dandānpezeschk",
+       "de": "Zahnarzt/-ärztin",
+       "emoji": "🦷"
+      },
+      {
+       "fa": "عکس",
+       "tr": "ʿaks",
+       "de": "Röntgenbild",
+       "emoji": "🩻"
+      },
+      {
+       "fa": "داروساز",
+       "tr": "dārūsāz",
+       "de": "Apotheker/in",
+       "emoji": "⚗️"
+      }
+     ],
+     "titel": "Noch einmal: Was bedeutet das?"
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "آمپول",
+       "tr": "āmpūl",
+       "de": "Spritze",
+       "emoji": "💉"
+      },
+      {
+       "fa": "چسب زخم",
+       "tr": "tschasb-e zachm",
+       "de": "Pflaster",
+       "emoji": "🩹"
+      },
+      {
+       "fa": "دندانپزشک",
+       "tr": "dandānpezeschk",
+       "de": "Zahnarzt/-ärztin",
+       "emoji": "🦷"
+      },
+      {
+       "fa": "پماد",
+       "tr": "pomād",
+       "de": "Salbe",
+       "emoji": "🧴"
+      },
+      {
+       "fa": "عکس",
+       "tr": "ʿaks",
+       "de": "Röntgenbild",
+       "emoji": "🩻"
+      },
+      {
+       "fa": "پزشک عمومی",
+       "tr": "pezeschk-e ʿomūmī",
+       "de": "Allgemeinarzt/-ärztin",
+       "emoji": "🩺"
+      }
+     ],
+     "titel": "Memory: Bild & Wort"
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>روی زخم یک ___ بگذار.</span><br><span class='mini'>Klebe ein Pflaster auf die Wunde.</span>",
+       "optionen": [
+        "چسب زخم",
+        "سردرد",
+        "سرفه"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>روی زخم یک چسب زخم بگذار.</span>"
+      },
+      {
+       "frage": "<span class='fa'>برای پوست خشک، این ___ را روزی دو بار بزنید.</span><br><span class='mini'>Für trockene Haut tragen Sie diese Salbe zweimal täglich auf.</span>",
+       "optionen": [
+        "پماد",
+        "گلودرد",
+        "شکستگی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>برای پوست خشک، این پماد را روزی دو بار بزنید.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Praxis & Behandlung",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 50,
+     "ziel": 10,
+     "woerter": [
+      {
+       "fa": "پزشک عمومی",
+       "a": "Allgemeinarzt/-ärztin"
+      },
+      {
+       "fa": "دندانپزشک",
+       "a": "Zahnarzt/-ärztin"
+      },
+      {
+       "fa": "پرستار",
+       "a": "Pfleger/in"
+      },
+      {
+       "fa": "داروساز",
+       "a": "Apotheker/in"
+      },
+      {
+       "fa": "اورژانس",
+       "a": "Notaufnahme"
+      },
+      {
+       "fa": "آمپول",
+       "a": "Spritze"
+      },
+      {
+       "fa": "آزمایش خون",
+       "a": "Bluttest"
+      },
+      {
+       "fa": "عکس",
+       "a": "Röntgenbild"
+      },
+      {
+       "fa": "پماد",
+       "a": "Salbe"
+      },
+      {
+       "fa": "چسب زخم",
+       "a": "Pflaster"
+      },
+      {
+       "fa": "گواهی پزشکی",
+       "a": "Attest, Krankschreibung"
+      },
+      {
+       "fa": "عوارض جانبی",
+       "a": "Nebenwirkungen"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "v",
+   "titel": "Verben & Wiederholung",
+   "vorschau": "درد کردن · سرما خوردن · نوبت گرفتن",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Verben",
+     "text": "<p>Infinitiv – im Gespräch brauchst du sie in allen Zeiten.</p>",
+     "beispiele": [
+      {
+       "fa": "درد کردن",
+       "tr": "dard kardan",
+       "de": "wehtun",
+       "emoji": "🤕"
+      },
+      {
+       "fa": "سرما خوردن",
+       "tr": "sarmā chordan",
+       "de": "sich erkälten",
+       "emoji": "🤧"
+      },
+      {
+       "fa": "نوبت گرفتن",
+       "tr": "nobat gereftan",
+       "de": "einen Termin machen",
+       "emoji": "📅"
+      },
+      {
+       "fa": "خوب شدن",
+       "tr": "chūb schodan",
+       "de": "gesund werden",
+       "emoji": "💪"
+      },
+      {
+       "fa": "معاینه کردن",
+       "tr": "moʿāyene kardan",
+       "de": "untersuchen",
+       "emoji": "🩺"
+      },
+      {
+       "fa": "سرفه کردن",
+       "tr": "sorfe kardan",
+       "de": "husten",
+       "emoji": "😮‍💨"
+      },
+      {
+       "fa": "عطسه کردن",
+       "tr": "ʿatse kardan",
+       "de": "niesen",
+       "emoji": "🤧"
+      },
+      {
+       "fa": "شکستن",
+       "tr": "schekastan",
+       "de": "brechen",
+       "emoji": "🦴"
+      },
+      {
+       "fa": "مراقب بودن",
+       "tr": "morāgheb būdan",
+       "de": "aufpassen",
+       "emoji": "👀"
+      }
+     ]
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "درد کردن",
+       "tr": "dard kardan",
+       "de": "wehtun",
+       "emoji": "🤕"
+      },
+      {
+       "fa": "سرفه کردن",
+       "tr": "sorfe kardan",
+       "de": "husten",
+       "emoji": "😮‍💨"
+      },
+      {
+       "fa": "سرما خوردن",
+       "tr": "sarmā chordan",
+       "de": "sich erkälten",
+       "emoji": "🤧"
+      },
+      {
+       "fa": "شکستن",
+       "tr": "schekastan",
+       "de": "brechen",
+       "emoji": "🦴"
+      },
+      {
+       "fa": "نوبت گرفتن",
+       "tr": "nobat gereftan",
+       "de": "einen Termin machen",
+       "emoji": "📅"
+      },
+      {
+       "fa": "مراقب بودن",
+       "tr": "morāgheb būdan",
+       "de": "aufpassen",
+       "emoji": "👀"
+      }
+     ],
+     "titel": "Was bedeutet das?"
+    },
+    {
+     "typ": "sortieren",
+     "titel": "Welches Wortfeld?",
+     "frage": "Ordne die Wörter dem Wortfeld zu.",
+     "kategorien": [
+      "🧩 Rund ums Thema",
+      "🧍 Der Körper",
+      "🤒 Beschwerden",
+      "🏥 Praxis & Behandlung"
+     ],
+     "items": [
+      {
+       "fa": "مطب",
+       "k": 0,
+       "e": "Arztpraxis",
+       "say": false
+      },
+      {
+       "fa": "نسخه",
+       "k": 0,
+       "e": "Rezept",
+       "say": false
+      },
+      {
+       "fa": "تب",
+       "k": 0,
+       "e": "Fieber",
+       "say": false
+      },
+      {
+       "fa": "معده",
+       "k": 1,
+       "e": "Magen",
+       "say": false
+      },
+      {
+       "fa": "گلو",
+       "k": 1,
+       "e": "Hals (innen)",
+       "say": false
+      },
+      {
+       "fa": "دل",
+       "k": 1,
+       "e": "Bauch, Herz (Gefühl)",
+       "say": false
+      },
+      {
+       "fa": "فشار خون",
+       "k": 2,
+       "e": "Blutdruck",
+       "say": false
+      },
+      {
+       "fa": "سرگیجه",
+       "k": 2,
+       "e": "Schwindel",
+       "say": false
+      },
+      {
+       "fa": "خارش",
+       "k": 2,
+       "e": "Juckreiz",
+       "say": false
+      },
+      {
+       "fa": "دندانپزشک",
+       "k": 3,
+       "e": "Zahnarzt/-ärztin",
+       "say": false
+      },
+      {
+       "fa": "گواهی پزشکی",
+       "k": 3,
+       "e": "Attest, Krankschreibung",
+       "say": false
+      },
+      {
+       "fa": "عکس",
+       "k": 3,
+       "e": "Röntgenbild",
+       "say": false
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: alle Wörter",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 75,
+     "ziel": 15,
      "woerter": [
       {
        "fa": "سرماخوردگی",
@@ -376,6 +1581,150 @@
        "a": "Ruhe, Erholung"
       },
       {
+       "fa": "سر",
+       "a": "Kopf"
+      },
+      {
+       "fa": "گلو",
+       "a": "Hals (innen)"
+      },
+      {
+       "fa": "گوش",
+       "a": "Ohr"
+      },
+      {
+       "fa": "چشم",
+       "a": "Auge"
+      },
+      {
+       "fa": "دندان",
+       "a": "Zahn"
+      },
+      {
+       "fa": "دل",
+       "a": "Bauch, Herz (Gefühl)"
+      },
+      {
+       "fa": "کمر",
+       "a": "Rücken (unten)"
+      },
+      {
+       "fa": "پا",
+       "a": "Bein, Fuß"
+      },
+      {
+       "fa": "دست",
+       "a": "Hand, Arm"
+      },
+      {
+       "fa": "قلب",
+       "a": "Herz (Organ)"
+      },
+      {
+       "fa": "معده",
+       "a": "Magen"
+      },
+      {
+       "fa": "پوست",
+       "a": "Haut"
+      },
+      {
+       "fa": "سرگیجه",
+       "a": "Schwindel"
+      },
+      {
+       "fa": "حالت تهوع",
+       "a": "Übelkeit"
+      },
+      {
+       "fa": "اسهال",
+       "a": "Durchfall"
+      },
+      {
+       "fa": "آبریزش بینی",
+       "a": "Schnupfen"
+      },
+      {
+       "fa": "بی‌خوابی",
+       "a": "Schlaflosigkeit"
+      },
+      {
+       "fa": "زخم",
+       "a": "Wunde"
+      },
+      {
+       "fa": "ورم",
+       "a": "Schwellung"
+      },
+      {
+       "fa": "خارش",
+       "a": "Juckreiz"
+      },
+      {
+       "fa": "سوختگی",
+       "a": "Verbrennung"
+      },
+      {
+       "fa": "شکستگی",
+       "a": "Knochenbruch"
+      },
+      {
+       "fa": "فشار خون",
+       "a": "Blutdruck"
+      },
+      {
+       "fa": "خستگی",
+       "a": "Müdigkeit"
+      },
+      {
+       "fa": "پزشک عمومی",
+       "a": "Allgemeinarzt/-ärztin"
+      },
+      {
+       "fa": "دندانپزشک",
+       "a": "Zahnarzt/-ärztin"
+      },
+      {
+       "fa": "پرستار",
+       "a": "Pfleger/in"
+      },
+      {
+       "fa": "داروساز",
+       "a": "Apotheker/in"
+      },
+      {
+       "fa": "اورژانس",
+       "a": "Notaufnahme"
+      },
+      {
+       "fa": "آمپول",
+       "a": "Spritze"
+      },
+      {
+       "fa": "آزمایش خون",
+       "a": "Bluttest"
+      },
+      {
+       "fa": "عکس",
+       "a": "Röntgenbild"
+      },
+      {
+       "fa": "پماد",
+       "a": "Salbe"
+      },
+      {
+       "fa": "چسب زخم",
+       "a": "Pflaster"
+      },
+      {
+       "fa": "گواهی پزشکی",
+       "a": "Attest, Krankschreibung"
+      },
+      {
+       "fa": "عوارض جانبی",
+       "a": "Nebenwirkungen"
+      },
+      {
        "fa": "درد کردن",
        "a": "wehtun"
       },
@@ -394,19 +1743,35 @@
       {
        "fa": "معاینه کردن",
        "a": "untersuchen"
+      },
+      {
+       "fa": "سرفه کردن",
+       "a": "husten"
+      },
+      {
+       "fa": "عطسه کردن",
+       "a": "niesen"
+      },
+      {
+       "fa": "شکستن",
+       "a": "brechen"
+      },
+      {
+       "fa": "مراقب بودن",
+       "a": "aufpassen"
       }
      ]
     }
    ]
   },
   {
-   "id": "s2",
+   "id": "r1",
    "titel": "Redemittel",
    "vorschau": "سرم درد می‌کنه.",
    "karten": [
     {
      "typ": "info",
-     "titel": "Redemittel – Teil 1",
+     "titel": "Redemittel (1)",
      "text": "<p>So sagt man das im Gespräch. Tippe einen Satz an, um ihn zu hören.</p>",
      "stil": "merke",
      "beispiele": [
@@ -450,8 +1815,8 @@
     },
     {
      "typ": "info",
-     "titel": "Redemittel – Teil 2",
-     "text": "<p>Die Schriftform findest du gleich in der Übung „Geschrieben ↔ gesprochen“.</p>",
+     "titel": "Redemittel (2)",
+     "text": "<p>So sagt man das im Gespräch. Tippe einen Satz an, um ihn zu hören.</p>",
      "stil": "merke",
      "beispiele": [
       {
@@ -483,6 +1848,56 @@
        "tr": "tschāy bā ʿasal bochor, chūb mīschī.",
        "de": "Trink Tee mit Honig, dann wirst du gesund.",
        "x": "چای با عسل بخور، خوب می‌شوی."
+      },
+      {
+       "fa": "سرم گیج می‌ره.",
+       "tr": "saram gīdsch mīre.",
+       "de": "Mir ist schwindelig.",
+       "x": "سرم گیج می‌رود."
+      }
+     ]
+    },
+    {
+     "typ": "info",
+     "titel": "Redemittel (3)",
+     "text": "<p>So sagt man das im Gespräch. Tippe einen Satz an, um ihn zu hören.</p>",
+     "stil": "merke",
+     "beispiele": [
+      {
+       "fa": "حالت تهوع دارم.",
+       "tr": "hālat-e tahawwoʿ dāram.",
+       "de": "Mir ist übel.",
+       "x": "حالت تهوع دارم."
+      },
+      {
+       "fa": "دستمو بریدم.",
+       "tr": "dastamo borīdam.",
+       "de": "Ich habe mich an der Hand geschnitten.",
+       "x": "دستم را بریدم."
+      },
+      {
+       "fa": "گواهی پزشکی لازم دارم.",
+       "tr": "gawāhī-ye pezeschkī lāzem dāram.",
+       "de": "Ich brauche ein Attest.",
+       "x": "گواهی پزشکی لازم دارم."
+      },
+      {
+       "fa": "عوارض جانبی داره؟",
+       "tr": "ʿawārez-e dschānebī dāre?",
+       "de": "Hat es Nebenwirkungen?",
+       "x": "عوارض جانبی دارد؟"
+      },
+      {
+       "fa": "مراقب خودت باش!",
+       "tr": "morāgheb-e chodet bāsch!",
+       "de": "Pass auf dich auf!",
+       "x": "مراقب خودت باش!"
+      },
+      {
+       "fa": "اورژانس! کمک کنید!",
+       "tr": "urzhāns! komak konīd!",
+       "de": "Notfall! Helfen Sie bitte!",
+       "x": "اورژانس! لطفاً کمک کنید!"
       }
      ]
     },
@@ -491,43 +1906,86 @@
      "links": "de",
      "paare": [
       {
+       "fa": "عوارض جانبی داره؟",
+       "tr": "ʿawārez-e dschānebī dāre?",
+       "de": "Hat es Nebenwirkungen?",
+       "x": "عوارض جانبی دارد؟"
+      },
+      {
        "fa": "بهتره استراحت کنی.",
        "tr": "behtare esterāhat konī.",
        "de": "Du solltest dich besser ausruhen.",
        "x": "بهتر است استراحت کنی."
       },
       {
-       "fa": "زود خوب شو!",
-       "tr": "zūd chūb schou!",
-       "de": "Werd schnell gesund!",
-       "x": "زود خوب شو!"
+       "fa": "حالت تهوع دارم.",
+       "tr": "hālat-e tahawwoʿ dāram.",
+       "de": "Mir ist übel.",
+       "x": "حالت تهوع دارم."
       },
       {
-       "fa": "چای با عسل بخور، خوب می‌شی.",
-       "tr": "tschāy bā ʿasal bochor, chūb mīschī.",
-       "de": "Trink Tee mit Honig, dann wirst du gesund.",
-       "x": "چای با عسل بخور، خوب می‌شوی."
+       "fa": "سرم گیج می‌ره.",
+       "tr": "saram gīdsch mīre.",
+       "de": "Mir ist schwindelig.",
+       "x": "سرم گیج می‌رود."
       },
       {
-       "fa": "بلا دور باشه!",
-       "tr": "balā dūr bāsche!",
-       "de": "Gute Besserung! (wörtl.: Unheil bleibe fern)",
-       "x": "بلا دور باشد!"
+       "fa": "گواهی پزشکی لازم دارم.",
+       "tr": "gawāhī-ye pezeschkī lāzem dāram.",
+       "de": "Ich brauche ein Attest.",
+       "x": "گواهی پزشکی لازم دارم."
       },
       {
-       "fa": "از دیروز تب دارم.",
-       "tr": "az dīrūz tab dāram.",
-       "de": "Ich habe seit gestern Fieber.",
-       "x": "از دیروز تب دارم."
-      },
-      {
-       "fa": "بدون نسخه هم می‌شه خرید؟",
-       "tr": "bedūn-e noschche ham mīsche charīd?",
-       "de": "Bekommt man das auch ohne Rezept?",
-       "x": "بدون نسخه هم می‌شود خرید؟"
+       "fa": "سرم درد می‌کنه.",
+       "tr": "saram dard mīkone.",
+       "de": "Ich habe Kopfschmerzen.",
+       "x": "سرم درد می‌کند."
       }
      ],
      "titel": "Was bedeutet das?"
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "گواهی پزشکی لازم دارم.",
+       "tr": "gawāhī-ye pezeschkī lāzem dāram.",
+       "de": "Ich brauche ein Attest.",
+       "x": "گواهی پزشکی لازم دارم."
+      },
+      {
+       "fa": "این دارو رو روزی چند بار بخورم؟",
+       "tr": "īn dārū ro rūzī tschand bār bechoram?",
+       "de": "Wie oft am Tag soll ich das nehmen?",
+       "x": "این دارو را چند بار در روز بخورم؟"
+      },
+      {
+       "fa": "بهتره استراحت کنی.",
+       "tr": "behtare esterāhat konī.",
+       "de": "Du solltest dich besser ausruhen.",
+       "x": "بهتر است استراحت کنی."
+      },
+      {
+       "fa": "مراقب خودت باش!",
+       "tr": "morāgheb-e chodet bāsch!",
+       "de": "Pass auf dich auf!",
+       "x": "مراقب خودت باش!"
+      },
+      {
+       "fa": "سرم گیج می‌ره.",
+       "tr": "saram gīdsch mīre.",
+       "de": "Mir ist schwindelig.",
+       "x": "سرم گیج می‌رود."
+      },
+      {
+       "fa": "حالم خوب نیست.",
+       "tr": "hālam chūb nīst.",
+       "de": "Mir geht es nicht gut.",
+       "x": "حالم خوب نیست."
+      }
+     ],
+     "titel": "Noch einmal: Was bedeutet das?"
     },
     {
      "typ": "sortieren",
@@ -604,12 +2062,192 @@
        "k": 2,
        "e": "Trink Tee mit Honig, dann wirst du gesund.",
        "say": false
+      },
+      {
+       "fa": "سرم گیج می‌ره.",
+       "k": 0,
+       "e": "Mir ist schwindelig.",
+       "say": false
+      },
+      {
+       "fa": "حالت تهوع دارم.",
+       "k": 0,
+       "e": "Mir ist übel.",
+       "say": false
+      },
+      {
+       "fa": "دستمو بریدم.",
+       "k": 0,
+       "e": "Ich habe mich an der Hand geschnitten.",
+       "say": false
+      },
+      {
+       "fa": "گواهی پزشکی لازم دارم.",
+       "k": 1,
+       "e": "Ich brauche ein Attest.",
+       "say": false
+      },
+      {
+       "fa": "عوارض جانبی داره؟",
+       "k": 1,
+       "e": "Hat es Nebenwirkungen?",
+       "say": false
+      },
+      {
+       "fa": "مراقب خودت باش!",
+       "k": 2,
+       "e": "Pass auf dich auf!",
+       "say": false
+      },
+      {
+       "fa": "اورژانس! کمک کنید!",
+       "k": 1,
+       "e": "Notfall! Helfen Sie bitte!",
+       "say": false
       }
      ]
     },
     {
+     "typ": "paare",
+     "links": "x",
+     "paare": [
+      {
+       "fa": "بدون نسخه هم می‌شود خرید؟",
+       "tr": "",
+       "de": "Bekommt man das auch ohne Rezept?",
+       "x": "بدون نسخه هم می‌شه خرید؟"
+      },
+      {
+       "fa": "بهتر است استراحت کنی.",
+       "tr": "",
+       "de": "Du solltest dich besser ausruhen.",
+       "x": "بهتره استراحت کنی."
+      },
+      {
+       "fa": "این دارو را چند بار در روز بخورم؟",
+       "tr": "",
+       "de": "Wie oft am Tag soll ich das nehmen?",
+       "x": "این دارو رو روزی چند بار بخورم؟"
+      },
+      {
+       "fa": "سرم درد می‌کند.",
+       "tr": "",
+       "de": "Ich habe Kopfschmerzen.",
+       "x": "سرم درد می‌کنه."
+      },
+      {
+       "fa": "دستم را بریدم.",
+       "tr": "",
+       "de": "Ich habe mich an der Hand geschnitten.",
+       "x": "دستمو بریدم."
+      },
+      {
+       "fa": "بلا دور باشد!",
+       "tr": "",
+       "de": "Gute Besserung! (wörtl.: Unheil bleibe fern)",
+       "x": "بلا دور باشه!"
+      }
+     ],
+     "titel": "Geschrieben ↔ gesprochen"
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Redemittel",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 70,
+     "ziel": 12,
+     "woerter": [
+      {
+       "fa": "سرم درد می‌کنه.",
+       "a": "Ich habe Kopfschmerzen."
+      },
+      {
+       "fa": "از دیروز تب دارم.",
+       "a": "Ich habe seit gestern Fieber."
+      },
+      {
+       "fa": "حالم خوب نیست.",
+       "a": "Mir geht es nicht gut."
+      },
+      {
+       "fa": "به پنی‌سیلین حساسیت دارم.",
+       "a": "Ich bin allergisch gegen Penicillin."
+      },
+      {
+       "fa": "برای فردا نوبت دارید؟",
+       "a": "Haben Sie morgen einen Termin frei?"
+      },
+      {
+       "fa": "این دارو رو روزی چند بار بخورم؟",
+       "a": "Wie oft am Tag soll ich das nehmen?"
+      },
+      {
+       "fa": "بدون نسخه هم می‌شه خرید؟",
+       "a": "Bekommt man das auch ohne Rezept?"
+      },
+      {
+       "fa": "بلا دور باشه!",
+       "a": "Gute Besserung! (wörtl.: Unheil bleibe fern)"
+      },
+      {
+       "fa": "زود خوب شو!",
+       "a": "Werd schnell gesund!"
+      },
+      {
+       "fa": "بهتره استراحت کنی.",
+       "a": "Du solltest dich besser ausruhen."
+      },
+      {
+       "fa": "چای با عسل بخور، خوب می‌شی.",
+       "a": "Trink Tee mit Honig, dann wirst du gesund."
+      },
+      {
+       "fa": "سرم گیج می‌ره.",
+       "a": "Mir ist schwindelig."
+      },
+      {
+       "fa": "حالت تهوع دارم.",
+       "a": "Mir ist übel."
+      },
+      {
+       "fa": "دستمو بریدم.",
+       "a": "Ich habe mich an der Hand geschnitten."
+      },
+      {
+       "fa": "گواهی پزشکی لازم دارم.",
+       "a": "Ich brauche ein Attest."
+      },
+      {
+       "fa": "عوارض جانبی داره؟",
+       "a": "Hat es Nebenwirkungen?"
+      },
+      {
+       "fa": "مراقب خودت باش!",
+       "a": "Pass auf dich auf!"
+      },
+      {
+       "fa": "اورژانس! کمک کنید!",
+       "a": "Notfall! Helfen Sie bitte!"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "r2",
+   "titel": "Situationen & Reaktionen",
+   "vorschau": "چی بگم؟",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Reagieren",
+     "text": "<p>Im Gespräch kommt es auf die <b>Reaktion</b> an. Lies, was jemand sagt – und was man darauf antwortet.</p><div class='karte' style='margin:10px 0;padding:10px 14px'><div class='fa' style='font-size:1.3rem;text-align:right'>💬 سرما خوردم.</div><div class='fa' style='font-size:1.3rem;text-align:right;color:var(--lapis)'>↩️ بلا دور باشه! چای با عسل بخور.</div><div class='klein muted'>Ich habe mich erkältet.</div></div><div class='karte' style='margin:10px 0;padding:10px 14px'><div class='fa' style='font-size:1.3rem;text-align:right'>💬 چی شده؟</div><div class='fa' style='font-size:1.3rem;text-align:right;color:var(--lapis)'>↩️ از دیروز سرم درد می‌کنه.</div><div class='klein muted'>Was ist los?</div></div><div class='karte' style='margin:10px 0;padding:10px 14px'><div class='fa' style='font-size:1.3rem;text-align:right'>💬 حساسیت دارید؟</div><div class='fa' style='font-size:1.3rem;text-align:right;color:var(--lapis)'>↩️ آره، به پنی‌سیلین.</div><div class='klein muted'>Haben Sie Allergien?</div></div><div class='karte' style='margin:10px 0;padding:10px 14px'><div class='fa' style='font-size:1.3rem;text-align:right'>💬 این دارو رو روزی چند بار بخورم؟</div><div class='fa' style='font-size:1.3rem;text-align:right;color:var(--lapis)'>↩️ روزی سه بار، بعد از غذا.</div><div class='klein muted'>Wie oft am Tag soll ich das nehmen?</div></div>",
+     "stil": "merke"
+    },
+    {
      "typ": "wahl",
-     "titel": "Was sagst du?",
+     "titel": "Was sagst du? (1)",
      "fragen": [
       {
        "frage": "Dein Freund liegt mit Grippe im Bett. Du sagst:",
@@ -658,106 +2296,185 @@
      ]
     },
     {
+     "typ": "wahl",
+     "titel": "Was sagst du? (2)",
+     "fragen": [
+      {
+       "frage": "Du hast dich beim Kochen geschnitten und rufst deine Mitbewohnerin:",
+       "optionen": [
+        "دستمو بریدم! چسب زخم داری؟",
+        "مراقب خودت باش!",
+        "عوارض جانبی داره؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "Dein Arbeitgeber braucht eine Bestätigung:",
+       "optionen": [
+        "گواهی پزشکی لازم دارم.",
+        "سرم گیج می‌ره.",
+        "بلا دور باشه!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "Die Apothekerin gibt dir Tabletten. Du fragst:",
+       "optionen": [
+        "عوارض جانبی داره؟",
+        "حالت تهوع دارم.",
+        "زود خوب شو!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    },
+    {
      "typ": "paare",
      "links": "x",
      "paare": [
       {
-       "fa": "سرم درد می‌کند.",
+       "fa": "سرما خوردم.",
        "tr": "",
-       "de": "Ich habe Kopfschmerzen.",
-       "x": "سرم درد می‌کنه."
+       "de": "Ich habe mich erkältet.",
+       "x": "بلا دور باشه! چای با عسل بخور."
       },
       {
-       "fa": "این دارو را چند بار در روز بخورم؟",
+       "fa": "چی شده؟",
        "tr": "",
-       "de": "Wie oft am Tag soll ich das nehmen?",
-       "x": "این دارو رو روزی چند بار بخورم؟"
+       "de": "Was ist los?",
+       "x": "از دیروز سرم درد می‌کنه."
       },
       {
-       "fa": "بدون نسخه هم می‌شود خرید؟",
+       "fa": "حساسیت دارید؟",
        "tr": "",
-       "de": "Bekommt man das auch ohne Rezept?",
-       "x": "بدون نسخه هم می‌شه خرید؟"
-      },
-      {
-       "fa": "بلا دور باشد!",
-       "tr": "",
-       "de": "Gute Besserung! (wörtl.: Unheil bleibe fern)",
-       "x": "بلا دور باشه!"
-      },
-      {
-       "fa": "بهتر است استراحت کنی.",
-       "tr": "",
-       "de": "Du solltest dich besser ausruhen.",
-       "x": "بهتره استراحت کنی."
-      },
-      {
-       "fa": "چای با عسل بخور، خوب می‌شوی.",
-       "tr": "",
-       "de": "Trink Tee mit Honig, dann wirst du gesund.",
-       "x": "چای با عسل بخور، خوب می‌شی."
-      }
-     ],
-     "titel": "Geschrieben ↔ gesprochen"
-    },
-    {
-     "typ": "tempo",
-     "titel": "Blitz: Redemittel",
-     "aufgabe": "Was bedeutet das?",
-     "modus": "de",
-     "sekunden": 60,
-     "ziel": 10,
-     "woerter": [
-      {
-       "fa": "سرم درد می‌کنه.",
-       "a": "Ich habe Kopfschmerzen."
-      },
-      {
-       "fa": "از دیروز تب دارم.",
-       "a": "Ich habe seit gestern Fieber."
-      },
-      {
-       "fa": "حالم خوب نیست.",
-       "a": "Mir geht es nicht gut."
-      },
-      {
-       "fa": "به پنی‌سیلین حساسیت دارم.",
-       "a": "Ich bin allergisch gegen Penicillin."
-      },
-      {
-       "fa": "برای فردا نوبت دارید؟",
-       "a": "Haben Sie morgen einen Termin frei?"
+       "de": "Haben Sie Allergien?",
+       "x": "آره، به پنی‌سیلین."
       },
       {
        "fa": "این دارو رو روزی چند بار بخورم؟",
-       "a": "Wie oft am Tag soll ich das nehmen?"
+       "tr": "",
+       "de": "Wie oft am Tag soll ich das nehmen?",
+       "x": "روزی سه بار، بعد از غذا."
       },
       {
-       "fa": "بدون نسخه هم می‌شه خرید؟",
-       "a": "Bekommt man das auch ohne Rezept?"
+       "fa": "حالت بهتره؟",
+       "tr": "",
+       "de": "Geht es dir besser?",
+       "x": "آره، خیلی بهترم، مرسی."
       },
       {
-       "fa": "بلا دور باشه!",
-       "a": "Gute Besserung! (wörtl.: Unheil bleibe fern)"
+       "fa": "برای فردا نوبت دارید؟",
+       "tr": "",
+       "de": "Haben Sie morgen einen Termin?",
+       "x": "ساعت ده خوبه؟"
+      }
+     ],
+     "titel": "Was antwortest du?"
+    },
+    {
+     "typ": "wahl",
+     "titel": "Die passende Reaktion",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>سرما خوردم.</span>",
+       "optionen": [
+        "بلا دور باشه! چای با عسل بخور.",
+        "آره، خیلی بهترم، مرسی.",
+        "مرسی، لطف داری."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
       },
       {
-       "fa": "زود خوب شو!",
-       "a": "Werd schnell gesund!"
+       "frage": "<span class='fa'>چی شده؟</span>",
+       "optionen": [
+        "از دیروز سرم درد می‌کنه.",
+        "ساعت ده خوبه؟",
+        "مرسی، لطف داری."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
       },
       {
-       "fa": "بهتره استراحت کنی.",
-       "a": "Du solltest dich besser ausruhen."
+       "frage": "<span class='fa'>حساسیت دارید؟</span>",
+       "optionen": [
+        "آره، به پنی‌سیلین.",
+        "ساعت ده خوبه؟",
+        "مرسی، لطف داری."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
       },
       {
-       "fa": "چای با عسل بخور، خوب می‌شی.",
-       "a": "Trink Tee mit Honig, dann wirst du gesund."
+       "frage": "<span class='fa'>این دارو رو روزی چند بار بخورم؟</span>",
+       "optionen": [
+        "روزی سه بار، بعد از غذا.",
+        "مرسی، لطف داری.",
+        "ساعت ده خوبه؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>حالت بهتره؟</span>",
+       "optionen": [
+        "آره، خیلی بهترم، مرسی.",
+        "باشه، امروز خونه می‌مونم.",
+        "مرسی، لطف داری."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>برای فردا نوبت دارید؟</span>",
+       "optionen": [
+        "ساعت ده خوبه؟",
+        "بلا دور باشه! چای با عسل بخور.",
+        "از دیروز سرم درد می‌کنه."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>بهتره استراحت کنی.</span>",
+       "optionen": [
+        "باشه، امروز خونه می‌مونم.",
+        "از دیروز سرم درد می‌کنه.",
+        "آره، خیلی بهترم، مرسی."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>زود خوب شو!</span>",
+       "optionen": [
+        "مرسی، لطف داری.",
+        "آره، خیلی بهترم، مرسی.",
+        "روزی سه بار، بعد از غذا."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
       }
      ]
     }
    ]
   },
   {
-   "id": "s3",
+   "id": "d",
    "titel": "Modelldialog",
    "vorschau": "In der Praxis",
    "karten": [
@@ -857,6 +2574,67 @@
      ]
     },
     {
+     "typ": "wahl",
+     "titel": "Wie geht es weiter?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>بفرمایید بشینید. چی شده؟</span><br><span class='klein muted'>Was kommt als Nächstes?</span>",
+       "optionen": [
+        "از دیروز گلوم خیلی درد می‌کنه و تب دارم.",
+        "خیلی ممنون، آقای دکتر.",
+        "به پنی‌سیلین حساسیت دارم."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>سرفه هم دارید؟</span><br><span class='klein muted'>Was kommt als Nächstes?</span>",
+       "optionen": [
+        "یه کم. شب‌ها بیشتر.",
+        "خیلی ممنون، آقای دکتر.",
+        "دو سه روز. زیاد آب و چای بخورید. اگه بهتر نشدید، دوباره بیایید."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>اجازه بدید معاینه‌تون کنم … گلوتون عفونت کرده.</span><br><span class='klein muted'>Was kommt als Nächstes?</span>",
+       "optionen": [
+        "به پنی‌سیلین حساسیت دارم.",
+        "خیلی ممنون، آقای دکتر.",
+        "از دیروز گلوم خیلی درد می‌کنه و تب دارم."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>خوب شد گفتید. یه داروی دیگه می‌نویسم. روزی دو بار، بعد از غذا.</span><br><span class='klein muted'>Was kommt als Nächstes?</span>",
+       "optionen": [
+        "چند روز باید استراحت کنم؟",
+        "اجازه بدید معاینه‌تون کنم … گلوتون عفونت کرده.",
+        "از دیروز گلوم خیلی درد می‌کنه و تب دارم."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='fa'>دو سه روز. زیاد آب و چای بخورید. اگه بهتر نشدید، دوباره بیایید.</span><br><span class='klein muted'>Was kommt als Nächstes?</span>",
+       "optionen": [
+        "خیلی ممنون، آقای دکتر.",
+        "اجازه بدید معاینه‌تون کنم … گلوتون عفونت کرده.",
+        "سرفه هم دارید؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    },
+    {
      "typ": "ordnen",
      "titel": "Bring den Dialog in die richtige Reihenfolge",
      "frage": "Tippe die Sätze der Reihe nach an.",
@@ -902,11 +2680,83 @@
        "de": "Wie viele Tage soll ich mich ausruhen?"
       }
      ]
+    },
+    {
+     "typ": "bauen",
+     "titel": "Baue die Sätze aus dem Dialog",
+     "trenner": " ",
+     "woerter": [
+      {
+       "fa": "بفرمایید بشینید. چی شده؟",
+       "tr": "befarmāyīd beschīnīd. tschī schode?",
+       "de": "Bitte setzen Sie sich. Was ist los?",
+       "teile": [
+        "بفرمایید",
+        "بشینید",
+        "چی",
+        "شده"
+       ],
+       "extra": [
+        "دکتر."
+       ]
+      },
+      {
+       "fa": "از دیروز گلوم خیلی درد می‌کنه و تب دارم.",
+       "tr": "az dīrūz galūm cheylī dard mīkone o tab dāram.",
+       "de": "Seit gestern habe ich starke Halsschmerzen und Fieber.",
+       "teile": [
+        "از",
+        "دیروز",
+        "گلوم",
+        "خیلی",
+        "درد",
+        "می‌کنه",
+        "و",
+        "تب",
+        "دارم"
+       ],
+       "extra": [
+        "گفتید."
+       ]
+      },
+      {
+       "fa": "یه کم. شب‌ها بیشتر.",
+       "tr": "ye kam. schabhā bīschtar.",
+       "de": "Ein bisschen. Nachts mehr.",
+       "teile": [
+        "یه",
+        "کم",
+        "شب‌ها",
+        "بیشتر"
+       ],
+       "extra": [
+        "روزی"
+       ]
+      },
+      {
+       "fa": "اجازه بدید معاینه‌تون کنم … گلوتون عفونت کرده.",
+       "tr": "edschāze bedīd moʿāyenatūn konam … galūtūn ʿofūnat karde.",
+       "de": "Lassen Sie mich Sie untersuchen … Ihr Hals ist entzündet.",
+       "teile": [
+        "اجازه",
+        "بدید",
+        "معاینه‌تون",
+        "کنم",
+        "…",
+        "گلوتون",
+        "عفونت",
+        "کرده"
+       ],
+       "extra": [
+        "دیروز"
+       ]
+      }
+     ]
     }
    ]
   },
   {
-   "id": "s4",
+   "id": "t",
    "titel": "Lesen",
    "vorschau": "Hausmittel aus Omas Küche",
    "karten": [
@@ -1032,11 +2882,43 @@
        "richtig": 0
       }
      ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "در ایران برای سرماخوردگی، قبل از دارو، اول سراغ داروهای خانگی می‌روند.",
+       "tr": "dar īrān barā-ye sarmāchordegī, ghabl az dārū, awwal sorāgh-e dārūhā-ye chānegī mīravand.",
+       "de": "In Iran greift man bei Erkältung vor Medikamenten zuerst zu Hausmitteln."
+      },
+      {
+       "fa": "معروف‌ترین آنها سوپ جو و آش رشته است.",
+       "tr": "maʿrūftarīn-e ānhā sūp-e dschou o āsch-e reschte ast.",
+       "de": "Am bekanntesten sind Gerstensuppe und Ash-e Reschteh."
+      },
+      {
+       "fa": "مادربزرگ‌ها می‌گویند: «شلغم بخور، سرما از تنت بیرون می‌رود!»",
+       "tr": "mādarbozorghā mīgūyand: «schalgham bochor, sarmā az tanat bīrūn mīrawad!»",
+       "de": "Großmütter sagen: „Iss Rüben, dann geht die Kälte aus deinem Körper!“"
+      },
+      {
+       "fa": "دمنوش‌هایی مثل گل گاوزبان، آویشن و زنجبیل هم خیلی محبوب‌اند.",
+       "tr": "damnūschhāyī mesl-e gol-e gāwzabān, āwīschan o zandschabīl ham cheylī mahbūband.",
+       "de": "Kräutertees wie Borretsch, Thymian und Ingwer sind auch sehr beliebt."
+      },
+      {
+       "fa": "در طب سنتی، غذاها «گرم» یا «سرد» هستند.",
+       "tr": "dar tebb-e sonnatī, ghazāhā «garm» yā «sard» hastand.",
+       "de": "In der traditionellen Medizin gelten Speisen als „warm“ oder „kalt“."
+      }
+     ]
     }
    ]
   },
   {
-   "id": "s5",
+   "id": "k",
    "titel": "Gut zu wissen",
    "vorschau": "Gute Besserung auf Persisch",
    "karten": [
@@ -1084,7 +2966,7 @@
    ]
   },
   {
-   "id": "s6",
+   "id": "p",
    "titel": "Vorbereitung für die Sitzung",
    "vorschau": "آماده‌ای؟",
    "karten": [
@@ -1130,14 +3012,19 @@
      "links": "de",
      "paare": [
       {
+       "fa": "برای سالم موندن چی کار می‌کنی؟",
+       "tr": "barā-ye sālem mūndan tschī kār mīkonī?",
+       "de": "Was tust du, um gesund zu bleiben?"
+      },
+      {
        "fa": "تا حالا تو خارج مریض شدی؟ چی شد؟",
        "tr": "tā hālā tū chāredsch marīz schodī? tschī schod?",
        "de": "Warst du mal im Ausland krank? Was ist passiert?"
       },
       {
-       "fa": "به طب سنتی اعتقاد داری؟",
-       "tr": "be tebb-e sonnatī eʿteghād dārī?",
-       "de": "Hältst du etwas von traditioneller Medizin?"
+       "fa": "وقتی سرما می‌خوری چی کار می‌کنی؟ دوای خونگی هم داری؟",
+       "tr": "waghtī sarmā mīchorī tschī kār mīkonī? dawā-ye chūnegī ham dārī?",
+       "de": "Was machst du bei einer Erkältung? Hast du ein Hausmittel?"
       },
       {
        "fa": "سیستم پزشکی تو آلمان رو چطور می‌بینی؟",
@@ -1150,14 +3037,9 @@
        "de": "Gehst du schnell zum Arzt oder wartest du bis zum letzten Moment?"
       },
       {
-       "fa": "برای سالم موندن چی کار می‌کنی؟",
-       "tr": "barā-ye sālem mūndan tschī kār mīkonī?",
-       "de": "Was tust du, um gesund zu bleiben?"
-      },
-      {
-       "fa": "وقتی سرما می‌خوری چی کار می‌کنی؟ دوای خونگی هم داری؟",
-       "tr": "waghtī sarmā mīchorī tschī kār mīkonī? dawā-ye chūnegī ham dārī?",
-       "de": "Was machst du bei einer Erkältung? Hast du ein Hausmittel?"
+       "fa": "به طب سنتی اعتقاد داری؟",
+       "tr": "be tebb-e sonnatī eʿteghād dārī?",
+       "de": "Hältst du etwas von traditioneller Medizin?"
       }
      ],
      "titel": "Welche Frage ist das?"
