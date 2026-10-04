@@ -2965,6 +2965,178 @@
    ]
   },
   {
+   "id": "x",
+   "titel": "Kreativ: Wer passt zu wem?",
+   "vorschau": "🧩",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Situationen lösen",
+     "text": "<p>Jetzt wird es praktisch: Lies die Profile und Angebote genau – oft entscheidet ein Detail (Budget, Zeit, Vorlieben). Tippe auf „Übersetzung zeigen“, wenn du Hilfe brauchst. Im Unterricht diskutieren wir eure Lösungen!</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "zuordnen",
+     "titel": "Kummerkasten: Welcher Rat passt?",
+     "text": "Fünf Leserinnen und Leser schreiben an die Zeitschrift. Acht Ratschläge sind vorbereitet.",
+     "frage": "Welches Angebot passt am besten? Tippe es an.",
+     "angebote": [
+      {
+       "titel": "Ich-Botschaft",
+       "emoji": "💬",
+       "fa": "به جای «تو همیشه…» بگو «من ناراحت می‌شوم وقتی…».",
+       "de": "Sag statt „Du immer …“ lieber „Ich bin traurig, wenn …“."
+      },
+      {
+       "titel": "Pause",
+       "emoji": "⏸️",
+       "fa": "وقتی خیلی عصبانی هستی، اول ده دقیقه قدم بزن، بعد حرف بزن.",
+       "de": "Wenn du sehr wütend bist, geh zuerst zehn Minuten spazieren, dann rede."
+      },
+      {
+       "titel": "Kompromiss",
+       "emoji": "🤝",
+       "fa": "یک راه وسط پیدا کنید: هر کدام نیمی از خواسته‌اش را بگیرد.",
+       "de": "Findet einen Mittelweg: Jede/r bekommt die Hälfte."
+      },
+      {
+       "titel": "Vermittler",
+       "emoji": "🧑‍⚖️",
+       "fa": "از یک دوست بی‌طرف بخواهید که میانجی شود.",
+       "de": "Bittet eine neutrale Freundin, zu vermitteln."
+      },
+      {
+       "titel": "Schriftlich",
+       "emoji": "✉️",
+       "fa": "اگر حرف زدن سخت است، یک نامه‌ی صادقانه بنویس.",
+       "de": "Wenn Reden schwerfällt, schreib einen ehrlichen Brief."
+      },
+      {
+       "titel": "Entschuldigung",
+       "emoji": "🙇",
+       "fa": "اشتباهت را قبول کن و بدون «اما» عذرخواهی کن.",
+       "de": "Gib deinen Fehler zu und entschuldige dich ohne „aber“."
+      },
+      {
+       "titel": "Regeln",
+       "emoji": "📋",
+       "fa": "با هم قانون‌های روشن بنویسید و روی یخچال بزنید.",
+       "de": "Schreibt zusammen klare Regeln auf und hängt sie an den Kühlschrank."
+      },
+      {
+       "titel": "Abstand",
+       "emoji": "🚪",
+       "fa": "گاهی بهتر است مدتی از هم فاصله بگیرید.",
+       "de": "Manchmal ist es besser, eine Zeit lang Abstand zu nehmen."
+      }
+     ],
+     "personen": [
+      {
+       "name": "Arsalan",
+       "emoji": "😡",
+       "fa": "ارسلان در بحث خیلی زود عصبانی می‌شود و حرف‌هایی می‌زند که بعد پشیمان می‌شود.",
+       "de": "Arsalan wird in Diskussionen schnell wütend und sagt Dinge, die er später bereut.",
+       "richtig": 1
+      },
+      {
+       "name": "WG Kiel",
+       "emoji": "🧹",
+       "fa": "چهار هم‌خانه هر هفته سر تمیز کردن آشپزخانه دعوا می‌کنند.",
+       "de": "Vier Mitbewohner streiten jede Woche ums Küchenputzen.",
+       "richtig": 6
+      },
+      {
+       "name": "Parisa",
+       "emoji": "🏖️",
+       "fa": "پریسا و همسرش برای تعطیلات توافق ندارند: یکی دریا می‌خواهد، دیگری کوه.",
+       "de": "Parisa und ihr Mann sind sich beim Urlaub uneinig: einer will ans Meer, die andere in die Berge.",
+       "richtig": 2
+      },
+      {
+       "name": "Kian",
+       "emoji": "😔",
+       "fa": "کیان به دوستش دروغ گفته و حالا می‌داند که اشتباه کرده است.",
+       "de": "Kian hat seinen Freund angelogen und weiß jetzt, dass er einen Fehler gemacht hat.",
+       "richtig": 5
+      },
+      {
+       "name": "Sara",
+       "emoji": "🤐",
+       "fa": "سارا خیلی خجالتی است و نمی‌تواند رودررو به خواهرش بگوید چه چیزی ناراحتش کرده.",
+       "de": "Sara ist sehr schüchtern und kann ihrer Schwester nicht ins Gesicht sagen, was sie verletzt hat.",
+       "richtig": 4
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Was ist die beste Lösung?",
+     "fragen": [
+      {
+       "frage": "<span class='klein muted'>In der Diskussion unterbricht dich jemand ständig.</span>",
+       "optionen": [
+        "آرام می‌گویم «لطفاً بذار حرفم تموم بشه، بعد تو بگو.»",
+        "من هم حرفش را قطع می‌کنم.",
+        "از بحث بیرون می‌روم."
+       ],
+       "richtig": 0,
+       "fa": "در بحث، کسی مدام حرف شما را قطع می‌کند.",
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='klein muted'>Du merkst, dass du in der Diskussion falsch lagst.</span>",
+       "optionen": [
+        "می‌گویم «حق با توئه، من اشتباه کردم.»",
+        "موضوع را عوض می‌کنم.",
+        "باز هم اصرار می‌کنم."
+       ],
+       "richtig": 0,
+       "fa": "می‌فهمید که در بحث اشتباه کرده‌اید.",
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='klein muted'>Zwei Leute im Kurs diskutieren sehr laut.</span>",
+       "optionen": [
+        "پیشنهاد می‌کنم هر کس دو دقیقه نظرش را بگوید و بقیه گوش کنند.",
+        "بلندتر از آنها داد می‌زنم.",
+        "از کلاس بیرون می‌روم."
+       ],
+       "richtig": 0,
+       "fa": "دو نفر در کلاس با صدای بلند بحث می‌کنند.",
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='klein muted'>Jemand vertritt eine Meinung, die du gar nicht teilst – es ist deine Professorin.</span>",
+       "optionen": [
+        "مؤدبانه می‌گویم «با اجازه‌تون، من نظر دیگه‌ای دارم…»",
+        "می‌گویم «اشتباه می‌کنید!»",
+        "هیچ‌وقت نظرم را نمی‌گویم."
+       ],
+       "richtig": 0,
+       "fa": "کسی نظری دارد که شما اصلاً قبول ندارید، اما او استاد شماست.",
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='klein muted'>Nach einem Streit spricht deine Freundin immer noch nicht mit dir.</span>",
+       "optionen": [
+        "با یک شاخه گل یا دعوت به چای پیش‌قدم می‌شوم.",
+        "صبر می‌کنم تا او اول بیاید، حتی اگر یک سال طول بکشد.",
+        "به همه می‌گویم که او مقصر است."
+       ],
+       "richtig": 0,
+       "fa": "بعد از یک دعوا، دوستتان هنوز با شما قهر است.",
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    }
+   ]
+  },
+  {
    "id": "p",
    "titel": "Vorbereitung für die Sitzung",
    "vorschau": "آماده‌ای؟",

@@ -2961,6 +2961,178 @@
    ]
   },
   {
+   "id": "x",
+   "titel": "Kreativ: Wer passt zu wem?",
+   "vorschau": "🧩",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Situationen lösen",
+     "text": "<p>Jetzt wird es praktisch: Lies die Profile und Angebote genau – oft entscheidet ein Detail (Budget, Zeit, Vorlieben). Tippe auf „Übersetzung zeigen“, wenn du Hilfe brauchst. Im Unterricht diskutieren wir eure Lösungen!</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "zuordnen",
+     "titel": "Welches Sprichwort passt?",
+     "text": "Fünf Situationen – acht Sprichwörter. Welches passt am besten?",
+     "frage": "Welches Angebot passt am besten? Tippe es an.",
+     "angebote": [
+      {
+       "titel": "Tropfen",
+       "emoji": "💧",
+       "fa": "قطره قطره جمع گردد، وانگهی دریا شود.",
+       "de": "Tropfen für Tropfen wird ein Meer. (Kleinvieh macht auch Mist.)"
+      },
+      {
+       "titel": "Fisch",
+       "emoji": "🐟",
+       "fa": "ماهی را هر وقت از آب بگیری تازه است.",
+       "de": "Es ist nie zu spät."
+      },
+      {
+       "titel": "Küken",
+       "emoji": "🐥",
+       "fa": "جوجه را آخر پاییز می‌شمارند.",
+       "de": "Man soll den Tag nicht vor dem Abend loben."
+      },
+      {
+       "titel": "Kamel",
+       "emoji": "🐪",
+       "fa": "شتر دیدی، ندیدی.",
+       "de": "Du hast nichts gesehen!"
+      },
+      {
+       "titel": "Eine Hand",
+       "emoji": "👏",
+       "fa": "یک دست صدا ندارد.",
+       "de": "Gemeinsam geht es besser."
+      },
+      {
+       "titel": "Wer sucht",
+       "emoji": "🔍",
+       "fa": "جوینده یابنده است.",
+       "de": "Wer sucht, der findet."
+      },
+      {
+       "titel": "Geduld",
+       "emoji": "⏳",
+       "fa": "صبر تلخ است، ولیکن بر شیرین دارد.",
+       "de": "Geduld ist bitter, aber ihre Frucht ist süß."
+      },
+      {
+       "titel": "Dach",
+       "emoji": "🏠",
+       "fa": "هر که بامش بیش، برفش بیشتر.",
+       "de": "Wer mehr hat, hat mehr Sorgen."
+      }
+     ],
+     "personen": [
+      {
+       "name": "Oma Zahra",
+       "emoji": "👵",
+       "fa": "مادربزرگ زهرا ۷۰ سال دارد و تازه شروع به یاد گرفتن پیانو کرده است.",
+       "de": "Oma Zahra ist 70 und hat gerade angefangen, Klavier zu lernen.",
+       "richtig": 1
+      },
+      {
+       "name": "Ali",
+       "emoji": "🧾",
+       "fa": "علی هر روز فقط یک یورو پس‌انداز می‌کند. بعد از سه سال، یک دوچرخه خرید!",
+       "de": "Ali spart jeden Tag nur einen Euro. Nach drei Jahren hat er sich ein Fahrrad gekauft!",
+       "richtig": 0
+      },
+      {
+       "name": "Team",
+       "emoji": "🧑‍🤝‍🧑",
+       "fa": "هیچ‌کدام از دانشجوها تنهایی نتوانست پروژه را تمام کند، اما با هم موفق شدند.",
+       "de": "Keiner der Studierenden schaffte das Projekt allein, aber zusammen gelang es.",
+       "richtig": 4
+      },
+      {
+       "name": "Reza",
+       "emoji": "🎉",
+       "fa": "رضا هنوز نتیجه‌ی امتحان را نگرفته، اما همه را به جشن قبولی دعوت کرده است!",
+       "de": "Reza hat das Prüfungsergebnis noch nicht, hat aber schon alle zur Bestehensfeier eingeladen!",
+       "richtig": 2
+      },
+      {
+       "name": "Herr Millionär",
+       "emoji": "💰",
+       "fa": "آقای ثروتمند سه خانه و پنج ماشین دارد و همیشه نگران است.",
+       "de": "Der reiche Herr hat drei Häuser und fünf Autos und ist immer besorgt.",
+       "richtig": 7
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Was ist die beste Lösung?",
+     "fragen": [
+      {
+       "frage": "<span class='klein muted'>Jemand erzählt einen Witz und du verstehst ihn nicht.</span>",
+       "optionen": [
+        "می‌خندم و بعد می‌پرسم «نگرفتم، می‌شه توضیح بدی؟»",
+        "وانمود می‌کنم فهمیدم و هیچ‌وقت نمی‌پرسم.",
+        "می‌گویم جوکش بی‌مزه بود."
+       ],
+       "richtig": 0,
+       "fa": "کسی یک جوک تعریف می‌کند و شما آن را نمی‌فهمید.",
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='klein muted'>Dein Scherz hat deinen Freund gekränkt.</span>",
+       "optionen": [
+        "می‌گویم «ببخشید، قصد بدی نداشتم، فقط شوخی کردم.»",
+        "می‌گویم «جنبه نداری!»",
+        "دوباره همان شوخی را می‌کنم."
+       ],
+       "richtig": 0,
+       "fa": "شوخی شما باعث شده دوستتان ناراحت شود.",
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='klein muted'>Du willst ein deutsches Sprichwort auf Persisch erklären.</span>",
+       "optionen": [
+        "اول معنی‌اش را ساده می‌گویم و بعد یک مثال می‌زنم.",
+        "آن را کلمه به کلمه ترجمه می‌کنم.",
+        "به آلمانی تکرارش می‌کنم."
+       ],
+       "richtig": 0,
+       "fa": "می‌خواهید یک ضرب‌المثل آلمانی را به فارسی توضیح بدهید.",
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='klein muted'>Jemand nimmt dich auf den Arm.</span>",
+       "optionen": [
+        "با خنده می‌گویم «داری سر به سرم می‌ذاری؟»",
+        "خیلی عصبانی می‌شوم.",
+        "گریه می‌کنم."
+       ],
+       "richtig": 0,
+       "fa": "کسی شما را دست انداخته است.",
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='klein muted'>In einer iranischen Runde verwendest du ein Sprichwort richtig.</span>",
+       "optionen": [
+        "همه می‌خندند و می‌گویند «آفرین! فارسیت عالیه!»",
+        "همه ناراحت می‌شوند.",
+        "هیچ‌کس متوجه نمی‌شود."
+       ],
+       "richtig": 0,
+       "fa": "در جمع ایرانی‌ها یک ضرب‌المثل را درست به کار می‌برید.",
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    }
+   ]
+  },
+  {
    "id": "p",
    "titel": "Vorbereitung für die Sitzung",
    "vorschau": "آماده‌ای؟",

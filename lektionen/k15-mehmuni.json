@@ -2954,6 +2954,178 @@
    ]
   },
   {
+   "id": "x",
+   "titel": "Kreativ: Wer passt zu wem?",
+   "vorschau": "🧩",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Situationen lösen",
+     "text": "<p>Jetzt wird es praktisch: Lies die Profile und Angebote genau – oft entscheidet ein Detail (Budget, Zeit, Vorlieben). Tippe auf „Übersetzung zeigen“, wenn du Hilfe brauchst. Im Unterricht diskutieren wir eure Lösungen!</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "zuordnen",
+     "titel": "Wer übernimmt was?",
+     "text": "Für die Abschluss-Mehmūnī gibt es acht Aufgaben. Fünf Kursteilnehmende sagen, was sie können und wollen. Wer bekommt welche Aufgabe?",
+     "frage": "Welches Angebot passt am besten? Tippe es an.",
+     "angebote": [
+      {
+       "titel": "Tahdig",
+       "emoji": "🍚",
+       "fa": "درست کردن ته‌دیگ و پلو برای بیست نفر.",
+       "de": "Tahdig und Reis für zwanzig Personen kochen."
+      },
+      {
+       "titel": "Musik & DJ",
+       "emoji": "🎧",
+       "fa": "آماده کردن فهرست آهنگ‌های ایرانی و آلمانی و آوردن بلندگو.",
+       "de": "Eine Playlist mit persischen und deutschen Liedern machen und Lautsprecher mitbringen."
+      },
+      {
+       "titel": "Dekoration",
+       "emoji": "🎀",
+       "fa": "تزئین سالن با بادکنک، گل و نوشته‌های فارسی.",
+       "de": "Den Raum mit Ballons, Blumen und persischen Schriftzügen dekorieren."
+      },
+      {
+       "titel": "Einkauf",
+       "emoji": "🛒",
+       "fa": "خرید نوشیدنی، میوه و ظرف یک‌بار مصرف با ماشین.",
+       "de": "Getränke, Obst und Einweggeschirr mit dem Auto einkaufen."
+      },
+      {
+       "titel": "Quiz",
+       "emoji": "❓",
+       "fa": "نوشتن یک مسابقه‌ی سرگرم‌کننده درباره‌ی ایران و کلاس.",
+       "de": "Ein lustiges Quiz über Iran und den Kurs schreiben."
+      },
+      {
+       "titel": "Abwasch",
+       "emoji": "🧽",
+       "fa": "شستن ظرف‌ها و تمیز کردن سالن بعد از مهمانی.",
+       "de": "Nach der Party abwaschen und den Raum aufräumen."
+      },
+      {
+       "titel": "Fotos",
+       "emoji": "📸",
+       "fa": "عکاسی در مهمانی و ساختن یک آلبوم یادگاری.",
+       "de": "Auf der Party fotografieren und ein Erinnerungsalbum machen."
+      },
+      {
+       "titel": "Einladungen",
+       "emoji": "💌",
+       "fa": "نوشتن دعوت‌نامه‌ی فارسی و فرستادن برای همه.",
+       "de": "Persische Einladungen schreiben und an alle schicken."
+      }
+     ],
+     "personen": [
+      {
+       "name": "Tobias",
+       "emoji": "👨‍🍳",
+       "fa": "توبیاس در یوتیوب ته‌دیگ یاد گرفته و دوست دارد آشپزی کند.",
+       "de": "Tobias hat Tahdig auf YouTube gelernt und kocht gern.",
+       "richtig": 0
+      },
+      {
+       "name": "Max",
+       "emoji": "🚗",
+       "fa": "ماکس ماشین دارد، ولی آشپزی بلد نیست و صدایش هم خوب نیست!",
+       "de": "Max hat ein Auto, kann aber nicht kochen und singen auch nicht!",
+       "richtig": 3
+      },
+      {
+       "name": "Sophie",
+       "emoji": "🎶",
+       "fa": "سوفی همه‌ی آهنگ‌های جدید ایرانی را می‌شناسد و یک بلندگوی بزرگ دارد.",
+       "de": "Sophie kennt alle neuen iranischen Lieder und hat einen großen Lautsprecher.",
+       "richtig": 1
+      },
+      {
+       "name": "Lena",
+       "emoji": "✍️",
+       "fa": "لنا خط فارسی خیلی قشنگی دارد و دوست دارد بنویسد، اما شب مهمانی دیر می‌رسد.",
+       "de": "Lena hat eine schöne persische Handschrift und schreibt gern, kommt aber am Partyabend spät.",
+       "richtig": 7
+      },
+      {
+       "name": "Jonas",
+       "emoji": "🧠",
+       "fa": "یوناس عاشق سؤال طرح کردن است و همه چیز را درباره‌ی ایران می‌داند.",
+       "de": "Jonas liebt es, Fragen zu stellen, und weiß alles über Iran.",
+       "richtig": 4
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Was ist die beste Lösung?",
+     "fragen": [
+      {
+       "frage": "<span class='klein muted'>Die Gäste kommen, aber das Tahdig ist angebrannt!</span>",
+       "optionen": [
+        "با خنده می‌گویم «ته‌دیگ سوخته هم طرفدار داره!» و پلو را سرو می‌کنم.",
+        "مهمانی را لغو می‌کنم.",
+        "به همه می‌گویم توبیاس مقصر است."
+       ],
+       "richtig": 0,
+       "fa": "مهمان‌ها دارند می‌رسند، اما ته‌دیگ سوخته است!",
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='klein muted'>Ein Gast will um neun gehen. Du bist Gastgeberin.</span>",
+       "optionen": [
+        "می‌گویم «کجا؟ حالا زوده!» و اگر واقعاً باید برود، تا دم در بدرقه‌اش می‌کنم.",
+        "در را قفل می‌کنم.",
+        "می‌گویم «باشه، برو» و برنمی‌گردم."
+       ],
+       "richtig": 0,
+       "fa": "یک مهمان می‌خواهد ساعت نُه برود. شما میزبان هستید.",
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='klein muted'>Die Party ist vorbei und die Gastgeberin ist müde.</span>",
+       "optionen": [
+        "می‌پرسم «کمک لازم نداری؟» و در شستن ظرف‌ها کمک می‌کنم.",
+        "سریع می‌روم.",
+        "می‌گویم «خسته نباشی» و یک کیک دیگر می‌خورم."
+       ],
+       "richtig": 0,
+       "fa": "مهمانی تمام شده و میزبان خسته است.",
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='klein muted'>Jemand sitzt auf der Party allein.</span>",
+       "optionen": [
+        "پیشش می‌روم، به او چای تعارف می‌کنم و سر صحبت را باز می‌کنم.",
+        "او را نادیده می‌گیرم.",
+        "به بقیه می‌گویم که او خجالتی است."
+       ],
+       "richtig": 0,
+       "fa": "یک نفر در مهمانی تنها نشسته است.",
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='klein muted'>Am Tag nach der Party – was machst du?</span>",
+       "optionen": [
+        "به میزبان پیام می‌دهم: «خیلی خوش گذشت، دستت درد نکنه!»",
+        "هیچ کاری نمی‌کنم.",
+        "از غذا انتقاد می‌کنم."
+       ],
+       "richtig": 0,
+       "fa": "فردای مهمانی چه کار می‌کنید؟",
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    }
+   ]
+  },
+  {
    "id": "p",
    "titel": "Vorbereitung für die Sitzung",
    "vorschau": "آماده‌ای؟",

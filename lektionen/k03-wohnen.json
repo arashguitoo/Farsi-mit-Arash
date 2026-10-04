@@ -2937,6 +2937,183 @@
    ]
   },
   {
+   "id": "x",
+   "titel": "Kreativ: Wer passt zu wem?",
+   "vorschau": "🧩",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Situationen lösen",
+     "text": "<p>Jetzt wird es praktisch: Lies die Profile und Angebote genau – oft entscheidet ein Detail (Budget, Zeit, Vorlieben). Tippe auf „Übersetzung zeigen“, wenn du Hilfe brauchst. Im Unterricht diskutieren wir eure Lösungen!</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "zuordnen",
+     "titel": "Wohnungsbörse: Wer zieht wo ein?",
+     "text": "Fünf Personen suchen eine Wohnung oder ein Zimmer. Acht Anzeigen sind online.",
+     "frage": "Welches Angebot passt am besten? Tippe es an.",
+     "angebote": [
+      {
+       "titel": "Studio Altstadt",
+       "emoji": "🏙️",
+       "fa": "آپارتمان یک‌خوابه‌ی کوچک در مرکز شهر، طبقه‌ی پنجم بدون آسانسور. ۷۵۰ یورو.",
+       "de": "Kleine Einzimmerwohnung im Zentrum, 5. Stock ohne Aufzug. 750 €."
+      },
+      {
+       "titel": "WG am Hafen",
+       "emoji": "⚓",
+       "fa": "اتاق در خانه‌ی مشترک دانشجویی، چهار نفر، نزدیک دانشگاه. ۳۸۰ یورو.",
+       "de": "Zimmer in Studenten-WG, vier Personen, nahe der Uni. 380 €."
+      },
+      {
+       "titel": "Haus mit Garten",
+       "emoji": "🏡",
+       "fa": "خانه‌ی سه‌خوابه با باغ در حومه‌ی شهر. حیوان خانگی مجاز. ۱۶۰۰ یورو.",
+       "de": "Haus mit drei Schlafzimmern und Garten am Stadtrand. Haustiere erlaubt. 1600 €."
+      },
+      {
+       "titel": "Erdgeschoss",
+       "emoji": "♿",
+       "fa": "آپارتمان دوخوابه در طبقه‌ی همکف، بدون پله، نزدیک بیمارستان و ایستگاه اتوبوس.",
+       "de": "Zweizimmerwohnung im Erdgeschoss, ohne Stufen, nahe Krankenhaus und Bushaltestelle."
+      },
+      {
+       "titel": "Ruhige WG",
+       "emoji": "📚",
+       "fa": "اتاق در خانه‌ی مشترک آرام با دو دانشجوی دکترا. مهمانی ممنوع!",
+       "de": "Zimmer in ruhiger WG mit zwei Doktorandinnen. Keine Partys!"
+      },
+      {
+       "titel": "Party-WG",
+       "emoji": "🎉",
+       "fa": "اتاق در خانه‌ی مشترک شلوغ و شاد، هر هفته مهمانی داریم!",
+       "de": "Zimmer in lebhafter, fröhlicher WG – jede Woche Party!"
+      },
+      {
+       "titel": "Möbliert kurz",
+       "emoji": "🧳",
+       "fa": "اتاق مبله برای سه تا شش ماه، از اول ماه. همه چیز آماده است.",
+       "de": "Möbliertes Zimmer für drei bis sechs Monate, ab Monatsanfang. Alles fertig eingerichtet."
+      },
+      {
+       "titel": "Penthouse",
+       "emoji": "🌇",
+       "fa": "پنت‌هاوس لوکس با تراس و منظره‌ی دریا. ۲۵۰۰ یورو.",
+       "de": "Luxus-Penthouse mit Terrasse und Meerblick. 2500 €."
+      }
+     ],
+     "personen": [
+      {
+       "name": "Familie Ahmadi",
+       "emoji": "🐕",
+       "fa": "خانواده‌ی احمدی دو بچه و یک سگ بزرگ دارند و دنبال جای بیشتری هستند.",
+       "de": "Familie Ahmadi hat zwei Kinder und einen großen Hund und sucht mehr Platz.",
+       "richtig": 2,
+       "e": "Haus mit Garten, Haustiere erlaubt."
+      },
+      {
+       "name": "Lukas",
+       "emoji": "🎓",
+       "fa": "لوکاس دانشجوی ترم اول است، پول زیادی ندارد و می‌خواهد آدم‌های جدید ببیند.",
+       "de": "Lukas ist Erstsemester, hat wenig Geld und möchte neue Leute kennenlernen.",
+       "richtig": 1,
+       "e": "Günstige Studenten-WG nahe der Uni."
+      },
+      {
+       "name": "Frau Schmidt",
+       "emoji": "👵",
+       "fa": "خانم اشمیت ۷۸ ساله است و پاهایش درد می‌کند. هفته‌ای دو بار دکتر می‌رود.",
+       "de": "Frau Schmidt ist 78 und hat Probleme mit den Beinen. Sie geht zweimal pro Woche zum Arzt.",
+       "richtig": 3,
+       "e": "Erdgeschoss ohne Stufen, nahe Krankenhaus."
+      },
+      {
+       "name": "Nima",
+       "emoji": "🔬",
+       "fa": "نیما برای پایان‌نامه‌اش به سکوت نیاز دارد و از شلوغی خوشش نمی‌آید.",
+       "de": "Nima braucht für seine Abschlussarbeit Ruhe und mag keinen Trubel.",
+       "richtig": 4,
+       "e": "Ruhige WG, keine Partys."
+      },
+      {
+       "name": "Elena",
+       "emoji": "✈️",
+       "fa": "النا برای یک کارآموزی چهار ماهه به کیل می‌آید و هیچ وسیله‌ای ندارد.",
+       "de": "Elena kommt für ein viermonatiges Praktikum nach Kiel und hat keine Möbel.",
+       "richtig": 6,
+       "e": "Möbliert, drei bis sechs Monate."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Was ist die beste Lösung?",
+     "fragen": [
+      {
+       "frage": "<span class='klein muted'>Der Nachbar oben schaltet jede Nacht um zwei die Waschmaschine an.</span>",
+       "optionen": [
+        "یک یادداشت مؤدبانه می‌نویسم یا در می‌زنم و با او صحبت می‌کنم.",
+        "من هم ساعت سه شب موسیقی بلند می‌گذارم.",
+        "به پلیس زنگ می‌زنم."
+       ],
+       "richtig": 0,
+       "fa": "همسایه‌ی بالایی هر شب ساعت دو ماشین لباسشویی را روشن می‌کند.",
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='klein muted'>Deine Mitbewohnerin isst dein Essen aus dem Kühlschrank.</span>",
+       "optionen": [
+        "با او صحبت می‌کنم و پیشنهاد می‌دهم هر کس یک قفسه‌ی جدا داشته باشد.",
+        "غذایش را می‌اندازم دور.",
+        "چیزی نمی‌گویم و ناراحت می‌مانم."
+       ],
+       "richtig": 0,
+       "fa": "هم‌خانه‌ی شما غذاهای شما را از یخچال می‌خورد.",
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='klein muted'>Der Vermieter will ohne Ankündigung in die Wohnung.</span>",
+       "optionen": [
+        "مؤدبانه می‌گویم که لطفاً قبلاً خبر بدهد.",
+        "در را باز نمی‌کنم و فرار می‌کنم.",
+        "کلید را عوض می‌کنم و چیزی نمی‌گویم."
+       ],
+       "richtig": 0,
+       "fa": "صاحبخانه می‌خواهد بدون خبر وارد آپارتمان شود.",
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='klein muted'>Die Heizung ist im Winter kaputt und der Vermieter antwortet nicht.</span>",
+       "optionen": [
+        "یک ایمیل رسمی می‌نویسم و یک مهلت مشخص می‌گذارم.",
+        "از خانه بیرون می‌روم و اجاره نمی‌دهم.",
+        "خودم شوفاژ را باز می‌کنم."
+       ],
+       "richtig": 0,
+       "fa": "شوفاژ در زمستان خراب شده و صاحبخانه جواب نمی‌دهد.",
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='klein muted'>In der WG bringt niemand den Müll raus.</span>",
+       "optionen": [
+        "پیشنهاد می‌کنم یک برنامه‌ی نوبتی روی یخچال بگذاریم.",
+        "آشغال‌ها را جلوی در اتاقشان می‌گذارم.",
+        "خودم همیشه می‌برم و غر می‌زنم."
+       ],
+       "richtig": 0,
+       "fa": "در خانه‌ی مشترک هیچ‌کس آشغال‌ها را بیرون نمی‌برد.",
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    }
+   ]
+  },
+  {
    "id": "p",
    "titel": "Vorbereitung für die Sitzung",
    "vorschau": "آماده‌ای؟",

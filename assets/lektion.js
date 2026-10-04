@@ -246,6 +246,47 @@
     zeige();
   };
 
+  /* Zuordnen: Personen-Profile ↔ Angebote (Anzeigen, Kataloge …) – eine Person nach der anderen */
+  R.zuordnen = (k, el, fertig) => {
+    const ang = k.angebote, pers = k.personen, BU = "ABCDEFGHIJKL";
+    let i = 0, p = 0; const vergeben = new Set();
+    function zeige() {
+      const pe = pers[i];
+      el.innerHTML = `<div class="karte">
+        <h2 style="margin-top:0">${k.titel || "Wer passt zu wem?"}</h2>
+        ${k.text ? `<p class="muted" style="margin-top:0">${k.text}</p>` : ""}
+        <div class="zaehler">Person ${i + 1} von ${pers.length}</div>
+        <div class="zu-person"><div class="zu-name">${pe.emoji || "🧑"} ${esc(pe.name || "")}</div>
+          <div class="fa zu-fa">${esc(pe.fa)}</div>
+          ${pe.de ? `<button class="zu-hilfe-btn klein" type="button">Übersetzung zeigen</button><div class="zu-de versteckt klein muted">${esc(pe.de)}</div>` : ""}</div>
+        <p class="klein muted" style="margin:12px 0 6px">${k.frage || "Welches Angebot passt? Tippe auf A, B, C …"}</p>
+        <div class="zu-liste">${ang.map((a, j) => `<div class="zu-ang ${vergeben.has(j) ? "vergeben" : ""}" data-j="${j}">
+            <div class="zu-kopf"><span class="zu-bu">${BU[j]}</span>${a.titel ? `<b>${esc(a.titel)}</b>` : ""}${a.emoji ? ` <span>${a.emoji}</span>` : ""}</div>
+            <div class="fa zu-fa">${esc(a.fa)}</div>
+            ${a.de ? `<div class="zu-de versteckt klein muted">${esc(a.de)}</div>` : ""}
+          </div>`).join("")}</div>
+        <div class="btnreihe" style="justify-content:space-between;margin-top:10px"><button class="btn zwei klein" id="alleDe" type="button">Alle Übersetzungen</button>
+          <button class="btn safran versteckt" id="naechste">Nächste Person →</button></div>
+        <div id="erkl"></div>
+      </div>`;
+      const hb = $(".zu-hilfe-btn", el); if (hb) hb.onclick = () => $(".zu-person .zu-de", el).classList.toggle("versteckt");
+      $("#alleDe", el).onclick = () => $$(".zu-de", el).forEach(d => d.classList.toggle("versteckt"));
+      let fertigHier = false;
+      $$(".zu-ang", el).forEach(b => b.addEventListener("click", () => {
+        if (fertigHier) return; fertigHier = true;
+        const j = +b.dataset.j;
+        if (j === pe.richtig) { b.classList.add("ok"); p++; ton("ok"); }
+        else { b.classList.add("falsch"); $$(".zu-ang", el)[pe.richtig].classList.add("ok"); ton("falsch"); }
+        vergeben.add(pe.richtig);
+        $("#erkl", el).innerHTML = `<div class="erkl">${j === pe.richtig ? "✓ Richtig!" : `Richtig ist <b>${BU[pe.richtig]}</b>.`}${pe.e ? " " + pe.e : ""}</div>`;
+        $$(".zu-ang", el)[pe.richtig].scrollIntoView && $$(".zu-ang", el)[pe.richtig].scrollIntoView({ block: "nearest", behavior: "smooth" });
+        if (i < pers.length - 1) { const n = $("#naechste", el); n.classList.remove("versteckt"); n.onclick = () => { i++; zeige(); window.scrollTo && window.scrollTo(0, 0); }; }
+        else fertig(p, pers.length);
+      }));
+    }
+    zeige();
+  };
+
   R.finden = (k, el, fertig) => {
     const w = mischen(k.woerter);
     el.innerHTML = `<div class="karte">

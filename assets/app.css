@@ -428,3 +428,16 @@ table.ktab th{background:rgba(0,0,0,.04);font-weight:700}
 .bsp-gitter.saetze .bsp .emo{grid-row:span 3;font-size:1.5rem}
 .bsp-gitter.saetze .bsp .fa{font-size:1.35rem;line-height:1.8;text-align:right}
 .bsp-gitter.saetze .bsp .fa,.bsp-gitter.saetze .bsp .tr,.bsp-gitter.saetze .bsp .de{grid-column:2}
+/* Zuordnen (Profile ↔ Angebote) */
+.zu-person{border:2px solid var(--lapis);border-radius:16px;padding:12px 14px;background:var(--lapis-hell)}
+.zu-name{font-weight:800;margin-bottom:4px}
+.zu-fa{font-size:1.2rem;line-height:1.9;text-align:right}
+.zu-hilfe-btn{background:none;border:none;color:var(--lapis);text-decoration:underline;cursor:pointer;padding:0;margin-top:4px}
+.zu-liste{display:grid;gap:8px}
+.zu-ang{border:1px solid var(--linie);border-radius:14px;padding:10px 12px;background:#fff;cursor:pointer;transition:background .15s}
+.zu-ang:hover{background:var(--lapis-hell)}
+.zu-ang.vergeben{opacity:.45}
+.zu-ang.ok{border-color:#2e7d4f;background:#eaf6ee;opacity:1}
+.zu-ang.falsch{border-color:#b3412f;background:#fbecea}
+.zu-kopf{display:flex;gap:8px;align-items:center;margin-bottom:2px}
+.zu-bu{display:inline-grid;place-items:center;width:26px;height:26px;border-radius:50%;background:var(--lapis);color:#fff;font-weight:800;font-size:.85rem;flex:none}

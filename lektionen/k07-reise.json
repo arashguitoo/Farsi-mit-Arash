@@ -2940,6 +2940,269 @@
    ]
   },
   {
+   "id": "x",
+   "titel": "Kreativ: Wer passt zu wem?",
+   "vorschau": "🧩",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Situationen lösen",
+     "text": "<p>Jetzt wird es praktisch: Lies die Profile und Angebote genau – oft entscheidet ein Detail (Budget, Zeit, Vorlieben). Tippe auf „Übersetzung zeigen“, wenn du Hilfe brauchst. Im Unterricht diskutieren wir eure Lösungen!</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "zuordnen",
+     "titel": "Fünf Reisende, zehn Kataloge",
+     "text": "Im Reisebüro „Safar“ liegen zehn Kataloge. Fünf Kundinnen und Kunden suchen die passende Reise. Achte auf Budget, Zeit und Wünsche!",
+     "frage": "Welches Angebot passt am besten? Tippe es an.",
+     "angebote": [
+      {
+       "titel": "Wüsten-Abenteuer",
+       "emoji": "🏜️",
+       "fa": "سه شب در کویر مصر: شتر‌سواری، چادر زیر ستاره‌ها، بدون اینترنت. ۸ میلیون تومان.",
+       "de": "Drei Nächte in der Wüste Mesr: Kamelreiten, Zelt unter Sternen, kein Internet. 8 Mio. Toman."
+      },
+      {
+       "titel": "Kultur-Klassiker",
+       "emoji": "🏛️",
+       "fa": "ده روز: تهران، اصفهان، شیراز، تخت جمشید، با راهنمای آلمانی‌زبان. هتل چهار ستاره. ۸۰ میلیون.",
+       "de": "Zehn Tage Teheran, Isfahan, Schiras, Persepolis, mit deutschsprachiger Reiseleitung. Vier-Sterne-Hotels. 80 Mio."
+      },
+      {
+       "titel": "Insel Kisch",
+       "emoji": "🏝️",
+       "fa": "یک هفته در جزیره‌ی کیش: ساحل، غواصی، مرکز خرید. هتل ساحلی.",
+       "de": "Eine Woche auf der Insel Kisch: Strand, Tauchen, Einkaufszentren. Strandhotel."
+      },
+      {
+       "titel": "Grüner Norden",
+       "emoji": "🌲",
+       "fa": "پنج روز در جنگل‌های گیلان: روستاهای مه‌آلود، برنج‌کاری، غذای محلی. مناسب خانواده.",
+       "de": "Fünf Tage in den Wäldern Gilans: Nebeldörfer, Reisfelder, lokales Essen. Familiengeeignet."
+      },
+      {
+       "titel": "Damavand",
+       "emoji": "🏔️",
+       "fa": "صعود به قله‌ی دماوند (۵۶۱۰ متر)، شش روز، فقط برای کوهنوردان باتجربه.",
+       "de": "Besteigung des Damavand (5610 m), sechs Tage, nur für erfahrene Bergsteiger."
+      },
+      {
+       "titel": "Wochenende Kaschan",
+       "emoji": "🌸",
+       "fa": "دو روز کاشان: خانه‌های تاریخی، باغ فین، گلاب‌گیری. از تهران با اتوبوس. ارزان.",
+       "de": "Zwei Tage Kaschan: historische Häuser, Fin-Garten, Rosenwasser. Ab Teheran mit dem Bus. Günstig."
+      },
+      {
+       "titel": "Kulinarik Täbris",
+       "emoji": "🍲",
+       "fa": "چهار روز تبریز: کلاس آشپزی، بازار بزرگ، شیرینی‌های محلی.",
+       "de": "Vier Tage Täbris: Kochkurs, Großer Basar, lokale Süßigkeiten."
+      },
+      {
+       "titel": "Skireise Dizin",
+       "emoji": "⛷️",
+       "fa": "سه روز اسکی در دیزین، دی تا اسفند، با کلاس اسکی برای مبتدی‌ها.",
+       "de": "Drei Tage Skifahren in Dizin, Januar bis März, mit Skikurs für Anfänger."
+      },
+      {
+       "titel": "Persischer Golf",
+       "emoji": "🚢",
+       "fa": "سفر با قایق به جزیره‌های قشم و هرمز: صخره‌های رنگی، دلفین‌ها.",
+       "de": "Bootstour zu den Inseln Qeschm und Hormus: bunte Felsen, Delfine."
+      },
+      {
+       "titel": "Wellness Sareyn",
+       "emoji": "♨️",
+       "fa": "سه روز آب گرم سرعین: استخر آب معدنی، ماساژ، استراحت.",
+       "de": "Drei Tage Thermalquellen in Sareyn: Mineralbäder, Massage, Erholung."
+      }
+     ],
+     "personen": [
+      {
+       "name": "Familie Neumann",
+       "emoji": "👨‍👩‍👧‍👦",
+       "fa": "خانواده‌ی نویمان با دو بچه‌ی کوچک به طبیعت سبز علاقه دارند و دوست دارند غذای محلی بخورند.",
+       "de": "Familie Neumann mit zwei kleinen Kindern liebt grüne Natur und lokales Essen.",
+       "richtig": 3,
+       "e": "Grüner Norden: familiengeeignet."
+      },
+      {
+       "name": "Herr und Frau Braun",
+       "emoji": "👴👵",
+       "fa": "آقا و خانم براون بازنشسته‌اند، فارسی بلد نیستند و می‌خواهند مهم‌ترین شهرهای تاریخی را راحت ببینند.",
+       "de": "Herr und Frau Braun sind in Rente, sprechen kein Persisch und möchten bequem die wichtigsten historischen Städte sehen.",
+       "richtig": 1,
+       "e": "Kultur-Klassiker mit deutschsprachiger Leitung."
+      },
+      {
+       "name": "Lukas",
+       "emoji": "🧗",
+       "fa": "لوکاس ده سال است در آلپ کوهنوردی می‌کند و دنبال یک چالش بزرگ است.",
+       "de": "Lukas klettert seit zehn Jahren in den Alpen und sucht eine große Herausforderung.",
+       "richtig": 4,
+       "e": "Damavand für erfahrene Bergsteiger."
+      },
+      {
+       "name": "Mina",
+       "emoji": "💸",
+       "fa": "مینا دانشجوست، فقط یک آخر هفته وقت و پول کمی دارد، اما معماری قدیمی را دوست دارد.",
+       "de": "Mina ist Studentin, hat nur ein Wochenende Zeit und wenig Geld, liebt aber alte Architektur.",
+       "richtig": 5,
+       "e": "Wochenende Kaschan: kurz und günstig."
+      },
+      {
+       "name": "Clara",
+       "emoji": "🌌",
+       "fa": "کلارا از شهر و گوشی خسته شده و می‌خواهد چند شب در سکوت ستاره‌ها را ببیند.",
+       "de": "Clara hat genug von Stadt und Handy und möchte ein paar Nächte in Stille die Sterne sehen.",
+       "richtig": 0,
+       "e": "Wüste, Zelt, kein Internet."
+      }
+     ]
+    },
+    {
+     "typ": "zuordnen",
+     "titel": "Welche Unterkunft?",
+     "text": "Vier Reisende suchen in Isfahan eine Unterkunft. Sechs Angebote stehen online.",
+     "frage": "Welches Angebot passt am besten? Tippe es an.",
+     "angebote": [
+      {
+       "titel": "Abbasi-Hotel",
+       "emoji": "🏰",
+       "fa": "هتل عباسی: کاروانسرای تاریخی، پنج ستاره، خیلی گران.",
+       "de": "Abbasi-Hotel: historische Karawanserei, fünf Sterne, sehr teuer."
+      },
+      {
+       "titel": "Hostel",
+       "emoji": "🛏️",
+       "fa": "هاستل جوانان: تخت در اتاق شش‌نفره، آشپزخانه‌ی مشترک، خیلی ارزان.",
+       "de": "Jugendhostel: Bett im Sechserzimmer, Gemeinschaftsküche, sehr günstig."
+      },
+      {
+       "titel": "Bumgardi",
+       "emoji": "🏡",
+       "fa": "بوم‌گردی سنتی: خانه‌ی قدیمی با حیاط و حوض، صبحانه‌ی خانگی.",
+       "de": "Traditionelles Gästehaus: altes Haus mit Hof und Becken, hausgemachtes Frühstück."
+      },
+      {
+       "titel": "Apartment",
+       "emoji": "🏢",
+       "fa": "آپارتمان مبله با دو اتاق خواب و آشپزخانه، برای اقامت طولانی.",
+       "de": "Möblierte Wohnung mit zwei Schlafzimmern und Küche, für längere Aufenthalte."
+      },
+      {
+       "titel": "Business-Hotel",
+       "emoji": "💼",
+       "fa": "هتل تجاری: نزدیک مرکز همایش، اینترنت سریع، اتاق جلسه.",
+       "de": "Businesshotel: nahe Kongresszentrum, schnelles Internet, Konferenzraum."
+      },
+      {
+       "titel": "Camping",
+       "emoji": "⛺",
+       "fa": "کمپ کنار زاینده‌رود: چادر و کیسه‌خواب کرایه‌ای.",
+       "de": "Camping am Zayandeh Rud: Zelt und Schlafsack zu mieten."
+      }
+     ],
+     "personen": [
+      {
+       "name": "Max",
+       "emoji": "🎒",
+       "fa": "ماکس با کوله‌پشتی دور دنیا سفر می‌کند و می‌خواهد آدم‌های جدید ببیند.",
+       "de": "Max reist mit Rucksack um die Welt und will neue Leute treffen.",
+       "richtig": 1
+      },
+      {
+       "name": "Familie Schulz",
+       "emoji": "👪",
+       "fa": "خانواده‌ی شولتس یک ماه در اصفهان می‌مانند و دوست دارند خودشان آشپزی کنند.",
+       "de": "Familie Schulz bleibt einen Monat in Isfahan und möchte selbst kochen.",
+       "richtig": 3
+      },
+      {
+       "name": "Frau Keller",
+       "emoji": "📊",
+       "fa": "خانم کلر برای یک کنفرانس سه روزه می‌آید و باید آنلاین کار کند.",
+       "de": "Frau Keller kommt zu einer dreitägigen Konferenz und muss online arbeiten.",
+       "richtig": 4
+      },
+      {
+       "name": "Anna & Ben",
+       "emoji": "💑",
+       "fa": "آنا و بن ماه عسل هستند و یک خانه‌ی سنتی و دنج می‌خواهند، نه خیلی گران.",
+       "de": "Anna und Ben sind in den Flitterwochen und wollen ein gemütliches traditionelles Haus, nicht zu teuer.",
+       "richtig": 2
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Was ist die beste Lösung?",
+     "fragen": [
+      {
+       "frage": "<span class='klein muted'>Dein Flug wurde gestrichen.</span>",
+       "optionen": [
+        "به باجه‌ی شرکت هواپیمایی می‌روم و درباره‌ی پرواز بعدی و هتل می‌پرسم.",
+        "در فرودگاه می‌خوابم و چیزی نمی‌پرسم.",
+        "داد می‌زنم."
+       ],
+       "richtig": 0,
+       "fa": "پروازتان لغو شده است.",
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='klein muted'>Das Hotelzimmer sieht ganz anders aus als auf der Website.</span>",
+       "optionen": [
+        "در پذیرش مؤدبانه توضیح می‌دهم و یک اتاق دیگر می‌خواهم.",
+        "چیزی نمی‌گویم.",
+        "فوراً به خانه برمی‌گردم."
+       ],
+       "richtig": 0,
+       "fa": "اتاق هتل با عکس سایت اصلاً فرق دارد.",
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='klein muted'>Deine Freundin will Wüste, du Meer.</span>",
+       "optionen": [
+        "پیشنهاد می‌کنم سه روز کویر و سه روز جنوب برویم.",
+        "تنها سفر می‌کنم.",
+        "قهر می‌کنم."
+       ],
+       "richtig": 0,
+       "fa": "دوستتان کویر می‌خواهد، شما دریا.",
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='klein muted'>Du hast deinen Pass im Hotel vergessen und bist am Flughafen.</span>",
+       "optionen": [
+        "فوراً به هتل زنگ می‌زنم و می‌پرسم آیا می‌توانند آن را با تاکسی بفرستند.",
+        "بدون پاسپورت سوار هواپیما می‌شوم.",
+        "سفر را تمام می‌کنم."
+       ],
+       "richtig": 0,
+       "fa": "پاسپورتتان را در هتل جا گذاشته‌اید و در فرودگاه هستید.",
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='klein muted'>Eine iranische Familie lädt dich zum Abendessen ein.</span>",
+       "optionen": [
+        "با کمال میل قبول می‌کنم و یک جعبه شیرینی می‌برم.",
+        "قبول نمی‌کنم چون آنها را نمی‌شناسم.",
+        "قبول می‌کنم و دست خالی می‌روم."
+       ],
+       "richtig": 0,
+       "fa": "یک خانواده‌ی ایرانی شما را به شام دعوت کرده است.",
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    }
+   ]
+  },
+  {
    "id": "p",
    "titel": "Vorbereitung für die Sitzung",
    "vorschau": "آماده‌ای؟",

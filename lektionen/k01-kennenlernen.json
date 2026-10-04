@@ -2972,6 +2972,183 @@
    ]
   },
   {
+   "id": "x",
+   "titel": "Kreativ: Wer passt zu wem?",
+   "vorschau": "🧩",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Situationen lösen",
+     "text": "<p>Jetzt wird es praktisch: Lies die Profile und Angebote genau – oft entscheidet ein Detail (Budget, Zeit, Vorlieben). Tippe auf „Übersetzung zeigen“, wenn du Hilfe brauchst. Im Unterricht diskutieren wir eure Lösungen!</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "zuordnen",
+     "titel": "Tandem-Börse: Wer passt zu wem?",
+     "text": "Fünf Personen suchen über die Tandem-Börse der Uni Kiel eine Sprachpartnerin oder einen Sprachpartner. Acht Anzeigen hängen am Brett.",
+     "frage": "Welches Angebot passt am besten? Tippe es an.",
+     "angebote": [
+      {
+       "titel": "Maryam",
+       "emoji": "👩‍🎓",
+       "fa": "مریم، ۲۴ ساله، دانشجوی پزشکی از تبریز. آلمانی می‌خواهم، فارسی و ترکی می‌دهم. فقط آخر هفته‌ها وقت دارم.",
+       "de": "Maryam, 24, Medizinstudentin aus Täbris. Suche Deutsch, biete Persisch und Türkisch. Nur am Wochenende Zeit."
+      },
+      {
+       "titel": "Reza",
+       "emoji": "🧑‍💻",
+       "fa": "رضا، ۳۰ ساله، برنامه‌نویس. آنلاین با تماس تصویری، هر شب ساعت نه. انگلیسی می‌خواهم.",
+       "de": "Reza, 30, Programmierer. Online per Videoanruf, jeden Abend um 21 Uhr. Suche Englisch."
+      },
+      {
+       "titel": "Schirin",
+       "emoji": "🎨",
+       "fa": "شیرین، ۴۵ ساله، نقاش. دوست دارم در موزه‌ها و گالری‌ها با هم فارسی و آلمانی حرف بزنیم.",
+       "de": "Schirin, 45, Malerin. Möchte in Museen und Galerien gemeinsam Persisch und Deutsch sprechen."
+      },
+      {
+       "titel": "Arman",
+       "emoji": "⚽",
+       "fa": "آرمان، ۲۲ ساله، عاشق فوتبال و کوه. موقع ورزش با هم صحبت کنیم!",
+       "de": "Arman, 22, liebt Fußball und Berge. Lass uns beim Sport reden!"
+      },
+      {
+       "titel": "Nasrin",
+       "emoji": "👩‍🏫",
+       "fa": "نسرین، معلم بازنشسته‌ی ادبیات. با هم شعر حافظ و سعدی بخوانیم. صبح‌ها در کافه.",
+       "de": "Nasrin, pensionierte Literaturlehrerin. Lesen wir zusammen Hafes und Saadi. Morgens im Café."
+      },
+      {
+       "titel": "Kaveh",
+       "emoji": "🍳",
+       "fa": "کاوه، آشپز. با هم غذای ایرانی و آلمانی بپزیم و حرف بزنیم!",
+       "de": "Kaveh, Koch. Lass uns zusammen iranisch und deutsch kochen und reden!"
+      },
+      {
+       "titel": "Leila",
+       "emoji": "👶",
+       "fa": "لیلا، مادر دو بچه. بچه‌هایم دوزبانه بزرگ می‌شوند؛ دنبال خانواده‌ای هستیم که با هم به پارک برویم.",
+       "de": "Leila, Mutter von zwei Kindern. Meine Kinder wachsen zweisprachig auf; wir suchen eine Familie für gemeinsame Parkbesuche."
+      },
+      {
+       "titel": "Babak",
+       "emoji": "💼",
+       "fa": "بابک، مدیر یک شرکت تجاری. فقط فارسی تجاری و ایمیل رسمی. ساعتی پول می‌دهم.",
+       "de": "Babak, Geschäftsführer einer Handelsfirma. Nur Wirtschaftspersisch und offizielle E-Mails. Bezahle pro Stunde."
+      }
+     ],
+     "personen": [
+      {
+       "name": "Jonas",
+       "emoji": "🧑‍🎓",
+       "fa": "یوناس دانشجوی ادبیات است و شعر کلاسیک فارسی را خیلی دوست دارد. صبح‌ها کلاس ندارد.",
+       "de": "Jonas studiert Literatur und liebt klassische persische Lyrik. Morgens hat er keine Vorlesungen.",
+       "richtig": 4,
+       "e": "Nasrin liest Hafes und Saadi – morgens im Café."
+      },
+      {
+       "name": "Mia",
+       "emoji": "👩‍👧",
+       "fa": "میا یک دختر سه ساله دارد که با پدرش فارسی حرف می‌زند. میا می‌خواهد خودش هم فارسی یاد بگیرد.",
+       "de": "Mia hat eine dreijährige Tochter, die mit ihrem Vater Persisch spricht. Mia will selbst auch Persisch lernen.",
+       "richtig": 6,
+       "e": "Leila sucht eine Familie mit zweisprachigen Kindern."
+      },
+      {
+       "name": "Paul",
+       "emoji": "🏃",
+       "fa": "پاول نمی‌تواند یک جا بنشیند؛ هر روز می‌دود و آخر هفته‌ها به کوه می‌رود.",
+       "de": "Paul kann nicht stillsitzen; er läuft jeden Tag und geht am Wochenende in die Berge.",
+       "richtig": 3,
+       "e": "Arman will beim Sport reden."
+      },
+      {
+       "name": "Svenja",
+       "emoji": "🌙",
+       "fa": "سونیا تا ساعت هشت شب کار می‌کند و در شهر دیگری زندگی می‌کند.",
+       "de": "Svenja arbeitet bis 20 Uhr und lebt in einer anderen Stadt.",
+       "richtig": 1,
+       "e": "Reza ist online, jeden Abend um 21 Uhr."
+      },
+      {
+       "name": "Tim",
+       "emoji": "🥘",
+       "fa": "تیم عاشق آشپزی است و می‌خواهد قورمه‌سبزی درست کردن را یاد بگیرد.",
+       "de": "Tim kocht leidenschaftlich gern und möchte lernen, Ghormeh Sabzi zu kochen.",
+       "richtig": 5,
+       "e": "Kaveh kocht und redet."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Was ist die beste Lösung?",
+     "fragen": [
+      {
+       "frage": "<span class='klein muted'>Auf einer Party nennt jemand dich zweimal beim falschen Namen.</span>",
+       "optionen": [
+        "ببخشید، اسم من لناست، نه لیلا!",
+        "چیزی نمی‌گویم و می‌روم.",
+        "اسم تو هم اشتباه است!"
+       ],
+       "richtig": 0,
+       "fa": "در مهمانی، کسی اسم شما را دو بار اشتباه صدا می‌کند.",
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='klein muted'>Dein Tandempartner spricht nur Englisch, aber du willst Persisch üben.</span>",
+       "optionen": [
+        "بیا نیم ساعت فارسی و نیم ساعت انگلیسی حرف بزنیم.",
+        "دیگر او را نمی‌بینم.",
+        "من هم فقط انگلیسی حرف می‌زنم."
+       ],
+       "richtig": 0,
+       "fa": "هم‌زبان شما فقط انگلیسی حرف می‌زند، اما شما می‌خواهید فارسی تمرین کنید.",
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='klein muted'>Jemand im Kurs stellt dir eine sehr persönliche Frage, die du nicht beantworten möchtest.</span>",
+       "optionen": [
+        "ببخشید، ترجیح می‌دهم درباره‌اش حرف نزنم.",
+        "دروغ می‌گویم.",
+        "از کلاس بیرون می‌روم."
+       ],
+       "richtig": 0,
+       "fa": "کسی در کلاس از شما سؤال خیلی شخصی می‌پرسد و دوست ندارید جواب بدهید.",
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='klein muted'>Du möchtest jemandes Nummer, traust dich aber nicht.</span>",
+       "optionen": [
+        "خیلی خوشحال شدم! در اینستاگرام هستی؟",
+        "چیزی نمی‌گویم.",
+        "شماره‌اش را از دوستش می‌دزدم."
+       ],
+       "richtig": 0,
+       "fa": "می‌خواهید شماره‌ی کسی را بگیرید، اما خجالت می‌کشید.",
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='klein muted'>Du kennst auf einer Party niemanden.</span>",
+       "optionen": [
+        "به کسی که تنهاست سلام می‌کنم و می‌پرسم اهل کجاست.",
+        "زود به خانه می‌روم.",
+        "تمام شب با گوشی‌ام بازی می‌کنم."
+       ],
+       "richtig": 0,
+       "fa": "در یک مهمانی کسی را نمی‌شناسید.",
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    }
+   ]
+  },
+  {
    "id": "p",
    "titel": "Vorbereitung für die Sitzung",
    "vorschau": "آماده‌ای؟",

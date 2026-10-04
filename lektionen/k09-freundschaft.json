@@ -2957,6 +2957,178 @@
    ]
   },
   {
+   "id": "x",
+   "titel": "Kreativ: Wer passt zu wem?",
+   "vorschau": "🧩",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Situationen lösen",
+     "text": "<p>Jetzt wird es praktisch: Lies die Profile und Angebote genau – oft entscheidet ein Detail (Budget, Zeit, Vorlieben). Tippe auf „Übersetzung zeigen“, wenn du Hilfe brauchst. Im Unterricht diskutieren wir eure Lösungen!</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "zuordnen",
+     "titel": "Freizeitgruppen in Kiel",
+     "text": "Fünf Personen suchen Anschluss. Acht Gruppen stellen sich im Uni-Newsletter vor.",
+     "frage": "Welches Angebot passt am besten? Tippe es an.",
+     "angebote": [
+      {
+       "titel": "Wandergruppe",
+       "emoji": "🥾",
+       "fa": "گروه کوهنوردی «قله»: هر شنبه صبح، مسیرهای طولانی، فقط برای آدم‌های پرانرژی.",
+       "de": "Wandergruppe „Gipfel“: jeden Samstagmorgen, lange Touren, nur für Energiegeladene."
+      },
+      {
+       "titel": "Lesekreis",
+       "emoji": "📚",
+       "fa": "حلقه‌ی کتاب‌خوانی: ماهی یک رمان، بحث آرام با چای در کتابخانه.",
+       "de": "Lesekreis: ein Roman pro Monat, ruhige Diskussion bei Tee in der Bibliothek."
+      },
+      {
+       "titel": "Persischer Chor",
+       "emoji": "🎤",
+       "fa": "گروه کر فارسی: آهنگ‌های سنتی و پاپ ایرانی، تمرین سه‌شنبه‌ها.",
+       "de": "Persischer Chor: traditionelle und Pop-Lieder, Probe dienstags."
+      },
+      {
+       "titel": "Brettspiel-Abend",
+       "emoji": "🎲",
+       "fa": "شب بازی‌های فکری: شطرنج، تخته‌نرد و بازی‌های گروهی، پنجشنبه‌ها.",
+       "de": "Brettspielabend: Schach, Backgammon und Gruppenspiele, donnerstags."
+      },
+      {
+       "titel": "Kochclub",
+       "emoji": "🍳",
+       "fa": "باشگاه آشپزی: هر هفته یک غذای یک کشور، با هم می‌پزیم و می‌خوریم.",
+       "de": "Kochclub: jede Woche ein Gericht aus einem Land, gemeinsam kochen und essen."
+      },
+      {
+       "titel": "Neu in Kiel",
+       "emoji": "👋",
+       "fa": "گروه «تازه‌واردها»: برای کسانی که تازه به کیل آمده‌اند و هنوز کسی را نمی‌شناسند.",
+       "de": "Gruppe „Neu hier“: für alle, die neu in Kiel sind und noch niemanden kennen."
+      },
+      {
+       "titel": "Laufgruppe",
+       "emoji": "🏃",
+       "fa": "گروه دویدن کنار دریا: هر روز ساعت شش صبح.",
+       "de": "Laufgruppe am Meer: jeden Tag um 6 Uhr morgens."
+      },
+      {
+       "titel": "Fotoclub",
+       "emoji": "📷",
+       "fa": "باشگاه عکاسی: گشت در شهر و نمایشگاه آخر ترم.",
+       "de": "Fotoclub: Fototouren durch die Stadt und Ausstellung am Semesterende."
+      }
+     ],
+     "personen": [
+      {
+       "name": "Niloufar",
+       "emoji": "😳",
+       "fa": "نیلوفر خیلی خجالتی است، تازه از اصفهان آمده و در کیل هیچ دوستی ندارد.",
+       "de": "Niloufar ist sehr schüchtern, gerade aus Isfahan gekommen und hat in Kiel keine Freunde.",
+       "richtig": 5
+      },
+      {
+       "name": "Felix",
+       "emoji": "🎶",
+       "fa": "فلیکس صدای خوبی دارد و می‌خواهد آهنگ‌های فارسی مادرش را یاد بگیرد.",
+       "de": "Felix hat eine schöne Stimme und möchte die persischen Lieder seiner Mutter lernen.",
+       "richtig": 2
+      },
+      {
+       "name": "Hannah",
+       "emoji": "🤫",
+       "fa": "هانا دوست دارد آرام بنشیند، فکر کند و درباره‌ی کتاب‌ها حرف بزند.",
+       "de": "Hannah sitzt gern in Ruhe, denkt nach und spricht über Bücher.",
+       "richtig": 1
+      },
+      {
+       "name": "Reza",
+       "emoji": "♟️",
+       "fa": "رضا عاشق تخته‌نرد است و پنجشنبه‌ها وقت آزاد دارد.",
+       "de": "Reza liebt Backgammon und hat donnerstags frei.",
+       "richtig": 3
+      },
+      {
+       "name": "Lisa",
+       "emoji": "🌄",
+       "fa": "لیزا صبح خیلی زود بیدار می‌شود و هر روز می‌خواهد قبل از کار ورزش کند.",
+       "de": "Lisa steht sehr früh auf und will jeden Tag vor der Arbeit Sport machen.",
+       "richtig": 6
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Was ist die beste Lösung?",
+     "fragen": [
+      {
+       "frage": "<span class='klein muted'>Deine Freundin hat zweimal hintereinander abgesagt.</span>",
+       "optionen": [
+        "صادقانه می‌گویم که ناراحت شدم و می‌پرسم چیزی شده است؟",
+        "دیگر هیچ‌وقت به او پیام نمی‌دهم.",
+        "پشت سرش بد می‌گویم."
+       ],
+       "richtig": 0,
+       "fa": "دوستتان دو بار پشت سر هم قرار را لغو کرده است.",
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='klein muted'>Zwei Freunde haben gestritten und wollen beide, dass du auf ihrer Seite stehst.</span>",
+       "optionen": [
+        "می‌گویم طرف هیچ‌کس را نمی‌گیرم، اما کمک می‌کنم با هم حرف بزنند.",
+        "طرف کسی را می‌گیرم که پولدارتر است.",
+        "با هر دو قطع رابطه می‌کنم."
+       ],
+       "richtig": 0,
+       "fa": "دو دوستتان با هم دعوا کرده‌اند و هر دو از شما می‌خواهند طرفشان را بگیرید.",
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='klein muted'>Ein alter Freund schreibt nach fünf Jahren.</span>",
+       "optionen": [
+        "خوشحال می‌شوم و پیشنهاد می‌کنم یک قهوه با هم بخوریم.",
+        "جواب نمی‌دهم.",
+        "می‌پرسم چرا این همه سال پیام نداده و قهر می‌کنم."
+       ],
+       "richtig": 0,
+       "fa": "یک دوست قدیمی بعد از پنج سال پیام داده است.",
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='klein muted'>Deine Freundin hat ein Geheimnis von dir allen erzählt.</span>",
+       "optionen": [
+        "با او تنها صحبت می‌کنم و می‌گویم که اعتمادم آسیب دیده.",
+        "راز او را هم به همه می‌گویم.",
+        "جلوی همه داد می‌زنم."
+       ],
+       "richtig": 0,
+       "fa": "دوستتان یک راز را به همه گفته است.",
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "<span class='klein muted'>Ein neuer Kommilitone ist allein und spricht mit niemandem.</span>",
+       "optionen": [
+        "سلام می‌کنم و او را به ناهار با گروه دعوت می‌کنم.",
+        "منتظر می‌مانم تا خودش بیاید.",
+        "درباره‌اش با بقیه شوخی می‌کنم."
+       ],
+       "richtig": 0,
+       "fa": "هم‌کلاسی جدید شما تنهاست و با کسی حرف نمی‌زند.",
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    }
+   ]
+  },
+  {
    "id": "p",
    "titel": "Vorbereitung für die Sitzung",
    "vorschau": "آماده‌ای؟",
