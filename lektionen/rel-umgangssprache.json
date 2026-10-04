@@ -1,0 +1,176 @@
+{
+ "id": "ug",
+ "art": "umgangssprache",
+ "titel": "Umgangssprache: So spricht man im Alltag",
+ "beschreibung": "Freiwilliger Extra-Teil: Relativsätze im Gespräch.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "So spricht man: اونی که …",
+   "vorschau": "اونی که · چیزی که",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Schrift ≠ Gespräch",
+     "text": "<ul><li>Im Gespräch steht <span class='fa'>رو</span> (= <span class='fa'>را</span>) meist <b>am Ende</b> des Relativsatzes: <span class='fa'>کتابی که خریدی رو خوندم</span>.</li><li><span class='fa'>آن کسی که → اونی که</span> – der/die, der/die …</li><li>Statt <span class='fa'>آنچه</span> sagt man fast immer <span class='fa'>چیزی که</span>.</li><li><span class='fa'>همون … که</span> – genau der/die/das, der/die/das …</li><li><span class='fa'>ایستاده → وایساده</span> <i>wāysāde</i></li></ul>",
+     "stil": "merke"
+    },
+    {
+     "typ": "paare",
+     "links": "x",
+     "paare": [
+      {
+       "fa": "کِتابی را که خَریدی",
+       "tr": "ketābī rā ke charīdī",
+       "de": "das Buch, das du gekauft hast",
+       "x": "کِتابی که خَریدی رو"
+      },
+      {
+       "fa": "آن کَسی که",
+       "tr": "ān kasī ke",
+       "de": "der(jenige), der",
+       "x": "اونی که"
+      },
+      {
+       "fa": "آنچه",
+       "tr": "āntsche",
+       "de": "was",
+       "x": "چیزی که"
+      },
+      {
+       "fa": "کیست؟",
+       "tr": "kīst?",
+       "de": "wer ist es?",
+       "x": "کیه؟"
+      }
+     ],
+     "titel": "Schrift ↔ Gespräch"
+    },
+    {
+     "typ": "sortieren",
+     "titel": "Schrift oder Gespräch?",
+     "frage": "Schriftsprache oder Umgangssprache?",
+     "kategorien": [
+      "✍️ Schriftsprache",
+      "🗣️ Umgangssprache"
+     ],
+     "items": [
+      {
+       "fa": "کِتابی را که خَریدی",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "آن کَسی که",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "آنچه",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "کیست؟",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "کِتابی که خَریدی رو",
+       "k": 1,
+       "say": false,
+       "e": "<i>ketābī ke charīdī ro</i> – geschrieben: <span class='fa'>کِتابی را که خَریدی</span>"
+      },
+      {
+       "fa": "اونی که",
+       "k": 1,
+       "say": false,
+       "e": "<i>ūnī ke</i> – geschrieben: <span class='fa'>آن کَسی که</span>"
+      },
+      {
+       "fa": "چیزی که",
+       "k": 1,
+       "say": false,
+       "e": "<i>tschīzī ke</i> – geschrieben: <span class='fa'>آنچه</span>"
+      },
+      {
+       "fa": "کیه؟",
+       "k": 1,
+       "say": false,
+       "e": "<i>kīye?</i> – geschrieben: <span class='fa'>کیست؟</span>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Der neue Nachbar",
+   "vorschau": "همونیه که بهت گفتم",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Im Treppenhaus – umgangssprachlich",
+     "text": "Umgangssprache! Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "اونی که کنار در وایساده کیه؟",
+       "tr": "ūnī ke kenār-e dar wāysāde kīye?",
+       "de": "Wer ist der, der an der Tür steht?"
+      },
+      {
+       "fa": "همونیه که بهت گفتم – همسایه‌ی جدیدمون.",
+       "tr": "hamūnīye ke behet goftam – hamsāye-ye dschadīdemūn.",
+       "de": "Das ist der, von dem ich dir erzählt habe – unser neuer Nachbar."
+      },
+      {
+       "fa": "همون که گیتار می‌زنه؟",
+       "tr": "hamūn ke gītār mīzane?",
+       "de": "Der, der Gitarre spielt?"
+      },
+      {
+       "fa": "آره! چیزی که بهت نگفتم اینه که خیلی هم خوب می‌زنه!",
+       "tr": "āre! tschīzī ke behet nagoftam īne ke cheylī ham chūb mīzane!",
+       "de": "Ja! Was ich dir nicht gesagt habe: Er spielt richtig gut!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Verstanden?",
+     "fragen": [
+      {
+       "frage": "Wer steht an der Tür?",
+       "optionen": [
+        "der neue Nachbar",
+        "der Bruder",
+        "der Lehrer"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was macht der Nachbar?",
+       "optionen": [
+        "Er spielt Gitarre.",
+        "Er kocht.",
+        "Er malt."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "<span class='fa'>اونی که</span> ist gesprochen für …",
+       "optionen": [
+        "آن کسی که",
+        "آنچه",
+        "جایی که"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

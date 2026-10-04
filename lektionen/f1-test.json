@@ -2145,13 +2145,13 @@
   },
   {
    "id": "r",
-   "titel": "Q · Futur & Passiv",
-   "vorschau": "خواهَم رَفت · ساختِه شُد",
+   "titel": "Q · Futur, Passiv & Relativsätze",
+   "vorschau": "خواهَم رَفت · ساختِه شُد · کِتابی که",
    "karten": [
     {
      "typ": "info",
-     "titel": "Q · Futur & Passiv",
-     "text": "<p>Futur mit خواستن, Passiv mit شدن.</p><p class='klein muted'>Jede Frage zählt. Du kannst den Abschnitt später wiederholen – es zählt dein bestes Ergebnis.</p>"
+     "titel": "Q · Futur, Passiv & Relativsätze",
+     "text": "<p>Futur mit خواستن, Passiv mit شدن, Relativsätze mit که.</p><p class='klein muted'>Jede Frage zählt. Du kannst den Abschnitt später wiederholen – es zählt dein bestes Ergebnis.</p>"
     },
     {
      "typ": "wahl",
@@ -2239,6 +2239,67 @@
         "اینجا فارسی صُحبَت می‌شَوَد.",
         "اینجا فارسی صُحبَت کَردِه می‌شَوَد.",
         "اینجا فارسی صُحبَت شُدِه بودید."
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Relativsätze",
+     "fragen": [
+      {
+       "frage": "„Das Buch, das ich gekauft habe, ist teuer.“",
+       "optionen": [
+        "کِتابی کِه خَریدَم، گِران اَست.",
+        "کِتاب کِه خَریدَم، گِران اَست.",
+        "کِتابی خَریدَم کِه، گِران اَست."
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Die Stadt, in der ich wohne …“",
+       "optionen": [
+        "شَهری کِه دَر آن زِندِگی می‌کُنَم …",
+        "شَهری دَر کِه زِندِگی می‌کُنَم …",
+        "شَهری کِه زِندِگی می‌کُنَم دَر آن او …"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Die Freundin, mit der ich gesprochen habe …“",
+       "optionen": [
+        "دوستی کِه با او صُحبَت کَردَم …",
+        "دوستی کِه با صُحبَت کَردَم …",
+        "دوستی با کِه صُحبَت کَردَم …"
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„Ich suche jemanden, der Deutsch kann.“",
+       "optionen": [
+        "دنبال کَسی هَستَم کِه آلمانی بَلَد باشَد.",
+        "دنبال کَسی هَستَم کِه آلمانی بَلَد بود.",
+        "دنبال کَسی کِه هَستَم آلمانی بَلَد اَست."
+       ],
+       "richtig": 0,
+       "hoeren": false,
+       "optFa": true
+      },
+      {
+       "frage": "„das Haus, das …“ – wie schreibt man es?",
+       "optionen": [
+        "خانِه‌ای کِه",
+        "خانِهی کِه",
+        "خانِه کِه‌ای"
        ],
        "richtig": 0,
        "hoeren": false,

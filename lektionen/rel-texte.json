@@ -1,0 +1,659 @@
+{
+ "id": "tx",
+ "art": "texte",
+ "titel": "Texte & Dialoge",
+ "beschreibung": "Lesetexte mit Fragen und Dialoge zum Ordnen.",
+ "stationen": [
+  {
+   "id": "t1",
+   "titel": "Kurztext: Das Foto",
+   "vorschau": "عکس",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>عکس گرفتن</span> – fotografieren · <span class='fa'>وسط</span> – Mitte · <span class='fa'>کلاه</span> – Hut, Mütze · <span class='fa'>پل</span> – Brücke</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Kurztext: Das Foto",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "این عکسی است که پارسال در اصفهان گرفتم.",
+       "tr": "īn ʿaksī ast ke pārsāl dar esfahān gereftam.",
+       "de": "Das ist ein Foto, das ich letztes Jahr in Isfahan gemacht habe."
+      },
+      {
+       "fa": "زنی که وسط ایستاده، مریم است؛ دوستی که در دانشگاه با او آشنا شدم.",
+       "tr": "zanī ke wasat īstāde, maryam ast; dūstī ke dar dāneschgāh bā ū āschnā schodam.",
+       "de": "Die Frau in der Mitte ist Maryam – eine Freundin, die ich an der Uni kennengelernt habe."
+      },
+      {
+       "fa": "مردی که کلاه دارد، برادرش است.",
+       "tr": "mardī ke kolāh dārad, barādarasch ast.",
+       "de": "Der Mann mit dem Hut (wörtl.: der einen Hut hat) ist ihr Bruder."
+      },
+      {
+       "fa": "پلی که پشت ما می‌بینید، سی‌وسه‌پل است.",
+       "tr": "polī ke poscht-e mā mībīnīd, sīosepol ast.",
+       "de": "Die Brücke, die Sie hinter uns sehen, ist die Si-o-se-Pol."
+      },
+      {
+       "fa": "روزی که این عکس را گرفتیم، هوا خیلی گرم بود.",
+       "tr": "rūzī ke īn ʿaks rā gereftīm, hawā cheylī garm būd.",
+       "de": "An dem Tag, an dem wir das Foto machten, war es sehr heiß."
+      },
+      {
+       "fa": "بستنی‌ای که در دست من است، بستنی زعفرانی است!",
+       "tr": "bastanīī ke dar dast-e man ast, bastanī-ye zaʿferānī ast!",
+       "de": "Das Eis in meiner Hand (wörtl.: das in meiner Hand ist) ist Safraneis!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "عکس در شیراز گرفته شده است.",
+       "fest": true,
+       "erkl": "Es wurde in <b>Isfahan</b> aufgenommen."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "مریم دوستی است که در دانشگاه آشنا شدند.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "مردی که کلاه دارد، پدر مریم است.",
+       "fest": true,
+       "erkl": "Er ist ihr <b>Bruder</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "آن روز هوا گرم بود.",
+       "fest": true
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Welche Brücke ist im Bild?",
+       "optionen": [
+        "die Si-o-se-Pol",
+        "die Chadschu-Brücke",
+        "eine Brücke in Kiel"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was hält die Erzählerin in der Hand?",
+       "optionen": [
+        "Safraneis",
+        "eine Kamera",
+        "einen Hut"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wo hat sie Maryam kennengelernt?",
+       "optionen": [
+        "an der Uni",
+        "in Isfahan",
+        "im Café"
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "زنی که وسط ایستاده، مریم است؛ دوستی که در دانشگاه با او آشنا شدم.",
+       "tr": "zanī ke wasat īstāde, maryam ast; dūstī ke dar dāneschgāh bā ū āschnā schodam.",
+       "de": "Die Frau in der Mitte ist Maryam – eine Freundin, die ich an der Uni kennengelernt habe."
+      },
+      {
+       "fa": "مردی که کلاه دارد، برادرش است.",
+       "tr": "mardī ke kolāh dārad, barādarasch ast.",
+       "de": "Der Mann mit dem Hut (wörtl.: der einen Hut hat) ist ihr Bruder."
+      },
+      {
+       "fa": "پلی که پشت ما می‌بینید، سی‌وسه‌پل است.",
+       "tr": "polī ke poscht-e mā mībīnīd, sīosepol ast.",
+       "de": "Die Brücke, die Sie hinter uns sehen, ist die Si-o-se-Pol."
+      },
+      {
+       "fa": "روزی که این عکس را گرفتیم، هوا خیلی گرم بود.",
+       "tr": "rūzī ke īn ʿaks rā gereftīm, hawā cheylī garm būd.",
+       "de": "An dem Tag, an dem wir das Foto machten, war es sehr heiß."
+      },
+      {
+       "fa": "بستنی‌ای که در دست من است، بستنی زعفرانی است!",
+       "tr": "bastanīī ke dar dast-e man ast, bastanī-ye zaʿferānī ast!",
+       "de": "Das Eis in meiner Hand (wörtl.: das in meiner Hand ist) ist Safraneis!"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t2",
+   "titel": "Text: Mitbewohnerin gesucht",
+   "vorschau": "هم‌خانه می‌خواهیم!",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>مرتب</span> – ordentlich · <span class='fa'>رو به</span> – mit Blick auf · <span class='fa'>خوش‌آمد</span> – willkommen · <span class='fa'>احترام</span> – Respekt · <span class='fa'>شوخ‌طبعی</span> – Humor</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Text: Mitbewohnerin gesucht",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "ما سه دانشجو هستیم که در یک آپارتمان بزرگ در کیل زندگی می‌کنیم.",
+       "tr": "mā se dāneschdschū hastīm ke dar yek āpārtemān-e bozorg dar kīl zendegī mīkonīm.",
+       "de": "Wir sind drei Studierende, die in einer großen Wohnung in Kiel leben."
+      },
+      {
+       "fa": "اتاقی که خالی شده، دوازده متر است و پنجره‌ای دارد که رو به دریاست.",
+       "tr": "otāghī ke chālī schode, dawāzdah metr ast o pandschereī dārad ke rū be daryāst.",
+       "de": "Das Zimmer, das frei geworden ist, hat zwölf Quadratmeter und ein Fenster mit Blick aufs Meer."
+      },
+      {
+       "fa": "دنبال کسی هستیم که مرتب باشد و سیگار نکشد.",
+       "tr": "donbāl-e kasī hastīm ke morattab bāschad o sīgār nakeschad.",
+       "de": "Wir suchen jemanden, der ordentlich ist und nicht raucht."
+      },
+      {
+       "fa": "کسی که آشپزی دوست داشته باشد، خیلی خوش‌آمد است!",
+       "tr": "kasī ke āschpazī dūst dāschte bāschad, cheylī choschāmad ast!",
+       "de": "Wer gern kocht, ist sehr willkommen!"
+      },
+      {
+       "fa": "هم‌خانه‌ای که قبلا اینجا بود، هر جمعه برای ما قورمه‌سبزی می‌پخت.",
+       "tr": "hamchāneī ke ghablan īndschā būd, har dschomʿe barā-ye mā ghormesabzī mīpocht.",
+       "de": "Die Mitbewohnerin, die vorher hier war, hat jeden Freitag Ghormeh Sabzi für uns gekocht."
+      },
+      {
+       "fa": "آنچه برای ما مهم است، احترام و کمی شوخ‌طبعی است.",
+       "tr": "āntsche barā-ye mā mohem ast, ehterām o kamī schūchtabʿī ast.",
+       "de": "Was uns wichtig ist: Respekt und ein bisschen Humor."
+      },
+      {
+       "fa": "اگر کسی را می‌شناسید که دنبال اتاق باشد، به ما پیام بدهید!",
+       "tr": "agar kasī rā mīschenāsīd ke donbāl-e otāgh bāschad, be mā payām bedahīd!",
+       "de": "Wenn Sie jemanden kennen, der ein Zimmer sucht, schreiben Sie uns!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "در آپارتمان سه نفر زندگی می‌کنند.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "اتاق خالی رو به کوه است.",
+       "fest": true,
+       "erkl": "Das Fenster geht <b>aufs Meer</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "آنها کسی را می‌خواهند که سیگار بکشد.",
+       "fest": true,
+       "erkl": "Gesucht wird jemand, der <b>nicht</b> raucht."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "هم‌خانه‌ی قبلی آشپزی می‌کرد.",
+       "fest": true
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Wie groß ist das Zimmer?",
+       "optionen": [
+        "12 m²",
+        "20 m²",
+        "9 m²"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was ist der WG wichtig?",
+       "optionen": [
+        "Respekt und Humor",
+        "Geld und Ruhe",
+        "Sport"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Warum steht im Satz <span class='fa'>کسی که مرتب باشد</span> der Konjunktiv?",
+       "optionen": [
+        "Die Person wird erst gesucht.",
+        "Es ist Vergangenheit.",
+        "Es ist eine Frage."
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t3",
+   "titel": "Profi-Text: Kiel – die Stadt, in der ich lebe",
+   "vorschau": "کیل، شهری که در آن زندگی می‌کنم",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>قرار داشتن</span> – liegen, sich befinden · <span class='fa'>بندر</span> – Hafen · <span class='fa'>کشتی</span> – Schiff · <span class='fa'>برگزار شدن</span> – stattfinden · <span class='fa'>قدمت</span> – Alter (Geschichte)</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Profi-Text: Kiel – die Stadt, in der ich lebe",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "کیل شهری است که در شمال آلمان، کنار دریای بالتیک قرار دارد.",
+       "tr": "kīl schahrī ast ke dar schomāl-e ālmān, kenār-e daryā-ye bāltīk gharār dārad.",
+       "de": "Kiel ist eine Stadt, die im Norden Deutschlands an der Ostsee liegt."
+      },
+      {
+       "fa": "کسانی که اولین بار به کیل می‌آیند، معمولا از باد تعجب می‌کنند!",
+       "tr": "kasānī ke awwalīn bār be kīl mīāyand, maʿmūlan az bād taʿadschdschob mīkonand!",
+       "de": "Wer zum ersten Mal nach Kiel kommt, wundert sich meist über den Wind!"
+      },
+      {
+       "fa": "بندری که در مرکز شهر است، پر از کشتی‌هایی است که به اسکاندیناوی می‌روند.",
+       "tr": "bandarī ke dar markaz-e schahr ast, por az keschtīhāyī ast ke be eskāndīnāwī mīravand.",
+       "de": "Der Hafen im Stadtzentrum ist voller Schiffe, die nach Skandinavien fahren."
+      },
+      {
+       "fa": "هر سال در ماه ژوئن جشنی برگزار می‌شود که «هفته‌ی کیل» نام دارد.",
+       "tr": "har sāl dar māh-e zhūʾan dschaschnī bargozār mīschawad ke «hafte-ye kīl» nām dārad.",
+       "de": "Jedes Jahr im Juni findet ein Fest statt, das „Kieler Woche“ heißt."
+      },
+      {
+       "fa": "دانشگاهی که من در آن درس می‌خوانم، بیش از سیصد و پنجاه سال قدمت دارد.",
+       "tr": "dāneschgāhī ke man dar ān dars mīchānam, bīsch az sīsad o pandschāh sāl ghedmat dārad.",
+       "de": "Die Universität, an der ich studiere, ist über 350 Jahre alt."
+      },
+      {
+       "fa": "آنچه من در کیل بیشتر از همه دوست دارم، قدم زدن کنار دریاست.",
+       "tr": "āntsche man dar kīl bīschtar az hame dūst dāram, ghadam zadan kenār-e daryāst.",
+       "de": "Was ich in Kiel am meisten mag, ist der Spaziergang am Meer."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "کیل در جنوب آلمان است.",
+       "fest": true,
+       "erkl": "Kiel liegt im <b>Norden</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "«هفته‌ی کیل» در ژوئن است.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "دانشگاه کیل خیلی جدید است.",
+       "fest": true,
+       "erkl": "Sie ist <b>über 350 Jahre</b> alt."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Worüber wundern sich Neuankömmlinge?",
+       "optionen": [
+        "über den Wind",
+        "über die Preise",
+        "über die Sprache"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wohin fahren die Schiffe?",
+       "optionen": [
+        "nach Skandinavien",
+        "nach Hamburg",
+        "nach Iran"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d1",
+   "titel": "Dialog: Wer ist das?",
+   "vorschau": "اون کیه؟",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Auf einer Party. Lina kennt fast niemanden und fragt ihre Freundin Schirin.</p><p><span class='fa'>همون کسی که …</span> – genau die/der, die/der … · <span class='fa'>معرفی کردن</span> – vorstellen</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "لینا: شیرین، اون مردی که کنار پنجره ایستاده کیه؟",
+       "tr": "schīrīn, ūn mardī ke kenār-e pandschere īstāde kīye?",
+       "de": "Shirin, wer ist der Mann, der am Fenster steht?"
+      },
+      {
+       "fa": "شیرین: اون کاوه است، پسری که با برادرم کار می‌کنه.",
+       "tr": "ūn kāwe ast, pesarī ke bā barādaram kār mīkone.",
+       "de": "Das ist Kaveh, der Typ, der mit meinem Bruder arbeitet."
+      },
+      {
+       "fa": "لینا: و دختری که داره با اون حرف می‌زنه؟",
+       "tr": "o dochtarī ke dāre bā ūn harf mīzane?",
+       "de": "Und die junge Frau, die gerade mit ihm redet?"
+      },
+      {
+       "fa": "شیرین: سارا. همون کسیه که کیک امشب رو پخته!",
+       "tr": "sārā. hamūn kasīye ke keyk-e emschab ro pochte!",
+       "de": "Sara. Das ist die, die den Kuchen heute gebacken hat!"
+      },
+      {
+       "fa": "لینا: کیکی که روی میزه؟ خیلی خوشمزه‌ست!",
+       "tr": "keykī ke rū-ye mīze? cheylī choschmazast!",
+       "de": "Der Kuchen, der auf dem Tisch steht? Der ist super lecker!"
+      },
+      {
+       "fa": "شیرین: آره. بیا معرفیت کنم. کسی که کیک خوب می‌پزه، باید بشناسیش!",
+       "tr": "āre. biyā moʿarrefīt konam. kasī ke keyk-e chūb mīpaze, bāyad beschnāsīsch!",
+       "de": "Ja. Komm, ich stell dich vor. Wer guten Kuchen backt, den musst du kennen!"
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "لینا: شیرین، اون مردی که کنار پنجره ایستاده کیه؟",
+       "tr": "schīrīn, ūn mardī ke kenār-e pandschere īstāde kīye?",
+       "de": "Shirin, wer ist der Mann, der am Fenster steht?"
+      },
+      {
+       "fa": "شیرین: اون کاوه است، پسری که با برادرم کار می‌کنه.",
+       "tr": "ūn kāwe ast, pesarī ke bā barādaram kār mīkone.",
+       "de": "Das ist Kaveh, der Typ, der mit meinem Bruder arbeitet."
+      },
+      {
+       "fa": "لینا: و دختری که داره با اون حرف می‌زنه؟",
+       "tr": "o dochtarī ke dāre bā ūn harf mīzane?",
+       "de": "Und die junge Frau, die gerade mit ihm redet?"
+      },
+      {
+       "fa": "شیرین: سارا. همون کسیه که کیک امشب رو پخته!",
+       "tr": "sārā. hamūn kasīye ke keyk-e emschab ro pochte!",
+       "de": "Sara. Das ist die, die den Kuchen heute gebacken hat!"
+      },
+      {
+       "fa": "لینا: کیکی که روی میزه؟ خیلی خوشمزه‌ست!",
+       "tr": "keykī ke rū-ye mīze? cheylī choschmazast!",
+       "de": "Der Kuchen, der auf dem Tisch steht? Der ist super lecker!"
+      },
+      {
+       "fa": "شیرین: آره. بیا معرفیت کنم. کسی که کیک خوب می‌پزه، باید بشناسیش!",
+       "tr": "āre. biyā moʿarrefīt konam. kasī ke keyk-e chūb mīpaze, bāyad beschnāsīsch!",
+       "de": "Ja. Komm, ich stell dich vor. Wer guten Kuchen backt, den musst du kennen!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Mit wem arbeitet Kaveh?",
+       "optionen": [
+        "mit Shirins Bruder",
+        "mit Sara",
+        "mit Lina"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wer hat den Kuchen gebacken?",
+       "optionen": [
+        "Sara",
+        "Shirin",
+        "Kaveh"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "<span class='fa'>کسی که کیک خوب می‌پزه</span> bedeutet:",
+       "optionen": [
+        "wer guten Kuchen backt",
+        "ein Kuchen, der gut ist",
+        "der Ort, wo man Kuchen backt"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d2",
+   "titel": "Dialog: Kennst du jemanden, der …?",
+   "vorschau": "کسی رو می‌شناسی که …؟",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Jonas sucht jemanden, der ihm beim Persischlernen hilft.</p><p><span class='fa'>صبور</span> – geduldig · <span class='fa'>نصف</span> – Hälfte · <span class='fa'>فهمیدن</span> – verstehen</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "یوناس: مهسا، کسی رو می‌شناسی که بتونه به من فارسی درس بده؟",
+       "tr": "mahsā, kasī ro mīschenāsī ke betūne be man fārsī dars bede?",
+       "de": "Mahsa, kennst du jemanden, der mir Persischunterricht geben kann?"
+      },
+      {
+       "fa": "مهسا: یه دوستی دارم که معلم فارسیه. ولی خیلی سرش شلوغه.",
+       "tr": "ye dūstī dāram ke moʿallem-e fārsīye. walī cheylī sarasch schologhe.",
+       "de": "Ich habe eine Freundin, die Persischlehrerin ist. Aber sie hat sehr viel zu tun."
+      },
+      {
+       "fa": "یوناس: اشکالی نداره. دنبال کسی‌ام که صبور باشه.",
+       "tr": "eschkālī nadāre. donbāl-e kasīam ke sabūr bāsche.",
+       "de": "Kein Problem. Ich suche jemanden, der geduldig ist."
+      },
+      {
+       "fa": "مهسا: اون خیلی صبوره! کتابی که بهت دادم رو خوندی؟",
+       "tr": "ūn cheylī sabūre! ketābī ke behet dādam ro chūndī?",
+       "de": "Sie ist sehr geduldig! Hast du das Buch gelesen, das ich dir gegeben habe?"
+      },
+      {
+       "fa": "یوناس: نصفشو. چیزایی که نمی‌فهمیدم رو نوشتم.",
+       "tr": "nesfescho. tschīzāyī ke nemīfahmīdam ro neweschtam.",
+       "de": "Die Hälfte. Die Sachen, die ich nicht verstanden habe, habe ich aufgeschrieben."
+      },
+      {
+       "fa": "مهسا: عالیه! همون سؤال‌ها رو از دوستم بپرس.",
+       "tr": "ʿālīye! hamūn soʾālhā ro az dūstam bepors.",
+       "de": "Super! Genau diese Fragen stellst du meiner Freundin."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "یوناس: مهسا، کسی رو می‌شناسی که بتونه به من فارسی درس بده؟",
+       "tr": "mahsā, kasī ro mīschenāsī ke betūne be man fārsī dars bede?",
+       "de": "Mahsa, kennst du jemanden, der mir Persischunterricht geben kann?"
+      },
+      {
+       "fa": "مهسا: یه دوستی دارم که معلم فارسیه. ولی خیلی سرش شلوغه.",
+       "tr": "ye dūstī dāram ke moʿallem-e fārsīye. walī cheylī sarasch schologhe.",
+       "de": "Ich habe eine Freundin, die Persischlehrerin ist. Aber sie hat sehr viel zu tun."
+      },
+      {
+       "fa": "یوناس: اشکالی نداره. دنبال کسی‌ام که صبور باشه.",
+       "tr": "eschkālī nadāre. donbāl-e kasīam ke sabūr bāsche.",
+       "de": "Kein Problem. Ich suche jemanden, der geduldig ist."
+      },
+      {
+       "fa": "مهسا: اون خیلی صبوره! کتابی که بهت دادم رو خوندی؟",
+       "tr": "ūn cheylī sabūre! ketābī ke behet dādam ro chūndī?",
+       "de": "Sie ist sehr geduldig! Hast du das Buch gelesen, das ich dir gegeben habe?"
+      },
+      {
+       "fa": "یوناس: نصفشو. چیزایی که نمی‌فهمیدم رو نوشتم.",
+       "tr": "nesfescho. tschīzāyī ke nemīfahmīdam ro neweschtam.",
+       "de": "Die Hälfte. Die Sachen, die ich nicht verstanden habe, habe ich aufgeschrieben."
+      },
+      {
+       "fa": "مهسا: عالیه! همون سؤال‌ها رو از دوستم بپرس.",
+       "tr": "ʿālīye! hamūn soʾālhā ro az dūstam bepors.",
+       "de": "Super! Genau diese Fragen stellst du meiner Freundin."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Was sucht Jonas?",
+       "optionen": [
+        "jemanden, der ihm Persisch beibringt",
+        "ein Buch",
+        "eine Wohnung"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie soll die Person sein?",
+       "optionen": [
+        "geduldig",
+        "jung",
+        "billig"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was hat Jonas aufgeschrieben?",
+       "optionen": [
+        "die Dinge, die er nicht verstanden hat",
+        "seine Hausaufgaben",
+        "Mahsas Nummer"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
