@@ -1,0 +1,1080 @@
+{
+ "id": "z1",
+ "titel": "Trainingspaket 1",
+ "beschreibung": "Wenn-Blitz, Konjunktiv-Training, Lücken & Satzbau, Wortschatz.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "Wenn-Blitz",
+   "vorschau": "اَگَر …",
+   "karten": [
+    {
+     "typ": "tempo",
+     "titel": "Blitz: wenn …",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 70,
+     "ziel": 12,
+     "woerter": [
+      {
+       "fa": "اگر باران می‌آید، با اتوبوس می‌روم.",
+       "a": "Wenn es regnet, fahre ich mit dem Bus."
+      },
+      {
+       "fa": "اگر وقت داری، با هم قهوه می‌خوریم.",
+       "a": "Wenn du Zeit hast, trinken wir zusammen Kaffee."
+      },
+      {
+       "fa": "اگر گرسنه‌ای، غذا در یخچال است.",
+       "a": "Wenn du Hunger hast: Das Essen ist im Kühlschrank."
+      },
+      {
+       "fa": "اگر فارسی یاد می‌گیری، این کتاب خیلی خوب است.",
+       "a": "Wenn du Persisch lernst, ist dieses Buch sehr gut."
+      },
+      {
+       "fa": "اگر آب صد درجه بشود، جوش می‌آید.",
+       "a": "Wenn Wasser 100 Grad erreicht, kocht es."
+      },
+      {
+       "fa": "اگر شب دیر بخوابم، صبح خسته‌ام.",
+       "a": "Wenn ich abends spät schlafen gehe, bin ich morgens müde."
+      },
+      {
+       "fa": "اگر فردا هوا خوب باشد، به پارک می‌رویم.",
+       "a": "Wenn morgen gutes Wetter ist, gehen wir in den Park."
+      },
+      {
+       "fa": "اگر فردا هوا خوب بود، به پارک می‌رویم.",
+       "a": "Wenn morgen gutes Wetter ist, gehen wir in den Park. (gleiche Bedeutung!)"
+      },
+      {
+       "fa": "اگر بخواهی، می‌توانیم چهارشنبه به دیدن مینو برویم.",
+       "a": "Wenn du willst, können wir am Mittwoch Minu besuchen."
+      },
+      {
+       "fa": "اگر تصمیمم عوض شد، به تو خبر خواهم داد.",
+       "a": "Wenn ich es mir anders überlege, sage ich dir Bescheid."
+      },
+      {
+       "fa": "اگر او را ببینم، به او می‌گویم.",
+       "a": "Wenn ich ihn/sie sehe, sage ich es ihm/ihr."
+      },
+      {
+       "fa": "اگر پول داشته باشم، تابستان به ایران خواهم رفت.",
+       "a": "Wenn ich Geld habe, werde ich im Sommer nach Iran fahren."
+      },
+      {
+       "fa": "اگر زود برسیم، جای خوب پیدا می‌کنیم.",
+       "a": "Wenn wir früh ankommen, finden wir einen guten Platz."
+      },
+      {
+       "fa": "اگر خسته‌ای، کمی استراحت کن!",
+       "a": "Wenn du müde bist, ruh dich ein bisschen aus!"
+      },
+      {
+       "fa": "اگر او را دیدی، سلام برسان!",
+       "a": "Wenn du ihn/sie siehst, grüß ihn/sie von mir!"
+      },
+      {
+       "fa": "اگر سؤالی داری، بپرس!",
+       "a": "Wenn du eine Frage hast, frag!"
+      },
+      {
+       "fa": "اگر دیر شد، به من زنگ بزن!",
+       "a": "Wenn es spät wird, ruf mich an!"
+      },
+      {
+       "fa": "اگر می‌خواهی بیایی، تا فردا به من خبر بده!",
+       "a": "Wenn du mitkommen willst, sag mir bis morgen Bescheid!"
+      },
+      {
+       "fa": "اگر سردت است، پنجره را ببند!",
+       "a": "Wenn dir kalt ist, mach das Fenster zu!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welcher Satz ist das?",
+     "fragen": [
+      {
+       "frage": "„Wenn du Hunger hast: Das Essen ist im Kühlschrank.“",
+       "optionen": [
+        "اگر گرسنه‌ای، غذا در یخچال است.",
+        "اگر بخواهی، می‌توانیم چهارشنبه به دیدن مینو برویم.",
+        "اگر باران می‌آید، با اتوبوس می‌روم."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Wenn nicht, komme ich morgen.“",
+       "optionen": [
+        "اگر نه، فردا می‌آیم.",
+        "اگر فارسی یاد می‌گیری، این کتاب خیلی خوب است.",
+        "اگر شب دیر بخوابم، صبح خسته‌ام."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Wenn morgen gutes Wetter ist, gehen wir in den Park. (gleiche Bedeutung!)“",
+       "optionen": [
+        "اگر فردا هوا خوب بود، به پارک می‌رویم.",
+        "اگر باران می‌آید، با اتوبوس می‌روم.",
+        "حتی اگر باران بیاید، می‌آیم."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Wenn morgen gutes Wetter ist, gehen wir in den Park.“",
+       "optionen": [
+        "اگر فردا هوا خوب باشد، به پارک می‌رویم.",
+        "اگر هم وقت نداری، اشکالی ندارد.",
+        "اگر فارسی یاد می‌گیری، این کتاب خیلی خوب است."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Wenn du Persisch lernst, ist dieses Buch sehr gut.“",
+       "optionen": [
+        "اگر فارسی یاد می‌گیری، این کتاب خیلی خوب است.",
+        "اگر شب دیر بخوابم، صبح خسته‌ام.",
+        "عجله کن، وگرنه دیر می‌رسیم!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Wenn wir früh ankommen, finden wir einen guten Platz.“",
+       "optionen": [
+        "اگر زود برسیم، جای خوب پیدا می‌کنیم.",
+        "حتی اگر آنها بیایند، باز هم یک جای خالی برای من هست.",
+        "اگر هم وقت نداری، اشکالی ندارد."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Wenn ich Geld habe, werde ich im Sommer nach Iran fahren.“",
+       "optionen": [
+        "اگر پول داشته باشم، تابستان به ایران خواهم رفت.",
+        "اگر وقت داری، با هم قهوه می‌خوریم.",
+        "حتی اگر آنها بیایند، باز هم یک جای خالی برای من هست."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Wenn es regnet, fahre ich mit dem Bus.“",
+       "optionen": [
+        "اگر باران می‌آید، با اتوبوس می‌روم.",
+        "اگر فردا هوا خوب باشد، به پارک می‌رویم.",
+        "حتی اگر باران بیاید، می‌آیم."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Konjunktiv-Training",
+   "vorschau": "بِخواهی · داشتِه باشی",
+   "karten": [
+    {
+     "typ": "wahl",
+     "titel": "Welche Konjunktivform?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>تو ___</span> <span class='mini'>(kommen)</span>",
+       "optionen": [
+        "بیایی",
+        "بیایَد",
+        "بیایید"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>تو بیایی</span> – <i>to biyāyī</i>"
+      },
+      {
+       "frage": "<span class='fa'>مَن ___</span> <span class='mini'>(gehen, fahren)</span>",
+       "optionen": [
+        "بِرَوَم",
+        "بِرَوَد",
+        "بِرَوی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>مَن بِرَوَم</span> – <i>man berawam</i>"
+      },
+      {
+       "frage": "<span class='fa'>آنها ___</span> <span class='mini'>(sehen)</span>",
+       "optionen": [
+        "بِبینَند",
+        "بِبینی",
+        "بِبینیم"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>آنها بِبینَند</span> – <i>ānhā bebīnand</i>"
+      },
+      {
+       "frage": "<span class='fa'>ما ___</span> <span class='mini'>(kaufen)</span>",
+       "optionen": [
+        "بِخَریم",
+        "بِخَرَند",
+        "بِخَرَد"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>ما بِخَریم</span> – <i>mā becharīm</i>"
+      },
+      {
+       "frage": "<span class='fa'>تو ___</span> <span class='mini'>(bleiben)</span>",
+       "optionen": [
+        "بِمانی",
+        "بِمانَند",
+        "بِمانیم"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>تو بِمانی</span> – <i>to bemānī</i>"
+      },
+      {
+       "frage": "<span class='fa'>تو ___</span> <span class='mini'>(wollen)</span>",
+       "optionen": [
+        "بِخواهی",
+        "بِخواهیم",
+        "بِخواهَم"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>تو بِخواهی</span> – <i>to bechāhī</i>"
+      },
+      {
+       "frage": "<span class='fa'>ما ___</span> <span class='mini'>(können)</span>",
+       "optionen": [
+        "بِتَوانیم",
+        "بِتَوانید",
+        "بِتَوانَم"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>ما بِتَوانیم</span> – <i>mā betawānīm</i>"
+      },
+      {
+       "frage": "<span class='fa'>ما ___</span> <span class='mini'>(kommen)</span>",
+       "optionen": [
+        "بیاییم",
+        "بیایَم",
+        "بیایید"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>ما بیاییم</span> – <i>mā biyāyīm</i>"
+      }
+     ]
+    },
+    {
+     "typ": "memory",
+     "links": "x",
+     "paare": [
+      {
+       "fa": "تو",
+       "tr": "",
+       "de": "",
+       "x": "داشتِه باشی"
+      },
+      {
+       "fa": "ما",
+       "tr": "",
+       "de": "",
+       "x": "داشتِه باشیم"
+      },
+      {
+       "fa": "او",
+       "tr": "",
+       "de": "",
+       "x": "داشتِه باشَد"
+      },
+      {
+       "fa": "شُما",
+       "tr": "",
+       "de": "",
+       "x": "داشتِه باشید"
+      },
+      {
+       "fa": "مَن",
+       "tr": "",
+       "de": "",
+       "x": "داشتِه باشَم"
+      },
+      {
+       "fa": "آنها",
+       "tr": "",
+       "de": "",
+       "x": "داشتِه باشَند"
+      }
+     ],
+     "titel": "Memory: داشته باشم …"
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Konjunktiv",
+     "aufgabe": "Welche Form passt zum Pronomen?",
+     "modus": "de",
+     "sekunden": 50,
+     "ziel": 10,
+     "optFa": true,
+     "woerter": [
+      {
+       "fa": "بیایَم",
+       "a": "مَن"
+      },
+      {
+       "fa": "بیایی",
+       "a": "تو"
+      },
+      {
+       "fa": "بیایَد",
+       "a": "او"
+      },
+      {
+       "fa": "بیاییم",
+       "a": "ما"
+      },
+      {
+       "fa": "بیایید",
+       "a": "شُما"
+      },
+      {
+       "fa": "بیایَند",
+       "a": "آنها"
+      },
+      {
+       "fa": "بِرَوَم",
+       "a": "مَن"
+      },
+      {
+       "fa": "بِرَوی",
+       "a": "تو"
+      },
+      {
+       "fa": "بِرَوَد",
+       "a": "او"
+      },
+      {
+       "fa": "بِرَویم",
+       "a": "ما"
+      },
+      {
+       "fa": "بِرَوید",
+       "a": "شُما"
+      },
+      {
+       "fa": "بِرَوَند",
+       "a": "آنها"
+      },
+      {
+       "fa": "بِبینَم",
+       "a": "مَن"
+      },
+      {
+       "fa": "بِبینی",
+       "a": "تو"
+      },
+      {
+       "fa": "بِبینَد",
+       "a": "او"
+      },
+      {
+       "fa": "بِبینیم",
+       "a": "ما"
+      },
+      {
+       "fa": "بِبینید",
+       "a": "شُما"
+      },
+      {
+       "fa": "بِبینَند",
+       "a": "آنها"
+      },
+      {
+       "fa": "بِخواهَم",
+       "a": "مَن"
+      },
+      {
+       "fa": "بِخواهی",
+       "a": "تو"
+      },
+      {
+       "fa": "بِخواهَد",
+       "a": "او"
+      },
+      {
+       "fa": "بِخواهیم",
+       "a": "ما"
+      },
+      {
+       "fa": "بِخواهید",
+       "a": "شُما"
+      },
+      {
+       "fa": "بِخواهَند",
+       "a": "آنها"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "titel": "Lücken & Satzbau",
+   "vorschau": "اَگَر … ___",
+   "karten": [
+    {
+     "typ": "wahl",
+     "titel": "Was passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>اگر ___، می‌توانیم با هم برویم.</span><br><span class='mini'>Wenn du willst, können wir zusammen gehen.</span>",
+       "optionen": [
+        "بخواهی",
+        "خواسته بودی",
+        "می‌خواستی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>اگر بخواهی، می‌توانیم با هم برویم.</span>"
+      },
+      {
+       "frage": "<span class='fa'>اگر خسته‌ای، کمی ___!</span><br><span class='mini'>Wenn du müde bist, ruh dich aus!</span>",
+       "optionen": [
+        "استراحت کن",
+        "استراحت کرده بودی",
+        "استراحت کردی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>اگر خسته‌ای، کمی استراحت کن!</span>"
+      },
+      {
+       "frage": "<span class='fa'>___ اگر باران بیاید، می‌آیم.</span><br><span class='mini'>Selbst wenn es regnet …</span>",
+       "optionen": [
+        "حتی",
+        "وگرنه",
+        "اما اگر نه"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>حتی اگر باران بیاید، می‌آیم.</span>"
+      },
+      {
+       "frage": "<span class='fa'>اگر فردا وقت ___، به تو زنگ می‌زنم.</span><br><span class='mini'>Wenn ich morgen Zeit habe …</span>",
+       "optionen": [
+        "داشته باشم",
+        "داشته بودم",
+        "می‌داشتم"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>اگر فردا وقت داشته باشم، به تو زنگ می‌زنم.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "bauen",
+     "titel": "Baue den Satz",
+     "trenner": " ",
+     "woerter": [
+      {
+       "fa": "اگر سؤالی داری، بپرس!",
+       "tr": "agar soʾālī dārī, bepors!",
+       "de": "Wenn du eine Frage hast, frag!",
+       "emoji": "❓",
+       "teile": [
+        "اگر",
+        "سؤالی",
+        "داری",
+        "بپرس"
+       ],
+       "extra": [
+        "بودی"
+       ]
+      },
+      {
+       "fa": "اگر خسته‌ای، کمی استراحت کن!",
+       "tr": "agar chaste-ī, kamī esterāhat kon!",
+       "de": "Wenn du müde bist, ruh dich ein bisschen aus!",
+       "emoji": "🛋️",
+       "teile": [
+        "اگر",
+        "خسته‌ای",
+        "کمی",
+        "استراحت",
+        "کن"
+       ],
+       "extra": [
+        "بودی"
+       ]
+      },
+      {
+       "fa": "اگر فردا هوا خوب بود، به پارک می‌رویم.",
+       "tr": "agar fardā hawā chūb būd, be pārk mīravīm.",
+       "de": "Wenn morgen gutes Wetter ist, gehen wir in den Park. (gleiche Bedeutung!)",
+       "emoji": "🌳",
+       "teile": [
+        "اگر",
+        "فردا",
+        "هوا",
+        "خوب",
+        "بود",
+        "به",
+        "پارک",
+        "می‌رویم"
+       ],
+       "extra": [
+        "بودی"
+       ]
+      },
+      {
+       "fa": "اگر گرسنه‌ای، غذا در یخچال است.",
+       "tr": "agar gorosne-ī, ghazā dar yachtschāl ast.",
+       "de": "Wenn du Hunger hast: Das Essen ist im Kühlschrank.",
+       "emoji": "🥘",
+       "teile": [
+        "اگر",
+        "گرسنه‌ای",
+        "غذا",
+        "در",
+        "یخچال",
+        "است"
+       ],
+       "extra": [
+        "بودی"
+       ]
+      },
+      {
+       "fa": "اگر آب صد درجه بشود، جوش می‌آید.",
+       "tr": "agar āb sad daradsche beschawad, dschūsch mīāyad.",
+       "de": "Wenn Wasser 100 Grad erreicht, kocht es.",
+       "emoji": "♨️",
+       "teile": [
+        "اگر",
+        "آب",
+        "صد",
+        "درجه",
+        "بشود",
+        "جوش",
+        "می‌آید"
+       ],
+       "extra": [
+        "بودی"
+       ]
+      },
+      {
+       "fa": "اگر فارسی یاد می‌گیری، این کتاب خیلی خوب است.",
+       "tr": "agar fārsī yād mīgīrī, īn ketāb cheylī chūb ast.",
+       "de": "Wenn du Persisch lernst, ist dieses Buch sehr gut.",
+       "emoji": "📘",
+       "teile": [
+        "اگر",
+        "فارسی",
+        "یاد",
+        "می‌گیری",
+        "این",
+        "کتاب",
+        "خیلی",
+        "خوب",
+        "است"
+       ],
+       "extra": [
+        "بودی"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d",
+   "titel": "Wortschatz: Lektion 22",
+   "vorschau": "بَچّه‌گُربه تَصمیم",
+   "karten": [
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "تَصمیم",
+       "tr": "tasmīm",
+       "de": "Entscheidung",
+       "emoji": "🤔"
+      },
+      {
+       "fa": "اَگَر",
+       "tr": "agar",
+       "de": "wenn, falls",
+       "emoji": "❓"
+      },
+      {
+       "fa": "تَوَلُّد",
+       "tr": "tawallod",
+       "de": "Geburtstag",
+       "emoji": "🎂"
+      },
+      {
+       "fa": "جایِ خالی",
+       "tr": "dschā-ye chālī",
+       "de": "freier Platz",
+       "emoji": "💺"
+      },
+      {
+       "fa": "دوچَرخه",
+       "tr": "dotscharche",
+       "de": "Fahrrad",
+       "emoji": "🚲"
+      },
+      {
+       "fa": "بَچّه‌گُربه",
+       "tr": "batschtschegorbe",
+       "de": "Kätzchen",
+       "emoji": "🐈"
+      }
+     ],
+     "titel": "Memory: Bild & Wort"
+    },
+    {
+     "typ": "memory",
+     "links": "tr",
+     "paare": [
+      {
+       "fa": "کِتابخانه",
+       "tr": "ketābchāne",
+       "de": "Bibliothek",
+       "emoji": "📚"
+      },
+      {
+       "fa": "اَگَر هَم",
+       "tr": "agar ham",
+       "de": "und falls (doch) …",
+       "emoji": "➕"
+      },
+      {
+       "fa": "هِدیه",
+       "tr": "hedye",
+       "de": "Geschenk",
+       "emoji": "🎁"
+      },
+      {
+       "fa": "دوچَرخه",
+       "tr": "dotscharche",
+       "de": "Fahrrad",
+       "emoji": "🚲"
+      },
+      {
+       "fa": "حَتّیٰ اَگَر",
+       "tr": "hattā agar",
+       "de": "selbst wenn",
+       "emoji": "💪"
+      },
+      {
+       "fa": "جایِ خالی",
+       "tr": "dschā-ye chālī",
+       "de": "freier Platz",
+       "emoji": "💺"
+      }
+     ],
+     "titel": "Memory: Schrift & Aussprache"
+    },
+    {
+     "typ": "bauen",
+     "titel": "Schreib das Wort ab",
+     "zeigen": true,
+     "woerter": [
+      {
+       "fa": "تَصمیم",
+       "tr": "tasmīm",
+       "de": "Entscheidung",
+       "emoji": "🤔",
+       "teile": [
+        "ت",
+        "ص",
+        "م",
+        "ی",
+        "م"
+       ],
+       "extra": [
+        "ر"
+       ]
+      },
+      {
+       "fa": "اَگَر",
+       "tr": "agar",
+       "de": "wenn, falls",
+       "emoji": "❓",
+       "teile": [
+        "ا",
+        "گ",
+        "ر"
+       ],
+       "extra": [
+        "ش"
+       ]
+      },
+      {
+       "fa": "دوچَرخه",
+       "tr": "dotscharche",
+       "de": "Fahrrad",
+       "emoji": "🚲",
+       "teile": [
+        "د",
+        "و",
+        "چ",
+        "ر",
+        "خ",
+        "ه"
+       ],
+       "extra": [
+        "ز"
+       ]
+      },
+      {
+       "fa": "کِتابخانه",
+       "tr": "ketābchāne",
+       "de": "Bibliothek",
+       "emoji": "📚",
+       "teile": [
+        "ک",
+        "ت",
+        "ا",
+        "ب",
+        "خ",
+        "ا",
+        "ن",
+        "ه"
+       ],
+       "extra": [
+        "س"
+       ]
+      },
+      {
+       "fa": "هِدیه",
+       "tr": "hedye",
+       "de": "Geschenk",
+       "emoji": "🎁",
+       "teile": [
+        "ه",
+        "د",
+        "ی",
+        "ه"
+       ],
+       "extra": [
+        "س"
+       ]
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitzlesen: Bedeutung",
+     "modus": "de",
+     "sekunden": 60,
+     "ziel": 12,
+     "woerter": [
+      {
+       "fa": "بَچّه‌گُربه",
+       "de": "Kätzchen"
+      },
+      {
+       "fa": "تَصمیم",
+       "de": "Entscheidung"
+      },
+      {
+       "fa": "هِدیه",
+       "de": "Geschenk"
+      },
+      {
+       "fa": "دوچَرخه",
+       "de": "Fahrrad"
+      },
+      {
+       "fa": "کِتابخانه",
+       "de": "Bibliothek"
+      },
+      {
+       "fa": "مَرکَزِ شَهر",
+       "de": "Stadtzentrum"
+      },
+      {
+       "fa": "جایِ خالی",
+       "de": "freier Platz"
+      },
+      {
+       "fa": "تَوَلُّد",
+       "de": "Geburtstag"
+      },
+      {
+       "fa": "اَگَر",
+       "de": "wenn, falls"
+      },
+      {
+       "fa": "حَتّیٰ اَگَر",
+       "de": "selbst wenn"
+      },
+      {
+       "fa": "اَگَر هَم",
+       "de": "und falls (doch) …"
+      },
+      {
+       "fa": "وَگَرنه",
+       "de": "sonst, andernfalls"
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitzlesen: Aussprache",
+     "modus": "tr",
+     "sekunden": 60,
+     "ziel": 12,
+     "woerter": [
+      {
+       "fa": "بَچّه‌گُربه",
+       "tr": "batschtschegorbe"
+      },
+      {
+       "fa": "تَصمیم",
+       "tr": "tasmīm"
+      },
+      {
+       "fa": "هِدیه",
+       "tr": "hedye"
+      },
+      {
+       "fa": "دوچَرخه",
+       "tr": "dotscharche"
+      },
+      {
+       "fa": "کِتابخانه",
+       "tr": "ketābchāne"
+      },
+      {
+       "fa": "مَرکَزِ شَهر",
+       "tr": "markaz-e schahr"
+      },
+      {
+       "fa": "جایِ خالی",
+       "tr": "dschā-ye chālī"
+      },
+      {
+       "fa": "تَوَلُّد",
+       "tr": "tawallod"
+      },
+      {
+       "fa": "اَگَر",
+       "tr": "agar"
+      },
+      {
+       "fa": "حَتّیٰ اَگَر",
+       "tr": "hattā agar"
+      },
+      {
+       "fa": "اَگَر هَم",
+       "tr": "agar ham"
+      },
+      {
+       "fa": "وَگَرنه",
+       "tr": "wagarna"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "e",
+   "titel": "Geschichte: Wiederholung",
+   "vorschau": "مینو و پَشمَک",
+   "karten": [
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Wörter",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 50,
+     "ziel": 10,
+     "woerter": [
+      {
+       "fa": "بَچّه‌گُربه",
+       "a": "Kätzchen"
+      },
+      {
+       "fa": "تَصمیم",
+       "a": "Entscheidung"
+      },
+      {
+       "fa": "هِدیه",
+       "a": "Geschenk"
+      },
+      {
+       "fa": "دوچَرخه",
+       "a": "Fahrrad"
+      },
+      {
+       "fa": "کِتابخانه",
+       "a": "Bibliothek"
+      },
+      {
+       "fa": "مَرکَزِ شَهر",
+       "a": "Stadtzentrum"
+      },
+      {
+       "fa": "جایِ خالی",
+       "a": "freier Platz"
+      },
+      {
+       "fa": "تَوَلُّد",
+       "a": "Geburtstag"
+      },
+      {
+       "fa": "اَگَر",
+       "a": "wenn, falls"
+      },
+      {
+       "fa": "حَتّیٰ اَگَر",
+       "a": "selbst wenn"
+      },
+      {
+       "fa": "اَگَر هَم",
+       "a": "und falls (doch) …"
+      },
+      {
+       "fa": "وَگَرنه",
+       "a": "sonst, andernfalls"
+      },
+      {
+       "fa": "اَگَر نَه",
+       "a": "wenn nicht"
+      },
+      {
+       "fa": "دَر غِیرِ این صورَت",
+       "a": "andernfalls (förmlich)"
+      }
+     ]
+    },
+    {
+     "typ": "memory",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "تَصمیم",
+       "tr": "tasmīm",
+       "de": "Entscheidung",
+       "emoji": "🤔"
+      },
+      {
+       "fa": "مَرکَزِ شَهر",
+       "tr": "markaz-e schahr",
+       "de": "Stadtzentrum",
+       "emoji": "🏙️"
+      },
+      {
+       "fa": "کِتابخانه",
+       "tr": "ketābchāne",
+       "de": "Bibliothek",
+       "emoji": "📚"
+      },
+      {
+       "fa": "دوچَرخه",
+       "tr": "dotscharche",
+       "de": "Fahrrad",
+       "emoji": "🚲"
+      },
+      {
+       "fa": "جایِ خالی",
+       "tr": "dschā-ye chālī",
+       "de": "freier Platz",
+       "emoji": "💺"
+      },
+      {
+       "fa": "بَچّه‌گُربه",
+       "tr": "batschtschegorbe",
+       "de": "Kätzchen",
+       "emoji": "🐈"
+      }
+     ],
+     "titel": "Memory: Geschichte"
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "اگر بخواهی، می‌توانیم چهارشنبه به دیدن مینو برویم.",
+       "tr": "agar bechāhī, mītawānīm tschahārschanbe be dīdan-e mīnū berawīm.",
+       "de": "Wenn du willst, können wir am Mittwoch Minu besuchen.",
+       "emoji": "🐈"
+      },
+      {
+       "fa": "عجله کن، وگرنه دیر می‌رسیم!",
+       "tr": "ʿadschale kon, wagarna dīr mīresīm!",
+       "de": "Beeil dich, sonst kommen wir zu spät!",
+       "emoji": "🏃"
+      },
+      {
+       "fa": "اگر تصمیمم عوض شد، به تو خبر خواهم داد.",
+       "tr": "agar tasmīmam ʿawaz schod, be to chabar chāham dād.",
+       "de": "Wenn ich es mir anders überlege, sage ich dir Bescheid.",
+       "emoji": "🔄"
+      },
+      {
+       "fa": "حتی اگر آنها بیایند، باز هم یک جای خالی برای من هست.",
+       "tr": "hattā agar ānhā biyāyand, bāz ham yek dschā-ye chālī barāye man hast.",
+       "de": "Selbst wenn sie mitkommen, gibt es trotzdem einen freien Platz für mich.",
+       "emoji": "🚗"
+      },
+      {
+       "fa": "اگر نه، فردا می‌آیم.",
+       "tr": "agar na, fardā mīāyam.",
+       "de": "Wenn nicht, komme ich morgen.",
+       "emoji": "📅"
+      },
+      {
+       "fa": "حتی اگر باران بیاید، می‌آیم.",
+       "tr": "hattā agar bārān biyāyad, mīāyam.",
+       "de": "Selbst wenn es regnet, komme ich.",
+       "emoji": "☔"
+      }
+     ],
+     "titel": "Was bedeutet der Satz?"
+    }
+   ]
+  }
+ ]
+}

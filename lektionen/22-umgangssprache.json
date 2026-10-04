@@ -1,0 +1,208 @@
+{
+ "id": "ug",
+ "art": "umgangssprache",
+ "titel": "Umgangssprache: So spricht man im Alltag",
+ "beschreibung": "Freiwilliger Extra-Teil: اگه im Gespräch.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "So spricht man: اَگه",
+   "vorschau": "اَگه بِخوای …",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Schrift ≠ Gespräch",
+     "text": "<ul><li><span class='fa'>اگر → اَگه</span> <i>age</i></li><li><span class='fa'>بخواهی → بِخوای</span> · <span class='fa'>بیایی → بیای</span> · <span class='fa'>بیایند → بیان</span></li><li><span class='fa'>آنها → اونا</span> · <span class='fa'>می‌آیم → میام</span></li><li>Im Gespräch steht nach <span class='fa'>اگه</span> sehr oft das <b>Präteritum</b>: <span class='fa'>اگه وقت داشتم …</span></li></ul>",
+     "stil": "merke"
+    },
+    {
+     "typ": "paare",
+     "links": "x",
+     "paare": [
+      {
+       "fa": "اَگَر",
+       "tr": "agar",
+       "de": "wenn",
+       "x": "اَگه"
+      },
+      {
+       "fa": "بِخواهی",
+       "tr": "bechāhī",
+       "de": "(wenn) du willst",
+       "x": "بِخوای"
+      },
+      {
+       "fa": "بیایی",
+       "tr": "biyāyī",
+       "de": "(dass) du kommst",
+       "x": "بیای"
+      },
+      {
+       "fa": "خَبَر بِدِه",
+       "tr": "chabar bede",
+       "de": "sag Bescheid",
+       "x": "خَبَر بِده"
+      },
+      {
+       "fa": "نِمی‌دانَم",
+       "tr": "nemīdānam",
+       "de": "ich weiß nicht",
+       "x": "نِمی‌دونَم"
+      },
+      {
+       "fa": "آنها",
+       "tr": "ānhā",
+       "de": "sie",
+       "x": "اونا"
+      }
+     ],
+     "titel": "Schrift ↔ Gespräch"
+    },
+    {
+     "typ": "sortieren",
+     "titel": "Schrift oder Gespräch?",
+     "frage": "Schriftsprache oder Umgangssprache?",
+     "kategorien": [
+      "✍️ Schriftsprache",
+      "🗣️ Umgangssprache"
+     ],
+     "items": [
+      {
+       "fa": "اَگَر",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "بِخواهی",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "بیایی",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "خَبَر بِدِه",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "نِمی‌دانَم",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "آنها",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "اَگه",
+       "k": 1,
+       "say": false,
+       "e": "<i>age</i> – geschrieben: <span class='fa'>اَگَر</span>"
+      },
+      {
+       "fa": "بِخوای",
+       "k": 1,
+       "say": false,
+       "e": "<i>bechāy</i> – geschrieben: <span class='fa'>بِخواهی</span>"
+      },
+      {
+       "fa": "بیای",
+       "k": 1,
+       "say": false,
+       "e": "<i>biyāy</i> – geschrieben: <span class='fa'>بیایی</span>"
+      },
+      {
+       "fa": "خَبَر بِده",
+       "k": 1,
+       "say": false,
+       "e": "<i>chabar bede</i> – geschrieben: <span class='fa'>خَبَر بِدِه</span>"
+      },
+      {
+       "fa": "نِمی‌دونَم",
+       "k": 1,
+       "say": false,
+       "e": "<i>nemīdūnam</i> – geschrieben: <span class='fa'>نِمی‌دانَم</span>"
+      },
+      {
+       "fa": "اونا",
+       "k": 1,
+       "say": false,
+       "e": "<i>ūnā</i> – geschrieben: <span class='fa'>آنها</span>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Am Telefon",
+   "vorschau": "اَگه جا نَبود …",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Shima & Shahriyar – umgangssprachlich",
+     "text": "Umgangssprache! Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "اَگه بِخوای، چهارشَنبه با هَم می‌ریم پیشِ مینو.",
+       "tr": "age bechāy, tschahārschanbe bā ham mīrīm pīsch-e mīnū.",
+       "de": "Wenn du willst, gehen wir Mittwoch zusammen zu Minu."
+      },
+      {
+       "fa": "نِمی‌دونَم … اَگه وَقت داشتَم، خَبَرِت می‌کُنَم.",
+       "tr": "nemīdūnam … age waght dāschtam, chabaret mīkonam.",
+       "de": "Weiß nicht … Wenn ich Zeit habe, sag ich dir Bescheid."
+      },
+      {
+       "fa": "باشه، ولی تا فَردا بِگو. اَگه اونا هَم بیان، جا نِداریم.",
+       "tr": "bāsche, walī tā fardā begū. age ūnā ham biyān, dschā nadārīm.",
+       "de": "Okay, aber sag’s bis morgen. Wenn die auch kommen, haben wir keinen Platz."
+      },
+      {
+       "fa": "اَگه جا نَبود، با دوچَرخه میام!",
+       "tr": "age dschā nabūd, bā dotscharche miyām!",
+       "de": "Wenn kein Platz ist, komm ich mit dem Rad!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Verstanden?",
+     "fragen": [
+      {
+       "frage": "Wann wollen sie zu Minu?",
+       "optionen": [
+        "Mittwoch",
+        "Donnerstag",
+        "Samstag"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "<span class='fa'>اَگه</span> ist …",
+       "optionen": [
+        "umgangssprachlich für اگر",
+        "ein Name",
+        "„aber“"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was macht Shahriyar, wenn kein Platz ist?",
+       "optionen": [
+        "Er kommt mit dem Rad.",
+        "Er bleibt zu Hause.",
+        "Er nimmt ein Taxi."
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

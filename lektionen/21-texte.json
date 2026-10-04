@@ -1,0 +1,698 @@
+{
+ "id": "tx",
+ "art": "texte",
+ "titel": "Texte & Dialoge",
+ "beschreibung": "Lesetexte mit Fragen und Dialoge zum Ordnen.",
+ "stationen": [
+  {
+   "id": "t1",
+   "titel": "Kurztext: Wünsche zum neuen Jahr",
+   "vorschau": "آرزوهای سال نو",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>آرزو</span> – Wunsch · <span class='fa'>سالم</span> – gesund · <span class='fa'>مخالف</span> – dagegen</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Kurztext: Wünsche zum neuen Jahr",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "نوروز است و همه برای هم آرزوهای خوب می‌کنند.",
+       "tr": "nourūz ast o hame barāye ham ārezūhā-ye chūb mīkonand.",
+       "de": "Es ist Nouruz, und alle wünschen einander Gutes."
+      },
+      {
+       "fa": "مادربزرگ می‌گوید: «امیدوارم همه سالم باشید.»",
+       "tr": "mādarbozorg mīgūyad: «omīdwāram hame sālem bāschīd.»",
+       "de": "Großmutter sagt: „Ich hoffe, ihr seid alle gesund.“"
+      },
+      {
+       "fa": "پدر برای سارا آرزو می‌کند که در کنکور قبول شود.",
+       "tr": "pedar barāye sārā ārezū mīkonad ke dar konkūr ghabūl schawad.",
+       "de": "Vater wünscht Sara, dass sie den Konkur besteht."
+      },
+      {
+       "fa": "سارا می‌گوید: «کاش امسال کمتر درس می‌خواندیم و بیشتر سفر می‌کردیم!»",
+       "tr": "sārā mīgūyad: «kāsch emsāl kamtar dars mīchāndīm o bīschtar safar mīkardīm!»",
+       "de": "Sara sagt: „Wenn wir dieses Jahr doch weniger lernen und mehr reisen würden!“"
+      },
+      {
+       "fa": "برادر کوچکش می‌گوید: «کاش پارسال یک گربه خریده بودیم!»",
+       "tr": "barādar-e kūtschakasch mīgūyad: «kāsch pārsāl yek gorbe charīde būdīm!»",
+       "de": "Ihr kleiner Bruder sagt: „Hätten wir doch letztes Jahr eine Katze gekauft!“"
+      },
+      {
+       "fa": "مادر می‌خندد: «امیدوارم امسال یک گربه داشته باشیم!»",
+       "tr": "mādar mīchandad: «omīdwāram emsāl yek gorbe dāschte bāschīm!»",
+       "de": "Die Mutter lacht: „Hoffentlich haben wir dieses Jahr eine Katze!“"
+      },
+      {
+       "fa": "در آخر، همه با هم می‌گویند: «سال نو مبارک!»",
+       "tr": "dar āchar, hame bā ham mīgūyand: «sāl-e no mobārak!»",
+       "de": "Zum Schluss sagen alle zusammen: „Frohes neues Jahr!“"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "مادربزرگ آرزوی سلامتی می‌کند.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "سارا می‌خواهد بیشتر درس بخواند.",
+       "fest": true,
+       "erkl": "Sie wünscht sich, <b>weniger</b> zu lernen und mehr zu reisen."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "برادر کوچک یک گربه می‌خواهد.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "مادر با گربه مخالف است.",
+       "fest": true,
+       "erkl": "Sie hofft, dass sie dieses Jahr eine Katze <b>haben</b>."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Was wünscht der Vater Sara?",
+       "optionen": [
+        "dass sie den Konkur besteht",
+        "dass sie reist",
+        "dass sie eine Katze hat"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was sagen alle am Ende?",
+       "optionen": [
+        "Frohes neues Jahr!",
+        "Gute Reise!",
+        "Gute Besserung!"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was hätte der Bruder letztes Jahr gern gehabt?",
+       "optionen": [
+        "eine Katze",
+        "ein Fahrrad",
+        "eine Reise"
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "مادربزرگ می‌گوید: «امیدوارم همه سالم باشید.»",
+       "tr": "mādarbozorg mīgūyad: «omīdwāram hame sālem bāschīd.»",
+       "de": "Großmutter sagt: „Ich hoffe, ihr seid alle gesund.“"
+      },
+      {
+       "fa": "پدر برای سارا آرزو می‌کند که در کنکور قبول شود.",
+       "tr": "pedar barāye sārā ārezū mīkonad ke dar konkūr ghabūl schawad.",
+       "de": "Vater wünscht Sara, dass sie den Konkur besteht."
+      },
+      {
+       "fa": "سارا می‌گوید: «کاش امسال کمتر درس می‌خواندیم و بیشتر سفر می‌کردیم!»",
+       "tr": "sārā mīgūyad: «kāsch emsāl kamtar dars mīchāndīm o bīschtar safar mīkardīm!»",
+       "de": "Sara sagt: „Wenn wir dieses Jahr doch weniger lernen und mehr reisen würden!“"
+      },
+      {
+       "fa": "برادر کوچکش می‌گوید: «کاش پارسال یک گربه خریده بودیم!»",
+       "tr": "barādar-e kūtschakasch mīgūyad: «kāsch pārsāl yek gorbe charīde būdīm!»",
+       "de": "Ihr kleiner Bruder sagt: „Hätten wir doch letztes Jahr eine Katze gekauft!“"
+      },
+      {
+       "fa": "مادر می‌خندد: «امیدوارم امسال یک گربه داشته باشیم!»",
+       "tr": "mādar mīchandad: «omīdwāram emsāl yek gorbe dāschte bāschīm!»",
+       "de": "Die Mutter lacht: „Hoffentlich haben wir dieses Jahr eine Katze!“"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t2",
+   "titel": "Text: Taarof – die Kunst der Höflichkeit",
+   "vorschau": "تعارف",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>سوار شدن</span> – einsteigen · <span class='fa'>تشکر کردن</span> – sich bedanken · <span class='fa'>تعجب</span> – Erstaunen · <span class='fa'>داد زدن</span> – rufen, schreien · <span class='fa'>میزبان</span> – Gastgeber/in · <span class='fa'>دیگر</span> – (hier) ja schon</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Text: Taarof – die Kunst der Höflichkeit",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "یوناس تازه به تهران آمده است و هنوز تعارف را خوب نمی‌شناسد.",
+       "tr": "yūnās tāze be tehrān āmade ast o hanūz taʿārof rā chūb nemīschenāsad.",
+       "de": "Jonas ist gerade erst nach Teheran gekommen und kennt Taarof noch nicht gut."
+      },
+      {
+       "fa": "روز اول سوار تاکسی شد. وقتی رسید، پرسید: «چقدر می‌شود؟»",
+       "tr": "rūz-e awwal sawār-e tāksī schod. waghtī resīd, porsīd: «tscheghadr mīschawad?»",
+       "de": "Am ersten Tag stieg er in ein Taxi. Als er ankam, fragte er: „Was macht das?“"
+      },
+      {
+       "fa": "راننده گفت: «قابلی ندارد!»",
+       "tr": "rānande goft: «ghābelī nadārad!»",
+       "de": "Der Fahrer sagte: „Nicht der Rede wert!“"
+      },
+      {
+       "fa": "یوناس فکر کرد که سفر رایگان است، تشکر کرد و رفت!",
+       "tr": "yūnās fekr kard ke safar rāygān ast, taschakkor kard o raft!",
+       "de": "Jonas dachte, die Fahrt sei kostenlos, bedankte sich und ging!"
+      },
+      {
+       "fa": "راننده با تعجب پشت سرش داد زد: «آقا! کرایه!»",
+       "tr": "rānande bā taʿadschdschob poscht-e sarasch dād zad: «āghā! kerāye!»",
+       "de": "Der Fahrer rief ihm erstaunt hinterher: „Mein Herr! Der Fahrpreis!“"
+      },
+      {
+       "fa": "حالا یوناس می‌داند که «قابلی ندارد» فقط یک تعارف است.",
+       "tr": "hālā yūnās mīdānad ke «ghābelī nadārad» faghat yek taʿārof ast.",
+       "de": "Jetzt weiß Jonas, dass „nicht der Rede wert“ nur eine Höflichkeitsfloskel ist."
+      },
+      {
+       "fa": "هفته‌ی بعد او را به خانه‌ای دعوت کردند. میزبان سه بار به او چای تعارف کرد.",
+       "tr": "hafte-ye baʿd ū rā be chāneī daʿwat kardand. mīzbān se bār be ū tschāy taʿārof kard.",
+       "de": "In der Woche darauf wurde er in ein Haus eingeladen. Der Gastgeber bot ihm dreimal Tee an."
+      },
+      {
+       "fa": "یوناس دو بار گفت: «نه، ممنون» و بار سوم چای را برداشت.",
+       "tr": "yūnās do bār goft: «na, mamnūn» o bār-e sewwom tschāy rā bardāscht.",
+       "de": "Jonas sagte zweimal „Nein, danke“ und nahm beim dritten Mal den Tee."
+      },
+      {
+       "fa": "میزبان خندید و گفت: «آفرین! تو دیگر ایرانی شده‌ای!»",
+       "tr": "mīzbān chandīd o goft: «āfarīn! to dīgar īrānī schode-ī!»",
+       "de": "Der Gastgeber lachte und sagte: „Bravo! Du bist ja schon ein Iraner geworden!“"
+      },
+      {
+       "fa": "یوناس می‌گوید: «کاش از روز اول کسی تعارف را برایم توضیح داده بود!»",
+       "tr": "yūnās mīgūyad: «kāsch az rūz-e awwal kasī taʿārof rā barāyam tozīh dāde būd!»",
+       "de": "Jonas sagt: „Hätte mir doch jemand vom ersten Tag an Taarof erklärt!“"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "یوناس تعارف را از اول خوب می‌شناخت.",
+       "fest": true,
+       "erkl": "Er kannte es <b>noch nicht</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "راننده واقعا نمی‌خواست پول بگیرد.",
+       "fest": true,
+       "erkl": "Es war nur <b>Taarof</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "میزبان سه بار چای تعارف کرد.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "یوناس بار سوم چای را برداشت.",
+       "fest": true
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Was dachte Jonas, als der Fahrer „قابلی ندارد“ sagte?",
+       "optionen": [
+        "Die Fahrt sei kostenlos.",
+        "Er müsse mehr zahlen.",
+        "Der Fahrer sei wütend."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie oft lehnte Jonas den Tee ab?",
+       "optionen": [
+        "zweimal",
+        "dreimal",
+        "keinmal"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was wünscht sich Jonas im Nachhinein?",
+       "optionen": [
+        "dass ihm jemand Taarof früher erklärt hätte",
+        "dass er Tee bekommen hätte",
+        "dass er Taxi gefahren wäre"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t3",
+   "titel": "Profi-Text: Eine Glückwunschkarte",
+   "vorschau": "کارت تبریک",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>تبریک گفتن</span> – gratulieren · <span class='fa'>قبولی</span> – Zulassung, Bestehen</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Profi-Text: Eine Glückwunschkarte",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "سارای عزیز، سلام!",
+       "tr": "sārā-ye ʿazīz, salām!",
+       "de": "Liebe Sara, hallo!"
+      },
+      {
+       "fa": "قبولی‌ات در دانشگاه را تبریک می‌گویم!",
+       "tr": "ghabūlīat dar dāneschgāh rā tabrīk mīgūyam!",
+       "de": "Herzlichen Glückwunsch zur Zulassung an der Uni!"
+      },
+      {
+       "fa": "امیدوارم سال‌های خوبی در تهران داشته باشی.",
+       "tr": "omīdwāram sālhā-ye chūbī dar tehrān dāschte bāschī.",
+       "de": "Ich hoffe, du hast schöne Jahre in Teheran."
+      },
+      {
+       "fa": "کاش می‌توانستم در جشن تو باشم، اما سرم خیلی شلوغ است.",
+       "tr": "kāsch mītawānestam dar dschaschn-e to bāscham, ammā saram cheylī schologh ast.",
+       "de": "Wenn ich doch bei deiner Feier sein könnte, aber ich habe sehr viel zu tun."
+      },
+      {
+       "fa": "دلم برایت خیلی تنگ شده است.",
+       "tr": "delam barāyat cheylī tang schode ast.",
+       "de": "Ich vermisse dich sehr."
+      },
+      {
+       "fa": "برایت آرزوی موفقیت می‌کنم. قربانت، نسرین",
+       "tr": "barāyat ārezū-ye mowaffaghiyat mīkonam. ghorbānat, nasrīn",
+       "de": "Ich wünsche dir Erfolg. Alles Liebe, Nasrin"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "سارا در دانشگاه قبول شده است.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "نسرین به جشن می‌آید.",
+       "fest": true,
+       "erkl": "Sie kann <b>nicht</b> kommen."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "نسرین دلش برای سارا تنگ شده است.",
+       "fest": true
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Warum gratuliert Nasrin?",
+       "optionen": [
+        "zur Zulassung an der Uni",
+        "zum Geburtstag",
+        "zur Hochzeit"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Warum kommt Nasrin nicht?",
+       "optionen": [
+        "Sie hat viel zu tun.",
+        "Sie ist krank.",
+        "Sie wohnt im Ausland."
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d1",
+   "titel": "Dialog: Taarof beim Bezahlen",
+   "vorschau": "قابلی ندارد",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Lina kauft in einem kleinen Laden ein Tuch.</p><p><span class='fa'>به سلامت</span> – (beim Abschied) gehen Sie wohlbehalten</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "لینا: این شال چند است؟",
+       "tr": "īn schāl tschand ast?",
+       "de": "Was kostet dieser Schal?"
+      },
+      {
+       "fa": "فروشنده: قابلی ندارد، خانم.",
+       "tr": "ghābelī nadārad, chānom.",
+       "de": "Nicht der Rede wert, meine Dame."
+      },
+      {
+       "fa": "لینا: خواهش می‌کنم، بفرمایید چند است؟",
+       "tr": "chāhesch mīkonam, befarmāyīd tschand ast?",
+       "de": "Bitte, sagen Sie mir, was er kostet."
+      },
+      {
+       "fa": "فروشنده: برای شما چهارصد هزار تومان.",
+       "tr": "barāye schomā tschahārsad hezār tomān.",
+       "de": "Für Sie vierhunderttausend Toman."
+      },
+      {
+       "fa": "لینا: بفرمایید. خیلی ممنون.",
+       "tr": "befarmāyīd. cheylī mamnūn.",
+       "de": "Bitte schön. Vielen Dank."
+      },
+      {
+       "fa": "فروشنده: مبارک باشد! به سلامت.",
+       "tr": "mobārak bāschad! be salāmat.",
+       "de": "Viel Freude damit! Auf Wiedersehen."
+      },
+      {
+       "fa": "لینا: خسته نباشید!",
+       "tr": "chaste nabāschīd!",
+       "de": "Schönen Tag noch! (≈ Gute Arbeit!)"
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "لینا: این شال چند است؟",
+       "tr": "īn schāl tschand ast?",
+       "de": "Was kostet dieser Schal?"
+      },
+      {
+       "fa": "فروشنده: قابلی ندارد، خانم.",
+       "tr": "ghābelī nadārad, chānom.",
+       "de": "Nicht der Rede wert, meine Dame."
+      },
+      {
+       "fa": "لینا: خواهش می‌کنم، بفرمایید چند است؟",
+       "tr": "chāhesch mīkonam, befarmāyīd tschand ast?",
+       "de": "Bitte, sagen Sie mir, was er kostet."
+      },
+      {
+       "fa": "فروشنده: برای شما چهارصد هزار تومان.",
+       "tr": "barāye schomā tschahārsad hezār tomān.",
+       "de": "Für Sie vierhunderttausend Toman."
+      },
+      {
+       "fa": "لینا: بفرمایید. خیلی ممنون.",
+       "tr": "befarmāyīd. cheylī mamnūn.",
+       "de": "Bitte schön. Vielen Dank."
+      },
+      {
+       "fa": "فروشنده: مبارک باشد! به سلامت.",
+       "tr": "mobārak bāschad! be salāmat.",
+       "de": "Viel Freude damit! Auf Wiedersehen."
+      },
+      {
+       "fa": "لینا: خسته نباشید!",
+       "tr": "chaste nabāschīd!",
+       "de": "Schönen Tag noch! (≈ Gute Arbeit!)"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Was antwortet der Verkäufer zuerst auf die Preisfrage?",
+       "optionen": [
+        "Nicht der Rede wert.",
+        "Vierhunderttausend.",
+        "Das ist teuer."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was kostet der Schal?",
+       "optionen": [
+        "400 000 Toman",
+        "40 000 Toman",
+        "4 Millionen Toman"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was sagt Lina zum Abschied?",
+       "optionen": [
+        "Gute Arbeit!",
+        "Guten Appetit!",
+        "Prost!"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d2",
+   "titel": "Dialog: Ich vermisse dich",
+   "vorschau": "دلم برایت تنگ شده",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Mina ruft ihre Freundin Tara an, die in Hamburg wohnt.</p><p><span class='fa'>همین‌طور</span> – ebenso · <span class='fa'>چه خبر؟</span> – was gibt’s Neues? · <span class='fa'>تعطیلی</span> – freie Tage</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "مینا: سلام تارا جان! دلم برایت خیلی تنگ شده!",
+       "tr": "salām tārā dschān! delam barāyat cheylī tang schode!",
+       "de": "Hallo liebe Tara! Ich vermisse dich so sehr!"
+      },
+      {
+       "fa": "تارا: من هم همین‌طور! کاش نزدیک‌تر بودیم.",
+       "tr": "man ham hamīntor! kāsch nazdīktar būdīm.",
+       "de": "Ich dich auch! Wären wir doch näher beieinander."
+      },
+      {
+       "fa": "مینا: چه خبر؟ کارت خوب است؟",
+       "tr": "tsche chabar? kārat chūb ast?",
+       "de": "Was gibt’s Neues? Läuft die Arbeit gut?"
+      },
+      {
+       "fa": "تارا: سرم خیلی شلوغ است. کاش یک هفته تعطیلی داشتم!",
+       "tr": "saram cheylī schologh ast. kāsch yek hafte taʿtīlī dāschtam!",
+       "de": "Ich habe sehr viel zu tun. Hätte ich doch eine Woche Urlaub!"
+      },
+      {
+       "fa": "مینا: امیدوارم تابستان بتوانی به کیل بیایی.",
+       "tr": "omīdwāram tābestān betawānī be kīl biyāyī.",
+       "de": "Ich hoffe, du kannst im Sommer nach Kiel kommen."
+      },
+      {
+       "fa": "تارا: دلم می‌خواهد بیایم. قول می‌دهم!",
+       "tr": "delam mīchāhad biyāyam. ghoul mīdeham!",
+       "de": "Ich würde so gern kommen. Versprochen!"
+      },
+      {
+       "fa": "مینا: عالی! چشمم به راه است!",
+       "tr": "ʿālī! tscheschmam be rāh ast!",
+       "de": "Super! Ich warte sehnsüchtig! (wörtl.: mein Auge ist auf dem Weg)"
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "مینا: سلام تارا جان! دلم برایت خیلی تنگ شده!",
+       "tr": "salām tārā dschān! delam barāyat cheylī tang schode!",
+       "de": "Hallo liebe Tara! Ich vermisse dich so sehr!"
+      },
+      {
+       "fa": "تارا: من هم همین‌طور! کاش نزدیک‌تر بودیم.",
+       "tr": "man ham hamīntor! kāsch nazdīktar būdīm.",
+       "de": "Ich dich auch! Wären wir doch näher beieinander."
+      },
+      {
+       "fa": "مینا: چه خبر؟ کارت خوب است؟",
+       "tr": "tsche chabar? kārat chūb ast?",
+       "de": "Was gibt’s Neues? Läuft die Arbeit gut?"
+      },
+      {
+       "fa": "تارا: سرم خیلی شلوغ است. کاش یک هفته تعطیلی داشتم!",
+       "tr": "saram cheylī schologh ast. kāsch yek hafte taʿtīlī dāschtam!",
+       "de": "Ich habe sehr viel zu tun. Hätte ich doch eine Woche Urlaub!"
+      },
+      {
+       "fa": "مینا: امیدوارم تابستان بتوانی به کیل بیایی.",
+       "tr": "omīdwāram tābestān betawānī be kīl biyāyī.",
+       "de": "Ich hoffe, du kannst im Sommer nach Kiel kommen."
+      },
+      {
+       "fa": "تارا: دلم می‌خواهد بیایم. قول می‌دهم!",
+       "tr": "delam mīchāhad biyāyam. ghoul mīdeham!",
+       "de": "Ich würde so gern kommen. Versprochen!"
+      },
+      {
+       "fa": "مینا: عالی! چشمم به راه است!",
+       "tr": "ʿālī! tscheschmam be rāh ast!",
+       "de": "Super! Ich warte sehnsüchtig! (wörtl.: mein Auge ist auf dem Weg)"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Wo wohnt Tara?",
+       "optionen": [
+        "in Hamburg",
+        "in Kiel",
+        "in Teheran"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was wünscht sich Tara?",
+       "optionen": [
+        "eine Woche Urlaub",
+        "eine neue Arbeit",
+        "eine Katze"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was bedeutet <span class='fa'>چشمم به راه است</span>?",
+       "optionen": [
+        "Ich warte sehnsüchtig.",
+        "Ich sehe den Weg.",
+        "Ich bin müde."
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

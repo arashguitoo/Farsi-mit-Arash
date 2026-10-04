@@ -1,0 +1,193 @@
+{
+ "id": "ug",
+ "art": "umgangssprache",
+ "titel": "Umgangssprache: So spricht man im Alltag",
+ "beschreibung": "Freiwilliger Extra-Teil: Wünsche und Formeln im Gespräch.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "So spricht man: Wünsche & Formeln",
+   "vorschau": "کاشکی · خَسته نَباشی",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Schrift ≠ Gespräch",
+     "text": "<ul><li><span class='fa'>کاش → کاشکی</span> <i>kāschkī</i></li><li><span class='fa'>بَرایَت → بَرات</span> · <span class='fa'>نَکُنَد → نَکُنه</span></li><li><span class='fa'>نمی‌دانم → نمی‌دونم</span> – <i>ā</i> vor <i>n</i> wird oft zu <i>ū</i></li><li><span class='fa'>سَلامَت باشی</span> – Antwort auf <span class='fa'>خَسته نَباشی</span>: „danke, du auch“</li></ul>",
+     "stil": "merke"
+    },
+    {
+     "typ": "paare",
+     "links": "x",
+     "paare": [
+      {
+       "fa": "دَستِت دَرد نَکُنَد",
+       "tr": "dastet dard nakonad",
+       "de": "danke!",
+       "x": "دَستِت دَرد نَکُنه"
+      },
+      {
+       "fa": "خَستِه نَباشید",
+       "tr": "chaste nabāschīd",
+       "de": "gute Arbeit!",
+       "x": "خَسته نَباشی"
+      },
+      {
+       "fa": "دِلَم بَرایَت تَنگ شُدِه اَست",
+       "tr": "delam barāyat tang schode ast",
+       "de": "ich vermisse dich",
+       "x": "دِلَم بَرات تَنگ شُده"
+      },
+      {
+       "fa": "نِمی‌دانَم",
+       "tr": "nemīdānam",
+       "de": "ich weiß nicht",
+       "x": "نِمی‌دونَم"
+      },
+      {
+       "fa": "کاش",
+       "tr": "kāsch",
+       "de": "wenn doch",
+       "x": "کاشکی"
+      }
+     ],
+     "titel": "Schrift ↔ Gespräch"
+    },
+    {
+     "typ": "sortieren",
+     "titel": "Schrift oder Gespräch?",
+     "frage": "Schriftsprache oder Umgangssprache?",
+     "kategorien": [
+      "✍️ Schriftsprache",
+      "🗣️ Umgangssprache"
+     ],
+     "items": [
+      {
+       "fa": "دَستِت دَرد نَکُنَد",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "خَستِه نَباشید",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "دِلَم بَرایَت تَنگ شُدِه اَست",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "نِمی‌دانَم",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "کاش",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "دَستِت دَرد نَکُنه",
+       "k": 1,
+       "say": false,
+       "e": "<i>dastet dard nakone</i> – geschrieben: <span class='fa'>دَستِت دَرد نَکُنَد</span>"
+      },
+      {
+       "fa": "خَسته نَباشی",
+       "k": 1,
+       "say": false,
+       "e": "<i>chaste nabāschī</i> – geschrieben: <span class='fa'>خَستِه نَباشید</span>"
+      },
+      {
+       "fa": "دِلَم بَرات تَنگ شُده",
+       "k": 1,
+       "say": false,
+       "e": "<i>delam barāt tang schode</i> – geschrieben: <span class='fa'>دِلَم بَرایَت تَنگ شُدِه اَست</span>"
+      },
+      {
+       "fa": "نِمی‌دونَم",
+       "k": 1,
+       "say": false,
+       "e": "<i>nemīdūnam</i> – geschrieben: <span class='fa'>نِمی‌دانَم</span>"
+      },
+      {
+       "fa": "کاشکی",
+       "k": 1,
+       "say": false,
+       "e": "<i>kāschkī</i> – geschrieben: <span class='fa'>کاش</span>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Feierabend",
+   "vorschau": "حوصِله‌م سَر رَفته",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Unter Kollegen",
+     "text": "Umgangssprache! Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "سَلام! خَسته نَباشی!",
+       "tr": "salām! chaste nabāschī!",
+       "de": "Hallo! Schönen Feierabend!"
+      },
+      {
+       "fa": "سَلامَت باشی! چه خَبَر؟",
+       "tr": "salāmat bāschī! tsche chabar?",
+       "de": "Danke dir! Was gibt’s Neues?"
+      },
+      {
+       "fa": "هیچی، حوصِله‌م سَر رَفته. کاشکی تَعطیلات بود!",
+       "tr": "hītschī, hoseleam sar rafte. kāschkī taʿtīlāt būd!",
+       "de": "Nichts, mir ist langweilig. Wären doch Ferien!"
+      },
+      {
+       "fa": "دو هَفته دیگه‌ست، صَبر کُن!",
+       "tr": "do hafte dīgast, sabr kon!",
+       "de": "Das sind noch zwei Wochen, hab Geduld!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Verstanden?",
+     "fragen": [
+      {
+       "frage": "Wie antwortet man auf <span class='fa'>خَسته نَباشی</span>?",
+       "optionen": [
+        "سلامت باشی!",
+        "نوش جان!",
+        "سفر بخیر!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "Wie lange dauert es noch bis zu den Ferien?",
+       "optionen": [
+        "zwei Wochen",
+        "zwei Tage",
+        "einen Monat"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "<span class='fa'>کاشکی</span> bedeutet …",
+       "optionen": [
+        "wenn doch",
+        "vielleicht",
+        "sicher"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

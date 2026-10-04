@@ -1,0 +1,820 @@
+{
+ "id": "z1",
+ "titel": "Trainingspaket 1",
+ "beschreibung": "Formeln, کاش oder امیدوارم, Redewendungen & Sprichwörter.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "Formeln-Blitz",
+   "vorschau": "خَستِه نَباشید!",
+   "karten": [
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Höflichkeitsformeln",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 60,
+     "ziel": 12,
+     "woerter": [
+      {
+       "fa": "خَستِه نَباشید!",
+       "a": "Gruß an jemanden, der arbeitet (≈ gute Arbeit!)"
+      },
+      {
+       "fa": "دَستِت دَرد نَکُنَد!",
+       "a": "Danke! (für Hilfe, Essen)"
+      },
+      {
+       "fa": "قابِلی نَدارَد",
+       "a": "nicht der Rede wert (beim Bezahlen/Schenken)"
+      },
+      {
+       "fa": "خواهِش می‌کُنَم",
+       "a": "bitte / gern geschehen"
+      },
+      {
+       "fa": "مَعذِرَت می‌خواهَم",
+       "a": "Entschuldigung (förmlich)"
+      },
+      {
+       "fa": "خوش آمَدید!",
+       "a": "Willkommen!"
+      },
+      {
+       "fa": "مُبارَک باشَد!",
+       "a": "Herzlichen Glückwunsch!"
+      },
+      {
+       "fa": "عافیَت باشَد!",
+       "a": "Wohl bekomm’s! (nach Bad, Friseur)"
+      },
+      {
+       "fa": "به سَلامَتی!",
+       "a": "Prost! / Auf die Gesundheit!"
+      },
+      {
+       "fa": "زِندِه باشی!",
+       "a": "Danke dir! (wörtl.: lebe!)"
+      },
+      {
+       "fa": "چَشم!",
+       "a": "Wird gemacht! (wörtl.: Auge)"
+      },
+      {
+       "fa": "قَدَمِتان روی چَشم!",
+       "a": "Sie sind herzlich willkommen! (wörtl.: Ihr Schritt auf mein Auge)"
+      },
+      {
+       "fa": "سَفَر بِخِیر!",
+       "a": "Gute Reise!"
+      },
+      {
+       "fa": "نوشِ جان!",
+       "a": "Guten Appetit! / Wohl bekomm’s!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Was sagt man?",
+     "fragen": [
+      {
+       "frage": "Dein Freund kommt vom Friseur. Du sagst:",
+       "optionen": [
+        "عافیت باشد!",
+        "خسته نباشید!",
+        "سفر بخیر!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "Deine Kollegin hat ein neues Auto. Du sagst:",
+       "optionen": [
+        "مبارک باشد!",
+        "نوش جان!",
+        "قابلی ندارد."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "Deine Freundin hat für dich gekocht. Du bedankst dich:",
+       "optionen": [
+        "دستت درد نکند!",
+        "خوش آمدید!",
+        "به سلامتی!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "Jemand arbeitet im Garten. Was sagst du?",
+       "optionen": [
+        "خسته نباشید!",
+        "عافیت باشد!",
+        "سفر بخیر!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "Deine Mutter bittet dich, Brot zu kaufen. Du sagst freundlich zu:",
+       "optionen": [
+        "چشم!",
+        "قابلی ندارد.",
+        "به سلامتی!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "Gäste kommen zu dir nach Hause. Du sagst:",
+       "optionen": [
+        "خوش آمدید!",
+        "سفر بخیر!",
+        "عافیت باشد!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "Der Taxifahrer sagt, als du zahlen willst …",
+       "optionen": [
+        "قابلی ندارد.",
+        "نوش جان!",
+        "مبارک باشد!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "کاش oder امیدوارم?",
+   "vorschau": "کاش / اُمیدوارَم",
+   "karten": [
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>___ فردا هوا خوب باشد.</span><br><span class='mini'>Hoffentlich ist morgen gutes Wetter.</span>",
+       "optionen": [
+        "امیدوارم",
+        "کاش … بود"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>امیدوارم فردا هوا خوب باشد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>___ دیروز آمده بودی.</span><br><span class='mini'>Wärst du doch gestern gekommen.</span>",
+       "optionen": [
+        "کاش",
+        "امیدوارم"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>کاش دیروز آمده بودی.</span>"
+      },
+      {
+       "frage": "<span class='fa'>___ قبول شوی!</span><br><span class='mini'>Hoffentlich bestehst du!</span>",
+       "optionen": [
+        "امیدوارم",
+        "کاش … بودی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>امیدوارم قبول شوی!</span>"
+      },
+      {
+       "frage": "<span class='fa'>___ پولدار بودم!</span><br><span class='mini'>Wäre ich doch reich!</span>",
+       "optionen": [
+        "کاش",
+        "امیدوارم"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>کاش پولدار بودم!</span>"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welcher Satz ist das?",
+     "fragen": [
+      {
+       "frage": "„Ich hoffe, wir sehen uns bald.“",
+       "optionen": [
+        "امیدوارم زودتر همدیگر را ببینیم.",
+        "کاش بیایی!",
+        "کاش دیروز آمده بودی!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Hätte ich das doch nicht gesagt.“",
+       "optionen": [
+        "ای کاش آن حرف را نزده بودم.",
+        "کاش فارسی را بهتر می‌دانستم.",
+        "دلم برایت تنگ شده است."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Hoffentlich ist morgen schönes Wetter.“",
+       "optionen": [
+        "امیدوارم فردا هوا آفتابی باشد.",
+        "دلم برایت تنگ شده است.",
+        "امیدوارم حالت خوب باشد."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Ich vermisse dich.“",
+       "optionen": [
+        "دلم برایت تنگ شده است.",
+        "کاش می‌توانستم پرواز کنم!",
+        "دلم می‌خواهد یک روز به اصفهان بروم."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Wenn ich doch fliegen könnte!“",
+       "optionen": [
+        "کاش می‌توانستم پرواز کنم!",
+        "ای کاش آن حرف را نزده بودم.",
+        "دلم می‌خواهد یک روز به اصفهان بروم."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Wenn ich doch besser Persisch könnte.“",
+       "optionen": [
+        "کاش فارسی را بهتر می‌دانستم.",
+        "امیدوارم در امتحان قبول شوی.",
+        "کاش می‌توانستم پرواز کنم!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "titel": "Redewendungen & Sprichwörter",
+   "vorschau": "قَطره قَطره …",
+   "karten": [
+    {
+     "typ": "memory",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "سَرَم شُلوغ اَست",
+       "tr": "saram schologh ast",
+       "de": "ich habe viel zu tun (wörtl.: mein Kopf ist voll)",
+       "emoji": "🤯"
+      },
+      {
+       "fa": "چَشمَم آب نِمی‌خورَد",
+       "tr": "tscheschmam āb nemīchorad",
+       "de": "das glaube ich kaum (wörtl.: mein Auge trinkt kein Wasser)",
+       "emoji": "🤨"
+      },
+      {
+       "fa": "دَست به دَستِ هَم دادَن",
+       "tr": "dast be dast-e ham dādan",
+       "de": "zusammenhalten (Hand in Hand geben)",
+       "emoji": "🤝"
+      },
+      {
+       "fa": "مو را اَز ماست کِشیدَن",
+       "tr": "mū rā az māst keschīdan",
+       "de": "Haarspalterei betreiben (wörtl.: ein Haar aus dem Joghurt ziehen)",
+       "emoji": "🥣"
+      },
+      {
+       "fa": "دِلَم گِرِفتِه اَست",
+       "tr": "delam gerefte ast",
+       "de": "ich bin traurig / bedrückt",
+       "emoji": "🌧️"
+      },
+      {
+       "fa": "اَز کوره دَر رَفتَن",
+       "tr": "az kūre dar raftan",
+       "de": "die Beherrschung verlieren (wörtl.: aus dem Ofen fahren)",
+       "emoji": "🔥"
+      }
+     ],
+     "titel": "Memory: Redewendungen"
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "دیر رِسیدَن بِهتَر اَز هَرگِز نَرِسیدَن اَست.",
+       "tr": "dīr resīdan behtar az hargez naresīdan ast.",
+       "de": "Besser spät als nie.",
+       "emoji": "🐢"
+      },
+      {
+       "fa": "هَر که بامَش بیش، بَرفَش بیشتَر.",
+       "tr": "har ke bāmasch bīsch, barfasch bīschtar.",
+       "de": "Wer das größere Dach hat, hat mehr Schnee. (Mehr Besitz, mehr Sorgen)",
+       "emoji": "🏠"
+      },
+      {
+       "fa": "قَطره قَطره جَمع گَردَد، وانگَهی دَریا شَوَد.",
+       "tr": "ghatre ghatre dscham gardad, wāngahī daryā schawad.",
+       "de": "Tropfen für Tropfen sammelt sich – und wird schließlich ein Meer. (Kleinvieh macht auch Mist)",
+       "emoji": "💧"
+      },
+      {
+       "fa": "از تو به یِک اِشارِه، اَز مَن به سَر دَویدَن.",
+       "tr": "az to be yek eschāre, az man be sar dawīdan.",
+       "de": "Von dir ein Wink – und ich laufe sofort los. (Für dich tue ich alles)",
+       "emoji": "🏃"
+      },
+      {
+       "fa": "مو را اَز ماست کِشیدَن",
+       "tr": "mū rā az māst keschīdan",
+       "de": "Haarspalterei betreiben (wörtl.: ein Haar aus dem Joghurt ziehen)",
+       "emoji": "🥣"
+      },
+      {
+       "fa": "دِلَم گِرِفتِه اَست",
+       "tr": "delam gerefte ast",
+       "de": "ich bin traurig / bedrückt",
+       "emoji": "🌧️"
+      }
+     ],
+     "titel": "Memory: Bild & Spruch"
+    }
+   ]
+  },
+  {
+   "id": "d",
+   "titel": "Wortschatz: Formeln",
+   "vorschau": "خَستِه نَباشید! دَستِت دَرد نَکُنَد!",
+   "karten": [
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "عافیَت باشَد!",
+       "tr": "ʿāfiyat bāschad!",
+       "de": "Wohl bekomm’s! (nach Bad, Friseur)",
+       "emoji": "🛁"
+      },
+      {
+       "fa": "به سَلامَتی!",
+       "tr": "be salāmatī!",
+       "de": "Prost! / Auf die Gesundheit!",
+       "emoji": "🥂"
+      },
+      {
+       "fa": "دَستِت دَرد نَکُنَد!",
+       "tr": "dastet dard nakonad!",
+       "de": "Danke! (für Hilfe, Essen)",
+       "emoji": "🙏"
+      },
+      {
+       "fa": "خَستِه نَباشید!",
+       "tr": "chaste nabāschīd!",
+       "de": "Gruß an jemanden, der arbeitet (≈ gute Arbeit!)",
+       "emoji": "💪"
+      },
+      {
+       "fa": "چَشم!",
+       "tr": "tscheschm!",
+       "de": "Wird gemacht! (wörtl.: Auge)",
+       "emoji": "👁️"
+      },
+      {
+       "fa": "مَعذِرَت می‌خواهَم",
+       "tr": "maʿzerat mīchāham",
+       "de": "Entschuldigung (förmlich)",
+       "emoji": "🙇"
+      }
+     ],
+     "titel": "Memory: Bild & Wort"
+    },
+    {
+     "typ": "memory",
+     "links": "tr",
+     "paare": [
+      {
+       "fa": "عافیَت باشَد!",
+       "tr": "ʿāfiyat bāschad!",
+       "de": "Wohl bekomm’s! (nach Bad, Friseur)",
+       "emoji": "🛁"
+      },
+      {
+       "fa": "قابِلی نَدارَد",
+       "tr": "ghābelī nadārad",
+       "de": "nicht der Rede wert (beim Bezahlen/Schenken)",
+       "emoji": "🤲"
+      },
+      {
+       "fa": "مَعذِرَت می‌خواهَم",
+       "tr": "maʿzerat mīchāham",
+       "de": "Entschuldigung (förmlich)",
+       "emoji": "🙇"
+      },
+      {
+       "fa": "به سَلامَتی!",
+       "tr": "be salāmatī!",
+       "de": "Prost! / Auf die Gesundheit!",
+       "emoji": "🥂"
+      },
+      {
+       "fa": "سَفَر بِخِیر!",
+       "tr": "safar becheyr!",
+       "de": "Gute Reise!",
+       "emoji": "🧳"
+      },
+      {
+       "fa": "قَدَمِتان روی چَشم!",
+       "tr": "ghadametān rū-ye tscheschm!",
+       "de": "Sie sind herzlich willkommen! (wörtl.: Ihr Schritt auf mein Auge)",
+       "emoji": "🤗"
+      }
+     ],
+     "titel": "Memory: Schrift & Aussprache"
+    },
+    {
+     "typ": "bauen",
+     "titel": "Schreib das Wort ab",
+     "zeigen": true,
+     "woerter": [
+      {
+       "fa": "چَشم!",
+       "tr": "tscheschm!",
+       "de": "Wird gemacht! (wörtl.: Auge)",
+       "emoji": "👁️",
+       "teile": [
+        "چ",
+        "ش",
+        "م",
+        "!"
+       ],
+       "extra": [
+        "ب"
+       ]
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitzlesen: Bedeutung",
+     "modus": "de",
+     "sekunden": 60,
+     "ziel": 12,
+     "woerter": [
+      {
+       "fa": "خَستِه نَباشید!",
+       "de": "Gruß an jemanden, der arbeitet (≈ gute Arbeit!)"
+      },
+      {
+       "fa": "دَستِت دَرد نَکُنَد!",
+       "de": "Danke! (für Hilfe, Essen)"
+      },
+      {
+       "fa": "قابِلی نَدارَد",
+       "de": "nicht der Rede wert (beim Bezahlen/Schenken)"
+      },
+      {
+       "fa": "خواهِش می‌کُنَم",
+       "de": "bitte / gern geschehen"
+      },
+      {
+       "fa": "مَعذِرَت می‌خواهَم",
+       "de": "Entschuldigung (förmlich)"
+      },
+      {
+       "fa": "خوش آمَدید!",
+       "de": "Willkommen!"
+      },
+      {
+       "fa": "مُبارَک باشَد!",
+       "de": "Herzlichen Glückwunsch!"
+      },
+      {
+       "fa": "عافیَت باشَد!",
+       "de": "Wohl bekomm’s! (nach Bad, Friseur)"
+      },
+      {
+       "fa": "به سَلامَتی!",
+       "de": "Prost! / Auf die Gesundheit!"
+      },
+      {
+       "fa": "زِندِه باشی!",
+       "de": "Danke dir! (wörtl.: lebe!)"
+      },
+      {
+       "fa": "چَشم!",
+       "de": "Wird gemacht! (wörtl.: Auge)"
+      },
+      {
+       "fa": "قَدَمِتان روی چَشم!",
+       "de": "Sie sind herzlich willkommen! (wörtl.: Ihr Schritt auf mein Auge)"
+      },
+      {
+       "fa": "سَفَر بِخِیر!",
+       "de": "Gute Reise!"
+      },
+      {
+       "fa": "نوشِ جان!",
+       "de": "Guten Appetit! / Wohl bekomm’s!"
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitzlesen: Aussprache",
+     "modus": "tr",
+     "sekunden": 60,
+     "ziel": 12,
+     "woerter": [
+      {
+       "fa": "خَستِه نَباشید!",
+       "tr": "chaste nabāschīd!"
+      },
+      {
+       "fa": "دَستِت دَرد نَکُنَد!",
+       "tr": "dastet dard nakonad!"
+      },
+      {
+       "fa": "قابِلی نَدارَد",
+       "tr": "ghābelī nadārad"
+      },
+      {
+       "fa": "خواهِش می‌کُنَم",
+       "tr": "chāhesch mīkonam"
+      },
+      {
+       "fa": "مَعذِرَت می‌خواهَم",
+       "tr": "maʿzerat mīchāham"
+      },
+      {
+       "fa": "خوش آمَدید!",
+       "tr": "chosch āmadīd!"
+      },
+      {
+       "fa": "مُبارَک باشَد!",
+       "tr": "mobārak bāschad!"
+      },
+      {
+       "fa": "عافیَت باشَد!",
+       "tr": "ʿāfiyat bāschad!"
+      },
+      {
+       "fa": "به سَلامَتی!",
+       "tr": "be salāmatī!"
+      },
+      {
+       "fa": "زِندِه باشی!",
+       "tr": "zende bāschī!"
+      },
+      {
+       "fa": "چَشم!",
+       "tr": "tscheschm!"
+      },
+      {
+       "fa": "قَدَمِتان روی چَشم!",
+       "tr": "ghadametān rū-ye tscheschm!"
+      },
+      {
+       "fa": "سَفَر بِخِیر!",
+       "tr": "safar becheyr!"
+      },
+      {
+       "fa": "نوشِ جان!",
+       "tr": "nūsch-e dschān!"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "e",
+   "titel": "Redewendungen-Blitz",
+   "vorschau": "سَرَم شُلوغ اَست",
+   "karten": [
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Redewendungen",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 60,
+     "ziel": 10,
+     "woerter": [
+      {
+       "fa": "سَرَم شُلوغ اَست",
+       "a": "ich habe viel zu tun (wörtl.: mein Kopf ist voll)"
+      },
+      {
+       "fa": "حوصِله‌اَم سَر رَفت",
+       "a": "mir ist langweilig (wörtl.: meine Geduld lief über)"
+      },
+      {
+       "fa": "حالَم گِرِفتِه اَست",
+       "a": "ich bin niedergeschlagen"
+      },
+      {
+       "fa": "دِلَم گِرِفتِه اَست",
+       "a": "ich bin traurig / bedrückt"
+      },
+      {
+       "fa": "چَشمَم آب نِمی‌خورَد",
+       "a": "das glaube ich kaum (wörtl.: mein Auge trinkt kein Wasser)"
+      },
+      {
+       "fa": "کارد به اُستُخوانَم رِسیدِه",
+       "a": "ich habe die Nase voll (wörtl.: das Messer hat den Knochen erreicht)"
+      },
+      {
+       "fa": "اَز کوره دَر رَفتَن",
+       "a": "die Beherrschung verlieren (wörtl.: aus dem Ofen fahren)"
+      },
+      {
+       "fa": "مو را اَز ماست کِشیدَن",
+       "a": "Haarspalterei betreiben (wörtl.: ein Haar aus dem Joghurt ziehen)"
+      },
+      {
+       "fa": "زیرِ قولَش زَد",
+       "a": "er/sie hat sein/ihr Versprechen gebrochen"
+      },
+      {
+       "fa": "دَست به دَستِ هَم دادَن",
+       "a": "zusammenhalten (Hand in Hand geben)"
+      },
+      {
+       "fa": "روی کَسی را زَمین اَنداختَن",
+       "a": "jemandem eine Bitte abschlagen (wörtl.: sein Gesicht auf den Boden werfen)"
+      },
+      {
+       "fa": "آب اَز آب تَکان نَخورد",
+       "a": "nichts hat sich gerührt, alles blieb ruhig"
+      }
+     ]
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "چَشمَم آب نِمی‌خورَد",
+       "tr": "tscheschmam āb nemīchorad",
+       "de": "das glaube ich kaum (wörtl.: mein Auge trinkt kein Wasser)",
+       "emoji": "🤨"
+      },
+      {
+       "fa": "زیرِ قولَش زَد",
+       "tr": "zīr-e ghoulasch zad",
+       "de": "er/sie hat sein/ihr Versprechen gebrochen",
+       "emoji": "🤞"
+      },
+      {
+       "fa": "مو را اَز ماست کِشیدَن",
+       "tr": "mū rā az māst keschīdan",
+       "de": "Haarspalterei betreiben (wörtl.: ein Haar aus dem Joghurt ziehen)",
+       "emoji": "🥣"
+      },
+      {
+       "fa": "حالَم گِرِفتِه اَست",
+       "tr": "hālam gerefte ast",
+       "de": "ich bin niedergeschlagen",
+       "emoji": "😔"
+      },
+      {
+       "fa": "حوصِله‌اَم سَر رَفت",
+       "tr": "hoseleam sar raft",
+       "de": "mir ist langweilig (wörtl.: meine Geduld lief über)",
+       "emoji": "🥱"
+      },
+      {
+       "fa": "دَست به دَستِ هَم دادَن",
+       "tr": "dast be dast-e ham dādan",
+       "de": "zusammenhalten (Hand in Hand geben)",
+       "emoji": "🤝"
+      }
+     ],
+     "titel": "Was bedeutet das?"
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Sprüche & Wendungen",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 70,
+     "ziel": 10,
+     "woerter": [
+      {
+       "fa": "قَطره قَطره جَمع گَردَد، وانگَهی دَریا شَوَد.",
+       "a": "Tropfen für Tropfen sammelt sich – und wird schließlich ein Meer. (Kleinvieh macht auch Mist)"
+      },
+      {
+       "fa": "کار نیکو کَردَن اَز پُر کَردَن اَست.",
+       "a": "Gute Arbeit kommt vom vielen Üben. (Übung macht den Meister)"
+      },
+      {
+       "fa": "دیر رِسیدَن بِهتَر اَز هَرگِز نَرِسیدَن اَست.",
+       "a": "Besser spät als nie."
+      },
+      {
+       "fa": "یِک دَست صِدا نَدارَد.",
+       "a": "Eine Hand allein klatscht nicht. (Gemeinsam geht es besser)"
+      },
+      {
+       "fa": "هَر که بامَش بیش، بَرفَش بیشتَر.",
+       "a": "Wer das größere Dach hat, hat mehr Schnee. (Mehr Besitz, mehr Sorgen)"
+      },
+      {
+       "fa": "از تو به یِک اِشارِه، اَز مَن به سَر دَویدَن.",
+       "a": "Von dir ein Wink – und ich laufe sofort los. (Für dich tue ich alles)"
+      },
+      {
+       "fa": "سَرَم شُلوغ اَست",
+       "a": "ich habe viel zu tun (wörtl.: mein Kopf ist voll)"
+      },
+      {
+       "fa": "حوصِله‌اَم سَر رَفت",
+       "a": "mir ist langweilig (wörtl.: meine Geduld lief über)"
+      },
+      {
+       "fa": "حالَم گِرِفتِه اَست",
+       "a": "ich bin niedergeschlagen"
+      },
+      {
+       "fa": "دِلَم گِرِفتِه اَست",
+       "a": "ich bin traurig / bedrückt"
+      },
+      {
+       "fa": "چَشمَم آب نِمی‌خورَد",
+       "a": "das glaube ich kaum (wörtl.: mein Auge trinkt kein Wasser)"
+      },
+      {
+       "fa": "کارد به اُستُخوانَم رِسیدِه",
+       "a": "ich habe die Nase voll (wörtl.: das Messer hat den Knochen erreicht)"
+      },
+      {
+       "fa": "اَز کوره دَر رَفتَن",
+       "a": "die Beherrschung verlieren (wörtl.: aus dem Ofen fahren)"
+      },
+      {
+       "fa": "مو را اَز ماست کِشیدَن",
+       "a": "Haarspalterei betreiben (wörtl.: ein Haar aus dem Joghurt ziehen)"
+      },
+      {
+       "fa": "زیرِ قولَش زَد",
+       "a": "er/sie hat sein/ihr Versprechen gebrochen"
+      },
+      {
+       "fa": "دَست به دَستِ هَم دادَن",
+       "a": "zusammenhalten (Hand in Hand geben)"
+      },
+      {
+       "fa": "روی کَسی را زَمین اَنداختَن",
+       "a": "jemandem eine Bitte abschlagen (wörtl.: sein Gesicht auf den Boden werfen)"
+      },
+      {
+       "fa": "آب اَز آب تَکان نَخورد",
+       "a": "nichts hat sich gerührt, alles blieb ruhig"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

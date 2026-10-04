@@ -1,0 +1,694 @@
+{
+ "id": "tx",
+ "art": "texte",
+ "titel": "Texte & Dialoge",
+ "beschreibung": "Lesetexte mit Fragen und Dialoge zum Ordnen.",
+ "stationen": [
+  {
+   "id": "t1",
+   "titel": "Kurztext: Ein Kätzchen!",
+   "vorschau": "بچه‌گربه‌ی مینو",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>پشمک</span> – persische Zuckerwatte · <span class='fa'>نرم</span> – weich · <span class='fa'>به دیدن … رفتن</span> – … besuchen</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Kurztext: Ein Kätzchen!",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "مینو یک بچه‌گربه‌ی کوچک گرفته است.",
+       "tr": "mīnū yek batschtschegorbe-ye kūtschak gerefte ast.",
+       "de": "Minu hat ein kleines Kätzchen bekommen."
+      },
+      {
+       "fa": "اسم گربه «پشمک» است، چون خیلی نرم و سفید است.",
+       "tr": "esm-e gorbe «paschmak» ast, tschon cheylī narm o sefīd ast.",
+       "de": "Die Katze heißt „Paschmak“ (Zuckerwatte), weil sie so weich und weiß ist."
+      },
+      {
+       "fa": "شیما می‌خواهد چهارشنبه به دیدن گربه برود.",
+       "tr": "schīmā mīchāhad tschahārschanbe be dīdan-e gorbe beravad.",
+       "de": "Shima möchte am Mittwoch die Katze besuchen."
+      },
+      {
+       "fa": "او به شهریار می‌گوید: «اگر بخواهی، با هم می‌رویم.»",
+       "tr": "ū be schahriyār mīgūyad: «agar bechāhī, bā ham mīravīm.»",
+       "de": "Sie sagt zu Shahriyar: „Wenn du willst, gehen wir zusammen.“"
+      },
+      {
+       "fa": "اما شهریار چهارشنبه می‌خواهد به کتابخانه برود.",
+       "tr": "ammā schahriyār tschahārschanbe mīchāhad be ketābchāne beravad.",
+       "de": "Aber Shahriyar will am Mittwoch in die Bibliothek."
+      },
+      {
+       "fa": "او می‌گوید: «اگر تصمیمم عوض شد، به تو خبر می‌دهم.»",
+       "tr": "ū mīgūyad: «agar tasmīmam ʿawaz schod, be to chabar mīdeham.»",
+       "de": "Er sagt: „Wenn ich es mir anders überlege, sage ich dir Bescheid.“"
+      },
+      {
+       "fa": "شیما می‌خندد: «اگر پشمک را ببینی، دیگر به کتابخانه نمی‌روی!»",
+       "tr": "schīmā mīchandad: «agar paschmak rā bebīnī, dīgar be ketābchāne nemīravī!»",
+       "de": "Shima lacht: „Wenn du Paschmak siehst, gehst du nie mehr in die Bibliothek!“"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "مینو یک سگ گرفته است.",
+       "fest": true,
+       "erkl": "Sie hat ein <b>Kätzchen</b> bekommen."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "گربه سفید است.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "شهریار چهارشنبه وقت ندارد.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "شیما نمی‌خواهد گربه را ببیند.",
+       "fest": true,
+       "erkl": "Sie <b>möchte</b> sie am Mittwoch besuchen."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Warum heißt die Katze „Paschmak“?",
+       "optionen": [
+        "weil sie weich und weiß ist",
+        "weil sie Süßes mag",
+        "weil sie klein ist"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wohin will Shahriyar am Mittwoch?",
+       "optionen": [
+        "in die Bibliothek",
+        "ins Stadtzentrum",
+        "zu Minu"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was macht er, wenn er es sich anders überlegt?",
+       "optionen": [
+        "Er sagt Shima Bescheid.",
+        "Er kauft ein Geschenk.",
+        "Er bleibt zu Hause."
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "اسم گربه «پشمک» است، چون خیلی نرم و سفید است.",
+       "tr": "esm-e gorbe «paschmak» ast, tschon cheylī narm o sefīd ast.",
+       "de": "Die Katze heißt „Paschmak“ (Zuckerwatte), weil sie so weich und weiß ist."
+      },
+      {
+       "fa": "شیما می‌خواهد چهارشنبه به دیدن گربه برود.",
+       "tr": "schīmā mīchāhad tschahārschanbe be dīdan-e gorbe beravad.",
+       "de": "Shima möchte am Mittwoch die Katze besuchen."
+      },
+      {
+       "fa": "او به شهریار می‌گوید: «اگر بخواهی، با هم می‌رویم.»",
+       "tr": "ū be schahriyār mīgūyad: «agar bechāhī, bā ham mīravīm.»",
+       "de": "Sie sagt zu Shahriyar: „Wenn du willst, gehen wir zusammen.“"
+      },
+      {
+       "fa": "اما شهریار چهارشنبه می‌خواهد به کتابخانه برود.",
+       "tr": "ammā schahriyār tschahārschanbe mīchāhad be ketābchāne beravad.",
+       "de": "Aber Shahriyar will am Mittwoch in die Bibliothek."
+      },
+      {
+       "fa": "او می‌گوید: «اگر تصمیمم عوض شد، به تو خبر می‌دهم.»",
+       "tr": "ū mīgūyad: «agar tasmīmam ʿawaz schod, be to chabar mīdeham.»",
+       "de": "Er sagt: „Wenn ich es mir anders überlege, sage ich dir Bescheid.“"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t2",
+   "titel": "Text: Lenas Wochenende",
+   "vorschau": "آخر هفته‌ی لنا",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>برنامه</span> – Plan · <span class='fa'>ساحل</span> – Strand · <span class='fa'>پختن (پز)</span> – backen, kochen · <span class='fa'>شکر</span> – Zucker · <span class='fa'>ریختن (ریز)</span> – schütten · <span class='fa'>قنادی</span> – Konditorei</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Text: Lenas Wochenende",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "لنا برای آخر هفته برنامه‌های زیادی دارد.",
+       "tr": "lenā barāye āchar-e hafte barnāmehā-ye ziyādī dārad.",
+       "de": "Lena hat viele Pläne fürs Wochenende."
+      },
+      {
+       "fa": "اگر شنبه هوا آفتابی باشد، با دوستانش به ساحل می‌رود.",
+       "tr": "agar schanbe hawā āftābī bāschad, bā dūstānasch be sāhel mīravad.",
+       "de": "Wenn am Samstag die Sonne scheint, fährt sie mit ihren Freunden an den Strand."
+      },
+      {
+       "fa": "اگر باران آمد، در خانه می‌ماند و فیلم می‌بیند.",
+       "tr": "agar bārān āmad, dar chāne mīmānad o fīlm mībīnad.",
+       "de": "Wenn es regnet, bleibt sie zu Hause und schaut einen Film."
+      },
+      {
+       "fa": "یکشنبه تولد مادرش است. اگر وقت داشته باشد، برایش کیک می‌پزد.",
+       "tr": "yekschanbe tawallod-e mādarasch ast. agar waght dāschte bāschad, barāyasch keyk mīpazad.",
+       "de": "Am Sonntag hat ihre Mutter Geburtstag. Wenn sie Zeit hat, backt sie ihr einen Kuchen."
+      },
+      {
+       "fa": "خواهرش می‌گوید: «اگر کیک می‌پزی، شکر زیاد نریز!»",
+       "tr": "chāharasch mīgūyad: «agar keyk mīpazī, schekar ziyād narīz!»",
+       "de": "Ihre Schwester sagt: „Wenn du einen Kuchen backst, tu nicht zu viel Zucker rein!“"
+      },
+      {
+       "fa": "لنا می‌خندد: «اگر کیک خوب نشد، از قنادی یک کیک می‌خرم.»",
+       "tr": "lenā mīchandad: «agar keyk chūb naschod, az ghannādī yek keyk mīcharam.»",
+       "de": "Lena lacht: „Wenn der Kuchen nichts wird, kaufe ich einen in der Konditorei.“"
+      },
+      {
+       "fa": "حتی اگر کیک خوب نشود، مادرش خیلی خوشحال خواهد شد.",
+       "tr": "hattā agar keyk chūb naschawad, mādarasch cheylī choschhāl chāhad schod.",
+       "de": "Selbst wenn der Kuchen nichts wird, wird sich ihre Mutter sehr freuen."
+      },
+      {
+       "fa": "وگرنه لنا که هدیه‌ی دیگری ندارد!",
+       "tr": "wagarna lenā ke hedye-ye dīgarī nadārad!",
+       "de": "Lena hat ja sonst kein anderes Geschenk!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "اگر شنبه آفتابی باشد، لنا به ساحل می‌رود.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "اگر باران بیاید، لنا به سینما می‌رود.",
+       "fest": true,
+       "erkl": "Sie bleibt <b>zu Hause</b> und schaut einen Film."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "یکشنبه تولد خواهر لناست.",
+       "fest": true,
+       "erkl": "Es ist der Geburtstag ihrer <b>Mutter</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "لنا کیک را از قنادی می‌خرد، اگر کیکش خوب نشود.",
+       "fest": true
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Was sagt die Schwester?",
+       "optionen": [
+        "nicht zu viel Zucker",
+        "nicht zu viel Mehl",
+        "keinen Kuchen backen"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was macht Lena, wenn es regnet?",
+       "optionen": [
+        "Sie schaut zu Hause einen Film.",
+        "Sie backt Kuchen.",
+        "Sie fährt an den Strand."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie wird die Mutter reagieren?",
+       "optionen": [
+        "Sie wird sich auf jeden Fall freuen.",
+        "Sie wird traurig sein.",
+        "Sie backt selbst."
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t3",
+   "titel": "Profi-Text: Tipps für eine Iran-Reise",
+   "vorschau": "اگر به ایران می‌روی …",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>نکته</span> – Punkt, Tipp · <span class='fa'>جعبه</span> – Schachtel · <span class='fa'>بلد بودن</span> – kennen, können · <span class='fa'>با کمال میل</span> – sehr gern</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Profi-Text: Tipps für eine Iran-Reise",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "اگر می‌خواهی به ایران سفر کنی، چند نکته را فراموش نکن.",
+       "tr": "agar mīchāhī be īrān safar konī, tschand nokte rā farāmūsch nakon.",
+       "de": "Wenn du nach Iran reisen willst, vergiss ein paar Dinge nicht."
+      },
+      {
+       "fa": "اگر تابستان می‌روی، آب زیاد با خودت ببر، چون هوا خیلی گرم است.",
+       "tr": "agar tābestān mīrawī, āb-e ziyād bā chodat bebar, tschon hawā cheylī garm ast.",
+       "de": "Wenn du im Sommer fährst, nimm viel Wasser mit, denn es ist sehr heiß."
+      },
+      {
+       "fa": "اگر به خانه‌ی کسی دعوت شدی، یک جعبه شیرینی یا گل ببر.",
+       "tr": "agar be chāne-ye kasī daʿwat schodī, yek dschaʿbe schīrīnī yā gol bebar.",
+       "de": "Wenn du zu jemandem nach Hause eingeladen wirst, bring eine Schachtel Gebäck oder Blumen mit."
+      },
+      {
+       "fa": "اگر کسی تعارف کرد، اول یک بار «نه، ممنون» بگو!",
+       "tr": "agar kasī taʿārof kard, awwal yek bār «na, mamnūn» begū!",
+       "de": "Wenn dir jemand etwas anbietet, sag zuerst einmal „Nein, danke“!"
+      },
+      {
+       "fa": "اگر راه را بلد نیستی، از مردم بپرس؛ همه با کمال میل کمک می‌کنند.",
+       "tr": "agar rāh rā balad nīstī, az mardom bepors; hame bā kamāl-e meyl komak mīkonand.",
+       "de": "Wenn du den Weg nicht kennst, frag die Leute – alle helfen sehr gern."
+      },
+      {
+       "fa": "اگر فارسی حرف بزنی، همه خیلی خوشحال می‌شوند.",
+       "tr": "agar fārsī harf bezanī, hame cheylī choschhāl mīschawand.",
+       "de": "Wenn du Persisch sprichst, freuen sich alle sehr."
+      },
+      {
+       "fa": "و اگر یک بار به ایران بروی، حتما دوباره خواهی رفت!",
+       "tr": "wa agar yek bār be īrān berawī, hatman dobāre chāhī raft!",
+       "de": "Und wenn du einmal nach Iran fährst, wirst du bestimmt wieder hinfahren!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "در تابستان هوای ایران خنک است.",
+       "fest": true,
+       "erkl": "Es ist <b>sehr heiß</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "اگر دعوت شدی، شیرینی یا گل ببر.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "مردم دوست ندارند کمک کنند.",
+       "fest": true,
+       "erkl": "Alle helfen <b>sehr gern</b>."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Was sollst du sagen, wenn dir jemand etwas anbietet?",
+       "optionen": [
+        "zuerst einmal „Nein, danke“",
+        "sofort „Ja“",
+        "gar nichts"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was passiert, wenn du Persisch sprichst?",
+       "optionen": [
+        "Alle freuen sich.",
+        "Niemand versteht dich.",
+        "Du bekommst Rabatt."
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d1",
+   "titel": "Dialog: Samstag",
+   "vorschau": "شنبه",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Shima ruft Shahriyar an.</p><p><span class='fa'>راستی؟</span> – wirklich? · <span class='fa'>خبر کردن</span> – Bescheid geben · <span class='fa'>منتظر</span> – wartend</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "شیما: شنیدی که مینو یک بچه‌گربه گرفته است؟",
+       "tr": "schenīdī ke mīnū yek batschtschegorbe gerefte ast?",
+       "de": "Hast du gehört, dass Minu ein Kätzchen bekommen hat?"
+      },
+      {
+       "fa": "شهریار: نه! راستی؟ چه خوب!",
+       "tr": "na! rāstī? tsche chūb!",
+       "de": "Nein! Wirklich? Wie schön!"
+      },
+      {
+       "fa": "شیما: اگر بخواهی، می‌توانیم این چهارشنبه به دیدن آنها برویم.",
+       "tr": "agar bechāhī, mītawānīm īn tschahārschanbe be dīdan-e ānhā berawīm.",
+       "de": "Wenn du willst, können wir sie diesen Mittwoch besuchen."
+      },
+      {
+       "fa": "شهریار: چهارشنبه می‌خواهم به کتابخانه بروم.",
+       "tr": "tschahārschanbe mīchāham be ketābchāne beravam.",
+       "de": "Am Mittwoch will ich in die Bibliothek."
+      },
+      {
+       "fa": "شیما: حیف! کتابخانه را پنجشنبه هم می‌توانی بروی.",
+       "tr": "heyf! ketābchāne rā pandschschanbe ham mītawānī berawī.",
+       "de": "Schade! In die Bibliothek kannst du auch am Donnerstag."
+      },
+      {
+       "fa": "شهریار: درست است. اگر تصمیمم عوض شد، تو را خبر خواهم کرد.",
+       "tr": "dorost ast. agar tasmīmam ʿawaz schod, to rā chabar chāham kard.",
+       "de": "Stimmt. Wenn ich es mir anders überlege, sage ich dir Bescheid."
+      },
+      {
+       "fa": "شیما: خوب است. منتظرم!",
+       "tr": "chūb ast. montazeram!",
+       "de": "Gut. Ich warte!"
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "شیما: شنیدی که مینو یک بچه‌گربه گرفته است؟",
+       "tr": "schenīdī ke mīnū yek batschtschegorbe gerefte ast?",
+       "de": "Hast du gehört, dass Minu ein Kätzchen bekommen hat?"
+      },
+      {
+       "fa": "شهریار: نه! راستی؟ چه خوب!",
+       "tr": "na! rāstī? tsche chūb!",
+       "de": "Nein! Wirklich? Wie schön!"
+      },
+      {
+       "fa": "شیما: اگر بخواهی، می‌توانیم این چهارشنبه به دیدن آنها برویم.",
+       "tr": "agar bechāhī, mītawānīm īn tschahārschanbe be dīdan-e ānhā berawīm.",
+       "de": "Wenn du willst, können wir sie diesen Mittwoch besuchen."
+      },
+      {
+       "fa": "شهریار: چهارشنبه می‌خواهم به کتابخانه بروم.",
+       "tr": "tschahārschanbe mīchāham be ketābchāne beravam.",
+       "de": "Am Mittwoch will ich in die Bibliothek."
+      },
+      {
+       "fa": "شیما: حیف! کتابخانه را پنجشنبه هم می‌توانی بروی.",
+       "tr": "heyf! ketābchāne rā pandschschanbe ham mītawānī berawī.",
+       "de": "Schade! In die Bibliothek kannst du auch am Donnerstag."
+      },
+      {
+       "fa": "شهریار: درست است. اگر تصمیمم عوض شد، تو را خبر خواهم کرد.",
+       "tr": "dorost ast. agar tasmīmam ʿawaz schod, to rā chabar chāham kard.",
+       "de": "Stimmt. Wenn ich es mir anders überlege, sage ich dir Bescheid."
+      },
+      {
+       "fa": "شیما: خوب است. منتظرم!",
+       "tr": "chūb ast. montazeram!",
+       "de": "Gut. Ich warte!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Was hat Minu bekommen?",
+       "optionen": [
+        "ein Kätzchen",
+        "ein Fahrrad",
+        "ein Geschenk"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was will Shahriyar am Mittwoch machen?",
+       "optionen": [
+        "in die Bibliothek gehen",
+        "Minu besuchen",
+        "einkaufen"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "<span class='fa'>اگر تصمیمم عوض شد</span> bedeutet:",
+       "optionen": [
+        "wenn ich es mir anders überlege",
+        "weil ich mich entschieden habe",
+        "obwohl ich keine Zeit habe"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d2",
+   "titel": "Dialog: Sonntag",
+   "vorschau": "یکشنبه",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Am nächsten Tag telefonieren die beiden wieder.</p><p><span class='fa'>شریک شدن</span> – sich beteiligen · <span class='fa'>جا</span> – Platz · <span class='fa'>باز هم</span> – trotzdem, doch</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "شیما: اگر می‌خواهی بیایی، باید تا فردا به من خبر بدهی. شاید سهیل و مریم هم بخواهند بیایند.",
+       "tr": "agar mīchāhī biyāyī, bāyad tā fardā be man chabar bedahī. schāyad soheyl o maryam ham bechāhand biyāyand.",
+       "de": "Wenn du mitkommen willst, musst du mir bis morgen Bescheid sagen. Vielleicht wollen Soheil und Maryam auch mit."
+      },
+      {
+       "fa": "شیما: اگر آنها بیایند، دیگر در ماشین جا نداریم.",
+       "tr": "agar ānhā biyāyand, dīgar dar māschīn dschā nadārīm.",
+       "de": "Wenn sie kommen, haben wir keinen Platz mehr im Auto."
+      },
+      {
+       "fa": "شهریار: اما حتی اگر آنها بیایند، باز هم یک جای خالی برای من هست!",
+       "tr": "ammā hattā agar ānhā biyāyand, bāz ham yek dschā-ye chālī barāye man hast!",
+       "de": "Aber selbst wenn sie kommen, gibt es doch noch einen freien Platz für mich!"
+      },
+      {
+       "fa": "شیما: نه، هفته‌ی پیش تولد مینو بود. ما برایش یک هدیه‌ی بزرگ می‌بریم.",
+       "tr": "na, hafte-ye pīsch tawallod-e mīnū būd. mā barāyasch yek hedye-ye bozorg mībarīm.",
+       "de": "Nein, letzte Woche hatte Minu Geburtstag. Wir bringen ihr ein großes Geschenk."
+      },
+      {
+       "fa": "شهریار: آخ! تولدش را فراموش کرده بودم! اگر بیایم، هدیه‌ای ندارم.",
+       "tr": "āch! tawallodasch rā farāmūsch karde būdam! agar biyāyam, hedyeī nadāram.",
+       "de": "Ach! Ihren Geburtstag hatte ich vergessen! Wenn ich komme, habe ich kein Geschenk."
+      },
+      {
+       "fa": "شیما: اگر وقت داشته باشی، می‌توانی به مرکز شهر بروی و چیزی بخری. اگر هم وقت نداشتی، در هدیه‌ی ما شریک شو!",
+       "tr": "agar waght dāschte bāschī, mītawānī be markaz-e schahr berawī o tschīzī becharī. agar ham waght nadāschtī, dar hedye-ye mā scharīk schou!",
+       "de": "Wenn du Zeit hast, kannst du in die Stadt fahren und etwas kaufen. Und wenn du keine Zeit hast, beteilige dich an unserem Geschenk!"
+      },
+      {
+       "fa": "شهریار: عالی است! اگر هوا خوب باشد، با دوچرخه می‌آیم. اگر هوا خوب نبود، با اتوبوس.",
+       "tr": "ʿālī ast! agar hawā chūb bāschad, bā dotscharche mīāyam. agar hawā chūb nabūd, bā otobūs.",
+       "de": "Super! Wenn das Wetter gut ist, komme ich mit dem Fahrrad. Wenn nicht, mit dem Bus."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "شیما: اگر می‌خواهی بیایی، باید تا فردا به من خبر بدهی. شاید سهیل و مریم هم بخواهند بیایند.",
+       "tr": "agar mīchāhī biyāyī, bāyad tā fardā be man chabar bedahī. schāyad soheyl o maryam ham bechāhand biyāyand.",
+       "de": "Wenn du mitkommen willst, musst du mir bis morgen Bescheid sagen. Vielleicht wollen Soheil und Maryam auch mit."
+      },
+      {
+       "fa": "شیما: اگر آنها بیایند، دیگر در ماشین جا نداریم.",
+       "tr": "agar ānhā biyāyand, dīgar dar māschīn dschā nadārīm.",
+       "de": "Wenn sie kommen, haben wir keinen Platz mehr im Auto."
+      },
+      {
+       "fa": "شهریار: اما حتی اگر آنها بیایند، باز هم یک جای خالی برای من هست!",
+       "tr": "ammā hattā agar ānhā biyāyand, bāz ham yek dschā-ye chālī barāye man hast!",
+       "de": "Aber selbst wenn sie kommen, gibt es doch noch einen freien Platz für mich!"
+      },
+      {
+       "fa": "شیما: نه، هفته‌ی پیش تولد مینو بود. ما برایش یک هدیه‌ی بزرگ می‌بریم.",
+       "tr": "na, hafte-ye pīsch tawallod-e mīnū būd. mā barāyasch yek hedye-ye bozorg mībarīm.",
+       "de": "Nein, letzte Woche hatte Minu Geburtstag. Wir bringen ihr ein großes Geschenk."
+      },
+      {
+       "fa": "شهریار: آخ! تولدش را فراموش کرده بودم! اگر بیایم، هدیه‌ای ندارم.",
+       "tr": "āch! tawallodasch rā farāmūsch karde būdam! agar biyāyam, hedyeī nadāram.",
+       "de": "Ach! Ihren Geburtstag hatte ich vergessen! Wenn ich komme, habe ich kein Geschenk."
+      },
+      {
+       "fa": "شیما: اگر وقت داشته باشی، می‌توانی به مرکز شهر بروی و چیزی بخری. اگر هم وقت نداشتی، در هدیه‌ی ما شریک شو!",
+       "tr": "agar waght dāschte bāschī, mītawānī be markaz-e schahr berawī o tschīzī becharī. agar ham waght nadāschtī, dar hedye-ye mā scharīk schou!",
+       "de": "Wenn du Zeit hast, kannst du in die Stadt fahren und etwas kaufen. Und wenn du keine Zeit hast, beteilige dich an unserem Geschenk!"
+      },
+      {
+       "fa": "شهریار: عالی است! اگر هوا خوب باشد، با دوچرخه می‌آیم. اگر هوا خوب نبود، با اتوبوس.",
+       "tr": "ʿālī ast! agar hawā chūb bāschad, bā dotscharche mīāyam. agar hawā chūb nabūd, bā otobūs.",
+       "de": "Super! Wenn das Wetter gut ist, komme ich mit dem Fahrrad. Wenn nicht, mit dem Bus."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Warum ist im Auto kein Platz für Shahriyar?",
+       "optionen": [
+        "wegen des großen Geschenks",
+        "weil das Auto kaputt ist",
+        "weil Minu mitfährt"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was hatte Shahriyar vergessen?",
+       "optionen": [
+        "Minus Geburtstag",
+        "die Bibliothek",
+        "sein Fahrrad"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie kommt Shahriyar, wenn das Wetter schlecht ist?",
+       "optionen": [
+        "mit dem Bus",
+        "mit dem Fahrrad",
+        "mit dem Taxi"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
