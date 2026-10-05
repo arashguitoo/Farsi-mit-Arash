@@ -1,0 +1,757 @@
+{
+ "id": "z1",
+ "titel": "Trainingspaket 1",
+ "beschreibung": "Wer passt zu wem?, Wort-Marathon, Lückensätze, Sätze aus Text & Dialogen.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "Wer passt zu wem?",
+   "vorschau": "🧩",
+   "karten": [
+    {
+     "typ": "zuordnen",
+     "titel": "Welches Angebot passt?",
+     "text": "Fünf Menschen suchen das passende Nachrichtenangebot. In einem App-Store findest du sieben Angebote.",
+     "frage": "Welches Angebot passt am besten? Tippe es an.",
+     "angebote": [
+      {
+       "titel": "Wetter-App",
+       "emoji": "🌦️",
+       "fa": "پیش‌بینی هوای ساعتی با هشدار باران، برف و یخبندان.",
+       "de": "Stündliche Wettervorhersage mit Warnungen vor Regen, Schnee und Frost."
+      },
+      {
+       "titel": "Festival-Newsletter",
+       "emoji": "🎬",
+       "fa": "خبرنامه‌ی هفتگی جشنواره‌های فیلم، با برنامه‌ی نمایش و نقد فیلم.",
+       "de": "Wöchentlicher Newsletter zu Filmfestivals mit Programm und Filmkritiken."
+      },
+      {
+       "titel": "Langsame Nachrichten",
+       "emoji": "🐢",
+       "fa": "پادکست خبر با سرعت آهسته و واژه‌نامه برای زبان‌آموزان.",
+       "de": "Nachrichtenpodcast in langsamem Tempo mit Wörterliste für Sprachlernende."
+      },
+      {
+       "titel": "Sport live",
+       "emoji": "⚽",
+       "fa": "پخش زنده‌ی مسابقه‌های فوتبال و والیبال با گزارش لحظه‌به‌لحظه.",
+       "de": "Livestream von Fußball- und Volleyballspielen mit Liveticker."
+      },
+      {
+       "titel": "Wissenschaftsmagazin",
+       "emoji": "🔬",
+       "fa": "مجله‌ی ماهانه درباره‌ی کشف‌های تازه در پزشکی و فضا.",
+       "de": "Monatsmagazin über neue Entdeckungen in Medizin und Raumfahrt."
+      },
+      {
+       "titel": "Schreibwerkstatt Journalismus",
+       "emoji": "🖊️",
+       "fa": "کارگاه خبرنویسی: تیتر، لید و مصاحبه، با تمرین در یک تحریریه‌ی واقعی.",
+       "de": "Workshop Nachrichtenschreiben: Schlagzeile, Lead und Interview, mit Übung in einer echten Redaktion."
+      },
+      {
+       "titel": "Verkehrs-Info",
+       "emoji": "🚇",
+       "fa": "اطلاعیه‌های فوری درباره‌ی تأخیر قطارها و خط‌های تازه‌ی مترو.",
+       "de": "Eilmeldungen zu Zugverspätungen und neuen U-Bahn-Linien."
+      }
+     ],
+     "personen": [
+      {
+       "name": "Erik",
+       "emoji": "🚆",
+       "fa": "اریک هر روز با مترو سر کار می‌رود و نمی‌خواهد دوباره دیر برسد.",
+       "de": "Erik fährt jeden Tag mit der U-Bahn zur Arbeit und möchte nicht wieder zu spät kommen.",
+       "richtig": 6
+      },
+      {
+       "name": "Lena",
+       "emoji": "🍿",
+       "fa": "لنا عاشق سینماست و هر سال به چند جشنواره‌ی فیلم می‌رود.",
+       "de": "Lena liebt das Kino und besucht jedes Jahr mehrere Filmfestivals.",
+       "richtig": 1
+      },
+      {
+       "name": "Tarek",
+       "emoji": "📖",
+       "fa": "طارق فارسی یاد می‌گیرد و خبرهای تلویزیون برایش هنوز خیلی سریع است.",
+       "de": "Tarek lernt Persisch, und die Fernsehnachrichten sind ihm noch zu schnell.",
+       "richtig": 2
+      },
+      {
+       "name": "Greta",
+       "emoji": "🌱",
+       "fa": "گرتا باغ بزرگی دارد و باید بداند کی گیاهانش را از سرما حفظ کند.",
+       "de": "Greta hat einen großen Garten und muss wissen, wann sie ihre Pflanzen vor Kälte schützen muss.",
+       "richtig": 0
+      },
+      {
+       "name": "Jonas",
+       "emoji": "📝",
+       "fa": "یوناس می‌خواهد بعد از تحصیل خبرنگار شود و نوشتن خبر را تمرین کند.",
+       "de": "Jonas möchte nach dem Studium Reporter werden und das Schreiben von Meldungen üben.",
+       "richtig": 5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Wort-Marathon",
+   "vorschau": "⏱️",
+   "karten": [
+    {
+     "typ": "tempo",
+     "titel": "Marathon: alle Wörter",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 120,
+     "ziel": 25,
+     "woerter": [
+      {
+       "fa": "خبرگزاری",
+       "a": "Nachrichtenagentur"
+      },
+      {
+       "fa": "خبرنگار",
+       "a": "Reporter/in"
+      },
+      {
+       "fa": "سردبیر",
+       "a": "Chefredakteur/in"
+      },
+      {
+       "fa": "تیتر",
+       "a": "Schlagzeile"
+      },
+      {
+       "fa": "لید",
+       "a": "Lead (Einstiegssatz einer Nachricht)"
+      },
+      {
+       "fa": "گزارش",
+       "a": "Bericht, Reportage"
+      },
+      {
+       "fa": "مصاحبه",
+       "a": "Interview"
+      },
+      {
+       "fa": "منبع خبری",
+       "a": "Nachrichtenquelle"
+      },
+      {
+       "fa": "روزنامه",
+       "a": "Zeitung"
+      },
+      {
+       "fa": "رسانه",
+       "a": "Medium"
+      },
+      {
+       "fa": "اطلاعیه",
+       "a": "Bekanntmachung, Mitteilung"
+      },
+      {
+       "fa": "سخنگو",
+       "a": "Sprecher/in (einer Institution)"
+      },
+      {
+       "fa": "رویداد",
+       "a": "Ereignis"
+      },
+      {
+       "fa": "جشنواره",
+       "a": "Festival"
+      },
+      {
+       "fa": "افتتاح",
+       "a": "Eröffnung"
+      },
+      {
+       "fa": "خط مترو",
+       "a": "U-Bahn-Linie"
+      },
+      {
+       "fa": "پیش‌بینی هوا",
+       "a": "Wettervorhersage"
+      },
+      {
+       "fa": "بارش",
+       "a": "Niederschlag"
+      },
+      {
+       "fa": "دما",
+       "a": "Temperatur"
+      },
+      {
+       "fa": "مسابقه",
+       "a": "Wettkampf, Spiel"
+      },
+      {
+       "fa": "قهرمانی",
+       "a": "Meisterschaft, Titel"
+      },
+      {
+       "fa": "دستاورد",
+       "a": "Errungenschaft"
+      },
+      {
+       "fa": "مسافر",
+       "a": "Fahrgast, Reisende/r"
+      },
+      {
+       "fa": "تماشاگر",
+       "a": "Zuschauer/in"
+      },
+      {
+       "fa": "طبق",
+       "a": "gemäß, laut"
+      },
+      {
+       "fa": "به گزارش",
+       "a": "laut Bericht von"
+      },
+      {
+       "fa": "به نقل از",
+       "a": "zitiert nach"
+      },
+      {
+       "fa": "نامبرده",
+       "a": "der/die Genannte"
+      },
+      {
+       "fa": "وی",
+       "a": "er/sie (Pressesprache)"
+      },
+      {
+       "fa": "ایشان",
+       "a": "er/sie (respektvoll)"
+      },
+      {
+       "fa": "اظهارات",
+       "a": "Äußerungen"
+      },
+      {
+       "fa": "مطبوعات",
+       "a": "Presse"
+      },
+      {
+       "fa": "بنا بر",
+       "a": "aufgrund, gemäß"
+      },
+      {
+       "fa": "رسمی",
+       "a": "offiziell"
+      },
+      {
+       "fa": "فوری",
+       "a": "dringend; Eilmeldung"
+      },
+      {
+       "fa": "منتشر کردن",
+       "a": "veröffentlichen"
+      },
+      {
+       "fa": "اعلام کردن",
+       "a": "bekanntgeben"
+      },
+      {
+       "fa": "گزارش دادن",
+       "a": "berichten"
+      },
+      {
+       "fa": "پوشش دادن",
+       "a": "berichten über (medial abdecken)"
+      },
+      {
+       "fa": "برگزار شدن",
+       "a": "stattfinden, veranstaltet werden"
+      },
+      {
+       "fa": "صورت گرفتن",
+       "a": "erfolgen, durchgeführt werden"
+      }
+     ]
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "مصاحبه",
+       "tr": "",
+       "de": "Interview",
+       "emoji": "🎙️"
+      },
+      {
+       "fa": "به نقل از",
+       "tr": "",
+       "de": "zitiert nach",
+       "emoji": "🔗"
+      },
+      {
+       "fa": "پیش‌بینی هوا",
+       "tr": "",
+       "de": "Wettervorhersage",
+       "emoji": "🌦️"
+      },
+      {
+       "fa": "جشنواره",
+       "tr": "",
+       "de": "Festival",
+       "emoji": "🎬"
+      },
+      {
+       "fa": "سخنگو",
+       "tr": "",
+       "de": "Sprecher/in (einer Institution)",
+       "emoji": "🗣️"
+      },
+      {
+       "fa": "افتتاح",
+       "tr": "",
+       "de": "Eröffnung",
+       "emoji": "✂️"
+      }
+     ],
+     "titel": "Memory"
+    },
+    {
+     "typ": "memory",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "جشنواره",
+       "tr": "",
+       "de": "Festival",
+       "emoji": "🎬"
+      },
+      {
+       "fa": "مطبوعات",
+       "tr": "",
+       "de": "Presse",
+       "emoji": "📰"
+      },
+      {
+       "fa": "رسانه",
+       "tr": "",
+       "de": "Medium",
+       "emoji": "📺"
+      },
+      {
+       "fa": "پیش‌بینی هوا",
+       "tr": "",
+       "de": "Wettervorhersage",
+       "emoji": "🌦️"
+      },
+      {
+       "fa": "وی",
+       "tr": "",
+       "de": "er/sie (Pressesprache)",
+       "emoji": "👤"
+      },
+      {
+       "fa": "طبق",
+       "tr": "",
+       "de": "gemäß, laut",
+       "emoji": "⚖️"
+      }
+     ],
+     "titel": "Memory: Wort & Bedeutung"
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "titel": "Lückensätze",
+   "vorschau": "___",
+   "karten": [
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>بیشتر روزنامه‌ها خبرهای خارجی را از یک ___ می‌گیرند.</span><br><span class='mini'>Die meisten Zeitungen beziehen Auslandsnachrichten von einer Nachrichtenagentur.</span>",
+       "optionen": [
+        "خبرگزاری",
+        "مسابقه",
+        "تیتر"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>بیشتر روزنامه‌ها خبرهای خارجی را از یک خبرگزاری می‌گیرند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>___ این خبر فقط چهار کلمه بود و فعل نداشت.</span><br><span class='mini'>Die Schlagzeile dieser Meldung hatte nur vier Wörter und kein Verb.</span>",
+       "optionen": [
+        "تیتر",
+        "طبق",
+        "ایشان"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>تیتر این خبر فقط چهار کلمه بود و فعل نداشت.</span>"
+      },
+      {
+       "frage": "<span class='fa'>___ روزنامه تصمیم گرفت خبر را در صفحه‌ی اول چاپ کند.</span><br><span class='mini'>Der Chefredakteur beschloss, die Meldung auf der ersten Seite zu drucken.</span>",
+       "optionen": [
+        "سردبیر",
+        "به نقل از",
+        "خبرنگار"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>سردبیر روزنامه تصمیم گرفت خبر را در صفحه‌ی اول چاپ کند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>امسال بیش از سیصد فیلم به ___ فیلم کوتاه رسیده است.</span><br><span class='mini'>Dieses Jahr sind über dreihundert Filme beim Kurzfilmfestival eingegangen.</span>",
+       "optionen": [
+        "جشنواره",
+        "وی",
+        "رویداد"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>امسال بیش از سیصد فیلم به جشنواره فیلم کوتاه رسیده است.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>از فردا ___ هوا در شمال کشور پایین می‌آید.</span><br><span class='mini'>Ab morgen sinkt die Temperatur im Norden des Landes.</span>",
+       "optionen": [
+        "دما",
+        "بنا بر",
+        "ایشان"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>از فردا دما هوا در شمال کشور پایین می‌آید.</span>"
+      },
+      {
+       "frage": "<span class='fa'>___ جدید شرق شهر را به فرودگاه وصل می‌کند.</span><br><span class='mini'>Die neue U-Bahn-Linie verbindet den Osten der Stadt mit dem Flughafen.</span>",
+       "optionen": [
+        "خط مترو",
+        "به نقل از",
+        "تیتر"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>خط مترو جدید شرق شهر را به فرودگاه وصل می‌کند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>بیش از بیست هزار ___ این مسابقه را در ورزشگاه دیدند.</span><br><span class='mini'>Über zwanzigtausend Zuschauer sahen das Spiel im Stadion.</span>",
+       "optionen": [
+        "تماشاگر",
+        "پیش‌بینی هوا",
+        "تیتر"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>بیش از بیست هزار تماشاگر این مسابقه را در ورزشگاه دیدند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>___ اعلام سازمان هواشناسی، فردا باران می‌بارد.</span><br><span class='mini'>Laut Mitteilung des Wetterdienstes regnet es morgen.</span>",
+       "optionen": [
+        "طبق",
+        "وی",
+        "رسانه"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>طبق اعلام سازمان هواشناسی، فردا باران می‌بارد.</span>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "e",
+   "titel": "Sätze aus Text & Dialogen",
+   "vorschau": "🧱",
+   "karten": [
+    {
+     "typ": "bauen",
+     "titel": "Baue den Satz",
+     "trenner": " ",
+     "woerter": [
+      {
+       "fa": "چرا در متن نوشته‌ای «دبیر جشنواره اظهار داشت»؟ نمی‌شود فقط نوشت «گفت»؟",
+       "tr": "",
+       "de": "Warum hast du im Text ‹der Festivalleiter erklärte› geschrieben? Kann man nicht einfach ‹sagte› schreiben?",
+       "teile": [
+        "چرا",
+        "در",
+        "متن",
+        "نوشته‌ای",
+        "«دبیر",
+        "جشنواره",
+        "اظهار",
+        "داشت»",
+        "نمی‌شود",
+        "فقط",
+        "نوشت",
+        "«گفت»"
+       ],
+       "extra": [
+        "جشنواره‌ی"
+       ]
+      },
+      {
+       "fa": "«آغاز جشنواره‌ی فیلم کوتاه دانشجویی در شیراز». کوتاه و بدون فعل.",
+       "tr": "",
+       "de": "‹Beginn des studentischen Kurzfilmfestivals in Schiras›. Kurz und ohne Verb.",
+       "teile": [
+        "«آغاز",
+        "جشنواره‌ی",
+        "فیلم",
+        "کوتاه",
+        "دانشجویی",
+        "در",
+        "شیراز»",
+        "کوتاه",
+        "و",
+        "بدون",
+        "فعل"
+       ],
+       "extra": []
+      },
+      {
+       "fa": "در این دو جمله چند ویژگی مهم زبان خبر دیده می‌شود.",
+       "tr": "",
+       "de": "In diesen beiden Sätzen sieht man einige wichtige Merkmale der Nachrichtensprache.",
+       "teile": [
+        "در",
+        "این",
+        "دو",
+        "جمله",
+        "چند",
+        "ویژگی",
+        "مهم",
+        "زبان",
+        "خبر",
+        "دیده",
+        "می‌شود"
+       ],
+       "extra": []
+      },
+      {
+       "fa": "«وی افزود: بیشتر این فیلم‌ها را دانشجویان شهرهای کوچک ساخته‌اند.»",
+       "tr": "",
+       "de": "‹Er fügte hinzu: Die meisten dieser Filme haben Studierende aus kleinen Städten gedreht.›",
+       "teile": [
+        "«وی",
+        "افزود",
+        "بیشتر",
+        "این",
+        "فیلم‌ها",
+        "را",
+        "دانشجویان",
+        "شهرهای",
+        "کوچک",
+        "ساخته‌اند»"
+       ],
+       "extra": [
+        "در"
+       ]
+      },
+      {
+       "fa": "فکر خوبی است. فردا روزنامه را از شما قرض می‌گیرم. روز خوش!",
+       "tr": "",
+       "de": "Gute Idee. Morgen leihe ich mir die Zeitung von Ihnen. Einen schönen Tag!",
+       "teile": [
+        "فکر",
+        "خوبی",
+        "است",
+        "فردا",
+        "روزنامه",
+        "را",
+        "از",
+        "شما",
+        "قرض",
+        "می‌گیرم",
+        "روز",
+        "خوش"
+       ],
+       "extra": [
+        "ویژگی"
+       ]
+      },
+      {
+       "fa": "و این جمله‌ی آخر با «گفتنی است» چه نقشی دارد؟",
+       "tr": "",
+       "de": "Und welche Funktion hat dieser letzte Satz mit ‹es sei erwähnt›?",
+       "teile": [
+        "و",
+        "این",
+        "جمله‌ی",
+        "آخر",
+        "با",
+        "«گفتنی",
+        "است»",
+        "چه",
+        "نقشی",
+        "دارد"
+       ],
+       "extra": [
+        "دیده"
+       ]
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Was bedeutet der Satz?",
+     "fragen": [
+      {
+       "frage": "„Gute Idee. Morgen leihe ich mir die Zeitung von Ihnen. Einen schönen Tag!“",
+       "optionen": [
+        "فکر خوبی است. فردا روزنامه را از شما قرض می‌گیرم. روز خوش!",
+        "و این جمله‌ی آخر با «گفتنی است» چه نقشی دارد؟",
+        "«آغاز جشنواره‌ی فیلم کوتاه دانشجویی در شیراز». کوتاه و بدون فعل."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Warum hast du im Text ‹der Festivalleiter erklärte› geschrieben? Kann man nicht einfach ‹sagte› schreiben?“",
+       "optionen": [
+        "چرا در متن نوشته‌ای «دبیر جشنواره اظهار داشت»؟ نمی‌شود فقط نوشت «گفت»؟",
+        "«آغاز جشنواره‌ی فیلم کوتاه دانشجویی در شیراز». کوتاه و بدون فعل.",
+        "و این جمله‌ی آخر با «گفتنی است» چه نقشی دارد؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Und welche Funktion hat dieser letzte Satz mit ‹es sei erwähnt›?“",
+       "optionen": [
+        "و این جمله‌ی آخر با «گفتنی است» چه نقشی دارد؟",
+        "در این دو جمله چند ویژگی مهم زبان خبر دیده می‌شود.",
+        "«وی افزود: بیشتر این فیلم‌ها را دانشجویان شهرهای کوچک ساخته‌اند.»"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„In diesen beiden Sätzen sieht man einige wichtige Merkmale der Nachrichtensprache.“",
+       "optionen": [
+        "در این دو جمله چند ویژگی مهم زبان خبر دیده می‌شود.",
+        "و این جمله‌ی آخر با «گفتنی است» چه نقشی دارد؟",
+        "چرا در متن نوشته‌ای «دبیر جشنواره اظهار داشت»؟ نمی‌شود فقط نوشت «گفت»؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„‹Beginn des studentischen Kurzfilmfestivals in Schiras›. Kurz und ohne Verb.“",
+       "optionen": [
+        "«آغاز جشنواره‌ی فیلم کوتاه دانشجویی در شیراز». کوتاه و بدون فعل.",
+        "در این دو جمله چند ویژگی مهم زبان خبر دیده می‌شود.",
+        "فکر خوبی است. فردا روزنامه را از شما قرض می‌گیرم. روز خوش!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„‹Er fügte hinzu: Die meisten dieser Filme haben Studierende aus kleinen Städten gedreht.›“",
+       "optionen": [
+        "«وی افزود: بیشتر این فیلم‌ها را دانشجویان شهرهای کوچک ساخته‌اند.»",
+        "چرا در متن نوشته‌ای «دبیر جشنواره اظهار داشت»؟ نمی‌شود فقط نوشت «گفت»؟",
+        "فکر خوبی است. فردا روزنامه را از شما قرض می‌گیرم. روز خوش!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welcher persische Satz?",
+     "fragen": [
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Und welche Funktion hat dieser letzte Satz mit ‹es sei erwähnt›?",
+        "‹Er fügte hinzu: Die meisten dieser Filme haben Studierende aus kleinen Städten gedreht.›",
+        "Gute Idee. Morgen leihe ich mir die Zeitung von Ihnen. Einen schönen Tag!"
+       ],
+       "richtig": 0,
+       "fa": "و این جمله‌ی آخر با «گفتنی است» چه نقشی دارد؟"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "‹Beginn des studentischen Kurzfilmfestivals in Schiras›. Kurz und ohne Verb.",
+        "Warum hast du im Text ‹der Festivalleiter erklärte› geschrieben? Kann man nicht einfach ‹sagte› schreiben?",
+        "Und welche Funktion hat dieser letzte Satz mit ‹es sei erwähnt›?"
+       ],
+       "richtig": 0,
+       "fa": "«آغاز جشنواره‌ی فیلم کوتاه دانشجویی در شیراز». کوتاه و بدون فعل."
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "‹Er fügte hinzu: Die meisten dieser Filme haben Studierende aus kleinen Städten gedreht.›",
+        "In diesen beiden Sätzen sieht man einige wichtige Merkmale der Nachrichtensprache.",
+        "Gute Idee. Morgen leihe ich mir die Zeitung von Ihnen. Einen schönen Tag!"
+       ],
+       "richtig": 0,
+       "fa": "«وی افزود: بیشتر این فیلم‌ها را دانشجویان شهرهای کوچک ساخته‌اند.»"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "In diesen beiden Sätzen sieht man einige wichtige Merkmale der Nachrichtensprache.",
+        "Und welche Funktion hat dieser letzte Satz mit ‹es sei erwähnt›?",
+        "Gute Idee. Morgen leihe ich mir die Zeitung von Ihnen. Einen schönen Tag!"
+       ],
+       "richtig": 0,
+       "fa": "در این دو جمله چند ویژگی مهم زبان خبر دیده می‌شود."
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Gute Idee. Morgen leihe ich mir die Zeitung von Ihnen. Einen schönen Tag!",
+        "Und welche Funktion hat dieser letzte Satz mit ‹es sei erwähnt›?",
+        "‹Beginn des studentischen Kurzfilmfestivals in Schiras›. Kurz und ohne Verb."
+       ],
+       "richtig": 0,
+       "fa": "فکر خوبی است. فردا روزنامه را از شما قرض می‌گیرم. روز خوش!"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Warum hast du im Text ‹der Festivalleiter erklärte› geschrieben? Kann man nicht einfach ‹sagte› schreiben?",
+        "In diesen beiden Sätzen sieht man einige wichtige Merkmale der Nachrichtensprache.",
+        "‹Beginn des studentischen Kurzfilmfestivals in Schiras›. Kurz und ohne Verb."
+       ],
+       "richtig": 0,
+       "fa": "چرا در متن نوشته‌ای «دبیر جشنواره اظهار داشت»؟ نمی‌شود فقط نوشت «گفت»؟"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

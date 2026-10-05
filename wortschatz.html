@@ -93,7 +93,7 @@
   const SPIELE = [
     { id: "paare", ico: "🔗", titel: "Paare: Wort ↔ Bedeutung", text: "6 Paare zuordnen", min: 4,
       karte: l => ({ typ: "paare", links: "de", titel: "Finde die Paare", paare: eindeutig(l, w => w.de, 6).map(w => ({ fa: anzeige(w), de: w.de, emoji: w.emoji || "" })) }) },
-    { id: "paare-tr", ico: "🗣️", titel: "Paare: Schrift ↔ Aussprache", text: "6 Paare zuordnen", min: 4,
+    { id: "paare-tr", ico: "🗣️", titel: "Paare: Schrift ↔ Aussprache", text: "6 Paare zuordnen", min: 4, tr: true,
       karte: l => ({ typ: "paare", links: "tr", titel: "Schrift und Aussprache", paare: eindeutig(l, w => w.tr, 6).map(w => ({ fa: anzeige(w), tr: anzeigeTr(w) })) }) },
     { id: "memory", ico: "🧠", titel: "Memory", text: "Bilder oder Bedeutungen aufdecken", min: 4,
       karte: l => { const mitBild = eindeutig(l.filter(w => w.emoji), w => w.emoji, 6);
@@ -101,7 +101,7 @@
           : { typ: "memory", links: "de", titel: "Memory: Wort & Bedeutung", paare: eindeutig(l, w => w.de, 6).map(w => ({ fa: anzeige(w), de: w.de })) }; } },
     { id: "blitz-de", ico: "⏱️", titel: "Blitzlesen: Bedeutung", text: "60 Sekunden, Ziel 15", min: 6,
       karte: l => ({ typ: "tempo", modus: "de", sekunden: 60, ziel: 15, titel: "Blitzlesen: Was bedeutet das?", woerter: eindeutig(l, w => anzeige(w), 999).map(w => ({ fa: anzeige(w), de: w.de })) }) },
-    { id: "blitz-tr", ico: "⚡", titel: "Blitzlesen: Aussprache", text: "60 Sekunden, Ziel 15", min: 6,
+    { id: "blitz-tr", ico: "⚡", titel: "Blitzlesen: Aussprache", text: "60 Sekunden, Ziel 15", min: 6, tr: true,
       karte: l => ({ typ: "tempo", modus: "tr", sekunden: 60, ziel: 15, titel: "Blitzlesen: Wie spricht man das?", woerter: eindeutig(l, w => anzeige(w), 999).map(w => ({ fa: anzeige(w), tr: anzeigeTr(w) })) }) },
     { id: "karten", ico: "🃏", titel: "Karteikarten", text: "10 Wörter lesen & aufdecken", min: 1,
       karte: l => ({ typ: "lesen", titel: "Lies das Wort", karten: eindeutig(l, w => w.fa, 10).map(w => ({ fa: anzeige(w), tr: anzeigeTr(w), de: w.de, emoji: w.emoji || "" })) }) },
@@ -132,9 +132,9 @@
     const b_ = best();
     $("#spiele").innerHTML = SPIELE.map(s => {
       const bk = b_[s.id + "|" + (nurDiese ? "nur" : "bis") + bis + "|" + kat];
-      const aus = l.length < s.min;
+      const aus = (s.tr ? l.filter(w => w.tr) : l).length < s.min;
       return `<button class="spiel" data-s="${s.id}" ${aus ? "disabled style='opacity:.45'" : ""}>
-        <span class="ico">${s.ico}</span><b>${s.titel}</b><span class="mini">${aus ? `braucht mind. ${s.min} Wörter` : s.text}</span>
+        <span class="ico">${s.ico}</span><b>${s.titel}</b><span class="mini">${aus ? (s.tr && l.length >= s.min ? "ohne Umschrift (Fortgeschritten 2)" : `braucht mind. ${s.min} Wörter`) : s.text}</span>
         ${bk ? `<span class="best">Bestwert: ${bk.p}/${bk.m}</span>` : ""}</button>`;
     }).join("");
     $$(".spiel[data-s]").forEach(b => b.onclick = () => starte(b.dataset.s));
@@ -152,7 +152,7 @@
     $("#spielTitel").textContent = s.ico + " " + s.titel;
     $("#fuss").innerHTML = `<span class="klein muted" id="kp"></span><button class="btn safran versteckt" id="nochmal">🔁 Neue Runde</button>`;
     $("#nochmal").onclick = () => starte(id);
-    const karte = s.karte(auswahl());
+    const karte = s.karte(s.tr ? auswahl().filter(w => w.tr) : auswahl());
     window.WS_TRAINER.letzteKarte = karte;
     E.R[karte.typ](karte, $("#karte"), (p, m) => {
       if (m) { $("#kp").textContent = `${p} von ${m} Punkten`; merkeBest(id, p, m); F.speichereStation("ws", id, p, m); }

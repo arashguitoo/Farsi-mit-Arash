@@ -1,0 +1,750 @@
+{
+ "id": "z1",
+ "titel": "Trainingspaket 1",
+ "beschreibung": "Wer passt zu wem?, Wort-Marathon, Lückensätze, Sätze aus Text & Dialogen.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "Wer passt zu wem?",
+   "vorschau": "🧩",
+   "karten": [
+    {
+     "typ": "zuordnen",
+     "titel": "Welches Angebot passt?",
+     "text": "Fünf Menschen interessieren sich für Wissenschaftsgeschichte. Ein Kulturzentrum bietet in diesem Monat sieben Veranstaltungen an.",
+     "frage": "Welches Angebot passt am besten? Tippe es an.",
+     "angebote": [
+      {
+       "titel": "Sternenabend",
+       "emoji": "🔭",
+       "fa": "شب نجوم: رصد آسمان با تلسکوپ و آشنایی با ستاره‌شناسان قرون میانه.",
+       "de": "Sternenabend: Himmelsbeobachtung mit dem Teleskop und Einführung in die Astronomen des Mittelalters."
+      },
+      {
+       "titel": "Ausstellung Medizinhandschriften",
+       "emoji": "📜",
+       "fa": "نمایشگاه نسخه‌های خطی پزشکی از رازی و ابن سینا.",
+       "de": "Ausstellung medizinischer Handschriften von Razi und Avicenna."
+      },
+      {
+       "titel": "Mathe-Rätsel für Kinder",
+       "emoji": "🧮",
+       "fa": "کارگاه معما و بازی‌های ریاضی برای کودکان هشت تا دوازده ساله.",
+       "de": "Workshop mit Rätseln und Mathespielen für Kinder von acht bis zwölf Jahren."
+      },
+      {
+       "titel": "Von Kharazmi zu Python",
+       "emoji": "💻",
+       "fa": "دوره‌ی برنامه‌نویسی برای معلمان: الگوریتم‌ها از خوارزمی تا امروز.",
+       "de": "Programmierkurs für Lehrkräfte: Algorithmen von Kharazmi bis heute."
+      },
+      {
+       "titel": "Vortrag: Biruni und Indien",
+       "emoji": "🐘",
+       "fa": "سخنرانی درباره‌ی سفر بیرونی به هند و کتاب او درباره‌ی مردم هند.",
+       "de": "Vortrag über Birunis Reise nach Indien und sein Buch über die Menschen Indiens."
+      },
+      {
+       "titel": "Rosenwasser destillieren",
+       "emoji": "🌹",
+       "fa": "کارگاه عملی: گلاب‌گیری به روش سنتی و تاریخچه‌ی تقطیر.",
+       "de": "Praxisworkshop: Rosenwasser nach traditioneller Art gewinnen und die Geschichte der Destillation."
+      },
+      {
+       "titel": "Seminar Übersetzungsgeschichte",
+       "emoji": "🔁",
+       "fa": "سمینار نهضت ترجمه: چگونه آثار یونانی به عربی و بعد به لاتین رسید.",
+       "de": "Seminar zur Übersetzungsbewegung: wie griechische Werke ins Arabische und dann ins Lateinische gelangten."
+      }
+     ],
+     "personen": [
+      {
+       "name": "Sina",
+       "emoji": "🩺",
+       "fa": "سینا دانشجوی پزشکی است و می‌خواهد کتاب‌های قدیمی پزشکی را از نزدیک ببیند.",
+       "de": "Sina studiert Medizin und möchte alte medizinische Bücher aus der Nähe sehen.",
+       "richtig": 1
+      },
+      {
+       "name": "Lars",
+       "emoji": "👨‍🏫",
+       "fa": "لارس معلم مدرسه است و می‌خواهد به دانش‌آموزانش کدنویسی را همراه با تاریخ آن یاد بدهد.",
+       "de": "Lars ist Lehrer und möchte seinen Schülerinnen und Schülern das Programmieren samt seiner Geschichte beibringen.",
+       "richtig": 3
+      },
+      {
+       "name": "Nora",
+       "emoji": "🌙",
+       "fa": "نورا شب‌ها با دوربین دوچشمی ستاره‌ها را تماشا می‌کند.",
+       "de": "Nora beobachtet nachts mit dem Fernglas die Sterne.",
+       "richtig": 0
+      },
+      {
+       "name": "Paul",
+       "emoji": "🧴",
+       "fa": "پاول عطر و کرم طبیعی می‌سازد و دوست دارد خودش با دست چیزی تقطیر کند.",
+       "de": "Paul stellt Parfüm und Naturkosmetik her und möchte selbst etwas destillieren.",
+       "richtig": 5
+      },
+      {
+       "name": "Mia",
+       "emoji": "🌐",
+       "fa": "میا مترجم است و می‌خواهد بداند کتاب‌ها در قرون میانه چگونه از زبانی به زبان دیگر رفتند.",
+       "de": "Mia ist Übersetzerin und möchte wissen, wie Bücher im Mittelalter von einer Sprache in die andere gelangten.",
+       "richtig": 6
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Wort-Marathon",
+   "vorschau": "⏱️",
+   "karten": [
+    {
+     "typ": "tempo",
+     "titel": "Marathon: alle Wörter",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 120,
+     "ziel": 25,
+     "woerter": [
+      {
+       "fa": "دانشمند",
+       "a": "Gelehrte/r, Wissenschaftler/in"
+      },
+      {
+       "fa": "پزشک",
+       "a": "Arzt/Ärztin"
+      },
+      {
+       "fa": "ستاره‌شناس",
+       "a": "Astronom/in"
+      },
+      {
+       "fa": "ریاضی‌دان",
+       "a": "Mathematiker/in"
+      },
+      {
+       "fa": "شیمیدان",
+       "a": "Chemiker/in"
+      },
+      {
+       "fa": "فیلسوف",
+       "a": "Philosoph/in"
+      },
+      {
+       "fa": "آزمایش",
+       "a": "Experiment, Versuch"
+      },
+      {
+       "fa": "کشف",
+       "a": "Entdeckung"
+      },
+      {
+       "fa": "اختراع",
+       "a": "Erfindung"
+      },
+      {
+       "fa": "نظریه",
+       "a": "Theorie"
+      },
+      {
+       "fa": "روش علمی",
+       "a": "wissenschaftliche Methode"
+      },
+      {
+       "fa": "رساله",
+       "a": "Abhandlung"
+      },
+      {
+       "fa": "جبر",
+       "a": "Algebra"
+      },
+      {
+       "fa": "هندسه",
+       "a": "Geometrie"
+      },
+      {
+       "fa": "نجوم",
+       "a": "Astronomie, Sternkunde"
+      },
+      {
+       "fa": "طب",
+       "a": "Medizin, Heilkunde"
+      },
+      {
+       "fa": "کیمیا",
+       "a": "Alchemie"
+      },
+      {
+       "fa": "داروشناسی",
+       "a": "Pharmakologie, Arzneikunde"
+      },
+      {
+       "fa": "دانشنامه",
+       "a": "Enzyklopädie"
+      },
+      {
+       "fa": "ترجمه",
+       "a": "Übersetzung"
+      },
+      {
+       "fa": "شرح",
+       "a": "Kommentar, Erläuterung"
+      },
+      {
+       "fa": "منبع",
+       "a": "Quelle"
+      },
+      {
+       "fa": "عدد",
+       "a": "Zahl"
+      },
+      {
+       "fa": "شعاع",
+       "a": "Radius"
+      },
+      {
+       "fa": "بیت‌الحکمه",
+       "a": "Haus der Weisheit (Bagdad)"
+      },
+      {
+       "fa": "کتابخانه",
+       "a": "Bibliothek"
+      },
+      {
+       "fa": "رصدخانه",
+       "a": "Sternwarte"
+      },
+      {
+       "fa": "بیمارستان",
+       "a": "Krankenhaus"
+      },
+      {
+       "fa": "نهضت ترجمه",
+       "a": "Übersetzungsbewegung"
+      },
+      {
+       "fa": "شاگرد",
+       "a": "Schüler/in (eines Meisters)"
+      },
+      {
+       "fa": "استاد",
+       "a": "Meister/in, Lehrer/in"
+      },
+      {
+       "fa": "دوره‌ی طلایی",
+       "a": "goldenes Zeitalter"
+      },
+      {
+       "fa": "قرون میانه",
+       "a": "Mittelalter"
+      },
+      {
+       "fa": "نام‌آور",
+       "a": "berühmt, namhaft"
+      },
+      {
+       "fa": "برجسته",
+       "a": "herausragend"
+      },
+      {
+       "fa": "کشف کردن",
+       "a": "entdecken"
+      },
+      {
+       "fa": "اختراع کردن",
+       "a": "erfinden"
+      },
+      {
+       "fa": "اندازه گرفتن",
+       "a": "messen"
+      },
+      {
+       "fa": "تقطیر کردن",
+       "a": "destillieren"
+      },
+      {
+       "fa": "بنیان نهادن",
+       "a": "begründen, gründen"
+      },
+      {
+       "fa": "به کار بردن",
+       "a": "anwenden, verwenden"
+      }
+     ]
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "نهضت ترجمه",
+       "tr": "",
+       "de": "Übersetzungsbewegung",
+       "emoji": "🌐"
+      },
+      {
+       "fa": "ترجمه",
+       "tr": "",
+       "de": "Übersetzung",
+       "emoji": "🔁"
+      },
+      {
+       "fa": "شرح",
+       "tr": "",
+       "de": "Kommentar, Erläuterung",
+       "emoji": "📝"
+      },
+      {
+       "fa": "فیلسوف",
+       "tr": "",
+       "de": "Philosoph/in",
+       "emoji": "🤔"
+      },
+      {
+       "fa": "دانشنامه",
+       "tr": "",
+       "de": "Enzyklopädie",
+       "emoji": "📚"
+      },
+      {
+       "fa": "روش علمی",
+       "tr": "",
+       "de": "wissenschaftliche Methode",
+       "emoji": "🧭"
+      }
+     ],
+     "titel": "Memory"
+    },
+    {
+     "typ": "memory",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "شعاع",
+       "tr": "",
+       "de": "Radius",
+       "emoji": "⭕"
+      },
+      {
+       "fa": "اختراع",
+       "tr": "",
+       "de": "Erfindung",
+       "emoji": "⚙️"
+      },
+      {
+       "fa": "استاد",
+       "tr": "",
+       "de": "Meister/in, Lehrer/in",
+       "emoji": "👨‍🏫"
+      },
+      {
+       "fa": "دوره‌ی طلایی",
+       "tr": "",
+       "de": "goldenes Zeitalter",
+       "emoji": "🌟"
+      },
+      {
+       "fa": "منبع",
+       "tr": "",
+       "de": "Quelle",
+       "emoji": "🗂️"
+      },
+      {
+       "fa": "بیت‌الحکمه",
+       "tr": "",
+       "de": "Haus der Weisheit (Bagdad)",
+       "emoji": "🏛️"
+      }
+     ],
+     "titel": "Memory: Wort & Bedeutung"
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "titel": "Lückensätze",
+   "vorschau": "___",
+   "karten": [
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>واژه‌ی «الگوریتم» از نام یک ___ ایرانی گرفته شده است.</span><br><span class='mini'>Das Wort ‹Algorithmus› ist vom Namen eines iranischen Mathematikers abgeleitet.</span>",
+       "optionen": [
+        "ریاضی‌دان",
+        "کشف",
+        "عدد"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>واژه‌ی «الگوریتم» از نام یک ریاضی‌دان ایرانی گرفته شده است.</span>"
+      },
+      {
+       "frage": "<span class='fa'>رازی ریاست ___ بزرگ ری را بر عهده داشت.</span><br><span class='mini'>Razi leitete das große Krankenhaus von Rey.</span>",
+       "optionen": [
+        "بیمارستان",
+        "نام‌آور",
+        "بیت‌الحکمه"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>رازی ریاست بیمارستان بزرگ ری را بر عهده داشت.</span>"
+      },
+      {
+       "frage": "<span class='fa'>«قانون» ابن سینا قرن‌ها مهم‌ترین کتاب ___ در اروپا بود.</span><br><span class='mini'>Avicennas ‹Kanon› war jahrhundertelang das wichtigste Medizinbuch in Europa.</span>",
+       "optionen": [
+        "طب",
+        "ترجمه",
+        "ریاضی‌دان"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>«قانون» ابن سینا قرن‌ها مهم‌ترین کتاب طب در اروپا بود.</span>"
+      },
+      {
+       "frage": "<span class='fa'>در ___ بغداد آثار یونانی به عربی ترجمه می‌شد.</span><br><span class='mini'>Im Haus der Weisheit in Bagdad wurden griechische Werke ins Arabische übersetzt.</span>",
+       "optionen": [
+        "بیت‌الحکمه",
+        "اختراع",
+        "دوره‌ی طلایی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>در بیت‌الحکمه بغداد آثار یونانی به عربی ترجمه می‌شد.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>بیرونی ___ زمین را با دقتی شگفت‌انگیز اندازه گرفت.</span><br><span class='mini'>Biruni maß den Erdradius mit erstaunlicher Genauigkeit.</span>",
+       "optionen": [
+        "شعاع",
+        "فیلسوف",
+        "رساله"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>بیرونی شعاع زمین را با دقتی شگفت‌انگیز اندازه گرفت.</span>"
+      },
+      {
+       "frage": "<span class='fa'>ستاره‌شناسان شب‌ها در ___ حرکت ستارگان را ثبت می‌کردند.</span><br><span class='mini'>Die Astronomen zeichneten nachts in der Sternwarte die Bewegung der Sterne auf.</span>",
+       "optionen": [
+        "رصدخانه",
+        "ریاضی‌دان",
+        "استاد"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>ستاره‌شناسان شب‌ها در رصدخانه حرکت ستارگان را ثبت می‌کردند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>نام اروپایی ___ از عنوان کتاب خوارزمی گرفته شده است.</span><br><span class='mini'>Der europäische Name der Algebra stammt aus dem Titel von Kharazmis Buch.</span>",
+       "optionen": [
+        "جبر",
+        "کشف",
+        "داروشناسی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>نام اروپایی جبر از عنوان کتاب خوارزمی گرفته شده است.</span>"
+      },
+      {
+       "frage": "<span class='fa'>رازی یک ___ کوتاه درباره‌ی سرخک و آبله نوشت.</span><br><span class='mini'>Razi schrieb eine kurze Abhandlung über Masern und Pocken.</span>",
+       "optionen": [
+        "رساله",
+        "ترجمه",
+        "شاگرد"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>رازی یک رساله کوتاه درباره‌ی سرخک و آبله نوشت.</span>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "e",
+   "titel": "Sätze aus Text & Dialogen",
+   "vorschau": "🧱",
+   "karten": [
+    {
+     "typ": "bauen",
+     "titel": "Baue den Satz",
+     "trenner": " ",
+     "woerter": [
+      {
+       "fa": "یوناس جان، شنیدم داری درباره‌ی بیرونی تحقیق می‌کنی. آفرین!",
+       "tr": "",
+       "de": "Jonas, ich habe gehört, du forschst über Biruni. Bravo!",
+       "teile": [
+        "یوناس",
+        "جان",
+        "شنیدم",
+        "داری",
+        "درباره‌ی",
+        "بیرونی",
+        "تحقیق",
+        "می‌کنی",
+        "آفرین"
+       ],
+       "extra": [
+        "است."
+       ]
+      },
+      {
+       "fa": "مورخان این زمان را «دوره‌ی طلایی» علم در قرون میانه می‌نامند.",
+       "tr": "",
+       "de": "Historiker nennen diese Zeit das ‹goldene Zeitalter› der Wissenschaft im Mittelalter.",
+       "teile": [
+        "مورخان",
+        "این",
+        "زمان",
+        "را",
+        "«دوره‌ی",
+        "طلایی»",
+        "علم",
+        "در",
+        "قرون",
+        "میانه",
+        "می‌نامند"
+       ],
+       "extra": [
+        "هندی‌ها"
+       ]
+      },
+      {
+       "fa": "و نتیجه‌اش چقدر دقیق بود؟",
+       "tr": "",
+       "de": "Und wie genau war sein Ergebnis?",
+       "teile": [
+        "و",
+        "نتیجه‌اش",
+        "چقدر",
+        "دقیق",
+        "بود"
+       ],
+       "extra": [
+        "به"
+       ]
+      },
+      {
+       "fa": "موافقم. خوارزمی از یونانی‌ها و هندی‌ها یاد گرفت و اروپایی‌ها از او.",
+       "tr": "",
+       "de": "Da stimme ich zu. Kharazmi hat von Griechen und Indern gelernt und die Europäer von ihm.",
+       "teile": [
+        "موافقم",
+        "خوارزمی",
+        "از",
+        "یونانی‌ها",
+        "و",
+        "هندی‌ها",
+        "یاد",
+        "گرفت",
+        "و",
+        "اروپایی‌ها",
+        "از",
+        "او"
+       ],
+       "extra": [
+        "کدام"
+       ]
+      },
+      {
+       "fa": "از کدام منابع استفاده کنم؟ متن اصلی به عربی است.",
+       "tr": "",
+       "de": "Welche Quellen soll ich verwenden? Der Originaltext ist auf Arabisch.",
+       "teile": [
+        "از",
+        "کدام",
+        "منابع",
+        "استفاده",
+        "کنم",
+        "متن",
+        "اصلی",
+        "به",
+        "عربی",
+        "است"
+       ],
+       "extra": [
+        "یونانی‌ها"
+       ]
+      },
+      {
+       "fa": "موضوع بسیار خوبی است. روش او را می‌شناسید؟",
+       "tr": "",
+       "de": "Ein sehr gutes Thema. Kennen Sie seine Methode?",
+       "teile": [
+        "موضوع",
+        "بسیار",
+        "خوبی",
+        "است",
+        "روش",
+        "او",
+        "را",
+        "می‌شناسید"
+       ],
+       "extra": [
+        "به"
+       ]
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Was bedeutet der Satz?",
+     "fragen": [
+      {
+       "frage": "„Jonas, ich habe gehört, du forschst über Biruni. Bravo!“",
+       "optionen": [
+        "یوناس جان، شنیدم داری درباره‌ی بیرونی تحقیق می‌کنی. آفرین!",
+        "مورخان این زمان را «دوره‌ی طلایی» علم در قرون میانه می‌نامند.",
+        "از کدام منابع استفاده کنم؟ متن اصلی به عربی است."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Und wie genau war sein Ergebnis?“",
+       "optionen": [
+        "و نتیجه‌اش چقدر دقیق بود؟",
+        "مورخان این زمان را «دوره‌ی طلایی» علم در قرون میانه می‌نامند.",
+        "یوناس جان، شنیدم داری درباره‌ی بیرونی تحقیق می‌کنی. آفرین!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Historiker nennen diese Zeit das ‹goldene Zeitalter› der Wissenschaft im Mittelalter.“",
+       "optionen": [
+        "مورخان این زمان را «دوره‌ی طلایی» علم در قرون میانه می‌نامند.",
+        "یوناس جان، شنیدم داری درباره‌ی بیرونی تحقیق می‌کنی. آفرین!",
+        "موافقم. خوارزمی از یونانی‌ها و هندی‌ها یاد گرفت و اروپایی‌ها از او."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Da stimme ich zu. Kharazmi hat von Griechen und Indern gelernt und die Europäer von ihm.“",
+       "optionen": [
+        "موافقم. خوارزمی از یونانی‌ها و هندی‌ها یاد گرفت و اروپایی‌ها از او.",
+        "موضوع بسیار خوبی است. روش او را می‌شناسید؟",
+        "یوناس جان، شنیدم داری درباره‌ی بیرونی تحقیق می‌کنی. آفرین!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Ein sehr gutes Thema. Kennen Sie seine Methode?“",
+       "optionen": [
+        "موضوع بسیار خوبی است. روش او را می‌شناسید؟",
+        "از کدام منابع استفاده کنم؟ متن اصلی به عربی است.",
+        "و نتیجه‌اش چقدر دقیق بود؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Welche Quellen soll ich verwenden? Der Originaltext ist auf Arabisch.“",
+       "optionen": [
+        "از کدام منابع استفاده کنم؟ متن اصلی به عربی است.",
+        "و نتیجه‌اش چقدر دقیق بود؟",
+        "موافقم. خوارزمی از یونانی‌ها و هندی‌ها یاد گرفت و اروپایی‌ها از او."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welcher persische Satz?",
+     "fragen": [
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Da stimme ich zu. Kharazmi hat von Griechen und Indern gelernt und die Europäer von ihm.",
+        "Und wie genau war sein Ergebnis?",
+        "Ein sehr gutes Thema. Kennen Sie seine Methode?"
+       ],
+       "richtig": 0,
+       "fa": "موافقم. خوارزمی از یونانی‌ها و هندی‌ها یاد گرفت و اروپایی‌ها از او."
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Jonas, ich habe gehört, du forschst über Biruni. Bravo!",
+        "Da stimme ich zu. Kharazmi hat von Griechen und Indern gelernt und die Europäer von ihm.",
+        "Welche Quellen soll ich verwenden? Der Originaltext ist auf Arabisch."
+       ],
+       "richtig": 0,
+       "fa": "یوناس جان، شنیدم داری درباره‌ی بیرونی تحقیق می‌کنی. آفرین!"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Welche Quellen soll ich verwenden? Der Originaltext ist auf Arabisch.",
+        "Da stimme ich zu. Kharazmi hat von Griechen und Indern gelernt und die Europäer von ihm.",
+        "Ein sehr gutes Thema. Kennen Sie seine Methode?"
+       ],
+       "richtig": 0,
+       "fa": "از کدام منابع استفاده کنم؟ متن اصلی به عربی است."
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Ein sehr gutes Thema. Kennen Sie seine Methode?",
+        "Da stimme ich zu. Kharazmi hat von Griechen und Indern gelernt und die Europäer von ihm.",
+        "Historiker nennen diese Zeit das ‹goldene Zeitalter› der Wissenschaft im Mittelalter."
+       ],
+       "richtig": 0,
+       "fa": "موضوع بسیار خوبی است. روش او را می‌شناسید؟"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Historiker nennen diese Zeit das ‹goldene Zeitalter› der Wissenschaft im Mittelalter.",
+        "Da stimme ich zu. Kharazmi hat von Griechen und Indern gelernt und die Europäer von ihm.",
+        "Ein sehr gutes Thema. Kennen Sie seine Methode?"
+       ],
+       "richtig": 0,
+       "fa": "مورخان این زمان را «دوره‌ی طلایی» علم در قرون میانه می‌نامند."
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Und wie genau war sein Ergebnis?",
+        "Da stimme ich zu. Kharazmi hat von Griechen und Indern gelernt und die Europäer von ihm.",
+        "Welche Quellen soll ich verwenden? Der Originaltext ist auf Arabisch."
+       ],
+       "richtig": 0,
+       "fa": "و نتیجه‌اش چقدر دقیق بود؟"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

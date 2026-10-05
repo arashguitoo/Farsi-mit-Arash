@@ -1,0 +1,749 @@
+{
+ "id": "z1",
+ "titel": "Trainingspaket 1",
+ "beschreibung": "Wer passt zu wem?, Wort-Marathon, Lückensätze, Sätze aus Text & Dialogen.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "Wer passt zu wem?",
+   "vorschau": "🧩",
+   "karten": [
+    {
+     "typ": "zuordnen",
+     "titel": "Welche Tour passt?",
+     "text": "Fünf Gäste verbringen ein Wochenende in Teheran. Ein Reisebüro bietet sieben Touren an.",
+     "frage": "Welches Angebot passt am besten? Tippe es an.",
+     "angebote": [
+      {
+       "titel": "Wanderung am Tochal",
+       "emoji": "🥾",
+       "fa": "پیاده‌روی گروهی در دامنه‌ی توچال و بازگشت با تله‌کابین.",
+       "de": "Gruppenwanderung am Hang des Tochal und Rückfahrt mit der Seilbahn."
+      },
+      {
+       "titel": "Basar-Führung",
+       "emoji": "🛍️",
+       "fa": "گشت با راهنما در بازار بزرگ و آشنایی با فرش‌فروشان و ادویه‌فروشان قدیمی.",
+       "de": "Führung durch den Großen Basar und Begegnung mit alteingesessenen Teppich- und Gewürzhändlern."
+      },
+      {
+       "titel": "Abend im Milad-Turm",
+       "emoji": "🗼",
+       "fa": "شام در رستوران گردان برج میلاد با چشم‌انداز شب شهر.",
+       "de": "Abendessen im Drehrestaurant des Milad-Turms mit Blick auf die nächtliche Stadt."
+      },
+      {
+       "titel": "Kadscharen-Paläste",
+       "emoji": "👑",
+       "fa": "بازدید از کاخ گلستان و آشنایی با معماری و تاریخ دوره‌ی قاجار.",
+       "de": "Besuch des Golestan-Palastes: Architektur und Geschichte der Kadscharenzeit."
+      },
+      {
+       "titel": "Metro-Kunst-Tour",
+       "emoji": "🚇",
+       "fa": "گردش با مترو و دیدن آثار هنری در ایستگاه‌های مختلف.",
+       "de": "Tour mit der U-Bahn zu Kunstwerken in verschiedenen Stationen."
+      },
+      {
+       "titel": "Museum für zeitgenössische Kunst",
+       "emoji": "🖼️",
+       "fa": "بازدید از موزه‌ی هنرهای معاصر تهران و مجموعه‌ی نقاشی‌های مدرن آن.",
+       "de": "Besuch des Teheraner Museums für zeitgenössische Kunst und seiner Sammlung moderner Malerei."
+      },
+      {
+       "titel": "Kochkurs im Süden",
+       "emoji": "🍲",
+       "fa": "کلاس آشپزی در یک خانه‌ی قدیمی در جنوب شهر: آبگوشت و نان سنگک.",
+       "de": "Kochkurs in einem alten Haus im Süden der Stadt: Abguscht und Sangak-Brot."
+      }
+     ],
+     "personen": [
+      {
+       "name": "Nina",
+       "emoji": "🏔️",
+       "fa": "نینا عاشق طبیعت است و می‌خواهد از شلوغی شهر دور شود و کمی ورزش کند.",
+       "de": "Nina liebt die Natur, möchte dem Trubel der Stadt entkommen und sich etwas bewegen.",
+       "richtig": 0
+      },
+      {
+       "name": "Paul",
+       "emoji": "🧂",
+       "fa": "پاول در آلمان مغازه‌ی ادویه دارد و می‌خواهد ببیند تجارت سنتی در ایران چطور است.",
+       "de": "Paul hat in Deutschland einen Gewürzladen und möchte sehen, wie traditioneller Handel in Iran funktioniert.",
+       "richtig": 1
+      },
+      {
+       "name": "Sara",
+       "emoji": "🌃",
+       "fa": "سارا و دوستش می‌خواهند یک شب خاص، با غذای خوب و منظره‌ای زیبا از بالا داشته باشند.",
+       "de": "Sara und ihre Freundin möchten einen besonderen Abend mit gutem Essen und schöner Aussicht von oben.",
+       "richtig": 2
+      },
+      {
+       "name": "Leon",
+       "emoji": "📜",
+       "fa": "لئون معلم تاریخ است و درباره‌ی پادشاهان قرن نوزدهم ایران تحقیق می‌کند.",
+       "de": "Leon ist Geschichtslehrer und forscht über die iranischen Herrscher des 19. Jahrhunderts.",
+       "richtig": 3
+      },
+      {
+       "name": "Mia",
+       "emoji": "🎨",
+       "fa": "میا هنر در فضاهای عمومی را دوست دارد و ترجیح می‌دهد با حمل و نقل عمومی بگردد.",
+       "de": "Mia mag Kunst im öffentlichen Raum und ist am liebsten mit öffentlichen Verkehrsmitteln unterwegs.",
+       "richtig": 4
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Wort-Marathon",
+   "vorschau": "⏱️",
+   "karten": [
+    {
+     "typ": "tempo",
+     "titel": "Marathon: alle Wörter",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 120,
+     "ziel": 25,
+     "woerter": [
+      {
+       "fa": "کلان‌شهر",
+       "a": "Megastadt"
+      },
+      {
+       "fa": "حومه",
+       "a": "Umland, Vororte"
+      },
+      {
+       "fa": "محله",
+       "a": "Stadtviertel"
+      },
+      {
+       "fa": "بزرگراه",
+       "a": "Schnellstraße, Stadtautobahn"
+      },
+      {
+       "fa": "میدان",
+       "a": "Platz"
+      },
+      {
+       "fa": "برج",
+       "a": "Turm"
+      },
+      {
+       "fa": "آسمان‌خراش",
+       "a": "Wolkenkratzer"
+      },
+      {
+       "fa": "بازار سرپوشیده",
+       "a": "überdachter Basar"
+      },
+      {
+       "fa": "شهرداری",
+       "a": "Stadtverwaltung"
+      },
+      {
+       "fa": "جمعیت",
+       "a": "Bevölkerung"
+      },
+      {
+       "fa": "ساکن",
+       "a": "Einwohner/in; wohnhaft"
+      },
+      {
+       "fa": "پیاده‌رو",
+       "a": "Gehweg"
+      },
+      {
+       "fa": "ترافیک",
+       "a": "Verkehr, Stau"
+      },
+      {
+       "fa": "مترو",
+       "a": "U-Bahn, Metro"
+      },
+      {
+       "fa": "ایستگاه",
+       "a": "Haltestelle, Station"
+      },
+      {
+       "fa": "حمل و نقل عمومی",
+       "a": "öffentlicher Nahverkehr"
+      },
+      {
+       "fa": "آلودگی هوا",
+       "a": "Luftverschmutzung"
+      },
+      {
+       "fa": "مه‌دود",
+       "a": "Smog"
+      },
+      {
+       "fa": "خودروی شخصی",
+       "a": "Privatauto"
+      },
+      {
+       "fa": "زلزله",
+       "a": "Erdbeben"
+      },
+      {
+       "fa": "گسل",
+       "a": "Verwerfung, Bruchlinie"
+      },
+      {
+       "fa": "خطر",
+       "a": "Gefahr"
+      },
+      {
+       "fa": "کمبود آب",
+       "a": "Wassermangel"
+      },
+      {
+       "fa": "فضای سبز",
+       "a": "Grünflächen"
+      },
+      {
+       "fa": "روستا",
+       "a": "Dorf"
+      },
+      {
+       "fa": "سلسله",
+       "a": "Dynastie"
+      },
+      {
+       "fa": "پادشاه",
+       "a": "König, Schah"
+      },
+      {
+       "fa": "رشته‌کوه",
+       "a": "Gebirgskette"
+      },
+      {
+       "fa": "دامنه",
+       "a": "Hang, Fuß (eines Berges)"
+      },
+      {
+       "fa": "قله",
+       "a": "Gipfel"
+      },
+      {
+       "fa": "ارتفاع",
+       "a": "Höhe"
+      },
+      {
+       "fa": "شیب",
+       "a": "Gefälle, Steigung"
+      },
+      {
+       "fa": "تله‌کابین",
+       "a": "Seilbahn"
+      },
+      {
+       "fa": "چشم‌انداز",
+       "a": "Aussicht, Panorama"
+      },
+      {
+       "fa": "دره",
+       "a": "Tal"
+      },
+      {
+       "fa": "گسترش یافتن",
+       "a": "sich ausdehnen, wachsen"
+      },
+      {
+       "fa": "افزایش یافتن",
+       "a": "zunehmen, steigen"
+      },
+      {
+       "fa": "کاهش یافتن",
+       "a": "abnehmen, sinken"
+      },
+      {
+       "fa": "تأسیس گردیدن",
+       "a": "gegründet werden (gehoben)"
+      },
+      {
+       "fa": "مهاجرت کردن",
+       "a": "auswandern, abwandern"
+      },
+      {
+       "fa": "سکونت داشتن",
+       "a": "wohnen, ansässig sein"
+      }
+     ]
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "کلان‌شهر",
+       "tr": "",
+       "de": "Megastadt",
+       "emoji": "🌆"
+      },
+      {
+       "fa": "چشم‌انداز",
+       "tr": "",
+       "de": "Aussicht, Panorama",
+       "emoji": "🔭"
+      },
+      {
+       "fa": "ساکن",
+       "tr": "",
+       "de": "Einwohner/in; wohnhaft",
+       "emoji": "🧑"
+      },
+      {
+       "fa": "جمعیت",
+       "tr": "",
+       "de": "Bevölkerung",
+       "emoji": "👥"
+      },
+      {
+       "fa": "رشته‌کوه",
+       "tr": "",
+       "de": "Gebirgskette",
+       "emoji": "🏔️"
+      },
+      {
+       "fa": "قله",
+       "tr": "",
+       "de": "Gipfel",
+       "emoji": "🗻"
+      }
+     ],
+     "titel": "Memory"
+    },
+    {
+     "typ": "memory",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "دامنه",
+       "tr": "",
+       "de": "Hang, Fuß (eines Berges)",
+       "emoji": "⛰️"
+      },
+      {
+       "fa": "آلودگی هوا",
+       "tr": "",
+       "de": "Luftverschmutzung",
+       "emoji": "😷"
+      },
+      {
+       "fa": "زلزله",
+       "tr": "",
+       "de": "Erdbeben",
+       "emoji": "🏚️"
+      },
+      {
+       "fa": "خودروی شخصی",
+       "tr": "",
+       "de": "Privatauto",
+       "emoji": "🚙"
+      },
+      {
+       "fa": "ترافیک",
+       "tr": "",
+       "de": "Verkehr, Stau",
+       "emoji": "🚗"
+      },
+      {
+       "fa": "مه‌دود",
+       "tr": "",
+       "de": "Smog",
+       "emoji": "🌫️"
+      }
+     ],
+     "titel": "Memory: Wort & Bedeutung"
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "titel": "Lückensätze",
+   "vorschau": "___",
+   "karten": [
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>در ساعت‌های اوج، ___ تهران آن‌قدر سنگین است که گاهی یک ساعت در راه می‌مانید.</span><br><span class='mini'>In der Hauptverkehrszeit ist der Verkehr in Teheran so dicht, dass man manchmal eine Stunde feststeckt.</span>",
+       "optionen": [
+        "ترافیک",
+        "سلسله",
+        "مترو"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>در ساعت‌های اوج، ترافیک تهران آن‌قدر سنگین است که گاهی یک ساعت در راه می‌مانید.</span>"
+      },
+      {
+       "frage": "<span class='fa'>___ تهران در قرن بیستم چند برابر شد.</span><br><span class='mini'>Die Bevölkerung Teherans hat sich im 20. Jahrhundert vervielfacht.</span>",
+       "optionen": [
+        "جمعیت",
+        "ایستگاه",
+        "چشم‌انداز"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>جمعیت تهران در قرن بیستم چند برابر شد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>در زمستان، ___ گاهی آن‌قدر غلیظ است که کوه‌ها دیده نمی‌شوند.</span><br><span class='mini'>Im Winter ist der Smog manchmal so dicht, dass man die Berge nicht sieht.</span>",
+       "optionen": [
+        "مه‌دود",
+        "ترافیک",
+        "حمل و نقل عمومی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>در زمستان، مه‌دود گاهی آن‌قدر غلیظ است که کوه‌ها دیده نمی‌شوند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>با ___ از شمال تهران تا نزدیکی قله‌ی توچال می‌روید.</span><br><span class='mini'>Mit der Seilbahn fahren Sie vom Norden Teherans bis in die Nähe des Tochal-Gipfels.</span>",
+       "optionen": [
+        "تله‌کابین",
+        "دره",
+        "خودروی شخصی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>با تله‌کابین از شمال تهران تا نزدیکی قله‌ی توچال می‌روید.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>تهران روی چند ___ فعال ساخته شده است.</span><br><span class='mini'>Teheran ist auf mehreren aktiven Bruchlinien gebaut.</span>",
+       "optionen": [
+        "گسل",
+        "مترو",
+        "روستا"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>تهران روی چند گسل فعال ساخته شده است.</span>"
+      },
+      {
+       "frage": "<span class='fa'>قاجار نام یک ___ است که بیش از صد سال بر ایران حکومت کرد.</span><br><span class='mini'>Kadscharen ist der Name einer Dynastie, die über hundert Jahre über Iran herrschte.</span>",
+       "optionen": [
+        "سلسله",
+        "چشم‌انداز",
+        "شیب"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>قاجار نام یک سلسله است که بیش از صد سال بر ایران حکومت کرد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>خانه‌ی ما در یک ___ آرام در شمال شهر است.</span><br><span class='mini'>Unser Haus liegt in einem ruhigen Viertel im Norden der Stadt.</span>",
+       "optionen": [
+        "محله",
+        "رشته‌کوه",
+        "روستا"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>خانه‌ی ما در یک محله آرام در شمال شهر است.</span>"
+      },
+      {
+       "frage": "<span class='fa'>از بالای برج میلاد، ___ شهر و کوه‌های البرز فوق‌العاده است.</span><br><span class='mini'>Vom Milad-Turm aus ist der Blick auf die Stadt und das Alborz-Gebirge großartig.</span>",
+       "optionen": [
+        "چشم‌انداز",
+        "حمل و نقل عمومی",
+        "روستا"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>از بالای برج میلاد، چشم‌انداز شهر و کوه‌های البرز فوق‌العاده است.</span>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "e",
+   "titel": "Sätze aus Text & Dialogen",
+   "vorschau": "🧱",
+   "karten": [
+    {
+     "typ": "bauen",
+     "titel": "Baue den Satz",
+     "trenner": " ",
+     "woerter": [
+      {
+       "fa": "کاخ گلستان هم از همان دوره است، درست است؟",
+       "tr": "",
+       "de": "Der Golestan-Palast stammt auch aus dieser Zeit, richtig?",
+       "teile": [
+        "کاخ",
+        "گلستان",
+        "هم",
+        "از",
+        "همان",
+        "دوره",
+        "است",
+        "درست",
+        "است"
+       ],
+       "extra": [
+        "خوبی"
+       ]
+      },
+      {
+       "fa": "البته. موضوع خوبی انتخاب کرده‌اید. از کجا شروع کرده‌اید؟",
+       "tr": "",
+       "de": "Natürlich. Sie haben ein gutes Thema gewählt. Wo haben Sie angefangen?",
+       "teile": [
+        "البته",
+        "موضوع",
+        "خوبی",
+        "انتخاب",
+        "کرده‌اید",
+        "از",
+        "کجا",
+        "شروع",
+        "کرده‌اید"
+       ],
+       "extra": [
+        "شهر»"
+       ]
+      },
+      {
+       "fa": "تهرانی‌ها به این دو بخش «بالای شهر» و «پایین شهر» می‌گویند.",
+       "tr": "",
+       "de": "Die Teheraner nennen diese beiden Teile ‹Oberstadt› und ‹Unterstadt›.",
+       "teile": [
+        "تهرانی‌ها",
+        "به",
+        "این",
+        "دو",
+        "بخش",
+        "«بالای",
+        "شهر»",
+        "و",
+        "«پایین",
+        "شهر»",
+        "می‌گویند"
+       ],
+       "extra": [
+        "پس"
+       ]
+      },
+      {
+       "fa": "مشکل دیگر آلودگی هوا است، به‌ویژه در زمستان.",
+       "tr": "",
+       "de": "Ein weiteres Problem ist die Luftverschmutzung, besonders im Winter.",
+       "teile": [
+        "مشکل",
+        "دیگر",
+        "آلودگی",
+        "هوا",
+        "است",
+        "به‌ویژه",
+        "در",
+        "زمستان"
+       ],
+       "extra": []
+      },
+      {
+       "fa": "ارتفاع شمالی‌ترین محله‌ها چند صد متر بیشتر از جنوب شهر است.",
+       "tr": "",
+       "de": "Die nördlichsten Viertel liegen einige hundert Meter höher als der Süden der Stadt.",
+       "teile": [
+        "ارتفاع",
+        "شمالی‌ترین",
+        "محله‌ها",
+        "چند",
+        "صد",
+        "متر",
+        "بیشتر",
+        "از",
+        "جنوب",
+        "شهر",
+        "است"
+       ],
+       "extra": [
+        "آلودگی"
+       ]
+      },
+      {
+       "fa": "به نظر شما چرا شهر این‌قدر بزرگ شد؟",
+       "tr": "",
+       "de": "Warum ist die Stadt Ihrer Meinung nach so groß geworden?",
+       "teile": [
+        "به",
+        "نظر",
+        "شما",
+        "چرا",
+        "شهر",
+        "این‌قدر",
+        "بزرگ",
+        "شد"
+       ],
+       "extra": [
+        "صد"
+       ]
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Was bedeutet der Satz?",
+     "fragen": [
+      {
+       "frage": "„Ein weiteres Problem ist die Luftverschmutzung, besonders im Winter.“",
+       "optionen": [
+        "مشکل دیگر آلودگی هوا است، به‌ویژه در زمستان.",
+        "تهرانی‌ها به این دو بخش «بالای شهر» و «پایین شهر» می‌گویند.",
+        "البته. موضوع خوبی انتخاب کرده‌اید. از کجا شروع کرده‌اید؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Warum ist die Stadt Ihrer Meinung nach so groß geworden?“",
+       "optionen": [
+        "به نظر شما چرا شهر این‌قدر بزرگ شد؟",
+        "کاخ گلستان هم از همان دوره است، درست است؟",
+        "تهرانی‌ها به این دو بخش «بالای شهر» و «پایین شهر» می‌گویند."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Die nördlichsten Viertel liegen einige hundert Meter höher als der Süden der Stadt.“",
+       "optionen": [
+        "ارتفاع شمالی‌ترین محله‌ها چند صد متر بیشتر از جنوب شهر است.",
+        "البته. موضوع خوبی انتخاب کرده‌اید. از کجا شروع کرده‌اید؟",
+        "به نظر شما چرا شهر این‌قدر بزرگ شد؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Der Golestan-Palast stammt auch aus dieser Zeit, richtig?“",
+       "optionen": [
+        "کاخ گلستان هم از همان دوره است، درست است؟",
+        "به نظر شما چرا شهر این‌قدر بزرگ شد؟",
+        "مشکل دیگر آلودگی هوا است، به‌ویژه در زمستان."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Guten Morgen, Jonas! Ist die Uni heute auch geschlossen?“",
+       "optionen": [
+        "صبح بخیر یوناس! امروز هم دانشگاه تعطیل است؟",
+        "به نظر شما چرا شهر این‌قدر بزرگ شد؟",
+        "پس انتخاب پایتخت یک تصمیم سیاسی و نظامی بود."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Die Teheraner nennen diese beiden Teile ‹Oberstadt› und ‹Unterstadt›.“",
+       "optionen": [
+        "تهرانی‌ها به این دو بخش «بالای شهر» و «پایین شهر» می‌گویند.",
+        "پس انتخاب پایتخت یک تصمیم سیاسی و نظامی بود.",
+        "به نظر شما چرا شهر این‌قدر بزرگ شد؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welcher persische Satz?",
+     "fragen": [
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Guten Morgen, Jonas! Ist die Uni heute auch geschlossen?",
+        "Warum ist die Stadt Ihrer Meinung nach so groß geworden?",
+        "Die nördlichsten Viertel liegen einige hundert Meter höher als der Süden der Stadt."
+       ],
+       "richtig": 0,
+       "fa": "صبح بخیر یوناس! امروز هم دانشگاه تعطیل است؟"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Natürlich. Sie haben ein gutes Thema gewählt. Wo haben Sie angefangen?",
+        "Die Teheraner nennen diese beiden Teile ‹Oberstadt› und ‹Unterstadt›.",
+        "Die Wahl der Hauptstadt war also eine politische und militärische Entscheidung."
+       ],
+       "richtig": 0,
+       "fa": "البته. موضوع خوبی انتخاب کرده‌اید. از کجا شروع کرده‌اید؟"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Die nördlichsten Viertel liegen einige hundert Meter höher als der Süden der Stadt.",
+        "Ein weiteres Problem ist die Luftverschmutzung, besonders im Winter.",
+        "Der Golestan-Palast stammt auch aus dieser Zeit, richtig?"
+       ],
+       "richtig": 0,
+       "fa": "ارتفاع شمالی‌ترین محله‌ها چند صد متر بیشتر از جنوب شهر است."
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Die Wahl der Hauptstadt war also eine politische und militärische Entscheidung.",
+        "Natürlich. Sie haben ein gutes Thema gewählt. Wo haben Sie angefangen?",
+        "Die Teheraner nennen diese beiden Teile ‹Oberstadt› und ‹Unterstadt›."
+       ],
+       "richtig": 0,
+       "fa": "پس انتخاب پایتخت یک تصمیم سیاسی و نظامی بود."
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Der Golestan-Palast stammt auch aus dieser Zeit, richtig?",
+        "Ein weiteres Problem ist die Luftverschmutzung, besonders im Winter.",
+        "Warum ist die Stadt Ihrer Meinung nach so groß geworden?"
+       ],
+       "richtig": 0,
+       "fa": "کاخ گلستان هم از همان دوره است، درست است؟"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Ein weiteres Problem ist die Luftverschmutzung, besonders im Winter.",
+        "Die Wahl der Hauptstadt war also eine politische und militärische Entscheidung.",
+        "Guten Morgen, Jonas! Ist die Uni heute auch geschlossen?"
+       ],
+       "richtig": 0,
+       "fa": "مشکل دیگر آلودگی هوا است، به‌ویژه در زمستان."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

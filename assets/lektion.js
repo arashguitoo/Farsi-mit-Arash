@@ -642,6 +642,7 @@
     tonBtn.onclick = () => { F.setEinst({ ton: !F.einst().ton }); setzeKnoepfe(); };
     umBtn.onclick = () => { F.setEinst({ umschrift: !F.einst().umschrift }); setzeKnoepfe(); toast(F.einst().umschrift ? "Umschrift wird angezeigt" : "Umschrift ausgeblendet – jetzt nur Schrift!"); };
     $("#btnTafel").onclick = tafel;
+    if (/^f2/.test(LEK_ID)) umBtn.style.display = "none";   // Fortgeschritten 2: ohne Umschrift
     setzeKnoepfe();
 
     try {

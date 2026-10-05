@@ -1,0 +1,745 @@
+{
+ "id": "z1",
+ "titel": "Trainingspaket 1",
+ "beschreibung": "Wer passt zu wem?, Wort-Marathon, Lückensätze, Sätze aus Text & Dialogen.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "Wer passt zu wem?",
+   "vorschau": "🧩",
+   "karten": [
+    {
+     "typ": "zuordnen",
+     "titel": "Welches Angebot passt?",
+     "text": "Fünf Persischlernende suchen ein Angebot, um weiterzukommen. Auf der Website eines Kulturvereins gibt es sieben Ideen.",
+     "frage": "Welches Angebot passt am besten? Tippe es an.",
+     "angebote": [
+      {
+       "titel": "Sommerkurs Schiras",
+       "emoji": "🌹",
+       "fa": "دوره‌ی تابستانی زبان و ادبیات در شیراز، با بازدید از آرامگاه حافظ و سعدی.",
+       "de": "Sommerkurs Sprache und Literatur in Schiras, mit Besuch der Grabmäler von Hafes und Saadi."
+      },
+      {
+       "titel": "Tadschikisch in Duschanbe",
+       "emoji": "🏔️",
+       "fa": "کلاس فشرده‌ی تاجیکی با الفبای سیریلیک و سفر به کوه‌های پامیر.",
+       "de": "Intensivkurs Tadschikisch mit kyrillischem Alphabet und Reise ins Pamir-Gebirge."
+      },
+      {
+       "titel": "Online-Tandem Dari",
+       "emoji": "💻",
+       "fa": "گفتگوی هفتگی آنلاین با دانشجویان افغان در هامبورگ.",
+       "de": "Wöchentliches Online-Gespräch mit afghanischen Studierenden in Hamburg."
+      },
+      {
+       "titel": "Kalligrafie-Workshop",
+       "emoji": "🖋️",
+       "fa": "کارگاه خوشنویسی نستعلیق برای مبتدیان.",
+       "de": "Workshop Nastaliq-Kalligrafie für Anfänger."
+      },
+      {
+       "titel": "Nachrichten-Podcast",
+       "emoji": "🎧",
+       "fa": "پادکست روزانه با اخبار ساده و واژگان سیاسی و اقتصادی.",
+       "de": "Täglicher Podcast mit einfachen Nachrichten und politischem und wirtschaftlichem Wortschatz."
+      },
+      {
+       "titel": "Lesekreis Schahname",
+       "emoji": "⚔️",
+       "fa": "حلقه‌ی کتابخوانی شاهنامه: هر ماه یک داستان پهلوانی.",
+       "de": "Schahname-Lesekreis: jeden Monat eine Heldengeschichte."
+      },
+      {
+       "titel": "Urdu-Schnupperkurs",
+       "emoji": "🇵🇰",
+       "fa": "آشنایی با زبان اردو و وام‌واژه‌های فارسی در آن.",
+       "de": "Einführung in Urdu und die persischen Lehnwörter darin."
+      }
+     ],
+     "personen": [
+      {
+       "name": "Jan",
+       "emoji": "🧗",
+       "fa": "یان روسی را خوب بلد است و آرزو دارد در کوه‌های آسیای میانه کوهنوردی کند.",
+       "de": "Jan kann gut Russisch und träumt davon, in den Bergen Zentralasiens zu wandern.",
+       "richtig": 1
+      },
+      {
+       "name": "Mara",
+       "emoji": "🤝",
+       "fa": "مارا در یک مرکز مشاوره کار می‌کند و مراجعان زیادی از افغانستان دارد.",
+       "de": "Mara arbeitet in einer Beratungsstelle und hat viele Klientinnen und Klienten aus Afghanistan.",
+       "richtig": 2
+      },
+      {
+       "name": "Felix",
+       "emoji": "🎨",
+       "fa": "فلیکس گرافیست است و عاشق حروف و خط‌های زیبا.",
+       "de": "Felix ist Grafiker und liebt Buchstaben und schöne Schriften.",
+       "richtig": 3
+      },
+      {
+       "name": "Ina",
+       "emoji": "📰",
+       "fa": "اینا روزنامه‌نگار است و می‌خواهد خبرهای ایران را بدون مترجم بفهمد.",
+       "de": "Ina ist Journalistin und möchte iranische Nachrichten ohne Übersetzer verstehen.",
+       "richtig": 4
+      },
+      {
+       "name": "Tom",
+       "emoji": "🛡️",
+       "fa": "تام داستان‌های پهلوانی مثل نیبلونگن را دوست دارد و دنبال گروهی برای کتابخوانی است.",
+       "de": "Tom liebt Heldensagen wie die Nibelungen und sucht eine Gruppe zum gemeinsamen Lesen.",
+       "richtig": 5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Wort-Marathon",
+   "vorschau": "⏱️",
+   "karten": [
+    {
+     "typ": "tempo",
+     "titel": "Marathon: alle Wörter",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 120,
+     "ziel": 25,
+     "woerter": [
+      {
+       "fa": "زبان مادری",
+       "a": "Muttersprache"
+      },
+      {
+       "fa": "گویش",
+       "a": "Dialekt"
+      },
+      {
+       "fa": "لهجه",
+       "a": "Akzent, Mundart"
+      },
+      {
+       "fa": "خط",
+       "a": "Schrift"
+      },
+      {
+       "fa": "الفبا",
+       "a": "Alphabet"
+      },
+      {
+       "fa": "واژگان",
+       "a": "Wortschatz"
+      },
+      {
+       "fa": "دستور زبان",
+       "a": "Grammatik"
+      },
+      {
+       "fa": "تلفظ",
+       "a": "Aussprache"
+      },
+      {
+       "fa": "وام‌واژه",
+       "a": "Lehnwort"
+      },
+      {
+       "fa": "زبان رسمی",
+       "a": "Amtssprache"
+      },
+      {
+       "fa": "گویشور",
+       "a": "Sprecher/in (einer Sprache)"
+      },
+      {
+       "fa": "دوزبانه",
+       "a": "zweisprachig"
+      },
+      {
+       "fa": "میراث",
+       "a": "Erbe"
+      },
+      {
+       "fa": "تمدن",
+       "a": "Zivilisation"
+      },
+      {
+       "fa": "شاعر",
+       "a": "Dichter/in"
+      },
+      {
+       "fa": "حماسه",
+       "a": "Epos"
+      },
+      {
+       "fa": "دربار",
+       "a": "Königshof"
+      },
+      {
+       "fa": "نسخه‌ی خطی",
+       "a": "Handschrift"
+      },
+      {
+       "fa": "سنگ‌نوشته",
+       "a": "Inschrift"
+      },
+      {
+       "fa": "خط میخی",
+       "a": "Keilschrift"
+      },
+      {
+       "fa": "دوره",
+       "a": "Epoche, Periode"
+      },
+      {
+       "fa": "ادبیات",
+       "a": "Literatur"
+      },
+      {
+       "fa": "کهن",
+       "a": "alt, uralt (gehoben)"
+      },
+      {
+       "fa": "مرز",
+       "a": "Grenze"
+      },
+      {
+       "fa": "منطقه",
+       "a": "Region"
+      },
+      {
+       "fa": "پایتخت",
+       "a": "Hauptstadt"
+      },
+      {
+       "fa": "سرزمین",
+       "a": "Land, Gebiet"
+      },
+      {
+       "fa": "هویت",
+       "a": "Identität"
+      },
+      {
+       "fa": "خویشاوند",
+       "a": "verwandt"
+      },
+      {
+       "fa": "مشترک",
+       "a": "gemeinsam"
+      },
+      {
+       "fa": "متفاوت",
+       "a": "unterschiedlich"
+      },
+      {
+       "fa": "گسترده",
+       "a": "weit, ausgedehnt"
+      },
+      {
+       "fa": "شاخه",
+       "a": "Zweig"
+      },
+      {
+       "fa": "همسایه",
+       "a": "Nachbar/in"
+      },
+      {
+       "fa": "رواج داشتن",
+       "a": "verbreitet sein"
+      },
+      {
+       "fa": "به شمار رفتن",
+       "a": "gelten als"
+      },
+      {
+       "fa": "ریشه داشتن",
+       "a": "wurzeln in, stammen aus"
+      },
+      {
+       "fa": "تأثیر گذاشتن",
+       "a": "beeinflussen"
+      },
+      {
+       "fa": "پدید آمدن",
+       "a": "entstehen"
+      },
+      {
+       "fa": "پیوند دادن",
+       "a": "verbinden"
+      }
+     ]
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "گویش",
+       "tr": "",
+       "de": "Dialekt",
+       "emoji": "🗺️"
+      },
+      {
+       "fa": "شاخه",
+       "tr": "",
+       "de": "Zweig",
+       "emoji": "🌿"
+      },
+      {
+       "fa": "میراث",
+       "tr": "",
+       "de": "Erbe",
+       "emoji": "🏺"
+      },
+      {
+       "fa": "خط",
+       "tr": "",
+       "de": "Schrift",
+       "emoji": "✒️"
+      },
+      {
+       "fa": "خط میخی",
+       "tr": "",
+       "de": "Keilschrift",
+       "emoji": "🔺"
+      },
+      {
+       "fa": "وام‌واژه",
+       "tr": "",
+       "de": "Lehnwort",
+       "emoji": "🔁"
+      }
+     ],
+     "titel": "Memory"
+    },
+    {
+     "typ": "memory",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "نسخه‌ی خطی",
+       "tr": "",
+       "de": "Handschrift",
+       "emoji": "📜"
+      },
+      {
+       "fa": "میراث",
+       "tr": "",
+       "de": "Erbe",
+       "emoji": "🏺"
+      },
+      {
+       "fa": "متفاوت",
+       "tr": "",
+       "de": "unterschiedlich",
+       "emoji": "↔️"
+      },
+      {
+       "fa": "زبان مادری",
+       "tr": "",
+       "de": "Muttersprache",
+       "emoji": "🏠"
+      },
+      {
+       "fa": "گویش",
+       "tr": "",
+       "de": "Dialekt",
+       "emoji": "🗺️"
+      },
+      {
+       "fa": "سرزمین",
+       "tr": "",
+       "de": "Land, Gebiet",
+       "emoji": "🏞️"
+      }
+     ],
+     "titel": "Memory: Wort & Bedeutung"
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "titel": "Lückensätze",
+   "vorschau": "___",
+   "karten": [
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>فارسی ___ من است؛ آلمانی را در مدرسه یاد گرفتم.</span><br><span class='mini'>Persisch ist meine Muttersprache; Deutsch habe ich in der Schule gelernt.</span>",
+       "optionen": [
+        "زبان مادری",
+        "دربار",
+        "خویشاوند"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>فارسی زبان مادری من است؛ آلمانی را در مدرسه یاد گرفتم.</span>"
+      },
+      {
+       "frage": "<span class='fa'>مردم اصفهان ___ خاصی دارند که همه آن را می‌شناسند.</span><br><span class='mini'>Die Menschen in Isfahan haben einen besonderen Akzent, den alle kennen.</span>",
+       "optionen": [
+        "لهجه",
+        "خویشاوند",
+        "متفاوت"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>مردم اصفهان لهجه خاصی دارند که همه آن را می‌شناسند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>کلمه‌ی «آسانسور» یک ___ از زبان فرانسوی است.</span><br><span class='mini'>Das Wort ‹Aufzug› ist ein Lehnwort aus dem Französischen.</span>",
+       "optionen": [
+        "وام‌واژه",
+        "الفبا",
+        "گویش"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>کلمه‌ی «آسانسور» یک وام‌واژه از زبان فرانسوی است.</span>"
+      },
+      {
+       "frage": "<span class='fa'>تاجیک‌ها از ___ سیریلیک استفاده می‌کنند.</span><br><span class='mini'>Die Tadschiken verwenden die kyrillische Schrift.</span>",
+       "optionen": [
+        "خط",
+        "الفبا",
+        "دوره"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>تاجیک‌ها از خط سیریلیک استفاده می‌کنند.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>شاهنامه بزرگ‌ترین ___ زبان فارسی است.</span><br><span class='mini'>Das Schahname ist das größte Epos der persischen Sprache.</span>",
+       "optionen": [
+        "حماسه",
+        "کهن",
+        "لهجه"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>شاهنامه بزرگ‌ترین حماسه زبان فارسی است.</span>"
+      },
+      {
+       "frage": "<span class='fa'>نوروز بخشی از ___ مشترک ایران، افغانستان و تاجیکستان است.</span><br><span class='mini'>Nouruz ist Teil des gemeinsamen Erbes von Iran, Afghanistan und Tadschikistan.</span>",
+       "optionen": [
+        "میراث",
+        "تمدن",
+        "شاعر"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>نوروز بخشی از میراث مشترک ایران، افغانستان و تاجیکستان است.</span>"
+      },
+      {
+       "frage": "<span class='fa'>یک ___ هشتصدساله از شاهنامه در این کتابخانه نگهداری می‌شود.</span><br><span class='mini'>In dieser Bibliothek wird eine 800 Jahre alte Handschrift des Schahname aufbewahrt.</span>",
+       "optionen": [
+        "نسخه‌ی خطی",
+        "خط میخی",
+        "دوزبانه"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>یک نسخه‌ی خطی هشتصدساله از شاهنامه در این کتابخانه نگهداری می‌شود.</span>"
+      },
+      {
+       "frage": "<span class='fa'>زبان، بخش مهمی از ___ هر انسان است.</span><br><span class='mini'>Sprache ist ein wichtiger Teil der Identität jedes Menschen.</span>",
+       "optionen": [
+        "هویت",
+        "گویشور",
+        "وام‌واژه"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>زبان، بخش مهمی از هویت هر انسان است.</span>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "e",
+   "titel": "Sätze aus Text & Dialogen",
+   "vorschau": "🧱",
+   "karten": [
+    {
+     "typ": "bauen",
+     "titel": "Baue den Satz",
+     "trenner": " ",
+     "woerter": [
+      {
+       "fa": "اما اگر فارسی یک زبان است، تفاوت‌ها کجاست؟",
+       "tr": "",
+       "de": "Doch wenn Persisch eine Sprache ist – wo liegen die Unterschiede?",
+       "teile": [
+        "اما",
+        "اگر",
+        "فارسی",
+        "یک",
+        "زبان",
+        "است",
+        "تفاوت‌ها",
+        "کجاست"
+       ],
+       "extra": [
+        "و"
+       ]
+      },
+      {
+       "fa": "پس چرا تاجیک‌ها خط فارسی را کنار گذاشتند؟",
+       "tr": "",
+       "de": "Warum haben die Tadschiken dann die persische Schrift aufgegeben?",
+       "teile": [
+        "پس",
+        "چرا",
+        "تاجیک‌ها",
+        "خط",
+        "فارسی",
+        "را",
+        "کنار",
+        "گذاشتند"
+       ],
+       "extra": [
+        "اگر"
+       ]
+      },
+      {
+       "fa": "جالب است! پس شاید رودکی هم همین‌طور حرف می‌زد.",
+       "tr": "",
+       "de": "Interessant! Dann hat Rudaki vielleicht auch so gesprochen.",
+       "teile": [
+        "جالب",
+        "است",
+        "پس",
+        "شاید",
+        "رودکی",
+        "هم",
+        "همین‌طور",
+        "حرف",
+        "می‌زد"
+       ],
+       "extra": [
+        "به"
+       ]
+      },
+      {
+       "fa": "لهجه‌اش هم برایم جالب بود. به نظرم کمی قدیمی‌تر بود.",
+       "tr": "",
+       "de": "Sein Akzent war auch interessant für mich. Er klang für mich etwas älter.",
+       "teile": [
+        "لهجه‌اش",
+        "هم",
+        "برایم",
+        "جالب",
+        "بود",
+        "به",
+        "نظرم",
+        "کمی",
+        "قدیمی‌تر",
+        "بود"
+       ],
+       "extra": [
+        "است!"
+       ]
+      },
+      {
+       "fa": "تفاوت اصلی در تلفظ و واژگان است.",
+       "tr": "",
+       "de": "Der Hauptunterschied liegt in Aussprache und Wortschatz.",
+       "teile": [
+        "تفاوت",
+        "اصلی",
+        "در",
+        "تلفظ",
+        "و",
+        "واژگان",
+        "است"
+       ],
+       "extra": [
+        "این"
+       ]
+      },
+      {
+       "fa": "گفت فردا به «پوهنتون» می‌رود. اول فکر کردم اسم یک شهر است!",
+       "tr": "",
+       "de": "Er sagte, er gehe morgen zur ‹Pohantun›. Zuerst dachte ich, das sei der Name einer Stadt!",
+       "teile": [
+        "گفت",
+        "فردا",
+        "به",
+        "«پوهنتون»",
+        "می‌رود",
+        "اول",
+        "فکر",
+        "کردم",
+        "اسم",
+        "یک",
+        "شهر",
+        "است"
+       ],
+       "extra": [
+        "است."
+       ]
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Was bedeutet der Satz?",
+     "fragen": [
+      {
+       "frage": "„Vielleicht! Du musst Frau Dr. Sadeghi fragen. Sie liebt solche Diskussionen.“",
+       "optionen": [
+        "شاید! باید از خانم دکتر صادقی بپرسی. او عاشق این بحث‌هاست.",
+        "لهجه‌اش هم برایم جالب بود. به نظرم کمی قدیمی‌تر بود.",
+        "جالب است! پس شاید رودکی هم همین‌طور حرف می‌زد."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Sein Akzent war auch interessant für mich. Er klang für mich etwas älter.“",
+       "optionen": [
+        "لهجه‌اش هم برایم جالب بود. به نظرم کمی قدیمی‌تر بود.",
+        "تفاوت اصلی در تلفظ و واژگان است.",
+        "اما اگر فارسی یک زبان است، تفاوت‌ها کجاست؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Er sagte, er gehe morgen zur ‹Pohantun›. Zuerst dachte ich, das sei der Name einer Stadt!“",
+       "optionen": [
+        "گفت فردا به «پوهنتون» می‌رود. اول فکر کردم اسم یک شهر است!",
+        "واژه‌هایی مثل «مادر» و «برادر» این خویشاوندی را به‌خوبی نشان می‌دهند.",
+        "تفاوت اصلی در تلفظ و واژگان است."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Wörter wie ‹madar› (Mutter) und ‹baradar› (Bruder) zeigen diese Verwandtschaft deutlich.“",
+       "optionen": [
+        "واژه‌هایی مثل «مادر» و «برادر» این خویشاوندی را به‌خوبی نشان می‌دهند.",
+        "تفاوت اصلی در تلفظ و واژگان است.",
+        "جالب است! پس شاید رودکی هم همین‌طور حرف می‌زد."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Frau Dr. Sadeghi, entschuldigen Sie, ich hätte eine Frage.“",
+       "optionen": [
+        "خانم دکتر صادقی، ببخشید، یک سؤال داشتم.",
+        "جالب است! پس شاید رودکی هم همین‌طور حرف می‌زد.",
+        "گفت فردا به «پوهنتون» می‌رود. اول فکر کردم اسم یک شهر است!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Das sind keine russischen Buchstaben, sondern das kyrillische Alphabet. Die Sprache ist dieselbe – Persisch.“",
+       "optionen": [
+        "حروف روسی نیست، الفبای سیریلیک است. زبانش همان فارسی است.",
+        "گفت فردا به «پوهنتون» می‌رود. اول فکر کردم اسم یک شهر است!",
+        "پس چرا تاجیک‌ها خط فارسی را کنار گذاشتند؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welcher persische Satz?",
+     "fragen": [
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Er sagte, er gehe morgen zur ‹Pohantun›. Zuerst dachte ich, das sei der Name einer Stadt!",
+        "Das sind keine russischen Buchstaben, sondern das kyrillische Alphabet. Die Sprache ist dieselbe – Persisch.",
+        "Frau Dr. Sadeghi, entschuldigen Sie, ich hätte eine Frage."
+       ],
+       "richtig": 0,
+       "fa": "گفت فردا به «پوهنتون» می‌رود. اول فکر کردم اسم یک شهر است!"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Frau Dr. Sadeghi, entschuldigen Sie, ich hätte eine Frage.",
+        "Wörter wie ‹madar› (Mutter) und ‹baradar› (Bruder) zeigen diese Verwandtschaft deutlich.",
+        "Vielleicht! Du musst Frau Dr. Sadeghi fragen. Sie liebt solche Diskussionen."
+       ],
+       "richtig": 0,
+       "fa": "خانم دکتر صادقی، ببخشید، یک سؤال داشتم."
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Sein Akzent war auch interessant für mich. Er klang für mich etwas älter.",
+        "Er sagte, er gehe morgen zur ‹Pohantun›. Zuerst dachte ich, das sei der Name einer Stadt!",
+        "Vielleicht! Du musst Frau Dr. Sadeghi fragen. Sie liebt solche Diskussionen."
+       ],
+       "richtig": 0,
+       "fa": "لهجه‌اش هم برایم جالب بود. به نظرم کمی قدیمی‌تر بود."
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Interessant! Dann hat Rudaki vielleicht auch so gesprochen.",
+        "Frau Dr. Sadeghi, entschuldigen Sie, ich hätte eine Frage.",
+        "Das sind keine russischen Buchstaben, sondern das kyrillische Alphabet. Die Sprache ist dieselbe – Persisch."
+       ],
+       "richtig": 0,
+       "fa": "جالب است! پس شاید رودکی هم همین‌طور حرف می‌زد."
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Das sind keine russischen Buchstaben, sondern das kyrillische Alphabet. Die Sprache ist dieselbe – Persisch.",
+        "Doch wenn Persisch eine Sprache ist – wo liegen die Unterschiede?",
+        "Frau Dr. Sadeghi, entschuldigen Sie, ich hätte eine Frage."
+       ],
+       "richtig": 0,
+       "fa": "حروف روسی نیست، الفبای سیریلیک است. زبانش همان فارسی است."
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Der Hauptunterschied liegt in Aussprache und Wortschatz.",
+        "Er sagte, er gehe morgen zur ‹Pohantun›. Zuerst dachte ich, das sei der Name einer Stadt!",
+        "Warum haben die Tadschiken dann die persische Schrift aufgegeben?"
+       ],
+       "richtig": 0,
+       "fa": "تفاوت اصلی در تلفظ و واژگان است."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

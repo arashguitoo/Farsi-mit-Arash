@@ -1,0 +1,754 @@
+{
+ "id": "z1",
+ "titel": "Trainingspaket 1",
+ "beschreibung": "Wer passt zu wem?, Wort-Marathon, Lückensätze, Sätze aus Text & Dialogen.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "Wer passt zu wem?",
+   "vorschau": "🧩",
+   "karten": [
+    {
+     "typ": "zuordnen",
+     "titel": "Welcher Film passt?",
+     "text": "Fünf Personen suchen einen Film für den Abend. Ein Programmkino zeigt diese Woche sieben Filme und Veranstaltungen.",
+     "frage": "Welches Angebot passt am besten? Tippe es an.",
+     "angebote": [
+      {
+       "titel": "Kinder des Himmels",
+       "emoji": "👟",
+       "fa": "داستان خواهر و برادری که یک جفت کفش را با هم قسمت می‌کنند؛ مناسب برای خانواده.",
+       "de": "Geschwister teilen sich ein Paar Schuhe – geeignet für Familien."
+      },
+      {
+       "titel": "Nader und Simin – Eine Trennung",
+       "emoji": "⚖️",
+       "fa": "درام خانوادگی درباره‌ی یک جدایی و یک دعوای حقوقی که درست و غلط در آن روشن نیست.",
+       "de": "Familiendrama über eine Trennung und einen Rechtsstreit, in dem Recht und Unrecht nicht eindeutig sind."
+      },
+      {
+       "titel": "Der Geschmack der Kirsche",
+       "emoji": "🍒",
+       "fa": "فیلمی آرام و فلسفی با گفتگوهای طولانی در ماشین، در تپه‌های اطراف تهران.",
+       "de": "Ein ruhiger, philosophischer Film mit langen Gesprächen im Auto in den Hügeln um Teheran."
+      },
+      {
+       "titel": "Kurzfilmnacht",
+       "emoji": "⏱️",
+       "fa": "ده فیلم کوتاه از کارگردانان جوان، هر کدام کمتر از پانزده دقیقه.",
+       "de": "Zehn Kurzfilme junger Regisseur/innen, jeder unter fünfzehn Minuten."
+      },
+      {
+       "titel": "Doku: Neue Töne aus Teheran",
+       "emoji": "🎶",
+       "fa": "مستندی درباره‌ی گروه‌های موسیقی جوان در تهران.",
+       "de": "Dokumentarfilm über junge Bands in Teheran."
+      },
+      {
+       "titel": "Die Kuh",
+       "emoji": "🐄",
+       "fa": "فیلم سیاه‌وسفید کلاسیک از سال ۱۹۶۹ درباره‌ی یک روستایی و گاوش.",
+       "de": "Schwarz-Weiß-Klassiker von 1969 über einen Dorfbewohner und seine Kuh."
+      },
+      {
+       "titel": "Horror-Doppel",
+       "emoji": "👻",
+       "fa": "دو فیلم ترسناک ایرانی در نمایش نیمه‌شب.",
+       "de": "Zwei iranische Horrorfilme in der Mitternachtsvorstellung."
+      }
+     ],
+     "personen": [
+      {
+       "name": "Anna",
+       "emoji": "👨‍👩‍👧",
+       "fa": "آنا با دو بچه‌ی هشت‌ساله و ده‌ساله‌اش به سینما می‌رود.",
+       "de": "Anna geht mit ihren beiden Kindern (acht und zehn Jahre alt) ins Kino.",
+       "richtig": 0
+      },
+      {
+       "name": "Ben",
+       "emoji": "⚖️",
+       "fa": "بن وکیل است و فیلم‌هایی را دوست دارد که درباره‌ی درست و غلط و عدالت سؤال می‌کنند.",
+       "de": "Ben ist Anwalt und mag Filme, die Fragen nach Recht, Unrecht und Gerechtigkeit stellen.",
+       "richtig": 1
+      },
+      {
+       "name": "Clara",
+       "emoji": "🎞️",
+       "fa": "کلارا عاشق فیلم‌های قدیمی و تاریخ سینماست و می‌خواهد سرآغاز موج نو را ببیند.",
+       "de": "Clara liebt alte Filme und Filmgeschichte und möchte den Anfang der Neuen Welle sehen.",
+       "richtig": 5
+      },
+      {
+       "name": "David",
+       "emoji": "⌛",
+       "fa": "دیوید زود حوصله‌اش سر می‌رود و دوست دارد در یک شب چند داستان کوتاه و مختلف ببیند.",
+       "de": "David langweilt sich schnell und möchte an einem Abend mehrere kurze, verschiedene Geschichten sehen.",
+       "richtig": 3
+      },
+      {
+       "name": "Emre",
+       "emoji": "🎸",
+       "fa": "امره گیتار می‌زند و می‌خواهد بداند جوانان ایرانی امروز چه موسیقی‌ای می‌سازند.",
+       "de": "Emre spielt Gitarre und möchte wissen, welche Musik junge Iraner heute machen.",
+       "richtig": 4
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Wort-Marathon",
+   "vorschau": "⏱️",
+   "karten": [
+    {
+     "typ": "tempo",
+     "titel": "Marathon: alle Wörter",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 120,
+     "ziel": 25,
+     "woerter": [
+      {
+       "fa": "کارگردان",
+       "a": "Regisseur/in"
+      },
+      {
+       "fa": "فیلمنامه",
+       "a": "Drehbuch"
+      },
+      {
+       "fa": "فیلمبردار",
+       "a": "Kameramann/-frau"
+      },
+      {
+       "fa": "بازیگر",
+       "a": "Schauspieler/in"
+      },
+      {
+       "fa": "تهیه‌کننده",
+       "a": "Produzent/in"
+      },
+      {
+       "fa": "نقش اول",
+       "a": "Hauptrolle"
+      },
+      {
+       "fa": "صحنه",
+       "a": "Szene"
+      },
+      {
+       "fa": "تدوین",
+       "a": "Schnitt, Montage"
+      },
+      {
+       "fa": "مستند",
+       "a": "Dokumentarfilm"
+      },
+      {
+       "fa": "فیلم کوتاه",
+       "a": "Kurzfilm"
+      },
+      {
+       "fa": "دوربین",
+       "a": "Kamera"
+      },
+      {
+       "fa": "پایان‌بندی",
+       "a": "Schluss (eines Films)"
+      },
+      {
+       "fa": "جشنواره",
+       "a": "Festival"
+      },
+      {
+       "fa": "جایزه",
+       "a": "Preis, Auszeichnung"
+      },
+      {
+       "fa": "نخل طلا",
+       "a": "Goldene Palme"
+      },
+      {
+       "fa": "خرس طلایی",
+       "a": "Goldener Bär"
+      },
+      {
+       "fa": "اسکار",
+       "a": "Oscar"
+      },
+      {
+       "fa": "منتقد",
+       "a": "Kritiker/in"
+      },
+      {
+       "fa": "نقد",
+       "a": "Kritik, Rezension"
+      },
+      {
+       "fa": "تماشاگر",
+       "a": "Zuschauer/in"
+      },
+      {
+       "fa": "اکران",
+       "a": "Kinostart, Vorführung"
+      },
+      {
+       "fa": "نامزد",
+       "a": "nominiert; Kandidat/in"
+      },
+      {
+       "fa": "سالن سینما",
+       "a": "Kinosaal"
+      },
+      {
+       "fa": "گیشه",
+       "a": "Kinokasse; Einspielergebnis"
+      },
+      {
+       "fa": "نئورئالیسم",
+       "a": "Neorealismus"
+      },
+      {
+       "fa": "واقع‌گرایانه",
+       "a": "realistisch"
+      },
+      {
+       "fa": "شاعرانه",
+       "a": "poetisch"
+      },
+      {
+       "fa": "بازیگر غیرحرفه‌ای",
+       "a": "Laiendarsteller/in"
+      },
+      {
+       "fa": "شخصیت",
+       "a": "Figur, Charakter"
+      },
+      {
+       "fa": "قهرمان",
+       "a": "Held/in, Hauptfigur"
+      },
+      {
+       "fa": "روایت",
+       "a": "Erzählung, Erzählweise"
+      },
+      {
+       "fa": "نماد",
+       "a": "Symbol"
+      },
+      {
+       "fa": "زندگی روزمره",
+       "a": "Alltag"
+      },
+      {
+       "fa": "پایان باز",
+       "a": "offenes Ende"
+      },
+      {
+       "fa": "مضمون",
+       "a": "Thema, Motiv"
+      },
+      {
+       "fa": "کارگردانی کردن",
+       "a": "Regie führen"
+      },
+      {
+       "fa": "فیلمبرداری کردن",
+       "a": "drehen, filmen"
+      },
+      {
+       "fa": "ایفا کردن",
+       "a": "(eine Rolle) spielen"
+      },
+      {
+       "fa": "به نمایش درآمدن",
+       "a": "gezeigt werden, laufen"
+      },
+      {
+       "fa": "برنده شدن",
+       "a": "gewinnen"
+      },
+      {
+       "fa": "روایت کردن",
+       "a": "erzählen"
+      }
+     ]
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "تماشاگر",
+       "tr": "",
+       "de": "Zuschauer/in",
+       "emoji": "👀"
+      },
+      {
+       "fa": "جایزه",
+       "tr": "",
+       "de": "Preis, Auszeichnung",
+       "emoji": "🏅"
+      },
+      {
+       "fa": "فیلمبردار",
+       "tr": "",
+       "de": "Kameramann/-frau",
+       "emoji": "🎥"
+      },
+      {
+       "fa": "فیلمنامه",
+       "tr": "",
+       "de": "Drehbuch",
+       "emoji": "📄"
+      },
+      {
+       "fa": "بازیگر غیرحرفه‌ای",
+       "tr": "",
+       "de": "Laiendarsteller/in",
+       "emoji": "🙋"
+      },
+      {
+       "fa": "نقد",
+       "tr": "",
+       "de": "Kritik, Rezension",
+       "emoji": "📝"
+      }
+     ],
+     "titel": "Memory"
+    },
+    {
+     "typ": "memory",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "خرس طلایی",
+       "tr": "",
+       "de": "Goldener Bär",
+       "emoji": "🐻"
+      },
+      {
+       "fa": "مستند",
+       "tr": "",
+       "de": "Dokumentarfilm",
+       "emoji": "📹"
+      },
+      {
+       "fa": "کارگردان",
+       "tr": "",
+       "de": "Regisseur/in",
+       "emoji": "🎬"
+      },
+      {
+       "fa": "سالن سینما",
+       "tr": "",
+       "de": "Kinosaal",
+       "emoji": "🍿"
+      },
+      {
+       "fa": "مضمون",
+       "tr": "",
+       "de": "Thema, Motiv",
+       "emoji": "💡"
+      },
+      {
+       "fa": "نخل طلا",
+       "tr": "",
+       "de": "Goldene Palme",
+       "emoji": "🌴"
+      }
+     ],
+     "titel": "Memory: Wort & Bedeutung"
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "titel": "Lückensätze",
+   "vorschau": "___",
+   "karten": [
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>___ فیلم «بچه‌های آسمان» مجید مجیدی است.</span><br><span class='mini'>Der Regisseur des Films ‹Kinder des Himmels› ist Majid Majidi.</span>",
+       "optionen": [
+        "کارگردان",
+        "روایت",
+        "شاعرانه"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>کارگردان فیلم «بچه‌های آسمان» مجید مجیدی است.</span>"
+      },
+      {
+       "frage": "<span class='fa'>فیلم «جدایی نادر از سیمین» در سال ۲۰۱۱ ___ جشنواره‌ی برلین را برد.</span><br><span class='mini'>‹Nader und Simin – Eine Trennung› gewann 2011 den Goldenen Bären der Berlinale.</span>",
+       "optionen": [
+        "خرس طلایی",
+        "نماد",
+        "پایان باز"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>فیلم «جدایی نادر از سیمین» در سال ۲۰۱۱ خرس طلایی جشنواره‌ی برلین را برد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>کیارستمی برای «طعم گیلاس» در سال ۱۹۹۷ ___ کن را گرفت.</span><br><span class='mini'>Für ‹Der Geschmack der Kirsche› erhielt Kiarostami 1997 die Goldene Palme von Cannes.</span>",
+       "optionen": [
+        "نخل طلا",
+        "بازیگر",
+        "واقع‌گرایانه"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>کیارستمی برای «طعم گیلاس» در سال ۱۹۹۷ نخل طلا کن را گرفت.</span>"
+      },
+      {
+       "frage": "<span class='fa'>نقش پسر را یک ___ بازی می‌کند که قبلا هرگز جلوی دوربین نبوده است.</span><br><span class='mini'>Die Rolle des Jungen spielt ein Laiendarsteller, der noch nie vor der Kamera stand.</span>",
+       "optionen": [
+        "بازیگر غیرحرفه‌ای",
+        "مضمون",
+        "نماد"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>نقش پسر را یک بازیگر غیرحرفه‌ای بازی می‌کند که قبلا هرگز جلوی دوربین نبوده است.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>بسیاری از فیلم‌های کیارستمی ___ دارند و تماشاگر باید خودش داستان را تمام کند.</span><br><span class='mini'>Viele Filme Kiarostamis haben ein offenes Ende, und der Zuschauer muss die Geschichte selbst zu Ende denken.</span>",
+       "optionen": [
+        "پایان باز",
+        "کارگردان",
+        "مستند"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>بسیاری از فیلم‌های کیارستمی پایان باز دارند و تماشاگر باید خودش داستان را تمام کند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>___ روزنامه از فیلم تعریف زیادی کرد.</span><br><span class='mini'>Der Kritiker der Zeitung lobte den Film sehr.</span>",
+       "optionen": [
+        "منتقد",
+        "دوربین",
+        "نقد"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>منتقد روزنامه از فیلم تعریف زیادی کرد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>فیلم جدید او از هفته‌ی آینده در سینماهای تهران ___ می‌شود.</span><br><span class='mini'>Sein/Ihr neuer Film läuft ab nächster Woche in den Teheraner Kinos.</span>",
+       "optionen": [
+        "اکران",
+        "اسکار",
+        "گیشه"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>فیلم جدید او از هفته‌ی آینده در سینماهای تهران اکران می‌شود.</span>"
+      },
+      {
+       "frage": "<span class='fa'>در «بچه‌های آسمان»، یک جفت کفش به ___ فقر و همبستگی تبدیل می‌شود.</span><br><span class='mini'>In ‹Kinder des Himmels› wird ein Paar Schuhe zum Symbol für Armut und Zusammenhalt.</span>",
+       "optionen": [
+        "نماد",
+        "مستند",
+        "تماشاگر"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>در «بچه‌های آسمان»، یک جفت کفش به نماد فقر و همبستگی تبدیل می‌شود.</span>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "e",
+   "titel": "Sätze aus Text & Dialogen",
+   "vorschau": "🧱",
+   "karten": [
+    {
+     "typ": "bauen",
+     "titel": "Baue den Satz",
+     "trenner": " ",
+     "woerter": [
+      {
+       "fa": "بعضی تماشاگران می‌گویند فیلم‌هایش کند و خسته‌کننده است. پاسخ شما چیست؟",
+       "tr": "",
+       "de": "Manche Zuschauer sagen, seine Filme seien langsam und langweilig. Was antworten Sie?",
+       "teile": [
+        "بعضی",
+        "تماشاگران",
+        "می‌گویند",
+        "فیلم‌هایش",
+        "کند",
+        "و",
+        "خسته‌کننده",
+        "است",
+        "پاسخ",
+        "شما",
+        "چیست"
+       ],
+       "extra": [
+        "فیلم"
+       ]
+      },
+      {
+       "fa": "این فیلم نخستین فیلم ایرانی بود که نامزد جایزه‌ی اسکار شد.",
+       "tr": "",
+       "de": "Es war der erste iranische Film, der für einen Oscar nominiert wurde.",
+       "teile": [
+        "این",
+        "فیلم",
+        "نخستین",
+        "فیلم",
+        "ایرانی",
+        "بود",
+        "که",
+        "نامزد",
+        "جایزه‌ی",
+        "اسکار",
+        "شد"
+       ],
+       "extra": [
+        "را"
+       ]
+      },
+      {
+       "fa": "به نظر شما چرا کیارستمی این‌قدر به شعر علاقه داشت؟",
+       "tr": "",
+       "de": "Warum interessierte sich Kiarostami Ihrer Meinung nach so sehr für Lyrik?",
+       "teile": [
+        "به",
+        "نظر",
+        "شما",
+        "چرا",
+        "کیارستمی",
+        "این‌قدر",
+        "به",
+        "شعر",
+        "علاقه",
+        "داشت"
+       ],
+       "extra": [
+        "نخستین"
+       ]
+      },
+      {
+       "fa": "معروف‌ترین نماینده‌ی این نسل اصغر فرهادی است.",
+       "tr": "",
+       "de": "Der bekannteste Vertreter dieser Generation ist Asghar Farhadi.",
+       "teile": [
+        "معروف‌ترین",
+        "نماینده‌ی",
+        "این",
+        "نسل",
+        "اصغر",
+        "فرهادی",
+        "است"
+       ],
+       "extra": [
+        "سینما"
+       ]
+      },
+      {
+       "fa": "خانم دکتر صادقی، از اینکه وقتتان را به مجله‌ی ما دادید، متشکرم.",
+       "tr": "",
+       "de": "Frau Dr. Sadeghi, vielen Dank, dass Sie sich Zeit für unser Magazin nehmen.",
+       "teile": [
+        "خانم",
+        "دکتر",
+        "صادقی",
+        "از",
+        "اینکه",
+        "وقتتان",
+        "را",
+        "به",
+        "مجله‌ی",
+        "ما",
+        "دادید",
+        "متشکرم"
+       ],
+       "extra": [
+        "شما"
+       ]
+      },
+      {
+       "fa": "خب، نظرت چه بود؟ فیلم را دوست داشتی؟",
+       "tr": "",
+       "de": "Na, was meinst du? Hat dir der Film gefallen?",
+       "teile": [
+        "خب",
+        "نظرت",
+        "چه",
+        "بود",
+        "فیلم",
+        "را",
+        "دوست",
+        "داشتی"
+       ],
+       "extra": [
+        "نماینده‌ی"
+       ]
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Was bedeutet der Satz?",
+     "fragen": [
+      {
+       "frage": "„Warum interessierte sich Kiarostami Ihrer Meinung nach so sehr für Lyrik?“",
+       "optionen": [
+        "به نظر شما چرا کیارستمی این‌قدر به شعر علاقه داشت؟",
+        "خب، نظرت چه بود؟ فیلم را دوست داشتی؟",
+        "اما نادر هم حق داشت؛ نمی‌توانست پدر پیرش را تنها بگذارد."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Es war der erste iranische Film, der für einen Oscar nominiert wurde.“",
+       "optionen": [
+        "این فیلم نخستین فیلم ایرانی بود که نامزد جایزه‌ی اسکار شد.",
+        "بعضی تماشاگران می‌گویند فیلم‌هایش کند و خسته‌کننده است. پاسخ شما چیست؟",
+        "معروف‌ترین نماینده‌ی این نسل اصغر فرهادی است."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Frau Dr. Sadeghi, vielen Dank, dass Sie sich Zeit für unser Magazin nehmen.“",
+       "optionen": [
+        "خانم دکتر صادقی، از اینکه وقتتان را به مجله‌ی ما دادید، متشکرم.",
+        "این فیلم نخستین فیلم ایرانی بود که نامزد جایزه‌ی اسکار شد.",
+        "بعضی تماشاگران می‌گویند فیلم‌هایش کند و خسته‌کننده است. پاسخ شما چیست؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Der bekannteste Vertreter dieser Generation ist Asghar Farhadi.“",
+       "optionen": [
+        "معروف‌ترین نماینده‌ی این نسل اصغر فرهادی است.",
+        "خب، نظرت چه بود؟ فیلم را دوست داشتی؟",
+        "بعضی تماشاگران می‌گویند فیلم‌هایش کند و خسته‌کننده است. پاسخ شما چیست؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Manche Zuschauer sagen, seine Filme seien langsam und langweilig. Was antworten Sie?“",
+       "optionen": [
+        "بعضی تماشاگران می‌گویند فیلم‌هایش کند و خسته‌کننده است. پاسخ شما چیست؟",
+        "اما نادر هم حق داشت؛ نمی‌توانست پدر پیرش را تنها بگذارد.",
+        "خانم دکتر صادقی، از اینکه وقتتان را به مجله‌ی ما دادید، متشکرم."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Na, was meinst du? Hat dir der Film gefallen?“",
+       "optionen": [
+        "خب، نظرت چه بود؟ فیلم را دوست داشتی؟",
+        "اما نادر هم حق داشت؛ نمی‌توانست پدر پیرش را تنها بگذارد.",
+        "خانم دکتر صادقی، از اینکه وقتتان را به مجله‌ی ما دادید، متشکرم."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welcher persische Satz?",
+     "fragen": [
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Warum interessierte sich Kiarostami Ihrer Meinung nach so sehr für Lyrik?",
+        "Na, was meinst du? Hat dir der Film gefallen?",
+        "Es war der erste iranische Film, der für einen Oscar nominiert wurde."
+       ],
+       "richtig": 0,
+       "fa": "به نظر شما چرا کیارستمی این‌قدر به شعر علاقه داشت؟"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Frau Dr. Sadeghi, vielen Dank, dass Sie sich Zeit für unser Magazin nehmen.",
+        "Aber Nader hatte auch recht; er konnte seinen alten Vater nicht allein lassen.",
+        "Es war der erste iranische Film, der für einen Oscar nominiert wurde."
+       ],
+       "richtig": 0,
+       "fa": "خانم دکتر صادقی، از اینکه وقتتان را به مجله‌ی ما دادید، متشکرم."
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Aber Nader hatte auch recht; er konnte seinen alten Vater nicht allein lassen.",
+        "Manche Zuschauer sagen, seine Filme seien langsam und langweilig. Was antworten Sie?",
+        "Warum interessierte sich Kiarostami Ihrer Meinung nach so sehr für Lyrik?"
+       ],
+       "richtig": 0,
+       "fa": "اما نادر هم حق داشت؛ نمی‌توانست پدر پیرش را تنها بگذارد."
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Es war der erste iranische Film, der für einen Oscar nominiert wurde.",
+        "Der bekannteste Vertreter dieser Generation ist Asghar Farhadi.",
+        "Warum interessierte sich Kiarostami Ihrer Meinung nach so sehr für Lyrik?"
+       ],
+       "richtig": 0,
+       "fa": "این فیلم نخستین فیلم ایرانی بود که نامزد جایزه‌ی اسکار شد."
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Manche Zuschauer sagen, seine Filme seien langsam und langweilig. Was antworten Sie?",
+        "Frau Dr. Sadeghi, vielen Dank, dass Sie sich Zeit für unser Magazin nehmen.",
+        "Warum interessierte sich Kiarostami Ihrer Meinung nach so sehr für Lyrik?"
+       ],
+       "richtig": 0,
+       "fa": "بعضی تماشاگران می‌گویند فیلم‌هایش کند و خسته‌کننده است. پاسخ شما چیست؟"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Na, was meinst du? Hat dir der Film gefallen?",
+        "Eine der zentralen Figuren dieses Kinos war Abbas Kiarostami.",
+        "Der bekannteste Vertreter dieser Generation ist Asghar Farhadi."
+       ],
+       "richtig": 0,
+       "fa": "خب، نظرت چه بود؟ فیلم را دوست داشتی؟"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

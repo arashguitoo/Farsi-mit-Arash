@@ -1,0 +1,744 @@
+{
+ "id": "z1",
+ "titel": "Trainingspaket 1",
+ "beschreibung": "Wer passt zu wem?, Wort-Marathon, Lückensätze, Sätze aus Text & Dialogen.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "Wer passt zu wem?",
+   "vorschau": "🧩",
+   "karten": [
+    {
+     "typ": "zuordnen",
+     "titel": "Welches Programm passt?",
+     "text": "Fünf Personen möchten in Hamburg persische Musik erleben oder lernen. Ein Kulturzentrum bietet sieben Programme an.",
+     "frage": "Welches Angebot passt am besten? Tippe es an.",
+     "angebote": [
+      {
+       "titel": "Setar für Anfänger",
+       "emoji": "🎸",
+       "fa": "کلاس سه‌تار برای مبتدیان در گروه‌های کوچک، سه‌شنبه‌ها.",
+       "de": "Setar-Kurs für Anfänger in kleinen Gruppen, dienstags."
+      },
+      {
+       "titel": "Daf-Trommelkreis",
+       "emoji": "🪘",
+       "fa": "حلقه‌ی دف‌نوازی برای همه؛ ساز را خودمان می‌دهیم.",
+       "de": "Daf-Trommelkreis für alle; Instrumente werden gestellt."
+      },
+      {
+       "titel": "Gesangsworkshop",
+       "emoji": "🎙️",
+       "fa": "کارگاه آواز ایرانی و تمرین تحریر با یک خواننده‌ی باتجربه.",
+       "de": "Workshop für persischen Gesang und Tahrir-Übungen mit einer erfahrenen Sängerin."
+      },
+      {
+       "titel": "Vortrag: Das Dastgah-System",
+       "emoji": "📚",
+       "fa": "سخنرانی درباره‌ی ردیف و دستگاه‌ها با مثال‌های صوتی؛ نیازی به ساز نیست.",
+       "de": "Vortrag über Radif und Dastgahs mit Hörbeispielen; kein Instrument nötig."
+      },
+      {
+       "titel": "Santur-Konzert",
+       "emoji": "🎹",
+       "fa": "کنسرت سنتور و تنبک در سالن بزرگ، جمعه شب.",
+       "de": "Santur- und Tombak-Konzert im großen Saal, Freitagabend."
+      },
+      {
+       "titel": "Fusion-Jam-Session",
+       "emoji": "🎷",
+       "fa": "جلسه‌ی آزاد: نوازندگان جاز و موسیقی ایرانی با هم بداهه‌نوازی می‌کنند.",
+       "de": "Offene Jam-Session: Jazz- und persische Musiker improvisieren zusammen."
+      },
+      {
+       "titel": "Kinder-Musikgarten",
+       "emoji": "🧸",
+       "fa": "کلاس موسیقی برای کودکان چهار تا شش‌ساله با ترانه‌های فارسی.",
+       "de": "Musikkurs für Kinder von vier bis sechs Jahren mit persischen Liedern."
+      }
+     ],
+     "personen": [
+      {
+       "name": "Lukas",
+       "emoji": "🎺",
+       "fa": "لوکاس ساکسوفون می‌زند و دوست دارد با نوازندگان دیگر بداهه بنوازد.",
+       "de": "Lukas spielt Saxofon und improvisiert gern mit anderen Musikern.",
+       "richtig": 5
+      },
+      {
+       "name": "Hanna",
+       "emoji": "👶",
+       "fa": "هانا یک پسر پنج‌ساله دارد که عاشق آواز خواندن است.",
+       "de": "Hanna hat einen fünfjährigen Sohn, der sehr gern singt.",
+       "richtig": 6
+      },
+      {
+       "name": "Moritz",
+       "emoji": "🎓",
+       "fa": "موریتس موسیقی‌شناسی می‌خواند و می‌خواهد نظریه‌ی موسیقی ایرانی را بفهمد، اما سازی نمی‌زند.",
+       "de": "Moritz studiert Musikwissenschaft und möchte die Theorie der persischen Musik verstehen, spielt aber kein Instrument.",
+       "richtig": 3
+      },
+      {
+       "name": "Sophie",
+       "emoji": "🗣️",
+       "fa": "سوفی در یک گروه کر می‌خواند و می‌خواهد تکنیک‌های آواز ایرانی را یاد بگیرد.",
+       "de": "Sophie singt in einem Chor und möchte persische Gesangstechniken lernen.",
+       "richtig": 2
+      },
+      {
+       "name": "Kai",
+       "emoji": "🪕",
+       "fa": "کای همیشه آرزو داشت یک ساز زهی ایرانی را از صفر یاد بگیرد.",
+       "de": "Kai wollte schon immer ein persisches Saiteninstrument von Grund auf lernen.",
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Wort-Marathon",
+   "vorschau": "⏱️",
+   "karten": [
+    {
+     "typ": "tempo",
+     "titel": "Marathon: alle Wörter",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 120,
+     "ziel": 25,
+     "woerter": [
+      {
+       "fa": "تار",
+       "a": "Tar (Langhalslaute)"
+      },
+      {
+       "fa": "سه‌تار",
+       "a": "Setar"
+      },
+      {
+       "fa": "سنتور",
+       "a": "Santur (Hackbrett)"
+      },
+      {
+       "fa": "کمانچه",
+       "a": "Kamantsche (Stachelgeige)"
+      },
+      {
+       "fa": "تنبک",
+       "a": "Tombak (Bechertrommel)"
+      },
+      {
+       "fa": "دف",
+       "a": "Daf (Rahmentrommel)"
+      },
+      {
+       "fa": "نی",
+       "a": "Ney (Rohrflöte)"
+      },
+      {
+       "fa": "عود",
+       "a": "Oud (Kurzhalslaute)"
+      },
+      {
+       "fa": "سیم",
+       "a": "Saite"
+      },
+      {
+       "fa": "مضراب",
+       "a": "Plektrum; Schlägel"
+      },
+      {
+       "fa": "آرشه",
+       "a": "Bogen (für Streichinstrumente)"
+      },
+      {
+       "fa": "دستگاه",
+       "a": "Dastgah (Modalsystem)"
+      },
+      {
+       "fa": "آواز",
+       "a": "Gesang; Avaz"
+      },
+      {
+       "fa": "ردیف",
+       "a": "Radif (überliefertes Repertoire)"
+      },
+      {
+       "fa": "گوشه",
+       "a": "Gusche (Melodiemodell)"
+      },
+      {
+       "fa": "نغمه",
+       "a": "Melodie, Weise"
+      },
+      {
+       "fa": "ضرب",
+       "a": "Schlag, Rhythmus"
+      },
+      {
+       "fa": "بداهه‌نوازی",
+       "a": "Improvisation"
+      },
+      {
+       "fa": "تحریر",
+       "a": "Tahrir (Gesangsverzierung)"
+      },
+      {
+       "fa": "نت",
+       "a": "Note"
+      },
+      {
+       "fa": "گام",
+       "a": "Tonleiter"
+      },
+      {
+       "fa": "تصنیف",
+       "a": "Tasnif (Lied mit Text)"
+      },
+      {
+       "fa": "خواننده",
+       "a": "Sänger/in"
+      },
+      {
+       "fa": "نوازنده",
+       "a": "Musiker/in (Instrumentalist/in)"
+      },
+      {
+       "fa": "استاد",
+       "a": "Meister/in, Lehrer/in"
+      },
+      {
+       "fa": "شاگرد",
+       "a": "Schüler/in, Lehrling"
+      },
+      {
+       "fa": "کنسرت",
+       "a": "Konzert"
+      },
+      {
+       "fa": "گروه موسیقی",
+       "a": "Band, Ensemble"
+      },
+      {
+       "fa": "هوادار",
+       "a": "Fan, Anhänger/in"
+      },
+      {
+       "fa": "اجرا",
+       "a": "Aufführung, Auftritt"
+      },
+      {
+       "fa": "آلبوم",
+       "a": "Album"
+      },
+      {
+       "fa": "مخاطب",
+       "a": "Publikum, Zuhörer/in"
+      },
+      {
+       "fa": "تمرین",
+       "a": "Übung, Probe"
+      },
+      {
+       "fa": "برون‌مرز",
+       "a": "im Ausland, Diaspora-"
+      },
+      {
+       "fa": "نواختن",
+       "a": "(ein Instrument) spielen"
+      },
+      {
+       "fa": "اجرا کردن",
+       "a": "aufführen, vortragen"
+      },
+      {
+       "fa": "کوک کردن",
+       "a": "stimmen (Instrument)"
+      },
+      {
+       "fa": "همراهی کردن",
+       "a": "begleiten"
+      },
+      {
+       "fa": "آموختن",
+       "a": "lernen (gehoben)"
+      },
+      {
+       "fa": "ضبط کردن",
+       "a": "aufnehmen"
+      }
+     ]
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "استاد",
+       "tr": "",
+       "de": "Meister/in, Lehrer/in",
+       "emoji": "🧓"
+      },
+      {
+       "fa": "دف",
+       "tr": "",
+       "de": "Daf (Rahmentrommel)",
+       "emoji": "🪘"
+      },
+      {
+       "fa": "نت",
+       "tr": "",
+       "de": "Note",
+       "emoji": "🎵"
+      },
+      {
+       "fa": "برون‌مرز",
+       "tr": "",
+       "de": "im Ausland, Diaspora-",
+       "emoji": "✈️"
+      },
+      {
+       "fa": "اجرا",
+       "tr": "",
+       "de": "Aufführung, Auftritt",
+       "emoji": "🌟"
+      },
+      {
+       "fa": "مضراب",
+       "tr": "",
+       "de": "Plektrum; Schlägel",
+       "emoji": "🔨"
+      }
+     ],
+     "titel": "Memory"
+    },
+    {
+     "typ": "memory",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "ردیف",
+       "tr": "",
+       "de": "Radif (überliefertes Repertoire)",
+       "emoji": "📚"
+      },
+      {
+       "fa": "استاد",
+       "tr": "",
+       "de": "Meister/in, Lehrer/in",
+       "emoji": "🧓"
+      },
+      {
+       "fa": "برون‌مرز",
+       "tr": "",
+       "de": "im Ausland, Diaspora-",
+       "emoji": "✈️"
+      },
+      {
+       "fa": "تار",
+       "tr": "",
+       "de": "Tar (Langhalslaute)",
+       "emoji": "🪕"
+      },
+      {
+       "fa": "مضراب",
+       "tr": "",
+       "de": "Plektrum; Schlägel",
+       "emoji": "🔨"
+      },
+      {
+       "fa": "مخاطب",
+       "tr": "",
+       "de": "Publikum, Zuhörer/in",
+       "emoji": "👂"
+      }
+     ],
+     "titel": "Memory: Wort & Bedeutung"
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "titel": "Lückensätze",
+   "vorschau": "___",
+   "karten": [
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>سه‌تار با وجود نامش چهار ___ دارد.</span><br><span class='mini'>Die Setar hat trotz ihres Namens vier Saiten.</span>",
+       "optionen": [
+        "سیم",
+        "مخاطب",
+        "برون‌مرز"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>سه‌تار با وجود نامش چهار سیم دارد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>کمانچه را با ___ می‌نوازند.</span><br><span class='mini'>Die Kamantsche spielt man mit einem Bogen.</span>",
+       "optionen": [
+        "آرشه",
+        "آلبوم",
+        "مضراب"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>کمانچه را با آرشه می‌نوازند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>موسیقی کلاسیک ایرانی در هفت ___ و پنج آواز دسته‌بندی می‌شود.</span><br><span class='mini'>Die klassische persische Musik wird in sieben Dastgahs und fünf Avaz eingeteilt.</span>",
+       "optionen": [
+        "دستگاه",
+        "گام",
+        "ضرب"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>موسیقی کلاسیک ایرانی در هفت دستگاه و پنج آواز دسته‌بندی می‌شود.</span>"
+      },
+      {
+       "frage": "<span class='fa'>هر دستگاه از تعدادی ___ تشکیل شده است.</span><br><span class='mini'>Jedes Dastgah besteht aus einer Reihe von Gusches.</span>",
+       "optionen": [
+        "گوشه",
+        "سیم",
+        "دستگاه"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>هر دستگاه از تعدادی گوشه تشکیل شده است.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>محمدرضا شجریان را ___ بزرگ آواز ایرانی می‌دانند.</span><br><span class='mini'>Mohammad-Reza Schadscharian gilt als großer Meister des persischen Gesangs.</span>",
+       "optionen": [
+        "استاد",
+        "نوازنده",
+        "دف"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>محمدرضا شجریان را استاد بزرگ آواز ایرانی می‌دانند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>موسیقی ایرانی بر ___ تکیه دارد؛ نوازنده هر بار قطعه را کمی متفاوت اجرا می‌کند.</span><br><span class='mini'>Die persische Musik beruht auf Improvisation; der Musiker spielt ein Stück jedes Mal etwas anders.</span>",
+       "optionen": [
+        "بداهه‌نوازی",
+        "هوادار",
+        "آواز"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>موسیقی ایرانی بر بداهه‌نوازی تکیه دارد؛ نوازنده هر بار قطعه را کمی متفاوت اجرا می‌کند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>بلیت‌های ___ این خواننده در چند دقیقه تمام شد.</span><br><span class='mini'>Die Konzertkarten dieser Sängerin waren in wenigen Minuten ausverkauft.</span>",
+       "optionen": [
+        "کنسرت",
+        "خواننده",
+        "تصنیف"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>بلیت‌های کنسرت این خواننده در چند دقیقه تمام شد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>ریتم این آهنگ را با ___ می‌زنند.</span><br><span class='mini'>Den Rhythmus dieses Stücks schlägt man auf der Tombak.</span>",
+       "optionen": [
+        "تنبک",
+        "آواز",
+        "شاگرد"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>ریتم این آهنگ را با تنبک می‌زنند.</span>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "e",
+   "titel": "Sätze aus Text & Dialogen",
+   "vorschau": "🧱",
+   "karten": [
+    {
+     "typ": "bauen",
+     "titel": "Baue den Satz",
+     "trenner": " ",
+     "woerter": [
+      {
+       "fa": "سازهای این موسیقی هم ویژگی‌های خاصی دارند.",
+       "tr": "",
+       "de": "Auch die Instrumente dieser Musik haben besondere Merkmale.",
+       "teile": [
+        "سازهای",
+        "این",
+        "موسیقی",
+        "هم",
+        "ویژگی‌های",
+        "خاصی",
+        "دارند"
+       ],
+       "extra": [
+        "آواز"
+       ]
+      },
+      {
+       "fa": "پایه‌ی آن مجموعه‌ای از نغمه‌های قدیمی است که «ردیف» نام دارد.",
+       "tr": "",
+       "de": "Ihre Grundlage ist eine Sammlung alter Melodien, die ‹Radif› heißt.",
+       "teile": [
+        "پایه‌ی",
+        "آن",
+        "مجموعه‌ای",
+        "از",
+        "نغمه‌های",
+        "قدیمی",
+        "است",
+        "که",
+        "«ردیف»",
+        "نام",
+        "دارد"
+       ],
+       "extra": [
+        "خیلی"
+       ]
+      },
+      {
+       "fa": "بله، داشتم سه‌تار می‌زدم. بیا تو، یوناس جان.",
+       "tr": "",
+       "de": "Ja, ich habe Setar gespielt. Komm doch herein, Jonas.",
+       "teile": [
+        "بله",
+        "داشتم",
+        "سه‌تار",
+        "می‌زدم",
+        "بیا",
+        "تو",
+        "یوناس",
+        "جان"
+       ],
+       "extra": [
+        "تو،"
+       ]
+      },
+      {
+       "fa": "تنبک و دف سازهای کوبه‌ای هستند و ریتم را نگه می‌دارند.",
+       "tr": "",
+       "de": "Tombak und Daf sind Schlaginstrumente und halten den Rhythmus.",
+       "teile": [
+        "تنبک",
+        "و",
+        "دف",
+        "سازهای",
+        "کوبه‌ای",
+        "هستند",
+        "و",
+        "ریتم",
+        "را",
+        "نگه",
+        "می‌دارند"
+       ],
+       "extra": []
+      },
+      {
+       "fa": "بردیا، شنیدم دیشب به کنسرت رفتی. چطور بود؟",
+       "tr": "",
+       "de": "Bardia, ich habe gehört, du warst gestern Abend im Konzert. Wie war es?",
+       "teile": [
+        "بردیا",
+        "شنیدم",
+        "دیشب",
+        "به",
+        "کنسرت",
+        "رفتی",
+        "چطور",
+        "بود"
+       ],
+       "extra": [
+        "هم"
+       ]
+      },
+      {
+       "fa": "اما موسیقی ایرانی فقط تکرار ردیف نیست: بداهه‌نوازی قلب این موسیقی است.",
+       "tr": "",
+       "de": "Doch persische Musik ist keine bloße Wiederholung des Radif: Improvisation ist ihr Herzstück.",
+       "teile": [
+        "اما",
+        "موسیقی",
+        "ایرانی",
+        "فقط",
+        "تکرار",
+        "ردیف",
+        "نیست",
+        "بداهه‌نوازی",
+        "قلب",
+        "این",
+        "موسیقی",
+        "است"
+       ],
+       "extra": []
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Was bedeutet der Satz?",
+     "fragen": [
+      {
+       "frage": "„Der Radif gliedert sich in sieben Dastgahs und fünf Avaz.“",
+       "optionen": [
+        "ردیف به هفت دستگاه و پنج آواز تقسیم می‌شود.",
+        "سازهای این موسیقی هم ویژگی‌های خاصی دارند.",
+        "بله، داشتم سه‌تار می‌زدم. بیا تو، یوناس جان."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Klar, sofort. Bis bald!“",
+       "optionen": [
+        "حتماً، همین الان. می‌بینمت!",
+        "تنبک و دف سازهای کوبه‌ای هستند و ریتم را نگه می‌دارند.",
+        "موسیقی کلاسیک ایرانی یکی از کهن‌ترین سنت‌های موسیقی در جهان است."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Bardia, ich habe gehört, du warst gestern Abend im Konzert. Wie war es?“",
+       "optionen": [
+        "بردیا، شنیدم دیشب به کنسرت رفتی. چطور بود؟",
+        "سازهای این موسیقی هم ویژگی‌های خاصی دارند.",
+        "پس دستگاه چیزی شبیه گام در موسیقی غربی است؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Ja, ich habe Setar gespielt. Komm doch herein, Jonas.“",
+       "optionen": [
+        "بله، داشتم سه‌تار می‌زدم. بیا تو، یوناس جان.",
+        "یعنی با پیانو نمی‌شود موسیقی ایرانی زد؟",
+        "تنبک و دف سازهای کوبه‌ای هستند و ریتم را نگه می‌دارند."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Das heißt, auf dem Klavier kann man keine persische Musik spielen?“",
+       "optionen": [
+        "یعنی با پیانو نمی‌شود موسیقی ایرانی زد؟",
+        "حتماً، همین الان. می‌بینمت!",
+        "بردیا، شنیدم دیشب به کنسرت رفتی. چطور بود؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Schlagzeug mit Kamantsche? Das ist mir etwas fremd. Haben sie gut zusammengespielt?“",
+       "optionen": [
+        "درامز با کمانچه؟ برایم کمی ناآشناست. خوب با هم می‌نواختند؟",
+        "پس دستگاه چیزی شبیه گام در موسیقی غربی است؟",
+        "بله، داشتم سه‌تار می‌زدم. بیا تو، یوناس جان."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welcher persische Satz?",
+     "fragen": [
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Der Radif gliedert sich in sieben Dastgahs und fünf Avaz.",
+        "Ja, ich habe Setar gespielt. Komm doch herein, Jonas.",
+        "Ihre Grundlage ist eine Sammlung alter Melodien, die ‹Radif› heißt."
+       ],
+       "richtig": 0,
+       "fa": "ردیف به هفت دستگاه و پنج آواز تقسیم می‌شود."
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Ist ein Dastgah also so etwas wie eine Tonleiter in der westlichen Musik?",
+        "Das heißt, auf dem Klavier kann man keine persische Musik spielen?",
+        "Auch die Instrumente dieser Musik haben besondere Merkmale."
+       ],
+       "richtig": 0,
+       "fa": "پس دستگاه چیزی شبیه گام در موسیقی غربی است؟"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Mohammad-Reza Schadscharian (1940–2020) gilt als einer der größten Meister des persischen Gesangs.",
+        "Die klassische persische Musik ist eine der ältesten Musiktraditionen der Welt.",
+        "Auch die Instrumente dieser Musik haben besondere Merkmale."
+       ],
+       "richtig": 0,
+       "fa": "محمدرضا شجریان (۱۳۱۹–۱۳۹۹) را یکی از بزرگ‌ترین استادان آواز ایرانی می‌دانند."
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Doch persische Musik ist keine bloße Wiederholung des Radif: Improvisation ist ihr Herzstück.",
+        "Die klassische persische Musik ist eine der ältesten Musiktraditionen der Welt.",
+        "Mohammad-Reza Schadscharian (1940–2020) gilt als einer der größten Meister des persischen Gesangs."
+       ],
+       "richtig": 0,
+       "fa": "اما موسیقی ایرانی فقط تکرار ردیف نیست: بداهه‌نوازی قلب این موسیقی است."
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Bardia, ich habe gehört, du warst gestern Abend im Konzert. Wie war es?",
+        "Was für ein Instrument! Es klingt sehr ruhig und zart. Was für ein Stück haben Sie gespielt?",
+        "Tombak und Daf sind Schlaginstrumente und halten den Rhythmus."
+       ],
+       "richtig": 0,
+       "fa": "بردیا، شنیدم دیشب به کنسرت رفتی. چطور بود؟"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Tombak und Daf sind Schlaginstrumente und halten den Rhythmus.",
+        "Die klassische persische Musik ist eine der ältesten Musiktraditionen der Welt.",
+        "Klar, sofort. Bis bald!"
+       ],
+       "richtig": 0,
+       "fa": "تنبک و دف سازهای کوبه‌ای هستند و ریتم را نگه می‌دارند."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

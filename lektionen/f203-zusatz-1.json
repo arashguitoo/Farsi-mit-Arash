@@ -1,0 +1,746 @@
+{
+ "id": "z1",
+ "titel": "Trainingspaket 1",
+ "beschreibung": "Wer passt zu wem?, Wort-Marathon, Lückensätze, Sätze aus Text & Dialogen.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "Wer passt zu wem?",
+   "vorschau": "🧩",
+   "karten": [
+    {
+     "typ": "zuordnen",
+     "titel": "Welcher Garten passt?",
+     "text": "Fünf Reisende planen eine Gartenreise durch Iran. Ein Reiseführer stellt sieben Ziele und Angebote vor.",
+     "frage": "Welches Angebot passt am besten? Tippe es an.",
+     "angebote": [
+      {
+       "titel": "Fin-Garten, Kaschan",
+       "emoji": "⛲",
+       "fa": "باغ فین با فواره‌هایی که بدون موتور کار می‌کنند و یک حمام تاریخی.",
+       "de": "Fin-Garten mit Springbrunnen ohne Motor und einem historischen Badehaus."
+      },
+      {
+       "titel": "Eram-Garten, Schiras",
+       "emoji": "🌹",
+       "fa": "باغ ارم: باغ گیاه‌شناسی دانشگاه شیراز با گیاهان بسیار گوناگون.",
+       "de": "Eram-Garten: botanischer Garten der Universität Schiras mit sehr vielfältigen Pflanzen."
+      },
+      {
+       "titel": "Schahzadeh-Garten, Mahan",
+       "emoji": "🏜️",
+       "fa": "باغ شاهزاده در ماهان: باغی پلکانی در دل بیابان، نزدیک کرمان.",
+       "de": "Schahzadeh-Garten in Mahan: ein Terrassengarten mitten in der Wüste bei Kerman."
+      },
+      {
+       "titel": "Pasargadae",
+       "emoji": "🏛️",
+       "fa": "باقی‌مانده‌های قدیمی‌ترین چهارباغ شناخته‌شده، در کنار آرامگاه کوروش.",
+       "de": "Überreste des ältesten bekannten Tschahar Bagh, neben dem Grabmal des Kyros."
+      },
+      {
+       "titel": "Rosenwasserfest",
+       "emoji": "🌸",
+       "fa": "جشن گلاب‌گیری در روستاهای اطراف کاشان در فصل بهار.",
+       "de": "Rosenwasserfest in den Dörfern um Kaschan im Frühling."
+      },
+      {
+       "titel": "Wassermuseum Yazd",
+       "emoji": "🕳️",
+       "fa": "بازدید از یک قنات قدیمی و موزه‌ی آب در یزد.",
+       "de": "Besuch eines alten Qanats und des Wassermuseums in Yazd."
+      },
+      {
+       "titel": "Zeichenkurs Gartenmuster",
+       "emoji": "✏️",
+       "fa": "کارگاه طراحی و نقاشی از کاشی‌ها و نقش‌های باغ ایرانی.",
+       "de": "Workshop: Zeichnen und Malen von Fliesen und Mustern des persischen Gartens."
+      }
+     ],
+     "personen": [
+      {
+       "name": "Lena",
+       "emoji": "🧪",
+       "fa": "لنا زیست‌شناس است و می‌خواهد گیاهان مختلف ایران را از نزدیک بشناسد.",
+       "de": "Lena ist Biologin und möchte die verschiedenen Pflanzen Irans aus der Nähe kennenlernen.",
+       "richtig": 1
+      },
+      {
+       "name": "Tim",
+       "emoji": "🏺",
+       "fa": "تیم باستان‌شناسی خوانده و به آثار دوره‌ی هخامنشی علاقه دارد.",
+       "de": "Tim hat Archäologie studiert und interessiert sich für Zeugnisse der Achämenidenzeit.",
+       "richtig": 3
+      },
+      {
+       "name": "Eva",
+       "emoji": "🔧",
+       "fa": "اوا مهندس آب است و می‌خواهد بداند مردم در گذشته چطور آب را از کوه به شهر می‌آوردند.",
+       "de": "Eva ist Wasseringenieurin und möchte wissen, wie man früher Wasser von den Bergen in die Städte brachte.",
+       "richtig": 5
+      },
+      {
+       "name": "Max",
+       "emoji": "🌺",
+       "fa": "مکس عطرساز است و دنبال یک تجربه‌ی محلی با گل و بوی خوش می‌گردد.",
+       "de": "Max ist Parfümeur und sucht ein lokales Erlebnis rund um Blumen und Düfte.",
+       "richtig": 4
+      },
+      {
+       "name": "Jana",
+       "emoji": "🐫",
+       "fa": "یانا عاشق بیابان است و می‌خواهد ببیند چطور در وسط بیابان باغی سبز ساخته‌اند.",
+       "de": "Jana liebt die Wüste und möchte sehen, wie man mitten in der Wüste einen grünen Garten angelegt hat.",
+       "richtig": 2
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Wort-Marathon",
+   "vorschau": "⏱️",
+   "karten": [
+    {
+     "typ": "tempo",
+     "titel": "Marathon: alle Wörter",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 120,
+     "ziel": 25,
+     "woerter": [
+      {
+       "fa": "باغ",
+       "a": "Garten"
+      },
+      {
+       "fa": "سرو",
+       "a": "Zypresse"
+      },
+      {
+       "fa": "چنار",
+       "a": "Platane"
+      },
+      {
+       "fa": "گل سرخ",
+       "a": "Rose"
+      },
+      {
+       "fa": "بوته",
+       "a": "Strauch"
+      },
+      {
+       "fa": "چمن",
+       "a": "Rasen"
+      },
+      {
+       "fa": "باغچه",
+       "a": "Beet, Gärtchen"
+      },
+      {
+       "fa": "سایه",
+       "a": "Schatten"
+      },
+      {
+       "fa": "شکوفه",
+       "a": "Blüte"
+      },
+      {
+       "fa": "نارنج",
+       "a": "Bitterorange"
+      },
+      {
+       "fa": "درخت میوه",
+       "a": "Obstbaum"
+      },
+      {
+       "fa": "جوی",
+       "a": "Wasserrinne, Bach"
+      },
+      {
+       "fa": "حوض",
+       "a": "Wasserbecken"
+      },
+      {
+       "fa": "فواره",
+       "a": "Springbrunnen, Fontäne"
+      },
+      {
+       "fa": "قنات",
+       "a": "Qanat (unterirdischer Wasserkanal)"
+      },
+      {
+       "fa": "چشمه",
+       "a": "Quelle"
+      },
+      {
+       "fa": "کوشک",
+       "a": "Pavillon"
+      },
+      {
+       "fa": "دیوار",
+       "a": "Mauer"
+      },
+      {
+       "fa": "ایوان",
+       "a": "Iwan, offene Halle"
+      },
+      {
+       "fa": "کاشی",
+       "a": "Fliese, Kachel"
+      },
+      {
+       "fa": "محور",
+       "a": "Achse"
+      },
+      {
+       "fa": "آبیاری",
+       "a": "Bewässerung"
+      },
+      {
+       "fa": "تقارن",
+       "a": "Symmetrie"
+      },
+      {
+       "fa": "آرامش",
+       "a": "Ruhe, Gelassenheit"
+      },
+      {
+       "fa": "خنکی",
+       "a": "Kühle"
+      },
+      {
+       "fa": "عطر",
+       "a": "Duft"
+      },
+      {
+       "fa": "منظره",
+       "a": "Anblick, Landschaftsbild"
+      },
+      {
+       "fa": "هماهنگی",
+       "a": "Harmonie"
+      },
+      {
+       "fa": "نظم",
+       "a": "Ordnung"
+      },
+      {
+       "fa": "گردشگر",
+       "a": "Tourist/in"
+      },
+      {
+       "fa": "بازدید",
+       "a": "Besuch, Besichtigung"
+      },
+      {
+       "fa": "میراث جهانی",
+       "a": "Welterbe"
+      },
+      {
+       "fa": "محصور",
+       "a": "umfriedet, eingeschlossen"
+      },
+      {
+       "fa": "بیابان",
+       "a": "Wüste"
+      },
+      {
+       "fa": "کاشتن",
+       "a": "pflanzen"
+      },
+      {
+       "fa": "آبیاری کردن",
+       "a": "bewässern"
+      },
+      {
+       "fa": "جریان داشتن",
+       "a": "fließen"
+      },
+      {
+       "fa": "سایه انداختن",
+       "a": "Schatten werfen, spenden"
+      },
+      {
+       "fa": "طراحی کردن",
+       "a": "entwerfen, gestalten"
+      },
+      {
+       "fa": "ثبت شدن",
+       "a": "eingetragen werden"
+      }
+     ]
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "تقارن",
+       "tr": "",
+       "de": "Symmetrie",
+       "emoji": "🦋"
+      },
+      {
+       "fa": "کاشی",
+       "tr": "",
+       "de": "Fliese, Kachel",
+       "emoji": "🔷"
+      },
+      {
+       "fa": "محصور",
+       "tr": "",
+       "de": "umfriedet, eingeschlossen",
+       "emoji": "🔒"
+      },
+      {
+       "fa": "حوض",
+       "tr": "",
+       "de": "Wasserbecken",
+       "emoji": "🟦"
+      },
+      {
+       "fa": "آرامش",
+       "tr": "",
+       "de": "Ruhe, Gelassenheit",
+       "emoji": "😌"
+      },
+      {
+       "fa": "بوته",
+       "tr": "",
+       "de": "Strauch",
+       "emoji": "🌿"
+      }
+     ],
+     "titel": "Memory"
+    },
+    {
+     "typ": "memory",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "میراث جهانی",
+       "tr": "",
+       "de": "Welterbe",
+       "emoji": "🌍"
+      },
+      {
+       "fa": "آرامش",
+       "tr": "",
+       "de": "Ruhe, Gelassenheit",
+       "emoji": "😌"
+      },
+      {
+       "fa": "کوشک",
+       "tr": "",
+       "de": "Pavillon",
+       "emoji": "🏛️"
+      },
+      {
+       "fa": "درخت میوه",
+       "tr": "",
+       "de": "Obstbaum",
+       "emoji": "🍎"
+      },
+      {
+       "fa": "سایه",
+       "tr": "",
+       "de": "Schatten",
+       "emoji": "⛱️"
+      },
+      {
+       "fa": "جوی",
+       "tr": "",
+       "de": "Wasserrinne, Bach",
+       "emoji": "〰️"
+      }
+     ],
+     "titel": "Memory: Wort & Bedeutung"
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "titel": "Lückensätze",
+   "vorschau": "___",
+   "karten": [
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>در وسط باغ یک ___ بزرگ است که آسمان در آب آن دیده می‌شود.</span><br><span class='mini'>In der Mitte des Gartens liegt ein großes Becken, in dessen Wasser sich der Himmel spiegelt.</span>",
+       "optionen": [
+        "حوض",
+        "نارنج",
+        "منظره"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>در وسط باغ یک حوض بزرگ است که آسمان در آب آن دیده می‌شود.</span>"
+      },
+      {
+       "frage": "<span class='fa'>درختان ___ بلند و باریک هستند و در همه‌ی فصل‌ها سبز می‌مانند.</span><br><span class='mini'>Zypressen sind hoch und schlank und bleiben das ganze Jahr grün.</span>",
+       "optionen": [
+        "سرو",
+        "بازدید",
+        "کوشک"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>درختان سرو بلند و باریک هستند و در همه‌ی فصل‌ها سبز می‌مانند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>آب ___ از زیر زمین و از کوه‌های دور به باغ می‌رسد.</span><br><span class='mini'>Das Wasser des Qanats gelangt unterirdisch von fernen Bergen in den Garten.</span>",
+       "optionen": [
+        "قنات",
+        "خنکی",
+        "آبیاری"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>آب قنات از زیر زمین و از کوه‌های دور به باغ می‌رسد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>در بهار، ___ درختان بادام همه‌جا را سفید می‌کند.</span><br><span class='mini'>Im Frühling färben die Blüten der Mandelbäume alles weiß.</span>",
+       "optionen": [
+        "شکوفه",
+        "دیوار",
+        "خنکی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>در بهار، شکوفه درختان بادام همه‌جا را سفید می‌کند.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>در تابستان، زیر ___ چنارها هوا خنک است.</span><br><span class='mini'>Im Sommer ist es im Schatten der Platanen kühl.</span>",
+       "optionen": [
+        "سایه",
+        "محور",
+        "خنکی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>در تابستان، زیر سایه چنارها هوا خنک است.</span>"
+      },
+      {
+       "frage": "<span class='fa'>باغ ارم در شیراز هر سال هزاران ___ دارد.</span><br><span class='mini'>Der Eram-Garten in Schiras hat jedes Jahr Tausende Touristen.</span>",
+       "optionen": [
+        "گردشگر",
+        "بیابان",
+        "بازدید"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>باغ ارم در شیراز هر سال هزاران گردشگر دارد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>بیرون دیوار باغ ___ خشک است، اما درون آن همه‌چیز سبز است.</span><br><span class='mini'>Außerhalb der Gartenmauer ist trockene Wüste, doch drinnen ist alles grün.</span>",
+       "optionen": [
+        "بیابان",
+        "چمن",
+        "عطر"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>بیرون دیوار باغ بیابان خشک است، اما درون آن همه‌چیز سبز است.</span>"
+      },
+      {
+       "frage": "<span class='fa'>در باغ ایرانی ___ بسیار مهم است: دو طرف جوی دقیقا مثل هم هستند.</span><br><span class='mini'>Im persischen Garten ist Symmetrie sehr wichtig: Beide Seiten der Wasserrinne sind genau gleich.</span>",
+       "optionen": [
+        "تقارن",
+        "گردشگر",
+        "دیوار"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>در باغ ایرانی تقارن بسیار مهم است: دو طرف جوی دقیقا مثل هم هستند.</span>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "e",
+   "titel": "Sätze aus Text & Dialogen",
+   "vorschau": "🧱",
+   "karten": [
+    {
+     "typ": "bauen",
+     "titel": "Baue den Satz",
+     "trenner": " ",
+     "woerter": [
+      {
+       "fa": "چه هوشمندانه! این باغ چند سال دارد؟",
+       "tr": "",
+       "de": "Wie raffiniert! Wie alt ist dieser Garten?",
+       "teile": [
+        "چه",
+        "هوشمندانه",
+        "این",
+        "باغ",
+        "چند",
+        "سال",
+        "دارد"
+       ],
+       "extra": []
+      },
+      {
+       "fa": "اما بدون آب هیچ باغی وجود نداشت.",
+       "tr": "",
+       "de": "Doch ohne Wasser hätte es keinen einzigen Garten gegeben.",
+       "teile": [
+        "اما",
+        "بدون",
+        "آب",
+        "هیچ",
+        "باغی",
+        "وجود",
+        "نداشت"
+       ],
+       "extra": [
+        "چه"
+       ]
+      },
+      {
+       "fa": "جالب است که واژه‌ی «پردیس» هم سفر درازی کرده است.",
+       "tr": "",
+       "de": "Interessant ist, dass auch das Wort ‹pardis› eine lange Reise hinter sich hat.",
+       "teile": [
+        "جالب",
+        "است",
+        "که",
+        "واژه‌ی",
+        "«پردیس»",
+        "هم",
+        "سفر",
+        "درازی",
+        "کرده",
+        "است"
+       ],
+       "extra": [
+        "فیروزه‌ای"
+       ]
+      },
+      {
+       "fa": "باغ فین و باغ ارم هم جزو این فهرست هستند.",
+       "tr": "",
+       "de": "Auch der Fin-Garten und der Eram-Garten gehören dazu.",
+       "teile": [
+        "باغ",
+        "فین",
+        "و",
+        "باغ",
+        "ارم",
+        "هم",
+        "جزو",
+        "این",
+        "فهرست",
+        "هستند"
+       ],
+       "extra": [
+        "سفر"
+       ]
+      },
+      {
+       "fa": "این جوی آب فیروزه‌ای چقدر زیباست! این رنگ از کجا می‌آید؟",
+       "tr": "",
+       "de": "Wie schön diese türkisfarbene Wasserrinne ist! Woher kommt diese Farbe?",
+       "teile": [
+        "این",
+        "جوی",
+        "آب",
+        "فیروزه‌ای",
+        "چقدر",
+        "زیباست",
+        "این",
+        "رنگ",
+        "از",
+        "کجا",
+        "می‌آید"
+       ],
+       "extra": [
+        "چند"
+       ]
+      },
+      {
+       "fa": "در محل برخورد آنها معمولاً یک حوض یا یک کوشک قرار دارد.",
+       "tr": "",
+       "de": "An ihrem Kreuzungspunkt liegt meist ein Wasserbecken oder ein Pavillon.",
+       "teile": [
+        "در",
+        "محل",
+        "برخورد",
+        "آنها",
+        "معمولاً",
+        "یک",
+        "حوض",
+        "یا",
+        "یک",
+        "کوشک",
+        "قرار",
+        "دارد"
+       ],
+       "extra": [
+        "هستند."
+       ]
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Was bedeutet der Satz?",
+     "fragen": [
+      {
+       "frage": "„An ihrem Kreuzungspunkt liegt meist ein Wasserbecken oder ein Pavillon.“",
+       "optionen": [
+        "در محل برخورد آنها معمولاً یک حوض یا یک کوشک قرار دارد.",
+        "این فواره‌ها چطور بدون برق کار می‌کنند؟",
+        "جالب است که واژه‌ی «پردیس» هم سفر درازی کرده است."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Der Grundplan des persischen Gartens heißt ‹Tschahar Bagh› (Vier-Garten).“",
+       "optionen": [
+        "طرح اصلی باغ ایرانی «چهارباغ» نام دارد.",
+        "اما بدون آب هیچ باغی وجود نداشت.",
+        "سلام لیلا! عکس‌های کاشان را دیدم. حسودی‌ام شد!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Interessant ist, dass auch das Wort ‹pardis› eine lange Reise hinter sich hat.“",
+       "optionen": [
+        "جالب است که واژه‌ی «پردیس» هم سفر درازی کرده است.",
+        "سلام لیلا! عکس‌های کاشان را دیدم. حسودی‌ام شد!",
+        "اما بدون آب هیچ باغی وجود نداشت."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Wie funktionieren diese Springbrunnen ohne Strom?“",
+       "optionen": [
+        "این فواره‌ها چطور بدون برق کار می‌کنند؟",
+        "جالب است که واژه‌ی «پردیس» هم سفر درازی کرده است.",
+        "در محل برخورد آنها معمولاً یک حوض یا یک کوشک قرار دارد."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Wie raffiniert! Wie alt ist dieser Garten?“",
+       "optionen": [
+        "چه هوشمندانه! این باغ چند سال دارد؟",
+        "این جوی آب فیروزه‌ای چقدر زیباست! این رنگ از کجا می‌آید؟",
+        "اما بدون آب هیچ باغی وجود نداشت."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Auch der Fin-Garten und der Eram-Garten gehören dazu.“",
+       "optionen": [
+        "باغ فین و باغ ارم هم جزو این فهرست هستند.",
+        "سلام لیلا! عکس‌های کاشان را دیدم. حسودی‌ام شد!",
+        "این فواره‌ها چطور بدون برق کار می‌کنند؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welcher persische Satz?",
+     "fragen": [
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "An ihrem Kreuzungspunkt liegt meist ein Wasserbecken oder ein Pavillon.",
+        "Wie raffiniert! Wie alt ist dieser Garten?",
+        "Der Grundplan des persischen Gartens heißt ‹Tschahar Bagh› (Vier-Garten)."
+       ],
+       "richtig": 0,
+       "fa": "در محل برخورد آنها معمولاً یک حوض یا یک کوشک قرار دارد."
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Doch ohne Wasser hätte es keinen einzigen Garten gegeben.",
+        "Auch der Fin-Garten und der Eram-Garten gehören dazu.",
+        "Wie schön diese türkisfarbene Wasserrinne ist! Woher kommt diese Farbe?"
+       ],
+       "richtig": 0,
+       "fa": "اما بدون آب هیچ باغی وجود نداشت."
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Hallo Leyla! Ich habe die Fotos aus Kaschan gesehen. Ich bin richtig neidisch!",
+        "Auch der Fin-Garten und der Eram-Garten gehören dazu.",
+        "An ihrem Kreuzungspunkt liegt meist ein Wasserbecken oder ein Pavillon."
+       ],
+       "richtig": 0,
+       "fa": "سلام لیلا! عکس‌های کاشان را دیدم. حسودی‌ام شد!"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Interessant ist, dass auch das Wort ‹pardis› eine lange Reise hinter sich hat.",
+        "Wie raffiniert! Wie alt ist dieser Garten?",
+        "Der Grundplan des persischen Gartens heißt ‹Tschahar Bagh› (Vier-Garten)."
+       ],
+       "richtig": 0,
+       "fa": "جالب است که واژه‌ی «پردیس» هم سفر درازی کرده است."
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Wie raffiniert! Wie alt ist dieser Garten?",
+        "Interessant ist, dass auch das Wort ‹pardis› eine lange Reise hinter sich hat.",
+        "An ihrem Kreuzungspunkt liegt meist ein Wasserbecken oder ein Pavillon."
+       ],
+       "richtig": 0,
+       "fa": "چه هوشمندانه! این باغ چند سال دارد؟"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Der Grundplan des persischen Gartens heißt ‹Tschahar Bagh› (Vier-Garten).",
+        "Interessant ist, dass auch das Wort ‹pardis› eine lange Reise hinter sich hat.",
+        "Doch ohne Wasser hätte es keinen einzigen Garten gegeben."
+       ],
+       "richtig": 0,
+       "fa": "طرح اصلی باغ ایرانی «چهارباغ» نام دارد."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

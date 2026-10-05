@@ -1,0 +1,751 @@
+{
+ "id": "z1",
+ "titel": "Trainingspaket 1",
+ "beschreibung": "Wer passt zu wem?, Wort-Marathon, Lückensätze, Sätze aus Text & Dialogen.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "Wer passt zu wem?",
+   "vorschau": "🧩",
+   "karten": [
+    {
+     "typ": "zuordnen",
+     "titel": "Welches Angebot passt?",
+     "text": "Eine Sprachschule in Teheran bietet ausländischen Gästen sieben Programme an. Fünf Personen suchen das Passende.",
+     "frage": "Welches Angebot passt am besten? Tippe es an.",
+     "angebote": [
+      {
+       "titel": "Workshop: Taarof verstehen",
+       "emoji": "🎭",
+       "fa": "کارگاه یک‌روزه با بازی نقش: تعارف در مهمانی، مغازه و تاکسی.",
+       "de": "Eintägiger Workshop mit Rollenspielen: Taarof bei Einladungen, im Laden und im Taxi."
+      },
+      {
+       "titel": "Wohnen bei einer Gastfamilie",
+       "emoji": "🏡",
+       "fa": "یک ماه زندگی با یک خانواده‌ی ایرانی، با صبحانه و شام.",
+       "de": "Ein Monat Leben bei einer iranischen Familie, mit Frühstück und Abendessen."
+      },
+      {
+       "titel": "Kurs: Geschäftsgespräche",
+       "emoji": "💼",
+       "fa": "دوره‌ی فشرده‌ی مذاکره و مکاتبه‌ی رسمی برای مدیران و کارمندان شرکت‌ها.",
+       "de": "Intensivkurs Verhandlung und formelle Korrespondenz für Führungskräfte und Firmenangestellte."
+      },
+      {
+       "titel": "Basar-Rundgang",
+       "emoji": "🛍️",
+       "fa": "گردش در بازار تهران با یک راهنما؛ یاد بگیرید چطور چانه بزنید.",
+       "de": "Rundgang durch den Teheraner Basar mit Führung; lernen Sie zu feilschen."
+      },
+      {
+       "titel": "Improtheater auf Persisch",
+       "emoji": "🎤",
+       "fa": "تئاتر بداهه برای خارجی‌ها: با خنده اشتباه کنید و نترسید!",
+       "de": "Improtheater für Ausländer: Fehler machen mit Lachen – ohne Angst!"
+      },
+      {
+       "titel": "Podcast: Jugend in Teheran",
+       "emoji": "🎧",
+       "fa": "گفتگو با جوانان تهرانی درباره‌ی زندگی، کار و آرزوهایشان.",
+       "de": "Gespräche mit jungen Teheranern über ihr Leben, ihre Arbeit und ihre Träume."
+      },
+      {
+       "titel": "Gemeinsamer Kochabend",
+       "emoji": "🍲",
+       "fa": "شب آشپزی گروهی: یک غذای ایرانی را با هم بپزید و بخورید.",
+       "de": "Gemeinsamer Kochabend: Ein iranisches Gericht zusammen kochen und essen."
+      }
+     ],
+     "personen": [
+      {
+       "name": "Max",
+       "emoji": "🚕",
+       "fa": "ماکس هفته‌ی پیش در تاکسی و مغازه چند بار نفهمید که طرف تعارف می‌کند یا جدی است.",
+       "de": "Max hat letzte Woche im Taxi und im Laden mehrmals nicht verstanden, ob sein Gegenüber Taarof macht oder es ernst meint.",
+       "richtig": 0
+      },
+      {
+       "name": "Clara",
+       "emoji": "🏠",
+       "fa": "کلارا برای یک ترم به تهران می‌آید و می‌خواهد زندگی روزمره‌ی یک خانواده را از نزدیک ببیند.",
+       "de": "Clara kommt für ein Semester nach Teheran und möchte den Alltag einer Familie aus der Nähe erleben.",
+       "richtig": 1
+      },
+      {
+       "name": "Herr Wolf",
+       "emoji": "👔",
+       "fa": "آقای ولف برای شرکتش با یک شرکت ایرانی قرارداد می‌بندد و باید در جلسات رسمی شرکت کند.",
+       "de": "Herr Wolf schließt für seine Firma einen Vertrag mit einem iranischen Unternehmen und muss an formellen Sitzungen teilnehmen.",
+       "richtig": 2
+      },
+      {
+       "name": "Lea",
+       "emoji": "😄",
+       "fa": "لئا خجالتی است و از اشتباه کردن می‌ترسد؛ دوست دارد با بازی و خنده حرف زدن را تمرین کند.",
+       "de": "Lea ist schüchtern und hat Angst vor Fehlern; sie möchte das Sprechen spielerisch und mit Lachen üben.",
+       "richtig": 4
+      },
+      {
+       "name": "Tim",
+       "emoji": "📱",
+       "fa": "تیم جامعه‌شناس است و می‌خواهد بداند نسل جوان ایران چطور فکر می‌کند.",
+       "de": "Tim ist Soziologe und möchte wissen, wie die junge Generation in Iran denkt.",
+       "richtig": 5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Wort-Marathon",
+   "vorschau": "⏱️",
+   "karten": [
+    {
+     "typ": "tempo",
+     "titel": "Marathon: alle Wörter",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 120,
+     "ziel": 25,
+     "woerter": [
+      {
+       "fa": "تعارف",
+       "a": "Taarof, Höflichkeitsfloskel"
+      },
+      {
+       "fa": "ادب",
+       "a": "Höflichkeit, Anstand"
+      },
+      {
+       "fa": "مؤدب",
+       "a": "höflich"
+      },
+      {
+       "fa": "احترام",
+       "a": "Respekt"
+      },
+      {
+       "fa": "مهمان‌نوازی",
+       "a": "Gastfreundschaft"
+      },
+      {
+       "fa": "میزبان",
+       "a": "Gastgeber/in"
+      },
+      {
+       "fa": "مهمان",
+       "a": "Gast"
+      },
+      {
+       "fa": "اصرار",
+       "a": "Beharren, Drängen"
+      },
+      {
+       "fa": "تشکر",
+       "a": "Dank"
+      },
+      {
+       "fa": "تعریف",
+       "a": "Lob, Kompliment"
+      },
+      {
+       "fa": "خجالت",
+       "a": "Verlegenheit, Scham"
+      },
+      {
+       "fa": "رودربایستی",
+       "a": "Hemmung aus Rücksicht"
+      },
+      {
+       "fa": "تاکسی",
+       "a": "Taxi"
+      },
+      {
+       "fa": "راننده",
+       "a": "Fahrer/in"
+      },
+      {
+       "fa": "کرایه",
+       "a": "Fahrpreis"
+      },
+      {
+       "fa": "پذیرایی",
+       "a": "Bewirtung"
+      },
+      {
+       "fa": "شیرینی",
+       "a": "Gebäck, Süßigkeit"
+      },
+      {
+       "fa": "دم در",
+       "a": "an der Tür"
+      },
+      {
+       "fa": "فروشنده",
+       "a": "Verkäufer/in"
+      },
+      {
+       "fa": "حساب",
+       "a": "Rechnung"
+      },
+      {
+       "fa": "هدیه",
+       "a": "Geschenk"
+      },
+      {
+       "fa": "دعوت",
+       "a": "Einladung"
+      },
+      {
+       "fa": "سفره",
+       "a": "gedeckte Tafel (Tuch am Boden)"
+      },
+      {
+       "fa": "صداقت",
+       "a": "Aufrichtigkeit"
+      },
+      {
+       "fa": "ریاکاری",
+       "a": "Heuchelei"
+      },
+      {
+       "fa": "سوءتفاهم",
+       "a": "Missverständnis"
+      },
+      {
+       "fa": "دلخور",
+       "a": "gekränkt"
+      },
+      {
+       "fa": "معذب",
+       "a": "unbehaglich, befangen"
+      },
+      {
+       "fa": "فروتنی",
+       "a": "Bescheidenheit"
+      },
+      {
+       "fa": "غرور",
+       "a": "Stolz"
+      },
+      {
+       "fa": "صمیمی",
+       "a": "herzlich, vertraut"
+      },
+      {
+       "fa": "رسمی",
+       "a": "förmlich"
+      },
+      {
+       "fa": "رک",
+       "a": "direkt, unverblümt"
+      },
+      {
+       "fa": "نسل جوان",
+       "a": "junge Generation"
+      },
+      {
+       "fa": "طمع",
+       "a": "Gier"
+      },
+      {
+       "fa": "تعارف کردن",
+       "a": "(etwas) anbieten, Taarof machen"
+      },
+      {
+       "fa": "رد کردن",
+       "a": "ablehnen"
+      },
+      {
+       "fa": "پذیرفتن",
+       "a": "annehmen"
+      },
+      {
+       "fa": "اصرار کردن",
+       "a": "darauf bestehen, drängen"
+      },
+      {
+       "fa": "شرمنده کردن",
+       "a": "beschämen (aus Dankbarkeit)"
+      },
+      {
+       "fa": "دلخور شدن",
+       "a": "gekränkt sein"
+      }
+     ]
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "رسمی",
+       "tr": "",
+       "de": "förmlich",
+       "emoji": "👔"
+      },
+      {
+       "fa": "سوءتفاهم",
+       "tr": "",
+       "de": "Missverständnis",
+       "emoji": "❓"
+      },
+      {
+       "fa": "هدیه",
+       "tr": "",
+       "de": "Geschenk",
+       "emoji": "🎁"
+      },
+      {
+       "fa": "رک",
+       "tr": "",
+       "de": "direkt, unverblümt",
+       "emoji": "🎯"
+      },
+      {
+       "fa": "مهمان",
+       "tr": "",
+       "de": "Gast",
+       "emoji": "🧳"
+      },
+      {
+       "fa": "مؤدب",
+       "tr": "",
+       "de": "höflich",
+       "emoji": "🙂"
+      }
+     ],
+     "titel": "Memory"
+    },
+    {
+     "typ": "memory",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "هدیه",
+       "tr": "",
+       "de": "Geschenk",
+       "emoji": "🎁"
+      },
+      {
+       "fa": "تعارف",
+       "tr": "",
+       "de": "Taarof, Höflichkeitsfloskel",
+       "emoji": "🎭"
+      },
+      {
+       "fa": "فروتنی",
+       "tr": "",
+       "de": "Bescheidenheit",
+       "emoji": "🙇"
+      },
+      {
+       "fa": "نسل جوان",
+       "tr": "",
+       "de": "junge Generation",
+       "emoji": "🧑‍🎤"
+      },
+      {
+       "fa": "طمع",
+       "tr": "",
+       "de": "Gier",
+       "emoji": "🤑"
+      },
+      {
+       "fa": "راننده",
+       "tr": "",
+       "de": "Fahrer/in",
+       "emoji": "🧑‍✈️"
+      }
+     ],
+     "titel": "Memory: Wort & Bedeutung"
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "titel": "Lückensätze",
+   "vorschau": "___",
+   "karten": [
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>راننده گفت «قابل نداره»، اما من ___ را پرداختم.</span><br><span class='mini'>Der Fahrer sagte ‹Ist es nicht wert›, aber ich habe den Fahrpreis bezahlt.</span>",
+       "optionen": [
+        "کرایه",
+        "فروتنی",
+        "نسل جوان"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>راننده گفت «قابل نداره»، اما من کرایه را پرداختم.</span>"
+      },
+      {
+       "frage": "<span class='fa'>میزبان آن‌قدر ___ کرد که مهمان یک شیرینی دیگر برداشت.</span><br><span class='mini'>Die Gastgeberin drängte so sehr, dass der Gast noch ein Gebäckstück nahm.</span>",
+       "optionen": [
+        "اصرار",
+        "رسمی",
+        "نسل جوان"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>میزبان آن‌قدر اصرار کرد که مهمان یک شیرینی دیگر برداشت.</span>"
+      },
+      {
+       "frage": "<span class='fa'>برای خارجی‌ها ___ گاهی گیج‌کننده است.</span><br><span class='mini'>Für Ausländer ist Taarof manchmal verwirrend.</span>",
+       "optionen": [
+        "تعارف",
+        "فروتنی",
+        "شیرینی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>برای خارجی‌ها تعارف گاهی گیج‌کننده است.</span>"
+      },
+      {
+       "frage": "<span class='fa'>دو نفر ___ ایستاده بودند و هر کدام می‌گفت: «بفرمایید!»</span><br><span class='mini'>Zwei Leute standen an der Tür, und jeder sagte: ‹Bitte sehr!›</span>",
+       "optionen": [
+        "دم در",
+        "مهمان",
+        "فروتنی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>دو نفر دم در ایستاده بودند و هر کدام می‌گفت: «بفرمایید!»</span>"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>بعضی‌ها به خاطر ___ نمی‌توانند «نه» بگویند.</span><br><span class='mini'>Manche können aus Rücksicht nicht ‹nein› sagen.</span>",
+       "optionen": [
+        "رودربایستی",
+        "کرایه",
+        "تاکسی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>بعضی‌ها به خاطر رودربایستی نمی‌توانند «نه» بگویند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>یک ___ کوچک می‌تواند یک دوستی را خراب کند.</span><br><span class='mini'>Ein kleines Missverständnis kann eine Freundschaft zerstören.</span>",
+       "optionen": [
+        "سوءتفاهم",
+        "خجالت",
+        "هدیه"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>یک سوءتفاهم کوچک می‌تواند یک دوستی را خراب کند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>بسیاری از جوان‌ها ___ حرف می‌زنند و کمتر تعارف می‌کنند.</span><br><span class='mini'>Viele junge Leute reden direkt und machen weniger Taarof.</span>",
+       "optionen": [
+        "رک",
+        "تاکسی",
+        "دلخور"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>بسیاری از جوان‌ها رک حرف می‌زنند و کمتر تعارف می‌کنند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>ایرانی‌ها به ___ مشهورند.</span><br><span class='mini'>Die Iraner sind für ihre Gastfreundschaft bekannt.</span>",
+       "optionen": [
+        "مهمان‌نوازی",
+        "خجالت",
+        "راننده"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>ایرانی‌ها به مهمان‌نوازی مشهورند.</span>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "e",
+   "titel": "Sätze aus Text & Dialogen",
+   "vorschau": "🧱",
+   "karten": [
+    {
+     "typ": "bauen",
+     "titel": "Baue den Satz",
+     "trenner": " ",
+     "woerter": [
+      {
+       "fa": "پس با اجازه‌تان … راستش، یک جعبه شیرینی هم برایتان آورده‌ام.",
+       "tr": "",
+       "de": "Dann mit Ihrer Erlaubnis … Übrigens habe ich Ihnen eine Schachtel Gebäck mitgebracht.",
+       "teile": [
+        "پس",
+        "با",
+        "اجازه‌تان",
+        "…",
+        "راستش",
+        "یک",
+        "جعبه",
+        "شیرینی",
+        "هم",
+        "برایتان",
+        "آورده‌ام"
+       ],
+       "extra": [
+        "فقط"
+       ]
+      },
+      {
+       "fa": "ای بابا، چرا زحمت کشیدید؟ لازم نبود! شرمنده‌ام کردید.",
+       "tr": "",
+       "de": "Ach, warum haben Sie sich die Mühe gemacht? Das war nicht nötig! Sie beschämen mich.",
+       "teile": [
+        "ای",
+        "بابا",
+        "چرا",
+        "زحمت",
+        "کشیدید",
+        "لازم",
+        "نبود",
+        "شرمنده‌ام",
+        "کردید"
+       ],
+       "extra": [
+        "بفرمایید."
+       ]
+      },
+      {
+       "fa": "نکند حالا فکر کند که همه‌ی خارجی‌ها بی‌ادب‌اند؟",
+       "tr": "",
+       "de": "Was, wenn er jetzt denkt, alle Ausländer seien unhöflich?",
+       "teile": [
+        "نکند",
+        "حالا",
+        "فکر",
+        "کند",
+        "که",
+        "همه‌ی",
+        "خارجی‌ها",
+        "بی‌ادب‌اند"
+       ],
+       "extra": [
+        "سیرم"
+       ]
+      },
+      {
+       "fa": "نه، ممنون، سیرم … خب، باشد، چون اصرار می‌کنید، فقط یکی!",
+       "tr": "",
+       "de": "Nein danke, ich bin satt … Na gut, weil Sie darauf bestehen – nur eins!",
+       "teile": [
+        "نه",
+        "ممنون",
+        "سیرم",
+        "…",
+        "خب",
+        "باشد",
+        "چون",
+        "اصرار",
+        "می‌کنید",
+        "فقط",
+        "یکی"
+       ],
+       "extra": [
+        "خارجی‌ها"
+       ]
+      },
+      {
+       "fa": "آفرین! حالا یک چای بخورید و یکی از این شیرینی‌ها هم بردارید.",
+       "tr": "",
+       "de": "Bravo! Jetzt trinken Sie einen Tee und nehmen Sie auch eines von diesen Gebäckstücken.",
+       "teile": [
+        "آفرین",
+        "حالا",
+        "یک",
+        "چای",
+        "بخورید",
+        "و",
+        "یکی",
+        "از",
+        "این",
+        "شیرینی‌ها",
+        "هم",
+        "بردارید"
+       ],
+       "extra": [
+        "چرا"
+       ]
+      },
+      {
+       "fa": "خیلی ممنون، اول شما بفرمایید.",
+       "tr": "",
+       "de": "Vielen Dank, gehen Sie bitte zuerst.",
+       "teile": [
+        "خیلی",
+        "ممنون",
+        "اول",
+        "شما",
+        "بفرمایید"
+       ],
+       "extra": [
+        "لازم"
+       ]
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Was bedeutet der Satz?",
+     "fragen": [
+      {
+       "frage": "„Vielen Dank, gehen Sie bitte zuerst.“",
+       "optionen": [
+        "خیلی ممنون، اول شما بفرمایید.",
+        "یوناس جان، بفرمایید تو! چرا دم در ایستاده‌اید؟",
+        "نه، شما مهمانید. بفرمایید، تعارف نکنید!"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Ach, warum haben Sie sich die Mühe gemacht? Das war nicht nötig! Sie beschämen mich.“",
+       "optionen": [
+        "ای بابا، چرا زحمت کشیدید؟ لازم نبود! شرمنده‌ام کردید.",
+        "قابل شما را ندارد. دیدید؟ تعارف را خوب یاد گرفته‌ام!",
+        "آفرین! حالا یک چای بخورید و یکی از این شیرینی‌ها هم بردارید."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Was, wenn er jetzt denkt, alle Ausländer seien unhöflich?“",
+       "optionen": [
+        "نکند حالا فکر کند که همه‌ی خارجی‌ها بی‌ادب‌اند؟",
+        "یوناس جان، بفرمایید تو! چرا دم در ایستاده‌اید؟",
+        "ای بابا، چرا زحمت کشیدید؟ لازم نبود! شرمنده‌ام کردید."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Ich habe mich bedankt und bin ausgestiegen. Aber er schien sehr gekränkt zu sein!“",
+       "optionen": [
+        "تشکر کردم و پیاده شدم. ولی انگار خیلی دلخور شد!",
+        "پس از کجا بفهمم که کسی واقعاً تعارف نمی‌کند؟",
+        "یوناس جان، بفرمایید تو! چرا دم در ایستاده‌اید؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Dann mit Ihrer Erlaubnis … Übrigens habe ich Ihnen eine Schachtel Gebäck mitgebracht.“",
+       "optionen": [
+        "پس با اجازه‌تان … راستش، یک جعبه شیرینی هم برایتان آورده‌ام.",
+        "نکند حالا فکر کند که همه‌ی خارجی‌ها بی‌ادب‌اند؟",
+        "آفرین! حالا یک چای بخورید و یکی از این شیرینی‌ها هم بردارید."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Jonas, bitte kommen Sie herein! Warum stehen Sie an der Tür?“",
+       "optionen": [
+        "یوناس جان، بفرمایید تو! چرا دم در ایستاده‌اید؟",
+        "پس از کجا بفهمم که کسی واقعاً تعارف نمی‌کند؟",
+        "ای بابا، چرا زحمت کشیدید؟ لازم نبود! شرمنده‌ام کردید."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welcher persische Satz?",
+     "fragen": [
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Es ist Ihrer nicht würdig. Sehen Sie? Ich habe Taarof gut gelernt!",
+        "Ich habe mich bedankt und bin ausgestiegen. Aber er schien sehr gekränkt zu sein!",
+        "Nein danke, ich bin satt … Na gut, weil Sie darauf bestehen – nur eins!"
+       ],
+       "richtig": 0,
+       "fa": "قابل شما را ندارد. دیدید؟ تعارف را خوب یاد گرفته‌ام!"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Wirklich? Und was haben Sie gemacht?",
+        "Was, wenn er jetzt denkt, alle Ausländer seien unhöflich?",
+        "Bravo! Jetzt trinken Sie einen Tee und nehmen Sie auch eines von diesen Gebäckstücken."
+       ],
+       "richtig": 0,
+       "fa": "واقعاً؟ و شما چه کردید؟"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Ach, warum haben Sie sich die Mühe gemacht? Das war nicht nötig! Sie beschämen mich.",
+        "Was, wenn er jetzt denkt, alle Ausländer seien unhöflich?",
+        "Jonas, bitte kommen Sie herein! Warum stehen Sie an der Tür?"
+       ],
+       "richtig": 0,
+       "fa": "ای بابا، چرا زحمت کشیدید؟ لازم نبود! شرمنده‌ام کردید."
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Woran erkenne ich dann, dass jemand es wirklich ernst meint?",
+        "Dann mit Ihrer Erlaubnis … Übrigens habe ich Ihnen eine Schachtel Gebäck mitgebracht.",
+        "Bravo! Jetzt trinken Sie einen Tee und nehmen Sie auch eines von diesen Gebäckstücken."
+       ],
+       "richtig": 0,
+       "fa": "پس از کجا بفهمم که کسی واقعاً تعارف نمی‌کند؟"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Was, wenn er jetzt denkt, alle Ausländer seien unhöflich?",
+        "Ich habe mich bedankt und bin ausgestiegen. Aber er schien sehr gekränkt zu sein!",
+        "Nein, Sie sind der Gast. Bitte, keine Umstände!"
+       ],
+       "richtig": 0,
+       "fa": "نکند حالا فکر کند که همه‌ی خارجی‌ها بی‌ادب‌اند؟"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Bravo! Jetzt trinken Sie einen Tee und nehmen Sie auch eines von diesen Gebäckstücken.",
+        "Ich habe mich bedankt und bin ausgestiegen. Aber er schien sehr gekränkt zu sein!",
+        "Nein danke, ich bin satt … Na gut, weil Sie darauf bestehen – nur eins!"
+       ],
+       "richtig": 0,
+       "fa": "آفرین! حالا یک چای بخورید و یکی از این شیرینی‌ها هم بردارید."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
