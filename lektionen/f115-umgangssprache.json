@@ -1,0 +1,184 @@
+{
+ "id": "ug",
+ "art": "umgangssprache",
+ "titel": "Umgangssprache: So spricht man im Alltag",
+ "beschreibung": "Freiwilliger Extra-Teil: Umgangssprache.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "So spricht man",
+   "vorschau": "باید رفته باشه",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Schrift ≠ Gespräch",
+     "text": "<ul><li><span class='fa'>باشد → باشه</span>: <span class='fa'>باید رفته باشه</span></li><li><span class='fa'>بیاید → بیاد</span> · <span class='fa'>چه می‌گویی؟ → چی می‌گی؟</span></li><li><span class='fa'>این‌طور → این‌جوری</span></li><li><span class='fa'>است → ـه</span>: <span class='fa'>باحال است → باحاله</span></li></ul>",
+     "stil": "merke"
+    },
+    {
+     "typ": "paare",
+     "links": "x",
+     "paare": [
+      {
+       "fa": "باید رفته باشد",
+       "tr": "",
+       "de": "er/sie muss gegangen sein",
+       "x": "باید رفته باشه"
+      },
+      {
+       "fa": "شاید بیاید",
+       "tr": "",
+       "de": "vielleicht kommt er/sie",
+       "x": "شاید بیاد"
+      },
+      {
+       "fa": "چه می‌گویی؟",
+       "tr": "",
+       "de": "was sagst du?",
+       "x": "چی می‌گی؟"
+      },
+      {
+       "fa": "این‌طور",
+       "tr": "",
+       "de": "so, auf diese Weise",
+       "x": "این‌جوری"
+      },
+      {
+       "fa": "خیلی باحال است",
+       "tr": "",
+       "de": "das ist echt cool",
+       "x": "خیلی باحاله"
+      }
+     ],
+     "titel": "Schrift ↔ Gespräch"
+    },
+    {
+     "typ": "sortieren",
+     "titel": "Schrift oder Gespräch?",
+     "frage": "Schriftsprache oder Umgangssprache?",
+     "kategorien": [
+      "✍️ Schriftsprache",
+      "🗣️ Umgangssprache"
+     ],
+     "items": [
+      {
+       "fa": "باید رفته باشد",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "شاید بیاید",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "چه می‌گویی؟",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "این‌طور",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "خیلی باحال است",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "باید رفته باشه",
+       "k": 1,
+       "say": false,
+       "e": "<i>bāyad rafte bāsche</i> – geschrieben: <span class='fa'>باید رفته باشد</span>"
+      },
+      {
+       "fa": "شاید بیاد",
+       "k": 1,
+       "say": false,
+       "e": "<i>schāyad biyād</i> – geschrieben: <span class='fa'>شاید بیاید</span>"
+      },
+      {
+       "fa": "چی می‌گی؟",
+       "k": 1,
+       "say": false,
+       "e": "<i>tschī mīgī?</i> – geschrieben: <span class='fa'>چه می‌گویی؟</span>"
+      },
+      {
+       "fa": "این‌جوری",
+       "k": 1,
+       "say": false,
+       "e": "<i>īndschūrī</i> – geschrieben: <span class='fa'>این‌طور</span>"
+      },
+      {
+       "fa": "خیلی باحاله",
+       "k": 1,
+       "say": false,
+       "e": "<i>cheylī bāhāle</i> – geschrieben: <span class='fa'>خیلی باحال است</span>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Kurz-Dialog",
+   "vorschau": "💬",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Wo ist Arman?",
+     "text": "Umgangssprache! Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "آرمان کجاست؟ جواب نمی‌ده.",
+       "tr": "ārmān kodschāst? dschawāb nemīde.",
+       "de": "Wo ist Arman? Er antwortet nicht."
+      },
+      {
+       "fa": "باید خوابیده باشه. دیشب تا دیروقت با اون ربات حرف می‌زد!",
+       "tr": "bāyad chābīde bāsche. dīschab tā dīrwaght bā ūn robāt harf mīzad!",
+       "de": "Er muss eingeschlafen sein. Gestern Nacht hat er bis spät mit diesem Bot geredet!"
+      },
+      {
+       "fa": "چی می‌گی؟ با ربات؟",
+       "tr": "tschī mīgī? bā robāt?",
+       "de": "Was sagst du? Mit einem Bot?"
+      },
+      {
+       "fa": "آره، می‌گه خیلی باحاله. شاید تا شام بیدار بشه!",
+       "tr": "āre, mīge cheylī bāhāle. schāyad tā schām bīdār besche!",
+       "de": "Ja, er sagt, das ist echt cool. Vielleicht wacht er bis zum Abendessen auf!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Verstanden?",
+     "fragen": [
+      {
+       "frage": "Warum antwortet Arman nicht?",
+       "optionen": [
+        "Er schläft wahrscheinlich.",
+        "Er ist unterwegs.",
+        "Sein Handy ist kaputt."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "<span class='fa'>بیاد</span> =",
+       "optionen": [
+        "بیاید",
+        "بیاورد",
+        "بداند"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

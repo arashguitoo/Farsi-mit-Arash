@@ -1,0 +1,616 @@
+{
+ "id": "z1",
+ "titel": "Trainingspaket 1",
+ "beschreibung": "Wer passt zu wem?, Wort-Marathon, Lückensätze, Sätze aus den Texten.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "Wer passt zu wem?",
+   "vorschau": "🧩",
+   "karten": [
+    {
+     "typ": "zuordnen",
+     "titel": "Welcher Nebenjob passt?",
+     "text": "Fünf Personen suchen einen Nebenjob. Sieben Angebote stehen auf einer Jobplattform.",
+     "frage": "Welches Angebot passt am besten? Tippe es an.",
+     "angebote": [
+      {
+       "titel": "Snapp-Fahrer/in",
+       "emoji": "🚗",
+       "fa": "رانندگی با اسنپ؛ ماشین شخصی لازم است، ساعت آزاد.",
+       "de": "Fahren für Snapp; eigenes Auto nötig, freie Zeiteinteilung."
+      },
+      {
+       "titel": "Nachhilfe",
+       "emoji": "📚",
+       "fa": "تدریس خصوصی ریاضی برای دانش‌آموزان دبیرستان، عصرها.",
+       "de": "Mathe-Nachhilfe für Oberstufenschüler, nachmittags."
+      },
+      {
+       "titel": "Online-Shop",
+       "emoji": "🛍️",
+       "fa": "فروش اینترنتی لباس‌های دست‌دوز از خانه.",
+       "de": "Online-Verkauf selbstgenähter Kleidung von zu Hause."
+      },
+      {
+       "titel": "Übersetzen",
+       "emoji": "🗣️",
+       "fa": "ترجمه‌ی متن‌های فنی انگلیسی به فارسی، دورکاری.",
+       "de": "Übersetzen technischer Texte Englisch–Persisch, remote."
+      },
+      {
+       "titel": "Café-Barista",
+       "emoji": "☕",
+       "fa": "کار در کافه، آخر هفته‌ها، با مشتری‌های زیاد.",
+       "de": "Arbeit im Café, an Wochenenden, viel Kundenkontakt."
+      },
+      {
+       "titel": "Fotograf/in",
+       "emoji": "📷",
+       "fa": "عکاسی از مهمانی‌ها و جشن‌ها، دوربین شخصی لازم است.",
+       "de": "Fotografieren auf Partys und Feiern, eigene Kamera nötig."
+      },
+      {
+       "titel": "Essenslieferung",
+       "emoji": "🛵",
+       "fa": "پیک موتوری برای رستوران، شب‌ها.",
+       "de": "Motorrad-Kurier für ein Restaurant, abends."
+      }
+     ],
+     "personen": [
+      {
+       "name": "Sara",
+       "emoji": "✂️",
+       "fa": "سارا خیاطی بلد است و چون بچه‌ی کوچک دارد، باید در خانه بماند.",
+       "de": "Sara kann nähen und muss zu Hause bleiben, weil sie ein kleines Kind hat.",
+       "richtig": 2
+      },
+      {
+       "name": "Hamed",
+       "emoji": "🧮",
+       "fa": "حامد دانشجوی مهندسی است و ریاضی‌اش عالی است.",
+       "de": "Hamed studiert Ingenieurwesen und ist super in Mathe.",
+       "richtig": 1
+      },
+      {
+       "name": "Mehdi",
+       "emoji": "🚙",
+       "fa": "مهدی کارمند است، یک ماشین دارد و می‌خواهد هر وقت دلش خواست کار کند.",
+       "de": "Mehdi ist Angestellter, hat ein Auto und will arbeiten, wann er möchte.",
+       "richtig": 0
+      },
+      {
+       "name": "Laleh",
+       "emoji": "🌐",
+       "fa": "لاله انگلیسی‌اش خیلی خوب است و دوست ندارد از خانه بیرون برود.",
+       "de": "Laleh spricht sehr gut Englisch und geht nicht gern aus dem Haus.",
+       "richtig": 3
+      },
+      {
+       "name": "Arash",
+       "emoji": "📸",
+       "fa": "آرش یک دوربین حرفه‌ای دارد و عاشق جشن و شلوغی است.",
+       "de": "Arash hat eine Profikamera und liebt Feiern und Trubel.",
+       "richtig": 5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Wort-Marathon",
+   "vorschau": "⏱️",
+   "karten": [
+    {
+     "typ": "tempo",
+     "titel": "Marathon: alle Wörter",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 120,
+     "ziel": 25,
+     "woerter": [
+      {
+       "fa": "درآمد",
+       "a": "Einkommen"
+      },
+      {
+       "fa": "حقوق",
+       "a": "Gehalt"
+      },
+      {
+       "fa": "هزینه",
+       "a": "Kosten, Ausgabe"
+      },
+      {
+       "fa": "پس‌انداز",
+       "a": "Ersparnis"
+      },
+      {
+       "fa": "قسط",
+       "a": "Rate"
+      },
+      {
+       "fa": "وام",
+       "a": "Kredit, Darlehen"
+      },
+      {
+       "fa": "تورم",
+       "a": "Inflation"
+      },
+      {
+       "fa": "حساب بانکی",
+       "a": "Bankkonto"
+      },
+      {
+       "fa": "قرض",
+       "a": "Schulden, Leihgabe"
+      },
+      {
+       "fa": "ارزان",
+       "a": "billig"
+      },
+      {
+       "fa": "گرانی",
+       "a": "Teuerung"
+      },
+      {
+       "fa": "بودجه",
+       "a": "Budget"
+      },
+      {
+       "fa": "شغل دوم",
+       "a": "Zweitjob"
+      },
+      {
+       "fa": "کار آزاد",
+       "a": "Selbstständigkeit, Freelancing"
+      },
+      {
+       "fa": "کارمند",
+       "a": "Angestellte/r"
+      },
+      {
+       "fa": "کارفرما",
+       "a": "Arbeitgeber/in"
+      },
+      {
+       "fa": "ساعت کاری",
+       "a": "Arbeitszeit"
+      },
+      {
+       "fa": "بیمه",
+       "a": "Versicherung"
+      },
+      {
+       "fa": "بیکاری",
+       "a": "Arbeitslosigkeit"
+      },
+      {
+       "fa": "استخدام",
+       "a": "Einstellung"
+      },
+      {
+       "fa": "قرارداد",
+       "a": "Vertrag"
+      },
+      {
+       "fa": "مسافرکشی",
+       "a": "Fahrgäste befördern (als Nebenjob)"
+      },
+      {
+       "fa": "فروش اینترنتی",
+       "a": "Online-Verkauf"
+      },
+      {
+       "fa": "آرامش",
+       "a": "Ruhe, Seelenfrieden"
+      },
+      {
+       "fa": "امنیت شغلی",
+       "a": "Arbeitsplatzsicherheit"
+      },
+      {
+       "fa": "آزادی",
+       "a": "Freiheit"
+      },
+      {
+       "fa": "پیشرفت",
+       "a": "Fortschritt, Aufstieg"
+      },
+      {
+       "fa": "رضایت",
+       "a": "Zufriedenheit"
+      },
+      {
+       "fa": "آینده",
+       "a": "Zukunft"
+      },
+      {
+       "fa": "خستگی",
+       "a": "Müdigkeit, Erschöpfung"
+      },
+      {
+       "fa": "زندگی",
+       "a": "Leben"
+      },
+      {
+       "fa": "آرزو",
+       "a": "Wunsch, Traum"
+      },
+      {
+       "fa": "استقلال",
+       "a": "Unabhängigkeit"
+      },
+      {
+       "fa": "پس‌انداز کردن",
+       "a": "sparen"
+      },
+      {
+       "fa": "خرج کردن",
+       "a": "ausgeben"
+      },
+      {
+       "fa": "درآوردن",
+       "a": "verdienen (Geld)"
+      },
+      {
+       "fa": "قرض گرفتن",
+       "a": "sich leihen"
+      },
+      {
+       "fa": "استخدام شدن",
+       "a": "eingestellt werden"
+      },
+      {
+       "fa": "بیکار شدن",
+       "a": "arbeitslos werden"
+      }
+     ]
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "بودجه",
+       "tr": "būdsche",
+       "de": "Budget",
+       "emoji": "📊"
+      },
+      {
+       "fa": "بیمه",
+       "tr": "bīme",
+       "de": "Versicherung",
+       "emoji": "🛡️"
+      },
+      {
+       "fa": "فروش اینترنتی",
+       "tr": "forūsch-e īnternetī",
+       "de": "Online-Verkauf",
+       "emoji": "🛒"
+      },
+      {
+       "fa": "قرض",
+       "tr": "gharz",
+       "de": "Schulden, Leihgabe",
+       "emoji": "🤝"
+      },
+      {
+       "fa": "پس‌انداز",
+       "tr": "pasandāz",
+       "de": "Ersparnis",
+       "emoji": "🐷"
+      },
+      {
+       "fa": "آرامش",
+       "tr": "ārāmesch",
+       "de": "Ruhe, Seelenfrieden",
+       "emoji": "😌"
+      }
+     ],
+     "titel": "Memory"
+    },
+    {
+     "typ": "memory",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "تورم",
+       "tr": "tawarrom",
+       "de": "Inflation",
+       "emoji": "📈"
+      },
+      {
+       "fa": "حساب بانکی",
+       "tr": "hesāb-e bānkī",
+       "de": "Bankkonto",
+       "emoji": "🏦"
+      },
+      {
+       "fa": "آزادی",
+       "tr": "āzādī",
+       "de": "Freiheit",
+       "emoji": "🕊️"
+      },
+      {
+       "fa": "آرزو",
+       "tr": "ārezū",
+       "de": "Wunsch, Traum",
+       "emoji": "🌠"
+      },
+      {
+       "fa": "قسط",
+       "tr": "ghest",
+       "de": "Rate",
+       "emoji": "📆"
+      },
+      {
+       "fa": "آرامش",
+       "tr": "ārāmesch",
+       "de": "Ruhe, Seelenfrieden",
+       "emoji": "😌"
+      }
+     ],
+     "titel": "Memory: Wort & Bedeutung"
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "titel": "Lückensätze",
+   "vorschau": "___",
+   "karten": [
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>بیشتر ___ من خرج اجاره می‌شود.</span><br><span class='mini'>Der Großteil meines Gehalts geht für die Miete drauf.</span>",
+       "optionen": [
+        "حقوق",
+        "آینده",
+        "استقلال"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>بیشتر حقوق من خرج اجاره می‌شود.</span>"
+      },
+      {
+       "frage": "<span class='fa'>هر ماه کمی ___ می‌کنم تا یک ماشین بخرم.</span><br><span class='mini'>Jeden Monat spare ich etwas, um ein Auto zu kaufen.</span>",
+       "optionen": [
+        "پس‌انداز",
+        "استقلال",
+        "آینده"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>هر ماه کمی پس‌انداز می‌کنم تا یک ماشین بخرم.</span>"
+      },
+      {
+       "frage": "<span class='fa'>به خاطر ___، قیمت‌ها هر ماه بالا می‌رود.</span><br><span class='mini'>Wegen der Inflation steigen die Preise jeden Monat.</span>",
+       "optionen": [
+        "تورم",
+        "شغل دوم",
+        "قسط"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>به خاطر تورم، قیمت‌ها هر ماه بالا می‌رود.</span>"
+      },
+      {
+       "frage": "<span class='fa'>برای خرید خانه از بانک ___ گرفتند.</span><br><span class='mini'>Für den Hauskauf haben sie einen Kredit von der Bank genommen.</span>",
+       "optionen": [
+        "وام",
+        "استخدام",
+        "قرض"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>برای خرید خانه از بانک وام گرفتند.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>خیلی از جوان‌ها کنار کار اصلی‌شان یک ___ دارند.</span><br><span class='mini'>Viele junge Leute haben neben ihrem Hauptjob einen Zweitjob.</span>",
+       "optionen": [
+        "شغل دوم",
+        "استقلال",
+        "قسط"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>خیلی از جوان‌ها کنار کار اصلی‌شان یک شغل دوم دارند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>او ___ کار می‌کند و رئیس ندارد.</span><br><span class='mini'>Er/Sie arbeitet selbstständig und hat keinen Chef.</span>",
+       "optionen": [
+        "کار آزاد",
+        "استقلال",
+        "پیشرفت"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>او کار آزاد کار می‌کند و رئیس ندارد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>بعد از دو شیفت کار، ___ امانش را بریده بود.</span><br><span class='mini'>Nach zwei Schichten war er/sie völlig erschöpft.</span>",
+       "optionen": [
+        "خستگی",
+        "ارزان",
+        "زندگی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>بعد از دو شیفت کار، خستگی امانش را بریده بود.</span>"
+      },
+      {
+       "frage": "<span class='fa'>برای من ___ از پول مهم‌تر است.</span><br><span class='mini'>Für mich ist innere Ruhe wichtiger als Geld.</span>",
+       "optionen": [
+        "آرامش",
+        "آینده",
+        "شغل دوم"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>برای من آرامش از پول مهم‌تر است.</span>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "e",
+   "titel": "Sätze aus den Texten",
+   "vorschau": "🧱",
+   "karten": [
+    {
+     "typ": "bauen",
+     "titel": "Baue den Satz",
+     "trenner": " ",
+     "woerter": [
+      {
+       "fa": "پول زیادی نبود، اما مال خودش بود؛ اولین قدم برای استقلال.",
+       "tr": "pūl-e ziyādī nabūd, ammā māl-e chodasch būd; awwalīn ghadam barā-ye esteghlāl.",
+       "de": "Es war nicht viel Geld, aber es war ihr eigenes – der erste Schritt zur Unabhängigkeit.",
+       "teile": [
+        "پول",
+        "زیادی",
+        "نبود",
+        "اما",
+        "مال",
+        "خودش",
+        "بود؛",
+        "اولین",
+        "قدم",
+        "برای",
+        "استقلال"
+       ],
+       "extra": []
+      },
+      {
+       "fa": "یک راننده‌ی جوان اسنپ می‌گوید: «صبح مهندسم، عصر راننده، شب شاعر!»",
+       "tr": "yek rānande-ye dschawān-e esnap mīgūyad: «sobh mohandesam, ʿasr rānande, schab schāʿer!»",
+       "de": "Ein junger Snapp-Fahrer sagt: „Morgens bin ich Ingenieur, nachmittags Fahrer, nachts Dichter!“",
+       "teile": [
+        "یک",
+        "راننده‌ی",
+        "جوان",
+        "اسنپ",
+        "می‌گوید",
+        "«صبح",
+        "مهندسم",
+        "عصر",
+        "راننده",
+        "شب",
+        "شاعر»"
+       ],
+       "extra": []
+      },
+      {
+       "fa": "اپلیکیشن‌هایی مثل اسنپ برای خیلی‌ها شغل دوم شده‌اند.",
+       "tr": "aplīkeyschenhāyī mesl-e esnap barā-ye cheylīhā schoghl-e dowwom schode-and.",
+       "de": "Apps wie Snapp sind für viele zum Zweitjob geworden.",
+       "teile": [
+        "اپلیکیشن‌هایی",
+        "مثل",
+        "اسنپ",
+        "برای",
+        "خیلی‌ها",
+        "شغل",
+        "دوم",
+        "شده‌اند"
+       ],
+       "extra": [
+        "بود؛"
+       ]
+      },
+      {
+       "fa": "کار کردن دوازده ساعت در روز، خستگی زیادی به همراه دارد.",
+       "tr": "kār kardan-e dawāzdah sāʿat dar rūz, chastegī-ye ziyādī be hamrāh dārad.",
+       "de": "Zwölf Stunden am Tag zu arbeiten bringt große Erschöpfung mit sich.",
+       "teile": [
+        "کار",
+        "کردن",
+        "دوازده",
+        "ساعت",
+        "در",
+        "روز",
+        "خستگی",
+        "زیادی",
+        "به",
+        "همراه",
+        "دارد"
+       ],
+       "extra": [
+        "بود؛"
+       ]
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Was bedeutet der Satz?",
+     "fragen": [
+      {
+       "frage": "„Apps wie Snapp sind für viele zum Zweitjob geworden.“",
+       "optionen": [
+        "اپلیکیشن‌هایی مثل اسنپ برای خیلی‌ها شغل دوم شده‌اند.",
+        "پول زیادی نبود، اما مال خودش بود؛ اولین قدم برای استقلال.",
+        "یک راننده‌ی جوان اسنپ می‌گوید: «صبح مهندسم، عصر راننده، شب شاعر!»"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Es war nicht viel Geld, aber es war ihr eigenes – der erste Schritt zur Unabhängigkeit.“",
+       "optionen": [
+        "پول زیادی نبود، اما مال خودش بود؛ اولین قدم برای استقلال.",
+        "یک راننده‌ی جوان اسنپ می‌گوید: «صبح مهندسم، عصر راننده، شب شاعر!»",
+        "اپلیکیشن‌هایی مثل اسنپ برای خیلی‌ها شغل دوم شده‌اند."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Zwölf Stunden am Tag zu arbeiten bringt große Erschöpfung mit sich.“",
+       "optionen": [
+        "کار کردن دوازده ساعت در روز، خستگی زیادی به همراه دارد.",
+        "پول زیادی نبود، اما مال خودش بود؛ اولین قدم برای استقلال.",
+        "یک راننده‌ی جوان اسنپ می‌گوید: «صبح مهندسم، عصر راننده، شب شاعر!»"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Ein junger Snapp-Fahrer sagt: „Morgens bin ich Ingenieur, nachmittags Fahrer, nachts Dichter!““",
+       "optionen": [
+        "یک راننده‌ی جوان اسنپ می‌گوید: «صبح مهندسم، عصر راننده، شب شاعر!»",
+        "اپلیکیشن‌هایی مثل اسنپ برای خیلی‌ها شغل دوم شده‌اند.",
+        "پول زیادی نبود، اما مال خودش بود؛ اولین قدم برای استقلال."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,184 @@
+{
+ "id": "ug",
+ "art": "umgangssprache",
+ "titel": "Umgangssprache: So spricht man im Alltag",
+ "beschreibung": "Freiwilliger Extra-Teil: Umgangssprache.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "So spricht man",
+   "vorschau": "نون",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Schrift ≠ Gespräch",
+     "text": "<ul><li><span class='fa'>نان → نون</span> <i>nūn</i> · <span class='fa'>خانه → خونه</span></li><li><span class='fa'>صبحانه خوردی؟</span> bleibt gleich – die Endung <span class='fa'>-ی</span> ist schon gesprochen.</li><li><span class='fa'>چای → چایی</span> <i>tschāyī</i> (sehr häufig im Gespräch)</li><li><span class='fa'>می‌خواهم → می‌خوام</span> · <span class='fa'>دارند → دارن</span></li></ul>",
+     "stil": "merke"
+    },
+    {
+     "typ": "paare",
+     "links": "x",
+     "paare": [
+      {
+       "fa": "نان",
+       "tr": "",
+       "de": "Brot",
+       "x": "نون"
+      },
+      {
+       "fa": "چای",
+       "tr": "",
+       "de": "Tee",
+       "x": "چایی"
+      },
+      {
+       "fa": "می‌خواهم",
+       "tr": "",
+       "de": "ich will",
+       "x": "می‌خوام"
+      },
+      {
+       "fa": "دارند",
+       "tr": "",
+       "de": "sie haben",
+       "x": "دارن"
+      },
+      {
+       "fa": "آن",
+       "tr": "",
+       "de": "jener, das",
+       "x": "اون"
+      }
+     ],
+     "titel": "Schrift ↔ Gespräch"
+    },
+    {
+     "typ": "sortieren",
+     "titel": "Schrift oder Gespräch?",
+     "frage": "Schriftsprache oder Umgangssprache?",
+     "kategorien": [
+      "✍️ Schriftsprache",
+      "🗣️ Umgangssprache"
+     ],
+     "items": [
+      {
+       "fa": "نان",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "چای",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "می‌خواهم",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "دارند",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "آن",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "نون",
+       "k": 1,
+       "say": false,
+       "e": "<i>nūn</i> – geschrieben: <span class='fa'>نان</span>"
+      },
+      {
+       "fa": "چایی",
+       "k": 1,
+       "say": false,
+       "e": "<i>tschāyī</i> – geschrieben: <span class='fa'>چای</span>"
+      },
+      {
+       "fa": "می‌خوام",
+       "k": 1,
+       "say": false,
+       "e": "<i>mīchām</i> – geschrieben: <span class='fa'>می‌خواهم</span>"
+      },
+      {
+       "fa": "دارن",
+       "k": 1,
+       "say": false,
+       "e": "<i>dāran</i> – geschrieben: <span class='fa'>دارند</span>"
+      },
+      {
+       "fa": "اون",
+       "k": 1,
+       "say": false,
+       "e": "<i>ūn</i> – geschrieben: <span class='fa'>آن</span>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Kurz-Dialog",
+   "vorschau": "💬",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Am Frühstückstisch",
+     "text": "Umgangssprache! Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "مامان، نون تازه داریم؟",
+       "tr": "māmān, nūn-e tāze dārīm?",
+       "de": "Mama, haben wir frisches Brot?"
+      },
+      {
+       "fa": "آره، بابات رفت نونوایی.",
+       "tr": "āre, bābāt raft nūnwāyī.",
+       "de": "Ja, dein Papa ist zur Bäckerei gegangen."
+      },
+      {
+       "fa": "یه چایی هم برام می‌ریزی؟",
+       "tr": "ye tschāyī ham barām mīrīzī?",
+       "de": "Schenkst du mir auch einen Tee ein?"
+      },
+      {
+       "fa": "بیا، تازه‌دمه. نوش جون!",
+       "tr": "biyā, tāzedame. nūsch-e dschūn!",
+       "de": "Hier, frisch gebrüht. Wohl bekomm’s!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Verstanden?",
+     "fragen": [
+      {
+       "frage": "Wo ist der Vater?",
+       "optionen": [
+        "in der Bäckerei",
+        "bei der Arbeit",
+        "im Bett"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "<span class='fa'>چایی</span> ist gesprochen für …",
+       "optionen": [
+        "چای",
+        "چاه",
+        "چیز"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,672 @@
+{
+ "id": "z1",
+ "titel": "Trainingspaket 1",
+ "beschreibung": "Wer passt zu wem?, Wort-Marathon, Lückensätze, Sätze aus den Texten.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "Wer passt zu wem?",
+   "vorschau": "🧩",
+   "karten": [
+    {
+     "typ": "zuordnen",
+     "titel": "Wer bekommt welchen Termin?",
+     "text": "Die Sprachschule „Pars“ hat sieben freie Termine für ein Einstufungsgespräch. Fünf Personen schreiben, wann sie können.",
+     "frage": "Welches Angebot passt am besten? Tippe es an.",
+     "angebote": [
+      {
+       "titel": "Sa 8:00",
+       "emoji": "🌅",
+       "fa": "شنبه، ساعت هشت صبح",
+       "de": "Samstag, 8 Uhr morgens"
+      },
+      {
+       "titel": "Sa 18:00",
+       "emoji": "🌇",
+       "fa": "شنبه، ساعت شش عصر",
+       "de": "Samstag, 18 Uhr"
+      },
+      {
+       "titel": "So 12:30",
+       "emoji": "🍽️",
+       "fa": "یکشنبه، ساعت دوازده و نیم ظهر",
+       "de": "Sonntag, 12:30 Uhr"
+      },
+      {
+       "titel": "Mo 20:00",
+       "emoji": "🌙",
+       "fa": "دوشنبه، ساعت هشت شب (آنلاین)",
+       "de": "Montag, 20 Uhr (online)"
+      },
+      {
+       "titel": "Di 10:00",
+       "emoji": "☕",
+       "fa": "سه‌شنبه، ساعت ده صبح",
+       "de": "Dienstag, 10 Uhr"
+      },
+      {
+       "titel": "Mi 15:00",
+       "emoji": "🕒",
+       "fa": "چهارشنبه، ساعت سه بعدازظهر",
+       "de": "Mittwoch, 15 Uhr"
+      },
+      {
+       "titel": "Do 9:00",
+       "emoji": "📅",
+       "fa": "پنجشنبه، ساعت نه صبح",
+       "de": "Donnerstag, 9 Uhr"
+      }
+     ],
+     "personen": [
+      {
+       "name": "Mehdi",
+       "emoji": "🏢",
+       "fa": "مهدی شنبه تا چهارشنبه از هشت تا پنج کار می‌کند و پنجشنبه‌ها تعطیل است.",
+       "de": "Mehdi arbeitet Samstag bis Mittwoch von 8 bis 17 Uhr; donnerstags ist er frei.",
+       "richtig": 6
+      },
+      {
+       "name": "Laura",
+       "emoji": "🌍",
+       "fa": "لورا در آلمان است و فقط آنلاین و بعد از ساعت هفت شب وقت دارد.",
+       "de": "Laura ist in Deutschland und hat nur online und nach 19 Uhr Zeit.",
+       "richtig": 3
+      },
+      {
+       "name": "Shirin",
+       "emoji": "👶",
+       "fa": "شیرین صبح‌ها بچه‌اش را به مهد می‌برد و ظهرها، بین دوازده و یک، آزاد است.",
+       "de": "Shirin bringt morgens ihr Kind in die Kita und ist mittags zwischen 12 und 13 Uhr frei.",
+       "richtig": 2
+      },
+      {
+       "name": "Babak",
+       "emoji": "🌄",
+       "fa": "بابک سحرخیز است و دوست دارد هفته را زود شروع کند.",
+       "de": "Babak ist Frühaufsteher und beginnt die Woche gern früh.",
+       "richtig": 0
+      },
+      {
+       "name": "Nina",
+       "emoji": "🎓",
+       "fa": "نینا دانشجوست؛ صبح‌ها کلاس دارد، اما چهارشنبه بعدازظهر هیچ کلاسی ندارد.",
+       "de": "Nina ist Studentin; vormittags hat sie Kurse, aber Mittwochnachmittag ist sie frei.",
+       "richtig": 5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Wort-Marathon",
+   "vorschau": "⏱️",
+   "karten": [
+    {
+     "typ": "tempo",
+     "titel": "Marathon: alle Wörter",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 120,
+     "ziel": 25,
+     "woerter": [
+      {
+       "fa": "قرار",
+       "a": "Verabredung, Termin"
+      },
+      {
+       "fa": "نوبت",
+       "a": "Termin (Arzt, Amt)"
+      },
+      {
+       "fa": "وقت‌شناس",
+       "a": "pünktlich"
+      },
+      {
+       "fa": "بدقول",
+       "a": "unzuverlässig"
+      },
+      {
+       "fa": "تأخیر",
+       "a": "Verspätung"
+      },
+      {
+       "fa": "دقیقاً",
+       "a": "genau"
+      },
+      {
+       "fa": "حدوداً",
+       "a": "ungefähr"
+      },
+      {
+       "fa": "سر وقت",
+       "a": "pünktlich, zur rechten Zeit"
+      },
+      {
+       "fa": "دیروقت",
+       "a": "spät (am Abend)"
+      },
+      {
+       "fa": "زودتر",
+       "a": "früher"
+      },
+      {
+       "fa": "مهلت",
+       "a": "Frist"
+      },
+      {
+       "fa": "تقویم",
+       "a": "Kalender"
+      },
+      {
+       "fa": "عجله",
+       "a": "Eile"
+      },
+      {
+       "fa": "ترافیک",
+       "a": "Stau"
+      },
+      {
+       "fa": "ساعت شلوغی",
+       "a": "Stoßzeit"
+      },
+      {
+       "fa": "پیامک",
+       "a": "SMS"
+      },
+      {
+       "fa": "بهانه",
+       "a": "Ausrede"
+      },
+      {
+       "fa": "منتظر",
+       "a": "wartend"
+      },
+      {
+       "fa": "کلافه",
+       "a": "genervt"
+      },
+      {
+       "fa": "صبور",
+       "a": "geduldig"
+      },
+      {
+       "fa": "بی‌حوصله",
+       "a": "ungeduldig"
+      },
+      {
+       "fa": "برنامه‌ریزی",
+       "a": "Planung"
+      },
+      {
+       "fa": "فرهنگ",
+       "a": "Kultur"
+      },
+      {
+       "fa": "آداب",
+       "a": "Sitten, Umgangsformen"
+      },
+      {
+       "fa": "انعطاف",
+       "a": "Flexibilität"
+      },
+      {
+       "fa": "نظم",
+       "a": "Ordnung"
+      },
+      {
+       "fa": "رابطه",
+       "a": "Beziehung"
+      },
+      {
+       "fa": "احترام",
+       "a": "Respekt"
+      },
+      {
+       "fa": "بی‌احترامی",
+       "a": "Respektlosigkeit"
+      },
+      {
+       "fa": "تفاوت",
+       "a": "Unterschied"
+      },
+      {
+       "fa": "انتظار",
+       "a": "Erwartung, Warten"
+      },
+      {
+       "fa": "سوءتفاهم",
+       "a": "Missverständnis"
+      },
+      {
+       "fa": "دیر کردن",
+       "a": "sich verspäten"
+      },
+      {
+       "fa": "منتظر ماندن",
+       "a": "warten"
+      },
+      {
+       "fa": "قرار گذاشتن",
+       "a": "sich verabreden"
+      },
+      {
+       "fa": "لغو کردن",
+       "a": "absagen"
+      },
+      {
+       "fa": "عقب انداختن",
+       "a": "verschieben"
+      },
+      {
+       "fa": "رسیدن",
+       "a": "ankommen"
+      }
+     ]
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "پیامک",
+       "tr": "payāmak",
+       "de": "SMS",
+       "emoji": "💬"
+      },
+      {
+       "fa": "سوءتفاهم",
+       "tr": "sūʾetafāhom",
+       "de": "Missverständnis",
+       "emoji": "❓"
+      },
+      {
+       "fa": "بی‌حوصله",
+       "tr": "bīhosele",
+       "de": "ungeduldig",
+       "emoji": "😒"
+      },
+      {
+       "fa": "مهلت",
+       "tr": "mohlat",
+       "de": "Frist",
+       "emoji": "⏳"
+      },
+      {
+       "fa": "صبور",
+       "tr": "sabūr",
+       "de": "geduldig",
+       "emoji": "😌"
+      },
+      {
+       "fa": "کلافه",
+       "tr": "kalāfe",
+       "de": "genervt",
+       "emoji": "😤"
+      }
+     ],
+     "titel": "Memory"
+    },
+    {
+     "typ": "memory",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "سوءتفاهم",
+       "tr": "sūʾetafāhom",
+       "de": "Missverständnis",
+       "emoji": "❓"
+      },
+      {
+       "fa": "وقت‌شناس",
+       "tr": "waghtschenās",
+       "de": "pünktlich",
+       "emoji": "⏱️"
+      },
+      {
+       "fa": "تفاوت",
+       "tr": "tafāwot",
+       "de": "Unterschied",
+       "emoji": "↔️"
+      },
+      {
+       "fa": "پیامک",
+       "tr": "payāmak",
+       "de": "SMS",
+       "emoji": "💬"
+      },
+      {
+       "fa": "بهانه",
+       "tr": "bahāne",
+       "de": "Ausrede",
+       "emoji": "🤥"
+      },
+      {
+       "fa": "حدوداً",
+       "tr": "hodūdan",
+       "de": "ungefähr",
+       "emoji": "≈"
+      }
+     ],
+     "titel": "Memory: Wort & Bedeutung"
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "titel": "Lückensätze",
+   "vorschau": "___",
+   "karten": [
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>او همیشه ___ است و هیچ‌وقت دیر نمی‌کند.</span><br><span class='mini'>Er/Sie ist immer pünktlich und kommt nie zu spät.</span>",
+       "optionen": [
+        "وقت‌شناس",
+        "فرهنگ",
+        "ساعت شلوغی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>او همیشه وقت‌شناس است و هیچ‌وقت دیر نمی‌کند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>قطار بیست دقیقه ___ داشت.</span><br><span class='mini'>Der Zug hatte zwanzig Minuten Verspätung.</span>",
+       "optionen": [
+        "تأخیر",
+        "تقویم",
+        "نظم"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>قطار بیست دقیقه تأخیر داشت.</span>"
+      },
+      {
+       "frage": "<span class='fa'>برای دیدن دکتر باید ___ بگیری.</span><br><span class='mini'>Um zum Arzt zu gehen, musst du einen Termin machen.</span>",
+       "optionen": [
+        "نوبت",
+        "انتظار",
+        "فرهنگ"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>برای دیدن دکتر باید نوبت بگیری.</span>"
+      },
+      {
+       "frage": "<span class='fa'>بعد از یک ساعت انتظار خیلی ___ شدم.</span><br><span class='mini'>Nach einer Stunde Warten war ich sehr genervt.</span>",
+       "optionen": [
+        "کلافه",
+        "صبور",
+        "نظم"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>بعد از یک ساعت انتظار خیلی کلافه شدم.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>ساعت هشت صبح ___ است و خیابان‌ها پر از ماشین.</span><br><span class='mini'>Um acht Uhr morgens ist Stoßzeit und die Straßen sind voller Autos.</span>",
+       "optionen": [
+        "ساعت شلوغی",
+        "بدقول",
+        "کلافه"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>ساعت هشت صبح ساعت شلوغی است و خیابان‌ها پر از ماشین.</span>"
+      },
+      {
+       "frage": "<span class='fa'>ترافیک بهترین ___ برای دیر رسیدن در تهران است!</span><br><span class='mini'>Stau ist in Teheran die beste Ausrede fürs Zuspätkommen!</span>",
+       "optionen": [
+        "بهانه",
+        "رابطه",
+        "صبور"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>ترافیک بهترین بهانه برای دیر رسیدن در تهران است!</span>"
+      },
+      {
+       "frage": "<span class='fa'>در فرهنگ آلمانی، ___ خیلی مهم است.</span><br><span class='mini'>In der deutschen Kultur ist Ordnung sehr wichtig.</span>",
+       "optionen": [
+        "نظم",
+        "انعطاف",
+        "قرار"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>در فرهنگ آلمانی، نظم خیلی مهم است.</span>"
+      },
+      {
+       "frage": "<span class='fa'>یک ___ کوچک باعث دعوای بزرگ شد.</span><br><span class='mini'>Ein kleines Missverständnis führte zu einem großen Streit.</span>",
+       "optionen": [
+        "سوءتفاهم",
+        "نظم",
+        "انتظار"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>یک سوءتفاهم کوچک باعث دعوای بزرگ شد.</span>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "e",
+   "titel": "Sätze aus den Texten",
+   "vorschau": "🧱",
+   "karten": [
+    {
+     "typ": "bauen",
+     "titel": "Baue den Satz",
+     "trenner": " ",
+     "woerter": [
+      {
+       "fa": "و بسیاری از آلمانی‌ها هم در مهمانی‌های دوستانه دیر می‌رسند.",
+       "tr": "wa besyārī az ālmānīhā ham dar mehmānīhā-ye dūstāne dīr mīresand.",
+       "de": "Und viele Deutsche kommen auf privaten Partys auch zu spät.",
+       "teile": [
+        "و",
+        "بسیاری",
+        "از",
+        "آلمانی‌ها",
+        "هم",
+        "در",
+        "مهمانی‌های",
+        "دوستانه",
+        "دیر",
+        "می‌رسند"
+       ],
+       "extra": [
+        "تقسیم‌بندی"
+       ]
+      },
+      {
+       "fa": "او دقیقاً سر ساعت رسید، مثل همیشه.",
+       "tr": "ū daghīghan sar-e sāʿat resīd, mesl-e hamīsche.",
+       "de": "Er kam genau pünktlich, wie immer.",
+       "teile": [
+        "او",
+        "دقیقاً",
+        "سر",
+        "ساعت",
+        "رسید",
+        "مثل",
+        "همیشه"
+       ],
+       "extra": [
+        "می‌رسند."
+       ]
+      },
+      {
+       "fa": "بسیاری از سوءتفاهم‌های فرهنگی از همین تفاوت کوچک شروع می‌شود.",
+       "tr": "besyārī az sūʾetafāhomhā-ye farhangī az hamīn tafāwot-e kūtschak schorūʿ mīschawad.",
+       "de": "Viele kulturelle Missverständnisse beginnen mit genau diesem kleinen Unterschied.",
+       "teile": [
+        "بسیاری",
+        "از",
+        "سوءتفاهم‌های",
+        "فرهنگی",
+        "از",
+        "همین",
+        "تفاوت",
+        "کوچک",
+        "شروع",
+        "می‌شود"
+       ],
+       "extra": [
+        "او"
+       ]
+      },
+      {
+       "fa": "در حالی که یوناس چای دومش را می‌خورد، کم‌کم کلافه شد.",
+       "tr": "dar hālī ke yūnās tschāy-e dowwomasch rā mīchord, kamkam kalāfe schod.",
+       "de": "Während Jonas seinen zweiten Tee trank, wurde er allmählich genervt.",
+       "teile": [
+        "در",
+        "حالی",
+        "که",
+        "یوناس",
+        "چای",
+        "دومش",
+        "را",
+        "می‌خورد",
+        "کم‌کم",
+        "کلافه",
+        "شد"
+       ],
+       "extra": [
+        "نیم"
+       ]
+      },
+      {
+       "fa": "یوناس خندید: «اشکالی ندارد؛ یک دوست جدید پیدا کردم!»",
+       "tr": "yūnās chandīd: «eschkālī nadārad; yek dūst-e dschadīd peydā kardam!»",
+       "de": "Jonas lachte: „Kein Problem; ich habe einen neuen Freund gefunden!“",
+       "teile": [
+        "یوناس",
+        "خندید",
+        "«اشکالی",
+        "ندارد؛",
+        "یک",
+        "دوست",
+        "جدید",
+        "پیدا",
+        "کردم»"
+       ],
+       "extra": [
+        "شش"
+       ]
+      },
+      {
+       "fa": "یوناس یک چای سفارش داد و منتظر ماند.",
+       "tr": "yūnās yek tschāy sefāresch dād o montazer mānd.",
+       "de": "Jonas bestellte einen Tee und wartete.",
+       "teile": [
+        "یوناس",
+        "یک",
+        "چای",
+        "سفارش",
+        "داد",
+        "و",
+        "منتظر",
+        "ماند"
+       ],
+       "extra": [
+        "حداقل"
+       ]
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Was bedeutet der Satz?",
+     "fragen": [
+      {
+       "frage": "„Um halb sieben kam die zweite Nachricht: „Sorry, der Stau ist schrecklich!““",
+       "optionen": [
+        "ساعت شش و نیم، پیامک دوم آمد: «ببخشید، ترافیک وحشتناکه!»",
+        "در حالی که یوناس چای دومش را می‌خورد، کم‌کم کلافه شد.",
+        "بسیاری از سوءتفاهم‌های فرهنگی از همین تفاوت کوچک شروع می‌شود."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Jonas lachte: „Kein Problem; ich habe einen neuen Freund gefunden!““",
+       "optionen": [
+        "یوناس خندید: «اشکالی ندارد؛ یک دوست جدید پیدا کردم!»",
+        "در حالی که یوناس چای دومش را می‌خورد، کم‌کم کلافه شد.",
+        "بسیاری از سوءتفاهم‌های فرهنگی از همین تفاوت کوچک شروع می‌شود."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Und viele Deutsche kommen auf privaten Partys auch zu spät.“",
+       "optionen": [
+        "و بسیاری از آلمانی‌ها هم در مهمانی‌های دوستانه دیر می‌رسند.",
+        "او دقیقاً سر ساعت رسید، مثل همیشه.",
+        "بسیاری از سوءتفاهم‌های فرهنگی از همین تفاوت کوچک شروع می‌شود."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Viele kulturelle Missverständnisse beginnen mit genau diesem kleinen Unterschied.“",
+       "optionen": [
+        "بسیاری از سوءتفاهم‌های فرهنگی از همین تفاوت کوچک شروع می‌شود.",
+        "او دقیقاً سر ساعت رسید، مثل همیشه.",
+        "در فرهنگ‌های «تک‌زمانی» مثل آلمان، زمان مثل یک خط مستقیم است."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Jonas bestellte einen Tee und wartete.“",
+       "optionen": [
+        "یوناس یک چای سفارش داد و منتظر ماند.",
+        "در فرهنگ‌های «تک‌زمانی» مثل آلمان، زمان مثل یک خط مستقیم است.",
+        "ساعت شش و نیم، پیامک دوم آمد: «ببخشید، ترافیک وحشتناکه!»"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Während Jonas seinen zweiten Tee trank, wurde er allmählich genervt.“",
+       "optionen": [
+        "در حالی که یوناس چای دومش را می‌خورد، کم‌کم کلافه شد.",
+        "«پسرم، در تهران ‹پنج دقیقه› یعنی حداقل نیم ساعت!»",
+        "اما این تقسیم‌بندی خیلی ساده است."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,483 @@
+{
+ "id": "z1",
+ "titel": "Trainingspaket 1",
+ "beschreibung": "Wer passt zu wem?, Wort-Marathon, Lückensätze, Sätze aus den Texten.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "Wer passt zu wem?",
+   "vorschau": "🧩",
+   "karten": [
+    {
+     "typ": "zuordnen",
+     "titel": "Wie bleibt man verbunden?",
+     "text": "Fünf Menschen wollen die persische Sprache pflegen oder den Kontakt halten. Es gibt sieben Möglichkeiten.",
+     "frage": "Welches Angebot passt am besten? Tippe es an.",
+     "angebote": [
+      {
+       "titel": "Persischschule",
+       "emoji": "🏫",
+       "fa": "مدرسه‌ی فارسی شنبه‌ها: خواندن و نوشتن برای بچه‌های شش تا دوازده ساله.",
+       "de": "Persischschule samstags: Lesen und Schreiben für Kinder von 6 bis 12."
+      },
+      {
+       "titel": "Tandempartner",
+       "emoji": "🤝",
+       "fa": "تاندم: هفته‌ای یک بار با یک ایرانی در کافه؛ نیم ساعت فارسی، نیم ساعت آلمانی.",
+       "de": "Tandem: einmal pro Woche mit einer Iranerin oder einem Iraner im Café – halb Persisch, halb Deutsch."
+      },
+      {
+       "titel": "Podcast",
+       "emoji": "🎧",
+       "fa": "پادکست فارسی: داستان‌ها و گفتگوهای کوتاه برای گوش دادن در راه.",
+       "de": "Persischer Podcast: kurze Geschichten und Gespräche zum Hören unterwegs."
+      },
+      {
+       "titel": "Kinderbücher",
+       "emoji": "📚",
+       "fa": "کتاب‌های کودکانه‌ی دوزبانه با تصویرهای رنگی برای کتاب‌خوانی قبل از خواب.",
+       "de": "Zweisprachige Kinderbücher mit bunten Bildern zum Vorlesen vor dem Schlafen."
+      },
+      {
+       "titel": "Videoanruf",
+       "emoji": "📹",
+       "fa": "تماس تصویری هفتگی: یک قرار ثابت برای دیدن چهره‌ی خانواده.",
+       "de": "Wöchentlicher Videoanruf: ein fester Termin, um die Familie zu sehen."
+      },
+      {
+       "titel": "Kochkurs",
+       "emoji": "🍲",
+       "fa": "کلاس آشپزی ایرانی: غذاهای سنتی و کلمه‌های آشپزخانه را یاد بگیرید.",
+       "de": "Iranischer Kochkurs: traditionelle Gerichte und Küchenwörter lernen."
+      },
+      {
+       "titel": "Filmabend",
+       "emoji": "🎬",
+       "fa": "شب فیلم فارسی: هر ماه یک فیلم ایرانی با زیرنویس و گفتگو بعد از آن.",
+       "de": "Persischer Filmabend: jeden Monat ein iranischer Film mit Untertiteln und anschließendem Gespräch."
+      }
+     ],
+     "personen": [
+      {
+       "name": "Herr Rostami",
+       "emoji": "🚆",
+       "fa": "آقای رستمی هر روز دو ساعت با قطار به سر کار می‌رود و می‌خواهد در این وقت فارسی بشنود.",
+       "de": "Herr Rostami pendelt täglich zwei Stunden mit dem Zug und möchte in dieser Zeit Persisch hören.",
+       "richtig": 2
+      },
+      {
+       "name": "Familie Karimi",
+       "emoji": "👧",
+       "fa": "دختر خانواده‌ی کریمی نه سال دارد و فارسی حرف می‌زند، اما هنوز نمی‌تواند بنویسد.",
+       "de": "Die Tochter der Familie Karimi ist neun und spricht Persisch, kann es aber noch nicht schreiben.",
+       "richtig": 0
+      },
+      {
+       "name": "Anna",
+       "emoji": "☕",
+       "fa": "آنا فارسی یاد می‌گیرد و دنبال کسی است که با او حرف بزند؛ در عوض به او آلمانی یاد می‌دهد.",
+       "de": "Anna lernt Persisch und sucht jemanden zum Reden – dafür bringt sie ihm oder ihr Deutsch bei.",
+       "richtig": 1
+      },
+      {
+       "name": "Neda",
+       "emoji": "👩‍🍳",
+       "fa": "ندا دلش برای دستپخت مادرش تنگ شده و می‌خواهد خودش قورمه‌سبزی درست کند.",
+       "de": "Neda vermisst die Küche ihrer Mutter und möchte selbst Ghormeh Sabzi kochen.",
+       "richtig": 5
+      },
+      {
+       "name": "Kian",
+       "emoji": "🎞️",
+       "fa": "کیان عاشق سینماست و می‌خواهد با فیلم‌های ایرانی فارسی‌اش را بهتر کند و با دیگران بحث کند.",
+       "de": "Kian liebt das Kino und will sein Persisch mit iranischen Filmen verbessern und mit anderen diskutieren.",
+       "richtig": 6
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Wort-Marathon",
+   "vorschau": "⏱️",
+   "karten": [
+    {
+     "typ": "tempo",
+     "titel": "Marathon: alle Wörter",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 120,
+     "ziel": 25,
+     "woerter": [
+      {
+       "fa": "اختلاف ساعت",
+       "a": "Zeitunterschied"
+      },
+      {
+       "fa": "تماس تصویری",
+       "a": "Videoanruf"
+      },
+      {
+       "fa": "بسته",
+       "a": "Paket"
+      },
+      {
+       "fa": "پست",
+       "a": "Post"
+      },
+      {
+       "fa": "خبر",
+       "a": "Nachricht, Neuigkeit"
+      },
+      {
+       "fa": "احوالپرسی",
+       "a": "Nachfragen nach dem Befinden"
+      },
+      {
+       "fa": "سوغاتی",
+       "a": "Mitbringsel"
+      },
+      {
+       "fa": "قطعی اینترنت",
+       "a": "Internetausfall"
+      },
+      {
+       "fa": "صدا",
+       "a": "Stimme, Ton"
+      },
+      {
+       "fa": "تصویر",
+       "a": "Bild"
+      },
+      {
+       "fa": "پیام صوتی",
+       "a": "Sprachnachricht"
+      },
+      {
+       "fa": "دلتنگی",
+       "a": "Sehnsucht, Heimweh"
+      },
+      {
+       "fa": "غربت",
+       "a": "Leben in der Fremde"
+      },
+      {
+       "fa": "نگران",
+       "a": "besorgt"
+      },
+      {
+       "fa": "امیدوار",
+       "a": "hoffnungsvoll"
+      },
+      {
+       "fa": "پشیمان",
+       "a": "reumütig, bereuend"
+      },
+      {
+       "fa": "حسرت",
+       "a": "Wehmut, Bedauern"
+      },
+      {
+       "fa": "آرزو",
+       "a": "Wunsch, Traum"
+      },
+      {
+       "fa": "دلگرمی",
+       "a": "Trost, Ermutigung"
+      },
+      {
+       "fa": "غم",
+       "a": "Kummer"
+      },
+      {
+       "fa": "احساس تعلق",
+       "a": "Zugehörigkeitsgefühl"
+      },
+      {
+       "fa": "غریبه",
+       "a": "Fremde/r"
+      },
+      {
+       "fa": "بی‌قرار",
+       "a": "unruhig"
+      },
+      {
+       "fa": "دوزبانه",
+       "a": "zweisprachig"
+      },
+      {
+       "fa": "زبان مادری",
+       "a": "Muttersprache"
+      },
+      {
+       "fa": "هویت",
+       "a": "Identität"
+      },
+      {
+       "fa": "ریشه",
+       "a": "Wurzel, Herkunft"
+      },
+      {
+       "fa": "نسل دوم",
+       "a": "zweite Generation"
+      },
+      {
+       "fa": "مدرسه‌ی فارسی",
+       "a": "Persischschule"
+      },
+      {
+       "fa": "لهجه",
+       "a": "Akzent, Dialekt"
+      },
+      {
+       "fa": "واژه",
+       "a": "Wort"
+      },
+      {
+       "fa": "مزیت",
+       "a": "Vorteil"
+      },
+      {
+       "fa": "پژوهش",
+       "a": "Forschung, Studie"
+      },
+      {
+       "fa": "مخلوط",
+       "a": "gemischt"
+      },
+      {
+       "fa": "فرهنگ",
+       "a": "Kultur"
+      },
+      {
+       "fa": "دلتنگ شدن",
+       "a": "Sehnsucht bekommen, vermissen"
+      },
+      {
+       "fa": "فرستادن",
+       "a": "schicken"
+      },
+      {
+       "fa": "عادت کردن",
+       "a": "sich gewöhnen"
+      },
+      {
+       "fa": "حفظ کردن",
+       "a": "bewahren; auswendig lernen"
+      },
+      {
+       "fa": "قاطی کردن",
+       "a": "(durch)mischen"
+      },
+      {
+       "fa": "برگشتن",
+       "a": "zurückkehren"
+      }
+     ]
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "زبان مادری",
+       "tr": "zabān-e mādarī",
+       "de": "Muttersprache",
+       "emoji": "👩‍👧"
+      },
+      {
+       "fa": "صدا",
+       "tr": "sedā",
+       "de": "Stimme, Ton",
+       "emoji": "🔊"
+      },
+      {
+       "fa": "اختلاف ساعت",
+       "tr": "echtelāf-e sāʿat",
+       "de": "Zeitunterschied",
+       "emoji": "⏰"
+      },
+      {
+       "fa": "نگران",
+       "tr": "negarān",
+       "de": "besorgt",
+       "emoji": "😟"
+      },
+      {
+       "fa": "فرهنگ",
+       "tr": "farhang",
+       "de": "Kultur",
+       "emoji": "🎭"
+      },
+      {
+       "fa": "بی‌قرار",
+       "tr": "bīgharār",
+       "de": "unruhig",
+       "emoji": "😣"
+      }
+     ],
+     "titel": "Memory"
+    },
+    {
+     "typ": "memory",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "آرزو",
+       "tr": "ārezū",
+       "de": "Wunsch, Traum",
+       "emoji": "🌠"
+      },
+      {
+       "fa": "خبر",
+       "tr": "chabar",
+       "de": "Nachricht, Neuigkeit",
+       "emoji": "📰"
+      },
+      {
+       "fa": "تماس تصویری",
+       "tr": "tamās-e tasvīrī",
+       "de": "Videoanruf",
+       "emoji": "📹"
+      },
+      {
+       "fa": "احساس تعلق",
+       "tr": "ehsās-e taʿallogh",
+       "de": "Zugehörigkeitsgefühl",
+       "emoji": "🏡"
+      },
+      {
+       "fa": "غربت",
+       "tr": "ghorbat",
+       "de": "Leben in der Fremde",
+       "emoji": "🧳"
+      },
+      {
+       "fa": "مدرسه‌ی فارسی",
+       "tr": "madrese-ye fārsī",
+       "de": "Persischschule",
+       "emoji": "🏫"
+      }
+     ],
+     "titel": "Memory: Wort & Bedeutung"
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "titel": "Lückensätze",
+   "vorschau": "___",
+   "karten": [
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>بین برلین و تهران در زمستان دو ساعت و نیم ___ است.</span><br><span class='mini'>Zwischen Berlin und Teheran gibt es im Winter zweieinhalb Stunden Zeitunterschied.</span>",
+       "optionen": [
+        "اختلاف ساعت",
+        "فرهنگ",
+        "احوالپرسی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>بین برلین و تهران در زمستان دو ساعت و نیم اختلاف ساعت است.</span>"
+      },
+      {
+       "frage": "<span class='fa'>مادرم برایم یک ___ پر از پسته و زعفران فرستاد.</span><br><span class='mini'>Meine Mutter hat mir ein Paket voller Pistazien und Safran geschickt.</span>",
+       "optionen": [
+        "بسته",
+        "پیام صوتی",
+        "زبان مادری"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>مادرم برایم یک بسته پر از پسته و زعفران فرستاد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>اینترنت ضعیف بود و ___ مادرم قطع و وصل می‌شد.</span><br><span class='mini'>Das Internet war schwach, und die Stimme meiner Mutter brach immer wieder ab.</span>",
+       "optionen": [
+        "صدا",
+        "مزیت",
+        "حسرت"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>اینترنت ضعیف بود و صدا مادرم قطع و وصل می‌شد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>در ماه‌های اول، ___ برایم خیلی سخت بود.</span><br><span class='mini'>In den ersten Monaten war das Leben in der Fremde sehr schwer für mich.</span>",
+       "optionen": [
+        "غربت",
+        "مخلوط",
+        "سوغاتی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>در ماه‌های اول، غربت برایم خیلی سخت بود.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>بچه‌های ما ___ هستند و هم آلمانی حرف می‌زنند، هم فارسی.</span><br><span class='mini'>Unsere Kinder sind zweisprachig und sprechen sowohl Deutsch als auch Persisch.</span>",
+       "optionen": [
+        "دوزبانه",
+        "پشیمان",
+        "هویت"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>بچه‌های ما دوزبانه هستند و هم آلمانی حرف می‌زنند، هم فارسی.</span>"
+      },
+      {
+       "frage": "<span class='fa'>شنبه‌ها پسرم به ___ می‌رود و خواندن و نوشتن یاد می‌گیرد.</span><br><span class='mini'>Samstags geht mein Sohn in die Persischschule und lernt Lesen und Schreiben.</span>",
+       "optionen": [
+        "مدرسه‌ی فارسی",
+        "امیدوار",
+        "آرزو"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>شنبه‌ها پسرم به مدرسه‌ی فارسی می‌رود و خواندن و نوشتن یاد می‌گیرد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>فارسی ___ من است، اما آلمانی را بهتر می‌نویسم.</span><br><span class='mini'>Persisch ist meine Muttersprache, aber Deutsch schreibe ich besser.</span>",
+       "optionen": [
+        "زبان مادری",
+        "مخلوط",
+        "خبر"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>فارسی زبان مادری من است، اما آلمانی را بهتر می‌نویسم.</span>"
+      },
+      {
+       "frage": "<span class='fa'>خیلی از جوان‌های ___ بین دو فرهنگ زندگی می‌کنند.</span><br><span class='mini'>Viele junge Leute der zweiten Generation leben zwischen zwei Kulturen.</span>",
+       "optionen": [
+        "نسل دوم",
+        "احساس تعلق",
+        "تصویر"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>خیلی از جوان‌های نسل دوم بین دو فرهنگ زندگی می‌کنند.</span>"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

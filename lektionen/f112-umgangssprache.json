@@ -1,0 +1,184 @@
+{
+ "id": "ug",
+ "art": "umgangssprache",
+ "titel": "Umgangssprache: So spricht man im Alltag",
+ "beschreibung": "Freiwilliger Extra-Teil: Umgangssprache.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "So spricht man",
+   "vorschau": "چنده؟",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Schrift ≠ Gespräch",
+     "text": "<ul><li><span class='fa'>است → ـه</span>: <span class='fa'>چند است؟ → چنده؟</span></li><li>Verbendungen werden kürzer: <span class='fa'>می‌دهید → می‌دین</span>, <span class='fa'>بدهید → بدین</span></li><li><span class='fa'>برای → واسه</span>: <span class='fa'>واسه شما</span> – für Sie (beliebter Verkäufer-Satz!)</li><li>Feilschen: <span class='fa'>آخرش چند؟</span> – Was ist Ihr letzter Preis?</li></ul>",
+     "stil": "merke"
+    },
+    {
+     "typ": "paare",
+     "links": "x",
+     "paare": [
+      {
+       "fa": "چند است؟",
+       "tr": "",
+       "de": "wie viel kostet es?",
+       "x": "چنده؟"
+      },
+      {
+       "fa": "تخفیف بدهید",
+       "tr": "",
+       "de": "geben Sie Rabatt",
+       "x": "تخفیف بدین"
+      },
+      {
+       "fa": "آخرین قیمت شما چیست؟",
+       "tr": "",
+       "de": "was ist Ihr letzter Preis?",
+       "x": "آخرش چند؟"
+      },
+      {
+       "fa": "می‌دهید",
+       "tr": "",
+       "de": "Sie geben",
+       "x": "می‌دین"
+      },
+      {
+       "fa": "برای شما",
+       "tr": "",
+       "de": "für Sie",
+       "x": "واسه شما"
+      }
+     ],
+     "titel": "Schrift ↔ Gespräch"
+    },
+    {
+     "typ": "sortieren",
+     "titel": "Schrift oder Gespräch?",
+     "frage": "Schriftsprache oder Umgangssprache?",
+     "kategorien": [
+      "✍️ Schriftsprache",
+      "🗣️ Umgangssprache"
+     ],
+     "items": [
+      {
+       "fa": "چند است؟",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "تخفیف بدهید",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "آخرین قیمت شما چیست؟",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "می‌دهید",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "برای شما",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "چنده؟",
+       "k": 1,
+       "say": false,
+       "e": "<i>tschande?</i> – geschrieben: <span class='fa'>چند است؟</span>"
+      },
+      {
+       "fa": "تخفیف بدین",
+       "k": 1,
+       "say": false,
+       "e": "<i>tachfīf bedīn</i> – geschrieben: <span class='fa'>تخفیف بدهید</span>"
+      },
+      {
+       "fa": "آخرش چند؟",
+       "k": 1,
+       "say": false,
+       "e": "<i>ācharesch tschand?</i> – geschrieben: <span class='fa'>آخرین قیمت شما چیست؟</span>"
+      },
+      {
+       "fa": "می‌دین",
+       "k": 1,
+       "say": false,
+       "e": "<i>mīdīn</i> – geschrieben: <span class='fa'>می‌دهید</span>"
+      },
+      {
+       "fa": "واسه شما",
+       "k": 1,
+       "say": false,
+       "e": "<i>wāse schomā</i> – geschrieben: <span class='fa'>برای شما</span>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Kurz-Dialog",
+   "vorschau": "💬",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Feilschen im Basar",
+     "text": "Umgangssprache! Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "آقا، این گلیم چنده؟",
+       "tr": "āghā, īn gelīm tschande?",
+       "de": "Entschuldigen Sie, was kostet dieser Kelim?"
+      },
+      {
+       "fa": "واسه شما، سه میلیون.",
+       "tr": "wāse schomā, se mīliyon.",
+       "de": "Für Sie: drei Millionen."
+      },
+      {
+       "fa": "خیلی گرونه! آخرش چند می‌دین؟",
+       "tr": "cheylī gerūne! ācharesch tschand mīdīn?",
+       "de": "Viel zu teuer! Was ist Ihr letzter Preis?"
+      },
+      {
+       "fa": "دو و نیم، دیگه نمی‌شه!",
+       "tr": "do o nīm, dīge nemīsche!",
+       "de": "Zweieinhalb – weniger geht nicht!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Verstanden?",
+     "fragen": [
+      {
+       "frage": "Wie viel verlangt der Verkäufer zuerst?",
+       "optionen": [
+        "drei Millionen",
+        "zweieinhalb Millionen",
+        "eine Million"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "<span class='fa'>واسه</span> =",
+       "optionen": [
+        "برای",
+        "با",
+        "از"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

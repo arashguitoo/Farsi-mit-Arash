@@ -1,0 +1,622 @@
+{
+ "id": "tx",
+ "art": "texte",
+ "titel": "Texte & Dialoge",
+ "beschreibung": "Lesetexte mit Fragen und Dialoge zum Ordnen.",
+ "stationen": [
+  {
+   "id": "t1",
+   "titel": "Alltag: KI am Abendbrottisch",
+   "vorschau": "KI am Abendbrottisch",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>نامرئی</span> – unsichtbar · <span class='fa'>قدم به قدم</span> – Schritt für Schritt · <span class='fa'>کلنجار رفتن</span> – sich abmühen · <span class='fa'>قابل شما را ندارد</span> – „nicht der Rede wert“ (Höflichkeitsformel) · <span class='fa'>پخش کردن</span> – abspielen · <span class='fa'>تشخیص</span> – Diagnose · <span class='fa'>تکراری</span> – monoton, sich wiederholend</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Alltag: KI am Abendbrottisch",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "خانواده‌ی توکلی هر شب ساعت هشت دور میز شام جمع می‌شوند، اما این روزها یک «مهمان» نامرئی هم سر میز هست: هوش مصنوعی.",
+       "tr": "chānewāde-ye tawakkolī har schab sāʿat-e hascht dour-e mīz-e schām dscham mīschawand, ammā īn rūzhā yek «mehmān»-e nāmarʾī ham sar-e mīz hast: hūsch-e masnūʿī.",
+       "de": "Familie Tavakoli versammelt sich jeden Abend um acht am Esstisch, aber in letzter Zeit sitzt auch ein unsichtbarer „Gast“ mit am Tisch: die KI."
+      },
+      {
+       "fa": "آرمان، پسر شانزده‌ساله‌ی خانواده، امشب خیلی راضی به نظر می‌رسد.",
+       "tr": "ārmān, pesar-e schānzdahsāle-ye chānewāde, emschab cheylī rāzī be nazar mīresad.",
+       "de": "Arman, der sechzehnjährige Sohn der Familie, wirkt heute Abend sehr zufrieden."
+      },
+      {
+       "fa": "مادرش می‌گوید: «تکلیف فیزیکت را اینقدر زود تمام کردی؟ باید باز از آن ربات گفتگو کمک گرفته باشی!»",
+       "tr": "mādarasch mīgūyad: «taklīf-e fīzīkat rā īnghadr zūd tamām kardī? bāyad bāz az ān robāt-e goftogū komak gerefte bāschī!»",
+       "de": "Seine Mutter sagt: „Du hast deine Physikhausaufgabe so schnell fertig? Du musst dir wieder von diesem Chatbot geholfen haben lassen!“"
+      },
+      {
+       "fa": "آرمان قبول می‌کند، اما توضیح می‌دهد که از ربات فقط خواسته بود مسئله را قدم به قدم برایش توضیح بدهد، نه اینکه جواب را بنویسد.",
+       "tr": "ārmān ghabūl mīkonad, ammā touzīh mīdahad ke az robāt faghat chāste būd masʾale rā gham be gham barāyasch touzīh bedahad, na īnke dschawāb rā benewīsad.",
+       "de": "Arman gibt es zu, erklärt aber, dass er den Bot nur gebeten hatte, ihm die Aufgabe Schritt für Schritt zu erklären, nicht die Lösung zu schreiben."
+      },
+      {
+       "fa": "پدرش، آقای توکلی، که در شرکتش با مشتری‌های آلمانی کار می‌کند، از برنامه‌ی ترجمه خیلی راضی است.",
+       "tr": "pedarasch, āghā-ye tawakkolī, ke dar scherkatasch bā moschtarīhā-ye ālmānī kār mīkonad, az barnāme-ye tardschome cheylī rāzī ast.",
+       "de": "Sein Vater, Herr Tavakoli, der in seiner Firma mit deutschen Kunden arbeitet, ist mit dem Übersetzungsprogramm sehr zufrieden."
+      },
+      {
+       "fa": "«قبلا برای هر ایمیل ساده نیم ساعت با فرهنگ لغت کلنجار می‌رفتم؛ حالا در چند ثانیه ترجمه‌اش را دارم.»",
+       "tr": "«ghablan barā-ye har īmeyl-e sāde nīm sāʿat bā farhang-e loghat kalandschār mīraftam; hālā dar tschand sāniye tardschomeasch rā dāram.»",
+       "de": "„Früher habe ich mich für jede einfache E-Mail eine halbe Stunde mit dem Wörterbuch abgemüht; jetzt habe ich die Übersetzung in wenigen Sekunden.“"
+      },
+      {
+       "fa": "اما هفته‌ی پیش برنامه جمله‌ی «قابل شما را ندارد» را کلمه به کلمه ترجمه کرده بود و مشتری آلمانی فکر کرده بود که لازم نیست پول بدهد.",
+       "tr": "ammā hafte-ye pīsch barnāme dschomle-ye «ghābel-e schomā rā nadārad» rā kalame be kalame tardschome karde būd o moschtarī-ye ālmānī fekr karde būd ke lāzem nīst pūl bedahad.",
+       "de": "Doch letzte Woche hatte das Programm die Höflichkeitsformel „Es ist Ihrer nicht würdig“ wörtlich übersetzt, und der deutsche Kunde hatte gedacht, er müsse nicht bezahlen."
+      },
+      {
+       "fa": "همه می‌خندند، حتی مادربزرگ، که تا چند ماه پیش از هر دستگاه جدیدی می‌ترسید.",
+       "tr": "hame mīchandand, hattā mādarbozorg, ke tā tschand māh pīsch az har dastgāh-e dschadīdī mītarsīd.",
+       "de": "Alle lachen, sogar Oma, die bis vor ein paar Monaten vor jedem neuen Gerät Angst hatte."
+      },
+      {
+       "fa": "حالا مادربزرگ هر صبح از دستیار صوتی‌اش می‌پرسد که هوا چطور است و از او می‌خواهد آهنگ‌های قدیمی پخش کند.",
+       "tr": "hālā mādarbozorg har sobh az dastyār-e soutīasch mīporsad ke hawā tschetour ast o az ū mīchāhad āhanghā-ye ghadīmī pachsch konad.",
+       "de": "Jetzt fragt Oma jeden Morgen ihren Sprachassistenten nach dem Wetter und bittet ihn, alte Lieder abzuspielen."
+      },
+      {
+       "fa": "او می‌گوید: «این خانم خیلی مؤدب است، فقط اسم خواننده‌های قدیمی را بلد نیست!»",
+       "tr": "ū mīgūyad: «īn chānom cheylī moʾaddab ast, faghat esm-e chānandehā-ye ghadīmī rā balad nīst!»",
+       "de": "Sie sagt: „Diese Dame ist sehr höflich, sie kennt nur die Namen der alten Sänger nicht!“"
+      },
+      {
+       "fa": "نازنین، دختر بزرگ خانواده که پزشکی می‌خواند، با خنده توضیح می‌دهد که دستیار صوتی احتمالا با آهنگ‌های جدید آموزش دیده است، نه با ترانه‌های پنجاه سال پیش.",
+       "tr": "nāzanīn, dochtar-e bozorg-e chānewāde ke pezeschkī mīchānad, bā chande touzīh mīdahad ke dastyār-e soutī ehtemālan bā āhanghā-ye dschadīd āmūzesch dīde ast, na bā tarānehā-ye pandschāh sāl pīsch.",
+       "de": "Nazanin, die ältere Tochter, die Medizin studiert, erklärt lachend, dass der Sprachassistent wahrscheinlich mit neuen Liedern trainiert wurde, nicht mit Schlagern von vor fünfzig Jahren."
+      },
+      {
+       "fa": "بحث وقتی جدی می‌شود که نازنین می‌پرسد: «ممکن است روزی هوش مصنوعی جای دکترها را بگیرد؟»",
+       "tr": "bahs waghtī dschedī mīschawad ke nāzanīn mīporsad: «momken ast rūzī hūsch-e masnūʿī dschā-ye doktorhā rā begīrad?»",
+       "de": "Ernst wird die Diskussion, als Nazanin fragt: „Kann es sein, dass KI eines Tages die Ärzte ersetzt?“"
+      },
+      {
+       "fa": "پدر فکر می‌کند که ماشین‌ها احتمالا در تشخیص بعضی بیماری‌ها از انسان دقیق‌تر خواهند شد.",
+       "tr": "pedar fekr mīkonad ke māschīnhā ehtemālan dar taschchīs-e baʿzī bīmārīhā az ensān daghīghtar chāhand schod.",
+       "de": "Der Vater meint, dass Maschinen bei der Diagnose mancher Krankheiten wahrscheinlich genauer werden als Menschen."
+      },
+      {
+       "fa": "اما مادر، که معلم است، می‌گوید که هیچ ماشینی نمی‌تواند دست بیمار را بگیرد یا به یک بچه‌ی ترسیده دلگرمی بدهد.",
+       "tr": "ammā mādar, ke moʿallem ast, mīgūyad ke hīdsch māschīnī nemītawānad dast-e bīmār rā begīrad yā be yek batschtsche-ye tarsīde delgarmī bedahad.",
+       "de": "Aber die Mutter, die Lehrerin ist, sagt, dass keine Maschine die Hand eines Kranken halten oder einem verängstigten Kind Mut machen kann."
+      },
+      {
+       "fa": "آرمان می‌گوید: «شاید هر دو درست بگویید؛ ماشین‌ها کارهای تکراری را بکنند تا آدم‌ها وقت بیشتری برای هم داشته باشند.»",
+       "tr": "ārmān mīgūyad: «schāyad har do dorost begūyīd; māschīnhā kārhā-ye tekrārī rā bokonand tā ādamhā waght-e bīschtarī barā-ye ham dāschte bāschand.»",
+       "de": "Arman sagt: „Vielleicht habt ihr beide recht; die Maschinen sollen die monotonen Arbeiten machen, damit die Menschen mehr Zeit füreinander haben.“"
+      },
+      {
+       "fa": "مادربزرگ بحث را تمام می‌کند: «هر چه می‌خواهید بگویید، اما هیچ ماشینی قورمه‌سبزی مرا درست نمی‌کند!»",
+       "tr": "mādarbozorg bahs rā tamām mīkonad: «har tsche mīchāhīd begūyīd, ammā hīdsch māschīnī ghormesabzī-ye marā dorost nemīkonad!»",
+       "de": "Oma beendet die Diskussion: „Sagt, was ihr wollt, aber keine Maschine kocht mein Ghormeh Sabzi!“"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "آرمان بدون هیچ کمکی تکلیفش را تمام کرد.",
+       "fest": true,
+       "erkl": "Er hat den <b>Chatbot</b> um Erklärungen gebeten."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "آقای توکلی با مشتری‌های آلمانی کار می‌کند.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "برنامه‌ی ترجمه همیشه درست ترجمه می‌کند.",
+       "fest": true,
+       "erkl": "Sie hat eine Höflichkeitsformel <b>wörtlich</b> und damit falsch übersetzt."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "مادربزرگ قبلا از دستگاه‌های جدید می‌ترسید.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "مادر فکر می‌کند ماشین‌ها نمی‌توانند به بیمار دلگرمی بدهند.",
+       "fest": true
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Worum bat Arman den Chatbot?",
+       "optionen": [
+        "die Aufgabe Schritt für Schritt zu erklären",
+        "die Lösung zu schreiben",
+        "eine E-Mail zu übersetzen"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was macht Oma jeden Morgen mit dem Sprachassistenten?",
+       "optionen": [
+        "nach dem Wetter fragen und alte Lieder hören",
+        "Nachrichten schreiben",
+        "einkaufen"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was studiert Nazanin?",
+       "optionen": [
+        "Medizin",
+        "Physik",
+        "Übersetzung"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was kann laut Oma keine Maschine?",
+       "optionen": [
+        "ihr Ghormeh Sabzi kochen",
+        "Musik spielen",
+        "das Wetter vorhersagen"
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "آرمان، پسر شانزده‌ساله‌ی خانواده، امشب خیلی راضی به نظر می‌رسد.",
+       "tr": "ārmān, pesar-e schānzdahsāle-ye chānewāde, emschab cheylī rāzī be nazar mīresad.",
+       "de": "Arman, der sechzehnjährige Sohn der Familie, wirkt heute Abend sehr zufrieden."
+      },
+      {
+       "fa": "مادرش می‌گوید: «تکلیف فیزیکت را اینقدر زود تمام کردی؟ باید باز از آن ربات گفتگو کمک گرفته باشی!»",
+       "tr": "mādarasch mīgūyad: «taklīf-e fīzīkat rā īnghadr zūd tamām kardī? bāyad bāz az ān robāt-e goftogū komak gerefte bāschī!»",
+       "de": "Seine Mutter sagt: „Du hast deine Physikhausaufgabe so schnell fertig? Du musst dir wieder von diesem Chatbot geholfen haben lassen!“"
+      },
+      {
+       "fa": "آرمان قبول می‌کند، اما توضیح می‌دهد که از ربات فقط خواسته بود مسئله را قدم به قدم برایش توضیح بدهد، نه اینکه جواب را بنویسد.",
+       "tr": "ārmān ghabūl mīkonad, ammā touzīh mīdahad ke az robāt faghat chāste būd masʾale rā gham be gham barāyasch touzīh bedahad, na īnke dschawāb rā benewīsad.",
+       "de": "Arman gibt es zu, erklärt aber, dass er den Bot nur gebeten hatte, ihm die Aufgabe Schritt für Schritt zu erklären, nicht die Lösung zu schreiben."
+      },
+      {
+       "fa": "پدرش، آقای توکلی، که در شرکتش با مشتری‌های آلمانی کار می‌کند، از برنامه‌ی ترجمه خیلی راضی است.",
+       "tr": "pedarasch, āghā-ye tawakkolī, ke dar scherkatasch bā moschtarīhā-ye ālmānī kār mīkonad, az barnāme-ye tardschome cheylī rāzī ast.",
+       "de": "Sein Vater, Herr Tavakoli, der in seiner Firma mit deutschen Kunden arbeitet, ist mit dem Übersetzungsprogramm sehr zufrieden."
+      },
+      {
+       "fa": "«قبلا برای هر ایمیل ساده نیم ساعت با فرهنگ لغت کلنجار می‌رفتم؛ حالا در چند ثانیه ترجمه‌اش را دارم.»",
+       "tr": "«ghablan barā-ye har īmeyl-e sāde nīm sāʿat bā farhang-e loghat kalandschār mīraftam; hālā dar tschand sāniye tardschomeasch rā dāram.»",
+       "de": "„Früher habe ich mich für jede einfache E-Mail eine halbe Stunde mit dem Wörterbuch abgemüht; jetzt habe ich die Übersetzung in wenigen Sekunden.“"
+      },
+      {
+       "fa": "اما هفته‌ی پیش برنامه جمله‌ی «قابل شما را ندارد» را کلمه به کلمه ترجمه کرده بود و مشتری آلمانی فکر کرده بود که لازم نیست پول بدهد.",
+       "tr": "ammā hafte-ye pīsch barnāme dschomle-ye «ghābel-e schomā rā nadārad» rā kalame be kalame tardschome karde būd o moschtarī-ye ālmānī fekr karde būd ke lāzem nīst pūl bedahad.",
+       "de": "Doch letzte Woche hatte das Programm die Höflichkeitsformel „Es ist Ihrer nicht würdig“ wörtlich übersetzt, und der deutsche Kunde hatte gedacht, er müsse nicht bezahlen."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t2",
+   "titel": "Hintergrund: Werden Maschinen Übersetzer ersetzen?",
+   "vorschau": "Werden Maschinen Übersetzer ersetzen?",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>مایه‌ی خنده</span> – Grund zum Lachen · <span class='fa'>ابزار</span> – Werkzeug · <span class='fa'>در دسترس</span> – verfügbar · <span class='fa'>سپردن</span> – anvertrauen · <span class='fa'>گره خوردن</span> – verknüpft sein · <span class='fa'>ابهام</span> – Mehrdeutigkeit · <span class='fa'>پیش‌نویس</span> – Entwurf · <span class='fa'>ویراستار</span> – Lektor/in · <span class='fa'>روح بخشیدن</span> – Leben einhauchen</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Hintergrund: Werden Maschinen Übersetzer ersetzen?",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "چند سال پیش، ترجمه‌ی ماشینی بیشتر مایه‌ی خنده بود تا ابزاری جدی.",
+       "tr": "tschand sāl pīsch, tardschome-ye māschīnī bīschtar māye-ye chande būd tā abzārī dschedī.",
+       "de": "Vor einigen Jahren war maschinelle Übersetzung eher ein Grund zum Lachen als ein ernsthaftes Werkzeug."
+      },
+      {
+       "fa": "امروز اما برنامه‌هایی که بر پایه‌ی هوش مصنوعی کار می‌کنند، متن‌های طولانی را در چند ثانیه و با کیفیتی شگفت‌انگیز ترجمه می‌کنند.",
+       "tr": "emrūz ammā barnāmehāyī ke bar pāye-ye hūsch-e masnūʿī kār mīkonand, matnhā-ye tūlānī rā dar tschand sāniye o bā keyfiyatī schegeftangīz tardschome mīkonand.",
+       "de": "Heute dagegen übersetzen KI-gestützte Programme lange Texte in wenigen Sekunden und in erstaunlicher Qualität."
+      },
+      {
+       "fa": "به همین دلیل، بسیاری می‌پرسند: آیا شغل مترجم به زودی از بین می‌رود؟",
+       "tr": "be hamīn dalīl, besyārī mīporsand: āyā schoghl-e motardschem be zūdī az beyn mīrawad?",
+       "de": "Deshalb fragen viele: Wird der Beruf des Übersetzers bald verschwinden?"
+      },
+      {
+       "fa": "از یک طرف، دلایل زیادی برای این نگرانی وجود دارد.",
+       "tr": "az yek taraf, dalāyel-e ziyādī barā-ye īn negarānī wodschūd dārad.",
+       "de": "Einerseits gibt es viele Gründe für diese Sorge."
+      },
+      {
+       "fa": "ماشین‌ها سریع، ارزان و همیشه در دسترس‌اند، در حالی که یک مترجم انسانی شاید برای همان متن چند روز وقت لازم داشته باشد.",
+       "tr": "māschīnhā sarīʿ, arzān o hamīsche dar dastras-and, dar hālī ke yek motardschem-e ensānī schāyad barā-ye hamān matn tschand rūz waght lāzem dāschte bāschad.",
+       "de": "Maschinen sind schnell, billig und immer verfügbar, während ein menschlicher Übersetzer für denselben Text vielleicht mehrere Tage braucht."
+      },
+      {
+       "fa": "علاوه بر این، برای متن‌های ساده و تکراری، مثل راهنمای دستگاه‌ها یا نامه‌های اداری، کیفیت ترجمه‌ی ماشینی اغلب کافی است.",
+       "tr": "ʿalāwe bar īn, barā-ye matnhā-ye sāde o tekrārī, mesl-e rāhnamā-ye dastgāhhā yā nāmehā-ye edārī, keyfiyat-e tardschome-ye māschīnī aghlab kāfī ast.",
+       "de": "Außerdem reicht die Qualität maschineller Übersetzung für einfache, wiederkehrende Texte wie Bedienungsanleitungen oder Behördenbriefe oft aus."
+      },
+      {
+       "fa": "گویا بعضی از شرکت‌ها همین حالا بخش بزرگی از ترجمه‌هایشان را به ماشین سپرده‌اند.",
+       "tr": "gūyā baʿzī az scherkathā hamīn hālā bachsch-e bozorgī az tardschomehāyeschān rā be māschīn seporde-and.",
+       "de": "Angeblich haben manche Firmen schon jetzt einen großen Teil ihrer Übersetzungen Maschinen anvertraut."
+      },
+      {
+       "fa": "از طرف دیگر، زبان فقط مجموعه‌ای از کلمه‌ها نیست، بلکه با فرهنگ، تاریخ و احساس گره خورده است.",
+       "tr": "az taraf-e dīgar, zabān faghat madschmūʿeī az kalamehā nīst, balke bā farhang, tārīch o ehsās gereh chorde ast.",
+       "de": "Andererseits ist Sprache nicht nur eine Sammlung von Wörtern, sondern mit Kultur, Geschichte und Gefühl verknüpft."
+      },
+      {
+       "fa": "ترجمه‌ی یک غزل حافظ را در نظر بگیرید: هر بیت چند معنا دارد و ظرافت آن در بازی با کلمه‌ها و صداهاست.",
+       "tr": "tardschome-ye yek ghazal-e hāfez rā dar nazar begīrīd: har beyt tschand maʿnā dārad o zerāfat-e ān dar bāzī bā kalamehā o sedāhāst.",
+       "de": "Denken Sie an die Übersetzung eines Ghasels von Hafis: Jeder Vers hat mehrere Bedeutungen, und seine Feinheit liegt im Spiel mit Wörtern und Klängen."
+      },
+      {
+       "fa": "ماشین احتمالا معنای ظاهری را درست منتقل می‌کند، اما ممکن است موسیقی و ابهام شعر را از دست بدهد.",
+       "tr": "māschīn ehtemālan maʿnā-ye zāherī rā dorost montaghel mīkonad, ammā momken ast mūsīghī o ebhām-e scheʿr rā az dast bedahad.",
+       "de": "Die Maschine überträgt wahrscheinlich die oberflächliche Bedeutung richtig, aber sie kann die Musik und die Mehrdeutigkeit des Gedichts verlieren."
+      },
+      {
+       "fa": "همین مشکل در طنز، تعارف و شوخی‌های فرهنگی هم دیده می‌شود.",
+       "tr": "hamīn moschkel dar tanz, taʿārof o schūchīhā-ye farhangī ham dīde mīschawad.",
+       "de": "Dasselbe Problem zeigt sich auch bei Humor, Höflichkeitsritualen und kulturellen Witzen."
+      },
+      {
+       "fa": "با این حال، نباید فراموش کرد که فناوری هر سال پیشرفت می‌کند و شاید روزی این محدودیت‌ها هم کمتر شوند.",
+       "tr": "bā īn hāl, nabāyad farāmūsch kard ke fannāwarī har sāl pīschraft mīkonad o schāyad rūzī īn mahdūdiyathā ham kamtar schawand.",
+       "de": "Dennoch darf man nicht vergessen, dass die Technik jedes Jahr Fortschritte macht und diese Grenzen vielleicht eines Tages kleiner werden."
+      },
+      {
+       "fa": "به عقیده‌ی من، آینده نه متعلق به ماشین است و نه فقط متعلق به انسان، بلکه متعلق به همکاری آنهاست.",
+       "tr": "be ʿaghīde-ye man, āyande na motaʿallegh be māschīn ast o na faghat motaʿallegh be ensān, balke motaʿallegh be hamkārī-ye ānhāst.",
+       "de": "Meiner Meinung nach gehört die Zukunft weder der Maschine noch nur dem Menschen, sondern ihrer Zusammenarbeit."
+      },
+      {
+       "fa": "در این آینده، ماشین پیش‌نویس اول را آماده می‌کند و مترجم، مثل یک ویراستار خلاق، آن را بازبینی می‌کند و به آن روح می‌بخشد.",
+       "tr": "dar īn āyande, māschīn pīschnewīs-e awwal rā āmāde mīkonad o motardschem, mesl-e yek wīrāstār-e challāgh, ān rā bāzbīnī mīkonad o be ān rūh mībachschad.",
+       "de": "In dieser Zukunft bereitet die Maschine den ersten Entwurf vor, und der Übersetzer überarbeitet ihn wie ein kreativer Lektor und haucht ihm Leben ein."
+      },
+      {
+       "fa": "در نتیجه، شغل مترجم از بین نمی‌رود، اما شکلش عوض می‌شود و مهارت‌های تازه‌ای می‌خواهد.",
+       "tr": "dar natīdsche, schoghl-e motardschem az beyn nemīrawad, ammā scheklasch ʿawaz mīschawad o mahārathā-ye tāzeī mīchāhad.",
+       "de": "Folglich verschwindet der Übersetzerberuf nicht, aber seine Form ändert sich, und er verlangt neue Fähigkeiten."
+      },
+      {
+       "fa": "نتیجه می‌گیریم که ماشین می‌تواند کلمه‌ها را ترجمه کند، اما فهمیدن یک انسان دیگر هنوز کاری انسانی است.",
+       "tr": "natīdsche mīgīrīm ke māschīn mītawānad kalamehā rā tardschome konad, ammā fahmīdan-e yek ensān-e dīgar hanūz kārī ensānī ast.",
+       "de": "Wir schließen daraus, dass eine Maschine Wörter übersetzen kann, einen anderen Menschen zu verstehen aber immer noch eine menschliche Aufgabe ist."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "چند سال پیش ترجمه‌ی ماشینی خیلی دقیق بود.",
+       "fest": true,
+       "erkl": "Sie war eher ein <b>Grund zum Lachen</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "ماشین‌ها از مترجم‌های انسانی سریع‌تر و ارزان‌ترند.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "به نظر نویسنده، زبان فقط مجموعه‌ای از کلمه‌هاست.",
+       "fest": true,
+       "erkl": "Sprache ist mit <b>Kultur, Geschichte und Gefühl</b> verknüpft."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "ترجمه‌ی شعر حافظ برای ماشین آسان است.",
+       "fest": true,
+       "erkl": "Die Maschine kann <b>Musik und Mehrdeutigkeit</b> verlieren."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "نویسنده فکر می‌کند آینده متعلق به همکاری انسان و ماشین است.",
+       "fest": true
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Für welche Texte reicht maschinelle Übersetzung oft aus?",
+       "optionen": [
+        "einfache, wiederkehrende Texte wie Bedienungsanleitungen",
+        "Gedichte",
+        "Witze"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was verliert eine Maschine bei Hafis möglicherweise?",
+       "optionen": [
+        "Musik und Mehrdeutigkeit",
+        "die Wörter",
+        "die Grammatik"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Welche Rolle hat der Übersetzer in Zukunft?",
+       "optionen": [
+        "kreativer Lektor, der den Entwurf überarbeitet",
+        "gar keine",
+        "Programmierer"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie ist der Text aufgebaut?",
+       "optionen": [
+        "Pro, Contra, eigene Meinung, Schluss",
+        "nur Pro-Argumente",
+        "als Erzählung"
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "امروز اما برنامه‌هایی که بر پایه‌ی هوش مصنوعی کار می‌کنند، متن‌های طولانی را در چند ثانیه و با کیفیتی شگفت‌انگیز ترجمه می‌کنند.",
+       "tr": "emrūz ammā barnāmehāyī ke bar pāye-ye hūsch-e masnūʿī kār mīkonand, matnhā-ye tūlānī rā dar tschand sāniye o bā keyfiyatī schegeftangīz tardschome mīkonand.",
+       "de": "Heute dagegen übersetzen KI-gestützte Programme lange Texte in wenigen Sekunden und in erstaunlicher Qualität."
+      },
+      {
+       "fa": "به همین دلیل، بسیاری می‌پرسند: آیا شغل مترجم به زودی از بین می‌رود؟",
+       "tr": "be hamīn dalīl, besyārī mīporsand: āyā schoghl-e motardschem be zūdī az beyn mīrawad?",
+       "de": "Deshalb fragen viele: Wird der Beruf des Übersetzers bald verschwinden?"
+      },
+      {
+       "fa": "از یک طرف، دلایل زیادی برای این نگرانی وجود دارد.",
+       "tr": "az yek taraf, dalāyel-e ziyādī barā-ye īn negarānī wodschūd dārad.",
+       "de": "Einerseits gibt es viele Gründe für diese Sorge."
+      },
+      {
+       "fa": "ماشین‌ها سریع، ارزان و همیشه در دسترس‌اند، در حالی که یک مترجم انسانی شاید برای همان متن چند روز وقت لازم داشته باشد.",
+       "tr": "māschīnhā sarīʿ, arzān o hamīsche dar dastras-and, dar hālī ke yek motardschem-e ensānī schāyad barā-ye hamān matn tschand rūz waght lāzem dāschte bāschad.",
+       "de": "Maschinen sind schnell, billig und immer verfügbar, während ein menschlicher Übersetzer für denselben Text vielleicht mehrere Tage braucht."
+      },
+      {
+       "fa": "علاوه بر این، برای متن‌های ساده و تکراری، مثل راهنمای دستگاه‌ها یا نامه‌های اداری، کیفیت ترجمه‌ی ماشینی اغلب کافی است.",
+       "tr": "ʿalāwe bar īn, barā-ye matnhā-ye sāde o tekrārī, mesl-e rāhnamā-ye dastgāhhā yā nāmehā-ye edārī, keyfiyat-e tardschome-ye māschīnī aghlab kāfī ast.",
+       "de": "Außerdem reicht die Qualität maschineller Übersetzung für einfache, wiederkehrende Texte wie Bedienungsanleitungen oder Behördenbriefe oft aus."
+      },
+      {
+       "fa": "گویا بعضی از شرکت‌ها همین حالا بخش بزرگی از ترجمه‌هایشان را به ماشین سپرده‌اند.",
+       "tr": "gūyā baʿzī az scherkathā hamīn hālā bachsch-e bozorgī az tardschomehāyeschān rā be māschīn seporde-and.",
+       "de": "Angeblich haben manche Firmen schon jetzt einen großen Teil ihrer Übersetzungen Maschinen anvertraut."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d1",
+   "titel": "Dialog: Vor der Debatte",
+   "vorschau": "Vor der Debatte",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Paul und Leila bereiten im Persischkurs eine Debatte zum Thema „KI in der Schule“ vor.</p>"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "پل: لیلا، برای مناظره‌ی فردا آماده‌ای؟ موضوعش «هوش مصنوعی در مدرسه» است.",
+       "tr": "leylā, barā-ye monāzere-ye fardā āmādeī? mouzūʿasch «hūsch-e masnūʿī dar madrese» ast.",
+       "de": "Leila, bist du bereit für die Debatte morgen? Das Thema ist „KI in der Schule“."
+      },
+      {
+       "fa": "لیلا: تقریبا. من موافقم: از یک طرف به دانش‌آموزها کمک می‌کند، از طرف دیگر معلم‌ها وقت بیشتری پیدا می‌کنند.",
+       "tr": "taghrīban. man mowāfegham: az yek taraf be dāneschāmūzhā komak mīkonad, az taraf-e dīgar moʿallemhā waght-e bīschtarī peydā mīkonand.",
+       "de": "Fast. Ich bin dafür: Einerseits hilft sie den Schülern, andererseits haben die Lehrer mehr Zeit."
+      },
+      {
+       "fa": "پل: با این حال، ممکن است بچه‌ها دیگر خودشان فکر نکنند.",
+       "tr": "bā īn hāl, momken ast batschtschehā dīgar chodeschān fekr nakonand.",
+       "de": "Dennoch kann es sein, dass die Kinder nicht mehr selbst denken."
+      },
+      {
+       "fa": "لیلا: درست است، ولی این به استفاده‌ی درست بستگی دارد، نه به خود فناوری.",
+       "tr": "dorost ast, walī īn be estefāde-ye dorost bastegī dārad, na be chod-e fannāwarī.",
+       "de": "Stimmt, aber das hängt vom richtigen Gebrauch ab, nicht von der Technik selbst."
+      },
+      {
+       "fa": "پل: راستی، استاد هنوز جواب ایمیلم را نداده. باید سرش خیلی شلوغ باشد.",
+       "tr": "rāstī, ostād hanūz dschawāb-e īmeylam rā nadāde. bāyad sarasch cheylī schologh bāschad.",
+       "de": "Übrigens, der Dozent hat meine E-Mail noch nicht beantwortet. Er muss sehr beschäftigt sein."
+      },
+      {
+       "fa": "لیلا: شاید هم ایمیلت به پوشه‌ی هرزنامه رفته باشد!",
+       "tr": "schāyad ham īmeylat be pūsche-ye harznāme rafte bāschad!",
+       "de": "Vielleicht ist deine E-Mail auch im Spam-Ordner gelandet!"
+      },
+      {
+       "fa": "پل: احتمالا! پس من نقش مخالف را بازی می‌کنم و تو نقش موافق را.",
+       "tr": "ehtemālan! pas man naghsch-e mochālef rā bāzī mīkonam o to naghsch-e mowāfegh rā.",
+       "de": "Wahrscheinlich! Dann spiele ich die Contra-Rolle und du die Pro-Rolle."
+      },
+      {
+       "fa": "لیلا: قبول! در نتیجه، فردا یک بحث داغ داریم!",
+       "tr": "ghabūl! dar natīdsche, fardā yek bahs-e dāgh dārīm!",
+       "de": "Abgemacht! Folglich haben wir morgen eine heiße Diskussion!"
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "پل: لیلا، برای مناظره‌ی فردا آماده‌ای؟ موضوعش «هوش مصنوعی در مدرسه» است.",
+       "tr": "leylā, barā-ye monāzere-ye fardā āmādeī? mouzūʿasch «hūsch-e masnūʿī dar madrese» ast.",
+       "de": "Leila, bist du bereit für die Debatte morgen? Das Thema ist „KI in der Schule“."
+      },
+      {
+       "fa": "لیلا: تقریبا. من موافقم: از یک طرف به دانش‌آموزها کمک می‌کند، از طرف دیگر معلم‌ها وقت بیشتری پیدا می‌کنند.",
+       "tr": "taghrīban. man mowāfegham: az yek taraf be dāneschāmūzhā komak mīkonad, az taraf-e dīgar moʿallemhā waght-e bīschtarī peydā mīkonand.",
+       "de": "Fast. Ich bin dafür: Einerseits hilft sie den Schülern, andererseits haben die Lehrer mehr Zeit."
+      },
+      {
+       "fa": "پل: با این حال، ممکن است بچه‌ها دیگر خودشان فکر نکنند.",
+       "tr": "bā īn hāl, momken ast batschtschehā dīgar chodeschān fekr nakonand.",
+       "de": "Dennoch kann es sein, dass die Kinder nicht mehr selbst denken."
+      },
+      {
+       "fa": "لیلا: درست است، ولی این به استفاده‌ی درست بستگی دارد، نه به خود فناوری.",
+       "tr": "dorost ast, walī īn be estefāde-ye dorost bastegī dārad, na be chod-e fannāwarī.",
+       "de": "Stimmt, aber das hängt vom richtigen Gebrauch ab, nicht von der Technik selbst."
+      },
+      {
+       "fa": "پل: راستی، استاد هنوز جواب ایمیلم را نداده. باید سرش خیلی شلوغ باشد.",
+       "tr": "rāstī, ostād hanūz dschawāb-e īmeylam rā nadāde. bāyad sarasch cheylī schologh bāschad.",
+       "de": "Übrigens, der Dozent hat meine E-Mail noch nicht beantwortet. Er muss sehr beschäftigt sein."
+      },
+      {
+       "fa": "لیلا: شاید هم ایمیلت به پوشه‌ی هرزنامه رفته باشد!",
+       "tr": "schāyad ham īmeylat be pūsche-ye harznāme rafte bāschad!",
+       "de": "Vielleicht ist deine E-Mail auch im Spam-Ordner gelandet!"
+      },
+      {
+       "fa": "پل: احتمالا! پس من نقش مخالف را بازی می‌کنم و تو نقش موافق را.",
+       "tr": "ehtemālan! pas man naghsch-e mochālef rā bāzī mīkonam o to naghsch-e mowāfegh rā.",
+       "de": "Wahrscheinlich! Dann spiele ich die Contra-Rolle und du die Pro-Rolle."
+      },
+      {
+       "fa": "لیلا: قبول! در نتیجه، فردا یک بحث داغ داریم!",
+       "tr": "ghabūl! dar natīdsche, fardā yek bahs-e dāgh dārīm!",
+       "de": "Abgemacht! Folglich haben wir morgen eine heiße Diskussion!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Was ist das Thema der Debatte?",
+       "optionen": [
+        "KI in der Schule",
+        "Übersetzer und Maschinen",
+        "Handys im Unterricht"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Welches Argument bringt Paul dagegen?",
+       "optionen": [
+        "Die Kinder denken vielleicht nicht mehr selbst.",
+        "KI ist zu teuer.",
+        "Lehrer verlieren ihre Arbeit."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was vermutet Leila über Pauls E-Mail?",
+       "optionen": [
+        "Sie ist im Spam-Ordner gelandet.",
+        "Sie wurde nie geschickt.",
+        "Der Dozent ist krank."
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

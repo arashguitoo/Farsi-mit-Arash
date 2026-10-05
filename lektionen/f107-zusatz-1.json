@@ -1,0 +1,483 @@
+{
+ "id": "z1",
+ "titel": "Trainingspaket 1",
+ "beschreibung": "Wer passt zu wem?, Wort-Marathon, Lückensätze, Sätze aus den Texten.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "Wer passt zu wem?",
+   "vorschau": "🧩",
+   "karten": [
+    {
+     "typ": "zuordnen",
+     "titel": "Welches Medium passt?",
+     "text": "Fünf Personen suchen ein passendes Medienangebot. Sieben Angebote stehen zur Auswahl.",
+     "frage": "Welches Angebot passt am besten? Tippe es an.",
+     "angebote": [
+      {
+       "titel": "Geschichts-Podcast",
+       "emoji": "🎧",
+       "fa": "پادکستی درباره‌ی تاریخ ایران؛ هر قسمت بیست دقیقه.",
+       "de": "Podcast über iranische Geschichte; jede Folge 20 Minuten."
+      },
+      {
+       "titel": "Nachrichten-Newsletter",
+       "emoji": "📧",
+       "fa": "خلاصه‌ی خبرهای روز، هر صبح ساعت هفت در ایمیل شما.",
+       "de": "Tägliche Nachrichtenübersicht, jeden Morgen um sieben per E-Mail."
+      },
+      {
+       "titel": "Faktencheck-Seite",
+       "emoji": "🔍",
+       "fa": "سایتی که خبرهای جعلی و شایعه‌های شبکه‌های اجتماعی را بررسی می‌کند.",
+       "de": "Website, die Falschmeldungen und Gerüchte aus sozialen Netzwerken prüft."
+      },
+      {
+       "titel": "Koch-Kanal",
+       "emoji": "🍲",
+       "fa": "کانال ویدیویی با دستور غذاهای ساده‌ی ایرانی.",
+       "de": "Videokanal mit einfachen iranischen Rezepten."
+      },
+      {
+       "titel": "Tastatur-App",
+       "emoji": "⌨️",
+       "fa": "برنامه‌ای برای تایپ فارسی روی گوشی، با تصحیح خودکار املا.",
+       "de": "App zum Persischtippen auf dem Handy, mit automatischer Rechtschreibkorrektur."
+      },
+      {
+       "titel": "Hörbücher",
+       "emoji": "📚",
+       "fa": "رمان‌های کلاسیک و جدید فارسی به صورت کتاب صوتی.",
+       "de": "Klassische und neue persische Romane als Hörbuch."
+      },
+      {
+       "titel": "Lokalzeitung",
+       "emoji": "🗞️",
+       "fa": "روزنامه‌ی چاپی شهر با خبرهای محله و آگهی‌ها.",
+       "de": "Gedruckte Stadtzeitung mit Nachrichten aus dem Viertel und Anzeigen."
+      }
+     ],
+     "personen": [
+      {
+       "name": "Herr Rostami",
+       "emoji": "👴",
+       "fa": "آقای رستمی گوشی هوشمند ندارد و دوست دارد صبح‌ها خبرهای محله‌اش را روی کاغذ بخواند.",
+       "de": "Herr Rostami hat kein Smartphone und liest morgens gern die Nachrichten aus seinem Viertel auf Papier.",
+       "richtig": 6
+      },
+      {
+       "name": "Leila",
+       "emoji": "🧐",
+       "fa": "لیلا همیشه شک دارد که خبرهایی که در اینستاگرام می‌بیند راست باشند یا نه.",
+       "de": "Leila zweifelt immer, ob die Nachrichten, die sie auf Instagram sieht, stimmen.",
+       "richtig": 2
+      },
+      {
+       "name": "Babak",
+       "emoji": "🚇",
+       "fa": "بابک هر روز یک ساعت در مترو است و می‌خواهد درباره‌ی گذشته‌ی ایران چیز یاد بگیرد؛ رمان دوست ندارد.",
+       "de": "Babak ist täglich eine Stunde in der U-Bahn und will etwas über Irans Vergangenheit lernen; Romane mag er nicht.",
+       "richtig": 0
+      },
+      {
+       "name": "Tina",
+       "emoji": "📱",
+       "fa": "تینا تازه خط فارسی را یاد گرفته و می‌خواهد به‌جای فینگلیش با الفبای فارسی پیام بدهد.",
+       "de": "Tina hat gerade die persische Schrift gelernt und will statt Finglisch mit persischem Alphabet schreiben.",
+       "richtig": 4
+      },
+      {
+       "name": "Frau Karimi",
+       "emoji": "💼",
+       "fa": "خانم کریمی وقت ندارد سایت‌های خبری را بگردد؛ می‌خواهد خبرهای مهم هر صبح خودشان به او برسند.",
+       "de": "Frau Karimi hat keine Zeit, Nachrichtenseiten zu durchsuchen; die wichtigen Nachrichten sollen jeden Morgen von selbst zu ihr kommen.",
+       "richtig": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Wort-Marathon",
+   "vorschau": "⏱️",
+   "karten": [
+    {
+     "typ": "tempo",
+     "titel": "Marathon: alle Wörter",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 120,
+     "ziel": 25,
+     "woerter": [
+      {
+       "fa": "پیام‌رسان",
+       "a": "Messenger"
+      },
+      {
+       "fa": "گروه خانوادگی",
+       "a": "Familiengruppe (im Chat)"
+      },
+      {
+       "fa": "پیام صوتی",
+       "a": "Sprachnachricht"
+      },
+      {
+       "fa": "استیکر",
+       "a": "Sticker"
+      },
+      {
+       "fa": "ایموجی",
+       "a": "Emoji"
+      },
+      {
+       "fa": "اعلان",
+       "a": "Benachrichtigung"
+      },
+      {
+       "fa": "عضو",
+       "a": "Mitglied"
+      },
+      {
+       "fa": "مدیر گروه",
+       "a": "Gruppenadmin"
+      },
+      {
+       "fa": "سوءتفاهم",
+       "a": "Missverständnis"
+      },
+      {
+       "fa": "پیام خصوصی",
+       "a": "Privatnachricht"
+      },
+      {
+       "fa": "بی‌صدا",
+       "a": "stummgeschaltet"
+      },
+      {
+       "fa": "آنلاین",
+       "a": "online"
+      },
+      {
+       "fa": "رسانه",
+       "a": "Medium"
+      },
+      {
+       "fa": "خبرگزاری",
+       "a": "Nachrichtenagentur"
+      },
+      {
+       "fa": "روزنامه",
+       "a": "Zeitung"
+      },
+      {
+       "fa": "پادکست",
+       "a": "Podcast"
+      },
+      {
+       "fa": "شبکه‌ی اجتماعی",
+       "a": "soziales Netzwerk"
+      },
+      {
+       "fa": "خبرنگار",
+       "a": "Journalist/in"
+      },
+      {
+       "fa": "تیتر",
+       "a": "Schlagzeile"
+      },
+      {
+       "fa": "شایعه",
+       "a": "Gerücht"
+      },
+      {
+       "fa": "خبر جعلی",
+       "a": "Falschmeldung"
+      },
+      {
+       "fa": "مخاطب",
+       "a": "Publikum, Adressat/in"
+      },
+      {
+       "fa": "معتبر",
+       "a": "glaubwürdig, seriös"
+      },
+      {
+       "fa": "خط",
+       "a": "Schrift"
+      },
+      {
+       "fa": "الفبا",
+       "a": "Alphabet"
+      },
+      {
+       "fa": "حروف لاتین",
+       "a": "lateinische Buchstaben"
+      },
+      {
+       "fa": "صفحه‌کلید",
+       "a": "Tastatur"
+      },
+      {
+       "fa": "فینگلیش",
+       "a": "Finglisch (Persisch in Lateinschrift)"
+      },
+      {
+       "fa": "املا",
+       "a": "Rechtschreibung"
+      },
+      {
+       "fa": "تلفظ",
+       "a": "Aussprache"
+      },
+      {
+       "fa": "واژه",
+       "a": "Wort"
+      },
+      {
+       "fa": "نسل جوان",
+       "a": "junge Generation"
+      },
+      {
+       "fa": "رسمی",
+       "a": "offiziell, förmlich"
+      },
+      {
+       "fa": "محاوره‌ای",
+       "a": "umgangssprachlich"
+      },
+      {
+       "fa": "فرهنگستان",
+       "a": "(Sprach-)Akademie"
+      },
+      {
+       "fa": "توضیح دادن",
+       "a": "erklären"
+      },
+      {
+       "fa": "ادعا کردن",
+       "a": "behaupten"
+      },
+      {
+       "fa": "قول دادن",
+       "a": "versprechen"
+      },
+      {
+       "fa": "فرستادن",
+       "a": "schicken"
+      },
+      {
+       "fa": "پاک کردن",
+       "a": "löschen"
+      },
+      {
+       "fa": "جواب دادن",
+       "a": "antworten"
+      }
+     ]
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "فرهنگستان",
+       "tr": "farhangestān",
+       "de": "(Sprach-)Akademie",
+       "emoji": "🏛️"
+      },
+      {
+       "fa": "مخاطب",
+       "tr": "mochāteb",
+       "de": "Publikum, Adressat/in",
+       "emoji": "👥"
+      },
+      {
+       "fa": "رسانه",
+       "tr": "resāne",
+       "de": "Medium",
+       "emoji": "📺"
+      },
+      {
+       "fa": "معتبر",
+       "tr": "moʿtabar",
+       "de": "glaubwürdig, seriös",
+       "emoji": "✅"
+      },
+      {
+       "fa": "آنلاین",
+       "tr": "ānlāyn",
+       "de": "online",
+       "emoji": "🟢"
+      },
+      {
+       "fa": "الفبا",
+       "tr": "alefbā",
+       "de": "Alphabet",
+       "emoji": "🔤"
+      }
+     ],
+     "titel": "Memory"
+    },
+    {
+     "typ": "memory",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "مدیر گروه",
+       "tr": "modīr-e gorūh",
+       "de": "Gruppenadmin",
+       "emoji": "🛡️"
+      },
+      {
+       "fa": "تیتر",
+       "tr": "tītr",
+       "de": "Schlagzeile",
+       "emoji": "🔠"
+      },
+      {
+       "fa": "خط",
+       "tr": "chatt",
+       "de": "Schrift",
+       "emoji": "🖋️"
+      },
+      {
+       "fa": "تلفظ",
+       "tr": "talaffoz",
+       "de": "Aussprache",
+       "emoji": "👄"
+      },
+      {
+       "fa": "پادکست",
+       "tr": "pādkast",
+       "de": "Podcast",
+       "emoji": "🎧"
+      },
+      {
+       "fa": "پیام صوتی",
+       "tr": "payām-e soutī",
+       "de": "Sprachnachricht",
+       "emoji": "🎙️"
+      }
+     ],
+     "titel": "Memory: Wort & Bedeutung"
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "titel": "Lückensätze",
+   "vorschau": "___",
+   "karten": [
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>عمه‌ام هر روز صبح در ___ عکس گل می‌فرستد.</span><br><span class='mini'>Meine Tante schickt jeden Morgen ein Blumenfoto in die Familiengruppe.</span>",
+       "optionen": [
+        "گروه خانوادگی",
+        "فینگلیش",
+        "الفبا"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>عمه‌ام هر روز صبح در گروه خانوادگی عکس گل می‌فرستد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>حوصله‌ی تایپ ندارم؛ برایت یک ___ می‌فرستم.</span><br><span class='mini'>Ich habe keine Lust zu tippen; ich schicke dir eine Sprachnachricht.</span>",
+       "optionen": [
+        "پیام صوتی",
+        "پیام خصوصی",
+        "فینگلیش"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>حوصله‌ی تایپ ندارم؛ برایت یک پیام صوتی می‌فرستم.</span>"
+      },
+      {
+       "frage": "<span class='fa'>گروه را ___ کردم، چون هر دقیقه صد پیام می‌آمد.</span><br><span class='mini'>Ich habe die Gruppe stummgeschaltet, weil jede Minute hundert Nachrichten kamen.</span>",
+       "optionen": [
+        "بی‌صدا",
+        "پیام خصوصی",
+        "خط"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>گروه را بی‌صدا کردم، چون هر دقیقه صد پیام می‌آمد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>این خبر را باور نکن؛ فقط یک ___ است.</span><br><span class='mini'>Glaub diese Nachricht nicht; das ist nur ein Gerücht.</span>",
+       "optionen": [
+        "شایعه",
+        "خبر جعلی",
+        "رسمی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>این خبر را باور نکن؛ فقط یک شایعه است.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>هر روز در راه کار یک ___ درباره‌ی تاریخ گوش می‌دهم.</span><br><span class='mini'>Jeden Tag höre ich auf dem Weg zur Arbeit einen Podcast über Geschichte.</span>",
+       "optionen": [
+        "پادکست",
+        "فرهنگستان",
+        "تیتر"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>هر روز در راه کار یک پادکست درباره‌ی تاریخ گوش می‌دهم.</span>"
+      },
+      {
+       "frage": "<span class='fa'>بیست سال پیش، خیلی از گوشی‌ها ___ فارسی نداشتند.</span><br><span class='mini'>Vor zwanzig Jahren hatten viele Handys keine persische Tastatur.</span>",
+       "optionen": [
+        "صفحه‌کلید",
+        "تلفظ",
+        "خبر جعلی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>بیست سال پیش، خیلی از گوشی‌ها صفحه‌کلید فارسی نداشتند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>نوشتن فارسی با حروف لاتین را ___ می‌گویند.</span><br><span class='mini'>Persisch in lateinischen Buchstaben zu schreiben nennt man Finglisch.</span>",
+       "optionen": [
+        "فینگلیش",
+        "گروه خانوادگی",
+        "صفحه‌کلید"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>نوشتن فارسی با حروف لاتین را فینگلیش می‌گویند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>پیامش را اشتباه فهمیدم و یک ___ بزرگ پیش آمد.</span><br><span class='mini'>Ich habe seine Nachricht falsch verstanden, und es gab ein großes Missverständnis.</span>",
+       "optionen": [
+        "سوءتفاهم",
+        "رسانه",
+        "ایموجی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>پیامش را اشتباه فهمیدم و یک سوءتفاهم بزرگ پیش آمد.</span>"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

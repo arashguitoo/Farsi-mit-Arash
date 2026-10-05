@@ -1,0 +1,685 @@
+{
+ "id": "z1",
+ "titel": "Trainingspaket 1",
+ "beschreibung": "Wer passt zu wem?, Wort-Marathon, Lückensätze, Sätze aus den Texten.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "Wer passt zu wem?",
+   "vorschau": "🧩",
+   "karten": [
+    {
+     "typ": "zuordnen",
+     "titel": "Welches Frühstück passt?",
+     "text": "Fünf Gäste in einem Teheraner Frühstückscafé – sieben Angebote auf der Karte.",
+     "frage": "Welches Angebot passt am besten? Tippe es an.",
+     "angebote": [
+      {
+       "titel": "Klassisch",
+       "emoji": "🧀",
+       "fa": "صبحانه‌ی سنتی: نان سنگک، پنیر، گردو، سبزی و چای.",
+       "de": "Traditionelles Frühstück: Sangak, Käse, Walnuss, Kräuter und Tee."
+      },
+      {
+       "titel": "Halim",
+       "emoji": "🥣",
+       "fa": "یک کاسه حلیم داغ با دارچین و شکر، مخصوص روزهای سرد.",
+       "de": "Eine Schüssel heißes Halim mit Zimt und Zucker, ideal für kalte Tage."
+      },
+      {
+       "titel": "Westlich",
+       "emoji": "🥐",
+       "fa": "کروسان، قهوه و آب پرتقال.",
+       "de": "Croissant, Kaffee und Orangensaft."
+      },
+      {
+       "titel": "Omelett",
+       "emoji": "🍳",
+       "fa": "املت گوجه‌فرنگی با نان تازه؛ پروتئین زیاد.",
+       "de": "Tomatenomelett mit frischem Brot; viel Protein."
+      },
+      {
+       "titel": "Vegan",
+       "emoji": "🥑",
+       "fa": "نان سبوس‌دار، آووکادو، خرما و چای سبز. بدون محصولات حیوانی.",
+       "de": "Vollkornbrot, Avocado, Datteln und grüner Tee. Ohne tierische Produkte."
+      },
+      {
+       "titel": "Süß",
+       "emoji": "🍯",
+       "fa": "نان با کره، عسل و مربای آلبالو.",
+       "de": "Brot mit Butter, Honig und Sauerkirschmarmelade."
+      },
+      {
+       "titel": "To go",
+       "emoji": "🥤",
+       "fa": "یک لقمه نان و پنیر و یک چای در لیوان کاغذی.",
+       "de": "Ein Brot-Käse-Happen und ein Tee im Pappbecher."
+      }
+     ],
+     "personen": [
+      {
+       "name": "Arian",
+       "emoji": "🏃",
+       "fa": "آرین ده دقیقه وقت دارد تا به مترو برسد.",
+       "de": "Arian hat zehn Minuten bis zur Metro.",
+       "richtig": 6
+      },
+      {
+       "name": "Sophie",
+       "emoji": "🌱",
+       "fa": "سوفی گیاه‌خوار مطلق است و هیچ محصول حیوانی نمی‌خورد.",
+       "de": "Sophie lebt vegan und isst keinerlei tierische Produkte.",
+       "richtig": 4
+      },
+      {
+       "name": "Herr Moradi",
+       "emoji": "❄️",
+       "fa": "آقای مرادی یک صبح سرد زمستانی بعد از کوه‌پیمایی، خیلی گرسنه است.",
+       "de": "Herr Moradi ist an einem kalten Wintermorgen nach dem Wandern sehr hungrig.",
+       "richtig": 1
+      },
+      {
+       "name": "Paul",
+       "emoji": "🇫🇷",
+       "fa": "پاول دلش برای صبحانه‌ی پاریسی تنگ شده است.",
+       "de": "Paul vermisst das Pariser Frühstück.",
+       "richtig": 2
+      },
+      {
+       "name": "Niloufar",
+       "emoji": "🏋️",
+       "fa": "نیلوفر بعد از باشگاه پروتئین زیادی لازم دارد.",
+       "de": "Niloufar braucht nach dem Fitnessstudio viel Protein.",
+       "richtig": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Wort-Marathon",
+   "vorschau": "⏱️",
+   "karten": [
+    {
+     "typ": "tempo",
+     "titel": "Marathon: alle Wörter",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 120,
+     "ziel": 25,
+     "woerter": [
+      {
+       "fa": "نان سنگک",
+       "a": "Steinofenbrot"
+      },
+      {
+       "fa": "نان بربری",
+       "a": "Barbari-Brot"
+      },
+      {
+       "fa": "نان لواش",
+       "a": "Lavasch (dünnes Brot)"
+      },
+      {
+       "fa": "پنیر",
+       "a": "Käse"
+      },
+      {
+       "fa": "گردو",
+       "a": "Walnuss"
+      },
+      {
+       "fa": "کره",
+       "a": "Butter"
+      },
+      {
+       "fa": "مربا",
+       "a": "Marmelade"
+      },
+      {
+       "fa": "عسل",
+       "a": "Honig"
+      },
+      {
+       "fa": "خرما",
+       "a": "Dattel"
+      },
+      {
+       "fa": "نیمرو",
+       "a": "Spiegelei"
+      },
+      {
+       "fa": "حلیم",
+       "a": "Weizen-Fleisch-Brei"
+      },
+      {
+       "fa": "عدسی",
+       "a": "Linsensuppe (zum Frühstück)"
+      },
+      {
+       "fa": "عادت",
+       "a": "Gewohnheit"
+      },
+      {
+       "fa": "همیشه",
+       "a": "immer"
+      },
+      {
+       "fa": "اغلب",
+       "a": "oft, meistens"
+      },
+      {
+       "fa": "معمولاً",
+       "a": "normalerweise"
+      },
+      {
+       "fa": "گاهی",
+       "a": "manchmal"
+      },
+      {
+       "fa": "به ندرت",
+       "a": "selten"
+      },
+      {
+       "fa": "هرگز",
+       "a": "nie"
+      },
+      {
+       "fa": "آخر هفته",
+       "a": "Wochenende"
+      },
+      {
+       "fa": "سحرخیز",
+       "a": "Frühaufsteher/in"
+      },
+      {
+       "fa": "شب‌زنده‌دار",
+       "a": "Nachteule"
+      },
+      {
+       "fa": "عجله",
+       "a": "Eile"
+      },
+      {
+       "fa": "سماور",
+       "a": "Samowar"
+      },
+      {
+       "fa": "قوری",
+       "a": "Teekanne"
+      },
+      {
+       "fa": "استکان",
+       "a": "Teeglas"
+      },
+      {
+       "fa": "قند",
+       "a": "Würfelzucker"
+      },
+      {
+       "fa": "نبات",
+       "a": "Kandiszucker"
+      },
+      {
+       "fa": "چای کم‌رنگ",
+       "a": "schwacher Tee"
+      },
+      {
+       "fa": "چای پررنگ",
+       "a": "starker Tee"
+      },
+      {
+       "fa": "سفره",
+       "a": "Tischtuch (am Boden), gedeckter Tisch"
+      },
+      {
+       "fa": "نانوایی",
+       "a": "Bäckerei"
+      },
+      {
+       "fa": "صف",
+       "a": "Schlange (Warteschlange)"
+      },
+      {
+       "fa": "تازه",
+       "a": "frisch"
+      },
+      {
+       "fa": "دم کردن",
+       "a": "(Tee) aufbrühen, ziehen lassen"
+      },
+      {
+       "fa": "صبحانه خوردن",
+       "a": "frühstücken"
+      },
+      {
+       "fa": "بیدار شدن",
+       "a": "aufwachen"
+      },
+      {
+       "fa": "عادت داشتن",
+       "a": "gewohnt sein, die Gewohnheit haben"
+      },
+      {
+       "fa": "صف کشیدن",
+       "a": "Schlange stehen"
+      },
+      {
+       "fa": "چیدن",
+       "a": "(Tisch) decken, anordnen"
+      }
+     ]
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "شب‌زنده‌دار",
+       "tr": "schabzendedār",
+       "de": "Nachteule",
+       "emoji": "🦉"
+      },
+      {
+       "fa": "عدسی",
+       "tr": "ʿadasī",
+       "de": "Linsensuppe (zum Frühstück)",
+       "emoji": "🍲"
+      },
+      {
+       "fa": "عادت",
+       "tr": "ʿādat",
+       "de": "Gewohnheit",
+       "emoji": "🔁"
+      },
+      {
+       "fa": "سحرخیز",
+       "tr": "saharchīz",
+       "de": "Frühaufsteher/in",
+       "emoji": "🌅"
+      },
+      {
+       "fa": "گاهی",
+       "tr": "gāhī",
+       "de": "manchmal",
+       "emoji": "🌗"
+      },
+      {
+       "fa": "چای پررنگ",
+       "tr": "tschāy-e porrang",
+       "de": "starker Tee",
+       "emoji": "☕"
+      }
+     ],
+     "titel": "Memory"
+    },
+    {
+     "typ": "memory",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "پنیر",
+       "tr": "panīr",
+       "de": "Käse",
+       "emoji": "🧀"
+      },
+      {
+       "fa": "کره",
+       "tr": "kare",
+       "de": "Butter",
+       "emoji": "🧈"
+      },
+      {
+       "fa": "حلیم",
+       "tr": "halīm",
+       "de": "Weizen-Fleisch-Brei",
+       "emoji": "🥣"
+      },
+      {
+       "fa": "گاهی",
+       "tr": "gāhī",
+       "de": "manchmal",
+       "emoji": "🌗"
+      },
+      {
+       "fa": "شب‌زنده‌دار",
+       "tr": "schabzendedār",
+       "de": "Nachteule",
+       "emoji": "🦉"
+      },
+      {
+       "fa": "نانوایی",
+       "tr": "nānwāyī",
+       "de": "Bäckerei",
+       "emoji": "🏪"
+      }
+     ],
+     "titel": "Memory: Wort & Bedeutung"
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "titel": "Lückensätze",
+   "vorschau": "___",
+   "karten": [
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>ایرانی‌ها صبحانه اغلب نان و ___ و گردو می‌خورند.</span><br><span class='mini'>Iraner essen zum Frühstück oft Brot, Käse und Walnüsse.</span>",
+       "optionen": [
+        "پنیر",
+        "نان لواش",
+        "سحرخیز"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>ایرانی‌ها صبحانه اغلب نان و پنیر و گردو می‌خورند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>پدرم هر روز صبح در ___ صف می‌کشد تا نان تازه بخرد.</span><br><span class='mini'>Mein Vater steht jeden Morgen in der Bäckerei Schlange, um frisches Brot zu kaufen.</span>",
+       "optionen": [
+        "نانوایی",
+        "نان بربری",
+        "تازه"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>پدرم هر روز صبح در نانوایی صف می‌کشد تا نان تازه بخرد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>چای را در ___ دم می‌کنند.</span><br><span class='mini'>Den Tee brüht man in der Teekanne auf.</span>",
+       "optionen": [
+        "قوری",
+        "شب‌زنده‌دار",
+        "چای کم‌رنگ"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>چای را در قوری دم می‌کنند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>مادربزرگم چای را با ___ می‌خورد، نه با شکر.</span><br><span class='mini'>Meine Großmutter trinkt Tee mit Würfelzucker, nicht mit Zucker.</span>",
+       "optionen": [
+        "قند",
+        "عادت",
+        "سفره"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>مادربزرگم چای را با قند می‌خورد، نه با شکر.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>من ___ هستم و ساعت پنج صبح بیدار می‌شوم.</span><br><span class='mini'>Ich bin Frühaufsteher und wache um fünf Uhr auf.</span>",
+       "optionen": [
+        "سحرخیز",
+        "عادت",
+        "تازه"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>من سحرخیز هستم و ساعت پنج صبح بیدار می‌شوم.</span>"
+      },
+      {
+       "frage": "<span class='fa'>برادرم ___ است و تا ساعت سه شب بیدار می‌ماند.</span><br><span class='mini'>Mein Bruder ist eine Nachteule und bleibt bis drei Uhr nachts wach.</span>",
+       "optionen": [
+        "شب‌زنده‌دار",
+        "عجله",
+        "اغلب"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>برادرم شب‌زنده‌دار است و تا ساعت سه شب بیدار می‌ماند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>در زمستان ___ داغ صبحانه‌ی خیلی خوبی است.</span><br><span class='mini'>Im Winter ist heiße Linsensuppe ein sehr gutes Frühstück.</span>",
+       "optionen": [
+        "عدسی",
+        "گاهی",
+        "نیمرو"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>در زمستان عدسی داغ صبحانه‌ی خیلی خوبی است.</span>"
+      },
+      {
+       "frage": "<span class='fa'>ما ___ صبح‌های جمعه حلیم می‌خوریم.</span><br><span class='mini'>Wir essen freitagmorgens normalerweise Halim.</span>",
+       "optionen": [
+        "معمولا",
+        "پنیر",
+        "حلیم"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>ما معمولا صبح‌های جمعه حلیم می‌خوریم.</span>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "e",
+   "titel": "Sätze aus den Texten",
+   "vorschau": "🧱",
+   "karten": [
+    {
+     "typ": "bauen",
+     "titel": "Baue den Satz",
+     "trenner": " ",
+     "woerter": [
+      {
+       "fa": "پسر کوچک‌تر، آرین، شب‌زنده‌دار است و صبح‌ها اصلاً حوصله ندارد.",
+       "tr": "pesar-e kūtschaktar, āriyan, schabzendedār ast o sobhhā aslan hosele nadārad.",
+       "de": "Der jüngere Sohn, Arian, ist eine Nachteule und hat morgens überhaupt keine Lust.",
+       "teile": [
+        "پسر",
+        "کوچک‌تر",
+        "آرین",
+        "شب‌زنده‌دار",
+        "است",
+        "و",
+        "صبح‌ها",
+        "اصلاً",
+        "حوصله",
+        "ندارد"
+       ],
+       "extra": [
+        "مثل"
+       ]
+      },
+      {
+       "fa": "روی سفره پنیر، گردو، کره، مربای آلبالو و خرما هست.",
+       "tr": "rū-ye sofre panīr, gerdū, kare, morabbā-ye ālbālū o chormā hast.",
+       "de": "Auf dem Tisch gibt es Käse, Walnüsse, Butter, Sauerkirschmarmelade und Datteln.",
+       "teile": [
+        "روی",
+        "سفره",
+        "پنیر",
+        "گردو",
+        "کره",
+        "مربای",
+        "آلبالو",
+        "و",
+        "خرما",
+        "هست"
+       ],
+       "extra": [
+        "طرفدار"
+       ]
+      },
+      {
+       "fa": "در زمستان، غذاهای گرم مثل حلیم و عدسی طرفدار زیادی دارد.",
+       "tr": "dar zemestān, ghazāhā-ye garm mesl-e halīm o ʿadasī tarafdār-e ziyādī dārad.",
+       "de": "Im Winter sind warme Speisen wie Halim und Linsensuppe sehr beliebt.",
+       "teile": [
+        "در",
+        "زمستان",
+        "غذاهای",
+        "گرم",
+        "مثل",
+        "حلیم",
+        "و",
+        "عدسی",
+        "طرفدار",
+        "زیادی",
+        "دارد"
+       ],
+       "extra": [
+        "آرین،"
+       ]
+      },
+      {
+       "fa": "آقای رحیمی مثل همیشه اول از همه بیدار می‌شود.",
+       "tr": "āghā-ye rahīmī mesl-e hamīsche awwal az hame bīdār mīschawad.",
+       "de": "Herr Rahimi wacht wie immer als Erster auf.",
+       "teile": [
+        "آقای",
+        "رحیمی",
+        "مثل",
+        "همیشه",
+        "اول",
+        "از",
+        "همه",
+        "بیدار",
+        "می‌شود"
+       ],
+       "extra": [
+        "گردو"
+       ]
+      },
+      {
+       "fa": "مادرش می‌گوید: «تا صبحانه نخوری، از خانه بیرون نمی‌روی!»",
+       "tr": "mādarasch mīgūyad: «tā sobhāne nachorī, az chāne bīrūn nemīravī!»",
+       "de": "Seine Mutter sagt: „Solange du nicht frühstückst, gehst du nicht aus dem Haus!“",
+       "teile": [
+        "مادرش",
+        "می‌گوید",
+        "«تا",
+        "صبحانه",
+        "نخوری",
+        "از",
+        "خانه",
+        "بیرون",
+        "نمی‌روی»"
+       ],
+       "extra": [
+        "ایرانی"
+       ]
+      },
+      {
+       "fa": "صبحانه در ایران معمولاً ساده است، اما بدون نان کامل نیست.",
+       "tr": "sobhāne dar īrān maʿmūlan sāde ast, ammā bedūn-e nān kāmel nīst.",
+       "de": "Das Frühstück in Iran ist meist einfach, aber ohne Brot ist es nicht vollständig.",
+       "teile": [
+        "صبحانه",
+        "در",
+        "ایران",
+        "معمولاً",
+        "ساده",
+        "است",
+        "اما",
+        "بدون",
+        "نان",
+        "کامل",
+        "نیست"
+       ],
+       "extra": [
+        "آقای"
+       ]
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Was bedeutet der Satz?",
+     "fragen": [
+      {
+       "frage": "„Das Frühstück in Iran ist meist einfach, aber ohne Brot ist es nicht vollständig.“",
+       "optionen": [
+        "صبحانه در ایران معمولاً ساده است، اما بدون نان کامل نیست.",
+        "ترکیب نان و پنیر و گردو شاید معروف‌ترین صبحانه‌ی ایرانی باشد.",
+        "در زمستان، غذاهای گرم مثل حلیم و عدسی طرفدار زیادی دارد."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Vor der Bäckerei ist eine lange Schlange; alle wollen heißes Sangak-Brot.“",
+       "optionen": [
+        "جلوی نانوایی صف طولانی است؛ همه نان سنگک داغ می‌خواهند.",
+        "در زمستان، غذاهای گرم مثل حلیم و عدسی طرفدار زیادی دارد.",
+        "مادرش می‌گوید: «تا صبحانه نخوری، از خانه بیرون نمی‌روی!»"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Herr Rahimi lacht: „Als ich Kind war, war ich genauso.““",
+       "optionen": [
+        "آقای رحیمی می‌خندد: «من هم بچه که بودم، همین‌طور بودم.»",
+        "کافه‌های جدید هم صبحانه‌ی «فرنگی» با قهوه و کروسان سرو می‌کنند.",
+        "صبحانه در ایران معمولاً ساده است، اما بدون نان کامل نیست."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Der jüngere Sohn, Arian, ist eine Nachteule und hat morgens überhaupt keine Lust.“",
+       "optionen": [
+        "پسر کوچک‌تر، آرین، شب‌زنده‌دار است و صبح‌ها اصلاً حوصله ندارد.",
+        "جلوی نانوایی صف طولانی است؛ همه نان سنگک داغ می‌خواهند.",
+        "آقای رحیمی می‌خندد: «من هم بچه که بودم، همین‌طور بودم.»"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Im Winter sind warme Speisen wie Halim und Linsensuppe sehr beliebt.“",
+       "optionen": [
+        "در زمستان، غذاهای گرم مثل حلیم و عدسی طرفدار زیادی دارد.",
+        "آقای رحیمی می‌خندد: «من هم بچه که بودم، همین‌طور بودم.»",
+        "ترکیب نان و پنیر و گردو شاید معروف‌ترین صبحانه‌ی ایرانی باشد."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Seine Mutter sagt: „Solange du nicht frühstückst, gehst du nicht aus dem Haus!““",
+       "optionen": [
+        "مادرش می‌گوید: «تا صبحانه نخوری، از خانه بیرون نمی‌روی!»",
+        "روی سفره پنیر، گردو، کره، مربای آلبالو و خرما هست.",
+        "کافه‌های جدید هم صبحانه‌ی «فرنگی» با قهوه و کروسان سرو می‌کنند."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

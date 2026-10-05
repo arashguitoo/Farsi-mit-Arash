@@ -1,0 +1,592 @@
+{
+ "id": "tx",
+ "art": "texte",
+ "titel": "Texte & Dialoge",
+ "beschreibung": "Lesetexte mit Fragen und Dialoge zum Ordnen.",
+ "stationen": [
+  {
+   "id": "t1",
+   "titel": "Alltag: Chaos im Gruppenchat",
+   "vorschau": "Chaos im Gruppenchat",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>شنیده شدن</span> – gehört werden · <span class='fa'>متأسف</span> – bedauernd · <span class='fa'>بی‌خبر از همه‌جا</span> – völlig ahnungslos · <span class='fa'>جلسه</span> – Besprechung · <span class='fa'>خوانده‌نشده</span> – ungelesen · <span class='fa'>منظور</span> – das Gemeinte · <span class='fa'>ترفیع</span> – Beförderung · <span class='fa'>نوشتاری</span> – schriftlich</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Alltag: Chaos im Gruppenchat",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "گروه خانوادگی ما در تلگرام چهل و سه عضو دارد و هیچ‌وقت ساکت نیست.",
+       "tr": "gorūh-e chānewādegī-ye mā dar telegrām tschehel o se ʿozw dārad o hītschwaght sāket nīst.",
+       "de": "Unsere Familiengruppe auf Telegram hat 43 Mitglieder und ist nie still."
+      },
+      {
+       "fa": "هر روز صبح، عمه مهین با یک عکس گل و یک استیکر «صبح بخیر» شروع می‌کند و بقیه با ده‌ها ایموجی جواب می‌دهند.",
+       "tr": "har rūz sobh, ʿamme mahīn bā yek ʿaks-e gol o yek estīker-e «sobh bechair» schorūʿ mīkonad o baghīye bā dahhā īmūdschī dschawāb mīdahand.",
+       "de": "Jeden Morgen beginnt Tante Mahin mit einem Blumenfoto und einem „Guten Morgen“-Sticker, und die anderen antworten mit Dutzenden Emojis."
+      },
+      {
+       "fa": "هفته‌ی پیش، پسرعمویم کاوه از توی مترو یک پیام صوتی کوتاه فرستاد.",
+       "tr": "hafte-ye pīsch, pesarʿamūyam kāwe az tū-ye metro yek payām-e soutī-ye kūtāh ferestād.",
+       "de": "Letzte Woche schickte mein Cousin Kaveh aus der U-Bahn eine kurze Sprachnachricht."
+      },
+      {
+       "fa": "مترو آن‌قدر شلوغ بود که فقط چند کلمه شنیده می‌شد: «… کارم … دیگر تمام شد …»",
+       "tr": "metro ānghadr schologh būd ke faghat tschand kalame schenīde mīschod: «… kāram … dīgar tamām schod …»",
+       "de": "Die U-Bahn war so laut, dass man nur ein paar Wörter hörte: „… meine Arbeit … ist jetzt vorbei …“"
+      },
+      {
+       "fa": "چند دقیقه بعد، خاله‌ام نوشت که خیلی متأسف است و پرسید که آیا کاوه به کمک احتیاج دارد.",
+       "tr": "tschand daghīghe baʿd, chāleam nevescht ke cheylī motaʾassef ast o porsīd ke āyā kāwe be komak ehtiyādsch dārad.",
+       "de": "Ein paar Minuten später schrieb meine Tante, es tue ihr sehr leid, und fragte, ob Kaveh Hilfe brauche."
+      },
+      {
+       "fa": "عمو جواد ادعا کرد که از اول می‌دانسته آن شرکت مشکل دارد.",
+       "tr": "ʿamū dschawād eddeʿā kard ke az awwal mīdānaste ān scherkat moschkel dārad.",
+       "de": "Onkel Djavad behauptete, er habe von Anfang an gewusst, dass die Firma Probleme hat."
+      },
+      {
+       "fa": "مادربزرگ هم یک پیام صوتی پنج‌دقیقه‌ای فرستاد و گفت که نگران نباشد، چون «کار همیشه پیدا می‌شود».",
+       "tr": "mādarbozorg ham yek payām-e soutī-ye pandschdaghīgheī ferestād o goft ke negarān nabāschad, tschūn «kār hamīsche peydā mīschawad».",
+       "de": "Oma schickte auch eine fünfminütige Sprachnachricht und sagte, er solle sich keine Sorgen machen, denn „Arbeit findet man immer“."
+      },
+      {
+       "fa": "در همین حال، کاوه بی‌خبر از همه‌جا گوشی‌اش را بی‌صدا کرده بود و در یک جلسه نشسته بود.",
+       "tr": "dar hamīn hāl, kāwe bīchabar az hamedschā gūschīasch rā bīsedā karde būd o dar yek dschalase neschaste būd.",
+       "de": "Währenddessen hatte Kaveh ahnungslos sein Handy stummgeschaltet und saß in einer Besprechung."
+      },
+      {
+       "fa": "وقتی دو ساعت بعد گروه را باز کرد، صد و بیست پیام خوانده‌نشده دید.",
+       "tr": "waghtī do sāʿat baʿd gorūh rā bāz kard, sad o bīst payām-e chāndenaschode dīd.",
+       "de": "Als er zwei Stunden später die Gruppe öffnete, sah er 120 ungelesene Nachrichten."
+      },
+      {
+       "fa": "اول فکر کرد که اتفاق بدی افتاده است، چون مادرش هم سه بار به او زنگ زده بود.",
+       "tr": "awwal fekr kard ke ettefāgh-e badī oftāde ast, tschūn mādarasch ham se bār be ū zang zade būd.",
+       "de": "Zuerst dachte er, etwas Schlimmes sei passiert, denn auch seine Mutter hatte ihn dreimal angerufen."
+      },
+      {
+       "fa": "بالاخره توضیح داد که منظورش چیز دیگری بوده است: «گفتم کار پروژه‌ام تمام شد – و ترفیع گرفتم!»",
+       "tr": "bālāchare touzīh dād ke manzūrasch tschīz-e dīgarī būde ast: «goftam kār-e prozheam tamām schod – o tarfīʿ gereftam!»",
+       "de": "Schließlich erklärte er, dass er etwas anderes gemeint hatte: „Ich sagte, mein Projekt ist fertig – und ich wurde befördert!“"
+      },
+      {
+       "fa": "گروه یک لحظه ساکت شد و بعد پر از استیکر خنده و تبریک شد.",
+       "tr": "gorūh yek lahze sāket schod o baʿd por az estīker-e chande o tabrīk schod.",
+       "de": "Die Gruppe war einen Moment still und füllte sich dann mit Lach- und Glückwunsch-Stickern."
+      },
+      {
+       "fa": "از آن روز، مدیر گروه از همه خواسته است که خبرهای مهم را نوشتاری بفرستند، نه صوتی.",
+       "tr": "az ān rūz, modīr-e gorūh az hame chāste ast ke chabarhā-ye mohem rā neweschtārī beferestand, na soutī.",
+       "de": "Seit diesem Tag bittet der Gruppenadmin alle, wichtige Nachrichten schriftlich zu schicken, nicht als Sprachnachricht."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "گروه خانوادگی بیش از چهل عضو دارد.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "کاوه پیامش را از خانه فرستاد.",
+       "fest": true,
+       "erkl": "Er schickte sie <b>aus der U-Bahn</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "خاله پرسید که آیا کاوه کمک لازم دارد.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "کاوه کارش را از دست داده بود.",
+       "fest": true,
+       "erkl": "Sein <b>Projekt</b> war fertig, und er wurde <b>befördert</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "مدیر گروه خواسته که خبرهای مهم نوشتاری باشند.",
+       "fest": true
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Wie beginnt Tante Mahin jeden Morgen?",
+       "optionen": [
+        "mit einem Blumenfoto und einem Sticker",
+        "mit einer Sprachnachricht",
+        "mit Nachrichten aus der Zeitung"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Warum war Kavehs Nachricht schwer zu verstehen?",
+       "optionen": [
+        "Die U-Bahn war sehr laut.",
+        "Er schrieb auf Finglisch.",
+        "Sein Handy war kaputt."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was machte Kaveh, während die Gruppe diskutierte?",
+       "optionen": [
+        "Er saß mit stummem Handy in einer Besprechung.",
+        "Er schlief.",
+        "Er fuhr Auto."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was war Kavehs eigentliche Nachricht?",
+       "optionen": [
+        "Sein Projekt ist fertig, und er wurde befördert.",
+        "Er hat gekündigt.",
+        "Er zieht ins Ausland."
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "هر روز صبح، عمه مهین با یک عکس گل و یک استیکر «صبح بخیر» شروع می‌کند و بقیه با ده‌ها ایموجی جواب می‌دهند.",
+       "tr": "har rūz sobh, ʿamme mahīn bā yek ʿaks-e gol o yek estīker-e «sobh bechair» schorūʿ mīkonad o baghīye bā dahhā īmūdschī dschawāb mīdahand.",
+       "de": "Jeden Morgen beginnt Tante Mahin mit einem Blumenfoto und einem „Guten Morgen“-Sticker, und die anderen antworten mit Dutzenden Emojis."
+      },
+      {
+       "fa": "هفته‌ی پیش، پسرعمویم کاوه از توی مترو یک پیام صوتی کوتاه فرستاد.",
+       "tr": "hafte-ye pīsch, pesarʿamūyam kāwe az tū-ye metro yek payām-e soutī-ye kūtāh ferestād.",
+       "de": "Letzte Woche schickte mein Cousin Kaveh aus der U-Bahn eine kurze Sprachnachricht."
+      },
+      {
+       "fa": "مترو آن‌قدر شلوغ بود که فقط چند کلمه شنیده می‌شد: «… کارم … دیگر تمام شد …»",
+       "tr": "metro ānghadr schologh būd ke faghat tschand kalame schenīde mīschod: «… kāram … dīgar tamām schod …»",
+       "de": "Die U-Bahn war so laut, dass man nur ein paar Wörter hörte: „… meine Arbeit … ist jetzt vorbei …“"
+      },
+      {
+       "fa": "چند دقیقه بعد، خاله‌ام نوشت که خیلی متأسف است و پرسید که آیا کاوه به کمک احتیاج دارد.",
+       "tr": "tschand daghīghe baʿd, chāleam nevescht ke cheylī motaʾassef ast o porsīd ke āyā kāwe be komak ehtiyādsch dārad.",
+       "de": "Ein paar Minuten später schrieb meine Tante, es tue ihr sehr leid, und fragte, ob Kaveh Hilfe brauche."
+      },
+      {
+       "fa": "عمو جواد ادعا کرد که از اول می‌دانسته آن شرکت مشکل دارد.",
+       "tr": "ʿamū dschawād eddeʿā kard ke az awwal mīdānaste ān scherkat moschkel dārad.",
+       "de": "Onkel Djavad behauptete, er habe von Anfang an gewusst, dass die Firma Probleme hat."
+      },
+      {
+       "fa": "مادربزرگ هم یک پیام صوتی پنج‌دقیقه‌ای فرستاد و گفت که نگران نباشد، چون «کار همیشه پیدا می‌شود».",
+       "tr": "mādarbozorg ham yek payām-e soutī-ye pandschdaghīgheī ferestād o goft ke negarān nabāschad, tschūn «kār hamīsche peydā mīschawad».",
+       "de": "Oma schickte auch eine fünfminütige Sprachnachricht und sagte, er solle sich keine Sorgen machen, denn „Arbeit findet man immer“."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t2",
+   "titel": "Hintergrund: Finglisch: Persisch in lateinischen Buchstaben",
+   "vorschau": "Finglisch: Persisch in lateinischen Buchstaben",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>شیوه</span> – Art und Weise · <span class='fa'>رایج شدن</span> – sich verbreiten · <span class='fa'>چاره</span> – Ausweg · <span class='fa'>قاعده</span> – Regel · <span class='fa'>منتقد</span> – Kritiker/in · <span class='fa'>آسیب زدن</span> – schaden · <span class='fa'>طرفدار</span> – Befürworter/in · <span class='fa'>ابزار</span> – Werkzeug · <span class='fa'>جایگزین</span> – Ersatz</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Hintergrund: Finglisch: Persisch in lateinischen Buchstaben",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "«salam, khubi? kojayi?» – شاید شما هم پیام‌هایی مثل این دیده باشید.",
+       "tr": "«salām, chūbī? kodschāyī?» – schāyad schomā ham payāmhāyī mesl-e īn dīde bāschīd.",
+       "de": "„salam, khubi? kojayi?“ – vielleicht haben auch Sie solche Nachrichten schon gesehen."
+      },
+      {
+       "fa": "این شیوه‌ی نوشتن را «فینگلیش» می‌نامند: نوشتن فارسی با حروف لاتین.",
+       "tr": "īn schīwe-ye neweschtan rā «fīnglīsch» mīnāmand: neweschtan-e fārsī bā horūf-e lātīn.",
+       "de": "Diese Schreibweise nennt man „Finglisch“: Persisch mit lateinischen Buchstaben schreiben."
+      },
+      {
+       "fa": "فینگلیش حدود بیست سال پیش رایج شد، وقتی که بیشتر گوشی‌ها و کامپیوترها صفحه‌کلید فارسی نداشتند.",
+       "tr": "fīnglīsch hodūd-e bīst sāl pīsch rāyedsch schod, waghtī ke bīschtar-e gūschīhā o kāmpyūterhā safhekelīd-e fārsī nadāschtand.",
+       "de": "Finglisch verbreitete sich vor etwa zwanzig Jahren, als die meisten Handys und Computer keine persische Tastatur hatten."
+      },
+      {
+       "fa": "ایرانیانی که در خارج زندگی می‌کردند هم برای چت با خانواده چاره‌ای جز فینگلیش نداشتند.",
+       "tr": "īrāniyānī ke dar chāredsch zendegī mīkardand ham barā-ye tschat bā chānewāde tschāreī dschoz fīnglīsch nadāschtand.",
+       "de": "Auch Iraner im Ausland hatten zum Chatten mit der Familie keine andere Wahl als Finglisch."
+      },
+      {
+       "fa": "در آن سال‌ها، حتی وبلاگ‌ها و ایمیل‌های زیادی به فینگلیش نوشته می‌شد.",
+       "tr": "dar ān sālhā, hattā weblāghā o īmeylhā-ye ziyādī be fīnglīsch neweschte mīschod.",
+       "de": "In jenen Jahren wurden sogar viele Blogs und E-Mails auf Finglisch geschrieben."
+      },
+      {
+       "fa": "امروز تقریبا همه‌ی گوشی‌ها فارسی دارند، اما فینگلیش هنوز از بین نرفته است.",
+       "tr": "emrūz taghrīban hame-ye gūschīhā fārsī dārand, ammā fīnglīsch hanūz az beyn narafte ast.",
+       "de": "Heute haben fast alle Handys Persisch, aber Finglisch ist noch nicht verschwunden."
+      },
+      {
+       "fa": "بعضی‌ها می‌گویند که با حروف لاتین سریع‌تر تایپ می‌کنند؛ بعضی دیگر فقط به آن عادت کرده‌اند.",
+       "tr": "baʿzīhā mīgūyand ke bā horūf-e lātīn sarīʿtar tāyp mīkonand; baʿzī dīgar faghat be ān ʿādat karde-and.",
+       "de": "Manche sagen, sie tippen mit lateinischen Buchstaben schneller; andere haben sich einfach daran gewöhnt."
+      },
+      {
+       "fa": "مشکل اینجاست که فینگلیش قاعده‌ی ثابتی ندارد: یکی «khoob» می‌نویسد، دیگری «khub» یا حتی «xub».",
+       "tr": "moschkel īndschāst ke fīnglīsch ghāʿede-ye sābetī nadārad: yekī «khoob» mīnewīsad, dīgarī «khub» yā hattā «xub».",
+       "de": "Das Problem ist, dass Finglisch keine festen Regeln hat: Einer schreibt „khoob“, ein anderer „khub“ oder sogar „xub“."
+      },
+      {
+       "fa": "به همین دلیل، سوءتفاهم زیاد پیش می‌آید؛ مثلا «shir» می‌تواند شیر خوردنی باشد، شیر آب یا شیر جنگل.",
+       "tr": "be hamīn dalīl, sūʾetafāhom ziyād pīsch mīāyad; masalan «shir» mītawānad schīr-e chordanī bāschad, schīr-e āb yā schīr-e dschangal.",
+       "de": "Deshalb kommt es oft zu Missverständnissen; „shir“ kann zum Beispiel Milch, Wasserhahn oder Löwe bedeuten."
+      },
+      {
+       "fa": "منتقدان، از جمله بعضی استادان زبان و ادبیات، ادعا می‌کنند که فینگلیش به املای فارسی جوانان آسیب می‌زند.",
+       "tr": "montaghedān, az dschomle baʿzī ostādān-e zabān o adabiyāt, eddeʿā mīkonand ke fīnglīsch be emlā-ye fārsī-ye dschawānān āsīb mīzanad.",
+       "de": "Kritiker, darunter einige Professoren für Sprache und Literatur, behaupten, Finglisch schade der persischen Rechtschreibung der Jugend."
+      },
+      {
+       "fa": "آنها می‌پرسند که آیا نسل جوان در آینده هنوز خط فارسی را درست خواهد نوشت.",
+       "tr": "ānhā mīporsand ke āyā nasl-e dschawān dar āyande hanūz chatt-e fārsī rā dorost chāhad nevescht.",
+       "de": "Sie fragen, ob die junge Generation in Zukunft die persische Schrift noch richtig schreiben wird."
+      },
+      {
+       "fa": "طرفداران فینگلیش اما توضیح می‌دهند که این فقط یک ابزار غیررسمی برای چت است، نه جایگزین خط فارسی.",
+       "tr": "tarafdārān-e fīnglīsch ammā touzīh mīdahand ke īn faghat yek abzār-e gheyrrasmī barā-ye tschat ast, na dschāygozīn-e chatt-e fārsī.",
+       "de": "Befürworter von Finglisch erklären jedoch, es sei nur ein informelles Chat-Werkzeug, kein Ersatz für die persische Schrift."
+      },
+      {
+       "fa": "شاید حقیقت جایی در وسط باشد: هر چه ابزارها بهتر می‌شوند، خط فارسی بیشتر به صفحه‌ها برمی‌گردد.",
+       "tr": "schāyad haghīghat dschāyī dar wasat bāschad: har tsche abzārhā behtar mīschawand, chatt-e fārsī bīschtar be safhehā barmīgardad.",
+       "de": "Vielleicht liegt die Wahrheit in der Mitte: Je besser die Werkzeuge werden, desto mehr kehrt die persische Schrift auf die Bildschirme zurück."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "فینگلیش یعنی نوشتن فارسی با حروف لاتین.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "فینگلیش امروز کاملا از بین رفته است.",
+       "fest": true,
+       "erkl": "Es ist <b>noch nicht verschwunden</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "فینگلیش قاعده‌ی ثابتی دارد.",
+       "fest": true,
+       "erkl": "Es hat <b>keine festen Regeln</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "کلمه‌ی «shir» می‌تواند چند معنی داشته باشد.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "طرفداران می‌گویند فینگلیش جای خط فارسی را می‌گیرد.",
+       "fest": true,
+       "erkl": "Es sei <b>kein Ersatz</b> für die persische Schrift."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Warum entstand Finglisch?",
+       "optionen": [
+        "Viele Geräte hatten keine persische Tastatur.",
+        "Persisch war in Chats nicht erlaubt.",
+        "Lehrer empfahlen es."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was ist ein Problem von Finglisch?",
+       "optionen": [
+        "Es gibt keine festen Regeln.",
+        "Es ist zu langsam.",
+        "Es ist zu teuer."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was befürchten die Kritiker?",
+       "optionen": [
+        "dass die Rechtschreibung der Jugend leidet",
+        "dass niemand mehr chattet",
+        "dass Englisch verschwindet"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie sehen die Befürworter Finglisch?",
+       "optionen": [
+        "als informelles Chat-Werkzeug",
+        "als neue offizielle Schrift",
+        "als Geheimsprache"
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "این شیوه‌ی نوشتن را «فینگلیش» می‌نامند: نوشتن فارسی با حروف لاتین.",
+       "tr": "īn schīwe-ye neweschtan rā «fīnglīsch» mīnāmand: neweschtan-e fārsī bā horūf-e lātīn.",
+       "de": "Diese Schreibweise nennt man „Finglisch“: Persisch mit lateinischen Buchstaben schreiben."
+      },
+      {
+       "fa": "فینگلیش حدود بیست سال پیش رایج شد، وقتی که بیشتر گوشی‌ها و کامپیوترها صفحه‌کلید فارسی نداشتند.",
+       "tr": "fīnglīsch hodūd-e bīst sāl pīsch rāyedsch schod, waghtī ke bīschtar-e gūschīhā o kāmpyūterhā safhekelīd-e fārsī nadāschtand.",
+       "de": "Finglisch verbreitete sich vor etwa zwanzig Jahren, als die meisten Handys und Computer keine persische Tastatur hatten."
+      },
+      {
+       "fa": "ایرانیانی که در خارج زندگی می‌کردند هم برای چت با خانواده چاره‌ای جز فینگلیش نداشتند.",
+       "tr": "īrāniyānī ke dar chāredsch zendegī mīkardand ham barā-ye tschat bā chānewāde tschāreī dschoz fīnglīsch nadāschtand.",
+       "de": "Auch Iraner im Ausland hatten zum Chatten mit der Familie keine andere Wahl als Finglisch."
+      },
+      {
+       "fa": "در آن سال‌ها، حتی وبلاگ‌ها و ایمیل‌های زیادی به فینگلیش نوشته می‌شد.",
+       "tr": "dar ān sālhā, hattā weblāghā o īmeylhā-ye ziyādī be fīnglīsch neweschte mīschod.",
+       "de": "In jenen Jahren wurden sogar viele Blogs und E-Mails auf Finglisch geschrieben."
+      },
+      {
+       "fa": "امروز تقریبا همه‌ی گوشی‌ها فارسی دارند، اما فینگلیش هنوز از بین نرفته است.",
+       "tr": "emrūz taghrīban hame-ye gūschīhā fārsī dārand, ammā fīnglīsch hanūz az beyn narafte ast.",
+       "de": "Heute haben fast alle Handys Persisch, aber Finglisch ist noch nicht verschwunden."
+      },
+      {
+       "fa": "بعضی‌ها می‌گویند که با حروف لاتین سریع‌تر تایپ می‌کنند؛ بعضی دیگر فقط به آن عادت کرده‌اند.",
+       "tr": "baʿzīhā mīgūyand ke bā horūf-e lātīn sarīʿtar tāyp mīkonand; baʿzī dīgar faghat be ān ʿādat karde-and.",
+       "de": "Manche sagen, sie tippen mit lateinischen Buchstaben schneller; andere haben sich einfach daran gewöhnt."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d1",
+   "titel": "Dialog: Was hat Oma gesagt?",
+   "vorschau": "Was hat Oma gesagt?",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Jonas sitzt mit seiner Freundin Mahsa im Café. Auf Mahsas Handy kommt eine lange Sprachnachricht an.</p>"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "یوناس: این پیام صوتی از کیست؟ چقدر طولانی است!",
+       "tr": "īn payām-e soutī az kīst? tscheghadr tūlānī ast!",
+       "de": "Von wem ist diese Sprachnachricht? Wie lang die ist!"
+      },
+      {
+       "fa": "مهسا: از مادربزرگم است. همیشه پیام‌های پنج‌دقیقه‌ای می‌فرستد!",
+       "tr": "az mādarbozorgam ast. hamīsche payāmhā-ye pandschdaghīgheī mīferestad!",
+       "de": "Von meiner Oma. Sie schickt immer Fünf-Minuten-Nachrichten!"
+      },
+      {
+       "fa": "یوناس: چه گفت؟ چیز مهمی بود؟",
+       "tr": "tsche goft? tschīz-e mohemmī būd?",
+       "de": "Was hat sie gesagt? War es etwas Wichtiges?"
+      },
+      {
+       "fa": "مهسا: گفت که جمعه همه را برای ناهار دعوت کرده و پرسید که آیا تو هم می‌آیی.",
+       "tr": "goft ke dschomʿe hame rā barā-ye nāhār daʿwat karde o porsīd ke āyā to ham mīāyī.",
+       "de": "Sie sagte, sie habe alle für Freitag zum Mittagessen eingeladen, und fragte, ob du auch kommst."
+      },
+      {
+       "fa": "یوناس: من؟ واقعا؟ چه خوب! دیگر چه گفت؟",
+       "tr": "man? wāgheʿan? tsche chūb! dīgar tsche goft?",
+       "de": "Ich? Wirklich? Wie schön! Was hat sie noch gesagt?"
+      },
+      {
+       "fa": "مهسا: گفت که شیرینی نخریم، چون خودش درست می‌کند. و از من خواست که «دستت درد نکند» را به تو یاد بدهم!",
+       "tr": "goft ke schīrīnī nacharīm, tschūn chodasch dorost mīkonad. o az man chāst ke «dastat dard nakonad» rā be to yād bedaham!",
+       "de": "Sie sagte, wir sollen kein Gebäck kaufen, weil sie selbst backt. Und sie bat mich, dir „Dastet dard nakone“ beizubringen!"
+      },
+      {
+       "fa": "یوناس: پس به او بگو که حتما می‌آیم و قول می‌دهم که همه‌ی غذا را بخورم.",
+       "tr": "pas be ū begū ke hatman mīāyam o ghoul mīdeham ke hame-ye ghazā rā bechoram.",
+       "de": "Dann sag ihr, dass ich auf jeden Fall komme, und ich verspreche, alles aufzuessen."
+      },
+      {
+       "fa": "مهسا: باشد، ولی خودت برایش پیام صوتی بفرست؛ خودش گفت که نوشته‌ها را حتی با عینک به‌سختی می‌خواند!",
+       "tr": "bāschad, walī chodat barāyasch payām-e soutī befrest; chodasch goft ke neweschtehā rā hattā bā ʿeynak besachtī mīchānad!",
+       "de": "Okay, aber schick ihr selbst eine Sprachnachricht; sie sagte, sie kann Geschriebenes sogar mit Brille kaum lesen!"
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "یوناس: این پیام صوتی از کیست؟ چقدر طولانی است!",
+       "tr": "īn payām-e soutī az kīst? tscheghadr tūlānī ast!",
+       "de": "Von wem ist diese Sprachnachricht? Wie lang die ist!"
+      },
+      {
+       "fa": "مهسا: از مادربزرگم است. همیشه پیام‌های پنج‌دقیقه‌ای می‌فرستد!",
+       "tr": "az mādarbozorgam ast. hamīsche payāmhā-ye pandschdaghīgheī mīferestad!",
+       "de": "Von meiner Oma. Sie schickt immer Fünf-Minuten-Nachrichten!"
+      },
+      {
+       "fa": "یوناس: چه گفت؟ چیز مهمی بود؟",
+       "tr": "tsche goft? tschīz-e mohemmī būd?",
+       "de": "Was hat sie gesagt? War es etwas Wichtiges?"
+      },
+      {
+       "fa": "مهسا: گفت که جمعه همه را برای ناهار دعوت کرده و پرسید که آیا تو هم می‌آیی.",
+       "tr": "goft ke dschomʿe hame rā barā-ye nāhār daʿwat karde o porsīd ke āyā to ham mīāyī.",
+       "de": "Sie sagte, sie habe alle für Freitag zum Mittagessen eingeladen, und fragte, ob du auch kommst."
+      },
+      {
+       "fa": "یوناس: من؟ واقعا؟ چه خوب! دیگر چه گفت؟",
+       "tr": "man? wāgheʿan? tsche chūb! dīgar tsche goft?",
+       "de": "Ich? Wirklich? Wie schön! Was hat sie noch gesagt?"
+      },
+      {
+       "fa": "مهسا: گفت که شیرینی نخریم، چون خودش درست می‌کند. و از من خواست که «دستت درد نکند» را به تو یاد بدهم!",
+       "tr": "goft ke schīrīnī nacharīm, tschūn chodasch dorost mīkonad. o az man chāst ke «dastat dard nakonad» rā be to yād bedaham!",
+       "de": "Sie sagte, wir sollen kein Gebäck kaufen, weil sie selbst backt. Und sie bat mich, dir „Dastet dard nakone“ beizubringen!"
+      },
+      {
+       "fa": "یوناس: پس به او بگو که حتما می‌آیم و قول می‌دهم که همه‌ی غذا را بخورم.",
+       "tr": "pas be ū begū ke hatman mīāyam o ghoul mīdeham ke hame-ye ghazā rā bechoram.",
+       "de": "Dann sag ihr, dass ich auf jeden Fall komme, und ich verspreche, alles aufzuessen."
+      },
+      {
+       "fa": "مهسا: باشد، ولی خودت برایش پیام صوتی بفرست؛ خودش گفت که نوشته‌ها را حتی با عینک به‌سختی می‌خواند!",
+       "tr": "bāschad, walī chodat barāyasch payām-e soutī befrest; chodasch goft ke neweschtehā rā hattā bā ʿeynak besachtī mīchānad!",
+       "de": "Okay, aber schick ihr selbst eine Sprachnachricht; sie sagte, sie kann Geschriebenes sogar mit Brille kaum lesen!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Von wem ist die Sprachnachricht?",
+       "optionen": [
+        "von Mahsas Oma",
+        "von Mahsas Chef",
+        "von Jonas’ Mutter"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was sollen sie nicht kaufen?",
+       "optionen": [
+        "Gebäck",
+        "Blumen",
+        "Getränke"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Warum soll Jonas eine Sprachnachricht schicken?",
+       "optionen": [
+        "Oma kann Geschriebenes kaum lesen.",
+        "Oma mag keine Sticker.",
+        "Oma hat kein Internet."
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

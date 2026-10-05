@@ -1,8 +1,8 @@
 {
  "id": "23",
- "titel": "Falls schon passiert – Bedingungen II",
+ "titel": "Falls schon passiert – Bedingungen II & ماضی التزامی",
  "titelFa": "جُملِه‌هایِ شَرطی ۲",
- "einleitung": "Reale Bedingungen mit Vergangenheitsbezug: اگر + Perfekt → Präsens, Futur oder Imperativ; اگر + Konjunktiv Vergangenheit (خریده باشم) → Präsens oder Futur. Dazu Vermutungen mit شاید und ممکن است – und Montag und Dienstag in der Geschichte von Minus Katze.",
+ "einleitung": "Reale Bedingungen mit Vergangenheitsbezug: اگر + Perfekt → Präsens, Futur oder Imperativ; اگر + Konjunktiv Vergangenheit (خریده باشم) → Präsens oder Futur. Der Konjunktiv Vergangenheit (ماضی التزامی: رفته باشد) mit allen wichtigen Verwendungen – auch تا فردا باید … کرده باشی, امیدوارم, بعید است. Dazu Vermutungen mit شاید und ممکن است – und Montag und Dienstag in der Geschichte von Minus Katze.",
  "stationen": [
   {
    "id": "s00",
@@ -1680,6 +1680,562 @@
    ]
   },
   {
+   "id": "s04b",
+   "titel": "ماضی التزامی – noch mehr Verwendungen",
+   "vorschau": "تا فَردا باید تَمام کَردِه باشی",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Der Konjunktiv Vergangenheit (ماضی التزامی)",
+     "text": "<p>Auf Persisch heißt diese Form <span class='fa'>ماضی التزامی</span>: <span class='fa'>رفته باشم، رفته باشی، رفته باشد …</span></p><p>Sie steht immer dort, wo der <b>normale Konjunktiv</b> stünde – aber die Handlung ist <b>schon abgeschlossen</b>:</p><ul><li><span class='fa'>اگر / شاید / ممکن است</span> – falls, vielleicht (s. vorige Stationen)</li><li><span class='fa'>تا … باید</span> + ماضی التزامی – <b>bis … muss … erledigt sein</b> (wie das deutsche Futur II)</li><li><span class='fa'>امیدوارم که</span> – ich hoffe, dass … (schon) …</li><li><span class='fa'>بعید است که / فکر نمی‌کنم که</span> – unwahrscheinlich, dass …</li><li><span class='fa'>لازم نیست که</span> – es ist nicht nötig, dass …</li></ul><p>⚠️ Nach <span class='fa'>خوشحالم که</span> steht für Tatsachen das <b>Perfekt</b>: <span class='fa'>خوشحالم که آمده‌ای.</span></p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "info",
+     "titel": "Beispiele",
+     "text": "<p>Tippe zum Hören:</p>",
+     "beispiele": [
+      {
+       "fa": "تا فردا باید کارت را تمام کرده باشی.",
+       "tr": "tā fardā bāyad kārat rā tamām karde bāschī.",
+       "de": "Bis morgen musst du deine Arbeit fertig haben.",
+       "emoji": "⏰"
+      },
+      {
+       "fa": "تا ساعت شش باید به خانه رسیده باشیم.",
+       "tr": "tā sāʿat-e schesch bāyad be chāne resīde bāschīm.",
+       "de": "Bis sechs Uhr müssen wir zu Hause angekommen sein.",
+       "emoji": "🏠"
+      },
+      {
+       "fa": "امیدوارم که امتحانت را خوب داده باشی.",
+       "tr": "omīdwāram ke emtehānat rā chūb dāde bāschī.",
+       "de": "Ich hoffe, du hast deine Prüfung gut geschrieben.",
+       "emoji": "📝"
+      },
+      {
+       "fa": "بعید است که او این کار را کرده باشد.",
+       "tr": "baʿīd ast ke ū īn kār rā karde bāschad.",
+       "de": "Es ist unwahrscheinlich, dass er/sie das getan hat.",
+       "emoji": "🤨"
+      },
+      {
+       "fa": "لازم نیست که کتاب را خوانده باشی.",
+       "tr": "lāzem nīst ke ketāb rā chānde bāschī.",
+       "de": "Du musst das Buch nicht gelesen haben.",
+       "emoji": "📖"
+      }
+     ]
+    },
+    {
+     "typ": "paare",
+     "links": "x",
+     "paare": [
+      {
+       "fa": "مَن",
+       "tr": "",
+       "de": "",
+       "x": "رِسیدِه باشَم"
+      },
+      {
+       "fa": "تو",
+       "tr": "",
+       "de": "",
+       "x": "رِسیدِه باشی"
+      },
+      {
+       "fa": "او",
+       "tr": "",
+       "de": "",
+       "x": "رِسیدِه باشَد"
+      },
+      {
+       "fa": "ما",
+       "tr": "",
+       "de": "",
+       "x": "رِسیدِه باشیم"
+      },
+      {
+       "fa": "شُما",
+       "tr": "",
+       "de": "",
+       "x": "رِسیدِه باشید"
+      },
+      {
+       "fa": "آنها",
+       "tr": "",
+       "de": "",
+       "x": "رِسیدِه باشَند"
+      }
+     ],
+     "titel": "ماضی التزامی: رسیدن"
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "تا فردا باید کارت را تمام کرده باشی.",
+       "tr": "tā fardā bāyad kārat rā tamām karde bāschī.",
+       "de": "Bis morgen musst du deine Arbeit fertig haben.",
+       "emoji": "⏰"
+      },
+      {
+       "fa": "تا ساعت شش باید به خانه رسیده باشیم.",
+       "tr": "tā sāʿat-e schesch bāyad be chāne resīde bāschīm.",
+       "de": "Bis sechs Uhr müssen wir zu Hause angekommen sein.",
+       "emoji": "🏠"
+      },
+      {
+       "fa": "امیدوارم که امتحانت را خوب داده باشی.",
+       "tr": "omīdwāram ke emtehānat rā chūb dāde bāschī.",
+       "de": "Ich hoffe, du hast deine Prüfung gut geschrieben.",
+       "emoji": "📝"
+      },
+      {
+       "fa": "بعید است که او این کار را کرده باشد.",
+       "tr": "baʿīd ast ke ū īn kār rā karde bāschad.",
+       "de": "Es ist unwahrscheinlich, dass er/sie das getan hat.",
+       "emoji": "🤨"
+      },
+      {
+       "fa": "لازم نیست که کتاب را خوانده باشی.",
+       "tr": "lāzem nīst ke ketāb rā chānde bāschī.",
+       "de": "Du musst das Buch nicht gelesen haben.",
+       "emoji": "📖"
+      }
+     ],
+     "titel": "Was bedeutet der Satz?"
+    },
+    {
+     "typ": "sortieren",
+     "titel": "Konjunktiv oder ماضی التزامی?",
+     "frage": "Noch offen – oder bis dahin schon abgeschlossen?",
+     "kategorien": [
+      "🔜 Konjunktiv (برود)",
+      "✔️ ماضی التزامی (رفته باشد)"
+     ],
+     "items": [
+      {
+       "fa": "امیدوارم فردا بیایی.",
+       "k": 0
+      },
+      {
+       "fa": "باید فردا کار را تمام کنی.",
+       "k": 0
+      },
+      {
+       "fa": "شاید بروم.",
+       "k": 0
+      },
+      {
+       "fa": "امیدوارم دیروز خوش گذشته باشد.",
+       "k": 1
+      },
+      {
+       "fa": "تا فردا باید کار را تمام کرده باشی.",
+       "k": 1
+      },
+      {
+       "fa": "شاید رفته باشد.",
+       "k": 1
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welche Form?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>تا فردا باید کارت را تمام کرده ___.</span><br><span class='mini'>Bis morgen musst du fertig sein.</span>",
+       "optionen": [
+        "باشی",
+        "بودی",
+        "هستی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>تا فردا باید کارت را تمام کرده باشی.</span>"
+      },
+      {
+       "frage": "<span class='fa'>امیدوارم که امتحانت را خوب ___ باشی.</span><br><span class='mini'>Ich hoffe, du hast die Prüfung gut geschrieben.</span>",
+       "optionen": [
+        "داده",
+        "بدهی",
+        "دادی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>امیدوارم که امتحانت را خوب داده باشی.</span>"
+      },
+      {
+       "frage": "<span class='fa'>بعید است که او این کار را کرده ___.</span><br><span class='mini'>Unwahrscheinlich, dass er das getan hat.</span>",
+       "optionen": [
+        "باشد",
+        "است",
+        "بود"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>بعید است که او این کار را کرده باشد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>خوشحالم که ___.</span><br><span class='mini'>Ich freue mich, dass du gekommen bist.</span>",
+       "optionen": [
+        "آمده‌ای",
+        "آمده باشی",
+        "بیایی بود"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>خوشحالم که آمده‌ای.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welcher Satz ist richtig?",
+     "fragen": [
+      {
+       "frage": "„Bis acht Uhr müssen wir angekommen sein.“",
+       "optionen": [
+        "تا ساعت هشت باید رسیده باشیم.",
+        "تا ساعت هشت باید رسیده بودیم.",
+        "تا ساعت هشت رسیده‌ایم."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Ich hoffe, ihr hattet eine schöne Reise.“",
+       "optionen": [
+        "امیدوارم سفر خوبی داشته باشید.",
+        "امیدوارم سفر خوبی داشته بودید.",
+        "امیدوارم سفر خوبی می‌داشتید."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "Wie heißt <span class='fa'>رفته باشد</span> grammatisch auf Persisch?",
+       "optionen": [
+        "ماضی التزامی",
+        "ماضی بعید",
+        "ماضی نقلی"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "„Ich freue mich, dass du gekommen bist.“ (Tatsache)",
+       "optionen": [
+        "خوشحالم که آمده‌ای.",
+        "خوشحالم که آمده باشی.",
+        "خوشحالم که آمده بودی."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: ماضی التزامی",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 60,
+     "ziel": 8,
+     "woerter": [
+      {
+       "fa": "تا فردا باید کارت را تمام کرده باشی.",
+       "a": "Bis morgen musst du deine Arbeit fertig haben."
+      },
+      {
+       "fa": "تا ساعت شش باید به خانه رسیده باشیم.",
+       "a": "Bis sechs Uhr müssen wir zu Hause angekommen sein."
+      },
+      {
+       "fa": "امیدوارم که امتحانت را خوب داده باشی.",
+       "a": "Ich hoffe, du hast deine Prüfung gut geschrieben."
+      },
+      {
+       "fa": "بعید است که او این کار را کرده باشد.",
+       "a": "Es ist unwahrscheinlich, dass er/sie das getan hat."
+      },
+      {
+       "fa": "لازم نیست که کتاب را خوانده باشی.",
+       "a": "Du musst das Buch nicht gelesen haben."
+      },
+      {
+       "fa": "اگر تا چهارشنبه چیزی نخریده باشی، می‌توانی در هدیه‌ی ما شریک شوی.",
+       "a": "Falls du bis Mittwoch nichts gekauft hast, kannst du dich an unserem Geschenk beteiligen."
+      },
+      {
+       "fa": "اگر کرونا گرفته باشد، من هم در خانه می‌مانم.",
+       "a": "Falls er/sie Corona hat, bleibe ich auch zu Hause."
+      },
+      {
+       "fa": "اگر تا ساعت هشت نرسیده باشند، بدون آنها شروع می‌کنیم.",
+       "a": "Falls sie bis acht Uhr nicht angekommen sind, fangen wir ohne sie an."
+      },
+      {
+       "fa": "اگر تا آخر ماه کار پیدا کرده باشم، یک جشن خواهم گرفت.",
+       "a": "Wenn ich bis Ende des Monats Arbeit gefunden habe, werde ich eine Party feiern."
+      },
+      {
+       "fa": "اگر قطار رفته باشد، با تاکسی می‌رویم.",
+       "a": "Falls der Zug schon weg ist, nehmen wir ein Taxi."
+      },
+      {
+       "fa": "ممکن است که تو هم کرونا گرفته باشی.",
+       "a": "Es kann sein, dass du dich auch angesteckt hast."
+      },
+      {
+       "fa": "شاید او هنوز به خانه نرسیده باشد.",
+       "a": "Vielleicht ist er/sie noch nicht zu Hause angekommen."
+      },
+      {
+       "fa": "فکر نمی‌کنم که او این را گفته باشد.",
+       "a": "Ich glaube nicht, dass er/sie das gesagt hat."
+      },
+      {
+       "fa": "امیدوارم که به شما خوش گذشته باشد.",
+       "a": "Ich hoffe, Sie hatten eine schöne Zeit."
+      },
+      {
+       "fa": "شاید کلیدم را در کلاس جا گذاشته باشم.",
+       "a": "Vielleicht habe ich meinen Schlüssel im Kurs liegen lassen."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s05b",
+   "titel": "Bedingungen I + II",
+   "vorschau": "بِخَری · خَریدی · خَریدِه‌ای · خَریدِه باشی",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Vier Formen nach اگر",
+     "text": "<table class='ktab'><tr><th>nach <span class='fa'>اگر</span></th><th>Beispiel</th><th>Bedeutung</th></tr><tr><td>Präsens</td><td><span class='fa'>می‌خری</span></td><td>wenn du (jetzt, immer) kaufst</td></tr><tr><td>Konjunktiv / Präteritum</td><td><span class='fa'>بخری / خریدی</span></td><td>wenn du (künftig) kaufst</td></tr><tr><td>Perfekt</td><td><span class='fa'>خریده‌ای</span></td><td>wenn du (schon) gekauft hast</td></tr><tr><td>Konj. Vergangenheit</td><td><span class='fa'>خریده باشی</span></td><td>falls du (bis dann) gekauft hast</td></tr></table><p>Allen gemeinsam: Die Bedingung ist <b>real</b> – sie kann wahr sein.</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "sortieren",
+     "titel": "Schon passiert oder noch nicht?",
+     "frage": "Bezieht sich die Bedingung auf etwas, das schon passiert ist?",
+     "kategorien": [
+      "🔜 noch nicht (Zukunft)",
+      "✔️ vielleicht schon passiert"
+     ],
+     "items": [
+      {
+       "fa": "اگر بخواهی …",
+       "k": 0
+      },
+      {
+       "fa": "اگر فردا آمدی …",
+       "k": 0
+      },
+      {
+       "fa": "اگر وقت داشته باشی …",
+       "k": 0
+      },
+      {
+       "fa": "اگر دیده‌ای …",
+       "k": 1
+      },
+      {
+       "fa": "اگر خریده باشی …",
+       "k": 1
+      },
+      {
+       "fa": "اگر رسیده‌ای …",
+       "k": 1
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welche Form?",
+     "fragen": [
+      {
+       "frage": "„Wenn du morgen kommst, …“",
+       "optionen": [
+        "اگر فردا بیایی، …",
+        "اگر فردا آمده‌ای، …",
+        "اگر فردا آمده بودی، …"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Wenn du den Film schon gesehen hast, …“",
+       "optionen": [
+        "اگر فیلم را دیده‌ای، …",
+        "اگر فیلم را ببینی، …",
+        "اگر فیلم را می‌بینی، …"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Falls sie bis acht nicht angekommen sind, …“",
+       "optionen": [
+        "اگر تا هشت نرسیده باشند، …",
+        "اگر تا هشت نرسند، …",
+        "اگر تا هشت نمی‌رسند، …"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Wenn es regnet, fahre ich mit dem Bus.“",
+       "optionen": [
+        "اگر باران می‌آید، با اتوبوس می‌روم.",
+        "اگر باران آمده باشد، با اتوبوس رفته بودم.",
+        "اگر باران آمده بود، با اتوبوس می‌روم."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    },
+    {
+     "typ": "paare",
+     "links": "x",
+     "paare": [
+      {
+       "fa": "مَن",
+       "tr": "",
+       "de": "",
+       "x": "بِخَرَم"
+      },
+      {
+       "fa": "تو",
+       "tr": "",
+       "de": "",
+       "x": "بِخَری"
+      },
+      {
+       "fa": "او",
+       "tr": "",
+       "de": "",
+       "x": "بِخَرَد"
+      },
+      {
+       "fa": "ما",
+       "tr": "",
+       "de": "",
+       "x": "بِخَریم"
+      },
+      {
+       "fa": "شُما",
+       "tr": "",
+       "de": "",
+       "x": "بِخَرید"
+      },
+      {
+       "fa": "آنها",
+       "tr": "",
+       "de": "",
+       "x": "بِخَرَند"
+      }
+     ],
+     "titel": "Konjunktiv: خریدن"
+    },
+    {
+     "typ": "wahl",
+     "titel": "Konjunktiv-Wiederholung",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>او ___</span> <span class='mini'>(kaufen)</span>",
+       "optionen": [
+        "بِخَرَد",
+        "بِخَرَند",
+        "بِخَرَم"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>او بِخَرَد</span> – <i>ū becharad</i>"
+      },
+      {
+       "frage": "<span class='fa'>آنها ___</span> <span class='mini'>(gehen, fahren)</span>",
+       "optionen": [
+        "بِرَوَند",
+        "بِرَوید",
+        "بِرَوَد"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>آنها بِرَوَند</span> – <i>ānhā berawand</i>"
+      },
+      {
+       "frage": "<span class='fa'>مَن ___</span> <span class='mini'>(sehen)</span>",
+       "optionen": [
+        "بِبینَم",
+        "بِبینَد",
+        "بِبینَند"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>مَن بِبینَم</span> – <i>man bebīnam</i>"
+      },
+      {
+       "frage": "<span class='fa'>ما ___</span> <span class='mini'>(kommen)</span>",
+       "optionen": [
+        "بیاییم",
+        "بیایَد",
+        "بیایید"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>ما بیاییم</span> – <i>mā biyāyīm</i>"
+      },
+      {
+       "frage": "<span class='fa'>ما ___</span> <span class='mini'>(kaufen)</span>",
+       "optionen": [
+        "بِخَریم",
+        "بِخَرید",
+        "بِخَرَند"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>ما بِخَریم</span> – <i>mā becharīm</i>"
+      },
+      {
+       "frage": "<span class='fa'>مَن ___</span> <span class='mini'>(gehen, fahren)</span>",
+       "optionen": [
+        "بِرَوَم",
+        "بِرَوی",
+        "بِرَوَند"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>مَن بِرَوَم</span> – <i>man berawam</i>"
+      }
+     ]
+    }
+   ]
+  },
+  {
    "id": "s05",
    "titel": "Die Geschichte geht weiter",
    "vorschau": "دوشَنبه · سه‌شَنبه",
@@ -1908,225 +2464,6 @@
         "Hausmeister/in"
        ],
        "richtig": 0
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "id": "s05b",
-   "titel": "Bedingungen I + II",
-   "vorschau": "بِخَری · خَریدی · خَریدِه‌ای · خَریدِه باشی",
-   "karten": [
-    {
-     "typ": "info",
-     "titel": "Vier Formen nach اگر",
-     "text": "<table class='ktab'><tr><th>nach <span class='fa'>اگر</span></th><th>Beispiel</th><th>Bedeutung</th></tr><tr><td>Präsens</td><td><span class='fa'>می‌خری</span></td><td>wenn du (jetzt, immer) kaufst</td></tr><tr><td>Konjunktiv / Präteritum</td><td><span class='fa'>بخری / خریدی</span></td><td>wenn du (künftig) kaufst</td></tr><tr><td>Perfekt</td><td><span class='fa'>خریده‌ای</span></td><td>wenn du (schon) gekauft hast</td></tr><tr><td>Konj. Vergangenheit</td><td><span class='fa'>خریده باشی</span></td><td>falls du (bis dann) gekauft hast</td></tr></table><p>Allen gemeinsam: Die Bedingung ist <b>real</b> – sie kann wahr sein.</p>",
-     "stil": "merke"
-    },
-    {
-     "typ": "sortieren",
-     "titel": "Schon passiert oder noch nicht?",
-     "frage": "Bezieht sich die Bedingung auf etwas, das schon passiert ist?",
-     "kategorien": [
-      "🔜 noch nicht (Zukunft)",
-      "✔️ vielleicht schon passiert"
-     ],
-     "items": [
-      {
-       "fa": "اگر بخواهی …",
-       "k": 0
-      },
-      {
-       "fa": "اگر فردا آمدی …",
-       "k": 0
-      },
-      {
-       "fa": "اگر وقت داشته باشی …",
-       "k": 0
-      },
-      {
-       "fa": "اگر دیده‌ای …",
-       "k": 1
-      },
-      {
-       "fa": "اگر خریده باشی …",
-       "k": 1
-      },
-      {
-       "fa": "اگر رسیده‌ای …",
-       "k": 1
-      }
-     ]
-    },
-    {
-     "typ": "wahl",
-     "titel": "Welche Form?",
-     "fragen": [
-      {
-       "frage": "„Wenn du morgen kommst, …“",
-       "optionen": [
-        "اگر فردا بیایی، …",
-        "اگر فردا آمده‌ای، …",
-        "اگر فردا آمده بودی، …"
-       ],
-       "richtig": 0,
-       "optFa": true,
-       "hoeren": false
-      },
-      {
-       "frage": "„Wenn du den Film schon gesehen hast, …“",
-       "optionen": [
-        "اگر فیلم را دیده‌ای، …",
-        "اگر فیلم را ببینی، …",
-        "اگر فیلم را می‌بینی، …"
-       ],
-       "richtig": 0,
-       "optFa": true,
-       "hoeren": false
-      },
-      {
-       "frage": "„Falls sie bis acht nicht angekommen sind, …“",
-       "optionen": [
-        "اگر تا هشت نرسیده باشند، …",
-        "اگر تا هشت نرسند، …",
-        "اگر تا هشت نمی‌رسند، …"
-       ],
-       "richtig": 0,
-       "optFa": true,
-       "hoeren": false
-      },
-      {
-       "frage": "„Wenn es regnet, fahre ich mit dem Bus.“",
-       "optionen": [
-        "اگر باران می‌آید، با اتوبوس می‌روم.",
-        "اگر باران آمده باشد، با اتوبوس رفته بودم.",
-        "اگر باران آمده بود، با اتوبوس می‌روم."
-       ],
-       "richtig": 0,
-       "optFa": true,
-       "hoeren": false
-      }
-     ]
-    },
-    {
-     "typ": "paare",
-     "links": "x",
-     "paare": [
-      {
-       "fa": "مَن",
-       "tr": "",
-       "de": "",
-       "x": "بِخَرَم"
-      },
-      {
-       "fa": "تو",
-       "tr": "",
-       "de": "",
-       "x": "بِخَری"
-      },
-      {
-       "fa": "او",
-       "tr": "",
-       "de": "",
-       "x": "بِخَرَد"
-      },
-      {
-       "fa": "ما",
-       "tr": "",
-       "de": "",
-       "x": "بِخَریم"
-      },
-      {
-       "fa": "شُما",
-       "tr": "",
-       "de": "",
-       "x": "بِخَرید"
-      },
-      {
-       "fa": "آنها",
-       "tr": "",
-       "de": "",
-       "x": "بِخَرَند"
-      }
-     ],
-     "titel": "Konjunktiv: خریدن"
-    },
-    {
-     "typ": "wahl",
-     "titel": "Konjunktiv-Wiederholung",
-     "fragen": [
-      {
-       "frage": "<span class='fa'>او ___</span> <span class='mini'>(kaufen)</span>",
-       "optionen": [
-        "بِخَرَد",
-        "بِخَرَند",
-        "بِخَرَم"
-       ],
-       "richtig": 0,
-       "optFa": true,
-       "hoeren": false,
-       "erkl": "<span class='fa'>او بِخَرَد</span> – <i>ū becharad</i>"
-      },
-      {
-       "frage": "<span class='fa'>آنها ___</span> <span class='mini'>(gehen, fahren)</span>",
-       "optionen": [
-        "بِرَوَند",
-        "بِرَوید",
-        "بِرَوَد"
-       ],
-       "richtig": 0,
-       "optFa": true,
-       "hoeren": false,
-       "erkl": "<span class='fa'>آنها بِرَوَند</span> – <i>ānhā berawand</i>"
-      },
-      {
-       "frage": "<span class='fa'>مَن ___</span> <span class='mini'>(sehen)</span>",
-       "optionen": [
-        "بِبینَم",
-        "بِبینَد",
-        "بِبینَند"
-       ],
-       "richtig": 0,
-       "optFa": true,
-       "hoeren": false,
-       "erkl": "<span class='fa'>مَن بِبینَم</span> – <i>man bebīnam</i>"
-      },
-      {
-       "frage": "<span class='fa'>ما ___</span> <span class='mini'>(kommen)</span>",
-       "optionen": [
-        "بیاییم",
-        "بیایَد",
-        "بیایید"
-       ],
-       "richtig": 0,
-       "optFa": true,
-       "hoeren": false,
-       "erkl": "<span class='fa'>ما بیاییم</span> – <i>mā biyāyīm</i>"
-      },
-      {
-       "frage": "<span class='fa'>ما ___</span> <span class='mini'>(kaufen)</span>",
-       "optionen": [
-        "بِخَریم",
-        "بِخَرید",
-        "بِخَرَند"
-       ],
-       "richtig": 0,
-       "optFa": true,
-       "hoeren": false,
-       "erkl": "<span class='fa'>ما بِخَریم</span> – <i>mā becharīm</i>"
-      },
-      {
-       "frage": "<span class='fa'>مَن ___</span> <span class='mini'>(gehen, fahren)</span>",
-       "optionen": [
-        "بِرَوَم",
-        "بِرَوی",
-        "بِرَوَند"
-       ],
-       "richtig": 0,
-       "optFa": true,
-       "hoeren": false,
-       "erkl": "<span class='fa'>مَن بِرَوَم</span> – <i>man berawam</i>"
       }
      ]
     }

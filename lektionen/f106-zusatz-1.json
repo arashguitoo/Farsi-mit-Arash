@@ -1,0 +1,621 @@
+{
+ "id": "z1",
+ "titel": "Trainingspaket 1",
+ "beschreibung": "Wer passt zu wem?, Wort-Marathon, Lückensätze, Sätze aus den Texten.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "Wer passt zu wem?",
+   "vorschau": "🧩",
+   "karten": [
+    {
+     "typ": "zuordnen",
+     "titel": "Was empfiehlt der Kräuterladen?",
+     "text": "Fünf Kundinnen und Kunden kommen in die Attari. Sieben Mittel stehen im Regal. (Traditionelle Empfehlungen – kein ärztlicher Rat!)",
+     "frage": "Welches Angebot passt am besten? Tippe es an.",
+     "angebote": [
+      {
+       "titel": "Borretsch",
+       "emoji": "🌸",
+       "fa": "گل گاوزبان: برای آرامش و خواب بهتر.",
+       "de": "Borretsch: für Ruhe und besseren Schlaf."
+      },
+      {
+       "titel": "Thymian",
+       "emoji": "🌿",
+       "fa": "آویشن: برای سرفه و سرماخوردگی.",
+       "de": "Thymian: bei Husten und Erkältung."
+      },
+      {
+       "titel": "Minze",
+       "emoji": "🌱",
+       "fa": "نعناع: برای دل‌درد و هضم غذا.",
+       "de": "Minze: bei Bauchschmerzen und für die Verdauung."
+      },
+      {
+       "titel": "Ingwer",
+       "emoji": "🫚",
+       "fa": "زنجبیل: گرم‌کننده، برای روزهای سرد زمستان.",
+       "de": "Ingwer: wärmend, für kalte Wintertage."
+      },
+      {
+       "titel": "Safran",
+       "emoji": "🌸",
+       "fa": "زعفران: برای شادی و انرژی.",
+       "de": "Safran: für gute Laune und Energie."
+      },
+      {
+       "titel": "Rosenwasser",
+       "emoji": "🌹",
+       "fa": "گلاب: برای پوست و بوی خوش.",
+       "de": "Rosenwasser: für die Haut und guten Duft."
+      },
+      {
+       "titel": "Honig mit Zitrone",
+       "emoji": "🍯",
+       "fa": "عسل و لیمو: برای گلودرد.",
+       "de": "Honig mit Zitrone: bei Halsschmerzen."
+      }
+     ],
+     "personen": [
+      {
+       "name": "Herr Amini",
+       "emoji": "😮‍💨",
+       "fa": "آقای امینی دو روز است سرفه می‌کند.",
+       "de": "Herr Amini hustet seit zwei Tagen.",
+       "richtig": 1
+      },
+      {
+       "name": "Sara",
+       "emoji": "🍽️",
+       "fa": "سارا بعد از یک مهمانی بزرگ، دل‌درد دارد.",
+       "de": "Sara hat nach einer großen Feier Bauchschmerzen.",
+       "richtig": 2
+      },
+      {
+       "name": "Nima",
+       "emoji": "🌙",
+       "fa": "نیما قبل از امتحان‌ها استرس دارد و نمی‌خوابد.",
+       "de": "Nima hat vor den Prüfungen Stress und schläft nicht.",
+       "richtig": 0
+      },
+      {
+       "name": "Frau Kazemi",
+       "emoji": "❄️",
+       "fa": "خانم کاظمی همیشه دست و پایش سرد است.",
+       "de": "Frau Kazemi hat immer kalte Hände und Füße.",
+       "richtig": 3
+      },
+      {
+       "name": "Mina",
+       "emoji": "🎤",
+       "fa": "مینا خواننده است و فردا کنسرت دارد، اما گلویش درد می‌کند.",
+       "de": "Mina ist Sängerin und hat morgen ein Konzert, aber Halsschmerzen.",
+       "richtig": 6
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Wort-Marathon",
+   "vorschau": "⏱️",
+   "karten": [
+    {
+     "typ": "tempo",
+     "titel": "Marathon: alle Wörter",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 120,
+     "ziel": 25,
+     "woerter": [
+      {
+       "fa": "نرمش",
+       "a": "Gymnastik, Dehnübungen"
+      },
+      {
+       "fa": "پیاده‌روی",
+       "a": "Spaziergang"
+      },
+      {
+       "fa": "دویدن",
+       "a": "Laufen"
+      },
+      {
+       "fa": "تای‌چی",
+       "a": "Tai-Chi"
+      },
+      {
+       "fa": "تناسب اندام",
+       "a": "Fitness"
+      },
+      {
+       "fa": "عضله",
+       "a": "Muskel"
+      },
+      {
+       "fa": "مفصل",
+       "a": "Gelenk"
+      },
+      {
+       "fa": "نفس",
+       "a": "Atem"
+      },
+      {
+       "fa": "گرم کردن بدن",
+       "a": "Aufwärmen"
+      },
+      {
+       "fa": "پارک",
+       "a": "Park"
+      },
+      {
+       "fa": "سالمند",
+       "a": "Senior/in"
+      },
+      {
+       "fa": "انرژی",
+       "a": "Energie"
+      },
+      {
+       "fa": "طب سنتی",
+       "a": "traditionelle Medizin"
+      },
+      {
+       "fa": "عطاری",
+       "a": "Kräuterladen"
+      },
+      {
+       "fa": "گیاه دارویی",
+       "a": "Heilpflanze"
+      },
+      {
+       "fa": "دمنوش",
+       "a": "Kräutertee"
+      },
+      {
+       "fa": "مزاج",
+       "a": "Temperament (Konstitution)"
+      },
+      {
+       "fa": "گرمی",
+       "a": "„Wärme“ (Speise)"
+      },
+      {
+       "fa": "سردی",
+       "a": "„Kälte“ (Speise)"
+      },
+      {
+       "fa": "زنجبیل",
+       "a": "Ingwer"
+      },
+      {
+       "fa": "آویشن",
+       "a": "Thymian"
+      },
+      {
+       "fa": "گل گاوزبان",
+       "a": "Borretschblüte"
+      },
+      {
+       "fa": "نعناع",
+       "a": "Minze"
+      },
+      {
+       "fa": "زعفران",
+       "a": "Safran"
+      },
+      {
+       "fa": "سلامتی",
+       "a": "Gesundheit"
+      },
+      {
+       "fa": "بیماری",
+       "a": "Krankheit"
+      },
+      {
+       "fa": "درمان",
+       "a": "Behandlung, Therapie"
+      },
+      {
+       "fa": "پیشگیری",
+       "a": "Vorbeugung"
+      },
+      {
+       "fa": "استرس",
+       "a": "Stress"
+      },
+      {
+       "fa": "بی‌خوابی",
+       "a": "Schlaflosigkeit"
+      },
+      {
+       "fa": "سیستم ایمنی",
+       "a": "Immunsystem"
+      },
+      {
+       "fa": "علمی",
+       "a": "wissenschaftlich"
+      },
+      {
+       "fa": "مؤثر",
+       "a": "wirksam"
+      },
+      {
+       "fa": "عوارض",
+       "a": "Nebenwirkungen"
+      },
+      {
+       "fa": "خنداندن",
+       "a": "zum Lachen bringen"
+      },
+      {
+       "fa": "رساندن",
+       "a": "hinbringen, überbringen"
+      },
+      {
+       "fa": "خواباندن",
+       "a": "schlafen legen"
+      },
+      {
+       "fa": "ترساندن",
+       "a": "erschrecken (jmdn.)"
+      },
+      {
+       "fa": "نشاندن",
+       "a": "hinsetzen (jmdn.)"
+      },
+      {
+       "fa": "پوشاندن",
+       "a": "anziehen (jmdn.), bedecken"
+      }
+     ]
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "طب سنتی",
+       "tr": "tebb-e sonnatī",
+       "de": "traditionelle Medizin",
+       "emoji": "🌿"
+      },
+      {
+       "fa": "عطاری",
+       "tr": "ʿattārī",
+       "de": "Kräuterladen",
+       "emoji": "🏪"
+      },
+      {
+       "fa": "گیاه دارویی",
+       "tr": "giyāh-e dārūyī",
+       "de": "Heilpflanze",
+       "emoji": "🌱"
+      },
+      {
+       "fa": "مفصل",
+       "tr": "mafsal",
+       "de": "Gelenk",
+       "emoji": "🦴"
+      },
+      {
+       "fa": "پیشگیری",
+       "tr": "pīschgīrī",
+       "de": "Vorbeugung",
+       "emoji": "🛡️"
+      },
+      {
+       "fa": "تای‌چی",
+       "tr": "tāytschī",
+       "de": "Tai-Chi",
+       "emoji": "🥋"
+      }
+     ],
+     "titel": "Memory"
+    },
+    {
+     "typ": "memory",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "عوارض",
+       "tr": "ʿawārez",
+       "de": "Nebenwirkungen",
+       "emoji": "⚠️"
+      },
+      {
+       "fa": "انرژی",
+       "tr": "enerzhī",
+       "de": "Energie",
+       "emoji": "⚡"
+      },
+      {
+       "fa": "عطاری",
+       "tr": "ʿattārī",
+       "de": "Kräuterladen",
+       "emoji": "🏪"
+      },
+      {
+       "fa": "بیماری",
+       "tr": "bīmārī",
+       "de": "Krankheit",
+       "emoji": "🤒"
+      },
+      {
+       "fa": "علمی",
+       "tr": "ʿelmī",
+       "de": "wissenschaftlich",
+       "emoji": "🔬"
+      },
+      {
+       "fa": "آویشن",
+       "tr": "āwīschan",
+       "de": "Thymian",
+       "emoji": "🌿"
+      }
+     ],
+     "titel": "Memory: Wort & Bedeutung"
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "titel": "Lückensätze",
+   "vorschau": "___",
+   "karten": [
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>هر روز صبح سالمندها در پارک ___ می‌کنند.</span><br><span class='mini'>Jeden Morgen machen die Senioren im Park Gymnastik.</span>",
+       "optionen": [
+        "نرمش",
+        "بی‌خوابی",
+        "گرم کردن بدن"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>هر روز صبح سالمندها در پارک نرمش می‌کنند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>برای سرماخوردگی، مادربزرگم ___ دم می‌کند.</span><br><span class='mini'>Gegen Erkältung brüht meine Oma Thymian auf.</span>",
+       "optionen": [
+        "آویشن",
+        "عوارض",
+        "مؤثر"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>برای سرماخوردگی، مادربزرگم آویشن دم می‌کند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>___ برای خواب آرام خوب است.</span><br><span class='mini'>Borretschblüte ist gut für einen ruhigen Schlaf.</span>",
+       "optionen": [
+        "گل گاوزبان",
+        "سردی",
+        "طب سنتی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>گل گاوزبان برای خواب آرام خوب است.</span>"
+      },
+      {
+       "frage": "<span class='fa'>در ___ همه نوع گیاه دارویی پیدا می‌شود.</span><br><span class='mini'>Im Kräuterladen findet man alle möglichen Heilpflanzen.</span>",
+       "optionen": [
+        "عطاری",
+        "بی‌خوابی",
+        "سیستم ایمنی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>در عطاری همه نوع گیاه دارویی پیدا می‌شود.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>به نظر طب سنتی، عسل ___ دارد و ماست سردی.</span><br><span class='mini'>Laut traditioneller Medizin ist Honig „warm“ und Joghurt „kalt“.</span>",
+       "optionen": [
+        "گرمی",
+        "مؤثر",
+        "عوارض"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>به نظر طب سنتی، عسل گرمی دارد و ماست سردی.</span>"
+      },
+      {
+       "frage": "<span class='fa'>___ بهتر از درمان است.</span><br><span class='mini'>Vorbeugen ist besser als heilen.</span>",
+       "optionen": [
+        "پیشگیری",
+        "بیماری",
+        "علمی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>پیشگیری بهتر از درمان است.</span>"
+      },
+      {
+       "frage": "<span class='fa'>شب‌ها از ___ رنج می‌برم.</span><br><span class='mini'>Nachts leide ich unter Schlaflosigkeit.</span>",
+       "optionen": [
+        "بی‌خوابی",
+        "عضله",
+        "تای‌چی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>شب‌ها از بی‌خوابی رنج می‌برم.</span>"
+      },
+      {
+       "frage": "<span class='fa'>این دارو ___ است، اما کمی عوارض دارد.</span><br><span class='mini'>Dieses Medikament ist wirksam, hat aber leichte Nebenwirkungen.</span>",
+       "optionen": [
+        "مؤثر",
+        "استرس",
+        "تناسب اندام"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>این دارو مؤثر است، اما کمی عوارض دارد.</span>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "e",
+   "titel": "Sätze aus den Texten",
+   "vorschau": "🧱",
+   "karten": [
+    {
+     "typ": "bauen",
+     "titel": "Baue den Satz",
+     "trenner": " ",
+     "woerter": [
+      {
+       "fa": "ساعت شش صبح است و هنوز هوا کمی تاریک است.",
+       "tr": "sāʿat-e schesch-e sobh ast o hanūz hawā kamī tārīk ast.",
+       "de": "Es ist sechs Uhr morgens und noch etwas dunkel.",
+       "teile": [
+        "ساعت",
+        "شش",
+        "صبح",
+        "است",
+        "و",
+        "هنوز",
+        "هوا",
+        "کمی",
+        "تاریک",
+        "است"
+       ],
+       "extra": [
+        "سه،"
+       ]
+      },
+      {
+       "fa": "عسل، خرما و زنجبیل گرم هستند؛ ماست، خیار و هندوانه سرد.",
+       "tr": "ʿasal, chormā o zandschabīl garm hastand; māst, chiyār o hendewāne sard.",
+       "de": "Honig, Datteln und Ingwer sind warm; Joghurt, Gurke und Wassermelone kalt.",
+       "teile": [
+        "عسل",
+        "خرما",
+        "و",
+        "زنجبیل",
+        "گرم",
+        "هستند؛",
+        "ماست",
+        "خیار",
+        "و",
+        "هندوانه",
+        "سرد"
+       ],
+       "extra": [
+        "اخیر،"
+       ]
+      },
+      {
+       "fa": "در سال‌های اخیر، عطاری‌ها و داروهای گیاهی دوباره خیلی محبوب شده‌اند.",
+       "tr": "dar sālhā-ye achīr, ʿattārīhā o dārūhā-ye giyāhī dobāre cheylī mahbūb schode-and.",
+       "de": "In den letzten Jahren sind Kräuterläden und pflanzliche Mittel wieder sehr beliebt geworden.",
+       "teile": [
+        "در",
+        "سال‌های",
+        "اخیر",
+        "عطاری‌ها",
+        "و",
+        "داروهای",
+        "گیاهی",
+        "دوباره",
+        "خیلی",
+        "محبوب",
+        "شده‌اند"
+       ],
+       "extra": []
+      },
+      {
+       "fa": "«یک، دو، سه، چهار! دست‌ها بالا! نفس عمیق!»",
+       "tr": "«yek, do, se, tschahār! dasthā bālā! nafas-e ʿamīgh!»",
+       "de": "„Eins, zwei, drei, vier! Hände hoch! Tief einatmen!“",
+       "teile": [
+        "«یک",
+        "دو",
+        "سه",
+        "چهار",
+        "دست‌ها",
+        "بالا",
+        "نفس",
+        "عمیق»"
+       ],
+       "extra": [
+        "عمیق!»"
+       ]
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Was bedeutet der Satz?",
+     "fragen": [
+      {
+       "frage": "„Es ist sechs Uhr morgens und noch etwas dunkel.“",
+       "optionen": [
+        "ساعت شش صبح است و هنوز هوا کمی تاریک است.",
+        "عسل، خرما و زنجبیل گرم هستند؛ ماست، خیار و هندوانه سرد.",
+        "در سال‌های اخیر، عطاری‌ها و داروهای گیاهی دوباره خیلی محبوب شده‌اند."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„„Eins, zwei, drei, vier! Hände hoch! Tief einatmen!““",
+       "optionen": [
+        "«یک، دو، سه، چهار! دست‌ها بالا! نفس عمیق!»",
+        "ساعت شش صبح است و هنوز هوا کمی تاریک است.",
+        "عسل، خرما و زنجبیل گرم هستند؛ ماست، خیار و هندوانه سرد."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Honig, Datteln und Ingwer sind warm; Joghurt, Gurke und Wassermelone kalt.“",
+       "optionen": [
+        "عسل، خرما و زنجبیل گرم هستند؛ ماست، خیار و هندوانه سرد.",
+        "«یک، دو، سه، چهار! دست‌ها بالا! نفس عمیق!»",
+        "در سال‌های اخیر، عطاری‌ها و داروهای گیاهی دوباره خیلی محبوب شده‌اند."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„In den letzten Jahren sind Kräuterläden und pflanzliche Mittel wieder sehr beliebt geworden.“",
+       "optionen": [
+        "در سال‌های اخیر، عطاری‌ها و داروهای گیاهی دوباره خیلی محبوب شده‌اند.",
+        "عسل، خرما و زنجبیل گرم هستند؛ ماست، خیار و هندوانه سرد.",
+        "ساعت شش صبح است و هنوز هوا کمی تاریک است."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

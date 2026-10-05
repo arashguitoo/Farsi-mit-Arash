@@ -1,0 +1,184 @@
+{
+ "id": "ug",
+ "art": "umgangssprache",
+ "titel": "Umgangssprache: So spricht man im Alltag",
+ "beschreibung": "Freiwilliger Extra-Teil: Umgangssprache.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "So spricht man",
+   "vorschau": "شهری که توش",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Schrift ≠ Gespräch",
+     "text": "<ul><li><span class='fa'>در آن → توش</span>: <span class='fa'>شهری که در آن … → شهری که توش …</span></li><li><span class='fa'>با او → باهاش</span> · <span class='fa'>آن را → اونو</span></li><li><span class='fa'>آن → اون</span>: <span class='fa'>آنجا → اونجا</span></li><li><span class='fa'>می‌دانم → می‌دونم</span> · <span class='fa'>می‌روی → می‌ری</span></li></ul>",
+     "stil": "merke"
+    },
+    {
+     "typ": "paare",
+     "links": "x",
+     "paare": [
+      {
+       "fa": "شهری که در آن",
+       "tr": "",
+       "de": "die Stadt, in der",
+       "x": "شهری که توش"
+      },
+      {
+       "fa": "با او",
+       "tr": "",
+       "de": "mit ihm/ihr",
+       "x": "باهاش"
+      },
+      {
+       "fa": "آنجا",
+       "tr": "",
+       "de": "dort",
+       "x": "اونجا"
+      },
+      {
+       "fa": "خودم می‌دانم",
+       "tr": "",
+       "de": "ich weiß selbst",
+       "x": "خودم می‌دونم"
+      },
+      {
+       "fa": "می‌روی",
+       "tr": "",
+       "de": "du gehst",
+       "x": "می‌ری"
+      }
+     ],
+     "titel": "Schrift ↔ Gespräch"
+    },
+    {
+     "typ": "sortieren",
+     "titel": "Schrift oder Gespräch?",
+     "frage": "Schriftsprache oder Umgangssprache?",
+     "kategorien": [
+      "✍️ Schriftsprache",
+      "🗣️ Umgangssprache"
+     ],
+     "items": [
+      {
+       "fa": "شهری که در آن",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "با او",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "آنجا",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "خودم می‌دانم",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "می‌روی",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "شهری که توش",
+       "k": 1,
+       "say": false,
+       "e": "<i>schahrī ke tūsch</i> – geschrieben: <span class='fa'>شهری که در آن</span>"
+      },
+      {
+       "fa": "باهاش",
+       "k": 1,
+       "say": false,
+       "e": "<i>bāhāsch</i> – geschrieben: <span class='fa'>با او</span>"
+      },
+      {
+       "fa": "اونجا",
+       "k": 1,
+       "say": false,
+       "e": "<i>ūndschā</i> – geschrieben: <span class='fa'>آنجا</span>"
+      },
+      {
+       "fa": "خودم می‌دونم",
+       "k": 1,
+       "say": false,
+       "e": "<i>chodam mīdūnam</i> – geschrieben: <span class='fa'>خودم می‌دانم</span>"
+      },
+      {
+       "fa": "می‌ری",
+       "k": 1,
+       "say": false,
+       "e": "<i>mīrī</i> – geschrieben: <span class='fa'>می‌روی</span>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Kurz-Dialog",
+   "vorschau": "💬",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Tipp für Yazd",
+     "text": "Umgangssprache! Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "یزد رفتی؟ چطور بود؟",
+       "tr": "yazd raftī? tschetour būd?",
+       "de": "Warst du in Yazd? Wie war’s?"
+      },
+      {
+       "fa": "عالی! یه اقامتگاه پیدا کردیم که توش حوض و درخت انار داشت.",
+       "tr": "ʿālī! ye eghāmatgāh peydā kardīm ke tūsch hous o deracht-e anār dāscht.",
+       "de": "Super! Wir haben eine Unterkunft gefunden, in der es ein Wasserbecken und einen Granatapfelbaum gab."
+      },
+      {
+       "fa": "آدرسشو بفرست! خودم می‌خوام برم اونجا.",
+       "tr": "ādresescho befrest! chodam mīcham beram ūndschā.",
+       "de": "Schick mir die Adresse! Ich will selbst dorthin."
+      },
+      {
+       "fa": "باشه، ولی تابستون نری‌ها، خیلی گرمه!",
+       "tr": "bāsche, walī tābestūn narīhā, cheylī garme!",
+       "de": "Okay, aber fahr bloß nicht im Sommer, es ist sehr heiß!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Verstanden?",
+     "fragen": [
+      {
+       "frage": "Was gab es in der Unterkunft?",
+       "optionen": [
+        "ein Wasserbecken und einen Granatapfelbaum",
+        "einen Pool",
+        "ein Restaurant"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "<span class='fa'>توش</span> =",
+       "optionen": [
+        "در آن",
+        "با او",
+        "روی آن"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

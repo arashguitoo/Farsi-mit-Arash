@@ -1,0 +1,184 @@
+{
+ "id": "ug",
+ "art": "umgangssprache",
+ "titel": "Umgangssprache: So spricht man im Alltag",
+ "beschreibung": "Freiwilliger Extra-Teil: Umgangssprache.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "So spricht man",
+   "vorschau": "تعطیله",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Schrift ≠ Gespräch",
+     "text": "<ul><li><span class='fa'>است → ـه</span>: <span class='fa'>تعطیل است → تعطیله</span></li><li><span class='fa'>ـان / ـام → ـون / ـوم</span>: <span class='fa'>خانه → خونه</span>, <span class='fa'>نمی‌توانم → نمی‌تونم</span></li><li>Verkürzte Verbformen: <span class='fa'>نمی‌شود → نمی‌شه</span>, <span class='fa'>می‌گویند → می‌گن</span></li><li>Typisch am Smogtag: <span class='fa'>هوا خیلی کثیفه!</span> – Die Luft ist total dreckig!</li></ul>",
+     "stil": "merke"
+    },
+    {
+     "typ": "paare",
+     "links": "x",
+     "paare": [
+      {
+       "fa": "تعطیل است",
+       "tr": "",
+       "de": "es ist geschlossen / frei",
+       "x": "تعطیله"
+      },
+      {
+       "fa": "نمی‌شود",
+       "tr": "",
+       "de": "es geht nicht",
+       "x": "نمی‌شه"
+      },
+      {
+       "fa": "خانه",
+       "tr": "",
+       "de": "Haus, Zuhause",
+       "x": "خونه"
+      },
+      {
+       "fa": "نمی‌توانم",
+       "tr": "",
+       "de": "ich kann nicht",
+       "x": "نمی‌تونم"
+      },
+      {
+       "fa": "می‌گویند",
+       "tr": "",
+       "de": "man sagt, sie sagen",
+       "x": "می‌گن"
+      }
+     ],
+     "titel": "Schrift ↔ Gespräch"
+    },
+    {
+     "typ": "sortieren",
+     "titel": "Schrift oder Gespräch?",
+     "frage": "Schriftsprache oder Umgangssprache?",
+     "kategorien": [
+      "✍️ Schriftsprache",
+      "🗣️ Umgangssprache"
+     ],
+     "items": [
+      {
+       "fa": "تعطیل است",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "نمی‌شود",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "خانه",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "نمی‌توانم",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "می‌گویند",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "تعطیله",
+       "k": 1,
+       "say": false,
+       "e": "<i>taʿtīle</i> – geschrieben: <span class='fa'>تعطیل است</span>"
+      },
+      {
+       "fa": "نمی‌شه",
+       "k": 1,
+       "say": false,
+       "e": "<i>nemīsche</i> – geschrieben: <span class='fa'>نمی‌شود</span>"
+      },
+      {
+       "fa": "خونه",
+       "k": 1,
+       "say": false,
+       "e": "<i>chūne</i> – geschrieben: <span class='fa'>خانه</span>"
+      },
+      {
+       "fa": "نمی‌تونم",
+       "k": 1,
+       "say": false,
+       "e": "<i>nemītūnam</i> – geschrieben: <span class='fa'>نمی‌توانم</span>"
+      },
+      {
+       "fa": "می‌گن",
+       "k": 1,
+       "say": false,
+       "e": "<i>mīgan</i> – geschrieben: <span class='fa'>می‌گویند</span>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Kurz-Dialog",
+   "vorschau": "💬",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Schulfrei!",
+     "text": "Umgangssprache! Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "شنیدی؟ فردا مدرسه‌ها تعطیله!",
+       "tr": "schenīdī? fardā madresehā taʿtīle!",
+       "de": "Hast du gehört? Morgen ist schulfrei!"
+      },
+      {
+       "fa": "آره، می‌گن هوا خیلی کثیفه.",
+       "tr": "āre, mīgan hawā cheylī kasīfe.",
+       "de": "Ja, es heißt, die Luft ist total dreckig."
+      },
+      {
+       "fa": "پس بیا بریم کوه!",
+       "tr": "pas biyā barīm kūh!",
+       "de": "Dann lass uns in die Berge gehen!"
+      },
+      {
+       "fa": "نمی‌شه، مامانم می‌گه باید تو خونه بمونیم.",
+       "tr": "nemīsche, māmānam mīge bāyad tū chūne bemūnīm.",
+       "de": "Geht nicht, meine Mama sagt, wir müssen zu Hause bleiben."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Verstanden?",
+     "fragen": [
+      {
+       "frage": "Warum ist morgen schulfrei?",
+       "optionen": [
+        "wegen der schmutzigen Luft",
+        "wegen Schnee",
+        "wegen eines Feiertags"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "<span class='fa'>خونه</span> =",
+       "optionen": [
+        "خانه",
+        "خون",
+        "خوان"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,646 @@
+{
+ "id": "z1",
+ "titel": "Trainingspaket 1",
+ "beschreibung": "Wer passt zu wem?, Wort-Marathon, Lückensätze, Sätze aus den Texten.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "Wer passt zu wem?",
+   "vorschau": "🧩",
+   "karten": [
+    {
+     "typ": "zuordnen",
+     "titel": "Geschenke für den Familientag",
+     "text": "Neda sucht Geschenke für fünf Familienmitglieder. Im Geschäft gibt es sieben Ideen.",
+     "frage": "Welches Angebot passt am besten? Tippe es an.",
+     "angebote": [
+      {
+       "titel": "Hafes-Diwan",
+       "emoji": "📖",
+       "fa": "دیوان حافظ با خط زیبا و جلد چرمی.",
+       "de": "Hafes-Diwan in schöner Kalligrafie mit Ledereinband."
+      },
+      {
+       "titel": "Smartphone-Kurs",
+       "emoji": "📱",
+       "fa": "یک دوره‌ی آموزش کار با گوشی هوشمند برای سالمندان.",
+       "de": "Ein Smartphone-Kurs für Senioren."
+      },
+      {
+       "titel": "Fußball",
+       "emoji": "⚽",
+       "fa": "توپ فوتبال حرفه‌ای و پیراهن تیم ملی.",
+       "de": "Profi-Fußball und Trikot der Nationalmannschaft."
+      },
+      {
+       "titel": "Kochbuch",
+       "emoji": "📗",
+       "fa": "کتاب آشپزی غذاهای محلی شمال ایران.",
+       "de": "Kochbuch mit Regionalgerichten aus Nordiran."
+      },
+      {
+       "titel": "Spa-Gutschein",
+       "emoji": "🧖",
+       "fa": "کارت هدیه‌ی ماساژ و استخر آب گرم.",
+       "de": "Gutschein für Massage und Thermalbad."
+      },
+      {
+       "titel": "Malkasten",
+       "emoji": "🎨",
+       "fa": "جعبه‌ی رنگ و دفتر نقاشی برای کودکان.",
+       "de": "Malkasten und Zeichenblock für Kinder."
+      },
+      {
+       "titel": "Fotoalbum",
+       "emoji": "🖼️",
+       "fa": "آلبوم عکس خالی برای عکس‌های خانوادگی، با جای نوشتن خاطره.",
+       "de": "Leeres Fotoalbum für Familienfotos, mit Platz für Erinnerungen."
+      }
+     ],
+     "personen": [
+      {
+       "name": "Opa",
+       "emoji": "👴",
+       "fa": "پدربزرگ شعر کلاسیک دوست دارد و هر شب فال می‌گیرد.",
+       "de": "Opa liebt klassische Lyrik und befragt jeden Abend das Orakel.",
+       "richtig": 0
+      },
+      {
+       "name": "Oma",
+       "emoji": "👵",
+       "fa": "مادربزرگ می‌خواهد با نوه‌اش در کانادا تماس تصویری بگیرد، اما بلد نیست.",
+       "de": "Oma möchte mit ihrer Enkelin in Kanada videotelefonieren, weiß aber nicht wie.",
+       "richtig": 1
+      },
+      {
+       "name": "Mutter",
+       "emoji": "👩",
+       "fa": "مادر همیشه خسته است و هیچ‌وقت برای خودش وقت ندارد.",
+       "de": "Die Mutter ist immer müde und hat nie Zeit für sich.",
+       "richtig": 4
+      },
+      {
+       "name": "Neffe Arian",
+       "emoji": "🧒",
+       "fa": "آرین شش ساله است و عاشق کشیدن حیوانات است.",
+       "de": "Arian ist sechs und malt leidenschaftlich gern Tiere.",
+       "richtig": 5
+      },
+      {
+       "name": "Tante Mina",
+       "emoji": "👩‍🍳",
+       "fa": "خاله مینا اهل رشت است و دوست دارد غذاهای شهرش را درست کند.",
+       "de": "Tante Mina stammt aus Rascht und kocht gern die Gerichte ihrer Stadt.",
+       "richtig": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Wort-Marathon",
+   "vorschau": "⏱️",
+   "karten": [
+    {
+     "typ": "tempo",
+     "titel": "Marathon: alle Wörter",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 120,
+     "ziel": 25,
+     "woerter": [
+      {
+       "fa": "نوه",
+       "a": "Enkel/in"
+      },
+      {
+       "fa": "نتیجه",
+       "a": "Urenkel/in"
+      },
+      {
+       "fa": "عمو",
+       "a": "Onkel (väterlicherseits)"
+      },
+      {
+       "fa": "دایی",
+       "a": "Onkel (mütterlicherseits)"
+      },
+      {
+       "fa": "عمه",
+       "a": "Tante (väterlicherseits)"
+      },
+      {
+       "fa": "خاله",
+       "a": "Tante (mütterlicherseits)"
+      },
+      {
+       "fa": "پسرعمو",
+       "a": "Cousin (Sohn des Onkels)"
+      },
+      {
+       "fa": "دخترخاله",
+       "a": "Cousine (Tochter der Tante)"
+      },
+      {
+       "fa": "فامیل",
+       "a": "Verwandtschaft"
+      },
+      {
+       "fa": "خواهرزاده",
+       "a": "Nichte/Neffe (Kind der Schwester)"
+      },
+      {
+       "fa": "بزرگ خانواده",
+       "a": "Familienoberhaupt, Älteste/r"
+      },
+      {
+       "fa": "تک‌فرزند",
+       "a": "Einzelkind"
+      },
+      {
+       "fa": "نسل",
+       "a": "Generation"
+      },
+      {
+       "fa": "دورهمی",
+       "a": "Familientreffen"
+      },
+      {
+       "fa": "رفت و آمد",
+       "a": "gegenseitige Besuche"
+      },
+      {
+       "fa": "صمیمی",
+       "a": "herzlich, eng"
+      },
+      {
+       "fa": "مستقل",
+       "a": "selbstständig"
+      },
+      {
+       "fa": "وابسته",
+       "a": "abhängig, verbunden"
+      },
+      {
+       "fa": "سنتی",
+       "a": "traditionell"
+      },
+      {
+       "fa": "مدرن",
+       "a": "modern"
+      },
+      {
+       "fa": "فاصله",
+       "a": "Abstand, Entfernung"
+      },
+      {
+       "fa": "مراقبت",
+       "a": "Pflege, Betreuung"
+      },
+      {
+       "fa": "تجربه",
+       "a": "Erfahrung"
+      },
+      {
+       "fa": "جمعیت",
+       "a": "Bevölkerung"
+      },
+      {
+       "fa": "آمار",
+       "a": "Statistik"
+      },
+      {
+       "fa": "میانگین",
+       "a": "Durchschnitt"
+      },
+      {
+       "fa": "کاهش",
+       "a": "Rückgang"
+      },
+      {
+       "fa": "افزایش",
+       "a": "Anstieg"
+      },
+      {
+       "fa": "مهاجرت",
+       "a": "Auswanderung, Migration"
+      },
+      {
+       "fa": "شهرنشینی",
+       "a": "Verstädterung"
+      },
+      {
+       "fa": "تغییر",
+       "a": "Veränderung"
+      },
+      {
+       "fa": "ارزش",
+       "a": "Wert"
+      },
+      {
+       "fa": "تنهایی",
+       "a": "Einsamkeit"
+      },
+      {
+       "fa": "بزرگ کردن",
+       "a": "großziehen"
+      },
+      {
+       "fa": "سر زدن",
+       "a": "vorbeischauen, besuchen"
+      },
+      {
+       "fa": "مراقبت کردن",
+       "a": "sich kümmern, pflegen"
+      },
+      {
+       "fa": "دور هم جمع شدن",
+       "a": "zusammenkommen"
+      },
+      {
+       "fa": "کم شدن",
+       "a": "abnehmen, weniger werden"
+      },
+      {
+       "fa": "زیاد شدن",
+       "a": "zunehmen, mehr werden"
+      }
+     ]
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "سنتی",
+       "tr": "sonnatī",
+       "de": "traditionell",
+       "emoji": "🏺"
+      },
+      {
+       "fa": "دورهمی",
+       "tr": "dourhamī",
+       "de": "Familientreffen",
+       "emoji": "🍲"
+      },
+      {
+       "fa": "عمه",
+       "tr": "ʿamme",
+       "de": "Tante (väterlicherseits)",
+       "emoji": "👩"
+      },
+      {
+       "fa": "وابسته",
+       "tr": "wābaste",
+       "de": "abhängig, verbunden",
+       "emoji": "🔗"
+      },
+      {
+       "fa": "مراقبت",
+       "tr": "morāghebat",
+       "de": "Pflege, Betreuung",
+       "emoji": "🤲"
+      },
+      {
+       "fa": "خاله",
+       "tr": "chāle",
+       "de": "Tante (mütterlicherseits)",
+       "emoji": "👩‍🦰"
+      }
+     ],
+     "titel": "Memory"
+    },
+    {
+     "typ": "memory",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "تک‌فرزند",
+       "tr": "takfarzand",
+       "de": "Einzelkind",
+       "emoji": "🧍"
+      },
+      {
+       "fa": "عمه",
+       "tr": "ʿamme",
+       "de": "Tante (väterlicherseits)",
+       "emoji": "👩"
+      },
+      {
+       "fa": "تغییر",
+       "tr": "taghyīr",
+       "de": "Veränderung",
+       "emoji": "🔄"
+      },
+      {
+       "fa": "دورهمی",
+       "tr": "dourhamī",
+       "de": "Familientreffen",
+       "emoji": "🍲"
+      },
+      {
+       "fa": "فاصله",
+       "tr": "fāsele",
+       "de": "Abstand, Entfernung",
+       "emoji": "↔️"
+      },
+      {
+       "fa": "دایی",
+       "tr": "dāyī",
+       "de": "Onkel (mütterlicherseits)",
+       "emoji": "🧔"
+      }
+     ],
+     "titel": "Memory: Wort & Bedeutung"
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "titel": "Lückensätze",
+   "vorschau": "___",
+   "karten": [
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>پدربزرگم پنج ___ دارد؛ من بزرگ‌ترینشان هستم.</span><br><span class='mini'>Mein Großvater hat fünf Enkel; ich bin der/die älteste.</span>",
+       "optionen": [
+        "نوه",
+        "پسرعمو",
+        "دخترخاله"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>پدربزرگم پنج نوه دارد؛ من بزرگ‌ترینشان هستم.</span>"
+      },
+      {
+       "frage": "<span class='fa'>برادر مادرم، یعنی ___ من، در شیراز زندگی می‌کند.</span><br><span class='mini'>Der Bruder meiner Mutter, also mein Onkel, lebt in Schiras.</span>",
+       "optionen": [
+        "دایی",
+        "پسرعمو",
+        "تغییر"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>برادر مادرم، یعنی دایی من، در شیراز زندگی می‌کند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>خواهر پدرم، یعنی ___ ام، معلم است.</span><br><span class='mini'>Die Schwester meines Vaters, also meine Tante, ist Lehrerin.</span>",
+       "optionen": [
+        "عمه",
+        "آمار",
+        "جمعیت"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>خواهر پدرم، یعنی عمه ام، معلم است.</span>"
+      },
+      {
+       "frage": "<span class='fa'>من ___ هستم و خواهر و برادر ندارم.</span><br><span class='mini'>Ich bin Einzelkind und habe keine Geschwister.</span>",
+       "optionen": [
+        "تک‌فرزند",
+        "دایی",
+        "مهاجرت"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>من تک‌فرزند هستم و خواهر و برادر ندارم.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>هر جمعه یک ___ بزرگ در خانه‌ی مادربزرگ داریم.</span><br><span class='mini'>Jeden Freitag haben wir ein großes Familientreffen bei Oma.</span>",
+       "optionen": [
+        "دورهمی",
+        "فاصله",
+        "مراقبت"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>هر جمعه یک دورهمی بزرگ در خانه‌ی مادربزرگ داریم.</span>"
+      },
+      {
+       "frage": "<span class='fa'>جوان‌های امروز زودتر ___ می‌شوند و تنها زندگی می‌کنند.</span><br><span class='mini'>Junge Leute werden heute früher selbstständig und wohnen allein.</span>",
+       "optionen": [
+        "مستقل",
+        "فاصله",
+        "دخترخاله"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>جوان‌های امروز زودتر مستقل می‌شوند و تنها زندگی می‌کنند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>در سی سال گذشته میانگین تعداد بچه‌ها ___ پیدا کرده است.</span><br><span class='mini'>In den letzten 30 Jahren ist die durchschnittliche Kinderzahl gesunken.</span>",
+       "optionen": [
+        "کاهش",
+        "وابسته",
+        "میانگین"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>در سی سال گذشته میانگین تعداد بچه‌ها کاهش پیدا کرده است.</span>"
+      },
+      {
+       "frage": "<span class='fa'>___ جوان‌ها به خارج یکی از چالش‌های خانواده‌هاست.</span><br><span class='mini'>Die Auswanderung junger Leute ist eine der Herausforderungen für Familien.</span>",
+       "optionen": [
+        "مهاجرت",
+        "مدرن",
+        "فاصله"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>مهاجرت جوان‌ها به خارج یکی از چالش‌های خانواده‌هاست.</span>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "e",
+   "titel": "Sätze aus den Texten",
+   "vorschau": "🧱",
+   "karten": [
+    {
+     "typ": "bauen",
+     "titel": "Baue den Satz",
+     "trenner": " ",
+     "woerter": [
+      {
+       "fa": "با این حال، رابطه‌ی خانوادگی هنوز صمیمی و قوی است.",
+       "tr": "bā īn hāl, rābete-ye chānewādegī hanūz samīmī o ghawī ast.",
+       "de": "Dennoch sind die Familienbeziehungen noch herzlich und stark.",
+       "teile": [
+        "با",
+        "این",
+        "حال",
+        "رابطه‌ی",
+        "خانوادگی",
+        "هنوز",
+        "صمیمی",
+        "و",
+        "قوی",
+        "است"
+       ],
+       "extra": [
+        "ویژه‌ای"
+       ]
+      },
+      {
+       "fa": "سارا می‌خندد: «مامان‌بزرگ، تابستان می‌آیم. قورمه‌سبزی‌ات را برایم نگه دار!»",
+       "tr": "sārā mīchandad: «māmānbozorg, tābestān mīāyam. ghormesabzīat rā barāyam negah dār!»",
+       "de": "Sara lacht: „Oma, im Sommer komme ich. Heb mir dein Ghormeh Sabzi auf!“",
+       "teile": [
+        "سارا",
+        "می‌خندد",
+        "«مامان‌بزرگ",
+        "تابستان",
+        "می‌آیم",
+        "قورمه‌سبزی‌ات",
+        "را",
+        "برایم",
+        "نگه",
+        "دار»"
+       ],
+       "extra": [
+        "پروین"
+       ]
+      },
+      {
+       "fa": "خانواده در فرهنگ ایرانی همیشه جایگاه ویژه‌ای داشته است.",
+       "tr": "chānewāde dar farhang-e īrānī hamīsche dschāygāh-e wīzheī dāschte ast.",
+       "de": "Die Familie hatte in der iranischen Kultur immer einen besonderen Stellenwert.",
+       "teile": [
+        "خانواده",
+        "در",
+        "فرهنگ",
+        "ایرانی",
+        "همیشه",
+        "جایگاه",
+        "ویژه‌ای",
+        "داشته",
+        "است"
+       ],
+       "extra": [
+        "صداست."
+       ]
+      },
+      {
+       "fa": "دلیل‌های این تغییر هم اقتصادی است، هم فرهنگی.",
+       "tr": "dalīlhā-ye īn taghyīr ham eghtesādī ast, ham farhangī.",
+       "de": "Die Gründe für diesen Wandel sind sowohl wirtschaftlich als auch kulturell.",
+       "teile": [
+        "دلیل‌های",
+        "این",
+        "تغییر",
+        "هم",
+        "اقتصادی",
+        "است",
+        "هم",
+        "فرهنگی"
+       ],
+       "extra": [
+        "پر"
+       ]
+      },
+      {
+       "fa": "هر جمعه ظهر، خانه‌ی مادربزرگ پروین پر از سر و صداست.",
+       "tr": "har dschomʿe zohr, chāne-ye mādarbozorg parwīn por az sar o sedāst.",
+       "de": "Jeden Freitagmittag ist Oma Parvins Haus voller Lärm.",
+       "teile": [
+        "هر",
+        "جمعه",
+        "ظهر",
+        "خانه‌ی",
+        "مادربزرگ",
+        "پروین",
+        "پر",
+        "از",
+        "سر",
+        "و",
+        "صداست"
+       ],
+       "extra": []
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Was bedeutet der Satz?",
+     "fragen": [
+      {
+       "frage": "„Jeden Freitagmittag ist Oma Parvins Haus voller Lärm.“",
+       "optionen": [
+        "هر جمعه ظهر، خانه‌ی مادربزرگ پروین پر از سر و صداست.",
+        "خانواده در فرهنگ ایرانی همیشه جایگاه ویژه‌ای داشته است.",
+        "سارا می‌خندد: «مامان‌بزرگ، تابستان می‌آیم. قورمه‌سبزی‌ات را برایم نگه دار!»"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Sara lacht: „Oma, im Sommer komme ich. Heb mir dein Ghormeh Sabzi auf!““",
+       "optionen": [
+        "سارا می‌خندد: «مامان‌بزرگ، تابستان می‌آیم. قورمه‌سبزی‌ات را برایم نگه دار!»",
+        "دلیل‌های این تغییر هم اقتصادی است، هم فرهنگی.",
+        "هر جمعه ظهر، خانه‌ی مادربزرگ پروین پر از سر و صداست."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Die Familie hatte in der iranischen Kultur immer einen besonderen Stellenwert.“",
+       "optionen": [
+        "خانواده در فرهنگ ایرانی همیشه جایگاه ویژه‌ای داشته است.",
+        "هر جمعه ظهر، خانه‌ی مادربزرگ پروین پر از سر و صداست.",
+        "دلیل‌های این تغییر هم اقتصادی است، هم فرهنگی."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Die Gründe für diesen Wandel sind sowohl wirtschaftlich als auch kulturell.“",
+       "optionen": [
+        "دلیل‌های این تغییر هم اقتصادی است، هم فرهنگی.",
+        "سارا می‌خندد: «مامان‌بزرگ، تابستان می‌آیم. قورمه‌سبزی‌ات را برایم نگه دار!»",
+        "هر جمعه ظهر، خانه‌ی مادربزرگ پروین پر از سر و صداست."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Dennoch sind die Familienbeziehungen noch herzlich und stark.“",
+       "optionen": [
+        "با این حال، رابطه‌ی خانوادگی هنوز صمیمی و قوی است.",
+        "دلیل‌های این تغییر هم اقتصادی است، هم فرهنگی.",
+        "سارا می‌خندد: «مامان‌بزرگ، تابستان می‌آیم. قورمه‌سبزی‌ات را برایم نگه دار!»"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

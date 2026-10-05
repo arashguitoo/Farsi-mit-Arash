@@ -1,0 +1,184 @@
+{
+ "id": "ug",
+ "art": "umgangssprache",
+ "titel": "Umgangssprache: So spricht man im Alltag",
+ "beschreibung": "Freiwilliger Extra-Teil: Umgangssprache.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "So spricht man",
+   "vorschau": "می‌شه",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Schrift ≠ Gespräch",
+     "text": "<ul><li><span class='fa'>می‌شود → می‌شه</span> · <span class='fa'>نمی‌شود → نمی‌شه</span> – sehr häufig: <span class='fa'>می‌شه …؟</span> = Darf ich …? / Geht das?</li><li><span class='fa'>می‌گویند → می‌گن</span> – man sagt</li><li>Festgruß: <span class='fa'>عید شما مبارک → عیدتون مبارک</span>, <span class='fa'>سال نو مبارک!</span></li><li><span class='fa'>می‌روید → می‌رین</span></li></ul>",
+     "stil": "merke"
+    },
+    {
+     "typ": "paare",
+     "links": "x",
+     "paare": [
+      {
+       "fa": "می‌شود",
+       "tr": "",
+       "de": "man kann, es geht",
+       "x": "می‌شه"
+      },
+      {
+       "fa": "نمی‌شود",
+       "tr": "",
+       "de": "es geht nicht",
+       "x": "نمی‌شه"
+      },
+      {
+       "fa": "می‌گویند",
+       "tr": "",
+       "de": "man sagt",
+       "x": "می‌گن"
+      },
+      {
+       "fa": "عید شما مبارک",
+       "tr": "",
+       "de": "frohes Fest!",
+       "x": "عیدتون مبارک"
+      },
+      {
+       "fa": "کجا می‌روید؟",
+       "tr": "",
+       "de": "wohin fahrt ihr?",
+       "x": "کجا می‌رین؟"
+      }
+     ],
+     "titel": "Schrift ↔ Gespräch"
+    },
+    {
+     "typ": "sortieren",
+     "titel": "Schrift oder Gespräch?",
+     "frage": "Schriftsprache oder Umgangssprache?",
+     "kategorien": [
+      "✍️ Schriftsprache",
+      "🗣️ Umgangssprache"
+     ],
+     "items": [
+      {
+       "fa": "می‌شود",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "نمی‌شود",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "می‌گویند",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "عید شما مبارک",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "کجا می‌روید؟",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "می‌شه",
+       "k": 1,
+       "say": false,
+       "e": "<i>mīsche</i> – geschrieben: <span class='fa'>می‌شود</span>"
+      },
+      {
+       "fa": "نمی‌شه",
+       "k": 1,
+       "say": false,
+       "e": "<i>nemīsche</i> – geschrieben: <span class='fa'>نمی‌شود</span>"
+      },
+      {
+       "fa": "می‌گن",
+       "k": 1,
+       "say": false,
+       "e": "<i>mīgan</i> – geschrieben: <span class='fa'>می‌گویند</span>"
+      },
+      {
+       "fa": "عیدتون مبارک",
+       "k": 1,
+       "say": false,
+       "e": "<i>ʿeydetūn mobārak</i> – geschrieben: <span class='fa'>عید شما مبارک</span>"
+      },
+      {
+       "fa": "کجا می‌رین؟",
+       "k": 1,
+       "say": false,
+       "e": "<i>kodschā mīrīn?</i> – geschrieben: <span class='fa'>کجا می‌روید؟</span>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Kurz-Dialog",
+   "vorschau": "💬",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Neujahrsbesuch",
+     "text": "Umgangssprache! Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "عیدتون مبارک! سال نو مبارک!",
+       "tr": "ʿeydetūn mobārak! sāl-e nou mobārak!",
+       "de": "Frohes Fest! Frohes neues Jahr!"
+      },
+      {
+       "fa": "مرسی، عید شما هم مبارک! بفرمایین تو.",
+       "tr": "mersī, ʿeyd-e schomā ham mobārak! befarmāyīn tū.",
+       "de": "Danke, euch auch! Kommt herein."
+      },
+      {
+       "fa": "وای، چه آجیلی! می‌شه یه کم پسته بردارم؟",
+       "tr": "wāy, tsche ādschīlī! mīsche ye kam peste bardāram?",
+       "de": "Wow, was für Nüsse! Darf ich ein paar Pistazien nehmen?"
+      },
+      {
+       "fa": "معلومه! نمی‌شه که عید بیای و آجیل نخوری!",
+       "tr": "maʿlūme! nemīsche ke ʿeyd biyāy o ādschīl nachorī!",
+       "de": "Na klar! Man kann ja nicht zu Nouruz kommen und keine Nüsse essen!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Verstanden?",
+     "fragen": [
+      {
+       "frage": "Was möchte der Gast nehmen?",
+       "optionen": [
+        "Pistazien",
+        "Kuchen",
+        "Tee"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "<span class='fa'>می‌شه</span> =",
+       "optionen": [
+        "می‌شود",
+        "می‌شوم",
+        "شد"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

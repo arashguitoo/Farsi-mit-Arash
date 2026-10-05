@@ -1,0 +1,487 @@
+{
+ "id": "z1",
+ "titel": "Trainingspaket 1",
+ "beschreibung": "Wer passt zu wem?, Wort-Marathon, Lückensätze, Sätze aus den Texten.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "Wer passt zu wem?",
+   "vorschau": "🧩",
+   "karten": [
+    {
+     "typ": "zuordnen",
+     "titel": "Welches Gerät, welche App?",
+     "text": "Fünf Personen suchen technische Hilfe für ihren Alltag. Im Technikladen gibt es sieben Angebote.",
+     "frage": "Welches Angebot passt am besten? Tippe es an.",
+     "angebote": [
+      {
+       "titel": "Übersetzungs-App",
+       "emoji": "🈂️",
+       "fa": "برنامه‌ی ترجمه با دوربین: متن تابلوها و منوها را فوری ترجمه می‌کند.",
+       "de": "Übersetzungs-App mit Kamera: übersetzt Schilder und Speisekarten sofort."
+      },
+      {
+       "titel": "Sprachassistent",
+       "emoji": "🔊",
+       "fa": "دستیار صوتی برای خانه: با صدا موسیقی و رادیو پخش می‌کند و یادآوری می‌دهد.",
+       "de": "Sprachassistent fürs Zuhause: spielt per Stimme Musik und Radio und erinnert an Termine."
+      },
+      {
+       "titel": "Smartwatch",
+       "emoji": "⌚",
+       "fa": "ساعت هوشمند: ضربان قلب، قدم‌ها و خواب را اندازه می‌گیرد.",
+       "de": "Smartwatch: misst Puls, Schritte und Schlaf."
+      },
+      {
+       "titel": "Navigations-App",
+       "emoji": "🗺️",
+       "fa": "برنامه‌ی مسیریاب: کوتاه‌ترین راه و ترافیک را نشان می‌دهد.",
+       "de": "Navigations-App: zeigt den kürzesten Weg und den Verkehr."
+      },
+      {
+       "titel": "Lern-Chatbot",
+       "emoji": "🤖",
+       "fa": "ربات گفتگوی آموزشی: مسئله‌های ریاضی را قدم به قدم توضیح می‌دهد.",
+       "de": "Lern-Chatbot: erklärt Matheaufgaben Schritt für Schritt."
+      },
+      {
+       "titel": "E-Reader",
+       "emoji": "📖",
+       "fa": "کتاب‌خوان الکترونیکی: هزاران کتاب در یک دستگاه سبک، با نور مخصوص شب.",
+       "de": "E-Reader: Tausende Bücher in einem leichten Gerät, mit Nachtlicht."
+      },
+      {
+       "titel": "Passwort-Manager",
+       "emoji": "🔐",
+       "fa": "مدیر رمز عبور: همه‌ی رمزها را امن نگه می‌دارد.",
+       "de": "Passwort-Manager: bewahrt alle Passwörter sicher auf."
+      }
+     ],
+     "personen": [
+      {
+       "name": "Opa Hassan",
+       "emoji": "👴",
+       "fa": "پدربزرگ حسن چشمش ضعیف است و نمی‌تواند دکمه‌های کوچک را بزند، اما دوست دارد رادیو گوش کند.",
+       "de": "Opa Hassan sieht schlecht und kann keine kleinen Tasten drücken, hört aber gern Radio.",
+       "richtig": 1
+      },
+      {
+       "name": "Mona",
+       "emoji": "🏃‍♀️",
+       "fa": "مونا برای ماراتن تمرین می‌کند و می‌خواهد بداند هر روز چند قدم برمی‌دارد و چطور می‌خوابد.",
+       "de": "Mona trainiert für einen Marathon und will wissen, wie viele Schritte sie täglich macht und wie sie schläft.",
+       "richtig": 2
+      },
+      {
+       "name": "Lukas",
+       "emoji": "🍜",
+       "fa": "لوکاس به ژاپن سفر می‌کند و نمی‌تواند منوی رستوران‌ها را بخواند.",
+       "de": "Lukas reist nach Japan und kann die Speisekarten in Restaurants nicht lesen.",
+       "richtig": 0
+      },
+      {
+       "name": "Behnam",
+       "emoji": "🧮",
+       "fa": "بهنام کلاس نهم است و در ریاضی مشکل دارد، اما پدر و مادرش وقت ندارند کمکش کنند.",
+       "de": "Behnam ist in der neunten Klasse, hat Probleme in Mathe, und seine Eltern haben keine Zeit zu helfen.",
+       "richtig": 4
+      },
+      {
+       "name": "Frau Schulz",
+       "emoji": "🔑",
+       "fa": "خانم شولتس در سی سایت مختلف حساب دارد و همیشه رمزهایش را فراموش می‌کند.",
+       "de": "Frau Schulz hat Konten auf dreißig Websites und vergisst immer ihre Passwörter.",
+       "richtig": 6
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Wort-Marathon",
+   "vorschau": "⏱️",
+   "karten": [
+    {
+     "typ": "tempo",
+     "titel": "Marathon: alle Wörter",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 120,
+     "ziel": 25,
+     "woerter": [
+      {
+       "fa": "هوش مصنوعی",
+       "a": "künstliche Intelligenz (KI)"
+      },
+      {
+       "fa": "ربات گفتگو",
+       "a": "Chatbot"
+      },
+      {
+       "fa": "دستیار صوتی",
+       "a": "Sprachassistent"
+      },
+      {
+       "fa": "اپلیکیشن",
+       "a": "App"
+      },
+      {
+       "fa": "برنامه‌ی ترجمه",
+       "a": "Übersetzungsprogramm"
+      },
+      {
+       "fa": "گوشی هوشمند",
+       "a": "Smartphone"
+      },
+      {
+       "fa": "رمز عبور",
+       "a": "Passwort"
+      },
+      {
+       "fa": "حریم خصوصی",
+       "a": "Privatsphäre"
+      },
+      {
+       "fa": "داده",
+       "a": "Daten"
+      },
+      {
+       "fa": "الگوریتم",
+       "a": "Algorithmus"
+      },
+      {
+       "fa": "تکلیف",
+       "a": "Hausaufgabe"
+      },
+      {
+       "fa": "کاربر",
+       "a": "Nutzer/in"
+      },
+      {
+       "fa": "فناوری",
+       "a": "Technologie"
+      },
+      {
+       "fa": "اختراع",
+       "a": "Erfindung"
+      },
+      {
+       "fa": "پیشرفت",
+       "a": "Fortschritt"
+      },
+      {
+       "fa": "ماشین",
+       "a": "Maschine; Auto"
+      },
+      {
+       "fa": "خودکار",
+       "a": "automatisch"
+      },
+      {
+       "fa": "دقیق",
+       "a": "genau, präzise"
+      },
+      {
+       "fa": "سریع",
+       "a": "schnell"
+      },
+      {
+       "fa": "هوشمند",
+       "a": "intelligent, smart"
+      },
+      {
+       "fa": "خطا",
+       "a": "Fehler"
+      },
+      {
+       "fa": "آینده",
+       "a": "Zukunft"
+      },
+      {
+       "fa": "بیکاری",
+       "a": "Arbeitslosigkeit"
+      },
+      {
+       "fa": "شغل",
+       "a": "Beruf, Job"
+      },
+      {
+       "fa": "مترجم",
+       "a": "Übersetzer/in"
+      },
+      {
+       "fa": "ترجمه‌ی ادبی",
+       "a": "literarische Übersetzung"
+      },
+      {
+       "fa": "شعر",
+       "a": "Gedicht, Lyrik"
+      },
+      {
+       "fa": "ظرافت",
+       "a": "Feinheit, Nuance"
+      },
+      {
+       "fa": "معنا",
+       "a": "Bedeutung, Sinn"
+      },
+      {
+       "fa": "استدلال",
+       "a": "Argumentation"
+      },
+      {
+       "fa": "مخالف",
+       "a": "dagegen; Gegner/in"
+      },
+      {
+       "fa": "موافق",
+       "a": "dafür; Befürworter/in"
+      },
+      {
+       "fa": "نتیجه‌گیری",
+       "a": "Schlussfolgerung"
+      },
+      {
+       "fa": "دیدگاه",
+       "a": "Standpunkt, Sichtweise"
+      },
+      {
+       "fa": "خلاقیت",
+       "a": "Kreativität"
+      },
+      {
+       "fa": "انسانی",
+       "a": "menschlich"
+      },
+      {
+       "fa": "جایگزین کردن",
+       "a": "ersetzen"
+      },
+      {
+       "fa": "ترجمه کردن",
+       "a": "übersetzen"
+      },
+      {
+       "fa": "پیش‌بینی کردن",
+       "a": "vorhersagen"
+      },
+      {
+       "fa": "استدلال کردن",
+       "a": "argumentieren"
+      },
+      {
+       "fa": "اعتماد کردن",
+       "a": "vertrauen"
+      },
+      {
+       "fa": "به کار بردن",
+       "a": "anwenden, benutzen"
+      }
+     ]
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "کاربر",
+       "tr": "kārbar",
+       "de": "Nutzer/in",
+       "emoji": "🧑‍💻"
+      },
+      {
+       "fa": "موافق",
+       "tr": "mowāfegh",
+       "de": "dafür; Befürworter/in",
+       "emoji": "👍"
+      },
+      {
+       "fa": "مترجم",
+       "tr": "motardschem",
+       "de": "Übersetzer/in",
+       "emoji": "🧑‍💼"
+      },
+      {
+       "fa": "پیشرفت",
+       "tr": "pīschraft",
+       "de": "Fortschritt",
+       "emoji": "📈"
+      },
+      {
+       "fa": "استدلال",
+       "tr": "estedlāl",
+       "de": "Argumentation",
+       "emoji": "🧩"
+      },
+      {
+       "fa": "نتیجه‌گیری",
+       "tr": "natīdschegīrī",
+       "de": "Schlussfolgerung",
+       "emoji": "🏁"
+      }
+     ],
+     "titel": "Memory"
+    },
+    {
+     "typ": "memory",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "موافق",
+       "tr": "mowāfegh",
+       "de": "dafür; Befürworter/in",
+       "emoji": "👍"
+      },
+      {
+       "fa": "نتیجه‌گیری",
+       "tr": "natīdschegīrī",
+       "de": "Schlussfolgerung",
+       "emoji": "🏁"
+      },
+      {
+       "fa": "دستیار صوتی",
+       "tr": "dastyār-e soutī",
+       "de": "Sprachassistent",
+       "emoji": "🗣️"
+      },
+      {
+       "fa": "بیکاری",
+       "tr": "bīkārī",
+       "de": "Arbeitslosigkeit",
+       "emoji": "📉"
+      },
+      {
+       "fa": "آینده",
+       "tr": "āyande",
+       "de": "Zukunft",
+       "emoji": "🔮"
+      },
+      {
+       "fa": "برنامه‌ی ترجمه",
+       "tr": "barnāme-ye tardschome",
+       "de": "Übersetzungsprogramm",
+       "emoji": "🈂️"
+      }
+     ],
+     "titel": "Memory: Wort & Bedeutung"
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "titel": "Lückensätze",
+   "vorschau": "___",
+   "karten": [
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>برادرم برای ___ ریاضی از یک ربات گفتگو کمک می‌گیرد.</span><br><span class='mini'>Mein Bruder holt sich für die Mathehausaufgabe Hilfe bei einem Chatbot.</span>",
+       "optionen": [
+        "تکلیف",
+        "فناوری",
+        "بیکاری"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>برادرم برای تکلیف ریاضی از یک ربات گفتگو کمک می‌گیرد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>مادربزرگ هر صبح با ___ حرف می‌زند و می‌گوید: «رادیو را روشن کن!»</span><br><span class='mini'>Oma spricht jeden Morgen mit dem Sprachassistenten und sagt: „Mach das Radio an!“</span>",
+       "optionen": [
+        "دستیار صوتی",
+        "پیشرفت",
+        "مخالف"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>مادربزرگ هر صبح با دستیار صوتی حرف می‌زند و می‌گوید: «رادیو را روشن کن!»</span>"
+      },
+      {
+       "frage": "<span class='fa'>پدرم با یک ___ نامه‌های اداری آلمانی را می‌فهمد.</span><br><span class='mini'>Mein Vater versteht deutsche Behördenbriefe mit einem Übersetzungsprogramm.</span>",
+       "optionen": [
+        "برنامه‌ی ترجمه",
+        "ترجمه‌ی ادبی",
+        "شعر"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>پدرم با یک برنامه‌ی ترجمه نامه‌های اداری آلمانی را می‌فهمد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>___ خود را به هیچ کس نگویید.</span><br><span class='mini'>Verraten Sie niemandem Ihr Passwort.</span>",
+       "optionen": [
+        "رمز عبور",
+        "خودکار",
+        "استدلال"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>رمز عبور خود را به هیچ کس نگویید.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>ماشین هنوز ___ شعر حافظ را نمی‌فهمد.</span><br><span class='mini'>Die Maschine versteht die Feinheit von Hafis’ Lyrik noch nicht.</span>",
+       "optionen": [
+        "ظرافت",
+        "پیشرفت",
+        "گوشی هوشمند"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>ماشین هنوز ظرافت شعر حافظ را نمی‌فهمد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>بعضی‌ها می‌ترسند که هوش مصنوعی باعث ___ شود.</span><br><span class='mini'>Manche fürchten, dass KI Arbeitslosigkeit verursacht.</span>",
+       "optionen": [
+        "بیکاری",
+        "دیدگاه",
+        "هوش مصنوعی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>بعضی‌ها می‌ترسند که هوش مصنوعی باعث بیکاری شود.</span>"
+      },
+      {
+       "frage": "<span class='fa'>ترجمه‌ی ماشینی سریع است، اما همیشه ___ نیست.</span><br><span class='mini'>Maschinelle Übersetzung ist schnell, aber nicht immer genau.</span>",
+       "optionen": [
+        "دقیق",
+        "ماشین",
+        "نتیجه‌گیری"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>ترجمه‌ی ماشینی سریع است، اما همیشه دقیق نیست.</span>"
+      },
+      {
+       "frage": "<span class='fa'>___ انسان را نمی‌شود با یک الگوریتم جایگزین کرد.</span><br><span class='mini'>Menschliche Kreativität kann man nicht durch einen Algorithmus ersetzen.</span>",
+       "optionen": [
+        "خلاقیت",
+        "حریم خصوصی",
+        "استدلال"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>خلاقیت انسان را نمی‌شود با یک الگوریتم جایگزین کرد.</span>"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

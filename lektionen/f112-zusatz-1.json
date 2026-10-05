@@ -1,0 +1,664 @@
+{
+ "id": "z1",
+ "titel": "Trainingspaket 1",
+ "beschreibung": "Wer passt zu wem?, Wort-Marathon, Lückensätze, Sätze aus den Texten.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "Wer passt zu wem?",
+   "vorschau": "🧩",
+   "karten": [
+    {
+     "typ": "zuordnen",
+     "titel": "Welches Kunsthandwerk passt?",
+     "text": "Fünf Kundinnen und Kunden suchen im Basar von Isfahan etwas Besonderes. Sieben Läden haben etwas anzubieten.",
+     "frage": "Welches Angebot passt am besten? Tippe es an.",
+     "angebote": [
+      {
+       "titel": "Täbris-Teppich",
+       "emoji": "🧶",
+       "fa": "فرش دستباف ابریشمی تبریز با ترنج ظریف؛ برای سالن پذیرایی.",
+       "de": "Handgeknüpfter Seidenteppich aus Täbris mit feinem Medaillon – für das Wohnzimmer."
+      },
+      {
+       "titel": "Qaschqai-Kelim",
+       "emoji": "🟧",
+       "fa": "گلیم عشایری قشقایی با نقش‌های هندسی و رنگ‌های شاد؛ سبک و قابل شستن.",
+       "de": "Qaschqai-Nomadenkelim mit geometrischen Mustern und fröhlichen Farben – leicht und waschbar."
+      },
+      {
+       "titel": "Emaille-Vase",
+       "emoji": "🔵",
+       "fa": "گلدان میناکاری آبی و فیروزه‌ای از اصفهان.",
+       "de": "Blau-türkise Emaille-Vase aus Isfahan."
+      },
+      {
+       "titel": "Intarsien-Schachbrett",
+       "emoji": "♟️",
+       "fa": "صفحه‌ی شطرنج خاتم‌کاری از هزاران تکه‌ی کوچک چوب و فلز.",
+       "de": "Schachbrett in Intarsienarbeit aus Tausenden kleinen Holz- und Metallstücken."
+      },
+      {
+       "titel": "Ghalamkar-Tischdecke",
+       "emoji": "🖌️",
+       "fa": "رومیزی قلمکار با مهر دستی و رنگ گیاهی.",
+       "de": "Handbedruckte Ghalamkar-Tischdecke mit Pflanzenfarben."
+      },
+      {
+       "titel": "Keramikfliesen",
+       "emoji": "🏺",
+       "fa": "کاشی‌های سفالی دست‌ساز با نقش گل برای دیوار.",
+       "de": "Handgemachte Keramikfliesen mit Blumenmuster für die Wand."
+      },
+      {
+       "titel": "Kupfertopf",
+       "emoji": "🥘",
+       "fa": "قابلمه‌ی مسی چکش‌کاری‌شده؛ غذا در آن آهسته و خوشمزه می‌پزد.",
+       "de": "Gehämmerter Kupfertopf – darin gart das Essen langsam und lecker."
+      }
+     ],
+     "personen": [
+      {
+       "name": "Herr Schneider",
+       "emoji": "♟️",
+       "fa": "آقای اشنایدر هر شب با دوستش شطرنج بازی می‌کند و هنر چوبی دوست دارد.",
+       "de": "Herr Schneider spielt jeden Abend mit seinem Freund Schach und liebt Holzkunst.",
+       "richtig": 3
+      },
+      {
+       "name": "Familie Rahimi",
+       "emoji": "👨‍👩‍👧",
+       "fa": "خانواده‌ی رحیمی سه بچه‌ی کوچک دارد و فرشی می‌خواهد که سبک باشد و بشود آن را شست.",
+       "de": "Familie Rahimi hat drei kleine Kinder und möchte einen Teppich, der leicht und waschbar ist.",
+       "richtig": 1
+      },
+      {
+       "name": "Frau Becker",
+       "emoji": "💐",
+       "fa": "خانم بکر عاشق گل است و دنبال یک ظرف آبی‌رنگ برای دسته‌گل‌هایش است.",
+       "de": "Frau Becker liebt Blumen und sucht ein blaues Gefäß für ihre Sträuße.",
+       "richtig": 2
+      },
+      {
+       "name": "Nima",
+       "emoji": "🍲",
+       "fa": "نیما آشپز است و می‌گوید خورش در ظرف فلزی سنگین بهتر جا می‌افتد.",
+       "de": "Nima ist Koch und sagt, Schmorgerichte gelingen in schweren Metalltöpfen besser.",
+       "richtig": 6
+      },
+      {
+       "name": "Sophie",
+       "emoji": "🍽️",
+       "fa": "سوفی برای میز ناهارخوری‌اش یک پارچه‌ی دست‌ساز با طرح سنتی می‌خواهد.",
+       "de": "Sophie sucht für ihren Esstisch ein handgefertigtes Tuch mit traditionellem Muster.",
+       "richtig": 4
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Wort-Marathon",
+   "vorschau": "⏱️",
+   "karten": [
+    {
+     "typ": "tempo",
+     "titel": "Marathon: alle Wörter",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 120,
+     "ziel": 25,
+     "woerter": [
+      {
+       "fa": "فرش",
+       "a": "Teppich"
+      },
+      {
+       "fa": "قالی",
+       "a": "Knüpfteppich"
+      },
+      {
+       "fa": "گلیم",
+       "a": "Kelim"
+      },
+      {
+       "fa": "گره",
+       "a": "Knoten"
+      },
+      {
+       "fa": "دستباف",
+       "a": "handgeknüpft, handgewebt"
+      },
+      {
+       "fa": "ماشینی",
+       "a": "maschinell gefertigt"
+      },
+      {
+       "fa": "رنگ طبیعی",
+       "a": "Naturfarbe"
+      },
+      {
+       "fa": "پشم",
+       "a": "Wolle"
+      },
+      {
+       "fa": "ابریشم",
+       "a": "Seide"
+      },
+      {
+       "fa": "نقشه",
+       "a": "Muster, Entwurf"
+      },
+      {
+       "fa": "دار قالی",
+       "a": "Knüpfstuhl"
+      },
+      {
+       "fa": "بافنده",
+       "a": "Knüpfer/in, Weber/in"
+      },
+      {
+       "fa": "ترنج",
+       "a": "Medaillon"
+      },
+      {
+       "fa": "گل",
+       "a": "Blume"
+      },
+      {
+       "fa": "بته‌جقه",
+       "a": "Paisley-Muster (Boteh)"
+      },
+      {
+       "fa": "حاشیه",
+       "a": "Bordüre, Rand"
+      },
+      {
+       "fa": "باغ",
+       "a": "Garten"
+      },
+      {
+       "fa": "درخت",
+       "a": "Baum"
+      },
+      {
+       "fa": "هندسی",
+       "a": "geometrisch"
+      },
+      {
+       "fa": "عشایری",
+       "a": "nomadisch, Nomaden-"
+      },
+      {
+       "fa": "شهری",
+       "a": "städtisch, Stadt-"
+      },
+      {
+       "fa": "نماد",
+       "a": "Symbol"
+      },
+      {
+       "fa": "متقارن",
+       "a": "symmetrisch"
+      },
+      {
+       "fa": "ظریف",
+       "a": "fein, zierlich"
+      },
+      {
+       "fa": "صنایع دستی",
+       "a": "Kunsthandwerk"
+      },
+      {
+       "fa": "بازار",
+       "a": "Basar"
+      },
+      {
+       "fa": "حجره",
+       "a": "Basarladen"
+      },
+      {
+       "fa": "چانه‌زنی",
+       "a": "Feilschen"
+      },
+      {
+       "fa": "میناکاری",
+       "a": "Emaillekunst"
+      },
+      {
+       "fa": "خاتم‌کاری",
+       "a": "Intarsienarbeit"
+      },
+      {
+       "fa": "قلمکار",
+       "a": "handbedruckter Stoff"
+      },
+      {
+       "fa": "سفال",
+       "a": "Keramik, Ton"
+      },
+      {
+       "fa": "مس",
+       "a": "Kupfer"
+      },
+      {
+       "fa": "اصل",
+       "a": "echt, original"
+      },
+      {
+       "fa": "تقلبی",
+       "a": "gefälscht"
+      },
+      {
+       "fa": "فروشنده",
+       "a": "Verkäufer/in"
+      },
+      {
+       "fa": "بافتن",
+       "a": "knüpfen, weben"
+      },
+      {
+       "fa": "چانه زدن",
+       "a": "feilschen"
+      },
+      {
+       "fa": "تخفیف دادن",
+       "a": "Rabatt geben"
+      },
+      {
+       "fa": "رنگ کردن",
+       "a": "färben"
+      },
+      {
+       "fa": "تشخیص دادن",
+       "a": "erkennen, unterscheiden"
+      },
+      {
+       "fa": "پهن کردن",
+       "a": "ausbreiten (Teppich)"
+      }
+     ]
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "دستباف",
+       "tr": "dastbāf",
+       "de": "handgeknüpft, handgewebt",
+       "emoji": "🤲"
+      },
+      {
+       "fa": "بازار",
+       "tr": "bāzār",
+       "de": "Basar",
+       "emoji": "🏪"
+      },
+      {
+       "fa": "متقارن",
+       "tr": "motaghāren",
+       "de": "symmetrisch",
+       "emoji": "🪞"
+      },
+      {
+       "fa": "ابریشم",
+       "tr": "abrīscham",
+       "de": "Seide",
+       "emoji": "🪡"
+      },
+      {
+       "fa": "نماد",
+       "tr": "nemād",
+       "de": "Symbol",
+       "emoji": "🔣"
+      },
+      {
+       "fa": "سفال",
+       "tr": "sofāl",
+       "de": "Keramik, Ton",
+       "emoji": "🏺"
+      }
+     ],
+     "titel": "Memory"
+    },
+    {
+     "typ": "memory",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "گل",
+       "tr": "gol",
+       "de": "Blume",
+       "emoji": "🌸"
+      },
+      {
+       "fa": "حاشیه",
+       "tr": "hāschiye",
+       "de": "Bordüre, Rand",
+       "emoji": "🔲"
+      },
+      {
+       "fa": "صنایع دستی",
+       "tr": "sanāyeʿ-e dastī",
+       "de": "Kunsthandwerk",
+       "emoji": "🧺"
+      },
+      {
+       "fa": "قالی",
+       "tr": "ghālī",
+       "de": "Knüpfteppich",
+       "emoji": "🟥"
+      },
+      {
+       "fa": "سفال",
+       "tr": "sofāl",
+       "de": "Keramik, Ton",
+       "emoji": "🏺"
+      },
+      {
+       "fa": "بته‌جقه",
+       "tr": "boteh-dschaghghe",
+       "de": "Paisley-Muster (Boteh)",
+       "emoji": "💧"
+      }
+     ],
+     "titel": "Memory: Wort & Bedeutung"
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "titel": "Lückensätze",
+   "vorschau": "___",
+   "karten": [
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>این فرش ___ است و بافتنش دو سال طول کشیده.</span><br><span class='mini'>Dieser Teppich ist handgeknüpft, und das Knüpfen hat zwei Jahre gedauert.</span>",
+       "optionen": [
+        "دستباف",
+        "بته‌جقه",
+        "گره"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>این فرش دستباف است و بافتنش دو سال طول کشیده.</span>"
+      },
+      {
+       "frage": "<span class='fa'>در هر سانتی‌متر مربع این قالی چهل ___ هست.</span><br><span class='mini'>Dieser Teppich hat vierzig Knoten pro Quadratzentimeter.</span>",
+       "optionen": [
+        "گره",
+        "نماد",
+        "قلمکار"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>در هر سانتی‌متر مربع این قالی چهل گره هست.</span>"
+      },
+      {
+       "frage": "<span class='fa'>برای رنگ قرمز از روناس، یک ___، استفاده می‌کنند.</span><br><span class='mini'>Für die rote Farbe verwendet man Krapp, eine Naturfarbe.</span>",
+       "optionen": [
+        "رنگ طبیعی",
+        "نماد",
+        "ترنج"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>برای رنگ قرمز از روناس، یک رنگ طبیعی، استفاده می‌کنند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>وسط این فرش یک ___ بزرگ به شکل لوزی هست.</span><br><span class='mini'>In der Mitte dieses Teppichs ist ein großes, rautenförmiges Medaillon.</span>",
+       "optionen": [
+        "ترنج",
+        "خاتم‌کاری",
+        "چانه‌زنی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>وسط این فرش یک ترنج بزرگ به شکل لوزی هست.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>___ شبیه یک قطره‌ی خمیده است و روی پارچه‌ها هم دیده می‌شود.</span><br><span class='mini'>Das Boteh sieht aus wie ein gebogener Tropfen und ist auch auf Stoffen zu sehen.</span>",
+       "optionen": [
+        "بته‌جقه",
+        "دستباف",
+        "صنایع دستی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>بته‌جقه شبیه یک قطره‌ی خمیده است و روی پارچه‌ها هم دیده می‌شود.</span>"
+      },
+      {
+       "frage": "<span class='fa'>فرش‌های ___ معمولا ساده‌تر و هندسی‌تر از فرش‌های شهری هستند.</span><br><span class='mini'>Nomadenteppiche sind meist einfacher und geometrischer als Stadtteppiche.</span>",
+       "optionen": [
+        "عشایری",
+        "فرش",
+        "هندسی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>فرش‌های عشایری معمولا ساده‌تر و هندسی‌تر از فرش‌های شهری هستند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>در بازار تبریز ___ یک هنر است؛ هیچ‌کس قیمت اول را قبول نمی‌کند.</span><br><span class='mini'>Im Basar von Täbris ist Feilschen eine Kunst; niemand akzeptiert den ersten Preis.</span>",
+       "optionen": [
+        "چانه‌زنی",
+        "نماد",
+        "دستباف"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>در بازار تبریز چانه‌زنی یک هنر است؛ هیچ‌کس قیمت اول را قبول نمی‌کند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>این جعبه‌ی ___ از هزاران تکه‌ی کوچک چوب و فلز ساخته شده است.</span><br><span class='mini'>Dieses Intarsienkästchen besteht aus Tausenden kleinen Holz- und Metallstücken.</span>",
+       "optionen": [
+        "خاتم‌کاری",
+        "بازار",
+        "میناکاری"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>این جعبه‌ی خاتم‌کاری از هزاران تکه‌ی کوچک چوب و فلز ساخته شده است.</span>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "e",
+   "titel": "Sätze aus den Texten",
+   "vorschau": "🧱",
+   "karten": [
+    {
+     "typ": "bauen",
+     "titel": "Baue den Satz",
+     "trenner": " ",
+     "woerter": [
+      {
+       "fa": "قیمت اول آن‌قدر بالا بود که یولیا چایش را تقریباً ریخت.",
+       "tr": "gheymat-e awwal ānghadr bālā būd ke yūliyā tschāyasch rā taghrīban rīcht.",
+       "de": "Der erste Preis war so hoch, dass Julia beinahe ihren Tee verschüttete.",
+       "teile": [
+        "قیمت",
+        "اول",
+        "آن‌قدر",
+        "بالا",
+        "بود",
+        "که",
+        "یولیا",
+        "چایش",
+        "را",
+        "تقریباً",
+        "ریخت"
+       ],
+       "extra": [
+        "ترنج"
+       ]
+      },
+      {
+       "fa": "در آخر گفت: «این فرش از ما بیشتر عمر می‌کند!»",
+       "tr": "dar āchar goft: «īn farsch az mā bīschtar ʿomr mīkonad!»",
+       "de": "Zum Schluss sagte er: „Dieser Teppich wird uns überleben!“",
+       "teile": [
+        "در",
+        "آخر",
+        "گفت",
+        "«این",
+        "فرش",
+        "از",
+        "ما",
+        "بیشتر",
+        "عمر",
+        "می‌کند»"
+       ],
+       "extra": [
+        "بهار"
+       ]
+      },
+      {
+       "fa": "فرش‌ها را معمولاً به دو گروه تقسیم می‌کنند: شهری و عشایری.",
+       "tr": "farschhā rā maʿmūlan be do gorūh taghsīm mīkonand: schahrī o ʿaschāyerī.",
+       "de": "Man teilt Teppiche meist in zwei Gruppen: Stadt- und Nomadenteppiche.",
+       "teile": [
+        "فرش‌ها",
+        "را",
+        "معمولاً",
+        "به",
+        "دو",
+        "گروه",
+        "تقسیم",
+        "می‌کنند",
+        "شهری",
+        "و",
+        "عشایری"
+       ],
+       "extra": [
+        "ترنج"
+       ]
+      },
+      {
+       "fa": "بهار پشت فرش را هم نگاه کرد تا گره‌ها را ببیند.",
+       "tr": "bahār poscht-e farsch rā ham negāh kard tā gerehā rā bebīnad.",
+       "de": "Bahar sah sich auch die Rückseite an, um die Knoten zu sehen.",
+       "teile": [
+        "بهار",
+        "پشت",
+        "فرش",
+        "را",
+        "هم",
+        "نگاه",
+        "کرد",
+        "تا",
+        "گره‌ها",
+        "را",
+        "ببیند"
+       ],
+       "extra": [
+        "ریخت."
+       ]
+      },
+      {
+       "fa": "یولیا عاشق یک قالی قرمز با ترنج آبی شد.",
+       "tr": "yūliyā ʿāschegh-e yek ghālī-ye ghermez bā torandsch-e ābī schod.",
+       "de": "Julia verliebte sich in einen roten Teppich mit blauem Medaillon.",
+       "teile": [
+        "یولیا",
+        "عاشق",
+        "یک",
+        "قالی",
+        "قرمز",
+        "با",
+        "ترنج",
+        "آبی",
+        "شد"
+       ],
+       "extra": [
+        "در"
+       ]
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Was bedeutet der Satz?",
+     "fragen": [
+      {
+       "frage": "„Zum Schluss sagte er: „Dieser Teppich wird uns überleben!““",
+       "optionen": [
+        "در آخر گفت: «این فرش از ما بیشتر عمر می‌کند!»",
+        "یولیا عاشق یک قالی قرمز با ترنج آبی شد.",
+        "فرش‌ها را معمولاً به دو گروه تقسیم می‌کنند: شهری و عشایری."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Der erste Preis war so hoch, dass Julia beinahe ihren Tee verschüttete.“",
+       "optionen": [
+        "قیمت اول آن‌قدر بالا بود که یولیا چایش را تقریباً ریخت.",
+        "فرش‌ها را معمولاً به دو گروه تقسیم می‌کنند: شهری و عشایری.",
+        "یولیا عاشق یک قالی قرمز با ترنج آبی شد."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Julia verliebte sich in einen roten Teppich mit blauem Medaillon.“",
+       "optionen": [
+        "یولیا عاشق یک قالی قرمز با ترنج آبی شد.",
+        "در آخر گفت: «این فرش از ما بیشتر عمر می‌کند!»",
+        "قیمت اول آن‌قدر بالا بود که یولیا چایش را تقریباً ریخت."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Man teilt Teppiche meist in zwei Gruppen: Stadt- und Nomadenteppiche.“",
+       "optionen": [
+        "فرش‌ها را معمولاً به دو گروه تقسیم می‌کنند: شهری و عشایری.",
+        "در آخر گفت: «این فرش از ما بیشتر عمر می‌کند!»",
+        "بهار پشت فرش را هم نگاه کرد تا گره‌ها را ببیند."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Bahar sah sich auch die Rückseite an, um die Knoten zu sehen.“",
+       "optionen": [
+        "بهار پشت فرش را هم نگاه کرد تا گره‌ها را ببیند.",
+        "یولیا عاشق یک قالی قرمز با ترنج آبی شد.",
+        "فرش‌ها را معمولاً به دو گروه تقسیم می‌کنند: شهری و عشایری."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,184 @@
+{
+ "id": "ug",
+ "art": "umgangssprache",
+ "titel": "Umgangssprache: So spricht man im Alltag",
+ "beschreibung": "Freiwilliger Extra-Teil: Umgangssprache.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "So spricht man",
+   "vorschau": "اون موقع",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Schrift ≠ Gespräch",
+     "text": "<ul><li><span class='fa'>آن → اون</span> · <span class='fa'>زمان → موقع</span>: <span class='fa'>اون موقع</span> – damals</li><li><span class='fa'>یادم است → یادمه</span></li><li><span class='fa'>نمی‌دانستم → نمی‌دونستم</span> (<span class='fa'>ا → و</span> vor ن)</li><li><span class='fa'>است → ـه</span>: <span class='fa'>قدیمی است → قدیمیه</span></li></ul>",
+     "stil": "merke"
+    },
+    {
+     "typ": "paare",
+     "links": "x",
+     "paare": [
+      {
+       "fa": "آن زمان",
+       "tr": "",
+       "de": "damals",
+       "x": "اون موقع"
+      },
+      {
+       "fa": "یادم است",
+       "tr": "",
+       "de": "ich erinnere mich",
+       "x": "یادمه"
+      },
+      {
+       "fa": "نمی‌دانستم",
+       "tr": "",
+       "de": "ich wusste nicht",
+       "x": "نمی‌دونستم"
+      },
+      {
+       "fa": "قدیمی است",
+       "tr": "",
+       "de": "es ist alt",
+       "x": "قدیمیه"
+      },
+      {
+       "fa": "خیابان‌ها",
+       "tr": "",
+       "de": "die Straßen",
+       "x": "خیابونا"
+      }
+     ],
+     "titel": "Schrift ↔ Gespräch"
+    },
+    {
+     "typ": "sortieren",
+     "titel": "Schrift oder Gespräch?",
+     "frage": "Schriftsprache oder Umgangssprache?",
+     "kategorien": [
+      "✍️ Schriftsprache",
+      "🗣️ Umgangssprache"
+     ],
+     "items": [
+      {
+       "fa": "آن زمان",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "یادم است",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "نمی‌دانستم",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "قدیمی است",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "خیابان‌ها",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "اون موقع",
+       "k": 1,
+       "say": false,
+       "e": "<i>ūn moghe</i> – geschrieben: <span class='fa'>آن زمان</span>"
+      },
+      {
+       "fa": "یادمه",
+       "k": 1,
+       "say": false,
+       "e": "<i>yādame</i> – geschrieben: <span class='fa'>یادم است</span>"
+      },
+      {
+       "fa": "نمی‌دونستم",
+       "k": 1,
+       "say": false,
+       "e": "<i>nemīdūnestam</i> – geschrieben: <span class='fa'>نمی‌دانستم</span>"
+      },
+      {
+       "fa": "قدیمیه",
+       "k": 1,
+       "say": false,
+       "e": "<i>ghadīmīye</i> – geschrieben: <span class='fa'>قدیمی است</span>"
+      },
+      {
+       "fa": "خیابونا",
+       "k": 1,
+       "say": false,
+       "e": "<i>chiyābūnā</i> – geschrieben: <span class='fa'>خیابان‌ها</span>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Kurz-Dialog",
+   "vorschau": "💬",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Damals …",
+     "text": "Umgangssprache! Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "بابابزرگ، اون موقع که بچه بودی، تهران چه شکلی بود؟",
+       "tr": "bābābozorg, ūn moghe ke batschtsche būdī, tehrān tsche schekl-ī būd?",
+       "de": "Opa, wie sah Teheran damals aus, als du ein Kind warst?"
+      },
+      {
+       "fa": "یادمه خیابونا هنوز خاکی بودن و ما تو کوچه فوتبال بازی می‌کردیم.",
+       "tr": "yādame chiyābūnā hanūz chākī būdan o mā tū kūtsche fūtbāl bāzī mīkardīm.",
+       "de": "Ich weiß noch, die Straßen waren noch ungepflastert, und wir spielten in der Gasse Fußball."
+      },
+      {
+       "fa": "واقعاً؟ نمی‌دونستم!",
+       "tr": "wāghean? nemīdūnestam!",
+       "de": "Wirklich? Das wusste ich nicht!"
+      },
+      {
+       "fa": "آره. خونه‌ی اون موقع‌مون هنوز هست، ولی خیلی قدیمیه!",
+       "tr": "āre. chūne-ye ūn moghemūn hanūz hast, walī cheylī ghadīmīye!",
+       "de": "Ja. Unser Haus von damals gibt es noch, aber es ist sehr alt!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Verstanden?",
+     "fragen": [
+      {
+       "frage": "Wo spielte der Opa als Kind Fußball?",
+       "optionen": [
+        "in der Gasse",
+        "im Stadion",
+        "in der Schule"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "<span class='fa'>یادمه</span> =",
+       "optionen": [
+        "یادم است",
+        "یاد می‌گیرم",
+        "یادت است"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,568 @@
+{
+ "id": "tx",
+ "art": "texte",
+ "titel": "Texte & Dialoge",
+ "beschreibung": "Lesetexte mit Fragen und Dialoge zum Ordnen.",
+ "stationen": [
+  {
+   "id": "t1",
+   "titel": "Alltag: Ein Morgen bei Familie Rahimi",
+   "vorschau": "Ein Morgen bei Familie Rahimi",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>آلبالو</span> – Sauerkirsche · <span class='fa'>تا … نخوری</span> – solange du nicht … · <span class='fa'>فرق کردن</span> – anders sein</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Alltag: Ein Morgen bei Familie Rahimi",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "ساعت شش و نیم صبح است و خانه‌ی رحیمی‌ها هنوز ساکت است.",
+       "tr": "sāʿat-e schesch o nīm-e sobh ast o chāne-ye rahīmīhā hanūz sāket ast.",
+       "de": "Es ist halb sieben morgens, und bei den Rahimis ist es noch still."
+      },
+      {
+       "fa": "آقای رحیمی مثل همیشه اول از همه بیدار می‌شود.",
+       "tr": "āghā-ye rahīmī mesl-e hamīsche awwal az hame bīdār mīschawad.",
+       "de": "Herr Rahimi wacht wie immer als Erster auf."
+      },
+      {
+       "fa": "او سماور را روشن می‌کند و برای خرید نان به نانوایی سر کوچه می‌رود.",
+       "tr": "ū samāwar rā rouschan mīkonad o barā-ye charīd-e nān be nānwāyī-ye sar-e kūtsche mīravad.",
+       "de": "Er schaltet den Samowar an und geht zur Bäckerei an der Ecke, um Brot zu kaufen."
+      },
+      {
+       "fa": "جلوی نانوایی صف طولانی است؛ همه نان سنگک داغ می‌خواهند.",
+       "tr": "dschelou-ye nānwāyī saf-e tūlānī ast; hame nān-e sangak-e dāgh mīchāhand.",
+       "de": "Vor der Bäckerei ist eine lange Schlange; alle wollen heißes Sangak-Brot."
+      },
+      {
+       "fa": "وقتی برمی‌گردد، خانم رحیمی چای را دم کرده و سفره را چیده است.",
+       "tr": "waghtī barmīgardad, chānom-e rahīmī tschāy rā dam karde o sofre rā tschīde ast.",
+       "de": "Als er zurückkommt, hat Frau Rahimi den Tee aufgebrüht und den Tisch gedeckt."
+      },
+      {
+       "fa": "روی سفره پنیر، گردو، کره، مربای آلبالو و خرما هست.",
+       "tr": "rū-ye sofre panīr, gerdū, kare, morabbā-ye ālbālū o chormā hast.",
+       "de": "Auf dem Tisch gibt es Käse, Walnüsse, Butter, Sauerkirschmarmelade und Datteln."
+      },
+      {
+       "fa": "سارا، دختر بزرگ‌تر، فقط یک استکان چای می‌خورد و با عجله به دانشگاه می‌رود.",
+       "tr": "sārā, dochtar-e bozorgtar, faghat yek estekān tschāy mīchorad o bā ʿadschale be dāneschgāh mīravad.",
+       "de": "Sara, die ältere Tochter, trinkt nur ein Glas Tee und eilt zur Uni."
+      },
+      {
+       "fa": "پسر کوچک‌تر، آرین، شب‌زنده‌دار است و صبح‌ها اصلا حوصله ندارد.",
+       "tr": "pesar-e kūtschaktar, āriyan, schabzendedār ast o sobhhā aslan hosele nadārad.",
+       "de": "Der jüngere Sohn, Arian, ist eine Nachteule und hat morgens überhaupt keine Lust."
+      },
+      {
+       "fa": "مادرش می‌گوید: «تا صبحانه نخوری، از خانه بیرون نمی‌روی!»",
+       "tr": "mādarasch mīgūyad: «tā sobhāne nachorī, az chāne bīrūn nemīravī!»",
+       "de": "Seine Mutter sagt: „Solange du nicht frühstückst, gehst du nicht aus dem Haus!“"
+      },
+      {
+       "fa": "آقای رحیمی می‌خندد: «من هم بچه که بودم، همین‌طور بودم.»",
+       "tr": "āghā-ye rahīmī mīchandad: «man ham batschtsche ke būdam, hamīntour būdam.»",
+       "de": "Herr Rahimi lacht: „Als ich Kind war, war ich genauso.“"
+      },
+      {
+       "fa": "جمعه‌ها همه چیز فرق می‌کند: کسی عجله ندارد و خانواده دو ساعت سر سفره می‌نشیند.",
+       "tr": "dschomʿehā hame tschīz fargh mīkonad: kasī ʿadschale nadārad o chānewāde do sāʿat sar-e sofre mīneschīnad.",
+       "de": "Freitags ist alles anders: Niemand hat es eilig, und die Familie sitzt zwei Stunden am Tisch."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "آقای رحیمی معمولا آخر از همه بیدار می‌شود.",
+       "fest": true,
+       "erkl": "Er wacht <b>als Erster</b> auf."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "خانم رحیمی سفره را می‌چیند.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "سارا صبحانه‌ی کامل می‌خورد.",
+       "fest": true,
+       "erkl": "Sie trinkt nur <b>ein Glas Tee</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "آرین صبح‌ها حوصله ندارد.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "جمعه‌ها خانواده با عجله صبحانه می‌خورد.",
+       "fest": true,
+       "erkl": "Freitags hat <b>niemand</b> es eilig."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Was kauft Herr Rahimi?",
+       "optionen": [
+        "heißes Sangak-Brot",
+        "Käse",
+        "Milch"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was sagt die Mutter zu Arian?",
+       "optionen": [
+        "Ohne Frühstück geht er nicht aus dem Haus.",
+        "Er soll früher schlafen gehen.",
+        "Er soll Brot kaufen."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie lange sitzt die Familie freitags am Tisch?",
+       "optionen": [
+        "zwei Stunden",
+        "zehn Minuten",
+        "den ganzen Tag"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was war Herr Rahimi als Kind?",
+       "optionen": [
+        "genauso morgenmuffelig wie Arian",
+        "ein Frühaufsteher",
+        "ein guter Koch"
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "آقای رحیمی مثل همیشه اول از همه بیدار می‌شود.",
+       "tr": "āghā-ye rahīmī mesl-e hamīsche awwal az hame bīdār mīschawad.",
+       "de": "Herr Rahimi wacht wie immer als Erster auf."
+      },
+      {
+       "fa": "او سماور را روشن می‌کند و برای خرید نان به نانوایی سر کوچه می‌رود.",
+       "tr": "ū samāwar rā rouschan mīkonad o barā-ye charīd-e nān be nānwāyī-ye sar-e kūtsche mīravad.",
+       "de": "Er schaltet den Samowar an und geht zur Bäckerei an der Ecke, um Brot zu kaufen."
+      },
+      {
+       "fa": "جلوی نانوایی صف طولانی است؛ همه نان سنگک داغ می‌خواهند.",
+       "tr": "dschelou-ye nānwāyī saf-e tūlānī ast; hame nān-e sangak-e dāgh mīchāhand.",
+       "de": "Vor der Bäckerei ist eine lange Schlange; alle wollen heißes Sangak-Brot."
+      },
+      {
+       "fa": "وقتی برمی‌گردد، خانم رحیمی چای را دم کرده و سفره را چیده است.",
+       "tr": "waghtī barmīgardad, chānom-e rahīmī tschāy rā dam karde o sofre rā tschīde ast.",
+       "de": "Als er zurückkommt, hat Frau Rahimi den Tee aufgebrüht und den Tisch gedeckt."
+      },
+      {
+       "fa": "روی سفره پنیر، گردو، کره، مربای آلبالو و خرما هست.",
+       "tr": "rū-ye sofre panīr, gerdū, kare, morabbā-ye ālbālū o chormā hast.",
+       "de": "Auf dem Tisch gibt es Käse, Walnüsse, Butter, Sauerkirschmarmelade und Datteln."
+      },
+      {
+       "fa": "سارا، دختر بزرگ‌تر، فقط یک استکان چای می‌خورد و با عجله به دانشگاه می‌رود.",
+       "tr": "sārā, dochtar-e bozorgtar, faghat yek estekān tschāy mīchorad o bā ʿadschale be dāneschgāh mīravad.",
+       "de": "Sara, die ältere Tochter, trinkt nur ein Glas Tee und eilt zur Uni."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t2",
+   "titel": "Hintergrund: Wie Iraner frühstücken",
+   "vorschau": "Wie Iraner frühstücken",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>ترکیب</span> – Kombination · <span class='fa'>حذف کردن</span> – weglassen · <span class='fa'>فرنگی</span> – westlich, europäisch · <span class='fa'>دورهمی</span> – geselliges Beisammensein · <span class='fa'>کله‌پاچه</span> – Kopf-und-Füße-Gericht</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Hintergrund: Wie Iraner frühstücken",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "صبحانه در ایران معمولا ساده است، اما بدون نان کامل نیست.",
+       "tr": "sobhāne dar īrān maʿmūlan sāde ast, ammā bedūn-e nān kāmel nīst.",
+       "de": "Das Frühstück in Iran ist meist einfach, aber ohne Brot ist es nicht vollständig."
+      },
+      {
+       "fa": "نان سنگک، بربری و لواش سه نوع نان محبوب هستند و هر کدام طرفداران خودش را دارد.",
+       "tr": "nān-e sangak, barbarī o lawāsch se nouʿ nān-e mahbūb hastand o har kodām tarafdārān-e chodasch rā dārad.",
+       "de": "Sangak, Barbari und Lavasch sind drei beliebte Brotsorten, und jede hat ihre Fans."
+      },
+      {
+       "fa": "ترکیب نان و پنیر و گردو شاید معروف‌ترین صبحانه‌ی ایرانی باشد.",
+       "tr": "tarkīb-e nān o panīr o gerdū schāyad maʿrūftarīn sobhāne-ye īrānī bāschad.",
+       "de": "Die Kombination aus Brot, Käse und Walnuss ist vielleicht das bekannteste iranische Frühstück."
+      },
+      {
+       "fa": "چای همیشه همراه صبحانه است؛ بسیاری از ایرانی‌ها روزی چند استکان چای می‌نوشند.",
+       "tr": "tschāy hamīsche hamrāh-e sobhāne ast; besyārī az īrānīhā rūzī tschand estekān tschāy mīnūschand.",
+       "de": "Tee gehört immer zum Frühstück; viele Iraner trinken mehrere Gläser Tee am Tag."
+      },
+      {
+       "fa": "در زمستان، غذاهای گرم مثل حلیم و عدسی طرفدار زیادی دارد.",
+       "tr": "dar zemestān, ghazāhā-ye garm mesl-e halīm o ʿadasī tarafdār-e ziyādī dārad.",
+       "de": "Im Winter sind warme Speisen wie Halim und Linsensuppe sehr beliebt."
+      },
+      {
+       "fa": "بعضی از رستوران‌ها فقط صبح‌ها باز هستند و فقط حلیم یا کله‌پاچه می‌فروشند.",
+       "tr": "baʿzī az restorānhā faghat sobhhā bāz hastand o faghat halīm yā kallepātsche mīforūschand.",
+       "de": "Manche Restaurants haben nur morgens geöffnet und verkaufen nur Halim oder Kalleh Patscheh."
+      },
+      {
+       "fa": "در گذشته، خانواده‌ها روی زمین دور سفره می‌نشستند؛ امروزه بیشتر پشت میز صبحانه می‌خورند.",
+       "tr": "dar gozaschte, chānewādehā rū-ye zamīn dour-e sofre mīneschastand; emrūze bīschtar poscht-e mīz sobhāne mīchorand.",
+       "de": "Früher saßen Familien am Boden um das Tischtuch; heute frühstücken die meisten am Tisch."
+      },
+      {
+       "fa": "در شهرهای بزرگ، جوان‌ها اغلب وقت ندارند و صبحانه را حذف می‌کنند.",
+       "tr": "dar schahrhā-ye bozorg, dschawānhā aghlab waght nadārand o sobhāne rā hazf mīkonand.",
+       "de": "In Großstädten haben junge Leute oft keine Zeit und lassen das Frühstück aus."
+      },
+      {
+       "fa": "کافه‌های جدید هم صبحانه‌ی «فرنگی» با قهوه و کروسان سرو می‌کنند.",
+       "tr": "kāfehā-ye dschadīd ham sobhāne-ye «farangī» bā ghahwe o kurwāsān serw mīkonand.",
+       "de": "Neue Cafés servieren auch ein „westliches“ Frühstück mit Kaffee und Croissant."
+      },
+      {
+       "fa": "با این حال، صبح جمعه هنوز هم برای خیلی از خانواده‌ها زمان صبحانه‌ی طولانی و دورهمی است.",
+       "tr": "bā īn hāl, sobh-e dschomʿe hanūz ham barā-ye cheylī az chānewādehā zamān-e sobhāne-ye tūlānī o dourhamī ast.",
+       "de": "Trotzdem ist der Freitagmorgen für viele Familien noch immer Zeit für ein langes, geselliges Frühstück."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "بدون نان، صبحانه‌ی ایرانی کامل نیست.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "چای در صبحانه‌ی ایرانی نقشی ندارد.",
+       "fest": true,
+       "erkl": "Tee gehört <b>immer</b> dazu."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "حلیم بیشتر در تابستان خورده می‌شود.",
+       "fest": true,
+       "erkl": "Eher im <b>Winter</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "امروزه بیشتر خانواده‌ها پشت میز صبحانه می‌خورند.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "جوان‌های شهری همیشه صبحانه‌ی کامل می‌خورند.",
+       "fest": true,
+       "erkl": "Sie lassen es <b>oft aus</b>."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Was ist vielleicht das bekannteste iranische Frühstück?",
+       "optionen": [
+        "Brot, Käse und Walnuss",
+        "Halim",
+        "Croissant und Kaffee"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was verkaufen manche Restaurants nur morgens?",
+       "optionen": [
+        "Halim oder Kalleh Patscheh",
+        "Pizza",
+        "Kebab"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was hat sich verändert?",
+       "optionen": [
+        "Man frühstückt eher am Tisch als am Boden.",
+        "Man trinkt keinen Tee mehr.",
+        "Man isst kein Brot mehr."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was bleibt gleich?",
+       "optionen": [
+        "das lange Familienfrühstück am Freitag",
+        "das Frühstück im Café",
+        "Halim im Sommer"
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "نان سنگک، بربری و لواش سه نوع نان محبوب هستند و هر کدام طرفداران خودش را دارد.",
+       "tr": "nān-e sangak, barbarī o lawāsch se nouʿ nān-e mahbūb hastand o har kodām tarafdārān-e chodasch rā dārad.",
+       "de": "Sangak, Barbari und Lavasch sind drei beliebte Brotsorten, und jede hat ihre Fans."
+      },
+      {
+       "fa": "ترکیب نان و پنیر و گردو شاید معروف‌ترین صبحانه‌ی ایرانی باشد.",
+       "tr": "tarkīb-e nān o panīr o gerdū schāyad maʿrūftarīn sobhāne-ye īrānī bāschad.",
+       "de": "Die Kombination aus Brot, Käse und Walnuss ist vielleicht das bekannteste iranische Frühstück."
+      },
+      {
+       "fa": "چای همیشه همراه صبحانه است؛ بسیاری از ایرانی‌ها روزی چند استکان چای می‌نوشند.",
+       "tr": "tschāy hamīsche hamrāh-e sobhāne ast; besyārī az īrānīhā rūzī tschand estekān tschāy mīnūschand.",
+       "de": "Tee gehört immer zum Frühstück; viele Iraner trinken mehrere Gläser Tee am Tag."
+      },
+      {
+       "fa": "در زمستان، غذاهای گرم مثل حلیم و عدسی طرفدار زیادی دارد.",
+       "tr": "dar zemestān, ghazāhā-ye garm mesl-e halīm o ʿadasī tarafdār-e ziyādī dārad.",
+       "de": "Im Winter sind warme Speisen wie Halim und Linsensuppe sehr beliebt."
+      },
+      {
+       "fa": "بعضی از رستوران‌ها فقط صبح‌ها باز هستند و فقط حلیم یا کله‌پاچه می‌فروشند.",
+       "tr": "baʿzī az restorānhā faghat sobhhā bāz hastand o faghat halīm yā kallepātsche mīforūschand.",
+       "de": "Manche Restaurants haben nur morgens geöffnet und verkaufen nur Halim oder Kalleh Patscheh."
+      },
+      {
+       "fa": "در گذشته، خانواده‌ها روی زمین دور سفره می‌نشستند؛ امروزه بیشتر پشت میز صبحانه می‌خورند.",
+       "tr": "dar gozaschte, chānewādehā rū-ye zamīn dour-e sofre mīneschastand; emrūze bīschtar poscht-e mīz sobhāne mīchorand.",
+       "de": "Früher saßen Familien am Boden um das Tischtuch; heute frühstücken die meisten am Tisch."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d1",
+   "titel": "Dialog: Frühstück im Café",
+   "vorschau": "Frühstück im Café",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Lena und ihre iranische Kommilitonin Mahsa treffen sich am Samstagmorgen in einem Café in Teheran.</p>"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "مهسا: سلام لنا! صبحانه خوردی؟",
+       "tr": "salām lenā! sobhāne chordī?",
+       "de": "Hallo Lena! Hast du schon gefrühstückt?"
+      },
+      {
+       "fa": "لنا: نه، من معمولا صبح‌ها فقط قهوه می‌خورم.",
+       "tr": "na, man maʿmūlan sobhhā faghat ghahwe mīchoram.",
+       "de": "Nein, ich trinke morgens normalerweise nur Kaffee."
+      },
+      {
+       "fa": "مهسا: فقط قهوه؟ اینجا یه صبحانه‌ی ایرانی عالی دارن. امتحان کن!",
+       "tr": "faghat ghahwe? īndschā ye sobhāne-ye īrānī-ye ʿālī dāran. emtehān kon!",
+       "de": "Nur Kaffee? Hier gibt es ein tolles iranisches Frühstück. Probier es!"
+      },
+      {
+       "fa": "لنا: چی داره؟",
+       "tr": "tschī dāre?",
+       "de": "Was gibt es da?"
+      },
+      {
+       "fa": "مهسا: نون سنگک، پنیر و گردو، گوجه، خیار و یه استکان چای تازه‌دم.",
+       "tr": "nūn-e sangak, panīr o gerdū, gūdsche, chiyār o ye estekān tschāy-e tāzedam.",
+       "de": "Sangak-Brot, Käse und Walnüsse, Tomate, Gurke und ein Glas frisch gebrühter Tee."
+      },
+      {
+       "fa": "لنا: خوبه! تو آلمان ما بیشتر نون و کره و مربا می‌خوریم.",
+       "tr": "chūbe! tū ālmān mā bīschtar nūn o kare o morabbā mīchorīm.",
+       "de": "Gut! In Deutschland essen wir eher Brot, Butter und Marmelade."
+      },
+      {
+       "fa": "مهسا: ما هم گاهی مربا می‌خوریم، مخصوصا مربای آلبالو.",
+       "tr": "mā ham gāhī morabbā mīchorīm, machsūsan morabbā-ye ālbālū.",
+       "de": "Wir essen auch manchmal Marmelade, besonders Sauerkirschmarmelade."
+      },
+      {
+       "fa": "لنا: پس یه صبحانه‌ی ایرانی، لطفا. با چای پررنگ!",
+       "tr": "pas ye sobhāne-ye īrānī, lotfan. bā tschāy-e porrang!",
+       "de": "Dann ein iranisches Frühstück, bitte. Mit starkem Tee!"
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "مهسا: سلام لنا! صبحانه خوردی؟",
+       "tr": "salām lenā! sobhāne chordī?",
+       "de": "Hallo Lena! Hast du schon gefrühstückt?"
+      },
+      {
+       "fa": "لنا: نه، من معمولا صبح‌ها فقط قهوه می‌خورم.",
+       "tr": "na, man maʿmūlan sobhhā faghat ghahwe mīchoram.",
+       "de": "Nein, ich trinke morgens normalerweise nur Kaffee."
+      },
+      {
+       "fa": "مهسا: فقط قهوه؟ اینجا یه صبحانه‌ی ایرانی عالی دارن. امتحان کن!",
+       "tr": "faghat ghahwe? īndschā ye sobhāne-ye īrānī-ye ʿālī dāran. emtehān kon!",
+       "de": "Nur Kaffee? Hier gibt es ein tolles iranisches Frühstück. Probier es!"
+      },
+      {
+       "fa": "لنا: چی داره؟",
+       "tr": "tschī dāre?",
+       "de": "Was gibt es da?"
+      },
+      {
+       "fa": "مهسا: نون سنگک، پنیر و گردو، گوجه، خیار و یه استکان چای تازه‌دم.",
+       "tr": "nūn-e sangak, panīr o gerdū, gūdsche, chiyār o ye estekān tschāy-e tāzedam.",
+       "de": "Sangak-Brot, Käse und Walnüsse, Tomate, Gurke und ein Glas frisch gebrühter Tee."
+      },
+      {
+       "fa": "لنا: خوبه! تو آلمان ما بیشتر نون و کره و مربا می‌خوریم.",
+       "tr": "chūbe! tū ālmān mā bīschtar nūn o kare o morabbā mīchorīm.",
+       "de": "Gut! In Deutschland essen wir eher Brot, Butter und Marmelade."
+      },
+      {
+       "fa": "مهسا: ما هم گاهی مربا می‌خوریم، مخصوصا مربای آلبالو.",
+       "tr": "mā ham gāhī morabbā mīchorīm, machsūsan morabbā-ye ālbālū.",
+       "de": "Wir essen auch manchmal Marmelade, besonders Sauerkirschmarmelade."
+      },
+      {
+       "fa": "لنا: پس یه صبحانه‌ی ایرانی، لطفا. با چای پررنگ!",
+       "tr": "pas ye sobhāne-ye īrānī, lotfan. bā tschāy-e porrang!",
+       "de": "Dann ein iranisches Frühstück, bitte. Mit starkem Tee!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Was frühstückt Lena normalerweise?",
+       "optionen": [
+        "nur Kaffee",
+        "Brot und Käse",
+        "nichts"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was isst man in Deutschland laut Lena?",
+       "optionen": [
+        "Brot, Butter und Marmelade",
+        "Halim",
+        "Walnüsse"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Welchen Tee bestellt Lena?",
+       "optionen": [
+        "starken Tee",
+        "schwachen Tee",
+        "Kräutertee"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -421,9 +421,9 @@
    "id": "23",
    "bereich": "a",
    "nummer": 25,
-   "titel": "Falls schon passiert – Bedingungen II",
+   "titel": "Falls schon passiert – Bedingungen II & ماضی التزامی",
    "titelFa": "جُملِه‌هایِ شَرطی ۲",
-   "untertitel": "اگر + Perfekt, Konjunktiv Vergangenheit, شاید/ممکن است",
+   "untertitel": "اگر + Perfekt, ماضی التزامی (رفته باشد), تا … باید, شاید/ممکن است",
    "datei": "23-wenn2.json",
    "standard": "offen",
    "zusatz": [
@@ -481,6 +481,261 @@
     "m"
    ],
    "bestehen": 70
+  },
+  {
+   "id": "f101",
+   "bereich": "f1",
+   "nummer": 1,
+   "titel": "Frühstück & Essgewohnheiten",
+   "titelFa": "صبحانه و عادت‌های غذایی",
+   "untertitel": "Ein Morgen bei Familie Rahimi und wie Iraner frühstücken. Wiederholung der Zeiten, Gewohnheiten mit معمولاً, اغلب, گاهی.",
+   "datei": "f101-fruehstueck.json",
+   "standard": "offen",
+   "zusatz": [
+    "f101-texte.json",
+    "f101-zusatz-1.json",
+    "f101-umgangssprache.json"
+   ],
+   "wortschatz": "ws-f101.json",
+   "voraussetzung": "f1test"
+  },
+  {
+   "id": "f102",
+   "bereich": "f1",
+   "nummer": 2,
+   "titel": "Wohnen: vom Hofhaus zum Hochhaus",
+   "titelFa": "خانه‌های دیروز و امروز",
+   "untertitel": "Ein Umzug nach Teheran und der Wandel der Wohnkultur. Partizipien als Adjektive: ساخته‌شده, شکسته, نویسنده, خسته‌کننده.",
+   "datei": "f102-wohnen.json",
+   "standard": "offen",
+   "zusatz": [
+    "f102-texte.json",
+    "f102-zusatz-1.json",
+    "f102-umgangssprache.json"
+   ],
+   "wortschatz": "ws-f102.json",
+   "voraussetzung": "f1test"
+  },
+  {
+   "id": "f103",
+   "bereich": "f1",
+   "nummer": 3,
+   "titel": "Zeit & Pünktlichkeit",
+   "titelFa": "زمان و وقت‌شناسی",
+   "untertitel": "„Ich bin in fünf Minuten da!“ – Zeitgefühl in Iran und Deutschland. Zeitkonnektoren II: به محض اینکه, هر وقت که, از وقتی که, در حالی که, تا اینکه.",
+   "datei": "f103-zeit.json",
+   "standard": "offen",
+   "zusatz": [
+    "f103-texte.json",
+    "f103-zusatz-1.json",
+    "f103-umgangssprache.json"
+   ],
+   "wortschatz": "ws-f103.json",
+   "voraussetzung": "f1test"
+  },
+  {
+   "id": "f104",
+   "bereich": "f1",
+   "nummer": 4,
+   "titel": "Familie heute",
+   "titelFa": "خانواده‌ی امروز",
+   "untertitel": "Ein Freitagsessen mit drei Generationen und der Wandel der Familie. Vergleich II: هر چه … تر، … تر, نه تنها … بلکه, هم … هم, یا … یا.",
+   "datei": "f104-familie.json",
+   "standard": "offen",
+   "zusatz": [
+    "f104-texte.json",
+    "f104-zusatz-1.json",
+    "f104-umgangssprache.json"
+   ],
+   "wortschatz": "ws-f104.json",
+   "voraussetzung": "f1test"
+  },
+  {
+   "id": "f105",
+   "bereich": "f1",
+   "nummer": 5,
+   "titel": "Arbeit & Geld",
+   "titelFa": "کار و درآمد",
+   "untertitel": "Das erste Gehalt und die Arbeitswelt junger Iraner. Nominalisierung: Infinitiv als Nomen, Verbalnomen auf ـش, Abstrakta auf ـی und ـگی.",
+   "datei": "f105-arbeit.json",
+   "standard": "offen",
+   "zusatz": [
+    "f105-texte.json",
+    "f105-zusatz-1.json",
+    "f105-umgangssprache.json"
+   ],
+   "wortschatz": "ws-f105.json",
+   "voraussetzung": "f1test"
+  },
+  {
+   "id": "f106",
+   "bereich": "f1",
+   "nummer": 6,
+   "titel": "Gesundheit: Morgensport und alte Heilkunde",
+   "titelFa": "سلامتی و طب سنتی",
+   "untertitel": "Morgensport im Park und die Lehre von „warm“ und „kalt“. Kausativ: خنداندن, رساندن, خواباندن – und باعث شدن, مجبور کردن.",
+   "datei": "f106-gesundheit.json",
+   "standard": "offen",
+   "zusatz": [
+    "f106-texte.json",
+    "f106-zusatz-1.json",
+    "f106-umgangssprache.json"
+   ],
+   "wortschatz": "ws-f106.json",
+   "voraussetzung": "f1test"
+  },
+  {
+   "id": "f107",
+   "bereich": "f1",
+   "nummer": 7,
+   "titel": "Medien & Sprache",
+   "titelFa": "رسانه و زبان",
+   "untertitel": "Chaos im Familienchat und die Debatte um Finglisch. Indirekte Rede: گفت که …, پرسید که آیا …, خواست که + Konjunktiv.",
+   "datei": "f107-medien.json",
+   "standard": "offen",
+   "zusatz": [
+    "f107-texte.json",
+    "f107-zusatz-1.json",
+    "f107-umgangssprache.json"
+   ],
+   "wortschatz": "ws-f107.json",
+   "voraussetzung": "f1test"
+  },
+  {
+   "id": "f108",
+   "bereich": "f1",
+   "nummer": 8,
+   "titel": "Kalender & Feste",
+   "titelFa": "تقویم و جشن‌ها",
+   "untertitel": "Frühjahrsputz, Haft-Sin und ein erstaunlich genauer Kalender. Unpersönliche Konstruktionen: می‌شود رفت, باید گفت, می‌گویند که …, آدم …",
+   "datei": "f108-kalender.json",
+   "standard": "offen",
+   "zusatz": [
+    "f108-texte.json",
+    "f108-zusatz-1.json",
+    "f108-umgangssprache.json"
+   ],
+   "wortschatz": "ws-f108.json",
+   "voraussetzung": "f1test"
+  },
+  {
+   "id": "f109",
+   "bereich": "f1",
+   "nummer": 9,
+   "titel": "Reisen: Yazd und die Qanate",
+   "titelFa": "سفر: یزد و قنات‌ها",
+   "untertitel": "Ein Reisebericht aus Yazd und die unterirdischen Wasserwege Irans. Relativsätze II (شهری که در آن …, آنچه, هر کس که) und خود.",
+   "datei": "f109-reisen.json",
+   "standard": "offen",
+   "zusatz": [
+    "f109-texte.json",
+    "f109-zusatz-1.json",
+    "f109-umgangssprache.json"
+   ],
+   "wortschatz": "ws-f109.json",
+   "voraussetzung": "f1test"
+  },
+  {
+   "id": "f110",
+   "bereich": "f1",
+   "nummer": 10,
+   "titel": "Umwelt",
+   "titelFa": "محیط زیست",
+   "untertitel": "Ein Smogtag in Teheran und das Drama des Urmia-Sees. Konzessiv und kausal: با اینکه, اگرچه, با وجود – چون, زیرا, از آنجا که, بنابراین, در نتیجه.",
+   "datei": "f110-umwelt.json",
+   "standard": "offen",
+   "zusatz": [
+    "f110-texte.json",
+    "f110-zusatz-1.json",
+    "f110-umgangssprache.json"
+   ],
+   "wortschatz": "ws-f110.json",
+   "voraussetzung": "f1test"
+  },
+  {
+   "id": "f111",
+   "bereich": "f1",
+   "nummer": 11,
+   "titel": "Literatur im Alltag",
+   "titelFa": "ادبیات در زندگی روزمره",
+   "untertitel": "Das Hafes-Orakel in der Yalda-Nacht und warum Iraner ständig Gedichte zitieren. Formelle Sprache: می‌باشد, بفرمایید, تشریف آوردن, عرض کردن – und höfliches Schreiben.",
+   "datei": "f111-literatur.json",
+   "standard": "offen",
+   "zusatz": [
+    "f111-texte.json",
+    "f111-zusatz-1.json",
+    "f111-umgangssprache.json"
+   ],
+   "wortschatz": "ws-f111.json",
+   "voraussetzung": "f1test"
+  },
+  {
+   "id": "f112",
+   "bereich": "f1",
+   "nummer": 12,
+   "titel": "Kunst & Handwerk",
+   "titelFa": "هنر و صنایع دستی",
+   "untertitel": "Ein Teppichkauf im Basar von Täbris und die Sprache der Teppichmuster. Bedingungen mit Konjunktiv: بدون اینکه, بی آنکه – مگر اینکه, به شرط اینکه, به شرطی که.",
+   "datei": "f112-handwerk.json",
+   "standard": "offen",
+   "zusatz": [
+    "f112-texte.json",
+    "f112-zusatz-1.json",
+    "f112-umgangssprache.json"
+   ],
+   "wortschatz": "ws-f112.json",
+   "voraussetzung": "f1test"
+  },
+  {
+   "id": "f113",
+   "bereich": "f1",
+   "nummer": 13,
+   "titel": "Geschichte",
+   "titelFa": "تاریخ و جاده‌ی ابریشم",
+   "untertitel": "Ein Klassenausflug ins Nationalmuseum und die Seidenstraße. Erzählzeiten: Plusquamperfekt, Imperfekt, Präteritum – und Zeitangaben wie قبل از اینکه, بعد از اینکه, تازه … بودم که.",
+   "datei": "f113-geschichte.json",
+   "standard": "offen",
+   "zusatz": [
+    "f113-texte.json",
+    "f113-zusatz-1.json",
+    "f113-umgangssprache.json"
+   ],
+   "wortschatz": "ws-f113.json",
+   "voraussetzung": "f1test"
+  },
+  {
+   "id": "f114",
+   "bereich": "f1",
+   "nummer": 14,
+   "titel": "Zwischen zwei Ländern",
+   "titelFa": "میان دو کشور",
+   "untertitel": "Ein Telefonat zwischen Hamburg und Schiras und zweisprachig aufwachsen. Gefühle + که (Indikativ oder Konjunktiv) und unerfüllbare Wünsche mit کاش.",
+   "datei": "f114-zwei-laender.json",
+   "standard": "offen",
+   "zusatz": [
+    "f114-texte.json",
+    "f114-zusatz-1.json",
+    "f114-umgangssprache.json"
+   ],
+   "wortschatz": "ws-f114.json",
+   "voraussetzung": "f1test"
+  },
+  {
+   "id": "f115",
+   "bereich": "f1",
+   "nummer": 15,
+   "titel": "Zukunft & Technik",
+   "titelFa": "آینده و فناوری",
+   "untertitel": "Eine Familie und ihre KI-Helfer – und die Frage, ob Maschinen Übersetzer ersetzen. Vermutungen (باید رفته باشد, شاید, ممکن است) und formell argumentieren.",
+   "datei": "f115-zukunft.json",
+   "standard": "offen",
+   "zusatz": [
+    "f115-texte.json",
+    "f115-zusatz-1.json",
+    "f115-umgangssprache.json"
+   ],
+   "wortschatz": "ws-f115.json",
+   "voraussetzung": "f1test"
   },
   {
    "id": "k01",

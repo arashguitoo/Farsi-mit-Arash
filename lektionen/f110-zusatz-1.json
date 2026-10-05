@@ -1,0 +1,684 @@
+{
+ "id": "z1",
+ "titel": "Trainingspaket 1",
+ "beschreibung": "Wer passt zu wem?, Wort-Marathon, Lückensätze, Sätze aus den Texten.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "Wer passt zu wem?",
+   "vorschau": "🧩",
+   "karten": [
+    {
+     "typ": "zuordnen",
+     "titel": "Mitmachen für die Umwelt",
+     "text": "Fünf Personen möchten sich ehrenamtlich engagieren. Auf einer Plattform gibt es sieben Projekte.",
+     "frage": "Welches Angebot passt am besten? Tippe es an.",
+     "angebote": [
+      {
+       "titel": "Baumpflanzaktion",
+       "emoji": "🌳",
+       "fa": "درخت‌کاری در دامنه‌ی کوه‌های شمال تهران، جمعه‌ها صبح.",
+       "de": "Bäume pflanzen an den Hängen nördlich von Teheran, freitagmorgens."
+      },
+      {
+       "titel": "Müllsammeln am Strand",
+       "emoji": "🏖️",
+       "fa": "جمع‌آوری زباله از ساحل دریای خزر در تعطیلات تابستان.",
+       "de": "Müll sammeln am Kaspischen Meer in den Sommerferien."
+      },
+      {
+       "titel": "Recycling-Workshop",
+       "emoji": "♻️",
+       "fa": "کارگاه ساختن وسایل خانه از پلاستیک و کارتن بازیافتی.",
+       "de": "Workshop: Haushaltsgegenstände aus recyceltem Plastik und Karton bauen."
+      },
+      {
+       "titel": "Fahrradgruppe",
+       "emoji": "🚲",
+       "fa": "گروه دوچرخه‌سواری که هر روز صبح با هم سر کار می‌روند.",
+       "de": "Eine Fahrradgruppe, die jeden Morgen gemeinsam zur Arbeit fährt."
+      },
+      {
+       "titel": "Vogelzählung",
+       "emoji": "🦩",
+       "fa": "شمارش فلامینگوها و پرنده‌های مهاجر کنار دریاچه‌ی ارومیه.",
+       "de": "Zählung von Flamingos und Zugvögeln am Urmia-See."
+      },
+      {
+       "titel": "Umweltunterricht",
+       "emoji": "🧒",
+       "fa": "آموزش محیط زیست با بازی و قصه برای کودکان دبستانی.",
+       "de": "Umweltbildung mit Spielen und Geschichten für Grundschulkinder."
+      },
+      {
+       "titel": "Bewässerungsberatung",
+       "emoji": "💧",
+       "fa": "مشاوره‌ی رایگان آبیاری قطره‌ای برای باغ‌ها و مزرعه‌های کوچک.",
+       "de": "Kostenlose Beratung zur Tröpfchenbewässerung für Gärten und kleine Felder."
+      }
+     ],
+     "personen": [
+      {
+       "name": "Babak",
+       "emoji": "🧑‍🌾",
+       "fa": "بابک در تبریز یک باغ سیب دارد و هر سال آب چاهش کمتر می‌شود.",
+       "de": "Babak hat in Täbris einen Apfelgarten, und sein Brunnen gibt jedes Jahr weniger Wasser.",
+       "richtig": 6
+      },
+      {
+       "name": "Shirin",
+       "emoji": "👩‍🏫",
+       "fa": "شیرین معلم بازنشسته است و دوست دارد هنوز با بچه‌ها کار کند.",
+       "de": "Shirin ist pensionierte Lehrerin und möchte weiterhin mit Kindern arbeiten.",
+       "richtig": 5
+      },
+      {
+       "name": "Kaveh",
+       "emoji": "📷",
+       "fa": "کاوه عکاس طبیعت است و عاشق پرنده‌هاست.",
+       "de": "Kaveh ist Naturfotograf und liebt Vögel.",
+       "richtig": 4
+      },
+      {
+       "name": "Parisa",
+       "emoji": "🚴",
+       "fa": "پریسا از ترافیک و دود خسته شده و دنبال یک راه سالم برای رفتن به اداره است.",
+       "de": "Parisa hat genug von Stau und Abgasen und sucht einen gesunden Weg ins Büro.",
+       "richtig": 3
+      },
+      {
+       "name": "Omid",
+       "emoji": "🛠️",
+       "fa": "امید عاشق کارهای دستی است و دوست ندارد بطری‌های خالی را دور بریزد.",
+       "de": "Omid bastelt leidenschaftlich gern und wirft ungern leere Flaschen weg.",
+       "richtig": 2
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Wort-Marathon",
+   "vorschau": "⏱️",
+   "karten": [
+    {
+     "typ": "tempo",
+     "titel": "Marathon: alle Wörter",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 120,
+     "ziel": 25,
+     "woerter": [
+      {
+       "fa": "آلودگی هوا",
+       "a": "Luftverschmutzung"
+      },
+      {
+       "fa": "دود",
+       "a": "Rauch, Abgas"
+      },
+      {
+       "fa": "ماسک",
+       "a": "Maske"
+      },
+      {
+       "fa": "ترافیک",
+       "a": "Verkehr, Stau"
+      },
+      {
+       "fa": "حمل و نقل عمومی",
+       "a": "öffentlicher Verkehr"
+      },
+      {
+       "fa": "وارونگی هوا",
+       "a": "Inversionswetterlage"
+      },
+      {
+       "fa": "شاخص",
+       "a": "Index, Kennzahl"
+      },
+      {
+       "fa": "ریزگرد",
+       "a": "Feinstaub"
+      },
+      {
+       "fa": "تعطیلی",
+       "a": "Schließung, schulfrei"
+      },
+      {
+       "fa": "ناسالم",
+       "a": "ungesund"
+      },
+      {
+       "fa": "بنزین",
+       "a": "Benzin"
+      },
+      {
+       "fa": "سالمند",
+       "a": "Senior/in"
+      },
+      {
+       "fa": "خشکسالی",
+       "a": "Dürre"
+      },
+      {
+       "fa": "دریاچه",
+       "a": "See"
+      },
+      {
+       "fa": "سد",
+       "a": "Staudamm"
+      },
+      {
+       "fa": "رودخانه",
+       "a": "Fluss"
+      },
+      {
+       "fa": "آب زیرزمینی",
+       "a": "Grundwasser"
+      },
+      {
+       "fa": "کشاورزی",
+       "a": "Landwirtschaft"
+      },
+      {
+       "fa": "چاه",
+       "a": "Brunnen"
+      },
+      {
+       "fa": "نمک",
+       "a": "Salz"
+      },
+      {
+       "fa": "بارش",
+       "a": "Niederschlag"
+      },
+      {
+       "fa": "کم‌آبی",
+       "a": "Wassermangel"
+      },
+      {
+       "fa": "آبیاری",
+       "a": "Bewässerung"
+      },
+      {
+       "fa": "خشک",
+       "a": "trocken"
+      },
+      {
+       "fa": "محیط زیست",
+       "a": "Umwelt"
+      },
+      {
+       "fa": "بازیافت",
+       "a": "Recycling"
+      },
+      {
+       "fa": "زباله",
+       "a": "Müll"
+      },
+      {
+       "fa": "انرژی خورشیدی",
+       "a": "Solarenergie"
+      },
+      {
+       "fa": "مصرف",
+       "a": "Verbrauch"
+      },
+      {
+       "fa": "صرفه‌جویی",
+       "a": "Einsparung"
+      },
+      {
+       "fa": "داوطلب",
+       "a": "Freiwillige/r"
+      },
+      {
+       "fa": "کیسه‌ی پارچه‌ای",
+       "a": "Stoffbeutel"
+      },
+      {
+       "fa": "درخت‌کاری",
+       "a": "Baumpflanzung"
+      },
+      {
+       "fa": "پلاستیک",
+       "a": "Plastik"
+      },
+      {
+       "fa": "سبز",
+       "a": "grün, umweltfreundlich"
+      },
+      {
+       "fa": "آگاهی",
+       "a": "Bewusstsein"
+      },
+      {
+       "fa": "تعطیل شدن",
+       "a": "geschlossen werden"
+      },
+      {
+       "fa": "آلوده کردن",
+       "a": "verschmutzen"
+      },
+      {
+       "fa": "خشک شدن",
+       "a": "austrocknen"
+      },
+      {
+       "fa": "صرفه‌جویی کردن",
+       "a": "sparen (Wasser, Energie)"
+      },
+      {
+       "fa": "بازیافت کردن",
+       "a": "recyceln"
+      },
+      {
+       "fa": "نجات دادن",
+       "a": "retten"
+      }
+     ]
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "وارونگی هوا",
+       "tr": "wārūnegī-ye hawā",
+       "de": "Inversionswetterlage",
+       "emoji": "🌫️"
+      },
+      {
+       "fa": "سبز",
+       "tr": "sabz",
+       "de": "grün, umweltfreundlich",
+       "emoji": "🌿"
+      },
+      {
+       "fa": "رودخانه",
+       "tr": "rūdchāne",
+       "de": "Fluss",
+       "emoji": "🌊"
+      },
+      {
+       "fa": "آلودگی هوا",
+       "tr": "ālūdegī-ye hawā",
+       "de": "Luftverschmutzung",
+       "emoji": "🏭"
+      },
+      {
+       "fa": "زباله",
+       "tr": "zobāle",
+       "de": "Müll",
+       "emoji": "🗑️"
+      },
+      {
+       "fa": "داوطلب",
+       "tr": "dāwtalab",
+       "de": "Freiwillige/r",
+       "emoji": "🙋"
+      }
+     ],
+     "titel": "Memory"
+    },
+    {
+     "typ": "memory",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "خشکسالی",
+       "tr": "choschksālī",
+       "de": "Dürre",
+       "emoji": "☀️"
+      },
+      {
+       "fa": "دود",
+       "tr": "dūd",
+       "de": "Rauch, Abgas",
+       "emoji": "💨"
+      },
+      {
+       "fa": "ترافیک",
+       "tr": "terāfīk",
+       "de": "Verkehr, Stau",
+       "emoji": "🚗"
+      },
+      {
+       "fa": "درخت‌کاری",
+       "tr": "derachtkārī",
+       "de": "Baumpflanzung",
+       "emoji": "🌳"
+      },
+      {
+       "fa": "چاه",
+       "tr": "tschāh",
+       "de": "Brunnen",
+       "emoji": "🪣"
+      },
+      {
+       "fa": "پلاستیک",
+       "tr": "pelāstīk",
+       "de": "Plastik",
+       "emoji": "🧴"
+      }
+     ],
+     "titel": "Memory: Wort & Bedeutung"
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "titel": "Lückensätze",
+   "vorschau": "___",
+   "karten": [
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>امروز به خاطر ___ مدرسه‌ها تعطیل است.</span><br><span class='mini'>Heute sind die Schulen wegen der Luftverschmutzung geschlossen.</span>",
+       "optionen": [
+        "آلودگی هوا",
+        "ناسالم",
+        "دریاچه"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>امروز به خاطر آلودگی هوا مدرسه‌ها تعطیل است.</span>"
+      },
+      {
+       "frage": "<span class='fa'>اگر بیرون می‌روی، حتما ___ بزن.</span><br><span class='mini'>Wenn du rausgehst, setz unbedingt eine Maske auf.</span>",
+       "optionen": [
+        "ماسک",
+        "بارش",
+        "پلاستیک"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>اگر بیرون می‌روی، حتما ماسک بزن.</span>"
+      },
+      {
+       "frage": "<span class='fa'>در زمستان، ___ باعث می‌شود که دود روی شهر بماند.</span><br><span class='mini'>Im Winter sorgt die Inversionswetterlage dafür, dass der Rauch über der Stadt bleibt.</span>",
+       "optionen": [
+        "وارونگی هوا",
+        "مصرف",
+        "محیط زیست"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>در زمستان، وارونگی هوا باعث می‌شود که دود روی شهر بماند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>بعد از چند سال ___، دریاچه نصف شده است.</span><br><span class='mini'>Nach einigen Dürrejahren ist der See auf die Hälfte geschrumpft.</span>",
+       "optionen": [
+        "خشکسالی",
+        "آبیاری",
+        "ماسک"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>بعد از چند سال خشکسالی، دریاچه نصف شده است.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>بیشتر آب کشور صرف ___ می‌شود.</span><br><span class='mini'>Der größte Teil des Wassers im Land fließt in die Landwirtschaft.</span>",
+       "optionen": [
+        "کشاورزی",
+        "ماسک",
+        "شاخص"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>بیشتر آب کشور صرف کشاورزی می‌شود.</span>"
+      },
+      {
+       "frage": "<span class='fa'>سطح ___ هر سال پایین‌تر می‌رود.</span><br><span class='mini'>Der Grundwasserspiegel sinkt jedes Jahr weiter.</span>",
+       "optionen": [
+        "آب زیرزمینی",
+        "کشاورزی",
+        "حمل و نقل عمومی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>سطح آب زیرزمینی هر سال پایین‌تر می‌رود.</span>"
+      },
+      {
+       "frage": "<span class='fa'>لطفا ___ را از زباله‌های دیگر جدا کن.</span><br><span class='mini'>Bitte trenne das Plastik vom übrigen Müll.</span>",
+       "optionen": [
+        "پلاستیک",
+        "ترافیک",
+        "چاه"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>لطفا پلاستیک را از زباله‌های دیگر جدا کن.</span>"
+      },
+      {
+       "frage": "<span class='fa'>او هر جمعه به‌عنوان ___ در پارک زباله جمع می‌کند.</span><br><span class='mini'>Er/Sie sammelt jeden Freitag als Freiwillige/r im Park Müll.</span>",
+       "optionen": [
+        "داوطلب",
+        "کشاورزی",
+        "تعطیلی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>او هر جمعه به‌عنوان داوطلب در پارک زباله جمع می‌کند.</span>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "e",
+   "titel": "Sätze aus den Texten",
+   "vorschau": "🧱",
+   "karten": [
+    {
+     "typ": "bauen",
+     "titel": "Baue den Satz",
+     "trenner": " ",
+     "woerter": [
+      {
+       "fa": "سرنوشت ارومیه درسی برای همه است: آب بی‌پایان نیست.",
+       "tr": "sarnewescht-e orūmiye darsī barā-ye hame ast: āb bīpāyān nīst.",
+       "de": "Das Schicksal Urmias ist eine Lehre für alle: Wasser ist nicht unendlich.",
+       "teile": [
+        "سرنوشت",
+        "ارومیه",
+        "درسی",
+        "برای",
+        "همه",
+        "است",
+        "آب",
+        "بی‌پایان",
+        "نیست"
+       ],
+       "extra": [
+        "بدتر"
+       ]
+      },
+      {
+       "fa": "جوانی جواب داد: «تقصیر بنزین بی‌کیفیت و ماشین‌های فرسوده است.»",
+       "tr": "dschawānī dschawāb dād: «taghsīr-e benzīn-e bīkeyfiyat o māschīnhā-ye farsūde ast.»",
+       "de": "Ein junger Mann antwortete: „Schuld sind das minderwertige Benzin und die alten Autos.“",
+       "teile": [
+        "جوانی",
+        "جواب",
+        "داد",
+        "«تقصیر",
+        "بنزین",
+        "بی‌کیفیت",
+        "و",
+        "ماشین‌های",
+        "فرسوده",
+        "است»"
+       ],
+       "extra": [
+        "از"
+       ]
+      },
+      {
+       "fa": "خشکسالی‌های پی در پی هم وضعیت را بدتر کرد.",
+       "tr": "choschksālīhā-ye pey dar pey ham wazʿiyat rā badtar kard.",
+       "de": "Aufeinanderfolgende Dürren verschlimmerten die Lage zusätzlich.",
+       "teile": [
+        "خشکسالی‌های",
+        "پی",
+        "در",
+        "پی",
+        "هم",
+        "وضعیت",
+        "را",
+        "بدتر",
+        "کرد"
+       ],
+       "extra": [
+        "دریاچه"
+       ]
+      },
+      {
+       "fa": "کارشناسان چند دلیل برای این فاجعه می‌آورند.",
+       "tr": "kārschenāsān tschand dalīl barā-ye īn fādscheʿe mīāwarand.",
+       "de": "Experten nennen mehrere Gründe für diese Katastrophe.",
+       "teile": [
+        "کارشناسان",
+        "چند",
+        "دلیل",
+        "برای",
+        "این",
+        "فاجعه",
+        "می‌آورند"
+       ],
+       "extra": []
+      },
+      {
+       "fa": "نازنین از پنجره داد زد: «بابا، کوه برگشت!»",
+       "tr": "nāzanīn az pandschere dād zad: «bābā, kūh bargascht!»",
+       "de": "Nazanin rief aus dem Fenster: „Papa, der Berg ist wieder da!“",
+       "teile": [
+        "نازنین",
+        "از",
+        "پنجره",
+        "داد",
+        "زد",
+        "«بابا",
+        "کوه",
+        "برگشت»"
+       ],
+       "extra": [
+        "«بابا،"
+       ]
+      },
+      {
+       "fa": "با وجود این مشکلات، تلاش برای نجات دریاچه ادامه دارد.",
+       "tr": "bā wodschūd-e īn moschkelāt, talāsch barā-ye nedschāt-e daryātsche edāme dārad.",
+       "de": "Trotz dieser Probleme gehen die Bemühungen zur Rettung des Sees weiter.",
+       "teile": [
+        "با",
+        "وجود",
+        "این",
+        "مشکلات",
+        "تلاش",
+        "برای",
+        "نجات",
+        "دریاچه",
+        "ادامه",
+        "دارد"
+       ],
+       "extra": [
+        "دلیل"
+       ]
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Was bedeutet der Satz?",
+     "fragen": [
+      {
+       "frage": "„Nazanin rief aus dem Fenster: „Papa, der Berg ist wieder da!““",
+       "optionen": [
+        "نازنین از پنجره داد زد: «بابا، کوه برگشت!»",
+        "خشکسالی‌های پی در پی هم وضعیت را بدتر کرد.",
+        "با وجود این مشکلات، تلاش برای نجات دریاچه ادامه دارد."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Aufeinanderfolgende Dürren verschlimmerten die Lage zusätzlich.“",
+       "optionen": [
+        "خشکسالی‌های پی در پی هم وضعیت را بدتر کرد.",
+        "با وجود این مشکلات، تلاش برای نجات دریاچه ادامه دارد.",
+        "سرنوشت ارومیه درسی برای همه است: آب بی‌پایان نیست."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Ein junger Mann antwortete: „Schuld sind das minderwertige Benzin und die alten Autos.““",
+       "optionen": [
+        "جوانی جواب داد: «تقصیر بنزین بی‌کیفیت و ماشین‌های فرسوده است.»",
+        "خشکسالی‌های پی در پی هم وضعیت را بدتر کرد.",
+        "کارشناسان چند دلیل برای این فاجعه می‌آورند."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Das Schicksal Urmias ist eine Lehre für alle: Wasser ist nicht unendlich.“",
+       "optionen": [
+        "سرنوشت ارومیه درسی برای همه است: آب بی‌پایان نیست.",
+        "خشکسالی‌های پی در پی هم وضعیت را بدتر کرد.",
+        "جوانی جواب داد: «تقصیر بنزین بی‌کیفیت و ماشین‌های فرسوده است.»"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Experten nennen mehrere Gründe für diese Katastrophe.“",
+       "optionen": [
+        "کارشناسان چند دلیل برای این فاجعه می‌آورند.",
+        "سرنوشت ارومیه درسی برای همه است: آب بی‌پایان نیست.",
+        "جوانی جواب داد: «تقصیر بنزین بی‌کیفیت و ماشین‌های فرسوده است.»"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Trotz dieser Probleme gehen die Bemühungen zur Rettung des Sees weiter.“",
+       "optionen": [
+        "با وجود این مشکلات، تلاش برای نجات دریاچه ادامه دارد.",
+        "جوانی جواب داد: «تقصیر بنزین بی‌کیفیت و ماشین‌های فرسوده است.»",
+        "سرنوشت ارومیه درسی برای همه است: آب بی‌پایان نیست."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

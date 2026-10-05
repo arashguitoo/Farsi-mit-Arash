@@ -1,0 +1,184 @@
+{
+ "id": "ug",
+ "art": "umgangssprache",
+ "titel": "Umgangssprache: So spricht man im Alltag",
+ "beschreibung": "Freiwilliger Extra-Teil: Umgangssprache.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "So spricht man",
+   "vorschau": "خونه",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Schrift ≠ Gespräch",
+     "text": "<ul><li><span class='fa'>خانه → خونه</span> · <span class='fa'>آن → اون</span></li><li><span class='fa'>می‌خواهید → می‌خواید</span> · <span class='fa'>می‌توانیم → می‌تونیم</span></li><li><span class='fa'>است → ـه</span>: <span class='fa'>گران است → گرونه</span></li></ul>",
+     "stil": "merke"
+    },
+    {
+     "typ": "paare",
+     "links": "x",
+     "paare": [
+      {
+       "fa": "خانه",
+       "tr": "",
+       "de": "Haus",
+       "x": "خونه"
+      },
+      {
+       "fa": "گران است",
+       "tr": "",
+       "de": "es ist teuer",
+       "x": "گرونه"
+      },
+      {
+       "fa": "می‌توانیم",
+       "tr": "",
+       "de": "wir können",
+       "x": "می‌تونیم"
+      },
+      {
+       "fa": "می‌خواهید",
+       "tr": "",
+       "de": "Sie wollen",
+       "x": "می‌خواید"
+      },
+      {
+       "fa": "آن",
+       "tr": "",
+       "de": "jener",
+       "x": "اون"
+      }
+     ],
+     "titel": "Schrift ↔ Gespräch"
+    },
+    {
+     "typ": "sortieren",
+     "titel": "Schrift oder Gespräch?",
+     "frage": "Schriftsprache oder Umgangssprache?",
+     "kategorien": [
+      "✍️ Schriftsprache",
+      "🗣️ Umgangssprache"
+     ],
+     "items": [
+      {
+       "fa": "خانه",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "گران است",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "می‌توانیم",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "می‌خواهید",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "آن",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "خونه",
+       "k": 1,
+       "say": false,
+       "e": "<i>chūne</i> – geschrieben: <span class='fa'>خانه</span>"
+      },
+      {
+       "fa": "گرونه",
+       "k": 1,
+       "say": false,
+       "e": "<i>gerūne</i> – geschrieben: <span class='fa'>گران است</span>"
+      },
+      {
+       "fa": "می‌تونیم",
+       "k": 1,
+       "say": false,
+       "e": "<i>mītūnīm</i> – geschrieben: <span class='fa'>می‌توانیم</span>"
+      },
+      {
+       "fa": "می‌خواید",
+       "k": 1,
+       "say": false,
+       "e": "<i>mīchāyd</i> – geschrieben: <span class='fa'>می‌خواهید</span>"
+      },
+      {
+       "fa": "اون",
+       "k": 1,
+       "say": false,
+       "e": "<i>ūn</i> – geschrieben: <span class='fa'>آن</span>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Kurz-Dialog",
+   "vorschau": "💬",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Neue Wohnung",
+     "text": "Umgangssprache! Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "خونه‌ی جدیدت چطوره؟",
+       "tr": "chūne-ye dschadīdet tschetoure?",
+       "de": "Wie ist deine neue Wohnung?"
+      },
+      {
+       "fa": "نورگیره، ولی یه کم گرونه.",
+       "tr": "nūrgīre, walī ye kam gerūne.",
+       "de": "Hell, aber etwas teuer."
+      },
+      {
+       "fa": "چندمین طبقه‌ست؟",
+       "tr": "tschandomīn tabaghast?",
+       "de": "Welcher Stock ist es?"
+      },
+      {
+       "fa": "دوازدهم! آسانسورم همیشه خرابه!",
+       "tr": "dawāzdahom! āsānsoram hamīsche charābe!",
+       "de": "Der zwölfte! Und der Aufzug ist immer kaputt!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Verstanden?",
+     "fragen": [
+      {
+       "frage": "Was ist das Problem?",
+       "optionen": [
+        "Der Aufzug ist immer kaputt.",
+        "Die Wohnung ist dunkel.",
+        "Die Nachbarn sind laut."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "<span class='fa'>گرونه</span> =",
+       "optionen": [
+        "گران است",
+        "گرفته است",
+        "گرم است"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

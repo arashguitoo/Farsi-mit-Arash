@@ -1,0 +1,689 @@
+{
+ "id": "z1",
+ "titel": "Trainingspaket 1",
+ "beschreibung": "Wer passt zu wem?, Wort-Marathon, Lückensätze, Sätze aus den Texten.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "Wer passt zu wem?",
+   "vorschau": "🧩",
+   "karten": [
+    {
+     "typ": "zuordnen",
+     "titel": "Welches Buch, welcher Abend?",
+     "text": "Fünf Personen suchen etwas zum Lesen oder Erleben. Die Buchhandlung empfiehlt sieben Dinge.",
+     "frage": "Welches Angebot passt am besten? Tippe es an.",
+     "angebote": [
+      {
+       "titel": "Schahname",
+       "emoji": "⚔️",
+       "fa": "شاهنامه‌ی فردوسی با تصویرهای رنگی؛ داستان رستم و پهلوانان.",
+       "de": "Ferdousis Schahname mit farbigen Bildern – die Geschichten von Rostam und den Helden."
+      },
+      {
+       "titel": "Golestan",
+       "emoji": "🌹",
+       "fa": "گلستان سعدی؛ داستان‌های کوتاه، طنزآمیز و پندآموز.",
+       "de": "Saadis Golestan – kurze, humorvolle und lehrreiche Geschichten."
+      },
+      {
+       "titel": "Forugh Farrochzad",
+       "emoji": "🖋️",
+       "fa": "مجموعه‌ی شعر فروغ فرخزاد؛ شعر نو و صدای یک زن معاصر.",
+       "de": "Gedichtband von Forugh Farrochzad – moderne Lyrik, die Stimme einer Frau ihrer Zeit."
+      },
+      {
+       "titel": "Sohrab Sepehri",
+       "emoji": "🍃",
+       "fa": "هشت کتاب سهراب سپهری؛ شعرهای آرام درباره‌ی طبیعت و نگاه تازه به دنیا.",
+       "de": "Sohrab Sepehris „Acht Bücher“ – ruhige Gedichte über die Natur und einen neuen Blick auf die Welt."
+      },
+      {
+       "titel": "Der kleine schwarze Fisch",
+       "emoji": "🐟",
+       "fa": "ماهی سیاه کوچولو از صمد بهرنگی؛ قصه‌ای برای کودکان درباره‌ی شجاعت.",
+       "de": "„Der kleine schwarze Fisch“ von Samad Behrangi – eine Kindergeschichte über Mut."
+      },
+      {
+       "titel": "Gegenwartsroman",
+       "emoji": "📕",
+       "fa": "یک رمان معاصر پرفروش درباره‌ی زندگی سه نسل در تهران امروز.",
+       "de": "Ein Bestseller-Roman über drei Generationen im heutigen Teheran."
+      },
+      {
+       "titel": "Lyrikabend",
+       "emoji": "🎤",
+       "fa": "شب شعر در کافه‌ی کتاب؛ هر کس می‌تواند شعر خودش را بخواند.",
+       "de": "Lyrikabend im Buchcafé – jede/r darf eigene Gedichte vortragen."
+      }
+     ],
+     "personen": [
+      {
+       "name": "Dariush",
+       "emoji": "🛡️",
+       "fa": "داریوش عاشق داستان‌های پهلوانی و جنگ‌های قدیمی است.",
+       "de": "Dariush liebt Heldensagen und alte Schlachten.",
+       "richtig": 0
+      },
+      {
+       "name": "Mahsa",
+       "emoji": "🌲",
+       "fa": "مهسا هر آخر هفته به کوه و جنگل می‌رود و شعرهای ساده و آرام دوست دارد.",
+       "de": "Mahsa geht jedes Wochenende in Berge und Wald und mag einfache, ruhige Gedichte.",
+       "richtig": 3
+      },
+      {
+       "name": "Tara",
+       "emoji": "👧",
+       "fa": "تارا برای دختر هفت‌ساله‌اش یک کتاب قصه می‌خواهد.",
+       "de": "Tara möchte für ihre siebenjährige Tochter ein Märchenbuch.",
+       "richtig": 4
+      },
+      {
+       "name": "Behzad",
+       "emoji": "🎙️",
+       "fa": "بهزاد خودش شعر می‌گوید و دوست دارد شعرهایش را جلوی مردم بخواند.",
+       "de": "Behzad schreibt selbst Gedichte und möchte sie vor Publikum vortragen.",
+       "richtig": 6
+      },
+      {
+       "name": "Leyla",
+       "emoji": "🚇",
+       "fa": "لیلا در مترو وقت کمی دارد و داستان‌های خیلی کوتاه و خنده‌دار با یک درس می‌خواهد.",
+       "de": "Leyla hat in der U-Bahn wenig Zeit und möchte sehr kurze, witzige Geschichten mit einer Lehre.",
+       "richtig": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Wort-Marathon",
+   "vorschau": "⏱️",
+   "karten": [
+    {
+     "typ": "tempo",
+     "titel": "Marathon: alle Wörter",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 120,
+     "ziel": 25,
+     "woerter": [
+      {
+       "fa": "شعر",
+       "a": "Gedicht, Lyrik"
+      },
+      {
+       "fa": "شاعر",
+       "a": "Dichter/in"
+      },
+      {
+       "fa": "غزل",
+       "a": "Ghasel (Liebesgedicht)"
+      },
+      {
+       "fa": "بیت",
+       "a": "Vers (Doppelzeile)"
+      },
+      {
+       "fa": "دیوان",
+       "a": "Gedichtsammlung, Diwan"
+      },
+      {
+       "fa": "قافیه",
+       "a": "Reim"
+      },
+      {
+       "fa": "رباعی",
+       "a": "Vierzeiler"
+      },
+      {
+       "fa": "حماسه",
+       "a": "Epos"
+      },
+      {
+       "fa": "عاشقانه",
+       "a": "romantisch, Liebes-"
+      },
+      {
+       "fa": "کلاسیک",
+       "a": "klassisch"
+      },
+      {
+       "fa": "معاصر",
+       "a": "zeitgenössisch"
+      },
+      {
+       "fa": "ضرب‌المثل",
+       "a": "Sprichwort"
+      },
+      {
+       "fa": "شب یلدا",
+       "a": "Yalda-Nacht (längste Nacht)"
+      },
+      {
+       "fa": "هندوانه",
+       "a": "Wassermelone"
+      },
+      {
+       "fa": "انار",
+       "a": "Granatapfel"
+      },
+      {
+       "fa": "آجیل",
+       "a": "Nussmischung"
+      },
+      {
+       "fa": "فال",
+       "a": "Orakel, Wahrsagung"
+      },
+      {
+       "fa": "نیت",
+       "a": "gedachter Wunsch, Frage"
+      },
+      {
+       "fa": "تفسیر",
+       "a": "Deutung, Auslegung"
+      },
+      {
+       "fa": "کرسی",
+       "a": "Korsi (beheizter Tisch)"
+      },
+      {
+       "fa": "بزرگ‌تر",
+       "a": "Ältere/r (in der Familie)"
+      },
+      {
+       "fa": "طولانی‌ترین",
+       "a": "längste/r/s"
+      },
+      {
+       "fa": "شب‌نشینی",
+       "a": "abendliches Beisammensein"
+      },
+      {
+       "fa": "خاطره",
+       "a": "Erinnerung"
+      },
+      {
+       "fa": "رمان",
+       "a": "Roman"
+      },
+      {
+       "fa": "نویسنده",
+       "a": "Autor/in"
+      },
+      {
+       "fa": "داستان کوتاه",
+       "a": "Kurzgeschichte"
+      },
+      {
+       "fa": "شاهنامه",
+       "a": "Schahname (Buch der Könige)"
+      },
+      {
+       "fa": "گلستان",
+       "a": "Golestan (Rosengarten)"
+      },
+      {
+       "fa": "ترجمه",
+       "a": "Übersetzung"
+      },
+      {
+       "fa": "خواننده",
+       "a": "Leser/in"
+      },
+      {
+       "fa": "کتاب‌فروشی",
+       "a": "Buchhandlung"
+      },
+      {
+       "fa": "شب شعر",
+       "a": "Lyrikabend"
+      },
+      {
+       "fa": "نقد",
+       "a": "Kritik, Rezension"
+      },
+      {
+       "fa": "اثر",
+       "a": "Werk"
+      },
+      {
+       "fa": "زبان ادبی",
+       "a": "Literatursprache"
+      },
+      {
+       "fa": "حفظ کردن",
+       "a": "auswendig lernen"
+      },
+      {
+       "fa": "فال گرفتن",
+       "a": "das Orakel befragen"
+      },
+      {
+       "fa": "نقل کردن",
+       "a": "zitieren, wiedergeben"
+      },
+      {
+       "fa": "سرودن",
+       "a": "dichten"
+      },
+      {
+       "fa": "ترجمه کردن",
+       "a": "übersetzen"
+      },
+      {
+       "fa": "تعارف کردن",
+       "a": "anbieten, Höflichkeiten austauschen"
+      }
+     ]
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "فال",
+       "tr": "fāl",
+       "de": "Orakel, Wahrsagung",
+       "emoji": "🔮"
+      },
+      {
+       "fa": "ترجمه",
+       "tr": "tardschome",
+       "de": "Übersetzung",
+       "emoji": "🔤"
+      },
+      {
+       "fa": "تفسیر",
+       "tr": "tafsīr",
+       "de": "Deutung, Auslegung",
+       "emoji": "🧐"
+      },
+      {
+       "fa": "حماسه",
+       "tr": "hamāse",
+       "de": "Epos",
+       "emoji": "⚔️"
+      },
+      {
+       "fa": "نیت",
+       "tr": "niyyat",
+       "de": "gedachter Wunsch, Frage",
+       "emoji": "💭"
+      },
+      {
+       "fa": "کرسی",
+       "tr": "korsī",
+       "de": "Korsi (beheizter Tisch)",
+       "emoji": "🔥"
+      }
+     ],
+     "titel": "Memory"
+    },
+    {
+     "typ": "memory",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "شب شعر",
+       "tr": "schab-e scheʿr",
+       "de": "Lyrikabend",
+       "emoji": "🎤"
+      },
+      {
+       "fa": "نویسنده",
+       "tr": "newīsande",
+       "de": "Autor/in",
+       "emoji": "✒️"
+      },
+      {
+       "fa": "عاشقانه",
+       "tr": "ʿāscheghāne",
+       "de": "romantisch, Liebes-",
+       "emoji": "💘"
+      },
+      {
+       "fa": "خاطره",
+       "tr": "chātere",
+       "de": "Erinnerung",
+       "emoji": "🎞️"
+      },
+      {
+       "fa": "شاهنامه",
+       "tr": "schāhnāme",
+       "de": "Schahname (Buch der Könige)",
+       "emoji": "👑"
+      },
+      {
+       "fa": "شب یلدا",
+       "tr": "schab-e yaldā",
+       "de": "Yalda-Nacht (längste Nacht)",
+       "emoji": "🌌"
+      }
+     ],
+     "titel": "Memory: Wort & Bedeutung"
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "titel": "Lückensätze",
+   "vorschau": "___",
+   "karten": [
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>در شب یلدا همه دور ___ می‌نشینند و هندوانه می‌خورند.</span><br><span class='mini'>In der Yalda-Nacht sitzen alle um den Korsi und essen Wassermelone.</span>",
+       "optionen": [
+        "کرسی",
+        "خاطره",
+        "رمان"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>در شب یلدا همه دور کرسی می‌نشینند و هندوانه می‌خورند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>مادربزرگ گفت: اول ___ کن، بعد کتاب را باز می‌کنم.</span><br><span class='mini'>Oma sagte: Denk dir zuerst eine Frage aus, dann schlage ich das Buch auf.</span>",
+       "optionen": [
+        "نیت",
+        "زبان ادبی",
+        "شب شعر"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>مادربزرگ گفت: اول نیت کن، بعد کتاب را باز می‌کنم.</span>"
+      },
+      {
+       "frage": "<span class='fa'>دانه‌های ___ را در یک کاسه‌ی بزرگ ریختیم.</span><br><span class='mini'>Wir haben die Granatapfelkerne in eine große Schüssel geschüttet.</span>",
+       "optionen": [
+        "انار",
+        "ترجمه",
+        "بیت"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>دانه‌های انار را در یک کاسه‌ی بزرگ ریختیم.</span>"
+      },
+      {
+       "frage": "<span class='fa'>حافظ بیشتر ___ می‌سرود؛ شعرهای عاشقانه با قافیه‌های زیبا.</span><br><span class='mini'>Hafes dichtete vor allem Ghaselen – Liebesgedichte mit schönen Reimen.</span>",
+       "optionen": [
+        "غزل",
+        "آجیل",
+        "اثر"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>حافظ بیشتر غزل می‌سرود؛ شعرهای عاشقانه با قافیه‌های زیبا.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>فردوسی در ___ داستان پهلوانان ایران را روایت کرده است.</span><br><span class='mini'>Ferdousi hat im Schahname die Geschichten der iranischen Helden erzählt.</span>",
+       "optionen": [
+        "شاهنامه",
+        "ضرب‌المثل",
+        "ترجمه"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>فردوسی در شاهنامه داستان پهلوانان ایران را روایت کرده است.</span>"
+      },
+      {
+       "frage": "<span class='fa'>«ماهی را هر وقت از آب بگیری تازه است» یک ___ معروف است.</span><br><span class='mini'>„Wann immer du den Fisch aus dem Wasser holst, ist er frisch“ ist ein bekanntes Sprichwort.</span>",
+       "optionen": [
+        "ضرب‌المثل",
+        "شب یلدا",
+        "طولانی‌ترین"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>«ماهی را هر وقت از آب بگیری تازه است» یک ضرب‌المثل معروف است.</span>"
+      },
+      {
+       "frage": "<span class='fa'>امشب در کافه یک ___ برگزار می‌شود و شاعران جوان شعر می‌خوانند.</span><br><span class='mini'>Heute Abend findet im Café ein Lyrikabend statt, und junge Dichter lesen vor.</span>",
+       "optionen": [
+        "شب شعر",
+        "ترجمه",
+        "کلاسیک"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>امشب در کافه یک شب شعر برگزار می‌شود و شاعران جوان شعر می‌خوانند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>این ___ از آلمانی به فارسی ترجمه شده و سیصد صفحه دارد.</span><br><span class='mini'>Dieser Roman wurde aus dem Deutschen ins Persische übersetzt und hat dreihundert Seiten.</span>",
+       "optionen": [
+        "رمان",
+        "آجیل",
+        "حماسه"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>این رمان از آلمانی به فارسی ترجمه شده و سیصد صفحه دارد.</span>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "e",
+   "titel": "Sätze aus den Texten",
+   "vorschau": "🧱",
+   "karten": [
+    {
+     "typ": "bauen",
+     "titel": "Baue den Satz",
+     "trenner": " ",
+     "woerter": [
+      {
+       "fa": "بعد از شام، نوبت مهم‌ترین بخش شب رسید: فال حافظ.",
+       "tr": "baʿd az schām, nobat-e mohemtarīn bachsch-e schab resīd: fāl-e hāfez.",
+       "de": "Nach dem Abendessen kam der wichtigste Teil des Abends: das Hafes-Orakel.",
+       "teile": [
+        "بعد",
+        "از",
+        "شام",
+        "نوبت",
+        "مهم‌ترین",
+        "بخش",
+        "شب",
+        "رسید",
+        "فال",
+        "حافظ"
+       ],
+       "extra": [
+        "سعدی"
+       ]
+      },
+      {
+       "fa": "دلیل دیگر مدرسه است: بچه‌ها از کودکی شعر حفظ می‌کنند.",
+       "tr": "dalīl-e dīgar madrese ast: batschtschehā az kūdakī scheʿr hefz mīkonand.",
+       "de": "Ein weiterer Grund ist die Schule: Kinder lernen von klein auf Gedichte auswendig.",
+       "teile": [
+        "دلیل",
+        "دیگر",
+        "مدرسه",
+        "است",
+        "بچه‌ها",
+        "از",
+        "کودکی",
+        "شعر",
+        "حفظ",
+        "می‌کنند"
+       ],
+       "extra": [
+        "حضور"
+       ]
+      },
+      {
+       "fa": "چرا شعر این‌قدر در زندگی روزمره حضور دارد؟",
+       "tr": "tscherā scheʿr īnghadr dar zendegī-ye rūzmarre hozūr dārad?",
+       "de": "Warum ist Lyrik so präsent im Alltag?",
+       "teile": [
+        "چرا",
+        "شعر",
+        "این‌قدر",
+        "در",
+        "زندگی",
+        "روزمره",
+        "حضور",
+        "دارد"
+       ],
+       "extra": [
+        "گلستان"
+       ]
+      },
+      {
+       "fa": "آرمان کمی فکر کرد و بعد سر تکان داد.",
+       "tr": "ārmān kamī fekr kard o baʿd sar tekān dād.",
+       "de": "Arman dachte kurz nach und nickte dann.",
+       "teile": [
+        "آرمان",
+        "کمی",
+        "فکر",
+        "کرد",
+        "و",
+        "بعد",
+        "سر",
+        "تکان",
+        "داد"
+       ],
+       "extra": []
+      },
+      {
+       "fa": "اول نوبت آرمان بود که تازه از آلمان برگشته بود.",
+       "tr": "awwal nobat-e ārmān būd ke tāze az ālmān bargaschte būd.",
+       "de": "Zuerst war Arman an der Reihe, der gerade aus Deutschland zurückgekommen war.",
+       "teile": [
+        "اول",
+        "نوبت",
+        "آرمان",
+        "بود",
+        "که",
+        "تازه",
+        "از",
+        "آلمان",
+        "برگشته",
+        "بود"
+       ],
+       "extra": [
+        "داستان‌های"
+       ]
+      },
+      {
+       "fa": "سعدی در گلستان با داستان‌های کوتاه و طنز، درس زندگی می‌دهد.",
+       "tr": "saʿdī dar golestān bā dāstānhā-ye kūtāh o tanz, dars-e zendegī mīdahad.",
+       "de": "Saadi gibt im Golestan mit kurzen Geschichten und Humor Lebenslehren.",
+       "teile": [
+        "سعدی",
+        "در",
+        "گلستان",
+        "با",
+        "داستان‌های",
+        "کوتاه",
+        "و",
+        "طنز",
+        "درس",
+        "زندگی",
+        "می‌دهد"
+       ],
+       "extra": [
+        "سر"
+       ]
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Was bedeutet der Satz?",
+     "fragen": [
+      {
+       "frage": "„Warum ist Lyrik so präsent im Alltag?“",
+       "optionen": [
+        "چرا شعر این‌قدر در زندگی روزمره حضور دارد؟",
+        "اول نوبت آرمان بود که تازه از آلمان برگشته بود.",
+        "سعدی در گلستان با داستان‌های کوتاه و طنز، درس زندگی می‌دهد."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Ein weiterer Grund ist die Schule: Kinder lernen von klein auf Gedichte auswendig.“",
+       "optionen": [
+        "دلیل دیگر مدرسه است: بچه‌ها از کودکی شعر حفظ می‌کنند.",
+        "سعدی در گلستان با داستان‌های کوتاه و طنز، درس زندگی می‌دهد.",
+        "چرا شعر این‌قدر در زندگی روزمره حضور دارد؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Arman dachte kurz nach und nickte dann.“",
+       "optionen": [
+        "آرمان کمی فکر کرد و بعد سر تکان داد.",
+        "چرا شعر این‌قدر در زندگی روزمره حضور دارد؟",
+        "اول نوبت آرمان بود که تازه از آلمان برگشته بود."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Zuerst war Arman an der Reihe, der gerade aus Deutschland zurückgekommen war.“",
+       "optionen": [
+        "اول نوبت آرمان بود که تازه از آلمان برگشته بود.",
+        "بعد از شام، نوبت مهم‌ترین بخش شب رسید: فال حافظ.",
+        "آرمان کمی فکر کرد و بعد سر تکان داد."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Saadi gibt im Golestan mit kurzen Geschichten und Humor Lebenslehren.“",
+       "optionen": [
+        "سعدی در گلستان با داستان‌های کوتاه و طنز، درس زندگی می‌دهد.",
+        "آرمان کمی فکر کرد و بعد سر تکان داد.",
+        "بعد از شام، نوبت مهم‌ترین بخش شب رسید: فال حافظ."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Nach dem Abendessen kam der wichtigste Teil des Abends: das Hafes-Orakel.“",
+       "optionen": [
+        "بعد از شام، نوبت مهم‌ترین بخش شب رسید: فال حافظ.",
+        "اول نوبت آرمان بود که تازه از آلمان برگشته بود.",
+        "سعدی در گلستان با داستان‌های کوتاه و طنز، درس زندگی می‌دهد."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

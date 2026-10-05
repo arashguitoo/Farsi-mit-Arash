@@ -1,0 +1,182 @@
+{
+ "id": "ug",
+ "art": "umgangssprache",
+ "titel": "Umgangssprache: So spricht man im Alltag",
+ "beschreibung": "Freiwilliger Extra-Teil: Umgangssprache.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "So spricht man",
+   "vorschau": "می‌رسونم",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Schrift ≠ Gespräch",
+     "text": "<ul><li><span class='fa'>می‌رسانم → می‌رسونم</span> <i>mīrasūnam</i> · <span class='fa'>می‌خنداند → می‌خندونه</span></li><li><span class='fa'>سرما خورده‌ام → سرما خوردم</span> (gesprochen meist ohne Perfekt)</li><li><span class='fa'>دکتر → دکتر</span>, aber <span class='fa'>پیش دکتر → پیش دکتر</span> bleibt gleich</li></ul>",
+     "stil": "merke"
+    },
+    {
+     "typ": "paare",
+     "links": "x",
+     "paare": [
+      {
+       "fa": "می‌رسانم",
+       "tr": "",
+       "de": "ich bringe (dich) hin",
+       "x": "می‌رسونم"
+      },
+      {
+       "fa": "می‌خنداند",
+       "tr": "",
+       "de": "er/sie bringt zum Lachen",
+       "x": "می‌خندونه"
+      },
+      {
+       "fa": "سرما خورده‌ام",
+       "tr": "",
+       "de": "ich bin erkältet",
+       "x": "سرما خوردم"
+      },
+      {
+       "fa": "بگذار",
+       "tr": "",
+       "de": "lass",
+       "x": "بذار"
+      },
+      {
+       "fa": "نمی‌گذارد",
+       "tr": "",
+       "de": "er/sie lässt nicht",
+       "x": "نمی‌ذاره"
+      }
+     ],
+     "titel": "Schrift ↔ Gespräch"
+    },
+    {
+     "typ": "sortieren",
+     "titel": "Schrift oder Gespräch?",
+     "frage": "Schriftsprache oder Umgangssprache?",
+     "kategorien": [
+      "✍️ Schriftsprache",
+      "🗣️ Umgangssprache"
+     ],
+     "items": [
+      {
+       "fa": "می‌رسانم",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "می‌خنداند",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "سرما خورده‌ام",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "بگذار",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "نمی‌گذارد",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "می‌رسونم",
+       "k": 1,
+       "say": false,
+       "e": "<i>mīrasūnam</i> – geschrieben: <span class='fa'>می‌رسانم</span>"
+      },
+      {
+       "fa": "می‌خندونه",
+       "k": 1,
+       "say": false,
+       "e": "<i>mīchandūne</i> – geschrieben: <span class='fa'>می‌خنداند</span>"
+      },
+      {
+       "fa": "سرما خوردم",
+       "k": 1,
+       "say": false,
+       "e": "<i>sarmā chordam</i> – geschrieben: <span class='fa'>سرما خورده‌ام</span>"
+      },
+      {
+       "fa": "بذار",
+       "k": 1,
+       "say": false,
+       "e": "<i>bezār</i> – geschrieben: <span class='fa'>بگذار</span>"
+      },
+      {
+       "fa": "نمی‌ذاره",
+       "k": 1,
+       "say": false,
+       "e": "<i>nemīzāre</i> – geschrieben: <span class='fa'>نمی‌گذارد</span>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Kurz-Dialog",
+   "vorschau": "💬",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Ich bring dich hin",
+     "text": "Umgangssprache! Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "حالت خوب نیست؟ رنگت پریده!",
+       "tr": "hālet chūb nīst? rangat parīde!",
+       "de": "Geht’s dir nicht gut? Du bist ganz blass!"
+      },
+      {
+       "fa": "آره، سرما خوردم. باید برم دکتر.",
+       "tr": "āre, sarmā chordam. bāyad beram doktor.",
+       "de": "Ja, ich bin erkältet. Ich muss zum Arzt."
+      },
+      {
+       "fa": "بذار من برسونمت.",
+       "tr": "bezār man berasūnamet.",
+       "de": "Lass mich dich hinbringen."
+      },
+      {
+       "fa": "مرسی، تو همیشه منو می‌خندونی!",
+       "tr": "mersī, to hamīsche mano mīchandūnī!",
+       "de": "Danke, du bringst mich immer zum Lachen!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Verstanden?",
+     "fragen": [
+      {
+       "frage": "Wohin muss die Person?",
+       "optionen": [
+        "zum Arzt",
+        "zur Arbeit",
+        "nach Hause"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "<span class='fa'>برسونمت</span> bedeutet:",
+       "optionen": [
+        "dich hinbringen",
+        "dich anrufen",
+        "dich erreichen"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

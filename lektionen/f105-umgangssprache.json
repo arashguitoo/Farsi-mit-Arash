@@ -1,0 +1,182 @@
+{
+ "id": "ug",
+ "art": "umgangssprache",
+ "titel": "Umgangssprache: So spricht man im Alltag",
+ "beschreibung": "Freiwilliger Extra-Teil: Umgangssprache.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "So spricht man",
+   "vorschau": "تومن",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Schrift ≠ Gespräch",
+     "text": "<ul><li><span class='fa'>است → ـه</span>: <span class='fa'>کافی نیست</span> bleibt, aber <span class='fa'>گران است → گرونه</span></li><li><span class='fa'>پول → پول</span>, aber <span class='fa'>تومان → تومن</span> <i>tomen</i>; <span class='fa'>هزار تومان → تومن</span> („1000 Toman“ = „ein Toman“ im Alltag!)</li><li><span class='fa'>حقوق</span> sagt man oft einfach <span class='fa'>حقوقم ریخته شد</span> – mein Gehalt ist eingegangen</li></ul>",
+     "stil": "merke"
+    },
+    {
+     "typ": "paare",
+     "links": "x",
+     "paare": [
+      {
+       "fa": "تومان",
+       "tr": "",
+       "de": "Toman",
+       "x": "تومن"
+      },
+      {
+       "fa": "گران است",
+       "tr": "",
+       "de": "es ist teuer",
+       "x": "گرونه"
+      },
+      {
+       "fa": "نمی‌دانم",
+       "tr": "",
+       "de": "ich weiß nicht",
+       "x": "نمی‌دونم"
+      },
+      {
+       "fa": "می‌خواهم",
+       "tr": "",
+       "de": "ich will",
+       "x": "می‌خوام"
+      },
+      {
+       "fa": "حقوق من واریز شد",
+       "tr": "",
+       "de": "mein Gehalt ist eingegangen",
+       "x": "حقوقم ریخته شد"
+      }
+     ],
+     "titel": "Schrift ↔ Gespräch"
+    },
+    {
+     "typ": "sortieren",
+     "titel": "Schrift oder Gespräch?",
+     "frage": "Schriftsprache oder Umgangssprache?",
+     "kategorien": [
+      "✍️ Schriftsprache",
+      "🗣️ Umgangssprache"
+     ],
+     "items": [
+      {
+       "fa": "تومان",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "گران است",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "نمی‌دانم",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "می‌خواهم",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "حقوق من واریز شد",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "تومن",
+       "k": 1,
+       "say": false,
+       "e": "<i>tomen</i> – geschrieben: <span class='fa'>تومان</span>"
+      },
+      {
+       "fa": "گرونه",
+       "k": 1,
+       "say": false,
+       "e": "<i>gerūne</i> – geschrieben: <span class='fa'>گران است</span>"
+      },
+      {
+       "fa": "نمی‌دونم",
+       "k": 1,
+       "say": false,
+       "e": "<i>nemīdūnam</i> – geschrieben: <span class='fa'>نمی‌دانم</span>"
+      },
+      {
+       "fa": "می‌خوام",
+       "k": 1,
+       "say": false,
+       "e": "<i>mīchām</i> – geschrieben: <span class='fa'>می‌خواهم</span>"
+      },
+      {
+       "fa": "حقوقم ریخته شد",
+       "k": 1,
+       "say": false,
+       "e": "<i>hoghūgham rīchte schod</i> – geschrieben: <span class='fa'>حقوق من واریز شد</span>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Kurz-Dialog",
+   "vorschau": "💬",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Ende des Monats",
+     "text": "Umgangssprache! Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "حقوقت ریخته شد؟",
+       "tr": "hoghūghet rīchte schod?",
+       "de": "Ist dein Gehalt schon da?"
+      },
+      {
+       "fa": "آره، ولی نصفش رفت اجاره!",
+       "tr": "āre, walī nesfesch raft edschāre!",
+       "de": "Ja, aber die Hälfte ging für die Miete drauf!"
+      },
+      {
+       "fa": "منم همین‌طور. این ماه باید کمتر خرج کنیم.",
+       "tr": "manam hamīntour. īn māh bāyad kamtar chardsch konīm.",
+       "de": "Bei mir auch. Diesen Monat müssen wir weniger ausgeben."
+      },
+      {
+       "fa": "پس امشب به‌جای رستوران، نیمرو!",
+       "tr": "pas emschab bedschā-ye restorān, nīmrū!",
+       "de": "Dann heute Abend statt Restaurant: Spiegelei!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Verstanden?",
+     "fragen": [
+      {
+       "frage": "Wofür ging die Hälfte des Gehalts?",
+       "optionen": [
+        "für die Miete",
+        "fürs Essen",
+        "für ein Handy"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was essen sie heute Abend?",
+       "optionen": [
+        "Spiegelei",
+        "Kebab",
+        "Pizza"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

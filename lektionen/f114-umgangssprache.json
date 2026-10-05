@@ -1,0 +1,184 @@
+{
+ "id": "ug",
+ "art": "umgangssprache",
+ "titel": "Umgangssprache: So spricht man im Alltag",
+ "beschreibung": "Freiwilliger Extra-Teil: Umgangssprache.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "So spricht man",
+   "vorschau": "اومدی",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Schrift ≠ Gespräch",
+     "text": "<ul><li><span class='fa'>آمدی → اومدی</span> (<span class='fa'>آ → او</span> vor م/ن)</li><li><span class='fa'>نمی‌دانم → نمی‌دونم</span></li><li><span class='fa'>برایت → برات</span>: <span class='fa'>دلم برات تنگ شده</span></li><li><span class='fa'>کاش → کاشکی</span> · <span class='fa'>صدایم را → صدامو</span></li></ul>",
+     "stil": "merke"
+    },
+    {
+     "typ": "paare",
+     "links": "x",
+     "paare": [
+      {
+       "fa": "آمدی",
+       "tr": "",
+       "de": "du bist gekommen",
+       "x": "اومدی"
+      },
+      {
+       "fa": "نمی‌دانم",
+       "tr": "",
+       "de": "ich weiß nicht",
+       "x": "نمی‌دونم"
+      },
+      {
+       "fa": "دلم برایت تنگ شده",
+       "tr": "",
+       "de": "ich vermisse dich",
+       "x": "دلم برات تنگ شده"
+      },
+      {
+       "fa": "کاش",
+       "tr": "",
+       "de": "wenn doch …",
+       "x": "کاشکی"
+      },
+      {
+       "fa": "صدایم را",
+       "tr": "",
+       "de": "meine Stimme (Objekt)",
+       "x": "صدامو"
+      }
+     ],
+     "titel": "Schrift ↔ Gespräch"
+    },
+    {
+     "typ": "sortieren",
+     "titel": "Schrift oder Gespräch?",
+     "frage": "Schriftsprache oder Umgangssprache?",
+     "kategorien": [
+      "✍️ Schriftsprache",
+      "🗣️ Umgangssprache"
+     ],
+     "items": [
+      {
+       "fa": "آمدی",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "نمی‌دانم",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "دلم برایت تنگ شده",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "کاش",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "صدایم را",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "اومدی",
+       "k": 1,
+       "say": false,
+       "e": "<i>ūmadī</i> – geschrieben: <span class='fa'>آمدی</span>"
+      },
+      {
+       "fa": "نمی‌دونم",
+       "k": 1,
+       "say": false,
+       "e": "<i>nemīdūnam</i> – geschrieben: <span class='fa'>نمی‌دانم</span>"
+      },
+      {
+       "fa": "دلم برات تنگ شده",
+       "k": 1,
+       "say": false,
+       "e": "<i>delam barāt tang schode</i> – geschrieben: <span class='fa'>دلم برایت تنگ شده</span>"
+      },
+      {
+       "fa": "کاشکی",
+       "k": 1,
+       "say": false,
+       "e": "<i>kāschkī</i> – geschrieben: <span class='fa'>کاش</span>"
+      },
+      {
+       "fa": "صدامو",
+       "k": 1,
+       "say": false,
+       "e": "<i>sedāmo</i> – geschrieben: <span class='fa'>صدایم را</span>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Kurz-Dialog",
+   "vorschau": "💬",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Hörst du mich?",
+     "text": "Umgangssprache! Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "سلام مامان! صدامو داری؟",
+       "tr": "salām māmān! sedāmo dārī?",
+       "de": "Hallo Mama! Hörst du mich?"
+      },
+      {
+       "fa": "آره عزیزم، خوشحالم که زنگ زدی. دلم برات یه ذره شده!",
+       "tr": "āre ʿazīzam, choschhālam ke zang zadī. delam barāt ye zarre schode!",
+       "de": "Ja, mein Schatz, schön, dass du anrufst. Ich vermisse dich so sehr!"
+      },
+      {
+       "fa": "منم همین‌طور. کاشکی اونجا بودم!",
+       "tr": "manam hamīntour. kāschkī ūndschā būdam!",
+       "de": "Ich auch. Wäre ich doch dort!"
+      },
+      {
+       "fa": "نمی‌دونم چرا، ولی صدات قطع و وصل می‌شه…",
+       "tr": "nemīdūnam tscherā, walī sedāt ghatʿ o wasl mīsche…",
+       "de": "Ich weiß nicht warum, aber dein Ton bricht immer wieder ab …"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Verstanden?",
+     "fragen": [
+      {
+       "frage": "Was wünscht sich die Tochter?",
+       "optionen": [
+        "dort zu sein",
+        "ein Paket",
+        "ein neues Handy"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "<span class='fa'>اومدی</span> =",
+       "optionen": [
+        "آمدی",
+        "آوردی",
+        "ماندی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

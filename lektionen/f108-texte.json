@@ -1,0 +1,581 @@
+{
+ "id": "tx",
+ "art": "texte",
+ "titel": "Texte & Dialoge",
+ "beschreibung": "Lesetexte mit Fragen und Dialoge zum Ordnen.",
+ "stationen": [
+  {
+   "id": "t1",
+   "titel": "Alltag: Vorbereitung auf Nouruz",
+   "vorschau": "Vorbereitung auf Nouruz",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>قالیشویی</span> – Teppichreinigung · <span class='fa'>غر زدن</span> – meckern · <span class='fa'>خیس کردن</span> – einweichen · <span class='fa'>جوانه</span> – Keim · <span class='fa'>جای سوزن انداختن نبودن</span> – brechend voll sein · <span class='fa'>تنگ</span> – Glasgefäß · <span class='fa'>شمارش معکوس</span> – Countdown · <span class='fa'>روبوسی</span> – Wangenküsse · <span class='fa'>تانخورده</span> – ungefaltet</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Alltag: Vorbereitung auf Nouruz",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "دو هفته به نوروز مانده و خانه‌ی خانواده‌ی کریمی شلوغ‌تر از همیشه است.",
+       "tr": "do hafte be nourūz mānde o chāne-ye chānewāde-ye karīmī schologhtar az hamīsche ast.",
+       "de": "Es sind noch zwei Wochen bis Nouruz, und bei Familie Karimi ist mehr los als je zuvor."
+      },
+      {
+       "fa": "مادر از صبح زود فرش‌ها را به قالیشویی فرستاده و پرده‌ها را شسته است؛ خانه‌تکانی شروع شده!",
+       "tr": "mādar az sobh-e zūd farschhā rā be ghālīschūyī ferestāde o pardehā rā schoste ast; chānetekānī schorūʿ schode!",
+       "de": "Die Mutter hat seit dem frühen Morgen die Teppiche zur Reinigung geschickt und die Vorhänge gewaschen; der Frühjahrsputz hat begonnen!"
+      },
+      {
+       "fa": "می‌گویند که آدم باید سال نو را در خانه‌ای تمیز شروع کند تا سال خوبی داشته باشد.",
+       "tr": "mīgūyand ke ādam bāyad sāl-e nou rā dar chāneī tamīz schorūʿ konad tā sāl-e chūbī dāschte bāschad.",
+       "de": "Man sagt, man solle das neue Jahr in einem sauberen Haus beginnen, damit es ein gutes Jahr wird."
+      },
+      {
+       "fa": "پدر هم بی‌کار نیست: پنجره‌ها را تمیز می‌کند و غر می‌زند که هر سال کار بیشتر می‌شود.",
+       "tr": "pedar ham bīkār nīst: pandscherehā rā tamīz mīkonad o ghor mīzanad ke har sāl kār bīschtar mīschawad.",
+       "de": "Auch der Vater sitzt nicht untätig herum: Er putzt die Fenster und meckert, dass es jedes Jahr mehr Arbeit wird."
+      },
+      {
+       "fa": "نیوشا، دختر کوچک خانواده، مسئول سبزه است؛ او دو هفته پیش عدس‌ها را خیس کرد و حالا جوانه‌های سبز از بشقاب بیرون آمده‌اند.",
+       "tr": "nīyūschā, dochtar-e kūtschak-e chānewāde, masʾūl-e sabze ast; ū do hafte pīsch ʿadashā rā chīs kard o hālā dschawānehā-ye sabz az boschghāb bīrūn āmade-and.",
+       "de": "Niusha, die jüngste Tochter, ist für die Sabzeh zuständig; vor zwei Wochen hat sie Linsen eingeweicht, und jetzt sprießen grüne Keime aus dem Teller."
+      },
+      {
+       "fa": "آخر هفته همه با هم به بازار رفتند تا لباس نو بخرند، اما در بازار جای سوزن انداختن نبود.",
+       "tr": "āchar-e hafte hame bā ham be bāzār raftand tā lebās-e nou becharand, ammā dar bāzār dschā-ye sūzan andāchtan nabūd.",
+       "de": "Am Wochenende gingen alle zusammen in den Basar, um neue Kleidung zu kaufen, aber der Basar war brechend voll."
+      },
+      {
+       "fa": "پدر گفت: «با این شلوغی نمی‌شود چیزی خرید!»، ولی بالاخره همه با دست پر به خانه برگشتند.",
+       "tr": "pedar goft: «bā īn scholoughī nemīschawad tschīzī charīd!», walī bālāchare hame bā dast-e por be chāne bargaschtand.",
+       "de": "Der Vater sagte: „Bei diesem Gedränge kann man nichts kaufen!“, aber am Ende kamen alle mit vollen Händen nach Hause."
+      },
+      {
+       "fa": "شب قبل از تحویل سال، نیوشا و برادرش سفره‌ی هفت‌سین را چیدند: سبزه، سمنو، سنجد، سیب، سیر، سرکه و سماق.",
+       "tr": "schab-e ghabl az tahwīl-e sāl, nīyūschā o barādarasch sofre-ye haftsīn rā tschīdand: sabze, samanū, sendsched, sīb, sīr, serke o somāgh.",
+       "de": "Am Abend vor dem Jahreswechsel deckten Niusha und ihr Bruder den Haft-Sin-Tisch: Sprossen, Samanu, Ölweidenfrüchte, Äpfel, Knoblauch, Essig und Sumach."
+      },
+      {
+       "fa": "کنار آنها یک آینه، چند شمع، تخم‌مرغ‌های رنگی و یک تنگ ماهی قرمز هم گذاشتند.",
+       "tr": "kenār-e ānhā yek āyene, tschand schamʿ, tochmemorghhā-ye rangī o yek tong-e māhī-ye ghermez ham gozāschtand.",
+       "de": "Daneben stellten sie noch einen Spiegel, ein paar Kerzen, bemalte Eier und ein Glas mit einem Goldfisch."
+      },
+      {
+       "fa": "لحظه‌ی تحویل سال، همه دور سفره نشسته بودند و به شمارش معکوس تلویزیون گوش می‌دادند.",
+       "tr": "lahze-ye tahwīl-e sāl, hame dour-e sofre neschaste būdand o be schomāresch-e maʿkūs-e telewīzyon gūsch mīdādand.",
+       "de": "Im Augenblick des Jahreswechsels saßen alle um den Tisch und hörten dem Countdown im Fernsehen zu."
+      },
+      {
+       "fa": "بعد از روبوسی و تبریک، پدربزرگ به بچه‌ها عیدی داد: اسکناس‌های نو و تانخورده.",
+       "tr": "baʿd az rūbūsī o tabrīk, pedarbozorg be batschtschehā ʿeydī dād: eskenāshā-ye nou o tānachorde.",
+       "de": "Nach Wangenküssen und Glückwünschen gab Opa den Kindern ihr Neujahrsgeschenk: neue, ungefaltete Geldscheine."
+      },
+      {
+       "fa": "از فردا عید دیدنی شروع می‌شود؛ معمولا اول به خانه‌ی بزرگ‌ترهای فامیل می‌روند و آجیل و شیرینی می‌خورند.",
+       "tr": "az fardā ʿeyddīdanī schorūʿ mīschawad; maʿmūlan awwal be chāne-ye bozorgtarhā-ye fāmīl mīravand o ādschīl o schīrīnī mīchorand.",
+       "de": "Ab morgen beginnen die Neujahrsbesuche; normalerweise geht man zuerst zu den Ältesten der Familie und isst Nüsse und Gebäck."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "خانه‌تکانی دو هفته قبل از نوروز شروع شده است.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "نیوشا مسئول خرید لباس است.",
+       "fest": true,
+       "erkl": "Sie ist für die <b>Sabzeh</b> (Sprossen) zuständig."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "بازار آخر هفته خیلی خلوت بود.",
+       "fest": true,
+       "erkl": "Der Basar war <b>brechend voll</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "روی سفره‌ی هفت‌سین یک ماهی قرمز هم بود.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "پدربزرگ به بچه‌ها پول نو عیدی داد.",
+       "fest": true
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Warum putzt man vor Nouruz?",
+       "optionen": [
+        "Man soll das neue Jahr in einem sauberen Haus beginnen.",
+        "Weil Gäste es verlangen.",
+        "Weil die Teppiche alt sind."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Woraus zieht Niusha die Sabzeh?",
+       "optionen": [
+        "aus Linsen",
+        "aus Reis",
+        "aus Blumensamen"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was sagte der Vater im Basar?",
+       "optionen": [
+        "Bei diesem Gedränge kann man nichts kaufen.",
+        "Alles ist zu billig.",
+        "Wir kaufen alles online."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Zu wem geht man bei den Neujahrsbesuchen zuerst?",
+       "optionen": [
+        "zu den Ältesten der Familie",
+        "zu den Nachbarn",
+        "zu Freunden"
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "مادر از صبح زود فرش‌ها را به قالیشویی فرستاده و پرده‌ها را شسته است؛ خانه‌تکانی شروع شده!",
+       "tr": "mādar az sobh-e zūd farschhā rā be ghālīschūyī ferestāde o pardehā rā schoste ast; chānetekānī schorūʿ schode!",
+       "de": "Die Mutter hat seit dem frühen Morgen die Teppiche zur Reinigung geschickt und die Vorhänge gewaschen; der Frühjahrsputz hat begonnen!"
+      },
+      {
+       "fa": "می‌گویند که آدم باید سال نو را در خانه‌ای تمیز شروع کند تا سال خوبی داشته باشد.",
+       "tr": "mīgūyand ke ādam bāyad sāl-e nou rā dar chāneī tamīz schorūʿ konad tā sāl-e chūbī dāschte bāschad.",
+       "de": "Man sagt, man solle das neue Jahr in einem sauberen Haus beginnen, damit es ein gutes Jahr wird."
+      },
+      {
+       "fa": "پدر هم بی‌کار نیست: پنجره‌ها را تمیز می‌کند و غر می‌زند که هر سال کار بیشتر می‌شود.",
+       "tr": "pedar ham bīkār nīst: pandscherehā rā tamīz mīkonad o ghor mīzanad ke har sāl kār bīschtar mīschawad.",
+       "de": "Auch der Vater sitzt nicht untätig herum: Er putzt die Fenster und meckert, dass es jedes Jahr mehr Arbeit wird."
+      },
+      {
+       "fa": "نیوشا، دختر کوچک خانواده، مسئول سبزه است؛ او دو هفته پیش عدس‌ها را خیس کرد و حالا جوانه‌های سبز از بشقاب بیرون آمده‌اند.",
+       "tr": "nīyūschā, dochtar-e kūtschak-e chānewāde, masʾūl-e sabze ast; ū do hafte pīsch ʿadashā rā chīs kard o hālā dschawānehā-ye sabz az boschghāb bīrūn āmade-and.",
+       "de": "Niusha, die jüngste Tochter, ist für die Sabzeh zuständig; vor zwei Wochen hat sie Linsen eingeweicht, und jetzt sprießen grüne Keime aus dem Teller."
+      },
+      {
+       "fa": "آخر هفته همه با هم به بازار رفتند تا لباس نو بخرند، اما در بازار جای سوزن انداختن نبود.",
+       "tr": "āchar-e hafte hame bā ham be bāzār raftand tā lebās-e nou becharand, ammā dar bāzār dschā-ye sūzan andāchtan nabūd.",
+       "de": "Am Wochenende gingen alle zusammen in den Basar, um neue Kleidung zu kaufen, aber der Basar war brechend voll."
+      },
+      {
+       "fa": "پدر گفت: «با این شلوغی نمی‌شود چیزی خرید!»، ولی بالاخره همه با دست پر به خانه برگشتند.",
+       "tr": "pedar goft: «bā īn scholoughī nemīschawad tschīzī charīd!», walī bālāchare hame bā dast-e por be chāne bargaschtand.",
+       "de": "Der Vater sagte: „Bei diesem Gedränge kann man nichts kaufen!“, aber am Ende kamen alle mit vollen Händen nach Hause."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t2",
+   "titel": "Hintergrund: Der iranische Sonnenkalender",
+   "vorschau": "Der iranische Sonnenkalender",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>آغاز شدن</span> – beginnen · <span class='fa'>برابر</span> – gleich · <span class='fa'>سحر</span> – Morgendämmerung · <span class='fa'>نظم</span> – Ordnung · <span class='fa'>سرپرستی</span> – Leitung · <span class='fa'>اصلاح کردن</span> – reformieren · <span class='fa'>رباعی</span> – Vierzeiler · <span class='fa'>ریاضی‌دان</span> – Mathematiker/in · <span class='fa'>هم‌دوره</span> – zeitgenössisch · <span class='fa'>خطا</span> – Abweichung, Fehler</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Hintergrund: Der iranische Sonnenkalender",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "در ایران، سال نو نه در زمستان، بلکه در اولین روز بهار شروع می‌شود.",
+       "tr": "dar īrān, sāl-e nou na dar zemestān, balke dar awwalīn rūz-e bahār schorūʿ mīschawad.",
+       "de": "In Iran beginnt das neue Jahr nicht im Winter, sondern am ersten Frühlingstag."
+      },
+      {
+       "fa": "تقویم رسمی ایران یک تقویم خورشیدی است و سال در آن دقیقا با اعتدال بهاری آغاز می‌شود؛ یعنی لحظه‌ای که روز و شب تقریبا برابرند.",
+       "tr": "taghwīm-e rasmī-ye īrān yek taghwīm-e chorschīdī ast o sāl dar ān daghīghan bā eʿtedāl-e bahārī āghāz mīschawad; yaʿnī lahzeī ke rūz o schab taghrīban barābarand.",
+       "de": "Der offizielle Kalender Irans ist ein Sonnenkalender, und das Jahr beginnt darin genau mit der Frühlings-Tagundnachtgleiche – dem Moment, in dem Tag und Nacht etwa gleich lang sind."
+      },
+      {
+       "fa": "به همین دلیل، تحویل سال هر سال در ساعت متفاوتی است: گاهی نیمه‌شب، گاهی ظهر و گاهی سحر.",
+       "tr": "be hamīn dalīl, tahwīl-e sāl har sāl dar sāʿat-e motafāwetī ast: gāhī nīmeschab, gāhī zohr o gāhī sahar.",
+       "de": "Deshalb fällt der Jahreswechsel jedes Jahr auf eine andere Uhrzeit: mal Mitternacht, mal Mittag, mal Morgendämmerung."
+      },
+      {
+       "fa": "ماه‌های سال این‌ها هستند: فروردین، اردیبهشت، خرداد، تیر، مرداد، شهریور، مهر، آبان، آذر، دی، بهمن و اسفند.",
+       "tr": "māhhā-ye sāl īnhā hastand: farwardīn, ordībehescht, chordād, tīr, mordād, schahrīwar, mehr, ābān, āzar, dey, bahman o esfand.",
+       "de": "Die Monate des Jahres sind: Farvardin, Ordibehesht, Khordad, Tir, Mordad, Shahrivar, Mehr, Aban, Azar, Dey, Bahman und Esfand."
+      },
+      {
+       "fa": "شش ماه اول سی و یک روز دارند، پنج ماه بعد سی روز، و اسفند بیست و نه روز – در سال کبیسه سی روز.",
+       "tr": "schesch māh-e awwal sī o yek rūz dārand, pandsch māh-e baʿd sī rūz, o esfand bīst o noh rūz – dar sāl-e kabīse sī rūz.",
+       "de": "Die ersten sechs Monate haben 31 Tage, die nächsten fünf 30 Tage und Esfand 29 Tage – im Schaltjahr 30."
+      },
+      {
+       "fa": "این نظم ساده باعث می‌شود که هر فصل دقیقا سه ماه باشد: بهار با فروردین شروع می‌شود و زمستان با دی.",
+       "tr": "īn nazm-e sāde bāʿes mīschawad ke har fasl daghīghan se māh bāschad: bahār bā farwardīn schorūʿ mīschawad o zemestān bā dey.",
+       "de": "Diese einfache Ordnung bewirkt, dass jede Jahreszeit genau drei Monate hat: Der Frühling beginnt mit Farvardin, der Winter mit Dey."
+      },
+      {
+       "fa": "پایه‌ی این تقویم در قرن یازدهم میلادی گذاشته شد، وقتی که گروهی از ستاره‌شناسان به سرپرستی عمر خیام آن را اصلاح کردند.",
+       "tr": "pāye-ye īn taghwīm dar gharn-e yāzdahom-e mīlādī gozāschte schod, waghtī ke gorūhī az setāreschenāsān be sarparastī-ye ʿomar-e chayyām ān rā eslāh kardand.",
+       "de": "Die Grundlage dieses Kalenders wurde im 11. Jahrhundert gelegt, als eine Gruppe von Astronomen unter der Leitung von Omar Chayyam ihn reformierte."
+      },
+      {
+       "fa": "بیشتر مردم خیام را فقط به خاطر رباعی‌هایش می‌شناسند، اما او ریاضی‌دان و ستاره‌شناس بزرگی هم بود.",
+       "tr": "bīschtar-e mardom chayyām rā faghat be chāter-e robāʿīhāyasch mīschenāsand, ammā ū riyāzīdān o setāreschenās-e bozorgī ham būd.",
+       "de": "Die meisten kennen Chayyam nur wegen seiner Vierzeiler, doch er war auch ein großer Mathematiker und Astronom."
+      },
+      {
+       "fa": "تقویمی که آنها ساختند «تقویم جلالی» نام گرفت و از تقویم‌های هم‌دوره‌اش بسیار دقیق‌تر بود.",
+       "tr": "taghwīmī ke ānhā sāchtand «taghwīm-e dschalālī» nām gereft o az taghwīmhā-ye hamdoureasch besyār daghīghtar būd.",
+       "de": "Der Kalender, den sie schufen, hieß „Dschalali-Kalender“ und war viel genauer als die Kalender seiner Zeit."
+      },
+      {
+       "fa": "می‌توان گفت که خطای تقویم امروزی ایران حتی از تقویم میلادی هم کمتر است.",
+       "tr": "mītawān goft ke chatā-ye taghwīm-e emrūzī-ye īrān hattā az taghwīm-e mīlādī ham kamtar ast.",
+       "de": "Man kann sagen, dass die Abweichung des heutigen iranischen Kalenders sogar geringer ist als die des gregorianischen."
+      },
+      {
+       "fa": "شمارش سال‌ها از سال ۶۲۲ میلادی شروع می‌شود؛ برای همین، سال ۲۰۲۶ میلادی در ایران حدود سال ۱۴۰۵ است.",
+       "tr": "schomāresch-e sālhā az sāl-e schesch-sad o bīst o do-ye mīlādī schorūʿ mīschawad; barā-ye hamīn, sāl-e do-hezār o bīst o schesch-e mīlādī dar īrān hodūd-e sāl-e hezār o tschahār-sad o pandsch ast.",
+       "de": "Die Jahreszählung beginnt im Jahr 622; deshalb ist das Jahr 2026 in Iran etwa das Jahr 1405."
+      },
+      {
+       "fa": "ایرانی‌ها در زندگی روزمره با دو تقویم زندگی می‌کنند، اما وقتی بهار می‌رسد، همه فقط به یک تاریخ فکر می‌کنند: اول فروردین.",
+       "tr": "īrānīhā dar zendegī-ye rūzmarre bā do taghwīm zendegī mīkonand, ammā waghtī bahār mīresad, hame faghat be yek tārīch fekr mīkonand: awwal-e farwardīn.",
+       "de": "Im Alltag leben Iraner mit zwei Kalendern, aber wenn der Frühling kommt, denken alle nur an ein Datum: den 1. Farvardin."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "سال نو ایرانی در اولین روز بهار شروع می‌شود.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "تحویل سال هر سال در یک ساعت ثابت است.",
+       "fest": true,
+       "erkl": "Die Uhrzeit ist <b>jedes Jahr anders</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "شش ماه اول سال سی و یک روز دارند.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "خیام فقط شاعر بود.",
+       "fest": true,
+       "erkl": "Er war auch <b>Mathematiker und Astronom</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "تقویم جلالی از تقویم‌های هم‌دوره‌اش دقیق‌تر بود.",
+       "fest": true
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Womit beginnt das iranische Jahr?",
+       "optionen": [
+        "mit der Frühlings-Tagundnachtgleiche",
+        "mit dem 1. Januar",
+        "mit dem ersten Schnee"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie viele Tage hat Esfand in einem Schaltjahr?",
+       "optionen": [
+        "30",
+        "29",
+        "31"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wer leitete die Kalenderreform im 11. Jahrhundert?",
+       "optionen": [
+        "Omar Chayyam",
+        "Hafis",
+        "Avicenna"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Welchem iranischen Jahr entspricht 2026 ungefähr?",
+       "optionen": [
+        "1405",
+        "1305",
+        "1505"
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "تقویم رسمی ایران یک تقویم خورشیدی است و سال در آن دقیقا با اعتدال بهاری آغاز می‌شود؛ یعنی لحظه‌ای که روز و شب تقریبا برابرند.",
+       "tr": "taghwīm-e rasmī-ye īrān yek taghwīm-e chorschīdī ast o sāl dar ān daghīghan bā eʿtedāl-e bahārī āghāz mīschawad; yaʿnī lahzeī ke rūz o schab taghrīban barābarand.",
+       "de": "Der offizielle Kalender Irans ist ein Sonnenkalender, und das Jahr beginnt darin genau mit der Frühlings-Tagundnachtgleiche – dem Moment, in dem Tag und Nacht etwa gleich lang sind."
+      },
+      {
+       "fa": "به همین دلیل، تحویل سال هر سال در ساعت متفاوتی است: گاهی نیمه‌شب، گاهی ظهر و گاهی سحر.",
+       "tr": "be hamīn dalīl, tahwīl-e sāl har sāl dar sāʿat-e motafāwetī ast: gāhī nīmeschab, gāhī zohr o gāhī sahar.",
+       "de": "Deshalb fällt der Jahreswechsel jedes Jahr auf eine andere Uhrzeit: mal Mitternacht, mal Mittag, mal Morgendämmerung."
+      },
+      {
+       "fa": "ماه‌های سال این‌ها هستند: فروردین، اردیبهشت، خرداد، تیر، مرداد، شهریور، مهر، آبان، آذر، دی، بهمن و اسفند.",
+       "tr": "māhhā-ye sāl īnhā hastand: farwardīn, ordībehescht, chordād, tīr, mordād, schahrīwar, mehr, ābān, āzar, dey, bahman o esfand.",
+       "de": "Die Monate des Jahres sind: Farvardin, Ordibehesht, Khordad, Tir, Mordad, Shahrivar, Mehr, Aban, Azar, Dey, Bahman und Esfand."
+      },
+      {
+       "fa": "شش ماه اول سی و یک روز دارند، پنج ماه بعد سی روز، و اسفند بیست و نه روز – در سال کبیسه سی روز.",
+       "tr": "schesch māh-e awwal sī o yek rūz dārand, pandsch māh-e baʿd sī rūz, o esfand bīst o noh rūz – dar sāl-e kabīse sī rūz.",
+       "de": "Die ersten sechs Monate haben 31 Tage, die nächsten fünf 30 Tage und Esfand 29 Tage – im Schaltjahr 30."
+      },
+      {
+       "fa": "این نظم ساده باعث می‌شود که هر فصل دقیقا سه ماه باشد: بهار با فروردین شروع می‌شود و زمستان با دی.",
+       "tr": "īn nazm-e sāde bāʿes mīschawad ke har fasl daghīghan se māh bāschad: bahār bā farwardīn schorūʿ mīschawad o zemestān bā dey.",
+       "de": "Diese einfache Ordnung bewirkt, dass jede Jahreszeit genau drei Monate hat: Der Frühling beginnt mit Farvardin, der Winter mit Dey."
+      },
+      {
+       "fa": "پایه‌ی این تقویم در قرن یازدهم میلادی گذاشته شد، وقتی که گروهی از ستاره‌شناسان به سرپرستی عمر خیام آن را اصلاح کردند.",
+       "tr": "pāye-ye īn taghwīm dar gharn-e yāzdahom-e mīlādī gozāschte schod, waghtī ke gorūhī az setāreschenāsān be sarparastī-ye ʿomar-e chayyām ān rā eslāh kardand.",
+       "de": "Die Grundlage dieses Kalenders wurde im 11. Jahrhundert gelegt, als eine Gruppe von Astronomen unter der Leitung von Omar Chayyam ihn reformierte."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d1",
+   "titel": "Dialog: Pläne für die Nouruz-Ferien",
+   "vorschau": "Pläne für die Nouruz-Ferien",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Anna studiert in Teheran. Kurz vor Nouruz fragt sie ihren Kommilitonen Babak nach seinen Plänen.</p>"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "آنا: بابک، برای تعطیلات نوروز برنامه‌ای داری؟",
+       "tr": "bābak, barā-ye taʿtīlāt-e nourūz barnāmeī dārī?",
+       "de": "Babak, hast du Pläne für die Nouruz-Ferien?"
+      },
+      {
+       "fa": "بابک: روزهای اول باید به عید دیدنی رفت: خانه‌ی مادربزرگ، عمو، خاله … نمی‌شود به کسی سر نزد!",
+       "tr": "rūzhā-ye awwal bāyad be ʿeyddīdanī raft: chāne-ye mādarbozorg, ʿamū, chāle … nemīschawad be kasī sar nazad!",
+       "de": "Die ersten Tage muss man zu Neujahrsbesuchen: zu Oma, zum Onkel, zur Tante … man kann niemanden auslassen!"
+      },
+      {
+       "fa": "آنا: این همه مهمانی؟ آدم خسته نمی‌شود؟",
+       "tr": "īn hame mehmānī? ādam chaste nemīschawad?",
+       "de": "So viele Besuche? Wird man da nicht müde?"
+      },
+      {
+       "fa": "بابک: چرا، ولی آدم کلی آجیل و شیرینی می‌خورد! بعد از آن می‌خواهیم به شمال برویم.",
+       "tr": "tscherā, walī ādam kollī ādschīl o schīrīnī mīchorad! baʿd az ān mīchāhīm be schomāl berawīm.",
+       "de": "Doch, aber man isst jede Menge Nüsse und Gebäck! Danach wollen wir in den Norden fahren."
+      },
+      {
+       "fa": "آنا: می‌گویند که جاده‌های شمال در نوروز خیلی شلوغ است.",
+       "tr": "mīgūyand ke dschāddehā-ye schomāl dar nourūz cheylī schologh ast.",
+       "de": "Man sagt, die Straßen in den Norden sind zu Nouruz sehr voll."
+      },
+      {
+       "fa": "بابک: درست است. برای همین باید ساعت چهار صبح راه افتاد.",
+       "tr": "dorost ast. barā-ye hamīn bāyad sāʿat-e tschahār-e sobh rāh oftād.",
+       "de": "Stimmt. Deshalb muss man um vier Uhr morgens losfahren."
+      },
+      {
+       "fa": "آنا: و سیزده‌به‌در چه می‌کنید؟",
+       "tr": "o sīzdahbedar tsche mīkonīd?",
+       "de": "Und was macht ihr an Sizdah-be-dar?"
+      },
+      {
+       "fa": "بابک: آن روز کسی در خانه نمی‌ماند؛ همه به طبیعت می‌روند. تو هم با ما بیا!",
+       "tr": "ān rūz kasī dar chāne nemīmānad; hame be tabīʿat mīravand. to ham bā mā biyā!",
+       "de": "An dem Tag bleibt niemand zu Hause; alle gehen in die Natur. Komm doch mit!"
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "آنا: بابک، برای تعطیلات نوروز برنامه‌ای داری؟",
+       "tr": "bābak, barā-ye taʿtīlāt-e nourūz barnāmeī dārī?",
+       "de": "Babak, hast du Pläne für die Nouruz-Ferien?"
+      },
+      {
+       "fa": "بابک: روزهای اول باید به عید دیدنی رفت: خانه‌ی مادربزرگ، عمو، خاله … نمی‌شود به کسی سر نزد!",
+       "tr": "rūzhā-ye awwal bāyad be ʿeyddīdanī raft: chāne-ye mādarbozorg, ʿamū, chāle … nemīschawad be kasī sar nazad!",
+       "de": "Die ersten Tage muss man zu Neujahrsbesuchen: zu Oma, zum Onkel, zur Tante … man kann niemanden auslassen!"
+      },
+      {
+       "fa": "آنا: این همه مهمانی؟ آدم خسته نمی‌شود؟",
+       "tr": "īn hame mehmānī? ādam chaste nemīschawad?",
+       "de": "So viele Besuche? Wird man da nicht müde?"
+      },
+      {
+       "fa": "بابک: چرا، ولی آدم کلی آجیل و شیرینی می‌خورد! بعد از آن می‌خواهیم به شمال برویم.",
+       "tr": "tscherā, walī ādam kollī ādschīl o schīrīnī mīchorad! baʿd az ān mīchāhīm be schomāl berawīm.",
+       "de": "Doch, aber man isst jede Menge Nüsse und Gebäck! Danach wollen wir in den Norden fahren."
+      },
+      {
+       "fa": "آنا: می‌گویند که جاده‌های شمال در نوروز خیلی شلوغ است.",
+       "tr": "mīgūyand ke dschāddehā-ye schomāl dar nourūz cheylī schologh ast.",
+       "de": "Man sagt, die Straßen in den Norden sind zu Nouruz sehr voll."
+      },
+      {
+       "fa": "بابک: درست است. برای همین باید ساعت چهار صبح راه افتاد.",
+       "tr": "dorost ast. barā-ye hamīn bāyad sāʿat-e tschahār-e sobh rāh oftād.",
+       "de": "Stimmt. Deshalb muss man um vier Uhr morgens losfahren."
+      },
+      {
+       "fa": "آنا: و سیزده‌به‌در چه می‌کنید؟",
+       "tr": "o sīzdahbedar tsche mīkonīd?",
+       "de": "Und was macht ihr an Sizdah-be-dar?"
+      },
+      {
+       "fa": "بابک: آن روز کسی در خانه نمی‌ماند؛ همه به طبیعت می‌روند. تو هم با ما بیا!",
+       "tr": "ān rūz kasī dar chāne nemīmānad; hame be tabīʿat mīravand. to ham bā mā biyā!",
+       "de": "An dem Tag bleibt niemand zu Hause; alle gehen in die Natur. Komm doch mit!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Was macht Babak in den ersten Ferientagen?",
+       "optionen": [
+        "Neujahrsbesuche bei Verwandten",
+        "Er fährt in den Norden.",
+        "Er arbeitet."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Warum muss man um vier Uhr morgens losfahren?",
+       "optionen": [
+        "Die Straßen in den Norden sind sehr voll.",
+        "Es ist tagsüber zu heiß.",
+        "Der Zug fährt so früh."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was machen alle an Sizdah-be-dar?",
+       "optionen": [
+        "Sie gehen in die Natur.",
+        "Sie bleiben zu Hause.",
+        "Sie putzen das Haus."
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

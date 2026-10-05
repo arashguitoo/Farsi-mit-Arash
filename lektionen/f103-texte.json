@@ -1,0 +1,572 @@
+{
+ "id": "tx",
+ "art": "texte",
+ "titel": "Texte & Dialoge",
+ "beschreibung": "Lesetexte mit Fragen und Dialoge zum Ordnen.",
+ "stationen": [
+  {
+   "id": "t1",
+   "titel": "Alltag: „Ich bin in fünf Minuten da!“",
+   "vorschau": "„Ich bin in fünf Minuten da!“",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>وحشتناک</span> – schrecklich · <span class='fa'>کم‌کم</span> – allmählich · <span class='fa'>ناراحتی</span> – Ärger, Unmut · <span class='fa'>نفس‌زنان</span> – keuchend, außer Atem</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Alltag: „Ich bin in fünf Minuten da!“",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "یوناس ساعت شش با دوستش پویا در کافه‌ای در خیابان انقلاب قرار گذاشته بود.",
+       "tr": "yūnās sāʿat-e schesch bā dūstasch pūyā dar kāfeī dar chiyābān-e enghelāb gharār gozāschte būd.",
+       "de": "Jonas war um sechs mit seinem Freund Pouya in einem Café in der Enghelab-Straße verabredet."
+      },
+      {
+       "fa": "او دقیقا سر ساعت رسید، مثل همیشه.",
+       "tr": "ū daghīghan sar-e sāʿat resīd, mesl-e hamīsche.",
+       "de": "Er kam genau pünktlich, wie immer."
+      },
+      {
+       "fa": "ساعت شش و ده دقیقه، پویا پیامک داد: «تو راهم، پنج دقیقه دیگه می‌رسم!»",
+       "tr": "sāʿat-e schesch o dah daghīghe, pūyā payāmak dād: «tū rāham, pandsch daghīghe-ye dīge mīresam!»",
+       "de": "Um zehn nach sechs schrieb Pouya: „Bin unterwegs, in fünf Minuten da!“"
+      },
+      {
+       "fa": "یوناس یک چای سفارش داد و منتظر ماند.",
+       "tr": "yūnās yek tschāy sefāresch dād o montazer mānd.",
+       "de": "Jonas bestellte einen Tee und wartete."
+      },
+      {
+       "fa": "ساعت شش و نیم، پیامک دوم آمد: «ببخشید، ترافیک وحشتناکه!»",
+       "tr": "sāʿat-e schesch o nīm, payāmak-e dowwom āmad: «bebachschīd, terāfīk wahschatnāke!»",
+       "de": "Um halb sieben kam die zweite Nachricht: „Sorry, der Stau ist schrecklich!“"
+      },
+      {
+       "fa": "در حالی که یوناس چای دومش را می‌خورد، کم‌کم کلافه شد.",
+       "tr": "dar hālī ke yūnās tschāy-e dowwomasch rā mīchord, kamkam kalāfe schod.",
+       "de": "Während Jonas seinen zweiten Tee trank, wurde er allmählich genervt."
+      },
+      {
+       "fa": "مرد میز کناری که ناراحتی او را دید، لبخند زد و گفت:",
+       "tr": "mard-e mīz-e kenārī ke nārāhatī-ye ū rā dīd, labchand zad o goft:",
+       "de": "Der Mann am Nebentisch, der seinen Ärger bemerkte, lächelte und sagte:"
+      },
+      {
+       "fa": "«پسرم، در تهران ‹پنج دقیقه› یعنی حداقل نیم ساعت!»",
+       "tr": "«pesaram, dar tehrān «pandsch daghīghe» yaʿnī haddeaghall nīm sāʿat!»",
+       "de": "„Mein Junge, in Teheran heißt ‚fünf Minuten‘ mindestens eine halbe Stunde!“"
+      },
+      {
+       "fa": "آنها شروع به صحبت کردند؛ مرد درباره‌ی سفرش به آلمان تعریف کرد.",
+       "tr": "ānhā schorūʿ be sohbat kardand; mard darbāre-ye safarasch be ālmān taʿrīf kard.",
+       "de": "Sie kamen ins Gespräch; der Mann erzählte von seiner Reise nach Deutschland."
+      },
+      {
+       "fa": "زمان گذشت تا اینکه بالاخره ساعت هفت و ربع، پویا نفس‌زنان وارد شد.",
+       "tr": "zamān gozascht tā īnke belāchare sāʿat-e haft o robʿ, pūyā nafaszanān wāred schod.",
+       "de": "Die Zeit verging, bis schließlich um Viertel nach sieben Pouya außer Atem hereinkam."
+      },
+      {
+       "fa": "یوناس خندید: «اشکالی ندارد؛ یک دوست جدید پیدا کردم!»",
+       "tr": "yūnās chandīd: «eschkālī nadārad; yek dūst-e dschadīd peydā kardam!»",
+       "de": "Jonas lachte: „Kein Problem; ich habe einen neuen Freund gefunden!“"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "یوناس دیر به کافه رسید.",
+       "fest": true,
+       "erkl": "Er kam <b>genau pünktlich</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "پویا دو بار پیامک داد.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "مرد میز کناری یوناس را مسخره کرد.",
+       "fest": true,
+       "erkl": "Er war <b>freundlich</b> und erklärte etwas."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "پویا ساعت هفت و ربع رسید.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "در آخر یوناس خیلی عصبانی بود.",
+       "fest": true,
+       "erkl": "Er <b>lachte</b>."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Was bedeutet laut dem Mann „fünf Minuten“ in Teheran?",
+       "optionen": [
+        "mindestens eine halbe Stunde",
+        "genau fünf Minuten",
+        "eine Stunde"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was gab Pouya als Ausrede an?",
+       "optionen": [
+        "den Stau",
+        "Krankheit",
+        "Arbeit"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie viel Verspätung hatte Pouya?",
+       "optionen": [
+        "etwa 75 Minuten",
+        "fünf Minuten",
+        "eine halbe Stunde"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was ist das Positive am Warten?",
+       "optionen": [
+        "Jonas fand einen neuen Freund.",
+        "Der Tee war gratis.",
+        "Pouya brachte ein Geschenk."
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "او دقیقا سر ساعت رسید، مثل همیشه.",
+       "tr": "ū daghīghan sar-e sāʿat resīd, mesl-e hamīsche.",
+       "de": "Er kam genau pünktlich, wie immer."
+      },
+      {
+       "fa": "ساعت شش و ده دقیقه، پویا پیامک داد: «تو راهم، پنج دقیقه دیگه می‌رسم!»",
+       "tr": "sāʿat-e schesch o dah daghīghe, pūyā payāmak dād: «tū rāham, pandsch daghīghe-ye dīge mīresam!»",
+       "de": "Um zehn nach sechs schrieb Pouya: „Bin unterwegs, in fünf Minuten da!“"
+      },
+      {
+       "fa": "یوناس یک چای سفارش داد و منتظر ماند.",
+       "tr": "yūnās yek tschāy sefāresch dād o montazer mānd.",
+       "de": "Jonas bestellte einen Tee und wartete."
+      },
+      {
+       "fa": "ساعت شش و نیم، پیامک دوم آمد: «ببخشید، ترافیک وحشتناکه!»",
+       "tr": "sāʿat-e schesch o nīm, payāmak-e dowwom āmad: «bebachschīd, terāfīk wahschatnāke!»",
+       "de": "Um halb sieben kam die zweite Nachricht: „Sorry, der Stau ist schrecklich!“"
+      },
+      {
+       "fa": "در حالی که یوناس چای دومش را می‌خورد، کم‌کم کلافه شد.",
+       "tr": "dar hālī ke yūnās tschāy-e dowwomasch rā mīchord, kamkam kalāfe schod.",
+       "de": "Während Jonas seinen zweiten Tee trank, wurde er allmählich genervt."
+      },
+      {
+       "fa": "مرد میز کناری که ناراحتی او را دید، لبخند زد و گفت:",
+       "tr": "mard-e mīz-e kenārī ke nārāhatī-ye ū rā dīd, labchand zad o goft:",
+       "de": "Der Mann am Nebentisch, der seinen Ärger bemerkte, lächelte und sagte:"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t2",
+   "titel": "Hintergrund: Zeitgefühl in Iran und Deutschland",
+   "vorschau": "Zeitgefühl in Iran und Deutschland",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>مردم‌شناس</span> – Ethnologe · <span class='fa'>تقسیم کردن</span> – einteilen · <span class='fa'>تک‌زمانی / چندزمانی</span> – monochron / polychron · <span class='fa'>جزو … دانستن</span> – zu … zählen · <span class='fa'>مطرح کردن</span> – aufwerfen</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Hintergrund: Zeitgefühl in Iran und Deutschland",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "مردم‌شناس‌ها فرهنگ‌ها را از نظر نگاه به زمان به دو گروه تقسیم می‌کنند.",
+       "tr": "mardomschenāshā farhanghā rā az nazar-e negāh be zamān be do gorūh taghsīm mīkonand.",
+       "de": "Ethnologen teilen Kulturen nach ihrem Zeitverständnis in zwei Gruppen."
+      },
+      {
+       "fa": "در فرهنگ‌های «تک‌زمانی» مثل آلمان، زمان مثل یک خط مستقیم است.",
+       "tr": "dar farhanghā-ye «takzamānī» mesl-e ālmān, zamān mesl-e yek chatt-e mostaghīm ast.",
+       "de": "In „monochronen“ Kulturen wie Deutschland ist Zeit wie eine gerade Linie."
+      },
+      {
+       "fa": "مردم یک کار را بعد از کار دیگر انجام می‌دهند و وقت‌شناسی نشانه‌ی احترام است.",
+       "tr": "mardom yek kār rā baʿd az kār-e dīgar andschām mīdahand o waghtschenāsī neschāne-ye ehterām ast.",
+       "de": "Man erledigt eine Sache nach der anderen, und Pünktlichkeit ist ein Zeichen von Respekt."
+      },
+      {
+       "fa": "در فرهنگ‌های «چندزمانی»، که ایران را هم معمولا جزو آنها می‌دانند، رابطه‌ها مهم‌تر از ساعت است.",
+       "tr": "dar farhanghā-ye «tschandzamānī», ke īrān rā ham maʿmūlan dschozw-e ānhā mīdānand, rābetehā mohemtar az sāʿat ast.",
+       "de": "In „polychronen“ Kulturen, zu denen man meist auch Iran zählt, sind Beziehungen wichtiger als die Uhr."
+      },
+      {
+       "fa": "اگر در راه یک دوست قدیمی را ببینید، طبیعی است که بایستید و با او حرف بزنید، حتی اگر دیر شود.",
+       "tr": "agar dar rāh yek dūst-e ghadīmī rā bebīnīd, tabīʿī ast ke bāyestīd o bā ū harf bezanīd, hattā agar dīr schawad.",
+       "de": "Wenn man unterwegs einen alten Freund trifft, ist es normal, stehen zu bleiben und mit ihm zu reden – selbst wenn es spät wird."
+      },
+      {
+       "fa": "به همین دلیل، برای یک ایرانی، ده دقیقه تأخیر در یک مهمانی معمولا بی‌احترامی نیست.",
+       "tr": "be hamīn dalīl, barā-ye yek īrānī, dah daghīghe taʾchīr dar yek mehmānī maʿmūlan bīehterāmī nīst.",
+       "de": "Deshalb ist für einen Iraner zehn Minuten Verspätung bei einer Feier meist keine Respektlosigkeit."
+      },
+      {
+       "fa": "اما این تقسیم‌بندی خیلی ساده است.",
+       "tr": "ammā īn taghsīmbandī cheylī sāde ast.",
+       "de": "Doch diese Einteilung ist sehr vereinfacht."
+      },
+      {
+       "fa": "در ایران هم پروازها، کلاس‌های دانشگاه و جلسه‌های کاری سر وقت شروع می‌شوند.",
+       "tr": "dar īrān ham parwāzhā, kelāshā-ye dāneschgāh o dschalasehā-ye kārī sar-e waght schorūʿ mīschawand.",
+       "de": "Auch in Iran beginnen Flüge, Uni-Kurse und Geschäftstermine pünktlich."
+      },
+      {
+       "fa": "و بسیاری از آلمانی‌ها هم در مهمانی‌های دوستانه دیر می‌رسند.",
+       "tr": "wa besyārī az ālmānīhā ham dar mehmānīhā-ye dūstāne dīr mīresand.",
+       "de": "Und viele Deutsche kommen auf privaten Partys auch zu spät."
+      },
+      {
+       "fa": "شاید مهم‌ترین تفاوت در انتظار باشد: یک ایرانی انتظار انعطاف دارد، یک آلمانی انتظار نظم.",
+       "tr": "schāyad mohemtarīn tafāwot dar entezār bāschad: yek īrānī entezār-e enʿetāf dārad, yek ālmānī entezār-e nazm.",
+       "de": "Vielleicht liegt der wichtigste Unterschied in der Erwartung: Ein Iraner erwartet Flexibilität, ein Deutscher Ordnung."
+      },
+      {
+       "fa": "بسیاری از سوءتفاهم‌های فرهنگی از همین تفاوت کوچک شروع می‌شود.",
+       "tr": "besyārī az sūʾetafāhomhā-ye farhangī az hamīn tafāwot-e kūtschak schorūʿ mīschawad.",
+       "de": "Viele kulturelle Missverständnisse beginnen mit genau diesem kleinen Unterschied."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "در فرهنگ تک‌زمانی، کارها یکی یکی انجام می‌شود.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "در ایران رابطه‌ها از ساعت مهم‌ترند.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "در ایران پروازها هرگز سر وقت نیستند.",
+       "fest": true,
+       "erkl": "Auch in Iran beginnen Flüge <b>pünktlich</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "هیچ آلمانی‌ای در مهمانی دیر نمی‌رسد.",
+       "fest": true,
+       "erkl": "<b>Viele</b> Deutsche kommen auch zu spät."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "نویسنده تقسیم‌بندی را کمی ساده می‌داند.",
+       "fest": true
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Wie ist Zeit in monochronen Kulturen?",
+       "optionen": [
+        "wie eine gerade Linie",
+        "wie ein Kreis",
+        "unwichtig"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was ist laut Text normal in Iran?",
+       "optionen": [
+        "stehen zu bleiben, um mit einem alten Freund zu reden",
+        "nie zu spät zu kommen",
+        "keine Termine zu haben"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was ist vielleicht der wichtigste Unterschied?",
+       "optionen": [
+        "die Erwartung",
+        "die Uhren",
+        "das Wetter"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was ist die Haltung des Textes?",
+       "optionen": [
+        "differenziert",
+        "gegen Iran",
+        "gegen Deutschland"
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "در فرهنگ‌های «تک‌زمانی» مثل آلمان، زمان مثل یک خط مستقیم است.",
+       "tr": "dar farhanghā-ye «takzamānī» mesl-e ālmān, zamān mesl-e yek chatt-e mostaghīm ast.",
+       "de": "In „monochronen“ Kulturen wie Deutschland ist Zeit wie eine gerade Linie."
+      },
+      {
+       "fa": "مردم یک کار را بعد از کار دیگر انجام می‌دهند و وقت‌شناسی نشانه‌ی احترام است.",
+       "tr": "mardom yek kār rā baʿd az kār-e dīgar andschām mīdahand o waghtschenāsī neschāne-ye ehterām ast.",
+       "de": "Man erledigt eine Sache nach der anderen, und Pünktlichkeit ist ein Zeichen von Respekt."
+      },
+      {
+       "fa": "در فرهنگ‌های «چندزمانی»، که ایران را هم معمولا جزو آنها می‌دانند، رابطه‌ها مهم‌تر از ساعت است.",
+       "tr": "dar farhanghā-ye «tschandzamānī», ke īrān rā ham maʿmūlan dschozw-e ānhā mīdānand, rābetehā mohemtar az sāʿat ast.",
+       "de": "In „polychronen“ Kulturen, zu denen man meist auch Iran zählt, sind Beziehungen wichtiger als die Uhr."
+      },
+      {
+       "fa": "اگر در راه یک دوست قدیمی را ببینید، طبیعی است که بایستید و با او حرف بزنید، حتی اگر دیر شود.",
+       "tr": "agar dar rāh yek dūst-e ghadīmī rā bebīnīd, tabīʿī ast ke bāyestīd o bā ū harf bezanīd, hattā agar dīr schawad.",
+       "de": "Wenn man unterwegs einen alten Freund trifft, ist es normal, stehen zu bleiben und mit ihm zu reden – selbst wenn es spät wird."
+      },
+      {
+       "fa": "به همین دلیل، برای یک ایرانی، ده دقیقه تأخیر در یک مهمانی معمولا بی‌احترامی نیست.",
+       "tr": "be hamīn dalīl, barā-ye yek īrānī, dah daghīghe taʾchīr dar yek mehmānī maʿmūlan bīehterāmī nīst.",
+       "de": "Deshalb ist für einen Iraner zehn Minuten Verspätung bei einer Feier meist keine Respektlosigkeit."
+      },
+      {
+       "fa": "اما این تقسیم‌بندی خیلی ساده است.",
+       "tr": "ammā īn taghsīmbandī cheylī sāde ast.",
+       "de": "Doch diese Einteilung ist sehr vereinfacht."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d1",
+   "titel": "Dialog: Termin verschieben",
+   "vorschau": "Termin verschieben",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Sara muss ihren Arzttermin verschieben und ruft in der Praxis an.</p>"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "منشی: مطب دکتر احمدی، بفرمایید.",
+       "tr": "matab-e doktor ahmadī, befarmāyīd.",
+       "de": "Praxis Dr. Ahmadi, bitte sehr."
+      },
+      {
+       "fa": "سارا: سلام، من برای فردا ساعت ده نوبت دارم، ولی متأسفانه نمی‌توانم بیایم.",
+       "tr": "salām, man barā-ye fardā sāʿat-e dah nobat dāram, walī mota’assefāne nemītawānam biyāyam.",
+       "de": "Hallo, ich habe morgen um zehn einen Termin, kann aber leider nicht kommen."
+      },
+      {
+       "fa": "منشی: اشکالی ندارد. می‌خواهید لغو کنید یا عقب بیندازید؟",
+       "tr": "eschkālī nadārad. mīchāhīd laghw konīd yā ʿaghab bendāzīd?",
+       "de": "Kein Problem. Möchten Sie absagen oder verschieben?"
+      },
+      {
+       "fa": "سارا: اگر ممکن است، عقب بیندازیم. هفته‌ی بعد وقت دارید؟",
+       "tr": "agar momken ast, ʿaghab bendāzīm. hafte-ye baʿd waght dārīd?",
+       "de": "Wenn möglich verschieben. Haben Sie nächste Woche Zeit?"
+      },
+      {
+       "fa": "منشی: دوشنبه ساعت چهار یا چهارشنبه ساعت نه صبح.",
+       "tr": "doschanbe sāʿat-e tschahār yā tschahārschanbe sāʿat-e noh-e sobh.",
+       "de": "Montag um vier oder Mittwoch um neun Uhr morgens."
+      },
+      {
+       "fa": "سارا: دوشنبه ساعت چهار خوب است. به محض اینکه کارم تمام شود، می‌آیم.",
+       "tr": "doschanbe sāʿat-e tschahār chūb ast. be mahz-e īnke kāram tamām schawad, mīāyam.",
+       "de": "Montag um vier ist gut. Sobald ich mit der Arbeit fertig bin, komme ich."
+      },
+      {
+       "fa": "منشی: ثبت شد. لطفا ده دقیقه زودتر بیایید.",
+       "tr": "sabt schod. lotfan dah daghīghe zūdtar biyāyīd.",
+       "de": "Eingetragen. Bitte kommen Sie zehn Minuten früher."
+      },
+      {
+       "fa": "سارا: حتما. خیلی ممنون، روز خوش.",
+       "tr": "hatman. cheylī mamnūn, rūz chosch.",
+       "de": "Bestimmt. Vielen Dank, schönen Tag noch."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "منشی: مطب دکتر احمدی، بفرمایید.",
+       "tr": "matab-e doktor ahmadī, befarmāyīd.",
+       "de": "Praxis Dr. Ahmadi, bitte sehr."
+      },
+      {
+       "fa": "سارا: سلام، من برای فردا ساعت ده نوبت دارم، ولی متأسفانه نمی‌توانم بیایم.",
+       "tr": "salām, man barā-ye fardā sāʿat-e dah nobat dāram, walī mota’assefāne nemītawānam biyāyam.",
+       "de": "Hallo, ich habe morgen um zehn einen Termin, kann aber leider nicht kommen."
+      },
+      {
+       "fa": "منشی: اشکالی ندارد. می‌خواهید لغو کنید یا عقب بیندازید؟",
+       "tr": "eschkālī nadārad. mīchāhīd laghw konīd yā ʿaghab bendāzīd?",
+       "de": "Kein Problem. Möchten Sie absagen oder verschieben?"
+      },
+      {
+       "fa": "سارا: اگر ممکن است، عقب بیندازیم. هفته‌ی بعد وقت دارید؟",
+       "tr": "agar momken ast, ʿaghab bendāzīm. hafte-ye baʿd waght dārīd?",
+       "de": "Wenn möglich verschieben. Haben Sie nächste Woche Zeit?"
+      },
+      {
+       "fa": "منشی: دوشنبه ساعت چهار یا چهارشنبه ساعت نه صبح.",
+       "tr": "doschanbe sāʿat-e tschahār yā tschahārschanbe sāʿat-e noh-e sobh.",
+       "de": "Montag um vier oder Mittwoch um neun Uhr morgens."
+      },
+      {
+       "fa": "سارا: دوشنبه ساعت چهار خوب است. به محض اینکه کارم تمام شود، می‌آیم.",
+       "tr": "doschanbe sāʿat-e tschahār chūb ast. be mahz-e īnke kāram tamām schawad, mīāyam.",
+       "de": "Montag um vier ist gut. Sobald ich mit der Arbeit fertig bin, komme ich."
+      },
+      {
+       "fa": "منشی: ثبت شد. لطفا ده دقیقه زودتر بیایید.",
+       "tr": "sabt schod. lotfan dah daghīghe zūdtar biyāyīd.",
+       "de": "Eingetragen. Bitte kommen Sie zehn Minuten früher."
+      },
+      {
+       "fa": "سارا: حتما. خیلی ممنون، روز خوش.",
+       "tr": "hatman. cheylī mamnūn, rūz chosch.",
+       "de": "Bestimmt. Vielen Dank, schönen Tag noch."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Was möchte Sara?",
+       "optionen": [
+        "den Termin verschieben",
+        "den Termin absagen",
+        "einen neuen Arzt"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Welchen Termin nimmt sie?",
+       "optionen": [
+        "Montag 16 Uhr",
+        "Mittwoch 9 Uhr",
+        "morgen 10 Uhr"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Worum bittet die Sekretärin?",
+       "optionen": [
+        "zehn Minuten früher zu kommen",
+        "pünktlich zu zahlen",
+        "die Versicherungskarte zu schicken"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

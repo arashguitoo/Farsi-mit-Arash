@@ -1,0 +1,184 @@
+{
+ "id": "ug",
+ "art": "umgangssprache",
+ "titel": "Umgangssprache: So spricht man im Alltag",
+ "beschreibung": "Freiwilliger Extra-Teil: Umgangssprache.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "So spricht man",
+   "vorschau": "کیه؟",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Schrift ≠ Gespräch",
+     "text": "<ul><li><span class='fa'>است → ـه</span>: <span class='fa'>دایی‌ام است → داییمه</span></li><li><span class='fa'>کیست؟ → کیه؟</span></li><li><span class='fa'>مادربزرگ → مامان‌بزرگ</span> · <span class='fa'>پدربزرگ → بابابزرگ</span></li><li><span class='fa'>هستند → هستن</span></li></ul>",
+     "stil": "merke"
+    },
+    {
+     "typ": "paare",
+     "links": "x",
+     "paare": [
+      {
+       "fa": "کیست؟",
+       "tr": "",
+       "de": "wer ist es?",
+       "x": "کیه؟"
+      },
+      {
+       "fa": "مادربزرگ",
+       "tr": "",
+       "de": "Oma",
+       "x": "مامان‌بزرگ"
+      },
+      {
+       "fa": "پدربزرگ",
+       "tr": "",
+       "de": "Opa",
+       "x": "بابابزرگ"
+      },
+      {
+       "fa": "هستند",
+       "tr": "",
+       "de": "sie sind",
+       "x": "هستن"
+      },
+      {
+       "fa": "دایی‌ام است",
+       "tr": "",
+       "de": "das ist mein Onkel",
+       "x": "داییمه"
+      }
+     ],
+     "titel": "Schrift ↔ Gespräch"
+    },
+    {
+     "typ": "sortieren",
+     "titel": "Schrift oder Gespräch?",
+     "frage": "Schriftsprache oder Umgangssprache?",
+     "kategorien": [
+      "✍️ Schriftsprache",
+      "🗣️ Umgangssprache"
+     ],
+     "items": [
+      {
+       "fa": "کیست؟",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "مادربزرگ",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "پدربزرگ",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "هستند",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "دایی‌ام است",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "کیه؟",
+       "k": 1,
+       "say": false,
+       "e": "<i>kīye?</i> – geschrieben: <span class='fa'>کیست؟</span>"
+      },
+      {
+       "fa": "مامان‌بزرگ",
+       "k": 1,
+       "say": false,
+       "e": "<i>māmānbozorg</i> – geschrieben: <span class='fa'>مادربزرگ</span>"
+      },
+      {
+       "fa": "بابابزرگ",
+       "k": 1,
+       "say": false,
+       "e": "<i>bābābozorg</i> – geschrieben: <span class='fa'>پدربزرگ</span>"
+      },
+      {
+       "fa": "هستن",
+       "k": 1,
+       "say": false,
+       "e": "<i>hastan</i> – geschrieben: <span class='fa'>هستند</span>"
+      },
+      {
+       "fa": "داییمه",
+       "k": 1,
+       "say": false,
+       "e": "<i>dāyīme</i> – geschrieben: <span class='fa'>دایی‌ام است</span>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Kurz-Dialog",
+   "vorschau": "💬",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Am Familientisch",
+     "text": "Umgangssprache! Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "مامان‌بزرگ، این غذا محشره!",
+       "tr": "māmānbozorg, īn ghazā mahschare!",
+       "de": "Oma, das Essen ist der Wahnsinn!"
+      },
+      {
+       "fa": "نوش جونت عزیزم. بازم بکش!",
+       "tr": "nūsch-e dschūnet ʿazīzam. bāzam bekesch!",
+       "de": "Wohl bekomm’s, mein Schatz. Nimm noch!"
+      },
+      {
+       "fa": "بابابزرگ، اون داستان سربازی‌تو تعریف کن!",
+       "tr": "bābābozorg, ūn dāstān-e sarbāzīto taʿrīf kon!",
+       "de": "Opa, erzähl die Geschichte von deinem Militärdienst!"
+      },
+      {
+       "fa": "کدوم؟ همونی که صد بار شنیدی؟",
+       "tr": "kodūm? hamūnī ke sad bār schenīdī?",
+       "de": "Welche? Die, die du schon hundertmal gehört hast?"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Verstanden?",
+     "fragen": [
+      {
+       "frage": "Was sagt das Enkelkind übers Essen?",
+       "optionen": [
+        "Es ist der Wahnsinn.",
+        "Es ist zu salzig.",
+        "Es ist kalt."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "<span class='fa'>بابابزرگ</span> =",
+       "optionen": [
+        "پدربزرگ",
+        "پدر",
+        "عمو"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

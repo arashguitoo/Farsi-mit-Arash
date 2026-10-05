@@ -1,0 +1,483 @@
+{
+ "id": "z1",
+ "titel": "Trainingspaket 1",
+ "beschreibung": "Wer passt zu wem?, Wort-Marathon, Lückensätze, Sätze aus den Texten.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "Wer passt zu wem?",
+   "vorschau": "🧩",
+   "karten": [
+    {
+     "typ": "zuordnen",
+     "titel": "Welche Reise passt?",
+     "text": "Fünf Reisende suchen eine Tour durch Iran. Ein Reiseportal bietet sieben Touren an.",
+     "frage": "Welches Angebot passt am besten? Tippe es an.",
+     "angebote": [
+      {
+       "titel": "Yazd & Qanate",
+       "emoji": "💧",
+       "fa": "تور دوروزه‌ی یزد با بازدید از موزه‌ی آب و قنات زارچ.",
+       "de": "Zweitägige Yazd-Tour mit Besuch des Wassermuseums und des Qanats von Zarch."
+      },
+      {
+       "titel": "Isfahan",
+       "emoji": "🌉",
+       "fa": "سه روز در اصفهان: پل‌های تاریخی، میدان نقش جهان و صنایع دستی.",
+       "de": "Drei Tage in Isfahan: historische Brücken, Naqsch-e-Dschahan-Platz und Kunsthandwerk."
+      },
+      {
+       "titel": "Wüstennacht",
+       "emoji": "🏜️",
+       "fa": "یک شب در کمپ کویر مصر با شترسواری و آسمان پرستاره.",
+       "de": "Eine Nacht im Wüstencamp Mesr mit Kamelreiten und Sternenhimmel."
+      },
+      {
+       "titel": "Wald in Gilan",
+       "emoji": "🌲",
+       "fa": "پیاده‌روی در جنگل‌های گیلان و اقامت در روستای ماسوله.",
+       "de": "Wandern in den Wäldern von Gilan und Übernachtung im Dorf Masuleh."
+      },
+      {
+       "titel": "Insel Hormus",
+       "emoji": "🏖️",
+       "fa": "سفر به جزیره‌ی هرمز: خاک رنگی، ساحل و غذای دریایی.",
+       "de": "Reise auf die Insel Hormus: bunte Erde, Strand und Meeresfrüchte."
+      },
+      {
+       "titel": "Basar von Täbris",
+       "emoji": "🧶",
+       "fa": "بازدید از بازار تاریخی تبریز، یکی از بزرگ‌ترین بازارهای سرپوشیده‌ی دنیا، و خرید فرش.",
+       "de": "Besuch des historischen Basars von Täbris, eines der größten überdachten Basare der Welt, und Teppichkauf."
+      },
+      {
+       "titel": "Damavand",
+       "emoji": "🏔️",
+       "fa": "صعود دوروزه به قله‌ی دماوند، بلندترین کوه ایران؛ آمادگی بدنی لازم است.",
+       "de": "Zweitägige Besteigung des Damavand, des höchsten Bergs Irans; Fitness erforderlich."
+      }
+     ],
+     "personen": [
+      {
+       "name": "Sahar",
+       "emoji": "👷‍♀️",
+       "fa": "سحر مهندس آب است و می‌خواهد ببیند مردم قدیم چطور بدون پمپ آب را جابه‌جا می‌کردند.",
+       "de": "Sahar ist Wasseringenieurin und möchte sehen, wie die Menschen früher Wasser ohne Pumpen transportierten.",
+       "richtig": 0
+      },
+      {
+       "name": "Kian",
+       "emoji": "🧗",
+       "fa": "کیان ورزشکار است و آرزو دارد روی بلندترین نقطه‌ی ایران بایستد.",
+       "de": "Kian ist Sportler und träumt davon, auf dem höchsten Punkt Irans zu stehen.",
+       "richtig": 6
+      },
+      {
+       "name": "Familie Weber",
+       "emoji": "🎨",
+       "fa": "خانواده‌ی وبر عاشق رنگ‌ها و دریا هستند و غذای دریایی دوست دارند.",
+       "de": "Familie Weber liebt Farben und das Meer und mag Meeresfrüchte.",
+       "richtig": 4
+      },
+      {
+       "name": "Herr Lang",
+       "emoji": "🧵",
+       "fa": "آقای لانگ فرش جمع می‌کند و دوست دارد ساعت‌ها در بازارهای سقف‌دار قدم بزند.",
+       "de": "Herr Lang sammelt Teppiche und schlendert gern stundenlang durch überdachte Basare.",
+       "richtig": 5
+      },
+      {
+       "name": "Mona",
+       "emoji": "🌧️",
+       "fa": "مونا از گرما فرار می‌کند و دلش جنگل سبز، مه و باران می‌خواهد.",
+       "de": "Mona flieht vor der Hitze und sehnt sich nach grünem Wald, Nebel und Regen.",
+       "richtig": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Wort-Marathon",
+   "vorschau": "⏱️",
+   "karten": [
+    {
+     "typ": "tempo",
+     "titel": "Marathon: alle Wörter",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 120,
+     "ziel": 25,
+     "woerter": [
+      {
+       "fa": "بادگیر",
+       "a": "Windturm"
+      },
+      {
+       "fa": "بافت تاریخی",
+       "a": "historische Altstadt"
+      },
+      {
+       "fa": "کوچه",
+       "a": "Gasse"
+      },
+      {
+       "fa": "ساباط",
+       "a": "überdachter Durchgang"
+      },
+      {
+       "fa": "خشت",
+       "a": "Lehmziegel"
+      },
+      {
+       "fa": "کاهگل",
+       "a": "Lehmputz (mit Stroh)"
+      },
+      {
+       "fa": "یخچال",
+       "a": "Eishaus (historisch); Kühlschrank"
+      },
+      {
+       "fa": "اقامتگاه بومی",
+       "a": "traditionelles Gästehaus"
+      },
+      {
+       "fa": "حیاط مرکزی",
+       "a": "Innenhof"
+      },
+      {
+       "fa": "باقلوا",
+       "a": "Baklava"
+      },
+      {
+       "fa": "کویر",
+       "a": "Wüste"
+      },
+      {
+       "fa": "شترسواری",
+       "a": "Kamelreiten"
+      },
+      {
+       "fa": "قنات",
+       "a": "Qanat (unterirdischer Wasserkanal)"
+      },
+      {
+       "fa": "مادرچاه",
+       "a": "Mutterbrunnen"
+      },
+      {
+       "fa": "مقنی",
+       "a": "Qanatbauer"
+      },
+      {
+       "fa": "آب‌انبار",
+       "a": "Zisterne"
+      },
+      {
+       "fa": "کانال زیرزمینی",
+       "a": "unterirdischer Kanal"
+      },
+      {
+       "fa": "شیب",
+       "a": "Gefälle"
+      },
+      {
+       "fa": "آب زیرزمینی",
+       "a": "Grundwasser"
+      },
+      {
+       "fa": "کشاورزی",
+       "a": "Landwirtschaft"
+      },
+      {
+       "fa": "مهندسی",
+       "a": "Ingenieurskunst"
+      },
+      {
+       "fa": "میراث جهانی",
+       "a": "Welterbe"
+      },
+      {
+       "fa": "پایدار",
+       "a": "nachhaltig"
+      },
+      {
+       "fa": "خشک",
+       "a": "trocken"
+      },
+      {
+       "fa": "گردشگر",
+       "a": "Tourist/in"
+      },
+      {
+       "fa": "راهنمای تور",
+       "a": "Reiseleiter/in"
+      },
+      {
+       "fa": "سفرنامه",
+       "a": "Reisebericht"
+      },
+      {
+       "fa": "اتاق سنتی",
+       "a": "traditionelles Zimmer"
+      },
+      {
+       "fa": "تخت چوبی",
+       "a": "Holzpodest (zum Sitzen)"
+      },
+      {
+       "fa": "رزرو",
+       "a": "Reservierung"
+      },
+      {
+       "fa": "بلیت",
+       "a": "Ticket, Fahrkarte"
+      },
+      {
+       "fa": "کوله‌پشتی",
+       "a": "Rucksack"
+      },
+      {
+       "fa": "دیدنی",
+       "a": "sehenswert"
+      },
+      {
+       "fa": "دنج",
+       "a": "gemütlich, ruhig gelegen"
+      },
+      {
+       "fa": "مهمان‌نواز",
+       "a": "gastfreundlich"
+      },
+      {
+       "fa": "سفر کردن",
+       "a": "reisen"
+      },
+      {
+       "fa": "اقامت کردن",
+       "a": "übernachten, sich aufhalten"
+      },
+      {
+       "fa": "کندن",
+       "a": "graben"
+      },
+      {
+       "fa": "جاری شدن",
+       "a": "fließen"
+      },
+      {
+       "fa": "خنک کردن",
+       "a": "kühlen"
+      },
+      {
+       "fa": "گشتن",
+       "a": "herumlaufen, besichtigen"
+      }
+     ]
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "یخچال",
+       "tr": "yachtschāl",
+       "de": "Eishaus (historisch); Kühlschrank",
+       "emoji": "🧊"
+      },
+      {
+       "fa": "کویر",
+       "tr": "kawīr",
+       "de": "Wüste",
+       "emoji": "🏜️"
+      },
+      {
+       "fa": "مقنی",
+       "tr": "moghannī",
+       "de": "Qanatbauer",
+       "emoji": "👷"
+      },
+      {
+       "fa": "کوله‌پشتی",
+       "tr": "kūleposchtī",
+       "de": "Rucksack",
+       "emoji": "🎒"
+      },
+      {
+       "fa": "کشاورزی",
+       "tr": "keschāwarzī",
+       "de": "Landwirtschaft",
+       "emoji": "🌾"
+      },
+      {
+       "fa": "آب زیرزمینی",
+       "tr": "āb-e zīrzamīnī",
+       "de": "Grundwasser",
+       "emoji": "💦"
+      }
+     ],
+     "titel": "Memory"
+    },
+    {
+     "typ": "memory",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "کشاورزی",
+       "tr": "keschāwarzī",
+       "de": "Landwirtschaft",
+       "emoji": "🌾"
+      },
+      {
+       "fa": "گردشگر",
+       "tr": "gardeschgar",
+       "de": "Tourist/in",
+       "emoji": "📷"
+      },
+      {
+       "fa": "کاهگل",
+       "tr": "kāhgel",
+       "de": "Lehmputz (mit Stroh)",
+       "emoji": "🟫"
+      },
+      {
+       "fa": "شترسواری",
+       "tr": "schotorsawārī",
+       "de": "Kamelreiten",
+       "emoji": "🐪"
+      },
+      {
+       "fa": "دیدنی",
+       "tr": "dīdanī",
+       "de": "sehenswert",
+       "emoji": "👀"
+      },
+      {
+       "fa": "اقامتگاه بومی",
+       "tr": "eghāmatgāh-e būmī",
+       "de": "traditionelles Gästehaus",
+       "emoji": "🏡"
+      }
+     ],
+     "titel": "Memory: Wort & Bedeutung"
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "titel": "Lückensätze",
+   "vorschau": "___",
+   "karten": [
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>در یزد روی بام خیلی از خانه‌ها یک ___ می‌بینید که هوای خنک را به خانه می‌آورد.</span><br><span class='mini'>In Yazd sieht man auf vielen Dächern einen Windturm, der kühle Luft ins Haus bringt.</span>",
+       "optionen": [
+        "بادگیر",
+        "دیدنی",
+        "اتاق سنتی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>در یزد روی بام خیلی از خانه‌ها یک بادگیر می‌بینید که هوای خنک را به خانه می‌آورد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>شب را در یک ___ با حیاط و حوض گذراندیم.</span><br><span class='mini'>Wir verbrachten die Nacht in einem traditionellen Gästehaus mit Hof und Wasserbecken.</span>",
+       "optionen": [
+        "اقامتگاه بومی",
+        "پایدار",
+        "باقلوا"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>شب را در یک اقامتگاه بومی با حیاط و حوض گذراندیم.</span>"
+      },
+      {
+       "frage": "<span class='fa'>دیوارهای قدیمی یزد از ___ ساخته شده‌اند.</span><br><span class='mini'>Die alten Mauern von Yazd sind aus Lehmziegeln gebaut.</span>",
+       "optionen": [
+        "خشت",
+        "دیدنی",
+        "بادگیر"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>دیوارهای قدیمی یزد از خشت ساخته شده‌اند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>کار ساختن قنات با کندن ___ در پای کوه شروع می‌شود.</span><br><span class='mini'>Der Bau eines Qanats beginnt mit dem Graben des Mutterbrunnens am Fuß des Berges.</span>",
+       "optionen": [
+        "مادرچاه",
+        "خشت",
+        "مهندسی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>کار ساختن قنات با کندن مادرچاه در پای کوه شروع می‌شود.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>___ کسی است که قنات را می‌کند و تعمیر می‌کند.</span><br><span class='mini'>Ein Moghanni ist jemand, der Qanate gräbt und repariert.</span>",
+       "optionen": [
+        "مقنی",
+        "میراث جهانی",
+        "پایدار"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>مقنی کسی است که قنات را می‌کند و تعمیر می‌کند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>آب به خاطر ___ کم کانال، خودبه‌خود جاری می‌شود.</span><br><span class='mini'>Wegen des leichten Gefälles des Kanals fließt das Wasser von selbst.</span>",
+       "optionen": [
+        "شیب",
+        "گردشگر",
+        "دنج"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>آب به خاطر شیب کم کانال، خودبه‌خود جاری می‌شود.</span>"
+      },
+      {
+       "frage": "<span class='fa'>قنات‌های ایران در فهرست ___ یونسکو ثبت شده‌اند.</span><br><span class='mini'>Irans Qanate stehen auf der UNESCO-Welterbeliste.</span>",
+       "optionen": [
+        "میراث جهانی",
+        "کویر",
+        "بلیت"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>قنات‌های ایران در فهرست میراث جهانی یونسکو ثبت شده‌اند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>پیاده از کوچه‌های تنگ ___ یزد گذشتیم.</span><br><span class='mini'>Wir gingen zu Fuß durch die engen Gassen der Altstadt von Yazd.</span>",
+       "optionen": [
+        "بافت تاریخی",
+        "اتاق سنتی",
+        "آب‌انبار"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>پیاده از کوچه‌های تنگ بافت تاریخی یزد گذشتیم.</span>"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

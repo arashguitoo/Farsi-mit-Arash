@@ -1,0 +1,596 @@
+{
+ "id": "tx",
+ "art": "texte",
+ "titel": "Texte & Dialoge",
+ "beschreibung": "Lesetexte mit Fragen und Dialoge zum Ordnen.",
+ "stationen": [
+  {
+   "id": "t1",
+   "titel": "Alltag: Ein Teppich wird gekauft",
+   "vorschau": "Ein Teppich wird gekauft",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>سرپوشیده</span> – überdacht · <span class='fa'>چیدن</span> – stapeln, anordnen · <span class='fa'>خالص</span> – rein · <span class='fa'>یکدست</span> – gleichmäßig · <span class='fa'>نامنظم</span> – unregelmäßig · <span class='fa'>معامله</span> – Handel, Geschäft · <span class='fa'>لوله کردن</span> – zusammenrollen · <span class='fa'>عمر کردن</span> – leben, halten</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Alltag: Ein Teppich wird gekauft",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "یولیا قبل از برگشتن به آلمان می‌خواست یک فرش ایرانی بخرد و دوستش بهار او را به بازار تبریز برد.",
+       "tr": "yūliyā ghabl az bargaschtan be ālmān mīchāst yek farsch-e īrānī becharad o dūstasch bahār ū rā be bāzār-e tabrīz bord.",
+       "de": "Bevor Julia nach Deutschland zurückkehrte, wollte sie einen persischen Teppich kaufen, und ihre Freundin Bahar nahm sie mit in den Basar von Täbris."
+      },
+      {
+       "fa": "راهروهای سرپوشیده‌ی بازار پر از حجره‌هایی بود که فرش‌ها را تا سقف روی هم چیده بودند.",
+       "tr": "rāhrowhā-ye sarpūschide-ye bāzār por az hodschrehāyī būd ke farschhā rā tā saghf rūy-e ham tschīde būdand.",
+       "de": "Die überdachten Gänge des Basars waren voller Läden, in denen Teppiche bis zur Decke gestapelt waren."
+      },
+      {
+       "fa": "بهار در گوشش گفت: «هیچ‌وقت قیمت اول را قبول نکن، مگر اینکه واقعا ارزان باشد.»",
+       "tr": "bahār dar gūschasch goft: «hītschwaght gheymat-e awwal rā ghabūl nakon, magar īnke wāgheʿan arzān bāschad.»",
+       "de": "Bahar flüsterte ihr ins Ohr: „Nimm nie den ersten Preis an, es sei denn, er ist wirklich günstig.“"
+      },
+      {
+       "fa": "فروشنده، آقای صمدی، با لبخند چای آورد و یکی‌یکی فرش‌ها را جلوی آنها پهن کرد.",
+       "tr": "forūschande, āghā-ye samadī, bā labchand tschāy āward o yekīyekī farschhā rā dschelou-ye ānhā pahn kard.",
+       "de": "Der Verkäufer, Herr Samadi, brachte lächelnd Tee und breitete die Teppiche einen nach dem anderen vor ihnen aus."
+      },
+      {
+       "fa": "یولیا عاشق یک قالی قرمز با ترنج آبی شد.",
+       "tr": "yūliyā ʿāschegh-e yek ghālī-ye ghermez bā torandsch-e ābī schod.",
+       "de": "Julia verliebte sich in einen roten Teppich mit blauem Medaillon."
+      },
+      {
+       "fa": "آقای صمدی گفت: «این دستباف است، پشم خالص و رنگ طبیعی؛ در هر سانتی‌متر مربع چهل گره دارد.»",
+       "tr": "āghā-ye samadī goft: «īn dastbāf ast, pascham-e chāles o rang-e tabīʿī; dar har sāntīmetr-e morabbaʿ tschehel gereh dārad.»",
+       "de": "Herr Samadi sagte: „Er ist handgeknüpft, reine Wolle und Naturfarben; er hat vierzig Knoten pro Quadratzentimeter.“"
+      },
+      {
+       "fa": "بهار پشت فرش را هم نگاه کرد تا گره‌ها را ببیند.",
+       "tr": "bahār poscht-e farsch rā ham negāh kard tā gerehā rā bebīnad.",
+       "de": "Bahar sah sich auch die Rückseite an, um die Knoten zu sehen."
+      },
+      {
+       "fa": "به گفته‌ی بهار، پشت فرش ماشینی صاف و یکدست است، اما پشت این فرش کمی نامنظم بود؛ یعنی کار دست بود.",
+       "tr": "be gofte-ye bahār, poscht-e farsch-e māschīnī sāf o yekdast ast, ammā poscht-e īn farsch kamī nāmonazzam būd; yaʿnī kār-e dast būd.",
+       "de": "Laut Bahar ist die Rückseite eines Maschinenteppichs glatt und gleichmäßig, diese hier aber war etwas unregelmäßig – also Handarbeit."
+      },
+      {
+       "fa": "قیمت اول آن‌قدر بالا بود که یولیا چایش را تقریبا ریخت.",
+       "tr": "gheymat-e awwal ānghadr bālā būd ke yūliyā tschāyasch rā taghrīban rīcht.",
+       "de": "Der erste Preis war so hoch, dass Julia beinahe ihren Tee verschüttete."
+      },
+      {
+       "fa": "چانه‌زنی نیم ساعت طول کشید؛ بهار حرف می‌زد و یولیا فقط سر تکان می‌داد.",
+       "tr": "tschānezanī nīm sāʿat tūl keschīd; bahār harf mīzad o yūliyā faghat sar tekān mīdād.",
+       "de": "Das Feilschen dauerte eine halbe Stunde; Bahar redete, und Julia nickte nur."
+      },
+      {
+       "fa": "یک بار هم بدون اینکه چیزی بگویند، بلند شدند و به طرف در رفتند.",
+       "tr": "yek bār ham bedūn-e īnke tschīzī begūyand, boland schodand o be taraf-e dar raftand.",
+       "de": "Einmal standen sie sogar auf, ohne etwas zu sagen, und gingen zur Tür."
+      },
+      {
+       "fa": "آقای صمدی صدایشان کرد: «بیست درصد تخفیف می‌دهم، به شرطی که نقد پرداخت کنید.»",
+       "tr": "āghā-ye samadī sedāyeschān kard: «bīst darsad tachfīf mīdeham, be schartī ke naghd pardācht konīd.»",
+       "de": "Herr Samadi rief sie zurück: „Ich gebe zwanzig Prozent Rabatt, vorausgesetzt, Sie zahlen bar.“"
+      },
+      {
+       "fa": "معامله انجام شد و آقای صمدی فرش را با دقت لوله کرد و در یک کیسه‌ی بزرگ گذاشت.",
+       "tr": "moʿāmele andschām schod o āghā-ye samadī farsch rā bā deghghat lūle kard o dar yek kīse-ye bozorg gozāscht.",
+       "de": "Der Handel war perfekt, und Herr Samadi rollte den Teppich sorgfältig zusammen und steckte ihn in einen großen Sack."
+      },
+      {
+       "fa": "در آخر گفت: «این فرش از ما بیشتر عمر می‌کند!»",
+       "tr": "dar āchar goft: «īn farsch az mā bīschtar ʿomr mīkonad!»",
+       "de": "Zum Schluss sagte er: „Dieser Teppich wird uns überleben!“"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "یولیا و بهار به بازار تبریز رفتند.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "یولیا یک فرش ماشینی خرید.",
+       "fest": true,
+       "erkl": "Der Teppich war <b>handgeknüpft</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "پشت فرش دستباف کاملا صاف و یکدست است.",
+       "fest": true,
+       "erkl": "Die Rückseite ist <b>etwas unregelmäßig</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "چانه‌زنی نیم ساعت طول کشید.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "فروشنده به شرط پرداخت نقد تخفیف داد.",
+       "fest": true
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Welchen Rat gibt Bahar?",
+       "optionen": [
+        "Nie den ersten Preis annehmen.",
+        "Immer mit Karte zahlen.",
+        "Nur Maschinenteppiche kaufen."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie sieht Julias Teppich aus?",
+       "optionen": [
+        "rot mit blauem Medaillon",
+        "blau mit Paisley-Muster",
+        "grün mit Gartenmotiv"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Warum schaut Bahar auf die Rückseite?",
+       "optionen": [
+        "Dort sieht man die Knoten der Handarbeit.",
+        "Dort steht der Preis.",
+        "Sie sucht Flecken."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie viel Rabatt gibt es am Ende?",
+       "optionen": [
+        "zwanzig Prozent",
+        "fünfzig Prozent",
+        "keinen"
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "راهروهای سرپوشیده‌ی بازار پر از حجره‌هایی بود که فرش‌ها را تا سقف روی هم چیده بودند.",
+       "tr": "rāhrowhā-ye sarpūschide-ye bāzār por az hodschrehāyī būd ke farschhā rā tā saghf rūy-e ham tschīde būdand.",
+       "de": "Die überdachten Gänge des Basars waren voller Läden, in denen Teppiche bis zur Decke gestapelt waren."
+      },
+      {
+       "fa": "بهار در گوشش گفت: «هیچ‌وقت قیمت اول را قبول نکن، مگر اینکه واقعا ارزان باشد.»",
+       "tr": "bahār dar gūschasch goft: «hītschwaght gheymat-e awwal rā ghabūl nakon, magar īnke wāgheʿan arzān bāschad.»",
+       "de": "Bahar flüsterte ihr ins Ohr: „Nimm nie den ersten Preis an, es sei denn, er ist wirklich günstig.“"
+      },
+      {
+       "fa": "فروشنده، آقای صمدی، با لبخند چای آورد و یکی‌یکی فرش‌ها را جلوی آنها پهن کرد.",
+       "tr": "forūschande, āghā-ye samadī, bā labchand tschāy āward o yekīyekī farschhā rā dschelou-ye ānhā pahn kard.",
+       "de": "Der Verkäufer, Herr Samadi, brachte lächelnd Tee und breitete die Teppiche einen nach dem anderen vor ihnen aus."
+      },
+      {
+       "fa": "یولیا عاشق یک قالی قرمز با ترنج آبی شد.",
+       "tr": "yūliyā ʿāschegh-e yek ghālī-ye ghermez bā torandsch-e ābī schod.",
+       "de": "Julia verliebte sich in einen roten Teppich mit blauem Medaillon."
+      },
+      {
+       "fa": "آقای صمدی گفت: «این دستباف است، پشم خالص و رنگ طبیعی؛ در هر سانتی‌متر مربع چهل گره دارد.»",
+       "tr": "āghā-ye samadī goft: «īn dastbāf ast, pascham-e chāles o rang-e tabīʿī; dar har sāntīmetr-e morabbaʿ tschehel gereh dārad.»",
+       "de": "Herr Samadi sagte: „Er ist handgeknüpft, reine Wolle und Naturfarben; er hat vierzig Knoten pro Quadratzentimeter.“"
+      },
+      {
+       "fa": "بهار پشت فرش را هم نگاه کرد تا گره‌ها را ببیند.",
+       "tr": "bahār poscht-e farsch rā ham negāh kard tā gerehā rā bebīnad.",
+       "de": "Bahar sah sich auch die Rückseite an, um die Knoten zu sehen."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t2",
+   "titel": "Hintergrund: Die Sprache der Teppichmuster",
+   "vorschau": "Die Sprache der Teppichmuster",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>زیرانداز</span> – Bodenunterlage · <span class='fa'>حوض</span> – Wasserbecken · <span class='fa'>قاب</span> – Rahmen · <span class='fa'>خمیده</span> – gebogen · <span class='fa'>زمینه</span> – Feld, Grund · <span class='fa'>کارگاه</span> – Werkstatt · <span class='fa'>حافظه</span> – Gedächtnis · <span class='fa'>امضا</span> – Unterschrift, Handschrift</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Hintergrund: Die Sprache der Teppichmuster",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "فرش ایرانی فقط یک زیرانداز نیست؛ هر نقشه‌اش زبانی است که داستانی را روایت می‌کند.",
+       "tr": "farsch-e īrānī faghat yek zīrandāz nīst; har naghscheasch zabānī ast ke dāstānī rā rewāyat mīkonad.",
+       "de": "Ein persischer Teppich ist nicht nur eine Bodenunterlage; jedes seiner Muster ist eine Sprache, die eine Geschichte erzählt."
+      },
+      {
+       "fa": "معروف‌ترین نقشه، نقشه‌ی ترنج است: یک شکل بزرگ در وسط که اغلب آن را نماد خورشید یا حوض می‌دانند.",
+       "tr": "maʿrūftarīn naghsche, naghsche-ye torandsch ast: yek schekl-e bozorg dar wasat ke aghlab ān rā nemād-e chorschīd yā houz mīdānand.",
+       "de": "Das berühmteste Muster ist das Medaillon: eine große Form in der Mitte, die oft als Symbol der Sonne oder eines Wasserbeckens gilt."
+      },
+      {
+       "fa": "دور ترنج را گل‌ها و شاخه‌ها پر می‌کنند و چند حاشیه مثل قاب، کل فرش را در بر می‌گیرند.",
+       "tr": "dour-e torandsch rā golhā o schāchehā por mīkonand o tschand hāschiye mesl-e ghāb, koll-e farsch rā dar bar mīgīrand.",
+       "de": "Um das Medaillon herum füllen Blumen und Zweige das Feld, und mehrere Bordüren umgeben den ganzen Teppich wie ein Rahmen."
+      },
+      {
+       "fa": "بته‌جقه، نقشی شبیه یک قطره‌ی خمیده، از فرش به پارچه‌های اروپایی رفت و در غرب «پیزلی» نام گرفت.",
+       "tr": "boteh-dschaghghe, naghschī schabīh-e yek ghatre-ye chamīde, az farsch be pārtschehā-ye orūpāyī raft o dar gharb «pīzlī» nām gereft.",
+       "de": "Das Boteh, ein Motiv wie ein gebogener Tropfen, wanderte vom Teppich auf europäische Stoffe und bekam im Westen den Namen „Paisley“."
+      },
+      {
+       "fa": "در فرش‌های باغی، زمینه به چند قسمت تقسیم شده است: جوی آب، درخت‌ها و باغچه‌ها، درست مثل یک باغ ایرانی از بالا.",
+       "tr": "dar farschhā-ye bāghī, zamīne be tschand ghesmat taghsīm schode ast: dschūy-e āb, derachthā o bāghtschehā, dorost mesl-e yek bāgh-e īrānī az bālā.",
+       "de": "Bei Gartenteppichen ist das Feld in mehrere Teile gegliedert: Wasserläufe, Bäume und Beete – genau wie ein persischer Garten von oben."
+      },
+      {
+       "fa": "از آنجا که ایران سرزمینی خشک است، فرش باغی یک باغ همیشه‌سبز را به خانه می‌آورد.",
+       "tr": "az āndschā ke īrān sarzamīnī choschk ast, farsch-e bāghī yek bāgh-e hamīschesabz rā be chāne mīāwarad.",
+       "de": "Da Iran ein trockenes Land ist, holt der Gartenteppich einen immergrünen Garten ins Haus."
+      },
+      {
+       "fa": "فرش‌ها را معمولا به دو گروه تقسیم می‌کنند: شهری و عشایری.",
+       "tr": "farschhā rā maʿmūlan be do gorūh taghsīm mīkonand: schahrī o ʿaschāyerī.",
+       "de": "Man teilt Teppiche meist in zwei Gruppen: Stadt- und Nomadenteppiche."
+      },
+      {
+       "fa": "فرش شهری در کارگاه و از روی نقشه‌ای دقیق بافته می‌شود؛ متقارن، ظریف و پرگره است.",
+       "tr": "farsch-e schahrī dar kārgāh o az rūy-e naghscheī daghīgh bāfte mīschawad; motaghāren, zarīf o porgereh ast.",
+       "de": "Der Stadtteppich wird in der Werkstatt nach einem genauen Entwurf geknüpft; er ist symmetrisch, fein und dicht geknüpft."
+      },
+      {
+       "fa": "اما زن عشایر بدون اینکه نقشه‌ای روی کاغذ داشته باشد، از حافظه و خیال خودش می‌بافد.",
+       "tr": "ammā zan-e ʿaschāyer bedūn-e īnke naghscheī rūy-e kāghaz dāschte bāschad, az hāfeze o chiyāl-e chodasch mībāfad.",
+       "de": "Eine Nomadenfrau dagegen knüpft aus dem Gedächtnis und ihrer Fantasie, ohne einen Entwurf auf Papier zu haben."
+      },
+      {
+       "fa": "به همین دلیل، فرش‌های عشایری مثل قشقایی هندسی‌تر، شادتر و کمی نامنظم‌اند و هیچ دوتایشان مثل هم نیست.",
+       "tr": "be hamīn dalīl, farschhā-ye ʿaschāyerī mesl-e ghaschghāyī hendesītar, schādtar o kamī nāmonazzam-and o hītsch dotāyeschān mesl-e ham nīst.",
+       "de": "Deshalb sind Nomadenteppiche wie die der Qaschqai geometrischer, fröhlicher und etwas unregelmäßig, und keine zwei sind gleich."
+      },
+      {
+       "fa": "هر شهر هم امضای خودش را دارد: تبریز به ترنج‌های ظریف، کاشان به قرمز عمیق و اصفهان به نقشه‌های پرجزئیات و ابریشم معروف است.",
+       "tr": "har schahr ham emzā-ye chodasch rā dārad: tabrīz be torandschhā-ye zarīf, kāschān be ghermez-e ʿamīgh o esfahān be naghschehā-ye pordschozʾiyāt o abrīscham maʿrūf ast.",
+       "de": "Jede Stadt hat ihre eigene Handschrift: Täbris ist für feine Medaillons bekannt, Kaschan für tiefes Rot und Isfahan für detailreiche Muster und Seide."
+      },
+      {
+       "fa": "کارشناس‌ها می‌گویند فرش اصل را فقط با نگاه به نقشه نمی‌شود شناخت، مگر اینکه گره‌ها و رنگ‌ها را هم بررسی کنی.",
+       "tr": "kārschenāshā mīgūyand farsch-e asl rā faghat bā negāh be naghsche nemīschawad schenācht, magar īnke gerehā o ranghā rā ham barresī konī.",
+       "de": "Experten sagen, man erkenne einen echten Teppich nicht allein am Muster, es sei denn, man prüft auch Knoten und Farben."
+      },
+      {
+       "fa": "امروز فرش ماشینی ارزان‌تر است، اما فرش دستباف هنوز ارزش خود را دارد، به شرطی که کسی زبانش را بفهمد.",
+       "tr": "emrūz farsch-e māschīnī arzāntar ast, ammā farsch-e dastbāf hanūz arzesch-e chod rā dārad, be schartī ke kasī zabānasch rā befahmad.",
+       "de": "Heute ist der Maschinenteppich billiger, doch der handgeknüpfte behält seinen Wert – vorausgesetzt, jemand versteht seine Sprache."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "ترنج یک شکل بزرگ در وسط فرش است.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "بته‌جقه در غرب «پیزلی» نام گرفت.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "فرش‌های عشایری از روی نقشه‌ی کاغذی بافته می‌شوند.",
+       "fest": true,
+       "erkl": "Sie werden <b>aus dem Gedächtnis</b> geknüpft."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "فرش‌های شهری متقارن و ظریف هستند.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "کاشان به فرش‌های سبز معروف است.",
+       "fest": true,
+       "erkl": "Kaschan ist für <b>tiefes Rot</b> bekannt."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Was zeigt ein Gartenteppich?",
+       "optionen": [
+        "Wasserläufe, Bäume und Beete wie ein Garten von oben",
+        "eine Jagdszene",
+        "einen Stadtplan"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie sind Nomadenteppiche?",
+       "optionen": [
+        "geometrischer, fröhlicher, etwas unregelmäßig",
+        "symmetrisch und sehr fein",
+        "immer aus Seide"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wofür ist Isfahan bekannt?",
+       "optionen": [
+        "detailreiche Muster und Seide",
+        "tiefes Rot",
+        "Kelims"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was ist die Kernaussage?",
+       "optionen": [
+        "Muster sind eine Sprache, die man verstehen kann.",
+        "Maschinenteppiche sind besser.",
+        "Alle Teppiche sind gleich."
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "معروف‌ترین نقشه، نقشه‌ی ترنج است: یک شکل بزرگ در وسط که اغلب آن را نماد خورشید یا حوض می‌دانند.",
+       "tr": "maʿrūftarīn naghsche, naghsche-ye torandsch ast: yek schekl-e bozorg dar wasat ke aghlab ān rā nemād-e chorschīd yā houz mīdānand.",
+       "de": "Das berühmteste Muster ist das Medaillon: eine große Form in der Mitte, die oft als Symbol der Sonne oder eines Wasserbeckens gilt."
+      },
+      {
+       "fa": "دور ترنج را گل‌ها و شاخه‌ها پر می‌کنند و چند حاشیه مثل قاب، کل فرش را در بر می‌گیرند.",
+       "tr": "dour-e torandsch rā golhā o schāchehā por mīkonand o tschand hāschiye mesl-e ghāb, koll-e farsch rā dar bar mīgīrand.",
+       "de": "Um das Medaillon herum füllen Blumen und Zweige das Feld, und mehrere Bordüren umgeben den ganzen Teppich wie ein Rahmen."
+      },
+      {
+       "fa": "بته‌جقه، نقشی شبیه یک قطره‌ی خمیده، از فرش به پارچه‌های اروپایی رفت و در غرب «پیزلی» نام گرفت.",
+       "tr": "boteh-dschaghghe, naghschī schabīh-e yek ghatre-ye chamīde, az farsch be pārtschehā-ye orūpāyī raft o dar gharb «pīzlī» nām gereft.",
+       "de": "Das Boteh, ein Motiv wie ein gebogener Tropfen, wanderte vom Teppich auf europäische Stoffe und bekam im Westen den Namen „Paisley“."
+      },
+      {
+       "fa": "در فرش‌های باغی، زمینه به چند قسمت تقسیم شده است: جوی آب، درخت‌ها و باغچه‌ها، درست مثل یک باغ ایرانی از بالا.",
+       "tr": "dar farschhā-ye bāghī, zamīne be tschand ghesmat taghsīm schode ast: dschūy-e āb, derachthā o bāghtschehā, dorost mesl-e yek bāgh-e īrānī az bālā.",
+       "de": "Bei Gartenteppichen ist das Feld in mehrere Teile gegliedert: Wasserläufe, Bäume und Beete – genau wie ein persischer Garten von oben."
+      },
+      {
+       "fa": "از آنجا که ایران سرزمینی خشک است، فرش باغی یک باغ همیشه‌سبز را به خانه می‌آورد.",
+       "tr": "az āndschā ke īrān sarzamīnī choschk ast, farsch-e bāghī yek bāgh-e hamīschesabz rā be chāne mīāwarad.",
+       "de": "Da Iran ein trockenes Land ist, holt der Gartenteppich einen immergrünen Garten ins Haus."
+      },
+      {
+       "fa": "فرش‌ها را معمولا به دو گروه تقسیم می‌کنند: شهری و عشایری.",
+       "tr": "farschhā rā maʿmūlan be do gorūh taghsīm mīkonand: schahrī o ʿaschāyerī.",
+       "de": "Man teilt Teppiche meist in zwei Gruppen: Stadt- und Nomadenteppiche."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d1",
+   "titel": "Dialog: Ein Teller aus Isfahan",
+   "vorschau": "Ein Teller aus Isfahan",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Tom ist zu Besuch in Isfahan und steht in einem Laden für Emaillekunst. Frau Nouri ist die Verkäuferin.</p>"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "تام: ببخشید، قیمت این بشقاب آبی چند است؟",
+       "tr": "bebachschīd, gheymat-e īn boschghāb-e ābī tschand ast?",
+       "de": "Entschuldigung, was kostet dieser blaue Teller?"
+      },
+      {
+       "fa": "خانم نوری: این میناکاری اصفهان است، کاملا دست‌ساز.",
+       "tr": "īn mīnākārī-ye esfahān ast, kāmelan dastsāz.",
+       "de": "Das ist Isfahaner Emaillekunst, komplett handgemacht."
+      },
+      {
+       "fa": "تام: خیلی قشنگ است، اما فکر می‌کنم برایم گران باشد.",
+       "tr": "cheylī ghaschang ast, ammā fekr mīkonam barāyam gerān bāschad.",
+       "de": "Sehr schön, aber ich glaube, er ist mir zu teuer."
+      },
+      {
+       "fa": "خانم نوری: هنوز قیمت را نگفته‌ام! بدون اینکه بپرسید، تصمیم نگیرید.",
+       "tr": "hanūz gheymat rā nagofte-am! bedūn-e īnke beporsīd, tasmīm nagīrīd.",
+       "de": "Ich habe den Preis noch gar nicht gesagt! Entscheiden Sie nicht, ohne zu fragen."
+      },
+      {
+       "fa": "تام: حق با شماست. خب، چند؟",
+       "tr": "hagh bā schomāst. chob, tschand?",
+       "de": "Sie haben recht. Also, wie viel?"
+      },
+      {
+       "fa": "خانم نوری: دو میلیون تومان؛ اما اگر این قلمکار را هم بخرید، ده درصد تخفیف می‌دهم.",
+       "tr": "do mīliyon tomān; ammā agar īn ghalamkār rā ham becharīd, dah darsad tachfīf mīdeham.",
+       "de": "Zwei Millionen Toman; aber wenn Sie auch dieses Ghalamkar-Tuch kaufen, gebe ich zehn Prozent Rabatt."
+      },
+      {
+       "fa": "تام: هر دو را برمی‌دارم، به شرطی که خوب بسته‌بندی کنید؛ باید با هواپیما ببرم.",
+       "tr": "har do rā barmīdāram, be schartī ke chūb bastebandī konīd; bāyad bā hawāpeymā bebaram.",
+       "de": "Ich nehme beides, vorausgesetzt, Sie verpacken es gut; ich muss es im Flugzeug mitnehmen."
+      },
+      {
+       "fa": "خانم نوری: خیالتان راحت باشد؛ مینا نمی‌شکند، مگر اینکه از دستتان بیفتد!",
+       "tr": "chiyāletān rāhat bāschad; mīnā nemīschekanad, magar īnke az dastetān biyoftad!",
+       "de": "Seien Sie unbesorgt; Emaille zerbricht nicht, es sei denn, sie fällt Ihnen aus der Hand!"
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "تام: ببخشید، قیمت این بشقاب آبی چند است؟",
+       "tr": "bebachschīd, gheymat-e īn boschghāb-e ābī tschand ast?",
+       "de": "Entschuldigung, was kostet dieser blaue Teller?"
+      },
+      {
+       "fa": "خانم نوری: این میناکاری اصفهان است، کاملا دست‌ساز.",
+       "tr": "īn mīnākārī-ye esfahān ast, kāmelan dastsāz.",
+       "de": "Das ist Isfahaner Emaillekunst, komplett handgemacht."
+      },
+      {
+       "fa": "تام: خیلی قشنگ است، اما فکر می‌کنم برایم گران باشد.",
+       "tr": "cheylī ghaschang ast, ammā fekr mīkonam barāyam gerān bāschad.",
+       "de": "Sehr schön, aber ich glaube, er ist mir zu teuer."
+      },
+      {
+       "fa": "خانم نوری: هنوز قیمت را نگفته‌ام! بدون اینکه بپرسید، تصمیم نگیرید.",
+       "tr": "hanūz gheymat rā nagofte-am! bedūn-e īnke beporsīd, tasmīm nagīrīd.",
+       "de": "Ich habe den Preis noch gar nicht gesagt! Entscheiden Sie nicht, ohne zu fragen."
+      },
+      {
+       "fa": "تام: حق با شماست. خب، چند؟",
+       "tr": "hagh bā schomāst. chob, tschand?",
+       "de": "Sie haben recht. Also, wie viel?"
+      },
+      {
+       "fa": "خانم نوری: دو میلیون تومان؛ اما اگر این قلمکار را هم بخرید، ده درصد تخفیف می‌دهم.",
+       "tr": "do mīliyon tomān; ammā agar īn ghalamkār rā ham becharīd, dah darsad tachfīf mīdeham.",
+       "de": "Zwei Millionen Toman; aber wenn Sie auch dieses Ghalamkar-Tuch kaufen, gebe ich zehn Prozent Rabatt."
+      },
+      {
+       "fa": "تام: هر دو را برمی‌دارم، به شرطی که خوب بسته‌بندی کنید؛ باید با هواپیما ببرم.",
+       "tr": "har do rā barmīdāram, be schartī ke chūb bastebandī konīd; bāyad bā hawāpeymā bebaram.",
+       "de": "Ich nehme beides, vorausgesetzt, Sie verpacken es gut; ich muss es im Flugzeug mitnehmen."
+      },
+      {
+       "fa": "خانم نوری: خیالتان راحت باشد؛ مینا نمی‌شکند، مگر اینکه از دستتان بیفتد!",
+       "tr": "chiyāletān rāhat bāschad; mīnā nemīschekanad, magar īnke az dastetān biyoftad!",
+       "de": "Seien Sie unbesorgt; Emaille zerbricht nicht, es sei denn, sie fällt Ihnen aus der Hand!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Was möchte Tom kaufen?",
+       "optionen": [
+        "einen blauen Emaille-Teller",
+        "einen Teppich",
+        "eine Kupferkanne"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wann gibt es Rabatt?",
+       "optionen": [
+        "wenn er auch das Ghalamkar-Tuch kauft",
+        "wenn er bar zahlt",
+        "nie"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Welche Bedingung stellt Tom?",
+       "optionen": [
+        "gute Verpackung für den Flug",
+        "kostenlose Lieferung",
+        "eine Quittung auf Deutsch"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

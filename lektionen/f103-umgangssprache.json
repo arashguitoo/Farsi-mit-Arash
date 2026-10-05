@@ -1,0 +1,182 @@
+{
+ "id": "ug",
+ "art": "umgangssprache",
+ "titel": "Umgangssprache: So spricht man im Alltag",
+ "beschreibung": "Freiwilliger Extra-Teil: Umgangssprache.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "So spricht man",
+   "vorschau": "تو راهم",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Schrift ≠ Gespräch",
+     "text": "<ul><li><span class='fa'>دیگر → دیگه</span>: <span class='fa'>پنج دقیقه دیگه</span></li><li><span class='fa'>در راه هستم → تو راهم</span></li><li><span class='fa'>است → ـه</span>: <span class='fa'>وحشتناک است → وحشتناکه</span></li><li><span class='fa'>الان می‌رسم!</span> – der Klassiker unter den Ausreden 😉</li></ul>",
+     "stil": "merke"
+    },
+    {
+     "typ": "paare",
+     "links": "x",
+     "paare": [
+      {
+       "fa": "در راه هستم",
+       "tr": "",
+       "de": "ich bin unterwegs",
+       "x": "تو راهم"
+      },
+      {
+       "fa": "دیگر",
+       "tr": "",
+       "de": "noch, weitere",
+       "x": "دیگه"
+      },
+      {
+       "fa": "وحشتناک است",
+       "tr": "",
+       "de": "es ist schrecklich",
+       "x": "وحشتناکه"
+      },
+      {
+       "fa": "کجا هستی؟",
+       "tr": "",
+       "de": "wo bist du?",
+       "x": "کجایی؟"
+      },
+      {
+       "fa": "نمی‌توانم",
+       "tr": "",
+       "de": "ich kann nicht",
+       "x": "نمی‌تونم"
+      }
+     ],
+     "titel": "Schrift ↔ Gespräch"
+    },
+    {
+     "typ": "sortieren",
+     "titel": "Schrift oder Gespräch?",
+     "frage": "Schriftsprache oder Umgangssprache?",
+     "kategorien": [
+      "✍️ Schriftsprache",
+      "🗣️ Umgangssprache"
+     ],
+     "items": [
+      {
+       "fa": "در راه هستم",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "دیگر",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "وحشتناک است",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "کجا هستی؟",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "نمی‌توانم",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "تو راهم",
+       "k": 1,
+       "say": false,
+       "e": "<i>tū rāham</i> – geschrieben: <span class='fa'>در راه هستم</span>"
+      },
+      {
+       "fa": "دیگه",
+       "k": 1,
+       "say": false,
+       "e": "<i>dīge</i> – geschrieben: <span class='fa'>دیگر</span>"
+      },
+      {
+       "fa": "وحشتناکه",
+       "k": 1,
+       "say": false,
+       "e": "<i>wahschatnāke</i> – geschrieben: <span class='fa'>وحشتناک است</span>"
+      },
+      {
+       "fa": "کجایی؟",
+       "k": 1,
+       "say": false,
+       "e": "<i>kodschāyī?</i> – geschrieben: <span class='fa'>کجا هستی؟</span>"
+      },
+      {
+       "fa": "نمی‌تونم",
+       "k": 1,
+       "say": false,
+       "e": "<i>nemītūnam</i> – geschrieben: <span class='fa'>نمی‌توانم</span>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Kurz-Dialog",
+   "vorschau": "💬",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Wo bist du?",
+     "text": "Umgangssprache! Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "کجایی؟ نیم ساعته منتظرتم!",
+       "tr": "kodschāyī? nīm sāʿate montazeretam!",
+       "de": "Wo bist du? Ich warte seit einer halben Stunde!"
+      },
+      {
+       "fa": "ببخشید، تو راهم! الان می‌رسم.",
+       "tr": "bebachschīd, tū rāham! alān mīresam.",
+       "de": "Sorry, ich bin unterwegs! Bin gleich da."
+      },
+      {
+       "fa": "الان یعنی کی؟",
+       "tr": "alān yaʿnī key?",
+       "de": "Was heißt „gleich“?"
+      },
+      {
+       "fa": "یعنی … پنج دقیقه‌ی ایرانی!",
+       "tr": "yaʿnī … pandsch daghīghe-ye īrānī!",
+       "de": "Das heißt … fünf iranische Minuten!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Verstanden?",
+     "fragen": [
+      {
+       "frage": "Wie lange wartet die Person schon?",
+       "optionen": [
+        "eine halbe Stunde",
+        "fünf Minuten",
+        "eine Stunde"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "„Fünf iranische Minuten“ ist …",
+       "optionen": [
+        "ein Scherz über Verspätung",
+        "eine genaue Zeitangabe",
+        "ein Ort"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

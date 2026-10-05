@@ -1,0 +1,483 @@
+{
+ "id": "z1",
+ "titel": "Trainingspaket 1",
+ "beschreibung": "Wer passt zu wem?, Wort-Marathon, Lückensätze, Sätze aus den Texten.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "Wer passt zu wem?",
+   "vorschau": "🧩",
+   "karten": [
+    {
+     "typ": "zuordnen",
+     "titel": "Wohin in den Nouruz-Ferien?",
+     "text": "Fünf Personen planen ihre Nouruz-Ferien. Ein Reisebüro bietet sieben Möglichkeiten an.",
+     "frage": "Welches Angebot passt am besten? Tippe es an.",
+     "angebote": [
+      {
+       "titel": "Kaspisches Meer",
+       "emoji": "🌊",
+       "fa": "ویلای کنار دریا در شمال، با جنگل سبز و باران بهاری.",
+       "de": "Ferienhaus am Kaspischen Meer, mit grünem Wald und Frühlingsregen."
+      },
+      {
+       "titel": "Insel Kisch",
+       "emoji": "🏝️",
+       "fa": "سفر به جزیره‌ی کیش: ساحل گرم، غواصی و مراکز خرید.",
+       "de": "Reise auf die Insel Kisch: warmer Strand, Tauchen und Einkaufszentren."
+      },
+      {
+       "titel": "Wüstencamp",
+       "emoji": "🐪",
+       "fa": "کمپ در کویر مرنجاب: شب پرستاره و شترسواری.",
+       "de": "Camp in der Wüste Maranjab: Sternennacht und Kamelreiten."
+      },
+      {
+       "titel": "Picknick im Park",
+       "emoji": "🧺",
+       "fa": "پیک‌نیک سیزده‌به‌در در پارک بزرگ شهر، با بازی و موسیقی.",
+       "de": "Sizdah-be-dar-Picknick im großen Stadtpark, mit Spielen und Musik."
+      },
+      {
+       "titel": "Schiras-Tour",
+       "emoji": "🌹",
+       "fa": "تور سه‌روزه‌ی شیراز: باغ‌های تاریخی، آرامگاه حافظ و تخت جمشید.",
+       "de": "Dreitägige Schiras-Tour: historische Gärten, Hafis-Grab und Persepolis."
+      },
+      {
+       "titel": "Skifahren",
+       "emoji": "⛷️",
+       "fa": "اسکی در پیست دیزین؛ برف تا اواسط فروردین می‌ماند.",
+       "de": "Skifahren in Dizin; der Schnee bleibt bis Mitte Farvardin."
+      },
+      {
+       "titel": "Zu Hause bleiben",
+       "emoji": "🛋️",
+       "fa": "ماندن در تهران خلوت: خیابان‌های خالی و بدون ترافیک.",
+       "de": "In der leeren Hauptstadt bleiben: leere Straßen ohne Verkehr."
+      }
+     ],
+     "personen": [
+      {
+       "name": "Familie Sadeghi",
+       "emoji": "👨‍👩‍👧",
+       "fa": "خانواده‌ی صادقی عاشق جنگل و دریاست و هوای مرطوب را دوست دارد.",
+       "de": "Familie Sadeghi liebt Wald und Meer und mag feuchte Luft.",
+       "richtig": 0
+      },
+      {
+       "name": "Ramin",
+       "emoji": "📸",
+       "fa": "رامین عکاس است و می‌خواهد از آسمان شب و ستاره‌ها عکس بگیرد.",
+       "de": "Ramin ist Fotograf und möchte den Nachthimmel und die Sterne fotografieren.",
+       "richtig": 2
+      },
+      {
+       "name": "Frau Nazari",
+       "emoji": "🛍️",
+       "fa": "خانم نظری از سرمای اسفند خسته شده و دلش آفتاب، آب گرم و خرید می‌خواهد.",
+       "de": "Frau Nazari hat genug von der Kälte im Esfand und sehnt sich nach Sonne, warmem Wasser und Shopping.",
+       "richtig": 1
+      },
+      {
+       "name": "Herr Tavakoli",
+       "emoji": "🏛️",
+       "fa": "آقای توکلی معلم تاریخ است و می‌خواهد شعر و تاریخ ایران را از نزدیک ببیند.",
+       "de": "Herr Tavakoli ist Geschichtslehrer und möchte Irans Poesie und Geschichte aus der Nähe sehen.",
+       "richtig": 4
+      },
+      {
+       "name": "Pouya",
+       "emoji": "🏂",
+       "fa": "پویا عاشق ورزش‌های زمستانی است و نمی‌خواهد زمستان تمام شود.",
+       "de": "Pouya liebt Wintersport und möchte nicht, dass der Winter zu Ende geht.",
+       "richtig": 5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Wort-Marathon",
+   "vorschau": "⏱️",
+   "karten": [
+    {
+     "typ": "tempo",
+     "titel": "Marathon: alle Wörter",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 120,
+     "ziel": 25,
+     "woerter": [
+      {
+       "fa": "خانه‌تکانی",
+       "a": "Frühjahrsputz"
+      },
+      {
+       "fa": "سبزه",
+       "a": "Sabzeh (Sprossen)"
+      },
+      {
+       "fa": "سفره‌ی هفت‌سین",
+       "a": "Haft-Sin-Tisch"
+      },
+      {
+       "fa": "ماهی قرمز",
+       "a": "Goldfisch"
+      },
+      {
+       "fa": "سمنو",
+       "a": "Samanu (Weizenkeimcreme)"
+      },
+      {
+       "fa": "سنجد",
+       "a": "Ölweidenfrucht"
+      },
+      {
+       "fa": "سکه",
+       "a": "Münze"
+      },
+      {
+       "fa": "تخم‌مرغ رنگی",
+       "a": "bemaltes Ei"
+      },
+      {
+       "fa": "آینه",
+       "a": "Spiegel"
+      },
+      {
+       "fa": "شمع",
+       "a": "Kerze"
+      },
+      {
+       "fa": "لباس نو",
+       "a": "neue Kleidung"
+      },
+      {
+       "fa": "عیدی",
+       "a": "Neujahrsgeschenk (meist Geld)"
+      },
+      {
+       "fa": "عید دیدنی",
+       "a": "Neujahrsbesuche"
+      },
+      {
+       "fa": "تحویل سال",
+       "a": "Jahreswechsel (Augenblick)"
+      },
+      {
+       "fa": "سال نو",
+       "a": "neues Jahr"
+      },
+      {
+       "fa": "سیزده‌به‌در",
+       "a": "Sizdah-be-dar (Picknicktag)"
+      },
+      {
+       "fa": "تعطیلات",
+       "a": "Ferien"
+      },
+      {
+       "fa": "مهمان",
+       "a": "Gast"
+      },
+      {
+       "fa": "میزبان",
+       "a": "Gastgeber/in"
+      },
+      {
+       "fa": "آجیل",
+       "a": "Nussmischung"
+      },
+      {
+       "fa": "شیرینی",
+       "a": "Gebäck"
+      },
+      {
+       "fa": "جشن",
+       "a": "Fest"
+      },
+      {
+       "fa": "سنت",
+       "a": "Tradition, Brauch"
+      },
+      {
+       "fa": "تقویم",
+       "a": "Kalender"
+      },
+      {
+       "fa": "گاه‌شماری",
+       "a": "Zeitrechnung"
+      },
+      {
+       "fa": "خورشیدی",
+       "a": "Sonnen-, solar"
+      },
+      {
+       "fa": "قمری",
+       "a": "Mond-, lunar"
+      },
+      {
+       "fa": "میلادی",
+       "a": "nach westlicher Zeitrechnung"
+      },
+      {
+       "fa": "اعتدال بهاری",
+       "a": "Frühlings-Tagundnachtgleiche"
+      },
+      {
+       "fa": "کبیسه",
+       "a": "Schalt- (Schaltjahr)"
+      },
+      {
+       "fa": "دقیق",
+       "a": "genau"
+      },
+      {
+       "fa": "فصل",
+       "a": "Jahreszeit"
+      },
+      {
+       "fa": "ستاره‌شناس",
+       "a": "Astronom/in"
+      },
+      {
+       "fa": "محاسبه",
+       "a": "Berechnung"
+      },
+      {
+       "fa": "اول فروردین",
+       "a": "1. Farvardin (Neujahrstag)"
+      },
+      {
+       "fa": "تمیز کردن",
+       "a": "putzen, sauber machen"
+      },
+      {
+       "fa": "سبز کردن",
+       "a": "(Sprossen) ziehen, keimen lassen"
+      },
+      {
+       "fa": "دیدن کردن",
+       "a": "besuchen (formell)"
+      },
+      {
+       "fa": "جشن گرفتن",
+       "a": "feiern"
+      },
+      {
+       "fa": "تبریک گفتن",
+       "a": "gratulieren"
+      },
+      {
+       "fa": "حساب کردن",
+       "a": "berechnen, rechnen"
+      }
+     ]
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "محاسبه",
+       "tr": "mohāsebe",
+       "de": "Berechnung",
+       "emoji": "🧮"
+      },
+      {
+       "fa": "آجیل",
+       "tr": "ādschīl",
+       "de": "Nussmischung",
+       "emoji": "🥜"
+      },
+      {
+       "fa": "عیدی",
+       "tr": "ʿeydī",
+       "de": "Neujahrsgeschenk (meist Geld)",
+       "emoji": "💵"
+      },
+      {
+       "fa": "سمنو",
+       "tr": "samanū",
+       "de": "Samanu (Weizenkeimcreme)",
+       "emoji": "🍮"
+      },
+      {
+       "fa": "سال نو",
+       "tr": "sāl-e nou",
+       "de": "neues Jahr",
+       "emoji": "🎆"
+      },
+      {
+       "fa": "مهمان",
+       "tr": "mehmān",
+       "de": "Gast",
+       "emoji": "🧑‍🤝‍🧑"
+      }
+     ],
+     "titel": "Memory"
+    },
+    {
+     "typ": "memory",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "سال نو",
+       "tr": "sāl-e nou",
+       "de": "neues Jahr",
+       "emoji": "🎆"
+      },
+      {
+       "fa": "جشن",
+       "tr": "dschaschn",
+       "de": "Fest",
+       "emoji": "🎉"
+      },
+      {
+       "fa": "شمع",
+       "tr": "schamʿ",
+       "de": "Kerze",
+       "emoji": "🕯️"
+      },
+      {
+       "fa": "سبزه",
+       "tr": "sabze",
+       "de": "Sabzeh (Sprossen)",
+       "emoji": "🌱"
+      },
+      {
+       "fa": "شیرینی",
+       "tr": "schīrīnī",
+       "de": "Gebäck",
+       "emoji": "🍪"
+      },
+      {
+       "fa": "سکه",
+       "tr": "sekke",
+       "de": "Münze",
+       "emoji": "🪙"
+      }
+     ],
+     "titel": "Memory: Wort & Bedeutung"
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "titel": "Lückensätze",
+   "vorschau": "___",
+   "karten": [
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>قبل از نوروز همه‌ی خانه را تمیز می‌کنیم؛ به این کار ___ می‌گویند.</span><br><span class='mini'>Vor Nouruz putzen wir das ganze Haus; das nennt man Khaneh-Tekani.</span>",
+       "optionen": [
+        "خانه‌تکانی",
+        "تقویم",
+        "سال نو"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>قبل از نوروز همه‌ی خانه را تمیز می‌کنیم؛ به این کار خانه‌تکانی می‌گویند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>مادرم دو هفته قبل از عید در یک بشقاب ___ سبز می‌کند.</span><br><span class='mini'>Meine Mutter zieht zwei Wochen vor dem Fest Sprossen auf einem Teller.</span>",
+       "optionen": [
+        "سبزه",
+        "آجیل",
+        "سمنو"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>مادرم دو هفته قبل از عید در یک بشقاب سبزه سبز می‌کند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>بچه‌ها از بزرگ‌ترها ___ می‌گیرند، معمولا یک اسکناس نو.</span><br><span class='mini'>Die Kinder bekommen von den Älteren ein Neujahrsgeschenk, meist einen neuen Geldschein.</span>",
+       "optionen": [
+        "عیدی",
+        "ستاره‌شناس",
+        "فصل"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>بچه‌ها از بزرگ‌ترها عیدی می‌گیرند، معمولا یک اسکناس نو.</span>"
+      },
+      {
+       "frage": "<span class='fa'>امسال ___ ساعت شش و نیم صبح است.</span><br><span class='mini'>Dieses Jahr ist der Jahreswechsel um halb sieben morgens.</span>",
+       "optionen": [
+        "تحویل سال",
+        "سفره‌ی هفت‌سین",
+        "سمنو"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>امسال تحویل سال ساعت شش و نیم صبح است.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>روز ___ همه برای پیک‌نیک به طبیعت می‌روند.</span><br><span class='mini'>An Sizdah-be-dar gehen alle zum Picknick in die Natur.</span>",
+       "optionen": [
+        "سیزده‌به‌در",
+        "آینه",
+        "سکه"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>روز سیزده‌به‌در همه برای پیک‌نیک به طبیعت می‌روند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>تقویم ایرانی ___ است و با حرکت زمین دور خورشید حساب می‌شود.</span><br><span class='mini'>Der iranische Kalender ist ein Sonnenkalender und richtet sich nach dem Lauf der Erde um die Sonne.</span>",
+       "optionen": [
+        "خورشیدی",
+        "سنت",
+        "شمع"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>تقویم ایرانی خورشیدی است و با حرکت زمین دور خورشید حساب می‌شود.</span>"
+      },
+      {
+       "frage": "<span class='fa'>سال نو دقیقا در لحظه‌ی ___ شروع می‌شود.</span><br><span class='mini'>Das neue Jahr beginnt genau im Augenblick der Frühlings-Tagundnachtgleiche.</span>",
+       "optionen": [
+        "اعتدال بهاری",
+        "شمع",
+        "اول فروردین"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>سال نو دقیقا در لحظه‌ی اعتدال بهاری شروع می‌شود.</span>"
+      },
+      {
+       "frage": "<span class='fa'>در سال ___ ماه اسفند سی روز دارد.</span><br><span class='mini'>In einem Schaltjahr hat der Monat Esfand dreißig Tage.</span>",
+       "optionen": [
+        "کبیسه",
+        "سیزده‌به‌در",
+        "ستاره‌شناس"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>در سال کبیسه ماه اسفند سی روز دارد.</span>"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

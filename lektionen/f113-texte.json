@@ -1,0 +1,623 @@
+{
+ "id": "tx",
+ "art": "texte",
+ "titel": "Texte & Dialoge",
+ "beschreibung": "Lesetexte mit Fragen und Dialoge zum Ordnen.",
+ "stationen": [
+  {
+   "id": "t1",
+   "titel": "Alltag: Ein Tag im Nationalmuseum",
+   "vorschau": "Ein Tag im Nationalmuseum",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>هیجان‌انگیز</span> – spannend · <span class='fa'>به استقبال آمدن</span> – entgegenkommen, begrüßen · <span class='fa'>زحمت</span> – Mühe · <span class='fa'>اصل</span> – Original · <span class='fa'>بابل</span> – Babylon · <span class='fa'>حوصله نداشتن</span> – keine Lust haben · <span class='fa'>اعلام کردن</span> – verkünden</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Alltag: Ein Tag im Nationalmuseum",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "صبح شنبه‌ی گذشته، کلاس ما با خانم کریمی، معلم تاریخ، به موزه‌ی ملی ایران در تهران رفت.",
+       "tr": "sobh-e schanbe-ye gozaschte, kelās-e mā bā chānom-e karīmī, moʿallem-e tārīch, be mūze-ye mellī-ye īrān dar tehrān raft.",
+       "de": "Letzten Samstagmorgen ging unsere Klasse mit Frau Karimi, der Geschichtslehrerin, ins Nationalmuseum Iran in Teheran."
+      },
+      {
+       "fa": "قبل از اینکه راه بیفتیم، خانم کریمی گفته بود که همه باید دفترچه و مداد همراهشان داشته باشند.",
+       "tr": "ghabl az īnke rāh biyoftīm, chānom-e karīmī gofte būd ke hame bāyad daftartsche o medād hamrāheschān dāschte bāschand.",
+       "de": "Bevor wir losfuhren, hatte Frau Karimi gesagt, dass alle Heft und Bleistift dabeihaben müssten."
+      },
+      {
+       "fa": "هوا ابری بود و در اتوبوس همه با هم حرف می‌زدند و می‌خندیدند، چون کسی انتظار یک روز هیجان‌انگیز را نداشت.",
+       "tr": "hawā abrī būd o dar otobūs hame bā ham harf mīzadand o mīchandīdand, tschon kasī entezār-e yek rūz-e hayadschānangīz rā nadāscht.",
+       "de": "Es war bewölkt, und im Bus redeten und lachten alle durcheinander, denn niemand erwartete einen spannenden Tag."
+      },
+      {
+       "fa": "تازه از اتوبوس پیاده شده بودیم که یک راهنمای جوان با لبخند به استقبال ما آمد.",
+       "tr": "tāze az otobūs piyāde schode būdīm ke yek rāhnamā-ye dschawān bā labchand be esteghbāl-e mā āmad.",
+       "de": "Wir waren gerade erst aus dem Bus gestiegen, als uns ein junger Guide lächelnd begrüßte."
+      },
+      {
+       "fa": "اسمش آقای نوروزی بود و گفت که خودش سال‌ها در تخت جمشید و شوش کاوش کرده بود.",
+       "tr": "esmasch āghā-ye nourūzī būd o goft ke chodasch sālhā dar tacht-e dschamschīd o schūsch kāwesch karde būd.",
+       "de": "Er hieß Herr Nowruzi und sagte, er habe selbst jahrelang in Persepolis und Susa Ausgrabungen gemacht."
+      },
+      {
+       "fa": "در سالن اول، ویترین‌ها پر از سفال‌های هفت‌هزارساله بود که روی آنها نقش حیوانات را کشیده بودند.",
+       "tr": "dar sālon-e awwal, wītrīnhā por az sofālhā-ye hafthezārsāle būd ke rū-ye ānhā naghsch-e heywānāt rā keschīde būdand.",
+       "de": "Im ersten Saal waren die Vitrinen voller siebentausend Jahre alter Keramik, auf die man Tiermotive gemalt hatte."
+      },
+      {
+       "fa": "خانم کریمی از ما خواسته بود که از هر سالن یک چیز را انتخاب کنیم و درباره‌اش چند جمله بنویسیم.",
+       "tr": "chānom-e karīmī az mā chāste būd ke az har sālon yek tschīz rā entechāb konīm o darbāreasch tschand dschomle benewīsīm.",
+       "de": "Frau Karimi hatte uns gebeten, aus jedem Saal einen Gegenstand auszuwählen und ein paar Sätze darüber zu schreiben."
+      },
+      {
+       "fa": "بعد از اینکه سفال‌ها را دیدیم، به سالن هخامنشی رفتیم و جلوی یک کتیبه‌ی بزرگ ایستادیم.",
+       "tr": "baʿd az īnke sofālhā rā dīdīm, be sālon-e hachāmaneschī raftīm o dschelou-ye yek katībe-ye bozorg īstādīm.",
+       "de": "Nachdem wir die Keramik gesehen hatten, gingen wir in den Achämenidensaal und blieben vor einer großen Inschrift stehen."
+      },
+      {
+       "fa": "آقای نوروزی توضیح داد که این خط میخی است و دانشمندان قرن نوزدهم آن را با زحمت زیاد خوانده بودند.",
+       "tr": "āghā-ye nourūzī touzīh dād ke īn chatt-e mīchī ast o dāneschmandān-e gharn-e nūzdahom ān rā bā zahmat-e ziyād chānde būdand.",
+       "de": "Herr Nowruzi erklärte, dass dies Keilschrift sei und Gelehrte des 19. Jahrhunderts sie mit großer Mühe entziffert hätten."
+      },
+      {
+       "fa": "داشتیم از نقش برجسته‌ی سربازان عکس می‌گرفتیم که سارا ناگهان پرسید: «استوانه‌ی کوروش کجاست؟»",
+       "tr": "dāschtīm az naghsch-e bardschaste-ye sarbāzān ʿaks mīgereftīm ke sārā nāgahān porsīd: «ostowāne-ye kūrosch kodschāst?»",
+       "de": "Wir fotografierten gerade das Relief der Soldaten, als Sara plötzlich fragte: „Wo ist der Kyros-Zylinder?“"
+      },
+      {
+       "fa": "راهنما گفت که اصل آن در لندن است، اما چند سال پیش آن را برای چند ماه به همین موزه آورده بودند.",
+       "tr": "rāhnamā goft ke asl-e ān dar landan ast, ammā tschand sāl pīsch ān rā barā-ye tschand māh be hamīn mūze āwarde būdand.",
+       "de": "Der Guide sagte, das Original sei in London, aber vor einigen Jahren habe man es für ein paar Monate in genau dieses Museum gebracht."
+      },
+      {
+       "fa": "بعد یک کپی از آن را نشان داد و گفت که روی این استوانه، کوروش از صلح و آزادی مردم بابل نوشته است.",
+       "tr": "baʿd yek kopī az ān rā neschān dād o goft ke rū-ye īn ostowāne, kūrosch az solh o āzādī-ye mardom-e bābel neweschte ast.",
+       "de": "Dann zeigte er eine Kopie und sagte, auf diesem Zylinder schreibe Kyros über Frieden und Freiheit für die Menschen von Babylon."
+      },
+      {
+       "fa": "مهرداد که همیشه شوخی می‌کرد، این بار ساکت بود و از راهنما درباره‌ی کار باستان‌شناس‌ها سؤال می‌پرسید.",
+       "tr": "mehrdād ke hamīsche schūchī mīkard, īn bār sāket būd o az rāhnamā darbāre-ye kār-e bāstānschenāshā soʾāl mīporsīd.",
+       "de": "Mehrdad, der sonst immer Witze machte, war diesmal still und stellte dem Guide Fragen über die Arbeit der Archäologen."
+      },
+      {
+       "fa": "بچه‌هایی که صبح حوصله نداشتند، حالا با دقت به هر سکه و هر ستون نگاه می‌کردند.",
+       "tr": "batschtschehāyī ke sobh housele nadāschtand, hālā bā deghghat be har sekke o har sotūn negāh mīkardand.",
+       "de": "Die Kinder, die morgens keine Lust gehabt hatten, schauten nun aufmerksam jede Münze und jede Säule an."
+      },
+      {
+       "fa": "هنوز سؤال‌هایمان تمام نشده بود که نگهبان اعلام کرد موزه تا ده دقیقه‌ی دیگر بسته می‌شود.",
+       "tr": "hanūz soʾālhāyemān tamām naschode būd ke negahbān eʿlām kard mūze tā dah daghīghe-ye dīgar baste mīschawad.",
+       "de": "Unsere Fragen waren noch nicht zu Ende, als der Wächter verkündete, das Museum schließe in zehn Minuten."
+      },
+      {
+       "fa": "در راه برگشت، در دفترچه‌ام نوشتم: «امروز فهمیدم که تاریخ فقط یک کتاب درسی خسته‌کننده نیست.»",
+       "tr": "dar rāh-e bargascht, dar daftartscheam neweschtam: «emrūz fahmīdam ke tārīch faghat yek ketāb-e darsī-ye chastekonande nīst.»",
+       "de": "Auf der Rückfahrt schrieb ich in mein Heft: „Heute habe ich verstanden, dass Geschichte nicht nur ein langweiliges Schulbuch ist.“"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "کلاس با معلم تاریخ به موزه‌ی ملی رفت.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "راهنما قبلا هرگز در کاوش شرکت نکرده بود.",
+       "fest": true,
+       "erkl": "Er hatte <b>jahrelang</b> in Persepolis und Susa gegraben."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "سفال‌های سالن اول هفت هزار سال قدمت دارند.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "اصل استوانه‌ی کوروش همیشه در تهران است.",
+       "fest": true,
+       "erkl": "Das Original ist in <b>London</b>; es war nur für einige Monate in Teheran."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "مهرداد در موزه مثل همیشه شوخی می‌کرد.",
+       "fest": true,
+       "erkl": "Diesmal war er <b>still</b> und stellte Fragen."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Was sollten die Schüler mitbringen?",
+       "optionen": [
+        "Heft und Bleistift",
+        "eine Kamera",
+        "Geld für Souvenirs"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was erklärte der Guide vor der großen Inschrift?",
+       "optionen": [
+        "dass es Keilschrift ist, die im 19. Jahrhundert entziffert wurde",
+        "dass sie eine Fälschung ist",
+        "dass niemand sie lesen kann"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Warum mussten sie gehen?",
+       "optionen": [
+        "Das Museum schloss bald.",
+        "Der Bus war kaputt.",
+        "Es regnete."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was schrieb die Erzählerin am Ende ins Heft?",
+       "optionen": [
+        "Geschichte ist nicht nur ein langweiliges Schulbuch.",
+        "Museen sind langweilig.",
+        "Sie will Archäologin werden."
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "قبل از اینکه راه بیفتیم، خانم کریمی گفته بود که همه باید دفترچه و مداد همراهشان داشته باشند.",
+       "tr": "ghabl az īnke rāh biyoftīm, chānom-e karīmī gofte būd ke hame bāyad daftartsche o medād hamrāheschān dāschte bāschand.",
+       "de": "Bevor wir losfuhren, hatte Frau Karimi gesagt, dass alle Heft und Bleistift dabeihaben müssten."
+      },
+      {
+       "fa": "هوا ابری بود و در اتوبوس همه با هم حرف می‌زدند و می‌خندیدند، چون کسی انتظار یک روز هیجان‌انگیز را نداشت.",
+       "tr": "hawā abrī būd o dar otobūs hame bā ham harf mīzadand o mīchandīdand, tschon kasī entezār-e yek rūz-e hayadschānangīz rā nadāscht.",
+       "de": "Es war bewölkt, und im Bus redeten und lachten alle durcheinander, denn niemand erwartete einen spannenden Tag."
+      },
+      {
+       "fa": "تازه از اتوبوس پیاده شده بودیم که یک راهنمای جوان با لبخند به استقبال ما آمد.",
+       "tr": "tāze az otobūs piyāde schode būdīm ke yek rāhnamā-ye dschawān bā labchand be esteghbāl-e mā āmad.",
+       "de": "Wir waren gerade erst aus dem Bus gestiegen, als uns ein junger Guide lächelnd begrüßte."
+      },
+      {
+       "fa": "اسمش آقای نوروزی بود و گفت که خودش سال‌ها در تخت جمشید و شوش کاوش کرده بود.",
+       "tr": "esmasch āghā-ye nourūzī būd o goft ke chodasch sālhā dar tacht-e dschamschīd o schūsch kāwesch karde būd.",
+       "de": "Er hieß Herr Nowruzi und sagte, er habe selbst jahrelang in Persepolis und Susa Ausgrabungen gemacht."
+      },
+      {
+       "fa": "در سالن اول، ویترین‌ها پر از سفال‌های هفت‌هزارساله بود که روی آنها نقش حیوانات را کشیده بودند.",
+       "tr": "dar sālon-e awwal, wītrīnhā por az sofālhā-ye hafthezārsāle būd ke rū-ye ānhā naghsch-e heywānāt rā keschīde būdand.",
+       "de": "Im ersten Saal waren die Vitrinen voller siebentausend Jahre alter Keramik, auf die man Tiermotive gemalt hatte."
+      },
+      {
+       "fa": "خانم کریمی از ما خواسته بود که از هر سالن یک چیز را انتخاب کنیم و درباره‌اش چند جمله بنویسیم.",
+       "tr": "chānom-e karīmī az mā chāste būd ke az har sālon yek tschīz rā entechāb konīm o darbāreasch tschand dschomle benewīsīm.",
+       "de": "Frau Karimi hatte uns gebeten, aus jedem Saal einen Gegenstand auszuwählen und ein paar Sätze darüber zu schreiben."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t2",
+   "titel": "Hintergrund: Die Seidenstraße",
+   "vorschau": "Die Seidenstraße",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>شبکه</span> – Netz · <span class='fa'>جغرافی‌دان</span> – Geograf/in · <span class='fa'>چینی</span> – Porzellan · <span class='fa'>پشم</span> – Wolle · <span class='fa'>دارچین</span> – Zimt · <span class='fa'>بربط</span> – Barbat (Laute) · <span class='fa'>خویشاوند</span> – Verwandte/r · <span class='fa'>جهانی شدن</span> – Globalisierung</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Hintergrund: Die Seidenstraße",
+     "text": "Ohne Vokalzeichen! Tippe eine Zeile an, wenn du Hilfe brauchst.",
+     "zeilen": [
+      {
+       "fa": "بیش از دو هزار سال پیش، شبکه‌ای از راه‌های تجاری شکل گرفت که چین را به دریای مدیترانه وصل می‌کرد.",
+       "tr": "bīsch az do hezār sāl pīsch, schabakeī az rāhhā-ye tedschārī schekl gereft ke tschīn rā be daryā-ye medīterāne wasl mīkard.",
+       "de": "Vor mehr als zweitausend Jahren entstand ein Netz von Handelswegen, das China mit dem Mittelmeer verband."
+      },
+      {
+       "fa": "ما امروز این شبکه را «جاده‌ی ابریشم» می‌نامیم، هرچند در واقع یک جاده نبود، بلکه صدها راه کوچک و بزرگ بود.",
+       "tr": "mā emrūz īn schabake rā «dschādde-ye abrīscham» mīnāmīm, hartschand dar wāgheʿ yek dschādde nabūd, balke sadhā rāh-e kūtschak o bozorg būd.",
+       "de": "Wir nennen dieses Netz heute „Seidenstraße“, obwohl es eigentlich keine einzelne Straße war, sondern Hunderte kleiner und großer Wege."
+      },
+      {
+       "fa": "این نام را یک جغرافی‌دان آلمانی در قرن نوزدهم انتخاب کرده بود.",
+       "tr": "īn nām rā yek dschoghrāfīdān-e ālmānī dar gharn-e nūzdahom entechāb karde būd.",
+       "de": "Diesen Namen hatte ein deutscher Geograf im 19. Jahrhundert gewählt."
+      },
+      {
+       "fa": "ایران در وسط این راه‌ها قرار داشت و به همین دلیل بازرگانان ایرانی نقش مهمی در تجارت بازی می‌کردند.",
+       "tr": "īrān dar wasat-e īn rāhhā gharār dāscht o be hamīn dalīl bāzargānān-e īrānī naghsch-e mohemmī dar tedschārat bāzī mīkardand.",
+       "de": "Iran lag in der Mitte dieser Wege, und deshalb spielten iranische Händler eine wichtige Rolle im Handel."
+      },
+      {
+       "fa": "کاروان‌ها با صدها شتر از بیابان‌ها و کوه‌ها می‌گذشتند و گاهی یک سفر چند سال طول می‌کشید.",
+       "tr": "kārwānhā bā sadhā schotor az biyābānhā o kūhhā mīgozaschtand o gāhī yek safar tschand sāl tūl mīkeschīd.",
+       "de": "Die Karawanen zogen mit Hunderten von Kamelen durch Wüsten und Gebirge, und manchmal dauerte eine Reise mehrere Jahre."
+      },
+      {
+       "fa": "هر سی چهل کیلومتر، یعنی به اندازه‌ی یک روز راه، یک کاروانسرا ساخته بودند.",
+       "tr": "har sī tschehel kīlometr, yaʿnī be andāze-ye yek rūz rāh, yek kārwānsarā sāchte būdand.",
+       "de": "Alle dreißig, vierzig Kilometer – also nach einer Tagesreise – hatte man eine Karawanserei gebaut."
+      },
+      {
+       "fa": "در کاروانسرا، مسافران آب و غذا پیدا می‌کردند، حیوانات استراحت می‌کردند و بازرگانان خبرها را با هم عوض می‌کردند.",
+       "tr": "dar kārwānsarā, mosāferān āb o ghazā peydā mīkardand, heywānāt esterāhat mīkardand o bāzargānān chabarhā rā bā ham ʿawaz mīkardand.",
+       "de": "In der Karawanserei fanden Reisende Wasser und Essen, die Tiere ruhten sich aus, und die Händler tauschten Neuigkeiten aus."
+      },
+      {
+       "fa": "از شرق، ابریشم، چینی و کاغذ می‌آمد و از غرب، شیشه، طلا و پشم.",
+       "tr": "az schargh, abrīscham, tschīnī o kāghaz mīāmad o az gharb, schīsche, talā o pascham.",
+       "de": "Aus dem Osten kamen Seide, Porzellan und Papier, aus dem Westen Glas, Gold und Wolle."
+      },
+      {
+       "fa": "ایران هم فرش، زعفران، پسته و اسب‌های معروفش را به این بازار بزرگ می‌فرستاد.",
+       "tr": "īrān ham farsch, zaʿferān, peste o asbhā-ye maʿrūfasch rā be īn bāzār-e bozorg mīferestād.",
+       "de": "Iran schickte Teppiche, Safran, Pistazien und seine berühmten Pferde auf diesen großen Markt."
+      },
+      {
+       "fa": "ادویه‌هایی مثل فلفل و دارچین آن‌قدر گران بودند که گاهی ارزششان از طلا بیشتر بود.",
+       "tr": "adwiyehāyī mesl-e felfel o dārtschīn ānghadr gerān būdand ke gāhī arzeschschān az talā bīschtar būd.",
+       "de": "Gewürze wie Pfeffer und Zimt waren so teuer, dass ihr Wert manchmal den von Gold übertraf."
+      },
+      {
+       "fa": "اما مهم‌ترین چیزی که در این راه‌ها جابه‌جا می‌شد، کالا نبود، بلکه دانش و ایده بود.",
+       "tr": "ammā mohemtarīn tschīzī ke dar īn rāhhā dschābedschā mīschod, kālā nabūd, balke dānesch o īde būd.",
+       "de": "Doch das Wichtigste, was auf diesen Wegen transportiert wurde, waren nicht Waren, sondern Wissen und Ideen."
+      },
+      {
+       "fa": "مثلا صنعت کاغذسازی در قرن هشتم از چین به سمرقند رسید و چند قرن بعد از آنجا به اروپا رفت.",
+       "tr": "masalan sanʿat-e kāghazsāzī dar gharn-e haschtom az tschīn be samarghand resīd o tschand gharn baʿd az āndschā be orūpā raft.",
+       "de": "Zum Beispiel gelangte die Papierherstellung im 8. Jahrhundert von China nach Samarkand und einige Jahrhunderte später von dort nach Europa."
+      },
+      {
+       "fa": "سازها هم سفر می‌کردند: بربط ایرانی بعدها به عود عربی و لوت اروپایی تبدیل شد و در چین و ژاپن هم خویشاوندانی دارد.",
+       "tr": "sāzhā ham safar mīkardand: barbat-e īrānī baʿdhā be ʿūd-e ʿarabī o lūt-e orūpāyī tabdīl schod o dar tschīn o zhāpon ham chīschāwandānī dārad.",
+       "de": "Auch Instrumente reisten: Die persische Barbat wurde später zur arabischen Oud und zur europäischen Laute und hat Verwandte in China und Japan."
+      },
+      {
+       "fa": "وقتی کشتی‌ها در قرن پانزدهم و شانزدهم راه‌های دریایی تازه‌ای پیدا کردند، جاده‌ی ابریشم کم‌کم اهمیتش را از دست داد.",
+       "tr": "waghtī keschtīhā dar gharn-e pānzdahom o schānzdahom rāhhā-ye daryāyī-ye tāzeī peydā kardand, dschādde-ye abrīscham kamkam ahammiyatasch rā az dast dād.",
+       "de": "Als Schiffe im 15. und 16. Jahrhundert neue Seewege fanden, verlor die Seidenstraße allmählich ihre Bedeutung."
+      },
+      {
+       "fa": "بسیاری از کاروانسراها ویران شدند، اما بعضی از آنها امروز به هتل یا رستوران سنتی تبدیل شده‌اند.",
+       "tr": "besyārī az kārwānsarāhā wīrān schodand, ammā baʿzī az ānhā emrūz be hotel yā restorān-e sonnatī tabdīl schode-and.",
+       "de": "Viele Karawansereien verfielen, doch einige sind heute zu Hotels oder traditionellen Restaurants geworden."
+      },
+      {
+       "fa": "شاید جاده‌ی ابریشم اولین نمونه‌ی جهانی شدن باشد: دنیایی که در آن مردم، کالاها و ایده‌ها از مرزها می‌گذشتند.",
+       "tr": "schāyad dschādde-ye abrīscham awwalīn nemūne-ye dschahānī schodan bāschad: donyāyī ke dar ān mardom, kālāhā o īdehā az marzhā mīgozaschtand.",
+       "de": "Vielleicht ist die Seidenstraße das erste Beispiel der Globalisierung: eine Welt, in der Menschen, Waren und Ideen Grenzen überschritten."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "جاده‌ی ابریشم در واقع فقط یک جاده بود.",
+       "fest": true,
+       "erkl": "Es waren <b>Hunderte</b> kleiner und großer Wege."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "نام «جاده‌ی ابریشم» را یک جغرافی‌دان آلمانی انتخاب کرد.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "کاروانسراها به فاصله‌ی حدود یک روز راه از هم ساخته شده بودند.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "کاغذسازی از اروپا به چین رسید.",
+       "fest": true,
+       "erkl": "Umgekehrt: von <b>China</b> über Samarkand nach Europa."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "امروز همه‌ی کاروانسراها ویران هستند.",
+       "fest": true,
+       "erkl": "Einige sind heute <b>Hotels oder Restaurants</b>."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Was war laut Text das Wichtigste, das transportiert wurde?",
+       "optionen": [
+        "Wissen und Ideen",
+        "Gold",
+        "Seide"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was schickte Iran auf den Markt?",
+       "optionen": [
+        "Teppiche, Safran, Pistazien und Pferde",
+        "Porzellan und Papier",
+        "Glas und Wolle"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Warum verlor die Seidenstraße an Bedeutung?",
+       "optionen": [
+        "Man fand neue Seewege.",
+        "Es gab keine Kamele mehr.",
+        "Seide wurde verboten."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was wurde aus der persischen Barbat?",
+       "optionen": [
+        "Oud und Laute",
+        "die Gitarre",
+        "das Klavier"
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "ما امروز این شبکه را «جاده‌ی ابریشم» می‌نامیم، هرچند در واقع یک جاده نبود، بلکه صدها راه کوچک و بزرگ بود.",
+       "tr": "mā emrūz īn schabake rā «dschādde-ye abrīscham» mīnāmīm, hartschand dar wāgheʿ yek dschādde nabūd, balke sadhā rāh-e kūtschak o bozorg būd.",
+       "de": "Wir nennen dieses Netz heute „Seidenstraße“, obwohl es eigentlich keine einzelne Straße war, sondern Hunderte kleiner und großer Wege."
+      },
+      {
+       "fa": "این نام را یک جغرافی‌دان آلمانی در قرن نوزدهم انتخاب کرده بود.",
+       "tr": "īn nām rā yek dschoghrāfīdān-e ālmānī dar gharn-e nūzdahom entechāb karde būd.",
+       "de": "Diesen Namen hatte ein deutscher Geograf im 19. Jahrhundert gewählt."
+      },
+      {
+       "fa": "ایران در وسط این راه‌ها قرار داشت و به همین دلیل بازرگانان ایرانی نقش مهمی در تجارت بازی می‌کردند.",
+       "tr": "īrān dar wasat-e īn rāhhā gharār dāscht o be hamīn dalīl bāzargānān-e īrānī naghsch-e mohemmī dar tedschārat bāzī mīkardand.",
+       "de": "Iran lag in der Mitte dieser Wege, und deshalb spielten iranische Händler eine wichtige Rolle im Handel."
+      },
+      {
+       "fa": "کاروان‌ها با صدها شتر از بیابان‌ها و کوه‌ها می‌گذشتند و گاهی یک سفر چند سال طول می‌کشید.",
+       "tr": "kārwānhā bā sadhā schotor az biyābānhā o kūhhā mīgozaschtand o gāhī yek safar tschand sāl tūl mīkeschīd.",
+       "de": "Die Karawanen zogen mit Hunderten von Kamelen durch Wüsten und Gebirge, und manchmal dauerte eine Reise mehrere Jahre."
+      },
+      {
+       "fa": "هر سی چهل کیلومتر، یعنی به اندازه‌ی یک روز راه، یک کاروانسرا ساخته بودند.",
+       "tr": "har sī tschehel kīlometr, yaʿnī be andāze-ye yek rūz rāh, yek kārwānsarā sāchte būdand.",
+       "de": "Alle dreißig, vierzig Kilometer – also nach einer Tagesreise – hatte man eine Karawanserei gebaut."
+      },
+      {
+       "fa": "در کاروانسرا، مسافران آب و غذا پیدا می‌کردند، حیوانات استراحت می‌کردند و بازرگانان خبرها را با هم عوض می‌کردند.",
+       "tr": "dar kārwānsarā, mosāferān āb o ghazā peydā mīkardand, heywānāt esterāhat mīkardand o bāzargānān chabarhā rā bā ham ʿawaz mīkardand.",
+       "de": "In der Karawanserei fanden Reisende Wasser und Essen, die Tiere ruhten sich aus, und die Händler tauschten Neuigkeiten aus."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d1",
+   "titel": "Dialog: Am Eingang von Persepolis",
+   "vorschau": "Am Eingang von Persepolis",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Jonas ist mit einer Reisegruppe in Schiras und trifft vor Persepolis den Guide.</p>"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "یوناس: ببخشید، شما راهنمای گروه آلمانی هستید؟",
+       "tr": "bebachschīd, schomā rāhnamā-ye gorūh-e ālmānī hastīd?",
+       "de": "Entschuldigung, sind Sie der Guide der deutschen Gruppe?"
+      },
+      {
+       "fa": "راهنما: بله، خوش آمدید! قبل از اینکه وارد شویم، لطفا آب بخرید؛ اینجا آفتاب خیلی تند است.",
+       "tr": "bale, chosch āmadīd! ghabl az īnke wāred schawīm, lotfan āb bechrīd; īndschā āftāb cheylī tond ast.",
+       "de": "Ja, willkommen! Bevor wir hineingehen, kaufen Sie bitte Wasser; die Sonne ist hier sehr stark."
+      },
+      {
+       "fa": "یوناس: من در یک کتاب خوانده بودم که اسکندر اینجا را آتش زد. درست است؟",
+       "tr": "man dar yek ketāb chānde būdam ke eskandar īndschā rā ātesch zad. dorost ast?",
+       "de": "Ich hatte in einem Buch gelesen, dass Alexander diesen Ort in Brand gesteckt hat. Stimmt das?"
+      },
+      {
+       "fa": "راهنما: بله. ساختن این کاخ‌ها نزدیک به دویست سال طول کشیده بود، اما در یک شب سوختند.",
+       "tr": "bale. sāchtan-e īn kāchhā nazdīk be dowīst sāl tūl keschīde būd, ammā dar yek schab sūchtand.",
+       "de": "Ja. Der Bau dieser Paläste hatte fast zweihundert Jahre gedauert, aber sie brannten in einer Nacht nieder."
+      },
+      {
+       "fa": "یوناس: این نقش برجسته‌ها چه چیزی را نشان می‌دهند؟",
+       "tr": "īn naghsch-e bardschastehā tsche tschīzī rā neschān mīdahand?",
+       "de": "Was zeigen diese Reliefs?"
+      },
+      {
+       "fa": "راهنما: نمایندگان ملت‌های مختلف را که برای پادشاه هدیه می‌آوردند. ببینید، این یکی شتر آورده است!",
+       "tr": "namāyandegān-e mellathā-ye mochtalef rā ke barā-ye pādeschāh hediye mīāwardand. bebīnīd, īn yekī schotor āwarde ast!",
+       "de": "Gesandte verschiedener Völker, die dem König Geschenke brachten. Sehen Sie, dieser hier hat ein Kamel mitgebracht!"
+      },
+      {
+       "fa": "یوناس: باورم نمی‌شود! وقتی بچه بودم، اینجا را فقط در کتاب‌ها می‌دیدم.",
+       "tr": "bāwaram nemīschawad! waghtī batschtsche būdam, īndschā rā faghat dar ketābhā mīdīdam.",
+       "de": "Unglaublich! Als ich ein Kind war, habe ich diesen Ort nur in Büchern gesehen."
+      },
+      {
+       "fa": "راهنما: پس خوشحالم که بالاخره آمدید. بعد از اینکه اینجا را دیدیم، به پاسارگاد می‌رویم.",
+       "tr": "pas choschhālam ke bālāchare āmadīd. baʿd az īnke īndschā rā dīdīm, be pāsārgād mīrawīm.",
+       "de": "Dann freue ich mich, dass Sie endlich gekommen sind. Nachdem wir das hier gesehen haben, fahren wir nach Pasargadae."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "یوناس: ببخشید، شما راهنمای گروه آلمانی هستید؟",
+       "tr": "bebachschīd, schomā rāhnamā-ye gorūh-e ālmānī hastīd?",
+       "de": "Entschuldigung, sind Sie der Guide der deutschen Gruppe?"
+      },
+      {
+       "fa": "راهنما: بله، خوش آمدید! قبل از اینکه وارد شویم، لطفا آب بخرید؛ اینجا آفتاب خیلی تند است.",
+       "tr": "bale, chosch āmadīd! ghabl az īnke wāred schawīm, lotfan āb bechrīd; īndschā āftāb cheylī tond ast.",
+       "de": "Ja, willkommen! Bevor wir hineingehen, kaufen Sie bitte Wasser; die Sonne ist hier sehr stark."
+      },
+      {
+       "fa": "یوناس: من در یک کتاب خوانده بودم که اسکندر اینجا را آتش زد. درست است؟",
+       "tr": "man dar yek ketāb chānde būdam ke eskandar īndschā rā ātesch zad. dorost ast?",
+       "de": "Ich hatte in einem Buch gelesen, dass Alexander diesen Ort in Brand gesteckt hat. Stimmt das?"
+      },
+      {
+       "fa": "راهنما: بله. ساختن این کاخ‌ها نزدیک به دویست سال طول کشیده بود، اما در یک شب سوختند.",
+       "tr": "bale. sāchtan-e īn kāchhā nazdīk be dowīst sāl tūl keschīde būd, ammā dar yek schab sūchtand.",
+       "de": "Ja. Der Bau dieser Paläste hatte fast zweihundert Jahre gedauert, aber sie brannten in einer Nacht nieder."
+      },
+      {
+       "fa": "یوناس: این نقش برجسته‌ها چه چیزی را نشان می‌دهند؟",
+       "tr": "īn naghsch-e bardschastehā tsche tschīzī rā neschān mīdahand?",
+       "de": "Was zeigen diese Reliefs?"
+      },
+      {
+       "fa": "راهنما: نمایندگان ملت‌های مختلف را که برای پادشاه هدیه می‌آوردند. ببینید، این یکی شتر آورده است!",
+       "tr": "namāyandegān-e mellathā-ye mochtalef rā ke barā-ye pādeschāh hediye mīāwardand. bebīnīd, īn yekī schotor āwarde ast!",
+       "de": "Gesandte verschiedener Völker, die dem König Geschenke brachten. Sehen Sie, dieser hier hat ein Kamel mitgebracht!"
+      },
+      {
+       "fa": "یوناس: باورم نمی‌شود! وقتی بچه بودم، اینجا را فقط در کتاب‌ها می‌دیدم.",
+       "tr": "bāwaram nemīschawad! waghtī batschtsche būdam, īndschā rā faghat dar ketābhā mīdīdam.",
+       "de": "Unglaublich! Als ich ein Kind war, habe ich diesen Ort nur in Büchern gesehen."
+      },
+      {
+       "fa": "راهنما: پس خوشحالم که بالاخره آمدید. بعد از اینکه اینجا را دیدیم، به پاسارگاد می‌رویم.",
+       "tr": "pas choschhālam ke bālāchare āmadīd. baʿd az īnke īndschā rā dīdīm, be pāsārgād mīrawīm.",
+       "de": "Dann freue ich mich, dass Sie endlich gekommen sind. Nachdem wir das hier gesehen haben, fahren wir nach Pasargadae."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Was soll Jonas vor dem Eintritt kaufen?",
+       "optionen": [
+        "Wasser",
+        "einen Hut",
+        "ein Buch"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was hatte Jonas in einem Buch gelesen?",
+       "optionen": [
+        "dass Alexander Persepolis in Brand steckte",
+        "dass Persepolis neu gebaut wurde",
+        "dass Kyros dort geboren wurde"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wohin geht es danach?",
+       "optionen": [
+        "nach Pasargadae",
+        "nach Teheran",
+        "zum Basar"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

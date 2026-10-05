@@ -1,0 +1,487 @@
+{
+ "id": "z1",
+ "titel": "Trainingspaket 1",
+ "beschreibung": "Wer passt zu wem?, Wort-Marathon, Lückensätze, Sätze aus den Texten.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "Wer passt zu wem?",
+   "vorschau": "🧩",
+   "karten": [
+    {
+     "typ": "zuordnen",
+     "titel": "Welcher Ort passt?",
+     "text": "Fünf Reisende planen einen Ausflug zu historischen Orten in Iran. Es gibt sieben Ziele.",
+     "frage": "Welches Angebot passt am besten? Tippe es an.",
+     "angebote": [
+      {
+       "titel": "Persepolis",
+       "emoji": "🏛️",
+       "fa": "تخت جمشید: پایتخت تشریفاتی هخامنشیان با ستون‌ها و نقش برجسته‌های معروف.",
+       "de": "Persepolis: zeremonielle Hauptstadt der Achämeniden mit berühmten Säulen und Reliefs."
+      },
+      {
+       "titel": "Pasargadae",
+       "emoji": "🪨",
+       "fa": "پاسارگاد: اولین پایتخت هخامنشی و آرامگاه ساده‌ی کوروش بزرگ.",
+       "de": "Pasargadae: erste Hauptstadt der Achämeniden und das schlichte Grabmal Kyros’ des Großen."
+      },
+      {
+       "titel": "Zitadelle von Bam",
+       "emoji": "🧱",
+       "fa": "ارگ بم: بزرگ‌ترین بنای خشتی جهان که بعد از زلزله دوباره ساخته می‌شود.",
+       "de": "Zitadelle von Bam: größter Lehmziegelbau der Welt, nach dem Erdbeben im Wiederaufbau."
+      },
+      {
+       "titel": "Golestan-Palast",
+       "emoji": "👑",
+       "fa": "کاخ گلستان: کاخ قاجاری در تهران با آینه‌کاری و کاشی‌های رنگارنگ.",
+       "de": "Golestan-Palast: Kadscharen-Palast in Teheran mit Spiegelmosaiken und bunten Fliesen."
+      },
+      {
+       "titel": "Wasserbauten von Schuschtar",
+       "emoji": "💧",
+       "fa": "سازه‌های آبی شوشتر: آسیاب‌ها و آبشارهای باستانی، شاهکار مهندسی آب.",
+       "de": "Wasserbauten von Schuschtar: antike Mühlen und Wasserfälle, ein Meisterwerk der Wassertechnik."
+      },
+      {
+       "titel": "Basar von Täbris",
+       "emoji": "🛍️",
+       "fa": "بازار تبریز: یکی از بزرگ‌ترین بازارهای سرپوشیده‌ی جهان و ایستگاه مهم جاده‌ی ابریشم.",
+       "de": "Basar von Täbris: einer der größten überdachten Basare der Welt und wichtige Station der Seidenstraße."
+      },
+      {
+       "titel": "Teppichmuseum",
+       "emoji": "🧶",
+       "fa": "موزه‌ی فرش تهران: صدها فرش دستباف از همه‌ی مناطق ایران.",
+       "de": "Teppichmuseum Teheran: Hunderte handgeknüpfte Teppiche aus allen Regionen Irans."
+      }
+     ],
+     "personen": [
+      {
+       "name": "Lea",
+       "emoji": "📸",
+       "fa": "لئا عاشق ستون‌ها و نقش برجسته‌های باستانی است و می‌خواهد دروازه‌ی ملل را ببیند.",
+       "de": "Lea liebt antike Säulen und Reliefs und möchte das Tor aller Länder sehen.",
+       "richtig": 0
+      },
+      {
+       "name": "Herr Bauer",
+       "emoji": "👷",
+       "fa": "آقای باوئر مهندس آب است و می‌خواهد ببیند ایرانیان قدیم چطور از رودخانه استفاده می‌کردند.",
+       "de": "Herr Bauer ist Wasserbauingenieur und will sehen, wie die alten Iraner den Fluss nutzten.",
+       "richtig": 4
+      },
+      {
+       "name": "Mina",
+       "emoji": "🎨",
+       "fa": "مینا طراح است و از نقش و رنگ فرش‌های عشایری الهام می‌گیرد.",
+       "de": "Mina ist Designerin und lässt sich von Mustern und Farben nomadischer Teppiche inspirieren.",
+       "richtig": 6
+      },
+      {
+       "name": "Tom",
+       "emoji": "📐",
+       "fa": "تام معمار است و به ساختمان‌های گلی و خشتی علاقه دارد.",
+       "de": "Tom ist Architekt und interessiert sich für Lehm- und Lehmziegelbauten.",
+       "richtig": 2
+      },
+      {
+       "name": "Familie Weber",
+       "emoji": "🛒",
+       "fa": "خانواده‌ی وبر می‌خواهد در یک بازار تاریخی قدم بزند و ادویه و خشکبار بخرد.",
+       "de": "Familie Weber möchte durch einen historischen Basar bummeln und Gewürze und Trockenfrüchte kaufen.",
+       "richtig": 5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Wort-Marathon",
+   "vorschau": "⏱️",
+   "karten": [
+    {
+     "typ": "tempo",
+     "titel": "Marathon: alle Wörter",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 120,
+     "ziel": 25,
+     "woerter": [
+      {
+       "fa": "موزه",
+       "a": "Museum"
+      },
+      {
+       "fa": "راهنما",
+       "a": "Führer/in (Guide)"
+      },
+      {
+       "fa": "بازدیدکننده",
+       "a": "Besucher/in"
+      },
+      {
+       "fa": "ویترین",
+       "a": "Vitrine"
+      },
+      {
+       "fa": "سفال",
+       "a": "Keramik, Tongefäß"
+      },
+      {
+       "fa": "کتیبه",
+       "a": "Inschrift"
+      },
+      {
+       "fa": "خط میخی",
+       "a": "Keilschrift"
+      },
+      {
+       "fa": "استوانه‌ی کوروش",
+       "a": "Kyros-Zylinder"
+      },
+      {
+       "fa": "سکه",
+       "a": "Münze"
+      },
+      {
+       "fa": "باستان‌شناس",
+       "a": "Archäologe/Archäologin"
+      },
+      {
+       "fa": "کاوش",
+       "a": "Ausgrabung"
+      },
+      {
+       "fa": "نقش برجسته",
+       "a": "Relief"
+      },
+      {
+       "fa": "تاریخ",
+       "a": "Geschichte"
+      },
+      {
+       "fa": "باستان",
+       "a": "Antike, Altertum"
+      },
+      {
+       "fa": "دوره",
+       "a": "Epoche, Zeitalter"
+      },
+      {
+       "fa": "پادشاه",
+       "a": "König"
+      },
+      {
+       "fa": "امپراتوری",
+       "a": "Imperium, Reich"
+      },
+      {
+       "fa": "پایتخت",
+       "a": "Hauptstadt"
+      },
+      {
+       "fa": "ویرانه",
+       "a": "Ruine"
+      },
+      {
+       "fa": "کاخ",
+       "a": "Palast"
+      },
+      {
+       "fa": "ستون",
+       "a": "Säule"
+      },
+      {
+       "fa": "قرن",
+       "a": "Jahrhundert"
+      },
+      {
+       "fa": "هخامنشی",
+       "a": "achämenidisch"
+      },
+      {
+       "fa": "میراث",
+       "a": "Erbe (kulturell)"
+      },
+      {
+       "fa": "جاده‌ی ابریشم",
+       "a": "Seidenstraße"
+      },
+      {
+       "fa": "کاروان",
+       "a": "Karawane"
+      },
+      {
+       "fa": "کاروانسرا",
+       "a": "Karawanserei"
+      },
+      {
+       "fa": "ادویه",
+       "a": "Gewürz"
+      },
+      {
+       "fa": "ابریشم",
+       "a": "Seide"
+      },
+      {
+       "fa": "بازرگان",
+       "a": "Händler/in, Kaufmann"
+      },
+      {
+       "fa": "کالا",
+       "a": "Ware"
+      },
+      {
+       "fa": "کاغذ",
+       "a": "Papier"
+      },
+      {
+       "fa": "ساز",
+       "a": "Musikinstrument"
+      },
+      {
+       "fa": "مبادله",
+       "a": "Austausch"
+      },
+      {
+       "fa": "راه تجاری",
+       "a": "Handelsweg"
+      },
+      {
+       "fa": "بیابان",
+       "a": "Wüste"
+      },
+      {
+       "fa": "کشف کردن",
+       "a": "entdecken"
+      },
+      {
+       "fa": "بنا کردن",
+       "a": "errichten, erbauen"
+      },
+      {
+       "fa": "حکومت کردن",
+       "a": "herrschen, regieren"
+      },
+      {
+       "fa": "تجارت کردن",
+       "a": "Handel treiben"
+      },
+      {
+       "fa": "منتقل کردن",
+       "a": "übertragen, weitergeben"
+      },
+      {
+       "fa": "ویران شدن",
+       "a": "zerstört werden, verfallen"
+      }
+     ]
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "ویرانه",
+       "tr": "wīrāne",
+       "de": "Ruine",
+       "emoji": "🏚️"
+      },
+      {
+       "fa": "راهنما",
+       "tr": "rāhnamā",
+       "de": "Führer/in (Guide)",
+       "emoji": "🧑‍🏫"
+      },
+      {
+       "fa": "نقش برجسته",
+       "tr": "naghsch-e bardschaste",
+       "de": "Relief",
+       "emoji": "🗿"
+      },
+      {
+       "fa": "بیابان",
+       "tr": "biyābān",
+       "de": "Wüste",
+       "emoji": "🏜️"
+      },
+      {
+       "fa": "کاروان",
+       "tr": "kārwān",
+       "de": "Karawane",
+       "emoji": "🐫"
+      },
+      {
+       "fa": "بازرگان",
+       "tr": "bāzargān",
+       "de": "Händler/in, Kaufmann",
+       "emoji": "🧔"
+      }
+     ],
+     "titel": "Memory"
+    },
+    {
+     "typ": "memory",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "بازدیدکننده",
+       "tr": "bāzdīdkonande",
+       "de": "Besucher/in",
+       "emoji": "🚶"
+      },
+      {
+       "fa": "نقش برجسته",
+       "tr": "naghsch-e bardschaste",
+       "de": "Relief",
+       "emoji": "🗿"
+      },
+      {
+       "fa": "کاخ",
+       "tr": "kāch",
+       "de": "Palast",
+       "emoji": "🏰"
+      },
+      {
+       "fa": "جاده‌ی ابریشم",
+       "tr": "dschādde-ye abrīscham",
+       "de": "Seidenstraße",
+       "emoji": "🛤️"
+      },
+      {
+       "fa": "کاغذ",
+       "tr": "kāghaz",
+       "de": "Papier",
+       "emoji": "📄"
+      },
+      {
+       "fa": "ویترین",
+       "tr": "wītrīn",
+       "de": "Vitrine",
+       "emoji": "🗄️"
+      }
+     ],
+     "titel": "Memory: Wort & Bedeutung"
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "titel": "Lückensätze",
+   "vorschau": "___",
+   "karten": [
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>روی این ___ با خط میخی به سه زبان نوشته‌اند.</span><br><span class='mini'>Auf diese Inschrift hat man in Keilschrift in drei Sprachen geschrieben.</span>",
+       "optionen": [
+        "کتیبه",
+        "باستان",
+        "استوانه‌ی کوروش"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>روی این کتیبه با خط میخی به سه زبان نوشته‌اند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>___ را در قرن نوزدهم در بابل پیدا کردند.</span><br><span class='mini'>Den Kyros-Zylinder hat man im 19. Jahrhundert in Babylon gefunden.</span>",
+       "optionen": [
+        "استوانه‌ی کوروش",
+        "کاغذ",
+        "هخامنشی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>استوانه‌ی کوروش را در قرن نوزدهم در بابل پیدا کردند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>تخت جمشید ___ تشریفاتی هخامنشیان بود.</span><br><span class='mini'>Persepolis war die zeremonielle Hauptstadt der Achämeniden.</span>",
+       "optionen": [
+        "پایتخت",
+        "کتیبه",
+        "ساز"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>تخت جمشید پایتخت تشریفاتی هخامنشیان بود.</span>"
+      },
+      {
+       "frage": "<span class='fa'>بازرگانان شب‌ها در ___ استراحت می‌کردند.</span><br><span class='mini'>Die Händler ruhten sich nachts in der Karawanserei aus.</span>",
+       "optionen": [
+        "کاروانسرا",
+        "باستان",
+        "ویترین"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>بازرگانان شب‌ها در کاروانسرا استراحت می‌کردند.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>چین قرن‌ها راز ساختن ___ را پنهان نگه داشت.</span><br><span class='mini'>China hielt das Geheimnis der Seidenherstellung jahrhundertelang verborgen.</span>",
+       "optionen": [
+        "ابریشم",
+        "میراث",
+        "هخامنشی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>چین قرن‌ها راز ساختن ابریشم را پنهان نگه داشت.</span>"
+      },
+      {
+       "frage": "<span class='fa'>صنعت ___ از چین به سمرقند و بعد به اروپا رسید.</span><br><span class='mini'>Die Papierherstellung gelangte von China nach Samarkand und dann nach Europa.</span>",
+       "optionen": [
+        "کاغذ",
+        "پایتخت",
+        "ادویه"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>صنعت کاغذ از چین به سمرقند و بعد به اروپا رسید.</span>"
+      },
+      {
+       "frage": "<span class='fa'>یک ___ جوان گروه ما را در موزه همراهی کرد و همه چیز را توضیح داد.</span><br><span class='mini'>Ein junger Guide begleitete unsere Gruppe im Museum und erklärte alles.</span>",
+       "optionen": [
+        "راهنما",
+        "راه تجاری",
+        "کاخ"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>یک راهنما جوان گروه ما را در موزه همراهی کرد و همه چیز را توضیح داد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>بعد از زلزله، بخش بزرگی از ارگ بم به یک ___ تبدیل شد.</span><br><span class='mini'>Nach dem Erdbeben wurde ein großer Teil der Zitadelle von Bam zur Ruine.</span>",
+       "optionen": [
+        "ویرانه",
+        "راه تجاری",
+        "راهنما"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>بعد از زلزله، بخش بزرگی از ارگ بم به یک ویرانه تبدیل شد.</span>"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

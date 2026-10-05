@@ -1,0 +1,184 @@
+{
+ "id": "ug",
+ "art": "umgangssprache",
+ "titel": "Umgangssprache: So spricht man im Alltag",
+ "beschreibung": "Freiwilliger Extra-Teil: Umgangssprache.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "So spricht man",
+   "vorschau": "گفت میاد",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Schrift ≠ Gespräch",
+     "text": "<ul><li>In der indirekten Rede fällt <span class='fa'>که</span> meist weg: <span class='fa'>گفت که می‌آید → گفت میاد</span></li><li><span class='fa'>چه → چی</span>: <span class='fa'>چی گفت؟</span></li><li><span class='fa'>می‌گوید → می‌گه</span> · <span class='fa'>است → ـه</span>: <span class='fa'>آنلاین است → آنلاینه</span></li><li>Sprachnachricht heißt im Alltag fast immer <span class='fa'>ویس</span> (von engl. voice)</li></ul>",
+     "stil": "merke"
+    },
+    {
+     "typ": "paare",
+     "links": "x",
+     "paare": [
+      {
+       "fa": "گفت که می‌آید",
+       "tr": "",
+       "de": "er/sie sagte, er/sie kommt",
+       "x": "گفت میاد"
+      },
+      {
+       "fa": "چه گفت؟",
+       "tr": "",
+       "de": "was hat er/sie gesagt?",
+       "x": "چی گفت؟"
+      },
+      {
+       "fa": "می‌گوید",
+       "tr": "",
+       "de": "er/sie sagt",
+       "x": "می‌گه"
+      },
+      {
+       "fa": "پیام صوتی",
+       "tr": "",
+       "de": "Sprachnachricht",
+       "x": "ویس"
+      },
+      {
+       "fa": "آنلاین است",
+       "tr": "",
+       "de": "er/sie ist online",
+       "x": "آنلاینه"
+      }
+     ],
+     "titel": "Schrift ↔ Gespräch"
+    },
+    {
+     "typ": "sortieren",
+     "titel": "Schrift oder Gespräch?",
+     "frage": "Schriftsprache oder Umgangssprache?",
+     "kategorien": [
+      "✍️ Schriftsprache",
+      "🗣️ Umgangssprache"
+     ],
+     "items": [
+      {
+       "fa": "گفت که می‌آید",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "چه گفت؟",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "می‌گوید",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "پیام صوتی",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "آنلاین است",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "گفت میاد",
+       "k": 1,
+       "say": false,
+       "e": "<i>goft miyād</i> – geschrieben: <span class='fa'>گفت که می‌آید</span>"
+      },
+      {
+       "fa": "چی گفت؟",
+       "k": 1,
+       "say": false,
+       "e": "<i>tschī goft?</i> – geschrieben: <span class='fa'>چه گفت؟</span>"
+      },
+      {
+       "fa": "می‌گه",
+       "k": 1,
+       "say": false,
+       "e": "<i>mīge</i> – geschrieben: <span class='fa'>می‌گوید</span>"
+      },
+      {
+       "fa": "ویس",
+       "k": 1,
+       "say": false,
+       "e": "<i>weys</i> – geschrieben: <span class='fa'>پیام صوتی</span>"
+      },
+      {
+       "fa": "آنلاینه",
+       "k": 1,
+       "say": false,
+       "e": "<i>ānlāyne</i> – geschrieben: <span class='fa'>آنلاین است</span>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Kurz-Dialog",
+   "vorschau": "💬",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Mamas Sprachnachricht",
+     "text": "Umgangssprache! Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "ویس مامانو گوش دادی؟",
+       "tr": "weys-e māmāno gūsch dādī?",
+       "de": "Hast du Mamas Sprachnachricht gehört?"
+      },
+      {
+       "fa": "نه، چی گفت؟",
+       "tr": "na, tschī goft?",
+       "de": "Nein, was hat sie gesagt?"
+      },
+      {
+       "fa": "گفت امشب دیر میاد، شامو خودمون درست کنیم.",
+       "tr": "goft emschab dīr miyād, schāmo chodemūn dorost konīm.",
+       "de": "Sie sagte, sie kommt heute spät, wir sollen selbst Abendessen machen."
+      },
+      {
+       "fa": "ای بابا! پس پیتزا سفارش بدیم؟",
+       "tr": "ey bābā! pas pītzā sefāresch bedīm?",
+       "de": "Ach Mann! Bestellen wir dann Pizza?"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Verstanden?",
+     "fragen": [
+      {
+       "frage": "Was hat Mama gesagt?",
+       "optionen": [
+        "Sie kommt spät; sie sollen selbst kochen.",
+        "Sie bringt Pizza mit.",
+        "Sie hat schon gekocht."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "<span class='fa'>ویس</span> =",
+       "optionen": [
+        "پیام صوتی",
+        "پیام خصوصی",
+        "استیکر"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

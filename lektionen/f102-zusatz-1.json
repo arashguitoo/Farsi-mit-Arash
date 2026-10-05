@@ -1,0 +1,671 @@
+{
+ "id": "z1",
+ "titel": "Trainingspaket 1",
+ "beschreibung": "Wer passt zu wem?, Wort-Marathon, Lückensätze, Sätze aus den Texten.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "Wer passt zu wem?",
+   "vorschau": "🧩",
+   "karten": [
+    {
+     "typ": "zuordnen",
+     "titel": "Wer zieht wo ein?",
+     "text": "Fünf Personen suchen in Isfahan ein Zuhause. Sieben Angebote aus dem Maklerbüro.",
+     "frage": "Welches Angebot passt am besten? Tippe es an.",
+     "angebote": [
+      {
+       "titel": "Hofhaus",
+       "emoji": "🏡",
+       "fa": "خانه‌ی قدیمی حیاط‌دار با حوض، نیاز به تعمیر دارد. ارزان.",
+       "de": "Altes Hofhaus mit Becken, renovierungsbedürftig. Günstig."
+      },
+      {
+       "titel": "Neubau-Turm",
+       "emoji": "🏙️",
+       "fa": "واحد نوساز در برج بیست طبقه، استخر و باشگاه ورزشی.",
+       "de": "Neubauwohnung in einem 20-stöckigen Turm, mit Pool und Fitnessraum."
+      },
+      {
+       "titel": "Erdgeschoss mit Garten",
+       "emoji": "🌷",
+       "fa": "آپارتمان همکف با باغچه‌ی کوچک، بدون پله.",
+       "de": "Erdgeschosswohnung mit kleinem Garten, ohne Stufen."
+      },
+      {
+       "titel": "Studio Zentrum",
+       "emoji": "🏢",
+       "fa": "سوئیت سی متری در مرکز شهر، نزدیک مترو.",
+       "de": "30-m²-Studio im Zentrum, nahe der Metro."
+      },
+      {
+       "titel": "Bumgardi-Zimmer",
+       "emoji": "🛏️",
+       "fa": "اتاق در یک بوم‌گردی برای اقامت چند ماهه، با صبحانه.",
+       "de": "Zimmer in einem Gästehaus für ein paar Monate, mit Frühstück."
+      },
+      {
+       "titel": "Große Familienwohnung",
+       "emoji": "👨‍👩‍👧‍👦",
+       "fa": "آپارتمان چهارخوابه، نزدیک مدرسه و پارک.",
+       "de": "Vierzimmerwohnung nahe Schule und Park."
+      },
+      {
+       "titel": "Dachwohnung",
+       "emoji": "🌇",
+       "fa": "طبقه‌ی آخر با پشت‌بام اختصاصی و منظره‌ی زاینده‌رود.",
+       "de": "Oberste Etage mit eigenem Dach und Blick auf den Zayandeh Rud."
+      }
+     ],
+     "personen": [
+      {
+       "name": "Herr Tehrani",
+       "emoji": "🔨",
+       "fa": "آقای تهرانی معمار است، عاشق خانه‌های سنتی است و دوست دارد خودش تعمیر کند.",
+       "de": "Herr Tehrani ist Architekt, liebt traditionelle Häuser und renoviert gern selbst.",
+       "richtig": 0
+      },
+      {
+       "name": "Familie Sadeghi",
+       "emoji": "🧒",
+       "fa": "خانواده‌ی صادقی چهار بچه دارند و بچه‌ها مدرسه می‌روند.",
+       "de": "Familie Sadeghi hat vier Kinder im Schulalter.",
+       "richtig": 5
+      },
+      {
+       "name": "Oma Parvin",
+       "emoji": "👵",
+       "fa": "پروین خانم هشتاد ساله است و گل و گیاه را خیلی دوست دارد.",
+       "de": "Parvin Khanom ist 80 und liebt Blumen und Pflanzen.",
+       "richtig": 2
+      },
+      {
+       "name": "Lea",
+       "emoji": "🎓",
+       "fa": "لئا برای یک ترم به اصفهان آمده و نمی‌خواهد آشپزی کند.",
+       "de": "Lea ist für ein Semester in Isfahan und möchte nicht kochen.",
+       "richtig": 4
+      },
+      {
+       "name": "Kian",
+       "emoji": "🚇",
+       "fa": "کیان تنها زندگی می‌کند، ماشین ندارد و هر روز به مرکز شهر می‌رود.",
+       "de": "Kian wohnt allein, hat kein Auto und fährt täglich ins Zentrum.",
+       "richtig": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Wort-Marathon",
+   "vorschau": "⏱️",
+   "karten": [
+    {
+     "typ": "tempo",
+     "titel": "Marathon: alle Wörter",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 120,
+     "ziel": 25,
+     "woerter": [
+      {
+       "fa": "حیاط",
+       "a": "Innenhof"
+      },
+      {
+       "fa": "حوض",
+       "a": "Wasserbecken"
+      },
+      {
+       "fa": "ایوان",
+       "a": "Veranda, Iwan"
+      },
+      {
+       "fa": "زیرزمین",
+       "a": "Keller"
+      },
+      {
+       "fa": "پشت‌بام",
+       "a": "Flachdach"
+      },
+      {
+       "fa": "بادگیر",
+       "a": "Windturm"
+      },
+      {
+       "fa": "آجر",
+       "a": "Ziegel"
+      },
+      {
+       "fa": "کاشی",
+       "a": "Fliese, Kachel"
+      },
+      {
+       "fa": "پنجره‌ی رنگی",
+       "a": "Buntglasfenster"
+      },
+      {
+       "fa": "درخت انار",
+       "a": "Granatapfelbaum"
+      },
+      {
+       "fa": "محله",
+       "a": "Viertel"
+      },
+      {
+       "fa": "برج",
+       "a": "Hochhaus, Turm"
+      },
+      {
+       "fa": "مجتمع",
+       "a": "Wohnanlage"
+      },
+      {
+       "fa": "واحد",
+       "a": "Wohneinheit"
+      },
+      {
+       "fa": "متراژ",
+       "a": "Wohnfläche"
+      },
+      {
+       "fa": "نگهبان",
+       "a": "Pförtner/in"
+      },
+      {
+       "fa": "پارکینگ",
+       "a": "Stellplatz"
+      },
+      {
+       "fa": "انباری",
+       "a": "Abstellraum"
+      },
+      {
+       "fa": "آشپزخانه‌ی اوپن",
+       "a": "offene Küche"
+      },
+      {
+       "fa": "نما",
+       "a": "Fassade"
+      },
+      {
+       "fa": "نوساز",
+       "a": "neu gebaut"
+      },
+      {
+       "fa": "کلنگی",
+       "a": "abrissreif"
+      },
+      {
+       "fa": "بنگاه",
+       "a": "Maklerbüro"
+      },
+      {
+       "fa": "مشاور املاک",
+       "a": "Immobilienmakler/in"
+      },
+      {
+       "fa": "کارتن",
+       "a": "Karton"
+      },
+      {
+       "fa": "اثاثیه",
+       "a": "Hausrat, Möbel"
+      },
+      {
+       "fa": "باربری",
+       "a": "Umzugsfirma"
+      },
+      {
+       "fa": "قولنامه",
+       "a": "Vorvertrag"
+      },
+      {
+       "fa": "اجاره‌نامه",
+       "a": "Mietvertrag"
+      },
+      {
+       "fa": "همسایه‌ی دیوار به دیوار",
+       "a": "direkter Nachbar"
+      },
+      {
+       "fa": "دلباز",
+       "a": "geräumig, luftig"
+      },
+      {
+       "fa": "نورگیر",
+       "a": "hell, lichtdurchflutet"
+      },
+      {
+       "fa": "اسباب‌کشی کردن",
+       "a": "umziehen"
+      },
+      {
+       "fa": "ساختن",
+       "a": "bauen"
+      },
+      {
+       "fa": "خراب کردن",
+       "a": "abreißen, kaputt machen"
+      },
+      {
+       "fa": "بسته‌بندی کردن",
+       "a": "verpacken"
+      },
+      {
+       "fa": "جا افتادن",
+       "a": "sich einleben"
+      },
+      {
+       "fa": "تعمیر کردن",
+       "a": "renovieren, reparieren"
+      }
+     ]
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "برج",
+       "tr": "bordsch",
+       "de": "Hochhaus, Turm",
+       "emoji": "🏙️"
+      },
+      {
+       "fa": "بنگاه",
+       "tr": "bongāh",
+       "de": "Maklerbüro",
+       "emoji": "🏪"
+      },
+      {
+       "fa": "مشاور املاک",
+       "tr": "moschāwer-e amlāk",
+       "de": "Immobilienmakler/in",
+       "emoji": "🧑‍💼"
+      },
+      {
+       "fa": "زیرزمین",
+       "tr": "zīrzamīn",
+       "de": "Keller",
+       "emoji": "⬇️"
+      },
+      {
+       "fa": "نوساز",
+       "tr": "nousāz",
+       "de": "neu gebaut",
+       "emoji": "✨"
+      },
+      {
+       "fa": "پنجره‌ی رنگی",
+       "tr": "pandschere-ye rangī",
+       "de": "Buntglasfenster",
+       "emoji": "🪟"
+      }
+     ],
+     "titel": "Memory"
+    },
+    {
+     "typ": "memory",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "حیاط",
+       "tr": "hayāt",
+       "de": "Innenhof",
+       "emoji": "🌳"
+      },
+      {
+       "fa": "بادگیر",
+       "tr": "bādgīr",
+       "de": "Windturm",
+       "emoji": "🌬️"
+      },
+      {
+       "fa": "نگهبان",
+       "tr": "negahbān",
+       "de": "Pförtner/in",
+       "emoji": "💂"
+      },
+      {
+       "fa": "مجتمع",
+       "tr": "modschtamaʿ",
+       "de": "Wohnanlage",
+       "emoji": "🏢"
+      },
+      {
+       "fa": "آجر",
+       "tr": "ādschor",
+       "de": "Ziegel",
+       "emoji": "🧱"
+      },
+      {
+       "fa": "حوض",
+       "tr": "houz",
+       "de": "Wasserbecken",
+       "emoji": "⛲"
+      }
+     ],
+     "titel": "Memory: Wort & Bedeutung"
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "titel": "Lückensätze",
+   "vorschau": "___",
+   "karten": [
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>در وسط ___ یک حوض آبی و دو درخت انار بود.</span><br><span class='mini'>Mitten im Hof waren ein blaues Becken und zwei Granatapfelbäume.</span>",
+       "optionen": [
+        "حیاط",
+        "همسایه‌ی دیوار به دیوار",
+        "اجاره‌نامه"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>در وسط حیاط یک حوض آبی و دو درخت انار بود.</span>"
+      },
+      {
+       "frage": "<span class='fa'>در یزد، ___ ها هوای خنک را به داخل خانه می‌آورند.</span><br><span class='mini'>In Yazd bringen die Windtürme kühle Luft ins Haus.</span>",
+       "optionen": [
+        "بادگیر",
+        "بنگاه",
+        "برج"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>در یزد، بادگیر ها هوای خنک را به داخل خانه می‌آورند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>این آپارتمان ___ است؛ پارسال ساخته شد.</span><br><span class='mini'>Diese Wohnung ist neu gebaut; sie wurde letztes Jahr gebaut.</span>",
+       "optionen": [
+        "نوساز",
+        "مشاور املاک",
+        "متراژ"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>این آپارتمان نوساز است؛ پارسال ساخته شد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>خانه‌ی قدیمی ___ بود و آن را خراب کردند.</span><br><span class='mini'>Das alte Haus war abrissreif, und man hat es abgerissen.</span>",
+       "optionen": [
+        "کلنگی",
+        "اثاثیه",
+        "نورگیر"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>خانه‌ی قدیمی کلنگی بود و آن را خراب کردند.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>برای پیدا کردن خانه به یک ___ رفتیم.</span><br><span class='mini'>Um eine Wohnung zu finden, gingen wir zu einem Maklerbüro.</span>",
+       "optionen": [
+        "بنگاه",
+        "دلباز",
+        "پنجره‌ی رنگی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>برای پیدا کردن خانه به یک بنگاه رفتیم.</span>"
+      },
+      {
+       "frage": "<span class='fa'>___ ساختمان، هر کسی را که وارد می‌شود می‌بیند.</span><br><span class='mini'>Der Pförtner des Gebäudes sieht jeden, der hereinkommt.</span>",
+       "optionen": [
+        "نگهبان",
+        "درخت انار",
+        "ایوان"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>نگهبان ساختمان، هر کسی را که وارد می‌شود می‌بیند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>همه‌ی ___ را در کارتن گذاشتیم.</span><br><span class='mini'>Wir haben den ganzen Hausrat in Kartons gepackt.</span>",
+       "optionen": [
+        "اثاثیه",
+        "درخت انار",
+        "پنجره‌ی رنگی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>همه‌ی اثاثیه را در کارتن گذاشتیم.</span>"
+      },
+      {
+       "frage": "<span class='fa'>این اتاق خیلی ___ است؛ سه پنجره‌ی بزرگ دارد.</span><br><span class='mini'>Dieses Zimmer ist sehr hell; es hat drei große Fenster.</span>",
+       "optionen": [
+        "نورگیر",
+        "کلنگی",
+        "متراژ"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>این اتاق خیلی نورگیر است؛ سه پنجره‌ی بزرگ دارد.</span>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "e",
+   "titel": "Sätze aus den Texten",
+   "vorschau": "🧱",
+   "karten": [
+    {
+     "typ": "bauen",
+     "titel": "Baue den Satz",
+     "trenner": " ",
+     "woerter": [
+      {
+       "fa": "«خوش آمدید! اگر چیزی لازم داشتید، تعارف نکنید.»",
+       "tr": "«chosch āmadīd! agar tschīzī lāzem dāschtīd, taʿārof nakonīd.»",
+       "de": "„Willkommen! Wenn Sie etwas brauchen, keine falsche Bescheidenheit.“",
+       "teile": [
+        "«خوش",
+        "آمدید",
+        "اگر",
+        "چیزی",
+        "لازم",
+        "داشتید",
+        "تعارف",
+        "نکنید»"
+       ],
+       "extra": [
+        "نشانش"
+       ]
+      },
+      {
+       "fa": "از دهه‌ی پنجاه شمسی، با رشد سریع شهرها، آپارتمان‌نشینی شروع شد.",
+       "tr": "az dahe-ye pandschāh-e schamsī, bā roschd-e sarīʿ-e schahrhā, āpārtemānneschīnī schorūʿ schod.",
+       "de": "Ab den 1970er-Jahren begann mit dem schnellen Wachstum der Städte das Wohnen in Apartments.",
+       "teile": [
+        "از",
+        "دهه‌ی",
+        "پنجاه",
+        "شمسی",
+        "با",
+        "رشد",
+        "سریع",
+        "شهرها",
+        "آپارتمان‌نشینی",
+        "شروع",
+        "شد"
+       ],
+       "extra": []
+      },
+      {
+       "fa": "تا پنجاه سال پیش، بیشتر خانه‌های ایرانی حیاط مرکزی داشتند.",
+       "tr": "tā pandschāh sāl pīsch, bīschtar-e chānehā-ye īrānī hayāt-e markazī dāschtand.",
+       "de": "Bis vor fünfzig Jahren hatten die meisten iranischen Häuser einen Innenhof.",
+       "teile": [
+        "تا",
+        "پنجاه",
+        "سال",
+        "پیش",
+        "بیشتر",
+        "خانه‌های",
+        "ایرانی",
+        "حیاط",
+        "مرکزی",
+        "داشتند"
+       ],
+       "extra": []
+      },
+      {
+       "fa": "کارگرها کارتن‌های بسته‌بندی‌شده را دوازده طبقه با پله بالا بردند.",
+       "tr": "kārgarhā kārtonhā-ye bastebandīschode rā dawāzdah tabaghe bā pelle bālā bordand.",
+       "de": "Die Arbeiter trugen die gepackten Kartons zwölf Stockwerke die Treppe hinauf.",
+       "teile": [
+        "کارگرها",
+        "کارتن‌های",
+        "بسته‌بندی‌شده",
+        "را",
+        "دوازده",
+        "طبقه",
+        "با",
+        "پله",
+        "بالا",
+        "بردند"
+       ],
+       "extra": [
+        "لازم"
+       ]
+      },
+      {
+       "fa": "در تهران، مشاور املاک فقط آپارتمان در برج‌های بلند نشانش داد.",
+       "tr": "dar tehrān, moschāwer-e amlāk faghat āpārtemān dar bordschhā-ye boland neschānasch dād.",
+       "de": "In Teheran zeigte ihm der Makler nur Wohnungen in hohen Türmen.",
+       "teile": [
+        "در",
+        "تهران",
+        "مشاور",
+        "املاک",
+        "فقط",
+        "آپارتمان",
+        "در",
+        "برج‌های",
+        "بلند",
+        "نشانش",
+        "داد"
+       ],
+       "extra": [
+        "نکنید.»"
+       ]
+      },
+      {
+       "fa": "آپارتمان نورگیر بود و از پنجره‌اش کوه‌های البرز دیده می‌شد.",
+       "tr": "āpārtemān nūrgīr būd o az pandschereasch kūhhā-ye alborz dīde mīschod.",
+       "de": "Die Wohnung war hell, und aus dem Fenster sah man das Elburs-Gebirge.",
+       "teile": [
+        "آپارتمان",
+        "نورگیر",
+        "بود",
+        "و",
+        "از",
+        "پنجره‌اش",
+        "کوه‌های",
+        "البرز",
+        "دیده",
+        "می‌شد"
+       ],
+       "extra": []
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Was bedeutet der Satz?",
+     "fragen": [
+      {
+       "frage": "„Die Arbeiter trugen die gepackten Kartons zwölf Stockwerke die Treppe hinauf.“",
+       "optionen": [
+        "کارگرها کارتن‌های بسته‌بندی‌شده را دوازده طبقه با پله بالا بردند.",
+        "از دهه‌ی پنجاه شمسی، با رشد سریع شهرها، آپارتمان‌نشینی شروع شد.",
+        "«خوش آمدید! اگر چیزی لازم داشتید، تعارف نکنید.»"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Bis vor fünfzig Jahren hatten die meisten iranischen Häuser einen Innenhof.“",
+       "optionen": [
+        "تا پنجاه سال پیش، بیشتر خانه‌های ایرانی حیاط مرکزی داشتند.",
+        "«خوش آمدید! اگر چیزی لازم داشتید، تعارف نکنید.»",
+        "از دهه‌ی پنجاه شمسی، با رشد سریع شهرها، آپارتمان‌نشینی شروع شد."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Ab den 1970er-Jahren begann mit dem schnellen Wachstum der Städte das Wohnen in Apartments.“",
+       "optionen": [
+        "از دهه‌ی پنجاه شمسی، با رشد سریع شهرها، آپارتمان‌نشینی شروع شد.",
+        "تا پنجاه سال پیش، بیشتر خانه‌های ایرانی حیاط مرکزی داشتند.",
+        "کارگرها کارتن‌های بسته‌بندی‌شده را دوازده طبقه با پله بالا بردند."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„„Willkommen! Wenn Sie etwas brauchen, keine falsche Bescheidenheit.““",
+       "optionen": [
+        "«خوش آمدید! اگر چیزی لازم داشتید، تعارف نکنید.»",
+        "تا پنجاه سال پیش، بیشتر خانه‌های ایرانی حیاط مرکزی داشتند.",
+        "کارگرها کارتن‌های بسته‌بندی‌شده را دوازده طبقه با پله بالا بردند."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„In Teheran zeigte ihm der Makler nur Wohnungen in hohen Türmen.“",
+       "optionen": [
+        "در تهران، مشاور املاک فقط آپارتمان در برج‌های بلند نشانش داد.",
+        "از دهه‌ی پنجاه شمسی، با رشد سریع شهرها، آپارتمان‌نشینی شروع شد.",
+        "آپارتمان نورگیر بود و از پنجره‌اش کوه‌های البرز دیده می‌شد."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Die Wohnung war hell, und aus dem Fenster sah man das Elburs-Gebirge.“",
+       "optionen": [
+        "آپارتمان نورگیر بود و از پنجره‌اش کوه‌های البرز دیده می‌شد.",
+        "«خوش آمدید! اگر چیزی لازم داشتید، تعارف نکنید.»",
+        "در تهران، مشاور املاک فقط آپارتمان در برج‌های بلند نشانش داد."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

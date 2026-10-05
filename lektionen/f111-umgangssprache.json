@@ -1,0 +1,184 @@
+{
+ "id": "ug",
+ "art": "umgangssprache",
+ "titel": "Umgangssprache: So spricht man im Alltag",
+ "beschreibung": "Freiwilliger Extra-Teil: Umgangssprache.",
+ "stationen": [
+  {
+   "id": "a",
+   "titel": "So spricht man",
+   "vorschau": "بفرما",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Schrift ≠ Gespräch",
+     "text": "<ul><li>Auch die Höflichkeitssprache wird im Gespräch verkürzt: <span class='fa'>بفرمایید → بفرما</span> (zu Freunden), <span class='fa'>تشریف بیاورید → تشریف بیارید</span></li><li><span class='fa'>ندارد → نداره</span>: <span class='fa'>قابل نداره</span> – „nicht der Rede wert“ (Taarof – man bezahlt trotzdem!)</li><li><span class='fa'>بنشینید → بشینید</span></li><li>Statt poetisch <span class='fa'>چه زیباست!</span> sagt man meist <span class='fa'>چه قشنگه!</span></li></ul>",
+     "stil": "merke"
+    },
+    {
+     "typ": "paare",
+     "links": "x",
+     "paare": [
+      {
+       "fa": "بفرمایید",
+       "tr": "",
+       "de": "bitte (zu Freunden)",
+       "x": "بفرما"
+      },
+      {
+       "fa": "تشریف بیاورید",
+       "tr": "",
+       "de": "kommen Sie (höflich)",
+       "x": "تشریف بیارید"
+      },
+      {
+       "fa": "قابل ندارد",
+       "tr": "",
+       "de": "nicht der Rede wert",
+       "x": "قابل نداره"
+      },
+      {
+       "fa": "بنشینید",
+       "tr": "",
+       "de": "setzen Sie sich",
+       "x": "بشینید"
+      },
+      {
+       "fa": "چه زیباست",
+       "tr": "",
+       "de": "wie schön",
+       "x": "چه قشنگه"
+      }
+     ],
+     "titel": "Schrift ↔ Gespräch"
+    },
+    {
+     "typ": "sortieren",
+     "titel": "Schrift oder Gespräch?",
+     "frage": "Schriftsprache oder Umgangssprache?",
+     "kategorien": [
+      "✍️ Schriftsprache",
+      "🗣️ Umgangssprache"
+     ],
+     "items": [
+      {
+       "fa": "بفرمایید",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "تشریف بیاورید",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "قابل ندارد",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "بنشینید",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "چه زیباست",
+       "k": 0,
+       "say": false
+      },
+      {
+       "fa": "بفرما",
+       "k": 1,
+       "say": false,
+       "e": "<i>befarmā</i> – geschrieben: <span class='fa'>بفرمایید</span>"
+      },
+      {
+       "fa": "تشریف بیارید",
+       "k": 1,
+       "say": false,
+       "e": "<i>taschrīf biyārīd</i> – geschrieben: <span class='fa'>تشریف بیاورید</span>"
+      },
+      {
+       "fa": "قابل نداره",
+       "k": 1,
+       "say": false,
+       "e": "<i>ghābel nadāre</i> – geschrieben: <span class='fa'>قابل ندارد</span>"
+      },
+      {
+       "fa": "بشینید",
+       "k": 1,
+       "say": false,
+       "e": "<i>beschīnīd</i> – geschrieben: <span class='fa'>بنشینید</span>"
+      },
+      {
+       "fa": "چه قشنگه",
+       "k": 1,
+       "say": false,
+       "e": "<i>tsche ghaschange</i> – geschrieben: <span class='fa'>چه زیباست</span>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "titel": "Kurz-Dialog",
+   "vorschau": "💬",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Taarof an der Kasse",
+     "text": "Umgangssprache! Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "ببخشید، این کتاب چند می‌شه؟",
+       "tr": "bebachschīd, īn ketāb tschand mīsche?",
+       "de": "Entschuldigung, was kostet dieses Buch?"
+      },
+      {
+       "fa": "قابل نداره، بفرمایید.",
+       "tr": "ghābel nadāre, befarmāyīd.",
+       "de": "Nicht der Rede wert, bitte schön."
+      },
+      {
+       "fa": "خواهش می‌کنم، تعارف نکنید!",
+       "tr": "chāhesch mīkonam, taʿārof nakonīd!",
+       "de": "Bitte, keine Höflichkeitsfloskeln!"
+      },
+      {
+       "fa": "باشه، صد و بیست تومن.",
+       "tr": "bāsche, sad o bīst tomen.",
+       "de": "Na gut, hundertzwanzig Toman."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Verstanden?",
+     "fragen": [
+      {
+       "frage": "Was bedeutet <span class='fa'>قابل نداره</span> hier?",
+       "optionen": [
+        "eine Höflichkeitsfloskel – man zahlt trotzdem",
+        "Das Buch ist gratis.",
+        "Das Buch ist kaputt."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "<span class='fa'>بشینید</span> =",
+       "optionen": [
+        "بنشینید",
+        "ببینید",
+        "بشوید"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
