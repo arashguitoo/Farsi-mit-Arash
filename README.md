@@ -21,7 +21,7 @@ Lernplattform für Persisch (für deutschsprachige Studierende) – läuft auf *
 3. **Konsole öffnen** (`…/farsi/konsole.html`), mit deinem Konto aus Firebase → Authentication anmelden, Klassen anlegen (z. B. „Klasse A“, „Klasse B“), Namen eintragen → Codes entstehen automatisch.
 4. Codes verteilen: 🖨 Zettel drucken oder 📋 Anleitung pro Person kopieren.
 
-Ohne Code können Studierende „ohne Code ausprobieren“ – der Fortschritt bleibt dann nur auf dem Gerät.
+**Nur mit Code:** Lernpfad, Lektionen und Wortschatz-Trainer öffnen sich nur mit einem gültigen persönlichen Code (kein Gast-Modus). Wird ein Code in der Konsole gelöscht oder deaktiviert, wird die Person beim nächsten Öffnen abgemeldet. Lehrkräfte, die in Konsole oder Lehrer-Übersicht angemeldet sind, können Lektionen auf diesem Gerät 30 Tage lang auch ohne Schülercode öffnen. Hinweis: Das ist eine Zugangssperre der Oberfläche – die Lektionsdateien liegen weiterhin öffentlich im GitHub-Repository.
 
 > Die Seiten laufen über GitHub Pages bzw. einen Webserver, **nicht** per Doppelklick auf die Datei (die Lektionen werden als JSON nachgeladen).
 

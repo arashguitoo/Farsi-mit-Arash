@@ -184,6 +184,7 @@
     $("#btnTon").onclick = () => { F.setEinst({ ton: !F.einst().ton }); setzeKnoepfe(); };
     $("#btnUmschrift").onclick = () => { F.setEinst({ umschrift: !F.einst().umschrift }); setzeKnoepfe(); };
     setzeKnoepfe();
+    if (!(await F.brauchtCode())) return;   // nur mit Code
     try {
       const index = await F.ladeJSON("lektionen/index.json");
       const frei = await F.ladeFreigaben(), fortAll = await F.ladeAlleFortschritte();

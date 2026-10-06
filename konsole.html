@@ -253,6 +253,7 @@
   $("#btnLogout").onclick = () => auth.signOut();
 
   auth.onAuthStateChanged(async user => {
+    try { user ? localStorage.setItem("farsi_lehrer_v1", String(Date.now())) : localStorage.removeItem("farsi_lehrer_v1"); } catch (e) { }   // Lehrkraft darf Lektionen ohne Code öffnen
     $("#login").classList.toggle("versteckt", !!user);
     $("#btnLogout").classList.toggle("versteckt", !user);
     $("#nutzer").classList.toggle("versteckt", !user);

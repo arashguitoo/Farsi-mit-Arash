@@ -33,7 +33,7 @@
         <button class="btn" type="submit">Los</button>
       </form>
       <div class="klein" id="loginMeldung"></div>
-      <div class="klein muted">Noch keinen Code? <a href="#" id="gastLink">Ohne Code ausprobieren</a> – dann wird dein Fortschritt nur auf diesem Gerät gespeichert.</div>
+      <div class="klein muted">Noch keinen Code? Deine Lehrkraft gibt dir deinen persönlichen Code.</div>
     </div>
   </section>
 
@@ -69,22 +69,20 @@
 (function(){
   const F = window.FARSI, { $, $$, esc } = F;
   let INDEX = null;
-  const GAST_KEY = "farsi_gast_v1";
-  const istGast = () => { try { return localStorage.getItem(GAST_KEY) === "1"; } catch(e){ return false; } };
-  const setGast = v => { try { v ? localStorage.setItem(GAST_KEY,"1") : localStorage.removeItem(GAST_KEY); } catch(e){} };
+  try { localStorage.removeItem("farsi_gast_v1"); } catch(e){}   // alter Gast-Modus abgeschafft
+  let geprueft = false;
 
   async function zeige(){
+    if (!geprueft) { geprueft = true; await F.pruefeSitzung(); }   // gelöschte/deaktivierte Codes abmelden
     const s = F.sitzung();
-    $("#bereichLogin").classList.toggle("versteckt", !!s || istGast());
-    $("#bereichHallo").classList.toggle("versteckt", !s && !istGast());
+    $("#bereichLogin").classList.toggle("versteckt", !!s);
+    $("#bereichHallo").classList.toggle("versteckt", !s);
+    $("#bereiche").classList.toggle("versteckt", !s);
+    if (!s) { $("#bereichInhalt").classList.add("versteckt"); $("#bereiche").innerHTML = ""; return; }
     if (s) {
       $("#halloFa").textContent = "سَلام " + (s.name || "") + "!";
       $("#halloText").innerHTML = `<b>${esc(s.name)}</b>${s.klassenName ? " · " + esc(s.klassenName) : ""} · Code <span class="code">${esc(s.code)}</span>`;
       $("#halloFa").setAttribute("dir","auto");
-    } else if (istGast()) {
-      $("#halloFa").textContent = "سَلام!";
-      $("#halloText").innerHTML = `Du übst im <b>Gast-Modus</b>. Dein Fortschritt bleibt auf diesem Gerät. <a href="#" id="dochCode">Code eingeben</a>`;
-      const d = $("#dochCode"); if (d) d.onclick = e => { e.preventDefault(); setGast(false); zeige(); };
     }
     await zeichnePfad();
   }
@@ -176,12 +174,11 @@
     const m = $("#loginMeldung");
     m.textContent = "Prüfe Code …";
     const r = await F.anmelden($("#codeFeld").value);
-    if (r.ok) { setGast(false); m.textContent = ""; zeige(); return; }
+    if (r.ok) { m.textContent = ""; zeige(); return; }
     m.innerHTML = { kurz: "Der Code ist zu kurz.", unbekannt: "Diesen Code kenne ich nicht. Bitte prüfe ihn noch einmal.", inaktiv: "Dieser Code ist gerade nicht aktiv. Frag deine Lehrkraft.", offline: "Keine Verbindung. Bitte später noch einmal versuchen." }[r.grund] || "Das hat nicht geklappt.";
     m.style.color = "var(--granat)";
   });
-  $("#gastLink").addEventListener("click", e => { e.preventDefault(); setGast(true); zeige(); });
-  $("#abmelden").addEventListener("click", () => { F.abmelden(); setGast(false); zeige(); });
+  $("#abmelden").addEventListener("click", () => { F.abmelden(); zeige(); });
 
   /* Anmeldung per Link/QR-Code: index.html?code=XXXXX */
   const qcode = new URLSearchParams(location.search).get("code");

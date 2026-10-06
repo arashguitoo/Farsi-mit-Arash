@@ -609,7 +609,7 @@
     if (naechste) $("#naechsteSt").onclick = () => starteStation(aktSt + 1);
     const r = await F.speichereStation(LEK_ID, st.id, summe.p, summe.m);
     const sp = $("#speicher");
-    if (sp) sp.textContent = F.sitzung() ? (r.online ? "✓ Gespeichert – deine Lehrkraft sieht deinen Fortschritt." : "Auf diesem Gerät gespeichert (gerade keine Verbindung).") : "Im Gast-Modus: nur auf diesem Gerät gespeichert.";
+    if (sp) sp.textContent = F.sitzung() ? (r.online ? "✓ Gespeichert – deine Lehrkraft sieht deinen Fortschritt." : "Auf diesem Gerät gespeichert (gerade keine Verbindung).") : "Ansicht als Lehrkraft – nichts wird gespeichert.";
   }
 
   /* ---------- Buchstaben-Tafel ---------- */
@@ -635,6 +635,7 @@
 
   /* ---------- Start ---------- */
   async function start() {
+    if (!(await F.brauchtCode())) return;   // nur mit Code
     F.anwendenEinst();
     const e = F.einst();
     const tonBtn = $("#btnTon"), umBtn = $("#btnUmschrift");

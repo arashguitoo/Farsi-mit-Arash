@@ -79,6 +79,26 @@
   }
   function abmelden() { setSitzung(null); }
 
+  /* Ist die gespeicherte Sitzung noch gültig? (Code gelöscht/deaktiviert → abmelden; offline → lokal weiter erlaubt) */
+  async function pruefeSitzung() {
+    const s = sitzung();
+    if (!s || !s.code) return false;
+    if (!initFB()) return true;
+    try {
+      const v = (await mitTimeout(ref("tn/" + s.code).once("value"), 7000)).val();
+      if (!v || v.aktiv === false) { abmelden(); return false; }
+      return true;
+    } catch (e) { return true; }
+  }
+  /* Lektionen & Trainer nur mit gültigem Code – sonst zur Anmeldung */
+  const istLehrkraft = () => { try { const t = +localStorage.getItem("farsi_lehrer_v1"); return t > 0 && Date.now() - t < 30 * 864e5; } catch (e) { return false; } };
+  async function brauchtCode() {
+    if (await pruefeSitzung()) return true;
+    if (istLehrkraft()) return true;   // in Konsole/Lehrer-Übersicht angemeldet
+    window.FARSI.weiterleiten("index.html");
+    return false;
+  }
+
   /* ---------- Einstellungen ---------- */
   const einst = () => Object.assign({ ton: true, umschrift: true }, lesen(LS_SET, {}));
   function setEinst(patch) {
@@ -311,7 +331,7 @@
 
   window.FARSI = {
     CFG, $, $$, esc, mischen, faZiffern, normCode, toast, mitTimeout,
-    initFB, ref, sitzung, anmelden, abmelden,
+    initFB, ref, sitzung, anmelden, abmelden, pruefeSitzung, brauchtCode, weiterleiten: u => location.replace(u),
     einst, setEinst, anwendenEinst,
     ladeFortschritt, ladeAlleFortschritte, speichereStation,
     ladeFreigaben, istOffen, istBereichOffen, bereichVon, testStand, sperrGrund,
