@@ -75,7 +75,8 @@
   </section>
 
   <section id="app" class="versteckt">
-    <div class="tabs" id="lekTabs"></div>
+    <div class="tabs" id="berTabs" style="margin-bottom:4px"></div>
+    <div class="tabs" id="lekTabs" style="margin-top:6px"></div>
     <div class="leiste-oben">
       <input class="feld" id="suche" placeholder="🔍 in allen Lektionen suchen (Persisch, Umschrift, Deutsch) …">
       <label class="klein"><input type="checkbox" id="zeigeZus" checked> Texte & Übungen</label>
@@ -163,8 +164,9 @@
     }));
     const lks = INDEX.lektionen.filter(l => LEK[l.id]);
     aktLek = (new URLSearchParams(location.search)).get("l") || lks[0].id;
-    $("#lekTabs").innerHTML = lks.map(l => `<button class="tab" data-l="${l.id}">L${l.nummer} <span class="klein">${esc(l.titel.split(/[–:]/)[0].trim())}</span></button>`).join("");
-    $$("#lekTabs [data-l]").forEach(b => b.onclick = () => { aktLek = b.dataset.l; $("#suche").value = ""; zeichne(); });
+    if (!lks.some(l => l.id === aktLek)) aktLek = lks[0].id;
+    aktBer = ber(lks.find(l => l.id === aktLek));
+    zeichneTabs();
     ["zeigeZus", "zeigeUg", "zeigeWs"].forEach(id => $("#" + id).onchange = zeichne);
     $("#suche").oninput = () => zeichne();
     $("#alleAuf").onclick = () => $$("details.st-block").forEach(d => d.open = true);
@@ -173,6 +175,30 @@
     $("#btnNotizen").onclick = notizenDialog;
     notizenStart();
     zeichne();
+  }
+
+  /* ---------- Bereiche & Lektions-Kürzel ---------- */
+  let aktBer = "a";
+  const ber = l => (l && l.bereich) || "a";
+  const BERNAME = { a: "Anfänger", f1: "Fortgeschritten 1", f2: "Fortgeschritten 2", k: "Konversation" };
+  // eindeutiges Kürzel: L3 (Grundkurs), F1·3, F2·3, K3, Test
+  function lk(l) {
+    const b = ber(l), n = String(l.nummer);
+    if (l.id === "f1test") return "Test";
+    if (b === "f1") return "F1·" + n;
+    if (b === "f2") return "F2·" + n;
+    if (b === "k") return n.startsWith("K") ? n : "K" + n;
+    return "L" + n;
+  }
+  function zeichneTabs() {
+    const lks = INDEX.lektionen.filter(l => LEK[l.id]);
+    const bs = (INDEX.bereiche || []).map(b => b.id).filter(id => lks.some(l => ber(l) === id));
+    $("#berTabs").innerHTML = bs.map(id => `<button class="tab ${id === aktBer ? "an" : ""}" data-b="${id}">${esc(((INDEX.bereiche || []).find(x => x.id === id) || {}).titel || BERNAME[id] || id)} <span class="klein">${lks.filter(l => ber(l) === id).length}</span></button>`).join("");
+    $$("#berTabs [data-b]").forEach(b => b.onclick = () => {
+      aktBer = b.dataset.b; const erste = lks.find(l => ber(l) === aktBer); if (erste) aktLek = erste.id;
+      $("#suche").value = ""; zeichneTabs(); zeichne(); });
+    $("#lekTabs").innerHTML = lks.filter(l => ber(l) === aktBer).map(l => `<button class="tab" data-l="${l.id}">${esc(lk(l))} <span class="klein">${esc(l.titel.split(/[–:]/)[0].trim())}</span></button>`).join("");
+    $$("#lekTabs [data-l]").forEach(b => b.onclick = () => { aktLek = b.dataset.l; $("#suche").value = ""; zeichne(); });
   }
 
   /* ---------- Labels (wie in der Lektion) ---------- */
@@ -188,7 +214,10 @@
   /* ---------- Karten-Darstellung ---------- */
   const fa = t => `<span class="fa">${esc(t)}</span>`;
   const z3 = (a, b, c) => `<tr><td>${a}</td><td class="tr">${esc(b || "")}</td><td>${esc(c || "")}</td></tr>`;
-  function tabelle(zeilen) { return `<table class="t"><tr><th>Persisch</th><th>Umschrift</th><th>Deutsch / Lösung</th></tr>${zeilen.join("")}</table>`; }
+  function tabelle(zeilen) {
+    const mitTr = zeilen.some(z => !z.includes('<td class="tr"></td>'));
+    if (!mitTr) zeilen = zeilen.map(z => z.replace('<td class="tr"></td>', ""));
+    return `<table class="t"><tr><th>Persisch</th>${mitTr ? "<th>Umschrift</th>" : ""}<th>Deutsch / Lösung</th></tr>${zeilen.join("")}</table>`; }
   function karteHTML(k) {
     const t = k.typ;
     if (t === "info") return `<div class="info-txt">${k.text || ""}</div>${k.beispiele ? tabelle(k.beispiele.map(b => z3(fa(b.fa), b.tr, (b.emoji ? b.emoji + " " : "") + (b.de || "")))) : ""}`;
@@ -204,9 +233,12 @@
     if (t === "tempo") return `<div class="mini">${k.aufgabe || ""} · ${k.sekunden}s · Ziel ${k.ziel} · Modus ${k.modus}</div>` + tabelle(k.woerter.map(w => z3(fa(w.fa), w.tr, w.a || (k.modus === "de" ? w.de : w.tr))));
     if (t === "text") return tabelle(k.zeilen.map(z => z3(fa(z.fa), z.tr, z.de)));
     if (t === "ordnen") return `<div class="mini">${k.frage || ""} (richtige Reihenfolge)</div>` + tabelle(k.items.map((z, i) => z3(`${i + 1}. ` + fa(z.fa), z.tr, z.de)));
+    if (t === "zuordnen") { const BU = "ABCDEFGHIJKL";
+      return `<div class="mini">${k.text || ""} · ${k.frage || ""}</div><b class="klein">Angebote</b>` + tabelle(k.angebote.map((a, j) => z3(`${BU[j]}) ${a.emoji || ""} ` + fa(a.fa), "", `${a.titel}: ${a.de}`)))
+        + `<b class="klein">Personen → Lösung</b>` + tabelle(k.personen.map(p_ => z3(`${p_.emoji || ""} ` + fa(p_.fa), "", `${p_.name}: ${p_.de} → ✓ ${BU[p_.richtig]}) ${k.angebote[p_.richtig].titel}${p_.e ? " · " + String(p_.e).replace(/<[^>]+>/g, "") : ""}`))); }
     return `<pre>${esc(JSON.stringify(k, null, 1))}</pre>`;
   }
-  const TYPNAME = { info: "Info", buchstaben: "Buchstaben", paare: "Paare", memory: "Memory", wahl: "Auswahl", bauen: "Bauen", sortieren: "Sortieren", finden: "Finden", lesen: "Karteikarten", tempo: "Blitz", text: "Lesetext", ordnen: "Reihenfolge" };
+  const TYPNAME = { info: "Info", buchstaben: "Buchstaben", paare: "Paare", memory: "Memory", wahl: "Auswahl", bauen: "Bauen", sortieren: "Sortieren", finden: "Finden", lesen: "Karteikarten", tempo: "Blitz", text: "Lesetext", ordnen: "Reihenfolge", zuordnen: "Wer passt zu wem?" };
   function kartenTitel(k) { return k.titel || (k.typ === "bauen" && k.trenner ? "Satzbau" : TYPNAME[k.typ]); }
   const textAus = k => JSON.stringify(k).toLowerCase();
 
@@ -214,6 +246,7 @@
     const q = $("#suche").value.trim().toLowerCase();
     const zus = $("#zeigeZus").checked, ug = $("#zeigeUg").checked, zws = $("#zeigeWs").checked;
     $$("#lekTabs [data-l]").forEach(b => b.classList.toggle("an", !q && b.dataset.l === aktLek));
+    $$("#berTabs [data-b]").forEach(b => b.classList.toggle("an", !q && b.dataset.b === aktBer));
     const lks = q ? INDEX.lektionen.filter(l => LEK[l.id]) : INDEX.lektionen.filter(l => l.id === aktLek);
     let html = "", treffer = 0;
     for (const l of lks) {
@@ -221,7 +254,7 @@
       let block = "";
       if (!q) {
         const ziele = L.stationen.filter(s => !s.zusatz).map(s => s.titel);
-        block += `<div class="lk-kopf"><div><div class="muted klein">Lektion ${l.nummer} · Datei <code>${esc(l.datei)}</code></div><h2>${esc(L.titel)} <span class="fa" style="font-size:1.2rem;color:var(--lapis)">${esc(L.titelFa || "")}</span></h2></div>
+        block += `<div class="lk-kopf"><div><div class="muted klein">${esc(BERNAME[ber(l)] || "")} · ${esc(lk(l))} · Datei <code>${esc(l.datei)}</code></div><h2>${esc(L.titel)} <span class="fa" style="font-size:1.2rem;color:var(--lapis)">${esc(L.titelFa || "")}</span></h2></div>
           <a class="btn zwei klein no-print" href="lektion.html?id=${l.id}" target="_blank">▶ Lektion öffnen</a></div>
           <div class="karte"><b>Inhalt:</b> ${esc(L.einleitung || "")}<ol class="ziele">${ziele.map(z => `<li>${esc(z)}</li>`).join("")}</ol></div>`;
       }
@@ -238,11 +271,11 @@
           block += `<div class="paket-t ${s.paketArt === "umgangssprache" ? "ug" : "zus"}">${{ umgangssprache: "Extra: ", texte: "Teil 2: ", zusatz: "Teil 3: " }[s.paketArt] || ""}${esc(pk ? pk.titel : "Zusatz")} <span class="mini">(${esc(s.paketId)})</span></div>`;
         }
         letztesPaket = s.paketId || null;
-        block += `<details class="st-block" ${q ? "open" : ""}><summary><span class="st-id">L${l.nummer}·${lab.kurz}</span><b>${esc(lab.lang)}: ${esc(s.titel)}</b>
+        block += `<details class="st-block" ${q ? "open" : ""}><summary><span class="st-id">${esc(lk(l))}·${lab.kurz}</span><b>${esc(lab.lang)}: ${esc(s.titel)}</b>
           <span class="mini">${s.karten.length} Karten · id <code>${esc(s.id)}</code></span>
           <a class="btn zwei klein no-print" style="margin-left:auto" href="lektion.html?id=${l.id}&st=${i + 1}" target="_blank" onclick="event.stopPropagation()">▶ ausprobieren</a></summary>
           <div class="st-inhalt">${karten.map(({ k, ki }) => {
-            const id = `L${l.nummer}·${lab.kurz}·K${ki + 1}`;
+            const id = `${lk(l)}·${lab.kurz}·K${ki + 1}`;
             return `<div class="kk" data-id="${esc(id)}" data-info="${esc(`${lab.lang}: ${s.titel} · Karte ${ki + 1} (${TYPNAME[k.typ] || k.typ}: ${kartenTitel(k)})`)}">
               <div class="kk-kopf"><span class="st-id">${esc(id)}</span><span class="typ">${esc(TYPNAME[k.typ] || k.typ)}</span><b>${kartenTitel(k)}</b>
                 <span class="ab"><button class="btn zwei klein" data-notiz>✏️ Korrektur</button></span></div>
@@ -252,9 +285,9 @@
       if (zws && WS[l.id] && !q) {
         const w = WS[l.id];
         block += `<div class="paket-t">📚 Wortschatz-Trainer · ${w.length} Wörter <span class="mini">(${esc(l.wortschatz)})</span></div>
-          <details class="st-block"><summary><span class="st-id">L${l.nummer}·WS</span><b>Wortliste</b></summary><div class="st-inhalt">
-          <div class="kk" data-id="L${l.nummer}·WS" data-info="Wortschatz Lektion ${l.nummer}"><div class="kk-kopf"><span class="st-id">L${l.nummer}·WS</span><span class="typ">Wortschatz</span><b>alle Wörter</b><span class="ab"><button class="btn zwei klein" data-notiz>✏️ Korrektur</button></span></div>
-          <table class="t ws-tab"><tr><th>Persisch</th><th>Umschrift</th><th>Deutsch</th><th>Kategorie</th></tr>${w.map(e => `<tr><td>${fa(e.fa)}${e.stamm ? ` <span class="mini">(Präsensstamm ${fa(e.stamm)} ${esc(e.stammTr)})</span>` : ""}</td><td class="tr">${esc(e.tr)}</td><td>${e.emoji || ""} ${esc(e.de)}</td><td class="mini">${esc(e.kat)}</td></tr>`).join("")}</table>
+          <details class="st-block"><summary><span class="st-id">${esc(lk(l))}·WS</span><b>Wortliste</b></summary><div class="st-inhalt">
+          <div class="kk" data-id="${esc(lk(l))}·WS" data-info="Wortschatz ${esc(lk(l))}"><div class="kk-kopf"><span class="st-id">${esc(lk(l))}·WS</span><span class="typ">Wortschatz</span><b>alle Wörter</b><span class="ab"><button class="btn zwei klein" data-notiz>✏️ Korrektur</button></span></div>
+          ${(() => { const mt = w.some(e => e.tr); return `<table class="t ws-tab"><tr><th>Persisch</th>${mt ? "<th>Umschrift</th>" : ""}<th>Deutsch</th><th>Kategorie</th></tr>${w.map(e => `<tr><td>${fa(e.fa)}${e.stamm ? ` <span class="mini">(Präsensstamm ${fa(e.stamm)}${e.stammTr ? " " + esc(e.stammTr) : ""})</span>` : ""}</td>${mt ? `<td class="tr">${esc(e.tr)}</td>` : ""}<td>${e.emoji || ""} ${esc(e.de)}</td><td class="mini">${esc(e.kat)}</td></tr>`).join("")}</table>`; })()}
           <div class="notiz-box"></div></div></div></details>`;
       }
       html += block;
@@ -299,9 +332,9 @@
     m.querySelector("[data-datei]").onclick = () => { const a = document.createElement("a"); a.href = URL.createObjectURL(new Blob([exportText(false)], { type: "text/plain;charset=utf-8" })); a.download = "farsi-korrekturen.txt"; a.click(); };
     const aufr = m.querySelector("[data-aufr]"); if (aufr) aufr.onclick = async () => { for (const n of liste.filter(n => n.erledigt)) await setzeNotiz(n.id, null); m.remove(); notizenDialog(); };
     $$("[data-spring]", m).forEach(b => b.onclick = () => {
-      const id = b.dataset.spring, nr = (id.match(/^L(\d+)/) || [])[1];
-      const l = INDEX.lektionen.find(x => String(x.nummer) === nr); if (!l) return;
-      m.remove(); $("#suche").value = ""; aktLek = l.id; zeichne();
+      const id = b.dataset.spring, pre = id.split("·").slice(0, id.startsWith("F") ? 2 : 1).join("·");
+      const l = INDEX.lektionen.find(x => LEK[x.id] && lk(x) === pre); if (!l) return;
+      m.remove(); $("#suche").value = ""; aktLek = l.id; aktBer = ber(l); zeichneTabs(); zeichne();
       const el = $$(".kk[data-id]").find(x => x.dataset.id === id);
       if (el) { el.closest("details").open = true; el.scrollIntoView({ behavior: "smooth", block: "center" }); }
     });
