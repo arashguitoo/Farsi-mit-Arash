@@ -2,7 +2,7 @@
  "id": "tx",
  "art": "texte",
  "titel": "Sachtext & Dialoge",
- "beschreibung": "Sachtext, Wortschatz im Kontext, zwei Dialoge, Redemittel und Schreibaufgabe.",
+ "beschreibung": "Sachtext, Wortschatz im Kontext, Alltagstext, drei Dialoge, Infotexte, Redemittel und Schreibaufgabe.",
  "stationen": [
   {
    "id": "t1",
@@ -12,7 +12,7 @@
     {
      "typ": "info",
      "titel": "Neue Wörter im Text",
-     "text": "<p><span class='fa'>نهاد</span> – Einrichtung, Institution · <span class='fa'>جذب کردن</span> – anziehen · <span class='fa'>جنبش</span> – Bewegung · <span class='fa'>مقابله</span> – Gegenüberstellung (hier: Ausgleichen) · <span class='fa'>رقم (ارقام)</span> – Ziffer(n) · <span class='fa'>سرخک</span> – Masern · <span class='fa'>آبله</span> – Pocken · <span class='fa'>مصارف</span> – Verwendungszwecke · <span class='fa'>ارتفاع</span> – Höhe · <span class='fa'>نامه‌نگاری</span> – Briefwechsel</p>",
+     "text": "<p><span class='fa'>شکوفایی</span> – Blüte · <span class='fa'>حاکم</span> – Herrscher · <span class='fa'>حمایت کردن</span> – fördern, unterstützen · <span class='fa'>پوست</span> – (hier) Pergament · <span class='fa'>نهاد</span> – Einrichtung · <span class='fa'>جذب کردن</span> – anziehen · <span class='fa'>جنبش</span> – Bewegung · <span class='fa'>مقابله</span> – Gegenüberstellung (hier: Ausgleichen) · <span class='fa'>منفی</span> – negativ · <span class='fa'>ارث</span> – Erbe · <span class='fa'>رقم (ارقام)</span> – Ziffer(n) · <span class='fa'>رباعی (رباعیات)</span> – Vierzeiler · <span class='fa'>سرخک</span> – Masern · <span class='fa'>آبله</span> – Pocken · <span class='fa'>چشم‌بسته</span> – blind, unbesehen · <span class='fa'>دربار</span> – Hof · <span class='fa'>گاه‌شماری</span> – Zeitrechnung · <span class='fa'>طبیعیات</span> – Naturlehre</p>",
      "stil": "merke"
     },
     {
@@ -26,7 +26,7 @@
        "de": "Wenn heute in Europa jemand von ‹Algorithmus› oder ‹Algebra› spricht, weiß er vielleicht nicht, dass diese beiden Wörter auf Gelehrte zurückgehen, die vor über tausend Jahren lebten."
       },
       {
-       "fa": "در قرن‌های نهم تا یازدهم میلادی، شهرهایی مثل بغداد، ری، بخارا و نیشابور از مراکز مهم علم در جهان بودند.",
+       "fa": "در قرن‌های نهم تا یازدهم میلادی، شهر‌هایی مثل بغداد، ری، بخارا و نیشابور از مراکز مهم علم در جهان بودند.",
        "tr": "",
        "de": "Im 9. bis 11. Jahrhundert gehörten Städte wie Bagdad, Rey, Buchara und Nischapur zu den wichtigen Zentren der Wissenschaft in der Welt."
       },
@@ -36,9 +36,29 @@
        "de": "Historiker nennen diese Zeit das ‹goldene Zeitalter› der Wissenschaft im Mittelalter."
       },
       {
-       "fa": "یکی از مهم‌ترین نهادهای این دوره «بیت‌الحکمه» در بغداد بود؛ کتابخانه و مرکز پژوهشی که دانشمندان زیادی را از سرزمین‌های مختلف جذب می‌کرد.",
+       "fa": "این شکوفایی دلایل گوناگونی داشت: راه‌های تجاری شرق و غرب جهان را به هم وصل می‌کردند، شهر‌ها ثروتمند بودند و بسیاری از حاکمان از دانشمندان حمایت می‌کردند.",
+       "tr": "",
+       "de": "Diese Blüte hatte verschiedene Gründe: Handelswege verbanden den Osten und den Westen der Welt, die Städte waren reich, und viele Herrscher förderten die Gelehrten."
+      },
+      {
+       "fa": "عامل مهم دیگر کاغذ بود؛ در قرن هشتم میلادی فن ساختن کاغذ از چین به سمرقند رسید و کمی بعد در بغداد هم کارگاه‌های کاغذسازی به راه افتاد.",
+       "tr": "",
+       "de": "Ein weiterer wichtiger Faktor war das Papier: Im 8. Jahrhundert gelangte die Technik der Papierherstellung aus China nach Samarkand, und bald darauf entstanden auch in Bagdad Papierwerkstätten."
+      },
+      {
+       "fa": "کاغذ از پوست و پاپیروس بسیار ارزان‌تر بود؛ در نتیجه شمار کتاب‌ها به‌سرعت افزایش یافت و کتابخانه‌های بزرگ شکل گرفتند.",
+       "tr": "",
+       "de": "Papier war viel billiger als Pergament und Papyrus; folglich stieg die Zahl der Bücher rasch, und es entstanden große Bibliotheken."
+      },
+      {
+       "fa": "یکی از مهم‌ترین نهاد‌های این دوره «بیت‌الحکمه» در بغداد بود؛ کتابخانه و مرکز پژوهشی که دانشمندان زیادی را از سرزمین‌های مختلف جذب می‌کرد.",
        "tr": "",
        "de": "Eine der wichtigsten Einrichtungen dieser Zeit war das ‹Haus der Weisheit› in Bagdad – eine Bibliothek und ein Forschungszentrum, das viele Gelehrte aus verschiedenen Ländern anzog."
+      },
+      {
+       "fa": "درباره‌ی شکل دقیق این نهاد میان مورخان بحث است، اما روشن است که در دوره‌ی عباسیان، به‌ویژه در قرن نهم، کار ترجمه و پژوهش در بغداد رونق فراوانی داشت.",
+       "tr": "",
+       "de": "Über die genaue Gestalt dieser Einrichtung wird unter Historikern noch diskutiert, doch fest steht, dass Übersetzung und Forschung in Bagdad unter den Abbasiden, besonders im 9. Jahrhundert, eine große Blüte erlebten."
       },
       {
        "fa": "در آنجا و در مراکز دیگر، آثار یونانی، سریانی، پهلوی و هندی به عربی ترجمه شد؛ این جنبش بزرگ را «نهضت ترجمه» می‌نامند.",
@@ -46,14 +66,14 @@
        "de": "Dort und in anderen Zentren wurden griechische, syrische, mittelpersische und indische Werke ins Arabische übersetzt; diese große Bewegung nennt man die ‹Übersetzungsbewegung›."
       },
       {
-       "fa": "زبان علم در آن زمان بیشتر عربی بود، اما بسیاری از دانشمندان برجسته‌ی این دوره ایرانی بودند و بعضی از آنها به فارسی هم می‌نوشتند.",
+       "fa": "زبان علم در آن زمان بیشتر عربی بود، اما بسیاری از دانشمندان برجسته‌ی این دوره ایرانی بودند و بعضی از آن‌ها به فارسی هم می‌نوشتند.",
        "tr": "",
        "de": "Die Sprache der Wissenschaft war damals überwiegend Arabisch, doch viele herausragende Gelehrte dieser Zeit waren Iraner, und einige schrieben auch auf Persisch."
       },
       {
-       "fa": "محمد بن موسی خوارزمی، ریاضی‌دان و ستاره‌شناس اهل خوارزم، در قرن نهم در بغداد کار می‌کرد.",
+       "fa": "محمد بن موسی خوارزمی، ریاضی‌دان و ستاره‌شناس اهل خوارزم، حدود سال ۷۸۰ میلادی به دنیا آمد و در قرن نهم در بغداد کار می‌کرد.",
        "tr": "",
-       "de": "Muhammad ibn Musa al-Chwarizmi, Mathematiker und Astronom aus Choresmien, arbeitete im 9. Jahrhundert in Bagdad."
+       "de": "Muhammad ibn Musa al-Chwarizmi, Mathematiker und Astronom aus Choresmien, wurde um 780 geboren und arbeitete im 9. Jahrhundert in Bagdad."
       },
       {
        "fa": "کتاب او درباره‌ی «جبر و مقابله» پایه‌ی رشته‌ای شد که امروز در همه‌ی مدرسه‌های جهان تدریس می‌شود، و نام اروپایی این رشته از همین عنوان آمده است.",
@@ -61,19 +81,34 @@
        "de": "Sein Buch über ‹Ergänzen und Ausgleichen› wurde zur Grundlage eines Fachs, das heute an allen Schulen der Welt unterrichtet wird, und der europäische Name dieses Fachs – Algebra – stammt aus genau diesem Titel."
       },
       {
+       "fa": "«جبر» در اینجا یعنی انتقال یک مقدار منفی به طرف دیگر معادله، و «مقابله» یعنی حذف مقدار‌های برابر از دو طرف آن.",
+       "tr": "",
+       "de": "‹Dschabr› bedeutet hier, einen negativen Wert auf die andere Seite der Gleichung zu bringen, und ‹Muqabala›, gleiche Werte auf beiden Seiten wegzustreichen."
+      },
+      {
+       "fa": "خوارزمی این روش‌ها را برای کار‌های عملی مانند حساب‌های تجاری، تقسیم ارث و اندازه‌گیری زمین به کار برد.",
+       "tr": "",
+       "de": "Kharazmi wandte diese Verfahren auf praktische Aufgaben an, etwa auf Handelsrechnungen, Erbteilungen und die Landvermessung."
+      },
+      {
        "fa": "وقتی آثار او در قرن دوازدهم به لاتین ترجمه شد، نامش را «الگوریتمی» نوشتند و واژه‌ی «الگوریتم» از همین نام ساخته شد.",
        "tr": "",
        "de": "Als seine Werke im 12. Jahrhundert ins Lateinische übersetzt wurden, schrieb man seinen Namen ‹Algoritmi›, und daraus entstand das Wort ‹Algorithmus›."
       },
       {
-       "fa": "ترجمه‌ی لاتین یکی از کتاب‌های او به اروپاییان کمک کرد تا با ارقام هندی و عدد صفر آشنا شوند.",
+       "fa": "ترجمه‌ی لاتین کتاب دیگری از او درباره‌ی حساب هندی به اروپاییان کمک کرد تا با ارقام هندی و عدد صفر آشنا شوند؛ متن عربی این کتاب از میان رفته و فقط ترجمه‌ی لاتین آن باقی مانده است.",
        "tr": "",
-       "de": "Die lateinische Übersetzung eines seiner Bücher half den Europäern, die indischen Ziffern und die Zahl Null kennenzulernen."
+       "de": "Die lateinische Übersetzung eines weiteren Buches von ihm über das indische Rechnen half den Europäern, die indischen Ziffern und die Null kennenzulernen; der arabische Text dieses Buches ist verloren, erhalten ist nur die lateinische Übersetzung."
       },
       {
-       "fa": "محمد بن زکریای رازی، که در شهر ری در نزدیکی تهران امروزی به دنیا آمد، پزشک و شیمیدانی نام‌آور بود.",
+       "fa": "حدود دو قرن بعد، عمر خیام، که امروز بیشتر به خاطر رباعیاتش شناخته می‌شود، کار ریاضی‌دانان پیشین را ادامه داد و معادله‌های درجه‌ی سوم را با روش‌های هندسی بررسی کرد.",
        "tr": "",
-       "de": "Muhammad ibn Zakariya ar-Razi, der in der Stadt Rey nahe dem heutigen Teheran geboren wurde, war ein berühmter Arzt und Chemiker."
+       "de": "Etwa zwei Jahrhunderte später setzte Omar Chayyam, der heute vor allem für seine Vierzeiler bekannt ist, die Arbeit früherer Mathematiker fort und untersuchte Gleichungen dritten Grades mit geometrischen Methoden."
+      },
+      {
+       "fa": "محمد بن زکریای رازی (حدود ۸۶۵ تا ۹۲۵ میلادی)، که در شهر ری در نزدیکی تهران امروزی به دنیا آمد، پزشک و شیمیدانی نام‌آور بود.",
+       "tr": "",
+       "de": "Muhammad ibn Zakariya ar-Razi (um 865 bis 925), der in der Stadt Rey nahe dem heutigen Teheran geboren wurde, war ein berühmter Arzt und Chemiker."
       },
       {
        "fa": "او ریاست بیمارستان‌هایی در ری و بغداد را بر عهده داشت و به شاگردانش یاد می‌داد که بیماران را با دقت مشاهده کنند.",
@@ -86,14 +121,24 @@
        "de": "In einer berühmten Abhandlung unterschied Razi klar zwischen Masern und Pocken und gehörte zu den ersten Ärzten, die diese beiden Krankheiten genau beschrieben."
       },
       {
+       "fa": "رازی به نظر استادان پیشین چشم‌بسته اعتماد نمی‌کرد و در کتابی با عنوان «شکوک بر جالینوس» بعضی از نظریه‌های این پزشک بزرگ یونانی را نقد کرد.",
+       "tr": "",
+       "de": "Razi vertraute den Ansichten früherer Meister nicht blind und kritisierte in einem Buch mit dem Titel ‹Zweifel an Galen› einige Theorien dieses großen griechischen Arztes."
+      },
+      {
        "fa": "او در آزمایش‌هایش با تقطیر کار می‌کرد و او را از نخستین کسانی می‌دانند که الکل را برای مصارف پزشکی به دست آوردند.",
        "tr": "",
        "de": "Er arbeitete in seinen Experimenten mit Destillation, und man zählt ihn zu den Ersten, die Alkohol für medizinische Zwecke gewannen."
       },
       {
-       "fa": "ابوریحان بیرونی، که او هم اهل خوارزم بود، تقریبا به همه‌چیز علاقه داشت: نجوم، ریاضی، جغرافیا، تاریخ و زبان.",
+       "fa": "ابوریحان بیرونی (۹۷۳ تا حدود ۱۰۵۰ میلادی)، که او هم اهل خوارزم بود، تقریبا به همه‌چیز علاقه داشت: نجوم، ریاضی، جغرافیا، تاریخ و زبان.",
        "tr": "",
-       "de": "Abu Raihan al-Biruni, der ebenfalls aus Choresmien stammte, interessierte sich für fast alles: Astronomie, Mathematik, Geografie, Geschichte und Sprachen."
+       "de": "Abu Raihan al-Biruni (973 bis um 1050), der ebenfalls aus Choresmien stammte, interessierte sich für fast alles: Astronomie, Mathematik, Geografie, Geschichte und Sprachen."
+      },
+      {
+       "fa": "او سال‌ها در دربار غزنویان در شهر غزنه، در افغانستان امروزی، کار کرد و از آنجا به هند سفر کرد.",
+       "tr": "",
+       "de": "Er arbeitete jahrelang am Hof der Ghaznawiden in Ghazni im heutigen Afghanistan und reiste von dort nach Indien."
       },
       {
        "fa": "او با روشی هوشمندانه و با کمک ارتفاع یک کوه، شعاع زمین را اندازه گرفت و نتیجه‌اش فقط اندکی با عدد امروزی تفاوت دارد.",
@@ -101,19 +146,29 @@
        "de": "Mit einer klugen Methode und mithilfe der Höhe eines Berges maß er den Erdradius, und sein Ergebnis weicht nur wenig vom heutigen Wert ab."
       },
       {
+       "fa": "او این اندازه‌گیری را در نزدیکی قلعه‌ی نندنه، در پاکستان امروزی، انجام داد؛ عدد او حدود ۶۳۴۰ کیلومتر بود و شعاع میانگین زمین را امروز حدود ۶۳۷۱ کیلومتر می‌دانند.",
+       "tr": "",
+       "de": "Er führte diese Messung bei der Festung Nandana im heutigen Pakistan durch; sein Wert lag bei etwa 6340 Kilometern, heute gibt man den mittleren Erdradius mit etwa 6371 Kilometern an."
+      },
+      {
        "fa": "بیرونی مدتی در هند زندگی کرد، سانسکریت آموخت و کتابی درباره‌ی علوم، فرهنگ و آداب مردم هند نوشت که هنوز منبعی ارزشمند است.",
        "tr": "",
        "de": "Biruni lebte eine Zeit lang in Indien, lernte Sanskrit und schrieb ein Buch über die Wissenschaften, die Kultur und die Sitten der Menschen Indiens, das noch heute eine wertvolle Quelle ist."
       },
       {
-       "fa": "ابن سینا، که در نزدیکی بخارا به دنیا آمد، کتاب «قانون در طب» را نوشت؛ دانشنامه‌ای پزشکی در پنج کتاب.",
+       "fa": "او در کتاب «آثار الباقیه» گاه‌شماری‌ها و جشن‌های ملت‌های گوناگون را با هم مقایسه کرد و «التفهیم» را، که آموزش مقدمات نجوم و ریاضی است، هم به فارسی و هم به عربی نوشت.",
        "tr": "",
-       "de": "Avicenna (Ibn Sina), der in der Nähe von Buchara geboren wurde, schrieb den ‹Kanon der Medizin› – eine medizinische Enzyklopädie in fünf Büchern."
+       "de": "Im Buch ‹Die Spuren vergangener Generationen› verglich er die Zeitrechnungen und Feste verschiedener Völker, und das ‹Tafhim›, eine Einführung in die Grundlagen der Astronomie und Mathematik, schrieb er sowohl auf Persisch als auch auf Arabisch."
       },
       {
-       "fa": "این اثر در قرن دوازدهم به لاتین ترجمه شد و چند قرن در دانشگاه‌های اروپا تدریس می‌شد.",
+       "fa": "ابن سینا (۹۸۰ تا ۱۰۳۷ میلادی)، که در نزدیکی بخارا به دنیا آمد، کتاب «قانون در طب» را نوشت؛ دانشنامه‌ای پزشکی در پنج کتاب.",
        "tr": "",
-       "de": "Dieses Werk wurde im 12. Jahrhundert ins Lateinische übersetzt und mehrere Jahrhunderte lang an Europas Universitäten gelehrt."
+       "de": "Avicenna (Ibn Sina, 980 bis 1037), der in der Nähe von Buchara geboren wurde, schrieb den ‹Kanon der Medizin› – eine medizinische Enzyklopädie in fünf Büchern."
+      },
+      {
+       "fa": "این اثر در قرن دوازدهم به دست ژرار کرمونایی در شهر تولدو به لاتین ترجمه شد و تا حدود قرن هفدهم در دانشگاه‌های اروپا تدریس می‌شد.",
+       "tr": "",
+       "de": "Dieses Werk wurde im 12. Jahrhundert von Gerhard von Cremona in Toledo ins Lateinische übersetzt und bis etwa ins 17. Jahrhundert an Europas Universitäten gelehrt."
       },
       {
        "fa": "ابن سینا «دانشنامه‌ی علایی» را هم به فارسی نوشت که از نخستین کتاب‌های فلسفی به زبان فارسی است.",
@@ -121,9 +176,19 @@
        "de": "Avicenna schrieb außerdem das ‹Buch des Wissens für Ala ad-Daula› auf Persisch, eines der ersten philosophischen Bücher in persischer Sprache."
       },
       {
-       "fa": "این دانشمندان تنها کار نمی‌کردند: آثار یونانیان را می‌خواندند، بر آنها شرح می‌نوشتند و با یکدیگر نامه‌نگاری و بحث می‌کردند.",
+       "fa": "بیرونی و ابن سینا در جوانی نامه‌هایی به یکدیگر نوشتند و در آن‌ها درباره‌ی پرسش‌هایی از طبیعیات و نجوم بحث کردند؛ متن این پرسش‌ها و پاسخ‌ها هنوز در دست است.",
+       "tr": "",
+       "de": "Biruni und Avicenna schrieben sich in jungen Jahren Briefe und diskutierten darin Fragen der Naturlehre und der Astronomie; der Text dieser Fragen und Antworten ist bis heute erhalten."
+      },
+      {
+       "fa": "این دانشمندان تنها کار نمی‌کردند: آثار یونانیان را می‌خواندند، بر آن‌ها شرح می‌نوشتند و با یکدیگر نامه‌نگاری و بحث می‌کردند.",
        "tr": "",
        "de": "Diese Gelehrten arbeiteten nicht allein: Sie lasen die Werke der Griechen, schrieben Kommentare dazu und führten untereinander Briefwechsel und Debatten."
+      },
+      {
+       "fa": "در قرن‌های دوازدهم و سیزدهم صد‌ها کتاب عربی در اسپانیا و ایتالیا به لاتین ترجمه شد و علم از بغداد به اروپا رسید، همان‌طور که پیش‌تر از آتن و اسکندریه به بغداد رسیده بود.",
+       "tr": "",
+       "de": "Im 12. und 13. Jahrhundert wurden in Spanien und Italien Hunderte arabische Bücher ins Lateinische übersetzt, und die Wissenschaft gelangte von Bagdad nach Europa – so wie sie zuvor von Athen und Alexandria nach Bagdad gelangt war."
       },
       {
        "fa": "به همین دلیل، تاریخ علم را نمی‌توان تاریخ یک ملت دانست؛ میراث علمی این دوره حاصل گفتگوی فرهنگ‌هاست.",
@@ -197,7 +262,7 @@
        "richtig": 1,
        "fa": "کتاب «قانون» ابن سینا هیچ‌وقت به لاتین ترجمه نشد.",
        "fest": true,
-       "erkl": "Er wurde im <b>12. Jahrhundert</b> ins Lateinische übersetzt und jahrhundertelang gelehrt."
+       "erkl": "Er wurde im <b>12. Jahrhundert</b> in Toledo ins Lateinische übersetzt und jahrhundertelang gelehrt."
       },
       {
        "frage": "Richtig oder falsch?",
@@ -207,6 +272,27 @@
        ],
        "richtig": 0,
        "fa": "زبان علم در آن دوره بیشتر عربی بود.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "متن عربی کتاب خوارزمی درباره‌ی حساب هندی امروز در دست است.",
+       "fest": true,
+       "erkl": "Der arabische Text ist <b>verloren</b>; erhalten ist nur die lateinische Übersetzung."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "بیرونی و ابن سینا با یکدیگر نامه‌نگاری می‌کردند.",
        "fest": true
       }
      ]
@@ -221,6 +307,15 @@
         "aus dem Titel von Kharazmis Buch",
         "aus dem Namen einer Stadt",
         "aus dem Griechischen"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Warum gab es im 9. Jahrhundert plötzlich viel mehr Bücher?",
+       "optionen": [
+        "Papier war viel billiger als Pergament und Papyrus.",
+        "Der Buchdruck war erfunden worden.",
+        "Alle Bücher kamen aus China."
        ],
        "richtig": 0
       },
@@ -268,7 +363,7 @@
      "frage": "Bring die Sätze in die Reihenfolge des Textes.",
      "items": [
       {
-       "fa": "در قرن‌های نهم تا یازدهم میلادی، شهرهایی مثل بغداد، ری، بخارا و نیشابور از مراکز مهم علم در جهان بودند.",
+       "fa": "در قرن‌های نهم تا یازدهم میلادی، شهر‌هایی مثل بغداد، ری، بخارا و نیشابور از مراکز مهم علم در جهان بودند.",
        "tr": "",
        "de": "Im 9. bis 11. Jahrhundert gehörten Städte wie Bagdad, Rey, Buchara und Nischapur zu den wichtigen Zentren der Wissenschaft in der Welt."
       },
@@ -278,24 +373,24 @@
        "de": "Historiker nennen diese Zeit das ‹goldene Zeitalter› der Wissenschaft im Mittelalter."
       },
       {
-       "fa": "یکی از مهم‌ترین نهادهای این دوره «بیت‌الحکمه» در بغداد بود؛ کتابخانه و مرکز پژوهشی که دانشمندان زیادی را از سرزمین‌های مختلف جذب می‌کرد.",
+       "fa": "این شکوفایی دلایل گوناگونی داشت: راه‌های تجاری شرق و غرب جهان را به هم وصل می‌کردند، شهر‌ها ثروتمند بودند و بسیاری از حاکمان از دانشمندان حمایت می‌کردند.",
+       "tr": "",
+       "de": "Diese Blüte hatte verschiedene Gründe: Handelswege verbanden den Osten und den Westen der Welt, die Städte waren reich, und viele Herrscher förderten die Gelehrten."
+      },
+      {
+       "fa": "عامل مهم دیگر کاغذ بود؛ در قرن هشتم میلادی فن ساختن کاغذ از چین به سمرقند رسید و کمی بعد در بغداد هم کارگاه‌های کاغذسازی به راه افتاد.",
+       "tr": "",
+       "de": "Ein weiterer wichtiger Faktor war das Papier: Im 8. Jahrhundert gelangte die Technik der Papierherstellung aus China nach Samarkand, und bald darauf entstanden auch in Bagdad Papierwerkstätten."
+      },
+      {
+       "fa": "کاغذ از پوست و پاپیروس بسیار ارزان‌تر بود؛ در نتیجه شمار کتاب‌ها به‌سرعت افزایش یافت و کتابخانه‌های بزرگ شکل گرفتند.",
+       "tr": "",
+       "de": "Papier war viel billiger als Pergament und Papyrus; folglich stieg die Zahl der Bücher rasch, und es entstanden große Bibliotheken."
+      },
+      {
+       "fa": "یکی از مهم‌ترین نهاد‌های این دوره «بیت‌الحکمه» در بغداد بود؛ کتابخانه و مرکز پژوهشی که دانشمندان زیادی را از سرزمین‌های مختلف جذب می‌کرد.",
        "tr": "",
        "de": "Eine der wichtigsten Einrichtungen dieser Zeit war das ‹Haus der Weisheit› in Bagdad – eine Bibliothek und ein Forschungszentrum, das viele Gelehrte aus verschiedenen Ländern anzog."
-      },
-      {
-       "fa": "در آنجا و در مراکز دیگر، آثار یونانی، سریانی، پهلوی و هندی به عربی ترجمه شد؛ این جنبش بزرگ را «نهضت ترجمه» می‌نامند.",
-       "tr": "",
-       "de": "Dort und in anderen Zentren wurden griechische, syrische, mittelpersische und indische Werke ins Arabische übersetzt; diese große Bewegung nennt man die ‹Übersetzungsbewegung›."
-      },
-      {
-       "fa": "زبان علم در آن زمان بیشتر عربی بود، اما بسیاری از دانشمندان برجسته‌ی این دوره ایرانی بودند و بعضی از آنها به فارسی هم می‌نوشتند.",
-       "tr": "",
-       "de": "Die Sprache der Wissenschaft war damals überwiegend Arabisch, doch viele herausragende Gelehrte dieser Zeit waren Iraner, und einige schrieben auch auf Persisch."
-      },
-      {
-       "fa": "محمد بن موسی خوارزمی، ریاضی‌دان و ستاره‌شناس اهل خوارزم، در قرن نهم در بغداد کار می‌کرد.",
-       "tr": "",
-       "de": "Muhammad ibn Musa al-Chwarizmi, Mathematiker und Astronom aus Choresmien, arbeitete im 9. Jahrhundert in Bagdad."
       }
      ]
     }
@@ -314,8 +409,8 @@
        "frage": "<span class='fa'>اگر امروز در اروپا کسی از «الگوریتم» یا «___» حرف بزند، شاید نداند که این دو واژه به دانشمندانی برمی‌گردند که بیش از هزار سال پیش زندگی می‌کردند.</span><br><span class='mini'>Wenn heute in Europa jemand von ‹Algorithmus› oder ‹Algebra› spricht, weiß er vielleicht nicht, dass diese beiden Wörter auf Gelehrte zurückgehen, die vor über tausend Jahren lebten.</span>",
        "optionen": [
         "جبر",
-        "کتابخانه",
-        "بیمارستان"
+        "فهرست",
+        "استاد"
        ],
        "richtig": 0,
        "optFa": true,
@@ -326,8 +421,8 @@
        "frage": "<span class='fa'>مورخان این زمان را «___» علم در قرون میانه می‌نامند.</span><br><span class='mini'>Historiker nennen diese Zeit das ‹goldene Zeitalter› der Wissenschaft im Mittelalter.</span>",
        "optionen": [
         "دوره‌ی طلایی",
-        "نجوم",
-        "داروشناسی"
+        "پانویس",
+        "اسطرلاب"
        ],
        "richtig": 0,
        "optFa": true,
@@ -335,52 +430,52 @@
        "erkl": "<span class='fa'>مورخان این زمان را «دوره‌ی طلایی» علم در قرون میانه می‌نامند.</span>"
       },
       {
-       "frage": "<span class='fa'>یکی از مهم‌ترین نهادهای این دوره «___» در بغداد بود؛ کتابخانه و مرکز پژوهشی که دانشمندان زیادی را از سرزمین‌های مختلف جذب می‌کرد.</span><br><span class='mini'>Eine der wichtigsten Einrichtungen dieser Zeit war das ‹Haus der Weisheit› in Bagdad – eine Bibliothek und ein Forschungszentrum, das viele Gelehrte aus verschiedenen Ländern anzog.</span>",
+       "frage": "<span class='fa'>عامل مهم دیگر ___ بود؛ در قرن هشتم میلادی فن ساختن کاغذ از چین به سمرقند رسید و کمی بعد در بغداد هم کارگاه‌های کاغذسازی به راه افتاد.</span><br><span class='mini'>Ein weiterer wichtiger Faktor war das Papier: Im 8. Jahrhundert gelangte die Technik der Papierherstellung aus China nach Samarkand, und bald darauf entstanden auch in Bagdad Papierwerkstätten.</span>",
+       "optionen": [
+        "کاغذ",
+        "اختراع",
+        "ارجاع"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>عامل مهم دیگر کاغذ بود؛ در قرن هشتم میلادی فن ساختن کاغذ از چین به سمرقند رسید و کمی بعد در بغداد هم کارگاه‌های کاغذسازی به راه افتاد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>___ از پوست و پاپیروس بسیار ارزان‌تر بود؛ در نتیجه شمار کتاب‌ها به‌سرعت افزایش یافت و کتابخانه‌های بزرگ شکل گرفتند.</span><br><span class='mini'>Papier war viel billiger als Pergament und Papyrus; folglich stieg die Zahl der Bücher rasch, und es entstanden große Bibliotheken.</span>",
+       "optionen": [
+        "کاغذ",
+        "ارجاع",
+        "نام‌آور"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>کاغذ از پوست و پاپیروس بسیار ارزان‌تر بود؛ در نتیجه شمار کتاب‌ها به‌سرعت افزایش یافت و کتابخانه‌های بزرگ شکل گرفتند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>یکی از مهم‌ترین نهاد‌های این دوره «___» در بغداد بود؛ کتابخانه و مرکز پژوهشی که دانشمندان زیادی را از سرزمین‌های مختلف جذب می‌کرد.</span><br><span class='mini'>Eine der wichtigsten Einrichtungen dieser Zeit war das ‹Haus der Weisheit› in Bagdad – eine Bibliothek und ein Forschungszentrum, das viele Gelehrte aus verschiedenen Ländern anzog.</span>",
        "optionen": [
         "بیت‌الحکمه",
-        "استاد",
-        "بیمارستان"
+        "ریاضی‌دان",
+        "ستاره‌شناس"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
-       "erkl": "<span class='fa'>یکی از مهم‌ترین نهادهای این دوره «بیت‌الحکمه» در بغداد بود؛ کتابخانه و مرکز پژوهشی که دانشمندان زیادی را از سرزمین‌های مختلف جذب می‌کرد.</span>"
+       "erkl": "<span class='fa'>یکی از مهم‌ترین نهاد‌های این دوره «بیت‌الحکمه» در بغداد بود؛ کتابخانه و مرکز پژوهشی که دانشمندان زیادی را از سرزمین‌های مختلف جذب می‌کرد.</span>"
       },
       {
-       "frage": "<span class='fa'>در آنجا و در مراکز دیگر، آثار یونانی، سریانی، پهلوی و هندی به عربی ترجمه شد؛ این جنبش بزرگ را «___» می‌نامند.</span><br><span class='mini'>Dort und in anderen Zentren wurden griechische, syrische, mittelpersische und indische Werke ins Arabische übersetzt; diese große Bewegung nennt man die ‹Übersetzungsbewegung›.</span>",
+       "frage": "<span class='fa'>درباره‌ی شکل دقیق این نهاد میان مورخان بحث است، اما روشن است که در دوره‌ی عباسیان، به‌ویژه در قرن نهم، کار ___ و پژوهش در بغداد رونق فراوانی داشت.</span><br><span class='mini'>Über die genaue Gestalt dieser Einrichtung wird unter Historikern noch diskutiert, doch fest steht, dass Übersetzung und Forschung in Bagdad unter den Abbasiden, besonders im 9. Jahrhundert, eine große Blüte erlebten.</span>",
        "optionen": [
-        "نهضت ترجمه",
-        "ستاره‌شناس",
-        "دانشمند"
+        "ترجمه",
+        "پزشک",
+        "استاد"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
-       "erkl": "<span class='fa'>در آنجا و در مراکز دیگر، آثار یونانی، سریانی، پهلوی و هندی به عربی ترجمه شد؛ این جنبش بزرگ را «نهضت ترجمه» می‌نامند.</span>"
-      },
-      {
-       "frage": "<span class='fa'>محمد بن موسی خوارزمی، ریاضی‌دان و ___ اهل خوارزم، در قرن نهم در بغداد کار می‌کرد.</span><br><span class='mini'>Muhammad ibn Musa al-Chwarizmi, Mathematiker und Astronom aus Choresmien, arbeitete im 9. Jahrhundert in Bagdad.</span>",
-       "optionen": [
-        "ستاره‌شناس",
-        "دانشنامه",
-        "رساله"
-       ],
-       "richtig": 0,
-       "optFa": true,
-       "hoeren": false,
-       "erkl": "<span class='fa'>محمد بن موسی خوارزمی، ریاضی‌دان و ستاره‌شناس اهل خوارزم، در قرن نهم در بغداد کار می‌کرد.</span>"
-      },
-      {
-       "frage": "<span class='fa'>کتاب او درباره‌ی «___ و مقابله» پایه‌ی رشته‌ای شد که امروز در همه‌ی مدرسه‌های جهان تدریس می‌شود، و نام اروپایی این رشته از همین عنوان آمده است.</span><br><span class='mini'>Sein Buch über ‹Ergänzen und Ausgleichen› wurde zur Grundlage eines Fachs, das heute an allen Schulen der Welt unterrichtet wird, und der europäische Name dieses Fachs – Algebra – stammt aus genau diesem Titel.</span>",
-       "optionen": [
-        "جبر",
-        "شعاع",
-        "نجوم"
-       ],
-       "richtig": 0,
-       "optFa": true,
-       "hoeren": false,
-       "erkl": "<span class='fa'>کتاب او درباره‌ی «جبر و مقابله» پایه‌ی رشته‌ای شد که امروز در همه‌ی مدرسه‌های جهان تدریس می‌شود، و نام اروپایی این رشته از همین عنوان آمده است.</span>"
+       "erkl": "<span class='fa'>درباره‌ی شکل دقیق این نهاد میان مورخان بحث است، اما روشن است که در دوره‌ی عباسیان، به‌ویژه در قرن نهم، کار ترجمه و پژوهش در بغداد رونق فراوانی داشت.</span>"
       }
      ]
     },
@@ -389,11 +484,59 @@
      "titel": "Welches Wort fehlt im Text?",
      "fragen": [
       {
+       "frage": "<span class='fa'>در آنجا و در مراکز دیگر، آثار یونانی، سریانی، پهلوی و هندی به عربی ترجمه شد؛ این جنبش بزرگ را «___» می‌نامند.</span><br><span class='mini'>Dort und in anderen Zentren wurden griechische, syrische, mittelpersische und indische Werke ins Arabische übersetzt; diese große Bewegung nennt man die ‹Übersetzungsbewegung›.</span>",
+       "optionen": [
+        "نهضت ترجمه",
+        "ستاره‌شناس",
+        "کتابدار"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>در آنجا و در مراکز دیگر، آثار یونانی، سریانی، پهلوی و هندی به عربی ترجمه شد؛ این جنبش بزرگ را «نهضت ترجمه» می‌نامند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>محمد بن موسی خوارزمی، ریاضی‌دان و ___ اهل خوارزم، حدود سال ۷۸۰ میلادی به دنیا آمد و در قرن نهم در بغداد کار می‌کرد.</span><br><span class='mini'>Muhammad ibn Musa al-Chwarizmi, Mathematiker und Astronom aus Choresmien, wurde um 780 geboren und arbeitete im 9. Jahrhundert in Bagdad.</span>",
+       "optionen": [
+        "ستاره‌شناس",
+        "مترجم",
+        "بیمارستان"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>محمد بن موسی خوارزمی، ریاضی‌دان و ستاره‌شناس اهل خوارزم، حدود سال ۷۸۰ میلادی به دنیا آمد و در قرن نهم در بغداد کار می‌کرد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>کتاب او درباره‌ی «___ و مقابله» پایه‌ی رشته‌ای شد که امروز در همه‌ی مدرسه‌های جهان تدریس می‌شود، و نام اروپایی این رشته از همین عنوان آمده است.</span><br><span class='mini'>Sein Buch über ‹Ergänzen und Ausgleichen› wurde zur Grundlage eines Fachs, das heute an allen Schulen der Welt unterrichtet wird, und der europäische Name dieses Fachs – Algebra – stammt aus genau diesem Titel.</span>",
+       "optionen": [
+        "جبر",
+        "برجسته",
+        "داروشناسی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>کتاب او درباره‌ی «جبر و مقابله» پایه‌ی رشته‌ای شد که امروز در همه‌ی مدرسه‌های جهان تدریس می‌شود، و نام اروپایی این رشته از همین عنوان آمده است.</span>"
+      },
+      {
+       "frage": "<span class='fa'>«جبر» در اینجا یعنی انتقال یک مقدار منفی به طرف دیگر ___، و «مقابله» یعنی حذف مقدار‌های برابر از دو طرف آن.</span><br><span class='mini'>‹Dschabr› bedeutet hier, einen negativen Wert auf die andere Seite der Gleichung zu bringen, und ‹Muqabala›, gleiche Werte auf beiden Seiten wegzustreichen.</span>",
+       "optionen": [
+        "معادله",
+        "پزشک",
+        "کتابخانه"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>«جبر» در اینجا یعنی انتقال یک مقدار منفی به طرف دیگر معادله، و «مقابله» یعنی حذف مقدار‌های برابر از دو طرف آن.</span>"
+      },
+      {
        "frage": "<span class='fa'>وقتی آثار او در قرن دوازدهم به لاتین ___ شد، نامش را «الگوریتمی» نوشتند و واژه‌ی «الگوریتم» از همین نام ساخته شد.</span><br><span class='mini'>Als seine Werke im 12. Jahrhundert ins Lateinische übersetzt wurden, schrieb man seinen Namen ‹Algoritmi›, und daraus entstand das Wort ‹Algorithmus›.</span>",
        "optionen": [
         "ترجمه",
-        "عدد",
-        "رساله"
+        "شعاع",
+        "پانویس"
        ],
        "richtig": 0,
        "optFa": true,
@@ -401,47 +544,65 @@
        "erkl": "<span class='fa'>وقتی آثار او در قرن دوازدهم به لاتین ترجمه شد، نامش را «الگوریتمی» نوشتند و واژه‌ی «الگوریتم» از همین نام ساخته شد.</span>"
       },
       {
-       "frage": "<span class='fa'>ترجمه‌ی لاتین یکی از کتاب‌های او به اروپاییان کمک کرد تا با ارقام هندی و ___ صفر آشنا شوند.</span><br><span class='mini'>Die lateinische Übersetzung eines seiner Bücher half den Europäern, die indischen Ziffern und die Zahl Null kennenzulernen.</span>",
+       "frage": "<span class='fa'>ترجمه‌ی لاتین کتاب دیگری از او درباره‌ی حساب هندی به اروپاییان کمک کرد تا با ارقام هندی و ___ صفر آشنا شوند؛ متن عربی این کتاب از میان رفته و فقط ترجمه‌ی لاتین آن باقی مانده است.</span><br><span class='mini'>Die lateinische Übersetzung eines weiteren Buches von ihm über das indische Rechnen half den Europäern, die indischen Ziffern und die Null kennenzulernen; der arabische Text dieses Buches ist verloren, erhalten ist nur die lateinische Übersetzung.</span>",
        "optionen": [
         "عدد",
-        "شرح",
-        "منبع"
+        "برجسته",
+        "بیمارستان"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
-       "erkl": "<span class='fa'>ترجمه‌ی لاتین یکی از کتاب‌های او به اروپاییان کمک کرد تا با ارقام هندی و عدد صفر آشنا شوند.</span>"
-      },
+       "erkl": "<span class='fa'>ترجمه‌ی لاتین کتاب دیگری از او درباره‌ی حساب هندی به اروپاییان کمک کرد تا با ارقام هندی و عدد صفر آشنا شوند؛ متن عربی این کتاب از میان رفته و فقط ترجمه‌ی لاتین آن باقی مانده است.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort fehlt im Text?",
+     "fragen": [
       {
-       "frage": "<span class='fa'>محمد بن زکریای رازی، که در شهر ری در نزدیکی تهران امروزی به دنیا آمد، پزشک و شیمیدانی ___ بود.</span><br><span class='mini'>Muhammad ibn Zakariya ar-Razi, der in der Stadt Rey nahe dem heutigen Teheran geboren wurde, war ein berühmter Arzt und Chemiker.</span>",
+       "frage": "<span class='fa'>محمد بن زکریای رازی (حدود ۸۶۵ تا ۹۲۵ میلادی)، که در شهر ری در نزدیکی تهران امروزی به دنیا آمد، پزشک و شیمیدانی ___ بود.</span><br><span class='mini'>Muhammad ibn Zakariya ar-Razi (um 865 bis 925), der in der Stadt Rey nahe dem heutigen Teheran geboren wurde, war ein berühmter Arzt und Chemiker.</span>",
        "optionen": [
         "نام‌آور",
-        "عدد",
-        "اختراع"
+        "کتابدار",
+        "نظریه"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
-       "erkl": "<span class='fa'>محمد بن زکریای رازی، که در شهر ری در نزدیکی تهران امروزی به دنیا آمد، پزشک و شیمیدانی نام‌آور بود.</span>"
+       "erkl": "<span class='fa'>محمد بن زکریای رازی (حدود ۸۶۵ تا ۹۲۵ میلادی)، که در شهر ری در نزدیکی تهران امروزی به دنیا آمد، پزشک و شیمیدانی نام‌آور بود.</span>"
       },
       {
-       "frage": "<span class='fa'>ابوریحان بیرونی، که او هم اهل خوارزم بود، تقریبا به همه‌چیز علاقه داشت: ___، ریاضی، جغرافیا، تاریخ و زبان.</span><br><span class='mini'>Abu Raihan al-Biruni, der ebenfalls aus Choresmien stammte, interessierte sich für fast alles: Astronomie, Mathematik, Geografie, Geschichte und Sprachen.</span>",
+       "frage": "<span class='fa'>رازی به نظر استادان پیشین چشم‌بسته اعتماد نمی‌کرد و در کتابی با عنوان «شکوک بر جالینوس» بعضی از نظریه‌های این ___ بزرگ یونانی را نقد کرد.</span><br><span class='mini'>Razi vertraute den Ansichten früherer Meister nicht blind und kritisierte in einem Buch mit dem Titel ‹Zweifel an Galen› einige Theorien dieses großen griechischen Arztes.</span>",
        "optionen": [
-        "نجوم",
         "پزشک",
-        "رساله"
+        "طب",
+        "کتابخانه"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
-       "erkl": "<span class='fa'>ابوریحان بیرونی، که او هم اهل خوارزم بود، تقریبا به همه‌چیز علاقه داشت: نجوم، ریاضی، جغرافیا، تاریخ و زبان.</span>"
+       "erkl": "<span class='fa'>رازی به نظر استادان پیشین چشم‌بسته اعتماد نمی‌کرد و در کتابی با عنوان «شکوک بر جالینوس» بعضی از نظریه‌های این پزشک بزرگ یونانی را نقد کرد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>ابوریحان بیرونی (۹۷۳ تا حدود ۱۰۵۰ میلادی)، که او هم اهل خوارزم بود، تقریبا به همه‌چیز علاقه داشت: ___، ریاضی، جغرافیا، تاریخ و زبان.</span><br><span class='mini'>Abu Raihan al-Biruni (973 bis um 1050), der ebenfalls aus Choresmien stammte, interessierte sich für fast alles: Astronomie, Mathematik, Geografie, Geschichte und Sprachen.</span>",
+       "optionen": [
+        "نجوم",
+        "نام‌آور",
+        "پانویس"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>ابوریحان بیرونی (۹۷۳ تا حدود ۱۰۵۰ میلادی)، که او هم اهل خوارزم بود، تقریبا به همه‌چیز علاقه داشت: نجوم، ریاضی، جغرافیا، تاریخ و زبان.</span>"
       },
       {
        "frage": "<span class='fa'>او با روشی هوشمندانه و با کمک ارتفاع یک کوه، ___ زمین را اندازه گرفت و نتیجه‌اش فقط اندکی با عدد امروزی تفاوت دارد.</span><br><span class='mini'>Mit einer klugen Methode und mithilfe der Höhe eines Berges maß er den Erdradius, und sein Ergebnis weicht nur wenig vom heutigen Wert ab.</span>",
        "optionen": [
         "شعاع",
-        "نظریه",
-        "اختراع"
+        "فهرست",
+        "برجسته"
        ],
        "richtig": 0,
        "optFa": true,
@@ -449,16 +610,28 @@
        "erkl": "<span class='fa'>او با روشی هوشمندانه و با کمک ارتفاع یک کوه، شعاع زمین را اندازه گرفت و نتیجه‌اش فقط اندکی با عدد امروزی تفاوت دارد.</span>"
       },
       {
-       "frage": "<span class='fa'>ابن سینا، که در نزدیکی بخارا به دنیا آمد، کتاب «قانون در ___» را نوشت؛ دانشنامه‌ای پزشکی در پنج کتاب.</span><br><span class='mini'>Avicenna (Ibn Sina), der in der Nähe von Buchara geboren wurde, schrieb den ‹Kanon der Medizin› – eine medizinische Enzyklopädie in fünf Büchern.</span>",
+       "frage": "<span class='fa'>او این اندازه‌گیری را در نزدیکی قلعه‌ی نندنه، در پاکستان امروزی، انجام داد؛ عدد او حدود ۶۳۴۰ کیلومتر بود و ___ میانگین زمین را امروز حدود ۶۳۷۱ کیلومتر می‌دانند.</span><br><span class='mini'>Er führte diese Messung bei der Festung Nandana im heutigen Pakistan durch; sein Wert lag bei etwa 6340 Kilometern, heute gibt man den mittleren Erdradius mit etwa 6371 Kilometern an.</span>",
        "optionen": [
-        "طب",
-        "هندسه",
-        "نظریه"
+        "شعاع",
+        "کشف",
+        "ارجاع"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
-       "erkl": "<span class='fa'>ابن سینا، که در نزدیکی بخارا به دنیا آمد، کتاب «قانون در طب» را نوشت؛ دانشنامه‌ای پزشکی در پنج کتاب.</span>"
+       "erkl": "<span class='fa'>او این اندازه‌گیری را در نزدیکی قلعه‌ی نندنه، در پاکستان امروزی، انجام داد؛ عدد او حدود ۶۳۴۰ کیلومتر بود و شعاع میانگین زمین را امروز حدود ۶۳۷۱ کیلومتر می‌دانند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>او در کتاب «آثار الباقیه» گاه‌شماری‌ها و جشن‌های ملت‌های گوناگون را با هم مقایسه کرد و «التفهیم» را، که آموزش مقدمات ___ و ریاضی است، هم به فارسی و هم به عربی نوشت.</span><br><span class='mini'>Im Buch ‹Die Spuren vergangener Generationen› verglich er die Zeitrechnungen und Feste verschiedener Völker, und das ‹Tafhim›, eine Einführung in die Grundlagen der Astronomie und Mathematik, schrieb er sowohl auf Persisch als auch auf Arabisch.</span>",
+       "optionen": [
+        "نجوم",
+        "شعاع",
+        "جبر"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>او در کتاب «آثار الباقیه» گاه‌شماری‌ها و جشن‌های ملت‌های گوناگون را با هم مقایسه کرد و «التفهیم» را، که آموزش مقدمات نجوم و ریاضی است، هم به فارسی و هم به عربی نوشت.</span>"
       }
      ]
     },
@@ -468,14 +641,14 @@
      "frage": "Bring die Zusammenfassung des Textes in die richtige Reihenfolge.",
      "items": [
       {
-       "fa": "در قرون میانه شهرهایی مثل بغداد و بخارا مراکز مهم علم بودند.",
+       "fa": "در قرون میانه شهر‌هایی مثل بغداد و بخارا مراکز مهم علم بودند و کاغذ کتاب را ارزان‌تر کرد.",
        "tr": "",
-       "de": "Im Mittelalter waren Städte wie Bagdad und Buchara wichtige Zentren der Wissenschaft."
+       "de": "Im Mittelalter waren Städte wie Bagdad und Buchara wichtige Zentren der Wissenschaft, und das Papier machte Bücher billiger."
       },
       {
-       "fa": "در بیت‌الحکمه و جاهای دیگر آثار علمی بسیاری به عربی ترجمه شد.",
+       "fa": "در بیت‌الحکمه و جا‌های دیگر آثار یونانی، پهلوی و هندی به عربی ترجمه شد.",
        "tr": "",
-       "de": "Im Haus der Weisheit und anderswo wurden viele wissenschaftliche Werke ins Arabische übersetzt."
+       "de": "Im Haus der Weisheit und anderswo wurden griechische, mittelpersische und indische Werke ins Arabische übersetzt."
       },
       {
        "fa": "خوارزمی جبر را بنیان نهاد و نامش در واژه‌ی «الگوریتم» زنده است.",
@@ -483,14 +656,307 @@
        "de": "Kharazmi begründete die Algebra, und sein Name lebt im Wort ‹Algorithmus› weiter."
       },
       {
-       "fa": "رازی، بیرونی و ابن سینا در پزشکی، شیمی و نجوم کارهای مهمی انجام دادند.",
+       "fa": "رازی در پزشکی و شیمی با مشاهده و آزمایش کار می‌کرد.",
        "tr": "",
-       "de": "Razi, Biruni und Avicenna leisteten Wichtiges in Medizin, Chemie und Astronomie."
+       "de": "Razi arbeitete in Medizin und Chemie mit Beobachtung und Experiment."
+      },
+      {
+       "fa": "بیرونی شعاع زمین را اندازه گرفت و «قانون» ابن سینا قرن‌ها در اروپا تدریس شد.",
+       "tr": "",
+       "de": "Biruni maß den Erdradius, und Avicennas ‹Kanon› wurde jahrhundertelang in Europa gelehrt."
       },
       {
        "fa": "این میراث علمی حاصل گفتگوی فرهنگ‌های مختلف است.",
        "tr": "",
        "de": "Dieses wissenschaftliche Erbe ist das Ergebnis eines Dialogs verschiedener Kulturen."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t3",
+   "titel": "Alltag: Ein Referat über Biruni",
+   "vorschau": "Ein Referat über Biruni",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>درس برداشتن</span> – einen Kurs belegen · <span class='fa'>ارائه</span> – Referat, Präsentation · <span class='fa'>بخش مرجع</span> – Auskunftsabteilung · <span class='fa'>پرداختن به</span> – sich befassen mit · <span class='fa'>امانت گرفتن / دادن</span> – ausleihen / verleihen · <span class='fa'>فیش‌برداری</span> – Exzerpieren auf Karteikarten · <span class='fa'>دشت</span> – Ebene · <span class='fa'>اسلاید</span> – Folie · <span class='fa'>زمان گرفتن</span> – die Zeit stoppen · <span class='fa'>نشریه</span> – Zeitschrift · <span class='fa'>مهلت</span> – Frist</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Alltag: Ein Referat über Biruni",
+     "text": "Alltagstext – Tippe eine Zeile an, wenn du die Übersetzung brauchst.",
+     "zeilen": [
+      {
+       "fa": "سارا رحمانی دانشجوی سال دوم فیزیک در دانشگاه تهران است و این ترم درس «تاریخ علم» را برداشته است.",
+       "tr": "",
+       "de": "Sara Rahmani studiert im zweiten Jahr Physik an der Universität Teheran und hat in diesem Semester den Kurs ‹Wissenschaftsgeschichte› belegt."
+      },
+      {
+       "fa": "استاد درس از هر دانشجو خواسته است که درباره‌ی یکی از دانشمندان قرون میانه یک ارائه‌ی بیست‌دقیقه‌ای آماده کند.",
+       "tr": "",
+       "de": "Der Dozent hat alle Studierenden gebeten, über einen Gelehrten des Mittelalters ein zwanzigminütiges Referat vorzubereiten."
+      },
+      {
+       "fa": "سارا بیرونی را انتخاب کرده است، چون اندازه‌گیری شعاع زمین به رشته‌ی خودش نزدیک است.",
+       "tr": "",
+       "de": "Sara hat Biruni gewählt, weil die Messung des Erdradius ihrem eigenen Fach nahesteht."
+      },
+      {
+       "fa": "دو هفته پیش از ارائه، یک روز بعدازظهر به کتابخانه‌ی مرکزی دانشگاه می‌رود.",
+       "tr": "",
+       "de": "Zwei Wochen vor dem Referat geht sie eines Nachmittags in die Zentralbibliothek der Universität."
+      },
+      {
+       "fa": "اول در فهرست رایانه‌ای کتابخانه نام بیرونی را جستجو می‌کند و فهرستی طولانی از کتاب‌ها و مقاله‌ها می‌بیند.",
+       "tr": "",
+       "de": "Zuerst sucht sie im elektronischen Katalog der Bibliothek nach Birunis Namen und sieht eine lange Liste von Büchern und Aufsätzen."
+      },
+      {
+       "fa": "چون نمی‌داند از کجا شروع کند، از کتابدار بخش مرجع کمک می‌خواهد.",
+       "tr": "",
+       "de": "Da sie nicht weiß, wo sie anfangen soll, bittet sie die Bibliothekarin der Auskunftsabteilung um Hilfe."
+      },
+      {
+       "fa": "کتابدار می‌پرسد که ارائه‌ی او بیشتر درباره‌ی زندگی بیرونی است یا درباره‌ی کار‌های علمی‌اش.",
+       "tr": "",
+       "de": "Die Bibliothekarin fragt, ob ihr Referat eher von Birunis Leben oder von seinen wissenschaftlichen Arbeiten handelt."
+      },
+      {
+       "fa": "سارا توضیح می‌دهد که می‌خواهد روی روش اندازه‌گیری شعاع زمین تمرکز کند و فقط کوتاه به زندگی‌اش بپردازد.",
+       "tr": "",
+       "de": "Sara erklärt, dass sie sich auf die Methode zur Messung des Erdradius konzentrieren und nur kurz auf sein Leben eingehen möchte."
+      },
+      {
+       "fa": "کتابدار سه منبع پیشنهاد می‌کند: یک زندگی‌نامه‌ی کوتاه به فارسی، یک کتاب درباره‌ی تاریخ نجوم و متن فارسی «التفهیم» که بیرونی خودش نوشته است.",
+       "tr": "",
+       "de": "Die Bibliothekarin schlägt drei Quellen vor: eine kurze Biografie auf Persisch, ein Buch über die Geschichte der Astronomie und den persischen Text des ‹Tafhim›, den Biruni selbst verfasst hat."
+      },
+      {
+       "fa": "او توضیح می‌دهد که نسخه‌های خطی قدیمی امانت داده نمی‌شوند، اما تصویر دیجیتال بسیاری از آن‌ها در سایت کتابخانه در دسترس است.",
+       "tr": "",
+       "de": "Sie erklärt, dass alte Handschriften nicht ausgeliehen werden, dass aber digitale Aufnahmen vieler davon auf der Website der Bibliothek zugänglich sind."
+      },
+      {
+       "fa": "سارا دو کتاب را امانت می‌گیرد و تاریخ برگرداندنشان را در تقویم گوشی‌اش یادداشت می‌کند.",
+       "tr": "",
+       "de": "Sara leiht zwei Bücher aus und notiert sich das Rückgabedatum im Kalender ihres Handys."
+      },
+      {
+       "fa": "کتاب سوم فقط در تالار مطالعه قابل استفاده است، پس همان‌جا می‌نشیند و شروع به خواندن می‌کند.",
+       "tr": "",
+       "de": "Das dritte Buch kann nur im Lesesaal benutzt werden, also setzt sie sich gleich dort hin und beginnt zu lesen."
+      },
+      {
+       "fa": "او مثل بسیاری از دانشجویان ایرانی فیش‌برداری می‌کند: هر نکته‌ی مهم را با نام منبع و شماره‌ی صفحه روی یک کارت جداگانه می‌نویسد.",
+       "tr": "",
+       "de": "Wie viele iranische Studierende exzerpiert sie auf Karteikarten: Jeden wichtigen Punkt schreibt sie mit Quelle und Seitenzahl auf eine eigene Karte."
+      },
+      {
+       "fa": "در یکی از کتاب‌ها می‌خواند که بیرونی اول ارتفاع کوه را با کمک اسطرلاب و از دو نقطه‌ی مختلف در دشت اندازه گرفت.",
+       "tr": "",
+       "de": "In einem der Bücher liest sie, dass Biruni zuerst die Höhe des Berges mithilfe eines Astrolabiums von zwei verschiedenen Punkten in der Ebene aus maß."
+      },
+      {
+       "fa": "سپس از بالای کوه زاویه‌ی میان خط افق و خط افقی را مشاهده کرد و با یک محاسبه‌ی هندسی شعاع زمین را به دست آورد.",
+       "tr": "",
+       "de": "Dann beobachtete er vom Gipfel aus den Winkel zwischen der Horizontlinie und der Waagerechten und berechnete mit einer geometrischen Rechnung den Erdradius."
+      },
+      {
+       "fa": "سارا تصمیم می‌گیرد این روش را با یک شکل ساده روی اسلاید نشان دهد، چون توضیح آن فقط با کلمات دشوار است.",
+       "tr": "",
+       "de": "Sara beschließt, diese Methode mit einer einfachen Skizze auf einer Folie zu zeigen, weil sie sich mit Worten allein schwer erklären lässt."
+      },
+      {
+       "fa": "در روز‌های بعد اسلاید‌ها را آماده می‌کند: هر اسلاید یک تیتر کوتاه، یک تصویر و حداکثر سه نکته دارد.",
+       "tr": "",
+       "de": "In den folgenden Tagen bereitet sie die Folien vor: Jede Folie hat eine kurze Überschrift, ein Bild und höchstens drei Punkte."
+      },
+      {
+       "fa": "شب قبل از ارائه، متنش را برای برادر کوچکش تمرین می‌کند و با ساعت گوشی زمان می‌گیرد.",
+       "tr": "",
+       "de": "Am Abend vor dem Referat übt sie ihren Vortrag vor ihrem kleinen Bruder und stoppt die Zeit mit dem Handy."
+      },
+      {
+       "fa": "ارائه بیست‌وهشت دقیقه طول می‌کشد؛ برای همین بخشی از زندگی‌نامه را حذف می‌کند تا وقت کافی برای روش اندازه‌گیری بماند.",
+       "tr": "",
+       "de": "Das Referat dauert achtundzwanzig Minuten; deshalb streicht sie einen Teil der Biografie, damit genug Zeit für die Messmethode bleibt."
+      },
+      {
+       "fa": "روز ارائه، کمی زودتر به کلاس می‌رود تا رایانه و ویدئوپروژکتور را امتحان کند.",
+       "tr": "",
+       "de": "Am Tag des Referats geht sie etwas früher in den Seminarraum, um Computer und Beamer zu testen."
+      },
+      {
+       "fa": "ارائه بدون مشکل پیش می‌رود و هم‌کلاسی‌هایش با دقت گوش می‌دهند.",
+       "tr": "",
+       "de": "Das Referat verläuft ohne Probleme, und ihre Kommilitonen hören aufmerksam zu."
+      },
+      {
+       "fa": "در پایان یکی از دانشجویان می‌پرسد که بیرونی ارتفاع کوه را چطور بدون ابزار امروزی اندازه گرفته است، و سارا با کمک همان شکل روش را دوباره توضیح می‌دهد.",
+       "tr": "",
+       "de": "Am Ende fragt ein Student, wie Biruni die Höhe des Berges ohne heutige Instrumente gemessen hat, und Sara erklärt die Methode mithilfe derselben Skizze noch einmal."
+      },
+      {
+       "fa": "استاد از ارائه تعریف می‌کند، اما یادآوری می‌کند که در اسلاید آخر باید فهرست کامل منابع را بیاورد.",
+       "tr": "",
+       "de": "Der Dozent lobt das Referat, erinnert aber daran, dass sie auf der letzten Folie ein vollständiges Quellenverzeichnis angeben muss."
+      },
+      {
+       "fa": "او همچنین پیشنهاد می‌کند که سارا ارائه‌اش را به یک مقاله‌ی کوتاه تبدیل کند و در نشریه‌ی دانشجویی دانشکده منتشر کند.",
+       "tr": "",
+       "de": "Er schlägt außerdem vor, dass Sara ihr Referat zu einem kurzen Artikel ausarbeitet und in der Studierendenzeitschrift der Fakultät veröffentlicht."
+      },
+      {
+       "fa": "سارا همان روز عصر کتاب‌ها را به کتابخانه برمی‌گرداند، سه روز پیش از پایان مهلت امانت.",
+       "tr": "",
+       "de": "Noch am selben Abend bringt Sara die Bücher in die Bibliothek zurück – drei Tage vor Ablauf der Leihfrist."
+      },
+      {
+       "fa": "در راه خانه فکر می‌کند که بیرونی هزار سال پیش، بدون رایانه و اینترنت، چقدر صبر و دقت داشته است.",
+       "tr": "",
+       "de": "Auf dem Heimweg denkt sie darüber nach, wie viel Geduld und Genauigkeit Biruni vor tausend Jahren ohne Computer und Internet gehabt haben muss."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "سارا دانشجوی رشته‌ی تاریخ است.",
+       "fest": true,
+       "erkl": "Sara studiert <b>Physik</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "کتابدار سه منبع به سارا پیشنهاد کرد.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "نسخه‌های خطی قدیمی را می‌توان به خانه برد.",
+       "fest": true,
+       "erkl": "Alte Handschriften werden <b>nicht ausgeliehen</b>; es gibt digitale Aufnahmen."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "ارائه‌ی تمرینی سارا بیش از بیست دقیقه طول کشید.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "سارا کتاب‌ها را بعد از پایان مهلت برگرداند.",
+       "fest": true,
+       "erkl": "Sie brachte sie <b>drei Tage vor</b> Ablauf der Frist zurück."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Warum hat Sara Biruni gewählt?",
+       "optionen": [
+        "Die Messung des Erdradius steht ihrem Fach nahe.",
+        "Sie kommt aus Choresmien.",
+        "Der Dozent hat es ihr vorgeschrieben."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie macht Sara sich Notizen?",
+       "optionen": [
+        "auf Karteikarten mit Quelle und Seitenzahl",
+        "direkt in die Bücher",
+        "nur im Kopf"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was ändert Sara nach der Probe?",
+       "optionen": [
+        "Sie kürzt den biografischen Teil.",
+        "Sie wählt ein neues Thema.",
+        "Sie streicht die Skizze."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was kritisiert der Dozent?",
+       "optionen": [
+        "Es fehlt ein vollständiges Quellenverzeichnis.",
+        "Das Referat war zu kurz.",
+        "Die Folien hatten keine Bilder."
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "استاد درس از هر دانشجو خواسته است که درباره‌ی یکی از دانشمندان قرون میانه یک ارائه‌ی بیست‌دقیقه‌ای آماده کند.",
+       "tr": "",
+       "de": "Der Dozent hat alle Studierenden gebeten, über einen Gelehrten des Mittelalters ein zwanzigminütiges Referat vorzubereiten."
+      },
+      {
+       "fa": "سارا بیرونی را انتخاب کرده است، چون اندازه‌گیری شعاع زمین به رشته‌ی خودش نزدیک است.",
+       "tr": "",
+       "de": "Sara hat Biruni gewählt, weil die Messung des Erdradius ihrem eigenen Fach nahesteht."
+      },
+      {
+       "fa": "دو هفته پیش از ارائه، یک روز بعدازظهر به کتابخانه‌ی مرکزی دانشگاه می‌رود.",
+       "tr": "",
+       "de": "Zwei Wochen vor dem Referat geht sie eines Nachmittags in die Zentralbibliothek der Universität."
+      },
+      {
+       "fa": "اول در فهرست رایانه‌ای کتابخانه نام بیرونی را جستجو می‌کند و فهرستی طولانی از کتاب‌ها و مقاله‌ها می‌بیند.",
+       "tr": "",
+       "de": "Zuerst sucht sie im elektronischen Katalog der Bibliothek nach Birunis Namen und sieht eine lange Liste von Büchern und Aufsätzen."
+      },
+      {
+       "fa": "چون نمی‌داند از کجا شروع کند، از کتابدار بخش مرجع کمک می‌خواهد.",
+       "tr": "",
+       "de": "Da sie nicht weiß, wo sie anfangen soll, bittet sie die Bibliothekarin der Auskunftsabteilung um Hilfe."
+      },
+      {
+       "fa": "کتابدار می‌پرسد که ارائه‌ی او بیشتر درباره‌ی زندگی بیرونی است یا درباره‌ی کار‌های علمی‌اش.",
+       "tr": "",
+       "de": "Die Bibliothekarin fragt, ob ihr Referat eher von Birunis Leben oder von seinen wissenschaftlichen Arbeiten handelt."
       }
      ]
     }
@@ -532,6 +998,16 @@
        "de": "Genau. Er beobachtete den Winkel zwischen dem Horizont und der Waagerechten und berechnete mit Geometrie den Erdradius."
       },
       {
+       "fa": "یوناس: ولی ارتفاع کوه را چطور اندازه گرفت؟ آن زمان که ابزار‌های امروزی وجود نداشت.",
+       "tr": "",
+       "de": "Aber wie hat er die Höhe des Berges gemessen? Damals gab es ja keine modernen Instrumente."
+      },
+      {
+       "fa": "دکتر صادقی: با اسطرلاب. او از دو نقطه‌ی مختلف در دشت زاویه‌ی قله را اندازه گرفت و با کمک مثلث‌ها ارتفاع را حساب کرد.",
+       "tr": "",
+       "de": "Mit dem Astrolabium. Er maß von zwei verschiedenen Punkten in der Ebene den Winkel zum Gipfel und berechnete die Höhe mithilfe von Dreiecken."
+      },
+      {
        "fa": "یوناس: و نتیجه‌اش چقدر دقیق بود؟",
        "tr": "",
        "de": "Und wie genau war sein Ergebnis?"
@@ -542,14 +1018,34 @@
        "de": "Es weicht um weniger als ein Prozent vom heutigen Wert ab. Für die damalige Zeit ist das sehr erstaunlich."
       },
       {
+       "fa": "یوناس: آیا پیش از او کسی شعاع زمین را اندازه گرفته بود؟",
+       "tr": "",
+       "de": "Hatte vor ihm schon jemand den Erdradius gemessen?"
+      },
+      {
+       "fa": "دکتر صادقی: بله، در قرن نهم گروهی از ستاره‌شناسان در بغداد طول یک درجه از نصف‌النهار را در یک دشت اندازه گرفتند. اما روش بیرونی ساده‌تر بود و به سفر‌های طولانی نیاز نداشت.",
+       "tr": "",
+       "de": "Ja, im 9. Jahrhundert maß eine Gruppe von Astronomen in Bagdad die Länge eines Meridiangrades in einer Ebene. Birunis Methode war aber einfacher und erforderte keine langen Reisen."
+      },
+      {
        "fa": "یوناس: از کدام منابع استفاده کنم؟ متن اصلی به عربی است.",
        "tr": "",
        "de": "Welche Quellen soll ich verwenden? Der Originaltext ist auf Arabisch."
       },
       {
-       "fa": "دکتر صادقی: ترجمه‌ی فارسی و انگلیسی هم وجود دارد. اما مقایسه‌ی آنها با متن اصلی برای کار شما مفید است.",
+       "fa": "دکتر صادقی: ترجمه‌ی فارسی و انگلیسی هم وجود دارد. اما مقایسه‌ی آن‌ها با متن اصلی برای کار شما مفید است.",
        "tr": "",
        "de": "Es gibt auch persische und englische Übersetzungen. Aber ein Vergleich mit dem Original ist für Ihre Arbeit nützlich."
+      },
+      {
+       "fa": "یوناس: مقاله باید چند صفحه باشد و تا کی باید آن را تحویل بدهم؟",
+       "tr": "",
+       "de": "Wie viele Seiten soll die Arbeit haben, und bis wann muss ich sie abgeben?"
+      },
+      {
+       "fa": "دکتر صادقی: حدود پانزده صفحه، تا پایان ترم. اگر مایل باشید، دو هفته‌ی دیگر طرح اولیه‌اش را بیاورید تا با هم بررسی کنیم.",
+       "tr": "",
+       "de": "Etwa fünfzehn Seiten, bis zum Semesterende. Wenn Sie möchten, bringen Sie in zwei Wochen eine erste Gliederung mit, dann sehen wir sie gemeinsam durch."
       }
      ]
     },
@@ -579,6 +1075,16 @@
        "de": "Genau. Er beobachtete den Winkel zwischen dem Horizont und der Waagerechten und berechnete mit Geometrie den Erdradius."
       },
       {
+       "fa": "یوناس: ولی ارتفاع کوه را چطور اندازه گرفت؟ آن زمان که ابزار‌های امروزی وجود نداشت.",
+       "tr": "",
+       "de": "Aber wie hat er die Höhe des Berges gemessen? Damals gab es ja keine modernen Instrumente."
+      },
+      {
+       "fa": "دکتر صادقی: با اسطرلاب. او از دو نقطه‌ی مختلف در دشت زاویه‌ی قله را اندازه گرفت و با کمک مثلث‌ها ارتفاع را حساب کرد.",
+       "tr": "",
+       "de": "Mit dem Astrolabium. Er maß von zwei verschiedenen Punkten in der Ebene den Winkel zum Gipfel und berechnete die Höhe mithilfe von Dreiecken."
+      },
+      {
        "fa": "یوناس: و نتیجه‌اش چقدر دقیق بود؟",
        "tr": "",
        "de": "Und wie genau war sein Ergebnis?"
@@ -589,14 +1095,34 @@
        "de": "Es weicht um weniger als ein Prozent vom heutigen Wert ab. Für die damalige Zeit ist das sehr erstaunlich."
       },
       {
+       "fa": "یوناس: آیا پیش از او کسی شعاع زمین را اندازه گرفته بود؟",
+       "tr": "",
+       "de": "Hatte vor ihm schon jemand den Erdradius gemessen?"
+      },
+      {
+       "fa": "دکتر صادقی: بله، در قرن نهم گروهی از ستاره‌شناسان در بغداد طول یک درجه از نصف‌النهار را در یک دشت اندازه گرفتند. اما روش بیرونی ساده‌تر بود و به سفر‌های طولانی نیاز نداشت.",
+       "tr": "",
+       "de": "Ja, im 9. Jahrhundert maß eine Gruppe von Astronomen in Bagdad die Länge eines Meridiangrades in einer Ebene. Birunis Methode war aber einfacher und erforderte keine langen Reisen."
+      },
+      {
        "fa": "یوناس: از کدام منابع استفاده کنم؟ متن اصلی به عربی است.",
        "tr": "",
        "de": "Welche Quellen soll ich verwenden? Der Originaltext ist auf Arabisch."
       },
       {
-       "fa": "دکتر صادقی: ترجمه‌ی فارسی و انگلیسی هم وجود دارد. اما مقایسه‌ی آنها با متن اصلی برای کار شما مفید است.",
+       "fa": "دکتر صادقی: ترجمه‌ی فارسی و انگلیسی هم وجود دارد. اما مقایسه‌ی آن‌ها با متن اصلی برای کار شما مفید است.",
        "tr": "",
        "de": "Es gibt auch persische und englische Übersetzungen. Aber ein Vergleich mit dem Original ist für Ihre Arbeit nützlich."
+      },
+      {
+       "fa": "یوناس: مقاله باید چند صفحه باشد و تا کی باید آن را تحویل بدهم؟",
+       "tr": "",
+       "de": "Wie viele Seiten soll die Arbeit haben, und bis wann muss ich sie abgeben?"
+      },
+      {
+       "fa": "دکتر صادقی: حدود پانزده صفحه، تا پایان ترم. اگر مایل باشید، دو هفته‌ی دیگر طرح اولیه‌اش را بیاورید تا با هم بررسی کنیم.",
+       "tr": "",
+       "de": "Etwa fünfzehn Seiten, bis zum Semesterende. Wenn Sie möchten, bringen Sie in zwei Wochen eine erste Gliederung mit, dann sehen wir sie gemeinsam durch."
       }
      ]
     },
@@ -605,29 +1131,29 @@
      "titel": "Hast du es verstanden?",
      "fragen": [
       {
-       "frage": "Worüber möchte Jonas schreiben?",
+       "frage": "Womit maß Biruni die Höhe des Berges?",
        "optionen": [
-        "über Birunis Messung des Erdradius",
-        "über Razis Krankenhaus",
-        "über Kharazmis Algebra"
+        "mit einem Astrolabium von zwei Punkten aus",
+        "mit einem langen Seil",
+        "er schätzte sie nur"
        ],
        "richtig": 0
       },
       {
-       "frage": "Was hat Biruni zuerst gemessen?",
+       "frage": "Was unterschied Birunis Methode von der früheren Messung in Bagdad?",
        "optionen": [
-        "die Höhe eines Berges",
-        "die Länge eines Flusses",
-        "die Entfernung zur Sonne"
+        "Sie war einfacher und erforderte keine langen Reisen.",
+        "Sie war ungenauer.",
+        "Sie benutzte keine Geometrie."
        ],
        "richtig": 0
       },
       {
-       "frage": "Was rät Dr. Sadeghi?",
+       "frage": "Was soll Jonas in zwei Wochen mitbringen?",
        "optionen": [
-        "Übersetzungen mit dem Original zu vergleichen",
-        "nur die englische Übersetzung zu lesen",
-        "das Thema zu wechseln"
+        "eine erste Gliederung seiner Arbeit",
+        "die fertige Arbeit",
+        "eine arabische Handschrift"
        ],
        "richtig": 0
       }
@@ -643,7 +1169,7 @@
     {
      "typ": "info",
      "titel": "Worum geht es?",
-     "text": "<p>Abends sitzt Jonas mit seinem Vermieter Herrn Rahimi auf dem Balkon. Herr Rahimi war früher Lehrer.</p>"
+     "text": "<p>Abends sitzt Jonas mit seinem Vermieter Herrn Rahimi auf dem Balkon. Herr Rahimi war früher Mathematiklehrer.</p>"
     },
     {
      "typ": "ordnen",
@@ -681,6 +1207,31 @@
        "de": "Da stimme ich zu. Kharazmi hat von Griechen und Indern gelernt und die Europäer von ihm."
       },
       {
+       "fa": "آقای رحیمی: یادت باشد که بیرونی «التفهیم» را به فارسی هم نوشت، و ابن سینا هم «دانشنامه‌ی علایی» را به فارسی نوشت.",
+       "tr": "",
+       "de": "Denk daran, dass Biruni das ‹Tafhim› auch auf Persisch schrieb, und Avicenna schrieb das ‹Buch des Wissens› ebenfalls auf Persisch."
+      },
+      {
+       "fa": "یوناس: پس فارسی هم کم‌کم زبان علم شد؟",
+       "tr": "",
+       "de": "Wurde Persisch dann nach und nach auch zu einer Sprache der Wissenschaft?"
+      },
+      {
+       "fa": "آقای رحیمی: تا حدی. بعد‌ها کتاب‌های زیادی در نجوم و پزشکی به فارسی نوشته شد، به‌خصوص در هند و آسیای میانه که فارسی در آنجا زبان فرهنگ بود.",
+       "tr": "",
+       "de": "Bis zu einem gewissen Grad. Später wurden viele Bücher über Astronomie und Medizin auf Persisch geschrieben, besonders in Indien und Zentralasien, wo Persisch die Sprache der Kultur war."
+      },
+      {
+       "fa": "یوناس: خیام هم هم شاعر بود و هم ریاضی‌دان، نه؟",
+       "tr": "",
+       "de": "Chayyam war doch auch Dichter und Mathematiker zugleich, oder?"
+      },
+      {
+       "fa": "آقای رحیمی: درست است. خیلی‌ها فقط رباعیاتش را می‌شناسند، اما او در جبر کار‌های مهمی کرد و در اصلاح تقویم هم نقش داشت.",
+       "tr": "",
+       "de": "Richtig. Viele kennen nur seine Vierzeiler, aber er leistete Wichtiges in der Algebra und war auch an einer Kalenderreform beteiligt."
+      },
+      {
        "fa": "آقای رحیمی: من سی سال به بچه‌ها ریاضی درس دادم و همیشه این را گفتم: هر معادله‌ای که حل می‌کنید، یک داستان طولانی پشتش است.",
        "tr": "",
        "de": "Ich habe dreißig Jahre lang Kindern Mathematik beigebracht und immer gesagt: Hinter jeder Gleichung, die ihr löst, steckt eine lange Geschichte."
@@ -689,6 +1240,11 @@
        "fa": "یوناس: حیف که شما معلم من نبودید! شاید آن وقت ریاضی را بیشتر دوست داشتم.",
        "tr": "",
        "de": "Schade, dass Sie nicht mein Lehrer waren! Vielleicht hätte ich Mathe dann lieber gemocht."
+      },
+      {
+       "fa": "آقای رحیمی: هنوز دیر نیست. ترجمه‌ی فارسی کتاب جبر خوارزمی را دارم؛ اگر خواستی، فردا شب چند صفحه‌اش را با هم می‌خوانیم.",
+       "tr": "",
+       "de": "Es ist noch nicht zu spät. Ich habe die persische Übersetzung von Kharazmis Algebrabuch; wenn du willst, lesen wir morgen Abend ein paar Seiten zusammen."
       }
      ]
     },
@@ -728,6 +1284,31 @@
        "de": "Da stimme ich zu. Kharazmi hat von Griechen und Indern gelernt und die Europäer von ihm."
       },
       {
+       "fa": "آقای رحیمی: یادت باشد که بیرونی «التفهیم» را به فارسی هم نوشت، و ابن سینا هم «دانشنامه‌ی علایی» را به فارسی نوشت.",
+       "tr": "",
+       "de": "Denk daran, dass Biruni das ‹Tafhim› auch auf Persisch schrieb, und Avicenna schrieb das ‹Buch des Wissens› ebenfalls auf Persisch."
+      },
+      {
+       "fa": "یوناس: پس فارسی هم کم‌کم زبان علم شد؟",
+       "tr": "",
+       "de": "Wurde Persisch dann nach und nach auch zu einer Sprache der Wissenschaft?"
+      },
+      {
+       "fa": "آقای رحیمی: تا حدی. بعد‌ها کتاب‌های زیادی در نجوم و پزشکی به فارسی نوشته شد، به‌خصوص در هند و آسیای میانه که فارسی در آنجا زبان فرهنگ بود.",
+       "tr": "",
+       "de": "Bis zu einem gewissen Grad. Später wurden viele Bücher über Astronomie und Medizin auf Persisch geschrieben, besonders in Indien und Zentralasien, wo Persisch die Sprache der Kultur war."
+      },
+      {
+       "fa": "یوناس: خیام هم هم شاعر بود و هم ریاضی‌دان، نه؟",
+       "tr": "",
+       "de": "Chayyam war doch auch Dichter und Mathematiker zugleich, oder?"
+      },
+      {
+       "fa": "آقای رحیمی: درست است. خیلی‌ها فقط رباعیاتش را می‌شناسند، اما او در جبر کار‌های مهمی کرد و در اصلاح تقویم هم نقش داشت.",
+       "tr": "",
+       "de": "Richtig. Viele kennen nur seine Vierzeiler, aber er leistete Wichtiges in der Algebra und war auch an einer Kalenderreform beteiligt."
+      },
+      {
        "fa": "آقای رحیمی: من سی سال به بچه‌ها ریاضی درس دادم و همیشه این را گفتم: هر معادله‌ای که حل می‌کنید، یک داستان طولانی پشتش است.",
        "tr": "",
        "de": "Ich habe dreißig Jahre lang Kindern Mathematik beigebracht und immer gesagt: Hinter jeder Gleichung, die ihr löst, steckt eine lange Geschichte."
@@ -736,6 +1317,11 @@
        "fa": "یوناس: حیف که شما معلم من نبودید! شاید آن وقت ریاضی را بیشتر دوست داشتم.",
        "tr": "",
        "de": "Schade, dass Sie nicht mein Lehrer waren! Vielleicht hätte ich Mathe dann lieber gemocht."
+      },
+      {
+       "fa": "آقای رحیمی: هنوز دیر نیست. ترجمه‌ی فارسی کتاب جبر خوارزمی را دارم؛ اگر خواستی، فردا شب چند صفحه‌اش را با هم می‌خوانیم.",
+       "tr": "",
+       "de": "Es ist noch nicht zu spät. Ich habe die persische Übersetzung von Kharazmis Algebrabuch; wenn du willst, lesen wir morgen Abend ein paar Seiten zusammen."
       }
      ]
     },
@@ -753,20 +1339,355 @@
        "richtig": 0
       },
       {
-       "frage": "Womit vergleicht Herr Rahimi das Arabische von damals?",
+       "frage": "Wo wurden später viele wissenschaftliche Bücher auf Persisch geschrieben?",
        "optionen": [
-        "mit Latein und dem heutigen Englisch",
-        "mit Persisch und Türkisch",
-        "mit Sanskrit"
+        "in Indien und Zentralasien",
+        "in Spanien",
+        "in Griechenland"
        ],
        "richtig": 0
       },
       {
-       "frage": "Was hat Herr Rahimi früher unterrichtet?",
+       "frage": "Was schlägt Herr Rahimi am Ende vor?",
        "optionen": [
-        "Mathematik",
-        "Geschichte",
-        "Arabisch"
+        "gemeinsam in Kharazmis Algebrabuch zu lesen",
+        "eine Sternwarte zu besuchen",
+        "Arabisch zu lernen"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d3",
+   "titel": "Dialog: Das Astrolabium im Museum",
+   "vorschau": "Das Astrolabium im Museum",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Leyla schreibt für ihr Kulturmagazin über eine Ausstellung astronomischer Instrumente in einem Teheraner Museum. Jonas begleitet sie; Frau Tavakoli vom Museum führt die beiden.</p>"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "لیلا: خانم توکلی، ممنون که برای گزارش ما وقت گذاشتید. این ابزار فلزی زیبا چیست؟",
+       "tr": "",
+       "de": "Frau Tavakoli, danke, dass Sie sich für unseren Bericht Zeit nehmen. Was ist dieses schöne Metallinstrument?"
+      },
+      {
+       "fa": "خانم توکلی: این یک اسطرلاب است؛ مهم‌ترین ابزار ستاره‌شناسان در قرون میانه. این نمونه بیش از سیصد سال پیش در اصفهان ساخته شده است.",
+       "tr": "",
+       "de": "Das ist ein Astrolabium, das wichtigste Instrument der Astronomen im Mittelalter. Dieses Exemplar wurde vor über dreihundert Jahren in Isfahan hergestellt."
+      },
+      {
+       "fa": "یوناس: با آن دقیقا چه کار می‌کردند؟",
+       "tr": "",
+       "de": "Was genau hat man damit gemacht?"
+      },
+      {
+       "fa": "خانم توکلی: ارتفاع خورشید یا ستاره‌ها را اندازه می‌گرفتند و از روی آن ساعت روز یا شب را حساب می‌کردند. عرض جغرافیایی محل را هم می‌شد با آن به دست آورد.",
+       "tr": "",
+       "de": "Man maß die Höhe der Sonne oder der Sterne und berechnete daraus die Tages- oder Nachtzeit. Auch die geografische Breite eines Ortes ließ sich damit bestimmen."
+      },
+      {
+       "fa": "لیلا: یعنی ساعت و نقشه‌ی آسمان در یک ابزار؟",
+       "tr": "",
+       "de": "Also Uhr und Himmelskarte in einem Instrument?"
+      },
+      {
+       "fa": "خانم توکلی: دقیقا. به همین دلیل بعضی‌ها آن را رایانه‌ی قرون میانه می‌نامند.",
+       "tr": "",
+       "de": "Genau. Deshalb nennen manche es den Computer des Mittelalters."
+      },
+      {
+       "fa": "یوناس: بیرونی هم با اسطرلاب کار می‌کرد؟ من درباره‌ی او مقاله می‌نویسم.",
+       "tr": "",
+       "de": "Hat Biruni auch mit dem Astrolabium gearbeitet? Ich schreibe eine Arbeit über ihn."
+      },
+      {
+       "fa": "خانم توکلی: بله، و او حتی رساله‌ای درباره‌ی روش‌های ساختن اسطرلاب نوشته و انواع گوناگون آن را توصیف کرده است.",
+       "tr": "",
+       "de": "Ja, und er hat sogar eine Abhandlung über die Methoden zum Bau von Astrolabien geschrieben und verschiedene Typen beschrieben."
+      },
+      {
+       "fa": "لیلا: چرا این‌همه اسطرلاب در اصفهان ساخته می‌شد؟",
+       "tr": "",
+       "de": "Warum wurden so viele Astrolabien in Isfahan hergestellt?"
+      },
+      {
+       "fa": "خانم توکلی: در دوره‌ی صفوی اصفهان یکی از مراکز ساخت اسطرلاب بود و استادکاران این شهر به دقت و زیبایی کارشان مشهور بودند.",
+       "tr": "",
+       "de": "In der Safawidenzeit war Isfahan eines der Zentren des Astrolabienbaus, und die Meister dieser Stadt waren für die Genauigkeit und Schönheit ihrer Arbeit berühmt."
+      },
+      {
+       "fa": "یوناس: روی این صفحه چقدر نوشته‌ی ریز هست! همه‌اش نام ستاره‌هاست؟",
+       "tr": "",
+       "de": "Wie viel winzige Schrift auf dieser Scheibe ist! Sind das alles Sternnamen?"
+      },
+      {
+       "fa": "خانم توکلی: بیشترش. جالب است بدانید که نام بسیاری از ستاره‌ها در زبان‌های اروپایی، مثل «الدبران» و «وگا»، از عربی گرفته شده است.",
+       "tr": "",
+       "de": "Größtenteils. Interessanterweise stammen die Namen vieler Sterne in europäischen Sprachen, etwa ‹Aldebaran› und ‹Wega›, aus dem Arabischen."
+      },
+      {
+       "fa": "لیلا: این نکته برای گزارش من عالی است. می‌توانیم از اسطرلاب عکس بگیریم؟",
+       "tr": "",
+       "de": "Dieser Punkt ist großartig für meinen Bericht. Dürfen wir das Astrolabium fotografieren?"
+      },
+      {
+       "fa": "خانم توکلی: بله، فقط بدون فلاش، چون نور فلاش به نسخه‌های خطی کنار آن آسیب می‌زند.",
+       "tr": "",
+       "de": "Ja, nur ohne Blitz, denn das Blitzlicht schadet den Handschriften daneben."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "لیلا: خانم توکلی، ممنون که برای گزارش ما وقت گذاشتید. این ابزار فلزی زیبا چیست؟",
+       "tr": "",
+       "de": "Frau Tavakoli, danke, dass Sie sich für unseren Bericht Zeit nehmen. Was ist dieses schöne Metallinstrument?"
+      },
+      {
+       "fa": "خانم توکلی: این یک اسطرلاب است؛ مهم‌ترین ابزار ستاره‌شناسان در قرون میانه. این نمونه بیش از سیصد سال پیش در اصفهان ساخته شده است.",
+       "tr": "",
+       "de": "Das ist ein Astrolabium, das wichtigste Instrument der Astronomen im Mittelalter. Dieses Exemplar wurde vor über dreihundert Jahren in Isfahan hergestellt."
+      },
+      {
+       "fa": "یوناس: با آن دقیقا چه کار می‌کردند؟",
+       "tr": "",
+       "de": "Was genau hat man damit gemacht?"
+      },
+      {
+       "fa": "خانم توکلی: ارتفاع خورشید یا ستاره‌ها را اندازه می‌گرفتند و از روی آن ساعت روز یا شب را حساب می‌کردند. عرض جغرافیایی محل را هم می‌شد با آن به دست آورد.",
+       "tr": "",
+       "de": "Man maß die Höhe der Sonne oder der Sterne und berechnete daraus die Tages- oder Nachtzeit. Auch die geografische Breite eines Ortes ließ sich damit bestimmen."
+      },
+      {
+       "fa": "لیلا: یعنی ساعت و نقشه‌ی آسمان در یک ابزار؟",
+       "tr": "",
+       "de": "Also Uhr und Himmelskarte in einem Instrument?"
+      },
+      {
+       "fa": "خانم توکلی: دقیقا. به همین دلیل بعضی‌ها آن را رایانه‌ی قرون میانه می‌نامند.",
+       "tr": "",
+       "de": "Genau. Deshalb nennen manche es den Computer des Mittelalters."
+      },
+      {
+       "fa": "یوناس: بیرونی هم با اسطرلاب کار می‌کرد؟ من درباره‌ی او مقاله می‌نویسم.",
+       "tr": "",
+       "de": "Hat Biruni auch mit dem Astrolabium gearbeitet? Ich schreibe eine Arbeit über ihn."
+      },
+      {
+       "fa": "خانم توکلی: بله، و او حتی رساله‌ای درباره‌ی روش‌های ساختن اسطرلاب نوشته و انواع گوناگون آن را توصیف کرده است.",
+       "tr": "",
+       "de": "Ja, und er hat sogar eine Abhandlung über die Methoden zum Bau von Astrolabien geschrieben und verschiedene Typen beschrieben."
+      },
+      {
+       "fa": "لیلا: چرا این‌همه اسطرلاب در اصفهان ساخته می‌شد؟",
+       "tr": "",
+       "de": "Warum wurden so viele Astrolabien in Isfahan hergestellt?"
+      },
+      {
+       "fa": "خانم توکلی: در دوره‌ی صفوی اصفهان یکی از مراکز ساخت اسطرلاب بود و استادکاران این شهر به دقت و زیبایی کارشان مشهور بودند.",
+       "tr": "",
+       "de": "In der Safawidenzeit war Isfahan eines der Zentren des Astrolabienbaus, und die Meister dieser Stadt waren für die Genauigkeit und Schönheit ihrer Arbeit berühmt."
+      },
+      {
+       "fa": "یوناس: روی این صفحه چقدر نوشته‌ی ریز هست! همه‌اش نام ستاره‌هاست؟",
+       "tr": "",
+       "de": "Wie viel winzige Schrift auf dieser Scheibe ist! Sind das alles Sternnamen?"
+      },
+      {
+       "fa": "خانم توکلی: بیشترش. جالب است بدانید که نام بسیاری از ستاره‌ها در زبان‌های اروپایی، مثل «الدبران» و «وگا»، از عربی گرفته شده است.",
+       "tr": "",
+       "de": "Größtenteils. Interessanterweise stammen die Namen vieler Sterne in europäischen Sprachen, etwa ‹Aldebaran› und ‹Wega›, aus dem Arabischen."
+      },
+      {
+       "fa": "لیلا: این نکته برای گزارش من عالی است. می‌توانیم از اسطرلاب عکس بگیریم؟",
+       "tr": "",
+       "de": "Dieser Punkt ist großartig für meinen Bericht. Dürfen wir das Astrolabium fotografieren?"
+      },
+      {
+       "fa": "خانم توکلی: بله، فقط بدون فلاش، چون نور فلاش به نسخه‌های خطی کنار آن آسیب می‌زند.",
+       "tr": "",
+       "de": "Ja, nur ohne Blitz, denn das Blitzlicht schadet den Handschriften daneben."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Wozu diente ein Astrolabium?",
+       "optionen": [
+        "um die Höhe von Sonne und Sternen zu messen und die Zeit zu berechnen",
+        "um Entfernungen auf dem Meer zu messen",
+        "um Metalle zu wiegen"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wofür war Isfahan in der Safawidenzeit bekannt?",
+       "optionen": [
+        "für den Bau von Astrolabien",
+        "für seine Papierwerkstätten",
+        "für seine Übersetzerschule"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Warum darf man nur ohne Blitz fotografieren?",
+       "optionen": [
+        "Das Blitzlicht schadet den Handschriften.",
+        "Das Museum verkauft eigene Fotos.",
+        "Das Astrolabium würde sonst rosten."
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "a",
+   "titel": "Gut zu wissen",
+   "vorschau": "💡",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Fleisch als Messgerät?",
+     "text": "Kurzer Infotext – tippe eine Zeile an für die Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "درباره‌ی رازی داستان مشهوری نقل می‌کنند.",
+       "tr": "",
+       "de": "Über Razi wird eine bekannte Geschichte erzählt."
+      },
+      {
+       "fa": "می‌گویند وقتی قرار شد در بغداد بیمارستان تازه‌ای ساخته شود، از رازی خواستند بهترین جا را برای آن انتخاب کند.",
+       "tr": "",
+       "de": "Als in Bagdad ein neues Krankenhaus gebaut werden sollte, bat man Razi angeblich, den besten Standort dafür auszuwählen."
+      },
+      {
+       "fa": "او تکه‌هایی گوشت را در چند محله‌ی شهر آویزان کرد و چند روز صبر کرد.",
+       "tr": "",
+       "de": "Er hängte Fleischstücke in mehreren Stadtvierteln auf und wartete einige Tage."
+      },
+      {
+       "fa": "جایی که گوشت در آن دیرتر از همه فاسد شد، به نظر او هوای سالم‌تری داشت و بیمارستان را همان‌جا ساختند.",
+       "tr": "",
+       "de": "Der Ort, an dem das Fleisch am spätesten verdarb, hatte seiner Ansicht nach die gesündeste Luft, und dort wurde das Krankenhaus gebaut."
+      },
+      {
+       "fa": "مورخان مطمئن نیستند که این داستان واقعاً اتفاق افتاده باشد، اما نشان می‌دهد که رازی را پزشکی اهل آزمایش و مشاهده می‌دانستند.",
+       "tr": "",
+       "de": "Historiker sind nicht sicher, ob sich die Geschichte wirklich so zugetragen hat, doch sie zeigt, dass man Razi als Arzt sah, der auf Experiment und Beobachtung setzte."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Arabische Wörter im Deutschen",
+     "text": "Kurzer Infotext – tippe eine Zeile an für die Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "در زبان آلمانی واژه‌های زیادی هست که از راه ترجمه‌های علمی قرون میانه از عربی وارد شده‌اند.",
+       "tr": "",
+       "de": "Im Deutschen gibt es viele Wörter, die über die wissenschaftlichen Übersetzungen des Mittelalters aus dem Arabischen gekommen sind."
+      },
+      {
+       "fa": "«آلگبرا» از «الجبر» در عنوان کتاب خوارزمی و «آلگوریتموس» از نام خود او آمده است.",
+       "tr": "",
+       "de": "‹Algebra› kommt von ‹al-dschabr› im Titel von Kharazmis Buch, ‹Algorithmus› von seinem eigenen Namen."
+      },
+      {
+       "fa": "واژه‌ی «تسیفر» به معنای رقم از واژه‌ی عربی «صفر» گرفته شده است که در اصل به معنای خالی است.",
+       "tr": "",
+       "de": "Das Wort ‹Ziffer› stammt vom arabischen Wort ‹sifr›, das ursprünglich ‹leer› bedeutet."
+      },
+      {
+       "fa": "«آلکوهول» هم از واژه‌ی عربی «الکحل» می‌آید که در اصل نام پودری برای آرایش چشم بود.",
+       "tr": "",
+       "de": "Auch ‹Alkohol› geht auf das arabische ‹al-kuhl› zurück, ursprünglich der Name eines Pulvers zum Schminken der Augen."
+      },
+      {
+       "fa": "بسیاری از این واژه‌ها از راه لاتین، یعنی از راه مترجمان اسپانیا و ایتالیا، به زبان‌های دیگر اروپا رسیدند.",
+       "tr": "",
+       "de": "Viele dieser Wörter gelangten über das Lateinische, also über die Übersetzer in Spanien und Italien, in die anderen Sprachen Europas."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Gedenktage für Gelehrte",
+     "text": "Kurzer Infotext – tippe eine Zeile an für die Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "در تقویم رسمی ایران چند روز به نام دانشمندان قرون میانه نام‌گذاری شده است.",
+       "tr": "",
+       "de": "Im offiziellen iranischen Kalender sind mehrere Tage nach Gelehrten des Mittelalters benannt."
+      },
+      {
+       "fa": "روز اول شهریور، که آن را روز تولد ابن سینا می‌دانند، در ایران «روز پزشک» است.",
+       "tr": "",
+       "de": "Der 1. Schahriwar, der als Geburtstag Avicennas gilt, ist in Iran der ‹Tag des Arztes›."
+      },
+      {
+       "fa": "پنجم شهریور هم روز بزرگداشت رازی است و «روز داروسازی» نام گرفته است.",
+       "tr": "",
+       "de": "Der 5. Schahriwar ist Razis Gedenktag und wird ‹Tag der Pharmazie› genannt."
+      },
+      {
+       "fa": "در این روز‌ها دانشگاه‌ها و انجمن‌های علمی همایش برگزار می‌کنند و از پزشکان و داروسازان تقدیر می‌شود.",
+       "tr": "",
+       "de": "An diesen Tagen veranstalten Universitäten und Fachgesellschaften Tagungen, und Ärzte und Apotheker werden geehrt."
+      },
+      {
+       "fa": "تاریخ دقیق تولد این دانشمندان معلوم نیست؛ این روز‌ها بیشتر جنبه‌ی نمادین دارند.",
+       "tr": "",
+       "de": "Die genauen Geburtsdaten dieser Gelehrten sind nicht bekannt; die Tage haben vor allem symbolische Bedeutung."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zu den Infotexten",
+     "fragen": [
+      {
+       "frage": "Wie wählte Razi laut der Geschichte den Standort des Krankenhauses?",
+       "optionen": [
+        "Er hängte Fleischstücke in verschiedenen Vierteln auf.",
+        "Er befragte die Bewohner der Stadt.",
+        "Er beobachtete die Sterne."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Woher kommt das deutsche Wort ‹Ziffer›?",
+       "optionen": [
+        "vom arabischen Wort ‹sifr› (leer)",
+        "vom Namen Kharazmis",
+        "aus dem Griechischen"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Welcher Tag ist in Iran der ‹Tag des Arztes›?",
+       "optionen": [
+        "der 1. Schahriwar (Avicennas Geburtstag)",
+        "der 5. Schahriwar (Razis Gedenktag)",
+        "der erste Tag von Nouruz"
        ],
        "richtig": 0
       }
@@ -831,9 +1752,9 @@
      "links": "de",
      "paare": [
       {
-       "fa": "این نکته نشان می‌دهد که …",
+       "fa": "از این نظر …",
        "tr": "",
-       "de": "Dieser Punkt zeigt, dass …"
+       "de": "In dieser Hinsicht …"
       },
       {
        "fa": "به گفته‌ی مورخان …",
@@ -841,9 +1762,14 @@
        "de": "Laut Historikern …"
       },
       {
-       "fa": "از این نظر …",
+       "fa": "تأثیر … بر … انکارناپذیر است.",
        "tr": "",
-       "de": "In dieser Hinsicht …"
+       "de": "Der Einfluss von … auf … ist unbestreitbar."
+      },
+      {
+       "fa": "این نکته نشان می‌دهد که …",
+       "tr": "",
+       "de": "Dieser Punkt zeigt, dass …"
       },
       {
        "fa": "جای تعجب نیست که …",
@@ -851,14 +1777,9 @@
        "de": "Es ist nicht verwunderlich, dass …"
       },
       {
-       "fa": "… را بنیان‌گذار … می‌دانند.",
+       "fa": "برای نخستین بار …",
        "tr": "",
-       "de": "… gilt als Begründer/in von …"
-      },
-      {
-       "fa": "تأثیر … بر … انکارناپذیر است.",
-       "tr": "",
-       "de": "Der Einfluss von … auf … ist unbestreitbar."
+       "de": "zum ersten Mal …"
       }
      ],
      "titel": "Was bedeutet die Wendung?"
@@ -870,49 +1791,19 @@
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
-        "zum ersten Mal …",
+        "… gilt als Begründer/in von …",
         "… spielte eine wichtige Rolle bei …",
-        "Laut Historikern …"
+        "zum ersten Mal …"
        ],
        "richtig": 0,
-       "fa": "برای نخستین بار …"
-      },
-      {
-       "frage": "Was bedeutet der Satz?",
-       "optionen": [
-        "… spielte eine wichtige Rolle bei …",
-        "Es ist nicht verwunderlich, dass …",
-        "… gilt als Begründer/in von …"
-       ],
-       "richtig": 0,
-       "fa": "… نقش مهمی در … داشت."
-      },
-      {
-       "frage": "Was bedeutet der Satz?",
-       "optionen": [
-        "In dieser Hinsicht …",
-        "Laut Historikern …",
-        "Der Einfluss von … auf … ist unbestreitbar."
-       ],
-       "richtig": 0,
-       "fa": "از این نظر …"
-      },
-      {
-       "frage": "Was bedeutet der Satz?",
-       "optionen": [
-        "Laut Historikern …",
-        "In dieser Hinsicht …",
-        "Der Einfluss von … auf … ist unbestreitbar."
-       ],
-       "richtig": 0,
-       "fa": "به گفته‌ی مورخان …"
+       "fa": "… را بنیان‌گذار … می‌دانند."
       },
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
         "Der Einfluss von … auf … ist unbestreitbar.",
-        "Es ist nicht verwunderlich, dass …",
-        "Dieser Punkt zeigt, dass …"
+        "In dieser Hinsicht …",
+        "Es ist nicht verwunderlich, dass …"
        ],
        "richtig": 0,
        "fa": "تأثیر … بر … انکارناپذیر است."
@@ -920,12 +1811,42 @@
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
+        "… spielte eine wichtige Rolle bei …",
+        "zum ersten Mal …",
+        "In dieser Hinsicht …"
+       ],
+       "richtig": 0,
+       "fa": "… نقش مهمی در … داشت."
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
         "Dieser Punkt zeigt, dass …",
-        "… gilt als Begründer/in von …",
-        "Der Einfluss von … auf … ist unbestreitbar."
+        "… spielte eine wichtige Rolle bei …",
+        "zum ersten Mal …"
        ],
        "richtig": 0,
        "fa": "این نکته نشان می‌دهد که …"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "zum ersten Mal …",
+        "Der Einfluss von … auf … ist unbestreitbar.",
+        "Dieser Punkt zeigt, dass …"
+       ],
+       "richtig": 0,
+       "fa": "برای نخستین بار …"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Laut Historikern …",
+        "… gilt als Begründer/in von …",
+        "In dieser Hinsicht …"
+       ],
+       "richtig": 0,
+       "fa": "به گفته‌ی مورخان …"
       }
      ]
     },

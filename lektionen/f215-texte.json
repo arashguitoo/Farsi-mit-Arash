@@ -2,7 +2,7 @@
  "id": "tx",
  "art": "texte",
  "titel": "Sachtext & Dialoge",
- "beschreibung": "Sachtext, Wortschatz im Kontext, zwei Dialoge, Redemittel und Schreibaufgabe.",
+ "beschreibung": "Sachtext, Wortschatz im Kontext, Alltagstext, drei Dialoge, Infotexte, Redemittel und Schreibaufgabe.",
  "stationen": [
   {
    "id": "t1",
@@ -12,7 +12,7 @@
     {
      "typ": "info",
      "titel": "Neue Wörter im Text",
-     "text": "<p><span class='fa'>قدمت</span> – Alter, lange Geschichte · <span class='fa'>معادله</span> – Gleichung · <span class='fa'>نسبت دادن</span> – zuschreiben · <span class='fa'>اصیل</span> – echt, authentisch · <span class='fa'>دی</span> – gestern (klassisch) · <span class='fa'>دریافتن (دریاب)</span> – ergreifen, erfassen · <span class='fa'>باب</span> – Kapitel · <span class='fa'>بنی آدم</span> – Menschenkinder · <span class='fa'>زیاده‌روی</span> – Übermaß · <span class='fa'>آگاهانه</span> – bewusst</p>",
+     "text": "<p><span class='fa'>قدمت</span> – Alter, lange Geschichte · <span class='fa'>شکوفا شدن</span> – aufblühen, sich entfalten · <span class='fa'>معادله</span> – Gleichung · <span class='fa'>نسبت دادن</span> – zuschreiben · <span class='fa'>اصیل</span> – echt, authentisch · <span class='fa'>هم‌قافیه</span> – sich reimend · <span class='fa'>دی</span> – gestern (klassisch) · <span class='fa'>دریافتن (دریاب)</span> – ergreifen, erfassen · <span class='fa'>خوش‌گذرانی</span> – Vergnügen, Genussleben · <span class='fa'>طبقه</span> – Schicht · <span class='fa'>باب</span> – Kapitel · <span class='fa'>نثر</span> – Prosa · <span class='fa'>بنی آدم</span> – Menschenkinder · <span class='fa'>زیاده‌روی</span> – Übermaß · <span class='fa'>خوشایند</span> – angenehm · <span class='fa'>آگاهانه</span> – bewusst · <span class='fa'>رتبه</span> – Rang, Platz · <span class='fa'>نهاد</span> – Institution</p>",
      "stil": "merke"
     },
     {
@@ -31,6 +31,11 @@
        "de": "Griechische Philosophen, iranische Dichter und heute Psychologen haben sie jeweils auf ihre Weise beantwortet."
       },
       {
+       "fa": "ارسطو زندگی خوب را در شکوفا شدن توانایی‌های انسان می‌دید و اپیکور خوشی را در لذت‌های ساده، دوستی و آرامش ذهن می‌جست.",
+       "tr": "",
+       "de": "Aristoteles sah das gute Leben in der Entfaltung der menschlichen Fähigkeiten, und Epikur suchte das Glück in einfachen Freuden, Freundschaft und Seelenruhe."
+      },
+      {
        "fa": "یکی از مشهورترین صداها در این گفتگو عمر خیام است که نزدیک به هزار سال پیش در نیشابور به دنیا آمد.",
        "tr": "",
        "de": "Eine der bekanntesten Stimmen in diesem Gespräch ist Omar Khayyam, der vor fast tausend Jahren in Nischapur geboren wurde."
@@ -41,9 +46,19 @@
        "de": "Zu seiner Zeit war Khayyam vor allem als Mathematiker und Astronom bekannt; er schrieb über Gleichungen dritten Grades und wirkte an einer Kalenderreform mit."
       },
       {
+       "fa": "تقویم جلالی، که در قرن یازدهم میلادی با همکاری او و گروهی از ستاره‌شناسان تنظیم شد، بسیار دقیق بود و تقویم امروز ایران بر پایه‌ی آن است.",
+       "tr": "",
+       "de": "Der Dschalali-Kalender, der im 11. Jahrhundert unter seiner Mitwirkung von einer Gruppe von Astronomen erstellt wurde, war sehr genau, und der heutige iranische Kalender beruht auf ihm."
+      },
+      {
        "fa": "اما شهرت جهانی او بیشتر به خاطر رباعی‌هایی است که به او نسبت می‌دهند، هرچند پژوهشگران درباره‌ی شمار رباعی‌های اصیل او هم‌نظر نیستند.",
        "tr": "",
        "de": "Seinen Weltruhm verdankt er aber vor allem den Vierzeilern, die ihm zugeschrieben werden – auch wenn sich die Forschung über die Zahl der echten nicht einig ist."
+      },
+      {
+       "fa": "رباعی شعری چهار مصراعی است که معمولا مصراع‌های اول، دوم و چهارم آن هم‌قافیه‌اند و فکری کامل را در چند کلمه بیان می‌کند.",
+       "tr": "",
+       "de": "Ein Rubai ist ein Gedicht aus vier Halbversen, von denen sich meist der erste, zweite und vierte reimen, und es drückt in wenigen Worten einen vollständigen Gedanken aus."
       },
       {
        "fa": "این رباعی‌ها در قرن نوزدهم با ترجمه‌ی آزاد ادوارد فیتزجرالد به انگلیسی، در غرب نیز بسیار محبوب شدند.",
@@ -66,14 +81,29 @@
        "de": "Seine Botschaft, die man manchmal mit dem römischen ‹carpe diem› vergleicht, lautet: Ergreife den Augenblick und sei jetzt froh."
       },
       {
+       "fa": "با این حال، خیام را نباید فقط شاعر خوش‌گذرانی دانست؛ در رباعی‌های او پرسش‌های جدی درباره‌ی مرگ، زمان و مرزهای دانش انسان نیز دیده می‌شود.",
+       "tr": "",
+       "de": "Dennoch sollte man Khayyam nicht nur für einen Dichter des Vergnügens halten; in seinen Vierzeilern finden sich auch ernste Fragen über den Tod, die Zeit und die Grenzen menschlichen Wissens."
+      },
+      {
        "fa": "سعدی شیرازی، که بیش از یک قرن پس از خیام زندگی می‌کرد، راه دیگری را نشان می‌دهد.",
        "tr": "",
        "de": "Saadi aus Schiras, der über ein Jahrhundert nach Khayyam lebte, zeigt einen anderen Weg."
       },
       {
+       "fa": "سعدی سال‌های زیادی از جوانی را در سفر گذراند و با مردمانی از طبقه‌های گوناگون آشنا شد؛ تجربه‌ای که در آثارش پیداست.",
+       "tr": "",
+       "de": "Saadi verbrachte viele Jahre seiner Jugend auf Reisen und lernte Menschen aus verschiedenen Schichten kennen – eine Erfahrung, die in seinen Werken sichtbar ist."
+      },
+      {
        "fa": "او در گلستان، که در سال ۱۲۵۸ میلادی نوشته شد، با حکایت‌های کوتاه و شیرین درباره‌ی زندگی روزمره اندرز می‌دهد.",
        "tr": "",
        "de": "Im Golestan, der 1258 entstand, gibt er mit kurzen, unterhaltsamen Geschichten Ratschläge für den Alltag."
+      },
+      {
+       "fa": "گلستان هشت باب دارد و نثری روان را با شعرهای کوتاه درهم می‌آمیزد؛ به همین دلیل قرن‌ها کتاب درسی نسل‌های زیادی از ایرانیان بوده است.",
+       "tr": "",
+       "de": "Der Golestan hat acht Kapitel und verbindet flüssige Prosa mit kurzen Gedichten; deshalb war er jahrhundertelang Schulbuch vieler Generationen von Iranern."
       },
       {
        "fa": "یکی از درس‌های مهم گلستان اعتدال است: نه زیاده‌روی در خوردن و خواستن، نه سخت‌گیری بیش از اندازه بر خود.",
@@ -101,9 +131,19 @@
        "de": "Das ist derselbe Gedanke, den wir heute Menschenwürde nennen."
       },
       {
+       "fa": "این شعر امروز در بسیاری از کشورها شناخته شده است و بر فرشی در ساختمان سازمان ملل متحد در نیویورک نیز نقش بسته است.",
+       "tr": "",
+       "de": "Dieses Gedicht ist heute in vielen Ländern bekannt und ziert auch einen Teppich im Gebäude der Vereinten Nationen in New York."
+      },
+      {
        "fa": "جالب است که پژوهش‌های امروزی درباره‌ی خوشبختی به همین اندیشه‌های قدیمی نزدیک شده‌اند.",
        "tr": "",
        "de": "Interessanterweise haben sich die heutigen Studien über das Glück genau diesen alten Gedanken angenähert."
+      },
+      {
+       "fa": "روان‌شناسان میان دو جنبه‌ی خوشبختی فرق می‌گذارند: احساس خوشایند در لحظه، و رضایت عمیق‌تر از کل زندگی.",
+       "tr": "",
+       "de": "Psychologen unterscheiden zwei Seiten des Glücks: das angenehme Gefühl im Augenblick und die tiefere Zufriedenheit mit dem Leben als Ganzem."
       },
       {
        "fa": "یک پژوهش بلندمدت در دانشگاه هاروارد که از دهه‌ی ۱۹۳۰ زندگی صدها نفر را دنبال کرده، به نتیجه‌ای ساده رسیده است: روابط خوب ما را شادتر و سالم‌تر نگه می‌دارد.",
@@ -111,9 +151,24 @@
        "de": "Eine Langzeitstudie der Harvard-Universität, die seit den 1930er-Jahren das Leben Hunderter Menschen begleitet, kam zu einem einfachen Ergebnis: Gute Beziehungen halten uns glücklicher und gesünder."
       },
       {
+       "fa": "رابرت والدینگر، یکی از مدیران این پژوهش، تأکید می‌کند که کیفیت روابط از تعداد آنها مهم‌تر است.",
+       "tr": "",
+       "de": "Robert Waldinger, einer der Leiter dieser Studie, betont, dass die Qualität der Beziehungen wichtiger ist als ihre Zahl."
+      },
+      {
        "fa": "ثروت تا حدی مهم است، اما تنهایی طولانی می‌تواند برای سلامت به اندازه‌ی بسیاری از عادت‌های ناسالم خطرناک باشد.",
        "tr": "",
        "de": "Wohlstand ist bis zu einem gewissen Grad wichtig, aber lange Einsamkeit kann für die Gesundheit so gefährlich sein wie viele ungesunde Gewohnheiten."
+      },
+      {
+       "fa": "پژوهش‌ها همچنین نشان می‌دهند که افزایش درآمد، به‌ویژه برای کسانی که درآمد کمی دارند، رضایت را به‌روشنی بالا می‌برد، اما اثر آن در سطح‌های بالاتر کمتر می‌شود.",
+       "tr": "",
+       "de": "Studien zeigen außerdem, dass ein höheres Einkommen die Zufriedenheit deutlich steigert, vor allem bei Menschen mit geringem Einkommen, dass seine Wirkung auf höherem Niveau aber nachlässt."
+      },
+      {
+       "fa": "یکی از دلایل این است که انسان‌ها به سرعت به شرایط تازه عادت می‌کنند؛ خانه‌ی بزرگ‌تر یا ماشین تازه پس از مدتی دیگر شادی چندانی نمی‌آورد.",
+       "tr": "",
+       "de": "Ein Grund dafür ist, dass Menschen sich schnell an neue Umstände gewöhnen; ein größeres Haus oder ein neues Auto bringt nach einiger Zeit kaum noch Freude."
       },
       {
        "fa": "روان‌شناسان همچنین نشان داده‌اند که سپاسگزاری، یعنی توجه آگاهانه به چیزهای خوب زندگی، می‌تواند رضایت را افزایش دهد.",
@@ -131,6 +186,16 @@
        "de": "Der Weltglücksbericht, der jedes Jahr auf Grundlage von Umfragen in Dutzenden Ländern erscheint, zeigt, dass Vertrauen und soziale Unterstützung für das Glück einer Gesellschaft sehr wichtig sind."
       },
       {
+       "fa": "در این گزارش، که از سال ۲۰۱۲ منتشر می‌شود، کشورهای شمال اروپا مانند فنلاند و دانمارک معمولا در رتبه‌های بالا قرار دارند.",
+       "tr": "",
+       "de": "In diesem Bericht, der seit 2012 erscheint, stehen nordeuropäische Länder wie Finnland und Dänemark meist auf den vorderen Plätzen."
+      },
+      {
+       "fa": "پژوهشگران تأکید می‌کنند که این کشورها ثروتمندترین کشورهای جهان نیستند، اما در آنها اعتماد مردم به یکدیگر و به نهادها بالاست.",
+       "tr": "",
+       "de": "Die Forschenden betonen, dass diese Länder nicht die reichsten der Welt sind, dass dort aber das Vertrauen der Menschen zueinander und in die Institutionen hoch ist."
+      },
+      {
        "fa": "در فارسی عبارتی هست که شاید همه‌ی این‌ها را در خود جمع کند: «دل خوش».",
        "tr": "",
        "de": "Im Persischen gibt es einen Ausdruck, der vielleicht all das in sich vereint: ‹del-e khosh›, ein frohes Herz."
@@ -139,6 +204,11 @@
        "fa": "دل خوش یعنی شادی‌ای که به چیزهای بزرگ وابسته نیست: می‌توان در خانه‌ای کوچک، با دوستانی خوب و یک چای گرم، دلی خوش داشت.",
        "tr": "",
        "de": "Ein frohes Herz ist eine Freude, die nicht von großen Dingen abhängt: Man kann in einer kleinen Wohnung, mit guten Freunden und einem heißen Tee ein frohes Herz haben."
+      },
+      {
+       "fa": "در شعر فارسی بارها به این اندیشه برمی‌خوریم که شادی واقعی در دل انسان است، نه در دارایی‌های او.",
+       "tr": "",
+       "de": "In der persischen Dichtung begegnet man immer wieder dem Gedanken, dass wahre Freude im Herzen des Menschen liegt und nicht in seinem Besitz."
       },
       {
        "fa": "شاید پاسخ خیام، سعدی و روان‌شناسان امروز، با همه‌ی تفاوت‌هایشان، در یک جمله جمع شود: زندگی خوب در لحظه‌ها و در کنار دیگران ساخته می‌شود.",
@@ -167,6 +237,16 @@
         "richtig",
         "falsch"
        ],
+       "richtig": 0,
+       "fa": "خیام در تنظیم تقویم جلالی نقش داشت.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
        "richtig": 1,
        "fa": "همه‌ی پژوهشگران مطمئن‌اند که همه‌ی رباعی‌ها از خیام است.",
        "fest": true,
@@ -181,6 +261,17 @@
        "richtig": 0,
        "fa": "گلستان سعدی در قرن سیزدهم میلادی نوشته شد.",
        "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "گلستان فقط از شعر تشکیل شده است.",
+       "fest": true,
+       "erkl": "Der Golestan verbindet <b>Prosa</b> mit kurzen Gedichten."
       },
       {
        "frage": "Richtig oder falsch?",
@@ -248,6 +339,15 @@
        "richtig": 0
       },
       {
+       "frage": "Warum bringt ein größeres Haus laut Text nach einiger Zeit kaum noch Freude?",
+       "optionen": [
+        "Menschen gewöhnen sich schnell an neue Umstände.",
+        "Große Häuser sind teuer.",
+        "Man fühlt sich darin einsam."
+       ],
+       "richtig": 0
+      },
+      {
        "frage": "Was zeigt der Weltglücksbericht laut Text?",
        "optionen": [
         "Vertrauen und soziale Unterstützung sind sehr wichtig.",
@@ -278,6 +378,11 @@
        "de": "Griechische Philosophen, iranische Dichter und heute Psychologen haben sie jeweils auf ihre Weise beantwortet."
       },
       {
+       "fa": "ارسطو زندگی خوب را در شکوفا شدن توانایی‌های انسان می‌دید و اپیکور خوشی را در لذت‌های ساده، دوستی و آرامش ذهن می‌جست.",
+       "tr": "",
+       "de": "Aristoteles sah das gute Leben in der Entfaltung der menschlichen Fähigkeiten, und Epikur suchte das Glück in einfachen Freuden, Freundschaft und Seelenruhe."
+      },
+      {
        "fa": "یکی از مشهورترین صداها در این گفتگو عمر خیام است که نزدیک به هزار سال پیش در نیشابور به دنیا آمد.",
        "tr": "",
        "de": "Eine der bekanntesten Stimmen in diesem Gespräch ist Omar Khayyam, der vor fast tausend Jahren in Nischapur geboren wurde."
@@ -288,19 +393,14 @@
        "de": "Zu seiner Zeit war Khayyam vor allem als Mathematiker und Astronom bekannt; er schrieb über Gleichungen dritten Grades und wirkte an einer Kalenderreform mit."
       },
       {
+       "fa": "تقویم جلالی، که در قرن یازدهم میلادی با همکاری او و گروهی از ستاره‌شناسان تنظیم شد، بسیار دقیق بود و تقویم امروز ایران بر پایه‌ی آن است.",
+       "tr": "",
+       "de": "Der Dschalali-Kalender, der im 11. Jahrhundert unter seiner Mitwirkung von einer Gruppe von Astronomen erstellt wurde, war sehr genau, und der heutige iranische Kalender beruht auf ihm."
+      },
+      {
        "fa": "اما شهرت جهانی او بیشتر به خاطر رباعی‌هایی است که به او نسبت می‌دهند، هرچند پژوهشگران درباره‌ی شمار رباعی‌های اصیل او هم‌نظر نیستند.",
        "tr": "",
        "de": "Seinen Weltruhm verdankt er aber vor allem den Vierzeilern, die ihm zugeschrieben werden – auch wenn sich die Forschung über die Zahl der echten nicht einig ist."
-      },
-      {
-       "fa": "این رباعی‌ها در قرن نوزدهم با ترجمه‌ی آزاد ادوارد فیتزجرالد به انگلیسی، در غرب نیز بسیار محبوب شدند.",
-       "tr": "",
-       "de": "Im 19. Jahrhundert wurden diese Vierzeiler durch Edward FitzGeralds freie englische Übersetzung auch im Westen sehr beliebt."
-      },
-      {
-       "fa": "اندیشه‌ی اصلی بسیاری از این رباعی‌ها ساده و در عین حال عمیق است: زندگی گذرا است و نمی‌دانیم فردا چه خواهد شد.",
-       "tr": "",
-       "de": "Der Grundgedanke vieler dieser Vierzeiler ist einfach und zugleich tief: Das Leben ist vergänglich, und wir wissen nicht, was morgen sein wird."
       }
      ]
     }
@@ -316,11 +416,23 @@
      "titel": "Welches Wort fehlt im Text?",
      "fragen": [
       {
+       "frage": "<span class='fa'>ارسطو زندگی خوب را در شکوفا شدن توانایی‌های انسان می‌دید و اپیکور خوشی را در لذت‌های ساده، دوستی و ___ ذهن می‌جست.</span><br><span class='mini'>Aristoteles sah das gute Leben in der Entfaltung der menschlichen Fähigkeiten, und Epikur suchte das Glück in einfachen Freuden, Freundschaft und Seelenruhe.</span>",
+       "optionen": [
+        "آرامش",
+        "اعتماد",
+        "عادت"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>ارسطو زندگی خوب را در شکوفا شدن توانایی‌های انسان می‌دید و اپیکور خوشی را در لذت‌های ساده، دوستی و آرامش ذهن می‌جست.</span>"
+      },
+      {
        "frage": "<span class='fa'>خیام در زمان خود بیشتر به عنوان ریاضیدان و ___ شناخته می‌شد؛ او درباره‌ی معادلات درجه‌ی سوم نوشت و در اصلاح تقویم نقش داشت.</span><br><span class='mini'>Zu seiner Zeit war Khayyam vor allem als Mathematiker und Astronom bekannt; er schrieb über Gleichungen dritten Grades und wirkte an einer Kalenderreform mit.</span>",
        "optionen": [
         "ستاره‌شناس",
-        "رفاه",
-        "تنهایی"
+        "فیلسوف",
+        "دوستی"
        ],
        "richtig": 0,
        "optFa": true,
@@ -328,11 +440,23 @@
        "erkl": "<span class='fa'>خیام در زمان خود بیشتر به عنوان ریاضیدان و ستاره‌شناس شناخته می‌شد؛ او درباره‌ی معادلات درجه‌ی سوم نوشت و در اصلاح تقویم نقش داشت.</span>"
       },
       {
+       "frage": "<span class='fa'>___ شعری چهار مصراعی است که معمولا مصراع‌های اول، دوم و چهارم آن هم‌قافیه‌اند و فکری کامل را در چند کلمه بیان می‌کند.</span><br><span class='mini'>Ein Rubai ist ein Gedicht aus vier Halbversen, von denen sich meist der erste, zweite und vierte reimen, und es drückt in wenigen Worten einen vollständigen Gedanken aus.</span>",
+       "optionen": [
+        "رباعی",
+        "سخاوت",
+        "تفریح"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>رباعی شعری چهار مصراعی است که معمولا مصراع‌های اول، دوم و چهارم آن هم‌قافیه‌اند و فکری کامل را در چند کلمه بیان می‌کند.</span>"
+      },
+      {
        "frage": "<span class='fa'>اندیشه‌ی اصلی بسیاری از این رباعی‌ها ساده و در عین حال عمیق است: زندگی ___ است و نمی‌دانیم فردا چه خواهد شد.</span><br><span class='mini'>Der Grundgedanke vieler dieser Vierzeiler ist einfach und zugleich tief: Das Leben ist vergänglich, und wir wissen nicht, was morgen sein wird.</span>",
        "optionen": [
         "گذرا",
-        "رباعی",
-        "اندرز"
+        "اندیشه",
+        "رابطه"
        ],
        "richtig": 0,
        "optFa": true,
@@ -343,8 +467,8 @@
        "frage": "<span class='fa'>پیام او، که گاهی آن را با «کارپه دیم» رومی مقایسه می‌کنند، این است: ___ را دریاب و همین حالا خوش باش.</span><br><span class='mini'>Seine Botschaft, die man manchmal mit dem römischen ‹carpe diem› vergleicht, lautet: Ergreife den Augenblick und sei jetzt froh.</span>",
        "optionen": [
         "لحظه",
-        "اندیشه",
-        "گذرا"
+        "باغچه",
+        "سپاسگزاری"
        ],
        "richtig": 0,
        "optFa": true,
@@ -355,20 +479,38 @@
        "frage": "<span class='fa'>او در ___، که در سال ۱۲۵۸ میلادی نوشته شد، با حکایت‌های کوتاه و شیرین درباره‌ی زندگی روزمره اندرز می‌دهد.</span><br><span class='mini'>Im Golestan, der 1258 entstand, gibt er mit kurzen, unterhaltsamen Geschichten Ratschläge für den Alltag.</span>",
        "optionen": [
         "گلستان",
-        "روان‌شناس",
-        "تنهایی"
+        "هدف",
+        "حکیم"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
        "erkl": "<span class='fa'>او در گلستان، که در سال ۱۲۵۸ میلادی نوشته شد، با حکایت‌های کوتاه و شیرین درباره‌ی زندگی روزمره اندرز می‌دهد.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort fehlt im Text?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>___ هشت باب دارد و نثری روان را با شعرهای کوتاه درهم می‌آمیزد؛ به همین دلیل قرن‌ها کتاب درسی نسل‌های زیادی از ایرانیان بوده است.</span><br><span class='mini'>Der Golestan hat acht Kapitel und verbindet flüssige Prosa mit kurzen Gedichten; deshalb war er jahrhundertelang Schulbuch vieler Generationen von Iranern.</span>",
+       "optionen": [
+        "گلستان",
+        "نظرسنجی",
+        "تنهایی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>گلستان هشت باب دارد و نثری روان را با شعرهای کوتاه درهم می‌آمیزد؛ به همین دلیل قرن‌ها کتاب درسی نسل‌های زیادی از ایرانیان بوده است.</span>"
       },
       {
-       "frage": "<span class='fa'>یکی از درس‌های مهم گلستان ___ است: نه زیاده‌روی در خوردن و خواستن، نه سخت‌گیری بیش از اندازه بر خود.</span><br><span class='mini'>Eine wichtige Lehre des Golestan ist das Maßhalten: weder Übermaß beim Essen und Begehren noch übertriebene Strenge gegen sich selbst.</span>",
+       "frage": "<span class='fa'>یکی از درس‌های مهم ___ اعتدال است: نه زیاده‌روی در خوردن و خواستن، نه سخت‌گیری بیش از اندازه بر خود.</span><br><span class='mini'>Eine wichtige Lehre des Golestan ist das Maßhalten: weder Übermaß beim Essen und Begehren noch übertriebene Strenge gegen sich selbst.</span>",
        "optionen": [
-        "اعتدال",
-        "شاخص",
-        "رضایت"
+        "گلستان",
+        "رباعی",
+        "دوستی"
        ],
        "richtig": 0,
        "optFa": true,
@@ -379,26 +521,20 @@
        "frage": "<span class='fa'>سعدی یک باب کامل از ___ را به قناعت اختصاص داده است؛ از نگاه او، کسی که به آنچه دارد راضی است، از بسیاری از ثروتمندان آزادتر است.</span><br><span class='mini'>Saadi widmet ein ganzes Kapitel des Golestan der Genügsamkeit; in seinen Augen ist, wer mit dem zufrieden ist, was er hat, freier als viele Reiche.</span>",
        "optionen": [
         "گلستان",
-        "آرامش",
-        "داوطلب"
+        "نظرسنجی",
+        "اندرز"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
        "erkl": "<span class='fa'>سعدی یک باب کامل از گلستان را به قناعت اختصاص داده است؛ از نگاه او، کسی که به آنچه دارد راضی است، از بسیاری از ثروتمندان آزادتر است.</span>"
-      }
-     ]
-    },
-    {
-     "typ": "wahl",
-     "titel": "Welches Wort fehlt im Text?",
-     "fragen": [
+      },
       {
        "frage": "<span class='fa'>این همان اندیشه‌ای است که امروز آن را ___ می‌نامیم.</span><br><span class='mini'>Das ist derselbe Gedanke, den wir heute Menschenwürde nennen.</span>",
        "optionen": [
         "کرامت انسانی",
-        "قناعت",
-        "نظرسنجی"
+        "ناپایداری",
+        "سادگی"
        ],
        "richtig": 0,
        "optFa": true,
@@ -409,8 +545,8 @@
        "frage": "<span class='fa'>جالب است که پژوهش‌های امروزی درباره‌ی ___ به همین اندیشه‌های قدیمی نزدیک شده‌اند.</span><br><span class='mini'>Interessanterweise haben sich die heutigen Studien über das Glück genau diesen alten Gedanken angenähert.</span>",
        "optionen": [
         "خوشبختی",
-        "ناپایداری",
-        "آرامش"
+        "باغچه",
+        "گلستان"
        ],
        "richtig": 0,
        "optFa": true,
@@ -418,11 +554,29 @@
        "erkl": "<span class='fa'>جالب است که پژوهش‌های امروزی درباره‌ی خوشبختی به همین اندیشه‌های قدیمی نزدیک شده‌اند.</span>"
       },
       {
+       "frage": "<span class='fa'>روان‌شناسان میان دو جنبه‌ی ___ فرق می‌گذارند: احساس خوشایند در لحظه، و رضایت عمیق‌تر از کل زندگی.</span><br><span class='mini'>Psychologen unterscheiden zwei Seiten des Glücks: das angenehme Gefühl im Augenblick und die tiefere Zufriedenheit mit dem Leben als Ganzem.</span>",
+       "optionen": [
+        "خوشبختی",
+        "آرامش",
+        "رباعی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>روان‌شناسان میان دو جنبه‌ی خوشبختی فرق می‌گذارند: احساس خوشایند در لحظه، و رضایت عمیق‌تر از کل زندگی.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort fehlt im Text?",
+     "fragen": [
+      {
        "frage": "<span class='fa'>یک ___ بلندمدت در دانشگاه هاروارد که از دهه‌ی ۱۹۳۰ زندگی صدها نفر را دنبال کرده، به نتیجه‌ای ساده رسیده است: روابط خوب ما را شادتر و سالم‌تر نگه می‌دارد.</span><br><span class='mini'>Eine Langzeitstudie der Harvard-Universität, die seit den 1930er-Jahren das Leben Hunderter Menschen begleitet, kam zu einem einfachen Ergebnis: Gute Beziehungen halten uns glücklicher und gesünder.</span>",
        "optionen": [
         "پژوهش",
-        "خوشبختی",
-        "اندرز"
+        "هدف",
+        "باغچه"
        ],
        "richtig": 0,
        "optFa": true,
@@ -430,11 +584,23 @@
        "erkl": "<span class='fa'>یک پژوهش بلندمدت در دانشگاه هاروارد که از دهه‌ی ۱۹۳۰ زندگی صدها نفر را دنبال کرده، به نتیجه‌ای ساده رسیده است: روابط خوب ما را شادتر و سالم‌تر نگه می‌دارد.</span>"
       },
       {
+       "frage": "<span class='fa'>رابرت والدینگر، یکی از مدیران این ___، تأکید می‌کند که کیفیت روابط از تعداد آنها مهم‌تر است.</span><br><span class='mini'>Robert Waldinger, einer der Leiter dieser Studie, betont, dass die Qualität der Beziehungen wichtiger ist als ihre Zahl.</span>",
+       "optionen": [
+        "پژوهش",
+        "نظرسنجی",
+        "عادت"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>رابرت والدینگر، یکی از مدیران این پژوهش، تأکید می‌کند که کیفیت روابط از تعداد آنها مهم‌تر است.</span>"
+      },
+      {
        "frage": "<span class='fa'>ثروت تا حدی مهم است، اما ___ طولانی می‌تواند برای سلامت به اندازه‌ی بسیاری از عادت‌های ناسالم خطرناک باشد.</span><br><span class='mini'>Wohlstand ist bis zu einem gewissen Grad wichtig, aber lange Einsamkeit kann für die Gesundheit so gefährlich sein wie viele ungesunde Gewohnheiten.</span>",
        "optionen": [
         "تنهایی",
-        "هدف",
-        "سپاسگزاری"
+        "رضایت",
+        "رباعی"
        ],
        "richtig": 0,
        "optFa": true,
@@ -442,28 +608,40 @@
        "erkl": "<span class='fa'>ثروت تا حدی مهم است، اما تنهایی طولانی می‌تواند برای سلامت به اندازه‌ی بسیاری از عادت‌های ناسالم خطرناک باشد.</span>"
       },
       {
+       "frage": "<span class='fa'>پژوهش‌ها همچنین نشان می‌دهند که افزایش درآمد، به‌ویژه برای کسانی که درآمد کمی دارند، ___ را به‌روشنی بالا می‌برد، اما اثر آن در سطح‌های بالاتر کمتر می‌شود.</span><br><span class='mini'>Studien zeigen außerdem, dass ein höheres Einkommen die Zufriedenheit deutlich steigert, vor allem bei Menschen mit geringem Einkommen, dass seine Wirkung auf höherem Niveau aber nachlässt.</span>",
+       "optionen": [
+        "رضایت",
+        "ناپایداری",
+        "لحظه"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>پژوهش‌ها همچنین نشان می‌دهند که افزایش درآمد، به‌ویژه برای کسانی که درآمد کمی دارند، رضایت را به‌روشنی بالا می‌برد، اما اثر آن در سطح‌های بالاتر کمتر می‌شود.</span>"
+      },
+      {
+       "frage": "<span class='fa'>یکی از دلایل این است که انسان‌ها به سرعت به شرایط تازه عادت می‌کنند؛ خانه‌ی بزرگ‌تر یا ماشین تازه پس از مدتی دیگر ___ چندانی نمی‌آورد.</span><br><span class='mini'>Ein Grund dafür ist, dass Menschen sich schnell an neue Umstände gewöhnen; ein größeres Haus oder ein neues Auto bringt nach einiger Zeit kaum noch Freude.</span>",
+       "optionen": [
+        "شادی",
+        "حوصله",
+        "کوهپیمایی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>یکی از دلایل این است که انسان‌ها به سرعت به شرایط تازه عادت می‌کنند؛ خانه‌ی بزرگ‌تر یا ماشین تازه پس از مدتی دیگر شادی چندانی نمی‌آورد.</span>"
+      },
+      {
        "frage": "<span class='fa'>روان‌شناسان همچنین نشان داده‌اند که ___، یعنی توجه آگاهانه به چیزهای خوب زندگی، می‌تواند رضایت را افزایش دهد.</span><br><span class='mini'>Psychologen haben außerdem gezeigt, dass Dankbarkeit, also die bewusste Aufmerksamkeit für das Gute im Leben, die Zufriedenheit steigern kann.</span>",
        "optionen": [
         "سپاسگزاری",
-        "لحظه",
-        "حکایت"
+        "پژوهش",
+        "سادگی"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
        "erkl": "<span class='fa'>روان‌شناسان همچنین نشان داده‌اند که سپاسگزاری، یعنی توجه آگاهانه به چیزهای خوب زندگی، می‌تواند رضایت را افزایش دهد.</span>"
-      },
-      {
-       "frage": "<span class='fa'>داشتن هدف و احساس معنا نیز نقش مهمی دارد؛ کسانی که برای دیگران کاری انجام می‌دهند، مثلا به عنوان ___، اغلب از زندگی راضی‌ترند.</span><br><span class='mini'>Auch ein Ziel und das Gefühl von Sinn spielen eine wichtige Rolle; wer etwas für andere tut, etwa als Freiwillige/r, ist oft zufriedener mit dem Leben.</span>",
-       "optionen": [
-        "داوطلب",
-        "اندرز",
-        "شاخص"
-       ],
-       "richtig": 0,
-       "optFa": true,
-       "hoeren": false,
-       "erkl": "<span class='fa'>داشتن هدف و احساس معنا نیز نقش مهمی دارد؛ کسانی که برای دیگران کاری انجام می‌دهند، مثلا به عنوان داوطلب، اغلب از زندگی راضی‌ترند.</span>"
       }
      ]
     },
@@ -488,14 +666,306 @@
        "de": "Saadi spricht im Golestan von Maßhalten, Genügsamkeit und Menschenwürde."
       },
       {
-       "fa": "پژوهش‌های امروزی نشان می‌دهند که روابط، معنا و سپاسگزاری برای خوشبختی بسیار مهم‌اند.",
+       "fa": "پژوهش هاروارد نشان می‌دهد که روابط خوب از ثروت مهم‌ترند و انسان‌ها به سرعت به شرایط تازه عادت می‌کنند.",
        "tr": "",
-       "de": "Heutige Studien zeigen, dass Beziehungen, Sinn und Dankbarkeit für das Glück sehr wichtig sind."
+       "de": "Die Harvard-Studie zeigt, dass gute Beziehungen wichtiger sind als Wohlstand, und Menschen gewöhnen sich schnell an neue Umstände."
+      },
+      {
+       "fa": "سپاسگزاری، احساس معنا، اعتماد و حمایت اجتماعی نیز برای خوشبختی بسیار مهم‌اند.",
+       "tr": "",
+       "de": "Auch Dankbarkeit, Sinn, Vertrauen und soziale Unterstützung sind für das Glück sehr wichtig."
       },
       {
        "fa": "عبارت فارسی «دل خوش» همه‌ی این اندیشه‌ها را در خود جمع می‌کند.",
        "tr": "",
        "de": "Der persische Ausdruck ‹frohes Herz› vereint all diese Gedanken."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t3",
+   "titel": "Alltag: Ein Wochenende mit Herrn Rahimi",
+   "vorschau": "Ein Wochenende mit Herrn Rahimi",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>بی‌هدفی</span> – Ziellosigkeit · <span class='fa'>برنامه ریختن</span> – einen Plan machen · <span class='fa'>نوبت</span> – Reihe, an der Reihe sein · <span class='fa'>قهوه‌خانه</span> – (traditionelles) Teehaus · <span class='fa'>بوته</span> – Strauch · <span class='fa'>از بر کردن</span> – auswendig lernen · <span class='fa'>پرخرج</span> – kostspielig · <span class='fa'>پشیمان</span> – reuig · <span class='fa'>طرب</span> – Freude, Frohsinn · <span class='fa'>بی‌خیالی</span> – Sorglosigkeit</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Alltag: Ein Wochenende mit Herrn Rahimi",
+     "text": "Alltagstext – Tippe eine Zeile an, wenn du die Übersetzung brauchst.",
+     "zeilen": [
+      {
+       "fa": "آقای رحیمی شصت و هشت سال دارد و هشت سال است که بازنشسته شده است.",
+       "tr": "",
+       "de": "Herr Rahimi ist achtundsechzig und seit acht Jahren im Ruhestand."
+      },
+      {
+       "fa": "او سی و پنج سال در دبیرستان‌های تهران ادبیات فارسی درس داده و هنوز هم بسیاری از شاگردان قدیمی‌اش با او در تماس‌اند.",
+       "tr": "",
+       "de": "Er hat fünfunddreißig Jahre lang an Teheraner Gymnasien persische Literatur unterrichtet, und viele seiner früheren Schüler stehen noch immer mit ihm in Kontakt."
+      },
+      {
+       "fa": "بسیاری از همکارانش پس از بازنشستگی احساس بی‌هدفی می‌کردند، اما او از همان ابتدا برای روزهایش برنامه‌ای ساده ریخت.",
+       "tr": "",
+       "de": "Viele seiner Kollegen fühlten sich nach der Pensionierung ziellos, er aber hat sich von Anfang an einen einfachen Plan für seine Tage gemacht."
+      },
+      {
+       "fa": "آخر هفته‌های او معمولا شکل ثابتی دارد و به گفته‌ی خودش، همین نظم کوچک به او آرامش می‌دهد.",
+       "tr": "",
+       "de": "Seine Wochenenden haben meist eine feste Form, und nach eigenen Worten gibt ihm gerade diese kleine Ordnung Ruhe."
+      },
+      {
+       "fa": "پنجشنبه‌ها صبح، دو ساعت کار داوطلبانه انجام می‌دهد: در کتابخانه‌ی محله به نوجوانانی که در درس ادبیات مشکل دارند کمک می‌کند.",
+       "tr": "",
+       "de": "Donnerstagmorgens arbeitet er zwei Stunden ehrenamtlich: In der Stadtteilbibliothek hilft er Jugendlichen, die im Literaturunterricht Schwierigkeiten haben."
+      },
+      {
+       "fa": "او می‌گوید این ساعت‌ها به زندگی‌اش معنا می‌دهد، چون هنوز احساس می‌کند برای کسی مفید است.",
+       "tr": "",
+       "de": "Er sagt, diese Stunden geben seinem Leben Sinn, weil er sich noch immer für jemanden nützlich fühlt."
+      },
+      {
+       "fa": "پنجشنبه‌شب‌ها نوبت دورهمی شعر است: پنج شش نفر از دوستان و همسایه‌ها در خانه‌ی یکی از آنها جمع می‌شوند.",
+       "tr": "",
+       "de": "Donnerstagabends ist die Dichterrunde dran: Fünf, sechs Freunde und Nachbarn treffen sich in der Wohnung eines von ihnen."
+      },
+      {
+       "fa": "هر کس شعری از حافظ، سعدی، خیام یا شاعری معاصر می‌خواند و بعد درباره‌ی معنای آن بحث می‌کنند.",
+       "tr": "",
+       "de": "Jeder liest ein Gedicht von Hafes, Saadi, Khayyam oder einem zeitgenössischen Dichter vor, und dann diskutieren sie über seine Bedeutung."
+      },
+      {
+       "fa": "گاهی بحث‌ها داغ می‌شود، اما همیشه با چای و میوه و گفتگوی دوستانه تمام می‌شود.",
+       "tr": "",
+       "de": "Manchmal werden die Diskussionen hitzig, aber sie enden immer mit Tee, Obst und freundschaftlichem Gespräch."
+      },
+      {
+       "fa": "یکی از همسایه‌ها، مهندسی بازنشسته، تا چند سال پیش هیچ علاقه‌ای به شعر نداشت و حالا از اعضای ثابت این جمع است.",
+       "tr": "",
+       "de": "Einer der Nachbarn, ein pensionierter Ingenieur, hatte bis vor ein paar Jahren keinerlei Interesse an Gedichten und gehört jetzt fest zu dieser Runde."
+      },
+      {
+       "fa": "جمعه‌ها، ساعت شش صبح، با دو دوست قدیمی برای کوهپیمایی به دربند در شمال تهران می‌رود.",
+       "tr": "",
+       "de": "Freitags um sechs Uhr morgens geht er mit zwei alten Freunden zum Bergwandern nach Darband im Norden Teherans."
+      },
+      {
+       "fa": "آنها آهسته بالا می‌روند، در میانه‌ی راه در یک قهوه‌خانه‌ی کوچک صبحانه می‌خورند و درباره‌ی کتاب‌ها و خبرها گفتگو می‌کنند.",
+       "tr": "",
+       "de": "Sie steigen langsam hinauf, frühstücken auf halber Strecke in einem kleinen Teehaus und unterhalten sich über Bücher und Neuigkeiten."
+      },
+      {
+       "fa": "آقای رحیمی می‌گوید این دوستی چهل‌ساله یکی از ارزشمندترین چیزهای زندگی‌اش است.",
+       "tr": "",
+       "de": "Herr Rahimi sagt, diese vierzigjährige Freundschaft sei eines der wertvollsten Dinge in seinem Leben."
+      },
+      {
+       "fa": "پس از بازگشت، چند ساعتی را در باغچه‌ی کوچک حیاط می‌گذراند و گوجه، ریحان و چند بوته گل سرخ می‌کارد.",
+       "tr": "",
+       "de": "Nach der Rückkehr verbringt er einige Stunden im kleinen Garten im Hof und pflanzt Tomaten, Basilikum und ein paar Rosensträucher."
+      },
+      {
+       "fa": "او معتقد است که کار با خاک حوصله را بیشتر می‌کند، چون هیچ گیاهی به دستور ما زودتر رشد نمی‌کند.",
+       "tr": "",
+       "de": "Er ist überzeugt, dass die Arbeit mit der Erde geduldiger macht, weil keine Pflanze auf unseren Befehl hin schneller wächst."
+      },
+      {
+       "fa": "بعدازظهر جمعه، دخترش با دو نوه‌ی او به دیدنش می‌آید.",
+       "tr": "",
+       "de": "Am Freitagnachmittag kommt seine Tochter mit seinen beiden Enkelkindern zu Besuch."
+      },
+      {
+       "fa": "نوه‌ها، که هفت و ده ساله‌اند، قصه‌هایی را دوست دارند که پدربزرگشان از دوران مدرسه‌ی خودش تعریف می‌کند.",
+       "tr": "",
+       "de": "Die Enkel, sieben und zehn Jahre alt, lieben die Geschichten, die ihr Großvater aus seiner eigenen Schulzeit erzählt."
+      },
+      {
+       "fa": "گاهی هم با هم شعر حفظ می‌کنند؛ نوه‌ی بزرگ‌تر به تازگی چند بیت از گلستان سعدی را از بر کرده است.",
+       "tr": "",
+       "de": "Manchmal lernen sie auch zusammen Gedichte auswendig; das ältere Enkelkind hat gerade einige Verse aus Saadis Golestan gelernt."
+      },
+      {
+       "fa": "آقای رحیمی زندگی پرخرجی ندارد؛ خانه‌اش قدیمی است و سال‌هاست که ماشینش را عوض نکرده است.",
+       "tr": "",
+       "de": "Herr Rahimi lebt nicht aufwendig; sein Haus ist alt, und sein Auto hat er seit Jahren nicht gewechselt."
+      },
+      {
+       "fa": "اما او می‌گوید سادگی را خودش انتخاب کرده و از آن پشیمان نیست.",
+       "tr": "",
+       "de": "Aber er sagt, er habe die Einfachheit selbst gewählt und bereue es nicht."
+      },
+      {
+       "fa": "وقتی یوناس از او پرسید راز رضایتش چیست، کمی فکر کرد و سه چیز را نام برد: آدم‌های خوب، کاری مفید و چند عادت ساده.",
+       "tr": "",
+       "de": "Als Jonas ihn fragte, was das Geheimnis seiner Zufriedenheit sei, dachte er kurz nach und nannte drei Dinge: gute Menschen, eine sinnvolle Tätigkeit und ein paar einfache Gewohnheiten."
+      },
+      {
+       "fa": "یکی از این عادت‌ها نوشتن است: هر شب پیش از خواب، در دفترچه‌ای کوچک یک جمله درباره‌ی روزش می‌نویسد.",
+       "tr": "",
+       "de": "Eine dieser Gewohnheiten ist das Schreiben: Jeden Abend vor dem Schlafengehen schreibt er einen Satz über seinen Tag in ein kleines Heft."
+      },
+      {
+       "fa": "او می‌گوید: «بعضی شب‌ها فقط می‌نویسم که هوا خوب بود یا نوه‌ام خندید؛ همین کافی است.»",
+       "tr": "",
+       "de": "Er sagt: ‹An manchen Abenden schreibe ich nur, dass das Wetter schön war oder dass mein Enkel gelacht hat – das genügt.›"
+      },
+      {
+       "fa": "به نظر او، تفریح لازم نیست گران باشد: یک پیاده‌روی، یک کتاب خوب یا یک گفتگوی طولانی با دوستان کافی است.",
+       "tr": "",
+       "de": "Seiner Meinung nach muss Freizeit nicht teuer sein: Ein Spaziergang, ein gutes Buch oder ein langes Gespräch mit Freunden genügen."
+      },
+      {
+       "fa": "آقای رحیمی بارها این دو مصراع خیام را برای مهمانانش خوانده است: «این قافله‌ی عمر عجب می‌گذرد / دریاب دمی که با طرب می‌گذرد».",
+       "tr": "",
+       "de": "Herr Rahimi hat seinen Gästen schon oft diese zwei Halbverse Khayyams vorgetragen: ‹Wie seltsam zieht die Karawane des Lebens vorbei / ergreife den Augenblick, der in Freude vergeht.›"
+      },
+      {
+       "fa": "او این شعر را نه دعوتی به بی‌خیالی، بلکه یادآوری‌ای برای قدر دانستن روزهای معمولی می‌داند.",
+       "tr": "",
+       "de": "Er versteht dieses Gedicht nicht als Aufforderung zur Sorglosigkeit, sondern als Erinnerung daran, die gewöhnlichen Tage zu schätzen."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "آقای رحیمی پس از بازنشستگی احساس بی‌هدفی می‌کرد.",
+       "fest": true,
+       "erkl": "Er hat sich <b>von Anfang an</b> einen einfachen Plan gemacht."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "او پنجشنبه‌ها در کتابخانه‌ی محله به نوجوانان کمک می‌کند.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "در دورهمی شعر فقط شعرهای کلاسیک خوانده می‌شود.",
+       "fest": true,
+       "erkl": "Man liest auch Gedichte <b>zeitgenössischer</b> Dichter."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "او جمعه‌ها با دو دوست قدیمی به کوه می‌رود.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "آقای رحیمی هر شب یک جمله درباره‌ی روزش می‌نویسد.",
+       "fest": true
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Was hat Herr Rahimi früher beruflich gemacht?",
+       "optionen": [
+        "Er war Lehrer für persische Literatur.",
+        "Er war Ingenieur.",
+        "Er war Bibliothekar."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Warum gibt ihm die ehrenamtliche Arbeit Sinn?",
+       "optionen": [
+        "Er fühlt sich noch für jemanden nützlich.",
+        "Er bekommt dafür Geld.",
+        "Er kann dort ungestört lesen."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was lernt man laut Herrn Rahimi bei der Gartenarbeit?",
+       "optionen": [
+        "Geduld",
+        "Pünktlichkeit",
+        "Sparsamkeit"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Welche drei Dinge nennt er als Geheimnis seiner Zufriedenheit?",
+       "optionen": [
+        "gute Menschen, eine sinnvolle Tätigkeit und einfache Gewohnheiten",
+        "Geld, Gesundheit und Reisen",
+        "ein großes Haus, ein Auto und einen Garten"
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "او سی و پنج سال در دبیرستان‌های تهران ادبیات فارسی درس داده و هنوز هم بسیاری از شاگردان قدیمی‌اش با او در تماس‌اند.",
+       "tr": "",
+       "de": "Er hat fünfunddreißig Jahre lang an Teheraner Gymnasien persische Literatur unterrichtet, und viele seiner früheren Schüler stehen noch immer mit ihm in Kontakt."
+      },
+      {
+       "fa": "بسیاری از همکارانش پس از بازنشستگی احساس بی‌هدفی می‌کردند، اما او از همان ابتدا برای روزهایش برنامه‌ای ساده ریخت.",
+       "tr": "",
+       "de": "Viele seiner Kollegen fühlten sich nach der Pensionierung ziellos, er aber hat sich von Anfang an einen einfachen Plan für seine Tage gemacht."
+      },
+      {
+       "fa": "آخر هفته‌های او معمولا شکل ثابتی دارد و به گفته‌ی خودش، همین نظم کوچک به او آرامش می‌دهد.",
+       "tr": "",
+       "de": "Seine Wochenenden haben meist eine feste Form, und nach eigenen Worten gibt ihm gerade diese kleine Ordnung Ruhe."
+      },
+      {
+       "fa": "پنجشنبه‌ها صبح، دو ساعت کار داوطلبانه انجام می‌دهد: در کتابخانه‌ی محله به نوجوانانی که در درس ادبیات مشکل دارند کمک می‌کند.",
+       "tr": "",
+       "de": "Donnerstagmorgens arbeitet er zwei Stunden ehrenamtlich: In der Stadtteilbibliothek hilft er Jugendlichen, die im Literaturunterricht Schwierigkeiten haben."
+      },
+      {
+       "fa": "او می‌گوید این ساعت‌ها به زندگی‌اش معنا می‌دهد، چون هنوز احساس می‌کند برای کسی مفید است.",
+       "tr": "",
+       "de": "Er sagt, diese Stunden geben seinem Leben Sinn, weil er sich noch immer für jemanden nützlich fühlt."
+      },
+      {
+       "fa": "پنجشنبه‌شب‌ها نوبت دورهمی شعر است: پنج شش نفر از دوستان و همسایه‌ها در خانه‌ی یکی از آنها جمع می‌شوند.",
+       "tr": "",
+       "de": "Donnerstagabends ist die Dichterrunde dran: Fünf, sechs Freunde und Nachbarn treffen sich in der Wohnung eines von ihnen."
       }
      ]
     }
@@ -542,9 +1012,39 @@
        "de": "Da haben Sie recht. Deshalb gehe ich im zweiten Teil auf Saadi ein. Wie Saadi sagt, sind die Menschen Glieder eines Körpers; also ist mein Glück ohne die anderen nicht vollständig."
       },
       {
-       "fa": "دکتر صادقی: خوب است. فقط یک نکته: درباره‌ی رباعی‌ها با احتیاط بنویسید. همه‌ی آنها با اطمینان از خیام نیستند.",
+       "fa": "دکتر صادقی: استدلال خوبی است. در مقدمه چه نوشته‌اید؟",
        "tr": "",
-       "de": "Gut. Nur ein Hinweis: Schreiben Sie vorsichtig über die Vierzeiler. Nicht alle stammen sicher von Khayyam."
+       "de": "Ein gutes Argument. Was haben Sie in der Einleitung geschrieben?"
+      },
+      {
+       "fa": "یوناس: نخست پرسش را مطرح کرده‌ام و بعد توضیح داده‌ام که چرا این دو شاعر را انتخاب کرده‌ام: یکی از لحظه سخن می‌گوید و دیگری از جامعه.",
+       "tr": "",
+       "de": "Zuerst habe ich die Frage gestellt und dann erklärt, warum ich diese beiden Dichter gewählt habe: Der eine spricht vom Augenblick, der andere von der Gemeinschaft."
+      },
+      {
+       "fa": "دکتر صادقی: خوب است. پیشنهاد می‌کنم در بخش سوم به پژوهش‌های امروزی هم اشاره کنید؛ مثلا به پژوهش هاروارد درباره‌ی روابط.",
+       "tr": "",
+       "de": "Gut. Ich schlage vor, dass Sie im dritten Teil auch auf heutige Studien eingehen, zum Beispiel auf die Harvard-Studie über Beziehungen."
+      },
+      {
+       "fa": "یوناس: فکر خوبی است. فقط نگرانم که مقاله بیش از اندازه طولانی شود.",
+       "tr": "",
+       "de": "Eine gute Idee. Ich fürchte nur, dass der Essay zu lang wird."
+      },
+      {
+       "fa": "دکتر صادقی: پس بخش‌های دیگر را کوتاه‌تر کنید. در یک جستار خوب، هر جمله باید کاری انجام دهد.",
+       "tr": "",
+       "de": "Dann kürzen Sie die anderen Teile. In einem guten Essay muss jeder Satz eine Aufgabe erfüllen."
+      },
+      {
+       "fa": "یوناس: چشم. نکته‌ی دیگری هم هست؟",
+       "tr": "",
+       "de": "In Ordnung. Gibt es noch etwas?"
+      },
+      {
+       "fa": "دکتر صادقی: فقط یک نکته: درباره‌ی رباعی‌ها با احتیاط بنویسید. همه‌ی آنها با اطمینان از خیام نیستند.",
+       "tr": "",
+       "de": "Nur ein Hinweis: Schreiben Sie vorsichtig über die Vierzeiler. Nicht alle stammen sicher von Khayyam."
       },
       {
        "fa": "یوناس: حق با شماست. می‌نویسم «رباعی‌هایی که به خیام نسبت داده می‌شود».",
@@ -589,9 +1089,39 @@
        "de": "Da haben Sie recht. Deshalb gehe ich im zweiten Teil auf Saadi ein. Wie Saadi sagt, sind die Menschen Glieder eines Körpers; also ist mein Glück ohne die anderen nicht vollständig."
       },
       {
-       "fa": "دکتر صادقی: خوب است. فقط یک نکته: درباره‌ی رباعی‌ها با احتیاط بنویسید. همه‌ی آنها با اطمینان از خیام نیستند.",
+       "fa": "دکتر صادقی: استدلال خوبی است. در مقدمه چه نوشته‌اید؟",
        "tr": "",
-       "de": "Gut. Nur ein Hinweis: Schreiben Sie vorsichtig über die Vierzeiler. Nicht alle stammen sicher von Khayyam."
+       "de": "Ein gutes Argument. Was haben Sie in der Einleitung geschrieben?"
+      },
+      {
+       "fa": "یوناس: نخست پرسش را مطرح کرده‌ام و بعد توضیح داده‌ام که چرا این دو شاعر را انتخاب کرده‌ام: یکی از لحظه سخن می‌گوید و دیگری از جامعه.",
+       "tr": "",
+       "de": "Zuerst habe ich die Frage gestellt und dann erklärt, warum ich diese beiden Dichter gewählt habe: Der eine spricht vom Augenblick, der andere von der Gemeinschaft."
+      },
+      {
+       "fa": "دکتر صادقی: خوب است. پیشنهاد می‌کنم در بخش سوم به پژوهش‌های امروزی هم اشاره کنید؛ مثلا به پژوهش هاروارد درباره‌ی روابط.",
+       "tr": "",
+       "de": "Gut. Ich schlage vor, dass Sie im dritten Teil auch auf heutige Studien eingehen, zum Beispiel auf die Harvard-Studie über Beziehungen."
+      },
+      {
+       "fa": "یوناس: فکر خوبی است. فقط نگرانم که مقاله بیش از اندازه طولانی شود.",
+       "tr": "",
+       "de": "Eine gute Idee. Ich fürchte nur, dass der Essay zu lang wird."
+      },
+      {
+       "fa": "دکتر صادقی: پس بخش‌های دیگر را کوتاه‌تر کنید. در یک جستار خوب، هر جمله باید کاری انجام دهد.",
+       "tr": "",
+       "de": "Dann kürzen Sie die anderen Teile. In einem guten Essay muss jeder Satz eine Aufgabe erfüllen."
+      },
+      {
+       "fa": "یوناس: چشم. نکته‌ی دیگری هم هست؟",
+       "tr": "",
+       "de": "In Ordnung. Gibt es noch etwas?"
+      },
+      {
+       "fa": "دکتر صادقی: فقط یک نکته: درباره‌ی رباعی‌ها با احتیاط بنویسید. همه‌ی آنها با اطمینان از خیام نیستند.",
+       "tr": "",
+       "de": "Nur ein Hinweis: Schreiben Sie vorsichtig über die Vierzeiler. Nicht alle stammen sicher von Khayyam."
       },
       {
        "fa": "یوناس: حق با شماست. می‌نویسم «رباعی‌هایی که به خیام نسبت داده می‌شود».",
@@ -619,11 +1149,11 @@
        "richtig": 0
       },
       {
-       "frage": "Welchen Einwand bringt Dr. Sadeghi?",
+       "frage": "Was schlägt Dr. Sadeghi für den dritten Teil vor?",
        "optionen": [
-        "Wo bleibt bei Khayyam die Verantwortung gegenüber anderen?",
-        "Der Essay ist zu kurz.",
-        "Saadi passt nicht zum Thema."
+        "auf heutige Studien wie die Harvard-Studie einzugehen",
+        "ein drittes Gedicht zu übersetzen",
+        "den Teil ganz zu streichen"
        ],
        "richtig": 0
       },
@@ -642,6 +1172,205 @@
   },
   {
    "id": "d2",
+   "titel": "Dialog: Glück in Zahlen",
+   "vorschau": "Glück in Zahlen",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Leyla schreibt für ihre Zeitschrift einen Artikel über Glücksforschung. Sie spricht per Videoanruf mit ihrem Bruder Bardia in Hamburg.</p>"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "لیلا: بردیا، برای مقاله‌ی تازه‌ام یک سؤال شخصی دارم: در هامبورگ شادتری یا وقتی در تهران بودی، شادتر بودی؟",
+       "tr": "",
+       "de": "Bardia, für meinen neuen Artikel habe ich eine persönliche Frage: Bist du in Hamburg glücklicher, oder warst du es in Teheran?"
+      },
+      {
+       "fa": "بردیا: سؤال سختی است. این‌جا کارم خوب است و زندگی منظم‌تر است، اما دلم برای جمع‌های خانوادگی تنگ می‌شود.",
+       "tr": "",
+       "de": "Eine schwierige Frage. Hier läuft meine Arbeit gut und das Leben ist geordneter, aber ich vermisse die Familientreffen."
+      },
+      {
+       "fa": "لیلا: جالب است. پژوهش‌ها هم همین را می‌گویند: روابط یکی از مهم‌ترین عامل‌های شادی‌اند.",
+       "tr": "",
+       "de": "Interessant. Das sagen auch die Studien: Beziehungen gehören zu den wichtigsten Glücksfaktoren."
+      },
+      {
+       "fa": "بردیا: در گزارش جهانی شادی، آلمان چه جایگاهی دارد؟",
+       "tr": "",
+       "de": "Welchen Platz hat Deutschland im Weltglücksbericht?"
+      },
+      {
+       "fa": "لیلا: معمولا در میان بیست و پنج کشور اول است. کشورهای شمال اروپا، مثل فنلاند، بالاترند.",
+       "tr": "",
+       "de": "Meist liegt es unter den ersten fünfundzwanzig Ländern. Nordeuropäische Länder wie Finnland stehen weiter oben."
+      },
+      {
+       "fa": "بردیا: فنلاند؟ با آن زمستان‌های طولانی و تاریک؟",
+       "tr": "",
+       "de": "Finnland? Mit diesen langen, dunklen Wintern?"
+      },
+      {
+       "fa": "لیلا: بله. به گفته‌ی پژوهشگران، مردم آن‌جا به یکدیگر و به نهادها اعتماد زیادی دارند. مثلا بیشترشان مطمئن‌اند که اگر کیف پولشان را گم کنند، آن را پس می‌گیرند.",
+       "tr": "",
+       "de": "Ja. Laut den Forschenden haben die Menschen dort großes Vertrauen zueinander und in die Institutionen. Zum Beispiel sind die meisten sicher, dass sie ihr Portemonnaie zurückbekommen, wenn sie es verlieren."
+      },
+      {
+       "fa": "بردیا: پس اعتماد از پول مهم‌تر است؟",
+       "tr": "",
+       "de": "Ist Vertrauen also wichtiger als Geld?"
+      },
+      {
+       "fa": "لیلا: نه دقیقا. درآمد هم مهم است، اما تا حدی. در کنار آن، سلامت، آزادی در تصمیم‌گیری و سخاوت هم نقش مهمی دارند.",
+       "tr": "",
+       "de": "Nicht ganz. Das Einkommen ist auch wichtig, aber nur bis zu einem gewissen Grad. Daneben spielen Gesundheit, Entscheidungsfreiheit und Großzügigkeit eine wichtige Rolle."
+      },
+      {
+       "fa": "بردیا: سخاوت؟ این را نمی‌دانستم. یکی از همکارانم هر ماه بخشی از حقوقش را به یک مؤسسه‌ی خیریه می‌دهد و می‌گوید این کار حالش را خوب می‌کند.",
+       "tr": "",
+       "de": "Großzügigkeit? Das wusste ich nicht. Ein Kollege von mir spendet jeden Monat einen Teil seines Gehalts an eine gemeinnützige Organisation und sagt, dass ihm das guttut."
+      },
+      {
+       "fa": "لیلا: پژوهش‌ها همین را نشان می‌دهند: خرج کردن برای دیگران اغلب ما را شادتر می‌کند تا خرج کردن برای خودمان.",
+       "tr": "",
+       "de": "Genau das zeigen Studien: Geld für andere auszugeben macht uns oft glücklicher, als es für uns selbst auszugeben."
+      },
+      {
+       "fa": "بردیا: به قول سعدی، بنی آدم اعضای یکدیگرند. انگار او بیش از هفتصد سال پیش نتیجه‌ی این پژوهش‌ها را می‌دانست.",
+       "tr": "",
+       "de": "Wie Saadi sagt: Die Menschenkinder sind Glieder voneinander. Als hätte er das Ergebnis dieser Studien schon vor über siebenhundert Jahren gekannt."
+      },
+      {
+       "fa": "لیلا: همین جمله را در پایان مقاله می‌آورم. ممنون، بردیا جان. راستی، کی به تهران می‌آیی؟",
+       "tr": "",
+       "de": "Genau diesen Satz bringe ich am Ende des Artikels. Danke, Bardia. Übrigens, wann kommst du nach Teheran?"
+      },
+      {
+       "fa": "بردیا: اگر کارم اجازه بدهد، برای نوروز. آن وقت درباره‌ی شادی حضوری صحبت می‌کنیم. روز خوش!",
+       "tr": "",
+       "de": "Wenn es meine Arbeit erlaubt, zu Nowruz. Dann reden wir persönlich über das Glück. Einen schönen Tag noch!"
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "لیلا: بردیا، برای مقاله‌ی تازه‌ام یک سؤال شخصی دارم: در هامبورگ شادتری یا وقتی در تهران بودی، شادتر بودی؟",
+       "tr": "",
+       "de": "Bardia, für meinen neuen Artikel habe ich eine persönliche Frage: Bist du in Hamburg glücklicher, oder warst du es in Teheran?"
+      },
+      {
+       "fa": "بردیا: سؤال سختی است. این‌جا کارم خوب است و زندگی منظم‌تر است، اما دلم برای جمع‌های خانوادگی تنگ می‌شود.",
+       "tr": "",
+       "de": "Eine schwierige Frage. Hier läuft meine Arbeit gut und das Leben ist geordneter, aber ich vermisse die Familientreffen."
+      },
+      {
+       "fa": "لیلا: جالب است. پژوهش‌ها هم همین را می‌گویند: روابط یکی از مهم‌ترین عامل‌های شادی‌اند.",
+       "tr": "",
+       "de": "Interessant. Das sagen auch die Studien: Beziehungen gehören zu den wichtigsten Glücksfaktoren."
+      },
+      {
+       "fa": "بردیا: در گزارش جهانی شادی، آلمان چه جایگاهی دارد؟",
+       "tr": "",
+       "de": "Welchen Platz hat Deutschland im Weltglücksbericht?"
+      },
+      {
+       "fa": "لیلا: معمولا در میان بیست و پنج کشور اول است. کشورهای شمال اروپا، مثل فنلاند، بالاترند.",
+       "tr": "",
+       "de": "Meist liegt es unter den ersten fünfundzwanzig Ländern. Nordeuropäische Länder wie Finnland stehen weiter oben."
+      },
+      {
+       "fa": "بردیا: فنلاند؟ با آن زمستان‌های طولانی و تاریک؟",
+       "tr": "",
+       "de": "Finnland? Mit diesen langen, dunklen Wintern?"
+      },
+      {
+       "fa": "لیلا: بله. به گفته‌ی پژوهشگران، مردم آن‌جا به یکدیگر و به نهادها اعتماد زیادی دارند. مثلا بیشترشان مطمئن‌اند که اگر کیف پولشان را گم کنند، آن را پس می‌گیرند.",
+       "tr": "",
+       "de": "Ja. Laut den Forschenden haben die Menschen dort großes Vertrauen zueinander und in die Institutionen. Zum Beispiel sind die meisten sicher, dass sie ihr Portemonnaie zurückbekommen, wenn sie es verlieren."
+      },
+      {
+       "fa": "بردیا: پس اعتماد از پول مهم‌تر است؟",
+       "tr": "",
+       "de": "Ist Vertrauen also wichtiger als Geld?"
+      },
+      {
+       "fa": "لیلا: نه دقیقا. درآمد هم مهم است، اما تا حدی. در کنار آن، سلامت، آزادی در تصمیم‌گیری و سخاوت هم نقش مهمی دارند.",
+       "tr": "",
+       "de": "Nicht ganz. Das Einkommen ist auch wichtig, aber nur bis zu einem gewissen Grad. Daneben spielen Gesundheit, Entscheidungsfreiheit und Großzügigkeit eine wichtige Rolle."
+      },
+      {
+       "fa": "بردیا: سخاوت؟ این را نمی‌دانستم. یکی از همکارانم هر ماه بخشی از حقوقش را به یک مؤسسه‌ی خیریه می‌دهد و می‌گوید این کار حالش را خوب می‌کند.",
+       "tr": "",
+       "de": "Großzügigkeit? Das wusste ich nicht. Ein Kollege von mir spendet jeden Monat einen Teil seines Gehalts an eine gemeinnützige Organisation und sagt, dass ihm das guttut."
+      },
+      {
+       "fa": "لیلا: پژوهش‌ها همین را نشان می‌دهند: خرج کردن برای دیگران اغلب ما را شادتر می‌کند تا خرج کردن برای خودمان.",
+       "tr": "",
+       "de": "Genau das zeigen Studien: Geld für andere auszugeben macht uns oft glücklicher, als es für uns selbst auszugeben."
+      },
+      {
+       "fa": "بردیا: به قول سعدی، بنی آدم اعضای یکدیگرند. انگار او بیش از هفتصد سال پیش نتیجه‌ی این پژوهش‌ها را می‌دانست.",
+       "tr": "",
+       "de": "Wie Saadi sagt: Die Menschenkinder sind Glieder voneinander. Als hätte er das Ergebnis dieser Studien schon vor über siebenhundert Jahren gekannt."
+      },
+      {
+       "fa": "لیلا: همین جمله را در پایان مقاله می‌آورم. ممنون، بردیا جان. راستی، کی به تهران می‌آیی؟",
+       "tr": "",
+       "de": "Genau diesen Satz bringe ich am Ende des Artikels. Danke, Bardia. Übrigens, wann kommst du nach Teheran?"
+      },
+      {
+       "fa": "بردیا: اگر کارم اجازه بدهد، برای نوروز. آن وقت درباره‌ی شادی حضوری صحبت می‌کنیم. روز خوش!",
+       "tr": "",
+       "de": "Wenn es meine Arbeit erlaubt, zu Nowruz. Dann reden wir persönlich über das Glück. Einen schönen Tag noch!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Was vermisst Bardia in Hamburg?",
+       "optionen": [
+        "die Familientreffen",
+        "das Wetter in Teheran",
+        "seine alte Arbeit"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Warum steht Finnland laut Leyla so weit oben?",
+       "optionen": [
+        "Die Menschen vertrauen einander und den Institutionen.",
+        "Es ist das reichste Land der Welt.",
+        "Es hat lange, warme Sommer."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was zeigen Studien zum Geldausgeben?",
+       "optionen": [
+        "Geld für andere auszugeben macht oft glücklicher.",
+        "Sparen macht am glücklichsten.",
+        "Geldausgeben macht immer unglücklich."
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d3",
    "titel": "Dialog: Der letzte Tee",
    "vorschau": "Der letzte Tee",
    "karten": [
@@ -656,9 +1385,9 @@
      "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
      "items": [
       {
-       "fa": "آقای رحیمی: خب یوناس جان، پس فردا شب پرواز داری. باورم نمی‌شود که یک سال گذشت.",
+       "fa": "آقای رحیمی: خب یوناس جان، فردا شب پرواز داری. باورم نمی‌شود که یک سال گذشت.",
        "tr": "",
-       "de": "Tja, Jonas, morgen Abend geht also dein Flug. Ich kann nicht glauben, dass ein Jahr vergangen ist."
+       "de": "Tja, Jonas, morgen Abend geht dein Flug. Ich kann nicht glauben, dass ein Jahr vergangen ist."
       },
       {
        "fa": "یوناس: من هم باورم نمی‌شود، آقای رحیمی. انگار همین دیروز بود که با یک چمدان و فارسی شکسته‌بسته جلوی در ایستاده بودم.",
@@ -676,9 +1405,29 @@
        "de": "Wie Khayyam sagt: ‹Wie seltsam zieht die Karawane des Lebens vorbei.› Aber ich habe dieses eine Jahr wirklich genutzt."
       },
       {
-       "fa": "آقای رحیمی: آفرین! حالا بگو ببینم، به نظر تو زندگی خوب چیست؟ این آخرین سؤال من است، قول می‌دهم!",
+       "fa": "آقای رحیمی: یادت هست شب اول حتی نمی‌دانستی کلید آب‌گرمکن کجاست؟",
        "tr": "",
-       "de": "Bravo! Jetzt sag mal: Was ist für dich ein gutes Leben? Das ist meine letzte Frage, versprochen!"
+       "de": "Weißt du noch, dass du am ersten Abend nicht einmal wusstest, wo der Schalter für den Warmwasserbereiter ist?"
+      },
+      {
+       "fa": "یوناس: یادم است. شما ساعت یازده شب با چراغ‌قوه آمدید و نشانم دادید. از همان شب فهمیدم که این‌جا تنها نیستم.",
+       "tr": "",
+       "de": "Ich erinnere mich. Sie kamen um elf Uhr nachts mit einer Taschenlampe und haben es mir gezeigt. Seit jenem Abend wusste ich, dass ich hier nicht allein bin."
+      },
+      {
+       "fa": "لیلا: اولین جلسه‌ی تاندممان در کافه را هم یادت هست؟ آن روز فقط درباره‌ی «را» سؤال داشتی.",
+       "tr": "",
+       "de": "Erinnerst du dich auch an unser erstes Tandemtreffen im Café? An dem Tag hattest du nur Fragen zu ‹ra›."
+      },
+      {
+       "fa": "یوناس: هنوز هم گاهی «را» را جا می‌اندازم! ولی از تو چیزهایی بیشتر از دستور زبان یاد گرفتم؛ این‌که چطور در این شهر زندگی کنم.",
+       "tr": "",
+       "de": "Ich lasse ‹ra› immer noch manchmal weg! Aber von dir habe ich mehr gelernt als Grammatik – nämlich, wie man in dieser Stadt lebt."
+      },
+      {
+       "fa": "آقای رحیمی: حالا بگو ببینم، به نظر تو زندگی خوب چیست؟ این آخرین سؤال من است، قول می‌دهم!",
+       "tr": "",
+       "de": "Jetzt sag mal: Was ist für dich ein gutes Leben? Das ist meine letzte Frage, versprochen!"
       },
       {
        "fa": "یوناس: اگر بپذیریم که زندگی خوب یعنی آدم‌های خوب در کنار آدم، پس من امسال زندگی خیلی خوبی داشتم؛ به لطف شما دو نفر.",
@@ -691,9 +1440,24 @@
        "de": "Das war keine Antwort, das war ein Kompliment! Aber angenommen. Versprich nur, dass du bald wiederkommst."
       },
       {
-       "fa": "آقای رحیمی: چایت سرد شد، پسرم. سفر به سلامت، و دلت همیشه خوش باشد. به امید دیدار!",
+       "fa": "یوناس: قول می‌دهم. دکتر صادقی گفته است که اگر برای دکترا برگردم، استاد راهنمایم می‌شود. تا آن وقت هر هفته با هم تماس تصویری داریم.",
        "tr": "",
-       "de": "Dein Tee ist kalt geworden, mein Junge. Gute Reise, und möge dein Herz immer froh sein. Auf Wiedersehen!"
+       "de": "Versprochen. Dr. Sadeghi hat gesagt, dass sie meine Betreuerin wird, wenn ich für die Promotion zurückkomme. Bis dahin telefonieren wir jede Woche per Video."
+      },
+      {
+       "fa": "لیلا: و تو هم برای مجله‌ی ما مطلبی درباره‌ی زندگی در تهران از نگاه یک آلمانی می‌نویسی. این دیگر قول است!",
+       "tr": "",
+       "de": "Und du schreibst für unsere Zeitschrift einen Beitrag über das Leben in Teheran aus der Sicht eines Deutschen. Das ist jetzt ein Versprechen!"
+      },
+      {
+       "fa": "آقای رحیمی: چایت سرد شد، پسرم. صبر کن یک چای تازه برایت بریزم. سفر به سلامت، و دلت همیشه خوش باشد.",
+       "tr": "",
+       "de": "Dein Tee ist kalt geworden, mein Junge. Warte, ich schenke dir einen frischen ein. Gute Reise, und möge dein Herz immer froh sein."
+      },
+      {
+       "fa": "یوناس: ممنونم، آقای رحیمی. ممنونم، لیلا. به امید دیدار؛ در تهران یا در هامبورگ.",
+       "tr": "",
+       "de": "Danke, Herr Rahimi. Danke, Leyla. Auf Wiedersehen – in Teheran oder in Hamburg."
       }
      ]
     },
@@ -703,9 +1467,9 @@
      "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
      "zeilen": [
       {
-       "fa": "آقای رحیمی: خب یوناس جان، پس فردا شب پرواز داری. باورم نمی‌شود که یک سال گذشت.",
+       "fa": "آقای رحیمی: خب یوناس جان، فردا شب پرواز داری. باورم نمی‌شود که یک سال گذشت.",
        "tr": "",
-       "de": "Tja, Jonas, morgen Abend geht also dein Flug. Ich kann nicht glauben, dass ein Jahr vergangen ist."
+       "de": "Tja, Jonas, morgen Abend geht dein Flug. Ich kann nicht glauben, dass ein Jahr vergangen ist."
       },
       {
        "fa": "یوناس: من هم باورم نمی‌شود، آقای رحیمی. انگار همین دیروز بود که با یک چمدان و فارسی شکسته‌بسته جلوی در ایستاده بودم.",
@@ -723,9 +1487,29 @@
        "de": "Wie Khayyam sagt: ‹Wie seltsam zieht die Karawane des Lebens vorbei.› Aber ich habe dieses eine Jahr wirklich genutzt."
       },
       {
-       "fa": "آقای رحیمی: آفرین! حالا بگو ببینم، به نظر تو زندگی خوب چیست؟ این آخرین سؤال من است، قول می‌دهم!",
+       "fa": "آقای رحیمی: یادت هست شب اول حتی نمی‌دانستی کلید آب‌گرمکن کجاست؟",
        "tr": "",
-       "de": "Bravo! Jetzt sag mal: Was ist für dich ein gutes Leben? Das ist meine letzte Frage, versprochen!"
+       "de": "Weißt du noch, dass du am ersten Abend nicht einmal wusstest, wo der Schalter für den Warmwasserbereiter ist?"
+      },
+      {
+       "fa": "یوناس: یادم است. شما ساعت یازده شب با چراغ‌قوه آمدید و نشانم دادید. از همان شب فهمیدم که این‌جا تنها نیستم.",
+       "tr": "",
+       "de": "Ich erinnere mich. Sie kamen um elf Uhr nachts mit einer Taschenlampe und haben es mir gezeigt. Seit jenem Abend wusste ich, dass ich hier nicht allein bin."
+      },
+      {
+       "fa": "لیلا: اولین جلسه‌ی تاندممان در کافه را هم یادت هست؟ آن روز فقط درباره‌ی «را» سؤال داشتی.",
+       "tr": "",
+       "de": "Erinnerst du dich auch an unser erstes Tandemtreffen im Café? An dem Tag hattest du nur Fragen zu ‹ra›."
+      },
+      {
+       "fa": "یوناس: هنوز هم گاهی «را» را جا می‌اندازم! ولی از تو چیزهایی بیشتر از دستور زبان یاد گرفتم؛ این‌که چطور در این شهر زندگی کنم.",
+       "tr": "",
+       "de": "Ich lasse ‹ra› immer noch manchmal weg! Aber von dir habe ich mehr gelernt als Grammatik – nämlich, wie man in dieser Stadt lebt."
+      },
+      {
+       "fa": "آقای رحیمی: حالا بگو ببینم، به نظر تو زندگی خوب چیست؟ این آخرین سؤال من است، قول می‌دهم!",
+       "tr": "",
+       "de": "Jetzt sag mal: Was ist für dich ein gutes Leben? Das ist meine letzte Frage, versprochen!"
       },
       {
        "fa": "یوناس: اگر بپذیریم که زندگی خوب یعنی آدم‌های خوب در کنار آدم، پس من امسال زندگی خیلی خوبی داشتم؛ به لطف شما دو نفر.",
@@ -738,9 +1522,24 @@
        "de": "Das war keine Antwort, das war ein Kompliment! Aber angenommen. Versprich nur, dass du bald wiederkommst."
       },
       {
-       "fa": "آقای رحیمی: چایت سرد شد، پسرم. سفر به سلامت، و دلت همیشه خوش باشد. به امید دیدار!",
+       "fa": "یوناس: قول می‌دهم. دکتر صادقی گفته است که اگر برای دکترا برگردم، استاد راهنمایم می‌شود. تا آن وقت هر هفته با هم تماس تصویری داریم.",
        "tr": "",
-       "de": "Dein Tee ist kalt geworden, mein Junge. Gute Reise, und möge dein Herz immer froh sein. Auf Wiedersehen!"
+       "de": "Versprochen. Dr. Sadeghi hat gesagt, dass sie meine Betreuerin wird, wenn ich für die Promotion zurückkomme. Bis dahin telefonieren wir jede Woche per Video."
+      },
+      {
+       "fa": "لیلا: و تو هم برای مجله‌ی ما مطلبی درباره‌ی زندگی در تهران از نگاه یک آلمانی می‌نویسی. این دیگر قول است!",
+       "tr": "",
+       "de": "Und du schreibst für unsere Zeitschrift einen Beitrag über das Leben in Teheran aus der Sicht eines Deutschen. Das ist jetzt ein Versprechen!"
+      },
+      {
+       "fa": "آقای رحیمی: چایت سرد شد، پسرم. صبر کن یک چای تازه برایت بریزم. سفر به سلامت، و دلت همیشه خوش باشد.",
+       "tr": "",
+       "de": "Dein Tee ist kalt geworden, mein Junge. Warte, ich schenke dir einen frischen ein. Gute Reise, und möge dein Herz immer froh sein."
+      },
+      {
+       "fa": "یوناس: ممنونم، آقای رحیمی. ممنونم، لیلا. به امید دیدار؛ در تهران یا در هامبورگ.",
+       "tr": "",
+       "de": "Danke, Herr Rahimi. Danke, Leyla. Auf Wiedersehen – in Teheran oder in Hamburg."
       }
      ]
     },
@@ -772,6 +1571,137 @@
         "Ein gutes Leben heißt gute Menschen an der Seite – wie Leyla und Herr Rahimi.",
         "Ein gutes Leben heißt viel reisen.",
         "Er weiß keine Antwort."
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "a",
+   "titel": "Gut zu wissen",
+   "vorschau": "💡",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Der Dschalali-Kalender",
+     "text": "Kurzer Infotext – tippe eine Zeile an für die Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "در قرن یازدهم میلادی، ملکشاه سلجوقی گروهی از ستاره‌شناسان را مأمور اصلاح تقویم کرد.",
+       "tr": "",
+       "de": "Im 11. Jahrhundert beauftragte der Seldschukenherrscher Malik-Schah eine Gruppe von Astronomen mit einer Kalenderreform."
+      },
+      {
+       "fa": "خیام یکی از چهره‌های اصلی این گروه بود.",
+       "tr": "",
+       "de": "Khayyam war eine der Hauptfiguren dieser Gruppe."
+      },
+      {
+       "fa": "تقویم تازه، که «جلالی» نام گرفت، سال را با نوروز، یعنی آغاز بهار، شروع می‌کرد.",
+       "tr": "",
+       "de": "Der neue Kalender, ‹Dschalali› genannt, ließ das Jahr mit Nowruz, dem Frühlingsanfang, beginnen."
+      },
+      {
+       "fa": "طول سال در این تقویم بر اساس رصدهای دقیق ستاره‌شناسان محاسبه می‌شد.",
+       "tr": "",
+       "de": "Die Länge des Jahres wurde in diesem Kalender auf Grundlage genauer astronomischer Beobachtungen berechnet."
+      },
+      {
+       "fa": "تقویم رسمی امروز ایران نیز بر پایه‌ی همین تقویم است و سال در آن هنوز با نوروز آغاز می‌شود.",
+       "tr": "",
+       "de": "Auch der heutige amtliche Kalender Irans beruht auf diesem Kalender, und das Jahr beginnt darin noch immer mit Nowruz."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der Golestan – ein Schulbuch für Jahrhunderte",
+     "text": "Kurzer Infotext – tippe eine Zeile an für die Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "سعدی گلستان را در سال ۱۲۵۸ میلادی، تنها یک سال پس از بوستان، نوشت.",
+       "tr": "",
+       "de": "Saadi schrieb den Golestan 1258, nur ein Jahr nach dem Bustan."
+      },
+      {
+       "fa": "این کتاب هشت باب دارد؛ موضوع برخی از آنها رفتار پادشاهان، قناعت، فایده‌ی خاموشی، تربیت و آداب صحبت است.",
+       "tr": "",
+       "de": "Das Buch hat acht Kapitel; einige handeln vom Verhalten der Könige, von Genügsamkeit, vom Nutzen des Schweigens, von Erziehung und von den Regeln des Umgangs."
+      },
+      {
+       "fa": "حکایت‌ها کوتاه‌اند و معمولاً با یک یا دو بیت شعر تمام می‌شوند.",
+       "tr": "",
+       "de": "Die Geschichten sind kurz und enden meist mit ein oder zwei Versen."
+      },
+      {
+       "fa": "زبان گلستان پس از بیش از هفت قرن هنوز برای فارسی‌زبانان امروز تا حد زیادی قابل فهم است.",
+       "tr": "",
+       "de": "Die Sprache des Golestan ist nach über sieben Jahrhunderten für heutige Persischsprachige noch weitgehend verständlich."
+      },
+      {
+       "fa": "بسیاری از جمله‌های آن به ضرب‌المثل تبدیل شده‌اند و در گفتگوهای روزمره به کار می‌روند.",
+       "tr": "",
+       "de": "Viele seiner Sätze sind zu Sprichwörtern geworden und werden in Alltagsgesprächen verwendet."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Khayyam am Himmel",
+     "text": "Kurzer Infotext – tippe eine Zeile an für die Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "آرامگاه خیام در نیشابور، در میان باغی بزرگ، قرار دارد.",
+       "tr": "",
+       "de": "Khayyams Grabmal liegt in Nischapur inmitten eines großen Gartens."
+      },
+      {
+       "fa": "بنای امروزی آن در دهه‌ی ۱۹۶۰ میلادی ساخته شد و طراح آن، هوشنگ سیحون، از هندسه و ستاره‌شناسی الهام گرفته است.",
+       "tr": "",
+       "de": "Der heutige Bau entstand in den 1960er-Jahren; sein Architekt, Houshang Seyhoun, ließ sich von Geometrie und Astronomie inspirieren."
+      },
+      {
+       "fa": "روی بنا، رباعی‌هایی از خیام با کاشی نوشته شده است.",
+       "tr": "",
+       "de": "Am Bauwerk sind Vierzeiler Khayyams in Kacheln geschrieben."
+      },
+      {
+       "fa": "نام خیام فقط روی زمین ماندگار نیست: یک دهانه روی ماه و یک سیارک نیز به نام او نام‌گذاری شده‌اند.",
+       "tr": "",
+       "de": "Khayyams Name lebt nicht nur auf der Erde fort: Auch ein Mondkrater und ein Asteroid wurden nach ihm benannt."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zu den Infotexten",
+     "fragen": [
+      {
+       "frage": "Womit beginnt das Jahr im Dschalali-Kalender?",
+       "optionen": [
+        "mit Nowruz, dem Frühlingsanfang",
+        "mit dem 1. Januar",
+        "mit dem ersten Schnee"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie viele Kapitel hat der Golestan?",
+       "optionen": [
+        "acht",
+        "zwölf",
+        "vier"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was wurde nach Khayyam benannt?",
+       "optionen": [
+        "ein Mondkrater und ein Asteroid",
+        "ein Komet und ein Planet",
+        "ein Sternbild"
        ],
        "richtig": 0
       }
@@ -836,6 +1766,11 @@
      "links": "de",
      "paare": [
       {
+       "fa": "در پاسخ به این ایراد می‌توان گفت …",
+       "tr": "",
+       "de": "Auf diesen Einwand kann man antworten …"
+      },
+      {
        "fa": "در پایان می‌خواهم بگویم که …",
        "tr": "",
        "de": "Zum Schluss möchte ich sagen, dass …"
@@ -846,14 +1781,9 @@
        "de": "In diesem Text möchte ich der Frage nachgehen, ob/wie …"
       },
       {
-       "fa": "در پاسخ به این ایراد می‌توان گفت …",
+       "fa": "با توجه به آنچه گفته شد، …",
        "tr": "",
-       "de": "Auf diesen Einwand kann man antworten …"
-      },
-      {
-       "fa": "همان‌طور که … نشان می‌دهد، …",
-       "tr": "",
-       "de": "Wie … zeigt, …"
+       "de": "Angesichts des Gesagten …"
       },
       {
        "fa": "نخست باید روشن کنم که …",
@@ -861,9 +1791,9 @@
        "de": "Zunächst muss ich klären, dass …"
       },
       {
-       "fa": "با توجه به آنچه گفته شد، …",
+       "fa": "ممکن است کسی بگوید …",
        "tr": "",
-       "de": "Angesichts des Gesagten …"
+       "de": "Jemand könnte einwenden, dass …"
       }
      ],
      "titel": "Was bedeutet die Wendung?"
@@ -875,19 +1805,9 @@
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
-        "Zum Schluss möchte ich sagen, dass …",
-        "Auf diesen Einwand kann man antworten …",
-        "Wie … zeigt, …"
-       ],
-       "richtig": 0,
-       "fa": "در پایان می‌خواهم بگویم که …"
-      },
-      {
-       "frage": "Was bedeutet der Satz?",
-       "optionen": [
         "Angesichts des Gesagten …",
-        "In diesem Text möchte ich der Frage nachgehen, ob/wie …",
-        "Zunächst muss ich klären, dass …"
+        "Wie … zeigt, …",
+        "In diesem Text möchte ich der Frage nachgehen, ob/wie …"
        ],
        "richtig": 0,
        "fa": "با توجه به آنچه گفته شد، …"
@@ -895,29 +1815,9 @@
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
-        "Auf diesen Einwand kann man antworten …",
-        "Man kann nicht leugnen, dass …",
-        "Wie … zeigt, …"
-       ],
-       "richtig": 0,
-       "fa": "در پاسخ به این ایراد می‌توان گفت …"
-      },
-      {
-       "frage": "Was bedeutet der Satz?",
-       "optionen": [
-        "Zunächst muss ich klären, dass …",
-        "In diesem Text möchte ich der Frage nachgehen, ob/wie …",
-        "Zum Schluss möchte ich sagen, dass …"
-       ],
-       "richtig": 0,
-       "fa": "نخست باید روشن کنم که …"
-      },
-      {
-       "frage": "Was bedeutet der Satz?",
-       "optionen": [
         "Jemand könnte einwenden, dass …",
-        "Zum Schluss möchte ich sagen, dass …",
-        "In diesem Text möchte ich der Frage nachgehen, ob/wie …"
+        "Angesichts des Gesagten …",
+        "Zunächst muss ich klären, dass …"
        ],
        "richtig": 0,
        "fa": "ممکن است کسی بگوید …"
@@ -925,12 +1825,42 @@
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
-        "In diesem Text möchte ich der Frage nachgehen, ob/wie …",
+        "Wie … zeigt, …",
         "Auf diesen Einwand kann man antworten …",
-        "Jemand könnte einwenden, dass …"
+        "Man kann nicht leugnen, dass …"
+       ],
+       "richtig": 0,
+       "fa": "همان‌طور که … نشان می‌دهد، …"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Man kann nicht leugnen, dass …",
+        "In diesem Text möchte ich der Frage nachgehen, ob/wie …",
+        "Wie … zeigt, …"
+       ],
+       "richtig": 0,
+       "fa": "نمی‌توان انکار کرد که …"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "In diesem Text möchte ich der Frage nachgehen, ob/wie …",
+        "Angesichts des Gesagten …",
+        "Auf diesen Einwand kann man antworten …"
        ],
        "richtig": 0,
        "fa": "در این نوشته می‌خواهم به این پرسش بپردازم که …"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Auf diesen Einwand kann man antworten …",
+        "Man kann nicht leugnen, dass …",
+        "In diesem Text möchte ich der Frage nachgehen, ob/wie …"
+       ],
+       "richtig": 0,
+       "fa": "در پاسخ به این ایراد می‌توان گفت …"
       }
      ]
     },

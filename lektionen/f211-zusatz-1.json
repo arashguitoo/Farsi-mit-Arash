@@ -251,6 +251,54 @@
        "a": "dringend; Eilmeldung"
       },
       {
+       "fa": "سرمقاله",
+       "a": "Leitartikel"
+      },
+      {
+       "fa": "یادداشت",
+       "a": "Kommentar; Notiz"
+      },
+      {
+       "fa": "ستون",
+       "a": "Kolumne; Spalte"
+      },
+      {
+       "fa": "صفحه‌ی اول",
+       "a": "Titelseite"
+      },
+      {
+       "fa": "عکاس",
+       "a": "Fotograf/in"
+      },
+      {
+       "fa": "ویراستار",
+       "a": "Lektor/in"
+      },
+      {
+       "fa": "تحریریه",
+       "a": "Redaktion"
+      },
+      {
+       "fa": "شایعه",
+       "a": "Gerücht"
+      },
+      {
+       "fa": "خبرنامه",
+       "a": "Newsletter"
+      },
+      {
+       "fa": "زیرنویس",
+       "a": "Bildunterschrift; Untertitel"
+      },
+      {
+       "fa": "بی‌طرف",
+       "a": "neutral, unparteiisch"
+      },
+      {
+       "fa": "معتبر",
+       "a": "glaubwürdig, zuverlässig"
+      },
+      {
        "fa": "منتشر کردن",
        "a": "veröffentlichen"
       },
@@ -287,34 +335,34 @@
        "emoji": "🎙️"
       },
       {
-       "fa": "به نقل از",
+       "fa": "اظهارات",
        "tr": "",
-       "de": "zitiert nach",
-       "emoji": "🔗"
+       "de": "Äußerungen",
+       "emoji": "💬"
       },
       {
-       "fa": "پیش‌بینی هوا",
+       "fa": "مسابقه",
        "tr": "",
-       "de": "Wettervorhersage",
-       "emoji": "🌦️"
+       "de": "Wettkampf, Spiel",
+       "emoji": "🏆"
       },
       {
-       "fa": "جشنواره",
+       "fa": "مسافر",
        "tr": "",
-       "de": "Festival",
-       "emoji": "🎬"
+       "de": "Fahrgast, Reisende/r",
+       "emoji": "🧳"
       },
       {
-       "fa": "سخنگو",
+       "fa": "سرمقاله",
        "tr": "",
-       "de": "Sprecher/in (einer Institution)",
-       "emoji": "🗣️"
+       "de": "Leitartikel",
+       "emoji": "🖋️"
       },
       {
-       "fa": "افتتاح",
+       "fa": "بنا بر",
        "tr": "",
-       "de": "Eröffnung",
-       "emoji": "✂️"
+       "de": "aufgrund, gemäß",
+       "emoji": "📌"
       }
      ],
      "titel": "Memory"
@@ -324,28 +372,22 @@
      "links": "de",
      "paare": [
       {
-       "fa": "جشنواره",
+       "fa": "خبرگزاری",
        "tr": "",
-       "de": "Festival",
-       "emoji": "🎬"
+       "de": "Nachrichtenagentur",
+       "emoji": "🏢"
       },
       {
-       "fa": "مطبوعات",
+       "fa": "مسابقه",
        "tr": "",
-       "de": "Presse",
-       "emoji": "📰"
+       "de": "Wettkampf, Spiel",
+       "emoji": "🏆"
       },
       {
-       "fa": "رسانه",
+       "fa": "خبرنگار",
        "tr": "",
-       "de": "Medium",
-       "emoji": "📺"
-      },
-      {
-       "fa": "پیش‌بینی هوا",
-       "tr": "",
-       "de": "Wettervorhersage",
-       "emoji": "🌦️"
+       "de": "Reporter/in",
+       "emoji": "🎤"
       },
       {
        "fa": "وی",
@@ -354,10 +396,16 @@
        "emoji": "👤"
       },
       {
-       "fa": "طبق",
+       "fa": "خبرنامه",
        "tr": "",
-       "de": "gemäß, laut",
-       "emoji": "⚖️"
+       "de": "Newsletter",
+       "emoji": "📧"
+      },
+      {
+       "fa": "رسانه",
+       "tr": "",
+       "de": "Medium",
+       "emoji": "📺"
       }
      ],
      "titel": "Memory: Wort & Bedeutung"
@@ -377,8 +425,8 @@
        "frage": "<span class='fa'>بیشتر روزنامه‌ها خبرهای خارجی را از یک ___ می‌گیرند.</span><br><span class='mini'>Die meisten Zeitungen beziehen Auslandsnachrichten von einer Nachrichtenagentur.</span>",
        "optionen": [
         "خبرگزاری",
-        "مسابقه",
-        "تیتر"
+        "رسانه",
+        "رسمی"
        ],
        "richtig": 0,
        "optFa": true,
@@ -389,8 +437,8 @@
        "frage": "<span class='fa'>___ این خبر فقط چهار کلمه بود و فعل نداشت.</span><br><span class='mini'>Die Schlagzeile dieser Meldung hatte nur vier Wörter und kein Verb.</span>",
        "optionen": [
         "تیتر",
-        "طبق",
-        "ایشان"
+        "مسافر",
+        "خبرنامه"
        ],
        "richtig": 0,
        "optFa": true,
@@ -401,8 +449,8 @@
        "frage": "<span class='fa'>___ روزنامه تصمیم گرفت خبر را در صفحه‌ی اول چاپ کند.</span><br><span class='mini'>Der Chefredakteur beschloss, die Meldung auf der ersten Seite zu drucken.</span>",
        "optionen": [
         "سردبیر",
-        "به نقل از",
-        "خبرنگار"
+        "افتتاح",
+        "خبرنامه"
        ],
        "richtig": 0,
        "optFa": true,
@@ -413,26 +461,20 @@
        "frage": "<span class='fa'>امسال بیش از سیصد فیلم به ___ فیلم کوتاه رسیده است.</span><br><span class='mini'>Dieses Jahr sind über dreihundert Filme beim Kurzfilmfestival eingegangen.</span>",
        "optionen": [
         "جشنواره",
-        "وی",
-        "رویداد"
+        "بارش",
+        "منبع خبری"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
        "erkl": "<span class='fa'>امسال بیش از سیصد فیلم به جشنواره فیلم کوتاه رسیده است.</span>"
-      }
-     ]
-    },
-    {
-     "typ": "wahl",
-     "titel": "Welches Wort passt?",
-     "fragen": [
+      },
       {
        "frage": "<span class='fa'>از فردا ___ هوا در شمال کشور پایین می‌آید.</span><br><span class='mini'>Ab morgen sinkt die Temperatur im Norden des Landes.</span>",
        "optionen": [
         "دما",
         "بنا بر",
-        "ایشان"
+        "تیتر"
        ],
        "richtig": 0,
        "optFa": true,
@@ -443,20 +485,26 @@
        "frage": "<span class='fa'>___ جدید شرق شهر را به فرودگاه وصل می‌کند.</span><br><span class='mini'>Die neue U-Bahn-Linie verbindet den Osten der Stadt mit dem Flughafen.</span>",
        "optionen": [
         "خط مترو",
-        "به نقل از",
-        "تیتر"
+        "بنا بر",
+        "یادداشت"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
        "erkl": "<span class='fa'>خط مترو جدید شرق شهر را به فرودگاه وصل می‌کند.</span>"
-      },
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
       {
        "frage": "<span class='fa'>بیش از بیست هزار ___ این مسابقه را در ورزشگاه دیدند.</span><br><span class='mini'>Über zwanzigtausend Zuschauer sahen das Spiel im Stadion.</span>",
        "optionen": [
         "تماشاگر",
-        "پیش‌بینی هوا",
-        "تیتر"
+        "جشنواره",
+        "مسافر"
        ],
        "richtig": 0,
        "optFa": true,
@@ -467,13 +515,61 @@
        "frage": "<span class='fa'>___ اعلام سازمان هواشناسی، فردا باران می‌بارد.</span><br><span class='mini'>Laut Mitteilung des Wetterdienstes regnet es morgen.</span>",
        "optionen": [
         "طبق",
-        "وی",
-        "رسانه"
+        "دستاورد",
+        "بارش"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
        "erkl": "<span class='fa'>طبق اعلام سازمان هواشناسی، فردا باران می‌بارد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>پیش از انتشار، ___ همه‌ی متن‌ها را از نظر املایی و دستوری می‌خواند.</span><br><span class='mini'>Vor der Veröffentlichung liest die Lektorin alle Texte auf Rechtschreibung und Grammatik.</span>",
+       "optionen": [
+        "ویراستار",
+        "دستاورد",
+        "رسمی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>پیش از انتشار، ویراستار همه‌ی متن‌ها را از نظر املایی و دستوری می‌خواند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>هر روز ساعت نه صبح جلسه‌ی ___ برگزار می‌شود.</span><br><span class='mini'>Jeden Tag um neun Uhr morgens findet die Redaktionssitzung statt.</span>",
+       "optionen": [
+        "تحریریه",
+        "مصاحبه",
+        "فوری"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>هر روز ساعت نه صبح جلسه‌ی تحریریه برگزار می‌شود.</span>"
+      },
+      {
+       "frage": "<span class='fa'>یک خبرنگار خوب باید در خبر ___ بماند و نظر شخصی‌اش را ننویسد.</span><br><span class='mini'>Ein guter Reporter muss in der Meldung neutral bleiben und seine persönliche Meinung nicht schreiben.</span>",
+       "optionen": [
+        "بی‌طرف",
+        "ایشان",
+        "عکاس"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>یک خبرنگار خوب باید در خبر بی‌طرف بماند و نظر شخصی‌اش را ننویسد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>این خبر فقط یک ___ بود و هیچ منبع روشنی نداشت.</span><br><span class='mini'>Diese Nachricht war nur ein Gerücht und hatte keine klare Quelle.</span>",
+       "optionen": [
+        "شایعه",
+        "به گزارش",
+        "منبع خبری"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>این خبر فقط یک شایعه بود و هیچ منبع روشنی نداشت.</span>"
       }
      ]
     }
@@ -490,105 +586,40 @@
      "trenner": " ",
      "woerter": [
       {
-       "fa": "چرا در متن نوشته‌ای «دبیر جشنواره اظهار داشت»؟ نمی‌شود فقط نوشت «گفت»؟",
+       "fa": "منبع هم لازم دارد؟ من خودم آنجا بودم.",
        "tr": "",
-       "de": "Warum hast du im Text ‹der Festivalleiter erklärte› geschrieben? Kann man nicht einfach ‹sagte› schreiben?",
+       "de": "Braucht sie auch eine Quelle? Ich war ja selbst dort.",
        "teile": [
-        "چرا",
-        "در",
-        "متن",
-        "نوشته‌ای",
-        "«دبیر",
-        "جشنواره",
-        "اظهار",
-        "داشت»",
-        "نمی‌شود",
-        "فقط",
-        "نوشت",
-        "«گفت»"
+        "منبع",
+        "هم",
+        "لازم",
+        "دارد",
+        "من",
+        "خودم",
+        "آنجا",
+        "بودم"
        ],
        "extra": [
-        "جشنواره‌ی"
+        "بعد"
        ]
       },
       {
-       "fa": "«آغاز جشنواره‌ی فیلم کوتاه دانشجویی در شیراز». کوتاه و بدون فعل.",
+       "fa": "شما خودتان در روزنامه اول کدام صفحه را می‌خوانید؟",
        "tr": "",
-       "de": "‹Beginn des studentischen Kurzfilmfestivals in Schiras›. Kurz und ohne Verb.",
+       "de": "Und welche Seite lesen Sie selbst in der Zeitung zuerst?",
        "teile": [
-        "«آغاز",
-        "جشنواره‌ی",
-        "فیلم",
-        "کوتاه",
-        "دانشجویی",
-        "در",
-        "شیراز»",
-        "کوتاه",
-        "و",
-        "بدون",
-        "فعل"
-       ],
-       "extra": []
-      },
-      {
-       "fa": "در این دو جمله چند ویژگی مهم زبان خبر دیده می‌شود.",
-       "tr": "",
-       "de": "In diesen beiden Sätzen sieht man einige wichtige Merkmale der Nachrichtensprache.",
-       "teile": [
-        "در",
-        "این",
-        "دو",
-        "جمله",
-        "چند",
-        "ویژگی",
-        "مهم",
-        "زبان",
-        "خبر",
-        "دیده",
-        "می‌شود"
-       ],
-       "extra": []
-      },
-      {
-       "fa": "«وی افزود: بیشتر این فیلم‌ها را دانشجویان شهرهای کوچک ساخته‌اند.»",
-       "tr": "",
-       "de": "‹Er fügte hinzu: Die meisten dieser Filme haben Studierende aus kleinen Städten gedreht.›",
-       "teile": [
-        "«وی",
-        "افزود",
-        "بیشتر",
-        "این",
-        "فیلم‌ها",
-        "را",
-        "دانشجویان",
-        "شهرهای",
-        "کوچک",
-        "ساخته‌اند»"
-       ],
-       "extra": [
-        "در"
-       ]
-      },
-      {
-       "fa": "فکر خوبی است. فردا روزنامه را از شما قرض می‌گیرم. روز خوش!",
-       "tr": "",
-       "de": "Gute Idee. Morgen leihe ich mir die Zeitung von Ihnen. Einen schönen Tag!",
-       "teile": [
-        "فکر",
-        "خوبی",
-        "است",
-        "فردا",
-        "روزنامه",
-        "را",
-        "از",
         "شما",
-        "قرض",
-        "می‌گیرم",
-        "روز",
-        "خوش"
+        "خودتان",
+        "در",
+        "روزنامه",
+        "اول",
+        "کدام",
+        "صفحه",
+        "را",
+        "می‌خوانید"
        ],
        "extra": [
-        "ویژگی"
+        "مطرح"
        ]
       },
       {
@@ -608,7 +639,64 @@
         "دارد"
        ],
        "extra": [
-        "دیده"
+        "کوچک"
+       ]
+      },
+      {
+       "fa": "«وی افزود: بیشتر این فیلم‌ها را دانشجویان شهر‌های کوچک ساخته‌اند.»",
+       "tr": "",
+       "de": "‹Er fügte hinzu: Die meisten dieser Filme haben Studierende aus kleinen Städten gedreht.›",
+       "teile": [
+        "«وی",
+        "افزود",
+        "بیشتر",
+        "این",
+        "فیلم‌ها",
+        "را",
+        "دانشجویان",
+        "شهر‌های",
+        "کوچک",
+        "ساخته‌اند»"
+       ],
+       "extra": [
+        "هم"
+       ]
+      },
+      {
+       "fa": "لیدت به هر شش پرسش جواب می‌دهد؟",
+       "tr": "",
+       "de": "Beantwortet dein Lead alle sechs Fragen?",
+       "teile": [
+        "لیدت",
+        "به",
+        "هر",
+        "شش",
+        "پرسش",
+        "جواب",
+        "می‌دهد"
+       ],
+       "extra": [
+        "کار"
+       ]
+      },
+      {
+       "fa": "هر خبرنگار پیشنهاد‌های خودش را برای کار امروز مطرح می‌کند.",
+       "tr": "",
+       "de": "Alle Reporter stellen ihre Vorschläge für die heutige Arbeit vor.",
+       "teile": [
+        "هر",
+        "خبرنگار",
+        "پیشنهاد‌های",
+        "خودش",
+        "را",
+        "برای",
+        "کار",
+        "امروز",
+        "مطرح",
+        "می‌کند"
+       ],
+       "extra": [
+        "است."
        ]
       }
      ]
@@ -618,11 +706,33 @@
      "titel": "Was bedeutet der Satz?",
      "fragen": [
       {
-       "frage": "„Gute Idee. Morgen leihe ich mir die Zeitung von Ihnen. Einen schönen Tag!“",
+       "frage": "„Alle Reporter stellen ihre Vorschläge für die heutige Arbeit vor.“",
        "optionen": [
-        "فکر خوبی است. فردا روزنامه را از شما قرض می‌گیرم. روز خوش!",
-        "و این جمله‌ی آخر با «گفتنی است» چه نقشی دارد؟",
-        "«آغاز جشنواره‌ی فیلم کوتاه دانشجویی در شیراز». کوتاه و بدون فعل."
+        "هر خبرنگار پیشنهاد‌های خودش را برای کار امروز مطرح می‌کند.",
+        "این عدد سیصد فیلم را از کجا می‌دانی؟",
+        "تیتر: «شب تبادل زبان در دانشکده‌ی ادبیات برگزار شد.»"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Woher weißt du die Zahl von dreihundert Filmen?“",
+       "optionen": [
+        "این عدد سیصد فیلم را از کجا می‌دانی؟",
+        "در این دو جمله چند ویژگی مهم زبان خبر دیده می‌شود.",
+        "لیدت به هر شش پرسش جواب می‌دهد؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Das heißt, nach ‹fügte hinzu› setze ich einen Doppelpunkt und kein ‹dass›?“",
+       "optionen": [
+        "یعنی بعد از «افزود» دو نقطه می‌گذارم و «که» نمی‌آورم؟",
+        "لیدت به هر شش پرسش جواب می‌دهد؟",
+        "هر خبرنگار پیشنهاد‌های خودش را برای کار امروز مطرح می‌کند."
        ],
        "richtig": 0,
        "optFa": true,
@@ -632,52 +742,30 @@
        "frage": "„Warum hast du im Text ‹der Festivalleiter erklärte› geschrieben? Kann man nicht einfach ‹sagte› schreiben?“",
        "optionen": [
         "چرا در متن نوشته‌ای «دبیر جشنواره اظهار داشت»؟ نمی‌شود فقط نوشت «گفت»؟",
-        "«آغاز جشنواره‌ی فیلم کوتاه دانشجویی در شیراز». کوتاه و بدون فعل.",
-        "و این جمله‌ی آخر با «گفتنی است» چه نقشی دارد؟"
+        "«وی افزود: بیشتر این فیلم‌ها را دانشجویان شهر‌های کوچک ساخته‌اند.»",
+        "این عدد سیصد فیلم را از کجا می‌دانی؟"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false
       },
       {
-       "frage": "„Und welche Funktion hat dieser letzte Satz mit ‹es sei erwähnt›?“",
+       "frage": "„Schlagzeile: ‹Sprachtauschabend an der Literaturfakultät fand statt.›“",
        "optionen": [
-        "و این جمله‌ی آخر با «گفتنی است» چه نقشی دارد؟",
-        "در این دو جمله چند ویژگی مهم زبان خبر دیده می‌شود.",
-        "«وی افزود: بیشتر این فیلم‌ها را دانشجویان شهرهای کوچک ساخته‌اند.»"
+        "تیتر: «شب تبادل زبان در دانشکده‌ی ادبیات برگزار شد.»",
+        "کنار خبر عکس هم می‌گذارید؟",
+        "یعنی بعد از «افزود» دو نقطه می‌گذارم و «که» نمی‌آورم؟"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false
       },
       {
-       "frage": "„In diesen beiden Sätzen sieht man einige wichtige Merkmale der Nachrichtensprache.“",
+       "frage": "„Braucht sie auch eine Quelle? Ich war ja selbst dort.“",
        "optionen": [
-        "در این دو جمله چند ویژگی مهم زبان خبر دیده می‌شود.",
-        "و این جمله‌ی آخر با «گفتنی است» چه نقشی دارد؟",
-        "چرا در متن نوشته‌ای «دبیر جشنواره اظهار داشت»؟ نمی‌شود فقط نوشت «گفت»؟"
-       ],
-       "richtig": 0,
-       "optFa": true,
-       "hoeren": false
-      },
-      {
-       "frage": "„‹Beginn des studentischen Kurzfilmfestivals in Schiras›. Kurz und ohne Verb.“",
-       "optionen": [
-        "«آغاز جشنواره‌ی فیلم کوتاه دانشجویی در شیراز». کوتاه و بدون فعل.",
-        "در این دو جمله چند ویژگی مهم زبان خبر دیده می‌شود.",
-        "فکر خوبی است. فردا روزنامه را از شما قرض می‌گیرم. روز خوش!"
-       ],
-       "richtig": 0,
-       "optFa": true,
-       "hoeren": false
-      },
-      {
-       "frage": "„‹Er fügte hinzu: Die meisten dieser Filme haben Studierende aus kleinen Städten gedreht.›“",
-       "optionen": [
-        "«وی افزود: بیشتر این فیلم‌ها را دانشجویان شهرهای کوچک ساخته‌اند.»",
+        "منبع هم لازم دارد؟ من خودم آنجا بودم.",
         "چرا در متن نوشته‌ای «دبیر جشنواره اظهار داشت»؟ نمی‌شود فقط نوشت «گفت»؟",
-        "فکر خوبی است. فردا روزنامه را از شما قرض می‌گیرم. روز خوش!"
+        "«وی افزود: بیشتر این فیلم‌ها را دانشجویان شهر‌های کوچک ساخته‌اند.»"
        ],
        "richtig": 0,
        "optFa": true,
@@ -692,39 +780,19 @@
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
-        "Und welche Funktion hat dieser letzte Satz mit ‹es sei erwähnt›?",
-        "‹Er fügte hinzu: Die meisten dieser Filme haben Studierende aus kleinen Städten gedreht.›",
-        "Gute Idee. Morgen leihe ich mir die Zeitung von Ihnen. Einen schönen Tag!"
-       ],
-       "richtig": 0,
-       "fa": "و این جمله‌ی آخر با «گفتنی است» چه نقشی دارد؟"
-      },
-      {
-       "frage": "Was bedeutet der Satz?",
-       "optionen": [
-        "‹Beginn des studentischen Kurzfilmfestivals in Schiras›. Kurz und ohne Verb.",
-        "Warum hast du im Text ‹der Festivalleiter erklärte› geschrieben? Kann man nicht einfach ‹sagte› schreiben?",
-        "Und welche Funktion hat dieser letzte Satz mit ‹es sei erwähnt›?"
-       ],
-       "richtig": 0,
-       "fa": "«آغاز جشنواره‌ی فیلم کوتاه دانشجویی در شیراز». کوتاه و بدون فعل."
-      },
-      {
-       "frage": "Was bedeutet der Satz?",
-       "optionen": [
-        "‹Er fügte hinzu: Die meisten dieser Filme haben Studierende aus kleinen Städten gedreht.›",
+        "Alle Reporter stellen ihre Vorschläge für die heutige Arbeit vor.",
         "In diesen beiden Sätzen sieht man einige wichtige Merkmale der Nachrichtensprache.",
-        "Gute Idee. Morgen leihe ich mir die Zeitung von Ihnen. Einen schönen Tag!"
+        "Schlagzeile: ‹Sprachtauschabend an der Literaturfakultät fand statt.›"
        ],
        "richtig": 0,
-       "fa": "«وی افزود: بیشتر این فیلم‌ها را دانشجویان شهرهای کوچک ساخته‌اند.»"
+       "fa": "هر خبرنگار پیشنهاد‌های خودش را برای کار امروز مطرح می‌کند."
       },
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
         "In diesen beiden Sätzen sieht man einige wichtige Merkmale der Nachrichtensprache.",
-        "Und welche Funktion hat dieser letzte Satz mit ‹es sei erwähnt›?",
-        "Gute Idee. Morgen leihe ich mir die Zeitung von Ihnen. Einen schönen Tag!"
+        "Gute Idee. Morgen leihe ich mir die Zeitung von Ihnen. Einen schönen Tag!",
+        "Um halb drei schickt sie den Text an die Lektorin."
        ],
        "richtig": 0,
        "fa": "در این دو جمله چند ویژگی مهم زبان خبر دیده می‌شود."
@@ -732,22 +800,42 @@
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
-        "Gute Idee. Morgen leihe ich mir die Zeitung von Ihnen. Einen schönen Tag!",
-        "Und welche Funktion hat dieser letzte Satz mit ‹es sei erwähnt›?",
-        "‹Beginn des studentischen Kurzfilmfestivals in Schiras›. Kurz und ohne Verb."
+        "Um halb drei schickt sie den Text an die Lektorin.",
+        "Warum hast du im Text ‹der Festivalleiter erklärte› geschrieben? Kann man nicht einfach ‹sagte› schreiben?",
+        "‹Er fügte hinzu: Die meisten dieser Filme haben Studierende aus kleinen Städten gedreht.›"
        ],
        "richtig": 0,
-       "fa": "فکر خوبی است. فردا روزنامه را از شما قرض می‌گیرم. روز خوش!"
+       "fa": "ساعت دو و نیم متن را برای ویراستار می‌فرستد."
       },
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
-        "Warum hast du im Text ‹der Festivalleiter erklärte› geschrieben? Kann man nicht einfach ‹sagte› schreiben?",
-        "In diesen beiden Sätzen sieht man einige wichtige Merkmale der Nachrichtensprache.",
+        "Schlagzeile: ‹Sprachtauschabend an der Literaturfakultät fand statt.›",
+        "‹Beginn des studentischen Kurzfilmfestivals in Schiras›. Kurz und ohne Verb.",
+        "Und welche Seite lesen Sie selbst in der Zeitung zuerst?"
+       ],
+       "richtig": 0,
+       "fa": "تیتر: «شب تبادل زبان در دانشکده‌ی ادبیات برگزار شد.»"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Beantwortet dein Lead alle sechs Fragen?",
+        "‹Er fügte hinzu: Die meisten dieser Filme haben Studierende aus kleinen Städten gedreht.›",
+        "Alle Reporter stellen ihre Vorschläge für die heutige Arbeit vor."
+       ],
+       "richtig": 0,
+       "fa": "لیدت به هر شش پرسش جواب می‌دهد؟"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Woher weißt du die Zahl von dreihundert Filmen?",
+        "Und welche Funktion hat dieser letzte Satz mit ‹es sei erwähnt›?",
         "‹Beginn des studentischen Kurzfilmfestivals in Schiras›. Kurz und ohne Verb."
        ],
        "richtig": 0,
-       "fa": "چرا در متن نوشته‌ای «دبیر جشنواره اظهار داشت»؟ نمی‌شود فقط نوشت «گفت»؟"
+       "fa": "این عدد سیصد فیلم را از کجا می‌دانی؟"
       }
      ]
     }

@@ -255,6 +255,54 @@
        "a": "Großzügigkeit"
       },
       {
+       "fa": "بازنشستگی",
+       "a": "Ruhestand, Pensionierung"
+      },
+      {
+       "fa": "نوه",
+       "a": "Enkel/in"
+      },
+      {
+       "fa": "کوهپیمایی",
+       "a": "Bergwandern"
+      },
+      {
+       "fa": "باغچه",
+       "a": "kleiner Garten, Beet"
+      },
+      {
+       "fa": "همسایه",
+       "a": "Nachbar/in"
+      },
+      {
+       "fa": "دورهمی",
+       "a": "geselliges Treffen, Runde"
+      },
+      {
+       "fa": "کار داوطلبانه",
+       "a": "Ehrenamt, ehrenamtliche Arbeit"
+      },
+      {
+       "fa": "عادت",
+       "a": "Gewohnheit"
+      },
+      {
+       "fa": "سادگی",
+       "a": "Einfachheit"
+      },
+      {
+       "fa": "حوصله",
+       "a": "Geduld, Lust (zu etwas)"
+      },
+      {
+       "fa": "دوستی",
+       "a": "Freundschaft"
+      },
+      {
+       "fa": "تفریح",
+       "a": "Freizeit, Vergnügen"
+      },
+      {
        "fa": "لذت بردن",
        "a": "genießen"
       },
@@ -285,16 +333,16 @@
      "links": "emoji",
      "paare": [
       {
-       "fa": "دل خوش",
+       "fa": "شادی",
        "tr": "",
-       "de": "frohes Herz, Zuversicht",
-       "emoji": "💛"
+       "de": "Freude",
+       "emoji": "😄"
       },
       {
-       "fa": "پژوهش",
+       "fa": "سخاوت",
        "tr": "",
-       "de": "Forschung, Studie",
-       "emoji": "🔬"
+       "de": "Großzügigkeit",
+       "emoji": "🎁"
       },
       {
        "fa": "تنهایی",
@@ -303,22 +351,22 @@
        "emoji": "🌑"
       },
       {
-       "fa": "ناپایداری",
+       "fa": "لحظه",
        "tr": "",
-       "de": "Vergänglichkeit",
-       "emoji": "⌛"
+       "de": "Augenblick",
+       "emoji": "⏱️"
       },
       {
-       "fa": "حمایت اجتماعی",
+       "fa": "رضایت",
        "tr": "",
-       "de": "soziale Unterstützung",
-       "emoji": "🫂"
+       "de": "Zufriedenheit",
+       "emoji": "😌"
       },
       {
-       "fa": "رباعی",
+       "fa": "ریاضیدان",
        "tr": "",
-       "de": "Vierzeiler (Rubai)",
-       "emoji": "4️⃣"
+       "de": "Mathematiker/in",
+       "emoji": "📐"
       }
      ],
      "titel": "Memory"
@@ -328,40 +376,40 @@
      "links": "de",
      "paare": [
       {
-       "fa": "سخاوت",
+       "fa": "سپاسگزاری",
        "tr": "",
-       "de": "Großzügigkeit",
-       "emoji": "🎁"
+       "de": "Dankbarkeit",
+       "emoji": "💐"
+      },
+      {
+       "fa": "حکیم",
+       "tr": "",
+       "de": "Weise/r",
+       "emoji": "🦉"
+      },
+      {
+       "fa": "داوطلب",
+       "tr": "",
+       "de": "Freiwillige/r, Ehrenamtliche/r",
+       "emoji": "🙋"
+      },
+      {
+       "fa": "دوستی",
+       "tr": "",
+       "de": "Freundschaft",
+       "emoji": "🤗"
+      },
+      {
+       "fa": "روان‌شناس",
+       "tr": "",
+       "de": "Psycholog/in",
+       "emoji": "🧠"
       },
       {
        "fa": "رفاه",
        "tr": "",
        "de": "Wohlstand",
        "emoji": "💰"
-      },
-      {
-       "fa": "قناعت",
-       "tr": "",
-       "de": "Genügsamkeit",
-       "emoji": "🥣"
-      },
-      {
-       "fa": "ریاضیدان",
-       "tr": "",
-       "de": "Mathematiker/in",
-       "emoji": "📐"
-      },
-      {
-       "fa": "معنای زندگی",
-       "tr": "",
-       "de": "Sinn des Lebens",
-       "emoji": "🧭"
-      },
-      {
-       "fa": "گلستان",
-       "tr": "",
-       "de": "Golestan (Rosengarten)",
-       "emoji": "🌹"
       }
      ],
      "titel": "Memory: Wort & Bedeutung"
@@ -381,8 +429,8 @@
        "frage": "<span class='fa'>پول تنها راه رسیدن به ___ نیست.</span><br><span class='mini'>Geld ist nicht der einzige Weg zum Glück.</span>",
        "optionen": [
         "خوشبختی",
-        "معنای زندگی",
-        "گذرا"
+        "شاخص",
+        "پژوهش"
        ],
        "richtig": 0,
        "optFa": true,
@@ -394,7 +442,7 @@
        "optionen": [
         "لحظه",
         "حکیم",
-        "ناپایداری"
+        "کوهپیمایی"
        ],
        "richtig": 0,
        "optFa": true,
@@ -405,8 +453,8 @@
        "frage": "<span class='fa'>سعدی در گلستان ما را به ___ دعوت می‌کند: نه زیاد، نه کم.</span><br><span class='mini'>Saadi lädt uns im Golestan zum Maßhalten ein: nicht zu viel, nicht zu wenig.</span>",
        "optionen": [
         "اعتدال",
-        "سپاسگزاری",
-        "پژوهش"
+        "حمایت اجتماعی",
+        "ریاضیدان"
        ],
        "richtig": 0,
        "optFa": true,
@@ -417,26 +465,20 @@
        "frage": "<span class='fa'>هر ___ خیام فقط چهار مصراع دارد.</span><br><span class='mini'>Jeder Vierzeiler Khayyams hat nur vier Halbverse.</span>",
        "optionen": [
         "رباعی",
-        "نقل قول",
-        "رابطه"
+        "اعتدال",
+        "پژوهش"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
        "erkl": "<span class='fa'>هر رباعی خیام فقط چهار مصراع دارد.</span>"
-      }
-     ]
-    },
-    {
-     "typ": "wahl",
-     "titel": "Welches Wort passt?",
-     "fragen": [
+      },
       {
        "frage": "<span class='fa'>هر ___ گلستان با یک درس کوتاه تمام می‌شود.</span><br><span class='mini'>Jede Geschichte im Golestan endet mit einer kurzen Lehre.</span>",
        "optionen": [
         "حکایت",
-        "ناپایداری",
-        "اعتماد"
+        "فیلسوف",
+        "نوه"
        ],
        "richtig": 0,
        "optFa": true,
@@ -447,20 +489,26 @@
        "frage": "<span class='fa'>خیام هم شاعر بود و هم ___؛ او درباره‌ی معادلات درجه‌ی سوم نوشت.</span><br><span class='mini'>Khayyam war Dichter und Mathematiker; er schrieb über Gleichungen dritten Grades.</span>",
        "optionen": [
         "ریاضیدان",
-        "معنای زندگی",
-        "شادی"
+        "نظرسنجی",
+        "رضایت"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
        "erkl": "<span class='fa'>خیام هم شاعر بود و هم ریاضیدان؛ او درباره‌ی معادلات درجه‌ی سوم نوشت.</span>"
-      },
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
       {
        "frage": "<span class='fa'>___ طولانی‌مدت می‌تواند برای سلامت خطرناک باشد.</span><br><span class='mini'>Langanhaltende Einsamkeit kann gesundheitsgefährdend sein.</span>",
        "optionen": [
         "تنهایی",
-        "لحظه",
-        "رضایت"
+        "سخاوت",
+        "دوستی"
        ],
        "richtig": 0,
        "optFa": true,
@@ -472,12 +520,60 @@
        "optionen": [
         "داوطلب",
         "گذرا",
-        "رباعی"
+        "اندرز"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
        "erkl": "<span class='fa'>او هر هفته به عنوان داوطلب در یک کتابخانه‌ی کودکان کار می‌کند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>آقای رحیمی هشت سال پیش به ___ رسید و حالا وقت بیشتری دارد.</span><br><span class='mini'>Herr Rahimi ging vor acht Jahren in den Ruhestand und hat jetzt mehr Zeit.</span>",
+       "optionen": [
+        "بازنشستگی",
+        "عادت",
+        "نقل قول"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>آقای رحیمی هشت سال پیش به بازنشستگی رسید و حالا وقت بیشتری دارد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>جمعه‌ها با دوستانش برای ___ به دربند می‌رود.</span><br><span class='mini'>Freitags geht er mit seinen Freunden zum Bergwandern nach Darband.</span>",
+       "optionen": [
+        "کوهپیمایی",
+        "گلستان",
+        "دورهمی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>جمعه‌ها با دوستانش برای کوهپیمایی به دربند می‌رود.</span>"
+      },
+      {
+       "frage": "<span class='fa'>در ___ کوچک حیاط، گوجه و ریحان می‌کارد.</span><br><span class='mini'>Im kleinen Garten im Hof pflanzt er Tomaten und Basilikum.</span>",
+       "optionen": [
+        "باغچه",
+        "اندرز",
+        "سخاوت"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>در باغچه کوچک حیاط، گوجه و ریحان می‌کارد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>هر پنجشنبه‌شب، دوستان و همسایه‌ها در یک ___ شعر جمع می‌شوند.</span><br><span class='mini'>Jeden Donnerstagabend kommen Freunde und Nachbarn zu einer Dichterrunde zusammen.</span>",
+       "optionen": [
+        "دورهمی",
+        "رابطه",
+        "داوطلب"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>هر پنجشنبه‌شب، دوستان و همسایه‌ها در یک دورهمی شعر جمع می‌شوند.</span>"
       }
      ]
     }
@@ -493,6 +589,22 @@
      "titel": "Baue den Satz",
      "trenner": " ",
      "woerter": [
+      {
+       "fa": "موضوع خوبی است. ادعای اصلی‌تان چیست؟",
+       "tr": "",
+       "de": "Ein gutes Thema. Was ist Ihre Hauptthese?",
+       "teile": [
+        "موضوع",
+        "خوبی",
+        "است",
+        "ادعای",
+        "اصلی‌تان",
+        "چیست"
+       ],
+       "extra": [
+        "«رباعی‌هایی"
+       ]
+      },
       {
        "fa": "این همان اندیشه‌ای است که امروز آن را کرامت انسانی می‌نامیم.",
        "tr": "",
@@ -510,81 +622,84 @@
         "انسانی",
         "می‌نامیم"
        ],
-       "extra": []
-      },
-      {
-       "fa": "مشهورترین سخن سعدی شاید این مصراع باشد: «بنی آدم اعضای یکدیگرند».",
-       "tr": "",
-       "de": "Saadis berühmtestes Wort ist vielleicht dieser Halbvers: ‹Die Menschenkinder sind Glieder voneinander.›",
-       "teile": [
-        "مشهورترین",
-        "سخن",
-        "سعدی",
-        "شاید",
-        "این",
-        "مصراع",
-        "باشد",
-        "«بنی",
-        "آدم",
-        "اعضای",
-        "یکدیگرند»"
-       ],
-       "extra": []
-      },
-      {
-       "fa": "«زندگی خوب» چیست؟ این پرسش شاید به قدمت خود انسان باشد.",
-       "tr": "",
-       "de": "Was ist ein ‹gutes Leben›? Diese Frage ist vielleicht so alt wie der Mensch selbst.",
-       "teile": [
-        "«زندگی",
-        "خوب»",
-        "چیست",
-        "این",
-        "پرسش",
-        "شاید",
-        "به",
-        "قدمت",
-        "خود",
-        "انسان",
-        "باشد"
-       ],
-       "extra": []
-      },
-      {
-       "fa": "موضوع خوبی است. ادعای اصلی‌تان چیست؟",
-       "tr": "",
-       "de": "Ein gutes Thema. Was ist Ihre Hauptthese?",
-       "teile": [
-        "موضوع",
-        "خوبی",
-        "است",
-        "ادعای",
-        "اصلی‌تان",
-        "چیست"
-       ],
        "extra": [
-        "اعضای"
+        "شاید"
        ]
       },
       {
-       "fa": "حق با شماست. می‌نویسم «رباعی‌هایی که به خیام نسبت داده می‌شود».",
+       "fa": "فکر خوبی است. فقط نگرانم که مقاله بیش از اندازه طولانی شود.",
        "tr": "",
-       "de": "Sie haben recht. Ich schreibe ‹die Vierzeiler, die Khayyam zugeschrieben werden›.",
+       "de": "Eine gute Idee. Ich fürchte nur, dass der Essay zu lang wird.",
        "teile": [
-        "حق",
-        "با",
-        "شماست",
-        "می‌نویسم",
-        "«رباعی‌هایی",
+        "فکر",
+        "خوبی",
+        "است",
+        "فقط",
+        "نگرانم",
         "که",
-        "به",
-        "خیام",
-        "نسبت",
-        "داده",
-        "می‌شود»"
+        "مقاله",
+        "بیش",
+        "از",
+        "اندازه",
+        "طولانی",
+        "شود"
        ],
        "extra": [
-        "امروز"
+        "خود"
+       ]
+      },
+      {
+       "fa": "یادت هست شب اول حتی نمی‌دانستی کلید آب‌گرمکن کجاست؟",
+       "tr": "",
+       "de": "Weißt du noch, dass du am ersten Abend nicht einmal wusstest, wo der Schalter für den Warmwasserbereiter ist?",
+       "teile": [
+        "یادت",
+        "هست",
+        "شب",
+        "اول",
+        "حتی",
+        "نمی‌دانستی",
+        "کلید",
+        "آب‌گرمکن",
+        "کجاست"
+       ],
+       "extra": [
+        "چه"
+       ]
+      },
+      {
+       "fa": "بعدازظهر جمعه، دخترش با دو نوه‌ی او به دیدنش می‌آید.",
+       "tr": "",
+       "de": "Am Freitagnachmittag kommt seine Tochter mit seinen beiden Enkelkindern zu Besuch.",
+       "teile": [
+        "بعدازظهر",
+        "جمعه",
+        "دخترش",
+        "با",
+        "دو",
+        "نوه‌ی",
+        "او",
+        "به",
+        "دیدنش",
+        "می‌آید"
+       ],
+       "extra": [
+        "قدمت"
+       ]
+      },
+      {
+       "fa": "چشم. نکته‌ی دیگری هم هست؟",
+       "tr": "",
+       "de": "In Ordnung. Gibt es noch etwas?",
+       "teile": [
+        "چشم",
+        "نکته‌ی",
+        "دیگری",
+        "هم",
+        "هست"
+       ],
+       "extra": [
+        "به"
        ]
       }
      ]
@@ -594,11 +709,22 @@
      "titel": "Was bedeutet der Satz?",
      "fragen": [
       {
-       "frage": "„Was ist ein ‹gutes Leben›? Diese Frage ist vielleicht so alt wie der Mensch selbst.“",
+       "frage": "„Eine gute Idee. Ich fürchte nur, dass der Essay zu lang wird.“",
        "optionen": [
-        "«زندگی خوب» چیست؟ این پرسش شاید به قدمت خود انسان باشد.",
-        "حق با شماست. می‌نویسم «رباعی‌هایی که به خیام نسبت داده می‌شود».",
-        "موضوع خوبی است. ادعای اصلی‌تان چیست؟"
+        "فکر خوبی است. فقط نگرانم که مقاله بیش از اندازه طولانی شود.",
+        "پس اعتماد از پول مهم‌تر است؟",
+        "در گزارش جهانی شادی، آلمان چه جایگاهی دارد؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Ist Vertrauen also wichtiger als Geld?“",
+       "optionen": [
+        "پس اعتماد از پول مهم‌تر است؟",
+        "فکر خوبی است. فقط نگرانم که مقاله بیش از اندازه طولانی شود.",
+        "استدلال خوبی است. در مقدمه چه نوشته‌اید؟"
        ],
        "richtig": 0,
        "optFa": true,
@@ -609,29 +735,18 @@
        "optionen": [
         "این همان اندیشه‌ای است که امروز آن را کرامت انسانی می‌نامیم.",
         "حق با شماست. می‌نویسم «رباعی‌هایی که به خیام نسبت داده می‌شود».",
-        "مشهورترین سخن سعدی شاید این مصراع باشد: «بنی آدم اعضای یکدیگرند»."
+        "موضوع خوبی است. ادعای اصلی‌تان چیست؟"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false
       },
       {
-       "frage": "„Sie haben recht. Ich schreibe ‹die Vierzeiler, die Khayyam zugeschrieben werden›.“",
+       "frage": "„Welchen Platz hat Deutschland im Weltglücksbericht?“",
        "optionen": [
-        "حق با شماست. می‌نویسم «رباعی‌هایی که به خیام نسبت داده می‌شود».",
-        "موضوع خوبی است. ادعای اصلی‌تان چیست؟",
-        "«زندگی خوب» چیست؟ این پرسش شاید به قدمت خود انسان باشد."
-       ],
-       "richtig": 0,
-       "optFa": true,
-       "hoeren": false
-      },
-      {
-       "frage": "„Ein gutes Thema. Was ist Ihre Hauptthese?“",
-       "optionen": [
-        "موضوع خوبی است. ادعای اصلی‌تان چیست؟",
-        "مشهورترین سخن سعدی شاید این مصراع باشد: «بنی آدم اعضای یکدیگرند».",
-        "«زندگی خوب» چیست؟ این پرسش شاید به قدمت خود انسان باشد."
+        "در گزارش جهانی شادی، آلمان چه جایگاهی دارد؟",
+        "این همان اندیشه‌ای است که امروز آن را کرامت انسانی می‌نامیم.",
+        "آقای رحیمی می‌گوید این دوستی چهل‌ساله یکی از ارزشمندترین چیزهای زندگی‌اش است."
        ],
        "richtig": 0,
        "optFa": true,
@@ -642,7 +757,18 @@
        "optionen": [
         "مشهورترین سخن سعدی شاید این مصراع باشد: «بنی آدم اعضای یکدیگرند».",
         "این همان اندیشه‌ای است که امروز آن را کرامت انسانی می‌نامیم.",
-        "موضوع خوبی است. ادعای اصلی‌تان چیست؟"
+        "یادت هست شب اول حتی نمی‌دانستی کلید آب‌گرمکن کجاست؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Weißt du noch, dass du am ersten Abend nicht einmal wusstest, wo der Schalter für den Warmwasserbereiter ist?“",
+       "optionen": [
+        "یادت هست شب اول حتی نمی‌دانستی کلید آب‌گرمکن کجاست؟",
+        "حق با شماست. می‌نویسم «رباعی‌هایی که به خیام نسبت داده می‌شود».",
+        "آقای رحیمی می‌گوید این دوستی چهل‌ساله یکی از ارزشمندترین چیزهای زندگی‌اش است."
        ],
        "richtig": 0,
        "optFa": true,
@@ -657,19 +783,49 @@
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
-        "Ein gutes Thema. Was ist Ihre Hauptthese?",
-        "Saadis berühmtestes Wort ist vielleicht dieser Halbvers: ‹Die Menschenkinder sind Glieder voneinander.›",
-        "Sie haben recht. Ich schreibe ‹die Vierzeiler, die Khayyam zugeschrieben werden›."
+        "Welchen Platz hat Deutschland im Weltglücksbericht?",
+        "Am Freitagnachmittag kommt seine Tochter mit seinen beiden Enkelkindern zu Besuch.",
+        "In Ordnung. Gibt es noch etwas?"
        ],
        "richtig": 0,
-       "fa": "موضوع خوبی است. ادعای اصلی‌تان چیست؟"
+       "fa": "در گزارش جهانی شادی، آلمان چه جایگاهی دارد؟"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Ein gutes Argument. Was haben Sie in der Einleitung geschrieben?",
+        "Finnland? Mit diesen langen, dunklen Wintern?",
+        "Am Freitagnachmittag kommt seine Tochter mit seinen beiden Enkelkindern zu Besuch."
+       ],
+       "richtig": 0,
+       "fa": "استدلال خوبی است. در مقدمه چه نوشته‌اید؟"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Finnland? Mit diesen langen, dunklen Wintern?",
+        "Herr Rahimi sagt, diese vierzigjährige Freundschaft sei eines der wertvollsten Dinge in seinem Leben.",
+        "Weißt du noch, dass du am ersten Abend nicht einmal wusstest, wo der Schalter für den Warmwasserbereiter ist?"
+       ],
+       "richtig": 0,
+       "fa": "فنلاند؟ با آن زمستان‌های طولانی و تاریک؟"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Herr Rahimi sagt, diese vierzigjährige Freundschaft sei eines der wertvollsten Dinge in seinem Leben.",
+        "Ein gutes Argument. Was haben Sie in der Einleitung geschrieben?",
+        "Das ist derselbe Gedanke, den wir heute Menschenwürde nennen."
+       ],
+       "richtig": 0,
+       "fa": "آقای رحیمی می‌گوید این دوستی چهل‌ساله یکی از ارزشمندترین چیزهای زندگی‌اش است."
       },
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
         "Sie haben recht. Ich schreibe ‹die Vierzeiler, die Khayyam zugeschrieben werden›.",
-        "Ein gutes Thema. Was ist Ihre Hauptthese?",
-        "Das ist derselbe Gedanke, den wir heute Menschenwürde nennen."
+        "Welchen Platz hat Deutschland im Weltglücksbericht?",
+        "Am Freitagnachmittag kommt seine Tochter mit seinen beiden Enkelkindern zu Besuch."
        ],
        "richtig": 0,
        "fa": "حق با شماست. می‌نویسم «رباعی‌هایی که به خیام نسبت داده می‌شود»."
@@ -677,32 +833,12 @@
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
-        "Was ist ein ‹gutes Leben›? Diese Frage ist vielleicht so alt wie der Mensch selbst.",
-        "Das ist derselbe Gedanke, den wir heute Menschenwürde nennen.",
-        "Ein gutes Thema. Was ist Ihre Hauptthese?"
+        "Eine gute Idee. Ich fürchte nur, dass der Essay zu lang wird.",
+        "Weißt du noch, dass du am ersten Abend nicht einmal wusstest, wo der Schalter für den Warmwasserbereiter ist?",
+        "Das ist derselbe Gedanke, den wir heute Menschenwürde nennen."
        ],
        "richtig": 0,
-       "fa": "«زندگی خوب» چیست؟ این پرسش شاید به قدمت خود انسان باشد."
-      },
-      {
-       "frage": "Was bedeutet der Satz?",
-       "optionen": [
-        "Saadis berühmtestes Wort ist vielleicht dieser Halbvers: ‹Die Menschenkinder sind Glieder voneinander.›",
-        "Das ist derselbe Gedanke, den wir heute Menschenwürde nennen.",
-        "Sie haben recht. Ich schreibe ‹die Vierzeiler, die Khayyam zugeschrieben werden›."
-       ],
-       "richtig": 0,
-       "fa": "مشهورترین سخن سعدی شاید این مصراع باشد: «بنی آدم اعضای یکدیگرند»."
-      },
-      {
-       "frage": "Was bedeutet der Satz?",
-       "optionen": [
-        "Das ist derselbe Gedanke, den wir heute Menschenwürde nennen.",
-        "Saadis berühmtestes Wort ist vielleicht dieser Halbvers: ‹Die Menschenkinder sind Glieder voneinander.›",
-        "Was ist ein ‹gutes Leben›? Diese Frage ist vielleicht so alt wie der Mensch selbst."
-       ],
-       "richtig": 0,
-       "fa": "این همان اندیشه‌ای است که امروز آن را کرامت انسانی می‌نامیم."
+       "fa": "فکر خوبی است. فقط نگرانم که مقاله بیش از اندازه طولانی شود."
       }
      ]
     }

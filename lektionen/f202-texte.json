@@ -2,7 +2,7 @@
  "id": "tx",
  "art": "texte",
  "titel": "Sachtext & Dialoge",
- "beschreibung": "Sachtext, Wortschatz im Kontext, zwei Dialoge, Redemittel und Schreibaufgabe.",
+ "beschreibung": "Sachtext, Wortschatz im Kontext, Alltagstext, drei Dialoge, Infotexte, Redemittel und Schreibaufgabe.",
  "stationen": [
   {
    "id": "t1",
@@ -12,7 +12,7 @@
     {
      "typ": "info",
      "titel": "Neue Wörter im Text",
-     "text": "<p><span class='fa'>خاورمیانه</span> – Naher Osten · <span class='fa'>قرون وسطی</span> – Mittelalter · <span class='fa'>ویرانی</span> – Zerstörung · <span class='fa'>رونق گرفتن</span> – aufblühen · <span class='fa'>نقطه‌ی عطف</span> – Wendepunkt · <span class='fa'>بنیان‌گذار</span> – Gründer/in · <span class='fa'>جابه‌جا کردن</span> – befördern · <span class='fa'>هشدار دادن</span> – warnen · <span class='fa'>تضاد</span> – Gegensatz</p>",
+     "text": "<p><span class='fa'>خاورمیانه</span> – Naher Osten · <span class='fa'>رسانه</span> – Medium · <span class='fa'>قرون وسطی</span> – Mittelalter · <span class='fa'>ثروتمند</span> – reich · <span class='fa'>ویرانی</span> – Zerstörung · <span class='fa'>رونق گرفتن</span> – aufblühen · <span class='fa'>نقطه‌ی عطف</span> – Wendepunkt · <span class='fa'>بنیان‌گذار</span> – Gründer/in · <span class='fa'>دروازه</span> – Stadttor · <span class='fa'>مسکونی</span> – Wohn- · <span class='fa'>مجوز</span> – Genehmigung · <span class='fa'>جابه‌جا کردن</span> – befördern · <span class='fa'>سرپوش</span> – Deckel · <span class='fa'>هشدار دادن</span> – warnen · <span class='fa'>روزافزون</span> – ständig wachsend · <span class='fa'>برداشت</span> – Entnahme · <span class='fa'>فرونشست</span> – Absenkung · <span class='fa'>تضاد</span> – Gegensatz</p>",
      "stil": "merke"
     },
     {
@@ -26,9 +26,19 @@
        "de": "Teheran ist heute eine der größten Städte des Nahen Ostens; rund neun Millionen Menschen leben dort."
       },
       {
-       "fa": "اگر حومه و شهرهای اطراف را هم حساب کنیم، جمعیت این کلان‌شهر به بیش از پانزده میلیون نفر می‌رسد.",
+       "fa": "اگر حومه و شهرهای اطراف مانند کرج را هم حساب کنیم، جمعیت این کلان‌شهر به بیش از پانزده میلیون نفر می‌رسد.",
        "tr": "",
-       "de": "Rechnet man das Umland und die Nachbarstädte hinzu, hat diese Megastadt über fünfzehn Millionen Einwohner."
+       "de": "Rechnet man das Umland und Nachbarstädte wie Karadsch hinzu, hat diese Megastadt über fünfzehn Millionen Einwohner."
+      },
+      {
+       "fa": "تهران پایتخت سیاسی، مرکز اقتصادی و مهم‌ترین شهر دانشگاهی ایران است و بخش بزرگی از صنایع، بانک‌ها و رسانه‌های کشور در آن قرار دارند.",
+       "tr": "",
+       "de": "Teheran ist die politische Hauptstadt, das wirtschaftliche Zentrum und die wichtigste Universitätsstadt Irans; ein großer Teil der Industrie, der Banken und der Medien des Landes hat dort seinen Sitz."
+      },
+      {
+       "fa": "از نظر اداری، شهر به ۲۲ منطقه تقسیم شده است که هر کدام شهرداری ویژه‌ی خود را دارند.",
+       "tr": "",
+       "de": "Verwaltungsmäßig ist die Stadt in 22 Bezirke gegliedert, von denen jeder eine eigene Bezirksverwaltung hat."
       },
       {
        "fa": "اما تهران همیشه بزرگ نبود: در قرون وسطی، فقط یک روستا در نزدیکی شهر تاریخی ری بود.",
@@ -36,14 +46,19 @@
        "de": "Doch Teheran war nicht immer groß: Im Mittelalter war es nur ein Dorf in der Nähe der historischen Stadt Rey."
       },
       {
-       "fa": "پس از ویرانی ری در حمله‌ی مغول‌ها، بسیاری از مردم آن به تهران آمده، در آنجا ساکن شدند.",
+       "fa": "ری یکی از کهن‌ترین شهرهای ایران بود و جغرافی‌دانان قدیم آن را شهری بزرگ و ثروتمند توصیف کرده‌اند.",
        "tr": "",
-       "de": "Nachdem Rey beim Mongoleneinfall zerstört worden war, kamen viele seiner Bewohner nach Teheran und ließen sich dort nieder."
+       "de": "Rey war eine der ältesten Städte Irans, und alte Geografen haben sie als große und reiche Stadt beschrieben."
       },
       {
-       "fa": "در دوره‌ی صفوی، دیواری به دور شهر کشیده شد و بازار آن رونق گرفت.",
+       "fa": "پس از ویرانی ری در حمله‌ی مغول‌ها در قرن سیزدهم، بسیاری از مردم آن به تهران آمده، در آنجا ساکن شدند.",
        "tr": "",
-       "de": "In der Safawidenzeit wurde eine Mauer um die Stadt gezogen, und ihr Basar blühte auf."
+       "de": "Nachdem Rey im 13. Jahrhundert beim Mongoleneinfall zerstört worden war, kamen viele seiner Bewohner nach Teheran und ließen sich dort nieder."
+      },
+      {
+       "fa": "در دوره‌ی صفوی، شاه تهماسب دیواری به دور شهر کشید و بازار آن رونق گرفت.",
+       "tr": "",
+       "de": "In der Safawidenzeit ließ Schah Tahmasp eine Mauer um die Stadt ziehen, und ihr Basar blühte auf."
       },
       {
        "fa": "نقطه‌ی عطف تاریخ تهران سال ۱۷۸۶ است: آغامحمدخان، بنیان‌گذار سلسله‌ی قاجار، این شهر را پایتخت خود کرد.",
@@ -56,9 +71,34 @@
        "de": "Seitdem wurde Teheran zum politischen und wirtschaftlichen Zentrum des Landes, und seine Bevölkerung wuchs stetig."
       },
       {
-       "fa": "به‌ویژه در قرن بیستم، میلیون‌ها نفر برای کار و تحصیل از شهرهای دیگر به پایتخت مهاجرت کردند.",
+       "fa": "در دوره‌ی ناصرالدین‌شاه، شهر از دیوارهای قدیمی خود فراتر رفت و دیوار تازه‌ای با دوازده دروازه به دور آن ساخته گردید.",
        "tr": "",
-       "de": "Vor allem im 20. Jahrhundert zogen Millionen Menschen zum Arbeiten und Studieren aus anderen Städten in die Hauptstadt."
+       "de": "Unter Naser ad-Din Schah wuchs die Stadt über ihre alten Mauern hinaus, und eine neue Mauer mit zwölf Toren wurde um sie errichtet."
+      },
+      {
+       "fa": "مدرسه‌ی دارالفنون، نخستین مدرسه‌ی عالی به سبک جدید در ایران، نیز در سال ۱۸۵۱ در همین شهر تأسیس گردید.",
+       "tr": "",
+       "de": "Auch die Dar ol-Fonun, die erste höhere Schule modernen Stils in Iran, wurde 1851 in dieser Stadt gegründet."
+      },
+      {
+       "fa": "در دهه‌های ۱۹۲۰ و ۱۹۳۰، دیوارها و دروازه‌ها خراب شدند و به جای آنها خیابان‌های پهن و ساختمان‌های اداری ساخته شد.",
+       "tr": "",
+       "de": "In den 1920er- und 1930er-Jahren wurden Mauern und Tore abgerissen, und an ihrer Stelle entstanden breite Straßen und Verwaltungsgebäude."
+      },
+      {
+       "fa": "دانشگاه تهران در سال ۱۹۳۴ تأسیس گردید و شهر کم‌کم چهره‌ای مدرن پیدا کرد.",
+       "tr": "",
+       "de": "1934 wurde die Universität Teheran gegründet, und die Stadt bekam nach und nach ein modernes Gesicht."
+      },
+      {
+       "fa": "به‌ویژه در نیمه‌ی دوم قرن بیستم، میلیون‌ها نفر برای کار و تحصیل از شهرها و روستاهای دیگر به پایتخت مهاجرت کردند.",
+       "tr": "",
+       "de": "Vor allem in der zweiten Hälfte des 20. Jahrhunderts zogen Millionen Menschen zum Arbeiten und Studieren aus anderen Städten und Dörfern in die Hauptstadt."
+      },
+      {
+       "fa": "به گفته‌ی برآوردها، در آغاز قرن بیستم کمتر از سیصد هزار نفر در تهران زندگی می‌کردند؛ تا پایان همان قرن این عدد به بیش از شش میلیون رسید.",
+       "tr": "",
+       "de": "Schätzungen zufolge lebten zu Beginn des 20. Jahrhunderts weniger als dreihunderttausend Menschen in Teheran; bis zum Ende desselben Jahrhunderts stieg die Zahl auf über sechs Millionen."
       },
       {
        "fa": "تهران در دامنه‌ی جنوبی رشته‌کوه البرز قرار دارد و زمین آن از شمال به جنوب شیب تندی دارد.",
@@ -66,19 +106,29 @@
        "de": "Teheran liegt am Südhang des Alborz-Gebirges, und das Gelände fällt von Norden nach Süden steil ab."
       },
       {
-       "fa": "ارتفاع شمالی‌ترین محله‌ها چند صد متر بیشتر از جنوب شهر است.",
+       "fa": "ارتفاع شمالی‌ترین محله‌ها چند صد متر بیشتر از جنوب شهر است و به همین دلیل هوای شمال در تابستان خنک‌تر است.",
        "tr": "",
-       "de": "Die nördlichsten Viertel liegen einige hundert Meter höher als der Süden der Stadt."
+       "de": "Die nördlichsten Viertel liegen einige hundert Meter höher als der Süden der Stadt, deshalb ist die Luft im Norden im Sommer kühler."
       },
       {
-       "fa": "این تفاوت فقط جغرافیایی نیست: محله‌های شمالی خنک‌تر، سرسبزتر و گران‌ترند و در جنوب، محله‌های قدیمی‌تر و پرجمعیت‌تر قرار دارند.",
+       "fa": "در روزهای صاف، از بسیاری از نقاط شهر می‌توان قله‌ی دماوند را دید؛ کوهی با ارتفاع بیش از پنج هزار و ششصد متر که بلندترین قله‌ی ایران است.",
        "tr": "",
-       "de": "Dieser Unterschied ist nicht nur geografisch: Die nördlichen Viertel sind kühler, grüner und teurer, im Süden liegen ältere und dichter besiedelte Viertel."
+       "de": "An klaren Tagen sieht man von vielen Orten der Stadt den Gipfel des Damawand, eines über 5600 Meter hohen Berges, der der höchste Gipfel Irans ist."
       },
       {
-       "fa": "تهرانی‌ها به این دو بخش «بالای شهر» و «پایین شهر» می‌گویند.",
+       "fa": "این تفاوت ارتفاع فقط جغرافیایی نیست: محله‌های شمالی سرسبزتر و گران‌ترند و در جنوب، محله‌های قدیمی‌تر و پرجمعیت‌تر قرار دارند.",
        "tr": "",
-       "de": "Die Teheraner nennen diese beiden Teile ‹Oberstadt› und ‹Unterstadt›."
+       "de": "Dieser Höhenunterschied ist nicht nur geografisch: Die nördlichen Viertel sind grüner und teurer, im Süden liegen ältere und dichter besiedelte Viertel."
+      },
+      {
+       "fa": "تهرانی‌ها به این دو بخش «بالای شهر» و «پایین شهر» می‌گویند و این دو اصطلاح، علاوه بر جغرافیا، تفاوت‌های اجتماعی را هم نشان می‌دهند.",
+       "tr": "",
+       "de": "Die Teheraner nennen diese beiden Teile ‹Oberstadt› und ‹Unterstadt›, und diese Ausdrücke bezeichnen neben der Geografie auch soziale Unterschiede."
+      },
+      {
+       "fa": "در سال‌های اخیر، شهر به سمت غرب گسترش یافته و در آنجا محله‌های تازه با برج‌های مسکونی بلند ساخته شده است.",
+       "tr": "",
+       "de": "In den letzten Jahren hat sich die Stadt nach Westen ausgedehnt, und dort sind neue Viertel mit hohen Wohntürmen entstanden."
       },
       {
        "fa": "در شمال شهر، یک تله‌کابین طولانی مردم را تا نزدیکی قله‌ی توچال، با ارتفاع نزدیک به چهار هزار متر، بالا می‌برد.",
@@ -86,9 +136,9 @@
        "de": "Im Norden der Stadt bringt eine lange Seilbahn die Menschen bis in die Nähe des fast 4000 Meter hohen Tochal-Gipfels."
       },
       {
-       "fa": "در زمستان می‌توان آنجا اسکی کرد و در تابستان، بسیاری از تهرانی‌ها برای فرار از گرما به کوه می‌روند.",
+       "fa": "در زمستان می‌توان آنجا اسکی کرد و در تابستان، بسیاری از تهرانی‌ها برای فرار از گرما به دره‌های دربند و درکه می‌روند.",
        "tr": "",
-       "de": "Im Winter kann man dort Ski fahren, und im Sommer gehen viele Teheraner in die Berge, um der Hitze zu entfliehen."
+       "de": "Im Winter kann man dort Ski fahren, und im Sommer flüchten viele Teheraner vor der Hitze in die Täler von Darband und Darakeh."
       },
       {
        "fa": "رشد سریع شهر مشکلات زیادی هم به همراه داشته است و مهم‌ترین آنها ترافیک سنگین است.",
@@ -96,9 +146,24 @@
        "de": "Das schnelle Wachstum der Stadt hat auch viele Probleme mit sich gebracht; das wichtigste ist der dichte Verkehr."
       },
       {
+       "fa": "در ساعت‌های اوج، رفتن از جنوب به شمال شهر با خودروی شخصی گاهی بیش از یک ساعت طول می‌کشد.",
+       "tr": "",
+       "de": "In der Hauptverkehrszeit dauert die Fahrt mit dem Privatauto vom Süden in den Norden der Stadt manchmal über eine Stunde."
+      },
+      {
+       "fa": "برای کاهش ترافیک، ورود خودروهای شخصی به مرکز شهر محدود شده و برای آن مجوز ویژه‌ای لازم است.",
+       "tr": "",
+       "de": "Um den Verkehr zu verringern, ist die Einfahrt von Privatautos ins Stadtzentrum beschränkt und erfordert eine besondere Genehmigung."
+      },
+      {
        "fa": "نخستین خطوط مترو حدود سال ۲۰۰۰ افتتاح گردید و شبکه‌ی آن از آن زمان مدام گسترش یافته است.",
        "tr": "",
        "de": "Die ersten U-Bahn-Linien wurden um das Jahr 2000 eröffnet, und das Netz ist seitdem ständig gewachsen."
+      },
+      {
+       "fa": "علاوه بر مترو، خطوط اتوبوس تندرو در خیابان‌های اصلی مسیرهای جداگانه‌ای دارند و هر روز شمار زیادی از مسافران را جابه‌جا می‌کنند.",
+       "tr": "",
+       "de": "Neben der U-Bahn haben Schnellbuslinien auf den Hauptstraßen eigene Fahrspuren und befördern täglich eine große Zahl von Fahrgästen."
       },
       {
        "fa": "امروز مترو روزانه بیش از یک میلیون مسافر را جابه‌جا می‌کند، اما بزرگراه‌ها همچنان پر از خودرو هستند.",
@@ -111,14 +176,29 @@
        "de": "Ein weiteres Problem ist die Luftverschmutzung, besonders im Winter."
       },
       {
-       "fa": "در روزهای بی‌باد، کوه‌ها جلوی جریان هوا را می‌گیرند و مه‌دود چند روز روی شهر می‌ماند؛ در چنین روزهایی گاهی مدرسه‌ها تعطیل می‌شوند.",
+       "fa": "در روزهای سرد و بی‌باد، لایه‌ای از هوای گرم‌تر مانند سرپوشی روی هوای سرد شهر قرار می‌گیرد و کوه‌ها هم جلوی جریان هوا را می‌گیرند.",
        "tr": "",
-       "de": "An windstillen Tagen halten die Berge die Luftzirkulation auf, und der Smog liegt mehrere Tage über der Stadt; an solchen Tagen bleiben manchmal die Schulen geschlossen."
+       "de": "An kalten, windstillen Tagen legt sich eine Schicht wärmerer Luft wie ein Deckel über die kalte Stadtluft, und die Berge halten die Luftzirkulation zusätzlich auf."
+      },
+      {
+       "fa": "در نتیجه، مه‌دود چند روز روی شهر می‌ماند و در چنین روزهایی گاهی مدرسه‌ها و دانشگاه‌ها تعطیل می‌شوند.",
+       "tr": "",
+       "de": "Folglich liegt der Smog mehrere Tage über der Stadt, und an solchen Tagen bleiben manchmal Schulen und Universitäten geschlossen."
       },
       {
        "fa": "علاوه بر این، تهران روی چند گسل فعال ساخته شده و کارشناسان بارها درباره‌ی خطر یک زلزله‌ی بزرگ هشدار داده‌اند.",
        "tr": "",
        "de": "Außerdem ist Teheran auf mehreren aktiven Bruchlinien gebaut, und Fachleute haben wiederholt vor der Gefahr eines großen Erdbebens gewarnt."
+      },
+      {
+       "fa": "کمبود آب نیز نگرانی روزافزونی است: شهر بخشی از آب خود را از سدهای اطراف و بخشی را از آب‌های زیرزمینی می‌گیرد.",
+       "tr": "",
+       "de": "Auch der Wassermangel ist eine wachsende Sorge: Die Stadt bezieht einen Teil ihres Wassers aus Stauseen der Umgebung und einen Teil aus dem Grundwasser."
+      },
+      {
+       "fa": "برداشت بیش از حد آب‌های زیرزمینی باعث شده است که زمین در برخی مناطق جنوب و غرب شهر هر سال چند سانتی‌متر فرونشست کند.",
+       "tr": "",
+       "de": "Die übermäßige Grundwasserentnahme hat dazu geführt, dass der Boden in manchen Gegenden im Süden und Westen der Stadt jedes Jahr um einige Zentimeter absinkt."
       },
       {
        "fa": "با وجود همه‌ی این مشکلات، تهران شهری پرانرژی و پر از تضاد است.",
@@ -131,9 +211,19 @@
        "de": "In der Altstadt ist der Große Basar mit seinen langen überdachten Gängen noch immer das Herz des traditionellen Handels."
       },
       {
-       "fa": "در همان حال، برج میلاد با ارتفاع حدود ۴۳۵ متر نماد تهران مدرن به شمار می‌رود.",
+       "fa": "کاخ گلستان، که بیشتر بناهای آن از دوره‌ی قاجار است، در سال ۲۰۱۳ در فهرست میراث جهانی یونسکو ثبت شد.",
        "tr": "",
-       "de": "Zugleich gilt der rund 435 Meter hohe Milad-Turm als Symbol des modernen Teheran."
+       "de": "Der Golestan-Palast, dessen Gebäude größtenteils aus der Kadscharenzeit stammen, wurde 2013 in die UNESCO-Welterbeliste eingetragen."
+      },
+      {
+       "fa": "در همان حال، برج میلاد با ارتفاع حدود ۴۳۵ متر و برج آزادی، که در سال ۱۹۷۱ ساخته گردید، نمادهای تهران مدرن به شمار می‌روند.",
+       "tr": "",
+       "de": "Zugleich gelten der rund 435 Meter hohe Milad-Turm und der 1971 erbaute Azadi-Turm als Symbole des modernen Teheran."
+      },
+      {
+       "fa": "موزه‌ها، تئاترها، سینماها و نمایشگاه سالانه‌ی کتاب نیز تهران را به مهم‌ترین مرکز فرهنگی کشور تبدیل کرده‌اند.",
+       "tr": "",
+       "de": "Museen, Theater, Kinos und die jährliche Buchmesse haben Teheran außerdem zum wichtigsten Kulturzentrum des Landes gemacht."
       },
       {
        "fa": "شاید همین کنار هم بودن کهنه و نو است که تهران را برای بسیاری از بازدیدکنندگان جذاب می‌کند.",
@@ -174,9 +264,30 @@
         "falsch"
        ],
        "richtig": 1,
+       "fa": "دیوارها و دروازه‌های قدیمی تهران هنوز سالم باقی مانده‌اند.",
+       "fest": true,
+       "erkl": "Sie wurden in den <b>1920er- und 1930er-Jahren abgerissen</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
        "fa": "محله‌های جنوبی شهر بالاتر از محله‌های شمالی قرار دارند.",
        "fest": true,
        "erkl": "Umgekehrt: Der <b>Norden</b> liegt einige hundert Meter höher."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "دماوند بلندترین قله‌ی ایران است.",
+       "fest": true
       },
       {
        "frage": "Richtig oder falsch?",
@@ -236,9 +347,18 @@
       {
        "frage": "Warum bleibt der Smog im Winter über der Stadt?",
        "optionen": [
-        "Die Berge halten die Luftzirkulation auf.",
+        "Eine wärmere Luftschicht und die Berge halten die Luft fest.",
         "Es gibt zu viele Seilbahnen.",
         "Die Schulen sind geschlossen."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Warum sinkt der Boden in manchen Gegenden ab?",
+       "optionen": [
+        "wegen übermäßiger Grundwasserentnahme",
+        "wegen des U-Bahn-Baus",
+        "wegen der vielen Hochhäuser"
        ],
        "richtig": 0
       },
@@ -247,7 +367,7 @@
        "optionen": [
         "der Milad-Turm",
         "der Große Basar",
-        "der Tochal"
+        "die Dar ol-Fonun"
        ],
        "richtig": 0
       },
@@ -256,7 +376,7 @@
        "optionen": [
         "um das Jahr 2000",
         "1786",
-        "im Mittelalter"
+        "1934"
        ],
        "richtig": 0
       }
@@ -268,9 +388,19 @@
      "frage": "Bring die Sätze in die Reihenfolge des Textes.",
      "items": [
       {
-       "fa": "اگر حومه و شهرهای اطراف را هم حساب کنیم، جمعیت این کلان‌شهر به بیش از پانزده میلیون نفر می‌رسد.",
+       "fa": "اگر حومه و شهرهای اطراف مانند کرج را هم حساب کنیم، جمعیت این کلان‌شهر به بیش از پانزده میلیون نفر می‌رسد.",
        "tr": "",
-       "de": "Rechnet man das Umland und die Nachbarstädte hinzu, hat diese Megastadt über fünfzehn Millionen Einwohner."
+       "de": "Rechnet man das Umland und Nachbarstädte wie Karadsch hinzu, hat diese Megastadt über fünfzehn Millionen Einwohner."
+      },
+      {
+       "fa": "تهران پایتخت سیاسی، مرکز اقتصادی و مهم‌ترین شهر دانشگاهی ایران است و بخش بزرگی از صنایع، بانک‌ها و رسانه‌های کشور در آن قرار دارند.",
+       "tr": "",
+       "de": "Teheran ist die politische Hauptstadt, das wirtschaftliche Zentrum und die wichtigste Universitätsstadt Irans; ein großer Teil der Industrie, der Banken und der Medien des Landes hat dort seinen Sitz."
+      },
+      {
+       "fa": "از نظر اداری، شهر به ۲۲ منطقه تقسیم شده است که هر کدام شهرداری ویژه‌ی خود را دارند.",
+       "tr": "",
+       "de": "Verwaltungsmäßig ist die Stadt in 22 Bezirke gegliedert, von denen jeder eine eigene Bezirksverwaltung hat."
       },
       {
        "fa": "اما تهران همیشه بزرگ نبود: در قرون وسطی، فقط یک روستا در نزدیکی شهر تاریخی ری بود.",
@@ -278,24 +408,14 @@
        "de": "Doch Teheran war nicht immer groß: Im Mittelalter war es nur ein Dorf in der Nähe der historischen Stadt Rey."
       },
       {
-       "fa": "پس از ویرانی ری در حمله‌ی مغول‌ها، بسیاری از مردم آن به تهران آمده، در آنجا ساکن شدند.",
+       "fa": "ری یکی از کهن‌ترین شهرهای ایران بود و جغرافی‌دانان قدیم آن را شهری بزرگ و ثروتمند توصیف کرده‌اند.",
        "tr": "",
-       "de": "Nachdem Rey beim Mongoleneinfall zerstört worden war, kamen viele seiner Bewohner nach Teheran und ließen sich dort nieder."
+       "de": "Rey war eine der ältesten Städte Irans, und alte Geografen haben sie als große und reiche Stadt beschrieben."
       },
       {
-       "fa": "در دوره‌ی صفوی، دیواری به دور شهر کشیده شد و بازار آن رونق گرفت.",
+       "fa": "پس از ویرانی ری در حمله‌ی مغول‌ها در قرن سیزدهم، بسیاری از مردم آن به تهران آمده، در آنجا ساکن شدند.",
        "tr": "",
-       "de": "In der Safawidenzeit wurde eine Mauer um die Stadt gezogen, und ihr Basar blühte auf."
-      },
-      {
-       "fa": "نقطه‌ی عطف تاریخ تهران سال ۱۷۸۶ است: آغامحمدخان، بنیان‌گذار سلسله‌ی قاجار، این شهر را پایتخت خود کرد.",
-       "tr": "",
-       "de": "Der Wendepunkt in Teherans Geschichte ist das Jahr 1786: Agha Mohammad Khan, der Gründer der Kadscharen-Dynastie, machte die Stadt zu seiner Hauptstadt."
-      },
-      {
-       "fa": "از آن زمان، تهران به مرکز سیاسی و اقتصادی کشور تبدیل شد و جمعیت آن پیوسته افزایش یافت.",
-       "tr": "",
-       "de": "Seitdem wurde Teheran zum politischen und wirtschaftlichen Zentrum des Landes, und seine Bevölkerung wuchs stetig."
+       "de": "Nachdem Rey im 13. Jahrhundert beim Mongoleneinfall zerstört worden war, kamen viele seiner Bewohner nach Teheran und ließen sich dort nieder."
       }
      ]
     }
@@ -311,23 +431,35 @@
      "titel": "Welches Wort fehlt im Text?",
      "fragen": [
       {
-       "frage": "<span class='fa'>اگر حومه و شهرهای اطراف را هم حساب کنیم، جمعیت این ___ به بیش از پانزده میلیون نفر می‌رسد.</span><br><span class='mini'>Rechnet man das Umland und die Nachbarstädte hinzu, hat diese Megastadt über fünfzehn Millionen Einwohner.</span>",
+       "frage": "<span class='fa'>اگر حومه و شهرهای اطراف مانند کرج را هم حساب کنیم، جمعیت این ___ به بیش از پانزده میلیون نفر می‌رسد.</span><br><span class='mini'>Rechnet man das Umland und Nachbarstädte wie Karadsch hinzu, hat diese Megastadt über fünfzehn Millionen Einwohner.</span>",
        "optionen": [
         "کلان‌شهر",
-        "پیاده‌رو",
-        "دامنه"
+        "آپارتمان",
+        "شهرداری"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
-       "erkl": "<span class='fa'>اگر حومه و شهرهای اطراف را هم حساب کنیم، جمعیت این کلان‌شهر به بیش از پانزده میلیون نفر می‌رسد.</span>"
+       "erkl": "<span class='fa'>اگر حومه و شهرهای اطراف مانند کرج را هم حساب کنیم، جمعیت این کلان‌شهر به بیش از پانزده میلیون نفر می‌رسد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>از نظر اداری، شهر به ۲۲ منطقه تقسیم شده است که هر کدام ___ ویژه‌ی خود را دارند.</span><br><span class='mini'>Verwaltungsmäßig ist die Stadt in 22 Bezirke gegliedert, von denen jeder eine eigene Bezirksverwaltung hat.</span>",
+       "optionen": [
+        "شهرداری",
+        "قله",
+        "اجاره"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>از نظر اداری، شهر به ۲۲ منطقه تقسیم شده است که هر کدام شهرداری ویژه‌ی خود را دارند.</span>"
       },
       {
        "frage": "<span class='fa'>اما تهران همیشه بزرگ نبود: در قرون وسطی، فقط یک ___ در نزدیکی شهر تاریخی ری بود.</span><br><span class='mini'>Doch Teheran war nicht immer groß: Im Mittelalter war es nur ein Dorf in der Nähe der historischen Stadt Rey.</span>",
        "optionen": [
         "روستا",
-        "دامنه",
-        "پادشاه"
+        "تله‌کابین",
+        "ایستگاه"
        ],
        "richtig": 0,
        "optFa": true,
@@ -335,23 +467,23 @@
        "erkl": "<span class='fa'>اما تهران همیشه بزرگ نبود: در قرون وسطی، فقط یک روستا در نزدیکی شهر تاریخی ری بود.</span>"
       },
       {
-       "frage": "<span class='fa'>پس از ویرانی ری در حمله‌ی مغول‌ها، بسیاری از مردم آن به تهران آمده، در آنجا ___ شدند.</span><br><span class='mini'>Nachdem Rey beim Mongoleneinfall zerstört worden war, kamen viele seiner Bewohner nach Teheran und ließen sich dort nieder.</span>",
+       "frage": "<span class='fa'>پس از ویرانی ری در حمله‌ی مغول‌ها در قرن سیزدهم، بسیاری از مردم آن به تهران آمده، در آنجا ___ شدند.</span><br><span class='mini'>Nachdem Rey im 13. Jahrhundert beim Mongoleneinfall zerstört worden war, kamen viele seiner Bewohner nach Teheran und ließen sich dort nieder.</span>",
        "optionen": [
         "ساکن",
-        "دامنه",
-        "مه‌دود"
+        "پیاده‌رو",
+        "زلزله"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
-       "erkl": "<span class='fa'>پس از ویرانی ری در حمله‌ی مغول‌ها، بسیاری از مردم آن به تهران آمده، در آنجا ساکن شدند.</span>"
+       "erkl": "<span class='fa'>پس از ویرانی ری در حمله‌ی مغول‌ها در قرن سیزدهم، بسیاری از مردم آن به تهران آمده، در آنجا ساکن شدند.</span>"
       },
       {
        "frage": "<span class='fa'>از آن زمان، تهران به مرکز سیاسی و اقتصادی کشور تبدیل شد و ___ آن پیوسته افزایش یافت.</span><br><span class='mini'>Seitdem wurde Teheran zum politischen und wirtschaftlichen Zentrum des Landes, und seine Bevölkerung wuchs stetig.</span>",
        "optionen": [
         "جمعیت",
-        "چشم‌انداز",
-        "سلسله"
+        "زلزله",
+        "رفت‌وآمد"
        ],
        "richtig": 0,
        "optFa": true,
@@ -362,25 +494,13 @@
        "frage": "<span class='fa'>تهران در دامنه‌ی جنوبی ___ البرز قرار دارد و زمین آن از شمال به جنوب شیب تندی دارد.</span><br><span class='mini'>Teheran liegt am Südhang des Alborz-Gebirges, und das Gelände fällt von Norden nach Süden steil ab.</span>",
        "optionen": [
         "رشته‌کوه",
-        "روستا",
-        "محله"
+        "شلوغی",
+        "رفت‌وآمد"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
        "erkl": "<span class='fa'>تهران در دامنه‌ی جنوبی رشته‌کوه البرز قرار دارد و زمین آن از شمال به جنوب شیب تندی دارد.</span>"
-      },
-      {
-       "frage": "<span class='fa'>___ شمالی‌ترین محله‌ها چند صد متر بیشتر از جنوب شهر است.</span><br><span class='mini'>Die nördlichsten Viertel liegen einige hundert Meter höher als der Süden der Stadt.</span>",
-       "optionen": [
-        "ارتفاع",
-        "ترافیک",
-        "خطر"
-       ],
-       "richtig": 0,
-       "optFa": true,
-       "hoeren": false,
-       "erkl": "<span class='fa'>ارتفاع شمالی‌ترین محله‌ها چند صد متر بیشتر از جنوب شهر است.</span>"
       }
      ]
     },
@@ -389,11 +509,47 @@
      "titel": "Welches Wort fehlt im Text?",
      "fragen": [
       {
+       "frage": "<span class='fa'>___ شمالی‌ترین محله‌ها چند صد متر بیشتر از جنوب شهر است و به همین دلیل هوای شمال در تابستان خنک‌تر است.</span><br><span class='mini'>Die nördlichsten Viertel liegen einige hundert Meter höher als der Süden der Stadt, deshalb ist die Luft im Norden im Sommer kühler.</span>",
+       "optionen": [
+        "ارتفاع",
+        "میدان",
+        "کرایه"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>ارتفاع شمالی‌ترین محله‌ها چند صد متر بیشتر از جنوب شهر است و به همین دلیل هوای شمال در تابستان خنک‌تر است.</span>"
+      },
+      {
+       "frage": "<span class='fa'>در روزهای صاف، از بسیاری از نقاط شهر می‌توان قله‌ی دماوند را دید؛ کوهی با ___ بیش از پنج هزار و ششصد متر که بلندترین قله‌ی ایران است.</span><br><span class='mini'>An klaren Tagen sieht man von vielen Orten der Stadt den Gipfel des Damawand, eines über 5600 Meter hohen Berges, der der höchste Gipfel Irans ist.</span>",
+       "optionen": [
+        "ارتفاع",
+        "مستأجر",
+        "اجاره"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>در روزهای صاف، از بسیاری از نقاط شهر می‌توان قله‌ی دماوند را دید؛ کوهی با ارتفاع بیش از پنج هزار و ششصد متر که بلندترین قله‌ی ایران است.</span>"
+      },
+      {
+       "frage": "<span class='fa'>این تفاوت ___ فقط جغرافیایی نیست: محله‌های شمالی سرسبزتر و گران‌ترند و در جنوب، محله‌های قدیمی‌تر و پرجمعیت‌تر قرار دارند.</span><br><span class='mini'>Dieser Höhenunterschied ist nicht nur geografisch: Die nördlichen Viertel sind grüner und teurer, im Süden liegen ältere und dichter besiedelte Viertel.</span>",
+       "optionen": [
+        "ارتفاع",
+        "ترافیک",
+        "گسل"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>این تفاوت ارتفاع فقط جغرافیایی نیست: محله‌های شمالی سرسبزتر و گران‌ترند و در جنوب، محله‌های قدیمی‌تر و پرجمعیت‌تر قرار دارند.</span>"
+      },
+      {
        "frage": "<span class='fa'>در شمال شهر، یک ___ طولانی مردم را تا نزدیکی قله‌ی توچال، با ارتفاع نزدیک به چهار هزار متر، بالا می‌برد.</span><br><span class='mini'>Im Norden der Stadt bringt eine lange Seilbahn die Menschen bis in die Nähe des fast 4000 Meter hohen Tochal-Gipfels.</span>",
        "optionen": [
         "تله‌کابین",
-        "شیب",
-        "بزرگراه"
+        "صاحب‌خانه",
+        "رفت‌وآمد"
        ],
        "richtig": 0,
        "optFa": true,
@@ -404,8 +560,8 @@
        "frage": "<span class='fa'>رشد سریع شهر مشکلات زیادی هم به همراه داشته است و مهم‌ترین آنها ___ سنگین است.</span><br><span class='mini'>Das schnelle Wachstum der Stadt hat auch viele Probleme mit sich gebracht; das wichtigste ist der dichte Verkehr.</span>",
        "optionen": [
         "ترافیک",
-        "روستا",
-        "شهرداری"
+        "مسافر",
+        "پیاده‌رو"
        ],
        "richtig": 0,
        "optFa": true,
@@ -413,11 +569,41 @@
        "erkl": "<span class='fa'>رشد سریع شهر مشکلات زیادی هم به همراه داشته است و مهم‌ترین آنها ترافیک سنگین است.</span>"
       },
       {
+       "frage": "<span class='fa'>در ساعت‌های اوج، رفتن از جنوب به شمال شهر با ___ گاهی بیش از یک ساعت طول می‌کشد.</span><br><span class='mini'>In der Hauptverkehrszeit dauert die Fahrt mit dem Privatauto vom Süden in den Norden der Stadt manchmal über eine Stunde.</span>",
+       "optionen": [
+        "خودروی شخصی",
+        "ساکن",
+        "رشته‌کوه"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>در ساعت‌های اوج، رفتن از جنوب به شمال شهر با خودروی شخصی گاهی بیش از یک ساعت طول می‌کشد.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort fehlt im Text?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>برای کاهش ___، ورود خودروهای شخصی به مرکز شهر محدود شده و برای آن مجوز ویژه‌ای لازم است.</span><br><span class='mini'>Um den Verkehr zu verringern, ist die Einfahrt von Privatautos ins Stadtzentrum beschränkt und erfordert eine besondere Genehmigung.</span>",
+       "optionen": [
+        "ترافیک",
+        "کرایه",
+        "زلزله"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>برای کاهش ترافیک، ورود خودروهای شخصی به مرکز شهر محدود شده و برای آن مجوز ویژه‌ای لازم است.</span>"
+      },
+      {
        "frage": "<span class='fa'>نخستین خطوط ___ حدود سال ۲۰۰۰ افتتاح گردید و شبکه‌ی آن از آن زمان مدام گسترش یافته است.</span><br><span class='mini'>Die ersten U-Bahn-Linien wurden um das Jahr 2000 eröffnet, und das Netz ist seitdem ständig gewachsen.</span>",
        "optionen": [
         "مترو",
-        "ترافیک",
-        "پیاده‌رو"
+        "دامنه",
+        "دره"
        ],
        "richtig": 0,
        "optFa": true,
@@ -425,11 +611,23 @@
        "erkl": "<span class='fa'>نخستین خطوط مترو حدود سال ۲۰۰۰ افتتاح گردید و شبکه‌ی آن از آن زمان مدام گسترش یافته است.</span>"
       },
       {
-       "frage": "<span class='fa'>امروز ___ روزانه بیش از یک میلیون مسافر را جابه‌جا می‌کند، اما بزرگراه‌ها همچنان پر از خودرو هستند.</span><br><span class='mini'>Heute befördert die U-Bahn täglich über eine Million Fahrgäste, doch die Stadtautobahnen sind weiterhin voller Autos.</span>",
+       "frage": "<span class='fa'>علاوه بر مترو، خطوط ___ در خیابان‌های اصلی مسیرهای جداگانه‌ای دارند و هر روز شمار زیادی از مسافران را جابه‌جا می‌کنند.</span><br><span class='mini'>Neben der U-Bahn haben Schnellbuslinien auf den Hauptstraßen eigene Fahrspuren und befördern täglich eine große Zahl von Fahrgästen.</span>",
        "optionen": [
-        "مترو",
-        "ایستگاه",
-        "چشم‌انداز"
+        "اتوبوس تندرو",
+        "برج",
+        "ایستگاه"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>علاوه بر مترو، خطوط اتوبوس تندرو در خیابان‌های اصلی مسیرهای جداگانه‌ای دارند و هر روز شمار زیادی از مسافران را جابه‌جا می‌کنند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>امروز مترو روزانه بیش از یک میلیون ___ را جابه‌جا می‌کند، اما بزرگراه‌ها همچنان پر از خودرو هستند.</span><br><span class='mini'>Heute befördert die U-Bahn täglich über eine Million Fahrgäste, doch die Stadtautobahnen sind weiterhin voller Autos.</span>",
+       "optionen": [
+        "مسافر",
+        "میدان",
+        "کرایه"
        ],
        "richtig": 0,
        "optFa": true,
@@ -440,8 +638,8 @@
        "frage": "<span class='fa'>مشکل دیگر ___ است، به‌ویژه در زمستان.</span><br><span class='mini'>Ein weiteres Problem ist die Luftverschmutzung, besonders im Winter.</span>",
        "optionen": [
         "آلودگی هوا",
-        "روستا",
-        "شهرداری"
+        "تله‌کابین",
+        "پادشاه"
        ],
        "richtig": 0,
        "optFa": true,
@@ -449,16 +647,16 @@
        "erkl": "<span class='fa'>مشکل دیگر آلودگی هوا است، به‌ویژه در زمستان.</span>"
       },
       {
-       "frage": "<span class='fa'>در روزهای بی‌باد، کوه‌ها جلوی جریان هوا را می‌گیرند و ___ چند روز روی شهر می‌ماند؛ در چنین روزهایی گاهی مدرسه‌ها تعطیل می‌شوند.</span><br><span class='mini'>An windstillen Tagen halten die Berge die Luftzirkulation auf, und der Smog liegt mehrere Tage über der Stadt; an solchen Tagen bleiben manchmal die Schulen geschlossen.</span>",
+       "frage": "<span class='fa'>در نتیجه، ___ چند روز روی شهر می‌ماند و در چنین روزهایی گاهی مدرسه‌ها و دانشگاه‌ها تعطیل می‌شوند.</span><br><span class='mini'>Folglich liegt der Smog mehrere Tage über der Stadt, und an solchen Tagen bleiben manchmal Schulen und Universitäten geschlossen.</span>",
        "optionen": [
         "مه‌دود",
-        "بزرگراه",
-        "قله"
+        "مسافر",
+        "دره"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
-       "erkl": "<span class='fa'>در روزهای بی‌باد، کوه‌ها جلوی جریان هوا را می‌گیرند و مه‌دود چند روز روی شهر می‌ماند؛ در چنین روزهایی گاهی مدرسه‌ها تعطیل می‌شوند.</span>"
+       "erkl": "<span class='fa'>در نتیجه، مه‌دود چند روز روی شهر می‌ماند و در چنین روزهایی گاهی مدرسه‌ها و دانشگاه‌ها تعطیل می‌شوند.</span>"
       }
      ]
     },
@@ -478,19 +676,321 @@
        "de": "Im Mittelalter war die Stadt ein Dorf in der Nähe von Rey."
       },
       {
-       "fa": "از سال ۱۷۸۶ تهران پایتخت شد و به‌سرعت رشد کرد.",
+       "fa": "از سال ۱۷۸۶ تهران پایتخت شد و به‌ویژه در قرن بیستم به‌سرعت رشد کرد.",
        "tr": "",
-       "de": "Seit 1786 ist Teheran Hauptstadt und wuchs rasch."
+       "de": "Seit 1786 ist Teheran Hauptstadt und wuchs vor allem im 20. Jahrhundert rasch."
       },
       {
-       "fa": "رشد سریع مشکلاتی مثل ترافیک، آلودگی هوا و خطر زلزله به همراه داشته است.",
+       "fa": "شیب زمین از شمال به جنوب، شهر را به «بالای شهر» و «پایین شهر» تقسیم می‌کند.",
        "tr": "",
-       "de": "Das schnelle Wachstum hat Probleme wie Verkehr, Luftverschmutzung und Erdbebengefahr mit sich gebracht."
+       "de": "Das Gefälle von Norden nach Süden teilt die Stadt in ‹Oberstadt› und ‹Unterstadt›."
+      },
+      {
+       "fa": "رشد سریع مشکلاتی مثل ترافیک، آلودگی هوا، خطر زلزله و کمبود آب به همراه داشته است.",
+       "tr": "",
+       "de": "Das schnelle Wachstum hat Probleme wie Verkehr, Luftverschmutzung, Erdbebengefahr und Wassermangel mit sich gebracht."
       },
       {
        "fa": "با این حال، کنار هم بودن کهنه و نو تهران را جذاب می‌کند.",
        "tr": "",
        "de": "Dennoch macht das Nebeneinander von Alt und Neu Teheran reizvoll."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t3",
+   "titel": "Alltag: Drei Stunden unterwegs: ein Pendlertag in Teheran",
+   "vorschau": "Drei Stunden unterwegs: ein Pendlertag in Teheran",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>حسابدار</span> – Buchhalter/in · <span class='fa'>بیمه</span> – Versicherung · <span class='fa'>تازه‌ساز</span> – neu gebaut · <span class='fa'>سرویس مدرسه</span> – Schulbus · <span class='fa'>شانه به شانه</span> – Schulter an Schulter · <span class='fa'>گله کردن</span> – klagen · <span class='fa'>دوگانه</span> – zwiespältig · <span class='fa'>عقب‌افتاده</span> – liegengeblieben · <span class='fa'>نقل مکان</span> – Umzug · <span class='fa'>دل کندن</span> – sich lösen, loslassen</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Alltag: Drei Stunden unterwegs: ein Pendlertag in Teheran",
+     "text": "Alltagstext – Tippe eine Zeile an, wenn du die Übersetzung brauchst.",
+     "zeilen": [
+      {
+       "fa": "کامران سی‌وهشت سال دارد و حسابدار یک شرکت بیمه در نزدیکی میدان ونک است.",
+       "tr": "",
+       "de": "Kamran ist achtunddreißig Jahre alt und Buchhalter bei einer Versicherung in der Nähe des Vanak-Platzes."
+      },
+      {
+       "fa": "او با همسر و دخترش در آپارتمانی کوچک در غرب تهران، نزدیک دریاچه‌ی چیتگر، زندگی می‌کند.",
+       "tr": "",
+       "de": "Er lebt mit seiner Frau und seiner Tochter in einer kleinen Wohnung im Westen Teherans, nahe dem Tschitgar-See."
+      },
+      {
+       "fa": "آپارتمان‌های شمال شهر برای خانواده‌ی او خیلی گران بود؛ به همین دلیل، هفت سال پیش به غرب شهر رفتند که خانه‌های تازه‌ساز و ارزان‌تری داشت.",
+       "tr": "",
+       "de": "Die Wohnungen im Norden der Stadt waren für seine Familie zu teuer; deshalb zogen sie vor sieben Jahren in den Westen, wo es neuere und günstigere Wohnungen gab."
+      },
+      {
+       "fa": "اما این تصمیم یک هزینه‌ی دیگر هم داشت: هر روز نزدیک به سه ساعت در راه.",
+       "tr": "",
+       "de": "Doch diese Entscheidung hatte noch einen anderen Preis: jeden Tag fast drei Stunden unterwegs."
+      },
+      {
+       "fa": "همسرش معلم است و مدرسه‌اش نزدیک خانه است؛ بنابراین فقط کامران است که هر روز این مسیر طولانی را طی می‌کند.",
+       "tr": "",
+       "de": "Seine Frau ist Lehrerin, und ihre Schule liegt in der Nähe der Wohnung; nur Kamran legt also jeden Tag diesen langen Weg zurück."
+      },
+      {
+       "fa": "ساعت شش و ربع صبح زنگ ساعتش به صدا درمی‌آید.",
+       "tr": "",
+       "de": "Um Viertel nach sechs klingelt sein Wecker."
+      },
+      {
+       "fa": "صبحانه را سریع می‌خورد، دخترش را به سرویس مدرسه می‌سپارد و پیاده تا ایستگاه مترو می‌رود.",
+       "tr": "",
+       "de": "Er frühstückt schnell, bringt seine Tochter zum Schulbus und geht zu Fuß zur U-Bahn-Station."
+      },
+      {
+       "fa": "ساعت هفت مترو هنوز خیلی شلوغ نیست و او معمولا جایی برای نشستن پیدا می‌کند.",
+       "tr": "",
+       "de": "Um sieben ist die U-Bahn noch nicht sehr voll, und er findet meist einen Sitzplatz."
+      },
+      {
+       "fa": "در این بیست دقیقه، کامران اخبار را روی گوشی‌اش می‌خواند یا کتاب صوتی گوش می‌دهد.",
+       "tr": "",
+       "de": "In diesen zwanzig Minuten liest Kamran Nachrichten auf seinem Handy oder hört ein Hörbuch."
+      },
+      {
+       "fa": "گاهی هم فقط از پنجره به دیوارهای تاریک تونل نگاه می‌کند و به برنامه‌ی کارهای آن روز فکر می‌کند.",
+       "tr": "",
+       "de": "Manchmal schaut er auch nur aus dem Fenster auf die dunklen Tunnelwände und denkt über die Aufgaben des Tages nach."
+      },
+      {
+       "fa": "در یک ایستگاه مرکزی باید قطارش را عوض کند؛ آنجا راهروها آن‌قدر شلوغ است که همه شانه به شانه حرکت می‌کنند.",
+       "tr": "",
+       "de": "An einer zentralen Station muss er umsteigen; dort sind die Gänge so voll, dass sich alle Schulter an Schulter vorwärtsbewegen."
+      },
+      {
+       "fa": "قطار دوم او را به شمال شهر می‌برد و هرچه جلوتر می‌رود، مسافران بیشتری سوار می‌شوند.",
+       "tr": "",
+       "de": "Der zweite Zug bringt ihn in den Norden der Stadt, und je weiter er fährt, desto mehr Fahrgäste steigen ein."
+      },
+      {
+       "fa": "از ایستگاه تا دفتر ده دقیقه پیاده‌روی است؛ در روزهای صاف، کوه‌های البرز درست روبه‌روی او قرار دارند.",
+       "tr": "",
+       "de": "Von der Station bis zum Büro sind es zehn Minuten zu Fuß; an klaren Tagen liegt das Alborz-Gebirge direkt vor ihm."
+      },
+      {
+       "fa": "کامران ساعت هشت و ربع به دفتر می‌رسد، یک چای می‌ریزد و کارش را شروع می‌کند.",
+       "tr": "",
+       "de": "Kamran kommt um Viertel nach acht im Büro an, schenkt sich einen Tee ein und beginnt mit der Arbeit."
+      },
+      {
+       "fa": "همکارانش که با خودروی شخصی می‌آیند، معمولا دیرتر می‌رسند و از ترافیک بزرگراه‌ها گله می‌کنند.",
+       "tr": "",
+       "de": "Seine Kollegen, die mit dem eigenen Auto kommen, treffen meist später ein und klagen über den Verkehr auf den Stadtautobahnen."
+      },
+      {
+       "fa": "کامران حساب کرده است که با مترو هم وقت کمتری از دست می‌دهد و هم هزینه‌ی کمتری می‌پردازد.",
+       "tr": "",
+       "de": "Kamran hat ausgerechnet, dass er mit der U-Bahn sowohl weniger Zeit verliert als auch weniger Geld ausgibt."
+      },
+      {
+       "fa": "در روزهای آلوده، برنامه‌ی کار گاهی تغییر می‌کند: اداره‌ها زودتر تعطیل می‌شوند یا کارمندان از خانه کار می‌کنند.",
+       "tr": "",
+       "de": "An Tagen mit starker Luftverschmutzung ändert sich manchmal der Arbeitsplan: Behörden schließen früher, oder die Angestellten arbeiten von zu Hause."
+      },
+      {
+       "fa": "این روزها برای کامران دوگانه است؛ از یک طرف نزد خانواده‌اش است، از طرف دیگر کارهای عقب‌افتاده بیشتر می‌شود.",
+       "tr": "",
+       "de": "Diese Tage sind für Kamran zwiespältig: Einerseits ist er bei seiner Familie, andererseits häuft sich die liegengebliebene Arbeit."
+      },
+      {
+       "fa": "ساعت پنج عصر راه برگشت شروع می‌شود و حالا مترو بسیار شلوغ‌تر از صبح است.",
+       "tr": "",
+       "de": "Um fünf Uhr nachmittags beginnt der Rückweg, und jetzt ist die U-Bahn viel voller als am Morgen."
+      },
+      {
+       "fa": "گاهی چند قطار را از دست می‌دهد تا بالاخره بتواند سوار شود.",
+       "tr": "",
+       "de": "Manchmal lässt er mehrere Züge fahren, bis er endlich einsteigen kann."
+      },
+      {
+       "fa": "بعضی روزها با همکاری که در همان محله زندگی می‌کند و ماشین دارد برمی‌گردد و هزینه‌ی بنزین را با هم تقسیم می‌کنند.",
+       "tr": "",
+       "de": "An manchen Tagen fährt er mit einem Kollegen zurück, der im selben Viertel wohnt und ein Auto hat, und sie teilen sich die Benzinkosten."
+      },
+      {
+       "fa": "وقتی به خانه می‌رسد، معمولا ساعت هفت شب است و در زمستان هوا تاریک شده است.",
+       "tr": "",
+       "de": "Wenn er zu Hause ankommt, ist es meist sieben Uhr abends, und im Winter ist es schon dunkel."
+      },
+      {
+       "fa": "جمعه‌ها، که روز تعطیل هفتگی است، کامران مجبور نیست زود بیدار شود و گاهی با خانواده به کوه یا پارک می‌رود.",
+       "tr": "",
+       "de": "Freitags, am wöchentlichen Ruhetag, muss Kamran nicht früh aufstehen und geht manchmal mit der Familie in die Berge oder in den Park."
+      },
+      {
+       "fa": "شام را با خانواده می‌خورد و بعد کمی کنار دریاچه‌ی چیتگر قدم می‌زند؛ آنجا فضای سبز زیاد است و هوا کمی تمیزتر است.",
+       "tr": "",
+       "de": "Er isst mit der Familie zu Abend und geht danach ein wenig am Tschitgar-See spazieren; dort gibt es viele Grünflächen, und die Luft ist etwas sauberer."
+      },
+      {
+       "fa": "کامران گاهی به نقل مکان فکر می‌کند؛ مثلا به شهری کوچک‌تر مثل رشت یا همدان.",
+       "tr": "",
+       "de": "Kamran denkt manchmal über einen Umzug nach – zum Beispiel in eine kleinere Stadt wie Rascht oder Hamadan."
+      },
+      {
+       "fa": "اما کار، مدرسه‌ی دخترش و دوستانش همه در تهران هستند.",
+       "tr": "",
+       "de": "Aber seine Arbeit, die Schule seiner Tochter und seine Freunde sind alle in Teheran."
+      },
+      {
+       "fa": "او می‌گوید: «تهران خسته‌ام می‌کند، اما هنوز نمی‌توانم از آن دل بکنم.»",
+       "tr": "",
+       "de": "Er sagt: ‹Teheran macht mich müde, aber ich kann mich noch nicht von der Stadt lösen.›"
+      },
+      {
+       "fa": "شاید بسیاری از ساکنان این کلان‌شهر همین جمله را با او تکرار کنند.",
+       "tr": "",
+       "de": "Vielleicht würden viele Bewohner dieser Megastadt genau diesen Satz mit ihm wiederholen."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "کامران در شمال شهر زندگی می‌کند.",
+       "fest": true,
+       "erkl": "Er wohnt im <b>Westen</b>, nahe dem Tschitgar-See."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "خانواده‌ی کامران به دلیل قیمت خانه‌ها به غرب شهر رفتند.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "کامران در راه دفتر قطارش را عوض می‌کند.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "مترو عصرها خلوت‌تر از صبح است.",
+       "fest": true,
+       "erkl": "Am Nachmittag ist sie <b>viel voller</b> als am Morgen."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "کامران گاهی به زندگی در یک شهر کوچک‌تر فکر می‌کند.",
+       "fest": true
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Wie lange ist Kamran täglich unterwegs?",
+       "optionen": [
+        "fast drei Stunden",
+        "eine halbe Stunde",
+        "über fünf Stunden"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was macht Kamran morgens in der U-Bahn?",
+       "optionen": [
+        "Er liest Nachrichten oder hört ein Hörbuch.",
+        "Er schläft.",
+        "Er telefoniert mit Kunden."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was passiert an Tagen mit starker Luftverschmutzung?",
+       "optionen": [
+        "Behörden schließen früher oder man arbeitet von zu Hause.",
+        "Die U-Bahn fährt nicht.",
+        "Alle fahren in die Berge."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Warum zieht Kamran nicht in eine kleinere Stadt?",
+       "optionen": [
+        "Arbeit, Schule der Tochter und Freunde sind in Teheran.",
+        "Kleinere Städte sind teurer.",
+        "Seine Frau möchte im Norden wohnen."
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "او با همسر و دخترش در آپارتمانی کوچک در غرب تهران، نزدیک دریاچه‌ی چیتگر، زندگی می‌کند.",
+       "tr": "",
+       "de": "Er lebt mit seiner Frau und seiner Tochter in einer kleinen Wohnung im Westen Teherans, nahe dem Tschitgar-See."
+      },
+      {
+       "fa": "آپارتمان‌های شمال شهر برای خانواده‌ی او خیلی گران بود؛ به همین دلیل، هفت سال پیش به غرب شهر رفتند که خانه‌های تازه‌ساز و ارزان‌تری داشت.",
+       "tr": "",
+       "de": "Die Wohnungen im Norden der Stadt waren für seine Familie zu teuer; deshalb zogen sie vor sieben Jahren in den Westen, wo es neuere und günstigere Wohnungen gab."
+      },
+      {
+       "fa": "اما این تصمیم یک هزینه‌ی دیگر هم داشت: هر روز نزدیک به سه ساعت در راه.",
+       "tr": "",
+       "de": "Doch diese Entscheidung hatte noch einen anderen Preis: jeden Tag fast drei Stunden unterwegs."
+      },
+      {
+       "fa": "همسرش معلم است و مدرسه‌اش نزدیک خانه است؛ بنابراین فقط کامران است که هر روز این مسیر طولانی را طی می‌کند.",
+       "tr": "",
+       "de": "Seine Frau ist Lehrerin, und ihre Schule liegt in der Nähe der Wohnung; nur Kamran legt also jeden Tag diesen langen Weg zurück."
+      },
+      {
+       "fa": "ساعت شش و ربع صبح زنگ ساعتش به صدا درمی‌آید.",
+       "tr": "",
+       "de": "Um Viertel nach sechs klingelt sein Wecker."
+      },
+      {
+       "fa": "صبحانه را سریع می‌خورد، دخترش را به سرویس مدرسه می‌سپارد و پیاده تا ایستگاه مترو می‌رود.",
+       "tr": "",
+       "de": "Er frühstückt schnell, bringt seine Tochter zum Schulbus und geht zu Fuß zur U-Bahn-Station."
       }
      ]
     }
@@ -542,6 +1042,26 @@
        "de": "Genau. Später, besonders unter Naser ad-Din Schah, dehnte sich die Stadt aus, und neue Mauern wurden um sie errichtet."
       },
       {
+       "fa": "یوناس: آن دیوارها و دروازه‌ها امروز هنوز وجود دارند؟",
+       "tr": "",
+       "de": "Gibt es diese Mauern und Tore heute noch?"
+      },
+      {
+       "fa": "دکتر صادقی: متأسفانه نه. در دهه‌ی ۱۹۳۰ آنها را خراب کردند تا خیابان‌های پهن بسازند. فقط نام بعضی دروازه‌ها، مثل «دروازه دولت» و «دروازه شمیران»، روی محله‌ها و ایستگاه‌های مترو باقی مانده است.",
+       "tr": "",
+       "de": "Leider nicht. In den 1930er-Jahren wurden sie abgerissen, um breite Straßen anzulegen. Nur die Namen einiger Tore, etwa ‹Darwaze Dowlat› und ‹Darwaze Schemiran›, sind als Namen von Vierteln und U-Bahn-Stationen geblieben."
+      },
+      {
+       "fa": "یوناس: جالب است! پس نقشه‌ی مترو هم یک جور کتاب تاریخ است.",
+       "tr": "",
+       "de": "Interessant! Dann ist der U-Bahn-Plan ja auch eine Art Geschichtsbuch."
+      },
+      {
+       "fa": "دکتر صادقی: می‌شود این‌طور گفت. این نکته را حتما در ارائه‌تان بیاورید.",
+       "tr": "",
+       "de": "So kann man es sagen. Diesen Punkt sollten Sie unbedingt in Ihr Referat aufnehmen."
+      },
+      {
        "fa": "یوناس: کاخ گلستان هم از همان دوره است، درست است؟",
        "tr": "",
        "de": "Der Golestan-Palast stammt auch aus dieser Zeit, richtig?"
@@ -550,6 +1070,21 @@
        "fa": "دکتر صادقی: بخش بزرگی از آن، بله. پیشنهاد می‌کنم قبل از ارائه حتما از آنجا بازدید کنید و چند عکس هم برای اسلایدهایتان بگیرید.",
        "tr": "",
        "de": "Ein großer Teil davon, ja. Ich empfehle Ihnen, ihn vor dem Referat unbedingt zu besichtigen und ein paar Fotos für Ihre Folien zu machen."
+      },
+      {
+       "fa": "یوناس: به نظر شما درباره‌ی ری هم باید چیزی بگویم؟",
+       "tr": "",
+       "de": "Sollte ich Ihrer Meinung nach auch etwas über Rey sagen?"
+      },
+      {
+       "fa": "دکتر صادقی: حتما. ری خیلی قدیمی‌تر از تهران است و بدون آن، تاریخ تهران کامل نیست. در یک اسلاید کوتاه توضیح دهید که چرا مردم بعد از حمله‌ی مغول‌ها به تهران آمدند.",
+       "tr": "",
+       "de": "Auf jeden Fall. Rey ist viel älter als Teheran, und ohne Rey ist Teherans Geschichte unvollständig. Erklären Sie auf einer kurzen Folie, warum die Menschen nach dem Mongoleneinfall nach Teheran kamen."
+      },
+      {
+       "fa": "یوناس: چشم. خیلی ممنون از وقتی که گذاشتید.",
+       "tr": "",
+       "de": "Mache ich. Vielen Dank, dass Sie sich Zeit genommen haben."
       }
      ]
     },
@@ -589,6 +1124,26 @@
        "de": "Genau. Später, besonders unter Naser ad-Din Schah, dehnte sich die Stadt aus, und neue Mauern wurden um sie errichtet."
       },
       {
+       "fa": "یوناس: آن دیوارها و دروازه‌ها امروز هنوز وجود دارند؟",
+       "tr": "",
+       "de": "Gibt es diese Mauern und Tore heute noch?"
+      },
+      {
+       "fa": "دکتر صادقی: متأسفانه نه. در دهه‌ی ۱۹۳۰ آنها را خراب کردند تا خیابان‌های پهن بسازند. فقط نام بعضی دروازه‌ها، مثل «دروازه دولت» و «دروازه شمیران»، روی محله‌ها و ایستگاه‌های مترو باقی مانده است.",
+       "tr": "",
+       "de": "Leider nicht. In den 1930er-Jahren wurden sie abgerissen, um breite Straßen anzulegen. Nur die Namen einiger Tore, etwa ‹Darwaze Dowlat› und ‹Darwaze Schemiran›, sind als Namen von Vierteln und U-Bahn-Stationen geblieben."
+      },
+      {
+       "fa": "یوناس: جالب است! پس نقشه‌ی مترو هم یک جور کتاب تاریخ است.",
+       "tr": "",
+       "de": "Interessant! Dann ist der U-Bahn-Plan ja auch eine Art Geschichtsbuch."
+      },
+      {
+       "fa": "دکتر صادقی: می‌شود این‌طور گفت. این نکته را حتما در ارائه‌تان بیاورید.",
+       "tr": "",
+       "de": "So kann man es sagen. Diesen Punkt sollten Sie unbedingt in Ihr Referat aufnehmen."
+      },
+      {
        "fa": "یوناس: کاخ گلستان هم از همان دوره است، درست است؟",
        "tr": "",
        "de": "Der Golestan-Palast stammt auch aus dieser Zeit, richtig?"
@@ -597,6 +1152,21 @@
        "fa": "دکتر صادقی: بخش بزرگی از آن، بله. پیشنهاد می‌کنم قبل از ارائه حتما از آنجا بازدید کنید و چند عکس هم برای اسلایدهایتان بگیرید.",
        "tr": "",
        "de": "Ein großer Teil davon, ja. Ich empfehle Ihnen, ihn vor dem Referat unbedingt zu besichtigen und ein paar Fotos für Ihre Folien zu machen."
+      },
+      {
+       "fa": "یوناس: به نظر شما درباره‌ی ری هم باید چیزی بگویم؟",
+       "tr": "",
+       "de": "Sollte ich Ihrer Meinung nach auch etwas über Rey sagen?"
+      },
+      {
+       "fa": "دکتر صادقی: حتما. ری خیلی قدیمی‌تر از تهران است و بدون آن، تاریخ تهران کامل نیست. در یک اسلاید کوتاه توضیح دهید که چرا مردم بعد از حمله‌ی مغول‌ها به تهران آمدند.",
+       "tr": "",
+       "de": "Auf jeden Fall. Rey ist viel älter als Teheran, und ohne Rey ist Teherans Geschichte unvollständig. Erklären Sie auf einer kurzen Folie, warum die Menschen nach dem Mongoleneinfall nach Teheran kamen."
+      },
+      {
+       "fa": "یوناس: چشم. خیلی ممنون از وقتی که گذاشتید.",
+       "tr": "",
+       "de": "Mache ich. Vielen Dank, dass Sie sich Zeit genommen haben."
       }
      ]
     },
@@ -614,20 +1184,20 @@
        "richtig": 0
       },
       {
-       "frage": "Wann dehnte sich die Stadt stark aus?",
+       "frage": "Was ist von den alten Stadttoren geblieben?",
        "optionen": [
-        "unter Naser ad-Din Schah",
-        "im Mittelalter",
-        "nach dem Jahr 2000"
+        "ihre Namen, z. B. bei U-Bahn-Stationen",
+        "zwölf vollständige Tore",
+        "nichts, nicht einmal die Namen"
        ],
        "richtig": 0
       },
       {
-       "frage": "Was empfiehlt Dr. Sadeghi?",
+       "frage": "Was soll Jonas auf einer Folie erklären?",
        "optionen": [
-        "den Golestan-Palast zu besichtigen",
-        "nach Schiras zu fahren",
-        "das Thema zu wechseln"
+        "warum die Menschen nach dem Mongoleneinfall nach Teheran kamen",
+        "wie die U-Bahn gebaut wurde",
+        "warum Isfahan Hauptstadt blieb"
        ],
        "richtig": 0
       }
@@ -666,6 +1236,16 @@
        "de": "Als ich jung war, sah ich von genau diesem Balkon jeden Tag den Alborz. Schemiran war damals voller Gärten."
       },
       {
+       "fa": "یوناس: چرا آلودگی در زمستان این‌قدر بدتر است؟",
+       "tr": "",
+       "de": "Warum ist die Luftverschmutzung im Winter so viel schlimmer?"
+      },
+      {
+       "fa": "آقای رحیمی: در زمستان هوای سرد پایین می‌ماند و یک لایه هوای گرم‌تر رویش قرار می‌گیرد. باد هم که نباشد، دود ماشین‌ها جایی برای رفتن ندارد.",
+       "tr": "",
+       "de": "Im Winter bleibt die kalte Luft unten, und eine wärmere Luftschicht legt sich darüber. Und wenn kein Wind weht, können die Autoabgase nirgendwohin."
+      },
+      {
        "fa": "یوناس: به نظر شما چرا شهر این‌قدر بزرگ شد؟",
        "tr": "",
        "de": "Warum ist die Stadt Ihrer Meinung nach so groß geworden?"
@@ -689,6 +1269,26 @@
        "fa": "یوناس: من که با مترو راحتم. اگر فردا هوا بهتر شد، با هم به توچال برویم؟",
        "tr": "",
        "de": "Ich komme mit der U-Bahn gut zurecht. Wenn die Luft morgen besser ist, fahren wir zusammen auf den Tochal?"
+      },
+      {
+       "fa": "آقای رحیمی: با کمال میل! ولی توچال برای من کمی سخت است؛ بیا تا دربند برویم. آنجا هم هوا خوب است و می‌توانیم کنار رودخانه چای بخوریم.",
+       "tr": "",
+       "de": "Sehr gern! Aber der Tochal ist für mich etwas anstrengend; lass uns bis Darband gehen. Dort ist die Luft auch gut, und wir können am Fluss Tee trinken."
+      },
+      {
+       "fa": "یوناس: عالی است. پس اگر هوا خوب بود، فردا ساعت هشت حرکت می‌کنیم.",
+       "tr": "",
+       "de": "Prima. Wenn die Luft gut ist, brechen wir morgen um acht Uhr auf."
+      },
+      {
+       "fa": "آقای رحیمی: قبول. فقط یادت باشد صبح شاخص کیفیت هوا را نگاه کنی.",
+       "tr": "",
+       "de": "Abgemacht. Denk nur daran, morgens den Luftqualitätsindex zu prüfen."
+      },
+      {
+       "fa": "یوناس: حتما. فعلا می‌روم کمی درس بخوانم. روز خوش!",
+       "tr": "",
+       "de": "Mache ich. Jetzt lerne ich erst einmal ein bisschen. Einen schönen Tag!"
       }
      ]
     },
@@ -713,6 +1313,16 @@
        "de": "Als ich jung war, sah ich von genau diesem Balkon jeden Tag den Alborz. Schemiran war damals voller Gärten."
       },
       {
+       "fa": "یوناس: چرا آلودگی در زمستان این‌قدر بدتر است؟",
+       "tr": "",
+       "de": "Warum ist die Luftverschmutzung im Winter so viel schlimmer?"
+      },
+      {
+       "fa": "آقای رحیمی: در زمستان هوای سرد پایین می‌ماند و یک لایه هوای گرم‌تر رویش قرار می‌گیرد. باد هم که نباشد، دود ماشین‌ها جایی برای رفتن ندارد.",
+       "tr": "",
+       "de": "Im Winter bleibt die kalte Luft unten, und eine wärmere Luftschicht legt sich darüber. Und wenn kein Wind weht, können die Autoabgase nirgendwohin."
+      },
+      {
        "fa": "یوناس: به نظر شما چرا شهر این‌قدر بزرگ شد؟",
        "tr": "",
        "de": "Warum ist die Stadt Ihrer Meinung nach so groß geworden?"
@@ -736,6 +1346,26 @@
        "fa": "یوناس: من که با مترو راحتم. اگر فردا هوا بهتر شد، با هم به توچال برویم؟",
        "tr": "",
        "de": "Ich komme mit der U-Bahn gut zurecht. Wenn die Luft morgen besser ist, fahren wir zusammen auf den Tochal?"
+      },
+      {
+       "fa": "آقای رحیمی: با کمال میل! ولی توچال برای من کمی سخت است؛ بیا تا دربند برویم. آنجا هم هوا خوب است و می‌توانیم کنار رودخانه چای بخوریم.",
+       "tr": "",
+       "de": "Sehr gern! Aber der Tochal ist für mich etwas anstrengend; lass uns bis Darband gehen. Dort ist die Luft auch gut, und wir können am Fluss Tee trinken."
+      },
+      {
+       "fa": "یوناس: عالی است. پس اگر هوا خوب بود، فردا ساعت هشت حرکت می‌کنیم.",
+       "tr": "",
+       "de": "Prima. Wenn die Luft gut ist, brechen wir morgen um acht Uhr auf."
+      },
+      {
+       "fa": "آقای رحیمی: قبول. فقط یادت باشد صبح شاخص کیفیت هوا را نگاه کنی.",
+       "tr": "",
+       "de": "Abgemacht. Denk nur daran, morgens den Luftqualitätsindex zu prüfen."
+      },
+      {
+       "fa": "یوناس: حتما. فعلا می‌روم کمی درس بخوانم. روز خوش!",
+       "tr": "",
+       "de": "Mache ich. Jetzt lerne ich erst einmal ein bisschen. Einen schönen Tag!"
       }
      ]
     },
@@ -762,11 +1392,356 @@
        "richtig": 0
       },
       {
-       "frage": "Was ist für Herrn Rahimi das Hauptproblem?",
+       "frage": "Wohin wollen die beiden gehen, wenn die Luft besser ist?",
        "optionen": [
-        "das Privatauto",
-        "die U-Bahn",
-        "die Berge"
+        "nach Darband",
+        "auf den Gipfel des Damawand",
+        "in den Großen Basar"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d3",
+   "titel": "Dialog: Bardia kommt zu Besuch",
+   "vorschau": "Bardia kommt zu Besuch",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Bardia besucht nach längerer Zeit seine Familie in Teheran. Leyla holt ihn vom Flughafen ab.</p>"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "لیلا: بردیا! خوش آمدی! پرواز چطور بود؟",
+       "tr": "",
+       "de": "Bardia! Willkommen! Wie war der Flug?"
+      },
+      {
+       "fa": "بردیا: طولانی، ولی خوب بود. از هامبورگ تا استانبول و بعد تهران. چقدر دلم برای این شهر تنگ شده بود!",
+       "tr": "",
+       "de": "Lang, aber gut. Von Hamburg nach Istanbul und dann nach Teheran. Wie sehr ich diese Stadt vermisst habe!"
+      },
+      {
+       "fa": "لیلا: خوشبختانه امروز باد می‌آید و هوا تمیز است. با مترو برویم یا تاکسی بگیریم؟",
+       "tr": "",
+       "de": "Zum Glück weht heute Wind, und die Luft ist sauber. Fahren wir mit der U-Bahn oder nehmen wir ein Taxi?"
+      },
+      {
+       "fa": "بردیا: مترو تا فرودگاه می‌آید؟ وقتی من رفتم، چنین چیزی نبود.",
+       "tr": "",
+       "de": "Fährt die U-Bahn bis zum Flughafen? Als ich weggegangen bin, gab es das noch nicht."
+      },
+      {
+       "fa": "لیلا: چند سال است که می‌آید. ولی با این چمدان‌ها تاکسی راحت‌تر است. با یک برنامه‌ی گوشی یکی می‌گیرم.",
+       "tr": "",
+       "de": "Seit ein paar Jahren schon. Aber mit diesen Koffern ist ein Taxi bequemer. Ich bestelle eins über eine App."
+      },
+      {
+       "fa": "بردیا: این برج‌های بلند کجاست؟ ده سال پیش اینجا فقط زمین خالی بود.",
+       "tr": "",
+       "de": "Wo sind wir hier, bei diesen hohen Türmen? Vor zehn Jahren war hier nur leeres Land."
+      },
+      {
+       "fa": "لیلا: اینجا غرب تهران است. شهر در این سال‌ها به این سمت گسترش یافته و هزاران آپارتمان تازه ساخته‌اند.",
+       "tr": "",
+       "de": "Das ist der Westen Teherans. Die Stadt hat sich in den letzten Jahren in diese Richtung ausgedehnt, und man hat Tausende neue Wohnungen gebaut."
+      },
+      {
+       "fa": "بردیا: قیمت‌ها چطور است؟ در هامبورگ اجاره‌ها هر سال افزایش می‌یابد.",
+       "tr": "",
+       "de": "Wie sind die Preise? In Hamburg steigen die Mieten jedes Jahr."
+      },
+      {
+       "fa": "لیلا: اینجا هم همین‌طور. بسیاری از جوان‌ها دیگر نمی‌توانند در مرکز یا شمال شهر خانه اجاره کنند و به غرب یا حومه می‌روند.",
+       "tr": "",
+       "de": "Hier genauso. Viele junge Leute können sich im Zentrum oder im Norden keine Wohnung mehr leisten und ziehen in den Westen oder ins Umland."
+      },
+      {
+       "fa": "بردیا: در هامبورگ هم خیلی‌ها به شهرهای اطراف می‌روند و هر روز با قطار رفت‌وآمد می‌کنند.",
+       "tr": "",
+       "de": "In Hamburg ziehen auch viele in die umliegenden Orte und pendeln jeden Tag mit dem Zug."
+      },
+      {
+       "fa": "لیلا: فرقش این است که حمل و نقل عمومی آنجا منظم‌تر است، نه؟",
+       "tr": "",
+       "de": "Der Unterschied ist, dass der öffentliche Nahverkehr dort zuverlässiger ist, oder?"
+      },
+      {
+       "fa": "بردیا: بله، و بیشتر شهر را با دوچرخه هم می‌شود رفت. اینجا با این شیب و این ترافیک، دوچرخه‌سواری سخت است.",
+       "tr": "",
+       "de": "Ja, und den größten Teil der Stadt kann man auch mit dem Fahrrad erreichen. Hier, mit diesem Gefälle und diesem Verkehr, ist Radfahren schwierig."
+      },
+      {
+       "fa": "لیلا: در بعضی محله‌ها مسیر دوچرخه ساخته‌اند، اما هنوز خیلی کم است.",
+       "tr": "",
+       "de": "In manchen Vierteln hat man Radwege gebaut, aber es sind noch sehr wenige."
+      },
+      {
+       "fa": "بردیا: به هر حال، تهران هنوز همان شهر پرانرژی است. اول کجا برویم؟",
+       "tr": "",
+       "de": "Wie auch immer – Teheran ist immer noch dieselbe energiegeladene Stadt. Wohin fahren wir zuerst?"
+      },
+      {
+       "fa": "لیلا: اول خانه! مامان از صبح منتظر توست و برایت قورمه‌سبزی پخته.",
+       "tr": "",
+       "de": "Zuerst nach Hause! Mama wartet seit dem Morgen auf dich und hat dir Ghormeh Sabzi gekocht."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "لیلا: بردیا! خوش آمدی! پرواز چطور بود؟",
+       "tr": "",
+       "de": "Bardia! Willkommen! Wie war der Flug?"
+      },
+      {
+       "fa": "بردیا: طولانی، ولی خوب بود. از هامبورگ تا استانبول و بعد تهران. چقدر دلم برای این شهر تنگ شده بود!",
+       "tr": "",
+       "de": "Lang, aber gut. Von Hamburg nach Istanbul und dann nach Teheran. Wie sehr ich diese Stadt vermisst habe!"
+      },
+      {
+       "fa": "لیلا: خوشبختانه امروز باد می‌آید و هوا تمیز است. با مترو برویم یا تاکسی بگیریم؟",
+       "tr": "",
+       "de": "Zum Glück weht heute Wind, und die Luft ist sauber. Fahren wir mit der U-Bahn oder nehmen wir ein Taxi?"
+      },
+      {
+       "fa": "بردیا: مترو تا فرودگاه می‌آید؟ وقتی من رفتم، چنین چیزی نبود.",
+       "tr": "",
+       "de": "Fährt die U-Bahn bis zum Flughafen? Als ich weggegangen bin, gab es das noch nicht."
+      },
+      {
+       "fa": "لیلا: چند سال است که می‌آید. ولی با این چمدان‌ها تاکسی راحت‌تر است. با یک برنامه‌ی گوشی یکی می‌گیرم.",
+       "tr": "",
+       "de": "Seit ein paar Jahren schon. Aber mit diesen Koffern ist ein Taxi bequemer. Ich bestelle eins über eine App."
+      },
+      {
+       "fa": "بردیا: این برج‌های بلند کجاست؟ ده سال پیش اینجا فقط زمین خالی بود.",
+       "tr": "",
+       "de": "Wo sind wir hier, bei diesen hohen Türmen? Vor zehn Jahren war hier nur leeres Land."
+      },
+      {
+       "fa": "لیلا: اینجا غرب تهران است. شهر در این سال‌ها به این سمت گسترش یافته و هزاران آپارتمان تازه ساخته‌اند.",
+       "tr": "",
+       "de": "Das ist der Westen Teherans. Die Stadt hat sich in den letzten Jahren in diese Richtung ausgedehnt, und man hat Tausende neue Wohnungen gebaut."
+      },
+      {
+       "fa": "بردیا: قیمت‌ها چطور است؟ در هامبورگ اجاره‌ها هر سال افزایش می‌یابد.",
+       "tr": "",
+       "de": "Wie sind die Preise? In Hamburg steigen die Mieten jedes Jahr."
+      },
+      {
+       "fa": "لیلا: اینجا هم همین‌طور. بسیاری از جوان‌ها دیگر نمی‌توانند در مرکز یا شمال شهر خانه اجاره کنند و به غرب یا حومه می‌روند.",
+       "tr": "",
+       "de": "Hier genauso. Viele junge Leute können sich im Zentrum oder im Norden keine Wohnung mehr leisten und ziehen in den Westen oder ins Umland."
+      },
+      {
+       "fa": "بردیا: در هامبورگ هم خیلی‌ها به شهرهای اطراف می‌روند و هر روز با قطار رفت‌وآمد می‌کنند.",
+       "tr": "",
+       "de": "In Hamburg ziehen auch viele in die umliegenden Orte und pendeln jeden Tag mit dem Zug."
+      },
+      {
+       "fa": "لیلا: فرقش این است که حمل و نقل عمومی آنجا منظم‌تر است، نه؟",
+       "tr": "",
+       "de": "Der Unterschied ist, dass der öffentliche Nahverkehr dort zuverlässiger ist, oder?"
+      },
+      {
+       "fa": "بردیا: بله، و بیشتر شهر را با دوچرخه هم می‌شود رفت. اینجا با این شیب و این ترافیک، دوچرخه‌سواری سخت است.",
+       "tr": "",
+       "de": "Ja, und den größten Teil der Stadt kann man auch mit dem Fahrrad erreichen. Hier, mit diesem Gefälle und diesem Verkehr, ist Radfahren schwierig."
+      },
+      {
+       "fa": "لیلا: در بعضی محله‌ها مسیر دوچرخه ساخته‌اند، اما هنوز خیلی کم است.",
+       "tr": "",
+       "de": "In manchen Vierteln hat man Radwege gebaut, aber es sind noch sehr wenige."
+      },
+      {
+       "fa": "بردیا: به هر حال، تهران هنوز همان شهر پرانرژی است. اول کجا برویم؟",
+       "tr": "",
+       "de": "Wie auch immer – Teheran ist immer noch dieselbe energiegeladene Stadt. Wohin fahren wir zuerst?"
+      },
+      {
+       "fa": "لیلا: اول خانه! مامان از صبح منتظر توست و برایت قورمه‌سبزی پخته.",
+       "tr": "",
+       "de": "Zuerst nach Hause! Mama wartet seit dem Morgen auf dich und hat dir Ghormeh Sabzi gekocht."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Wie fahren Leyla und Bardia vom Flughafen?",
+       "optionen": [
+        "mit einem Taxi, über eine App bestellt",
+        "mit der U-Bahn",
+        "mit dem Fahrrad"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was hat sich im Westen Teherans verändert?",
+       "optionen": [
+        "Dort stehen jetzt hohe Wohntürme.",
+        "Dort gibt es jetzt einen großen Basar.",
+        "Dort ist ein neuer Flughafen."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Warum ist Radfahren in Teheran schwierig?",
+       "optionen": [
+        "wegen des Gefälles und des Verkehrs",
+        "weil es verboten ist",
+        "weil es keine Fahrräder zu kaufen gibt"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "a",
+   "titel": "Gut zu wissen",
+   "vorschau": "💡",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Der Azadi-Turm",
+     "text": "Kurzer Infotext – tippe eine Zeile an für die Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "برج آزادی در غرب تهران، در میدانی بزرگ نزدیک فرودگاه مهرآباد قرار دارد.",
+       "tr": "",
+       "de": "Der Azadi-Turm steht im Westen Teherans auf einem großen Platz in der Nähe des Flughafens Mehrabad."
+      },
+      {
+       "fa": "این برج در سال ۱۹۷۱ ساخته گردید و طراح آن، حسین امانت، در آن زمان معمار جوانی بود که در یک مسابقه برنده شد.",
+       "tr": "",
+       "de": "Der Turm wurde 1971 erbaut; sein Entwerfer, Hossein Amanat, war damals ein junger Architekt, der einen Wettbewerb gewonnen hatte."
+      },
+      {
+       "fa": "ارتفاع برج حدود ۴۵ متر است و نمای آن با هزاران قطعه سنگ سفید از اصفهان پوشیده شده است.",
+       "tr": "",
+       "de": "Der Turm ist etwa 45 Meter hoch, und seine Fassade ist mit Tausenden weißen Steinblöcken aus Isfahan verkleidet."
+      },
+      {
+       "fa": "معماری آن عناصری از بناهای کهن ایران را با شکلی مدرن ترکیب می‌کند.",
+       "tr": "",
+       "de": "Seine Architektur verbindet Elemente alter iranischer Bauwerke mit einer modernen Form."
+      },
+      {
+       "fa": "امروز برج آزادی برای بسیاری از ایرانیان نماد تهران است و تصویر آن را روی کارت‌پستال‌ها و کتاب‌های درسی می‌بینیم.",
+       "tr": "",
+       "de": "Heute ist der Azadi-Turm für viele Iraner das Symbol Teherans; man sieht ihn auf Postkarten und in Schulbüchern."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Qanate unter Teheran",
+     "text": "Kurzer Infotext – tippe eine Zeile an für die Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "تا اواسط قرن بیستم، بخش بزرگی از آب تهران از قنات‌ها تأمین می‌شد.",
+       "tr": "",
+       "de": "Bis Mitte des 20. Jahrhunderts wurde ein großer Teil von Teherans Wasser durch Qanate gedeckt."
+      },
+      {
+       "fa": "این کانال‌های زیرزمینی آب را از دامنه‌ی البرز در شمال به سمت جنوب شهر می‌آوردند.",
+       "tr": "",
+       "de": "Diese unterirdischen Kanäle brachten das Wasser vom Hang des Alborz im Norden in Richtung Süden der Stadt."
+      },
+      {
+       "fa": "به گفته‌ی برخی پژوهشگران، محله‌های شمالی به همین دلیل آب تازه‌تر و تمیزتری داشتند و این یکی از دلایل محبوبیت آنها شد.",
+       "tr": "",
+       "de": "Manchen Forschern zufolge hatten die nördlichen Viertel deshalb frischeres und saubereres Wasser, was ein Grund für ihre Beliebtheit wurde."
+      },
+      {
+       "fa": "با ساخته شدن لوله‌کشی آب و سدهایی مانند سد کرج، بیشتر قنات‌ها کنار گذاشته شدند.",
+       "tr": "",
+       "de": "Mit dem Bau von Wasserleitungen und Stauseen wie dem Karadsch-Damm wurden die meisten Qanate aufgegeben."
+      },
+      {
+       "fa": "گفته می‌شود که هنوز چند قنات در شهر فعال است و از آب آنها برای آبیاری فضای سبز استفاده می‌شود.",
+       "tr": "",
+       "de": "Es heißt, dass einige Qanate in der Stadt noch in Betrieb sind und ihr Wasser zur Bewässerung von Grünflächen genutzt wird."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Ein Dorf mit unterirdischen Häusern",
+     "text": "Kurzer Infotext – tippe eine Zeile an für die Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "درباره‌ی ریشه‌ی نام «تهران» نظر قطعی وجود ندارد.",
+       "tr": "",
+       "de": "Über die Herkunft des Namens ‹Teheran› gibt es keine gesicherte Meinung."
+      },
+      {
+       "fa": "یک نظریه آن را به معنی «جای پایین» یا «جای گرم» می‌داند، در برابر «شمیران» که بالاتر و خنک‌تر بود.",
+       "tr": "",
+       "de": "Eine Theorie deutet ihn als ‹tiefer gelegener Ort› oder ‹warmer Ort›, im Gegensatz zu ‹Schemiran›, das höher und kühler lag."
+      },
+      {
+       "fa": "یاقوت حموی، جغرافی‌دان قرن سیزدهم، نوشته است که مردم تهران در خانه‌هایی زیرزمینی زندگی می‌کردند.",
+       "tr": "",
+       "de": "Yaqut al-Hamawi, ein Geograf des 13. Jahrhunderts, schrieb, dass die Bewohner Teherans in unterirdischen Häusern lebten."
+      },
+      {
+       "fa": "به گفته‌ی او، اهالی روستا هنگام خطر در این خانه‌ها پنهان می‌شدند.",
+       "tr": "",
+       "de": "Ihm zufolge versteckten sich die Dorfbewohner bei Gefahr in diesen Häusern."
+      },
+      {
+       "fa": "امروز از آن روستای کوچک چیزی باقی نمانده، اما نامش بر یکی از بزرگ‌ترین شهرهای جهان مانده است.",
+       "tr": "",
+       "de": "Von dem kleinen Dorf ist heute nichts mehr übrig, doch sein Name lebt in einer der größten Städte der Welt fort."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zu den Infotexten",
+     "fragen": [
+      {
+       "frage": "Womit ist die Fassade des Azadi-Turms verkleidet?",
+       "optionen": [
+        "mit weißem Stein aus Isfahan",
+        "mit Glas und Stahl",
+        "mit blauen Fliesen"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Warum hatten die nördlichen Viertel früher besseres Wasser?",
+       "optionen": [
+        "Die Qanate kamen von den Bergen im Norden.",
+        "Dort regnete es jeden Tag.",
+        "Dort gab es einen großen See."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was berichtete der Geograf Yaqut über Teheran?",
+       "optionen": [
+        "Die Menschen lebten in unterirdischen Häusern.",
+        "Teheran war eine große Hauptstadt.",
+        "Teheran hatte zwölf Tore."
        ],
        "richtig": 0
       }
@@ -831,9 +1806,9 @@
      "links": "de",
      "paare": [
       {
-       "fa": "در نتیجه …",
+       "fa": "یکی از مهم‌ترین مشکلات … است.",
        "tr": "",
-       "de": "Folglich …"
+       "de": "Eines der wichtigsten Probleme ist …"
       },
       {
        "fa": "… رو به افزایش است.",
@@ -846,14 +1821,14 @@
        "de": "Andererseits …"
       },
       {
-       "fa": "این در حالی است که …",
-       "tr": "",
-       "de": "Und das, obwohl … / Dabei …"
-      },
-      {
        "fa": "در سال‌های اخیر …",
        "tr": "",
        "de": "In den letzten Jahren …"
+      },
+      {
+       "fa": "در نتیجه …",
+       "tr": "",
+       "de": "Folglich …"
       },
       {
        "fa": "نباید فراموش کرد که …",
@@ -870,49 +1845,9 @@
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
-        "Angesichts …",
-        "… nimmt zu.",
-        "Andererseits …"
-       ],
-       "richtig": 0,
-       "fa": "با توجه به …"
-      },
-      {
-       "frage": "Was bedeutet der Satz?",
-       "optionen": [
-        "… nimmt zu.",
         "Andererseits …",
-        "Folglich …"
-       ],
-       "richtig": 0,
-       "fa": "… رو به افزایش است."
-      },
-      {
-       "frage": "Was bedeutet der Satz?",
-       "optionen": [
-        "Folglich …",
-        "Und das, obwohl … / Dabei …",
-        "Angesichts …"
-       ],
-       "richtig": 0,
-       "fa": "در نتیجه …"
-      },
-      {
-       "frage": "Was bedeutet der Satz?",
-       "optionen": [
-        "Und das, obwohl … / Dabei …",
-        "Andererseits …",
-        "Angesichts …"
-       ],
-       "richtig": 0,
-       "fa": "این در حالی است که …"
-      },
-      {
-       "frage": "Was bedeutet der Satz?",
-       "optionen": [
-        "Andererseits …",
-        "Und das, obwohl … / Dabei …",
-        "… nimmt zu."
+        "Man darf nicht vergessen, dass …",
+        "Und das, obwohl … / Dabei …"
        ],
        "richtig": 0,
        "fa": "از سوی دیگر …"
@@ -921,11 +1856,51 @@
        "frage": "Was bedeutet der Satz?",
        "optionen": [
         "Man darf nicht vergessen, dass …",
-        "In den letzten Jahren …",
-        "Angesichts …"
+        "… nimmt zu.",
+        "Eines der wichtigsten Probleme ist …"
        ],
        "richtig": 0,
        "fa": "نباید فراموش کرد که …"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Und das, obwohl … / Dabei …",
+        "… nimmt zu.",
+        "Man darf nicht vergessen, dass …"
+       ],
+       "richtig": 0,
+       "fa": "این در حالی است که …"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Folglich …",
+        "Und das, obwohl … / Dabei …",
+        "Andererseits …"
+       ],
+       "richtig": 0,
+       "fa": "در نتیجه …"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Angesichts …",
+        "… nimmt zu.",
+        "Eines der wichtigsten Probleme ist …"
+       ],
+       "richtig": 0,
+       "fa": "با توجه به …"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Eines der wichtigsten Probleme ist …",
+        "Und das, obwohl … / Dabei …",
+        "Folglich …"
+       ],
+       "richtig": 0,
+       "fa": "یکی از مهم‌ترین مشکلات … است."
       }
      ]
     },

@@ -12,12 +12,12 @@
     {
      "typ": "info",
      "titel": "Nachrichten lesen: die Sprache der Presse",
-     "text": "<p>Wer sich gut auf Persisch unterhalten kann, scheitert oft trotzdem an einer kurzen Zeitungsmeldung. Der Grund: Die Presse hat ihre eigene Sprache – Schlagzeilen ohne Verb, feste Formeln wie ‹به گزارش …› und besondere Verben für ‹sagen›. Im Sachtext lernst du, wie eine Nachricht aufgebaut ist; grammatisch übst du die Pressewendungen und den Nominalstil.</p><p><b>In dieser Lektion …</b></p><ul><li>den Aufbau einer Nachricht verstehen (Schlagzeile, Lead, umgekehrte Pyramide)</li><li>typische Pressewendungen erkennen (وی، اظهار داشت، افزود، گفتنی است)</li><li>Schlagzeilen ohne Verb in ganze Sätze umwandeln – und umgekehrt</li><li>صورت گرفتن، انجام شدن، به عمل آمدن richtig verwenden</li></ul><p class='klein muted'>Sachtext: „Wie eine Nachricht gebaut ist“ · Wortschatz: 41 Wörter · Grammatik: Pressesprache: وی، اظهار داشت، افزود …</p>"
+     "text": "<p>Wer sich gut auf Persisch unterhalten kann, scheitert oft trotzdem an einer kurzen Zeitungsmeldung. Der Grund: Die Presse hat ihre eigene Sprache – Schlagzeilen ohne Verb, feste Formeln wie ‹به گزارش …› und besondere Verben für ‹sagen›. Im Sachtext lernst du, wie eine Nachricht aufgebaut ist; grammatisch übst du die Pressewendungen und den Nominalstil.</p><p><b>In dieser Lektion …</b></p><ul><li>den Aufbau einer Nachricht verstehen (Schlagzeile, Lead, umgekehrte Pyramide)</li><li>typische Pressewendungen erkennen (وی، اظهار داشت، افزود، گفتنی است)</li><li>Schlagzeilen ohne Verb in ganze Sätze umwandeln – und umgekehrt</li><li>صورت گرفتن، انجام شدن، به عمل آمدن richtig verwenden</li></ul><p class='klein muted'>Sachtext: „Wie eine Nachricht gebaut ist“ · Wortschatz: 53 Wörter · Grammatik: Pressesprache: وی، اظهار داشت، افزود …</p>"
     },
     {
      "typ": "info",
      "titel": "So arbeitest du",
-     "text": "<p>In Fortgeschritten 2 gibt es <b>keine Umschrift</b> mehr – du liest wie Muttersprachler. Tippe ein Wort oder eine Zeile an, um sie zu hören oder die Übersetzung zu sehen.</p><ol><li><b>Lernpfad:</b> Wortschatz, Wortbildung, Grammatik</li><li><b>Texte & Dialoge:</b> der Sachtext, Wortschatz im Kontext, zwei Dialoge, Redemittel und eine Schreibaufgabe</li><li><b>Übungen:</b> Trainingspaket mit „Wer passt zu wem?“</li></ol>",
+     "text": "<p>In Fortgeschritten 2 gibt es <b>keine Umschrift</b> mehr – du liest wie Muttersprachler. Tippe ein Wort oder eine Zeile an, um sie zu hören oder die Übersetzung zu sehen.</p><ol><li><b>Lernpfad:</b> Wortschatz, Wortbildung, Grammatik</li><li><b>Texte & Dialoge:</b> ausführlicher Sachtext, Wortschatz im Kontext, ein Alltagstext, drei Dialoge, Infotexte, Redemittel und eine Schreibaufgabe</li><li><b>Übungen:</b> Trainingspaket mit „Wer passt zu wem?“</li></ol>",
      "stil": "merke"
     }
    ]
@@ -207,7 +207,7 @@
        "frage": "<span class='fa'>بیشتر روزنامه‌ها خبرهای خارجی را از یک ___ می‌گیرند.</span><br><span class='mini'>Die meisten Zeitungen beziehen Auslandsnachrichten von einer Nachrichtenagentur.</span>",
        "optionen": [
         "خبرگزاری",
-        "اظهارات",
+        "معتبر",
         "رسمی"
        ],
        "richtig": 0,
@@ -219,8 +219,8 @@
        "frage": "<span class='fa'>___ این خبر فقط چهار کلمه بود و فعل نداشت.</span><br><span class='mini'>Die Schlagzeile dieser Meldung hatte nur vier Wörter und kein Verb.</span>",
        "optionen": [
         "تیتر",
-        "ایشان",
-        "مسافر"
+        "به گزارش",
+        "بنا بر"
        ],
        "richtig": 0,
        "optFa": true,
@@ -231,8 +231,8 @@
        "frage": "<span class='fa'>___ روزنامه تصمیم گرفت خبر را در صفحه‌ی اول چاپ کند.</span><br><span class='mini'>Der Chefredakteur beschloss, die Meldung auf der ersten Seite zu drucken.</span>",
        "optionen": [
         "سردبیر",
-        "دما",
-        "مسافر"
+        "مسافر",
+        "مطبوعات"
        ],
        "richtig": 0,
        "optFa": true,
@@ -397,16 +397,10 @@
      "links": "de",
      "paare": [
       {
-       "fa": "قهرمانی",
+       "fa": "دستاورد",
        "tr": "",
-       "de": "Meisterschaft, Titel",
-       "emoji": "🥇"
-      },
-      {
-       "fa": "بارش",
-       "tr": "",
-       "de": "Niederschlag",
-       "emoji": "🌧️"
+       "de": "Errungenschaft",
+       "emoji": "🎖️"
       },
       {
        "fa": "رویداد",
@@ -415,22 +409,28 @@
        "emoji": "📅"
       },
       {
-       "fa": "دستاورد",
+       "fa": "افتتاح",
        "tr": "",
-       "de": "Errungenschaft",
-       "emoji": "🎖️"
+       "de": "Eröffnung",
+       "emoji": "✂️"
+      },
+      {
+       "fa": "پیش‌بینی هوا",
+       "tr": "",
+       "de": "Wettervorhersage",
+       "emoji": "🌦️"
+      },
+      {
+       "fa": "قهرمانی",
+       "tr": "",
+       "de": "Meisterschaft, Titel",
+       "emoji": "🥇"
       },
       {
        "fa": "خط مترو",
        "tr": "",
        "de": "U-Bahn-Linie",
        "emoji": "🚇"
-      },
-      {
-       "fa": "تماشاگر",
-       "tr": "",
-       "de": "Zuschauer/in",
-       "emoji": "👀"
       }
      ],
      "titel": "Was bedeutet das?"
@@ -486,7 +486,7 @@
        "frage": "<span class='fa'>امسال بیش از سیصد فیلم به ___ فیلم کوتاه رسیده است.</span><br><span class='mini'>Dieses Jahr sind über dreihundert Filme beim Kurzfilmfestival eingegangen.</span>",
        "optionen": [
         "جشنواره",
-        "خبرنگار",
+        "تیتر",
         "خبرگزاری"
        ],
        "richtig": 0,
@@ -498,8 +498,8 @@
        "frage": "<span class='fa'>از فردا ___ هوا در شمال کشور پایین می‌آید.</span><br><span class='mini'>Ab morgen sinkt die Temperatur im Norden des Landes.</span>",
        "optionen": [
         "دما",
-        "منبع خبری",
-        "بنا بر"
+        "به نقل از",
+        "طبق"
        ],
        "richtig": 0,
        "optFa": true,
@@ -510,8 +510,8 @@
        "frage": "<span class='fa'>___ جدید شرق شهر را به فرودگاه وصل می‌کند.</span><br><span class='mini'>Die neue U-Bahn-Linie verbindet den Osten der Stadt mit dem Flughafen.</span>",
        "optionen": [
         "خط مترو",
-        "مصاحبه",
-        "رسمی"
+        "صفحه‌ی اول",
+        "تحریریه"
        ],
        "richtig": 0,
        "optFa": true,
@@ -522,8 +522,8 @@
        "frage": "<span class='fa'>بیش از بیست هزار ___ این مسابقه را در ورزشگاه دیدند.</span><br><span class='mini'>Über zwanzigtausend Zuschauer sahen das Spiel im Stadion.</span>",
        "optionen": [
         "تماشاگر",
-        "به گزارش",
-        "به نقل از"
+        "مطبوعات",
+        "تحریریه"
        ],
        "richtig": 0,
        "optFa": true,
@@ -682,30 +682,6 @@
      "links": "de",
      "paare": [
       {
-       "fa": "به گزارش",
-       "tr": "",
-       "de": "laut Bericht von",
-       "emoji": "📄"
-      },
-      {
-       "fa": "بنا بر",
-       "tr": "",
-       "de": "aufgrund, gemäß",
-       "emoji": "📌"
-      },
-      {
-       "fa": "رسمی",
-       "tr": "",
-       "de": "offiziell",
-       "emoji": "🏛️"
-      },
-      {
-       "fa": "طبق",
-       "tr": "",
-       "de": "gemäß, laut",
-       "emoji": "⚖️"
-      },
-      {
        "fa": "نامبرده",
        "tr": "",
        "de": "der/die Genannte",
@@ -716,31 +692,12 @@
        "tr": "",
        "de": "Äußerungen",
        "emoji": "💬"
-      }
-     ],
-     "titel": "Was bedeutet das?"
-    },
-    {
-     "typ": "memory",
-     "links": "emoji",
-     "paare": [
+      },
       {
        "fa": "فوری",
        "tr": "",
        "de": "dringend; Eilmeldung",
        "emoji": "🚨"
-      },
-      {
-       "fa": "به گزارش",
-       "tr": "",
-       "de": "laut Bericht von",
-       "emoji": "📄"
-      },
-      {
-       "fa": "به نقل از",
-       "tr": "",
-       "de": "zitiert nach",
-       "emoji": "🔗"
       },
       {
        "fa": "ایشان",
@@ -755,10 +712,53 @@
        "emoji": "📌"
       },
       {
-       "fa": "مطبوعات",
+       "fa": "به گزارش",
        "tr": "",
-       "de": "Presse",
-       "emoji": "📰"
+       "de": "laut Bericht von",
+       "emoji": "📄"
+      }
+     ],
+     "titel": "Was bedeutet das?"
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "به نقل از",
+       "tr": "",
+       "de": "zitiert nach",
+       "emoji": "🔗"
+      },
+      {
+       "fa": "به گزارش",
+       "tr": "",
+       "de": "laut Bericht von",
+       "emoji": "📄"
+      },
+      {
+       "fa": "طبق",
+       "tr": "",
+       "de": "gemäß, laut",
+       "emoji": "⚖️"
+      },
+      {
+       "fa": "اظهارات",
+       "tr": "",
+       "de": "Äußerungen",
+       "emoji": "💬"
+      },
+      {
+       "fa": "ایشان",
+       "tr": "",
+       "de": "er/sie (respektvoll)",
+       "emoji": "🎩"
+      },
+      {
+       "fa": "بنا بر",
+       "tr": "",
+       "de": "aufgrund, gemäß",
+       "emoji": "📌"
       }
      ],
      "titel": "Memory: Bild & Wort"
@@ -771,8 +771,8 @@
        "frage": "<span class='fa'>___ اعلام سازمان هواشناسی، فردا باران می‌بارد.</span><br><span class='mini'>Laut Mitteilung des Wetterdienstes regnet es morgen.</span>",
        "optionen": [
         "طبق",
-        "جشنواره",
-        "گزارش"
+        "خبرگزاری",
+        "مسافر"
        ],
        "richtig": 0,
        "optFa": true,
@@ -838,6 +838,297 @@
    ]
   },
   {
+   "id": "w3",
+   "titel": "Zeitung & Redaktion",
+   "vorschau": "سرمقاله · یادداشت · ستون",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "🗞️ Zeitung & Redaktion (1)",
+     "text": "<p>Tippe ein Wort an, um es zu hören und die Bedeutung zu sehen.</p>",
+     "beispiele": [
+      {
+       "fa": "سرمقاله",
+       "tr": "",
+       "de": "Leitartikel",
+       "emoji": "🖋️"
+      },
+      {
+       "fa": "یادداشت",
+       "tr": "",
+       "de": "Kommentar; Notiz",
+       "emoji": "🗒️"
+      },
+      {
+       "fa": "ستون",
+       "tr": "",
+       "de": "Kolumne; Spalte",
+       "emoji": "🏛️"
+      },
+      {
+       "fa": "صفحه‌ی اول",
+       "tr": "",
+       "de": "Titelseite",
+       "emoji": "1️⃣"
+      },
+      {
+       "fa": "عکاس",
+       "tr": "",
+       "de": "Fotograf/in",
+       "emoji": "📷"
+      },
+      {
+       "fa": "ویراستار",
+       "tr": "",
+       "de": "Lektor/in",
+       "emoji": "✏️"
+      }
+     ]
+    },
+    {
+     "typ": "info",
+     "titel": "🗞️ Zeitung & Redaktion (2)",
+     "text": "<p>Tippe ein Wort an, um es zu hören und die Bedeutung zu sehen.</p>",
+     "beispiele": [
+      {
+       "fa": "تحریریه",
+       "tr": "",
+       "de": "Redaktion",
+       "emoji": "🏢"
+      },
+      {
+       "fa": "شایعه",
+       "tr": "",
+       "de": "Gerücht",
+       "emoji": "🙊"
+      },
+      {
+       "fa": "خبرنامه",
+       "tr": "",
+       "de": "Newsletter",
+       "emoji": "📧"
+      },
+      {
+       "fa": "زیرنویس",
+       "tr": "",
+       "de": "Bildunterschrift; Untertitel",
+       "emoji": "🔤"
+      },
+      {
+       "fa": "بی‌طرف",
+       "tr": "",
+       "de": "neutral, unparteiisch",
+       "emoji": "⚖️"
+      },
+      {
+       "fa": "معتبر",
+       "tr": "",
+       "de": "glaubwürdig, zuverlässig",
+       "emoji": "✅"
+      }
+     ]
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "زیرنویس",
+       "tr": "",
+       "de": "Bildunterschrift; Untertitel",
+       "emoji": "🔤"
+      },
+      {
+       "fa": "تحریریه",
+       "tr": "",
+       "de": "Redaktion",
+       "emoji": "🏢"
+      },
+      {
+       "fa": "سرمقاله",
+       "tr": "",
+       "de": "Leitartikel",
+       "emoji": "🖋️"
+      },
+      {
+       "fa": "ستون",
+       "tr": "",
+       "de": "Kolumne; Spalte",
+       "emoji": "🏛️"
+      },
+      {
+       "fa": "صفحه‌ی اول",
+       "tr": "",
+       "de": "Titelseite",
+       "emoji": "1️⃣"
+      },
+      {
+       "fa": "بی‌طرف",
+       "tr": "",
+       "de": "neutral, unparteiisch",
+       "emoji": "⚖️"
+      }
+     ],
+     "titel": "Was bedeutet das?"
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "بی‌طرف",
+       "tr": "",
+       "de": "neutral, unparteiisch",
+       "emoji": "⚖️"
+      },
+      {
+       "fa": "شایعه",
+       "tr": "",
+       "de": "Gerücht",
+       "emoji": "🙊"
+      },
+      {
+       "fa": "ویراستار",
+       "tr": "",
+       "de": "Lektor/in",
+       "emoji": "✏️"
+      },
+      {
+       "fa": "سرمقاله",
+       "tr": "",
+       "de": "Leitartikel",
+       "emoji": "🖋️"
+      },
+      {
+       "fa": "زیرنویس",
+       "tr": "",
+       "de": "Bildunterschrift; Untertitel",
+       "emoji": "🔤"
+      },
+      {
+       "fa": "صفحه‌ی اول",
+       "tr": "",
+       "de": "Titelseite",
+       "emoji": "1️⃣"
+      }
+     ],
+     "titel": "Memory: Bild & Wort"
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>پیش از انتشار، ___ همه‌ی متن‌ها را از نظر املایی و دستوری می‌خواند.</span><br><span class='mini'>Vor der Veröffentlichung liest die Lektorin alle Texte auf Rechtschreibung und Grammatik.</span>",
+       "optionen": [
+        "ویراستار",
+        "بنا بر",
+        "رسانه"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>پیش از انتشار، ویراستار همه‌ی متن‌ها را از نظر املایی و دستوری می‌خواند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>هر روز ساعت نه صبح جلسه‌ی ___ برگزار می‌شود.</span><br><span class='mini'>Jeden Tag um neun Uhr morgens findet die Redaktionssitzung statt.</span>",
+       "optionen": [
+        "تحریریه",
+        "اظهارات",
+        "وی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>هر روز ساعت نه صبح جلسه‌ی تحریریه برگزار می‌شود.</span>"
+      },
+      {
+       "frage": "<span class='fa'>یک خبرنگار خوب باید در خبر ___ بماند و نظر شخصی‌اش را ننویسد.</span><br><span class='mini'>Ein guter Reporter muss in der Meldung neutral bleiben und seine persönliche Meinung nicht schreiben.</span>",
+       "optionen": [
+        "بی‌طرف",
+        "خبرگزاری",
+        "اظهارات"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>یک خبرنگار خوب باید در خبر بی‌طرف بماند و نظر شخصی‌اش را ننویسد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>این خبر فقط یک ___ بود و هیچ منبع روشنی نداشت.</span><br><span class='mini'>Diese Nachricht war nur ein Gerücht und hatte keine klare Quelle.</span>",
+       "optionen": [
+        "شایعه",
+        "سخنگو",
+        "لید"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>این خبر فقط یک شایعه بود و هیچ منبع روشنی نداشت.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Zeitung & Redaktion",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 45,
+     "ziel": 10,
+     "woerter": [
+      {
+       "fa": "سرمقاله",
+       "a": "Leitartikel"
+      },
+      {
+       "fa": "یادداشت",
+       "a": "Kommentar; Notiz"
+      },
+      {
+       "fa": "ستون",
+       "a": "Kolumne; Spalte"
+      },
+      {
+       "fa": "صفحه‌ی اول",
+       "a": "Titelseite"
+      },
+      {
+       "fa": "عکاس",
+       "a": "Fotograf/in"
+      },
+      {
+       "fa": "ویراستار",
+       "a": "Lektor/in"
+      },
+      {
+       "fa": "تحریریه",
+       "a": "Redaktion"
+      },
+      {
+       "fa": "شایعه",
+       "a": "Gerücht"
+      },
+      {
+       "fa": "خبرنامه",
+       "a": "Newsletter"
+      },
+      {
+       "fa": "زیرنویس",
+       "a": "Bildunterschrift; Untertitel"
+      },
+      {
+       "fa": "بی‌طرف",
+       "a": "neutral, unparteiisch"
+      },
+      {
+       "fa": "معتبر",
+       "a": "glaubwürdig, zuverlässig"
+      }
+     ]
+    }
+   ]
+  },
+  {
    "id": "v",
    "titel": "Verben & Ausdrücke",
    "vorschau": "منتشر کردن · اعلام کردن · گزارش دادن",
@@ -890,22 +1181,16 @@
      "links": "de",
      "paare": [
       {
-       "fa": "صورت گرفتن",
-       "tr": "",
-       "de": "erfolgen, durchgeführt werden",
-       "emoji": "✅"
-      },
-      {
        "fa": "اعلام کردن",
        "tr": "",
        "de": "bekanntgeben",
        "emoji": "📣"
       },
       {
-       "fa": "برگزار شدن",
+       "fa": "پوشش دادن",
        "tr": "",
-       "de": "stattfinden, veranstaltet werden",
-       "emoji": "🎪"
+       "de": "berichten über (medial abdecken)",
+       "emoji": "🎥"
       },
       {
        "fa": "گزارش دادن",
@@ -914,16 +1199,22 @@
        "emoji": "📝"
       },
       {
+       "fa": "برگزار شدن",
+       "tr": "",
+       "de": "stattfinden, veranstaltet werden",
+       "emoji": "🎪"
+      },
+      {
        "fa": "منتشر کردن",
        "tr": "",
        "de": "veröffentlichen",
        "emoji": "📤"
       },
       {
-       "fa": "پوشش دادن",
+       "fa": "صورت گرفتن",
        "tr": "",
-       "de": "berichten über (medial abdecken)",
-       "emoji": "🎥"
+       "de": "erfolgen, durchgeführt werden",
+       "emoji": "✅"
       }
      ],
      "titel": "Was bedeutet das?"
@@ -1077,6 +1368,54 @@
        "a": "dringend; Eilmeldung"
       },
       {
+       "fa": "سرمقاله",
+       "a": "Leitartikel"
+      },
+      {
+       "fa": "یادداشت",
+       "a": "Kommentar; Notiz"
+      },
+      {
+       "fa": "ستون",
+       "a": "Kolumne; Spalte"
+      },
+      {
+       "fa": "صفحه‌ی اول",
+       "a": "Titelseite"
+      },
+      {
+       "fa": "عکاس",
+       "a": "Fotograf/in"
+      },
+      {
+       "fa": "ویراستار",
+       "a": "Lektor/in"
+      },
+      {
+       "fa": "تحریریه",
+       "a": "Redaktion"
+      },
+      {
+       "fa": "شایعه",
+       "a": "Gerücht"
+      },
+      {
+       "fa": "خبرنامه",
+       "a": "Newsletter"
+      },
+      {
+       "fa": "زیرنویس",
+       "a": "Bildunterschrift; Untertitel"
+      },
+      {
+       "fa": "بی‌طرف",
+       "a": "neutral, unparteiisch"
+      },
+      {
+       "fa": "معتبر",
+       "a": "glaubwürdig, zuverlässig"
+      },
+      {
        "fa": "منتشر کردن",
        "a": "veröffentlichen"
       },
@@ -1112,7 +1451,7 @@
     {
      "typ": "info",
      "titel": "Gleiche Bedeutung – anderes Wort",
-     "text": "<p>Gehobene Texte wechseln gern zwischen <b>persischen</b> und <b>arabischstämmigen</b> Wörtern gleicher Bedeutung. Lerne sie paarweise:</p><ul><li><span class='fa'>وی</span> = <span class='fa'>او</span> – er/sie</li><li><span class='fa'>اظهار داشتن</span> = <span class='fa'>گفتن</span> – sagen, erklären</li><li><span class='fa'>افزودن</span> = <span class='fa'>اضافه کردن</span> – hinzufügen</li><li><span class='fa'>رویداد</span> = <span class='fa'>اتفاق</span> – Ereignis</li><li><span class='fa'>آغاز</span> = <span class='fa'>شروع</span> – Beginn</li><li><span class='fa'>نخستین</span> = <span class='fa'>اولین</span> – erste/r</li></ul>",
+     "text": "<p>Gehobene Texte wechseln gern zwischen <b>persischen</b> und <b>arabischstämmigen</b> Wörtern gleicher Bedeutung. Lerne sie paarweise:</p><ul><li><span class='fa'>وی</span> = <span class='fa'>او</span> – er/sie</li><li><span class='fa'>اظهار داشتن</span> = <span class='fa'>گفتن</span> – sagen, erklären</li><li><span class='fa'>افزودن</span> = <span class='fa'>اضافه کردن</span> – hinzufügen</li><li><span class='fa'>رویداد</span> = <span class='fa'>اتفاق</span> – Ereignis</li><li><span class='fa'>آغاز</span> = <span class='fa'>شروع</span> – Beginn</li><li><span class='fa'>نخستین</span> = <span class='fa'>اولین</span> – erste/r</li><li><span class='fa'>خاطرنشان کرد</span> = <span class='fa'>یادآور شد</span> – wies darauf hin</li><li><span class='fa'>روز گذشته</span> = <span class='fa'>دیروز</span> – gestern</li><li><span class='fa'>سال جاری</span> = <span class='fa'>امسال</span> – dieses Jahr</li><li><span class='fa'>شمار</span> = <span class='fa'>تعداد</span> – Anzahl</li></ul>",
      "stil": "merke"
     },
     {
@@ -1126,10 +1465,16 @@
        "x": "اولین"
       },
       {
-       "fa": "اظهار داشتن",
+       "fa": "وی",
        "tr": "",
-       "de": "sagen, erklären",
-       "x": "گفتن"
+       "de": "er/sie",
+       "x": "او"
+      },
+      {
+       "fa": "سال جاری",
+       "tr": "",
+       "de": "dieses Jahr",
+       "x": "امسال"
       },
       {
        "fa": "آغاز",
@@ -1138,22 +1483,16 @@
        "x": "شروع"
       },
       {
-       "fa": "وی",
+       "fa": "روز گذشته",
        "tr": "",
-       "de": "er/sie",
-       "x": "او"
+       "de": "gestern",
+       "x": "دیروز"
       },
       {
-       "fa": "افزودن",
+       "fa": "اظهار داشتن",
        "tr": "",
-       "de": "hinzufügen",
-       "x": "اضافه کردن"
-      },
-      {
-       "fa": "رویداد",
-       "tr": "",
-       "de": "Ereignis",
-       "x": "اتفاق"
+       "de": "sagen, erklären",
+       "x": "گفتن"
       }
      ],
      "titel": "Finde das Synonym"
@@ -1161,23 +1500,17 @@
     {
      "typ": "info",
      "titel": "Gegensätze",
-     "text": "<ul><li><span class='fa'>افزایش</span> ↔ <span class='fa'>کاهش</span> – Anstieg ↔ Rückgang</li><li><span class='fa'>آغاز</span> ↔ <span class='fa'>پایان</span> – Beginn ↔ Ende</li><li><span class='fa'>افتتاح</span> ↔ <span class='fa'>تعطیلی</span> – Eröffnung ↔ Schließung</li><li><span class='fa'>داخلی</span> ↔ <span class='fa'>خارجی</span> – Inland ↔ Ausland</li></ul>"
+     "text": "<ul><li><span class='fa'>افزایش</span> ↔ <span class='fa'>کاهش</span> – Anstieg ↔ Rückgang</li><li><span class='fa'>آغاز</span> ↔ <span class='fa'>پایان</span> – Beginn ↔ Ende</li><li><span class='fa'>افتتاح</span> ↔ <span class='fa'>تعطیلی</span> – Eröffnung ↔ Schließung</li><li><span class='fa'>داخلی</span> ↔ <span class='fa'>خارجی</span> – Inland ↔ Ausland</li><li><span class='fa'>معتبر</span> ↔ <span class='fa'>نامعتبر</span> – glaubwürdig ↔ unglaubwürdig</li><li><span class='fa'>تأیید</span> ↔ <span class='fa'>تکذیب</span> – Bestätigung ↔ Dementi</li></ul>"
     },
     {
      "typ": "paare",
      "links": "x",
      "paare": [
       {
-       "fa": "آغاز",
+       "fa": "معتبر",
        "tr": "",
-       "de": "Beginn ↔ Ende",
-       "x": "پایان"
-      },
-      {
-       "fa": "داخلی",
-       "tr": "",
-       "de": "Inland ↔ Ausland",
-       "x": "خارجی"
+       "de": "glaubwürdig ↔ unglaubwürdig",
+       "x": "نامعتبر"
       },
       {
        "fa": "افزایش",
@@ -1186,10 +1519,28 @@
        "x": "کاهش"
       },
       {
+       "fa": "آغاز",
+       "tr": "",
+       "de": "Beginn ↔ Ende",
+       "x": "پایان"
+      },
+      {
        "fa": "افتتاح",
        "tr": "",
        "de": "Eröffnung ↔ Schließung",
        "x": "تعطیلی"
+      },
+      {
+       "fa": "داخلی",
+       "tr": "",
+       "de": "Inland ↔ Ausland",
+       "x": "خارجی"
+      },
+      {
+       "fa": "تأیید",
+       "tr": "",
+       "de": "Bestätigung ↔ Dementi",
+       "x": "تکذیب"
       }
      ],
      "titel": "Finde das Gegenteil"
@@ -1199,22 +1550,22 @@
      "titel": "Synonym-Quiz",
      "fragen": [
       {
-       "frage": "Synonym von <span class='fa'>نخستین</span>?",
+       "frage": "Synonym von <span class='fa'>اظهار داشتن</span>?",
        "optionen": [
-        "اولین",
-        "او",
-        "اتفاق"
+        "گفتن",
+        "دیروز",
+        "یادآور شد"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false
       },
       {
-       "frage": "Synonym von <span class='fa'>رویداد</span>?",
+       "frage": "Synonym von <span class='fa'>روز گذشته</span>?",
        "optionen": [
+        "دیروز",
         "اتفاق",
-        "اضافه کردن",
-        "او"
+        "تعداد"
        ],
        "richtig": 0,
        "optFa": true,
@@ -1224,19 +1575,8 @@
        "frage": "Synonym von <span class='fa'>افزودن</span>?",
        "optionen": [
         "اضافه کردن",
-        "او",
-        "شروع"
-       ],
-       "richtig": 0,
-       "optFa": true,
-       "hoeren": false
-      },
-      {
-       "frage": "Synonym von <span class='fa'>اظهار داشتن</span>?",
-       "optionen": [
-        "گفتن",
-        "اولین",
-        "اضافه کردن"
+        "شروع",
+        "اولین"
        ],
        "richtig": 0,
        "optFa": true,
@@ -1246,8 +1586,19 @@
        "frage": "Synonym von <span class='fa'>آغاز</span>?",
        "optionen": [
         "شروع",
+        "گفتن",
+        "امسال"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "Synonym von <span class='fa'>رویداد</span>?",
+       "optionen": [
         "اتفاق",
-        "اولین"
+        "اولین",
+        "گفتن"
        ],
        "richtig": 0,
        "optFa": true,
@@ -1320,19 +1671,24 @@
      "links": "de",
      "paare": [
       {
+       "fa": "وی افزود: قطارها هر پنج دقیقه حرکت می‌کنند.",
+       "tr": "",
+       "de": "Er fügte hinzu: Die Züge fahren alle fünf Minuten."
+      },
+      {
        "fa": "گفتنی است این جشنواره تا پنجشنبه ادامه دارد.",
        "tr": "",
        "de": "Es sei erwähnt, dass das Festival bis Donnerstag dauert."
       },
       {
-       "fa": "بنا بر این گزارش، شمار تماشاگران دو برابر شده است.",
+       "fa": "طبق اعلام هواشناسی، از فردا باران می‌بارد.",
        "tr": "",
-       "de": "Diesem Bericht zufolge hat sich die Zahl der Zuschauer verdoppelt."
+       "de": "Laut Mitteilung des Wetterdienstes regnet es ab morgen."
       },
       {
-       "fa": "مدیر مترو اظهار داشت: خط جدید هفته‌ی آینده افتتاح می‌شود.",
+       "fa": "به گزارش خبرگزاری‌ها، جشنواره‌ی فیلم امروز آغاز می‌شود.",
        "tr": "",
-       "de": "Der U-Bahn-Direktor erklärte: Die neue Linie wird nächste Woche eröffnet."
+       "de": "Laut Agenturberichten beginnt das Filmfestival heute."
       },
       {
        "fa": "نامبرده تصریح کرد که بلیت‌ها گران نمی‌شوند.",
@@ -1340,14 +1696,9 @@
        "de": "Der Genannte stellte klar, dass die Fahrkarten nicht teurer werden."
       },
       {
-       "fa": "ایشان در مصاحبه با روزنامه‌ی ما از برنامه‌های تازه گفتند.",
+       "fa": "بنا بر این گزارش، شمار تماشاگران دو برابر شده است.",
        "tr": "",
-       "de": "Er/Sie sprach im Interview mit unserer Zeitung über die neuen Pläne."
-      },
-      {
-       "fa": "طبق اعلام هواشناسی، از فردا باران می‌بارد.",
-       "tr": "",
-       "de": "Laut Mitteilung des Wetterdienstes regnet es ab morgen."
+       "de": "Diesem Bericht zufolge hat sich die Zahl der Zuschauer verdoppelt."
       }
      ],
      "titel": "Was bedeutet der Satz?"
@@ -1477,7 +1828,7 @@
         "می‌شود"
        ],
        "extra": [
-        "شمار"
+        "ایشان"
        ]
       },
       {
@@ -1494,7 +1845,7 @@
         "می‌بارد"
        ],
        "extra": [
-        "آینده"
+        "جشنواره"
        ]
       },
       {
@@ -1514,7 +1865,7 @@
         "می‌شود"
        ],
        "extra": [
-        "اعلام"
+        "آغاز"
        ]
       },
       {
@@ -1532,7 +1883,7 @@
         "می‌کنند"
        ],
        "extra": [
-        "مدیر"
+        "فیلم"
        ]
       },
       {
@@ -1549,7 +1900,7 @@
         "نمی‌شوند"
        ],
        "extra": [
-        "قطارها"
+        "می‌بارد."
        ]
       }
      ]
@@ -1711,24 +2062,24 @@
      "links": "de",
      "paare": [
       {
-       "fa": "کشف گونه‌ی تازه‌ای از گیاهان در کویر",
-       "tr": "",
-       "de": "Entdeckung einer neuen Pflanzenart in der Wüste"
-      },
-      {
-       "fa": "آزمایش‌های اولیه با موفقیت انجام شد.",
-       "tr": "",
-       "de": "Die ersten Tests wurden erfolgreich durchgeführt."
-      },
-      {
-       "fa": "در پایان مراسم از برندگان تقدیر به عمل آمد.",
-       "tr": "",
-       "de": "Am Ende der Feier wurden die Gewinner geehrt."
-      },
-      {
        "fa": "افتتاح خط جدید مترو در شرق تهران",
        "tr": "",
        "de": "Eröffnung einer neuen U-Bahn-Linie im Osten Teherans"
+      },
+      {
+       "fa": "کاهش دمای هوا از فردا",
+       "tr": "",
+       "de": "Temperaturrückgang ab morgen"
+      },
+      {
+       "fa": "آغاز جشنواره‌ی فیلم کوتاه در شیراز",
+       "tr": "",
+       "de": "Beginn des Kurzfilmfestivals in Schiras"
+      },
+      {
+       "fa": "کشف گونه‌ی تازه‌ای از گیاهان در کویر",
+       "tr": "",
+       "de": "Entdeckung einer neuen Pflanzenart in der Wüste"
       },
       {
        "fa": "بازدید از ایستگاه‌های جدید دیروز صورت گرفت.",
@@ -1736,9 +2087,9 @@
        "de": "Die Besichtigung der neuen Stationen erfolgte gestern."
       },
       {
-       "fa": "آغاز جشنواره‌ی فیلم کوتاه در شیراز",
+       "fa": "قهرمانی تیم والیبال دانشگاه تبریز",
        "tr": "",
-       "de": "Beginn des Kurzfilmfestivals in Schiras"
+       "de": "Meistertitel für das Volleyballteam der Universität Täbris"
       }
      ],
      "titel": "Was bedeutet der Satz?"
@@ -1867,7 +2218,7 @@
         "تهران"
        ],
        "extra": [
-        "ایستگاه‌های"
+        "فیلم"
        ]
       },
       {
@@ -1882,7 +2233,7 @@
         "فردا"
        ],
        "extra": [
-        "تبریز"
+        "پایان"
        ]
       },
       {
@@ -1898,7 +2249,7 @@
         "شیراز"
        ],
        "extra": [
-        "خط"
+        "گرفت."
        ]
       },
       {
@@ -1915,7 +2266,7 @@
         "کویر"
        ],
        "extra": [
-        "مترو"
+        "شیراز"
        ]
       },
       {
@@ -1930,7 +2281,7 @@
         "تبریز"
        ],
        "extra": [
-        "با"
+        "موفقیت"
        ]
       }
      ]
@@ -2050,33 +2401,11 @@
        "hoeren": false
       },
       {
-       "frage": "Welches Verb ist am <b>förmlichsten</b>?",
+       "frage": "Pressewort für <span class='fa'>او</span>:",
        "optionen": [
-        "به عمل آمد",
-        "شد",
-        "کردند"
-       ],
-       "richtig": 0,
-       "optFa": true,
-       "hoeren": false
-      },
-      {
-       "frage": "„laut Mitteilung von …“",
-       "optionen": [
-        "طبق اعلام",
-        "با اعلامیه‌ی",
-        "در اعلام"
-       ],
-       "richtig": 0,
-       "optFa": true,
-       "hoeren": false
-      },
-      {
-       "frage": "Schlagzeile zu <span class='fa'>خط جدید مترو افتتاح شد.</span>",
-       "optionen": [
-        "افتتاح خط جدید مترو",
-        "خط مترو افتتاحی",
-        "افتتاح شد خط مترو"
+        "وی",
+        "آن",
+        "این‌ها"
        ],
        "richtig": 0,
        "optFa": true,
@@ -2088,6 +2417,28 @@
         "گفتنی است",
         "به گزارش",
         "اظهار داشت"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "Satz zu <span class='fa'>کاهش دمای هوا</span>",
+       "optionen": [
+        "دمای هوا کاهش می‌یابد.",
+        "کاهش‌های هوا دما است.",
+        "دمای کاهش هوا است."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "Schlagzeile zu <span class='fa'>خط جدید مترو افتتاح شد.</span>",
+       "optionen": [
+        "افتتاح خط جدید مترو",
+        "خط مترو افتتاحی",
+        "افتتاح شد خط مترو"
        ],
        "richtig": 0,
        "optFa": true,
@@ -2111,43 +2462,10 @@
      "titel": "Was bedeutet der Satz?",
      "fragen": [
       {
-       "frage": "„Er/Sie sprach im Interview mit unserer Zeitung über die neuen Pläne.“",
+       "frage": "„Die ersten Tests wurden erfolgreich durchgeführt.“",
        "optionen": [
-        "ایشان در مصاحبه با روزنامه‌ی ما از برنامه‌های تازه گفتند.",
         "آزمایش‌های اولیه با موفقیت انجام شد.",
-        "کاهش دمای هوا از فردا"
-       ],
-       "richtig": 0,
-       "optFa": true,
-       "hoeren": false
-      },
-      {
-       "frage": "„Laut Mitteilung des Wetterdienstes regnet es ab morgen.“",
-       "optionen": [
-        "طبق اعلام هواشناسی، از فردا باران می‌بارد.",
-        "به گزارش خبرگزاری‌ها، جشنواره‌ی فیلم امروز آغاز می‌شود.",
-        "گفتنی است این جشنواره تا پنجشنبه ادامه دارد."
-       ],
-       "richtig": 0,
-       "optFa": true,
-       "hoeren": false
-      },
-      {
-       "frage": "„Der U-Bahn-Direktor erklärte: Die neue Linie wird nächste Woche eröffnet.“",
-       "optionen": [
-        "مدیر مترو اظهار داشت: خط جدید هفته‌ی آینده افتتاح می‌شود.",
-        "بازدید از ایستگاه‌های جدید دیروز صورت گرفت.",
-        "نامبرده تصریح کرد که بلیت‌ها گران نمی‌شوند."
-       ],
-       "richtig": 0,
-       "optFa": true,
-       "hoeren": false
-      },
-      {
-       "frage": "„Eröffnung einer neuen U-Bahn-Linie im Osten Teherans“",
-       "optionen": [
-        "افتتاح خط جدید مترو در شرق تهران",
-        "وی افزود: قطارها هر پنج دقیقه حرکت می‌کنند.",
+        "ایشان در مصاحبه با روزنامه‌ی ما از برنامه‌های تازه گفتند.",
         "کشف گونه‌ی تازه‌ای از گیاهان در کویر"
        ],
        "richtig": 0,
@@ -2155,11 +2473,11 @@
        "hoeren": false
       },
       {
-       "frage": "„Laut Agenturberichten beginnt das Filmfestival heute.“",
+       "frage": "„Der Genannte stellte klar, dass die Fahrkarten nicht teurer werden.“",
        "optionen": [
-        "به گزارش خبرگزاری‌ها، جشنواره‌ی فیلم امروز آغاز می‌شود.",
-        "در پایان مراسم از برندگان تقدیر به عمل آمد.",
-        "مدیر مترو اظهار داشت: خط جدید هفته‌ی آینده افتتاح می‌شود."
+        "نامبرده تصریح کرد که بلیت‌ها گران نمی‌شوند.",
+        "کاهش دمای هوا از فردا",
+        "به گزارش خبرگزاری‌ها، جشنواره‌ی فیلم امروز آغاز می‌شود."
        ],
        "richtig": 0,
        "optFa": true,
@@ -2169,8 +2487,41 @@
        "frage": "„Meistertitel für das Volleyballteam der Universität Täbris“",
        "optionen": [
         "قهرمانی تیم والیبال دانشگاه تبریز",
-        "ایشان در مصاحبه با روزنامه‌ی ما از برنامه‌های تازه گفتند.",
-        "گفتنی است این جشنواره تا پنجشنبه ادامه دارد."
+        "بازدید از ایستگاه‌های جدید دیروز صورت گرفت.",
+        "مدیر مترو اظهار داشت: خط جدید هفته‌ی آینده افتتاح می‌شود."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Diesem Bericht zufolge hat sich die Zahl der Zuschauer verdoppelt.“",
+       "optionen": [
+        "بنا بر این گزارش، شمار تماشاگران دو برابر شده است.",
+        "آزمایش‌های اولیه با موفقیت انجام شد.",
+        "قهرمانی تیم والیبال دانشگاه تبریز"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Entdeckung einer neuen Pflanzenart in der Wüste“",
+       "optionen": [
+        "کشف گونه‌ی تازه‌ای از گیاهان در کویر",
+        "وی افزود: قطارها هر پنج دقیقه حرکت می‌کنند.",
+        "نامبرده تصریح کرد که بلیت‌ها گران نمی‌شوند."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Der U-Bahn-Direktor erklärte: Die neue Linie wird nächste Woche eröffnet.“",
+       "optionen": [
+        "مدیر مترو اظهار داشت: خط جدید هفته‌ی آینده افتتاح می‌شود.",
+        "گفتنی است این جشنواره تا پنجشنبه ادامه دارد.",
+        "وی افزود: قطارها هر پنج دقیقه حرکت می‌کنند."
        ],
        "richtig": 0,
        "optFa": true,
@@ -2185,62 +2536,62 @@
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
-        "Es sei erwähnt, dass das Festival bis Donnerstag dauert.",
         "Meistertitel für das Volleyballteam der Universität Täbris",
-        "Laut Agenturberichten beginnt das Filmfestival heute."
-       ],
-       "richtig": 0,
-       "fa": "گفتنی است این جشنواره تا پنجشنبه ادامه دارد."
-      },
-      {
-       "frage": "Was bedeutet der Satz?",
-       "optionen": [
-        "Diesem Bericht zufolge hat sich die Zahl der Zuschauer verdoppelt.",
-        "Die Besichtigung der neuen Stationen erfolgte gestern.",
-        "Er fügte hinzu: Die Züge fahren alle fünf Minuten."
-       ],
-       "richtig": 0,
-       "fa": "بنا بر این گزارش، شمار تماشاگران دو برابر شده است."
-      },
-      {
-       "frage": "Was bedeutet der Satz?",
-       "optionen": [
-        "Beginn des Kurzfilmfestivals in Schiras",
-        "Entdeckung einer neuen Pflanzenart in der Wüste",
-        "Die ersten Tests wurden erfolgreich durchgeführt."
-       ],
-       "richtig": 0,
-       "fa": "آغاز جشنواره‌ی فیلم کوتاه در شیراز"
-      },
-      {
-       "frage": "Was bedeutet der Satz?",
-       "optionen": [
         "Eröffnung einer neuen U-Bahn-Linie im Osten Teherans",
-        "Es sei erwähnt, dass das Festival bis Donnerstag dauert.",
-        "Temperaturrückgang ab morgen"
+        "Er/Sie sprach im Interview mit unserer Zeitung über die neuen Pläne."
        ],
        "richtig": 0,
-       "fa": "افتتاح خط جدید مترو در شرق تهران"
+       "fa": "قهرمانی تیم والیبال دانشگاه تبریز"
       },
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
-        "Laut Agenturberichten beginnt das Filmfestival heute.",
-        "Am Ende der Feier wurden die Gewinner geehrt.",
+        "Er/Sie sprach im Interview mit unserer Zeitung über die neuen Pläne.",
+        "Meistertitel für das Volleyballteam der Universität Täbris",
         "Es sei erwähnt, dass das Festival bis Donnerstag dauert."
        ],
        "richtig": 0,
-       "fa": "به گزارش خبرگزاری‌ها، جشنواره‌ی فیلم امروز آغاز می‌شود."
+       "fa": "ایشان در مصاحبه با روزنامه‌ی ما از برنامه‌های تازه گفتند."
       },
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
+        "Er fügte hinzu: Die Züge fahren alle fünf Minuten.",
         "Laut Mitteilung des Wetterdienstes regnet es ab morgen.",
-        "Eröffnung einer neuen U-Bahn-Linie im Osten Teherans",
-        "Diesem Bericht zufolge hat sich die Zahl der Zuschauer verdoppelt."
+        "Der Genannte stellte klar, dass die Fahrkarten nicht teurer werden."
        ],
        "richtig": 0,
-       "fa": "طبق اعلام هواشناسی، از فردا باران می‌بارد."
+       "fa": "وی افزود: قطارها هر پنج دقیقه حرکت می‌کنند."
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Die Besichtigung der neuen Stationen erfolgte gestern.",
+        "Laut Mitteilung des Wetterdienstes regnet es ab morgen.",
+        "Der U-Bahn-Direktor erklärte: Die neue Linie wird nächste Woche eröffnet."
+       ],
+       "richtig": 0,
+       "fa": "بازدید از ایستگاه‌های جدید دیروز صورت گرفت."
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Entdeckung einer neuen Pflanzenart in der Wüste",
+        "Temperaturrückgang ab morgen",
+        "Es sei erwähnt, dass das Festival bis Donnerstag dauert."
+       ],
+       "richtig": 0,
+       "fa": "کشف گونه‌ی تازه‌ای از گیاهان در کویر"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Die ersten Tests wurden erfolgreich durchgeführt.",
+        "Er fügte hinzu: Die Züge fahren alle fünf Minuten.",
+        "Am Ende der Feier wurden die Gewinner geehrt."
+       ],
+       "richtig": 0,
+       "fa": "آزمایش‌های اولیه با موفقیت انجام شد."
       }
      ]
     },
@@ -2391,6 +2742,54 @@
       {
        "fa": "فوری",
        "a": "dringend; Eilmeldung"
+      },
+      {
+       "fa": "سرمقاله",
+       "a": "Leitartikel"
+      },
+      {
+       "fa": "یادداشت",
+       "a": "Kommentar; Notiz"
+      },
+      {
+       "fa": "ستون",
+       "a": "Kolumne; Spalte"
+      },
+      {
+       "fa": "صفحه‌ی اول",
+       "a": "Titelseite"
+      },
+      {
+       "fa": "عکاس",
+       "a": "Fotograf/in"
+      },
+      {
+       "fa": "ویراستار",
+       "a": "Lektor/in"
+      },
+      {
+       "fa": "تحریریه",
+       "a": "Redaktion"
+      },
+      {
+       "fa": "شایعه",
+       "a": "Gerücht"
+      },
+      {
+       "fa": "خبرنامه",
+       "a": "Newsletter"
+      },
+      {
+       "fa": "زیرنویس",
+       "a": "Bildunterschrift; Untertitel"
+      },
+      {
+       "fa": "بی‌طرف",
+       "a": "neutral, unparteiisch"
+      },
+      {
+       "fa": "معتبر",
+       "a": "glaubwürdig, zuverlässig"
       },
       {
        "fa": "منتشر کردن",

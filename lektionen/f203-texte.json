@@ -2,7 +2,7 @@
  "id": "tx",
  "art": "texte",
  "titel": "Sachtext & Dialoge",
- "beschreibung": "Sachtext, Wortschatz im Kontext, zwei Dialoge, Redemittel und Schreibaufgabe.",
+ "beschreibung": "Sachtext, Wortschatz im Kontext, Alltagstext, drei Dialoge, Infotexte, Redemittel und Schreibaufgabe.",
  "stationen": [
   {
    "id": "t1",
@@ -12,7 +12,7 @@
     {
      "typ": "info",
      "titel": "Neue Wörter im Text",
-     "text": "<p><span class='fa'>جزیره</span> – Insel · <span class='fa'>قطع کردن</span> – kreuzen, durchschneiden · <span class='fa'>محل برخورد</span> – Kreuzungspunkt · <span class='fa'>ملایم</span> – sanft, leicht · <span class='fa'>معطر</span> – duftend · <span class='fa'>گرد و غبار</span> – Staub · <span class='fa'>گیاه‌شناسی</span> – Botanik · <span class='fa'>الگو</span> – Muster, Vorbild · <span class='fa'>پیروی کردن</span> – folgen</p>",
+     "text": "<p><span class='fa'>فلات</span> – Hochland, Plateau · <span class='fa'>جزیره</span> – Insel · <span class='fa'>باستان‌شناس</span> – Archäologe/Archäologin · <span class='fa'>بقایا</span> – Überreste · <span class='fa'>قطع کردن</span> – kreuzen, durchschneiden · <span class='fa'>محل برخورد</span> – Kreuzungspunkt · <span class='fa'>مقنی</span> – Qanatbauer · <span class='fa'>ملایم</span> – sanft, leicht · <span class='fa'>تبخیر شدن</span> – verdunsten · <span class='fa'>مرطوب</span> – feucht · <span class='fa'>پایداری</span> – Beständigkeit · <span class='fa'>معطر</span> – duftend · <span class='fa'>گرد و غبار</span> – Staub · <span class='fa'>پلکانی</span> – terrassenförmig · <span class='fa'>بادگیر</span> – Windturm · <span class='fa'>الگو</span> – Muster · <span class='fa'>تاریخ‌نگار</span> – Geschichtsschreiber/in · <span class='fa'>چالش</span> – Herausforderung</p>",
      "stil": "merke"
     },
     {
@@ -26,14 +26,29 @@
        "de": "In einem Land, das überwiegend trocken und wüstenhaft ist, hatte der Garten schon immer eine besondere Bedeutung."
       },
       {
+       "fa": "بخش بزرگی از فلات ایران سالانه کمتر از سیصد میلی‌متر باران دارد و تابستان‌های آن گرم و طولانی است.",
+       "tr": "",
+       "de": "Ein großer Teil des iranischen Hochlands erhält jährlich weniger als dreihundert Millimeter Niederschlag, und die Sommer sind heiß und lang."
+      },
+      {
        "fa": "ایرانیان از دوران باستان در دل بیابان باغ‌هایی ساختند که مانند جزیره‌هایی سبز در میان خاک و سنگ بودند.",
        "tr": "",
        "de": "Schon seit der Antike legten die Iraner mitten in der Wüste Gärten an, die wie grüne Inseln zwischen Erde und Stein lagen."
       },
       {
+       "fa": "این باغ‌ها فقط جایی برای کاشتن درخت و گل نبودند؛ محل استراحت، پذیرایی از مهمانان و گاهی حتی محل حکومت بودند.",
+       "tr": "",
+       "de": "Diese Gärten waren nicht nur Orte zum Pflanzen von Bäumen und Blumen; sie dienten der Erholung, dem Empfang von Gästen und manchmal sogar als Regierungssitz."
+      },
+      {
        "fa": "قدیمی‌ترین نمونه‌ی شناخته‌شده‌ی باغ ایرانی در پاسارگاد، پایتخت کوروش هخامنشی، پیدا شده است.",
        "tr": "",
        "de": "Das älteste bekannte Beispiel eines persischen Gartens wurde in Pasargadae gefunden, der Hauptstadt des Achämeniden Kyros."
+      },
+      {
+       "fa": "باستان‌شناسان در آنجا بقایای جوی‌های سنگی را یافته‌اند که حدود دو هزار و پانصد سال پیش آب را در باغ شاهی جاری می‌کردند.",
+       "tr": "",
+       "de": "Archäologen fanden dort Reste steinerner Wasserrinnen, die vor rund zweieinhalbtausend Jahren das Wasser durch den königlichen Garten leiteten."
       },
       {
        "fa": "طرح اصلی باغ ایرانی «چهارباغ» نام دارد.",
@@ -56,6 +71,16 @@
        "de": "Ordnung und Symmetrie gehören zu den wichtigsten Merkmalen dieser Gärten: Alles auf der einen Seite der Hauptachse wiederholt sich auf der anderen."
       },
       {
+       "fa": "بسیاری از باغ‌ها یک محور طولانی دارند که از در ورودی شروع می‌شود و نگاه بازدیدکننده را به سوی کوشک اصلی می‌برد.",
+       "tr": "",
+       "de": "Viele Gärten haben eine lange Achse, die am Eingangstor beginnt und den Blick des Besuchers zum Hauptpavillon lenkt."
+      },
+      {
+       "fa": "طراحان باغ معمولا کوشک را در بلندترین نقطه یا در انتهای این محور می‌ساختند تا از آنجا تمام باغ دیده شود.",
+       "tr": "",
+       "de": "Die Gartengestalter errichteten den Pavillon meist am höchsten Punkt oder am Ende dieser Achse, damit man von dort den ganzen Garten überblicken konnte."
+      },
+      {
        "fa": "اما بدون آب هیچ باغی وجود نداشت.",
        "tr": "",
        "de": "Doch ohne Wasser hätte es keinen einzigen Garten gegeben."
@@ -66,14 +91,44 @@
        "de": "Das Wasser kam oft über einen Qanat – unterirdische Kanäle – von fernen Bergen in den Garten."
       },
       {
+       "fa": "برخی قنات‌ها ده‌ها کیلومتر طول دارند و ساختن آنها گاهی سال‌ها کار گروهی از مقنی‌ها را لازم داشت.",
+       "tr": "",
+       "de": "Manche Qanate sind Dutzende Kilometer lang, und ihr Bau erforderte manchmal jahrelange Arbeit einer Gruppe von Qanatbauern."
+      },
+      {
+       "fa": "مقنی‌ها با ابزارهای ساده کار می‌کردند و این حرفه‌ی دشوار اغلب از پدر به پسر می‌رسید.",
+       "tr": "",
+       "de": "Die Qanatbauer arbeiteten mit einfachen Werkzeugen, und dieser schwere Beruf wurde oft vom Vater an den Sohn weitergegeben."
+      },
+      {
+       "fa": "یونسکو در سال ۲۰۱۶ یازده قنات ایرانی را نیز در فهرست میراث جهانی ثبت کرد.",
+       "tr": "",
+       "de": "2016 trug die UNESCO auch elf iranische Qanate in die Welterbeliste ein."
+      },
+      {
        "fa": "در باغ، آب با شیب ملایمی در جوی‌ها جریان دارد و صدای آن آرامش خاصی ایجاد می‌کند.",
        "tr": "",
        "de": "Im Garten fließt das Wasser mit leichtem Gefälle durch die Rinnen, und sein Rauschen schafft eine besondere Ruhe."
       },
       {
+       "fa": "حوض‌ها هم فقط برای زیبایی نیستند: آبی که از سطح آنها تبخیر می‌شود، هوای اطراف را خنک‌تر و مرطوب‌تر می‌کند.",
+       "tr": "",
+       "de": "Auch die Becken dienen nicht nur der Schönheit: Das Wasser, das von ihrer Oberfläche verdunstet, macht die Luft ringsum kühler und feuchter."
+      },
+      {
        "fa": "درختان بلند مثل سرو و چنار سایه می‌اندازند و هوا را خنک نگه می‌دارند.",
        "tr": "",
        "de": "Hohe Bäume wie Zypressen und Platanen spenden Schatten und halten die Luft kühl."
+      },
+      {
+       "fa": "سرو، که در همه‌ی فصل‌ها سبز می‌ماند، در هنر ایرانی نماد زندگی و پایداری است و نقش آن را روی فرش‌ها و کاشی‌ها هم می‌بینیم.",
+       "tr": "",
+       "de": "Die Zypresse, die zu jeder Jahreszeit grün bleibt, ist in der iranischen Kunst ein Symbol für Leben und Beständigkeit; ihr Motiv sieht man auch auf Teppichen und Fliesen."
+      },
+      {
+       "fa": "در کنار درختان سایه‌دار، درختان میوه مانند انار، سیب و زردآلو هم کاشته می‌شد تا باغ محصول هم داشته باشد.",
+       "tr": "",
+       "de": "Neben den Schattenbäumen pflanzte man auch Obstbäume wie Granatapfel, Apfel und Aprikose, damit der Garten auch Ertrag brachte."
       },
       {
        "fa": "گل سرخ، درختان نارنج و بوته‌های معطر هم عطر باغ را کامل می‌کنند.",
@@ -86,9 +141,14 @@
        "de": "Eine hohe Mauer umschließt den ganzen Garten, damit Staub und der heiße Wüstenwind nicht eindringen."
       },
       {
-       "fa": "یکی از معروف‌ترین نمونه‌ها باغ فین در کاشان است که در دوره‌ی صفوی ساخته گردید.",
+       "fa": "به این ترتیب، درون دیوار هوایی به وجود می‌آید که در تابستان چند درجه خنک‌تر از بیرون است.",
        "tr": "",
-       "de": "Eines der berühmtesten Beispiele ist der Fin-Garten in Kaschan, der in der Safawidenzeit angelegt wurde."
+       "de": "So entsteht innerhalb der Mauer ein Klima, das im Sommer einige Grad kühler ist als draußen."
+      },
+      {
+       "fa": "یکی از معروف‌ترین نمونه‌ها باغ فین در کاشان است که شکل امروزی آن در دوره‌ی صفوی ساخته گردید.",
+       "tr": "",
+       "de": "Eines der berühmtesten Beispiele ist der Fin-Garten in Kaschan, dessen heutige Form in der Safawidenzeit angelegt wurde."
       },
       {
        "fa": "آب این باغ از یک چشمه‌ی طبیعی می‌آید و آن‌قدر فشار دارد که فواره‌ها بدون موتور کار می‌کنند.",
@@ -106,14 +166,34 @@
        "de": "Heute gehört dieser Garten der Universität Schiras und dient auch als botanischer Garten."
       },
       {
+       "fa": "در شیراز باغ‌های دیگری هم هست؛ نام «نارنجستان قوام» نشان می‌دهد که این باغ پر از درختان نارنج است، زیرا پسوند «ستان» به جایی اشاره دارد که چیزی در آن فراوان است.",
+       "tr": "",
+       "de": "In Schiras gibt es noch weitere Gärten; der Name ‹Narendschestan-e Ghavam› zeigt, dass dieser Garten voller Bitterorangenbäume ist, denn das Suffix ‹-estan› bezeichnet einen Ort, an dem etwas reichlich vorhanden ist."
+      },
+      {
+       "fa": "در اصفهان، کوشک چهلستون کنار حوضی طولانی ساخته شده است؛ ایوان آن بیست ستون چوبی دارد، اما چون تصویر ستون‌ها در آب حوض دیده می‌شود، بنا را «چهلستون» نامیدند.",
+       "tr": "",
+       "de": "In Isfahan steht der Pavillon Tschehel Sotun an einem langen Becken; sein Iwan hat zwanzig Holzsäulen, doch weil sich die Säulen im Wasser spiegeln, nannte man das Gebäude ‹Vierzig Säulen›."
+      },
+      {
+       "fa": "باغ شاهزاده در نزدیکی ماهان، در استان کرمان، به شکل پلکانی روی یک شیب ساخته شده و آب از طبقه‌ای به طبقه‌ی دیگر می‌ریزد.",
+       "tr": "",
+       "de": "Der Schahzadeh-Garten bei Mahan in der Provinz Kerman ist terrassenförmig an einem Hang angelegt, und das Wasser fällt von Stufe zu Stufe."
+      },
+      {
+       "fa": "در باغ دولت‌آباد یزد هم بادگیری بلند، که از بلندترین بادگیرهای جهان به شمار می‌رود، باد خنک را به درون کوشک می‌برد.",
+       "tr": "",
+       "de": "Im Dowlatabad-Garten in Yazd leitet ein hoher Windturm, der zu den höchsten Windtürmen der Welt zählt, kühlen Wind in den Pavillon."
+      },
+      {
        "fa": "در سال ۲۰۱۱، یونسکو ۹ باغ ایرانی را با هم به نام «باغ ایرانی» در فهرست میراث جهانی ثبت کرد.",
        "tr": "",
        "de": "2011 trug die UNESCO neun iranische Gärten gemeinsam unter dem Namen ‹Der persische Garten› in die Welterbeliste ein."
       },
       {
-       "fa": "باغ فین و باغ ارم هم جزو این فهرست هستند.",
+       "fa": "باغ فین، باغ ارم، چهلستون، باغ شاهزاده و باغ دولت‌آباد هم جزو این فهرست هستند.",
        "tr": "",
-       "de": "Auch der Fin-Garten und der Eram-Garten gehören dazu."
+       "de": "Auch der Fin-Garten, der Eram-Garten, Tschehel Sotun, der Schahzadeh-Garten und der Dowlatabad-Garten gehören dazu."
       },
       {
        "fa": "باغ ایرانی بر معماری باغ در کشورهای دیگر هم تأثیر گذاشته است؛ برای مثال، باغ تاج محل در هند از همین الگو پیروی می‌کند.",
@@ -121,9 +201,19 @@
        "de": "Der persische Garten hat auch die Gartenkunst anderer Länder beeinflusst; der Garten des Taj Mahal in Indien zum Beispiel folgt demselben Muster."
       },
       {
+       "fa": "در دوره‌ی گورکانیان هند، باغ‌های بسیاری در لاهور و کشمیر نیز به همین سبک ساخته شد.",
+       "tr": "",
+       "de": "Unter den Mogulherrschern Indiens wurden auch in Lahore und Kaschmir viele Gärten in diesem Stil angelegt."
+      },
+      {
        "fa": "جالب است که واژه‌ی «پردیس» هم سفر درازی کرده است.",
        "tr": "",
        "de": "Interessant ist, dass auch das Wort ‹pardis› eine lange Reise hinter sich hat."
+      },
+      {
+       "fa": "گزنفون، تاریخ‌نگار یونانی، از باغ‌های بزرگ و محصور فرمانروایان ایرانی با همین واژه یاد کرده است.",
+       "tr": "",
+       "de": "Der griechische Geschichtsschreiber Xenophon bezeichnete die großen, ummauerten Gärten iranischer Herrscher mit eben diesem Wort."
       },
       {
        "fa": "این واژه از ایرانی باستان به یونانی رفت و از آنجا به بسیاری از زبان‌های اروپایی رسید؛ واژه‌ی آلمانی «پارادیس» هم از همین ریشه است.",
@@ -136,9 +226,19 @@
        "de": "Seine ursprüngliche Bedeutung war schlicht: ‹ein Stück Land, um das man eine Mauer gezogen hat› – also genau der umfriedete Garten."
       },
       {
-       "fa": "شاید به همین دلیل است که بسیاری از ایرانیان هنوز هم در روزهای تعطیل، زیر سایه‌ی درختان یک باغ، دنبال کمی آرامش می‌گردند.",
+       "fa": "امروز در بسیاری از شهرها باغ‌های قدیمی جای خود را به ساختمان‌ها داده‌اند و حفظ باغ‌های باقی‌مانده به یک چالش تبدیل شده است.",
        "tr": "",
-       "de": "Vielleicht suchen deshalb viele Iraner auch heute noch an freien Tagen im Schatten der Bäume eines Gartens ein wenig Ruhe."
+       "de": "Heute haben in vielen Städten alte Gärten Gebäuden Platz gemacht, und die Erhaltung der verbliebenen Gärten ist zu einer Herausforderung geworden."
+      },
+      {
+       "fa": "با این حال، بسیاری از ایرانیان هنوز هم در روزهای تعطیل، به‌ویژه در روز سیزده‌بدر، به باغ‌ها و دشت‌ها می‌روند.",
+       "tr": "",
+       "de": "Dennoch gehen viele Iraner an freien Tagen, besonders am Tag Sizdah Bedar, noch immer in Gärten und hinaus ins Grüne."
+      },
+      {
+       "fa": "شاید به همین دلیل است که باغ، با سایه‌ی درختان و صدای آب، هنوز هم برای بسیاری از ایرانیان تصویری از آرامش است.",
+       "tr": "",
+       "de": "Vielleicht ist der Garten deshalb mit dem Schatten seiner Bäume und dem Rauschen des Wassers für viele Iraner noch immer ein Bild der Ruhe."
       }
      ]
     },
@@ -173,6 +273,16 @@
         "richtig",
         "falsch"
        ],
+       "richtig": 0,
+       "fa": "حوض‌ها هوای اطراف را خنک‌تر و مرطوب‌تر می‌کنند.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
        "richtig": 1,
        "fa": "فواره‌های باغ فین با موتور کار می‌کنند.",
        "fest": true,
@@ -187,6 +297,17 @@
        "richtig": 0,
        "fa": "باغ ارم امروز در اختیار دانشگاه شیراز است.",
        "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "ایوان چهلستون واقعا چهل ستون چوبی دارد.",
+       "fest": true,
+       "erkl": "Es sind <b>zwanzig</b> – die übrigen zwanzig sind ihr Spiegelbild im Becken."
       },
       {
        "frage": "Richtig oder falsch?",
@@ -234,11 +355,20 @@
        "richtig": 0
       },
       {
-       "frage": "Welche Bäume spenden Schatten?",
+       "frage": "Wofür steht die Zypresse in der iranischen Kunst?",
        "optionen": [
-        "Zypressen und Platanen",
-        "Palmen und Birken",
-        "Mandel- und Apfelbäume"
+        "für Leben und Beständigkeit",
+        "für Reichtum",
+        "für den Winter"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was ist das Besondere am Schahzadeh-Garten?",
+       "optionen": [
+        "Er ist terrassenförmig an einem Hang angelegt.",
+        "Er liegt direkt am Meer.",
+        "Er hat keine Mauer."
        ],
        "richtig": 0
       },
@@ -268,9 +398,19 @@
      "frage": "Bring die Sätze in die Reihenfolge des Textes.",
      "items": [
       {
+       "fa": "بخش بزرگی از فلات ایران سالانه کمتر از سیصد میلی‌متر باران دارد و تابستان‌های آن گرم و طولانی است.",
+       "tr": "",
+       "de": "Ein großer Teil des iranischen Hochlands erhält jährlich weniger als dreihundert Millimeter Niederschlag, und die Sommer sind heiß und lang."
+      },
+      {
        "fa": "ایرانیان از دوران باستان در دل بیابان باغ‌هایی ساختند که مانند جزیره‌هایی سبز در میان خاک و سنگ بودند.",
        "tr": "",
        "de": "Schon seit der Antike legten die Iraner mitten in der Wüste Gärten an, die wie grüne Inseln zwischen Erde und Stein lagen."
+      },
+      {
+       "fa": "این باغ‌ها فقط جایی برای کاشتن درخت و گل نبودند؛ محل استراحت، پذیرایی از مهمانان و گاهی حتی محل حکومت بودند.",
+       "tr": "",
+       "de": "Diese Gärten waren nicht nur Orte zum Pflanzen von Bäumen und Blumen; sie dienten der Erholung, dem Empfang von Gästen und manchmal sogar als Regierungssitz."
       },
       {
        "fa": "قدیمی‌ترین نمونه‌ی شناخته‌شده‌ی باغ ایرانی در پاسارگاد، پایتخت کوروش هخامنشی، پیدا شده است.",
@@ -278,24 +418,14 @@
        "de": "Das älteste bekannte Beispiel eines persischen Gartens wurde in Pasargadae gefunden, der Hauptstadt des Achämeniden Kyros."
       },
       {
+       "fa": "باستان‌شناسان در آنجا بقایای جوی‌های سنگی را یافته‌اند که حدود دو هزار و پانصد سال پیش آب را در باغ شاهی جاری می‌کردند.",
+       "tr": "",
+       "de": "Archäologen fanden dort Reste steinerner Wasserrinnen, die vor rund zweieinhalbtausend Jahren das Wasser durch den königlichen Garten leiteten."
+      },
+      {
        "fa": "طرح اصلی باغ ایرانی «چهارباغ» نام دارد.",
        "tr": "",
        "de": "Der Grundplan des persischen Gartens heißt ‹Tschahar Bagh› (Vier-Garten)."
-      },
-      {
-       "fa": "در این طرح، دو جوی آب یکدیگر را در مرکز باغ قطع می‌کنند و زمین را به چهار بخش تقسیم می‌کنند.",
-       "tr": "",
-       "de": "Bei diesem Plan kreuzen sich zwei Wasserrinnen in der Mitte des Gartens und teilen das Gelände in vier Teile."
-      },
-      {
-       "fa": "در محل برخورد آنها معمولا یک حوض یا یک کوشک قرار دارد.",
-       "tr": "",
-       "de": "An ihrem Kreuzungspunkt liegt meist ein Wasserbecken oder ein Pavillon."
-      },
-      {
-       "fa": "نظم و تقارن از ویژگی‌های مهم این باغ‌هاست: هر چیزی که در یک طرف محور اصلی است، در طرف دیگر هم تکرار می‌شود.",
-       "tr": "",
-       "de": "Ordnung und Symmetrie gehören zu den wichtigsten Merkmalen dieser Gärten: Alles auf der einen Seite der Hauptachse wiederholt sich auf der anderen."
       }
      ]
     }
@@ -314,8 +444,8 @@
        "frage": "<span class='fa'>در سرزمینی که بیشتر آن خشک و بیابانی است، ___ همیشه معنایی ویژه داشته است.</span><br><span class='mini'>In einem Land, das überwiegend trocken und wüstenhaft ist, hatte der Garten schon immer eine besondere Bedeutung.</span>",
        "optionen": [
         "باغ",
-        "محصور",
-        "کوشک"
+        "خنکی",
+        "جوی"
        ],
        "richtig": 0,
        "optFa": true,
@@ -326,8 +456,8 @@
        "frage": "<span class='fa'>ایرانیان از دوران باستان در دل ___ باغ‌هایی ساختند که مانند جزیره‌هایی سبز در میان خاک و سنگ بودند.</span><br><span class='mini'>Schon seit der Antike legten die Iraner mitten in der Wüste Gärten an, die wie grüne Inseln zwischen Erde und Stein lagen.</span>",
        "optionen": [
         "بیابان",
-        "عطر",
-        "ایوان"
+        "چنار",
+        "بذر"
        ],
        "richtig": 0,
        "optFa": true,
@@ -338,8 +468,8 @@
        "frage": "<span class='fa'>قدیمی‌ترین نمونه‌ی شناخته‌شده‌ی ___ ایرانی در پاسارگاد، پایتخت کوروش هخامنشی، پیدا شده است.</span><br><span class='mini'>Das älteste bekannte Beispiel eines persischen Gartens wurde in Pasargadae gefunden, der Hauptstadt des Achämeniden Kyros.</span>",
        "optionen": [
         "باغ",
-        "کاشی",
-        "نظم"
+        "چشمه",
+        "دیوار"
        ],
        "richtig": 0,
        "optFa": true,
@@ -347,11 +477,23 @@
        "erkl": "<span class='fa'>قدیمی‌ترین نمونه‌ی شناخته‌شده‌ی باغ ایرانی در پاسارگاد، پایتخت کوروش هخامنشی، پیدا شده است.</span>"
       },
       {
+       "frage": "<span class='fa'>باستان‌شناسان در آنجا بقایای جوی‌های سنگی را یافته‌اند که حدود دو هزار و پانصد سال پیش آب را در ___ شاهی جاری می‌کردند.</span><br><span class='mini'>Archäologen fanden dort Reste steinerner Wasserrinnen, die vor rund zweieinhalbtausend Jahren das Wasser durch den königlichen Garten leiteten.</span>",
+       "optionen": [
+        "باغ",
+        "تقارن",
+        "چنار"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>باستان‌شناسان در آنجا بقایای جوی‌های سنگی را یافته‌اند که حدود دو هزار و پانصد سال پیش آب را در باغ شاهی جاری می‌کردند.</span>"
+      },
+      {
        "frage": "<span class='fa'>طرح اصلی ___ ایرانی «چهارباغ» نام دارد.</span><br><span class='mini'>Der Grundplan des persischen Gartens heißt ‹Tschahar Bagh› (Vier-Garten).</span>",
        "optionen": [
         "باغ",
-        "شکوفه",
-        "محصور"
+        "باغبان",
+        "چنار"
        ],
        "richtig": 0,
        "optFa": true,
@@ -359,28 +501,16 @@
        "erkl": "<span class='fa'>طرح اصلی باغ ایرانی «چهارباغ» نام دارد.</span>"
       },
       {
-       "frage": "<span class='fa'>در این طرح، دو جوی آب یکدیگر را در مرکز ___ قطع می‌کنند و زمین را به چهار بخش تقسیم می‌کنند.</span><br><span class='mini'>Bei diesem Plan kreuzen sich zwei Wasserrinnen in der Mitte des Gartens und teilen das Gelände in vier Teile.</span>",
+       "frage": "<span class='fa'>در این طرح، دو ___ آب یکدیگر را در مرکز باغ قطع می‌کنند و زمین را به چهار بخش تقسیم می‌کنند.</span><br><span class='mini'>Bei diesem Plan kreuzen sich zwei Wasserrinnen in der Mitte des Gartens und teilen das Gelände in vier Teile.</span>",
        "optionen": [
-        "باغ",
-        "نارنج",
-        "کوشک"
+        "جوی",
+        "قنات",
+        "خاک"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
        "erkl": "<span class='fa'>در این طرح، دو جوی آب یکدیگر را در مرکز باغ قطع می‌کنند و زمین را به چهار بخش تقسیم می‌کنند.</span>"
-      },
-      {
-       "frage": "<span class='fa'>در محل برخورد آنها معمولا یک حوض یا یک ___ قرار دارد.</span><br><span class='mini'>An ihrem Kreuzungspunkt liegt meist ein Wasserbecken oder ein Pavillon.</span>",
-       "optionen": [
-        "کوشک",
-        "بیابان",
-        "جوی"
-       ],
-       "richtig": 0,
-       "optFa": true,
-       "hoeren": false,
-       "erkl": "<span class='fa'>در محل برخورد آنها معمولا یک حوض یا یک کوشک قرار دارد.</span>"
       }
      ]
     },
@@ -389,11 +519,23 @@
      "titel": "Welches Wort fehlt im Text?",
      "fragen": [
       {
+       "frage": "<span class='fa'>در محل برخورد آنها معمولا یک حوض یا یک ___ قرار دارد.</span><br><span class='mini'>An ihrem Kreuzungspunkt liegt meist ein Wasserbecken oder ein Pavillon.</span>",
+       "optionen": [
+        "کوشک",
+        "منظره",
+        "باغبان"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>در محل برخورد آنها معمولا یک حوض یا یک کوشک قرار دارد.</span>"
+      },
+      {
        "frage": "<span class='fa'>نظم و ___ از ویژگی‌های مهم این باغ‌هاست: هر چیزی که در یک طرف محور اصلی است، در طرف دیگر هم تکرار می‌شود.</span><br><span class='mini'>Ordnung und Symmetrie gehören zu den wichtigsten Merkmalen dieser Gärten: Alles auf der einen Seite der Hauptachse wiederholt sich auf der anderen.</span>",
        "optionen": [
         "تقارن",
         "سایه",
-        "سرو"
+        "گلاب"
        ],
        "richtig": 0,
        "optFa": true,
@@ -401,11 +543,35 @@
        "erkl": "<span class='fa'>نظم و تقارن از ویژگی‌های مهم این باغ‌هاست: هر چیزی که در یک طرف محور اصلی است، در طرف دیگر هم تکرار می‌شود.</span>"
       },
       {
+       "frage": "<span class='fa'>بسیاری از باغ‌ها یک ___ طولانی دارند که از در ورودی شروع می‌شود و نگاه بازدیدکننده را به سوی کوشک اصلی می‌برد.</span><br><span class='mini'>Viele Gärten haben eine lange Achse, die am Eingangstor beginnt und den Blick des Besuchers zum Hauptpavillon lenkt.</span>",
+       "optionen": [
+        "محور",
+        "چنار",
+        "انار"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>بسیاری از باغ‌ها یک محور طولانی دارند که از در ورودی شروع می‌شود و نگاه بازدیدکننده را به سوی کوشک اصلی می‌برد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>طراحان باغ معمولا کوشک را در بلندترین نقطه یا در انتهای این ___ می‌ساختند تا از آنجا تمام باغ دیده شود.</span><br><span class='mini'>Die Gartengestalter errichteten den Pavillon meist am höchsten Punkt oder am Ende dieser Achse, damit man von dort den ganzen Garten überblicken konnte.</span>",
+       "optionen": [
+        "محور",
+        "محصور",
+        "ریشه"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>طراحان باغ معمولا کوشک را در بلندترین نقطه یا در انتهای این محور می‌ساختند تا از آنجا تمام باغ دیده شود.</span>"
+      },
+      {
        "frage": "<span class='fa'>آب اغلب از راه ___، یعنی کانال‌هایی زیرزمینی، از کوه‌های دور به باغ می‌رسید.</span><br><span class='mini'>Das Wasser kam oft über einen Qanat – unterirdische Kanäle – von fernen Bergen in den Garten.</span>",
        "optionen": [
         "قنات",
-        "بوته",
-        "آبیاری"
+        "سایه",
+        "منظره"
        ],
        "richtig": 0,
        "optFa": true,
@@ -413,11 +579,29 @@
        "erkl": "<span class='fa'>آب اغلب از راه قنات، یعنی کانال‌هایی زیرزمینی، از کوه‌های دور به باغ می‌رسید.</span>"
       },
       {
+       "frage": "<span class='fa'>یونسکو در سال ۲۰۱۶ یازده قنات ایرانی را نیز در فهرست ___ ثبت کرد.</span><br><span class='mini'>2016 trug die UNESCO auch elf iranische Qanate in die Welterbeliste ein.</span>",
+       "optionen": [
+        "میراث جهانی",
+        "انار",
+        "نارنج"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>یونسکو در سال ۲۰۱۶ یازده قنات ایرانی را نیز در فهرست میراث جهانی ثبت کرد.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort fehlt im Text?",
+     "fragen": [
+      {
        "frage": "<span class='fa'>در باغ، آب با شیب ملایمی در جوی‌ها جریان دارد و صدای آن ___ خاصی ایجاد می‌کند.</span><br><span class='mini'>Im Garten fließt das Wasser mit leichtem Gefälle durch die Rinnen, und sein Rauschen schafft eine besondere Ruhe.</span>",
        "optionen": [
         "آرامش",
-        "نظم",
-        "حوض"
+        "شاخه",
+        "محصور"
        ],
        "richtig": 0,
        "optFa": true,
@@ -428,8 +612,8 @@
        "frage": "<span class='fa'>درختان بلند مثل سرو و چنار ___ می‌اندازند و هوا را خنک نگه می‌دارند.</span><br><span class='mini'>Hohe Bäume wie Zypressen und Platanen spenden Schatten und halten die Luft kühl.</span>",
        "optionen": [
         "سایه",
-        "نارنج",
-        "دیوار"
+        "محور",
+        "بیابان"
        ],
        "richtig": 0,
        "optFa": true,
@@ -437,11 +621,35 @@
        "erkl": "<span class='fa'>درختان بلند مثل سرو و چنار سایه می‌اندازند و هوا را خنک نگه می‌دارند.</span>"
       },
       {
+       "frage": "<span class='fa'>___، که در همه‌ی فصل‌ها سبز می‌ماند، در هنر ایرانی نماد زندگی و پایداری است و نقش آن را روی فرش‌ها و کاشی‌ها هم می‌بینیم.</span><br><span class='mini'>Die Zypresse, die zu jeder Jahreszeit grün bleibt, ist in der iranischen Kunst ein Symbol für Leben und Beständigkeit; ihr Motiv sieht man auch auf Teppichen und Fliesen.</span>",
+       "optionen": [
+        "سرو",
+        "بذر",
+        "ایوان"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>سرو، که در همه‌ی فصل‌ها سبز می‌ماند، در هنر ایرانی نماد زندگی و پایداری است و نقش آن را روی فرش‌ها و کاشی‌ها هم می‌بینیم.</span>"
+      },
+      {
+       "frage": "<span class='fa'>در کنار درختان سایه‌دار، درختان میوه مانند ___، سیب و زردآلو هم کاشته می‌شد تا باغ محصول هم داشته باشد.</span><br><span class='mini'>Neben den Schattenbäumen pflanzte man auch Obstbäume wie Granatapfel, Apfel und Aprikose, damit der Garten auch Ertrag brachte.</span>",
+       "optionen": [
+        "انار",
+        "برگ",
+        "خشکسالی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>در کنار درختان سایه‌دار، درختان میوه مانند انار، سیب و زردآلو هم کاشته می‌شد تا باغ محصول هم داشته باشد.</span>"
+      },
+      {
        "frage": "<span class='fa'>___، درختان نارنج و بوته‌های معطر هم عطر باغ را کامل می‌کنند.</span><br><span class='mini'>Rosen, Bitterorangenbäume und duftende Sträucher vervollständigen den Duft des Gartens.</span>",
        "optionen": [
         "گل سرخ",
-        "نظم",
-        "باغچه"
+        "بوته",
+        "نظم"
        ],
        "richtig": 0,
        "optFa": true,
@@ -452,8 +660,8 @@
        "frage": "<span class='fa'>دور تا دور باغ را دیوار بلندی محصور می‌کند تا گرد و غبار و باد گرم ___ وارد آن نشود.</span><br><span class='mini'>Eine hohe Mauer umschließt den ganzen Garten, damit Staub und der heiße Wüstenwind nicht eindringen.</span>",
        "optionen": [
         "بیابان",
-        "نارنج",
-        "سرو"
+        "قنات",
+        "شاخه"
        ],
        "richtig": 0,
        "optFa": true,
@@ -473,24 +681,326 @@
        "de": "Im trockenen Iran hatte der Garten immer eine besondere Bedeutung."
       },
       {
-       "fa": "طرح چهارباغ را با جوی‌ها، حوض و تقارن می‌شناسیم.",
+       "fa": "طرح چهارباغ را با جوی‌ها، حوض، محور و تقارن می‌شناسیم.",
        "tr": "",
-       "de": "Den Tschahar-Bagh-Plan erkennt man an Wasserrinnen, Becken und Symmetrie."
+       "de": "Den Tschahar-Bagh-Plan erkennt man an Wasserrinnen, Becken, Achse und Symmetrie."
       },
       {
-       "fa": "آب از قنات یا چشمه می‌آید و درختان سایه و خنکی می‌آورند.",
+       "fa": "آب از قنات یا چشمه می‌آید و درختان و حوض‌ها هوا را خنک می‌کنند.",
        "tr": "",
-       "de": "Das Wasser kommt aus Qanat oder Quelle, und die Bäume bringen Schatten und Kühle."
+       "de": "Das Wasser kommt aus Qanat oder Quelle, und Bäume und Becken kühlen die Luft."
       },
       {
-       "fa": "باغ فین و باغ ارم از نمونه‌های معروف و جزو میراث جهانی هستند.",
+       "fa": "باغ‌هایی مانند فین، ارم و چهلستون از نمونه‌های معروف و جزو میراث جهانی هستند.",
        "tr": "",
-       "de": "Der Fin- und der Eram-Garten sind berühmte Beispiele und gehören zum Welterbe."
+       "de": "Gärten wie Fin, Eram und Tschehel Sotun sind berühmte Beispiele und gehören zum Welterbe."
       },
       {
        "fa": "حتی واژه‌ی آلمانی «پارادیس» ریشه در واژه‌ای ایرانی برای باغ محصور دارد.",
        "tr": "",
        "de": "Sogar das deutsche Wort ‹Paradies› geht auf ein iranisches Wort für den umfriedeten Garten zurück."
+      },
+      {
+       "fa": "امروز حفظ باغ‌های قدیمی یک چالش است، اما باغ هنوز تصویری از آرامش است.",
+       "tr": "",
+       "de": "Heute ist die Erhaltung alter Gärten eine Herausforderung, doch der Garten bleibt ein Bild der Ruhe."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t3",
+   "titel": "Alltag: Ein Jahr im Eram-Garten: der Gärtner Manutschehr erzählt",
+   "vorschau": "Ein Jahr im Eram-Garten: der Gärtner Manutschehr erzählt",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>گران‌بها</span> – kostbar · <span class='fa'>طبق</span> – gemäß, nach · <span class='fa'>پیچیدن</span> – sich ausbreiten (Duft) · <span class='fa'>صرف شدن</span> – verwendet werden · <span class='fa'>هرس کردن</span> – zurückschneiden · <span class='fa'>حساس</span> – empfindlich · <span class='fa'>گلخانه</span> – Gewächshaus · <span class='fa'>تعمیر</span> – Reparatur · <span class='fa'>آبیاری قطره‌ای</span> – Tropfbewässerung · <span class='fa'>نسل</span> – Generation</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Alltag: Ein Jahr im Eram-Garten: der Gärtner Manutschehr erzählt",
+     "text": "Alltagstext – Tippe eine Zeile an, wenn du die Übersetzung brauchst.",
+     "zeilen": [
+      {
+       "fa": "اسم من منوچهر است، پنجاه‌وهشت سال دارم و نزدیک به سی سال است که در باغ ارم شیراز باغبانم.",
+       "tr": "",
+       "de": "Ich heiße Manutschehr, bin achtundfünfzig Jahre alt und seit fast dreißig Jahren Gärtner im Eram-Garten in Schiras."
+      },
+      {
+       "fa": "پدرم هم باغبان بود و من از کودکی با او میان درخت‌ها و باغچه‌ها بزرگ شدم.",
+       "tr": "",
+       "de": "Mein Vater war auch Gärtner, und ich bin von Kindheit an mit ihm zwischen Bäumen und Beeten aufgewachsen."
+      },
+      {
+       "fa": "باغ ارم امروز در اختیار دانشگاه شیراز است و ما باغبان‌ها با گیاه‌شناسان دانشگاه همکاری نزدیکی داریم.",
+       "tr": "",
+       "de": "Der Eram-Garten gehört heute der Universität Schiras, und wir Gärtner arbeiten eng mit den Botanikern der Universität zusammen."
+      },
+      {
+       "fa": "روز کاری من معمولا ساعت شش صبح شروع می‌شود، پیش از آنکه درهای باغ به روی بازدیدکنندگان باز شود.",
+       "tr": "",
+       "de": "Mein Arbeitstag beginnt meist um sechs Uhr morgens, bevor sich die Tore des Gartens für die Besucher öffnen."
+      },
+      {
+       "fa": "اول از همه جوی‌ها را بررسی می‌کنم تا مطمئن شوم آب در همه‌جا درست جریان دارد.",
+       "tr": "",
+       "de": "Zuerst kontrolliere ich die Wasserrinnen, um sicherzugehen, dass das Wasser überall richtig fließt."
+      },
+      {
+       "fa": "در شیراز آب گران‌بهاست و ما باغ را طبق برنامه‌ای دقیق آبیاری می‌کنیم؛ هر بخش در روز و ساعت مشخصی آب می‌گیرد.",
+       "tr": "",
+       "de": "In Schiras ist Wasser kostbar, und wir bewässern den Garten nach einem genauen Plan; jeder Teil bekommt an einem bestimmten Tag zu einer bestimmten Stunde Wasser."
+      },
+      {
+       "fa": "بهار شلوغ‌ترین فصل سال است.",
+       "tr": "",
+       "de": "Der Frühling ist die geschäftigste Jahreszeit."
+      },
+      {
+       "fa": "در روزهای نوروز، هزاران نفر از سراسر ایران و از کشورهای دیگر به باغ می‌آیند.",
+       "tr": "",
+       "de": "In den Nouruz-Tagen kommen Tausende Menschen aus ganz Iran und aus anderen Ländern in den Garten."
+      },
+      {
+       "fa": "در هفته‌های پیش از آن، گل‌های تازه را در باغچه‌ها می‌کاریم و چمن‌ها را کوتاه می‌کنیم.",
+       "tr": "",
+       "de": "In den Wochen davor pflanzen wir frische Blumen in die Beete und mähen den Rasen."
+      },
+      {
+       "fa": "در اواسط بهار، گل‌های سرخ باز می‌شوند و عطرشان در تمام باغ می‌پیچد.",
+       "tr": "",
+       "de": "Mitte des Frühlings öffnen sich die Rosen, und ihr Duft erfüllt den ganzen Garten."
+      },
+      {
+       "fa": "گردشگران زیادی از من نام گل‌ها را می‌پرسند؛ من نام فارسی آنها را می‌گویم و دانشجویان گیاه‌شناسی نام علمی‌شان را.",
+       "tr": "",
+       "de": "Viele Touristen fragen mich nach den Namen der Blumen; ich nenne ihnen die persischen Namen, und die Botanikstudierenden die wissenschaftlichen."
+      },
+      {
+       "fa": "تابستان فصل سختی است، چون دما در شیراز گاهی به نزدیک چهل درجه می‌رسد.",
+       "tr": "",
+       "de": "Der Sommer ist eine harte Jahreszeit, denn die Temperatur in Schiras erreicht manchmal fast vierzig Grad."
+      },
+      {
+       "fa": "در این ماه‌ها کار را خیلی زود صبح انجام می‌دهیم و ظهرها در سایه‌ی درختان استراحت می‌کنیم.",
+       "tr": "",
+       "de": "In diesen Monaten erledigen wir die Arbeit sehr früh am Morgen und ruhen uns mittags im Schatten der Bäume aus."
+      },
+      {
+       "fa": "آبیاری را هم بیشتر صبح زود یا شب انجام می‌دهیم تا آب کمتری تبخیر شود.",
+       "tr": "",
+       "de": "Auch das Bewässern erledigen wir meist früh am Morgen oder nachts, damit weniger Wasser verdunstet."
+      },
+      {
+       "fa": "بیشتر وقت ما صرف آبیاری و مراقبت از درختان جوان می‌شود، چون آنها هنوز ریشه‌های عمیقی ندارند.",
+       "tr": "",
+       "de": "Die meiste Zeit verwenden wir auf das Bewässern und die Pflege der jungen Bäume, denn sie haben noch keine tiefen Wurzeln."
+      },
+      {
+       "fa": "در پاییز، برگ‌های چنارها زرد و قرمز می‌شود و ما هر روز برگ‌ها را از روی چمن و از داخل جوی‌ها جمع می‌کنیم.",
+       "tr": "",
+       "de": "Im Herbst werden die Blätter der Platanen gelb und rot, und wir sammeln jeden Tag das Laub vom Rasen und aus den Rinnen."
+      },
+      {
+       "fa": "پاییز فصل هرس کردن هم هست: شاخه‌های خشک را می‌بریم تا درختان در بهار قوی‌تر رشد کنند.",
+       "tr": "",
+       "de": "Der Herbst ist auch die Zeit des Rückschnitts: Wir schneiden die trockenen Äste ab, damit die Bäume im Frühling kräftiger wachsen."
+      },
+      {
+       "fa": "دانشجویان دانشگاه شیراز در این ماه‌ها برای کارهای پژوهشی به باغ می‌آیند و گاهی از تجربه‌ی ما کمک می‌گیرند.",
+       "tr": "",
+       "de": "In diesen Monaten kommen Studierende der Universität Schiras für Forschungsarbeiten in den Garten und greifen manchmal auf unsere Erfahrung zurück."
+      },
+      {
+       "fa": "زمستان در شیراز معمولا ملایم است، اما در بعضی شب‌ها دما به زیر صفر می‌رسد.",
+       "tr": "",
+       "de": "Der Winter in Schiras ist meist mild, aber in manchen Nächten sinkt die Temperatur unter null."
+      },
+      {
+       "fa": "در این شب‌ها گیاهان حساس را با پارچه می‌پوشانیم و گلدان‌ها را به گلخانه می‌بریم.",
+       "tr": "",
+       "de": "In solchen Nächten decken wir empfindliche Pflanzen mit Tüchern ab und bringen die Topfpflanzen ins Gewächshaus."
+      },
+      {
+       "fa": "زمستان فرصتی است برای تعمیر جوی‌ها و کاشی‌های حوض و آماده کردن باغ برای سال بعد.",
+       "tr": "",
+       "de": "Der Winter ist die Gelegenheit, Rinnen und Beckenfliesen zu reparieren und den Garten für das nächste Jahr vorzubereiten."
+      },
+      {
+       "fa": "کار من فقط مراقبت از گیاهان نیست؛ گاهی راهنمای بازدیدکنندگان هم هستم.",
+       "tr": "",
+       "de": "Meine Arbeit ist nicht nur die Pflege der Pflanzen; manchmal bin ich auch Führer für die Besucher."
+      },
+      {
+       "fa": "خیلی‌ها می‌پرسند که سروهای بلند باغ چند سال دارند؛ برخی از آنها بسیار کهن‌اند و ما با دقت ویژه‌ای از آنها مراقبت می‌کنیم.",
+       "tr": "",
+       "de": "Viele fragen, wie alt die hohen Zypressen des Gartens sind; einige von ihnen sind sehr alt, und wir pflegen sie mit besonderer Sorgfalt."
+      },
+      {
+       "fa": "نگرانی بزرگ من کمبود آب است؛ در سال‌های خشک باید با آب کمتر باغی به این بزرگی را سبز نگه داریم.",
+       "tr": "",
+       "de": "Meine große Sorge ist der Wassermangel; in trockenen Jahren müssen wir einen so großen Garten mit weniger Wasser grün halten."
+      },
+      {
+       "fa": "به همین دلیل، در سال‌های اخیر در بعضی بخش‌ها آبیاری قطره‌ای را امتحان کرده‌ایم.",
+       "tr": "",
+       "de": "Deshalb haben wir in den letzten Jahren in einigen Bereichen Tropfbewässerung ausprobiert."
+      },
+      {
+       "fa": "پسرم مهندسی کشاورزی خوانده و گاهی درباره‌ی این روش‌ها با هم بحث می‌کنیم.",
+       "tr": "",
+       "de": "Mein Sohn hat Agrartechnik studiert, und manchmal diskutieren wir über diese Methoden."
+      },
+      {
+       "fa": "وقتی عصرها، پس از رفتن آخرین گردشگران، صدای آب را در جوی‌ها می‌شنوم، خستگی روز را فراموش می‌کنم.",
+       "tr": "",
+       "de": "Wenn ich abends, nachdem die letzten Touristen gegangen sind, das Wasser in den Rinnen höre, vergesse ich die Müdigkeit des Tages."
+      },
+      {
+       "fa": "فکر می‌کنم باغبانی بیش از یک شغل است؛ ما نگهبان میراثی هستیم که نسل‌ها پیش از ما ساخته‌اند.",
+       "tr": "",
+       "de": "Ich glaube, Gärtnern ist mehr als ein Beruf: Wir hüten ein Erbe, das Generationen vor uns geschaffen haben."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "منوچهر نزدیک به سی سال است که در باغ ارم کار می‌کند.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "روز کاری منوچهر بعد از باز شدن درهای باغ شروع می‌شود.",
+       "fest": true,
+       "erkl": "Er beginnt um sechs Uhr – <b>bevor</b> die Tore öffnen."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "تابستان شلوغ‌ترین فصل باغ است.",
+       "fest": true,
+       "erkl": "Am meisten los ist im <b>Frühling</b>, vor allem zu Nouruz."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "در پاییز شاخه‌های خشک درختان را می‌برند.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "در شب‌های سرد زمستان، گیاهان حساس را می‌پوشانند.",
+       "fest": true
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Warum wird der Garten nach einem festen Plan bewässert?",
+       "optionen": [
+        "Weil Wasser in Schiras kostbar ist.",
+        "Weil es so Tradition ist.",
+        "Weil die Touristen es wünschen."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was tun die Gärtner im Sommer zur Mittagszeit?",
+       "optionen": [
+        "Sie ruhen sich im Schatten aus.",
+        "Sie mähen den Rasen.",
+        "Sie führen Besucher."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wofür nutzen sie den Winter?",
+       "optionen": [
+        "für die Reparatur von Rinnen und Fliesen",
+        "für Urlaub am Meer",
+        "zum Pflanzen der Zypressen"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was ist Manutschehrs größte Sorge?",
+       "optionen": [
+        "der Wassermangel",
+        "zu viele Touristen",
+        "die Kälte im Winter"
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "پدرم هم باغبان بود و من از کودکی با او میان درخت‌ها و باغچه‌ها بزرگ شدم.",
+       "tr": "",
+       "de": "Mein Vater war auch Gärtner, und ich bin von Kindheit an mit ihm zwischen Bäumen und Beeten aufgewachsen."
+      },
+      {
+       "fa": "باغ ارم امروز در اختیار دانشگاه شیراز است و ما باغبان‌ها با گیاه‌شناسان دانشگاه همکاری نزدیکی داریم.",
+       "tr": "",
+       "de": "Der Eram-Garten gehört heute der Universität Schiras, und wir Gärtner arbeiten eng mit den Botanikern der Universität zusammen."
+      },
+      {
+       "fa": "روز کاری من معمولا ساعت شش صبح شروع می‌شود، پیش از آنکه درهای باغ به روی بازدیدکنندگان باز شود.",
+       "tr": "",
+       "de": "Mein Arbeitstag beginnt meist um sechs Uhr morgens, bevor sich die Tore des Gartens für die Besucher öffnen."
+      },
+      {
+       "fa": "اول از همه جوی‌ها را بررسی می‌کنم تا مطمئن شوم آب در همه‌جا درست جریان دارد.",
+       "tr": "",
+       "de": "Zuerst kontrolliere ich die Wasserrinnen, um sicherzugehen, dass das Wasser überall richtig fließt."
+      },
+      {
+       "fa": "در شیراز آب گران‌بهاست و ما باغ را طبق برنامه‌ای دقیق آبیاری می‌کنیم؛ هر بخش در روز و ساعت مشخصی آب می‌گیرد.",
+       "tr": "",
+       "de": "In Schiras ist Wasser kostbar, und wir bewässern den Garten nach einem genauen Plan; jeder Teil bekommt an einem bestimmten Tag zu einer bestimmten Stunde Wasser."
+      },
+      {
+       "fa": "بهار شلوغ‌ترین فصل سال است.",
+       "tr": "",
+       "de": "Der Frühling ist die geschäftigste Jahreszeit."
       }
      ]
     }
@@ -547,6 +1057,36 @@
        "de": "Seine heutige Form entstand vor über vierhundert Jahren unter Schah Abbas I. Später kamen allerdings noch einige Gebäude hinzu."
       },
       {
+       "fa": "یوناس: آن ساختمان کنار دیوار چیست؟",
+       "tr": "",
+       "de": "Was ist das für ein Gebäude an der Mauer?"
+      },
+      {
+       "fa": "لیلا: حمام تاریخی فین است. امیرکبیر، صدراعظم اصلاح‌طلب ناصرالدین‌شاه، آخرین روزهای عمرش را در همین باغ گذراند.",
+       "tr": "",
+       "de": "Das ist das historische Badehaus von Fin. Amir Kabir, der reformorientierte Großwesir Naser ad-Din Schahs, verbrachte seine letzten Lebenstage in diesem Garten."
+      },
+      {
+       "fa": "یوناس: همان کسی که دارالفنون را تأسیس کرد؟",
+       "tr": "",
+       "de": "Derselbe, der die Dar ol-Fonun gegründet hat?"
+      },
+      {
+       "fa": "لیلا: بله، همان. برای همین، باغ فین برای ایرانی‌ها فقط یک باغ زیبا نیست؛ جایی تاریخی هم هست.",
+       "tr": "",
+       "de": "Ja, genau der. Deshalb ist der Fin-Garten für Iraner nicht nur ein schöner Garten, sondern auch ein historischer Ort."
+      },
+      {
+       "fa": "یوناس: در راه از کنار مزرعه‌های گل سرخ هم رد شدیم. آنها هم برای باغ است؟",
+       "tr": "",
+       "de": "Auf dem Weg sind wir auch an Rosenfeldern vorbeigekommen. Gehören die auch zum Garten?"
+      },
+      {
+       "fa": "لیلا: نه، آنها برای گلاب‌گیری است. در اواسط بهار در روستاهایی مثل قمصر، نزدیک کاشان، از گل سرخ گلاب می‌گیرند.",
+       "tr": "",
+       "de": "Nein, die sind für die Rosenwassergewinnung. Mitte des Frühlings gewinnt man in Dörfern wie Ghamsar bei Kaschan Rosenwasser aus den Rosen."
+      },
+      {
        "fa": "یوناس: پس بیا اول در سایه‌ی آن چنار بزرگ بنشینیم و بعد کوشک را ببینیم.",
        "tr": "",
        "de": "Dann lass uns zuerst im Schatten der großen Platane sitzen und danach den Pavillon ansehen."
@@ -594,6 +1134,36 @@
        "de": "Seine heutige Form entstand vor über vierhundert Jahren unter Schah Abbas I. Später kamen allerdings noch einige Gebäude hinzu."
       },
       {
+       "fa": "یوناس: آن ساختمان کنار دیوار چیست؟",
+       "tr": "",
+       "de": "Was ist das für ein Gebäude an der Mauer?"
+      },
+      {
+       "fa": "لیلا: حمام تاریخی فین است. امیرکبیر، صدراعظم اصلاح‌طلب ناصرالدین‌شاه، آخرین روزهای عمرش را در همین باغ گذراند.",
+       "tr": "",
+       "de": "Das ist das historische Badehaus von Fin. Amir Kabir, der reformorientierte Großwesir Naser ad-Din Schahs, verbrachte seine letzten Lebenstage in diesem Garten."
+      },
+      {
+       "fa": "یوناس: همان کسی که دارالفنون را تأسیس کرد؟",
+       "tr": "",
+       "de": "Derselbe, der die Dar ol-Fonun gegründet hat?"
+      },
+      {
+       "fa": "لیلا: بله، همان. برای همین، باغ فین برای ایرانی‌ها فقط یک باغ زیبا نیست؛ جایی تاریخی هم هست.",
+       "tr": "",
+       "de": "Ja, genau der. Deshalb ist der Fin-Garten für Iraner nicht nur ein schöner Garten, sondern auch ein historischer Ort."
+      },
+      {
+       "fa": "یوناس: در راه از کنار مزرعه‌های گل سرخ هم رد شدیم. آنها هم برای باغ است؟",
+       "tr": "",
+       "de": "Auf dem Weg sind wir auch an Rosenfeldern vorbeigekommen. Gehören die auch zum Garten?"
+      },
+      {
+       "fa": "لیلا: نه، آنها برای گلاب‌گیری است. در اواسط بهار در روستاهایی مثل قمصر، نزدیک کاشان، از گل سرخ گلاب می‌گیرند.",
+       "tr": "",
+       "de": "Nein, die sind für die Rosenwassergewinnung. Mitte des Frühlings gewinnt man in Dörfern wie Ghamsar bei Kaschan Rosenwasser aus den Rosen."
+      },
+      {
        "fa": "یوناس: پس بیا اول در سایه‌ی آن چنار بزرگ بنشینیم و بعد کوشک را ببینیم.",
        "tr": "",
        "de": "Dann lass uns zuerst im Schatten der großen Platane sitzen und danach den Pavillon ansehen."
@@ -614,20 +1184,20 @@
        "richtig": 0
       },
       {
-       "frage": "Wie funktionieren die Springbrunnen?",
+       "frage": "Wer verbrachte seine letzten Lebenstage im Fin-Garten?",
        "optionen": [
-        "durch den natürlichen Wasserdruck",
-        "mit elektrischen Pumpen",
-        "mit Windkraft"
+        "Amir Kabir",
+        "Schah Abbas I.",
+        "Ferdousi"
        ],
        "richtig": 0
       },
       {
-       "frage": "Wann entstand die heutige Form des Gartens?",
+       "frage": "Wofür sind die Rosenfelder bei Kaschan?",
        "optionen": [
-        "unter Schah Abbas I.",
-        "in der Achämenidenzeit",
-        "im 20. Jahrhundert"
+        "für die Rosenwassergewinnung",
+        "für den Fin-Garten",
+        "für den Export von Schnittblumen"
        ],
        "richtig": 0
       }
@@ -676,6 +1246,26 @@
        "de": "Ehrlich gesagt sind die Hamburger Parks toll zum Spazierengehen. Aber wenn ich Heimweh habe, fehlt mir das Plätschern des Wasserbeckens."
       },
       {
+       "fa": "لیلا: در آلمان هیچ باغی به سبک ایرانی نیست؟",
+       "tr": "",
+       "de": "Gibt es in Deutschland gar keinen Garten im persischen Stil?"
+      },
+      {
+       "fa": "بردیا: شنیده‌ام در برلین، در پارکی به نام «باغ‌های جهان»، یک باغ شرقی هست که از طرح چهارباغ الهام گرفته. هنوز فرصت نکرده‌ام آن را ببینم.",
+       "tr": "",
+       "de": "Ich habe gehört, dass es in Berlin in einem Park namens ‹Gärten der Welt› einen orientalischen Garten gibt, der vom Tschahar-Bagh-Plan inspiriert ist. Ich hatte noch keine Gelegenheit, ihn anzusehen."
+      },
+      {
+       "fa": "لیلا: باید بروی و برای مقاله‌ام عکس بفرستی!",
+       "tr": "",
+       "de": "Du musst hinfahren und mir Fotos für meinen Artikel schicken!"
+      },
+      {
+       "fa": "بردیا: قول می‌دهم. در هامبورگ هم پارکی هست که یک باغ ژاپنی دارد؛ آن هم پر از نظم است، ولی نظمش با باغ ایرانی فرق دارد.",
+       "tr": "",
+       "de": "Versprochen. In Hamburg gibt es auch einen Park mit einem japanischen Garten; der ist auch voller Ordnung, aber seine Ordnung ist anders als die des persischen Gartens."
+      },
+      {
        "fa": "لیلا: یادت هست حیاط خانه‌ی مادربزرگ؟ آن حوض کوچک و درخت نارنج وسط باغچه؟",
        "tr": "",
        "de": "Erinnerst du dich an den Hof bei Oma? An das kleine Becken und den Bitterorangenbaum mitten im Beet?"
@@ -684,6 +1274,16 @@
        "fa": "بردیا: معلوم است! عطر بهارنارنج را هیچ‌وقت فراموش نمی‌کنم. حالا روی بالکنم یک درخت لیمو کاشته‌ام، ولی آن عطر را ندارد.",
        "tr": "",
        "de": "Natürlich! Den Duft der Orangenblüten vergesse ich nie. Jetzt habe ich auf meinem Balkon einen Zitronenbaum gepflanzt, aber er duftet nicht so."
+      },
+      {
+       "fa": "لیلا: درخت لیمو در هوای هامبورگ زمستان را تحمل می‌کند؟",
+       "tr": "",
+       "de": "Übersteht ein Zitronenbaum den Winter in Hamburg?"
+      },
+      {
+       "fa": "بردیا: نه، زمستان‌ها آن را به داخل خانه می‌آورم و کنار پنجره می‌گذارم.",
+       "tr": "",
+       "de": "Nein, im Winter hole ich ihn ins Haus und stelle ihn ans Fenster."
       },
       {
        "fa": "لیلا: پس دفعه‌ی بعد که آمدی، با هم به یک باغ واقعی می‌رویم. فعلا!",
@@ -723,6 +1323,26 @@
        "de": "Ehrlich gesagt sind die Hamburger Parks toll zum Spazierengehen. Aber wenn ich Heimweh habe, fehlt mir das Plätschern des Wasserbeckens."
       },
       {
+       "fa": "لیلا: در آلمان هیچ باغی به سبک ایرانی نیست؟",
+       "tr": "",
+       "de": "Gibt es in Deutschland gar keinen Garten im persischen Stil?"
+      },
+      {
+       "fa": "بردیا: شنیده‌ام در برلین، در پارکی به نام «باغ‌های جهان»، یک باغ شرقی هست که از طرح چهارباغ الهام گرفته. هنوز فرصت نکرده‌ام آن را ببینم.",
+       "tr": "",
+       "de": "Ich habe gehört, dass es in Berlin in einem Park namens ‹Gärten der Welt› einen orientalischen Garten gibt, der vom Tschahar-Bagh-Plan inspiriert ist. Ich hatte noch keine Gelegenheit, ihn anzusehen."
+      },
+      {
+       "fa": "لیلا: باید بروی و برای مقاله‌ام عکس بفرستی!",
+       "tr": "",
+       "de": "Du musst hinfahren und mir Fotos für meinen Artikel schicken!"
+      },
+      {
+       "fa": "بردیا: قول می‌دهم. در هامبورگ هم پارکی هست که یک باغ ژاپنی دارد؛ آن هم پر از نظم است، ولی نظمش با باغ ایرانی فرق دارد.",
+       "tr": "",
+       "de": "Versprochen. In Hamburg gibt es auch einen Park mit einem japanischen Garten; der ist auch voller Ordnung, aber seine Ordnung ist anders als die des persischen Gartens."
+      },
+      {
        "fa": "لیلا: یادت هست حیاط خانه‌ی مادربزرگ؟ آن حوض کوچک و درخت نارنج وسط باغچه؟",
        "tr": "",
        "de": "Erinnerst du dich an den Hof bei Oma? An das kleine Becken und den Bitterorangenbaum mitten im Beet?"
@@ -731,6 +1351,16 @@
        "fa": "بردیا: معلوم است! عطر بهارنارنج را هیچ‌وقت فراموش نمی‌کنم. حالا روی بالکنم یک درخت لیمو کاشته‌ام، ولی آن عطر را ندارد.",
        "tr": "",
        "de": "Natürlich! Den Duft der Orangenblüten vergesse ich nie. Jetzt habe ich auf meinem Balkon einen Zitronenbaum gepflanzt, aber er duftet nicht so."
+      },
+      {
+       "fa": "لیلا: درخت لیمو در هوای هامبورگ زمستان را تحمل می‌کند؟",
+       "tr": "",
+       "de": "Übersteht ein Zitronenbaum den Winter in Hamburg?"
+      },
+      {
+       "fa": "بردیا: نه، زمستان‌ها آن را به داخل خانه می‌آورم و کنار پنجره می‌گذارم.",
+       "tr": "",
+       "de": "Nein, im Winter hole ich ihn ins Haus und stelle ihn ans Fenster."
       },
       {
        "fa": "لیلا: پس دفعه‌ی بعد که آمدی، با هم به یک باغ واقعی می‌رویم. فعلا!",
@@ -753,20 +1383,365 @@
        "richtig": 0
       },
       {
-       "frage": "Was fehlt Bardia, wenn er Heimweh hat?",
+       "frage": "Wo gibt es laut Bardia einen Garten nach dem Tschahar-Bagh-Plan?",
        "optionen": [
-        "das Plätschern des Wasserbeckens",
-        "der Hamburger Regen",
-        "der Lärm der Stadt"
+        "in Berlin, in den ‹Gärten der Welt›",
+        "in Hamburg am Hafen",
+        "in Bonn"
        ],
        "richtig": 0
       },
       {
-       "frage": "Was hat Bardia auf seinem Balkon gepflanzt?",
+       "frage": "Was macht Bardia im Winter mit seinem Zitronenbaum?",
        "optionen": [
-        "einen Zitronenbaum",
-        "einen Bitterorangenbaum",
-        "eine Zypresse"
+        "Er holt ihn ins Haus ans Fenster.",
+        "Er lässt ihn draußen stehen.",
+        "Er schenkt ihn Leyla."
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d3",
+   "titel": "Dialog: Interview im Eram-Garten",
+   "vorschau": "Interview im Eram-Garten",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Für ihren Artikel interviewt Leyla den Gärtner Manutschehr im Eram-Garten in Schiras. Jonas begleitet sie.</p>"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "لیلا: آقا منوچهر، سلام! ممنون که برای گفتگو وقت گذاشتید.",
+       "tr": "",
+       "de": "Guten Tag, Herr Manutschehr! Danke, dass Sie sich Zeit für das Gespräch nehmen."
+      },
+      {
+       "fa": "منوچهر: سلام، خواهش می‌کنم، خوش آمدید. این آقا هم همکار شماست؟",
+       "tr": "",
+       "de": "Guten Tag, gern geschehen, willkommen. Ist der Herr Ihr Kollege?"
+      },
+      {
+       "fa": "لیلا: ایشان یوناس است، دانشجوی آلمانی. برای پژوهشش درباره‌ی باغ ایرانی با من آمده.",
+       "tr": "",
+       "de": "Das ist Jonas, ein Student aus Deutschland. Er ist für seine Forschung über den persischen Garten mitgekommen."
+      },
+      {
+       "fa": "یوناس: خوشبختم. باغ واقعا شگفت‌انگیز است. این درخت‌ها را چطور در این هوای خشک سبز نگه می‌دارید؟",
+       "tr": "",
+       "de": "Sehr erfreut. Der Garten ist wirklich erstaunlich. Wie halten Sie diese Bäume bei so trockener Luft grün?"
+      },
+      {
+       "fa": "منوچهر: با برنامه. هر بخش از باغ روز و ساعت مشخصی آب می‌گیرد. قدیم‌ها آب بیشتر باغ‌های شیراز از قنات می‌آمد؛ امروز وضع فرق کرده و باید با هر قطره حساب‌شده رفتار کنیم.",
+       "tr": "",
+       "de": "Mit einem Plan. Jeder Teil des Gartens bekommt an einem bestimmten Tag zu einer bestimmten Stunde Wasser. Früher kam das Wasser der meisten Gärten in Schiras aus Qanaten; heute ist das anders, und wir müssen mit jedem Tropfen sorgsam umgehen."
+      },
+      {
+       "fa": "لیلا: خشکسالی‌های سال‌های اخیر روی باغ اثر گذاشته است؟",
+       "tr": "",
+       "de": "Haben die Dürren der letzten Jahre den Garten beeinträchtigt?"
+      },
+      {
+       "fa": "منوچهر: بله، متأسفانه. چند درخت پیر را از دست دادیم. حالا در بعضی بخش‌ها آبیاری قطره‌ای داریم تا آب کمتری هدر برود.",
+       "tr": "",
+       "de": "Ja, leider. Wir haben einige alte Bäume verloren. Jetzt haben wir in manchen Bereichen Tropfbewässerung, damit weniger Wasser verloren geht."
+      },
+      {
+       "fa": "یوناس: در آلمان هم بعضی پارک‌ها در تابستان‌های خشک مشکل پیدا کرده‌اند و درباره‌ی درخت‌های مقاوم‌تر بحث می‌کنند.",
+       "tr": "",
+       "de": "Auch in Deutschland haben manche Parks in trockenen Sommern Probleme bekommen, und man diskutiert über widerstandsfähigere Bäume."
+      },
+      {
+       "fa": "منوچهر: ما هم برای درخت‌های جوان گونه‌هایی را انتخاب می‌کنیم که آب کمتری لازم دارند. اما سرو و نارنج باید بمانند؛ این‌ها هویت باغ‌اند.",
+       "tr": "",
+       "de": "Wir wählen für junge Bäume auch Arten aus, die weniger Wasser brauchen. Aber Zypresse und Bitterorange müssen bleiben; sie sind die Identität des Gartens."
+      },
+      {
+       "fa": "لیلا: به نظر شما مهم‌ترین چیزی که بازدیدکنندگان باید درباره‌ی این باغ بدانند چیست؟",
+       "tr": "",
+       "de": "Was sollten Besucher Ihrer Meinung nach vor allem über diesen Garten wissen?"
+      },
+      {
+       "fa": "منوچهر: اینکه هر چیزی که اینجا می‌بینند حاصل کار هر روزه است. اگر باغ یک ماه رها شود، بیابان دوباره برمی‌گردد.",
+       "tr": "",
+       "de": "Dass alles, was sie hier sehen, das Ergebnis täglicher Arbeit ist. Wenn man den Garten einen Monat sich selbst überlässt, kehrt die Wüste zurück."
+      },
+      {
+       "fa": "یوناس: این جمله را حتما در پژوهشم می‌آورم.",
+       "tr": "",
+       "de": "Diesen Satz nehme ich auf jeden Fall in meine Arbeit auf."
+      },
+      {
+       "fa": "لیلا: یک سؤال آخر: کدام فصل را بیشتر دوست دارید؟",
+       "tr": "",
+       "de": "Eine letzte Frage: Welche Jahreszeit mögen Sie am liebsten?"
+      },
+      {
+       "fa": "منوچهر: پاییز. باغ آرام‌تر است و رنگ چنارها را هیچ عکسی نمی‌تواند درست نشان دهد.",
+       "tr": "",
+       "de": "Den Herbst. Der Garten ist ruhiger, und die Farben der Platanen kann kein Foto richtig wiedergeben."
+      },
+      {
+       "fa": "لیلا: خیلی ممنون، آقا منوچهر. روز خوش!",
+       "tr": "",
+       "de": "Vielen Dank, Herr Manutschehr. Einen schönen Tag!"
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "لیلا: آقا منوچهر، سلام! ممنون که برای گفتگو وقت گذاشتید.",
+       "tr": "",
+       "de": "Guten Tag, Herr Manutschehr! Danke, dass Sie sich Zeit für das Gespräch nehmen."
+      },
+      {
+       "fa": "منوچهر: سلام، خواهش می‌کنم، خوش آمدید. این آقا هم همکار شماست؟",
+       "tr": "",
+       "de": "Guten Tag, gern geschehen, willkommen. Ist der Herr Ihr Kollege?"
+      },
+      {
+       "fa": "لیلا: ایشان یوناس است، دانشجوی آلمانی. برای پژوهشش درباره‌ی باغ ایرانی با من آمده.",
+       "tr": "",
+       "de": "Das ist Jonas, ein Student aus Deutschland. Er ist für seine Forschung über den persischen Garten mitgekommen."
+      },
+      {
+       "fa": "یوناس: خوشبختم. باغ واقعا شگفت‌انگیز است. این درخت‌ها را چطور در این هوای خشک سبز نگه می‌دارید؟",
+       "tr": "",
+       "de": "Sehr erfreut. Der Garten ist wirklich erstaunlich. Wie halten Sie diese Bäume bei so trockener Luft grün?"
+      },
+      {
+       "fa": "منوچهر: با برنامه. هر بخش از باغ روز و ساعت مشخصی آب می‌گیرد. قدیم‌ها آب بیشتر باغ‌های شیراز از قنات می‌آمد؛ امروز وضع فرق کرده و باید با هر قطره حساب‌شده رفتار کنیم.",
+       "tr": "",
+       "de": "Mit einem Plan. Jeder Teil des Gartens bekommt an einem bestimmten Tag zu einer bestimmten Stunde Wasser. Früher kam das Wasser der meisten Gärten in Schiras aus Qanaten; heute ist das anders, und wir müssen mit jedem Tropfen sorgsam umgehen."
+      },
+      {
+       "fa": "لیلا: خشکسالی‌های سال‌های اخیر روی باغ اثر گذاشته است؟",
+       "tr": "",
+       "de": "Haben die Dürren der letzten Jahre den Garten beeinträchtigt?"
+      },
+      {
+       "fa": "منوچهر: بله، متأسفانه. چند درخت پیر را از دست دادیم. حالا در بعضی بخش‌ها آبیاری قطره‌ای داریم تا آب کمتری هدر برود.",
+       "tr": "",
+       "de": "Ja, leider. Wir haben einige alte Bäume verloren. Jetzt haben wir in manchen Bereichen Tropfbewässerung, damit weniger Wasser verloren geht."
+      },
+      {
+       "fa": "یوناس: در آلمان هم بعضی پارک‌ها در تابستان‌های خشک مشکل پیدا کرده‌اند و درباره‌ی درخت‌های مقاوم‌تر بحث می‌کنند.",
+       "tr": "",
+       "de": "Auch in Deutschland haben manche Parks in trockenen Sommern Probleme bekommen, und man diskutiert über widerstandsfähigere Bäume."
+      },
+      {
+       "fa": "منوچهر: ما هم برای درخت‌های جوان گونه‌هایی را انتخاب می‌کنیم که آب کمتری لازم دارند. اما سرو و نارنج باید بمانند؛ این‌ها هویت باغ‌اند.",
+       "tr": "",
+       "de": "Wir wählen für junge Bäume auch Arten aus, die weniger Wasser brauchen. Aber Zypresse und Bitterorange müssen bleiben; sie sind die Identität des Gartens."
+      },
+      {
+       "fa": "لیلا: به نظر شما مهم‌ترین چیزی که بازدیدکنندگان باید درباره‌ی این باغ بدانند چیست؟",
+       "tr": "",
+       "de": "Was sollten Besucher Ihrer Meinung nach vor allem über diesen Garten wissen?"
+      },
+      {
+       "fa": "منوچهر: اینکه هر چیزی که اینجا می‌بینند حاصل کار هر روزه است. اگر باغ یک ماه رها شود، بیابان دوباره برمی‌گردد.",
+       "tr": "",
+       "de": "Dass alles, was sie hier sehen, das Ergebnis täglicher Arbeit ist. Wenn man den Garten einen Monat sich selbst überlässt, kehrt die Wüste zurück."
+      },
+      {
+       "fa": "یوناس: این جمله را حتما در پژوهشم می‌آورم.",
+       "tr": "",
+       "de": "Diesen Satz nehme ich auf jeden Fall in meine Arbeit auf."
+      },
+      {
+       "fa": "لیلا: یک سؤال آخر: کدام فصل را بیشتر دوست دارید؟",
+       "tr": "",
+       "de": "Eine letzte Frage: Welche Jahreszeit mögen Sie am liebsten?"
+      },
+      {
+       "fa": "منوچهر: پاییز. باغ آرام‌تر است و رنگ چنارها را هیچ عکسی نمی‌تواند درست نشان دهد.",
+       "tr": "",
+       "de": "Den Herbst. Der Garten ist ruhiger, und die Farben der Platanen kann kein Foto richtig wiedergeben."
+      },
+      {
+       "fa": "لیلا: خیلی ممنون، آقا منوچهر. روز خوش!",
+       "tr": "",
+       "de": "Vielen Dank, Herr Manutschehr. Einen schönen Tag!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Wie wird der Eram-Garten bewässert?",
+       "optionen": [
+        "nach einem festen Plan für jeden Teil",
+        "nur, wenn es regnet",
+        "jeden Tag alles gleichzeitig"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was hat man gegen Wasserverlust eingeführt?",
+       "optionen": [
+        "Tropfbewässerung in manchen Bereichen",
+        "einen neuen Qanat",
+        "künstlichen Rasen"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Welche Jahreszeit mag Manutschehr am liebsten?",
+       "optionen": [
+        "den Herbst",
+        "den Frühling",
+        "den Sommer"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "a",
+   "titel": "Gut zu wissen",
+   "vorschau": "💡",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Tschehel Sotun – vierzig Säulen?",
+     "text": "Kurzer Infotext – tippe eine Zeile an für die Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "کوشک چهلستون در اصفهان در دوره‌ی صفوی، در قرن هفدهم میلادی، ساخته شد.",
+       "tr": "",
+       "de": "Der Pavillon Tschehel Sotun in Isfahan wurde in der Safawidenzeit im 17. Jahrhundert erbaut."
+      },
+      {
+       "fa": "ایوان این بنا بیست ستون چوبی بلند دارد که روبه‌روی یک حوض طولانی قرار گرفته‌اند.",
+       "tr": "",
+       "de": "Der Iwan des Gebäudes hat zwanzig hohe Holzsäulen, die vor einem langen Becken stehen."
+      },
+      {
+       "fa": "وقتی آب حوض آرام است، تصویر ستون‌ها در آن می‌افتد و بیست ستون به چهل ستون تبدیل می‌شود.",
+       "tr": "",
+       "de": "Wenn das Wasser ruhig ist, spiegeln sich die Säulen darin, und aus zwanzig werden vierzig."
+      },
+      {
+       "fa": "البته در فارسی عدد «چهل» گاهی به معنی «بسیار» هم به کار می‌رود؛ بنابراین نام بنا می‌تواند به معنی «بنایی با ستون‌های بسیار» هم باشد.",
+       "tr": "",
+       "de": "Allerdings bedeutet die Zahl ‹vierzig› im Persischen manchmal auch ‹sehr viele›; der Name kann also auch ‹Gebäude mit vielen Säulen› bedeuten."
+      },
+      {
+       "fa": "دیوارهای داخل کوشک با نقاشی‌های بزرگی از صحنه‌های تاریخی و مهمانی‌های دربار پوشیده شده است.",
+       "tr": "",
+       "de": "Die Innenwände des Pavillons sind mit großen Gemälden historischer Szenen und höfischer Empfänge bedeckt."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Wie ein Qanat funktioniert",
+     "text": "Kurzer Infotext – tippe eine Zeile an für die Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "قنات کانالی زیرزمینی است که آب را از زیر دامنه‌ی کوه با شیبی ملایم به دشت می‌آورد.",
+       "tr": "",
+       "de": "Ein Qanat ist ein unterirdischer Kanal, der Wasser mit leichtem Gefälle vom Fuß eines Berges in die Ebene leitet."
+      },
+      {
+       "fa": "در طول مسیر، چاه‌هایی عمودی حفر می‌کنند تا هوا به کانال برسد و خاک را بیرون بیاورند.",
+       "tr": "",
+       "de": "Entlang der Strecke gräbt man senkrechte Schächte, damit Luft in den Kanal gelangt und man die Erde herausholen kann."
+      },
+      {
+       "fa": "از بالا، این چاه‌ها مانند ردیفی از دایره‌های کوچک در بیابان دیده می‌شوند.",
+       "tr": "",
+       "de": "Von oben sehen diese Schächte aus wie eine Reihe kleiner Kreise in der Wüste."
+      },
+      {
+       "fa": "قنات قصبه‌ی گناباد در خراسان یکی از قدیمی‌ترین و عمیق‌ترین قنات‌های ایران است و عمق چاه اصلی آن به حدود سیصد متر می‌رسد.",
+       "tr": "",
+       "de": "Der Qanat Qasabeh in Gonabad in Chorasan ist einer der ältesten und tiefsten Qanate Irans; sein Hauptschacht ist rund dreihundert Meter tief."
+      },
+      {
+       "fa": "مزیت بزرگ قنات این است که آب در زیر زمین کمتر تبخیر می‌شود.",
+       "tr": "",
+       "de": "Der große Vorteil eines Qanats ist, dass das Wasser unter der Erde weniger verdunstet."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Saadi, Bustan und Golestan",
+     "text": "Kurzer Infotext – tippe eine Zeile an für die Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "سعدی، شاعر و نویسنده‌ی شیرازی قرن سیزدهم، دو کتاب بسیار معروف دارد: «بوستان» و «گلستان».",
+       "tr": "",
+       "de": "Saadi, der Dichter und Schriftsteller aus Schiras im 13. Jahrhundert, hat zwei sehr berühmte Bücher: den ‹Bustan› und den ‹Golestan›."
+      },
+      {
+       "fa": "هر دو نام به باغ اشاره دارند: «بوستان» یعنی باغ و «گلستان» یعنی جایی پر از گل.",
+       "tr": "",
+       "de": "Beide Namen verweisen auf den Garten: ‹Bustan› bedeutet Garten, ‹Golestan› einen Ort voller Blumen."
+      },
+      {
+       "fa": "گلستان در سال ۱۲۵۸ میلادی نوشته شد و ترکیبی از نثر و شعر است.",
+       "tr": "",
+       "de": "Der Golestan wurde 1258 geschrieben und ist eine Mischung aus Prosa und Versen."
+      },
+      {
+       "fa": "سعدی در مقدمه‌ی گلستان می‌نویسد که گل‌های باغ چند روزی بیشتر نمی‌مانند، اما گلستان او همیشه تازه خواهد ماند.",
+       "tr": "",
+       "de": "In der Einleitung des Golestan schreibt Saadi, dass die Blumen des Gartens nur wenige Tage halten, sein Golestan aber immer frisch bleiben werde."
+      },
+      {
+       "fa": "آرامگاه سعدی در شیراز، در میان باغی آرام، هر سال بازدیدکنندگان بسیاری دارد.",
+       "tr": "",
+       "de": "Saadis Grabmal in Schiras, inmitten eines ruhigen Gartens, hat jedes Jahr viele Besucher."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zu den Infotexten",
+     "fragen": [
+      {
+       "frage": "Wie viele Holzsäulen hat der Iwan von Tschehel Sotun wirklich?",
+       "optionen": [
+        "zwanzig",
+        "vierzig",
+        "vier"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wozu dienen die senkrechten Schächte eines Qanats?",
+       "optionen": [
+        "für Luft und zum Herausholen der Erde",
+        "als Tränke für Tiere",
+        "als Wegweiser für Reisende"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was schreibt Saadi in der Einleitung des Golestan?",
+       "optionen": [
+        "Blumen verwelken, aber sein Golestan bleibt immer frisch.",
+        "Er hat das Buch in einem Garten geschrieben.",
+        "Der Golestan ist ein Lehrbuch über Gartenbau."
        ],
        "richtig": 0
       }
@@ -836,9 +1811,9 @@
        "de": "Die Atmosphäre von … ist sehr angenehm."
       },
       {
-       "fa": "به نظر می‌رسد که …",
+       "fa": "از همه مهم‌تر …",
        "tr": "",
-       "de": "Es scheint, dass …"
+       "de": "Vor allem …"
       },
       {
        "fa": "… ارزش دیدن دارد.",
@@ -846,19 +1821,19 @@
        "de": "… ist sehenswert."
       },
       {
+       "fa": "به نظر می‌رسد که …",
+       "tr": "",
+       "de": "Es scheint, dass …"
+      },
+      {
        "fa": "اگر فرصت دارید، حتماً …",
        "tr": "",
        "de": "Wenn Sie Gelegenheit haben, unbedingt …"
       },
       {
-       "fa": "تا جایی که می‌دانم …",
+       "fa": "… مرا به یاد … می‌اندازد.",
        "tr": "",
-       "de": "Soweit ich weiß, …"
-      },
-      {
-       "fa": "آنچه بیش از همه توجه مرا جلب کرد …",
-       "tr": "",
-       "de": "Was mir am meisten auffiel, …"
+       "de": "… erinnert mich an …"
       }
      ],
      "titel": "Was bedeutet die Wendung?"
@@ -870,29 +1845,9 @@
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
-        "… ist sehenswert.",
         "Wenn Sie Gelegenheit haben, unbedingt …",
-        "Soweit ich weiß, …"
-       ],
-       "richtig": 0,
-       "fa": "… ارزش دیدن دارد."
-      },
-      {
-       "frage": "Was bedeutet der Satz?",
-       "optionen": [
-        "Vor allem …",
-        "… ist sehenswert.",
-        "Soweit ich weiß, …"
-       ],
-       "richtig": 0,
-       "fa": "از همه مهم‌تر …"
-      },
-      {
-       "frage": "Was bedeutet der Satz?",
-       "optionen": [
-        "Wenn Sie Gelegenheit haben, unbedingt …",
-        "Was mir am meisten auffiel, …",
-        "Die Atmosphäre von … ist sehr angenehm."
+        "Soweit ich weiß, …",
+        "Es scheint, dass …"
        ],
        "richtig": 0,
        "fa": "اگر فرصت دارید، حتماً …"
@@ -900,9 +1855,19 @@
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
+        "Die Atmosphäre von … ist sehr angenehm.",
+        "Was mir am meisten auffiel, …",
+        "… ist sehenswert."
+       ],
+       "richtig": 0,
+       "fa": "فضای … بسیار دلنشین است."
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
         "… erinnert mich an …",
-        "Es scheint, dass …",
-        "Wenn Sie Gelegenheit haben, unbedingt …"
+        "Was mir am meisten auffiel, …",
+        "Soweit ich weiß, …"
        ],
        "richtig": 0,
        "fa": "… مرا به یاد … می‌اندازد."
@@ -911,8 +1876,8 @@
        "frage": "Was bedeutet der Satz?",
        "optionen": [
         "Was mir am meisten auffiel, …",
-        "Soweit ich weiß, …",
-        "Es scheint, dass …"
+        "Es scheint, dass …",
+        "Wenn Sie Gelegenheit haben, unbedingt …"
        ],
        "richtig": 0,
        "fa": "آنچه بیش از همه توجه مرا جلب کرد …"
@@ -921,11 +1886,21 @@
        "frage": "Was bedeutet der Satz?",
        "optionen": [
         "Soweit ich weiß, …",
-        "Vor allem …",
+        "… ist sehenswert.",
         "Was mir am meisten auffiel, …"
        ],
        "richtig": 0,
        "fa": "تا جایی که می‌دانم …"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "… ist sehenswert.",
+        "Es scheint, dass …",
+        "… erinnert mich an …"
+       ],
+       "richtig": 0,
+       "fa": "… ارزش دیدن دارد."
       }
      ]
     },

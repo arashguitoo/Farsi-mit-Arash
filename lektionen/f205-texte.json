@@ -2,7 +2,7 @@
  "id": "tx",
  "art": "texte",
  "titel": "Sachtext & Dialoge",
- "beschreibung": "Sachtext, Wortschatz im Kontext, zwei Dialoge, Redemittel und Schreibaufgabe.",
+ "beschreibung": "Sachtext, Wortschatz im Kontext, Alltagstext, drei Dialoge, Infotexte, Redemittel und Schreibaufgabe.",
  "stationen": [
   {
    "id": "t1",
@@ -12,7 +12,7 @@
     {
      "typ": "info",
      "titel": "Neue Wörter im Text",
-     "text": "<p><span class='fa'>شفاهی</span> – mündlich · <span class='fa'>گردآوری کردن</span> – sammeln, zusammentragen · <span class='fa'>ناملموس</span> – immateriell · <span class='fa'>حال و هوا</span> – Stimmung, Atmosphäre · <span class='fa'>باشکوه</span> – prächtig, erhaben · <span class='fa'>از حفظ دانستن</span> – auswendig können · <span class='fa'>ساز زهی</span> – Saiteninstrument · <span class='fa'>ساز کوبه‌ای</span> – Schlaginstrument · <span class='fa'>الگو</span> – Vorbild</p>",
+     "text": "<p><span class='fa'>دربار</span> – Hof (eines Herrschers) · <span class='fa'>شفاهی</span> – mündlich · <span class='fa'>گردآوری کردن</span> – sammeln · <span class='fa'>نسبت دادن</span> – zuschreiben · <span class='fa'>ناملموس</span> – immateriell · <span class='fa'>فرعی</span> – Neben- · <span class='fa'>حال و هوا</span> – Stimmung · <span class='fa'>نیم‌پرده</span> – Halbton · <span class='fa'>ابداع کردن</span> – erfinden · <span class='fa'>رواج دادن</span> – verbreiten · <span class='fa'>کاسه</span> – Korpus (eines Instruments) · <span class='fa'>چوب توت</span> – Maulbeerholz · <span class='fa'>ساز زهی / کوبه‌ای</span> – Saiten- / Schlaginstrument · <span class='fa'>شناساندن</span> – bekannt machen</p>",
      "stil": "merke"
     },
     {
@@ -24,6 +24,11 @@
        "fa": "موسیقی کلاسیک ایرانی یکی از کهن‌ترین سنت‌های موسیقی در جهان است.",
        "tr": "",
        "de": "Die klassische persische Musik ist eine der ältesten Musiktraditionen der Welt."
+      },
+      {
+       "fa": "در منابع تاریخی از نوازندگان مشهور دربار ساسانی، مانند باربد، یاد شده است، اما از موسیقی آن دوران چیزی جز نام‌ها و توصیف‌ها به ما نرسیده است.",
+       "tr": "",
+       "de": "Historische Quellen erwähnen berühmte Musiker am Hof der Sasaniden wie Barbad, doch von der Musik jener Zeit sind uns nur Namen und Beschreibungen überliefert."
       },
       {
        "fa": "این موسیقی قرن‌ها از استاد به شاگرد و بیشتر به صورت شفاهی منتقل شده است.",
@@ -41,14 +46,39 @@
        "de": "Der Radif wurde im 19. Jahrhundert, in der Kadscharenzeit, von Musikmeistern gesammelt und geordnet."
       },
       {
+       "fa": "ردیفی که امروز بیشتر از همه آموزش داده می‌شود، به پسران علی‌اکبر فراهانی، نوازندگان مشهور تار در دربار قاجار، نسبت داده می‌شود.",
+       "tr": "",
+       "de": "Der Radif, der heute am häufigsten unterrichtet wird, geht auf die Söhne von Ali-Akbar Farahani zurück, berühmte Tar-Spieler am Kadscharenhof."
+      },
+      {
+       "fa": "شاگردان آنها این ردیف را حفظ کردند و در قرن بیستم نسخه‌های مختلفی از آن با نت نوشته و ضبط شد.",
+       "tr": "",
+       "de": "Ihre Schüler bewahrten diesen Radif, und im 20. Jahrhundert wurden verschiedene Fassungen davon in Noten aufgeschrieben und aufgenommen."
+      },
+      {
        "fa": "ردیف موسیقی ایرانی در سال ۲۰۰۹ در فهرست میراث فرهنگی ناملموس یونسکو ثبت شد.",
        "tr": "",
        "de": "Der Radif der persischen Musik wurde 2009 in die UNESCO-Liste des immateriellen Kulturerbes eingetragen."
       },
       {
+       "fa": "با این ثبت، ردیف نه‌فقط میراث ایران، بلکه بخشی از میراث فرهنگی همه‌ی بشر به شمار می‌رود که حفظ آن برای نسل‌های آینده اهمیت دارد.",
+       "tr": "",
+       "de": "Mit dieser Eintragung gilt der Radif nicht nur als Erbe Irans, sondern als Teil des kulturellen Erbes der gesamten Menschheit, dessen Bewahrung für künftige Generationen wichtig ist."
+      },
+      {
        "fa": "ردیف به هفت دستگاه و پنج آواز تقسیم می‌شود.",
        "tr": "",
        "de": "Der Radif gliedert sich in sieben Dastgahs und fünf Avaz."
+      },
+      {
+       "fa": "هفت دستگاه عبارت‌اند از: شور، ماهور، همایون، سه‌گاه، چهارگاه، نوا و راست‌پنجگاه.",
+       "tr": "",
+       "de": "Die sieben Dastgahs sind: Schur, Mahur, Homayun, Segah, Tschahargah, Nava und Rast-Pandschgah."
+      },
+      {
+       "fa": "آوازها، مثل ابوعطا، دشتی و بیات اصفهان، از دستگاه‌های بزرگ‌تر جدا شده‌اند و به همین دلیل گاهی «دستگاه‌های فرعی» نامیده می‌شوند.",
+       "tr": "",
+       "de": "Die Avaz, etwa Abu-Ata, Daschti und Bayat-e Esfahan, haben sich von den größeren Dastgahs abgezweigt und werden deshalb manchmal ‹Neben-Dastgahs› genannt."
       },
       {
        "fa": "دستگاه‌هایی مثل شور، ماهور، همایون و سه‌گاه هر کدام حال و هوای خاص خود را دارند.",
@@ -66,6 +96,11 @@
        "de": "Jedes Dastgah besteht aus vielen Gusches; das sind kurze melodische Einheiten, die der Musiker der Reihe nach spielt."
       },
       {
+       "fa": "هر گوشه نام خودش را دارد؛ بعضی از این نام‌ها به شهرها و مناطق اشاره دارند و بعضی به شخصیت‌های داستانی.",
+       "tr": "",
+       "de": "Jede Gusche hat ihren eigenen Namen; manche dieser Namen verweisen auf Städte und Regionen, andere auf Figuren aus Erzählungen."
+      },
+      {
        "fa": "اما موسیقی ایرانی فقط تکرار ردیف نیست: بداهه‌نوازی قلب این موسیقی است.",
        "tr": "",
        "de": "Doch persische Musik ist keine bloße Wiederholung des Radif: Improvisation ist ihr Herzstück."
@@ -76,14 +111,49 @@
        "de": "Ein guter Musiker kennt den Radif auswendig, spielt ihn aber jedes Mal auf neue Weise."
       },
       {
-       "fa": "سازهای این موسیقی هم ویژگی‌های خاصی دارند.",
+       "fa": "به همین دلیل، دو اجرای یک قطعه از یک نوازنده، حتی در یک شب، هرگز کاملا یکسان نیست.",
        "tr": "",
-       "de": "Auch die Instrumente dieser Musik haben besondere Merkmale."
+       "de": "Deshalb sind zwei Aufführungen desselben Stücks durch denselben Musiker, selbst am selben Abend, nie völlig gleich."
+      },
+      {
+       "fa": "یکی از ویژگی‌های مهم این موسیقی فاصله‌هایی است که کوچک‌تر از نیم‌پرده‌اند و در موسیقی غربی وجود ندارند.",
+       "tr": "",
+       "de": "Ein wichtiges Merkmal dieser Musik sind Intervalle, die kleiner als ein Halbton sind und in der westlichen Musik nicht vorkommen."
+      },
+      {
+       "fa": "علینقی وزیری، موسیقی‌دان و آهنگساز اوایل قرن بیستم، برای نوشتن این فاصله‌ها دو نشانه‌ی تازه به نام «سری» و «کرن» ابداع کرد.",
+       "tr": "",
+       "de": "Ali-Naghi Vaziri, Musiker und Komponist des frühen 20. Jahrhunderts, erfand zwei neue Zeichen namens ‹Sori› und ‹Koron›, um diese Intervalle zu notieren."
+      },
+      {
+       "fa": "وزیری همچنین یکی از نخستین مدرسه‌های موسیقی به سبک جدید را در تهران تأسیس کرد و آموزش موسیقی با نت را رواج داد.",
+       "tr": "",
+       "de": "Vaziri gründete außerdem eine der ersten modernen Musikschulen in Teheran und verbreitete den Musikunterricht nach Noten."
+      },
+      {
+       "fa": "او کتاب «دستور تار» را هم نوشت که از نخستین کتاب‌های آموزش ساز با نت در ایران است.",
+       "tr": "",
+       "de": "Er schrieb auch die ‹Tar-Schule›, eines der ersten Lehrbücher in Iran, mit denen man ein Instrument nach Noten lernt."
+      },
+      {
+       "fa": "سازهای این موسیقی هم ویژگی‌های خاصی دارند و هر کدام رنگ صدای ویژه‌ی خود را به این موسیقی می‌دهند.",
+       "tr": "",
+       "de": "Auch die Instrumente dieser Musik haben besondere Merkmale, und jedes verleiht ihr seine eigene Klangfarbe."
       },
       {
        "fa": "تار و سه‌تار سازهای زهی با دسته‌ی بلند هستند و با مضراب یا ناخن نواخته می‌شوند.",
        "tr": "",
        "de": "Tar und Setar sind Saiteninstrumente mit langem Hals und werden mit einem Plektrum oder dem Fingernagel gespielt."
+      },
+      {
+       "fa": "کاسه‌ی تار معمولا از چوب توت ساخته می‌شود و روی دهانه‌ی آن پوست نازکی کشیده‌اند.",
+       "tr": "",
+       "de": "Der Korpus der Tar wird meist aus Maulbeerholz gefertigt, und über seine Öffnung ist eine dünne Haut gespannt."
+      },
+      {
+       "fa": "تار امروزی شش سیم دارد و شکل کنونی خود را در دوره‌ی قاجار پیدا کرد.",
+       "tr": "",
+       "de": "Die heutige Tar hat sechs Saiten und erhielt ihre jetzige Form in der Kadscharenzeit."
       },
       {
        "fa": "نام سه‌تار به معنای «سه سیم» است، اما این ساز امروز معمولا چهار سیم دارد.",
@@ -96,14 +166,34 @@
        "de": "Die Santur hat Dutzende Saiten, die der Spieler mit zwei leichten Holzschlägeln anschlägt."
       },
       {
+       "fa": "در سنتور رایج امروزی، ۷۲ سیم در گروه‌های چهارتایی روی خرک‌های کوچک قرار گرفته‌اند.",
+       "tr": "",
+       "de": "Bei der heute üblichen Santur liegen 72 Saiten in Vierergruppen auf kleinen Stegen."
+      },
+      {
+       "fa": "فرامرز پایور و پرویز مشکاتیان از استادان بزرگ سنتور در قرن بیستم بودند و قطعه‌های آنها هنوز در آموزشگاه‌ها نواخته می‌شود.",
+       "tr": "",
+       "de": "Faramarz Payvar und Parviz Meshkatian gehörten zu den großen Santurmeistern des 20. Jahrhunderts, und ihre Stücke werden in den Musikschulen bis heute gespielt."
+      },
+      {
        "fa": "کمانچه را با آرشه می‌نوازند و صدای آن به صدای انسان نزدیک است.",
        "tr": "",
        "de": "Die Kamantsche wird mit einem Bogen gespielt, und ihr Klang ähnelt der menschlichen Stimme."
       },
       {
-       "fa": "تنبک و دف سازهای کوبه‌ای هستند و ریتم را نگه می‌دارند.",
+       "fa": "کیهان کلهر، نوازنده‌ی مشهور کمانچه، با هم‌نوازی با نوازندگانی از فرهنگ‌های مختلف این ساز را در سراسر جهان شناساند.",
        "tr": "",
-       "de": "Tombak und Daf sind Schlaginstrumente und halten den Rhythmus."
+       "de": "Kayhan Kalhor, ein berühmter Kamantsche-Spieler, hat das Instrument durch das Zusammenspiel mit Musikern aus verschiedenen Kulturen weltweit bekannt gemacht."
+      },
+      {
+       "fa": "تنبک و دف سازهای کوبه‌ای هستند و ریتم را نگه می‌دارند؛ تنبک را روی پا می‌گذارند و با انگشتان هر دو دست می‌نوازند.",
+       "tr": "",
+       "de": "Tombak und Daf sind Schlaginstrumente und halten den Rhythmus; die Tombak legt man auf den Oberschenkel und spielt sie mit den Fingern beider Hände."
+      },
+      {
+       "fa": "نی از یک تکه نی ساده با چند سوراخ ساخته می‌شود و صدایی گرم و کمی گرفته دارد.",
+       "tr": "",
+       "de": "Die Ney wird aus einem einfachen Stück Schilfrohr mit einigen Löchern gefertigt und hat einen warmen, leicht rauen Klang."
       },
       {
        "fa": "در کنار سازها، آواز نقش بسیار مهمی دارد و خواننده معمولا شعرهای شاعران کلاسیک مثل حافظ و سعدی را می‌خواند.",
@@ -121,6 +211,16 @@
        "de": "Seine kunstvollen Tahrirs, bei denen die Stimme schnell zwischen den Tönen auf und ab springt, sind für junge Sänger noch heute ein Vorbild."
       },
       {
+       "fa": "شجریان در سال‌های آخر عمرش چند ساز تازه هم طراحی کرد تا رنگ صدای موسیقی ایرانی را گسترده‌تر کند.",
+       "tr": "",
+       "de": "In seinen letzten Lebensjahren entwarf Schadscharian auch einige neue Instrumente, um die Klangfarben der persischen Musik zu erweitern."
+      },
+      {
+       "fa": "در دهه‌های میانی قرن بیستم، برنامه‌ی رادیویی «گل‌ها» نقش بزرگی در شناساندن این موسیقی به مردم داشت.",
+       "tr": "",
+       "de": "In der Mitte des 20. Jahrhunderts trug die Radiosendung ‹Golha› viel dazu bei, diese Musik in der Bevölkerung bekannt zu machen."
+      },
+      {
        "fa": "در کنار موسیقی کلاسیک، موسیقی پاپ هم در میان ایرانیان بسیار پرطرفدار است.",
        "tr": "",
        "de": "Neben der klassischen Musik ist auch Popmusik unter Iranern sehr beliebt."
@@ -131,9 +231,19 @@
        "de": "Nach der Revolution von 1979 gingen viele Popsänger ins Ausland, und Los Angeles wurde zum Zentrum der iranischen Popmusik in der Diaspora."
       },
       {
+       "fa": "ترانه‌های خوانندگانی مانند گوگوش، که در دهه‌ی ۱۹۷۰ در تهران بسیار پرطرفدار بودند، هنوز هم در میان ایرانیان در همه‌جای دنیا شنیده می‌شود.",
+       "tr": "",
+       "de": "Die Lieder von Sängerinnen und Sängern wie Googoosh, die in den 1970er-Jahren in Teheran sehr beliebt waren, werden unter Iranern auf der ganzen Welt bis heute gehört."
+      },
+      {
        "fa": "امروز بسیاری از نوازندگان جوان، چه در ایران و چه در خارج، سازهای سنتی را با سبک‌های جدید مثل جاز و موسیقی الکترونیک ترکیب می‌کنند.",
        "tr": "",
        "de": "Heute verbinden viele junge Musiker, ob in Iran oder im Ausland, traditionelle Instrumente mit neuen Stilen wie Jazz und elektronischer Musik."
+      },
+      {
+       "fa": "در شهرهای بزرگ ایران هم آموزشگاه‌های موسیقی پر از هنرجویانی است که سنتور، تار یا کمانچه یاد می‌گیرند.",
+       "tr": "",
+       "de": "Auch in den großen Städten Irans sind die Musikschulen voller Schülerinnen und Schüler, die Santur, Tar oder Kamantsche lernen."
       },
       {
        "fa": "به این ترتیب، این هنر کهن همچنان زنده می‌ماند و مخاطبان تازه‌ای پیدا می‌کند.",
@@ -185,8 +295,29 @@
         "falsch"
        ],
        "richtig": 0,
+       "fa": "نشانه‌های «سری» و «کرن» را علینقی وزیری ابداع کرد.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
        "fa": "سه‌تار امروز معمولا چهار سیم دارد.",
        "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "سنتور رایج امروزی هجده سیم دارد.",
+       "fest": true,
+       "erkl": "Sie hat <b>72</b> Saiten in Vierergruppen."
       },
       {
        "frage": "Richtig oder falsch?",
@@ -243,6 +374,15 @@
        "richtig": 0
       },
       {
+       "frage": "Wozu dienen die Zeichen ‹Sori› und ‹Koron›?",
+       "optionen": [
+        "um Intervalle kleiner als einen Halbton zu notieren",
+        "um das Tempo anzugeben",
+        "um die Lautstärke zu markieren"
+       ],
+       "richtig": 0
+      },
+      {
        "frage": "Welche Instrumente halten den Rhythmus?",
        "optionen": [
         "Tombak und Daf",
@@ -252,11 +392,11 @@
        "richtig": 0
       },
       {
-       "frage": "Was singen klassische Sänger meist?",
+       "frage": "Was war ‹Golha›?",
        "optionen": [
-        "Gedichte von Hafes und Saadi",
-        "eigene Popsongs",
-        "europäische Volkslieder"
+        "eine Radiosendung mit Musik und Dichtung",
+        "eine Musikschule in Teheran",
+        "ein Popalbum aus Los Angeles"
        ],
        "richtig": 0
       }
@@ -267,6 +407,11 @@
      "titel": "Was kommt zuerst?",
      "frage": "Bring die Sätze in die Reihenfolge des Textes.",
      "items": [
+      {
+       "fa": "در منابع تاریخی از نوازندگان مشهور دربار ساسانی، مانند باربد، یاد شده است، اما از موسیقی آن دوران چیزی جز نام‌ها و توصیف‌ها به ما نرسیده است.",
+       "tr": "",
+       "de": "Historische Quellen erwähnen berühmte Musiker am Hof der Sasaniden wie Barbad, doch von der Musik jener Zeit sind uns nur Namen und Beschreibungen überliefert."
+      },
       {
        "fa": "این موسیقی قرن‌ها از استاد به شاگرد و بیشتر به صورت شفاهی منتقل شده است.",
        "tr": "",
@@ -283,19 +428,14 @@
        "de": "Der Radif wurde im 19. Jahrhundert, in der Kadscharenzeit, von Musikmeistern gesammelt und geordnet."
       },
       {
-       "fa": "ردیف موسیقی ایرانی در سال ۲۰۰۹ در فهرست میراث فرهنگی ناملموس یونسکو ثبت شد.",
+       "fa": "ردیفی که امروز بیشتر از همه آموزش داده می‌شود، به پسران علی‌اکبر فراهانی، نوازندگان مشهور تار در دربار قاجار، نسبت داده می‌شود.",
        "tr": "",
-       "de": "Der Radif der persischen Musik wurde 2009 in die UNESCO-Liste des immateriellen Kulturerbes eingetragen."
+       "de": "Der Radif, der heute am häufigsten unterrichtet wird, geht auf die Söhne von Ali-Akbar Farahani zurück, berühmte Tar-Spieler am Kadscharenhof."
       },
       {
-       "fa": "ردیف به هفت دستگاه و پنج آواز تقسیم می‌شود.",
+       "fa": "شاگردان آنها این ردیف را حفظ کردند و در قرن بیستم نسخه‌های مختلفی از آن با نت نوشته و ضبط شد.",
        "tr": "",
-       "de": "Der Radif gliedert sich in sieben Dastgahs und fünf Avaz."
-      },
-      {
-       "fa": "دستگاه‌هایی مثل شور، ماهور، همایون و سه‌گاه هر کدام حال و هوای خاص خود را دارند.",
-       "tr": "",
-       "de": "Dastgahs wie Schur, Mahur, Homayun und Segah haben jeweils ihre eigene Stimmung."
+       "de": "Ihre Schüler bewahrten diesen Radif, und im 20. Jahrhundert wurden verschiedene Fassungen davon in Noten aufgeschrieben und aufgenommen."
       }
      ]
     }
@@ -311,11 +451,11 @@
      "titel": "Welches Wort fehlt im Text?",
      "fragen": [
       {
-       "frage": "<span class='fa'>این موسیقی قرن‌ها از استاد به ___ و بیشتر به صورت شفاهی منتقل شده است.</span><br><span class='mini'>Diese Musik wurde über Jahrhunderte vom Meister an den Schüler weitergegeben, meist mündlich.</span>",
+       "frage": "<span class='fa'>این موسیقی قرن‌ها از ___ به شاگرد و بیشتر به صورت شفاهی منتقل شده است.</span><br><span class='mini'>Diese Musik wurde über Jahrhunderte vom Meister an den Schüler weitergegeben, meist mündlich.</span>",
        "optionen": [
-        "شاگرد",
-        "هوادار",
-        "مخاطب"
+        "استاد",
+        "تصنیف",
+        "نی"
        ],
        "richtig": 0,
        "optFa": true,
@@ -326,8 +466,8 @@
        "frage": "<span class='fa'>پایه‌ی آن مجموعه‌ای از نغمه‌های قدیمی است که «___» نام دارد.</span><br><span class='mini'>Ihre Grundlage ist eine Sammlung alter Melodien, die ‹Radif› heißt.</span>",
        "optionen": [
         "ردیف",
-        "عود",
-        "نوازنده"
+        "آرشه",
+        "گام"
        ],
        "richtig": 0,
        "optFa": true,
@@ -338,8 +478,8 @@
        "frage": "<span class='fa'>___ را در قرن نوزدهم، در دوره‌ی قاجار، استادان موسیقی گردآوری و منظم کردند.</span><br><span class='mini'>Der Radif wurde im 19. Jahrhundert, in der Kadscharenzeit, von Musikmeistern gesammelt und geordnet.</span>",
        "optionen": [
         "ردیف",
-        "مخاطب",
-        "سنتور"
+        "هنرجو",
+        "گوشه"
        ],
        "richtig": 0,
        "optFa": true,
@@ -347,40 +487,40 @@
        "erkl": "<span class='fa'>ردیف را در قرن نوزدهم، در دوره‌ی قاجار، استادان موسیقی گردآوری و منظم کردند.</span>"
       },
       {
+       "frage": "<span class='fa'>ردیفی که امروز بیشتر از همه آموزش داده می‌شود، به پسران علی‌اکبر فراهانی، نوازندگان مشهور ___ در دربار قاجار، نسبت داده می‌شود.</span><br><span class='mini'>Der Radif, der heute am häufigsten unterrichtet wird, geht auf die Söhne von Ali-Akbar Farahani zurück, berühmte Tar-Spieler am Kadscharenhof.</span>",
+       "optionen": [
+        "تار",
+        "بداهه‌نوازی",
+        "سیم"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>ردیفی که امروز بیشتر از همه آموزش داده می‌شود، به پسران علی‌اکبر فراهانی، نوازندگان مشهور تار در دربار قاجار، نسبت داده می‌شود.</span>"
+      },
+      {
+       "frage": "<span class='fa'>شاگردان آنها این ___ را حفظ کردند و در قرن بیستم نسخه‌های مختلفی از آن با نت نوشته و ضبط شد.</span><br><span class='mini'>Ihre Schüler bewahrten diesen Radif, und im 20. Jahrhundert wurden verschiedene Fassungen davon in Noten aufgeschrieben und aufgenommen.</span>",
+       "optionen": [
+        "ردیف",
+        "نی",
+        "بداهه‌نوازی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>شاگردان آنها این ردیف را حفظ کردند و در قرن بیستم نسخه‌های مختلفی از آن با نت نوشته و ضبط شد.</span>"
+      },
+      {
        "frage": "<span class='fa'>___ موسیقی ایرانی در سال ۲۰۰۹ در فهرست میراث فرهنگی ناملموس یونسکو ثبت شد.</span><br><span class='mini'>Der Radif der persischen Musik wurde 2009 in die UNESCO-Liste des immateriellen Kulturerbes eingetragen.</span>",
        "optionen": [
         "ردیف",
-        "برون‌مرز",
-        "مخاطب"
+        "خرک",
+        "دستگاه"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
        "erkl": "<span class='fa'>ردیف موسیقی ایرانی در سال ۲۰۰۹ در فهرست میراث فرهنگی ناملموس یونسکو ثبت شد.</span>"
-      },
-      {
-       "frage": "<span class='fa'>ردیف به هفت ___ و پنج آواز تقسیم می‌شود.</span><br><span class='mini'>Der Radif gliedert sich in sieben Dastgahs und fünf Avaz.</span>",
-       "optionen": [
-        "دستگاه",
-        "آرشه",
-        "هوادار"
-       ],
-       "richtig": 0,
-       "optFa": true,
-       "hoeren": false,
-       "erkl": "<span class='fa'>ردیف به هفت دستگاه و پنج آواز تقسیم می‌شود.</span>"
-      },
-      {
-       "frage": "<span class='fa'>هر دستگاه از تعداد زیادی گوشه تشکیل شده است؛ گوشه‌ها قطعه‌های کوتاه ملودی هستند که ___ آنها را به ترتیب اجرا می‌کند.</span><br><span class='mini'>Jedes Dastgah besteht aus vielen Gusches; das sind kurze melodische Einheiten, die der Musiker der Reihe nach spielt.</span>",
-       "optionen": [
-        "نوازنده",
-        "بداهه‌نوازی",
-        "ضرب"
-       ],
-       "richtig": 0,
-       "optFa": true,
-       "hoeren": false,
-       "erkl": "<span class='fa'>هر دستگاه از تعداد زیادی گوشه تشکیل شده است؛ گوشه‌ها قطعه‌های کوتاه ملودی هستند که نوازنده آنها را به ترتیب اجرا می‌کند.</span>"
       }
      ]
     },
@@ -389,23 +529,89 @@
      "titel": "Welches Wort fehlt im Text?",
      "fragen": [
       {
+       "frage": "<span class='fa'>با این ثبت، ___ نه‌فقط میراث ایران، بلکه بخشی از میراث فرهنگی همه‌ی بشر به شمار می‌رود که حفظ آن برای نسل‌های آینده اهمیت دارد.</span><br><span class='mini'>Mit dieser Eintragung gilt der Radif nicht nur als Erbe Irans, sondern als Teil des kulturellen Erbes der gesamten Menschheit, dessen Bewahrung für künftige Generationen wichtig ist.</span>",
+       "optionen": [
+        "ردیف",
+        "تکنواز",
+        "اجرا"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>با این ثبت، ردیف نه‌فقط میراث ایران، بلکه بخشی از میراث فرهنگی همه‌ی بشر به شمار می‌رود که حفظ آن برای نسل‌های آینده اهمیت دارد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>ردیف به هفت ___ و پنج آواز تقسیم می‌شود.</span><br><span class='mini'>Der Radif gliedert sich in sieben Dastgahs und fünf Avaz.</span>",
+       "optionen": [
+        "دستگاه",
+        "اجرا",
+        "نی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>ردیف به هفت دستگاه و پنج آواز تقسیم می‌شود.</span>"
+      },
+      {
+       "frage": "<span class='fa'>هفت ___ عبارت‌اند از: شور، ماهور، همایون، سه‌گاه، چهارگاه، نوا و راست‌پنجگاه.</span><br><span class='mini'>Die sieben Dastgahs sind: Schur, Mahur, Homayun, Segah, Tschahargah, Nava und Rast-Pandschgah.</span>",
+       "optionen": [
+        "دستگاه",
+        "نوازنده",
+        "مترونوم"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>هفت دستگاه عبارت‌اند از: شور، ماهور، همایون، سه‌گاه، چهارگاه، نوا و راست‌پنجگاه.</span>"
+      },
+      {
+       "frage": "<span class='fa'>هر دستگاه از تعداد زیادی گوشه تشکیل شده است؛ گوشه‌ها قطعه‌های کوتاه ملودی هستند که ___ آنها را به ترتیب اجرا می‌کند.</span><br><span class='mini'>Jedes Dastgah besteht aus vielen Gusches; das sind kurze melodische Einheiten, die der Musiker der Reihe nach spielt.</span>",
+       "optionen": [
+        "نوازنده",
+        "تار",
+        "ریتم"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>هر دستگاه از تعداد زیادی گوشه تشکیل شده است؛ گوشه‌ها قطعه‌های کوتاه ملودی هستند که نوازنده آنها را به ترتیب اجرا می‌کند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>هر ___ نام خودش را دارد؛ بعضی از این نام‌ها به شهرها و مناطق اشاره دارند و بعضی به شخصیت‌های داستانی.</span><br><span class='mini'>Jede Gusche hat ihren eigenen Namen; manche dieser Namen verweisen auf Städte und Regionen, andere auf Figuren aus Erzählungen.</span>",
+       "optionen": [
+        "گوشه",
+        "سازساز",
+        "سکوت"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>هر گوشه نام خودش را دارد؛ بعضی از این نام‌ها به شهرها و مناطق اشاره دارند و بعضی به شخصیت‌های داستانی.</span>"
+      },
+      {
        "frage": "<span class='fa'>اما موسیقی ایرانی فقط تکرار ردیف نیست: ___ قلب این موسیقی است.</span><br><span class='mini'>Doch persische Musik ist keine bloße Wiederholung des Radif: Improvisation ist ihr Herzstück.</span>",
        "optionen": [
         "بداهه‌نوازی",
-        "برون‌مرز",
-        "نغمه"
+        "ارکستر",
+        "تمرین"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
        "erkl": "<span class='fa'>اما موسیقی ایرانی فقط تکرار ردیف نیست: بداهه‌نوازی قلب این موسیقی است.</span>"
-      },
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort fehlt im Text?",
+     "fragen": [
       {
        "frage": "<span class='fa'>نوازنده‌ی خوب ___ را از حفظ می‌داند، اما هر بار آن را به شکلی تازه می‌نوازد.</span><br><span class='mini'>Ein guter Musiker kennt den Radif auswendig, spielt ihn aber jedes Mal auf neue Weise.</span>",
        "optionen": [
         "ردیف",
-        "سنتور",
-        "کمانچه"
+        "بداهه‌نوازی",
+        "عود"
        ],
        "richtig": 0,
        "optFa": true,
@@ -413,10 +619,46 @@
        "erkl": "<span class='fa'>نوازنده‌ی خوب ردیف را از حفظ می‌داند، اما هر بار آن را به شکلی تازه می‌نوازد.</span>"
       },
       {
+       "frage": "<span class='fa'>به همین دلیل، دو اجرای یک قطعه از یک ___، حتی در یک شب، هرگز کاملا یکسان نیست.</span><br><span class='mini'>Deshalb sind zwei Aufführungen desselben Stücks durch denselben Musiker, selbst am selben Abend, nie völlig gleich.</span>",
+       "optionen": [
+        "نوازنده",
+        "ردیف",
+        "گام"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>به همین دلیل، دو اجرای یک قطعه از یک نوازنده، حتی در یک شب، هرگز کاملا یکسان نیست.</span>"
+      },
+      {
+       "frage": "<span class='fa'>وزیری همچنین یکی از نخستین مدرسه‌های موسیقی به سبک جدید را در تهران تأسیس کرد و آموزش موسیقی با ___ را رواج داد.</span><br><span class='mini'>Vaziri gründete außerdem eine der ersten modernen Musikschulen in Teheran und verbreitete den Musikunterricht nach Noten.</span>",
+       "optionen": [
+        "نت",
+        "کنسرت",
+        "دف"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>وزیری همچنین یکی از نخستین مدرسه‌های موسیقی به سبک جدید را در تهران تأسیس کرد و آموزش موسیقی با نت را رواج داد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>او کتاب «دستور ___» را هم نوشت که از نخستین کتاب‌های آموزش ساز با نت در ایران است.</span><br><span class='mini'>Er schrieb auch die ‹Tar-Schule›, eines der ersten Lehrbücher in Iran, mit denen man ein Instrument nach Noten lernt.</span>",
+       "optionen": [
+        "تار",
+        "بداهه‌نوازی",
+        "آرشه"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>او کتاب «دستور تار» را هم نوشت که از نخستین کتاب‌های آموزش ساز با نت در ایران است.</span>"
+      },
+      {
        "frage": "<span class='fa'>تار و ___ سازهای زهی با دسته‌ی بلند هستند و با مضراب یا ناخن نواخته می‌شوند.</span><br><span class='mini'>Tar und Setar sind Saiteninstrumente mit langem Hals und werden mit einem Plektrum oder dem Fingernagel gespielt.</span>",
        "optionen": [
         "سه‌تار",
-        "آواز",
+        "خواننده",
         "دف"
        ],
        "richtig": 0,
@@ -425,40 +667,16 @@
        "erkl": "<span class='fa'>تار و سه‌تار سازهای زهی با دسته‌ی بلند هستند و با مضراب یا ناخن نواخته می‌شوند.</span>"
       },
       {
-       "frage": "<span class='fa'>نام ___ به معنای «سه سیم» است، اما این ساز امروز معمولا چهار سیم دارد.</span><br><span class='mini'>Der Name Setar bedeutet ‹drei Saiten›, doch das Instrument hat heute meist vier Saiten.</span>",
+       "frage": "<span class='fa'>کاسه‌ی ___ معمولا از چوب توت ساخته می‌شود و روی دهانه‌ی آن پوست نازکی کشیده‌اند.</span><br><span class='mini'>Der Korpus der Tar wird meist aus Maulbeerholz gefertigt, und über seine Öffnung ist eine dünne Haut gespannt.</span>",
        "optionen": [
-        "سه‌تار",
-        "نوازنده",
-        "هوادار"
-       ],
-       "richtig": 0,
-       "optFa": true,
-       "hoeren": false,
-       "erkl": "<span class='fa'>نام سه‌تار به معنای «سه سیم» است، اما این ساز امروز معمولا چهار سیم دارد.</span>"
-      },
-      {
-       "frage": "<span class='fa'>سنتور ده‌ها سیم دارد که ___ با دو مضراب چوبی سبک روی آنها می‌زند.</span><br><span class='mini'>Die Santur hat Dutzende Saiten, die der Spieler mit zwei leichten Holzschlägeln anschlägt.</span>",
-       "optionen": [
-        "نوازنده",
-        "مخاطب",
-        "هوادار"
-       ],
-       "richtig": 0,
-       "optFa": true,
-       "hoeren": false,
-       "erkl": "<span class='fa'>سنتور ده‌ها سیم دارد که نوازنده با دو مضراب چوبی سبک روی آنها می‌زند.</span>"
-      },
-      {
-       "frage": "<span class='fa'>___ را با آرشه می‌نوازند و صدای آن به صدای انسان نزدیک است.</span><br><span class='mini'>Die Kamantsche wird mit einem Bogen gespielt, und ihr Klang ähnelt der menschlichen Stimme.</span>",
-       "optionen": [
-        "کمانچه",
         "تار",
-        "آلبوم"
+        "بداهه‌نوازی",
+        "مخاطب"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
-       "erkl": "<span class='fa'>کمانچه را با آرشه می‌نوازند و صدای آن به صدای انسان نزدیک است.</span>"
+       "erkl": "<span class='fa'>کاسه‌ی تار معمولا از چوب توت ساخته می‌شود و روی دهانه‌ی آن پوست نازکی کشیده‌اند.</span>"
       }
      ]
     },
@@ -483,6 +701,11 @@
        "de": "Improvisation ist das Herzstück dieser Musik."
       },
       {
+       "fa": "علینقی وزیری برای فاصله‌های کوچک این موسیقی نشانه‌های تازه‌ای ابداع کرد.",
+       "tr": "",
+       "de": "Ali-Naghi Vaziri erfand neue Zeichen für die kleinen Intervalle dieser Musik."
+      },
+      {
        "fa": "سازهایی مثل تار، سنتور، کمانچه و تنبک صدای ویژه‌ی این موسیقی را می‌سازند.",
        "tr": "",
        "de": "Instrumente wie Tar, Santur, Kamantsche und Tombak prägen den besonderen Klang dieser Musik."
@@ -491,6 +714,299 @@
        "fa": "امروز موسیقی پاپ و سبک‌های تازه هم، در ایران و برون‌مرز، مخاطبان زیادی دارند.",
        "tr": "",
        "de": "Heute haben auch Popmusik und neue Stile in Iran und in der Diaspora ein großes Publikum."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t3",
+   "titel": "Alltag: Negar lernt Santur",
+   "vorschau": "Negar lernt Santur",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>ثبت‌نام کردن</span> – sich anmelden · <span class='fa'>مچ</span> – Handgelenk · <span class='fa'>اجاره کردن</span> – mieten, leihen · <span class='fa'>دست‌دوم</span> – gebraucht · <span class='fa'>کارگاه</span> – Werkstatt · <span class='fa'>از کوک خارج شدن</span> – sich verstimmen · <span class='fa'>چهارمضراب</span> – Tschaharmezrab (rhythmisches Instrumentalstück) · <span class='fa'>مضطرب</span> – nervös · <span class='fa'>دسته‌گل</span> – Blumenstrauß</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Alltag: Negar lernt Santur",
+     "text": "Alltagstext – Tippe eine Zeile an, wenn du die Übersetzung brauchst.",
+     "zeilen": [
+      {
+       "fa": "نگار بیست‌وچهار سال دارد و در یک دفتر معماری در تهران کار می‌کند.",
+       "tr": "",
+       "de": "Negar ist vierundzwanzig und arbeitet in einem Architekturbüro in Teheran."
+      },
+      {
+       "fa": "از کودکی صدای سنتور را دوست داشت، چون پدرش جمعه‌ها صبح ضبط‌های قدیمی فرامرز پایور را گوش می‌داد.",
+       "tr": "",
+       "de": "Seit ihrer Kindheit liebte sie den Klang der Santur, weil ihr Vater freitagmorgens alte Aufnahmen von Faramarz Payvar hörte."
+      },
+      {
+       "fa": "پایور یکی از استادان بزرگ سنتور بود و بسیاری از قطعه‌های او هنوز در آموزشگاه‌ها آموزش داده می‌شود.",
+       "tr": "",
+       "de": "Payvar war einer der großen Santurmeister, und viele seiner Stücke werden in Musikschulen bis heute unterrichtet."
+      },
+      {
+       "fa": "اما فقط پارسال بود که بالاخره تصمیم گرفت خودش نواختن را یاد بگیرد.",
+       "tr": "",
+       "de": "Doch erst im letzten Jahr entschloss sie sich endlich, selbst spielen zu lernen."
+      },
+      {
+       "fa": "او در یک آموزشگاه موسیقی نزدیک محل کارش ثبت‌نام کرد؛ کلاس‌ها هفته‌ای یک بار، سه‌شنبه‌ها بعد از کار، برگزار می‌شود.",
+       "tr": "",
+       "de": "Sie meldete sich in einer Musikschule nahe ihrer Arbeitsstelle an; der Unterricht findet einmal pro Woche statt, dienstags nach der Arbeit."
+      },
+      {
+       "fa": "استادش، خانم توکلی، بیش از بیست سال است که سنتور درس می‌دهد و خودش در یک ارکستر هم می‌نوازد.",
+       "tr": "",
+       "de": "Ihre Lehrerin, Frau Tavakoli, unterrichtet seit über zwanzig Jahren Santur und spielt selbst auch in einem Orchester."
+      },
+      {
+       "fa": "در جلسه‌ی اول، خانم توکلی به او یاد داد که چطور پشت ساز بنشیند و مضراب‌ها را میان انگشتانش نگه دارد.",
+       "tr": "",
+       "de": "In der ersten Stunde zeigte ihr Frau Tavakoli, wie man vor dem Instrument sitzt und die Schlägel zwischen den Fingern hält."
+      },
+      {
+       "fa": "مضراب‌های سنتور بسیار سبک‌اند و نوازنده باید آنها را نرم و فقط با حرکت مچ روی سیم‌ها بزند.",
+       "tr": "",
+       "de": "Die Santurschlägel sind sehr leicht, und man muss sie weich und nur aus dem Handgelenk auf die Saiten schlagen."
+      },
+      {
+       "fa": "نگار ابتدا یک سنتور از آموزشگاه اجاره کرد، چون نمی‌دانست این کار را ادامه می‌دهد یا نه.",
+       "tr": "",
+       "de": "Zuerst lieh Negar sich eine Santur von der Musikschule, weil sie nicht wusste, ob sie dabeibleiben würde."
+      },
+      {
+       "fa": "بعد از سه ماه، یک سنتور دست‌دوم از کارگاه یک سازساز باتجربه خرید.",
+       "tr": "",
+       "de": "Nach drei Monaten kaufte sie eine gebrauchte Santur aus der Werkstatt eines erfahrenen Instrumentenbauers."
+      },
+      {
+       "fa": "سخت‌ترین بخش کار برای او کوک کردن است: هفتاد و دو سیم باید مرتب کوک شوند و با تغییر هوا زود از کوک خارج می‌شوند.",
+       "tr": "",
+       "de": "Am schwierigsten ist für sie das Stimmen: Zweiundsiebzig Saiten müssen regelmäßig gestimmt werden und verstimmen sich schnell, wenn sich das Wetter ändert."
+      },
+      {
+       "fa": "خانم توکلی به او یاد داد که برای هر دستگاه بعضی سیم‌ها را کمی بالاتر یا پایین‌تر کوک کند.",
+       "tr": "",
+       "de": "Frau Tavakoli brachte ihr bei, für jedes Dastgah einige Saiten etwas höher oder tiefer zu stimmen."
+      },
+      {
+       "fa": "نگار هر روز حدود یک ساعت تمرین می‌کند، معمولا بعد از شام، و برای نگه داشتن ریتم از یک مترونوم استفاده می‌کند.",
+       "tr": "",
+       "de": "Negar übt jeden Tag etwa eine Stunde, meist nach dem Abendessen, und benutzt ein Metronom, um den Rhythmus zu halten."
+      },
+      {
+       "fa": "کتاب درسی کلاس «دستور سنتور» پایور است که تمرین‌ها و قطعه‌های آن از چند نسل پیش در آموزشگاه‌ها به کار می‌رود.",
+       "tr": "",
+       "de": "Das Lehrbuch des Kurses ist Payvars Santurschule, deren Übungen und Stücke seit mehreren Generationen in Musikschulen verwendet werden."
+      },
+      {
+       "fa": "بعد از تمرین‌های پایه، نگار نخستین گوشه‌های دستگاه شور را از روی نت یاد گرفت.",
+       "tr": "",
+       "de": "Nach den Grundübungen lernte Negar die ersten Gusches des Dastgah Schur nach Noten."
+      },
+      {
+       "fa": "خانم توکلی اما همیشه می‌گوید که نت فقط نقشه‌ی راه است و هنرجو باید قطعه را با گوش هم یاد بگیرد.",
+       "tr": "",
+       "de": "Frau Tavakoli sagt aber immer, die Noten seien nur eine Landkarte; die Schülerin müsse ein Stück auch nach Gehör lernen."
+      },
+      {
+       "fa": "در پایان سال اول، آموزشگاه یک کنسرت هنرجویی در سالن کوچکی در مرکز شهر برگزار کرد.",
+       "tr": "",
+       "de": "Am Ende des ersten Jahres veranstaltete die Musikschule ein Schülerkonzert in einem kleinen Saal in der Innenstadt."
+      },
+      {
+       "fa": "نگار قرار بود یک چهارمضراب کوتاه در ماهور و یک تصنیف قدیمی را همراه با یک نوازنده‌ی تنبک اجرا کند.",
+       "tr": "",
+       "de": "Negar sollte ein kurzes Tschaharmezrab in Mahur und einen alten Tasnif zusammen mit einem Tombak-Spieler vortragen."
+      },
+      {
+       "fa": "چند هفته پیش از کنسرت، هنرجوها هر جمعه برای تمرین گروهی در آموزشگاه جمع می‌شدند.",
+       "tr": "",
+       "de": "Einige Wochen vor dem Konzert trafen sich die Schülerinnen und Schüler jeden Freitag zur gemeinsamen Probe in der Musikschule."
+      },
+      {
+       "fa": "خانم توکلی در این تمرین‌ها بیش از هر چیز روی گوش دادن به هم‌نوازان تأکید می‌کرد.",
+       "tr": "",
+       "de": "Bei diesen Proben legte Frau Tavakoli vor allem Wert darauf, den Mitspielenden zuzuhören."
+      },
+      {
+       "fa": "روز کنسرت، نگار آن‌قدر مضطرب بود که چند بار سازش را دوباره کوک کرد.",
+       "tr": "",
+       "de": "Am Konzerttag war Negar so nervös, dass sie ihr Instrument mehrmals nachstimmte."
+      },
+      {
+       "fa": "سالن پر بود: خانواده‌ها، دوستان و حتی چند نفر از هم‌کاران نگار برای شنیدن اجرای او آمده بودند.",
+       "tr": "",
+       "de": "Der Saal war voll: Familien, Freunde und sogar einige Kolleginnen und Kollegen von Negar waren gekommen, um ihren Auftritt zu hören."
+      },
+      {
+       "fa": "در میانه‌ی قطعه، یک بار مضرابش روی سیم اشتباهی خورد، اما بدون توقف ادامه داد، همان‌طور که استادش یاد داده بود.",
+       "tr": "",
+       "de": "Mitten im Stück traf ihr Schlägel einmal die falsche Saite, aber sie spielte ohne anzuhalten weiter, wie ihre Lehrerin es ihr beigebracht hatte."
+      },
+      {
+       "fa": "بعد از اجرا، تماشاگران مدتی طولانی دست زدند و پدرش از ردیف اول برایش دسته‌گلی آورد.",
+       "tr": "",
+       "de": "Nach dem Auftritt klatschte das Publikum lange, und ihr Vater brachte ihr aus der ersten Reihe einen Blumenstrauß."
+      },
+      {
+       "fa": "خانم توکلی بعد از کنسرت به او گفت که حالا وقت آن است که بداهه‌نوازی را هم کم‌کم شروع کند.",
+       "tr": "",
+       "de": "Nach dem Konzert sagte Frau Tavakoli zu ihr, es sei nun an der Zeit, allmählich auch mit dem Improvisieren zu beginnen."
+      },
+      {
+       "fa": "نگار می‌داند که یاد گرفتن ردیف سال‌ها طول می‌کشد، اما می‌گوید ساعت تمرین آرام‌ترین بخش روز اوست.",
+       "tr": "",
+       "de": "Negar weiß, dass es Jahre dauert, den Radif zu lernen, aber sie sagt, die Übungsstunde sei der ruhigste Teil ihres Tages."
+      },
+      {
+       "fa": "او برای سال آینده می‌خواهد در گروه هم‌نوازی آموزشگاه شرکت کند.",
+       "tr": "",
+       "de": "Im nächsten Jahr möchte sie im Ensemble der Musikschule mitspielen."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "نگار از کودکی سنتور می‌زند.",
+       "fest": true,
+       "erkl": "Sie hat erst <b>im letzten Jahr</b> angefangen."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "او اول یک سنتور از آموزشگاه اجاره کرد.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "کوک کردن برای نگار ساده‌ترین بخش کار است.",
+       "fest": true,
+       "erkl": "Das Stimmen ist für sie das <b>Schwierigste</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "در کنسرت، نگار همراه با یک نوازنده‌ی تنبک نواخت.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "بعد از یک اشتباه، نگار اجرا را قطع کرد.",
+       "fest": true,
+       "erkl": "Sie spielte <b>ohne anzuhalten</b> weiter."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Warum liebte Negar schon als Kind den Klang der Santur?",
+       "optionen": [
+        "Ihr Vater hörte freitags Aufnahmen von Payvar.",
+        "Ihre Mutter war Santurlehrerin.",
+        "Sie hörte Santur im Radio der Schule."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie oft hat Negar Unterricht?",
+       "optionen": [
+        "einmal pro Woche, dienstags",
+        "jeden Tag nach dem Abendessen",
+        "jeden Freitag"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was sagt Frau Tavakoli über die Noten?",
+       "optionen": [
+        "Sie seien nur eine Landkarte; man müsse auch nach Gehör lernen.",
+        "Man solle nie nach Noten spielen.",
+        "Noten seien wichtiger als das Gehör."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was soll Negar nach dem Konzert beginnen?",
+       "optionen": [
+        "allmählich zu improvisieren",
+        "ein zweites Instrument zu lernen",
+        "selbst zu unterrichten"
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "از کودکی صدای سنتور را دوست داشت، چون پدرش جمعه‌ها صبح ضبط‌های قدیمی فرامرز پایور را گوش می‌داد.",
+       "tr": "",
+       "de": "Seit ihrer Kindheit liebte sie den Klang der Santur, weil ihr Vater freitagmorgens alte Aufnahmen von Faramarz Payvar hörte."
+      },
+      {
+       "fa": "پایور یکی از استادان بزرگ سنتور بود و بسیاری از قطعه‌های او هنوز در آموزشگاه‌ها آموزش داده می‌شود.",
+       "tr": "",
+       "de": "Payvar war einer der großen Santurmeister, und viele seiner Stücke werden in Musikschulen bis heute unterrichtet."
+      },
+      {
+       "fa": "اما فقط پارسال بود که بالاخره تصمیم گرفت خودش نواختن را یاد بگیرد.",
+       "tr": "",
+       "de": "Doch erst im letzten Jahr entschloss sie sich endlich, selbst spielen zu lernen."
+      },
+      {
+       "fa": "او در یک آموزشگاه موسیقی نزدیک محل کارش ثبت‌نام کرد؛ کلاس‌ها هفته‌ای یک بار، سه‌شنبه‌ها بعد از کار، برگزار می‌شود.",
+       "tr": "",
+       "de": "Sie meldete sich in einer Musikschule nahe ihrer Arbeitsstelle an; der Unterricht findet einmal pro Woche statt, dienstags nach der Arbeit."
+      },
+      {
+       "fa": "استادش، خانم توکلی، بیش از بیست سال است که سنتور درس می‌دهد و خودش در یک ارکستر هم می‌نوازد.",
+       "tr": "",
+       "de": "Ihre Lehrerin, Frau Tavakoli, unterrichtet seit über zwanzig Jahren Santur und spielt selbst auch in einem Orchester."
+      },
+      {
+       "fa": "در جلسه‌ی اول، خانم توکلی به او یاد داد که چطور پشت ساز بنشیند و مضراب‌ها را میان انگشتانش نگه دارد.",
+       "tr": "",
+       "de": "In der ersten Stunde zeigte ihr Frau Tavakoli, wie man vor dem Instrument sitzt und die Schlägel zwischen den Fingern hält."
       }
      ]
     }
@@ -547,9 +1063,44 @@
        "de": "Das heißt, auf dem Klavier kann man keine persische Musik spielen?"
       },
       {
-       "fa": "آقای رحیمی: کار آسانی نیست! برای همین تار و سه‌تار پرده‌های مخصوص دارند. اگر باحوصله باشی، یک روز به تو هم یاد می‌دهم.",
+       "fa": "آقای رحیمی: کار آسانی نیست! برای همین تار و سه‌تار پرده‌هایی دارند که دور دسته بسته می‌شوند و می‌شود جایشان را کمی جابه‌جا کرد.",
        "tr": "",
-       "de": "Leicht ist das nicht! Deshalb haben Tar und Setar besondere Bünde. Wenn du Geduld hast, bringe ich es dir eines Tages bei."
+       "de": "Leicht ist das nicht! Deshalb haben Tar und Setar Bünde, die um den Hals gebunden werden und sich etwas verschieben lassen."
+      },
+      {
+       "fa": "یوناس: سه‌تار را با مضراب می‌زنید؟ مضرابی نمی‌بینم.",
+       "tr": "",
+       "de": "Spielen Sie die Setar mit einem Plektrum? Ich sehe keins."
+      },
+      {
+       "fa": "آقای رحیمی: نه، سه‌تار را با ناخن انگشت اشاره می‌زنند. صدایش آرام است و بیشتر برای اتاق‌های کوچک و جمع‌های کوچک مناسب است.",
+       "tr": "",
+       "de": "Nein, die Setar spielt man mit dem Nagel des Zeigefingers. Ihr Klang ist leise und eignet sich eher für kleine Räume und kleine Runden."
+      },
+      {
+       "fa": "یوناس: شما از کی سه‌تار می‌زنید؟",
+       "tr": "",
+       "de": "Seit wann spielen Sie Setar?"
+      },
+      {
+       "fa": "آقای رحیمی: از بیست‌سالگی. در اصفهان پیش استادی پیر درس می‌گرفتم که ردیف را بدون نت، فقط با گوش، یاد می‌داد.",
+       "tr": "",
+       "de": "Seit ich zwanzig bin. In Isfahan hatte ich Unterricht bei einem alten Meister, der den Radif ohne Noten lehrte, nur nach Gehör."
+      },
+      {
+       "fa": "یوناس: یعنی همه‌ی گوشه‌ها را از حفظ یاد گرفتید؟ مگر چند گوشه هست؟",
+       "tr": "",
+       "de": "Sie haben also alle Gusches auswendig gelernt? Wie viele gibt es denn?"
+      },
+      {
+       "fa": "آقای رحیمی: بسته به روایت ردیف، چند صد گوشه. من هنوز همه را بلد نیستم. اگر باحوصله باشی، یک روز به تو هم یاد می‌دهم.",
+       "tr": "",
+       "de": "Je nach Fassung des Radif mehrere Hundert. Ich kann noch längst nicht alle. Wenn du Geduld hast, bringe ich es dir eines Tages bei."
+      },
+      {
+       "fa": "یوناس: با کمال میل! پس از هفته‌ی آینده شاگرد شما هستم.",
+       "tr": "",
+       "de": "Sehr gern! Dann bin ich ab nächster Woche Ihr Schüler."
       }
      ]
     },
@@ -594,9 +1145,44 @@
        "de": "Das heißt, auf dem Klavier kann man keine persische Musik spielen?"
       },
       {
-       "fa": "آقای رحیمی: کار آسانی نیست! برای همین تار و سه‌تار پرده‌های مخصوص دارند. اگر باحوصله باشی، یک روز به تو هم یاد می‌دهم.",
+       "fa": "آقای رحیمی: کار آسانی نیست! برای همین تار و سه‌تار پرده‌هایی دارند که دور دسته بسته می‌شوند و می‌شود جایشان را کمی جابه‌جا کرد.",
        "tr": "",
-       "de": "Leicht ist das nicht! Deshalb haben Tar und Setar besondere Bünde. Wenn du Geduld hast, bringe ich es dir eines Tages bei."
+       "de": "Leicht ist das nicht! Deshalb haben Tar und Setar Bünde, die um den Hals gebunden werden und sich etwas verschieben lassen."
+      },
+      {
+       "fa": "یوناس: سه‌تار را با مضراب می‌زنید؟ مضرابی نمی‌بینم.",
+       "tr": "",
+       "de": "Spielen Sie die Setar mit einem Plektrum? Ich sehe keins."
+      },
+      {
+       "fa": "آقای رحیمی: نه، سه‌تار را با ناخن انگشت اشاره می‌زنند. صدایش آرام است و بیشتر برای اتاق‌های کوچک و جمع‌های کوچک مناسب است.",
+       "tr": "",
+       "de": "Nein, die Setar spielt man mit dem Nagel des Zeigefingers. Ihr Klang ist leise und eignet sich eher für kleine Räume und kleine Runden."
+      },
+      {
+       "fa": "یوناس: شما از کی سه‌تار می‌زنید؟",
+       "tr": "",
+       "de": "Seit wann spielen Sie Setar?"
+      },
+      {
+       "fa": "آقای رحیمی: از بیست‌سالگی. در اصفهان پیش استادی پیر درس می‌گرفتم که ردیف را بدون نت، فقط با گوش، یاد می‌داد.",
+       "tr": "",
+       "de": "Seit ich zwanzig bin. In Isfahan hatte ich Unterricht bei einem alten Meister, der den Radif ohne Noten lehrte, nur nach Gehör."
+      },
+      {
+       "fa": "یوناس: یعنی همه‌ی گوشه‌ها را از حفظ یاد گرفتید؟ مگر چند گوشه هست؟",
+       "tr": "",
+       "de": "Sie haben also alle Gusches auswendig gelernt? Wie viele gibt es denn?"
+      },
+      {
+       "fa": "آقای رحیمی: بسته به روایت ردیف، چند صد گوشه. من هنوز همه را بلد نیستم. اگر باحوصله باشی، یک روز به تو هم یاد می‌دهم.",
+       "tr": "",
+       "de": "Je nach Fassung des Radif mehrere Hundert. Ich kann noch längst nicht alle. Wenn du Geduld hast, bringe ich es dir eines Tages bei."
+      },
+      {
+       "fa": "یوناس: با کمال میل! پس از هفته‌ی آینده شاگرد شما هستم.",
+       "tr": "",
+       "de": "Sehr gern! Dann bin ich ab nächster Woche Ihr Schüler."
       }
      ]
     },
@@ -614,20 +1200,20 @@
        "richtig": 0
       },
       {
-       "frage": "Was ist ein Dastgah laut Herrn Rahimi?",
+       "frage": "Womit spielt man die Setar?",
        "optionen": [
-        "eine Sammlung von Gusches mit eigener Stimmung",
-        "nur eine Tonleiter",
-        "ein Instrument"
+        "mit dem Nagel des Zeigefingers",
+        "mit einem Bogen",
+        "mit zwei Holzschlägeln"
        ],
        "richtig": 0
       },
       {
-       "frage": "Warum ist persische Musik auf dem Klavier schwierig?",
+       "frage": "Wie hat Herr Rahimi den Radif gelernt?",
        "optionen": [
-        "Manche Töne liegen zwischen den Klaviertönen.",
-        "Das Klavier ist zu laut.",
-        "Es gibt keine Noten."
+        "nach Gehör, ohne Noten",
+        "aus einem Lehrbuch",
+        "über das Radio"
        ],
        "richtig": 0
       }
@@ -671,14 +1257,44 @@
        "de": "Du glaubst es nicht! Der Saal war voll, und die Hälfte des Publikums waren Deutsche. Sogar mein Nachbar war gekommen."
       },
       {
+       "fa": "لیلا: چه قطعه‌هایی اجرا کردند؟ همه‌اش بداهه بود؟",
+       "tr": "",
+       "de": "Was haben sie gespielt? War alles improvisiert?"
+      },
+      {
+       "fa": "بردیا: نه، بیشتر قطعه‌ها را خودشان ساخته بودند، اما در هر قطعه بخشی برای بداهه‌نوازی بود. کمانچه‌نواز در دستگاه سه‌گاه تکنوازی کرد و درامز آرام همراهی‌اش کرد.",
+       "tr": "",
+       "de": "Nein, die meisten Stücke hatten sie selbst komponiert, aber in jedem gab es einen Teil zum Improvisieren. Der Kamantsche-Spieler spielte ein Solo im Dastgah Segah, und das Schlagzeug begleitete ihn leise."
+      },
+      {
+       "fa": "لیلا: این‌جور تلفیق‌ها تازه نیست. کیهان کلهر سال‌هاست که با نوازندگانی از فرهنگ‌های مختلف کار می‌کند.",
+       "tr": "",
+       "de": "Solche Fusionen sind nicht neu. Kayhan Kalhor arbeitet seit Jahren mit Musikern aus verschiedenen Kulturen zusammen."
+      },
+      {
+       "fa": "بردیا: درست است. تارنواز گروه هم گفت که کلهر الگوی آنهاست.",
+       "tr": "",
+       "de": "Stimmt. Der Tar-Spieler der Band hat auch gesagt, dass Kalhor ihr Vorbild ist."
+      },
+      {
        "fa": "لیلا: جالب است. من راستش حوصله‌ی پاپ لس‌آنجلسی را ندارم، اما این‌جور تلفیق‌ها را دوست دارم.",
        "tr": "",
        "de": "Interessant. Ehrlich gesagt kann ich mit dem Los-Angeles-Pop nichts anfangen, aber solche Fusionen mag ich."
       },
       {
-       "fa": "بردیا: ولی مامان هنوز ترانه‌های قدیمی پاپ را گوش می‌دهد! برای نسل او، آن ترانه‌ها پر از خاطره است.",
+       "fa": "بردیا: ولی مامان هنوز ترانه‌های قدیمی پاپ را گوش می‌دهد. برای نسل او، آن ترانه‌ها پر از خاطره است.",
        "tr": "",
-       "de": "Aber Mama hört immer noch die alten Poplieder! Für ihre Generation stecken diese Lieder voller Erinnerungen."
+       "de": "Aber Mama hört immer noch die alten Poplieder. Für ihre Generation stecken diese Lieder voller Erinnerungen."
+      },
+      {
+       "fa": "لیلا: می‌دانم. هر وقت ترانه‌ای از گوگوش پخش می‌شود، از دوران دانشجویی‌اش تعریف می‌کند.",
+       "tr": "",
+       "de": "Ich weiß. Jedes Mal, wenn ein Lied von Googoosh läuft, erzählt sie von ihrer Studienzeit."
+      },
+      {
+       "fa": "بردیا: برای من هم این موسیقی بخشی از خانه است. در هامبورگ، صدای کمانچه برایم معنای دیگری پیدا کرده است.",
+       "tr": "",
+       "de": "Auch für mich ist diese Musik ein Stück Zuhause. In Hamburg hat der Klang der Kamantsche für mich eine andere Bedeutung bekommen."
       },
       {
        "fa": "لیلا: حق با توست. سلیقه‌ها متفاوت است. لینک آلبوم آن گروه را برایم می‌فرستی؟",
@@ -718,14 +1334,44 @@
        "de": "Du glaubst es nicht! Der Saal war voll, und die Hälfte des Publikums waren Deutsche. Sogar mein Nachbar war gekommen."
       },
       {
+       "fa": "لیلا: چه قطعه‌هایی اجرا کردند؟ همه‌اش بداهه بود؟",
+       "tr": "",
+       "de": "Was haben sie gespielt? War alles improvisiert?"
+      },
+      {
+       "fa": "بردیا: نه، بیشتر قطعه‌ها را خودشان ساخته بودند، اما در هر قطعه بخشی برای بداهه‌نوازی بود. کمانچه‌نواز در دستگاه سه‌گاه تکنوازی کرد و درامز آرام همراهی‌اش کرد.",
+       "tr": "",
+       "de": "Nein, die meisten Stücke hatten sie selbst komponiert, aber in jedem gab es einen Teil zum Improvisieren. Der Kamantsche-Spieler spielte ein Solo im Dastgah Segah, und das Schlagzeug begleitete ihn leise."
+      },
+      {
+       "fa": "لیلا: این‌جور تلفیق‌ها تازه نیست. کیهان کلهر سال‌هاست که با نوازندگانی از فرهنگ‌های مختلف کار می‌کند.",
+       "tr": "",
+       "de": "Solche Fusionen sind nicht neu. Kayhan Kalhor arbeitet seit Jahren mit Musikern aus verschiedenen Kulturen zusammen."
+      },
+      {
+       "fa": "بردیا: درست است. تارنواز گروه هم گفت که کلهر الگوی آنهاست.",
+       "tr": "",
+       "de": "Stimmt. Der Tar-Spieler der Band hat auch gesagt, dass Kalhor ihr Vorbild ist."
+      },
+      {
        "fa": "لیلا: جالب است. من راستش حوصله‌ی پاپ لس‌آنجلسی را ندارم، اما این‌جور تلفیق‌ها را دوست دارم.",
        "tr": "",
        "de": "Interessant. Ehrlich gesagt kann ich mit dem Los-Angeles-Pop nichts anfangen, aber solche Fusionen mag ich."
       },
       {
-       "fa": "بردیا: ولی مامان هنوز ترانه‌های قدیمی پاپ را گوش می‌دهد! برای نسل او، آن ترانه‌ها پر از خاطره است.",
+       "fa": "بردیا: ولی مامان هنوز ترانه‌های قدیمی پاپ را گوش می‌دهد. برای نسل او، آن ترانه‌ها پر از خاطره است.",
        "tr": "",
-       "de": "Aber Mama hört immer noch die alten Poplieder! Für ihre Generation stecken diese Lieder voller Erinnerungen."
+       "de": "Aber Mama hört immer noch die alten Poplieder. Für ihre Generation stecken diese Lieder voller Erinnerungen."
+      },
+      {
+       "fa": "لیلا: می‌دانم. هر وقت ترانه‌ای از گوگوش پخش می‌شود، از دوران دانشجویی‌اش تعریف می‌کند.",
+       "tr": "",
+       "de": "Ich weiß. Jedes Mal, wenn ein Lied von Googoosh läuft, erzählt sie von ihrer Studienzeit."
+      },
+      {
+       "fa": "بردیا: برای من هم این موسیقی بخشی از خانه است. در هامبورگ، صدای کمانچه برایم معنای دیگری پیدا کرده است.",
+       "tr": "",
+       "de": "Auch für mich ist diese Musik ein Stück Zuhause. In Hamburg hat der Klang der Kamantsche für mich eine andere Bedeutung bekommen."
       },
       {
        "fa": "لیلا: حق با توست. سلیقه‌ها متفاوت است. لینک آلبوم آن گروه را برایم می‌فرستی؟",
@@ -753,20 +1399,365 @@
        "richtig": 0
       },
       {
-       "frage": "Wie war das Publikum?",
+       "frage": "In welchem Dastgah spielte der Kamantsche-Spieler sein Solo?",
        "optionen": [
-        "Der Saal war voll, zur Hälfte Deutsche.",
-        "Der Saal war fast leer.",
-        "Es waren nur Iraner da."
+        "Segah",
+        "Schur",
+        "Mahur"
        ],
        "richtig": 0
       },
       {
-       "frage": "Welche Musik mag Leyla nicht so sehr?",
+       "frage": "Wen nennt die Band als Vorbild?",
        "optionen": [
-        "den Los-Angeles-Pop",
-        "Fusionen",
-        "klassische persische Musik"
+        "Kayhan Kalhor",
+        "Googoosh",
+        "Faramarz Payvar"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d3",
+   "titel": "Dialog: In der Musikschule",
+   "vorschau": "In der Musikschule",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Jonas möchte Tar lernen. In einer Musikschule in Teheran erkundigt er sich bei Frau Niknam, der Leiterin, nach den Kursen.</p>"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "یوناس: سلام، وقت بخیر. می‌خواستم درباره‌ی کلاس‌های تار اطلاعات بگیرم.",
+       "tr": "",
+       "de": "Guten Tag. Ich wollte mich über die Tar-Kurse informieren."
+      },
+      {
+       "fa": "خانم نیکنام: سلام، خوش آمدید. قبلا سازی زده‌اید یا کاملا مبتدی هستید؟",
+       "tr": "",
+       "de": "Guten Tag, willkommen. Haben Sie schon ein Instrument gespielt, oder sind Sie völliger Anfänger?"
+      },
+      {
+       "fa": "یوناس: در آلمان چند سال گیتار زده‌ام، اما با موسیقی ایرانی آشنایی زیادی ندارم.",
+       "tr": "",
+       "de": "In Deutschland habe ich einige Jahre Gitarre gespielt, aber mit persischer Musik kenne ich mich kaum aus."
+      },
+      {
+       "fa": "خانم نیکنام: گیتار به شما کمک می‌کند، چون انگشت‌هایتان به سیم و دسته عادت دارند. اما تار تکنیک مضراب خاص خودش را دارد.",
+       "tr": "",
+       "de": "Die Gitarre hilft Ihnen, weil Ihre Finger an Saiten und Hals gewöhnt sind. Aber die Tar hat ihre eigene Anschlagtechnik."
+      },
+      {
+       "fa": "یوناس: کلاس‌ها خصوصی است یا گروهی؟",
+       "tr": "",
+       "de": "Ist der Unterricht einzeln oder in der Gruppe?"
+      },
+      {
+       "fa": "خانم نیکنام: هر دو را داریم. کلاس خصوصی هفته‌ای یک جلسه‌ی چهل‌وپنج دقیقه‌ای است. کلاس گروهی با سه یا چهار هنرجو یک ساعت و نیم طول می‌کشد.",
+       "tr": "",
+       "de": "Wir haben beides. Einzelunterricht ist eine 45-minütige Stunde pro Woche. Gruppenunterricht mit drei oder vier Schülern dauert anderthalb Stunden."
+      },
+      {
+       "fa": "یوناس: برای شروع کدام را پیشنهاد می‌کنید؟",
+       "tr": "",
+       "de": "Was empfehlen Sie für den Anfang?"
+      },
+      {
+       "fa": "خانم نیکنام: برای کسی که می‌خواهد ردیف را درست یاد بگیرد، کلاس خصوصی بهتر است. استاد می‌تواند به همه‌ی جزئیات توجه کند.",
+       "tr": "",
+       "de": "Wer den Radif richtig lernen will, ist im Einzelunterricht besser aufgehoben. Der Lehrer kann auf alle Einzelheiten achten."
+      },
+      {
+       "fa": "یوناس: لازم است از همین اول ساز بخرم؟",
+       "tr": "",
+       "de": "Muss ich mir gleich zu Beginn ein Instrument kaufen?"
+      },
+      {
+       "fa": "خانم نیکنام: نه. ما برای سه ماه اول ساز اجاره می‌دهیم. بعد، اگر خواستید ادامه بدهید، شما را به یک سازساز خوب معرفی می‌کنیم.",
+       "tr": "",
+       "de": "Nein. Für die ersten drei Monate verleihen wir Instrumente. Wenn Sie danach weitermachen möchten, empfehlen wir Ihnen einen guten Instrumentenbauer."
+      },
+      {
+       "fa": "یوناس: با نت درس می‌دهید یا با گوش؟",
+       "tr": "",
+       "de": "Unterrichten Sie nach Noten oder nach Gehör?"
+      },
+      {
+       "fa": "خانم نیکنام: هر دو. هنرجوها از اول نت‌خوانی را یاد می‌گیرند، اما گوش دادن به ضبط‌های استادان قدیمی هم بخش مهمی از درس است.",
+       "tr": "",
+       "de": "Beides. Die Schüler lernen von Anfang an Notenlesen, aber das Hören von Aufnahmen alter Meister ist ebenfalls ein wichtiger Teil des Unterrichts."
+      },
+      {
+       "fa": "یوناس: عالی است. می‌توانم یک جلسه‌ی آزمایشی داشته باشم؟",
+       "tr": "",
+       "de": "Sehr gut. Kann ich eine Probestunde bekommen?"
+      },
+      {
+       "fa": "خانم نیکنام: بله. پنجشنبه ساعت پنج با آقای مرادی جلسه‌ی آزمایشی دارید. لطفا ده دقیقه زودتر بیایید تا فرم ثبت‌نام را پر کنید.",
+       "tr": "",
+       "de": "Ja. Am Donnerstag um fünf haben Sie eine Probestunde bei Herrn Moradi. Bitte kommen Sie zehn Minuten früher, um das Anmeldeformular auszufüllen."
+      },
+      {
+       "fa": "یوناس: حتما. خیلی ممنون، روز خوش.",
+       "tr": "",
+       "de": "Auf jeden Fall. Vielen Dank, einen schönen Tag noch."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "یوناس: سلام، وقت بخیر. می‌خواستم درباره‌ی کلاس‌های تار اطلاعات بگیرم.",
+       "tr": "",
+       "de": "Guten Tag. Ich wollte mich über die Tar-Kurse informieren."
+      },
+      {
+       "fa": "خانم نیکنام: سلام، خوش آمدید. قبلا سازی زده‌اید یا کاملا مبتدی هستید؟",
+       "tr": "",
+       "de": "Guten Tag, willkommen. Haben Sie schon ein Instrument gespielt, oder sind Sie völliger Anfänger?"
+      },
+      {
+       "fa": "یوناس: در آلمان چند سال گیتار زده‌ام، اما با موسیقی ایرانی آشنایی زیادی ندارم.",
+       "tr": "",
+       "de": "In Deutschland habe ich einige Jahre Gitarre gespielt, aber mit persischer Musik kenne ich mich kaum aus."
+      },
+      {
+       "fa": "خانم نیکنام: گیتار به شما کمک می‌کند، چون انگشت‌هایتان به سیم و دسته عادت دارند. اما تار تکنیک مضراب خاص خودش را دارد.",
+       "tr": "",
+       "de": "Die Gitarre hilft Ihnen, weil Ihre Finger an Saiten und Hals gewöhnt sind. Aber die Tar hat ihre eigene Anschlagtechnik."
+      },
+      {
+       "fa": "یوناس: کلاس‌ها خصوصی است یا گروهی؟",
+       "tr": "",
+       "de": "Ist der Unterricht einzeln oder in der Gruppe?"
+      },
+      {
+       "fa": "خانم نیکنام: هر دو را داریم. کلاس خصوصی هفته‌ای یک جلسه‌ی چهل‌وپنج دقیقه‌ای است. کلاس گروهی با سه یا چهار هنرجو یک ساعت و نیم طول می‌کشد.",
+       "tr": "",
+       "de": "Wir haben beides. Einzelunterricht ist eine 45-minütige Stunde pro Woche. Gruppenunterricht mit drei oder vier Schülern dauert anderthalb Stunden."
+      },
+      {
+       "fa": "یوناس: برای شروع کدام را پیشنهاد می‌کنید؟",
+       "tr": "",
+       "de": "Was empfehlen Sie für den Anfang?"
+      },
+      {
+       "fa": "خانم نیکنام: برای کسی که می‌خواهد ردیف را درست یاد بگیرد، کلاس خصوصی بهتر است. استاد می‌تواند به همه‌ی جزئیات توجه کند.",
+       "tr": "",
+       "de": "Wer den Radif richtig lernen will, ist im Einzelunterricht besser aufgehoben. Der Lehrer kann auf alle Einzelheiten achten."
+      },
+      {
+       "fa": "یوناس: لازم است از همین اول ساز بخرم؟",
+       "tr": "",
+       "de": "Muss ich mir gleich zu Beginn ein Instrument kaufen?"
+      },
+      {
+       "fa": "خانم نیکنام: نه. ما برای سه ماه اول ساز اجاره می‌دهیم. بعد، اگر خواستید ادامه بدهید، شما را به یک سازساز خوب معرفی می‌کنیم.",
+       "tr": "",
+       "de": "Nein. Für die ersten drei Monate verleihen wir Instrumente. Wenn Sie danach weitermachen möchten, empfehlen wir Ihnen einen guten Instrumentenbauer."
+      },
+      {
+       "fa": "یوناس: با نت درس می‌دهید یا با گوش؟",
+       "tr": "",
+       "de": "Unterrichten Sie nach Noten oder nach Gehör?"
+      },
+      {
+       "fa": "خانم نیکنام: هر دو. هنرجوها از اول نت‌خوانی را یاد می‌گیرند، اما گوش دادن به ضبط‌های استادان قدیمی هم بخش مهمی از درس است.",
+       "tr": "",
+       "de": "Beides. Die Schüler lernen von Anfang an Notenlesen, aber das Hören von Aufnahmen alter Meister ist ebenfalls ein wichtiger Teil des Unterrichts."
+      },
+      {
+       "fa": "یوناس: عالی است. می‌توانم یک جلسه‌ی آزمایشی داشته باشم؟",
+       "tr": "",
+       "de": "Sehr gut. Kann ich eine Probestunde bekommen?"
+      },
+      {
+       "fa": "خانم نیکنام: بله. پنجشنبه ساعت پنج با آقای مرادی جلسه‌ی آزمایشی دارید. لطفا ده دقیقه زودتر بیایید تا فرم ثبت‌نام را پر کنید.",
+       "tr": "",
+       "de": "Ja. Am Donnerstag um fünf haben Sie eine Probestunde bei Herrn Moradi. Bitte kommen Sie zehn Minuten früher, um das Anmeldeformular auszufüllen."
+      },
+      {
+       "fa": "یوناس: حتما. خیلی ممنون، روز خوش.",
+       "tr": "",
+       "de": "Auf jeden Fall. Vielen Dank, einen schönen Tag noch."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Welches Instrument hat Jonas in Deutschland gespielt?",
+       "optionen": [
+        "Gitarre",
+        "Klavier",
+        "Schlagzeug"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was empfiehlt Frau Niknam für den Anfang?",
+       "optionen": [
+        "Einzelunterricht",
+        "Gruppenunterricht",
+        "Selbststudium mit Aufnahmen"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was bietet die Schule für die ersten drei Monate an?",
+       "optionen": [
+        "ein Leihinstrument",
+        "kostenlosen Unterricht",
+        "ein eigenes Lehrbuch"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "a",
+   "titel": "Gut zu wissen",
+   "vorschau": "💡",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Golha – Musik und Dichtung im Radio",
+     "text": "Kurzer Infotext – tippe eine Zeile an für die Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "برنامه‌ی «گل‌ها» از سال ۱۹۵۶ تا ۱۹۷۹ از رادیو ایران پخش می‌شد.",
+       "tr": "",
+       "de": "Die Sendung ‹Golha› (Blumen) lief von 1956 bis 1979 im iranischen Radio."
+      },
+      {
+       "fa": "داوود پیرنیا، بنیان‌گذار این برنامه، می‌خواست شعر کلاسیک فارسی و موسیقی سنتی را با کیفیتی بالا به مردم برساند.",
+       "tr": "",
+       "de": "Ihr Gründer Davud Pirnia wollte klassische persische Dichtung und traditionelle Musik in hoher Qualität zu den Menschen bringen."
+      },
+      {
+       "fa": "در هر برنامه، گوینده‌ای شعری را می‌خواند و پس از آن نوازندگان و خوانندگان قطعه‌ای در همان حال و هوا اجرا می‌کردند.",
+       "tr": "",
+       "de": "In jeder Sendung trug ein Sprecher ein Gedicht vor, danach spielten Musiker und Sänger ein Stück in derselben Stimmung."
+      },
+      {
+       "fa": "بسیاری از استادان بزرگ موسیقی ایرانی در این برنامه نواختند یا خواندند.",
+       "tr": "",
+       "de": "Viele große Meister der persischen Musik spielten oder sangen in dieser Sendung."
+      },
+      {
+       "fa": "امروز صدها ساعت از این برنامه‌ها بایگانی و دیجیتال شده است و پژوهشگران از آنها استفاده می‌کنند.",
+       "tr": "",
+       "de": "Heute sind Hunderte Stunden dieser Sendungen archiviert und digitalisiert, und Forschende arbeiten damit."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Barbad, der Musiker am Sasanidenhof",
+     "text": "Kurzer Infotext – tippe eine Zeile an für die Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "باربد مشهورترین نوازنده و آهنگساز دربار خسرو پرویز، پادشاه ساسانی، بود.",
+       "tr": "",
+       "de": "Barbad war der berühmteste Musiker und Komponist am Hof des Sasanidenkönigs Chosrau II."
+      },
+      {
+       "fa": "بنا بر روایت‌ها، او برای هر روز سال یک نغمه ساخته بود.",
+       "tr": "",
+       "de": "Der Überlieferung nach hatte er für jeden Tag des Jahres eine Melodie geschaffen."
+      },
+      {
+       "fa": "نام بسیاری از این نغمه‌ها در متن‌های فارسی بعدی آمده است، اما خود موسیقی به ما نرسیده است.",
+       "tr": "",
+       "de": "Die Namen vieler dieser Melodien finden sich in späteren persischen Texten, doch die Musik selbst ist nicht überliefert."
+      },
+      {
+       "fa": "فردوسی در شاهنامه و نظامی در «خسرو و شیرین» از هنر باربد سخن گفته‌اند.",
+       "tr": "",
+       "de": "Ferdousi im Schahname und Nezami in ‹Chosrau und Schirin› berichten von Barbads Kunst."
+      },
+      {
+       "fa": "امروز نام او در ایران نماد هنر موسیقی است و بسیاری از آموزشگاه‌ها و گروه‌های موسیقی این نام را بر خود دارند.",
+       "tr": "",
+       "de": "Heute steht sein Name in Iran für die Kunst der Musik, und viele Musikschulen und Ensembles tragen ihn."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Sori und Koron",
+     "text": "Kurzer Infotext – tippe eine Zeile an für die Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "موسیقی ایرانی فاصله‌هایی دارد که در نت‌نویسی غربی نشانه‌ای برایشان وجود نداشت.",
+       "tr": "",
+       "de": "Die persische Musik kennt Intervalle, für die es in der westlichen Notenschrift kein Zeichen gab."
+      },
+      {
+       "fa": "علینقی وزیری، که در پاریس و برلین موسیقی خوانده بود، برای حل این مشکل دو نشانه‌ی تازه ابداع کرد.",
+       "tr": "",
+       "de": "Ali-Naghi Vaziri, der in Paris und Berlin Musik studiert hatte, erfand zur Lösung dieses Problems zwei neue Zeichen."
+      },
+      {
+       "fa": "«سری» نت را حدود ربع پرده بالا می‌برد و «کرن» آن را حدود ربع پرده پایین می‌آورد.",
+       "tr": "",
+       "de": "‹Sori› erhöht einen Ton um etwa einen Viertelton, ‹Koron› senkt ihn um etwa einen Viertelton."
+      },
+      {
+       "fa": "البته این فاصله‌ها دقیقاً ربع پرده نیستند و اندازه‌ی آنها بسته به دستگاه و نوازنده کمی تغییر می‌کند.",
+       "tr": "",
+       "de": "Allerdings sind diese Intervalle nicht genau Vierteltöne; ihre Größe schwankt je nach Dastgah und Musiker etwas."
+      },
+      {
+       "fa": "این دو نشانه امروز در کتاب‌های آموزش موسیقی ایرانی به‌طور گسترده به کار می‌روند.",
+       "tr": "",
+       "de": "Beide Zeichen werden heute in Lehrbüchern für persische Musik allgemein verwendet."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zu den Infotexten",
+     "fragen": [
+      {
+       "frage": "Was wurde bei ‹Golha› miteinander verbunden?",
+       "optionen": [
+        "klassische Dichtung und traditionelle Musik",
+        "Popmusik und Nachrichten",
+        "Hörspiele und Sport"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Warum kennen wir Barbads Musik heute nicht?",
+       "optionen": [
+        "Nur die Namen der Melodien sind überliefert, nicht die Musik.",
+        "Er hat nie selbst komponiert.",
+        "Seine Musik war nur für Kinder bestimmt."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was bewirkt das Zeichen ‹Koron›?",
+       "optionen": [
+        "Es senkt einen Ton um etwa einen Viertelton.",
+        "Es erhöht einen Ton um einen Halbton.",
+        "Es verlängert eine Note."
        ],
        "richtig": 0
       }
@@ -831,24 +1822,9 @@
      "links": "de",
      "paare": [
       {
-       "fa": "من بیشتر به … علاقه دارم.",
-       "tr": "",
-       "de": "Ich interessiere mich eher für …"
-      },
-      {
-       "fa": "… را بارها گوش داده‌ام.",
-       "tr": "",
-       "de": "Ich habe … schon oft gehört."
-      },
-      {
        "fa": "تا حالا … را از نزدیک دیده‌ای؟",
        "tr": "",
        "de": "Hast du … schon einmal live erlebt?"
-      },
-      {
-       "fa": "… حال و هوای خاصی دارد.",
-       "tr": "",
-       "de": "… hat eine besondere Stimmung."
       },
       {
        "fa": "حوصله‌ی … را ندارم.",
@@ -856,9 +1832,24 @@
        "de": "Ich habe keine Lust auf …"
       },
       {
-       "fa": "سلیقه‌ها متفاوت است.",
+       "fa": "… حال و هوای خاصی دارد.",
        "tr": "",
-       "de": "Geschmäcker sind verschieden."
+       "de": "… hat eine besondere Stimmung."
+      },
+      {
+       "fa": "… را بارها گوش داده‌ام.",
+       "tr": "",
+       "de": "Ich habe … schon oft gehört."
+      },
+      {
+       "fa": "برای من … مهم است.",
+       "tr": "",
+       "de": "Für mich ist … wichtig."
+      },
+      {
+       "fa": "من بیشتر به … علاقه دارم.",
+       "tr": "",
+       "de": "Ich interessiere mich eher für …"
       }
      ],
      "titel": "Was bedeutet die Wendung?"
@@ -870,32 +1861,22 @@
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
-        "Für mich ist … wichtig.",
-        "… hat eine besondere Stimmung.",
-        "Ich habe … schon oft gehört."
-       ],
-       "richtig": 0,
-       "fa": "برای من … مهم است."
-      },
-      {
-       "frage": "Was bedeutet der Satz?",
-       "optionen": [
-        "Ich habe keine Lust auf …",
+        "Wenn ich wählen müsste, …",
         "Geschmäcker sind verschieden.",
         "Hast du … schon einmal live erlebt?"
        ],
        "richtig": 0,
-       "fa": "حوصله‌ی … را ندارم."
+       "fa": "اگر بخواهم انتخاب کنم، …"
       },
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
-        "Hast du … schon einmal live erlebt?",
-        "… hat eine besondere Stimmung.",
-        "Für mich ist … wichtig."
+        "Für mich ist … wichtig.",
+        "Ich habe keine Lust auf …",
+        "Wenn ich wählen müsste, …"
        ],
        "richtig": 0,
-       "fa": "تا حالا … را از نزدیک دیده‌ای؟"
+       "fa": "برای من … مهم است."
       },
       {
        "frage": "Was bedeutet der Satz?",
@@ -910,22 +1891,32 @@
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
-        "Wenn ich wählen müsste, …",
-        "Geschmäcker sind verschieden.",
-        "Ich habe … schon oft gehört."
+        "Ich habe keine Lust auf …",
+        "… hat eine besondere Stimmung.",
+        "Für mich ist … wichtig."
        ],
        "richtig": 0,
-       "fa": "اگر بخواهم انتخاب کنم، …"
+       "fa": "حوصله‌ی … را ندارم."
       },
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
-        "Geschmäcker sind verschieden.",
-        "Ich habe keine Lust auf …",
-        "Für mich ist … wichtig."
+        "Ich interessiere mich eher für …",
+        "Wenn ich wählen müsste, …",
+        "… hat eine besondere Stimmung."
        ],
        "richtig": 0,
-       "fa": "سلیقه‌ها متفاوت است."
+       "fa": "من بیشتر به … علاقه دارم."
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Ich habe … schon oft gehört.",
+        "Ich interessiere mich eher für …",
+        "Geschmäcker sind verschieden."
+       ],
+       "richtig": 0,
+       "fa": "… را بارها گوش داده‌ام."
       }
      ]
     },

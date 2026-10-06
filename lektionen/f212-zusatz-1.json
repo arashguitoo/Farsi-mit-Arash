@@ -247,6 +247,54 @@
        "a": "multikulturell"
       },
       {
+       "fa": "زعفران",
+       "a": "Safran"
+      },
+      {
+       "fa": "زرشک",
+       "a": "Berberitze"
+      },
+      {
+       "fa": "نان لواش",
+       "a": "Lavash-Brot"
+      },
+      {
+       "fa": "سبزه",
+       "a": "Sabzeh (Keimlinge für Nouruz)"
+      },
+      {
+       "fa": "فروشگاه ایرانی",
+       "a": "iranischer Laden"
+      },
+      {
+       "fa": "سالن اجتماعات",
+       "a": "Gemeindesaal"
+      },
+      {
+       "fa": "همکار",
+       "a": "Kollege/Kollegin"
+      },
+      {
+       "fa": "خواهرزاده",
+       "a": "Nichte/Neffe (Kind der Schwester)"
+      },
+      {
+       "fa": "دوزبانه",
+       "a": "zweisprachig"
+      },
+      {
+       "fa": "هویت",
+       "a": "Identität"
+      },
+      {
+       "fa": "مدرک",
+       "a": "Abschluss, Zeugnis"
+      },
+      {
+       "fa": "شیرینی نوروزی",
+       "a": "Nouruz-Gebäck"
+      },
+      {
        "fa": "مهاجرت کردن",
        "a": "auswandern, migrieren"
       },
@@ -277,28 +325,22 @@
      "links": "emoji",
      "paare": [
       {
-       "fa": "بازرگان",
+       "fa": "مهندس",
        "tr": "",
-       "de": "Kaufmann/Kauffrau",
-       "emoji": "💼"
+       "de": "Ingenieur/in",
+       "emoji": "👷"
       },
       {
-       "fa": "کارآفرین",
+       "fa": "نسل دوم",
        "tr": "",
-       "de": "Unternehmer/in",
-       "emoji": "🚀"
+       "de": "zweite Generation",
+       "emoji": "👨‍👧"
       },
       {
-       "fa": "اقامت",
+       "fa": "بندر",
        "tr": "",
-       "de": "Aufenthalt",
-       "emoji": "📆"
-      },
-      {
-       "fa": "سازگاری",
-       "tr": "",
-       "de": "Anpassung, Eingewöhnung",
-       "emoji": "🧩"
+       "de": "Hafen",
+       "emoji": "⚓"
       },
       {
        "fa": "انجمن",
@@ -307,10 +349,16 @@
        "emoji": "🏛️"
       },
       {
-       "fa": "موسیقی",
+       "fa": "آشپزی",
        "tr": "",
-       "de": "Musik",
-       "emoji": "🎶"
+       "de": "Kochen",
+       "emoji": "🍲"
+      },
+      {
+       "fa": "بازرگان",
+       "tr": "",
+       "de": "Kaufmann/Kauffrau",
+       "emoji": "💼"
       }
      ],
      "titel": "Memory"
@@ -320,10 +368,10 @@
      "links": "de",
      "paare": [
       {
-       "fa": "آشپزی",
+       "fa": "وطن",
        "tr": "",
-       "de": "Kochen",
-       "emoji": "🍲"
+       "de": "Heimat",
+       "emoji": "🏡"
       },
       {
        "fa": "جامعه‌ی ایرانی",
@@ -332,28 +380,28 @@
        "emoji": "👥"
       },
       {
-       "fa": "پزشک",
+       "fa": "نوروز",
        "tr": "",
-       "de": "Arzt/Ärztin",
-       "emoji": "🩺"
+       "de": "Nouruz (persisches Neujahr)",
+       "emoji": "🌸"
       },
       {
-       "fa": "ریشه",
+       "fa": "دوزبانه",
        "tr": "",
-       "de": "Wurzel",
-       "emoji": "🌱"
+       "de": "zweisprachig",
+       "emoji": "🗣️"
       },
       {
-       "fa": "نویسنده",
+       "fa": "آخر هفته",
        "tr": "",
-       "de": "Schriftsteller/in",
-       "emoji": "✍️"
+       "de": "Wochenende",
+       "emoji": "🗓️"
       },
       {
-       "fa": "چندفرهنگی",
+       "fa": "آشپزی",
        "tr": "",
-       "de": "multikulturell",
-       "emoji": "🌈"
+       "de": "Kochen",
+       "emoji": "🍲"
       }
      ],
      "titel": "Memory: Wort & Bedeutung"
@@ -373,8 +421,8 @@
        "frage": "<span class='fa'>در دهه‌ی ۱۹۶۰ بسیاری از ایرانیان به عنوان ___ به آلمان آمدند.</span><br><span class='mini'>In den 1960er Jahren kamen viele Iraner als Studierende nach Deutschland.</span>",
        "optionen": [
         "دانشجو",
-        "دلتنگی",
-        "تجارت"
+        "فروشگاه ایرانی",
+        "سازگاری"
        ],
        "richtig": 0,
        "optFa": true,
@@ -385,8 +433,8 @@
        "frage": "<span class='fa'>هامبورگ بزرگ‌ترین ___ آلمان را دارد.</span><br><span class='mini'>Hamburg hat die größte iranische Gemeinschaft Deutschlands.</span>",
        "optionen": [
         "جامعه‌ی ایرانی",
-        "نسل دوم",
-        "کارآفرین"
+        "آشپزی",
+        "مدرک"
        ],
        "richtig": 0,
        "optFa": true,
@@ -397,8 +445,8 @@
        "frage": "<span class='fa'>در «شهر انبارها» زمانی هزاران ___ ایرانی نگهداری می‌شد.</span><br><span class='mini'>In der ‹Speicherstadt› lagerten einst Tausende iranische Teppiche.</span>",
        "optionen": [
         "فرش",
-        "تجارت",
-        "آخر هفته"
+        "اقامت",
+        "جامعه‌ی ایرانی"
        ],
        "richtig": 0,
        "optFa": true,
@@ -409,26 +457,20 @@
        "frage": "<span class='fa'>بچه‌های ___ معمولا آلمانی را بهتر از فارسی حرف می‌زنند.</span><br><span class='mini'>Die Kinder der zweiten Generation sprechen meist besser Deutsch als Persisch.</span>",
        "optionen": [
         "نسل دوم",
-        "انبار",
-        "بورسیه"
+        "مدرسه‌ی فارسی",
+        "کارآفرین"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
        "erkl": "<span class='fa'>بچه‌های نسل دوم معمولا آلمانی را بهتر از فارسی حرف می‌زنند.</span>"
-      }
-     ]
-    },
-    {
-     "typ": "wahl",
-     "titel": "Welches Wort passt?",
-     "fragen": [
+      },
       {
        "frage": "<span class='fa'>هر شنبه صبح دخترم به ___ می‌رود.</span><br><span class='mini'>Jeden Samstagmorgen geht meine Tochter in die Persischschule.</span>",
        "optionen": [
         "مدرسه‌ی فارسی",
-        "کارآفرین",
-        "دلتنگی"
+        "فروشگاه ایرانی",
+        "مهاجرت"
        ],
        "richtig": 0,
        "optFa": true,
@@ -439,20 +481,26 @@
        "frage": "<span class='fa'>پیش از نوروز مادرم ___ را می‌چیند.</span><br><span class='mini'>Vor Nouruz deckt meine Mutter den Haft-Sin-Tisch.</span>",
        "optionen": [
         "سفره‌ی هفت‌سین",
-        "هم‌وطن",
-        "چندفرهنگی"
+        "تجارت",
+        "دانشجو"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
        "erkl": "<span class='fa'>پیش از نوروز مادرم سفره‌ی هفت‌سین را می‌چیند.</span>"
-      },
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
       {
        "frage": "<span class='fa'>بعد از سال‌ها زندگی در ___، هنوز بوی نان تازه‌ی تهران را به یاد دارد.</span><br><span class='mini'>Nach Jahren in der Fremde erinnert er sich noch an den Duft des frischen Teheraner Brotes.</span>",
        "optionen": [
         "غربت",
-        "مدرسه‌ی فارسی",
-        "مهندس"
+        "بندر",
+        "تجارت"
        ],
        "richtig": 0,
        "optFa": true,
@@ -463,13 +511,61 @@
        "frage": "<span class='fa'>بسیاری از بازرگانان فرش کالای خود را از ___ هامبورگ به سراسر اروپا می‌فرستادند.</span><br><span class='mini'>Viele Teppichhändler schickten ihre Ware vom Hamburger Hafen in ganz Europa.</span>",
        "optionen": [
         "بندر",
-        "نویسنده",
-        "سفره‌ی هفت‌سین"
+        "مهندس",
+        "خانواده"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
        "erkl": "<span class='fa'>بسیاری از بازرگانان فرش کالای خود را از بندر هامبورگ به سراسر اروپا می‌فرستادند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>بچه‌هایی که در خانه فارسی و در مدرسه آلمانی حرف می‌زنند، ___ بزرگ می‌شوند.</span><br><span class='mini'>Kinder, die zu Hause Persisch und in der Schule Deutsch sprechen, wachsen zweisprachig auf.</span>",
+       "optionen": [
+        "دوزبانه",
+        "دانشجو",
+        "نوروز"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>بچه‌هایی که در خانه فارسی و در مدرسه آلمانی حرف می‌زنند، دوزبانه بزرگ می‌شوند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>بردیا برای پلوی نوروز کمی ___ از فروشگاه آقای کریمی خرید.</span><br><span class='mini'>Bardia kaufte für den Nouruz-Reis etwas Safran in Herrn Karimis Laden.</span>",
+       "optionen": [
+        "زعفران",
+        "پزشک",
+        "نویسنده"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>بردیا برای پلوی نوروز کمی زعفران از فروشگاه آقای کریمی خرید.</span>"
+      },
+      {
+       "frage": "<span class='fa'>جشن نوروز امسال در ___ محله برگزار شد.</span><br><span class='mini'>Das Nouruz-Fest fand dieses Jahr im Gemeindesaal des Viertels statt.</span>",
+       "optionen": [
+        "سالن اجتماعات",
+        "نوروز",
+        "مهندس"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>جشن نوروز امسال در سالن اجتماعات محله برگزار شد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>دو هفته پیش از نوروز عدس را خیس می‌کنند تا ___ سبز شود.</span><br><span class='mini'>Zwei Wochen vor Nouruz weicht man Linsen ein, damit das Sabzeh keimt.</span>",
+       "optionen": [
+        "سبزه",
+        "کارآفرین",
+        "خواهرزاده"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>دو هفته پیش از نوروز عدس را خیس می‌کنند تا سبزه سبز شود.</span>"
       }
      ]
     }
@@ -486,85 +582,6 @@
      "trenner": " ",
      "woerter": [
       {
-       "fa": "بردیا جان، سفره‌ی هفت‌سین را چیدی؟ امسال هم نمی‌آیی تهران؟",
-       "tr": "",
-       "de": "Bardia, hast du den Haft-Sin-Tisch schon gedeckt? Kommst du dieses Jahr wieder nicht nach Teheran?",
-       "teile": [
-        "بردیا",
-        "جان",
-        "سفره‌ی",
-        "هفت‌سین",
-        "را",
-        "چیدی",
-        "امسال",
-        "هم",
-        "نمی‌آیی",
-        "تهران"
-       ],
-       "extra": [
-        "نوروز"
-       ]
-      },
-      {
-       "fa": "اما داستان ایرانیان در آلمان فقط داستان فرش نیست.",
-       "tr": "",
-       "de": "Doch die Geschichte der Iraner in Deutschland ist nicht nur eine Geschichte der Teppiche.",
-       "teile": [
-        "اما",
-        "داستان",
-        "ایرانیان",
-        "در",
-        "آلمان",
-        "فقط",
-        "داستان",
-        "فرش",
-        "نیست"
-       ],
-       "extra": [
-        "هفت‌سین"
-       ]
-      },
-      {
-       "fa": "باشد! چرا ده سال پیش به هامبورگ آمدید؟",
-       "tr": "",
-       "de": "Einverstanden! Warum sind Sie vor zehn Jahren nach Hamburg gekommen?",
-       "teile": [
-        "باشد",
-        "چرا",
-        "ده",
-        "سال",
-        "پیش",
-        "به",
-        "هامبورگ",
-        "آمدید"
-       ],
-       "extra": [
-        "آلمان"
-       ]
-      },
-      {
-       "fa": "برای بعضی، این وضعیت گاهی با دلتنگی و احساس غربت همراه است.",
-       "tr": "",
-       "de": "Für manche geht diese Situation manchmal mit Heimweh und einem Gefühl der Fremde einher.",
-       "teile": [
-        "برای",
-        "بعضی",
-        "این",
-        "وضعیت",
-        "گاهی",
-        "با",
-        "دلتنگی",
-        "و",
-        "احساس",
-        "غربت",
-        "همراه",
-        "است"
-       ],
-       "extra": [
-        "دارید؟"
-       ]
-      },
-      {
        "fa": "راستش را بگو، دلت برای خانه تنگ نمی‌شود؟",
        "tr": "",
        "de": "Sag ehrlich, hast du kein Heimweh?",
@@ -579,28 +596,96 @@
         "نمی‌شود"
        ],
        "extra": [
-        "داستان"
+        "این"
        ]
       },
       {
-       "fa": "خواهش می‌کنم، حتماً. ولی لطفاً بگویید بردیا؛ شما دوست خواهرم هستید!",
+       "fa": "یک سؤال آخر: به چه زبانی فکر می‌کنید؟",
        "tr": "",
-       "de": "Gern, natürlich. Aber sagen Sie bitte einfach Bardia – Sie sind ein Freund meiner Schwester!",
+       "de": "Eine letzte Frage: In welcher Sprache denken Sie?",
        "teile": [
-        "خواهش",
-        "می‌کنم",
-        "حتماً",
-        "ولی",
-        "لطفاً",
-        "بگویید",
-        "بردیا؛",
-        "شما",
-        "دوست",
-        "خواهرم",
-        "هستید"
+        "یک",
+        "سؤال",
+        "آخر",
+        "به",
+        "چه",
+        "زبانی",
+        "فکر",
+        "می‌کنید"
        ],
        "extra": [
-        "نوروز"
+        "نگه"
+       ]
+      },
+      {
+       "fa": "بردیا، این عکس سفره‌ای پر از چیز‌های رنگارنگ است. این چیست؟",
+       "tr": "",
+       "de": "Bardia, auf diesem Foto ist ein Tisch voller bunter Dinge. Was ist das?",
+       "teile": [
+        "بردیا",
+        "این",
+        "عکس",
+        "سفره‌ای",
+        "پر",
+        "از",
+        "چیز‌های",
+        "رنگارنگ",
+        "است",
+        "این",
+        "چیست"
+       ],
+       "extra": [
+        "آمدید؟"
+       ]
+      },
+      {
+       "fa": "هر کدام معنای خاصی دارد؟",
+       "tr": "",
+       "de": "Hat jedes davon eine besondere Bedeutung?",
+       "teile": [
+        "هر",
+        "کدام",
+        "معنای",
+        "خاصی",
+        "دارد"
+       ],
+       "extra": [
+        "با"
+       ]
+      },
+      {
+       "fa": "سال تحویل در هامبورگ چه ساعتی است؟ هم‌زمان با تهران؟",
+       "tr": "",
+       "de": "Wann ist Sal-Tahvil in Hamburg? Zur gleichen Zeit wie in Teheran?",
+       "teile": [
+        "سال",
+        "تحویل",
+        "در",
+        "هامبورگ",
+        "چه",
+        "ساعتی",
+        "است",
+        "هم‌زمان",
+        "با",
+        "تهران"
+       ],
+       "extra": [
+        "چندفرهنگی،"
+       ]
+      },
+      {
+       "fa": "سمنو و سنجد را نمی‌شناسم.",
+       "tr": "",
+       "de": "Samanu und Sendsched kenne ich nicht.",
+       "teile": [
+        "سمنو",
+        "و",
+        "سنجد",
+        "را",
+        "نمی‌شناسم"
+       ],
+       "extra": [
+        "تحویل"
        ]
       }
      ]
@@ -610,22 +695,33 @@
      "titel": "Was bedeutet der Satz?",
      "fragen": [
       {
-       "frage": "„Einverstanden! Warum sind Sie vor zehn Jahren nach Hamburg gekommen?“",
+       "frage": "„Hallo Bardia! Ist Nouruz in Hamburg genauso wie in Teheran?“",
        "optionen": [
-        "باشد! چرا ده سال پیش به هامبورگ آمدید؟",
-        "برای بعضی، این وضعیت گاهی با دلتنگی و احساس غربت همراه است.",
-        "راستش را بگو، دلت برای خانه تنگ نمی‌شود؟"
+        "سلام بردیا! نوروز در هامبورگ هم مثل تهران است؟",
+        "اما داستان ایرانیان در آلمان فقط داستان فرش نیست.",
+        "و بعد از تحصیل ماندید؟"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false
       },
       {
-       "frage": "„Bardia, hast du den Haft-Sin-Tisch schon gedeckt? Kommst du dieses Jahr wieder nicht nach Teheran?“",
+       "frage": "„Bardia, auf diesem Foto ist ein Tisch voller bunter Dinge. Was ist das?“",
        "optionen": [
-        "بردیا جان، سفره‌ی هفت‌سین را چیدی؟ امسال هم نمی‌آیی تهران؟",
-        "و بعد از تحصیل ماندید؟",
-        "نوروز مهم‌ترین جشن سال برای ایرانیان آلمان است."
+        "بردیا، این عکس سفره‌ای پر از چیز‌های رنگارنگ است. این چیست؟",
+        "سلام بردیا! نوروز در هامبورگ هم مثل تهران است؟",
+        "و پیدا کردن خانه چطور بود؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Was für ein schöner Brauch! Ist das Fest eures Vereins für alle offen?“",
+       "optionen": [
+        "چه رسم قشنگی! جشن انجمن شما برای همه آزاد است؟",
+        "سال‌های اول چه سختی‌هایی داشتید؟",
+        "سلام بردیا! نوروز در هامبورگ هم مثل تهران است؟"
        ],
        "richtig": 0,
        "optFa": true,
@@ -635,41 +731,30 @@
        "frage": "„Nouruz ist für die Iraner in Deutschland das wichtigste Fest des Jahres.“",
        "optionen": [
         "نوروز مهم‌ترین جشن سال برای ایرانیان آلمان است.",
-        "راستش را بگو، دلت برای خانه تنگ نمی‌شود؟",
-        "با جامعه‌ی ایرانی هامبورگ هم ارتباط دارید؟"
+        "بردیا، این عکس سفره‌ای پر از چیز‌های رنگارنگ است. این چیست؟",
+        "و پیدا کردن خانه چطور بود؟"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false
       },
       {
-       "frage": "„Haben Sie auch Kontakt zur iranischen Gemeinschaft in Hamburg?“",
+       "frage": "„Das Programm beginnt mit einer Begrüßung durch die Vereinsvorsitzende auf Persisch und Deutsch.“",
        "optionen": [
-        "با جامعه‌ی ایرانی هامبورگ هم ارتباط دارید؟",
-        "بردیا جان، سفره‌ی هفت‌سین را چیدی؟ امسال هم نمی‌آیی تهران؟",
-        "امروز هم هامبورگ بزرگ‌ترین جامعه‌ی ایرانی آلمان را دارد."
+        "برنامه با خوشامدگویی رئیس انجمن به فارسی و آلمانی شروع می‌شود.",
+        "برای بعضی، این وضعیت گاهی با دلتنگی و احساس غربت همراه است.",
+        "و بعد از تحصیل ماندید؟"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false
       },
       {
-       "frage": "„Vielleicht ist gerade dieses multikulturelle Leben das wichtigste Erbe dieser Gemeinschaft für kommende Generationen.“",
+       "frage": "„Gern, natürlich. Aber sagen Sie bitte einfach Bardia – Sie sind ein Freund meiner Schwester!“",
        "optionen": [
-        "شاید همین زندگی چندفرهنگی، مهم‌ترین میراث این جامعه برای نسل‌های آینده باشد.",
+        "خواهش می‌کنم، حتماً. ولی لطفاً بگویید بردیا؛ شما دوست خواهرم هستید!",
         "باشد! چرا ده سال پیش به هامبورگ آمدید؟",
-        "خواهش می‌کنم، حتماً. ولی لطفاً بگویید بردیا؛ شما دوست خواهرم هستید!"
-       ],
-       "richtig": 0,
-       "optFa": true,
-       "hoeren": false
-      },
-      {
-       "frage": "„Hallo Bardia! Ist Nouruz in Hamburg genauso wie in Teheran?“",
-       "optionen": [
-        "سلام بردیا! نوروز در هامبورگ هم مثل تهران است؟",
-        "اما داستان ایرانیان در آلمان فقط داستان فرش نیست.",
-        "امروز هم هامبورگ بزرگ‌ترین جامعه‌ی ایرانی آلمان را دارد."
+        "سال تحویل در هامبورگ چه ساعتی است؟ هم‌زمان با تهران؟"
        ],
        "richtig": 0,
        "optFa": true,
@@ -684,39 +769,19 @@
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
-        "Einverstanden! Warum sind Sie vor zehn Jahren nach Hamburg gekommen?",
-        "Für manche geht diese Situation manchmal mit Heimweh und einem Gefühl der Fremde einher.",
-        "Nouruz ist für die Iraner in Deutschland das wichtigste Fest des Jahres."
+        "Wann ist Sal-Tahvil in Hamburg? Zur gleichen Zeit wie in Teheran?",
+        "Haben Sie auch Kontakt zur iranischen Gemeinschaft in Hamburg?",
+        "Einverstanden! Warum sind Sie vor zehn Jahren nach Hamburg gekommen?"
        ],
        "richtig": 0,
-       "fa": "باشد! چرا ده سال پیش به هامبورگ آمدید؟"
-      },
-      {
-       "frage": "Was bedeutet der Satz?",
-       "optionen": [
-        "Vielleicht ist gerade dieses multikulturelle Leben das wichtigste Erbe dieser Gemeinschaft für kommende Generationen.",
-        "Auch heute hat Hamburg die größte iranische Gemeinschaft Deutschlands.",
-        "Sag ehrlich, hast du kein Heimweh?"
-       ],
-       "richtig": 0,
-       "fa": "شاید همین زندگی چندفرهنگی، مهم‌ترین میراث این جامعه برای نسل‌های آینده باشد."
-      },
-      {
-       "frage": "Was bedeutet der Satz?",
-       "optionen": [
-        "Hallo Bardia! Ist Nouruz in Hamburg genauso wie in Teheran?",
-        "Für manche geht diese Situation manchmal mit Heimweh und einem Gefühl der Fremde einher.",
-        "Vielleicht ist gerade dieses multikulturelle Leben das wichtigste Erbe dieser Gemeinschaft für kommende Generationen."
-       ],
-       "richtig": 0,
-       "fa": "سلام بردیا! نوروز در هامبورگ هم مثل تهران است؟"
+       "fa": "سال تحویل در هامبورگ چه ساعتی است؟ هم‌زمان با تهران؟"
       },
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
         "Gern, natürlich. Aber sagen Sie bitte einfach Bardia – Sie sind ein Freund meiner Schwester!",
-        "Bardia, hast du den Haft-Sin-Tisch schon gedeckt? Kommst du dieses Jahr wieder nicht nach Teheran?",
-        "Einverstanden! Warum sind Sie vor zehn Jahren nach Hamburg gekommen?"
+        "Was für ein schöner Brauch! Ist das Fest eures Vereins für alle offen?",
+        "Und wie war die Wohnungssuche?"
        ],
        "richtig": 0,
        "fa": "خواهش می‌کنم، حتماً. ولی لطفاً بگویید بردیا؛ شما دوست خواهرم هستید!"
@@ -724,9 +789,29 @@
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
+        "Wie lange lasst ihr den Tisch stehen?",
+        "Hat jedes davon eine besondere Bedeutung?",
+        "Und nach dem Studium sind Sie geblieben?"
+       ],
+       "richtig": 0,
+       "fa": "سفره را تا کی نگه می‌دارید؟"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Bardia, hast du den Haft-Sin-Tisch schon gedeckt? Kommst du dieses Jahr wieder nicht nach Teheran?",
+        "Nouruz ist für die Iraner in Deutschland das wichtigste Fest des Jahres.",
+        "Bardia, auf diesem Foto ist ein Tisch voller bunter Dinge. Was ist das?"
+       ],
+       "richtig": 0,
+       "fa": "بردیا جان، سفره‌ی هفت‌سین را چیدی؟ امسال هم نمی‌آیی تهران؟"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
         "Doch die Geschichte der Iraner in Deutschland ist nicht nur eine Geschichte der Teppiche.",
         "Und nach dem Studium sind Sie geblieben?",
-        "Nouruz ist für die Iraner in Deutschland das wichtigste Fest des Jahres."
+        "Auch heute hat Hamburg die größte iranische Gemeinschaft Deutschlands."
        ],
        "richtig": 0,
        "fa": "اما داستان ایرانیان در آلمان فقط داستان فرش نیست."
@@ -734,12 +819,12 @@
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
-        "Für manche geht diese Situation manchmal mit Heimweh und einem Gefühl der Fremde einher.",
-        "Nouruz ist für die Iraner in Deutschland das wichtigste Fest des Jahres.",
-        "Sag ehrlich, hast du kein Heimweh?"
+        "Auch heute hat Hamburg die größte iranische Gemeinschaft Deutschlands.",
+        "Samanu und Sendsched kenne ich nicht.",
+        "Wann ist Sal-Tahvil in Hamburg? Zur gleichen Zeit wie in Teheran?"
        ],
        "richtig": 0,
-       "fa": "برای بعضی، این وضعیت گاهی با دلتنگی و احساس غربت همراه است."
+       "fa": "امروز هم هامبورگ بزرگ‌ترین جامعه‌ی ایرانی آلمان را دارد."
       }
      ]
     }

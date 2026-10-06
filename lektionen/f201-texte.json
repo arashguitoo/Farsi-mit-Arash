@@ -2,7 +2,7 @@
  "id": "tx",
  "art": "texte",
  "titel": "Sachtext & Dialoge",
- "beschreibung": "Sachtext, Wortschatz im Kontext, zwei Dialoge, Redemittel und Schreibaufgabe.",
+ "beschreibung": "Sachtext, Wortschatz im Kontext, Alltagstext, drei Dialoge, Infotexte, Redemittel und Schreibaufgabe.",
  "stationen": [
   {
    "id": "t1",
@@ -12,7 +12,7 @@
     {
      "typ": "info",
      "titel": "Neue Wörter im Text",
-     "text": "<p><span class='fa'>سخن گفتن</span> – sprechen (gehoben) · <span class='fa'>هندواروپایی</span> – indoeuropäisch · <span class='fa'>هخامنشی</span> – achämenidisch · <span class='fa'>سرودن</span> – dichten · <span class='fa'>چاپ شدن</span> – gedruckt werden · <span class='fa'>شبکه‌های اجتماعی</span> – soziale Medien · <span class='fa'>ترانه</span> – Lied</p>",
+     "text": "<p><span class='fa'>سخن گفتن</span> – sprechen (gehoben) · <span class='fa'>برآورد</span> – Schätzung · <span class='fa'>هندواروپایی</span> – indoeuropäisch · <span class='fa'>تعلق داشتن</span> – gehören · <span class='fa'>جنس دستوری</span> – grammatisches Geschlecht · <span class='fa'>نقش کردن</span> – einmeißeln, abbilden · <span class='fa'>رمزگشایی کردن</span> – entziffern · <span class='fa'>آرامی</span> – aramäisch · <span class='fa'>افزودن</span> – hinzufügen · <span class='fa'>بیت</span> – Vers · <span class='fa'>روایت کردن</span> – erzählen · <span class='fa'>مصوت</span> – Vokal · <span class='fa'>فرهنگستان</span> – (Sprach-)Akademie · <span class='fa'>معادل</span> – Entsprechung · <span class='fa'>ترانه</span> – Lied</p>",
      "stil": "merke"
     },
     {
@@ -21,9 +21,9 @@
      "text": "Ohne Umschrift und ohne Vokalzeichen. Tippe eine Zeile an, wenn du die Übersetzung brauchst.",
      "zeilen": [
       {
-       "fa": "فارسی یکی از زبان‌های کهن جهان است که امروز بیش از صد میلیون نفر به آن سخن می‌گویند.",
+       "fa": "فارسی یکی از زبان‌های کهن جهان است که امروز، به گفته‌ی برخی برآوردها، بیش از صد میلیون نفر به‌عنوان زبان مادری یا زبان دوم به آن سخن می‌گویند.",
        "tr": "",
-       "de": "Persisch ist eine der alten Sprachen der Welt, die heute von über hundert Millionen Menschen gesprochen wird."
+       "de": "Persisch ist eine der alten Sprachen der Welt; nach manchen Schätzungen sprechen es heute über hundert Millionen Menschen als Mutter- oder Zweitsprache."
       },
       {
        "fa": "این زبان در سه کشور زبان رسمی است: در ایران «فارسی»، در افغانستان «دری» و در تاجیکستان «تاجیکی» نامیده می‌شود.",
@@ -31,14 +31,29 @@
        "de": "Die Sprache ist in drei Ländern Amtssprache: In Iran heißt sie ‹Farsi›, in Afghanistan ‹Dari› und in Tadschikistan ‹Tadschikisch›."
       },
       {
+       "fa": "علاوه بر این، گویشوران فارسی در کشورهای همسایه مانند ازبکستان، به‌ویژه در شهرهای تاریخی سمرقند و بخارا، و نیز در میان مهاجران بسیاری در اروپا و آمریکای شمالی زندگی می‌کنند.",
+       "tr": "",
+       "de": "Außerdem leben Persischsprachige in Nachbarländern wie Usbekistan – vor allem in den historischen Städten Samarkand und Buchara – sowie unter vielen Migranten in Europa und Nordamerika."
+      },
+      {
        "fa": "فارسی از خانواده‌ی زبان‌های هندواروپایی است و از این نظر با آلمانی و انگلیسی خویشاوند است.",
        "tr": "",
        "de": "Persisch gehört zur indoeuropäischen Sprachfamilie und ist insofern mit Deutsch und Englisch verwandt."
       },
       {
-       "fa": "واژه‌هایی مثل «مادر» و «برادر» این خویشاوندی را به‌خوبی نشان می‌دهند.",
+       "fa": "در درون این خانواده، فارسی به شاخه‌ی زبان‌های ایرانی تعلق دارد؛ کردی، بلوچی و پشتو هم از همین شاخه‌اند.",
        "tr": "",
-       "de": "Wörter wie ‹madar› (Mutter) und ‹baradar› (Bruder) zeigen diese Verwandtschaft deutlich."
+       "de": "Innerhalb dieser Familie gehört Persisch zum Zweig der iranischen Sprachen; auch Kurdisch, Belutschisch und Paschtu gehören zu diesem Zweig."
+      },
+      {
+       "fa": "واژه‌هایی مثل «مادر»، «برادر»، «دختر» و «نام» این خویشاوندی را به‌خوبی نشان می‌دهند، زیرا تلفظ آنها به معادل‌های آلمانی‌شان بسیار نزدیک است.",
+       "tr": "",
+       "de": "Wörter wie ‹madar›, ‹baradar›, ‹dochtar› und ‹nam› zeigen diese Verwandtschaft deutlich, denn sie klingen ihren deutschen Entsprechungen Mutter, Bruder, Tochter und Name sehr ähnlich."
+      },
+      {
+       "fa": "با این حال، دستور زبان فارسی امروز از بسیاری جهات با آلمانی متفاوت است: فارسی جنس دستوری ندارد و اسم‌ها حالت‌های دستوری مانند آلمانی ندارند.",
+       "tr": "",
+       "de": "Dennoch unterscheidet sich die persische Grammatik heute in vieler Hinsicht vom Deutschen: Persisch hat kein grammatisches Geschlecht, und die Nomen haben keine Fälle wie im Deutschen."
       },
       {
        "fa": "تاریخ این زبان را معمولا به سه دوره تقسیم می‌کنند: فارسی باستان، فارسی میانه و فارسی نو.",
@@ -46,19 +61,49 @@
        "de": "Die Geschichte der Sprache teilt man meist in drei Epochen ein: Altpersisch, Mittelpersisch und Neupersisch."
       },
       {
-       "fa": "فارسی باستان را از سنگ‌نوشته‌های هخامنشی می‌شناسیم که به خط میخی نوشته شده‌اند.",
+       "fa": "فارسی باستان را از سنگ‌نوشته‌های هخامنشی می‌شناسیم که حدود دو هزار و پانصد سال پیش به خط میخی نوشته شده‌اند.",
        "tr": "",
-       "de": "Das Altpersische kennen wir aus den achämenidischen Inschriften, die in Keilschrift geschrieben sind."
+       "de": "Das Altpersische kennen wir aus den achämenidischen Inschriften, die vor rund zweieinhalbtausend Jahren in Keilschrift geschrieben wurden."
       },
       {
-       "fa": "فارسی نو بیش از هزار سال پیش در منطقه‌ای پدید آمد که امروز میان ایران، افغانستان و تاجیکستان تقسیم شده است.",
+       "fa": "معروف‌ترین آنها سنگ‌نوشته‌ی بیستون در نزدیکی کرمانشاه است که داریوش بزرگ آن را به سه زبان بر دیواره‌ی کوه نقش کرد.",
        "tr": "",
-       "de": "Das Neupersische entstand vor über tausend Jahren in einer Region, die heute zwischen Iran, Afghanistan und Tadschikistan aufgeteilt ist."
+       "de": "Die bekannteste ist die Inschrift von Bisotun bei Kermanschah, die Dareios der Große in drei Sprachen in die Felswand meißeln ließ."
       },
       {
-       "fa": "رودکی، که او را پدر شعر فارسی می‌دانند، در نزدیکی پنجکنت در تاجیکستان امروزی به دنیا آمد.",
+       "fa": "همین متن سه‌زبانه در قرن نوزدهم به پژوهشگران اروپایی کمک کرد تا خط میخی را رمزگشایی کنند.",
        "tr": "",
-       "de": "Rudaki, der als Vater der persischen Dichtung gilt, wurde in der Nähe von Pandschakent im heutigen Tadschikistan geboren."
+       "de": "Gerade dieser dreisprachige Text half europäischen Forschern im 19. Jahrhundert, die Keilschrift zu entziffern."
+      },
+      {
+       "fa": "فارسی میانه، که به آن «پهلوی» هم می‌گویند، زبان رسمی دوره‌ی ساسانی بود و با خطی نوشته می‌شد که از خط آرامی گرفته شده بود.",
+       "tr": "",
+       "de": "Das Mittelpersische, auch ‹Pahlavi› genannt, war die Amtssprache der Sasanidenzeit und wurde in einer Schrift geschrieben, die von der aramäischen Schrift abstammte."
+      },
+      {
+       "fa": "فارسی نو بیش از هزار سال پیش در منطقه‌ای پدید آمد که امروز میان ایران، افغانستان، تاجیکستان و ازبکستان تقسیم شده است.",
+       "tr": "",
+       "de": "Das Neupersische entstand vor über tausend Jahren in einer Region, die heute zwischen Iran, Afghanistan, Tadschikistan und Usbekistan aufgeteilt ist."
+      },
+      {
+       "fa": "در این دوره، فارسی با الفبای عربی نوشته شد و چهار حرف «پ»، «چ»، «ژ» و «گ» به آن افزوده شد تا صداهای ویژه‌ی فارسی را نشان دهد.",
+       "tr": "",
+       "de": "In dieser Zeit wurde Persisch mit dem arabischen Alphabet geschrieben, dem man die vier Buchstaben ‹p›, ‹tsch›, ‹sch› (stimmhaft) und ‹g› hinzufügte, um die besonderen persischen Laute wiederzugeben."
+      },
+      {
+       "fa": "به این ترتیب، الفبای فارسی امروز سی‌ودو حرف دارد.",
+       "tr": "",
+       "de": "So hat das persische Alphabet heute zweiunddreißig Buchstaben."
+      },
+      {
+       "fa": "در همین قرن‌ها هزاران واژه‌ی عربی نیز وارد فارسی شد؛ بسیاری از واژه‌های علمی و اداری و همچنین جمع‌هایی مانند «کتب» و «آثار» از همین راه به فارسی رسیده‌اند.",
+       "tr": "",
+       "de": "In diesen Jahrhunderten kamen auch Tausende arabische Wörter ins Persische; viele wissenschaftliche und Verwaltungswörter sowie Pluralformen wie ‹kotob› und ‹asar› sind auf diesem Weg ins Persische gelangt."
+      },
+      {
+       "fa": "رودکی، که او را پدر شعر فارسی می‌دانند، در نزدیکی پنجکنت در تاجیکستان امروزی به دنیا آمد و در دربار سامانیان در بخارا شعر می‌سرود.",
+       "tr": "",
+       "de": "Rudaki, der als Vater der persischen Dichtung gilt, wurde in der Nähe von Pandschakent im heutigen Tadschikistan geboren und dichtete am Hof der Samaniden in Buchara."
       },
       {
        "fa": "فردوسی شاهنامه را در توس سرود؛ شهری که امروز در شمال شرق ایران قرار دارد.",
@@ -66,14 +111,39 @@
        "de": "Ferdousi dichtete das Schahname in Tus, einer Stadt, die heute im Nordosten Irans liegt."
       },
       {
+       "fa": "این حماسه‌ی بزرگ، که حدود پنجاه هزار بیت دارد، داستان پادشاهان و پهلوانان ایران را از آغاز افسانه‌ای تا پایان دوره‌ی ساسانی روایت می‌کند.",
+       "tr": "",
+       "de": "Dieses große Epos mit rund fünfzigtausend Versen erzählt die Geschichte der Könige und Helden Irans von den sagenhaften Anfängen bis zum Ende der Sasanidenzeit."
+      },
+      {
+       "fa": "بسیاری معتقدند که فردوسی با این اثر به حفظ زبان فارسی کمک بزرگی کرد.",
+       "tr": "",
+       "de": "Viele sind der Ansicht, dass Ferdousi mit diesem Werk einen großen Beitrag zur Bewahrung der persischen Sprache geleistet hat."
+      },
+      {
        "fa": "در قرن‌های بعد، فارسی زبان علم، ادبیات و دربار در سرزمین‌های گسترده‌ای از هند تا آناتولی بود.",
        "tr": "",
        "de": "In den folgenden Jahrhunderten war Persisch die Sprache der Wissenschaft, der Literatur und der Höfe in weiten Gebieten von Indien bis Anatolien."
       },
       {
+       "fa": "در هند، فارسی چند قرن زبان اداری دربار بود و تا قرن نوزدهم در دادگاه‌ها و دفترهای دولتی به کار می‌رفت.",
+       "tr": "",
+       "de": "In Indien war Persisch mehrere Jahrhunderte lang die Verwaltungssprache des Hofes und wurde bis ins 19. Jahrhundert in Gerichten und Behörden verwendet."
+      },
+      {
+       "fa": "در دربار عثمانی نیز شعر فارسی خوانده می‌شد و بسیاری از شاعران ترک فارسی را به‌خوبی می‌دانستند.",
+       "tr": "",
+       "de": "Auch am osmanischen Hof las man persische Dichtung, und viele türkische Dichter beherrschten das Persische gut."
+      },
+      {
        "fa": "به همین دلیل، در زبان‌هایی مثل اردو و ترکی هنوز هزاران وام‌واژه‌ی فارسی دیده می‌شود.",
        "tr": "",
        "de": "Deshalb findet man in Sprachen wie Urdu und Türkisch noch heute Tausende persische Lehnwörter."
+      },
+      {
+       "fa": "واژه‌هایی مانند «بازار»، «کاروان» و «شال» حتی به زبان‌های اروپایی، از جمله آلمانی، راه یافته‌اند.",
+       "tr": "",
+       "de": "Wörter wie ‹Basar›, ‹Karawane› und ‹Schal› haben sogar ihren Weg in europäische Sprachen gefunden, darunter das Deutsche."
       },
       {
        "fa": "اما اگر فارسی یک زبان است، تفاوت‌ها کجاست؟",
@@ -86,14 +156,14 @@
        "de": "Die Grammatik ist in allen drei Ländern nahezu gleich, und die Sprecher verstehen einander meist ohne Probleme."
       },
       {
-       "fa": "تفاوت اصلی در تلفظ و واژگان است.",
+       "fa": "تفاوت اصلی در تلفظ و واژگان است؛ برای مثال، در دری برخی مصوت‌های فارسی کلاسیک حفظ شده که در ایران دیگر شنیده نمی‌شود.",
        "tr": "",
-       "de": "Der Hauptunterschied liegt in Aussprache und Wortschatz."
+       "de": "Der Hauptunterschied liegt in Aussprache und Wortschatz; im Dari zum Beispiel sind einige Vokale des klassischen Persisch erhalten, die man in Iran nicht mehr hört."
       },
       {
-       "fa": "برای مثال، در افغانستان به دانشگاه «پوهنتون» می‌گویند که یک وام‌واژه از زبان پشتو است.",
+       "fa": "در افغانستان به دانشگاه «پوهنتون» می‌گویند که یک وام‌واژه از زبان پشتو است.",
        "tr": "",
-       "de": "In Afghanistan zum Beispiel sagt man zur Universität ‹pohantun›, ein Lehnwort aus dem Paschtu."
+       "de": "In Afghanistan sagt man zur Universität ‹pohantun›, ein Lehnwort aus dem Paschtu."
       },
       {
        "fa": "در ایران وام‌واژه‌های فرانسوی مثل «مرسی» و «آسانسور» رایج است، در حالی که تاجیکی بیشتر از روسی واژه گرفته است.",
@@ -101,14 +171,34 @@
        "de": "In Iran sind französische Lehnwörter wie ‹merci› und ‹ascenseur› verbreitet, während das Tadschikische eher Wörter aus dem Russischen übernommen hat."
       },
       {
-       "fa": "بزرگ‌ترین تفاوت اما در خط است: تاجیکی از سال ۱۹۴۰ با الفبای سیریلیک نوشته می‌شود.",
+       "fa": "بزرگ‌ترین تفاوت اما در خط است: تاجیکی پس از یک دوره‌ی کوتاه با الفبای لاتین، از سال ۱۹۴۰ با الفبای سیریلیک نوشته می‌شود.",
        "tr": "",
-       "de": "Der größte Unterschied liegt aber in der Schrift: Tadschikisch wird seit 1940 mit dem kyrillischen Alphabet geschrieben."
+       "de": "Der größte Unterschied liegt aber in der Schrift: Nach einer kurzen Phase mit lateinischem Alphabet wird Tadschikisch seit 1940 kyrillisch geschrieben."
       },
       {
        "fa": "بنابراین یک ایرانی شعر حافظ را در کتابی که در تاجیکستان چاپ شده نمی‌تواند بخواند، اما اگر کسی آن را بلند بخواند، همه‌چیز را می‌فهمد.",
        "tr": "",
        "de": "Ein Iraner kann daher ein Hafes-Gedicht in einem in Tadschikistan gedruckten Buch nicht lesen – liest es aber jemand laut vor, versteht er alles."
+      },
+      {
+       "fa": "در ایران، نخستین فرهنگستان در دهه‌ی ۱۹۳۰ تأسیس شد تا برای واژه‌های خارجی معادل فارسی پیشنهاد کند.",
+       "tr": "",
+       "de": "In Iran wurde in den 1930er-Jahren die erste Sprachakademie gegründet, um persische Entsprechungen für Fremdwörter vorzuschlagen."
+      },
+      {
+       "fa": "به گفته‌ی پژوهشگران، واژه‌هایی مانند «دانشگاه» و «دادگستری» در همان سال‌ها ساخته یا رایج شدند و امروز کمتر کسی می‌داند که روزی تازه بوده‌اند.",
+       "tr": "",
+       "de": "Forschern zufolge wurden Wörter wie ‹daneschgah› (Universität) und ‹dadgostari› (Justiz) in jenen Jahren geprägt oder verbreitet, und heute weiß kaum jemand, dass sie einmal neu waren."
+      },
+      {
+       "fa": "فرهنگستان زبان و ادب فارسی امروز هم این کار را ادامه می‌دهد و واژه‌هایی مانند «رایانه» به جای «کامپیوتر» و «بالگرد» به جای «هلیکوپتر» را رواج داده است.",
+       "tr": "",
+       "de": "Die heutige Akademie für persische Sprache und Literatur setzt diese Arbeit fort und hat Wörter wie ‹rayane› statt ‹Computer› und ‹balgard› statt ‹Helikopter› verbreitet."
+      },
+      {
+       "fa": "با این حال، همه‌ی واژه‌های پیشنهادی پذیرفته نمی‌شوند و مردم در گفتگوهای روزمره هنوز بسیاری از وام‌واژه‌ها را ترجیح می‌دهند.",
+       "tr": "",
+       "de": "Allerdings setzen sich nicht alle vorgeschlagenen Wörter durch, und im Alltag ziehen die Menschen viele Lehnwörter weiterhin vor."
       },
       {
        "fa": "در سال‌های اخیر، اینترنت، شبکه‌های اجتماعی و موسیقی این سه شاخه را دوباره به هم نزدیک کرده است.",
@@ -119,6 +209,11 @@
        "fa": "امروز جوانی در کابل همان ترانه‌ای را گوش می‌دهد که جوانی در شیراز یا خجند می‌شنود.",
        "tr": "",
        "de": "Heute hört ein junger Mensch in Kabul dasselbe Lied wie ein junger Mensch in Schiras oder Chudschand."
+      },
+      {
+       "fa": "در تاجیکستان نیز برخی از جوانان خط فارسی را یاد می‌گیرند تا بتوانند کتاب‌ها و سایت‌های ایرانی و افغان را بخوانند.",
+       "tr": "",
+       "de": "Auch in Tadschikistan lernen manche junge Leute die persische Schrift, um iranische und afghanische Bücher und Websites lesen zu können."
       },
       {
        "fa": "شاید بتوان گفت: مرزها کشورها را از هم جدا می‌کنند، اما زبان فارسی آنها را به هم پیوند می‌دهد.",
@@ -158,6 +253,27 @@
         "richtig",
         "falsch"
        ],
+       "richtig": 0,
+       "fa": "کردی و پشتو هم از شاخه‌ی زبان‌های ایرانی‌اند.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "سنگ‌نوشته‌ی بیستون فقط به زبان فارسی باستان نوشته شده است.",
+       "fest": true,
+       "erkl": "Sie ist <b>dreisprachig</b> – deshalb half sie beim Entziffern der Keilschrift."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
        "richtig": 1,
        "fa": "رودکی در شیراز به دنیا آمد.",
        "fest": true,
@@ -170,7 +286,7 @@
         "falsch"
        ],
        "richtig": 0,
-       "fa": "گویشوران سه کشور معمولا حرف یکدیگر را می‌فهمند.",
+       "fa": "فارسی تا قرن نوزدهم در هند زبان اداری بود.",
        "fest": true
       },
       {
@@ -180,7 +296,7 @@
         "falsch"
        ],
        "richtig": 1,
-       "fa": "تاجیکی با الفبای لاتین نوشته می‌شود.",
+       "fa": "تاجیکی امروز با الفبای لاتین نوشته می‌شود.",
        "fest": true,
        "erkl": "Seit 1940 mit dem <b>kyrillischen</b> Alphabet."
       },
@@ -190,9 +306,10 @@
         "richtig",
         "falsch"
        ],
-       "richtig": 0,
-       "fa": "در زبان اردو وام‌واژه‌های فارسی زیادی وجود دارد.",
-       "fest": true
+       "richtig": 1,
+       "fa": "همه‌ی واژه‌هایی که فرهنگستان پیشنهاد می‌کند، در زبان مردم پذیرفته می‌شوند.",
+       "fest": true,
+       "erkl": "Nicht alle setzen sich durch – im Alltag bleiben viele <b>Lehnwörter</b>."
       }
      ]
     },
@@ -210,20 +327,29 @@
        "richtig": 0
       },
       {
+       "frage": "Was half im 19. Jahrhundert beim Entziffern der Keilschrift?",
+       "optionen": [
+        "die dreisprachige Inschrift von Bisotun",
+        "das Schahname",
+        "ein Wörterbuch aus Buchara"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Warum hat das persische Alphabet mehr Buchstaben als das arabische?",
+       "optionen": [
+        "Man fügte vier Buchstaben für persische Laute hinzu.",
+        "Man übernahm Buchstaben aus dem Kyrillischen.",
+        "Man schrieb die Vokale als eigene Buchstaben."
+       ],
+       "richtig": 0
+      },
+      {
        "frage": "Woher stammt das Wort <span class='fa'>پوهنتون</span>?",
        "optionen": [
         "aus dem Paschtu",
         "aus dem Russischen",
         "aus dem Französischen"
-       ],
-       "richtig": 0
-      },
-      {
-       "frage": "Woher kennen wir das Altpersische?",
-       "optionen": [
-        "aus achämenidischen Inschriften in Keilschrift",
-        "aus dem Schahname",
-        "aus alten Liedern"
        ],
        "richtig": 0
       },
@@ -237,13 +363,15 @@
        "richtig": 0
       },
       {
-       "frage": "Was bringt die drei Zweige heute wieder näher?",
+       "frage": "Welches Wort hat die Akademie für ‹Computer› verbreitet?",
        "optionen": [
-        "Internet, soziale Medien und Musik",
-        "gemeinsame Schulbücher",
-        "eine gemeinsame Regierung"
+        "رایانه",
+        "بالگرد",
+        "پوهنتون"
        ],
-       "richtig": 0
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
       }
      ]
     },
@@ -258,29 +386,29 @@
        "de": "Die Sprache ist in drei Ländern Amtssprache: In Iran heißt sie ‹Farsi›, in Afghanistan ‹Dari› und in Tadschikistan ‹Tadschikisch›."
       },
       {
+       "fa": "علاوه بر این، گویشوران فارسی در کشورهای همسایه مانند ازبکستان، به‌ویژه در شهرهای تاریخی سمرقند و بخارا، و نیز در میان مهاجران بسیاری در اروپا و آمریکای شمالی زندگی می‌کنند.",
+       "tr": "",
+       "de": "Außerdem leben Persischsprachige in Nachbarländern wie Usbekistan – vor allem in den historischen Städten Samarkand und Buchara – sowie unter vielen Migranten in Europa und Nordamerika."
+      },
+      {
        "fa": "فارسی از خانواده‌ی زبان‌های هندواروپایی است و از این نظر با آلمانی و انگلیسی خویشاوند است.",
        "tr": "",
        "de": "Persisch gehört zur indoeuropäischen Sprachfamilie und ist insofern mit Deutsch und Englisch verwandt."
       },
       {
-       "fa": "واژه‌هایی مثل «مادر» و «برادر» این خویشاوندی را به‌خوبی نشان می‌دهند.",
+       "fa": "در درون این خانواده، فارسی به شاخه‌ی زبان‌های ایرانی تعلق دارد؛ کردی، بلوچی و پشتو هم از همین شاخه‌اند.",
        "tr": "",
-       "de": "Wörter wie ‹madar› (Mutter) und ‹baradar› (Bruder) zeigen diese Verwandtschaft deutlich."
+       "de": "Innerhalb dieser Familie gehört Persisch zum Zweig der iranischen Sprachen; auch Kurdisch, Belutschisch und Paschtu gehören zu diesem Zweig."
       },
       {
-       "fa": "تاریخ این زبان را معمولا به سه دوره تقسیم می‌کنند: فارسی باستان، فارسی میانه و فارسی نو.",
+       "fa": "واژه‌هایی مثل «مادر»، «برادر»، «دختر» و «نام» این خویشاوندی را به‌خوبی نشان می‌دهند، زیرا تلفظ آنها به معادل‌های آلمانی‌شان بسیار نزدیک است.",
        "tr": "",
-       "de": "Die Geschichte der Sprache teilt man meist in drei Epochen ein: Altpersisch, Mittelpersisch und Neupersisch."
+       "de": "Wörter wie ‹madar›, ‹baradar›, ‹dochtar› und ‹nam› zeigen diese Verwandtschaft deutlich, denn sie klingen ihren deutschen Entsprechungen Mutter, Bruder, Tochter und Name sehr ähnlich."
       },
       {
-       "fa": "فارسی باستان را از سنگ‌نوشته‌های هخامنشی می‌شناسیم که به خط میخی نوشته شده‌اند.",
+       "fa": "با این حال، دستور زبان فارسی امروز از بسیاری جهات با آلمانی متفاوت است: فارسی جنس دستوری ندارد و اسم‌ها حالت‌های دستوری مانند آلمانی ندارند.",
        "tr": "",
-       "de": "Das Altpersische kennen wir aus den achämenidischen Inschriften, die in Keilschrift geschrieben sind."
-      },
-      {
-       "fa": "فارسی نو بیش از هزار سال پیش در منطقه‌ای پدید آمد که امروز میان ایران، افغانستان و تاجیکستان تقسیم شده است.",
-       "tr": "",
-       "de": "Das Neupersische entstand vor über tausend Jahren in einer Region, die heute zwischen Iran, Afghanistan und Tadschikistan aufgeteilt ist."
+       "de": "Dennoch unterscheidet sich die persische Grammatik heute in vieler Hinsicht vom Deutschen: Persisch hat kein grammatisches Geschlecht, und die Nomen haben keine Fälle wie im Deutschen."
       }
      ]
     }
@@ -296,23 +424,23 @@
      "titel": "Welches Wort fehlt im Text?",
      "fragen": [
       {
-       "frage": "<span class='fa'>فارسی یکی از زبان‌های ___ جهان است که امروز بیش از صد میلیون نفر به آن سخن می‌گویند.</span><br><span class='mini'>Persisch ist eine der alten Sprachen der Welt, die heute von über hundert Millionen Menschen gesprochen wird.</span>",
+       "frage": "<span class='fa'>فارسی یکی از زبان‌های کهن جهان است که امروز، به گفته‌ی برخی برآوردها، بیش از صد میلیون نفر به‌عنوان ___ یا زبان دوم به آن سخن می‌گویند.</span><br><span class='mini'>Persisch ist eine der alten Sprachen der Welt; nach manchen Schätzungen sprechen es heute über hundert Millionen Menschen als Mutter- oder Zweitsprache.</span>",
        "optionen": [
-        "کهن",
-        "گویشور",
-        "سرزمین"
+        "زبان مادری",
+        "معادل",
+        "دوزبانه"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
-       "erkl": "<span class='fa'>فارسی یکی از زبان‌های کهن جهان است که امروز بیش از صد میلیون نفر به آن سخن می‌گویند.</span>"
+       "erkl": "<span class='fa'>فارسی یکی از زبان‌های کهن جهان است که امروز، به گفته‌ی برخی برآوردها، بیش از صد میلیون نفر به‌عنوان زبان مادری یا زبان دوم به آن سخن می‌گویند.</span>"
       },
       {
        "frage": "<span class='fa'>این زبان در سه کشور ___ است: در ایران «فارسی»، در افغانستان «دری» و در تاجیکستان «تاجیکی» نامیده می‌شود.</span><br><span class='mini'>Die Sprache ist in drei Ländern Amtssprache: In Iran heißt sie ‹Farsi›, in Afghanistan ‹Dari› und in Tadschikistan ‹Tadschikisch›.</span>",
        "optionen": [
         "زبان رسمی",
-        "سرزمین",
-        "میراث"
+        "واژگان",
+        "پایتخت"
        ],
        "richtig": 0,
        "optFa": true,
@@ -320,11 +448,23 @@
        "erkl": "<span class='fa'>این زبان در سه کشور زبان رسمی است: در ایران «فارسی»، در افغانستان «دری» و در تاجیکستان «تاجیکی» نامیده می‌شود.</span>"
       },
       {
+       "frage": "<span class='fa'>علاوه بر این، گویشوران فارسی در کشورهای ___ مانند ازبکستان، به‌ویژه در شهرهای تاریخی سمرقند و بخارا، و نیز در میان مهاجران بسیاری در اروپا و آمریکای شمالی زندگی می‌کنند.</span><br><span class='mini'>Außerdem leben Persischsprachige in Nachbarländern wie Usbekistan – vor allem in den historischen Städten Samarkand und Buchara – sowie unter vielen Migranten in Europa und Nordamerika.</span>",
+       "optionen": [
+        "همسایه",
+        "تمدن",
+        "دوزبانه"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>علاوه بر این، گویشوران فارسی در کشورهای همسایه مانند ازبکستان، به‌ویژه در شهرهای تاریخی سمرقند و بخارا، و نیز در میان مهاجران بسیاری در اروپا و آمریکای شمالی زندگی می‌کنند.</span>"
+      },
+      {
        "frage": "<span class='fa'>فارسی از خانواده‌ی زبان‌های هندواروپایی است و از این نظر با آلمانی و انگلیسی ___ است.</span><br><span class='mini'>Persisch gehört zur indoeuropäischen Sprachfamilie und ist insofern mit Deutsch und Englisch verwandt.</span>",
        "optionen": [
         "خویشاوند",
-        "سرزمین",
-        "ادبیات"
+        "مصوت",
+        "گویش"
        ],
        "richtig": 0,
        "optFa": true,
@@ -332,40 +472,28 @@
        "erkl": "<span class='fa'>فارسی از خانواده‌ی زبان‌های هندواروپایی است و از این نظر با آلمانی و انگلیسی خویشاوند است.</span>"
       },
       {
-       "frage": "<span class='fa'>تاریخ این زبان را معمولا به سه ___ تقسیم می‌کنند: فارسی باستان، فارسی میانه و فارسی نو.</span><br><span class='mini'>Die Geschichte der Sprache teilt man meist in drei Epochen ein: Altpersisch, Mittelpersisch und Neupersisch.</span>",
+       "frage": "<span class='fa'>واژه‌هایی مثل «مادر»، «برادر»، «دختر» و «نام» این خویشاوندی را به‌خوبی نشان می‌دهند، زیرا ___ آنها به معادل‌های آلمانی‌شان بسیار نزدیک است.</span><br><span class='mini'>Wörter wie ‹madar›, ‹baradar›, ‹dochtar› und ‹nam› zeigen diese Verwandtschaft deutlich, denn sie klingen ihren deutschen Entsprechungen Mutter, Bruder, Tochter und Name sehr ähnlich.</span>",
        "optionen": [
-        "دوره",
-        "تمدن",
-        "خط"
+        "تلفظ",
+        "دربار",
+        "مترجم"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
-       "erkl": "<span class='fa'>تاریخ این زبان را معمولا به سه دوره تقسیم می‌کنند: فارسی باستان، فارسی میانه و فارسی نو.</span>"
+       "erkl": "<span class='fa'>واژه‌هایی مثل «مادر»، «برادر»، «دختر» و «نام» این خویشاوندی را به‌خوبی نشان می‌دهند، زیرا تلفظ آنها به معادل‌های آلمانی‌شان بسیار نزدیک است.</span>"
       },
       {
-       "frage": "<span class='fa'>فارسی باستان را از سنگ‌نوشته‌های هخامنشی می‌شناسیم که به ___ نوشته شده‌اند.</span><br><span class='mini'>Das Altpersische kennen wir aus den achämenidischen Inschriften, die in Keilschrift geschrieben sind.</span>",
+       "frage": "<span class='fa'>با این حال، ___ فارسی امروز از بسیاری جهات با آلمانی متفاوت است: فارسی جنس دستوری ندارد و اسم‌ها حالت‌های دستوری مانند آلمانی ندارند.</span><br><span class='mini'>Dennoch unterscheidet sich die persische Grammatik heute in vieler Hinsicht vom Deutschen: Persisch hat kein grammatisches Geschlecht, und die Nomen haben keine Fälle wie im Deutschen.</span>",
        "optionen": [
-        "خط میخی",
-        "خویشاوند",
-        "واژگان"
+        "دستور زبان",
+        "متفاوت",
+        "شاعر"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
-       "erkl": "<span class='fa'>فارسی باستان را از سنگ‌نوشته‌های هخامنشی می‌شناسیم که به خط میخی نوشته شده‌اند.</span>"
-      },
-      {
-       "frage": "<span class='fa'>در قرن‌های بعد، فارسی زبان علم، ___ و دربار در سرزمین‌های گسترده‌ای از هند تا آناتولی بود.</span><br><span class='mini'>In den folgenden Jahrhunderten war Persisch die Sprache der Wissenschaft, der Literatur und der Höfe in weiten Gebieten von Indien bis Anatolien.</span>",
-       "optionen": [
-        "ادبیات",
-        "گویشور",
-        "میراث"
-       ],
-       "richtig": 0,
-       "optFa": true,
-       "hoeren": false,
-       "erkl": "<span class='fa'>در قرن‌های بعد، فارسی زبان علم، ادبیات و دربار در سرزمین‌های گسترده‌ای از هند تا آناتولی بود.</span>"
+       "erkl": "<span class='fa'>با این حال، دستور زبان فارسی امروز از بسیاری جهات با آلمانی متفاوت است: فارسی جنس دستوری ندارد و اسم‌ها حالت‌های دستوری مانند آلمانی ندارند.</span>"
       }
      ]
     },
@@ -374,64 +502,154 @@
      "titel": "Welches Wort fehlt im Text?",
      "fragen": [
       {
-       "frage": "<span class='fa'>___ در هر سه کشور تقریبا یکی است و گویشوران آنها معمولا بدون مشکل حرف یکدیگر را می‌فهمند.</span><br><span class='mini'>Die Grammatik ist in allen drei Ländern nahezu gleich, und die Sprecher verstehen einander meist ohne Probleme.</span>",
+       "frage": "<span class='fa'>تاریخ این زبان را معمولا به سه ___ تقسیم می‌کنند: فارسی باستان، فارسی میانه و فارسی نو.</span><br><span class='mini'>Die Geschichte der Sprache teilt man meist in drei Epochen ein: Altpersisch, Mittelpersisch und Neupersisch.</span>",
        "optionen": [
-        "دستور زبان",
-        "تمدن",
-        "منطقه"
+        "دوره",
+        "هویت",
+        "مشترک"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
-       "erkl": "<span class='fa'>دستور زبان در هر سه کشور تقریبا یکی است و گویشوران آنها معمولا بدون مشکل حرف یکدیگر را می‌فهمند.</span>"
+       "erkl": "<span class='fa'>تاریخ این زبان را معمولا به سه دوره تقسیم می‌کنند: فارسی باستان، فارسی میانه و فارسی نو.</span>"
       },
       {
-       "frage": "<span class='fa'>تفاوت اصلی در تلفظ و ___ است.</span><br><span class='mini'>Der Hauptunterschied liegt in Aussprache und Wortschatz.</span>",
+       "frage": "<span class='fa'>فارسی باستان را از سنگ‌نوشته‌های هخامنشی می‌شناسیم که حدود دو هزار و پانصد سال پیش به ___ نوشته شده‌اند.</span><br><span class='mini'>Das Altpersische kennen wir aus den achämenidischen Inschriften, die vor rund zweieinhalbtausend Jahren in Keilschrift geschrieben wurden.</span>",
        "optionen": [
-        "واژگان",
-        "حماسه",
+        "خط میخی",
+        "مترجم",
         "الفبا"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
-       "erkl": "<span class='fa'>تفاوت اصلی در تلفظ و واژگان است.</span>"
+       "erkl": "<span class='fa'>فارسی باستان را از سنگ‌نوشته‌های هخامنشی می‌شناسیم که حدود دو هزار و پانصد سال پیش به خط میخی نوشته شده‌اند.</span>"
       },
       {
-       "frage": "<span class='fa'>برای مثال، در افغانستان به دانشگاه «پوهنتون» می‌گویند که یک ___ از زبان پشتو است.</span><br><span class='mini'>In Afghanistan zum Beispiel sagt man zur Universität ‹pohantun›, ein Lehnwort aus dem Paschtu.</span>",
+       "frage": "<span class='fa'>همین متن سه‌زبانه در قرن نوزدهم به پژوهشگران اروپایی کمک کرد تا ___ را رمزگشایی کنند.</span><br><span class='mini'>Gerade dieser dreisprachige Text half europäischen Forschern im 19. Jahrhundert, die Keilschrift zu entziffern.</span>",
        "optionen": [
-        "وام‌واژه",
-        "پایتخت",
-        "ادبیات"
+        "خط میخی",
+        "هویت",
+        "مرز"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
-       "erkl": "<span class='fa'>برای مثال، در افغانستان به دانشگاه «پوهنتون» می‌گویند که یک وام‌واژه از زبان پشتو است.</span>"
+       "erkl": "<span class='fa'>همین متن سه‌زبانه در قرن نوزدهم به پژوهشگران اروپایی کمک کرد تا خط میخی را رمزگشایی کنند.</span>"
       },
       {
-       "frage": "<span class='fa'>بزرگ‌ترین تفاوت اما در ___ است: تاجیکی از سال ۱۹۴۰ با الفبای سیریلیک نوشته می‌شود.</span><br><span class='mini'>Der größte Unterschied liegt aber in der Schrift: Tadschikisch wird seit 1940 mit dem kyrillischen Alphabet geschrieben.</span>",
+       "frage": "<span class='fa'>فارسی میانه، که به آن «پهلوی» هم می‌گویند، ___ دوره‌ی ساسانی بود و با خطی نوشته می‌شد که از خط آرامی گرفته شده بود.</span><br><span class='mini'>Das Mittelpersische, auch ‹Pahlavi› genannt, war die Amtssprache der Sasanidenzeit und wurde in einer Schrift geschrieben, die von der aramäischen Schrift abstammte.</span>",
        "optionen": [
+        "زبان رسمی",
+        "مترجم",
+        "الفبا"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>فارسی میانه، که به آن «پهلوی» هم می‌گویند، زبان رسمی دوره‌ی ساسانی بود و با خطی نوشته می‌شد که از خط آرامی گرفته شده بود.</span>"
+      },
+      {
+       "frage": "<span class='fa'>در این ___، فارسی با الفبای عربی نوشته شد و چهار حرف «پ»، «چ»، «ژ» و «گ» به آن افزوده شد تا صداهای ویژه‌ی فارسی را نشان دهد.</span><br><span class='mini'>In dieser Zeit wurde Persisch mit dem arabischen Alphabet geschrieben, dem man die vier Buchstaben ‹p›, ‹tsch›, ‹sch› (stimmhaft) und ‹g› hinzufügte, um die besonderen persischen Laute wiederzugeben.</span>",
+       "optionen": [
+        "دوره",
+        "مشترک",
+        "گسترده"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>در این دوره، فارسی با الفبای عربی نوشته شد و چهار حرف «پ»، «چ»، «ژ» و «گ» به آن افزوده شد تا صداهای ویژه‌ی فارسی را نشان دهد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>به این ترتیب، الفبای فارسی امروز سی‌ودو ___ دارد.</span><br><span class='mini'>So hat das persische Alphabet heute zweiunddreißig Buchstaben.</span>",
+       "optionen": [
+        "حرف",
+        "تلفظ",
+        "کهن"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>به این ترتیب، الفبای فارسی امروز سی‌ودو حرف دارد.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort fehlt im Text?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>رودکی، که او را پدر شعر فارسی می‌دانند، در نزدیکی پنجکنت در تاجیکستان امروزی به دنیا آمد و در ___ سامانیان در بخارا شعر می‌سرود.</span><br><span class='mini'>Rudaki, der als Vater der persischen Dichtung gilt, wurde in der Nähe von Pandschakent im heutigen Tadschikistan geboren und dichtete am Hof der Samaniden in Buchara.</span>",
+       "optionen": [
+        "دربار",
         "خط",
-        "گسترده",
-        "تلفظ"
+        "پایتخت"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
-       "erkl": "<span class='fa'>بزرگ‌ترین تفاوت اما در خط است: تاجیکی از سال ۱۹۴۰ با الفبای سیریلیک نوشته می‌شود.</span>"
+       "erkl": "<span class='fa'>رودکی، که او را پدر شعر فارسی می‌دانند، در نزدیکی پنجکنت در تاجیکستان امروزی به دنیا آمد و در دربار سامانیان در بخارا شعر می‌سرود.</span>"
       },
       {
-       "frage": "<span class='fa'>در سال‌های اخیر، اینترنت، شبکه‌های اجتماعی و موسیقی این سه ___ را دوباره به هم نزدیک کرده است.</span><br><span class='mini'>In den letzten Jahren haben Internet, soziale Medien und Musik diese drei Zweige wieder einander nähergebracht.</span>",
+       "frage": "<span class='fa'>این حماسه‌ی بزرگ، که حدود پنجاه هزار ___ دارد، داستان پادشاهان و پهلوانان ایران را از آغاز افسانه‌ای تا پایان دوره‌ی ساسانی روایت می‌کند.</span><br><span class='mini'>Dieses große Epos mit rund fünfzigtausend Versen erzählt die Geschichte der Könige und Helden Irans von den sagenhaften Anfängen bis zum Ende der Sasanidenzeit.</span>",
        "optionen": [
-        "شاخه",
-        "پایتخت",
-        "دربار"
+        "بیت",
+        "معادل",
+        "سنگ‌نوشته"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
-       "erkl": "<span class='fa'>در سال‌های اخیر، اینترنت، شبکه‌های اجتماعی و موسیقی این سه شاخه را دوباره به هم نزدیک کرده است.</span>"
+       "erkl": "<span class='fa'>این حماسه‌ی بزرگ، که حدود پنجاه هزار بیت دارد، داستان پادشاهان و پهلوانان ایران را از آغاز افسانه‌ای تا پایان دوره‌ی ساسانی روایت می‌کند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>در قرن‌های بعد، فارسی زبان علم، ___ و دربار در سرزمین‌های گسترده‌ای از هند تا آناتولی بود.</span><br><span class='mini'>In den folgenden Jahrhunderten war Persisch die Sprache der Wissenschaft, der Literatur und der Höfe in weiten Gebieten von Indien bis Anatolien.</span>",
+       "optionen": [
+        "ادبیات",
+        "فرهنگستان",
+        "تمدن"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>در قرن‌های بعد، فارسی زبان علم، ادبیات و دربار در سرزمین‌های گسترده‌ای از هند تا آناتولی بود.</span>"
+      },
+      {
+       "frage": "<span class='fa'>در هند، فارسی چند قرن زبان اداری ___ بود و تا قرن نوزدهم در دادگاه‌ها و دفترهای دولتی به کار می‌رفت.</span><br><span class='mini'>In Indien war Persisch mehrere Jahrhunderte lang die Verwaltungssprache des Hofes und wurde bis ins 19. Jahrhundert in Gerichten und Behörden verwendet.</span>",
+       "optionen": [
+        "دربار",
+        "الفبا",
+        "نثر"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>در هند، فارسی چند قرن زبان اداری دربار بود و تا قرن نوزدهم در دادگاه‌ها و دفترهای دولتی به کار می‌رفت.</span>"
+      },
+      {
+       "frage": "<span class='fa'>در ___ عثمانی نیز شعر فارسی خوانده می‌شد و بسیاری از شاعران ترک فارسی را به‌خوبی می‌دانستند.</span><br><span class='mini'>Auch am osmanischen Hof las man persische Dichtung, und viele türkische Dichter beherrschten das Persische gut.</span>",
+       "optionen": [
+        "دربار",
+        "همسایه",
+        "بیت"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>در دربار عثمانی نیز شعر فارسی خوانده می‌شد و بسیاری از شاعران ترک فارسی را به‌خوبی می‌دانستند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>___ در هر سه کشور تقریبا یکی است و گویشوران آنها معمولا بدون مشکل حرف یکدیگر را می‌فهمند.</span><br><span class='mini'>Die Grammatik ist in allen drei Ländern nahezu gleich, und die Sprecher verstehen einander meist ohne Probleme.</span>",
+       "optionen": [
+        "دستور زبان",
+        "فرهنگستان",
+        "پایتخت"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>دستور زبان در هر سه کشور تقریبا یکی است و گویشوران آنها معمولا بدون مشکل حرف یکدیگر را می‌فهمند.</span>"
       }
      ]
     },
@@ -446,14 +664,19 @@
        "de": "Persisch ist in drei Ländern Amtssprache und hat verschiedene Namen."
       },
       {
-       "fa": "این زبان با آلمانی خویشاوند است و تاریخی بسیار طولانی دارد.",
+       "fa": "این زبان از شاخه‌ی ایرانی خانواده‌ی هندواروپایی است و با آلمانی خویشاوند است.",
        "tr": "",
-       "de": "Die Sprache ist mit Deutsch verwandt und hat eine sehr lange Geschichte."
+       "de": "Die Sprache gehört zum iranischen Zweig der indoeuropäischen Familie und ist mit Deutsch verwandt."
       },
       {
-       "fa": "فارسی نو در شرق پدید آمد و قرن‌ها زبان علم و ادبیات بود.",
+       "fa": "تاریخ فارسی سه دوره دارد و قدیمی‌ترین آثار آن سنگ‌نوشته‌های هخامنشی است.",
        "tr": "",
-       "de": "Das Neupersische entstand im Osten und war jahrhundertelang Sprache der Wissenschaft und Literatur."
+       "de": "Die Geschichte des Persischen hat drei Epochen; die ältesten Zeugnisse sind die achämenidischen Inschriften."
+      },
+      {
+       "fa": "فارسی نو در شرق پدید آمد و قرن‌ها زبان علم، ادبیات و دربار بود.",
+       "tr": "",
+       "de": "Das Neupersische entstand im Osten und war jahrhundertelang Sprache der Wissenschaft, Literatur und der Höfe."
       },
       {
        "fa": "امروز تفاوت‌ها بیشتر در تلفظ، واژگان و خط است.",
@@ -464,6 +687,293 @@
        "fa": "اینترنت و موسیقی گویشوران سه کشور را دوباره به هم نزدیک کرده است.",
        "tr": "",
        "de": "Internet und Musik haben die Sprecher der drei Länder wieder einander nähergebracht."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t3",
+   "titel": "Alltag: Lehrbuch und Straße: Jonas’ erster Monat",
+   "vorschau": "Lehrbuch und Straße: Jonas’ erster Monat",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>زبان کوچه</span> – Sprache der Straße · <span class='fa'>نان سنگک</span> – Sangak-Brot · <span class='fa'>نوبت</span> – Reihe (an der Reihe sein) · <span class='fa'>تاکسی خطی</span> – Sammeltaxi · <span class='fa'>کرایه</span> – Fahrpreis · <span class='fa'>خودمانی</span> – vertraut, locker · <span class='fa'>چسباندن</span> – zusammenziehen, kleben · <span class='fa'>تبادل زبان</span> – Sprachtandem · <span class='fa'>دفترچه</span> – Heft · <span class='fa'>تصحیح کردن</span> – korrigieren · <span class='fa'>هم‌زمان</span> – gleichzeitig</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Alltag: Lehrbuch und Straße: Jonas’ erster Monat",
+     "text": "Alltagstext – Tippe eine Zeile an, wenn du die Übersetzung brauchst.",
+     "zeilen": [
+      {
+       "fa": "یک ماه است که در تهران زندگی می‌کنم و هر روز چیزهای تازه‌ای درباره‌ی زبان فارسی یاد می‌گیرم.",
+       "tr": "",
+       "de": "Seit einem Monat lebe ich in Teheran und lerne jeden Tag Neues über die persische Sprache."
+      },
+      {
+       "fa": "در آلمان چهار سال فارسی خوانده بودم و فکر می‌کردم برای زندگی در ایران کاملا آماده‌ام.",
+       "tr": "",
+       "de": "In Deutschland hatte ich vier Jahre Persisch studiert und dachte, ich sei für das Leben in Iran bestens vorbereitet."
+      },
+      {
+       "fa": "اما همان روز اول در فرودگاه فهمیدم که میان زبان کتاب و زبان کوچه فاصله‌ی زیادی وجود دارد.",
+       "tr": "",
+       "de": "Doch schon am ersten Tag am Flughafen merkte ich, dass zwischen der Sprache der Bücher und der Sprache der Straße ein großer Abstand liegt."
+      },
+      {
+       "fa": "راننده‌ی تاکسی پرسید: «کجا می‌ری؟» و من چند ثانیه فکر کردم تا بفهمم این همان «کجا می‌روی؟» کتاب‌های درسی است.",
+       "tr": "",
+       "de": "Der Taxifahrer fragte ‹koja miri?›, und ich brauchte ein paar Sekunden, bis ich verstand, dass das das ‹koja miravi?› aus den Lehrbüchern ist."
+      },
+      {
+       "fa": "در کتاب‌های ما همه‌چیز به زبان نوشتاری بود، اما در خیابان تقریبا هیچ‌کس این‌طور حرف نمی‌زند.",
+       "tr": "",
+       "de": "In unseren Büchern stand alles in der Schriftsprache, aber auf der Straße spricht fast niemand so."
+      },
+      {
+       "fa": "مثلا مردم به جای «نان» می‌گویند «نون» و به جای «خانه» می‌گویند «خونه»؛ یعنی «ان» در بسیاری از واژه‌ها «ون» تلفظ می‌شود.",
+       "tr": "",
+       "de": "Zum Beispiel sagen die Leute statt ‹nan› ‹nun› und statt ‹chane› ‹chune›; das heißt, ‹an› wird in vielen Wörtern als ‹un› ausgesprochen."
+      },
+      {
+       "fa": "نانوایی سر کوچه‌ی ما بهترین کلاس زبان من شده است.",
+       "tr": "",
+       "de": "Die Bäckerei an unserer Straßenecke ist mein bester Sprachkurs geworden."
+      },
+      {
+       "fa": "هر روز صبح ساعت هفت در صف نان سنگک می‌ایستم و به گفتگوی همسایه‌ها گوش می‌دهم.",
+       "tr": "",
+       "de": "Jeden Morgen um sieben stehe ich in der Schlange für Sangak-Brot und höre den Gesprächen der Nachbarn zu."
+      },
+      {
+       "fa": "اولین بار وقتی نوبتم شد، گفتم: «لطفا دو عدد نان سنگک به من بدهید.» نانوا لبخند زد و گفت: «دو تا سنگک؟ چشم!»",
+       "tr": "",
+       "de": "Als ich zum ersten Mal an der Reihe war, sagte ich: ‹Geben Sie mir bitte zwei Stück Sangak-Brot.› Der Bäcker lächelte und sagte: ‹Zwei Sangak? Gern!›"
+      },
+      {
+       "fa": "حالا من هم مثل بقیه می‌گویم «دو تا سنگک، لطفا» و دیگر کسی با تعجب به من نگاه نمی‌کند.",
+       "tr": "",
+       "de": "Jetzt sage ich wie alle anderen ‹Zwei Sangak, bitte›, und niemand schaut mich mehr verwundert an."
+      },
+      {
+       "fa": "تاکسی‌ها هم برای خودشان زبانی دارند: در تاکسی‌های خطی چند مسافر غریبه کنار هم می‌نشینند و هر کس سر راه پیاده می‌شود.",
+       "tr": "",
+       "de": "Auch die Taxis haben ihre eigene Sprache: In den Sammeltaxis sitzen mehrere fremde Fahrgäste nebeneinander, und jeder steigt unterwegs aus."
+      },
+      {
+       "fa": "مسافران فقط نام یک میدان یا خیابان را می‌گویند و راننده با یک کلمه جواب می‌دهد: «بفرما» یا «نه».",
+       "tr": "",
+       "de": "Die Fahrgäste nennen nur den Namen eines Platzes oder einer Straße, und der Fahrer antwortet mit einem Wort: ‹Steig ein› oder ‹Nein›."
+      },
+      {
+       "fa": "وقتی می‌خواهید پیاده شوید، کافی است بگویید «همین‌جا پیاده می‌شم، لطفا» و کرایه را از قبل آماده داشته باشید.",
+       "tr": "",
+       "de": "Wenn man aussteigen will, genügt es zu sagen ‹Ich steige hier aus, bitte›, und man sollte das Fahrgeld schon bereithalten."
+      },
+      {
+       "fa": "در دانشگاه وضعیت دوباره فرق می‌کند.",
+       "tr": "",
+       "de": "An der Universität ist die Lage wieder anders."
+      },
+      {
+       "fa": "استادها در کلاس به زبان رسمی و دقیق درس می‌دهند، اما در راهرو با دانشجوها خودمانی و گفتاری صحبت می‌کنند.",
+       "tr": "",
+       "de": "Die Dozenten unterrichten im Seminar in förmlicher, präziser Sprache, aber auf dem Flur sprechen sie mit den Studierenden locker und umgangssprachlich."
+      },
+      {
+       "fa": "خانم دکتر صادقی، استاد راهنمای من، می‌گوید که فارسی امروز در واقع دو چهره دارد: یکی برای نوشتن و یکی برای حرف زدن.",
+       "tr": "",
+       "de": "Frau Dr. Sadeghi, meine Betreuerin, sagt, das heutige Persisch habe eigentlich zwei Gesichter: eines zum Schreiben und eines zum Sprechen."
+      },
+      {
+       "fa": "به گفته‌ی او، یک زبان‌آموز خارجی باید هر دو را یاد بگیرد؛ زبان نوشتاری را برای خواندن روزنامه و کتاب، و زبان گفتاری را برای زندگی روزمره.",
+       "tr": "",
+       "de": "Ihr zufolge muss ein ausländischer Lerner beides lernen: die Schriftsprache zum Lesen von Zeitungen und Büchern und die gesprochene Sprache für den Alltag."
+      },
+      {
+       "fa": "مشکل دیگر من سرعت است: تهرانی‌ها خیلی سریع حرف می‌زنند و کلمه‌ها را به هم می‌چسبانند.",
+       "tr": "",
+       "de": "Mein zweites Problem ist das Tempo: Die Teheraner sprechen sehr schnell und ziehen die Wörter zusammen."
+      },
+      {
+       "fa": "مثلا «می‌خواهم بروم» در گفتار به «می‌خوام برم» تبدیل می‌شود و من اول فکر می‌کردم که این دو جمله‌ی متفاوت‌اند.",
+       "tr": "",
+       "de": "Zum Beispiel wird ‹mikhaham beravam› (ich will gehen) im Gespräch zu ‹mikham beram›, und anfangs dachte ich, das seien zwei verschiedene Sätze."
+      },
+      {
+       "fa": "لیلا، که با او تبادل زبان دارم، پیشنهاد کرد که هر شب ده دقیقه یک پادکست فارسی گوش کنم و جمله‌های تازه را در دفترچه‌ای بنویسم.",
+       "tr": "",
+       "de": "Leyla, mit der ich ein Sprachtandem habe, schlug vor, jeden Abend zehn Minuten einen persischen Podcast zu hören und neue Sätze in ein Heft zu schreiben."
+      },
+      {
+       "fa": "حالا دفترچه‌ی من دو ستون دارد: در یک ستون شکل کتابی را می‌نویسم و در ستون دیگر شکل گفتاری را.",
+       "tr": "",
+       "de": "Jetzt hat mein Heft zwei Spalten: In die eine schreibe ich die Buchform, in die andere die gesprochene Form."
+      },
+      {
+       "fa": "آقای رحیمی، صاحب‌خانه‌ام، که سال‌ها معلم ادبیات بوده، گاهی دفترچه‌ام را نگاه می‌کند و اشتباه‌هایم را با حوصله تصحیح می‌کند.",
+       "tr": "",
+       "de": "Herr Rahimi, mein Vermieter, der viele Jahre Literaturlehrer war, schaut manchmal in mein Heft und korrigiert geduldig meine Fehler."
+      },
+      {
+       "fa": "او معتقد است که زبان کتاب را نباید فراموش کرد، چون شعر حافظ و سعدی را بدون آن نمی‌توان فهمید.",
+       "tr": "",
+       "de": "Er ist überzeugt, dass man die Buchsprache nicht vergessen darf, weil man ohne sie die Gedichte von Hafes und Saadi nicht verstehen kann."
+      },
+      {
+       "fa": "بعد از یک ماه هنوز خیلی چیزها را نمی‌فهمم، به‌ویژه وقتی چند نفر هم‌زمان حرف می‌زنند.",
+       "tr": "",
+       "de": "Nach einem Monat verstehe ich vieles noch nicht, besonders wenn mehrere Leute gleichzeitig sprechen."
+      },
+      {
+       "fa": "اما حالا می‌توانم در نانوایی، در تاکسی و در کلاس بدون ترس صحبت کنم.",
+       "tr": "",
+       "de": "Aber jetzt kann ich in der Bäckerei, im Taxi und im Seminar ohne Angst sprechen."
+      },
+      {
+       "fa": "فکر می‌کنم مهم‌ترین درس این ماه برای من این بود: هر زبانی بیش از یک شکل دارد و هر شکل جای خودش را دارد.",
+       "tr": "",
+       "de": "Ich glaube, die wichtigste Lektion dieses Monats war für mich: Jede Sprache hat mehr als eine Form, und jede Form hat ihren Platz."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "یوناس پیش از سفر هیچ فارسی نخوانده بود.",
+       "fest": true,
+       "erkl": "Er hatte in Deutschland <b>vier Jahre</b> Persisch studiert."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "در گفتار، «نان» معمولا «نون» تلفظ می‌شود.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "یوناس هر روز صبح در صف نانوایی می‌ایستد.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "استادها در راهرو هم فقط به زبان رسمی حرف می‌زنند.",
+       "fest": true,
+       "erkl": "Auf dem Flur sprechen sie <b>locker und umgangssprachlich</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "دفترچه‌ی یوناس دو ستون دارد: شکل کتابی و شکل گفتاری.",
+       "fest": true
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Was merkte Jonas schon am ersten Tag?",
+       "optionen": [
+        "Buchsprache und Straßensprache liegen weit auseinander.",
+        "Er versteht alles problemlos.",
+        "Taxis in Teheran sind sehr teuer."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was empfahl Leyla?",
+       "optionen": [
+        "jeden Abend zehn Minuten einen persischen Podcast zu hören",
+        "nur noch Zeitung zu lesen",
+        "einen Kurs an einer Sprachschule zu besuchen"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Warum soll man laut Herrn Rahimi die Buchsprache nicht vergessen?",
+       "optionen": [
+        "Ohne sie versteht man Hafes und Saadi nicht.",
+        "Sie ist im Taxi nötig.",
+        "Sie wird an der Bäckerei gesprochen."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was ist Jonas’ wichtigste Erkenntnis?",
+       "optionen": [
+        "Jede Sprache hat mehr als eine Form.",
+        "Umgangssprache ist falsches Persisch.",
+        "Man braucht keine Lehrbücher."
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "در آلمان چهار سال فارسی خوانده بودم و فکر می‌کردم برای زندگی در ایران کاملا آماده‌ام.",
+       "tr": "",
+       "de": "In Deutschland hatte ich vier Jahre Persisch studiert und dachte, ich sei für das Leben in Iran bestens vorbereitet."
+      },
+      {
+       "fa": "اما همان روز اول در فرودگاه فهمیدم که میان زبان کتاب و زبان کوچه فاصله‌ی زیادی وجود دارد.",
+       "tr": "",
+       "de": "Doch schon am ersten Tag am Flughafen merkte ich, dass zwischen der Sprache der Bücher und der Sprache der Straße ein großer Abstand liegt."
+      },
+      {
+       "fa": "راننده‌ی تاکسی پرسید: «کجا می‌ری؟» و من چند ثانیه فکر کردم تا بفهمم این همان «کجا می‌روی؟» کتاب‌های درسی است.",
+       "tr": "",
+       "de": "Der Taxifahrer fragte ‹koja miri?›, und ich brauchte ein paar Sekunden, bis ich verstand, dass das das ‹koja miravi?› aus den Lehrbüchern ist."
+      },
+      {
+       "fa": "در کتاب‌های ما همه‌چیز به زبان نوشتاری بود، اما در خیابان تقریبا هیچ‌کس این‌طور حرف نمی‌زند.",
+       "tr": "",
+       "de": "In unseren Büchern stand alles in der Schriftsprache, aber auf der Straße spricht fast niemand so."
+      },
+      {
+       "fa": "مثلا مردم به جای «نان» می‌گویند «نون» و به جای «خانه» می‌گویند «خونه»؛ یعنی «ان» در بسیاری از واژه‌ها «ون» تلفظ می‌شود.",
+       "tr": "",
+       "de": "Zum Beispiel sagen die Leute statt ‹nan› ‹nun› und statt ‹chane› ‹chune›; das heißt, ‹an› wird in vielen Wörtern als ‹un› ausgesprochen."
+      },
+      {
+       "fa": "نانوایی سر کوچه‌ی ما بهترین کلاس زبان من شده است.",
+       "tr": "",
+       "de": "Die Bäckerei an unserer Straßenecke ist mein bester Sprachkurs geworden."
       }
      ]
     }
@@ -515,14 +1025,44 @@
        "de": "In der Sowjetzeit wurde erst die lateinische, dann die kyrillische Schrift vorgeschrieben. Das war eine politische Entscheidung, keine sprachliche."
       },
       {
+       "fa": "یوناس: بعد از استقلال تاجیکستان کسی نخواست به خط فارسی برگردد؟",
+       "tr": "",
+       "de": "Wollte nach der Unabhängigkeit Tadschikistans niemand zur persischen Schrift zurückkehren?"
+      },
+      {
+       "fa": "دکتر صادقی: چرا، در اوایل دهه‌ی ۱۹۹۰ بحث‌های زیادی در این باره بود و خط فارسی در بعضی مدرسه‌ها هم تدریس شد، اما در نهایت سیریلیک ماند.",
+       "tr": "",
+       "de": "Doch, Anfang der 1990er-Jahre gab es viele Diskussionen darüber, und die persische Schrift wurde in manchen Schulen auch unterrichtet, aber am Ende blieb es beim Kyrillischen."
+      },
+      {
        "fa": "یوناس: یعنی اگر الفبای سیریلیک را یاد بگیرم، می‌توانم شعرهای رودکی را هم در این کتاب بخوانم؟",
        "tr": "",
        "de": "Das heißt, wenn ich das kyrillische Alphabet lerne, kann ich auch Rudakis Gedichte in diesem Buch lesen?"
       },
       {
-       "fa": "دکتر صادقی: دقیقا! الفبا را در یک هفته یاد می‌گیرید. واژگان را که از قبل می‌دانید.",
+       "fa": "دکتر صادقی: دقیقا! الفبا را در یک هفته یاد می‌گیرید. واژگان را که از قبل می‌دانید، فقط چند وام‌واژه‌ی روسی برایتان تازه خواهد بود.",
        "tr": "",
-       "de": "Genau! Das Alphabet lernen Sie in einer Woche. Den Wortschatz kennen Sie ja schon."
+       "de": "Genau! Das Alphabet lernen Sie in einer Woche. Den Wortschatz kennen Sie ja schon, nur ein paar russische Lehnwörter werden neu für Sie sein."
+      },
+      {
+       "fa": "یوناس: رودکی خودش هم اهل همان منطقه بود، نه؟",
+       "tr": "",
+       "de": "Rudaki stammte doch selbst aus dieser Gegend, oder?"
+      },
+      {
+       "fa": "دکتر صادقی: بله، در روستایی نزدیک پنجکنت به دنیا آمد. تاجیک‌ها او را بسیار گرامی می‌دارند؛ حتی خیابان اصلی دوشنبه به نام اوست.",
+       "tr": "",
+       "de": "Ja, er wurde in einem Dorf bei Pandschakent geboren. Die Tadschiken verehren ihn sehr; sogar die Hauptstraße von Duschanbe trägt seinen Namen."
+      },
+      {
+       "fa": "یوناس: پس از همین هفته شروع می‌کنم. خیلی ممنون، خانم دکتر!",
+       "tr": "",
+       "de": "Dann fange ich gleich diese Woche an. Vielen Dank, Frau Doktor!"
+      },
+      {
+       "fa": "دکتر صادقی: خواهش می‌کنم. هفته‌ی بعد یکی از شعرها را برایم بلند بخوانید. روز خوش!",
+       "tr": "",
+       "de": "Gern geschehen. Lesen Sie mir nächste Woche eines der Gedichte laut vor. Einen schönen Tag!"
       }
      ]
     },
@@ -562,14 +1102,44 @@
        "de": "In der Sowjetzeit wurde erst die lateinische, dann die kyrillische Schrift vorgeschrieben. Das war eine politische Entscheidung, keine sprachliche."
       },
       {
+       "fa": "یوناس: بعد از استقلال تاجیکستان کسی نخواست به خط فارسی برگردد؟",
+       "tr": "",
+       "de": "Wollte nach der Unabhängigkeit Tadschikistans niemand zur persischen Schrift zurückkehren?"
+      },
+      {
+       "fa": "دکتر صادقی: چرا، در اوایل دهه‌ی ۱۹۹۰ بحث‌های زیادی در این باره بود و خط فارسی در بعضی مدرسه‌ها هم تدریس شد، اما در نهایت سیریلیک ماند.",
+       "tr": "",
+       "de": "Doch, Anfang der 1990er-Jahre gab es viele Diskussionen darüber, und die persische Schrift wurde in manchen Schulen auch unterrichtet, aber am Ende blieb es beim Kyrillischen."
+      },
+      {
        "fa": "یوناس: یعنی اگر الفبای سیریلیک را یاد بگیرم، می‌توانم شعرهای رودکی را هم در این کتاب بخوانم؟",
        "tr": "",
        "de": "Das heißt, wenn ich das kyrillische Alphabet lerne, kann ich auch Rudakis Gedichte in diesem Buch lesen?"
       },
       {
-       "fa": "دکتر صادقی: دقیقا! الفبا را در یک هفته یاد می‌گیرید. واژگان را که از قبل می‌دانید.",
+       "fa": "دکتر صادقی: دقیقا! الفبا را در یک هفته یاد می‌گیرید. واژگان را که از قبل می‌دانید، فقط چند وام‌واژه‌ی روسی برایتان تازه خواهد بود.",
        "tr": "",
-       "de": "Genau! Das Alphabet lernen Sie in einer Woche. Den Wortschatz kennen Sie ja schon."
+       "de": "Genau! Das Alphabet lernen Sie in einer Woche. Den Wortschatz kennen Sie ja schon, nur ein paar russische Lehnwörter werden neu für Sie sein."
+      },
+      {
+       "fa": "یوناس: رودکی خودش هم اهل همان منطقه بود، نه؟",
+       "tr": "",
+       "de": "Rudaki stammte doch selbst aus dieser Gegend, oder?"
+      },
+      {
+       "fa": "دکتر صادقی: بله، در روستایی نزدیک پنجکنت به دنیا آمد. تاجیک‌ها او را بسیار گرامی می‌دارند؛ حتی خیابان اصلی دوشنبه به نام اوست.",
+       "tr": "",
+       "de": "Ja, er wurde in einem Dorf bei Pandschakent geboren. Die Tadschiken verehren ihn sehr; sogar die Hauptstraße von Duschanbe trägt seinen Namen."
+      },
+      {
+       "fa": "یوناس: پس از همین هفته شروع می‌کنم. خیلی ممنون، خانم دکتر!",
+       "tr": "",
+       "de": "Dann fange ich gleich diese Woche an. Vielen Dank, Frau Doktor!"
+      },
+      {
+       "fa": "دکتر صادقی: خواهش می‌کنم. هفته‌ی بعد یکی از شعرها را برایم بلند بخوانید. روز خوش!",
+       "tr": "",
+       "de": "Gern geschehen. Lesen Sie mir nächste Woche eines der Gedichte laut vor. Einen schönen Tag!"
       }
      ]
     },
@@ -587,20 +1157,20 @@
        "richtig": 0
       },
       {
-       "frage": "Warum schreibt man Tadschikisch kyrillisch?",
+       "frage": "Was geschah Anfang der 1990er-Jahre?",
        "optionen": [
-        "wegen einer politischen Entscheidung in der Sowjetzeit",
-        "weil es einfacher ist",
-        "wegen der Grammatik"
+        "Man diskutierte über eine Rückkehr zur persischen Schrift.",
+        "Man führte das lateinische Alphabet ein.",
+        "Man verbot das Kyrillische."
        ],
        "richtig": 0
       },
       {
-       "frage": "Was meint Dr. Sadeghi?",
+       "frage": "Was trägt in Duschanbe Rudakis Namen?",
        "optionen": [
-        "Jonas kann das Alphabet schnell lernen.",
-        "Jonas muss Russisch lernen.",
-        "Das Buch ist für Jonas zu schwer."
+        "die Hauptstraße",
+        "der Flughafen",
+        "die Universität"
        ],
        "richtig": 0
       }
@@ -644,14 +1214,34 @@
        "de": "Pohantun heißt Universität! Im Dari sind manche Wörter anders, aber die Grammatik ist dieselbe."
       },
       {
-       "fa": "یوناس: لهجه‌اش هم برایم جالب بود. به نظرم کمی قدیمی‌تر بود.",
+       "fa": "یوناس: یک کلمه‌ی دیگر هم گفت: «موتر». آن هم از پشتو است؟",
        "tr": "",
-       "de": "Sein Akzent war auch interessant für mich. Er klang für mich etwas älter."
+       "de": "Er hat noch ein Wort gesagt: ‹motar›. Kommt das auch aus dem Paschtu?"
+      },
+      {
+       "fa": "لیلا: نه، «موتر» از انگلیسی آمده و در افغانستان به معنی ماشین است. یا مثلا به بیمارستان «شفاخانه» می‌گویند؛ در ایران هم قدیم‌ها این واژه را به کار می‌بردند.",
+       "tr": "",
+       "de": "Nein, ‹motar› kommt aus dem Englischen und bedeutet in Afghanistan Auto. Oder man sagt zum Krankenhaus ‹schafachane›; auch in Iran hat man dieses Wort früher benutzt."
+      },
+      {
+       "fa": "یوناس: جالب است. لهجه‌اش هم برایم جالب بود. به نظرم کمی قدیمی‌تر بود.",
+       "tr": "",
+       "de": "Interessant. Sein Akzent war auch interessant für mich. Er klang für mich etwas älter."
       },
       {
        "fa": "لیلا: درست است. می‌گویند تلفظ دری به فارسی کلاسیک نزدیک‌تر است. مثلا «شیر» به معنی حیوان و «شیر» به معنی نوشیدنی را متفاوت تلفظ می‌کنند.",
        "tr": "",
        "de": "Stimmt. Man sagt, die Aussprache im Dari sei näher am klassischen Persisch. Zum Beispiel spricht man ‹Schir› (Löwe) und ‹Schir› (Milch) unterschiedlich aus."
+      },
+      {
+       "fa": "یوناس: پس در شعرهای قدیمی، قافیه‌ها با تلفظ دری بهتر شنیده می‌شوند؟",
+       "tr": "",
+       "de": "Dann klingen die Reime in alten Gedichten mit der Dari-Aussprache besser?"
+      },
+      {
+       "fa": "لیلا: در بعضی موارد بله. برای همین بعضی از استادان ادبیات می‌گویند شعر کلاسیک را باید یک بار هم با لهجه‌ی دری شنید.",
+       "tr": "",
+       "de": "In manchen Fällen ja. Deshalb sagen manche Literaturprofessoren, man sollte klassische Dichtung auch einmal mit Dari-Akzent hören."
       },
       {
        "fa": "یوناس: جالب است! پس شاید رودکی هم همین‌طور حرف می‌زد.",
@@ -662,6 +1252,16 @@
        "fa": "لیلا: شاید! باید از خانم دکتر صادقی بپرسی. او عاشق این بحث‌هاست.",
        "tr": "",
        "de": "Vielleicht! Du musst Frau Dr. Sadeghi fragen. Sie liebt solche Diskussionen."
+      },
+      {
+       "fa": "یوناس: حتما می‌پرسم. راستی، آن دانشجو پیشنهاد داد هفته‌ای یک بار با هم گفتگو کنیم.",
+       "tr": "",
+       "de": "Das frage ich sie bestimmt. Übrigens hat mir der Student vorgeschlagen, dass wir uns einmal pro Woche zum Gespräch treffen."
+      },
+      {
+       "fa": "لیلا: فکر خیلی خوبی است. این‌طوری با دو چهره‌ی یک زبان آشنا می‌شوی.",
+       "tr": "",
+       "de": "Eine sehr gute Idee. So lernst du zwei Gesichter derselben Sprache kennen."
       }
      ]
     },
@@ -691,14 +1291,34 @@
        "de": "Pohantun heißt Universität! Im Dari sind manche Wörter anders, aber die Grammatik ist dieselbe."
       },
       {
-       "fa": "یوناس: لهجه‌اش هم برایم جالب بود. به نظرم کمی قدیمی‌تر بود.",
+       "fa": "یوناس: یک کلمه‌ی دیگر هم گفت: «موتر». آن هم از پشتو است؟",
        "tr": "",
-       "de": "Sein Akzent war auch interessant für mich. Er klang für mich etwas älter."
+       "de": "Er hat noch ein Wort gesagt: ‹motar›. Kommt das auch aus dem Paschtu?"
+      },
+      {
+       "fa": "لیلا: نه، «موتر» از انگلیسی آمده و در افغانستان به معنی ماشین است. یا مثلا به بیمارستان «شفاخانه» می‌گویند؛ در ایران هم قدیم‌ها این واژه را به کار می‌بردند.",
+       "tr": "",
+       "de": "Nein, ‹motar› kommt aus dem Englischen und bedeutet in Afghanistan Auto. Oder man sagt zum Krankenhaus ‹schafachane›; auch in Iran hat man dieses Wort früher benutzt."
+      },
+      {
+       "fa": "یوناس: جالب است. لهجه‌اش هم برایم جالب بود. به نظرم کمی قدیمی‌تر بود.",
+       "tr": "",
+       "de": "Interessant. Sein Akzent war auch interessant für mich. Er klang für mich etwas älter."
       },
       {
        "fa": "لیلا: درست است. می‌گویند تلفظ دری به فارسی کلاسیک نزدیک‌تر است. مثلا «شیر» به معنی حیوان و «شیر» به معنی نوشیدنی را متفاوت تلفظ می‌کنند.",
        "tr": "",
        "de": "Stimmt. Man sagt, die Aussprache im Dari sei näher am klassischen Persisch. Zum Beispiel spricht man ‹Schir› (Löwe) und ‹Schir› (Milch) unterschiedlich aus."
+      },
+      {
+       "fa": "یوناس: پس در شعرهای قدیمی، قافیه‌ها با تلفظ دری بهتر شنیده می‌شوند؟",
+       "tr": "",
+       "de": "Dann klingen die Reime in alten Gedichten mit der Dari-Aussprache besser?"
+      },
+      {
+       "fa": "لیلا: در بعضی موارد بله. برای همین بعضی از استادان ادبیات می‌گویند شعر کلاسیک را باید یک بار هم با لهجه‌ی دری شنید.",
+       "tr": "",
+       "de": "In manchen Fällen ja. Deshalb sagen manche Literaturprofessoren, man sollte klassische Dichtung auch einmal mit Dari-Akzent hören."
       },
       {
        "fa": "یوناس: جالب است! پس شاید رودکی هم همین‌طور حرف می‌زد.",
@@ -709,6 +1329,16 @@
        "fa": "لیلا: شاید! باید از خانم دکتر صادقی بپرسی. او عاشق این بحث‌هاست.",
        "tr": "",
        "de": "Vielleicht! Du musst Frau Dr. Sadeghi fragen. Sie liebt solche Diskussionen."
+      },
+      {
+       "fa": "یوناس: حتما می‌پرسم. راستی، آن دانشجو پیشنهاد داد هفته‌ای یک بار با هم گفتگو کنیم.",
+       "tr": "",
+       "de": "Das frage ich sie bestimmt. Übrigens hat mir der Student vorgeschlagen, dass wir uns einmal pro Woche zum Gespräch treffen."
+      },
+      {
+       "fa": "لیلا: فکر خیلی خوبی است. این‌طوری با دو چهره‌ی یک زبان آشنا می‌شوی.",
+       "tr": "",
+       "de": "Eine sehr gute Idee. So lernst du zwei Gesichter derselben Sprache kennen."
       }
      ]
     },
@@ -726,20 +1356,365 @@
        "richtig": 0
       },
       {
-       "frage": "Was fiel Jonas an der Aussprache auf?",
+       "frage": "Was bedeutet <span class='fa'>موتر</span> in Afghanistan?",
        "optionen": [
-        "Sie klang älter, klassischer.",
-        "Sie war sehr schnell.",
-        "Sie klang wie Arabisch."
+        "Auto",
+        "Krankenhaus",
+        "Motorrad-Werkstatt"
        ],
        "richtig": 0
       },
       {
-       "frage": "Welches Beispiel nennt Leyla?",
+       "frage": "Welches Beispiel nennt Leyla für die Aussprache?",
        "optionen": [
         "<span class='fa'>شیر</span> als Löwe und als Milch",
         "<span class='fa'>مادر</span> und <span class='fa'>برادر</span>",
         "<span class='fa'>مرسی</span> und <span class='fa'>آسانسور</span>"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d3",
+   "titel": "Dialog: Rayane oder Computer?",
+   "vorschau": "Rayane oder Computer?",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Am Abend bittet Herr Rahimi Jonas, sich seinen Computer anzusehen. Dabei kommen sie auf neue persische Wörter zu sprechen.</p>"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "آقای رحیمی: یوناس جان، وقت داری؟ این رایانه‌ی من دوباره کار نمی‌کند.",
+       "tr": "",
+       "de": "Jonas, hast du Zeit? Mein Rechner funktioniert schon wieder nicht."
+      },
+      {
+       "fa": "یوناس: البته. ولی جالب است، شما می‌گویید «رایانه»؛ همه‌ی دوستان من می‌گویند «کامپیوتر».",
+       "tr": "",
+       "de": "Natürlich. Aber interessant – Sie sagen ‹rayane›; alle meine Freunde sagen ‹Computer›."
+      },
+      {
+       "fa": "آقای رحیمی: من سی سال معلم ادبیات بودم و عادت دارم واژه‌های فرهنگستان را به کار ببرم.",
+       "tr": "",
+       "de": "Ich war dreißig Jahre Literaturlehrer und bin es gewohnt, die Wörter der Akademie zu benutzen."
+      },
+      {
+       "fa": "یوناس: فرهنگستان دقیقا چه کار می‌کند؟",
+       "tr": "",
+       "de": "Was macht die Akademie genau?"
+      },
+      {
+       "fa": "آقای رحیمی: برای واژه‌های خارجی معادل فارسی پیشنهاد می‌کند. بعضی از آنها، مثل «یارانه» یا «پیامک»، خیلی زود رواج پیدا کردند.",
+       "tr": "",
+       "de": "Sie schlägt persische Entsprechungen für Fremdwörter vor. Manche davon, wie ‹yarane› (Subvention) oder ‹payamak› (SMS), haben sich sehr schnell verbreitet."
+      },
+      {
+       "fa": "یوناس: و بعضی‌ها نه؟",
+       "tr": "",
+       "de": "Und manche nicht?"
+      },
+      {
+       "fa": "آقای رحیمی: بله. بعضی از واژه‌های پیشنهادی فقط در روزنامه‌ها و نامه‌های اداری می‌مانند و مردم در خیابان همان وام‌واژه را ترجیح می‌دهند.",
+       "tr": "",
+       "de": "Genau. Manche vorgeschlagenen Wörter bleiben nur in Zeitungen und Behördenbriefen, und auf der Straße ziehen die Leute das Lehnwort vor."
+      },
+      {
+       "fa": "یوناس: در آلمان هم کسانی هستند که از وام‌واژه‌های انگلیسی ناراحت‌اند، اما فرهنگستانی برای ساختن واژه‌های تازه نداریم.",
+       "tr": "",
+       "de": "In Deutschland gibt es auch Leute, die sich über englische Lehnwörter ärgern, aber wir haben keine Akademie, die neue Wörter bildet."
+      },
+      {
+       "fa": "آقای رحیمی: به نظر من وام‌واژه بد نیست؛ زبان زنده همیشه از همسایه‌هایش چیز می‌گیرد. فارسی هزار سال است که از عربی و ترکی واژه گرفته و هنوز فارسی است.",
+       "tr": "",
+       "de": "Meiner Meinung nach sind Lehnwörter nichts Schlechtes; eine lebendige Sprache nimmt immer etwas von ihren Nachbarn. Persisch übernimmt seit tausend Jahren Wörter aus dem Arabischen und Türkischen und ist immer noch Persisch."
+      },
+      {
+       "fa": "یوناس: پس چرا فرهنگستان این‌قدر برای واژه‌های تازه زحمت می‌کشد؟",
+       "tr": "",
+       "de": "Warum gibt sich die Akademie dann so viel Mühe mit neuen Wörtern?"
+      },
+      {
+       "fa": "آقای رحیمی: چون علم و آموزش به واژه‌های دقیق نیاز دارد و کسی باید آنها را بسازد. این بیت را شنیده‌ای؟ «بسی رنج بردم در این سال سی / عجم زنده کردم بدین پارسی»",
+       "tr": "",
+       "de": "Weil Wissenschaft und Bildung präzise Wörter brauchen und jemand sie schaffen muss. Kennst du diesen Vers? ‹Viel Mühe nahm ich auf mich in diesen dreißig Jahren / ich habe die Iraner mit diesem Persisch wiederbelebt›."
+      },
+      {
+       "fa": "یوناس: از شاهنامه است؟ «عجم» یعنی چه؟",
+       "tr": "",
+       "de": "Ist der aus dem Schahname? Was bedeutet ‹adscham›?"
+      },
+      {
+       "fa": "آقای رحیمی: یعنی غیرعرب‌ها، اینجا یعنی ایرانیان. این بیت را به فردوسی نسبت می‌دهند، البته بعضی پژوهشگران تردید دارند که واقعا از خود او باشد.",
+       "tr": "",
+       "de": "Es bedeutet Nicht-Araber, hier also die Iraner. Man schreibt den Vers Ferdousi zu, allerdings zweifeln manche Forscher, ob er wirklich von ihm selbst stammt."
+      },
+      {
+       "fa": "یوناس: جالب است! خب، حالا ببینیم این رایانه چه مشکلی دارد.",
+       "tr": "",
+       "de": "Interessant! Gut, dann schauen wir mal, was mit diesem Rechner los ist."
+      },
+      {
+       "fa": "آقای رحیمی: دستت درد نکند! بعدش یک چای تازه دم می‌کنم.",
+       "tr": "",
+       "de": "Danke dir! Danach brühe ich einen frischen Tee auf."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "آقای رحیمی: یوناس جان، وقت داری؟ این رایانه‌ی من دوباره کار نمی‌کند.",
+       "tr": "",
+       "de": "Jonas, hast du Zeit? Mein Rechner funktioniert schon wieder nicht."
+      },
+      {
+       "fa": "یوناس: البته. ولی جالب است، شما می‌گویید «رایانه»؛ همه‌ی دوستان من می‌گویند «کامپیوتر».",
+       "tr": "",
+       "de": "Natürlich. Aber interessant – Sie sagen ‹rayane›; alle meine Freunde sagen ‹Computer›."
+      },
+      {
+       "fa": "آقای رحیمی: من سی سال معلم ادبیات بودم و عادت دارم واژه‌های فرهنگستان را به کار ببرم.",
+       "tr": "",
+       "de": "Ich war dreißig Jahre Literaturlehrer und bin es gewohnt, die Wörter der Akademie zu benutzen."
+      },
+      {
+       "fa": "یوناس: فرهنگستان دقیقا چه کار می‌کند؟",
+       "tr": "",
+       "de": "Was macht die Akademie genau?"
+      },
+      {
+       "fa": "آقای رحیمی: برای واژه‌های خارجی معادل فارسی پیشنهاد می‌کند. بعضی از آنها، مثل «یارانه» یا «پیامک»، خیلی زود رواج پیدا کردند.",
+       "tr": "",
+       "de": "Sie schlägt persische Entsprechungen für Fremdwörter vor. Manche davon, wie ‹yarane› (Subvention) oder ‹payamak› (SMS), haben sich sehr schnell verbreitet."
+      },
+      {
+       "fa": "یوناس: و بعضی‌ها نه؟",
+       "tr": "",
+       "de": "Und manche nicht?"
+      },
+      {
+       "fa": "آقای رحیمی: بله. بعضی از واژه‌های پیشنهادی فقط در روزنامه‌ها و نامه‌های اداری می‌مانند و مردم در خیابان همان وام‌واژه را ترجیح می‌دهند.",
+       "tr": "",
+       "de": "Genau. Manche vorgeschlagenen Wörter bleiben nur in Zeitungen und Behördenbriefen, und auf der Straße ziehen die Leute das Lehnwort vor."
+      },
+      {
+       "fa": "یوناس: در آلمان هم کسانی هستند که از وام‌واژه‌های انگلیسی ناراحت‌اند، اما فرهنگستانی برای ساختن واژه‌های تازه نداریم.",
+       "tr": "",
+       "de": "In Deutschland gibt es auch Leute, die sich über englische Lehnwörter ärgern, aber wir haben keine Akademie, die neue Wörter bildet."
+      },
+      {
+       "fa": "آقای رحیمی: به نظر من وام‌واژه بد نیست؛ زبان زنده همیشه از همسایه‌هایش چیز می‌گیرد. فارسی هزار سال است که از عربی و ترکی واژه گرفته و هنوز فارسی است.",
+       "tr": "",
+       "de": "Meiner Meinung nach sind Lehnwörter nichts Schlechtes; eine lebendige Sprache nimmt immer etwas von ihren Nachbarn. Persisch übernimmt seit tausend Jahren Wörter aus dem Arabischen und Türkischen und ist immer noch Persisch."
+      },
+      {
+       "fa": "یوناس: پس چرا فرهنگستان این‌قدر برای واژه‌های تازه زحمت می‌کشد؟",
+       "tr": "",
+       "de": "Warum gibt sich die Akademie dann so viel Mühe mit neuen Wörtern?"
+      },
+      {
+       "fa": "آقای رحیمی: چون علم و آموزش به واژه‌های دقیق نیاز دارد و کسی باید آنها را بسازد. این بیت را شنیده‌ای؟ «بسی رنج بردم در این سال سی / عجم زنده کردم بدین پارسی»",
+       "tr": "",
+       "de": "Weil Wissenschaft und Bildung präzise Wörter brauchen und jemand sie schaffen muss. Kennst du diesen Vers? ‹Viel Mühe nahm ich auf mich in diesen dreißig Jahren / ich habe die Iraner mit diesem Persisch wiederbelebt›."
+      },
+      {
+       "fa": "یوناس: از شاهنامه است؟ «عجم» یعنی چه؟",
+       "tr": "",
+       "de": "Ist der aus dem Schahname? Was bedeutet ‹adscham›?"
+      },
+      {
+       "fa": "آقای رحیمی: یعنی غیرعرب‌ها، اینجا یعنی ایرانیان. این بیت را به فردوسی نسبت می‌دهند، البته بعضی پژوهشگران تردید دارند که واقعا از خود او باشد.",
+       "tr": "",
+       "de": "Es bedeutet Nicht-Araber, hier also die Iraner. Man schreibt den Vers Ferdousi zu, allerdings zweifeln manche Forscher, ob er wirklich von ihm selbst stammt."
+      },
+      {
+       "fa": "یوناس: جالب است! خب، حالا ببینیم این رایانه چه مشکلی دارد.",
+       "tr": "",
+       "de": "Interessant! Gut, dann schauen wir mal, was mit diesem Rechner los ist."
+      },
+      {
+       "fa": "آقای رحیمی: دستت درد نکند! بعدش یک چای تازه دم می‌کنم.",
+       "tr": "",
+       "de": "Danke dir! Danach brühe ich einen frischen Tee auf."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Warum sagt Herr Rahimi <span class='fa'>رایانه</span>?",
+       "optionen": [
+        "Er ist es als ehemaliger Literaturlehrer gewohnt, die Wörter der Akademie zu benutzen.",
+        "Er kennt das Wort ‹Computer› nicht.",
+        "Jonas hat es ihm beigebracht."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was hält Herr Rahimi von Lehnwörtern?",
+       "optionen": [
+        "Sie sind nichts Schlechtes – lebendige Sprachen nehmen von ihren Nachbarn.",
+        "Man sollte sie verbieten.",
+        "Sie gibt es im Persischen kaum."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was sagen manche Forscher über den zitierten Vers?",
+       "optionen": [
+        "Er stammt vielleicht nicht von Ferdousi selbst.",
+        "Er stammt von Rudaki.",
+        "Er wurde im 20. Jahrhundert geschrieben."
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "a",
+   "titel": "Gut zu wissen",
+   "vorschau": "💡",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Die Inschrift von Bisotun",
+     "text": "Kurzer Infotext – tippe eine Zeile an für die Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "سنگ‌نوشته‌ی بیستون در غرب ایران، در نزدیکی کرمانشاه، بر دیواره‌ی کوهی بلند قرار دارد.",
+       "tr": "",
+       "de": "Die Inschrift von Bisotun liegt im Westen Irans, nahe Kermanschah, an der Wand eines hohen Berges."
+      },
+      {
+       "fa": "داریوش بزرگ، پادشاه هخامنشی، حدود دو هزار و پانصد سال پیش دستور داد این متن را بنویسند.",
+       "tr": "",
+       "de": "Dareios der Große, König der Achämeniden, ließ diesen Text vor rund zweieinhalbtausend Jahren anbringen."
+      },
+      {
+       "fa": "متن به سه زبان است: فارسی باستان، ایلامی و بابلی، و هر سه به خط میخی نوشته شده‌اند.",
+       "tr": "",
+       "de": "Der Text ist dreisprachig – Altpersisch, Elamisch und Babylonisch –, und alle drei sind in Keilschrift geschrieben."
+      },
+      {
+       "fa": "در قرن نوزدهم، افسر و پژوهشگر انگلیسی هنری راولینسون با خطر زیاد از صخره بالا رفت و از متن نسخه برداشت.",
+       "tr": "",
+       "de": "Im 19. Jahrhundert kletterte der englische Offizier und Forscher Henry Rawlinson unter großer Gefahr den Felsen hinauf und fertigte Abschriften des Textes an."
+      },
+      {
+       "fa": "مقایسه‌ی سه زبان به رمزگشایی خط میخی کمک بزرگی کرد.",
+       "tr": "",
+       "de": "Der Vergleich der drei Sprachen trug wesentlich zur Entzifferung der Keilschrift bei."
+      },
+      {
+       "fa": "یونسکو در سال ۲۰۰۶ بیستون را در فهرست میراث جهانی ثبت کرد.",
+       "tr": "",
+       "de": "2006 trug die UNESCO Bisotun in die Welterbeliste ein."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Rudaki – Vater der persischen Dichtung",
+     "text": "Kurzer Infotext – tippe eine Zeile an für die Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "رودکی در قرن نهم میلادی در روستای پنجرود، نزدیک شهر پنجکنت امروزی، به دنیا آمد.",
+       "tr": "",
+       "de": "Rudaki wurde im 9. Jahrhundert im Dorf Pandschrud bei der heutigen Stadt Pandschakent geboren."
+      },
+      {
+       "fa": "او شاعر دربار سامانیان در بخارا بود و می‌گویند صدای خوشی داشت و چنگ می‌نواخت.",
+       "tr": "",
+       "de": "Er war Hofdichter der Samaniden in Buchara und soll eine schöne Stimme gehabt und die Harfe gespielt haben."
+      },
+      {
+       "fa": "منابع قدیمی شمار شعرهای او را بسیار زیاد گزارش کرده‌اند، اما امروز فقط بخش کوچکی از آنها باقی مانده است.",
+       "tr": "",
+       "de": "Alte Quellen berichten von einer sehr großen Zahl seiner Gedichte, doch heute ist nur ein kleiner Teil davon erhalten."
+      },
+      {
+       "fa": "یکی از معروف‌ترین شعرهای او با مصراع «بوی جوی مولیان آید همی» آغاز می‌شود.",
+       "tr": "",
+       "de": "Eines seiner bekanntesten Gedichte beginnt mit dem Halbvers ‹Der Duft des Flüsschens Muliyan weht heran›."
+      },
+      {
+       "fa": "آرامگاه رودکی در زادگاهش پنجرود هنوز بازدیدکنندگان زیادی دارد.",
+       "tr": "",
+       "de": "Rudakis Grabmal in seinem Geburtsort Pandschrud hat noch heute viele Besucher."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Woher kommt das Wort ‹Dari›?",
+     "text": "Kurzer Infotext – tippe eine Zeile an für die Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "واژه‌ی «دری»، به گفته‌ی برخی پژوهشگران، از «در» به معنی «دربار» می‌آید؛ یعنی «زبان دربار».",
+       "tr": "",
+       "de": "Das Wort ‹Dari› kommt nach Ansicht mancher Forscher von ‹dar› im Sinne von ‹Königshof› – also ‹Sprache des Hofes›."
+      },
+      {
+       "fa": "در متن‌های کهن، «فارسی دری» نام همان زبان ادبی بود که رودکی و فردوسی با آن شعر می‌سرودند.",
+       "tr": "",
+       "de": "In alten Texten war ‹Farsi-ye Dari› der Name eben jener Literatursprache, in der Rudaki und Ferdousi dichteten."
+      },
+      {
+       "fa": "بنابراین «دری» در اصل نام زبان یک کشور خاص نبود، بلکه نامی قدیمی برای فارسی نو بود.",
+       "tr": "",
+       "de": "‹Dari› war also ursprünglich nicht die Sprache eines bestimmten Landes, sondern ein alter Name für das Neupersische."
+      },
+      {
+       "fa": "امروز این نام به‌طور رسمی برای فارسی افغانستان به کار می‌رود.",
+       "tr": "",
+       "de": "Heute wird der Name offiziell für das Persische Afghanistans verwendet."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zu den Infotexten",
+     "fragen": [
+      {
+       "frage": "In wie vielen Sprachen ist die Inschrift von Bisotun verfasst?",
+       "optionen": [
+        "in drei Sprachen",
+        "nur auf Altpersisch",
+        "in fünf Sprachen"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wo war Rudaki Hofdichter?",
+       "optionen": [
+        "in Buchara, am Hof der Samaniden",
+        "in Tus",
+        "in Kabul"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Woher kommt das Wort ‹Dari› nach einer verbreiteten Erklärung?",
+       "optionen": [
+        "von ‹dar› im Sinne von ‹Königshof›",
+        "vom Namen einer Stadt in Afghanistan",
+        "aus dem Russischen"
        ],
        "richtig": 0
       }
@@ -804,24 +1779,14 @@
      "links": "de",
      "paare": [
       {
-       "fa": "جالب است که …",
+       "fa": "نکته‌ی مهم این است که …",
        "tr": "",
-       "de": "Es ist interessant, dass …"
+       "de": "Der wichtige Punkt ist, dass …"
       },
       {
        "fa": "در مقایسه با …",
        "tr": "",
        "de": "Im Vergleich zu …"
-      },
-      {
-       "fa": "با این حال …",
-       "tr": "",
-       "de": "Dennoch …"
-      },
-      {
-       "fa": "به طور خلاصه …",
-       "tr": "",
-       "de": "Kurz gesagt …"
       },
       {
        "fa": "از یک طرف … از طرف دیگر …",
@@ -832,6 +1797,16 @@
        "fa": "برای مثال …",
        "tr": "",
        "de": "Zum Beispiel …"
+      },
+      {
+       "fa": "به طور خلاصه …",
+       "tr": "",
+       "de": "Kurz gesagt …"
+      },
+      {
+       "fa": "با این حال …",
+       "tr": "",
+       "de": "Dennoch …"
       }
      ],
      "titel": "Was bedeutet die Wendung?"
@@ -843,19 +1818,9 @@
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
-        "Der wichtige Punkt ist, dass …",
         "Einerseits … andererseits …",
-        "Meiner Meinung nach …"
-       ],
-       "richtig": 0,
-       "fa": "نکته‌ی مهم این است که …"
-      },
-      {
-       "frage": "Was bedeutet der Satz?",
-       "optionen": [
-        "Einerseits … andererseits …",
-        "Im Vergleich zu …",
-        "Es ist interessant, dass …"
+        "Meiner Meinung nach …",
+        "Der wichtige Punkt ist, dass …"
        ],
        "richtig": 0,
        "fa": "از یک طرف … از طرف دیگر …"
@@ -863,19 +1828,39 @@
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
-        "Meiner Meinung nach …",
         "Kurz gesagt …",
-        "Dennoch …"
+        "Im Vergleich zu …",
+        "Der wichtige Punkt ist, dass …"
        ],
        "richtig": 0,
-       "fa": "به نظر من …"
+       "fa": "به طور خلاصه …"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Der wichtige Punkt ist, dass …",
+        "Kurz gesagt …",
+        "Zum Beispiel …"
+       ],
+       "richtig": 0,
+       "fa": "نکته‌ی مهم این است که …"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Zum Beispiel …",
+        "Meiner Meinung nach …",
+        "Einerseits … andererseits …"
+       ],
+       "richtig": 0,
+       "fa": "برای مثال …"
       },
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
         "Dennoch …",
-        "Zum Beispiel …",
-        "Kurz gesagt …"
+        "Der wichtige Punkt ist, dass …",
+        "Zum Beispiel …"
        ],
        "richtig": 0,
        "fa": "با این حال …"
@@ -883,18 +1868,8 @@
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
-        "Es ist interessant, dass …",
-        "Meiner Meinung nach …",
-        "Kurz gesagt …"
-       ],
-       "richtig": 0,
-       "fa": "جالب است که …"
-      },
-      {
-       "frage": "Was bedeutet der Satz?",
-       "optionen": [
         "Im Vergleich zu …",
-        "Dennoch …",
+        "Es ist interessant, dass …",
         "Kurz gesagt …"
        ],
        "richtig": 0,

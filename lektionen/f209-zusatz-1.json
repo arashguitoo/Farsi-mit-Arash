@@ -251,6 +251,54 @@
        "a": "Bedrohung"
       },
       {
+       "fa": "گرگ",
+       "a": "Wolf"
+      },
+      {
+       "fa": "روباه",
+       "a": "Fuchs"
+      },
+      {
+       "fa": "خرگوش",
+       "a": "Hase"
+      },
+      {
+       "fa": "کل",
+       "a": "Wildziege (Bock)"
+      },
+      {
+       "fa": "قوچ",
+       "a": "Widder, Wildschafbock"
+      },
+      {
+       "fa": "عقاب",
+       "a": "Adler"
+      },
+      {
+       "fa": "هوبره",
+       "a": "Kragentrappe"
+      },
+      {
+       "fa": "گورخر ایرانی",
+       "a": "Persischer Onager"
+      },
+      {
+       "fa": "خرس قهوه‌ای",
+       "a": "Braunbär"
+      },
+      {
+       "fa": "لاک‌پشت",
+       "a": "Schildkröte"
+      },
+      {
+       "fa": "گربه‌ی شنی",
+       "a": "Sandkatze"
+      },
+      {
+       "fa": "حیات وحش",
+       "a": "Tierwelt, Wildtiere"
+      },
+      {
        "fa": "حفاظت کردن",
        "a": "schützen"
       },
@@ -281,40 +329,40 @@
      "links": "emoji",
      "paare": [
       {
-       "fa": "کمپین",
+       "fa": "تهدید",
        "tr": "",
-       "de": "Kampagne",
-       "emoji": "📢"
+       "de": "Bedrohung",
+       "emoji": "⚡"
       },
       {
-       "fa": "جمعیت",
+       "fa": "قوچ",
        "tr": "",
-       "de": "Population, Bestand",
-       "emoji": "👥"
+       "de": "Widder, Wildschafbock",
+       "emoji": "🐏"
       },
       {
-       "fa": "منقرض",
+       "fa": "محیط‌بان",
        "tr": "",
-       "de": "ausgestorben",
-       "emoji": "🦤"
+       "de": "Wildhüter/in",
+       "emoji": "👮"
       },
       {
-       "fa": "یوزپلنگ",
+       "fa": "جبیر",
        "tr": "",
-       "de": "Gepard",
-       "emoji": "🐆"
+       "de": "Persische Gazelle (Chinkara)",
+       "emoji": "🦌"
       },
       {
-       "fa": "نماد",
+       "fa": "محیط زیست",
        "tr": "",
-       "de": "Symbol",
-       "emoji": "🔰"
+       "de": "Umwelt",
+       "emoji": "🌍"
       },
       {
-       "fa": "در معرض خطر",
+       "fa": "جنگل",
        "tr": "",
-       "de": "gefährdet",
-       "emoji": "⚠️"
+       "de": "Wald",
+       "emoji": "🌲"
       }
      ],
      "titel": "Memory"
@@ -324,28 +372,22 @@
      "links": "de",
      "paare": [
       {
-       "fa": "منقرض",
+       "fa": "پلنگ",
        "tr": "",
-       "de": "ausgestorben",
-       "emoji": "🦤"
+       "de": "Leopard",
+       "emoji": "🐈‍⬛"
       },
       {
-       "fa": "زیستگاه",
+       "fa": "روباه",
        "tr": "",
-       "de": "Lebensraum",
-       "emoji": "🏞️"
+       "de": "Fuchs",
+       "emoji": "🦊"
       },
       {
-       "fa": "تهدید",
+       "fa": "کمبود آب",
        "tr": "",
-       "de": "Bedrohung",
-       "emoji": "⚡"
-      },
-      {
-       "fa": "جنگل",
-       "tr": "",
-       "de": "Wald",
-       "emoji": "🌲"
+       "de": "Wassermangel",
+       "emoji": "💧"
       },
       {
        "fa": "داوطلب",
@@ -354,10 +396,16 @@
        "emoji": "🤲"
       },
       {
-       "fa": "محیط زیست",
+       "fa": "تخریب",
        "tr": "",
-       "de": "Umwelt",
-       "emoji": "🌍"
+       "de": "Zerstörung",
+       "emoji": "🏚️"
+      },
+      {
+       "fa": "چوپان",
+       "tr": "",
+       "de": "Hirte, Hirtin",
+       "emoji": "🧑‍🌾"
       }
      ],
      "titel": "Memory: Wort & Bedeutung"
@@ -377,8 +425,8 @@
        "frage": "<span class='fa'>___ یوزپلنگ آسیایی امروز کمتر از پنجاه قلاده برآورد می‌شود.</span><br><span class='mini'>Der Bestand des Asiatischen Geparden wird heute auf weniger als fünfzig Tiere geschätzt.</span>",
        "optionen": [
         "جمعیت",
-        "تصادف",
-        "تنوع زیستی"
+        "محیط زیست",
+        "گله"
        ],
        "richtig": 0,
        "optFa": true,
@@ -389,8 +437,8 @@
        "frage": "<span class='fa'>توران یک ___ بزرگ در استان سمنان است.</span><br><span class='mini'>Turan ist ein großes Schutzgebiet in der Provinz Semnan.</span>",
        "optionen": [
         "منطقه‌ی حفاظت‌شده",
-        "جبیر",
-        "طعمه"
+        "گونه",
+        "قوچ"
        ],
        "richtig": 0,
        "optFa": true,
@@ -401,8 +449,8 @@
        "frage": "<span class='fa'>هر سال چند یوزپلنگ در ___ تهران–مشهد زیر ماشین می‌روند.</span><br><span class='mini'>Jedes Jahr werden auf der Straße Teheran–Maschhad mehrere Geparden überfahren.</span>",
        "optionen": [
         "جاده",
-        "فعال محیط زیست",
-        "محیط زیست"
+        "خرگوش",
+        "کمپین"
        ],
        "richtig": 0,
        "optFa": true,
@@ -413,26 +461,20 @@
        "frage": "<span class='fa'>یک ___ با کمک دوربین تله‌ای ردپای یوزپلنگ را پیدا کرد.</span><br><span class='mini'>Ein Wildhüter fand mithilfe einer Kamerafalle die Spur eines Geparden.</span>",
        "optionen": [
         "محیط‌بان",
-        "منطقه‌ی حفاظت‌شده",
-        "نسل"
+        "منقرض",
+        "عقاب"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
        "erkl": "<span class='fa'>یک محیط‌بان با کمک دوربین تله‌ای ردپای یوزپلنگ را پیدا کرد.</span>"
-      }
-     ]
-    },
-    {
-     "typ": "wahl",
-     "titel": "Welches Wort passt?",
-     "fragen": [
+      },
       {
        "frage": "<span class='fa'>سگ‌های ___ گاهی به یوزپلنگ‌ها حمله می‌کنند.</span><br><span class='mini'>Herdenhunde greifen manchmal Geparden an.</span>",
        "optionen": [
         "گله",
-        "منقرض",
-        "نماد"
+        "شکار غیرقانونی",
+        "کل"
        ],
        "richtig": 0,
        "optFa": true,
@@ -443,20 +485,26 @@
        "frage": "<span class='fa'>اگر ___ کافی نباشد، یوزپلنگ گرسنه می‌ماند.</span><br><span class='mini'>Wenn es nicht genug Beutetiere gibt, bleibt der Gepard hungrig.</span>",
        "optionen": [
         "طعمه",
-        "دوربین تله‌ای",
-        "گونه"
+        "محیط زیست",
+        "توله"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
        "erkl": "<span class='fa'>اگر طعمه کافی نباشد، یوزپلنگ گرسنه می‌ماند.</span>"
-      },
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
       {
        "frage": "<span class='fa'>جنگل‌های هیرکانی در سال ۲۰۱۹ به‌عنوان ___ جهانی در یونسکو ثبت شدند.</span><br><span class='mini'>Die Hyrkanischen Wälder wurden 2019 als Weltnaturerbe bei der UNESCO eingetragen.</span>",
        "optionen": [
         "میراث طبیعی",
-        "شکار غیرقانونی",
-        "جنگل"
+        "پلنگ",
+        "نماد"
        ],
        "richtig": 0,
        "optFa": true,
@@ -467,13 +515,61 @@
        "frage": "<span class='fa'>تصویر یوزپلنگ روی پیراهن تیم ملی به یک ___ تبدیل شد.</span><br><span class='mini'>Das Gepardenbild auf dem Nationaltrikot wurde zu einem Symbol.</span>",
        "optionen": [
         "نماد",
-        "پارک ملی",
-        "گونه"
+        "زیستگاه",
+        "جنگل"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
        "erkl": "<span class='fa'>تصویر یوزپلنگ روی پیراهن تیم ملی به یک نماد تبدیل شد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>در توران یکی از آخرین جمعیت‌های ___ زندگی می‌کند.</span><br><span class='mini'>In Turan lebt einer der letzten Bestände des Persischen Onagers.</span>",
+       "optionen": [
+        "گورخر ایرانی",
+        "خرس قهوه‌ای",
+        "چوپان"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>در توران یکی از آخرین جمعیت‌های گورخر ایرانی زندگی می‌کند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>___ نر شاخ‌های بلند و خمیده دارد و در کوه‌های سنگی زندگی می‌کند.</span><br><span class='mini'>Der Wildziegenbock hat lange, gebogene Hörner und lebt in felsigen Bergen.</span>",
+       "optionen": [
+        "کل",
+        "هوبره",
+        "چرای دام"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>کل نر شاخ‌های بلند و خمیده دارد و در کوه‌های سنگی زندگی می‌کند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>چوپان‌ها برای محافظت از گله در برابر ___ سگ نگه می‌دارند.</span><br><span class='mini'>Hirten halten Hunde, um die Herde vor dem Wolf zu schützen.</span>",
+       "optionen": [
+        "گرگ",
+        "بیابان",
+        "کل"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>چوپان‌ها برای محافظت از گله در برابر گرگ سگ نگه می‌دارند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>___ پرنده‌ای کمیاب است که در دشت‌های خشک زندگی می‌کند و شکار غیرقانونی آن را تهدید می‌کند.</span><br><span class='mini'>Die Kragentrappe ist ein seltener Vogel, der in trockenen Ebenen lebt und durch Wilderei bedroht ist.</span>",
+       "optionen": [
+        "هوبره",
+        "طعمه",
+        "شکار غیرقانونی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>هوبره پرنده‌ای کمیاب است که در دشت‌های خشک زندگی می‌کند و شکار غیرقانونی آن را تهدید می‌کند.</span>"
       }
      ]
     }
@@ -490,38 +586,25 @@
      "trenner": " ",
      "woerter": [
       {
-       "fa": "نه، نمی‌دانستم! پس یوزپلنگ در ادبیات هم جای پایی دارد.",
+       "fa": "موافقم. ولی آگاهی هم مهم است، وگرنه کسی برای حفاظت پولی نمی‌داد.",
        "tr": "",
-       "de": "Nein, das wusste ich nicht! Dann hat der Gepard auch in der Literatur seine Spuren hinterlassen.",
+       "de": "Einverstanden. Aber auch Bewusstsein ist wichtig, sonst würde niemand Geld für den Schutz geben.",
        "teile": [
-        "نه",
-        "نمی‌دانستم",
-        "پس",
-        "یوزپلنگ",
-        "در",
-        "ادبیات",
+        "موافقم",
+        "ولی",
+        "آگاهی",
         "هم",
-        "جای",
-        "پایی",
-        "دارد"
-       ],
-       "extra": [
-        "نه،"
-       ]
-      },
-      {
-       "fa": "به توران؟ برای دیدن یوزپلنگ؟",
-       "tr": "",
-       "de": "Nach Turan? Um Geparden zu sehen?",
-       "teile": [
-        "به",
-        "توران",
+        "مهم",
+        "است",
+        "وگرنه",
+        "کسی",
         "برای",
-        "دیدن",
-        "یوزپلنگ"
+        "حفاظت",
+        "پولی",
+        "نمی‌داد"
        ],
        "extra": [
-        "در"
+        "چنانچه"
        ]
       },
       {
@@ -542,7 +625,41 @@
         "می‌کنم"
        ],
        "extra": [
-        "ادبیات"
+        "چشم."
+       ]
+      },
+      {
+       "fa": "نه، نمی‌دانستم! پس یوزپلنگ در ادبیات هم جای پایی دارد.",
+       "tr": "",
+       "de": "Nein, das wusste ich nicht! Dann hat der Gepard auch in der Literatur seine Spuren hinterlassen.",
+       "teile": [
+        "نه",
+        "نمی‌دانستم",
+        "پس",
+        "یوزپلنگ",
+        "در",
+        "ادبیات",
+        "هم",
+        "جای",
+        "پایی",
+        "دارد"
+       ],
+       "extra": [
+        "تا"
+       ]
+      },
+      {
+       "fa": "گزارش چقدر باید باشد؟",
+       "tr": "",
+       "de": "Wie lang soll der Bericht sein?",
+       "teile": [
+        "گزارش",
+        "چقدر",
+        "باید",
+        "باشد"
+       ],
+       "extra": [
+        "محیط‌بانان"
        ]
       },
       {
@@ -556,7 +673,7 @@
         "می‌بینمت"
        ],
        "extra": [
-        "یوزپلنگ؟"
+        "هم"
        ]
       },
       {
@@ -577,9 +694,7 @@
         "گرفته",
         "است"
        ],
-       "extra": [
-        "به"
-       ]
+       "extra": []
       }
      ]
     },
@@ -588,10 +703,54 @@
      "titel": "Was bedeutet der Satz?",
      "fragen": [
       {
-       "frage": "„Nein, das wusste ich nicht! Dann hat der Gepard auch in der Literatur seine Spuren hinterlassen.“",
+       "frage": "„Interessant. Naturschutz ist also nicht nur Sache der Wildhüter.“",
        "optionen": [
-        "نه، نمی‌دانستم! پس یوزپلنگ در ادبیات هم جای پایی دارد.",
-        "حتماً بفرست. فعلاً، می‌بینمت!",
+        "جالب است. یعنی حفاظت فقط کار محیط‌بانان نیست.",
+        "ممنون. آقای نوروزی می‌گفت شما سال‌هاست در این منطقه گله می‌چرانید.",
+        "تا حالا یوزپلنگ دیده‌اید؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Auf jeden Fall. Bis wann muss ich den Bericht schicken?“",
+       "optionen": [
+        "حتماً. تا چه زمانی باید گزارش را بفرستم؟",
+        "ممنون. آقای نوروزی می‌گفت شما سال‌هاست در این منطقه گله می‌چرانید.",
+        "به توران؟ برای دیدن یوزپلنگ؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Haben Sie schon einmal einen Geparden gesehen?“",
+       "optionen": [
+        "تا حالا یوزپلنگ دیده‌اید؟",
+        "گزارش چقدر باید باشد؟",
+        "ظهر به چادر چوپانی می‌رسیم که گله‌اش را در حاشیه‌ی منطقه می‌چراند."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Wie lang soll der Bericht sein?“",
+       "optionen": [
+        "گزارش چقدر باید باشد؟",
+        "ممنون. آقای نوروزی می‌گفت شما سال‌هاست در این منطقه گله می‌چرانید.",
+        "جالب است. یعنی حفاظت فقط کار محیط‌بانان نیست."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Mittags erreichen wir das Zelt eines Hirten, der seine Herde am Rand des Gebiets weiden lässt.“",
+       "optionen": [
+        "ظهر به چادر چوپانی می‌رسیم که گله‌اش را در حاشیه‌ی منطقه می‌چراند.",
+        "سلام، خوش آمدید. بفرمایید بنشینید، چای تازه دم است.",
         "حتماً! چنانچه اجازه بدهید، گزارشم را در کلاس هم ارائه می‌کنم."
        ],
        "richtig": 0,
@@ -599,44 +758,11 @@
        "hoeren": false
       },
       {
-       "frage": "„Sehr gern! Falls Sie erlauben, stelle ich meinen Bericht auch im Seminar vor.“",
+       "frage": "„Hallo, willkommen. Setzen Sie sich bitte, der Tee ist frisch aufgebrüht.“",
        "optionen": [
-        "حتماً! چنانچه اجازه بدهید، گزارشم را در کلاس هم ارائه می‌کنم.",
-        "در ایران روز سی‌ویکم شهریور «روز ملی یوزپلنگ ایرانی» نام گرفته است.",
-        "نه، نمی‌دانستم! پس یوزپلنگ در ادبیات هم جای پایی دارد."
-       ],
-       "richtig": 0,
-       "optFa": true,
-       "hoeren": false
-      },
-      {
-       "frage": "„Schick ihn unbedingt. Bis dann, wir sehen uns!“",
-       "optionen": [
-        "حتماً بفرست. فعلاً، می‌بینمت!",
-        "حتماً! چنانچه اجازه بدهید، گزارشم را در کلاس هم ارائه می‌کنم.",
+        "سلام، خوش آمدید. بفرمایید بنشینید، چای تازه دم است.",
+        "حتماً. تا چه زمانی باید گزارش را بفرستم؟",
         "در ایران روز سی‌ویکم شهریور «روز ملی یوزپلنگ ایرانی» نام گرفته است."
-       ],
-       "richtig": 0,
-       "optFa": true,
-       "hoeren": false
-      },
-      {
-       "frage": "„Nach Turan? Um Geparden zu sehen?“",
-       "optionen": [
-        "به توران؟ برای دیدن یوزپلنگ؟",
-        "در ایران روز سی‌ویکم شهریور «روز ملی یوزپلنگ ایرانی» نام گرفته است.",
-        "نه، نمی‌دانستم! پس یوزپلنگ در ادبیات هم جای پایی دارد."
-       ],
-       "richtig": 0,
-       "optFa": true,
-       "hoeren": false
-      },
-      {
-       "frage": "„In Iran wurde der 31. Schahriwar zum ‹Nationalen Tag des Iranischen Geparden› erklärt.“",
-       "optionen": [
-        "در ایران روز سی‌ویکم شهریور «روز ملی یوزپلنگ ایرانی» نام گرفته است.",
-        "به توران؟ برای دیدن یوزپلنگ؟",
-        "حتماً! چنانچه اجازه بدهید، گزارشم را در کلاس هم ارائه می‌کنم."
        ],
        "richtig": 0,
        "optFa": true,
@@ -651,52 +777,62 @@
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
-        "Sehr gern! Falls Sie erlauben, stelle ich meinen Bericht auch im Seminar vor.",
-        "Nach Turan? Um Geparden zu sehen?",
+        "Interessant. Naturschutz ist also nicht nur Sache der Wildhüter.",
+        "Auf jeden Fall. Bis wann muss ich den Bericht schicken?",
+        "Einverstanden. Aber auch Bewusstsein ist wichtig, sonst würde niemand Geld für den Schutz geben."
+       ],
+       "richtig": 0,
+       "fa": "جالب است. یعنی حفاظت فقط کار محیط‌بانان نیست."
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Er sagt, das sei eine Wolfsspur, und Spuren zu erkennen erfordere jahrelange Erfahrung.",
+        "Gern. Können Sie mir auch eine Quelle zum Lesen empfehlen?",
+        "Schick ihn unbedingt. Bis dann, wir sehen uns!"
+       ],
+       "richtig": 0,
+       "fa": "می‌گوید این ردپای گرگ است و تشخیص ردپاها سال‌ها تجربه می‌خواهد."
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Hallo, willkommen. Setzen Sie sich bitte, der Tee ist frisch aufgebrüht.",
+        "Wie lang soll der Bericht sein?",
         "In Iran wurde der 31. Schahriwar zum ‹Nationalen Tag des Iranischen Geparden› erklärt."
        ],
        "richtig": 0,
-       "fa": "حتماً! چنانچه اجازه بدهید، گزارشم را در کلاس هم ارائه می‌کنم."
+       "fa": "سلام، خوش آمدید. بفرمایید بنشینید، چای تازه دم است."
       },
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
-        "Nein, das wusste ich nicht! Dann hat der Gepard auch in der Literatur seine Spuren hinterlassen.",
-        "In Iran wurde der 31. Schahriwar zum ‹Nationalen Tag des Iranischen Geparden› erklärt.",
-        "Schick ihn unbedingt. Bis dann, wir sehen uns!"
+        "Mittags erreichen wir das Zelt eines Hirten, der seine Herde am Rand des Gebiets weiden lässt.",
+        "Interessant. Naturschutz ist also nicht nur Sache der Wildhüter.",
+        "Hallo, willkommen. Setzen Sie sich bitte, der Tee ist frisch aufgebrüht."
        ],
        "richtig": 0,
-       "fa": "نه، نمی‌دانستم! پس یوزپلنگ در ادبیات هم جای پایی دارد."
+       "fa": "ظهر به چادر چوپانی می‌رسیم که گله‌اش را در حاشیه‌ی منطقه می‌چراند."
       },
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
-        "Nach Turan? Um Geparden zu sehen?",
-        "Nein, das wusste ich nicht! Dann hat der Gepard auch in der Literatur seine Spuren hinterlassen.",
-        "Schick ihn unbedingt. Bis dann, wir sehen uns!"
-       ],
-       "richtig": 0,
-       "fa": "به توران؟ برای دیدن یوزپلنگ؟"
-      },
-      {
-       "frage": "Was bedeutet der Satz?",
-       "optionen": [
-        "Schick ihn unbedingt. Bis dann, wir sehen uns!",
-        "Nach Turan? Um Geparden zu sehen?",
+        "Gern. Können Sie mir auch eine Quelle zum Lesen empfehlen?",
+        "Er sagt, das sei eine Wolfsspur, und Spuren zu erkennen erfordere jahrelange Erfahrung.",
         "Sehr gern! Falls Sie erlauben, stelle ich meinen Bericht auch im Seminar vor."
        ],
        "richtig": 0,
-       "fa": "حتماً بفرست. فعلاً، می‌بینمت!"
+       "fa": "چشم. منبعی هم برای مطالعه معرفی می‌کنید؟"
       },
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
-        "In Iran wurde der 31. Schahriwar zum ‹Nationalen Tag des Iranischen Geparden› erklärt.",
         "Nein, das wusste ich nicht! Dann hat der Gepard auch in der Literatur seine Spuren hinterlassen.",
-        "Schick ihn unbedingt. Bis dann, wir sehen uns!"
+        "Interessant. Naturschutz ist also nicht nur Sache der Wildhüter.",
+        "Auf jeden Fall. Bis wann muss ich den Bericht schicken?"
        ],
        "richtig": 0,
-       "fa": "در ایران روز سی‌ویکم شهریور «روز ملی یوزپلنگ ایرانی» نام گرفته است."
+       "fa": "نه، نمی‌دانستم! پس یوزپلنگ در ادبیات هم جای پایی دارد."
       }
      ]
     }

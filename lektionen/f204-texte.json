@@ -2,7 +2,7 @@
  "id": "tx",
  "art": "texte",
  "titel": "Sachtext & Dialoge",
- "beschreibung": "Sachtext, Wortschatz im Kontext, zwei Dialoge, Redemittel und Schreibaufgabe.",
+ "beschreibung": "Sachtext, Wortschatz im Kontext, Alltagstext, drei Dialoge, Infotexte, Redemittel und Schreibaufgabe.",
  "stationen": [
   {
    "id": "t1",
@@ -12,7 +12,7 @@
     {
      "typ": "info",
      "titel": "Neue Wörter im Text",
-     "text": "<p><span class='fa'>موج نو</span> – Neue Welle · <span class='fa'>چهره</span> – Gesicht; Persönlichkeit · <span class='fa'>کانون پرورش فکری کودکان و نوجوانان</span> – Institut für die geistige Entwicklung von Kindern und Jugendlichen · <span class='fa'>دفتر</span> – Heft · <span class='fa'>سوق دادن</span> – lenken, treiben · <span class='fa'>جدیت</span> – Ernst · <span class='fa'>طبقه‌ی متوسط</span> – Mittelschicht · <span class='fa'>معمایی</span> – rätselhaft, Krimi- · <span class='fa'>قضاوت کردن</span> – urteilen</p>",
+     "text": "<p><span class='fa'>نوآورانه</span> – innovativ · <span class='fa'>فیلم صامت</span> – Stummfilm · <span class='fa'>فیلم ناطق</span> – Tonfilm · <span class='fa'>استقبال</span> – Aufnahme, Zuspruch · <span class='fa'>فیلمفارسی</span> – Filmfarsi (formelhafter Unterhaltungsfilm) · <span class='fa'>آسایشگاه جذامیان</span> – Leprakolonie · <span class='fa'>پرفروش</span> – erfolgreich (an der Kasse) · <span class='fa'>سه‌گانه</span> – Trilogie · <span class='fa'>دوربین طلایی</span> – Goldene Kamera · <span class='fa'>سوق دادن</span> – lenken · <span class='fa'>جدیت</span> – Ernst · <span class='fa'>طبقه‌ی متوسط</span> – Mittelschicht · <span class='fa'>معمایی</span> – rätselhaft, Krimi- · <span class='fa'>رویداد</span> – Ereignis</p>",
      "stil": "merke"
     },
     {
@@ -26,9 +26,49 @@
        "de": "Das iranische Kino ist in den letzten Jahrzehnten zu einem der wichtigsten Kinos der Welt geworden."
       },
       {
-       "fa": "فیلم‌های ایرانی در جشنواره‌های بزرگی مثل کن، برلین و ونیز جایزه‌های فراوانی برده‌اند.",
+       "fa": "فیلم‌های ایرانی در جشنواره‌های بزرگی مثل کن، برلین و ونیز جایزه‌های فراوانی برده‌اند و بسیاری از منتقدان آنها را از نوآورانه‌ترین آثار سینمای معاصر می‌دانند.",
        "tr": "",
-       "de": "Iranische Filme haben auf großen Festivals wie Cannes, Berlin und Venedig zahlreiche Preise gewonnen."
+       "de": "Iranische Filme haben auf großen Festivals wie Cannes, Berlin und Venedig zahlreiche Preise gewonnen, und viele Kritiker zählen sie zu den innovativsten Werken des Gegenwartskinos."
+      },
+      {
+       "fa": "با این حال، تاریخ سینما در ایران بسیار قدیمی‌تر از این موفقیت‌هاست.",
+       "tr": "",
+       "de": "Die Geschichte des Kinos in Iran ist jedoch viel älter als diese Erfolge."
+      },
+      {
+       "fa": "نخستین فیلم بلند ایرانی، «آبی و رابی»، در سال ۱۹۳۰ ساخته شد؛ فیلمی صامت و کمدی که امروز نسخه‌ای از آن در دست نیست.",
+       "tr": "",
+       "de": "Der erste iranische Spielfilm, ‹Abi und Rabi›, entstand 1930 – ein komischer Stummfilm, von dem heute keine Kopie mehr erhalten ist."
+      },
+      {
+       "fa": "چند سال بعد، «دختر لر» به‌عنوان نخستین فیلم ناطق فارسی در هند ساخته شد و در تهران با استقبال زیادی روبه‌رو شد.",
+       "tr": "",
+       "de": "Einige Jahre später wurde ‹Das Lori-Mädchen› als erster persischer Tonfilm in Indien gedreht und in Teheran begeistert aufgenommen."
+      },
+      {
+       "fa": "در دهه‌های بعد، بیشتر فیلم‌های ایرانی سرگرم‌کننده بودند: داستان‌های عاشقانه، آواز و رقص و قهرمانانی که همیشه پیروز می‌شدند.",
+       "tr": "",
+       "de": "In den folgenden Jahrzehnten waren die meisten iranischen Filme Unterhaltungsfilme: Liebesgeschichten, Gesang und Tanz und Helden, die immer siegten."
+      },
+      {
+       "fa": "منتقدان به این نوع فیلم‌ها، که اغلب از الگویی تکراری پیروی می‌کردند، «فیلمفارسی» می‌گفتند.",
+       "tr": "",
+       "de": "Kritiker nannten diese Art von Filmen, die oft einem immer gleichen Muster folgten, ‹Filmfarsi›."
+      },
+      {
+       "fa": "در کنار این جریان، چند فیلمساز به دنبال زبانی تازه برای سینما بودند.",
+       "tr": "",
+       "de": "Neben dieser Strömung suchten einige Filmemacher nach einer neuen Sprache für das Kino."
+      },
+      {
+       "fa": "فروغ فرخزاد، شاعر مشهور، در سال ۱۹۶۲ فیلم مستند کوتاه «خانه سیاه است» را در یک آسایشگاه جذامیان در نزدیکی تبریز ساخت.",
+       "tr": "",
+       "de": "Die berühmte Dichterin Forugh Farrochzad drehte 1962 in einer Leprakolonie bei Täbris den kurzen Dokumentarfilm ‹Das Haus ist schwarz›."
+      },
+      {
+       "fa": "بسیاری این فیلم شاعرانه را یکی از پیشگامان سینمای نوین ایران می‌دانند.",
+       "tr": "",
+       "de": "Viele sehen in diesem poetischen Film einen Wegbereiter des modernen iranischen Kinos."
       },
       {
        "fa": "بسیاری از منتقدان آغاز «موج نو» در سینمای ایران را فیلم «گاو» ساخته‌ی داریوش مهرجویی در سال ۱۹۶۹ می‌دانند.",
@@ -36,14 +76,24 @@
        "de": "Viele Kritiker sehen den Beginn der ‹Neuen Welle› im iranischen Kino in dem Film ‹Die Kuh› von Dariush Mehrjui aus dem Jahr 1969."
       },
       {
-       "fa": "این فیلم زندگی ساده‌ی مردم یک روستا را به شکلی واقع‌گرایانه و در عین حال شاعرانه نشان می‌داد.",
+       "fa": "این فیلم بر اساس داستانی از غلامحسین ساعدی ساخته شد و روایت مردی روستایی است که گاوش را بیش از هر چیز دیگری دوست دارد.",
        "tr": "",
-       "de": "Der Film zeigte das einfache Leben der Menschen in einem Dorf auf realistische und zugleich poetische Weise."
+       "de": "Der Film beruht auf einer Erzählung von Gholam-Hossein Saedi und erzählt von einem Dorfbewohner, der seine Kuh mehr liebt als alles andere."
       },
       {
-       "fa": "یکی از چهره‌های اصلی این سینما عباس کیارستمی بود.",
+       "fa": "«گاو» زندگی ساده‌ی مردم یک روستا را به شکلی واقع‌گرایانه و در عین حال شاعرانه نشان می‌داد.",
        "tr": "",
-       "de": "Eine der zentralen Figuren dieses Kinos war Abbas Kiarostami."
+       "de": "‹Die Kuh› zeigte das einfache Leben der Menschen in einem Dorf auf realistische und zugleich poetische Weise."
+      },
+      {
+       "fa": "در همان سال، «قیصر» ساخته‌ی مسعود کیمیایی هم اکران شد و به یکی از پرفروش‌ترین فیلم‌های زمان خود تبدیل شد.",
+       "tr": "",
+       "de": "Im selben Jahr kam auch ‹Gheysar› von Masoud Kimiai in die Kinos und wurde zu einem der erfolgreichsten Filme seiner Zeit."
+      },
+      {
+       "fa": "یکی از چهره‌های اصلی سینمای نوین ایران عباس کیارستمی بود.",
+       "tr": "",
+       "de": "Eine der zentralen Figuren des modernen iranischen Kinos war Abbas Kiarostami."
       },
       {
        "fa": "کیارستمی کار خود را در کانون پرورش فکری کودکان و نوجوانان آغاز کرد و فیلم‌های کوتاه و آموزشی برای کودکان ساخت.",
@@ -51,9 +101,24 @@
        "de": "Kiarostami begann seine Arbeit beim Institut für die geistige Entwicklung von Kindern und Jugendlichen und drehte Kurz- und Lehrfilme für Kinder."
       },
       {
-       "fa": "در فیلم «خانه‌ی دوست کجاست؟» (۱۹۸۷)، پسری روستایی دفتر هم‌کلاسی‌اش را اشتباهی برداشته، برای پس دادن آن به روستای دیگری می‌رود.",
+       "fa": "نخستین فیلم کوتاه او، «نان و کوچه» (۱۹۷۰)، داستان پسری است که با یک تکه نان از کوچه‌ای می‌گذرد و از یک سگ می‌ترسد.",
+       "tr": "",
+       "de": "Sein erster Kurzfilm, ‹Das Brot und die Gasse› (1970), erzählt von einem Jungen, der mit einem Stück Brot durch eine Gasse geht und sich vor einem Hund fürchtet."
+      },
+      {
+       "fa": "در فیلم «خانه‌ی دوست کجاست؟» (۱۹۸۷)، پسری روستایی دفتر هم‌کلاسی‌اش را اشتباهی برداشته و برای پس دادن آن به روستای دیگری می‌رود.",
        "tr": "",
        "de": "In ‹Wo ist das Haus meines Freundes?› (1987) hat ein Dorfjunge versehentlich das Heft seines Mitschülers eingesteckt und macht sich auf den Weg ins Nachbardorf, um es zurückzugeben."
+      },
+      {
+       "fa": "این فیلم و دو فیلم بعدی او، «زندگی و دیگر هیچ» و «زیر درختان زیتون»، که در همان منطقه در شمال ایران فیلمبرداری شدند، به «سه‌گانه‌ی کوکر» مشهورند.",
+       "tr": "",
+       "de": "Dieser Film und seine beiden folgenden, ‹Und das Leben geht weiter› und ‹Quer durch den Olivenhain›, die in derselben Gegend im Norden Irans gedreht wurden, sind als ‹Koker-Trilogie› bekannt."
+      },
+      {
+       "fa": "«کلوزآپ، نمای نزدیک» (۱۹۹۰)، که بر اساس ماجرایی واقعی ساخته شد و در آن آدم‌های واقعی نقش خودشان را بازی می‌کنند، یکی دیگر از مهم‌ترین آثار اوست.",
+       "tr": "",
+       "de": "‹Close-Up› (1990), der auf einer wahren Begebenheit beruht und in dem die realen Beteiligten sich selbst spielen, ist ein weiteres seiner wichtigsten Werke."
       },
       {
        "fa": "کیارستمی در سال ۱۹۹۷ برای فیلم «طعم گیلاس» نخل طلا را از جشنواره‌ی کن دریافت کرد.",
@@ -71,6 +136,11 @@
        "de": "Diese Merkmale erinnerten die Kritiker an den italienischen Neorealismus nach dem Zweiten Weltkrieg."
       },
       {
+       "fa": "کیارستمی در سال ۲۰۱۶ در پاریس درگذشت، اما تأثیر او بر فیلمسازان نسل‌های بعد در سراسر جهان همچنان دیده می‌شود.",
+       "tr": "",
+       "de": "Kiarostami starb 2016 in Paris, doch sein Einfluss auf Filmemacher späterer Generationen ist weltweit bis heute sichtbar."
+      },
+      {
        "fa": "یکی از ویژگی‌های سینمای ایران این است که قهرمان بسیاری از فیلم‌ها کودکان هستند.",
        "tr": "",
        "de": "Ein Merkmal des iranischen Kinos ist, dass Kinder die Hauptfiguren vieler Filme sind."
@@ -79,6 +149,11 @@
        "fa": "در «بادکنک سفید» (۱۹۹۵) ساخته‌ی جعفر پناهی، دختر کوچکی پول خرید ماهی قرمز را گم می‌کند.",
        "tr": "",
        "de": "In ‹Der weiße Ballon› (1995) von Jafar Panahi verliert ein kleines Mädchen das Geld für einen Goldfisch."
+      },
+      {
+       "fa": "فیلمنامه‌ی این فیلم را کیارستمی نوشته بود و فیلم در جشنواره‌ی کن جایزه‌ی دوربین طلایی را برای بهترین فیلم اول برد.",
+       "tr": "",
+       "de": "Das Drehbuch hatte Kiarostami geschrieben, und der Film gewann in Cannes die Goldene Kamera für den besten Erstlingsfilm."
       },
       {
        "fa": "فیلم «بچه‌های آسمان» (۱۹۹۷) از مجید مجیدی داستان خواهر و برادری است که فقط یک جفت کفش دارند.",
@@ -101,6 +176,16 @@
        "de": "Doch die Kinder in diesen Filmen sind nicht nur Symbole; sie stellen sich mit Ernst und Mut den Problemen der Erwachsenen."
       },
       {
+       "fa": "زنان فیلمساز نیز در این سال‌ها نقش مهمی در سینمای ایران پیدا کردند.",
+       "tr": "",
+       "de": "Auch Filmemacherinnen spielten in diesen Jahren eine wichtige Rolle im iranischen Kino."
+      },
+      {
+       "fa": "رخشان بنی‌اعتماد با فیلم‌هایی درباره‌ی مشکلات اجتماعی شناخته شد و سمیرا مخملباف تنها هجده سال داشت که فیلمش «سیب» در جشنواره‌ی کن به نمایش درآمد.",
+       "tr": "",
+       "de": "Rakhshan Bani-Etemad wurde mit Filmen über soziale Probleme bekannt, und Samira Makhmalbaf war erst achtzehn, als ihr Film ‹Der Apfel› in Cannes gezeigt wurde."
+      },
+      {
        "fa": "نسل جدیدتر فیلمسازان بیشتر به زندگی شهری و مشکلات طبقه‌ی متوسط پرداخته است.",
        "tr": "",
        "de": "Die jüngere Generation von Filmemachern hat sich eher dem Stadtleben und den Problemen der Mittelschicht gewidmet."
@@ -109,6 +194,11 @@
        "fa": "معروف‌ترین نماینده‌ی این نسل اصغر فرهادی است.",
        "tr": "",
        "de": "Der bekannteste Vertreter dieser Generation ist Asghar Farhadi."
+      },
+      {
+       "fa": "فرهادی پیش از موفقیت‌های بزرگش با «درباره‌ی الی» (۲۰۰۹) جایزه‌ی بهترین کارگردانی جشنواره‌ی برلین را گرفته بود.",
+       "tr": "",
+       "de": "Schon vor seinen großen Erfolgen hatte Farhadi mit ‹Alles über Elly› (2009) auf der Berlinale den Preis für die beste Regie erhalten."
       },
       {
        "fa": "فیلم «جدایی نادر از سیمین» در سال ۲۰۱۱ خرس طلایی برلین را برد و در سال ۲۰۱۲ اسکار بهترین فیلم خارجی‌زبان را دریافت کرد.",
@@ -121,6 +211,11 @@
        "de": "2017 gewann Farhadi mit ‹The Salesman› zum zweiten Mal den Oscar."
       },
       {
+       "fa": "او برای همین فیلم جایزه‌ی بهترین فیلمنامه‌ی جشنواره‌ی کن را هم گرفته بود و شهاب حسینی برای بازی در آن جایزه‌ی بهترین بازیگر مرد را برد.",
+       "tr": "",
+       "de": "Für denselben Film hatte er in Cannes auch den Preis für das beste Drehbuch erhalten, und Shahab Hosseini wurde für seine Rolle darin als bester Darsteller ausgezeichnet."
+      },
+      {
        "fa": "فیلم‌های فرهادی مثل یک داستان معمایی پیش می‌روند، اما در آنها هیچ شخصیتی کاملا خوب یا کاملا بد نیست.",
        "tr": "",
        "de": "Farhadis Filme entwickeln sich wie ein Krimi, aber keine Figur darin ist ganz gut oder ganz schlecht."
@@ -129,6 +224,21 @@
        "fa": "تماشاگر تا پایان فیلم نمی‌داند حق با کیست و باید خودش قضاوت کند.",
        "tr": "",
        "de": "Der Zuschauer weiß bis zum Ende des Films nicht, wer recht hat, und muss selbst urteilen."
+      },
+      {
+       "fa": "در داخل ایران، جشنواره‌ی فیلم فجر هر سال در بهمن‌ماه برگزار می‌شود و مهم‌ترین رویداد سینمایی کشور است.",
+       "tr": "",
+       "de": "In Iran selbst findet jedes Jahr im Monat Bahman das Fadschr-Filmfestival statt, das wichtigste Filmereignis des Landes."
+      },
+      {
+       "fa": "در این جشنواره به برندگان «سیمرغ بلورین» اهدا می‌شود و بسیاری از فیلم‌های تازه نخستین بار در آن به نمایش درمی‌آیند.",
+       "tr": "",
+       "de": "Auf diesem Festival erhalten die Preisträger den ‹Kristall-Simorgh›, und viele neue Filme werden dort zum ersten Mal gezeigt."
+      },
+      {
+       "fa": "در سینماهای کشور بیشتر فیلم‌های ایرانی نمایش داده می‌شود و کمدی‌های خانوادگی معمولا بیشترین فروش را در گیشه دارند.",
+       "tr": "",
+       "de": "In den Kinos des Landes laufen überwiegend iranische Filme, und Familienkomödien erzielen an der Kinokasse meist die höchsten Einnahmen."
       },
       {
        "fa": "امروز فیلمسازان ایرانی، چه در داخل کشور و چه در خارج، همچنان آثاری می‌سازند که در سراسر جهان دیده می‌شوند.",
@@ -150,6 +260,27 @@
        "richtig": 0,
        "fa": "به نظر بسیاری از منتقدان، موج نو با فیلم «گاو» آغاز شد.",
        "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "«دختر لر» نخستین فیلم ناطق فارسی بود.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "«خانه سیاه است» را مسعود کیمیایی ساخت.",
+       "fest": true,
+       "erkl": "Den Film drehte die Dichterin <b>Forugh Farrochzad</b>."
       },
       {
        "frage": "Richtig oder falsch?",
@@ -211,6 +342,15 @@
      "titel": "Fragen zum Text",
      "fragen": [
       {
+       "frage": "Was bezeichneten Kritiker als ‹Filmfarsi›?",
+       "optionen": [
+        "formelhafte Unterhaltungsfilme mit Gesang, Tanz und Liebesgeschichten",
+        "Dokumentarfilme über das Dorfleben",
+        "Filme der Neuen Welle"
+       ],
+       "richtig": 0
+      },
+      {
        "frage": "Woran erinnerten Kiarostamis Filme die Kritiker?",
        "optionen": [
         "an den italienischen Neorealismus",
@@ -247,11 +387,11 @@
        "richtig": 0
       },
       {
-       "frage": "Wie oft hat Farhadi den Oscar gewonnen?",
+       "frage": "Welche Filme sind an iranischen Kinokassen meist am erfolgreichsten?",
        "optionen": [
-        "zweimal",
-        "einmal",
-        "dreimal"
+        "Familienkomödien",
+        "Dokumentarfilme",
+        "ausländische Actionfilme"
        ],
        "richtig": 0
       }
@@ -263,34 +403,34 @@
      "frage": "Bring die Sätze in die Reihenfolge des Textes.",
      "items": [
       {
-       "fa": "فیلم‌های ایرانی در جشنواره‌های بزرگی مثل کن، برلین و ونیز جایزه‌های فراوانی برده‌اند.",
+       "fa": "فیلم‌های ایرانی در جشنواره‌های بزرگی مثل کن، برلین و ونیز جایزه‌های فراوانی برده‌اند و بسیاری از منتقدان آنها را از نوآورانه‌ترین آثار سینمای معاصر می‌دانند.",
        "tr": "",
-       "de": "Iranische Filme haben auf großen Festivals wie Cannes, Berlin und Venedig zahlreiche Preise gewonnen."
+       "de": "Iranische Filme haben auf großen Festivals wie Cannes, Berlin und Venedig zahlreiche Preise gewonnen, und viele Kritiker zählen sie zu den innovativsten Werken des Gegenwartskinos."
       },
       {
-       "fa": "بسیاری از منتقدان آغاز «موج نو» در سینمای ایران را فیلم «گاو» ساخته‌ی داریوش مهرجویی در سال ۱۹۶۹ می‌دانند.",
+       "fa": "با این حال، تاریخ سینما در ایران بسیار قدیمی‌تر از این موفقیت‌هاست.",
        "tr": "",
-       "de": "Viele Kritiker sehen den Beginn der ‹Neuen Welle› im iranischen Kino in dem Film ‹Die Kuh› von Dariush Mehrjui aus dem Jahr 1969."
+       "de": "Die Geschichte des Kinos in Iran ist jedoch viel älter als diese Erfolge."
       },
       {
-       "fa": "این فیلم زندگی ساده‌ی مردم یک روستا را به شکلی واقع‌گرایانه و در عین حال شاعرانه نشان می‌داد.",
+       "fa": "نخستین فیلم بلند ایرانی، «آبی و رابی»، در سال ۱۹۳۰ ساخته شد؛ فیلمی صامت و کمدی که امروز نسخه‌ای از آن در دست نیست.",
        "tr": "",
-       "de": "Der Film zeigte das einfache Leben der Menschen in einem Dorf auf realistische und zugleich poetische Weise."
+       "de": "Der erste iranische Spielfilm, ‹Abi und Rabi›, entstand 1930 – ein komischer Stummfilm, von dem heute keine Kopie mehr erhalten ist."
       },
       {
-       "fa": "یکی از چهره‌های اصلی این سینما عباس کیارستمی بود.",
+       "fa": "چند سال بعد، «دختر لر» به‌عنوان نخستین فیلم ناطق فارسی در هند ساخته شد و در تهران با استقبال زیادی روبه‌رو شد.",
        "tr": "",
-       "de": "Eine der zentralen Figuren dieses Kinos war Abbas Kiarostami."
+       "de": "Einige Jahre später wurde ‹Das Lori-Mädchen› als erster persischer Tonfilm in Indien gedreht und in Teheran begeistert aufgenommen."
       },
       {
-       "fa": "کیارستمی کار خود را در کانون پرورش فکری کودکان و نوجوانان آغاز کرد و فیلم‌های کوتاه و آموزشی برای کودکان ساخت.",
+       "fa": "در دهه‌های بعد، بیشتر فیلم‌های ایرانی سرگرم‌کننده بودند: داستان‌های عاشقانه، آواز و رقص و قهرمانانی که همیشه پیروز می‌شدند.",
        "tr": "",
-       "de": "Kiarostami begann seine Arbeit beim Institut für die geistige Entwicklung von Kindern und Jugendlichen und drehte Kurz- und Lehrfilme für Kinder."
+       "de": "In den folgenden Jahrzehnten waren die meisten iranischen Filme Unterhaltungsfilme: Liebesgeschichten, Gesang und Tanz und Helden, die immer siegten."
       },
       {
-       "fa": "در فیلم «خانه‌ی دوست کجاست؟» (۱۹۸۷)، پسری روستایی دفتر هم‌کلاسی‌اش را اشتباهی برداشته، برای پس دادن آن به روستای دیگری می‌رود.",
+       "fa": "منتقدان به این نوع فیلم‌ها، که اغلب از الگویی تکراری پیروی می‌کردند، «فیلمفارسی» می‌گفتند.",
        "tr": "",
-       "de": "In ‹Wo ist das Haus meines Freundes?› (1987) hat ein Dorfjunge versehentlich das Heft seines Mitschülers eingesteckt und macht sich auf den Weg ins Nachbardorf, um es zurückzugeben."
+       "de": "Kritiker nannten diese Art von Filmen, die oft einem immer gleichen Muster folgten, ‹Filmfarsi›."
       }
      ]
     }
@@ -306,23 +446,113 @@
      "titel": "Welches Wort fehlt im Text?",
      "fragen": [
       {
-       "frage": "<span class='fa'>این فیلم زندگی ساده‌ی مردم یک روستا را به شکلی ___ و در عین حال شاعرانه نشان می‌داد.</span><br><span class='mini'>Der Film zeigte das einfache Leben der Menschen in einem Dorf auf realistische und zugleich poetische Weise.</span>",
+       "frage": "<span class='fa'>نخستین ___ ایرانی، «آبی و رابی»، در سال ۱۹۳۰ ساخته شد؛ فیلمی صامت و کمدی که امروز نسخه‌ای از آن در دست نیست.</span><br><span class='mini'>Der erste iranische Spielfilm, ‹Abi und Rabi›, entstand 1930 – ein komischer Stummfilm, von dem heute keine Kopie mehr erhalten ist.</span>",
        "optionen": [
-        "واقع‌گرایانه",
-        "جشنواره",
-        "تدوین"
+        "فیلم بلند",
+        "نامزد",
+        "تیتراژ"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
-       "erkl": "<span class='fa'>این فیلم زندگی ساده‌ی مردم یک روستا را به شکلی واقع‌گرایانه و در عین حال شاعرانه نشان می‌داد.</span>"
+       "erkl": "<span class='fa'>نخستین فیلم بلند ایرانی، «آبی و رابی»، در سال ۱۹۳۰ ساخته شد؛ فیلمی صامت و کمدی که امروز نسخه‌ای از آن در دست نیست.</span>"
+      },
+      {
+       "frage": "<span class='fa'>فروغ فرخزاد، شاعر مشهور، در سال ۱۹۶۲ فیلم ___ کوتاه «خانه سیاه است» را در یک آسایشگاه جذامیان در نزدیکی تبریز ساخت.</span><br><span class='mini'>Die berühmte Dichterin Forugh Farrochzad drehte 1962 in einer Leprakolonie bei Täbris den kurzen Dokumentarfilm ‹Das Haus ist schwarz›.</span>",
+       "optionen": [
+        "مستند",
+        "تهیه‌کننده",
+        "زیرنویس"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>فروغ فرخزاد، شاعر مشهور، در سال ۱۹۶۲ فیلم مستند کوتاه «خانه سیاه است» را در یک آسایشگاه جذامیان در نزدیکی تبریز ساخت.</span>"
+      },
+      {
+       "frage": "<span class='fa'>بسیاری این فیلم ___ را یکی از پیشگامان سینمای نوین ایران می‌دانند.</span><br><span class='mini'>Viele sehen in diesem poetischen Film einen Wegbereiter des modernen iranischen Kinos.</span>",
+       "optionen": [
+        "شاعرانه",
+        "فیلمنامه",
+        "نماد"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>بسیاری این فیلم شاعرانه را یکی از پیشگامان سینمای نوین ایران می‌دانند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>این فیلم بر اساس داستانی از غلامحسین ساعدی ساخته شد و ___ مردی روستایی است که گاوش را بیش از هر چیز دیگری دوست دارد.</span><br><span class='mini'>Der Film beruht auf einer Erzählung von Gholam-Hossein Saedi und erzählt von einem Dorfbewohner, der seine Kuh mehr liebt als alles andere.</span>",
+       "optionen": [
+        "روایت",
+        "مستند",
+        "زیرنویس"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>این فیلم بر اساس داستانی از غلامحسین ساعدی ساخته شد و روایت مردی روستایی است که گاوش را بیش از هر چیز دیگری دوست دارد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>«گاو» زندگی ساده‌ی مردم یک روستا را به شکلی ___ و در عین حال شاعرانه نشان می‌داد.</span><br><span class='mini'>‹Die Kuh› zeigte das einfache Leben der Menschen in einem Dorf auf realistische und zugleich poetische Weise.</span>",
+       "optionen": [
+        "واقع‌گرایانه",
+        "جشنواره",
+        "تماشاگر"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>«گاو» زندگی ساده‌ی مردم یک روستا را به شکلی واقع‌گرایانه و در عین حال شاعرانه نشان می‌داد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>در همان سال، «قیصر» ساخته‌ی مسعود کیمیایی هم ___ شد و به یکی از پرفروش‌ترین فیلم‌های زمان خود تبدیل شد.</span><br><span class='mini'>Im selben Jahr kam auch ‹Gheysar› von Masoud Kimiai in die Kinos und wurde zu einem der erfolgreichsten Filme seiner Zeit.</span>",
+       "optionen": [
+        "اکران",
+        "آنونس",
+        "نقد"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>در همان سال، «قیصر» ساخته‌ی مسعود کیمیایی هم اکران شد و به یکی از پرفروش‌ترین فیلم‌های زمان خود تبدیل شد.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort fehlt im Text?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>نخستین ___ او، «نان و کوچه» (۱۹۷۰)، داستان پسری است که با یک تکه نان از کوچه‌ای می‌گذرد و از یک سگ می‌ترسد.</span><br><span class='mini'>Sein erster Kurzfilm, ‹Das Brot und die Gasse› (1970), erzählt von einem Jungen, der mit einem Stück Brot durch eine Gasse geht und sich vor einem Hund fürchtet.</span>",
+       "optionen": [
+        "فیلم کوتاه",
+        "پایان‌بندی",
+        "زیرنویس"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>نخستین فیلم کوتاه او، «نان و کوچه» (۱۹۷۰)، داستان پسری است که با یک تکه نان از کوچه‌ای می‌گذرد و از یک سگ می‌ترسد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>«کلوزآپ، ___» (۱۹۹۰)، که بر اساس ماجرایی واقعی ساخته شد و در آن آدم‌های واقعی نقش خودشان را بازی می‌کنند، یکی دیگر از مهم‌ترین آثار اوست.</span><br><span class='mini'>‹Close-Up› (1990), der auf einer wahren Begebenheit beruht und in dem die realen Beteiligten sich selbst spielen, ist ein weiteres seiner wichtigsten Werke.</span>",
+       "optionen": [
+        "نمای نزدیک",
+        "ژانر",
+        "شاعرانه"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>«کلوزآپ، نمای نزدیک» (۱۹۹۰)، که بر اساس ماجرایی واقعی ساخته شد و در آن آدم‌های واقعی نقش خودشان را بازی می‌کنند، یکی دیگر از مهم‌ترین آثار اوست.</span>"
       },
       {
        "frage": "<span class='fa'>کیارستمی در سال ۱۹۹۷ برای فیلم «طعم گیلاس» ___ را از جشنواره‌ی کن دریافت کرد.</span><br><span class='mini'>1997 erhielt Kiarostami für ‹Der Geschmack der Kirsche› die Goldene Palme des Festivals von Cannes.</span>",
        "optionen": [
         "نخل طلا",
-        "مضمون",
-        "جایزه"
+        "تهیه‌کننده",
+        "واقع‌گرایانه"
        ],
        "richtig": 0,
        "optFa": true,
@@ -333,8 +563,8 @@
        "frage": "<span class='fa'>فیلم‌های او اغلب داستانی ساده دارند، با بازیگران غیرحرفه‌ای در مکان‌های واقعی فیلمبرداری شده‌اند و ___ دارند.</span><br><span class='mini'>Seine Filme haben oft eine einfache Handlung, wurden mit Laiendarstellern an echten Schauplätzen gedreht und haben ein offenes Ende.</span>",
        "optionen": [
         "پایان باز",
-        "واقع‌گرایانه",
-        "نامزد"
+        "دوبله",
+        "بازیگر"
        ],
        "richtig": 0,
        "optFa": true,
@@ -345,8 +575,8 @@
        "frage": "<span class='fa'>این ویژگی‌ها منتقدان را به یاد ___ ایتالیایی پس از جنگ جهانی دوم می‌انداخت.</span><br><span class='mini'>Diese Merkmale erinnerten die Kritiker an den italienischen Neorealismus nach dem Zweiten Weltkrieg.</span>",
        "optionen": [
         "نئورئالیسم",
-        "تهیه‌کننده",
-        "جایزه"
+        "دوبله",
+        "تیتراژ"
        ],
        "richtig": 0,
        "optFa": true,
@@ -357,8 +587,8 @@
        "frage": "<span class='fa'>یکی از ویژگی‌های سینمای ایران این است که ___ بسیاری از فیلم‌ها کودکان هستند.</span><br><span class='mini'>Ein Merkmal des iranischen Kinos ist, dass Kinder die Hauptfiguren vieler Filme sind.</span>",
        "optionen": [
         "قهرمان",
-        "واقع‌گرایانه",
-        "پایان‌بندی"
+        "مستند",
+        "دوربین"
        ],
        "richtig": 0,
        "optFa": true,
@@ -372,11 +602,23 @@
      "titel": "Welches Wort fehlt im Text?",
      "fragen": [
       {
-       "frage": "<span class='fa'>این فیلم نخستین فیلم ایرانی بود که ___ جایزه‌ی اسکار شد.</span><br><span class='mini'>Es war der erste iranische Film, der für einen Oscar nominiert wurde.</span>",
+       "frage": "<span class='fa'>فیلمنامه‌ی این فیلم را کیارستمی نوشته بود و فیلم در جشنواره‌ی کن جایزه‌ی ___ طلایی را برای بهترین فیلم اول برد.</span><br><span class='mini'>Das Drehbuch hatte Kiarostami geschrieben, und der Film gewann in Cannes die Goldene Kamera für den besten Erstlingsfilm.</span>",
        "optionen": [
-        "نامزد",
-        "شخصیت",
-        "تماشاگر"
+        "دوربین",
+        "شاعرانه",
+        "صحنه"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>فیلمنامه‌ی این فیلم را کیارستمی نوشته بود و فیلم در جشنواره‌ی کن جایزه‌ی دوربین طلایی را برای بهترین فیلم اول برد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>این فیلم نخستین فیلم ایرانی بود که نامزد جایزه‌ی ___ شد.</span><br><span class='mini'>Es war der erste iranische Film, der für einen Oscar nominiert wurde.</span>",
+       "optionen": [
+        "اسکار",
+        "قهرمان",
+        "شخصیت"
        ],
        "richtig": 0,
        "optFa": true,
@@ -387,8 +629,8 @@
        "frage": "<span class='fa'>اما کودکان در این فیلم‌ها فقط ___ نیستند؛ آنها با جدیت و شجاعت با مشکلات بزرگ‌سالان روبه‌رو می‌شوند.</span><br><span class='mini'>Doch die Kinder in diesen Filmen sind nicht nur Symbole; sie stellen sich mit Ernst und Mut den Problemen der Erwachsenen.</span>",
        "optionen": [
         "نماد",
-        "قهرمان",
-        "پایان‌بندی"
+        "کارگردان",
+        "روایت"
        ],
        "richtig": 0,
        "optFa": true,
@@ -399,8 +641,8 @@
        "frage": "<span class='fa'>فیلم «جدایی نادر از سیمین» در سال ۲۰۱۱ ___ برلین را برد و در سال ۲۰۱۲ اسکار بهترین فیلم خارجی‌زبان را دریافت کرد.</span><br><span class='mini'>‹Nader und Simin – Eine Trennung› gewann 2011 den Goldenen Bären in Berlin und erhielt 2012 den Oscar als bester fremdsprachiger Film.</span>",
        "optionen": [
         "خرس طلایی",
-        "دوربین",
-        "پایان‌بندی"
+        "نئورئالیسم",
+        "تدوین"
        ],
        "richtig": 0,
        "optFa": true,
@@ -411,8 +653,8 @@
        "frage": "<span class='fa'>فرهادی در سال ۲۰۱۷ با فیلم «فروشنده» برای دومین بار برنده‌ی ___ شد.</span><br><span class='mini'>2017 gewann Farhadi mit ‹The Salesman› zum zweiten Mal den Oscar.</span>",
        "optionen": [
         "اسکار",
-        "صحنه",
-        "پایان‌بندی"
+        "ژانر",
+        "تدوین"
        ],
        "richtig": 0,
        "optFa": true,
@@ -420,16 +662,16 @@
        "erkl": "<span class='fa'>فرهادی در سال ۲۰۱۷ با فیلم «فروشنده» برای دومین بار برنده‌ی اسکار شد.</span>"
       },
       {
-       "frage": "<span class='fa'>___ تا پایان فیلم نمی‌داند حق با کیست و باید خودش قضاوت کند.</span><br><span class='mini'>Der Zuschauer weiß bis zum Ende des Films nicht, wer recht hat, und muss selbst urteilen.</span>",
+       "frage": "<span class='fa'>او برای همین فیلم جایزه‌ی بهترین فیلمنامه‌ی جشنواره‌ی کن را هم گرفته بود و شهاب حسینی برای بازی در آن جایزه‌ی بهترین ___ مرد را برد.</span><br><span class='mini'>Für denselben Film hatte er in Cannes auch den Preis für das beste Drehbuch erhalten, und Shahab Hosseini wurde für seine Rolle darin als bester Darsteller ausgezeichnet.</span>",
        "optionen": [
-        "تماشاگر",
-        "قهرمان",
-        "پایان‌بندی"
+        "بازیگر",
+        "بلیت",
+        "دوربین"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
-       "erkl": "<span class='fa'>تماشاگر تا پایان فیلم نمی‌داند حق با کیست و باید خودش قضاوت کند.</span>"
+       "erkl": "<span class='fa'>او برای همین فیلم جایزه‌ی بهترین فیلمنامه‌ی جشنواره‌ی کن را هم گرفته بود و شهاب حسینی برای بازی در آن جایزه‌ی بهترین بازیگر مرد را برد.</span>"
       }
      ]
     },
@@ -439,9 +681,9 @@
      "frage": "Bring die Zusammenfassung des Textes in die richtige Reihenfolge.",
      "items": [
       {
-       "fa": "سینمای ایران امروز در جشنواره‌های جهانی بسیار موفق است.",
+       "fa": "سینمای ایران با فیلم‌های صامت و فیلم‌های سرگرم‌کننده آغاز شد.",
        "tr": "",
-       "de": "Das iranische Kino ist heute auf internationalen Festivals sehr erfolgreich."
+       "de": "Das iranische Kino begann mit Stummfilmen und Unterhaltungsfilmen."
       },
       {
        "fa": "موج نو با فیلم «گاو» آغاز شد و کیارستمی یکی از چهره‌های اصلی آن بود.",
@@ -454,14 +696,311 @@
        "de": "In vielen Filmen sind Kinder die Hauptfiguren."
       },
       {
+       "fa": "زنان فیلمساز هم نقش مهمی در این سینما پیدا کردند.",
+       "tr": "",
+       "de": "Auch Filmemacherinnen erhielten eine wichtige Rolle in diesem Kino."
+      },
+      {
        "fa": "نسل جدید، با کارگردانانی مثل فرهادی، بیشتر به زندگی شهری می‌پردازد.",
        "tr": "",
        "de": "Die neue Generation mit Regisseuren wie Farhadi widmet sich eher dem Stadtleben."
       },
       {
-       "fa": "فرهادی دو بار برنده‌ی اسکار شده است.",
+       "fa": "جشنواره‌ی فجر مهم‌ترین رویداد سینمایی داخل ایران است.",
        "tr": "",
-       "de": "Farhadi hat zweimal den Oscar gewonnen."
+       "de": "Das Fadschr-Festival ist das wichtigste Filmereignis in Iran."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t3",
+   "titel": "Alltag: Ein Kinoabend in Teheran",
+   "vorschau": "Ein Kinoabend in Teheran",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>قول دادن</span> – versprechen · <span class='fa'>اکران عمومی</span> – regulärer Kinostart · <span class='fa'>اپلیکیشن</span> – App · <span class='fa'>ردیف</span> – Reihe · <span class='fa'>صف</span> – Schlange · <span class='fa'>لهجه‌ی محلی</span> – Dialekt · <span class='fa'>با هیجان</span> – lebhaft, aufgeregt · <span class='fa'>در ذهن ماندن</span> – im Gedächtnis bleiben · <span class='fa'>تاکسی اینترنتی</span> – App-Taxi</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Alltag: Ein Kinoabend in Teheran",
+     "text": "Alltagstext – Tippe eine Zeile an, wenn du die Übersetzung brauchst.",
+     "zeilen": [
+      {
+       "fa": "پنجشنبه‌شب‌ها سینماهای تهران معمولا شلوغ‌تر از روزهای دیگر هفته هستند، چون جمعه برای بیشتر مردم روز تعطیل است.",
+       "tr": "",
+       "de": "Donnerstagabends sind die Teheraner Kinos meist voller als an den anderen Wochentagen, weil der Freitag für die meisten Menschen frei ist."
+      },
+      {
+       "fa": "لیلا از چند روز پیش به یوناس قول داده بود که او را به دیدن یک فیلم تازه‌ی ایرانی ببرد.",
+       "tr": "",
+       "de": "Leyla hatte Jonas schon vor einigen Tagen versprochen, mit ihm einen neuen iranischen Film anzusehen."
+      },
+      {
+       "fa": "فیلم، درامی اجتماعی درباره‌ی خانواده‌ای در جنوب تهران بود که پس از نمایش در جشنواره‌ی فجر، تازه به اکران عمومی درآمده بود.",
+       "tr": "",
+       "de": "Der Film war ein Sozialdrama über eine Familie im Süden Teherans, das nach seiner Vorführung beim Fadschr-Festival gerade regulär angelaufen war."
+      },
+      {
+       "fa": "لیلا بلیت‌ها را از طریق یک اپلیکیشن فروش بلیت روی گوشی‌اش خرید.",
+       "tr": "",
+       "de": "Leyla kaufte die Karten über eine Ticket-App auf ihrem Handy."
+      },
+      {
+       "fa": "در اپلیکیشن می‌شد سینما، سانس و حتی جای صندلی را انتخاب کرد؛ لیلا دو صندلی در ردیف‌های وسط سالن برداشت.",
+       "tr": "",
+       "de": "In der App konnte man Kino, Vorstellung und sogar den Sitzplatz wählen; Leyla nahm zwei Plätze in den mittleren Reihen des Saals."
+      },
+      {
+       "fa": "پرداخت با کارت بانکی انجام شد و چند ثانیه بعد یک کد بلیت روی گوشی‌اش آمد.",
+       "tr": "",
+       "de": "Bezahlt wurde mit der Bankkarte, und wenige Sekunden später erschien ein Ticketcode auf ihrem Handy."
+      },
+      {
+       "fa": "سانس ساعت هشت‌ونیم بود، اما آنها تصمیم گرفتند زودتر راه بیفتند تا در ترافیک عصر نمانند.",
+       "tr": "",
+       "de": "Die Vorstellung begann um halb neun, aber sie beschlossen, früher loszufahren, um nicht im Abendverkehr stecken zu bleiben."
+      },
+      {
+       "fa": "سینما در یک پردیس سینمایی بزرگ در مرکز شهر بود که چند سالن، یک کتاب‌فروشی و چند کافه داشت.",
+       "tr": "",
+       "de": "Das Kino lag in einem großen Multiplex in der Innenstadt mit mehreren Sälen, einer Buchhandlung und einigen Cafés."
+      },
+      {
+       "fa": "یوناس تا آن روز فقط در سینماهای کوچک برلین فیلم ایرانی دیده بود و از دیدن این پردیس بزرگ و شلوغ تعجب کرد.",
+       "tr": "",
+       "de": "Jonas hatte iranische Filme bis dahin nur in kleinen Berliner Kinos gesehen und war überrascht von diesem großen, belebten Multiplex."
+      },
+      {
+       "fa": "جلوی گیشه صف کوتاهی بود، اما آنها با نشان دادن کد بلیت مستقیم به طرف سالن رفتند.",
+       "tr": "",
+       "de": "Vor der Kasse gab es eine kurze Schlange, aber sie zeigten ihren Ticketcode und gingen direkt zum Saal."
+      },
+      {
+       "fa": "یوناس دید که بیشتر تماشاگران جوان هستند و خیلی‌ها با دوستان یا خانواده آمده‌اند.",
+       "tr": "",
+       "de": "Jonas sah, dass die meisten Zuschauer jung waren und viele mit Freunden oder der Familie gekommen waren."
+      },
+      {
+       "fa": "پیش از شروع فیلم، چند آنونس از فیلم‌های ایرانی دیگر روی پرده‌ی سینما نمایش داده شد.",
+       "tr": "",
+       "de": "Vor dem Film liefen auf der Leinwand einige Trailer anderer iranischer Filme."
+      },
+      {
+       "fa": "فیلم زیرنویس نداشت؛ لیلا قبلا توضیح داده بود که فیلم‌های ایرانی در سینماهای کشور معمولا بدون زیرنویس اکران می‌شوند.",
+       "tr": "",
+       "de": "Der Film hatte keine Untertitel; Leyla hatte schon erklärt, dass iranische Filme in den Kinos des Landes meist ohne Untertitel laufen."
+      },
+      {
+       "fa": "یوناس نگران بود که گفتگوهای سریع را نفهمد، اما بازی بازیگران آن‌قدر طبیعی بود که بیشتر داستان را دنبال کرد.",
+       "tr": "",
+       "de": "Jonas hatte befürchtet, die schnellen Dialoge nicht zu verstehen, aber das Spiel der Darsteller war so natürlich, dass er dem Großteil der Handlung folgen konnte."
+      },
+      {
+       "fa": "چند جا که شخصیت‌ها با لهجه‌ی محلی حرف می‌زدند، لیلا آهسته برایش توضیح داد.",
+       "tr": "",
+       "de": "An einigen Stellen, an denen die Figuren Dialekt sprachen, erklärte Leyla ihm leise, worum es ging."
+      },
+      {
+       "fa": "فیلم پایان باز داشت و وقتی تیتراژ پایانی شروع شد، چند ثانیه هیچ‌کس از جایش بلند نشد.",
+       "tr": "",
+       "de": "Der Film hatte ein offenes Ende, und als der Abspann begann, stand ein paar Sekunden lang niemand auf."
+      },
+      {
+       "fa": "بعد از فیلم، آنها به کافه‌ی همان پردیس رفتند و دو چای و یک کیک سفارش دادند.",
+       "tr": "",
+       "de": "Nach dem Film gingen sie ins Café desselben Multiplex und bestellten zwei Tee und einen Kuchen."
+      },
+      {
+       "fa": "پشت میز کناری، چند دانشجو با هیجان درباره‌ی پایان فیلم بحث می‌کردند.",
+       "tr": "",
+       "de": "Am Nebentisch diskutierten einige Studierende lebhaft über das Ende des Films."
+      },
+      {
+       "fa": "یکی معتقد بود که شخصیت اصلی خانواده را ترک می‌کند، در حالی که دیگری مطمئن بود که او برمی‌گردد.",
+       "tr": "",
+       "de": "Einer war überzeugt, dass die Hauptfigur die Familie verlässt, während ein anderer sicher war, dass sie zurückkehrt."
+      },
+      {
+       "fa": "لیلا گفت که در ایران بحث درباره‌ی فیلم بعد از سینما بخشی از خود تجربه‌ی سینما رفتن است.",
+       "tr": "",
+       "de": "Leyla sagte, dass in Iran die Diskussion über den Film danach zum Kinoerlebnis selbst gehört."
+      },
+      {
+       "fa": "یوناس تعریف کرد که در آلمان هم بعد از فیلم‌های فرهادی همین بحث‌ها پیش می‌آید.",
+       "tr": "",
+       "de": "Jonas erzählte, dass es in Deutschland nach Farhadis Filmen dieselben Diskussionen gibt."
+      },
+      {
+       "fa": "لیلا که برای مجله‌اش نقد فیلم هم می‌نویسد، از یوناس پرسید کدام صحنه بیشتر از همه در ذهنش مانده است.",
+       "tr": "",
+       "de": "Leyla, die für ihr Magazin auch Filmkritiken schreibt, fragte Jonas, welche Szene ihm am meisten im Gedächtnis geblieben sei."
+      },
+      {
+       "fa": "یوناس صحنه‌ای را انتخاب کرد که در آن پدر خانواده در سکوت و در یک نمای نزدیک به عکس قدیمی پسرش نگاه می‌کند.",
+       "tr": "",
+       "de": "Jonas wählte die Szene, in der der Vater schweigend und in Nahaufnahme ein altes Foto seines Sohnes betrachtet."
+      },
+      {
+       "fa": "لیلا گفت این صحنه را حتما در نقدش می‌آورد، چون بدون یک کلمه گفتگو غم شخصیت را نشان می‌دهد.",
+       "tr": "",
+       "de": "Leyla sagte, sie werde diese Szene unbedingt in ihrer Kritik erwähnen, weil sie ohne ein einziges Wort die Trauer der Figur zeigt."
+      },
+      {
+       "fa": "ساعت از یازده گذشته بود که آنها با یک تاکسی اینترنتی به خانه برگشتند.",
+       "tr": "",
+       "de": "Es war schon nach elf, als sie mit einem App-Taxi nach Hause fuhren."
+      },
+      {
+       "fa": "در تاکسی، لیلا قول داد که نقدش را پیش از چاپ برای یوناس بفرستد تا او هم نظرش را بگوید.",
+       "tr": "",
+       "de": "Im Taxi versprach Leyla, Jonas ihre Kritik vor der Veröffentlichung zu schicken, damit er seine Meinung dazu sagen kann."
+      },
+      {
+       "fa": "یوناس در راه تصمیم گرفت که از این به بعد هر ماه دست‌کم یک فیلم ایرانی را روی پرده‌ی سینما ببیند.",
+       "tr": "",
+       "de": "Auf dem Heimweg beschloss Jonas, von nun an jeden Monat mindestens einen iranischen Film auf der großen Leinwand zu sehen."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "لیلا بلیت‌ها را در گیشه‌ی سینما خرید.",
+       "fest": true,
+       "erkl": "Sie kaufte sie <b>über eine App</b> auf ihrem Handy."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "در اپلیکیشن می‌شد جای صندلی را هم انتخاب کرد.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "فیلم زیرنویس آلمانی داشت.",
+       "fest": true,
+       "erkl": "Der Film hatte <b>keine Untertitel</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "بعد از فیلم، چند دانشجو درباره‌ی پایان آن بحث می‌کردند.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "یوناس می‌خواهد هر ماه دست‌کم یک فیلم ایرانی در سینما ببیند.",
+       "fest": true
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Warum sind die Kinos donnerstagabends besonders voll?",
+       "optionen": [
+        "Weil der Freitag für die meisten frei ist.",
+        "Weil die Karten donnerstags billiger sind.",
+        "Weil donnerstags neue Filme anlaufen."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was lag außer den Kinosälen im Multiplex?",
+       "optionen": [
+        "eine Buchhandlung und Cafés",
+        "ein Supermarkt und eine Bank",
+        "ein Museum und ein Hotel"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie half Leyla Jonas während des Films?",
+       "optionen": [
+        "Sie erklärte ihm leise die Stellen im Dialekt.",
+        "Sie übersetzte jeden Satz laut.",
+        "Sie las ihm die Untertitel vor."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Welche Szene wählte Jonas?",
+       "optionen": [
+        "den Vater, der schweigend ein altes Foto betrachtet",
+        "den Streit am Ende des Films",
+        "die erste Szene im Auto"
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "لیلا از چند روز پیش به یوناس قول داده بود که او را به دیدن یک فیلم تازه‌ی ایرانی ببرد.",
+       "tr": "",
+       "de": "Leyla hatte Jonas schon vor einigen Tagen versprochen, mit ihm einen neuen iranischen Film anzusehen."
+      },
+      {
+       "fa": "فیلم، درامی اجتماعی درباره‌ی خانواده‌ای در جنوب تهران بود که پس از نمایش در جشنواره‌ی فجر، تازه به اکران عمومی درآمده بود.",
+       "tr": "",
+       "de": "Der Film war ein Sozialdrama über eine Familie im Süden Teherans, das nach seiner Vorführung beim Fadschr-Festival gerade regulär angelaufen war."
+      },
+      {
+       "fa": "لیلا بلیت‌ها را از طریق یک اپلیکیشن فروش بلیت روی گوشی‌اش خرید.",
+       "tr": "",
+       "de": "Leyla kaufte die Karten über eine Ticket-App auf ihrem Handy."
+      },
+      {
+       "fa": "در اپلیکیشن می‌شد سینما، سانس و حتی جای صندلی را انتخاب کرد؛ لیلا دو صندلی در ردیف‌های وسط سالن برداشت.",
+       "tr": "",
+       "de": "In der App konnte man Kino, Vorstellung und sogar den Sitzplatz wählen; Leyla nahm zwei Plätze in den mittleren Reihen des Saals."
+      },
+      {
+       "fa": "پرداخت با کارت بانکی انجام شد و چند ثانیه بعد یک کد بلیت روی گوشی‌اش آمد.",
+       "tr": "",
+       "de": "Bezahlt wurde mit der Bankkarte, und wenige Sekunden später erschien ein Ticketcode auf ihrem Handy."
+      },
+      {
+       "fa": "سانس ساعت هشت‌ونیم بود، اما آنها تصمیم گرفتند زودتر راه بیفتند تا در ترافیک عصر نمانند.",
+       "tr": "",
+       "de": "Die Vorstellung begann um halb neun, aber sie beschlossen, früher loszufahren, um nicht im Abendverkehr stecken zu bleiben."
       }
      ]
     }
@@ -498,9 +1037,9 @@
        "de": "Warum interessierte sich Kiarostami Ihrer Meinung nach so sehr für Lyrik?"
       },
       {
-       "fa": "دکتر صادقی: او خودش هم شاعر بود. حتی نام فیلم «خانه‌ی دوست کجاست؟» از شعری از سهراب سپهری گرفته شده است.",
+       "fa": "دکتر صادقی: او خودش هم شاعر بود و چند مجموعه‌ی شعر کوتاه منتشر کرد. حتی نام فیلم «خانه‌ی دوست کجاست؟» از شعری از سهراب سپهری گرفته شده است.",
        "tr": "",
-       "de": "Er war selbst Dichter. Sogar der Titel ‹Wo ist das Haus meines Freundes?› stammt aus einem Gedicht von Sohrab Sepehri."
+       "de": "Er war selbst Dichter und veröffentlichte mehrere Bände mit kurzen Gedichten. Sogar der Titel ‹Wo ist das Haus meines Freundes?› stammt aus einem Gedicht von Sohrab Sepehri."
       },
       {
        "fa": "لیلا: و «باد ما را خواهد برد» هم نام شعری از فروغ فرخزاد است، درست است؟",
@@ -508,9 +1047,29 @@
        "de": "Und ‹Der Wind wird uns tragen› ist der Titel eines Gedichts von Forugh Farrochzad, richtig?"
       },
       {
-       "fa": "دکتر صادقی: بله. کیارستمی تصویرها را مثل یک شعر کوتاه کنار هم می‌چید: ساده، آرام و پر از سکوت.",
+       "fa": "دکتر صادقی: بله. این فیلم در سال ۱۹۹۹ جایزه‌ی بزرگ هیئت داوران جشنواره‌ی ونیز را گرفت. در یکی از صحنه‌ها، شخصیت اصلی همین شعر را برای یک دختر جوان می‌خواند.",
        "tr": "",
-       "de": "Ja. Kiarostami reihte die Bilder wie ein kurzes Gedicht aneinander: schlicht, ruhig und voller Stille."
+       "de": "Ja. Der Film erhielt 1999 den Großen Preis der Jury in Venedig. In einer Szene trägt die Hauptfigur einer jungen Frau genau dieses Gedicht vor."
+      },
+      {
+       "fa": "لیلا: رابطه‌ی فروغ فرخزاد با سینما فقط همین شعر نبود؛ او خودش هم فیلم ساخته بود.",
+       "tr": "",
+       "de": "Forugh Farrochzads Verbindung zum Kino war aber nicht nur dieses Gedicht; sie hat ja selbst einen Film gedreht."
+      },
+      {
+       "fa": "دکتر صادقی: دقیقا. «خانه سیاه است» را در سال ۱۹۶۲ ساخت؛ مستندی کوتاه که در آن تصویر و شعر با هم ترکیب شده‌اند. بسیاری آن را از پیشگامان موج نو می‌دانند.",
+       "tr": "",
+       "de": "Genau. ‹Das Haus ist schwarz› drehte sie 1962 – ein kurzer Dokumentarfilm, in dem Bild und Dichtung miteinander verschmelzen. Viele sehen in ihm einen Vorläufer der Neuen Welle."
+      },
+      {
+       "fa": "لیلا: پس می‌شود گفت در سینمای ایران، شعر و تصویر از همان آغاز با هم بوده‌اند؟",
+       "tr": "",
+       "de": "Kann man also sagen, dass Dichtung und Bild im iranischen Kino von Anfang an zusammengehören?"
+      },
+      {
+       "fa": "دکتر صادقی: می‌شود این‌طور گفت. کیارستمی تصویرها را مثل یک شعر کوتاه کنار هم می‌چید: ساده، آرام و پر از سکوت.",
+       "tr": "",
+       "de": "Das kann man so sagen. Kiarostami reihte die Bilder wie ein kurzes Gedicht aneinander: schlicht, ruhig und voller Stille."
       },
       {
        "fa": "لیلا: بعضی تماشاگران می‌گویند فیلم‌هایش کند و خسته‌کننده است. پاسخ شما چیست؟",
@@ -521,6 +1080,16 @@
        "fa": "دکتر صادقی: صادقانه بگویم، این سینما حوصله می‌خواهد. اما کسی که صبر کند، به شکلی کاملا تازه به دنیا نگاه می‌کند.",
        "tr": "",
        "de": "Ehrlich gesagt verlangt dieses Kino Geduld. Aber wer Geduld hat, blickt auf ganz neue Weise auf die Welt."
+      },
+      {
+       "fa": "لیلا: به خوانندگان جوان مجله‌ی ما کدام فیلم او را برای شروع پیشنهاد می‌کنید؟",
+       "tr": "",
+       "de": "Welchen seiner Filme empfehlen Sie den jungen Lesern unseres Magazins für den Anfang?"
+      },
+      {
+       "fa": "دکتر صادقی: «خانه‌ی دوست کجاست؟». داستانش ساده است و هر تماشاگری، در هر سنی، با آن ارتباط برقرار می‌کند.",
+       "tr": "",
+       "de": "‹Wo ist das Haus meines Freundes?›. Die Geschichte ist einfach, und jeder Zuschauer, gleich welchen Alters, findet einen Zugang dazu."
       }
      ]
     },
@@ -545,9 +1114,9 @@
        "de": "Warum interessierte sich Kiarostami Ihrer Meinung nach so sehr für Lyrik?"
       },
       {
-       "fa": "دکتر صادقی: او خودش هم شاعر بود. حتی نام فیلم «خانه‌ی دوست کجاست؟» از شعری از سهراب سپهری گرفته شده است.",
+       "fa": "دکتر صادقی: او خودش هم شاعر بود و چند مجموعه‌ی شعر کوتاه منتشر کرد. حتی نام فیلم «خانه‌ی دوست کجاست؟» از شعری از سهراب سپهری گرفته شده است.",
        "tr": "",
-       "de": "Er war selbst Dichter. Sogar der Titel ‹Wo ist das Haus meines Freundes?› stammt aus einem Gedicht von Sohrab Sepehri."
+       "de": "Er war selbst Dichter und veröffentlichte mehrere Bände mit kurzen Gedichten. Sogar der Titel ‹Wo ist das Haus meines Freundes?› stammt aus einem Gedicht von Sohrab Sepehri."
       },
       {
        "fa": "لیلا: و «باد ما را خواهد برد» هم نام شعری از فروغ فرخزاد است، درست است؟",
@@ -555,9 +1124,29 @@
        "de": "Und ‹Der Wind wird uns tragen› ist der Titel eines Gedichts von Forugh Farrochzad, richtig?"
       },
       {
-       "fa": "دکتر صادقی: بله. کیارستمی تصویرها را مثل یک شعر کوتاه کنار هم می‌چید: ساده، آرام و پر از سکوت.",
+       "fa": "دکتر صادقی: بله. این فیلم در سال ۱۹۹۹ جایزه‌ی بزرگ هیئت داوران جشنواره‌ی ونیز را گرفت. در یکی از صحنه‌ها، شخصیت اصلی همین شعر را برای یک دختر جوان می‌خواند.",
        "tr": "",
-       "de": "Ja. Kiarostami reihte die Bilder wie ein kurzes Gedicht aneinander: schlicht, ruhig und voller Stille."
+       "de": "Ja. Der Film erhielt 1999 den Großen Preis der Jury in Venedig. In einer Szene trägt die Hauptfigur einer jungen Frau genau dieses Gedicht vor."
+      },
+      {
+       "fa": "لیلا: رابطه‌ی فروغ فرخزاد با سینما فقط همین شعر نبود؛ او خودش هم فیلم ساخته بود.",
+       "tr": "",
+       "de": "Forugh Farrochzads Verbindung zum Kino war aber nicht nur dieses Gedicht; sie hat ja selbst einen Film gedreht."
+      },
+      {
+       "fa": "دکتر صادقی: دقیقا. «خانه سیاه است» را در سال ۱۹۶۲ ساخت؛ مستندی کوتاه که در آن تصویر و شعر با هم ترکیب شده‌اند. بسیاری آن را از پیشگامان موج نو می‌دانند.",
+       "tr": "",
+       "de": "Genau. ‹Das Haus ist schwarz› drehte sie 1962 – ein kurzer Dokumentarfilm, in dem Bild und Dichtung miteinander verschmelzen. Viele sehen in ihm einen Vorläufer der Neuen Welle."
+      },
+      {
+       "fa": "لیلا: پس می‌شود گفت در سینمای ایران، شعر و تصویر از همان آغاز با هم بوده‌اند؟",
+       "tr": "",
+       "de": "Kann man also sagen, dass Dichtung und Bild im iranischen Kino von Anfang an zusammengehören?"
+      },
+      {
+       "fa": "دکتر صادقی: می‌شود این‌طور گفت. کیارستمی تصویرها را مثل یک شعر کوتاه کنار هم می‌چید: ساده، آرام و پر از سکوت.",
+       "tr": "",
+       "de": "Das kann man so sagen. Kiarostami reihte die Bilder wie ein kurzes Gedicht aneinander: schlicht, ruhig und voller Stille."
       },
       {
        "fa": "لیلا: بعضی تماشاگران می‌گویند فیلم‌هایش کند و خسته‌کننده است. پاسخ شما چیست؟",
@@ -568,6 +1157,16 @@
        "fa": "دکتر صادقی: صادقانه بگویم، این سینما حوصله می‌خواهد. اما کسی که صبر کند، به شکلی کاملا تازه به دنیا نگاه می‌کند.",
        "tr": "",
        "de": "Ehrlich gesagt verlangt dieses Kino Geduld. Aber wer Geduld hat, blickt auf ganz neue Weise auf die Welt."
+      },
+      {
+       "fa": "لیلا: به خوانندگان جوان مجله‌ی ما کدام فیلم او را برای شروع پیشنهاد می‌کنید؟",
+       "tr": "",
+       "de": "Welchen seiner Filme empfehlen Sie den jungen Lesern unseres Magazins für den Anfang?"
+      },
+      {
+       "fa": "دکتر صادقی: «خانه‌ی دوست کجاست؟». داستانش ساده است و هر تماشاگری، در هر سنی، با آن ارتباط برقرار می‌کند.",
+       "tr": "",
+       "de": "‹Wo ist das Haus meines Freundes?›. Die Geschichte ist einfach, und jeder Zuschauer, gleich welchen Alters, findet einen Zugang dazu."
       }
      ]
     },
@@ -575,15 +1174,6 @@
      "typ": "wahl",
      "titel": "Hast du es verstanden?",
      "fragen": [
-      {
-       "frage": "Worum geht es im Interview?",
-       "optionen": [
-        "um Lyrik im Kino Kiarostamis",
-        "um Farhadis Oscars",
-        "um Kinderfilme im Fernsehen"
-       ],
-       "richtig": 0
-      },
       {
        "frage": "Woher stammt der Titel ‹Wo ist das Haus meines Freundes?›",
        "optionen": [
@@ -594,11 +1184,20 @@
        "richtig": 0
       },
       {
-       "frage": "Was verlangt dieses Kino laut Dr. Sadeghi?",
+       "frage": "Welchen Preis erhielt ‹Der Wind wird uns tragen› 1999?",
        "optionen": [
-        "Geduld",
-        "Kenntnisse über Kameratechnik",
-        "gute Italienischkenntnisse"
+        "den Großen Preis der Jury in Venedig",
+        "die Goldene Palme",
+        "den Oscar"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Welchen Film empfiehlt Dr. Sadeghi für den Anfang?",
+       "optionen": [
+        "‹Wo ist das Haus meines Freundes?›",
+        "‹Der Geschmack der Kirsche›",
+        "‹Das Haus ist schwarz›"
        ],
        "richtig": 0
       }
@@ -647,19 +1246,49 @@
        "de": "Ich hatte mehr Mitgefühl mit Simin. Sie wollte nur eine bessere Zukunft für ihre Tochter."
       },
       {
-       "fa": "یوناس: اما نادر هم حق داشت؛ نمی‌توانست پدر پیرش را تنها بگذارد.",
+       "fa": "یوناس: اما نادر هم حق داشت؛ نمی‌توانست پدر پیر و بیمارش را تنها بگذارد.",
        "tr": "",
-       "de": "Aber Nader hatte auch recht; er konnte seinen alten Vater nicht allein lassen."
+       "de": "Aber Nader hatte auch recht; er konnte seinen alten, kranken Vater nicht allein lassen."
       },
       {
-       "fa": "لیلا: دقیقا! هیچ‌کس کاملا مقصر نیست. بردیا می‌گوید دوستان آلمانی‌اش بعد از این فیلم ساعت‌ها با هم بحث کردند.",
+       "fa": "لیلا: دقیقا! هیچ‌کس کاملا مقصر نیست. حتی زن جوانی که از پدر نادر مراقبت می‌کرد هم دلایل خودش را داشت.",
        "tr": "",
-       "de": "Genau! Niemand ist ganz schuld. Bardia sagt, seine deutschen Freunde haben nach diesem Film stundenlang diskutiert."
+       "de": "Genau! Niemand ist ganz schuld. Sogar die junge Frau, die Naders Vater pflegte, hatte ihre eigenen Gründe."
       },
       {
-       "fa": "یوناس: تعجبی ندارد! دفعه‌ی بعد یک فیلم کمدی ببینیم؟ این‌قدر فکر کردن برای یک شب کافی است.",
+       "fa": "یوناس: بازی بازیگران خیلی باورپذیر بود. نقش دختر را چه کسی بازی می‌کرد؟",
        "tr": "",
-       "de": "Kein Wunder! Schauen wir nächstes Mal eine Komödie? So viel Nachdenken reicht für einen Abend."
+       "de": "Die Schauspieler waren sehr glaubwürdig. Wer hat die Tochter gespielt?"
+      },
+      {
+       "fa": "لیلا: سارینا فرهادی، دختر خود کارگردان. لیلا حاتمی و پیمان معادی هم نقش سیمین و نادر را داشتند.",
+       "tr": "",
+       "de": "Sarina Farhadi, die Tochter des Regisseurs selbst. Leila Hatami und Peyman Moaadi spielten Simin und Nader."
+      },
+      {
+       "fa": "یوناس: خواندم که فیلم در برلین فقط خرس طلایی را نبرد.",
+       "tr": "",
+       "de": "Ich habe gelesen, dass der Film in Berlin nicht nur den Goldenen Bären gewonnen hat."
+      },
+      {
+       "fa": "لیلا: درست است. خرس نقره‌ای بهترین بازیگر زن و بهترین بازیگر مرد هم به‌طور مشترک به بازیگران فیلم داده شد.",
+       "tr": "",
+       "de": "Richtig. Auch die Silbernen Bären für die beste Darstellerin und den besten Darsteller gingen gemeinsam an das Ensemble des Films."
+      },
+      {
+       "fa": "یوناس: جالب است. بردیا هم گفت که دوستان آلمانی‌اش بعد از این فیلم ساعت‌ها با هم بحث کردند.",
+       "tr": "",
+       "de": "Interessant. Bardia hat auch erzählt, dass seine deutschen Freunde nach diesem Film stundenlang diskutiert haben."
+      },
+      {
+       "fa": "لیلا: تعجبی ندارد. مسئله‌های فیلم، مثل مراقبت از پدر و مادر پیر یا تصمیم به مهاجرت، فقط ایرانی نیستند.",
+       "tr": "",
+       "de": "Kein Wunder. Die Fragen des Films, etwa die Pflege alter Eltern oder die Entscheidung auszuwandern, sind nicht nur iranisch."
+      },
+      {
+       "fa": "یوناس: موافقم. به نظرم همین است که فیلم‌های فرهادی را در همه‌جای دنیا قابل فهم می‌کند.",
+       "tr": "",
+       "de": "Da stimme ich zu. Ich glaube, genau das macht Farhadis Filme überall auf der Welt verständlich."
       }
      ]
     },
@@ -694,19 +1323,49 @@
        "de": "Ich hatte mehr Mitgefühl mit Simin. Sie wollte nur eine bessere Zukunft für ihre Tochter."
       },
       {
-       "fa": "یوناس: اما نادر هم حق داشت؛ نمی‌توانست پدر پیرش را تنها بگذارد.",
+       "fa": "یوناس: اما نادر هم حق داشت؛ نمی‌توانست پدر پیر و بیمارش را تنها بگذارد.",
        "tr": "",
-       "de": "Aber Nader hatte auch recht; er konnte seinen alten Vater nicht allein lassen."
+       "de": "Aber Nader hatte auch recht; er konnte seinen alten, kranken Vater nicht allein lassen."
       },
       {
-       "fa": "لیلا: دقیقا! هیچ‌کس کاملا مقصر نیست. بردیا می‌گوید دوستان آلمانی‌اش بعد از این فیلم ساعت‌ها با هم بحث کردند.",
+       "fa": "لیلا: دقیقا! هیچ‌کس کاملا مقصر نیست. حتی زن جوانی که از پدر نادر مراقبت می‌کرد هم دلایل خودش را داشت.",
        "tr": "",
-       "de": "Genau! Niemand ist ganz schuld. Bardia sagt, seine deutschen Freunde haben nach diesem Film stundenlang diskutiert."
+       "de": "Genau! Niemand ist ganz schuld. Sogar die junge Frau, die Naders Vater pflegte, hatte ihre eigenen Gründe."
       },
       {
-       "fa": "یوناس: تعجبی ندارد! دفعه‌ی بعد یک فیلم کمدی ببینیم؟ این‌قدر فکر کردن برای یک شب کافی است.",
+       "fa": "یوناس: بازی بازیگران خیلی باورپذیر بود. نقش دختر را چه کسی بازی می‌کرد؟",
        "tr": "",
-       "de": "Kein Wunder! Schauen wir nächstes Mal eine Komödie? So viel Nachdenken reicht für einen Abend."
+       "de": "Die Schauspieler waren sehr glaubwürdig. Wer hat die Tochter gespielt?"
+      },
+      {
+       "fa": "لیلا: سارینا فرهادی، دختر خود کارگردان. لیلا حاتمی و پیمان معادی هم نقش سیمین و نادر را داشتند.",
+       "tr": "",
+       "de": "Sarina Farhadi, die Tochter des Regisseurs selbst. Leila Hatami und Peyman Moaadi spielten Simin und Nader."
+      },
+      {
+       "fa": "یوناس: خواندم که فیلم در برلین فقط خرس طلایی را نبرد.",
+       "tr": "",
+       "de": "Ich habe gelesen, dass der Film in Berlin nicht nur den Goldenen Bären gewonnen hat."
+      },
+      {
+       "fa": "لیلا: درست است. خرس نقره‌ای بهترین بازیگر زن و بهترین بازیگر مرد هم به‌طور مشترک به بازیگران فیلم داده شد.",
+       "tr": "",
+       "de": "Richtig. Auch die Silbernen Bären für die beste Darstellerin und den besten Darsteller gingen gemeinsam an das Ensemble des Films."
+      },
+      {
+       "fa": "یوناس: جالب است. بردیا هم گفت که دوستان آلمانی‌اش بعد از این فیلم ساعت‌ها با هم بحث کردند.",
+       "tr": "",
+       "de": "Interessant. Bardia hat auch erzählt, dass seine deutschen Freunde nach diesem Film stundenlang diskutiert haben."
+      },
+      {
+       "fa": "لیلا: تعجبی ندارد. مسئله‌های فیلم، مثل مراقبت از پدر و مادر پیر یا تصمیم به مهاجرت، فقط ایرانی نیستند.",
+       "tr": "",
+       "de": "Kein Wunder. Die Fragen des Films, etwa die Pflege alter Eltern oder die Entscheidung auszuwandern, sind nicht nur iranisch."
+      },
+      {
+       "fa": "یوناس: موافقم. به نظرم همین است که فیلم‌های فرهادی را در همه‌جای دنیا قابل فهم می‌کند.",
+       "tr": "",
+       "de": "Da stimme ich zu. Ich glaube, genau das macht Farhadis Filme überall auf der Welt verständlich."
       }
      ]
     },
@@ -733,11 +1392,356 @@
        "richtig": 0
       },
       {
-       "frage": "Was schlägt Jonas für das nächste Mal vor?",
+       "frage": "Wer erhielt in Berlin die Silbernen Bären?",
        "optionen": [
-        "eine Komödie",
-        "noch einen Farhadi-Film",
-        "einen Dokumentarfilm"
+        "das Ensemble des Films gemeinsam",
+        "nur Leila Hatami",
+        "der Regisseur"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d3",
+   "titel": "Dialog: Kino von früher",
+   "vorschau": "Kino von früher",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Beim Tee erzählt Jonas Herrn Rahimi von seinem Kinoabend. Der pensionierte Lehrer erinnert sich an die Kinos seiner Jugend.</p>"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "آقای رحیمی: یوناس جان، دیشب دیر آمدی. کجا بودی؟",
+       "tr": "",
+       "de": "Jonas, du bist gestern spät gekommen. Wo warst du?"
+      },
+      {
+       "fa": "یوناس: با لیلا به سینما رفته بودیم. یک فیلم اجتماعی تازه دیدیم که در جشنواره‌ی فجر هم نمایش داده شده بود.",
+       "tr": "",
+       "de": "Ich war mit Leyla im Kino. Wir haben einen neuen Sozialfilm gesehen, der auch beim Fadschr-Festival gelaufen war."
+      },
+      {
+       "fa": "آقای رحیمی: چه خوب. من در جوانی هر هفته سینما می‌رفتم. آن زمان بیشتر سینماهای معروف تهران در خیابان لاله‌زار بودند.",
+       "tr": "",
+       "de": "Wie schön. In meiner Jugend bin ich jede Woche ins Kino gegangen. Damals lagen die meisten bekannten Kinos Teherans in der Lalehzar-Straße."
+      },
+      {
+       "fa": "یوناس: لاله‌زار؟ اسمش را شنیده‌ام، اما فکر می‌کردم آنجا بیشتر مغازه‌ی لوازم برقی هست.",
+       "tr": "",
+       "de": "Lalehzar? Den Namen habe ich schon gehört, aber ich dachte, dort gibt es vor allem Elektrogeschäfte."
+      },
+      {
+       "fa": "آقای رحیمی: امروز همین‌طور است. اما شصت سال پیش لاله‌زار مرکز سینما و تئاتر بود و شب‌ها پر از تماشاگر بود.",
+       "tr": "",
+       "de": "Heute ist das so. Aber vor sechzig Jahren war Lalehzar das Zentrum von Kino und Theater und abends voller Zuschauer."
+      },
+      {
+       "fa": "یوناس: آن زمان چه فیلم‌هایی نمایش می‌دادند؟",
+       "tr": "",
+       "de": "Was für Filme wurden damals gezeigt?"
+      },
+      {
+       "fa": "آقای رحیمی: هم فیلم‌های ایرانی، هم فیلم‌های خارجی. فیلم‌های خارجی را دوبله می‌کردند و صدای بعضی دوبلورها را همه می‌شناختند.",
+       "tr": "",
+       "de": "Sowohl iranische als auch ausländische Filme. Die ausländischen wurden synchronisiert, und die Stimmen mancher Synchronsprecher kannte jeder."
+      },
+      {
+       "fa": "یوناس: هنوز هم در تلویزیون ایران فیلم‌های خارجی دوبله می‌شوند، نه؟",
+       "tr": "",
+       "de": "Auch heute werden ausländische Filme im iranischen Fernsehen synchronisiert, oder?"
+      },
+      {
+       "fa": "آقای رحیمی: بله. سنت دوبله در ایران خیلی قوی است. خیلی از تماشاگران ترجیح می‌دهند فیلم را به فارسی بشنوند تا زیرنویس بخوانند.",
+       "tr": "",
+       "de": "Ja. Die Tradition der Synchronisation ist in Iran sehr stark. Viele Zuschauer hören einen Film lieber auf Persisch, als Untertitel zu lesen."
+      },
+      {
+       "fa": "یوناس: فیلم‌های ایرانی آن زمان چطور بودند؟",
+       "tr": "",
+       "de": "Wie waren die iranischen Filme damals?"
+      },
+      {
+       "fa": "آقای رحیمی: بیشتر سرگرم‌کننده بودند: آواز، رقص و قهرمانی که همیشه پیروز می‌شد. منتقدان به آنها «فیلمفارسی» می‌گفتند.",
+       "tr": "",
+       "de": "Meist Unterhaltung: Gesang, Tanz und ein Held, der immer siegte. Die Kritiker nannten sie ‹Filmfarsi›."
+      },
+      {
+       "fa": "یوناس: پس «گاو» و «قیصر» در آن زمان چیز کاملا تازه‌ای بودند.",
+       "tr": "",
+       "de": "Dann waren ‹Die Kuh› und ‹Gheysar› damals etwas völlig Neues."
+      },
+      {
+       "fa": "آقای رحیمی: دقیقا. یادم هست که بعد از دیدن «گاو» تا چند روز به آن فکر می‌کردم. چنین فیلمی را تا آن روز ندیده بودم.",
+       "tr": "",
+       "de": "Genau. Ich erinnere mich, dass ich nach ‹Die Kuh› noch tagelang darüber nachdachte. So einen Film hatte ich bis dahin nie gesehen."
+      },
+      {
+       "fa": "یوناس: شاید یک روز با هم به موزه‌ی سینما برویم. شنیده‌ام آنجا پوسترها و دوربین‌های قدیمی را نمایش می‌دهند.",
+       "tr": "",
+       "de": "Vielleicht gehen wir einmal zusammen ins Kinomuseum. Ich habe gehört, dort werden alte Plakate und Kameras ausgestellt."
+      },
+      {
+       "fa": "آقای رحیمی: فکر خوبی است. هر وقت فرصت داشتی، من با کمال میل همراهت می‌آیم.",
+       "tr": "",
+       "de": "Gute Idee. Wann immer du Zeit hast, komme ich sehr gern mit."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "آقای رحیمی: یوناس جان، دیشب دیر آمدی. کجا بودی؟",
+       "tr": "",
+       "de": "Jonas, du bist gestern spät gekommen. Wo warst du?"
+      },
+      {
+       "fa": "یوناس: با لیلا به سینما رفته بودیم. یک فیلم اجتماعی تازه دیدیم که در جشنواره‌ی فجر هم نمایش داده شده بود.",
+       "tr": "",
+       "de": "Ich war mit Leyla im Kino. Wir haben einen neuen Sozialfilm gesehen, der auch beim Fadschr-Festival gelaufen war."
+      },
+      {
+       "fa": "آقای رحیمی: چه خوب. من در جوانی هر هفته سینما می‌رفتم. آن زمان بیشتر سینماهای معروف تهران در خیابان لاله‌زار بودند.",
+       "tr": "",
+       "de": "Wie schön. In meiner Jugend bin ich jede Woche ins Kino gegangen. Damals lagen die meisten bekannten Kinos Teherans in der Lalehzar-Straße."
+      },
+      {
+       "fa": "یوناس: لاله‌زار؟ اسمش را شنیده‌ام، اما فکر می‌کردم آنجا بیشتر مغازه‌ی لوازم برقی هست.",
+       "tr": "",
+       "de": "Lalehzar? Den Namen habe ich schon gehört, aber ich dachte, dort gibt es vor allem Elektrogeschäfte."
+      },
+      {
+       "fa": "آقای رحیمی: امروز همین‌طور است. اما شصت سال پیش لاله‌زار مرکز سینما و تئاتر بود و شب‌ها پر از تماشاگر بود.",
+       "tr": "",
+       "de": "Heute ist das so. Aber vor sechzig Jahren war Lalehzar das Zentrum von Kino und Theater und abends voller Zuschauer."
+      },
+      {
+       "fa": "یوناس: آن زمان چه فیلم‌هایی نمایش می‌دادند؟",
+       "tr": "",
+       "de": "Was für Filme wurden damals gezeigt?"
+      },
+      {
+       "fa": "آقای رحیمی: هم فیلم‌های ایرانی، هم فیلم‌های خارجی. فیلم‌های خارجی را دوبله می‌کردند و صدای بعضی دوبلورها را همه می‌شناختند.",
+       "tr": "",
+       "de": "Sowohl iranische als auch ausländische Filme. Die ausländischen wurden synchronisiert, und die Stimmen mancher Synchronsprecher kannte jeder."
+      },
+      {
+       "fa": "یوناس: هنوز هم در تلویزیون ایران فیلم‌های خارجی دوبله می‌شوند، نه؟",
+       "tr": "",
+       "de": "Auch heute werden ausländische Filme im iranischen Fernsehen synchronisiert, oder?"
+      },
+      {
+       "fa": "آقای رحیمی: بله. سنت دوبله در ایران خیلی قوی است. خیلی از تماشاگران ترجیح می‌دهند فیلم را به فارسی بشنوند تا زیرنویس بخوانند.",
+       "tr": "",
+       "de": "Ja. Die Tradition der Synchronisation ist in Iran sehr stark. Viele Zuschauer hören einen Film lieber auf Persisch, als Untertitel zu lesen."
+      },
+      {
+       "fa": "یوناس: فیلم‌های ایرانی آن زمان چطور بودند؟",
+       "tr": "",
+       "de": "Wie waren die iranischen Filme damals?"
+      },
+      {
+       "fa": "آقای رحیمی: بیشتر سرگرم‌کننده بودند: آواز، رقص و قهرمانی که همیشه پیروز می‌شد. منتقدان به آنها «فیلمفارسی» می‌گفتند.",
+       "tr": "",
+       "de": "Meist Unterhaltung: Gesang, Tanz und ein Held, der immer siegte. Die Kritiker nannten sie ‹Filmfarsi›."
+      },
+      {
+       "fa": "یوناس: پس «گاو» و «قیصر» در آن زمان چیز کاملا تازه‌ای بودند.",
+       "tr": "",
+       "de": "Dann waren ‹Die Kuh› und ‹Gheysar› damals etwas völlig Neues."
+      },
+      {
+       "fa": "آقای رحیمی: دقیقا. یادم هست که بعد از دیدن «گاو» تا چند روز به آن فکر می‌کردم. چنین فیلمی را تا آن روز ندیده بودم.",
+       "tr": "",
+       "de": "Genau. Ich erinnere mich, dass ich nach ‹Die Kuh› noch tagelang darüber nachdachte. So einen Film hatte ich bis dahin nie gesehen."
+      },
+      {
+       "fa": "یوناس: شاید یک روز با هم به موزه‌ی سینما برویم. شنیده‌ام آنجا پوسترها و دوربین‌های قدیمی را نمایش می‌دهند.",
+       "tr": "",
+       "de": "Vielleicht gehen wir einmal zusammen ins Kinomuseum. Ich habe gehört, dort werden alte Plakate und Kameras ausgestellt."
+      },
+      {
+       "fa": "آقای رحیمی: فکر خوبی است. هر وقت فرصت داشتی، من با کمال میل همراهت می‌آیم.",
+       "tr": "",
+       "de": "Gute Idee. Wann immer du Zeit hast, komme ich sehr gern mit."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Wo lagen früher viele bekannte Kinos Teherans?",
+       "optionen": [
+        "in der Lalehzar-Straße",
+        "am Fuß des Alborz",
+        "im Ferdows-Garten"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie wurden ausländische Filme damals gezeigt?",
+       "optionen": [
+        "synchronisiert",
+        "mit Untertiteln",
+        "im Original ohne Übersetzung"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was schlägt Jonas am Ende vor?",
+       "optionen": [
+        "einen gemeinsamen Besuch im Kinomuseum",
+        "einen Abend in der Lalehzar-Straße",
+        "einen Film im Fernsehen"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "a",
+   "titel": "Gut zu wissen",
+   "vorschau": "💡",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Kanoon – Bücher und Filme für Kinder",
+     "text": "Kurzer Infotext – tippe eine Zeile an für die Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "کانون پرورش فکری کودکان و نوجوانان در سال ۱۹۶۵ در تهران تأسیس شد.",
+       "tr": "",
+       "de": "Das Institut für die geistige Entwicklung von Kindern und Jugendlichen (Kanoon) wurde 1965 in Teheran gegründet."
+      },
+      {
+       "fa": "هدف اولیه‌ی آن ایجاد کتابخانه برای کودکان و انتشار کتاب‌های مناسب برای آنها بود.",
+       "tr": "",
+       "de": "Sein ursprüngliches Ziel war es, Bibliotheken für Kinder einzurichten und geeignete Bücher für sie herauszugeben."
+      },
+      {
+       "fa": "چند سال بعد، کانون یک بخش سینمایی هم راه انداخت و عباس کیارستمی سال‌ها در آن کار کرد.",
+       "tr": "",
+       "de": "Einige Jahre später gründete der Kanoon auch eine Filmabteilung, in der Abbas Kiarostami viele Jahre arbeitete."
+      },
+      {
+       "fa": "در این بخش فیلم‌های کوتاه، انیمیشن و فیلم‌های آموزشی ساخته شد که بعضی از آنها در جشنواره‌های جهانی جایزه گرفتند.",
+       "tr": "",
+       "de": "Dort entstanden Kurzfilme, Animationen und Lehrfilme, von denen einige auf internationalen Festivals ausgezeichnet wurden."
+      },
+      {
+       "fa": "امروز هم کانون در بسیاری از شهرهای ایران کتابخانه و مرکز فرهنگی برای کودکان دارد.",
+       "tr": "",
+       "de": "Auch heute betreibt der Kanoon in vielen Städten Irans Bibliotheken und Kulturzentren für Kinder."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Synchronisation mit Tradition",
+     "text": "Kurzer Infotext – tippe eine Zeile an für die Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "در ایران فیلم‌ها و سریال‌های خارجی معمولاً با دوبله‌ی فارسی از تلویزیون پخش می‌شوند.",
+       "tr": "",
+       "de": "In Iran werden ausländische Filme und Serien im Fernsehen meist persisch synchronisiert ausgestrahlt."
+      },
+      {
+       "fa": "دوبله‌ی فیلم به فارسی از دهه‌ی ۱۹۴۰ آغاز شد و به‌سرعت به حرفه‌ای پرطرفدار تبدیل شد.",
+       "tr": "",
+       "de": "Die Synchronisation von Filmen ins Persische begann in den 1940er-Jahren und wurde schnell zu einem beliebten Beruf."
+      },
+      {
+       "fa": "بعضی دوبلورها چنان مشهور شدند که تماشاگران صدایشان را بهتر از چهره‌ی بازیگران اصلی می‌شناختند.",
+       "tr": "",
+       "de": "Manche Synchronsprecher wurden so berühmt, dass die Zuschauer ihre Stimmen besser kannten als die Gesichter der Originaldarsteller."
+      },
+      {
+       "fa": "گاهی یک دوبلور سال‌ها صدای یک بازیگر مشهور خارجی بود و تماشاگران آن صدا را بخشی از شخصیت او می‌دانستند.",
+       "tr": "",
+       "de": "Manchmal war ein Sprecher jahrelang die Stimme eines berühmten ausländischen Schauspielers, und die Zuschauer hielten diese Stimme für einen Teil seiner Persönlichkeit."
+      },
+      {
+       "fa": "امروز بسیاری از جوانان فیلم‌ها را با زیرنویس هم تماشا می‌کنند، اما دوبله همچنان جایگاه مهمی دارد.",
+       "tr": "",
+       "de": "Heute sehen viele junge Leute Filme auch mit Untertiteln, doch die Synchronisation hat weiterhin einen wichtigen Platz."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Das Kinomuseum in Teheran",
+     "text": "Kurzer Infotext – tippe eine Zeile an für die Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "موزه‌ی سینمای ایران در باغ فردوس، در شمال تهران، قرار دارد.",
+       "tr": "",
+       "de": "Das Kinomuseum Irans befindet sich im Ferdows-Garten im Norden Teherans."
+      },
+      {
+       "fa": "این باغ و عمارت آن از دوره‌ی قاجار باقی مانده‌اند.",
+       "tr": "",
+       "de": "Der Garten und sein Herrenhaus stammen aus der Kadscharenzeit."
+      },
+      {
+       "fa": "در موزه دوربین‌ها و پروژکتورهای قدیمی، پوسترهای فیلم و وسایل شخصی سینماگران مشهور نمایش داده می‌شود.",
+       "tr": "",
+       "de": "Im Museum werden alte Kameras und Projektoren, Filmplakate und persönliche Gegenstände bekannter Filmschaffender gezeigt."
+      },
+      {
+       "fa": "بخشی از موزه به تاریخ نخستین فیلم‌ها و سینماهای ایران اختصاص دارد.",
+       "tr": "",
+       "de": "Ein Teil des Museums ist der Geschichte der ersten Filme und Kinos in Iran gewidmet."
+      },
+      {
+       "fa": "موزه سالن نمایش هم دارد و در آن گاهی فیلم‌های کلاسیک ایرانی روی پرده می‌روند.",
+       "tr": "",
+       "de": "Das Museum hat auch einen Vorführsaal, in dem manchmal klassische iranische Filme laufen."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zu den Infotexten",
+     "fragen": [
+      {
+       "frage": "Was war das ursprüngliche Ziel des Kanoon?",
+       "optionen": [
+        "Bibliotheken und Bücher für Kinder",
+        "die Ausbildung von Schauspielern",
+        "der Bau neuer Kinos"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Seit wann werden Filme ins Persische synchronisiert?",
+       "optionen": [
+        "seit den 1940er-Jahren",
+        "seit dem Jahr 2000",
+        "seit dem 19. Jahrhundert"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wo befindet sich das Kinomuseum?",
+       "optionen": [
+        "im Ferdows-Garten im Norden Teherans",
+        "in der Lalehzar-Straße",
+        "im Gebäude des Kanoon"
        ],
        "richtig": 0
       }
@@ -802,9 +1806,14 @@
      "links": "de",
      "paare": [
       {
-       "fa": "این فیلم را به کسانی که … توصیه می‌کنم.",
+       "fa": "نقطه‌ی قوت فیلم …",
        "tr": "",
-       "de": "Ich empfehle diesen Film allen, die …"
+       "de": "Die Stärke des Films …"
+      },
+      {
+       "fa": "داستان فیلم درباره‌ی … است.",
+       "tr": "",
+       "de": "Der Film handelt von …"
       },
       {
        "fa": "نقطه‌ی ضعف فیلم …",
@@ -812,24 +1821,19 @@
        "de": "Die Schwäche des Films …"
       },
       {
-       "fa": "نقطه‌ی قوت فیلم …",
-       "tr": "",
-       "de": "Die Stärke des Films …"
-      },
-      {
        "fa": "تا لحظه‌ی آخر …",
        "tr": "",
        "de": "Bis zum letzten Moment …"
       },
       {
+       "fa": "در مجموع …",
+       "tr": "",
+       "de": "Alles in allem …"
+      },
+      {
        "fa": "بازی … بسیار باورپذیر است.",
        "tr": "",
        "de": "Das Spiel von … ist sehr glaubwürdig."
-      },
-      {
-       "fa": "فیلم تماشاگر را به فکر فرو می‌برد.",
-       "tr": "",
-       "de": "Der Film regt zum Nachdenken an."
       }
      ],
      "titel": "Was bedeutet die Wendung?"
@@ -841,29 +1845,9 @@
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
-        "Der Film regt zum Nachdenken an.",
-        "Die Schwäche des Films …",
-        "Bis zum letzten Moment …"
-       ],
-       "richtig": 0,
-       "fa": "فیلم تماشاگر را به فکر فرو می‌برد."
-      },
-      {
-       "frage": "Was bedeutet der Satz?",
-       "optionen": [
-        "Alles in allem …",
         "Ich empfehle diesen Film allen, die …",
-        "Das Spiel von … ist sehr glaubwürdig."
-       ],
-       "richtig": 0,
-       "fa": "در مجموع …"
-      },
-      {
-       "frage": "Was bedeutet der Satz?",
-       "optionen": [
-        "Ich empfehle diesen Film allen, die …",
-        "Der Film regt zum Nachdenken an.",
-        "Das Spiel von … ist sehr glaubwürdig."
+        "Das Spiel von … ist sehr glaubwürdig.",
+        "Alles in allem …"
        ],
        "richtig": 0,
        "fa": "این فیلم را به کسانی که … توصیه می‌کنم."
@@ -872,8 +1856,8 @@
        "frage": "Was bedeutet der Satz?",
        "optionen": [
         "Die Stärke des Films …",
-        "Bis zum letzten Moment …",
-        "Die Schwäche des Films …"
+        "Der Film regt zum Nachdenken an.",
+        "Alles in allem …"
        ],
        "richtig": 0,
        "fa": "نقطه‌ی قوت فیلم …"
@@ -881,9 +1865,19 @@
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
+        "Der Film regt zum Nachdenken an.",
+        "Bis zum letzten Moment …",
+        "Alles in allem …"
+       ],
+       "richtig": 0,
+       "fa": "فیلم تماشاگر را به فکر فرو می‌برد."
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
         "Die Schwäche des Films …",
         "Ich empfehle diesen Film allen, die …",
-        "Alles in allem …"
+        "Die Stärke des Films …"
        ],
        "richtig": 0,
        "fa": "نقطه‌ی ضعف فیلم …"
@@ -891,12 +1885,22 @@
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
-        "Der Film handelt von …",
-        "Bis zum letzten Moment …",
-        "Alles in allem …"
+        "Das Spiel von … ist sehr glaubwürdig.",
+        "Die Stärke des Films …",
+        "Ich empfehle diesen Film allen, die …"
        ],
        "richtig": 0,
-       "fa": "داستان فیلم درباره‌ی … است."
+       "fa": "بازی … بسیار باورپذیر است."
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Bis zum letzten Moment …",
+        "Ich empfehle diesen Film allen, die …",
+        "Der Film regt zum Nachdenken an."
+       ],
+       "richtig": 0,
+       "fa": "تا لحظه‌ی آخر …"
       }
      ]
     },

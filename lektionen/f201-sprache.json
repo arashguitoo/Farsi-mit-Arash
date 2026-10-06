@@ -12,12 +12,12 @@
     {
      "typ": "info",
      "titel": "Persisch: eine Sprache, drei Länder",
-     "text": "<p>Persisch wird in Iran, Afghanistan und Tadschikistan gesprochen – unter drei Namen und in zwei Schriften. Im Sachtext erfährst du, woher die Sprache kommt und was sie verbindet. Grammatisch lernst du die arabischen Mehrzahlformen, die in Zeitungen und Sachtexten überall vorkommen.</p><p><b>In dieser Lektion …</b></p><ul><li>einen Sachtext über Sprache und Geschichte verstehen</li><li>arabische Mehrzahlformen erkennen (کتاب → کتب، اثر → آثار)</li><li>die Endungen ـات، ـجات، ـین richtig einordnen</li><li>über Sprachen diskutieren und vergleichen</li></ul><p class='klein muted'>Sachtext: „Persisch: eine Sprache, drei Länder“ · Wortschatz: 40 Wörter · Grammatik: Arabische Mehrzahl (جمع مکسر)</p>"
+     "text": "<p>Persisch wird in Iran, Afghanistan und Tadschikistan gesprochen – unter drei Namen und in zwei Schriften. Im Sachtext erfährst du, woher die Sprache kommt und was sie verbindet. Grammatisch lernst du die arabischen Mehrzahlformen, die in Zeitungen und Sachtexten überall vorkommen.</p><p><b>In dieser Lektion …</b></p><ul><li>einen Sachtext über Sprache und Geschichte verstehen</li><li>arabische Mehrzahlformen erkennen (کتاب → کتب، اثر → آثار)</li><li>die Endungen ـات، ـجات، ـین richtig einordnen</li><li>über Sprachen diskutieren und vergleichen</li></ul><p class='klein muted'>Sachtext: „Persisch: eine Sprache, drei Länder“ · Wortschatz: 52 Wörter · Grammatik: Arabische Mehrzahl (جمع مکسر)</p>"
     },
     {
      "typ": "info",
      "titel": "So arbeitest du",
-     "text": "<p>In Fortgeschritten 2 gibt es <b>keine Umschrift</b> mehr – du liest wie Muttersprachler. Tippe ein Wort oder eine Zeile an, um sie zu hören oder die Übersetzung zu sehen.</p><ol><li><b>Lernpfad:</b> Wortschatz, Wortbildung, Grammatik</li><li><b>Texte & Dialoge:</b> der Sachtext, Wortschatz im Kontext, zwei Dialoge, Redemittel und eine Schreibaufgabe</li><li><b>Übungen:</b> Trainingspaket mit „Wer passt zu wem?“</li></ol>",
+     "text": "<p>In Fortgeschritten 2 gibt es <b>keine Umschrift</b> mehr – du liest wie Muttersprachler. Tippe ein Wort oder eine Zeile an, um sie zu hören oder die Übersetzung zu sehen.</p><ol><li><b>Lernpfad:</b> Wortschatz, Wortbildung, Grammatik</li><li><b>Texte & Dialoge:</b> ausführlicher Sachtext, Wortschatz im Kontext, ein Alltagstext, drei Dialoge, Infotexte, Redemittel und eine Schreibaufgabe</li><li><b>Übungen:</b> Trainingspaket mit „Wer passt zu wem?“</li></ol>",
      "stil": "merke"
     }
    ]
@@ -207,8 +207,8 @@
        "frage": "<span class='fa'>فارسی ___ من است؛ آلمانی را در مدرسه یاد گرفتم.</span><br><span class='mini'>Persisch ist meine Muttersprache; Deutsch habe ich in der Schule gelernt.</span>",
        "optionen": [
         "زبان مادری",
-        "گسترده",
-        "شاخه"
+        "فرهنگ لغت",
+        "مشترک"
        ],
        "richtig": 0,
        "optFa": true,
@@ -219,8 +219,8 @@
        "frage": "<span class='fa'>مردم اصفهان ___ خاصی دارند که همه آن را می‌شناسند.</span><br><span class='mini'>Die Menschen in Isfahan haben einen besonderen Akzent, den alle kennen.</span>",
        "optionen": [
         "لهجه",
-        "سرزمین",
-        "دوره"
+        "شاخه",
+        "حماسه"
        ],
        "richtig": 0,
        "optFa": true,
@@ -231,8 +231,8 @@
        "frage": "<span class='fa'>کلمه‌ی «آسانسور» یک ___ از زبان فرانسوی است.</span><br><span class='mini'>Das Wort ‹Aufzug› ist ein Lehnwort aus dem Französischen.</span>",
        "optionen": [
         "وام‌واژه",
-        "کهن",
-        "تمدن"
+        "شاعر",
+        "صامت"
        ],
        "richtig": 0,
        "optFa": true,
@@ -243,8 +243,8 @@
        "frage": "<span class='fa'>تاجیک‌ها از ___ سیریلیک استفاده می‌کنند.</span><br><span class='mini'>Die Tadschiken verwenden die kyrillische Schrift.</span>",
        "optionen": [
         "خط",
-        "تمدن",
-        "منطقه"
+        "بیت",
+        "حماسه"
        ],
        "richtig": 0,
        "optFa": true,
@@ -403,16 +403,10 @@
      "links": "de",
      "paare": [
       {
-       "fa": "نسخه‌ی خطی",
+       "fa": "حماسه",
        "tr": "",
-       "de": "Handschrift",
-       "emoji": "📜"
-      },
-      {
-       "fa": "دوره",
-       "tr": "",
-       "de": "Epoche, Periode",
-       "emoji": "⏳"
+       "de": "Epos",
+       "emoji": "⚔️"
       },
       {
        "fa": "کهن",
@@ -421,22 +415,28 @@
        "emoji": "🏚️"
       },
       {
-       "fa": "تمدن",
-       "tr": "",
-       "de": "Zivilisation",
-       "emoji": "🏛️"
-      },
-      {
        "fa": "شاعر",
        "tr": "",
        "de": "Dichter/in",
        "emoji": "🪶"
       },
       {
-       "fa": "حماسه",
+       "fa": "دوره",
        "tr": "",
-       "de": "Epos",
-       "emoji": "⚔️"
+       "de": "Epoche, Periode",
+       "emoji": "⏳"
+      },
+      {
+       "fa": "سنگ‌نوشته",
+       "tr": "",
+       "de": "Inschrift",
+       "emoji": "🪨"
+      },
+      {
+       "fa": "نسخه‌ی خطی",
+       "tr": "",
+       "de": "Handschrift",
+       "emoji": "📜"
       }
      ],
      "titel": "Was bedeutet das?"
@@ -446,10 +446,10 @@
      "links": "emoji",
      "paare": [
       {
-       "fa": "دربار",
+       "fa": "نسخه‌ی خطی",
        "tr": "",
-       "de": "Königshof",
-       "emoji": "👑"
+       "de": "Handschrift",
+       "emoji": "📜"
       },
       {
        "fa": "میراث",
@@ -458,22 +458,22 @@
        "emoji": "🏺"
       },
       {
-       "fa": "دوره",
+       "fa": "کهن",
        "tr": "",
-       "de": "Epoche, Periode",
-       "emoji": "⏳"
+       "de": "alt, uralt (gehoben)",
+       "emoji": "🏚️"
       },
       {
-       "fa": "حماسه",
+       "fa": "ادبیات",
        "tr": "",
-       "de": "Epos",
-       "emoji": "⚔️"
+       "de": "Literatur",
+       "emoji": "📖"
       },
       {
-       "fa": "نسخه‌ی خطی",
+       "fa": "دربار",
        "tr": "",
-       "de": "Handschrift",
-       "emoji": "📜"
+       "de": "Königshof",
+       "emoji": "👑"
       },
       {
        "fa": "سنگ‌نوشته",
@@ -492,8 +492,8 @@
        "frage": "<span class='fa'>شاهنامه بزرگ‌ترین ___ زبان فارسی است.</span><br><span class='mini'>Das Schahname ist das größte Epos der persischen Sprache.</span>",
        "optionen": [
         "حماسه",
-        "سرزمین",
-        "مشترک"
+        "فرهنگستان",
+        "معادل"
        ],
        "richtig": 0,
        "optFa": true,
@@ -504,7 +504,7 @@
        "frage": "<span class='fa'>نوروز بخشی از ___ مشترک ایران، افغانستان و تاجیکستان است.</span><br><span class='mini'>Nouruz ist Teil des gemeinsamen Erbes von Iran, Afghanistan und Tadschikistan.</span>",
        "optionen": [
         "میراث",
-        "سرزمین",
+        "زبان رسمی",
         "الفبا"
        ],
        "richtig": 0,
@@ -516,7 +516,7 @@
        "frage": "<span class='fa'>یک ___ هشتصدساله از شاهنامه در این کتابخانه نگهداری می‌شود.</span><br><span class='mini'>In dieser Bibliothek wird eine 800 Jahre alte Handschrift des Schahname aufbewahrt.</span>",
        "optionen": [
         "نسخه‌ی خطی",
-        "لهجه",
+        "واژگان",
         "زبان مادری"
        ],
        "richtig": 0,
@@ -761,8 +761,8 @@
        "frage": "<span class='fa'>زبان، بخش مهمی از ___ هر انسان است.</span><br><span class='mini'>Sprache ist ein wichtiger Teil der Identität jedes Menschen.</span>",
        "optionen": [
         "هویت",
-        "ادبیات",
-        "خط میخی"
+        "مصراع",
+        "مصوت"
        ],
        "richtig": 0,
        "optFa": true,
@@ -828,6 +828,297 @@
    ]
   },
   {
+   "id": "w3",
+   "titel": "Schrift & Text",
+   "vorschau": "حرف · مصوت · صامت",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "✍️ Schrift & Text (1)",
+     "text": "<p>Tippe ein Wort an, um es zu hören und die Bedeutung zu sehen.</p>",
+     "beispiele": [
+      {
+       "fa": "حرف",
+       "tr": "",
+       "de": "Buchstabe",
+       "emoji": "🔠"
+      },
+      {
+       "fa": "مصوت",
+       "tr": "",
+       "de": "Vokal",
+       "emoji": "🅰️"
+      },
+      {
+       "fa": "صامت",
+       "tr": "",
+       "de": "Konsonant",
+       "emoji": "🅱️"
+      },
+      {
+       "fa": "بیت",
+       "tr": "",
+       "de": "Vers, Doppelvers",
+       "emoji": "📜"
+      },
+      {
+       "fa": "مصراع",
+       "tr": "",
+       "de": "Halbvers",
+       "emoji": "✂️"
+      },
+      {
+       "fa": "نثر",
+       "tr": "",
+       "de": "Prosa",
+       "emoji": "📄"
+      }
+     ]
+    },
+    {
+     "typ": "info",
+     "titel": "✍️ Schrift & Text (2)",
+     "text": "<p>Tippe ein Wort an, um es zu hören und die Bedeutung zu sehen.</p>",
+     "beispiele": [
+      {
+       "fa": "فرهنگ لغت",
+       "tr": "",
+       "de": "Wörterbuch",
+       "emoji": "📕"
+      },
+      {
+       "fa": "فرهنگستان",
+       "tr": "",
+       "de": "(Sprach-)Akademie",
+       "emoji": "🏛️"
+      },
+      {
+       "fa": "معادل",
+       "tr": "",
+       "de": "Entsprechung, Äquivalent",
+       "emoji": "⚖️"
+      },
+      {
+       "fa": "مترجم",
+       "tr": "",
+       "de": "Übersetzer/in",
+       "emoji": "🌐"
+      },
+      {
+       "fa": "زبان‌شناس",
+       "tr": "",
+       "de": "Sprachwissenschaftler/in",
+       "emoji": "🔬"
+      },
+      {
+       "fa": "رسم‌الخط",
+       "tr": "",
+       "de": "Rechtschreibung, Schreibweise",
+       "emoji": "✏️"
+      }
+     ]
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "بیت",
+       "tr": "",
+       "de": "Vers, Doppelvers",
+       "emoji": "📜"
+      },
+      {
+       "fa": "رسم‌الخط",
+       "tr": "",
+       "de": "Rechtschreibung, Schreibweise",
+       "emoji": "✏️"
+      },
+      {
+       "fa": "مصوت",
+       "tr": "",
+       "de": "Vokal",
+       "emoji": "🅰️"
+      },
+      {
+       "fa": "صامت",
+       "tr": "",
+       "de": "Konsonant",
+       "emoji": "🅱️"
+      },
+      {
+       "fa": "فرهنگستان",
+       "tr": "",
+       "de": "(Sprach-)Akademie",
+       "emoji": "🏛️"
+      },
+      {
+       "fa": "مصراع",
+       "tr": "",
+       "de": "Halbvers",
+       "emoji": "✂️"
+      }
+     ],
+     "titel": "Was bedeutet das?"
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "رسم‌الخط",
+       "tr": "",
+       "de": "Rechtschreibung, Schreibweise",
+       "emoji": "✏️"
+      },
+      {
+       "fa": "مترجم",
+       "tr": "",
+       "de": "Übersetzer/in",
+       "emoji": "🌐"
+      },
+      {
+       "fa": "معادل",
+       "tr": "",
+       "de": "Entsprechung, Äquivalent",
+       "emoji": "⚖️"
+      },
+      {
+       "fa": "فرهنگ لغت",
+       "tr": "",
+       "de": "Wörterbuch",
+       "emoji": "📕"
+      },
+      {
+       "fa": "صامت",
+       "tr": "",
+       "de": "Konsonant",
+       "emoji": "🅱️"
+      },
+      {
+       "fa": "فرهنگستان",
+       "tr": "",
+       "de": "(Sprach-)Akademie",
+       "emoji": "🏛️"
+      }
+     ],
+     "titel": "Memory: Bild & Wort"
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>در زبان فارسی، «پ» یک ___ است، اما «آ» یک مصوت است.</span><br><span class='mini'>Im Persischen ist ‹p› ein Konsonant, ‹a› dagegen ein Vokal.</span>",
+       "optionen": [
+        "صامت",
+        "زبان رسمی",
+        "گویشور"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>در زبان فارسی، «پ» یک صامت است، اما «آ» یک مصوت است.</span>"
+      },
+      {
+       "frage": "<span class='fa'>هر ___ شاهنامه از دو مصراع ساخته شده است.</span><br><span class='mini'>Jeder Vers des Schahname besteht aus zwei Halbversen.</span>",
+       "optionen": [
+        "بیت",
+        "تمدن",
+        "گویش"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>هر بیت شاهنامه از دو مصراع ساخته شده است.</span>"
+      },
+      {
+       "frage": "<span class='fa'>سعدی گلستان را به ___ و شعر نوشته است.</span><br><span class='mini'>Saadi hat den Golestan in Prosa und Versen geschrieben.</span>",
+       "optionen": [
+        "نثر",
+        "دوره",
+        "گویشور"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>سعدی گلستان را به نثر و شعر نوشته است.</span>"
+      },
+      {
+       "frage": "<span class='fa'>اگر معنی یک واژه را نمی‌دانی، در ___ نگاه کن.</span><br><span class='mini'>Wenn du die Bedeutung eines Wortes nicht kennst, schau im Wörterbuch nach.</span>",
+       "optionen": [
+        "فرهنگ لغت",
+        "تمدن",
+        "مرز"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>اگر معنی یک واژه را نمی‌دانی، در فرهنگ لغت نگاه کن.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Schrift & Text",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 45,
+     "ziel": 10,
+     "woerter": [
+      {
+       "fa": "حرف",
+       "a": "Buchstabe"
+      },
+      {
+       "fa": "مصوت",
+       "a": "Vokal"
+      },
+      {
+       "fa": "صامت",
+       "a": "Konsonant"
+      },
+      {
+       "fa": "بیت",
+       "a": "Vers, Doppelvers"
+      },
+      {
+       "fa": "مصراع",
+       "a": "Halbvers"
+      },
+      {
+       "fa": "نثر",
+       "a": "Prosa"
+      },
+      {
+       "fa": "فرهنگ لغت",
+       "a": "Wörterbuch"
+      },
+      {
+       "fa": "فرهنگستان",
+       "a": "(Sprach-)Akademie"
+      },
+      {
+       "fa": "معادل",
+       "a": "Entsprechung, Äquivalent"
+      },
+      {
+       "fa": "مترجم",
+       "a": "Übersetzer/in"
+      },
+      {
+       "fa": "زبان‌شناس",
+       "a": "Sprachwissenschaftler/in"
+      },
+      {
+       "fa": "رسم‌الخط",
+       "a": "Rechtschreibung, Schreibweise"
+      }
+     ]
+    }
+   ]
+  },
+  {
    "id": "v",
    "titel": "Verben & Ausdrücke",
    "vorschau": "رواج داشتن · به شمار رفتن · ریشه داشتن",
@@ -880,10 +1171,10 @@
      "links": "de",
      "paare": [
       {
-       "fa": "پدید آمدن",
+       "fa": "رواج داشتن",
        "tr": "",
-       "de": "entstehen",
-       "emoji": "✨"
+       "de": "verbreitet sein",
+       "emoji": "📣"
       },
       {
        "fa": "ریشه داشتن",
@@ -898,12 +1189,6 @@
        "emoji": "🏷️"
       },
       {
-       "fa": "رواج داشتن",
-       "tr": "",
-       "de": "verbreitet sein",
-       "emoji": "📣"
-      },
-      {
        "fa": "پیوند دادن",
        "tr": "",
        "de": "verbinden",
@@ -914,6 +1199,12 @@
        "tr": "",
        "de": "beeinflussen",
        "emoji": "🌀"
+      },
+      {
+       "fa": "پدید آمدن",
+       "tr": "",
+       "de": "entstehen",
+       "emoji": "✨"
       }
      ],
      "titel": "Was bedeutet das?"
@@ -1063,6 +1354,54 @@
        "a": "Nachbar/in"
       },
       {
+       "fa": "حرف",
+       "a": "Buchstabe"
+      },
+      {
+       "fa": "مصوت",
+       "a": "Vokal"
+      },
+      {
+       "fa": "صامت",
+       "a": "Konsonant"
+      },
+      {
+       "fa": "بیت",
+       "a": "Vers, Doppelvers"
+      },
+      {
+       "fa": "مصراع",
+       "a": "Halbvers"
+      },
+      {
+       "fa": "نثر",
+       "a": "Prosa"
+      },
+      {
+       "fa": "فرهنگ لغت",
+       "a": "Wörterbuch"
+      },
+      {
+       "fa": "فرهنگستان",
+       "a": "(Sprach-)Akademie"
+      },
+      {
+       "fa": "معادل",
+       "a": "Entsprechung, Äquivalent"
+      },
+      {
+       "fa": "مترجم",
+       "a": "Übersetzer/in"
+      },
+      {
+       "fa": "زبان‌شناس",
+       "a": "Sprachwissenschaftler/in"
+      },
+      {
+       "fa": "رسم‌الخط",
+       "a": "Rechtschreibung, Schreibweise"
+      },
+      {
        "fa": "رواج داشتن",
        "a": "verbreitet sein"
       },
@@ -1098,7 +1437,7 @@
     {
      "typ": "info",
      "titel": "Gleiche Bedeutung – anderes Wort",
-     "text": "<p>Gehobene Texte wechseln gern zwischen <b>persischen</b> und <b>arabischstämmigen</b> Wörtern gleicher Bedeutung. Lerne sie paarweise:</p><ul><li><span class='fa'>واژه</span> = <span class='fa'>کلمه</span> – Wort</li><li><span class='fa'>سده</span> = <span class='fa'>قرن</span> – Jahrhundert</li><li><span class='fa'>دانشمند</span> = <span class='fa'>عالم</span> – Gelehrte/r</li><li><span class='fa'>پژوهش</span> = <span class='fa'>تحقیق</span> – Forschung</li><li><span class='fa'>گفتگو</span> = <span class='fa'>مکالمه</span> – Gespräch</li><li><span class='fa'>زادگاه</span> = <span class='fa'>محل تولد</span> – Geburtsort</li></ul>",
+     "text": "<p>Gehobene Texte wechseln gern zwischen <b>persischen</b> und <b>arabischstämmigen</b> Wörtern gleicher Bedeutung. Lerne sie paarweise:</p><ul><li><span class='fa'>واژه</span> = <span class='fa'>کلمه</span> – Wort</li><li><span class='fa'>سده</span> = <span class='fa'>قرن</span> – Jahrhundert</li><li><span class='fa'>دانشمند</span> = <span class='fa'>عالم</span> – Gelehrte/r</li><li><span class='fa'>پژوهش</span> = <span class='fa'>تحقیق</span> – Forschung</li><li><span class='fa'>گفتگو</span> = <span class='fa'>مکالمه</span> – Gespräch</li><li><span class='fa'>زادگاه</span> = <span class='fa'>محل تولد</span> – Geburtsort</li><li><span class='fa'>کهن</span> = <span class='fa'>باستانی</span> – alt, antik</li><li><span class='fa'>ترجمه</span> = <span class='fa'>برگردان</span> – Übersetzung</li><li><span class='fa'>واژگان</span> = <span class='fa'>لغات</span> – Wortschatz</li><li><span class='fa'>پیوند</span> = <span class='fa'>ارتباط</span> – Verbindung</li></ul>",
      "stil": "merke"
     },
     {
@@ -1106,16 +1445,10 @@
      "links": "x",
      "paare": [
       {
-       "fa": "پژوهش",
+       "fa": "گفتگو",
        "tr": "",
-       "de": "Forschung",
-       "x": "تحقیق"
-      },
-      {
-       "fa": "واژه",
-       "tr": "",
-       "de": "Wort",
-       "x": "کلمه"
+       "de": "Gespräch",
+       "x": "مکالمه"
       },
       {
        "fa": "سده",
@@ -1130,16 +1463,22 @@
        "x": "عالم"
       },
       {
+       "fa": "واژه",
+       "tr": "",
+       "de": "Wort",
+       "x": "کلمه"
+      },
+      {
+       "fa": "ترجمه",
+       "tr": "",
+       "de": "Übersetzung",
+       "x": "برگردان"
+      },
+      {
        "fa": "زادگاه",
        "tr": "",
        "de": "Geburtsort",
        "x": "محل تولد"
-      },
-      {
-       "fa": "گفتگو",
-       "tr": "",
-       "de": "Gespräch",
-       "x": "مکالمه"
       }
      ],
      "titel": "Finde das Synonym"
@@ -1147,17 +1486,29 @@
     {
      "typ": "info",
      "titel": "Gegensätze",
-     "text": "<ul><li><span class='fa'>قدیمی</span> ↔ <span class='fa'>امروزی</span> – alt ↔ heutig</li><li><span class='fa'>رسمی</span> ↔ <span class='fa'>محاوره‌ای</span> – förmlich ↔ umgangssprachlich</li><li><span class='fa'>نوشتاری</span> ↔ <span class='fa'>گفتاری</span> – geschrieben ↔ gesprochen</li><li><span class='fa'>نزدیک</span> ↔ <span class='fa'>دور</span> – nah ↔ fern</li></ul>"
+     "text": "<ul><li><span class='fa'>قدیمی</span> ↔ <span class='fa'>امروزی</span> – alt ↔ heutig</li><li><span class='fa'>رسمی</span> ↔ <span class='fa'>محاوره‌ای</span> – förmlich ↔ umgangssprachlich</li><li><span class='fa'>نوشتاری</span> ↔ <span class='fa'>گفتاری</span> – geschrieben ↔ gesprochen</li><li><span class='fa'>نزدیک</span> ↔ <span class='fa'>دور</span> – nah ↔ fern</li><li><span class='fa'>کهن</span> ↔ <span class='fa'>نو</span> – alt ↔ neu</li><li><span class='fa'>رایج</span> ↔ <span class='fa'>نادر</span> – verbreitet ↔ selten</li></ul>"
     },
     {
      "typ": "paare",
      "links": "x",
      "paare": [
       {
-       "fa": "نوشتاری",
+       "fa": "رایج",
        "tr": "",
-       "de": "geschrieben ↔ gesprochen",
-       "x": "گفتاری"
+       "de": "verbreitet ↔ selten",
+       "x": "نادر"
+      },
+      {
+       "fa": "کهن",
+       "tr": "",
+       "de": "alt ↔ neu",
+       "x": "نو"
+      },
+      {
+       "fa": "قدیمی",
+       "tr": "",
+       "de": "alt ↔ heutig",
+       "x": "امروزی"
       },
       {
        "fa": "رسمی",
@@ -1172,10 +1523,10 @@
        "x": "دور"
       },
       {
-       "fa": "قدیمی",
+       "fa": "نوشتاری",
        "tr": "",
-       "de": "alt ↔ heutig",
-       "x": "امروزی"
+       "de": "geschrieben ↔ gesprochen",
+       "x": "گفتاری"
       }
      ],
      "titel": "Finde das Gegenteil"
@@ -1185,11 +1536,11 @@
      "titel": "Synonym-Quiz",
      "fragen": [
       {
-       "frage": "Synonym von <span class='fa'>زادگاه</span>?",
+       "frage": "Synonym von <span class='fa'>واژگان</span>?",
        "optionen": [
-        "محل تولد",
-        "تحقیق",
-        "مکالمه"
+        "لغات",
+        "عالم",
+        "ارتباط"
        ],
        "richtig": 0,
        "optFa": true,
@@ -1199,8 +1550,8 @@
        "frage": "Synonym von <span class='fa'>سده</span>?",
        "optionen": [
         "قرن",
-        "تحقیق",
-        "عالم"
+        "کلمه",
+        "لغات"
        ],
        "richtig": 0,
        "optFa": true,
@@ -1211,18 +1562,18 @@
        "optionen": [
         "مکالمه",
         "قرن",
-        "محل تولد"
+        "برگردان"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false
       },
       {
-       "frage": "Synonym von <span class='fa'>پژوهش</span>?",
+       "frage": "Synonym von <span class='fa'>واژه</span>?",
        "optionen": [
-        "تحقیق",
         "کلمه",
-        "عالم"
+        "عالم",
+        "محل تولد"
        ],
        "richtig": 0,
        "optFa": true,
@@ -1232,8 +1583,8 @@
        "frage": "Synonym von <span class='fa'>دانشمند</span>?",
        "optionen": [
         "عالم",
-        "قرن",
-        "محل تولد"
+        "باستانی",
+        "مکالمه"
        ],
        "richtig": 0,
        "optFa": true,
@@ -1306,19 +1657,19 @@
      "links": "de",
      "paare": [
       {
+       "fa": "او در دانشگاه تهران علوم انسانی خوانده است.",
+       "tr": "",
+       "de": "Er/Sie hat an der Universität Teheran Geisteswissenschaften studiert."
+      },
+      {
        "fa": "آثار این شاعر به بیش از بیست زبان ترجمه شده است.",
        "tr": "",
        "de": "Die Werke dieses Dichters wurden in mehr als zwanzig Sprachen übersetzt."
       },
       {
-       "fa": "افراد زیادی در این منطقه دو زبان می‌دانند.",
+       "fa": "این گویش در نقاط دورافتاده‌ی کوهستان رایج است.",
        "tr": "",
-       "de": "Viele Menschen in dieser Region sprechen zwei Sprachen."
-      },
-      {
-       "fa": "او در دانشگاه تهران علوم انسانی خوانده است.",
-       "tr": "",
-       "de": "Er/Sie hat an der Universität Teheran Geisteswissenschaften studiert."
+       "de": "Dieser Dialekt ist in abgelegenen Gegenden des Gebirges verbreitet."
       },
       {
        "fa": "آثار باستانی هخامنشی در جنوب ایران قرار دارند.",
@@ -1326,14 +1677,14 @@
        "de": "Die antiken Denkmäler der Achämeniden liegen im Süden Irans."
       },
       {
-       "fa": "اخبار امروز را در روزنامه خواندی؟",
+       "fa": "افراد زیادی در این منطقه دو زبان می‌دانند.",
        "tr": "",
-       "de": "Hast du die heutigen Nachrichten in der Zeitung gelesen?"
+       "de": "Viele Menschen in dieser Region sprechen zwei Sprachen."
       },
       {
-       "fa": "در کتب قدیمی این واژه به شکل دیگری نوشته شده است.",
+       "fa": "شعرای بزرگ فارسی در مناطق مختلفی زندگی می‌کردند.",
        "tr": "",
-       "de": "In alten Büchern ist dieses Wort anders geschrieben."
+       "de": "Die großen persischen Dichter lebten in verschiedenen Regionen."
       }
      ],
      "titel": "Was bedeutet der Satz?"
@@ -1466,7 +1817,7 @@
         "است"
        ],
        "extra": [
-        "قرار"
+        "جنوب"
        ]
       },
       {
@@ -1484,7 +1835,7 @@
         "است"
        ],
        "extra": [
-        "بزرگ"
+        "بیش"
        ]
       },
       {
@@ -1502,7 +1853,7 @@
         "می‌دانند"
        ],
        "extra": [
-        "علوم"
+        "شکل"
        ]
       },
       {
@@ -1523,7 +1874,7 @@
         "است"
        ],
        "extra": [
-        "افراد"
+        "اخبار"
        ]
       },
       {
@@ -1541,7 +1892,7 @@
         "می‌کردند"
        ],
        "extra": [
-        "جنوب"
+        "است."
        ]
       }
      ]
@@ -1703,34 +2054,34 @@
      "links": "de",
      "paare": [
       {
-       "fa": "معلمان این مدرسه همه دو زبان می‌دانند.",
-       "tr": "",
-       "de": "Die Lehrkräfte dieser Schule sprechen alle zwei Sprachen."
-      },
-      {
-       "fa": "مشکلات زبان‌آموزان معمولاً در تلفظ است.",
-       "tr": "",
-       "de": "Die Probleme der Sprachlernenden liegen meist in der Aussprache."
-      },
-      {
-       "fa": "تحقیقات جدید نشان می‌دهد که دوزبانگی برای مغز مفید است.",
-       "tr": "",
-       "de": "Neue Forschungen zeigen, dass Zweisprachigkeit dem Gehirn nützt."
-      },
-      {
-       "fa": "این روستا امکانات زیادی ندارد.",
-       "tr": "",
-       "de": "Dieses Dorf hat nicht viele Einrichtungen."
-      },
-      {
        "fa": "دانشجویان خارجی در کلاس‌های تابستانی شرکت می‌کنند.",
        "tr": "",
        "de": "Ausländische Studierende nehmen an den Sommerkursen teil."
       },
       {
+       "fa": "در بازار میوه‌جات و سبزیجات تازه می‌فروشند.",
+       "tr": "",
+       "de": "Auf dem Markt verkauft man frisches Obst und Gemüse."
+      },
+      {
        "fa": "مسافرین محترم، لطفاً کمربندهای خود را ببندید.",
        "tr": "",
        "de": "Sehr geehrte Fahrgäste, bitte schnallen Sie sich an."
+      },
+      {
+       "fa": "معلمان این مدرسه همه دو زبان می‌دانند.",
+       "tr": "",
+       "de": "Die Lehrkräfte dieser Schule sprechen alle zwei Sprachen."
+      },
+      {
+       "fa": "اطلاعات بیشتر را در سایت ما پیدا می‌کنید.",
+       "tr": "",
+       "de": "Weitere Informationen finden Sie auf unserer Website."
+      },
+      {
+       "fa": "تحقیقات جدید نشان می‌دهد که دوزبانگی برای مغز مفید است.",
+       "tr": "",
+       "de": "Neue Forschungen zeigen, dass Zweisprachigkeit dem Gehirn nützt."
       }
      ],
      "titel": "Was bedeutet der Satz?"
@@ -1860,7 +2211,7 @@
         "می‌کنید"
        ],
        "extra": [
-        "دوزبانگی"
+        "تابستانی"
        ]
       },
       {
@@ -1880,7 +2231,7 @@
         "است"
        ],
        "extra": [
-        "دو"
+        "ما"
        ]
       },
       {
@@ -1895,7 +2246,7 @@
         "ندارد"
        ],
        "extra": [
-        "دوزبانگی"
+        "می‌دانند."
        ]
       },
       {
@@ -1912,7 +2263,7 @@
         "می‌کنند"
        ],
        "extra": [
-        "تازه"
+        "و"
        ]
       },
       {
@@ -1929,7 +2280,7 @@
         "می‌دانند"
        ],
        "extra": [
-        "سبزیجات"
+        "شرکت"
        ]
       }
      ]
@@ -2038,17 +2389,6 @@
      "titel": "Quer durch die Grammatik",
      "fragen": [
       {
-       "frage": "„Gemüse (Sammelbegriff)“",
-       "optionen": [
-        "سبزیجات",
-        "سبزیان",
-        "سبزین"
-       ],
-       "richtig": 0,
-       "optFa": true,
-       "hoeren": false
-      },
-      {
        "frage": "Mehrzahl von <span class='fa'>اثر</span>:",
        "optionen": [
         "آثار",
@@ -2060,11 +2400,22 @@
        "hoeren": false
       },
       {
-       "frage": "„Forschungen“",
+       "frage": "Welche Form ist <b>sehr förmlich</b>?",
        "optionen": [
-        "تحقیقات",
-        "تحقیقین",
-        "تحقیقان"
+        "معلمین",
+        "معلم‌ها",
+        "معلمان"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "Einzahl von <span class='fa'>نقاط</span>:",
+       "optionen": [
+        "نقطه",
+        "نقط",
+        "ناقط"
        ],
        "richtig": 0,
        "optFa": true,
@@ -2082,22 +2433,22 @@
        "hoeren": false
       },
       {
-       "frage": "„die Geisteswissenschaften“",
+       "frage": "„Studierende“",
        "optionen": [
-        "علوم انسانی",
-        "علم‌های انسان",
-        "عالم انسانی"
+        "دانشجویان",
+        "دانشجوات",
+        "دانشجوجات"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false
       },
       {
-       "frage": "„Studierende“",
+       "frage": "„Gemüse (Sammelbegriff)“",
        "optionen": [
-        "دانشجویان",
-        "دانشجوات",
-        "دانشجوجات"
+        "سبزیجات",
+        "سبزیان",
+        "سبزین"
        ],
        "richtig": 0,
        "optFa": true,
@@ -2110,22 +2461,11 @@
      "titel": "Was bedeutet der Satz?",
      "fragen": [
       {
-       "frage": "„In alten Büchern ist dieses Wort anders geschrieben.“",
+       "frage": "„Die Werke dieses Dichters wurden in mehr als zwanzig Sprachen übersetzt.“",
        "optionen": [
-        "در کتب قدیمی این واژه به شکل دیگری نوشته شده است.",
-        "شعرای بزرگ فارسی در مناطق مختلفی زندگی می‌کردند.",
-        "دانشجویان خارجی در کلاس‌های تابستانی شرکت می‌کنند."
-       ],
-       "richtig": 0,
-       "optFa": true,
-       "hoeren": false
-      },
-      {
-       "frage": "„Ausländische Studierende nehmen an den Sommerkursen teil.“",
-       "optionen": [
-        "دانشجویان خارجی در کلاس‌های تابستانی شرکت می‌کنند.",
-        "این روستا امکانات زیادی ندارد.",
-        "در کتب قدیمی این واژه به شکل دیگری نوشته شده است."
+        "آثار این شاعر به بیش از بیست زبان ترجمه شده است.",
+        "مشکلات زبان‌آموزان معمولاً در تلفظ است.",
+        "افراد زیادی در این منطقه دو زبان می‌دانند."
        ],
        "richtig": 0,
        "optFa": true,
@@ -2136,7 +2476,7 @@
        "optionen": [
         "معلمان این مدرسه همه دو زبان می‌دانند.",
         "آثار این شاعر به بیش از بیست زبان ترجمه شده است.",
-        "در بازار میوه‌جات و سبزیجات تازه می‌فروشند."
+        "آثار باستانی هخامنشی در جنوب ایران قرار دارند."
        ],
        "richtig": 0,
        "optFa": true,
@@ -2146,30 +2486,41 @@
        "frage": "„Auf dem Markt verkauft man frisches Obst und Gemüse.“",
        "optionen": [
         "در بازار میوه‌جات و سبزیجات تازه می‌فروشند.",
-        "مشکلات زبان‌آموزان معمولاً در تلفظ است.",
-        "افراد زیادی در این منطقه دو زبان می‌دانند."
-       ],
-       "richtig": 0,
-       "optFa": true,
-       "hoeren": false
-      },
-      {
-       "frage": "„Sehr geehrte Fahrgäste, bitte schnallen Sie sich an.“",
-       "optionen": [
-        "مسافرین محترم، لطفاً کمربندهای خود را ببندید.",
-        "آثار این شاعر به بیش از بیست زبان ترجمه شده است.",
-        "آثار باستانی هخامنشی در جنوب ایران قرار دارند."
-       ],
-       "richtig": 0,
-       "optFa": true,
-       "hoeren": false
-      },
-      {
-       "frage": "„Die Probleme der Sprachlernenden liegen meist in der Aussprache.“",
-       "optionen": [
-        "مشکلات زبان‌آموزان معمولاً در تلفظ است.",
         "او در دانشگاه تهران علوم انسانی خوانده است.",
-        "در کتب قدیمی این واژه به شکل دیگری نوشته شده است."
+        "مشکلات زبان‌آموزان معمولاً در تلفظ است."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Weitere Informationen finden Sie auf unserer Website.“",
+       "optionen": [
+        "اطلاعات بیشتر را در سایت ما پیدا می‌کنید.",
+        "معلمان این مدرسه همه دو زبان می‌دانند.",
+        "در بازار میوه‌جات و سبزیجات تازه می‌فروشند."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Ausländische Studierende nehmen an den Sommerkursen teil.“",
+       "optionen": [
+        "دانشجویان خارجی در کلاس‌های تابستانی شرکت می‌کنند.",
+        "آثار باستانی هخامنشی در جنوب ایران قرار دارند.",
+        "او در دانشگاه تهران علوم انسانی خوانده است."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Er/Sie hat an der Universität Teheran Geisteswissenschaften studiert.“",
+       "optionen": [
+        "او در دانشگاه تهران علوم انسانی خوانده است.",
+        "تحقیقات جدید نشان می‌دهد که دوزبانگی برای مغز مفید است.",
+        "معلمان این مدرسه همه دو زبان می‌دانند."
        ],
        "richtig": 0,
        "optFa": true,
@@ -2184,49 +2535,29 @@
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
-        "Die Lehrkräfte dieser Schule sprechen alle zwei Sprachen.",
-        "Die antiken Denkmäler der Achämeniden liegen im Süden Irans.",
-        "Er/Sie hat an der Universität Teheran Geisteswissenschaften studiert."
-       ],
-       "richtig": 0,
-       "fa": "معلمان این مدرسه همه دو زبان می‌دانند."
-      },
-      {
-       "frage": "Was bedeutet der Satz?",
-       "optionen": [
-        "Auf dem Markt verkauft man frisches Obst und Gemüse.",
-        "Neue Forschungen zeigen, dass Zweisprachigkeit dem Gehirn nützt.",
-        "Die Lehrkräfte dieser Schule sprechen alle zwei Sprachen."
-       ],
-       "richtig": 0,
-       "fa": "در بازار میوه‌جات و سبزیجات تازه می‌فروشند."
-      },
-      {
-       "frage": "Was bedeutet der Satz?",
-       "optionen": [
-        "Neue Forschungen zeigen, dass Zweisprachigkeit dem Gehirn nützt.",
         "Die Werke dieses Dichters wurden in mehr als zwanzig Sprachen übersetzt.",
-        "Viele Menschen in dieser Region sprechen zwei Sprachen."
-       ],
-       "richtig": 0,
-       "fa": "تحقیقات جدید نشان می‌دهد که دوزبانگی برای مغز مفید است."
-      },
-      {
-       "frage": "Was bedeutet der Satz?",
-       "optionen": [
-        "Ausländische Studierende nehmen an den Sommerkursen teil.",
         "Viele Menschen in dieser Region sprechen zwei Sprachen.",
         "In alten Büchern ist dieses Wort anders geschrieben."
        ],
        "richtig": 0,
-       "fa": "دانشجویان خارجی در کلاس‌های تابستانی شرکت می‌کنند."
+       "fa": "آثار این شاعر به بیش از بیست زبان ترجمه شده است."
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Viele Menschen in dieser Region sprechen zwei Sprachen.",
+        "Auf dem Markt verkauft man frisches Obst und Gemüse.",
+        "Dieses Dorf hat nicht viele Einrichtungen."
+       ],
+       "richtig": 0,
+       "fa": "افراد زیادی در این منطقه دو زبان می‌دانند."
       },
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
         "Die antiken Denkmäler der Achämeniden liegen im Süden Irans.",
-        "Auf dem Markt verkauft man frisches Obst und Gemüse.",
-        "Dieses Dorf hat nicht viele Einrichtungen."
+        "Die großen persischen Dichter lebten in verschiedenen Regionen.",
+        "Die Werke dieses Dichters wurden in mehr als zwanzig Sprachen übersetzt."
        ],
        "richtig": 0,
        "fa": "آثار باستانی هخامنشی در جنوب ایران قرار دارند."
@@ -2234,12 +2565,32 @@
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
-        "Dieser Dialekt ist in abgelegenen Gegenden des Gebirges verbreitet.",
-        "Die großen persischen Dichter lebten in verschiedenen Regionen.",
-        "Die Werke dieses Dichters wurden in mehr als zwanzig Sprachen übersetzt."
+        "Ausländische Studierende nehmen an den Sommerkursen teil.",
+        "Dieses Dorf hat nicht viele Einrichtungen.",
+        "Weitere Informationen finden Sie auf unserer Website."
        ],
        "richtig": 0,
-       "fa": "این گویش در نقاط دورافتاده‌ی کوهستان رایج است."
+       "fa": "دانشجویان خارجی در کلاس‌های تابستانی شرکت می‌کنند."
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "In alten Büchern ist dieses Wort anders geschrieben.",
+        "Die großen persischen Dichter lebten in verschiedenen Regionen.",
+        "Viele Menschen in dieser Region sprechen zwei Sprachen."
+       ],
+       "richtig": 0,
+       "fa": "در کتب قدیمی این واژه به شکل دیگری نوشته شده است."
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Hast du die heutigen Nachrichten in der Zeitung gelesen?",
+        "Ausländische Studierende nehmen an den Sommerkursen teil.",
+        "Er/Sie hat an der Universität Teheran Geisteswissenschaften studiert."
+       ],
+       "richtig": 0,
+       "fa": "اخبار امروز را در روزنامه خواندی؟"
       }
      ]
     },
@@ -2386,6 +2737,54 @@
       {
        "fa": "همسایه",
        "a": "Nachbar/in"
+      },
+      {
+       "fa": "حرف",
+       "a": "Buchstabe"
+      },
+      {
+       "fa": "مصوت",
+       "a": "Vokal"
+      },
+      {
+       "fa": "صامت",
+       "a": "Konsonant"
+      },
+      {
+       "fa": "بیت",
+       "a": "Vers, Doppelvers"
+      },
+      {
+       "fa": "مصراع",
+       "a": "Halbvers"
+      },
+      {
+       "fa": "نثر",
+       "a": "Prosa"
+      },
+      {
+       "fa": "فرهنگ لغت",
+       "a": "Wörterbuch"
+      },
+      {
+       "fa": "فرهنگستان",
+       "a": "(Sprach-)Akademie"
+      },
+      {
+       "fa": "معادل",
+       "a": "Entsprechung, Äquivalent"
+      },
+      {
+       "fa": "مترجم",
+       "a": "Übersetzer/in"
+      },
+      {
+       "fa": "زبان‌شناس",
+       "a": "Sprachwissenschaftler/in"
+      },
+      {
+       "fa": "رسم‌الخط",
+       "a": "Rechtschreibung, Schreibweise"
       },
       {
        "fa": "رواج داشتن",

@@ -2,7 +2,7 @@
  "id": "tx",
  "art": "texte",
  "titel": "Sachtext & Dialoge",
- "beschreibung": "Sachtext, Wortschatz im Kontext, zwei Dialoge, Redemittel und Schreibaufgabe.",
+ "beschreibung": "Sachtext, Wortschatz im Kontext, Alltagstext, drei Dialoge, Infotexte, Redemittel und Schreibaufgabe.",
  "stationen": [
   {
    "id": "t1",
@@ -12,7 +12,7 @@
     {
      "typ": "info",
      "titel": "Neue Wörter im Text",
-     "text": "<p><span class='fa'>زیرگونه</span> – Unterart · <span class='fa'>در آستانه‌ی انقراض</span> – kurz vor dem Aussterben · <span class='fa'>شبه‌جزیره</span> – Halbinsel · <span class='fa'>قلاده</span> – Zählwort für große Raubkatzen · <span class='fa'>برآورد</span> – Schätzung · <span class='fa'>مسافت طی کردن</span> – eine Strecke zurücklegen · <span class='fa'>فاجعه</span> – Katastrophe · <span class='fa'>شناسایی و شمارش</span> – Erkennung und Zählung · <span class='fa'>نقش بستن</span> – abgebildet werden · <span class='fa'>کرانه</span> – Küste, Ufer · <span class='fa'>هشدار دادن</span> – warnen</p>",
+     "text": "<p><span class='fa'>زیرگونه</span> – Unterart · <span class='fa'>در آستانه‌ی انقراض</span> – kurz vor dem Aussterben · <span class='fa'>رد اشک</span> – Tränenspur · <span class='fa'>شبه‌جزیره</span> – Halbinsel · <span class='fa'>بی‌رویه</span> – übermäßig, ungeregelt · <span class='fa'>قلاده</span> – Zählwort für große Raubkatzen · <span class='fa'>برآورد</span> – Schätzung · <span class='fa'>ذخیره‌گاه زیست‌کره</span> – Biosphärenreservat · <span class='fa'>مسافت طی کردن</span> – eine Strecke zurücklegen · <span class='fa'>فاجعه</span> – Katastrophe · <span class='fa'>منحصربه‌فرد</span> – einzigartig · <span class='fa'>تکثیر در اسارت</span> – Zucht in Gefangenschaft · <span class='fa'>نقش بستن</span> – abgebildet werden · <span class='fa'>کرانه</span> – Küste, Ufer · <span class='fa'>هشدار دادن</span> – warnen</p>",
      "stil": "merke"
     },
     {
@@ -26,9 +26,24 @@
        "de": "Der Gepard ist das schnellste Landtier der Welt, doch eine seiner Unterarten steht heute kurz vor dem Aussterben."
       },
       {
+       "fa": "این حیوان می‌تواند در دویدنی کوتاه به سرعتی حدود صد کیلومتر در ساعت برسد، اما این سرعت را فقط چند صد متر حفظ می‌کند.",
+       "tr": "",
+       "de": "Dieses Tier kann bei einem kurzen Sprint eine Geschwindigkeit von rund hundert Kilometern pro Stunde erreichen, hält dieses Tempo aber nur wenige hundert Meter durch."
+      },
+      {
+       "fa": "بدن باریک، پاهای بلند و سر کوچک آن برای دویدن ساخته شده‌اند و دو خط سیاه، مانند رد اشک، از گوشه‌ی چشم تا کنار دهانش کشیده شده است.",
+       "tr": "",
+       "de": "Sein schlanker Körper, die langen Beine und der kleine Kopf sind zum Laufen gemacht, und zwei schwarze Streifen ziehen sich wie Tränenspuren vom Augenwinkel bis zum Maul."
+      },
+      {
        "fa": "یوزپلنگ آسیایی زمانی در سرزمین گسترده‌ای از شبه‌جزیره‌ی عربستان تا هند زندگی می‌کرد.",
        "tr": "",
        "de": "Der Asiatische Gepard lebte einst in einem weiten Gebiet von der Arabischen Halbinsel bis nach Indien."
+      },
+      {
+       "fa": "اما به دلیل شکار بی‌رویه و نابودی زیستگاه‌ها، نسل آن در بیشتر این سرزمین‌ها منقرض شد؛ برای نمونه، در هند در دهه‌ی ۱۹۵۰ میلادی رسما منقرض اعلام شد.",
+       "tr": "",
+       "de": "Doch wegen übermäßiger Jagd und der Zerstörung von Lebensräumen starb er in den meisten dieser Gebiete aus; in Indien zum Beispiel wurde er in den 1950er-Jahren offiziell für ausgestorben erklärt."
       },
       {
        "fa": "امروز این حیوان فقط در ایران دیده می‌شود و جمعیت آن، طبق برآوردها، به کمتر از پنجاه قلاده رسیده است.",
@@ -36,9 +51,19 @@
        "de": "Heute kommt dieses Tier nur noch in Iran vor, und sein Bestand ist Schätzungen zufolge auf weniger als fünfzig Tiere gesunken."
       },
       {
+       "fa": "برخی برآوردهای سال‌های اخیر حتی از تعدادی بسیار کمتر سخن می‌گویند، زیرا شمارش دقیق این حیوان خجالتی در بیابان‌های پهناور بسیار دشوار است.",
+       "tr": "",
+       "de": "Einige Schätzungen der letzten Jahre sprechen sogar von einer deutlich geringeren Zahl, denn eine genaue Zählung dieses scheuen Tieres in den weiten Wüsten ist sehr schwierig."
+      },
+      {
        "fa": "زیستگاه اصلی یوزپلنگ دشت‌ها و بیابان‌های مرکزی ایران است، به‌ویژه منطقه‌ی حفاظت‌شده‌ی توران در استان سمنان.",
        "tr": "",
        "de": "Der wichtigste Lebensraum des Geparden sind die Ebenen und Wüsten Zentralirans, vor allem das Schutzgebiet Turan in der Provinz Semnan."
+      },
+      {
+       "fa": "توران از بزرگ‌ترین مناطق حفاظت‌شده‌ی ایران است و از سال ۱۹۷۶ میلادی در فهرست ذخیره‌گاه‌های زیست‌کره‌ی یونسکو قرار دارد.",
+       "tr": "",
+       "de": "Turan gehört zu den größten Schutzgebieten Irans und steht seit 1976 auf der Liste der UNESCO-Biosphärenreservate."
       },
       {
        "fa": "یوزپلنگ برخلاف پلنگ، حیوانی خجالتی است و تقریبا هیچ‌وقت به انسان حمله نمی‌کند.",
@@ -46,9 +71,24 @@
        "de": "Anders als der Leopard ist der Gepard ein scheues Tier und greift Menschen so gut wie nie an."
       },
       {
+       "fa": "ماده‌ی یوزپلنگ توله‌هایش را به‌تنهایی بزرگ می‌کند و توله‌ها حدود یک سال و نیم کنار مادر می‌مانند تا شکار کردن را یاد بگیرند.",
+       "tr": "",
+       "de": "Das Gepardenweibchen zieht seine Jungen allein auf, und die Jungtiere bleiben etwa anderthalb Jahre bei der Mutter, um das Jagen zu lernen."
+      },
+      {
+       "fa": "یوزپلنگ برخلاف گربه‌سانان بزرگ دیگر نمی‌تواند غرش کند و بیشتر با صداهایی شبیه جیک‌جیک پرندگان با توله‌هایش ارتباط برقرار می‌کند.",
+       "tr": "",
+       "de": "Anders als andere Großkatzen kann der Gepard nicht brüllen; mit seinen Jungen verständigt er sich vor allem mit Lauten, die an Vogelgezwitscher erinnern."
+      },
+      {
        "fa": "یکی از بزرگ‌ترین تهدیدها برای این گونه کمبود طعمه است؛ جمعیت جبیر و آهو در گذشته به دلیل شکار غیرقانونی به‌شدت کاهش یافت.",
        "tr": "",
        "de": "Eine der größten Bedrohungen für diese Art ist der Mangel an Beutetieren; die Bestände von Gazellen gingen früher wegen Wilderei stark zurück."
+      },
+      {
+       "fa": "طعمه‌ی اصلی یوزپلنگ در ایران جبیر و آهو است، اما گاهی کل، قوچ و حتی خرگوش هم شکار می‌کند.",
+       "tr": "",
+       "de": "Die Hauptbeute des Geparden in Iran sind Gazellen, doch manchmal jagt er auch Wildziegen, Wildschafe und sogar Hasen."
       },
       {
        "fa": "وقتی طعمه کم باشد، یوزپلنگ مجبور است برای پیدا کردن غذا مسافت‌های طولانی‌تری را طی کند.",
@@ -61,14 +101,29 @@
        "de": "Gerade diese langen Wanderungen führen ihn auf Straßen, vor allem auf die Straße Teheran–Maschhad, die nahe an seinen Lebensräumen vorbeiführt."
       },
       {
+       "fa": "بخشی از این جاده از پناهگاه حیات وحش میاندشت در خراسان شمالی می‌گذرد که یکی دیگر از زیستگاه‌های مهم یوزپلنگ است.",
+       "tr": "",
+       "de": "Ein Teil dieser Straße führt durch das Wildschutzgebiet Miandasht in Nord-Chorasan, einen weiteren wichtigen Lebensraum des Geparden."
+      },
+      {
        "fa": "در سال‌های اخیر چندین یوزپلنگ در تصادف با خودروها کشته شده‌اند و هر کدام از این مرگ‌ها برای جمعیتی چنین کوچک فاجعه است.",
        "tr": "",
        "de": "In den letzten Jahren wurden mehrere Geparden bei Unfällen mit Autos getötet, und jeder dieser Todesfälle ist für eine so kleine Population eine Katastrophe."
       },
       {
+       "fa": "برای کاهش این خطر، تابلوهای هشدار نصب شده و از رانندگان خواسته می‌شود در این بخش‌ها آهسته‌تر برانند.",
+       "tr": "",
+       "de": "Um diese Gefahr zu verringern, wurden Warnschilder aufgestellt, und Autofahrer werden gebeten, in diesen Abschnitten langsamer zu fahren."
+      },
+      {
        "fa": "تهدید دیگر، سگ‌های گله است: چوپانان برای حفاظت از دام‌های خود سگ نگه می‌دارند و این سگ‌ها گاهی به یوزپلنگ‌ها، به‌ویژه به توله‌ها، حمله می‌کنند.",
        "tr": "",
        "de": "Eine weitere Bedrohung sind Herdenhunde: Hirten halten Hunde zum Schutz ihres Viehs, und diese Hunde greifen manchmal Geparden an, besonders Jungtiere."
+      },
+      {
+       "fa": "از همین رو، برخی طرح‌های حفاظتی با چوپانان همکاری می‌کنند تا شمار سگ‌ها کنترل شود و دام‌ها از زیستگاه‌های حساس دور بمانند.",
+       "tr": "",
+       "de": "Deshalb arbeiten einige Schutzprojekte mit Hirten zusammen, damit die Zahl der Hunde kontrolliert wird und das Vieh von empfindlichen Lebensräumen fernbleibt."
       },
       {
        "fa": "چرای بیش از حد دام و کمبود آب نیز زیستگاه این حیوان را به‌تدریج تخریب می‌کند.",
@@ -86,9 +141,29 @@
        "de": "Wildhüter erkennen und zählen die Tiere mithilfe von Kamerafallen und schützen die Lebensräume vor Wilderern."
       },
       {
+       "fa": "از آنجا که نقش خال‌های بدن هر یوزپلنگ منحصربه‌فرد است، کارشناسان می‌توانند از روی عکس‌ها هر حیوان را جداگانه بشناسند.",
+       "tr": "",
+       "de": "Da das Fleckenmuster jedes Geparden einzigartig ist, können Fachleute anhand der Fotos jedes Tier einzeln erkennen."
+      },
+      {
+       "fa": "کار محیط‌بانان سخت و گاهی خطرناک است و شمار آنها در مقایسه با وسعت مناطق حفاظت‌شده کم است.",
+       "tr": "",
+       "de": "Die Arbeit der Wildhüter ist hart und manchmal gefährlich, und ihre Zahl ist im Vergleich zur Größe der Schutzgebiete gering."
+      },
+      {
        "fa": "در کنار آنها، داوطلبان و فعالان محیط زیست با کمپین‌های مختلف تلاش می‌کنند مردم را آگاه کنند و رانندگان را به رعایت سرعت مجاز تشویق کنند.",
        "tr": "",
        "de": "Daneben versuchen Freiwillige und Umweltaktivisten, die Menschen mit verschiedenen Kampagnen aufzuklären und Autofahrer zur Einhaltung des Tempolimits zu bewegen."
+      },
+      {
+       "fa": "بسیاری از کارشناسان معتقدند که حفاظت از یوزپلنگ تنها زمانی موفق می‌شود که مردم محلی نیز از آن سودی ببرند، برای نمونه از راه طبیعت‌گردی مسئولانه.",
+       "tr": "",
+       "de": "Viele Fachleute sind überzeugt, dass der Schutz des Geparden nur gelingt, wenn auch die örtliche Bevölkerung davon profitiert, zum Beispiel durch verantwortungsvollen Naturtourismus."
+      },
+      {
+       "fa": "در سال‌های اخیر تلاش‌هایی هم برای تکثیر یوزپلنگ در اسارت انجام شده، اما این کار تاکنون نتیجه‌ی پایداری نداشته است.",
+       "tr": "",
+       "de": "In den letzten Jahren gab es auch Versuche, Geparden in Gefangenschaft zu züchten, doch diese haben bisher keinen dauerhaften Erfolg gebracht."
       },
       {
        "fa": "در ایران روز سی‌ویکم شهریور «روز ملی یوزپلنگ ایرانی» نام گرفته است.",
@@ -116,9 +191,19 @@
        "de": "Dieses Tier ist eine der größten Leoparden-Unterarten der Welt und wird manchmal von Menschen getötet, weil es Vieh angreift."
       },
       {
+       "fa": "گورخر ایرانی نیز که روزگاری در دشت‌های وسیعی زندگی می‌کرد، امروز تنها در چند منطقه‌ی محدود، از جمله توران، دیده می‌شود.",
+       "tr": "",
+       "de": "Auch der Persische Onager, der einst in weiten Ebenen lebte, kommt heute nur noch in wenigen begrenzten Gebieten vor, darunter Turan."
+      },
+      {
        "fa": "ایران از نظر تنوع زیستی کشوری غنی است: از بیابان‌های خشک مرکزی تا جنگل‌های مرطوب شمال.",
        "tr": "",
        "de": "Iran ist reich an Biodiversität: von den trockenen Wüsten im Zentrum bis zu den feuchten Wäldern im Norden."
+      },
+      {
+       "fa": "پارک ملی گلستان در شمال شرق کشور قدیمی‌ترین پارک ملی ایران است و میان جنگل و دشت قرار دارد.",
+       "tr": "",
+       "de": "Der Golestan-Nationalpark im Nordosten des Landes ist der älteste Nationalpark Irans und liegt zwischen Wald und Steppe."
       },
       {
        "fa": "جنگل‌های هیرکانی در کرانه‌ی جنوبی دریای خزر از کهن‌ترین جنگل‌های جهان به شمار می‌روند.",
@@ -129,6 +214,11 @@
        "fa": "این جنگل‌ها در سال ۲۰۱۹ به‌عنوان میراث طبیعی جهانی در فهرست یونسکو ثبت شدند.",
        "tr": "",
        "de": "Diese Wälder wurden 2019 als Weltnaturerbe in die UNESCO-Liste aufgenommen."
+      },
+      {
+       "fa": "با این حال، کمبود آب، گسترش جاده‌ها و شهرها و آتش‌سوزی‌های جنگلی این گنجینه‌ی طبیعی را تهدید می‌کنند.",
+       "tr": "",
+       "de": "Dennoch bedrohen Wassermangel, die Ausbreitung von Straßen und Städten sowie Waldbrände diesen Naturschatz."
       },
       {
        "fa": "کارشناسان هشدار می‌دهند: چنانچه امروز اقدام نکنیم، نسل‌های آینده یوزپلنگ را فقط در عکس‌ها خواهند دید.",
@@ -163,6 +253,17 @@
         "falsch"
        ],
        "richtig": 1,
+       "fa": "یوزپلنگ می‌تواند سرعت بالای خود را چند کیلومتر حفظ کند.",
+       "fest": true,
+       "erkl": "Er hält das Tempo nur <b>wenige hundert Meter</b> durch."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
        "fa": "یوزپلنگ اغلب به انسان حمله می‌کند.",
        "fest": true,
        "erkl": "Der Gepard ist scheu und greift Menschen <b>so gut wie nie</b> an."
@@ -174,7 +275,7 @@
         "falsch"
        ],
        "richtig": 0,
-       "fa": "کمبود طعمه یکی از بزرگ‌ترین تهدیدها است.",
+       "fa": "توله‌ها حدود یک سال و نیم کنار مادر می‌مانند.",
        "fest": true
       },
       {
@@ -187,6 +288,16 @@
        "fa": "سگ‌های گله هیچ خطری برای یوزپلنگ ندارند.",
        "fest": true,
        "erkl": "Herdenhunde greifen Geparden an, <b>besonders Jungtiere</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "نقش خال‌های هر یوزپلنگ منحصربه‌فرد است.",
+       "fest": true
       },
       {
        "frage": "Richtig oder falsch?",
@@ -225,6 +336,15 @@
        "richtig": 0
       },
       {
+       "frage": "Wann wurde der Gepard in Indien offiziell für ausgestorben erklärt?",
+       "optionen": [
+        "in den 1950er-Jahren",
+        "in den 1990er-Jahren",
+        "im 18. Jahrhundert"
+       ],
+       "richtig": 0
+      },
+      {
        "frage": "Warum gerät der Gepard auf Straßen?",
        "optionen": [
         "Wegen Beutemangel legt er weite Strecken zurück.",
@@ -234,11 +354,11 @@
        "richtig": 0
       },
       {
-       "frage": "Wofür nutzen Wildhüter Kamerafallen?",
+       "frage": "Wie können Fachleute einzelne Geparden auf Fotos erkennen?",
        "optionen": [
-        "um Tiere zu erkennen und zu zählen",
-        "um Touristen zu fotografieren",
-        "um das Wetter zu beobachten"
+        "am einzigartigen Fleckenmuster",
+        "an der Farbe der Augen",
+        "an der Länge des Schwanzes"
        ],
        "richtig": 0
       },
@@ -256,7 +376,7 @@
        "optionen": [
         "die Hyrkanischen Wälder",
         "das Schutzgebiet Turan",
-        "die Wüste von Semnan"
+        "der Golestan-Nationalpark"
        ],
        "richtig": 0
       }
@@ -268,9 +388,24 @@
      "frage": "Bring die Sätze in die Reihenfolge des Textes.",
      "items": [
       {
+       "fa": "این حیوان می‌تواند در دویدنی کوتاه به سرعتی حدود صد کیلومتر در ساعت برسد، اما این سرعت را فقط چند صد متر حفظ می‌کند.",
+       "tr": "",
+       "de": "Dieses Tier kann bei einem kurzen Sprint eine Geschwindigkeit von rund hundert Kilometern pro Stunde erreichen, hält dieses Tempo aber nur wenige hundert Meter durch."
+      },
+      {
+       "fa": "بدن باریک، پاهای بلند و سر کوچک آن برای دویدن ساخته شده‌اند و دو خط سیاه، مانند رد اشک، از گوشه‌ی چشم تا کنار دهانش کشیده شده است.",
+       "tr": "",
+       "de": "Sein schlanker Körper, die langen Beine und der kleine Kopf sind zum Laufen gemacht, und zwei schwarze Streifen ziehen sich wie Tränenspuren vom Augenwinkel bis zum Maul."
+      },
+      {
        "fa": "یوزپلنگ آسیایی زمانی در سرزمین گسترده‌ای از شبه‌جزیره‌ی عربستان تا هند زندگی می‌کرد.",
        "tr": "",
        "de": "Der Asiatische Gepard lebte einst in einem weiten Gebiet von der Arabischen Halbinsel bis nach Indien."
+      },
+      {
+       "fa": "اما به دلیل شکار بی‌رویه و نابودی زیستگاه‌ها، نسل آن در بیشتر این سرزمین‌ها منقرض شد؛ برای نمونه، در هند در دهه‌ی ۱۹۵۰ میلادی رسما منقرض اعلام شد.",
+       "tr": "",
+       "de": "Doch wegen übermäßiger Jagd und der Zerstörung von Lebensräumen starb er in den meisten dieser Gebiete aus; in Indien zum Beispiel wurde er in den 1950er-Jahren offiziell für ausgestorben erklärt."
       },
       {
        "fa": "امروز این حیوان فقط در ایران دیده می‌شود و جمعیت آن، طبق برآوردها، به کمتر از پنجاه قلاده رسیده است.",
@@ -278,24 +413,9 @@
        "de": "Heute kommt dieses Tier nur noch in Iran vor, und sein Bestand ist Schätzungen zufolge auf weniger als fünfzig Tiere gesunken."
       },
       {
-       "fa": "زیستگاه اصلی یوزپلنگ دشت‌ها و بیابان‌های مرکزی ایران است، به‌ویژه منطقه‌ی حفاظت‌شده‌ی توران در استان سمنان.",
+       "fa": "برخی برآوردهای سال‌های اخیر حتی از تعدادی بسیار کمتر سخن می‌گویند، زیرا شمارش دقیق این حیوان خجالتی در بیابان‌های پهناور بسیار دشوار است.",
        "tr": "",
-       "de": "Der wichtigste Lebensraum des Geparden sind die Ebenen und Wüsten Zentralirans, vor allem das Schutzgebiet Turan in der Provinz Semnan."
-      },
-      {
-       "fa": "یوزپلنگ برخلاف پلنگ، حیوانی خجالتی است و تقریبا هیچ‌وقت به انسان حمله نمی‌کند.",
-       "tr": "",
-       "de": "Anders als der Leopard ist der Gepard ein scheues Tier und greift Menschen so gut wie nie an."
-      },
-      {
-       "fa": "یکی از بزرگ‌ترین تهدیدها برای این گونه کمبود طعمه است؛ جمعیت جبیر و آهو در گذشته به دلیل شکار غیرقانونی به‌شدت کاهش یافت.",
-       "tr": "",
-       "de": "Eine der größten Bedrohungen für diese Art ist der Mangel an Beutetieren; die Bestände von Gazellen gingen früher wegen Wilderei stark zurück."
-      },
-      {
-       "fa": "وقتی طعمه کم باشد، یوزپلنگ مجبور است برای پیدا کردن غذا مسافت‌های طولانی‌تری را طی کند.",
-       "tr": "",
-       "de": "Wenn es wenig Beute gibt, muss der Gepard auf der Nahrungssuche längere Strecken zurücklegen."
+       "de": "Einige Schätzungen der letzten Jahre sprechen sogar von einer deutlich geringeren Zahl, denn eine genaue Zählung dieses scheuen Tieres in den weiten Wüsten ist sehr schwierig."
       }
      ]
     }
@@ -314,8 +434,8 @@
        "frage": "<span class='fa'>___ سریع‌ترین حیوان خشکی جهان است، اما یکی از زیرگونه‌های آن امروز در آستانه‌ی انقراض قرار دارد.</span><br><span class='mini'>Der Gepard ist das schnellste Landtier der Welt, doch eine seiner Unterarten steht heute kurz vor dem Aussterben.</span>",
        "optionen": [
         "یوزپلنگ",
-        "شکارچی",
-        "کمپین"
+        "پلنگ",
+        "جبیر"
        ],
        "richtig": 0,
        "optFa": true,
@@ -326,8 +446,8 @@
        "frage": "<span class='fa'>___ آسیایی زمانی در سرزمین گسترده‌ای از شبه‌جزیره‌ی عربستان تا هند زندگی می‌کرد.</span><br><span class='mini'>Der Asiatische Gepard lebte einst in einem weiten Gebiet von der Arabischen Halbinsel bis nach Indien.</span>",
        "optionen": [
         "یوزپلنگ",
-        "گونه",
-        "داوطلب"
+        "تخریب",
+        "عقاب"
        ],
        "richtig": 0,
        "optFa": true,
@@ -335,11 +455,23 @@
        "erkl": "<span class='fa'>یوزپلنگ آسیایی زمانی در سرزمین گسترده‌ای از شبه‌جزیره‌ی عربستان تا هند زندگی می‌کرد.</span>"
       },
       {
+       "frage": "<span class='fa'>اما به دلیل شکار بی‌رویه و نابودی زیستگاه‌ها، نسل آن در بیشتر این سرزمین‌ها ___ شد؛ برای نمونه، در هند در دهه‌ی ۱۹۵۰ میلادی رسما منقرض اعلام شد.</span><br><span class='mini'>Doch wegen übermäßiger Jagd und der Zerstörung von Lebensräumen starb er in den meisten dieser Gebiete aus; in Indien zum Beispiel wurde er in den 1950er-Jahren offiziell für ausgestorben erklärt.</span>",
+       "optionen": [
+        "منقرض",
+        "عقاب",
+        "داوطلب"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>اما به دلیل شکار بی‌رویه و نابودی زیستگاه‌ها، نسل آن در بیشتر این سرزمین‌ها منقرض شد؛ برای نمونه، در هند در دهه‌ی ۱۹۵۰ میلادی رسما منقرض اعلام شد.</span>"
+      },
+      {
        "frage": "<span class='fa'>امروز این حیوان فقط در ایران دیده می‌شود و ___ آن، طبق برآوردها، به کمتر از پنجاه قلاده رسیده است.</span><br><span class='mini'>Heute kommt dieses Tier nur noch in Iran vor, und sein Bestand ist Schätzungen zufolge auf weniger als fünfzig Tiere gesunken.</span>",
        "optionen": [
         "جمعیت",
-        "چوپان",
-        "تخریب"
+        "شکارچی",
+        "بیابان"
        ],
        "richtig": 0,
        "optFa": true,
@@ -350,8 +482,8 @@
        "frage": "<span class='fa'>___ اصلی یوزپلنگ دشت‌ها و بیابان‌های مرکزی ایران است، به‌ویژه منطقه‌ی حفاظت‌شده‌ی توران در استان سمنان.</span><br><span class='mini'>Der wichtigste Lebensraum des Geparden sind die Ebenen und Wüsten Zentralirans, vor allem das Schutzgebiet Turan in der Provinz Semnan.</span>",
        "optionen": [
         "زیستگاه",
-        "جمعیت",
-        "طعمه"
+        "قوچ",
+        "روباه"
        ],
        "richtig": 0,
        "optFa": true,
@@ -362,25 +494,13 @@
        "frage": "<span class='fa'>___ برخلاف پلنگ، حیوانی خجالتی است و تقریبا هیچ‌وقت به انسان حمله نمی‌کند.</span><br><span class='mini'>Anders als der Leopard ist der Gepard ein scheues Tier und greift Menschen so gut wie nie an.</span>",
        "optionen": [
         "یوزپلنگ",
-        "پلنگ",
-        "جاده"
+        "جمعیت",
+        "نماد"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
        "erkl": "<span class='fa'>یوزپلنگ برخلاف پلنگ، حیوانی خجالتی است و تقریبا هیچ‌وقت به انسان حمله نمی‌کند.</span>"
-      },
-      {
-       "frage": "<span class='fa'>یکی از بزرگ‌ترین تهدیدها برای این گونه کمبود طعمه است؛ جمعیت جبیر و آهو در گذشته به دلیل ___ به‌شدت کاهش یافت.</span><br><span class='mini'>Eine der größten Bedrohungen für diese Art ist der Mangel an Beutetieren; die Bestände von Gazellen gingen früher wegen Wilderei stark zurück.</span>",
-       "optionen": [
-        "شکار غیرقانونی",
-        "گله",
-        "داوطلب"
-       ],
-       "richtig": 0,
-       "optFa": true,
-       "hoeren": false,
-       "erkl": "<span class='fa'>یکی از بزرگ‌ترین تهدیدها برای این گونه کمبود طعمه است؛ جمعیت جبیر و آهو در گذشته به دلیل شکار غیرقانونی به‌شدت کاهش یافت.</span>"
       }
      ]
     },
@@ -389,11 +509,59 @@
      "titel": "Welches Wort fehlt im Text?",
      "fragen": [
       {
+       "frage": "<span class='fa'>ماده‌ی ___ توله‌هایش را به‌تنهایی بزرگ می‌کند و توله‌ها حدود یک سال و نیم کنار مادر می‌مانند تا شکار کردن را یاد بگیرند.</span><br><span class='mini'>Das Gepardenweibchen zieht seine Jungen allein auf, und die Jungtiere bleiben etwa anderthalb Jahre bei der Mutter, um das Jagen zu lernen.</span>",
+       "optionen": [
+        "یوزپلنگ",
+        "بیابان",
+        "زیستگاه"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>ماده‌ی یوزپلنگ توله‌هایش را به‌تنهایی بزرگ می‌کند و توله‌ها حدود یک سال و نیم کنار مادر می‌مانند تا شکار کردن را یاد بگیرند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>___ برخلاف گربه‌سانان بزرگ دیگر نمی‌تواند غرش کند و بیشتر با صداهایی شبیه جیک‌جیک پرندگان با توله‌هایش ارتباط برقرار می‌کند.</span><br><span class='mini'>Anders als andere Großkatzen kann der Gepard nicht brüllen; mit seinen Jungen verständigt er sich vor allem mit Lauten, die an Vogelgezwitscher erinnern.</span>",
+       "optionen": [
+        "یوزپلنگ",
+        "جبیر",
+        "جمعیت"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>یوزپلنگ برخلاف گربه‌سانان بزرگ دیگر نمی‌تواند غرش کند و بیشتر با صداهایی شبیه جیک‌جیک پرندگان با توله‌هایش ارتباط برقرار می‌کند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>یکی از بزرگ‌ترین تهدیدها برای این گونه کمبود طعمه است؛ جمعیت جبیر و آهو در گذشته به دلیل ___ به‌شدت کاهش یافت.</span><br><span class='mini'>Eine der größten Bedrohungen für diese Art ist der Mangel an Beutetieren; die Bestände von Gazellen gingen früher wegen Wilderei stark zurück.</span>",
+       "optionen": [
+        "شکار غیرقانونی",
+        "داوطلب",
+        "هوبره"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>یکی از بزرگ‌ترین تهدیدها برای این گونه کمبود طعمه است؛ جمعیت جبیر و آهو در گذشته به دلیل شکار غیرقانونی به‌شدت کاهش یافت.</span>"
+      },
+      {
+       "frage": "<span class='fa'>طعمه‌ی اصلی ___ در ایران جبیر و آهو است، اما گاهی کل، قوچ و حتی خرگوش هم شکار می‌کند.</span><br><span class='mini'>Die Hauptbeute des Geparden in Iran sind Gazellen, doch manchmal jagt er auch Wildziegen, Wildschafe und sogar Hasen.</span>",
+       "optionen": [
+        "یوزپلنگ",
+        "گرگ",
+        "گله"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>طعمه‌ی اصلی یوزپلنگ در ایران جبیر و آهو است، اما گاهی کل، قوچ و حتی خرگوش هم شکار می‌کند.</span>"
+      },
+      {
        "frage": "<span class='fa'>وقتی طعمه کم باشد، ___ مجبور است برای پیدا کردن غذا مسافت‌های طولانی‌تری را طی کند.</span><br><span class='mini'>Wenn es wenig Beute gibt, muss der Gepard auf der Nahrungssuche längere Strecken zurücklegen.</span>",
        "optionen": [
         "یوزپلنگ",
-        "جنگل",
-        "گونه"
+        "توله",
+        "تهدید"
        ],
        "richtig": 0,
        "optFa": true,
@@ -401,11 +569,29 @@
        "erkl": "<span class='fa'>وقتی طعمه کم باشد، یوزپلنگ مجبور است برای پیدا کردن غذا مسافت‌های طولانی‌تری را طی کند.</span>"
       },
       {
+       "frage": "<span class='fa'>بخشی از این جاده از پناهگاه ___ میاندشت در خراسان شمالی می‌گذرد که یکی دیگر از زیستگاه‌های مهم یوزپلنگ است.</span><br><span class='mini'>Ein Teil dieser Straße führt durch das Wildschutzgebiet Miandasht in Nord-Chorasan, einen weiteren wichtigen Lebensraum des Geparden.</span>",
+       "optionen": [
+        "حیات وحش",
+        "هوبره",
+        "جمعیت"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>بخشی از این جاده از پناهگاه حیات وحش میاندشت در خراسان شمالی می‌گذرد که یکی دیگر از زیستگاه‌های مهم یوزپلنگ است.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort fehlt im Text?",
+     "fragen": [
+      {
        "frage": "<span class='fa'>در سال‌های اخیر چندین ___ در تصادف با خودروها کشته شده‌اند و هر کدام از این مرگ‌ها برای جمعیتی چنین کوچک فاجعه است.</span><br><span class='mini'>In den letzten Jahren wurden mehrere Geparden bei Unfällen mit Autos getötet, und jeder dieser Todesfälle ist für eine so kleine Population eine Katastrophe.</span>",
        "optionen": [
         "یوزپلنگ",
-        "گونه",
-        "جبیر"
+        "گله",
+        "کمپین"
        ],
        "richtig": 0,
        "optFa": true,
@@ -416,8 +602,8 @@
        "frage": "<span class='fa'>___ دیگر، سگ‌های گله است: چوپانان برای حفاظت از دام‌های خود سگ نگه می‌دارند و این سگ‌ها گاهی به یوزپلنگ‌ها، به‌ویژه به توله‌ها، حمله می‌کنند.</span><br><span class='mini'>Eine weitere Bedrohung sind Herdenhunde: Hirten halten Hunde zum Schutz ihres Viehs, und diese Hunde greifen manchmal Geparden an, besonders Jungtiere.</span>",
        "optionen": [
         "تهدید",
-        "جبیر",
-        "شکارچی"
+        "عقاب",
+        "تخریب"
        ],
        "richtig": 0,
        "optFa": true,
@@ -428,7 +614,7 @@
        "frage": "<span class='fa'>چرای بیش از حد دام و ___ نیز زیستگاه این حیوان را به‌تدریج تخریب می‌کند.</span><br><span class='mini'>Überweidung und Wassermangel zerstören den Lebensraum dieses Tieres zusätzlich nach und nach.</span>",
        "optionen": [
         "کمبود آب",
-        "پلنگ",
+        "زیستگاه",
         "محیط‌بان"
        ],
        "richtig": 0,
@@ -440,8 +626,8 @@
        "frage": "<span class='fa'>برای حفاظت از ___، از اوایل دهه‌ی ۲۰۰۰ میلادی یک پروژه‌ی ملی با همکاری سازمان‌های بین‌المللی آغاز شد.</span><br><span class='mini'>Zum Schutz des Geparden begann Anfang der 2000er-Jahre ein nationales Projekt in Zusammenarbeit mit internationalen Organisationen.</span>",
        "optionen": [
         "یوزپلنگ",
-        "نسل",
-        "داوطلب"
+        "خرگوش",
+        "جبیر"
        ],
        "richtig": 0,
        "optFa": true,
@@ -449,11 +635,23 @@
        "erkl": "<span class='fa'>برای حفاظت از یوزپلنگ، از اوایل دهه‌ی ۲۰۰۰ میلادی یک پروژه‌ی ملی با همکاری سازمان‌های بین‌المللی آغاز شد.</span>"
       },
       {
+       "frage": "<span class='fa'>از آنجا که نقش خال‌های بدن هر ___ منحصربه‌فرد است، کارشناسان می‌توانند از روی عکس‌ها هر حیوان را جداگانه بشناسند.</span><br><span class='mini'>Da das Fleckenmuster jedes Geparden einzigartig ist, können Fachleute anhand der Fotos jedes Tier einzeln erkennen.</span>",
+       "optionen": [
+        "یوزپلنگ",
+        "داوطلب",
+        "نماد"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>از آنجا که نقش خال‌های بدن هر یوزپلنگ منحصربه‌فرد است، کارشناسان می‌توانند از روی عکس‌ها هر حیوان را جداگانه بشناسند.</span>"
+      },
+      {
        "frage": "<span class='fa'>در کنار آنها، داوطلبان و فعالان ___ با کمپین‌های مختلف تلاش می‌کنند مردم را آگاه کنند و رانندگان را به رعایت سرعت مجاز تشویق کنند.</span><br><span class='mini'>Daneben versuchen Freiwillige und Umweltaktivisten, die Menschen mit verschiedenen Kampagnen aufzuklären und Autofahrer zur Einhaltung des Tempolimits zu bewegen.</span>",
        "optionen": [
         "محیط زیست",
-        "زیستگاه",
-        "چوپان"
+        "کمپین",
+        "طعمه"
        ],
        "richtig": 0,
        "optFa": true,
@@ -468,9 +666,14 @@
      "frage": "Bring die Zusammenfassung des Textes in die richtige Reihenfolge.",
      "items": [
       {
-       "fa": "یوزپلنگ آسیایی امروز فقط در ایران زندگی می‌کند و جمعیت آن بسیار کم است.",
+       "fa": "یوزپلنگ آسیایی سریع‌ترین حیوان خشکی است و امروز فقط در ایران زندگی می‌کند.",
        "tr": "",
-       "de": "Der Asiatische Gepard lebt heute nur noch in Iran, und sein Bestand ist sehr klein."
+       "de": "Der Asiatische Gepard ist das schnellste Landtier und lebt heute nur noch in Iran."
+      },
+      {
+       "fa": "زیستگاه اصلی آن دشت‌ها و بیابان‌های مرکزی ایران، به‌ویژه توران، است.",
+       "tr": "",
+       "de": "Sein wichtigster Lebensraum sind die Ebenen und Wüsten Zentralirans, besonders Turan."
       },
       {
        "fa": "کمبود طعمه، تصادف در جاده‌ها و سگ‌های گله مهم‌ترین تهدیدها هستند.",
@@ -491,6 +694,298 @@
        "fa": "ایران تنوع زیستی غنی دارد، اما بدون اقدام فوری گونه‌های بیشتری در خطر خواهند بود.",
        "tr": "",
        "de": "Iran hat eine reiche Biodiversität, doch ohne sofortiges Handeln werden weitere Arten in Gefahr sein."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t3",
+   "titel": "Alltag: Ein Tag mit einem Wildhüter",
+   "vorschau": "Ein Tag mit einem Wildhüter",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>وانت</span> – Pick-up · <span class='fa'>پاسگاه محیط‌بانی</span> – Wildhüterstation · <span class='fa'>سر زدن</span> – nachsehen, vorbeischauen · <span class='fa'>آبشخور</span> – Tränke · <span class='fa'>تانکر</span> – Tankwagen · <span class='fa'>کارت حافظه</span> – Speicherkarte · <span class='fa'>دوربین دوچشمی</span> – Fernglas · <span class='fa'>ردپا</span> – Spur, Fährte · <span class='fa'>چراندن</span> – weiden lassen · <span class='fa'>پیداست</span> – es ist offensichtlich · <span class='fa'>گردوخاک</span> – Staub</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Alltag: Ein Tag mit einem Wildhüter",
+     "text": "Alltagstext – Tippe eine Zeile an, wenn du die Übersetzung brauchst.",
+     "zeilen": [
+      {
+       "fa": "ساعت شش صبح است و هوای توران هنوز سرد است، با اینکه روزها گرم می‌شود.",
+       "tr": "",
+       "de": "Es ist sechs Uhr morgens, und die Luft in Turan ist noch kalt, obwohl es tagsüber warm wird."
+      },
+      {
+       "fa": "آقای نوروزی، محیط‌بانی که بیش از بیست سال در این منطقه کار کرده است، وانت سفیدش را روشن می‌کند و به ما چهار داوطلب می‌گوید سوار شویم.",
+       "tr": "",
+       "de": "Herr Nowruzi, ein Wildhüter, der seit über zwanzig Jahren in diesem Gebiet arbeitet, startet seinen weißen Pick-up und sagt uns vier Freiwilligen, wir sollen einsteigen."
+      },
+      {
+       "fa": "پاسگاه محیط‌بانی در حاشیه‌ی منطقه‌ی حفاظت‌شده قرار دارد و تا نزدیک‌ترین روستا حدود یک ساعت راه است.",
+       "tr": "",
+       "de": "Die Wildhüterstation liegt am Rand des Schutzgebiets, und bis zum nächsten Dorf ist es etwa eine Stunde Fahrt."
+      },
+      {
+       "fa": "پیش از حرکت، او روی نقشه‌ای بزرگ مسیر امروز را نشانمان می‌دهد و می‌گوید هر محیط‌بان مسئول منطقه‌ای به وسعت هزاران هکتار است.",
+       "tr": "",
+       "de": "Vor der Abfahrt zeigt er uns auf einer großen Karte die heutige Route und sagt, dass jeder Wildhüter für ein Gebiet von Tausenden Hektar zuständig ist."
+      },
+      {
+       "fa": "نخستین کار امروز سر زدن به دوربین‌های تله‌ای است که در کنار چشمه‌ها و آبشخورها نصب شده‌اند.",
+       "tr": "",
+       "de": "Die erste Aufgabe des Tages ist, nach den Kamerafallen zu sehen, die an Quellen und Tränken angebracht sind."
+      },
+      {
+       "fa": "آقای نوروزی توضیح می‌دهد که حیوانات بیابان، به‌ویژه در تابستان، ناچارند تقریبا هر روز به این آبشخورها بیایند.",
+       "tr": "",
+       "de": "Herr Nowruzi erklärt, dass die Wüstentiere vor allem im Sommer fast täglich zu diesen Tränken kommen müssen."
+      },
+      {
+       "fa": "برای همین، محیط‌بانان در ماه‌های خشک سال با تانکر به آبشخورها آب می‌برند.",
+       "tr": "",
+       "de": "Deshalb bringen die Wildhüter in den trockenen Monaten mit Tankwagen Wasser zu den Tränken."
+      },
+      {
+       "fa": "او کارت حافظه و باتری دوربین‌ها را عوض می‌کند و کارت‌های پر را با دقت در جیبش می‌گذارد.",
+       "tr": "",
+       "de": "Er wechselt Speicherkarten und Batterien der Kameras und steckt die vollen Karten sorgfältig in seine Tasche."
+      },
+      {
+       "fa": "دوربین‌ها در جعبه‌های فلزی قفل‌دار قرار دارند تا از گرما، گردوخاک و دزدی در امان بمانند.",
+       "tr": "",
+       "de": "Die Kameras stecken in abschließbaren Metallkästen, damit sie vor Hitze, Staub und Diebstahl geschützt sind."
+      },
+      {
+       "fa": "سر راه، با دوربین دوچشمی گله‌ای از جبیرها را روی تپه‌ای دور می‌بینیم و یکی از داوطلبان تعداد آنها را در دفترچه می‌نویسد.",
+       "tr": "",
+       "de": "Unterwegs sehen wir mit dem Fernglas eine Gazellenherde auf einem fernen Hügel, und einer der Freiwilligen notiert ihre Zahl im Heft."
+      },
+      {
+       "fa": "شمارش طعمه‌ها برای محیط‌بانان بسیار مهم است، چون بدون طعمه‌ی کافی، یوزپلنگ نمی‌تواند در منطقه بماند.",
+       "tr": "",
+       "de": "Das Zählen der Beutetiere ist für die Wildhüter sehr wichtig, denn ohne genügend Beute kann der Gepard nicht im Gebiet bleiben."
+      },
+      {
+       "fa": "کمی بعد، آقای نوروزی ماشین را نگه می‌دارد و به ردپایی روی خاک نرم اشاره می‌کند.",
+       "tr": "",
+       "de": "Etwas später hält Herr Nowruzi an und zeigt auf eine Spur im weichen Boden."
+      },
+      {
+       "fa": "می‌گوید این ردپای گرگ است و تشخیص ردپاها سال‌ها تجربه می‌خواهد.",
+       "tr": "",
+       "de": "Er sagt, das sei eine Wolfsspur, und Spuren zu erkennen erfordere jahrelange Erfahrung."
+      },
+      {
+       "fa": "ظهر به چادر چوپانی می‌رسیم که گله‌اش را در حاشیه‌ی منطقه می‌چراند.",
+       "tr": "",
+       "de": "Mittags erreichen wir das Zelt eines Hirten, der seine Herde am Rand des Gebiets weiden lässt."
+      },
+      {
+       "fa": "آقای نوروزی با او چای می‌خورد و درباره‌ی سگ‌هایش حرف می‌زند؛ پیداست که این دو سال‌هاست یکدیگر را می‌شناسند.",
+       "tr": "",
+       "de": "Herr Nowruzi trinkt mit ihm Tee und spricht über seine Hunde; man merkt, dass die beiden sich seit Jahren kennen."
+      },
+      {
+       "fa": "چوپان می‌گوید بدون سگ نمی‌تواند گله را از گرگ‌ها حفظ کند، اما قول می‌دهد سگ‌ها را شب‌ها نزدیک چادر نگه دارد.",
+       "tr": "",
+       "de": "Der Hirte sagt, ohne Hunde könne er die Herde nicht vor Wölfen schützen, verspricht aber, die Hunde nachts in der Nähe des Zelts zu halten."
+      },
+      {
+       "fa": "آقای نوروزی به ما می‌گوید که بدون همکاری مردم محلی، حفاظت از یوزپلنگ ممکن نیست.",
+       "tr": "",
+       "de": "Herr Nowruzi sagt uns, dass der Schutz des Geparden ohne die Zusammenarbeit mit der örtlichen Bevölkerung nicht möglich ist."
+      },
+      {
+       "fa": "بعدازظهر از کنار گله‌ای از گورخرهای ایرانی رد می‌شویم که با دیدن ماشین با سرعت دور می‌شوند.",
+       "tr": "",
+       "de": "Am Nachmittag fahren wir an einer Herde Persischer Onager vorbei, die beim Anblick des Autos schnell davonlaufen."
+      },
+      {
+       "fa": "آقای نوروزی می‌گوید توران یکی از آخرین جاهایی است که این حیوان هنوز در آن زندگی می‌کند.",
+       "tr": "",
+       "de": "Herr Nowruzi sagt, Turan sei einer der letzten Orte, an denen dieses Tier noch lebt."
+      },
+      {
+       "fa": "در راه بازگشت، او از سختی‌های کارش می‌گوید: گرمای تابستان، سرمای زمستان، دوری از خانواده و گاهی برخورد با شکارچیان غیرقانونی.",
+       "tr": "",
+       "de": "Auf dem Rückweg erzählt er von den Härten seiner Arbeit: Sommerhitze, Winterkälte, die Trennung von der Familie und manchmal Begegnungen mit Wilderern."
+      },
+      {
+       "fa": "با این حال می‌گوید این کار را با هیچ کار دیگری عوض نمی‌کند.",
+       "tr": "",
+       "de": "Trotzdem sagt er, er würde diese Arbeit gegen keine andere tauschen."
+      },
+      {
+       "fa": "عصر، در پاسگاه، عکس‌های کارت‌های حافظه را روی رایانه می‌ریزیم و یکی‌یکی نگاه می‌کنیم.",
+       "tr": "",
+       "de": "Am Abend laden wir in der Station die Fotos von den Speicherkarten auf den Computer und sehen sie uns eines nach dem anderen an."
+      },
+      {
+       "fa": "بیشتر عکس‌ها جبیر، روباه و پرندگان را نشان می‌دهند و چند عکس هم فقط باد و گردوخاک.",
+       "tr": "",
+       "de": "Die meisten Fotos zeigen Gazellen, Füchse und Vögel, einige auch nur Wind und Staub."
+      },
+      {
+       "fa": "ناگهان در یکی از عکس‌ها، که سه شب پیش گرفته شده است، سایه‌ی باریکی کنار آبشخور دیده می‌شود.",
+       "tr": "",
+       "de": "Plötzlich ist auf einem der Fotos, das vor drei Nächten aufgenommen wurde, ein schlanker Schatten an der Tränke zu sehen."
+      },
+      {
+       "fa": "آقای نوروزی عکس را بزرگ می‌کند، به خال‌های بدن حیوان نگاه می‌کند و آرام می‌گوید: «یوزپلنگ است.»",
+       "tr": "",
+       "de": "Herr Nowruzi vergrößert das Bild, betrachtet die Flecken des Tieres und sagt leise: ‹Es ist ein Gepard.›"
+      },
+      {
+       "fa": "او عکس را برای کارشناسان در تهران می‌فرستد تا با عکس‌های قبلی مقایسه شود و معلوم شود کدام یوزپلنگ است.",
+       "tr": "",
+       "de": "Er schickt das Foto an Fachleute in Teheran, damit es mit früheren Aufnahmen verglichen und festgestellt wird, um welchen Geparden es sich handelt."
+      },
+      {
+       "fa": "آن شب، زیر آسمانی پر از ستاره، فکر می‌کنم که اگر محیط‌بانانی مثل او نبودند، شاید امروز دیگر یوزپلنگی در ایران وجود نداشت.",
+       "tr": "",
+       "de": "In dieser Nacht denke ich unter einem Sternenhimmel: Gäbe es keine Wildhüter wie ihn, gäbe es in Iran heute vielleicht keinen Geparden mehr."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "آقای نوروزی بیش از بیست سال در این منطقه کار کرده است.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "محیط‌بانان در ماه‌های خشک به آبشخورها آب می‌برند.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "ردپایی که دیدند ردپای یوزپلنگ بود.",
+       "fest": true,
+       "erkl": "Es war eine <b>Wolfsspur</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "چوپان قول داد سگ‌هایش را شب‌ها نزدیک چادر نگه دارد.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "در همه‌ی عکس‌های دوربین‌ها یوزپلنگ دیده می‌شد.",
+       "fest": true,
+       "erkl": "Die meisten Fotos zeigten Gazellen, Füchse und Vögel; nur <b>ein Foto</b> zeigte einen Geparden."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Was ist die erste Aufgabe des Tages?",
+       "optionen": [
+        "nach den Kamerafallen an Quellen und Tränken sehen",
+        "Touristen begrüßen",
+        "Gazellen füttern"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Warum ist das Zählen der Beutetiere wichtig?",
+       "optionen": [
+        "Ohne genug Beute kann der Gepard nicht im Gebiet bleiben.",
+        "Weil man Gazellen verkaufen will.",
+        "Weil Jäger die Zahlen brauchen."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Welche Tiere sehen sie am Nachmittag?",
+       "optionen": [
+        "eine Herde Persischer Onager",
+        "einen Leoparden",
+        "Braunbären"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Woran erkennt Herr Nowruzi den Geparden auf dem Foto?",
+       "optionen": [
+        "an den Flecken des Tieres",
+        "an der Uhrzeit",
+        "an der Größe der Tränke"
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "آقای نوروزی، محیط‌بانی که بیش از بیست سال در این منطقه کار کرده است، وانت سفیدش را روشن می‌کند و به ما چهار داوطلب می‌گوید سوار شویم.",
+       "tr": "",
+       "de": "Herr Nowruzi, ein Wildhüter, der seit über zwanzig Jahren in diesem Gebiet arbeitet, startet seinen weißen Pick-up und sagt uns vier Freiwilligen, wir sollen einsteigen."
+      },
+      {
+       "fa": "پاسگاه محیط‌بانی در حاشیه‌ی منطقه‌ی حفاظت‌شده قرار دارد و تا نزدیک‌ترین روستا حدود یک ساعت راه است.",
+       "tr": "",
+       "de": "Die Wildhüterstation liegt am Rand des Schutzgebiets, und bis zum nächsten Dorf ist es etwa eine Stunde Fahrt."
+      },
+      {
+       "fa": "پیش از حرکت، او روی نقشه‌ای بزرگ مسیر امروز را نشانمان می‌دهد و می‌گوید هر محیط‌بان مسئول منطقه‌ای به وسعت هزاران هکتار است.",
+       "tr": "",
+       "de": "Vor der Abfahrt zeigt er uns auf einer großen Karte die heutige Route und sagt, dass jeder Wildhüter für ein Gebiet von Tausenden Hektar zuständig ist."
+      },
+      {
+       "fa": "نخستین کار امروز سر زدن به دوربین‌های تله‌ای است که در کنار چشمه‌ها و آبشخورها نصب شده‌اند.",
+       "tr": "",
+       "de": "Die erste Aufgabe des Tages ist, nach den Kamerafallen zu sehen, die an Quellen und Tränken angebracht sind."
+      },
+      {
+       "fa": "آقای نوروزی توضیح می‌دهد که حیوانات بیابان، به‌ویژه در تابستان، ناچارند تقریبا هر روز به این آبشخورها بیایند.",
+       "tr": "",
+       "de": "Herr Nowruzi erklärt, dass die Wüstentiere vor allem im Sommer fast täglich zu diesen Tränken kommen müssen."
+      },
+      {
+       "fa": "برای همین، محیط‌بانان در ماه‌های خشک سال با تانکر به آبشخورها آب می‌برند.",
+       "tr": "",
+       "de": "Deshalb bringen die Wildhüter in den trockenen Monaten mit Tankwagen Wasser zu den Tränken."
       }
      ]
     }
@@ -537,9 +1032,29 @@
        "de": "Sehr gern! Falls Sie erlauben, stelle ich meinen Bericht auch im Seminar vor."
       },
       {
-       "fa": "دکتر صادقی: عالی است. می‌دانستید که در متون کهن فارسی به این حیوان «یوز» می‌گفتند؟ در دربارها با یوزهای تربیت‌شده شکار می‌کردند.",
+       "fa": "دکتر صادقی: عالی است. پیشنهاد می‌کنم در گزارشتان به این پرسش هم بپردازید: چرا جمعیت طعمه برای یوزپلنگ این‌قدر اهمیت دارد؟",
        "tr": "",
-       "de": "Ausgezeichnet. Wussten Sie, dass man dieses Tier in alten persischen Texten ‹Yuz› nannte? An den Höfen jagte man mit abgerichteten Geparden."
+       "de": "Ausgezeichnet. Ich schlage vor, dass Sie in Ihrem Bericht auch auf diese Frage eingehen: Warum ist der Bestand an Beutetieren für den Geparden so wichtig?"
+      },
+      {
+       "fa": "یوناس: چشم. منبعی هم برای مطالعه معرفی می‌کنید؟",
+       "tr": "",
+       "de": "Gern. Können Sie mir auch eine Quelle zum Lesen empfehlen?"
+      },
+      {
+       "fa": "دکتر صادقی: گزارش‌های سازمان حفاظت محیط زیست و مقاله‌های پروژه‌ی حفاظت از یوزپلنگ آسیایی را ببینید. منابع انگلیسی هم اشکالی ندارد، اما متن گزارش باید فارسی باشد.",
+       "tr": "",
+       "de": "Sehen Sie sich die Berichte der Umweltschutzbehörde und Artikel des Schutzprojekts für den Asiatischen Geparden an. Englische Quellen sind auch in Ordnung, aber der Bericht selbst muss auf Persisch sein."
+      },
+      {
+       "fa": "یوناس: گزارش چقدر باید باشد؟",
+       "tr": "",
+       "de": "Wie lang soll der Bericht sein?"
+      },
+      {
+       "fa": "دکتر صادقی: دو تا سه صفحه کافی است. می‌دانستید که در متون کهن فارسی به این حیوان «یوز» می‌گفتند؟ در دربارها با یوزهای تربیت‌شده شکار می‌کردند.",
+       "tr": "",
+       "de": "Zwei bis drei Seiten genügen. Wussten Sie, dass man dieses Tier in alten persischen Texten ‹Yuz› nannte? An den Höfen jagte man mit abgerichteten Geparden."
       },
       {
        "fa": "یوناس: نه، نمی‌دانستم! پس یوزپلنگ در ادبیات هم جای پایی دارد.",
@@ -547,9 +1062,19 @@
        "de": "Nein, das wusste ich nicht! Dann hat der Gepard auch in der Literatur seine Spuren hinterlassen."
       },
       {
-       "fa": "دکتر صادقی: همین‌طور است. فقط گزارش را تا پنجشنبه‌ی بعد بفرستید؛ در غیر این صورت، آن را جزو نمره حساب نمی‌کنم.",
+       "fa": "دکتر صادقی: همین‌طور است. اگر فرصت کردید، در گزارشتان به این پیشینه هم اشاره کنید.",
        "tr": "",
-       "de": "So ist es. Schicken Sie den Bericht nur bis zum Donnerstag darauf; andernfalls rechne ich ihn nicht zur Note."
+       "de": "So ist es. Wenn Sie Zeit haben, erwähnen Sie in Ihrem Bericht auch diese Vorgeschichte."
+      },
+      {
+       "fa": "یوناس: حتما. تا چه زمانی باید گزارش را بفرستم؟",
+       "tr": "",
+       "de": "Auf jeden Fall. Bis wann muss ich den Bericht schicken?"
+      },
+      {
+       "fa": "دکتر صادقی: تا پنجشنبه‌ی بعد؛ در غیر این صورت، آن را جزو نمره حساب نمی‌کنم.",
+       "tr": "",
+       "de": "Bis zum Donnerstag darauf; andernfalls rechne ich ihn nicht zur Note."
       }
      ]
     },
@@ -584,9 +1109,29 @@
        "de": "Sehr gern! Falls Sie erlauben, stelle ich meinen Bericht auch im Seminar vor."
       },
       {
-       "fa": "دکتر صادقی: عالی است. می‌دانستید که در متون کهن فارسی به این حیوان «یوز» می‌گفتند؟ در دربارها با یوزهای تربیت‌شده شکار می‌کردند.",
+       "fa": "دکتر صادقی: عالی است. پیشنهاد می‌کنم در گزارشتان به این پرسش هم بپردازید: چرا جمعیت طعمه برای یوزپلنگ این‌قدر اهمیت دارد؟",
        "tr": "",
-       "de": "Ausgezeichnet. Wussten Sie, dass man dieses Tier in alten persischen Texten ‹Yuz› nannte? An den Höfen jagte man mit abgerichteten Geparden."
+       "de": "Ausgezeichnet. Ich schlage vor, dass Sie in Ihrem Bericht auch auf diese Frage eingehen: Warum ist der Bestand an Beutetieren für den Geparden so wichtig?"
+      },
+      {
+       "fa": "یوناس: چشم. منبعی هم برای مطالعه معرفی می‌کنید؟",
+       "tr": "",
+       "de": "Gern. Können Sie mir auch eine Quelle zum Lesen empfehlen?"
+      },
+      {
+       "fa": "دکتر صادقی: گزارش‌های سازمان حفاظت محیط زیست و مقاله‌های پروژه‌ی حفاظت از یوزپلنگ آسیایی را ببینید. منابع انگلیسی هم اشکالی ندارد، اما متن گزارش باید فارسی باشد.",
+       "tr": "",
+       "de": "Sehen Sie sich die Berichte der Umweltschutzbehörde und Artikel des Schutzprojekts für den Asiatischen Geparden an. Englische Quellen sind auch in Ordnung, aber der Bericht selbst muss auf Persisch sein."
+      },
+      {
+       "fa": "یوناس: گزارش چقدر باید باشد؟",
+       "tr": "",
+       "de": "Wie lang soll der Bericht sein?"
+      },
+      {
+       "fa": "دکتر صادقی: دو تا سه صفحه کافی است. می‌دانستید که در متون کهن فارسی به این حیوان «یوز» می‌گفتند؟ در دربارها با یوزهای تربیت‌شده شکار می‌کردند.",
+       "tr": "",
+       "de": "Zwei bis drei Seiten genügen. Wussten Sie, dass man dieses Tier in alten persischen Texten ‹Yuz› nannte? An den Höfen jagte man mit abgerichteten Geparden."
       },
       {
        "fa": "یوناس: نه، نمی‌دانستم! پس یوزپلنگ در ادبیات هم جای پایی دارد.",
@@ -594,9 +1139,19 @@
        "de": "Nein, das wusste ich nicht! Dann hat der Gepard auch in der Literatur seine Spuren hinterlassen."
       },
       {
-       "fa": "دکتر صادقی: همین‌طور است. فقط گزارش را تا پنجشنبه‌ی بعد بفرستید؛ در غیر این صورت، آن را جزو نمره حساب نمی‌کنم.",
+       "fa": "دکتر صادقی: همین‌طور است. اگر فرصت کردید، در گزارشتان به این پیشینه هم اشاره کنید.",
        "tr": "",
-       "de": "So ist es. Schicken Sie den Bericht nur bis zum Donnerstag darauf; andernfalls rechne ich ihn nicht zur Note."
+       "de": "So ist es. Wenn Sie Zeit haben, erwähnen Sie in Ihrem Bericht auch diese Vorgeschichte."
+      },
+      {
+       "fa": "یوناس: حتما. تا چه زمانی باید گزارش را بفرستم؟",
+       "tr": "",
+       "de": "Auf jeden Fall. Bis wann muss ich den Bericht schicken?"
+      },
+      {
+       "fa": "دکتر صادقی: تا پنجشنبه‌ی بعد؛ در غیر این صورت، آن را جزو نمره حساب نمی‌کنم.",
+       "tr": "",
+       "de": "Bis zum Donnerstag darauf; andernfalls rechne ich ihn nicht zur Note."
       }
      ]
     },
@@ -651,9 +1206,9 @@
      "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
      "items": [
       {
-       "fa": "لیلا: بردیا، جام جهانی ۲۰۱۴ یادت هست؟ همه پیراهن تیم ملی را با عکس یوزپلنگ خریده بودند.",
+       "fa": "لیلا: بردیا، جام جهانی ۲۰۱۴ یادت هست؟ خیلی‌ها پیراهن تیم ملی را با عکس یوزپلنگ خریده بودند.",
        "tr": "",
-       "de": "Bardia, erinnerst du dich an die WM 2014? Alle hatten das Nationaltrikot mit dem Gepardenbild gekauft."
+       "de": "Bardia, erinnerst du dich an die WM 2014? Viele hatten das Nationaltrikot mit dem Gepardenbild gekauft."
       },
       {
        "fa": "بردیا: معلوم است که یادم هست! من هم یکی خریدم و هنوز در کمدم است.",
@@ -671,19 +1226,49 @@
        "de": "Vielleicht. Aber ein Trikot rettet kein Tier. Wenn die Straßen sicherer wären, würden weniger Geparden getötet."
       },
       {
-       "fa": "لیلا: حق با توست. ولی آگاهی هم مهم است، وگرنه کسی برای حفاظت پولی نمی‌داد.",
+       "fa": "لیلا: در گزارشم نوشته‌ام که در بعضی بخش‌های جاده تابلوی هشدار نصب کرده‌اند، ولی خیلی از راننده‌ها توجهی نمی‌کنند.",
        "tr": "",
-       "de": "Du hast recht. Aber Bewusstsein ist auch wichtig, sonst würde niemand Geld für den Schutz geben."
+       "de": "In meinem Bericht habe ich geschrieben, dass auf einigen Straßenabschnitten Warnschilder aufgestellt wurden, aber viele Fahrer sie nicht beachten."
       },
       {
-       "fa": "بردیا: اگر من در ایران بودم، حتما داوطلب می‌شدم. از اینجا فقط می‌توانم کمک مالی کنم.",
+       "fa": "بردیا: در آلمان هم مشکل مشابهی هست. برای حیواناتی مثل سیاه‌گوش و گربه‌ی وحشی روی بزرگراه‌ها پل‌های سبز می‌سازند تا بتوانند بی‌خطر از جاده رد شوند.",
        "tr": "",
-       "de": "Wenn ich in Iran wäre, würde ich auf jeden Fall Freiwilliger werden. Von hier aus kann ich nur Geld spenden."
+       "de": "In Deutschland gibt es ein ähnliches Problem. Für Tiere wie Luchs und Wildkatze baut man Grünbrücken über Autobahnen, damit sie die Straße gefahrlos überqueren können."
       },
       {
-       "fa": "لیلا: همان هم کم نیست! چنانچه بخواهی، لینک یک کمپین خوب را برایت می‌فرستم.",
+       "fa": "لیلا: جالب است! چنانچه عکسی از این پل‌ها داری، برایم بفرست؛ شاید در گزارشم به آن اشاره کنم.",
        "tr": "",
-       "de": "Das ist auch nicht wenig! Falls du möchtest, schicke ich dir den Link zu einer guten Kampagne."
+       "de": "Interessant! Falls du ein Foto von solchen Brücken hast, schick es mir; vielleicht erwähne ich das in meinem Bericht."
+      },
+      {
+       "fa": "بردیا: باشد. راستی، ماجرای آن توله‌یوزی که در اسارت به دنیا آمد چه شد؟",
+       "tr": "",
+       "de": "Okay. Übrigens, was ist eigentlich aus dem Gepardenjungen geworden, das in Gefangenschaft geboren wurde?"
+      },
+      {
+       "fa": "لیلا: پیروز را می‌گویی؟ متأسفانه چند ماه بعد مرد. اگر زنده مانده بود، شاید امید بیشتری به تکثیر در اسارت وجود داشت.",
+       "tr": "",
+       "de": "Du meinst Pirouz? Leider ist er ein paar Monate später gestorben. Wäre er am Leben geblieben, gäbe es vielleicht mehr Hoffnung für die Zucht in Gefangenschaft."
+      },
+      {
+       "fa": "بردیا: حیف شد. پس شاید بهتر باشد بیشتر تلاش‌ها صرف حفاظت از زیستگاه‌ها شود.",
+       "tr": "",
+       "de": "Wie schade. Dann wäre es vielleicht besser, die meisten Anstrengungen auf den Schutz der Lebensräume zu richten."
+      },
+      {
+       "fa": "لیلا: موافقم. ولی آگاهی هم مهم است، وگرنه کسی برای حفاظت پولی نمی‌داد.",
+       "tr": "",
+       "de": "Einverstanden. Aber auch Bewusstsein ist wichtig, sonst würde niemand Geld für den Schutz geben."
+      },
+      {
+       "fa": "بردیا: حق با توست. اگر من در ایران بودم، حتما داوطلب می‌شدم. از اینجا فقط می‌توانم کمک مالی کنم.",
+       "tr": "",
+       "de": "Du hast recht. Wenn ich in Iran wäre, würde ich auf jeden Fall Freiwilliger werden. Von hier aus kann ich nur Geld spenden."
+      },
+      {
+       "fa": "لیلا: همان هم کم نیست! چنانچه بخواهی، لینک یک کمپین معتبر را برایت می‌فرستم.",
+       "tr": "",
+       "de": "Das ist auch nicht wenig! Falls du möchtest, schicke ich dir den Link zu einer seriösen Kampagne."
       },
       {
        "fa": "بردیا: حتما بفرست. فعلا، می‌بینمت!",
@@ -698,9 +1283,9 @@
      "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
      "zeilen": [
       {
-       "fa": "لیلا: بردیا، جام جهانی ۲۰۱۴ یادت هست؟ همه پیراهن تیم ملی را با عکس یوزپلنگ خریده بودند.",
+       "fa": "لیلا: بردیا، جام جهانی ۲۰۱۴ یادت هست؟ خیلی‌ها پیراهن تیم ملی را با عکس یوزپلنگ خریده بودند.",
        "tr": "",
-       "de": "Bardia, erinnerst du dich an die WM 2014? Alle hatten das Nationaltrikot mit dem Gepardenbild gekauft."
+       "de": "Bardia, erinnerst du dich an die WM 2014? Viele hatten das Nationaltrikot mit dem Gepardenbild gekauft."
       },
       {
        "fa": "بردیا: معلوم است که یادم هست! من هم یکی خریدم و هنوز در کمدم است.",
@@ -718,19 +1303,49 @@
        "de": "Vielleicht. Aber ein Trikot rettet kein Tier. Wenn die Straßen sicherer wären, würden weniger Geparden getötet."
       },
       {
-       "fa": "لیلا: حق با توست. ولی آگاهی هم مهم است، وگرنه کسی برای حفاظت پولی نمی‌داد.",
+       "fa": "لیلا: در گزارشم نوشته‌ام که در بعضی بخش‌های جاده تابلوی هشدار نصب کرده‌اند، ولی خیلی از راننده‌ها توجهی نمی‌کنند.",
        "tr": "",
-       "de": "Du hast recht. Aber Bewusstsein ist auch wichtig, sonst würde niemand Geld für den Schutz geben."
+       "de": "In meinem Bericht habe ich geschrieben, dass auf einigen Straßenabschnitten Warnschilder aufgestellt wurden, aber viele Fahrer sie nicht beachten."
       },
       {
-       "fa": "بردیا: اگر من در ایران بودم، حتما داوطلب می‌شدم. از اینجا فقط می‌توانم کمک مالی کنم.",
+       "fa": "بردیا: در آلمان هم مشکل مشابهی هست. برای حیواناتی مثل سیاه‌گوش و گربه‌ی وحشی روی بزرگراه‌ها پل‌های سبز می‌سازند تا بتوانند بی‌خطر از جاده رد شوند.",
        "tr": "",
-       "de": "Wenn ich in Iran wäre, würde ich auf jeden Fall Freiwilliger werden. Von hier aus kann ich nur Geld spenden."
+       "de": "In Deutschland gibt es ein ähnliches Problem. Für Tiere wie Luchs und Wildkatze baut man Grünbrücken über Autobahnen, damit sie die Straße gefahrlos überqueren können."
       },
       {
-       "fa": "لیلا: همان هم کم نیست! چنانچه بخواهی، لینک یک کمپین خوب را برایت می‌فرستم.",
+       "fa": "لیلا: جالب است! چنانچه عکسی از این پل‌ها داری، برایم بفرست؛ شاید در گزارشم به آن اشاره کنم.",
        "tr": "",
-       "de": "Das ist auch nicht wenig! Falls du möchtest, schicke ich dir den Link zu einer guten Kampagne."
+       "de": "Interessant! Falls du ein Foto von solchen Brücken hast, schick es mir; vielleicht erwähne ich das in meinem Bericht."
+      },
+      {
+       "fa": "بردیا: باشد. راستی، ماجرای آن توله‌یوزی که در اسارت به دنیا آمد چه شد؟",
+       "tr": "",
+       "de": "Okay. Übrigens, was ist eigentlich aus dem Gepardenjungen geworden, das in Gefangenschaft geboren wurde?"
+      },
+      {
+       "fa": "لیلا: پیروز را می‌گویی؟ متأسفانه چند ماه بعد مرد. اگر زنده مانده بود، شاید امید بیشتری به تکثیر در اسارت وجود داشت.",
+       "tr": "",
+       "de": "Du meinst Pirouz? Leider ist er ein paar Monate später gestorben. Wäre er am Leben geblieben, gäbe es vielleicht mehr Hoffnung für die Zucht in Gefangenschaft."
+      },
+      {
+       "fa": "بردیا: حیف شد. پس شاید بهتر باشد بیشتر تلاش‌ها صرف حفاظت از زیستگاه‌ها شود.",
+       "tr": "",
+       "de": "Wie schade. Dann wäre es vielleicht besser, die meisten Anstrengungen auf den Schutz der Lebensräume zu richten."
+      },
+      {
+       "fa": "لیلا: موافقم. ولی آگاهی هم مهم است، وگرنه کسی برای حفاظت پولی نمی‌داد.",
+       "tr": "",
+       "de": "Einverstanden. Aber auch Bewusstsein ist wichtig, sonst würde niemand Geld für den Schutz geben."
+      },
+      {
+       "fa": "بردیا: حق با توست. اگر من در ایران بودم، حتما داوطلب می‌شدم. از اینجا فقط می‌توانم کمک مالی کنم.",
+       "tr": "",
+       "de": "Du hast recht. Wenn ich in Iran wäre, würde ich auf jeden Fall Freiwilliger werden. Von hier aus kann ich nur Geld spenden."
+      },
+      {
+       "fa": "لیلا: همان هم کم نیست! چنانچه بخواهی، لینک یک کمپین معتبر را برایت می‌فرستم.",
+       "tr": "",
+       "de": "Das ist auch nicht wenig! Falls du möchtest, schicke ich dir den Link zu einer seriösen Kampagne."
       },
       {
        "fa": "بردیا: حتما بفرست. فعلا، می‌بینمت!",
@@ -744,15 +1359,6 @@
      "titel": "Hast du es verstanden?",
      "fragen": [
       {
-       "frage": "Was hat Bardia 2014 gekauft?",
-       "optionen": [
-        "ein Nationaltrikot mit Gepard",
-        "ein Buch über Tiere",
-        "eine Reise nach Turan"
-       ],
-       "richtig": 0
-      },
-      {
        "frage": "Was meint Bardia?",
        "optionen": [
         "Ein Trikot allein rettet kein Tier.",
@@ -762,11 +1368,345 @@
        "richtig": 0
       },
       {
+       "frage": "Was baut man in Deutschland laut Bardia für Wildtiere?",
+       "optionen": [
+        "Grünbrücken über Autobahnen",
+        "Zäune um alle Wälder",
+        "Zoos an jeder Autobahn"
+       ],
+       "richtig": 0
+      },
+      {
        "frage": "Was würde Bardia tun, wenn er in Iran wäre?",
        "optionen": [
         "Freiwilliger werden",
         "Wildhüter ausbilden",
         "Trikots verkaufen"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d3",
+   "titel": "Dialog: Hirte, Hund und Gepard",
+   "vorschau": "Hirte, Hund und Gepard",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Während des Einsatzes in Turan besuchen Jonas und der Wildhüter Herr Nowruzi den Hirten Farhad in seinem Zelt am Rand des Schutzgebiets.</p>"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "آقای نوروزی: سلام فرهاد، خسته نباشی! این‌ها داوطلبانی هستند که چند روز با ما کار می‌کنند.",
+       "tr": "",
+       "de": "Hallo Farhad, gute Arbeit! Das sind Freiwillige, die ein paar Tage mit uns arbeiten."
+      },
+      {
+       "fa": "فرهاد: سلام، خوش آمدید. بفرمایید بنشینید، چای تازه دم است.",
+       "tr": "",
+       "de": "Hallo, willkommen. Setzen Sie sich bitte, der Tee ist frisch aufgebrüht."
+      },
+      {
+       "fa": "یوناس: ممنون. آقای نوروزی می‌گفت شما سال‌هاست در این منطقه گله می‌چرانید.",
+       "tr": "",
+       "de": "Danke. Herr Nowruzi sagte, Sie hüten schon seit Jahren in dieser Gegend Ihre Herde."
+      },
+      {
+       "fa": "فرهاد: بله، از بچگی همراه پدرم اینجا بودم. آن زمان جبیر خیلی بیشتر بود؛ حالا شاید نسبت به آن روزها نصف شده باشد.",
+       "tr": "",
+       "de": "Ja, seit meiner Kindheit war ich mit meinem Vater hier. Damals gab es viel mehr Gazellen; heute ist es im Vergleich zu damals vielleicht nur noch die Hälfte."
+      },
+      {
+       "fa": "یوناس: تا حالا یوزپلنگ دیده‌اید؟",
+       "tr": "",
+       "de": "Haben Sie schon einmal einen Geparden gesehen?"
+      },
+      {
+       "fa": "فرهاد: چند بار، از دور. حیوان خجالتی‌ای است؛ تا آدم را می‌بیند، دور می‌شود. به گله هم تقریبا هیچ‌وقت کاری ندارد.",
+       "tr": "",
+       "de": "Ein paar Mal, aus der Ferne. Er ist ein scheues Tier; sobald er einen Menschen sieht, zieht er sich zurück. Die Herde lässt er auch fast immer in Ruhe."
+      },
+      {
+       "fa": "آقای نوروزی: مشکل سگ‌ها هستند. اگر سگ‌ها آزاد باشند، ممکن است به یوزپلنگ یا توله‌هایش حمله کنند.",
+       "tr": "",
+       "de": "Das Problem sind die Hunde. Wenn die Hunde frei laufen, greifen sie womöglich einen Geparden oder seine Jungen an."
+      },
+      {
+       "fa": "فرهاد: ولی بدون سگ، گرگ‌ها به گله می‌زنند. اگر سگ‌هایم نبودند، هر سال چند گوسفند از دست می‌دادم.",
+       "tr": "",
+       "de": "Aber ohne Hunde fallen die Wölfe über die Herde her. Ohne meine Hunde würde ich jedes Jahr mehrere Schafe verlieren."
+      },
+      {
+       "fa": "یوناس: پس راه‌حل چیست؟",
+       "tr": "",
+       "de": "Was ist dann die Lösung?"
+      },
+      {
+       "fa": "آقای نوروزی: توافق کرده‌ایم که در فصلی که یوزپلنگ با توله‌هایش در منطقه است، فرهاد گله را از چشمه‌ی بالا دور نگه دارد.",
+       "tr": "",
+       "de": "Wir haben vereinbart, dass Farhad in der Zeit, in der der Gepard mit seinen Jungen im Gebiet ist, die Herde von der oberen Quelle fernhält."
+      },
+      {
+       "fa": "فرهاد: مشروط بر اینکه اجازه داشته باشم از چاه پایین آب بردارم؛ در غیر این صورت، گوسفندهایم تشنه می‌مانند.",
+       "tr": "",
+       "de": "Unter der Bedingung, dass ich Wasser aus dem unteren Brunnen holen darf; andernfalls bleiben meine Schafe durstig."
+      },
+      {
+       "fa": "آقای نوروزی: این را هم پذیرفته‌ایم. و چنانچه گرگی به گله آسیب زد، موضوع را گزارش می‌دهیم تا خسارت بررسی شود.",
+       "tr": "",
+       "de": "Das haben wir auch akzeptiert. Und falls ein Wolf der Herde Schaden zufügt, melden wir es, damit der Schaden geprüft wird."
+      },
+      {
+       "fa": "یوناس: جالب است. یعنی حفاظت فقط کار محیط‌بانان نیست.",
+       "tr": "",
+       "de": "Interessant. Naturschutz ist also nicht nur Sache der Wildhüter."
+      },
+      {
+       "fa": "فرهاد: نه. ما هم اینجا زندگی می‌کنیم. اگر این بیابان خالی شود، برای ما هم چیزی نمی‌ماند.",
+       "tr": "",
+       "de": "Nein. Wir leben auch hier. Wenn diese Wüste leer wird, bleibt auch für uns nichts."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "آقای نوروزی: سلام فرهاد، خسته نباشی! این‌ها داوطلبانی هستند که چند روز با ما کار می‌کنند.",
+       "tr": "",
+       "de": "Hallo Farhad, gute Arbeit! Das sind Freiwillige, die ein paar Tage mit uns arbeiten."
+      },
+      {
+       "fa": "فرهاد: سلام، خوش آمدید. بفرمایید بنشینید، چای تازه دم است.",
+       "tr": "",
+       "de": "Hallo, willkommen. Setzen Sie sich bitte, der Tee ist frisch aufgebrüht."
+      },
+      {
+       "fa": "یوناس: ممنون. آقای نوروزی می‌گفت شما سال‌هاست در این منطقه گله می‌چرانید.",
+       "tr": "",
+       "de": "Danke. Herr Nowruzi sagte, Sie hüten schon seit Jahren in dieser Gegend Ihre Herde."
+      },
+      {
+       "fa": "فرهاد: بله، از بچگی همراه پدرم اینجا بودم. آن زمان جبیر خیلی بیشتر بود؛ حالا شاید نسبت به آن روزها نصف شده باشد.",
+       "tr": "",
+       "de": "Ja, seit meiner Kindheit war ich mit meinem Vater hier. Damals gab es viel mehr Gazellen; heute ist es im Vergleich zu damals vielleicht nur noch die Hälfte."
+      },
+      {
+       "fa": "یوناس: تا حالا یوزپلنگ دیده‌اید؟",
+       "tr": "",
+       "de": "Haben Sie schon einmal einen Geparden gesehen?"
+      },
+      {
+       "fa": "فرهاد: چند بار، از دور. حیوان خجالتی‌ای است؛ تا آدم را می‌بیند، دور می‌شود. به گله هم تقریبا هیچ‌وقت کاری ندارد.",
+       "tr": "",
+       "de": "Ein paar Mal, aus der Ferne. Er ist ein scheues Tier; sobald er einen Menschen sieht, zieht er sich zurück. Die Herde lässt er auch fast immer in Ruhe."
+      },
+      {
+       "fa": "آقای نوروزی: مشکل سگ‌ها هستند. اگر سگ‌ها آزاد باشند، ممکن است به یوزپلنگ یا توله‌هایش حمله کنند.",
+       "tr": "",
+       "de": "Das Problem sind die Hunde. Wenn die Hunde frei laufen, greifen sie womöglich einen Geparden oder seine Jungen an."
+      },
+      {
+       "fa": "فرهاد: ولی بدون سگ، گرگ‌ها به گله می‌زنند. اگر سگ‌هایم نبودند، هر سال چند گوسفند از دست می‌دادم.",
+       "tr": "",
+       "de": "Aber ohne Hunde fallen die Wölfe über die Herde her. Ohne meine Hunde würde ich jedes Jahr mehrere Schafe verlieren."
+      },
+      {
+       "fa": "یوناس: پس راه‌حل چیست؟",
+       "tr": "",
+       "de": "Was ist dann die Lösung?"
+      },
+      {
+       "fa": "آقای نوروزی: توافق کرده‌ایم که در فصلی که یوزپلنگ با توله‌هایش در منطقه است، فرهاد گله را از چشمه‌ی بالا دور نگه دارد.",
+       "tr": "",
+       "de": "Wir haben vereinbart, dass Farhad in der Zeit, in der der Gepard mit seinen Jungen im Gebiet ist, die Herde von der oberen Quelle fernhält."
+      },
+      {
+       "fa": "فرهاد: مشروط بر اینکه اجازه داشته باشم از چاه پایین آب بردارم؛ در غیر این صورت، گوسفندهایم تشنه می‌مانند.",
+       "tr": "",
+       "de": "Unter der Bedingung, dass ich Wasser aus dem unteren Brunnen holen darf; andernfalls bleiben meine Schafe durstig."
+      },
+      {
+       "fa": "آقای نوروزی: این را هم پذیرفته‌ایم. و چنانچه گرگی به گله آسیب زد، موضوع را گزارش می‌دهیم تا خسارت بررسی شود.",
+       "tr": "",
+       "de": "Das haben wir auch akzeptiert. Und falls ein Wolf der Herde Schaden zufügt, melden wir es, damit der Schaden geprüft wird."
+      },
+      {
+       "fa": "یوناس: جالب است. یعنی حفاظت فقط کار محیط‌بانان نیست.",
+       "tr": "",
+       "de": "Interessant. Naturschutz ist also nicht nur Sache der Wildhüter."
+      },
+      {
+       "fa": "فرهاد: نه. ما هم اینجا زندگی می‌کنیم. اگر این بیابان خالی شود، برای ما هم چیزی نمی‌ماند.",
+       "tr": "",
+       "de": "Nein. Wir leben auch hier. Wenn diese Wüste leer wird, bleibt auch für uns nichts."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Wie hat sich der Gazellenbestand laut Farhad entwickelt?",
+       "optionen": [
+        "Er hat sich etwa halbiert.",
+        "Er hat sich verdoppelt.",
+        "Er ist gleich geblieben."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Warum braucht Farhad seine Hunde?",
+       "optionen": [
+        "um die Herde vor Wölfen zu schützen",
+        "um Geparden zu jagen",
+        "um Touristen fernzuhalten"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was haben der Wildhüter und der Hirte vereinbart?",
+       "optionen": [
+        "Farhad hält die Herde zu bestimmten Zeiten von der oberen Quelle fern.",
+        "Farhad gibt alle Hunde ab.",
+        "Farhad verlässt das Gebiet für immer."
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "a",
+   "titel": "Gut zu wissen",
+   "vorschau": "💡",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Pirouz",
+     "text": "Kurzer Infotext – tippe eine Zeile an für die Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "در بهار سال ۲۰۲۲ برای نخستین بار در ایران سه توله‌یوز آسیایی در اسارت به دنیا آمدند.",
+       "tr": "",
+       "de": "Im Frühjahr 2022 wurden in Iran zum ersten Mal drei Junge des Asiatischen Geparden in Gefangenschaft geboren."
+      },
+      {
+       "fa": "مادرشان «ایران» و پدرشان «فیروز» نام داشت و هر دو در مرکز تکثیری در توران نگهداری می‌شدند.",
+       "tr": "",
+       "de": "Ihre Mutter hieß ‹Iran›, ihr Vater ‹Firuz›; beide wurden in einer Zuchtstation in Turan gehalten."
+      },
+      {
+       "fa": "دو توله پس از مدت کوتاهی مردند، اما سومی زنده ماند و نام «پیروز» گرفت.",
+       "tr": "",
+       "de": "Zwei Jungtiere starben nach kurzer Zeit, das dritte aber überlebte und erhielt den Namen ‹Pirouz› (der Siegreiche)."
+      },
+      {
+       "fa": "پیروز در ایران بسیار مشهور شد و بسیاری از مردم خبرهای مربوط به سلامتش را دنبال می‌کردند.",
+       "tr": "",
+       "de": "Pirouz wurde in Iran sehr bekannt, und viele Menschen verfolgten die Nachrichten über seine Gesundheit."
+      },
+      {
+       "fa": "او در زمستان سال بعد، در سن حدود ده‌ماهگی، بر اثر بیماری کلیه درگذشت.",
+       "tr": "",
+       "de": "Er starb im Winter des folgenden Jahres im Alter von etwa zehn Monaten an einem Nierenleiden."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der Persische Onager",
+     "text": "Kurzer Infotext – tippe eine Zeile an für die Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "گورخر ایرانی، که «گور» هم نامیده می‌شود، یکی از زیرگونه‌های خر وحشی آسیایی است.",
+       "tr": "",
+       "de": "Der Persische Onager, auch ‹Gur› genannt, ist eine Unterart des Asiatischen Wildesels."
+      },
+      {
+       "fa": "در ادبیات فارسی شکار گور بارها توصیف شده و پادشاه ساسانی «بهرام گور» لقب خود را از همین حیوان گرفته است.",
+       "tr": "",
+       "de": "In der persischen Literatur wird die Onagerjagd oft beschrieben, und der Sasanidenkönig ‹Bahram Gur› verdankt seinen Beinamen diesem Tier."
+      },
+      {
+       "fa": "امروز جمعیت‌های اصلی این حیوان در توران و در پناهگاه حیات وحش بهرام گور در استان فارس زندگی می‌کنند.",
+       "tr": "",
+       "de": "Heute leben die wichtigsten Bestände dieses Tieres in Turan und im Wildschutzgebiet Bahram-e Gur in der Provinz Fars."
+      },
+      {
+       "fa": "گورخر ایرانی نیز مانند یوزپلنگ از کمبود آب، چرای دام و شکار غیرقانونی آسیب دیده است.",
+       "tr": "",
+       "de": "Wie der Gepard leidet auch der Persische Onager unter Wassermangel, Beweidung und Wilderei."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Ein Fell wie ein Fingerabdruck",
+     "text": "Kurzer Infotext – tippe eine Zeile an für die Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "خال‌های سیاه روی پوست یوزپلنگ گرد و توپر هستند، در حالی که پلنگ لکه‌هایی گل‌مانند دارد.",
+       "tr": "",
+       "de": "Die schwarzen Flecken im Fell des Geparden sind rund und ausgefüllt, während der Leopard rosettenförmige Flecken hat."
+      },
+      {
+       "fa": "نقش این خال‌ها در هر حیوان با حیوان دیگر فرق دارد، درست مانند اثر انگشت انسان.",
+       "tr": "",
+       "de": "Das Muster dieser Flecken ist bei jedem Tier anders – genau wie der Fingerabdruck eines Menschen."
+      },
+      {
+       "fa": "کارشناسان عکس‌های دوربین‌های تله‌ای را کنار هم می‌گذارند و از روی خال‌ها می‌فهمند که یک یوزپلنگ تازه دیده شده یا همان حیوان قبلی است.",
+       "tr": "",
+       "de": "Fachleute legen die Bilder der Kamerafallen nebeneinander und erkennen an den Flecken, ob ein neuer Gepard gesichtet wurde oder dasselbe Tier wie zuvor."
+      },
+      {
+       "fa": "به این ترتیب می‌توان بدون گرفتن یا آزار دادن حیوانات، جمعیت آنها را تخمین زد.",
+       "tr": "",
+       "de": "So lässt sich der Bestand schätzen, ohne die Tiere einzufangen oder zu stören."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zu den Infotexten",
+     "fragen": [
+      {
+       "frage": "Wie hieß das überlebende Jungtier?",
+       "optionen": [
+        "Pirouz",
+        "Firuz",
+        "Iran"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wo leben heute die wichtigsten Onager-Bestände?",
+       "optionen": [
+        "in Turan und im Schutzgebiet Bahram-e Gur",
+        "in den Hyrkanischen Wäldern",
+        "an der Küste des Persischen Golfs"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wozu vergleichen Fachleute die Fleckenmuster?",
+       "optionen": [
+        "um einzelne Tiere zu unterscheiden und den Bestand zu schätzen",
+        "um das Alter der Kameras zu bestimmen",
+        "um Leoparden zu fangen"
        ],
        "richtig": 0
       }
@@ -831,24 +1771,14 @@
      "links": "de",
      "paare": [
       {
+       "fa": "باید فوراً اقدام کرد.",
+       "tr": "",
+       "de": "Man muss sofort handeln."
+      },
+      {
        "fa": "از سوی دیگر …",
        "tr": "",
        "de": "Andererseits …"
-      },
-      {
-       "fa": "در غیر این صورت …",
-       "tr": "",
-       "de": "Andernfalls …"
-      },
-      {
-       "fa": "پیشنهاد من این است که …",
-       "tr": "",
-       "de": "Mein Vorschlag ist, dass …"
-      },
-      {
-       "fa": "اگر … نبود، …",
-       "tr": "",
-       "de": "Wenn … nicht gewesen wäre, …"
       },
       {
        "fa": "جای نگرانی است که …",
@@ -856,9 +1786,19 @@
        "de": "Es ist besorgniserregend, dass …"
       },
       {
+       "fa": "یکی از راه‌حل‌ها این است که …",
+       "tr": "",
+       "de": "Eine der Lösungen ist, dass …"
+      },
+      {
        "fa": "چنانچه …، …",
        "tr": "",
        "de": "Falls …, …"
+      },
+      {
+       "fa": "در غیر این صورت …",
+       "tr": "",
+       "de": "Andernfalls …"
       }
      ],
      "titel": "Was bedeutet die Wendung?"
@@ -871,8 +1811,8 @@
        "frage": "Was bedeutet der Satz?",
        "optionen": [
         "Man muss sofort handeln.",
-        "Eine der Lösungen ist, dass …",
-        "Es ist besorgniserregend, dass …"
+        "Wenn … nicht gewesen wäre, …",
+        "Andererseits …"
        ],
        "richtig": 0,
        "fa": "باید فوراً اقدام کرد."
@@ -880,19 +1820,9 @@
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
-        "Eine der Lösungen ist, dass …",
-        "Andernfalls …",
-        "Wenn … nicht gewesen wäre, …"
-       ],
-       "richtig": 0,
-       "fa": "یکی از راه‌حل‌ها این است که …"
-      },
-      {
-       "frage": "Was bedeutet der Satz?",
-       "optionen": [
         "Falls …, …",
-        "Man muss sofort handeln.",
-        "Andernfalls …"
+        "Es ist besorgniserregend, dass …",
+        "Mein Vorschlag ist, dass …"
        ],
        "richtig": 0,
        "fa": "چنانچه …، …"
@@ -900,19 +1830,9 @@
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
-        "Andererseits …",
-        "Falls …, …",
-        "Man muss sofort handeln."
-       ],
-       "richtig": 0,
-       "fa": "از سوی دیگر …"
-      },
-      {
-       "frage": "Was bedeutet der Satz?",
-       "optionen": [
         "Wenn … nicht gewesen wäre, …",
-        "Andererseits …",
-        "Andernfalls …"
+        "Es ist besorgniserregend, dass …",
+        "Mein Vorschlag ist, dass …"
        ],
        "richtig": 0,
        "fa": "اگر … نبود، …"
@@ -921,11 +1841,31 @@
        "frage": "Was bedeutet der Satz?",
        "optionen": [
         "Mein Vorschlag ist, dass …",
-        "Andernfalls …",
-        "Es ist besorgniserregend, dass …"
+        "Wenn … nicht gewesen wäre, …",
+        "Man muss sofort handeln."
        ],
        "richtig": 0,
        "fa": "پیشنهاد من این است که …"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Andernfalls …",
+        "Man muss sofort handeln.",
+        "Mein Vorschlag ist, dass …"
+       ],
+       "richtig": 0,
+       "fa": "در غیر این صورت …"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Andererseits …",
+        "Eine der Lösungen ist, dass …",
+        "Wenn … nicht gewesen wäre, …"
+       ],
+       "richtig": 0,
+       "fa": "از سوی دیگر …"
       }
      ]
     },

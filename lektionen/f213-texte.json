@@ -2,7 +2,7 @@
  "id": "tx",
  "art": "texte",
  "titel": "Sachtext & Dialoge",
- "beschreibung": "Sachtext, Wortschatz im Kontext, zwei Dialoge, Redemittel und Schreibaufgabe.",
+ "beschreibung": "Sachtext, Wortschatz im Kontext, Alltagstext, drei Dialoge, Infotexte, Redemittel und Schreibaufgabe.",
  "stationen": [
   {
    "id": "t1",
@@ -12,7 +12,7 @@
     {
      "typ": "info",
      "titel": "Neue Wörter im Text",
-     "text": "<p><span class='fa'>کره‌ی زمین</span> – Erdkugel · <span class='fa'>سیلاب</span> – Sturzflut · <span class='fa'>گونه</span> – Art (Biologie) · <span class='fa'>مارمولک</span> – Eidechse · <span class='fa'>برداشت بی‌رویه</span> – übermäßige Entnahme · <span class='fa'>فاضلاب تصفیه‌شده</span> – geklärtes Abwasser · <span class='fa'>جبران‌پذیر</span> – wiedergutzumachen · <span class='fa'>کاستن (کاه)</span> – verringern</p>",
+     "text": "<p><span class='fa'>گودال</span> – Senke · <span class='fa'>ناچیز</span> – geringfügig · <span class='fa'>کره‌ی زمین</span> – Erdkugel · <span class='fa'>آتشفشانی</span> – vulkanisch · <span class='fa'>سیلاب</span> – Sturzflut · <span class='fa'>بادهای غالب</span> – vorherrschende Winde · <span class='fa'>گونه</span> – Art (Biologie) · <span class='fa'>مارمولک</span> – Eidechse · <span class='fa'>لانه</span> – Bau, Nest · <span class='fa'>شکننده</span> – empfindlich, zerbrechlich · <span class='fa'>تالاب</span> – Feuchtgebiet · <span class='fa'>برداشت بی‌رویه</span> – übermäßige Entnahme · <span class='fa'>جبران‌پذیر</span> – wiedergutzumachen · <span class='fa'>مقنی</span> – Qanatbauer · <span class='fa'>نیروی جاذبه</span> – Schwerkraft · <span class='fa'>خشتی</span> – aus Lehmziegeln · <span class='fa'>فاضلاب تصفیه‌شده</span> – geklärtes Abwasser · <span class='fa'>کاستن (کاه)</span> – verringern</p>",
      "stil": "merke"
     },
     {
@@ -26,6 +26,16 @@
        "de": "Im Südosten Irans liegt eine ausgedehnte Wüste namens ‹Dascht-e Lut›; ein großer Teil davon gehört zur Provinz Kerman."
       },
       {
+       "fa": "مساحت این بیابان بیش از پنجاه هزار کیلومتر مربع است و بخش‌هایی از آن به استان‌های سیستان و بلوچستان و خراسان جنوبی نیز می‌رسد.",
+       "tr": "",
+       "de": "Die Wüste ist über fünfzigtausend Quadratkilometer groß, und Teile von ihr reichen auch in die Provinzen Sistan und Belutschistan sowie Süd-Chorasan."
+      },
+      {
+       "fa": "لوت در گودالی میان رشته‌کوه‌های بلند قرار گرفته است؛ این کوه‌ها جلوی ابرهای باران‌زا را می‌گیرند و به همین دلیل بارش سالانه در مرکز آن بسیار ناچیز است.",
+       "tr": "",
+       "de": "Die Lut liegt in einer Senke zwischen hohen Gebirgsketten; diese Berge halten die Regenwolken ab, deshalb ist der jährliche Niederschlag in ihrem Zentrum äußerst gering."
+      },
+      {
        "fa": "لوت در سال ۲۰۱۶ به عنوان نخستین اثر طبیعی ایران در فهرست میراث جهانی یونسکو ثبت شد.",
        "tr": "",
        "de": "Die Lut wurde 2016 als erste Naturstätte Irans in die UNESCO-Welterbeliste aufgenommen."
@@ -36,9 +46,14 @@
        "de": "Diese Wüste gilt als einer der heißesten Orte der Erde."
       },
       {
-       "fa": "ماهواره‌ها در سال ۲۰۰۵ دمای سطح زمین را در لوت حدود هفتاد درجه‌ی سانتی‌گراد ثبت کردند؛ یکی از بالاترین دماهایی که تاکنون اندازه‌گیری شده است.",
+       "fa": "ماهواره‌ها در سال ۲۰۰۵ در منطقه‌ای به نام «گندم بریان» دمای سطح زمین را حدود هفتاد درجه‌ی سانتی‌گراد ثبت کردند؛ یکی از بالاترین دماهایی که تاکنون اندازه‌گیری شده است.",
        "tr": "",
-       "de": "Satelliten verzeichneten 2005 in der Lut eine Bodentemperatur von etwa siebzig Grad Celsius – einen der höchsten jemals gemessenen Werte."
+       "de": "Satelliten verzeichneten 2005 in einem Gebiet namens ‹Gandom Beryan› eine Bodentemperatur von etwa siebzig Grad Celsius – einen der höchsten jemals gemessenen Werte."
+      },
+      {
+       "fa": "سطح گندم بریان را سنگ‌های تیره‌ی آتشفشانی پوشانده است که نور خورشید را به خوبی جذب می‌کنند و به شدت داغ می‌شوند.",
+       "tr": "",
+       "de": "Die Oberfläche von Gandom Beryan ist mit dunklem Vulkangestein bedeckt, das das Sonnenlicht stark aufnimmt und sich enorm aufheizt."
       },
       {
        "fa": "البته این دمای خود خاک و سنگ است، نه دمای هوا؛ دمای هوا معمولا به مراتب پایین‌تر است.",
@@ -46,9 +61,19 @@
        "de": "Das ist allerdings die Temperatur von Boden und Gestein selbst, nicht der Luft; die Lufttemperatur ist meist weitaus niedriger."
       },
       {
+       "fa": "در زمستان، به‌ویژه شب‌ها، دما در همین بیابان گاهی تا نزدیک صفر پایین می‌آید؛ تفاوت دمای شب و روز در لوت بسیار زیاد است.",
+       "tr": "",
+       "de": "Im Winter, vor allem nachts, sinkt die Temperatur in derselben Wüste manchmal bis nahe null; der Unterschied zwischen Tag- und Nachttemperatur ist in der Lut sehr groß."
+      },
+      {
        "fa": "در بخش غربی لوت، دیواره‌ها و ستون‌های عظیمی از خاک دیده می‌شود که مردم محلی به هر کدام «کلوت» می‌گویند.",
        "tr": "",
        "de": "Im westlichen Teil der Lut sieht man gewaltige Wände und Säulen aus Erde, die die Einheimischen jeweils ‹Kalut› nennen."
+      },
+      {
+       "fa": "این کلوت‌ها در نزدیکی شهر شهداد در امتداد ده‌ها کیلومتر کنار هم صف کشیده‌اند و ارتفاع برخی از آنها به ده‌ها متر می‌رسد.",
+       "tr": "",
+       "de": "Diese Kaluts reihen sich in der Nähe der Stadt Schahdad über Dutzende Kilometer aneinander, und manche von ihnen sind Dutzende Meter hoch."
       },
       {
        "fa": "کلوت‌ها حاصل هزاران سال فرسایش هستند: باد و گاهی سیلاب‌های کوتاه، خاک نرم را برده‌اند و بخش‌های سخت‌تر باقی مانده‌اند.",
@@ -56,14 +81,19 @@
        "de": "Die Kaluts sind das Ergebnis jahrtausendelanger Erosion: Wind und gelegentliche kurze Sturzfluten haben den weichen Boden abgetragen, die härteren Teile sind geblieben."
       },
       {
+       "fa": "جهت تقریبا همه‌ی آنها یکی است، چون بادهای غالب منطقه قرن‌ها از یک سو وزیده‌اند.",
+       "tr": "",
+       "de": "Fast alle sind gleich ausgerichtet, weil die vorherrschenden Winde der Region jahrhundertelang aus derselben Richtung geweht haben."
+      },
+      {
        "fa": "از دور، این شکل‌ها به شهری ویران شبیه‌اند و به همین دلیل گاهی آنها را «شهر افسانه‌ای» می‌نامند.",
        "tr": "",
        "de": "Von Weitem ähneln diese Formen einer zerstörten Stadt, deshalb nennt man sie manchmal ‹Märchenstadt›."
       },
       {
-       "fa": "در بخش شرقی، تپه‌های شنی بسیار بلندی وجود دارد که برخی از آنها از بلندترین تپه‌های شنی جهان به شمار می‌روند.",
+       "fa": "در بخش شرقی، تپه‌های شنی بسیار بلندی وجود دارد که برخی از آنها از بلندترین تپه‌های شنی جهان به شمار می‌روند و ارتفاعشان به چند صد متر می‌رسد.",
        "tr": "",
-       "de": "Im Osten gibt es sehr hohe Sanddünen, von denen einige zu den höchsten der Welt gezählt werden."
+       "de": "Im Osten gibt es sehr hohe Sanddünen, von denen einige zu den höchsten der Welt gezählt werden und mehrere hundert Meter hoch sind."
       },
       {
        "fa": "لوت با وجود گرمای سوزان کاملا بی‌جان نیست؛ گونه‌هایی از روباه، مارمولک و حشرات با این شرایط سازگار شده‌اند.",
@@ -71,19 +101,39 @@
        "de": "Trotz der glühenden Hitze ist die Lut nicht völlig leblos; einige Fuchs-, Eidechsen- und Insektenarten haben sich an diese Bedingungen angepasst."
       },
       {
+       "fa": "بسیاری از این جانوران روزها در لانه‌های زیرزمینی پناه می‌گیرند و فقط شب‌ها که هوا خنک‌تر است، برای یافتن غذا بیرون می‌آیند.",
+       "tr": "",
+       "de": "Viele dieser Tiere suchen tagsüber in unterirdischen Bauen Schutz und kommen nur nachts, wenn es kühler ist, zur Nahrungssuche heraus."
+      },
+      {
        "fa": "امروز گردشگران زیادی، به‌ویژه در فصل‌های خنک‌تر، برای دیدن کلوت‌ها و آسمان پرستاره‌ی شب به این منطقه سفر می‌کنند.",
        "tr": "",
        "de": "Heute reisen viele Touristen, besonders in den kühleren Jahreszeiten, in diese Gegend, um die Kaluts und den Sternenhimmel bei Nacht zu sehen."
       },
       {
-       "fa": "اما لوت فقط یک شگفتی طبیعی نیست؛ این بیابان به ما یادآوری می‌کند که آب در ایران چقدر ارزشمند است.",
+       "fa": "دوری از شهرها و هوای خشک و صاف باعث می‌شود که آسمان لوت یکی از تاریک‌ترین و پرستاره‌ترین آسمان‌های ایران باشد.",
        "tr": "",
-       "de": "Doch die Lut ist nicht nur ein Naturwunder; diese Wüste erinnert uns daran, wie kostbar Wasser in Iran ist."
+       "de": "Die Entfernung zu den Städten und die trockene, klare Luft machen den Himmel über der Lut zu einem der dunkelsten und sternenreichsten Irans."
+      },
+      {
+       "fa": "اما کارشناسان محیط زیست هشدار می‌دهند که گردشگری بی‌برنامه، مثلا رانندگی روی کلوت‌ها یا رها کردن زباله، می‌تواند به این طبیعت شکننده آسیب برساند.",
+       "tr": "",
+       "de": "Umweltfachleute warnen jedoch, dass ungeplanter Tourismus – etwa das Fahren über die Kaluts oder zurückgelassener Müll – dieser empfindlichen Natur schaden kann."
+      },
+      {
+       "fa": "لوت فقط یک شگفتی طبیعی نیست؛ این بیابان به ما یادآوری می‌کند که آب در ایران چقدر ارزشمند است.",
+       "tr": "",
+       "de": "Die Lut ist nicht nur ein Naturwunder; diese Wüste erinnert uns daran, wie kostbar Wasser in Iran ist."
       },
       {
        "fa": "ایران از دیرباز سرزمینی کم‌آب بوده، اما تغییرات اقلیمی این مشکل را روز به روز جدی‌تر می‌کند.",
        "tr": "",
        "de": "Iran war schon immer ein wasserarmes Land, doch der Klimawandel macht dieses Problem von Tag zu Tag ernster."
+      },
+      {
+       "fa": "بخش بزرگی از کشور در کمربند خشک جهان قرار دارد و میانگین بارش سالانه‌ی آن تنها حدود یک‌سوم میانگین جهانی است.",
+       "tr": "",
+       "de": "Ein großer Teil des Landes liegt im Trockengürtel der Erde, und sein durchschnittlicher Jahresniederschlag beträgt nur etwa ein Drittel des weltweiten Mittels."
       },
       {
        "fa": "پژوهش‌ها نشان می‌دهد که میانگین دما در ایران در دهه‌های اخیر افزایش یافته و موج‌های گرما بیشتر شده است.",
@@ -101,14 +151,29 @@
        "de": "Eine sichtbare Folge sind Staubstürme und Feinstaub, die die Luft vieler Städte verschmutzen."
       },
       {
+       "fa": "بخشی از این گرد و خاک از تالاب‌ها و دریاچه‌هایی برمی‌خیزد که خشک شده‌اند؛ برای نمونه، تالاب هامون در سیستان در بسیاری از سال‌ها تقریبا خشک است.",
+       "tr": "",
+       "de": "Ein Teil dieses Staubs stammt aus ausgetrockneten Feuchtgebieten und Seen; das Hamun-Feuchtgebiet in Sistan zum Beispiel ist in vielen Jahren fast trocken."
+      },
+      {
+       "fa": "دریاچه‌ی ارومیه در شمال غربی کشور نیز در دهه‌های اخیر بخش بزرگی از آب خود را از دست داده است.",
+       "tr": "",
+       "de": "Auch der Urmia-See im Nordwesten des Landes hat in den letzten Jahrzehnten einen großen Teil seines Wassers verloren."
+      },
+      {
        "fa": "مشکل بزرگ دیگر، برداشت بی‌رویه از آب زیرزمینی است: سال‌ها با هزاران چاه بیش از اندازه آب برای کشاورزی و شهرها برداشته شده است.",
        "tr": "",
        "de": "Ein weiteres großes Problem ist die übermäßige Entnahme von Grundwasser: Jahrelang wurde mit Tausenden Brunnen zu viel Wasser für Landwirtschaft und Städte gefördert."
       },
       {
-       "fa": "نتیجه‌ی آن فرونشست زمین است؛ در برخی نقاط دشت تهران، زمین هر سال چند سانتی‌متر و گاهی حتی بیش از بیست سانتی‌متر پایین می‌رود.",
+       "fa": "به گفته‌ی کارشناسان، بیش از هشتاد درصد آب مصرفی کشور به کشاورزی اختصاص دارد و بخش بزرگی از زمین‌ها هنوز با روش‌های سنتی و پرهدر آبیاری می‌شود.",
        "tr": "",
-       "de": "Die Folge ist Bodenabsenkung; an manchen Stellen der Teheraner Ebene sinkt der Boden jedes Jahr um mehrere, teils sogar um über zwanzig Zentimeter."
+       "de": "Fachleuten zufolge entfallen über achtzig Prozent des Wasserverbrauchs auf die Landwirtschaft, und ein großer Teil der Felder wird noch mit traditionellen, verlustreichen Methoden bewässert."
+      },
+      {
+       "fa": "نتیجه‌ی آن فرونشست زمین است؛ اندازه‌گیری‌های ماهواره‌ای نشان می‌دهد که در برخی نقاط دشت تهران، زمین هر سال چند سانتی‌متر و گاهی حتی بیش از بیست سانتی‌متر پایین می‌رود.",
+       "tr": "",
+       "de": "Die Folge ist Bodenabsenkung; Satellitenmessungen zeigen, dass der Boden an manchen Stellen der Teheraner Ebene jedes Jahr um mehrere, teils sogar um über zwanzig Zentimeter sinkt."
       },
       {
        "fa": "این پدیده به ساختمان‌ها، جاده‌ها و لوله‌ها آسیب می‌رساند و به سختی جبران‌پذیر است.",
@@ -121,6 +186,11 @@
        "de": "Fachleute sagen voraus, dass der Druck auf die Wasserressourcen in den kommenden Jahrzehnten noch weiter steigen wird, wenn der derzeitige Trend anhält."
       },
       {
+       "fa": "انتظار می‌رود که در بسیاری از مناطق، موج‌های گرما طولانی‌تر و خشکسالی‌ها شدیدتر شوند.",
+       "tr": "",
+       "de": "Man erwartet, dass Hitzewellen in vielen Regionen länger und Dürren heftiger werden."
+      },
+      {
        "fa": "با این حال، راه‌حل‌هایی هم وجود دارد و برخی از آنها ریشه در تاریخ دارند.",
        "tr": "",
        "de": "Es gibt jedoch auch Lösungen, und manche davon wurzeln in der Geschichte."
@@ -131,9 +201,19 @@
        "de": "Qanate sind unterirdische Kanäle, die jahrhundertelang ohne Pumpe Wasser aus dem Inneren der Berge in Dörfer und Städte brachten."
       },
       {
-       "fa": "قنات ایرانی نمونه‌ای از مدیریت هوشمندانه‌ی آب است و آن هم در سال ۲۰۱۶ در فهرست یونسکو ثبت شد.",
+       "fa": "سازندگان قنات، که «مقنی» نامیده می‌شدند، تونلی با شیب بسیار ملایم می‌کندند تا آب به کمک نیروی جاذبه آرام و بدون هدر رفتن جاری شود.",
        "tr": "",
-       "de": "Der persische Qanat ist ein Beispiel für klugen Umgang mit Wasser und wurde ebenfalls 2016 in die UNESCO-Liste aufgenommen."
+       "de": "Die Qanatbauer, ‹Moqanni› genannt, gruben einen Tunnel mit sehr sanftem Gefälle, damit das Wasser allein durch die Schwerkraft ruhig und ohne Verluste fließt."
+      },
+      {
+       "fa": "قنات ایرانی نمونه‌ای از مدیریت هوشمندانه‌ی آب است و آن هم در سال ۲۰۱۶ در فهرست یونسکو ثبت شد؛ قدمت برخی از قنات‌ها، مانند قنات قصبه در گناباد، را بیش از دو هزار سال می‌دانند.",
+       "tr": "",
+       "de": "Der persische Qanat ist ein Beispiel für klugen Umgang mit Wasser und wurde ebenfalls 2016 in die UNESCO-Liste aufgenommen; manche Qanate, etwa der Qasabe-Qanat in Gonabad, gelten als über zweitausend Jahre alt."
+      },
+      {
+       "fa": "معماری سنتی شهرهای کویری مانند یزد نیز نمونه‌ی دیگری از سازگاری است: بادگیرها هوای خنک را به داخل خانه‌ها هدایت می‌کنند و دیوارهای ضخیم خشتی جلوی گرما را می‌گیرند.",
+       "tr": "",
+       "de": "Auch die traditionelle Architektur von Wüstenstädten wie Yazd ist ein Beispiel für Anpassung: Windtürme leiten kühle Luft in die Häuser, und dicke Lehmziegelmauern halten die Hitze ab."
       },
       {
        "fa": "امروز آبیاری قطره‌ای، استفاده‌ی دوباره از فاضلاب تصفیه‌شده و صرفه‌جویی در مصرف خانگی می‌تواند تا حدی از فشار بر منابع بکاهد.",
@@ -144,6 +224,11 @@
        "fa": "انرژی خورشیدی نیز، به‌ویژه در مناطقی مثل کرمان که به‌مراتب بیش از اروپا آفتاب دارند، فرصتی بزرگ است.",
        "tr": "",
        "de": "Auch die Solarenergie ist eine große Chance, besonders in Regionen wie Kerman, die weitaus mehr Sonne haben als Europa."
+      },
+      {
+       "fa": "البته هیچ‌کدام از این راه‌ها به تنهایی کافی نخواهد بود؛ مدیریت پایدار آب به همکاری کشاورزان، شهرها و تک‌تک شهروندان نیاز دارد.",
+       "tr": "",
+       "de": "Keiner dieser Wege wird allerdings allein ausreichen; eine nachhaltige Wasserwirtschaft braucht die Zusammenarbeit von Landwirten, Städten und jeder einzelnen Bürgerin und jedem einzelnen Bürger."
       },
       {
        "fa": "شاید مهم‌ترین درس لوت این باشد: طبیعت سازگاری را به ما یاد می‌دهد، به شرط آنکه به آن گوش بدهیم.",
@@ -204,10 +289,31 @@
         "richtig",
         "falsch"
        ],
+       "richtig": 0,
+       "fa": "جهت تقریبا همه‌ی کلوت‌ها یکی است.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
        "richtig": 1,
        "fa": "در لوت هیچ جانوری زندگی نمی‌کند.",
        "fest": true,
        "erkl": "Einige <b>Fuchs-, Eidechsen- und Insektenarten</b> haben sich angepasst."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "بیشتر آب مصرفی ایران در خانه‌ها مصرف می‌شود.",
+       "fest": true,
+       "erkl": "Über achtzig Prozent gehen in die <b>Landwirtschaft</b>."
       },
       {
        "frage": "Richtig oder falsch?",
@@ -235,6 +341,15 @@
        "richtig": 0
       },
       {
+       "frage": "Warum wird es in Gandom Beryan so heiß?",
+       "optionen": [
+        "Dunkles Vulkangestein nimmt das Sonnenlicht stark auf.",
+        "Dort gibt es heiße Quellen.",
+        "Dort weht nie Wind."
+       ],
+       "richtig": 0
+      },
+      {
        "frage": "Was sind Kaluts?",
        "optionen": [
         "vom Wind geformte Wände und Säulen aus Erde",
@@ -253,11 +368,11 @@
        "richtig": 0
       },
       {
-       "frage": "Was haben die Lut und der persische Qanat gemeinsam?",
+       "frage": "Wie fließt das Wasser in einem Qanat?",
        "optionen": [
-        "Beide wurden 2016 ins UNESCO-Welterbe aufgenommen.",
-        "Beide liegen in der Teheraner Ebene.",
-        "Beide sind im 20. Jahrhundert entstanden."
+        "durch die Schwerkraft, in einem Tunnel mit sanftem Gefälle",
+        "mit elektrischen Pumpen",
+        "durch Windkraft"
        ],
        "richtig": 0
       },
@@ -278,6 +393,16 @@
      "frage": "Bring die Sätze in die Reihenfolge des Textes.",
      "items": [
       {
+       "fa": "مساحت این بیابان بیش از پنجاه هزار کیلومتر مربع است و بخش‌هایی از آن به استان‌های سیستان و بلوچستان و خراسان جنوبی نیز می‌رسد.",
+       "tr": "",
+       "de": "Die Wüste ist über fünfzigtausend Quadratkilometer groß, und Teile von ihr reichen auch in die Provinzen Sistan und Belutschistan sowie Süd-Chorasan."
+      },
+      {
+       "fa": "لوت در گودالی میان رشته‌کوه‌های بلند قرار گرفته است؛ این کوه‌ها جلوی ابرهای باران‌زا را می‌گیرند و به همین دلیل بارش سالانه در مرکز آن بسیار ناچیز است.",
+       "tr": "",
+       "de": "Die Lut liegt in einer Senke zwischen hohen Gebirgsketten; diese Berge halten die Regenwolken ab, deshalb ist der jährliche Niederschlag in ihrem Zentrum äußerst gering."
+      },
+      {
        "fa": "لوت در سال ۲۰۱۶ به عنوان نخستین اثر طبیعی ایران در فهرست میراث جهانی یونسکو ثبت شد.",
        "tr": "",
        "de": "Die Lut wurde 2016 als erste Naturstätte Irans in die UNESCO-Welterbeliste aufgenommen."
@@ -288,24 +413,14 @@
        "de": "Diese Wüste gilt als einer der heißesten Orte der Erde."
       },
       {
-       "fa": "ماهواره‌ها در سال ۲۰۰۵ دمای سطح زمین را در لوت حدود هفتاد درجه‌ی سانتی‌گراد ثبت کردند؛ یکی از بالاترین دماهایی که تاکنون اندازه‌گیری شده است.",
+       "fa": "ماهواره‌ها در سال ۲۰۰۵ در منطقه‌ای به نام «گندم بریان» دمای سطح زمین را حدود هفتاد درجه‌ی سانتی‌گراد ثبت کردند؛ یکی از بالاترین دماهایی که تاکنون اندازه‌گیری شده است.",
        "tr": "",
-       "de": "Satelliten verzeichneten 2005 in der Lut eine Bodentemperatur von etwa siebzig Grad Celsius – einen der höchsten jemals gemessenen Werte."
+       "de": "Satelliten verzeichneten 2005 in einem Gebiet namens ‹Gandom Beryan› eine Bodentemperatur von etwa siebzig Grad Celsius – einen der höchsten jemals gemessenen Werte."
       },
       {
-       "fa": "البته این دمای خود خاک و سنگ است، نه دمای هوا؛ دمای هوا معمولا به مراتب پایین‌تر است.",
+       "fa": "سطح گندم بریان را سنگ‌های تیره‌ی آتشفشانی پوشانده است که نور خورشید را به خوبی جذب می‌کنند و به شدت داغ می‌شوند.",
        "tr": "",
-       "de": "Das ist allerdings die Temperatur von Boden und Gestein selbst, nicht der Luft; die Lufttemperatur ist meist weitaus niedriger."
-      },
-      {
-       "fa": "در بخش غربی لوت، دیواره‌ها و ستون‌های عظیمی از خاک دیده می‌شود که مردم محلی به هر کدام «کلوت» می‌گویند.",
-       "tr": "",
-       "de": "Im westlichen Teil der Lut sieht man gewaltige Wände und Säulen aus Erde, die die Einheimischen jeweils ‹Kalut› nennen."
-      },
-      {
-       "fa": "کلوت‌ها حاصل هزاران سال فرسایش هستند: باد و گاهی سیلاب‌های کوتاه، خاک نرم را برده‌اند و بخش‌های سخت‌تر باقی مانده‌اند.",
-       "tr": "",
-       "de": "Die Kaluts sind das Ergebnis jahrtausendelanger Erosion: Wind und gelegentliche kurze Sturzfluten haben den weichen Boden abgetragen, die härteren Teile sind geblieben."
+       "de": "Die Oberfläche von Gandom Beryan ist mit dunklem Vulkangestein bedeckt, das das Sonnenlicht stark aufnimmt und sich enorm aufheizt."
       }
      ]
     }
@@ -321,11 +436,35 @@
      "titel": "Welches Wort fehlt im Text?",
      "fragen": [
       {
+       "frage": "<span class='fa'>مساحت این ___ بیش از پنجاه هزار کیلومتر مربع است و بخش‌هایی از آن به استان‌های سیستان و بلوچستان و خراسان جنوبی نیز می‌رسد.</span><br><span class='mini'>Die Wüste ist über fünfzigtausend Quadratkilometer groß, und Teile von ihr reichen auch in die Provinzen Sistan und Belutschistan sowie Süd-Chorasan.</span>",
+       "optionen": [
+        "بیابان",
+        "کشاورزی",
+        "قنات"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>مساحت این بیابان بیش از پنجاه هزار کیلومتر مربع است و بخش‌هایی از آن به استان‌های سیستان و بلوچستان و خراسان جنوبی نیز می‌رسد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>لوت در گودالی میان رشته‌کوه‌های بلند قرار گرفته است؛ این کوه‌ها جلوی ابرهای باران‌زا را می‌گیرند و به همین دلیل ___ سالانه در مرکز آن بسیار ناچیز است.</span><br><span class='mini'>Die Lut liegt in einer Senke zwischen hohen Gebirgsketten; diese Berge halten die Regenwolken ab, deshalb ist der jährliche Niederschlag in ihrem Zentrum äußerst gering.</span>",
+       "optionen": [
+        "بارش",
+        "کهکشان",
+        "بادگیر"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>لوت در گودالی میان رشته‌کوه‌های بلند قرار گرفته است؛ این کوه‌ها جلوی ابرهای باران‌زا را می‌گیرند و به همین دلیل بارش سالانه در مرکز آن بسیار ناچیز است.</span>"
+      },
+      {
        "frage": "<span class='fa'>لوت در سال ۲۰۱۶ به عنوان نخستین اثر طبیعی ایران در فهرست ___ یونسکو ثبت شد.</span><br><span class='mini'>Die Lut wurde 2016 als erste Naturstätte Irans in die UNESCO-Welterbeliste aufgenommen.</span>",
        "optionen": [
         "میراث جهانی",
-        "ماهواره",
-        "خشکسالی"
+        "گردشگر",
+        "ریزگرد"
        ],
        "richtig": 0,
        "optFa": true,
@@ -336,8 +475,8 @@
        "frage": "<span class='fa'>این ___ را یکی از گرم‌ترین نقاط کره‌ی زمین می‌دانند.</span><br><span class='mini'>Diese Wüste gilt als einer der heißesten Orte der Erde.</span>",
        "optionen": [
         "بیابان",
-        "سوزان",
-        "دما"
+        "پایدار",
+        "راهنما"
        ],
        "richtig": 0,
        "optFa": true,
@@ -345,23 +484,41 @@
        "erkl": "<span class='fa'>این بیابان را یکی از گرم‌ترین نقاط کره‌ی زمین می‌دانند.</span>"
       },
       {
+       "frage": "<span class='fa'>در زمستان، به‌ویژه شب‌ها، دما در همین ___ گاهی تا نزدیک صفر پایین می‌آید؛ تفاوت دمای شب و روز در لوت بسیار زیاد است.</span><br><span class='mini'>Im Winter, vor allem nachts, sinkt die Temperatur in derselben Wüste manchmal bis nahe null; der Unterschied zwischen Tag- und Nachttemperatur ist in der Lut sehr groß.</span>",
+       "optionen": [
+        "بیابان",
+        "بی‌آب‌وعلف",
+        "خشکسالی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>در زمستان، به‌ویژه شب‌ها، دما در همین بیابان گاهی تا نزدیک صفر پایین می‌آید؛ تفاوت دمای شب و روز در لوت بسیار زیاد است.</span>"
+      },
+      {
        "frage": "<span class='fa'>در بخش غربی لوت، دیواره‌ها و ستون‌های عظیمی از خاک دیده می‌شود که مردم محلی به هر کدام «___» می‌گویند.</span><br><span class='mini'>Im westlichen Teil der Lut sieht man gewaltige Wände und Säulen aus Erde, die die Einheimischen jeweils ‹Kalut› nennen.</span>",
        "optionen": [
         "کلوت",
-        "سازگاری",
-        "سوزان"
+        "ماهواره",
+        "ضدآفتاب"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
        "erkl": "<span class='fa'>در بخش غربی لوت، دیواره‌ها و ستون‌های عظیمی از خاک دیده می‌شود که مردم محلی به هر کدام «کلوت» می‌گویند.</span>"
-      },
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort fehlt im Text?",
+     "fragen": [
       {
        "frage": "<span class='fa'>کلوت‌ها حاصل هزاران سال ___ هستند: باد و گاهی سیلاب‌های کوتاه، خاک نرم را برده‌اند و بخش‌های سخت‌تر باقی مانده‌اند.</span><br><span class='mini'>Die Kaluts sind das Ergebnis jahrtausendelanger Erosion: Wind und gelegentliche kurze Sturzfluten haben den weichen Boden abgetragen, die härteren Teile sind geblieben.</span>",
        "optionen": [
         "فرسایش",
-        "دما",
-        "صرفه‌جویی"
+        "کهکشان",
+        "کلوت"
        ],
        "richtig": 0,
        "optFa": true,
@@ -372,8 +529,8 @@
        "frage": "<span class='fa'>لوت با وجود گرمای ___ کاملا بی‌جان نیست؛ گونه‌هایی از روباه، مارمولک و حشرات با این شرایط سازگار شده‌اند.</span><br><span class='mini'>Trotz der glühenden Hitze ist die Lut nicht völlig leblos; einige Fuchs-, Eidechsen- und Insektenarten haben sich an diese Bedingungen angepasst.</span>",
        "optionen": [
         "سوزان",
-        "میانگین",
-        "کلوت"
+        "خشکسالی",
+        "بادگیر"
        ],
        "richtig": 0,
        "optFa": true,
@@ -381,16 +538,52 @@
        "erkl": "<span class='fa'>لوت با وجود گرمای سوزان کاملا بی‌جان نیست؛ گونه‌هایی از روباه، مارمولک و حشرات با این شرایط سازگار شده‌اند.</span>"
       },
       {
-       "frage": "<span class='fa'>اما لوت فقط یک شگفتی طبیعی نیست؛ این ___ به ما یادآوری می‌کند که آب در ایران چقدر ارزشمند است.</span><br><span class='mini'>Doch die Lut ist nicht nur ein Naturwunder; diese Wüste erinnert uns daran, wie kostbar Wasser in Iran ist.</span>",
+       "frage": "<span class='fa'>دوری از شهرها و هوای ___ و صاف باعث می‌شود که آسمان لوت یکی از تاریک‌ترین و پرستاره‌ترین آسمان‌های ایران باشد.</span><br><span class='mini'>Die Entfernung zu den Städten und die trockene, klare Luft machen den Himmel über der Lut zu einem der dunkelsten und sternenreichsten Irans.</span>",
        "optionen": [
-        "بیابان",
-        "سازگاری",
-        "بی‌آب‌وعلف"
+        "خشک",
+        "بارش",
+        "خشکسالی"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
-       "erkl": "<span class='fa'>اما لوت فقط یک شگفتی طبیعی نیست؛ این بیابان به ما یادآوری می‌کند که آب در ایران چقدر ارزشمند است.</span>"
+       "erkl": "<span class='fa'>دوری از شهرها و هوای خشک و صاف باعث می‌شود که آسمان لوت یکی از تاریک‌ترین و پرستاره‌ترین آسمان‌های ایران باشد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>لوت فقط یک شگفتی طبیعی نیست؛ این ___ به ما یادآوری می‌کند که آب در ایران چقدر ارزشمند است.</span><br><span class='mini'>Die Lut ist nicht nur ein Naturwunder; diese Wüste erinnert uns daran, wie kostbar Wasser in Iran ist.</span>",
+       "optionen": [
+        "بیابان",
+        "قطب‌نما",
+        "فرسایش"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>لوت فقط یک شگفتی طبیعی نیست؛ این بیابان به ما یادآوری می‌کند که آب در ایران چقدر ارزشمند است.</span>"
+      },
+      {
+       "frage": "<span class='fa'>ایران از دیرباز سرزمینی کم‌آب بوده، اما ___ این مشکل را روز به روز جدی‌تر می‌کند.</span><br><span class='mini'>Iran war schon immer ein wasserarmes Land, doch der Klimawandel macht dieses Problem von Tag zu Tag ernster.</span>",
+       "optionen": [
+        "تغییرات اقلیمی",
+        "فرسایش",
+        "نخلستان"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>ایران از دیرباز سرزمینی کم‌آب بوده، اما تغییرات اقلیمی این مشکل را روز به روز جدی‌تر می‌کند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>بخش بزرگی از کشور در کمربند خشک جهان قرار دارد و ___ بارش سالانه‌ی آن تنها حدود یک‌سوم میانگین جهانی است.</span><br><span class='mini'>Ein großer Teil des Landes liegt im Trockengürtel der Erde, und sein durchschnittlicher Jahresniederschlag beträgt nur etwa ein Drittel des weltweiten Mittels.</span>",
+       "optionen": [
+        "میانگین",
+        "کهکشان",
+        "قطب‌نما"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>بخش بزرگی از کشور در کمربند خشک جهان قرار دارد و میانگین بارش سالانه‌ی آن تنها حدود یک‌سوم میانگین جهانی است.</span>"
       }
      ]
     },
@@ -399,23 +592,11 @@
      "titel": "Welches Wort fehlt im Text?",
      "fragen": [
       {
-       "frage": "<span class='fa'>ایران از دیرباز سرزمینی کم‌آب بوده، اما ___ این مشکل را روز به روز جدی‌تر می‌کند.</span><br><span class='mini'>Iran war schon immer ein wasserarmes Land, doch der Klimawandel macht dieses Problem von Tag zu Tag ernster.</span>",
-       "optionen": [
-        "تغییرات اقلیمی",
-        "میانگین",
-        "سازگاری"
-       ],
-       "richtig": 0,
-       "optFa": true,
-       "hoeren": false,
-       "erkl": "<span class='fa'>ایران از دیرباز سرزمینی کم‌آب بوده، اما تغییرات اقلیمی این مشکل را روز به روز جدی‌تر می‌کند.</span>"
-      },
-      {
        "frage": "<span class='fa'>پژوهش‌ها نشان می‌دهد که ___ دما در ایران در دهه‌های اخیر افزایش یافته و موج‌های گرما بیشتر شده است.</span><br><span class='mini'>Studien zeigen, dass die Durchschnittstemperatur in Iran in den letzten Jahrzehnten gestiegen ist und die Hitzewellen zugenommen haben.</span>",
        "optionen": [
         "میانگین",
-        "دما",
-        "بارش"
+        "بیابان",
+        "خنک"
        ],
        "richtig": 0,
        "optFa": true,
@@ -426,8 +607,8 @@
        "frage": "<span class='fa'>هم‌زمان، ___ در بسیاری از مناطق کمتر و نامنظم‌تر شده و خشکسالی‌های طولانی بیش از گذشته رخ می‌دهد.</span><br><span class='mini'>Gleichzeitig ist der Niederschlag in vielen Regionen geringer und unregelmäßiger geworden, und lange Dürren treten häufiger auf als früher.</span>",
        "optionen": [
         "بارش",
-        "گردشگر",
-        "پایدار"
+        "قنات",
+        "چادر"
        ],
        "richtig": 0,
        "optFa": true,
@@ -438,8 +619,8 @@
        "frage": "<span class='fa'>یکی از پیامدهای آشکار، طوفان‌های گرد و خاک و ___ است که هوای بسیاری از شهرها را آلوده می‌کند.</span><br><span class='mini'>Eine sichtbare Folge sind Staubstürme und Feinstaub, die die Luft vieler Städte verschmutzen.</span>",
        "optionen": [
         "ریزگرد",
-        "بارش",
-        "فرسایش"
+        "خنک",
+        "کلوت"
        ],
        "richtig": 0,
        "optFa": true,
@@ -447,11 +628,23 @@
        "erkl": "<span class='fa'>یکی از پیامدهای آشکار، طوفان‌های گرد و خاک و ریزگرد است که هوای بسیاری از شهرها را آلوده می‌کند.</span>"
       },
       {
+       "frage": "<span class='fa'>بخشی از این گرد و خاک از تالاب‌ها و دریاچه‌هایی برمی‌خیزد که ___ شده‌اند؛ برای نمونه، تالاب هامون در سیستان در بسیاری از سال‌ها تقریبا خشک است.</span><br><span class='mini'>Ein Teil dieses Staubs stammt aus ausgetrockneten Feuchtgebieten und Seen; das Hamun-Feuchtgebiet in Sistan zum Beispiel ist in vielen Jahren fast trocken.</span>",
+       "optionen": [
+        "خشک",
+        "چاه",
+        "ماهواره"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>بخشی از این گرد و خاک از تالاب‌ها و دریاچه‌هایی برمی‌خیزد که خشک شده‌اند؛ برای نمونه، تالاب هامون در سیستان در بسیاری از سال‌ها تقریبا خشک است.</span>"
+      },
+      {
        "frage": "<span class='fa'>مشکل بزرگ دیگر، برداشت بی‌رویه از ___ است: سال‌ها با هزاران چاه بیش از اندازه آب برای کشاورزی و شهرها برداشته شده است.</span><br><span class='mini'>Ein weiteres großes Problem ist die übermäßige Entnahme von Grundwasser: Jahrelang wurde mit Tausenden Brunnen zu viel Wasser für Landwirtschaft und Städte gefördert.</span>",
        "optionen": [
         "آب زیرزمینی",
-        "قنات",
-        "صرفه‌جویی"
+        "میانگین",
+        "بارش"
        ],
        "richtig": 0,
        "optFa": true,
@@ -459,16 +652,16 @@
        "erkl": "<span class='fa'>مشکل بزرگ دیگر، برداشت بی‌رویه از آب زیرزمینی است: سال‌ها با هزاران چاه بیش از اندازه آب برای کشاورزی و شهرها برداشته شده است.</span>"
       },
       {
-       "frage": "<span class='fa'>نتیجه‌ی آن ___ است؛ در برخی نقاط دشت تهران، زمین هر سال چند سانتی‌متر و گاهی حتی بیش از بیست سانتی‌متر پایین می‌رود.</span><br><span class='mini'>Die Folge ist Bodenabsenkung; an manchen Stellen der Teheraner Ebene sinkt der Boden jedes Jahr um mehrere, teils sogar um über zwanzig Zentimeter.</span>",
+       "frage": "<span class='fa'>به گفته‌ی کارشناسان، بیش از هشتاد درصد آب مصرفی کشور به ___ اختصاص دارد و بخش بزرگی از زمین‌ها هنوز با روش‌های سنتی و پرهدر آبیاری می‌شود.</span><br><span class='mini'>Fachleuten zufolge entfallen über achtzig Prozent des Wasserverbrauchs auf die Landwirtschaft, und ein großer Teil der Felder wird noch mit traditionellen, verlustreichen Methoden bewässert.</span>",
        "optionen": [
-        "فرونشست زمین",
-        "سد",
-        "بارش"
+        "کشاورزی",
+        "پیش‌بینی",
+        "پایدار"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
-       "erkl": "<span class='fa'>نتیجه‌ی آن فرونشست زمین است؛ در برخی نقاط دشت تهران، زمین هر سال چند سانتی‌متر و گاهی حتی بیش از بیست سانتی‌متر پایین می‌رود.</span>"
+       "erkl": "<span class='fa'>به گفته‌ی کارشناسان، بیش از هشتاد درصد آب مصرفی کشور به کشاورزی اختصاص دارد و بخش بزرگی از زمین‌ها هنوز با روش‌های سنتی و پرهدر آبیاری می‌شود.</span>"
       }
      ]
     },
@@ -488,6 +681,11 @@
        "de": "Kaluts und hohe Sanddünen sind das Ergebnis jahrtausendelanger Wind- und Erosionsarbeit."
       },
       {
+       "fa": "جانوران سازگار و آسمان پرستاره، گردشگران را جذب می‌کنند، اما طبیعت لوت شکننده است.",
+       "tr": "",
+       "de": "Angepasste Tiere und der Sternenhimmel ziehen Touristen an, doch die Natur der Lut ist empfindlich."
+      },
+      {
        "fa": "تغییرات اقلیمی گرما، خشکسالی و طوفان‌های گرد و خاک را در ایران بیشتر کرده است.",
        "tr": "",
        "de": "Der Klimawandel hat Hitze, Dürre und Staubstürme in Iran verstärkt."
@@ -498,9 +696,292 @@
        "de": "Die übermäßige Grundwasserentnahme hat zur Bodenabsenkung in der Teheraner Ebene geführt."
       },
       {
-       "fa": "قنات‌ها، آبیاری قطره‌ای، صرفه‌جویی و انرژی خورشیدی راه‌هایی برای سازگاری هستند.",
+       "fa": "قنات‌ها، بادگیرها، آبیاری قطره‌ای، صرفه‌جویی و انرژی خورشیدی راه‌هایی برای سازگاری هستند.",
        "tr": "",
-       "de": "Qanate, Tröpfchenbewässerung, Sparsamkeit und Solarenergie sind Wege der Anpassung."
+       "de": "Qanate, Windtürme, Tröpfchenbewässerung, Sparsamkeit und Solarenergie sind Wege der Anpassung."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t3",
+   "titel": "Alltag: Zwei Tage in der Lut",
+   "vorschau": "Zwei Tage in der Lut",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>عینک آفتابی</span> – Sonnenbrille · <span class='fa'>تأکید کردن</span> – betonen · <span class='fa'>منظره</span> – Landschaft, Aussicht · <span class='fa'>شکستن نور</span> – Lichtbrechung · <span class='fa'>گله</span> – Herde · <span class='fa'>محوطه</span> – Gelände, Fläche · <span class='fa'>چراغ‌قوه</span> – Taschenlampe · <span class='fa'>صورت فلکی</span> – Sternbild · <span class='fa'>طلوع</span> – Aufgang</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Alltag: Zwei Tage in der Lut",
+     "text": "Alltagstext – Tippe eine Zeile an, wenn du die Übersetzung brauchst.",
+     "zeilen": [
+      {
+       "fa": "پاییز گذشته با گروهی دوازده‌نفره از کرمان به سوی دشت لوت راه افتادیم؛ سفری دوروزه که ماه‌ها منتظرش بودم.",
+       "tr": "",
+       "de": "Letzten Herbst brachen wir mit einer zwölfköpfigen Gruppe von Kerman aus in die Lut auf – eine zweitägige Reise, auf die ich monatelang gewartet hatte."
+      },
+      {
+       "fa": "راهنمای ما، آقای کرمانی، بیست سال است که گردشگران را به بیابان می‌برد و پیش از سفر فهرست دقیقی برایمان فرستاده بود.",
+       "tr": "",
+       "de": "Unser Reiseleiter, Herr Kermani, führt seit zwanzig Jahren Touristen in die Wüste und hatte uns vor der Reise eine genaue Liste geschickt."
+      },
+      {
+       "fa": "در این فهرست، کلاه، عینک آفتابی، ضدآفتاب، لباس گرم برای شب و یک کیسه‌خواب خوب نوشته شده بود.",
+       "tr": "",
+       "de": "Auf der Liste standen Hut, Sonnenbrille, Sonnencreme, warme Kleidung für die Nacht und ein guter Schlafsack."
+      },
+      {
+       "fa": "او تأکید کرده بود که هر نفر روزانه دست‌کم چهار لیتر آب آشامیدنی همراه داشته باشد.",
+       "tr": "",
+       "de": "Er hatte betont, dass jede Person täglich mindestens vier Liter Trinkwasser dabeihaben solle."
+      },
+      {
+       "fa": "صبح زود از کرمان حرکت کردیم و پس از عبور از جاده‌ای کوهستانی به شهداد رسیدیم.",
+       "tr": "",
+       "de": "Früh am Morgen fuhren wir in Kerman los und erreichten nach einer Bergstraße Schahdad."
+      },
+      {
+       "fa": "شهداد شهری کوچک با نخلستان‌های سرسبز است و برای ما آخرین نقطه‌ی سبز پیش از بیابان بود.",
+       "tr": "",
+       "de": "Schahdad ist eine kleine Stadt mit grünen Palmenhainen; für uns war es der letzte grüne Ort vor der Wüste."
+      },
+      {
+       "fa": "چند کیلومتر بعد، منظره به کلی عوض شد: زمین صاف و بی‌آب‌وعلف بود و در دوردست، نخستین کلوت‌ها پیدا شدند.",
+       "tr": "",
+       "de": "Wenige Kilometer weiter änderte sich die Landschaft völlig: Der Boden war flach und öde, und in der Ferne tauchten die ersten Kaluts auf."
+      },
+      {
+       "fa": "آقای کرمانی ماشین‌ها را نگه داشت و برایمان توضیح داد که این شکل‌ها چطور با باد و فرسایش ساخته شده‌اند.",
+       "tr": "",
+       "de": "Herr Kermani ließ die Wagen halten und erklärte uns, wie diese Formen durch Wind und Erosion entstanden sind."
+      },
+      {
+       "fa": "او گفت: «به جهت کلوت‌ها دقت کنید؛ همه تقریبا رو به یک سو هستند، چون باد قرن‌هاست از شمال می‌وزد.»",
+       "tr": "",
+       "de": "Er sagte: ‹Achten Sie auf die Ausrichtung der Kaluts; fast alle zeigen in dieselbe Richtung, weil der Wind seit Jahrhunderten von Norden weht.›"
+      },
+      {
+       "fa": "نزدیک ظهر، با اینکه پاییز بود، هوا بسیار گرم شد و روی جاده‌ی داغ چیزی شبیه آب دیدیم.",
+       "tr": "",
+       "de": "Gegen Mittag wurde es, obwohl Herbst war, sehr heiß, und auf der heißen Straße sahen wir etwas, das wie Wasser aussah."
+      },
+      {
+       "fa": "راهنما توضیح داد که این یک سراب است: هوای داغ نزدیک زمین نور را می‌شکند و تصویر آسمان را مثل سطح آب نشان می‌دهد.",
+       "tr": "",
+       "de": "Der Reiseleiter erklärte, dass das eine Fata Morgana sei: Die heiße Luft am Boden bricht das Licht und lässt das Bild des Himmels wie eine Wasseroberfläche erscheinen."
+      },
+      {
+       "fa": "بعدازظهر را در سایه‌ی یک کلوت بزرگ گذراندیم و آقای کرمانی درباره‌ی زندگی مردم کویر صحبت کرد.",
+       "tr": "",
+       "de": "Den Nachmittag verbrachten wir im Schatten eines großen Kaluts, und Herr Kermani sprach über das Leben der Menschen in der Wüste."
+      },
+      {
+       "fa": "او از بادگیرهای یزد و قنات‌های کرمان گفت و توضیح داد که مردم این منطقه قرن‌ها با کمترین آب زندگی کرده‌اند.",
+       "tr": "",
+       "de": "Er erzählte von den Windtürmen in Yazd und den Qanaten in Kerman und erklärte, dass die Menschen hier jahrhundertelang mit ganz wenig Wasser gelebt haben."
+      },
+      {
+       "fa": "یکی از اعضای گروه پرسید که آیا هنوز شتر در این منطقه هست؛ راهنما گفت که در روستاهای حاشیه‌ی بیابان هنوز گله‌های کوچکی نگهداری می‌شود.",
+       "tr": "",
+       "de": "Ein Gruppenmitglied fragte, ob es in der Gegend noch Kamele gebe; der Reiseleiter sagte, dass in den Dörfern am Wüstenrand noch kleine Herden gehalten werden."
+      },
+      {
+       "fa": "با غروب آفتاب، رنگ کلوت‌ها از زرد به نارنجی و بعد به بنفش تغییر کرد و همه ساکت شدیم.",
+       "tr": "",
+       "de": "Bei Sonnenuntergang wechselte die Farbe der Kaluts von Gelb zu Orange und dann zu Violett, und wir alle wurden still."
+      },
+      {
+       "fa": "شب، چادرها را در محوطه‌ای صاف و کمی دورتر از کلوت‌ها برپا کردیم، چون راهنما گفت باد شبانه ممکن است شن بیاورد.",
+       "tr": "",
+       "de": "Nachts bauten wir die Zelte auf einer ebenen Fläche etwas weiter weg von den Kaluts auf, weil der Reiseleiter sagte, der Nachtwind könne Sand mitbringen."
+      },
+      {
+       "fa": "دما به سرعت پایین آمد و هوای خنک شب، پس از گرمای روز، برایمان بسیار دلپذیر بود.",
+       "tr": "",
+       "de": "Die Temperatur sank schnell, und die kühle Nachtluft war nach der Hitze des Tages sehr angenehm."
+      },
+      {
+       "fa": "پس از شام، آقای کرمانی همه‌ی چراغ‌قوه‌ها را خاموش کرد و از ما خواست به آسمان نگاه کنیم.",
+       "tr": "",
+       "de": "Nach dem Abendessen schaltete Herr Kermani alle Taschenlampen aus und bat uns, in den Himmel zu schauen."
+      },
+      {
+       "fa": "هرگز آسمانی به این روشنی ندیده بودم: کهکشان راه شیری مثل نواری سفید از یک سو تا سوی دیگر آسمان کشیده شده بود.",
+       "tr": "",
+       "de": "Nie hatte ich einen so hellen Himmel gesehen: Die Milchstraße zog sich wie ein weißes Band von einer Seite des Himmels zur anderen."
+      },
+      {
+       "fa": "راهنما با یک قطب‌نما و یک نقشه‌ی ساده‌ی آسمان، جهت شمال و چند صورت فلکی را نشانمان داد.",
+       "tr": "",
+       "de": "Mit einem Kompass und einer einfachen Himmelskarte zeigte uns der Reiseleiter die Nordrichtung und einige Sternbilder."
+      },
+      {
+       "fa": "او گفت که در شهرها به خاطر نور و آلودگی هوا فقط بخش کوچکی از این ستاره‌ها دیده می‌شود.",
+       "tr": "",
+       "de": "Er sagte, dass man in den Städten wegen des Lichts und der Luftverschmutzung nur einen kleinen Teil dieser Sterne sieht."
+      },
+      {
+       "fa": "صبح روز بعد، پیش از طلوع آفتاب بیدار شدیم تا در هوای خنک کمی میان کلوت‌ها پیاده‌روی کنیم.",
+       "tr": "",
+       "de": "Am nächsten Morgen standen wir vor Sonnenaufgang auf, um in der kühlen Luft ein wenig zwischen den Kaluts zu wandern."
+      },
+      {
+       "fa": "هنگام بازگشت، آقای کرمانی از ما خواست هیچ زباله‌ای در بیابان باقی نگذاریم و حتی پوست میوه را هم با خود ببریم.",
+       "tr": "",
+       "de": "Bei der Rückfahrt bat uns Herr Kermani, keinen Müll in der Wüste zurückzulassen und sogar Obstschalen mitzunehmen."
+      },
+      {
+       "fa": "او گفت: «این بیابان هزاران سال بدون ما زیبا بوده است؛ ما فقط مهمان هستیم.»",
+       "tr": "",
+       "de": "Er sagte: ‹Diese Wüste war Tausende Jahre ohne uns schön; wir sind nur Gäste.›"
+      },
+      {
+       "fa": "در راه کرمان به این فکر می‌کردم که لوت به ظاهر خالی است، اما درس‌های زیادی درباره‌ی آب، صبر و سازگاری دارد.",
+       "tr": "",
+       "de": "Auf dem Weg nach Kerman dachte ich darüber nach, dass die Lut leer zu sein scheint, aber viel über Wasser, Geduld und Anpassung lehrt."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "سفر گروه یک هفته طول کشید.",
+       "fest": true,
+       "erkl": "Die Reise dauerte <b>zwei Tage</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "هر نفر باید روزانه دست‌کم چهار لیتر آب همراه داشت.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "آنچه روی جاده مثل آب به نظر می‌رسید، واقعا آب بود.",
+       "fest": true,
+       "erkl": "Es war eine <b>Fata Morgana</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "در شهر، به خاطر نور و آلودگی، ستاره‌های کمتری دیده می‌شود.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "راهنما گفت که زباله‌های کوچک مثل پوست میوه مشکلی ندارند.",
+       "fest": true,
+       "erkl": "Man sollte <b>sogar Obstschalen</b> wieder mitnehmen."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Was war für die Gruppe der letzte grüne Ort vor der Wüste?",
+       "optionen": [
+        "Schahdad mit seinen Palmenhainen",
+        "Yazd",
+        "ein Qanat in den Bergen"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Warum zeigen die Kaluts laut Reiseleiter in dieselbe Richtung?",
+       "optionen": [
+        "Der Wind weht seit Jahrhunderten von Norden.",
+        "Sie wurden von Menschen gebaut.",
+        "Das Wasser fließt nach Süden."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Warum standen die Zelte etwas weiter weg von den Kaluts?",
+       "optionen": [
+        "Der Nachtwind kann Sand mitbringen.",
+        "Dort war es wärmer.",
+        "Bei den Kaluts ist Campen verboten."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was meint Herr Kermani mit ‹Wir sind nur Gäste›?",
+       "optionen": [
+        "Man soll die Wüste so verlassen, wie man sie vorgefunden hat.",
+        "Man soll schnell wieder abreisen.",
+        "Touristen sollen Eintritt bezahlen."
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "راهنمای ما، آقای کرمانی، بیست سال است که گردشگران را به بیابان می‌برد و پیش از سفر فهرست دقیقی برایمان فرستاده بود.",
+       "tr": "",
+       "de": "Unser Reiseleiter, Herr Kermani, führt seit zwanzig Jahren Touristen in die Wüste und hatte uns vor der Reise eine genaue Liste geschickt."
+      },
+      {
+       "fa": "در این فهرست، کلاه، عینک آفتابی، ضدآفتاب، لباس گرم برای شب و یک کیسه‌خواب خوب نوشته شده بود.",
+       "tr": "",
+       "de": "Auf der Liste standen Hut, Sonnenbrille, Sonnencreme, warme Kleidung für die Nacht und ein guter Schlafsack."
+      },
+      {
+       "fa": "او تأکید کرده بود که هر نفر روزانه دست‌کم چهار لیتر آب آشامیدنی همراه داشته باشد.",
+       "tr": "",
+       "de": "Er hatte betont, dass jede Person täglich mindestens vier Liter Trinkwasser dabeihaben solle."
+      },
+      {
+       "fa": "صبح زود از کرمان حرکت کردیم و پس از عبور از جاده‌ای کوهستانی به شهداد رسیدیم.",
+       "tr": "",
+       "de": "Früh am Morgen fuhren wir in Kerman los und erreichten nach einer Bergstraße Schahdad."
+      },
+      {
+       "fa": "شهداد شهری کوچک با نخلستان‌های سرسبز است و برای ما آخرین نقطه‌ی سبز پیش از بیابان بود.",
+       "tr": "",
+       "de": "Schahdad ist eine kleine Stadt mit grünen Palmenhainen; für uns war es der letzte grüne Ort vor der Wüste."
+      },
+      {
+       "fa": "چند کیلومتر بعد، منظره به کلی عوض شد: زمین صاف و بی‌آب‌وعلف بود و در دوردست، نخستین کلوت‌ها پیدا شدند.",
+       "tr": "",
+       "de": "Wenige Kilometer weiter änderte sich die Landschaft völlig: Der Boden war flach und öde, und in der Ferne tauchten die ersten Kaluts auf."
       }
      ]
     }
@@ -532,6 +1013,16 @@
        "de": "Ja, das stimmt. Wir fahren Ende Herbst, denn im Sommer ist die Hitze der Lut äußerst gefährlich."
       },
       {
+       "fa": "یوناس: سفر چند روز طول خواهد کشید و کجا خواهیم ماند؟",
+       "tr": "",
+       "de": "Wie viele Tage wird die Reise dauern, und wo werden wir übernachten?"
+      },
+      {
+       "fa": "دکتر صادقی: چهار روز. دو شب در کرمان می‌مانیم و یک شب در اقامتگاهی در شهداد، نزدیک کلوت‌ها.",
+       "tr": "",
+       "de": "Vier Tage. Zwei Nächte bleiben wir in Kerman und eine Nacht in einer Unterkunft in Schahdad, in der Nähe der Kaluts."
+      },
+      {
        "fa": "یوناس: آیا فقط از کلوت‌ها بازدید خواهیم کرد؟",
        "tr": "",
        "de": "Werden wir nur die Kaluts besichtigen?"
@@ -542,9 +1033,9 @@
        "de": "Nein. Einen Tag besuchen wir auch einen alten Qanat bei Kerman. Um die Geschichte Irans zu verstehen, sind Qanate weitaus wichtiger als viele Paläste."
       },
       {
-       "fa": "یوناس: چرا این‌قدر مهم؟",
+       "fa": "یوناس: چرا قنات‌ها این‌قدر مهم‌اند؟",
        "tr": "",
-       "de": "Warum so wichtig?"
+       "de": "Warum sind Qanate so wichtig?"
       },
       {
        "fa": "دکتر صادقی: چون بدون قنات، زندگی در بسیاری از روستاها و شهرهای فلات ایران ممکن نبود. قنات آب را بدون پمپ و با تبخیر کم منتقل می‌کند.",
@@ -560,6 +1051,31 @@
        "fa": "دکتر صادقی: از برخی بله، اما بسیاری خشک شده‌اند، چون چاه‌های عمیق سطح آب زیرزمینی را پایین برده‌اند. در سفر درباره‌ی این موضوع بیشتر خواهید شنید.",
        "tr": "",
        "de": "Manche ja, aber viele sind ausgetrocknet, weil tiefe Brunnen den Grundwasserspiegel gesenkt haben. Auf der Reise werden Sie mehr darüber hören."
+      },
+      {
+       "fa": "یوناس: برای این سفر باید چیز خاصی آماده کنم؟",
+       "tr": "",
+       "de": "Muss ich für diese Reise etwas Besonderes vorbereiten?"
+      },
+      {
+       "fa": "دکتر صادقی: کلاه، ضدآفتاب و لباس گرم را فراموش نکنید. در کویر تفاوت دمای روز و شب به مراتب بیشتر از تهران است.",
+       "tr": "",
+       "de": "Vergessen Sie Hut, Sonnencreme und warme Kleidung nicht. In der Wüste ist der Unterschied zwischen Tag- und Nachttemperatur weitaus größer als in Teheran."
+      },
+      {
+       "fa": "یوناس: آیا باید درباره‌ی سفر گزارشی هم بنویسیم؟",
+       "tr": "",
+       "de": "Müssen wir auch einen Bericht über die Reise schreiben?"
+      },
+      {
+       "fa": "دکتر صادقی: بله، هر دانشجو یک گزارش کوتاه خواهد نوشت. پیشنهاد من برای شما این است که درباره‌ی واژه‌های مربوط به آب در فارسی بنویسید؛ از «کاریز» تا «میراب».",
+       "tr": "",
+       "de": "Ja, jede Studentin und jeder Student wird einen kurzen Bericht schreiben. Ich schlage Ihnen vor, über persische Wörter rund ums Wasser zu schreiben – von ‹Kariz› bis ‹Mirab›."
+      },
+      {
+       "fa": "یوناس: موضوع جالبی است. از همین حالا شروع می‌کنم. ممنون، خانم دکتر.",
+       "tr": "",
+       "de": "Ein interessantes Thema. Ich fange gleich damit an. Danke, Frau Doktor."
       }
      ]
     },
@@ -579,6 +1095,16 @@
        "de": "Ja, das stimmt. Wir fahren Ende Herbst, denn im Sommer ist die Hitze der Lut äußerst gefährlich."
       },
       {
+       "fa": "یوناس: سفر چند روز طول خواهد کشید و کجا خواهیم ماند؟",
+       "tr": "",
+       "de": "Wie viele Tage wird die Reise dauern, und wo werden wir übernachten?"
+      },
+      {
+       "fa": "دکتر صادقی: چهار روز. دو شب در کرمان می‌مانیم و یک شب در اقامتگاهی در شهداد، نزدیک کلوت‌ها.",
+       "tr": "",
+       "de": "Vier Tage. Zwei Nächte bleiben wir in Kerman und eine Nacht in einer Unterkunft in Schahdad, in der Nähe der Kaluts."
+      },
+      {
        "fa": "یوناس: آیا فقط از کلوت‌ها بازدید خواهیم کرد؟",
        "tr": "",
        "de": "Werden wir nur die Kaluts besichtigen?"
@@ -589,9 +1115,9 @@
        "de": "Nein. Einen Tag besuchen wir auch einen alten Qanat bei Kerman. Um die Geschichte Irans zu verstehen, sind Qanate weitaus wichtiger als viele Paläste."
       },
       {
-       "fa": "یوناس: چرا این‌قدر مهم؟",
+       "fa": "یوناس: چرا قنات‌ها این‌قدر مهم‌اند؟",
        "tr": "",
-       "de": "Warum so wichtig?"
+       "de": "Warum sind Qanate so wichtig?"
       },
       {
        "fa": "دکتر صادقی: چون بدون قنات، زندگی در بسیاری از روستاها و شهرهای فلات ایران ممکن نبود. قنات آب را بدون پمپ و با تبخیر کم منتقل می‌کند.",
@@ -607,6 +1133,31 @@
        "fa": "دکتر صادقی: از برخی بله، اما بسیاری خشک شده‌اند، چون چاه‌های عمیق سطح آب زیرزمینی را پایین برده‌اند. در سفر درباره‌ی این موضوع بیشتر خواهید شنید.",
        "tr": "",
        "de": "Manche ja, aber viele sind ausgetrocknet, weil tiefe Brunnen den Grundwasserspiegel gesenkt haben. Auf der Reise werden Sie mehr darüber hören."
+      },
+      {
+       "fa": "یوناس: برای این سفر باید چیز خاصی آماده کنم؟",
+       "tr": "",
+       "de": "Muss ich für diese Reise etwas Besonderes vorbereiten?"
+      },
+      {
+       "fa": "دکتر صادقی: کلاه، ضدآفتاب و لباس گرم را فراموش نکنید. در کویر تفاوت دمای روز و شب به مراتب بیشتر از تهران است.",
+       "tr": "",
+       "de": "Vergessen Sie Hut, Sonnencreme und warme Kleidung nicht. In der Wüste ist der Unterschied zwischen Tag- und Nachttemperatur weitaus größer als in Teheran."
+      },
+      {
+       "fa": "یوناس: آیا باید درباره‌ی سفر گزارشی هم بنویسیم؟",
+       "tr": "",
+       "de": "Müssen wir auch einen Bericht über die Reise schreiben?"
+      },
+      {
+       "fa": "دکتر صادقی: بله، هر دانشجو یک گزارش کوتاه خواهد نوشت. پیشنهاد من برای شما این است که درباره‌ی واژه‌های مربوط به آب در فارسی بنویسید؛ از «کاریز» تا «میراب».",
+       "tr": "",
+       "de": "Ja, jede Studentin und jeder Student wird einen kurzen Bericht schreiben. Ich schlage Ihnen vor, über persische Wörter rund ums Wasser zu schreiben – von ‹Kariz› bis ‹Mirab›."
+      },
+      {
+       "fa": "یوناس: موضوع جالبی است. از همین حالا شروع می‌کنم. ممنون، خانم دکتر.",
+       "tr": "",
+       "de": "Ein interessantes Thema. Ich fange gleich damit an. Danke, Frau Doktor."
       }
      ]
     },
@@ -624,20 +1175,20 @@
        "richtig": 0
       },
       {
-       "frage": "Warum sind Qanate laut Dr. Sadeghi so wichtig?",
-       "optionen": [
-        "Ohne sie wäre Leben im Hochland nicht möglich gewesen.",
-        "Sie sind schöner als Paläste.",
-        "Sie erzeugen Strom."
-       ],
-       "richtig": 0
-      },
-      {
        "frage": "Warum sind viele Qanate ausgetrocknet?",
        "optionen": [
         "Tiefe Brunnen haben den Grundwasserspiegel gesenkt.",
         "Niemand repariert sie.",
         "Die Sanddünen haben sie verschüttet."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Worüber soll Jonas seinen Bericht schreiben?",
+       "optionen": [
+        "über persische Wörter rund ums Wasser",
+        "über die Tiere der Lut",
+        "über Solarenergie in Kerman"
        ],
        "richtig": 0
       }
@@ -676,14 +1227,34 @@
        "de": "Macht nichts, aber hier ist Wasser eine andere Geschichte. Dieses Jahr ist hinter den Staudämmen Teherans sehr wenig Wasser."
       },
       {
-       "fa": "یوناس: راستش در آلمان هم تابستان‌ها گاهی خشکسالی داریم، ولی کمتر کسی آن را جدی می‌گیرد. به نظرم هر چه زودتر عادت‌هایمان را عوض کنیم، بهتر است.",
+       "fa": "یوناس: واقعا وضع این‌قدر جدی است؟ در اخبار چیزهایی خوانده بودم، اما فکر نمی‌کردم به خانه‌ی ما هم برسد.",
        "tr": "",
-       "de": "Ehrlich gesagt haben wir in Deutschland im Sommer auch manchmal Dürre, aber kaum jemand nimmt das ernst. Ich finde, je früher wir unsere Gewohnheiten ändern, desto besser."
+       "de": "Ist die Lage wirklich so ernst? Ich hatte in den Nachrichten etwas gelesen, aber nicht gedacht, dass es auch unser Haus betrifft."
       },
       {
-       "fa": "آقای رحیمی: آفرین! من بچه که بودم، در کرمان، مادرم با یک سطل آب کل حیاط را می‌شست. ما حتی آب شستن میوه را برای گلدان‌ها نگه می‌داشتیم.",
+       "fa": "آقای رحیمی: متأسفانه بله. چند سال است که بارش کم شده. تابستان گذشته در بعضی محله‌ها شب‌ها فشار آب را کم می‌کردند.",
        "tr": "",
-       "de": "Bravo! Als ich ein Kind war, in Kerman, hat meine Mutter mit einem Eimer Wasser den ganzen Hof geputzt. Wir haben sogar das Wasser vom Obstwaschen für die Blumentöpfe aufgehoben."
+       "de": "Leider ja. Seit einigen Jahren regnet es weniger. Letzten Sommer wurde in manchen Vierteln nachts der Wasserdruck gesenkt."
+      },
+      {
+       "fa": "یوناس: در آلمان هم تابستان‌ها گاهی خشکسالی داریم، ولی کمتر کسی آن را جدی می‌گیرد. به نظرم هر چه زودتر عادت‌هایمان را عوض کنیم، بهتر است.",
+       "tr": "",
+       "de": "In Deutschland haben wir im Sommer auch manchmal Dürre, aber kaum jemand nimmt das ernst. Ich finde, je früher wir unsere Gewohnheiten ändern, desto besser."
+      },
+      {
+       "fa": "آقای رحیمی: درست است. من بچه که بودم، در کرمان، مادرم با یک سطل آب کل حیاط را می‌شست. ما حتی آب شستن میوه را برای گلدان‌ها نگه می‌داشتیم.",
+       "tr": "",
+       "de": "Richtig. Als ich ein Kind war, in Kerman, hat meine Mutter mit einem Eimer Wasser den ganzen Hof geputzt. Wir haben sogar das Wasser vom Obstwaschen für die Blumentöpfe aufgehoben."
+      },
+      {
+       "fa": "یوناس: شما در کرمان آب را چطور ذخیره می‌کردید؟",
+       "tr": "",
+       "de": "Wie haben Sie in Kerman Wasser gespeichert?"
+      },
+      {
+       "fa": "آقای رحیمی: خانه‌ی ما آب‌انبار داشت؛ مخزنی زیر زمین که در زمستان پر می‌شد و تا تابستان آب خنک داشت. هر قطره‌اش حساب داشت.",
+       "tr": "",
+       "de": "Unser Haus hatte eine Zisterne – einen unterirdischen Speicher, der sich im Winter füllte und bis zum Sommer kühles Wasser hatte. Jeder Tropfen zählte."
       },
       {
        "fa": "یوناس: پس پیشنهاد می‌کنم یک قانون بگذاریم: دوش پنج‌دقیقه‌ای! من حاضرم.",
@@ -691,14 +1262,24 @@
        "de": "Dann schlage ich eine Regel vor: Fünf-Minuten-Dusche! Ich bin dabei."
       },
       {
-       "fa": "آقای رحیمی: قبول. من هم بالاخره شیر چکه‌کن آشپزخانه را تعمیر خواهم کرد. سی سال است که این را می‌گویم!",
+       "fa": "آقای رحیمی: قبول. من هم بالاخره شیر چکه‌کن آشپزخانه را تعمیر خواهم کرد. یک شیر چکه‌کن در یک سال مقدار زیادی آب هدر می‌دهد.",
        "tr": "",
-       "de": "Einverstanden. Und ich werde endlich den tropfenden Wasserhahn in der Küche reparieren. Das sage ich seit dreißig Jahren!"
+       "de": "Einverstanden. Und ich werde endlich den tropfenden Wasserhahn in der Küche reparieren. Ein tropfender Hahn verschwendet in einem Jahr eine Menge Wasser."
       },
       {
-       "fa": "یوناس: پس هر دو سازگار می‌شویم؛ شما با تعمیرکار، من با دوش کوتاه!",
+       "fa": "یوناس: می‌توانیم یک سردوش کم‌مصرف هم بخریم. شنیده‌ام مصرف آب را تا حدی کم می‌کند.",
        "tr": "",
-       "de": "Dann passen wir uns beide an – Sie mit dem Handwerker, ich mit der kurzen Dusche!"
+       "de": "Wir könnten auch einen Sparduschkopf kaufen. Ich habe gehört, dass er den Wasserverbrauch bis zu einem gewissen Grad senkt."
+      },
+      {
+       "fa": "آقای رحیمی: فکر خوبی است. فردا با هم به بازار می‌رویم. اگر همه این‌طور فکر کنند، فشار بر منابع آبی کمتر خواهد شد.",
+       "tr": "",
+       "de": "Gute Idee. Morgen gehen wir zusammen auf den Markt. Wenn alle so denken, wird der Druck auf die Wasserressourcen geringer."
+      },
+      {
+       "fa": "یوناس: پس هر دو سازگار می‌شویم؛ شما با تعمیر شیر آب و من با دوش کوتاه.",
+       "tr": "",
+       "de": "Dann passen wir uns beide an – Sie mit der Reparatur des Wasserhahns und ich mit der kurzen Dusche."
       }
      ]
     },
@@ -723,14 +1304,34 @@
        "de": "Macht nichts, aber hier ist Wasser eine andere Geschichte. Dieses Jahr ist hinter den Staudämmen Teherans sehr wenig Wasser."
       },
       {
-       "fa": "یوناس: راستش در آلمان هم تابستان‌ها گاهی خشکسالی داریم، ولی کمتر کسی آن را جدی می‌گیرد. به نظرم هر چه زودتر عادت‌هایمان را عوض کنیم، بهتر است.",
+       "fa": "یوناس: واقعا وضع این‌قدر جدی است؟ در اخبار چیزهایی خوانده بودم، اما فکر نمی‌کردم به خانه‌ی ما هم برسد.",
        "tr": "",
-       "de": "Ehrlich gesagt haben wir in Deutschland im Sommer auch manchmal Dürre, aber kaum jemand nimmt das ernst. Ich finde, je früher wir unsere Gewohnheiten ändern, desto besser."
+       "de": "Ist die Lage wirklich so ernst? Ich hatte in den Nachrichten etwas gelesen, aber nicht gedacht, dass es auch unser Haus betrifft."
       },
       {
-       "fa": "آقای رحیمی: آفرین! من بچه که بودم، در کرمان، مادرم با یک سطل آب کل حیاط را می‌شست. ما حتی آب شستن میوه را برای گلدان‌ها نگه می‌داشتیم.",
+       "fa": "آقای رحیمی: متأسفانه بله. چند سال است که بارش کم شده. تابستان گذشته در بعضی محله‌ها شب‌ها فشار آب را کم می‌کردند.",
        "tr": "",
-       "de": "Bravo! Als ich ein Kind war, in Kerman, hat meine Mutter mit einem Eimer Wasser den ganzen Hof geputzt. Wir haben sogar das Wasser vom Obstwaschen für die Blumentöpfe aufgehoben."
+       "de": "Leider ja. Seit einigen Jahren regnet es weniger. Letzten Sommer wurde in manchen Vierteln nachts der Wasserdruck gesenkt."
+      },
+      {
+       "fa": "یوناس: در آلمان هم تابستان‌ها گاهی خشکسالی داریم، ولی کمتر کسی آن را جدی می‌گیرد. به نظرم هر چه زودتر عادت‌هایمان را عوض کنیم، بهتر است.",
+       "tr": "",
+       "de": "In Deutschland haben wir im Sommer auch manchmal Dürre, aber kaum jemand nimmt das ernst. Ich finde, je früher wir unsere Gewohnheiten ändern, desto besser."
+      },
+      {
+       "fa": "آقای رحیمی: درست است. من بچه که بودم، در کرمان، مادرم با یک سطل آب کل حیاط را می‌شست. ما حتی آب شستن میوه را برای گلدان‌ها نگه می‌داشتیم.",
+       "tr": "",
+       "de": "Richtig. Als ich ein Kind war, in Kerman, hat meine Mutter mit einem Eimer Wasser den ganzen Hof geputzt. Wir haben sogar das Wasser vom Obstwaschen für die Blumentöpfe aufgehoben."
+      },
+      {
+       "fa": "یوناس: شما در کرمان آب را چطور ذخیره می‌کردید؟",
+       "tr": "",
+       "de": "Wie haben Sie in Kerman Wasser gespeichert?"
+      },
+      {
+       "fa": "آقای رحیمی: خانه‌ی ما آب‌انبار داشت؛ مخزنی زیر زمین که در زمستان پر می‌شد و تا تابستان آب خنک داشت. هر قطره‌اش حساب داشت.",
+       "tr": "",
+       "de": "Unser Haus hatte eine Zisterne – einen unterirdischen Speicher, der sich im Winter füllte und bis zum Sommer kühles Wasser hatte. Jeder Tropfen zählte."
       },
       {
        "fa": "یوناس: پس پیشنهاد می‌کنم یک قانون بگذاریم: دوش پنج‌دقیقه‌ای! من حاضرم.",
@@ -738,14 +1339,24 @@
        "de": "Dann schlage ich eine Regel vor: Fünf-Minuten-Dusche! Ich bin dabei."
       },
       {
-       "fa": "آقای رحیمی: قبول. من هم بالاخره شیر چکه‌کن آشپزخانه را تعمیر خواهم کرد. سی سال است که این را می‌گویم!",
+       "fa": "آقای رحیمی: قبول. من هم بالاخره شیر چکه‌کن آشپزخانه را تعمیر خواهم کرد. یک شیر چکه‌کن در یک سال مقدار زیادی آب هدر می‌دهد.",
        "tr": "",
-       "de": "Einverstanden. Und ich werde endlich den tropfenden Wasserhahn in der Küche reparieren. Das sage ich seit dreißig Jahren!"
+       "de": "Einverstanden. Und ich werde endlich den tropfenden Wasserhahn in der Küche reparieren. Ein tropfender Hahn verschwendet in einem Jahr eine Menge Wasser."
       },
       {
-       "fa": "یوناس: پس هر دو سازگار می‌شویم؛ شما با تعمیرکار، من با دوش کوتاه!",
+       "fa": "یوناس: می‌توانیم یک سردوش کم‌مصرف هم بخریم. شنیده‌ام مصرف آب را تا حدی کم می‌کند.",
        "tr": "",
-       "de": "Dann passen wir uns beide an – Sie mit dem Handwerker, ich mit der kurzen Dusche!"
+       "de": "Wir könnten auch einen Sparduschkopf kaufen. Ich habe gehört, dass er den Wasserverbrauch bis zu einem gewissen Grad senkt."
+      },
+      {
+       "fa": "آقای رحیمی: فکر خوبی است. فردا با هم به بازار می‌رویم. اگر همه این‌طور فکر کنند، فشار بر منابع آبی کمتر خواهد شد.",
+       "tr": "",
+       "de": "Gute Idee. Morgen gehen wir zusammen auf den Markt. Wenn alle so denken, wird der Druck auf die Wasserressourcen geringer."
+      },
+      {
+       "fa": "یوناس: پس هر دو سازگار می‌شویم؛ شما با تعمیر شیر آب و من با دوش کوتاه.",
+       "tr": "",
+       "de": "Dann passen wir uns beide an – Sie mit der Reparatur des Wasserhahns und ich mit der kurzen Dusche."
       }
      ]
     },
@@ -763,20 +1374,355 @@
        "richtig": 0
       },
       {
-       "frage": "Was erzählt Herr Rahimi von früher?",
+       "frage": "Was hatte Herr Rahimis Elternhaus in Kerman?",
        "optionen": [
-        "Seine Mutter putzte den Hof mit einem einzigen Eimer Wasser.",
-        "Er hat als Kind in der Lut gewohnt.",
-        "Er hat einen Qanat gebaut."
+        "eine unterirdische Zisterne",
+        "einen eigenen Qanat",
+        "einen Windturm"
        ],
        "richtig": 0
       },
       {
        "frage": "Was beschließen die beiden?",
        "optionen": [
-        "kurze Duschen und die Reparatur des Wasserhahns",
+        "kurze Duschen, die Reparatur des Wasserhahns und einen Sparduschkopf",
         "eine Reise nach Kerman",
         "einen neuen Brunnen zu bohren"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d3",
+   "titel": "Dialog: Hitze in Teheran, Regen in Hamburg",
+   "vorschau": "Hitze in Teheran, Regen in Hamburg",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Leyla schreibt einen Artikel über die Lut und den Klimawandel. Am Abend telefoniert sie per Video mit ihrem Bruder Bardia, der in Hamburg als Ingenieur arbeitet.</p>"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "لیلا: سلام بردیا! وقت داری چند دقیقه حرف بزنیم؟ برای مقاله‌ام درباره‌ی لوت و تغییرات اقلیمی به کمکت نیاز دارم.",
+       "tr": "",
+       "de": "Hallo Bardia! Hast du ein paar Minuten Zeit? Ich brauche deine Hilfe für meinen Artikel über die Lut und den Klimawandel."
+      },
+      {
+       "fa": "بردیا: سلام لیلا جان! حتما. این‌جا باز هم باران می‌آید. آن‌جا هوا چطور است؟",
+       "tr": "",
+       "de": "Hallo Leyla! Natürlich. Hier regnet es mal wieder. Wie ist das Wetter bei euch?"
+      },
+      {
+       "fa": "لیلا: امروز دما به چهل درجه رسید. چند روز پیش هم ادارات برای صرفه‌جویی در برق تعطیل شدند.",
+       "tr": "",
+       "de": "Heute waren es vierzig Grad. Vor ein paar Tagen wurden die Behörden sogar geschlossen, um Strom zu sparen."
+      },
+      {
+       "fa": "بردیا: در هامبورگ هم تابستان‌ها گرم‌تر از گذشته شده، اما مشکل اصلی ما بیشتر باران‌های ناگهانی و شدید است.",
+       "tr": "",
+       "de": "In Hamburg sind die Sommer auch heißer geworden als früher, aber unser Hauptproblem sind eher plötzliche, heftige Regenfälle."
+      },
+      {
+       "fa": "لیلا: در مقاله می‌خواهم درباره‌ی انرژی خورشیدی هم بنویسم. تو در شرکتتان روی پنل‌های خورشیدی کار می‌کنی، درست است؟",
+       "tr": "",
+       "de": "Im Artikel möchte ich auch über Solarenergie schreiben. Du arbeitest in eurer Firma an Solarmodulen, oder?"
+      },
+      {
+       "fa": "بردیا: بله. راستش کرمان برای انرژی خورشیدی به مراتب بهتر از آلمان است؛ آفتاب بیشتری دارد و زمین خالی هم زیاد است.",
+       "tr": "",
+       "de": "Ja. Ehrlich gesagt ist Kerman für Solarenergie weitaus besser geeignet als Deutschland: mehr Sonne und viel freie Fläche."
+      },
+      {
+       "fa": "لیلا: پس چرا هنوز این‌قدر کم از آن استفاده می‌شود؟",
+       "tr": "",
+       "de": "Warum wird sie dann noch so wenig genutzt?"
+      },
+      {
+       "fa": "بردیا: دلایل زیادی دارد: هزینه‌ی اولیه، وضع شبکه‌ی برق و گرد و خاک. ریزگرد روی پنل‌ها می‌نشیند و بازده آنها را کم می‌کند.",
+       "tr": "",
+       "de": "Dafür gibt es viele Gründe: die Anfangskosten, der Zustand des Stromnetzes und der Staub. Feinstaub lagert sich auf den Modulen ab und senkt ihre Leistung."
+      },
+      {
+       "fa": "لیلا: یعنی باید مرتب آنها را شست؟ این که خودش آب می‌خواهد!",
+       "tr": "",
+       "de": "Das heißt, man muss sie regelmäßig waschen? Dafür braucht man ja selbst Wasser!"
+      },
+      {
+       "fa": "بردیا: دقیقا. به همین دلیل امروز روش‌هایی برای تمیز کردن پنل‌ها با آب کم یا حتی بدون آب آزمایش می‌شود.",
+       "tr": "",
+       "de": "Genau. Deshalb werden heute Verfahren getestet, um die Module mit wenig oder sogar ohne Wasser zu reinigen."
+      },
+      {
+       "fa": "لیلا: یک سؤال دیگر: به نظر تو در بیست سال آینده وضع آب ایران چطور خواهد بود؟",
+       "tr": "",
+       "de": "Noch eine Frage: Wie wird deiner Meinung nach die Wassersituation in Iran in zwanzig Jahren sein?"
+      },
+      {
+       "fa": "بردیا: پیش‌بینی دقیق سخت است. اما اگر روند فعلی ادامه یابد، فشار بر منابع آبی بیشتر خواهد شد. خیلی چیزها به این بستگی دارد که از امروز چقدر صرفه‌جویی کنیم.",
+       "tr": "",
+       "de": "Eine genaue Prognose ist schwierig. Aber wenn der derzeitige Trend anhält, wird der Druck auf die Wasserressourcen zunehmen. Vieles hängt davon ab, wie viel wir ab heute sparen."
+      },
+      {
+       "fa": "لیلا: اجازه می‌دهی این جمله را در مقاله نقل کنم؟ می‌نویسم: «به گفته‌ی یک مهندس انرژی در هامبورگ».",
+       "tr": "",
+       "de": "Darf ich diesen Satz im Artikel zitieren? Ich schreibe: ‹laut einem Energieingenieur in Hamburg›."
+      },
+      {
+       "fa": "بردیا: باشد. وقتی مقاله منتشر شد، لینکش را برایم بفرست. شب خوش، لیلا جان.",
+       "tr": "",
+       "de": "Einverstanden. Wenn der Artikel erschienen ist, schick mir den Link. Gute Nacht, Leyla."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "لیلا: سلام بردیا! وقت داری چند دقیقه حرف بزنیم؟ برای مقاله‌ام درباره‌ی لوت و تغییرات اقلیمی به کمکت نیاز دارم.",
+       "tr": "",
+       "de": "Hallo Bardia! Hast du ein paar Minuten Zeit? Ich brauche deine Hilfe für meinen Artikel über die Lut und den Klimawandel."
+      },
+      {
+       "fa": "بردیا: سلام لیلا جان! حتما. این‌جا باز هم باران می‌آید. آن‌جا هوا چطور است؟",
+       "tr": "",
+       "de": "Hallo Leyla! Natürlich. Hier regnet es mal wieder. Wie ist das Wetter bei euch?"
+      },
+      {
+       "fa": "لیلا: امروز دما به چهل درجه رسید. چند روز پیش هم ادارات برای صرفه‌جویی در برق تعطیل شدند.",
+       "tr": "",
+       "de": "Heute waren es vierzig Grad. Vor ein paar Tagen wurden die Behörden sogar geschlossen, um Strom zu sparen."
+      },
+      {
+       "fa": "بردیا: در هامبورگ هم تابستان‌ها گرم‌تر از گذشته شده، اما مشکل اصلی ما بیشتر باران‌های ناگهانی و شدید است.",
+       "tr": "",
+       "de": "In Hamburg sind die Sommer auch heißer geworden als früher, aber unser Hauptproblem sind eher plötzliche, heftige Regenfälle."
+      },
+      {
+       "fa": "لیلا: در مقاله می‌خواهم درباره‌ی انرژی خورشیدی هم بنویسم. تو در شرکتتان روی پنل‌های خورشیدی کار می‌کنی، درست است؟",
+       "tr": "",
+       "de": "Im Artikel möchte ich auch über Solarenergie schreiben. Du arbeitest in eurer Firma an Solarmodulen, oder?"
+      },
+      {
+       "fa": "بردیا: بله. راستش کرمان برای انرژی خورشیدی به مراتب بهتر از آلمان است؛ آفتاب بیشتری دارد و زمین خالی هم زیاد است.",
+       "tr": "",
+       "de": "Ja. Ehrlich gesagt ist Kerman für Solarenergie weitaus besser geeignet als Deutschland: mehr Sonne und viel freie Fläche."
+      },
+      {
+       "fa": "لیلا: پس چرا هنوز این‌قدر کم از آن استفاده می‌شود؟",
+       "tr": "",
+       "de": "Warum wird sie dann noch so wenig genutzt?"
+      },
+      {
+       "fa": "بردیا: دلایل زیادی دارد: هزینه‌ی اولیه، وضع شبکه‌ی برق و گرد و خاک. ریزگرد روی پنل‌ها می‌نشیند و بازده آنها را کم می‌کند.",
+       "tr": "",
+       "de": "Dafür gibt es viele Gründe: die Anfangskosten, der Zustand des Stromnetzes und der Staub. Feinstaub lagert sich auf den Modulen ab und senkt ihre Leistung."
+      },
+      {
+       "fa": "لیلا: یعنی باید مرتب آنها را شست؟ این که خودش آب می‌خواهد!",
+       "tr": "",
+       "de": "Das heißt, man muss sie regelmäßig waschen? Dafür braucht man ja selbst Wasser!"
+      },
+      {
+       "fa": "بردیا: دقیقا. به همین دلیل امروز روش‌هایی برای تمیز کردن پنل‌ها با آب کم یا حتی بدون آب آزمایش می‌شود.",
+       "tr": "",
+       "de": "Genau. Deshalb werden heute Verfahren getestet, um die Module mit wenig oder sogar ohne Wasser zu reinigen."
+      },
+      {
+       "fa": "لیلا: یک سؤال دیگر: به نظر تو در بیست سال آینده وضع آب ایران چطور خواهد بود؟",
+       "tr": "",
+       "de": "Noch eine Frage: Wie wird deiner Meinung nach die Wassersituation in Iran in zwanzig Jahren sein?"
+      },
+      {
+       "fa": "بردیا: پیش‌بینی دقیق سخت است. اما اگر روند فعلی ادامه یابد، فشار بر منابع آبی بیشتر خواهد شد. خیلی چیزها به این بستگی دارد که از امروز چقدر صرفه‌جویی کنیم.",
+       "tr": "",
+       "de": "Eine genaue Prognose ist schwierig. Aber wenn der derzeitige Trend anhält, wird der Druck auf die Wasserressourcen zunehmen. Vieles hängt davon ab, wie viel wir ab heute sparen."
+      },
+      {
+       "fa": "لیلا: اجازه می‌دهی این جمله را در مقاله نقل کنم؟ می‌نویسم: «به گفته‌ی یک مهندس انرژی در هامبورگ».",
+       "tr": "",
+       "de": "Darf ich diesen Satz im Artikel zitieren? Ich schreibe: ‹laut einem Energieingenieur in Hamburg›."
+      },
+      {
+       "fa": "بردیا: باشد. وقتی مقاله منتشر شد، لینکش را برایم بفرست. شب خوش، لیلا جان.",
+       "tr": "",
+       "de": "Einverstanden. Wenn der Artikel erschienen ist, schick mir den Link. Gute Nacht, Leyla."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Was ist laut Bardia das Hauptproblem in Hamburg?",
+       "optionen": [
+        "plötzliche, heftige Regenfälle",
+        "lange Dürren",
+        "Staubstürme"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Warum sinkt die Leistung von Solarmodulen in Iran?",
+       "optionen": [
+        "Feinstaub lagert sich auf den Modulen ab.",
+        "Es gibt zu wenig Sonne.",
+        "Die Module sind zu alt."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wovon hängt laut Bardia die Zukunft des Wassers ab?",
+       "optionen": [
+        "vor allem davon, wie viel wir ab heute sparen",
+        "nur vom Regen",
+        "von neuen Staudämmen"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "a",
+   "titel": "Gut zu wissen",
+   "vorschau": "💡",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Windtürme in Yazd",
+     "text": "Kurzer Infotext – tippe eine Zeile an für die Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "یزد را گاهی «شهر بادگیرها» می‌نامند.",
+       "tr": "",
+       "de": "Yazd wird manchmal ‹Stadt der Windtürme› genannt."
+      },
+      {
+       "fa": "بادگیر برجی بلند بر بام خانه است که دریچه‌هایی رو به جهت‌های مختلف دارد.",
+       "tr": "",
+       "de": "Ein Windturm ist ein hoher Turm auf dem Hausdach mit Öffnungen in verschiedene Richtungen."
+      },
+      {
+       "fa": "باد از این دریچه‌ها وارد می‌شود و به سوی اتاق‌های پایین هدایت می‌شود، و هوای گرم داخل خانه از راه دیگری بیرون می‌رود.",
+       "tr": "",
+       "de": "Der Wind dringt durch diese Öffnungen ein und wird in die unteren Räume geleitet, während die warme Luft im Haus auf anderem Weg entweicht."
+      },
+      {
+       "fa": "در برخی خانه‌ها، هوا پیش از رسیدن به اتاق از روی آب یک حوض می‌گذرد و خنک‌تر می‌شود.",
+       "tr": "",
+       "de": "In manchen Häusern streicht die Luft vor dem Raum über das Wasser eines Beckens und wird dadurch kühler."
+      },
+      {
+       "fa": "یکی از بلندترین بادگیرهای ایران در باغ دولت‌آباد یزد قرار دارد و ارتفاع آن بیش از سی متر است.",
+       "tr": "",
+       "de": "Einer der höchsten Windtürme Irans steht im Garten Dowlatabad in Yazd und ist über dreißig Meter hoch."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Eis aus der Wüste",
+     "text": "Kurzer Infotext – tippe eine Zeile an für die Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "در گذشته، مردم مناطق کویری حتی در تابستان یخ داشتند.",
+       "tr": "",
+       "de": "Früher hatten die Menschen in den Wüstenregionen sogar im Sommer Eis."
+      },
+      {
+       "fa": "آنها در شب‌های سرد زمستان آب را در حوضچه‌های کم‌عمق می‌ریختند تا یخ ببندد.",
+       "tr": "",
+       "de": "In kalten Winternächten gossen sie Wasser in flache Becken, damit es gefror."
+      },
+      {
+       "fa": "دیواری بلند در کنار حوضچه‌ها جلوی آفتاب روز را می‌گرفت تا یخ آب نشود.",
+       "tr": "",
+       "de": "Eine hohe Mauer neben den Becken hielt die Tagessonne ab, damit das Eis nicht schmolz."
+      },
+      {
+       "fa": "سپس یخ را در ساختمانی گنبدی‌شکل با دیوارهای بسیار ضخیم نگه می‌داشتند که «یخچال» نام داشت.",
+       "tr": "",
+       "de": "Danach lagerte man das Eis in einem Kuppelbau mit sehr dicken Mauern, der ‹Yakhchal› hieß."
+      },
+      {
+       "fa": "نمونه‌هایی از این یخچال‌ها هنوز در کرمان، یزد و برخی شهرهای دیگر دیده می‌شود.",
+       "tr": "",
+       "de": "Beispiele dieser Eishäuser sind noch heute in Kerman, Yazd und einigen anderen Städten zu sehen."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der 120-Tage-Wind",
+     "text": "Kurzer Infotext – tippe eine Zeile an für die Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "در سیستان، در شرق ایران، هر سال از اواخر بهار تا اواخر تابستان بادی شدید می‌وزد.",
+       "tr": "",
+       "de": "In Sistan im Osten Irans weht jedes Jahr von Ende Frühling bis Ende Sommer ein starker Wind."
+      },
+      {
+       "fa": "مردم آن را «باد صد و بیست روزه» می‌نامند، چون حدود چهار ماه ادامه دارد.",
+       "tr": "",
+       "de": "Die Menschen nennen ihn ‹120-Tage-Wind›, weil er etwa vier Monate anhält."
+      },
+      {
+       "fa": "در گذشته، مردم شرق ایران از بادهای این منطقه برای چرخاندن آسیاب‌های بادی استفاده می‌کردند.",
+       "tr": "",
+       "de": "Früher nutzten die Menschen im Osten Irans die Winde dieser Region, um Windmühlen anzutreiben."
+      },
+      {
+       "fa": "اما وقتی تالاب هامون خشک است، این باد مقدار زیادی گرد و خاک با خود می‌آورد.",
+       "tr": "",
+       "de": "Wenn das Hamun-Feuchtgebiet jedoch trocken ist, bringt dieser Wind große Mengen Staub mit sich."
+      },
+      {
+       "fa": "به همین دلیل، کیفیت هوا در زابل در برخی روزها بسیار پایین است.",
+       "tr": "",
+       "de": "Deshalb ist die Luftqualität in Zabol an manchen Tagen sehr schlecht."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zu den Infotexten",
+     "fragen": [
+      {
+       "frage": "Wozu dient ein Badgir (Windturm)?",
+       "optionen": [
+        "um kühle Luft ins Haus zu leiten",
+        "um Regenwasser zu sammeln",
+        "um Getreide zu mahlen"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie wurde das Eis bis zum Sommer aufbewahrt?",
+       "optionen": [
+        "in einem Kuppelbau mit sehr dicken Mauern",
+        "in tiefen Brunnen",
+        "in Höhlen in den Bergen"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Warum heißt der Wind ‹120-Tage-Wind›?",
+       "optionen": [
+        "weil er etwa vier Monate weht",
+        "weil er 120 km/h schnell ist",
+        "weil er alle 120 Tage kommt"
        ],
        "richtig": 0
       }
@@ -841,6 +1787,11 @@
      "links": "de",
      "paare": [
       {
+       "fa": "یکی از مهم‌ترین چالش‌ها … است.",
+       "tr": "",
+       "de": "Eine der wichtigsten Herausforderungen ist …"
+      },
+      {
        "fa": "راه‌حل پیشنهادی من این است که …",
        "tr": "",
        "de": "Mein Lösungsvorschlag ist, dass …"
@@ -851,24 +1802,19 @@
        "de": "Wenn der derzeitige Trend anhält, …"
       },
       {
+       "fa": "کارشناسان هشدار می‌دهند که …",
+       "tr": "",
+       "de": "Fachleute warnen, dass …"
+      },
+      {
        "fa": "پیش‌بینی می‌شود که …",
        "tr": "",
        "de": "Es wird vorhergesagt, dass …"
       },
       {
-       "fa": "نباید فراموش کرد که …",
+       "fa": "هر کدام از ما می‌توانیم …",
        "tr": "",
-       "de": "Man darf nicht vergessen, dass …"
-      },
-      {
-       "fa": "یکی از مهم‌ترین چالش‌ها … است.",
-       "tr": "",
-       "de": "Eine der wichtigsten Herausforderungen ist …"
-      },
-      {
-       "fa": "کارشناسان هشدار می‌دهند که …",
-       "tr": "",
-       "de": "Fachleute warnen, dass …"
+       "de": "Jede und jeder von uns kann …"
       }
      ],
      "titel": "Was bedeutet die Wendung?"
@@ -880,39 +1826,9 @@
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
-        "Man darf nicht vergessen, dass …",
-        "Jede und jeder von uns kann …",
-        "Laut Statistik …"
-       ],
-       "richtig": 0,
-       "fa": "نباید فراموش کرد که …"
-      },
-      {
-       "frage": "Was bedeutet der Satz?",
-       "optionen": [
-        "Wenn der derzeitige Trend anhält, …",
-        "Mein Lösungsvorschlag ist, dass …",
-        "Es wird vorhergesagt, dass …"
-       ],
-       "richtig": 0,
-       "fa": "اگر روند فعلی ادامه یابد، …"
-      },
-      {
-       "frage": "Was bedeutet der Satz?",
-       "optionen": [
-        "Fachleute warnen, dass …",
-        "Es wird vorhergesagt, dass …",
-        "Mein Lösungsvorschlag ist, dass …"
-       ],
-       "richtig": 0,
-       "fa": "کارشناسان هشدار می‌دهند که …"
-      },
-      {
-       "frage": "Was bedeutet der Satz?",
-       "optionen": [
         "Laut Statistik …",
-        "Man darf nicht vergessen, dass …",
-        "Jede und jeder von uns kann …"
+        "Wenn der derzeitige Trend anhält, …",
+        "Es wird vorhergesagt, dass …"
        ],
        "richtig": 0,
        "fa": "بر اساس آمار …"
@@ -921,8 +1837,8 @@
        "frage": "Was bedeutet der Satz?",
        "optionen": [
         "Es wird vorhergesagt, dass …",
-        "Fachleute warnen, dass …",
-        "Wenn der derzeitige Trend anhält, …"
+        "Laut Statistik …",
+        "Jede und jeder von uns kann …"
        ],
        "richtig": 0,
        "fa": "پیش‌بینی می‌شود که …"
@@ -930,12 +1846,42 @@
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
-        "Mein Lösungsvorschlag ist, dass …",
+        "Fachleute warnen, dass …",
         "Eine der wichtigsten Herausforderungen ist …",
-        "Jede und jeder von uns kann …"
+        "Laut Statistik …"
        ],
        "richtig": 0,
-       "fa": "راه‌حل پیشنهادی من این است که …"
+       "fa": "کارشناسان هشدار می‌دهند که …"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Wenn der derzeitige Trend anhält, …",
+        "Man darf nicht vergessen, dass …",
+        "Laut Statistik …"
+       ],
+       "richtig": 0,
+       "fa": "اگر روند فعلی ادامه یابد، …"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Jede und jeder von uns kann …",
+        "Wenn der derzeitige Trend anhält, …",
+        "Mein Lösungsvorschlag ist, dass …"
+       ],
+       "richtig": 0,
+       "fa": "هر کدام از ما می‌توانیم …"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Man darf nicht vergessen, dass …",
+        "Jede und jeder von uns kann …",
+        "Es wird vorhergesagt, dass …"
+       ],
+       "richtig": 0,
+       "fa": "نباید فراموش کرد که …"
       }
      ]
     },

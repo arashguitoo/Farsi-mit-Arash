@@ -251,6 +251,54 @@
        "a": "herausragend"
       },
       {
+       "fa": "نسخه‌ی خطی",
+       "a": "Handschrift"
+      },
+      {
+       "fa": "کاغذ",
+       "a": "Papier"
+      },
+      {
+       "fa": "مترجم",
+       "a": "Übersetzer/in"
+      },
+      {
+       "fa": "اسطرلاب",
+       "a": "Astrolabium"
+      },
+      {
+       "fa": "فهرست",
+       "a": "Katalog, Verzeichnis"
+      },
+      {
+       "fa": "قفسه",
+       "a": "Regal"
+      },
+      {
+       "fa": "تالار مطالعه",
+       "a": "Lesesaal"
+      },
+      {
+       "fa": "کتابدار",
+       "a": "Bibliothekar/in"
+      },
+      {
+       "fa": "پانویس",
+       "a": "Fußnote"
+      },
+      {
+       "fa": "کتاب‌شناسی",
+       "a": "Bibliografie"
+      },
+      {
+       "fa": "معادله",
+       "a": "Gleichung"
+      },
+      {
+       "fa": "ارجاع",
+       "a": "Verweis, Quellenangabe"
+      },
+      {
        "fa": "کشف کردن",
        "a": "entdecken"
       },
@@ -281,40 +329,40 @@
      "links": "emoji",
      "paare": [
       {
-       "fa": "نهضت ترجمه",
+       "fa": "کیمیا",
        "tr": "",
-       "de": "Übersetzungsbewegung",
-       "emoji": "🌐"
+       "de": "Alchemie",
+       "emoji": "🧫"
       },
       {
-       "fa": "ترجمه",
+       "fa": "شیمیدان",
        "tr": "",
-       "de": "Übersetzung",
-       "emoji": "🔁"
+       "de": "Chemiker/in",
+       "emoji": "⚗️"
       },
       {
-       "fa": "شرح",
+       "fa": "تالار مطالعه",
        "tr": "",
-       "de": "Kommentar, Erläuterung",
-       "emoji": "📝"
+       "de": "Lesesaal",
+       "emoji": "🪑"
       },
       {
-       "fa": "فیلسوف",
+       "fa": "پانویس",
        "tr": "",
-       "de": "Philosoph/in",
-       "emoji": "🤔"
+       "de": "Fußnote",
+       "emoji": "🔽"
       },
       {
-       "fa": "دانشنامه",
+       "fa": "دانشمند",
        "tr": "",
-       "de": "Enzyklopädie",
-       "emoji": "📚"
+       "de": "Gelehrte/r, Wissenschaftler/in",
+       "emoji": "🧑‍🔬"
       },
       {
-       "fa": "روش علمی",
+       "fa": "معادله",
        "tr": "",
-       "de": "wissenschaftliche Methode",
-       "emoji": "🧭"
+       "de": "Gleichung",
+       "emoji": "🟰"
       }
      ],
      "titel": "Memory"
@@ -324,40 +372,40 @@
      "links": "de",
      "paare": [
       {
-       "fa": "شعاع",
+       "fa": "پزشک",
        "tr": "",
-       "de": "Radius",
-       "emoji": "⭕"
+       "de": "Arzt/Ärztin",
+       "emoji": "🩺"
       },
       {
-       "fa": "اختراع",
+       "fa": "کتاب‌شناسی",
        "tr": "",
-       "de": "Erfindung",
-       "emoji": "⚙️"
+       "de": "Bibliografie",
+       "emoji": "📑"
       },
       {
-       "fa": "استاد",
+       "fa": "مترجم",
        "tr": "",
-       "de": "Meister/in, Lehrer/in",
-       "emoji": "👨‍🏫"
-      },
-      {
-       "fa": "دوره‌ی طلایی",
-       "tr": "",
-       "de": "goldenes Zeitalter",
-       "emoji": "🌟"
-      },
-      {
-       "fa": "منبع",
-       "tr": "",
-       "de": "Quelle",
-       "emoji": "🗂️"
+       "de": "Übersetzer/in",
+       "emoji": "🗣️"
       },
       {
        "fa": "بیت‌الحکمه",
        "tr": "",
        "de": "Haus der Weisheit (Bagdad)",
        "emoji": "🏛️"
+      },
+      {
+       "fa": "برجسته",
+       "tr": "",
+       "de": "herausragend",
+       "emoji": "⭐"
+      },
+      {
+       "fa": "اسطرلاب",
+       "tr": "",
+       "de": "Astrolabium",
+       "emoji": "🪐"
       }
      ],
      "titel": "Memory: Wort & Bedeutung"
@@ -377,8 +425,8 @@
        "frage": "<span class='fa'>واژه‌ی «الگوریتم» از نام یک ___ ایرانی گرفته شده است.</span><br><span class='mini'>Das Wort ‹Algorithmus› ist vom Namen eines iranischen Mathematikers abgeleitet.</span>",
        "optionen": [
         "ریاضی‌دان",
-        "کشف",
-        "عدد"
+        "شیمیدان",
+        "برجسته"
        ],
        "richtig": 0,
        "optFa": true,
@@ -389,8 +437,8 @@
        "frage": "<span class='fa'>رازی ریاست ___ بزرگ ری را بر عهده داشت.</span><br><span class='mini'>Razi leitete das große Krankenhaus von Rey.</span>",
        "optionen": [
         "بیمارستان",
-        "نام‌آور",
-        "بیت‌الحکمه"
+        "کتابخانه",
+        "رصدخانه"
        ],
        "richtig": 0,
        "optFa": true,
@@ -401,8 +449,8 @@
        "frage": "<span class='fa'>«قانون» ابن سینا قرن‌ها مهم‌ترین کتاب ___ در اروپا بود.</span><br><span class='mini'>Avicennas ‹Kanon› war jahrhundertelang das wichtigste Medizinbuch in Europa.</span>",
        "optionen": [
         "طب",
-        "ترجمه",
-        "ریاضی‌دان"
+        "روش علمی",
+        "ارجاع"
        ],
        "richtig": 0,
        "optFa": true,
@@ -413,26 +461,20 @@
        "frage": "<span class='fa'>در ___ بغداد آثار یونانی به عربی ترجمه می‌شد.</span><br><span class='mini'>Im Haus der Weisheit in Bagdad wurden griechische Werke ins Arabische übersetzt.</span>",
        "optionen": [
         "بیت‌الحکمه",
-        "اختراع",
-        "دوره‌ی طلایی"
+        "جبر",
+        "قفسه"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
        "erkl": "<span class='fa'>در بیت‌الحکمه بغداد آثار یونانی به عربی ترجمه می‌شد.</span>"
-      }
-     ]
-    },
-    {
-     "typ": "wahl",
-     "titel": "Welches Wort passt?",
-     "fragen": [
+      },
       {
        "frage": "<span class='fa'>بیرونی ___ زمین را با دقتی شگفت‌انگیز اندازه گرفت.</span><br><span class='mini'>Biruni maß den Erdradius mit erstaunlicher Genauigkeit.</span>",
        "optionen": [
         "شعاع",
-        "فیلسوف",
-        "رساله"
+        "داروشناسی",
+        "تالار مطالعه"
        ],
        "richtig": 0,
        "optFa": true,
@@ -443,20 +485,26 @@
        "frage": "<span class='fa'>ستاره‌شناسان شب‌ها در ___ حرکت ستارگان را ثبت می‌کردند.</span><br><span class='mini'>Die Astronomen zeichneten nachts in der Sternwarte die Bewegung der Sterne auf.</span>",
        "optionen": [
         "رصدخانه",
-        "ریاضی‌دان",
-        "استاد"
+        "پزشک",
+        "ارجاع"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
        "erkl": "<span class='fa'>ستاره‌شناسان شب‌ها در رصدخانه حرکت ستارگان را ثبت می‌کردند.</span>"
-      },
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
       {
        "frage": "<span class='fa'>نام اروپایی ___ از عنوان کتاب خوارزمی گرفته شده است.</span><br><span class='mini'>Der europäische Name der Algebra stammt aus dem Titel von Kharazmis Buch.</span>",
        "optionen": [
         "جبر",
-        "کشف",
-        "داروشناسی"
+        "شاگرد",
+        "رساله"
        ],
        "richtig": 0,
        "optFa": true,
@@ -467,13 +515,61 @@
        "frage": "<span class='fa'>رازی یک ___ کوتاه درباره‌ی سرخک و آبله نوشت.</span><br><span class='mini'>Razi schrieb eine kurze Abhandlung über Masern und Pocken.</span>",
        "optionen": [
         "رساله",
-        "ترجمه",
-        "شاگرد"
+        "مترجم",
+        "جبر"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
        "erkl": "<span class='fa'>رازی یک رساله کوتاه درباره‌ی سرخک و آبله نوشت.</span>"
+      },
+      {
+       "frage": "<span class='fa'>نسخه‌های خطی قدیمی را فقط می‌توان در ___ کتابخانه خواند.</span><br><span class='mini'>Alte Handschriften kann man nur im Lesesaal der Bibliothek lesen.</span>",
+       "optionen": [
+        "تالار مطالعه",
+        "دانشنامه",
+        "منبع"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>نسخه‌های خطی قدیمی را فقط می‌توان در تالار مطالعه کتابخانه خواند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>___ کتابخانه به من کمک کرد تا کتاب را در قفسه پیدا کنم.</span><br><span class='mini'>Die Bibliothekarin half mir, das Buch im Regal zu finden.</span>",
+       "optionen": [
+        "کتابدار",
+        "دانشمند",
+        "برجسته"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>کتابدار کتابخانه به من کمک کرد تا کتاب را در قفسه پیدا کنم.</span>"
+      },
+      {
+       "frage": "<span class='fa'>با رسیدن ___ ارزان به بغداد، شمار کتاب‌ها زیاد شد.</span><br><span class='mini'>Als billiges Papier nach Bagdad kam, stieg die Zahl der Bücher.</span>",
+       "optionen": [
+        "کاغذ",
+        "ارجاع",
+        "پانویس"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>با رسیدن کاغذ ارزان به بغداد، شمار کتاب‌ها زیاد شد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>در پایان مقاله باید یک ___ کامل از همه‌ی منابع بیاورید.</span><br><span class='mini'>Am Ende der Arbeit müssen Sie eine vollständige Bibliografie aller Quellen angeben.</span>",
+       "optionen": [
+        "کتاب‌شناسی",
+        "ستاره‌شناس",
+        "کاغذ"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>در پایان مقاله باید یک کتاب‌شناسی کامل از همه‌ی منابع بیاورید.</span>"
       }
      ]
     }
@@ -489,25 +585,6 @@
      "titel": "Baue den Satz",
      "trenner": " ",
      "woerter": [
-      {
-       "fa": "یوناس جان، شنیدم داری درباره‌ی بیرونی تحقیق می‌کنی. آفرین!",
-       "tr": "",
-       "de": "Jonas, ich habe gehört, du forschst über Biruni. Bravo!",
-       "teile": [
-        "یوناس",
-        "جان",
-        "شنیدم",
-        "داری",
-        "درباره‌ی",
-        "بیرونی",
-        "تحقیق",
-        "می‌کنی",
-        "آفرین"
-       ],
-       "extra": [
-        "است."
-       ]
-      },
       {
        "fa": "مورخان این زمان را «دوره‌ی طلایی» علم در قرون میانه می‌نامند.",
        "tr": "",
@@ -526,82 +603,105 @@
         "می‌نامند"
        ],
        "extra": [
-        "هندی‌ها"
+        "موضوع"
        ]
       },
       {
-       "fa": "و نتیجه‌اش چقدر دقیق بود؟",
+       "fa": "این نکته برای گزارش من عالی است. می‌توانیم از اسطرلاب عکس بگیریم؟",
        "tr": "",
-       "de": "Und wie genau war sein Ergebnis?",
+       "de": "Dieser Punkt ist großartig für meinen Bericht. Dürfen wir das Astrolabium fotografieren?",
        "teile": [
-        "و",
-        "نتیجه‌اش",
-        "چقدر",
-        "دقیق",
-        "بود"
-       ],
-       "extra": [
-        "به"
-       ]
-      },
-      {
-       "fa": "موافقم. خوارزمی از یونانی‌ها و هندی‌ها یاد گرفت و اروپایی‌ها از او.",
-       "tr": "",
-       "de": "Da stimme ich zu. Kharazmi hat von Griechen und Indern gelernt und die Europäer von ihm.",
-       "teile": [
-        "موافقم",
-        "خوارزمی",
-        "از",
-        "یونانی‌ها",
-        "و",
-        "هندی‌ها",
-        "یاد",
-        "گرفت",
-        "و",
-        "اروپایی‌ها",
-        "از",
-        "او"
-       ],
-       "extra": [
-        "کدام"
-       ]
-      },
-      {
-       "fa": "از کدام منابع استفاده کنم؟ متن اصلی به عربی است.",
-       "tr": "",
-       "de": "Welche Quellen soll ich verwenden? Der Originaltext ist auf Arabisch.",
-       "teile": [
-        "از",
-        "کدام",
-        "منابع",
-        "استفاده",
-        "کنم",
-        "متن",
-        "اصلی",
-        "به",
-        "عربی",
-        "است"
-       ],
-       "extra": [
-        "یونانی‌ها"
-       ]
-      },
-      {
-       "fa": "موضوع بسیار خوبی است. روش او را می‌شناسید؟",
-       "tr": "",
-       "de": "Ein sehr gutes Thema. Kennen Sie seine Methode?",
-       "teile": [
-        "موضوع",
-        "بسیار",
-        "خوبی",
+        "این",
+        "نکته",
+        "برای",
+        "گزارش",
+        "من",
+        "عالی",
         "است",
-        "روش",
-        "او",
-        "را",
-        "می‌شناسید"
+        "می‌توانیم",
+        "از",
+        "اسطرلاب",
+        "عکس",
+        "بگیریم"
        ],
        "extra": [
-        "به"
+        "با"
+       ]
+      },
+      {
+       "fa": "یوناس جان، شنیدم داری درباره‌ی بیرونی تحقیق می‌کنی. آفرین!",
+       "tr": "",
+       "de": "Jonas, ich habe gehört, du forschst über Biruni. Bravo!",
+       "teile": [
+        "یوناس",
+        "جان",
+        "شنیدم",
+        "داری",
+        "درباره‌ی",
+        "بیرونی",
+        "تحقیق",
+        "می‌کنی",
+        "آفرین"
+       ],
+       "extra": [
+        "این"
+       ]
+      },
+      {
+       "fa": "چرا این‌همه اسطرلاب در اصفهان ساخته می‌شد؟",
+       "tr": "",
+       "de": "Warum wurden so viele Astrolabien in Isfahan hergestellt?",
+       "teile": [
+        "چرا",
+        "این‌همه",
+        "اسطرلاب",
+        "در",
+        "اصفهان",
+        "ساخته",
+        "می‌شد"
+       ],
+       "extra": [
+        "از"
+       ]
+      },
+      {
+       "fa": "ارائه بدون مشکل پیش می‌رود و هم‌کلاسی‌هایش با دقت گوش می‌دهند.",
+       "tr": "",
+       "de": "Das Referat verläuft ohne Probleme, und ihre Kommilitonen hören aufmerksam zu.",
+       "teile": [
+        "ارائه",
+        "بدون",
+        "مشکل",
+        "پیش",
+        "می‌رود",
+        "و",
+        "هم‌کلاسی‌هایش",
+        "با",
+        "دقت",
+        "گوش",
+        "می‌دهند"
+       ],
+       "extra": [
+        "می‌نامند."
+       ]
+      },
+      {
+       "fa": "خیام هم هم شاعر بود و هم ریاضی‌دان، نه؟",
+       "tr": "",
+       "de": "Chayyam war doch auch Dichter und Mathematiker zugleich, oder?",
+       "teile": [
+        "خیام",
+        "هم",
+        "هم",
+        "شاعر",
+        "بود",
+        "و",
+        "هم",
+        "ریاضی‌دان",
+        "نه"
+       ],
+       "extra": [
+        "دقت"
        ]
       }
      ]
@@ -611,33 +711,11 @@
      "titel": "Was bedeutet der Satz?",
      "fragen": [
       {
-       "frage": "„Jonas, ich habe gehört, du forschst über Biruni. Bravo!“",
+       "frage": "„Warum wurden so viele Astrolabien in Isfahan hergestellt?“",
        "optionen": [
-        "یوناس جان، شنیدم داری درباره‌ی بیرونی تحقیق می‌کنی. آفرین!",
-        "مورخان این زمان را «دوره‌ی طلایی» علم در قرون میانه می‌نامند.",
-        "از کدام منابع استفاده کنم؟ متن اصلی به عربی است."
-       ],
-       "richtig": 0,
-       "optFa": true,
-       "hoeren": false
-      },
-      {
-       "frage": "„Und wie genau war sein Ergebnis?“",
-       "optionen": [
-        "و نتیجه‌اش چقدر دقیق بود؟",
-        "مورخان این زمان را «دوره‌ی طلایی» علم در قرون میانه می‌نامند.",
-        "یوناس جان، شنیدم داری درباره‌ی بیرونی تحقیق می‌کنی. آفرین!"
-       ],
-       "richtig": 0,
-       "optFa": true,
-       "hoeren": false
-      },
-      {
-       "frage": "„Historiker nennen diese Zeit das ‹goldene Zeitalter› der Wissenschaft im Mittelalter.“",
-       "optionen": [
-        "مورخان این زمان را «دوره‌ی طلایی» علم در قرون میانه می‌نامند.",
-        "یوناس جان، شنیدم داری درباره‌ی بیرونی تحقیق می‌کنی. آفرین!",
-        "موافقم. خوارزمی از یونانی‌ها و هندی‌ها یاد گرفت و اروپایی‌ها از او."
+        "چرا این‌همه اسطرلاب در اصفهان ساخته می‌شد؟",
+        "با آن دقیقاً چه کار می‌کردند؟",
+        "و نتیجه‌اش چقدر دقیق بود؟"
        ],
        "richtig": 0,
        "optFa": true,
@@ -647,30 +725,52 @@
        "frage": "„Da stimme ich zu. Kharazmi hat von Griechen und Indern gelernt und die Europäer von ihm.“",
        "optionen": [
         "موافقم. خوارزمی از یونانی‌ها و هندی‌ها یاد گرفت و اروپایی‌ها از او.",
-        "موضوع بسیار خوبی است. روش او را می‌شناسید؟",
+        "پس فارسی هم کم‌کم زبان علم شد؟",
+        "با آن دقیقاً چه کار می‌کردند؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Genau. Deshalb nennen manche es den Computer des Mittelalters.“",
+       "optionen": [
+        "دقیقاً. به همین دلیل بعضی‌ها آن را رایانه‌ی قرون میانه می‌نامند.",
+        "ارائه بدون مشکل پیش می‌رود و هم‌کلاسی‌هایش با دقت گوش می‌دهند.",
+        "مورخان این زمان را «دوره‌ی طلایی» علم در قرون میانه می‌نامند."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Historiker nennen diese Zeit das ‹goldene Zeitalter› der Wissenschaft im Mittelalter.“",
+       "optionen": [
+        "مورخان این زمان را «دوره‌ی طلایی» علم در قرون میانه می‌نامند.",
+        "بیرونی هم با اسطرلاب کار می‌کرد؟ من درباره‌ی او مقاله می‌نویسم.",
+        "با آن دقیقاً چه کار می‌کردند؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Dieser Punkt ist großartig für meinen Bericht. Dürfen wir das Astrolabium fotografieren?“",
+       "optionen": [
+        "این نکته برای گزارش من عالی است. می‌توانیم از اسطرلاب عکس بگیریم؟",
+        "بیرونی هم با اسطرلاب کار می‌کرد؟ من درباره‌ی او مقاله می‌نویسم.",
+        "یعنی ساعت و نقشه‌ی آسمان در یک ابزار؟"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Da sie nicht weiß, wo sie anfangen soll, bittet sie die Bibliothekarin der Auskunftsabteilung um Hilfe.“",
+       "optionen": [
+        "چون نمی‌داند از کجا شروع کند، از کتابدار بخش مرجع کمک می‌خواهد.",
+        "یعنی ساعت و نقشه‌ی آسمان در یک ابزار؟",
         "یوناس جان، شنیدم داری درباره‌ی بیرونی تحقیق می‌کنی. آفرین!"
-       ],
-       "richtig": 0,
-       "optFa": true,
-       "hoeren": false
-      },
-      {
-       "frage": "„Ein sehr gutes Thema. Kennen Sie seine Methode?“",
-       "optionen": [
-        "موضوع بسیار خوبی است. روش او را می‌شناسید؟",
-        "از کدام منابع استفاده کنم؟ متن اصلی به عربی است.",
-        "و نتیجه‌اش چقدر دقیق بود؟"
-       ],
-       "richtig": 0,
-       "optFa": true,
-       "hoeren": false
-      },
-      {
-       "frage": "„Welche Quellen soll ich verwenden? Der Originaltext ist auf Arabisch.“",
-       "optionen": [
-        "از کدام منابع استفاده کنم؟ متن اصلی به عربی است.",
-        "و نتیجه‌اش چقدر دقیق بود؟",
-        "موافقم. خوارزمی از یونانی‌ها و هندی‌ها یاد گرفت و اروپایی‌ها از او."
        ],
        "richtig": 0,
        "optFa": true,
@@ -685,39 +785,29 @@
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
-        "Da stimme ich zu. Kharazmi hat von Griechen und Indern gelernt und die Europäer von ihm.",
         "Und wie genau war sein Ergebnis?",
-        "Ein sehr gutes Thema. Kennen Sie seine Methode?"
+        "Also Uhr und Himmelskarte in einem Instrument?",
+        "Hat Biruni auch mit dem Astrolabium gearbeitet? Ich schreibe eine Arbeit über ihn."
        ],
        "richtig": 0,
-       "fa": "موافقم. خوارزمی از یونانی‌ها و هندی‌ها یاد گرفت و اروپایی‌ها از او."
+       "fa": "و نتیجه‌اش چقدر دقیق بود؟"
       },
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
-        "Jonas, ich habe gehört, du forschst über Biruni. Bravo!",
+        "Was genau hat man damit gemacht?",
         "Da stimme ich zu. Kharazmi hat von Griechen und Indern gelernt und die Europäer von ihm.",
-        "Welche Quellen soll ich verwenden? Der Originaltext ist auf Arabisch."
+        "Also Uhr und Himmelskarte in einem Instrument?"
        ],
        "richtig": 0,
-       "fa": "یوناس جان، شنیدم داری درباره‌ی بیرونی تحقیق می‌کنی. آفرین!"
-      },
-      {
-       "frage": "Was bedeutet der Satz?",
-       "optionen": [
-        "Welche Quellen soll ich verwenden? Der Originaltext ist auf Arabisch.",
-        "Da stimme ich zu. Kharazmi hat von Griechen und Indern gelernt und die Europäer von ihm.",
-        "Ein sehr gutes Thema. Kennen Sie seine Methode?"
-       ],
-       "richtig": 0,
-       "fa": "از کدام منابع استفاده کنم؟ متن اصلی به عربی است."
+       "fa": "با آن دقیقاً چه کار می‌کردند؟"
       },
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
         "Ein sehr gutes Thema. Kennen Sie seine Methode?",
-        "Da stimme ich zu. Kharazmi hat von Griechen und Indern gelernt und die Europäer von ihm.",
-        "Historiker nennen diese Zeit das ‹goldene Zeitalter› der Wissenschaft im Mittelalter."
+        "Und wie genau war sein Ergebnis?",
+        "Da stimme ich zu. Kharazmi hat von Griechen und Indern gelernt und die Europäer von ihm."
        ],
        "richtig": 0,
        "fa": "موضوع بسیار خوبی است. روش او را می‌شناسید؟"
@@ -725,22 +815,32 @@
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
-        "Historiker nennen diese Zeit das ‹goldene Zeitalter› der Wissenschaft im Mittelalter.",
         "Da stimme ich zu. Kharazmi hat von Griechen und Indern gelernt und die Europäer von ihm.",
-        "Ein sehr gutes Thema. Kennen Sie seine Methode?"
+        "Das Referat verläuft ohne Probleme, und ihre Kommilitonen hören aufmerksam zu.",
+        "Und wie genau war sein Ergebnis?"
        ],
        "richtig": 0,
-       "fa": "مورخان این زمان را «دوره‌ی طلایی» علم در قرون میانه می‌نامند."
+       "fa": "موافقم. خوارزمی از یونانی‌ها و هندی‌ها یاد گرفت و اروپایی‌ها از او."
       },
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
-        "Und wie genau war sein Ergebnis?",
-        "Da stimme ich zu. Kharazmi hat von Griechen und Indern gelernt und die Europäer von ihm.",
-        "Welche Quellen soll ich verwenden? Der Originaltext ist auf Arabisch."
+        "Also Uhr und Himmelskarte in einem Instrument?",
+        "Warum wurden so viele Astrolabien in Isfahan hergestellt?",
+        "Jonas, ich habe gehört, du forschst über Biruni. Bravo!"
        ],
        "richtig": 0,
-       "fa": "و نتیجه‌اش چقدر دقیق بود؟"
+       "fa": "یعنی ساعت و نقشه‌ی آسمان در یک ابزار؟"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Wie viel winzige Schrift auf dieser Scheibe ist! Sind das alles Sternnamen?",
+        "Welche Quellen soll ich verwenden? Der Originaltext ist auf Arabisch.",
+        "Da stimme ich zu. Kharazmi hat von Griechen und Indern gelernt und die Europäer von ihm."
+       ],
+       "richtig": 0,
+       "fa": "روی این صفحه چقدر نوشته‌ی ریز هست! همه‌اش نام ستاره‌هاست؟"
       }
      ]
     }

@@ -2,7 +2,7 @@
  "id": "tx",
  "art": "texte",
  "titel": "Sachtext & Dialoge",
- "beschreibung": "Sachtext, Wortschatz im Kontext, zwei Dialoge, Redemittel und Schreibaufgabe.",
+ "beschreibung": "Sachtext, Wortschatz im Kontext, Alltagstext, drei Dialoge, Infotexte, Redemittel und Schreibaufgabe.",
  "stationen": [
   {
    "id": "t1",
@@ -12,7 +12,7 @@
     {
      "typ": "info",
      "titel": "Neue Wörter im Text",
-     "text": "<p><span class='fa'>جلب کردن</span> – (Aufmerksamkeit) wecken · <span class='fa'>بند</span> – Absatz · <span class='fa'>هرم وارونه</span> – umgekehrte Pyramide · <span class='fa'>کمبود جا</span> – Platzmangel · <span class='fa'>ساختگی</span> – erfunden, fiktiv · <span class='fa'>دبیر</span> – Leiter/in, Sekretär/in · <span class='fa'>دبیرخانه</span> – Sekretariat · <span class='fa'>تکمیلی</span> – ergänzend · <span class='fa'>قالب</span> – Muster, Format</p>",
+     "text": "<p><span class='fa'>روزنامه‌نگاری</span> – Journalismus · <span class='fa'>ارزش خبری</span> – Nachrichtenwert · <span class='fa'>تازگی</span> – Aktualität, Neuheit · <span class='fa'>جلب کردن</span> – (Aufmerksamkeit) wecken · <span class='fa'>موتور جستجو</span> – Suchmaschine · <span class='fa'>بند</span> – Absatz · <span class='fa'>عنصر (عناصر)</span> – Element(e) · <span class='fa'>تازه‌کار</span> – Neuling · <span class='fa'>هرم وارونه</span> – umgekehrte Pyramide · <span class='fa'>کمبود جا</span> – Platzmangel · <span class='fa'>مستقل</span> – unabhängig · <span class='fa'>قطعی</span> – gesichert, endgültig · <span class='fa'>بازنشر کردن</span> – weiterverbreiten · <span class='fa'>ساختگی</span> – erfunden · <span class='fa'>دبیر</span> – Leiter/in · <span class='fa'>تکمیلی</span> – ergänzend · <span class='fa'>مجهول</span> – Passiv · <span class='fa'>گرد کردن</span> – runden · <span class='fa'>قالب</span> – Muster, Format</p>",
      "stil": "merke"
     },
     {
@@ -31,12 +31,32 @@
        "de": "Deshalb tut sich jemand, der gut Persisch spricht, manchmal sogar mit einer kurzen Meldung schwer."
       },
       {
+       "fa": "روزنامه‌نگاری در ایران تاریخی نزدیک به دو قرن دارد: نخستین روزنامه‌ی فارسی با نام «کاغذ اخبار» در سال ۱۸۳۷ میلادی در تهران منتشر شد.",
+       "tr": "",
+       "de": "Der Journalismus in Iran hat eine fast zweihundertjährige Geschichte: Die erste persische Zeitung erschien 1837 unter dem Namen ‹Kaghaz-e Akhbar› in Teheran."
+      },
+      {
+       "fa": "از آن زمان زبان مطبوعات کم‌کم قالب‌ها و عبارت‌های ویژه‌ی خودش را پیدا کرد که بسیاری از آن‌ها امروز هم به کار می‌روند.",
+       "tr": "",
+       "de": "Seitdem hat die Pressesprache nach und nach ihre eigenen Muster und Wendungen entwickelt, von denen viele noch heute verwendet werden."
+      },
+      {
+       "fa": "اما هر رویدادی خبر نیست؛ روزنامه‌نگاران رویداد‌ها را بر اساس «ارزش‌های خبری» مانند تازگی، نزدیکی، اهمیت و شهرت انتخاب می‌کنند.",
+       "tr": "",
+       "de": "Doch nicht jedes Ereignis ist eine Nachricht; Journalisten wählen Ereignisse nach ‹Nachrichtenwerten› wie Aktualität, Nähe, Bedeutung und Bekanntheit aus."
+      },
+      {
+       "fa": "مثلا بسته شدن یک خیابان در شهر خود خواننده برایش مهم‌تر از رویدادی مشابه در کشوری دور است.",
+       "tr": "",
+       "de": "So ist zum Beispiel die Sperrung einer Straße in der eigenen Stadt für die Leser wichtiger als ein ähnliches Ereignis in einem fernen Land."
+      },
+      {
        "fa": "نخستین چیزی که در یک خبر دیده می‌شود، تیتر است: جمله‌ای کوتاه که باید در یک نگاه توجه خواننده را جلب کند.",
        "tr": "",
        "de": "Das Erste, was man von einer Nachricht sieht, ist die Schlagzeile: ein kurzer Satz, der auf einen Blick die Aufmerksamkeit der Leser wecken soll."
       },
       {
-       "fa": "تیترها اغلب فعل ندارند؛ مثلا «افتتاح خط جدید مترو در شرق تهران» یا «کاهش دمای هوا از فردا».",
+       "fa": "تیتر‌ها اغلب فعل ندارند؛ مثلا «افتتاح خط جدید مترو در شرق تهران» یا «کاهش دمای هوا از فردا».",
        "tr": "",
        "de": "Schlagzeilen haben oft kein Verb, zum Beispiel ‹Eröffnung einer neuen U-Bahn-Linie im Osten Teherans› oder ‹Temperaturrückgang ab morgen›."
       },
@@ -46,7 +66,12 @@
        "de": "Die Leser verstehen von selbst, dass eine U-Bahn-Linie eröffnet wurde oder die Temperatur sinken wird."
       },
       {
-       "fa": "خبرهای هواشناسی هم قالب خودشان را دارند: «طبق اعلام سازمان هواشناسی، از فردا بارش باران در شمال کشور آغاز می‌شود و دما تا ده درجه کاهش می‌یابد.»",
+       "fa": "در سایت‌های خبری تیتر‌ها معمولا کمی بلندترند، چون باید هم خواننده را جذب کنند و هم در موتور‌های جستجو دیده شوند.",
+       "tr": "",
+       "de": "Auf Nachrichtenwebsites sind Schlagzeilen meist etwas länger, weil sie die Leser anziehen und zugleich von Suchmaschinen gefunden werden sollen."
+      },
+      {
+       "fa": "خبر‌های هواشناسی هم قالب خودشان را دارند: «طبق اعلام سازمان هواشناسی، از فردا بارش باران در شمال کشور آغاز می‌شود و دما تا ده درجه کاهش می‌یابد.»",
        "tr": "",
        "de": "Auch Wettermeldungen haben ihr eigenes Muster: ‹Laut Mitteilung des Wetterdienstes setzt ab morgen im Norden des Landes Regen ein, und die Temperatur sinkt um bis zu zehn Grad.›"
       },
@@ -59,6 +84,11 @@
        "fa": "یک لید خوب به شش پرسش اصلی پاسخ می‌دهد: چه کسی؟ چه کاری؟ کجا؟ کی؟ چرا؟ و چگونه؟",
        "tr": "",
        "de": "Ein guter Lead beantwortet sechs Grundfragen: Wer? Was? Wo? Wann? Warum? Und wie?"
+      },
+      {
+       "fa": "به این شش پرسش «عناصر خبر» می‌گویند و هر خبرنگار تازه‌کار در همان روز‌های اول کار آن‌ها را یاد می‌گیرد.",
+       "tr": "",
+       "de": "Diese sechs Fragen nennt man die ‹Elemente der Nachricht›, und jede Nachwuchsreporterin lernt sie gleich in den ersten Arbeitstagen."
       },
       {
        "fa": "بقیه‌ی خبر به شکل «هرم وارونه» نوشته می‌شود: اطلاعات مهم‌تر در بالا و جزئیات کم‌اهمیت‌تر در پایین.",
@@ -76,7 +106,22 @@
        "de": "Jede Nachricht braucht eine klare Quelle; deshalb beginnen viele Sätze mit ‹Laut Bericht von …› oder ‹Laut Mitteilung von …›."
       },
       {
-       "fa": "بسیاری از روزنامه‌ها خبرهایشان را از خبرگزاری‌ها می‌گیرند که خبرنگاران زیادی در شهرها و کشورهای مختلف دارند.",
+       "fa": "روزنامه‌نگاران دقیق هر اطلاعات مهمی را پیش از انتشار با دست‌کم دو منبع مستقل بررسی می‌کنند.",
+       "tr": "",
+       "de": "Sorgfältige Journalisten prüfen jede wichtige Information vor der Veröffentlichung mit mindestens zwei unabhängigen Quellen."
+      },
+      {
+       "fa": "اگر با این همه اشتباهی در خبر منتشر شود، رسانه‌های معتبر آن را آشکارا اصلاح می‌کنند و اصلاحیه‌ای کوتاه منتشر می‌کنند.",
+       "tr": "",
+       "de": "Wird trotzdem ein Fehler veröffentlicht, korrigieren seriöse Medien ihn offen und veröffentlichen eine kurze Richtigstellung."
+      },
+      {
+       "fa": "اگر خبری هنوز تأیید نشده باشد، از عبارت‌هایی مانند «گفته می‌شود» یا «بنا بر اخبار تأییدنشده» استفاده می‌کنند تا خواننده بداند که اطلاعات قطعی نیست.",
+       "tr": "",
+       "de": "Ist eine Nachricht noch nicht bestätigt, verwenden sie Wendungen wie ‹es heißt› oder ‹unbestätigten Meldungen zufolge›, damit die Leser wissen, dass die Information nicht gesichert ist."
+      },
+      {
+       "fa": "بسیاری از روزنامه‌ها خبر‌هایشان را از خبرگزاری‌ها می‌گیرند که خبرنگاران زیادی در شهر‌ها و کشور‌های مختلف دارند.",
        "tr": "",
        "de": "Viele Zeitungen beziehen ihre Meldungen von Nachrichtenagenturen, die viele Reporter in verschiedenen Städten und Ländern haben."
       },
@@ -84,6 +129,11 @@
        "fa": "خبرگزاری‌های بزرگ بین‌المللی مانند رویترز یا خبرگزاری فرانسه هر روز هزاران خبر به زبان‌های مختلف منتشر می‌کنند.",
        "tr": "",
        "de": "Große internationale Agenturen wie Reuters oder Agence France-Presse veröffentlichen jeden Tag Tausende Meldungen in verschiedenen Sprachen."
+      },
+      {
+       "fa": "روزنامه‌ها و سایت‌ها این خبر‌ها را با ذکر منبع، گاهی کوتاه‌تر و گاهی با جزئیات بیشتر، بازنشر می‌کنند.",
+       "tr": "",
+       "de": "Zeitungen und Websites veröffentlichen diese Meldungen mit Quellenangabe weiter – manchmal gekürzt, manchmal mit mehr Einzelheiten."
       },
       {
        "fa": "به این خبر ساختگی نگاه کنید: «به گزارش خبرنگار ما، نخستین جشنواره‌ی فیلم کوتاه دانشجویی دیروز در شیراز آغاز به کار کرد.»",
@@ -96,7 +146,7 @@
        "de": "‹Der Festivalleiter erklärte bei der Eröffnungsfeier: Dieses Jahr sind über dreihundert Filme beim Sekretariat eingegangen.›"
       },
       {
-       "fa": "«وی افزود: بیشتر این فیلم‌ها را دانشجویان شهرهای کوچک ساخته‌اند.»",
+       "fa": "«وی افزود: بیشتر این فیلم‌ها را دانشجویان شهر‌های کوچک ساخته‌اند.»",
        "tr": "",
        "de": "‹Er fügte hinzu: Die meisten dieser Filme haben Studierende aus kleinen Städten gedreht.›"
       },
@@ -111,9 +161,24 @@
        "de": "Statt ‹sagte› werden Verben wie ‹erklärte›, ‹fügte hinzu› oder ‹betonte› verwendet, und statt ‹er/sie› steht das Pronomen ‹vey›."
       },
       {
+       "fa": "فعل‌های دیگری مانند «خاطرنشان کرد» و «یادآور شد» هم رایج‌اند و معنای «اشاره کرد» یا «یادآوری کرد» دارند.",
+       "tr": "",
+       "de": "Auch andere Verben wie ‹wies darauf hin› und ‹erinnerte daran› sind üblich."
+      },
+      {
        "fa": "اگر کسی بار دوم در خبر ذکر شود، روزنامه‌نگار ممکن است او را «نامبرده» بنامد تا نامش دوباره تکرار نشود.",
        "tr": "",
        "de": "Wird eine Person zum zweiten Mal erwähnt, nennt der Journalist sie vielleicht ‹der/die Genannte›, damit ihr Name nicht noch einmal wiederholt wird."
+      },
+      {
+       "fa": "در زبان خبر، زمان هم شکل ویژه‌ای دارد: به جای «دیروز» اغلب «روز گذشته» و به جای «امسال» عبارت «سال جاری» می‌آید.",
+       "tr": "",
+       "de": "Auch Zeitangaben haben in der Nachrichtensprache eine besondere Form: Statt ‹gestern› steht oft ‹am vergangenen Tag› und statt ‹dieses Jahr› ‹im laufenden Jahr›."
+      },
+      {
+       "fa": "تاریخ‌ها در خبر‌های فارسی معمولا به تقویم خورشیدی نوشته می‌شوند، و برای رویداد‌های بین‌المللی گاهی تاریخ میلادی هم کنار آن می‌آید.",
+       "tr": "",
+       "de": "Daten werden in persischen Meldungen meist nach dem iranischen Sonnenkalender angegeben; bei internationalen Ereignissen steht manchmal das christliche Datum daneben."
       },
       {
        "fa": "عبارت «گفتنی است» معمولا در پایان خبر می‌آید و اطلاعات تکمیلی را معرفی می‌کند: «گفتنی است این جشنواره تا پنجشنبه ادامه دارد.»",
@@ -131,14 +196,34 @@
        "de": "Dieser Stil ist förmlicher und zeigt weniger deutlich, wer etwas getan hat."
       },
       {
-       "fa": "خبرهای علمی و ورزشی هم از همین قالب پیروی می‌کنند؛ مثلا در یک خبر ورزشی ممکن است بخوانیم: «تیم والیبال دانشگاه تبریز به قهرمانی رسید.»",
+       "fa": "ساختار‌های مجهول هم زیاد به کار می‌روند، مثلا «پیش‌بینی می‌شود»، «اعلام شد» یا «گفته می‌شود».",
+       "tr": "",
+       "de": "Auch Passivkonstruktionen sind häufig, zum Beispiel ‹es wird erwartet›, ‹es wurde bekanntgegeben› oder ‹es heißt›."
+      },
+      {
+       "fa": "خبر با یادداشت و سرمقاله هم فرق دارد: در خبر روزنامه‌نگار باید بی‌طرف بماند و نظر شخصی‌اش را ننویسد، اما در یادداشت نظر نویسنده آشکارا بیان می‌شود.",
+       "tr": "",
+       "de": "Eine Nachricht unterscheidet sich auch von Kommentar und Leitartikel: In der Nachricht muss der Journalist neutral bleiben und darf seine persönliche Meinung nicht schreiben, im Kommentar dagegen wird die Meinung des Autors offen geäußert."
+      },
+      {
+       "fa": "خبر‌های علمی و ورزشی هم از همین قالب پیروی می‌کنند؛ مثلا در یک خبر ورزشی ممکن است بخوانیم: «تیم والیبال دانشگاه تبریز به قهرمانی رسید.»",
        "tr": "",
        "de": "Wissenschafts- und Sportnachrichten folgen demselben Muster; in einer Sportmeldung könnte man etwa lesen: ‹Das Volleyballteam der Universität Täbris holte den Meistertitel.›"
       },
       {
-       "fa": "کسی که این قالب‌ها و عبارت‌ها را بشناسد، پس از مدتی خبرها را سریع‌تر و راحت‌تر می‌خواند.",
+       "fa": "زبان خبر‌های رادیو و تلویزیون کمی ساده‌تر است، چون شنونده نمی‌تواند جمله را دوباره بخواند؛ برای همین جمله‌ها کوتاه‌ترند و عدد‌ها اغلب گرد می‌شوند.",
+       "tr": "",
+       "de": "Die Sprache der Radio- und Fernsehnachrichten ist etwas einfacher, weil die Hörer einen Satz nicht noch einmal lesen können; deshalb sind die Sätze kürzer, und Zahlen werden oft gerundet."
+      },
+      {
+       "fa": "کسی که این قالب‌ها و عبارت‌ها را بشناسد، پس از مدتی خبر‌ها را سریع‌تر و راحت‌تر می‌خواند.",
        "tr": "",
        "de": "Wer diese Muster und Wendungen kennt, liest Nachrichten nach einer Weile schneller und leichter."
+      },
+      {
+       "fa": "او متوجه می‌شود که بیشتر خبر‌ها از شمار محدودی عبارت ثابت ساخته شده‌اند.",
+       "tr": "",
+       "de": "Er oder sie merkt, dass die meisten Meldungen aus einer begrenzten Zahl fester Wendungen bestehen."
       },
       {
        "fa": "پیشنهاد ما: هر روز یک خبر کوتاه بخوانید و تیتر آن را به یک جمله‌ی کامل تبدیل کنید.",
@@ -158,7 +243,7 @@
         "falsch"
        ],
        "richtig": 1,
-       "fa": "تیترهای خبری همیشه فعل دارند.",
+       "fa": "تیتر‌های خبری همیشه فعل دارند.",
        "fest": true,
        "erkl": "Schlagzeilen haben <b>oft kein</b> Verb."
       },
@@ -190,7 +275,7 @@
         "falsch"
        ],
        "richtig": 0,
-       "fa": "بسیاری از روزنامه‌ها خبرهایشان را از خبرگزاری‌ها می‌گیرند.",
+       "fa": "بسیاری از روزنامه‌ها خبر‌هایشان را از خبرگزاری‌ها می‌گیرند.",
        "fest": true
       },
       {
@@ -212,6 +297,27 @@
        ],
        "richtig": 0,
        "fa": "در زبان خبر به جای «او» اغلب «وی» می‌آید.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "نخستین روزنامه‌ی فارسی در قرن بیستم منتشر شد.",
+       "fest": true,
+       "erkl": "Sie erschien <b>1837</b>, also im 19. Jahrhundert."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "در خبر، روزنامه‌نگار نباید نظر شخصی‌اش را بنویسد.",
        "fest": true
       }
      ]
@@ -248,6 +354,15 @@
        "richtig": 0
       },
       {
+       "frage": "Was signalisiert <span class='fa'>گفته می‌شود</span> in einer Meldung?",
+       "optionen": [
+        "Die Information ist noch nicht sicher bestätigt.",
+        "Es folgt ein Interview.",
+        "Der Reporter äußert seine Meinung."
+       ],
+       "richtig": 0
+      },
+      {
        "frage": "Was ist typisch für den Nominalstil?",
        "optionen": [
         "Substantiv + ‹leeres› Verb wie صورت گرفت",
@@ -278,29 +393,29 @@
        "de": "Deshalb tut sich jemand, der gut Persisch spricht, manchmal sogar mit einer kurzen Meldung schwer."
       },
       {
+       "fa": "روزنامه‌نگاری در ایران تاریخی نزدیک به دو قرن دارد: نخستین روزنامه‌ی فارسی با نام «کاغذ اخبار» در سال ۱۸۳۷ میلادی در تهران منتشر شد.",
+       "tr": "",
+       "de": "Der Journalismus in Iran hat eine fast zweihundertjährige Geschichte: Die erste persische Zeitung erschien 1837 unter dem Namen ‹Kaghaz-e Akhbar› in Teheran."
+      },
+      {
+       "fa": "از آن زمان زبان مطبوعات کم‌کم قالب‌ها و عبارت‌های ویژه‌ی خودش را پیدا کرد که بسیاری از آن‌ها امروز هم به کار می‌روند.",
+       "tr": "",
+       "de": "Seitdem hat die Pressesprache nach und nach ihre eigenen Muster und Wendungen entwickelt, von denen viele noch heute verwendet werden."
+      },
+      {
+       "fa": "اما هر رویدادی خبر نیست؛ روزنامه‌نگاران رویداد‌ها را بر اساس «ارزش‌های خبری» مانند تازگی، نزدیکی، اهمیت و شهرت انتخاب می‌کنند.",
+       "tr": "",
+       "de": "Doch nicht jedes Ereignis ist eine Nachricht; Journalisten wählen Ereignisse nach ‹Nachrichtenwerten› wie Aktualität, Nähe, Bedeutung und Bekanntheit aus."
+      },
+      {
+       "fa": "مثلا بسته شدن یک خیابان در شهر خود خواننده برایش مهم‌تر از رویدادی مشابه در کشوری دور است.",
+       "tr": "",
+       "de": "So ist zum Beispiel die Sperrung einer Straße in der eigenen Stadt für die Leser wichtiger als ein ähnliches Ereignis in einem fernen Land."
+      },
+      {
        "fa": "نخستین چیزی که در یک خبر دیده می‌شود، تیتر است: جمله‌ای کوتاه که باید در یک نگاه توجه خواننده را جلب کند.",
        "tr": "",
        "de": "Das Erste, was man von einer Nachricht sieht, ist die Schlagzeile: ein kurzer Satz, der auf einen Blick die Aufmerksamkeit der Leser wecken soll."
-      },
-      {
-       "fa": "تیترها اغلب فعل ندارند؛ مثلا «افتتاح خط جدید مترو در شرق تهران» یا «کاهش دمای هوا از فردا».",
-       "tr": "",
-       "de": "Schlagzeilen haben oft kein Verb, zum Beispiel ‹Eröffnung einer neuen U-Bahn-Linie im Osten Teherans› oder ‹Temperaturrückgang ab morgen›."
-      },
-      {
-       "fa": "خواننده خودش می‌فهمد که یک خط مترو افتتاح شده است یا دما کاهش خواهد یافت.",
-       "tr": "",
-       "de": "Die Leser verstehen von selbst, dass eine U-Bahn-Linie eröffnet wurde oder die Temperatur sinken wird."
-      },
-      {
-       "fa": "خبرهای هواشناسی هم قالب خودشان را دارند: «طبق اعلام سازمان هواشناسی، از فردا بارش باران در شمال کشور آغاز می‌شود و دما تا ده درجه کاهش می‌یابد.»",
-       "tr": "",
-       "de": "Auch Wettermeldungen haben ihr eigenes Muster: ‹Laut Mitteilung des Wetterdienstes setzt ab morgen im Norden des Landes Regen ein, und die Temperatur sinkt um bis zu zehn Grad.›"
-      },
-      {
-       "fa": "پس از تیتر، لید می‌آید؛ یعنی نخستین جمله یا بند خبر که مهم‌ترین اطلاعات را در خود دارد.",
-       "tr": "",
-       "de": "Nach der Schlagzeile kommt der Lead, also der erste Satz oder Absatz der Meldung, der die wichtigsten Informationen enthält."
       }
      ]
     }
@@ -316,11 +431,23 @@
      "titel": "Welches Wort fehlt im Text?",
      "fragen": [
       {
+       "frage": "<span class='fa'>از آن زمان زبان ___ کم‌کم قالب‌ها و عبارت‌های ویژه‌ی خودش را پیدا کرد که بسیاری از آن‌ها امروز هم به کار می‌روند.</span><br><span class='mini'>Seitdem hat die Pressesprache nach und nach ihre eigenen Muster und Wendungen entwickelt, von denen viele noch heute verwendet werden.</span>",
+       "optionen": [
+        "مطبوعات",
+        "تیتر",
+        "دستاورد"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>از آن زمان زبان مطبوعات کم‌کم قالب‌ها و عبارت‌های ویژه‌ی خودش را پیدا کرد که بسیاری از آن‌ها امروز هم به کار می‌روند.</span>"
+      },
+      {
        "frage": "<span class='fa'>نخستین چیزی که در یک خبر دیده می‌شود، ___ است: جمله‌ای کوتاه که باید در یک نگاه توجه خواننده را جلب کند.</span><br><span class='mini'>Das Erste, was man von einer Nachricht sieht, ist die Schlagzeile: ein kurzer Satz, der auf einen Blick die Aufmerksamkeit der Leser wecken soll.</span>",
        "optionen": [
         "تیتر",
-        "دستاورد",
-        "طبق"
+        "طبق",
+        "مسافر"
        ],
        "richtig": 0,
        "optFa": true,
@@ -328,23 +455,23 @@
        "erkl": "<span class='fa'>نخستین چیزی که در یک خبر دیده می‌شود، تیتر است: جمله‌ای کوتاه که باید در یک نگاه توجه خواننده را جلب کند.</span>"
       },
       {
-       "frage": "<span class='fa'>تیترها اغلب فعل ندارند؛ مثلا «___ خط جدید مترو در شرق تهران» یا «کاهش دمای هوا از فردا».</span><br><span class='mini'>Schlagzeilen haben oft kein Verb, zum Beispiel ‹Eröffnung einer neuen U-Bahn-Linie im Osten Teherans› oder ‹Temperaturrückgang ab morgen›.</span>",
+       "frage": "<span class='fa'>تیتر‌ها اغلب فعل ندارند؛ مثلا «___ خط جدید مترو در شرق تهران» یا «کاهش دمای هوا از فردا».</span><br><span class='mini'>Schlagzeilen haben oft kein Verb, zum Beispiel ‹Eröffnung einer neuen U-Bahn-Linie im Osten Teherans› oder ‹Temperaturrückgang ab morgen›.</span>",
        "optionen": [
         "افتتاح",
-        "گزارش",
-        "فوری"
+        "بی‌طرف",
+        "ایشان"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
-       "erkl": "<span class='fa'>تیترها اغلب فعل ندارند؛ مثلا «افتتاح خط جدید مترو در شرق تهران» یا «کاهش دمای هوا از فردا».</span>"
+       "erkl": "<span class='fa'>تیتر‌ها اغلب فعل ندارند؛ مثلا «افتتاح خط جدید مترو در شرق تهران» یا «کاهش دمای هوا از فردا».</span>"
       },
       {
        "frage": "<span class='fa'>خواننده خودش می‌فهمد که یک ___ افتتاح شده است یا دما کاهش خواهد یافت.</span><br><span class='mini'>Die Leser verstehen von selbst, dass eine U-Bahn-Linie eröffnet wurde oder die Temperatur sinken wird.</span>",
        "optionen": [
         "خط مترو",
-        "فوری",
-        "رسانه"
+        "دما",
+        "یادداشت"
        ],
        "richtig": 0,
        "optFa": true,
@@ -352,40 +479,28 @@
        "erkl": "<span class='fa'>خواننده خودش می‌فهمد که یک خط مترو افتتاح شده است یا دما کاهش خواهد یافت.</span>"
       },
       {
-       "frage": "<span class='fa'>خبرهای هواشناسی هم قالب خودشان را دارند: «طبق اعلام سازمان هواشناسی، از فردا ___ باران در شمال کشور آغاز می‌شود و دما تا ده درجه کاهش می‌یابد.»</span><br><span class='mini'>Auch Wettermeldungen haben ihr eigenes Muster: ‹Laut Mitteilung des Wetterdienstes setzt ab morgen im Norden des Landes Regen ein, und die Temperatur sinkt um bis zu zehn Grad.›</span>",
+       "frage": "<span class='fa'>خبر‌های هواشناسی هم قالب خودشان را دارند: «طبق اعلام سازمان هواشناسی، از فردا ___ باران در شمال کشور آغاز می‌شود و دما تا ده درجه کاهش می‌یابد.»</span><br><span class='mini'>Auch Wettermeldungen haben ihr eigenes Muster: ‹Laut Mitteilung des Wetterdienstes setzt ab morgen im Norden des Landes Regen ein, und die Temperatur sinkt um bis zu zehn Grad.›</span>",
        "optionen": [
         "بارش",
-        "تیتر",
-        "اظهارات"
+        "اظهارات",
+        "رسمی"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
-       "erkl": "<span class='fa'>خبرهای هواشناسی هم قالب خودشان را دارند: «طبق اعلام سازمان هواشناسی، از فردا بارش باران در شمال کشور آغاز می‌شود و دما تا ده درجه کاهش می‌یابد.»</span>"
+       "erkl": "<span class='fa'>خبر‌های هواشناسی هم قالب خودشان را دارند: «طبق اعلام سازمان هواشناسی، از فردا بارش باران در شمال کشور آغاز می‌شود و دما تا ده درجه کاهش می‌یابد.»</span>"
       },
       {
        "frage": "<span class='fa'>پس از ___، لید می‌آید؛ یعنی نخستین جمله یا بند خبر که مهم‌ترین اطلاعات را در خود دارد.</span><br><span class='mini'>Nach der Schlagzeile kommt der Lead, also der erste Satz oder Absatz der Meldung, der die wichtigsten Informationen enthält.</span>",
        "optionen": [
         "تیتر",
-        "دما",
-        "قهرمانی"
+        "مصاحبه",
+        "طبق"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
        "erkl": "<span class='fa'>پس از تیتر، لید می‌آید؛ یعنی نخستین جمله یا بند خبر که مهم‌ترین اطلاعات را در خود دارد.</span>"
-      },
-      {
-       "frage": "<span class='fa'>یک ___ خوب به شش پرسش اصلی پاسخ می‌دهد: چه کسی؟ چه کاری؟ کجا؟ کی؟ چرا؟ و چگونه؟</span><br><span class='mini'>Ein guter Lead beantwortet sechs Grundfragen: Wer? Was? Wo? Wann? Warum? Und wie?</span>",
-       "optionen": [
-        "لید",
-        "نامبرده",
-        "مصاحبه"
-       ],
-       "richtig": 0,
-       "optFa": true,
-       "hoeren": false,
-       "erkl": "<span class='fa'>یک لید خوب به شش پرسش اصلی پاسخ می‌دهد: چه کسی؟ چه کاری؟ کجا؟ کی؟ چرا؟ و چگونه؟</span>"
       }
      ]
     },
@@ -394,11 +509,35 @@
      "titel": "Welches Wort fehlt im Text?",
      "fragen": [
       {
+       "frage": "<span class='fa'>یک ___ خوب به شش پرسش اصلی پاسخ می‌دهد: چه کسی؟ چه کاری؟ کجا؟ کی؟ چرا؟ و چگونه؟</span><br><span class='mini'>Ein guter Lead beantwortet sechs Grundfragen: Wer? Was? Wo? Wann? Warum? Und wie?</span>",
+       "optionen": [
+        "لید",
+        "مسابقه",
+        "شایعه"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>یک لید خوب به شش پرسش اصلی پاسخ می‌دهد: چه کسی؟ چه کاری؟ کجا؟ کی؟ چرا؟ و چگونه؟</span>"
+      },
+      {
+       "frage": "<span class='fa'>به این شش پرسش «عناصر خبر» می‌گویند و هر ___ تازه‌کار در همان روز‌های اول کار آن‌ها را یاد می‌گیرد.</span><br><span class='mini'>Diese sechs Fragen nennt man die ‹Elemente der Nachricht›, und jede Nachwuchsreporterin lernt sie gleich in den ersten Arbeitstagen.</span>",
+       "optionen": [
+        "خبرنگار",
+        "نامبرده",
+        "زیرنویس"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>به این شش پرسش «عناصر خبر» می‌گویند و هر خبرنگار تازه‌کار در همان روز‌های اول کار آن‌ها را یاد می‌گیرد.</span>"
+      },
+      {
        "frage": "<span class='fa'>به این ترتیب، اگر ___ به دلیل کمبود جا بخشی از پایان خبر را حذف کند، اطلاعات اصلی از دست نمی‌رود.</span><br><span class='mini'>Wenn der Chefredakteur aus Platzmangel einen Teil vom Ende der Meldung streicht, gehen so die Hauptinformationen nicht verloren.</span>",
        "optionen": [
         "سردبیر",
-        "سخنگو",
-        "وی"
+        "زیرنویس",
+        "بی‌طرف"
        ],
        "richtig": 0,
        "optFa": true,
@@ -409,8 +548,8 @@
        "frage": "<span class='fa'>هر خبر باید منبع روشنی داشته باشد؛ برای همین بسیاری از جمله‌ها با «___ …» یا «طبق اعلام …» آغاز می‌شوند.</span><br><span class='mini'>Jede Nachricht braucht eine klare Quelle; deshalb beginnen viele Sätze mit ‹Laut Bericht von …› oder ‹Laut Mitteilung von …›.</span>",
        "optionen": [
         "به گزارش",
-        "ایشان",
-        "روزنامه"
+        "قهرمانی",
+        "ویراستار"
        ],
        "richtig": 0,
        "optFa": true,
@@ -418,11 +557,41 @@
        "erkl": "<span class='fa'>هر خبر باید منبع روشنی داشته باشد؛ برای همین بسیاری از جمله‌ها با «به گزارش …» یا «طبق اعلام …» آغاز می‌شوند.</span>"
       },
       {
+       "frage": "<span class='fa'>اگر با این همه اشتباهی در خبر منتشر شود، رسانه‌های ___ آن را آشکارا اصلاح می‌کنند و اصلاحیه‌ای کوتاه منتشر می‌کنند.</span><br><span class='mini'>Wird trotzdem ein Fehler veröffentlicht, korrigieren seriöse Medien ihn offen und veröffentlichen eine kurze Richtigstellung.</span>",
+       "optionen": [
+        "معتبر",
+        "رسانه",
+        "اطلاعیه"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>اگر با این همه اشتباهی در خبر منتشر شود، رسانه‌های معتبر آن را آشکارا اصلاح می‌کنند و اصلاحیه‌ای کوتاه منتشر می‌کنند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>اگر خبری هنوز تأیید نشده باشد، از عبارت‌هایی مانند «گفته می‌شود» یا «___ اخبار تأییدنشده» استفاده می‌کنند تا خواننده بداند که اطلاعات قطعی نیست.</span><br><span class='mini'>Ist eine Nachricht noch nicht bestätigt, verwenden sie Wendungen wie ‹es heißt› oder ‹unbestätigten Meldungen zufolge›, damit die Leser wissen, dass die Information nicht gesichert ist.</span>",
+       "optionen": [
+        "بنا بر",
+        "اظهارات",
+        "جشنواره"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>اگر خبری هنوز تأیید نشده باشد، از عبارت‌هایی مانند «گفته می‌شود» یا «بنا بر اخبار تأییدنشده» استفاده می‌کنند تا خواننده بداند که اطلاعات قطعی نیست.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort fehlt im Text?",
+     "fragen": [
+      {
        "frage": "<span class='fa'>خبرگزاری‌های بزرگ بین‌المللی مانند رویترز یا ___ فرانسه هر روز هزاران خبر به زبان‌های مختلف منتشر می‌کنند.</span><br><span class='mini'>Große internationale Agenturen wie Reuters oder Agence France-Presse veröffentlichen jeden Tag Tausende Meldungen in verschiedenen Sprachen.</span>",
        "optionen": [
         "خبرگزاری",
-        "مصاحبه",
-        "اظهارات"
+        "قهرمانی",
+        "شایعه"
        ],
        "richtig": 0,
        "optFa": true,
@@ -433,8 +602,8 @@
        "frage": "<span class='fa'>به این خبر ساختگی نگاه کنید: «___ خبرنگار ما، نخستین جشنواره‌ی فیلم کوتاه دانشجویی دیروز در شیراز آغاز به کار کرد.»</span><br><span class='mini'>Sehen Sie sich diese erfundene Meldung an: ‹Wie unser Reporter berichtet, hat gestern in Schiras das erste studentische Kurzfilmfestival begonnen.›</span>",
        "optionen": [
         "به گزارش",
-        "وی",
-        "روزنامه"
+        "جشنواره",
+        "یادداشت"
        ],
        "richtig": 0,
        "optFa": true,
@@ -446,7 +615,7 @@
        "optionen": [
         "جشنواره",
         "وی",
-        "خبرگزاری"
+        "مصاحبه"
        ],
        "richtig": 0,
        "optFa": true,
@@ -454,16 +623,40 @@
        "erkl": "<span class='fa'>«دبیر جشنواره در مراسم افتتاحیه اظهار داشت: امسال بیش از سیصد فیلم به دبیرخانه رسیده است.»</span>"
       },
       {
-       "frage": "<span class='fa'>«___ افزود: بیشتر این فیلم‌ها را دانشجویان شهرهای کوچک ساخته‌اند.»</span><br><span class='mini'>‹Er fügte hinzu: Die meisten dieser Filme haben Studierende aus kleinen Städten gedreht.›</span>",
+       "frage": "<span class='fa'>«___ افزود: بیشتر این فیلم‌ها را دانشجویان شهر‌های کوچک ساخته‌اند.»</span><br><span class='mini'>‹Er fügte hinzu: Die meisten dieser Filme haben Studierende aus kleinen Städten gedreht.›</span>",
        "optionen": [
         "وی",
-        "گزارش",
-        "مصاحبه"
+        "مسافر",
+        "مطبوعات"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
-       "erkl": "<span class='fa'>«وی افزود: بیشتر این فیلم‌ها را دانشجویان شهرهای کوچک ساخته‌اند.»</span>"
+       "erkl": "<span class='fa'>«وی افزود: بیشتر این فیلم‌ها را دانشجویان شهر‌های کوچک ساخته‌اند.»</span>"
+      },
+      {
+       "frage": "<span class='fa'>به جای «گفت» از فعل‌هایی مانند «اظهار داشت»، «افزود» یا «تصریح کرد» استفاده می‌شود، و به جای «او» ضمیر «___» می‌آید.</span><br><span class='mini'>Statt ‹sagte› werden Verben wie ‹erklärte›, ‹fügte hinzu› oder ‹betonte› verwendet, und statt ‹er/sie› steht das Pronomen ‹vey›.</span>",
+       "optionen": [
+        "وی",
+        "فوری",
+        "نامبرده"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>به جای «گفت» از فعل‌هایی مانند «اظهار داشت»، «افزود» یا «تصریح کرد» استفاده می‌شود، و به جای «او» ضمیر «وی» می‌آید.</span>"
+      },
+      {
+       "frage": "<span class='fa'>اگر کسی بار دوم در خبر ذکر شود، روزنامه‌نگار ممکن است او را «___» بنامد تا نامش دوباره تکرار نشود.</span><br><span class='mini'>Wird eine Person zum zweiten Mal erwähnt, nennt der Journalist sie vielleicht ‹der/die Genannte›, damit ihr Name nicht noch einmal wiederholt wird.</span>",
+       "optionen": [
+        "نامبرده",
+        "عکاس",
+        "خبرگزاری"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>اگر کسی بار دوم در خبر ذکر شود، روزنامه‌نگار ممکن است او را «نامبرده» بنامد تا نامش دوباره تکرار نشود.</span>"
       }
      ]
     },
@@ -476,6 +669,11 @@
        "fa": "زبان خبر با زبان گفتگوی روزمره تفاوت زیادی دارد.",
        "tr": "",
        "de": "Die Nachrichtensprache unterscheidet sich stark von der Alltagssprache."
+      },
+      {
+       "fa": "روزنامه‌نگاران رویداد‌ها را بر اساس ارزش‌های خبری مانند تازگی و نزدیکی انتخاب می‌کنند.",
+       "tr": "",
+       "de": "Journalisten wählen Ereignisse nach Nachrichtenwerten wie Aktualität und Nähe aus."
       },
       {
        "fa": "تیتر کوتاه است و اغلب فعل ندارد.",
@@ -493,9 +691,301 @@
        "de": "Journalisten verwenden Wendungen wie ‹erklärte› und ‹es sei erwähnt› sowie den Nominalstil."
       },
       {
-       "fa": "با تمرین روزانه می‌توان خبرها را راحت‌تر خواند.",
+       "fa": "با تمرین روزانه می‌توان خبر‌ها را راحت‌تر خواند.",
        "tr": "",
        "de": "Mit täglicher Übung kann man Nachrichten leichter lesen."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t3",
+   "titel": "Alltag: Ein Tag in der Redaktion",
+   "vorschau": "Ein Tag in der Redaktion",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>شماره</span> – (hier) Ausgabe · <span class='fa'>مطرح کردن</span> – vorbringen, vorstellen · <span class='fa'>غیرعادی</span> – ungewöhnlich · <span class='fa'>شناسایی کردن</span> – bestimmen, identifizieren · <span class='fa'>بازگشایی</span> – Wiedereröffnung · <span class='fa'>مرمت</span> – Restaurierung, Renovierung · <span class='fa'>روابط عمومی</span> – Pressestelle, Öffentlichkeitsarbeit · <span class='fa'>نما</span> – Fassade · <span class='fa'>اختصاص دادن</span> – widmen · <span class='fa'>نقل کردن</span> – zitieren, wiedergeben · <span class='fa'>غلط املایی</span> – Rechtschreibfehler</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Alltag: Ein Tag in der Redaktion",
+     "text": "Alltagstext – Tippe eine Zeile an, wenn du die Übersetzung brauchst.",
+     "zeilen": [
+      {
+       "fa": "ساعت هشت و نیم صبح است و لیلا با یک لیوان چای وارد تحریریه‌ی مجله‌ی فرهنگی‌اش می‌شود.",
+       "tr": "",
+       "de": "Es ist halb neun morgens, und Leyla betritt mit einem Glas Tee die Redaktion ihres Kulturmagazins."
+      },
+      {
+       "fa": "مجله هر ماه یک شماره‌ی چاپی دارد، اما سایت آن هر روز چند خبر و گزارش تازه منتشر می‌کند.",
+       "tr": "",
+       "de": "Das Magazin erscheint einmal im Monat gedruckt, seine Website veröffentlicht aber täglich mehrere neue Meldungen und Berichte."
+      },
+      {
+       "fa": "ساعت نه جلسه‌ی تحریریه شروع می‌شود؛ سردبیر، چهار خبرنگار، یک عکاس و ویراستار دور میز بزرگ می‌نشینند.",
+       "tr": "",
+       "de": "Um neun beginnt die Redaktionssitzung; der Chefredakteur, vier Reporterinnen und Reporter, ein Fotograf und die Lektorin sitzen um den großen Tisch."
+      },
+      {
+       "fa": "هر خبرنگار پیشنهاد‌های خودش را برای کار امروز مطرح می‌کند.",
+       "tr": "",
+       "de": "Alle Reporter stellen ihre Vorschläge für die heutige Arbeit vor."
+      },
+      {
+       "fa": "یکی از همکاران می‌خواهد درباره‌ی گرمای غیرعادی این هفته و پیش‌بینی هوای آخر هفته بنویسد.",
+       "tr": "",
+       "de": "Ein Kollege möchte über die ungewöhnliche Hitze dieser Woche und die Wettervorhersage fürs Wochenende schreiben."
+      },
+      {
+       "fa": "همکار دیگری خبر یک کشف تازه را پیشنهاد می‌کند: پژوهشگران دانشکده‌ی زیست‌شناسی گونه‌ی تازه‌ای از یک گیاه کویری را شناسایی کرده‌اند.",
+       "tr": "",
+       "de": "Eine andere Kollegin schlägt eine Meldung über eine neue Entdeckung vor: Forschende der biologischen Fakultät haben eine neue Art einer Wüstenpflanze bestimmt."
+      },
+      {
+       "fa": "پیشنهاد لیلا بازگشایی یک سینمای قدیمی در مرکز شهر است که سه سال برای مرمت تعطیل بود.",
+       "tr": "",
+       "de": "Leylas Vorschlag ist die Wiedereröffnung eines alten Kinos im Stadtzentrum, das drei Jahre lang wegen Renovierung geschlossen war."
+      },
+      {
+       "fa": "سردبیر خبر گرما را برای صفحه‌ی اول سایت انتخاب می‌کند و خبر گیاه کویری را به بخش علم می‌سپارد.",
+       "tr": "",
+       "de": "Der Chefredakteur wählt die Hitzemeldung für die Startseite der Website und gibt die Meldung über die Wüstenpflanze an das Wissenschaftsressort."
+      },
+      {
+       "fa": "سردبیر می‌پرسد منبع خبر چیست، و لیلا توضیح می‌دهد که اطلاعیه‌ی رسمی شهرداری را دیده است، اما می‌خواهد با مدیر سینما هم مصاحبه کند.",
+       "tr": "",
+       "de": "Der Chefredakteur fragt nach der Quelle, und Leyla erklärt, dass sie die offizielle Mitteilung der Stadtverwaltung gesehen hat, aber auch den Kinoleiter interviewen möchte."
+      },
+      {
+       "fa": "سردبیر موافقت می‌کند و می‌گوید خبر باید تا ساعت سه بعدازظهر آماده باشد.",
+       "tr": "",
+       "de": "Der Chefredakteur ist einverstanden und sagt, die Meldung müsse bis drei Uhr nachmittags fertig sein."
+      },
+      {
+       "fa": "بعد از جلسه لیلا به روابط عمومی شهرداری زنگ می‌زند تا تاریخ دقیق بازگشایی را بپرسد.",
+       "tr": "",
+       "de": "Nach der Sitzung ruft Leyla die Pressestelle der Stadtverwaltung an, um nach dem genauen Datum der Wiedereröffnung zu fragen."
+      },
+      {
+       "fa": "سخنگوی بخش فرهنگی شهرداری تأیید می‌کند که سینما پنجشنبه‌ی آینده با نمایش یک فیلم کلاسیک ایرانی بازگشایی می‌شود.",
+       "tr": "",
+       "de": "Die Sprecherin der Kulturabteilung bestätigt, dass das Kino am kommenden Donnerstag mit der Vorführung eines klassischen iranischen Films wiedereröffnet wird."
+      },
+      {
+       "fa": "ساعت یازده لیلا با عکاس به سینما می‌رود؛ کارگر‌ها هنوز مشغول نصب صندلی‌های تازه‌اند.",
+       "tr": "",
+       "de": "Um elf fährt Leyla mit dem Fotografen zum Kino; die Arbeiter sind noch damit beschäftigt, die neuen Sitze einzubauen."
+      },
+      {
+       "fa": "مدیر سینما در مصاحبه می‌گوید که نمای آجری ساختمان و تابلوی قدیمی آن حفظ شده، اما سیستم صدا و تصویر کاملا نو شده است.",
+       "tr": "",
+       "de": "Der Kinoleiter sagt im Interview, dass die Backsteinfassade und das alte Schild erhalten geblieben sind, Ton- und Bildtechnik aber vollständig erneuert wurden."
+      },
+      {
+       "fa": "او اضافه می‌کند که سینما هر هفته یک شب را به فیلم‌های کوتاه دانشجویی اختصاص خواهد داد.",
+       "tr": "",
+       "de": "Er fügt hinzu, dass das Kino jede Woche einen Abend studentischen Kurzfilmen widmen wird."
+      },
+      {
+       "fa": "عکاس از نمای ساختمان و سالن تازه عکس می‌گیرد و لیلا شماره‌ی تلفن مدیر را برای پرسش‌های بعدی یادداشت می‌کند.",
+       "tr": "",
+       "de": "Der Fotograf fotografiert die Fassade und den neuen Saal, und Leyla notiert sich die Telefonnummer des Kinoleiters für spätere Rückfragen."
+      },
+      {
+       "fa": "لیلا در تاکسی یادداشت‌هایش را مرتب می‌کند و به تیتر خبر فکر می‌کند.",
+       "tr": "",
+       "de": "Im Taxi ordnet Leyla ihre Notizen und denkt über die Schlagzeile nach."
+      },
+      {
+       "fa": "در دفتر اول لید را می‌نویسد: چه چیزی، کجا، کی و چرا – همه در یک جمله.",
+       "tr": "",
+       "de": "Im Büro schreibt sie zuerst den Lead: was, wo, wann und warum – alles in einem Satz."
+      },
+      {
+       "fa": "بعد سخنان مدیر سینما را با عبارت‌هایی مثل «اظهار داشت» و «وی افزود» نقل می‌کند و اطلاعات کم‌اهمیت‌تر را به پایان خبر می‌برد.",
+       "tr": "",
+       "de": "Dann gibt sie die Aussagen des Kinoleiters mit Wendungen wie ‹erklärte› und ‹er fügte hinzu› wieder und verschiebt weniger Wichtiges ans Ende der Meldung."
+      },
+      {
+       "fa": "ساعت دو و نیم متن را برای ویراستار می‌فرستد.",
+       "tr": "",
+       "de": "Um halb drei schickt sie den Text an die Lektorin."
+      },
+      {
+       "fa": "ویراستار دو غلط املایی را اصلاح می‌کند و پیشنهاد می‌کند یک جمله‌ی طولانی به دو جمله تقسیم شود.",
+       "tr": "",
+       "de": "Die Lektorin korrigiert zwei Rechtschreibfehler und schlägt vor, einen langen Satz in zwei Sätze zu teilen."
+      },
+      {
+       "fa": "سردبیر تیتر لیلا را کمی کوتاه‌تر می‌کند: «بازگشایی سینمای قدیمی مرکز شهر پس از سه سال».",
+       "tr": "",
+       "de": "Der Chefredakteur kürzt Leylas Schlagzeile ein wenig: ‹Wiedereröffnung des alten Innenstadtkinos nach drei Jahren›."
+      },
+      {
+       "fa": "عکاس سه عکس می‌فرستد و لیلا برای هر کدام یک زیرنویس کوتاه می‌نویسد.",
+       "tr": "",
+       "de": "Der Fotograf schickt drei Fotos, und Leyla schreibt zu jedem eine kurze Bildunterschrift."
+      },
+      {
+       "fa": "ساعت چهار خبر در سایت مجله منتشر می‌شود و چند دقیقه بعد در شبکه‌های اجتماعی هم دیده می‌شود.",
+       "tr": "",
+       "de": "Um vier erscheint die Meldung auf der Website des Magazins und ist wenige Minuten später auch in den sozialen Medien zu sehen."
+      },
+      {
+       "fa": "عصر یک خواننده پیام می‌دهد که سال ساخت سینما در متن اشتباه است.",
+       "tr": "",
+       "de": "Am Abend schreibt eine Leserin, dass das Baujahr des Kinos im Text falsch ist."
+      },
+      {
+       "fa": "لیلا منبع را دوباره بررسی می‌کند، می‌بیند که حق با خواننده است و تاریخ را اصلاح می‌کند؛ در پایان خبر هم یادداشتی کوتاه درباره‌ی این اصلاح می‌افزاید.",
+       "tr": "",
+       "de": "Leyla prüft die Quelle noch einmal, sieht, dass die Leserin recht hat, und korrigiert das Datum; am Ende der Meldung fügt sie einen kurzen Hinweis auf die Korrektur hinzu."
+      },
+      {
+       "fa": "وقتی از دفتر بیرون می‌آید، فکر می‌کند که فردا صبح، دوباره ساعت نه، جلسه‌ی تحریریه است.",
+       "tr": "",
+       "de": "Als sie das Büro verlässt, denkt sie daran, dass morgen früh um neun wieder Redaktionssitzung ist."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "جلسه‌ی تحریریه ساعت نه صبح شروع می‌شود.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "پیشنهاد لیلا خبری درباره‌ی هوا بود.",
+       "fest": true,
+       "erkl": "Leyla schlug eine Meldung über die <b>Wiedereröffnung eines Kinos</b> vor."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "سینما پنجشنبه‌ی آینده بازگشایی می‌شود.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "ویراستار تیتر خبر را نوشت.",
+       "fest": true,
+       "erkl": "Leyla schrieb die Schlagzeile, der <b>Chefredakteur</b> kürzte sie."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "یک خواننده اشتباهی در متن پیدا کرد.",
+       "fest": true
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Wie prüft Leyla ihre Informationen?",
+       "optionen": [
+        "Sie ruft die Pressestelle an und interviewt den Kinoleiter.",
+        "Sie übernimmt nur einen Beitrag aus sozialen Medien.",
+        "Sie fragt den Fotografen."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was bleibt beim renovierten Kino erhalten?",
+       "optionen": [
+        "die Backsteinfassade und das alte Schild",
+        "die alten Sitze",
+        "die alte Tontechnik"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was macht die Lektorin?",
+       "optionen": [
+        "Sie korrigiert Fehler und teilt einen langen Satz.",
+        "Sie schreibt den Lead neu.",
+        "Sie wählt die Fotos aus."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie reagiert Leyla auf den Hinweis der Leserin?",
+       "optionen": [
+        "Sie korrigiert das Datum und vermerkt die Korrektur.",
+        "Sie löscht die Meldung.",
+        "Sie ignoriert die Nachricht."
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "مجله هر ماه یک شماره‌ی چاپی دارد، اما سایت آن هر روز چند خبر و گزارش تازه منتشر می‌کند.",
+       "tr": "",
+       "de": "Das Magazin erscheint einmal im Monat gedruckt, seine Website veröffentlicht aber täglich mehrere neue Meldungen und Berichte."
+      },
+      {
+       "fa": "ساعت نه جلسه‌ی تحریریه شروع می‌شود؛ سردبیر، چهار خبرنگار، یک عکاس و ویراستار دور میز بزرگ می‌نشینند.",
+       "tr": "",
+       "de": "Um neun beginnt die Redaktionssitzung; der Chefredakteur, vier Reporterinnen und Reporter, ein Fotograf und die Lektorin sitzen um den großen Tisch."
+      },
+      {
+       "fa": "هر خبرنگار پیشنهاد‌های خودش را برای کار امروز مطرح می‌کند.",
+       "tr": "",
+       "de": "Alle Reporter stellen ihre Vorschläge für die heutige Arbeit vor."
+      },
+      {
+       "fa": "یکی از همکاران می‌خواهد درباره‌ی گرمای غیرعادی این هفته و پیش‌بینی هوای آخر هفته بنویسد.",
+       "tr": "",
+       "de": "Ein Kollege möchte über die ungewöhnliche Hitze dieser Woche und die Wettervorhersage fürs Wochenende schreiben."
+      },
+      {
+       "fa": "همکار دیگری خبر یک کشف تازه را پیشنهاد می‌کند: پژوهشگران دانشکده‌ی زیست‌شناسی گونه‌ی تازه‌ای از یک گیاه کویری را شناسایی کرده‌اند.",
+       "tr": "",
+       "de": "Eine andere Kollegin schlägt eine Meldung über eine neue Entdeckung vor: Forschende der biologischen Fakultät haben eine neue Art einer Wüstenpflanze bestimmt."
+      },
+      {
+       "fa": "پیشنهاد لیلا بازگشایی یک سینمای قدیمی در مرکز شهر است که سه سال برای مرمت تعطیل بود.",
+       "tr": "",
+       "de": "Leylas Vorschlag ist die Wiedereröffnung eines alten Kinos im Stadtzentrum, das drei Jahre lang wegen Renovierung geschlossen war."
       }
      ]
     }
@@ -532,6 +1022,16 @@
        "de": "‹Beginn des studentischen Kurzfilmfestivals in Schiras›. Kurz und ohne Verb."
       },
       {
+       "fa": "یوناس: لیدت به هر شش پرسش جواب می‌دهد؟",
+       "tr": "",
+       "de": "Beantwortet dein Lead alle sechs Fragen?"
+      },
+      {
+       "fa": "لیلا: به بیشترشان: چه کسی، چه کاری، کجا و کی. «چرا» را در جمله‌ی بعد آورده‌ام، چون لید نباید خیلی طولانی شود.",
+       "tr": "",
+       "de": "Die meisten: wer, was, wo und wann. Das ‹Warum› steht im nächsten Satz, denn der Lead darf nicht zu lang werden."
+      },
+      {
        "fa": "یوناس: چرا در متن نوشته‌ای «دبیر جشنواره اظهار داشت»؟ نمی‌شود فقط نوشت «گفت»؟",
        "tr": "",
        "de": "Warum hast du im Text ‹der Festivalleiter erklärte› geschrieben? Kann man nicht einfach ‹sagte› schreiben?"
@@ -540,6 +1040,26 @@
        "fa": "لیلا: می‌شود، ولی اگر در یک خبر پنج بار «گفت» بیاید، متن یکنواخت می‌شود. برای همین «اظهار داشت»، «افزود» و «تصریح کرد» را عوض می‌کنیم.",
        "tr": "",
        "de": "Kann man, aber wenn in einer Meldung fünfmal ‹sagte› vorkommt, wird der Text eintönig. Deshalb wechseln wir zwischen ‹erklärte›, ‹fügte hinzu› und ‹betonte›."
+      },
+      {
+       "fa": "یوناس: این عدد سیصد فیلم را از کجا می‌دانی؟",
+       "tr": "",
+       "de": "Woher weißt du die Zahl von dreihundert Filmen?"
+      },
+      {
+       "fa": "لیلا: از اطلاعیه‌ی دبیرخانه‌ی جشنواره. ولی امروز صبح تلفنی هم با دبیرخانه تماس گرفتم تا مطمئن شوم. هر عددی را باید دوباره بررسی کرد.",
+       "tr": "",
+       "de": "Aus der Mitteilung des Festivalsekretariats. Aber heute Morgen habe ich das Sekretariat auch angerufen, um sicherzugehen. Jede Zahl muss man nachprüfen."
+      },
+      {
+       "fa": "یوناس: کنار خبر عکس هم می‌گذارید؟",
+       "tr": "",
+       "de": "Stellt ihr auch ein Foto zur Meldung?"
+      },
+      {
+       "fa": "لیلا: بله، یک عکس از مراسم افتتاحیه. زیرنویسش را هم خودم می‌نویسم؛ کوتاه و با نام کسانی که در عکس هستند.",
+       "tr": "",
+       "de": "Ja, ein Foto von der Eröffnungsfeier. Die Bildunterschrift schreibe ich auch selbst – kurz und mit den Namen der Personen auf dem Bild."
       },
       {
        "fa": "یوناس: و این جمله‌ی آخر با «گفتنی است» چه نقشی دارد؟",
@@ -555,6 +1075,11 @@
        "fa": "یوناس: پس هرم وارونه‌ای که در کلاس خواندیم، واقعا در عمل هم به کار می‌رود!",
        "tr": "",
        "de": "Die umgekehrte Pyramide, die wir im Kurs gelesen haben, wird also wirklich in der Praxis verwendet!"
+      },
+      {
+       "fa": "لیلا: دقیقا. حالا اگر بخواهی، خودت تیتر خبر بعدی را بنویس؛ یک خبر کوتاه درباره‌ی پیش‌بینی هوای آخر هفته.",
+       "tr": "",
+       "de": "Genau. Wenn du willst, schreib jetzt selbst die Schlagzeile für die nächste Meldung – eine kurze Nachricht über die Wettervorhersage fürs Wochenende."
       }
      ]
     },
@@ -579,6 +1104,16 @@
        "de": "‹Beginn des studentischen Kurzfilmfestivals in Schiras›. Kurz und ohne Verb."
       },
       {
+       "fa": "یوناس: لیدت به هر شش پرسش جواب می‌دهد؟",
+       "tr": "",
+       "de": "Beantwortet dein Lead alle sechs Fragen?"
+      },
+      {
+       "fa": "لیلا: به بیشترشان: چه کسی، چه کاری، کجا و کی. «چرا» را در جمله‌ی بعد آورده‌ام، چون لید نباید خیلی طولانی شود.",
+       "tr": "",
+       "de": "Die meisten: wer, was, wo und wann. Das ‹Warum› steht im nächsten Satz, denn der Lead darf nicht zu lang werden."
+      },
+      {
        "fa": "یوناس: چرا در متن نوشته‌ای «دبیر جشنواره اظهار داشت»؟ نمی‌شود فقط نوشت «گفت»؟",
        "tr": "",
        "de": "Warum hast du im Text ‹der Festivalleiter erklärte› geschrieben? Kann man nicht einfach ‹sagte› schreiben?"
@@ -587,6 +1122,26 @@
        "fa": "لیلا: می‌شود، ولی اگر در یک خبر پنج بار «گفت» بیاید، متن یکنواخت می‌شود. برای همین «اظهار داشت»، «افزود» و «تصریح کرد» را عوض می‌کنیم.",
        "tr": "",
        "de": "Kann man, aber wenn in einer Meldung fünfmal ‹sagte› vorkommt, wird der Text eintönig. Deshalb wechseln wir zwischen ‹erklärte›, ‹fügte hinzu› und ‹betonte›."
+      },
+      {
+       "fa": "یوناس: این عدد سیصد فیلم را از کجا می‌دانی؟",
+       "tr": "",
+       "de": "Woher weißt du die Zahl von dreihundert Filmen?"
+      },
+      {
+       "fa": "لیلا: از اطلاعیه‌ی دبیرخانه‌ی جشنواره. ولی امروز صبح تلفنی هم با دبیرخانه تماس گرفتم تا مطمئن شوم. هر عددی را باید دوباره بررسی کرد.",
+       "tr": "",
+       "de": "Aus der Mitteilung des Festivalsekretariats. Aber heute Morgen habe ich das Sekretariat auch angerufen, um sicherzugehen. Jede Zahl muss man nachprüfen."
+      },
+      {
+       "fa": "یوناس: کنار خبر عکس هم می‌گذارید؟",
+       "tr": "",
+       "de": "Stellt ihr auch ein Foto zur Meldung?"
+      },
+      {
+       "fa": "لیلا: بله، یک عکس از مراسم افتتاحیه. زیرنویسش را هم خودم می‌نویسم؛ کوتاه و با نام کسانی که در عکس هستند.",
+       "tr": "",
+       "de": "Ja, ein Foto von der Eröffnungsfeier. Die Bildunterschrift schreibe ich auch selbst – kurz und mit den Namen der Personen auf dem Bild."
       },
       {
        "fa": "یوناس: و این جمله‌ی آخر با «گفتنی است» چه نقشی دارد؟",
@@ -602,6 +1157,11 @@
        "fa": "یوناس: پس هرم وارونه‌ای که در کلاس خواندیم، واقعا در عمل هم به کار می‌رود!",
        "tr": "",
        "de": "Die umgekehrte Pyramide, die wir im Kurs gelesen haben, wird also wirklich in der Praxis verwendet!"
+      },
+      {
+       "fa": "لیلا: دقیقا. حالا اگر بخواهی، خودت تیتر خبر بعدی را بنویس؛ یک خبر کوتاه درباره‌ی پیش‌بینی هوای آخر هفته.",
+       "tr": "",
+       "de": "Genau. Wenn du willst, schreib jetzt selbst die Schlagzeile für die nächste Meldung – eine kurze Nachricht über die Wettervorhersage fürs Wochenende."
       }
      ]
     },
@@ -619,11 +1179,11 @@
        "richtig": 0
       },
       {
-       "frage": "Warum schreibt Leyla nicht immer ‹sagte›?",
+       "frage": "Wie hat Leyla die Zahl der Filme geprüft?",
        "optionen": [
-        "Der Text würde eintönig.",
-        "‹sagte› ist falsch.",
-        "Der Chefredakteur verbietet es."
+        "Sie hat beim Festivalsekretariat angerufen.",
+        "Sie hat sie geschätzt.",
+        "Sie hat sie aus sozialen Medien übernommen."
        ],
        "richtig": 0
       },
@@ -661,7 +1221,7 @@
        "de": "Guten Morgen, Jonas! Hast du die heutige Schlagzeile gesehen? ‹Starker Temperaturrückgang ab morgen›. Zieh lieber eine Jacke an."
       },
       {
-       "fa": "یوناس: صبح بخیر! من خبرها را بیشتر در گوشی می‌خوانم. شما هنوز هر روز روزنامه می‌خرید؟",
+       "fa": "یوناس: صبح بخیر! من خبر‌ها را بیشتر در گوشی می‌خوانم. شما هنوز هر روز روزنامه می‌خرید؟",
        "tr": "",
        "de": "Guten Morgen! Ich lese Nachrichten meist auf dem Handy. Kaufen Sie immer noch jeden Tag eine Zeitung?"
       },
@@ -671,12 +1231,12 @@
        "de": "Seit vierzig Jahren kaufe ich jeden Tag eine Zeitung. Der Geruch des Papiers gehört für mich zum Morgen."
       },
       {
-       "fa": "یوناس: ولی در گوشی خبرها سریع‌تر می‌رسند. خبر افتتاح خط جدید مترو را من دیشب خواندم.",
+       "fa": "یوناس: ولی در گوشی خبر‌ها سریع‌تر می‌رسند. خبر افتتاح خط جدید مترو را من دیشب خواندم.",
        "tr": "",
        "de": "Aber auf dem Handy kommen die Nachrichten schneller. Die Meldung über die Eröffnung der neuen U-Bahn-Linie habe ich gestern Abend gelesen."
       },
       {
-       "fa": "آقای رحیمی: سریع‌تر، بله. اما به نظر من در شبکه‌های اجتماعی خیلی چیزها منبع روشنی ندارند.",
+       "fa": "آقای رحیمی: سریع‌تر، بله. اما به نظر من در شبکه‌های اجتماعی خیلی چیز‌ها منبع روشنی ندارند.",
        "tr": "",
        "de": "Schneller, ja. Aber meiner Meinung nach haben in den sozialen Medien viele Dinge keine klare Quelle."
       },
@@ -686,9 +1246,39 @@
        "de": "Da haben Sie recht. Ich schaue auch zuerst, laut wessen Bericht etwas ist."
       },
       {
+       "fa": "آقای رحیمی: روزنامه یک خوبی دیگر هم دارد: سردبیر تصمیم گرفته که کدام خبر مهم‌تر است. در گوشی همه‌چیز با هم می‌آید.",
+       "tr": "",
+       "de": "Die Zeitung hat noch einen Vorteil: Der Chefredakteur hat entschieden, welche Nachricht wichtiger ist. Auf dem Handy kommt alles durcheinander."
+      },
+      {
+       "fa": "یوناس: درست است. گاهی یک خبر کوچک در گوشی از یک خبر مهم هم بزرگ‌تر به نظر می‌رسد.",
+       "tr": "",
+       "de": "Stimmt. Manchmal wirkt auf dem Handy eine kleine Meldung größer als eine wichtige."
+      },
+      {
+       "fa": "آقای رحیمی: من ساعت هفت صبح هم همیشه اخبار رادیو را گوش می‌دهم. جمله‌هایش کوتاه است و برای زبان‌آموز‌ها هم خوب است.",
+       "tr": "",
+       "de": "Um sieben Uhr morgens höre ich außerdem immer die Radionachrichten. Die Sätze sind kurz, und für Sprachlernende sind sie auch gut."
+      },
+      {
+       "fa": "یوناس: من یک پادکست خبری با سرعت آهسته پیدا کرده‌ام. هر روز ده دقیقه گوش می‌دهم و واژه‌های تازه را یادداشت می‌کنم.",
+       "tr": "",
+       "de": "Ich habe einen Nachrichtenpodcast in langsamem Tempo gefunden. Ich höre jeden Tag zehn Minuten und notiere mir die neuen Wörter."
+      },
+      {
        "fa": "آقای رحیمی: آفرین! و یک توصیه‌ی معلمانه: صفحه‌ی ورزشی را هم بخوان. زبانش ساده‌تر است و برای تمرین عالی است.",
        "tr": "",
        "de": "Bravo! Und ein Rat vom alten Lehrer: Lies auch die Sportseite. Ihre Sprache ist einfacher und ideal zum Üben."
+      },
+      {
+       "fa": "یوناس: شما خودتان در روزنامه اول کدام صفحه را می‌خوانید؟",
+       "tr": "",
+       "de": "Und welche Seite lesen Sie selbst in der Zeitung zuerst?"
+      },
+      {
+       "fa": "آقای رحیمی: اول جدول کلمات متقاطع را حل می‌کنم و بعد خبر‌ها را می‌خوانم. جدول هم برای یاد گرفتن واژه مفید است.",
+       "tr": "",
+       "de": "Zuerst löse ich das Kreuzworträtsel, dann lese ich die Nachrichten. Auch das Rätsel ist nützlich, um Wörter zu lernen."
       },
       {
        "fa": "یوناس: فکر خوبی است. فردا روزنامه را از شما قرض می‌گیرم. روز خوش!",
@@ -708,7 +1298,7 @@
        "de": "Guten Morgen, Jonas! Hast du die heutige Schlagzeile gesehen? ‹Starker Temperaturrückgang ab morgen›. Zieh lieber eine Jacke an."
       },
       {
-       "fa": "یوناس: صبح بخیر! من خبرها را بیشتر در گوشی می‌خوانم. شما هنوز هر روز روزنامه می‌خرید؟",
+       "fa": "یوناس: صبح بخیر! من خبر‌ها را بیشتر در گوشی می‌خوانم. شما هنوز هر روز روزنامه می‌خرید؟",
        "tr": "",
        "de": "Guten Morgen! Ich lese Nachrichten meist auf dem Handy. Kaufen Sie immer noch jeden Tag eine Zeitung?"
       },
@@ -718,12 +1308,12 @@
        "de": "Seit vierzig Jahren kaufe ich jeden Tag eine Zeitung. Der Geruch des Papiers gehört für mich zum Morgen."
       },
       {
-       "fa": "یوناس: ولی در گوشی خبرها سریع‌تر می‌رسند. خبر افتتاح خط جدید مترو را من دیشب خواندم.",
+       "fa": "یوناس: ولی در گوشی خبر‌ها سریع‌تر می‌رسند. خبر افتتاح خط جدید مترو را من دیشب خواندم.",
        "tr": "",
        "de": "Aber auf dem Handy kommen die Nachrichten schneller. Die Meldung über die Eröffnung der neuen U-Bahn-Linie habe ich gestern Abend gelesen."
       },
       {
-       "fa": "آقای رحیمی: سریع‌تر، بله. اما به نظر من در شبکه‌های اجتماعی خیلی چیزها منبع روشنی ندارند.",
+       "fa": "آقای رحیمی: سریع‌تر، بله. اما به نظر من در شبکه‌های اجتماعی خیلی چیز‌ها منبع روشنی ندارند.",
        "tr": "",
        "de": "Schneller, ja. Aber meiner Meinung nach haben in den sozialen Medien viele Dinge keine klare Quelle."
       },
@@ -733,9 +1323,39 @@
        "de": "Da haben Sie recht. Ich schaue auch zuerst, laut wessen Bericht etwas ist."
       },
       {
+       "fa": "آقای رحیمی: روزنامه یک خوبی دیگر هم دارد: سردبیر تصمیم گرفته که کدام خبر مهم‌تر است. در گوشی همه‌چیز با هم می‌آید.",
+       "tr": "",
+       "de": "Die Zeitung hat noch einen Vorteil: Der Chefredakteur hat entschieden, welche Nachricht wichtiger ist. Auf dem Handy kommt alles durcheinander."
+      },
+      {
+       "fa": "یوناس: درست است. گاهی یک خبر کوچک در گوشی از یک خبر مهم هم بزرگ‌تر به نظر می‌رسد.",
+       "tr": "",
+       "de": "Stimmt. Manchmal wirkt auf dem Handy eine kleine Meldung größer als eine wichtige."
+      },
+      {
+       "fa": "آقای رحیمی: من ساعت هفت صبح هم همیشه اخبار رادیو را گوش می‌دهم. جمله‌هایش کوتاه است و برای زبان‌آموز‌ها هم خوب است.",
+       "tr": "",
+       "de": "Um sieben Uhr morgens höre ich außerdem immer die Radionachrichten. Die Sätze sind kurz, und für Sprachlernende sind sie auch gut."
+      },
+      {
+       "fa": "یوناس: من یک پادکست خبری با سرعت آهسته پیدا کرده‌ام. هر روز ده دقیقه گوش می‌دهم و واژه‌های تازه را یادداشت می‌کنم.",
+       "tr": "",
+       "de": "Ich habe einen Nachrichtenpodcast in langsamem Tempo gefunden. Ich höre jeden Tag zehn Minuten und notiere mir die neuen Wörter."
+      },
+      {
        "fa": "آقای رحیمی: آفرین! و یک توصیه‌ی معلمانه: صفحه‌ی ورزشی را هم بخوان. زبانش ساده‌تر است و برای تمرین عالی است.",
        "tr": "",
        "de": "Bravo! Und ein Rat vom alten Lehrer: Lies auch die Sportseite. Ihre Sprache ist einfacher und ideal zum Üben."
+      },
+      {
+       "fa": "یوناس: شما خودتان در روزنامه اول کدام صفحه را می‌خوانید؟",
+       "tr": "",
+       "de": "Und welche Seite lesen Sie selbst in der Zeitung zuerst?"
+      },
+      {
+       "fa": "آقای رحیمی: اول جدول کلمات متقاطع را حل می‌کنم و بعد خبر‌ها را می‌خوانم. جدول هم برای یاد گرفتن واژه مفید است.",
+       "tr": "",
+       "de": "Zuerst löse ich das Kreuzworträtsel, dann lese ich die Nachrichten. Auch das Rätsel ist nützlich, um Wörter zu lernen."
       },
       {
        "fa": "یوناس: فکر خوبی است. فردا روزنامه را از شما قرض می‌گیرم. روز خوش!",
@@ -749,29 +1369,369 @@
      "titel": "Hast du es verstanden?",
      "fragen": [
       {
-       "frage": "Welche Schlagzeile zeigt Herr Rahimi?",
+       "frage": "Welchen Vorteil der Zeitung nennt Herr Rahimi?",
        "optionen": [
-        "Starker Temperaturrückgang ab morgen",
-        "Eröffnung einer neuen U-Bahn-Linie",
-        "Beginn des Filmfestivals"
+        "Der Chefredakteur hat die Nachrichten gewichtet.",
+        "Sie ist schneller als das Handy.",
+        "Sie hat mehr Fotos."
        ],
        "richtig": 0
       },
       {
-       "frage": "Was kritisiert Herr Rahimi an sozialen Medien?",
+       "frage": "Wie übt Jonas mit Nachrichten?",
        "optionen": [
-        "Viele Dinge haben keine klare Quelle.",
-        "Sie sind zu langsam.",
-        "Sie haben keine Fotos."
+        "mit einem langsamen Nachrichtenpodcast",
+        "mit Fernsehnachrichten",
+        "mit einer englischen Zeitung"
        ],
        "richtig": 0
       },
       {
-       "frage": "Welchen Tipp gibt Herr Rahimi?",
+       "frage": "Was liest Herr Rahimi in der Zeitung zuerst?",
        "optionen": [
-        "die Sportseite zu lesen",
-        "keine Zeitung mehr zu kaufen",
-        "nur Schlagzeilen zu lesen"
+        "das Kreuzworträtsel",
+        "die Sportseite",
+        "die Wettervorhersage"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d3",
+   "titel": "Dialog: Eine Meldung verbessern",
+   "vorschau": "Eine Meldung verbessern",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Jonas hat für den Persischkurs eine kurze Meldung über einen Sprachtauschabend an der Fakultät geschrieben. Leyla liest sie mit ihm durch.</p>"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "یوناس: لیلا، برای کلاس یک خبر کوتاه نوشته‌ام، درباره‌ی شب تبادل زبان در دانشکده. می‌شود نگاهی بیندازی؟",
+       "tr": "",
+       "de": "Leyla, ich habe für den Kurs eine kurze Meldung über den Sprachtauschabend an der Fakultät geschrieben. Kannst du mal draufschauen?"
+      },
+      {
+       "fa": "لیلا: حتما. بخوانش.",
+       "tr": "",
+       "de": "Natürlich. Lies sie vor."
+      },
+      {
+       "fa": "یوناس: تیتر: «شب تبادل زبان در دانشکده‌ی ادبیات برگزار شد.»",
+       "tr": "",
+       "de": "Schlagzeile: ‹Sprachtauschabend an der Literaturfakultät fand statt.›"
+      },
+      {
+       "fa": "لیلا: خوب است، ولی این یک جمله‌ی کامل است. تیتر خبری معمولا فعل ندارد. چطور است بنویسی «برگزاری شب تبادل زبان در دانشکده‌ی ادبیات»؟",
+       "tr": "",
+       "de": "Gut, aber das ist ein vollständiger Satz. Eine Schlagzeile hat meist kein Verb. Wie wäre es mit ‹Sprachtauschabend an der Literaturfakultät›?"
+      },
+      {
+       "fa": "یوناس: آهان، فعل را به اسم تبدیل کنم. بعد لید: «دیروز حدود هشتاد دانشجوی ایرانی و خارجی در دانشکده جمع شدند تا با هم زبان تمرین کنند.»",
+       "tr": "",
+       "de": "Ach so, ich mache aus dem Verb ein Substantiv. Dann der Lead: ‹Gestern kamen etwa achtzig iranische und ausländische Studierende an der Fakultät zusammen, um gemeinsam Sprachen zu üben.›"
+      },
+      {
+       "fa": "لیلا: لیدت خوب است؛ چه کسی، چه کاری، کجا و کی را دارد. فقط به جای «دیروز» بنویس «روز گذشته». در خبر این شکل رایج‌تر است.",
+       "tr": "",
+       "de": "Dein Lead ist gut: Er enthält wer, was, wo und wann. Schreib nur statt ‹gestern› ‹am vergangenen Tag›. In Meldungen ist diese Form üblicher."
+      },
+      {
+       "fa": "یوناس: بعد نوشته‌ام: «خانم دکتر صادقی گفت که این برنامه هر ماه تکرار می‌شود. او گفت که دانشجویان خیلی راضی بودند.»",
+       "tr": "",
+       "de": "Dann habe ich geschrieben: ‹Frau Dr. Sadeghi sagte, dass das Programm jeden Monat wiederholt wird. Sie sagte, dass die Studierenden sehr zufrieden waren.›"
+      },
+      {
+       "fa": "لیلا: اینجا دو بار «گفت» و یک بار «او» داری. جمله‌ی دوم را این‌طور بنویس: «وی افزود: دانشجویان از این برنامه بسیار راضی بودند.»",
+       "tr": "",
+       "de": "Hier hast du zweimal ‹sagte› und einmal ‹sie›. Schreib den zweiten Satz so: ‹Sie fügte hinzu: Die Studierenden waren mit dem Programm sehr zufrieden.›"
+      },
+      {
+       "fa": "یوناس: یعنی بعد از «افزود» دو نقطه می‌گذارم و «که» نمی‌آورم؟",
+       "tr": "",
+       "de": "Das heißt, nach ‹fügte hinzu› setze ich einen Doppelpunkt und kein ‹dass›?"
+      },
+      {
+       "fa": "لیلا: درست است. دکتر صادقی را هم بار اول با سمتش معرفی کن، مثلا «دکتر صادقی، استاد دانشکده و مسئول این برنامه».",
+       "tr": "",
+       "de": "Richtig. Und stell Dr. Sadeghi beim ersten Mal mit ihrer Funktion vor, etwa ‹Dr. Sadeghi, Professorin der Fakultät und Verantwortliche des Programms›."
+      },
+      {
+       "fa": "یوناس: آخر خبر هم نوشته‌ام که بعد از برنامه چای و شیرینی بود. لازم است؟",
+       "tr": "",
+       "de": "Am Ende habe ich noch geschrieben, dass es nach dem Programm Tee und Gebäck gab. Ist das nötig?"
+      },
+      {
+       "fa": "لیلا: اطلاعات کم‌اهمیتی است، پس جایش همان آخر است. می‌توانی آن را با «گفتنی است» شروع کنی.",
+       "tr": "",
+       "de": "Das ist eine weniger wichtige Information, also gehört sie ans Ende. Du kannst sie mit ‹es sei erwähnt› einleiten."
+      },
+      {
+       "fa": "یوناس: منبع هم لازم دارد؟ من خودم آنجا بودم.",
+       "tr": "",
+       "de": "Braucht sie auch eine Quelle? Ich war ja selbst dort."
+      },
+      {
+       "fa": "لیلا: پس بنویس «به گزارش خبرنگار ما». این‌طوری خواننده می‌داند اطلاعات از کجا آمده است. آفرین، خبر خوبی شد!",
+       "tr": "",
+       "de": "Dann schreib ‹Wie unser Reporter berichtet›. So wissen die Leser, woher die Information stammt. Bravo, das ist eine gute Meldung geworden!"
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "یوناس: لیلا، برای کلاس یک خبر کوتاه نوشته‌ام، درباره‌ی شب تبادل زبان در دانشکده. می‌شود نگاهی بیندازی؟",
+       "tr": "",
+       "de": "Leyla, ich habe für den Kurs eine kurze Meldung über den Sprachtauschabend an der Fakultät geschrieben. Kannst du mal draufschauen?"
+      },
+      {
+       "fa": "لیلا: حتما. بخوانش.",
+       "tr": "",
+       "de": "Natürlich. Lies sie vor."
+      },
+      {
+       "fa": "یوناس: تیتر: «شب تبادل زبان در دانشکده‌ی ادبیات برگزار شد.»",
+       "tr": "",
+       "de": "Schlagzeile: ‹Sprachtauschabend an der Literaturfakultät fand statt.›"
+      },
+      {
+       "fa": "لیلا: خوب است، ولی این یک جمله‌ی کامل است. تیتر خبری معمولا فعل ندارد. چطور است بنویسی «برگزاری شب تبادل زبان در دانشکده‌ی ادبیات»؟",
+       "tr": "",
+       "de": "Gut, aber das ist ein vollständiger Satz. Eine Schlagzeile hat meist kein Verb. Wie wäre es mit ‹Sprachtauschabend an der Literaturfakultät›?"
+      },
+      {
+       "fa": "یوناس: آهان، فعل را به اسم تبدیل کنم. بعد لید: «دیروز حدود هشتاد دانشجوی ایرانی و خارجی در دانشکده جمع شدند تا با هم زبان تمرین کنند.»",
+       "tr": "",
+       "de": "Ach so, ich mache aus dem Verb ein Substantiv. Dann der Lead: ‹Gestern kamen etwa achtzig iranische und ausländische Studierende an der Fakultät zusammen, um gemeinsam Sprachen zu üben.›"
+      },
+      {
+       "fa": "لیلا: لیدت خوب است؛ چه کسی، چه کاری، کجا و کی را دارد. فقط به جای «دیروز» بنویس «روز گذشته». در خبر این شکل رایج‌تر است.",
+       "tr": "",
+       "de": "Dein Lead ist gut: Er enthält wer, was, wo und wann. Schreib nur statt ‹gestern› ‹am vergangenen Tag›. In Meldungen ist diese Form üblicher."
+      },
+      {
+       "fa": "یوناس: بعد نوشته‌ام: «خانم دکتر صادقی گفت که این برنامه هر ماه تکرار می‌شود. او گفت که دانشجویان خیلی راضی بودند.»",
+       "tr": "",
+       "de": "Dann habe ich geschrieben: ‹Frau Dr. Sadeghi sagte, dass das Programm jeden Monat wiederholt wird. Sie sagte, dass die Studierenden sehr zufrieden waren.›"
+      },
+      {
+       "fa": "لیلا: اینجا دو بار «گفت» و یک بار «او» داری. جمله‌ی دوم را این‌طور بنویس: «وی افزود: دانشجویان از این برنامه بسیار راضی بودند.»",
+       "tr": "",
+       "de": "Hier hast du zweimal ‹sagte› und einmal ‹sie›. Schreib den zweiten Satz so: ‹Sie fügte hinzu: Die Studierenden waren mit dem Programm sehr zufrieden.›"
+      },
+      {
+       "fa": "یوناس: یعنی بعد از «افزود» دو نقطه می‌گذارم و «که» نمی‌آورم؟",
+       "tr": "",
+       "de": "Das heißt, nach ‹fügte hinzu› setze ich einen Doppelpunkt und kein ‹dass›?"
+      },
+      {
+       "fa": "لیلا: درست است. دکتر صادقی را هم بار اول با سمتش معرفی کن، مثلا «دکتر صادقی، استاد دانشکده و مسئول این برنامه».",
+       "tr": "",
+       "de": "Richtig. Und stell Dr. Sadeghi beim ersten Mal mit ihrer Funktion vor, etwa ‹Dr. Sadeghi, Professorin der Fakultät und Verantwortliche des Programms›."
+      },
+      {
+       "fa": "یوناس: آخر خبر هم نوشته‌ام که بعد از برنامه چای و شیرینی بود. لازم است؟",
+       "tr": "",
+       "de": "Am Ende habe ich noch geschrieben, dass es nach dem Programm Tee und Gebäck gab. Ist das nötig?"
+      },
+      {
+       "fa": "لیلا: اطلاعات کم‌اهمیتی است، پس جایش همان آخر است. می‌توانی آن را با «گفتنی است» شروع کنی.",
+       "tr": "",
+       "de": "Das ist eine weniger wichtige Information, also gehört sie ans Ende. Du kannst sie mit ‹es sei erwähnt› einleiten."
+      },
+      {
+       "fa": "یوناس: منبع هم لازم دارد؟ من خودم آنجا بودم.",
+       "tr": "",
+       "de": "Braucht sie auch eine Quelle? Ich war ja selbst dort."
+      },
+      {
+       "fa": "لیلا: پس بنویس «به گزارش خبرنگار ما». این‌طوری خواننده می‌داند اطلاعات از کجا آمده است. آفرین، خبر خوبی شد!",
+       "tr": "",
+       "de": "Dann schreib ‹Wie unser Reporter berichtet›. So wissen die Leser, woher die Information stammt. Bravo, das ist eine gute Meldung geworden!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Was ändert Leyla an Jonas’ Schlagzeile?",
+       "optionen": [
+        "Sie macht aus dem Verb ein Substantiv.",
+        "Sie fügt ein Verb hinzu.",
+        "Sie macht sie länger."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was soll Jonas statt ‹دیروز› schreiben?",
+       "optionen": [
+        "روز گذشته",
+        "سال جاری",
+        "گفتنی است"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Welche Quellenangabe schlägt Leyla vor?",
+       "optionen": [
+        "‹Wie unser Reporter berichtet›",
+        "‹Laut sozialen Medien›",
+        "gar keine"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "a",
+   "titel": "Gut zu wissen",
+   "vorschau": "💡",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Die erste persische Zeitung",
+     "text": "Kurzer Infotext – tippe eine Zeile an für die Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "نخستین روزنامه‌ی فارسی در سال ۱۸۳۷ میلادی در تهران منتشر شد.",
+       "tr": "",
+       "de": "Die erste persische Zeitung erschien 1837 in Teheran."
+      },
+      {
+       "fa": "نام آن «کاغذ اخبار» بود و میرزا صالح شیرازی آن را منتشر می‌کرد.",
+       "tr": "",
+       "de": "Sie hieß ‹Kaghaz-e Akhbar› (Nachrichtenblatt) und wurde von Mirza Saleh Schirazi herausgegeben."
+      },
+      {
+       "fa": "میرزا صالح چند سال در انگلستان درس خوانده و در آنجا با روزنامه‌های انگلیسی آشنا شده بود.",
+       "tr": "",
+       "de": "Mirza Saleh hatte einige Jahre in England studiert und dort die englischen Zeitungen kennengelernt."
+      },
+      {
+       "fa": "این روزنامه ماهی یک بار منتشر می‌شد و هم خبر‌های داخلی و هم خبر‌های خارجی را گزارش می‌داد.",
+       "tr": "",
+       "de": "Die Zeitung erschien einmal im Monat und berichtete sowohl über Inlands- als auch über Auslandsnachrichten."
+      },
+      {
+       "fa": "واژه‌ی «روزنامه» پیش از آن هم در فارسی وجود داشت، اما در متن‌های قدیمی بیشتر به معنای دفتر یادداشت‌های روزانه به کار می‌رفت.",
+       "tr": "",
+       "de": "Das Wort ‹ruzname› gab es im Persischen schon vorher, doch in älteren Texten bezeichnete es meist ein Buch für tägliche Aufzeichnungen."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Warum die Pyramide auf dem Kopf steht",
+     "text": "Kurzer Infotext – tippe eine Zeile an für die Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "درباره‌ی پیدایش «هرم وارونه» روایت مشهوری وجود دارد.",
+       "tr": "",
+       "de": "Über die Entstehung der ‹umgekehrten Pyramide› gibt es eine bekannte Erzählung."
+      },
+      {
+       "fa": "می‌گویند در قرن نوزدهم خبرنگاران خبر‌هایشان را با تلگراف می‌فرستادند و ارتباط گاهی در میانه‌ی کار قطع می‌شد.",
+       "tr": "",
+       "de": "Im 19. Jahrhundert schickten Reporter ihre Meldungen per Telegraf, und die Verbindung brach angeblich manchmal mitten in der Übertragung ab."
+      },
+      {
+       "fa": "به همین دلیل یاد گرفتند مهم‌ترین اطلاعات را در همان جمله‌های اول بفرستند.",
+       "tr": "",
+       "de": "Deshalb lernten sie, die wichtigsten Informationen gleich in den ersten Sätzen zu übermitteln."
+      },
+      {
+       "fa": "مورخان رسانه درباره‌ی درستی کامل این روایت هم‌نظر نیستند، اما این شیوه از اواخر قرن نوزدهم در روزنامه‌ها رایج شد.",
+       "tr": "",
+       "de": "Medienhistoriker sind sich nicht einig, ob diese Erzählung ganz stimmt, doch die Methode setzte sich ab dem späten 19. Jahrhundert in den Zeitungen durch."
+      },
+      {
+       "fa": "امروز هم که بسیاری از خوانندگان فقط تیتر و لید را می‌خوانند، این ساختار هنوز کاربرد دارد.",
+       "tr": "",
+       "de": "Auch heute, da viele Leser nur Schlagzeile und Lead lesen, ist diese Struktur noch nützlich."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Nachrichtenwerte",
+     "text": "Kurzer Infotext – tippe eine Zeile an für die Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "در دانشکده‌های روزنامه‌نگاری به دانشجویان «ارزش‌های خبری» را آموزش می‌دهند.",
+       "tr": "",
+       "de": "An Journalistenschulen lernen die Studierenden die ‹Nachrichtenwerte›."
+      },
+      {
+       "fa": "تازگی: خبر باید جدید باشد؛ خبر دیروز برای یک سایت خبری امروز کهنه است.",
+       "tr": "",
+       "de": "Aktualität: Eine Nachricht muss neu sein; die Meldung von gestern ist für eine Nachrichtenwebsite heute schon alt."
+      },
+      {
+       "fa": "نزدیکی: رویدادی که به محل زندگی خواننده نزدیک است، برای او مهم‌تر است.",
+       "tr": "",
+       "de": "Nähe: Ein Ereignis in der Nähe des Wohnorts ist für die Leser wichtiger."
+      },
+      {
+       "fa": "شهرت: هرچه آدم‌های یک رویداد مشهورتر باشند، خبر بیشتر خوانده می‌شود.",
+       "tr": "",
+       "de": "Bekanntheit: Je bekannter die beteiligten Personen sind, desto mehr wird die Meldung gelesen."
+      },
+      {
+       "fa": "استثنا: چیزی که هر روز اتفاق نمی‌افتد، مثل برف در تابستان، توجه خواننده را جلب می‌کند.",
+       "tr": "",
+       "de": "Ausnahme: Was nicht jeden Tag passiert, etwa Schnee im Sommer, weckt die Aufmerksamkeit der Leser."
+      },
+      {
+       "fa": "هرچه رویدادی ارزش‌های خبری بیشتری داشته باشد، احتمال انتشارش بیشتر است.",
+       "tr": "",
+       "de": "Je mehr Nachrichtenwerte ein Ereignis hat, desto wahrscheinlicher wird darüber berichtet."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zu den Infotexten",
+     "fragen": [
+      {
+       "frage": "Wer gab die erste persische Zeitung heraus?",
+       "optionen": [
+        "Mirza Saleh Schirazi",
+        "ein englischer Journalist",
+        "die Nachrichtenagentur Reuters"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Welche Erklärung gibt es für die umgekehrte Pyramide?",
+       "optionen": [
+        "Telegrafenverbindungen konnten abbrechen.",
+        "Papier war zu teuer.",
+        "Leser lasen von unten nach oben."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Welcher Nachrichtenwert ist gemeint, wenn ein Ereignis in der eigenen Stadt passiert?",
+       "optionen": [
+        "Nähe",
+        "Bekanntheit",
+        "Ausnahme"
        ],
        "richtig": 0
       }
@@ -836,29 +1796,29 @@
      "links": "de",
      "paare": [
       {
-       "fa": "طبق این خبر …",
-       "tr": "",
-       "de": "Laut dieser Meldung …"
-      },
-      {
-       "fa": "هنوز روشن نیست که …",
-       "tr": "",
-       "de": "Es ist noch unklar, ob/dass …"
-      },
-      {
-       "fa": "جای سؤال است که …",
-       "tr": "",
-       "de": "Es ist fraglich, ob …"
-      },
-      {
        "fa": "مهم‌ترین نکته‌ی خبر این است که …",
        "tr": "",
        "de": "Der wichtigste Punkt der Meldung ist, dass …"
       },
       {
+       "fa": "طبق این خبر …",
+       "tr": "",
+       "de": "Laut dieser Meldung …"
+      },
+      {
        "fa": "به نظر می‌رسد که …",
        "tr": "",
        "de": "Es scheint, dass …"
+      },
+      {
+       "fa": "به طور خلاصه، خبر درباره‌ی … است.",
+       "tr": "",
+       "de": "Kurz gesagt geht es in der Meldung um …"
+      },
+      {
+       "fa": "در این گزارش آمده است که …",
+       "tr": "",
+       "de": "In diesem Bericht heißt es, dass …"
       },
       {
        "fa": "منبع این خبر … است.",
@@ -875,8 +1835,28 @@
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
+        "Es ist noch unklar, ob/dass …",
+        "Die Quelle dieser Meldung ist …",
+        "In diesem Bericht heißt es, dass …"
+       ],
+       "richtig": 0,
+       "fa": "هنوز روشن نیست که …"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Der wichtigste Punkt der Meldung ist, dass …",
+        "Kurz gesagt geht es in der Meldung um …",
+        "In diesem Bericht heißt es, dass …"
+       ],
+       "richtig": 0,
+       "fa": "مهم‌ترین نکته‌ی خبر این است که …"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
         "Es ist fraglich, ob …",
-        "Es scheint, dass …",
+        "Es ist noch unklar, ob/dass …",
         "Der wichtigste Punkt der Meldung ist, dass …"
        ],
        "richtig": 0,
@@ -885,19 +1865,19 @@
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
-        "Es ist noch unklar, ob/dass …",
-        "Laut dieser Meldung …",
-        "Der wichtigste Punkt der Meldung ist, dass …"
+        "Die Quelle dieser Meldung ist …",
+        "Es ist fraglich, ob …",
+        "Es ist noch unklar, ob/dass …"
        ],
        "richtig": 0,
-       "fa": "هنوز روشن نیست که …"
+       "fa": "منبع این خبر … است."
       },
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
         "Kurz gesagt geht es in der Meldung um …",
-        "Laut dieser Meldung …",
-        "Der wichtigste Punkt der Meldung ist, dass …"
+        "Es ist noch unklar, ob/dass …",
+        "Es scheint, dass …"
        ],
        "richtig": 0,
        "fa": "به طور خلاصه، خبر درباره‌ی … است."
@@ -905,32 +1885,12 @@
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
-        "Der wichtigste Punkt der Meldung ist, dass …",
-        "Es ist noch unklar, ob/dass …",
+        "Es scheint, dass …",
+        "In diesem Bericht heißt es, dass …",
         "Laut dieser Meldung …"
        ],
        "richtig": 0,
-       "fa": "مهم‌ترین نکته‌ی خبر این است که …"
-      },
-      {
-       "frage": "Was bedeutet der Satz?",
-       "optionen": [
-        "Laut dieser Meldung …",
-        "Der wichtigste Punkt der Meldung ist, dass …",
-        "In diesem Bericht heißt es, dass …"
-       ],
-       "richtig": 0,
-       "fa": "طبق این خبر …"
-      },
-      {
-       "frage": "Was bedeutet der Satz?",
-       "optionen": [
-        "In diesem Bericht heißt es, dass …",
-        "Es ist fraglich, ob …",
-        "Die Quelle dieser Meldung ist …"
-       ],
-       "richtig": 0,
-       "fa": "در این گزارش آمده است که …"
+       "fa": "به نظر می‌رسد که …"
       }
      ]
     },

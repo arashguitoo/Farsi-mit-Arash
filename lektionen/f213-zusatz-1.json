@@ -251,6 +251,54 @@
        "a": "nachhaltig"
       },
       {
+       "fa": "راهنما",
+       "a": "Reiseleiter/in, Guide"
+      },
+      {
+       "fa": "شتر",
+       "a": "Kamel"
+      },
+      {
+       "fa": "چادر",
+       "a": "Zelt"
+      },
+      {
+       "fa": "قطب‌نما",
+       "a": "Kompass"
+      },
+      {
+       "fa": "کهکشان",
+       "a": "Galaxie (کهکشان راه شیری – Milchstraße)"
+      },
+      {
+       "fa": "سراب",
+       "a": "Fata Morgana, Luftspiegelung"
+      },
+      {
+       "fa": "نخلستان",
+       "a": "Palmenhain"
+      },
+      {
+       "fa": "بادگیر",
+       "a": "Windturm"
+      },
+      {
+       "fa": "ضدآفتاب",
+       "a": "Sonnencreme"
+      },
+      {
+       "fa": "کیسه‌خواب",
+       "a": "Schlafsack"
+      },
+      {
+       "fa": "آب آشامیدنی",
+       "a": "Trinkwasser"
+      },
+      {
+       "fa": "خنک",
+       "a": "kühl"
+      },
+      {
        "fa": "افزایش یافتن",
        "a": "zunehmen, steigen"
       },
@@ -281,40 +329,40 @@
      "links": "emoji",
      "paare": [
       {
-       "fa": "سد",
+       "fa": "چادر",
        "tr": "",
-       "de": "Staudamm",
-       "emoji": "🧱"
+       "de": "Zelt",
+       "emoji": "⛺"
       },
       {
-       "fa": "طوفان شن",
+       "fa": "تغییرات اقلیمی",
        "tr": "",
-       "de": "Sandsturm",
-       "emoji": "🌪️"
+       "de": "Klimawandel",
+       "emoji": "🔄"
       },
       {
-       "fa": "شن",
+       "fa": "موج گرما",
        "tr": "",
-       "de": "Sand",
-       "emoji": "⏳"
+       "de": "Hitzewelle",
+       "emoji": "🥵"
       },
       {
-       "fa": "بارش",
+       "fa": "کهکشان",
        "tr": "",
-       "de": "Niederschlag",
-       "emoji": "🌧️"
+       "de": "Galaxie (کهکشان راه شیری – Milchstraße)",
+       "emoji": "🌌"
       },
       {
-       "fa": "خشکسالی",
+       "fa": "خشک",
        "tr": "",
-       "de": "Dürre",
-       "emoji": "🥀"
+       "de": "trocken",
+       "emoji": "🌵"
       },
       {
-       "fa": "قنات",
+       "fa": "آب زیرزمینی",
        "tr": "",
-       "de": "Qanat (unterirdischer Wasserkanal)",
-       "emoji": "🕳️"
+       "de": "Grundwasser",
+       "emoji": "💧"
       }
      ],
      "titel": "Memory"
@@ -324,40 +372,40 @@
      "links": "de",
      "paare": [
       {
-       "fa": "منابع آبی",
+       "fa": "خشک",
        "tr": "",
-       "de": "Wasserressourcen",
-       "emoji": "🌊"
+       "de": "trocken",
+       "emoji": "🌵"
+      },
+      {
+       "fa": "کویر",
+       "tr": "",
+       "de": "Salzwüste",
+       "emoji": "🧂"
+      },
+      {
+       "fa": "ضدآفتاب",
+       "tr": "",
+       "de": "Sonnencreme",
+       "emoji": "🧴"
+      },
+      {
+       "fa": "صرفه‌جویی",
+       "tr": "",
+       "de": "Einsparung, Sparsamkeit",
+       "emoji": "🐷"
+      },
+      {
+       "fa": "نخلستان",
+       "tr": "",
+       "de": "Palmenhain",
+       "emoji": "🌴"
       },
       {
        "fa": "قنات",
        "tr": "",
        "de": "Qanat (unterirdischer Wasserkanal)",
        "emoji": "🕳️"
-      },
-      {
-       "fa": "تغییرات اقلیمی",
-       "tr": "",
-       "de": "Klimawandel",
-       "emoji": "🔄"
-      },
-      {
-       "fa": "پایدار",
-       "tr": "",
-       "de": "nachhaltig",
-       "emoji": "♻️"
-      },
-      {
-       "fa": "کشاورزی",
-       "tr": "",
-       "de": "Landwirtschaft",
-       "emoji": "🌾"
-      },
-      {
-       "fa": "گرمایش زمین",
-       "tr": "",
-       "de": "Erderwärmung",
-       "emoji": "🌍"
       }
      ],
      "titel": "Memory: Wort & Bedeutung"
@@ -377,8 +425,8 @@
        "frage": "<span class='fa'>در این ___ تقریبا هیچ گیاهی رشد نمی‌کند.</span><br><span class='mini'>In dieser Wüste wächst fast keine Pflanze.</span>",
        "optionen": [
         "بیابان",
-        "بارش",
-        "پایدار"
+        "کشاورزی",
+        "گازهای گلخانه‌ای"
        ],
        "richtig": 0,
        "optFa": true,
@@ -389,8 +437,8 @@
        "frage": "<span class='fa'>این ___ عجیب حاصل هزاران سال فرسایش است.</span><br><span class='mini'>Dieser seltsame Kalut ist das Ergebnis jahrtausendelanger Erosion.</span>",
        "optionen": [
         "کلوت",
-        "پایدار",
-        "ریزگرد"
+        "صرفه‌جویی",
+        "خنک"
        ],
        "richtig": 0,
        "optFa": true,
@@ -401,8 +449,8 @@
        "frage": "<span class='fa'>دمای سطح زمین را با یک ___ از فضا اندازه گرفتند.</span><br><span class='mini'>Man hat die Bodentemperatur mit einem Satelliten aus dem All gemessen.</span>",
        "optionen": [
         "ماهواره",
-        "خشک",
-        "قنات"
+        "فرسایش",
+        "منابع آبی"
        ],
        "richtig": 0,
        "optFa": true,
@@ -413,26 +461,20 @@
        "frage": "<span class='fa'>سه سال است که باران نباریده؛ کشاورزان از ___ رنج می‌برند.</span><br><span class='mini'>Seit drei Jahren hat es nicht geregnet; die Bauern leiden unter der Dürre.</span>",
        "optionen": [
         "خشکسالی",
-        "گرمایش زمین",
-        "کشاورزی"
+        "ریزگرد",
+        "قطب‌نما"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
        "erkl": "<span class='fa'>سه سال است که باران نباریده؛ کشاورزان از خشکسالی رنج می‌برند.</span>"
-      }
-     ]
-    },
-    {
-     "typ": "wahl",
-     "titel": "Welches Wort passt?",
-     "fragen": [
+      },
       {
        "frage": "<span class='fa'>امروز به خاطر ___ بهتر است ماسک بزنید.</span><br><span class='mini'>Heute sollte man wegen des Feinstaubs besser eine Maske tragen.</span>",
        "optionen": [
         "ریزگرد",
-        "گردشگر",
-        "آب زیرزمینی"
+        "سوزان",
+        "گازهای گلخانه‌ای"
        ],
        "richtig": 0,
        "optFa": true,
@@ -443,20 +485,26 @@
        "frage": "<span class='fa'>___ در دشت تهران به ساختمان‌ها و جاده‌ها آسیب می‌زند.</span><br><span class='mini'>Die Bodenabsenkung in der Teheraner Ebene beschädigt Gebäude und Straßen.</span>",
        "optionen": [
         "فرونشست زمین",
-        "گردشگر",
-        "سوزان"
+        "تغییرات اقلیمی",
+        "ضدآفتاب"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
        "erkl": "<span class='fa'>فرونشست زمین در دشت تهران به ساختمان‌ها و جاده‌ها آسیب می‌زند.</span>"
-      },
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
       {
        "frage": "<span class='fa'>در روستاهای کویری، ___ قرن‌ها آب را از دل کوه می‌آورد.</span><br><span class='mini'>In den Wüstendörfern brachte der Qanat jahrhundertelang Wasser aus dem Inneren der Berge.</span>",
        "optionen": [
         "قنات",
-        "سازگاری",
-        "ماهواره"
+        "میانگین",
+        "طوفان شن"
        ],
        "richtig": 0,
        "optFa": true,
@@ -467,13 +515,61 @@
        "frage": "<span class='fa'>با ___ در مصرف آب، هر خانواده می‌تواند کمک کند.</span><br><span class='mini'>Durch Sparsamkeit beim Wasserverbrauch kann jede Familie helfen.</span>",
        "optionen": [
         "صرفه‌جویی",
-        "پایدار",
-        "ماهواره"
+        "راهنما",
+        "چادر"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
        "erkl": "<span class='fa'>با صرفه‌جویی در مصرف آب، هر خانواده می‌تواند کمک کند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>___ ما بیست سال است که گردشگران را به بیابان می‌برد.</span><br><span class='mini'>Unser Reiseleiter führt seit zwanzig Jahren Touristen in die Wüste.</span>",
+       "optionen": [
+        "راهنما",
+        "ریزگرد",
+        "خنک"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>راهنما ما بیست سال است که گردشگران را به بیابان می‌برد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>در بیابان هر نفر باید روزانه چند لیتر ___ همراه داشته باشد.</span><br><span class='mini'>In der Wüste sollte jede Person täglich mehrere Liter Trinkwasser dabeihaben.</span>",
+       "optionen": [
+        "آب آشامیدنی",
+        "چاه",
+        "سراب"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>در بیابان هر نفر باید روزانه چند لیتر آب آشامیدنی همراه داشته باشد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>آنچه روی جاده‌ی داغ مثل آب به نظر می‌رسید، فقط یک ___ بود.</span><br><span class='mini'>Was auf der heißen Straße wie Wasser aussah, war nur eine Fata Morgana.</span>",
+       "optionen": [
+        "سراب",
+        "کیسه‌خواب",
+        "شتر"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>آنچه روی جاده‌ی داغ مثل آب به نظر می‌رسید، فقط یک سراب بود.</span>"
+      },
+      {
+       "frage": "<span class='fa'>شب‌ها در کویر بدون یک ___ گرم نمی‌توان راحت خوابید.</span><br><span class='mini'>Nachts kann man in der Wüste ohne warmen Schlafsack nicht gut schlafen.</span>",
+       "optionen": [
+        "کیسه‌خواب",
+        "راهنما",
+        "کلوت"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>شب‌ها در کویر بدون یک کیسه‌خواب گرم نمی‌توان راحت خوابید.</span>"
       }
      ]
     }
@@ -489,46 +585,6 @@
      "titel": "Baue den Satz",
      "trenner": " ",
      "woerter": [
-      {
-       "fa": "پس پیشنهاد می‌کنم یک قانون بگذاریم: دوش پنج‌دقیقه‌ای! من حاضرم.",
-       "tr": "",
-       "de": "Dann schlage ich eine Regel vor: Fünf-Minuten-Dusche! Ich bin dabei.",
-       "teile": [
-        "پس",
-        "پیشنهاد",
-        "می‌کنم",
-        "یک",
-        "قانون",
-        "بگذاریم",
-        "دوش",
-        "پنج‌دقیقه‌ای",
-        "من",
-        "حاضرم"
-       ],
-       "extra": [
-        "زمین"
-       ]
-      },
-      {
-       "fa": "پس هر دو سازگار می‌شویم؛ شما با تعمیرکار، من با دوش کوتاه!",
-       "tr": "",
-       "de": "Dann passen wir uns beide an – Sie mit dem Handwerker, ich mit der kurzen Dusche!",
-       "teile": [
-        "پس",
-        "هر",
-        "دو",
-        "سازگار",
-        "می‌شویم؛",
-        "شما",
-        "با",
-        "تعمیرکار",
-        "من",
-        "با",
-        "دوش",
-        "کوتاه"
-       ],
-       "extra": []
-      },
       {
        "fa": "این بیابان را یکی از گرم‌ترین نقاط کره‌ی زمین می‌دانند.",
        "tr": "",
@@ -546,41 +602,101 @@
         "می‌دانند"
        ],
        "extra": [
-        "یک"
+        "آیا"
        ]
       },
       {
-       "fa": "آیا فقط از کلوت‌ها بازدید خواهیم کرد؟",
+       "fa": "موضوع جالبی است. از همین حالا شروع می‌کنم. ممنون، خانم دکتر.",
        "tr": "",
-       "de": "Werden wir nur die Kaluts besichtigen?",
+       "de": "Ein interessantes Thema. Ich fange gleich damit an. Danke, Frau Doktor.",
        "teile": [
-        "آیا",
-        "فقط",
+        "موضوع",
+        "جالبی",
+        "است",
         "از",
-        "کلوت‌ها",
-        "بازدید",
+        "همین",
+        "حالا",
+        "شروع",
+        "می‌کنم",
+        "ممنون",
+        "خانم",
+        "دکتر"
+       ],
+       "extra": [
+        "امروز"
+       ]
+      },
+      {
+       "fa": "یعنی باید مرتب آنها را شست؟ این که خودش آب می‌خواهد!",
+       "tr": "",
+       "de": "Das heißt, man muss sie regelmäßig waschen? Dafür braucht man ja selbst Wasser!",
+       "teile": [
+        "یعنی",
+        "باید",
+        "مرتب",
+        "آنها",
+        "را",
+        "شست",
+        "این",
+        "که",
+        "خودش",
+        "آب",
+        "می‌خواهد"
+       ],
+       "extra": [
+        "در"
+       ]
+      },
+      {
+       "fa": "سفر چند روز طول خواهد کشید و کجا خواهیم ماند؟",
+       "tr": "",
+       "de": "Wie viele Tage wird die Reise dauern, und wo werden wir übernachten?",
+       "teile": [
+        "سفر",
+        "چند",
+        "روز",
+        "طول",
+        "خواهد",
+        "کشید",
+        "و",
+        "کجا",
         "خواهیم",
-        "کرد"
+        "ماند"
        ],
        "extra": [
-        "هم"
+        "پس"
        ]
       },
       {
-       "fa": "آیا امروز هم از قنات‌ها استفاده می‌شود؟",
+       "fa": "چرا قنات‌ها این‌قدر مهم‌اند؟",
        "tr": "",
-       "de": "Werden Qanate heute noch genutzt?",
+       "de": "Warum sind Qanate so wichtig?",
        "teile": [
-        "آیا",
-        "امروز",
-        "هم",
-        "از",
+        "چرا",
         "قنات‌ها",
-        "استفاده",
-        "می‌شود"
+        "این‌قدر",
+        "مهم‌اند"
        ],
        "extra": [
-        "من"
+        "آب"
+       ]
+      },
+      {
+       "fa": "شما در کرمان آب را چطور ذخیره می‌کردید؟",
+       "tr": "",
+       "de": "Wie haben Sie in Kerman Wasser gespeichert?",
+       "teile": [
+        "شما",
+        "در",
+        "کرمان",
+        "آب",
+        "را",
+        "چطور",
+        "ذخیره",
+        "می‌کردید"
+       ],
+       "extra": [
+        "چند"
        ]
       }
      ]
@@ -593,8 +709,8 @@
        "frage": "„Diese Wüste gilt als einer der heißesten Orte der Erde.“",
        "optionen": [
         "این بیابان را یکی از گرم‌ترین نقاط کره‌ی زمین می‌دانند.",
-        "پس هر دو سازگار می‌شویم؛ شما با تعمیرکار، من با دوش کوتاه!",
-        "پس پیشنهاد می‌کنم یک قانون بگذاریم: دوش پنج‌دقیقه‌ای! من حاضرم."
+        "سفر چند روز طول خواهد کشید و کجا خواهیم ماند؟",
+        "شما در کرمان آب را چطور ذخیره می‌کردید؟"
        ],
        "richtig": 0,
        "optFa": true,
@@ -604,17 +720,17 @@
        "frage": "„Werden Qanate heute noch genutzt?“",
        "optionen": [
         "آیا امروز هم از قنات‌ها استفاده می‌شود؟",
-        "پس پیشنهاد می‌کنم یک قانون بگذاریم: دوش پنج‌دقیقه‌ای! من حاضرم.",
-        "این بیابان را یکی از گرم‌ترین نقاط کره‌ی زمین می‌دانند."
+        "آیا باید درباره‌ی سفر گزارشی هم بنویسیم؟",
+        "موضوع جالبی است. از همین حالا شروع می‌کنم. ممنون، خانم دکتر."
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false
       },
       {
-       "frage": "„Dann passen wir uns beide an – Sie mit dem Handwerker, ich mit der kurzen Dusche!“",
+       "frage": "„Warum wird sie dann noch so wenig genutzt?“",
        "optionen": [
-        "پس هر دو سازگار می‌شویم؛ شما با تعمیرکار، من با دوش کوتاه!",
+        "پس چرا هنوز این‌قدر کم از آن استفاده می‌شود؟",
         "این بیابان را یکی از گرم‌ترین نقاط کره‌ی زمین می‌دانند.",
         "پس پیشنهاد می‌کنم یک قانون بگذاریم: دوش پنج‌دقیقه‌ای! من حاضرم."
        ],
@@ -623,11 +739,11 @@
        "hoeren": false
       },
       {
-       "frage": "„Dann schlage ich eine Regel vor: Fünf-Minuten-Dusche! Ich bin dabei.“",
+       "frage": "„Ein interessantes Thema. Ich fange gleich damit an. Danke, Frau Doktor.“",
        "optionen": [
-        "پس پیشنهاد می‌کنم یک قانون بگذاریم: دوش پنج‌دقیقه‌ای! من حاضرم.",
-        "این بیابان را یکی از گرم‌ترین نقاط کره‌ی زمین می‌دانند.",
-        "آیا فقط از کلوت‌ها بازدید خواهیم کرد؟"
+        "موضوع جالبی است. از همین حالا شروع می‌کنم. ممنون، خانم دکتر.",
+        "آیا امروز هم از قنات‌ها استفاده می‌شود؟",
+        "یعنی باید مرتب آنها را شست؟ این که خودش آب می‌خواهد!"
        ],
        "richtig": 0,
        "optFa": true,
@@ -637,8 +753,19 @@
        "frage": "„Werden wir nur die Kaluts besichtigen?“",
        "optionen": [
         "آیا فقط از کلوت‌ها بازدید خواهیم کرد؟",
-        "پس پیشنهاد می‌کنم یک قانون بگذاریم: دوش پنج‌دقیقه‌ای! من حاضرم.",
-        "پس هر دو سازگار می‌شویم؛ شما با تعمیرکار، من با دوش کوتاه!"
+        "چرا قنات‌ها این‌قدر مهم‌اند؟",
+        "پس پیشنهاد می‌کنم یک قانون بگذاریم: دوش پنج‌دقیقه‌ای! من حاضرم."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Das heißt, man muss sie regelmäßig waschen? Dafür braucht man ja selbst Wasser!“",
+       "optionen": [
+        "یعنی باید مرتب آنها را شست؟ این که خودش آب می‌خواهد!",
+        "این بیابان را یکی از گرم‌ترین نقاط کره‌ی زمین می‌دانند.",
+        "سفر چند روز طول خواهد کشید و کجا خواهیم ماند؟"
        ],
        "richtig": 0,
        "optFa": true,
@@ -653,29 +780,29 @@
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
-        "Dann schlage ich eine Regel vor: Fünf-Minuten-Dusche! Ich bin dabei.",
-        "Werden wir nur die Kaluts besichtigen?",
-        "Diese Wüste gilt als einer der heißesten Orte der Erde."
+        "Ein interessantes Thema. Ich fange gleich damit an. Danke, Frau Doktor.",
+        "Müssen wir auch einen Bericht über die Reise schreiben?",
+        "Wie haben Sie in Kerman Wasser gespeichert?"
        ],
        "richtig": 0,
-       "fa": "پس پیشنهاد می‌کنم یک قانون بگذاریم: دوش پنج‌دقیقه‌ای! من حاضرم."
+       "fa": "موضوع جالبی است. از همین حالا شروع می‌کنم. ممنون، خانم دکتر."
       },
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
-        "Werden wir nur die Kaluts besichtigen?",
-        "Diese Wüste gilt als einer der heißesten Orte der Erde.",
+        "Das heißt, man muss sie regelmäßig waschen? Dafür braucht man ja selbst Wasser!",
+        "Wie viele Tage wird die Reise dauern, und wo werden wir übernachten?",
         "Dann schlage ich eine Regel vor: Fünf-Minuten-Dusche! Ich bin dabei."
        ],
        "richtig": 0,
-       "fa": "آیا فقط از کلوت‌ها بازدید خواهیم کرد؟"
+       "fa": "یعنی باید مرتب آنها را شست؟ این که خودش آب می‌خواهد!"
       },
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
         "Diese Wüste gilt als einer der heißesten Orte der Erde.",
-        "Werden Qanate heute noch genutzt?",
-        "Dann passen wir uns beide an – Sie mit dem Handwerker, ich mit der kurzen Dusche!"
+        "Warum wird sie dann noch so wenig genutzt?",
+        "Wie haben Sie in Kerman Wasser gespeichert?"
        ],
        "richtig": 0,
        "fa": "این بیابان را یکی از گرم‌ترین نقاط کره‌ی زمین می‌دانند."
@@ -683,22 +810,32 @@
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
-        "Werden Qanate heute noch genutzt?",
         "Dann schlage ich eine Regel vor: Fünf-Minuten-Dusche! Ich bin dabei.",
-        "Dann passen wir uns beide an – Sie mit dem Handwerker, ich mit der kurzen Dusche!"
+        "Das heißt, man muss sie regelmäßig waschen? Dafür braucht man ja selbst Wasser!",
+        "Werden Qanate heute noch genutzt?"
        ],
        "richtig": 0,
-       "fa": "آیا امروز هم از قنات‌ها استفاده می‌شود؟"
+       "fa": "پس پیشنهاد می‌کنم یک قانون بگذاریم: دوش پنج‌دقیقه‌ای! من حاضرم."
       },
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
-        "Dann passen wir uns beide an – Sie mit dem Handwerker, ich mit der kurzen Dusche!",
-        "Diese Wüste gilt als einer der heißesten Orte der Erde.",
-        "Werden wir nur die Kaluts besichtigen?"
+        "Wie haben Sie in Kerman Wasser gespeichert?",
+        "Warum wird sie dann noch so wenig genutzt?",
+        "Warum sind Qanate so wichtig?"
        ],
        "richtig": 0,
-       "fa": "پس هر دو سازگار می‌شویم؛ شما با تعمیرکار، من با دوش کوتاه!"
+       "fa": "شما در کرمان آب را چطور ذخیره می‌کردید؟"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Werden wir nur die Kaluts besichtigen?",
+        "Wie haben Sie in Kerman Wasser gespeichert?",
+        "Werden Qanate heute noch genutzt?"
+       ],
+       "richtig": 0,
+       "fa": "آیا فقط از کلوت‌ها بازدید خواهیم کرد؟"
       }
      ]
     }

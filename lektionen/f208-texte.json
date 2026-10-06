@@ -2,7 +2,7 @@
  "id": "tx",
  "art": "texte",
  "titel": "Sachtext & Dialoge",
- "beschreibung": "Sachtext, Wortschatz im Kontext, zwei Dialoge, Redemittel und Schreibaufgabe.",
+ "beschreibung": "Sachtext, Wortschatz im Kontext, Alltagstext, drei Dialoge, Infotexte, Redemittel und Schreibaufgabe.",
  "stationen": [
   {
    "id": "t1",
@@ -12,7 +12,7 @@
     {
      "typ": "info",
      "titel": "Neue Wörter im Text",
-     "text": "<p><span class='fa'>پدیده</span> – Phänomen · <span class='fa'>قواعد نانوشته</span> – ungeschriebene Regeln · <span class='fa'>مؤدبانه</span> – höflich (Adverb) · <span class='fa'>پرخور</span> – gefräßig · <span class='fa'>قابل نداره</span> – „ist es nicht wert“ (Floskel) · <span class='fa'>برخورد اول</span> – erster Kontakt · <span class='fa'>روی دیگر سکه</span> – Kehrseite der Medaille · <span class='fa'>به زبان آوردن</span> – aussprechen · <span class='fa'>وقت تلف کردن</span> – Zeitverschwendung · <span class='fa'>رعایت کردن</span> – beachten</p>",
+     "text": "<p><span class='fa'>پدیده</span> – Phänomen · <span class='fa'>قواعد نانوشته</span> – ungeschriebene Regeln · <span class='fa'>مؤدبانه</span> – höflich (Adverb) · <span class='fa'>پرخور</span> – gefräßig · <span class='fa'>قابل نداره</span> – „ist es nicht wert“ (Floskel) · <span class='fa'>کوتاه آمدن</span> – nachgeben · <span class='fa'>شکسته‌نفسی</span> – Selbstverkleinerung, Bescheidenheit · <span class='fa'>جلوه دادن</span> – erscheinen lassen · <span class='fa'>زحمت را کم کردن</span> – (sich verabschieden) keine Mühe mehr machen · <span class='fa'>برخورد اول</span> – erster Kontakt · <span class='fa'>جایگاه</span> – Stellung · <span class='fa'>روی دیگر سکه</span> – Kehrseite der Medaille · <span class='fa'>به زبان آوردن</span> – aussprechen · <span class='fa'>جا افتادن</span> – sich einbürgern, verankert sein</p>",
      "stil": "merke"
     },
     {
@@ -26,9 +26,19 @@
        "de": "Wer eine Zeit lang in Iran lebt, lernt früher oder später ein Phänomen namens ‹Taarof› kennen."
       },
       {
+       "fa": "واژه‌ی «تعارف» در اصل عربی است و به معنای «با یکدیگر آشنا شدن» است، اما در فارسی معنای گسترده‌تری پیدا کرده است.",
+       "tr": "",
+       "de": "Das Wort ‹Taarof› stammt ursprünglich aus dem Arabischen und bedeutet ‹einander kennenlernen›, hat im Persischen aber eine weitere Bedeutung angenommen."
+      },
+      {
        "fa": "تعارف مجموعه‌ای از قواعد نانوشته‌ی ادب است که رفتار مردم را در مهمانی، مغازه و حتی در خیابان شکل می‌دهد.",
        "tr": "",
        "de": "Taarof ist ein Bündel ungeschriebener Höflichkeitsregeln, die das Verhalten der Menschen bei Einladungen, im Laden und sogar auf der Straße prägen."
+      },
+      {
+       "fa": "این قواعد در خانواده آموخته می‌شوند و بیشتر ایرانی‌ها آنها را بی‌آنکه درباره‌شان فکر کنند به کار می‌برند.",
+       "tr": "",
+       "de": "Diese Regeln werden in der Familie gelernt, und die meisten Iraner wenden sie an, ohne darüber nachzudenken."
       },
       {
        "fa": "ساده‌ترین شکل آن این است که میزبان چیزی را به مهمان پیشنهاد می‌کند و مهمان بار اول آن را مؤدبانه رد می‌کند.",
@@ -46,6 +56,31 @@
        "de": "Ein höflicher Gast will nicht gefräßig oder gierig wirken, und ein guter Gastgeber will nicht, dass jemand hungrig von seiner Tafel aufsteht."
       },
       {
+       "fa": "در بسیاری از خانه‌ها مهمان را به «بالای مجلس» راهنمایی می‌کنند؛ جایی دور از در که نشانه‌ی احترام است.",
+       "tr": "",
+       "de": "In vielen Häusern führt man den Gast zum ‹Ehrenplatz›, einem Platz weit weg von der Tür, der ein Zeichen des Respekts ist."
+      },
+      {
+       "fa": "مهمان هم معمولا اول تعارف می‌کند که فردی مسن‌تر آنجا بنشیند و فقط پس از اصرار میزبان می‌پذیرد.",
+       "tr": "",
+       "de": "Der Gast bietet meist zuerst an, dass eine ältere Person dort sitzt, und nimmt erst an, wenn der Gastgeber darauf besteht."
+      },
+      {
+       "fa": "پذیرایی معمولا با چای، میوه و شیرینی آغاز می‌شود و میزبان مدام مراقب است که بشقاب مهمان خالی نماند.",
+       "tr": "",
+       "de": "Die Bewirtung beginnt meist mit Tee, Obst und Gebäck, und der Gastgeber achtet ständig darauf, dass der Teller des Gastes nicht leer bleibt."
+      },
+      {
+       "fa": "مهمان نیز معمولا دست خالی نمی‌آید و جعبه‌ای شیرینی یا دسته‌گلی با خود می‌آورد.",
+       "tr": "",
+       "de": "Der Gast kommt seinerseits meist nicht mit leeren Händen, sondern bringt eine Schachtel Gebäck oder einen Blumenstrauß mit."
+      },
+      {
+       "fa": "میزبان در پاسخ می‌گوید «چرا زحمت کشیدید؟» و هدیه را اغلب همان لحظه باز نمی‌کند.",
+       "tr": "",
+       "de": "Der Gastgeber antwortet ‹Warum haben Sie sich die Mühe gemacht?› und öffnet das Geschenk oft nicht sofort."
+      },
+      {
        "fa": "نمونه‌ی معروف دیگر، تاکسی است: گاهی راننده در پایان مسیر می‌گوید «قابل نداره» یا «مهمان ما باشید».",
        "tr": "",
        "de": "Ein anderes bekanntes Beispiel ist das Taxi: Manchmal sagt der Fahrer am Ende der Fahrt ‹Ist es nicht wert› oder ‹Seien Sie unser Gast›."
@@ -56,24 +91,54 @@
        "de": "Diesen Satz sollte man aber nicht ernst nehmen; der Fahrer erwartet, dass der Fahrgast darauf besteht und den Fahrpreis zahlt."
       },
       {
+       "fa": "در تاکسی‌های اینترنتی که کرایه از پیش در برنامه مشخص می‌شود، این گفت‌وگو کمتر پیش می‌آید.",
+       "tr": "",
+       "de": "In App-Taxis, bei denen der Fahrpreis im Voraus in der App festgelegt wird, kommt dieses Gespräch seltener vor."
+      },
+      {
        "fa": "در مغازه‌ها هم ممکن است فروشنده همین جمله را بگوید، در حالی که برای هر دو طرف روشن است که حساب باید پرداخت شود.",
        "tr": "",
        "de": "Auch in Läden sagt der Verkäufer vielleicht denselben Satz, obwohl beiden Seiten klar ist, dass die Rechnung bezahlt werden muss."
       },
       {
-       "fa": "صحنه‌ی جالب دیگری دم در اتفاق می‌افتد: دو نفر جلوی در می‌ایستند و هر کدام به دیگری می‌گوید «بفرمایید».",
+       "fa": "گاهی فروشنده فقط پس از اصرار چندباره‌ی خریدار قیمت واقعی را می‌گوید و تازه آن وقت چانه زدن آغاز می‌شود.",
        "tr": "",
-       "de": "Eine weitere lustige Szene spielt sich an der Tür ab: Zwei Personen bleiben davor stehen, und jede sagt zur anderen ‹Bitte sehr›."
+       "de": "Manchmal nennt der Verkäufer erst nach mehrmaligem Drängen des Käufers den tatsächlichen Preis, und erst dann beginnt das Feilschen."
       },
       {
-       "fa": "گاهی این «رقص» آن‌قدر طول می‌کشد که نفر سوم، بدون هیچ تعارفی، از کنار هر دو رد می‌شود!",
+       "fa": "صحنه‌ی آشنای دیگری دم در اتفاق می‌افتد: دو نفر جلوی در می‌ایستند و هر کدام به دیگری می‌گوید «بفرمایید».",
        "tr": "",
-       "de": "Manchmal dauert dieser ‹Tanz› so lange, dass eine dritte Person ganz ohne Taarof an beiden vorbeigeht!"
+       "de": "Eine weitere vertraute Szene spielt sich an der Tür ab: Zwei Personen bleiben davor stehen, und jede sagt zur anderen ‹Bitte sehr›."
+      },
+      {
+       "fa": "گاهی این «رقص» آن‌قدر طول می‌کشد که نفر سوم، بدون هیچ تعارفی، از کنار هر دو رد می‌شود.",
+       "tr": "",
+       "de": "Manchmal dauert dieser ‹Tanz› so lange, dass eine dritte Person ganz ohne Taarof an beiden vorbeigeht."
+      },
+      {
+       "fa": "معمولا فرد جوان‌تر یا میزبان سرانجام کوتاه می‌آید و به دیگری اجازه می‌دهد اول وارد شود.",
+       "tr": "",
+       "de": "Meist gibt schließlich die jüngere Person oder der Gastgeber nach und lässt den anderen zuerst eintreten."
       },
       {
        "fa": "تعریف کردن از دیگران هم بخشی از تعارف است؛ اگر از لباس کسی تعریف کنید، ممکن است بگوید «قابل شما را ندارد».",
        "tr": "",
        "de": "Auch Komplimente gehören zum Taarof; wenn Sie jemandes Kleidung loben, sagt er vielleicht: ‹Es ist Ihrer nicht würdig›."
+      },
+      {
+       "fa": "این نوع پاسخ را «شکسته‌نفسی» می‌نامند: آدم دستاورد یا دارایی خود را کوچک جلوه می‌دهد تا مغرور به نظر نرسد.",
+       "tr": "",
+       "de": "Diese Art Antwort nennt man ‹Schekasteh-Nafsi› (Selbstverkleinerung): Man stellt die eigene Leistung oder den eigenen Besitz klein dar, um nicht überheblich zu wirken."
+      },
+      {
+       "fa": "پایان مهمانی هم قواعد خود را دارد: مهمان می‌گوید «دیگر زحمت را کم کنیم» و میزبان اصرار می‌کند که بیشتر بماند.",
+       "tr": "",
+       "de": "Auch das Ende einer Einladung hat seine Regeln: Der Gast sagt ‹Wir wollen Ihnen keine Mühe mehr machen›, und der Gastgeber besteht darauf, dass er länger bleibt."
+      },
+      {
+       "fa": "سرانجام میزبان مهمان را تا دم در و گاهی تا کنار خیابان بدرقه می‌کند.",
+       "tr": "",
+       "de": "Schließlich begleitet der Gastgeber den Gast bis zur Tür und manchmal bis zur Straße."
       },
       {
        "fa": "بسیاری از خارجی‌ها در برخورد اول تعارف را نوعی ریاکاری می‌دانند و می‌پرسند: «پس صداقت کجاست؟»",
@@ -86,9 +151,19 @@
        "de": "Für viele Iraner bedeutet Taarof jedoch nicht Lügen, sondern ist ein Weg, Respekt und Bescheidenheit zu zeigen."
       },
       {
+       "fa": "برخی پژوهشگران، از جمله انسان‌شناس آمریکایی ویلیام بیمن، تعارف را نظامی دانسته‌اند که روابط و جایگاه افراد را در جامعه تنظیم می‌کند.",
+       "tr": "",
+       "de": "Einige Forscher, darunter der US-amerikanische Anthropologe William Beeman, haben Taarof als ein System beschrieben, das die Beziehungen und die Stellung der Menschen in der Gesellschaft regelt."
+      },
+      {
        "fa": "تعارف فاصله‌ای ایجاد می‌کند که به هر دو طرف اجازه می‌دهد بدون خجالت «نه» بگویند یا چیزی را بپذیرند.",
        "tr": "",
        "de": "Taarof schafft einen Abstand, der beiden Seiten erlaubt, ohne Verlegenheit ‹nein› zu sagen oder etwas anzunehmen."
+      },
+      {
+       "fa": "گویا همین فاصله است که گفت‌وگو را نرم‌تر می‌کند؛ کسی مجبور نیست درخواستی را مستقیم رد کند.",
+       "tr": "",
+       "de": "Anscheinend ist es gerade dieser Abstand, der das Gespräch geschmeidiger macht; niemand muss eine Bitte direkt ablehnen."
       },
       {
        "fa": "با این حال، تعارف همیشه بی‌خطر نیست: گاهی سوءتفاهم پیش می‌آید و کسی واقعا دلخور می‌شود.",
@@ -96,9 +171,24 @@
        "de": "Dennoch ist Taarof nicht immer harmlos: Manchmal entsteht ein Missverständnis, und jemand ist wirklich gekränkt."
       },
       {
+       "fa": "ضرب‌المثل «تعارف آمد و نیامد دارد» به همین خطر اشاره می‌کند: ممکن است طرف مقابل پیشنهاد شما را واقعا بپذیرد.",
+       "tr": "",
+       "de": "Das Sprichwort ‹Taarof kann ankommen oder nicht› weist genau auf diese Gefahr hin: Es kann sein, dass Ihr Gegenüber Ihr Angebot wirklich annimmt."
+      },
+      {
        "fa": "رودربایستی روی دیگر این سکه است؛ یعنی آدم از روی ادب نمی‌تواند خواسته‌ی واقعی‌اش را به زبان بیاورد.",
        "tr": "",
        "de": "Rudarbayesti ist die Kehrseite der Medaille: Man kann aus Höflichkeit seinen wirklichen Wunsch nicht aussprechen."
+      },
+      {
+       "fa": "کسی که رودربایستی دارد، شاید کاری را بپذیرد که وقتش را ندارد، فقط چون می‌ترسد دیگری دلخور شود.",
+       "tr": "",
+       "de": "Wer Rudarbayesti hat, übernimmt vielleicht eine Aufgabe, für die er keine Zeit hat, nur weil er fürchtet, der andere könnte gekränkt sein."
+      },
+      {
+       "fa": "در محیط کار نیز تعارف دیده می‌شود: کارمند جوان شاید نظرش را مستقیم نگوید تا مبادا مدیرش را ناراحت کند.",
+       "tr": "",
+       "de": "Auch am Arbeitsplatz begegnet man Taarof: Ein junger Angestellter sagt seine Meinung vielleicht nicht direkt, um seinen Vorgesetzten bloß nicht zu verärgern."
       },
       {
        "fa": "نسل جوان، به‌ویژه در شهرهای بزرگ، نگاه متفاوتی به تعارف دارد و اغلب رک‌تر و صمیمی‌تر رفتار می‌کند.",
@@ -109,6 +199,21 @@
        "fa": "گویا بسیاری از جوان‌ها تعارف‌های طولانی را وقت تلف کردن می‌دانند، اما قواعد اصلی آن را هنوز رعایت می‌کنند.",
        "tr": "",
        "de": "Viele junge Leute halten lange Taarof-Runden anscheinend für Zeitverschwendung, beachten die Grundregeln aber weiterhin."
+      },
+      {
+       "fa": "تعارف فقط مخصوص ایران نیست؛ در بسیاری از فرهنگ‌ها، از جهان عرب تا شرق آسیا، رسم‌های مشابهی دیده می‌شود.",
+       "tr": "",
+       "de": "Taarof gibt es nicht nur in Iran; in vielen Kulturen, von der arabischen Welt bis Ostasien, findet man ähnliche Bräuche."
+      },
+      {
+       "fa": "اما شاید کمتر جایی بتوان یافت که این قواعد تا این اندازه در زبان روزمره جا افتاده باشند.",
+       "tr": "",
+       "de": "Doch man findet vielleicht kaum einen Ort, an dem diese Regeln so tief in der Alltagssprache verankert sind."
+      },
+      {
+       "fa": "ایرانی‌هایی که در خارج زندگی می‌کنند، گاهی میان دو دنیا قرار می‌گیرند و باید یاد بگیرند که «نه»ی همکاران خارجی‌شان را جدی بگیرند.",
+       "tr": "",
+       "de": "Iraner, die im Ausland leben, stehen manchmal zwischen zwei Welten und müssen lernen, das ‹Nein› ihrer ausländischen Kollegen ernst zu nehmen."
       },
       {
        "fa": "برای خارجی‌هایی که به ایران سفر می‌کنند، چند توصیه‌ی ساده می‌تواند مفید باشد.",
@@ -158,6 +263,38 @@
         "richtig",
         "falsch"
        ],
+       "richtig": 1,
+       "fa": "واژه‌ی «تعارف» در اصل فارسی است.",
+       "fest": true,
+       "erkl": "Das Wort stammt ursprünglich aus dem <b>Arabischen</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "«بالای مجلس» جایی نزدیک در است.",
+       "fest": true,
+       "erkl": "Der Ehrenplatz liegt <b>weit weg von der Tür</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "میزبان هدیه را اغلب همان لحظه باز نمی‌کند.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
        "richtig": 0,
        "fa": "وقتی راننده می‌گوید «قابل نداره»، باید کرایه را پرداخت.",
        "fest": true
@@ -169,7 +306,7 @@
         "falsch"
        ],
        "richtig": 0,
-       "fa": "«رقص» بفرمایید دم در اتفاق می‌افتد.",
+       "fa": "در تاکسی‌های اینترنتی این گفت‌وگو کمتر پیش می‌آید.",
        "fest": true
       },
       {
@@ -192,17 +329,6 @@
        "richtig": 0,
        "fa": "نسل جوان اغلب رک‌تر رفتار می‌کند.",
        "fest": true
-      },
-      {
-       "frage": "Richtig oder falsch?",
-       "optionen": [
-        "richtig",
-        "falsch"
-       ],
-       "richtig": 1,
-       "fa": "به خارجی‌ها توصیه می‌شود هیچ پیشنهادی را نپذیرند.",
-       "fest": true,
-       "erkl": "Man soll einmal ablehnen und bei Beharren <b>dankend annehmen</b>."
       }
      ]
     },
@@ -220,11 +346,29 @@
        "richtig": 0
       },
       {
-       "frage": "Was passiert manchmal beim „Tanz“ an der Tür?",
+       "frage": "Was bedeutet das Wort <span class='fa'>تعارف</span> ursprünglich im Arabischen?",
        "optionen": [
-        "Eine dritte Person geht einfach an beiden vorbei.",
-        "Beide gehen gleichzeitig hinein.",
-        "Der Gastgeber schließt die Tür."
+        "einander kennenlernen",
+        "Geschenke tauschen",
+        "sich verbeugen"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was bedeutet <span class='fa'>شکسته‌نفسی</span>?",
+       "optionen": [
+        "die eigene Leistung oder den eigenen Besitz kleinreden",
+        "einen Preis aushandeln",
+        "jemanden zur Tür begleiten"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was sagt der Gast, wenn er gehen möchte?",
+       "optionen": [
+        "‹Wir wollen Ihnen keine Mühe mehr machen.›",
+        "‹Das Essen war zu wenig.›",
+        "‹Bis morgen früh.›"
        ],
        "richtig": 0
       },
@@ -234,15 +378,6 @@
         "aus Höflichkeit nicht sagen können, was man wirklich will",
         "ein Geschenk zurückgeben",
         "jemandem ein Kompliment machen"
-       ],
-       "richtig": 0
-      },
-      {
-       "frage": "Wie sehen viele junge Leute lange Taarof-Runden?",
-       "optionen": [
-        "als Zeitverschwendung",
-        "als Pflicht in jeder Situation",
-        "als ausländische Mode"
        ],
        "richtig": 0
       },
@@ -263,9 +398,19 @@
      "frage": "Bring die Sätze in die Reihenfolge des Textes.",
      "items": [
       {
+       "fa": "واژه‌ی «تعارف» در اصل عربی است و به معنای «با یکدیگر آشنا شدن» است، اما در فارسی معنای گسترده‌تری پیدا کرده است.",
+       "tr": "",
+       "de": "Das Wort ‹Taarof› stammt ursprünglich aus dem Arabischen und bedeutet ‹einander kennenlernen›, hat im Persischen aber eine weitere Bedeutung angenommen."
+      },
+      {
        "fa": "تعارف مجموعه‌ای از قواعد نانوشته‌ی ادب است که رفتار مردم را در مهمانی، مغازه و حتی در خیابان شکل می‌دهد.",
        "tr": "",
        "de": "Taarof ist ein Bündel ungeschriebener Höflichkeitsregeln, die das Verhalten der Menschen bei Einladungen, im Laden und sogar auf der Straße prägen."
+      },
+      {
+       "fa": "این قواعد در خانواده آموخته می‌شوند و بیشتر ایرانی‌ها آنها را بی‌آنکه درباره‌شان فکر کنند به کار می‌برند.",
+       "tr": "",
+       "de": "Diese Regeln werden in der Familie gelernt, und die meisten Iraner wenden sie an, ohne darüber nachzudenken."
       },
       {
        "fa": "ساده‌ترین شکل آن این است که میزبان چیزی را به مهمان پیشنهاد می‌کند و مهمان بار اول آن را مؤدبانه رد می‌کند.",
@@ -281,16 +426,6 @@
        "fa": "مهمان مؤدب نمی‌خواهد پرخور یا اهل طمع به نظر برسد و میزبان خوب نمی‌خواهد کسی گرسنه از سر سفره‌اش بلند شود.",
        "tr": "",
        "de": "Ein höflicher Gast will nicht gefräßig oder gierig wirken, und ein guter Gastgeber will nicht, dass jemand hungrig von seiner Tafel aufsteht."
-      },
-      {
-       "fa": "نمونه‌ی معروف دیگر، تاکسی است: گاهی راننده در پایان مسیر می‌گوید «قابل نداره» یا «مهمان ما باشید».",
-       "tr": "",
-       "de": "Ein anderes bekanntes Beispiel ist das Taxi: Manchmal sagt der Fahrer am Ende der Fahrt ‹Ist es nicht wert› oder ‹Seien Sie unser Gast›."
-      },
-      {
-       "fa": "اما این جمله را نباید جدی گرفت؛ راننده انتظار دارد مسافر اصرار کند و کرایه را بپردازد.",
-       "tr": "",
-       "de": "Diesen Satz sollte man aber nicht ernst nehmen; der Fahrer erwartet, dass der Fahrgast darauf besteht und den Fahrpreis zahlt."
       }
      ]
     }
@@ -309,8 +444,8 @@
        "frage": "<span class='fa'>هر کس مدتی در ایران زندگی کند، دیر یا زود با پدیده‌ای به نام «___» آشنا می‌شود.</span><br><span class='mini'>Wer eine Zeit lang in Iran lebt, lernt früher oder später ein Phänomen namens ‹Taarof› kennen.</span>",
        "optionen": [
         "تعارف",
-        "احترام",
-        "معذب"
+        "ریاکاری",
+        "مهمان‌نوازی"
        ],
        "richtig": 0,
        "optFa": true,
@@ -318,11 +453,23 @@
        "erkl": "<span class='fa'>هر کس مدتی در ایران زندگی کند، دیر یا زود با پدیده‌ای به نام «تعارف» آشنا می‌شود.</span>"
       },
       {
+       "frage": "<span class='fa'>واژه‌ی «___» در اصل عربی است و به معنای «با یکدیگر آشنا شدن» است، اما در فارسی معنای گسترده‌تری پیدا کرده است.</span><br><span class='mini'>Das Wort ‹Taarof› stammt ursprünglich aus dem Arabischen und bedeutet ‹einander kennenlernen›, hat im Persischen aber eine weitere Bedeutung angenommen.</span>",
+       "optionen": [
+        "تعارف",
+        "تشکر",
+        "شیرینی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>واژه‌ی «تعارف» در اصل عربی است و به معنای «با یکدیگر آشنا شدن» است، اما در فارسی معنای گسترده‌تری پیدا کرده است.</span>"
+      },
+      {
        "frage": "<span class='fa'>___ مجموعه‌ای از قواعد نانوشته‌ی ادب است که رفتار مردم را در مهمانی، مغازه و حتی در خیابان شکل می‌دهد.</span><br><span class='mini'>Taarof ist ein Bündel ungeschriebener Höflichkeitsregeln, die das Verhalten der Menschen bei Einladungen, im Laden und sogar auf der Straße prägen.</span>",
        "optionen": [
         "تعارف",
-        "میزبان",
-        "تاکسی"
+        "مهمان‌نوازی",
+        "استکان"
        ],
        "richtig": 0,
        "optFa": true,
@@ -333,8 +480,8 @@
        "frage": "<span class='fa'>ساده‌ترین شکل آن این است که ___ چیزی را به مهمان پیشنهاد می‌کند و مهمان بار اول آن را مؤدبانه رد می‌کند.</span><br><span class='mini'>Die einfachste Form: Der Gastgeber bietet dem Gast etwas an, und der Gast lehnt es beim ersten Mal höflich ab.</span>",
        "optionen": [
         "میزبان",
-        "غرور",
-        "حساب"
+        "بدرقه",
+        "غرور"
        ],
        "richtig": 0,
        "optFa": true,
@@ -345,8 +492,8 @@
        "frage": "<span class='fa'>___ اصرار می‌کند، مهمان دوباره «نه» می‌گوید و گاهی این بازی تا سه بار یا حتی بیشتر ادامه پیدا می‌کند.</span><br><span class='mini'>Der Gastgeber besteht darauf, der Gast sagt wieder ‹nein›, und manchmal geht dieses Spiel dreimal oder sogar öfter so weiter.</span>",
        "optionen": [
         "میزبان",
-        "پذیرایی",
-        "کرایه"
+        "دعوت",
+        "پذیرایی"
        ],
        "richtig": 0,
        "optFa": true,
@@ -357,20 +504,86 @@
        "frage": "<span class='fa'>مهمان مؤدب نمی‌خواهد پرخور یا اهل طمع به نظر برسد و ___ خوب نمی‌خواهد کسی گرسنه از سر سفره‌اش بلند شود.</span><br><span class='mini'>Ein höflicher Gast will nicht gefräßig oder gierig wirken, und ein guter Gastgeber will nicht, dass jemand hungrig von seiner Tafel aufsteht.</span>",
        "optionen": [
         "میزبان",
-        "پذیرایی",
-        "حساب"
+        "استکان",
+        "رودربایستی"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
        "erkl": "<span class='fa'>مهمان مؤدب نمی‌خواهد پرخور یا اهل طمع به نظر برسد و میزبان خوب نمی‌خواهد کسی گرسنه از سر سفره‌اش بلند شود.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort fehlt im Text?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>در بسیاری از خانه‌ها مهمان را به «___» راهنمایی می‌کنند؛ جایی دور از در که نشانه‌ی احترام است.</span><br><span class='mini'>In vielen Häusern führt man den Gast zum ‹Ehrenplatz›, einem Platz weit weg von der Tür, der ein Zeichen des Respekts ist.</span>",
+       "optionen": [
+        "بالای مجلس",
+        "تاکسی",
+        "طمع"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>در بسیاری از خانه‌ها مهمان را به «بالای مجلس» راهنمایی می‌کنند؛ جایی دور از در که نشانه‌ی احترام است.</span>"
+      },
+      {
+       "frage": "<span class='fa'>مهمان هم معمولا اول تعارف می‌کند که فردی مسن‌تر آنجا بنشیند و فقط پس از اصرار ___ می‌پذیرد.</span><br><span class='mini'>Der Gast bietet meist zuerst an, dass eine ältere Person dort sitzt, und nimmt erst an, wenn der Gastgeber darauf besteht.</span>",
+       "optionen": [
+        "میزبان",
+        "تشکر",
+        "اصرار"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>مهمان هم معمولا اول تعارف می‌کند که فردی مسن‌تر آنجا بنشیند و فقط پس از اصرار میزبان می‌پذیرد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>___ معمولا با چای، میوه و شیرینی آغاز می‌شود و میزبان مدام مراقب است که بشقاب مهمان خالی نماند.</span><br><span class='mini'>Die Bewirtung beginnt meist mit Tee, Obst und Gebäck, und der Gastgeber achtet ständig darauf, dass der Teller des Gastes nicht leer bleibt.</span>",
+       "optionen": [
+        "پذیرایی",
+        "ریاکاری",
+        "راننده"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>پذیرایی معمولا با چای، میوه و شیرینی آغاز می‌شود و میزبان مدام مراقب است که بشقاب مهمان خالی نماند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>مهمان نیز معمولا دست خالی نمی‌آید و جعبه‌ای ___ یا دسته‌گلی با خود می‌آورد.</span><br><span class='mini'>Der Gast kommt seinerseits meist nicht mit leeren Händen, sondern bringt eine Schachtel Gebäck oder einen Blumenstrauß mit.</span>",
+       "optionen": [
+        "شیرینی",
+        "غرور",
+        "کرایه"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>مهمان نیز معمولا دست خالی نمی‌آید و جعبه‌ای شیرینی یا دسته‌گلی با خود می‌آورد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>___ در پاسخ می‌گوید «چرا زحمت کشیدید؟» و هدیه را اغلب همان لحظه باز نمی‌کند.</span><br><span class='mini'>Der Gastgeber antwortet ‹Warum haben Sie sich die Mühe gemacht?› und öffnet das Geschenk oft nicht sofort.</span>",
+       "optionen": [
+        "میزبان",
+        "معذب",
+        "غرور"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>میزبان در پاسخ می‌گوید «چرا زحمت کشیدید؟» و هدیه را اغلب همان لحظه باز نمی‌کند.</span>"
       },
       {
        "frage": "<span class='fa'>نمونه‌ی معروف دیگر، تاکسی است: گاهی ___ در پایان مسیر می‌گوید «قابل نداره» یا «مهمان ما باشید».</span><br><span class='mini'>Ein anderes bekanntes Beispiel ist das Taxi: Manchmal sagt der Fahrer am Ende der Fahrt ‹Ist es nicht wert› oder ‹Seien Sie unser Gast›.</span>",
        "optionen": [
         "راننده",
-        "مهمان‌نوازی",
-        "غرور"
+        "مبل",
+        "مؤدب"
        ],
        "richtig": 0,
        "optFa": true,
@@ -387,8 +600,8 @@
        "frage": "<span class='fa'>اما این جمله را نباید جدی گرفت؛ ___ انتظار دارد مسافر اصرار کند و کرایه را بپردازد.</span><br><span class='mini'>Diesen Satz sollte man aber nicht ernst nehmen; der Fahrer erwartet, dass der Fahrgast darauf besteht und den Fahrpreis zahlt.</span>",
        "optionen": [
         "راننده",
-        "کرایه",
-        "دلخور"
+        "طمع",
+        "رک"
        ],
        "richtig": 0,
        "optFa": true,
@@ -396,11 +609,23 @@
        "erkl": "<span class='fa'>اما این جمله را نباید جدی گرفت؛ راننده انتظار دارد مسافر اصرار کند و کرایه را بپردازد.</span>"
       },
       {
+       "frage": "<span class='fa'>در تاکسی‌های اینترنتی که ___ از پیش در برنامه مشخص می‌شود، این گفت‌وگو کمتر پیش می‌آید.</span><br><span class='mini'>In App-Taxis, bei denen der Fahrpreis im Voraus in der App festgelegt wird, kommt dieses Gespräch seltener vor.</span>",
+       "optionen": [
+        "کرایه",
+        "احترام",
+        "رسمی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>در تاکسی‌های اینترنتی که کرایه از پیش در برنامه مشخص می‌شود، این گفت‌وگو کمتر پیش می‌آید.</span>"
+      },
+      {
        "frage": "<span class='fa'>در مغازه‌ها هم ممکن است ___ همین جمله را بگوید، در حالی که برای هر دو طرف روشن است که حساب باید پرداخت شود.</span><br><span class='mini'>Auch in Läden sagt der Verkäufer vielleicht denselben Satz, obwohl beiden Seiten klar ist, dass die Rechnung bezahlt werden muss.</span>",
        "optionen": [
         "فروشنده",
-        "ادب",
-        "پذیرایی"
+        "شیرینی",
+        "آجیل"
        ],
        "richtig": 0,
        "optFa": true,
@@ -408,52 +633,40 @@
        "erkl": "<span class='fa'>در مغازه‌ها هم ممکن است فروشنده همین جمله را بگوید، در حالی که برای هر دو طرف روشن است که حساب باید پرداخت شود.</span>"
       },
       {
-       "frage": "<span class='fa'>صحنه‌ی جالب دیگری ___ اتفاق می‌افتد: دو نفر جلوی در می‌ایستند و هر کدام به دیگری می‌گوید «بفرمایید».</span><br><span class='mini'>Eine weitere lustige Szene spielt sich an der Tür ab: Zwei Personen bleiben davor stehen, und jede sagt zur anderen ‹Bitte sehr›.</span>",
+       "frage": "<span class='fa'>گاهی ___ فقط پس از اصرار چندباره‌ی خریدار قیمت واقعی را می‌گوید و تازه آن وقت چانه زدن آغاز می‌شود.</span><br><span class='mini'>Manchmal nennt der Verkäufer erst nach mehrmaligem Drängen des Käufers den tatsächlichen Preis, und erst dann beginnt das Feilschen.</span>",
+       "optionen": [
+        "فروشنده",
+        "شیرینی",
+        "مبل"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>گاهی فروشنده فقط پس از اصرار چندباره‌ی خریدار قیمت واقعی را می‌گوید و تازه آن وقت چانه زدن آغاز می‌شود.</span>"
+      },
+      {
+       "frage": "<span class='fa'>صحنه‌ی آشنای دیگری ___ اتفاق می‌افتد: دو نفر جلوی در می‌ایستند و هر کدام به دیگری می‌گوید «بفرمایید».</span><br><span class='mini'>Eine weitere vertraute Szene spielt sich an der Tür ab: Zwei Personen bleiben davor stehen, und jede sagt zur anderen ‹Bitte sehr›.</span>",
        "optionen": [
         "دم در",
-        "احترام",
+        "صمیمی",
         "رودربایستی"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
-       "erkl": "<span class='fa'>صحنه‌ی جالب دیگری دم در اتفاق می‌افتد: دو نفر جلوی در می‌ایستند و هر کدام به دیگری می‌گوید «بفرمایید».</span>"
+       "erkl": "<span class='fa'>صحنه‌ی آشنای دیگری دم در اتفاق می‌افتد: دو نفر جلوی در می‌ایستند و هر کدام به دیگری می‌گوید «بفرمایید».</span>"
       },
       {
-       "frage": "<span class='fa'>___ کردن از دیگران هم بخشی از تعارف است؛ اگر از لباس کسی تعریف کنید، ممکن است بگوید «قابل شما را ندارد».</span><br><span class='mini'>Auch Komplimente gehören zum Taarof; wenn Sie jemandes Kleidung loben, sagt er vielleicht: ‹Es ist Ihrer nicht würdig›.</span>",
+       "frage": "<span class='fa'>معمولا فرد جوان‌تر یا ___ سرانجام کوتاه می‌آید و به دیگری اجازه می‌دهد اول وارد شود.</span><br><span class='mini'>Meist gibt schließlich die jüngere Person oder der Gastgeber nach und lässt den anderen zuerst eintreten.</span>",
        "optionen": [
-        "تعریف",
-        "رسمی",
-        "راننده"
+        "میزبان",
+        "طمع",
+        "خجالت"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
-       "erkl": "<span class='fa'>تعریف کردن از دیگران هم بخشی از تعارف است؛ اگر از لباس کسی تعریف کنید، ممکن است بگوید «قابل شما را ندارد».</span>"
-      },
-      {
-       "frage": "<span class='fa'>بسیاری از خارجی‌ها در برخورد اول تعارف را نوعی ___ می‌دانند و می‌پرسند: «پس صداقت کجاست؟»</span><br><span class='mini'>Viele Ausländer halten Taarof beim ersten Kontakt für eine Art Heuchelei und fragen: ‹Wo bleibt da die Aufrichtigkeit?›</span>",
-       "optionen": [
-        "ریاکاری",
-        "اصرار",
-        "پذیرایی"
-       ],
-       "richtig": 0,
-       "optFa": true,
-       "hoeren": false,
-       "erkl": "<span class='fa'>بسیاری از خارجی‌ها در برخورد اول تعارف را نوعی ریاکاری می‌دانند و می‌پرسند: «پس صداقت کجاست؟»</span>"
-      },
-      {
-       "frage": "<span class='fa'>اما برای بسیاری از ایرانی‌ها تعارف به معنای دروغ گفتن نیست، بلکه راهی برای نشان دادن احترام و ___ است.</span><br><span class='mini'>Für viele Iraner bedeutet Taarof jedoch nicht Lügen, sondern ist ein Weg, Respekt und Bescheidenheit zu zeigen.</span>",
-       "optionen": [
-        "فروتنی",
-        "راننده",
-        "دلخور"
-       ],
-       "richtig": 0,
-       "optFa": true,
-       "hoeren": false,
-       "erkl": "<span class='fa'>اما برای بسیاری از ایرانی‌ها تعارف به معنای دروغ گفتن نیست، بلکه راهی برای نشان دادن احترام و فروتنی است.</span>"
+       "erkl": "<span class='fa'>معمولا فرد جوان‌تر یا میزبان سرانجام کوتاه می‌آید و به دیگری اجازه می‌دهد اول وارد شود.</span>"
       }
      ]
     },
@@ -473,6 +686,11 @@
        "de": "Der Gast lehnt ein Angebot zuerst ab, und der Gastgeber besteht darauf."
       },
       {
+       "fa": "در مهمانی، نشستن، پذیرایی و هدیه دادن هم قواعد خود را دارند.",
+       "tr": "",
+       "de": "Bei einer Einladung haben auch das Sitzen, die Bewirtung und das Schenken ihre eigenen Regeln."
+      },
+      {
        "fa": "در تاکسی و مغازه «قابل نداره» را نباید جدی گرفت.",
        "tr": "",
        "de": "Im Taxi und im Laden sollte man ‹Ist es nicht wert› nicht ernst nehmen."
@@ -486,6 +704,289 @@
        "fa": "نسل جوان رک‌تر است و خارجی‌ها با چند توصیه‌ی ساده می‌توانند این زبان را یاد بگیرند.",
        "tr": "",
        "de": "Die junge Generation ist direkter, und Ausländer können diese Sprache mit ein paar einfachen Tipps lernen."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t3",
+   "titel": "Alltag: Ein Abend bei Leylas Eltern",
+   "vorschau": "Ein Abend bei Leylas Eltern",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>قنادی</span> – Konditorei · <span class='fa'>مزاحم شدن</span> – stören · <span class='fa'>راضی به زحمت نبودیم</span> – das wäre nicht nötig gewesen · <span class='fa'>استکان کمرباریک</span> – tailliertes Teeglas · <span class='fa'>پوست کندن</span> – schälen · <span class='fa'>برنج کشیدن</span> – Reis auftun · <span class='fa'>نوش جان</span> – wohl bekomm’s · <span class='fa'>سر شب</span> – früher Abend · <span class='fa'>بازدید</span> – Gegenbesuch · <span class='fa'>قدرشناس</span> – dankbar</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Alltag: Ein Abend bei Leylas Eltern",
+     "text": "Alltagstext – Tippe eine Zeile an, wenn du die Übersetzung brauchst.",
+     "zeilen": [
+      {
+       "fa": "پنجشنبه‌ی گذشته پدر و مادر لیلا مرا برای شام به خانه‌شان دعوت کردند.",
+       "tr": "",
+       "de": "Letzten Donnerstag haben mich Leylas Eltern zum Abendessen zu sich nach Hause eingeladen."
+      },
+      {
+       "fa": "لیلا از قبل چند نکته به من گفته بود: «سر وقت بیا، اما نه زودتر؛ دست خالی هم نیا.»",
+       "tr": "",
+       "de": "Leyla hatte mir vorher ein paar Hinweise gegeben: ‹Komm pünktlich, aber nicht früher; und komm nicht mit leeren Händen.›"
+      },
+      {
+       "fa": "برای همین، سر راه از یک قنادی جعبه‌ای شیرینی خریدم و یک دسته‌گل کوچک هم گرفتم.",
+       "tr": "",
+       "de": "Deshalb habe ich unterwegs in einer Konditorei eine Schachtel Gebäck gekauft und auch einen kleinen Blumenstrauß besorgt."
+      },
+      {
+       "fa": "دم در، پدر لیلا با لبخند گفت: «خوش آمدید، بفرمایید تو!» و من همان‌طور که لیلا یادم داده بود، گفتم: «خیلی ممنون، ببخشید مزاحم شدم.»",
+       "tr": "",
+       "de": "An der Tür sagte Leylas Vater lächelnd: ‹Willkommen, kommen Sie herein!›, und ich sagte, wie Leyla es mir beigebracht hatte: ‹Vielen Dank, entschuldigen Sie die Störung.›"
+      },
+      {
+       "fa": "کفش‌هایم را درآوردم؛ در بیشتر خانه‌های ایرانی با کفش وارد اتاق نمی‌شوند و گاهی برای مهمان دمپایی می‌گذارند.",
+       "tr": "",
+       "de": "Ich zog meine Schuhe aus; in den meisten iranischen Wohnungen betritt man die Zimmer nicht mit Schuhen, und manchmal stellt man dem Gast Hausschuhe hin."
+      },
+      {
+       "fa": "وقتی جعبه‌ی شیرینی را دادم، مادر لیلا گفت: «چرا زحمت کشیدید؟ راضی به زحمت نبودیم!»",
+       "tr": "",
+       "de": "Als ich die Gebäckschachtel überreichte, sagte Leylas Mutter: ‹Warum haben Sie sich die Mühe gemacht? Das wäre doch nicht nötig gewesen!›"
+      },
+      {
+       "fa": "او جعبه را بی‌آنکه باز کند به آشپزخانه برد؛ بعدها لیلا توضیح داد که بسیاری از خانواده‌ها هدیه را جلوی مهمان باز نمی‌کنند.",
+       "tr": "",
+       "de": "Sie brachte die Schachtel ungeöffnet in die Küche; später erklärte Leyla, dass viele Familien ein Geschenk nicht vor dem Gast öffnen."
+      },
+      {
+       "fa": "مرا به بالای مجلس، روی مبلی دور از در، راهنمایی کردند؛ این جا معمولا به مهمان محترم یا مسن‌تر می‌رسد.",
+       "tr": "",
+       "de": "Man führte mich zum Ehrenplatz, auf ein Sofa weit weg von der Tür; dieser Platz steht meist einem geehrten oder älteren Gast zu."
+      },
+      {
+       "fa": "من تعارف کردم که پدر لیلا آنجا بنشیند، اما او اصرار کرد و من سرانجام پذیرفتم.",
+       "tr": "",
+       "de": "Ich bot an, dass Leylas Vater dort sitzt, aber er bestand darauf, und schließlich nahm ich an."
+      },
+      {
+       "fa": "چند دقیقه بعد، چای در استکان‌های کمرباریک و ظرف بزرگی از میوه آمد.",
+       "tr": "",
+       "de": "Ein paar Minuten später kamen Tee in taillierten Teegläsern und eine große Obstschale."
+      },
+      {
+       "fa": "مادر لیلا برایم خیار پوست کند و در بشقابم گذاشت؛ انگار وظیفه‌ی خود می‌دانست که بشقاب مهمان هیچ‌وقت خالی نماند.",
+       "tr": "",
+       "de": "Leylas Mutter schälte mir eine Gurke und legte sie auf meinen Teller; es war, als sähe sie es als ihre Pflicht an, dass der Teller des Gastes nie leer bleibt."
+      },
+      {
+       "fa": "هر بار که می‌گفتم «ممنون، سیرم»، او می‌گفت: «تعارف نکنید، اینجا خانه‌ی خودتان است.»",
+       "tr": "",
+       "de": "Jedes Mal, wenn ich sagte ‹Danke, ich bin satt›, sagte sie: ‹Keine Umstände, fühlen Sie sich wie zu Hause.›"
+      },
+      {
+       "fa": "شام روی سفره‌ای بزرگ چیده شده بود: قورمه‌سبزی، جوجه‌کباب، برنج زعفرانی و ته‌دیگ.",
+       "tr": "",
+       "de": "Das Abendessen war auf einer großen Tafel angerichtet: Ghormeh Sabzi, Hähnchenspieße, Safranreis und Tahdig."
+      },
+      {
+       "fa": "وقتی بشقابم را تمام کردم، مادر لیلا دوباره برایم برنج کشید؛ لیلا آهسته گفت: «اگر واقعا سیری، کمی در بشقابت باقی بگذار.»",
+       "tr": "",
+       "de": "Als ich meinen Teller leer gegessen hatte, gab mir Leylas Mutter noch einmal Reis; Leyla flüsterte: ‹Wenn du wirklich satt bist, lass ein wenig auf dem Teller.›"
+      },
+      {
+       "fa": "پس از شام از آشپزی مادر لیلا تعریف کردم و گفتم: «دستتان درد نکند، خیلی خوشمزه بود.»",
+       "tr": "",
+       "de": "Nach dem Essen lobte ich die Kochkunst von Leylas Mutter und sagte: ‹Vielen Dank für Ihre Mühe, es war sehr lecker.›"
+      },
+      {
+       "fa": "او با فروتنی جواب داد: «قابل شما را نداشت؛ نوش جان.»",
+       "tr": "",
+       "de": "Sie antwortete bescheiden: ‹Es war Ihrer nicht würdig; wohl bekomm’s.›"
+      },
+      {
+       "fa": "کمی بعد، وقتی برای برداشتن کتابی ایستادم، پشتم به برادر کوچک لیلا بود؛ عذرخواهی کردم و او فورا گفت: «گل پشت و رو ندارد.»",
+       "tr": "",
+       "de": "Etwas später stand ich auf, um ein Buch zu holen, und kehrte dabei Leylas jüngerem Bruder den Rücken zu; ich entschuldigte mich, und er sagte sofort: ‹Eine Blume hat keine Vorder- und Rückseite.›"
+      },
+      {
+       "fa": "حدود ساعت یازده گفتم: «با اجازه‌تان، دیگر زحمت را کم کنم.»",
+       "tr": "",
+       "de": "Gegen elf Uhr sagte ich: ‹Mit Ihrer Erlaubnis möchte ich Ihnen keine Mühe mehr machen.›"
+      },
+      {
+       "fa": "پدر لیلا گفت: «کجا؟ تازه سر شب است!» و من کمی دیگر ماندم، چون لیلا گفته بود که میزبان معمولا یک بار اصرار می‌کند.",
+       "tr": "",
+       "de": "Leylas Vater sagte: ‹Wohin denn? Der Abend hat doch gerade erst begonnen!›, und ich blieb noch ein wenig, denn Leyla hatte gesagt, dass der Gastgeber meist einmal darauf besteht."
+      },
+      {
+       "fa": "نیم ساعت بعد دوباره بلند شدم و این بار میزبان‌ها مرا تا دم در و حتی تا کنار خیابان بدرقه کردند.",
+       "tr": "",
+       "de": "Eine halbe Stunde später stand ich wieder auf, und diesmal begleiteten mich die Gastgeber bis zur Tür und sogar bis zur Straße."
+      },
+      {
+       "fa": "مادر لیلا ظرفی از غذای باقی‌مانده را هم برایم بسته‌بندی کرد و گفت: «برای ناهار فردایتان.»",
+       "tr": "",
+       "de": "Leylas Mutter packte mir auch eine Dose mit dem restlichen Essen ein und sagte: ‹Für Ihr Mittagessen morgen.›"
+      },
+      {
+       "fa": "در راه خانه فکر کردم که این شب، بیش از هر کلاس دانشگاهی، درباره‌ی تعارف به من درس داده است.",
+       "tr": "",
+       "de": "Auf dem Heimweg dachte ich, dass mir dieser Abend mehr über Taarof beigebracht hat als jede Lehrveranstaltung an der Uni."
+      },
+      {
+       "fa": "فردای آن روز، طبق توصیه‌ی لیلا، پیامی کوتاه برای پدر و مادرش فرستادم و دوباره تشکر کردم.",
+       "tr": "",
+       "de": "Am nächsten Tag schickte ich, wie Leyla empfohlen hatte, ihren Eltern eine kurze Nachricht und bedankte mich noch einmal."
+      },
+      {
+       "fa": "لیلا می‌گوید در خانواده‌های ایرانی به هر مهمانی معمولا با یک «بازدید» پاسخ داده می‌شود؛ یعنی حالا نوبت من است که آنها را دعوت کنم.",
+       "tr": "",
+       "de": "Leyla sagt, in iranischen Familien werde jede Einladung meist mit einem ‹Gegenbesuch› erwidert; das heißt, jetzt bin ich an der Reihe, sie einzuladen."
+      },
+      {
+       "fa": "هنوز نمی‌دانم در آپارتمان کوچکم چطور از آنها پذیرایی کنم، اما می‌ترسم اگر دعوتشان نکنم، فکر کنند قدرشناس نیستم.",
+       "tr": "",
+       "de": "Ich weiß noch nicht, wie ich sie in meiner kleinen Wohnung bewirten soll, aber ich fürchte, wenn ich sie nicht einlade, denken sie, ich sei undankbar."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "یوناس دست خالی به مهمانی رفت.",
+       "fest": true,
+       "erkl": "Er brachte <b>eine Schachtel Gebäck und einen kleinen Blumenstrauß</b> mit."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "مادر لیلا هدیه را همان لحظه باز کرد.",
+       "fest": true,
+       "erkl": "Sie brachte die Schachtel <b>ungeöffnet</b> in die Küche."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "یوناس را به بالای مجلس راهنمایی کردند.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "برادر لیلا گفت: «گل پشت و رو ندارد.»",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "میزبان‌ها یوناس را فقط تا دم اتاق بدرقه کردند.",
+       "fest": true,
+       "erkl": "Sie begleiteten ihn <b>bis zur Tür und sogar bis zur Straße</b>."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Was hatte Leyla Jonas geraten?",
+       "optionen": [
+        "pünktlich, aber nicht zu früh zu kommen und nicht mit leeren Händen",
+        "möglichst früh zu kommen",
+        "kein Geschenk mitzubringen"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was gab es zum Abendessen?",
+       "optionen": [
+        "Ghormeh Sabzi, Hähnchenspieße, Safranreis und Tahdig",
+        "nur Obst und Tee",
+        "Suppe und Brot"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Warum blieb Jonas nach elf Uhr noch eine halbe Stunde?",
+       "optionen": [
+        "Leylas Vater bestand darauf, und Leyla hatte ihn darauf vorbereitet.",
+        "Es regnete stark.",
+        "Er hatte seinen Schlüssel vergessen."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was ist laut Leyla jetzt Jonas’ Aufgabe?",
+       "optionen": [
+        "die Familie zu einem Gegenbesuch einzuladen",
+        "ein Gedicht zu schreiben",
+        "das Gebäck zurückzugeben"
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "لیلا از قبل چند نکته به من گفته بود: «سر وقت بیا، اما نه زودتر؛ دست خالی هم نیا.»",
+       "tr": "",
+       "de": "Leyla hatte mir vorher ein paar Hinweise gegeben: ‹Komm pünktlich, aber nicht früher; und komm nicht mit leeren Händen.›"
+      },
+      {
+       "fa": "برای همین، سر راه از یک قنادی جعبه‌ای شیرینی خریدم و یک دسته‌گل کوچک هم گرفتم.",
+       "tr": "",
+       "de": "Deshalb habe ich unterwegs in einer Konditorei eine Schachtel Gebäck gekauft und auch einen kleinen Blumenstrauß besorgt."
+      },
+      {
+       "fa": "دم در، پدر لیلا با لبخند گفت: «خوش آمدید، بفرمایید تو!» و من همان‌طور که لیلا یادم داده بود، گفتم: «خیلی ممنون، ببخشید مزاحم شدم.»",
+       "tr": "",
+       "de": "An der Tür sagte Leylas Vater lächelnd: ‹Willkommen, kommen Sie herein!›, und ich sagte, wie Leyla es mir beigebracht hatte: ‹Vielen Dank, entschuldigen Sie die Störung.›"
+      },
+      {
+       "fa": "کفش‌هایم را درآوردم؛ در بیشتر خانه‌های ایرانی با کفش وارد اتاق نمی‌شوند و گاهی برای مهمان دمپایی می‌گذارند.",
+       "tr": "",
+       "de": "Ich zog meine Schuhe aus; in den meisten iranischen Wohnungen betritt man die Zimmer nicht mit Schuhen, und manchmal stellt man dem Gast Hausschuhe hin."
+      },
+      {
+       "fa": "وقتی جعبه‌ی شیرینی را دادم، مادر لیلا گفت: «چرا زحمت کشیدید؟ راضی به زحمت نبودیم!»",
+       "tr": "",
+       "de": "Als ich die Gebäckschachtel überreichte, sagte Leylas Mutter: ‹Warum haben Sie sich die Mühe gemacht? Das wäre doch nicht nötig gewesen!›"
+      },
+      {
+       "fa": "او جعبه را بی‌آنکه باز کند به آشپزخانه برد؛ بعدها لیلا توضیح داد که بسیاری از خانواده‌ها هدیه را جلوی مهمان باز نمی‌کنند.",
+       "tr": "",
+       "de": "Sie brachte die Schachtel ungeöffnet in die Küche; später erklärte Leyla, dass viele Familien ein Geschenk nicht vor dem Gast öffnen."
       }
      ]
     }
@@ -527,6 +1028,16 @@
        "de": "Er hat wohl erwartet, dass Sie darauf bestehen. ‹Ist es nicht wert› ist eine Höflichkeitsfloskel, kein echtes Angebot."
       },
       {
+       "fa": "یوناس: پس چرا اصلا چنین چیزی می‌گوید؟ اگر پول می‌خواهد، چرا مستقیم نمی‌گوید؟",
+       "tr": "",
+       "de": "Warum sagt er so etwas dann überhaupt? Wenn er Geld will, warum sagt er es nicht direkt?"
+      },
+      {
+       "fa": "دکتر صادقی: این جمله راهی برای نشان دادن احترام است. راننده با آن می‌گوید که شما برایش مهم‌تر از پول هستید، اما هر دو طرف می‌دانند که کرایه باید پرداخت شود.",
+       "tr": "",
+       "de": "Dieser Satz ist ein Weg, Respekt zu zeigen. Der Fahrer sagt damit, dass Sie ihm wichtiger sind als das Geld, aber beide Seiten wissen, dass der Fahrpreis bezahlt werden muss."
+      },
+      {
        "fa": "یوناس: پس از کجا بفهمم که کسی واقعا تعارف نمی‌کند؟",
        "tr": "",
        "de": "Woran erkenne ich dann, dass jemand es wirklich ernst meint?"
@@ -537,14 +1048,34 @@
        "de": "Es gibt eine einfache Regel: Bestehen Sie zwei- oder dreimal darauf. Lehnt er dann immer noch ab, meint er es wahrscheinlich ernst."
       },
       {
+       "fa": "یوناس: در تاکسی‌های اینترنتی هم همین‌طور است؟",
+       "tr": "",
+       "de": "Ist das bei App-Taxis genauso?"
+      },
+      {
+       "fa": "دکتر صادقی: کمتر. آنجا کرایه از پیش در برنامه مشخص شده و جای زیادی برای تعارف نمی‌ماند.",
+       "tr": "",
+       "de": "Weniger. Dort ist der Fahrpreis vorher in der App festgelegt, und es bleibt wenig Raum für Taarof."
+      },
+      {
        "fa": "یوناس: نکند حالا فکر کند که همه‌ی خارجی‌ها بی‌ادب‌اند؟",
        "tr": "",
        "de": "Was, wenn er jetzt denkt, alle Ausländer seien unhöflich?"
       },
       {
-       "fa": "دکتر صادقی: نگران نباشید. ظاهرا او هم حالا یک داستان خنده‌دار برای تعریف کردن دارد!",
+       "fa": "دکتر صادقی: نگران نباشید. رانندگان تهران با مسافران خارجی زیاد سروکار دارند؛ ظاهرا متوجه شده بود که شما این قاعده را نمی‌دانستید.",
        "tr": "",
-       "de": "Keine Sorge. Offenbar hat er jetzt auch eine lustige Geschichte zu erzählen!"
+       "de": "Keine Sorge. Teheraner Fahrer haben viel mit ausländischen Fahrgästen zu tun; offenbar hatte er gemerkt, dass Sie diese Regel nicht kannten."
+      },
+      {
+       "fa": "یوناس: دفعه‌ی بعد حتما اصرار می‌کنم، وگرنه خودم هم معذب می‌شوم.",
+       "tr": "",
+       "de": "Nächstes Mal bestehe ich auf jeden Fall darauf, sonst fühle ich mich selbst unwohl."
+      },
+      {
+       "fa": "دکتر صادقی: کار درستی است. و اگر باز هم مطمئن نبودید، با لبخند بپرسید: «جدی می‌فرمایید؟»",
+       "tr": "",
+       "de": "Das ist richtig. Und wenn Sie wieder unsicher sind, fragen Sie mit einem Lächeln: ‹Meinen Sie das ernst?›"
       }
      ]
     },
@@ -574,6 +1105,16 @@
        "de": "Er hat wohl erwartet, dass Sie darauf bestehen. ‹Ist es nicht wert› ist eine Höflichkeitsfloskel, kein echtes Angebot."
       },
       {
+       "fa": "یوناس: پس چرا اصلا چنین چیزی می‌گوید؟ اگر پول می‌خواهد، چرا مستقیم نمی‌گوید؟",
+       "tr": "",
+       "de": "Warum sagt er so etwas dann überhaupt? Wenn er Geld will, warum sagt er es nicht direkt?"
+      },
+      {
+       "fa": "دکتر صادقی: این جمله راهی برای نشان دادن احترام است. راننده با آن می‌گوید که شما برایش مهم‌تر از پول هستید، اما هر دو طرف می‌دانند که کرایه باید پرداخت شود.",
+       "tr": "",
+       "de": "Dieser Satz ist ein Weg, Respekt zu zeigen. Der Fahrer sagt damit, dass Sie ihm wichtiger sind als das Geld, aber beide Seiten wissen, dass der Fahrpreis bezahlt werden muss."
+      },
+      {
        "fa": "یوناس: پس از کجا بفهمم که کسی واقعا تعارف نمی‌کند؟",
        "tr": "",
        "de": "Woran erkenne ich dann, dass jemand es wirklich ernst meint?"
@@ -584,14 +1125,34 @@
        "de": "Es gibt eine einfache Regel: Bestehen Sie zwei- oder dreimal darauf. Lehnt er dann immer noch ab, meint er es wahrscheinlich ernst."
       },
       {
+       "fa": "یوناس: در تاکسی‌های اینترنتی هم همین‌طور است؟",
+       "tr": "",
+       "de": "Ist das bei App-Taxis genauso?"
+      },
+      {
+       "fa": "دکتر صادقی: کمتر. آنجا کرایه از پیش در برنامه مشخص شده و جای زیادی برای تعارف نمی‌ماند.",
+       "tr": "",
+       "de": "Weniger. Dort ist der Fahrpreis vorher in der App festgelegt, und es bleibt wenig Raum für Taarof."
+      },
+      {
        "fa": "یوناس: نکند حالا فکر کند که همه‌ی خارجی‌ها بی‌ادب‌اند؟",
        "tr": "",
        "de": "Was, wenn er jetzt denkt, alle Ausländer seien unhöflich?"
       },
       {
-       "fa": "دکتر صادقی: نگران نباشید. ظاهرا او هم حالا یک داستان خنده‌دار برای تعریف کردن دارد!",
+       "fa": "دکتر صادقی: نگران نباشید. رانندگان تهران با مسافران خارجی زیاد سروکار دارند؛ ظاهرا متوجه شده بود که شما این قاعده را نمی‌دانستید.",
        "tr": "",
-       "de": "Keine Sorge. Offenbar hat er jetzt auch eine lustige Geschichte zu erzählen!"
+       "de": "Keine Sorge. Teheraner Fahrer haben viel mit ausländischen Fahrgästen zu tun; offenbar hatte er gemerkt, dass Sie diese Regel nicht kannten."
+      },
+      {
+       "fa": "یوناس: دفعه‌ی بعد حتما اصرار می‌کنم، وگرنه خودم هم معذب می‌شوم.",
+       "tr": "",
+       "de": "Nächstes Mal bestehe ich auf jeden Fall darauf, sonst fühle ich mich selbst unwohl."
+      },
+      {
+       "fa": "دکتر صادقی: کار درستی است. و اگر باز هم مطمئن نبودید، با لبخند بپرسید: «جدی می‌فرمایید؟»",
+       "tr": "",
+       "de": "Das ist richtig. Und wenn Sie wieder unsicher sind, fragen Sie mit einem Lächeln: ‹Meinen Sie das ernst?›"
       }
      ]
     },
@@ -609,20 +1170,20 @@
        "richtig": 0
       },
       {
-       "frage": "Was hat der Fahrer laut Dr. Sadeghi erwartet?",
+       "frage": "Was drückt der Fahrer laut Dr. Sadeghi mit der Floskel aus?",
        "optionen": [
-        "dass Jonas darauf besteht zu zahlen",
-        "ein großes Trinkgeld",
-        "eine Einladung zum Essen"
+        "Respekt: Der Fahrgast ist ihm wichtiger als das Geld.",
+        "dass die Fahrt kostenlos ist",
+        "dass er kein Wechselgeld hat"
        ],
        "richtig": 0
       },
       {
-       "frage": "Welche Regel nennt Dr. Sadeghi?",
+       "frage": "Warum gibt es in App-Taxis weniger Taarof?",
        "optionen": [
-        "zwei- oder dreimal darauf bestehen",
-        "nie Geld anbieten",
-        "immer sofort annehmen"
+        "Der Fahrpreis steht vorher in der App fest.",
+        "Die Fahrer sprechen nicht.",
+        "Man zahlt dort nie."
        ],
        "richtig": 0
       }
@@ -671,19 +1232,49 @@
        "de": "Ach, warum haben Sie sich die Mühe gemacht? Das war nicht nötig! Sie beschämen mich."
       },
       {
-       "fa": "یوناس: قابل شما را ندارد. دیدید؟ تعارف را خوب یاد گرفته‌ام!",
+       "fa": "یوناس: قابل شما را ندارد. می‌بینید؟ کم‌کم دارم تعارف را یاد می‌گیرم.",
        "tr": "",
-       "de": "Es ist Ihrer nicht würdig. Sehen Sie? Ich habe Taarof gut gelernt!"
+       "de": "Es ist Ihrer nicht würdig. Sehen Sie? Allmählich lerne ich Taarof."
       },
       {
-       "fa": "آقای رحیمی: آفرین! حالا یک چای بخورید و یکی از این شیرینی‌ها هم بردارید.",
+       "fa": "آقای رحیمی: آفرین! بفرمایید آنجا، بالای اتاق بنشینید.",
        "tr": "",
-       "de": "Bravo! Jetzt trinken Sie einen Tee und nehmen Sie auch eines von diesen Gebäckstücken."
+       "de": "Bravo! Bitte setzen Sie sich dort hin, an den Ehrenplatz."
       },
       {
-       "fa": "یوناس: نه، ممنون، سیرم … خب، باشد، چون اصرار می‌کنید، فقط یکی!",
+       "fa": "یوناس: نه، خواهش می‌کنم، آنجا جای شماست. من همین‌جا راحتم.",
        "tr": "",
-       "de": "Nein danke, ich bin satt … Na gut, weil Sie darauf bestehen – nur eins!"
+       "de": "Nein, bitte, das ist Ihr Platz. Ich sitze hier bequem."
+      },
+      {
+       "fa": "آقای رحیمی: اختیار دارید! سعدی می‌گوید: «تواضع ز گردن‌فرازان نکوست». یعنی فروتنی از بزرگان زیباتر است.",
+       "tr": "",
+       "de": "Aber ich bitte Sie! Saadi sagt: ‹Demut steht den Hochgestellten gut an.› Das heißt, Bescheidenheit ist bei den Großen besonders schön."
+      },
+      {
+       "fa": "یوناس: بیت زیبایی است. ولی مثل اینکه با این بیت می‌خواهید مرا قانع کنید که آنجا بنشینم!",
+       "tr": "",
+       "de": "Ein schöner Vers. Aber anscheinend wollen Sie mich mit diesem Vers überzeugen, mich dorthin zu setzen!"
+      },
+      {
+       "fa": "آقای رحیمی: دقیقا. مهمان باید حرف میزبان را بپذیرد. حالا یک چای بخورید و یکی از این شیرینی‌ها هم بردارید.",
+       "tr": "",
+       "de": "Genau. Der Gast sollte auf den Gastgeber hören. Jetzt trinken Sie einen Tee und nehmen Sie auch eines von diesen Gebäckstücken."
+      },
+      {
+       "fa": "یوناس: نه، ممنون، سیرم …",
+       "tr": "",
+       "de": "Nein danke, ich bin satt …"
+      },
+      {
+       "fa": "آقای رحیمی: تعارف نکنید! اگر نخورید، می‌ترسم فکر کنم از شیرینی خودتان خوشتان نمی‌آید.",
+       "tr": "",
+       "de": "Keine Umstände! Wenn Sie nichts nehmen, fürchte ich, Ihr eigenes Gebäck schmeckt Ihnen nicht."
+      },
+      {
+       "fa": "یوناس: خب، باشد، چون اصرار می‌کنید، فقط یکی!",
+       "tr": "",
+       "de": "Na gut, weil Sie darauf bestehen – nur eins!"
       }
      ]
     },
@@ -718,19 +1309,49 @@
        "de": "Ach, warum haben Sie sich die Mühe gemacht? Das war nicht nötig! Sie beschämen mich."
       },
       {
-       "fa": "یوناس: قابل شما را ندارد. دیدید؟ تعارف را خوب یاد گرفته‌ام!",
+       "fa": "یوناس: قابل شما را ندارد. می‌بینید؟ کم‌کم دارم تعارف را یاد می‌گیرم.",
        "tr": "",
-       "de": "Es ist Ihrer nicht würdig. Sehen Sie? Ich habe Taarof gut gelernt!"
+       "de": "Es ist Ihrer nicht würdig. Sehen Sie? Allmählich lerne ich Taarof."
       },
       {
-       "fa": "آقای رحیمی: آفرین! حالا یک چای بخورید و یکی از این شیرینی‌ها هم بردارید.",
+       "fa": "آقای رحیمی: آفرین! بفرمایید آنجا، بالای اتاق بنشینید.",
        "tr": "",
-       "de": "Bravo! Jetzt trinken Sie einen Tee und nehmen Sie auch eines von diesen Gebäckstücken."
+       "de": "Bravo! Bitte setzen Sie sich dort hin, an den Ehrenplatz."
       },
       {
-       "fa": "یوناس: نه، ممنون، سیرم … خب، باشد، چون اصرار می‌کنید، فقط یکی!",
+       "fa": "یوناس: نه، خواهش می‌کنم، آنجا جای شماست. من همین‌جا راحتم.",
        "tr": "",
-       "de": "Nein danke, ich bin satt … Na gut, weil Sie darauf bestehen – nur eins!"
+       "de": "Nein, bitte, das ist Ihr Platz. Ich sitze hier bequem."
+      },
+      {
+       "fa": "آقای رحیمی: اختیار دارید! سعدی می‌گوید: «تواضع ز گردن‌فرازان نکوست». یعنی فروتنی از بزرگان زیباتر است.",
+       "tr": "",
+       "de": "Aber ich bitte Sie! Saadi sagt: ‹Demut steht den Hochgestellten gut an.› Das heißt, Bescheidenheit ist bei den Großen besonders schön."
+      },
+      {
+       "fa": "یوناس: بیت زیبایی است. ولی مثل اینکه با این بیت می‌خواهید مرا قانع کنید که آنجا بنشینم!",
+       "tr": "",
+       "de": "Ein schöner Vers. Aber anscheinend wollen Sie mich mit diesem Vers überzeugen, mich dorthin zu setzen!"
+      },
+      {
+       "fa": "آقای رحیمی: دقیقا. مهمان باید حرف میزبان را بپذیرد. حالا یک چای بخورید و یکی از این شیرینی‌ها هم بردارید.",
+       "tr": "",
+       "de": "Genau. Der Gast sollte auf den Gastgeber hören. Jetzt trinken Sie einen Tee und nehmen Sie auch eines von diesen Gebäckstücken."
+      },
+      {
+       "fa": "یوناس: نه، ممنون، سیرم …",
+       "tr": "",
+       "de": "Nein danke, ich bin satt …"
+      },
+      {
+       "fa": "آقای رحیمی: تعارف نکنید! اگر نخورید، می‌ترسم فکر کنم از شیرینی خودتان خوشتان نمی‌آید.",
+       "tr": "",
+       "de": "Keine Umstände! Wenn Sie nichts nehmen, fürchte ich, Ihr eigenes Gebäck schmeckt Ihnen nicht."
+      },
+      {
+       "fa": "یوناس: خب، باشد، چون اصرار می‌کنید، فقط یکی!",
+       "tr": "",
+       "de": "Na gut, weil Sie darauf bestehen – nur eins!"
       }
      ]
     },
@@ -748,11 +1369,11 @@
        "richtig": 0
       },
       {
-       "frage": "Wie reagiert Herr Rahimi auf das Geschenk?",
+       "frage": "Warum zitiert Herr Rahimi Saadi?",
        "optionen": [
-        "Er sagt, das sei nicht nötig gewesen.",
-        "Er lehnt es endgültig ab.",
-        "Er sagt gar nichts."
+        "um Jonas zu überzeugen, sich auf den Ehrenplatz zu setzen",
+        "um sich zu verabschieden",
+        "um über Gebäck zu sprechen"
        ],
        "richtig": 0
       },
@@ -762,6 +1383,341 @@
         "Er nimmt nach einigem Zögern ein Gebäckstück.",
         "Er geht sofort nach Hause.",
         "Er isst die ganze Schachtel."
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d3",
+   "titel": "Dialog: Taarof in Hamburg",
+   "vorschau": "Taarof in Hamburg",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Leyla schreibt einen Artikel über Taarof und fragt ihren Bruder Bardia per Videoanruf nach seinen Erfahrungen in Deutschland.</p>"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "لیلا: بردیا، برای مقاله‌ام درباره‌ی تعارف دنبال یک تجربه‌ی واقعی هستم. تو در هامبورگ با تعارف مشکلی نداشته‌ای؟",
+       "tr": "",
+       "de": "Bardia, für meinen Artikel über Taarof suche ich eine echte Erfahrung. Hattest du in Hamburg nie Probleme mit Taarof?"
+      },
+      {
+       "fa": "بردیا: چرا، زیاد. سال اول، همکارم در دفتر به من کیک تعارف کرد و من طبق عادت گفتم «نه، ممنون».",
+       "tr": "",
+       "de": "Doch, oft. Im ersten Jahr bot mir eine Kollegin im Büro Kuchen an, und ich sagte aus Gewohnheit ‹Nein, danke›."
+      },
+      {
+       "fa": "لیلا: و لابد منتظر بودی دوباره تعارف کند؟",
+       "tr": "",
+       "de": "Und du hast bestimmt darauf gewartet, dass sie noch einmal anbietet?"
+      },
+      {
+       "fa": "بردیا: دقیقا. ولی او دیگر چیزی نگفت و کیک را برد. آنجا فهمیدم که در آلمان «نه» معمولا یعنی واقعا «نه».",
+       "tr": "",
+       "de": "Genau. Aber sie sagte nichts mehr und nahm den Kuchen mit. Da habe ich verstanden, dass ‹nein› in Deutschland meist wirklich ‹nein› bedeutet."
+      },
+      {
+       "fa": "لیلا: حالا چه می‌کنی؟",
+       "tr": "",
+       "de": "Und was machst du jetzt?"
+      },
+      {
+       "fa": "بردیا: حالا اگر چیزی بخواهم، بار اول می‌گویم «بله، ممنون». اولش معذب بودم؛ انگار بی‌ادبی می‌کردم.",
+       "tr": "",
+       "de": "Wenn ich jetzt etwas möchte, sage ich gleich beim ersten Mal ‹Ja, danke›. Anfangs war mir das unangenehm; es fühlte sich an, als wäre ich unhöflich."
+      },
+      {
+       "fa": "لیلا: در رستوران چطور؟ اینجا همه برای پرداخت حساب با هم رقابت می‌کنند.",
+       "tr": "",
+       "de": "Und im Restaurant? Hier wetteifern alle darum, die Rechnung zu bezahlen."
+      },
+      {
+       "fa": "بردیا: آنجا معمولا هر کس سهم خودش را می‌پردازد. یک بار اصرار کردم که حساب همه را بدهم و همکارانم کمی تعجب کردند.",
+       "tr": "",
+       "de": "Dort zahlt meist jeder seinen eigenen Anteil. Einmal habe ich darauf bestanden, für alle zu bezahlen, und meine Kollegen waren etwas überrascht."
+      },
+      {
+       "fa": "لیلا: نکند فکر کرده بودند که می‌خواهی خودنمایی کنی؟",
+       "tr": "",
+       "de": "Hoffentlich dachten sie nicht, du wolltest angeben?"
+      },
+      {
+       "fa": "بردیا: نه، ظاهرا فقط تعجب کرده بودند. یکی از آنها بعدا گفت در آلمان کسی که دعوت می‌کند، معمولا از قبل می‌گوید که حساب با اوست.",
+       "tr": "",
+       "de": "Nein, offenbar waren sie nur überrascht. Einer von ihnen sagte später, in Deutschland sage derjenige, der einlädt, meist vorher, dass die Rechnung auf ihn geht."
+      },
+      {
+       "fa": "لیلا: جالب است. یعنی آنجا هم قاعده‌ای هست، فقط شکلش فرق دارد.",
+       "tr": "",
+       "de": "Interessant. Es gibt dort also auch eine Regel, sie sieht nur anders aus."
+      },
+      {
+       "fa": "بردیا: همین‌طور است. به نظر من هیچ‌کدام از دو روش بهتر نیست؛ مهم این است که قواعد طرف مقابل را بشناسی.",
+       "tr": "",
+       "de": "Genau. Meiner Meinung nach ist keine der beiden Arten besser; wichtig ist, die Regeln des Gegenübers zu kennen."
+      },
+      {
+       "fa": "لیلا: اگر اجازه بدهی، همین جمله را در مقاله‌ام نقل می‌کنم.",
+       "tr": "",
+       "de": "Wenn du erlaubst, zitiere ich genau diesen Satz in meinem Artikel."
+      },
+      {
+       "fa": "بردیا: با کمال میل، فقط اسمم را ننویس. فعلا، می‌بینمت!",
+       "tr": "",
+       "de": "Sehr gern, nur schreib meinen Namen nicht. Bis dann, wir sehen uns!"
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "لیلا: بردیا، برای مقاله‌ام درباره‌ی تعارف دنبال یک تجربه‌ی واقعی هستم. تو در هامبورگ با تعارف مشکلی نداشته‌ای؟",
+       "tr": "",
+       "de": "Bardia, für meinen Artikel über Taarof suche ich eine echte Erfahrung. Hattest du in Hamburg nie Probleme mit Taarof?"
+      },
+      {
+       "fa": "بردیا: چرا، زیاد. سال اول، همکارم در دفتر به من کیک تعارف کرد و من طبق عادت گفتم «نه، ممنون».",
+       "tr": "",
+       "de": "Doch, oft. Im ersten Jahr bot mir eine Kollegin im Büro Kuchen an, und ich sagte aus Gewohnheit ‹Nein, danke›."
+      },
+      {
+       "fa": "لیلا: و لابد منتظر بودی دوباره تعارف کند؟",
+       "tr": "",
+       "de": "Und du hast bestimmt darauf gewartet, dass sie noch einmal anbietet?"
+      },
+      {
+       "fa": "بردیا: دقیقا. ولی او دیگر چیزی نگفت و کیک را برد. آنجا فهمیدم که در آلمان «نه» معمولا یعنی واقعا «نه».",
+       "tr": "",
+       "de": "Genau. Aber sie sagte nichts mehr und nahm den Kuchen mit. Da habe ich verstanden, dass ‹nein› in Deutschland meist wirklich ‹nein› bedeutet."
+      },
+      {
+       "fa": "لیلا: حالا چه می‌کنی؟",
+       "tr": "",
+       "de": "Und was machst du jetzt?"
+      },
+      {
+       "fa": "بردیا: حالا اگر چیزی بخواهم، بار اول می‌گویم «بله، ممنون». اولش معذب بودم؛ انگار بی‌ادبی می‌کردم.",
+       "tr": "",
+       "de": "Wenn ich jetzt etwas möchte, sage ich gleich beim ersten Mal ‹Ja, danke›. Anfangs war mir das unangenehm; es fühlte sich an, als wäre ich unhöflich."
+      },
+      {
+       "fa": "لیلا: در رستوران چطور؟ اینجا همه برای پرداخت حساب با هم رقابت می‌کنند.",
+       "tr": "",
+       "de": "Und im Restaurant? Hier wetteifern alle darum, die Rechnung zu bezahlen."
+      },
+      {
+       "fa": "بردیا: آنجا معمولا هر کس سهم خودش را می‌پردازد. یک بار اصرار کردم که حساب همه را بدهم و همکارانم کمی تعجب کردند.",
+       "tr": "",
+       "de": "Dort zahlt meist jeder seinen eigenen Anteil. Einmal habe ich darauf bestanden, für alle zu bezahlen, und meine Kollegen waren etwas überrascht."
+      },
+      {
+       "fa": "لیلا: نکند فکر کرده بودند که می‌خواهی خودنمایی کنی؟",
+       "tr": "",
+       "de": "Hoffentlich dachten sie nicht, du wolltest angeben?"
+      },
+      {
+       "fa": "بردیا: نه، ظاهرا فقط تعجب کرده بودند. یکی از آنها بعدا گفت در آلمان کسی که دعوت می‌کند، معمولا از قبل می‌گوید که حساب با اوست.",
+       "tr": "",
+       "de": "Nein, offenbar waren sie nur überrascht. Einer von ihnen sagte später, in Deutschland sage derjenige, der einlädt, meist vorher, dass die Rechnung auf ihn geht."
+      },
+      {
+       "fa": "لیلا: جالب است. یعنی آنجا هم قاعده‌ای هست، فقط شکلش فرق دارد.",
+       "tr": "",
+       "de": "Interessant. Es gibt dort also auch eine Regel, sie sieht nur anders aus."
+      },
+      {
+       "fa": "بردیا: همین‌طور است. به نظر من هیچ‌کدام از دو روش بهتر نیست؛ مهم این است که قواعد طرف مقابل را بشناسی.",
+       "tr": "",
+       "de": "Genau. Meiner Meinung nach ist keine der beiden Arten besser; wichtig ist, die Regeln des Gegenübers zu kennen."
+      },
+      {
+       "fa": "لیلا: اگر اجازه بدهی، همین جمله را در مقاله‌ام نقل می‌کنم.",
+       "tr": "",
+       "de": "Wenn du erlaubst, zitiere ich genau diesen Satz in meinem Artikel."
+      },
+      {
+       "fa": "بردیا: با کمال میل، فقط اسمم را ننویس. فعلا، می‌بینمت!",
+       "tr": "",
+       "de": "Sehr gern, nur schreib meinen Namen nicht. Bis dann, wir sehen uns!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Was passierte, als Bardia den Kuchen ablehnte?",
+       "optionen": [
+        "Die Kollegin bot ihn nicht noch einmal an.",
+        "Sie bestand dreimal darauf.",
+        "Sie war gekränkt und ging."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie wird im Restaurant in Deutschland laut Bardia meist bezahlt?",
+       "optionen": [
+        "Jeder zahlt seinen eigenen Anteil.",
+        "Der Älteste zahlt immer.",
+        "Man zahlt heimlich an der Kasse."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was ist laut Bardia am wichtigsten?",
+       "optionen": [
+        "die Regeln des Gegenübers zu kennen",
+        "immer direkt zu sein",
+        "nie etwas abzulehnen"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "a",
+   "titel": "Gut zu wissen",
+   "vorschau": "💡",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "„Taarof nicht!“",
+     "text": "Kurzer Infotext – tippe eine Zeile an für die Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "واژه‌ی «تعارف» از زبان عربی وارد فارسی شده است.",
+       "tr": "",
+       "de": "Das Wort ‹Taarof› ist aus dem Arabischen ins Persische gekommen."
+      },
+      {
+       "fa": "در فارسی امروز، «تعارف کردن» دو معنا دارد: چیزی را به کسی پیشنهاد کردن، و رعایت آداب ادب در گفت‌وگو.",
+       "tr": "",
+       "de": "Im heutigen Persisch hat ‹Taarof machen› zwei Bedeutungen: jemandem etwas anbieten und die Höflichkeitsformen im Gespräch beachten."
+      },
+      {
+       "fa": "جمله‌ی «به مهمان چای تعارف کرد» یعنی: به مهمان چای پیشنهاد داد.",
+       "tr": "",
+       "de": "Der Satz ‹Er bot dem Gast Tee an› verwendet das Verb im ersten Sinn."
+      },
+      {
+       "fa": "وقتی میزبان می‌گوید «تعارف نکنید!»، منظورش این است: راحت باشید و هر چه می‌خواهید بردارید.",
+       "tr": "",
+       "de": "Wenn der Gastgeber sagt ‹Machen Sie kein Taarof!›, meint er: Fühlen Sie sich wohl und nehmen Sie, was Sie möchten."
+      },
+      {
+       "fa": "و اگر کسی بگوید «با تو تعارف ندارم»، یعنی رابطه‌شان آن‌قدر صمیمی است که به این قواعد نیازی نیست.",
+       "tr": "",
+       "de": "Und wenn jemand sagt ‹Mit dir mache ich kein Taarof›, heißt das, die Beziehung ist so vertraut, dass diese Regeln nicht nötig sind."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Eine Blume hat keine Rückseite",
+     "text": "Kurzer Infotext – tippe eine Zeile an für die Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "در ایران، پشت کردن به کسی در جمع کمی بی‌ادبانه به شمار می‌آید.",
+       "tr": "",
+       "de": "In Iran gilt es als etwas unhöflich, jemandem in Gesellschaft den Rücken zuzukehren."
+      },
+      {
+       "fa": "برای همین، اگر کسی ناچار شود پشتش به دیگری باشد، مثلاً در ماشین یا در صف، عذرخواهی می‌کند: «ببخشید، پشتم به شماست.»",
+       "tr": "",
+       "de": "Wenn jemand gezwungen ist, einem anderen den Rücken zuzukehren, etwa im Auto oder in einer Schlange, entschuldigt er sich: ‹Entschuldigung, ich kehre Ihnen den Rücken zu.›"
+      },
+      {
+       "fa": "پاسخ معمول این است: «خواهش می‌کنم، گل پشت و رو ندارد.»",
+       "tr": "",
+       "de": "Die übliche Antwort lautet: ‹Bitte, eine Blume hat keine Vorder- und Rückseite.›"
+      },
+      {
+       "fa": "یعنی: شما مثل گل هستید و از هر طرف زیبا به نظر می‌رسید.",
+       "tr": "",
+       "de": "Das heißt: Sie sind wie eine Blume und sehen von jeder Seite schön aus."
+      },
+      {
+       "fa": "این جمله نمونه‌ی خوبی از تعارف است: یک عذرخواهی کوچک با یک تعریف مهربانانه پاسخ داده می‌شود.",
+       "tr": "",
+       "de": "Dieser Satz ist ein gutes Beispiel für Taarof: Eine kleine Entschuldigung wird mit einem freundlichen Kompliment beantwortet."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Wer zahlt die Rechnung?",
+     "text": "Kurzer Infotext – tippe eine Zeile an für die Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "در رستوران‌های ایران، پرداخت حساب گاهی به رقابتی دوستانه تبدیل می‌شود.",
+       "tr": "",
+       "de": "In iranischen Restaurants wird das Bezahlen der Rechnung manchmal zu einem freundschaftlichen Wettstreit."
+      },
+      {
+       "fa": "هر کس می‌خواهد حساب همه را بپردازد و دیگران را مهمان کند.",
+       "tr": "",
+       "de": "Jeder möchte für alle bezahlen und die anderen einladen."
+      },
+      {
+       "fa": "بعضی‌ها برای اینکه از این رقابت برنده بیرون بیایند، پیش از پایان غذا آهسته به صندوق می‌روند و حساب را می‌پردازند.",
+       "tr": "",
+       "de": "Manche gehen, um diesen Wettstreit zu gewinnen, schon vor dem Ende des Essens leise zur Kasse und bezahlen."
+      },
+      {
+       "fa": "در میان دوستان جوان اما «دنگی» حساب کردن، یعنی تقسیم هزینه میان همه، رایج‌تر شده است.",
+       "tr": "",
+       "de": "Unter jungen Freunden ist es dagegen üblicher geworden, ‹Dongi› abzurechnen, also die Kosten unter allen aufzuteilen."
+      },
+      {
+       "fa": "با این حال، وقتی کسی رسماً دعوت می‌کند، معمولاً انتظار می‌رود که خودش حساب را بپردازد.",
+       "tr": "",
+       "de": "Wenn jemand jedoch offiziell einlädt, erwartet man meist, dass er selbst bezahlt."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zu den Infotexten",
+     "fragen": [
+      {
+       "frage": "Was meint der Gastgeber mit <span class='fa'>تعارف نکنید!</span>?",
+       "optionen": [
+        "Fühlen Sie sich wohl und nehmen Sie, was Sie möchten.",
+        "Seien Sie nicht so unhöflich!",
+        "Gehen Sie jetzt bitte nach Hause."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was antwortet man auf ‹Entschuldigung, ich kehre Ihnen den Rücken zu›?",
+       "optionen": [
+        "‹Eine Blume hat keine Vorder- und Rückseite.›",
+        "‹Das macht nichts, setzen Sie sich.›",
+        "‹Bitte drehen Sie sich um.›"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was bedeutet <span class='fa'>دنگی حساب کردن</span>?",
+       "optionen": [
+        "die Kosten unter allen aufteilen",
+        "heimlich an der Kasse zahlen",
+        "um den Preis feilschen"
        ],
        "richtig": 0
       }
@@ -826,19 +1782,9 @@
      "links": "de",
      "paare": [
       {
-       "fa": "تعارف نکنید!",
+       "fa": "با اجازه‌تان …",
        "tr": "",
-       "de": "Keine Umstände! / Greifen Sie zu!"
-      },
-      {
-       "fa": "قابل شما را ندارد.",
-       "tr": "",
-       "de": "Es ist Ihrer nicht würdig."
-      },
-      {
-       "fa": "دستتان درد نکند.",
-       "tr": "",
-       "de": "Vielen Dank (für Ihre Mühe)."
+       "de": "Mit Ihrer Erlaubnis …"
       },
       {
        "fa": "چرا زحمت کشیدید؟",
@@ -846,14 +1792,24 @@
        "de": "Warum haben Sie sich die Mühe gemacht?"
       },
       {
-       "fa": "با اجازه‌تان …",
+       "fa": "بفرمایید.",
        "tr": "",
-       "de": "Mit Ihrer Erlaubnis …"
+       "de": "Bitte sehr. / Bitte schön."
+      },
+      {
+       "fa": "دستتان درد نکند.",
+       "tr": "",
+       "de": "Vielen Dank (für Ihre Mühe)."
       },
       {
        "fa": "خواهش می‌کنم، اصرار نکنید.",
        "tr": "",
        "de": "Bitte, bestehen Sie nicht darauf."
+      },
+      {
+       "fa": "تعارف نکنید!",
+       "tr": "",
+       "de": "Keine Umstände! / Greifen Sie zu!"
       }
      ],
      "titel": "Was bedeutet die Wendung?"
@@ -865,29 +1821,9 @@
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
-        "Es ist Ihrer nicht würdig.",
         "Bitte sehr. / Bitte schön.",
-        "Keine Umstände! / Greifen Sie zu!"
-       ],
-       "richtig": 0,
-       "fa": "قابل شما را ندارد."
-      },
-      {
-       "frage": "Was bedeutet der Satz?",
-       "optionen": [
-        "Sie beschämen mich (vor Dankbarkeit).",
-        "Bitte, bestehen Sie nicht darauf.",
-        "Mit Ihrer Erlaubnis …"
-       ],
-       "richtig": 0,
-       "fa": "شرمنده‌ام کردید."
-      },
-      {
-       "frage": "Was bedeutet der Satz?",
-       "optionen": [
-        "Bitte sehr. / Bitte schön.",
-        "Warum haben Sie sich die Mühe gemacht?",
-        "Mit Ihrer Erlaubnis …"
+        "Keine Umstände! / Greifen Sie zu!",
+        "Bitte, bestehen Sie nicht darauf."
        ],
        "richtig": 0,
        "fa": "بفرمایید."
@@ -895,9 +1831,19 @@
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
+        "Mit Ihrer Erlaubnis …",
+        "Es ist Ihrer nicht würdig.",
+        "Bitte sehr. / Bitte schön."
+       ],
+       "richtig": 0,
+       "fa": "با اجازه‌تان …"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
         "Vielen Dank (für Ihre Mühe).",
-        "Warum haben Sie sich die Mühe gemacht?",
-        "Sie beschämen mich (vor Dankbarkeit)."
+        "Bitte sehr. / Bitte schön.",
+        "Warum haben Sie sich die Mühe gemacht?"
        ],
        "richtig": 0,
        "fa": "دستتان درد نکند."
@@ -905,22 +1851,32 @@
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
-        "Warum haben Sie sich die Mühe gemacht?",
+        "Keine Umstände! / Greifen Sie zu!",
         "Bitte, bestehen Sie nicht darauf.",
-        "Sie beschämen mich (vor Dankbarkeit)."
+        "Warum haben Sie sich die Mühe gemacht?"
        ],
        "richtig": 0,
-       "fa": "چرا زحمت کشیدید؟"
+       "fa": "تعارف نکنید!"
       },
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
         "Bitte, bestehen Sie nicht darauf.",
-        "Keine Umstände! / Greifen Sie zu!",
-        "Mit Ihrer Erlaubnis …"
+        "Warum haben Sie sich die Mühe gemacht?",
+        "Es ist Ihrer nicht würdig."
        ],
        "richtig": 0,
        "fa": "خواهش می‌کنم، اصرار نکنید."
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Es ist Ihrer nicht würdig.",
+        "Keine Umstände! / Greifen Sie zu!",
+        "Sie beschämen mich (vor Dankbarkeit)."
+       ],
+       "richtig": 0,
+       "fa": "قابل شما را ندارد."
       }
      ]
     },

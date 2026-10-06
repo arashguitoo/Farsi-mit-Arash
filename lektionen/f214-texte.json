@@ -2,7 +2,7 @@
  "id": "tx",
  "art": "texte",
  "titel": "Sachtext & Dialoge",
- "beschreibung": "Sachtext, Wortschatz im Kontext, zwei Dialoge, Redemittel und Schreibaufgabe.",
+ "beschreibung": "Sachtext, Wortschatz im Kontext, Alltagstext, drei Dialoge, Infotexte, Redemittel und Schreibaufgabe.",
  "stationen": [
   {
    "id": "t1",
@@ -12,7 +12,7 @@
     {
      "typ": "info",
      "titel": "Neue Wörter im Text",
-     "text": "<p><span class='fa'>پختگی</span> – Reife · <span class='fa'>روایت</span> – Überlieferung · <span class='fa'>مایل</span> – geneigt, schräg · <span class='fa'>سرمشق</span> – Vorbild, Vorlage · <span class='fa'>دوده</span> – Ruß · <span class='fa'>صمغ</span> – Gummi (Harz) · <span class='fa'>آهار</span> – Stärke (zum Beschichten) · <span class='fa'>مهره</span> – Polierstein · <span class='fa'>انتزاعی</span> – abstrakt · <span class='fa'>حراج</span> – Auktion</p>",
+     "text": "<p><span class='fa'>الفبا</span> – Alphabet · <span class='fa'>پختگی</span> – Reife · <span class='fa'>روایت</span> – Überlieferung · <span class='fa'>دستگاه اداری</span> – Verwaltung · <span class='fa'>مایل</span> – geneigt, schräg · <span class='fa'>تناسب</span> – Proportion · <span class='fa'>سرمشق</span> – Vorbild, Vorlage · <span class='fa'>نیزار</span> – Schilfgebiet · <span class='fa'>دوده</span> – Ruß · <span class='fa'>صمغ</span> – Gummi (Harz) · <span class='fa'>آهار</span> – Stärke (zum Beschichten) · <span class='fa'>مهره</span> – Polierstein · <span class='fa'>چاپ سنگی</span> – Lithografie · <span class='fa'>انتزاعی</span> – abstrakt · <span class='fa'>حراج</span> – Auktion · <span class='fa'>تیتر</span> – Titel, Schlagzeile</p>",
      "stil": "merke"
     },
     {
@@ -24,6 +24,11 @@
        "fa": "در ایران، خوشنویسی همیشه چیزی بیش از «زیبا نوشتن» بوده است؛ بسیاری آن را یکی از مهم‌ترین هنرهای ایرانی می‌دانند.",
        "tr": "",
        "de": "In Iran war Kalligrafie immer mehr als ‹schön schreiben›; viele halten sie für eine der wichtigsten iranischen Künste."
+      },
+      {
+       "fa": "خط فارسی از الفبای عربی گرفته شده است، اما ایرانیان چهار حرف «پ، چ، ژ، گ» را به آن افزودند و در طول قرن‌ها شیوه‌های خاص خود را برای نوشتن پدید آوردند.",
+       "tr": "",
+       "de": "Die persische Schrift wurde aus dem arabischen Alphabet übernommen, doch die Iraner fügten die vier Buchstaben ‹P, Tsch, Zh, G› hinzu und entwickelten im Lauf der Jahrhunderte eigene Schreibstile."
       },
       {
        "fa": "از میان شیوه‌های گوناگون خط، نستعلیق جایگاه ویژه‌ای دارد و گاهی آن را «عروس خط‌ها» می‌نامند.",
@@ -41,9 +46,24 @@
        "de": "Einer alten Überlieferung nach schuf Mir Ali Tabrizi sie aus der Verbindung zweier älterer Schriften, Naskh und Taliq; daher kommt auch der Name ‹Nastaliq›."
       },
       {
+       "fa": "نسخ خطی منظم و خوانا بود که بیشتر برای نوشتن کتاب‌ها به کار می‌رفت، و تعلیق را بیشتر در دستگاه‌های اداری برای نامه‌های رسمی به کار می‌بردند.",
+       "tr": "",
+       "de": "Naskh war eine regelmäßige, gut lesbare Schrift, die vor allem für Bücher verwendet wurde; Taliq benutzte man vor allem in der Verwaltung für amtliche Briefe."
+      },
+      {
+       "fa": "امروز نیز بیشتر کتاب‌ها و روزنامه‌های فارسی با قلم‌هایی چاپ می‌شوند که بر پایه‌ی خط نسخ طراحی شده‌اند.",
+       "tr": "",
+       "de": "Auch heute werden die meisten persischen Bücher und Zeitungen mit Schriften gedruckt, die auf der Naskh-Schrift beruhen."
+      },
+      {
        "fa": "ویژگی اصلی نستعلیق حرکت نرم و روان حروف است: سطرها کمی مایل‌اند و حروف روی کرسی، یعنی خط فرضی زیر کلمات، بالا و پایین می‌روند.",
        "tr": "",
        "de": "Kennzeichen des Nastaliq ist die weiche, fließende Bewegung der Buchstaben: Die Zeilen sind leicht geneigt, und die Buchstaben steigen auf der Grundlinie, einer gedachten Linie unter den Wörtern, auf und ab."
+      },
+      {
+       "fa": "حروف در این خط کشیده و گرد هستند و میان آنها تناسب دقیقی وجود دارد؛ اندازه‌ی هر حرف را با «نقطه»، یعنی اثر مربع‌شکل نوک قلم، می‌سنجند.",
+       "tr": "",
+       "de": "Die Buchstaben dieser Schrift sind langgezogen und rund, und zwischen ihnen herrschen genaue Proportionen; die Größe jedes Buchstabens misst man in ‹Punkten›, also dem quadratischen Abdruck der Federspitze."
       },
       {
        "fa": "در دوره‌ی صفوی، میرعماد حسنی این خط را به چنان کمالی رساند که هنوز بسیاری از خوشنویسان قطعه‌های او را سرمشق خود می‌دانند.",
@@ -51,9 +71,24 @@
        "de": "In der Safawidenzeit brachte Mir Emad Hassani diese Schrift zu solcher Vollendung, dass viele Kalligrafen seine Blätter noch heute als Vorbild betrachten."
       },
       {
+       "fa": "میرعماد سال‌های پایانی عمرش را در اصفهان، پایتخت صفویان، گذراند و قطعه‌های او امروز در موزه‌ها و مجموعه‌های بزرگ جهان نگهداری می‌شود.",
+       "tr": "",
+       "de": "Mir Emad verbrachte seine letzten Lebensjahre in Isfahan, der Hauptstadt der Safawiden, und seine Blätter werden heute in großen Museen und Sammlungen der Welt aufbewahrt."
+      },
+      {
        "fa": "ابزار اصلی خوشنویس قلم نی است؛ نی را خشک می‌کنند و با قلمتراش سرش را به شکلی مایل می‌برند که به آن «قط» می‌گویند.",
        "tr": "",
        "de": "Das wichtigste Werkzeug des Kalligrafen ist die Rohrfeder; man trocknet das Schilfrohr und schneidet seine Spitze mit dem Federmesser schräg an – diesen Schnitt nennt man ‹Qatt›."
+      },
+      {
+       "fa": "مشهورترین نی‌ها از نیزارهای اطراف دزفول در خوزستان به دست می‌آیند و خوشنویسان آنها را پیش از استفاده مدتی خشک می‌کنند.",
+       "tr": "",
+       "de": "Die bekanntesten Schilfrohre stammen aus den Schilfgebieten um Dezful in Chuzestan, und die Kalligrafen lassen sie vor dem Gebrauch eine Zeit lang trocknen."
+      },
+      {
+       "fa": "خوشنویسان می‌گویند که قط خوب نیمی از کار است؛ اگر سر قلم درست بریده نشود، حروف هرگز زیبا نخواهند شد.",
+       "tr": "",
+       "de": "Kalligrafen sagen, ein guter Federschnitt sei die halbe Arbeit; wenn die Spitze nicht richtig geschnitten ist, werden die Buchstaben nie schön."
       },
       {
        "fa": "مرکب سنتی را از دوده، صمغ و آب درست می‌کنند و در دواتی می‌ریزند که در آن لیقه، یعنی چند رشته ابریشم، قرار دارد.",
@@ -71,9 +106,19 @@
        "de": "Auch das Papier bestrich man seit alters mit Stärke und glättete es mit einem Polierstein; daher heißt es ‹Ahar-Mohre-Papier›."
       },
       {
+       "fa": "سطح صاف این کاغذ به قلم اجازه می‌دهد که نرم حرکت کند و مرکب در کاغذ پخش نشود.",
+       "tr": "",
+       "de": "Die glatte Oberfläche dieses Papiers lässt die Feder weich gleiten und verhindert, dass die Tinte verläuft."
+      },
+      {
        "fa": "شاگرد سال‌ها زیر نظر یک استاد تمرین می‌کند: اول حروف تنها، بعد ترکیب حروف و در پایان سطرهای کامل.",
        "tr": "",
        "de": "Ein Schüler übt jahrelang unter Anleitung eines Meisters: zuerst einzelne Buchstaben, dann Buchstabenverbindungen und schließlich ganze Zeilen."
+      },
+      {
+       "fa": "امروز انجمن خوشنویسان ایران دوره‌هایی در چند مرحله، از مقدماتی تا ممتاز، برگزار می‌کند و هنرجویان در پایان هر مرحله امتحان می‌دهند.",
+       "tr": "",
+       "de": "Heute bietet der iranische Kalligrafenverband Kurse in mehreren Stufen an, von der Grundstufe bis zur Meisterstufe, und die Lernenden legen am Ende jeder Stufe eine Prüfung ab."
       },
       {
        "fa": "این تمرین‌ها را «مشق» می‌نامند؛ صفحه‌هایی که خوشنویس بارها روی آنها نوشته تا تقریبا سیاه شوند، «سیاه‌مشق» نام دارند.",
@@ -86,9 +131,14 @@
        "de": "Interessanterweise wurde das Siyah-Mashq nach und nach zu einer eigenständigen Kunstform; darin sind Rhythmus und Bewegung der Buchstaben wichtiger als die Bedeutung der Wörter."
       },
       {
-       "fa": "بعدها، دبیران و منشیان برای نوشتن سریع‌تر نامه‌ها و اسناد، شکل شکسته‌ای از نستعلیق را پدید آوردند.",
+       "fa": "در دوره‌ی قاجار، میرزا غلامرضا اصفهانی سیاه‌مشق‌هایی آفرید که امروز از مشهورترین نمونه‌های این شیوه به شمار می‌روند.",
        "tr": "",
-       "de": "Später entwickelten Schreiber und Sekretäre eine ‹gebrochene› Form des Nastaliq, um Briefe und Urkunden schneller zu schreiben."
+       "de": "In der Kadscharenzeit schuf Mirza Gholamreza Esfahani Siyah-Mashq-Blätter, die heute zu den berühmtesten Beispielen dieses Stils zählen."
+      },
+      {
+       "fa": "پیش‌تر، دبیران و منشیان برای نوشتن سریع‌تر نامه‌ها و اسناد، شکل شکسته‌ای از نستعلیق را پدید آورده بودند.",
+       "tr": "",
+       "de": "Schon zuvor hatten Schreiber und Sekretäre eine ‹gebrochene› Form des Nastaliq entwickelt, um Briefe und Urkunden schneller zu schreiben."
       },
       {
        "fa": "شکسته‌نستعلیق بسیار زیبا و پرشتاب است، اما خواندنش حتی برای ایرانیان هم گاهی دشوار است.",
@@ -101,6 +151,11 @@
        "de": "Thema der meisten Kalligrafie-Blätter ist Dichtung: Verse von Hafes, Saadi, Rumi oder Khayyam, sorgfältig auf dem Blatt angeordnet."
       },
       {
+       "fa": "خوشنویس پیش از نوشتن، جای کلمه‌ها را در صفحه با دقت طراحی می‌کند و ممکن است برای یک قطعه‌ی کوچک بارها طرح اولیه بکشد.",
+       "tr": "",
+       "de": "Bevor der Kalligraf schreibt, plant er die Position der Wörter auf dem Blatt genau und fertigt für ein kleines Blatt unter Umständen viele Entwürfe an."
+      },
+      {
        "fa": "در یک قطعه‌ی خوب، فضای خالی میان کلمات همان‌قدر مهم است که خود حروف؛ ترکیب‌بندی صفحه باید نفس بکشد.",
        "tr": "",
        "de": "In einem guten Blatt ist der Leerraum zwischen den Wörtern genauso wichtig wie die Buchstaben selbst; die Komposition des Blattes muss atmen."
@@ -111,6 +166,16 @@
        "de": "Oft schmückte man den Rand des Blattes mit Goldmalerei, also mit goldenen und farbigen Ornamenten."
       },
       {
+       "fa": "در قرن نوزدهم، چاپ سنگی در ایران رواج یافت؛ در این روش، خوشنویس متن را روی کاغذ می‌نوشت و همان دست‌خط چاپ می‌شد.",
+       "tr": "",
+       "de": "Im 19. Jahrhundert verbreitete sich in Iran die Lithografie; dabei schrieb ein Kalligraf den Text auf Papier, und genau diese Handschrift wurde gedruckt."
+      },
+      {
+       "fa": "به این ترتیب، حتی کتاب‌های چاپی تا مدت‌ها ظاهری خوشنویسی‌شده داشتند.",
+       "tr": "",
+       "de": "So hatten selbst gedruckte Bücher lange Zeit ein kalligrafisches Aussehen."
+      },
+      {
        "fa": "در نیمه‌ی دوم قرن بیستم، گروهی از هنرمندان ایرانی خوشنویسی را با نقاشی مدرن پیوند زدند و هنری تازه به نام «نقاشیخط» پدید آمد.",
        "tr": "",
        "de": "In der zweiten Hälfte des 20. Jahrhunderts verbanden einige iranische Künstler die Kalligrafie mit moderner Malerei, und es entstand eine neue Kunst namens ‹Naqqashi-Khatt›."
@@ -119,6 +184,11 @@
        "fa": "در نقاشیخط، حروف دیگر فقط برای خواندن نیستند؛ رنگ می‌گیرند، روی هم می‌افتند و به شکل‌هایی انتزاعی تبدیل می‌شوند.",
        "tr": "",
        "de": "In der Kalligrafie-Malerei sind Buchstaben nicht mehr nur zum Lesen da; sie bekommen Farbe, überlagern sich und werden zu abstrakten Formen."
+      },
+      {
+       "fa": "هنرمندانی مانند محمد احصایی و رضا مافی از چهره‌های شناخته‌شده‌ی این شیوه‌اند.",
+       "tr": "",
+       "de": "Künstler wie Mohammad Ehsai und Reza Mafi gehören zu den bekannten Vertretern dieses Stils."
       },
       {
        "fa": "امروز آثار این هنرمندان در نمایشگاه‌ها و حراج‌های بین‌المللی دیده می‌شود.",
@@ -141,6 +211,11 @@
        "de": "Junge Designer lassen sich in Typografie und Grafikdesign von der Kalligrafie inspirieren und gestalten Plakate, Logos und Buchumschläge mit persischen Buchstaben."
       },
       {
+       "fa": "در شهرهای ایران، از تابلوی مغازه‌ها تا جلد کتاب‌ها و تیتر مجله‌ها، می‌توان رد پای نستعلیق را دید.",
+       "tr": "",
+       "de": "In Irans Städten kann man die Spuren des Nastaliq überall sehen – von Ladenschildern bis zu Buchumschlägen und Zeitschriftentiteln."
+      },
+      {
        "fa": "به این ترتیب، هنری که قرن‌ها با قلم نی زنده مانده، امروز روی صفحه‌ی موبایل هم راه خود را پیدا می‌کند.",
        "tr": "",
        "de": "So findet eine Kunst, die jahrhundertelang mit der Rohrfeder lebendig blieb, heute auch auf dem Handybildschirm ihren Weg."
@@ -151,6 +226,16 @@
      "typ": "wahl",
      "titel": "Richtig oder falsch?",
      "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "ایرانیان چهار حرف به الفبای عربی افزودند.",
+       "fest": true
+      },
       {
        "frage": "Richtig oder falsch?",
        "optionen": [
@@ -210,6 +295,17 @@
         "falsch"
        ],
        "richtig": 1,
+       "fa": "در چاپ سنگی، متن را با حروف فلزی آماده می‌کردند.",
+       "fest": true,
+       "erkl": "Ein Kalligraf schrieb den Text <b>von Hand</b>, und diese Handschrift wurde gedruckt."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
        "fa": "ساختن قلم رایانه‌ای برای نستعلیق همیشه آسان بوده است.",
        "fest": true,
        "erkl": "Es war jahrelang <b>sehr schwierig</b>, weil die Buchstaben geneigt sind und sich überlagern."
@@ -230,6 +326,15 @@
        "richtig": 0
       },
       {
+       "frage": "Mit welcher Schrift werden die meisten persischen Bücher heute gedruckt?",
+       "optionen": [
+        "mit Schriften auf Naskh-Basis",
+        "mit Nastaliq-Fonts",
+        "mit Schekaste-Nastaliq"
+       ],
+       "richtig": 0
+      },
+      {
        "frage": "Womit schneidet man die Rohrfeder zu?",
        "optionen": [
         "mit dem Federmesser",
@@ -239,11 +344,11 @@
        "richtig": 0
       },
       {
-       "frage": "Was steht meist auf Kalligrafie-Blättern?",
+       "frage": "Wofür ist Mirza Gholamreza Esfahani berühmt?",
        "optionen": [
-        "Verse von Dichtern wie Hafes und Saadi",
-        "Zeitungsnachrichten",
-        "Briefe von Königen"
+        "für seine Siyah-Mashq-Blätter",
+        "für die Erfindung der Lithografie",
+        "für einen Computerfont"
        ],
        "richtig": 0
       },
@@ -273,6 +378,11 @@
      "frage": "Bring die Sätze in die Reihenfolge des Textes.",
      "items": [
       {
+       "fa": "خط فارسی از الفبای عربی گرفته شده است، اما ایرانیان چهار حرف «پ، چ، ژ، گ» را به آن افزودند و در طول قرن‌ها شیوه‌های خاص خود را برای نوشتن پدید آوردند.",
+       "tr": "",
+       "de": "Die persische Schrift wurde aus dem arabischen Alphabet übernommen, doch die Iraner fügten die vier Buchstaben ‹P, Tsch, Zh, G› hinzu und entwickelten im Lauf der Jahrhunderte eigene Schreibstile."
+      },
+      {
        "fa": "از میان شیوه‌های گوناگون خط، نستعلیق جایگاه ویژه‌ای دارد و گاهی آن را «عروس خط‌ها» می‌نامند.",
        "tr": "",
        "de": "Unter den verschiedenen Schriftstilen hat das Nastaliq einen besonderen Rang; man nennt es manchmal die ‹Braut der Schriften›."
@@ -288,19 +398,14 @@
        "de": "Einer alten Überlieferung nach schuf Mir Ali Tabrizi sie aus der Verbindung zweier älterer Schriften, Naskh und Taliq; daher kommt auch der Name ‹Nastaliq›."
       },
       {
-       "fa": "ویژگی اصلی نستعلیق حرکت نرم و روان حروف است: سطرها کمی مایل‌اند و حروف روی کرسی، یعنی خط فرضی زیر کلمات، بالا و پایین می‌روند.",
+       "fa": "نسخ خطی منظم و خوانا بود که بیشتر برای نوشتن کتاب‌ها به کار می‌رفت، و تعلیق را بیشتر در دستگاه‌های اداری برای نامه‌های رسمی به کار می‌بردند.",
        "tr": "",
-       "de": "Kennzeichen des Nastaliq ist die weiche, fließende Bewegung der Buchstaben: Die Zeilen sind leicht geneigt, und die Buchstaben steigen auf der Grundlinie, einer gedachten Linie unter den Wörtern, auf und ab."
+       "de": "Naskh war eine regelmäßige, gut lesbare Schrift, die vor allem für Bücher verwendet wurde; Taliq benutzte man vor allem in der Verwaltung für amtliche Briefe."
       },
       {
-       "fa": "در دوره‌ی صفوی، میرعماد حسنی این خط را به چنان کمالی رساند که هنوز بسیاری از خوشنویسان قطعه‌های او را سرمشق خود می‌دانند.",
+       "fa": "امروز نیز بیشتر کتاب‌ها و روزنامه‌های فارسی با قلم‌هایی چاپ می‌شوند که بر پایه‌ی خط نسخ طراحی شده‌اند.",
        "tr": "",
-       "de": "In der Safawidenzeit brachte Mir Emad Hassani diese Schrift zu solcher Vollendung, dass viele Kalligrafen seine Blätter noch heute als Vorbild betrachten."
-      },
-      {
-       "fa": "ابزار اصلی خوشنویس قلم نی است؛ نی را خشک می‌کنند و با قلمتراش سرش را به شکلی مایل می‌برند که به آن «قط» می‌گویند.",
-       "tr": "",
-       "de": "Das wichtigste Werkzeug des Kalligrafen ist die Rohrfeder; man trocknet das Schilfrohr und schneidet seine Spitze mit dem Federmesser schräg an – diesen Schnitt nennt man ‹Qatt›."
+       "de": "Auch heute werden die meisten persischen Bücher und Zeitungen mit Schriften gedruckt, die auf der Naskh-Schrift beruhen."
       }
      ]
     }
@@ -319,8 +424,8 @@
        "frage": "<span class='fa'>در ایران، ___ همیشه چیزی بیش از «زیبا نوشتن» بوده است؛ بسیاری آن را یکی از مهم‌ترین هنرهای ایرانی می‌دانند.</span><br><span class='mini'>In Iran war Kalligrafie immer mehr als ‹schön schreiben›; viele halten sie für eine der wichtigsten iranischen Künste.</span>",
        "optionen": [
         "خوشنویسی",
-        "قط",
-        "تذهیب"
+        "زیردستی",
+        "قلمدان"
        ],
        "richtig": 0,
        "optFa": true,
@@ -328,11 +433,23 @@
        "erkl": "<span class='fa'>در ایران، خوشنویسی همیشه چیزی بیش از «زیبا نوشتن» بوده است؛ بسیاری آن را یکی از مهم‌ترین هنرهای ایرانی می‌دانند.</span>"
       },
       {
+       "frage": "<span class='fa'>خط فارسی از الفبای عربی گرفته شده است، اما ایرانیان چهار ___ «پ، چ، ژ، گ» را به آن افزودند و در طول قرن‌ها شیوه‌های خاص خود را برای نوشتن پدید آوردند.</span><br><span class='mini'>Die persische Schrift wurde aus dem arabischen Alphabet übernommen, doch die Iraner fügten die vier Buchstaben ‹P, Tsch, Zh, G› hinzu und entwickelten im Lauf der Jahrhunderte eigene Schreibstile.</span>",
+       "optionen": [
+        "حرف",
+        "شکسته‌نستعلیق",
+        "پیشرفت"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>خط فارسی از الفبای عربی گرفته شده است، اما ایرانیان چهار حرف «پ، چ، ژ، گ» را به آن افزودند و در طول قرن‌ها شیوه‌های خاص خود را برای نوشتن پدید آوردند.</span>"
+      },
+      {
        "frage": "<span class='fa'>از میان شیوه‌های گوناگون خط، ___ جایگاه ویژه‌ای دارد و گاهی آن را «عروس خط‌ها» می‌نامند.</span><br><span class='mini'>Unter den verschiedenen Schriftstilen hat das Nastaliq einen besonderen Rang; man nennt es manchmal die ‹Braut der Schriften›.</span>",
        "optionen": [
         "نستعلیق",
-        "حاشیه",
-        "ریتم"
+        "شکسته‌نستعلیق",
+        "قلمتراش"
        ],
        "richtig": 0,
        "optFa": true,
@@ -343,8 +460,8 @@
        "frage": "<span class='fa'>بنا بر روایتی قدیمی، میرعلی تبریزی آن را از ترکیب دو خط کهن‌تر، نسخ و تعلیق، ساخت؛ نام «___» نیز از همین ترکیب آمده است.</span><br><span class='mini'>Einer alten Überlieferung nach schuf Mir Ali Tabrizi sie aus der Verbindung zweier älterer Schriften, Naskh und Taliq; daher kommt auch der Name ‹Nastaliq›.</span>",
        "optionen": [
         "نستعلیق",
-        "سیاه‌مشق",
-        "معاصر"
+        "خوشنویسی",
+        "انجمن"
        ],
        "richtig": 0,
        "optFa": true,
@@ -352,11 +469,41 @@
        "erkl": "<span class='fa'>بنا بر روایتی قدیمی، میرعلی تبریزی آن را از ترکیب دو خط کهن‌تر، نسخ و تعلیق، ساخت؛ نام «نستعلیق» نیز از همین ترکیب آمده است.</span>"
       },
       {
+       "frage": "<span class='fa'>___ خطی منظم و خوانا بود که بیشتر برای نوشتن کتاب‌ها به کار می‌رفت، و تعلیق را بیشتر در دستگاه‌های اداری برای نامه‌های رسمی به کار می‌بردند.</span><br><span class='mini'>Naskh war eine regelmäßige, gut lesbare Schrift, die vor allem für Bücher verwendet wurde; Taliq benutzte man vor allem in der Verwaltung für amtliche Briefe.</span>",
+       "optionen": [
+        "نسخ",
+        "شکسته‌نستعلیق",
+        "استاد"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>نسخ خطی منظم و خوانا بود که بیشتر برای نوشتن کتاب‌ها به کار می‌رفت، و تعلیق را بیشتر در دستگاه‌های اداری برای نامه‌های رسمی به کار می‌بردند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>امروز نیز بیشتر کتاب‌ها و روزنامه‌های فارسی با قلم‌هایی چاپ می‌شوند که بر پایه‌ی خط ___ طراحی شده‌اند.</span><br><span class='mini'>Auch heute werden die meisten persischen Bücher und Zeitungen mit Schriften gedruckt, die auf der Naskh-Schrift beruhen.</span>",
+       "optionen": [
+        "نسخ",
+        "لیقه",
+        "سرمشق"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>امروز نیز بیشتر کتاب‌ها و روزنامه‌های فارسی با قلم‌هایی چاپ می‌شوند که بر پایه‌ی خط نسخ طراحی شده‌اند.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort fehlt im Text?",
+     "fragen": [
+      {
        "frage": "<span class='fa'>ویژگی اصلی ___ حرکت نرم و روان حروف است: سطرها کمی مایل‌اند و حروف روی کرسی، یعنی خط فرضی زیر کلمات، بالا و پایین می‌روند.</span><br><span class='mini'>Kennzeichen des Nastaliq ist die weiche, fließende Bewegung der Buchstaben: Die Zeilen sind leicht geneigt, und die Buchstaben steigen auf der Grundlinie, einer gedachten Linie unter den Wörtern, auf und ab.</span>",
        "optionen": [
         "نستعلیق",
-        "سیاه‌مشق",
-        "قط"
+        "نقاشیخط",
+        "خوش‌خط"
        ],
        "richtig": 0,
        "optFa": true,
@@ -364,11 +511,35 @@
        "erkl": "<span class='fa'>ویژگی اصلی نستعلیق حرکت نرم و روان حروف است: سطرها کمی مایل‌اند و حروف روی کرسی، یعنی خط فرضی زیر کلمات، بالا و پایین می‌روند.</span>"
       },
       {
-       "frage": "<span class='fa'>ابزار اصلی ___ قلم نی است؛ نی را خشک می‌کنند و با قلمتراش سرش را به شکلی مایل می‌برند که به آن «قط» می‌گویند.</span><br><span class='mini'>Das wichtigste Werkzeug des Kalligrafen ist die Rohrfeder; man trocknet das Schilfrohr und schneidet seine Spitze mit dem Federmesser schräg an – diesen Schnitt nennt man ‹Qatt›.</span>",
+       "frage": "<span class='fa'>حروف در این خط کشیده و گرد هستند و میان آنها تناسب دقیقی وجود دارد؛ اندازه‌ی هر ___ را با «نقطه»، یعنی اثر مربع‌شکل نوک قلم، می‌سنجند.</span><br><span class='mini'>Die Buchstaben dieser Schrift sind langgezogen und rund, und zwischen ihnen herrschen genaue Proportionen; die Größe jedes Buchstabens misst man in ‹Punkten›, also dem quadratischen Abdruck der Federspitze.</span>",
        "optionen": [
-        "خوشنویس",
-        "قطعه",
-        "نمایشگاه"
+        "حرف",
+        "معاصر",
+        "سیاه‌مشق"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>حروف در این خط کشیده و گرد هستند و میان آنها تناسب دقیقی وجود دارد؛ اندازه‌ی هر حرف را با «نقطه»، یعنی اثر مربع‌شکل نوک قلم، می‌سنجند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>در دوره‌ی صفوی، میرعماد حسنی این خط را به چنان کمالی رساند که هنوز بسیاری از خوشنویسان قطعه‌های او را ___ خود می‌دانند.</span><br><span class='mini'>In der Safawidenzeit brachte Mir Emad Hassani diese Schrift zu solcher Vollendung, dass viele Kalligrafen seine Blätter noch heute als Vorbild betrachten.</span>",
+       "optionen": [
+        "سرمشق",
+        "جلسه",
+        "شکسته‌نستعلیق"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>در دوره‌ی صفوی، میرعماد حسنی این خط را به چنان کمالی رساند که هنوز بسیاری از خوشنویسان قطعه‌های او را سرمشق خود می‌دانند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>ابزار اصلی خوشنویس قلم نی است؛ نی را خشک می‌کنند و با ___ سرش را به شکلی مایل می‌برند که به آن «قط» می‌گویند.</span><br><span class='mini'>Das wichtigste Werkzeug des Kalligrafen ist die Rohrfeder; man trocknet das Schilfrohr und schneidet seine Spitze mit dem Federmesser schräg an – diesen Schnitt nennt man ‹Qatt›.</span>",
+       "optionen": [
+        "قلمتراش",
+        "ترکیب‌بندی",
+        "قطعه"
        ],
        "richtig": 0,
        "optFa": true,
@@ -376,11 +547,23 @@
        "erkl": "<span class='fa'>ابزار اصلی خوشنویس قلم نی است؛ نی را خشک می‌کنند و با قلمتراش سرش را به شکلی مایل می‌برند که به آن «قط» می‌گویند.</span>"
       },
       {
+       "frage": "<span class='fa'>خوشنویسان می‌گویند که ___ خوب نیمی از کار است؛ اگر سر قلم درست بریده نشود، حروف هرگز زیبا نخواهند شد.</span><br><span class='mini'>Kalligrafen sagen, ein guter Federschnitt sei die halbe Arbeit; wenn die Spitze nicht richtig geschnitten ist, werden die Buchstaben nie schön.</span>",
+       "optionen": [
+        "قط",
+        "ترکیب‌بندی",
+        "نسخ"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>خوشنویسان می‌گویند که قط خوب نیمی از کار است؛ اگر سر قلم درست بریده نشود، حروف هرگز زیبا نخواهند شد.</span>"
+      },
+      {
        "frage": "<span class='fa'>___ سنتی را از دوده، صمغ و آب درست می‌کنند و در دواتی می‌ریزند که در آن لیقه، یعنی چند رشته ابریشم، قرار دارد.</span><br><span class='mini'>Traditionelle Tinte macht man aus Ruß, Gummi und Wasser und gießt sie in ein Tintenfass, in dem die Liqe liegt, einige Seidenfäden.</span>",
        "optionen": [
         "مرکب",
-        "قطعه",
-        "خوشنویسی"
+        "نمایشگاه",
+        "استاد"
        ],
        "richtig": 0,
        "optFa": true,
@@ -397,8 +580,8 @@
        "frage": "<span class='fa'>لیقه ___ را به خود می‌گیرد تا قلم هر بار به اندازه‌ی کافی و یکنواخت مرکب بردارد.</span><br><span class='mini'>Die Liqe saugt die Tinte auf, damit die Feder jedes Mal genug und gleichmäßig Tinte aufnimmt.</span>",
        "optionen": [
         "مرکب",
-        "هنرمند",
-        "قط"
+        "شیوه",
+        "نقاشیخط"
        ],
        "richtig": 0,
        "optFa": true,
@@ -409,8 +592,8 @@
        "frage": "<span class='fa'>کاغذ را هم از قدیم با آهار می‌پوشاندند و با مهره صاف می‌کردند؛ به همین دلیل به آن «___» می‌گویند.</span><br><span class='mini'>Auch das Papier bestrich man seit alters mit Stärke und glättete es mit einem Polierstein; daher heißt es ‹Ahar-Mohre-Papier›.</span>",
        "optionen": [
         "کاغذ آهارمهره",
-        "حاشیه",
-        "شاگرد"
+        "سیاه‌مشق",
+        "جلسه"
        ],
        "richtig": 0,
        "optFa": true,
@@ -418,11 +601,23 @@
        "erkl": "<span class='fa'>کاغذ را هم از قدیم با آهار می‌پوشاندند و با مهره صاف می‌کردند؛ به همین دلیل به آن «کاغذ آهارمهره» می‌گویند.</span>"
       },
       {
-       "frage": "<span class='fa'>___ سال‌ها زیر نظر یک استاد تمرین می‌کند: اول حروف تنها، بعد ترکیب حروف و در پایان سطرهای کامل.</span><br><span class='mini'>Ein Schüler übt jahrelang unter Anleitung eines Meisters: zuerst einzelne Buchstaben, dann Buchstabenverbindungen und schließlich ganze Zeilen.</span>",
+       "frage": "<span class='fa'>سطح صاف این کاغذ به قلم اجازه می‌دهد که نرم حرکت کند و ___ در کاغذ پخش نشود.</span><br><span class='mini'>Die glatte Oberfläche dieses Papiers lässt die Feder weich gleiten und verhindert, dass die Tinte verläuft.</span>",
        "optionen": [
-        "شاگرد",
-        "مشق",
-        "سطر"
+        "مرکب",
+        "شیوه",
+        "خوشنویسی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>سطح صاف این کاغذ به قلم اجازه می‌دهد که نرم حرکت کند و مرکب در کاغذ پخش نشود.</span>"
+      },
+      {
+       "frage": "<span class='fa'>شاگرد سال‌ها زیر نظر یک ___ تمرین می‌کند: اول حروف تنها، بعد ترکیب حروف و در پایان سطرهای کامل.</span><br><span class='mini'>Ein Schüler übt jahrelang unter Anleitung eines Meisters: zuerst einzelne Buchstaben, dann Buchstabenverbindungen und schließlich ganze Zeilen.</span>",
+       "optionen": [
+        "استاد",
+        "نستعلیق",
+        "انجمن"
        ],
        "richtig": 0,
        "optFa": true,
@@ -430,40 +625,28 @@
        "erkl": "<span class='fa'>شاگرد سال‌ها زیر نظر یک استاد تمرین می‌کند: اول حروف تنها، بعد ترکیب حروف و در پایان سطرهای کامل.</span>"
       },
       {
+       "frage": "<span class='fa'>امروز ___ خوشنویسان ایران دوره‌هایی در چند مرحله، از مقدماتی تا ممتاز، برگزار می‌کند و هنرجویان در پایان هر مرحله امتحان می‌دهند.</span><br><span class='mini'>Heute bietet der iranische Kalligrafenverband Kurse in mehreren Stufen an, von der Grundstufe bis zur Meisterstufe, und die Lernenden legen am Ende jeder Stufe eine Prüfung ab.</span>",
+       "optionen": [
+        "انجمن",
+        "تذهیب",
+        "صبر"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>امروز انجمن خوشنویسان ایران دوره‌هایی در چند مرحله، از مقدماتی تا ممتاز، برگزار می‌کند و هنرجویان در پایان هر مرحله امتحان می‌دهند.</span>"
+      },
+      {
        "frage": "<span class='fa'>این تمرین‌ها را «مشق» می‌نامند؛ صفحه‌هایی که خوشنویس بارها روی آنها نوشته تا تقریبا سیاه شوند، «___» نام دارند.</span><br><span class='mini'>Diese Übungen nennt man ‹Mashq›; Blätter, die der Kalligraf immer wieder beschrieben hat, bis sie fast schwarz sind, heißen ‹Siyah-Mashq›.</span>",
        "optionen": [
         "سیاه‌مشق",
-        "زیبایی‌شناسی",
-        "کرسی"
+        "شاگرد",
+        "شکسته‌نستعلیق"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
        "erkl": "<span class='fa'>این تمرین‌ها را «مشق» می‌نامند؛ صفحه‌هایی که خوشنویس بارها روی آنها نوشته تا تقریبا سیاه شوند، «سیاه‌مشق» نام دارند.</span>"
-      },
-      {
-       "frage": "<span class='fa'>جالب آنکه ___ کم‌کم به یک قالب هنری مستقل تبدیل شد؛ در آن، ریتم و حرکت حروف از معنای کلمات مهم‌تر است.</span><br><span class='mini'>Interessanterweise wurde das Siyah-Mashq nach und nach zu einer eigenständigen Kunstform; darin sind Rhythmus und Bewegung der Buchstaben wichtiger als die Bedeutung der Wörter.</span>",
-       "optionen": [
-        "سیاه‌مشق",
-        "مشق",
-        "خوشنویس"
-       ],
-       "richtig": 0,
-       "optFa": true,
-       "hoeren": false,
-       "erkl": "<span class='fa'>جالب آنکه سیاه‌مشق کم‌کم به یک قالب هنری مستقل تبدیل شد؛ در آن، ریتم و حرکت حروف از معنای کلمات مهم‌تر است.</span>"
-      },
-      {
-       "frage": "<span class='fa'>بعدها، دبیران و منشیان برای نوشتن سریع‌تر نامه‌ها و اسناد، شکل شکسته‌ای از ___ را پدید آوردند.</span><br><span class='mini'>Später entwickelten Schreiber und Sekretäre eine ‹gebrochene› Form des Nastaliq, um Briefe und Urkunden schneller zu schreiben.</span>",
-       "optionen": [
-        "نستعلیق",
-        "شاگرد",
-        "تایپوگرافی"
-       ],
-       "richtig": 0,
-       "optFa": true,
-       "hoeren": false,
-       "erkl": "<span class='fa'>بعدها، دبیران و منشیان برای نوشتن سریع‌تر نامه‌ها و اسناد، شکل شکسته‌ای از نستعلیق را پدید آوردند.</span>"
       }
      ]
     },
@@ -493,9 +676,297 @@
        "de": "Aus diesen Übungen entstanden Siyah-Mashq und Schekaste-Nastaliq als neue Formen."
       },
       {
+       "fa": "در قرن نوزدهم، چاپ سنگی دست‌خط خوشنویسان را به کتاب‌های چاپی آورد.",
+       "tr": "",
+       "de": "Im 19. Jahrhundert brachte die Lithografie die Handschrift der Kalligrafen in gedruckte Bücher."
+      },
+      {
        "fa": "امروز نقاشیخط، تایپوگرافی و قلم‌های رایانه‌ای این هنر را به دنیای مدرن آورده‌اند.",
        "tr": "",
        "de": "Heute haben Kalligrafie-Malerei, Typografie und Computerfonts diese Kunst in die moderne Welt gebracht."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t3",
+   "titel": "Alltag: Mein erster Kalligrafiekurs",
+   "vorschau": "Mein erster Kalligrafiekurs",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>ثبت‌نام کردن</span> – sich anmelden · <span class='fa'>شعبه</span> – Zweigstelle · <span class='fa'>وسایل</span> – Material, Utensilien · <span class='fa'>قط زدن</span> – (die Feder) schräg anschneiden · <span class='fa'>اشکال</span> – Fehler · <span class='fa'>علامت زدن</span> – markieren · <span class='fa'>جا انداختن</span> – auslassen · <span class='fa'>جزئیات</span> – Details · <span class='fa'>پرشتاب</span> – hektisch, schnell · <span class='fa'>کمیاب</span> – selten</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Alltag: Mein erster Kalligrafiekurs",
+     "text": "Alltagstext – Tippe eine Zeile an, wenn du die Übersetzung brauchst.",
+     "zeilen": [
+      {
+       "fa": "دست‌خط من همیشه بد بود؛ معلم‌های مدرسه می‌گفتند نوشته‌هایم را به سختی می‌خوانند.",
+       "tr": "",
+       "de": "Meine Handschrift war immer schlecht; die Lehrer in der Schule sagten, sie könnten meine Texte kaum lesen."
+      },
+      {
+       "fa": "پارسال، در سی‌وپنج سالگی، تصمیم گرفتم در یک کلاس مقدماتی خوشنویسی ثبت‌نام کنم.",
+       "tr": "",
+       "de": "Letztes Jahr, mit fünfunddreißig, beschloss ich, mich für einen Anfängerkurs in Kalligrafie anzumelden."
+      },
+      {
+       "fa": "کلاس در یکی از شعبه‌های انجمن خوشنویسان برگزار می‌شد؛ هفته‌ای یک جلسه‌ی دوساعته.",
+       "tr": "",
+       "de": "Der Kurs fand in einer Zweigstelle des Kalligrafenverbands statt – einmal pro Woche zwei Stunden."
+      },
+      {
+       "fa": "در جلسه‌ی اول، استاد فهرست وسایل لازم را به ما داد: چند قلم نی، مرکب، دوات با لیقه، کاغذ مخصوص و یک زیردستی.",
+       "tr": "",
+       "de": "In der ersten Stunde gab uns die Lehrerin eine Liste mit dem nötigen Material: einige Rohrfedern, Tinte, ein Tintenfass mit Liqe, Spezialpapier und eine Schreibunterlage."
+      },
+      {
+       "fa": "همه‌ی این‌ها در یک قلمدان کوچک جا می‌شد؛ قلمدانی که از آن روز همیشه همراهم است.",
+       "tr": "",
+       "de": "All das passte in einen kleinen Federkasten – einen Federkasten, den ich seit jenem Tag immer bei mir habe."
+      },
+      {
+       "fa": "استاد ما، خانم توکلی، حدود شصت سال داشت و بیش از سی سال بود که خوشنویسی درس می‌داد.",
+       "tr": "",
+       "de": "Unsere Lehrerin, Frau Tavakoli, war etwa sechzig und unterrichtete seit über dreißig Jahren Kalligrafie."
+      },
+      {
+       "fa": "او پیش از هر چیز به ما یاد داد که چطور قلم را در دست بگیریم و چطور صاف بنشینیم.",
+       "tr": "",
+       "de": "Vor allem anderen brachte sie uns bei, wie man die Feder hält und wie man gerade sitzt."
+      },
+      {
+       "fa": "سپس با قلمتراش، سر قلم را جلوی چشم ما قط زد و گفت که هر خوشنویس باید این کار را خودش یاد بگیرد.",
+       "tr": "",
+       "de": "Dann schnitt sie vor unseren Augen mit dem Federmesser die Spitze der Feder zu und sagte, dass jeder Kalligraf das selbst lernen müsse."
+      },
+      {
+       "fa": "تمرین‌های اول بسیار ساده به نظر می‌رسیدند: نوشتن یک نقطه، سپس حرف «الف» و بعد حرف «ب».",
+       "tr": "",
+       "de": "Die ersten Übungen wirkten sehr einfach: einen Punkt schreiben, dann den Buchstaben ‹Alef› und danach den Buchstaben ‹B›."
+      },
+      {
+       "fa": "اما همین حرکت‌های ساده دقت زیادی لازم داشت؛ «ب» من یا خیلی کوتاه بود یا روی کرسی نمی‌نشست.",
+       "tr": "",
+       "de": "Doch gerade diese einfachen Bewegungen verlangten viel Genauigkeit; mein ‹B› war entweder zu kurz oder saß nicht auf der Grundlinie."
+      },
+      {
+       "fa": "استاد در هر جلسه برای هر هنرجو یک سرمشق می‌نوشت و ما باید در خانه از روی آن مشق می‌کردیم.",
+       "tr": "",
+       "de": "In jeder Stunde schrieb die Lehrerin für jede und jeden eine Vorlage, nach der wir zu Hause üben mussten."
+      },
+      {
+       "fa": "در پایان جلسه، او مشق‌ها را یکی‌یکی نگاه می‌کرد و با مداد قرمز اشکال‌ها را علامت می‌زد.",
+       "tr": "",
+       "de": "Am Ende der Stunde sah sie die Übungsblätter einzeln an und markierte die Fehler mit einem roten Stift."
+      },
+      {
+       "fa": "هفته‌های اول اغلب ناامید بودم؛ گاهی یک ساعت تمرین می‌کردم و هیچ تغییری نمی‌دیدم.",
+       "tr": "",
+       "de": "In den ersten Wochen war ich oft entmutigt; manchmal übte ich eine Stunde und sah keine Veränderung."
+      },
+      {
+       "fa": "خانم توکلی می‌گفت: «خوشنویسی پیش از هر چیز تمرین صبر است؛ چشم زود یاد می‌گیرد، اما دست به زمان نیاز دارد.»",
+       "tr": "",
+       "de": "Frau Tavakoli sagte: ‹Kalligrafie ist vor allem eine Übung in Geduld; das Auge lernt schnell, aber die Hand braucht Zeit.›"
+      },
+      {
+       "fa": "او توصیه کرد که هر روز فقط بیست دقیقه تمرین کنیم، اما هیچ روزی را جا نیندازیم.",
+       "tr": "",
+       "de": "Sie riet uns, jeden Tag nur zwanzig Minuten zu üben, aber keinen Tag auszulassen."
+      },
+      {
+       "fa": "من این توصیه را جدی گرفتم و هر شب پس از کار، پشت میز آشپزخانه مشق می‌کردم.",
+       "tr": "",
+       "de": "Ich nahm diesen Rat ernst und übte jeden Abend nach der Arbeit am Küchentisch."
+      },
+      {
+       "fa": "بعد از حدود دو ماه، کم‌کم پیشرفت را در صفحه‌هایم دیدم: حروف یکنواخت‌تر شده بودند و سطرها صاف‌تر.",
+       "tr": "",
+       "de": "Nach etwa zwei Monaten sah ich allmählich Fortschritte auf meinen Blättern: Die Buchstaben waren gleichmäßiger geworden und die Zeilen gerader."
+      },
+      {
+       "fa": "در ماه سوم، ترکیب حروف و اولین کلمه‌ها را تمرین کردیم و استاد برای اولین بار یک بیت کوتاه از سعدی به ما داد.",
+       "tr": "",
+       "de": "Im dritten Monat übten wir Buchstabenverbindungen und erste Wörter, und die Lehrerin gab uns zum ersten Mal einen kurzen Vers von Saadi."
+      },
+      {
+       "fa": "نوشتن آن بیت، با همه‌ی اشتباه‌هایش، یکی از لحظه‌های خوب آن سال بود.",
+       "tr": "",
+       "de": "Diesen Vers zu schreiben, mit all seinen Fehlern, war einer der schönen Momente jenes Jahres."
+      },
+      {
+       "fa": "در کلاس ما افراد بسیار متفاوتی بودند: یک دانشجوی معماری، یک پزشک بازنشسته، یک نوجوان پانزده‌ساله و یک طراح گرافیک.",
+       "tr": "",
+       "de": "In unserem Kurs waren sehr unterschiedliche Menschen: eine Architekturstudentin, ein pensionierter Arzt, ein fünfzehnjähriger Jugendlicher und ein Grafikdesigner."
+      },
+      {
+       "fa": "هر کدام دلیلی برای آمدن داشت؛ طراح گرافیک می‌خواست حروف فارسی را بهتر بشناسد و پزشک بازنشسته می‌گفت این کار ذهنش را آرام می‌کند.",
+       "tr": "",
+       "de": "Jede und jeder hatte einen Grund zu kommen; der Grafikdesigner wollte die persischen Buchstaben besser kennenlernen, und der pensionierte Arzt sagte, die Arbeit beruhige seinen Kopf."
+      },
+      {
+       "fa": "در پایان دوره امتحانی کوتاه داشتیم و هر کدام از ما باید چند سطر را بدون سرمشق می‌نوشت.",
+       "tr": "",
+       "de": "Am Ende des Kurses hatten wir eine kurze Prüfung, und jede und jeder musste einige Zeilen ohne Vorlage schreiben."
+      },
+      {
+       "fa": "نمره‌ی من عالی نبود، اما قبول شدم و حالا در دوره‌ی متوسط هستم.",
+       "tr": "",
+       "de": "Meine Note war nicht hervorragend, aber ich habe bestanden und bin jetzt in der Mittelstufe."
+      },
+      {
+       "fa": "هنوز خوش‌خط نیستم، اما دست‌خط معمولی‌ام هم خواناتر شده است و همکارانم این را متوجه شده‌اند.",
+       "tr": "",
+       "de": "Eine schöne Schrift habe ich noch nicht, aber auch meine normale Handschrift ist lesbarer geworden, und meine Kollegen haben es bemerkt."
+      },
+      {
+       "fa": "مهم‌تر از همه، خوشنویسی به من یاد داد که آهسته کار کنم و به جزئیات توجه کنم؛ چیزی که در زندگی پرشتاب امروز کمیاب است.",
+       "tr": "",
+       "de": "Vor allem hat mich die Kalligrafie gelehrt, langsam zu arbeiten und auf Details zu achten – etwas, das im hektischen Leben von heute selten ist."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "کلاس هفته‌ای دو بار برگزار می‌شد.",
+       "fest": true,
+       "erkl": "Der Kurs fand <b>einmal pro Woche</b> zwei Stunden statt."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "استاد خودش سر قلم را جلوی هنرجوها قط زد.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "استاد توصیه کرد که هفته‌ای یک بار چند ساعت تمرین کنند.",
+       "fest": true,
+       "erkl": "Sie riet zu <b>täglich zwanzig Minuten</b>, ohne einen Tag auszulassen."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "در ماه سوم، هنرجوها یک بیت از سعدی نوشتند.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "نویسنده در امتحان پایانی قبول نشد.",
+       "fest": true,
+       "erkl": "Die Note war nicht hervorragend, aber sie hat <b>bestanden</b>."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Warum wollte die Erzählerin Kalligrafie lernen?",
+       "optionen": [
+        "Ihre Handschrift war immer schlecht.",
+        "Sie wollte Grafikdesignerin werden.",
+        "Ihr Arbeitgeber hat es verlangt."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was bekamen die Lernenden in jeder Stunde?",
+       "optionen": [
+        "eine Vorlage zum Üben zu Hause",
+        "eine neue Rohrfeder",
+        "eine Note"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was meint Frau Tavakoli mit ‹die Hand braucht Zeit›?",
+       "optionen": [
+        "Man versteht schnell, aber das Können entsteht erst durch lange Übung.",
+        "Man soll langsam schreiben.",
+        "Kalligrafie ist nur etwas für junge Menschen."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was hat die Erzählerin vor allem gelernt?",
+       "optionen": [
+        "langsam zu arbeiten und auf Details zu achten",
+        "Fonts am Computer zu gestalten",
+        "alte Briefe zu lesen"
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "پارسال، در سی‌وپنج سالگی، تصمیم گرفتم در یک کلاس مقدماتی خوشنویسی ثبت‌نام کنم.",
+       "tr": "",
+       "de": "Letztes Jahr, mit fünfunddreißig, beschloss ich, mich für einen Anfängerkurs in Kalligrafie anzumelden."
+      },
+      {
+       "fa": "کلاس در یکی از شعبه‌های انجمن خوشنویسان برگزار می‌شد؛ هفته‌ای یک جلسه‌ی دوساعته.",
+       "tr": "",
+       "de": "Der Kurs fand in einer Zweigstelle des Kalligrafenverbands statt – einmal pro Woche zwei Stunden."
+      },
+      {
+       "fa": "در جلسه‌ی اول، استاد فهرست وسایل لازم را به ما داد: چند قلم نی، مرکب، دوات با لیقه، کاغذ مخصوص و یک زیردستی.",
+       "tr": "",
+       "de": "In der ersten Stunde gab uns die Lehrerin eine Liste mit dem nötigen Material: einige Rohrfedern, Tinte, ein Tintenfass mit Liqe, Spezialpapier und eine Schreibunterlage."
+      },
+      {
+       "fa": "همه‌ی این‌ها در یک قلمدان کوچک جا می‌شد؛ قلمدانی که از آن روز همیشه همراهم است.",
+       "tr": "",
+       "de": "All das passte in einen kleinen Federkasten – einen Federkasten, den ich seit jenem Tag immer bei mir habe."
+      },
+      {
+       "fa": "استاد ما، خانم توکلی، حدود شصت سال داشت و بیش از سی سال بود که خوشنویسی درس می‌داد.",
+       "tr": "",
+       "de": "Unsere Lehrerin, Frau Tavakoli, war etwa sechzig und unterrichtete seit über dreißig Jahren Kalligrafie."
+      },
+      {
+       "fa": "او پیش از هر چیز به ما یاد داد که چطور قلم را در دست بگیریم و چطور صاف بنشینیم.",
+       "tr": "",
+       "de": "Vor allem anderen brachte sie uns bei, wie man die Feder hält und wie man gerade sitzt."
       }
      ]
     }
@@ -547,14 +1018,44 @@
        "de": "Wahrscheinlich aus der Kadscharenzeit. Sehen Sie, wie die langgezogenen Buchstaben auf den Zeilen tanzen."
       },
       {
+       "fa": "یوناس: در آن دوره خوشنویس مشهوری بود که سیاه‌مشق بنویسد؟",
+       "tr": "",
+       "de": "Gab es in dieser Zeit einen berühmten Kalligrafen, der Siyah-Mashq schrieb?"
+      },
+      {
+       "fa": "دکتر صادقی: بله، میرزا غلامرضا اصفهانی. سیاه‌مشق‌های او از مشهورترین نمونه‌های این شیوه‌اند. البته این قطعه امضا ندارد و نمی‌توان با اطمینان گفت کار کیست.",
+       "tr": "",
+       "de": "Ja, Mirza Gholamreza Esfahani. Seine Siyah-Mashq-Blätter gehören zu den berühmtesten Beispielen dieses Stils. Dieses Blatt ist allerdings nicht signiert, man kann also nicht mit Sicherheit sagen, von wem es ist."
+      },
+      {
+       "fa": "یوناس: چطور می‌شود فهمید که یک قطعه اصل است یا نه؟",
+       "tr": "",
+       "de": "Wie kann man erkennen, ob ein Blatt echt ist oder nicht?"
+      },
+      {
+       "fa": "دکتر صادقی: کارشناسان به کاغذ، مرکب، امضا و شیوه‌ی نوشتن توجه می‌کنند. گاهی شاگردان کار استاد خود را آن‌قدر دقیق تقلید می‌کردند که تشخیص آنها بسیار دشوار است.",
+       "tr": "",
+       "de": "Fachleute achten auf Papier, Tinte, Signatur und Schreibweise. Manchmal haben Schüler die Arbeit ihres Meisters so genau nachgeahmt, dass man sie kaum unterscheiden kann."
+      },
+      {
        "fa": "یوناس: آیا شاگردان امروز هم با قلم نی تمرین می‌کنند یا با قلم‌های فلزی؟",
        "tr": "",
        "de": "Üben Schüler heute auch noch mit der Rohrfeder oder mit Metallfedern?"
       },
       {
-       "fa": "دکتر صادقی: بیشترشان هنوز با قلم نی کار می‌کنند. اگر علاقه دارید، انجمن خوشنویسان کلاس‌های مقدماتی دارد. شاید آینده‌ی شما هم با قلم نی گره بخورد!",
+       "fa": "دکتر صادقی: بیشترشان هنوز با قلم نی کار می‌کنند. اگر علاقه دارید، انجمن خوشنویسان کلاس‌های مقدماتی دارد.",
        "tr": "",
-       "de": "Die meisten arbeiten noch mit der Rohrfeder. Wenn Sie Interesse haben: Der Kalligrafenverband bietet Anfängerkurse an. Vielleicht ist ja auch Ihre Zukunft mit der Rohrfeder verknüpft!"
+       "de": "Die meisten arbeiten noch mit der Rohrfeder. Wenn Sie Interesse haben: Der Kalligrafenverband bietet Anfängerkurse an."
+      },
+      {
+       "fa": "یوناس: این کلاس‌ها چقدر طول می‌کشند؟",
+       "tr": "",
+       "de": "Wie lange dauern diese Kurse?"
+      },
+      {
+       "fa": "دکتر صادقی: هر مرحله معمولا چند ماه است. اما خوشنویسی هیچ‌وقت تمام نمی‌شود؛ حتی استادان هم هر روز مشق می‌کنند. شاید آینده‌ی شما هم با قلم نی گره بخورد.",
+       "tr": "",
+       "de": "Jede Stufe dauert meist einige Monate. Aber mit der Kalligrafie ist man nie fertig; selbst Meister üben jeden Tag. Vielleicht ist ja auch Ihre Zukunft mit der Rohrfeder verknüpft."
       }
      ]
     },
@@ -594,14 +1095,44 @@
        "de": "Wahrscheinlich aus der Kadscharenzeit. Sehen Sie, wie die langgezogenen Buchstaben auf den Zeilen tanzen."
       },
       {
+       "fa": "یوناس: در آن دوره خوشنویس مشهوری بود که سیاه‌مشق بنویسد؟",
+       "tr": "",
+       "de": "Gab es in dieser Zeit einen berühmten Kalligrafen, der Siyah-Mashq schrieb?"
+      },
+      {
+       "fa": "دکتر صادقی: بله، میرزا غلامرضا اصفهانی. سیاه‌مشق‌های او از مشهورترین نمونه‌های این شیوه‌اند. البته این قطعه امضا ندارد و نمی‌توان با اطمینان گفت کار کیست.",
+       "tr": "",
+       "de": "Ja, Mirza Gholamreza Esfahani. Seine Siyah-Mashq-Blätter gehören zu den berühmtesten Beispielen dieses Stils. Dieses Blatt ist allerdings nicht signiert, man kann also nicht mit Sicherheit sagen, von wem es ist."
+      },
+      {
+       "fa": "یوناس: چطور می‌شود فهمید که یک قطعه اصل است یا نه؟",
+       "tr": "",
+       "de": "Wie kann man erkennen, ob ein Blatt echt ist oder nicht?"
+      },
+      {
+       "fa": "دکتر صادقی: کارشناسان به کاغذ، مرکب، امضا و شیوه‌ی نوشتن توجه می‌کنند. گاهی شاگردان کار استاد خود را آن‌قدر دقیق تقلید می‌کردند که تشخیص آنها بسیار دشوار است.",
+       "tr": "",
+       "de": "Fachleute achten auf Papier, Tinte, Signatur und Schreibweise. Manchmal haben Schüler die Arbeit ihres Meisters so genau nachgeahmt, dass man sie kaum unterscheiden kann."
+      },
+      {
        "fa": "یوناس: آیا شاگردان امروز هم با قلم نی تمرین می‌کنند یا با قلم‌های فلزی؟",
        "tr": "",
        "de": "Üben Schüler heute auch noch mit der Rohrfeder oder mit Metallfedern?"
       },
       {
-       "fa": "دکتر صادقی: بیشترشان هنوز با قلم نی کار می‌کنند. اگر علاقه دارید، انجمن خوشنویسان کلاس‌های مقدماتی دارد. شاید آینده‌ی شما هم با قلم نی گره بخورد!",
+       "fa": "دکتر صادقی: بیشترشان هنوز با قلم نی کار می‌کنند. اگر علاقه دارید، انجمن خوشنویسان کلاس‌های مقدماتی دارد.",
        "tr": "",
-       "de": "Die meisten arbeiten noch mit der Rohrfeder. Wenn Sie Interesse haben: Der Kalligrafenverband bietet Anfängerkurse an. Vielleicht ist ja auch Ihre Zukunft mit der Rohrfeder verknüpft!"
+       "de": "Die meisten arbeiten noch mit der Rohrfeder. Wenn Sie Interesse haben: Der Kalligrafenverband bietet Anfängerkurse an."
+      },
+      {
+       "fa": "یوناس: این کلاس‌ها چقدر طول می‌کشند؟",
+       "tr": "",
+       "de": "Wie lange dauern diese Kurse?"
+      },
+      {
+       "fa": "دکتر صادقی: هر مرحله معمولا چند ماه است. اما خوشنویسی هیچ‌وقت تمام نمی‌شود؛ حتی استادان هم هر روز مشق می‌کنند. شاید آینده‌ی شما هم با قلم نی گره بخورد.",
+       "tr": "",
+       "de": "Jede Stufe dauert meist einige Monate. Aber mit der Kalligrafie ist man nie fertig; selbst Meister üben jeden Tag. Vielleicht ist ja auch Ihre Zukunft mit der Rohrfeder verknüpft."
       }
      ]
     },
@@ -628,11 +1159,11 @@
        "richtig": 0
       },
       {
-       "frage": "Was schlägt Dr. Sadeghi vor?",
+       "frage": "Woran erkennen Fachleute, ob ein Blatt echt ist?",
        "optionen": [
-        "einen Anfängerkurs beim Kalligrafenverband",
-        "eine Reise nach Isfahan",
-        "einen Font am Computer zu gestalten"
+        "an Papier, Tinte, Signatur und Schreibweise",
+        "nur am Alter des Rahmens",
+        "an der Größe des Blattes"
        ],
        "richtig": 0
       }
@@ -666,9 +1197,9 @@
        "de": "Das war meine erste Kalligrafiestunde. Zwei Stunden lang habe ich nur einen Buchstaben geübt: ‹B›!"
       },
       {
-       "fa": "لیلا: فقط یک «ب»؟ ببخشید، نمی‌توانم نخندم! استادت چه گفت؟",
+       "fa": "لیلا: فقط یک «ب»؟ پس جلسه‌ی سختی بوده. استادت چه گفت؟",
        "tr": "",
-       "de": "Nur ein ‹B›? Entschuldige, ich muss lachen! Was hat dein Meister gesagt?"
+       "de": "Nur ein ‹B›? Dann war es wohl eine anstrengende Stunde. Was hat dein Meister gesagt?"
       },
       {
        "fa": "یوناس: گفت قلم را بد گرفته‌ام و مرکب همه جا ریخته. با شور و شوق رفتم، ولی خسته و ناامید برگشتم.",
@@ -681,6 +1212,16 @@
        "de": "Das ist normal. Kalligrafie hat ihre eigenen Mühen. Mein Großvater sagte immer: ‹Ein Kalligraf ist jemand, der tausendmal Geduld gehabt hat.›"
       },
       {
+       "fa": "یوناس: پدربزرگت هم خوشنویس بود؟",
+       "tr": "",
+       "de": "War dein Großvater auch Kalligraf?"
+      },
+      {
+       "fa": "لیلا: نه به طور حرفه‌ای، اما دست‌خط بسیار زیبایی داشت. نامه‌هایش را هنوز نگه داشته‌ایم و هر وقت به آنها نگاه می‌کنم، یاد او می‌افتم.",
+       "tr": "",
+       "de": "Nicht beruflich, aber er hatte eine sehr schöne Handschrift. Wir haben seine Briefe noch, und jedes Mal, wenn ich sie ansehe, denke ich an ihn."
+      },
+      {
        "fa": "یوناس: به نظر تو ارزشش را دارد؟ آخر امروز همه‌چیز را با کامپیوتر می‌نویسیم.",
        "tr": "",
        "de": "Glaubst du, es lohnt sich? Heute schreiben wir doch alles am Computer."
@@ -691,9 +1232,29 @@
        "de": "Meiner Meinung nach genau deshalb! Wenn du mit der Hand schreibst, denkst du langsamer. Für einen künftigen Schriftsteller wie dich ist das sehr nützlich."
       },
       {
-       "fa": "یوناس: باشد، قانع شدم. پس هفته‌ی بعد دوباره می‌روم؛ با قلم‌ملم و یک دستمال بزرگ!",
+       "fa": "یوناس: در آلمان هم بعضی‌ها دوباره به خوشنویسی لاتین علاقه پیدا کرده‌اند. شاید به همین دلیل.",
        "tr": "",
-       "de": "Na gut, überzeugt. Dann gehe ich nächste Woche wieder hin – mit Federn und so und einem großen Tuch!"
+       "de": "In Deutschland interessieren sich auch einige wieder für lateinische Kalligrafie. Vielleicht aus demselben Grund."
+      },
+      {
+       "fa": "لیلا: طبیعی است. وقتی همه‌چیز سریع شده، آدم‌ها دنبال کاری می‌گردند که آهسته باشد. فقط یک توصیه: هر روز کمی تمرین کن، نه هفته‌ای یک بار چند ساعت.",
+       "tr": "",
+       "de": "Das ist verständlich. Wenn alles schnell geworden ist, suchen Menschen nach etwas Langsamem. Nur ein Rat: Übe jeden Tag ein wenig, nicht einmal pro Woche mehrere Stunden."
+      },
+      {
+       "fa": "یوناس: استادم هم همین را گفت: روزی بیست دقیقه.",
+       "tr": "",
+       "de": "Mein Meister hat dasselbe gesagt: zwanzig Minuten am Tag."
+      },
+      {
+       "fa": "لیلا: پس به حرفش گوش کن. و دفعه‌ی بعد یک دستمال همراهت ببر.",
+       "tr": "",
+       "de": "Dann hör auf ihn. Und nimm nächstes Mal ein Tuch mit."
+      },
+      {
+       "fa": "یوناس: باشد، قانع شدم. هفته‌ی بعد دوباره می‌روم؛ با قلم‌ملم و یک دستمال بزرگ!",
+       "tr": "",
+       "de": "Na gut, überzeugt. Nächste Woche gehe ich wieder hin – mit Federn und so und einem großen Tuch!"
       }
      ]
     },
@@ -713,9 +1274,9 @@
        "de": "Das war meine erste Kalligrafiestunde. Zwei Stunden lang habe ich nur einen Buchstaben geübt: ‹B›!"
       },
       {
-       "fa": "لیلا: فقط یک «ب»؟ ببخشید، نمی‌توانم نخندم! استادت چه گفت؟",
+       "fa": "لیلا: فقط یک «ب»؟ پس جلسه‌ی سختی بوده. استادت چه گفت؟",
        "tr": "",
-       "de": "Nur ein ‹B›? Entschuldige, ich muss lachen! Was hat dein Meister gesagt?"
+       "de": "Nur ein ‹B›? Dann war es wohl eine anstrengende Stunde. Was hat dein Meister gesagt?"
       },
       {
        "fa": "یوناس: گفت قلم را بد گرفته‌ام و مرکب همه جا ریخته. با شور و شوق رفتم، ولی خسته و ناامید برگشتم.",
@@ -728,6 +1289,16 @@
        "de": "Das ist normal. Kalligrafie hat ihre eigenen Mühen. Mein Großvater sagte immer: ‹Ein Kalligraf ist jemand, der tausendmal Geduld gehabt hat.›"
       },
       {
+       "fa": "یوناس: پدربزرگت هم خوشنویس بود؟",
+       "tr": "",
+       "de": "War dein Großvater auch Kalligraf?"
+      },
+      {
+       "fa": "لیلا: نه به طور حرفه‌ای، اما دست‌خط بسیار زیبایی داشت. نامه‌هایش را هنوز نگه داشته‌ایم و هر وقت به آنها نگاه می‌کنم، یاد او می‌افتم.",
+       "tr": "",
+       "de": "Nicht beruflich, aber er hatte eine sehr schöne Handschrift. Wir haben seine Briefe noch, und jedes Mal, wenn ich sie ansehe, denke ich an ihn."
+      },
+      {
        "fa": "یوناس: به نظر تو ارزشش را دارد؟ آخر امروز همه‌چیز را با کامپیوتر می‌نویسیم.",
        "tr": "",
        "de": "Glaubst du, es lohnt sich? Heute schreiben wir doch alles am Computer."
@@ -738,9 +1309,29 @@
        "de": "Meiner Meinung nach genau deshalb! Wenn du mit der Hand schreibst, denkst du langsamer. Für einen künftigen Schriftsteller wie dich ist das sehr nützlich."
       },
       {
-       "fa": "یوناس: باشد، قانع شدم. پس هفته‌ی بعد دوباره می‌روم؛ با قلم‌ملم و یک دستمال بزرگ!",
+       "fa": "یوناس: در آلمان هم بعضی‌ها دوباره به خوشنویسی لاتین علاقه پیدا کرده‌اند. شاید به همین دلیل.",
        "tr": "",
-       "de": "Na gut, überzeugt. Dann gehe ich nächste Woche wieder hin – mit Federn und so und einem großen Tuch!"
+       "de": "In Deutschland interessieren sich auch einige wieder für lateinische Kalligrafie. Vielleicht aus demselben Grund."
+      },
+      {
+       "fa": "لیلا: طبیعی است. وقتی همه‌چیز سریع شده، آدم‌ها دنبال کاری می‌گردند که آهسته باشد. فقط یک توصیه: هر روز کمی تمرین کن، نه هفته‌ای یک بار چند ساعت.",
+       "tr": "",
+       "de": "Das ist verständlich. Wenn alles schnell geworden ist, suchen Menschen nach etwas Langsamem. Nur ein Rat: Übe jeden Tag ein wenig, nicht einmal pro Woche mehrere Stunden."
+      },
+      {
+       "fa": "یوناس: استادم هم همین را گفت: روزی بیست دقیقه.",
+       "tr": "",
+       "de": "Mein Meister hat dasselbe gesagt: zwanzig Minuten am Tag."
+      },
+      {
+       "fa": "لیلا: پس به حرفش گوش کن. و دفعه‌ی بعد یک دستمال همراهت ببر.",
+       "tr": "",
+       "de": "Dann hör auf ihn. Und nimm nächstes Mal ein Tuch mit."
+      },
+      {
+       "fa": "یوناس: باشد، قانع شدم. هفته‌ی بعد دوباره می‌روم؛ با قلم‌ملم و یک دستمال بزرگ!",
+       "tr": "",
+       "de": "Na gut, überzeugt. Nächste Woche gehe ich wieder hin – mit Federn und so und einem großen Tuch!"
       }
      ]
     },
@@ -772,6 +1363,351 @@
         "Man denkt dabei langsamer.",
         "Es ist billiger als ein Computer.",
         "Es ist schneller."
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d3",
+   "titel": "Dialog: Ein Brief vom Großvater",
+   "vorschau": "Ein Brief vom Großvater",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Herr Rahimi hat beim Aufräumen einen alten Brief seines Großvaters gefunden. Er zeigt ihn Jonas, der gerade aus dem Kalligrafiekurs kommt.</p>"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "آقای رحیمی: یوناس جان، یک لحظه بیا. دیروز در صندوق قدیمی پدرم این نامه را پیدا کردم. نامه‌ی پدربزرگم است.",
+       "tr": "",
+       "de": "Jonas, komm mal kurz. Gestern habe ich diesen Brief in der alten Truhe meines Vaters gefunden. Er ist von meinem Großvater."
+      },
+      {
+       "fa": "یوناس: چه کاغذ زیبایی! ولی من حتی یک کلمه‌اش را هم نمی‌توانم بخوانم.",
+       "tr": "",
+       "de": "Was für ein schönes Papier! Aber ich kann nicht einmal ein Wort davon lesen."
+      },
+      {
+       "fa": "آقای رحیمی: تعجبی ندارد. این شکسته‌نستعلیق است. من هم باید آهسته و با دقت بخوانم.",
+       "tr": "",
+       "de": "Das ist kein Wunder. Das ist Schekaste-Nastaliq. Auch ich muss es langsam und sorgfältig lesen."
+      },
+      {
+       "fa": "یوناس: تاریخ دارد؟",
+       "tr": "",
+       "de": "Hat er ein Datum?"
+      },
+      {
+       "fa": "آقای رحیمی: بله، این‌جا در گوشه‌ی پایین. حدود صد سال پیش نوشته شده؛ از کرمان برای برادرش در تهران.",
+       "tr": "",
+       "de": "Ja, hier unten in der Ecke. Er wurde vor etwa hundert Jahren geschrieben – aus Kerman an seinen Bruder in Teheran."
+      },
+      {
+       "fa": "یوناس: چرا حروف این‌قدر به هم چسبیده‌اند؟",
+       "tr": "",
+       "de": "Warum hängen die Buchstaben so eng zusammen?"
+      },
+      {
+       "fa": "آقای رحیمی: چون در شکسته، نویسنده برای سرعت بیشتر حتی حروفی را که معمولا جدا نوشته می‌شوند به هم وصل می‌کند و بعضی نقطه‌ها را هم نمی‌گذارد.",
+       "tr": "",
+       "de": "Weil man im Schekaste, um schneller zu schreiben, sogar Buchstaben verbindet, die normalerweise getrennt geschrieben werden, und manche Punkte weglässt."
+      },
+      {
+       "fa": "یوناس: پس خواننده باید متن را از روی معنا حدس بزند؟",
+       "tr": "",
+       "de": "Dann muss der Leser den Text aus dem Sinn erraten?"
+      },
+      {
+       "fa": "آقای رحیمی: تا حدی بله. کسی که زبان را خوب بلد است، از جمله‌ها کمک می‌گیرد. ببین، این سطر می‌گوید: «امسال باران کم بود و قنات ده آب کمی دارد.»",
+       "tr": "",
+       "de": "Bis zu einem gewissen Grad, ja. Wer die Sprache gut kann, hilft sich mit dem Satzzusammenhang. Schau, diese Zeile sagt: ‹Dieses Jahr gab es wenig Regen, und der Qanat des Dorfes führt wenig Wasser.›"
+      },
+      {
+       "fa": "یوناس: جالب است؛ صد سال پیش هم نگران آب بودند.",
+       "tr": "",
+       "de": "Interessant – auch vor hundert Jahren hat man sich um das Wasser gesorgt."
+      },
+      {
+       "fa": "آقای رحیمی: در کرمان همیشه همین‌طور بوده است. بقیه‌ی نامه درباره‌ی خانواده و قیمت گندم است و در پایان به همه سلام می‌رساند.",
+       "tr": "",
+       "de": "In Kerman war das schon immer so. Der Rest des Briefes handelt von der Familie und vom Weizenpreis, und am Ende lässt er alle grüßen."
+      },
+      {
+       "fa": "یوناس: می‌توانم از آن عکس بگیرم؟ می‌خواهم به استادم نشان بدهم.",
+       "tr": "",
+       "de": "Darf ich ihn fotografieren? Ich möchte ihn meinem Meister zeigen."
+      },
+      {
+       "fa": "آقای رحیمی: حتما. شاید او بتواند بخش‌هایی را که من نمی‌توانم، بخواند. فقط مراقب باش؛ کاغذ خیلی کهنه است.",
+       "tr": "",
+       "de": "Natürlich. Vielleicht kann er die Stellen lesen, die ich nicht entziffern kann. Sei nur vorsichtig, das Papier ist sehr alt."
+      },
+      {
+       "fa": "یوناس: حتما. اگر اجازه بدهید، روزی سعی می‌کنم یکی از سطرهایش را با نستعلیق بنویسم.",
+       "tr": "",
+       "de": "Natürlich. Wenn Sie erlauben, versuche ich eines Tages, eine seiner Zeilen in Nastaliq zu schreiben."
+      },
+      {
+       "fa": "آقای رحیمی: این برای من هدیه‌ی بسیار ارزشمندی خواهد بود.",
+       "tr": "",
+       "de": "Das wäre für mich ein sehr wertvolles Geschenk."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "آقای رحیمی: یوناس جان، یک لحظه بیا. دیروز در صندوق قدیمی پدرم این نامه را پیدا کردم. نامه‌ی پدربزرگم است.",
+       "tr": "",
+       "de": "Jonas, komm mal kurz. Gestern habe ich diesen Brief in der alten Truhe meines Vaters gefunden. Er ist von meinem Großvater."
+      },
+      {
+       "fa": "یوناس: چه کاغذ زیبایی! ولی من حتی یک کلمه‌اش را هم نمی‌توانم بخوانم.",
+       "tr": "",
+       "de": "Was für ein schönes Papier! Aber ich kann nicht einmal ein Wort davon lesen."
+      },
+      {
+       "fa": "آقای رحیمی: تعجبی ندارد. این شکسته‌نستعلیق است. من هم باید آهسته و با دقت بخوانم.",
+       "tr": "",
+       "de": "Das ist kein Wunder. Das ist Schekaste-Nastaliq. Auch ich muss es langsam und sorgfältig lesen."
+      },
+      {
+       "fa": "یوناس: تاریخ دارد؟",
+       "tr": "",
+       "de": "Hat er ein Datum?"
+      },
+      {
+       "fa": "آقای رحیمی: بله، این‌جا در گوشه‌ی پایین. حدود صد سال پیش نوشته شده؛ از کرمان برای برادرش در تهران.",
+       "tr": "",
+       "de": "Ja, hier unten in der Ecke. Er wurde vor etwa hundert Jahren geschrieben – aus Kerman an seinen Bruder in Teheran."
+      },
+      {
+       "fa": "یوناس: چرا حروف این‌قدر به هم چسبیده‌اند؟",
+       "tr": "",
+       "de": "Warum hängen die Buchstaben so eng zusammen?"
+      },
+      {
+       "fa": "آقای رحیمی: چون در شکسته، نویسنده برای سرعت بیشتر حتی حروفی را که معمولا جدا نوشته می‌شوند به هم وصل می‌کند و بعضی نقطه‌ها را هم نمی‌گذارد.",
+       "tr": "",
+       "de": "Weil man im Schekaste, um schneller zu schreiben, sogar Buchstaben verbindet, die normalerweise getrennt geschrieben werden, und manche Punkte weglässt."
+      },
+      {
+       "fa": "یوناس: پس خواننده باید متن را از روی معنا حدس بزند؟",
+       "tr": "",
+       "de": "Dann muss der Leser den Text aus dem Sinn erraten?"
+      },
+      {
+       "fa": "آقای رحیمی: تا حدی بله. کسی که زبان را خوب بلد است، از جمله‌ها کمک می‌گیرد. ببین، این سطر می‌گوید: «امسال باران کم بود و قنات ده آب کمی دارد.»",
+       "tr": "",
+       "de": "Bis zu einem gewissen Grad, ja. Wer die Sprache gut kann, hilft sich mit dem Satzzusammenhang. Schau, diese Zeile sagt: ‹Dieses Jahr gab es wenig Regen, und der Qanat des Dorfes führt wenig Wasser.›"
+      },
+      {
+       "fa": "یوناس: جالب است؛ صد سال پیش هم نگران آب بودند.",
+       "tr": "",
+       "de": "Interessant – auch vor hundert Jahren hat man sich um das Wasser gesorgt."
+      },
+      {
+       "fa": "آقای رحیمی: در کرمان همیشه همین‌طور بوده است. بقیه‌ی نامه درباره‌ی خانواده و قیمت گندم است و در پایان به همه سلام می‌رساند.",
+       "tr": "",
+       "de": "In Kerman war das schon immer so. Der Rest des Briefes handelt von der Familie und vom Weizenpreis, und am Ende lässt er alle grüßen."
+      },
+      {
+       "fa": "یوناس: می‌توانم از آن عکس بگیرم؟ می‌خواهم به استادم نشان بدهم.",
+       "tr": "",
+       "de": "Darf ich ihn fotografieren? Ich möchte ihn meinem Meister zeigen."
+      },
+      {
+       "fa": "آقای رحیمی: حتما. شاید او بتواند بخش‌هایی را که من نمی‌توانم، بخواند. فقط مراقب باش؛ کاغذ خیلی کهنه است.",
+       "tr": "",
+       "de": "Natürlich. Vielleicht kann er die Stellen lesen, die ich nicht entziffern kann. Sei nur vorsichtig, das Papier ist sehr alt."
+      },
+      {
+       "fa": "یوناس: حتما. اگر اجازه بدهید، روزی سعی می‌کنم یکی از سطرهایش را با نستعلیق بنویسم.",
+       "tr": "",
+       "de": "Natürlich. Wenn Sie erlauben, versuche ich eines Tages, eine seiner Zeilen in Nastaliq zu schreiben."
+      },
+      {
+       "fa": "آقای رحیمی: این برای من هدیه‌ی بسیار ارزشمندی خواهد بود.",
+       "tr": "",
+       "de": "Das wäre für mich ein sehr wertvolles Geschenk."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Was hat Herr Rahimi gefunden?",
+       "optionen": [
+        "einen etwa hundert Jahre alten Brief seines Großvaters",
+        "eine Urkunde über sein Haus",
+        "ein Kalligrafie-Blatt von Mir Emad"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Warum ist Schekaste-Nastaliq schwer zu lesen?",
+       "optionen": [
+        "Buchstaben werden verbunden und manche Punkte weggelassen.",
+        "Es wird von links nach rechts geschrieben.",
+        "Es benutzt ein anderes Alphabet."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Worum geht es in dem Brief?",
+       "optionen": [
+        "um wenig Regen, den Qanat, die Familie und den Weizenpreis",
+        "um eine Reise nach Europa",
+        "um einen Kalligrafiekurs"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "a",
+   "titel": "Gut zu wissen",
+   "vorschau": "💡",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Mirza Gholamreza und das Siyah-Mashq",
+     "text": "Kurzer Infotext – tippe eine Zeile an für die Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "میرزا غلامرضا اصفهانی یکی از بزرگ‌ترین خوشنویسان دوره‌ی قاجار بود.",
+       "tr": "",
+       "de": "Mirza Gholamreza Esfahani war einer der größten Kalligrafen der Kadscharenzeit."
+      },
+      {
+       "fa": "او در قرن نوزدهم میلادی زندگی می‌کرد و بخش بزرگی از عمرش را در تهران گذراند.",
+       "tr": "",
+       "de": "Er lebte im 19. Jahrhundert und verbrachte einen großen Teil seines Lebens in Teheran."
+      },
+      {
+       "fa": "شهرت او بیشتر به خاطر سیاه‌مشق‌هایش است.",
+       "tr": "",
+       "de": "Berühmt ist er vor allem für seine Siyah-Mashq-Blätter."
+      },
+      {
+       "fa": "در این آثار، کلمه‌ها در جهت‌های مختلف روی هم نوشته شده‌اند و صفحه‌ای پر از حرکت و ریتم پدید آمده است.",
+       "tr": "",
+       "de": "In diesen Werken sind die Wörter in verschiedene Richtungen übereinander geschrieben, sodass ein Blatt voller Bewegung und Rhythmus entsteht."
+      },
+      {
+       "fa": "بسیاری از هنرمندان معاصر، از جمله هنرمندان نقاشیخط، از سیاه‌مشق‌های او الهام گرفته‌اند.",
+       "tr": "",
+       "de": "Viele zeitgenössische Künstler, darunter Künstler der Kalligrafie-Malerei, haben sich von seinen Siyah-Mashq-Blättern inspirieren lassen."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Fünf Stufen bis zur Meisterschaft",
+     "text": "Kurzer Infotext – tippe eine Zeile an für die Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "انجمن خوشنویسان ایران بیش از هفتاد سال پیش در تهران تأسیس شد.",
+       "tr": "",
+       "de": "Der iranische Kalligrafenverband wurde vor über siebzig Jahren in Teheran gegründet."
+      },
+      {
+       "fa": "امروز این انجمن در بسیاری از شهرهای ایران شعبه دارد.",
+       "tr": "",
+       "de": "Heute hat der Verband Zweigstellen in vielen Städten Irans."
+      },
+      {
+       "fa": "آموزش در آن پنج مرحله دارد: مقدماتی، متوسط، خوش، عالی و ممتاز.",
+       "tr": "",
+       "de": "Die Ausbildung hat fünf Stufen: Grundstufe, Mittelstufe, ‹Khosch›, Oberstufe und Meisterstufe."
+      },
+      {
+       "fa": "هر مرحله با یک امتحان تمام می‌شود و هنرجو پس از قبولی به مرحله‌ی بعد می‌رود.",
+       "tr": "",
+       "de": "Jede Stufe endet mit einer Prüfung, und wer besteht, steigt in die nächste Stufe auf."
+      },
+      {
+       "fa": "رسیدن به مرحله‌ی ممتاز معمولاً سال‌ها طول می‌کشد و فقط بخش کوچکی از هنرجویان به آن می‌رسند.",
+       "tr": "",
+       "de": "Bis zur Meisterstufe dauert es meist viele Jahre, und nur ein kleiner Teil der Lernenden erreicht sie."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Lithografie – gedruckte Handschrift",
+     "text": "Kurzer Infotext – tippe eine Zeile an für die Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "نخستین چاپخانه‌های ایران در آغاز قرن نوزدهم میلادی با حروف سربی کار می‌کردند.",
+       "tr": "",
+       "de": "Die ersten Druckereien Irans arbeiteten Anfang des 19. Jahrhunderts mit Bleibuchstaben."
+      },
+      {
+       "fa": "اما چند دهه بعد چاپ سنگی رواج پیدا کرد و مدتی طولانی روش اصلی چاپ کتاب شد.",
+       "tr": "",
+       "de": "Doch einige Jahrzehnte später verbreitete sich die Lithografie und wurde für lange Zeit die wichtigste Methode des Buchdrucks."
+      },
+      {
+       "fa": "در این روش، خوشنویس متن را با مرکب مخصوص روی کاغذ می‌نوشت و نوشته روی سنگی صاف منتقل می‌شد.",
+       "tr": "",
+       "de": "Dabei schrieb ein Kalligraf den Text mit spezieller Tinte auf Papier, und die Schrift wurde auf einen glatten Stein übertragen."
+      },
+      {
+       "fa": "گفته می‌شود یکی از دلایل محبوبیت این روش آن بود که خوانندگان به نستعلیق زیبا عادت داشتند.",
+       "tr": "",
+       "de": "Es heißt, ein Grund für die Beliebtheit dieses Verfahrens sei gewesen, dass die Leser an schönes Nastaliq gewöhnt waren."
+      },
+      {
+       "fa": "بسیاری از کتاب‌های مصور دوره‌ی قاجار نیز به همین روش چاپ شده‌اند.",
+       "tr": "",
+       "de": "Auch viele illustrierte Bücher der Kadscharenzeit wurden auf diese Weise gedruckt."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zu den Infotexten",
+     "fragen": [
+      {
+       "frage": "Wofür ist Mirza Gholamreza vor allem bekannt?",
+       "optionen": [
+        "für seine Siyah-Mashq-Blätter",
+        "für einen Computerfont",
+        "für die Erfindung des Nastaliq"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie viele Stufen hat die Ausbildung beim Kalligrafenverband?",
+       "optionen": [
+        "fünf",
+        "drei",
+        "zehn"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie funktionierte die Lithografie?",
+       "optionen": [
+        "Ein Kalligraf schrieb den Text, der auf einen Stein übertragen wurde.",
+        "Man setzte Bleibuchstaben zusammen.",
+        "Man kopierte Texte mit der Schreibmaschine."
        ],
        "richtig": 0
       }
@@ -836,19 +1772,24 @@
      "links": "de",
      "paare": [
       {
-       "fa": "چیزی که بیش از همه دوست دارم …",
-       "tr": "",
-       "de": "Was mir am meisten gefällt, …"
-      },
-      {
        "fa": "آنچه در این اثر توجه مرا جلب می‌کند …",
        "tr": "",
        "de": "Was mir an diesem Werk auffällt, …"
       },
       {
+       "fa": "چیزی که بیش از همه دوست دارم …",
+       "tr": "",
+       "de": "Was mir am meisten gefällt, …"
+      },
+      {
        "fa": "این قطعه حس … را به من منتقل می‌کند.",
        "tr": "",
        "de": "Dieses Blatt vermittelt mir ein Gefühl von …"
+      },
+      {
+       "fa": "اگر بخواهم انتقاد کنم، …",
+       "tr": "",
+       "de": "Wenn ich etwas kritisieren müsste, …"
       },
       {
        "fa": "سلیقه‌ها متفاوت است، اما …",
@@ -859,11 +1800,6 @@
        "fa": "در مقایسه با آثار سنتی …",
        "tr": "",
        "de": "Im Vergleich zu traditionellen Werken …"
-      },
-      {
-       "fa": "به نظر می‌رسد هنرمند خواسته است …",
-       "tr": "",
-       "de": "Es scheint, als wollte der Künstler …"
       }
      ],
      "titel": "Was bedeutet die Wendung?"
@@ -875,9 +1811,19 @@
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
+        "Im Vergleich zu traditionellen Werken …",
+        "Was mir an diesem Werk auffällt, …",
+        "Dieses Blatt vermittelt mir ein Gefühl von …"
+       ],
+       "richtig": 0,
+       "fa": "در مقایسه با آثار سنتی …"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
         "Was die Komposition betrifft, …",
         "Es scheint, als wollte der Künstler …",
-        "Was mir am meisten gefällt, …"
+        "Im Vergleich zu traditionellen Werken …"
        ],
        "richtig": 0,
        "fa": "از نظر ترکیب‌بندی …"
@@ -885,19 +1831,19 @@
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
-        "Wenn ich etwas kritisieren müsste, …",
-        "Im Vergleich zu traditionellen Werken …",
-        "Dieses Blatt vermittelt mir ein Gefühl von …"
+        "Was mir am meisten gefällt, …",
+        "Geschmäcker sind verschieden, aber …",
+        "Was mir an diesem Werk auffällt, …"
        ],
        "richtig": 0,
-       "fa": "اگر بخواهم انتقاد کنم، …"
+       "fa": "چیزی که بیش از همه دوست دارم …"
       },
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
         "Dieses Blatt vermittelt mir ein Gefühl von …",
-        "Was die Komposition betrifft, …",
-        "Es scheint, als wollte der Künstler …"
+        "Geschmäcker sind verschieden, aber …",
+        "Wenn ich etwas kritisieren müsste, …"
        ],
        "richtig": 0,
        "fa": "این قطعه حس … را به من منتقل می‌کند."
@@ -905,32 +1851,22 @@
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
-        "Es scheint, als wollte der Künstler …",
+        "Geschmäcker sind verschieden, aber …",
         "Im Vergleich zu traditionellen Werken …",
-        "Was mir am meisten gefällt, …"
+        "Was mir an diesem Werk auffällt, …"
+       ],
+       "richtig": 0,
+       "fa": "سلیقه‌ها متفاوت است، اما …"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Es scheint, als wollte der Künstler …",
+        "Was mir an diesem Werk auffällt, …",
+        "Dieses Blatt vermittelt mir ein Gefühl von …"
        ],
        "richtig": 0,
        "fa": "به نظر می‌رسد هنرمند خواسته است …"
-      },
-      {
-       "frage": "Was bedeutet der Satz?",
-       "optionen": [
-        "Was mir an diesem Werk auffällt, …",
-        "Geschmäcker sind verschieden, aber …",
-        "Wenn ich etwas kritisieren müsste, …"
-       ],
-       "richtig": 0,
-       "fa": "آنچه در این اثر توجه مرا جلب می‌کند …"
-      },
-      {
-       "frage": "Was bedeutet der Satz?",
-       "optionen": [
-        "Im Vergleich zu traditionellen Werken …",
-        "Was die Komposition betrifft, …",
-        "Geschmäcker sind verschieden, aber …"
-       ],
-       "richtig": 0,
-       "fa": "در مقایسه با آثار سنتی …"
       }
      ]
     },

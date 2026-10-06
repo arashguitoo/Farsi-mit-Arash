@@ -251,6 +251,54 @@
        "a": "Hindernis"
       },
       {
+       "fa": "دانشجوی دکترا",
+       "a": "Doktorand/in"
+      },
+      {
+       "fa": "سمینار",
+       "a": "Seminar, Kolloquium"
+      },
+      {
+       "fa": "دانشکده",
+       "a": "Fakultät"
+      },
+      {
+       "fa": "همایش",
+       "a": "Konferenz, Tagung"
+      },
+      {
+       "fa": "مجله‌ی علمی",
+       "a": "Fachzeitschrift"
+      },
+      {
+       "fa": "داور",
+       "a": "Gutachter/in"
+      },
+      {
+       "fa": "پایان‌نامه",
+       "a": "Abschlussarbeit (Master)"
+      },
+      {
+       "fa": "قضیه",
+       "a": "(mathematischer) Satz, Theorem"
+      },
+      {
+       "fa": "حدس",
+       "a": "Vermutung"
+      },
+      {
+       "fa": "تخته",
+       "a": "Tafel"
+      },
+      {
+       "fa": "پسادکترا",
+       "a": "Postdoc"
+      },
+      {
+       "fa": "آزمایشگاه",
+       "a": "Labor"
+      },
+      {
        "fa": "حل کردن",
        "a": "lösen"
       },
@@ -281,16 +329,10 @@
      "links": "emoji",
      "paare": [
       {
-       "fa": "دکترا",
+       "fa": "ریاضی‌دان",
        "tr": "",
-       "de": "Promotion, Doktorat",
-       "emoji": "🎓"
-      },
-      {
-       "fa": "پشتکار",
-       "tr": "",
-       "de": "Ausdauer, Beharrlichkeit",
-       "emoji": "🏃‍♀️"
+       "de": "Mathematiker/in",
+       "emoji": "🧮"
       },
       {
        "fa": "المپیاد",
@@ -299,22 +341,28 @@
        "emoji": "🥇"
       },
       {
-       "fa": "فارغ‌التحصیل",
+       "fa": "پسادکترا",
        "tr": "",
-       "de": "Absolvent/in",
-       "emoji": "👩‍🎓"
+       "de": "Postdoc",
+       "emoji": "🧳"
       },
       {
-       "fa": "جایزه",
+       "fa": "خمیده",
        "tr": "",
-       "de": "Preis, Auszeichnung",
-       "emoji": "🏆"
+       "de": "gekrümmt",
+       "emoji": "〰️"
       },
       {
-       "fa": "فروتن",
+       "fa": "استعداد",
        "tr": "",
-       "de": "bescheiden",
-       "emoji": "🙇"
+       "de": "Talent, Begabung",
+       "emoji": "🎁"
+      },
+      {
+       "fa": "الگو",
+       "tr": "",
+       "de": "Vorbild",
+       "emoji": "🌟"
       }
      ],
      "titel": "Memory"
@@ -324,40 +372,40 @@
      "links": "de",
      "paare": [
       {
-       "fa": "رساله",
-       "tr": "",
-       "de": "Dissertation",
-       "emoji": "📚"
-      },
-      {
-       "fa": "مانع",
-       "tr": "",
-       "de": "Hindernis",
-       "emoji": "🚧"
-      },
-      {
-       "fa": "کنجکاو",
-       "tr": "",
-       "de": "neugierig",
-       "emoji": "🔍"
-      },
-      {
        "fa": "نخبه",
        "tr": "",
        "de": "Elite, Hochbegabte/r",
        "emoji": "⭐"
       },
       {
-       "fa": "اثبات",
+       "fa": "دانشکده",
        "tr": "",
-       "de": "Beweis",
-       "emoji": "✅"
+       "de": "Fakultät",
+       "emoji": "🏫"
       },
       {
-       "fa": "المپیاد",
+       "fa": "همایش",
        "tr": "",
-       "de": "Olympiade (Wettbewerb)",
-       "emoji": "🥇"
+       "de": "Konferenz, Tagung",
+       "emoji": "🎤"
+      },
+      {
+       "fa": "داور",
+       "tr": "",
+       "de": "Gutachter/in",
+       "emoji": "🧑‍⚖️"
+      },
+      {
+       "fa": "تخته",
+       "tr": "",
+       "de": "Tafel",
+       "emoji": "⬛"
+      },
+      {
+       "fa": "سمینار",
+       "tr": "",
+       "de": "Seminar, Kolloquium",
+       "emoji": "🗣️"
       }
      ],
      "titel": "Memory: Wort & Bedeutung"
@@ -377,8 +425,8 @@
        "frage": "<span class='fa'>مریم میرزاخانی در سال ۱۹۹۴ در ___ جهانی ریاضی مدال طلا گرفت.</span><br><span class='mini'>Maryam Mirzakhani gewann 1994 bei der Internationalen Mathematik-Olympiade Gold.</span>",
        "optionen": [
         "المپیاد",
-        "رشته",
-        "سطح"
+        "فروتن",
+        "اعتمادبه‌نفس"
        ],
        "richtig": 0,
        "optFa": true,
@@ -389,8 +437,8 @@
        "frage": "<span class='fa'>او دوره‌ی ___ را در دانشگاه هاروارد گذراند.</span><br><span class='mini'>Sie absolvierte ihre Promotion an der Harvard-Universität.</span>",
        "optionen": [
         "دکترا",
-        "مسئله",
-        "فارغ‌التحصیل"
+        "بورسیه",
+        "کنکور"
        ],
        "richtig": 0,
        "optFa": true,
@@ -401,8 +449,8 @@
        "frage": "<span class='fa'>هر ___ باید قدم به قدم و بدون خطا نوشته شود.</span><br><span class='mini'>Jeder Beweis muss Schritt für Schritt und fehlerfrei aufgeschrieben werden.</span>",
        "optionen": [
         "اثبات",
-        "الگو",
-        "اعتمادبه‌نفس"
+        "کنجکاو",
+        "مانع"
        ],
        "richtig": 0,
        "optFa": true,
@@ -413,26 +461,20 @@
        "frage": "<span class='fa'>این ___ را هیچ‌کس تا امروز حل نکرده است.</span><br><span class='mini'>Dieses Problem hat bis heute niemand gelöst.</span>",
        "optionen": [
         "مسئله",
-        "استاد",
-        "پشتکار"
+        "مدال طلا",
+        "فارغ‌التحصیل"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
        "erkl": "<span class='fa'>این مسئله را هیچ‌کس تا امروز حل نکرده است.</span>"
-      }
-     ]
-    },
-    {
-     "typ": "wahl",
-     "titel": "Welches Wort passt?",
-     "fragen": [
+      },
       {
        "frage": "<span class='fa'>___ زنان در میان دانشجویان رشته‌های فنی بیشتر شده است.</span><br><span class='mini'>Der Anteil der Frauen unter den Studierenden technischer Fächer ist gestiegen.</span>",
        "optionen": [
         "سهم",
-        "المپیاد",
-        "جایزه"
+        "قضیه",
+        "المپیاد"
        ],
        "richtig": 0,
        "optFa": true,
@@ -443,20 +485,26 @@
        "frage": "<span class='fa'>میرزاخانی برای بسیاری از دختران یک ___ است.</span><br><span class='mini'>Mirzakhani ist für viele Mädchen ein Vorbild.</span>",
        "optionen": [
         "الگو",
-        "اثبات",
-        "مقاله"
+        "مدال طلا",
+        "فارغ‌التحصیل"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
        "erkl": "<span class='fa'>میرزاخانی برای بسیاری از دختران یک الگو است.</span>"
-      },
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
       {
        "frage": "<span class='fa'>بدون ___ هیچ استعدادی به نتیجه نمی‌رسد.</span><br><span class='mini'>Ohne Ausdauer führt kein Talent zum Erfolg.</span>",
        "optionen": [
         "پشتکار",
-        "کلیشه",
-        "ریاضیات"
+        "همایش",
+        "سطح"
        ],
        "richtig": 0,
        "optFa": true,
@@ -467,13 +515,61 @@
        "frage": "<span class='fa'>او نخستین زنی بود که این ___ مهم را دریافت کرد.</span><br><span class='mini'>Sie war die erste Frau, die diese wichtige Auszeichnung erhielt.</span>",
        "optionen": [
         "جایزه",
-        "پشتکار",
-        "ریاضیات"
+        "هندسه",
+        "مانع"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
        "erkl": "<span class='fa'>او نخستین زنی بود که این جایزه مهم را دریافت کرد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>سپیده هر هفته در ___ گروه هندسه شرکت می‌کند.</span><br><span class='mini'>Sepideh nimmt jede Woche am Seminar der Geometrie-Arbeitsgruppe teil.</span>",
+       "optionen": [
+        "سمینار",
+        "استاد",
+        "مقاله"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>سپیده هر هفته در سمینار گروه هندسه شرکت می‌کند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>پیش از چاپ، هر مقاله را دو ___ مستقل می‌خوانند و درباره‌ی آن نظر می‌دهند.</span><br><span class='mini'>Vor der Veröffentlichung lesen zwei unabhängige Gutachter jeden Artikel und geben ein Urteil ab.</span>",
+       "optionen": [
+        "داور",
+        "حدس",
+        "جایزه"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>پیش از چاپ، هر مقاله را دو داور مستقل می‌خوانند و درباره‌ی آن نظر می‌دهند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>___ ریمان یکی از معروف‌ترین مسئله‌های حل‌نشده‌ی ریاضیات است.</span><br><span class='mini'>Die Riemannsche Vermutung ist eines der berühmtesten ungelösten Probleme der Mathematik.</span>",
+       "optionen": [
+        "حدس",
+        "اثبات",
+        "تبعیض"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>حدس ریمان یکی از معروف‌ترین مسئله‌های حل‌نشده‌ی ریاضیات است.</span>"
+      },
+      {
+       "frage": "<span class='fa'>او نتیجه‌ی کارش را تابستان در یک ___ بین‌المللی ارائه می‌دهد.</span><br><span class='mini'>Sie stellt die Ergebnisse ihrer Arbeit im Sommer auf einer internationalen Konferenz vor.</span>",
+       "optionen": [
+        "همایش",
+        "مانع",
+        "سمینار"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>او نتیجه‌ی کارش را تابستان در یک همایش بین‌المللی ارائه می‌دهد.</span>"
       }
      ]
     }
@@ -490,46 +586,95 @@
      "trenner": " ",
      "woerter": [
       {
-       "fa": "مرسی! راستی، در تیم شما در هامبورگ چند مهندس زن هست؟",
+       "fa": "او هنوز دانشجوی کارشناسی بود که نخستین مقاله‌های علمی‌اش منتشر شد.",
        "tr": "",
-       "de": "Danke! Übrigens, wie viele Ingenieurinnen gibt es in eurem Team in Hamburg?",
+       "de": "Sie studierte noch im Bachelor, als ihre ersten wissenschaftlichen Artikel erschienen.",
        "teile": [
-        "مرسی",
-        "راستی",
-        "در",
-        "تیم",
-        "شما",
-        "در",
-        "هامبورگ",
-        "چند",
-        "مهندس",
-        "زن",
-        "هست"
+        "او",
+        "هنوز",
+        "دانشجوی",
+        "کارشناسی",
+        "بود",
+        "که",
+        "نخستین",
+        "مقاله‌های",
+        "علمی‌اش",
+        "منتشر",
+        "شد"
        ],
        "extra": [
-        "می‌خواست"
+        "با"
        ]
       },
       {
-       "fa": "دقیقاً به همین دلیل! خواندم که او در کودکی می‌خواست نویسنده شود.",
+       "fa": "شرکت شما هم در این برنامه شرکت دارد؟",
        "tr": "",
-       "de": "Genau deshalb! Ich habe gelesen, dass sie als Kind Schriftstellerin werden wollte.",
+       "de": "Macht eure Firma auch dabei mit?",
        "teile": [
-        "دقیقاً",
-        "به",
-        "همین",
-        "دلیل",
-        "خواندم",
-        "که",
-        "او",
+        "شرکت",
+        "شما",
+        "هم",
         "در",
-        "کودکی",
-        "می‌خواست",
-        "نویسنده",
-        "شود"
+        "این",
+        "برنامه",
+        "شرکت",
+        "دارد"
        ],
        "extra": [
-        "من"
+        "را"
+       ]
+      },
+      {
+       "fa": "ممنون، داداش. روز خوش!",
+       "tr": "",
+       "de": "Danke, Bruderherz. Mach’s gut!",
+       "teile": [
+        "ممنون",
+        "داداش",
+        "روز",
+        "خوش"
+       ],
+       "extra": [
+        "در"
+       ]
+      },
+      {
+       "fa": "از او می‌پرسم. فکر می‌کنم با کمال میل قبول کند.",
+       "tr": "",
+       "de": "Ich frage sie. Ich glaube, sie sagt gern zu.",
+       "teile": [
+        "از",
+        "او",
+        "می‌پرسم",
+        "فکر",
+        "می‌کنم",
+        "با",
+        "کمال",
+        "میل",
+        "قبول",
+        "کند"
+       ],
+       "extra": [
+        "نیست."
+       ]
+      },
+      {
+       "fa": "پس او برای شما فقط یک الگوی کلی نیست.",
+       "tr": "",
+       "de": "Dann ist sie für Sie also nicht nur ein allgemeines Vorbild.",
+       "teile": [
+        "پس",
+        "او",
+        "برای",
+        "شما",
+        "فقط",
+        "یک",
+        "الگوی",
+        "کلی",
+        "نیست"
+       ],
+       "extra": [
+        "برنامه"
        ]
       },
       {
@@ -547,69 +692,7 @@
         "نیست"
        ],
        "extra": [
-        "این"
-       ]
-      },
-      {
-       "fa": "سلام لیلا! مقاله‌ات درباره‌ی میرزاخانی را خواندم. عالی بود!",
-       "tr": "",
-       "de": "Hallo Leyla! Ich habe deinen Artikel über Mirzakhani gelesen. Toll!",
-       "teile": [
-        "سلام",
-        "لیلا",
-        "مقاله‌ات",
-        "درباره‌ی",
-        "میرزاخانی",
-        "را",
-        "خواندم",
-        "عالی",
-        "بود"
-       ],
-       "extra": [
-        "بعدی"
-       ]
-      },
-      {
-       "fa": "خواهش می‌کنم. اما چرا یک ریاضی‌دان؟ کلاس ما کلاس ادبیات است!",
-       "tr": "",
-       "de": "Gern. Aber warum eine Mathematikerin? Unser Kurs ist ein Literaturkurs!",
-       "teile": [
-        "خواهش",
-        "می‌کنم",
-        "اما",
-        "چرا",
-        "یک",
-        "ریاضی‌دان",
-        "کلاس",
-        "ما",
-        "کلاس",
-        "ادبیات",
-        "است"
-       ],
-       "extra": [
-        "روز"
-       ]
-      },
-      {
-       "fa": "در آلمان هم تعداد زنان در میان استادان ریاضی هنوز کم است.",
-       "tr": "",
-       "de": "Auch in Deutschland gibt es noch wenige Frauen unter den Mathematikprofessoren.",
-       "teile": [
-        "در",
-        "آلمان",
-        "هم",
-        "تعداد",
-        "زنان",
-        "در",
-        "میان",
-        "استادان",
-        "ریاضی",
-        "هنوز",
-        "کم",
-        "است"
-       ],
-       "extra": [
-        "همین"
+        "را"
        ]
       }
      ]
@@ -619,22 +702,22 @@
      "titel": "Was bedeutet der Satz?",
      "fragen": [
       {
-       "frage": "„Genau das ist das Thema meines nächsten Artikels! Mach’s gut, Bruderherz.“",
+       "frage": "„Hallo Leyla! Ich habe deinen Artikel über Mirzakhani gelesen. Toll!“",
        "optionen": [
-        "این دقیقاً موضوع مقاله‌ی بعدی من است! روز خوش، داداش.",
-        "دقیقاً به همین دلیل! خواندم که او در کودکی می‌خواست نویسنده شود.",
-        "جالب است! پس چرا در آلمان این‌طور نیست؟"
+        "سلام لیلا! مقاله‌ات درباره‌ی میرزاخانی را خواندم. عالی بود!",
+        "او هنوز دانشجوی کارشناسی بود که نخستین مقاله‌های علمی‌اش منتشر شد.",
+        "شما دانشجوی دکترای ریاضی هستید. موضوع رساله‌تان چیست؟"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false
       },
       {
-       "frage": "„Gern. Aber warum eine Mathematikerin? Unser Kurs ist ein Literaturkurs!“",
+       "frage": "„Macht eure Firma auch dabei mit?“",
        "optionen": [
-        "خواهش می‌کنم. اما چرا یک ریاضی‌دان؟ کلاس ما کلاس ادبیات است!",
-        "دقیقاً به همین دلیل! خواندم که او در کودکی می‌خواست نویسنده شود.",
-        "سلام لیلا! مقاله‌ات درباره‌ی میرزاخانی را خواندم. عالی بود!"
+        "شرکت شما هم در این برنامه شرکت دارد؟",
+        "پس او برای شما فقط یک الگوی کلی نیست.",
+        "دقیقاً به همین دلیل! خواندم که او در کودکی می‌خواست نویسنده شود."
        ],
        "richtig": 0,
        "optFa": true,
@@ -644,18 +727,18 @@
        "frage": "„Genau deshalb! Ich habe gelesen, dass sie als Kind Schriftstellerin werden wollte.“",
        "optionen": [
         "دقیقاً به همین دلیل! خواندم که او در کودکی می‌خواست نویسنده شود.",
-        "مرسی! راستی، در تیم شما در هامبورگ چند مهندس زن هست؟",
-        "سلام لیلا! مقاله‌ات درباره‌ی میرزاخانی را خواندم. عالی بود!"
+        "شرکت شما هم در این برنامه شرکت دارد؟",
+        "امروز قضیه‌ای مهم در فیزیک و ریاضیات به نام او شناخته می‌شود."
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false
       },
       {
-       "frage": "„Auch in Deutschland gibt es noch wenige Frauen unter den Mathematikprofessoren.“",
+       "frage": "„Gern. Aber warum eine Mathematikerin? Unser Kurs ist ein Literaturkurs!“",
        "optionen": [
-        "در آلمان هم تعداد زنان در میان استادان ریاضی هنوز کم است.",
-        "دقیقاً به همین دلیل! خواندم که او در کودکی می‌خواست نویسنده شود.",
+        "خواهش می‌کنم. اما چرا یک ریاضی‌دان؟ کلاس ما کلاس ادبیات است!",
+        "شما دانشجوی دکترای ریاضی هستید. موضوع رساله‌تان چیست؟",
         "جالب است! پس چرا در آلمان این‌طور نیست؟"
        ],
        "richtig": 0,
@@ -663,22 +746,22 @@
        "hoeren": false
       },
       {
-       "frage": "„Hallo Leyla! Ich habe deinen Artikel über Mirzakhani gelesen. Toll!“",
+       "frage": "„Wie ist Ihrer Meinung nach die Lage von Frauen in der Mathematik in Iran heute?“",
        "optionen": [
-        "سلام لیلا! مقاله‌ات درباره‌ی میرزاخانی را خواندم. عالی بود!",
-        "مرسی! راستی، در تیم شما در هامبورگ چند مهندس زن هست؟",
-        "جالب است! پس چرا در آلمان این‌طور نیست؟"
+        "به نظر شما وضعیت زنان در ریاضیات ایران امروز چطور است؟",
+        "پس او برای شما فقط یک الگوی کلی نیست.",
+        "او هنوز دانشجوی کارشناسی بود که نخستین مقاله‌های علمی‌اش منتشر شد."
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false
       },
       {
-       "frage": "„Interessant! Und warum ist das in Deutschland nicht so?“",
+       "frage": "„Sie studierte noch im Bachelor, als ihre ersten wissenschaftlichen Artikel erschienen.“",
        "optionen": [
-        "جالب است! پس چرا در آلمان این‌طور نیست؟",
-        "مرسی! راستی، در تیم شما در هامبورگ چند مهندس زن هست؟",
-        "دقیقاً به همین دلیل! خواندم که او در کودکی می‌خواست نویسنده شود."
+        "او هنوز دانشجوی کارشناسی بود که نخستین مقاله‌های علمی‌اش منتشر شد.",
+        "ممنون، داداش. روز خوش!",
+        "شرکت شما هم در این برنامه شرکت دارد؟"
        ],
        "richtig": 0,
        "optFa": true,
@@ -693,48 +776,18 @@
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
-        "Auch in Deutschland gibt es noch wenige Frauen unter den Mathematikprofessoren.",
-        "Genau deshalb! Ich habe gelesen, dass sie als Kind Schriftstellerin werden wollte.",
-        "Interessant! Und warum ist das in Deutschland nicht so?"
+        "Danke, Bruderherz. Mach’s gut!",
+        "Um zwei hat sie das wöchentliche Treffen mit ihrem Doktorvater, Dr. Karimi.",
+        "Sie studierte noch im Bachelor, als ihre ersten wissenschaftlichen Artikel erschienen."
        ],
        "richtig": 0,
-       "fa": "در آلمان هم تعداد زنان در میان استادان ریاضی هنوز کم است."
-      },
-      {
-       "frage": "Was bedeutet der Satz?",
-       "optionen": [
-        "Interessant! Und warum ist das in Deutschland nicht so?",
-        "Gern. Aber warum eine Mathematikerin? Unser Kurs ist ein Literaturkurs!",
-        "Genau deshalb! Ich habe gelesen, dass sie als Kind Schriftstellerin werden wollte."
-       ],
-       "richtig": 0,
-       "fa": "جالب است! پس چرا در آلمان این‌طور نیست؟"
-      },
-      {
-       "frage": "Was bedeutet der Satz?",
-       "optionen": [
-        "Genau deshalb! Ich habe gelesen, dass sie als Kind Schriftstellerin werden wollte.",
-        "Danke! Übrigens, wie viele Ingenieurinnen gibt es in eurem Team in Hamburg?",
-        "Hallo Leyla! Ich habe deinen Artikel über Mirzakhani gelesen. Toll!"
-       ],
-       "richtig": 0,
-       "fa": "دقیقاً به همین دلیل! خواندم که او در کودکی می‌خواست نویسنده شود."
-      },
-      {
-       "frage": "Was bedeutet der Satz?",
-       "optionen": [
-        "Genau das ist das Thema meines nächsten Artikels! Mach’s gut, Bruderherz.",
-        "Hallo Leyla! Ich habe deinen Artikel über Mirzakhani gelesen. Toll!",
-        "Auch in Deutschland gibt es noch wenige Frauen unter den Mathematikprofessoren."
-       ],
-       "richtig": 0,
-       "fa": "این دقیقاً موضوع مقاله‌ی بعدی من است! روز خوش، داداش."
+       "fa": "ممنون، داداش. روز خوش!"
       },
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
         "Hallo Leyla! Ich habe deinen Artikel über Mirzakhani gelesen. Toll!",
-        "Gern. Aber warum eine Mathematikerin? Unser Kurs ist ein Literaturkurs!",
+        "Mirzakhani selbst hat diese Vorstellung widerlegt.",
         "Genau deshalb! Ich habe gelesen, dass sie als Kind Schriftstellerin werden wollte."
        ],
        "richtig": 0,
@@ -743,12 +796,42 @@
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
-        "Danke! Übrigens, wie viele Ingenieurinnen gibt es in eurem Team in Hamburg?",
+        "Sie promovieren in Mathematik. Was ist das Thema Ihrer Dissertation?",
         "Genau deshalb! Ich habe gelesen, dass sie als Kind Schriftstellerin werden wollte.",
-        "Gern. Aber warum eine Mathematikerin? Unser Kurs ist ein Literaturkurs!"
+        "Wie ist Ihrer Meinung nach die Lage von Frauen in der Mathematik in Iran heute?"
+       ],
+       "richtig": 0,
+       "fa": "شما دانشجوی دکترای ریاضی هستید. موضوع رساله‌تان چیست؟"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Danke! Übrigens, wie viele Ingenieurinnen gibt es in eurem Team in Hamburg?",
+        "Sepideh ist im dritten Jahr ihrer Promotion in Mathematik an der Technischen Universität Scharif.",
+        "Sie studierte noch im Bachelor, als ihre ersten wissenschaftlichen Artikel erschienen."
        ],
        "richtig": 0,
        "fa": "مرسی! راستی، در تیم شما در هامبورگ چند مهندس زن هست؟"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Ich frage sie. Ich glaube, sie sagt gern zu.",
+        "Dann ist sie für Sie also nicht nur ein allgemeines Vorbild.",
+        "Danke, Bruderherz. Mach’s gut!"
+       ],
+       "richtig": 0,
+       "fa": "از او می‌پرسم. فکر می‌کنم با کمال میل قبول کند."
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Wie ist Ihrer Meinung nach die Lage von Frauen in der Mathematik in Iran heute?",
+        "Macht eure Firma auch dabei mit?",
+        "Dann ist sie für Sie also nicht nur ein allgemeines Vorbild."
+       ],
+       "richtig": 0,
+       "fa": "به نظر شما وضعیت زنان در ریاضیات ایران امروز چطور است؟"
       }
      ]
     }

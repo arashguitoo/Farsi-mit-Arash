@@ -2,7 +2,7 @@
  "id": "tx",
  "art": "texte",
  "titel": "Sachtext & Dialoge",
- "beschreibung": "Sachtext, Wortschatz im Kontext, zwei Dialoge, Redemittel und Schreibaufgabe.",
+ "beschreibung": "Sachtext, Wortschatz im Kontext, Alltagstext, drei Dialoge, Infotexte, Redemittel und Schreibaufgabe.",
  "stationen": [
   {
    "id": "t1",
@@ -12,7 +12,7 @@
     {
      "typ": "info",
      "titel": "Neue Wörter im Text",
-     "text": "<p><span class='fa'>آجری</span> – aus Backstein · <span class='fa'>شهرت</span> – Ruf · <span class='fa'>مقصد</span> – Ziel(ort) · <span class='fa'>تشکیل دادن</span> – gründen, bilden · <span class='fa'>موج</span> – Welle · <span class='fa'>آمار</span> – Statistik · <span class='fa'>برآورد</span> – Schätzung · <span class='fa'>نوه</span> – Enkel/in · <span class='fa'>ایرانی‌تبار</span> – iranischer Herkunft · <span class='fa'>ثروت</span> – Reichtum</p>",
+     "text": "<p><span class='fa'>آجری</span> – aus Backstein · <span class='fa'>تیرک</span> – Pfahl · <span class='fa'>میراث جهانی</span> – Welterbe · <span class='fa'>گره خوردن</span> – verknüpft sein · <span class='fa'>پیشگام</span> – Wegbereiter/in · <span class='fa'>شهرت</span> – Ruf · <span class='fa'>مقصد</span> – Ziel(ort) · <span class='fa'>تشکیل دادن</span> – gründen, bilden · <span class='fa'>موج</span> – Welle · <span class='fa'>آمار</span> – Statistik · <span class='fa'>برآورد</span> – Schätzung · <span class='fa'>مجوز کار</span> – Berufserlaubnis · <span class='fa'>نوه</span> – Enkel/in · <span class='fa'>ایران‌شناسی</span> – Iranistik · <span class='fa'>اعتدال بهاری</span> – Frühlings-Tagundnachtgleiche · <span class='fa'>ایرانی‌تبار</span> – iranischer Herkunft · <span class='fa'>هوادار</span> – Fan · <span class='fa'>آمیخته</span> – gemischt · <span class='fa'>ثروت</span> – Reichtum</p>",
      "stil": "merke"
     },
     {
@@ -21,14 +21,24 @@
      "text": "Ohne Umschrift und ohne Vokalzeichen. Tippe eine Zeile an, wenn du die Übersetzung brauchst.",
      "zeilen": [
       {
-       "fa": "کسی که در هامبورگ از کنار ساختمان‌های آجری قرمز «شهر انبارها» می‌گذرد، شاید نداند که این محله زمانی بزرگ‌ترین مرکز انبار فرش شرقی در جهان بود.",
+       "fa": "کسی که در هامبورگ از کنار ساختمان‌های آجری قرمز «شهر انبار‌ها» می‌گذرد، شاید نداند که این محله زمانی بزرگ‌ترین مرکز انبار فرش شرقی در جهان بود.",
        "tr": "",
        "de": "Wer in Hamburg an den roten Backsteingebäuden der ‹Speicherstadt› vorbeigeht, weiß vielleicht nicht, dass dieses Viertel einst das größte Lagerzentrum für Orientteppiche der Welt war."
+      },
+      {
+       "fa": "ساختمان‌های این محله از سال ۱۸۸۳ به بعد روی هزاران تیرک چوبی در کنار آب ساخته شدند و از سال ۲۰۱۵ جزو میراث جهانی یونسکو هستند.",
+       "tr": "",
+       "de": "Die Gebäude dieses Viertels wurden ab 1883 auf Tausenden Holzpfählen am Wasser errichtet und gehören seit 2015 zum UNESCO-Welterbe."
       },
       {
        "fa": "بسیاری از بازرگانان این تجارت ایرانی بودند و خانواده‌های زیادی برای کار در این بازار در هامبورگ ساکن شدند.",
        "tr": "",
        "de": "Viele Händler in diesem Geschäft waren Iraner, und zahlreiche Familien ließen sich für die Arbeit auf diesem Markt in Hamburg nieder."
+      },
+      {
+       "fa": "در دهه‌های اخیر بیشتر تاجران فرش از «شهر انبار‌ها» رفته‌اند، اما نام این محله هنوز با فرش ایرانی گره خورده است.",
+       "tr": "",
+       "de": "In den letzten Jahrzehnten haben die meisten Teppichhändler die Speicherstadt verlassen, doch der Name des Viertels ist noch immer eng mit dem iranischen Teppich verbunden."
       },
       {
        "fa": "امروز هم هامبورگ بزرگ‌ترین جامعه‌ی ایرانی آلمان را دارد.",
@@ -46,19 +56,34 @@
        "de": "Doch die Geschichte der Iraner in Deutschland ist nicht nur eine Geschichte der Teppiche."
       },
       {
+       "fa": "پیوند‌های فرهنگی دو کشور قدیمی‌تر است: در سال‌های ۱۹۱۶ تا ۱۹۲۲ مجله‌ی فارسی‌زبان «کاوه» در برلین منتشر می‌شد.",
+       "tr": "",
+       "de": "Die kulturellen Verbindungen beider Länder sind älter: Von 1916 bis 1922 erschien in Berlin die persischsprachige Zeitschrift ‹Kaveh›."
+      },
+      {
+       "fa": "محمدعلی جمال‌زاده، که او را از پیشگامان داستان کوتاه فارسی می‌دانند، با این مجله همکاری داشت و نخستین مجموعه‌ی داستانش، «یکی بود یکی نبود»، در سال ۱۹۲۱ در برلین چاپ شد.",
+       "tr": "",
+       "de": "Mohammad Ali Dschamalzadeh, der als einer der Wegbereiter der persischen Kurzgeschichte gilt, arbeitete an dieser Zeitschrift mit, und sein erster Erzählband ‹Es war einmal› wurde 1921 in Berlin gedruckt."
+      },
+      {
        "fa": "در دهه‌های ۱۹۵۰ و ۱۹۶۰، هزاران جوان ایرانی به آلمان آمدند تا در رشته‌هایی مثل پزشکی و مهندسی درس بخوانند.",
        "tr": "",
        "de": "In den 1950er und 1960er Jahren kamen Tausende junge Iraner nach Deutschland, um Fächer wie Medizin und Ingenieurwesen zu studieren."
       },
       {
-       "fa": "دانشگاه‌های آلمان شهرت خوبی داشتند و تحصیل در آنها نسبتا ارزان بود؛ در نتیجه آلمان یکی از مقصدهای محبوب دانشجویان ایرانی شد.",
+       "fa": "دانشگاه‌های آلمان شهرت خوبی داشتند و تحصیل در آن‌ها نسبتا ارزان بود؛ در نتیجه آلمان یکی از مقصد‌های محبوب دانشجویان ایرانی شد.",
        "tr": "",
        "de": "Die deutschen Universitäten hatten einen guten Ruf, und das Studium dort war relativ günstig; folglich wurde Deutschland zu einem beliebten Ziel iranischer Studierender."
       },
       {
-       "fa": "بسیاری از آنها پس از پایان تحصیل به وطن برگشتند، اما گروهی هم در آلمان ماندند، کار پیدا کردند و خانواده تشکیل دادند.",
+       "fa": "بسیاری از آن‌ها پس از پایان تحصیل به وطن برگشتند، اما گروهی هم در آلمان ماندند، کار پیدا کردند و خانواده تشکیل دادند.",
        "tr": "",
        "de": "Viele kehrten nach dem Studium in die Heimat zurück, doch eine Gruppe blieb in Deutschland, fand Arbeit und gründete Familien."
+      },
+      {
+       "fa": "کسانی که برگشتند، اغلب در ایران استاد دانشگاه، پزشک یا مهندس شدند و پیوند‌های علمی دو کشور را قوی‌تر کردند.",
+       "tr": "",
+       "de": "Wer zurückkehrte, wurde in Iran oft Hochschullehrer, Ärztin oder Ingenieur und stärkte die wissenschaftlichen Verbindungen beider Länder."
       },
       {
        "fa": "بعد از سال ۱۳۵۷ موج تازه‌ای از مهاجرت آغاز شد و شمار ایرانیان در آلمان به‌سرعت افزایش یافت.",
@@ -71,27 +96,42 @@
        "de": "Auch in den letzten Jahrzehnten sind viele Studierende, Ärztinnen und Fachkräfte zum Arbeiten oder Studieren nach Deutschland gekommen."
       },
       {
-       "fa": "درباره‌ی شمار دقیق ایرانیان آلمان آمار یکسانی وجود ندارد، چون بسیاری از آنها شهروند آلمان شده‌اند؛ برآوردها معمولا از بیش از دویست هزار نفر سخن می‌گویند.",
+       "fa": "درباره‌ی شمار دقیق ایرانیان آلمان آمار یکسانی وجود ندارد، چون بسیاری از آن‌ها شهروند آلمان شده‌اند؛ برآورد‌ها معمولا از بیش از دویست هزار نفر سخن می‌گویند.",
        "tr": "",
        "de": "Über die genaue Zahl der Iraner in Deutschland gibt es keine einheitlichen Statistiken, da viele deutsche Staatsbürger geworden sind; Schätzungen sprechen meist von über zweihunderttausend Menschen."
       },
       {
-       "fa": "جامعه‌ی ایرانی آلمان به سطح تحصیلات بالا شناخته می‌شود؛ پزشکان، مهندسان، استادان دانشگاه و کارآفرینان ایرانی در بسیاری از شهرها دیده می‌شوند.",
+       "fa": "بیشتر آن‌ها در شهر‌های بزرگی مانند هامبورگ، برلین، فرانکفورت، کلن و مونیخ زندگی می‌کنند.",
+       "tr": "",
+       "de": "Die meisten von ihnen leben in Großstädten wie Hamburg, Berlin, Frankfurt, Köln und München."
+      },
+      {
+       "fa": "بسیاری از ایرانیان آلمان در کنار کار، در انجمن‌های فرهنگی، ورزشی و صنفی هم به‌صورت داوطلبانه فعالیت می‌کنند.",
+       "tr": "",
+       "de": "Viele Iraner in Deutschland engagieren sich neben dem Beruf ehrenamtlich in Kultur-, Sport- und Berufsverbänden."
+      },
+      {
+       "fa": "جامعه‌ی ایرانی آلمان به سطح تحصیلات بالا شناخته می‌شود؛ پزشکان، مهندسان، استادان دانشگاه و کارآفرینان ایرانی در بسیاری از شهر‌ها دیده می‌شوند.",
        "tr": "",
        "de": "Die iranische Gemeinschaft in Deutschland gilt als sehr gut ausgebildet; iranische Ärzte, Ingenieurinnen, Professoren und Unternehmerinnen findet man in vielen Städten."
       },
       {
-       "fa": "نسل دوم و سوم، یعنی فرزندان و نوه‌های مهاجران، در آلمان به دنیا آمده‌اند و آلمانی برای بسیاری از آنها زبان اصلی است.",
+       "fa": "بسیاری از پزشکانی که در سال‌های اخیر آمده‌اند، پس از گذراندن امتحان زبان و گرفتن مجوز کار، در بیمارستان‌های شهر‌های کوچک و بزرگ مشغول‌اند.",
+       "tr": "",
+       "de": "Viele Ärztinnen und Ärzte, die in den letzten Jahren gekommen sind, arbeiten nach bestandener Sprachprüfung und erteilter Berufserlaubnis in Krankenhäusern kleiner und großer Städte."
+      },
+      {
+       "fa": "نسل دوم و سوم، یعنی فرزندان و نوه‌های مهاجران، در آلمان به دنیا آمده‌اند و آلمانی برای بسیاری از آن‌ها زبان اصلی است.",
        "tr": "",
        "de": "Die zweite und dritte Generation, also die Kinder und Enkel der Eingewanderten, sind in Deutschland geboren, und Deutsch ist für viele von ihnen die Hauptsprache."
       },
       {
-       "fa": "بسیاری از آنها دوزبانه بزرگ می‌شوند، اما حفظ زبان فارسی در کنار مدرسه و دوستان آلمانی همیشه آسان نیست.",
+       "fa": "بسیاری از آن‌ها دوزبانه بزرگ می‌شوند، اما حفظ زبان فارسی در کنار مدرسه و دوستان آلمانی همیشه آسان نیست.",
        "tr": "",
        "de": "Viele wachsen zweisprachig auf, aber Persisch neben Schule und deutschen Freunden zu bewahren, ist nicht immer leicht."
       },
       {
-       "fa": "به همین دلیل، در شهرهایی مثل هامبورگ، فرانکفورت، کلن و برلین مدرسه‌های فارسی وجود دارد که آخر هفته کلاس برگزار می‌کنند.",
+       "fa": "به همین دلیل، در شهر‌هایی مثل هامبورگ، فرانکفورت، کلن و برلین مدرسه‌های فارسی وجود دارد که آخر هفته کلاس برگزار می‌کنند.",
        "tr": "",
        "de": "Deshalb gibt es in Städten wie Hamburg, Frankfurt, Köln und Berlin Persischschulen, die am Wochenende Unterricht anbieten."
       },
@@ -101,19 +141,39 @@
        "de": "In diesen Kursen lernen die Kinder, Persisch zu lesen und zu schreiben, damit sie sich leichter mit ihren Großeltern unterhalten und persische Gedichte lesen können."
       },
       {
+       "fa": "در چند دانشگاه آلمان، از جمله در هامبورگ، برلین، گوتینگن و بامبرگ، رشته‌ی ایران‌شناسی هم وجود دارد و دانشجویان آلمانی در آنجا زبان و فرهنگ ایران را مطالعه می‌کنند.",
+       "tr": "",
+       "de": "An mehreren deutschen Universitäten, unter anderem in Hamburg, Berlin, Göttingen und Bamberg, gibt es auch das Fach Iranistik, in dem deutsche Studierende Sprache und Kultur Irans studieren."
+      },
+      {
        "fa": "نوروز مهم‌ترین جشن سال برای ایرانیان آلمان است.",
        "tr": "",
        "de": "Nouruz ist für die Iraner in Deutschland das wichtigste Fest des Jahres."
       },
       {
-       "fa": "در روزهای پیش از نوروز، خانواده‌ها سفره‌ی هفت‌سین می‌چینند و انجمن‌های ایرانی جشن‌های بزرگی با موسیقی، رقص و غذای ایرانی برگزار می‌کنند.",
+       "fa": "نوروز با اعتدال بهاری، یعنی حدود بیستم یا بیست‌ویکم مارس، آغاز می‌شود و لحظه‌ی دقیق آن را «سال تحویل» می‌نامند.",
+       "tr": "",
+       "de": "Nouruz beginnt mit der Frühlings-Tagundnachtgleiche, also um den 20. oder 21. März, und den genauen Zeitpunkt nennt man ‹Sal-Tahvil›."
+      },
+      {
+       "fa": "در روز‌های پیش از نوروز، خانواده‌ها سفره‌ی هفت‌سین می‌چینند و انجمن‌های ایرانی جشن‌های بزرگی با موسیقی، رقص و غذای ایرانی برگزار می‌کنند.",
        "tr": "",
        "de": "In den Tagen vor Nouruz decken die Familien den Haft-Sin-Tisch, und iranische Vereine veranstalten große Feste mit Musik, Tanz und iranischem Essen."
       },
       {
-       "fa": "در بعضی شهرها این جشن‌ها آن‌قدر بزرگ شده‌اند که آلمانی‌های زیادی هم در آنها شرکت می‌کنند.",
+       "fa": "در بعضی شهر‌ها این جشن‌ها آن‌قدر بزرگ شده‌اند که آلمانی‌های زیادی هم در آن‌ها شرکت می‌کنند.",
        "tr": "",
        "de": "In manchen Städten sind diese Feste so groß geworden, dass auch viele Deutsche daran teilnehmen."
+      },
+      {
+       "fa": "در شهر‌های بزرگ شب‌های شعر، کنسرت‌های موسیقی ایرانی و نمایش فیلم‌های ایرانی هم برگزار می‌شود که تماشاگران آلمانی زیادی دارد.",
+       "tr": "",
+       "de": "In den Großstädten finden außerdem Lyrikabende, Konzerte mit iranischer Musik und Vorführungen iranischer Filme statt, die auch viele deutsche Besucher haben."
+      },
+      {
+       "fa": "رسم‌های دیگر هم به آلمان آمده‌اند: بسیاری چهارشنبه‌سوری را جشن می‌گیرند و روز سیزدهم فروردین برای سیزده‌به‌در به پارک‌ها می‌روند.",
+       "tr": "",
+       "de": "Auch andere Bräuche sind nach Deutschland gekommen: Viele feiern Tschaharschanbe Suri, und am 13. Farvardin gehen sie zu Sizdah Bedar in die Parks."
       },
       {
        "fa": "ایرانیان در ادبیات آلمان هم حضور دارند: نویسندگانی مانند نوید کرمانی و سعید به زبان آلمانی نوشته‌اند و جوایز مهمی گرفته‌اند.",
@@ -121,9 +181,19 @@
        "de": "Auch in der deutschen Literatur sind Iraner präsent: Autoren wie Navid Kermani und SAID haben auf Deutsch geschrieben und wichtige Preise erhalten."
       },
       {
+       "fa": "نوید کرمانی در سال ۲۰۱۵ جایزه‌ی صلح کتاب‌فروشان آلمان را دریافت کرد و رمان «شب‌ها در تهران آرام است» از شیدا بازیار هم خوانندگان زیادی پیدا کرد.",
+       "tr": "",
+       "de": "Navid Kermani erhielt 2015 den Friedenspreis des Deutschen Buchhandels, und auch Shida Bazyars Roman ‹Nachts ist es leise in Teheran› fand viele Leserinnen und Leser."
+      },
+      {
        "fa": "کارگردانان، بازیگران، موسیقی‌دانان و ورزشکاران ایرانی‌تبار نیز در زندگی فرهنگی آلمان نقش مهمی دارند.",
        "tr": "",
        "de": "Auch Regisseurinnen, Schauspieler, Musikerinnen und Sportler iranischer Herkunft spielen im deutschen Kulturleben eine wichtige Rolle."
+      },
+      {
+       "fa": "در فوتبال هم نام‌هایی مانند مهدی مهدوی‌کیا، که سال‌ها برای باشگاه هامبورگ بازی کرد، برای هواداران آلمانی آشناست.",
+       "tr": "",
+       "de": "Auch im Fußball sind Namen wie Mehdi Mahdavikia, der jahrelang für den Hamburger SV spielte, deutschen Fans vertraut."
       },
       {
        "fa": "بسیاری از ایرانیان آلمان می‌گویند که میان دو فرهنگ زندگی می‌کنند: در خانه فارسی حرف می‌زنند و قورمه‌سبزی می‌خورند و بیرون از خانه کاملا آلمانی‌اند.",
@@ -131,9 +201,19 @@
        "de": "Viele Iraner in Deutschland sagen, dass sie zwischen zwei Kulturen leben: Zu Hause sprechen sie Persisch und essen Ghormeh Sabzi, draußen sind sie ganz deutsch."
       },
       {
+       "fa": "زبان روزمره‌ی خانواده‌ها هم اغلب آمیخته است و بچه‌ها گاهی در یک جمله از فارسی به آلمانی می‌روند و برعکس.",
+       "tr": "",
+       "de": "Auch die Alltagssprache der Familien ist oft gemischt, und Kinder wechseln manchmal mitten im Satz vom Persischen ins Deutsche und umgekehrt."
+      },
+      {
        "fa": "برای بعضی، این وضعیت گاهی با دلتنگی و احساس غربت همراه است.",
        "tr": "",
        "de": "Für manche geht diese Situation manchmal mit Heimweh und einem Gefühl der Fremde einher."
+      },
+      {
+       "fa": "بعضی از جوانان نسل سوم فارسی را فقط کمی بلدند، اما با موسیقی، غذا و سفر به ایران به دنبال ریشه‌های خانواده‌شان می‌گردند.",
+       "tr": "",
+       "de": "Manche Jugendliche der dritten Generation können nur wenig Persisch, suchen aber über Musik, Essen und Reisen nach Iran nach den Wurzeln ihrer Familie."
       },
       {
        "fa": "اما بسیاری دیگر آن را یک ثروت می‌دانند، به طوری که خود را با افتخار «هم ایرانی و هم آلمانی» معرفی می‌کنند.",
@@ -158,7 +238,7 @@
         "falsch"
        ],
        "richtig": 0,
-       "fa": "«شهر انبارها» در هامبورگ زمانی مرکز بزرگ تجارت فرش بود.",
+       "fa": "«شهر انبار‌ها» در هامبورگ زمانی مرکز بزرگ تجارت فرش بود.",
        "fest": true
       },
       {
@@ -213,6 +293,27 @@
        "richtig": 0,
        "fa": "نوید کرمانی به زبان آلمانی می‌نویسد.",
        "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "مجله‌ی «کاوه» در هامبورگ منتشر می‌شد.",
+       "fest": true,
+       "erkl": "Die Zeitschrift erschien in <b>Berlin</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "نوروز با اعتدال بهاری آغاز می‌شود.",
+       "fest": true
       }
      ]
     },
@@ -226,6 +327,15 @@
         "als größtes Lagerzentrum für Orientteppiche",
         "als größter Hafen für Kaffee aus Iran",
         "als Universitätsviertel"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was erschien 1921 in Berlin?",
+       "optionen": [
+        "Dschamalzadehs Erzählband ‹Es war einmal›",
+        "die erste persische Zeitung",
+        "ein Roman von Navid Kermani"
        ],
        "richtig": 0
       },
@@ -273,9 +383,19 @@
      "frage": "Bring die Sätze in die Reihenfolge des Textes.",
      "items": [
       {
+       "fa": "ساختمان‌های این محله از سال ۱۸۸۳ به بعد روی هزاران تیرک چوبی در کنار آب ساخته شدند و از سال ۲۰۱۵ جزو میراث جهانی یونسکو هستند.",
+       "tr": "",
+       "de": "Die Gebäude dieses Viertels wurden ab 1883 auf Tausenden Holzpfählen am Wasser errichtet und gehören seit 2015 zum UNESCO-Welterbe."
+      },
+      {
        "fa": "بسیاری از بازرگانان این تجارت ایرانی بودند و خانواده‌های زیادی برای کار در این بازار در هامبورگ ساکن شدند.",
        "tr": "",
        "de": "Viele Händler in diesem Geschäft waren Iraner, und zahlreiche Familien ließen sich für die Arbeit auf diesem Markt in Hamburg nieder."
+      },
+      {
+       "fa": "در دهه‌های اخیر بیشتر تاجران فرش از «شهر انبار‌ها» رفته‌اند، اما نام این محله هنوز با فرش ایرانی گره خورده است.",
+       "tr": "",
+       "de": "In den letzten Jahrzehnten haben die meisten Teppichhändler die Speicherstadt verlassen, doch der Name des Viertels ist noch immer eng mit dem iranischen Teppich verbunden."
       },
       {
        "fa": "امروز هم هامبورگ بزرگ‌ترین جامعه‌ی ایرانی آلمان را دارد.",
@@ -291,16 +411,6 @@
        "fa": "اما داستان ایرانیان در آلمان فقط داستان فرش نیست.",
        "tr": "",
        "de": "Doch die Geschichte der Iraner in Deutschland ist nicht nur eine Geschichte der Teppiche."
-      },
-      {
-       "fa": "در دهه‌های ۱۹۵۰ و ۱۹۶۰، هزاران جوان ایرانی به آلمان آمدند تا در رشته‌هایی مثل پزشکی و مهندسی درس بخوانند.",
-       "tr": "",
-       "de": "In den 1950er und 1960er Jahren kamen Tausende junge Iraner nach Deutschland, um Fächer wie Medizin und Ingenieurwesen zu studieren."
-      },
-      {
-       "fa": "دانشگاه‌های آلمان شهرت خوبی داشتند و تحصیل در آنها نسبتا ارزان بود؛ در نتیجه آلمان یکی از مقصدهای محبوب دانشجویان ایرانی شد.",
-       "tr": "",
-       "de": "Die deutschen Universitäten hatten einen guten Ruf, und das Studium dort war relativ günstig; folglich wurde Deutschland zu einem beliebten Ziel iranischer Studierender."
       }
      ]
     }
@@ -316,23 +426,23 @@
      "titel": "Welches Wort fehlt im Text?",
      "fragen": [
       {
-       "frage": "<span class='fa'>کسی که در هامبورگ از کنار ساختمان‌های آجری قرمز «شهر انبارها» می‌گذرد، شاید نداند که این محله زمانی بزرگ‌ترین مرکز ___ فرش شرقی در جهان بود.</span><br><span class='mini'>Wer in Hamburg an den roten Backsteingebäuden der ‹Speicherstadt› vorbeigeht, weiß vielleicht nicht, dass dieses Viertel einst das größte Lagerzentrum für Orientteppiche der Welt war.</span>",
+       "frage": "<span class='fa'>کسی که در هامبورگ از کنار ساختمان‌های آجری قرمز «شهر انبار‌ها» می‌گذرد، شاید نداند که این محله زمانی بزرگ‌ترین مرکز ___ فرش شرقی در جهان بود.</span><br><span class='mini'>Wer in Hamburg an den roten Backsteingebäuden der ‹Speicherstadt› vorbeigeht, weiß vielleicht nicht, dass dieses Viertel einst das größte Lagerzentrum für Orientteppiche der Welt war.</span>",
        "optionen": [
         "انبار",
-        "رستوران‌دار",
-        "چندفرهنگی"
+        "غربت",
+        "ریشه"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
-       "erkl": "<span class='fa'>کسی که در هامبورگ از کنار ساختمان‌های آجری قرمز «شهر انبارها» می‌گذرد، شاید نداند که این محله زمانی بزرگ‌ترین مرکز انبار فرش شرقی در جهان بود.</span>"
+       "erkl": "<span class='fa'>کسی که در هامبورگ از کنار ساختمان‌های آجری قرمز «شهر انبار‌ها» می‌گذرد، شاید نداند که این محله زمانی بزرگ‌ترین مرکز انبار فرش شرقی در جهان بود.</span>"
       },
       {
        "frage": "<span class='fa'>بسیاری از بازرگانان این ___ ایرانی بودند و خانواده‌های زیادی برای کار در این بازار در هامبورگ ساکن شدند.</span><br><span class='mini'>Viele Händler in diesem Geschäft waren Iraner, und zahlreiche Familien ließen sich für die Arbeit auf diesem Markt in Hamburg nieder.</span>",
        "optionen": [
         "تجارت",
-        "مهندس",
-        "رستوران‌دار"
+        "بندر",
+        "دلتنگی"
        ],
        "richtig": 0,
        "optFa": true,
@@ -340,11 +450,23 @@
        "erkl": "<span class='fa'>بسیاری از بازرگانان این تجارت ایرانی بودند و خانواده‌های زیادی برای کار در این بازار در هامبورگ ساکن شدند.</span>"
       },
       {
+       "frage": "<span class='fa'>در دهه‌های اخیر بیشتر تاجران ___ از «شهر انبار‌ها» رفته‌اند، اما نام این محله هنوز با فرش ایرانی گره خورده است.</span><br><span class='mini'>In den letzten Jahrzehnten haben die meisten Teppichhändler die Speicherstadt verlassen, doch der Name des Viertels ist noch immer eng mit dem iranischen Teppich verbunden.</span>",
+       "optionen": [
+        "فرش",
+        "آشپزی",
+        "نویسنده"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>در دهه‌های اخیر بیشتر تاجران فرش از «شهر انبار‌ها» رفته‌اند، اما نام این محله هنوز با فرش ایرانی گره خورده است.</span>"
+      },
+      {
        "frage": "<span class='fa'>امروز هم هامبورگ بزرگ‌ترین ___ آلمان را دارد.</span><br><span class='mini'>Auch heute hat Hamburg die größte iranische Gemeinschaft Deutschlands.</span>",
        "optionen": [
         "جامعه‌ی ایرانی",
-        "غربت",
-        "دانشجو"
+        "بندر",
+        "آشپزی"
        ],
        "richtig": 0,
        "optFa": true,
@@ -355,7 +477,7 @@
        "frage": "<span class='fa'>اما داستان ایرانیان در آلمان فقط داستان ___ نیست.</span><br><span class='mini'>Doch die Geschichte der Iraner in Deutschland ist nicht nur eine Geschichte der Teppiche.</span>",
        "optionen": [
         "فرش",
-        "پزشک",
+        "همکار",
         "مهاجرت"
        ],
        "richtig": 0,
@@ -364,28 +486,16 @@
        "erkl": "<span class='fa'>اما داستان ایرانیان در آلمان فقط داستان فرش نیست.</span>"
       },
       {
-       "frage": "<span class='fa'>بسیاری از آنها پس از پایان تحصیل به وطن برگشتند، اما گروهی هم در آلمان ماندند، کار پیدا کردند و ___ تشکیل دادند.</span><br><span class='mini'>Viele kehrten nach dem Studium in die Heimat zurück, doch eine Gruppe blieb in Deutschland, fand Arbeit und gründete Familien.</span>",
+       "frage": "<span class='fa'>بسیاری از آن‌ها پس از پایان تحصیل به وطن برگشتند، اما گروهی هم در آلمان ماندند، کار پیدا کردند و ___ تشکیل دادند.</span><br><span class='mini'>Viele kehrten nach dem Studium in die Heimat zurück, doch eine Gruppe blieb in Deutschland, fand Arbeit und gründete Familien.</span>",
        "optionen": [
         "خانواده",
-        "بندر",
-        "نوروز"
+        "موسیقی",
+        "بازرگان"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
-       "erkl": "<span class='fa'>بسیاری از آنها پس از پایان تحصیل به وطن برگشتند، اما گروهی هم در آلمان ماندند، کار پیدا کردند و خانواده تشکیل دادند.</span>"
-      },
-      {
-       "frage": "<span class='fa'>بعد از سال ۱۳۵۷ موج تازه‌ای از ___ آغاز شد و شمار ایرانیان در آلمان به‌سرعت افزایش یافت.</span><br><span class='mini'>Nach 1979 begann eine neue Migrationswelle, und die Zahl der Iraner in Deutschland stieg rasch an.</span>",
-       "optionen": [
-        "مهاجرت",
-        "فرش",
-        "چندفرهنگی"
-       ],
-       "richtig": 0,
-       "optFa": true,
-       "hoeren": false,
-       "erkl": "<span class='fa'>بعد از سال ۱۳۵۷ موج تازه‌ای از مهاجرت آغاز شد و شمار ایرانیان در آلمان به‌سرعت افزایش یافت.</span>"
+       "erkl": "<span class='fa'>بسیاری از آن‌ها پس از پایان تحصیل به وطن برگشتند، اما گروهی هم در آلمان ماندند، کار پیدا کردند و خانواده تشکیل دادند.</span>"
       }
      ]
     },
@@ -394,59 +504,101 @@
      "titel": "Welches Wort fehlt im Text?",
      "fragen": [
       {
-       "frage": "<span class='fa'>درباره‌ی شمار دقیق ایرانیان آلمان آمار یکسانی وجود ندارد، چون بسیاری از آنها ___ آلمان شده‌اند؛ برآوردها معمولا از بیش از دویست هزار نفر سخن می‌گویند.</span><br><span class='mini'>Über die genaue Zahl der Iraner in Deutschland gibt es keine einheitlichen Statistiken, da viele deutsche Staatsbürger geworden sind; Schätzungen sprechen meist von über zweihunderttausend Menschen.</span>",
+       "frage": "<span class='fa'>کسانی که برگشتند، اغلب در ایران استاد دانشگاه، پزشک یا ___ شدند و پیوند‌های علمی دو کشور را قوی‌تر کردند.</span><br><span class='mini'>Wer zurückkehrte, wurde in Iran oft Hochschullehrer, Ärztin oder Ingenieur und stärkte die wissenschaftlichen Verbindungen beider Länder.</span>",
+       "optionen": [
+        "مهندس",
+        "بازرگان",
+        "خواهرزاده"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>کسانی که برگشتند، اغلب در ایران استاد دانشگاه، پزشک یا مهندس شدند و پیوند‌های علمی دو کشور را قوی‌تر کردند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>بعد از سال ۱۳۵۷ موج تازه‌ای از ___ آغاز شد و شمار ایرانیان در آلمان به‌سرعت افزایش یافت.</span><br><span class='mini'>Nach 1979 begann eine neue Migrationswelle, und die Zahl der Iraner in Deutschland stieg rasch an.</span>",
+       "optionen": [
+        "مهاجرت",
+        "مهاجر",
+        "خانواده"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>بعد از سال ۱۳۵۷ موج تازه‌ای از مهاجرت آغاز شد و شمار ایرانیان در آلمان به‌سرعت افزایش یافت.</span>"
+      },
+      {
+       "frage": "<span class='fa'>درباره‌ی شمار دقیق ایرانیان آلمان آمار یکسانی وجود ندارد، چون بسیاری از آن‌ها ___ آلمان شده‌اند؛ برآورد‌ها معمولا از بیش از دویست هزار نفر سخن می‌گویند.</span><br><span class='mini'>Über die genaue Zahl der Iraner in Deutschland gibt es keine einheitlichen Statistiken, da viele deutsche Staatsbürger geworden sind; Schätzungen sprechen meist von über zweihunderttausend Menschen.</span>",
        "optionen": [
         "شهروند",
-        "پزشک",
-        "چندفرهنگی"
+        "فرش",
+        "دلتنگی"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
-       "erkl": "<span class='fa'>درباره‌ی شمار دقیق ایرانیان آلمان آمار یکسانی وجود ندارد، چون بسیاری از آنها شهروند آلمان شده‌اند؛ برآوردها معمولا از بیش از دویست هزار نفر سخن می‌گویند.</span>"
+       "erkl": "<span class='fa'>درباره‌ی شمار دقیق ایرانیان آلمان آمار یکسانی وجود ندارد، چون بسیاری از آن‌ها شهروند آلمان شده‌اند؛ برآورد‌ها معمولا از بیش از دویست هزار نفر سخن می‌گویند.</span>"
       },
       {
-       "frage": "<span class='fa'>___ آلمان به سطح تحصیلات بالا شناخته می‌شود؛ پزشکان، مهندسان، استادان دانشگاه و کارآفرینان ایرانی در بسیاری از شهرها دیده می‌شوند.</span><br><span class='mini'>Die iranische Gemeinschaft in Deutschland gilt als sehr gut ausgebildet; iranische Ärzte, Ingenieurinnen, Professoren und Unternehmerinnen findet man in vielen Städten.</span>",
+       "frage": "<span class='fa'>___ آلمان به سطح تحصیلات بالا شناخته می‌شود؛ پزشکان، مهندسان، استادان دانشگاه و کارآفرینان ایرانی در بسیاری از شهر‌ها دیده می‌شوند.</span><br><span class='mini'>Die iranische Gemeinschaft in Deutschland gilt als sehr gut ausgebildet; iranische Ärzte, Ingenieurinnen, Professoren und Unternehmerinnen findet man in vielen Städten.</span>",
        "optionen": [
         "جامعه‌ی ایرانی",
-        "رستوران‌دار",
-        "فرش"
-       ],
-       "richtig": 0,
-       "optFa": true,
-       "hoeren": false,
-       "erkl": "<span class='fa'>جامعه‌ی ایرانی آلمان به سطح تحصیلات بالا شناخته می‌شود؛ پزشکان، مهندسان، استادان دانشگاه و کارآفرینان ایرانی در بسیاری از شهرها دیده می‌شوند.</span>"
-      },
-      {
-       "frage": "<span class='fa'>___ و سوم، یعنی فرزندان و نوه‌های مهاجران، در آلمان به دنیا آمده‌اند و آلمانی برای بسیاری از آنها زبان اصلی است.</span><br><span class='mini'>Die zweite und dritte Generation, also die Kinder und Enkel der Eingewanderten, sind in Deutschland geboren, und Deutsch ist für viele von ihnen die Hauptsprache.</span>",
-       "optionen": [
-        "نسل دوم",
-        "مهاجر",
-        "انجمن"
-       ],
-       "richtig": 0,
-       "optFa": true,
-       "hoeren": false,
-       "erkl": "<span class='fa'>نسل دوم و سوم، یعنی فرزندان و نوه‌های مهاجران، در آلمان به دنیا آمده‌اند و آلمانی برای بسیاری از آنها زبان اصلی است.</span>"
-      },
-      {
-       "frage": "<span class='fa'>به همین دلیل، در شهرهایی مثل هامبورگ، فرانکفورت، کلن و برلین مدرسه‌های فارسی وجود دارد که ___ کلاس برگزار می‌کنند.</span><br><span class='mini'>Deshalb gibt es in Städten wie Hamburg, Frankfurt, Köln und Berlin Persischschulen, die am Wochenende Unterricht anbieten.</span>",
-       "optionen": [
-        "آخر هفته",
-        "بندر",
+        "وطن",
         "پزشک"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
-       "erkl": "<span class='fa'>به همین دلیل، در شهرهایی مثل هامبورگ، فرانکفورت، کلن و برلین مدرسه‌های فارسی وجود دارد که آخر هفته کلاس برگزار می‌کنند.</span>"
+       "erkl": "<span class='fa'>جامعه‌ی ایرانی آلمان به سطح تحصیلات بالا شناخته می‌شود؛ پزشکان، مهندسان، استادان دانشگاه و کارآفرینان ایرانی در بسیاری از شهر‌ها دیده می‌شوند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>___ و سوم، یعنی فرزندان و نوه‌های مهاجران، در آلمان به دنیا آمده‌اند و آلمانی برای بسیاری از آن‌ها زبان اصلی است.</span><br><span class='mini'>Die zweite und dritte Generation, also die Kinder und Enkel der Eingewanderten, sind in Deutschland geboren, und Deutsch ist für viele von ihnen die Hauptsprache.</span>",
+       "optionen": [
+        "نسل دوم",
+        "چندفرهنگی",
+        "مهاجر"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>نسل دوم و سوم، یعنی فرزندان و نوه‌های مهاجران، در آلمان به دنیا آمده‌اند و آلمانی برای بسیاری از آن‌ها زبان اصلی است.</span>"
+      },
+      {
+       "frage": "<span class='fa'>بسیاری از آن‌ها ___ بزرگ می‌شوند، اما حفظ زبان فارسی در کنار مدرسه و دوستان آلمانی همیشه آسان نیست.</span><br><span class='mini'>Viele wachsen zweisprachig auf, aber Persisch neben Schule und deutschen Freunden zu bewahren, ist nicht immer leicht.</span>",
+       "optionen": [
+        "دوزبانه",
+        "رستوران‌دار",
+        "خانواده"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>بسیاری از آن‌ها دوزبانه بزرگ می‌شوند، اما حفظ زبان فارسی در کنار مدرسه و دوستان آلمانی همیشه آسان نیست.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort fehlt im Text?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>به همین دلیل، در شهر‌هایی مثل هامبورگ، فرانکفورت، کلن و برلین مدرسه‌های فارسی وجود دارد که ___ کلاس برگزار می‌کنند.</span><br><span class='mini'>Deshalb gibt es in Städten wie Hamburg, Frankfurt, Köln und Berlin Persischschulen, die am Wochenende Unterricht anbieten.</span>",
+       "optionen": [
+        "آخر هفته",
+        "چندفرهنگی",
+        "فرش"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>به همین دلیل، در شهر‌هایی مثل هامبورگ، فرانکفورت، کلن و برلین مدرسه‌های فارسی وجود دارد که آخر هفته کلاس برگزار می‌کنند.</span>"
       },
       {
        "frage": "<span class='fa'>___ مهم‌ترین جشن سال برای ایرانیان آلمان است.</span><br><span class='mini'>Nouruz ist für die Iraner in Deutschland das wichtigste Fest des Jahres.</span>",
        "optionen": [
         "نوروز",
-        "پزشک",
-        "اقامت"
+        "خواهرزاده",
+        "مهاجر"
        ],
        "richtig": 0,
        "optFa": true,
@@ -454,16 +606,52 @@
        "erkl": "<span class='fa'>نوروز مهم‌ترین جشن سال برای ایرانیان آلمان است.</span>"
       },
       {
-       "frage": "<span class='fa'>در روزهای پیش از نوروز، خانواده‌ها ___ می‌چینند و انجمن‌های ایرانی جشن‌های بزرگی با موسیقی، رقص و غذای ایرانی برگزار می‌کنند.</span><br><span class='mini'>In den Tagen vor Nouruz decken die Familien den Haft-Sin-Tisch, und iranische Vereine veranstalten große Feste mit Musik, Tanz und iranischem Essen.</span>",
+       "frage": "<span class='fa'>___ با اعتدال بهاری، یعنی حدود بیستم یا بیست‌ویکم مارس، آغاز می‌شود و لحظه‌ی دقیق آن را «سال تحویل» می‌نامند.</span><br><span class='mini'>Nouruz beginnt mit der Frühlings-Tagundnachtgleiche, also um den 20. oder 21. März, und den genauen Zeitpunkt nennt man ‹Sal-Tahvil›.</span>",
        "optionen": [
-        "سفره‌ی هفت‌سین",
-        "مهاجرت",
-        "بورسیه"
+        "نوروز",
+        "شهروند",
+        "تجارت"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
-       "erkl": "<span class='fa'>در روزهای پیش از نوروز، خانواده‌ها سفره‌ی هفت‌سین می‌چینند و انجمن‌های ایرانی جشن‌های بزرگی با موسیقی، رقص و غذای ایرانی برگزار می‌کنند.</span>"
+       "erkl": "<span class='fa'>نوروز با اعتدال بهاری، یعنی حدود بیستم یا بیست‌ویکم مارس، آغاز می‌شود و لحظه‌ی دقیق آن را «سال تحویل» می‌نامند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>در روز‌های پیش از نوروز، خانواده‌ها ___ می‌چینند و انجمن‌های ایرانی جشن‌های بزرگی با موسیقی، رقص و غذای ایرانی برگزار می‌کنند.</span><br><span class='mini'>In den Tagen vor Nouruz decken die Familien den Haft-Sin-Tisch, und iranische Vereine veranstalten große Feste mit Musik, Tanz und iranischem Essen.</span>",
+       "optionen": [
+        "سفره‌ی هفت‌سین",
+        "چندفرهنگی",
+        "نوروز"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>در روز‌های پیش از نوروز، خانواده‌ها سفره‌ی هفت‌سین می‌چینند و انجمن‌های ایرانی جشن‌های بزرگی با موسیقی، رقص و غذای ایرانی برگزار می‌کنند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>در شهر‌های بزرگ شب‌های شعر، کنسرت‌های ___ ایرانی و نمایش فیلم‌های ایرانی هم برگزار می‌شود که تماشاگران آلمانی زیادی دارد.</span><br><span class='mini'>In den Großstädten finden außerdem Lyrikabende, Konzerte mit iranischer Musik und Vorführungen iranischer Filme statt, die auch viele deutsche Besucher haben.</span>",
+       "optionen": [
+        "موسیقی",
+        "چندفرهنگی",
+        "انجمن"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>در شهر‌های بزرگ شب‌های شعر، کنسرت‌های موسیقی ایرانی و نمایش فیلم‌های ایرانی هم برگزار می‌شود که تماشاگران آلمانی زیادی دارد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>رسم‌های دیگر هم به آلمان آمده‌اند: بسیاری چهارشنبه‌سوری را ___ می‌گیرند و روز سیزدهم فروردین برای سیزده‌به‌در به پارک‌ها می‌روند.</span><br><span class='mini'>Auch andere Bräuche sind nach Deutschland gekommen: Viele feiern Tschaharschanbe Suri, und am 13. Farvardin gehen sie zu Sizdah Bedar in die Parks.</span>",
+       "optionen": [
+        "جشن",
+        "زعفران",
+        "غربت"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>رسم‌های دیگر هم به آلمان آمده‌اند: بسیاری چهارشنبه‌سوری را جشن می‌گیرند و روز سیزدهم فروردین برای سیزده‌به‌در به پارک‌ها می‌روند.</span>"
       }
      ]
     },
@@ -473,9 +661,14 @@
      "frage": "Bring die Zusammenfassung des Textes in die richtige Reihenfolge.",
      "items": [
       {
-       "fa": "هامبورگ با تجارت فرش در «شهر انبارها» به مرکز ایرانیان آلمان تبدیل شد.",
+       "fa": "هامبورگ با تجارت فرش در «شهر انبار‌ها» به مرکز ایرانیان آلمان تبدیل شد.",
        "tr": "",
        "de": "Hamburg wurde durch den Teppichhandel in der Speicherstadt zum Zentrum der Iraner in Deutschland."
+      },
+      {
+       "fa": "در آغاز قرن بیستم مجله‌ی «کاوه» و کتاب جمال‌زاده در برلین منتشر شدند.",
+       "tr": "",
+       "de": "Anfang des 20. Jahrhunderts erschienen in Berlin die Zeitschrift ‹Kaveh› und Dschamalzadehs Buch."
       },
       {
        "fa": "در دهه‌های ۱۹۵۰ و ۱۹۶۰ دانشجویان زیادی برای تحصیل به آلمان آمدند.",
@@ -496,6 +689,304 @@
        "fa": "بسیاری زندگی میان دو فرهنگ را یک ثروت می‌دانند.",
        "tr": "",
        "de": "Viele sehen das Leben zwischen zwei Kulturen als Reichtum."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t3",
+   "titel": "Alltag: Bardias Woche in Hamburg",
+   "vorschau": "Bardias Woche in Hamburg",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>قطار شهری</span> – S-Bahn · <span class='fa'>جرثقیل</span> – Kran · <span class='fa'>پایانه‌ی کانتینری</span> – Containerterminal · <span class='fa'>ناهارخوری</span> – Kantine · <span class='fa'>لیموعمانی</span> – getrocknete Limette · <span class='fa'>ماهی دودی</span> – Räucherfisch · <span class='fa'>داوطلب</span> – Freiwillige/r, Ehrenamtliche/r · <span class='fa'>از بر کردن</span> – auswendig lernen · <span class='fa'>تزئین کردن</span> – schmücken · <span class='fa'>صحنه</span> – Bühne · <span class='fa'>خوشامدگویی</span> – Begrüßung · <span class='fa'>سرو شدن</span> – serviert werden · <span class='fa'>دایی</span> – Onkel (Bruder der Mutter)</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Alltag: Bardias Woche in Hamburg",
+     "text": "Alltagstext – Tippe eine Zeile an, wenn du die Übersetzung brauchst.",
+     "zeilen": [
+      {
+       "fa": "بردیا ساعت شش و نیم صبح بیدار می‌شود، یک لیوان چای می‌نوشد و با دوچرخه به ایستگاه قطار شهری می‌رود.",
+       "tr": "",
+       "de": "Bardia steht um halb sieben auf, trinkt ein Glas Tee und fährt mit dem Fahrrad zur S-Bahn-Station."
+      },
+      {
+       "fa": "او در یک شرکت مهندسی در بندر هامبورگ کار می‌کند و مسئول برنامه‌ریزی تعمیر جرثقیل‌های پایانه‌ی کانتینری است.",
+       "tr": "",
+       "de": "Er arbeitet bei einem Ingenieurbüro im Hamburger Hafen und ist für die Planung der Reparaturen an den Kränen des Containerterminals zuständig."
+      },
+      {
+       "fa": "همکارانش از کشور‌های مختلف‌اند و زبان کار بیشتر آلمانی و گاهی انگلیسی است.",
+       "tr": "",
+       "de": "Seine Kollegen kommen aus verschiedenen Ländern, und die Arbeitssprache ist meist Deutsch, manchmal Englisch."
+      },
+      {
+       "fa": "در روز‌های بادی کار روی اسکله سخت است، اما بردیا بعد از ده سال به باد و باران هامبورگ عادت کرده است.",
+       "tr": "",
+       "de": "An windigen Tagen ist die Arbeit auf dem Kai anstrengend, aber nach zehn Jahren hat sich Bardia an Hamburgs Wind und Regen gewöhnt."
+      },
+      {
+       "fa": "در ناهارخوری شرکت گاهی همکاران از او درباره‌ی ایران می‌پرسند؛ درباره‌ی غذا، آب‌وهوا یا زبان فارسی، و بردیا با حوصله به پرسش‌هایشان جواب می‌دهد.",
+       "tr": "",
+       "de": "In der Kantine fragen ihn die Kollegen manchmal nach Iran – nach dem Essen, dem Klima oder der persischen Sprache, und Bardia beantwortet ihre Fragen geduldig."
+      },
+      {
+       "fa": "پنجشنبه‌ها بعد از کار به یک فروشگاه ایرانی در نزدیکی ایستگاه مرکزی می‌رود.",
+       "tr": "",
+       "de": "Donnerstags geht er nach der Arbeit in einen iranischen Laden in der Nähe des Hauptbahnhofs."
+      },
+      {
+       "fa": "صاحب فروشگاه، آقای کریمی، سی سال پیش به هامبورگ آمده و مشتری‌هایش را به اسم می‌شناسد.",
+       "tr": "",
+       "de": "Der Ladenbesitzer, Herr Karimi, kam vor dreißig Jahren nach Hamburg und kennt seine Kunden mit Namen."
+      },
+      {
+       "fa": "قفسه‌های فروشگاه پر از زعفران، زرشک، لیموعمانی، برنج ایرانی، چای و نان لواش است.",
+       "tr": "",
+       "de": "Die Regale des Ladens sind voll mit Safran, Berberitzen, getrockneten Limetten, iranischem Reis, Tee und Lavash-Brot."
+      },
+      {
+       "fa": "این هفته بردیا بیشتر از همیشه خرید می‌کند، چون نوروز نزدیک است و خواهرش نسرین مهمانی بزرگی دارد.",
+       "tr": "",
+       "de": "Diese Woche kauft Bardia mehr ein als sonst, denn Nouruz steht bevor, und seine Schwester Nasrin gibt ein großes Fest."
+      },
+      {
+       "fa": "آقای کریمی می‌گوید که در هفته‌های پیش از نوروز فروش شیرینی نوروزی و ماهی دودی چند برابر می‌شود.",
+       "tr": "",
+       "de": "Herr Karimi erzählt, dass sich in den Wochen vor Nouruz der Verkauf von Nouruz-Gebäck und Räucherfisch vervielfacht."
+      },
+      {
+       "fa": "او برای بردیا یک بسته‌ی کوچک سنجد هم کنار می‌گذارد، چون می‌داند که بردیا هر سال سفره‌ی هفت‌سین می‌چیند.",
+       "tr": "",
+       "de": "Er legt für Bardia auch eine kleine Packung Sendsched zurück, weil er weiß, dass Bardia jedes Jahr einen Haft-Sin-Tisch deckt."
+      },
+      {
+       "fa": "شنبه صبح بردیا خواهرزاده‌اش، ترانه، را به مدرسه‌ی فارسی می‌برد.",
+       "tr": "",
+       "de": "Am Samstagmorgen bringt Bardia seine Nichte Taraneh in die Persischschule."
+      },
+      {
+       "fa": "ترانه هشت سال دارد، در هامبورگ به دنیا آمده و با دوستانش آلمانی و با مادربزرگش فارسی حرف می‌زند.",
+       "tr": "",
+       "de": "Taraneh ist acht Jahre alt, in Hamburg geboren und spricht mit ihren Freundinnen Deutsch und mit ihrer Großmutter Persisch."
+      },
+      {
+       "fa": "مدرسه‌ی فارسی در ساختمان یک دبیرستان آلمانی است و کلاس‌ها از ساعت ده تا یک بعدازظهر برگزار می‌شود.",
+       "tr": "",
+       "de": "Die Persischschule befindet sich im Gebäude eines deutschen Gymnasiums, und der Unterricht dauert von zehn bis ein Uhr."
+      },
+      {
+       "fa": "بیشتر معلم‌ها داوطلب‌اند؛ خود بردیا هم در گروه بزرگ‌تر‌ها ریاضی را به فارسی درس می‌دهد.",
+       "tr": "",
+       "de": "Die meisten Lehrkräfte sind Ehrenamtliche; auch Bardia selbst unterrichtet in der Gruppe der Älteren Mathematik auf Persisch."
+      },
+      {
+       "fa": "این هفته بچه‌های کلاس ترانه برای جشن نوروز یک شعر کوتاه تمرین می‌کنند.",
+       "tr": "",
+       "de": "Diese Woche üben die Kinder aus Taranehs Klasse ein kurzes Gedicht für das Nouruz-Fest."
+      },
+      {
+       "fa": "در زنگ تفریح، پدر‌ها و مادر‌ها در راهرو چای می‌نوشند و درباره‌ی برنامه‌ی جشن حرف می‌زنند.",
+       "tr": "",
+       "de": "In der Pause trinken die Väter und Mütter im Flur Tee und sprechen über das Programm des Festes."
+      },
+      {
+       "fa": "ترانه هنوز بعضی واژه‌ها را با لهجه‌ی آلمانی می‌گوید، اما شعر را کامل از بر کرده است.",
+       "tr": "",
+       "de": "Taraneh spricht manche Wörter noch mit deutschem Akzent aus, kann das Gedicht aber vollständig auswendig."
+      },
+      {
+       "fa": "یکشنبه‌ی بعد، جشن نوروز انجمن در سالن اجتماعات یک مرکز فرهنگی محله برگزار می‌شود.",
+       "tr": "",
+       "de": "Am folgenden Sonntag findet das Nouruz-Fest des Vereins im Saal eines Stadtteilkulturzentrums statt."
+      },
+      {
+       "fa": "از صبح داوطلبان سالن را تزئین می‌کنند و یک سفره‌ی هفت‌سین بزرگ کنار صحنه می‌چینند.",
+       "tr": "",
+       "de": "Schon ab dem Morgen schmücken Freiwillige den Saal und decken neben der Bühne einen großen Haft-Sin-Tisch."
+      },
+      {
+       "fa": "سبزه‌ی سفره را خود بردیا دو هفته پیش از عدس سبز کرده و هر روز به آن آب داده است.",
+       "tr": "",
+       "de": "Das Sabzeh für den Tisch hat Bardia selbst vor zwei Wochen aus Linsen gezogen und jeden Tag gegossen."
+      },
+      {
+       "fa": "بعدازظهر بیش از سیصد نفر به سالن می‌آیند؛ خانواده‌های ایرانی، دوستان آلمانی و چند نفر از همکاران بردیا.",
+       "tr": "",
+       "de": "Am Nachmittag kommen über dreihundert Menschen in den Saal: iranische Familien, deutsche Freunde und einige von Bardias Kollegen."
+      },
+      {
+       "fa": "برنامه با خوشامدگویی رئیس انجمن به فارسی و آلمانی شروع می‌شود.",
+       "tr": "",
+       "de": "Das Programm beginnt mit einer Begrüßung durch die Vereinsvorsitzende auf Persisch und Deutsch."
+      },
+      {
+       "fa": "بعد بچه‌های مدرسه‌ی فارسی روی صحنه می‌روند و شعرشان را می‌خوانند؛ ترانه در ردیف اول ایستاده است.",
+       "tr": "",
+       "de": "Dann gehen die Kinder der Persischschule auf die Bühne und tragen ihr Gedicht vor; Taraneh steht in der ersten Reihe."
+      },
+      {
+       "fa": "پس از اجرای بچه‌ها یک گروه موسیقی سنتی می‌نوازد و چند خانواده با هم می‌رقصند.",
+       "tr": "",
+       "de": "Nach dem Auftritt der Kinder spielt eine Gruppe traditionelle Musik, und einige Familien tanzen zusammen."
+      },
+      {
+       "fa": "در پایان شام ایرانی سرو می‌شود: سبزی‌پلو با ماهی، کوکوسبزی و شیرینی نوروزی.",
+       "tr": "",
+       "de": "Zum Schluss wird ein iranisches Abendessen serviert: Kräuterreis mit Fisch, Kuku Sabzi und Nouruz-Gebäck."
+      },
+      {
+       "fa": "یکی از همکاران بردیا می‌پرسد که معنای هفت‌سین چیست و بردیا چیز‌های روی سفره را یکی‌یکی برایش توضیح می‌دهد.",
+       "tr": "",
+       "de": "Ein Kollege von Bardia fragt, was Haft-Sin bedeutet, und Bardia erklärt ihm die Dinge auf dem Tisch eins nach dem anderen."
+      },
+      {
+       "fa": "شب، وقتی بردیا ترانه را به خانه می‌رساند، ترانه می‌گوید: «دایی، سال دیگر من هم می‌خواهم یک شعر بلندتر بخوانم.»",
+       "tr": "",
+       "de": "Als Bardia Taraneh abends nach Hause bringt, sagt sie: ‹Onkel, nächstes Jahr möchte ich auch ein längeres Gedicht vortragen.›"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "بردیا در یک بیمارستان کار می‌کند.",
+       "fest": true,
+       "erkl": "Er arbeitet bei einem <b>Ingenieurbüro im Hafen</b>."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "آقای کریمی مشتری‌هایش را به اسم می‌شناسد.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "ترانه در تهران به دنیا آمده است.",
+       "fest": true,
+       "erkl": "Taraneh ist in <b>Hamburg</b> geboren."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "سبزه‌ی سفره را بردیا خودش سبز کرده است.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "در جشن فقط ایرانی‌ها شرکت کردند.",
+       "fest": true,
+       "erkl": "Auch <b>deutsche Freunde und Kollegen</b> kamen."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Warum kauft Bardia diese Woche mehr ein?",
+       "optionen": [
+        "Nouruz steht bevor, und seine Schwester gibt ein Fest.",
+        "Der Laden schließt bald.",
+        "Er zieht um."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wer unterrichtet an der Persischschule?",
+       "optionen": [
+        "meist Ehrenamtliche, darunter Bardia",
+        "nur Lehrer aus Iran",
+        "Studierende der Iranistik"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Womit beginnt das Programm des Nouruz-Festes?",
+       "optionen": [
+        "mit einer zweisprachigen Begrüßung",
+        "mit dem Abendessen",
+        "mit einem Konzert"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was wünscht sich Taraneh für das nächste Jahr?",
+       "optionen": [
+        "ein längeres Gedicht vorzutragen",
+        "nicht mehr in die Persischschule zu gehen",
+        "Nouruz in Teheran zu feiern"
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "او در یک شرکت مهندسی در بندر هامبورگ کار می‌کند و مسئول برنامه‌ریزی تعمیر جرثقیل‌های پایانه‌ی کانتینری است.",
+       "tr": "",
+       "de": "Er arbeitet bei einem Ingenieurbüro im Hamburger Hafen und ist für die Planung der Reparaturen an den Kränen des Containerterminals zuständig."
+      },
+      {
+       "fa": "همکارانش از کشور‌های مختلف‌اند و زبان کار بیشتر آلمانی و گاهی انگلیسی است.",
+       "tr": "",
+       "de": "Seine Kollegen kommen aus verschiedenen Ländern, und die Arbeitssprache ist meist Deutsch, manchmal Englisch."
+      },
+      {
+       "fa": "در روز‌های بادی کار روی اسکله سخت است، اما بردیا بعد از ده سال به باد و باران هامبورگ عادت کرده است.",
+       "tr": "",
+       "de": "An windigen Tagen ist die Arbeit auf dem Kai anstrengend, aber nach zehn Jahren hat sich Bardia an Hamburgs Wind und Regen gewöhnt."
+      },
+      {
+       "fa": "در ناهارخوری شرکت گاهی همکاران از او درباره‌ی ایران می‌پرسند؛ درباره‌ی غذا، آب‌وهوا یا زبان فارسی، و بردیا با حوصله به پرسش‌هایشان جواب می‌دهد.",
+       "tr": "",
+       "de": "In der Kantine fragen ihn die Kollegen manchmal nach Iran – nach dem Essen, dem Klima oder der persischen Sprache, und Bardia beantwortet ihre Fragen geduldig."
+      },
+      {
+       "fa": "پنجشنبه‌ها بعد از کار به یک فروشگاه ایرانی در نزدیکی ایستگاه مرکزی می‌رود.",
+       "tr": "",
+       "de": "Donnerstags geht er nach der Arbeit in einen iranischen Laden in der Nähe des Hauptbahnhofs."
+      },
+      {
+       "fa": "صاحب فروشگاه، آقای کریمی، سی سال پیش به هامبورگ آمده و مشتری‌هایش را به اسم می‌شناسد.",
+       "tr": "",
+       "de": "Der Ladenbesitzer, Herr Karimi, kam vor dreißig Jahren nach Hamburg und kennt seine Kunden mit Namen."
       }
      ]
     }
@@ -537,6 +1028,26 @@
        "de": "Ich kam, um weiterzustudieren. Ich hatte ein Stipendium für einen Master in Ingenieurwesen bekommen."
       },
       {
+       "fa": "یوناس: سال‌های اول چه سختی‌هایی داشتید؟",
+       "tr": "",
+       "de": "Welche Schwierigkeiten hatten Sie in den ersten Jahren?"
+      },
+      {
+       "fa": "بردیا: بیشتر از همه زبان. آلمانی را در تهران تا سطح متوسط خوانده بودم، اما لهجه‌ی هامبورگی و سرعت حرف زدن مردم برایم سخت بود.",
+       "tr": "",
+       "de": "Vor allem die Sprache. Ich hatte in Teheran Deutsch bis zur Mittelstufe gelernt, aber der Hamburger Tonfall und das Sprechtempo der Leute fielen mir schwer."
+      },
+      {
+       "fa": "یوناس: و پیدا کردن خانه چطور بود؟",
+       "tr": "",
+       "de": "Und wie war die Wohnungssuche?"
+      },
+      {
+       "fa": "بردیا: در هامبورگ خانه کم و گران است. شش ماه اول در یک اتاق خوابگاه دانشجویی زندگی کردم تا بالاخره یک آپارتمان کوچک پیدا کردم.",
+       "tr": "",
+       "de": "In Hamburg sind Wohnungen knapp und teuer. Die ersten sechs Monate wohnte ich in einem Zimmer im Studentenwohnheim, bis ich endlich eine kleine Wohnung fand."
+      },
+      {
        "fa": "یوناس: و بعد از تحصیل ماندید؟",
        "tr": "",
        "de": "Und nach dem Studium sind Sie geblieben?"
@@ -555,6 +1066,21 @@
        "fa": "بردیا: زیاد. در یک انجمن فرهنگی فعالم و برای اینکه بچه‌ها فارسی یاد بگیرند، شنبه‌ها در مدرسه‌ی فارسی ریاضی درس می‌دهم.",
        "tr": "",
        "de": "Viel. Ich bin in einem Kulturverein aktiv, und damit die Kinder Persisch lernen, unterrichte ich samstags Mathe in der Persischschule."
+      },
+      {
+       "fa": "یوناس: یک سؤال آخر: به چه زبانی فکر می‌کنید؟",
+       "tr": "",
+       "de": "Eine letzte Frage: In welcher Sprache denken Sie?"
+      },
+      {
+       "fa": "بردیا: به موضوع بستگی دارد. درباره‌ی کار به آلمانی فکر می‌کنم، ولی شعر و خانواده همیشه به فارسی‌اند.",
+       "tr": "",
+       "de": "Das hängt vom Thema ab. Über die Arbeit denke ich auf Deutsch nach, aber Gedichte und Familie sind immer auf Persisch."
+      },
+      {
+       "fa": "یوناس: جمله‌ی زیبایی است؛ آن را در تحقیقم نقل می‌کنم. خیلی ممنون، بردیا!",
+       "tr": "",
+       "de": "Ein schöner Satz – den zitiere ich in meiner Arbeit. Vielen Dank, Bardia!"
       }
      ]
     },
@@ -584,6 +1110,26 @@
        "de": "Ich kam, um weiterzustudieren. Ich hatte ein Stipendium für einen Master in Ingenieurwesen bekommen."
       },
       {
+       "fa": "یوناس: سال‌های اول چه سختی‌هایی داشتید؟",
+       "tr": "",
+       "de": "Welche Schwierigkeiten hatten Sie in den ersten Jahren?"
+      },
+      {
+       "fa": "بردیا: بیشتر از همه زبان. آلمانی را در تهران تا سطح متوسط خوانده بودم، اما لهجه‌ی هامبورگی و سرعت حرف زدن مردم برایم سخت بود.",
+       "tr": "",
+       "de": "Vor allem die Sprache. Ich hatte in Teheran Deutsch bis zur Mittelstufe gelernt, aber der Hamburger Tonfall und das Sprechtempo der Leute fielen mir schwer."
+      },
+      {
+       "fa": "یوناس: و پیدا کردن خانه چطور بود؟",
+       "tr": "",
+       "de": "Und wie war die Wohnungssuche?"
+      },
+      {
+       "fa": "بردیا: در هامبورگ خانه کم و گران است. شش ماه اول در یک اتاق خوابگاه دانشجویی زندگی کردم تا بالاخره یک آپارتمان کوچک پیدا کردم.",
+       "tr": "",
+       "de": "In Hamburg sind Wohnungen knapp und teuer. Die ersten sechs Monate wohnte ich in einem Zimmer im Studentenwohnheim, bis ich endlich eine kleine Wohnung fand."
+      },
+      {
        "fa": "یوناس: و بعد از تحصیل ماندید؟",
        "tr": "",
        "de": "Und nach dem Studium sind Sie geblieben?"
@@ -602,6 +1148,21 @@
        "fa": "بردیا: زیاد. در یک انجمن فرهنگی فعالم و برای اینکه بچه‌ها فارسی یاد بگیرند، شنبه‌ها در مدرسه‌ی فارسی ریاضی درس می‌دهم.",
        "tr": "",
        "de": "Viel. Ich bin in einem Kulturverein aktiv, und damit die Kinder Persisch lernen, unterrichte ich samstags Mathe in der Persischschule."
+      },
+      {
+       "fa": "یوناس: یک سؤال آخر: به چه زبانی فکر می‌کنید؟",
+       "tr": "",
+       "de": "Eine letzte Frage: In welcher Sprache denken Sie?"
+      },
+      {
+       "fa": "بردیا: به موضوع بستگی دارد. درباره‌ی کار به آلمانی فکر می‌کنم، ولی شعر و خانواده همیشه به فارسی‌اند.",
+       "tr": "",
+       "de": "Das hängt vom Thema ab. Über die Arbeit denke ich auf Deutsch nach, aber Gedichte und Familie sind immer auf Persisch."
+      },
+      {
+       "fa": "یوناس: جمله‌ی زیبایی است؛ آن را در تحقیقم نقل می‌کنم. خیلی ممنون، بردیا!",
+       "tr": "",
+       "de": "Ein schöner Satz – den zitiere ich in meiner Arbeit. Vielen Dank, Bardia!"
       }
      ]
     },
@@ -619,20 +1180,20 @@
        "richtig": 0
       },
       {
-       "frage": "Wo arbeitet Bardia?",
+       "frage": "Was war am Anfang besonders schwer für Bardia?",
        "optionen": [
-        "im Hamburger Hafen",
-        "in einer Universität",
-        "in einem Restaurant"
+        "die Sprache und die Wohnungssuche",
+        "das Essen",
+        "das Studium in Teheran"
        ],
        "richtig": 0
       },
       {
-       "frage": "Was macht Bardia samstags?",
+       "frage": "In welcher Sprache denkt Bardia über die Arbeit nach?",
        "optionen": [
-        "Er unterrichtet Mathe in der Persischschule.",
-        "Er spielt Fußball.",
-        "Er arbeitet im Hafen."
+        "auf Deutsch",
+        "auf Persisch",
+        "auf Englisch"
        ],
        "richtig": 0
       }
@@ -676,6 +1237,26 @@
        "de": "Hallo Jonas! Nicht ganz. Hier ist der März meist kalt und regnerisch, und der Frühling ist noch nicht da. Aber unser Verein veranstaltet ein großes Fest."
       },
       {
+       "fa": "یوناس: سال تحویل در هامبورگ چه ساعتی است؟ هم‌زمان با تهران؟",
+       "tr": "",
+       "de": "Wann ist Sal-Tahvil in Hamburg? Zur gleichen Zeit wie in Teheran?"
+      },
+      {
+       "fa": "بردیا: لحظه‌اش یکی است، ولی ساعت فرق دارد. آن موقع ساعت ما دو ساعت و نیم از تهران عقب‌تر است؛ اگر در تهران نه صبح باشد، ما شش و نیم صبح دور سفره می‌نشینیم.",
+       "tr": "",
+       "de": "Der Moment ist derselbe, aber die Uhrzeit ist anders. Zu der Zeit sind wir Teheran zweieinhalb Stunden hinterher; wenn es in Teheran neun Uhr morgens ist, sitzen wir um halb sieben am Tisch."
+      },
+      {
+       "fa": "لیلا: پس باید زود بیدار شوی! بعد از سال تحویل پیش کسی می‌روی؟",
+       "tr": "",
+       "de": "Dann musst du früh aufstehen! Gehst du nach Sal-Tahvil zu jemandem?"
+      },
+      {
+       "fa": "بردیا: اول به نسرین زنگ می‌زنم و ظهر پیش او و ترانه می‌روم. عید دیدنی اینجا کوتاه‌تر است، ولی هست.",
+       "tr": "",
+       "de": "Zuerst rufe ich Nasrin an, und mittags gehe ich zu ihr und Taraneh. Die Neujahrsbesuche sind hier kürzer, aber es gibt sie."
+      },
+      {
        "fa": "لیلا: راستش را بگو، دلت برای خانه تنگ نمی‌شود؟",
        "tr": "",
        "de": "Sag ehrlich, hast du kein Heimweh?"
@@ -689,6 +1270,11 @@
        "fa": "یوناس: به نظر من این خیلی قشنگ است. من هم در تهران گاهی دلتنگ آلمان می‌شوم، ولی اینجا را هم دوست دارم.",
        "tr": "",
        "de": "Ich finde das sehr schön. Ich habe in Teheran auch manchmal Heimweh nach Deutschland, aber ich mag es hier auch."
+      },
+      {
+       "fa": "بردیا: یوناس، اگر روزی به هامبورگ آمدی، خبرم کن تا تو را به فروشگاه آقای کریمی ببرم. آنجا همه‌چیز بوی ایران می‌دهد.",
+       "tr": "",
+       "de": "Jonas, wenn du einmal nach Hamburg kommst, sag Bescheid, dann bringe ich dich in Herrn Karimis Laden. Dort riecht alles nach Iran."
       },
       {
        "fa": "لیلا: پس شما دو نفر حالا هر کدام یک وطن دوم دارید! نوروزت پیروز، بردیا جان. می‌بینمت!",
@@ -723,6 +1309,26 @@
        "de": "Hallo Jonas! Nicht ganz. Hier ist der März meist kalt und regnerisch, und der Frühling ist noch nicht da. Aber unser Verein veranstaltet ein großes Fest."
       },
       {
+       "fa": "یوناس: سال تحویل در هامبورگ چه ساعتی است؟ هم‌زمان با تهران؟",
+       "tr": "",
+       "de": "Wann ist Sal-Tahvil in Hamburg? Zur gleichen Zeit wie in Teheran?"
+      },
+      {
+       "fa": "بردیا: لحظه‌اش یکی است، ولی ساعت فرق دارد. آن موقع ساعت ما دو ساعت و نیم از تهران عقب‌تر است؛ اگر در تهران نه صبح باشد، ما شش و نیم صبح دور سفره می‌نشینیم.",
+       "tr": "",
+       "de": "Der Moment ist derselbe, aber die Uhrzeit ist anders. Zu der Zeit sind wir Teheran zweieinhalb Stunden hinterher; wenn es in Teheran neun Uhr morgens ist, sitzen wir um halb sieben am Tisch."
+      },
+      {
+       "fa": "لیلا: پس باید زود بیدار شوی! بعد از سال تحویل پیش کسی می‌روی؟",
+       "tr": "",
+       "de": "Dann musst du früh aufstehen! Gehst du nach Sal-Tahvil zu jemandem?"
+      },
+      {
+       "fa": "بردیا: اول به نسرین زنگ می‌زنم و ظهر پیش او و ترانه می‌روم. عید دیدنی اینجا کوتاه‌تر است، ولی هست.",
+       "tr": "",
+       "de": "Zuerst rufe ich Nasrin an, und mittags gehe ich zu ihr und Taraneh. Die Neujahrsbesuche sind hier kürzer, aber es gibt sie."
+      },
+      {
        "fa": "لیلا: راستش را بگو، دلت برای خانه تنگ نمی‌شود؟",
        "tr": "",
        "de": "Sag ehrlich, hast du kein Heimweh?"
@@ -736,6 +1342,11 @@
        "fa": "یوناس: به نظر من این خیلی قشنگ است. من هم در تهران گاهی دلتنگ آلمان می‌شوم، ولی اینجا را هم دوست دارم.",
        "tr": "",
        "de": "Ich finde das sehr schön. Ich habe in Teheran auch manchmal Heimweh nach Deutschland, aber ich mag es hier auch."
+      },
+      {
+       "fa": "بردیا: یوناس، اگر روزی به هامبورگ آمدی، خبرم کن تا تو را به فروشگاه آقای کریمی ببرم. آنجا همه‌چیز بوی ایران می‌دهد.",
+       "tr": "",
+       "de": "Jonas, wenn du einmal nach Hamburg kommst, sag Bescheid, dann bringe ich dich in Herrn Karimis Laden. Dort riecht alles nach Iran."
       },
       {
        "fa": "لیلا: پس شما دو نفر حالا هر کدام یک وطن دوم دارید! نوروزت پیروز، بردیا جان. می‌بینمت!",
@@ -758,11 +1369,11 @@
        "richtig": 0
       },
       {
-       "frage": "Was ist an Nouruz in Hamburg anders?",
+       "frage": "Um wie viel Uhr ist Sal-Tahvil in Hamburg, wenn es in Teheran 9 Uhr ist?",
        "optionen": [
-        "Das Wetter ist oft kalt und regnerisch.",
-        "Es gibt keinen Haft-Sin-Tisch.",
-        "Niemand feiert."
+        "um halb sieben",
+        "um halb zwölf",
+        "ebenfalls um neun"
        ],
        "richtig": 0
       },
@@ -772,6 +1383,351 @@
         "wenn seine deutschen Kollegen zum Fest kommen",
         "wenn er in Teheran ist",
         "wenn er allein ist"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d3",
+   "titel": "Dialog: Was gehört auf den Haft-Sin-Tisch?",
+   "vorschau": "Was gehört auf den Haft-Sin-Tisch?",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>In der Kantine sieht Bardias Kollegin Katrin ein Foto auf seinem Handy. Katrin lernt seit zwei Jahren an der Volkshochschule Persisch und übt gern mit ihm.</p>"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "کاترین: بردیا، این عکس سفره‌ای پر از چیز‌های رنگارنگ است. این چیست؟",
+       "tr": "",
+       "de": "Bardia, auf diesem Foto ist ein Tisch voller bunter Dinge. Was ist das?"
+      },
+      {
+       "fa": "بردیا: سفره‌ی هفت‌سین است. پیش از نوروز آن را می‌چینیم. روی آن هفت چیز هست که نامشان با حرف «سین» شروع می‌شود.",
+       "tr": "",
+       "de": "Das ist der Haft-Sin-Tisch. Wir decken ihn vor Nouruz. Darauf stehen sieben Dinge, deren Namen mit dem Buchstaben ‹Sin› beginnen."
+      },
+      {
+       "fa": "کاترین: مثلا چه چیزهایی؟",
+       "tr": "",
+       "de": "Was zum Beispiel?"
+      },
+      {
+       "fa": "بردیا: سبزه، سمنو، سنجد، سیب، سیر، سماق و سرکه. بعضی‌ها سکه یا سنبل را هم به جای یکی از این‌ها می‌گذارند.",
+       "tr": "",
+       "de": "Sabzeh, Samanu, Sendsched, Apfel, Knoblauch, Sumach und Essig. Manche stellen statt eines davon auch eine Münze oder eine Hyazinthe hin."
+      },
+      {
+       "fa": "کاترین: هر کدام معنای خاصی دارد؟",
+       "tr": "",
+       "de": "Hat jedes davon eine besondere Bedeutung?"
+      },
+      {
+       "fa": "بردیا: بله. سبزه نشانه‌ی رویش و بهار است، سیب نشانه‌ی تندرستی و سکه نشانه‌ی فراوانی. البته معنا‌ها در خانواده‌ها کمی فرق می‌کند.",
+       "tr": "",
+       "de": "Ja. Das Sabzeh steht für Wachstum und Frühling, der Apfel für Gesundheit und die Münze für Wohlstand. Die Bedeutungen unterscheiden sich allerdings ein wenig von Familie zu Familie."
+      },
+      {
+       "fa": "کاترین: سمنو و سنجد را نمی‌شناسم.",
+       "tr": "",
+       "de": "Samanu und Sendsched kenne ich nicht."
+      },
+      {
+       "fa": "بردیا: سمنو یک خوراک شیرین است که از جوانه‌ی گندم درست می‌شود، و سنجد میوه‌ی خشک کوچکی با طعمی کمی شیرین است.",
+       "tr": "",
+       "de": "Samanu ist eine süße Speise aus Weizenkeimen, und Sendsched ist eine kleine getrocknete Frucht mit leicht süßem Geschmack."
+      },
+      {
+       "fa": "کاترین: روی سفره یک آینه و یک تنگ ماهی هم می‌بینم.",
+       "tr": "",
+       "de": "Auf dem Tisch sehe ich auch einen Spiegel und ein Fischglas."
+      },
+      {
+       "fa": "بردیا: آینه، شمع و تخم‌مرغ رنگی هم معمولا روی سفره است. ماهی قرمز هم سنتی است، اما ما دیگر ماهی زنده نمی‌گذاریم؛ یک ماهی سرامیکی داریم.",
+       "tr": "",
+       "de": "Spiegel, Kerzen und bemalte Eier gehören meist auch dazu. Ein Goldfisch ist ebenfalls Tradition, aber wir nehmen keinen lebenden Fisch mehr, sondern einen aus Keramik."
+      },
+      {
+       "fa": "کاترین: سفره را تا کی نگه می‌دارید؟",
+       "tr": "",
+       "de": "Wie lange lasst ihr den Tisch stehen?"
+      },
+      {
+       "fa": "بردیا: تا روز سیزدهم. روز سیزده‌به‌در سبزه را با خودمان به طبیعت می‌بریم و در آب روان می‌اندازیم.",
+       "tr": "",
+       "de": "Bis zum dreizehnten Tag. An Sizdah Bedar nehmen wir das Sabzeh mit in die Natur und werfen es in fließendes Wasser."
+      },
+      {
+       "fa": "کاترین: چه رسم قشنگی! جشن انجمن شما برای همه آزاد است؟",
+       "tr": "",
+       "de": "Was für ein schöner Brauch! Ist das Fest eures Vereins für alle offen?"
+      },
+      {
+       "fa": "بردیا: بله، یکشنبه‌ی بعد در سالن اجتماعات محله. بلیتش ارزان است و شام ایرانی هم دارد. بیا، ترانه هم آنجا شعر می‌خواند.",
+       "tr": "",
+       "de": "Ja, am nächsten Sonntag im Gemeindesaal des Viertels. Die Karten sind günstig, und es gibt auch ein iranisches Abendessen. Komm doch, Taraneh trägt dort auch ein Gedicht vor."
+      },
+      {
+       "fa": "کاترین: حتما می‌آیم. فعلا!",
+       "tr": "",
+       "de": "Ich komme auf jeden Fall. Bis dann!"
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "کاترین: بردیا، این عکس سفره‌ای پر از چیز‌های رنگارنگ است. این چیست؟",
+       "tr": "",
+       "de": "Bardia, auf diesem Foto ist ein Tisch voller bunter Dinge. Was ist das?"
+      },
+      {
+       "fa": "بردیا: سفره‌ی هفت‌سین است. پیش از نوروز آن را می‌چینیم. روی آن هفت چیز هست که نامشان با حرف «سین» شروع می‌شود.",
+       "tr": "",
+       "de": "Das ist der Haft-Sin-Tisch. Wir decken ihn vor Nouruz. Darauf stehen sieben Dinge, deren Namen mit dem Buchstaben ‹Sin› beginnen."
+      },
+      {
+       "fa": "کاترین: مثلا چه چیزهایی؟",
+       "tr": "",
+       "de": "Was zum Beispiel?"
+      },
+      {
+       "fa": "بردیا: سبزه، سمنو، سنجد، سیب، سیر، سماق و سرکه. بعضی‌ها سکه یا سنبل را هم به جای یکی از این‌ها می‌گذارند.",
+       "tr": "",
+       "de": "Sabzeh, Samanu, Sendsched, Apfel, Knoblauch, Sumach und Essig. Manche stellen statt eines davon auch eine Münze oder eine Hyazinthe hin."
+      },
+      {
+       "fa": "کاترین: هر کدام معنای خاصی دارد؟",
+       "tr": "",
+       "de": "Hat jedes davon eine besondere Bedeutung?"
+      },
+      {
+       "fa": "بردیا: بله. سبزه نشانه‌ی رویش و بهار است، سیب نشانه‌ی تندرستی و سکه نشانه‌ی فراوانی. البته معنا‌ها در خانواده‌ها کمی فرق می‌کند.",
+       "tr": "",
+       "de": "Ja. Das Sabzeh steht für Wachstum und Frühling, der Apfel für Gesundheit und die Münze für Wohlstand. Die Bedeutungen unterscheiden sich allerdings ein wenig von Familie zu Familie."
+      },
+      {
+       "fa": "کاترین: سمنو و سنجد را نمی‌شناسم.",
+       "tr": "",
+       "de": "Samanu und Sendsched kenne ich nicht."
+      },
+      {
+       "fa": "بردیا: سمنو یک خوراک شیرین است که از جوانه‌ی گندم درست می‌شود، و سنجد میوه‌ی خشک کوچکی با طعمی کمی شیرین است.",
+       "tr": "",
+       "de": "Samanu ist eine süße Speise aus Weizenkeimen, und Sendsched ist eine kleine getrocknete Frucht mit leicht süßem Geschmack."
+      },
+      {
+       "fa": "کاترین: روی سفره یک آینه و یک تنگ ماهی هم می‌بینم.",
+       "tr": "",
+       "de": "Auf dem Tisch sehe ich auch einen Spiegel und ein Fischglas."
+      },
+      {
+       "fa": "بردیا: آینه، شمع و تخم‌مرغ رنگی هم معمولا روی سفره است. ماهی قرمز هم سنتی است، اما ما دیگر ماهی زنده نمی‌گذاریم؛ یک ماهی سرامیکی داریم.",
+       "tr": "",
+       "de": "Spiegel, Kerzen und bemalte Eier gehören meist auch dazu. Ein Goldfisch ist ebenfalls Tradition, aber wir nehmen keinen lebenden Fisch mehr, sondern einen aus Keramik."
+      },
+      {
+       "fa": "کاترین: سفره را تا کی نگه می‌دارید؟",
+       "tr": "",
+       "de": "Wie lange lasst ihr den Tisch stehen?"
+      },
+      {
+       "fa": "بردیا: تا روز سیزدهم. روز سیزده‌به‌در سبزه را با خودمان به طبیعت می‌بریم و در آب روان می‌اندازیم.",
+       "tr": "",
+       "de": "Bis zum dreizehnten Tag. An Sizdah Bedar nehmen wir das Sabzeh mit in die Natur und werfen es in fließendes Wasser."
+      },
+      {
+       "fa": "کاترین: چه رسم قشنگی! جشن انجمن شما برای همه آزاد است؟",
+       "tr": "",
+       "de": "Was für ein schöner Brauch! Ist das Fest eures Vereins für alle offen?"
+      },
+      {
+       "fa": "بردیا: بله، یکشنبه‌ی بعد در سالن اجتماعات محله. بلیتش ارزان است و شام ایرانی هم دارد. بیا، ترانه هم آنجا شعر می‌خواند.",
+       "tr": "",
+       "de": "Ja, am nächsten Sonntag im Gemeindesaal des Viertels. Die Karten sind günstig, und es gibt auch ein iranisches Abendessen. Komm doch, Taraneh trägt dort auch ein Gedicht vor."
+      },
+      {
+       "fa": "کاترین: حتما می‌آیم. فعلا!",
+       "tr": "",
+       "de": "Ich komme auf jeden Fall. Bis dann!"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Was haben die Dinge auf dem Haft-Sin-Tisch gemeinsam?",
+       "optionen": [
+        "Ihre Namen beginnen mit dem Buchstaben ‹Sin›.",
+        "Sie sind alle grün.",
+        "Sie kommen alle aus Hamburg."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wofür steht das Sabzeh?",
+       "optionen": [
+        "für Wachstum und Frühling",
+        "für Wohlstand",
+        "für Gesundheit"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was macht man an Sizdah Bedar mit dem Sabzeh?",
+       "optionen": [
+        "Man wirft es in fließendes Wasser.",
+        "Man isst es.",
+        "Man stellt es ins Fenster."
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "a",
+   "titel": "Gut zu wissen",
+   "vorschau": "💡",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Persische Bücher aus Berlin",
+     "text": "Kurzer Infotext – tippe eine Zeile an für die Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "در سال‌های پس از جنگ جهانی اول، برلین یکی از مراکز مهم چاپ کتاب و مجله‌ی فارسی بود.",
+       "tr": "",
+       "de": "In den Jahren nach dem Ersten Weltkrieg war Berlin eines der wichtigen Zentren für den Druck persischer Bücher und Zeitschriften."
+      },
+      {
+       "fa": "چاپخانه‌ی «کاویانی» در این شهر کتاب‌ها و مجله‌های فارسی زیادی منتشر کرد.",
+       "tr": "",
+       "de": "Die Druckerei ‹Kaviani› in dieser Stadt veröffentlichte viele persische Bücher und Zeitschriften."
+      },
+      {
+       "fa": "مجموعه‌ی داستان «یکی بود یکی نبود» از محمدعلی جمال‌زاده در سال ۱۹۲۱ در برلین چاپ شد.",
+       "tr": "",
+       "de": "Mohammad Ali Dschamalzadehs Erzählband ‹Es war einmal› wurde 1921 in Berlin gedruckt."
+      },
+      {
+       "fa": "این کتاب را آغاز داستان کوتاه نوین فارسی می‌دانند.",
+       "tr": "",
+       "de": "Dieses Buch gilt als Beginn der modernen persischen Kurzgeschichte."
+      },
+      {
+       "fa": "جمال‌زاده بیشتر عمرش را بیرون از ایران، به‌ویژه در ژنو، گذراند.",
+       "tr": "",
+       "de": "Dschamalzadeh verbrachte den größten Teil seines Lebens außerhalb Irans, vor allem in Genf."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Die Speicherstadt",
+     "text": "Kurzer Infotext – tippe eine Zeile an für die Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "«شهر انبار‌ها» در هامبورگ از سال ۱۸۸۳ به بعد ساخته شد.",
+       "tr": "",
+       "de": "Die Hamburger Speicherstadt wurde ab 1883 gebaut."
+      },
+      {
+       "fa": "ساختمان‌های آن روی هزاران تیرک چوب بلوط در زمین نرم کنار رودخانه بنا شده‌اند.",
+       "tr": "",
+       "de": "Ihre Gebäude stehen auf Tausenden Eichenpfählen im weichen Boden am Fluss."
+      },
+      {
+       "fa": "این محله را بزرگ‌ترین مجموعه‌ی انبار‌های به هم پیوسته‌ی جهان می‌دانند.",
+       "tr": "",
+       "de": "Das Viertel gilt als der größte zusammenhängende Lagerhauskomplex der Welt."
+      },
+      {
+       "fa": "در قرن بیستم قهوه، چای، ادویه و فرش شرقی در این انبار‌ها نگهداری می‌شد.",
+       "tr": "",
+       "de": "Im 20. Jahrhundert lagerten in diesen Speichern Kaffee, Tee, Gewürze und Orientteppiche."
+      },
+      {
+       "fa": "از سال ۲۰۱۵ این محله همراه با محله‌ی دفتر‌های تجاری کنار آن در فهرست میراث جهانی یونسکو قرار دارد.",
+       "tr": "",
+       "de": "Seit 2015 steht das Viertel zusammen mit dem benachbarten Kontorhausviertel auf der UNESCO-Welterbeliste."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Sal-Tahvil in Deutschland",
+     "text": "Kurzer Infotext – tippe eine Zeile an für die Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "نوروز در لحظه‌ی دقیق اعتدال بهاری آغاز می‌شود و این لحظه هر سال تغییر می‌کند.",
+       "tr": "",
+       "de": "Nouruz beginnt im genauen Moment der Frühlings-Tagundnachtgleiche, und dieser Moment ändert sich jedes Jahr."
+      },
+      {
+       "fa": "گاهی سال تحویل نیمه‌شب است و گاهی وسط روز کاری.",
+       "tr": "",
+       "de": "Mal ist Sal-Tahvil um Mitternacht, mal mitten am Arbeitstag."
+      },
+      {
+       "fa": "ایرانیان آلمان این لحظه را به وقت محلی جشن می‌گیرند؛ در آن روز‌ها ساعت آلمان دو ساعت و نیم از ساعت ایران عقب‌تر است.",
+       "tr": "",
+       "de": "Die Iraner in Deutschland feiern diesen Moment nach Ortszeit; in diesen Tagen ist die deutsche Uhr der iranischen zweieinhalb Stunden hinterher."
+      },
+      {
+       "fa": "اگر سال تحویل وسط روز باشد، بعضی‌ها در محل کار برای همکارانشان شیرینی می‌برند.",
+       "tr": "",
+       "de": "Fällt Sal-Tahvil mitten in den Tag, bringen manche ihren Kollegen am Arbeitsplatz Gebäck mit."
+      },
+      {
+       "fa": "بسیاری از خانواده‌ها هم‌زمان با خویشاوندانشان در ایران تماس تصویری می‌گیرند تا سال نو را با هم آغاز کنند.",
+       "tr": "",
+       "de": "Viele Familien telefonieren zeitgleich per Video mit ihren Verwandten in Iran, um das neue Jahr gemeinsam zu beginnen."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zu den Infotexten",
+     "fragen": [
+      {
+       "frage": "Wo wurde Dschamalzadehs ‹Es war einmal› gedruckt?",
+       "optionen": [
+        "in Berlin",
+        "in Hamburg",
+        "in Teheran"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Worauf stehen die Gebäude der Speicherstadt?",
+       "optionen": [
+        "auf Tausenden Holzpfählen",
+        "auf Felsen",
+        "auf alten Schiffen"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie groß ist zu Sal-Tahvil der Zeitunterschied zwischen Deutschland und Iran?",
+       "optionen": [
+        "zweieinhalb Stunden",
+        "eine Stunde",
+        "vier Stunden"
        ],
        "richtig": 0
       }
@@ -836,9 +1792,14 @@
      "links": "de",
      "paare": [
       {
-       "fa": "به این منظور …",
+       "fa": "برای من مهم است که …",
        "tr": "",
-       "de": "Zu diesem Zweck …"
+       "de": "Für mich ist es wichtig, dass …"
+      },
+      {
+       "fa": "در نتیجه …",
+       "tr": "",
+       "de": "Folglich …"
       },
       {
        "fa": "هدف من این است که …",
@@ -846,19 +1807,14 @@
        "de": "Mein Ziel ist es, …"
       },
       {
-       "fa": "برای من مهم است که …",
+       "fa": "به این منظور …",
        "tr": "",
-       "de": "Für mich ist es wichtig, dass …"
+       "de": "Zu diesem Zweck …"
       },
       {
        "fa": "تا جایی که می‌دانم …",
        "tr": "",
        "de": "Soweit ich weiß …"
-      },
-      {
-       "fa": "از تجربه‌ی خودم می‌گویم که …",
-       "tr": "",
-       "de": "Aus eigener Erfahrung sage ich, dass …"
       },
       {
        "fa": "به همین دلیل …",
@@ -876,7 +1832,7 @@
        "frage": "Was bedeutet der Satz?",
        "optionen": [
         "Mein Ziel ist es, …",
-        "Zu diesem Zweck …",
+        "Aus eigener Erfahrung sage ich, dass …",
         "Aus diesem Grund …"
        ],
        "richtig": 0,
@@ -885,9 +1841,19 @@
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
+        "Folglich …",
+        "Mein Ziel ist es, …",
+        "Einerseits … andererseits …"
+       ],
+       "richtig": 0,
+       "fa": "در نتیجه …"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
         "Einerseits … andererseits …",
         "Folglich …",
-        "Mein Ziel ist es, …"
+        "Aus diesem Grund …"
        ],
        "richtig": 0,
        "fa": "از یک سو … از سوی دیگر …"
@@ -895,9 +1861,19 @@
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
+        "Für mich ist es wichtig, dass …",
         "Aus diesem Grund …",
-        "Zu diesem Zweck …",
-        "Aus eigener Erfahrung sage ich, dass …"
+        "Folglich …"
+       ],
+       "richtig": 0,
+       "fa": "برای من مهم است که …"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Aus diesem Grund …",
+        "Aus eigener Erfahrung sage ich, dass …",
+        "Einerseits … andererseits …"
        ],
        "richtig": 0,
        "fa": "به همین دلیل …"
@@ -907,30 +1883,10 @@
        "optionen": [
         "Aus eigener Erfahrung sage ich, dass …",
         "Für mich ist es wichtig, dass …",
-        "Soweit ich weiß …"
+        "Aus diesem Grund …"
        ],
        "richtig": 0,
        "fa": "از تجربه‌ی خودم می‌گویم که …"
-      },
-      {
-       "frage": "Was bedeutet der Satz?",
-       "optionen": [
-        "Zu diesem Zweck …",
-        "Aus eigener Erfahrung sage ich, dass …",
-        "Folglich …"
-       ],
-       "richtig": 0,
-       "fa": "به این منظور …"
-      },
-      {
-       "frage": "Was bedeutet der Satz?",
-       "optionen": [
-        "Für mich ist es wichtig, dass …",
-        "Folglich …",
-        "Zu diesem Zweck …"
-       ],
-       "richtig": 0,
-       "fa": "برای من مهم است که …"
       }
      ]
     },

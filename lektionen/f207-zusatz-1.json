@@ -251,6 +251,54 @@
        "a": "Rekord"
       },
       {
+       "fa": "گل",
+       "a": "Blüte, Blume"
+      },
+      {
+       "fa": "رشته",
+       "a": "Faden"
+      },
+      {
+       "fa": "سرگل",
+       "a": "Sargol (reiner Narbensafran)"
+      },
+      {
+       "fa": "عطر",
+       "a": "Duft"
+      },
+      {
+       "fa": "طعم",
+       "a": "Geschmack"
+      },
+      {
+       "fa": "کیفیت",
+       "a": "Qualität"
+      },
+      {
+       "fa": "مرغوب",
+       "a": "hochwertig"
+      },
+      {
+       "fa": "خوشه",
+       "a": "Traube, Fruchtstand"
+      },
+      {
+       "fa": "پوست",
+       "a": "Schale, Haut"
+      },
+      {
+       "fa": "خندان",
+       "a": "aufgesprungen (Pistazie)"
+      },
+      {
+       "fa": "بوداده",
+       "a": "geröstet"
+      },
+      {
+       "fa": "رطوبت",
+       "a": "Feuchtigkeit"
+      },
+      {
        "fa": "کاشتن",
        "a": "pflanzen, anbauen"
       },
@@ -281,40 +329,40 @@
      "links": "emoji",
      "paare": [
       {
-       "fa": "رقابت",
+       "fa": "صادرات",
        "tr": "",
-       "de": "Wettbewerb",
-       "emoji": "🏁"
+       "de": "Export",
+       "emoji": "🚢"
       },
       {
-       "fa": "میانگین",
+       "fa": "افزایش",
        "tr": "",
-       "de": "Durchschnitt",
-       "emoji": "➗"
-      },
-      {
-       "fa": "رقیب",
-       "tr": "",
-       "de": "Konkurrent/in",
-       "emoji": "🥊"
-      },
-      {
-       "fa": "باغ",
-       "tr": "",
-       "de": "Garten, Plantage",
-       "emoji": "🌳"
-      },
-      {
-       "fa": "رکورد",
-       "tr": "",
-       "de": "Rekord",
-       "emoji": "🏆"
+       "de": "Anstieg",
+       "emoji": "⬆️"
       },
       {
        "fa": "کشاورز",
        "tr": "",
        "de": "Landwirt/in",
        "emoji": "👨‍🌾"
+      },
+      {
+       "fa": "عرضه",
+       "tr": "",
+       "de": "Angebot (Markt)",
+       "emoji": "🛒"
+      },
+      {
+       "fa": "خشکسالی",
+       "tr": "",
+       "de": "Dürre",
+       "emoji": "🏜️"
+      },
+      {
+       "fa": "کشاورزی",
+       "tr": "",
+       "de": "Landwirtschaft",
+       "emoji": "🚜"
       }
      ],
      "titel": "Memory"
@@ -324,40 +372,40 @@
      "links": "de",
      "paare": [
       {
-       "fa": "رقیب",
+       "fa": "افزایش",
        "tr": "",
-       "de": "Konkurrent/in",
-       "emoji": "🥊"
+       "de": "Anstieg",
+       "emoji": "⬆️"
       },
       {
-       "fa": "نیمه",
+       "fa": "کلاله",
        "tr": "",
-       "de": "Hälfte",
-       "emoji": "🌓"
+       "de": "Narbe (der Blüte), Safranfaden",
+       "emoji": "🔴"
       },
       {
-       "fa": "آبیاری",
+       "fa": "تن",
        "tr": "",
-       "de": "Bewässerung",
-       "emoji": "💧"
-      },
-      {
-       "fa": "تقاضا",
-       "tr": "",
-       "de": "Nachfrage",
-       "emoji": "🙋"
-      },
-      {
-       "fa": "واسطه",
-       "tr": "",
-       "de": "Zwischenhändler/in",
-       "emoji": "🔀"
+       "de": "Tonne",
+       "emoji": "⚖️"
       },
       {
        "fa": "نمودار",
        "tr": "",
        "de": "Diagramm",
        "emoji": "📈"
+      },
+      {
+       "fa": "مرغوب",
+       "tr": "",
+       "de": "hochwertig",
+       "emoji": "🥇"
+      },
+      {
+       "fa": "رقابت",
+       "tr": "",
+       "de": "Wettbewerb",
+       "emoji": "🏁"
       }
      ],
      "titel": "Memory: Wort & Bedeutung"
@@ -377,8 +425,8 @@
        "frage": "<span class='fa'>___ زعفران در پاییز و با دست انجام می‌شود.</span><br><span class='mini'>Die Safranernte findet im Herbst und von Hand statt.</span>",
        "optionen": [
         "برداشت",
-        "ادویه",
-        "مزرعه"
+        "کاهش",
+        "رکورد"
        ],
        "richtig": 0,
        "optFa": true,
@@ -389,8 +437,8 @@
        "frage": "<span class='fa'>هر گل زعفران سه ___ قرمز دارد.</span><br><span class='mini'>Jede Safranblüte hat drei rote Narben.</span>",
        "optionen": [
         "کلاله",
-        "تن",
-        "آمار"
+        "تقلبی",
+        "برداشت"
        ],
        "richtig": 0,
        "optFa": true,
@@ -401,8 +449,8 @@
        "frage": "<span class='fa'>پسته یکی از مهم‌ترین اقلام ___ غیرنفتی ایران است.</span><br><span class='mini'>Pistazien gehören zu den wichtigsten Nicht-Erdöl-Exportgütern Irans.</span>",
        "optionen": [
         "صادرات",
-        "مزرعه",
-        "واسطه"
+        "تن",
+        "باغ"
        ],
        "richtig": 0,
        "optFa": true,
@@ -413,26 +461,20 @@
        "frage": "<span class='fa'>در سال‌های اخیر ___ باغ‌های پسته‌ی کرمان را تهدید می‌کند.</span><br><span class='mini'>In den letzten Jahren bedroht die Dürre die Pistazienplantagen von Kerman.</span>",
        "optionen": [
         "خشکسالی",
-        "ارزش",
-        "ادویه"
+        "آمار",
+        "آب‌های زیرزمینی"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
        "erkl": "<span class='fa'>در سال‌های اخیر خشکسالی باغ‌های پسته‌ی کرمان را تهدید می‌کند.</span>"
-      }
-     ]
-    },
-    {
-     "typ": "wahl",
-     "titel": "Welches Wort passt?",
-     "fragen": [
+      },
       {
        "frage": "<span class='fa'>آمریکا مهم‌ترین ___ ایران در بازار پسته است.</span><br><span class='mini'>Die USA sind Irans wichtigster Konkurrent auf dem Pistazienmarkt.</span>",
        "optionen": [
         "رقیب",
-        "کلاله",
-        "پیاز"
+        "ارزش",
+        "واردات"
        ],
        "richtig": 0,
        "optFa": true,
@@ -443,20 +485,26 @@
        "frage": "<span class='fa'>زعفران ___ در بازار کم نیست؛ بهتر است از فروشنده‌ی مطمئن خرید.</span><br><span class='mini'>Gefälschter Safran ist auf dem Markt nicht selten; man kauft besser bei einem vertrauenswürdigen Händler.</span>",
        "optionen": [
         "تقلبی",
-        "سالانه",
-        "آبیاری"
+        "برداشت",
+        "کلاله"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
        "erkl": "<span class='fa'>زعفران تقلبی در بازار کم نیست؛ بهتر است از فروشنده‌ی مطمئن خرید.</span>"
-      },
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
       {
        "frage": "<span class='fa'>___ قیمت زعفران در سال گذشته خبرساز شد.</span><br><span class='mini'>Der Anstieg des Safranpreises machte im letzten Jahr Schlagzeilen.</span>",
        "optionen": [
         "افزایش",
-        "تقلبی",
-        "تولید"
+        "کشاورز",
+        "کارگر"
        ],
        "richtig": 0,
        "optFa": true,
@@ -467,13 +515,61 @@
        "frage": "<span class='fa'>طبق ___ رسمی، تولید پسته امسال کمتر از سال گذشته بود.</span><br><span class='mini'>Laut offizieller Statistik war die Pistazienproduktion dieses Jahr geringer als im Vorjahr.</span>",
        "optionen": [
         "آمار",
-        "افزایش",
-        "قیمت"
+        "رطوبت",
+        "خشکسالی"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
        "erkl": "<span class='fa'>طبق آمار رسمی، تولید پسته امسال کمتر از سال گذشته بود.</span>"
+      },
+      {
+       "frage": "<span class='fa'>پسته‌ی ___ راحت‌تر باز می‌شود و در بازار ارزش بیشتری دارد.</span><br><span class='mini'>Aufgesprungene Pistazien lassen sich leichter öffnen und sind auf dem Markt mehr wert.</span>",
+       "optionen": [
+        "خندان",
+        "خشکسالی",
+        "تولید"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>پسته‌ی خندان راحت‌تر باز می‌شود و در بازار ارزش بیشتری دارد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>زعفران را باید دور از نور و ___ نگه داشت.</span><br><span class='mini'>Safran muss man vor Licht und Feuchtigkeit geschützt aufbewahren.</span>",
+       "optionen": [
+        "رطوبت",
+        "درصد",
+        "پیاز"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>زعفران را باید دور از نور و رطوبت نگه داشت.</span>"
+      },
+      {
+       "frage": "<span class='fa'>زعفران ___ فقط از بخش سرخ کلاله تشکیل شده است.</span><br><span class='mini'>Sargol-Safran besteht nur aus dem roten Teil der Narbe.</span>",
+       "optionen": [
+        "سرگل",
+        "کشاورزی",
+        "میانگین"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>زعفران سرگل فقط از بخش سرخ کلاله تشکیل شده است.</span>"
+      },
+      {
+       "frage": "<span class='fa'>___ زعفران اصل تند و ماندگار است.</span><br><span class='mini'>Der Duft von echtem Safran ist intensiv und anhaltend.</span>",
+       "optionen": [
+        "عطر",
+        "طعم",
+        "آبیاری"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>عطر زعفران اصل تند و ماندگار است.</span>"
       }
      ]
     }
@@ -490,62 +586,56 @@
      "trenner": " ",
      "woerter": [
       {
-       "fa": "در سال‌های اخیر وضع چطور بوده است؟",
+       "fa": "برای هدیه کدام را پیشنهاد می‌کنید؟",
        "tr": "",
-       "de": "Wie war die Lage in den letzten Jahren?",
+       "de": "Welche empfehlen Sie als Geschenk?",
        "teile": [
-        "در",
-        "سال‌های",
-        "اخیر",
-        "وضع",
-        "چطور",
-        "بوده",
-        "است"
-       ],
-       "extra": []
-      },
-      {
-       "fa": "پس پسته هم می‌خرم. به نظرت پسته‌ی ایرانی بهتر است یا آمریکایی؟",
-       "tr": "",
-       "de": "Dann kaufe ich auch Pistazien. Sind deiner Meinung nach iranische oder amerikanische besser?",
-       "teile": [
-        "پس",
-        "پسته",
-        "هم",
-        "می‌خرم",
-        "به",
-        "نظرت",
-        "پسته‌ی",
-        "ایرانی",
-        "بهتر",
-        "است",
-        "یا",
-        "آمریکایی"
+        "برای",
+        "هدیه",
+        "کدام",
+        "را",
+        "پیشنهاد",
+        "می‌کنید"
        ],
        "extra": [
-        "انجام"
+        "آمریکایی؟"
        ]
       },
       {
-       "fa": "برداشت آن در پاییز انجام می‌شود و تنها چند هفته طول می‌کشد.",
+       "fa": "پس لطفاً نیم کیلو اکبری بدهید. برای سفر بسته‌بندی‌اش می‌کنید؟",
        "tr": "",
-       "de": "Die Ernte findet im Herbst statt und dauert nur wenige Wochen.",
+       "de": "Dann geben Sie mir bitte ein halbes Kilo Akbari. Verpacken Sie sie für die Reise?",
        "teile": [
-        "برداشت",
-        "آن",
-        "در",
-        "پاییز",
-        "انجام",
-        "می‌شود",
-        "و",
-        "تنها",
-        "چند",
-        "هفته",
-        "طول",
-        "می‌کشد"
+        "پس",
+        "لطفاً",
+        "نیم",
+        "کیلو",
+        "اکبری",
+        "بدهید",
+        "برای",
+        "سفر",
+        "بسته‌بندی‌اش",
+        "می‌کنید"
        ],
        "extra": [
-        "که"
+        "یا"
+       ]
+      },
+      {
+       "fa": "و چطور نگهش دارم که خراب نشود؟",
+       "tr": "",
+       "de": "Und wie bewahre ich ihn auf, damit er nicht verdirbt?",
+       "teile": [
+        "و",
+        "چطور",
+        "نگهش",
+        "دارم",
+        "که",
+        "خراب",
+        "نشود"
+       ],
+       "extra": [
+        "ببرم."
        ]
       },
       {
@@ -568,42 +658,36 @@
        ]
       },
       {
-       "fa": "چطور می‌شود فهمید که اصل است یا نه؟",
+       "fa": "و بعد از چیدن چه می‌کنند؟",
        "tr": "",
-       "de": "Wie kann man erkennen, ob er echt ist?",
+       "de": "Und was macht man nach dem Pflücken?",
        "teile": [
-        "چطور",
-        "می‌شود",
-        "فهمید",
-        "که",
-        "اصل",
-        "است",
-        "یا",
-        "نه"
+        "و",
+        "بعد",
+        "از",
+        "چیدن",
+        "چه",
+        "می‌کنند"
        ],
        "extra": [
-        "تقلبی"
+        "بی‌دردسر"
        ]
       },
       {
-       "fa": "به نظر من ایرانی خوشمزه‌تر است، ولی خب، من بی‌طرف نیستم!",
+       "fa": "جالب است! قیمتش چطور؟ خیلی گران است؟",
        "tr": "",
-       "de": "Ich finde die iranischen leckerer – aber na ja, ich bin nicht unparteiisch!",
+       "de": "Interessant! Und der Preis? Ist er sehr teuer?",
        "teile": [
-        "به",
-        "نظر",
-        "من",
-        "ایرانی",
-        "خوشمزه‌تر",
+        "جالب",
         "است",
-        "ولی",
-        "خب",
-        "من",
-        "بی‌طرف",
-        "نیستم"
+        "قیمتش",
+        "چطور",
+        "خیلی",
+        "گران",
+        "است"
        ],
        "extra": [
-        "آمریکایی؟"
+        "پسته‌ی"
        ]
       }
      ]
@@ -613,44 +697,44 @@
      "titel": "Was bedeutet der Satz?",
      "fragen": [
       {
-       "frage": "„Die Ernte findet im Herbst statt und dauert nur wenige Wochen.“",
+       "frage": "„Dann geben Sie mir bitte ein halbes Kilo Akbari. Verpacken Sie sie für die Reise?“",
        "optionen": [
-        "برداشت آن در پاییز انجام می‌شود و تنها چند هفته طول می‌کشد.",
+        "پس لطفاً نیم کیلو اکبری بدهید. برای سفر بسته‌بندی‌اش می‌کنید؟",
         "پس پسته هم می‌خرم. به نظرت پسته‌ی ایرانی بهتر است یا آمریکایی؟",
-        "جالب است! قیمتش چطور؟ خیلی گران است؟"
+        "شور است یا بی‌نمک؟"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false
       },
       {
-       "frage": "„Dann kaufe ich auch Pistazien. Sind deiner Meinung nach iranische oder amerikanische besser?“",
+       "frage": "„Welche empfehlen Sie als Geschenk?“",
        "optionen": [
-        "پس پسته هم می‌خرم. به نظرت پسته‌ی ایرانی بهتر است یا آمریکایی؟",
-        "جالب است! قیمتش چطور؟ خیلی گران است؟",
-        "چطور می‌شود فهمید که اصل است یا نه؟"
+        "برای هدیه کدام را پیشنهاد می‌کنید؟",
+        "قیمت‌ها نسبت به پارسال خیلی تغییر کرده است؟",
+        "برداشت زعفران چگونه انجام می‌شود؟"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false
       },
       {
-       "frage": "„Ich finde die iranischen leckerer – aber na ja, ich bin nicht unparteiisch!“",
+       "frage": "„Ich finde die iranischen leckerer – aber na ja, meine Meinung ist nicht unparteiisch.“",
        "optionen": [
-        "به نظر من ایرانی خوشمزه‌تر است، ولی خب، من بی‌طرف نیستم!",
-        "و قیمت‌ها؟ لابد سود کشاورزان هم بیشتر شده است.",
-        "برداشت آن در پاییز انجام می‌شود و تنها چند هفته طول می‌کشد."
+        "به نظر من ایرانی خوشمزه‌تر است، ولی خب، نظر من بی‌طرفانه نیست.",
+        "شور است یا بی‌نمک؟",
+        "و قیمت‌ها؟ لابد سود کشاورزان هم بیشتر شده است."
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false
       },
       {
-       "frage": "„Wie war die Lage in den letzten Jahren?“",
+       "frage": "„Kann ich Safran und Pistazien ohne Probleme im Koffer nach Deutschland mitnehmen?“",
        "optionen": [
-        "در سال‌های اخیر وضع چطور بوده است؟",
-        "برداشت آن در پاییز انجام می‌شود و تنها چند هفته طول می‌کشد.",
-        "پس پسته هم می‌خرم. به نظرت پسته‌ی ایرانی بهتر است یا آمریکایی؟"
+        "می‌توانم زعفران و پسته را بی‌دردسر در چمدان به آلمان ببرم؟",
+        "چطور می‌شود فهمید که اصل است یا نه؟",
+        "و قیمت‌ها؟ لابد سود کشاورزان هم بیشتر شده است."
        ],
        "richtig": 0,
        "optFa": true,
@@ -660,8 +744,8 @@
        "frage": "„Bardia, ich möchte meiner Mutter Safran mitbringen. Wo soll ich kaufen, damit er nicht gefälscht ist?“",
        "optionen": [
         "بردیا، می‌خواهم برای مادرم زعفران ببرم. از کجا بخرم که تقلبی نباشد؟",
-        "به نظر من ایرانی خوشمزه‌تر است، ولی خب، من بی‌طرف نیستم!",
-        "برداشت زعفران چگونه انجام می‌شود؟"
+        "شور است یا بی‌نمک؟",
+        "چطور می‌شود فهمید که اصل است یا نه؟"
        ],
        "richtig": 0,
        "optFa": true,
@@ -671,8 +755,8 @@
        "frage": "„Interessant! Und der Preis? Ist er sehr teuer?“",
        "optionen": [
         "جالب است! قیمتش چطور؟ خیلی گران است؟",
-        "بردیا، می‌خواهم برای مادرم زعفران ببرم. از کجا بخرم که تقلبی نباشد؟",
-        "و قیمت‌ها؟ لابد سود کشاورزان هم بیشتر شده است."
+        "قیمت‌ها نسبت به پارسال خیلی تغییر کرده است؟",
+        "برداشت زعفران چگونه انجام می‌شود؟"
        ],
        "richtig": 0,
        "optFa": true,
@@ -687,62 +771,62 @@
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
+        "Wie verwendet man ihn? Gebe ich ihn einfach so ins Essen?",
+        "Dann geben Sie mir bitte ein halbes Kilo Akbari. Verpacken Sie sie für die Reise?",
+        "Guten Tag. Ich möchte Pistazien, aber ehrlich gesagt kenne ich die Sorten nicht. Was ist der Unterschied?"
+       ],
+       "richtig": 0,
+       "fa": "چطور باید از آن استفاده کرد؟ همین‌طور در غذا بریزم؟"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Und was macht man nach dem Pflücken?",
+        "Bardia, ich möchte meiner Mutter Safran mitbringen. Wo soll ich kaufen, damit er nicht gefälscht ist?",
+        "Sind sie gesalzen oder ungesalzen?"
+       ],
+       "richtig": 0,
+       "fa": "و بعد از چیدن چه می‌کنند؟"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Sind sie gesalzen oder ungesalzen?",
         "Wie war die Lage in den letzten Jahren?",
-        "Wie läuft die Safranernte ab?",
-        "Dann kaufe ich auch Pistazien. Sind deiner Meinung nach iranische oder amerikanische besser?"
-       ],
-       "richtig": 0,
-       "fa": "در سال‌های اخیر وضع چطور بوده است؟"
-      },
-      {
-       "frage": "Was bedeutet der Satz?",
-       "optionen": [
-        "Bardia, ich möchte meiner Mutter Safran mitbringen. Wo soll ich kaufen, damit er nicht gefälscht ist?",
-        "Dann kaufe ich auch Pistazien. Sind deiner Meinung nach iranische oder amerikanische besser?",
-        "Ich finde die iranischen leckerer – aber na ja, ich bin nicht unparteiisch!"
-       ],
-       "richtig": 0,
-       "fa": "بردیا، می‌خواهم برای مادرم زعفران ببرم. از کجا بخرم که تقلبی نباشد؟"
-      },
-      {
-       "frage": "Was bedeutet der Satz?",
-       "optionen": [
-        "Wie kann man erkennen, ob er echt ist?",
-        "Bardia, ich möchte meiner Mutter Safran mitbringen. Wo soll ich kaufen, damit er nicht gefälscht ist?",
-        "Wie war die Lage in den letzten Jahren?"
-       ],
-       "richtig": 0,
-       "fa": "چطور می‌شود فهمید که اصل است یا نه؟"
-      },
-      {
-       "frage": "Was bedeutet der Satz?",
-       "optionen": [
-        "Die Ernte findet im Herbst statt und dauert nur wenige Wochen.",
-        "Interessant! Und der Preis? Ist er sehr teuer?",
-        "Dann kaufe ich auch Pistazien. Sind deiner Meinung nach iranische oder amerikanische besser?"
-       ],
-       "richtig": 0,
-       "fa": "برداشت آن در پاییز انجام می‌شود و تنها چند هفته طول می‌کشد."
-      },
-      {
-       "frage": "Was bedeutet der Satz?",
-       "optionen": [
-        "Ich finde die iranischen leckerer – aber na ja, ich bin nicht unparteiisch!",
-        "Die Ernte findet im Herbst statt und dauert nur wenige Wochen.",
         "Interessant! Und der Preis? Ist er sehr teuer?"
        ],
        "richtig": 0,
-       "fa": "به نظر من ایرانی خوشمزه‌تر است، ولی خب، من بی‌طرف نیستم!"
+       "fa": "شور است یا بی‌نمک؟"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Und die Preise? Dann ist wohl auch der Gewinn der Bauern gestiegen.",
+        "Vielen Dank. Bitte schön, hier ist das Geld.",
+        "Und wie bewahre ich ihn auf, damit er nicht verdirbt?"
+       ],
+       "richtig": 0,
+       "fa": "و قیمت‌ها؟ لابد سود کشاورزان هم بیشتر شده است."
       },
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
         "Interessant! Und der Preis? Ist er sehr teuer?",
-        "Bardia, ich möchte meiner Mutter Safran mitbringen. Wo soll ich kaufen, damit er nicht gefälscht ist?",
-        "Die Ernte findet im Herbst statt und dauert nur wenige Wochen."
+        "Und was macht man nach dem Pflücken?",
+        "Ich finde die iranischen leckerer – aber na ja, meine Meinung ist nicht unparteiisch."
        ],
        "richtig": 0,
        "fa": "جالب است! قیمتش چطور؟ خیلی گران است؟"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Dann geben Sie mir bitte ein halbes Kilo Akbari. Verpacken Sie sie für die Reise?",
+        "Wie verwendet man ihn? Gebe ich ihn einfach so ins Essen?",
+        "Haben die Bauern einen Weg gefunden, diese Lage zu ändern?"
+       ],
+       "richtig": 0,
+       "fa": "پس لطفاً نیم کیلو اکبری بدهید. برای سفر بسته‌بندی‌اش می‌کنید؟"
       }
      ]
     }

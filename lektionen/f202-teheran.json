@@ -12,12 +12,12 @@
     {
      "typ": "info",
      "titel": "Teheran – Megastadt am Fuß des Alborz",
-     "text": "<p>Teheran war im Mittelalter ein Dorf – heute leben in der Region über fünfzehn Millionen Menschen. Im Sachtext erfährst du, wie die Stadt wuchs und welche Probleme sie heute hat. Grammatisch lernst du zwei typische Merkmale der Zeitungssprache: Partizipialsätze und die formellen Verben یافتن und گردیدن.</p><p><b>In dieser Lektion …</b></p><ul><li>einen Sachtext über eine Stadt und ihre Entwicklung verstehen</li><li>Partizipialsätze lesen und bilden (به خانه رسیده، شام خورد)</li><li>Entwicklungen formell beschreiben (افزایش یافت، تأسیس گردید)</li><li>über Vor- und Nachteile des Großstadtlebens sprechen</li></ul><p class='klein muted'>Sachtext: „Teheran – Megastadt am Fuß des Alborz“ · Wortschatz: 41 Wörter · Grammatik: Partizipialsätze (وجه وصفی)</p>"
+     "text": "<p>Teheran war im Mittelalter ein Dorf – heute leben in der Region über fünfzehn Millionen Menschen. Im Sachtext erfährst du, wie die Stadt wuchs und welche Probleme sie heute hat. Grammatisch lernst du zwei typische Merkmale der Zeitungssprache: Partizipialsätze und die formellen Verben یافتن und گردیدن.</p><p><b>In dieser Lektion …</b></p><ul><li>einen Sachtext über eine Stadt und ihre Entwicklung verstehen</li><li>Partizipialsätze lesen und bilden (به خانه رسیده، شام خورد)</li><li>Entwicklungen formell beschreiben (افزایش یافت، تأسیس گردید)</li><li>über Vor- und Nachteile des Großstadtlebens sprechen</li></ul><p class='klein muted'>Sachtext: „Teheran – Megastadt am Fuß des Alborz“ · Wortschatz: 53 Wörter · Grammatik: Partizipialsätze (وجه وصفی)</p>"
     },
     {
      "typ": "info",
      "titel": "So arbeitest du",
-     "text": "<p>In Fortgeschritten 2 gibt es <b>keine Umschrift</b> mehr – du liest wie Muttersprachler. Tippe ein Wort oder eine Zeile an, um sie zu hören oder die Übersetzung zu sehen.</p><ol><li><b>Lernpfad:</b> Wortschatz, Wortbildung, Grammatik</li><li><b>Texte & Dialoge:</b> der Sachtext, Wortschatz im Kontext, zwei Dialoge, Redemittel und eine Schreibaufgabe</li><li><b>Übungen:</b> Trainingspaket mit „Wer passt zu wem?“</li></ol>",
+     "text": "<p>In Fortgeschritten 2 gibt es <b>keine Umschrift</b> mehr – du liest wie Muttersprachler. Tippe ein Wort oder eine Zeile an, um sie zu hören oder die Übersetzung zu sehen.</p><ol><li><b>Lernpfad:</b> Wortschatz, Wortbildung, Grammatik</li><li><b>Texte & Dialoge:</b> ausführlicher Sachtext, Wortschatz im Kontext, ein Alltagstext, drei Dialoge, Infotexte, Redemittel und eine Schreibaufgabe</li><li><b>Übungen:</b> Trainingspaket mit „Wer passt zu wem?“</li></ol>",
      "stil": "merke"
     }
    ]
@@ -207,8 +207,8 @@
        "frage": "<span class='fa'>___ تهران در قرن بیستم چند برابر شد.</span><br><span class='mini'>Die Bevölkerung Teherans hat sich im 20. Jahrhundert vervielfacht.</span>",
        "optionen": [
         "جمعیت",
-        "کمبود آب",
-        "دره"
+        "چشم‌انداز",
+        "سلسله"
        ],
        "richtig": 0,
        "optFa": true,
@@ -219,8 +219,8 @@
        "frage": "<span class='fa'>خانه‌ی ما در یک ___ آرام در شمال شهر است.</span><br><span class='mini'>Unser Haus liegt in einem ruhigen Viertel im Norden der Stadt.</span>",
        "optionen": [
         "محله",
-        "خودروی شخصی",
-        "شیب"
+        "سلسله",
+        "روستا"
        ],
        "richtig": 0,
        "optFa": true,
@@ -391,34 +391,34 @@
        "emoji": "🌫️"
       },
       {
-       "fa": "خودروی شخصی",
-       "tr": "",
-       "de": "Privatauto",
-       "emoji": "🚙"
-      },
-      {
        "fa": "ایستگاه",
        "tr": "",
        "de": "Haltestelle, Station",
        "emoji": "🚏"
       },
       {
-       "fa": "کمبود آب",
+       "fa": "گسل",
        "tr": "",
-       "de": "Wassermangel",
-       "emoji": "🚱"
+       "de": "Verwerfung, Bruchlinie",
+       "emoji": "〰️"
       },
       {
-       "fa": "ترافیک",
+       "fa": "خودروی شخصی",
        "tr": "",
-       "de": "Verkehr, Stau",
-       "emoji": "🚗"
+       "de": "Privatauto",
+       "emoji": "🚙"
       },
       {
        "fa": "زلزله",
        "tr": "",
        "de": "Erdbeben",
        "emoji": "🏚️"
+      },
+      {
+       "fa": "آلودگی هوا",
+       "tr": "",
+       "de": "Luftverschmutzung",
+       "emoji": "😷"
       }
      ],
      "titel": "Was bedeutet das?"
@@ -428,16 +428,28 @@
      "links": "emoji",
      "paare": [
       {
-       "fa": "حمل و نقل عمومی",
+       "fa": "فضای سبز",
        "tr": "",
-       "de": "öffentlicher Nahverkehr",
-       "emoji": "🚌"
+       "de": "Grünflächen",
+       "emoji": "🌳"
       },
       {
-       "fa": "کمبود آب",
+       "fa": "مترو",
        "tr": "",
-       "de": "Wassermangel",
-       "emoji": "🚱"
+       "de": "U-Bahn, Metro",
+       "emoji": "🚇"
+      },
+      {
+       "fa": "زلزله",
+       "tr": "",
+       "de": "Erdbeben",
+       "emoji": "🏚️"
+      },
+      {
+       "fa": "خودروی شخصی",
+       "tr": "",
+       "de": "Privatauto",
+       "emoji": "🚙"
       },
       {
        "fa": "گسل",
@@ -446,22 +458,10 @@
        "emoji": "〰️"
       },
       {
-       "fa": "ترافیک",
+       "fa": "کمبود آب",
        "tr": "",
-       "de": "Verkehr, Stau",
-       "emoji": "🚗"
-      },
-      {
-       "fa": "فضای سبز",
-       "tr": "",
-       "de": "Grünflächen",
-       "emoji": "🌳"
-      },
-      {
-       "fa": "خطر",
-       "tr": "",
-       "de": "Gefahr",
-       "emoji": "⚠️"
+       "de": "Wassermangel",
+       "emoji": "🚱"
       }
      ],
      "titel": "Memory: Bild & Wort"
@@ -474,8 +474,8 @@
        "frage": "<span class='fa'>در ساعت‌های اوج، ___ تهران آن‌قدر سنگین است که گاهی یک ساعت در راه می‌مانید.</span><br><span class='mini'>In der Hauptverkehrszeit ist der Verkehr in Teheran so dicht, dass man manchmal eine Stunde feststeckt.</span>",
        "optionen": [
         "ترافیک",
-        "رشته‌کوه",
-        "سلسله"
+        "بزرگراه",
+        "ارتفاع"
        ],
        "richtig": 0,
        "optFa": true,
@@ -486,8 +486,8 @@
        "frage": "<span class='fa'>در زمستان، ___ گاهی آن‌قدر غلیظ است که کوه‌ها دیده نمی‌شوند.</span><br><span class='mini'>Im Winter ist der Smog manchmal so dicht, dass man die Berge nicht sieht.</span>",
        "optionen": [
         "مه‌دود",
-        "میدان",
-        "پادشاه"
+        "حومه",
+        "میدان"
        ],
        "richtig": 0,
        "optFa": true,
@@ -498,8 +498,8 @@
        "frage": "<span class='fa'>تهران روی چند ___ فعال ساخته شده است.</span><br><span class='mini'>Teheran ist auf mehreren aktiven Bruchlinien gebaut.</span>",
        "optionen": [
         "گسل",
-        "حومه",
-        "جمعیت"
+        "بازار سرپوشیده",
+        "تله‌کابین"
        ],
        "richtig": 0,
        "optFa": true,
@@ -658,16 +658,53 @@
      "links": "de",
      "paare": [
       {
-       "fa": "دره",
+       "fa": "شیب",
        "tr": "",
-       "de": "Tal",
-       "emoji": "🏞️"
+       "de": "Gefälle, Steigung",
+       "emoji": "📐"
       },
       {
-       "fa": "رشته‌کوه",
+       "fa": "سلسله",
        "tr": "",
-       "de": "Gebirgskette",
-       "emoji": "🏔️"
+       "de": "Dynastie",
+       "emoji": "👑"
+      },
+      {
+       "fa": "روستا",
+       "tr": "",
+       "de": "Dorf",
+       "emoji": "🛖"
+      },
+      {
+       "fa": "تله‌کابین",
+       "tr": "",
+       "de": "Seilbahn",
+       "emoji": "🚡"
+      },
+      {
+       "fa": "چشم‌انداز",
+       "tr": "",
+       "de": "Aussicht, Panorama",
+       "emoji": "🔭"
+      },
+      {
+       "fa": "ارتفاع",
+       "tr": "",
+       "de": "Höhe",
+       "emoji": "📏"
+      }
+     ],
+     "titel": "Was bedeutet das?"
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "چشم‌انداز",
+       "tr": "",
+       "de": "Aussicht, Panorama",
+       "emoji": "🔭"
       },
       {
        "fa": "دامنه",
@@ -682,59 +719,22 @@
        "emoji": "📏"
       },
       {
+       "fa": "پادشاه",
+       "tr": "",
+       "de": "König, Schah",
+       "emoji": "🤴"
+      },
+      {
        "fa": "تله‌کابین",
        "tr": "",
        "de": "Seilbahn",
        "emoji": "🚡"
       },
       {
-       "fa": "پادشاه",
-       "tr": "",
-       "de": "König, Schah",
-       "emoji": "🤴"
-      }
-     ],
-     "titel": "Was bedeutet das?"
-    },
-    {
-     "typ": "memory",
-     "links": "emoji",
-     "paare": [
-      {
-       "fa": "قله",
-       "tr": "",
-       "de": "Gipfel",
-       "emoji": "🗻"
-      },
-      {
-       "fa": "چشم‌انداز",
-       "tr": "",
-       "de": "Aussicht, Panorama",
-       "emoji": "🔭"
-      },
-      {
-       "fa": "شیب",
-       "tr": "",
-       "de": "Gefälle, Steigung",
-       "emoji": "📐"
-      },
-      {
-       "fa": "پادشاه",
-       "tr": "",
-       "de": "König, Schah",
-       "emoji": "🤴"
-      },
-      {
        "fa": "روستا",
        "tr": "",
        "de": "Dorf",
        "emoji": "🛖"
-      },
-      {
-       "fa": "رشته‌کوه",
-       "tr": "",
-       "de": "Gebirgskette",
-       "emoji": "🏔️"
       }
      ],
      "titel": "Memory: Bild & Wort"
@@ -747,8 +747,8 @@
        "frage": "<span class='fa'>با ___ از شمال تهران تا نزدیکی قله‌ی توچال می‌روید.</span><br><span class='mini'>Mit der Seilbahn fahren Sie vom Norden Teherans bis in die Nähe des Tochal-Gipfels.</span>",
        "optionen": [
         "تله‌کابین",
-        "برج",
-        "پیاده‌رو"
+        "کرایه",
+        "تاکسی خطی"
        ],
        "richtig": 0,
        "optFa": true,
@@ -759,8 +759,8 @@
        "frage": "<span class='fa'>قاجار نام یک ___ است که بیش از صد سال بر ایران حکومت کرد.</span><br><span class='mini'>Kadscharen ist der Name einer Dynastie, die über hundert Jahre über Iran herrschte.</span>",
        "optionen": [
         "سلسله",
-        "فضای سبز",
-        "خودروی شخصی"
+        "مترو",
+        "اتوبوس تندرو"
        ],
        "richtig": 0,
        "optFa": true,
@@ -771,8 +771,8 @@
        "frage": "<span class='fa'>از بالای برج میلاد، ___ شهر و کوه‌های البرز فوق‌العاده است.</span><br><span class='mini'>Vom Milad-Turm aus ist der Blick auf die Stadt und das Alborz-Gebirge großartig.</span>",
        "optionen": [
         "چشم‌انداز",
-        "آلودگی هوا",
-        "ترافیک"
+        "فضای سبز",
+        "مستأجر"
        ],
        "richtig": 0,
        "optFa": true,
@@ -838,6 +838,297 @@
    ]
   },
   {
+   "id": "w3",
+   "titel": "Wohnen & Pendeln",
+   "vorschau": "آپارتمان · اجاره · صاحب‌خانه",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "🏢 Wohnen & Pendeln (1)",
+     "text": "<p>Tippe ein Wort an, um es zu hören und die Bedeutung zu sehen.</p>",
+     "beispiele": [
+      {
+       "fa": "آپارتمان",
+       "tr": "",
+       "de": "Wohnung, Apartment",
+       "emoji": "🏢"
+      },
+      {
+       "fa": "اجاره",
+       "tr": "",
+       "de": "Miete",
+       "emoji": "💶"
+      },
+      {
+       "fa": "صاحب‌خانه",
+       "tr": "",
+       "de": "Vermieter/in",
+       "emoji": "🔑"
+      },
+      {
+       "fa": "مستأجر",
+       "tr": "",
+       "de": "Mieter/in",
+       "emoji": "🧳"
+      },
+      {
+       "fa": "مسکن",
+       "tr": "",
+       "de": "Wohnraum, Wohnen",
+       "emoji": "🏠"
+      },
+      {
+       "fa": "رفت‌وآمد",
+       "tr": "",
+       "de": "Pendeln, Hin und Her",
+       "emoji": "🔄"
+      }
+     ]
+    },
+    {
+     "typ": "info",
+     "titel": "🏢 Wohnen & Pendeln (2)",
+     "text": "<p>Tippe ein Wort an, um es zu hören und die Bedeutung zu sehen.</p>",
+     "beispiele": [
+      {
+       "fa": "ساعت اوج",
+       "tr": "",
+       "de": "Hauptverkehrszeit",
+       "emoji": "⏰"
+      },
+      {
+       "fa": "مسافر",
+       "tr": "",
+       "de": "Fahrgast, Reisende/r",
+       "emoji": "🧍"
+      },
+      {
+       "fa": "کرایه",
+       "tr": "",
+       "de": "Fahrpreis",
+       "emoji": "🪙"
+      },
+      {
+       "fa": "اتوبوس تندرو",
+       "tr": "",
+       "de": "Schnellbus (BRT)",
+       "emoji": "🚌"
+      },
+      {
+       "fa": "تاکسی خطی",
+       "tr": "",
+       "de": "Sammeltaxi",
+       "emoji": "🚕"
+      },
+      {
+       "fa": "شلوغی",
+       "tr": "",
+       "de": "Gedränge, Trubel",
+       "emoji": "👥"
+      }
+     ]
+    },
+    {
+     "typ": "paare",
+     "links": "de",
+     "paare": [
+      {
+       "fa": "رفت‌وآمد",
+       "tr": "",
+       "de": "Pendeln, Hin und Her",
+       "emoji": "🔄"
+      },
+      {
+       "fa": "مستأجر",
+       "tr": "",
+       "de": "Mieter/in",
+       "emoji": "🧳"
+      },
+      {
+       "fa": "صاحب‌خانه",
+       "tr": "",
+       "de": "Vermieter/in",
+       "emoji": "🔑"
+      },
+      {
+       "fa": "تاکسی خطی",
+       "tr": "",
+       "de": "Sammeltaxi",
+       "emoji": "🚕"
+      },
+      {
+       "fa": "مسافر",
+       "tr": "",
+       "de": "Fahrgast, Reisende/r",
+       "emoji": "🧍"
+      },
+      {
+       "fa": "اجاره",
+       "tr": "",
+       "de": "Miete",
+       "emoji": "💶"
+      }
+     ],
+     "titel": "Was bedeutet das?"
+    },
+    {
+     "typ": "memory",
+     "links": "emoji",
+     "paare": [
+      {
+       "fa": "اتوبوس تندرو",
+       "tr": "",
+       "de": "Schnellbus (BRT)",
+       "emoji": "🚌"
+      },
+      {
+       "fa": "رفت‌وآمد",
+       "tr": "",
+       "de": "Pendeln, Hin und Her",
+       "emoji": "🔄"
+      },
+      {
+       "fa": "آپارتمان",
+       "tr": "",
+       "de": "Wohnung, Apartment",
+       "emoji": "🏢"
+      },
+      {
+       "fa": "اجاره",
+       "tr": "",
+       "de": "Miete",
+       "emoji": "💶"
+      },
+      {
+       "fa": "تاکسی خطی",
+       "tr": "",
+       "de": "Sammeltaxi",
+       "emoji": "🚕"
+      },
+      {
+       "fa": "شلوغی",
+       "tr": "",
+       "de": "Gedränge, Trubel",
+       "emoji": "👥"
+      }
+     ],
+     "titel": "Memory: Bild & Wort"
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>هر ماه بخش بزرگی از حقوقم را برای ___ خانه می‌پردازم.</span><br><span class='mini'>Jeden Monat zahle ich einen großen Teil meines Gehalts für die Miete.</span>",
+       "optionen": [
+        "اجاره",
+        "پیاده‌رو",
+        "جمعیت"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>هر ماه بخش بزرگی از حقوقم را برای اجاره خانه می‌پردازم.</span>"
+      },
+      {
+       "frage": "<span class='fa'>در ___ صبح، واگن‌های مترو پر از مسافر است.</span><br><span class='mini'>In der morgendlichen Hauptverkehrszeit sind die U-Bahn-Wagen voller Fahrgäste.</span>",
+       "optionen": [
+        "ساعت اوج",
+        "کمبود آب",
+        "پیاده‌رو"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>در ساعت اوج صبح، واگن‌های مترو پر از مسافر است.</span>"
+      },
+      {
+       "frage": "<span class='fa'>___ ما مرد مهربانی است و اگر در خانه مشکلی پیش بیاید، زود کمک می‌کند.</span><br><span class='mini'>Unser Vermieter ist ein freundlicher Mann und hilft schnell, wenn in der Wohnung ein Problem auftritt.</span>",
+       "optionen": [
+        "صاحب‌خانه",
+        "میدان",
+        "محله"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>صاحب‌خانه ما مرد مهربانی است و اگر در خانه مشکلی پیش بیاید، زود کمک می‌کند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>در ___ چند مسافر غریبه کنار هم می‌نشینند و راننده در مسیری ثابت حرکت می‌کند.</span><br><span class='mini'>Im Sammeltaxi sitzen mehrere fremde Fahrgäste nebeneinander, und der Fahrer fährt eine feste Strecke.</span>",
+       "optionen": [
+        "تاکسی خطی",
+        "حومه",
+        "شیب"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>در تاکسی خطی چند مسافر غریبه کنار هم می‌نشینند و راننده در مسیری ثابت حرکت می‌کند.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "tempo",
+     "titel": "Blitz: Wohnen & Pendeln",
+     "aufgabe": "Was bedeutet das?",
+     "modus": "de",
+     "sekunden": 45,
+     "ziel": 10,
+     "woerter": [
+      {
+       "fa": "آپارتمان",
+       "a": "Wohnung, Apartment"
+      },
+      {
+       "fa": "اجاره",
+       "a": "Miete"
+      },
+      {
+       "fa": "صاحب‌خانه",
+       "a": "Vermieter/in"
+      },
+      {
+       "fa": "مستأجر",
+       "a": "Mieter/in"
+      },
+      {
+       "fa": "مسکن",
+       "a": "Wohnraum, Wohnen"
+      },
+      {
+       "fa": "رفت‌وآمد",
+       "a": "Pendeln, Hin und Her"
+      },
+      {
+       "fa": "ساعت اوج",
+       "a": "Hauptverkehrszeit"
+      },
+      {
+       "fa": "مسافر",
+       "a": "Fahrgast, Reisende/r"
+      },
+      {
+       "fa": "کرایه",
+       "a": "Fahrpreis"
+      },
+      {
+       "fa": "اتوبوس تندرو",
+       "a": "Schnellbus (BRT)"
+      },
+      {
+       "fa": "تاکسی خطی",
+       "a": "Sammeltaxi"
+      },
+      {
+       "fa": "شلوغی",
+       "a": "Gedränge, Trubel"
+      }
+     ]
+    }
+   ]
+  },
+  {
    "id": "v",
    "titel": "Verben & Ausdrücke",
    "vorschau": "گسترش یافتن · افزایش یافتن · کاهش یافتن",
@@ -890,16 +1181,22 @@
      "links": "de",
      "paare": [
       {
-       "fa": "گسترش یافتن",
-       "tr": "",
-       "de": "sich ausdehnen, wachsen",
-       "emoji": "📈"
-      },
-      {
        "fa": "تأسیس گردیدن",
        "tr": "",
        "de": "gegründet werden (gehoben)",
        "emoji": "🏗️"
+      },
+      {
+       "fa": "سکونت داشتن",
+       "tr": "",
+       "de": "wohnen, ansässig sein",
+       "emoji": "🏡"
+      },
+      {
+       "fa": "گسترش یافتن",
+       "tr": "",
+       "de": "sich ausdehnen, wachsen",
+       "emoji": "📈"
       },
       {
        "fa": "کاهش یافتن",
@@ -912,12 +1209,6 @@
        "tr": "",
        "de": "zunehmen, steigen",
        "emoji": "⬆️"
-      },
-      {
-       "fa": "سکونت داشتن",
-       "tr": "",
-       "de": "wohnen, ansässig sein",
-       "emoji": "🏡"
       },
       {
        "fa": "مهاجرت کردن",
@@ -1077,6 +1368,54 @@
        "a": "Tal"
       },
       {
+       "fa": "آپارتمان",
+       "a": "Wohnung, Apartment"
+      },
+      {
+       "fa": "اجاره",
+       "a": "Miete"
+      },
+      {
+       "fa": "صاحب‌خانه",
+       "a": "Vermieter/in"
+      },
+      {
+       "fa": "مستأجر",
+       "a": "Mieter/in"
+      },
+      {
+       "fa": "مسکن",
+       "a": "Wohnraum, Wohnen"
+      },
+      {
+       "fa": "رفت‌وآمد",
+       "a": "Pendeln, Hin und Her"
+      },
+      {
+       "fa": "ساعت اوج",
+       "a": "Hauptverkehrszeit"
+      },
+      {
+       "fa": "مسافر",
+       "a": "Fahrgast, Reisende/r"
+      },
+      {
+       "fa": "کرایه",
+       "a": "Fahrpreis"
+      },
+      {
+       "fa": "اتوبوس تندرو",
+       "a": "Schnellbus (BRT)"
+      },
+      {
+       "fa": "تاکسی خطی",
+       "a": "Sammeltaxi"
+      },
+      {
+       "fa": "شلوغی",
+       "a": "Gedränge, Trubel"
+      },
+      {
        "fa": "گسترش یافتن",
        "a": "sich ausdehnen, wachsen"
       },
@@ -1112,7 +1451,7 @@
     {
      "typ": "info",
      "titel": "Gleiche Bedeutung – anderes Wort",
-     "text": "<p>Gehobene Texte wechseln gern zwischen <b>persischen</b> und <b>arabischstämmigen</b> Wörtern gleicher Bedeutung. Lerne sie paarweise:</p><ul><li><span class='fa'>شمار</span> = <span class='fa'>تعداد</span> – Anzahl</li><li><span class='fa'>افزایش</span> = <span class='fa'>ازدیاد</span> – Zunahme</li><li><span class='fa'>ساختمان</span> = <span class='fa'>بنا</span> – Gebäude</li><li><span class='fa'>ساکنان</span> = <span class='fa'>اهالی</span> – Einwohner</li><li><span class='fa'>آغاز</span> = <span class='fa'>شروع</span> – Beginn</li><li><span class='fa'>ویژگی</span> = <span class='fa'>خصوصیت</span> – Merkmal, Eigenschaft</li></ul>",
+     "text": "<p>Gehobene Texte wechseln gern zwischen <b>persischen</b> und <b>arabischstämmigen</b> Wörtern gleicher Bedeutung. Lerne sie paarweise:</p><ul><li><span class='fa'>شمار</span> = <span class='fa'>تعداد</span> – Anzahl</li><li><span class='fa'>افزایش</span> = <span class='fa'>ازدیاد</span> – Zunahme</li><li><span class='fa'>ساختمان</span> = <span class='fa'>بنا</span> – Gebäude</li><li><span class='fa'>ساکنان</span> = <span class='fa'>اهالی</span> – Einwohner</li><li><span class='fa'>آغاز</span> = <span class='fa'>شروع</span> – Beginn</li><li><span class='fa'>ویژگی</span> = <span class='fa'>خصوصیت</span> – Merkmal, Eigenschaft</li><li><span class='fa'>خودرو</span> = <span class='fa'>ماشین</span> – Auto</li><li><span class='fa'>کارشناس</span> = <span class='fa'>متخصص</span> – Fachmann/Fachfrau</li><li><span class='fa'>ویرانی</span> = <span class='fa'>تخریب</span> – Zerstörung</li><li><span class='fa'>گسترش</span> = <span class='fa'>توسعه</span> – Ausdehnung, Entwicklung</li></ul>",
      "stil": "merke"
     },
     {
@@ -1120,22 +1459,22 @@
      "links": "x",
      "paare": [
       {
-       "fa": "آغاز",
+       "fa": "کارشناس",
        "tr": "",
-       "de": "Beginn",
-       "x": "شروع"
+       "de": "Fachmann/Fachfrau",
+       "x": "متخصص"
       },
       {
-       "fa": "افزایش",
+       "fa": "ویرانی",
        "tr": "",
-       "de": "Zunahme",
-       "x": "ازدیاد"
+       "de": "Zerstörung",
+       "x": "تخریب"
       },
       {
-       "fa": "شمار",
+       "fa": "گسترش",
        "tr": "",
-       "de": "Anzahl",
-       "x": "تعداد"
+       "de": "Ausdehnung, Entwicklung",
+       "x": "توسعه"
       },
       {
        "fa": "ساختمان",
@@ -1144,16 +1483,16 @@
        "x": "بنا"
       },
       {
-       "fa": "ساکنان",
+       "fa": "شمار",
        "tr": "",
-       "de": "Einwohner",
-       "x": "اهالی"
+       "de": "Anzahl",
+       "x": "تعداد"
       },
       {
-       "fa": "ویژگی",
+       "fa": "آغاز",
        "tr": "",
-       "de": "Merkmal, Eigenschaft",
-       "x": "خصوصیت"
+       "de": "Beginn",
+       "x": "شروع"
       }
      ],
      "titel": "Finde das Synonym"
@@ -1161,17 +1500,23 @@
     {
      "typ": "info",
      "titel": "Gegensätze",
-     "text": "<ul><li><span class='fa'>بالای شهر</span> ↔ <span class='fa'>پایین شهر</span> – Oberstadt (Norden) ↔ Unterstadt (Süden)</li><li><span class='fa'>افزایش</span> ↔ <span class='fa'>کاهش</span> – Zunahme ↔ Abnahme</li><li><span class='fa'>شلوغ</span> ↔ <span class='fa'>خلوت</span> – belebt, voll ↔ leer, ruhig</li><li><span class='fa'>مدرن</span> ↔ <span class='fa'>سنتی</span> – modern ↔ traditionell</li></ul>"
+     "text": "<ul><li><span class='fa'>بالای شهر</span> ↔ <span class='fa'>پایین شهر</span> – Oberstadt (Norden) ↔ Unterstadt (Süden)</li><li><span class='fa'>افزایش</span> ↔ <span class='fa'>کاهش</span> – Zunahme ↔ Abnahme</li><li><span class='fa'>شلوغ</span> ↔ <span class='fa'>خلوت</span> – belebt, voll ↔ leer, ruhig</li><li><span class='fa'>مدرن</span> ↔ <span class='fa'>سنتی</span> – modern ↔ traditionell</li><li><span class='fa'>آلوده</span> ↔ <span class='fa'>پاک</span> – verschmutzt ↔ sauber</li><li><span class='fa'>پرجمعیت</span> ↔ <span class='fa'>کم‌جمعیت</span> – dicht besiedelt ↔ dünn besiedelt</li></ul>"
     },
     {
      "typ": "paare",
      "links": "x",
      "paare": [
       {
-       "fa": "افزایش",
+       "fa": "شلوغ",
        "tr": "",
-       "de": "Zunahme ↔ Abnahme",
-       "x": "کاهش"
+       "de": "belebt, voll ↔ leer, ruhig",
+       "x": "خلوت"
+      },
+      {
+       "fa": "آلوده",
+       "tr": "",
+       "de": "verschmutzt ↔ sauber",
+       "x": "پاک"
       },
       {
        "fa": "بالای شهر",
@@ -1180,16 +1525,22 @@
        "x": "پایین شهر"
       },
       {
-       "fa": "شلوغ",
+       "fa": "پرجمعیت",
        "tr": "",
-       "de": "belebt, voll ↔ leer, ruhig",
-       "x": "خلوت"
+       "de": "dicht besiedelt ↔ dünn besiedelt",
+       "x": "کم‌جمعیت"
       },
       {
        "fa": "مدرن",
        "tr": "",
        "de": "modern ↔ traditionell",
        "x": "سنتی"
+      },
+      {
+       "fa": "افزایش",
+       "tr": "",
+       "de": "Zunahme ↔ Abnahme",
+       "x": "کاهش"
       }
      ],
      "titel": "Finde das Gegenteil"
@@ -1199,11 +1550,22 @@
      "titel": "Synonym-Quiz",
      "fragen": [
       {
+       "frage": "Synonym von <span class='fa'>خودرو</span>?",
+       "optionen": [
+        "ماشین",
+        "خصوصیت",
+        "توسعه"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
        "frage": "Synonym von <span class='fa'>ویژگی</span>?",
        "optionen": [
         "خصوصیت",
         "بنا",
-        "اهالی"
+        "ماشین"
        ],
        "richtig": 0,
        "optFa": true,
@@ -1213,30 +1575,8 @@
        "frage": "Synonym von <span class='fa'>ساکنان</span>?",
        "optionen": [
         "اهالی",
-        "ازدیاد",
-        "شروع"
-       ],
-       "richtig": 0,
-       "optFa": true,
-       "hoeren": false
-      },
-      {
-       "frage": "Synonym von <span class='fa'>ساختمان</span>?",
-       "optionen": [
-        "بنا",
-        "شروع",
-        "اهالی"
-       ],
-       "richtig": 0,
-       "optFa": true,
-       "hoeren": false
-      },
-      {
-       "frage": "Synonym von <span class='fa'>افزایش</span>?",
-       "optionen": [
-        "ازدیاد",
-        "بنا",
-        "تعداد"
+        "تعداد",
+        "ماشین"
        ],
        "richtig": 0,
        "optFa": true,
@@ -1246,8 +1586,19 @@
        "frage": "Synonym von <span class='fa'>شمار</span>?",
        "optionen": [
         "تعداد",
-        "اهالی",
+        "توسعه",
         "بنا"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "Synonym von <span class='fa'>ساختمان</span>?",
+       "optionen": [
+        "بنا",
+        "تخریب",
+        "تعداد"
        ],
        "richtig": 0,
        "optFa": true,
@@ -1320,24 +1671,24 @@
      "links": "de",
      "paare": [
       {
+       "fa": "کارگران دیوار قدیمی را خراب کرده و به جای آن ساختمانی تازه ساختند.",
+       "tr": "",
+       "de": "Die Arbeiter rissen die alte Mauer ab und bauten an ihrer Stelle ein neues Gebäude."
+      },
+      {
        "fa": "گردشگران با تله‌کابین بالا رفته، از چشم‌انداز شهر عکس گرفتند.",
        "tr": "",
        "de": "Die Touristen fuhren mit der Seilbahn hinauf und fotografierten das Stadtpanorama."
       },
       {
-       "fa": "لیلا چیزی نگفته، از اتاق بیرون رفت.",
+       "fa": "او پس از پایان تحصیل به تهران آمده، در یک شرکت مهندسی مشغول به کار شد.",
        "tr": "",
-       "de": "Ohne etwas zu sagen, ging Leyla aus dem Zimmer."
+       "de": "Nach dem Studium kam er/sie nach Teheran und fing bei einem Ingenieurbüro an."
       },
       {
-       "fa": "یوناس به خانه رسیده، اول چای دم کرد.",
+       "fa": "هزاران نفر روستاهای خود را ترک کرده، به پایتخت مهاجرت کردند.",
        "tr": "",
-       "de": "Als Jonas nach Hause kam, brühte er zuerst Tee auf."
-      },
-      {
-       "fa": "کارگران دیوار قدیمی را خراب کرده و به جای آن ساختمانی تازه ساختند.",
-       "tr": "",
-       "de": "Die Arbeiter rissen die alte Mauer ab und bauten an ihrer Stelle ein neues Gebäude."
+       "de": "Tausende verließen ihre Dörfer und wanderten in die Hauptstadt ab."
       },
       {
        "fa": "مسافران از قطار پیاده شده، به سوی خروجی ایستگاه رفتند.",
@@ -1345,9 +1696,9 @@
        "de": "Die Fahrgäste stiegen aus dem Zug und gingen zum Ausgang des Bahnhofs."
       },
       {
-       "fa": "او پس از پایان تحصیل به تهران آمده، در یک شرکت مهندسی مشغول به کار شد.",
+       "fa": "لیلا چیزی نگفته، از اتاق بیرون رفت.",
        "tr": "",
-       "de": "Nach dem Studium kam er/sie nach Teheran und fing bei einem Ingenieurbüro an."
+       "de": "Ohne etwas zu sagen, ging Leyla aus dem Zimmer."
       }
      ],
      "titel": "Was bedeutet der Satz?"
@@ -1479,7 +1830,7 @@
         "رفتند"
        ],
        "extra": [
-        "کرد."
+        "را"
        ]
       },
       {
@@ -1500,7 +1851,7 @@
         "کردند"
        ],
        "extra": [
-        "نگفته،"
+        "تحصیل"
        ]
       },
       {
@@ -1518,7 +1869,7 @@
         "کرد"
        ],
        "extra": [
-        "شده،"
+        "سوی"
        ]
       },
       {
@@ -1535,7 +1886,7 @@
         "رفت"
        ],
        "extra": [
-        "چشم‌انداز"
+        "امتحان"
        ]
       },
       {
@@ -1555,7 +1906,7 @@
         "گرفتند"
        ],
        "extra": [
-        "را"
+        "برای"
        ]
       }
      ]
@@ -1717,9 +2068,9 @@
      "links": "de",
      "paare": [
       {
-       "fa": "ساخت خط جدید مترو تا سال آینده ادامه خواهد یافت.",
+       "fa": "جلسه‌ی شورای شهر ساعت هشت شب پایان یافت.",
        "tr": "",
-       "de": "Der Bau der neuen U-Bahn-Linie wird bis nächstes Jahr andauern."
+       "de": "Die Sitzung des Stadtrats endete um acht Uhr abends."
       },
       {
        "fa": "شهر در دهه‌های اخیر به سمت غرب گسترش یافته است.",
@@ -1727,9 +2078,14 @@
        "de": "Die Stadt hat sich in den letzten Jahrzehnten nach Westen ausgedehnt."
       },
       {
-       "fa": "جلسه‌ی شورای شهر ساعت هشت شب پایان یافت.",
+       "fa": "در ماه‌های گرم، آلودگی هوا کاهش می‌یابد.",
        "tr": "",
-       "de": "Die Sitzung des Stadtrats endete um acht Uhr abends."
+       "de": "In den warmen Monaten nimmt die Luftverschmutzung ab."
+      },
+      {
+       "fa": "نمایشگاه کتاب تهران هر سال در بهار برگزار می‌گردد.",
+       "tr": "",
+       "de": "Die Teheraner Buchmesse findet jedes Jahr im Frühling statt."
       },
       {
        "fa": "جمعیت تهران در قرن بیستم به‌سرعت افزایش یافت.",
@@ -1737,14 +2093,9 @@
        "de": "Die Bevölkerung Teherans nahm im 20. Jahrhundert rasch zu."
       },
       {
-       "fa": "برج آزادی در سال ۱۹۷۱ ساخته گردید.",
+       "fa": "دانشگاه تهران در سال ۱۹۳۴ تأسیس گردید.",
        "tr": "",
-       "de": "Der Azadi-Turm wurde 1971 erbaut."
-      },
-      {
-       "fa": "نمایشگاه کتاب تهران هر سال در بهار برگزار می‌گردد.",
-       "tr": "",
-       "de": "Die Teheraner Buchmesse findet jedes Jahr im Frühling statt."
+       "de": "Die Universität Teheran wurde 1934 gegründet."
       }
      ],
      "titel": "Was bedeutet der Satz?"
@@ -1874,7 +2225,7 @@
         "یافت"
        ],
        "extra": [
-        "تأسیس"
+        "شهر"
        ]
       },
       {
@@ -1891,7 +2242,7 @@
         "می‌یابد"
        ],
        "extra": [
-        "مترو"
+        "تهران"
        ]
       },
       {
@@ -1911,7 +2262,7 @@
         "یافت"
        ],
        "extra": [
-        "گردید."
+        "شورای"
        ]
       },
       {
@@ -1928,7 +2279,7 @@
         "گردید"
        ],
        "extra": [
-        "ساعت"
+        "به‌سرعت"
        ]
       },
       {
@@ -1945,7 +2296,7 @@
         "گردید"
        ],
        "extra": [
-        "خط"
+        "دانشگاه"
        ]
       }
      ]
@@ -2065,11 +2416,22 @@
        "hoeren": false
       },
       {
-       "frage": "Präsensstamm von <span class='fa'>یافتن</span>:",
+       "frage": "Gehoben für <span class='fa'>جمعیت زیاد شد</span>:",
        "optionen": [
-        "یاب",
-        "یافت",
-        "یاف"
+        "جمعیت افزایش یافت.",
+        "جمعیت افزایش گرفت.",
+        "جمعیت افزایش کرد."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Ohne etwas zu sagen, ging er.“",
+       "optionen": [
+        "چیزی نگفته، رفت.",
+        "چیزی نگفت، رفته.",
+        "چیزی گفته، نرفت."
        ],
        "richtig": 0,
        "optFa": true,
@@ -2087,33 +2449,22 @@
        "hoeren": false
       },
       {
-       "frage": "Welcher Satz ist korrekt (gleiches Subjekt)?",
+       "frage": "Schriftsprachlich für <span class='fa'>به تهران آمدند و ماندند</span>:",
        "optionen": [
-        "لیلا نامه را نوشته، آن را پست کرد.",
-        "لیلا نامه را نوشته، برادرش آن را پست کرد.",
-        "لیلا نامه را نوشت، آن را پست کرده."
+        "به تهران آمده و ماندند.",
+        "به تهران آمده و مانده.",
+        "به تهران آمدند و مانده."
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false
       },
       {
-       "frage": "„Nachdem wir Brot gekauft hatten, gingen wir in den Park.“",
+       "frage": "Präsensstamm von <span class='fa'>یافتن</span>:",
        "optionen": [
-        "نان خریده، به پارک رفتیم.",
-        "نان خریدیم، به پارک رفته.",
-        "نان خریده، به پارک رفته."
-       ],
-       "richtig": 0,
-       "optFa": true,
-       "hoeren": false
-      },
-      {
-       "frage": "Gehoben für <span class='fa'>جمعیت زیاد شد</span>:",
-       "optionen": [
-        "جمعیت افزایش یافت.",
-        "جمعیت افزایش گرفت.",
-        "جمعیت افزایش کرد."
+        "یاب",
+        "یافت",
+        "یاف"
        ],
        "richtig": 0,
        "optFa": true,
@@ -2126,11 +2477,11 @@
      "titel": "Was bedeutet der Satz?",
      "fragen": [
       {
-       "frage": "„Die Studierenden hatten die Bücher gelesen und sich auf die Prüfung vorbereitet.“",
+       "frage": "„Die Bevölkerung Teherans nahm im 20. Jahrhundert rasch zu.“",
        "optionen": [
-        "دانشجویان کتاب‌ها را خوانده و برای امتحان آماده شده بودند.",
-        "جلسه‌ی شورای شهر ساعت هشت شب پایان یافت.",
-        "یوناس به خانه رسیده، اول چای دم کرد."
+        "جمعیت تهران در قرن بیستم به‌سرعت افزایش یافت.",
+        "او پس از پایان تحصیل به تهران آمده، در یک شرکت مهندسی مشغول به کار شد.",
+        "دانشگاه تهران در سال ۱۹۳۴ تأسیس گردید."
        ],
        "richtig": 0,
        "optFa": true,
@@ -2141,29 +2492,18 @@
        "optionen": [
         "یوناس به خانه رسیده، اول چای دم کرد.",
         "نمایشگاه کتاب تهران هر سال در بهار برگزار می‌گردد.",
-        "ساخت خط جدید مترو تا سال آینده ادامه خواهد یافت."
+        "لیلا چیزی نگفته، از اتاق بیرون رفت."
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false
       },
       {
-       "frage": "„Die Teheraner Buchmesse findet jedes Jahr im Frühling statt.“",
+       "frage": "„Die Stadt hat sich in den letzten Jahrzehnten nach Westen ausgedehnt.“",
        "optionen": [
-        "نمایشگاه کتاب تهران هر سال در بهار برگزار می‌گردد.",
-        "جمعیت تهران در قرن بیستم به‌سرعت افزایش یافت.",
-        "ساخت خط جدید مترو تا سال آینده ادامه خواهد یافت."
-       ],
-       "richtig": 0,
-       "optFa": true,
-       "hoeren": false
-      },
-      {
-       "frage": "„Die Touristen fuhren mit der Seilbahn hinauf und fotografierten das Stadtpanorama.“",
-       "optionen": [
-        "گردشگران با تله‌کابین بالا رفته، از چشم‌انداز شهر عکس گرفتند.",
-        "او پس از پایان تحصیل به تهران آمده، در یک شرکت مهندسی مشغول به کار شد.",
-        "ساخت خط جدید مترو تا سال آینده ادامه خواهد یافت."
+        "شهر در دهه‌های اخیر به سمت غرب گسترش یافته است.",
+        "ساخت خط جدید مترو تا سال آینده ادامه خواهد یافت.",
+        "جمعیت تهران در قرن بیستم به‌سرعت افزایش یافت."
        ],
        "richtig": 0,
        "optFa": true,
@@ -2173,19 +2513,30 @@
        "frage": "„Die Arbeiter rissen die alte Mauer ab und bauten an ihrer Stelle ein neues Gebäude.“",
        "optionen": [
         "کارگران دیوار قدیمی را خراب کرده و به جای آن ساختمانی تازه ساختند.",
-        "نمایشگاه کتاب تهران هر سال در بهار برگزار می‌گردد.",
-        "لیلا چیزی نگفته، از اتاق بیرون رفت."
+        "برج آزادی در سال ۱۹۷۱ ساخته گردید.",
+        "گردشگران با تله‌کابین بالا رفته، از چشم‌انداز شهر عکس گرفتند."
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false
       },
       {
-       "frage": "„Die Bevölkerung Teherans nahm im 20. Jahrhundert rasch zu.“",
+       "frage": "„Die Teheraner Buchmesse findet jedes Jahr im Frühling statt.“",
        "optionen": [
-        "جمعیت تهران در قرن بیستم به‌سرعت افزایش یافت.",
-        "ساخت خط جدید مترو تا سال آینده ادامه خواهد یافت.",
-        "هزاران نفر روستاهای خود را ترک کرده، به پایتخت مهاجرت کردند."
+        "نمایشگاه کتاب تهران هر سال در بهار برگزار می‌گردد.",
+        "شهر در دهه‌های اخیر به سمت غرب گسترش یافته است.",
+        "او پس از پایان تحصیل به تهران آمده، در یک شرکت مهندسی مشغول به کار شد."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Die Fahrgäste stiegen aus dem Zug und gingen zum Ausgang des Bahnhofs.“",
+       "optionen": [
+        "مسافران از قطار پیاده شده، به سوی خروجی ایستگاه رفتند.",
+        "یوناس به خانه رسیده، اول چای دم کرد.",
+        "برج آزادی در سال ۱۹۷۱ ساخته گردید."
        ],
        "richtig": 0,
        "optFa": true,
@@ -2200,9 +2551,19 @@
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
-        "Der Azadi-Turm wurde 1971 erbaut.",
-        "Die Stadt hat sich in den letzten Jahrzehnten nach Westen ausgedehnt.",
+        "Die Fahrgäste stiegen aus dem Zug und gingen zum Ausgang des Bahnhofs.",
+        "In den warmen Monaten nimmt die Luftverschmutzung ab.",
         "Nach dem Studium kam er/sie nach Teheran und fing bei einem Ingenieurbüro an."
+       ],
+       "richtig": 0,
+       "fa": "مسافران از قطار پیاده شده، به سوی خروجی ایستگاه رفتند."
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Der Azadi-Turm wurde 1971 erbaut.",
+        "Die Arbeiter rissen die alte Mauer ab und bauten an ihrer Stelle ein neues Gebäude.",
+        "Die Fahrgäste stiegen aus dem Zug und gingen zum Ausgang des Bahnhofs."
        ],
        "richtig": 0,
        "fa": "برج آزادی در سال ۱۹۷۱ ساخته گردید."
@@ -2210,52 +2571,42 @@
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
-        "Die Touristen fuhren mit der Seilbahn hinauf und fotografierten das Stadtpanorama.",
-        "Als Jonas nach Hause kam, brühte er zuerst Tee auf.",
-        "Der Azadi-Turm wurde 1971 erbaut."
-       ],
-       "richtig": 0,
-       "fa": "گردشگران با تله‌کابین بالا رفته، از چشم‌انداز شهر عکس گرفتند."
-      },
-      {
-       "frage": "Was bedeutet der Satz?",
-       "optionen": [
-        "In den warmen Monaten nimmt die Luftverschmutzung ab.",
-        "Die Fahrgäste stiegen aus dem Zug und gingen zum Ausgang des Bahnhofs.",
-        "Der Azadi-Turm wurde 1971 erbaut."
-       ],
-       "richtig": 0,
-       "fa": "در ماه‌های گرم، آلودگی هوا کاهش می‌یابد."
-      },
-      {
-       "frage": "Was bedeutet der Satz?",
-       "optionen": [
-        "Tausende verließen ihre Dörfer und wanderten in die Hauptstadt ab.",
-        "In den warmen Monaten nimmt die Luftverschmutzung ab.",
-        "Nach dem Studium kam er/sie nach Teheran und fing bei einem Ingenieurbüro an."
-       ],
-       "richtig": 0,
-       "fa": "هزاران نفر روستاهای خود را ترک کرده، به پایتخت مهاجرت کردند."
-      },
-      {
-       "frage": "Was bedeutet der Satz?",
-       "optionen": [
-        "Als Jonas nach Hause kam, brühte er zuerst Tee auf.",
         "Die Arbeiter rissen die alte Mauer ab und bauten an ihrer Stelle ein neues Gebäude.",
-        "Die Fahrgäste stiegen aus dem Zug und gingen zum Ausgang des Bahnhofs."
+        "Nach dem Studium kam er/sie nach Teheran und fing bei einem Ingenieurbüro an.",
+        "Der Azadi-Turm wurde 1971 erbaut."
        ],
        "richtig": 0,
-       "fa": "یوناس به خانه رسیده، اول چای دم کرد."
+       "fa": "کارگران دیوار قدیمی را خراب کرده و به جای آن ساختمانی تازه ساختند."
       },
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
         "Nach dem Studium kam er/sie nach Teheran und fing bei einem Ingenieurbüro an.",
-        "Der Azadi-Turm wurde 1971 erbaut.",
-        "Die Teheraner Buchmesse findet jedes Jahr im Frühling statt."
+        "Als Jonas nach Hause kam, brühte er zuerst Tee auf.",
+        "Die Fahrgäste stiegen aus dem Zug und gingen zum Ausgang des Bahnhofs."
        ],
        "richtig": 0,
        "fa": "او پس از پایان تحصیل به تهران آمده، در یک شرکت مهندسی مشغول به کار شد."
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Die Studierenden hatten die Bücher gelesen und sich auf die Prüfung vorbereitet.",
+        "Ohne etwas zu sagen, ging Leyla aus dem Zimmer.",
+        "Die Stadt hat sich in den letzten Jahrzehnten nach Westen ausgedehnt."
+       ],
+       "richtig": 0,
+       "fa": "دانشجویان کتاب‌ها را خوانده و برای امتحان آماده شده بودند."
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Die Teheraner Buchmesse findet jedes Jahr im Frühling statt.",
+        "In den warmen Monaten nimmt die Luftverschmutzung ab.",
+        "Die Sitzung des Stadtrats endete um acht Uhr abends."
+       ],
+       "richtig": 0,
+       "fa": "نمایشگاه کتاب تهران هر سال در بهار برگزار می‌گردد."
       }
      ]
     },
@@ -2406,6 +2757,54 @@
       {
        "fa": "دره",
        "a": "Tal"
+      },
+      {
+       "fa": "آپارتمان",
+       "a": "Wohnung, Apartment"
+      },
+      {
+       "fa": "اجاره",
+       "a": "Miete"
+      },
+      {
+       "fa": "صاحب‌خانه",
+       "a": "Vermieter/in"
+      },
+      {
+       "fa": "مستأجر",
+       "a": "Mieter/in"
+      },
+      {
+       "fa": "مسکن",
+       "a": "Wohnraum, Wohnen"
+      },
+      {
+       "fa": "رفت‌وآمد",
+       "a": "Pendeln, Hin und Her"
+      },
+      {
+       "fa": "ساعت اوج",
+       "a": "Hauptverkehrszeit"
+      },
+      {
+       "fa": "مسافر",
+       "a": "Fahrgast, Reisende/r"
+      },
+      {
+       "fa": "کرایه",
+       "a": "Fahrpreis"
+      },
+      {
+       "fa": "اتوبوس تندرو",
+       "a": "Schnellbus (BRT)"
+      },
+      {
+       "fa": "تاکسی خطی",
+       "a": "Sammeltaxi"
+      },
+      {
+       "fa": "شلوغی",
+       "a": "Gedränge, Trubel"
       },
       {
        "fa": "گسترش یافتن",

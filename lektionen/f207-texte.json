@@ -2,7 +2,7 @@
  "id": "tx",
  "art": "texte",
  "titel": "Sachtext & Dialoge",
- "beschreibung": "Sachtext, Wortschatz im Kontext, zwei Dialoge, Redemittel und Schreibaufgabe.",
+ "beschreibung": "Sachtext, Wortschatz im Kontext, Alltagstext, drei Dialoge, Infotexte, Redemittel und Schreibaufgabe.",
  "stationen": [
   {
    "id": "t1",
@@ -12,7 +12,7 @@
     {
      "typ": "info",
      "titel": "Neue Wörter im Text",
-     "text": "<p><span class='fa'>طلای سرخ</span> – rotes Gold · <span class='fa'>کشت</span> – Anbau · <span class='fa'>طلوع آفتاب</span> – Sonnenaufgang · <span class='fa'>فله</span> – lose, unverpackt · <span class='fa'>تولیدکننده</span> – Erzeuger · <span class='fa'>کم‌آبی</span> – Wassermangel · <span class='fa'>نشست کردن</span> – sich absenken · <span class='fa'>پی‌درپی</span> – aufeinanderfolgend · <span class='fa'>آبیاری قطره‌ای</span> – Tröpfchenbewässerung · <span class='fa'>مقاوم به خشکی</span> – dürreresistent · <span class='fa'>درخشیدن</span> – glänzen</p>",
+     "text": "<p><span class='fa'>طلای سرخ</span> – rotes Gold · <span class='fa'>پیشینه</span> – Vorgeschichte, Tradition · <span class='fa'>کشت</span> – Anbau · <span class='fa'>پیاپی</span> – hintereinander · <span class='fa'>طلوع آفتاب</span> – Sonnenaufgang · <span class='fa'>پژمرده شدن</span> – welken · <span class='fa'>متقلب</span> – betrügerisch · <span class='fa'>فله</span> – lose, unverpackt · <span class='fa'>نام تجاری</span> – Markenname · <span class='fa'>به بار نشستن</span> – Früchte tragen · <span class='fa'>گرده</span> – Pollen · <span class='fa'>کم‌آبی</span> – Wassermangel · <span class='fa'>نشست کردن</span> – sich absenken · <span class='fa'>پی‌درپی</span> – aufeinanderfolgend · <span class='fa'>سرمای دیررس</span> – Spätfrost · <span class='fa'>آبیاری قطره‌ای</span> – Tröpfchenbewässerung · <span class='fa'>درخشیدن</span> – glänzen</p>",
      "stil": "merke"
     },
     {
@@ -26,9 +26,19 @@
        "de": "Safran und Pistazien sind zwei Agrarprodukte, die Irans Namen auf dem Weltmarkt bekannt gemacht haben."
       },
       {
+       "fa": "هر دو در مناطق خشک و نیمه‌خشک کشور به دست می‌آیند و زندگی شمار زیادی از خانواده‌های روستایی به آنها وابسته است.",
+       "tr": "",
+       "de": "Beide werden in den trockenen und halbtrockenen Regionen des Landes gewonnen, und das Leben vieler ländlicher Familien hängt von ihnen ab."
+      },
+      {
        "fa": "زعفران را «طلای سرخ» می‌نامند، چون یکی از گران‌ترین ادویه‌های جهان است و از قدیم در آشپزی، رنگرزی و داروسازی به کار می‌رفت.",
        "tr": "",
        "de": "Safran nennt man ‹rotes Gold›, weil er eines der teuersten Gewürze der Welt ist und seit alters her beim Kochen, Färben und in der Arzneiherstellung verwendet wurde."
+      },
+      {
+       "fa": "کشت زعفران در ایران پیشینه‌ای بسیار کهن دارد و در متن‌های قدیمی بارها از آن به‌عنوان کالایی ارزشمند یاد شده است.",
+       "tr": "",
+       "de": "Der Safrananbau hat in Iran eine sehr lange Geschichte, und in alten Texten wird Safran immer wieder als wertvolle Ware erwähnt."
       },
       {
        "fa": "بخش عمده‌ی زعفران جهان در ایران تولید می‌شود؛ برخی آمارها سهم ایران را حدود ۹۰ درصد می‌دانند.",
@@ -36,9 +46,14 @@
        "de": "Der größte Teil des Safrans der Welt wird in Iran erzeugt; manche Statistiken beziffern Irans Anteil auf rund 90 Prozent."
       },
       {
-       "fa": "مهم‌ترین منطقه‌ی کشت زعفران خراسان است، به‌ویژه شهرهایی مثل تربت حیدریه، گناباد و قائن.",
+       "fa": "کشورهایی مانند اسپانیا، یونان، هند و افغانستان نیز زعفران تولید می‌کنند، اما سهم آنها نسبت به ایران بسیار کم است.",
        "tr": "",
-       "de": "Das wichtigste Anbaugebiet ist Chorasan, besonders Städte wie Torbat-e Heydarieh, Gonabad und Ghaen."
+       "de": "Länder wie Spanien, Griechenland, Indien und Afghanistan erzeugen ebenfalls Safran, doch ihr Anteil ist im Vergleich zu Iran sehr gering."
+      },
+      {
+       "fa": "مهم‌ترین منطقه‌ی کشت زعفران خراسان است، به‌ویژه شهرهایی مثل تربت حیدریه، گناباد و قائن؛ تربت حیدریه را حتی «پایتخت زعفران» می‌نامند.",
+       "tr": "",
+       "de": "Das wichtigste Anbaugebiet ist Chorasan, besonders Städte wie Torbat-e Heydarieh, Gonabad und Ghaen; Torbat-e Heydarieh wird sogar ‹Hauptstadt des Safrans› genannt."
       },
       {
        "fa": "زعفران در این مناطق خشک به خوبی رشد می‌کند، چون به آب نسبتا کمی نیاز دارد و سرمای زمستان را هم تحمل می‌کند.",
@@ -46,14 +61,29 @@
        "de": "Safran gedeiht in diesen trockenen Gegenden gut, weil er relativ wenig Wasser braucht und auch die Winterkälte verträgt."
       },
       {
-       "fa": "برداشت آن در پاییز انجام می‌شود و تنها چند هفته طول می‌کشد.",
+       "fa": "گیاه زعفران از پیازهای کوچکی می‌روید که معمولا در تابستان کاشته می‌شوند و چند سال پیاپی گل می‌دهند.",
        "tr": "",
-       "de": "Die Ernte findet im Herbst statt und dauert nur wenige Wochen."
+       "de": "Die Safranpflanze wächst aus kleinen Knollen, die meist im Sommer gepflanzt werden und mehrere Jahre hintereinander blühen."
+      },
+      {
+       "fa": "مزرعه در تابستان خشک و بی‌جان به نظر می‌رسد، اما با نخستین آبیاری پاییزی، گیاه دوباره جان می‌گیرد.",
+       "tr": "",
+       "de": "Im Sommer wirkt das Feld trocken und leblos, doch mit der ersten Bewässerung im Herbst erwacht die Pflanze wieder zum Leben."
+      },
+      {
+       "fa": "برداشت آن در پاییز، به‌ویژه در آبان‌ماه، انجام می‌شود و تنها چند هفته طول می‌کشد.",
+       "tr": "",
+       "de": "Die Ernte findet im Herbst statt, vor allem im Monat Aban (Oktober/November), und dauert nur wenige Wochen."
       },
       {
        "fa": "کشاورزان گل‌ها را صبح زود، پیش از طلوع آفتاب، می‌چینند و تقریبا همه‌ی کار با دست انجام می‌شود.",
        "tr": "",
        "de": "Die Bauern pflücken die Blüten früh am Morgen vor Sonnenaufgang, und fast die ganze Arbeit wird von Hand erledigt."
+      },
+      {
+       "fa": "هر گل باید همان روزی که باز می‌شود چیده شود؛ در غیر این صورت زیر آفتاب پژمرده می‌شود و کیفیت کلاله‌هایش پایین می‌آید.",
+       "tr": "",
+       "de": "Jede Blüte muss an dem Tag gepflückt werden, an dem sie sich öffnet; andernfalls welkt sie in der Sonne, und die Qualität ihrer Narben sinkt."
       },
       {
        "fa": "سپس سه کلاله‌ی قرمز هر گل را با دقت جدا و خشک می‌کنند.",
@@ -71,9 +101,29 @@
        "de": "Das Abtrennen der Narben ist eine feine, zeitraubende Arbeit, die scharfe Augen und geduldige Hände erfordert und meist von Frauen erledigt wird."
       },
       {
+       "fa": "کلاله‌های تازه را در اتاقی تاریک و گرم یا با دستگاه‌های مخصوص خشک می‌کنند و در این مرحله وزنشان تقریبا به یک‌پنجم کاهش می‌یابد.",
+       "tr": "",
+       "de": "Die frischen Narben werden in einem dunklen, warmen Raum oder mit speziellen Geräten getrocknet; dabei sinkt ihr Gewicht auf etwa ein Fünftel."
+      },
+      {
+       "fa": "رنگ، طعم و عطر زعفران به سه ماده‌ی طبیعی در کلاله‌ها وابسته است که مقدار آنها توسط آزمایشگاه‌های تخصصی و بر اساس استانداردهای بین‌المللی اندازه‌گیری می‌شود.",
+       "tr": "",
+       "de": "Farbe, Geschmack und Duft des Safrans hängen von drei natürlichen Stoffen in den Narben ab, deren Menge von Fachlaboren nach internationalen Standards gemessen wird."
+      },
+      {
+       "fa": "زعفرانی که فقط از بخش سرخ کلاله تشکیل شده باشد، مرغوب‌تر و گران‌تر است و در بازار ایران به آن «سرگل» یا «نگین» می‌گویند.",
+       "tr": "",
+       "de": "Safran, der nur aus dem roten Teil der Narbe besteht, ist hochwertiger und teurer; auf dem iranischen Markt nennt man ihn ‹Sargol› oder ‹Negin›."
+      },
+      {
        "fa": "به همین دلیل، زعفران گران است و متأسفانه زعفران تقلبی هم در بازار کم نیست.",
        "tr": "",
        "de": "Deshalb ist Safran teuer, und leider gibt es auf dem Markt auch nicht wenig gefälschten Safran."
+      },
+      {
+       "fa": "فروشندگان متقلب گاهی رشته‌های رنگ‌شده‌ی گیاهان دیگر را به جای زعفران می‌فروشند یا موادی به آن اضافه می‌کنند تا وزنش بیشتر شود.",
+       "tr": "",
+       "de": "Betrügerische Händler verkaufen manchmal gefärbte Fasern anderer Pflanzen als Safran oder mischen ihm Stoffe bei, damit er mehr wiegt."
       },
       {
        "fa": "سال‌ها بخش بزرگی از زعفران ایران به صورت فله به کشورهای دیگر صادر می‌شد و آنجا با نام دیگری بسته‌بندی می‌شد.",
@@ -81,9 +131,19 @@
        "de": "Jahrelang wurde ein großer Teil des iranischen Safrans lose in andere Länder exportiert und dort unter anderem Namen verpackt."
       },
       {
+       "fa": "از جمله خریداران بزرگ زعفران فله‌ی ایران، کشورهایی مانند امارات متحده‌ی عربی و اسپانیا بوده‌اند.",
+       "tr": "",
+       "de": "Zu den großen Abnehmern von losem iranischem Safran gehörten Länder wie die Vereinigten Arabischen Emirate und Spanien."
+      },
+      {
        "fa": "امروز تولیدکنندگان ایرانی تلاش می‌کنند با بسته‌بندی بهتر، ارزش بیشتری از این محصول به دست آورند.",
        "tr": "",
        "de": "Heute versuchen iranische Erzeuger, durch bessere Verpackung mehr Wert aus diesem Produkt zu schöpfen."
+      },
+      {
+       "fa": "در کنار آنها، شرکت‌های جوانی پدید آمده‌اند که زعفران را در بسته‌های کوچک و با نام تجاری ایرانی مستقیما به مشتریان خارجی عرضه می‌کنند.",
+       "tr": "",
+       "de": "Daneben sind junge Unternehmen entstanden, die Safran in kleinen Packungen und unter iranischem Markennamen direkt an ausländische Kunden verkaufen."
       },
       {
        "fa": "«طلای سبز» ایران پسته است که بیشتر در استان کرمان و به‌ویژه در اطراف رفسنجان کشت می‌شود و در اواخر تابستان برداشت می‌شود.",
@@ -91,9 +151,34 @@
        "de": "Irans ‹grünes Gold› ist die Pistazie, die vor allem in der Provinz Kerman und besonders rund um Rafsandschan angebaut und im Spätsommer geerntet wird."
       },
       {
+       "fa": "استان‌های سمنان، یزد و خراسان نیز از مناطق مهم کشت پسته به شمار می‌روند و پسته‌ی دامغان به‌ویژه شهرت دارد.",
+       "tr": "",
+       "de": "Auch die Provinzen Semnan, Yazd und Chorasan gelten als wichtige Anbaugebiete, und besonders die Pistazie aus Damghan ist berühmt."
+      },
+      {
+       "fa": "درخت پسته در برابر خشکی و خاک شور مقاومت نسبتا خوبی دارد، اما چند سال طول می‌کشد تا به بار بنشیند.",
+       "tr": "",
+       "de": "Der Pistazienbaum ist relativ widerstandsfähig gegen Trockenheit und salzigen Boden, doch es dauert einige Jahre, bis er Früchte trägt."
+      },
+      {
+       "fa": "درختان پسته یا نرند یا ماده و گرده‌ی درختان نر به کمک باد به گل‌های درختان ماده می‌رسد.",
+       "tr": "",
+       "de": "Pistazienbäume sind entweder männlich oder weiblich, und der Pollen der männlichen Bäume gelangt mit Hilfe des Windes zu den Blüten der weiblichen."
+      },
+      {
        "fa": "پسته‌ی ایرانی به طعم خوب و تنوع زیادش مشهور است؛ اکبری، احمدآقایی و کله‌قوچی از معروف‌ترین انواع آن هستند.",
        "tr": "",
        "de": "Die iranische Pistazie ist für ihren guten Geschmack und ihre Vielfalt bekannt; Akbari, Ahmad-Aghaei und Kalle-Ghutschi gehören zu den bekanntesten Sorten."
+      },
+      {
+       "fa": "پس از برداشت، پوست نرم و سبز بیرونی باید هرچه زودتر جدا شود؛ سپس پسته را زیر آفتاب یا با دستگاه خشک می‌کنند.",
+       "tr": "",
+       "de": "Nach der Ernte muss die weiche grüne Außenhaut so schnell wie möglich entfernt werden; danach trocknet man die Pistazien in der Sonne oder maschinell."
+      },
+      {
+       "fa": "پسته‌ای که پوست سختش به‌طور طبیعی باز شده باشد، «پسته‌ی خندان» نام دارد و در بازار ارزش بیشتری دارد.",
+       "tr": "",
+       "de": "Eine Pistazie, deren harte Schale sich von Natur aus geöffnet hat, heißt ‹lachende Pistazie› und ist auf dem Markt mehr wert."
       },
       {
        "fa": "ایران مدت‌ها بزرگ‌ترین تولیدکننده‌ی پسته‌ی جهان بود، اما در دهه‌های اخیر آمریکا به رقیب اصلی آن تبدیل شده است و این دو کشور بخش بزرگی از بازار جهانی را میان خود تقسیم کرده‌اند.",
@@ -121,9 +206,24 @@
        "de": "Der Wasserspiegel ist gesunken, und in manchen Gegenden hat sich sogar der Boden abgesenkt."
       },
       {
+       "fa": "در برخی دشت‌های استان کرمان، نشست زمین سالانه چندین سانتی‌متر اندازه‌گیری شده و به خانه‌ها و جاده‌ها نیز آسیب رسانده است.",
+       "tr": "",
+       "de": "In manchen Ebenen der Provinz Kerman wurden Bodenabsenkungen von mehreren Zentimetern pro Jahr gemessen, die auch Häuser und Straßen beschädigt haben."
+      },
+      {
        "fa": "خشکسالی‌های پی‌درپی هم وضع را سخت‌تر کرده و محصول برخی سال‌ها را به‌شدت کاهش داده است.",
        "tr": "",
        "de": "Aufeinanderfolgende Dürren haben die Lage zusätzlich erschwert und die Ernte mancher Jahre stark verringert."
+      },
+      {
+       "fa": "سرمای دیررس بهاره نیز گاهی بخش بزرگی از محصول یک سال را از بین می‌برد.",
+       "tr": "",
+       "de": "Auch späte Frühjahrsfröste vernichten manchmal einen großen Teil der Ernte eines Jahres."
+      },
+      {
+       "fa": "در بازار جهانی، کیفیت به اندازه‌ی مقدار اهمیت دارد؛ برای نمونه، خریداران اروپایی قوانین سخت‌گیرانه‌ای درباره‌ی کپک و سلامت مواد غذایی دارند.",
+       "tr": "",
+       "de": "Auf dem Weltmarkt ist Qualität ebenso wichtig wie Menge; europäische Käufer zum Beispiel haben strenge Vorschriften zu Schimmel und Lebensmittelsicherheit."
       },
       {
        "fa": "کارشناسان می‌گویند آینده‌ی این دو محصول بیش از هر چیز به مدیریت بهتر آب و همکاری کشاورزان با یکدیگر بستگی دارد.",
@@ -134,6 +234,11 @@
        "fa": "آبیاری قطره‌ای، پژوهش روی گونه‌های مقاوم به خشکی و بسته‌بندی بهتر از راه‌حل‌هایی است که پیشنهاد می‌شود.",
        "tr": "",
        "de": "Tröpfchenbewässerung, Forschung an dürreresistenten Sorten und bessere Verpackung gehören zu den vorgeschlagenen Lösungen."
+      },
+      {
+       "fa": "برخی کشاورزان نیز به جای محصولات پرآب، زعفران می‌کارند، زیرا این گیاه نسبت به بسیاری از محصولات دیگر آب کمتری مصرف می‌کند.",
+       "tr": "",
+       "de": "Manche Landwirte bauen statt wasserintensiver Kulturen Safran an, weil diese Pflanze im Vergleich zu vielen anderen weniger Wasser verbraucht."
       },
       {
        "fa": "شاید در آینده، طلای سرخ و طلای سبز ایران نه با مقدار بیشتر، بلکه با کیفیت بهتر در بازار جهانی بدرخشند.",
@@ -165,7 +270,18 @@
        "richtig": 1,
        "fa": "برداشت زعفران در بهار انجام می‌شود.",
        "fest": true,
-       "erkl": "Die Ernte findet im <b>Herbst</b> statt."
+       "erkl": "Die Ernte findet im <b>Herbst</b> statt, vor allem im Monat Aban."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "گل‌های زعفران را می‌توان چند روز پس از باز شدن چید.",
+       "fest": true,
+       "erkl": "Jede Blüte muss <b>am selben Tag</b> gepflückt werden, sonst welkt sie."
       },
       {
        "frage": "Richtig oder falsch?",
@@ -174,7 +290,7 @@
         "falsch"
        ],
        "richtig": 0,
-       "fa": "برای یک کیلو زعفران حدود صد و پنجاه هزار گل لازم است.",
+       "fa": "کلاله‌ها هنگام خشک شدن بخش بزرگی از وزن خود را از دست می‌دهند.",
        "fest": true
       },
       {
@@ -195,7 +311,7 @@
         "falsch"
        ],
        "richtig": 0,
-       "fa": "آمریکا رقیب اصلی ایران در بازار پسته است.",
+       "fa": "درختان پسته یا نرند یا ماده.",
        "fest": true
       },
       {
@@ -205,9 +321,19 @@
         "falsch"
        ],
        "richtig": 1,
-       "fa": "آب‌های زیرزمینی کرمان رو به افزایش است.",
+       "fa": "پسته‌ی خندان در بازار ارزش کمتری دارد.",
        "fest": true,
-       "erkl": "Der Wasserspiegel ist <b>gesunken</b>; es wurde zu viel Grundwasser entnommen."
+       "erkl": "Die ‹lachende Pistazie› ist <b>mehr</b> wert."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "آمریکا رقیب اصلی ایران در بازار پسته است.",
+       "fest": true
       }
      ]
     },
@@ -234,6 +360,15 @@
        "richtig": 0
       },
       {
+       "frage": "Was geschieht beim Trocknen mit dem Gewicht der Narben?",
+       "optionen": [
+        "Es sinkt auf etwa ein Fünftel.",
+        "Es halbiert sich genau.",
+        "Es bleibt gleich."
+       ],
+       "richtig": 0
+      },
+      {
        "frage": "Was geschah lange mit iranischem Safran?",
        "optionen": [
         "Er wurde lose exportiert und anderswo verpackt.",
@@ -243,11 +378,11 @@
        "richtig": 0
       },
       {
-       "frage": "Was unterscheidet die Plantagen in Kalifornien?",
+       "frage": "Wie gelangt der Pollen zu den weiblichen Pistazienbäumen?",
        "optionen": [
-        "moderne Bewässerung und maschinelle Ernte",
-        "mehr Handarbeit",
-        "kleinere Familienbetriebe"
+        "mit Hilfe des Windes",
+        "durch die Bauern von Hand",
+        "durch Bewässerungswasser"
        ],
        "richtig": 0
       },
@@ -268,9 +403,19 @@
      "frage": "Bring die Sätze in die Reihenfolge des Textes.",
      "items": [
       {
+       "fa": "هر دو در مناطق خشک و نیمه‌خشک کشور به دست می‌آیند و زندگی شمار زیادی از خانواده‌های روستایی به آنها وابسته است.",
+       "tr": "",
+       "de": "Beide werden in den trockenen und halbtrockenen Regionen des Landes gewonnen, und das Leben vieler ländlicher Familien hängt von ihnen ab."
+      },
+      {
        "fa": "زعفران را «طلای سرخ» می‌نامند، چون یکی از گران‌ترین ادویه‌های جهان است و از قدیم در آشپزی، رنگرزی و داروسازی به کار می‌رفت.",
        "tr": "",
        "de": "Safran nennt man ‹rotes Gold›, weil er eines der teuersten Gewürze der Welt ist und seit alters her beim Kochen, Färben und in der Arzneiherstellung verwendet wurde."
+      },
+      {
+       "fa": "کشت زعفران در ایران پیشینه‌ای بسیار کهن دارد و در متن‌های قدیمی بارها از آن به‌عنوان کالایی ارزشمند یاد شده است.",
+       "tr": "",
+       "de": "Der Safrananbau hat in Iran eine sehr lange Geschichte, und in alten Texten wird Safran immer wieder als wertvolle Ware erwähnt."
       },
       {
        "fa": "بخش عمده‌ی زعفران جهان در ایران تولید می‌شود؛ برخی آمارها سهم ایران را حدود ۹۰ درصد می‌دانند.",
@@ -278,24 +423,14 @@
        "de": "Der größte Teil des Safrans der Welt wird in Iran erzeugt; manche Statistiken beziffern Irans Anteil auf rund 90 Prozent."
       },
       {
-       "fa": "مهم‌ترین منطقه‌ی کشت زعفران خراسان است، به‌ویژه شهرهایی مثل تربت حیدریه، گناباد و قائن.",
+       "fa": "کشورهایی مانند اسپانیا، یونان، هند و افغانستان نیز زعفران تولید می‌کنند، اما سهم آنها نسبت به ایران بسیار کم است.",
        "tr": "",
-       "de": "Das wichtigste Anbaugebiet ist Chorasan, besonders Städte wie Torbat-e Heydarieh, Gonabad und Ghaen."
+       "de": "Länder wie Spanien, Griechenland, Indien und Afghanistan erzeugen ebenfalls Safran, doch ihr Anteil ist im Vergleich zu Iran sehr gering."
       },
       {
-       "fa": "زعفران در این مناطق خشک به خوبی رشد می‌کند، چون به آب نسبتا کمی نیاز دارد و سرمای زمستان را هم تحمل می‌کند.",
+       "fa": "مهم‌ترین منطقه‌ی کشت زعفران خراسان است، به‌ویژه شهرهایی مثل تربت حیدریه، گناباد و قائن؛ تربت حیدریه را حتی «پایتخت زعفران» می‌نامند.",
        "tr": "",
-       "de": "Safran gedeiht in diesen trockenen Gegenden gut, weil er relativ wenig Wasser braucht und auch die Winterkälte verträgt."
-      },
-      {
-       "fa": "برداشت آن در پاییز انجام می‌شود و تنها چند هفته طول می‌کشد.",
-       "tr": "",
-       "de": "Die Ernte findet im Herbst statt und dauert nur wenige Wochen."
-      },
-      {
-       "fa": "کشاورزان گل‌ها را صبح زود، پیش از طلوع آفتاب، می‌چینند و تقریبا همه‌ی کار با دست انجام می‌شود.",
-       "tr": "",
-       "de": "Die Bauern pflücken die Blüten früh am Morgen vor Sonnenaufgang, und fast die ganze Arbeit wird von Hand erledigt."
+       "de": "Das wichtigste Anbaugebiet ist Chorasan, besonders Städte wie Torbat-e Heydarieh, Gonabad und Ghaen; Torbat-e Heydarieh wird sogar ‹Hauptstadt des Safrans› genannt."
       }
      ]
     }
@@ -314,8 +449,8 @@
        "frage": "<span class='fa'>زعفران و پسته دو محصول کشاورزی هستند که نام ایران را در ___ مشهور کرده‌اند.</span><br><span class='mini'>Safran und Pistazien sind zwei Agrarprodukte, die Irans Namen auf dem Weltmarkt bekannt gemacht haben.</span>",
        "optionen": [
         "بازار جهانی",
-        "کاهش",
-        "افزایش"
+        "واسطه",
+        "تقاضا"
        ],
        "richtig": 0,
        "optFa": true,
@@ -326,8 +461,8 @@
        "frage": "<span class='fa'>بخش عمده‌ی زعفران جهان در ایران ___ می‌شود؛ برخی آمارها سهم ایران را حدود ۹۰ درصد می‌دانند.</span><br><span class='mini'>Der größte Teil des Safrans der Welt wird in Iran erzeugt; manche Statistiken beziffern Irans Anteil auf rund 90 Prozent.</span>",
        "optionen": [
         "تولید",
-        "سالانه",
-        "درصد"
+        "پوست",
+        "میانگین"
        ],
        "richtig": 0,
        "optFa": true,
@@ -335,23 +470,143 @@
        "erkl": "<span class='fa'>بخش عمده‌ی زعفران جهان در ایران تولید می‌شود؛ برخی آمارها سهم ایران را حدود ۹۰ درصد می‌دانند.</span>"
       },
       {
-       "frage": "<span class='fa'>___ آن در پاییز انجام می‌شود و تنها چند هفته طول می‌کشد.</span><br><span class='mini'>Die Ernte findet im Herbst statt und dauert nur wenige Wochen.</span>",
+       "frage": "<span class='fa'>کشورهایی مانند اسپانیا، یونان، هند و افغانستان نیز زعفران ___ می‌کنند، اما سهم آنها نسبت به ایران بسیار کم است.</span><br><span class='mini'>Länder wie Spanien, Griechenland, Indien und Afghanistan erzeugen ebenfalls Safran, doch ihr Anteil ist im Vergleich zu Iran sehr gering.</span>",
+       "optionen": [
+        "تولید",
+        "تن",
+        "درصد"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>کشورهایی مانند اسپانیا، یونان، هند و افغانستان نیز زعفران تولید می‌کنند، اما سهم آنها نسبت به ایران بسیار کم است.</span>"
+      },
+      {
+       "frage": "<span class='fa'>گیاه زعفران از پیازهای کوچکی می‌روید که معمولا در تابستان کاشته می‌شوند و چند سال پیاپی ___ می‌دهند.</span><br><span class='mini'>Die Safranpflanze wächst aus kleinen Knollen, die meist im Sommer gepflanzt werden und mehrere Jahre hintereinander blühen.</span>",
+       "optionen": [
+        "گل",
+        "آمار",
+        "ادویه"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>گیاه زعفران از پیازهای کوچکی می‌روید که معمولا در تابستان کاشته می‌شوند و چند سال پیاپی گل می‌دهند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>مزرعه در تابستان خشک و بی‌جان به نظر می‌رسد، اما با نخستین ___ پاییزی، گیاه دوباره جان می‌گیرد.</span><br><span class='mini'>Im Sommer wirkt das Feld trocken und leblos, doch mit der ersten Bewässerung im Herbst erwacht die Pflanze wieder zum Leben.</span>",
+       "optionen": [
+        "آبیاری",
+        "صادرات",
+        "افزایش"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>مزرعه در تابستان خشک و بی‌جان به نظر می‌رسد، اما با نخستین آبیاری پاییزی، گیاه دوباره جان می‌گیرد.</span>"
+      },
+      {
+       "frage": "<span class='fa'>___ آن در پاییز، به‌ویژه در آبان‌ماه، انجام می‌شود و تنها چند هفته طول می‌کشد.</span><br><span class='mini'>Die Ernte findet im Herbst statt, vor allem im Monat Aban (Oktober/November), und dauert nur wenige Wochen.</span>",
        "optionen": [
         "برداشت",
-        "کارگر",
+        "ارزش",
+        "طعم"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>برداشت آن در پاییز، به‌ویژه در آبان‌ماه، انجام می‌شود و تنها چند هفته طول می‌کشد.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort fehlt im Text?",
+     "fragen": [
+      {
+       "frage": "<span class='fa'>هر گل باید همان روزی که باز می‌شود چیده شود؛ در غیر این صورت زیر آفتاب پژمرده می‌شود و ___ کلاله‌هایش پایین می‌آید.</span><br><span class='mini'>Jede Blüte muss an dem Tag gepflückt werden, an dem sie sich öffnet; andernfalls welkt sie in der Sonne, und die Qualität ihrer Narben sinkt.</span>",
+       "optionen": [
+        "کیفیت",
+        "تولید",
+        "نمودار"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>هر گل باید همان روزی که باز می‌شود چیده شود؛ در غیر این صورت زیر آفتاب پژمرده می‌شود و کیفیت کلاله‌هایش پایین می‌آید.</span>"
+      },
+      {
+       "frage": "<span class='fa'>سپس سه کلاله‌ی قرمز هر ___ را با دقت جدا و خشک می‌کنند.</span><br><span class='mini'>Dann werden die drei roten Narben jeder Blüte sorgfältig abgetrennt und getrocknet.</span>",
+       "optionen": [
+        "گل",
+        "پوست",
+        "عرضه"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>سپس سه کلاله‌ی قرمز هر گل را با دقت جدا و خشک می‌کنند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>برای یک کیلو زعفران خشک، حدود صد و پنجاه هزار ___ لازم است.</span><br><span class='mini'>Für ein Kilo getrockneten Safran braucht man rund 150.000 Blüten.</span>",
+       "optionen": [
+        "گل",
+        "بسته‌بندی",
+        "کارگر"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>برای یک کیلو زعفران خشک، حدود صد و پنجاه هزار گل لازم است.</span>"
+      },
+      {
+       "frage": "<span class='fa'>کلاله‌های تازه را در اتاقی تاریک و گرم یا با دستگاه‌های مخصوص خشک می‌کنند و در این مرحله وزنشان تقریبا به یک‌پنجم ___ می‌یابد.</span><br><span class='mini'>Die frischen Narben werden in einem dunklen, warmen Raum oder mit speziellen Geräten getrocknet; dabei sinkt ihr Gewicht auf etwa ein Fünftel.</span>",
+       "optionen": [
+        "کاهش",
+        "میانگین",
         "تن"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
-       "erkl": "<span class='fa'>برداشت آن در پاییز انجام می‌شود و تنها چند هفته طول می‌کشد.</span>"
+       "erkl": "<span class='fa'>کلاله‌های تازه را در اتاقی تاریک و گرم یا با دستگاه‌های مخصوص خشک می‌کنند و در این مرحله وزنشان تقریبا به یک‌پنجم کاهش می‌یابد.</span>"
       },
+      {
+       "frage": "<span class='fa'>رنگ، ___ و عطر زعفران به سه ماده‌ی طبیعی در کلاله‌ها وابسته است که مقدار آنها توسط آزمایشگاه‌های تخصصی و بر اساس استانداردهای بین‌المللی اندازه‌گیری می‌شود.</span><br><span class='mini'>Farbe, Geschmack und Duft des Safrans hängen von drei natürlichen Stoffen in den Narben ab, deren Menge von Fachlaboren nach internationalen Standards gemessen wird.</span>",
+       "optionen": [
+        "طعم",
+        "تقاضا",
+        "ارزش"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>رنگ، طعم و عطر زعفران به سه ماده‌ی طبیعی در کلاله‌ها وابسته است که مقدار آنها توسط آزمایشگاه‌های تخصصی و بر اساس استانداردهای بین‌المللی اندازه‌گیری می‌شود.</span>"
+      },
+      {
+       "frage": "<span class='fa'>زعفرانی که فقط از بخش سرخ ___ تشکیل شده باشد، مرغوب‌تر و گران‌تر است و در بازار ایران به آن «سرگل» یا «نگین» می‌گویند.</span><br><span class='mini'>Safran, der nur aus dem roten Teil der Narbe besteht, ist hochwertiger und teurer; auf dem iranischen Markt nennt man ihn ‹Sargol› oder ‹Negin›.</span>",
+       "optionen": [
+        "کلاله",
+        "خشکسالی",
+        "تن"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>زعفرانی که فقط از بخش سرخ کلاله تشکیل شده باشد، مرغوب‌تر و گران‌تر است و در بازار ایران به آن «سرگل» یا «نگین» می‌گویند.</span>"
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort fehlt im Text?",
+     "fragen": [
       {
        "frage": "<span class='fa'>به همین دلیل، زعفران گران است و متأسفانه زعفران ___ هم در بازار کم نیست.</span><br><span class='mini'>Deshalb ist Safran teuer, und leider gibt es auf dem Markt auch nicht wenig gefälschten Safran.</span>",
        "optionen": [
         "تقلبی",
-        "سالانه",
-        "واسطه"
+        "کارگر",
+        "طعم"
        ],
        "richtig": 0,
        "optFa": true,
@@ -362,8 +617,8 @@
        "frage": "<span class='fa'>سال‌ها بخش بزرگی از زعفران ایران به صورت فله به کشورهای دیگر صادر می‌شد و آنجا با نام دیگری ___ می‌شد.</span><br><span class='mini'>Jahrelang wurde ein großer Teil des iranischen Safrans lose in andere Länder exportiert und dort unter anderem Namen verpackt.</span>",
        "optionen": [
         "بسته‌بندی",
-        "کشاورزی",
-        "تقلبی"
+        "مزرعه",
+        "نیمه"
        ],
        "richtig": 0,
        "optFa": true,
@@ -374,26 +629,32 @@
        "frage": "<span class='fa'>امروز تولیدکنندگان ایرانی تلاش می‌کنند با ___ بهتر، ارزش بیشتری از این محصول به دست آورند.</span><br><span class='mini'>Heute versuchen iranische Erzeuger, durch bessere Verpackung mehr Wert aus diesem Produkt zu schöpfen.</span>",
        "optionen": [
         "بسته‌بندی",
-        "باغ",
-        "رقابت"
+        "بوداده",
+        "رطوبت"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
        "erkl": "<span class='fa'>امروز تولیدکنندگان ایرانی تلاش می‌کنند با بسته‌بندی بهتر، ارزش بیشتری از این محصول به دست آورند.</span>"
-      }
-     ]
-    },
-    {
-     "typ": "wahl",
-     "titel": "Welches Wort fehlt im Text?",
-     "fragen": [
+      },
+      {
+       "frage": "<span class='fa'>در کنار آنها، شرکت‌های جوانی پدید آمده‌اند که زعفران را در بسته‌های کوچک و با نام تجاری ایرانی مستقیما به مشتریان خارجی ___ می‌کنند.</span><br><span class='mini'>Daneben sind junge Unternehmen entstanden, die Safran in kleinen Packungen und unter iranischem Markennamen direkt an ausländische Kunden verkaufen.</span>",
+       "optionen": [
+        "عرضه",
+        "تقلبی",
+        "آبیاری"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>در کنار آنها، شرکت‌های جوانی پدید آمده‌اند که زعفران را در بسته‌های کوچک و با نام تجاری ایرانی مستقیما به مشتریان خارجی عرضه می‌کنند.</span>"
+      },
       {
        "frage": "<span class='fa'>«طلای سبز» ایران پسته است که بیشتر در استان کرمان و به‌ویژه در اطراف رفسنجان کشت می‌شود و در اواخر تابستان ___ می‌شود.</span><br><span class='mini'>Irans ‹grünes Gold› ist die Pistazie, die vor allem in der Provinz Kerman und besonders rund um Rafsandschan angebaut und im Spätsommer geerntet wird.</span>",
        "optionen": [
         "برداشت",
-        "رقابت",
-        "رکورد"
+        "میانگین",
+        "خوشه"
        ],
        "richtig": 0,
        "optFa": true,
@@ -401,64 +662,16 @@
        "erkl": "<span class='fa'>«طلای سبز» ایران پسته است که بیشتر در استان کرمان و به‌ویژه در اطراف رفسنجان کشت می‌شود و در اواخر تابستان برداشت می‌شود.</span>"
       },
       {
-       "frage": "<span class='fa'>ایران مدت‌ها بزرگ‌ترین تولیدکننده‌ی پسته‌ی جهان بود، اما در دهه‌های اخیر آمریکا به رقیب اصلی آن تبدیل شده است و این دو کشور بخش بزرگی از ___ را میان خود تقسیم کرده‌اند.</span><br><span class='mini'>Iran war lange der größte Pistazienproduzent der Welt, doch in den letzten Jahrzehnten sind die USA zu seinem Hauptkonkurrenten geworden, und beide Länder teilen einen großen Teil des Weltmarkts unter sich auf.</span>",
+       "frage": "<span class='fa'>پسته‌ی ایرانی به ___ خوب و تنوع زیادش مشهور است؛ اکبری، احمدآقایی و کله‌قوچی از معروف‌ترین انواع آن هستند.</span><br><span class='mini'>Die iranische Pistazie ist für ihren guten Geschmack und ihre Vielfalt bekannt; Akbari, Ahmad-Aghaei und Kalle-Ghutschi gehören zu den bekanntesten Sorten.</span>",
        "optionen": [
-        "بازار جهانی",
-        "کلاله",
+        "طعم",
+        "آمار",
         "رقیب"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
-       "erkl": "<span class='fa'>ایران مدت‌ها بزرگ‌ترین تولیدکننده‌ی پسته‌ی جهان بود، اما در دهه‌های اخیر آمریکا به رقیب اصلی آن تبدیل شده است و این دو کشور بخش بزرگی از بازار جهانی را میان خود تقسیم کرده‌اند.</span>"
-      },
-      {
-       "frage": "<span class='fa'>باغ‌های پسته در کالیفرنیا با روش‌های مدرن آبیاری و ___ ماشینی اداره می‌شوند.</span><br><span class='mini'>Die Pistazienplantagen in Kalifornien werden mit modernen Bewässerungsmethoden und maschineller Ernte betrieben.</span>",
-       "optionen": [
-        "برداشت",
-        "رقابت",
-        "عرضه"
-       ],
-       "richtig": 0,
-       "optFa": true,
-       "hoeren": false,
-       "erkl": "<span class='fa'>باغ‌های پسته در کالیفرنیا با روش‌های مدرن آبیاری و برداشت ماشینی اداره می‌شوند.</span>"
-      },
-      {
-       "frage": "<span class='fa'>در مقابل، بسیاری از باغ‌های ایران کوچک و خانوادگی هستند و هنوز به روش سنتی ___ می‌شوند.</span><br><span class='mini'>Viele Plantagen in Iran sind dagegen klein und familiengeführt und werden noch auf traditionelle Weise bewässert.</span>",
-       "optionen": [
-        "آبیاری",
-        "کشاورز",
-        "کشاورزی"
-       ],
-       "richtig": 0,
-       "optFa": true,
-       "hoeren": false,
-       "erkl": "<span class='fa'>در مقابل، بسیاری از باغ‌های ایران کوچک و خانوادگی هستند و هنوز به روش سنتی آبیاری می‌شوند.</span>"
-      },
-      {
-       "frage": "<span class='fa'>بزرگ‌ترین مشکل اما کم‌آبی است: در کرمان سال‌ها بیش از اندازه از ___ استفاده شده است.</span><br><span class='mini'>Das größte Problem ist jedoch der Wassermangel: In Kerman wurde jahrelang zu viel Grundwasser entnommen.</span>",
-       "optionen": [
-        "آب‌های زیرزمینی",
-        "میانگین",
-        "بسته‌بندی"
-       ],
-       "richtig": 0,
-       "optFa": true,
-       "hoeren": false,
-       "erkl": "<span class='fa'>بزرگ‌ترین مشکل اما کم‌آبی است: در کرمان سال‌ها بیش از اندازه از آب‌های زیرزمینی استفاده شده است.</span>"
-      },
-      {
-       "frage": "<span class='fa'>خشکسالی‌های پی‌درپی هم وضع را سخت‌تر کرده و محصول برخی سال‌ها را به‌شدت ___ داده است.</span><br><span class='mini'>Aufeinanderfolgende Dürren haben die Lage zusätzlich erschwert und die Ernte mancher Jahre stark verringert.</span>",
-       "optionen": [
-        "کاهش",
-        "آبیاری",
-        "پیاز"
-       ],
-       "richtig": 0,
-       "optFa": true,
-       "hoeren": false,
-       "erkl": "<span class='fa'>خشکسالی‌های پی‌درپی هم وضع را سخت‌تر کرده و محصول برخی سال‌ها را به‌شدت کاهش داده است.</span>"
+       "erkl": "<span class='fa'>پسته‌ی ایرانی به طعم خوب و تنوع زیادش مشهور است؛ اکبری، احمدآقایی و کله‌قوچی از معروف‌ترین انواع آن هستند.</span>"
       }
      ]
     },
@@ -473,14 +686,19 @@
        "de": "Safran und Pistazien sind zwei bekannte Agrarprodukte Irans."
       },
       {
-       "fa": "بیشتر زعفران جهان در خراسان کشت و با دست برداشت می‌شود.",
+       "fa": "بیشتر زعفران جهان در خراسان کشت و گل‌های آن پیش از طلوع آفتاب با دست چیده می‌شود.",
        "tr": "",
-       "de": "Der meiste Safran der Welt wird in Chorasan angebaut und von Hand geerntet."
+       "de": "Der meiste Safran der Welt wird in Chorasan angebaut, und seine Blüten werden vor Sonnenaufgang von Hand gepflückt."
       },
       {
-       "fa": "ایرانی‌ها امروز می‌خواهند زعفران را با بسته‌بندی بهتر صادر کنند.",
+       "fa": "کلاله‌ها جدا و خشک می‌شوند و کیفیت زعفران به رنگ، طعم و عطر آن بستگی دارد.",
        "tr": "",
-       "de": "Die Iraner wollen Safran heute besser verpackt exportieren."
+       "de": "Die Narben werden abgetrennt und getrocknet, und die Qualität des Safrans hängt von Farbe, Geschmack und Duft ab."
+      },
+      {
+       "fa": "ایرانی‌ها امروز می‌خواهند زعفران را با بسته‌بندی بهتر و نام تجاری خود صادر کنند.",
+       "tr": "",
+       "de": "Die Iraner wollen Safran heute besser verpackt und unter eigenem Markennamen exportieren."
       },
       {
        "fa": "پسته بیشتر در کرمان کشت می‌شود و آمریکا رقیب اصلی ایران است.",
@@ -491,6 +709,293 @@
        "fa": "کم‌آبی بزرگ‌ترین مشکل است و آینده به مدیریت بهتر آب بستگی دارد.",
        "tr": "",
        "de": "Wassermangel ist das größte Problem, und die Zukunft hängt von besserem Wassermanagement ab."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "t3",
+   "titel": "Alltag: Erntezeit bei Torbat-e Heydarieh",
+   "vorschau": "Erntezeit bei Torbat-e Heydarieh",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Neue Wörter im Text",
+     "text": "<p><span class='fa'>فرو رفتن</span> – versinken · <span class='fa'>سبد</span> – Korb · <span class='fa'>هکتار</span> – Hektar · <span class='fa'>قنات</span> – Qanat (unterirdischer Wasserkanal) · <span class='fa'>خم شدن</span> – sich bücken · <span class='fa'>روزمزد</span> – Tagelöhner/in · <span class='fa'>کود</span> – Dünger · <span class='fa'>گلبرگ</span> – Blütenblatt · <span class='fa'>خوراک دام</span> – Tierfutter · <span class='fa'>پهن کردن</span> – ausbreiten · <span class='fa'>نمونه</span> – Probe · <span class='fa'>سر تکان دادن</span> – nicken</p>",
+     "stil": "merke"
+    },
+    {
+     "typ": "text",
+     "titel": "Alltag: Erntezeit bei Torbat-e Heydarieh",
+     "text": "Alltagstext – Tippe eine Zeile an, wenn du die Übersetzung brauchst.",
+     "zeilen": [
+      {
+       "fa": "اواخر آبان است و روستای کوچک ما در نزدیکی تربت حیدریه هنوز در تاریکی فرو رفته است.",
+       "tr": "",
+       "de": "Es ist Ende Aban, und unser kleines Dorf bei Torbat-e Heydarieh liegt noch im Dunkeln."
+      },
+      {
+       "fa": "ساعت پنج صبح، مادربزرگم همه را بیدار می‌کند و می‌گوید: «بلند شوید، گل‌ها منتظر نمی‌مانند!»",
+       "tr": "",
+       "de": "Um fünf Uhr morgens weckt meine Großmutter alle und sagt: ‹Steht auf, die Blüten warten nicht!›"
+      },
+      {
+       "fa": "من نگار هستم، دانشجوی کشاورزی در مشهد، و هر سال در فصل برداشت چند روز به خانه‌ی پدربزرگ و مادربزرگم می‌آیم تا کمک کنم.",
+       "tr": "",
+       "de": "Ich bin Negar, Studentin der Agrarwissenschaften in Maschhad, und komme jedes Jahr zur Erntezeit für ein paar Tage zu meinen Großeltern, um zu helfen."
+      },
+      {
+       "fa": "هوا سرد است؛ دستکش نازک می‌پوشیم، سبدها را برمی‌داریم و پیاده به سمت مزرعه می‌رویم.",
+       "tr": "",
+       "de": "Es ist kalt; wir ziehen dünne Handschuhe an, nehmen die Körbe und gehen zu Fuß zum Feld."
+      },
+      {
+       "fa": "مزرعه‌ی پدربزرگم حدود یک هکتار است و از آب یک قنات قدیمی آبیاری می‌شود.",
+       "tr": "",
+       "de": "Das Feld meines Großvaters ist etwa einen Hektar groß und wird mit dem Wasser eines alten Qanats bewässert."
+      },
+      {
+       "fa": "وقتی به مزرعه می‌رسیم، زمین با گل‌های بنفشی پوشیده شده است که همین دیشب باز شده‌اند.",
+       "tr": "",
+       "de": "Als wir das Feld erreichen, ist der Boden mit violetten Blüten bedeckt, die sich erst letzte Nacht geöffnet haben."
+      },
+      {
+       "fa": "چیدن گل کار ساده‌ای به نظر می‌رسد، اما بعد از یک ساعت کمر درد می‌گیرد، چون باید مدام خم شد.",
+       "tr": "",
+       "de": "Blütenpflücken scheint eine einfache Arbeit zu sein, doch nach einer Stunde tut der Rücken weh, weil man sich ständig bücken muss."
+      },
+      {
+       "fa": "چند زن از روستا هم آمده‌اند؛ آنها روزمزد کار می‌کنند و بسیار سریع‌تر از من گل می‌چینند.",
+       "tr": "",
+       "de": "Einige Frauen aus dem Dorf sind auch gekommen; sie arbeiten als Tagelöhnerinnen und pflücken viel schneller als ich."
+      },
+      {
+       "fa": "تا ساعت نه، پیش از آنکه آفتاب گرم شود، همه‌ی گل‌های امروز چیده شده‌اند.",
+       "tr": "",
+       "de": "Bis neun Uhr, bevor die Sonne warm wird, sind alle Blüten des Tages gepflückt."
+      },
+      {
+       "fa": "پدربزرگم سبدها را وزن می‌کند و رقم را در دفترچه‌اش می‌نویسد؛ او آمار برداشت هر روز را از سی سال پیش نگه داشته است.",
+       "tr": "",
+       "de": "Mein Großvater wiegt die Körbe und schreibt die Zahl in sein Heft; er führt seit dreißig Jahren Statistik über die tägliche Ernte."
+      },
+      {
+       "fa": "بعد نوبت پاک کردن گل‌هاست: همه دور یک سفره‌ی بزرگ در اتاق می‌نشینیم و کلاله‌ها را از گل جدا می‌کنیم.",
+       "tr": "",
+       "de": "Dann sind die Blüten zum Verlesen an der Reihe: Wir sitzen alle um ein großes Tuch im Zimmer und trennen die Narben von den Blüten."
+      },
+      {
+       "fa": "هر گل سه رشته‌ی سرخ دارد که به بخشی سفید و زردرنگ وصل است و ما فقط بخش سرخ را جدا می‌کنیم.",
+       "tr": "",
+       "de": "Jede Blüte hat drei rote Fäden, die an einem weiß-gelben Teil hängen, und wir trennen nur den roten Teil ab."
+      },
+      {
+       "fa": "مادربزرگم با دقت نگاه می‌کند و می‌گوید: «بخش سفید را جدا کن؛ زعفران سرگل باید فقط سرخ باشد.»",
+       "tr": "",
+       "de": "Meine Großmutter schaut genau hin und sagt: ‹Trenn den weißen Teil ab; Sargol-Safran muss rein rot sein.›"
+      },
+      {
+       "fa": "در حین کار رادیو روشن است و همه درباره‌ی قیمت‌های امسال حرف می‌زنند.",
+       "tr": "",
+       "de": "Während der Arbeit läuft das Radio, und alle reden über die Preise in diesem Jahr."
+      },
+      {
+       "fa": "عمویم می‌گوید قیمت زعفران نسبت به پارسال بالا رفته، اما هزینه‌ی کارگر و کود هم تقریبا دو برابر شده است.",
+       "tr": "",
+       "de": "Mein Onkel sagt, der Safranpreis sei im Vergleich zum Vorjahr gestiegen, aber die Kosten für Arbeitskräfte und Dünger hätten sich ebenfalls ungefähr verdoppelt."
+      },
+      {
+       "fa": "گلبرگ‌های بنفش را دور نمی‌ریزیم؛ برخی خانواده‌ها از آنها برای خوراک دام یا رنگ‌های گیاهی استفاده می‌کنند.",
+       "tr": "",
+       "de": "Die violetten Blütenblätter werfen wir nicht weg; manche Familien verwenden sie als Tierfutter oder für Pflanzenfarben."
+      },
+      {
+       "fa": "ظهر، کلاله‌های تازه را روی پارچه‌ای تمیز در اتاقی گرم و تاریک پهن می‌کنیم تا آرام‌آرام خشک شوند.",
+       "tr": "",
+       "de": "Mittags breiten wir die frischen Narben auf einem sauberen Tuch in einem warmen, dunklen Raum aus, damit sie langsam trocknen."
+      },
+      {
+       "fa": "پدربزرگم می‌گوید خشک کردن مهم‌ترین مرحله است: اگر زعفران زیر آفتاب مستقیم خشک شود، رنگ و عطرش کم می‌شود.",
+       "tr": "",
+       "de": "Mein Großvater sagt, das Trocknen sei der wichtigste Schritt: Wenn Safran in direkter Sonne trocknet, verliert er Farbe und Duft."
+      },
+      {
+       "fa": "چند روز بعد، زعفران خشک‌شده را در ظرف‌های شیشه‌ای دربسته می‌ریزیم و دور از نور و رطوبت نگه می‌داریم.",
+       "tr": "",
+       "de": "Ein paar Tage später füllen wir den getrockneten Safran in verschlossene Glasgefäße und bewahren ihn vor Licht und Feuchtigkeit geschützt auf."
+      },
+      {
+       "fa": "بخشی از محصول به واسطه‌ای فروخته می‌شود که هر سال از تربت به روستا می‌آید.",
+       "tr": "",
+       "de": "Ein Teil der Ernte wird an einen Zwischenhändler verkauft, der jedes Jahr aus Torbat ins Dorf kommt."
+      },
+      {
+       "fa": "او قیمت را بر اساس رنگ و رطوبت زعفران تعیین می‌کند و گاهی نمونه‌ای از آن را برای آزمایشگاه برمی‌دارد.",
+       "tr": "",
+       "de": "Er legt den Preis nach Farbe und Feuchtigkeit des Safrans fest und nimmt manchmal eine Probe für das Labor mit."
+      },
+      {
+       "fa": "پسرعمویم اما راه دیگری را امتحان می‌کند: او یک فروشگاه اینترنتی راه انداخته و زعفران خانواده را در بسته‌های یک‌گرمی مستقیم به مشتریان می‌فروشد.",
+       "tr": "",
+       "de": "Mein Cousin probiert jedoch einen anderen Weg: Er hat einen Onlineshop eröffnet und verkauft den Safran der Familie in Ein-Gramm-Packungen direkt an die Kunden."
+      },
+      {
+       "fa": "به گفته‌ی او، فروش اینترنتی‌اش در دو سال گذشته سه برابر شده و بیش از نیمی از مشتریانش در تهران و شیراز زندگی می‌کنند.",
+       "tr": "",
+       "de": "Nach seinen Worten hat sich sein Onlineumsatz in den letzten zwei Jahren verdreifacht, und mehr als die Hälfte seiner Kunden lebt in Teheran und Schiras."
+      },
+      {
+       "fa": "پدربزرگم سر تکان می‌دهد و می‌گوید: «در زمان ما همه‌چیز به دست واسطه‌ها بود؛ حالا جوان‌ها راه‌های تازه‌ای پیدا کرده‌اند.»",
+       "tr": "",
+       "de": "Mein Großvater nickt und sagt: ‹Zu unserer Zeit lag alles in der Hand der Zwischenhändler; jetzt haben die Jungen neue Wege gefunden.›"
+      },
+      {
+       "fa": "شب، خسته و با دست‌هایی که بوی زعفران می‌دهند به خواب می‌روم و می‌دانم که فردا دوباره ساعت پنج بیدار می‌شویم.",
+       "tr": "",
+       "de": "Abends schlafe ich müde und mit Händen, die nach Safran riechen, ein und weiß, dass wir morgen wieder um fünf Uhr aufstehen."
+      },
+      {
+       "fa": "فصل برداشت فقط چند هفته طول می‌کشد، اما برای خانواده‌ی ما مهم‌ترین هفته‌های سال است.",
+       "tr": "",
+       "de": "Die Erntezeit dauert nur wenige Wochen, aber für unsere Familie sind es die wichtigsten Wochen des Jahres."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Richtig oder falsch?",
+     "fragen": [
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "خانواده‌ی نگار در نزدیکی تربت حیدریه زندگی می‌کنند.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "گل‌ها بعدازظهر چیده می‌شوند.",
+       "fest": true,
+       "erkl": "Alle Blüten sind bis <b>neun Uhr morgens</b> gepflückt, bevor die Sonne warm wird."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 1,
+       "fa": "زعفران را زیر آفتاب مستقیم خشک می‌کنند.",
+       "fest": true,
+       "erkl": "Man trocknet ihn in einem <b>warmen, dunklen Raum</b>; direkte Sonne schadet Farbe und Duft."
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "هزینه‌ی کارگر و کود تقریبا دو برابر شده است.",
+       "fest": true
+      },
+      {
+       "frage": "Richtig oder falsch?",
+       "optionen": [
+        "richtig",
+        "falsch"
+       ],
+       "richtig": 0,
+       "fa": "فروش اینترنتی پسرعموی نگار در دو سال سه برابر شده است.",
+       "fest": true
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zum Text",
+     "fragen": [
+      {
+       "frage": "Was macht Negar beruflich?",
+       "optionen": [
+        "Sie studiert Agrarwissenschaften in Maschhad.",
+        "Sie ist Ärztin in Teheran.",
+        "Sie arbeitet als Zwischenhändlerin."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Womit wird das Feld des Großvaters bewässert?",
+       "optionen": [
+        "mit dem Wasser eines alten Qanats",
+        "mit Regenwasser aus Tanks",
+        "mit Flusswasser über Tröpfchenschläuche"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was geschieht mit den violetten Blütenblättern?",
+       "optionen": [
+        "Manche Familien nutzen sie als Tierfutter oder für Pflanzenfarben.",
+        "Sie werden verbrannt.",
+        "Man verkauft sie als Safran."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie verkauft Negars Cousin den Safran?",
+       "optionen": [
+        "online in Ein-Gramm-Packungen direkt an Kunden",
+        "nur an den Zwischenhändler",
+        "auf dem Wochenmarkt in Torbat"
+       ],
+       "richtig": 0
+      }
+     ]
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Was kommt zuerst?",
+     "frage": "Bring die Sätze in die Reihenfolge des Textes.",
+     "items": [
+      {
+       "fa": "ساعت پنج صبح، مادربزرگم همه را بیدار می‌کند و می‌گوید: «بلند شوید، گل‌ها منتظر نمی‌مانند!»",
+       "tr": "",
+       "de": "Um fünf Uhr morgens weckt meine Großmutter alle und sagt: ‹Steht auf, die Blüten warten nicht!›"
+      },
+      {
+       "fa": "من نگار هستم، دانشجوی کشاورزی در مشهد، و هر سال در فصل برداشت چند روز به خانه‌ی پدربزرگ و مادربزرگم می‌آیم تا کمک کنم.",
+       "tr": "",
+       "de": "Ich bin Negar, Studentin der Agrarwissenschaften in Maschhad, und komme jedes Jahr zur Erntezeit für ein paar Tage zu meinen Großeltern, um zu helfen."
+      },
+      {
+       "fa": "هوا سرد است؛ دستکش نازک می‌پوشیم، سبدها را برمی‌داریم و پیاده به سمت مزرعه می‌رویم.",
+       "tr": "",
+       "de": "Es ist kalt; wir ziehen dünne Handschuhe an, nehmen die Körbe und gehen zu Fuß zum Feld."
+      },
+      {
+       "fa": "مزرعه‌ی پدربزرگم حدود یک هکتار است و از آب یک قنات قدیمی آبیاری می‌شود.",
+       "tr": "",
+       "de": "Das Feld meines Großvaters ist etwa einen Hektar groß und wird mit dem Wasser eines alten Qanats bewässert."
+      },
+      {
+       "fa": "وقتی به مزرعه می‌رسیم، زمین با گل‌های بنفشی پوشیده شده است که همین دیشب باز شده‌اند.",
+       "tr": "",
+       "de": "Als wir das Feld erreichen, ist der Boden mit violetten Blüten bedeckt, die sich erst letzte Nacht geöffnet haben."
+      },
+      {
+       "fa": "چیدن گل کار ساده‌ای به نظر می‌رسد، اما بعد از یک ساعت کمر درد می‌گیرد، چون باید مدام خم شد.",
+       "tr": "",
+       "de": "Blütenpflücken scheint eine einfache Arbeit zu sein, doch nach einer Stunde tut der Rücken weh, weil man sich ständig bücken muss."
       }
      ]
     }
@@ -517,9 +1022,9 @@
        "de": "Herr Rahimi, ich habe gehört, dass Ihre Familie in Gonabad Safran anbaut. Könnten Sie unseren Lesern ein wenig darüber erzählen?"
       },
       {
-       "fa": "آقای رحیمی: با کمال میل. برادرم بیش از سی سال است که مزرعه‌ی زعفران دارد.",
+       "fa": "آقای رحیمی: با کمال میل. برادرم بیش از سی سال است که مزرعه‌ی زعفران دارد. مزرعه‌اش حدود دو هکتار است و با آب قنات آبیاری می‌شود.",
        "tr": "",
-       "de": "Sehr gern. Mein Bruder hat seit über dreißig Jahren ein Safranfeld."
+       "de": "Sehr gern. Mein Bruder hat seit über dreißig Jahren ein Safranfeld. Es ist etwa zwei Hektar groß und wird mit Qanatwasser bewässert."
       },
       {
        "fa": "لیلا: برداشت زعفران چگونه انجام می‌شود؟",
@@ -532,14 +1037,34 @@
        "de": "Im Herbst, ganz früh am Morgen. Die Blüten werden von Familienmitgliedern und Frauen aus dem Dorf von Hand gepflückt."
       },
       {
+       "fa": "لیلا: و بعد از چیدن چه می‌کنند؟",
+       "tr": "",
+       "de": "Und was macht man nach dem Pflücken?"
+      },
+      {
+       "fa": "آقای رحیمی: همان روز کلاله‌ها را جدا می‌کنند. همسر برادرم و دخترهایش در این کار بسیار ماهرند و در یک ساعت صدها گل را پاک می‌کنند.",
+       "tr": "",
+       "de": "Noch am selben Tag werden die Narben abgetrennt. Die Frau meines Bruders und ihre Töchter sind darin sehr geschickt und verlesen in einer Stunde Hunderte Blüten."
+      },
+      {
+       "fa": "لیلا: شنیده‌ام کشت زعفران با آب قنات در گناباد از سوی فائو به‌عنوان یک میراث کشاورزی جهانی ثبت شده است.",
+       "tr": "",
+       "de": "Ich habe gehört, dass der Safrananbau mit Qanatwasser in Gonabad von der FAO als weltweites Agrarerbe anerkannt wurde."
+      },
+      {
+       "fa": "آقای رحیمی: بله، درست است. قنات‌های گناباد صدها سال قدمت دارند و هنوز آب مزرعه‌ی برادرم را تأمین می‌کنند.",
+       "tr": "",
+       "de": "Ja, das stimmt. Die Qanate von Gonabad sind Hunderte Jahre alt und versorgen das Feld meines Bruders noch immer mit Wasser."
+      },
+      {
        "fa": "لیلا: در سال‌های اخیر وضع چطور بوده است؟",
        "tr": "",
        "de": "Wie war die Lage in den letzten Jahren?"
       },
       {
-       "fa": "آقای رحیمی: محصول برادرم نسبت به ده سال پیش تقریبا نصف شده است. کم‌آبی مشکل اصلی است.",
+       "fa": "آقای رحیمی: محصول برادرم نسبت به ده سال پیش تقریبا نصف شده است. کم‌آبی مشکل اصلی است؛ آب قنات هر سال کمتر می‌شود.",
        "tr": "",
-       "de": "Die Ernte meines Bruders hat sich im Vergleich zu vor zehn Jahren ungefähr halbiert. Wassermangel ist das Hauptproblem."
+       "de": "Die Ernte meines Bruders hat sich im Vergleich zu vor zehn Jahren ungefähr halbiert. Wassermangel ist das Hauptproblem; das Qanatwasser wird jedes Jahr weniger."
       },
       {
        "fa": "لیلا: و قیمت‌ها؟ لابد سود کشاورزان هم بیشتر شده است.",
@@ -550,6 +1075,16 @@
        "fa": "آقای رحیمی: قیمت رو به افزایش است، اما بیشتر سود به جیب واسطه‌ها می‌رود، نه کشاورزان.",
        "tr": "",
        "de": "Die Preise steigen, aber der größte Teil des Gewinns landet in den Taschen der Zwischenhändler, nicht der Bauern."
+      },
+      {
+       "fa": "لیلا: آیا کشاورزان راهی برای تغییر این وضع پیدا کرده‌اند؟",
+       "tr": "",
+       "de": "Haben die Bauern einen Weg gefunden, diese Lage zu ändern?"
+      },
+      {
+       "fa": "آقای رحیمی: چند کشاورز در روستا یک تعاونی تشکیل داده‌اند تا زعفرانشان را خودشان بسته‌بندی کنند و بفروشند. اگر موفق شوند، شاید دیگران هم به آنها بپیوندند.",
+       "tr": "",
+       "de": "Einige Bauern im Dorf haben eine Genossenschaft gegründet, um ihren Safran selbst zu verpacken und zu verkaufen. Wenn sie Erfolg haben, schließen sich vielleicht auch andere an."
       }
      ]
     },
@@ -564,9 +1099,9 @@
        "de": "Herr Rahimi, ich habe gehört, dass Ihre Familie in Gonabad Safran anbaut. Könnten Sie unseren Lesern ein wenig darüber erzählen?"
       },
       {
-       "fa": "آقای رحیمی: با کمال میل. برادرم بیش از سی سال است که مزرعه‌ی زعفران دارد.",
+       "fa": "آقای رحیمی: با کمال میل. برادرم بیش از سی سال است که مزرعه‌ی زعفران دارد. مزرعه‌اش حدود دو هکتار است و با آب قنات آبیاری می‌شود.",
        "tr": "",
-       "de": "Sehr gern. Mein Bruder hat seit über dreißig Jahren ein Safranfeld."
+       "de": "Sehr gern. Mein Bruder hat seit über dreißig Jahren ein Safranfeld. Es ist etwa zwei Hektar groß und wird mit Qanatwasser bewässert."
       },
       {
        "fa": "لیلا: برداشت زعفران چگونه انجام می‌شود؟",
@@ -579,14 +1114,34 @@
        "de": "Im Herbst, ganz früh am Morgen. Die Blüten werden von Familienmitgliedern und Frauen aus dem Dorf von Hand gepflückt."
       },
       {
+       "fa": "لیلا: و بعد از چیدن چه می‌کنند؟",
+       "tr": "",
+       "de": "Und was macht man nach dem Pflücken?"
+      },
+      {
+       "fa": "آقای رحیمی: همان روز کلاله‌ها را جدا می‌کنند. همسر برادرم و دخترهایش در این کار بسیار ماهرند و در یک ساعت صدها گل را پاک می‌کنند.",
+       "tr": "",
+       "de": "Noch am selben Tag werden die Narben abgetrennt. Die Frau meines Bruders und ihre Töchter sind darin sehr geschickt und verlesen in einer Stunde Hunderte Blüten."
+      },
+      {
+       "fa": "لیلا: شنیده‌ام کشت زعفران با آب قنات در گناباد از سوی فائو به‌عنوان یک میراث کشاورزی جهانی ثبت شده است.",
+       "tr": "",
+       "de": "Ich habe gehört, dass der Safrananbau mit Qanatwasser in Gonabad von der FAO als weltweites Agrarerbe anerkannt wurde."
+      },
+      {
+       "fa": "آقای رحیمی: بله، درست است. قنات‌های گناباد صدها سال قدمت دارند و هنوز آب مزرعه‌ی برادرم را تأمین می‌کنند.",
+       "tr": "",
+       "de": "Ja, das stimmt. Die Qanate von Gonabad sind Hunderte Jahre alt und versorgen das Feld meines Bruders noch immer mit Wasser."
+      },
+      {
        "fa": "لیلا: در سال‌های اخیر وضع چطور بوده است؟",
        "tr": "",
        "de": "Wie war die Lage in den letzten Jahren?"
       },
       {
-       "fa": "آقای رحیمی: محصول برادرم نسبت به ده سال پیش تقریبا نصف شده است. کم‌آبی مشکل اصلی است.",
+       "fa": "آقای رحیمی: محصول برادرم نسبت به ده سال پیش تقریبا نصف شده است. کم‌آبی مشکل اصلی است؛ آب قنات هر سال کمتر می‌شود.",
        "tr": "",
-       "de": "Die Ernte meines Bruders hat sich im Vergleich zu vor zehn Jahren ungefähr halbiert. Wassermangel ist das Hauptproblem."
+       "de": "Die Ernte meines Bruders hat sich im Vergleich zu vor zehn Jahren ungefähr halbiert. Wassermangel ist das Hauptproblem; das Qanatwasser wird jedes Jahr weniger."
       },
       {
        "fa": "لیلا: و قیمت‌ها؟ لابد سود کشاورزان هم بیشتر شده است.",
@@ -597,6 +1152,16 @@
        "fa": "آقای رحیمی: قیمت رو به افزایش است، اما بیشتر سود به جیب واسطه‌ها می‌رود، نه کشاورزان.",
        "tr": "",
        "de": "Die Preise steigen, aber der größte Teil des Gewinns landet in den Taschen der Zwischenhändler, nicht der Bauern."
+      },
+      {
+       "fa": "لیلا: آیا کشاورزان راهی برای تغییر این وضع پیدا کرده‌اند؟",
+       "tr": "",
+       "de": "Haben die Bauern einen Weg gefunden, diese Lage zu ändern?"
+      },
+      {
+       "fa": "آقای رحیمی: چند کشاورز در روستا یک تعاونی تشکیل داده‌اند تا زعفرانشان را خودشان بسته‌بندی کنند و بفروشند. اگر موفق شوند، شاید دیگران هم به آنها بپیوندند.",
+       "tr": "",
+       "de": "Einige Bauern im Dorf haben eine Genossenschaft gegründet, um ihren Safran selbst zu verpacken und zu verkaufen. Wenn sie Erfolg haben, schließen sich vielleicht auch andere an."
       }
      ]
     },
@@ -623,11 +1188,11 @@
        "richtig": 0
       },
       {
-       "frage": "Wer verdient laut Herrn Rahimi am meisten?",
+       "frage": "Was haben einige Bauern im Dorf gegründet?",
        "optionen": [
-        "die Zwischenhändler",
-        "die Bauern",
-        "die Kunden"
+        "eine Genossenschaft, um selbst zu verpacken und zu verkaufen",
+        "eine Schule für Safranpflücker",
+        "eine neue Qanat-Firma"
        ],
        "richtig": 0
       }
@@ -676,9 +1241,29 @@
        "de": "Interessant! Und der Preis? Ist er sehr teuer?"
       },
       {
-       "fa": "بردیا: گران است، اما یک گرم برای چند بار غذا کافی است. زیاد نریز، وگرنه غذا تلخ می‌شود!",
+       "fa": "بردیا: گران است، اما یک گرم برای چند بار غذا کافی است. زیاد نریز، وگرنه غذا تلخ می‌شود.",
        "tr": "",
-       "de": "Er ist teuer, aber ein Gramm reicht für mehrere Gerichte. Nimm nicht zu viel, sonst wird das Essen bitter!"
+       "de": "Er ist teuer, aber ein Gramm reicht für mehrere Gerichte. Nimm nicht zu viel, sonst wird das Essen bitter."
+      },
+      {
+       "fa": "یوناس: چطور باید از آن استفاده کرد؟ همین‌طور در غذا بریزم؟",
+       "tr": "",
+       "de": "Wie verwendet man ihn? Gebe ich ihn einfach so ins Essen?"
+      },
+      {
+       "fa": "بردیا: نه. چند رشته را با کمی شکر در هاون بکوب و بعد در کمی آب داغ دم کن. بعضی‌ها به جای آب داغ یک تکه یخ رویش می‌گذارند تا رنگش آرام‌آرام آزاد شود.",
+       "tr": "",
+       "de": "Nein. Zerstoß ein paar Fäden mit etwas Zucker im Mörser und lass sie dann in etwas heißem Wasser ziehen. Manche legen statt heißem Wasser ein Stück Eis darauf, damit sich die Farbe langsam löst."
+      },
+      {
+       "fa": "یوناس: و چطور نگهش دارم که خراب نشود؟",
+       "tr": "",
+       "de": "Und wie bewahre ich ihn auf, damit er nicht verdirbt?"
+      },
+      {
+       "fa": "بردیا: در ظرف دربسته، دور از نور و رطوبت. نور خورشید رنگ و عطرش را از بین می‌برد.",
+       "tr": "",
+       "de": "In einem verschlossenen Gefäß, geschützt vor Licht und Feuchtigkeit. Sonnenlicht zerstört Farbe und Duft."
       },
       {
        "fa": "یوناس: پس پسته هم می‌خرم. به نظرت پسته‌ی ایرانی بهتر است یا آمریکایی؟",
@@ -686,9 +1271,19 @@
        "de": "Dann kaufe ich auch Pistazien. Sind deiner Meinung nach iranische oder amerikanische besser?"
       },
       {
-       "fa": "بردیا: به نظر من ایرانی خوشمزه‌تر است، ولی خب، من بی‌طرف نیستم!",
+       "fa": "بردیا: به نظر من ایرانی خوشمزه‌تر است، ولی خب، نظر من بی‌طرفانه نیست.",
        "tr": "",
-       "de": "Ich finde die iranischen leckerer – aber na ja, ich bin nicht unparteiisch!"
+       "de": "Ich finde die iranischen leckerer – aber na ja, meine Meinung ist nicht unparteiisch."
+      },
+      {
+       "fa": "یوناس: می‌توانم زعفران و پسته را بی‌دردسر در چمدان به آلمان ببرم؟",
+       "tr": "",
+       "de": "Kann ich Safran und Pistazien ohne Probleme im Koffer nach Deutschland mitnehmen?"
+      },
+      {
+       "fa": "بردیا: برای مصرف شخصی معمولا مشکلی نیست، اما بهتر است پیش از سفر مقررات گمرک را بررسی کنی.",
+       "tr": "",
+       "de": "Für den Eigenbedarf ist das meist kein Problem, aber du solltest vor der Reise die Zollbestimmungen prüfen."
       }
      ]
     },
@@ -723,9 +1318,29 @@
        "de": "Interessant! Und der Preis? Ist er sehr teuer?"
       },
       {
-       "fa": "بردیا: گران است، اما یک گرم برای چند بار غذا کافی است. زیاد نریز، وگرنه غذا تلخ می‌شود!",
+       "fa": "بردیا: گران است، اما یک گرم برای چند بار غذا کافی است. زیاد نریز، وگرنه غذا تلخ می‌شود.",
        "tr": "",
-       "de": "Er ist teuer, aber ein Gramm reicht für mehrere Gerichte. Nimm nicht zu viel, sonst wird das Essen bitter!"
+       "de": "Er ist teuer, aber ein Gramm reicht für mehrere Gerichte. Nimm nicht zu viel, sonst wird das Essen bitter."
+      },
+      {
+       "fa": "یوناس: چطور باید از آن استفاده کرد؟ همین‌طور در غذا بریزم؟",
+       "tr": "",
+       "de": "Wie verwendet man ihn? Gebe ich ihn einfach so ins Essen?"
+      },
+      {
+       "fa": "بردیا: نه. چند رشته را با کمی شکر در هاون بکوب و بعد در کمی آب داغ دم کن. بعضی‌ها به جای آب داغ یک تکه یخ رویش می‌گذارند تا رنگش آرام‌آرام آزاد شود.",
+       "tr": "",
+       "de": "Nein. Zerstoß ein paar Fäden mit etwas Zucker im Mörser und lass sie dann in etwas heißem Wasser ziehen. Manche legen statt heißem Wasser ein Stück Eis darauf, damit sich die Farbe langsam löst."
+      },
+      {
+       "fa": "یوناس: و چطور نگهش دارم که خراب نشود؟",
+       "tr": "",
+       "de": "Und wie bewahre ich ihn auf, damit er nicht verdirbt?"
+      },
+      {
+       "fa": "بردیا: در ظرف دربسته، دور از نور و رطوبت. نور خورشید رنگ و عطرش را از بین می‌برد.",
+       "tr": "",
+       "de": "In einem verschlossenen Gefäß, geschützt vor Licht und Feuchtigkeit. Sonnenlicht zerstört Farbe und Duft."
       },
       {
        "fa": "یوناس: پس پسته هم می‌خرم. به نظرت پسته‌ی ایرانی بهتر است یا آمریکایی؟",
@@ -733,9 +1348,19 @@
        "de": "Dann kaufe ich auch Pistazien. Sind deiner Meinung nach iranische oder amerikanische besser?"
       },
       {
-       "fa": "بردیا: به نظر من ایرانی خوشمزه‌تر است، ولی خب، من بی‌طرف نیستم!",
+       "fa": "بردیا: به نظر من ایرانی خوشمزه‌تر است، ولی خب، نظر من بی‌طرفانه نیست.",
        "tr": "",
-       "de": "Ich finde die iranischen leckerer – aber na ja, ich bin nicht unparteiisch!"
+       "de": "Ich finde die iranischen leckerer – aber na ja, meine Meinung ist nicht unparteiisch."
+      },
+      {
+       "fa": "یوناس: می‌توانم زعفران و پسته را بی‌دردسر در چمدان به آلمان ببرم؟",
+       "tr": "",
+       "de": "Kann ich Safran und Pistazien ohne Probleme im Koffer nach Deutschland mitnehmen?"
+      },
+      {
+       "fa": "بردیا: برای مصرف شخصی معمولا مشکلی نیست، اما بهتر است پیش از سفر مقررات گمرک را بررسی کنی.",
+       "tr": "",
+       "de": "Für den Eigenbedarf ist das meist kein Problem, aber du solltest vor der Reise die Zollbestimmungen prüfen."
       }
      ]
     },
@@ -743,15 +1368,6 @@
      "typ": "wahl",
      "titel": "Hast du es verstanden?",
      "fragen": [
-      {
-       "frage": "Was möchte Jonas kaufen?",
-       "optionen": [
-        "Safran für seine Mutter",
-        "Pistazien für Leyla",
-        "Reis für Bardia"
-       ],
-       "richtig": 0
-      },
       {
        "frage": "Woran erkennt man echten Safran?",
        "optionen": [
@@ -762,11 +1378,345 @@
        "richtig": 0
       },
       {
-       "frage": "Was sagt Bardia über Pistazien?",
+       "frage": "Wie bereitet man Safran laut Bardia zu?",
        "optionen": [
-        "Er findet iranische leckerer, ist aber nicht unparteiisch.",
-        "Amerikanische seien besser.",
-        "Er mag keine Pistazien."
+        "mit Zucker im Mörser zerstoßen und in heißem Wasser ziehen lassen",
+        "ganze Fäden direkt ins kochende Öl geben",
+        "in kaltem Wasser kochen"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Wie soll Jonas den Safran aufbewahren?",
+       "optionen": [
+        "verschlossen, vor Licht und Feuchtigkeit geschützt",
+        "offen am Fenster",
+        "im Gefrierfach in einer Papiertüte"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d3",
+   "titel": "Dialog: Im Nussladen",
+   "vorschau": "Im Nussladen",
+   "karten": [
+    {
+     "typ": "info",
+     "titel": "Worum geht es?",
+     "text": "<p>Jonas kauft im Tadschrisch-Basar in Teheran Pistazien als Geschenk und lässt sich von einem Verkäufer beraten.</p>"
+    },
+    {
+     "typ": "ordnen",
+     "titel": "Bring den Dialog in die richtige Reihenfolge",
+     "frage": "Lies die Sätze und tippe sie der Reihe nach an. Achte auf Fragen und Antworten!",
+     "items": [
+      {
+       "fa": "فروشنده: بفرمایید، چه می‌خواستید؟",
+       "tr": "",
+       "de": "Bitte schön, was darf es sein?"
+      },
+      {
+       "fa": "یوناس: سلام. پسته می‌خواهم، ولی راستش انواعش را نمی‌شناسم. فرقشان چیست؟",
+       "tr": "",
+       "de": "Guten Tag. Ich möchte Pistazien, aber ehrlich gesagt kenne ich die Sorten nicht. Was ist der Unterschied?"
+      },
+      {
+       "fa": "فروشنده: این دانه‌درشت‌ها کله‌قوچی است، این کشیده‌ها اکبری و این گردها فندقی. فندقی معمولا ارزان‌تر است.",
+       "tr": "",
+       "de": "Diese großen Kerne sind Kalle-Ghutschi, diese länglichen Akbari und diese runden Fandoghi. Fandoghi ist meist billiger."
+      },
+      {
+       "fa": "یوناس: برای هدیه کدام را پیشنهاد می‌کنید؟",
+       "tr": "",
+       "de": "Welche empfehlen Sie als Geschenk?"
+      },
+      {
+       "fa": "فروشنده: برای هدیه بیشتر اکبری یا کله‌قوچی می‌برند؛ دانه‌هایشان درشت و خوش‌ظاهر است. فندقی را بیشتر برای مصرف روزانه می‌خرند.",
+       "tr": "",
+       "de": "Als Geschenk nimmt man eher Akbari oder Kalle-Ghutschi; die Kerne sind groß und sehen gut aus. Fandoghi kauft man eher für den täglichen Bedarf."
+      },
+      {
+       "fa": "یوناس: همه‌ی این‌ها خندان‌اند؟",
+       "tr": "",
+       "de": "Sind die alle aufgesprungen?"
+      },
+      {
+       "fa": "فروشنده: بله. پسته‌ی دهن‌بست را جدا می‌کنند و یا ارزان‌تر می‌فروشند یا در کارخانه‌ها مغزش را درمی‌آورند.",
+       "tr": "",
+       "de": "Ja. Geschlossene Pistazien werden aussortiert und entweder billiger verkauft oder in Fabriken geschält."
+      },
+      {
+       "fa": "یوناس: شور است یا بی‌نمک؟",
+       "tr": "",
+       "de": "Sind sie gesalzen oder ungesalzen?"
+      },
+      {
+       "fa": "فروشنده: هر دو را داریم. این یکی با آبلیمو و نمک بوداده شده است؛ بیشتر مشتری‌ها همین را دوست دارند.",
+       "tr": "",
+       "de": "Wir haben beides. Diese hier sind mit Zitronensaft und Salz geröstet; die meisten Kunden mögen genau die."
+      },
+      {
+       "fa": "یوناس: قیمت‌ها نسبت به پارسال خیلی تغییر کرده است؟",
+       "tr": "",
+       "de": "Haben sich die Preise im Vergleich zum Vorjahr stark verändert?"
+      },
+      {
+       "fa": "فروشنده: متأسفانه بله، تقریبا دو برابر شده است. خشکسالی محصول را کم کرده و هزینه‌ها هم بالا رفته است.",
+       "tr": "",
+       "de": "Leider ja, sie haben sich ungefähr verdoppelt. Die Dürre hat die Ernte verringert, und auch die Kosten sind gestiegen."
+      },
+      {
+       "fa": "یوناس: پس لطفا نیم کیلو اکبری بدهید. برای سفر بسته‌بندی‌اش می‌کنید؟",
+       "tr": "",
+       "de": "Dann geben Sie mir bitte ein halbes Kilo Akbari. Verpacken Sie sie für die Reise?"
+      },
+      {
+       "fa": "فروشنده: حتما. در بسته‌ی دربسته و بدون هوا می‌گذارم تا تازه بماند و رطوبت به آن نرسد.",
+       "tr": "",
+       "de": "Natürlich. Ich packe sie luftdicht ein, damit sie frisch bleiben und keine Feuchtigkeit hineinkommt."
+      },
+      {
+       "fa": "یوناس: خیلی ممنون. لطفا بفرمایید، این هم پولش.",
+       "tr": "",
+       "de": "Vielen Dank. Bitte schön, hier ist das Geld."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Der ganze Dialog",
+     "text": "Hör ihn dir an und lies mit. Tippe eine Zeile an für Umschrift und Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "فروشنده: بفرمایید، چه می‌خواستید؟",
+       "tr": "",
+       "de": "Bitte schön, was darf es sein?"
+      },
+      {
+       "fa": "یوناس: سلام. پسته می‌خواهم، ولی راستش انواعش را نمی‌شناسم. فرقشان چیست؟",
+       "tr": "",
+       "de": "Guten Tag. Ich möchte Pistazien, aber ehrlich gesagt kenne ich die Sorten nicht. Was ist der Unterschied?"
+      },
+      {
+       "fa": "فروشنده: این دانه‌درشت‌ها کله‌قوچی است، این کشیده‌ها اکبری و این گردها فندقی. فندقی معمولا ارزان‌تر است.",
+       "tr": "",
+       "de": "Diese großen Kerne sind Kalle-Ghutschi, diese länglichen Akbari und diese runden Fandoghi. Fandoghi ist meist billiger."
+      },
+      {
+       "fa": "یوناس: برای هدیه کدام را پیشنهاد می‌کنید؟",
+       "tr": "",
+       "de": "Welche empfehlen Sie als Geschenk?"
+      },
+      {
+       "fa": "فروشنده: برای هدیه بیشتر اکبری یا کله‌قوچی می‌برند؛ دانه‌هایشان درشت و خوش‌ظاهر است. فندقی را بیشتر برای مصرف روزانه می‌خرند.",
+       "tr": "",
+       "de": "Als Geschenk nimmt man eher Akbari oder Kalle-Ghutschi; die Kerne sind groß und sehen gut aus. Fandoghi kauft man eher für den täglichen Bedarf."
+      },
+      {
+       "fa": "یوناس: همه‌ی این‌ها خندان‌اند؟",
+       "tr": "",
+       "de": "Sind die alle aufgesprungen?"
+      },
+      {
+       "fa": "فروشنده: بله. پسته‌ی دهن‌بست را جدا می‌کنند و یا ارزان‌تر می‌فروشند یا در کارخانه‌ها مغزش را درمی‌آورند.",
+       "tr": "",
+       "de": "Ja. Geschlossene Pistazien werden aussortiert und entweder billiger verkauft oder in Fabriken geschält."
+      },
+      {
+       "fa": "یوناس: شور است یا بی‌نمک؟",
+       "tr": "",
+       "de": "Sind sie gesalzen oder ungesalzen?"
+      },
+      {
+       "fa": "فروشنده: هر دو را داریم. این یکی با آبلیمو و نمک بوداده شده است؛ بیشتر مشتری‌ها همین را دوست دارند.",
+       "tr": "",
+       "de": "Wir haben beides. Diese hier sind mit Zitronensaft und Salz geröstet; die meisten Kunden mögen genau die."
+      },
+      {
+       "fa": "یوناس: قیمت‌ها نسبت به پارسال خیلی تغییر کرده است؟",
+       "tr": "",
+       "de": "Haben sich die Preise im Vergleich zum Vorjahr stark verändert?"
+      },
+      {
+       "fa": "فروشنده: متأسفانه بله، تقریبا دو برابر شده است. خشکسالی محصول را کم کرده و هزینه‌ها هم بالا رفته است.",
+       "tr": "",
+       "de": "Leider ja, sie haben sich ungefähr verdoppelt. Die Dürre hat die Ernte verringert, und auch die Kosten sind gestiegen."
+      },
+      {
+       "fa": "یوناس: پس لطفا نیم کیلو اکبری بدهید. برای سفر بسته‌بندی‌اش می‌کنید؟",
+       "tr": "",
+       "de": "Dann geben Sie mir bitte ein halbes Kilo Akbari. Verpacken Sie sie für die Reise?"
+      },
+      {
+       "fa": "فروشنده: حتما. در بسته‌ی دربسته و بدون هوا می‌گذارم تا تازه بماند و رطوبت به آن نرسد.",
+       "tr": "",
+       "de": "Natürlich. Ich packe sie luftdicht ein, damit sie frisch bleiben und keine Feuchtigkeit hineinkommt."
+      },
+      {
+       "fa": "یوناس: خیلی ممنون. لطفا بفرمایید، این هم پولش.",
+       "tr": "",
+       "de": "Vielen Dank. Bitte schön, hier ist das Geld."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Hast du es verstanden?",
+     "fragen": [
+      {
+       "frage": "Welche Sorte ist meist billiger?",
+       "optionen": [
+        "Fandoghi",
+        "Kalle-Ghutschi",
+        "Akbari"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was geschieht mit geschlossenen Pistazien?",
+       "optionen": [
+        "Sie werden aussortiert und billiger verkauft oder in Fabriken geschält.",
+        "Sie werden weggeworfen.",
+        "Sie sind die teuersten."
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Warum sind die Preise laut Verkäufer gestiegen?",
+       "optionen": [
+        "wegen der Dürre und höherer Kosten",
+        "weil es zu viele Pistazien gibt",
+        "weil der Laden umgebaut wurde"
+       ],
+       "richtig": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "a",
+   "titel": "Gut zu wissen",
+   "vorschau": "💡",
+   "karten": [
+    {
+     "typ": "text",
+     "titel": "Ein Wort auf Wanderschaft",
+     "text": "Kurzer Infotext – tippe eine Zeile an für die Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "واژه‌ی «زعفران» از زبان عربی وارد فارسی شده است.",
+       "tr": "",
+       "de": "Das Wort ‹Safran› ist aus dem Arabischen ins Persische gekommen."
+      },
+      {
+       "fa": "همین واژه از راه عربی و لاتین به بسیاری از زبان‌های اروپایی رسیده و نام این ادویه در آلمانی و انگلیسی نیز از آن گرفته شده است.",
+       "tr": "",
+       "de": "Über das Arabische und Lateinische gelangte dasselbe Wort in viele europäische Sprachen, und auch der deutsche und englische Name des Gewürzes stammt davon."
+      },
+      {
+       "fa": "در متن‌های کهن فارسی گاهی واژه‌ی دیگری، یعنی «کرکم»، هم برای زعفران به کار رفته است.",
+       "tr": "",
+       "de": "In alten persischen Texten wird für Safran manchmal auch ein anderes Wort verwendet, nämlich ‹Korkom›."
+      },
+      {
+       "fa": "یونانیان باستان این گیاه را با نامی می‌شناختند که امروز در نام علمی آن، یعنی «کروکوس»، باقی مانده است.",
+       "tr": "",
+       "de": "Die alten Griechen kannten die Pflanze unter einem Namen, der heute in ihrem wissenschaftlichen Namen ‹Crocus› weiterlebt."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Safran, Qanat und Welterbe",
+     "text": "Kurzer Infotext – tippe eine Zeile an für die Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "قنات تونلی زیرزمینی است که آب را با شیبی ملایم از زمین‌های بالادست به دشت می‌رساند.",
+       "tr": "",
+       "de": "Ein Qanat ist ein unterirdischer Tunnel, der Wasser mit sanftem Gefälle aus höher gelegenem Gelände in die Ebene leitet."
+      },
+      {
+       "fa": "قنات قصبه‌ی گناباد از قدیمی‌ترین و عمیق‌ترین قنات‌های ایران است و چاه اصلی آن بیش از سیصد متر عمق دارد.",
+       "tr": "",
+       "de": "Der Qanat von Ghasabeh in Gonabad gehört zu den ältesten und tiefsten Qanaten Irans; sein Hauptschacht ist über dreihundert Meter tief."
+      },
+      {
+       "fa": "در سال ۲۰۱۶ یازده قنات ایران، از جمله قنات قصبه، با عنوان «قنات ایرانی» در فهرست میراث جهانی یونسکو ثبت شدند.",
+       "tr": "",
+       "de": "2016 wurden elf iranische Qanate, darunter der Qanat von Ghasabeh, unter dem Titel ‹Der persische Qanat› in die UNESCO-Welterbeliste aufgenommen."
+      },
+      {
+       "fa": "دو سال بعد، سازمان خواربار و کشاورزی ملل متحد (فائو) نظام کشت زعفران با آب قنات در گناباد را میراث کشاورزی مهم جهانی شناخت.",
+       "tr": "",
+       "de": "Zwei Jahre später erkannte die Ernährungs- und Landwirtschaftsorganisation der Vereinten Nationen (FAO) den Safrananbau mit Qanatwasser in Gonabad als bedeutendes weltweites Agrarerbe an."
+      },
+      {
+       "fa": "این دو ثبت نشان می‌دهد که دانش سنتی آب و کشاورزی در ایران تا چه اندازه ارزشمند است.",
+       "tr": "",
+       "de": "Diese beiden Eintragungen zeigen, wie wertvoll das traditionelle Wissen über Wasser und Landwirtschaft in Iran ist."
+      }
+     ]
+    },
+    {
+     "typ": "text",
+     "titel": "Ein Jahr viel, ein Jahr wenig",
+     "text": "Kurzer Infotext – tippe eine Zeile an für die Übersetzung.",
+     "zeilen": [
+      {
+       "fa": "درخت پسته پدیده‌ای به نام «سال‌آوری» دارد: پس از سالی پربار، معمولاً سالی کم‌بار می‌آید.",
+       "tr": "",
+       "de": "Der Pistazienbaum kennt die sogenannte Alternanz: Auf ein ertragreiches Jahr folgt meist ein ertragsarmes."
+      },
+      {
+       "fa": "به همین دلیل، آمار تولید پسته از سالی به سال دیگر نوسان زیادی دارد.",
+       "tr": "",
+       "de": "Deshalb schwanken die Produktionszahlen für Pistazien von Jahr zu Jahr stark."
+      },
+      {
+       "fa": "باغداران معمولاً در میان چند درخت ماده یک درخت نر می‌کارند تا گرده‌افشانی به خوبی انجام شود.",
+       "tr": "",
+       "de": "Die Gärtner pflanzen meist zwischen mehrere weibliche Bäume einen männlichen, damit die Bestäubung gut gelingt."
+      },
+      {
+       "fa": "درخت پسته عمری طولانی دارد و گفته می‌شود در برخی باغ‌های کرمان درختانی بیش از صد سال سن دارند.",
+       "tr": "",
+       "de": "Der Pistazienbaum wird sehr alt; in manchen Gärten Kermans sollen Bäume stehen, die über hundert Jahre alt sind."
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Fragen zu den Infotexten",
+     "fragen": [
+      {
+       "frage": "Über welche Sprache kam das Wort „Safran“ in viele europäische Sprachen?",
+       "optionen": [
+        "über das Arabische",
+        "über das Türkische",
+        "über das Russische"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was wurde 2016 in die UNESCO-Welterbeliste aufgenommen?",
+       "optionen": [
+        "elf iranische Qanate",
+        "alle Safranfelder Chorasans",
+        "die Altstadt von Gonabad"
+       ],
+       "richtig": 0
+      },
+      {
+       "frage": "Was bedeutet <span class='fa'>سال‌آوری</span>?",
+       "optionen": [
+        "Auf ein ertragreiches Jahr folgt meist ein ertragsarmes.",
+        "Die Bäume tragen nur alle zehn Jahre.",
+        "Man erntet zweimal im Jahr."
        ],
        "richtig": 0
       }
@@ -831,6 +1781,16 @@
      "links": "de",
      "paare": [
       {
+       "fa": "قابل توجه است که …",
+       "tr": "",
+       "de": "Bemerkenswert ist, dass …"
+      },
+      {
+       "fa": "در مجموع می‌توان گفت …",
+       "tr": "",
+       "de": "Insgesamt lässt sich sagen …"
+      },
+      {
        "fa": "بیشترین سهم مربوط به … است.",
        "tr": "",
        "de": "Den größten Anteil hat …"
@@ -849,16 +1809,6 @@
        "fa": "… نسبت به سال قبل …",
        "tr": "",
        "de": "… im Vergleich zum Vorjahr …"
-      },
-      {
-       "fa": "این رقم به … رسید.",
-       "tr": "",
-       "de": "Diese Zahl erreichte …"
-      },
-      {
-       "fa": "قابل توجه است که …",
-       "tr": "",
-       "de": "Bemerkenswert ist, dass …"
       }
      ],
      "titel": "Was bedeutet die Wendung?"
@@ -870,39 +1820,9 @@
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
-        "Wie wir im Diagramm sehen …",
         "… im Vergleich zum Vorjahr …",
-        "Diese Zahl erreichte …"
-       ],
-       "richtig": 0,
-       "fa": "همان‌طور که در نمودار می‌بینیم …"
-      },
-      {
-       "frage": "Was bedeutet der Satz?",
-       "optionen": [
-        "Den größten Anteil hat …",
         "Diese Zahl erreichte …",
-        "Bemerkenswert ist, dass …"
-       ],
-       "richtig": 0,
-       "fa": "بیشترین سهم مربوط به … است."
-      },
-      {
-       "frage": "Was bedeutet der Satz?",
-       "optionen": [
-        "Laut Statistik …",
-        "Bemerkenswert ist, dass …",
         "Der Trend bei … ist steigend."
-       ],
-       "richtig": 0,
-       "fa": "طبق آمار …"
-      },
-      {
-       "frage": "Was bedeutet der Satz?",
-       "optionen": [
-        "… im Vergleich zum Vorjahr …",
-        "Laut Statistik …",
-        "Wie wir im Diagramm sehen …"
        ],
        "richtig": 0,
        "fa": "… نسبت به سال قبل …"
@@ -910,9 +1830,39 @@
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
-        "Der Trend bei … ist steigend.",
         "Wie wir im Diagramm sehen …",
-        "Bemerkenswert ist, dass …"
+        "Laut Statistik …",
+        "… im Vergleich zum Vorjahr …"
+       ],
+       "richtig": 0,
+       "fa": "همان‌طور که در نمودار می‌بینیم …"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Bemerkenswert ist, dass …",
+        "Wie wir im Diagramm sehen …",
+        "Diese Zahl erreichte …"
+       ],
+       "richtig": 0,
+       "fa": "قابل توجه است که …"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Diese Zahl erreichte …",
+        "… im Vergleich zum Vorjahr …",
+        "Den größten Anteil hat …"
+       ],
+       "richtig": 0,
+       "fa": "این رقم به … رسید."
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Der Trend bei … ist steigend.",
+        "Laut Statistik …",
+        "… im Vergleich zum Vorjahr …"
        ],
        "richtig": 0,
        "fa": "روند … رو به افزایش است."
@@ -920,12 +1870,12 @@
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
-        "Diese Zahl erreichte …",
+        "Insgesamt lässt sich sagen …",
         "Laut Statistik …",
-        "Den größten Anteil hat …"
+        "Bemerkenswert ist, dass …"
        ],
        "richtig": 0,
-       "fa": "این رقم به … رسید."
+       "fa": "در مجموع می‌توان گفت …"
       }
      ]
     },

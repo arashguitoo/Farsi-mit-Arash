@@ -255,6 +255,54 @@
        "a": "zeitgenössisch"
       },
       {
+       "fa": "سرمشق",
+       "a": "Vorlage, Vorbild"
+      },
+      {
+       "fa": "قلمدان",
+       "a": "Federkasten"
+      },
+      {
+       "fa": "زیردستی",
+       "a": "Schreibunterlage"
+      },
+      {
+       "fa": "مداد",
+       "a": "Bleistift, Stift"
+      },
+      {
+       "fa": "جلسه",
+       "a": "Sitzung, Unterrichtsstunde"
+      },
+      {
+       "fa": "صبر",
+       "a": "Geduld"
+      },
+      {
+       "fa": "دقت",
+       "a": "Genauigkeit, Sorgfalt"
+      },
+      {
+       "fa": "پیشرفت",
+       "a": "Fortschritt"
+      },
+      {
+       "fa": "دست‌خط",
+       "a": "Handschrift"
+      },
+      {
+       "fa": "خوش‌خط",
+       "a": "mit schöner Handschrift"
+      },
+      {
+       "fa": "کلاس مقدماتی",
+       "a": "Anfängerkurs"
+      },
+      {
+       "fa": "انجمن",
+       "a": "Verband, Verein"
+      },
+      {
        "fa": "تمرین کردن",
        "a": "üben"
       },
@@ -285,40 +333,40 @@
      "links": "emoji",
      "paare": [
       {
+       "fa": "تایپوگرافی",
+       "tr": "",
+       "de": "Typografie",
+       "emoji": "🔠"
+      },
+      {
+       "fa": "قط",
+       "tr": "",
+       "de": "schräger Federschnitt",
+       "emoji": "✂️"
+      },
+      {
+       "fa": "هنرمند",
+       "tr": "",
+       "de": "Künstler/in",
+       "emoji": "👩‍🎨"
+      },
+      {
+       "fa": "دست‌خط",
+       "tr": "",
+       "de": "Handschrift",
+       "emoji": "🤚"
+      },
+      {
        "fa": "خوشنویس",
        "tr": "",
        "de": "Kalligraf/in",
        "emoji": "🧑‍🎨"
       },
       {
-       "fa": "شکسته‌نستعلیق",
-       "tr": "",
-       "de": "Schekaste-Nastaliq (gebrochenes Nastaliq)",
-       "emoji": "🌊"
-      },
-      {
-       "fa": "تذهیب",
-       "tr": "",
-       "de": "Buchmalerei mit Gold",
-       "emoji": "✨"
-      },
-      {
        "fa": "شیوه",
        "tr": "",
        "de": "Stil, Art und Weise",
        "emoji": "🎭"
-      },
-      {
-       "fa": "طراحی گرافیک",
-       "tr": "",
-       "de": "Grafikdesign",
-       "emoji": "🖌️"
-      },
-      {
-       "fa": "کرسی",
-       "tr": "",
-       "de": "Grundlinie der Schrift",
-       "emoji": "📏"
       }
      ],
      "titel": "Memory"
@@ -328,40 +376,40 @@
      "links": "de",
      "paare": [
       {
-       "fa": "نسخ",
+       "fa": "قلم نی",
        "tr": "",
-       "de": "Naskh-Schrift",
-       "emoji": "📘"
+       "de": "Rohrfeder",
+       "emoji": "🎋"
       },
       {
-       "fa": "شیوه",
+       "fa": "دقت",
        "tr": "",
-       "de": "Stil, Art und Weise",
-       "emoji": "🎭"
+       "de": "Genauigkeit, Sorgfalt",
+       "emoji": "🔍"
       },
       {
-       "fa": "قلمتراش",
+       "fa": "فضای خالی",
        "tr": "",
-       "de": "Federmesser",
-       "emoji": "🔪"
+       "de": "Leerraum, Weißraum",
+       "emoji": "⬜"
       },
       {
-       "fa": "خلاقیت",
+       "fa": "پیشرفت",
        "tr": "",
-       "de": "Kreativität",
-       "emoji": "💡"
+       "de": "Fortschritt",
+       "emoji": "📈"
       },
       {
-       "fa": "نمایشگاه",
+       "fa": "قطعه",
        "tr": "",
-       "de": "Ausstellung",
-       "emoji": "🏛️"
+       "de": "Kalligrafie-Blatt",
+       "emoji": "🖼️"
       },
       {
-       "fa": "زیبایی‌شناسی",
+       "fa": "ریتم",
        "tr": "",
-       "de": "Ästhetik",
-       "emoji": "🌸"
+       "de": "Rhythmus",
+       "emoji": "🥁"
       }
      ],
      "titel": "Memory: Wort & Bedeutung"
@@ -381,8 +429,8 @@
        "frage": "<span class='fa'>او بیست سال است که ___ می‌کند و قطعه‌هایش در موزه است.</span><br><span class='mini'>Er/Sie betreibt seit zwanzig Jahren Kalligrafie, und seine/ihre Blätter hängen im Museum.</span>",
        "optionen": [
         "خوشنویسی",
-        "طراحی گرافیک",
-        "اثر هنری"
+        "زیبایی‌شناسی",
+        "قلمدان"
        ],
        "richtig": 0,
        "optFa": true,
@@ -394,7 +442,7 @@
        "optionen": [
         "سیاه‌مشق",
         "شکسته‌نستعلیق",
-        "ترکیب‌بندی"
+        "تایپوگرافی"
        ],
        "richtig": 0,
        "optFa": true,
@@ -405,8 +453,8 @@
        "frage": "<span class='fa'>حروف نستعلیق روی ___ بالا و پایین می‌روند.</span><br><span class='mini'>Die Nastaliq-Buchstaben steigen auf der Grundlinie auf und ab.</span>",
        "optionen": [
         "کرسی",
-        "قلمتراش",
-        "خوشنویسی"
+        "مشق",
+        "سیاه‌مشق"
        ],
        "richtig": 0,
        "optFa": true,
@@ -417,26 +465,20 @@
        "frage": "<span class='fa'>___ را با قلمتراش می‌تراشند.</span><br><span class='mini'>Die Rohrfeder schneidet man mit dem Federmesser zu.</span>",
        "optionen": [
         "قلم نی",
-        "فضای خالی",
-        "کاغذ آهارمهره"
+        "کرسی",
+        "مداد"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
        "erkl": "<span class='fa'>قلم نی را با قلمتراش می‌تراشند.</span>"
-      }
-     ]
-    },
-    {
-     "typ": "wahl",
-     "titel": "Welches Wort passt?",
-     "fragen": [
+      },
       {
        "frage": "<span class='fa'>در دوات چند رشته ابریشم به نام ___ می‌گذارند.</span><br><span class='mini'>Ins Tintenfass legt man einige Seidenfäden, die ‹Liqe› heißen.</span>",
        "optionen": [
         "لیقه",
-        "قلمتراش",
-        "کرسی"
+        "مداد",
+        "دقت"
        ],
        "richtig": 0,
        "optFa": true,
@@ -447,20 +489,26 @@
        "frage": "<span class='fa'>___ سنتی را از دوده و صمغ درست می‌کنند.</span><br><span class='mini'>Traditionelle Tinte stellt man aus Ruß und Gummi her.</span>",
        "optionen": [
         "مرکب",
-        "سیاه‌مشق",
-        "کرسی"
+        "پیشرفت",
+        "قلمدان"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
        "erkl": "<span class='fa'>مرکب سنتی را از دوده و صمغ درست می‌کنند.</span>"
-      },
+      }
+     ]
+    },
+    {
+     "typ": "wahl",
+     "titel": "Welches Wort passt?",
+     "fragen": [
       {
        "frage": "<span class='fa'>طراحان امروز برای نستعلیق یک ___ خوب ساخته‌اند.</span><br><span class='mini'>Designer haben heute einen guten Font für Nastaliq entwickelt.</span>",
        "optionen": [
         "قلم رایانه‌ای",
-        "هنرمند",
-        "لیقه"
+        "شیوه",
+        "سطر"
        ],
        "richtig": 0,
        "optFa": true,
@@ -471,13 +519,61 @@
        "frage": "<span class='fa'>در ___ حروف با رنگ و شکل‌های انتزاعی ترکیب می‌شوند.</span><br><span class='mini'>In der Kalligrafie-Malerei werden Buchstaben mit Farbe und abstrakten Formen verbunden.</span>",
        "optionen": [
         "نقاشیخط",
-        "تذهیب",
-        "قط"
+        "نمایشگاه",
+        "شاگرد"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false,
        "erkl": "<span class='fa'>در نقاشیخط حروف با رنگ و شکل‌های انتزاعی ترکیب می‌شوند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>استاد برای هر هنرجو یک ___ می‌نوشت تا در خانه از روی آن مشق کند.</span><br><span class='mini'>Die Lehrerin schrieb für alle eine Vorlage, nach der sie zu Hause üben sollten.</span>",
+       "optionen": [
+        "سرمشق",
+        "شکسته‌نستعلیق",
+        "قلم نی"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>استاد برای هر هنرجو یک سرمشق می‌نوشت تا در خانه از روی آن مشق کند.</span>"
+      },
+      {
+       "frage": "<span class='fa'>همه‌ی قلم‌ها و قلمتراش را در یک ___ کوچک جا دادم.</span><br><span class='mini'>Ich habe alle Federn und das Federmesser in einem kleinen Federkasten untergebracht.</span>",
+       "optionen": [
+        "قلمدان",
+        "قلم نی",
+        "اثر هنری"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>همه‌ی قلم‌ها و قلمتراش را در یک قلمدان کوچک جا دادم.</span>"
+      },
+      {
+       "frage": "<span class='fa'>خوشنویسی پیش از هر چیز تمرین ___ است.</span><br><span class='mini'>Kalligrafie ist vor allem eine Übung in Geduld.</span>",
+       "optionen": [
+        "صبر",
+        "مداد",
+        "سیاه‌مشق"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>خوشنویسی پیش از هر چیز تمرین صبر است.</span>"
+      },
+      {
+       "frage": "<span class='fa'>بعد از دو ماه تمرین، کم‌کم ___ را در صفحه‌هایم دیدم.</span><br><span class='mini'>Nach zwei Monaten Übung sah ich allmählich Fortschritte auf meinen Blättern.</span>",
+       "optionen": [
+        "پیشرفت",
+        "فضای خالی",
+        "قلمتراش"
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false,
+       "erkl": "<span class='fa'>بعد از دو ماه تمرین، کم‌کم پیشرفت را در صفحه‌هایم دیدم.</span>"
       }
      ]
     }
@@ -494,65 +590,65 @@
      "trenner": " ",
      "woerter": [
       {
-       "fa": "فقط یک «ب»؟ ببخشید، نمی‌توانم نخندم! استادت چه گفت؟",
+       "fa": "هنرمندانی مانند محمد احصایی و رضا مافی از چهره‌های شناخته‌شده‌ی این شیوه‌اند.",
        "tr": "",
-       "de": "Nur ein ‹B›? Entschuldige, ich muss lachen! Was hat dein Meister gesagt?",
+       "de": "Künstler wie Mohammad Ehsai und Reza Mafi gehören zu den bekannten Vertretern dieses Stils.",
        "teile": [
-        "فقط",
-        "یک",
-        "«ب»",
-        "ببخشید",
-        "نمی‌توانم",
-        "نخندم",
-        "استادت",
-        "چه",
-        "گفت"
-       ],
-       "extra": [
-        "یعنی"
-       ]
-      },
-      {
-       "fa": "احتمالاً از دوره‌ی قاجار است. ببینید حروف کشیده چطور روی سطرها رقصان‌اند.",
-       "tr": "",
-       "de": "Wahrscheinlich aus der Kadscharenzeit. Sehen Sie, wie die langgezogenen Buchstaben auf den Zeilen tanzen.",
-       "teile": [
-        "احتمالاً",
-        "از",
-        "دوره‌ی",
-        "قاجار",
-        "است",
-        "ببینید",
-        "حروف",
-        "کشیده",
-        "چطور",
-        "روی",
-        "سطرها",
-        "رقصان‌اند"
-       ],
-       "extra": [
-        "شده؟"
-       ]
-      },
-      {
-       "fa": "امروز آثار این هنرمندان در نمایشگاه‌ها و حراج‌های بین‌المللی دیده می‌شود.",
-       "tr": "",
-       "de": "Heute sind die Werke dieser Künstler in internationalen Ausstellungen und Auktionen zu sehen.",
-       "teile": [
-        "امروز",
-        "آثار",
-        "این",
-        "هنرمندان",
-        "در",
-        "نمایشگاه‌ها",
+        "هنرمندانی",
+        "مانند",
+        "محمد",
+        "احصایی",
         "و",
-        "حراج‌های",
-        "بین‌المللی",
-        "دیده",
-        "می‌شود"
+        "رضا",
+        "مافی",
+        "از",
+        "چهره‌های",
+        "شناخته‌شده‌ی",
+        "این",
+        "شیوه‌اند"
        ],
        "extra": [
-        "ببخشید،"
+        "را"
+       ]
+      },
+      {
+       "fa": "پس هدفش چیست؟ برای من خوشنویسی یعنی زیبا نوشتن یک شعر.",
+       "tr": "",
+       "de": "Was ist dann der Zweck? Für mich bedeutet Kalligrafie, ein Gedicht schön zu schreiben.",
+       "teile": [
+        "پس",
+        "هدفش",
+        "چیست",
+        "برای",
+        "من",
+        "خوشنویسی",
+        "یعنی",
+        "زیبا",
+        "نوشتن",
+        "یک",
+        "شعر"
+       ],
+       "extra": [
+        "چطور"
+       ]
+      },
+      {
+       "fa": "جالب است؛ صد سال پیش هم نگران آب بودند.",
+       "tr": "",
+       "de": "Interessant – auch vor hundert Jahren hat man sich um das Wasser gesorgt.",
+       "teile": [
+        "جالب",
+        "است؛",
+        "صد",
+        "سال",
+        "پیش",
+        "هم",
+        "نگران",
+        "آب",
+        "بودند"
+       ],
+       "extra": [
+        "این‌قدر"
        ]
       },
       {
@@ -574,43 +670,45 @@
         "می‌آراستند"
        ],
        "extra": [
-        "چه"
+        "فقط"
        ]
       },
       {
-       "fa": "جالب است. این قطعه قدیمی است؟",
+       "fa": "احتمالاً از دوره‌ی قاجار است. ببینید حروف کشیده چطور روی سطرها رقصان‌اند.",
        "tr": "",
-       "de": "Interessant. Ist dieses Blatt alt?",
+       "de": "Wahrscheinlich aus der Kadscharenzeit. Sehen Sie, wie die langgezogenen Buchstaben auf den Zeilen tanzen.",
        "teile": [
-        "جالب",
+        "احتمالاً",
+        "از",
+        "دوره‌ی",
+        "قاجار",
         "است",
-        "این",
-        "قطعه",
-        "قدیمی",
-        "است"
+        "ببینید",
+        "حروف",
+        "کشیده",
+        "چطور",
+        "روی",
+        "سطرها",
+        "رقصان‌اند"
        ],
-       "extra": [
-        "دیده"
-       ]
+       "extra": []
       },
       {
-       "fa": "یوناس، چرا این‌قدر خسته‌ای؟ دستت چه شده؟ همه‌اش سیاه است!",
+       "fa": "استادم هم همین را گفت: روزی بیست دقیقه.",
        "tr": "",
-       "de": "Jonas, warum bist du so müde? Was ist mit deiner Hand? Sie ist ganz schwarz!",
+       "de": "Mein Meister hat dasselbe gesagt: zwanzig Minuten am Tag.",
        "teile": [
-        "یوناس",
-        "چرا",
-        "این‌قدر",
-        "خسته‌ای",
-        "دستت",
-        "چه",
-        "شده",
-        "همه‌اش",
-        "سیاه",
-        "است"
+        "استادم",
+        "هم",
+        "همین",
+        "را",
+        "گفت",
+        "روزی",
+        "بیست",
+        "دقیقه"
        ],
        "extra": [
-        "خسته‌ای؟"
+        "باید"
        ]
       }
      ]
@@ -620,22 +718,11 @@
      "titel": "Was bedeutet der Satz?",
      "fragen": [
       {
-       "frage": "„Wahrscheinlich aus der Kadscharenzeit. Sehen Sie, wie die langgezogenen Buchstaben auf den Zeilen tanzen.“",
+       "frage": "„Wie kann man erkennen, ob ein Blatt echt ist oder nicht?“",
        "optionen": [
-        "احتمالاً از دوره‌ی قاجار است. ببینید حروف کشیده چطور روی سطرها رقصان‌اند.",
-        "جالب است. این قطعه قدیمی است؟",
-        "یوناس، چرا این‌قدر خسته‌ای؟ دستت چه شده؟ همه‌اش سیاه است!"
-       ],
-       "richtig": 0,
-       "optFa": true,
-       "hoeren": false
-      },
-      {
-       "frage": "„Oft schmückte man den Rand des Blattes mit Goldmalerei, also mit goldenen und farbigen Ornamenten.“",
-       "optionen": [
-        "اغلب، حاشیه‌ی قطعه را با تذهیب، یعنی نقش‌های طلایی و رنگی، می‌آراستند.",
-        "یوناس، چرا این‌قدر خسته‌ای؟ دستت چه شده؟ همه‌اش سیاه است!",
-        "پس هدفش چیست؟ برای من خوشنویسی یعنی زیبا نوشتن یک شعر."
+        "چطور می‌شود فهمید که یک قطعه اصل است یا نه؟",
+        "جالب است؛ صد سال پیش هم نگران آب بودند.",
+        "این کلاس‌ها چقدر طول می‌کشند؟"
        ],
        "richtig": 0,
        "optFa": true,
@@ -645,8 +732,19 @@
        "frage": "„Jonas, warum bist du so müde? Was ist mit deiner Hand? Sie ist ganz schwarz!“",
        "optionen": [
         "یوناس، چرا این‌قدر خسته‌ای؟ دستت چه شده؟ همه‌اش سیاه است!",
-        "جالب است. این قطعه قدیمی است؟",
-        "احتمالاً از دوره‌ی قاجار است. ببینید حروف کشیده چطور روی سطرها رقصان‌اند."
+        "این برای من هدیه‌ی بسیار ارزشمندی خواهد بود.",
+        "می‌توانم از آن عکس بگیرم؟ می‌خواهم به استادم نشان بدهم."
+       ],
+       "richtig": 0,
+       "optFa": true,
+       "hoeren": false
+      },
+      {
+       "frage": "„Das wäre für mich ein sehr wertvolles Geschenk.“",
+       "optionen": [
+        "این برای من هدیه‌ی بسیار ارزشمندی خواهد بود.",
+        "به این ترتیب، حتی کتاب‌های چاپی تا مدت‌ها ظاهری خوشنویسی‌شده داشتند.",
+        "این کلاس‌ها چقدر طول می‌کشند؟"
        ],
        "richtig": 0,
        "optFa": true,
@@ -656,18 +754,18 @@
        "frage": "„Heute sind die Werke dieser Künstler in internationalen Ausstellungen und Auktionen zu sehen.“",
        "optionen": [
         "امروز آثار این هنرمندان در نمایشگاه‌ها و حراج‌های بین‌المللی دیده می‌شود.",
-        "یوناس، چرا این‌قدر خسته‌ای؟ دستت چه شده؟ همه‌اش سیاه است!",
-        "جالب است. این قطعه قدیمی است؟"
+        "چطور می‌شود فهمید که یک قطعه اصل است یا نه؟",
+        "یوناس، چرا این‌قدر خسته‌ای؟ دستت چه شده؟ همه‌اش سیاه است!"
        ],
        "richtig": 0,
        "optFa": true,
        "hoeren": false
       },
       {
-       "frage": "„Nur ein ‹B›? Entschuldige, ich muss lachen! Was hat dein Meister gesagt?“",
+       "frage": "„Mein Meister hat dasselbe gesagt: zwanzig Minuten am Tag.“",
        "optionen": [
-        "فقط یک «ب»؟ ببخشید، نمی‌توانم نخندم! استادت چه گفت؟",
-        "احتمالاً از دوره‌ی قاجار است. ببینید حروف کشیده چطور روی سطرها رقصان‌اند.",
+        "استادم هم همین را گفت: روزی بیست دقیقه.",
+        "به این ترتیب، حتی کتاب‌های چاپی تا مدت‌ها ظاهری خوشنویسی‌شده داشتند.",
         "امروز آثار این هنرمندان در نمایشگاه‌ها و حراج‌های بین‌المللی دیده می‌شود."
        ],
        "richtig": 0,
@@ -675,11 +773,11 @@
        "hoeren": false
       },
       {
-       "frage": "„Interessant. Ist dieses Blatt alt?“",
+       "frage": "„So hatten selbst gedruckte Bücher lange Zeit ein kalligrafisches Aussehen.“",
        "optionen": [
-        "جالب است. این قطعه قدیمی است؟",
+        "به این ترتیب، حتی کتاب‌های چاپی تا مدت‌ها ظاهری خوشنویسی‌شده داشتند.",
         "احتمالاً از دوره‌ی قاجار است. ببینید حروف کشیده چطور روی سطرها رقصان‌اند.",
-        "امروز آثار این هنرمندان در نمایشگاه‌ها و حراج‌های بین‌المللی دیده می‌شود."
+        "استادم هم همین را گفت: روزی بیست دقیقه."
        ],
        "richtig": 0,
        "optFa": true,
@@ -694,29 +792,19 @@
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
-        "Jonas, warum bist du so müde? Was ist mit deiner Hand? Sie ist ganz schwarz!",
-        "Nur ein ‹B›? Entschuldige, ich muss lachen! Was hat dein Meister gesagt?",
-        "Heute sind die Werke dieser Künstler in internationalen Ausstellungen und Auktionen zu sehen."
+        "Was für ein schönes Papier! Aber ich kann nicht einmal ein Wort davon lesen.",
+        "Wie lange dauern diese Kurse?",
+        "Warum hängen die Buchstaben so eng zusammen?"
        ],
        "richtig": 0,
-       "fa": "یوناس، چرا این‌قدر خسته‌ای؟ دستت چه شده؟ همه‌اش سیاه است!"
-      },
-      {
-       "frage": "Was bedeutet der Satz?",
-       "optionen": [
-        "Was ist dann der Zweck? Für mich bedeutet Kalligrafie, ein Gedicht schön zu schreiben.",
-        "Heute sind die Werke dieser Künstler in internationalen Ausstellungen und Auktionen zu sehen.",
-        "Nur ein ‹B›? Entschuldige, ich muss lachen! Was hat dein Meister gesagt?"
-       ],
-       "richtig": 0,
-       "fa": "پس هدفش چیست؟ برای من خوشنویسی یعنی زیبا نوشتن یک شعر."
+       "fa": "چه کاغذ زیبایی! ولی من حتی یک کلمه‌اش را هم نمی‌توانم بخوانم."
       },
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
         "Oft schmückte man den Rand des Blattes mit Goldmalerei, also mit goldenen und farbigen Ornamenten.",
-        "Jonas, warum bist du so müde? Was ist mit deiner Hand? Sie ist ganz schwarz!",
-        "Interessant. Ist dieses Blatt alt?"
+        "Mein Meister hat dasselbe gesagt: zwanzig Minuten am Tag.",
+        "Dann muss der Leser den Text aus dem Sinn erraten?"
        ],
        "richtig": 0,
        "fa": "اغلب، حاشیه‌ی قطعه را با تذهیب، یعنی نقش‌های طلایی و رنگی، می‌آراستند."
@@ -724,32 +812,42 @@
       {
        "frage": "Was bedeutet der Satz?",
        "optionen": [
-        "Interessant. Ist dieses Blatt alt?",
-        "Heute sind die Werke dieser Künstler in internationalen Ausstellungen und Auktionen zu sehen.",
-        "Oft schmückte man den Rand des Blattes mit Goldmalerei, also mit goldenen und farbigen Ornamenten."
-       ],
-       "richtig": 0,
-       "fa": "جالب است. این قطعه قدیمی است؟"
-      },
-      {
-       "frage": "Was bedeutet der Satz?",
-       "optionen": [
-        "Wahrscheinlich aus der Kadscharenzeit. Sehen Sie, wie die langgezogenen Buchstaben auf den Zeilen tanzen.",
-        "Nur ein ‹B›? Entschuldige, ich muss lachen! Was hat dein Meister gesagt?",
-        "Oft schmückte man den Rand des Blattes mit Goldmalerei, also mit goldenen und farbigen Ornamenten."
-       ],
-       "richtig": 0,
-       "fa": "احتمالاً از دوره‌ی قاجار است. ببینید حروف کشیده چطور روی سطرها رقصان‌اند."
-      },
-      {
-       "frage": "Was bedeutet der Satz?",
-       "optionen": [
-        "Nur ein ‹B›? Entschuldige, ich muss lachen! Was hat dein Meister gesagt?",
-        "Wahrscheinlich aus der Kadscharenzeit. Sehen Sie, wie die langgezogenen Buchstaben auf den Zeilen tanzen.",
+        "Nur ein ‹B›? Dann war es wohl eine anstrengende Stunde. Was hat dein Meister gesagt?",
+        "Gab es in dieser Zeit einen berühmten Kalligrafen, der Siyah-Mashq schrieb?",
         "Heute sind die Werke dieser Künstler in internationalen Ausstellungen und Auktionen zu sehen."
        ],
        "richtig": 0,
-       "fa": "فقط یک «ب»؟ ببخشید، نمی‌توانم نخندم! استادت چه گفت؟"
+       "fa": "فقط یک «ب»؟ پس جلسه‌ی سختی بوده. استادت چه گفت؟"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Was ist dann der Zweck? Für mich bedeutet Kalligrafie, ein Gedicht schön zu schreiben.",
+        "Wahrscheinlich aus der Kadscharenzeit. Sehen Sie, wie die langgezogenen Buchstaben auf den Zeilen tanzen.",
+        "Wie kann man erkennen, ob ein Blatt echt ist oder nicht?"
+       ],
+       "richtig": 0,
+       "fa": "پس هدفش چیست؟ برای من خوشنویسی یعنی زیبا نوشتن یک شعر."
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Gab es in dieser Zeit einen berühmten Kalligrafen, der Siyah-Mashq schrieb?",
+        "Was ist dann der Zweck? Für mich bedeutet Kalligrafie, ein Gedicht schön zu schreiben.",
+        "Heute sind die Werke dieser Künstler in internationalen Ausstellungen und Auktionen zu sehen."
+       ],
+       "richtig": 0,
+       "fa": "در آن دوره خوشنویس مشهوری بود که سیاه‌مشق بنویسد؟"
+      },
+      {
+       "frage": "Was bedeutet der Satz?",
+       "optionen": [
+        "Wahrscheinlich aus der Kadscharenzeit. Sehen Sie, wie die langgezogenen Buchstaben auf den Zeilen tanzen.",
+        "Wie lange dauern diese Kurse?",
+        "Dann muss der Leser den Text aus dem Sinn erraten?"
+       ],
+       "richtig": 0,
+       "fa": "احتمالاً از دوره‌ی قاجار است. ببینید حروف کشیده چطور روی سطرها رقصان‌اند."
       }
      ]
     }
