@@ -27,6 +27,22 @@
       "korrekturen": {
         ".read": "auth != null",
         ".write": "auth != null"
+      },
+      "termine": {
+        ".read": true,
+        ".write": "auth != null"
+      },
+      "anwesenheit": {
+        ".read": "auth != null",
+        ".write": "auth != null",
+        "$klasse": {
+          "$termin": {
+            "$code": {
+              ".read": true,
+              ".write": "auth != null || (root.child('farsi/tn/' + $code + '/klasse').val() === $klasse && root.child('farsi/tn/' + $code + '/aktiv').val() !== false && root.child('farsi/termine/' + $klasse + '/' + $termin).exists() && newData.child('s').val() === 'gemeldet' && (!data.exists() || data.child('s').val() === 'gemeldet'))"
+            }
+          }
+        }
       }
     }
   }

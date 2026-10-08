@@ -148,3 +148,11 @@ Bei `paare` und `memory` kann mit `"links": "x"` auf beiden Seiten Persisch steh
 ## Schreibweise
 
 Persisches `ی` und `ک` (nicht arabisch `ي`/`ك`), Schrift Vazirmatn, Lektion 1 voll vokalisiert. Umschrift deutschfreundlich: ā, sch, ch, tsch, dsch, z = weiches s, zh, gh, y = j.
+
+## Kalender & Anwesenheit (Konsole)
+
+- **📅 Kalender:** Unterrichtstage pro Klasse eintragen (Datum, Uhrzeit, Thema, Notiz, „fällt aus“), als **Serie** anlegen (z. B. jeden Mo + Mi bis Semesterende) und als **.ics** in Outlook/Google/Apple-Kalender übernehmen.
+- **✋ Anwesenheit:** Am Unterrichtstag tippen die Teilnehmenden auf der Startseite „✋ Ich bin da“. In der Konsole erscheinen sie live gelb; die Lehrkraft bestätigt (✓) oder setzt „fehlt“ / „entschuldigt“. Anwesenheitsliste mit Quote, CSV-Export und Druckansicht. Auf der Übersicht steht ein Hinweis, wenn heute Unterricht ist.
+- **Startseite der Teilnehmenden:** nächste Termine, Ausfälle und die eigene Anwesenheitsquote.
+- Firebase: `farsi/termine/{klasse}/{termin}` und `farsi/anwesenheit/{klasse}/{termin}/{code}`. Teilnehmende dürfen nur „gemeldet“ schreiben – bestätigen kann nur die Lehrkraft. **Nach dem Update die Regeln aus `firebase-regeln.json` in Firebase → Realtime Database → Regeln einfügen und veröffentlichen.**
+

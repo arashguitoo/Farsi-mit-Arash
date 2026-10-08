@@ -47,6 +47,8 @@
     </div>
   </section>
 
+  <section class="versteckt" id="unterricht"></section>
+
   <div class="bereiche" id="bereiche"></div>
 
   <div id="bereichInhalt" class="versteckt">
@@ -84,7 +86,51 @@
       $("#halloText").innerHTML = `<b>${esc(s.name)}</b>${s.klassenName ? " · " + esc(s.klassenName) : ""} · Code <span class="code">${esc(s.code)}</span>`;
       $("#halloFa").setAttribute("dir","auto");
     }
+    zeigeUnterricht(s);
     await zeichnePfad();
+  }
+
+  /* ---------- Unterricht: Termine & Anwesenheit ---------- */
+  const p2 = n => String(n).padStart(2, "0");
+  const isoHeute = () => { const d = new Date(); return `${d.getFullYear()}-${p2(d.getMonth() + 1)}-${p2(d.getDate())}`; };
+  const deDat = x => { const [y, m, d] = x.split("-").map(Number); return new Date(y, m - 1, d).toLocaleDateString("de-DE", { weekday: "long", day: "numeric", month: "long" }); };
+  const zeitT = t => t.von ? t.von + (t.bis ? "–" + t.bis : "") + " Uhr" : "";
+  async function zeigeUnterricht(s) {
+    const box = $("#unterricht");
+    if (!s || !s.klasse || !F.initFB()) { box.classList.add("versteckt"); return; }
+    let T;
+    try { T = (await F.mitTimeout(F.ref("termine/" + s.klasse).once("value"), 7000)).val() || {}; } catch (e) { box.classList.add("versteckt"); return; }
+    const liste = Object.entries(T).map(([id, t]) => ({ id, ...t })).sort((a, b) => (a.datum + (a.von || "")).localeCompare(b.datum + (b.von || "")));
+    if (!liste.length) { box.classList.add("versteckt"); return; }
+    const h = isoHeute();
+    const heuteT = liste.filter(t => t.datum === h);
+    const kommend = liste.filter(t => t.datum > h).slice(0, 3);
+    const vorbei = liste.filter(t => t.datum <= h && !t.ausfall);
+    const eigen = {};
+    await Promise.all(vorbei.map(async t => {
+      try { eigen[t.id] = (await F.mitTimeout(F.ref(`anwesenheit/${s.klasse}/${t.id}/${s.code}`).once("value"), 6000)).val(); } catch (e) { eigen[t.id] = null; }
+    }));
+    const gezaehlt = vorbei.filter(t => t.datum < h || eigen[t.id]);   // heute zählt erst mit Status
+    const da = gezaehlt.filter(t => (eigen[t.id] || {}).s === "da").length;
+    const statusText = e => !e ? "" : { gemeldet: "✋ Gemeldet – deine Lehrkraft bestätigt gleich.", da: "✓ Anwesenheit bestätigt.", fehlt: "Als „fehlt“ eingetragen. Falls das nicht stimmt, sprich deine Lehrkraft an.", entsch: "Entschuldigt." }[e.s] || "";
+    box.innerHTML = `<div class="karte unterricht">
+      ${heuteT.map(t => t.ausfall
+        ? `<div class="u-heute aus"><b>Heute ${esc(zeitT(t))}: Der Unterricht fällt aus.</b>${t.notiz ? `<div class="klein">${esc(t.notiz)}</div>` : ""}</div>`
+        : `<div class="u-heute"><div><b>📅 Heute ist Unterricht${t.von ? " · " + esc(zeitT(t)) : ""}</b>${t.thema ? `<div class="klein">${esc(t.thema)}</div>` : ""}${t.notiz ? `<div class="klein muted">${esc(t.notiz)}</div>` : ""}</div>
+            ${eigen[t.id] ? `<div class="u-status">${statusText(eigen[t.id])}</div>` : `<button class="btn safran" data-dabin="${t.id}">✋ Ich bin da</button>`}</div>`).join("")}
+      <div class="u-zeile"><b>Nächste Termine</b>${kommend.length ? `<ul class="u-liste">${kommend.map(t => `<li${t.ausfall ? ' class="aus"' : ""}><span>${esc(deDat(t.datum))}</span> <span class="muted">${esc(zeitT(t))}</span>${t.ausfall ? " <b>– fällt aus</b>" : t.thema ? ` <span class="klein muted">· ${esc(t.thema)}</span>` : ""}</li>`).join("")}</ul>` : `<span class="klein muted"> – im Moment keine weiteren eingetragen.</span>`}</div>
+      ${gezaehlt.length ? `<div class="klein muted">Deine Anwesenheit: <b>${da} von ${gezaehlt.length}</b> Unterrichtstagen (${Math.round(100 * da / gezaehlt.length)} %)</div>` : ""}
+    </div>`;
+    box.classList.remove("versteckt");
+    $$("[data-dabin]", box).forEach(b => b.onclick = async () => {
+      b.disabled = true; b.textContent = "Wird gemeldet …";
+      try {
+        const jetzt = Date.now();
+        await F.mitTimeout(F.ref(`anwesenheit/${s.klasse}/${b.dataset.dabin}/${s.code}`).set({ s: "gemeldet", ts: jetzt, gemeldet: jetzt, von: "tn" }), 8000);
+        F.toast("Danke! Deine Lehrkraft bestätigt deine Anwesenheit.");
+      } catch (e) { F.toast("Melden hat nicht geklappt – bitte noch einmal versuchen."); }
+      zeigeUnterricht(s);
+    });
   }
 
   const B_KEY = "farsi_bereich_v1";

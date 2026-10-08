@@ -441,3 +441,11 @@ table.ktab th{background:rgba(0,0,0,.04);font-weight:700}
 .zu-ang.falsch{border-color:#b3412f;background:#fbecea}
 .zu-kopf{display:flex;gap:8px;align-items:center;margin-bottom:2px}
 .zu-bu{display:inline-grid;place-items:center;width:26px;height:26px;border-radius:50%;background:var(--lapis);color:#fff;font-weight:800;font-size:.85rem;flex:none}
+
+/* Startseite: Unterricht & Anwesenheit */
+.unterricht{display:grid;gap:10px;margin-bottom:14px}
+.u-heute{display:flex;gap:12px;align-items:center;flex-wrap:wrap;justify-content:space-between;background:var(--safran-hell);border:1px solid #e6d3ad;border-radius:14px;padding:12px 14px}
+.u-heute.aus{background:var(--granat-hell);border-color:#efc2bd}
+.u-status{font-weight:800;color:var(--gruen)}
+.u-liste{list-style:none;margin:6px 0 0;padding:0;display:grid;gap:3px}
+.u-liste li.aus span{text-decoration:line-through;opacity:.7}

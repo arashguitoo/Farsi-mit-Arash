@@ -46,6 +46,30 @@
   tr.inaktiv td{opacity:.55}
   .modal textarea{width:100%;min-height:220px}
   .rang{font-weight:800;color:var(--tinte2);width:28px}
+  /* Kalender & Anwesenheit */
+  .kal{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}
+  .kal-wt{font-size:.75rem;font-weight:800;color:var(--tinte2);text-align:center;padding:2px 0}
+  .kal-tag{min-height:66px;border:1px solid var(--linie);border-radius:10px;background:#fff;padding:4px;text-align:left;display:flex;flex-direction:column;gap:2px;cursor:pointer;font:inherit;overflow:hidden}
+  .kal-tag:hover{border-color:var(--lapis)}
+  .kal-tag.fremd{opacity:.4}
+  .kal-tag.heute{box-shadow:inset 0 0 0 2px var(--safran)}
+  .kal-tag.hat{background:var(--lapis-hell)}
+  .kal-tag.gewaehlt{box-shadow:inset 0 0 0 2px var(--lapis)}
+  .kal-nr{font-size:.8rem;font-weight:800;color:var(--tinte2)}
+  .kal-t{font-size:.7rem;font-weight:700;background:var(--lapis);color:#fff;border-radius:6px;padding:1px 5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .kal-t.ausfall{background:var(--granat-hell);color:var(--granat);text-decoration:line-through}
+  @media (max-width:600px){.kal-tag{min-height:48px}.kal-t{font-size:0;padding:0;height:6px}}
+  .formgitter{display:grid;grid-template-columns:1fr 1fr;gap:8px 10px}
+  .formgitter label{display:grid;gap:3px;font-size:.82rem;font-weight:700;color:var(--tinte2)}
+  .formgitter .ganz{grid-column:1/-1}
+  .ks-tag{display:inline-flex;gap:4px;align-items:center;border:1px solid var(--linie);border-radius:999px;padding:4px 10px;background:#fff}
+  .anw-chip{display:inline-block;border:1px solid;border-radius:999px;padding:2px 10px;font-size:.82rem;font-weight:800;white-space:nowrap}
+  .anw-knoepfe{white-space:nowrap}
+  .anw-knoepfe .btn{margin:1px}
+  tr.anw-offen td{background:var(--safran-hell)}
+  #anwMatrix td,#anwMatrix th{padding:4px 6px}
+  .heute-z{display:flex;gap:10px;align-items:center;flex-wrap:wrap;padding:10px 14px;border-radius:14px;background:var(--safran-hell);border:1px solid #e6d3ad;margin-bottom:10px}
+  .heute-z .btn{margin-left:auto}
 </style>
 </head>
 <body>
@@ -96,6 +120,8 @@
     <div class="tabs">
       <button class="tab an" data-tab="uebersicht">🏠 Übersicht</button>
       <button class="tab" data-tab="tn">👥 Teilnehmende</button>
+      <button class="tab" data-tab="kal">📅 Kalender</button>
+      <button class="tab" data-tab="anw">✋ Anwesenheit</button>
       <button class="tab" data-tab="fort">📊 Fortschritt</button>
       <button class="tab" data-tab="stat">📈 Statistik</button>
       <button class="tab" data-tab="frei">🔓 Freigaben</button>
@@ -104,6 +130,7 @@
 
     <!-- ÜBERSICHT -->
     <div data-panel="uebersicht">
+      <div id="heuteBox"></div>
       <div class="kpis" id="kpis"></div>
       <div class="raster">
         <div class="karte"><h3>Klassen</h3><div class="kl-karten" id="klKarten"></div>
@@ -149,6 +176,87 @@
       </div>
     </div>
 
+    <!-- KALENDER -->
+    <div data-panel="kal" class="versteckt">
+      <div class="karte" style="margin-bottom:14px">
+        <div class="btnreihe" id="kalChips"></div>
+        <p class="klein muted" style="margin-bottom:0">Trag die Unterrichtstage jeder Klasse ein. Die Teilnehmenden sehen ihre nächsten Termine auf der Startseite und können sich am Unterrichtstag mit „✋ Ich bin da“ melden.</p>
+      </div>
+      <div class="raster">
+        <div class="karte">
+          <div class="kopfleiste">
+            <button class="btn zwei klein" id="kalZurueck" aria-label="Vormonat">‹</button>
+            <h3 id="kalMonat" style="margin:0;flex:1;text-align:center"></h3>
+            <button class="btn zwei klein" id="kalVor" aria-label="Nächster Monat">›</button>
+            <button class="btn zwei klein" id="kalHeute">Heute</button>
+          </div>
+          <div class="kal" id="kalGitter"></div>
+          <p class="mini" style="margin-bottom:0">Tag antippen = Unterrichtstag eintragen oder bearbeiten.</p>
+        </div>
+        <div class="karte">
+          <h3 id="kfTitel">Unterrichtstag eintragen</h3>
+          <div class="formgitter">
+            <label class="ganz">Datum<input class="feld" type="date" id="kfDatum"></label>
+            <label>von<input class="feld" type="time" id="kfVon"></label>
+            <label>bis<input class="feld" type="time" id="kfBis"></label>
+            <label class="ganz">Thema / Lektion<input class="feld" id="kfThema" list="kfThemen" placeholder="z. B. Lektion 5 – Familie"></label>
+            <label class="ganz">Notiz (sehen auch die Teilnehmenden)<input class="feld" id="kfNotiz" placeholder="z. B. Raum 204 · Hausaufgabe mitbringen"></label>
+            <label class="ganz" style="display:flex;gap:8px;align-items:center;color:var(--tinte)"><input type="checkbox" id="kfAusfall"> Unterricht fällt aus</label>
+          </div>
+          <datalist id="kfThemen"></datalist>
+          <div class="btnreihe" style="margin-top:12px">
+            <button class="btn" id="kfSpeichern">Speichern</button>
+            <button class="btn zwei klein" id="kfNeu">+ neuer Tag</button>
+            <button class="btn rot klein versteckt" id="kfLoeschen">🗑 löschen</button>
+          </div>
+        </div>
+      </div>
+      <div class="gitter2" style="margin-top:14px">
+        <div class="karte">
+          <h3>Serie anlegen</h3>
+          <p class="klein muted" style="margin-top:0">Zum Beispiel jeden Montag und Mittwoch bis zum Semesterende. Schon eingetragene Tage werden übersprungen; Ferientage danach einfach auf „fällt aus“ setzen oder löschen.</p>
+          <div class="formgitter">
+            <label>ab<input class="feld" type="date" id="ksVon"></label>
+            <label>bis<input class="feld" type="date" id="ksBis"></label>
+            <div class="ganz btnreihe" id="ksTage"></div>
+            <label>von<input class="feld" type="time" id="ksZeitVon" value="18:00"></label>
+            <label>bis<input class="feld" type="time" id="ksZeitBis" value="19:30"></label>
+            <label class="ganz">Thema (optional)<input class="feld" id="ksThema" list="kfThemen"></label>
+          </div>
+          <div class="btnreihe" style="margin-top:12px"><button class="btn safran" id="ksAnlegen">Termine erzeugen</button></div>
+        </div>
+        <div class="karte">
+          <div class="kopfleiste"><h3 style="margin:0" id="kalListeTitel">Termine</h3>
+            <div class="btnreihe"><button class="btn zwei klein" id="kalAlle">auch vergangene</button><button class="btn zwei klein" id="kalIcs" title="Für Outlook, Google- oder Apple-Kalender">⬇ Kalenderdatei (.ics)</button></div></div>
+          <div class="tabelle-scroll" id="kalListe"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ANWESENHEIT -->
+    <div data-panel="anw" class="versteckt">
+      <div class="karte" style="margin-bottom:14px">
+        <div class="btnreihe" id="anwChips"></div>
+        <div class="btnreihe" style="margin-top:12px;align-items:center">
+          <label class="klein">Unterrichtstag:
+            <select class="feld" id="anwTermin" style="width:auto;padding:4px 8px"></select></label>
+          <button class="btn safran klein" id="anwAlleBest">✓ alle Gemeldeten bestätigen</button>
+          <button class="btn zwei klein" id="anwRestFehlt">Rest als „fehlt“</button>
+        </div>
+        <p class="klein muted" style="margin-bottom:0">So läuft es: Am Unterrichtstag tippen die Teilnehmenden auf der Startseite „✋ Ich bin da“. Hier erscheinen sie gelb – du bestätigst mit <b>✓</b> oder korrigierst. Du kannst jeden Status auch selbst setzen. Die Liste aktualisiert sich live.</p>
+      </div>
+      <div class="karte">
+        <h3 id="anwTitel"></h3>
+        <div class="tabelle-scroll"><table class="t" id="anwTabelle"></table></div>
+      </div>
+      <div class="karte" style="margin-top:14px">
+        <div class="kopfleiste"><h3 style="margin:0">Anwesenheitsliste</h3>
+          <div class="btnreihe"><button class="btn zwei klein" id="anwCsv">⬇ CSV (Excel)</button><button class="btn zwei klein" id="anwDruck">🖨 drucken</button></div></div>
+        <div class="tabelle-scroll"><table class="t" id="anwMatrix"></table></div>
+        <p class="mini" style="margin-bottom:0">✓ anwesend · ✗ fehlt · E entschuldigt · ✋ gemeldet, noch nicht bestätigt · Quote = anwesend / stattgefundene Termine (ohne ausgefallene)</p>
+      </div>
+    </div>
+
     <!-- FORTSCHRITT -->
     <div data-panel="fort" class="versteckt">
       <div class="karte" style="margin-bottom:14px">
@@ -189,7 +297,7 @@
       <div class="gitter2">
         <div class="karte">
           <h3>Backup herunterladen</h3>
-          <p class="klein muted" style="margin-top:0">Alle Klassen, Teilnehmenden, Codes, Freigaben und Ergebnisse als JSON-Datei.</p>
+          <p class="klein muted" style="margin-top:0">Alle Klassen, Teilnehmenden, Codes, Freigaben, Ergebnisse, Unterrichtstage und Anwesenheiten als JSON-Datei.</p>
           <button class="btn" id="bkDown">⬇ Backup speichern</button>
           <p class="mini" id="bkLetzt"></p>
         </div>
@@ -209,12 +317,14 @@
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
 <script src="assets/core.js"></script>
+<script src="assets/klassen-tools.js"></script>
 <script>
 (function(){
   const F = window.FARSI, { $, $$, esc, toast } = F;
   const CODE_CHARS = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
-  const D = { klassen:{}, tn:{}, freigabe:{}, fortschritt:{} };
-  const geladen = { klassen:false, tn:false, freigabe:false, fortschritt:false };
+  const D = { klassen:{}, tn:{}, freigabe:{}, fortschritt:{}, termine:{}, anwesenheit:{} };
+  const geladen = { klassen:false, tn:false, freigabe:false, fortschritt:false, termine:false, anwesenheit:false };
+  let KT = null;   // Klassen-Werkzeuge (Kalender, Anwesenheit)
   let INDEX = { lektionen: [] }, LEKDATEN = {};
   let aktKlasse = null, fortKlasse = null, statKlasse = "alle", aktTab = "uebersicht";
   const basisURL = () => location.href.replace(/[^/]*([?#].*)?$/, "");
@@ -222,6 +332,8 @@
   const TAG = 86400000;
 
   F.initFB();
+  KT = window.KLASSEN_TOOLS({ F, D, $, $$, esc, toast, schreib: (...a) => schreib(...a), klassenListe: () => klassenListe(), tnListe: k => tnListe(k), klName: k => klName(k),
+    druckFenster: (...a) => druckFenster(...a), herunterladen: (...a) => herunterladen(...a) });
   const auth = firebase.auth();
 
   /* ---------- Fehler verständlich machen ---------- */
@@ -266,7 +378,8 @@
         try { LEKDATEN[l.id] = await F.ladeLektion(l); } catch (e) { }
       }));
     } catch (e) { toast("Lektionsliste konnte nicht geladen werden."); }
-    ["klassen", "tn", "freigabe", "fortschritt"].forEach(k => {
+    if (KT) KT.themen(INDEX.lektionen.filter(l => l.datei).map(l => (l.bereich === "f1" ? "F1·" : l.bereich === "f2" ? "F2·" : l.bereich === "k" ? "" : "L") + l.nummer + " – " + l.titel));
+    ["klassen", "tn", "freigabe", "fortschritt", "termine", "anwesenheit"].forEach(k => {
       F.ref(k).on("value", s => { D[k] = s.val() || {}; geladen[k] = true; neuZeichnen(); }, () => regelFehler());
     });
   });
@@ -325,6 +438,8 @@
     if (!fortKlasse || !D.klassen[fortKlasse]) fortKlasse = aktKlasse;
     if (statKlasse !== "alle" && !D.klassen[statKlasse]) statKlasse = "alle";
     zeichneUebersicht(); zeichneTN(); zeichneFort(); zeichneStat(); zeichneFrei(); zeichneBackupInfo();
+    if (KT) { KT.zeichne(); $("#heuteBox").innerHTML = KT.heuteHTML();
+      $$("#heuteBox [data-anw]").forEach(b => b.onclick = () => { const [k, t] = b.dataset.anw.split("|"); KT.oeffneAnw(k, t); zeigeTab("anw"); }); }
   }
 
   /* ---------- Klassen anlegen ---------- */
@@ -351,7 +466,7 @@
     if (!aktKlasse) return;
     if (tnListe(aktKlasse).length) return alert("Die Klasse hat noch Teilnehmende. Bitte zuerst löschen oder in eine andere Klasse verschieben.");
     if (!confirm("Klasse „" + klName(aktKlasse) + "“ löschen?")) return;
-    schreib(F.ref().update({ ["klassen/" + aktKlasse]: null, ["freigabe/" + aktKlasse]: null }), "Klasse gelöscht.");
+    schreib(F.ref().update({ ["klassen/" + aktKlasse]: null, ["freigabe/" + aktKlasse]: null, ["termine/" + aktKlasse]: null, ["anwesenheit/" + aktKlasse]: null }), "Klasse gelöscht.");
   };
 
   /* ---------- ÜBERSICHT ---------- */
@@ -653,7 +768,7 @@
     if (!j.farsiBackup || !j.daten) return alert("Die Datei ist kein Farsi-Backup.");
     if (!confirm(`Backup vom ${new Date(j.erstellt).toLocaleString("de-DE")} einspielen? Alle aktuellen Daten werden ersetzt.`)) return;
     const d = j.daten;
-    schreib(F.ref().update({ klassen: d.klassen || null, tn: d.tn || null, freigabe: d.freigabe || null, fortschritt: d.fortschritt || null }), "Backup eingespielt.");
+    schreib(F.ref().update({ klassen: d.klassen || null, tn: d.tn || null, freigabe: d.freigabe || null, fortschritt: d.fortschritt || null, termine: d.termine || null, anwesenheit: d.anwesenheit || null }), "Backup eingespielt.");
   };
 })();
 </script>
