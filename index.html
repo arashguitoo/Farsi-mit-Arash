@@ -40,9 +40,10 @@
   <section class="gruss versteckt" id="bereichHallo">
     <div class="karte" style="display:flex;align-items:center;gap:14px;flex-wrap:wrap">
       <div style="flex:1;min-width:200px">
-        <div class="fa" style="font-size:1.6rem;font-weight:800;color:var(--lapis)" id="halloFa">سَلام!</div>
+        <div style="font-size:1.6rem;font-weight:800;color:var(--lapis);text-align:left" id="halloFa" dir="ltr">سَلام!</div>
         <div id="halloText"></div>
       </div>
+      <a class="btn klein" href="mein.html" style="text-decoration:none">👤 Mein Bereich</a>
       <button class="btn zwei klein" id="abmelden">Abmelden</button>
     </div>
   </section>
@@ -82,9 +83,9 @@
     $("#bereiche").classList.toggle("versteckt", !s);
     if (!s) { $("#bereichInhalt").classList.add("versteckt"); $("#bereiche").innerHTML = ""; return; }
     if (s) {
-      $("#halloFa").textContent = "سَلام " + (s.name || "") + "!";
+      $("#halloFa").innerHTML = `<span class="fa" dir="rtl" style="font-size:inherit;color:inherit">سَلام</span> ${esc(s.name || "")}!`;
       $("#halloText").innerHTML = `<b>${esc(s.name)}</b>${s.klassenName ? " · " + esc(s.klassenName) : ""} · Code <span class="code">${esc(s.code)}</span>`;
-      $("#halloFa").setAttribute("dir","auto");
+      $("#halloFa").setAttribute("dir","ltr");
     }
     zeigeUnterricht(s);
     await zeichnePfad();
@@ -119,6 +120,7 @@
         : `<div class="u-heute"><div><b>📅 Heute ist Unterricht${t.von ? " · " + esc(zeitT(t)) : ""}</b>${t.thema ? `<div class="klein">${esc(t.thema)}</div>` : ""}${t.notiz ? `<div class="klein muted">${esc(t.notiz)}</div>` : ""}</div>
             ${eigen[t.id] ? `<div class="u-status">${statusText(eigen[t.id])}</div>` : `<button class="btn safran" data-dabin="${t.id}">✋ Ich bin da</button>`}</div>`).join("")}
       <div class="u-zeile"><b>Nächste Termine</b>${kommend.length ? `<ul class="u-liste">${kommend.map(t => `<li${t.ausfall ? ' class="aus"' : ""}><span>${esc(deDat(t.datum))}</span> <span class="muted">${esc(zeitT(t))}</span>${t.ausfall ? " <b>– fällt aus</b>" : t.thema ? ` <span class="klein muted">· ${esc(t.thema)}</span>` : ""}</li>`).join("")}</ul>` : `<span class="klein muted"> – im Moment keine weiteren eingetragen.</span>`}</div>
+      <div class="klein"><a href="mein.html">Alle Termine, Themen und deinen Lernfortschritt findest du in 👤 Mein Bereich →</a></div>
       ${gezaehlt.length ? `<div class="klein muted">Deine Anwesenheit: <b>${da} von ${gezaehlt.length}</b> Unterrichtstagen (${Math.round(100 * da / gezaehlt.length)} %)</div>` : ""}
     </div>`;
     box.classList.remove("versteckt");

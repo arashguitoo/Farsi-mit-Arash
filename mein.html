@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mein Bereich · Farsi-Lernpfad</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Vazirmatn:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css">
+<style>
+  .mb-m-kopf{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+  .mb-gruss{font-size:1.8rem;font-weight:800;color:var(--lapis);text-align:left}
+  .mb-gruss .fa{font-size:inherit;color:inherit}
+  .mb-m-kopf .mb-rechts2{margin-left:auto;display:flex;gap:8px;flex-wrap:wrap}
+  .mb-kacheln{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:14px 0}
+  .mb-kachel{background:var(--karte);border:1px solid var(--linie);border-radius:16px;padding:12px 14px;box-shadow:var(--schatten)}
+  .mb-kachel .mb-z{font-size:1.7rem;font-weight:800;line-height:1.15}
+  .mb-kachel .mb-l{font-size:.8rem;font-weight:800;color:var(--tinte2)}
+  .mb-kachel .mb-s{font-size:.76rem;color:var(--tinte2)}
+  .m-raster{display:grid;grid-template-columns:1.25fr 1fr;gap:14px;align-items:start}
+  @media (max-width:860px){.m-raster{grid-template-columns:1fr}}
+  .karte h2{font-size:1.15rem;margin:0 0 10px}
+  .mb-weiter{display:flex;gap:14px;align-items:center;text-decoration:none;color:inherit;background:var(--lapis-hell);border:1px solid #cddcda;border-radius:16px;padding:14px 16px;margin-bottom:14px}
+  .mb-weiter .mb-pfeil{margin-left:auto;font-size:1.4rem;color:var(--lapis);font-weight:800}
+  .mb-termin{display:grid;grid-template-columns:auto 1fr auto;gap:4px 12px;align-items:center;padding:9px 0;border-bottom:1px solid var(--linie)}
+  .mb-termin:last-child{border-bottom:0}
+  .mb-termin .mb-dat{font-weight:800;min-width:92px}
+  .mb-termin .mb-dat small{display:block;font-weight:700;color:var(--tinte2);font-size:.75rem}
+  .mb-termin .mb-th{font-size:.92rem}
+  .mb-termin .mb-th small{display:block;color:var(--tinte2);font-size:.78rem}
+  .mb-termin.mb-aus .mb-dat,.mb-termin.mb-aus .mb-th{text-decoration:line-through;opacity:.6}
+  .mb-st{display:inline-block;border:1px solid;border-radius:999px;padding:1px 9px;font-size:.76rem;font-weight:800;white-space:nowrap}
+  .mb-st.mb-da{background:var(--gruen-hell);border-color:var(--gruen);color:var(--gruen)}
+  .mb-st.mb-fehlt{background:var(--granat-hell);border-color:var(--granat);color:var(--granat)}
+  .mb-st.mb-entsch{background:var(--lapis-hell);border-color:var(--lapis);color:var(--lapis)}
+  .mb-st.mb-gemeldet{background:var(--safran-hell);border-color:var(--safran);color:#8a5400}
+  .mb-st.mb-offen{background:#fff;border-color:var(--linie);color:var(--tinte2)}
+  .mb-heute-k{background:var(--safran-hell);border:1px solid #e6d3ad;border-radius:14px;padding:12px 14px;margin-bottom:10px;display:flex;gap:12px;align-items:center;flex-wrap:wrap;justify-content:space-between}
+  .mb-ber{margin-top:14px}
+  .mb-ber-kopf{display:flex;gap:10px;align-items:baseline;justify-content:space-between;flex-wrap:wrap}
+  .mb-ber-kopf h3{margin:0;font-size:1rem}
+  .mb-lek{display:grid;grid-template-columns:52px 1fr 70px;gap:10px;align-items:center;padding:7px 0;border-bottom:1px solid var(--linie);text-decoration:none;color:inherit}
+  .mb-lek:last-child{border-bottom:0}
+  .mb-lek .mb-nr{font-weight:800;color:var(--tinte2);font-size:.82rem}
+  .mb-lek .mb-ti{font-size:.9rem;font-weight:700;line-height:1.25}
+  .mb-lek .mb-ti small{display:block;font-weight:400;color:var(--tinte2);font-size:.75rem}
+  .mb-lek .mb-pz{text-align:right;font-weight:800;font-size:.85rem}
+  .mb-lek.mb-fertig .mb-pz{color:var(--gruen)}
+  .mb-mleiste{height:7px;background:var(--papier2);border-radius:4px;overflow:hidden;margin-top:4px}
+  .mb-mleiste>i{display:block;height:100%;background:var(--lapis);border-radius:4px}
+  .mb-lek.mb-fertig .mb-mleiste>i{background:var(--gruen)}
+  .mb-woche{display:grid;grid-template-columns:repeat(28,1fr);gap:3px;align-items:end;height:70px;margin-top:6px}
+  .mb-woche i{display:block;background:var(--lapis);border-radius:3px 3px 0 0;min-height:3px;opacity:.85}
+  .mb-woche i.mb-null{background:var(--papier2)}
+  .mb-woche i.mb-heute{outline:2px solid var(--safran);outline-offset:1px}
+  .mb-woche-ach{display:flex;justify-content:space-between;font-size:.72rem;color:var(--tinte2);margin-top:3px}
+  .mb-abz{display:flex;gap:8px;flex-wrap:wrap}
+  .mb-abz span{border:1px solid var(--linie);border-radius:12px;padding:6px 10px;font-size:.82rem;background:#fff}
+  .mb-abz span.mb-zu{opacity:.35;filter:grayscale(1)}
+  .mb-mehr{background:none;border:0;color:var(--lapis);font-weight:800;cursor:pointer;padding:6px 0;font:inherit}
+</style>
+</head>
+<body>
+<header class="kopf">
+  <div class="wrap">
+    <a href="index.html" class="medaillon" style="text-decoration:none">فا</a>
+    <div><h1>Mein Bereich</h1><div class="unter">Farsi-Lernpfad · Lern Farsi mit Arash</div></div>
+    <div class="rechts"><a class="kopf-btn" href="index.html">← Lernpfad</a></div>
+  </div>
+</header>
+
+<main class="wrap" style="padding-bottom:50px">
+  <div id="inhalt"><p class="muted" style="margin-top:30px">Lade deinen Bereich …</p></div>
+</main>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+<script src="assets/core.js"></script>
+<script>
+(function(){
+  const F = window.FARSI, { $, $$, esc } = F;
+  const p2 = n => String(n).padStart(2, "0");
+  const iso = d => `${d.getFullYear()}-${p2(d.getMonth() + 1)}-${p2(d.getDate())}`;
+  const ausIso = s => { const [y, m, d] = s.split("-").map(Number); return new Date(y, m - 1, d); };
+  const zeitT = t => t.von ? t.von + (t.bis ? "–" + t.bis : "") + " Uhr" : "";
+  const STATUS = { da: "✓ anwesend", fehlt: "✗ gefehlt", entsch: "entschuldigt", gemeldet: "✋ gemeldet" };
+  const kuerzel = l => l.id === "f1test" ? "Test" : l.bereich === "f1" ? "F1·" + l.nummer : l.bereich === "f2" ? "F2·" + l.nummer : l.bereich === "k" ? String(l.nummer) : "L" + l.nummer;
+
+  async function start() {
+    if (!(await F.brauchtCode())) return;
+    const s = F.sitzung();
+    if (!s) { $("#inhalt").innerHTML = `<div class="karte" style="margin-top:20px">Als Lehrkraft hast du keinen persönlichen Bereich. <a href="index.html">Zum Lernpfad</a></div>`; return; }
+    let INDEX;
+    try { INDEX = await F.ladeJSON("lektionen/index.json"); } catch (e) { $("#inhalt").innerHTML = `<div class="karte">Die Lektionsliste konnte nicht geladen werden.</div>`; return; }
+    const [FREI, FORT, termine, zuletzt] = await Promise.all([F.ladeFreigaben(), F.ladeAlleFortschritte(), ladeTermine(s), ladeZuletzt(s)]);
+    const anw = await ladeAnwesenheit(s, termine);
+    zeichne({ s, INDEX, FREI, FORT, termine, anw, zuletzt });
+  }
+  async function ladeTermine(s) {
+    if (!s.klasse || !F.initFB()) return [];
+    try {
+      const T = (await F.mitTimeout(F.ref("termine/" + s.klasse).once("value"), 7000)).val() || {};
+      return Object.entries(T).map(([id, t]) => ({ id, ...t })).sort((a, b) => (a.datum + (a.von || "")).localeCompare(b.datum + (b.von || "")));
+    } catch (e) { return []; }
+  }
+  async function ladeZuletzt(s) {
+    if (!F.initFB()) return null;
+    try { return (await F.mitTimeout(F.ref(`fortschritt/${s.code}/_zuletzt`).once("value"), 6000)).val(); } catch (e) { return null; }
+  }
+  async function ladeAnwesenheit(s, termine) {
+    const h = iso(new Date()), A = {};
+    await Promise.all(termine.filter(t => t.datum <= h && !t.ausfall).map(async t => {
+      try { A[t.id] = (await F.mitTimeout(F.ref(`anwesenheit/${s.klasse}/${t.id}/${s.code}`).once("value"), 6000)).val(); } catch (e) { A[t.id] = null; }
+    }));
+    return A;
+  }
+
+  function lekStand(l, FORT) {
+    const f = FORT[l.id] || {}, haupt = l.haupt || [];
+    const erl = haupt.filter(id => f[id]).length;
+    let zus = 0, p = 0, m = 0, ts = 0;
+    for (const k in f) { if (k.startsWith("_")) continue; const e = f[k]; p += e.p || 0; m += e.m || 0; ts = Math.max(ts, e.ts || 0); if (!haupt.includes(k)) zus++; }
+    return { erl, ges: haupt.length, zus, zusGes: l.zusatzAnz || 0, p, m, ts, quote: m ? p / m : null, fertig: haupt.length > 0 && erl >= haupt.length };
+  }
+
+  function zeichne({ s, INDEX, FREI, FORT, termine, anw, zuletzt }) {
+    const h = iso(new Date());
+    const lekAlle = INDEX.lektionen.filter(l => l.datei);
+    const bereiche = (INDEX.bereiche || []).filter(b => F.istBereichOffen(b, FREI) && lekAlle.some(l => (l.bereich || "a") === b.id));
+    // ---- Kennzahlen
+    let stErl = 0, P = 0, M = 0; const tage = {};
+    for (const lid in FORT) for (const st in FORT[lid]) {
+      if (st.startsWith("_")) continue; const e = FORT[lid][st]; stErl++; P += e.p || 0; M += e.m || 0;
+      if (e.ts) { const d = iso(new Date(e.ts)); tage[d] = (tage[d] || 0) + 1; }
+    }
+    let serie = 0; for (let d = new Date(); ; d.setDate(d.getDate() - 1)) { if (tage[iso(d)]) serie++; else if (iso(d) !== h) break; if (serie > 400) break; }
+    const fertigeLek = lekAlle.filter(l => lekStand(l, FORT).fertig).length;
+    const vorbei = termine.filter(t => !t.ausfall && (t.datum < h || (t.datum === h && anw[t.id])));
+    const da = vorbei.filter(t => (anw[t.id] || {}).s === "da").length;
+
+    // ---- Weiterlernen
+    let weiter = null;
+    if (zuletzt && zuletzt.lek) { const l = lekAlle.find(x => x.id === zuletzt.lek); if (l && !lekStand(l, FORT).fertig) weiter = { l, txt: "Hier hast du zuletzt geübt" }; }
+    if (!weiter) for (const b of bereiche) {
+      const l = lekAlle.find(x => (x.bereich || "a") === b.id && !F.sperrGrund(x, FREI, INDEX, FORT) && !lekStand(x, FORT).fertig);
+      if (l) { weiter = { l, txt: lekStand(l, FORT).erl ? "Mach weiter mit" : "Als Nächstes" }; break; }
+    }
+
+    // ---- Termine
+    const heuteT = termine.filter(t => t.datum === h);
+    const kommend = termine.filter(t => t.datum > h);
+    const vergangen = termine.filter(t => t.datum < h).reverse();
+    const terminZeile = (t, mitStatus) => {
+      const d = ausIso(t.datum), e = anw[t.id];
+      const st = !mitStatus || t.ausfall ? "" : e ? `<span class="mb-st mb-${e.s}">${STATUS[e.s] || ""}</span>` : `<span class="mb-st mb-offen">–</span>`;
+      return `<div class="mb-termin ${t.ausfall ? "mb-aus" : ""}"><div class="mb-dat">${d.toLocaleDateString("de-DE", { day: "2-digit", month: "2-digit" })}<small>${d.toLocaleDateString("de-DE", { weekday: "long" })}</small></div>
+        <div class="mb-th">${t.ausfall ? "<b>fällt aus</b>" : esc(t.thema || "Unterricht")}<small>${esc(zeitT(t))}${t.notiz ? " · " + esc(t.notiz) : ""}</small></div><div>${st}</div></div>`;
+    };
+
+    // ---- Fortschritt je Bereich
+    const berHTML = bereiche.map(b => {
+      const ls = lekAlle.filter(l => (l.bereich || "a") === b.id);
+      const sts = ls.map(l => ({ l, st: lekStand(l, FORT), zu: F.sperrGrund(l, FREI, INDEX, FORT) }));
+      const ges = sts.reduce((a, x) => a + x.st.ges, 0), erl = sts.reduce((a, x) => a + Math.min(x.st.erl, x.st.ges), 0);
+      const pct = ges ? Math.round(100 * erl / ges) : 0;
+      const begonnen = sts.filter(x => x.st.erl || x.st.zus || x.l.testStationen && (FORT[x.l.id])).length;
+      const zeilen = sts.map(({ l, st, zu }) => {
+        const test = l.testStationen ? F.testStand(l, FORT) : null;
+        const pz = test ? (test.m ? test.prozent + " %" : "–") : st.ges ? Math.round(100 * Math.min(st.erl, st.ges) / st.ges) + " %" : "–";
+        const breite = test ? Math.round(100 * test.erledigt / Math.max(1, test.gesamt)) : st.ges ? Math.round(100 * Math.min(st.erl, st.ges) / st.ges) : 0;
+        const fertig = test ? test.bestanden : st.fertig;
+        const info = test ? `${test.erledigt}/${test.gesamt} Abschnitte · ${test.bestanden ? "✓ bestanden" : "bestehen ab " + test.grenze + " %"}`
+          : zu ? "🔒 noch gesperrt" : `${st.erl}/${st.ges} Stationen${st.zusGes ? ` · ${st.zus}/${st.zusGes} Texte & Übungen` : ""}${st.quote != null ? ` · ${Math.round(st.quote * 100)} % richtig` : ""}`;
+        const inhalt = `<div class="mb-nr">${fertig ? "✓ " : ""}${esc(kuerzel(l))}</div><div class="mb-ti">${esc(l.titel)}<small>${info}</small><div class="mb-mleiste"><i style="width:${breite}%"></i></div></div><div class="mb-pz">${pz}</div>`;
+        return zu ? `<div class="mb-lek" style="opacity:.5">${inhalt}</div>` : `<a class="mb-lek ${fertig ? "mb-fertig" : ""}" href="lektion.html?id=${encodeURIComponent(l.id)}" data-begonnen="${st.erl || st.zus || test && test.erledigt ? 1 : 0}">${inhalt}</a>`;
+      }).join("");
+      return `<div class="karte mb-ber"><div class="mb-ber-kopf"><h3>${esc(b.icon || "")} ${esc(b.titel)}</h3><span class="klein muted">${erl} von ${ges} Stationen · ${pct} %</span></div>
+        <div class="mb-mleiste" style="height:10px;margin:8px 0 6px"><i style="width:${pct}%"></i></div>
+        <details ${begonnen ? "open" : ""}><summary class="klein" style="cursor:pointer;font-weight:800;color:var(--lapis)">${ls.length} Lektionen${begonnen ? ` · ${begonnen} begonnen` : ""}</summary>${zeilen}</details></div>`;
+    }).join("");
+
+    // ---- Aktivität 28 Tage
+    const tage28 = [...Array(28)].map((_, i) => { const d = new Date(); d.setDate(d.getDate() - 27 + i); return { d: iso(d), n: tage[iso(d)] || 0 }; });
+    const maxN = Math.max(1, ...tage28.map(x => x.n));
+    const aktiveTage = tage28.filter(x => x.n).length;
+
+    // ---- Abzeichen
+    const ABZ = [
+      ["🌱", "Erste Station", stErl >= 1], ["📗", "Erste Lektion fertig", fertigeLek >= 1], ["🏅", "5 Lektionen fertig", fertigeLek >= 5],
+      ["🔥", "3 Tage in Folge", serie >= 3], ["⚡", "7 Tage in Folge", serie >= 7], ["🎯", "90 % richtig", M >= 100 && P / M >= .9],
+      ["🙋", "5× im Unterricht", da >= 5], ["🎓", "Einstufungstest bestanden", INDEX.lektionen.some(l => l.testStationen && F.testStand(l, FORT).bestanden)]
+    ];
+
+    $("#inhalt").innerHTML = `
+      <div class="karte" style="margin-top:18px"><div class="mb-m-kopf">
+        <div><div class="mb-gruss" dir="ltr"><span class="fa" dir="rtl">سَلام</span> ${esc(s.name || "")}!</div><div class="muted">${esc(s.name)}${s.klassenName ? " · " + esc(s.klassenName) : ""} · Code <span class="code">${esc(s.code)}</span></div></div>
+        <div class="mb-rechts2"><a class="btn zwei klein" href="wortschatz.html" style="text-decoration:none">📚 Wortschatz-Trainer</a></div></div></div>
+
+      <div class="mb-kacheln">
+        <div class="mb-kachel"><div class="mb-l">Stationen erledigt</div><div class="mb-z">${stErl}</div><div class="mb-s">${fertigeLek} Lektion(en) abgeschlossen</div></div>
+        <div class="mb-kachel"><div class="mb-l">richtig beim 1. Versuch</div><div class="mb-z">${M ? Math.round(100 * P / M) + " %" : "–"}</div><div class="mb-s">${P} von ${M} Punkten</div></div>
+        <div class="mb-kachel"><div class="mb-l">Lernserie</div><div class="mb-z">${serie ? "🔥 " + serie : "–"}</div><div class="mb-s">${serie === 1 ? "Tag" : "Tage"} in Folge · ${aktiveTage} aktive Tage (4 Wochen)</div></div>
+        <div class="mb-kachel"><div class="mb-l">Anwesenheit</div><div class="mb-z">${vorbei.length ? Math.round(100 * da / vorbei.length) + " %" : "–"}</div><div class="mb-s">${vorbei.length ? `${da} von ${vorbei.length} Unterrichtstagen` : "noch keine Termine"}</div></div>
+      </div>
+
+      ${weiter ? `<a class="mb-weiter" href="lektion.html?id=${encodeURIComponent(weiter.l.id)}"><span style="font-size:1.6rem">▶️</span><span><span class="klein muted">${esc(weiter.txt)}</span><br><b>${esc(kuerzel(weiter.l))} · ${esc(weiter.l.titel)}</b>
+        <span class="fa" style="color:var(--lapis);margin-inline-start:8px">${esc(weiter.l.titelFa || "")}</span></span><span class="mb-pfeil">›</span></a>` : ""}
+
+      <div class="m-raster">
+        <div>
+          <div class="karte"><h2>📅 Meine Termine</h2>
+            ${heuteT.map(t => t.ausfall ? `<div class="mb-heute-k" style="background:var(--granat-hell);border-color:#efc2bd"><b>Heute fällt der Unterricht aus.</b>${t.notiz ? `<span class="klein">${esc(t.notiz)}</span>` : ""}</div>`
+              : `<div class="mb-heute-k"><div><b>Heute · ${esc(zeitT(t))}</b><div>${esc(t.thema || "Unterricht")}</div>${t.notiz ? `<div class="klein muted">${esc(t.notiz)}</div>` : ""}</div>
+                ${anw[t.id] ? `<span class="mb-st mb-${anw[t.id].s}">${STATUS[anw[t.id].s]}</span>` : `<button class="btn safran" data-dabin="${t.id}">✋ Ich bin da</button>`}</div>`).join("")}
+            <h3 class="klein" style="margin:6px 0 0;color:var(--tinte2)">KOMMEND</h3>
+            ${kommend.length ? kommend.slice(0, 6).map(t => terminZeile(t, false)).join("") + (kommend.length > 6 ? `<div class="versteckt" id="mehrK">${kommend.slice(6).map(t => terminZeile(t, false)).join("")}</div><button class="mb-mehr" data-mehr="mehrK">+ ${kommend.length - 6} weitere</button>` : "")
+              : `<p class="klein muted">Noch keine weiteren Termine eingetragen.</p>`}
+            ${vergangen.length ? `<h3 class="klein" style="margin:14px 0 0;color:var(--tinte2)">VERGANGEN – zum Nachholen: Was war Thema?</h3>
+              ${vergangen.slice(0, 5).map(t => terminZeile(t, true)).join("")}${vergangen.length > 5 ? `<div class="versteckt" id="mehrV">${vergangen.slice(5).map(t => terminZeile(t, true)).join("")}</div><button class="mb-mehr" data-mehr="mehrV">+ ${vergangen.length - 5} ältere</button>` : ""}` : ""}
+            ${!termine.length ? `<p class="klein muted">Deine Lehrkraft hat noch keine Unterrichtstage eingetragen.</p>` : ""}
+          </div>
+          <div class="karte" style="margin-top:14px"><h2>📈 Meine letzten 4 Wochen</h2>
+            <div class="mb-woche">${tage28.map(x => `<i class="${x.n ? "" : "mb-null"} ${x.d === h ? "mb-heute" : ""}" style="height:${x.n ? Math.max(8, Math.round(100 * x.n / maxN)) : 4}%" title="${ausIso(x.d).toLocaleDateString("de-DE")}: ${x.n} Station(en)"></i>`).join("")}</div>
+            <div class="mb-woche-ach"><span>vor 4 Wochen</span><span>heute</span></div>
+            <p class="klein muted" style="margin-bottom:0">Jeder Balken ist ein Tag – je höher, desto mehr Stationen. Regelmäßig ein bisschen ist besser als selten viel!</p>
+          </div>
+          <div class="karte" style="margin-top:14px"><h2>🏅 Abzeichen</h2>
+            <div class="mb-abz">${ABZ.map(([i, t, ok]) => `<span class="${ok ? "" : "mb-zu"}">${i} ${esc(t)}</span>`).join("")}</div></div>
+        </div>
+        <div>
+          <div class="karte"><h2>🧭 Mein Lernfortschritt</h2><p class="klein muted" style="margin:0">Tippe eine Lektion an, um weiterzumachen.</p>${berHTML ? "" : `<p class="muted">Für deine Klasse ist noch kein Bereich freigeschaltet.</p>`}</div>
+          ${berHTML}
+        </div>
+      </div>`;
+    $$("[data-mehr]").forEach(b => b.onclick = () => { $("#" + b.dataset.mehr).classList.remove("versteckt"); b.remove(); });
+    $$("[data-dabin]").forEach(b => b.onclick = async () => {
+      b.disabled = true; b.textContent = "Wird gemeldet …";
+      try { const j = Date.now(); await F.mitTimeout(F.ref(`anwesenheit/${s.klasse}/${b.dataset.dabin}/${s.code}`).set({ s: "gemeldet", ts: j, gemeldet: j, von: "tn" }), 8000); F.toast("Danke! Deine Lehrkraft bestätigt deine Anwesenheit."); }
+      catch (e) { F.toast("Melden hat nicht geklappt – bitte noch einmal versuchen."); }
+      start();
+    });
+  }
+  start();
+})();
+</script>
+</body>
+</html>

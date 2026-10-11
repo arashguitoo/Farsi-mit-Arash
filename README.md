@@ -156,3 +156,9 @@ Persisches `ی` und `ک` (nicht arabisch `ي`/`ك`), Schrift Vazirmatn, Lektion 
 - **Startseite der Teilnehmenden:** nächste Termine, Ausfälle und die eigene Anwesenheitsquote.
 - Firebase: `farsi/termine/{klasse}/{termin}` und `farsi/anwesenheit/{klasse}/{termin}/{code}`. Teilnehmende dürfen nur „gemeldet“ schreiben – bestätigen kann nur die Lehrkraft. **Nach dem Update die Regeln aus `firebase-regeln.json` in Firebase → Realtime Database → Regeln einfügen und veröffentlichen.**
 
+## Mein Bereich (`mein.html`)
+
+Persönliche Seite für Teilnehmende (nur mit Code), erreichbar über „👤 Mein Bereich“ auf der Startseite:
+Kennzahlen (Stationen, Erfolgsquote, Lernserie, Anwesenheit), „Weiterlernen“ (zuletzt geübte bzw. nächste offene Lektion), alle Termine mit Thema und Notiz – auch vergangene mit eigenem Anwesenheitsstatus, damit man Verpasstes nachholen kann –, Aktivität der letzten 4 Wochen, Abzeichen und der Lernfortschritt je Bereich und Lektion.
+`index.json` enthält dafür je Lektion die Station-IDs des Lernpfads (`haupt`) und die Zahl der Zusatz-Stationen (`zusatzAnz`); beides erzeugt `index_bauen.py`.
+
