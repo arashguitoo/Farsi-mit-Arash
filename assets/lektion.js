@@ -65,14 +65,15 @@
             <div class="formen">${(b.traeger || []).map(t => `<div class="form" ${say(t.fa)}><div class="g">${esc(t.fa)}</div><div class="l">${esc(t.tr)}</div></div>`).join("")}</div>
           </div></div>`;
       }
-      const f = formen(b.fa, b.verbindet !== false);
+      const nurAnfang = b.nurAnfang || b.fa === "آ";   // آ steht (fast) nur am Wortanfang
+      const f = nurAnfang ? [b.fa, b.fa] : formen(b.fa, b.verbindet !== false);
       return `<div class="bst-eintrag">
         <button class="bst-gross ${b.verbindet === false ? "nv" : ""}" ${say(b.nameFa || b.fa)} aria-label="${esc(b.name)}">${esc(b.fa)}</button>
         <div class="bst-info">
           <h3>${esc(b.name)} <span class="fa" style="color:var(--lapis)">${esc(b.nameFa || "")}</span> <span class="tr">– ${esc(b.laut)}</span></h3>
           ${b.hinweis ? `<div class="klein">${b.hinweis}</div>` : ""}
           ${b.verbindet === false ? `<span class="nv-hinweis">verbindet sich nicht nach links</span>` : ""}
-          <div class="formen">${f.map((g, i) => `<div class="form"><div class="g">${g}</div><div class="l">${FORM_LABEL[i]}</div></div>`).join("")}</div>
+          <div class="formen">${f.map((g, i) => `<div class="form"><div class="g">${g}</div><div class="l">${FORM_LABEL[i]}</div></div>`).join("")}${nurAnfang ? `<div class="form" style="opacity:.75"><div class="g">ا</div><div class="l" dir="ltr">Mitte/Ende ohne Madde</div></div>` : ""}</div>
           ${b.beispiel ? `<div style="margin-top:8px">Beispiel: <span class="fa" style="font-size:1.5rem;font-weight:700">${esc(b.beispiel.fa)}</span> <span class="tr us">${esc(b.beispiel.tr)}</span> <span class="de">${esc(b.beispiel.de || "")}</span> ${hoer(b.beispiel.fa, b.beispiel.audio)}</div>` : ""}
         </div></div>`;
     }).join("");
