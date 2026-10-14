@@ -25,9 +25,9 @@ window.TRUHE = {
         { id: "b2", wer: "B", fa: "روزِ اولِ کارم در روزنامه خیلی هیجان‌انگیز بود. صبحِ زود با اتوبوسِ شماره‌ی هفت به دفترِ روزنامه رفتم." },
         { id: "b3", wer: "B", fa: "رئیسم، آقای کاظمی، مردی است که همیشه عینکِ گرد می‌زند و خیلی تند حرف می‌زند. او یک دوربینِ قدیمی به من داد و گفت: «امروز از بازار عکس بگیر!»" },
         { id: "a3", wer: "A", fa: "من تا آن روز هرگز تنها در بازارِ تهران نبودم. در بازار گم شدم، اما یک فروشنده‌ی مهربان راه را نشانم داد." },
-        { id: "a4", wer: "A", fa: "عصر عکس‌هایم را به آقای کاظمی نشان دادم. او گفت: «اگر هر روز این‌طور کار کنی، یک روز عکاسِ معروفی می‌شوی.»" },
+        { id: "a4", wer: "A", fa: "عصر عکس‌هایم را به آقای کاظمی نشان دادم. او گفت: «عکس‌هایت خیلی خوب‌اند! تو یک روز عکاسِ معروفی خواهی شد.»" },
         { id: "b4", wer: "B", fa: "خیلی خوشحال شدم و آن شب برای اولین بار در تهران خوب خوابیدم." },
-        { id: "a5", wer: "A", fa: "راستی، یک رازِ کوچک: اگر یک روز چیزی را در صندوقچه‌ام قفل کردم، اولین رقمِ رمز شماره‌ی همان اتوبوسِ روزِ اول است." },
+        { id: "a5", wer: "A", fa: "راستی، یک رازِ کوچک: اولین رقمِ رمزِ صندوقچه‌ام شماره‌ی همان اتوبوسِ روزِ اول است." },
         { id: "b5", wer: "B", fa: "دلم برای تو و مامان خیلی تنگ شده است. زود برایم نامه بنویس! با عشق، پروین" }
       ],
       loesung: ["a1", "b1", "a2", "b2", "b3", "a3", "a4", "b4", "a5", "b5"],
@@ -38,7 +38,7 @@ window.TRUHE = {
         { wer: "B", frage: "Wer hat am Busbahnhof auf Parvin gewartet?", opt: ["Tante Manijeh", "Simin", "Herr Kazemi"] },
         { wer: "A", frage: "<span class='fa'>… خانه‌اش که در یک کوچه‌ی آرام … است</span> – worauf bezieht sich <span class='fa'>که</span>?", opt: ["auf das Haus", "auf die Tante", "auf den Park"] },
         { wer: "B", frage: "Was hat Herr Kazemi Parvin gegeben?", opt: ["eine alte Kamera", "eine runde Brille", "eine Busfahrkarte"] },
-        { wer: "A", frage: "<span class='fa'>اگر هر روز این‌طور کار کنی، … می‌شوی</span> – was für ein Satz ist das?", opt: ["eine reale Bedingung", "eine irreale Bedingung", "ein Relativsatz"] },
+        { wer: "A", frage: "<span class='fa'>تو یک روز عکاسِ معروفی خواهی شد</span> – welche Zeitform ist <span class='fa'>خواهی شد</span>?", opt: ["Futur", "Präteritum", "Perfekt"] },
         { wer: "B", frage: "🔑 Und jetzt: Was ist die <b>erste Ziffer</b> des Codes?", opt: ["7", "3", "1"], ziffer: 7 }
       ] },
     { nr: 2, titel: "Das Fotoalbum", fa: "آلبومِ عکس", icon: "📷", minuten: 20,
@@ -102,7 +102,7 @@ window.TRUHE = {
       fragen: [
         { wer: "B", frage: "Imperativ von <span class='fa'>رفتن</span> (du):", opt: ["<span class='fa'>برو</span>", "<span class='fa'>بروی</span>", "<span class='fa'>رفتی</span>"] },
         { wer: "A", frage: "<span class='fa'>بپیچ</span> kommt von …", opt: ["<span class='fa'>پیچیدن</span> – abbiegen", "<span class='fa'>پختن</span> – kochen", "<span class='fa'>پوشیدن</span> – anziehen"] },
-        { wer: "B", frage: "<span class='fa'>وقتی به مدرسه رسیدی، …</span> bedeutet:", opt: ["Wenn du bei der Schule angekommen bist, …", "Weil du in der Schule warst, …", "Bevor du zur Schule gehst, …"] },
+        { wer: "B", frage: "<span class='fa'>وقتی به مدرسه رسیدی، …</span> bedeutet:", opt: ["Sobald du bei der Schule angekommen bist, …", "Weil du in der Schule warst, …", "Bevor du zur Schule gehst, …"] },
         { wer: "A", frage: "🔑 Was ist die <b>dritte Ziffer</b> des Codes?", opt: ["2", "9", "1"], ziffer: 2 }
       ] },
     { nr: 4, titel: "Das Telefonat", fa: "تلفن", icon: "☎️", minuten: 20,
@@ -112,8 +112,8 @@ window.TRUHE = {
         { id: "s1", wer: "B", fa: "سیمین: الو؟ پروین، تویی؟ صدایت خیلی ضعیف است!" },
         { id: "p1", wer: "A", fa: "پروین: سلام سیمین جان! بله، منم. از تلفنِ خانه‌ی همسایه زنگ می‌زنم." },
         { id: "s2", wer: "B", fa: "سیمین: چه خبر؟ کارت در روزنامه چطور است؟" },
-        { id: "p2", wer: "A", fa: "پروین: عالی است! فردا برای یک گزارش به اصفهان می‌روم. اگر وقت داشته باشم، برایت یک هدیه می‌خرم." },
-        { id: "s3", wer: "B", fa: "سیمین: وای، اگر من هم با تو می‌آمدم، خیلی خوب بود!" },
+        { id: "p2", wer: "A", fa: "پروین: عالی است! فردا برای یک گزارش به اصفهان می‌روم و برایت یک هدیه می‌خرم." },
+        { id: "s3", wer: "B", fa: "سیمین: وای، چه خوب! من هم دوست دارم با تو بیایم!" },
         { id: "p3", wer: "A", fa: "پروین: دفعه‌ی بعد با هم می‌رویم. راستی، صندوقچه‌ای که مامان به من داد، حالا در خانه‌ی من است." },
         { id: "s4", wer: "B", fa: "سیمین: همان صندوقچه‌ی چوبی؟ رمزش را عوض کردی؟" },
         { id: "p4", wer: "A", fa: "پروین: بله! آخرین رقمش تعدادِ نوه‌هایی است که آرزو دارم یک روز داشته باشم." },
@@ -125,7 +125,7 @@ window.TRUHE = {
       tipps: ["Simin ruft nicht an – sie nimmt den Hörer ab: <span class='fa'>الو؟</span>",
         "Erst geht es um die Arbeit und die Reise nach Isfahan, dann um die Truhe – und ganz am Ende um die Enkel."],
       fragen: [
-        { wer: "A", frage: "<span class='fa'>اگر من هم با تو می‌آمدم، خیلی خوب بود</span> – was drückt Simin aus?", opt: ["einen irrealen Wunsch", "eine reale Bedingung", "eine Frage"] },
+        { wer: "A", frage: "Was möchte Simin?", opt: ["mit Parvin nach Isfahan fahren", "ein Geschenk kaufen", "bei der Zeitung arbeiten"] },
         { wer: "B", frage: "Wohin fährt Parvin morgen?", opt: ["nach Isfahan", "nach Schiras", "nach Teheran"] },
         { wer: "A", frage: "<span class='fa'>آرزو دارم … داشته باشم</span> – welche Form ist <span class='fa'>داشته باشم</span>?", opt: ["Konjunktiv", "Präteritum", "Futur"] },
         { wer: "B", frage: "🔑 Was ist die <b>vierte Ziffer</b> des Codes?", opt: ["5", "2", "7"], ziffer: 5 }
@@ -137,7 +137,7 @@ window.TRUHE = {
   ],
   ende: {
     brief: ["عزیزانِ من، سلام!",
-      "اگر این نامه را می‌خوانید، یعنی رمزِ صندوقچه را پیدا کرده‌اید. آفرین!",
+      "شما این نامه را می‌خوانید، پس رمزِ صندوقچه را پیدا کرده‌اید. آفرین!",
       "در این صندوقچه چند چیزِ کوچک است که برای من خیلی مهم‌اند:",
       "اولین دوربینم که آقای کاظمی به من داد،",
       "عکسِ من و سیمین جلوی درِ سبز در شیراز،",
@@ -149,7 +149,7 @@ window.TRUHE = {
     aufgabe: {
       titel: "Eure eigene Erinnerungstruhe",
       text: "Bereitet zu zweit eine kurze Präsentation für das Plenum vor (ca. 3 Minuten pro Team): Jede Person legt <b>drei Dinge</b> in ihre Erinnerungstruhe und erzählt zu jedem Ding einen oder zwei Sätze.",
-      hilfen: ["… را در صندوقچه‌ام می‌گذارم، چون …", "این همان … است که …", "وقتی … بودم، …", "اگر یک روز نوه‌هایم این را ببینند، …", "این برای من از … مهم‌تر است."]
+      hilfen: ["… را در صندوقچه‌ام می‌گذارم، چون …", "این همان … است که …", "وقتی … بودم، …", "این را از … گرفتم.", "این برای من از … مهم‌تر است."]
     }
   }
 };
