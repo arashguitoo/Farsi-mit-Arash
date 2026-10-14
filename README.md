@@ -162,3 +162,16 @@ Persönliche Seite für Teilnehmende (nur mit Code), erreichbar über „👤 Me
 Kennzahlen (Stationen, Erfolgsquote, Lernserie, Anwesenheit), „Weiterlernen“ (zuletzt geübte bzw. nächste offene Lektion), alle Termine mit Thema und Notiz – auch vergangene mit eigenem Anwesenheitsstatus, damit man Verpasstes nachholen kann –, Aktivität der letzten 4 Wochen, Abzeichen und der Lernfortschritt je Bereich und Lektion.
 `index.json` enthält dafür je Lektion die Station-IDs des Lernpfads (`haupt`) und die Zahl der Zusatz-Stationen (`zusatzAnz`); beides erzeugt `index_bauen.py`.
 
+## Aktivitäten (`aktivitaeten.html`)
+
+Sammelstelle für **Live-Aktivitäten** (die Lehrkraft startet eine Runde und bekommt einen Spielcode) und **zusätzliches Material** (z. B. `material/persisch-schreiben-uebungsheft.pdf`). Neue Einträge oben in `aktivitaeten.html` im Objekt `AKTIVITAETEN` ergänzen. Erreichbar über „🎲 Aktivitäten“ auf der Startseite, in „Mein Bereich“ und in der Konsole.
+
+### Live: „Das Geheimnis von Omas Truhe“ (`live-truhe.html`, Inhalte in `assets/live-truhe-daten.js`)
+Schatzsuche für Zweierteams (Person A / B), ca. 120 Minuten, Wiederholung Grundkurs ab Fortgeschritten 1. Jede Person sieht nur ihre Hälfte der Hinweise – ohne Sprechen auf Persisch geht es nicht weiter.
+1. **Der Brief** – 10 Abschnitte ordnen (A hat 5, B hat 5), dann Fragen → Ziffer 7
+2. **Das Fotoalbum** – B liest die Beschreibung, A findet das Foto; A beschreibt, B hakt ab → Ziffer 4
+3. **Der Stadtplan** – Wegbeschreibung im Imperativ, zwei Wege mit Rollentausch → Ziffer 2
+4. **Das Telefonat** – Dialog ordnen, mit verteilten Rollen lesen → Ziffer 5
+5. **Das Schloss** – A stellt Ziffer 1–2 ein, B Ziffer 3–4 → Truhe öffnet sich, Omas Brief + Sprechaufgabe „Eure Erinnerungstruhe“ fürs Plenum
+Leitung: `live-truhe.html?leitung=1` (nur angemeldet in der Konsole) – Teams automatisch einteilen, Live-Stand, Beamer-Ansicht, Nachrichten an alle, Lösungen. Firebase: `farsi/live/truhe/{code}` (Regeln in `firebase-regeln.json`).
+

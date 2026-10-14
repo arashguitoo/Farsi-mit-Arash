@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Omas Truhe · Live · Farsi-Lernpfad</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Vazirmatn:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css">
+<style>
+  .wrap{max-width:1000px}
+  .lv-code{font-size:3rem;font-weight:800;letter-spacing:.2em;color:var(--lapis);text-align:center}
+  .lv-kopf{display:flex;gap:12px;align-items:center;flex-wrap:wrap;justify-content:space-between;margin:14px 0}
+  .lv-chip{display:inline-flex;gap:6px;align-items:center;border:1px solid var(--linie);border-radius:999px;padding:4px 12px;background:#fff;font-weight:800;font-size:.85rem}
+  .lv-chip.a{background:#e9f0ef;border-color:#9fbcb8}
+  .lv-chip.b{background:#f6f0e4;border-color:#e0c995}
+  .stationen{display:flex;gap:6px;flex-wrap:wrap}
+  .st-punkt{display:inline-flex;gap:5px;align-items:center;border-radius:999px;padding:4px 10px;font-size:.8rem;font-weight:800;background:var(--papier2);color:var(--tinte2)}
+  .st-punkt.akt{background:var(--safran-hell);color:#8a5400;box-shadow:inset 0 0 0 2px var(--safran)}
+  .st-punkt.ok{background:var(--gruen-hell);color:var(--gruen)}
+  .auftrag{background:var(--lapis-hell);border-radius:14px;padding:12px 14px;margin-bottom:12px}
+  .slots{display:grid;gap:6px;counter-reset:s}
+  .slot{display:grid;grid-template-columns:34px 1fr auto;gap:8px;align-items:center;border:1.5px dashed var(--linie);border-radius:12px;padding:8px 10px;min-height:46px;background:#fff;cursor:pointer}
+  .slot .n{font-weight:800;color:var(--tinte2);text-align:center}
+  .slot.voll{border-style:solid}
+  .slot.gewaehlt{box-shadow:0 0 0 3px var(--safran)}
+  .slot.eigen{background:#fff}
+  .slot.fremd{background:var(--papier2)}
+  .slot .txt{font-family:var(--fa);direction:rtl;text-align:right;font-size:1.08rem;line-height:1.8}
+  .slot .platz{color:var(--tinte2);font-size:.85rem}
+  .karten{display:grid;gap:8px;margin-top:12px}
+  .karte-t{border:1.5px solid var(--lapis);border-radius:12px;padding:10px 12px;background:#fff;cursor:pointer;display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:center}
+  .karte-t:hover{background:var(--lapis-hell)}
+  .karte-t .txt{font-family:var(--fa);direction:rtl;text-align:right;font-size:1.1rem;line-height:1.9}
+  .lbl{display:inline-block;min-width:34px;text-align:center;font-weight:800;border-radius:8px;padding:2px 6px;font-size:.85rem}
+  .lbl.A{background:#e9f0ef;color:var(--lapis)}
+  .lbl.B{background:#f6f0e4;color:#8a5400}
+  .fotos{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+  @media (max-width:600px){.fotos{grid-template-columns:repeat(2,1fr)}}
+  .foto{border:2px solid var(--linie);border-radius:12px;background:#fff;cursor:pointer;padding:6px}
+  .foto:hover{border-color:var(--lapis)}
+  .foto.falsch{opacity:.35}
+  .foto.richtig{border-color:var(--gruen);box-shadow:0 0 0 3px var(--gruen-hell)}
+  .beschr{font-family:var(--fa);direction:rtl;text-align:right;font-size:1.2rem;line-height:2.1;background:#fff;border-radius:12px;padding:12px 16px;border:1px solid var(--linie)}
+  .stadt{display:grid;grid-template-columns:repeat(7,1fr);gap:0;max-width:560px;margin:0 auto;border-radius:12px;overflow:hidden;border:2px solid #b8c2cc}
+  .zelle{aspect-ratio:1;display:grid;place-items:center;font-size:.7rem;text-align:center;line-height:1.1;position:relative}
+  .zelle.strasse{background:#e6e9ec}
+  .zelle.block{background:#fbfaf6;border:1px solid #e3ded2;cursor:pointer}
+  .zelle.block:hover{outline:3px solid var(--lapis);z-index:2}
+  .zelle .em{font-size:1.5rem}
+  .zelle .nm{font-family:var(--fa);font-size:.72rem}
+  .zelle .haus{width:72%;height:62%;border-radius:4px;display:grid;place-items:center;font-weight:800;font-size:1.05rem;color:#1e2a44;border:1px solid rgba(0,0,0,.15)}
+  .zelle.falsch{opacity:.35}
+  .zelle.richtig{outline:4px solid var(--gruen);z-index:3}
+  .zelle .metro{font-size:1.4rem}
+  .frage{border:1px solid var(--linie);border-radius:14px;padding:12px 14px;margin-bottom:10px;background:#fff}
+  .frage.dran{box-shadow:0 0 0 2px var(--safran)}
+  .frage .wer{font-size:.78rem;font-weight:800;color:var(--tinte2);margin-bottom:4px}
+  .opts{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+  .opts button{border:1.5px solid var(--linie);background:#fff;border-radius:12px;padding:8px 14px;font:inherit;font-weight:700;cursor:pointer}
+  .opts button:disabled{cursor:default;opacity:.75}
+  .opts button.ok{background:var(--gruen-hell);border-color:var(--gruen)}
+  .opts button.no{background:var(--granat-hell);border-color:var(--granat);text-decoration:line-through}
+  .notiz{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+  .ziffer{width:46px;height:56px;border-radius:10px;border:2px solid var(--linie);display:grid;place-items:center;font-size:1.6rem;font-weight:800;background:#fff}
+  .ziffer.da{border-color:var(--gruen);background:var(--gruen-hell)}
+  .schloss{display:flex;gap:10px;justify-content:center;margin:16px 0}
+  .rad{display:grid;gap:4px;justify-items:center}
+  .rad button{border:1px solid var(--linie);background:#fff;border-radius:8px;width:52px;font-size:1.1rem;cursor:pointer}
+  .rad .wert{width:60px;height:72px;border-radius:12px;background:#2f3a4a;color:#fff;display:grid;place-items:center;font-size:2.2rem;font-weight:800}
+  .rad.fremd .wert{background:#c9ced6;color:#fff}
+  .truhe{font-size:5rem;text-align:center;margin:10px 0}
+  .brief{font-family:var(--fa);direction:rtl;text-align:right;font-size:1.25rem;line-height:2.2;background:#fffdf6;border:1px solid #eadfc4;border-radius:14px;padding:16px 20px}
+  .hilfen{display:grid;gap:4px}
+  .hilfen div{font-family:var(--fa);direction:rtl;text-align:right;font-size:1.1rem;background:#fff;border-radius:10px;padding:6px 12px;border:1px solid var(--linie)}
+  .tn-liste{display:grid;gap:6px}
+  .tn-zeile{display:flex;gap:8px;align-items:center;flex-wrap:wrap;border:1px solid var(--linie);border-radius:12px;padding:8px 10px;background:#fff}
+  .tn-zeile b{min-width:110px}
+  .tn-zeile .btn.an{background:var(--lapis);color:#fff}
+  .team-k{border:1px solid var(--linie);border-radius:16px;padding:14px;background:#fff}
+  .team-gitter{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px}
+  .gross-p{font-size:2.2rem;font-weight:800}
+  .beamer h1{font-size:2rem;margin:0}
+  .beamer .fa-titel{font-family:var(--fa);font-size:1.6rem;color:var(--lapis)}
+  .rang{font-size:1.2rem}
+  .meldung{background:var(--safran-hell);border:1px solid #e6d3ad;border-radius:12px;padding:10px 14px;margin:10px 0;font-weight:700}
+  .klein-h{font-size:.8rem;font-weight:800;color:var(--tinte2);text-transform:uppercase;letter-spacing:.04em;margin:14px 0 6px}
+  @media (max-width:600px){.lv-code{font-size:2.2rem}.stadt{max-width:100%}.zelle .em{font-size:1.1rem}.zelle .nm{display:none}}
+</style>
+</head>
+<body>
+<header class="kopf">
+  <div class="wrap">
+    <a href="aktivitaeten.html" class="medaillon" style="text-decoration:none">فا</a>
+    <div><h1>Omas Truhe</h1><div class="unter">Live-Aktivität · Farsi-Lernpfad</div></div>
+    <div class="rechts"><span class="kopf-btn" id="kopfInfo" style="background:transparent;border-color:transparent"></span><a class="kopf-btn" href="aktivitaeten.html">← Aktivitäten</a></div>
+  </div>
+</header>
+<main class="wrap" style="padding-bottom:60px"><div id="app"><p class="muted" style="margin-top:30px">Lade …</p></div></main>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+<script src="assets/core.js"></script>
+<script src="assets/live-truhe-daten.js"></script>
+<script>
+(function () {
+  const F = window.FARSI, { $, $$, esc, toast } = F, D = window.TRUHE;
+  const SPIEL = "truhe";
+  const qs = new URLSearchParams(location.search);
+  const MODUS = qs.get("leitung") ? "leitung" : "spieler";
+  let CODE = (qs.get("code") || "").replace(/\D/g, "") || null;
+  let G = null, REF = null, ME = null, auswahlSlot = null, BEAMER = qs.get("beamer") === "1";
+  const ST = nr => D.stationen.find(s => s.nr === nr);
+  const fa = t => `<span class="fa">${esc(t)}</span>`;
+  const mm = ms => { const s = Math.max(0, Math.floor(ms / 1000)); return Math.floor(s / 60) + ":" + String(s % 60).padStart(2, "0"); };
+
+  /* ---------- Firebase ---------- */
+  const gRef = c => F.ref(`live/${SPIEL}/${c}`);
+  function hoere(c) {
+    if (REF) REF.off();
+    REF = gRef(c);
+    REF.on("value", s => { G = s.val(); zeichne(); }, e => fehler(e));
+  }
+  function fehler(e) {
+    console.error(e);
+    $("#app").innerHTML = `<div class="karte" style="margin-top:20px"><b>Firebase lässt den Zugriff nicht zu.</b><p class="klein">Lehrkraft: Bitte die aktuellen Regeln aus <code>firebase-regeln.json</code> in Firebase → Realtime Database → Regeln veröffentlichen.</p></div>`;
+  }
+  const schreib = (pfad, wert) => gRef(CODE).child(pfad).set(wert).catch(fehler);
+  const upd = obj => gRef(CODE).update(obj).catch(fehler);
+
+  /* =====================================================================
+     LEITUNG (Lehrkraft)
+     ===================================================================== */
+  function startLeitung() {
+    F.initFB();
+    firebase.auth().onAuthStateChanged(u => {
+      if (!u) { $("#app").innerHTML = `<div class="karte" style="margin-top:20px"><h2>Nur für Lehrkräfte</h2><p>Bitte melde dich zuerst in der <a href="konsole.html">Konsole</a> an und öffne die Aktivität dann über <b>🎲 Aktivitäten</b>.</p></div>`; return; }
+      if (CODE) hoere(CODE); else zeichneNeu();
+    });
+  }
+  function zeichneNeu() {
+    $("#app").innerHTML = `<div class="karte" style="margin-top:20px">
+      <h2 style="margin-top:0">${esc(D.titel)} <span class="fa" style="color:var(--lapis)">${esc(D.titelFa)}</span></h2>
+      <p>${D.intro.de}</p>
+      <p class="klein muted">Für 2 Zweierteams (oder mehr), ca. 120 Minuten. Jede Person braucht ein eigenes Gerät. Online: Jedes Team in einen eigenen Breakout-Raum.</p>
+      <button class="btn" id="neu">▶ Neue Runde starten</button></div>`;
+    $("#neu").onclick = async () => {
+      const c = String(Math.floor(1000 + Math.random() * 9000));
+      await gRef(c).set({ erstellt: Date.now(), phase: "lobby", spieler: {}, teams: { t1: { name: "Team 1" }, t2: { name: "Team 2" } } }).catch(fehler);
+      CODE = c; history.replaceState(null, "", `?leitung=1&code=${c}`); hoere(c);
+    };
+  }
+  const spielerListe = () => Object.entries((G && G.spieler) || {}).map(([id, s]) => ({ id, ...s })).sort((a, b) => (a.ts || 0) - (b.ts || 0));
+  const teamIds = () => Object.keys((G && G.teams) || {}).sort();
+  function teamStand(t) {
+    const T = (G.teams || {})[t] || {};
+    const st = T.st || 1, teil = T.teil || "a";
+    const punkte = Object.values(T.punkte || {}).reduce((a, b) => a + b, 0);
+    return { st, teil, punkte, fertig: !!T.fertig, zeit: T.fertig ? T.fertig - (G.start || T.fertig) : Date.now() - (G.start || Date.now()), T };
+  }
+  function zeichneLeitung() {
+    if (!G) { $("#app").innerHTML = `<div class="karte" style="margin-top:20px">Diese Runde gibt es nicht (mehr). <a href="?leitung=1">Neue Runde</a></div>`; return; }
+    const sp = spielerListe(), link = location.href.replace(/[^/]*$/, "") + "live-truhe.html?code=" + CODE;
+    const kopf = `<div class="lv-kopf"><div><div class="klein muted">Spielcode</div><div class="lv-code" style="text-align:left">${CODE}</div></div>
+      <div class="btnreihe"><button class="btn zwei klein" id="beamer">${BEAMER ? "⚙️ Leitung" : "🖥️ Beamer-Ansicht"}</button>
+      ${G.phase === "lobby" ? `<button class="btn" id="start" ${sp.some(s => s.team && s.rolle) ? "" : "disabled"}>▶ Spiel starten</button>` : ""}
+      ${G.phase === "spiel" ? `<button class="btn rot klein" id="ende">⏹ Spiel beenden & Ergebnis zeigen</button>` : ""}
+      ${G.phase === "ende" ? `<button class="btn zwei klein" id="zurueck">↩ weiterspielen lassen</button>` : ""}</div></div>`;
+    if (BEAMER) return zeichneBeamer(kopf);
+    let h = kopf;
+    if (G.phase === "lobby") {
+      h += `<div class="karte"><p style="margin-top:0">Die Teilnehmenden öffnen <b>🎲 Aktivitäten</b> auf ihrer Startseite und geben den Code <b>${CODE}</b> ein – oder direkt: <span class="code" style="letter-spacing:0">${esc(link)}</span></p>
+        <div class="kopfleiste" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px"><h3 style="margin:0">Teilnehmende (${sp.length})</h3>
+        <div class="btnreihe"><button class="btn zwei klein" id="auto">🎲 Teams automatisch einteilen</button><button class="btn zwei klein" id="team3">+ Team</button></div></div>
+        <div class="tn-liste" style="margin-top:10px">${sp.length ? sp.map(s => `<div class="tn-zeile"><b>${esc(s.name)}</b>
+          ${teamIds().map(t => `<button class="btn zwei klein ${s.team === t ? "an" : ""}" data-team="${t}" data-id="${s.id}">${esc(G.teams[t].name || t)}</button>`).join("")}
+          <span style="width:10px"></span>${["A", "B"].map(r => `<button class="btn zwei klein ${s.rolle === r ? "an" : ""}" data-rolle="${r}" data-id="${s.id}">Person ${r}</button>`).join("")}
+          <button class="btn zwei klein" data-weg="${s.id}" title="entfernen">✕</button></div>`).join("") : `<p class="muted">Noch niemand da …</p>`}</div>
+        <p class="klein muted">Jedes Team braucht eine Person A und eine Person B. Bei ungerader Zahl: Eine Person spielt allein und übernimmt beide Rollen (öffnet die Seite zweimal) – oder du spielst selbst mit.</p></div>`;
+    } else {
+      const ts = teamIds().map(t => ({ t, ...teamStand(t), name: G.teams[t].name || t, leute: sp.filter(s => s.team === t) }));
+      h += `${G.nachricht ? `<div class="meldung">📢 ${esc(G.nachricht.text)}</div>` : ""}
+        <div class="team-gitter">${ts.map(x => `<div class="team-k"><div style="display:flex;justify-content:space-between;align-items:baseline"><h3 style="margin:0">${esc(x.name)}</h3><span class="gross-p">${x.punkte}</span></div>
+          <div class="klein muted">${x.leute.map(s => `${esc(s.name)} (${s.rolle || "?"})`).join(" · ") || "–"}</div>
+          <div class="stationen" style="margin:8px 0">${D.stationen.map(s => `<span class="st-punkt ${x.fertig || s.nr < x.st ? "ok" : s.nr === x.st ? "akt" : ""}">${s.icon} ${s.nr}</span>`).join("")}<span class="st-punkt ${x.fertig ? "ok" : ""}">🗝️</span></div>
+          <div class="klein">${x.fertig ? `✅ <b>Truhe geöffnet</b> nach ${mm(x.zeit)}` : `Station ${x.st} · ${x.teil === "a" ? "Rätsel" : x.teil === "c" ? "Sprechen" : "Fragen"} · ${mm(x.zeit)}`}
+            · Fehler: ${Object.values(x.T.fehl || {}).reduce((a, b) => a + b, 0)} · Tipps: ${Object.values(x.T.tipps || {}).reduce((a, b) => a + b, 0)}</div></div>`).join("")}</div>
+        <div class="karte" style="margin-top:14px"><h3 style="margin-top:0">📢 Nachricht an alle</h3>
+          <div style="display:flex;gap:8px;flex-wrap:wrap"><input class="feld" id="msg" placeholder="z. B. Noch 10 Minuten! / Bitte zurück ins Plenum." style="flex:1;min-width:220px"><button class="btn" id="senden">Senden</button><button class="btn zwei" id="msgweg">Löschen</button></div>
+          <div class="btnreihe" style="margin-top:8px">${["Noch 10 Minuten für diese Station!", "Sprecht bitte Persisch miteinander 🙂", "Bitte zurück ins Plenum."].map(t => `<button class="btn zwei klein" data-schnell="${esc(t)}">${esc(t)}</button>`).join("")}</div></div>
+        <div class="karte" style="margin-top:14px"><h3 style="margin-top:0">Lösungen (nur für dich)</h3><p class="klein">Code der Truhe: <b>${D.code.join(" – ")}</b> · Station 2: Foto mit der Nummer 4 · Station 3: gelbes Haus Nr. 2, dann grünes Haus Nr. 7 neben der Metro.</p>
+          <details><summary class="klein" style="cursor:pointer;font-weight:800">Brief und Telefonat in richtiger Reihenfolge</summary>
+          ${[1, 4].map(n => `<p class="klein"><b>${esc(ST(n).titel)}:</b></p><ol>${ST(n).loesung.map(id => `<li class="fa" style="text-align:right">${esc(ST(n).teile.find(x => x.id === id).fa)}</li>`).join("")}</ol>`).join("")}</details></div>`;
+    }
+    $("#app").innerHTML = h;
+    verdrahteLeitung();
+  }
+  function zeichneBeamer(kopf) {
+    const ts = teamIds().map(t => ({ t, ...teamStand(t), name: G.teams[t].name || t }));
+    const rang = ts.slice().sort((a, b) => (b.fertig - a.fertig) || (b.punkte - a.punkte));
+    $("#app").innerHTML = kopf + `<div class="karte beamer"><h1>${esc(D.titel)}</h1><div class="fa-titel">${esc(D.titelFa)}</div>
+      ${G.phase === "lobby" ? `<p style="font-size:1.15rem">${D.intro.de}</p><p class="fa" style="font-size:1.3rem;text-align:right">${esc(D.intro.fa)}</p><ul>${D.intro.regeln.map(r => `<li>${r}</li>`).join("")}</ul>
+        <p class="lv-code">${CODE}</p><p style="text-align:center" class="muted">🎲 Aktivitäten → Code eingeben</p>`
+      : G.phase === "ende" ? `<h2>🏆 Ergebnis</h2>${rang.map((x, i) => `<p class="rang">${["🥇", "🥈", "🥉"][i] || "•"} <b>${esc(x.name)}</b> – ${x.punkte} Punkte ${x.fertig ? `· Truhe nach ${mm(x.zeit)} geöffnet` : `· Station ${x.st}`}</p>`).join("")}`
+      : `<div class="team-gitter" style="margin-top:12px">${ts.map(x => `<div class="team-k"><h2 style="margin:0">${esc(x.name)}</h2><div class="gross-p">${x.punkte} P.</div>
+          <div class="stationen" style="margin-top:8px">${D.stationen.map(s => `<span class="st-punkt ${x.fertig || s.nr < x.st ? "ok" : s.nr === x.st ? "akt" : ""}" style="font-size:1rem">${s.icon} ${esc(s.titel)}</span>`).join("")}</div>
+          ${x.fertig ? `<p style="font-size:1.3rem">🗝️ <b>Truhe offen!</b></p>` : ""}</div>`).join("")}</div>`}
+      ${G.nachricht ? `<div class="meldung">📢 ${esc(G.nachricht.text)}</div>` : ""}</div>`;
+    verdrahteLeitung();
+  }
+  function verdrahteLeitung() {
+    const b = id => $("#" + id);
+    if (b("beamer")) b("beamer").onclick = () => { BEAMER = !BEAMER; zeichneLeitung(); };
+    if (b("start")) b("start").onclick = () => upd({ phase: "spiel", start: G.start || Date.now() });
+    if (b("ende")) b("ende").onclick = () => { if (confirm("Spiel beenden und Ergebnis anzeigen?")) upd({ phase: "ende" }); };
+    if (b("zurueck")) b("zurueck").onclick = () => upd({ phase: "spiel" });
+    if (b("team3")) b("team3").onclick = () => { const n = teamIds().length + 1; schreib(`teams/t${n}`, { name: "Team " + n }); };
+    if (b("auto")) b("auto").onclick = () => {
+      const sp = F.mischen(spielerListe()), u = {}, nt = Math.max(1, Math.ceil(sp.length / 2));
+      for (let i = teamIds().length + 1; i <= nt; i++) u[`teams/t${i}`] = { name: "Team " + i };
+      sp.forEach((s, i) => { u[`spieler/${s.id}/team`] = "t" + (Math.floor(i / 2) + 1); u[`spieler/${s.id}/rolle`] = i % 2 ? "B" : "A"; });
+      upd(u);
+    };
+    $$("[data-team]").forEach(x => x.onclick = () => schreib(`spieler/${x.dataset.id}/team`, x.dataset.team));
+    $$("[data-rolle]").forEach(x => x.onclick = () => schreib(`spieler/${x.dataset.id}/rolle`, x.dataset.rolle));
+    $$("[data-weg]").forEach(x => x.onclick = () => schreib(`spieler/${x.dataset.weg}`, null));
+    if (b("senden")) b("senden").onclick = () => { const t = b("msg").value.trim(); if (t) schreib("nachricht", { text: t, ts: Date.now() }); };
+    if (b("msgweg")) b("msgweg").onclick = () => schreib("nachricht", null);
+    $$("[data-schnell]").forEach(x => x.onclick = () => schreib("nachricht", { text: x.dataset.schnell, ts: Date.now() }));
+  }
+
+  /* =====================================================================
+     SPIELER
+     ===================================================================== */
+  async function startSpieler() {
+    if (!(await F.brauchtCode())) return;
+    const s = F.sitzung();
+    ME = s ? { id: s.code, name: s.name || s.code } : { id: "lk" + Math.random().toString(36).slice(2, 7), name: "Lehrkraft" };
+    if (CODE) beitreten(CODE); else zeichneBeitritt();
+  }
+  function zeichneBeitritt(meld) {
+    $("#app").innerHTML = `<div class="karte" style="margin-top:20px;max-width:520px;margin-inline:auto;text-align:center">
+      <div style="font-size:3rem">🗝️</div><h2 style="margin:0">${esc(D.titel)}</h2><div class="fa" style="color:var(--lapis);font-size:1.3rem">${esc(D.titelFa)}</div>
+      <p>Gib den <b>Spielcode</b> ein, den deine Lehrkraft zeigt.</p>
+      <div style="display:flex;gap:8px;justify-content:center"><input class="feld" id="code" inputmode="numeric" maxlength="4" placeholder="0000" style="max-width:140px;text-align:center;font-size:1.4rem;letter-spacing:.2em"><button class="btn" id="los">Beitreten</button></div>
+      <p class="klein" style="color:var(--granat)">${meld || ""}</p></div>`;
+    $("#los").onclick = () => beitreten(F.normCode($("#code").value).replace(/\D/g, ""));
+    $("#code").addEventListener("keydown", e => { if (e.key === "Enter") $("#los").click(); });
+  }
+  async function beitreten(c) {
+    if (!/^\d{4}$/.test(c || "")) return zeichneBeitritt("Der Code hat vier Ziffern.");
+    let g;
+    try { g = (await F.mitTimeout(gRef(c).once("value"), 8000)).val(); } catch (e) { return fehler(e); }
+    if (!g) return zeichneBeitritt("Diesen Spielcode gibt es nicht. Bitte noch einmal prüfen.");
+    CODE = c; history.replaceState(null, "", "?code=" + c);
+    const alt = (g.spieler || {})[ME.id];
+    if (!alt) await gRef(c).child("spieler/" + ME.id).set({ name: ME.name, ts: Date.now() }).catch(fehler);
+    hoere(c);
+  }
+  const ich = () => ((G && G.spieler) || {})[ME.id] || {};
+  const meinTeam = () => (G.teams || {})[ich().team] || {};
+  const teamPfad = p => `teams/${ich().team}/${p}`;
+  const partner = () => Object.values(G.spieler || {}).find(s => s.team === ich().team && s.rolle && s.rolle !== ich().rolle);
+
+  function zeichneSpieler() {
+    if (!G) return zeichneBeitritt("Diese Runde wurde beendet.");
+    const i = ich();
+    $("#kopfInfo").textContent = `${ME.name}${i.team ? " · " + ((G.teams[i.team] || {}).name || "") : ""}${i.rolle ? " · Person " + i.rolle : ""}`;
+    const msg = G.nachricht ? `<div class="meldung">📢 ${esc(G.nachricht.text)}</div>` : "";
+    if (G.phase === "lobby" || !i.team || !i.rolle) {
+      $("#app").innerHTML = `${msg}<div class="karte" style="margin-top:16px"><h2 style="margin-top:0">🗝️ ${esc(D.titel)}</h2><p>${D.intro.de}</p>
+        <p class="fa" style="font-size:1.2rem;text-align:right">${esc(D.intro.fa)}</p><ul>${D.intro.regeln.map(r => `<li>${r}</li>`).join("")}</ul>
+        <div class="auftrag">${i.team && i.rolle ? `Du bist in <b>${esc(G.teams[i.team].name)}</b> als <b>Person ${i.rolle}</b>${partner() ? ` – zusammen mit <b>${esc(partner().name)}</b>` : ""}. Gleich geht es los …` : "⏳ Warte, bis deine Lehrkraft dich einem Team zuteilt …"}</div></div>`;
+      return;
+    }
+    if (G.phase === "ende") return zeichneErgebnis(msg);
+    const T = meinTeam(), st = T.fertig ? 6 : (T.st || 1), teil = T.teil || "a";
+    let h = msg + `<div class="lv-kopf"><div class="stationen">${D.stationen.map(s => `<span class="st-punkt ${s.nr < st ? "ok" : s.nr === st ? "akt" : ""}">${s.icon} ${esc(s.titel)}</span>`).join("")}</div>
+      <span class="lv-chip ${i.rolle === "A" ? "a" : "b"}">Person ${i.rolle}${partner() ? " · mit " + esc(partner().name) : ""}</span></div>`;
+    h += notizbuch(T);
+    if (st === 6) h += truheOffen(T);
+    else {
+      const S = ST(st);
+      h += `<div class="karte"><h2 style="margin-top:0">${S.icon} Station ${S.nr}: ${esc(S.titel)} <span class="fa" style="color:var(--lapis)">${esc(S.fa)}</span></h2>`;
+      if (teil === "a") h += `<div class="auftrag">${S.auftrag}</div>` + ({ ordnen: stOrdnen, suchbild: stSuchbild, karte: stKarte, schloss: stSchloss }[S.typ])(S, T);
+      else if (teil === "c") h += stZwischen(S, T);
+      else h += stFragen(S, T);
+      h += tippBox(S, T) + `</div>`;
+    }
+    $("#app").innerHTML = h;
+    verdrahteSpieler();
+  }
+  function notizbuch(T) {
+    const z = T.ziffern || {};
+    return `<div class="karte" style="margin-bottom:12px;padding:10px 14px"><div class="notiz"><b>📒 Notizbuch:</b>${[1, 2, 3, 4].map(n => `<span class="ziffer ${z[n] != null ? "da" : ""}">${z[n] != null ? z[n] : "?"}</span>`).join("")}
+      <span class="klein muted" style="margin-left:auto">Punkte: <b>${Object.values(T.punkte || {}).reduce((a, b) => a + b, 0)}</b></span></div></div>`;
+  }
+  function tippBox(S, T) {
+    const n = ((T.tipps || {})[S.nr]) || 0, tp = S.tipps || [];
+    return `<div style="margin-top:14px;border-top:1px solid var(--linie);padding-top:10px">${tp.slice(0, n).map((t, i) => `<div class="meldung" style="font-weight:400">💡 Tipp ${i + 1}: ${t}</div>`).join("")}
+      ${n < tp.length ? `<button class="btn zwei klein" id="tipp">💡 Tipp anzeigen (−15 Punkte)</button>` : ""}</div>`;
+  }
+  /* --- Station: Ordnen (Brief / Telefonat) --- */
+  function stOrdnen(S, T) {
+    const r = ich().rolle, slots = ((T["s" + S.nr] || {}).slots) || Array(S.teile.length).fill(null);
+    const belegt = new Set(slots.filter(Boolean));
+    const meine = S.teile.filter(t => t.wer === r), fremd = S.teile.filter(t => t.wer !== r);
+    const lab = t => t.wer + (S.teile.filter(x => x.wer === t.wer).indexOf(t) + 1);
+    const voll = slots.every(Boolean), fb = (T.feedback || {})[S.nr];
+    return `<div class="klein-h">Eure gemeinsame Reihenfolge</div><div class="slots">${slots.map((id, i) => {
+        const t = id && S.teile.find(x => x.id === id);
+        return `<div class="slot ${t ? "voll" : ""} ${t && t.wer === r ? "eigen" : t ? "fremd" : ""} ${auswahlSlot === i ? "gewaehlt" : ""}" data-slot="${i}"><span class="n">${i + 1}</span>
+          ${t ? (t.wer === r ? `<span class="txt">${esc(t.fa)}</span>` : `<span class="platz">🔒 Karte <span class="lbl ${t.wer}">${lab(t)}</span> von ${esc((partner() || {}).name || "Partner")} – lass sie dir vorlesen</span>`) : `<span class="platz">– frei –</span>`}
+          ${t && t.wer === r ? `<span class="lbl ${t.wer}">${lab(t)}</span>` : "<span></span>"}</div>`;
+      }).join("")}</div>
+      <div class="klein-h">Deine Karten (nur du siehst sie) – antippen zum Einsetzen</div>
+      <div class="karten">${meine.filter(t => !belegt.has(t.id)).map(t => `<div class="karte-t" data-karte="${t.id}"><span class="lbl ${t.wer}">${lab(t)}</span><span class="txt">${esc(t.fa)}</span></div>`).join("") || `<p class="klein muted">Alle deine Karten liegen im Brief. Zum Herausnehmen: auf deine Karte oben tippen.</p>`}</div>
+      <p class="klein muted">Tipp zum Ablauf: Erst ein leeres Feld antippen (es leuchtet), dann eine Karte – oder einfach eine Karte antippen, sie kommt ins erste freie Feld. Die Karten deines Partners kann nur dein Partner legen. Noch nicht verteilt: ${fremd.filter(t => !belegt.has(t.id)).length} Karte(n) von ${esc((partner() || {}).name || "deinem Partner")}.</p>
+      ${fb ? `<div class="meldung">${esc(fb)}</div>` : ""}
+      <button class="btn" id="pruefen" ${voll ? "" : "disabled"}>✓ Reihenfolge prüfen</button>`;
+  }
+  /* --- Station: Suchbild --- */
+  function fotoSVG(f) {
+    const groesse = w => (f.groesser === w ? 36 : 27), hut = w => f.hut === w;
+    const figur = (x, w, name) => { const hgt = groesse(w), top = 78 - hgt;
+      return `<g><rect x="${x - 6}" y="${top + 12}" width="12" height="${hgt - 12}" rx="4" fill="${w === "S" ? "#8a6bb5" : "#c27a54"}"/><circle cx="${x}" cy="${top + 6}" r="6" fill="#f0c9a5"/>
+        ${hut(w) ? `<path d="M${x - 8} ${top + 2} L${x} ${top - 9} L${x + 8} ${top + 2} Z" fill="#d23c3c"/>` : ""}
+        <text x="${x}" y="92" font-size="8" text-anchor="middle" font-family="Vazirmatn" fill="#333">${name}</text></g>`; };
+    const kf = f.katze === "schwarz" ? "#222" : "#fff";
+    const katze = `<g stroke="#555" stroke-width=".6"><ellipse cx="16" cy="12.5" rx="7" ry="3.2" fill="${kf}"/><circle cx="24" cy="10.5" r="3" fill="${kf}"/>
+      <path d="M22 8.6 L22.6 6 L24 8 Z M25 8 L26.4 6 L26.8 8.8 Z" fill="${kf}"/><path d="M9 12 Q5 9 7 6" fill="none"/></g>`;
+    const rad = `<g stroke="#2f3a4a" stroke-width="1.1" fill="none"><circle cx="102" cy="72" r="5"/><circle cx="116" cy="72" r="5"/><path d="M102 72 L108 64 L116 72 M108 64 L112 64 M106 64 L109 72"/></g>`;
+    const baum = `<g><rect x="107" y="58" width="4" height="20" fill="#7a5532"/><circle cx="109" cy="54" r="10" fill="#5f9a55"/></g>`;
+    return `<svg viewBox="0 0 124 96" width="100%"><rect x="0" y="0" width="124" height="78" fill="#efe6d6"/><rect x="0" y="16" width="124" height="3" fill="#d7c9ae"/>${katze}
+      <rect x="44" y="30" width="24" height="48" rx="2" fill="${f.tuer}"/><circle cx="63" cy="55" r="1.6" fill="#f3e3a0"/>
+      <rect x="49" y="22" width="14" height="7" rx="1.5" fill="#fff" stroke="#999" stroke-width=".5"/><text x="56" y="28" font-size="6.5" text-anchor="middle" font-weight="bold">${f.nr}</text>
+      ${figur(24, "P", "پروین")}${figur(82, "S", "سیمین")}${f.neben === "rad" ? rad : baum}
+      <rect x="0" y="78" width="124" height="2" fill="#b9a98a"/></svg>`;
+  }
+  function stSuchbild(S, T) {
+    const r = ich().rolle, falsch = ((T.s2 || {}).falsch) || {};
+    if (r === "B") return `<div class="klein-h">Dein Zettel – lies ihn ${esc((partner() || {}).name || "deinem Partner")} vor</div><div class="beschr">${S.beschreibung.map(esc).join("<br>")}</div>
+      <p class="klein muted">Nur ${esc((partner() || {}).name || "dein Partner")} sieht die Fotos. Beantwortet Rückfragen auf Persisch!</p>`;
+    return `<div class="klein-h">Sechs Fotos – welches ist es? (${esc((partner() || {}).name || "Dein Partner")} liest dir die Beschreibung vor)</div>
+      <div class="fotos">${S.fotos.map(f => `<div class="foto ${falsch[f.id] ? "falsch" : ""}" data-foto="${f.id}">${fotoSVG(f)}</div>`).join("")}</div>`;
+  }
+  /* --- Station: Stadtplan --- */
+  function stadtplan(S, falsch, richtig, klickbar) {
+    let h = "";
+    for (let r = 0; r < 7; r++) for (let c = 0; c < 7; c++) {
+      const k = r + "," + c, b = S.bloecke[k];
+      if (r % 2 === 0 && c % 2 === 0 && b) {
+        h += `<div class="zelle block ${falsch[k] ? "falsch" : ""} ${richtig === k ? "richtig" : ""}" ${klickbar ? `data-zelle="${k}"` : ""}>${b.haus ? `<div class="haus" style="background:${b.haus}">${b.nr}</div>` : `<div><div class="em">${b.e}</div><div class="nm">${esc(b.fa)}</div></div>`}</div>`;
+      } else h += `<div class="zelle strasse">${k === S.start ? `<span class="metro" title="Metro">🚇</span>` : ""}</div>`;
+    }
+    return `<div class="stadt">${h}</div>`;
+  }
+  function stKarte(S, T) {
+    const r = ich().rolle, s3 = T.s3 || {}, w = s3.weg || 0, W = S.wege[w], falsch = (s3.falsch || {})[w] || {};
+    const hdr = `<div class="klein-h">Weg ${w + 1} von ${S.wege.length}: ${esc(W.titel)}</div>`;
+    if (r === W.liest) return hdr + `<div class="beschr">${W.text.map(esc).join("<br>")}</div><p class="klein muted">Lies den Weg Satz für Satz vor. ${esc((partner() || {}).name || "Dein Partner")} sucht auf dem Stadtplan.</p>`;
+    return hdr + `<p class="klein">Hör gut zu und tippe auf das richtige Haus. Start: 🚇 Metro unten links.</p>` + stadtplan(S, falsch, null, true);
+  }
+  /* --- Station: Schloss --- */
+  function stSchloss(S, T) {
+    const r = ich().rolle, sch = T.schloss || {}, meine = r === "A" ? [0, 1] : [2, 3];
+    const w = i => (sch["z" + i] != null ? sch["z" + i] : 0), bereit = sch.A && sch.B, fb = (T.feedback || {})[5];
+    return `<div class="truhe">🧰</div><div class="schloss">${[0, 1, 2, 3].map(i => meine.includes(i) && !sch[r]
+        ? `<div class="rad"><button data-rad="${i}" data-d="1">▲</button><div class="wert">${w(i)}</div><button data-rad="${i}" data-d="-1">▼</button></div>`
+        : `<div class="rad fremd"><span style="height:26px"></span><div class="wert">${meine.includes(i) ? w(i) : (sch[i < 2 ? "A" : "B"] ? "✓" : "?")}</div><span style="height:26px"></span></div>`).join("")}</div>
+      <p style="text-align:center">${sch[r] ? "✅ Deine Ziffern sind eingestellt." : `<button class="btn" id="fertig">Meine Ziffern sind eingestellt</button>`}
+        ${sch[r] ? ` <button class="btn zwei klein" id="aendern">ändern</button>` : ""}</p>
+      <p style="text-align:center" class="klein muted">${sch.A ? "A ✓" : "A …"} · ${sch.B ? "B ✓" : "B …"}</p>
+      ${fb ? `<div class="meldung">${esc(fb)}</div>` : ""}
+      <p style="text-align:center"><button class="btn safran" id="oeffnen" ${bereit ? "" : "disabled"}>🗝️ Truhe öffnen</button></p>`;
+  }
+  /* --- Zwischenschritte: Beschreiben (St. 2), zweiter Weg (St. 3), Rollenspiel (St. 4) --- */
+  function stZwischen(S, T) {
+    const r = ich().rolle;
+    if (S.typ === "suchbild") {
+      const f = S.fotos.find(x => x.id === S.richtig), hk = ((T.s2 || {}).haken) || {};
+      return `<div style="max-width:280px;margin:0 auto">${fotoSVG(f)}</div><div class="auftrag">${S.beschreiben.text}</div>
+        ${r === "B" ? `<div class="tn-liste">${S.beschreiben.liste.map((x, i) => `<label class="tn-zeile"><input type="checkbox" data-haken="${i}" ${hk[i] ? "checked" : ""}> ${x}</label>`).join("")}</div>
+          <p><button class="btn" id="weiterC" ${Object.values(hk).filter(Boolean).length >= S.beschreiben.mind ? "" : "disabled"}>Weiter zu den Fragen</button> <span class="klein muted">(mindestens ${S.beschreiben.mind} Häkchen)</span></p>`
+        : `<p class="klein">Beschreibe das Foto jetzt auf Persisch. ${esc((partner() || {}).name || "Dein Partner")} hakt ab, was du sagst (${Object.values(hk).filter(Boolean).length} von ${S.beschreiben.liste.length}).</p>
+          <p class="fa" style="font-size:1.1rem;text-align:right;color:var(--tinte2)">در این عکس … · … از … بلندتر است · کنارِ در … · روی دیوار …</p>`}`;
+    }
+    if (S.typ === "ordnen") {
+      const ok = ((T.s4 || {}).gelesen) || {};
+      return `<div class="auftrag">${S.rollenspiel}</div><div class="slots">${S.loesung.map((id, i) => { const t = S.teile.find(x => x.id === id);
+          return `<div class="slot voll ${t.wer === r ? "eigen" : "fremd"}"><span class="n">${i + 1}</span><span class="txt">${esc(t.fa)}</span><span class="lbl ${t.wer}">${t.wer}</span></div>`; }).join("")}</div>
+        <p style="margin-top:12px">${ok[r] ? "✅ Du hast bestätigt." : `<button class="btn" id="gelesen">✓ Wir haben das Telefonat gelesen</button>`} <span class="klein muted">${ok.A ? "A ✓" : "A …"} · ${ok.B ? "B ✓" : "B …"}</span></p>`;
+    }
+    return "";
+  }
+  /* --- Fragen (abwechselnd A/B) --- */
+  function stFragen(S, T) {
+    const r = ich().rolle, ant = ((T.antw || {})[S.nr]) || {}, falsch = ((T.afalsch || {})[S.nr]) || {};
+    const idx = S.fragen.findIndex((q, i) => ant[i] == null);
+    return `<div class="auftrag">Beweist, dass ihr alles verstanden habt! Wer dran ist, klickt – die andere Person darf helfen.</div>` + S.fragen.map((q, i) => {
+      if (i > idx && idx !== -1) return "";
+      const dran = i === idx, meine = q.wer === r;
+      return `<div class="frage ${dran ? "dran" : ""}"><div class="wer">Frage ${i + 1} · ${meine ? "<b>du bist dran</b>" : `${esc((Object.values(G.spieler || {}).find(s => s.team === ich().team && s.rolle === q.wer) || {}).name || "Person " + q.wer)} ist dran`}</div>
+        <div>${q.frage}</div><div class="opts">${mischStabil(q.opt, S.nr * 10 + i).map(o => { const k = q.opt.indexOf(o);
+          return `<button ${dran && meine && !falsch[i + "_" + k] ? `data-antw="${i}" data-k="${k}"` : "disabled"} class="${ant[i] === k ? "ok" : falsch[i + "_" + k] ? "no" : ""}">${o}</button>`; }).join("")}</div></div>`;
+    }).join("");
+  }
+  function mischStabil(arr, seed) { const a = arr.slice(); let x = seed * 9301 + 49297; for (let i = a.length - 1; i > 0; i--) { x = (x * 9301 + 49297) % 233280; const j = Math.floor(x / 233280 * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
+  /* --- Ende --- */
+  function truheOffen(T) {
+    const A = D.ende.aufgabe;
+    return `<div class="karte" style="text-align:center"><div class="truhe">🧰✨</div><h2 style="margin:0">Die Truhe ist offen!</h2>
+      <p>${Object.values(T.punkte || {}).reduce((a, b) => a + b, 0)} Punkte · Lest Omas Brief zusammen laut: A liest die erste Hälfte, B die zweite.</p></div>
+      <div class="brief" style="margin-top:12px">${D.ende.brief.map(esc).join("<br>")}</div>
+      <div class="karte" style="margin-top:12px"><h3 style="margin-top:0">🎤 ${esc(A.titel)}</h3><p>${A.text}</p><div class="hilfen">${A.hilfen.map(x => `<div>${esc(x)}</div>`).join("")}</div>
+        <p class="klein muted">Wartet danach auf das Signal eurer Lehrkraft – dann präsentiert ihr im Plenum.</p></div>`;
+  }
+  function zeichneErgebnis(msg) {
+    const ts = teamIds().map(t => ({ t, ...teamStand(t), name: G.teams[t].name || t })).sort((a, b) => (b.fertig - a.fertig) || (b.punkte - a.punkte));
+    $("#app").innerHTML = msg + `<div class="karte" style="margin-top:16px;text-align:center"><div class="truhe">🏆</div><h2>Ergebnis</h2>
+      ${ts.map((x, i) => `<p class="rang">${["🥇", "🥈", "🥉"][i] || "•"} <b>${esc(x.name)}</b> – ${x.punkte} Punkte${x.t === ich().team ? " (ihr)" : ""}</p>`).join("")}
+      <p class="fa" style="font-size:1.3rem">آفرین! خسته نباشید!</p></div>`;
+  }
+
+  /* ---------- Spieler-Aktionen ---------- */
+  function abzug(nr, n) { return gRef(CODE).child(teamPfad("abzug/" + nr)).transaction(v => (v || 0) + n); }
+  function zaehle(feld, nr) { return gRef(CODE).child(teamPfad(feld + "/" + nr)).transaction(v => (v || 0) + 1); }
+  async function stationFertig(nr) {
+    const T = meinTeam(), pkt = Math.max(30, 100 - ((T.abzug || {})[nr] || 0));
+    const u = {}; u[teamPfad("punkte/" + nr)] = pkt;
+    if (nr >= 5) { u[teamPfad("fertig")] = Date.now(); }
+    else { u[teamPfad("st")] = nr + 1; u[teamPfad("teil")] = "a"; }
+    await upd(u);
+  }
+  function verdrahteSpieler() {
+    const T = meinTeam(), st = T.st || 1, S = ST(st), r = ich().rolle;
+    const tb = $("#tipp"); if (tb) tb.onclick = async () => { await zaehle("tipps", st); await abzug(st, 15); };
+    // Ordnen
+    $$("[data-slot]").forEach(el => el.onclick = () => {
+      const i = +el.dataset.slot, slots = ((T["s" + st] || {}).slots) || Array(S.teile.length).fill(null), id = slots[i];
+      if (id) { const t = S.teile.find(x => x.id === id); if (t.wer === r) { slots[i] = null; schreib(teamPfad(`s${st}/slots`), slots); } return; }
+      auswahlSlot = auswahlSlot === i ? null : i; zeichneSpieler();
+    });
+    $$("[data-karte]").forEach(el => el.onclick = () => {
+      const slots = (((T["s" + st] || {}).slots) || Array(S.teile.length).fill(null)).slice();
+      let i = auswahlSlot != null && !slots[auswahlSlot] ? auswahlSlot : slots.findIndex(x => !x);
+      if (i < 0) return toast("Alle Felder sind belegt – nimm erst eine deiner Karten heraus.");
+      slots[i] = el.dataset.karte; auswahlSlot = null;
+      schreib(teamPfad(`s${st}/slots`), slots);
+    });
+    const pr = $("#pruefen"); if (pr) pr.onclick = async () => {
+      const slots = ((T["s" + st] || {}).slots) || [], n = slots.filter((x, i) => x === S.loesung[i]).length;
+      if (n === S.loesung.length) {
+        const u = {}; u[teamPfad("teil")] = st === 4 ? "c" : "b"; u[teamPfad("feedback/" + st)] = null; await upd(u);
+      } else {
+        await zaehle("fehl", st); await abzug(st, 10);
+        schreib(teamPfad("feedback/" + st), `Noch nicht ganz: ${n} von ${S.loesung.length} Abschnitten stehen schon an der richtigen Stelle. (−10 Punkte)`);
+      }
+    };
+    // Suchbild
+    $$("[data-foto]").forEach(el => el.onclick = async () => {
+      const id = el.dataset.foto;
+      if (id === S.richtig) { const u = {}; u[teamPfad("teil")] = "c"; await upd(u); }
+      else { await zaehle("fehl", st); await abzug(st, 10); schreib(teamPfad(`s2/falsch/${id}`), true); toast("Das ist nicht das richtige Foto (−10). Fragt noch einmal nach!"); }
+    });
+    $$("[data-haken]").forEach(el => el.onchange = () => schreib(teamPfad(`s2/haken/${el.dataset.haken}`), el.checked || null));
+    const wc = $("#weiterC"); if (wc) wc.onclick = () => schreib(teamPfad("teil"), "b");
+    // Karte
+    $$("[data-zelle]").forEach(el => el.onclick = async () => {
+      const s3 = T.s3 || {}, w = s3.weg || 0, W = S.wege[w], k = el.dataset.zelle;
+      if (k === W.ziel) {
+        if (w + 1 < S.wege.length) { schreib(teamPfad("s3/weg"), w + 1); toast("Richtig! Jetzt der zweite Weg – die Rollen wechseln."); }
+        else { const u = {}; u[teamPfad("teil")] = "b"; await upd(u); }
+      } else { await zaehle("fehl", st); await abzug(st, 5); schreib(teamPfad(`s3/falsch/${w}/${k.replace(",", "_")}`), true); toast("Hier ist es nicht (−5). Lasst euch den Weg noch einmal vorlesen!"); }
+    });
+    // Rollenspiel
+    const gl = $("#gelesen"); if (gl) gl.onclick = async () => {
+      await schreib(teamPfad(`s4/gelesen/${r}`), true);
+      const ok = Object.assign({}, ((meinTeam().s4 || {}).gelesen) || {}, { [r]: true });
+      if (ok.A && ok.B) schreib(teamPfad("teil"), "b");
+    };
+    // Fragen
+    $$("[data-antw]").forEach(el => el.onclick = async () => {
+      const i = +el.dataset.antw, k = +el.dataset.k, q = S.fragen[i];
+      if (k === 0) {
+        const u = {}; u[teamPfad(`antw/${st}/${i}`)] = k;
+        if (q.ziffer != null) u[teamPfad(`ziffern/${st}`)] = q.ziffer;
+        await upd(u);
+        if (i === S.fragen.length - 1) stationFertig(st);
+      } else { await zaehle("fehl", st); await abzug(st, 5); schreib(teamPfad(`afalsch/${st}/${i}_${k}`), true); }
+    });
+    // Schloss
+    $$("[data-rad]").forEach(el => el.onclick = () => {
+      const i = +el.dataset.rad, sch = T.schloss || {}, v = ((sch["z" + i] || 0) + (+el.dataset.d) + 10) % 10;
+      schreib(teamPfad(`schloss/z${i}`), v);
+    });
+    const fe = $("#fertig"); if (fe) fe.onclick = () => schreib(teamPfad(`schloss/${r}`), true);
+    const ae = $("#aendern"); if (ae) ae.onclick = () => schreib(teamPfad(`schloss/${r}`), null);
+    const oe = $("#oeffnen"); if (oe) oe.onclick = async () => {
+      const sch = T.schloss || {}, ok = D.code.every((z, i) => (sch["z" + i] || 0) === z);
+      if (ok) { await schreib(teamPfad("feedback/5"), null); stationFertig(5); }
+      else { await zaehle("fehl", 5); await abzug(5, 10); const u = {}; u[teamPfad("schloss/A")] = null; u[teamPfad("schloss/B")] = null; u[teamPfad("feedback/5")] = "Klack … die Truhe bleibt zu. Prüft eure Ziffern im Notizbuch und die Reihenfolge! (−10)"; upd(u); }
+    };
+  }
+
+  function zeichne() { MODUS === "leitung" ? zeichneLeitung() : zeichneSpieler(); }
+  window.TRUHE_APP = { zeichne, get G() { return G; } };
+  setInterval(() => { if (G && G.phase === "spiel" && MODUS === "leitung" && !(document.activeElement && document.activeElement.id === "msg")) zeichneLeitung(); }, 15000);
+  F.initFB();
+  MODUS === "leitung" ? startLeitung() : startSpieler();
+})();
+</script>
+</body>
+</html>

@@ -43,6 +43,24 @@
             }
           }
         }
+      },
+      "live": {
+        "$spiel": {
+          "$code": {
+            ".read": true,
+            ".write": "auth != null",
+            "spieler": {
+              "$pid": {
+                ".write": "root.child('farsi/live/' + $spiel + '/' + $code + '/phase').exists()"
+              }
+            },
+            "teams": {
+              "$team": {
+                ".write": "root.child('farsi/live/' + $spiel + '/' + $code + '/phase').val() === 'spiel'"
+              }
+            }
+          }
+        }
       }
     }
   }
