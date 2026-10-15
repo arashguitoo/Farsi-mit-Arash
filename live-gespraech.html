@@ -486,8 +486,9 @@
     const r = R();
     if (G.phase === "lobby" || !r) {
       $("#app").innerHTML = `<div class="karte" style="margin-top:16px"><h2 style="margin-top:0">${S.icon} ${esc(S.titel)} <span class="fa" style="color:var(--lapis)">${esc(vk(S.titelFa))}</span></h2>
-        <p>${esc(S.beschreibung.de)}</p><p class="fa-g" style="font-size:1.15rem;line-height:2">${esc(vk(S.beschreibung.fa))}</p>
-        <div class="meldung" style="font-weight:400"><b>So geht's:</b> Reihum ist jemand dran. Du siehst einen deutschen Satz und sagst ihn auf Persisch. Danach reagieren die anderen: Ja, Nein (mit Alternative) oder Vielleicht. Eure Antworten bestimmen die Geschichte!<br><span class="fa">هر بار نوبتِ یک نفر است. جمله را به فارسی بگو. بقیه جواب می‌دهند – و داستان ادامه پیدا می‌کند!</span></div>
+        <p>${esc(S.beschreibung.de)}</p>
+        ${S.hinweis ? `<div class="meldung" style="font-weight:400">💡 ${esc(S.hinweis)}</div>` : ""}
+        <div class="meldung" style="font-weight:400;background:var(--lapis-hell);border-color:#c9d8e6"><b>So geht's:</b> Reihum ist jemand dran. Du siehst einen deutschen Satz und sagst ihn auf Persisch. Danach reagieren die anderen: Ja, Nein (mit Alternative) oder Vielleicht. Eure Antworten bestimmen die Geschichte! Die Erzähltexte liest jeweils eine Person laut vor.</div>
         <p>Du bist dabei als <b>${esc(ich.name)}</b>${ich.nameFa ? ` · <span class="fa">${esc(ich.nameFa)}</span>` : ""}. ${darfVerwalten() ? "Du leitest diese Runde. 👑" : "⏳ Gleich geht es los …"}</p></div>`;
       if (darfVerwalten() && G.phase === "lobby") {
         $("#app").innerHTML += `<div class="lv-kopf"><div><div class="klein muted">Spielcode für die anderen</div><div class="lv-code">${CODE}</div></div>

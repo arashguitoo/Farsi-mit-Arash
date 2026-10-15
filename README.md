@@ -176,6 +176,9 @@ Schatzsuche für Zweierteams (Person A / B), ca. 120 Minuten, Wiederholung Grund
 Leitung: `live-truhe.html?leitung=1` (nur angemeldet in der Konsole) – Teams automatisch einteilen, Live-Stand, Beamer-Ansicht, Nachrichten an alle, Lösungen. Firebase: `farsi/live/truhe/{code}` (Regeln in `firebase-regeln.json`).
 
 
+**Eigene Runden (ohne Lehrkraft):** Bei allen Live-Aktivitäten gibt es für TN „👥 Eigene Runde starten“. Wer eröffnet, ist Host 👑
+(Teams einteilen bzw. Lobby, Start, Beenden). Einleitungen sind nur auf Deutsch; gelesen wird ab der eigentlichen Geschichte.
+
 ### Live: Gesprächs-Simulation (`live-gespraech.html`)
 Reihum-Gespräch für 2–8 Personen mit verzweigter Geschichte. Wer dran ist, übersetzt einen deutschen Satz ins Persische,
 die anderen reagieren (Ja / Nein mit Alternative / Vielleicht oder Auswahl), die Mehrheit bestimmt den Verlauf.

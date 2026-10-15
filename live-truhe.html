@@ -201,7 +201,7 @@
     const ts = teamIds().map(t => ({ t, ...teamStand(t), name: G.teams[t].name || t }));
     const rang = ts.slice().sort((a, b) => (b.fertig - a.fertig) || (b.punkte - a.punkte));
     $("#app").innerHTML = kopf + `<div class="karte beamer"><h1>${esc(D.titel)}</h1><div class="fa-titel">${esc(D.titelFa)}</div>
-      ${G.phase === "lobby" ? `<p style="font-size:1.15rem">${D.intro.de}</p><p class="fa" style="font-size:1.3rem;text-align:right">${esc(D.intro.fa)}</p><ul>${D.intro.regeln.map(r => `<li>${r}</li>`).join("")}</ul>
+      ${G.phase === "lobby" ? `<p style="font-size:1.15rem">${D.intro.de}</p><ul>${D.intro.regeln.map(r => `<li>${r}</li>`).join("")}</ul>
         <p class="lv-code">${CODE}</p><p style="text-align:center" class="muted">🎲 Aktivitäten → Code eingeben</p>`
       : G.phase === "ende" ? `<h2>🏆 Ergebnis</h2>${rang.map((x, i) => `<p class="rang">${["🥇", "🥈", "🥉"][i] || "•"} <b>${esc(x.name)}</b> – ${x.punkte} Punkte ${x.fertig ? `· Truhe nach ${mm(x.zeit)} geöffnet` : `· Station ${x.st}`}</p>`).join("")}`
       : `<div class="team-gitter" style="margin-top:12px">${ts.map(x => `<div class="team-k"><h2 style="margin:0">${esc(x.name)}</h2><div class="gross-p">${x.punkte} P.</div>
@@ -238,7 +238,24 @@
     if (!(await F.brauchtCode())) return;
     const s = F.sitzung();
     ME = s ? { id: s.code, name: s.name || s.code } : { id: "lk" + Math.random().toString(36).slice(2, 7), name: "Lehrkraft" };
-    if (CODE) beitreten(CODE); else zeichneBeitritt();
+    if (CODE) beitreten(CODE); else if (qs.get("neu") && s) eigeneRunde(); else zeichneBeitritt();
+  }
+  /* Runde ohne Lehrkraft: TN eröffnet und ist Host 👑 */
+  async function eigeneRunde() {
+    const c = String(Math.floor(1000 + Math.random() * 9000));
+    try {
+      await gRef(c).set({ erstellt: Date.now(), phase: "lobby", host: ME.id, spieler: { [ME.id]: { name: ME.name, ts: Date.now() } }, teams: { t1: { name: "Team 1" }, t2: { name: "Team 2" } } });
+    } catch (e) { return fehler(e); }
+    CODE = c; history.replaceState(null, "", "?code=" + c); hoere(c);
+  }
+  const binHost = () => !!(G && G.host && ME && G.host === ME.id);
+  function hostLobby() {
+    const sp = spielerListe();
+    return `<div class="karte" style="margin-top:12px"><h3 style="margin-top:0">👑 Du leitest diese Runde</h3>
+      <div class="lv-kopf" style="margin:0"><div><div class="klein muted">Spielcode für die anderen (🎲 Aktivitäten → Code eingeben)</div><div class="lv-code" style="text-align:left">${CODE}</div></div>
+      <div class="btnreihe"><button class="btn zwei klein" id="auto">🎲 Teams einteilen</button><button class="btn" id="start" ${sp.some(s => s.team && s.rolle) ? "" : "disabled"}>▶ Spiel starten</button></div></div>
+      <div class="tn-liste" style="margin-top:10px">${sp.map(s => `<div class="tn-zeile"><b>${esc(s.name)}</b><span class="klein muted">${s.team ? esc((G.teams[s.team] || {}).name || "") + " · Person " + (s.rolle || "?") : "noch ohne Team"}</span></div>`).join("")}</div>
+      <p class="klein muted">Wartet, bis alle da sind, dann „Teams einteilen“ (immer zu zweit) und starten. Ihr braucht jede Person auf einem eigenen Gerät.</p></div>`;
   }
   function zeichneBeitritt(meld) {
     $("#app").innerHTML = `<div class="karte" style="margin-top:20px;max-width:520px;margin-inline:auto;text-align:center">
@@ -270,14 +287,15 @@
     $("#kopfInfo").textContent = `${ME.name}${i.team ? " · " + ((G.teams[i.team] || {}).name || "") : ""}${i.rolle ? " · Person " + i.rolle : ""}`;
     const msg = G.nachricht ? `<div class="meldung">📢 ${esc(G.nachricht.text)}</div>` : "";
     if (G.phase === "lobby" || !i.team || !i.rolle) {
-      $("#app").innerHTML = `${msg}<div class="karte" style="margin-top:16px"><h2 style="margin-top:0">🗝️ ${esc(D.titel)}</h2><p>${D.intro.de}</p>
-        <p class="fa" style="font-size:1.2rem;text-align:right">${esc(D.intro.fa)}</p><ul>${D.intro.regeln.map(r => `<li>${r}</li>`).join("")}</ul>
-        <div class="auftrag">${i.team && i.rolle ? `Du bist in <b>${esc(G.teams[i.team].name)}</b> als <b>Person ${i.rolle}</b>${partner() ? ` – zusammen mit <b>${esc(partner().name)}</b>` : ""}. Gleich geht es los …` : "⏳ Warte, bis deine Lehrkraft dich einem Team zuteilt …"}</div></div>`;
+      $("#app").innerHTML = `${msg}<div class="karte" style="margin-top:16px"><h2 style="margin-top:0">🗝️ ${esc(D.titel)}</h2><p>${D.intro.de}</p><ul>${D.intro.regeln.map(r => `<li>${r}</li>`).join("")}</ul>
+        <div class="auftrag">${i.team && i.rolle ? `Du bist in <b>${esc(G.teams[i.team].name)}</b> als <b>Person ${i.rolle}</b>${partner() ? ` – zusammen mit <b>${esc(partner().name)}</b>` : ""}. Gleich geht es los …` : G.host ? "⏳ Warte, bis die Teams eingeteilt sind …" : "⏳ Warte, bis deine Lehrkraft dich einem Team zuteilt …"}</div></div>${binHost() && G.phase === "lobby" ? hostLobby() : ""}`;
+      if (binHost()) verdrahteLeitung();
       return;
     }
     if (G.phase === "ende") return zeichneErgebnis(msg);
+    const hostBar = binHost() ? `<div class="meldung" style="font-weight:400;display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap">👑 Du leitest diese Runde (Code ${CODE}). <button class="btn rot klein" id="ende">⏹ Spiel beenden & Ergebnis zeigen</button></div>` : "";
     const T = meinTeam(), st = T.fertig ? 6 : (T.st || 1), teil = T.teil || "a";
-    let h = msg + `<div class="lv-kopf"><div class="stationen">${D.stationen.map(s => `<span class="st-punkt ${s.nr < st ? "ok" : s.nr === st ? "akt" : ""}">${s.icon} ${esc(s.titel)}</span>`).join("")}</div>
+    let h = msg + hostBar + `<div class="lv-kopf"><div class="stationen">${D.stationen.map(s => `<span class="st-punkt ${s.nr < st ? "ok" : s.nr === st ? "akt" : ""}">${s.icon} ${esc(s.titel)}</span>`).join("")}</div>
       <span class="lv-chip ${i.rolle === "A" ? "a" : "b"}">Person ${i.rolle}${partner() ? " · mit " + esc(partner().name) : ""}</span></div>`;
     h += notizbuch(T);
     if (st === 6) h += truheOffen(T);
@@ -291,6 +309,7 @@
     }
     $("#app").innerHTML = h;
     verdrahteSpieler();
+    if (binHost()) verdrahteLeitung();
   }
   function notizbuch(T) {
     const z = T.ziffern || {};

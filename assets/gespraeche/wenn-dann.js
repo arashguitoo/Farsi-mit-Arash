@@ -43,14 +43,9 @@
     },
     niveau: "Lektion 22 · Wenn …, dann … – reale Bedingungen (Präsens, Konjunktiv, Präteritum nach „wenn“)",
     gruppe: { de: "Ausflug am Samstag ⛅", fa: "گَردِشِ شَنبه ⛅" },
-    start: "m0",
+    hinweis: "Heute geht es um „Wenn …, dann …“ (Lektion 22): Nach اگر steht Präsens (اگر خسته‌ای)، Konjunktiv (اگر بیایی) oder Präteritum mit Zukunftsbedeutung (اگر رفتی). Im Hauptsatz: Präsens, Futur oder Imperativ. Dazu: حتی اگر (selbst wenn), وگرنه (sonst), اگر نه (wenn nicht).",
+    start: "e1",
     knoten: {
-      /* ---------------- Merksatz ---------------- */
-      m0: { typ: "szene", ort: "merke",
-        de: "Heute heißt es: Wenn …, dann …! In dieser Geschichte ist nichts sicher – darum sagt ihr ständig „wenn“. Zum Beispiel: Wenn morgen gutes Wetter ist, fahren wir an den See. Achtet auf das Verb nach „wenn“ und im Hauptsatz!",
-        fa: "اِمروز می‌گوییم: اَگَر…، …! در این داستان هیچ‌چیز مُطمَئِن نیست – بَرایِ هَمین مُدام «اَگَر» می‌گویید. مَثَلاً: اَگَر فَردا هَوا خوب باشَد، به دَریاچه می‌رَویم. به فِعلِ بَعد از «اَگَر» و فِعلِ جُمله‌ی اَصلی دِقَّت کُنید!",
-        weiter: "e1" },
-
       /* ---------------- Donnerstag: Planung im Chat ---------------- */
       e1: { typ: "szene", ort: "chat", zeit: { de: "Donnerstag, 19 Uhr", fa: "پَنج‌شَنبه، ساعَتِ هَفتِ شَب" },
         de: "Es ist Donnerstagabend. Die Woche war anstrengend, und {alle} brauchen dringend eine Pause. In der Gruppe „Ausflug am Samstag ⛅“ kommt eine Nachricht …",
