@@ -179,6 +179,12 @@ Leitung: `live-truhe.html?leitung=1` (nur angemeldet in der Konsole) – Teams a
 **Eigene Runden (ohne Lehrkraft):** Bei allen Live-Aktivitäten gibt es für TN „👥 Eigene Runde starten“. Wer eröffnet, ist Host 👑
 (Teams einteilen bzw. Lobby, Start, Beenden). Einleitungen sind nur auf Deutsch; gelesen wird ab der eigentlichen Geschichte.
 
+### Live: „Das Geburtstagsgeschenk“ (`live-truhe.html?spiel=geschenk`, Inhalte in `assets/live-geschenk-daten.js`)
+Leichte, kurze Schnitzeljagd (ca. 45 Min.) mit derselben Technik wie Omas Truhe: Saras Nachricht ordnen (6 Teile), Foto finden,
+Stadtplan (2 Wege), Schloss mit 3 Ziffern (8-5-7). Einfache Sätze, vokalisiert, pro Station ein aufklappbares 📖 Wörterbuch (`lexikon`).
+Weitere Schatzsuchen: neue Datei `assets/live-<id>-daten.js` mit `window.SCHATZSUCHEN.<id>` (Format wie diese), in
+`live-truhe.html` als Script einbinden und in `aktivitaeten.html` mit `datei: "live-truhe.html?spiel=<id>"` eintragen.
+
 ### Live: Gesprächs-Simulation (`live-gespraech.html`)
 Reihum-Gespräch für 2–8 Personen mit verzweigter Geschichte. Wer dran ist, übersetzt einen deutschen Satz ins Persische,
 die anderen reagieren (Ja / Nein mit Alternative / Vielleicht oder Auswahl), die Mehrheit bestimmt den Verlauf.

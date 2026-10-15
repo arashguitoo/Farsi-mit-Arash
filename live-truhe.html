@@ -71,6 +71,10 @@
   .rad .wert{width:60px;height:72px;border-radius:12px;background:#2f3a4a;color:#fff;display:grid;place-items:center;font-size:2.2rem;font-weight:800}
   .rad.fremd .wert{background:#c9ced6;color:#fff}
   .truhe{font-size:5rem;text-align:center;margin:10px 0}
+  .lexikon{margin-top:12px;border:1px solid var(--linie);border-radius:12px;background:#fffdf6}
+  .lexikon summary{cursor:pointer;font-weight:800;padding:8px 12px;color:var(--lapis)}
+  .lex-gitter{display:grid;grid-template-columns:auto 1fr;gap:4px 16px;padding:4px 14px 12px;align-items:center}
+  .lex-gitter .fa{font-size:1.15rem;text-align:right}
   .brief{font-family:var(--fa);direction:rtl;text-align:right;font-size:1.25rem;line-height:2.2;background:#fffdf6;border:1px solid #eadfc4;border-radius:14px;padding:16px 20px}
   .hilfen{display:grid;gap:4px}
   .hilfen div{font-family:var(--fa);direction:rtl;text-align:right;font-size:1.1rem;background:#fff;border-radius:10px;padding:6px 12px;border:1px solid var(--linie)}
@@ -93,7 +97,7 @@
 <header class="kopf">
   <div class="wrap">
     <a href="aktivitaeten.html" class="medaillon" style="text-decoration:none">فا</a>
-    <div><h1>Omas Truhe</h1><div class="unter">Live-Aktivität · Farsi-Lernpfad</div></div>
+    <div><h1 id="spielTitel">Omas Truhe</h1><div class="unter">Live-Aktivität · Farsi-Lernpfad</div></div>
     <div class="rechts"><span class="kopf-btn" id="kopfInfo" style="background:transparent;border-color:transparent"></span><a class="kopf-btn" href="aktivitaeten.html">← Aktivitäten</a></div>
   </div>
 </header>
@@ -104,11 +108,22 @@
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
 <script src="assets/core.js"></script>
 <script src="assets/live-truhe-daten.js"></script>
+<script src="assets/live-geschenk-daten.js"></script>
 <script>
 (function () {
-  const F = window.FARSI, { $, $$, esc, toast } = F, D = window.TRUHE;
-  const SPIEL = "truhe";
+  const F = window.FARSI, { $, $$, esc, toast } = F;
   const qs = new URLSearchParams(location.search);
+  /* Welche Schatzsuche? live-truhe.html (Omas Truhe) oder live-truhe.html?spiel=geschenk usw. */
+  const SPIELQ = (qs.get("spiel") || "").replace(/[^a-z0-9-]/g, "");
+  const D = (SPIELQ && (window.SCHATZSUCHEN || {})[SPIELQ]) || window.TRUHE;
+  const SPIEL = D.id || "truhe";
+  const ZIEL = D.ziel || { name: "Truhe", icon: "🧰", offen: "Die Truhe ist offen!" };
+  const FIG = D.figuren || { P: "پروین", S: "سیمین" };
+  const NST = D.stationen.length, LETZTE = D.stationen[NST - 1].nr;
+  const mitSpiel = q => (SPIEL !== "truhe" ? q + (q.includes("?") ? "&" : "?") + "spiel=" + SPIEL : q);
+  document.title = D.titel + " · Live · Farsi-Lernpfad";
+  document.getElementById("spielTitel").textContent = D.titel;
+  const lexHtml = S => S.lexikon ? `<details class="lexikon"><summary>📖 Wörterbuch – aufklappen</summary><div class="lex-gitter">${S.lexikon.map(([fa, de]) => `<span class="fa">${esc(fa)}</span><span>${esc(de)}</span>`).join("")}</div></details>` : "";
   const MODUS = qs.get("leitung") ? "leitung" : "spieler";
   let CODE = (qs.get("code") || "").replace(/\D/g, "") || null;
   let G = null, REF = null, ME = null, auswahlSlot = null, BEAMER = qs.get("beamer") === "1";
@@ -144,12 +159,12 @@
     $("#app").innerHTML = `<div class="karte" style="margin-top:20px">
       <h2 style="margin-top:0">${esc(D.titel)} <span class="fa" style="color:var(--lapis)">${esc(D.titelFa)}</span></h2>
       <p>${D.intro.de}</p>
-      <p class="klein muted">Für 2 Zweierteams (oder mehr), ca. 120 Minuten. Jede Person braucht ein eigenes Gerät. Online: Jedes Team in einen eigenen Breakout-Raum.</p>
+      <p class="klein muted">Für 2 Zweierteams (oder mehr), ${esc(D.dauer || "ca. 120 Minuten")}. Jede Person braucht ein eigenes Gerät. Online: Jedes Team in einen eigenen Breakout-Raum.</p>
       <button class="btn" id="neu">▶ Neue Runde starten</button></div>`;
     $("#neu").onclick = async () => {
       const c = String(Math.floor(1000 + Math.random() * 9000));
       await gRef(c).set({ erstellt: Date.now(), phase: "lobby", spieler: {}, teams: { t1: { name: "Team 1" }, t2: { name: "Team 2" } } }).catch(fehler);
-      CODE = c; history.replaceState(null, "", `?leitung=1&code=${c}`); hoere(c);
+      CODE = c; history.replaceState(null, "", mitSpiel(`?leitung=1&code=${c}`)); hoere(c);
     };
   }
   const spielerListe = () => Object.entries((G && G.spieler) || {}).map(([id, s]) => ({ id, ...s })).sort((a, b) => (a.ts || 0) - (b.ts || 0));
@@ -162,7 +177,7 @@
   }
   function zeichneLeitung() {
     if (!G) { $("#app").innerHTML = `<div class="karte" style="margin-top:20px">Diese Runde gibt es nicht (mehr). <a href="?leitung=1">Neue Runde</a></div>`; return; }
-    const sp = spielerListe(), link = location.href.replace(/[^/]*$/, "") + "live-truhe.html?code=" + CODE;
+    const sp = spielerListe(), link = location.href.replace(/[^/]*$/, "") + "live-truhe.html?code=" + CODE + (SPIEL !== "truhe" ? "&spiel=" + SPIEL : "");
     const kopf = `<div class="lv-kopf"><div><div class="klein muted">Spielcode</div><div class="lv-code" style="text-align:left">${CODE}</div></div>
       <div class="btnreihe"><button class="btn zwei klein" id="beamer">${BEAMER ? "⚙️ Leitung" : "🖥️ Beamer-Ansicht"}</button>
       ${G.phase === "lobby" ? `<button class="btn" id="start" ${sp.some(s => s.team && s.rolle) ? "" : "disabled"}>▶ Spiel starten</button>` : ""}
@@ -184,15 +199,15 @@
       h += `${G.nachricht ? `<div class="meldung">📢 ${esc(G.nachricht.text)}</div>` : ""}
         <div class="team-gitter">${ts.map(x => `<div class="team-k"><div style="display:flex;justify-content:space-between;align-items:baseline"><h3 style="margin:0">${esc(x.name)}</h3><span class="gross-p">${x.punkte}</span></div>
           <div class="klein muted">${x.leute.map(s => `${esc(s.name)} (${s.rolle || "?"})`).join(" · ") || "–"}</div>
-          <div class="stationen" style="margin:8px 0">${D.stationen.map(s => `<span class="st-punkt ${x.fertig || s.nr < x.st ? "ok" : s.nr === x.st ? "akt" : ""}">${s.icon} ${s.nr}</span>`).join("")}<span class="st-punkt ${x.fertig ? "ok" : ""}">🗝️</span></div>
-          <div class="klein">${x.fertig ? `✅ <b>Truhe geöffnet</b> nach ${mm(x.zeit)}` : `Station ${x.st} · ${x.teil === "a" ? "Rätsel" : x.teil === "c" ? "Sprechen" : "Fragen"} · ${mm(x.zeit)}`}
+          <div class="stationen" style="margin:8px 0">${D.stationen.map(s => `<span class="st-punkt ${x.fertig || s.nr < x.st ? "ok" : s.nr === x.st ? "akt" : ""}">${s.icon} ${s.nr}</span>`).join("")}<span class="st-punkt ${x.fertig ? "ok" : ""}">${ZIEL.icon}</span></div>
+          <div class="klein">${x.fertig ? `✅ <b>${ZIEL.name} geöffnet</b> nach ${mm(x.zeit)}` : `Station ${x.st} · ${x.teil === "a" ? "Rätsel" : x.teil === "c" ? "Sprechen" : "Fragen"} · ${mm(x.zeit)}`}
             · Fehler: ${Object.values(x.T.fehl || {}).reduce((a, b) => a + b, 0)} · Tipps: ${Object.values(x.T.tipps || {}).reduce((a, b) => a + b, 0)}</div></div>`).join("")}</div>
         <div class="karte" style="margin-top:14px"><h3 style="margin-top:0">📢 Nachricht an alle</h3>
           <div style="display:flex;gap:8px;flex-wrap:wrap"><input class="feld" id="msg" placeholder="z. B. Noch 10 Minuten! / Bitte zurück ins Plenum." style="flex:1;min-width:220px"><button class="btn" id="senden">Senden</button><button class="btn zwei" id="msgweg">Löschen</button></div>
           <div class="btnreihe" style="margin-top:8px">${["Noch 10 Minuten für diese Station!", "Sprecht bitte Persisch miteinander 🙂", "Bitte zurück ins Plenum."].map(t => `<button class="btn zwei klein" data-schnell="${esc(t)}">${esc(t)}</button>`).join("")}</div></div>
-        <div class="karte" style="margin-top:14px"><h3 style="margin-top:0">Lösungen (nur für dich)</h3><p class="klein">Code der Truhe: <b>${D.code.join(" – ")}</b> · Station 2: Foto mit der Nummer 4 · Station 3: gelbes Haus Nr. 2, dann grünes Haus Nr. 7 neben der Metro.</p>
-          <details><summary class="klein" style="cursor:pointer;font-weight:800">Brief und Telefonat in richtiger Reihenfolge</summary>
-          ${[1, 4].map(n => `<p class="klein"><b>${esc(ST(n).titel)}:</b></p><ol>${ST(n).loesung.map(id => `<li class="fa" style="text-align:right">${esc(ST(n).teile.find(x => x.id === id).fa)}</li>`).join("")}</ol>`).join("")}</details></div>`;
+        <div class="karte" style="margin-top:14px"><h3 style="margin-top:0">Lösungen (nur für dich)</h3><p class="klein">Code: <b>${D.code.join(" – ")}</b>${D.stationen.filter(x => x.typ === "suchbild").map(x => ` · ${esc(x.titel)}: Foto mit der Nummer ${x.fotos.find(f => f.id === x.richtig).nr}`).join("")}${D.stationen.filter(x => x.typ === "karte").map(x => ` · ${esc(x.titel)}: ` + x.wege.map(w => { const b = x.bloecke[w.ziel]; return b.haus ? "Haus Nr. " + b.nr : b.e + " " + b.fa; }).join(", dann ")).join("")}</p>
+          <details><summary class="klein" style="cursor:pointer;font-weight:800">Texte in richtiger Reihenfolge</summary>
+          ${D.stationen.filter(x => x.typ === "ordnen").map(x => `<p class="klein"><b>${esc(x.titel)}:</b></p><ol>${x.loesung.map(id => `<li class="fa" style="text-align:right">${esc(x.teile.find(t => t.id === id).fa)}</li>`).join("")}</ol>`).join("")}</details></div>`;
     }
     $("#app").innerHTML = h;
     verdrahteLeitung();
@@ -206,7 +221,7 @@
       : G.phase === "ende" ? `<h2>🏆 Ergebnis</h2>${rang.map((x, i) => `<p class="rang">${["🥇", "🥈", "🥉"][i] || "•"} <b>${esc(x.name)}</b> – ${x.punkte} Punkte ${x.fertig ? `· Truhe nach ${mm(x.zeit)} geöffnet` : `· Station ${x.st}`}</p>`).join("")}`
       : `<div class="team-gitter" style="margin-top:12px">${ts.map(x => `<div class="team-k"><h2 style="margin:0">${esc(x.name)}</h2><div class="gross-p">${x.punkte} P.</div>
           <div class="stationen" style="margin-top:8px">${D.stationen.map(s => `<span class="st-punkt ${x.fertig || s.nr < x.st ? "ok" : s.nr === x.st ? "akt" : ""}" style="font-size:1rem">${s.icon} ${esc(s.titel)}</span>`).join("")}</div>
-          ${x.fertig ? `<p style="font-size:1.3rem">🗝️ <b>Truhe offen!</b></p>` : ""}</div>`).join("")}</div>`}
+          ${x.fertig ? `<p style="font-size:1.3rem">${ZIEL.icon} <b>${ZIEL.name} offen!</b></p>` : ""}</div>`).join("")}</div>`}
       ${G.nachricht ? `<div class="meldung">📢 ${esc(G.nachricht.text)}</div>` : ""}</div>`;
     verdrahteLeitung();
   }
@@ -246,7 +261,7 @@
     try {
       await gRef(c).set({ erstellt: Date.now(), phase: "lobby", host: ME.id, spieler: { [ME.id]: { name: ME.name, ts: Date.now() } }, teams: { t1: { name: "Team 1" }, t2: { name: "Team 2" } } });
     } catch (e) { return fehler(e); }
-    CODE = c; history.replaceState(null, "", "?code=" + c); hoere(c);
+    CODE = c; history.replaceState(null, "", mitSpiel("?code=" + c)); hoere(c);
   }
   const binHost = () => !!(G && G.host && ME && G.host === ME.id);
   function hostLobby() {
@@ -259,7 +274,7 @@
   }
   function zeichneBeitritt(meld) {
     $("#app").innerHTML = `<div class="karte" style="margin-top:20px;max-width:520px;margin-inline:auto;text-align:center">
-      <div style="font-size:3rem">🗝️</div><h2 style="margin:0">${esc(D.titel)}</h2><div class="fa" style="color:var(--lapis);font-size:1.3rem">${esc(D.titelFa)}</div>
+      <div style="font-size:3rem">${D.icon || "🗝️"}</div><h2 style="margin:0">${esc(D.titel)}</h2><div class="fa" style="color:var(--lapis);font-size:1.3rem">${esc(D.titelFa)}</div>
       <p>Gib den <b>Spielcode</b> ein, den deine Lehrkraft zeigt.</p>
       <div style="display:flex;gap:8px;justify-content:center"><input class="feld" id="code" inputmode="numeric" maxlength="4" placeholder="0000" style="max-width:140px;text-align:center;font-size:1.4rem;letter-spacing:.2em"><button class="btn" id="los">Beitreten</button></div>
       <p class="klein" style="color:var(--granat)">${meld || ""}</p></div>`;
@@ -271,7 +286,7 @@
     let g;
     try { g = (await F.mitTimeout(gRef(c).once("value"), 8000)).val(); } catch (e) { return fehler(e); }
     if (!g) return zeichneBeitritt("Diesen Spielcode gibt es nicht. Bitte noch einmal prüfen.");
-    CODE = c; history.replaceState(null, "", "?code=" + c);
+    CODE = c; history.replaceState(null, "", mitSpiel("?code=" + c));
     const alt = (g.spieler || {})[ME.id];
     if (!alt) await gRef(c).child("spieler/" + ME.id).set({ name: ME.name, ts: Date.now() }).catch(fehler);
     hoere(c);
@@ -287,24 +302,25 @@
     $("#kopfInfo").textContent = `${ME.name}${i.team ? " · " + ((G.teams[i.team] || {}).name || "") : ""}${i.rolle ? " · Person " + i.rolle : ""}`;
     const msg = G.nachricht ? `<div class="meldung">📢 ${esc(G.nachricht.text)}</div>` : "";
     if (G.phase === "lobby" || !i.team || !i.rolle) {
-      $("#app").innerHTML = `${msg}<div class="karte" style="margin-top:16px"><h2 style="margin-top:0">🗝️ ${esc(D.titel)}</h2><p>${D.intro.de}</p><ul>${D.intro.regeln.map(r => `<li>${r}</li>`).join("")}</ul>
+      $("#app").innerHTML = `${msg}<div class="karte" style="margin-top:16px"><h2 style="margin-top:0">${D.icon || "🗝️"} ${esc(D.titel)}</h2><p>${D.intro.de}</p><ul>${D.intro.regeln.map(r => `<li>${r}</li>`).join("")}</ul>
         <div class="auftrag">${i.team && i.rolle ? `Du bist in <b>${esc(G.teams[i.team].name)}</b> als <b>Person ${i.rolle}</b>${partner() ? ` – zusammen mit <b>${esc(partner().name)}</b>` : ""}. Gleich geht es los …` : G.host ? "⏳ Warte, bis die Teams eingeteilt sind …" : "⏳ Warte, bis deine Lehrkraft dich einem Team zuteilt …"}</div></div>${binHost() && G.phase === "lobby" ? hostLobby() : ""}`;
       if (binHost()) verdrahteLeitung();
       return;
     }
     if (G.phase === "ende") return zeichneErgebnis(msg);
     const hostBar = binHost() ? `<div class="meldung" style="font-weight:400;display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap">👑 Du leitest diese Runde (Code ${CODE}). <button class="btn rot klein" id="ende">⏹ Spiel beenden & Ergebnis zeigen</button></div>` : "";
-    const T = meinTeam(), st = T.fertig ? 6 : (T.st || 1), teil = T.teil || "a";
+    const T = meinTeam(), st = T.fertig ? LETZTE + 1 : (T.st || 1), teil = T.teil || "a";
     let h = msg + hostBar + `<div class="lv-kopf"><div class="stationen">${D.stationen.map(s => `<span class="st-punkt ${s.nr < st ? "ok" : s.nr === st ? "akt" : ""}">${s.icon} ${esc(s.titel)}</span>`).join("")}</div>
       <span class="lv-chip ${i.rolle === "A" ? "a" : "b"}">Person ${i.rolle}${partner() ? " · mit " + esc(partner().name) : ""}</span></div>`;
     h += notizbuch(T);
-    if (st === 6) h += truheOffen(T);
+    if (st > LETZTE) h += truheOffen(T);
     else {
       const S = ST(st);
       h += `<div class="karte"><h2 style="margin-top:0">${S.icon} Station ${S.nr}: ${esc(S.titel)} <span class="fa" style="color:var(--lapis)">${esc(S.fa)}</span></h2>`;
       if (teil === "a") h += `<div class="auftrag">${S.auftrag}</div>` + ({ ordnen: stOrdnen, suchbild: stSuchbild, karte: stKarte, schloss: stSchloss }[S.typ])(S, T);
       else if (teil === "c") h += stZwischen(S, T);
       else h += stFragen(S, T);
+      h += lexHtml(S);
       h += tippBox(S, T) + `</div>`;
     }
     $("#app").innerHTML = h;
@@ -313,7 +329,7 @@
   }
   function notizbuch(T) {
     const z = T.ziffern || {};
-    return `<div class="karte" style="margin-bottom:12px;padding:10px 14px"><div class="notiz"><b>📒 Notizbuch:</b>${[1, 2, 3, 4].map(n => `<span class="ziffer ${z[n] != null ? "da" : ""}">${z[n] != null ? z[n] : "?"}</span>`).join("")}
+    return `<div class="karte" style="margin-bottom:12px;padding:10px 14px"><div class="notiz"><b>📒 Notizbuch:</b>${D.stationen.filter(x => x.typ !== "schloss").map(x => x.nr).map(n => `<span class="ziffer ${z[n] != null ? "da" : ""}">${z[n] != null ? z[n] : "?"}</span>`).join("")}
       <span class="klein muted" style="margin-left:auto">Punkte: <b>${Object.values(T.punkte || {}).reduce((a, b) => a + b, 0)}</b></span></div></div>`;
   }
   function tippBox(S, T) {
@@ -360,11 +376,11 @@
     return `<svg viewBox="0 0 124 96" width="100%"><rect x="0" y="0" width="124" height="78" fill="#efe6d6"/><rect x="0" y="16" width="124" height="3" fill="#d7c9ae"/>${katze}
       <rect x="44" y="30" width="24" height="48" rx="2" fill="${f.tuer}"/><circle cx="63" cy="55" r="1.6" fill="#f3e3a0"/>
       <rect x="49" y="22" width="14" height="7" rx="1.5" fill="#fff" stroke="#999" stroke-width=".5"/><text x="56" y="28" font-size="6.5" text-anchor="middle" font-weight="bold">${f.nr}</text>
-      ${figur(24, "P", "پروین")}${figur(82, "S", "سیمین")}${f.neben === "rad" ? rad : baum}
+      ${figur(24, "P", FIG.P)}${figur(82, "S", FIG.S)}${f.neben === "rad" ? rad : baum}
       <rect x="0" y="78" width="124" height="2" fill="#b9a98a"/></svg>`;
   }
   function stSuchbild(S, T) {
-    const r = ich().rolle, falsch = ((T.s2 || {}).falsch) || {};
+    const r = ich().rolle, falsch = ((T["s" + S.nr] || {}).falsch) || {};
     if (r === "B") return `<div class="klein-h">Dein Zettel – lies ihn ${esc((partner() || {}).name || "deinem Partner")} vor</div><div class="beschr">${S.beschreibung.map(esc).join("<br>")}</div>
       <p class="klein muted">Nur ${esc((partner() || {}).name || "dein Partner")} sieht die Fotos. Beantwortet Rückfragen auf Persisch!</p>`;
     return `<div class="klein-h">Sechs Fotos – welches ist es? (${esc((partner() || {}).name || "Dein Partner")} liest dir die Beschreibung vor)</div>
@@ -382,40 +398,41 @@
     return `<div class="stadt">${h}</div>`;
   }
   function stKarte(S, T) {
-    const r = ich().rolle, s3 = T.s3 || {}, w = s3.weg || 0, W = S.wege[w], falsch = (s3.falsch || {})[w] || {};
+    const r = ich().rolle, s3 = T["s" + S.nr] || {}, w = s3.weg || 0, W = S.wege[w], falsch = (s3.falsch || {})[w] || {};
     const hdr = `<div class="klein-h">Weg ${w + 1} von ${S.wege.length}: ${esc(W.titel)}</div>`;
     if (r === W.liest) return hdr + `<div class="beschr">${W.text.map(esc).join("<br>")}</div><p class="klein muted">Lies den Weg Satz für Satz vor. ${esc((partner() || {}).name || "Dein Partner")} sucht auf dem Stadtplan.</p>`;
     return hdr + `<p class="klein">Hör gut zu und tippe auf das richtige Haus. Start: 🚇 Metro unten links.</p>` + stadtplan(S, falsch, null, true);
   }
   /* --- Station: Schloss --- */
   function stSchloss(S, T) {
-    const r = ich().rolle, sch = T.schloss || {}, meine = r === "A" ? [0, 1] : [2, 3];
-    const w = i => (sch["z" + i] != null ? sch["z" + i] : 0), bereit = sch.A && sch.B, fb = (T.feedback || {})[5];
-    return `<div class="truhe">🧰</div><div class="schloss">${[0, 1, 2, 3].map(i => meine.includes(i) && !sch[r]
+    const n = D.code.length, halb = Math.ceil(n / 2), alle = [...Array(n).keys()];
+    const r = ich().rolle, sch = T.schloss || {}, meine = alle.filter(i => r === "A" ? i < halb : i >= halb);
+    const w = i => (sch["z" + i] != null ? sch["z" + i] : 0), bereit = sch.A && sch.B, fb = (T.feedback || {})[S.nr];
+    return `<div class="truhe">${ZIEL.icon}</div><div class="schloss">${alle.map(i => meine.includes(i) && !sch[r]
         ? `<div class="rad"><button data-rad="${i}" data-d="1">▲</button><div class="wert">${w(i)}</div><button data-rad="${i}" data-d="-1">▼</button></div>`
-        : `<div class="rad fremd"><span style="height:26px"></span><div class="wert">${meine.includes(i) ? w(i) : (sch[i < 2 ? "A" : "B"] ? "✓" : "?")}</div><span style="height:26px"></span></div>`).join("")}</div>
+        : `<div class="rad fremd"><span style="height:26px"></span><div class="wert">${meine.includes(i) ? w(i) : (sch[i < halb ? "A" : "B"] ? "✓" : "?")}</div><span style="height:26px"></span></div>`).join("")}</div>
       <p style="text-align:center">${sch[r] ? "✅ Deine Ziffern sind eingestellt." : `<button class="btn" id="fertig">Meine Ziffern sind eingestellt</button>`}
         ${sch[r] ? ` <button class="btn zwei klein" id="aendern">ändern</button>` : ""}</p>
       <p style="text-align:center" class="klein muted">${sch.A ? "A ✓" : "A …"} · ${sch.B ? "B ✓" : "B …"}</p>
       ${fb ? `<div class="meldung">${esc(fb)}</div>` : ""}
-      <p style="text-align:center"><button class="btn safran" id="oeffnen" ${bereit ? "" : "disabled"}>🗝️ Truhe öffnen</button></p>`;
+      <p style="text-align:center"><button class="btn safran" id="oeffnen" ${bereit ? "" : "disabled"}>🗝️ ${ZIEL.name} öffnen</button></p>`;
   }
   /* --- Zwischenschritte: Beschreiben (St. 2), zweiter Weg (St. 3), Rollenspiel (St. 4) --- */
   function stZwischen(S, T) {
     const r = ich().rolle;
     if (S.typ === "suchbild") {
-      const f = S.fotos.find(x => x.id === S.richtig), hk = ((T.s2 || {}).haken) || {};
+      const f = S.fotos.find(x => x.id === S.richtig), hk = ((T["s" + S.nr] || {}).haken) || {};
       return `<div style="max-width:280px;margin:0 auto">${fotoSVG(f)}</div><div class="auftrag">${S.beschreiben.text}</div>
         ${r === "B" ? `<div class="tn-liste">${S.beschreiben.liste.map((x, i) => `<label class="tn-zeile"><input type="checkbox" data-haken="${i}" ${hk[i] ? "checked" : ""}> ${x}</label>`).join("")}</div>
           <p><button class="btn" id="weiterC" ${Object.values(hk).filter(Boolean).length >= S.beschreiben.mind ? "" : "disabled"}>Weiter zu den Fragen</button> <span class="klein muted">(mindestens ${S.beschreiben.mind} Häkchen)</span></p>`
         : `<p class="klein">Beschreibe das Foto jetzt auf Persisch. ${esc((partner() || {}).name || "Dein Partner")} hakt ab, was du sagst (${Object.values(hk).filter(Boolean).length} von ${S.beschreiben.liste.length}).</p>
-          <p class="fa" style="font-size:1.1rem;text-align:right;color:var(--tinte2)">در این عکس … · … از … بلندتر است · کنارِ در … · روی دیوار …</p>`}`;
+          <p class="fa" style="font-size:1.1rem;text-align:right;color:var(--tinte2)">${esc(S.beschreiben.hilfe || "در این عکس … · … از … بلندتر است · کنارِ در … · روی دیوار …")}</p>`}`;
     }
     if (S.typ === "ordnen") {
-      const ok = ((T.s4 || {}).gelesen) || {};
+      const ok = ((T["s" + S.nr] || {}).gelesen) || {};
       return `<div class="auftrag">${S.rollenspiel}</div><div class="slots">${S.loesung.map((id, i) => { const t = S.teile.find(x => x.id === id);
           return `<div class="slot voll ${t.wer === r ? "eigen" : "fremd"}"><span class="n">${i + 1}</span><span class="txt">${esc(t.fa)}</span><span class="lbl ${t.wer}">${t.wer}</span></div>`; }).join("")}</div>
-        <p style="margin-top:12px">${ok[r] ? "✅ Du hast bestätigt." : `<button class="btn" id="gelesen">✓ Wir haben das Telefonat gelesen</button>`} <span class="klein muted">${ok.A ? "A ✓" : "A …"} · ${ok.B ? "B ✓" : "B …"}</span></p>`;
+        <p style="margin-top:12px">${ok[r] ? "✅ Du hast bestätigt." : `<button class="btn" id="gelesen">✓ Wir haben den Text gelesen</button>`} <span class="klein muted">${ok.A ? "A ✓" : "A …"} · ${ok.B ? "B ✓" : "B …"}</span></p>`;
     }
     return "";
   }
@@ -435,8 +452,8 @@
   /* --- Ende --- */
   function truheOffen(T) {
     const A = D.ende.aufgabe;
-    return `<div class="karte" style="text-align:center"><div class="truhe">🧰✨</div><h2 style="margin:0">Die Truhe ist offen!</h2>
-      <p>${Object.values(T.punkte || {}).reduce((a, b) => a + b, 0)} Punkte · Lest Omas Brief zusammen laut: A liest die erste Hälfte, B die zweite.</p></div>
+    return `<div class="karte" style="text-align:center"><div class="truhe">${ZIEL.icon}✨</div><h2 style="margin:0">${esc(ZIEL.offen)}</h2>
+      <p>${Object.values(T.punkte || {}).reduce((a, b) => a + b, 0)} Punkte · Lest den Text zusammen laut: A liest die erste Hälfte, B die zweite.</p></div>
       <div class="brief" style="margin-top:12px">${D.ende.brief.map(esc).join("<br>")}</div>
       <div class="karte" style="margin-top:12px"><h3 style="margin-top:0">🎤 ${esc(A.titel)}</h3><p>${A.text}</p><div class="hilfen">${A.hilfen.map(x => `<div>${esc(x)}</div>`).join("")}</div>
         <p class="klein muted">Wartet danach auf das Signal eurer Lehrkraft – dann präsentiert ihr im Plenum.</p></div>`;
@@ -454,7 +471,7 @@
   async function stationFertig(nr) {
     const T = meinTeam(), pkt = Math.max(30, 100 - ((T.abzug || {})[nr] || 0));
     const u = {}; u[teamPfad("punkte/" + nr)] = pkt;
-    if (nr >= 5) { u[teamPfad("fertig")] = Date.now(); }
+    if (nr >= LETZTE) { u[teamPfad("fertig")] = Date.now(); }
     else { u[teamPfad("st")] = nr + 1; u[teamPfad("teil")] = "a"; }
     await upd(u);
   }
@@ -477,7 +494,7 @@
     const pr = $("#pruefen"); if (pr) pr.onclick = async () => {
       const slots = slotListe(T, S), n = slots.filter((x, i) => x === S.loesung[i]).length;
       if (n === S.loesung.length) {
-        const u = {}; u[teamPfad("teil")] = st === 4 ? "c" : "b"; u[teamPfad("feedback/" + st)] = null; await upd(u);
+        const u = {}; u[teamPfad("teil")] = S.rollenspiel ? "c" : "b"; u[teamPfad("feedback/" + st)] = null; await upd(u);
       } else {
         await zaehle("fehl", st); await abzug(st, 10);
         schreib(teamPfad("feedback/" + st), `Noch nicht ganz: ${n} von ${S.loesung.length} Abschnitten stehen schon an der richtigen Stelle. (−10 Punkte)`);
@@ -487,22 +504,22 @@
     $$("[data-foto]").forEach(el => el.onclick = async () => {
       const id = el.dataset.foto;
       if (id === S.richtig) { const u = {}; u[teamPfad("teil")] = "c"; await upd(u); }
-      else { await zaehle("fehl", st); await abzug(st, 10); schreib(teamPfad(`s2/falsch/${id}`), true); toast("Das ist nicht das richtige Foto (−10). Fragt noch einmal nach!"); }
+      else { await zaehle("fehl", st); await abzug(st, 10); schreib(teamPfad(`s${st}/falsch/${id}`), true); toast("Das ist nicht das richtige Foto (−10). Fragt noch einmal nach!"); }
     });
-    $$("[data-haken]").forEach(el => el.onchange = () => schreib(teamPfad(`s2/haken/${el.dataset.haken}`), el.checked || null));
+    $$("[data-haken]").forEach(el => el.onchange = () => schreib(teamPfad(`s${st}/haken/${el.dataset.haken}`), el.checked || null));
     const wc = $("#weiterC"); if (wc) wc.onclick = () => schreib(teamPfad("teil"), "b");
     // Karte
     $$("[data-zelle]").forEach(el => el.onclick = async () => {
-      const s3 = T.s3 || {}, w = s3.weg || 0, W = S.wege[w], k = el.dataset.zelle;
+      const s3 = T["s" + st] || {}, w = s3.weg || 0, W = S.wege[w], k = el.dataset.zelle;
       if (k === W.ziel) {
-        if (w + 1 < S.wege.length) { schreib(teamPfad("s3/weg"), w + 1); toast("Richtig! Jetzt der zweite Weg – die Rollen wechseln."); }
+        if (w + 1 < S.wege.length) { schreib(teamPfad(`s${st}/weg`), w + 1); toast("Richtig! Jetzt der zweite Weg – die Rollen wechseln."); }
         else { const u = {}; u[teamPfad("teil")] = "b"; await upd(u); }
-      } else { await zaehle("fehl", st); await abzug(st, 5); schreib(teamPfad(`s3/falsch/${w}/${k.replace(",", "_")}`), true); toast("Hier ist es nicht (−5). Lasst euch den Weg noch einmal vorlesen!"); }
+      } else { await zaehle("fehl", st); await abzug(st, 5); schreib(teamPfad(`s${st}/falsch/${w}/${k.replace(",", "_")}`), true); toast("Hier ist es nicht (−5). Lasst euch den Weg noch einmal vorlesen!"); }
     });
     // Rollenspiel
     const gl = $("#gelesen"); if (gl) gl.onclick = async () => {
-      await schreib(teamPfad(`s4/gelesen/${r}`), true);
-      const ok = Object.assign({}, ((meinTeam().s4 || {}).gelesen) || {}, { [r]: true });
+      await schreib(teamPfad(`s${st}/gelesen/${r}`), true);
+      const ok = Object.assign({}, ((meinTeam()["s" + st] || {}).gelesen) || {}, { [r]: true });
       if (ok.A && ok.B) schreib(teamPfad("teil"), "b");
     };
     // Fragen
@@ -524,8 +541,8 @@
     const ae = $("#aendern"); if (ae) ae.onclick = () => schreib(teamPfad(`schloss/${r}`), null);
     const oe = $("#oeffnen"); if (oe) oe.onclick = async () => {
       const sch = T.schloss || {}, ok = D.code.every((z, i) => (sch["z" + i] || 0) === z);
-      if (ok) { await schreib(teamPfad("feedback/5"), null); stationFertig(5); }
-      else { await zaehle("fehl", 5); await abzug(5, 10); const u = {}; u[teamPfad("schloss/A")] = null; u[teamPfad("schloss/B")] = null; u[teamPfad("feedback/5")] = "Klack … die Truhe bleibt zu. Prüft eure Ziffern im Notizbuch und die Reihenfolge! (−10)"; upd(u); }
+      if (ok) { await schreib(teamPfad("feedback/" + st), null); stationFertig(st); }
+      else { await zaehle("fehl", st); await abzug(st, 10); const u = {}; u[teamPfad("schloss/A")] = null; u[teamPfad("schloss/B")] = null; u[teamPfad("feedback/" + st)] = `Klack … ${ZIEL.name === "Box" ? "die Box bleibt" : "die Truhe bleibt"} zu. Prüft eure Ziffern im Notizbuch und die Reihenfolge! (−10)`; upd(u); }
     };
   }
 
