@@ -125,7 +125,7 @@
   }
   function fehler(e) {
     console.error(e);
-    $("#app").innerHTML = `<div class="karte" style="margin-top:20px"><b>Firebase lässt den Zugriff nicht zu.</b><p class="klein">Lehrkraft: Bitte die aktuellen Regeln aus <code>firebase-regeln.json</code> in Firebase → Realtime Database → Regeln veröffentlichen.</p></div>`;
+    $("#app").innerHTML = `<div class="karte" style="margin-top:20px"><b>Firebase lässt den Zugriff nicht zu.</b><p class="klein muted">${esc(e && e.message || e)}</p><p class="klein">Lehrkraft: Bitte die aktuellen Regeln aus <code>firebase-regeln.json</code> in Firebase → Realtime Database → Regeln veröffentlichen.</p></div>`;
   }
   const schreib = (pfad, wert) => gRef(CODE).child(pfad).set(wert).catch(fehler);
   const upd = obj => gRef(CODE).update(obj).catch(fehler);
