@@ -46,6 +46,10 @@
       },
       "live": {
         "$spiel": {
+          ".read": "auth != null",
+          ".indexOn": [
+            "erstellt"
+          ],
           "$code": {
             ".read": true,
             ".write": "auth != null",
