@@ -321,9 +321,14 @@
     return `<div style="margin-top:14px;border-top:1px solid var(--linie);padding-top:10px">${tp.slice(0, n).map((t, i) => `<div class="meldung" style="font-weight:400">💡 Tipp ${i + 1}: ${t}</div>`).join("")}
       ${n < tp.length ? `<button class="btn zwei klein" id="tipp">💡 Tipp anzeigen (−15 Punkte)</button>` : ""}</div>`;
   }
+  /* Firebase speichert Arrays ohne null-Einträge (gekürzt oder als Objekt) → immer auf volle Länge bringen */
+  function slotListe(T, S) {
+    const v = (T["s" + S.nr] || {}).slots || {};
+    return Array.from({ length: S.teile.length }, (_, i) => v[i] || null);
+  }
   /* --- Station: Ordnen (Brief / Telefonat) --- */
   function stOrdnen(S, T) {
-    const r = ich().rolle, slots = ((T["s" + S.nr] || {}).slots) || Array(S.teile.length).fill(null);
+    const r = ich().rolle, slots = slotListe(T, S);
     const belegt = new Set(slots.filter(Boolean));
     const meine = S.teile.filter(t => t.wer === r), fremd = S.teile.filter(t => t.wer !== r);
     const lab = t => t.wer + (S.teile.filter(x => x.wer === t.wer).indexOf(t) + 1);
@@ -458,19 +463,19 @@
     const tb = $("#tipp"); if (tb) tb.onclick = async () => { await zaehle("tipps", st); await abzug(st, 15); };
     // Ordnen
     $$("[data-slot]").forEach(el => el.onclick = () => {
-      const i = +el.dataset.slot, slots = ((T["s" + st] || {}).slots) || Array(S.teile.length).fill(null), id = slots[i];
-      if (id) { const t = S.teile.find(x => x.id === id); if (t.wer === r) { slots[i] = null; schreib(teamPfad(`s${st}/slots`), slots); } return; }
+      const i = +el.dataset.slot, slots = slotListe(T, S), id = slots[i];
+      if (id) { const t = S.teile.find(x => x.id === id); if (t.wer === r) schreib(teamPfad(`s${st}/slots/${i}`), null); return; }
       auswahlSlot = auswahlSlot === i ? null : i; zeichneSpieler();
     });
     $$("[data-karte]").forEach(el => el.onclick = () => {
-      const slots = (((T["s" + st] || {}).slots) || Array(S.teile.length).fill(null)).slice();
+      const slots = slotListe(T, S);
       let i = auswahlSlot != null && !slots[auswahlSlot] ? auswahlSlot : slots.findIndex(x => !x);
       if (i < 0) return toast("Alle Felder sind belegt – nimm erst eine deiner Karten heraus.");
-      slots[i] = el.dataset.karte; auswahlSlot = null;
-      schreib(teamPfad(`s${st}/slots`), slots);
+      auswahlSlot = null;
+      schreib(teamPfad(`s${st}/slots/${i}`), el.dataset.karte);
     });
     const pr = $("#pruefen"); if (pr) pr.onclick = async () => {
-      const slots = ((T["s" + st] || {}).slots) || [], n = slots.filter((x, i) => x === S.loesung[i]).length;
+      const slots = slotListe(T, S), n = slots.filter((x, i) => x === S.loesung[i]).length;
       if (n === S.loesung.length) {
         const u = {}; u[teamPfad("teil")] = st === 4 ? "c" : "b"; u[teamPfad("feedback/" + st)] = null; await upd(u);
       } else {
