@@ -1,0 +1,263 @@
+/* =========================================================
+   Gesprächs-Simulation · Szenario „Was essen wir heute?“
+   Dialogdatenbank für live-gespraech.html (Format wie tag-planen.js)
+   Passend zu Lektion k02 „Essen gehen & einladen“
+   Verlauf: Hunger → selbst kochen / persisches Restaurant / Pizza-Lieferdienst
+            → Rechnung (Taarof!) → Nachtisch → Ende
+   ========================================================= */
+(function () {
+  (window.GESPRAECHE = window.GESPRAECHE || {})["essen-heute"] = {
+    id: "essen-heute",
+    titel: "Was essen wir heute?",
+    titelFa: "اِمروز چه بُخوریم؟",
+    icon: "🍲",
+    beschreibung: {
+      de: "Freitagabend, alle sind müde und hungrig – aber niemand hat etwas geplant. Kocht ihr selbst persisch, geht ihr ins persische Restaurant oder bestellt ihr Pizza? Und wer bezahlt am Ende? Eure Antworten entscheiden.",
+      fa: "جُمعه شَب اَست، هَمه خَسته و گُرُسنه‌اَند – اَمّا هیچ‌کَس بَرنامه‌ای نَدارَد. خودِتان غَذای ایرانی می‌پَزید، به رِستورانِ ایرانی می‌رَوید یا پیتزا سِفارِش می‌دَهید؟ و در پایان چه کَسی حِساب می‌کُنَد؟ جَواب‌های شُما مَسیرِ داستان را تَعیین می‌کُنَند."
+    },
+    niveau: "Wiederholung Grundkurs (Präsens, Vergangenheit, Konjunktiv, Imperativ)",
+    gruppe: { de: "Hungrige Freunde 🍲", fa: "دوستانِ گُرُسنه 🍲" },
+    start: "e1",
+    knoten: {
+      /* ---------------- Episode 1: Freitagabend, Hunger ---------------- */
+      e1: { typ: "szene", ort: "kochen", zeit: { de: "Freitag, 19 Uhr", fa: "جُمعه، ساعَتِ هَفتِ شَب" },
+        de: "Freitagabend. Die Woche war lang, und {alle} sitzen zusammen im Wohnzimmer. Alle sind müde – und sehr hungrig. Aber niemand hat etwas geplant …",
+        fa: "جُمعه شَب اَست. هَفته‌ی طولانی‌ای بود و {alle} با هم در اُتاقِ نِشیمَن نِشَسته‌اَند. هَمه خَسته‌اَند – و خِیلی گُرُسنه. اَمّا هیچ‌کَس بَرنامه‌ای نَدارَد…",
+        weiter: "r1" },
+      r1: { typ: "rede", ort: "kochen",
+        de: "Ich habe so einen Hunger! Kochen wir selbst oder gehen wir essen?",
+        fa: ["خِیلی گُرُسنه‌اَم! خودِمان غَذا بِپَزیم یا بِرَویم بیرون غَذا بُخوریم؟", "خِیلی تِشنه‌اَم! خودِمان غَذا بِپَزیم یا بِرَویم بیرون غَذا بُخوریم؟", "خِیلی گُرُسنه‌اَم! خودِمان غَذا پُختیم یا رَفتیم بیرون غَذا خوردیم؟", "خِیلی گُرُسنه‌اَم! شُما غَذا بِپَزید یا بِرَویم بیرون غَذا بُخوریم؟"],
+        um: "خِیلی گُشنَمه! خودِمون غَذا دُرُست کُنیم یا بِریم بیرون؟",
+        antworten: "alle",
+        optionen: [
+          { id: "kochen", art: "kochen", label: { de: "selbst kochen", fa: "آشپَزی" }, de: "Lasst uns zusammen persisch kochen! Das ist billiger.",
+            fa: ["بیایید با هم غَذای ایرانی بِپَزیم! این اَرزان‌تَر اَست.", "بیایید با هم غَذای ایرانی پُختیم! این اَرزان‌تَر اَست.", "بیایید با هم غَذای ایتالیایی بِپَزیم! این اَرزان‌تَر اَست.", "بیایید با هم غَذای ایرانی بِپَزیم! این گِران‌تَر اَست."],
+            um: "بیاین با هم غَذای ایرونی دُرُست کُنیم! اَرزون‌تَره." },
+          { id: "restaurant", art: "restaurant", label: { de: "persisches Restaurant", fa: "رِستورانِ ایرانی" }, de: "Ich will heute nicht kochen. Lasst uns ins persische Restaurant gehen!",
+            fa: ["اِمروز نِمی‌خواهَم آشپَزی کُنَم. بیایید به رِستورانِ ایرانی بِرَویم!", "اِمروز می‌خواهَم آشپَزی کُنَم. بیایید به رِستورانِ ایرانی بِرَویم!", "دیروز نِمی‌خواستَم آشپَزی کُنَم. بیایید به رِستورانِ ایرانی بِرَویم!", "اِمروز نِمی‌خواهَم آشپَزی کُنَم. بیایید به رِستورانِ ایتالیایی بِرَویم!"],
+            um: "اِمروز حُوصِله‌ی آشپَزی نَدارَم. بیاین بِریم رِستورانِ ایرونی!" },
+          { id: "liefern", art: "liefern", label: { de: "Pizza bestellen", fa: "سِفارِشِ پیتزا" }, de: "Ich bin so müde. Lasst uns beim Italiener Pizza bestellen!",
+            fa: ["خِیلی خَسته‌اَم. بیایید از رِستورانِ ایتالیایی پیتزا سِفارِش بِدَهیم!", "خِیلی گُرُسنه‌اَم. بیایید از رِستورانِ ایتالیایی پیتزا سِفارِش بِدَهیم!", "خِیلی خَسته‌اَم. بیایید از رِستورانِ ایتالیایی پیتزا سِفارِش دادیم!", "خِیلی خَسته‌اَم. بیایید از رِستورانِ ایرانی پیتزا سِفارِش بِدَهیم!"],
+            um: "خِیلی خَسته‌م. بیاین از ایتالیاییه پیتزا سِفارِش بِدیم!" }
+        ],
+        weiter: { kochen: "e2k", restaurant: "e2r", liefern: "e2l" } },
+
+      /* ---------------- Zweig A: selbst kochen ---------------- */
+      e2k: { typ: "szene", ort: "kochen",
+        de: "Also ab in die Küche! {alle} öffnen den Kühlschrank und schauen hinein: Eier, Zwiebeln, Reis, ein bisschen Joghurt … Was kann man daraus kochen?",
+        fa: "پَس به آشپَزخانه! {alle} دَرِ یَخچال را باز می‌کُنَند و نِگاه می‌کُنَند: تُخمِ‌مُرغ، پیاز، بِرِنج، کَمی ماست… با این‌ها چه می‌شَوَد پُخت؟",
+        weiter: "r2k" },
+      r2k: { typ: "rede", ort: "kochen",
+        de: "Was kochen wir? Kuku Sabzi, Ash Reshteh oder Tahchin?",
+        fa: ["چه بِپَزیم؟ کوکو سَبزی، آشِ رِشته یا تَه‌چین؟", "چه پُختیم؟ کوکو سَبزی، آشِ رِشته یا تَه‌چین؟", "چه بِخَریم؟ کوکو سَبزی، آشِ رِشته یا تَه‌چین؟", "کُجا بِپَزیم؟ کوکو سَبزی، آشِ رِشته یا تَه‌چین؟"],
+        um: "چی دُرُست کُنیم؟ کوکو سَبزی، آشِ رِشته یا تَه‌چین؟",
+        antworten: 2,
+        optionen: [
+          { id: "kuku", art: "kuku", label: { de: "Kuku Sabzi", fa: "کوکو سَبزی" }, de: "Kuku Sabzi! Das geht schnell und ist lecker.",
+            fa: ["کوکو سَبزی! زود آماده می‌شَوَد و خوشمَزه اَست.", "کوکو سَبزی! دیر آماده می‌شَوَد و خوشمَزه اَست.", "کوکو سَبزی! زود آماده شُد و خوشمَزه بود.", "کوکو سَبزی! زود آماده می‌شَوَد و بَدمَزه اَست."],
+            um: "کوکو سَبزی! زود حاضِر می‌شه و خوشمَزه‌ست." },
+          { id: "ash", art: "ash", label: { de: "Ash Reshteh", fa: "آشِ رِشته" }, de: "Ash Reshteh! Draußen ist es kalt, und Ash wärmt.",
+            fa: ["آشِ رِشته! بیرون هَوا سَرد اَست و آش آدَم را گَرم می‌کُنَد.", "آشِ رِشته! بیرون هَوا گَرم اَست و آش آدَم را گَرم می‌کُنَد.", "آشِ رِشته! بیرون هَوا سَرد بود و آش آدَم را گَرم کَرد.", "آشِ رِشته! بیرون هَوا سَرد اَست و آش آدَم را سَرد می‌کُنَد."],
+            um: "آشِ رِشته! بیرون سَرده، آش آدَمو گَرم می‌کُنه." },
+          { id: "tahchin", art: "tahchin", label: { de: "Tahchin", fa: "تَه‌چین" }, de: "Tahchin! Ich liebe den knusprigen Reis.",
+            fa: ["تَه‌چین! مَن عاشِقِ تَه‌دیگ هَستَم.", "تَه‌چین! مَن عاشِقِ تَه‌دیگ بودَم.", "تَه‌چین! تو عاشِقِ تَه‌دیگ هَستی.", "تَه‌چین! مَن از تَه‌دیگ بَدَم می‌آیَد."],
+            um: "تَه‌چین! مَن عاشِقِ تَه‌دیگَم." }
+        ],
+        weiter: { kuku: "e3kuku", ash: "e3ash", tahchin: "e3tahchin" } },
+      e3kuku: { typ: "szene", ort: "kochen",
+        de: "Für Kuku Sabzi braucht man viele frische Kräuter: Petersilie, Koriander, Dill … Im Kühlschrank liegt aber nur ein Bund alte, gelbe Petersilie.",
+        fa: "بَرای کوکو سَبزی سَبزیِ تازه‌ی زیادی لازِم اَست: جَعفَری، گِشنیز، شِوید… اَمّا در یَخچال فَقَط یک دَسته جَعفَریِ کُهنه و زَرد هَست.",
+        weiter: "r3k" },
+      e3ash: { typ: "szene", ort: "kochen",
+        de: "Für Ash braucht man Bohnen, Nudeln, Kräuter und Kashk. Alles ist da – nur kein Kashk! Und Ash ohne Kashk ist kein richtiger Ash.",
+        fa: "بَرای آش لوبیا، رِشته، سَبزی و کَشک لازِم اَست. هَمه‌چیز هَست – فَقَط کَشک نیست! و آشِ بی‌کَشک، آشِ واقِعی نیست.",
+        weiter: "r3k" },
+      e3tahchin: { typ: "szene", ort: "kochen",
+        de: "Tahchin braucht Reis, Joghurt, Eier – und Safran. Reis ist da, Joghurt ist da … aber Safran? Keine Spur. Außerdem dauert Tahchin fast zwei Stunden!",
+        fa: "تَه‌چین بِرِنج، ماست، تُخمِ‌مُرغ – و زَعفَران لازِم دارَد. بِرِنج هَست، ماست هَست… اَمّا زَعفَران؟ اَصلاً نیست. در ضِمن، تَه‌چین تَقریباً دو ساعَت طول می‌کِشَد!",
+        weiter: "r3k" },
+      r3k: { typ: "rede", ort: "kochen",
+        de: "Uns fehlt etwas. Wer geht schnell zum Supermarkt?",
+        fa: ["یک چیزی کَم داریم. چه کَسی سَریع به سوپِرمارکِت می‌رَوَد؟", "یک چیزی کَم داشتیم. چه کَسی سَریع به سوپِرمارکِت رَفت؟", "یک چیزی کَم داریم. چه کَسی سَریع به نانوایی می‌رَوَد؟", "هیچ چیزی کَم نَداریم. چه کَسی سَریع به سوپِرمارکِت می‌رَوَد؟"],
+        um: "یه چیزی کَم داریم. کی سَریع می‌ره سوپِرمارکِت؟",
+        antworten: 2,
+        optionen: [
+          { id: "ich", art: "ja", de: "Ich gehe! Der Supermarkt ist gleich um die Ecke.",
+            fa: ["مَن می‌رَوَم! سوپِرمارکِت هَمین سَرِ کوچه اَست.", "مَن رَفتَم! سوپِرمارکِت هَمین سَرِ کوچه اَست.", "تو می‌رَوی! سوپِرمارکِت هَمین سَرِ کوچه اَست.", "مَن می‌رَوَم! سوپِرمارکِت خِیلی دور اَست."],
+            um: "مَن می‌رَم! سوپِرمارکِت هَمین سَرِ کوچه‌ست." },
+          { id: "zusammen", art: "ja", de: "Ich komme mit dir, {S}! Zu zweit geht es schneller.",
+            fa: ["مَن با تو می‌آیَم، {S}! دو نَفَری سَریع‌تَر اَست.", "مَن با تو آمَدَم، {S}! دو نَفَری سَریع‌تَر اَست.", "مَن با تو می‌آیَم، {S}! دو نَفَری کُندتَر اَست.", "تو با مَن می‌آیی، {S}! دو نَفَری سَریع‌تَر اَست."],
+            um: "مَن باهات میام، {S}! دو نَفَری زودتَره." },
+          { id: "pizza", art: "nein", de: "Nein, es regnet! Lasst uns lieber Pizza bestellen.",
+            fa: ["نَه، باران می‌آیَد! بِهتَر اَست پیتزا سِفارِش بِدَهیم.", "نَه، بَرف می‌آیَد! بِهتَر اَست پیتزا سِفارِش بِدَهیم.", "نَه، باران آمَد! بِهتَر اَست پیتزا سِفارِش بِدَهیم.", "نَه، باران می‌آیَد! بِهتَر اَست پیتزا بِپَزیم."],
+            um: "نَه، بارون میاد! بِهتَره پیتزا سِفارِش بِدیم." }
+        ],
+        /* Gleichstand ja/nein → einkaufen; „nein“ springt zum Lieferdienst */
+        weiter: { ja: "e4k", nein: "e2l" } },
+      e4k: { typ: "szene", ort: "kochen", zeit: { de: "21 Uhr", fa: "ساعَتِ نُهِ شَب" },
+        de: "Viel später steht das Essen endlich auf dem Tisch. Die ganze Wohnung duftet nach persischer Küche. Neben dem Topf liegt noch der Kassenbon vom Supermarkt: 23 Euro.",
+        fa: "خِیلی دیرتَر، بِالاخَره غَذا روی میز اَست. بوی غَذای ایرانی تَمامِ خانه را پُر کَرده اَست. کِنارِ قابلَمه هَنوز رَسیدِ سوپِرمارکِت هَست: بیست و سه یورو.",
+        zusatz: [
+          { wenn: "r3k:ich", de1: "{namen} kommt eilig vom Supermarkt zurück – mit allem, was gefehlt hat! 🛒", deN: "{namen} kommen eilig vom Supermarkt zurück – mit allem, was gefehlt hat! 🛒",
+            fa1: "{namen} با عَجَله از سوپِرمارکِت بَرمی‌گَردَد – با هَمه‌ی چیزهایی که کَم بود! 🛒", faN: "{namen} با عَجَله از سوپِرمارکِت بَرمی‌گَردَند – با هَمه‌ی چیزهایی که کَم بود! 🛒" },
+          { wenn: "r3k:zusammen", de1: "{namen} hat beim Einkaufen auch noch Schokolade gekauft. 🍫", deN: "{namen} haben beim Einkaufen auch noch Schokolade gekauft. 🍫",
+            fa1: "{namen} موقِعِ خَرید شُکُلات هم خَریده اَست. 🍫", faN: "{namen} موقِعِ خَرید شُکُلات هم خَریده‌اَند. 🍫" }
+        ],
+        weiter: "r4" },
+
+      /* ---------------- Zweig B: persisches Restaurant ---------------- */
+      e2r: { typ: "szene", ort: "restaurant", zeit: { de: "19:30 Uhr", fa: "ساعَتِ هَفت و نیمِ شَب" },
+        de: "Das Restaurant „Shiraz“ ist voll. An den Wänden hängen Teppiche, leise läuft persische Musik, und es riecht nach Safran und Kebab. Der Kellner bringt die Speisekarte.",
+        fa: "رِستورانِ «شیراز» شُلوغ اَست. به دیوارها فَرش آویزان اَست، موسیقیِ ایرانی آرام پَخش می‌شَوَد و بوی زَعفَران و کَباب می‌آیَد. گارسون مِنو را می‌آوَرَد.",
+        weiter: "r2r" },
+      r2r: { typ: "rede", ort: "restaurant",
+        de: "Die Speisekarte ist so lang! Was bestellt ihr?",
+        fa: ["مِنو خِیلی طولانی اَست! شُما چه سِفارِش می‌دَهید؟", "مِنو خِیلی کوتاه اَست! شُما چه سِفارِش می‌دَهید؟", "مِنو خِیلی طولانی اَست! شُما چه سِفارِش دادید؟", "مِنو خِیلی طولانی اَست! ما چه سِفارِش می‌دَهیم؟"],
+        um: "مِنو خِیلی طولانیه! شُما چی سِفارِش می‌دین؟",
+        antworten: "alle",
+        optionen: [
+          { id: "kabab", art: "kabab", label: { de: "Kebab", fa: "کَباب" }, de: "Ich nehme Kabab Kubideh mit Reis und einen Dugh.",
+            fa: ["مَن کَبابِ کوبیده با بِرِنج و یک دوغ می‌گیرَم.", "مَن کَبابِ کوبیده با نان و یک دوغ می‌گیرَم.", "مَن کَبابِ کوبیده با بِرِنج و یک دوغ گِرِفتَم.", "تو کَبابِ کوبیده با بِرِنج و یک دوغ می‌گیری."],
+            um: "مَن کوبیده با بِرِنج و یه دوغ می‌گیرَم." },
+          { id: "veg", art: "veg", label: { de: "vegetarisch", fa: "گیاهی" }, de: "Ich esse kein Fleisch. Haben Sie etwas Vegetarisches?",
+            fa: ["مَن گوشت نِمی‌خورَم. غَذای گیاهی دارید؟", "مَن گوشت می‌خورَم. غَذای گیاهی دارید؟", "مَن گوشت نَخوردَم. غَذای گیاهی دارید؟", "مَن گوشت نِمی‌خورَم. غَذای دَریایی دارید؟"],
+            um: "مَن گوشت نِمی‌خورَم. غَذای گیاهی دارین؟" },
+          { id: "fesenjan", art: "fesenjan", label: { de: "Fesendschan", fa: "فِسِنجان" }, de: "Für mich Fesendschan, bitte. Das ist mein Lieblingsessen!",
+            fa: ["بَرای مَن فِسِنجان، لُطفاً. این غَذای موردِ عَلاقه‌ی مَن اَست!", "بَرای تو فِسِنجان، لُطفاً. این غَذای موردِ عَلاقه‌ی مَن اَست!", "بَرای مَن فِسِنجان، لُطفاً. این غَذای موردِ عَلاقه‌ی مَن بود!", "بَرای مَن فِسِنجان، لُطفاً. این غَذای موردِ عَلاقه‌ی مَن نیست!"],
+            um: "بَرای مَن فِسِنجون، لُطفاً. غَذای موردِ عَلاقه‌مه!" }
+        ],
+        weiter: "e3r" },
+      e3r: { typ: "szene", ort: "restaurant",
+        de: "Das Essen kommt: Berge von Reis, Butter und Safran. Am Tisch redet plötzlich niemand mehr – alle essen.",
+        fa: "غَذا می‌رِسَد: کوهی از بِرِنج، کَره و زَعفَران. ناگَهان سَرِ میز هیچ‌کَس حَرف نِمی‌زَنَد – هَمه غَذا می‌خورَند.",
+        zusatz: [
+          { wenn: "r2r:veg", de1: "{namen} bekommt Mirza Ghasemi – mit Auberginen, Knoblauch und Ei. Der Kellner sagt stolz: „Ohne ein Gramm Fleisch!“", deN: "{namen} bekommen Mirza Ghasemi – mit Auberginen, Knoblauch und Ei. Der Kellner sagt stolz: „Ohne ein Gramm Fleisch!“",
+            fa1: "بَرای {namen} میرزاقاسِمی می‌آوَرَند – با بادِمجان، سیر و تُخمِ‌مُرغ. گارسون با اِفتِخار می‌گویَد: «بِدونِ یک گِرَم گوشت!»", faN: "بَرای {namen} میرزاقاسِمی می‌آوَرَند – با بادِمجان، سیر و تُخمِ‌مُرغ. گارسون با اِفتِخار می‌گویَد: «بِدونِ یک گِرَم گوشت!»" }
+        ],
+        weiter: "r3r" },
+      r3r: { typ: "rede", ort: "restaurant",
+        de: "Mmh, das ist lecker! Wie ist dein Essen?",
+        fa: ["بَه‌بَه، خِیلی خوشمَزه اَست! غَذای تو چِطور اَست؟", "بَه‌بَه، خِیلی بَدمَزه اَست! غَذای تو چِطور اَست؟", "بَه‌بَه، خِیلی خوشمَزه اَست! غَذای مَن چِطور اَست؟", "بَه‌بَه، خِیلی خوشمَزه بود! غَذای تو چِطور بود؟"],
+        um: "بَه‌بَه، خِیلی خوشمَزه‌ست! غَذای تو چِطوره؟",
+        antworten: 1,
+        optionen: [
+          { id: "oma", art: "ja", de: "Super! Fast so gut wie bei meiner Oma.",
+            fa: ["عالی اَست! تَقریباً به خوبیِ غَذای مادَربُزُرگَم.", "عالی بود! تَقریباً به خوبیِ غَذای مادَربُزُرگَم.", "عالی اَست! تَقریباً به خوبیِ غَذای مادَرَم.", "عالی اَست! تَقریباً به خوبیِ غَذای مادَربُزُرگَت."],
+            um: "عالیه! تَقریباً عِینِ غَذای مادَربُزُرگَم." },
+          { id: "salzig", art: "nein", de: "Ein bisschen zu salzig. Ich brauche Wasser!",
+            fa: ["کَمی زیادی شور اَست. آب لازِم دارَم!", "کَمی زیادی شیرین اَست. آب لازِم دارَم!", "کَمی زیادی شور بود. آب لازِم داشتَم!", "کَمی زیادی شور اَست. نان لازِم دارَم!"],
+            um: "یه کَم زیادی شوره. آب می‌خوام!" },
+          { id: "tauschen", art: "vielleicht", de: "Gut – aber deins sieht besser aus. Tauschen wir?",
+            fa: ["خوب اَست – اَمّا غَذای تو بِهتَر به نَظَر می‌رِسَد. عَوَض کُنیم؟", "خوب اَست – اَمّا غَذای مَن بِهتَر به نَظَر می‌رِسَد. عَوَض کُنیم؟", "خوب اَست – اَمّا غَذای تو بَدتَر به نَظَر می‌رِسَد. عَوَض کُنیم؟", "خوب بود – اَمّا غَذای تو بِهتَر به نَظَر رِسید. عَوَض کَردیم؟"],
+            um: "خوبه – وَلی مالِ تو بِهتَر به نَظَر میاد. عَوَض کُنیم؟" }
+        ],
+        weiter: "e4r" },
+      e4r: { typ: "szene", ort: "restaurant", zeit: { de: "21 Uhr", fa: "ساعَتِ نُهِ شَب" },
+        de: "Die Teller sind leer. Der Kellner legt die Rechnung genau in die Mitte des Tisches. Einen Moment lang bewegt sich niemand. Dann greifen alle gleichzeitig danach …",
+        fa: "بُشقاب‌ها خالی‌اَند. گارسون صورَت‌حِساب را دُرُست وَسَطِ میز می‌گُذارَد. یک لَحظه هیچ‌کَس تِکان نِمی‌خورَد. بَعد هَمه با هم دَست دِراز می‌کُنَند…",
+        weiter: "r4" },
+
+      /* ---------------- Zweig C: Pizza-Lieferdienst ---------------- */
+      e2l: { typ: "szene", ort: "pizza",
+        de: "Also Pizza! {alle} sitzen auf dem Sofa und öffnen die Liefer-App. Alle reden gleichzeitig: Salami? Pilze? Extra Käse?",
+        fa: "پَس پیتزا! {alle} روی مُبل نِشَسته‌اَند و اَپلیکِیشِنِ سِفارِشِ غَذا را باز می‌کُنَند. هَمه با هم حَرف می‌زَنَند: سالامی؟ قارچ؟ پَنیرِ اِضافه؟",
+        weiter: "r2l" },
+      r2l: { typ: "rede", ort: "pizza",
+        de: "Ich bestelle jetzt. Welche Pizza möchtet ihr?",
+        fa: ["مَن اَلان سِفارِش می‌دَهَم. چه پیتزایی می‌خواهید؟", "مَن اَلان سِفارِش دادَم. چه پیتزایی می‌خواهید؟", "تو اَلان سِفارِش می‌دَهی. چه پیتزایی می‌خواهید؟", "مَن اَلان سِفارِش می‌دَهَم. چه نوشیدَنی‌ای می‌خواهید؟"],
+        um: "مَن اَلان سِفارِش می‌دَم. چه پیتزایی می‌خواین؟",
+        antworten: "alle",
+        optionen: [
+          { id: "salami", art: "salami", label: { de: "Salami", fa: "سالامی" }, de: "Eine Pizza Salami mit extra Käse, bitte!",
+            fa: ["یک پیتزای سالامی با پَنیرِ اِضافه، لُطفاً!", "یک پیتزای سالامی بِدونِ پَنیر، لُطفاً!", "یک پیتزای قارچ با پَنیرِ اِضافه، لُطفاً!", "دو پیتزای سالامی با پَنیرِ اِضافه، لُطفاً!"],
+            um: "یه پیتزا سالامی با پَنیرِ اِضافه، لُطفاً!" },
+          { id: "veg", art: "veg", label: { de: "vegetarisch", fa: "گیاهی" }, de: "Für mich eine vegetarische Pizza. Ich esse kein Fleisch.",
+            fa: ["بَرای مَن یک پیتزای گیاهی. مَن گوشت نِمی‌خورَم.", "بَرای مَن یک پیتزای گیاهی. مَن گوشت می‌خورَم.", "بَرای تو یک پیتزای گیاهی. مَن گوشت نِمی‌خورَم.", "بَرای مَن یک پیتزای گیاهی. مَن گوشت نَخوردَم."],
+            um: "بَرای مَن یه پیتزای گیاهی. گوشت نِمی‌خورَم." },
+          { id: "kebab", art: "kebab", label: { de: "lieber Kebab", fa: "کَباب" }, de: "Pizza? Ich bestelle lieber Kebab beim persischen Restaurant.",
+            fa: ["پیتزا؟ مَن تَرجیح می‌دَهَم از رِستورانِ ایرانی کَباب سِفارِش بِدَهَم.", "پیتزا؟ مَن تَرجیح دادَم از رِستورانِ ایرانی کَباب سِفارِش بِدَهَم.", "پیتزا؟ مَن تَرجیح می‌دَهَم از رِستورانِ ایتالیایی کَباب سِفارِش بِدَهَم.", "پیتزا؟ تو تَرجیح می‌دَهی از رِستورانِ ایرانی کَباب سِفارِش بِدَهی."],
+            um: "پیتزا؟ مَن تَرجیح می‌دَم از رِستورانِ ایرونی کَباب سِفارِش بِدَم." }
+        ],
+        weiter: "e3l" },
+      e3l: { typ: "szene", ort: "pizza", zeit: { de: "20:15 Uhr", fa: "ساعَتِ هَشت و رُبعِ شَب" },
+        de: "Vierzig Minuten später klingelt es. Der Lieferant ist nass vom Regen und lächelt müde: „Das macht 48 Euro, bitte.“ Alle schauen sich an …",
+        fa: "چِهِل دَقیقه بَعد زَنگِ دَر را می‌زَنَند. پِیک از باران خیس شُده اَست و خَسته لَبخَند می‌زَنَد: «می‌شَوَد چِهِل و هَشت یورو، لُطفاً.» هَمه به هم نِگاه می‌کُنَند…",
+        zusatz: [
+          { wenn: "r2l:veg", de1: "Die vegetarische Pizza für {namen} ist auch dabei. 🥦", deN: "Die vegetarischen Pizzas für {namen} sind auch dabei. 🥦",
+            fa1: "پیتزای گیاهیِ {namen} هم هَست. 🥦", faN: "پیتزاهای گیاهیِ {namen} هم هَستَند. 🥦" },
+          { wenn: "r2l:kebab", de1: "Und ein zweiter Lieferant bringt Kebab für {namen}. 🍢", deN: "Und ein zweiter Lieferant bringt Kebab für {namen}. 🍢",
+            fa1: "یک پِیکِ دیگَر هم بَرای {namen} کَباب می‌آوَرَد. 🍢", faN: "یک پِیکِ دیگَر هم بَرای {namen} کَباب می‌آوَرَد. 🍢" }
+        ],
+        weiter: "r4" },
+
+      /* ---------------- Episode 3: Wer bezahlt? (Taarof) ---------------- */
+      r4: { typ: "rede",
+        de: "Nein, lasst mal! Heute bezahle ich. Ihr seid meine Gäste.",
+        fa: ["نَه، اِجازه بِدَهید! اِمروز مَن حِساب می‌کُنَم. شُما مِهمانِ مَن هَستید.", "نَه، اِجازه بِدَهید! دیروز مَن حِساب کَردَم. شُما مِهمانِ مَن بودید.", "نَه، اِجازه بِدَهید! اِمروز تو حِساب می‌کُنی. شُما مِهمانِ مَن هَستید.", "نَه، اِجازه بِدَهید! اِمروز مَن حِساب می‌کُنَم. مَن مِهمانِ شُما هَستَم."],
+        um: "نَه، بِذارین! اِمروز مَن حِساب می‌کُنَم. شُما مِهمونِ مَنین.",
+        antworten: "alle",
+        optionen: [
+          { id: "danke", art: "ja", de: "Danke, {S}! Aber nächstes Mal bezahle ich.",
+            fa: ["مَمنون، {S}! اَمّا دَفعه‌ی بَعد مَن حِساب می‌کُنَم.", "مَمنون، {S}! اَمّا دَفعه‌ی قَبل مَن حِساب کَردَم.", "مَمنون، {S}! اَمّا دَفعه‌ی بَعد تو حِساب می‌کُنی.", "مَمنون، {S}! اَمّا دَفعه‌ی بَعد مَن حِساب نِمی‌کُنَم."],
+            um: "مِرسی، {S}! وَلی دَفعه‌ی بَعد مَن حِساب می‌کُنَم." },
+          { id: "ichzahle", art: "nein", de: "Auf keinen Fall! Ich bezahle – keine Diskussion!",
+            fa: ["به هیچ وَجه! مَن حِساب می‌کُنَم – بَحث نَکُنید!", "به هیچ وَجه! مَن حِساب کَردَم – بَحث نَکُنید!", "به هیچ وَجه! تو حِساب می‌کُنی – بَحث نَکُنید!", "به هیچ وَجه! مَن حِساب می‌کُنَم – بَحث کُنید!"],
+            um: "اَصلاً! مَن حِساب می‌کُنَم – بَحث نَکُنین!" },
+          { id: "letztes", art: "nein", de: "Nein, nein! {S}, du hast letztes Mal bezahlt.",
+            fa: ["نَه، نَه! {S}، دَفعه‌ی پیش تو حِساب کَردی.", "نَه، نَه! {S}، دَفعه‌ی پیش مَن حِساب کَردَم.", "نَه، نَه! {S}، دَفعه‌ی بَعد تو حِساب می‌کُنی.", "نَه، نَه! {S}، دَفعه‌ی پیش تو حِساب نَکَردی."],
+            um: "نَه، نَه! {S}، دَفعه‌ی پیش تو حِساب کَردی." },
+          { id: "teilen", art: "teilen", label: { de: "teilen", fa: "تَقسیم" }, de: "Lasst uns lieber teilen. Jeder bezahlt seinen Teil.",
+            fa: ["بِهتَر اَست پول را تَقسیم کُنیم. هَر کَس سَهمِ خودَش را می‌دَهَد.", "بِهتَر اَست پول را تَقسیم کُنیم. هیچ‌کَس سَهمِ خودَش را نِمی‌دَهَد.", "بِهتَر اَست پول را تَقسیم کَردیم. هَر کَس سَهمِ خودَش را داد.", "بِهتَر اَست پول را تَقسیم کُنیم. مَن سَهمِ هَمه را می‌دَهَم."],
+            um: "بِهتَره دَنگی حِساب کُنیم. هَر کی سَهمِ خودِشو می‌ده." }
+        ],
+        /* Gleichstand ja/nein → ja (die Einladung wird angenommen) */
+        weiter: { ja: "e5dank", nein: "e5taarof", teilen: "e5teilen" } },
+      e5dank: { typ: "szene",
+        de: "Diesmal gibt es keine lange Diskussion! Alle bedanken sich herzlich. Aber alle wissen: Nächstes Mal geht das Spiel von vorne los. 😄",
+        fa: "این بار بَحثِ طولانی‌ای نیست! هَمه از تَهِ دِل تَشَکُّر می‌کُنَند. اَمّا هَمه می‌دانَند: دَفعه‌ی بَعد این بازی از نو شُروع می‌شَوَد. 😄",
+        weiter: "r5" },
+      e5taarof: { typ: "szene",
+        de: "Jetzt beginnt der große Taarof: „Ich bezahle!“ – „Nein, ich!“ – „Auf keinen Fall!“ Fünf Minuten geht es hin und her. Am Ende gewinnt die Person mit dem schnellsten Handy – sie bezahlt heimlich per App. 📱",
+        fa: "حالا تَعارُفِ بُزُرگ شُروع می‌شَوَد: «مَن حِساب می‌کُنَم!» – «نَه، مَن!» – «به هیچ وَجه!» پَنج دَقیقه این بَحث اِدامه دارَد. در آخَر کَسی بَرَنده می‌شَوَد که گوشی‌اَش از هَمه سَریع‌تَر اَست – او مَخفیانه با اَپلیکِیشِن پول را می‌دَهَد. 📱",
+        weiter: "r5" },
+      e5teilen: { typ: "szene",
+        de: "Also wird gerechnet. Wer hatte was? Wer hat zwei Getränke getrunken? Das Rechnen dauert fast länger als das Essen. Am Ende fehlen 50 Cent – und alle lachen.",
+        fa: "پَس حِساب و کِتاب شُروع می‌شَوَد. چه کَسی چه خورد؟ چه کَسی دو نوشیدَنی خورد؟ حِساب کَردَن تَقریباً از غَذا خوردَن بیشتَر طول می‌کِشَد. در آخَر پَنجاه سِنت کَم اَست – و هَمه می‌خَندَند.",
+        weiter: "r5" },
+
+      /* ---------------- Episode 4: Nachtisch ---------------- */
+      r5: { typ: "rede",
+        de: "Und was machen wir jetzt? Ich habe noch Lust auf etwas Süßes!",
+        fa: ["خُب، حالا چه کار کُنیم؟ هَنوز دِلَم یک چیزِ شیرین می‌خواهَد!", "خُب، حالا چه کار کُنیم؟ هَنوز دِلَم یک چیزِ شور می‌خواهَد!", "خُب، حالا چه کار کُنیم؟ دیگَر دِلَم یک چیزِ شیرین نِمی‌خواهَد!", "خُب، حالا چه کار کُنیم؟ هَنوز دِلَم یک چیزِ شیرین می‌خواست!"],
+        um: "خُب، حالا چی کار کُنیم؟ هَنوز دِلَم یه چیزِ شیرین می‌خواد!",
+        antworten: "alle",
+        optionen: [
+          { id: "bastani", art: "bastani", label: { de: "Safraneis", fa: "بَستَنیِ سُنَّتی" }, de: "Lasst uns Bastani Sonnati essen gehen! Safraneis ist das Beste.",
+            fa: ["بیایید بِرَویم بَستَنیِ سُنَّتی بُخوریم! بَستَنیِ زَعفَرانی از هَمه بِهتَر اَست.", "بیایید بِرَویم بَستَنیِ سُنَّتی خوردیم! بَستَنیِ زَعفَرانی از هَمه بِهتَر اَست.", "بیایید بِرَویم بَستَنیِ سُنَّتی بُخوریم! بَستَنیِ زَعفَرانی از هَمه بَدتَر اَست.", "بیایید بِرَویم فالوده بُخوریم! بَستَنیِ زَعفَرانی از هَمه بِهتَر اَست."],
+            um: "بیاین بِریم بَستَنی سُنَّتی بُخوریم! بَستَنی زَعفَرونی از هَمه بِهتَره." },
+          { id: "tee", art: "tee", label: { de: "Tee", fa: "چای" }, de: "Ich bin so satt. Für mich nur einen Tee mit Kardamom.",
+            fa: ["مَن خِیلی سیرَم. بَرای مَن فَقَط یک چای با هِل.", "مَن خِیلی گُرُسنه‌اَم. بَرای مَن فَقَط یک چای با هِل.", "مَن خِیلی سیرَم. بَرای مَن فَقَط یک قَهوه با هِل.", "مَن خِیلی سیرَم. بَرای تو فَقَط یک چای با هِل."],
+            um: "مَن خِیلی سیرَم. بَرای مَن فَقَط یه چای هِل." },
+          { id: "spaziergang", art: "spaziergang", label: { de: "Spaziergang", fa: "پیاده‌رَوی" }, de: "Erst ein Spaziergang, dann Nachtisch. Ich kann mich kaum bewegen!",
+            fa: ["اَوَّل پیاده‌رَوی، بَعد دِسِر. به زَحمَت می‌تَوانَم تِکان بُخورَم!", "اَوَّل دِسِر، بَعد پیاده‌رَوی. به زَحمَت می‌تَوانَم تِکان بُخورَم!", "اَوَّل پیاده‌رَوی، بَعد دِسِر. به راحَتی می‌تَوانَم تِکان بُخورَم!", "اَوَّل پیاده‌رَوی، بَعد دِسِر. به زَحمَت تَوانِستَم تِکان بُخورَم!"],
+            um: "اَوَّل پیاده‌رَوی، بَعد دِسِر. به زور می‌تونَم تِکون بُخورَم!" }
+        ],
+        weiter: { bastani: "e6eis", tee: "e6tee", spaziergang: "e6spaz" } },
+      e6eis: { typ: "szene", ort: "eis", zeit: { de: "22 Uhr", fa: "ساعَتِ دَهِ شَب" },
+        de: "In der Eisdiele gibt es tatsächlich persisches Safraneis – mit Pistazien und Rosenwasser. Nach dem ersten Löffel sagt niemand mehr etwas.",
+        fa: "در بَستَنی‌فُروشی واقِعاً بَستَنیِ زَعفَرانیِ ایرانی دارَند – با پِسته و گُلاب. بَعد از قاشُقِ اَوَّل دیگَر هیچ‌کَس حَرفی نِمی‌زَنَد.",
+        weiter: "ende" },
+      e6tee: { typ: "szene", zeit: { de: "22 Uhr", fa: "ساعَتِ دَهِ شَب" },
+        de: "Der Tee kommt in kleinen Gläsern, dazu ein Teller Datteln. Alle werden langsam müde und gemütlich.",
+        fa: "چای در اِستِکان‌های کوچَک می‌آیَد، با یک بُشقاب خُرما. هَمه کَم‌کَم خَسته و آرام می‌شَوَند.",
+        weiter: "ende" },
+      e6spaz: { typ: "szene", ort: "park", zeit: { de: "22 Uhr", fa: "ساعَتِ دَهِ شَب" },
+        de: "Draußen ist die Luft kühl und frisch. Nach zwanzig Minuten Spaziergang ist plötzlich wieder Platz im Bauch – für ein Eis. 🍦",
+        fa: "بیرون هَوا خُنَک و تازه اَست. بَعد از بیست دَقیقه پیاده‌رَوی، ناگَهان دوباره در شِکَم جا هَست – بَرای یک بَستَنی. 🍦",
+        weiter: "ende" },
+      ende: { typ: "ende",
+        de: "Spät am Abend gehen alle satt und zufrieden nach Hause. Die Frage „Was essen wir heute?“ war schwer – aber die Antwort war schön: zusammen. Nächsten Freitag? Gleiche Frage, neue Geschichte!",
+        fa: "آخَرِ شَب هَمه سیر و راضی به خانه می‌رَوَند. سُؤالِ «اِمروز چه بُخوریم؟» سَخت بود – اَمّا جَوابَش قَشَنگ بود: با هم. جُمعه‌ی بَعد؟ هَمان سُؤال، یک داستانِ تازه!" }
+    }
+  };
+})();

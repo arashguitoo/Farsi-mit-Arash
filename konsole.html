@@ -552,7 +552,7 @@
       (liste.length ? liste.map(t => {
         const s = tnStats(t.code);
         return `<tr data-c="${t.code}" class="${t.aktiv === false ? "inaktiv" : ""}">
-          <td><b>${esc(t.name)}</b></td>
+          <td><b>${esc(t.name)}</b>${t.nameFa ? ` <span class="fa" style="color:var(--lapis)">${esc(t.nameFa)}</span>` : ""}</td>
           <td><span class="code">${t.code}</span></td>
           <td style="min-width:120px"><div class="leiste" style="margin:0"><i style="width:${G ? Math.round(100 * s.stationen / G) : 0}%"></i></div><span class="mini">${s.stationen}/${G}${s.zusatz ? ` +${s.zusatz}Z` : ""} · ${pct(s.quote)}</span></td>
           <td class="mini">${vorZeit(s.zuletzt)}</td>
@@ -561,6 +561,7 @@
           <td style="white-space:nowrap">
             <button class="btn zwei klein" data-act="anl" title="Anleitung / QR">📨</button>
             <button class="btn zwei klein" data-act="name" title="Umbenennen">✏️</button>
+            <button class="btn zwei klein" data-act="namefa" title="Name auf Persisch (für Live-Aktivitäten)">فا</button>
             <button class="btn zwei klein" data-act="code" title="Neuer Code">🔄</button>
             <button class="btn zwei klein" data-act="del" title="Löschen">🗑</button>
           </td></tr>`;
@@ -571,6 +572,7 @@
       tr.querySelector('[data-act="klasse"]').onchange = e => schreib(F.ref("tn/" + code + "/klasse").set(e.target.value), t.name + " → " + klName(e.target.value));
       tr.querySelector('[data-act="anl"]').onclick = () => anleitung({ ...t, code });
       tr.querySelector('[data-act="name"]').onclick = () => { const n = prompt("Neuer Name:", t.name); if (n) schreib(F.ref("tn/" + code + "/name").set(n.trim())); };
+      tr.querySelector('[data-act="namefa"]').onclick = () => { const n = prompt("Name auf Persisch (leer = löschen):", t.nameFa || ""); if (n !== null) schreib(F.ref("tn/" + code + "/nameFa").set(n.trim().replace(/ي/g, "ی").replace(/ك/g, "ک") || null)); };
       tr.querySelector('[data-act="code"]').onclick = async () => {
         let neu = prompt("Neuer Code für " + t.name + " (leer = automatisch):", "");
         if (neu === null) return;
