@@ -49,7 +49,7 @@ const AKTIVITAETEN = {
     { id: "truhe", datei: "live-truhe.html", icon: "🗝️", titel: "Das Geheimnis von Omas Truhe", fa: "رازِ صندوقچه‌ی مادربزرگ",
       text: "Schatzsuche in Zweierteams: Brief ordnen, Foto finden, Stadtplan, Telefonat – jede Station bringt eine Ziffer für das Zahlenschloss. Jede Person sieht nur ihre Hälfte der Hinweise.",
       tags: ["2er-Teams", "ca. 120 Min.", "Wiederholung Grundkurs", "ab Fortgeschritten 1"] },
-    { id: "gespraech", datei: "live-gespraech.html", icon: "🗣️", titel: "Gesprächs-Simulation", fa: "گُفت‌وگو",
+    { id: "gespraech", datei: "live-gespraech.html", selbst: true, icon: "🗣️", titel: "Gesprächs-Simulation", fa: "گُفت‌وگو",
       text: "Reihum sprechen: Wer dran ist, sagt einen Satz auf Persisch, die anderen reagieren mit Ja, Nein oder Vielleicht – und die Geschichte verzweigt sich. Sechs Szenarien: Essen, WG, Arbeit, Urlaub, Tag planen, Gäste. Drei Stufen: Auswahl, Satzbausteine, frei sprechen. Am Ende gibt es eure Geschichte als Protokoll.",
       tags: ["2–8 Personen", "30–60 Min.", "3 Stufen", "6 Szenarien"] }
   ],
@@ -69,7 +69,8 @@ const AKTIVITAETEN = {
   $("#live").innerHTML = AKTIVITAETEN.live.map(a => `<div class="ak"><div class="ico">${a.icon}</div><h3>${esc(a.titel)}</h3><div class="fa">${esc(a.fa)}</div>
     <div class="klein">${esc(a.text)}</div><div class="tags"><span class="tag live">LIVE</span>${a.tags.map(t => `<span class="tag">${esc(t)}</span>`).join("")}</div>
     <div class="unten">${lehrkraft ? `<a class="btn" href="${a.datei}${a.leitung || "?leitung=1"}" style="text-decoration:none">▶ Leitung starten</a>`
-      : `<div class="beitritt"><input class="feld" data-code="${a.id}" inputmode="numeric" maxlength="4" placeholder="Code"><button class="btn" data-los="${a.id}" data-datei="${a.datei}">Beitreten</button></div>`}</div></div>`).join("");
+      : `<div class="beitritt"><input class="feld" data-code="${a.id}" inputmode="numeric" maxlength="4" placeholder="Code"><button class="btn" data-los="${a.id}" data-datei="${a.datei}">Beitreten</button></div>
+      ${a.selbst ? `<a class="btn zwei klein" href="${a.datei}?neu=1" style="text-decoration:none" title="Ohne Lehrkraft spielen – du bist Host">👥 Eigene Runde starten</a>` : ""}`}</div></div>`).join("");
   document.querySelectorAll("[data-los]").forEach(b => b.onclick = () => {
     const c = F.normCode(document.querySelector(`[data-code="${b.dataset.los}"]`).value).replace(/\D/g, "");
     location.href = `${b.dataset.datei}${c ? "?code=" + c : ""}`;

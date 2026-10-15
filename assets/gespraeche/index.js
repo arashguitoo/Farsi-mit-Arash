@@ -2,6 +2,9 @@
    Dauer: Schätzung bei 4 Personen und „höchstens 3 Antworten pro Frage“.
    Neues Szenario: Datei anlegen, mit farsi-werkzeuge/gespraech_pruefen.js prüfen, hier eintragen. */
 window.GESPRAECHE_LISTE = [
+  { id: "wenn-dann", icon: "⛅", titel: "Wenn das Wetter mitspielt …", titelFa: "اَگَر هَوا خوب باشَد…", dauer: "ca. 40 Min.", minuten: 40,
+    kurz: "Ausflug am Samstag – aber alles ist unsicher: Wetter, Zug, Plan B bei Regen, Rückweg im Dunkeln. Fast jeder Satz ist ein realer Bedingungssatz.",
+    niveau: "Grammatik-Fokus: Lektion 22 · Bedingungen I (اگر + Präsens / Konjunktiv / Präteritum, وگرنه، حتی اگر)", spieler: "2–8 Personen" },
   { id: "essen-heute", icon: "🍲", titel: "Was essen wir heute?", titelFa: "اِمروز چه بُخوریم؟", dauer: "ca. 30 Min.", minuten: 30,
     kurz: "Freitagabend, alle sind hungrig: selbst persisch kochen, ins Restaurant oder Pizza bestellen? Und wer bezahlt – mit Taarof-Duell.",
     niveau: "Konversation 2 · Essen gehen & einladen", spieler: "2–8 Personen" },

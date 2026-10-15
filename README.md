@@ -186,7 +186,12 @@ Zwischen den Gesprächen erzählen kurze Episoden, was passiert; am Ende gibt es
   Stufe pro Person, Pause, „Antworten pro Frage höchstens“ (steuert die Dauer), Vokalisierung an/aus.
 - **Szenarien** (`assets/gespraeche/*.js`, Liste in `assets/gespraeche/index.js`): Was essen wir heute? (≈30 Min.),
   Unsere WG (≈35), Wie hast du Arbeit gefunden? (≈45), Wo machen wir Urlaub? (≈45), Wir planen einen Tag (≈60),
-  Wir bekommen Besuch! (≈60). Alle Persisch-Texte sind vokalisiert.
+  Wir bekommen Besuch! (≈60), Wenn das Wetter mitspielt … (≈40, Bedingungssätze). Alle Persisch-Texte sind vokalisiert.
 - **Neues Szenario:** Format wie `tag-planen.js` (Kommentar oben), prüfen mit
   `node farsi-werkzeuge/gespraech_pruefen.js <id>` (Struktur, verbotene Wörter, ZWNJ, Länge), dann in `index.js` eintragen.
-- Firebase: `live/gespraech/{code}` – die vorhandenen Regeln für `live` reichen, keine Änderung nötig.
+- **Ohne Lehrkraft:** TN klicken in 🎲 Aktivitäten auf „👥 Eigene Runde starten“, wählen ein Szenario und sind Host 👑
+  (Lobby, Start, Beenden). Weitere TN können per 👑 Co-Host werden. In Stufe 3 prüfen Host/Co-Hosts die freien Antworten
+  (nie die eigene); gibt es keinen anderen Co-Host, dürfen alle anderen prüfen.
+- **Co-Host in Lehrkraft-Runden:** 👑 in der Lobby – die Person prüft Stufe 3, darf überspringen und „Dran ist“ ändern.
+- **Szenario mit Grammatik-Fokus:** „Wenn das Wetter mitspielt …“ (Lektion 22, reale Bedingungen, ≈40 Min.).
+- Firebase: `live/gespraech/{code}`; Regeln aus `firebase-regeln.json` (TN dürfen eigene Runden anlegen, wenn ihr Code existiert).

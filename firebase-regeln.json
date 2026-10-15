@@ -52,7 +52,7 @@
           ],
           "$code": {
             ".read": true,
-            ".write": "auth != null",
+            ".write": "auth != null || (!data.exists() && newData.child('host').exists() && root.child('farsi/tn/' + newData.child('host').val()).exists()) || (data.child('host').exists() && newData.child('host').val() === data.child('host').val())",
             "spieler": {
               "$pid": {
                 ".write": "root.child('farsi/live/' + $spiel + '/' + $code + '/phase').exists()"
