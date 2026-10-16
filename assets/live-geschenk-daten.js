@@ -11,6 +11,7 @@
   titelFa: "هِدیه‌یِ تَوَلُّد",
   icon: "🎁",
   dauer: "ca. 45 Minuten",
+  kurz: { ohne: [], dauer: "ca. 25 Minuten", text: "weniger Fragen, ohne Beschreiben" },
   ziel: { name: "Box", icon: "📦", offen: "Die Box ist offen!" },
   figuren: { P: "مینا", S: "سارا" },
   code: [8, 5, 7],

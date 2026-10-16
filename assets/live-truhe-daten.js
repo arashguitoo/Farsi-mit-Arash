@@ -2,6 +2,10 @@
    2er-Teams (Rolle A und B). Jede Station: Teil a (Puzzle, nur gemeinsam lösbar) → Teil b (Fragen, abwechselnd A/B).
    Code der Truhe: 7 – 4 – 2 – 5 */
 window.TRUHE = {
+  id: "truhe",
+  icon: "🗝️",
+  dauer: "ca. 120 Minuten",
+  kurz: { ohne: [4], dauer: "ca. 60 Minuten", text: "ohne Station 4 (Telefonat), weniger Fragen, ohne Beschreiben/Rollenspiel" },
   titel: "Das Geheimnis von Omas Truhe",
   titelFa: "رازِ صندوقچه‌ی مادربزرگ",
   code: [7, 4, 2, 5],
@@ -18,6 +22,7 @@ window.TRUHE = {
     { nr: 1, titel: "Der Brief", fa: "نامه", icon: "✉️", minuten: 25,
       auftrag: "1970 ist Parvin von Schiras nach Teheran gezogen. Diesen Brief hat sie ihrer Schwester Simin geschrieben. Jede/r von euch hat 5 der 10 Abschnitte. <b>Lest euch eure Abschnitte vor</b> und bringt den Brief gemeinsam in die richtige Reihenfolge.",
       typ: "ordnen",
+      lexikon: [["پیاده شُدَم","ich bin ausgestiegen"],["شُلوغ","voll, belebt"],["تَرسیده بودَم","ich hatte Angst bekommen"],["خاله","Tante"],["ایستگاه","Haltestelle, Busbahnhof"],["مُنتَظِرِ … بود","wartete auf …"],["کوچه","Gasse"],["روزنامه","Zeitung"],["هَیَجان‌اَنگیز","aufregend"],["دَفتَر","Büro"],["رَئیس","Chef"],["عِینَکِ گِرد","runde Brille"],["تُند","schnell"],["دوربین","Kamera"],["گُم شُدَم","ich habe mich verlaufen"],["فُروشَنده","Verkäufer/in"],["مِهرَبان","freundlich"],["عَکّاس","Fotograf/in"],["مَعروف","berühmt"],["رَمز","Code"],["رَقَم","Ziffer"],["صَندوقچه","kleine Truhe"],["دِلَم تَنگ شُده","ich vermisse (dich)"]],
       teile: [
         { id: "a1", wer: "A", fa: "سیمینِ عزیزم، سلام! امیدوارم حالت خوب باشد. حالا یک هفته است که در تهران هستم و هنوز همه‌چیز برایم تازه است." },
         { id: "b1", wer: "B", fa: "وقتی از اتوبوسِ شیراز پیاده شدم، شهر خیلی بزرگ و شلوغ بود. صدای ماشین‌ها از همه طرف می‌آمد و من کمی ترسیده بودم." },
@@ -44,6 +49,7 @@ window.TRUHE = {
     { nr: 2, titel: "Das Fotoalbum", fa: "آلبومِ عکس", icon: "📷", minuten: 20,
       auftrag: "In Omas Album steckt ein Zettel. <b>B</b> hat den Zettel und liest ihn vor. <b>A</b> sieht sechs Fotos, die sich sehr ähnlich sehen – nur eins passt genau. Fragt nach, wenn etwas unklar ist!",
       typ: "suchbild",
+      lexikon: [["عَکس","Foto"],["گِرِفته شُده اَست","wurde aufgenommen"],["جِلویِ","vor"],["دَرِ سَبز","grüne Tür"],["ایستاده‌ایم","wir stehen"],["بُلَندتَر","größer"],["کُلاهِ قِرمِز","roter Hut"],["سَرَش اَست","trägt sie (auf dem Kopf)"],["کِنارِ","neben"],["دوچَرخه","Fahrrad"],["دِرَخت","Baum"],["دیوار","Wand"],["گُربه‌یِ سِفید","weiße Katze"],["خوابیده اَست","liegt, schläft"],["عَدَد","Zahl"],["دُوُّمین","zweite/r"]],
       beschreibung: [
         "عکسی که دنبالش هستید، در شیراز گرفته شده است.",
         "در آن عکس، من و سیمین جلوی یک درِ سبز ایستاده‌ایم.",
@@ -73,6 +79,7 @@ window.TRUHE = {
     { nr: 3, titel: "Der Stadtplan", fa: "نقشه", icon: "🗺️", minuten: 25,
       auftrag: "In Omas Notizbuch steht der Weg zu ihrem ersten Fotoatelier. <b>B</b> liest die Wegbeschreibung vor, <b>A</b> folgt auf dem Stadtplan und tippt auf das richtige Haus. Auf dem Plan bedeutet <span class='fa'>بالا</span> oben, <span class='fa'>پایین</span> unten, <span class='fa'>راست</span> rechts und <span class='fa'>چپ</span> links.",
       typ: "karte",
+      lexikon: [["ایستگاهِ مِترو","U-Bahn-Station"],["بیرون بیا","komm heraus"],["مُستَقیم","geradeaus"],["بالا","oben"],["پایین","unten"],["رَد شو","geh vorbei"],["وَقتی … رِسیدی","sobald du … erreichst"],["بِپیچ","bieg ab"],["سَمتِ راست / چَپ","nach rechts / links"],["چَهارراه","Kreuzung"],["آتِلیه","(Foto-)Atelier"],["ساختِمان","Gebäude"],["زَرد","gelb"],["بِینِ","zwischen"],["داروخانه","Apotheke"],["دُرُست کِنارِ","direkt neben"],["سِوُّمین","dritte/r"]],
       /* 7×7-Raster: Häuserblöcke auf geraden Koordinaten, Straßen dazwischen */
       bloecke: {
         "0,0": { e: "🏫", fa: "مدرسه" }, "0,2": { haus: "#e9c94a", nr: 5 }, "0,4": { e: "🌳", fa: "پارک" }, "0,6": { haus: "#7fb07f", nr: 8 },
@@ -108,6 +115,7 @@ window.TRUHE = {
     { nr: 4, titel: "Das Telefonat", fa: "تلفن", icon: "☎️", minuten: 20,
       auftrag: "1985: Parvin ruft ihre Schwester Simin an. <b>A</b> hat Parvins Sätze, <b>B</b> hat Simins Sätze. Lest euch eure Sätze vor und bringt das Telefonat in die richtige Reihenfolge.",
       typ: "ordnen",
+      lexikon: [["اَلو؟","Hallo? (am Telefon)"],["صِدایَت ضَعیف اَست","man hört dich schlecht"],["هَمسایه","Nachbar/in"],["زَنگ می‌زَنَم","ich rufe an"],["گُزارِش","Reportage"],["هِدیه","Geschenk"],["دَفعه‌یِ بَعد","nächstes Mal"],["چوبی","aus Holz"],["عَوَض کَردی؟","hast du geändert?"],["آخَرین","letzte/r"],["تِعداد","Anzahl"],["نَوه","Enkel/in"],["آرِزو دارَم","ich wünsche mir"],["هَر چه بیشتَر، بِهتَر","je mehr, desto besser"]],
       teile: [
         { id: "s1", wer: "B", fa: "سیمین: الو؟ پروین، تویی؟ صدایت خیلی ضعیف است!" },
         { id: "p1", wer: "A", fa: "پروین: سلام سیمین جان! بله، منم. از تلفنِ خانه‌ی همسایه زنگ می‌زنم." },

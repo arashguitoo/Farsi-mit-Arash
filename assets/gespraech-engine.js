@@ -19,7 +19,7 @@
 
   /* Reihenfolge der aktiven Spieler */
   function reihe(spieler) {
-    return Object.entries(spieler || {}).filter(([, s]) => s && !s.aus)
+    return Object.entries(spieler || {}).filter(([, s]) => s && s.name && !s.aus)
       .sort(([, a], [, b]) => ((a.reihe ?? 999) - (b.reihe ?? 999)) || ((a.ts || 0) - (b.ts || 0))).map(([id]) => id);
   }
   function aktive(r, spieler) {
@@ -97,8 +97,10 @@
   }
 
   /* Entscheidung nach Mehrheit */
-  function entscheide(K, antw) {
-    const reih = Object.values(antw), opt = id => K.optionen.find(o => o.id === id);
+  function entscheide(K, antw, kette) {
+    /* Reihenfolge der Antworten = Reihenfolge, in der die Personen dran waren (Firebase sortiert Schlüssel um) */
+    const reih = (kette && kette.length ? kette.filter(id => antw[id] != null).map(id => antw[id]) : []).concat(Object.keys(antw).filter(id => !(kette || []).includes(id)).map(id => antw[id]));
+    const opt = id => K.optionen.find(o => o.id === id);
     const zahl = {}, erst = {};
     reih.forEach((id, i) => { const a = opt(id).art; zahl[a] = (zahl[a] || 0) + 1; if (erst[a] == null) erst[a] = i; });
     let sieger = Object.keys(zahl).sort((a, b) => (zahl[b] - zahl[a]) || (erst[a] - erst[b]))[0];
@@ -159,7 +161,7 @@
       Object.assign(r, { ki: (r.ki || 0) + 1, akteur: kette[(r.ki || 0) + 1], schritt: "waehlen", wahl: null, falsch: null, versuch: 0, hilfe: null, zeigen: null });
       return r;
     }
-    const e = entscheide(K, r.antw);
+    const e = entscheide(K, r.antw, arr(r.kette));
     r.verlauf = r.verlauf.concat([{ t: "entscheid", k: r.knoten, art: e.art, o: e.opt, ts: Date.now() }]);
     r.antw = null;
     return betrete(r, S, spieler, e.ziel);

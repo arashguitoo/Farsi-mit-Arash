@@ -99,9 +99,11 @@
 <script src="assets/core.js"></script>
 <script src="assets/gespraech-engine.js"></script>
 <script src="assets/gespraeche/index.js"></script>
+<script src="assets/live-tools.js"></script>
 <script>
 (function () {
-  const F = window.FARSI, { $, $$, esc, toast } = F, E = window.GESPRAECH_ENGINE;
+  const F = window.FARSI, { $, $$, esc, toast } = F, E = window.GESPRAECH_ENGINE, LT = window.LIVE_TOOLS;
+  let HANDYS = false;
   const SPIEL = "gespraech";
   const qs = new URLSearchParams(location.search);
   const MODUS = qs.get("leitung") ? "leitung" : "spieler";
@@ -132,23 +134,21 @@
     REF = gRef(c);
     REF.on("value", async s => {
       G = s.val();
-      const fokus = document.activeElement;
-      if (MODUS === "leitung" && fokus && fokus.matches && fokus.matches("input[data-name],input[data-namefa]")) {
-        fokus.addEventListener("blur", () => setTimeout(zeichne, 50), { once: true });
-        return;
-      }
+      if (MODUS !== "leitung") LT.pruefeNeuLaden(G);
+      if (LT.tipptGerade(zeichne)) return;
       if (G && G.szenario && (!S || S.id !== G.szenario)) {
         try { S = await ladeSzenario(G.szenario); } catch (e) { return fehler(e); }
       }
       zeichne();
-    }, e => fehler(e));
+    }, e => fehler(e, true));
   }
-  function fehler(e) {
+  function fehler(e, hart) {
     console.error(e);
+    if (!hart && G && G.phase && G.phase !== "lobby") { toast("Das hat nicht geklappt – bitte noch einmal tippen."); return; }
     $("#app").innerHTML = `<div class="karte" style="margin-top:20px"><b>Das hat nicht geklappt.</b><p class="klein">${esc(e && e.message || e)}</p><p class="klein">Lehrkraft: Bitte prüfen, ob die aktuellen Regeln aus <code>firebase-regeln.json</code> in Firebase → Realtime Database → Regeln veröffentlicht sind.</p></div>`;
   }
-  const schreib = (pfad, wert) => gRef(CODE).child(pfad).set(wert).catch(fehler);
-  const upd = obj => gRef(CODE).update(obj).catch(fehler);
+  const schreib = (pfad, wert) => gRef(CODE).child(pfad).set(wert).catch(e => fehler(e));
+  const upd = obj => gRef(CODE).update(obj).catch(e => fehler(e));
   /* Rollen: Lehrkraft · Host (TN, der die Runde ohne Lehrkraft eröffnet hat) · Co-Host · Spieler */
   const istLK = MODUS === "leitung";
   const istCo = id => !!((SP()[id] || {}).cohost) || (G && G.host === id);
@@ -161,13 +161,18 @@
     return set.length ? set.includes(ME.id) : !!(G && G.host);
   }
   /* Zustandsänderung atomar (wer dran ist, Prüfer/Co-Host oder die Lehrkraft) */
+  /* Stempel: Eine Aktion gilt nur für den Zustand, in dem geklickt wurde (kein doppeltes Weiterschalten) */
+  const stempel = r => r ? [r.knoten, r.schritt, r.ki || 0, r.akteur, E.arr(r.verlauf).length].join("|") : "";
+  let TOK = "";   /* Stempel des zuletzt gezeichneten Zustands – Klicks auf alte Knöpfe laufen ins Leere */
   function aktion(fn, steuer) {
+    const tok = TOK || stempel(R());
     return gRef(CODE).child("teams/r").transaction(cur => {
       if (!cur) return cur;
+      if (stempel(cur) !== tok) return;
       if (!istLK && cur.akteur !== ME.id && !(steuer && (darfSteuern() || pruefer(cur)))) return;
       const r = fn(E.kopie(cur));
       return r === undefined ? undefined : r;
-    }).catch(fehler);
+    }).catch(e => fehler(e));
   }
 
   /* ---------- Hilfen ---------- */
@@ -182,7 +187,7 @@
   const artChip = (o) => {
     const a = E.ARTEN[o.art];
     if (o.label) return `<span class="chip ${a ? o.art : ""}">${a ? a.ico + " " : ""}${esc(o.label.de)} · <span class="fa">${esc(vk(o.label.fa))}</span></span>`;
-    return a ? `<span class="chip ${o.art}">${a.ico} ${a.de} · <span class="fa">${a.fa}</span></span>` : "";
+    return a ? `<span class="chip ${o.art}" title="${a.de}">${a.ico} <span class="fa">${a.fa}</span></span>` : "";
   };
 
   /* ---------- Geschichte (Chat) ---------- */
@@ -264,15 +269,21 @@
     if (pr || (r.zeigen && (fuer === "ich" || fuer === "beamer" || fuer === "andere" || fuer === "pruefer")))
       h += `<div class="loes">${pr ? `<div class="klein-h" style="margin-top:0">Lösung${r.zeigen ? " (wird allen gezeigt)" : " (nur du siehst sie)"}</div>` : `<div class="klein-h" style="margin-top:0">So heißt es richtig · <span class="fa">جوابِ درست</span></div>`}
         <div class="fa-g">${esc(richtigFa)}</div>${st.um ? `<div class="um fa-g" style="font-size:.95rem;color:#7a6a3a">💬 ${esc(E.fuelle(st.um, "fa", c))}</div>` : ""}</div>`;
+    if (fuer === "beamer" && stufe === 3 && !r.hilfe) h += `<div class="btnreihe nodruck" style="margin-top:10px"><button class="btn" id="lk-ok">✓ Richtig gesagt</button><button class="btn zwei klein" id="lk-skip">⏭ weiter ohne Punkte</button></div>`;
     if (pr) h += `<div class="btnreihe" style="margin-top:10px">
         <button class="btn" id="lk-ok">✓ Richtig gesagt</button>
         ${r.zeigen ? "" : `<button class="btn zwei" id="lk-zeigen">👁 Lösung allen zeigen</button>`}
         <button class="btn zwei klein" id="lk-skip">⏭ weiter ohne Punkte</button></div>`;
     return h + `</div>`;
   }
+  function hinweiseHtml() {
+    const haende = istLK ? Object.entries(SP()).filter(([, x]) => x && x.hand && x.name) : [];
+    return (G && G.nachricht ? `<div class="meldung">📢 ${esc(G.nachricht.text)}</div>` : "") + LT.timerHtml(G) +
+      (haende.length ? `<div class="meldung" style="background:#fff3d6">✋ <b>Hilfe gewünscht:</b> ${haende.map(([id, x]) => `${esc(x.name)} <button class="btn zwei klein" data-hand-weg="${id}">erledigt</button>`).join(" · ")}</div>` : "");
+  }
   function punkteHtml(r) {
     const p = (r && r.punkte) || {};
-    return `<div class="pkt">${E.reihe(SP()).map(id => `<span class="${r && r.akteur === id ? "dran" : ""}">${esc(nDe(id))} <span class="fa">${esc(nFa(id))}</span> · ${p[id] || 0} P.</span>`).join("")}</div>`;
+    return `<div class="pkt">${E.reihe(SP()).map(id => `<span class="${r && r.akteur === id ? "dran" : ""} ${(SP()[id] || {}).online === false ? "lt-off" : ""}">${(SP()[id] || {}).hand ? "✋ " : ""}${esc(nDe(id))} <span class="fa">${esc(nFa(id))}</span> · ${p[id] || 0} P.</span>`).join("")}</div>`;
   }
 
   /* ---------- Protokoll ---------- */
@@ -335,13 +346,13 @@
         <p class="klein">${esc(x.kurz)}</p><p class="klein muted">${esc(x.niveau)} · ${esc(x.spieler)} · ${esc(x.dauer)}</p><button class="btn" data-neu="${x.id}">▶ Neue Runde</button></div>`).join("")}</div>
       <h3 style="margin-top:24px">Frühere Runden</h3><div id="frueher" class="klein muted">Lade …</div>`;
     $$("[data-neu]").forEach(b => b.onclick = async () => {
-      const c = String(Math.floor(1000 + Math.random() * 9000));
       const runde = { erstellt: Date.now(), phase: "lobby", szenario: b.dataset.neu, stufe: 1, maxAntw: 3, spieler: {} };
       if (!istLK) {
         let nameFa = null; try { nameFa = (await F.mitTimeout(F.ref(`tn/${ME.id}/nameFa`).once("value"), 5000)).val(); } catch (e) { }
         runde.host = ME.id; runde.spieler[ME.id] = { name: ME.name, nameFa: nameFa || null, ts: Date.now() };
       }
-      try { await gRef(c).set(runde); } catch (e) { return fehler(e); }
+      let c;
+      try { c = await LT.neueRunde(gRef, runde); } catch (e) { return fehler(e, true); }
       CODE = c; history.replaceState(null, "", istLK ? `?leitung=1&code=${c}` : `?code=${c}`); hoere(c);
     });
     if (!istLK) { $("#frueher").previousElementSibling.remove(); $("#frueher").remove(); return; }
@@ -358,13 +369,13 @@
     } catch (e) { $("#frueher").textContent = "Konnte frühere Runden nicht laden."; }
   }
   function lobbyHtml(link) {
-    const sp = E.reihe(SP()), alle = Object.entries(SP()).sort(([, a], [, b]) => ((a.reihe ?? 999) - (b.reihe ?? 999)) || ((a.ts || 0) - (b.ts || 0)));
+    const sp = E.reihe(SP()), alle = Object.entries(SP()).filter(([, x]) => x && x.name).sort(([, a], [, b]) => ((a.reihe ?? 999) - (b.reihe ?? 999)) || ((a.ts || 0) - (b.ts || 0)));
     return `<div class="karte">${istLK ? `<h2 style="margin-top:0">${S.icon} ${esc(S.titel)} <span class="fa" style="color:var(--lapis)">${esc(vk(S.titelFa))}</span></h2>` : `<h3 style="margin-top:0">👑 Runde einrichten</h3>`}
         <p>Die Teilnehmenden öffnen <b>🎲 Aktivitäten</b> und geben den Code <b>${CODE}</b> ein${istLK ? ` – oder direkt: <span class="code" style="letter-spacing:0">${esc(link)}</span>` : ""}.</p>
         <div style="display:flex;gap:16px;flex-wrap:wrap;align-items:center;margin:10px 0">
           <div><div class="klein-h" style="margin-top:0">Stufe für alle</div><div class="seg">${[1, 2, 3].map(n => `<button class="${(G.stufe || 1) === n ? "an" : ""}" data-gstufe="${n}">${STUFEN[n]}</button>`).join("")}</div></div>
           <div><div class="klein-h" style="margin-top:0">Persisch vokalisiert</div><div class="seg"><button class="${G.vokale === false ? "" : "an"}" data-vok="1">an</button><button class="${G.vokale === false ? "an" : ""}" data-vok="0">aus</button></div></div>
-          <div><div class="klein-h" style="margin-top:0">Antworten pro Frage höchstens</div><div class="seg">${[1, 2, 3, 4, 7].map(n => `<button class="${(G.maxAntw || 3) === n ? "an" : ""}" data-max="${n}">${n === 7 ? "alle" : n}</button>`).join("")}</div></div></div>
+          <div><div class="klein-h" style="margin-top:0">Länge (Antworten pro Frage)</div><div class="seg">${[[1, "kurz · 1"], [2, "mittel · 2"], [3, "lang · 3"], [7, "alle"]].map(([n, t]) => `<button class="${(G.maxAntw || 3) === n ? "an" : ""}" data-max="${n}">${t}</button>`).join("")}</div></div></div>
         <h3>Teilnehmende (${sp.length}) <span class="klein muted">– Reihenfolge = Sprechreihenfolge</span></h3>
         <div style="display:grid;gap:6px">${alle.length ? alle.map(([id, s], i) => `<div class="tn-zeile ${s.aus ? "aus" : ""}">
             <span class="gs-nr">${i + 1}.</span>
@@ -379,11 +390,24 @@
   function steuerungHtml(r) {
     const sp = E.reihe(SP());
     return `<div class="karte" style="margin-top:12px"><div class="klein-h" style="margin-top:0">Steuerung${istLK ? "" : " · 👑 Co-Host"}</div>
-      <div style="display:flex;gap:6px;flex-wrap:wrap;align-items:center"><span class="klein">Dran ist:</span>${sp.map(id => `<button class="btn zwei klein" data-dran="${id}" style="${r.akteur === id ? "background:var(--lapis);color:#fff" : ""}">${esc(nDe(id))}</button>`).join("")}</div>
+      <div style="display:flex;gap:6px;flex-wrap:wrap;align-items:center"><span class="klein">Dran ist:</span>${sp.map(id => `<button class="btn zwei klein" data-dran="${id}" style="${r.akteur === id ? "background:var(--lapis);color:#fff" : ""}">${(SP()[id] || {}).online === false ? "⚪ " : ""}${esc(nDe(id))}</button>`).join("")}</div>
+      <div style="display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-top:6px"><span class="klein">Pause (fällt aus):</span>${Object.entries(SP()).filter(([, x]) => x && x.name).map(([id, x]) => `<button class="btn zwei klein" data-aus="${id}" title="${x.aus ? "wieder mitspielen lassen" : "überspringen, bis die Person zurück ist"}">${x.aus ? "▶" : "⏸"} ${esc(x.name)}</button>`).join("")}</div>
       <div class="btnreihe" style="margin-top:8px"><button class="btn zwei klein" id="lk-skip2">⏭ Schritt überspringen</button>
       ${darfVerwalten() ? `<span class="klein" style="margin-left:6px">Vokale:</span><div class="seg"><button class="${G.vokale === false ? "" : "an"}" data-vok="1">an</button><button class="${G.vokale === false ? "an" : ""}" data-vok="0">aus</button></div>` : ""}
       ${!istLK && darfVerwalten() && G.phase === "spiel" ? `<button class="btn rot klein" id="ende">⏹ Runde beenden</button>` : ""}</div>
-      <p class="klein muted" style="margin-bottom:0">Klick auf einen Namen, wenn jemand anders übernehmen soll (z. B. Verbindung weg).</p></div>`;
+      ${darfVerwalten() ? LT.timerSteuerung(G) : ""}
+      ${istLK ? `<div class="lt-werkzeug"><input class="feld" id="msg" placeholder="Nachricht an alle …" style="flex:1;min-width:180px;padding:6px 10px"><button class="btn zwei klein" id="senden">📢 senden</button>${G.nachricht ? `<button class="btn zwei klein" id="msgweg">✕</button>` : ""}<button class="btn zwei klein" id="reload" title="Hilft, wenn Tablets eine alte Version zeigen">🔄 Alle Geräte neu laden</button></div>` : ""}
+      <p class="klein muted" style="margin-bottom:0">Klick auf einen Namen, wenn jemand anders übernehmen soll. ⏸ = Person wird übersprungen (z. B. Verbindung weg, ⚪ = offline).</p></div>`;
+  }
+  /* 📱 Was sehen die Geräte gerade? */
+  function handysHtml(r) {
+    const alt = ME;
+    try {
+      return `<div class="karte" style="margin-top:12px"><div style="display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap"><h3 style="margin:0">📱 So sieht es auf den Geräten aus</h3><button class="btn zwei klein" id="handyszu">✕ schließen</button></div>
+        <div class="schau-gitter" style="margin-top:8px">${Object.entries(SP()).filter(([, x]) => x && x.name).map(([id, x]) => { ME = { id, name: x.name };
+          const f = r.akteur === id ? "ich" : pruefer(r) ? "pruefer" : "andere";
+          return `<div><div class="schau-kopf">${x.online === false ? "⚪" : "🟢"} ${esc(x.name)}${x.hand ? ' <span class="lt-hand">✋</span>' : ""}${x.aus ? " · ⏸" : ""}</div><div class="schau">${aufgabeHtml(r, f)}</div></div>`; }).join("")}</div></div>`;
+    } finally { ME = alt; }
   }
   function zeichneLeitung() {
     if (!G) { $("#app").innerHTML = `<div class="karte" style="margin-top:20px">Diese Runde gibt es nicht (mehr). <a href="?leitung=1">Neue Runde</a></div>`; return; }
@@ -392,10 +416,10 @@
     const r = R(), sp = E.reihe(SP()), alle = Object.entries(SP()).sort(([, a], [, b]) => ((a.reihe ?? 999) - (b.reihe ?? 999)) || ((a.ts || 0) - (b.ts || 0)));
     const link = location.href.replace(/[^/]*$/, "") + "live-gespraech.html?code=" + CODE;
     const kopf = `<div class="lv-kopf nodruck"><div><div class="klein muted">Spielcode</div><div class="lv-code">${CODE}</div></div>
-      <div class="btnreihe">${G.phase !== "lobby" ? `<button class="btn zwei klein" id="beamer">${BEAMER ? "⚙️ Leitung" : "🖥️ Leinwand"}</button><button class="btn zwei klein" id="prot">${PROTOKOLL ? "▶ Spiel" : "📜 Protokoll"}</button>` : ""}
+      <div class="btnreihe">${G.phase !== "lobby" ? `<button class="btn zwei klein" id="beamer">${BEAMER ? "⚙️ Leitung" : "🖥️ Leinwand"}</button><button class="btn zwei klein" id="handys">${HANDYS ? "📱 Geräte ausblenden" : "📱 Geräte ansehen"}</button><button class="btn zwei klein" id="prot">${PROTOKOLL ? "▶ Spiel" : "📜 Protokoll"}</button>` : ""}
       ${G.phase === "lobby" ? `<button class="btn" id="start" ${sp.length >= 2 ? "" : "disabled"}>▶ Gespräch starten</button>` : ""}
-      ${G.phase === "spiel" ? `<button class="btn rot klein" id="ende">⏹ beenden</button>` : ""}</div></div>`;
-    if (PROTOKOLL && r) { $("#app").innerHTML = kopf + protokollHtml(r); verdrahteLeitung(); verdrahteProtokoll(r); return; }
+      ${G.phase === "spiel" ? `<button class="btn rot klein" id="ende">⏹ beenden</button>` : ""}</div></div>` + hinweiseHtml();
+    if (PROTOKOLL && r) { LT.render($("#app"), kopf + protokollHtml(r)); verdrahteLeitung(); verdrahteProtokoll(r); return; }
     if (BEAMER && G.phase !== "lobby") return zeichneBeamer(kopf);
     let h = kopf;
     if (G.phase === "lobby") {
@@ -403,22 +427,29 @@
     } else if (r) {
       h += `${punkteHtml(r)}<div class="zwei-sp" style="margin-top:12px"><div><div class="klein-h">Geschichte</div><div class="chat">${verlaufHtml(r)}</div></div>
         <div><div class="klein-h">Jetzt</div>${aufgabeHtml(r, "leitung")}
-        ${r.schritt !== "ende" ? steuerungHtml(r) : ""}</div></div>`;
+        ${r.schritt !== "ende" ? steuerungHtml(r) : ""}</div></div>${HANDYS ? handysHtml(r) : ""}`;
     }
-    $("#app").innerHTML = h;
+    LT.render($("#app"), h); LT.nachRender();
     verdrahteLeitung(); verdrahteAufgabe(); scrollChat();
     if (r) letzteLaenge = E.arr(r.verlauf).length;
   }
   function zeichneBeamer(kopf) {
     const r = R();
-    $("#app").innerHTML = kopf + `<div class="beamer">${punkteHtml(r)}<div class="zwei-sp" style="margin-top:12px"><div class="chat" style="max-height:70vh">${verlaufHtml(r, { letzte: 14 })}</div><div>${aufgabeHtml(r, "beamer")}</div></div></div>`;
-    verdrahteLeitung(); scrollChat();
+    LT.render($("#app"), kopf + `<div class="beamer">${punkteHtml(r)}<div class="zwei-sp" style="margin-top:12px"><div class="chat" style="max-height:70vh">${verlaufHtml(r, { letzte: 14 })}</div><div>${aufgabeHtml(r, "beamer")}</div></div></div>`); LT.nachRender();
+    verdrahteLeitung(); verdrahteAufgabe(); scrollChat();
     letzteLaenge = E.arr(r.verlauf).length;
   }
   function verdrahteLeitung() {
     const b = id => $("#" + id);
     if (b("beamer")) b("beamer").onclick = () => { BEAMER = !BEAMER; PROTOKOLL = false; zeichneLeitung(); };
     if (b("prot")) b("prot").onclick = () => { PROTOKOLL = !PROTOKOLL; zeichneLeitung(); };
+    if (b("handys")) b("handys").onclick = () => { HANDYS = !HANDYS; BEAMER = false; PROTOKOLL = false; zeichneLeitung(); };
+    if (b("handyszu")) b("handyszu").onclick = () => { HANDYS = false; zeichneLeitung(); };
+    if (b("senden")) b("senden").onclick = () => { const t = b("msg").value.trim(); if (t) { schreib("nachricht", { text: t, ts: Date.now() }); b("msg").value = ""; } };
+    if (b("msgweg")) b("msgweg").onclick = () => schreib("nachricht", null);
+    if (b("reload")) b("reload").onclick = () => { if (confirm("Alle Geräte dieser Runde neu laden?")) schreib("reload", Date.now()); };
+    $$("[data-lt-timer]").forEach(x => x.onclick = () => { const m = +x.dataset.ltTimer; schreib("timer", m ? { ende: Date.now() + m * 60000, text: m + " Minuten" } : null); });
+    $$("[data-hand-weg]").forEach(x => x.onclick = () => schreib(`spieler/${x.dataset.handWeg}/hand`, null));
     if (b("start")) b("start").onclick = () => {
       const r = E.start(S, SP()); r.maxAntw = G.maxAntw || 3;
       upd({ phase: "spiel", start: Date.now(), "teams/r": r });
@@ -451,7 +482,8 @@
   async function startSpieler() {
     if (!(await F.brauchtCode())) return;
     const s = F.sitzung();
-    ME = s ? { id: s.code, name: s.name || s.code } : { id: "lk" + Math.random().toString(36).slice(2, 7), name: "Lehrkraft" };
+    let lk = null; try { lk = localStorage.getItem("farsi_lk_spieler"); if (!lk) { lk = "lk" + Math.random().toString(36).slice(2, 7); localStorage.setItem("farsi_lk_spieler", lk); } } catch (e) { lk = "lk" + Math.random().toString(36).slice(2, 7); }
+    ME = s ? { id: s.code, name: s.name || s.code } : { id: lk, name: "Lehrkraft" };
     if (CODE) beitreten(CODE); else if (qs.get("neu") && !/^lk/.test(ME.id)) zeichneNeu(); else zeichneBeitritt();
   }
   function zeichneBeitritt(meld) {
@@ -472,8 +504,9 @@
     if (!(g.spieler || {})[ME.id]) {
       let nameFa = null;
       if (!/^lk/.test(ME.id)) { try { nameFa = (await F.mitTimeout(F.ref(`tn/${ME.id}/nameFa`).once("value"), 5000)).val(); } catch (e) { } }
-      await gRef(c).child("spieler/" + ME.id).set({ name: ME.name, nameFa: nameFa || null, ts: Date.now() }).catch(fehler);
+      await gRef(c).child("spieler/" + ME.id).set({ name: ME.name, nameFa: nameFa || null, ts: Date.now() }).catch(e => fehler(e, true));
     }
+    LT.verbindung(gRef(c).child("spieler/" + ME.id));
     hoere(c);
   }
   function zeichneSpieler() {
@@ -485,26 +518,26 @@
     $("#kopfInfo").innerHTML = `${esc(ich.name)} · <span class="fa">${esc(ich.nameFa || "")}</span>`;
     const r = R();
     if (G.phase === "lobby" || !r) {
-      $("#app").innerHTML = `<div class="karte" style="margin-top:16px"><h2 style="margin-top:0">${S.icon} ${esc(S.titel)} <span class="fa" style="color:var(--lapis)">${esc(vk(S.titelFa))}</span></h2>
+      let lob = hinweiseHtml() + `<div class="karte" style="margin-top:16px"><h2 style="margin-top:0">${S.icon} ${esc(S.titel)} <span class="fa" style="color:var(--lapis)">${esc(vk(S.titelFa))}</span></h2>
         <p>${esc(S.beschreibung.de)}</p>
         ${S.hinweis ? `<div class="meldung" style="font-weight:400">💡 ${esc(S.hinweis)}</div>` : ""}
         <div class="meldung" style="font-weight:400;background:var(--lapis-hell);border-color:#c9d8e6"><b>So geht's:</b> Reihum ist jemand dran. Du siehst einen deutschen Satz und sagst ihn auf Persisch. Danach reagieren die anderen: Ja, Nein (mit Alternative) oder Vielleicht. Eure Antworten bestimmen die Geschichte! Die Erzähltexte liest jeweils eine Person laut vor.</div>
         <p>Du bist dabei als <b>${esc(ich.name)}</b>${ich.nameFa ? ` · <span class="fa">${esc(ich.nameFa)}</span>` : ""}. ${darfVerwalten() ? "Du leitest diese Runde. 👑" : "⏳ Gleich geht es los …"}</p></div>`;
-      if (darfVerwalten() && G.phase === "lobby") {
-        $("#app").innerHTML += `<div class="lv-kopf"><div><div class="klein muted">Spielcode für die anderen</div><div class="lv-code">${CODE}</div></div>
+      if (darfVerwalten() && G.phase === "lobby") lob += `<div class="lv-kopf"><div><div class="klein muted">Spielcode für die anderen</div><div class="lv-code">${CODE}</div></div>
           <button class="btn" id="start" ${E.reihe(SP()).length >= 2 ? "" : "disabled"}>▶ Gespräch starten</button></div>` + lobbyHtml("");
-        verdrahteLeitung();
-      }
+      LT.render($("#app"), lob);
+      if (darfVerwalten()) verdrahteLeitung();
       return;
     }
-    const dran = r.akteur === ME.id;
-    let h = `${punkteHtml(r)}<div class="zwei-sp" style="margin-top:12px">
+    const vorbei = r.schritt === "ende" || G.phase === "ende", dran = !vorbei && r.akteur === ME.id;
+    let h = hinweiseHtml() + `${punkteHtml(r)}${vorbei ? "" : `<p style="text-align:right;margin:8px 0 0"><button class="btn zwei klein" id="hand">${ich.hand ? "✋ Hilfe gerufen – zurücknehmen" : "✋ Hilfe rufen"}</button></p>`}<div class="zwei-sp" style="margin-top:12px">
       <div style="order:${dran ? 2 : 1}"><div class="klein-h">Unsere Geschichte · <span class="fa">داستانِ ما</span></div><div class="chat">${verlaufHtml(r, { letzte: 30 })}</div></div>
-      <div style="order:${dran ? 1 : 2}"><div class="klein-h">${dran ? "Dein Zug · <span class='fa'>نوبتِ تو</span>" : "Jetzt · <span class='fa'>حالا</span>"}</div>${aufgabeHtml(r, dran ? "ich" : pruefer(r) ? "pruefer" : "andere")}
+      <div style="order:${dran ? 1 : 2}"><div class="klein-h">${dran ? "Dein Zug · <span class='fa'>نوبتِ تو</span>" : "Jetzt · <span class='fa'>حالا</span>"}</div>${aufgabeHtml(r, vorbei ? "andere" : dran ? "ich" : pruefer(r) ? "pruefer" : "andere")}
         ${darfSteuern() && r.schritt !== "ende" && G.phase !== "ende" ? steuerungHtml(r) : ""}</div></div>`;
-    if (r.schritt === "ende" || G.phase === "ende") h += protokollHtml(r);
-    $("#app").innerHTML = h;
+    if (vorbei) h += protokollHtml(r);
+    LT.render($("#app"), h); LT.nachRender();
     verdrahteAufgabe(); scrollChat();
+    const hb = $("#hand"); if (hb) hb.onclick = () => schreib(`spieler/${ME.id}/hand`, ich.hand ? null : Date.now());
     if (darfVerwalten()) verdrahteLeitung();
     if (r.schritt === "ende" || G.phase === "ende") verdrahteProtokoll(r);
     letzteLaenge = E.arr(r.verlauf).length;
@@ -513,6 +546,7 @@
   /* ---------- Aufgaben-Aktionen (Spieler am Zug oder Lehrkraft) ---------- */
   function verdrahteAufgabe() {
     const r = R(); if (!r) return;
+    TOK = stempel(r);
     const b = id => $("#" + id);
     if (b("gelesen")) b("gelesen").onclick = () => aktion(x => E.gelesen(x, S, SP()));
     $$("[data-wahl]").forEach(el => el.onclick = () => aktion(x => E.waehle(x, S, el.dataset.wahl)));
@@ -531,6 +565,7 @@
       else { aktion(x => E.falschVersuch(x, null)); toast("Die Reihenfolge stimmt noch nicht. · ترتیب درست نیست."); }
     };
     if (b("hilfe")) b("hilfe").onclick = () => aktion(x => { x.hilfe = true; return x; });
+    $$("[data-aus]").forEach(x => x.onclick = () => schreib(`spieler/${x.dataset.aus}/aus`, SP()[x.dataset.aus].aus ? null : true));
     $$("[data-dran]").forEach(x => x.onclick = () => aktion(r => { r.akteur = x.dataset.dran; if (r.schritt === "sprechen") r.prompter = x.dataset.dran; if (r.kette) { const k = E.arr(r.kette); k[r.ki || 0] = x.dataset.dran; r.kette = k; } return r; }, true));
     if (b("lk-ok")) b("lk-ok").onclick = () => aktion(r => E.richtig(r, S, SP(), E.punkteFuer(stufeVon(r.akteur), r)), true);
     if (b("lk-skip")) b("lk-skip").onclick = () => aktion(r => E.richtig(r, S, SP(), 0), true);

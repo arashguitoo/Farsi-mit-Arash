@@ -185,6 +185,16 @@ Stadtplan (2 Wege), Schloss mit 3 Ziffern (8-5-7). Einfache Sätze, vokalisiert,
 Weitere Schatzsuchen: neue Datei `assets/live-<id>-daten.js` mit `window.SCHATZSUCHEN.<id>` (Format wie diese), in
 `live-truhe.html` als Script einbinden und in `aktivitaeten.html` mit `datei: "live-truhe.html?spiel=<id>"` eintragen.
 
+### Werkzeuge in allen Live-Aktivitäten (`assets/live-tools.js`)
+- **Lang/Kurz:** Truhe (120/60 Min., kurz ohne Telefonat, weniger Fragen, ohne Beschreiben/Rollenspiel), Geschenk (45/25 Min.),
+  Gespräch über „Länge“ (kurz/mittel/lang = Antworten pro Frage).
+- **👀 Bildschirme ansehen:** Lehrkraft sieht live, was A und B (bzw. jedes Gerät im Gespräch: „📱 Geräte ansehen“) gerade sehen.
+- **✋ Hilfe rufen**, **⏱ Timer für alle**, **📢 Nachricht**, **🔄 Alle Geräte neu laden** (gegen alte Versionen auf Tablets),
+  ⚪ Offline-Anzeige, Warnbalken bei Verbindungsverlust.
+- **Truhe:** ⏭ Station freigeben (wenn ein Team feststeckt), Teams/Rollen auch während des Spiels ändern, Dreierteam bei ungerader Zahl,
+  Startprüfung (jedes Team braucht A und B), 📖 Wörterbuch an jeder Station.
+- **Gespräch:** ⏸ Pause während des Spiels, Doppelklick-Schutz, ✓-Knopf auf der Leinwand, Ja/Nein/Vielleicht nur auf Persisch mit Emoji.
+
 ### Live: Gesprächs-Simulation (`live-gespraech.html`)
 Reihum-Gespräch für 2–8 Personen mit verzweigter Geschichte. Wer dran ist, übersetzt einen deutschen Satz ins Persische,
 die anderen reagieren (Ja / Nein mit Alternative / Vielleicht oder Auswahl), die Mehrheit bestimmt den Verlauf.
