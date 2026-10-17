@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wortsalat-Chat · Farsi-Lernpfad</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Vazirmatn:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css">
+<style>
+  .wrap{max-width:980px}
+  .lv-code{font-size:3rem;font-weight:800;letter-spacing:.2em;color:var(--lapis)}
+  .lv-kopf{display:flex;gap:12px;align-items:center;flex-wrap:wrap;justify-content:space-between;margin:14px 0}
+  .fa-g{font-family:var(--fa);direction:rtl;text-align:right}
+  .meldung{background:var(--safran-hell);border:1px solid #e6d3ad;border-radius:12px;padding:10px 14px;margin:10px 0;font-weight:700}
+  .klein-h{font-size:.78rem;font-weight:800;color:var(--tinte2);text-transform:uppercase;letter-spacing:.04em;margin:14px 0 6px}
+  /* WhatsApp-artiger Chat */
+  .wa{border-radius:18px;overflow:hidden;border:1px solid #d8d2c4;background:#efeae2;box-shadow:var(--schatten)}
+  .wa-kopf{background:#2f6b5e;color:#fff;padding:10px 14px;display:flex;gap:10px;align-items:center}
+  .wa-kopf .av{width:38px;height:38px;border-radius:50%;background:#e8f1ee;display:grid;place-items:center;font-size:1.3rem}
+  .wa-kopf .t{font-weight:800}
+  .wa-kopf .m{font-size:.78rem;opacity:.85}
+  .wa-chat{padding:12px;display:flex;flex-direction:column;gap:6px;max-height:56vh;overflow-y:auto;min-height:220px}
+  .wa.gross .wa-chat{max-height:none}
+  .wa-sys{align-self:center;background:#fff8dc;color:#6b5a2a;border-radius:10px;padding:4px 12px;font-size:.8rem;text-align:center;max-width:90%}
+  .wa-sys .fa{font-family:var(--fa)}
+  .bub{max-width:80%;background:#fff;border-radius:12px;padding:6px 10px 4px;align-self:flex-start;box-shadow:0 1px 1px rgba(0,0,0,.08);position:relative}
+  .bub.ich{align-self:flex-end;background:#d9fdd3}
+  .bub .n{font-size:.78rem;font-weight:800}
+  .bub .fa-g{font-size:1.15rem;line-height:1.9}
+  .bub .de{font-size:.8rem;color:#667;margin-top:2px}
+  .bub .um{font-size:.85rem;color:#7a6a3a;font-family:var(--fa);direction:rtl;text-align:right}
+  .bub .zeit{font-size:.66rem;color:#889;text-align:left}
+  .bub.neu{animation:auf .35s ease}
+  @keyframes auf{from{transform:translateY(8px);opacity:0}to{transform:none;opacity:1}}
+  .tippt{align-self:flex-start;background:#fff;border-radius:12px;padding:6px 12px;font-size:.85rem;color:#556;font-style:italic}
+  /* Eingabe */
+  .komp{background:#fff;border:2px solid #2f6b5e;border-radius:18px;padding:12px;margin-top:12px}
+  .ideen{display:flex;gap:6px;flex-wrap:wrap;margin:6px 0 10px}
+  .idee{border:1px dashed #9fbcb8;border-radius:12px;padding:5px 10px;font-size:.88rem;background:#f6faf9}
+  .eingabe{display:flex;gap:8px;align-items:stretch}
+  .zeile{flex:1;min-height:54px;border:1.5px solid #c9d6d2;border-radius:24px;padding:6px 12px;display:flex;flex-wrap:wrap;gap:6px;direction:rtl;align-items:center;background:#fbfdfc}
+  .zeile .leer{direction:ltr;color:#99a;font-size:.88rem}
+  .senden{width:54px;border-radius:50%;border:0;background:#2f6b5e;color:#fff;font-size:1.4rem;cursor:pointer}
+  .senden:disabled{background:#b8c6c2;cursor:default}
+  .wks{display:flex;flex-wrap:wrap;gap:7px;direction:rtl;margin-top:12px}
+  .wk{font-family:var(--fa);font-size:1.12rem;border:1.5px solid var(--linie);background:#fff;border-radius:10px;padding:5px 11px;cursor:pointer;line-height:1.7}
+  .wk:hover{border-color:#2f6b5e;background:#eef6f3}
+  .wk.weg{visibility:hidden}
+  .zeile .wk{background:#e4f3ee;border-color:#9fc9bb}
+  .rueck{margin-top:8px;padding:8px 12px;border-radius:10px;font-weight:700}
+  .rueck.fast{background:var(--safran-hell)}
+  .rueck.nein{background:var(--granat-hell)}
+  .pkt{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}
+  .pkt span{background:#fff;border:1px solid var(--linie);border-radius:999px;padding:3px 10px;font-size:.82rem;font-weight:700}
+  .pkt span.dran{border-color:var(--safran);box-shadow:0 0 0 2px var(--safran-hell)}
+  .sz-karte{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
+  .seg{display:inline-flex;border:1px solid var(--linie);border-radius:10px;overflow:hidden}
+  .seg button{border:0;background:#fff;padding:5px 10px;font:inherit;font-size:.82rem;font-weight:700;cursor:pointer}
+  .seg button.an{background:var(--lapis);color:#fff}
+  .tn-zeile{display:flex;gap:8px;align-items:center;flex-wrap:wrap;border:1px solid var(--linie);border-radius:12px;padding:8px 10px;background:#fff}
+  .zwei-sp{display:grid;grid-template-columns:1.3fr 1fr;gap:14px;align-items:start}
+  @media (max-width:820px){.zwei-sp{grid-template-columns:1fr}}
+  .prot .z{display:grid;grid-template-columns:110px 1fr;gap:10px;padding:4px 0;break-inside:avoid}
+  .prot .z .n{font-weight:800;color:var(--lapis);text-align:right}
+  @media print{.kopf,.nodruck,.komp{display:none!important}.wa-chat{max-height:none}}
+</style>
+</head>
+<body>
+<header class="kopf">
+  <div class="wrap">
+    <a href="aktivitaeten.html" class="medaillon" style="text-decoration:none">فا</a>
+    <div><h1 id="kopfTitel">Wortsalat-Chat</h1><div class="unter">Aktivität · Farsi-Lernpfad</div></div>
+    <div class="rechts"><span class="kopf-btn" id="kopfInfo" style="background:transparent;border-color:transparent"></span><a class="kopf-btn" href="aktivitaeten.html">← Aktivitäten</a></div>
+  </div>
+</header>
+<main class="wrap" style="padding-bottom:60px"><div id="app"><p class="muted" style="margin-top:30px">Lade …</p></div></main>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+<script src="assets/core.js"></script>
+<script src="assets/live-tools.js"></script>
+<script src="assets/chats/index.js"></script>
+<script>
+/* ===================== Logik (rein, auch für Tests) ===================== */
+window.CHAT_ENGINE = (function () {
+  const ART = { frage: ["❓", "Frage", "سُؤال"], vorschlag: ["💡", "Vorschlag", "پیشنَهاد"], ja: ["👍", "Zustimmung", "آره"], nein: ["👎", "Ablehnung", "نه"], info: ["ℹ️", "Information", "خَبَر"] };
+  const FUELL = ["هَم", "را", "به", "اَز", "با", "و", "کِه", "یک", "این", "نه", "خِیلی", "هَمه", "اَمروز", "حالا"];
+  const toks = s => String(s).trim().split(/\s+/).filter(Boolean);
+  const satzListe = o => [o.fa].concat(o.alt || []);
+  function mischen(a, seed) { a = a.slice(); let x = (seed * 9301 + 49297) % 233280; for (let i = a.length - 1; i > 0; i--) { x = (x * 9301 + 49297) % 233280; const j = Math.floor(x / 233280 * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
+  const hash = s => { let h = 7; for (const c of String(s)) h = (h * 31 + c.charCodeAt(0)) % 100003; return h; };
+  /* Wortsalat: alle Wörter aller möglichen Nachrichten (so oft wie nötig) + Ablenkungen, ca. 26–30 Kacheln */
+  function salat(K, seed, ziel = 28) {
+    const anz = {};
+    K.optionen.forEach(o => { const c = {}; satzListe(o).slice(0, 1).forEach(s => toks(s).forEach(t => { c[t] = (c[t] || 0) + 1; })); Object.entries(c).forEach(([t, n]) => { anz[t] = Math.max(anz[t] || 0, n); }); });
+    const w = []; Object.entries(anz).forEach(([t, n]) => { for (let i = 0; i < n; i++) w.push(t); });
+    const extra = mischen((K.extra || []).filter(t => !anz[t]), seed).concat(mischen(FUELL.filter(t => !anz[t] && !(K.extra || []).includes(t)), seed + 1));
+    while (w.length < ziel && extra.length) w.push(extra.shift());
+    return mischen(w, seed + 7);
+  }
+  /* Prüfen: genaue Übereinstimmung, gleiche Wörter falsche Reihenfolge, fast (1 Wort) */
+  function pruefe(K, gebaut) {
+    const g = gebaut.join(" ");
+    for (const o of K.optionen) for (const s of satzListe(o)) if (toks(s).join(" ") === g) return { ok: true, opt: o };
+    const sortiert = a => a.slice().sort().join("|");
+    let best = null, bestD = 99;
+    for (const o of K.optionen) {
+      const t = toks(o.fa);
+      if (sortiert(t) === sortiert(gebaut)) return { ok: false, art: "reihenfolge", opt: o };
+      const rest = t.slice(); let fehl = 0; gebaut.forEach(x => { const i = rest.indexOf(x); if (i >= 0) rest.splice(i, 1); else fehl++; });
+      const d = fehl + rest.length; if (d < bestD) { bestD = d; best = o; }
+    }
+    return { ok: false, art: bestD <= 2 ? "fast" : "nein", opt: best, abstand: bestD };
+  }
+  function reihe(spieler) {
+    return Object.entries(spieler || {}).filter(([, s]) => s && s.name && !s.aus).sort(([, a], [, b]) => ((a.reihe ?? 999) - (b.reihe ?? 999)) || ((a.ts || 0) - (b.ts || 0))).map(([id]) => id);
+  }
+  function naechster(r, spieler) { const l = reihe(spieler); return l.length ? l[(r.zug || 0) % l.length] : null; }
+  function start(S, spieler) { const r = { knoten: S.start, zug: 0, verlauf: [], punkte: {}, versuche: 0 }; r.akteur = naechster(r, spieler); return r; }
+  function senden(r, S, spieler, opt, wer) {
+    const K = S.knoten[r.knoten];
+    const v = Array.isArray(r.verlauf) ? r.verlauf.filter(Boolean) : Object.keys(r.verlauf || {}).sort((a, b) => a - b).map(k => r.verlauf[k]);
+    v.push({ p: wer, k: r.knoten, o: opt.id, ts: Date.now() });
+    r.verlauf = v;
+    const pkt = [10, 6, 3][Math.min(r.versuche || 0, 2)];
+    r.punkte = r.punkte || {}; r.punkte[wer] = (r.punkte[wer] || 0) + pkt;
+    r.knoten = opt.weiter; r.zug = (r.zug || 0) + 1; r.versuche = 0;
+    r.akteur = S.knoten[r.knoten].ende ? null : naechster(r, spieler);
+    return r;
+  }
+  const arr = v => Array.isArray(v) ? v.filter(Boolean) : Object.keys(v || {}).sort((a, b) => a - b).map(k => v[k]);
+  /* Prüft ein Szenario: Ziele, Wörter im Salat, Lösbarkeit */
+  function pruefeSzenario(S) {
+    const f = [];
+    Object.entries(S.knoten).forEach(([id, K]) => {
+      if (K.ende) return;
+      if (!K.optionen || K.optionen.length < 2) f.push(id + ": mindestens 2 Optionen");
+      K.optionen.forEach(o => { if (!S.knoten[o.weiter]) f.push(`${id}/${o.id}: Ziel ${o.weiter} fehlt`);
+        const sal = salat(K, 1); satzListe(o).forEach(s => { const rest = sal.slice(); toks(s).forEach(t => { const i = rest.indexOf(t); if (i < 0) f.push(`${id}/${o.id}: Wort „${t}“ fehlt im Salat`); else rest.splice(i, 1); }); }); });
+      const n = salat(K, 1).length; if (n < 18) f.push(`${id}: nur ${n} Kacheln`);
+    });
+    return f;
+  }
+  return { ART, toks, salat, pruefe, reihe, naechster, start, senden, arr, hash, mischen, pruefeSzenario };
+})();
+
+/* ===================== Seite ===================== */
+(function () {
+  const F = window.FARSI, { $, $$, esc, toast } = F, E = window.CHAT_ENGINE, LT = window.LIVE_TOOLS;
+  const qs = new URLSearchParams(location.search);
+  const MODUS = qs.get("solo") ? "solo" : qs.get("leitung") ? "leitung" : "spieler";
+  const istLK = MODUS === "leitung";
+  let CODE = (qs.get("code") || "").replace(/\D/g, "") || null;
+  let G = null, REF = null, ME = null, S = null, BEAMER = false, HANDYS = false;
+  let gebaut = [], salatKey = "", tippStufe = 0, rueck = null, letzteLaenge = 0;
+  const FARBEN = ["#2f6b5e", "#a8443a", "#8a5400", "#5a4b9b", "#2b6fa8", "#9b4b7a", "#4f7a2b", "#7a5532"];
+  const app = () => $("#app");
+  const gRef = c => F.ref(`live/chat/${c}`);
+
+  /* ---------- Szenario laden ---------- */
+  function lade(id) {
+    if ((window.CHATS || {})[id]) return Promise.resolve(window.CHATS[id]);
+    return new Promise((ok, nein) => { const sc = document.createElement("script"); sc.src = `assets/chats/${id}.js`;
+      sc.onload = () => (window.CHATS || {})[id] ? ok(window.CHATS[id]) : nein(new Error("Szenario leer")); sc.onerror = () => nein(new Error("Szenario fehlt: " + id)); document.head.appendChild(sc); });
+  }
+  /* ---------- Firebase ---------- */
+  function hoere(c) {
+    if (REF) REF.off();
+    REF = gRef(c);
+    REF.on("value", async s => {
+      G = s.val();
+      if (MODUS !== "leitung") LT.pruefeNeuLaden(G);
+      if (G && G.szenario && (!S || S.id !== G.szenario)) { try { S = await lade(G.szenario); } catch (e) { return fehler(e, true); } }
+      if (LT.tipptGerade(zeichne)) return;
+      zeichne();
+    }, e => fehler(e, true));
+  }
+  function fehler(e, hart) {
+    console.error(e);
+    if (!hart && G && G.phase && G.phase !== "lobby") { toast("Das hat nicht geklappt – bitte noch einmal tippen."); return; }
+    app().innerHTML = `<div class="karte" style="margin-top:20px"><b>Das hat nicht geklappt.</b><p class="klein muted">${esc(e && e.message || e)}</p><p class="klein">Lehrkraft: Bitte prüfen, ob die Regeln aus <code>firebase-regeln.json</code> veröffentlicht sind.</p></div>`;
+  }
+  const schreib = (p, w) => gRef(CODE).child(p).set(w).catch(e => fehler(e));
+  const upd = o => gRef(CODE).update(o).catch(e => fehler(e));
+
+  /* ---------- Helfer ---------- */
+  const R = () => (G && G.teams && G.teams.r) || null;
+  const SP = () => (G && G.spieler) || {};
+  const name = id => (SP()[id] || {}).name || "?";
+  const farbe = id => FARBEN[Math.max(0, E.reihe(SP()).indexOf(id)) % FARBEN.length];
+  const ohneV = () => !!(G && G.vokale === false);
+  const vk = t => ohneV() ? String(t).replace(/[ً-ْٰ]/g, "") : String(t || "");
+  const stufe = () => (G && G.stufe) || "leicht";
+  const istCo = id => !!((SP()[id] || {}).cohost) || (G && G.host === id);
+  const darfSteuern = () => istLK || MODUS === "solo" || !!(ME && istCo(ME.id));
+  const uhr = ts => new Date(ts || Date.now()).toLocaleTimeString("de-DE", { hour: "2-digit", minute: "2-digit" });
+
+  /* ---------- Chat-Ansicht ---------- */
+  function chatHtml(r, opt = {}) {
+    const v = E.arr(r.verlauf), mitglieder = E.reihe(SP()).map(name);
+    let h = `<div class="wa ${opt.gross ? "gross" : ""}"><div class="wa-kopf"><div class="av">${S.icon || "💬"}</div><div><div class="t">${esc(S.gruppe.name)}</div><div class="m">${esc(mitglieder.join(", "))}</div></div></div>
+      <div class="wa-chat" data-scroll="chat">`;
+    const K0 = S.knoten[S.start];
+    if (K0.info) h += `<div class="wa-sys">${esc(K0.info.de)} · <span class="fa">${esc(vk(K0.info.fa))}</span></div>`;
+    v.forEach((e, i) => {
+      const K = S.knoten[e.k], o = K && K.optionen.find(x => x.id === e.o); if (!o) return;
+      const ich = ME && e.p === ME.id, neu = i === v.length - 1 && v.length > letzteLaenge && letzteLaenge > 0;
+      h += `<div class="bub ${ich ? "ich" : ""} ${neu ? "neu" : ""}">${ich ? "" : `<div class="n" style="color:${farbe(e.p)}">${esc(name(e.p))}</div>`}
+        <div class="fa-g">${esc(vk(o.fa))}</div>${opt.de !== false ? `<div class="de">${esc(o.de)}</div>` : ""}${o.um && opt.um !== false ? `<div class="um">💬 ${esc(o.um)}</div>` : ""}<div class="zeit">${uhr(e.ts)}</div></div>`;
+      const N = S.knoten[o.weiter]; if (N && N.info && !N.ende) h += `<div class="wa-sys">${esc(N.info.de)} · <span class="fa">${esc(vk(N.info.fa))}</span></div>`;
+    });
+    const K = S.knoten[r.knoten];
+    if (K && K.ende) h += `<div class="wa-sys">🎉 ${esc(K.info ? K.info.de : "Ende")}</div>`;
+    else if (r.akteur && (!ME || r.akteur !== ME.id)) h += `<div class="tippt">✍️ ${esc(name(r.akteur))} schreibt …</div>`;
+    return h + `</div></div>`;
+  }
+  function scrollChat() { $$(".wa-chat").forEach(c => { c.scrollTop = c.scrollHeight; }); }
+  function punkteHtml(r) {
+    const p = r.punkte || {};
+    return `<div class="pkt">${E.reihe(SP()).map(id => `<span class="${r.akteur === id ? "dran" : ""}" style="${(SP()[id] || {}).online === false ? "opacity:.55" : ""}">${(SP()[id] || {}).hand ? "✋ " : ""}${esc(name(id))} · ${p[id] || 0} P.</span>`).join("")}</div>`;
+  }
+
+  /* ---------- Eingabe (Wortsalat) ---------- */
+  function komponierHtml(r, nurAnsehen) {
+    const K = S.knoten[r.knoten]; if (!K || K.ende) return "";
+    const key = r.knoten + "|" + (r.zug || 0);
+    if (key !== salatKey) { salatKey = key; gebaut = []; tippStufe = 0; rueck = null; }
+    const pool = E.salat(K, E.hash(CODE || "solo") + (r.zug || 0) * 13);
+    const benutzt = new Set(gebaut);
+    const ideen = K.optionen.map(o => { const a = E.ART[o.art] || E.ART.info;
+      return `<span class="idee">${a[0]} <b>${a[1]}</b>${stufe() === "leicht" || tippStufe >= 1 ? ` · ${esc(o.de)}` : ""}</span>`; }).join("");
+    return `<div class="komp">
+      <div style="display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;align-items:center"><b>✍️ ${nurAnsehen ? esc(name(r.akteur)) + " ist dran" : "Du bist dran!"}</b><span class="klein muted">${esc(K.aufgabe || "")}</span></div>
+      <div class="klein-h">Du kannst zum Beispiel schreiben:</div><div class="ideen">${ideen}</div>
+      <div class="eingabe"><div class="zeile">${gebaut.length ? gebaut.map((i, n) => `<button class="wk" ${nurAnsehen ? "" : `data-raus="${n}"`}>${esc(vk(pool[i]))}</button>`).join("") : `<span class="leer">Tippe unten auf die Wörter, um deine Nachricht zu bauen …</span>`}</div>
+        <button class="senden" ${nurAnsehen ? "disabled" : `id="send" ${gebaut.length ? "" : "disabled"}`} title="Senden">➤</button></div>
+      ${rueck ? `<div class="rueck ${rueck.art === "nein" ? "nein" : "fast"}">${rueck.text}</div>` : ""}
+      <div class="wks">${pool.map((t, i) => `<button class="wk ${benutzt.has(i) ? "weg" : ""}" ${nurAnsehen ? "" : `data-rein="${i}"`}>${esc(vk(t))}</button>`).join("")}</div>
+      ${nurAnsehen ? "" : `<div class="btnreihe" style="margin-top:10px"><button class="btn zwei klein" id="leeren">↺ alles zurück</button><button class="btn zwei klein" id="tipp">💡 Tipp${tippStufe ? ` (${tippStufe})` : ""}</button></div>`}
+    </div>`;
+  }
+  function verdrahteKomp(r) {
+    const K = S.knoten[r.knoten]; if (!K || K.ende) return;
+    const pool = E.salat(K, E.hash(CODE || "solo") + (r.zug || 0) * 13);
+    $$("[data-rein]").forEach(b => b.onclick = () => { gebaut.push(+b.dataset.rein); rueck = null; zeichne(); });
+    $$("[data-raus]").forEach(b => b.onclick = () => { gebaut.splice(+b.dataset.raus, 1); rueck = null; zeichne(); });
+    const l = $("#leeren"); if (l) l.onclick = () => { gebaut = []; rueck = null; zeichne(); };
+    const t = $("#tipp"); if (t) t.onclick = () => {
+      tippStufe++;
+      if (tippStufe >= 2) {   /* nächstes richtiges Wort der passendsten Nachricht einsetzen */
+        const pr = E.pruefe(K, gebaut.map(i => pool[i])), o = pr.opt || K.optionen[0], ziel = E.toks(o.fa);
+        let ok = 0; while (ok < gebaut.length && pool[gebaut[ok]] === ziel[ok]) ok++;
+        gebaut = gebaut.slice(0, ok);
+        if (ok < ziel.length) { const frei = pool.map((w, i) => i).find(i => pool[i] === ziel[ok] && !gebaut.includes(i)); if (frei != null) gebaut.push(frei); }
+        rueck = { art: "fast", text: "💡 Das nächste Wort ist gesetzt." };
+      } else rueck = { art: "fast", text: "💡 Die Ideen zeigen jetzt, was die Nachricht bedeutet." };
+      zeichne();
+    };
+    const s = $("#send"); if (s) s.onclick = () => {
+      if (!gebaut.length || s.dataset.weg) return;
+      const w = gebaut.map(i => pool[i]), pr = E.pruefe(K, w);
+      if (pr.ok) s.dataset.weg = "1";
+      if (pr.ok) { const opt = pr.opt; gebaut = []; rueck = null; absenden(opt); return; }
+      rueck = pr.art === "reihenfolge" ? { art: "fast", text: "🔄 Alle Wörter stimmen – nur die Reihenfolge noch nicht." }
+        : pr.art === "fast" ? { art: "fast", text: "🤏 Fast! Ein oder zwei Wörter passen noch nicht." }
+        : { art: "nein", text: "✋ Diese Nachricht passt hier nicht. Schau dir die Ideen oben an." };
+      fehlversuch();
+      zeichne();
+    };
+  }
+
+  /* ---------- Aktionen ---------- */
+  const stempel = r => r ? r.knoten + "|" + (r.zug || 0) : "";
+  function absenden(opt) {
+    if (MODUS === "solo") { G.teams.r = E.senden(G.teams.r, S, SP(), opt, ME.id); zeichne(); botZug(); return; }
+    const tok = stempel(R());
+    gRef(CODE).child("teams/r").transaction(cur => {
+      if (!cur || stempel(cur) !== tok) return cur ? undefined : cur;
+      if (!istLK && cur.akteur !== ME.id && !darfSteuern()) return;
+      return E.senden(cur, S, SP(), opt, cur.akteur);
+    }).catch(e => fehler(e));
+  }
+  function fehlversuch() {
+    if (MODUS === "solo") { G.teams.r.versuche = (G.teams.r.versuche || 0) + 1; return; }
+    gRef(CODE).child("teams/r/versuche").transaction(v => (v || 0) + 1).catch(() => { });
+  }
+  /* Zug überspringen: das Spiel wählt eine passende Nachricht */
+  function automatisch() {
+    const r = R(), K = r && S.knoten[r.knoten]; if (!K || K.ende) return;
+    const opt = K.optionen[Math.floor(Math.random() * K.optionen.length)];
+    if (MODUS === "solo") return absenden(opt);
+    const tok = stempel(r);
+    gRef(CODE).child("teams/r").transaction(cur => { if (!cur || stempel(cur) !== tok) return cur ? undefined : cur; const x = E.senden(cur, S, SP(), opt, cur.akteur); x.punkte[cur.akteur] -= [10, 6, 3][Math.min(cur.versuche || 0, 2)]; return x; }).catch(e => fehler(e));
+  }
+
+  /* =====================================================================
+     ALLEIN ÜBEN (ohne Firebase): du + Chat-Freunde, die automatisch antworten
+     ===================================================================== */
+  const BOTS = [{ id: "bot1", name: "Nima" }, { id: "bot2", name: "Sara" }, { id: "bot3", name: "Kian" }];
+  async function startSolo() {
+    if (!(await F.brauchtCode())) return;
+    const s = F.sitzung(), L = window.CHAT_LISTE || [];
+    ME = { id: "ich", name: s ? s.name : "Du" };
+    const id = qs.get("szenario");
+    if (!id) {
+      app().innerHTML = `<div class="karte" style="margin-top:20px"><h2 style="margin-top:0">🎧 Allein üben</h2><p>Du chattest mit drei Freunden aus der Uni. Wenn du dran bist, baust du deine Nachricht aus dem Wortsalat – die anderen antworten automatisch. Je nachdem, was du schreibst, geht der Chat anders weiter.</p></div>
+        <div class="sz-karte">${L.map(x => `<div class="karte"><div style="font-size:2rem">${x.icon}</div><h3 style="margin:4px 0">${esc(x.titel)}</h3><div class="fa" style="color:var(--lapis)">${esc(x.titelFa)}</div><p class="klein">${esc(x.kurz)}</p><a class="btn" href="?solo=1&szenario=${x.id}" style="text-decoration:none">▶ Los</a></div>`).join("")}</div>`;
+      return;
+    }
+    try { S = await lade(id); } catch (e) { return fehler(e, true); }
+    const spieler = { ich: { name: ME.name, ts: 1, reihe: 0 } };
+    BOTS.forEach((b, i) => { if (b.name === ME.name) b.name = "Roya"; spieler[b.id] = { name: b.name, ts: 2 + i, reihe: 1 + i, bot: true }; });
+    G = { szenario: id, phase: "spiel", stufe: qs.get("stufe") || "leicht", spieler, teams: {} };
+    /* Reihenfolge: du – Freund – du – Freund … */
+    G.teams.r = E.start(S, spieler); G.teams.r.akteur = "ich";
+    zeichne();
+  }
+  function soloNaechster(r) { const n = E.arr(r.verlauf).length; return n % 2 === 0 ? "ich" : BOTS[Math.floor(n / 2) % BOTS.length].id; }
+  function botZug() {
+    const r = G.teams.r; if (S.knoten[r.knoten].ende) { zeichne(); return; }
+    r.akteur = soloNaechster(r);
+    zeichne();
+    if (r.akteur === "ich") return;
+    setTimeout(() => {
+      const K = S.knoten[r.knoten], opt = K.optionen[Math.floor(Math.random() * K.optionen.length)];
+      G.teams.r = E.senden(r, S, G.spieler, opt, r.akteur);
+      G.teams.r.punkte[r.akteur] = 0;
+      botZug();
+    }, 1600);
+  }
+  function zeichneSolo() {
+    const r = G.teams.r, K = S.knoten[r.knoten], dran = r.akteur === "ich";
+    $("#kopfTitel").textContent = S.titel;
+    let h = `<div class="lv-kopf" style="margin-bottom:6px"><div><b>${esc(S.titel)}</b> <span class="fa" style="color:var(--lapis)">${esc(vk(S.titelFa))}</span></div>
+      <div class="seg nodruck"><button class="${stufe() === "leicht" ? "an" : ""}" data-stufe="leicht">leicht · mit Bedeutung</button><button class="${stufe() === "schwer" ? "an" : ""}" data-stufe="schwer">schwer · nur Absicht</button></div></div>
+      <div class="pkt"><span>⭐ Deine Punkte: ${(r.punkte || {}).ich || 0}</span></div>`;
+    h += chatHtml(r);
+    if (K.ende) h += protokollKnopf();
+    else if (dran) h += komponierHtml(r, false);
+    LT.render(app(), h); scrollChat();
+    verdrahteKomp(r); verdrahteProt();
+    $$("[data-stufe]").forEach(b => b.onclick = () => { G.stufe = b.dataset.stufe; zeichne(); });
+    letzteLaenge = E.arr(r.verlauf).length;
+  }
+
+  /* =====================================================================
+     LEITUNG
+     ===================================================================== */
+  function startLeitung() {
+    firebase.auth().onAuthStateChanged(u => {
+      if (!u) { app().innerHTML = `<div class="karte" style="margin-top:20px"><h2>Nur für Lehrkräfte</h2><p>Bitte zuerst in der <a href="konsole.html">Konsole</a> anmelden.</p></div>`; return; }
+      LT.verbindung(null);
+      if (CODE) hoere(CODE); else zeichneNeu();
+    });
+  }
+  function zeichneNeu() {
+    const L = window.CHAT_LISTE || [];
+    app().innerHTML = `<div class="karte" style="margin-top:20px"><h2 style="margin-top:0">💬 Wortsalat-Chat${istLK ? "" : " – eigene Runde"}</h2>
+      <p>Ein Gruppenchat wie in WhatsApp: Wer dran ist, bekommt einen Wortsalat (ca. 30 persische Wörter) und baut daraus eine Nachricht – eine Frage, einen Vorschlag, eine Zusage … Das Spiel prüft automatisch. Je nach Nachricht geht der Chat anders weiter, und die nächste Person antwortet mit einem neuen Wortsalat.</p>
+      <p class="klein muted">2–8 Personen, jede mit eigenem Gerät. ${istLK ? "Allein üben geht über 🎲 Aktivitäten → „🎧 Allein üben“." : "Du bist Host 👑 und startest die Runde."}</p></div>
+      <div class="sz-karte">${L.map(x => `<div class="karte"><div style="font-size:2rem">${x.icon}</div><h3 style="margin:4px 0">${esc(x.titel)}</h3><div class="fa" style="color:var(--lapis)">${esc(x.titelFa)}</div><p class="klein">${esc(x.kurz)}</p><p class="klein muted">${esc(x.dauer)}</p><button class="btn" data-neu="${x.id}">▶ Neue Runde</button></div>`).join("")}</div>`;
+    $$("[data-neu]").forEach(b => b.onclick = async () => {
+      const d = { erstellt: Date.now(), phase: "lobby", szenario: b.dataset.neu, stufe: "leicht", spieler: {} };
+      if (!istLK) { d.host = ME.id; d.spieler[ME.id] = { name: ME.name, ts: Date.now() }; }
+      try { CODE = await LT.neueRunde(gRef, d); } catch (e) { return fehler(e, true); }
+      history.replaceState(null, "", istLK ? `?leitung=1&code=${CODE}` : `?code=${CODE}`);
+      if (!istLK) LT.verbindung(gRef(CODE).child("spieler/" + ME.id));
+      hoere(CODE);
+    });
+  }
+  function lobbyHtml() {
+    const alle = Object.entries(SP()).filter(([, s]) => s && s.name).sort(([, a], [, b]) => (a.ts || 0) - (b.ts || 0));
+    return `<div class="karte"><h3 style="margin-top:0">${istLK ? esc(S.titel) : "👑 Runde einrichten"}</h3>
+      <p>Die Teilnehmenden öffnen <b>🎲 Aktivitäten</b> und geben den Code <b>${CODE}</b> ein.</p>
+      <div style="display:flex;gap:16px;flex-wrap:wrap;align-items:center">
+        <div><div class="klein-h" style="margin-top:0">Stufe</div><div class="seg"><button class="${stufe() === "leicht" ? "an" : ""}" data-gstufe="leicht">leicht · Ideen mit Bedeutung</button><button class="${stufe() === "schwer" ? "an" : ""}" data-gstufe="schwer">schwer · nur Absicht</button></div></div>
+        <div><div class="klein-h" style="margin-top:0">Vokale</div><div class="seg"><button class="${ohneV() ? "" : "an"}" data-vok="1">an</button><button class="${ohneV() ? "an" : ""}" data-vok="0">aus</button></div></div></div>
+      <h3>Teilnehmende (${alle.length}) <span class="klein muted">– Reihenfolge = Schreibreihenfolge</span></h3>
+      <div style="display:grid;gap:6px">${alle.map(([id, s]) => `<div class="tn-zeile"><b style="color:${farbe(id)}">${esc(s.name)}</b><span style="margin-left:auto"></span>
+        <button class="btn zwei klein" data-cohost="${id}" ${G.host === id ? "disabled" : ""} style="${istCo(id) ? "background:var(--safran-hell)" : ""}" title="Co-Host: darf überspringen und die Reihenfolge steuern">👑</button>
+        <button class="btn zwei klein" data-weg="${id}">✕</button></div>`).join("") || `<p class="muted">Noch niemand da …</p>`}</div></div>`;
+  }
+  function steuerHtml(r) {
+    return `<div class="karte" style="margin-top:12px"><div class="klein-h" style="margin-top:0">Steuerung</div>
+      <div style="display:flex;gap:6px;flex-wrap:wrap;align-items:center"><span class="klein">Dran ist:</span>${E.reihe(SP()).map(id => `<button class="btn zwei klein" data-dran="${id}" style="${r.akteur === id ? "background:var(--lapis);color:#fff" : ""}">${(SP()[id] || {}).online === false ? "⚪ " : ""}${esc(name(id))}</button>`).join("")}</div>
+      <div style="display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-top:6px"><span class="klein">Pause:</span>${Object.entries(SP()).filter(([, x]) => x && x.name).map(([id, x]) => `<button class="btn zwei klein" data-aus="${id}">${x.aus ? "▶" : "⏸"} ${esc(x.name)}</button>`).join("")}</div>
+      <div class="btnreihe" style="margin-top:8px"><button class="btn zwei klein" id="auto">⏭ Zug überspringen (Spiel schreibt)</button></div>
+      ${istLK || G.host ? LT.timerSteuerung(G) : ""}
+      ${istLK ? `<div class="lt-werkzeug"><input class="feld" id="msg" placeholder="Nachricht an alle …" style="flex:1;min-width:160px;padding:6px 10px"><button class="btn zwei klein" id="senden">📢 senden</button>${G.nachricht ? `<button class="btn zwei klein" id="msgweg">✕</button>` : ""}<button class="btn zwei klein" id="reload">🔄 Alle Geräte neu laden</button></div>` : ""}
+      ${!istLK && G.host ? `<button class="btn rot klein" id="ende">⏹ Runde beenden</button>` : ""}</div>`;
+  }
+  function hinweise() {
+    const h = istLK ? Object.entries(SP()).filter(([, x]) => x && x.hand && x.name) : [];
+    return (G.nachricht ? `<div class="meldung">📢 ${esc(G.nachricht.text)}</div>` : "") + LT.timerHtml(G) +
+      (h.length ? `<div class="meldung" style="background:#fff3d6">✋ <b>Hilfe gewünscht:</b> ${h.map(([id, x]) => `${esc(x.name)} <button class="btn zwei klein" data-hand-weg="${id}">erledigt</button>`).join(" · ")}</div>` : "");
+  }
+  function zeichneLeitung() {
+    if (!G) { app().innerHTML = `<div class="karte" style="margin-top:20px">Diese Runde gibt es nicht (mehr). <a href="?leitung=1">Neue Runde</a></div>`; return; }
+    if (!S) return;
+    $("#kopfTitel").textContent = S.titel;
+    const r = R(), sp = E.reihe(SP());
+    let h = `<div class="lv-kopf nodruck"><div><div class="klein muted">Spielcode</div><div class="lv-code">${CODE}</div></div><div class="btnreihe">
+      ${G.phase !== "lobby" ? `<button class="btn zwei klein" id="beamer">${BEAMER ? "⚙️ Leitung" : "🖥️ Leinwand"}</button><button class="btn zwei klein" id="handys">${HANDYS ? "📱 Geräte ausblenden" : "📱 Geräte ansehen"}</button>` : ""}
+      ${G.phase === "lobby" ? `<button class="btn" id="start" ${sp.length >= 2 ? "" : "disabled"}>▶ Chat starten</button>` : ""}
+      ${G.phase === "spiel" ? `<button class="btn rot klein" id="ende">⏹ beenden</button>` : ""}</div></div>` + hinweise();
+    if (G.phase === "lobby") h += lobbyHtml();
+    else if (r) {
+      const K = S.knoten[r.knoten];
+      if (BEAMER) h += punkteHtml(r) + chatHtml(r, { gross: true, um: false });
+      else h += punkteHtml(r) + `<div class="zwei-sp"><div>${chatHtml(r)}${K.ende ? protokollKnopf() : ""}</div><div>${K.ende ? "" : komponierHtml(r, true) + steuerHtml(r)}</div></div>` + (HANDYS ? handysHtml(r) : "");
+    }
+    LT.render(app(), h); LT.nachRender(); scrollChat();
+    verdrahteLeitung(); verdrahteProt();
+    if (r) letzteLaenge = E.arr(r.verlauf).length;
+  }
+  function handysHtml(r) {
+    return `<div class="karte" style="margin-top:12px"><h3 style="margin-top:0">📱 So sieht es auf den Geräten aus</h3><div class="schau-gitter">${E.reihe(SP()).map(id => {
+      const alt = ME; ME = { id, name: name(id) };
+      try { return `<div><div class="schau-kopf">${(SP()[id] || {}).online === false ? "⚪" : "🟢"} ${esc(name(id))}${r.akteur === id ? " · ✍️ schreibt" : ""}</div><div class="schau">${r.akteur === id ? komponierHtml(r, true) : chatHtml(r, { de: false, um: false })}</div></div>`; }
+      finally { ME = alt; } }).join("")}</div></div>`;
+  }
+  function verdrahteLeitung() {
+    const b = id => $("#" + id);
+    if (b("beamer")) b("beamer").onclick = () => { BEAMER = !BEAMER; HANDYS = false; zeichne(); };
+    if (b("handys")) b("handys").onclick = () => { HANDYS = !HANDYS; BEAMER = false; zeichne(); };
+    if (b("start")) b("start").onclick = () => upd({ phase: "spiel", start: Date.now(), "teams/r": E.start(S, SP()) });
+    if (b("ende")) b("ende").onclick = () => { if (confirm("Runde beenden? Der Chat bleibt erhalten.")) upd({ phase: "ende" }); };
+    $$("[data-gstufe]").forEach(x => x.onclick = () => schreib("stufe", x.dataset.gstufe));
+    $$("[data-vok]").forEach(x => x.onclick = () => schreib("vokale", x.dataset.vok === "1" ? null : false));
+    $$("[data-cohost]").forEach(x => x.onclick = () => schreib(`spieler/${x.dataset.cohost}/cohost`, SP()[x.dataset.cohost].cohost ? null : true));
+    $$("[data-weg]").forEach(x => x.onclick = () => { if (confirm("Person entfernen?")) schreib(`spieler/${x.dataset.weg}`, null); });
+    $$("[data-aus]").forEach(x => x.onclick = () => schreib(`spieler/${x.dataset.aus}/aus`, SP()[x.dataset.aus].aus ? null : true));
+    $$("[data-hand-weg]").forEach(x => x.onclick = () => schreib(`spieler/${x.dataset.handWeg}/hand`, null));
+    $$("[data-dran]").forEach(x => x.onclick = () => gRef(CODE).child("teams/r/akteur").set(x.dataset.dran).catch(e => fehler(e)));
+    if (b("auto")) b("auto").onclick = automatisch;
+    $$("[data-lt-timer]").forEach(x => x.onclick = () => { const m = +x.dataset.ltTimer; schreib("timer", m ? { ende: Date.now() + m * 60000, text: m + " Minuten" } : null); });
+    if (b("senden")) b("senden").onclick = () => { const t = b("msg").value.trim(); if (t) { schreib("nachricht", { text: t, ts: Date.now() }); b("msg").value = ""; } };
+    if (b("msgweg")) b("msgweg").onclick = () => schreib("nachricht", null);
+    if (b("reload")) b("reload").onclick = () => { if (confirm("Alle Geräte neu laden?")) schreib("reload", Date.now()); };
+  }
+
+  /* ---------- Protokoll ---------- */
+  function protokollKnopf() { return `<div class="btnreihe nodruck" style="margin-top:10px">${darfSteuern() ? `<button class="btn" id="nochmal">🔁 Noch ein Chat – andere Wege ausprobieren</button>` : ""}<button class="btn zwei" id="drucken">🖨️ Chat drucken / als PDF</button><button class="btn zwei" id="kopieren">📋 Text kopieren</button></div>`; }
+  /* Neuer Durchgang: Punkte bleiben, eine andere Person beginnt */
+  function nochmal() {
+    const alt = R() || G.teams.r, n = (alt.runde || 1) + 1, l = E.reihe(SP());
+    const r = E.start(S, SP()); r.punkte = alt.punkte || {}; r.runde = n; r.zug = (n - 1) % Math.max(1, l.length); r.akteur = E.naechster(r, SP());
+    salatKey = ""; letzteLaenge = 0;
+    if (MODUS === "solo") { r.akteur = "ich"; r.zug = 0; G.teams.r = r; zeichne(); return; }
+    upd({ phase: "spiel", "teams/r": r });
+  }
+  function protokollText() {
+    const r = R() || G.teams.r;
+    return [S.titel + " · " + S.titelFa, ""].concat(E.arr(r.verlauf).map(e => { const o = S.knoten[e.k].optionen.find(x => x.id === e.o); return `${name(e.p)}: ${o.fa}\n   (${o.de})`; })).join("\n");
+  }
+  function verdrahteProt() {
+    const d = $("#drucken"); if (d) d.onclick = () => window.print();
+    const nm = $("#nochmal"); if (nm) nm.onclick = nochmal;
+    const k = $("#kopieren"); if (k) k.onclick = async () => { try { await navigator.clipboard.writeText(protokollText()); toast("Kopiert!"); } catch (e) { toast("Kopieren nicht möglich."); } };
+  }
+
+  /* =====================================================================
+     SPIELER (live)
+     ===================================================================== */
+  async function startSpieler() {
+    if (!(await F.brauchtCode())) return;
+    const s = F.sitzung();
+    let lk = null; try { lk = localStorage.getItem("farsi_lk_spieler"); if (!lk) { lk = "lk" + Math.random().toString(36).slice(2, 7); localStorage.setItem("farsi_lk_spieler", lk); } } catch (e) { lk = "lk0"; }
+    ME = s ? { id: s.code, name: s.name || s.code } : { id: lk, name: "Lehrkraft" };
+    if (CODE) beitreten(CODE); else if (qs.get("neu") && s) zeichneNeu(); else zeichneBeitritt();
+  }
+  function zeichneBeitritt(meld) {
+    app().innerHTML = `<div class="karte" style="margin-top:20px;max-width:520px;margin-inline:auto;text-align:center"><div style="font-size:3rem">💬</div><h2 style="margin:0">Wortsalat-Chat</h2>
+      <p>Gib den <b>Spielcode</b> ein, den deine Lehrkraft zeigt.</p>
+      <div style="display:flex;gap:8px;justify-content:center"><input class="feld" id="code" inputmode="numeric" maxlength="4" placeholder="0000" style="max-width:140px;text-align:center;font-size:1.4rem;letter-spacing:.2em"><button class="btn" id="los">Beitreten</button></div>
+      <p class="klein" style="color:var(--granat)">${meld || ""}</p><p class="klein"><a href="?solo=1">🎧 Lieber allein üben</a></p></div>`;
+    $("#los").onclick = () => beitreten(F.normCode($("#code").value).replace(/\D/g, ""));
+  }
+  async function beitreten(c) {
+    if (!/^\d{4}$/.test(c || "")) return zeichneBeitritt("Der Code hat vier Ziffern.");
+    let g; try { g = (await F.mitTimeout(gRef(c).once("value"), 8000)).val(); } catch (e) { return fehler(e, true); }
+    if (!g || !g.szenario) return zeichneBeitritt("Diesen Spielcode gibt es nicht.");
+    CODE = c; history.replaceState(null, "", "?code=" + c);
+    if (!(g.spieler || {})[ME.id]) await gRef(c).child("spieler/" + ME.id).set({ name: ME.name, ts: Date.now() }).catch(e => fehler(e, true));
+    LT.verbindung(gRef(c).child("spieler/" + ME.id));
+    hoere(c);
+  }
+  function zeichneSpieler() {
+    if (!G) return zeichneBeitritt("Diese Runde wurde beendet.");
+    if (!S) return;
+    $("#kopfTitel").textContent = S.titel;
+    const ich = SP()[ME.id];
+    if (!ich) { app().innerHTML = `<div class="karte" style="margin-top:20px">Du bist nicht (mehr) in dieser Runde. <button class="btn klein" id="nochmal">Erneut beitreten</button></div>`; $("#nochmal").onclick = () => beitreten(CODE); return; }
+    $("#kopfInfo").textContent = ich.name;
+    const r = R();
+    let h = hinweise();
+    if (G.phase === "lobby" || !r) {
+      h += `<div class="karte" style="margin-top:14px"><h2 style="margin-top:0">${S.icon} ${esc(S.titel)}</h2><p>${esc(S.beschreibung)}</p>
+        <div class="meldung" style="font-weight:400;background:var(--lapis-hell);border-color:#c9d8e6"><b>So geht's:</b> Wer dran ist, bekommt einen Wortsalat und baut daraus eine Nachricht. Oben stehen Ideen (Frage, Vorschlag …). Mit ➤ abschicken – das Spiel prüft. Danach antwortet die nächste Person.</div>
+        <p>Du bist dabei als <b>${esc(ich.name)}</b>. ${G.host === ME.id ? "Du leitest diese Runde 👑" : "⏳ Gleich geht es los …"}</p></div>`;
+      if (G.host === ME.id && G.phase === "lobby") h += `<div class="lv-kopf"><div><div class="klein muted">Spielcode für die anderen</div><div class="lv-code">${CODE}</div></div><button class="btn" id="start" ${E.reihe(SP()).length >= 2 ? "" : "disabled"}>▶ Chat starten</button></div>` + lobbyHtml();
+      LT.render(app(), h); if (G.host === ME.id) verdrahteLeitung();
+      return;
+    }
+    const K = S.knoten[r.knoten], vorbei = K.ende || G.phase === "ende", dran = !vorbei && r.akteur === ME.id;
+    h += punkteHtml(r) + (vorbei ? "" : `<p style="text-align:right;margin:4px 0"><button class="btn zwei klein" id="hand">${ich.hand ? "✋ Hilfe gerufen – zurücknehmen" : "✋ Hilfe rufen"}</button></p>`);
+    h += chatHtml(r) + (dran ? komponierHtml(r, false) : "") + (vorbei ? protokollKnopf() : "");
+    if (!vorbei && darfSteuern()) h += steuerHtml(r);
+    LT.render(app(), h); LT.nachRender(); scrollChat();
+    if (dran) verdrahteKomp(r);
+    if (darfSteuern()) verdrahteLeitung();
+    verdrahteProt();
+    const hb = $("#hand"); if (hb) hb.onclick = () => schreib(`spieler/${ME.id}/hand`, ich.hand ? null : Date.now());
+    letzteLaenge = E.arr(r.verlauf).length;
+  }
+
+  function zeichne() { MODUS === "solo" ? zeichneSolo() : MODUS === "leitung" ? zeichneLeitung() : zeichneSpieler(); }
+  window.CHAT_APP = { zeichne, get G() { return G; }, get S() { return S; } };
+  if (MODUS !== "solo") F.initFB();
+  MODUS === "solo" ? startSolo() : MODUS === "leitung" ? startLeitung() : startSpieler();
+})();
+</script>
+</body>
+</html>

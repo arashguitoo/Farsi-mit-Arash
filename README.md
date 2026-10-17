@@ -214,3 +214,20 @@ Zwischen den Gesprächen erzählen kurze Episoden, was passiert; am Ende gibt es
 - **Co-Host in Lehrkraft-Runden:** 👑 in der Lobby – die Person prüft Stufe 3, darf überspringen und „Dran ist“ ändern.
 - **Szenario mit Grammatik-Fokus:** „Wenn das Wetter mitspielt …“ (Lektion 22, reale Bedingungen, ≈40 Min.).
 - Firebase: `live/gespraech/{code}`; Regeln aus `firebase-regeln.json` (TN dürfen eigene Runden anlegen, wenn ihr Code existiert).
+
+### Live: Wortsalat-Chat (`live-chat.html`)
+Gruppenchat im WhatsApp-Stil für 2–8 Personen (oder allein). Wer dran ist, bekommt ca. 28 persische Wort-Kacheln
+(alle Wörter der möglichen Nachrichten + Ablenkungswörter) und baut daraus eine Nachricht. Oben stehen die Möglichkeiten
+(❓ Frage, 💡 Vorschlag, 👍 Zusage, 👎 Absage, ℹ️ Info). Je nach gesendeter Nachricht geht der Chat anders weiter.
+- **Automatische Korrektur:** genau richtig → gesendet (10 / 6 / 3 Punkte je nach Versuch); gleiche Wörter, falsche
+  Reihenfolge → „nur die Reihenfolge noch nicht“; ein bis zwei Wörter daneben → „Fast!“; sonst „passt hier nicht“.
+  Manche Nachrichten erlauben mehrere Wortstellungen (`alt`). 💡 Tipp: 1. Bedeutungen zeigen, 2. nächstes Wort setzen.
+- **Stufen:** leicht (Ideen mit deutscher Bedeutung) / schwer (nur die Absicht, z. B. „❓ Frage“). Vokale an/aus.
+- **Lehrkraft:** 🖥️ Leinwand, 📱 Geräte ansehen, „Dran ist“ ändern, ⏸ Pause, ⏭ Zug überspringen (das Spiel schreibt),
+  Timer, Nachricht, alle neu laden. Am Ende: 🔁 noch ein Chat (Punkte bleiben, andere Person beginnt), drucken, kopieren.
+- **Ohne Lehrkraft:** „👥 Eigene Runde starten“ (Host 👑) oder **„🎧 Allein üben“** (`?solo=1`, ohne Firebase):
+  drei Chat-Freunde (Nima, Sara, Kian) antworten automatisch und zufällig.
+- **Szenarien:** `assets/chats/*.js`, Liste in `assets/chats/index.js`. Beispiel: „Was machen wir am Samstag?“
+  (Kino / Park / Kochen, 5–9 Nachrichten pro Chat). Format: `knoten` mit `aufgabe`, `optionen` (`art`, `fa`, `alt`, `de`,
+  `um` = Umgangssprache, `weiter`) und `extra` (Ablenkungswörter).
+- Firebase: `live/chat/{code}` (keine Regeländerung nötig).

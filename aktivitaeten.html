@@ -54,7 +54,10 @@ const AKTIVITAETEN = {
       tags: ["2er-Teams", "lang 45 / kurz 25 Min.", "leicht", "mit Wörterbuch"] },
     { id: "gespraech", datei: "live-gespraech.html", selbst: true, icon: "🗣️", titel: "Gesprächs-Simulation", fa: "گُفت‌وگو",
       text: "Reihum sprechen: Wer dran ist, sagt einen Satz auf Persisch, die anderen reagieren mit Ja, Nein oder Vielleicht – und die Geschichte verzweigt sich. Sechs Szenarien: Essen, WG, Arbeit, Urlaub, Tag planen, Gäste. Drei Stufen: Auswahl, Satzbausteine, frei sprechen. Am Ende gibt es eure Geschichte als Protokoll.",
-      tags: ["2–8 Personen", "30–60 Min.", "3 Stufen", "6 Szenarien"] }
+      tags: ["2–8 Personen", "30–60 Min.", "3 Stufen", "6 Szenarien"] },
+    { id: "chat", datei: "live-chat.html", selbst: true, solo: true, icon: "💬", titel: "Wortsalat-Chat", fa: "چَتِ گُروهی",
+      text: "Ein Gruppenchat wie in WhatsApp: Wer dran ist, bekommt einen Wortsalat aus ca. 30 persischen Wörtern und baut daraus eine Nachricht – eine Frage, einen Vorschlag, eine Zusage. Das Spiel korrigiert automatisch, und je nach Nachricht geht der Chat anders weiter. Auch allein spielbar.",
+      tags: ["2–8 Personen", "oder allein", "automatische Korrektur", "ca. 10 Min. pro Chat"] }
   ],
   zusatz: [
     { icon: "✍️", titel: "Persisch schreiben – Übungsheft", fa: "تمرینِ خوش‌نویسی", text: "Handschrift üben zu Lektion 1: alle Buchstaben mit ihren Formen, Nachspuren und Wörter. Zum Ausdrucken (9 Seiten A4).",
@@ -74,7 +77,8 @@ const mitQ = (datei, q) => datei + (datei.includes("?") ? "&" : "?") + q;
     <div class="klein">${esc(a.text)}</div><div class="tags"><span class="tag live">LIVE</span>${a.tags.map(t => `<span class="tag">${esc(t)}</span>`).join("")}</div>
     <div class="unten">${lehrkraft ? `<a class="btn" href="${mitQ(a.datei, (a.leitung || "?leitung=1").slice(1))}" style="text-decoration:none">▶ Leitung starten</a>`
       : `<div class="beitritt"><input class="feld" data-code="${a.id}" inputmode="numeric" maxlength="4" placeholder="Code"><button class="btn" data-los="${a.id}" data-datei="${a.datei}">Beitreten</button></div>
-      ${a.selbst ? `<a class="btn zwei klein" href="${mitQ(a.datei, "neu=1")}" style="text-decoration:none" title="Ohne Lehrkraft spielen – du bist Host">👥 Eigene Runde starten</a>` : ""}`}</div></div>`).join("");
+      ${a.selbst ? `<a class="btn zwei klein" href="${mitQ(a.datei, "neu=1")}" style="text-decoration:none" title="Ohne Lehrkraft spielen – du bist Host">👥 Eigene Runde starten</a>` : ""}`}
+      ${a.solo ? `<a class="btn zwei klein" href="${mitQ(a.datei, "solo=1")}" style="text-decoration:none" title="Allein üben – die anderen im Chat antworten automatisch">🎧 Allein üben</a>` : ""}</div></div>`).join("");
   document.querySelectorAll("[data-los]").forEach(b => b.onclick = () => {
     const c = F.normCode(document.querySelector(`[data-code="${b.dataset.los}"]`).value).replace(/\D/g, "");
     location.href = c ? mitQ(b.dataset.datei, "code=" + c) : b.dataset.datei;
