@@ -215,6 +215,20 @@ Zwischen den Gesprächen erzählen kurze Episoden, was passiert; am Ende gibt es
 - **Szenario mit Grammatik-Fokus:** „Wenn das Wetter mitspielt …“ (Lektion 22, reale Bedingungen, ≈40 Min.).
 - Firebase: `live/gespraech/{code}`; Regeln aus `firebase-regeln.json` (TN dürfen eigene Runden anlegen, wenn ihr Code existiert).
 
+### Live: Quiz (`live-quiz.html`)
+Kahoot-artiges Quiz für die ganze Gruppe. Lehrkraft: „▶ Leitung starten“ → Kurz- oder Langfassung, Zeit pro Frage
+(20/30/45 Sek. oder ohne), Spielcode + QR-Code auf der Leinwand. TN öffnen `live-quiz.html` (oder scannen den QR-Code)
+und geben nur **Spielcode + Vornamen** ein – kein Zugangscode nötig (gut für die erste Sitzung).
+- Fragetypen: Auswahl, wahr/falsch, „Tippe auf …“ (Satzglied antippen), Umfrage (ohne richtige Antwort, für Reflexion).
+- Punkte: richtig = 500–1000 je nach Schnelligkeit (ohne Zeit: 1000). Auflösung automatisch, wenn alle geantwortet haben
+  oder die Zeit um ist; sonst „⏩ Auflösen“. Leertaste = weiter. Nach jeder Frage Erklärung + Kasten „Und im Persischen?“.
+- 📊 Zwischenstand jederzeit, am Ende Podest, Rangliste und **Auswertung pro Frage** (% richtig, drucken).
+- „⚙️ Steuerung“ zeigt, wer schon geantwortet hat, und „Alle Geräte neu laden“. Allein üben: `live-quiz.html?solo=1`.
+- Quiz „Sprache verstehen“ (`assets/quiz/sprache-verstehen.js`): Satzglieder, Präpositionen, Wechselpräpositionen,
+  Partizip/Aktiv/Passiv, erster Blick aufs Persische (33 Fragen, Kurzfassung 19 = `kurz:true`).
+  Weitere Quizze: neue Datei nach diesem Muster, im `<script>`-Kopf von `live-quiz.html` einbinden, Aufruf mit `?quiz=<id>`.
+- Firebase: `live/quiz/{code}` (keine Regeländerung nötig).
+
 ### Live: Wortsalat-Chat (`live-chat.html`)
 Gruppenchat im WhatsApp-Stil für 2–8 Personen (oder allein). Wer dran ist, bekommt ca. 28 persische Wort-Kacheln
 (alle Wörter der möglichen Nachrichten + Ablenkungswörter) und baut daraus eine Nachricht. Oben stehen die Möglichkeiten
