@@ -251,6 +251,11 @@ Zwei Spiele mit dem Wortschatz (`ws-*.json`) aus **frei wählbaren Lektionen all
   z. B. Menschen & Familie, Essen & Trinken, Orte, Berufe …). Alle werfen gleichzeitig passende Wörter aus ihren 8 Handkarten:
   richtig +1, falsch −1. Runde endet, wenn alle „nichts mehr“ gemeldet haben oder nichts Passendes mehr da ist; dann wird gezeigt,
   was noch gepasst hätte, und die Hände werden aufgefüllt. Geprüft wird über das Feld `kat` im Wortschatz.
+- **🔤 Buchstaben-Karte** (`?spiel=buchstabe`, Alphabetisierung L1): wie „Karte in die Mitte“, aber in der Mitte liegt ein
+  **Buchstabe** (groß, mit Name und Laut). Passend sind Wörter, in denen er vorkommt – oder (Regel „Wortanfang“) die mit ihm
+  beginnen. „Bis Station …“ legt fest, welche Buchstaben (aus `01-alphabet.json`) schon gelernt sind; es kommen nur Wörter vor,
+  die ganz aus diesen Buchstaben bestehen (Beispielwörter aus L1 + Wortschatz der gewählten Lektionen; آ zählt als ا).
+  Für echte Leseübung: Stufe „schwer“ (ohne Bedeutung) oder „ohne Hilfe“ (nur Schrift, keine Umschrift).
 - **Stufen:** leicht / schwer (Umschrift bzw. deutsche Bedeutung auf den Handkarten) / **ohne Hilfe**:
   keine Umschrift, keine Bilder, keine deutsche Bedeutung. Im Duell wird Persisch → Deutsch **frei getippt**
   (tolerant: Artikel, Groß/klein, ae/ä, 1 Tippfehler, „Lehrer/in“ = „Lehrerin“); Deutsch → Persisch bleibt Auswahl ohne Umschrift.

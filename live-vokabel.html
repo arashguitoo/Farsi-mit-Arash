@@ -102,7 +102,25 @@ window.VOKABEL_ENGINE = (function () {
     }));
     const karteKats = Object.keys(byKat).filter(k => KATEGORIEN[k] && byKat[k].length >= 3);
     const karteKeys = keys.filter(k => karteKats.includes(W[k].kat));
-    return { W, keys, byKat, karteKats, karteKeys };
+    return { W, keys, byKat, karteKats, karteKeys, passt: (k, kat) => !!W[k] && W[k].kat === kat, modus: "thema" };
+  }
+  /* --- Alphabetisierung: Buchstaben statt Themen --- */
+  const normFa = x => String(x || "").replace(/[\u064B-\u0652\u0670\u0654\u0655\u200c\u200d\s.,!?؟،:;«»()\-–…"'„“]/g, "")
+    .replace(/[آأإ]/g, "ا").replace(/ي/g, "ی").replace(/ك/g, "ک").replace(/ة/g, "ه").replace(/ؤ/g, "و").replace(/ئ/g, "ی").replace(/ء/g, "");
+  /* woerter: [{id, w:{fa,tr,de,emoji}}], buchst: [{fa,name,laut}] (nur diese Buchstaben gelten als gelernt) */
+  function buchstabenPool(woerter, buchst, regel) {
+    const erlaubt = new Set(buchst.map(b => b.fa)), W = {}, keys = [], gesehen = new Set();
+    woerter.forEach(({ id, w }) => {
+      if (!w || !w.fa || !w.de) return;
+      const n = normFa(w.fa); if (n.length < 2 || gesehen.has(n)) return;
+      if (![...n].every(c => erlaubt.has(c))) return;   /* nur Wörter aus schon gelernten Buchstaben */
+      gesehen.add(n); W[id] = w; keys.push(id);
+    });
+    const passt = (k, b) => { const n = normFa((W[k] || {}).fa); return regel === "anfang" ? n[0] === b : n.includes(b); };
+    const byKat = {}; buchst.forEach(b => { byKat[b.fa] = keys.filter(k => passt(k, b.fa)); });
+    const karteKats = buchst.map(b => b.fa).filter(b => byKat[b].length >= 2);
+    const info = {}; buchst.forEach(b => { info[b.fa] = b; });
+    return { W, keys, byKat, karteKats, karteKeys: keys, passt, modus: "buchstabe", info, regel };
   }
   /* --- Spiel 1: Wort-Duell --- */
   const duellHand = (P, seed, n = 5) => mischen(P.keys, rng(seed)).slice(0, n);
@@ -130,14 +148,14 @@ window.VOKABEL_ENGINE = (function () {
     return hand;
   }
   function katVorschlaege(P, haende, seed, n = 3) {
-    const z = {}; haende.forEach(h => h.forEach(k => { const kat = P.W[k] && P.W[k].kat; if (P.karteKats.includes(kat)) z[kat] = (z[kat] || 0) + 1; }));
+    const z = {}; haende.forEach(h => h.forEach(k => P.karteKats.forEach(kat => { if (P.passt(k, kat)) z[kat] = (z[kat] || 0) + 1; })));
     const r = rng(seed);
     const gut = mischen(Object.keys(z).filter(k => z[k] >= 2), r);
     const rest = mischen(P.karteKats.filter(k => !gut.includes(k)), r);
     return gut.concat(rest).slice(0, n);
   }
   const liste = s => String(s || "").split("|").filter(Boolean);
-  return { KATEGORIEN, KAT_ICON, hash, rng, mischen, pool, duellHand, optionen, richtungFuer, karteHand, katVorschlaege, liste };
+  return { KATEGORIEN, KAT_ICON, hash, rng, mischen, pool, buchstabenPool, normFa, duellHand, optionen, richtungFuer, karteHand, katVorschlaege, liste };
 })();
 
 /* ===================== Seite ===================== */
@@ -146,11 +164,13 @@ window.VOKABEL_ENGINE = (function () {
   const qs = new URLSearchParams(location.search);
   const SPIELE = {
     duell: { titel: "Wort-Duell", icon: "🎯", text: "Eine Person wirft ein Wort in die Runde – die anderen finden unter mehreren Wörtern die Übersetzung. Dann ist die nächste Person dran, und die Richtung wechselt: einmal Deutsch → Persisch, einmal Persisch → Deutsch." },
+    buchstabe: { titel: "Buchstaben-Karte", icon: "🔤", text: "Für die Alphabetisierung (Lektion 1): Eine Person legt einen Buchstaben in die Mitte. Alle werfen Wörter aus ihrer Hand, in denen der Buchstabe vorkommt (oder mit dem sie beginnen) – richtig +1, falsch −1. Nur Wörter aus schon gelernten Buchstaben." },
     karte: { titel: "Karte in die Mitte", icon: "🃏", text: "Eine Person legt eine Themenkarte in die Mitte (z. B. „Familie“). Alle werfen so schnell wie möglich passende Wörter aus ihrer Hand dazu – richtig +1, falsch −1." }
   };
   const MODUS = qs.get("leitung") ? "leitung" : "spieler";
   const istLK = MODUS === "leitung";
-  let SPIEL = qs.get("spiel") === "karte" ? "karte" : "duell";
+  let SPIEL = ["karte", "buchstabe"].includes(qs.get("spiel")) ? qs.get("spiel") : "duell";
+  const istKarte = () => SPIEL === "karte" || SPIEL === "buchstabe";
   let CODE = (qs.get("code") || "").replace(/\D/g, "") || null;
   let G = null, REF = null, ME = null, P = null, POOL_LEKS = "", INDEX = null, TISCH_ANSICHT = null;
   const app = () => $("#app");
@@ -170,12 +190,36 @@ window.VOKABEL_ENGINE = (function () {
 
   /* ---------- Wortschatz laden ---------- */
   async function index() { return INDEX || (INDEX = await F.ladeJSON("lektionen/index.json")); }
-  async function ladePool(leks) {
-    if (P && POOL_LEKS === leks) return P;
+  const poolSchluessel = (leks, o) => leks + "|" + (o && o.spiel === "buchstabe" ? "b" + o.bis + o.regel : "");
+  let ALPHA = null;
+  /* Buchstaben aus Lektion 1 (Station für Station) + alle Beispielwörter darin */
+  async function alphabet() {
+    if (ALPHA) return ALPHA;
+    const ix = await index(), l = ix.lektionen.find(x => x.id === "01"), d = await F.ladeJSON("lektionen/" + l.datei);
+    const stationen = [], woerter = [];
+    d.stationen.forEach((st, si) => {
+      const b = []; st.karten.forEach(k => (k.typ === "buchstaben" ? k.buchstaben : []).forEach(x => { if (!x.fa || x.fa[0] === "ـ") return; const fa = x.fa === "آ" ? "ا" : x.fa; if (!b.some(y => y.fa === fa) && !stationen.some(s => s.b.some(y => y.fa === fa))) b.push({ fa, name: x.fa === "آ" ? "Alef" : x.name, laut: x.laut, nameFa: x.nameFa }); }));
+      if (b.length) stationen.push({ id: st.id, titel: st.titel, b });
+      let n = 0; (function such(o) { if (!o || typeof o !== "object") return; if (Array.isArray(o)) return o.forEach(such);
+        if (typeof o.fa === "string" && typeof o.de === "string" && o.tr && !/[ـ]/.test(o.fa) && o.fa.trim().split(/\s+/).length === 1 && !/Vokal|Lücke|Zeichen|Buchstabe|Form|Laut|Endung|ohne|mit /i.test(o.de)) woerter.push({ id: "a" + si + "." + (n++), w: { fa: o.fa.replace(/[.!?؟]/g, ""), tr: o.tr, de: o.de, emoji: o.emoji } });
+        Object.values(o).forEach(such); })(st);
+    });
+    return (ALPHA = { stationen, woerter });
+  }
+  async function ladePool(leks, o) {
+    o = o || (G ? { spiel: G.spiel, bis: G.bis, regel: G.regel } : { spiel: SPIEL });
+    const key = poolSchluessel(leks, o);
+    if (P && POOL_LEKS === key) return P;
     const ix = await index(), ids = String(leks).split(",").filter(Boolean);
     const daten = await Promise.all(ids.map(async id => { const l = ix.lektionen.find(x => x.id === id); if (!l || !l.wortschatz) return { id, woerter: [] };
       try { const d = await F.ladeJSON("lektionen/" + l.wortschatz); return { id, woerter: d.woerter }; } catch (e) { return { id, woerter: [] }; } }));
-    P = E.pool(daten); POOL_LEKS = leks; return P;
+    if (o.spiel === "buchstabe") {
+      const A = await alphabet(), bis = Math.max(1, Math.min(o.bis || A.stationen.length, A.stationen.length));
+      const buchst = A.stationen.slice(0, bis).flatMap(s => s.b);
+      const w = A.woerter.concat(daten.flatMap(d => d.woerter.map((x, i) => ({ id: d.id + ":" + i, w: x }))));
+      P = E.buchstabenPool(w, buchst, o.regel);
+    } else P = E.pool(daten);
+    POOL_LEKS = key; return P;
   }
   function hoere(c) {
     if (REF) REF.off();
@@ -184,7 +228,7 @@ window.VOKABEL_ENGINE = (function () {
       G = s.val();
       if (G && G.spiel) SPIEL = G.spiel;
       if (MODUS !== "leitung") LT.pruefeNeuLaden(G);
-      if (G && G.leks && POOL_LEKS !== G.leks) { try { await ladePool(G.leks); } catch (e) { return fehler(e, true); } }
+      if (G && G.leks && POOL_LEKS !== poolSchluessel(G.leks, G)) { try { await ladePool(G.leks, G); } catch (e) { return fehler(e, true); } }
       if (darfLeiten()) nachzuegler();
       if (LT.tipptGerade(zeichne)) return;
       zeichne();
@@ -212,6 +256,8 @@ window.VOKABEL_ENGINE = (function () {
     return `<button class="wk ${extra}" ${attr}>${z.em && w.emoji ? `<span class="em">${w.emoji}</span>` : ""}${z.fa ? `<span class="fa">${esc(w.fa)}</span>` : ""}${z.fa && z.tr && w.tr && !ohneTr() ? `<span class="tr">${esc(w.tr)}</span>` : ""}${z.de ? `<span class="de">${esc(w.de)}</span>` : ""}</button>`;
   }
   function katKarte(kat, attr = "") {
+    if (P && P.modus === "buchstabe") { const b = P.info[kat] || {};
+      return `<button class="kat-karte" ${attr} style="min-width:120px"><span class="fa" style="font-size:3.4rem;line-height:1.5">${esc(kat)}</span>${ohneHilfe() ? "" : `<b>${esc(b.name || "")}</b><span style="display:block;font-size:.85rem;opacity:.85">${esc(b.laut || "")}</span>`}</button>`; }
     return `<button class="kat-karte" ${attr}><span style="font-size:1.6rem">${E.KAT_ICON[kat] || "🃏"}</span><span class="fa">${esc(E.KATEGORIEN[kat] || "")}</span>${ohneHilfe() ? "" : `<b>${esc(kat)}</b>`}</button>`;
   }
   function punkteHtml(t, dran) {
@@ -228,8 +274,8 @@ window.VOKABEL_ENGINE = (function () {
   const meinTisch = () => { const s = (G.spieler || {})[ME.id]; return s && s.tisch; };
   const seedT = (tid, x) => CODE + "|" + tid + "|" + x;
   function tischNeu(sp, tid) {
-    const t = { sp: sp.join("|"), zug: 0, punkte: {}, phase: SPIEL === "karte" ? "legen" : "werfen" };
-    if (SPIEL === "karte") { t.haende = {}; let alle = []; sp.forEach(id => { const h = E.karteHand(P, seedT(tid, id + "|0"), 8, alle); alle = alle.concat(h); t.haende[id] = h.join("|"); }); }
+    const t = { sp: sp.join("|"), zug: 0, punkte: {}, phase: istKarte() ? "legen" : "werfen" };
+    if (istKarte()) { t.haende = {}; let alle = []; sp.forEach(id => { const h = E.karteHand(P, seedT(tid, id + "|0"), 8, alle); alle = alle.concat(h); t.haende[id] = h.join("|"); }); }
     return t;
   }
   /* Tische bilden: Größe g, ein einzelner Rest kommt zum letzten Tisch */
@@ -252,7 +298,7 @@ window.VOKABEL_ENGINE = (function () {
         if (!ts.length) break;
         const [tid] = ts[0];
         await tRef(tid).transaction(t => { if (!t) return t; const l = E.liste(t.sp); if (l.includes(id)) return t; l.push(id); t.sp = l.join("|");
-          if (SPIEL === "karte") { t.haende = t.haende || {}; t.haende[id] = E.karteHand(P, seedT(tid, id + "|" + (t.zug || 0)), 8).join("|"); } return t; });
+          if (istKarte()) { t.haende = t.haende || {}; t.haende[id] = E.karteHand(P, seedT(tid, id + "|" + (t.zug || 0)), 8).join("|"); } return t; });
         await gRef(CODE).child(`spieler/${id}/tisch`).set(tid);
       }
     } catch (e) { console.error(e); }
@@ -334,7 +380,7 @@ window.VOKABEL_ENGINE = (function () {
     const sp = E.liste(t.sp), zug = t.zug || 0, leger = sp.length ? sp[zug % sp.length] : null;
     const haende = {}; sp.forEach(id => { haende[id] = E.liste((t.haende || {})[id]); });
     const m = t.mitte || null, gelegt = m && Array.isArray(m.gelegt) ? m.gelegt.filter(Boolean) : m && m.gelegt ? Object.values(m.gelegt) : [];
-    const offen = m ? sp.filter(id => online(id)).reduce((n, id) => n + haende[id].filter(k => P.W[k] && P.W[k].kat === m.kat).length, 0) : 0;
+    const offen = m ? sp.filter(id => online(id)).reduce((n, id) => n + haende[id].filter(k => P.passt(k, m.kat)).length, 0) : 0;
     const fertigAlle = m && sp.filter(id => online(id)).every(id => (m.fertig || {})[id]);
     const ende = !!m && (m.aus || offen === 0 || fertigAlle);
     return { sp, zug, leger, haende, m, gelegt, offen, ende };
@@ -345,21 +391,21 @@ window.VOKABEL_ENGINE = (function () {
     if (!Z.m) {
       if (ich === Z.leger) {
         const v = E.katVorschlaege(P, Object.values(Z.haende), seedT(tid, "k" + Z.zug));
-        h += `<div class="karte" style="text-align:center"><h3 style="margin-top:0">🃏 Du bist dran: Lege eine Themenkarte in die Mitte!</h3><div class="kat-wahl">${v.map(kat => katKarte(kat, nurSehen ? "disabled" : `data-lege="${tid}|${esc(kat)}"`)).join("")}</div></div>`;
+        h += `<div class="karte" style="text-align:center"><h3 style="margin-top:0">🃏 Du bist dran: Lege ${P.modus === "buchstabe" ? "einen Buchstaben" : "eine Themenkarte"} in die Mitte!</h3><div class="kat-wahl">${v.map(kat => katKarte(kat, nurSehen ? "disabled" : `data-lege="${tid}|${esc(kat)}"`)).join("")}</div></div>`;
       } else h += `<div class="karte mitte"><p style="font-size:1.15rem">⏳ <b>${esc(name(Z.leger))}</b> legt gleich eine Karte in die Mitte …</p></div>`;
       h += `<div class="klein-h">Deine Hand</div><div class="karten">${meineHand.map(k => wort(k, { de: zeigDe }, "", "disabled")).join("")}</div>`;
       return h;
     }
     h += `<div class="mitte">${katKarte(Z.m.kat, "disabled")}<div class="karten" style="margin-top:12px">${Z.gelegt.map(g => `<div>${wort(g.k, { de: true }, g.ok ? "ok" : "falsch", "disabled")}<div class="klein">${esc(name(g.p))} ${g.ok ? "+1" : "−1"}</div></div>`).join("") || `<span class="muted">Noch nichts geworfen – los geht's!</span>`}</div></div>`;
     if (Z.ende) {
-      const verpasst = Z.sp.flatMap(id => Z.haende[id].filter(k => P.W[k] && P.W[k].kat === Z.m.kat));
+      const verpasst = Z.sp.flatMap(id => Z.haende[id].filter(k => P.passt(k, Z.m.kat)));
       h += `<div class="regel" style="text-align:center"><b>Runde vorbei!</b> ${verpasst.length ? `Hätte auch gepasst: ${verpasst.map(k => `<span class="fa">${esc(P.W[k].fa)}</span> (${esc(P.W[k].de)})`).join(" · ")}` : "Alle passenden Wörter liegen in der Mitte. 👏"}</div>`;
       if (!nurSehen && (ich === Z.leger || darfLeiten() || !online(Z.leger))) h += `<div class="btnreihe" style="justify-content:center"><button class="btn" data-naechste="${tid}">Nächste Karte ➜ ${esc(name(Z.sp[(Z.zug + 1) % Z.sp.length]))} legt</button></div>`;
       else h += `<p class="muted" style="text-align:center">⏳ ${esc(name(Z.leger))} macht weiter …</p>`;
       return h;
     }
     const istFertig = (Z.m.fertig || {})[ich];
-    h += `<div class="klein-h">Deine Hand – tippe auf alles, was zu ${ohneHilfe() ? "dieser Karte" : "„" + esc(Z.m.kat) + "“"} passt</div><div class="karten">${meineHand.map(k => wort(k, { de: zeigDe }, "", nurSehen || istFertig ? "disabled" : `data-werfe="${tid}|${k}"`)).join("") || `<span class="muted">Keine Karten mehr.</span>`}</div>
+    h += `<div class="klein-h">${P.modus === "buchstabe" ? `Deine Hand – tippe auf alle Wörter ${P.regel === "anfang" ? "<b>am Anfang</b> mit" : "mit"} <span class="fa" style="font-size:1.3rem">${esc(Z.m.kat)}</span>` : `Deine Hand – tippe auf alles, was zu ${ohneHilfe() ? "dieser Karte" : "„" + esc(Z.m.kat) + "“"} passt`}</div><div class="karten">${meineHand.map(k => wort(k, { de: zeigDe }, "", nurSehen || istFertig ? "disabled" : `data-werfe="${tid}|${k}"`)).join("") || `<span class="muted">Keine Karten mehr.</span>`}</div>
       ${nurSehen ? "" : `<div class="btnreihe" style="justify-content:center;margin-top:12px">${istFertig ? `<span class="muted">✔ Du hast „fertig“ gesagt – warte auf die anderen …</span>` : `<button class="btn zwei" data-fertig="${tid}">✋ Ich habe nichts Passendes mehr</button>`}${ich === Z.leger || darfLeiten() ? `<button class="btn zwei klein" data-aus="${tid}">⏹ Runde beenden</button>` : ""}</div>`}`;
     return h;
   }
@@ -372,15 +418,16 @@ window.VOKABEL_ENGINE = (function () {
     await tRef(tid).transaction(x => {
       if (!x || !x.mitte) return x ? undefined : x;
       const hand = E.liste((x.haende || {})[ME.id]); if (!hand.includes(k)) return;
-      const ok = P.W[k] && P.W[k].kat === x.mitte.kat;
+      const ok = P.passt(k, x.mitte.kat);
       x.haende[ME.id] = hand.filter(y => y !== k).join("|") || null;
       const g = Array.isArray(x.mitte.gelegt) ? x.mitte.gelegt.filter(Boolean) : Object.values(x.mitte.gelegt || {});
       g.push({ p: ME.id, k, ok }); x.mitte.gelegt = g;
       x.punkte = x.punkte || {}; x.punkte[ME.id] = (x.punkte[ME.id] || 0) + (ok ? 1 : -1);
       const log = arrV(x.log); log.push({ p: ME.id, k, ok }); x.log = log.slice(-300);
-      ergebnis = { ok, kat: P.W[k] && P.W[k].kat }; return x;
+      ergebnis = { ok, kat: P.W[k] && P.W[k].kat, b: x.mitte.kat }; return x;
     }).catch(e => fehler(e));
-    if (ergebnis && !ergebnis.ok) toast(`Passt nicht – das gehört zu „${ergebnis.kat}${E.KATEGORIEN[ergebnis.kat] ? " · " + E.KATEGORIEN[ergebnis.kat] : ""}“. −1`);
+    if (ergebnis && !ergebnis.ok && P.modus === "buchstabe") toast(`Passt nicht – ${P.regel === "anfang" ? "das Wort beginnt nicht mit" : "in diesem Wort steckt kein"} ${ergebnis.b}. −1`);
+    else if (ergebnis && !ergebnis.ok) toast(`Passt nicht – das gehört zu „${ergebnis.kat}${E.KATEGORIEN[ergebnis.kat] ? " · " + E.KATEGORIEN[ergebnis.kat] : ""}“. −1`);
   }
   async function karteNaechste(tid) {
     const Z0 = karteZustand(T(tid), tid);
@@ -389,7 +436,7 @@ window.VOKABEL_ENGINE = (function () {
       const sp = E.liste(x.sp), zug = (x.zug || 0) + 1, log = arrV(x.log);
       x.haende = x.haende || {};
       sp.forEach(id => { const h = E.liste(x.haende[id]);
-        h.filter(k => P.W[k] && P.W[k].kat === x.mitte.kat).forEach(k => log.push({ p: id, k, ok: false, verpasst: true }));
+        h.filter(k => P.passt(k, x.mitte.kat)).forEach(k => log.push({ p: id, k, ok: false, verpasst: true }));
         const neu = E.karteHand(P, seedT(tid, id + "|" + zug), 8 - h.length, h); x.haende[id] = h.concat(neu).slice(0, 8).join("|"); });
       x.log = log.slice(-300); x.mitte = null; x.zug = zug; return x;
     }).catch(e => fehler(e));
@@ -408,7 +455,7 @@ window.VOKABEL_ENGINE = (function () {
     $$("[data-aus]").forEach(b => b.onclick = () => tRef(b.dataset.aus).child("mitte/aus").set(true).catch(e => fehler(e)));
     $$("[data-naechste]").forEach(b => b.onclick = () => { b.disabled = true; karteNaechste(b.dataset.naechste); });
   }
-  const tischHtml = (tid, t, ich, nurSehen) => SPIEL === "karte" ? karteHtml(tid, t, ich, nurSehen) : duellHtml(tid, t, ich, nurSehen);
+  const tischHtml = (tid, t, ich, nurSehen) => istKarte() ? karteHtml(tid, t, ich, nurSehen) : duellHtml(tid, t, ich, nurSehen);
 
   /* ---------- Auswertung am Ende ---------- */
   function rangliste() {
@@ -434,7 +481,8 @@ window.VOKABEL_ENGINE = (function () {
     const ix = await index();
     let offen = () => true;
     if (!istLK) { try { const frei = await F.ladeFreigaben(), fort = await F.ladeAlleFortschritte(); offen = l => F.istOffen(l, frei, ix, fort); } catch (e) { } }
-    const leks = ix.lektionen.filter(l => l.wortschatz);
+    const leks = ix.lektionen.filter(l => l.wortschatz), A = SPIEL === "buchstabe" ? await alphabet() : null;
+    if (!AUSWAHL.size && SPIEL === "buchstabe") AUSWAHL.add("01");
     if (!AUSWAHL.size && !istLK) { const o = leks.filter(offen); (o.length ? o.slice(-3) : leks.slice(0, 3)).forEach(l => AUSWAHL.add(l.id)); }
     const zeichneListe = () => {
       $("#lks").innerHTML = ix.bereiche.map(b => { const L = leks.filter(l => l.bereich === b.id); if (!L.length) return ""; const n = L.filter(l => AUSWAHL.has(l.id)).length;
@@ -447,17 +495,22 @@ window.VOKABEL_ENGINE = (function () {
     };
     app().innerHTML = `<div class="karte" style="margin-top:20px"><h2 style="margin-top:0">🎲 Vokabelspiele${istLK ? "" : " – eigene Runde 👑"}</h2>
       <div class="klein-h">1 · Spiel</div><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px">${Object.entries(SPIELE).map(([id, s]) => `<label class="karte" style="cursor:pointer;margin:0;${SPIEL === id ? "border-color:var(--lapis);box-shadow:0 0 0 2px var(--lapis-hell)" : ""}"><input type="radio" name="spiel" value="${id}" ${SPIEL === id ? "checked" : ""}> <b>${s.icon} ${esc(s.titel)}</b><p class="klein" style="margin-bottom:0">${esc(s.text)}</p></label>`).join("")}</div>
-      <div class="klein-h">2 · Wortschatz aus welchen Lektionen? (<span id="anzLek">0</span> gewählt)</div><div id="lks"></div>
+      ${SPIEL === "buchstabe" ? `<div class="klein-h">2 · Welche Buchstaben kennt die Gruppe schon?</div><select class="feld" id="bis" style="max-width:520px">${A.stationen.map((st, i) => `<option value="${i + 1}" ${i === A.stationen.length - 1 ? "selected" : ""}>bis ${esc(st.titel)} · ${st.b.map(b => b.fa).join(" ")}</option>`).join("")}</select>
+        <div class="klein-h">Regel</div><div class="seg" id="regel"><button data-regel="drin" class="an">Buchstabe kommt im Wort vor</button><button data-regel="anfang">Wort beginnt mit dem Buchstaben</button></div>
+        <div class="klein-h">Wörter: Lektion 1 + gewählte Lektionen (<span id="anzLek">0</span>) – nur Wörter aus schon gelernten Buchstaben</div><div id="lks"></div>`
+      : `<div class="klein-h">2 · Wortschatz aus welchen Lektionen? (<span id="anzLek">0</span> gewählt)</div><div id="lks"></div>`}
       <div class="btnreihe" style="margin-top:14px"><button class="btn" id="anlegen">▶ Runde anlegen</button></div><p class="klein" id="poolInfo" style="color:var(--granat)"></p></div>`;
-    $$("[name=spiel]").forEach(r => r.onchange = () => { SPIEL = r.value; zeichneEinrichten(); });
+    $$("[name=spiel]").forEach(r => r.onchange = () => { SPIEL = r.value; if (SPIEL === "buchstabe" && !AUSWAHL.size) AUSWAHL.add("01"); zeichneEinrichten(); });
+    $$("#regel button").forEach(b => b.onclick = () => { $$("#regel button").forEach(x => x.classList.remove("an")); b.classList.add("an"); });
     zeichneListe();
     $("#anlegen").onclick = async () => {
       const leks = ix.lektionen.filter(l => AUSWAHL.has(l.id)).map(l => l.id).join(",");
       if (!leks) return $("#poolInfo").textContent = "Bitte mindestens eine Lektion wählen.";
       $("#anlegen").disabled = true;
-      try { await ladePool(leks); } catch (e) { return fehler(e, true); }
-      if (P.keys.length < 12 || (SPIEL === "karte" && P.karteKats.length < 3)) { $("#anlegen").disabled = false; return $("#poolInfo").textContent = SPIEL === "karte" ? "Zu wenige Themen in diesen Lektionen – bitte mehr Lektionen wählen." : "Zu wenige Wörter – bitte mehr Lektionen wählen."; }
-      const d = { erstellt: Date.now(), phase: "lobby", spiel: SPIEL, leks, stufe: "leicht", optionen: 4, groesse: 2, spieler: {} };
+      const extra = SPIEL === "buchstabe" ? { bis: +$("#bis").value, regel: $("#regel .an").dataset.regel } : {};
+      try { await ladePool(leks, Object.assign({ spiel: SPIEL }, extra)); } catch (e) { return fehler(e, true); }
+      if (P.keys.length < 12 || (istKarte() && P.karteKats.length < 3)) { $("#anlegen").disabled = false; return $("#poolInfo").textContent = SPIEL === "buchstabe" ? `Nur ${P.keys.length} Wörter mit diesen Buchstaben – bitte mehr Buchstaben oder Lektionen wählen.` : SPIEL === "karte" ? "Zu wenige Themen in diesen Lektionen – bitte mehr Lektionen wählen." : "Zu wenige Wörter – bitte mehr Lektionen wählen."; }
+      const d = Object.assign({ erstellt: Date.now(), phase: "lobby", spiel: SPIEL, leks, stufe: "leicht", optionen: 4, groesse: 2, spieler: {} }, extra);
       if (!istLK) { d.host = ME.id; d.spieler[ME.id] = { name: ME.name, ts: Date.now() }; }
       try { CODE = await LT.neueRunde(gRef, d); } catch (e) { return fehler(e, true); }
       history.replaceState(null, "", istLK ? `?leitung=1&code=${CODE}` : `?code=${CODE}`);
@@ -467,10 +520,10 @@ window.VOKABEL_ENGINE = (function () {
   }
   function lobbyEinstellungen() {
     const s = SPIELE[SPIEL];
-    return `<div class="karte"><h2 style="margin-top:0">${s.icon} ${esc(s.titel)}</h2><p class="klein muted">${P ? P.keys.length : "?"} Wörter aus ${String(G.leks).split(",").length} Lektion(en)${SPIEL === "karte" && P ? ` · ${P.karteKats.length} Themen` : ""}</p>
+    return `<div class="karte"><h2 style="margin-top:0">${s.icon} ${esc(s.titel)}</h2><p class="klein muted">${P ? P.keys.length : "?"} Wörter aus ${String(G.leks).split(",").length} Lektion(en)${SPIEL === "karte" && P ? ` · ${P.karteKats.length} Themen` : ""}${SPIEL === "buchstabe" && P ? ` · Buchstaben: <span class="fa">${P.karteKats.join(" ")}</span> · ${G.regel === "anfang" ? "Wortanfang" : "irgendwo im Wort"}` : ""}</p>
       <div style="display:flex;gap:18px;flex-wrap:wrap">
-        <div><div class="klein-h">Stufe</div><div class="seg"><button class="${!G.stufe || G.stufe === "leicht" ? "an" : ""}" data-set="stufe|leicht">${SPIEL === "karte" ? "leicht · mit deutscher Bedeutung" : "leicht · mit Umschrift"}</button><button class="${G.stufe === "schwer" ? "an" : ""}" data-set="stufe|schwer">${SPIEL === "karte" ? "schwer · nur Persisch" : "schwer · ohne Umschrift"}</button><button class="${G.stufe === "ohne" ? "an" : ""}" data-set="stufe|ohne">${SPIEL === "karte" ? "ohne Hilfe · nur persische Schrift" : "ohne Hilfe · Antwort selbst schreiben"}</button></div>
-          <p class="klein muted" style="margin:6px 0 0;max-width:520px">${G.stufe === "ohne" ? (SPIEL === "karte" ? "Keine Umschrift, keine deutsche Bedeutung, die Themenkarte nur auf Persisch." : "Keine Umschrift, keine Bilder. Persisch → Deutsch: Antwort wird getippt (Artikel und kleine Tippfehler sind egal). Deutsch → Persisch: Auswahl ohne Umschrift.") : ""}</p></div>
+        <div><div class="klein-h">Stufe</div><div class="seg"><button class="${!G.stufe || G.stufe === "leicht" ? "an" : ""}" data-set="stufe|leicht">${istKarte() ? "leicht · mit deutscher Bedeutung" : "leicht · mit Umschrift"}</button><button class="${G.stufe === "schwer" ? "an" : ""}" data-set="stufe|schwer">${istKarte() ? "schwer · nur Persisch" : "schwer · ohne Umschrift"}</button><button class="${G.stufe === "ohne" ? "an" : ""}" data-set="stufe|ohne">${istKarte() ? "ohne Hilfe · nur persische Schrift" : "ohne Hilfe · Antwort selbst schreiben"}</button></div>
+          <p class="klein muted" style="margin:6px 0 0;max-width:520px">${G.stufe === "ohne" ? (istKarte() ? "Keine Umschrift, keine deutsche Bedeutung, die Themenkarte nur auf Persisch." : "Keine Umschrift, keine Bilder. Persisch → Deutsch: Antwort wird getippt (Artikel und kleine Tippfehler sind egal). Deutsch → Persisch: Auswahl ohne Umschrift.") : ""}</p></div>
         ${SPIEL === "duell" ? `<div><div class="klein-h">Antworten zur Auswahl</div><div class="seg">${[3, 4, 6].map(n => `<button class="${(G.optionen || 4) === n ? "an" : ""}" data-set="optionen|${n}">${n}</button>`).join("")}</div></div>` : ""}
         ${G.stufe === "ohne" ? "" : `<div><div class="klein-h">Umschrift</div><div class="seg"><button class="${ohneTr() ? "" : "an"}" data-set="umschrift|an">an</button><button class="${ohneTr() ? "an" : ""}" data-set="umschrift|aus">aus</button></div></div>`}
         ${istLK ? `<div><div class="klein-h">Personen pro Tisch</div><div class="seg">${[2, 3, 4, 6].map(n => `<button class="${(G.groesse || 2) === n ? "an" : ""}" data-set="groesse|${n}">${n}</button>`).join("")}</div></div>` : ""}
@@ -481,7 +534,7 @@ window.VOKABEL_ENGINE = (function () {
     $$("[data-weg]").forEach(b => b.onclick = () => gRef(CODE).child("spieler/" + b.dataset.weg).set(null).catch(e => fehler(e)));
   }
   async function starten() {
-    if (!P) await ladePool(G.leks);
+    if (!P) await ladePool(G.leks, G);
     const ids = SP().map(([id]) => id);
     const tische = istLK ? tischeBilden(ids, G.groesse || 2) : [ids];
     const o = { phase: "spiel", start: Date.now(), teams: {} };
