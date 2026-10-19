@@ -229,6 +229,23 @@ und geben nur **Spielcode + Vornamen** ein – kein Zugangscode nötig (gut für
   Weitere Quizze: neue Datei nach diesem Muster, im `<script>`-Kopf von `live-quiz.html` einbinden, Aufruf mit `?quiz=<id>`.
 - Firebase: `live/quiz/{code}` (keine Regeländerung nötig).
 
+### Live: Vokabelspiele (`live-vokabel.html`)
+Zwei Spiele mit dem Wortschatz (`ws-*.json`) aus **frei wählbaren Lektionen aller Bereiche** (Häkchen pro Lektion,
+„alle/keine“ pro Bereich; Link mit Vorauswahl: `live-vokabel.html?leitung=1&leks=04,05`).
+- **🎯 Wort-Duell** (`?spiel=duell`): Wer dran ist, wählt aus 5 Handkarten ein Wort und wirft es; die anderen tippen die
+  Übersetzung unter 3/4/6 Möglichkeiten (Ablenker oft aus demselben Thema). Richtung wechselt jede Runde
+  (Deutsch → Persisch, Persisch → Deutsch). +1 pro richtige Antwort. Aufgelöst wird, wenn alle geantwortet haben (oder „⏩ jetzt auflösen“).
+- **🃏 Karte in die Mitte** (`?spiel=karte`): Reihum legt eine Person eine von 3 Themenkarten (Kategorie aus dem Wortschatz,
+  z. B. Menschen & Familie, Essen & Trinken, Orte, Berufe …). Alle werfen gleichzeitig passende Wörter aus ihren 8 Handkarten:
+  richtig +1, falsch −1. Runde endet, wenn alle „nichts mehr“ gemeldet haben oder nichts Passendes mehr da ist; dann wird gezeigt,
+  was noch gepasst hätte, und die Hände werden aufgefüllt. Geprüft wird über das Feld `kat` im Wortschatz.
+- **Stufen:** leicht/schwer (Umschrift bzw. deutsche Bedeutung auf den Handkarten), Umschrift an/aus.
+- **Lehrkraft:** Tische zu 2/3/4/6 Personen werden beim Start gebildet, Nachzügler kommen an den kleinsten Tisch.
+  Übersicht aller Tische, 👀 Bildschirme eines Tisches ansehen, Timer, Nachricht, alle neu laden. Am Ende Rangliste und
+  „Diese Wörter waren schwierig“ (für jede Person: „… solltest du noch einmal üben“).
+- **Eigene Runde:** „👥 Eigene Runde starten“ (mit Zugangscode, ein Tisch für alle). Mitspielen geht auch ohne Zugangscode (Code + Vorname).
+- Firebase: `live/vokabel/{code}` (keine Regeländerung nötig).
+
 ### Live: Wortsalat-Chat (`live-chat.html`)
 Gruppenchat im WhatsApp-Stil für 2–8 Personen (oder allein). Wer dran ist, bekommt ca. 28 persische Wort-Kacheln
 (alle Wörter der möglichen Nachrichten + Ablenkungswörter) und baut daraus eine Nachricht. Oben stehen die Möglichkeiten
