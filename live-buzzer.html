@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blitz-Übersetzung · Farsi-Lernpfad</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Vazirmatn:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css">
+<style>
+  .wrap{max-width:1040px}
+  .bz-code{font-size:3rem;font-weight:800;letter-spacing:.2em;color:var(--lapis);line-height:1}
+  .bz-kopf{display:flex;gap:12px;align-items:center;flex-wrap:wrap;justify-content:space-between;margin:14px 0}
+  .klein-h{font-size:.78rem;font-weight:800;color:var(--tinte2);text-transform:uppercase;letter-spacing:.04em;margin:14px 0 6px}
+  .seg{display:inline-flex;border:1px solid var(--linie);border-radius:10px;overflow:hidden;flex-wrap:wrap}
+  .seg button{border:0;background:#fff;padding:6px 12px;font:inherit;font-size:.86rem;font-weight:700;cursor:pointer}
+  .seg button.an{background:var(--lapis);color:#fff}
+  .satz{background:#fff;border:1px solid var(--linie);border-radius:18px;padding:26px 22px;text-align:center}
+  .satz .de{font-size:2rem;font-weight:800;line-height:1.35;color:var(--tinte)}
+  .satz .fa{font-size:2.4rem;line-height:1.9;display:block}
+  .satz .rich{font-size:.8rem;font-weight:800;color:var(--tinte2);text-transform:uppercase;letter-spacing:.05em;margin-bottom:10px}
+  .loes{background:var(--gruen-hell);border:1px solid #bcd9c6;border-radius:16px;padding:14px 18px;margin-top:12px;text-align:center}
+  .loes .fa{font-size:1.9rem;line-height:1.9;display:block}
+  .loes .tr{font-style:italic;color:var(--tinte2)}
+  .loes .de{font-size:1.3rem;font-weight:800;color:var(--tinte)}
+  .loes .alt{margin-top:6px;font-size:.92rem}
+  .loes .alt .fa{font-size:1.35rem;display:inline}
+  .typ{display:inline-block;background:var(--safran-hell);border:1px solid #e6d3ad;border-radius:999px;padding:3px 12px;font-size:.85rem;font-weight:800;margin-top:8px}
+  .schlange{display:grid;gap:8px}
+  .schlange .z{display:flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--linie);border-radius:12px;padding:10px 14px;font-weight:800}
+  .schlange .z.dran{border-color:var(--safran);background:var(--safran-hell);font-size:1.25rem}
+  .schlange .z.raus{opacity:.45;text-decoration:line-through}
+  .schlange .nr{width:28px;height:28px;border-radius:50%;background:var(--lapis);color:#fff;display:grid;place-items:center;font-size:.85rem}
+  .schlange .ms{margin-left:auto;font-size:.8rem;color:var(--tinte2);font-weight:700}
+  .bewerten{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+  .bewerten .btn{font-size:1.05rem}
+  .zwei-sp{display:grid;grid-template-columns:1.5fr 1fr;gap:14px;align-items:start}
+  @media (max-width:820px){.zwei-sp{grid-template-columns:1fr}}
+  .rang{display:grid;gap:6px}
+  .rang .z{display:flex;justify-content:space-between;background:#fff;border:1px solid var(--linie);border-radius:10px;padding:7px 12px;font-weight:800}
+  .rang .z.ich{border-color:var(--lapis);box-shadow:0 0 0 2px var(--lapis-hell)}
+  /* Buzzer */
+  .buzzer{width:min(72vw,300px);height:min(72vw,300px);border-radius:50%;border:0;margin:18px auto;display:grid;place-items:center;font:inherit;font-size:2rem;font-weight:800;color:#fff;
+    background:radial-gradient(circle at 35% 30%,#c95a50,#A5483F 60%,#7d332c);box-shadow:0 10px 0 #6d2c26,0 14px 24px rgba(0,0,0,.18);cursor:pointer;user-select:none;-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+  .buzzer:active:not(:disabled){transform:translateY(8px);box-shadow:0 2px 0 #6d2c26}
+  .buzzer:disabled{background:#c9c9c2;box-shadow:0 10px 0 #a9a9a2;cursor:default;font-size:1.3rem}
+  .buzzer.drin{background:radial-gradient(circle at 35% 30%,#4f8f6a,#3C7A55 60%,#2b5a3e);box-shadow:0 10px 0 #23492f}
+  .mic{background:var(--safran-hell);border:2px solid var(--safran);border-radius:18px;padding:18px;text-align:center;font-size:1.5rem;font-weight:800;margin:12px 0;animation:puls 1.2s ease-in-out infinite}
+  @keyframes puls{50%{box-shadow:0 0 0 8px rgba(185,138,62,.18)}}
+  details.spick{margin-top:12px;border:1px dashed var(--linie);border-radius:12px;padding:6px 12px;background:#fff}
+  details.spick summary{cursor:pointer;font-weight:700;color:var(--tinte2)}
+  .lk-typen label{display:flex;gap:8px;align-items:center;margin:4px 0}
+</style>
+</head>
+<body>
+<header class="kopf">
+  <div class="wrap">
+    <a href="aktivitaeten.html" class="medaillon" style="text-decoration:none">فا</a>
+    <div><h1 id="kopfTitel">Blitz-Übersetzung</h1><div class="unter">Aktivität · Farsi-Lernpfad</div></div>
+    <div class="rechts"><span class="kopf-btn" id="kopfInfo" style="background:transparent;border-color:transparent"></span></div>
+  </div>
+</header>
+<main class="wrap" style="padding-bottom:60px"><div id="app"><p class="muted" style="margin-top:30px">Lade …</p></div></main>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="assets/core.js"></script>
+<script src="assets/live-tools.js"></script>
+<script src="assets/buzzer/wenn-real.js"></script>
+<script>
+/* ===================== Logik (rein, auch für Tests) ===================== */
+window.BUZZER_ENGINE = (function () {
+  /* Reihenfolge der Buzzer für den aktuellen Satz (nach Zeitstempel) */
+  function schlange(spieler, i) {
+    return Object.entries(spieler || {}).filter(([, s]) => s && s.name && s.b && s.b.i === i)
+      .sort(([, a], [, b]) => (a.b.t || 0) - (b.b.t || 0) || String(a.b.r || "").localeCompare(String(b.b.r || ""))).map(([id, s]) => ({ id, t: s.b.t }));
+  }
+  const liste = s => String(s || "").split("|").filter(x => x !== "");
+  /* Wer ist als Nächstes dran: erste Person in der Schlange, die noch nicht falsch war */
+  function naechster(G) { const raus = liste(G.raus); const q = schlange(G.spieler, G.i || 0).find(x => !raus.includes(x.id)); return q ? q.id : null; }
+  const richtung = (G, pos) => G.richtung === "mix" ? (pos % 2 === 0 ? "de" : "fa") : (G.richtung || "de");
+  return { schlange, liste, naechster, richtung };
+})();
+
+/* ===================== Seite ===================== */
+(function () {
+  const F = window.FARSI, { $, $$, esc, toast } = F, E = window.BUZZER_ENGINE, LT = window.LIVE_TOOLS;
+  const qs = new URLSearchParams(location.search);
+  const MODUS = qs.get("leitung") ? "leitung" : "spieler";
+  const SID = qs.get("set") || "wenn-real";
+  let CODE = (qs.get("code") || "").replace(/\D/g, "") || null;
+  let G = null, REF = null, ME = null, S = (window.BUZZER_SETS || {})[SID], BEAMER = false;
+  const app = () => $("#app");
+  const gRef = c => F.ref(`live/buzzer/${c}`);
+  const SP = () => Object.entries((G && G.spieler) || {}).filter(([, s]) => s && s.name);
+  const name = id => ((G && G.spieler && G.spieler[id]) || {}).name || "?";
+  const reihe = () => E.liste(G.reihe).map(Number);
+  const aktSatz = () => S.saetze[reihe()[G.i || 0]];
+  const serverZeit = () => (window.firebase && firebase.database && firebase.database.ServerValue) ? firebase.database.ServerValue.TIMESTAMP : Date.now();
+
+  function fehler(e, hart) {
+    console.error(e);
+    if (!hart) { toast("Das hat nicht geklappt – bitte noch einmal."); return; }
+    app().innerHTML = `<div class="karte" style="margin-top:20px"><b>Das hat nicht geklappt.</b><p class="klein muted">${esc(e && e.message || e)}</p><p class="klein">Bitte neu laden. Lehrkraft: Sind die Regeln aus <code>firebase-regeln.json</code> veröffentlicht?</p></div>`;
+  }
+  const upd = o => gRef(CODE).update(o).catch(e => fehler(e));
+  let letzteSchlange = 0;
+  function hoere(c) {
+    if (REF) REF.off();
+    REF = gRef(c);
+    REF.on("value", s => {
+      G = s.val();
+      if (G && G.set && G.set !== (S && S.id)) S = (window.BUZZER_SETS || {})[G.set];
+      if (MODUS !== "leitung") LT.pruefeNeuLaden(G);
+      if (MODUS === "leitung" && G && G.phase === "frage") {   /* Ton beim ersten Buzzer, „dran“ automatisch setzen */
+        const q = E.schlange(G.spieler, G.i || 0);
+        if (q.length > letzteSchlange && letzteSchlange === 0) piep();
+        letzteSchlange = q.length;
+        const n = E.naechster(G);
+        if (!G.dran && n) upd({ dran: n });
+      }
+      if (LT.tipptGerade(zeichne)) return;
+      zeichne();
+    }, e => fehler(e, true));
+  }
+  function piep(f = 880) { try { const a = new (window.AudioContext || window.webkitAudioContext)(), o = a.createOscillator(), g = a.createGain(); o.frequency.value = f; o.connect(g); g.connect(a.destination); g.gain.setValueAtTime(.15, a.currentTime); g.gain.exponentialRampToValueAtTime(.001, a.currentTime + .25); o.start(); o.stop(a.currentTime + .26); } catch (e) { } }
+
+  /* ---------- Satzanzeige ---------- */
+  function satzHtml(x, ri, gross) {
+    return `<div class="satz ${gross ? "gross" : ""}"><div class="rich">${ri === "de" ? "Auf Persisch sagen" : "Auf Deutsch sagen"}</div>${ri === "de" ? `<div class="de">${esc(x.de)}</div>` : `<span class="fa">${esc(x.fa)}</span>`}</div>`;
+  }
+  function loesungHtml(x, ri) {
+    const t = S.typen[x.typ] || {};
+    return `<div class="loes">${ri === "de" ? `<span class="fa">${esc(x.fa)}</span><div class="tr">${esc(x.tr)}</div>${(x.alt || []).length ? `<div class="alt">Auch richtig: ${x.alt.map(a => `<span class="fa">${esc(a)}</span>`).join(" · ")}</div>` : ""}`
+      : `<div class="de">${esc(x.de)}</div><div class="tr">${esc(x.tr)}</div>`}
+      <div class="typ">${esc(t.name || "")}</div><div class="klein" style="margin-top:6px">${esc(t.info || "")}</div></div>`;
+  }
+  function rangHtml(meinId, max = 50) {
+    const p = G.punkte || {};
+    const r = SP().map(([id, s]) => ({ id, name: s.name, p: p[id] || 0 })).sort((a, b) => b.p - a.p || a.name.localeCompare(b.name));
+    return `<div class="rang">${r.slice(0, max).map((x, i) => `<div class="z ${x.id === meinId ? "ich" : ""}"><span>${i + 1}. ${esc(x.name)}</span><span>${x.p}</span></div>`).join("")}</div>`;
+  }
+
+  /* =====================================================================
+     LEITUNG (nur Lehrkraft moderiert)
+     ===================================================================== */
+  function startLeitung() {
+    firebase.auth().onAuthStateChanged(u => {
+      if (!u) { app().innerHTML = `<div class="karte" style="margin-top:20px"><h2>Nur für Lehrkräfte</h2><p>Bitte zuerst in der <a href="konsole.html">Konsole</a> anmelden.</p></div>`; return; }
+      LT.verbindung(null);
+      if (CODE) hoere(CODE); else zeichneNeu();
+    });
+    document.addEventListener("keydown", e => {
+      if (MODUS !== "leitung" || e.target.matches("input,textarea") || !G) return;
+      const k = e.key.toLowerCase(), b = { r: "#ok", f: "#falsch", h: "#halb", l: "#zeige", " ": "#weiter", enter: "#weiter", z: "#zufall" }[k];
+      const el = b && $(b); if (el) { e.preventDefault(); el.click(); }
+    });
+  }
+  function zeichneNeu() {
+    const typen = S.typen;
+    app().innerHTML = `<div class="karte" style="margin-top:20px"><h2 style="margin-top:0">⚡ Blitz-Übersetzung</h2>
+      <p>Mündlich übersetzen – auf Anhieb. Ein Satz erscheint auf der Leinwand, wer die Übersetzung weiß, drückt auf dem Handy den <b>Buzzer</b>. Die schnellste Person sagt den Satz laut, du bewertest: ✅ richtig, 🤏 fast, ❌ falsch – dann ist die nächste Person in der Buzzer-Reihe dran.</p>
+      <p class="klein muted">Die Teilnehmenden brauchen nur den Spielcode und ihren Vornamen.</p>
+      <div class="klein-h">Thema</div><b>${esc(S.titel)}</b> <span class="muted">· ${esc(S.lektion)} · ${S.saetze.length} Sätze</span>
+      <div class="klein-h">Richtung</div><div class="seg" id="ri"><button data-ri="de" class="an">Deutsch → Persisch</button><button data-ri="fa">Persisch → Deutsch</button><button data-ri="mix">abwechselnd</button></div>
+      <div class="klein-h">Satztypen</div><div class="lk-typen">${Object.entries(typen).map(([k, t]) => `<label><input type="checkbox" data-typ="${k}" checked> <b>${esc(t.name)}</b> <span class="klein muted">(${S.saetze.filter(x => x.typ === k).length}) – ${esc(t.info)}</span></label>`).join("")}</div>
+      <div class="klein-h">Anzahl</div><div class="seg" id="anz">${[10, 15, 20, 0].map(n => `<button data-anz="${n}" class="${n === 15 ? "an" : ""}">${n || "alle"}</button>`).join("")}</div>
+      <div class="klein-h">Reihenfolge</div><div class="seg" id="ord"><button data-ord="zufall" class="an">gemischt</button><button data-ord="typ">nach Satztyp</button></div>
+      <div class="klein-h">Punkte</div><div class="seg" id="minus"><button data-minus="1" class="an">✅ +2 · 🤏 +1 · ❌ −1</button><button data-minus="0">✅ +2 · 🤏 +1 · ❌ 0</button></div>
+      <div class="btnreihe" style="margin-top:16px"><button class="btn" id="anlegen">▶ Runde anlegen</button></div><p class="klein" id="info" style="color:var(--granat)"></p></div>`;
+    ["ri", "anz", "ord", "minus"].forEach(g => $$(`#${g} button`).forEach(b => b.onclick = () => { $$(`#${g} button`).forEach(x => x.classList.remove("an")); b.classList.add("an"); }));
+    $("#anlegen").onclick = async () => {
+      const typen = $$("[data-typ]").filter(c => c.checked).map(c => c.dataset.typ);
+      let idx = S.saetze.map((x, i) => i).filter(i => typen.includes(S.saetze[i].typ));
+      if (!idx.length) return $("#info").textContent = "Bitte mindestens einen Satztyp wählen.";
+      const ord = $("#ord .an").dataset.ord, anz = +$("#anz .an").dataset.anz;
+      idx = F.mischen(idx);
+      if (anz) { /* gleichmäßig über die Typen verteilen */ const nach = {}; idx.forEach(i => (nach[S.saetze[i].typ] = nach[S.saetze[i].typ] || []).push(i)); const out = []; let r = 0; while (out.length < Math.min(anz, idx.length)) { typen.forEach(t => { const l = nach[t] || []; if (l[r] != null && out.length < anz) out.push(l[r]); }); r++; } idx = F.mischen(out); }
+      if (ord === "typ") idx.sort((a, b) => "PKVC".indexOf(S.saetze[a].typ) - "PKVC".indexOf(S.saetze[b].typ));
+      const d = { erstellt: Date.now(), set: S.id, phase: "lobby", richtung: $("#ri .an").dataset.ri, reihe: idx.join("|"), i: 0, minus: $("#minus .an").dataset.minus === "1", spieler: {} };
+      try { CODE = await LT.neueRunde(gRef, d); } catch (e) { return fehler(e, true); }
+      history.replaceState(null, "", `?leitung=1&code=${CODE}`);
+      hoere(CODE);
+    };
+  }
+  const linkFuer = c => location.origin + location.pathname + "?code=" + c;
+  function zeichneLeitung() {
+    if (!G) { app().innerHTML = `<div class="karte" style="margin-top:20px">Diese Runde gibt es nicht (mehr). <a href="?leitung=1">Neue Runde</a></div>`; return; }
+    const sp = SP(), n = reihe().length, pos = G.i || 0;
+    let h = `<div class="bz-kopf"><div style="display:flex;gap:16px;align-items:center"><div><div class="klein muted">Spielcode</div><div class="bz-code">${CODE}</div></div>${G.phase !== "lobby" ? `<span class="muted">${sp.length} dabei · Satz ${Math.min(pos + 1, n)} von ${n}</span>` : ""}</div><div class="btnreihe">
+      ${G.phase === "lobby" ? `<button class="btn" id="start" ${sp.length ? "" : "disabled"}>▶ Start</button>` : ""}
+      ${G.phase === "frage" || G.phase === "loesung" ? `<button class="btn zwei klein" id="beamer">${BEAMER ? "⚙️ mit Spickzettel" : "🖥️ Leinwand (ohne Lösung)"}</button><button class="btn rot klein" id="ende">⏹ beenden</button>` : ""}</div></div>`;
+    if (G.phase === "lobby") {
+      h += `<div class="karte" style="display:grid;grid-template-columns:1fr auto;gap:18px;align-items:center"><div><h2 style="margin-top:0">⚡ ${esc(S.titel)}</h2>
+        <p style="font-size:1.1rem">Öffnet <b>${esc(linkFuer("").replace(/^https?:\/\//, "").replace("?code=", ""))}</b> und gebt den Code <b>${CODE}</b> ein – oder scannt den QR-Code.</p>
+        <p class="klein muted">Richtung: ${G.richtung === "de" ? "Deutsch → Persisch" : G.richtung === "fa" ? "Persisch → Deutsch" : "abwechselnd"} · ${n} Sätze · Tasten: R richtig, H fast, F falsch, L Lösung, Z zufällig aufrufen, Leertaste weiter</p></div><div class="karte" id="qr" style="margin:0;padding:8px"></div></div>
+        <div class="karte" style="margin-top:12px"><h3 style="margin-top:0">Dabei (${sp.length})</h3><div style="display:flex;flex-wrap:wrap;gap:8px">${sp.map(([id, s]) => `<span class="typ" style="margin:0;background:#fff;border-color:var(--linie)">${esc(s.name)} <button data-weg="${id}" style="border:0;background:none;cursor:pointer;color:var(--tinte2)">✕</button></span>`).join("") || `<span class="muted">Noch niemand da …</span>`}</div></div>`;
+    } else if (G.phase === "ende") {
+      h += `<div class="karte" style="text-align:center"><h2 style="margin-top:0">🏆 Ergebnis</h2><div style="max-width:520px;margin:0 auto">${rangHtml(null)}</div></div><div class="btnreihe" style="margin-top:12px"><a class="btn zwei" href="?leitung=1" style="text-decoration:none">Neue Runde</a></div>`;
+    } else {
+      const x = aktSatz(), ri = E.richtung(G, pos), q = E.schlange(G.spieler, pos), raus = E.liste(G.raus), ok = E.liste(G.ok);
+      h += `<div class="zwei-sp"><div>${satzHtml(x, ri, true)}${G.phase === "loesung" ? loesungHtml(x, ri) : ""}
+        ${G.phase === "frage" && !BEAMER ? `<details class="spick" data-merk="spick"><summary>👁 Lösung spicken (nur für dich – nicht beim Bildschirmteilen öffnen)</summary>${loesungHtml(x, ri)}</details>` : ""}</div>
+        <div><div class="karte" style="margin:0"><h3 style="margin-top:0">🔔 Buzzer-Reihe</h3>
+          ${q.length ? `<div class="schlange">${q.map((b, k) => `<div class="z ${G.dran === b.id && G.phase === "frage" ? "dran" : ""} ${raus.includes(b.id) ? "raus" : ""}"><span class="nr">${k + 1}</span>${esc(name(b.id))}${ok.includes(b.id) ? " ✅" : ""}${G.dran === b.id && G.phase === "frage" ? " 🎤" : ""}<span class="ms">${k && q[0].t && b.t ? "+" + ((b.t - q[0].t) / 1000).toFixed(1) + " s" : ""}</span></div>`).join("")}</div>` : `<p class="muted">${G.frei === false ? "Buzzer gesperrt." : "Noch niemand hat gebuzzert …"}</p>`}
+          ${G.dran && !q.some(b => b.id === G.dran) && G.phase === "frage" ? `<div class="schlange" style="margin-top:8px"><div class="z dran">🎲 ${esc(name(G.dran))} 🎤</div></div>` : ""}
+          ${G.phase === "frage" ? `<div class="bewerten">${G.dran ? `<button class="btn" id="ok" style="background:var(--gruen)">✅ richtig +2</button><button class="btn zwei" id="halb">🤏 fast +1</button><button class="btn rot" id="falsch">❌ falsch${G.minus ? " −1" : ""}</button>` : ""}</div>
+            <div class="btnreihe" style="margin-top:10px"><button class="btn zwei klein" id="zufall">🎲 zufällig aufrufen</button><button class="btn zwei klein" id="zeige">💡 Lösung zeigen</button><button class="btn zwei klein" id="sperre">${G.frei === false ? "🔓 Buzzer frei" : "🔒 Buzzer sperren"}</button></div>`
+          : `<div class="btnreihe" style="margin-top:10px"><button class="btn" id="weiter">${pos >= n - 1 ? "🏆 Ergebnis" : "Weiter ➜ Satz " + (pos + 2)}</button></div>`}
+        </div><div class="karte" style="margin-top:12px"><h3 style="margin-top:0">Punkte</h3>${rangHtml(null, 8)}</div></div></div>`;
+    }
+    LT.render(app(), h);
+    if (G.phase === "lobby") { const qr = $("#qr"); if (qr && window.QRCode) { try { qr.innerHTML = ""; new QRCode(qr, { text: linkFuer(CODE), width: 170, height: 170 }); } catch (e) { } } else if (qr) qr.style.display = "none"; }
+    verdrahteLeitung();
+  }
+  function punkte(id, n) { return gRef(CODE).child("punkte/" + id).transaction(v => (v || 0) + n); }
+  function verdrahteLeitung() {
+    const b = id => $("#" + id);
+    $$("[data-weg]").forEach(x => x.onclick = () => gRef(CODE).child("spieler/" + x.dataset.weg).set(null));
+    if (b("start")) b("start").onclick = () => upd({ phase: "frage", i: 0, dran: null, raus: null, ok: null, frei: true });
+    if (b("ende")) b("ende").onclick = () => { if (confirm("Runde beenden und Ergebnis zeigen?")) upd({ phase: "ende" }); };
+    if (b("beamer")) b("beamer").onclick = () => { BEAMER = !BEAMER; zeichne(); };
+    if (b("ok")) b("ok").onclick = async () => { const d = G.dran; b("ok").disabled = true; await punkte(d, 2); upd({ phase: "loesung", ok: d, frei: false }); };
+    if (b("halb")) b("halb").onclick = async () => { const d = G.dran; b("halb").disabled = true; await punkte(d, 1); upd({ phase: "loesung", ok: d, frei: false }); };
+    if (b("falsch")) b("falsch").onclick = async () => {
+      const d = G.dran; b("falsch").disabled = true; if (G.minus) await punkte(d, -1);
+      const raus = E.liste(G.raus).concat(d); const n = E.naechster(Object.assign({}, G, { raus: raus.join("|") }));
+      upd({ raus: raus.join("|"), dran: n || null });
+      if (!n) toast("Niemand mehr in der Reihe – andere dürfen noch buzzern.");
+    };
+    if (b("zufall")) b("zufall").onclick = () => { const raus = E.liste(G.raus); const k = SP().filter(([id, s]) => !raus.includes(id) && s.online !== false).map(([id]) => id); if (!k.length) return toast("Niemand verfügbar."); upd({ dran: k[Math.floor(Math.random() * k.length)] }); };
+    if (b("zeige")) b("zeige").onclick = () => upd({ phase: "loesung", frei: false });
+    if (b("sperre")) b("sperre").onclick = () => upd({ frei: G.frei === false });
+    if (b("weiter")) b("weiter").onclick = () => { const pos = G.i || 0; letzteSchlange = 0;
+      if (pos >= reihe().length - 1) upd({ phase: "ende" }); else upd({ phase: "frage", i: pos + 1, dran: null, raus: null, ok: null, frei: true }); };
+  }
+
+  /* =====================================================================
+     SPIELER: Buzzer auf dem Handy
+     ===================================================================== */
+  function pid() {
+    const s = F.sitzung(); if (s && s.code) return s.code;
+    let p = null; try { p = localStorage.getItem("farsi_quiz_pid"); if (!p) { p = "q" + Math.random().toString(36).slice(2, 9); localStorage.setItem("farsi_quiz_pid", p); } } catch (e) { p = "q" + Math.random().toString(36).slice(2, 9); }
+    return p;
+  }
+  function startSpieler() {
+    const s = F.sitzung(); let n = s && s.name; if (!n) try { n = localStorage.getItem("farsi_quiz_name") || ""; } catch (e) { n = ""; }
+    ME = { id: pid(), name: n };
+    if (CODE && s) beitreten(CODE, s.name); else zeichneBeitritt();
+  }
+  function zeichneBeitritt(meld) {
+    app().innerHTML = `<div class="karte" style="margin-top:20px;max-width:480px;margin-inline:auto;text-align:center"><div style="font-size:3rem">⚡</div><h2 style="margin:0 0 6px">Blitz-Übersetzung</h2>
+      <p>Gib den <b>Spielcode</b> und deinen <b>Vornamen</b> ein.</p>
+      <div style="display:grid;gap:10px;max-width:280px;margin:0 auto">
+        <input class="feld" id="code" inputmode="numeric" maxlength="4" placeholder="Spielcode" value="${esc(CODE || "")}" style="text-align:center;font-size:1.4rem;letter-spacing:.2em">
+        <input class="feld" id="name" maxlength="20" placeholder="Vorname" value="${esc(ME.name)}" style="text-align:center;font-size:1.15rem">
+        <button class="btn" id="los">Mitspielen ➜</button></div><p class="klein" style="color:var(--granat);min-height:1.2em">${meld || ""}</p></div>`;
+    $("#los").onclick = () => beitreten($("#code").value.replace(/\D/g, ""), $("#name").value.trim());
+    $$("#code,#name").forEach(i => i.addEventListener("keydown", e => { if (e.key === "Enter") $("#los").click(); }));
+  }
+  async function beitreten(c, n) {
+    if (!/^\d{4}$/.test(c || "")) return zeichneBeitritt("Der Spielcode hat vier Ziffern.");
+    if (!n) return zeichneBeitritt("Bitte gib deinen Vornamen ein.");
+    n = n.split(/\s+/)[0].slice(0, 20);
+    let g; try { g = (await F.mitTimeout(gRef(c).once("value"), 8000)).val(); } catch (e) { return fehler(e, true); }
+    if (!g || !g.reihe) { CODE = null; return zeichneBeitritt("Diesen Spielcode gibt es nicht."); }
+    CODE = c; ME.name = n; try { localStorage.setItem("farsi_quiz_name", n); } catch (e) { }
+    history.replaceState(null, "", "?code=" + c);
+    try { if ((g.spieler || {})[ME.id]) await gRef(c).child(`spieler/${ME.id}/name`).set(n); else await gRef(c).child("spieler/" + ME.id).set({ name: n, ts: Date.now() }); } catch (e) { return fehler(e, true); }
+    LT.verbindung(gRef(c).child("spieler/" + ME.id));
+    hoere(c);
+  }
+  let warDran = false;
+  function zeichneSpieler() {
+    if (!G) return zeichneBeitritt("Diese Runde wurde beendet.");
+    const ich = (G.spieler || {})[ME.id];
+    if (!ich) { app().innerHTML = `<div class="karte" style="margin-top:20px;text-align:center">Du bist nicht (mehr) in dieser Runde.<br><br><button class="btn" id="nochmal">Wieder mitspielen</button></div>`; $("#nochmal").onclick = () => beitreten(CODE, ME.name); return; }
+    $("#kopfInfo").textContent = `${ich.name} · ${(G.punkte || {})[ME.id] || 0} P.`;
+    let h = "";
+    if (G.phase === "lobby") h = `<div class="karte" style="margin-top:20px;text-align:center"><div style="font-size:3rem">⚡</div><h2 style="margin:0">Hallo ${esc(ich.name)}!</h2><p>Gleich erscheint ein Satz. Wenn du die Übersetzung weißt: <b>Buzzer drücken</b> und laut sagen.</p><p class="klein muted">✅ +2 · 🤏 +1${G.minus ? " · ❌ −1" : ""}</p></div>`;
+    else if (G.phase === "ende") h = `<div class="karte" style="margin-top:20px;text-align:center"><h2 style="margin-top:0">🏆 Ergebnis</h2>${rangHtml(ME.id)}</div>`;
+    else {
+      const pos = G.i || 0, x = aktSatz(), ri = E.richtung(G, pos), q = E.schlange(G.spieler, pos), platz = q.findIndex(b => b.id === ME.id);
+      const raus = E.liste(G.raus).includes(ME.id), dran = G.dran === ME.id && G.phase === "frage";
+      if (dran && !warDran) { try { navigator.vibrate && navigator.vibrate([120, 60, 120]); } catch (e) { } }
+      warDran = dran;
+      h = `<p class="klein muted" style="margin:10px 0 4px">Satz ${pos + 1} von ${reihe().length}</p>` + satzHtml(x, ri, false);
+      if (G.phase === "loesung") {
+        const ok = E.liste(G.ok).includes(ME.id);
+        h += (ok ? `<div class="mic" style="animation:none;background:var(--gruen-hell);border-color:var(--gruen)">✅ Punkte für dich!</div>` : "") + loesungHtml(x, ri) + `<p class="muted" style="text-align:center">⏳ Gleich kommt der nächste Satz …</p>`;
+      } else if (dran) h += `<div class="mic">🎤 Du bist dran!<br><span style="font-size:1rem;font-weight:700">Sag den Satz jetzt laut ${ri === "de" ? "auf Persisch" : "auf Deutsch"}.</span></div>`;
+      else if (raus) h += `<div class="karte" style="text-align:center;margin-top:12px">❌ Diesmal nicht – warte auf den nächsten Satz.</div>`;
+      else if (platz >= 0) h += `<button class="buzzer drin" disabled style="background:radial-gradient(circle at 35% 30%,#4f8f6a,#3C7A55 60%,#2b5a3e);box-shadow:0 10px 0 #23492f;color:#fff">Nr. ${platz + 1}</button><p style="text-align:center" class="muted">Du hast gebuzzert. ${platz === 0 ? "Du warst am schnellsten!" : "Vor dir: " + q.slice(0, platz).map(b => esc(name(b.id))).join(", ")}</p>`;
+      else h += `<button class="buzzer" id="buzz" ${G.frei === false ? "disabled" : ""}>${G.frei === false ? "gesperrt" : "BUZZ!"}</button><p style="text-align:center" class="muted">Drücken, sobald du die Übersetzung weißt.</p>`;
+    }
+    LT.render(app(), h);
+    const bz = $("#buzz");
+    if (bz) bz.onclick = () => { bz.disabled = true; bz.textContent = "…"; gRef(CODE).child(`spieler/${ME.id}/b`).set({ i: G.i || 0, t: serverZeit(), r: Math.random().toString(36).slice(2, 6) }).catch(e => { bz.disabled = false; fehler(e); }); };
+  }
+
+  function zeichne() { MODUS === "leitung" ? zeichneLeitung() : zeichneSpieler(); }
+  window.BUZZER_APP = { get G() { return G; }, S };
+  if (!S) { app().innerHTML = `<div class="karte" style="margin-top:20px">Dieses Satz-Set gibt es nicht.</div>`; return; }
+  F.initFB();
+  MODUS === "leitung" ? startLeitung() : startSpieler();
+})();
+</script>
+</body>
+</html>

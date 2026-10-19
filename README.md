@@ -229,6 +229,18 @@ und geben nur **Spielcode + Vornamen** ein – kein Zugangscode nötig (gut für
   Weitere Quizze: neue Datei nach diesem Muster, im `<script>`-Kopf von `live-quiz.html` einbinden, Aufruf mit `?quiz=<id>`.
 - Firebase: `live/quiz/{code}` (keine Regeländerung nötig).
 
+### Live: Blitz-Übersetzung mit Buzzer (`live-buzzer.html`)
+Nur mit Lehrkraft (Moderation). Ein Satz erscheint (Leinwand/Bildschirm teilen und auf den Handys), TN drücken den
+**Buzzer** auf dem Handy (Reihenfolge nach Server-Zeit, mit +x s Abstand). Die erste Person ist automatisch 🎤 dran und
+übersetzt **mündlich**; Bewertung: ✅ richtig +2, 🤏 fast +1, ❌ falsch −1 (oder 0) → nächste Person in der Reihe.
+🎲 zufällig aufrufen, 💡 Lösung zeigen (mit „auch richtig“-Varianten, Satztyp und Regel), Buzzer sperren.
+Tasten: R richtig · H fast · F falsch · L Lösung · Z zufällig · Leertaste weiter. „👁 Lösung spicken“ nur aufklappen,
+wenn der Bildschirm nicht geteilt wird (oder „🖥️ Leinwand“ blendet es aus).
+- Einstellungen: Richtung (DE → FA, FA → DE, abwechselnd), Satztypen, Anzahl (10/15/20/alle, gleichmäßig über die Typen), gemischt oder nach Typ, Minuspunkte an/aus.
+- Satz-Set `assets/buzzer/wenn-real.js` (Lektion 22, 36 Sätze): agar + Präsens (10), + Konjunktiv (12, mit Präteritum als
+  Alternative), + Präteritum (9, Zukunftsbedeutung), selbst wenn / sonst (5). Weitere Sets nach diesem Muster, Aufruf `?set=<id>`.
+- TN brauchen nur Spielcode + Vornamen. Firebase: `live/buzzer/{code}` (keine Regeländerung nötig).
+
 ### Live: Vokabelspiele (`live-vokabel.html`)
 Zwei Spiele mit dem Wortschatz (`ws-*.json`) aus **frei wählbaren Lektionen aller Bereiche** (Häkchen pro Lektion,
 „alle/keine“ pro Bereich; Link mit Vorauswahl: `live-vokabel.html?leitung=1&leks=04,05`).
