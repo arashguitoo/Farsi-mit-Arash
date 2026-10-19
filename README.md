@@ -239,7 +239,10 @@ Zwei Spiele mit dem Wortschatz (`ws-*.json`) aus **frei wählbaren Lektionen all
   z. B. Menschen & Familie, Essen & Trinken, Orte, Berufe …). Alle werfen gleichzeitig passende Wörter aus ihren 8 Handkarten:
   richtig +1, falsch −1. Runde endet, wenn alle „nichts mehr“ gemeldet haben oder nichts Passendes mehr da ist; dann wird gezeigt,
   was noch gepasst hätte, und die Hände werden aufgefüllt. Geprüft wird über das Feld `kat` im Wortschatz.
-- **Stufen:** leicht/schwer (Umschrift bzw. deutsche Bedeutung auf den Handkarten), Umschrift an/aus.
+- **Stufen:** leicht / schwer (Umschrift bzw. deutsche Bedeutung auf den Handkarten) / **ohne Hilfe**:
+  keine Umschrift, keine Bilder, keine deutsche Bedeutung. Im Duell wird Persisch → Deutsch **frei getippt**
+  (tolerant: Artikel, Groß/klein, ae/ä, 1 Tippfehler, „Lehrer/in“ = „Lehrerin“); Deutsch → Persisch bleibt Auswahl ohne Umschrift.
+  Bei „Karte in die Mitte“ steht die Themenkarte dann nur auf Persisch.
 - **Lehrkraft:** Tische zu 2/3/4/6 Personen werden beim Start gebildet, Nachzügler kommen an den kleinsten Tisch.
   Übersicht aller Tische, 👀 Bildschirme eines Tisches ansehen, Timer, Nachricht, alle neu laden. Am Ende Rangliste und
   „Diese Wörter waren schwierig“ (für jede Person: „… solltest du noch einmal üben“).
