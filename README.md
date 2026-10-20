@@ -70,6 +70,7 @@ Passwortgeschützt (gleiches Konto wie die Konsole), erreichbar über **📖 Leh
 - Damit die Korrekturen auf allen Geräten gespeichert werden, braucht Firebase die Regel `korrekturen` (in `firebase-regeln.json` enthalten). Ohne sie bleiben die Notizen im Browser.
 
 ## Wortschatz-Trainer (`wortschatz.html`)
+- **🔍 Wörterbuch** oben auf der Seite: sucht in allen für die Person offenen Lektionen – Deutsch (Umlaute/Artikel egal, exakte Treffer zuerst), Persisch (auch ohne Vokalzeichen, ي/ك egal) und Umschrift. Treffer mit Lektion, Präsensstamm; antippen = vorlesen.
 
 Eigene Seite mit dem **gesamten Wortschatz** aller Lektionen, die für die Klasse freigeschaltet sind – er wächst also automatisch mit. Spiele: Paare (Bedeutung / Aussprache), Memory, Blitzlesen, Karteikarten, Abschreiben, Wortliste. Filter: „bis Lektion X“ oder „nur Lektion X“ und nach Kategorie.
 
