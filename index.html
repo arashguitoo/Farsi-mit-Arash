@@ -95,7 +95,7 @@
     }
     zeigeUnterricht(s);
     $("#wbBox").classList.remove("versteckt");
-    if (!WB_DRIN) { WB_DRIN = true; window.WOERTERBUCH.einbauen($("#wbKarte"), { offen: offeneLektionen, durchblaettern: false }); }
+    if (!WB_DRIN && window.WOERTERBUCH) { WB_DRIN = true; window.WOERTERBUCH.einbauen($("#wbKarte"), { offen: offeneLektionen, durchblaettern: false }); }
     await zeichnePfad();
   }
 
