@@ -6,7 +6,7 @@
    ========================================================= */
 (function () {
   "use strict";
-  const VERSION = "a9e8ebb1";
+  const VERSION = "273833b0";
   const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const normFa = x => String(x || "").replace(/[ً-ْٰٕٔ]/g, "").replace(/[‌‍]/g, " ").replace(/[آأإ]/g, "ا").replace(/ي/g, "ی").replace(/ك/g, "ک").replace(/ة/g, "ه").replace(/\s+/g, " ").trim();
   const normDe = x => String(x || "").toLowerCase().replace(/ä/g, "a").replace(/ö/g, "o").replace(/ü/g, "u").replace(/ß/g, "ss").replace(/[^a-z0-9 ]/g, " ").replace(/\s+/g, " ").trim();
@@ -46,7 +46,24 @@
       }
       if (r >= 0) out.push([r, w]);
     }
+    if (!out.length && !istFa && qd.length >= 4) {   /* Tippfehler: ähnliche deutsche Wörter (1–2 Buchstaben anders) */
+      const max = qd.length > 6 ? 2 : 1;
+      for (const w of DATEN.W) {
+        if (w.lek && offen && !offen.has(w.lek)) continue;
+        const d = Math.min(...w._worte.filter(t => Math.abs(t.length - qd.length) <= max).map(t => lev(t, qd, max)), 9);
+        if (d <= max) out.push([4 + d + w.de.length / 1000, w]);
+      }
+    }
     return out.sort((a, c) => a[0] - c[0] || (a[1].wb ? 1 : 0) - (c[1].wb ? 1 : 0) || a[1].fa.length - c[1].fa.length).map(x => x[1]);
+  }
+  function lev(a, b, max) {
+    let prev = Array.from({ length: b.length + 1 }, (_, j) => j);
+    for (let i = 1; i <= a.length; i++) {
+      const cur = [i]; let best = i;
+      for (let j = 1; j <= b.length; j++) { cur[j] = Math.min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1)); if (cur[j] < best) best = cur[j]; }
+      if (best > max) return max + 1; prev = cur;
+    }
+    return prev[b.length];
   }
   function quelle(w) {
     if (w.wb) return "📖 Wörterbuch";

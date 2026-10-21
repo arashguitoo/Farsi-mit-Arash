@@ -21,9 +21,19 @@ for l in ix["lektionen"]:
         da.setdefault(k, []).append(worte(w["de"]))
         W.append([w["fa"], w.get("tr", ""), w["de"], w.get("kat", ""), li, w.get("emoji", ""), w.get("stamm", ""), w.get("stammTr", "")])
 n_lek = len(W)
+pos = {}
+for i, x in enumerate(W): pos.setdefault(strip(x[0]), []).append(i)
 for w in json.load(open(os.path.join(R, "assets/woerterbuch/grund.json"), encoding="utf-8"))["woerter"]:
     k = strip(w["fa"])
-    if any(worte(w["de"]) & s for s in da.get(k, [])): continue
+    gleich = [i for i in pos.get(k, []) if worte(W[i][2]) & worte(w["de"])]
+    if gleich:   # gibt es schon in einer Lektion: fehlende Bedeutungen/Stamm dort ergänzen statt doppelt zeigen
+        x = W[gleich[0]]
+        teile = [t.strip() for t in re.split(r"[,;]", w["de"]) if t.strip()]
+        dazu = [t for t in teile if t.lower() not in x[2].lower()]
+        if dazu: x[2] = x[2] + ", " + ", ".join(dazu)
+        if w.get("stamm") and not x[6]: x[6], x[7] = w["stamm"], w.get("stammTr", "")
+        if w.get("tr") and not x[1]: x[1] = w["tr"]
+        continue
     da.setdefault(k, []).append(worte(w["de"]))
     W.append([w["fa"], w.get("tr", ""), w["de"], w.get("kat", ""), -1, w.get("emoji", ""), w.get("stamm", ""), w.get("stammTr", "")])
 # leere Felder am Ende abschneiden (kleiner)
