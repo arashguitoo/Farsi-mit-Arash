@@ -49,6 +49,8 @@
     </div>
   </section>
 
+  <section class="versteckt" id="wbBox" style="margin-top:14px"><div class="karte" id="wbKarte"></div></section>
+
   <section class="versteckt" id="unterricht"></section>
 
   <div class="bereiche" id="bereiche"></div>
@@ -69,10 +71,13 @@
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
 <script src="assets/core.js"></script>
+<script src="assets/woerterbuch.js"></script>
 <script>
 (function(){
   const F = window.FARSI, { $, $$, esc } = F;
-  let INDEX = null;
+  let INDEX = null, WB_DRIN = false;
+  /* Lektionswörter im Wörterbuch nur aus offenen Lektionen (solange unbekannt: nur das allgemeine Wörterbuch) */
+  const offeneLektionen = () => INDEX ? new Set(INDEX.lektionen.filter(l => F.istOffen(l, FREI, INDEX, FORT)).map(l => l.id)) : new Set();
   try { localStorage.removeItem("farsi_gast_v1"); } catch(e){}   // alter Gast-Modus abgeschafft
   let geprueft = false;
 
@@ -82,13 +87,15 @@
     $("#bereichLogin").classList.toggle("versteckt", !!s);
     $("#bereichHallo").classList.toggle("versteckt", !s);
     $("#bereiche").classList.toggle("versteckt", !s);
-    if (!s) { $("#bereichInhalt").classList.add("versteckt"); $("#bereiche").innerHTML = ""; return; }
+    if (!s) { $("#wbBox").classList.add("versteckt"); $("#bereichInhalt").classList.add("versteckt"); $("#bereiche").innerHTML = ""; return; }
     if (s) {
       $("#halloFa").innerHTML = `<span class="fa" dir="rtl" style="font-size:inherit;color:inherit">سَلام</span> ${esc(s.name || "")}!`;
       $("#halloText").innerHTML = `<b>${esc(s.name)}</b>${s.klassenName ? " · " + esc(s.klassenName) : ""} · Code <span class="code">${esc(s.code)}</span>`;
       $("#halloFa").setAttribute("dir","ltr");
     }
     zeigeUnterricht(s);
+    $("#wbBox").classList.remove("versteckt");
+    if (!WB_DRIN) { WB_DRIN = true; window.WOERTERBUCH.einbauen($("#wbKarte"), { offen: offeneLektionen, durchblaettern: false }); }
     await zeichnePfad();
   }
 
