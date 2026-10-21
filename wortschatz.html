@@ -50,7 +50,7 @@
     <div class="karte wb" style="margin-top:20px">
       <h3 style="margin:0 0 8px">🔍 Wörterbuch</h3>
       <input class="feld" id="wbSuche" placeholder="Wort suchen – Deutsch, Persisch oder Umschrift …" autocomplete="off" spellcheck="false" style="width:100%">
-      <div class="klein muted" style="margin-top:6px">Sucht in allen Lektionen, die für dich offen sind. Persisch geht auch ohne Vokalzeichen. Tippe auf ein Wort, um es zu hören.</div>
+      <div class="klein muted" style="margin-top:6px">Sucht in deinen Lektionen und im allgemeinen Wörterbuch (<span id="wbAnz">…</span>). Persisch geht auch ohne Vokalzeichen. Tippe auf ein Wort, um es zu hören.</div>
       <div id="wbTreffer"></div>
     </div>
     <div class="karte" style="margin-top:14px">
@@ -176,10 +176,23 @@
   const normFa = x => String(x || "").replace(/[\u064B-\u0652\u0670\u0654\u0655]/g, "").replace(/[\u200c\u200d]/g, " ").replace(/[آأإ]/g, "ا").replace(/ي/g, "ی").replace(/ك/g, "ک").replace(/ة/g, "ه").replace(/\s+/g, " ").trim();
   const normDe = x => String(x || "").toLowerCase().replace(/ä/g, "a").replace(/ö/g, "o").replace(/ü/g, "u").replace(/ß/g, "ss").replace(/[^a-z0-9 ]/g, " ").replace(/\s+/g, " ").trim();
   const normTr = x => String(x || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[ʿʾ'`-]/g, "").replace(/\s+/g, " ").trim();
+  /* Allgemeines Wörterbuch (assets/woerterbuch/grund.json) – immer verfügbar, ergänzt die Lektionswörter */
+  let WB = [];
+  async function ladeWb() {
+    try {
+      const d = await F.ladeJSON("assets/woerterbuch/grund.json");
+      /* Wörter, die es schon in einer Lektion gibt (gleiche Schrift UND ähnliche Bedeutung), nicht doppelt zeigen */
+      const ohneV = x => normFa(x).replace(/ /g, ""), worte = x => normDe(x).split(" ").filter(t => t.length >= 3);
+      const da = {}; WS.forEach(w => { (da[ohneV(w.fa)] = da[ohneV(w.fa)] || []).push(new Set(worte(w.de))); });
+      WB = (d.woerter || d).filter(w => w && w.fa && w.de && !(da[ohneV(w.fa)] || []).some(set => worte(w.de).some(t => set.has(t)))).map(w => Object.assign({ lek: null, wb: true }, w));
+      if ($("#wbSuche")) zeichneWb();
+      const n = $("#wbAnz"); if (n) n.textContent = `${WS.length + WB.length} Wörter`;
+    } catch (e) { console.warn("Wörterbuch nicht geladen", e); }
+  }
   function suche(q) {
     q = String(q || "").trim(); if (!q) return [];
     const istFa = /[\u0600-\u06FF]/.test(q), out = [];
-    WS.forEach(w => {
+    WS.concat(WB).forEach(w => {
       let rang = -1;
       if (istFa) { const a = normFa(w.fa), b = normFa(q); if (a === b) rang = 0; else if (a.startsWith(b)) rang = 1; else if (a.includes(b)) rang = 2; if (rang < 0 && w.stamm && normFa(w.stamm).includes(b)) rang = 3; }
       else {
@@ -192,17 +205,27 @@
       }
       if (rang >= 0) out.push([rang, w]);
     });
-    return out.sort((a, b) => a[0] - b[0] || a[1].fa.length - b[1].fa.length).map(x => x[1]);
+    return out.sort((a, b) => a[0] - b[0] || (a[1].wb ? 1 : 0) - (b[1].wb ? 1 : 0) || a[1].fa.length - b[1].fa.length).map(x => x[1]);
   }
+  let WB_KAT = null;
   function zeichneWb() {
-    const q = $("#wbSuche").value, l = suche(q), max = 40;
-    if (!q.trim()) { $("#wbTreffer").innerHTML = ""; return; }
+    const q = $("#wbSuche").value, max = WB_KAT && !q.trim() ? 2000 : 40;
+    let l;
+    if (!q.trim()) {
+      const alle = WS.concat(WB), kats = [...new Set(alle.map(w => w.kat).filter(Boolean))];
+      const chips = `<div class="wahlreihe" style="margin-top:10px">${kats.map(k => `<button class="tab ${WB_KAT === k ? "an" : ""}" data-wbk="${esc(k)}">${esc(k)} <span class="klein">${alle.filter(w => w.kat === k).length}</span></button>`).join("")}</div>`;
+      if (!WB_KAT) { $("#wbTreffer").innerHTML = WB.length ? `<div class="klein muted" style="margin-top:8px">… oder nach Thema durchblättern:</div>` + chips : ""; verdrahteWbK(); return; }
+      l = alle.filter(w => w.kat === WB_KAT).sort((a, b) => a.de.localeCompare(b.de, "de"));
+      $("#wbTreffer").innerHTML = chips; 
+    } else l = suche(q);
     const lek = id => LEKS.find(x => x.id === id);
-    $("#wbTreffer").innerHTML = l.length ? l.slice(0, max).map(w => `<div class="wb-z" data-say="${esc(w.fa)}"><div><div class="de">${w.emoji ? w.emoji + " " : ""}${esc(w.de)}</div><div class="neben">${w.tr ? `<i>${esc(w.tr)}</i> · ` : ""}${lek(w.lek) ? (/^\d+$/.test(String(lek(w.lek).nummer)) ? "L" : "") + esc(String(lek(w.lek).nummer)) + " " + esc(lek(w.lek).kurz) : ""}${w.stamm ? ` · Präsensstamm <span class="fa" style="font-size:1rem;color:var(--tuerkis)">${esc(w.stamm)}</span>` : ""}</div></div><div class="fa">${esc(w.fa)}</div></div>`).join("")
+    $("#wbTreffer").innerHTML = (WB_KAT && !q.trim() ? $("#wbTreffer").innerHTML : "") + (l.length ? l.slice(0, max).map(w => `<div class="wb-z" data-say="${esc(w.fa)}"><div><div class="de">${w.emoji ? w.emoji + " " : ""}${esc(w.de)}</div><div class="neben">${w.tr ? `<i>${esc(w.tr)}</i> · ` : ""}${lek(w.lek) ? (/^\d+$/.test(String(lek(w.lek).nummer)) ? "L" : "") + esc(String(lek(w.lek).nummer)) + " " + esc(lek(w.lek).kurz) : w.wb ? "📖 Wörterbuch" : ""}${w.stamm ? ` · Präsensstamm <span class="fa" style="font-size:1rem;color:var(--tuerkis)">${esc(w.stamm)}</span>` : ""}</div></div><div class="fa">${esc(w.fa)}</div></div>`).join("")
       + (l.length > max ? `<p class="klein muted">… und ${l.length - max} weitere – bitte genauer suchen.</p>` : "")
-      : `<p class="muted" style="margin:8px 0">Kein Treffer in deinen Lektionen.</p>`;
+      : `<p class="muted" style="margin:8px 0">Kein Treffer.</p>`);
     $$("#wbTreffer [data-say]").forEach(e => e.onclick = () => F.sprich(e.dataset.say));
+    verdrahteWbK();
   }
+  function verdrahteWbK() { $$("#wbTreffer [data-wbk]").forEach(b => b.onclick = () => { WB_KAT = WB_KAT === b.dataset.wbk ? null : b.dataset.wbk; zeichneWb(); }); }
   window.WS_SUCHE = suche;
 
   function zeigeListe() {
@@ -246,6 +269,7 @@
     bis = LEKS[LEKS.length - 1].id;
     zeichneAuswahl();
     $("#wbSuche").oninput = zeichneWb;
+    ladeWb();
   }
   window.WS_TRAINER = { start, auswahl: () => auswahl(), starte };
   document.addEventListener("DOMContentLoaded", start);
