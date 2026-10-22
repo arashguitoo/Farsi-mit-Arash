@@ -57,6 +57,11 @@
   .ueben{display:flex;flex-wrap:wrap;gap:6px}
   .ueben span{background:#fff;border:1px solid var(--linie);border-radius:10px;padding:4px 10px}
   .ueben .fa{font-size:1.15rem}
+  .bw{border:1.5px solid var(--linie);background:#fff;border-radius:10px;min-width:46px;height:46px;font:inherit;cursor:pointer;position:relative;opacity:.55}
+  .bw .fa{font-size:1.5rem;line-height:1}
+  .bw.g{opacity:1;border-color:var(--lapis);background:var(--lapis-hell)}
+  .bw.f{opacity:1;border-color:var(--safran);background:var(--safran-hell);box-shadow:0 0 0 2px var(--safran-hell)}
+  .bw i{position:absolute;top:-6px;right:-4px;font-style:normal;font-size:.8rem;color:var(--safran)}
   .regel{background:var(--lapis-hell);border:1px solid #cddcd9;border-radius:12px;padding:10px 14px;margin:10px 0}
   body.ohne-tr .wk .tr{display:none}
 </style>
@@ -108,17 +113,19 @@ window.VOKABEL_ENGINE = (function () {
   const normFa = x => String(x || "").replace(/[\u064B-\u0652\u0670\u0654\u0655\u200c\u200d\s.,!?؟،:;«»()\-–…"'„“]/g, "")
     .replace(/[آأإ]/g, "ا").replace(/ي/g, "ی").replace(/ك/g, "ک").replace(/ة/g, "ه").replace(/ؤ/g, "و").replace(/ئ/g, "ی").replace(/ء/g, "");
   /* woerter: [{id, w:{fa,tr,de,emoji}}], buchst: [{fa,name,laut}] (nur diese Buchstaben gelten als gelernt) */
-  function buchstabenPool(woerter, buchst, regel) {
+  function buchstabenPool(woerter, buchst, regel, fokus) {
     const erlaubt = new Set(buchst.map(b => b.fa)), W = {}, keys = [], gesehen = new Set();
     woerter.forEach(({ id, w }) => {
       if (!w || !w.fa || !w.de) return;
-      const n = normFa(w.fa); if (n.length < 2 || gesehen.has(n)) return;
+      const n = normFa(w.fa); if (n.length < 2 || n.length > 8 || /\s/.test(w.fa.trim()) || gesehen.has(n)) return;
       if (![...n].every(c => erlaubt.has(c))) return;   /* nur Wörter aus schon gelernten Buchstaben */
       gesehen.add(n); W[id] = w; keys.push(id);
     });
     const passt = (k, b) => { const n = normFa((W[k] || {}).fa); return regel === "anfang" ? n[0] === b : n.includes(b); };
     const byKat = {}; buchst.forEach(b => { byKat[b.fa] = keys.filter(k => passt(k, b.fa)); });
-    const karteKats = buchst.map(b => b.fa).filter(b => byKat[b].length >= 2);
+    /* Mittelkarten: nur die Fokus-Buchstaben (neu gelernt), sonst alle gewählten */
+    const mitte = (fokus && fokus.length ? fokus : buchst.map(b => b.fa)).filter(b => byKat[b]);
+    let karteKats = mitte.filter(b => byKat[b].length >= 2); if (!karteKats.length) karteKats = mitte.filter(b => byKat[b].length >= 1);
     const info = {}; buchst.forEach(b => { info[b.fa] = b; });
     return { W, keys, byKat, karteKats, karteKeys: keys, passt, modus: "buchstabe", info, regel };
   }
@@ -139,6 +146,11 @@ window.VOKABEL_ENGINE = (function () {
   /* --- Spiel 2: Karte in die Mitte --- */
   function karteHand(P, seed, n = 8, ohne = []) {
     const r = rng(seed), kats = mischen(P.karteKats, r), hand = [];
+    if (P.modus === "buchstabe") {   /* gemischt: Wörter mit und ohne die Mittel-Buchstaben */
+      const frei = P.keys.filter(k => !ohne.includes(k)), mit = mischen(frei.filter(k => P.karteKats.some(b => P.passt(k, b))), r), ohneB = mischen(frei.filter(k => !P.karteKats.some(b => P.passt(k, b))), r);
+      while (hand.length < n && (mit.length || ohneB.length)) { if (mit.length && (hand.length % 3 !== 2 || !ohneB.length)) hand.push(mit.shift()); else if (ohneB.length) hand.push(ohneB.shift()); }
+      return hand.concat(mischen(P.keys.filter(k => ohne.includes(k) && !hand.includes(k)), r)).slice(0, n);
+    }
     /* aus mehreren Kategorien mischen, damit fast jede Karte in der Mitte jemandem etwas bringt */
     let i = 0, schutz = 0;
     while (hand.length < n && schutz++ < 400) {
@@ -190,7 +202,15 @@ window.VOKABEL_ENGINE = (function () {
 
   /* ---------- Wortschatz laden ---------- */
   async function index() { return INDEX || (INDEX = await F.ladeJSON("lektionen/index.json")); }
-  const poolSchluessel = (leks, o) => leks + "|" + (o && o.spiel === "buchstabe" ? "b" + o.bis + o.regel : "");
+  const poolSchluessel = (leks, o) => leks + "|" + (o && o.spiel === "buchstabe" ? "b" + (o.buchst || o.bis) + "|" + (o.fokus || "") + o.regel : "");
+  let WB_WOERTER = null;
+  /* alle Einzelwörter aus Lektionen + Wörterbuch (eine Datei) – damit es auch mit wenigen Buchstaben genug Wörter gibt */
+  async function wbWoerter() {
+    if (WB_WOERTER) return WB_WOERTER;
+    try { const d = await F.ladeJSON("assets/woerterbuch/suche.json"); WB_WOERTER = d.w.map((x, i) => ({ id: "w" + i, w: { fa: x[0], tr: x[1] || "", de: x[2], emoji: x[5] || "" } })); }
+    catch (e) { WB_WOERTER = []; }
+    return WB_WOERTER;
+  }
   let ALPHA = null;
   /* Buchstaben aus Lektion 1 (Station für Station) + alle Beispielwörter darin */
   async function alphabet() {
@@ -207,17 +227,19 @@ window.VOKABEL_ENGINE = (function () {
     return (ALPHA = { stationen, woerter });
   }
   async function ladePool(leks, o) {
-    o = o || (G ? { spiel: G.spiel, bis: G.bis, regel: G.regel } : { spiel: SPIEL });
+    o = o || (G ? { spiel: G.spiel, bis: G.bis, buchst: G.buchst, fokus: G.fokus, regel: G.regel } : { spiel: SPIEL });
     const key = poolSchluessel(leks, o);
     if (P && POOL_LEKS === key) return P;
     const ix = await index(), ids = String(leks).split(",").filter(Boolean);
     const daten = await Promise.all(ids.map(async id => { const l = ix.lektionen.find(x => x.id === id); if (!l || !l.wortschatz) return { id, woerter: [] };
       try { const d = await F.ladeJSON("lektionen/" + l.wortschatz); return { id, woerter: d.woerter }; } catch (e) { return { id, woerter: [] }; } }));
     if (o.spiel === "buchstabe") {
-      const A = await alphabet(), bis = Math.max(1, Math.min(o.bis || A.stationen.length, A.stationen.length));
-      const buchst = A.stationen.slice(0, bis).flatMap(s => s.b);
-      const w = A.woerter.concat(daten.flatMap(d => d.woerter.map((x, i) => ({ id: d.id + ":" + i, w: x }))));
-      P = E.buchstabenPool(w, buchst, o.regel);
+      const A = await alphabet(), alle = A.stationen.flatMap(s => s.b);
+      let buchst;
+      if (o.buchst) { const g = String(o.buchst).split("|"); buchst = alle.filter(b => g.includes(b.fa)); }
+      else { const bis = Math.max(1, Math.min(o.bis || A.stationen.length, A.stationen.length)); buchst = A.stationen.slice(0, bis).flatMap(s => s.b); }
+      const w = A.woerter.concat(daten.flatMap(d => d.woerter.map((x, i) => ({ id: d.id + ":" + i, w: x }))), await wbWoerter());
+      P = E.buchstabenPool(w, buchst, o.regel, String(o.fokus || "").split("|").filter(Boolean));
     } else P = E.pool(daten);
     POOL_LEKS = key; return P;
   }
@@ -491,25 +513,52 @@ window.VOKABEL_ENGINE = (function () {
       $$("[data-lek]").forEach(c => c.onchange = () => { c.checked ? AUSWAHL.add(c.dataset.lek) : AUSWAHL.delete(c.dataset.lek); zeichneListe(); });
       $$("[data-alle]").forEach(a => a.onclick = e => { e.preventDefault(); leks.filter(l => l.bereich === a.dataset.alle).forEach(l => AUSWAHL.add(l.id)); zeichneListe(); });
       $$("[data-keine]").forEach(a => a.onclick = e => { e.preventDefault(); leks.filter(l => l.bereich === a.dataset.keine).forEach(l => AUSWAHL.delete(l.id)); zeichneListe(); });
-      $("#anzLek").textContent = AUSWAHL.size;
+      const az = $("#anzLek"); if (az) az.textContent = AUSWAHL.size;
     };
     app().innerHTML = `<div class="karte" style="margin-top:20px"><h2 style="margin-top:0">🎲 Vokabelspiele${istLK ? "" : " – eigene Runde 👑"}</h2>
       <div class="klein-h">1 · Spiel</div><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px">${Object.entries(SPIELE).map(([id, s]) => `<label class="karte" style="cursor:pointer;margin:0;${SPIEL === id ? "border-color:var(--lapis);box-shadow:0 0 0 2px var(--lapis-hell)" : ""}"><input type="radio" name="spiel" value="${id}" ${SPIEL === id ? "checked" : ""}> <b>${s.icon} ${esc(s.titel)}</b><p class="klein" style="margin-bottom:0">${esc(s.text)}</p></label>`).join("")}</div>
-      ${SPIEL === "buchstabe" ? `<div class="klein-h">2 · Welche Buchstaben kennt die Gruppe schon?</div><select class="feld" id="bis" style="max-width:520px">${A.stationen.map((st, i) => `<option value="${i + 1}" ${i === A.stationen.length - 1 ? "selected" : ""}>bis ${esc(st.titel)} · ${st.b.map(b => b.fa).join(" ")}</option>`).join("")}</select>
+      ${SPIEL === "buchstabe" ? `<div class="klein-h">2 · Welche Buchstaben kennt die Gruppe schon?</div>
+        <p class="klein muted" style="margin:0 0 8px">Tippen: <b>1×</b> = gelernt (darf in den Wörtern vorkommen) · <b>2×</b> = ★ neu/Fokus (kommt als Karte in die Mitte) · <b>3×</b> = aus. Ohne ★ kommen alle gelernten Buchstaben in die Mitte. Deine Auswahl wird gespeichert.</p>
+        <div id="bwahl"></div>
         <div class="klein-h">Regel</div><div class="seg" id="regel"><button data-regel="drin" class="an">Buchstabe kommt im Wort vor</button><button data-regel="anfang">Wort beginnt mit dem Buchstaben</button></div>
-        <div class="klein-h">Wörter: Lektion 1 + gewählte Lektionen (<span id="anzLek">0</span>) – nur Wörter aus schon gelernten Buchstaben</div><div id="lks"></div>`
+        <p class="klein" id="bInfo" style="margin-top:10px"></p><div id="lks" hidden></div>`
       : `<div class="klein-h">2 · Wortschatz aus welchen Lektionen? (<span id="anzLek">0</span> gewählt)</div><div id="lks"></div>`}
       <div class="btnreihe" style="margin-top:14px"><button class="btn" id="anlegen">▶ Runde anlegen</button></div><p class="klein" id="poolInfo" style="color:var(--granat)"></p></div>`;
     $$("[name=spiel]").forEach(r => r.onchange = () => { SPIEL = r.value; if (SPIEL === "buchstabe" && !AUSWAHL.size) AUSWAHL.add("01"); zeichneEinrichten(); });
-    $$("#regel button").forEach(b => b.onclick = () => { $$("#regel button").forEach(x => x.classList.remove("an")); b.classList.add("an"); });
+    $$("#regel button").forEach(b => b.onclick = () => { $$("#regel button").forEach(x => x.classList.remove("an")); b.classList.add("an"); if (SPIEL === "buchstabe") zeichneBuchst(); });
+    /* ---- Buchstaben einzeln wählen (gelernt / ★ Fokus) ---- */
+    const LSB = "farsi_buchst_wahl_v1";
+    let BW = {}; try { BW = JSON.parse(localStorage.getItem(LSB) || "{}"); } catch (e) { BW = {}; }
+    const zeichneBuchst = async () => {
+      if (SPIEL !== "buchstabe") return;
+      $("#bwahl").innerHTML = A.stationen.map((st, si) => `<div style="display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin:6px 0"><button class="btn zwei klein" data-bis="${si}" title="alle Buchstaben bis hier als gelernt markieren" style="min-width:92px">bis ${si + 1} ✓</button>
+        ${st.b.map(b => `<button class="bw ${BW[b.fa] || ""}" data-bw="${esc(b.fa)}" title="${esc(b.name)} · ${esc(b.laut)}"><span class="fa">${esc(b.fa)}</span>${BW[b.fa] === "f" ? "<i>★</i>" : ""}</button>`).join("")}<span class="klein muted">${esc(st.titel.replace(/^Die /, ""))}</span></div>`).join("")
+        + `<div class="btnreihe" style="margin-top:6px"><button class="btn zwei klein" id="bwKeine">alle aus</button><button class="btn zwei klein" id="bwFokusWeg">★ entfernen</button></div>`;
+      $$("[data-bw]").forEach(b => b.onclick = () => { const x = b.dataset.bw; BW[x] = !BW[x] ? "g" : BW[x] === "g" ? "f" : ""; if (!BW[x]) delete BW[x]; merk(); });
+      $$("[data-bis]").forEach(b => b.onclick = () => { A.stationen.forEach((st, si) => st.b.forEach(x => { if (si <= +b.dataset.bis) { if (!BW[x.fa]) BW[x.fa] = "g"; } else delete BW[x.fa]; })); merk(); });
+      $("#bwKeine").onclick = () => { BW = {}; merk(); };
+      $("#bwFokusWeg").onclick = () => { Object.keys(BW).forEach(k => { if (BW[k] === "f") BW[k] = "g"; }); merk(); };
+      const g = Object.keys(BW), f = g.filter(k => BW[k] === "f");
+      if (!g.length) { $("#bInfo").textContent = "Noch keine Buchstaben gewählt."; return; }
+      try { await ladePool("01", { spiel: "buchstabe", buchst: g.join("|"), fokus: f.join("|"), regel: $("#regel .an").dataset.regel }); } catch (e) { }
+      $("#bInfo").innerHTML = `<b>${P.keys.length} Wörter</b> bestehen nur aus diesen ${g.length} Buchstaben · in die Mitte kommen: <span class="fa" style="font-size:1.2rem">${P.karteKats.join(" ") || "–"}</span>` + (P.keys.length < 6 ? ` <span style="color:var(--granat)">– zu wenige, bitte mehr Buchstaben wählen</span>` : "")
+        + (P.keys.length ? `<br><span class="klein muted">z. B. <span class="fa">${P.keys.slice(0, 12).map(k => esc(P.W[k].fa)).join(" · ")}</span></span>` : "");
+    };
+    const merk = () => { try { localStorage.setItem(LSB, JSON.stringify(BW)); } catch (e) { } zeichneBuchst(); };
+    zeichneBuchst();
     zeichneListe();
     $("#anlegen").onclick = async () => {
       const leks = ix.lektionen.filter(l => AUSWAHL.has(l.id)).map(l => l.id).join(",");
       if (!leks) return $("#poolInfo").textContent = "Bitte mindestens eine Lektion wählen.";
       $("#anlegen").disabled = true;
-      const extra = SPIEL === "buchstabe" ? { bis: +$("#bis").value, regel: $("#regel .an").dataset.regel } : {};
+      let extra = {};
+      if (SPIEL === "buchstabe") {
+        const g = Object.keys(BW), f = g.filter(k => BW[k] === "f");
+        if (!g.length) { $("#anlegen").disabled = false; return $("#poolInfo").textContent = "Bitte zuerst Buchstaben wählen."; }
+        extra = { buchst: g.join("|"), fokus: f.join("|") || null, regel: $("#regel .an").dataset.regel };
+      }
       try { await ladePool(leks, Object.assign({ spiel: SPIEL }, extra)); } catch (e) { return fehler(e, true); }
-      if (P.keys.length < 12 || (istKarte() && P.karteKats.length < 3)) { $("#anlegen").disabled = false; return $("#poolInfo").textContent = SPIEL === "buchstabe" ? `Nur ${P.keys.length} Wörter mit diesen Buchstaben – bitte mehr Buchstaben oder Lektionen wählen.` : SPIEL === "karte" ? "Zu wenige Themen in diesen Lektionen – bitte mehr Lektionen wählen." : "Zu wenige Wörter – bitte mehr Lektionen wählen."; }
+      if (SPIEL === "buchstabe" ? (P.keys.length < 6 || !P.karteKats.length) : (P.keys.length < 12 || (istKarte() && P.karteKats.length < 3))) { $("#anlegen").disabled = false; return $("#poolInfo").textContent = SPIEL === "buchstabe" ? `Nur ${P.keys.length} Wörter mit diesen Buchstaben – bitte mehr Buchstaben oder Lektionen wählen.` : SPIEL === "karte" ? "Zu wenige Themen in diesen Lektionen – bitte mehr Lektionen wählen." : "Zu wenige Wörter – bitte mehr Lektionen wählen."; }
       const d = Object.assign({ erstellt: Date.now(), phase: "lobby", spiel: SPIEL, leks, stufe: "leicht", optionen: 4, groesse: 2, spieler: {} }, extra);
       if (!istLK) { d.host = ME.id; d.spieler[ME.id] = { name: ME.name, ts: Date.now() }; }
       try { CODE = await LT.neueRunde(gRef, d); } catch (e) { return fehler(e, true); }
@@ -520,7 +569,7 @@ window.VOKABEL_ENGINE = (function () {
   }
   function lobbyEinstellungen() {
     const s = SPIELE[SPIEL];
-    return `<div class="karte"><h2 style="margin-top:0">${s.icon} ${esc(s.titel)}</h2><p class="klein muted">${P ? P.keys.length : "?"} Wörter aus ${String(G.leks).split(",").length} Lektion(en)${SPIEL === "karte" && P ? ` · ${P.karteKats.length} Themen` : ""}${SPIEL === "buchstabe" && P ? ` · Buchstaben: <span class="fa">${P.karteKats.join(" ")}</span> · ${G.regel === "anfang" ? "Wortanfang" : "irgendwo im Wort"}` : ""}</p>
+    return `<div class="karte"><h2 style="margin-top:0">${s.icon} ${esc(s.titel)}</h2><p class="klein muted">${P ? P.keys.length : "?"} Wörter${SPIEL === "buchstabe" ? "" : ` aus ${String(G.leks).split(",").length} Lektion(en)`}${SPIEL === "karte" && P ? ` · ${P.karteKats.length} Themen` : ""}${SPIEL === "buchstabe" && P ? ` · gelernt: <span class="fa">${esc(String(G.buchst || "").split("|").join(" "))}</span> · in der Mitte: <span class="fa">${P.karteKats.join(" ")}</span> · ${G.regel === "anfang" ? "Wortanfang" : "irgendwo im Wort"}` : ""}</p>
       <div style="display:flex;gap:18px;flex-wrap:wrap">
         <div><div class="klein-h">Stufe</div><div class="seg"><button class="${!G.stufe || G.stufe === "leicht" ? "an" : ""}" data-set="stufe|leicht">${istKarte() ? "leicht · mit deutscher Bedeutung" : "leicht · mit Umschrift"}</button><button class="${G.stufe === "schwer" ? "an" : ""}" data-set="stufe|schwer">${istKarte() ? "schwer · nur Persisch" : "schwer · ohne Umschrift"}</button><button class="${G.stufe === "ohne" ? "an" : ""}" data-set="stufe|ohne">${istKarte() ? "ohne Hilfe · nur persische Schrift" : "ohne Hilfe · Antwort selbst schreiben"}</button></div>
           <p class="klein muted" style="margin:6px 0 0;max-width:520px">${G.stufe === "ohne" ? (istKarte() ? "Keine Umschrift, keine deutsche Bedeutung, die Themenkarte nur auf Persisch." : "Keine Umschrift, keine Bilder. Persisch → Deutsch: Antwort wird getippt (Artikel und kleine Tippfehler sind egal). Deutsch → Persisch: Auswahl ohne Umschrift.") : ""}</p></div>

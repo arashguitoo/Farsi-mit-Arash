@@ -255,8 +255,10 @@ Zwei Spiele mit dem Wortschatz (`ws-*.json`) aus **frei wählbaren Lektionen all
   was noch gepasst hätte, und die Hände werden aufgefüllt. Geprüft wird über das Feld `kat` im Wortschatz.
 - **🔤 Buchstaben-Karte** (`?spiel=buchstabe`, Alphabetisierung L1): wie „Karte in die Mitte“, aber in der Mitte liegt ein
   **Buchstabe** (groß, mit Name und Laut). Passend sind Wörter, in denen er vorkommt – oder (Regel „Wortanfang“) die mit ihm
-  beginnen. „Bis Station …“ legt fest, welche Buchstaben (aus `01-alphabet.json`) schon gelernt sind; es kommen nur Wörter vor,
-  die ganz aus diesen Buchstaben bestehen (Beispielwörter aus L1 + Wortschatz der gewählten Lektionen; آ zählt als ا).
+  beginnen. Buchstaben **einzeln wählbar** (1× tippen = gelernt, 2× = ★ neu/Fokus, 3× = aus; „bis n ✓“ markiert alle bis Station n;
+  die Auswahl wird im Browser gespeichert). Es kommen nur Wörter (max. 8 Buchstaben, ein Wort) vor, die ganz aus gelernten
+  Buchstaben bestehen – aus L1, allen Lektionen und dem Wörterbuch (`suche.json`); in die Mitte kommen nur die ★-Buchstaben
+  (ohne ★: alle gelernten). Schon mit ا ب د م ر gibt es ~50 Wörter. آ zählt als ا.
   Für echte Leseübung: Stufe „schwer“ (ohne Bedeutung) oder „ohne Hilfe“ (nur Schrift, keine Umschrift).
 - **Stufen:** leicht / schwer (Umschrift bzw. deutsche Bedeutung auf den Handkarten) / **ohne Hilfe**:
   keine Umschrift, keine Bilder, keine deutsche Bedeutung. Im Duell wird Persisch → Deutsch **frei getippt**
