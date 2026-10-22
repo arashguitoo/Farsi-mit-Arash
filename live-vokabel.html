@@ -62,6 +62,10 @@
   .bw.g{opacity:1;border-color:var(--lapis);background:var(--lapis-hell)}
   .bw.f{opacity:1;border-color:var(--safran);background:var(--safran-hell);box-shadow:0 0 0 2px var(--safran-hell)}
   .bw i{position:absolute;top:-6px;right:-4px;font-style:normal;font-size:.8rem;color:var(--safran)}
+  table.stat{width:100%;border-collapse:collapse;font-size:.92rem}
+  table.stat th,table.stat td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--linie)}
+  table.stat th{font-size:.78rem;color:var(--tinte2);text-transform:uppercase}
+  @media print{.kopf,.nodruck,.lt-werkzeug,#lt-offline{display:none!important}}
   .regel{background:var(--lapis-hell);border:1px solid #cddcd9;border-radius:12px;padding:10px 14px;margin:10px 0}
   body.ohne-tr .wk .tr{display:none}
 </style>
@@ -184,6 +188,7 @@ window.VOKABEL_ENGINE = (function () {
   let SPIEL = ["karte", "buchstabe"].includes(qs.get("spiel")) ? qs.get("spiel") : "duell";
   const istKarte = () => SPIEL === "karte" || SPIEL === "buchstabe";
   let CODE = (qs.get("code") || "").replace(/\D/g, "") || null;
+  let STAT = false;
   let G = null, REF = null, ME = null, P = null, POOL_LEKS = "", INDEX = null, TISCH_ANSICHT = null;
   const app = () => $("#app");
   const gRef = c => F.ref(`live/vokabel/${c}`);
@@ -392,7 +397,7 @@ window.VOKABEL_ENGINE = (function () {
       if (!x || (x.zug || 0) !== Z0.zug || !x.wurf) return x ? undefined : x;
       const liste = String(x.wurf.opts).split("|"), k = x.wurf.k, sp = E.liste(x.sp), werfer = sp[(x.zug || 0) % sp.length];
       x.punkte = x.punkte || {}; const log = arrV(x.log);
-      Object.entries(x.wurf.antw || {}).forEach(([id, a]) => { const ok = typeof a === "string" ? a[0] === "+" : liste[a] === k; if (ok) x.punkte[id] = (x.punkte[id] || 0) + 1; log.push({ p: id, k, ok }); });
+      Object.entries(x.wurf.antw || {}).forEach(([id, a]) => { const ok = typeof a === "string" ? a[0] === "+" : liste[a] === k; if (ok) x.punkte[id] = (x.punkte[id] || 0) + 1; log.push({ p: id, k, ok, ri: E.richtungFuer(x.zug || 0), ts: Date.now() }); });
       x.log = log.slice(-300); x.wurf = null; x.zug = (x.zug || 0) + 1; return x;
     }).catch(e => fehler(e));
   }
@@ -445,7 +450,7 @@ window.VOKABEL_ENGINE = (function () {
       const g = Array.isArray(x.mitte.gelegt) ? x.mitte.gelegt.filter(Boolean) : Object.values(x.mitte.gelegt || {});
       g.push({ p: ME.id, k, ok }); x.mitte.gelegt = g;
       x.punkte = x.punkte || {}; x.punkte[ME.id] = (x.punkte[ME.id] || 0) + (ok ? 1 : -1);
-      const log = arrV(x.log); log.push({ p: ME.id, k, ok }); x.log = log.slice(-300);
+      const log = arrV(x.log); log.push({ p: ME.id, k, ok, c: x.mitte.kat, ts: Date.now() }); x.log = log.slice(-300);
       ergebnis = { ok, kat: P.W[k] && P.W[k].kat, b: x.mitte.kat }; return x;
     }).catch(e => fehler(e));
     if (ergebnis && !ergebnis.ok && P.modus === "buchstabe") toast(`Passt nicht – ${P.regel === "anfang" ? "das Wort beginnt nicht mit" : "in diesem Wort steckt kein"} ${ergebnis.b}. −1`);
@@ -458,7 +463,7 @@ window.VOKABEL_ENGINE = (function () {
       const sp = E.liste(x.sp), zug = (x.zug || 0) + 1, log = arrV(x.log);
       x.haende = x.haende || {};
       sp.forEach(id => { const h = E.liste(x.haende[id]);
-        h.filter(k => P.passt(k, x.mitte.kat)).forEach(k => log.push({ p: id, k, ok: false, verpasst: true }));
+        h.filter(k => P.passt(k, x.mitte.kat)).forEach(k => log.push({ p: id, k, ok: false, verpasst: true, c: x.mitte.kat }));
         const neu = E.karteHand(P, seedT(tid, id + "|" + zug), 8 - h.length, h); x.haende[id] = h.concat(neu).slice(0, 8).join("|"); });
       x.log = log.slice(-300); x.mitte = null; x.zug = zug; return x;
     }).catch(e => fehler(e));
@@ -488,6 +493,34 @@ window.VOKABEL_ENGINE = (function () {
     const z = {};
     Object.values(G.teams || {}).forEach(t => (Array.isArray(t.log) ? t.log : Object.values(t.log || {})).forEach(e => { if (e && !e.ok && (!nurId || e.p === nurId) && P.W[e.k]) z[e.k] = (z[e.k] || 0) + 1; }));
     return Object.entries(z).sort((a, b) => b[1] - a[1]).map(([k]) => k).slice(0, 40);
+  }
+  /* ---------- Statistik für die Lehrkraft ---------- */
+  function alleLogs() { const l = []; Object.entries(G.teams || {}).forEach(([tid, t]) => arrV(t.log).forEach(e => { if (e && e.p) l.push(Object.assign({ tid }, e)); })); return l; }
+  function statHtml() {
+    const L = alleLogs(), istK = SPIEL !== "duell", pz = n => n == null || isNaN(n) ? "–" : Math.round(n * 100) + " %";
+    const farbe = q => q >= .75 ? "var(--gruen)" : q >= .5 ? "var(--safran)" : "var(--granat)";
+    const pro = {}; SP().forEach(([id]) => { pro[id] = { r: 0, f: 0, v: 0 }; });
+    L.forEach(e => { const x = pro[e.p] || (pro[e.p] = { r: 0, f: 0, v: 0 }); if (e.ok) x.r++; else if (e.verpasst) x.v++; else x.f++; });
+    const zeilen = Object.entries(pro).map(([id, x]) => ({ id, ...x, n: x.r + x.f + x.v, q: (x.r + x.f + x.v) ? x.r / (x.r + x.f + x.v) : null })).sort((a, b) => (a.q ?? 2) - (b.q ?? 2));
+    let h = `<div class="karte" style="margin-top:12px"><div style="display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap"><h3 style="margin:0">📊 Statistik</h3><button class="btn zwei klein nodruck" id="statDruck">🖨️ drucken</button></div>
+      <p class="klein muted">${istK ? "richtig = passendes Wort geworfen · falsch = unpassendes Wort geworfen · übersehen = passendes Wort lag noch in der Hand" : "richtig/falsch = beantwortete Wörter"} · ${L.length} Aktionen</p>
+      <table class="stat"><thead><tr><th>Person</th><th>✅ richtig</th><th>❌ falsch</th>${istK ? "<th>👀 übersehen</th>" : ""}<th>Quote</th></tr></thead><tbody>
+      ${zeilen.map(z => `<tr><td><b>${esc(name(z.id))}</b></td><td>${z.r}</td><td>${z.f}</td>${istK ? `<td>${z.v}</td>` : ""}<td><b style="color:${z.q == null ? "inherit" : farbe(z.q)}">${pz(z.q)}</b></td></tr>`).join("")}</tbody></table>`;
+    if (istK) {
+      const kc = {}; L.forEach(e => { if (!e.c) return; const x = kc[e.c] || (kc[e.c] = { r: 0, f: 0, v: 0 }); if (e.ok) x.r++; else if (e.verpasst) x.v++; else x.f++; });
+      const ks = Object.entries(kc).map(([c, x]) => ({ c, ...x, q: x.r / Math.max(1, x.r + x.f + x.v) })).sort((a, b) => a.q - b.q);
+      if (ks.length) h += `<div class="klein-h">${SPIEL === "buchstabe" ? "Pro Buchstabe" : "Pro Themenkarte"} (schwierigste zuerst)</div><table class="stat"><thead><tr><th>${SPIEL === "buchstabe" ? "Buchstabe" : "Thema"}</th><th>✅</th><th>❌</th><th>👀</th><th>Quote</th></tr></thead><tbody>
+        ${ks.map(k => `<tr><td>${SPIEL === "buchstabe" ? `<span class="fa" style="font-size:1.4rem">${esc(k.c)}</span>` : esc(k.c)}</td><td>${k.r}</td><td>${k.f}</td><td>${k.v}</td><td><b style="color:${farbe(k.q)}">${pz(k.q)}</b></td></tr>`).join("")}</tbody></table>`;
+      /* falsch geworfene Wörter je Person */
+      const fw = {}; L.forEach(e => { if (!e.ok && !e.verpasst && P.W[e.k]) (fw[e.p] = fw[e.p] || []).push(e); });
+      if (Object.keys(fw).length) h += `<div class="klein-h">Falsch geworfen</div>${Object.entries(fw).map(([id, l]) => `<div style="margin:4px 0"><b>${esc(name(id))}:</b> ${l.map(e => `<span class="fa">${esc(P.W[e.k].fa)}</span> <span class="klein muted">(${esc(P.W[e.k].de)}${e.c ? " → " + esc(e.c) : ""})</span>`).join(" · ")}</div>`).join("")}`;
+    } else {
+      const ri = { de: { r: 0, n: 0 }, fa: { r: 0, n: 0 } }; L.forEach(e => { if (e.ri && ri[e.ri]) { ri[e.ri].n++; if (e.ok) ri[e.ri].r++; } });
+      if (ri.de.n + ri.fa.n) h += `<p class="klein">Deutsch → Persisch: <b>${pz(ri.de.r / Math.max(1, ri.de.n))}</b> richtig (${ri.de.n}) · Persisch → Deutsch: <b>${pz(ri.fa.r / Math.max(1, ri.fa.n))}</b> richtig (${ri.fa.n})</p>`;
+    }
+    const u = uebenListe(null);
+    if (u.length) h += `<div class="klein-h">Schwierige Wörter</div><div class="ueben">${u.slice(0, 25).map(k => `<span><span class="fa">${esc(P.W[k].fa)}</span> – ${esc(P.W[k].de)}</span>`).join("")}</div>`;
+    return h + `</div>`;
   }
   function endeHtml(ichId) {
     const r = rangliste(), u = uebenListe(ichId);
@@ -523,7 +556,9 @@ window.VOKABEL_ENGINE = (function () {
         <div class="klein-h">Regel</div><div class="seg" id="regel"><button data-regel="drin" class="an">Buchstabe kommt im Wort vor</button><button data-regel="anfang">Wort beginnt mit dem Buchstaben</button></div>
         <p class="klein" id="bInfo" style="margin-top:10px"></p><div id="lks" hidden></div>`
       : `<div class="klein-h">2 · Wortschatz aus welchen Lektionen? (<span id="anzLek">0</span> gewählt)</div><div id="lks"></div>`}
-      <div class="btnreihe" style="margin-top:14px"><button class="btn" id="anlegen">▶ Runde anlegen</button></div><p class="klein" id="poolInfo" style="color:var(--granat)"></p></div>`;
+      <div class="btnreihe" style="margin-top:14px"><button class="btn" id="anlegen">▶ Runde anlegen</button></div><p class="klein" id="poolInfo" style="color:var(--granat)"></p></div>
+      ${istLK ? `<div class="karte" style="margin-top:14px"><h3 style="margin-top:0">📊 Frühere Runden</h3><p class="klein muted">Auch Runden, die die Teilnehmenden ohne dich gespielt haben (👑 eigene Runde). Antippen = Ergebnis und Statistik ansehen.</p><div id="frueher" class="klein muted">Lade …</div></div>` : ""}`;
+    if (istLK) zeigeFruehere();
     $$("[name=spiel]").forEach(r => r.onchange = () => { SPIEL = r.value; if (SPIEL === "buchstabe" && !AUSWAHL.size) AUSWAHL.add("01"); zeichneEinrichten(); });
     $$("#regel button").forEach(b => b.onclick = () => { $$("#regel button").forEach(x => x.classList.remove("an")); b.classList.add("an"); if (SPIEL === "buchstabe") zeichneBuchst(); });
     /* ---- Buchstaben einzeln wählen (gelernt / ★ Fokus) ---- */
@@ -566,6 +601,19 @@ window.VOKABEL_ENGINE = (function () {
       if (!istLK) LT.verbindung(gRef(CODE).child("spieler/" + ME.id));
       hoere(CODE);
     };
+  }
+  async function zeigeFruehere() {
+    const box = $("#frueher"); if (!box) return;
+    let d = {};
+    try { d = (await F.mitTimeout(F.ref("live/vokabel").orderByChild("erstellt").limitToLast(30).once("value"), 9000)).val() || {}; } catch (e) { box.textContent = "Konnte nicht geladen werden."; return; }
+    const l = Object.entries(d).filter(([, g]) => g && g.erstellt).sort(([, a], [, b]) => b.erstellt - a.erstellt);
+    if (!l.length) { box.textContent = "Noch keine Runden."; return; }
+    const titel = { duell: "🎯 Wort-Duell", karte: "🃏 Karte in die Mitte", buchstabe: "🔤 Buchstaben-Karte" };
+    box.classList.remove("muted");
+    box.innerHTML = `<table class="stat"><thead><tr><th>Datum</th><th>Spiel</th><th>Wer</th><th>Aktionen</th><th></th></tr></thead><tbody>${l.map(([c, g]) => {
+      const sp = Object.values(g.spieler || {}).filter(x => x && x.name), n = Object.values(g.teams || {}).reduce((s, t) => s + arrV(t.log).length, 0);
+      const host = g.host && g.spieler && g.spieler[g.host] ? ` · 👑 ${esc(g.spieler[g.host].name)}` : "";
+      return `<tr><td>${new Date(g.erstellt).toLocaleString("de-DE", { day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit" })}</td><td>${titel[g.spiel] || esc(g.spiel)}${g.phase === "ende" ? "" : g.phase === "lobby" ? " <span class='muted'>(nicht gestartet)</span>" : " <span class='muted'>(läuft/offen)</span>"}</td><td>${sp.map(x => esc(x.name)).join(", ") || "–"}${host}</td><td>${n}</td><td><a href="?leitung=1&code=${c}">ansehen</a></td></tr>`; }).join("")}</tbody></table>`;
   }
   function lobbyEinstellungen() {
     const s = SPIELE[SPIEL];
@@ -615,7 +663,7 @@ window.VOKABEL_ENGINE = (function () {
       h += lobbyEinstellungen() + `<div class="karte" style="margin-top:12px"><p>Die Teilnehmenden öffnen <b>🎲 Aktivitäten</b> (oder <b>live-vokabel.html</b>) und geben den Code <b>${CODE}</b> ein. Beim Start werden Tische zu je ${G.groesse || 2} Personen gebildet; wer später kommt, setzt sich an den kleinsten Tisch.</p>
         <h3>Dabei (${sp.length})</h3><div class="tn-zeile">${sp.map(([id, s]) => `<span>${esc(s.name)} <button data-weg="${id}">✕</button></span>`).join("") || `<span class="muted" style="border:0">Noch niemand da …</span>`}</div></div>`;
     } else if (G.phase === "ende") {
-      h += endeHtml(null) + `<div class="btnreihe" style="margin-top:12px"><a class="btn zwei" href="?leitung=1" style="text-decoration:none">Neue Runde</a></div>`;
+      h += endeHtml(null) + statHtml() + `<div class="btnreihe nodruck" style="margin-top:12px"><a class="btn zwei" href="?leitung=1" style="text-decoration:none">Neue Runde</a></div>`;
     } else if (TISCH_ANSICHT && T(TISCH_ANSICHT)) {
       const t = T(TISCH_ANSICHT), l = E.liste(t.sp);
       h += `<div class="btnreihe"><button class="btn zwei klein" id="zurueck">← alle Tische</button></div><h3>👀 ${esc(TISCH_ANSICHT.replace("t", "Tisch "))}: ${l.map(name).map(esc).join(", ")}</h3>
@@ -626,7 +674,8 @@ window.VOKABEL_ENGINE = (function () {
         if (SPIEL === "duell") { const Z = duellZustand(t); st = !Z.w ? `🎯 ${esc(name(Z.werfer))} wählt ein Wort` : Z.fertig ? `✅ aufgelöst: ${esc(P.W[Z.w.k].de)}` : `⏳ ${Object.keys(Z.antw).length}/${Z.antworter.length} geantwortet · „${esc(P.W[Z.w.k].de)}“`; }
         else { const Z = karteZustand(t, tid); st = !Z.m ? `🃏 ${esc(name(Z.leger))} legt eine Karte` : Z.ende ? `✅ Runde vorbei (${esc(Z.m.kat)})` : `🃏 ${esc(Z.m.kat)} · ${Z.gelegt.length} geworfen, noch ${Z.offen} passend`; }
         return `<div class="karte tisch"><h3>${esc(tid.replace("t", "Tisch "))}</h3><p class="status">Runde ${(t.zug || 0) + 1} · ${st}</p>${punkteHtml(t)}<div class="btnreihe"><button class="btn zwei klein" data-schau="${tid}">👀 Bildschirme ansehen</button></div></div>`; }).join("")}</div>
-        <div class="karte" style="margin-top:12px"><div class="klein-h" style="margin-top:0">Werkzeuge</div>${LT.timerSteuerung(G)}
+        ${STAT ? statHtml() : ""}
+        <div class="karte" style="margin-top:12px"><div class="klein-h" style="margin-top:0">Werkzeuge</div><div class="lt-werkzeug"><button class="btn zwei klein" id="statBtn">${STAT ? "📊 Statistik ausblenden" : "📊 Statistik zeigen"}</button></div>${LT.timerSteuerung(G)}
         <div class="lt-werkzeug"><input class="feld" id="msg" placeholder="Nachricht an alle …" style="flex:1;min-width:160px;padding:6px 10px"><button class="btn zwei klein" id="senden">📢 senden</button>${G.nachricht ? `<button class="btn zwei klein" id="msgweg">✕</button>` : ""}<button class="btn zwei klein" id="reload">🔄 Alle Geräte neu laden</button></div></div>`;
     }
     LT.render(app(), h); LT.nachRender();
@@ -637,6 +686,8 @@ window.VOKABEL_ENGINE = (function () {
     if (b("start")) b("start").onclick = () => { b("start").disabled = true; starten().catch(e => fehler(e)); };
     if (b("ende")) b("ende").onclick = () => { if (confirm("Spiel beenden und Ergebnis zeigen?")) upd({ phase: "ende" }); };
     if (b("zurueck")) b("zurueck").onclick = () => { TISCH_ANSICHT = null; zeichne(); };
+    if (b("statBtn")) b("statBtn").onclick = () => { STAT = !STAT; zeichne(); };
+    if (b("statDruck")) b("statDruck").onclick = () => window.print();
     $$("[data-schau]").forEach(x => x.onclick = () => { TISCH_ANSICHT = x.dataset.schau; zeichne(); });
     $$("[data-lt-timer]").forEach(x => x.onclick = () => { const m = +x.dataset.ltTimer; upd({ timer: m ? { ende: Date.now() + m * 60000, text: m + " Minuten" } : null }); });
     if (b("senden")) b("senden").onclick = () => { const t = b("msg").value.trim(); if (t) { upd({ nachricht: { text: t, ts: Date.now() } }); b("msg").value = ""; } };

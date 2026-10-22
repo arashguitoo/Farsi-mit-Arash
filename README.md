@@ -267,6 +267,9 @@ Zwei Spiele mit dem Wortschatz (`ws-*.json`) aus **frei wählbaren Lektionen all
 - **Lehrkraft:** Tische zu 2/3/4/6 Personen werden beim Start gebildet, Nachzügler kommen an den kleinsten Tisch.
   Übersicht aller Tische, 👀 Bildschirme eines Tisches ansehen, Timer, Nachricht, alle neu laden. Am Ende Rangliste und
   „Diese Wörter waren schwierig“ (für jede Person: „… solltest du noch einmal üben“).
+- **📊 Statistik (Lehrkraft):** während des Spiels einblendbar, am Ende automatisch: pro Person richtig/falsch/übersehen + Quote,
+  pro Buchstabe bzw. Themenkarte (schwierigste zuerst), falsch geworfene Wörter, Duell: Quote je Richtung; druckbar.
+  **Frühere Runden** (auch eigene Runden der TN ohne Lehrkraft) stehen auf der Einrichten-Seite der Leitung → „ansehen“.
 - **Eigene Runde:** „👥 Eigene Runde starten“ (mit Zugangscode, ein Tisch für alle). Mitspielen geht auch ohne Zugangscode (Code + Vorname).
 - Firebase: `live/vokabel/{code}` (keine Regeländerung nötig).
 
