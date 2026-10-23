@@ -66,6 +66,16 @@
   table.stat th,table.stat td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--linie)}
   table.stat th{font-size:.78rem;color:var(--tinte2);text-transform:uppercase}
   @media print{.kopf,.nodruck,.lt-werkzeug,#lt-offline{display:none!important}}
+  .bh{border:1px solid var(--linie);border-radius:14px;background:#fff;padding:8px 12px;margin:12px 0}
+  .bh summary{cursor:pointer;font-weight:800}
+  .bh-gitter{display:grid;grid-template-columns:repeat(auto-fill,minmax(92px,1fr));gap:6px;margin-top:6px}
+  .bh-z{border:1px solid var(--linie);border-radius:10px;padding:6px 4px;text-align:center;cursor:pointer;background:#fff}
+  .bh-z .g{font-size:2rem;line-height:1.5;display:block}
+  .bh-z .fo{font-size:1.05rem;color:var(--tinte2);display:block;letter-spacing:.15em}
+  .bh-z .n{font-size:.78rem;font-weight:800}
+  .bh-z .l{font-size:.75rem;color:var(--tinte2)}
+  .bh-z.nv{border-color:#e6c46a;background:var(--safran-hell)}
+  .bh-z.grau{opacity:.35}
   .regel{background:var(--lapis-hell);border:1px solid #cddcd9;border-radius:12px;padding:10px 14px;margin:10px 0}
   body.ohne-tr .wk .tr{display:none}
 </style>
@@ -221,15 +231,16 @@ window.VOKABEL_ENGINE = (function () {
   async function alphabet() {
     if (ALPHA) return ALPHA;
     const ix = await index(), l = ix.lektionen.find(x => x.id === "01"), d = await F.ladeJSON("lektionen/" + l.datei);
-    const stationen = [], woerter = [];
+    const stationen = [], woerter = [], vokale = [];
     d.stationen.forEach((st, si) => {
-      const b = []; st.karten.forEach(k => (k.typ === "buchstaben" ? k.buchstaben : []).forEach(x => { if (!x.fa || x.fa[0] === "ـ") return; const fa = x.fa === "آ" ? "ا" : x.fa; if (!b.some(y => y.fa === fa) && !stationen.some(s => s.b.some(y => y.fa === fa))) b.push({ fa, name: x.fa === "آ" ? "Alef" : x.name, laut: x.laut, nameFa: x.nameFa }); }));
+      const b = []; st.karten.forEach(k => (k.typ === "buchstaben" ? k.buchstaben : []).forEach(x => { if (!x.fa) return; if (x.fa[0] === "ـ") { if (!vokale.some(v => v.fa === x.fa)) vokale.push({ fa: x.fa, name: x.name, laut: x.laut, nameFa: x.nameFa }); return; } if (x.fa === "آ") { if (!vokale.some(v => v.fa === "آ")) vokale.push({ fa: "آ", name: x.name, laut: x.laut, nameFa: x.nameFa }); }
+        const fa = x.fa === "آ" ? "ا" : x.fa; if (!b.some(y => y.fa === fa) && !stationen.some(s => s.b.some(y => y.fa === fa))) b.push({ fa, name: x.fa === "آ" ? "Alef" : x.name, laut: x.fa === "آ" ? "a e o · ā ī ū" : x.laut, nameFa: x.fa === "آ" ? "اَلِف" : x.nameFa, verbindet: x.verbindet !== false && !"ادذرزژو".includes(fa) ? true : false }); }));
       if (b.length) stationen.push({ id: st.id, titel: st.titel, b });
       let n = 0; (function such(o) { if (!o || typeof o !== "object") return; if (Array.isArray(o)) return o.forEach(such);
         if (typeof o.fa === "string" && typeof o.de === "string" && o.tr && !/[ـ]/.test(o.fa) && o.fa.trim().split(/\s+/).length === 1 && !/Vokal|Lücke|Zeichen|Buchstabe|Form|Laut|Endung|ohne|mit /i.test(o.de)) woerter.push({ id: "a" + si + "." + (n++), w: { fa: o.fa.replace(/[.!?؟]/g, ""), tr: o.tr, de: o.de, emoji: o.emoji } });
         Object.values(o).forEach(such); })(st);
     });
-    return (ALPHA = { stationen, woerter });
+    return (ALPHA = { stationen, woerter, vokale });
   }
   async function ladePool(leks, o) {
     o = o || (G ? { spiel: G.spiel, bis: G.bis, buchst: G.buchst, fokus: G.fokus, regel: G.regel } : { spiel: SPIEL });
@@ -256,6 +267,7 @@ window.VOKABEL_ENGINE = (function () {
       if (G && G.spiel) SPIEL = G.spiel;
       if (MODUS !== "leitung") LT.pruefeNeuLaden(G);
       if (G && G.leks && POOL_LEKS !== poolSchluessel(G.leks, G)) { try { await ladePool(G.leks, G); } catch (e) { return fehler(e, true); } }
+      if (!ALPHA && hilfeAn()) { try { await alphabet(); } catch (e) { } }
       if (darfLeiten()) nachzuegler();
       if (LT.tipptGerade(zeichne)) return;
       zeichne();
@@ -494,6 +506,22 @@ window.VOKABEL_ENGINE = (function () {
     Object.values(G.teams || {}).forEach(t => (Array.isArray(t.log) ? t.log : Object.values(t.log || {})).forEach(e => { if (e && !e.ok && (!nurId || e.p === nurId) && P.W[e.k]) z[e.k] = (z[e.k] || 0) + 1; }));
     return Object.entries(z).sort((a, b) => b[1] - a[1]).map(([k]) => k).slice(0, 40);
   }
+  /* ---------- 🔤 Buchstaben & Laute (aufklappbar, für die ersten Lektionen) ---------- */
+  const FRUEHE = new Set(["01", "02", "ez", "03", "04", "05"]);
+  const hilfeAn = () => G && G.hilfe !== false && G.stufe !== "ohne" && (SPIEL === "buchstabe" || String(G.leks || "").split(",").some(l => FRUEHE.has(l)));
+  function hilfeHtml() {
+    if (!hilfeAn() || !ALPHA) return "";
+    const gel = SPIEL === "buchstabe" && G.buchst ? new Set(String(G.buchst).split("|")) : null;
+    const form = b => b.verbindet ? [b.fa, b.fa + "ـ", "ـ" + b.fa + "ـ", "ـ" + b.fa] : [b.fa, b.fa, "ـ" + b.fa, "ـ" + b.fa];
+    const alle = ALPHA.stationen.flatMap(st => st.b), sort = gel ? alle.filter(b => gel.has(b.fa)).concat(alle.filter(b => !gel.has(b.fa))) : alle;
+    return `<details class="bh nodruck" data-merk="bhilfe"><summary>🔤 Buchstaben &amp; Laute <span class="klein muted">– zum Nachschauen aufklappen</span></summary>
+      <p class="klein muted" style="margin:6px 0">Tippen = Namen hören · Formen: allein · Anfang · Mitte · Ende · <span style="color:var(--safran)">ocker</span> = verbindet sich nicht nach links${gel ? " · blass = noch nicht gelernt" : ""}</p>
+      <div class="bh-gitter">${sort.map(b => { const f = form(b); return `<div class="bh-z ${b.verbindet ? "" : "nv"} ${gel && !gel.has(b.fa) ? "grau" : ""}" data-say="${esc(b.nameFa || b.fa)}"><div class="g fa">${esc(b.fa)}</div><div class="fo fa">${f.slice(1).map(esc).join(" ")}</div><div class="n">${esc(b.name)}</div><div class="l">${esc(b.laut)}</div></div>`; }).join("")}</div>
+      ${ALPHA.vokale.length ? `<div class="klein-h">Vokale</div><div class="bh-gitter">${ALPHA.vokale.map(v => `<div class="bh-z" data-say="${esc(v.nameFa || v.fa)}"><div class="g fa">${esc(v.fa)}</div><div class="n">${esc(v.name)}</div><div class="l">${esc(v.laut)}</div></div>`).join("")}</div>` : ""}
+    </details>`;
+  }
+  function verdrahteHilfe() { $$(".bh [data-say]").forEach(e => e.onclick = () => { try { F.sprich(e.dataset.say); } catch (x) { } }); }
+
   /* ---------- Statistik für die Lehrkraft ---------- */
   function alleLogs() { const l = []; Object.entries(G.teams || {}).forEach(([tid, t]) => arrV(t.log).forEach(e => { if (e && e.p) l.push(Object.assign({ tid }, e)); })); return l; }
   function statHtml() {
@@ -623,11 +651,12 @@ window.VOKABEL_ENGINE = (function () {
           <p class="klein muted" style="margin:6px 0 0;max-width:520px">${G.stufe === "ohne" ? (istKarte() ? "Keine Umschrift, keine deutsche Bedeutung, die Themenkarte nur auf Persisch." : "Keine Umschrift, keine Bilder. Persisch → Deutsch: Antwort wird getippt (Artikel und kleine Tippfehler sind egal). Deutsch → Persisch: Auswahl ohne Umschrift.") : ""}</p></div>
         ${SPIEL === "duell" ? `<div><div class="klein-h">Antworten zur Auswahl</div><div class="seg">${[3, 4, 6].map(n => `<button class="${(G.optionen || 4) === n ? "an" : ""}" data-set="optionen|${n}">${n}</button>`).join("")}</div></div>` : ""}
         ${G.stufe === "ohne" ? "" : `<div><div class="klein-h">Umschrift</div><div class="seg"><button class="${ohneTr() ? "" : "an"}" data-set="umschrift|an">an</button><button class="${ohneTr() ? "an" : ""}" data-set="umschrift|aus">aus</button></div></div>`}
+        ${SPIEL === "buchstabe" || String(G.leks || "").split(",").some(l => FRUEHE.has(l)) ? `<div><div class="klein-h">🔤 Buchstaben &amp; Laute zum Aufklappen</div><div class="seg"><button class="${G.hilfe === false ? "" : "an"}" data-set="hilfe|an">an</button><button class="${G.hilfe === false ? "an" : ""}" data-set="hilfe|aus">aus</button></div></div>` : ""}
         ${istLK ? `<div><div class="klein-h">Personen pro Tisch</div><div class="seg">${[2, 3, 4, 6].map(n => `<button class="${(G.groesse || 2) === n ? "an" : ""}" data-set="groesse|${n}">${n}</button>`).join("")}</div></div>` : ""}
       </div></div>`;
   }
   function verdrahteEinstellungen() {
-    $$("[data-set]").forEach(b => b.onclick = () => { const [k, v] = b.dataset.set.split("|"); upd({ [k]: k === "umschrift" ? (v === "an" ? null : false) : /^\d+$/.test(v) ? +v : v }); });
+    $$("[data-set]").forEach(b => b.onclick = () => { const [k, v] = b.dataset.set.split("|"); upd({ [k]: k === "umschrift" || k === "hilfe" ? (v === "an" ? null : false) : /^\d+$/.test(v) ? +v : v }); });
     $$("[data-weg]").forEach(b => b.onclick = () => gRef(CODE).child("spieler/" + b.dataset.weg).set(null).catch(e => fehler(e)));
   }
   async function starten() {
@@ -756,11 +785,12 @@ window.VOKABEL_ENGINE = (function () {
       if (!t || !E.liste(t.sp).includes(ME.id)) h += `<div class="karte" style="margin-top:20px;text-align:center">⏳ Du bekommst gleich einen Platz an einem Tisch …</div>`;
       else {
         const mit = E.liste(t.sp).filter(id => id !== ME.id).map(name);
-        h += `<p class="klein muted" style="margin:10px 0 0">${esc(tid.replace("t", "Tisch "))}${mit.length ? " · mit " + mit.map(esc).join(", ") : ""}</p>` + tischHtml(tid, t, ME.id, false);
+        h += `<p class="klein muted" style="margin:10px 0 0">${esc(tid.replace("t", "Tisch "))}${mit.length ? " · mit " + mit.map(esc).join(", ") : ""}</p>` + tischHtml(tid, t, ME.id, false) + hilfeHtml();
         if (istHost()) h += `<div class="btnreihe" style="margin-top:14px"><button class="btn rot klein" id="ende">⏹ Spiel beenden</button></div>`;
       }
     }
     LT.render(app(), h); LT.nachRender();
+    verdrahteHilfe();
     verdrahteTisch();
     if (istHost()) { verdrahteEinstellungen(); verdrahteLeitung(); }
   }
