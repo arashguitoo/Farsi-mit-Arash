@@ -265,6 +265,10 @@ Zwei Spiele mit dem Wortschatz (`ws-*.json`) aus **frei wählbaren Lektionen all
   Buchstaben bestehen – aus L1, allen Lektionen und dem Wörterbuch (`suche.json`); in die Mitte kommen nur die ★-Buchstaben
   (ohne ★: alle gelernten). Schon mit ا ب د م ر gibt es ~50 Wörter. آ zählt als ا.
   Für echte Leseübung: Stufe „schwer“ (ohne Bedeutung) oder „ohne Hilfe“ (nur Schrift, keine Umschrift).
+- **✍️ Schreib-Quiz in Teams** (`?spiel=schreib`): Jedes Team (= Tisch) sieht ein deutsches Wort (+ Umschrift in Stufe „leicht“)
+  und wählt unter 4 Schreibweisen die richtige. Falschschreibungen werden automatisch aus ähnlichen Buchstaben (ب/پ/ت/ث, س/ش/ص,
+  ر/ز, …), vertauschten, fehlenden oder zusätzlichen Buchstaben gebaut – nur mit gelernten Buchstaben. Wer zuerst tippt, antwortet
+  fürs Team; danach sehen alle die Lösung. 8/10/15/20 Wörter pro Team, Team-Wertung live und am Ende. Buchstabenwahl wie bei der Buchstaben-Karte (★-Buchstaben kommen zuerst dran).
 - **Stufen:** leicht / schwer (Umschrift bzw. deutsche Bedeutung auf den Handkarten) / **ohne Hilfe**:
   keine Umschrift, keine Bilder, keine deutsche Bedeutung. Im Duell wird Persisch → Deutsch **frei getippt**
   (tolerant: Artikel, Groß/klein, ae/ä, 1 Tippfehler, „Lehrer/in“ = „Lehrerin“); Deutsch → Persisch bleibt Auswahl ohne Umschrift.
