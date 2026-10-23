@@ -184,7 +184,7 @@ window.VOKABEL_ENGINE = (function () {
   /* --- Spiel 4: Schreib-Quiz – ähnliche Falschschreibungen erzeugen --- */
   const FAM = ["بپتث", "جچحخ", "دذ", "رزژ", "سشصث", "صض", "طظ", "عغ", "فق", "کگ", "تط", "سصث", "زذضظ", "هح", "اآ", "اوی", "قغ", "عا", "ءئ"];
   const ohneVok = x => String(x || "").replace(/[\u064B-\u0652\u0670]/g, "");
-  function falsche(P, key, seed, n = 3, erlaubt) {
+  function falsche(P, key, seed, n = 3, erlaubt, nurAehnlich) {
     const r = rng(seed), w = ohneVok(P.W[key].fa), echt = new Set(P.keys.map(k => ohneVok(P.W[k].fa))), z = [...w], kand = [];
     const ok = c => !erlaubt || erlaubt.has(c) || c === "آ";
     z.forEach((c, i) => FAM.forEach(f => { if (!f.includes(c)) return; [...f].forEach(d => { if (d !== c && ok(d) && (d !== "آ" || i === 0) && !(i === 0 && c === "آ" && d !== "ا")) kand.push({ v: z.slice(0, i).concat(d, z.slice(i + 1)).join(""), p: 0 }); }); }));
@@ -193,7 +193,7 @@ window.VOKABEL_ENGINE = (function () {
     if (z.length > 2) z.forEach((c, i) => { if (c !== "\u200c") kand.push({ v: z.slice(0, i).concat(z.slice(i + 1)).join(""), p: 2 }); });
     ["ا", "و", "ی"].filter(ok).forEach(v => { for (let i = 1; i <= z.length; i++) kand.push({ v: z.slice(0, i).concat(v, z.slice(i)).join(""), p: 2 }); });
     const gesehen = new Set([w]), out = [];
-    for (const pr of [0, 1, 2, 3]) for (const k of mischen(kand.filter(x => x.p === pr), r)) {
+    for (const pr of nurAehnlich ? [0, 3] : [0, 1, 2, 3]) for (const k of mischen(kand.filter(x => x.p === pr), r)) {
       if (out.length >= n) break;
       if (gesehen.has(k.v) || echt.has(k.v) || k.v.length < 1 || /^\u200c|\u200c$/.test(k.v)) continue;
       gesehen.add(k.v); out.push(k.v);
@@ -519,13 +519,21 @@ window.VOKABEL_ENGINE = (function () {
   }
   /* ---------- Spiel 4: Schreib-Quiz in Teams ---------- */
   const anzahlFragen = () => +(G && G.anzahl) || 10;
+  const schwierig = () => (G && G.auswahl) || "leicht";
   function schreibFrage(tid, zug) {
-    /* Reihenfolge pro Team fest: zuerst Wörter mit den ★-Buchstaben */
-    const fok = P.keys.filter(k => P.karteKats.some(b => P.passt(k, b))), rest = P.keys.filter(k => !fok.includes(k));
+    /* Reihenfolge pro Team fest: zuerst Wörter mit den ★-Buchstaben; bei „leicht“ zuerst kurze Wörter */
+    const len = k => E.ohneVok(P.W[k].fa).replace(/\u200c/g, "").length;
+    let basis = P.keys; if (schwierig() === "leicht") { const kurz = basis.filter(k => len(k) <= 4); if (kurz.length >= 8) basis = kurz; }
+    const fok = basis.filter(k => P.karteKats.some(b => P.passt(k, b))), rest = basis.filter(k => !fok.includes(k));
     const folge = E.mischen(fok, E.rng(seedT(tid, "sf"))).concat(E.mischen(rest, E.rng(seedT(tid, "sr"))));
     const k = folge[zug % folge.length];
+    if (schwierig() === "leicht") {   /* andere echte Wörter als Auswahl, mit Vokalzeichen */
+      const andere = E.mischen(basis.filter(x => x !== k && E.ohneVok(P.W[x].fa) !== E.ohneVok(P.W[k].fa)), E.rng(seedT(tid, "a" + zug))).slice(0, 3);
+      const opts = E.mischen([k].concat(andere), E.rng(seedT(tid, "o" + zug)));
+      return { k, opts: opts.map(x => P.W[x].fa), richtig: opts.indexOf(k) };
+    }
     const erlaubt = G.buchst ? new Set(String(G.buchst).split("|")) : null;
-    const opts = E.mischen([E.ohneVok(P.W[k].fa)].concat(E.falsche(P, k, seedT(tid, "x" + zug), 3, erlaubt)), E.rng(seedT(tid, "o" + zug)));
+    const opts = E.mischen([E.ohneVok(P.W[k].fa)].concat(E.falsche(P, k, seedT(tid, "x" + zug), 3, erlaubt, schwierig() === "mittel")), E.rng(seedT(tid, "o" + zug)));
     return { k, opts, richtig: opts.indexOf(E.ohneVok(P.W[k].fa)) };
   }
   function schreibHtml(tid, t, ich, nurSehen) {
@@ -533,8 +541,8 @@ window.VOKABEL_ENGINE = (function () {
     let h = `<div class="pkt"><span class="dran">👥 Team: ${mit.map(name).map(esc).join(", ")}</span><span>✅ ${t.richtig || 0} von ${Math.min(zug + (t.a ? 1 : 0), N)}</span></div>`;
     if (zug >= N) return h + `<div class="karte" style="text-align:center"><div style="font-size:2.4rem">🏁</div><h2 style="margin:0">Geschafft!</h2><p style="font-size:1.2rem">Euer Team hat <b>${t.richtig || 0} von ${N}</b> richtig.</p><p class="muted">Warte auf die anderen Teams …</p></div>`;
     const F_ = schreibFrage(tid, zug), w = P.W[F_.k], a = t.a;
-    h += `<div class="karte" style="text-align:center"><div class="klein muted">Wort ${zug + 1} von ${N} · Wie schreibt man das auf Persisch?</div>
-      <div class="wurf">${w.emoji ? w.emoji + " " : ""}${esc(w.de)}</div>${w.tr && G.stufe !== "schwer" && G.stufe !== "ohne" ? `<div style="font-size:1.4rem;font-style:italic;color:var(--lapis)">${esc(w.tr)}</div>` : ""}
+    h += `<div class="karte" style="text-align:center"><div class="klein muted">Wort ${zug + 1} von ${N} · Welche Schreibweise ist richtig?</div>
+      ${w.tr && G.stufe !== "schwer" ? `<div class="wurf" style="font-size:2.6rem;color:var(--lapis)">${esc(w.tr)}</div><div class="muted" style="font-size:1.05rem">${w.emoji ? w.emoji + " " : ""}${esc(w.de)}</div>` : `<div class="wurf">${w.emoji ? w.emoji + " " : ""}${esc(w.de)}</div>`}
       <div class="karten" style="margin-top:14px">${F_.opts.map((o, i) => { const kl = a ? (i === F_.richtig ? "ok" : i === a.i ? "falsch" : "weg") : "";
         return `<button class="wk ${kl}" style="min-width:130px" ${a || nurSehen ? "disabled" : `data-schreib="${tid}|${zug}|${i}"`}><span class="fa" style="font-size:2rem">${esc(o)}</span></button>`; }).join("")}</div>`;
     if (a) {
@@ -715,8 +723,9 @@ window.VOKABEL_ENGINE = (function () {
     const s = SPIELE[SPIEL];
     return `<div class="karte"><h2 style="margin-top:0">${s.icon} ${esc(s.titel)}</h2><p class="klein muted">${P ? P.keys.length : "?"} Wörter${istBuchst() ? "" : ` aus ${String(G.leks).split(",").length} Lektion(en)`}${SPIEL === "karte" && P ? ` · ${P.karteKats.length} Themen` : ""}${istBuchst() && P ? ` · gelernt: <span class="fa">${esc(String(G.buchst || "").split("|").join(" "))}</span> · in der Mitte: <span class="fa">${P.karteKats.join(" ")}</span>${SPIEL === "buchstabe" ? ` · ${G.regel === "anfang" ? "Wortanfang" : "irgendwo im Wort"}` : ""}` : ""}</p>
       <div style="display:flex;gap:18px;flex-wrap:wrap">
-        <div><div class="klein-h">Stufe</div><div class="seg"><button class="${!G.stufe || G.stufe === "leicht" ? "an" : ""}" data-set="stufe|leicht">${istKarte() ? "leicht · mit deutscher Bedeutung" : "leicht · mit Umschrift"}</button><button class="${G.stufe === "schwer" ? "an" : ""}" data-set="stufe|schwer">${istKarte() ? "schwer · nur Persisch" : SPIEL === "schreib" ? "schwer · nur Deutsch" : "schwer · ohne Umschrift"}</button>${SPIEL === "schreib" ? "" : `<button class="${G.stufe === "ohne" ? "an" : ""}" data-set="stufe|ohne">${istKarte() ? "ohne Hilfe · nur persische Schrift" : "ohne Hilfe · Antwort selbst schreiben"}</button>`}</div>
+        <div><div class="klein-h">Stufe</div><div class="seg"><button class="${!G.stufe || G.stufe === "leicht" ? "an" : ""}" data-set="stufe|leicht">${istKarte() ? "leicht · mit deutscher Bedeutung" : SPIEL === "schreib" ? "Umschrift zeigen (mādar)" : "leicht · mit Umschrift"}</button><button class="${G.stufe === "schwer" ? "an" : ""}" data-set="stufe|schwer">${istKarte() ? "schwer · nur Persisch" : SPIEL === "schreib" ? "nur Deutsch (Mutter)" : "schwer · ohne Umschrift"}</button>${SPIEL === "schreib" ? "" : `<button class="${G.stufe === "ohne" ? "an" : ""}" data-set="stufe|ohne">${istKarte() ? "ohne Hilfe · nur persische Schrift" : "ohne Hilfe · Antwort selbst schreiben"}</button>`}</div>
           <p class="klein muted" style="margin:6px 0 0;max-width:520px">${G.stufe === "ohne" ? (istKarte() ? "Keine Umschrift, keine deutsche Bedeutung, die Themenkarte nur auf Persisch." : "Keine Umschrift, keine Bilder. Persisch → Deutsch: Antwort wird getippt (Artikel und kleine Tippfehler sind egal). Deutsch → Persisch: Auswahl ohne Umschrift.") : ""}</p></div>
+        ${SPIEL === "schreib" ? `<div><div class="klein-h">Auswahl</div><div class="seg">${[["leicht", "leicht · 4 verschiedene Wörter"], ["mittel", "mittel · 1 Buchstabe anders"], ["schwer", "schwer · vertauscht/fehlt"]].map(([v, t]) => `<button class="${schwierig() === v ? "an" : ""}" data-set="auswahl|${v}">${t}</button>`).join("")}</div></div>` : ""}
         ${SPIEL === "schreib" ? `<div><div class="klein-h">Wörter pro Team</div><div class="seg">${[8, 10, 15, 20].map(n => `<button class="${anzahlFragen() === n ? "an" : ""}" data-set="anzahl|${n}">${n}</button>`).join("")}</div></div>` : ""}
         ${SPIEL === "duell" ? `<div><div class="klein-h">Antworten zur Auswahl</div><div class="seg">${[3, 4, 6].map(n => `<button class="${(G.optionen || 4) === n ? "an" : ""}" data-set="optionen|${n}">${n}</button>`).join("")}</div></div>` : ""}
         ${G.stufe === "ohne" ? "" : `<div><div class="klein-h">Umschrift</div><div class="seg"><button class="${ohneTr() ? "" : "an"}" data-set="umschrift|an">an</button><button class="${ohneTr() ? "an" : ""}" data-set="umschrift|aus">aus</button></div></div>`}
