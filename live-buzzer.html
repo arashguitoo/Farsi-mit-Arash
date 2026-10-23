@@ -195,7 +195,7 @@ window.BUZZER_ENGINE = (function () {
       ${G.phase === "frage" || G.phase === "loesung" ? `<button class="btn zwei klein" id="beamer">${BEAMER ? "⚙️ mit Spickzettel" : "🖥️ Leinwand (ohne Lösung)"}</button><button class="btn rot klein" id="ende">⏹ beenden</button>` : ""}</div></div>`;
     if (G.phase === "lobby") {
       h += `<div class="karte" style="display:grid;grid-template-columns:1fr auto;gap:18px;align-items:center"><div><h2 style="margin-top:0">⚡ ${esc(S.titel)}</h2>
-        <p style="font-size:1.1rem">Öffnet <b>${esc(linkFuer("").replace(/^https?:\/\//, "").replace("?code=", ""))}</b> und gebt den Code <b>${CODE}</b> ein – oder scannt den QR-Code.</p>
+        <p style="font-size:1.1rem">Öffnet <b>${esc(location.host + location.pathname.replace(/[^/]*$/, ""))}code.html</b> und gebt den Code <b>${CODE}</b> ein – oder scannt den QR-Code.</p>
         <p class="klein muted">Richtung: ${G.richtung === "de" ? "Deutsch → Persisch" : G.richtung === "fa" ? "Persisch → Deutsch" : "abwechselnd"} · ${n} Sätze · Tasten: R richtig, H fast, F falsch, L Lösung, Z zufällig aufrufen, Leertaste weiter</p></div><div class="karte" id="qr" style="margin:0;padding:8px"></div></div>
         <div class="karte" style="margin-top:12px"><h3 style="margin-top:0">Dabei (${sp.length})</h3><div style="display:flex;flex-wrap:wrap;gap:8px">${sp.map(([id, s]) => `<span class="typ" style="margin:0;background:#fff;border-color:var(--linie)">${esc(s.name)} <button data-weg="${id}" style="border:0;background:none;cursor:pointer;color:var(--tinte2)">✕</button></span>`).join("") || `<span class="muted">Noch niemand da …</span>`}</div></div>`;
     } else if (G.phase === "ende") {

@@ -215,7 +215,7 @@
     if (BEAMER) return zeichneBeamer(kopf);
     let h = kopf;
     if (G.phase === "lobby") {
-      h += `<div class="karte"><p style="margin-top:0">Die Teilnehmenden öffnen <b>🎲 Aktivitäten</b> auf ihrer Startseite und geben den Code <b>${CODE}</b> ein – oder direkt: <span class="code" style="letter-spacing:0">${esc(link)}</span></p>
+      h += `<div class="karte"><p style="margin-top:0">Die Teilnehmenden öffnen <b>${esc(location.host + location.pathname.replace(/[^/]*$/, ""))}code.html</b> (oder 🎮 Spielcode auf der Startseite) und geben den Code <b>${CODE}</b> ein – oder direkt: <span class="code" style="letter-spacing:0">${esc(link)}</span></p>
         ${laengeWahl()}
         <div class="kopfleiste" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-top:8px"><h3 style="margin:0">Teilnehmende (${sp.length})</h3>
         <div class="btnreihe"><button class="btn zwei klein" id="auto">🎲 Teams automatisch einteilen</button><button class="btn zwei klein" id="team3">+ Team</button></div></div>

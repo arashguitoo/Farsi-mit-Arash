@@ -33,8 +33,13 @@
 </header>
 <main class="wrap" style="padding-bottom:60px">
   <div class="karte" id="hinweis" style="margin-top:18px"></div>
+  <form class="karte" id="codeBox" action="code.html" style="margin-top:12px;display:flex;gap:10px;align-items:center;flex-wrap:wrap">
+    <span style="font-size:1.6rem">🎮</span><b style="flex:1;min-width:180px">Spielcode von der Lehrkraft? Hier eingeben – du landest direkt in der richtigen Aktivität.</b>
+    <input class="feld" name="c" inputmode="numeric" maxlength="4" placeholder="0000" style="max-width:120px;text-align:center;font-size:1.3rem;letter-spacing:.2em" aria-label="Spielcode">
+    <button class="btn" type="submit">Los ➜</button>
+  </form>
   <h2 class="abschnitt">🔴 Live im Unterricht</h2>
-  <p class="klein muted" style="margin-top:-6px">Deine Lehrkraft startet die Aktivität und zeigt dir einen Spielcode.</p>
+  <p class="klein muted" style="margin-top:-6px">Deine Lehrkraft startet die Aktivität und zeigt dir einen Spielcode – den kannst du oben eingeben oder bei der Aktivität selbst.</p>
   <div class="ak-gitter" id="live"></div>
   <h2 class="abschnitt">📎 Zusätzliche Übungen & Material</h2>
   <div class="ak-gitter" id="zusatz"></div>
@@ -85,8 +90,9 @@ const mitQ = (datei, q) => datei + (datei.includes("?") ? "&" : "?") + q;
   if (!(await F.brauchtCode())) return;
   const s = F.sitzung(), lehrkraft = !s;
   if (lehrkraft) $("#zurueck").href = "konsole.html", $("#zurueck").textContent = "← Konsole";
+  if (lehrkraft) $("#codeBox").hidden = true;
   $("#hinweis").innerHTML = lehrkraft
-    ? `<b>Ansicht für Lehrkräfte.</b> Mit „▶ Leitung starten“ eröffnest du eine Runde und bekommst einen Spielcode für den Kurs. Am besten teilst du die Beamer-Ansicht im Online-Raum und schickst die Teams in Breakout-Räume.`
+    ? `<b>Ansicht für Lehrkräfte.</b> Mit „▶ Leitung starten“ eröffnest du eine Runde und bekommst einen Spielcode für den Kurs. Am besten teilst du die Beamer-Ansicht im Online-Raum und schickst die Teams in Breakout-Räume.<br><span class="klein">🎮 <b>Kurzweg für die Teilnehmenden:</b> Sie öffnen <b>${esc(location.host + location.pathname.replace(/[^/]*$/, ""))}code.html</b> (oder „🎮 Spielcode“ auf der Startseite), geben nur deinen vierstelligen Code ein und landen automatisch in der richtigen Aktivität.</span>`
     : `<b>Hallo ${esc(s.name)}!</b> Hier findest du Aktivitäten für den Unterricht und zusätzliches Material.`;
   $("#live").innerHTML = AKTIVITAETEN.live.map(a => `<div class="ak"><div class="ico">${a.icon}</div><h3>${esc(a.titel)}</h3><div class="fa">${esc(a.fa)}</div>
     <div class="klein">${esc(a.text)}</div><div class="tags"><span class="tag live">LIVE</span>${a.tags.map(t => `<span class="tag">${esc(t)}</span>`).join("")}</div>

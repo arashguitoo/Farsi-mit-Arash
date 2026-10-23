@@ -38,13 +38,39 @@
     return false;
   };
 
-  /* ---------- Spielcode ohne Kollision ---------- */
+  /* ---------- Alle Live-Aktivitäten (für den gemeinsamen Spielcode, code.html) ---------- */
+  LT.SPIELE = {
+    truhe: { titel: "Das Geheimnis von Omas Truhe", icon: "🗝️", url: c => `live-truhe.html?code=${c}` },
+    geschenk: { titel: "Das Geburtstagsgeschenk", icon: "🎁", url: c => `live-truhe.html?spiel=geschenk&code=${c}` },
+    gespraech: { titel: "Gesprächs-Simulation", icon: "🗣️", url: c => `live-gespraech.html?code=${c}` },
+    chat: { titel: "Wortsalat-Chat", icon: "💬", url: c => `live-chat.html?code=${c}` },
+    quiz: { titel: "Live-Quiz", icon: "🧭", url: (c, g) => `live-quiz.html?code=${c}${g && g.quiz && g.quiz !== "sprache-verstehen" ? "&quiz=" + encodeURIComponent(g.quiz) : ""}` },
+    vokabel: { titel: "Vokabelspiel", icon: "🎲", url: c => `live-vokabel.html?code=${c}` },
+    buzzer: { titel: "Blitz-Übersetzung", icon: "⚡", url: c => `live-buzzer.html?code=${c}` }
+  };
+  const liveRef = (s, c) => window.FARSI.ref(`live/${s}/${c}`);
+  /* Spielcode in allen Aktivitäten suchen → { spiel, titel, icon, url } oder null (neueste/laufende Runde gewinnt) */
+  LT.findeRunde = async function (c) {
+    c = String(c || "").replace(/\D/g, ""); if (!/^\d{4}$/.test(c)) return null;
+    const tr = await Promise.all(Object.keys(LT.SPIELE).map(async s => { try { const g = (await liveRef(s, c).once("value")).val(); return g ? { s, g } : null; } catch (e) { return null; } }));
+    const da = tr.filter(Boolean).sort((a, b) => ((a.g.phase === "ende") - (b.g.phase === "ende")) || ((b.g.erstellt || 0) - (a.g.erstellt || 0)));
+    if (!da.length) return null;
+    const { s, g } = da[0], S = LT.SPIELE[s];
+    return { spiel: s, titel: S.titel, icon: S.icon, url: S.url(c, g), phase: g.phase };
+  };
+  /* ---------- Spielcode ohne Kollision (über ALLE Aktivitäten eindeutig) ---------- */
   LT.neueRunde = async function (refFn, daten) {
-    for (let v = 0; v < 8; v++) {
+    for (let v = 0; v < 12; v++) {
       const c = String(Math.floor(1000 + Math.random() * 9000));
       const ref = refFn(c);
       let frei = false;
-      try { frei = !(await ref.once("value")).exists(); } catch (e) { frei = false; }
+      try {
+        frei = !(await ref.once("value")).exists();
+        if (frei && window.FARSI && window.FARSI.ref) {
+          const andere = await Promise.all(Object.keys(LT.SPIELE).map(s => liveRef(s, c).once("value").then(x => x.exists()).catch(() => false)));
+          frei = !andere.some(Boolean);
+        }
+      } catch (e) { frei = false; }
       if (!frei) continue;
       await ref.set(daten);
       return c;

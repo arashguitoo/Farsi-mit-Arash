@@ -165,6 +165,11 @@ Kennzahlen (Stationen, Erfolgsquote, Lernserie, Anwesenheit), „Weiterlernen“
 `index.json` enthält dafür je Lektion die Station-IDs des Lernpfads (`haupt`) und die Zahl der Zusatz-Stationen (`zusatzAnz`); beides erzeugt `index_bauen.py`.
 
 ## Aktivitäten (`aktivitaeten.html`)
+- **🎮 Gemeinsamer Spielcode (`code.html`):** TN geben nur den vierstelligen Code ein und landen automatisch in der richtigen
+  Aktivität (Truhe, Geschenk, Gespräch, Chat, Quiz, Vokabelspiele, Buzzer). Auch erreichbar über „🎮 Spielcode“ auf der Startseite,
+  das Feld oben in 🎲 Aktivitäten und `code.html?c=1234` (z. B. als Link/QR). Neue Codes sind über alle Aktivitäten eindeutig
+  (`LIVE_TOOLS.neueRunde`), die Zuordnung steht in `LIVE_TOOLS.SPIELE` (assets/live-tools.js) – neue Aktivität dort eintragen.
+  Der alte Weg (Code direkt bei der Aktivität) bleibt.
 
 Sammelstelle für **Live-Aktivitäten** (die Lehrkraft startet eine Runde und bekommt einen Spielcode) und **zusätzliches Material** (z. B. `material/persisch-schreiben-uebungsheft.pdf`). Neue Einträge oben in `aktivitaeten.html` im Objekt `AKTIVITAETEN` ergänzen. Erreichbar über „🎲 Aktivitäten“ auf der Startseite, in „Mein Bereich“ und in der Konsole.
 

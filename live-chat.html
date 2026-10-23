@@ -374,7 +374,7 @@ window.CHAT_ENGINE = (function () {
   function lobbyHtml() {
     const alle = Object.entries(SP()).filter(([, s]) => s && s.name).sort(([, a], [, b]) => (a.ts || 0) - (b.ts || 0));
     return `<div class="karte"><h3 style="margin-top:0">${istLK ? esc(S.titel) : "👑 Runde einrichten"}</h3>
-      <p>Die Teilnehmenden öffnen <b>🎲 Aktivitäten</b> und geben den Code <b>${CODE}</b> ein.</p>
+      <p>Die Teilnehmenden öffnen <b>${esc(location.host + location.pathname.replace(/[^/]*$/, ""))}code.html</b> (oder 🎮 Spielcode auf der Startseite) und geben den Code <b>${CODE}</b> ein.</p>
       <div style="display:flex;gap:16px;flex-wrap:wrap;align-items:center">
         <div><div class="klein-h" style="margin-top:0">Stufe</div><div class="seg"><button class="${stufe() === "leicht" ? "an" : ""}" data-gstufe="leicht">leicht · Ideen mit Bedeutung</button><button class="${stufe() === "schwer" ? "an" : ""}" data-gstufe="schwer">schwer · nur Absicht</button></div></div>
         <div><div class="klein-h" style="margin-top:0">Vokale</div><div class="seg"><button class="${ohneV() ? "" : "an"}" data-vok="1">an</button><button class="${ohneV() ? "an" : ""}" data-vok="0">aus</button></div></div></div>

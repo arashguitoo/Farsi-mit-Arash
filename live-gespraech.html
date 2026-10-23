@@ -371,7 +371,7 @@
   function lobbyHtml(link) {
     const sp = E.reihe(SP()), alle = Object.entries(SP()).filter(([, x]) => x && x.name).sort(([, a], [, b]) => ((a.reihe ?? 999) - (b.reihe ?? 999)) || ((a.ts || 0) - (b.ts || 0)));
     return `<div class="karte">${istLK ? `<h2 style="margin-top:0">${S.icon} ${esc(S.titel)} <span class="fa" style="color:var(--lapis)">${esc(vk(S.titelFa))}</span></h2>` : `<h3 style="margin-top:0">👑 Runde einrichten</h3>`}
-        <p>Die Teilnehmenden öffnen <b>🎲 Aktivitäten</b> und geben den Code <b>${CODE}</b> ein${istLK ? ` – oder direkt: <span class="code" style="letter-spacing:0">${esc(link)}</span>` : ""}.</p>
+        <p>Die Teilnehmenden öffnen <b>${esc(location.host + location.pathname.replace(/[^/]*$/, ""))}code.html</b> (oder 🎮 Spielcode auf der Startseite) und geben den Code <b>${CODE}</b> ein${istLK ? ` – oder direkt: <span class="code" style="letter-spacing:0">${esc(link)}</span>` : ""}.</p>
         <div style="display:flex;gap:16px;flex-wrap:wrap;align-items:center;margin:10px 0">
           <div><div class="klein-h" style="margin-top:0">Stufe für alle</div><div class="seg">${[1, 2, 3].map(n => `<button class="${(G.stufe || 1) === n ? "an" : ""}" data-gstufe="${n}">${STUFEN[n]}</button>`).join("")}</div></div>
           <div><div class="klein-h" style="margin-top:0">Persisch vokalisiert</div><div class="seg"><button class="${G.vokale === false ? "" : "an"}" data-vok="1">an</button><button class="${G.vokale === false ? "an" : ""}" data-vok="0">aus</button></div></div>

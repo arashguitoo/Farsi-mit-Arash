@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spielcode · Farsi-Lernpfad</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Vazirmatn:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css">
+<style>
+  .code-karte{max-width:440px;margin:40px auto 0;text-align:center}
+  .code-feld{width:100%;max-width:260px;text-align:center;font-size:2.4rem;letter-spacing:.35em;font-weight:800;padding:12px 10px 12px 22px}
+  .code-info{min-height:1.6em;margin-top:12px;font-weight:700}
+  .code-info.nein{color:var(--granat)}
+</style>
+</head>
+<body>
+<header class="kopf">
+  <div class="wrap">
+    <a href="index.html" class="medaillon" style="text-decoration:none">فا</a>
+    <div><h1>Spielcode</h1><div class="unter">Farsi-Lernpfad · Live-Aktivitäten</div></div>
+  </div>
+</header>
+<main class="wrap">
+  <div class="karte code-karte">
+    <div style="font-size:2.6rem">🎮</div>
+    <h2 style="margin:4px 0 6px">Spielcode eingeben</h2>
+    <p class="muted" style="margin-top:0">Den vierstelligen Code bekommst du von deiner Lehrkraft.</p>
+    <form id="f" autocomplete="off">
+      <input class="feld code-feld" id="code" inputmode="numeric" pattern="[0-9]*" maxlength="4" placeholder="0000" aria-label="Spielcode" autofocus>
+      <div style="margin-top:14px"><button class="btn" id="los" type="submit" style="min-width:180px">Los ➜</button></div>
+    </form>
+    <div class="code-info" id="info"></div>
+    <p class="klein muted" style="margin-top:18px"><a href="aktivitaeten.html">Alle Aktivitäten</a> · <a href="index.html">Startseite</a></p>
+  </div>
+</main>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+<script src="assets/core.js"></script>
+<script src="assets/live-tools.js"></script>
+<script>
+(function () {
+  const F = window.FARSI, { $, esc } = F, LT = window.LIVE_TOOLS;
+  F.initFB();
+  const info = (t, nein) => { $("#info").innerHTML = t; $("#info").classList.toggle("nein", !!nein); };
+  let laeuft = false;
+  async function suche(c) {
+    c = String(c || "").replace(/\D/g, "");
+    if (c.length !== 4) return info("Der Spielcode hat vier Ziffern.", true);
+    if (laeuft) return; laeuft = true; $("#los").disabled = true; info("🔍 Suche …");
+    let r = null;
+    try { r = await F.mitTimeout(LT.findeRunde(c), 9000); } catch (e) { r = undefined; }
+    laeuft = false; $("#los").disabled = false;
+    if (r === undefined) return info("Keine Verbindung – bitte noch einmal versuchen.", true);
+    if (!r) return info("Diesen Spielcode gibt es nicht. Bitte noch einmal prüfen.", true);
+    info(`${r.icon} ${esc(r.titel)}${r.phase === "ende" ? " (schon beendet)" : ""} – los geht's …`);
+    setTimeout(() => location.href = r.url, 400);
+  }
+  $("#f").onsubmit = e => { e.preventDefault(); suche($("#code").value); };
+  $("#code").addEventListener("input", e => { const v = e.target.value.replace(/\D/g, "").slice(0, 4); e.target.value = v; if (v.length === 4) suche(v); });
+  const c = new URLSearchParams(location.search).get("c") || new URLSearchParams(location.search).get("code");
+  if (c) { $("#code").value = c; suche(c); }
+})();
+</script>
+</body>
+</html>

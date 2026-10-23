@@ -228,7 +228,7 @@ window.QUIZ_ENGINE = (function () {
     if (G.phase === "lobby") {
       h += `<div class="karte" style="display:grid;grid-template-columns:1fr auto;gap:18px;align-items:center">
         <div><h2 style="margin-top:0">${Q.icon} ${esc(Q.titel)}</h2>
-          <p style="font-size:1.15rem">Öffnet <b>${esc(linkFuer("").replace(/^https?:\/\//, "").replace("?code=", ""))}</b><br>und gebt den Code <b>${CODE}</b> ein – oder scannt den QR-Code.</p>
+          <p style="font-size:1.15rem">Öffnet <b>${esc(location.host + location.pathname.replace(/[^/]*$/, ""))}code.html</b><br>und gebt den Code <b>${CODE}</b> ein – oder scannt den QR-Code.</p>
           <div class="klein-h">Länge</div><div class="seg"><button class="${G.kurz ? "an" : ""}" data-kurz="1">kurz · ${E.liste(Q, true).length} Fragen</button><button class="${G.kurz ? "" : "an"}" data-kurz="0">lang · ${E.liste(Q, false).length} Fragen</button></div>
           <div class="klein-h">Zeit pro Frage</div><div class="seg">${[20, 30, 45, 0].map(z => `<button class="${(G.zeit || 0) === z ? "an" : ""}" data-zeit="${z}">${z ? z + " Sek." : "ohne Zeit"}</button>`).join("")}</div>
           <p class="klein muted">Mit Zeit: schnelle richtige Antworten bringen mehr Punkte (500–1000). Ohne Zeit: jede richtige Antwort 1000.</p></div>

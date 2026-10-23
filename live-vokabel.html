@@ -660,7 +660,7 @@ window.VOKABEL_ENGINE = (function () {
       ${G.phase === "spiel" ? `<button class="btn rot klein" id="ende">⏹ beenden</button>` : ""}</div></div>`;
     h += (G.nachricht ? `<div class="meldung">📢 ${esc(G.nachricht.text)}</div>` : "") + LT.timerHtml(G);
     if (G.phase === "lobby") {
-      h += lobbyEinstellungen() + `<div class="karte" style="margin-top:12px"><p>Die Teilnehmenden öffnen <b>🎲 Aktivitäten</b> (oder <b>live-vokabel.html</b>) und geben den Code <b>${CODE}</b> ein. Beim Start werden Tische zu je ${G.groesse || 2} Personen gebildet; wer später kommt, setzt sich an den kleinsten Tisch.</p>
+      h += lobbyEinstellungen() + `<div class="karte" style="margin-top:12px"><p>Die Teilnehmenden öffnen <b>${esc(location.host + location.pathname.replace(/[^/]*$/, ""))}code.html</b> (oder 🎮 Spielcode auf der Startseite) und geben den Code <b>${CODE}</b> ein. Beim Start werden Tische zu je ${G.groesse || 2} Personen gebildet; wer später kommt, setzt sich an den kleinsten Tisch.</p>
         <h3>Dabei (${sp.length})</h3><div class="tn-zeile">${sp.map(([id, s]) => `<span>${esc(s.name)} <button data-weg="${id}">✕</button></span>`).join("") || `<span class="muted" style="border:0">Noch niemand da …</span>`}</div></div>`;
     } else if (G.phase === "ende") {
       h += endeHtml(null) + statHtml() + `<div class="btnreihe nodruck" style="margin-top:12px"><a class="btn zwei" href="?leitung=1" style="text-decoration:none">Neue Runde</a></div>`;
