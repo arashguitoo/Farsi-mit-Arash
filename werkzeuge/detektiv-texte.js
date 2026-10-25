@@ -6,7 +6,7 @@ const W = "W1", M = "M1";
 const STIMME = { neda: "W1", kaveh: "M2", shirin: "W3", rahimi: "M3", bahar: "W2" };
 const out = new Map(); const add = (t, v) => { t = String(t || "").trim(); if (t && /[؀-ۿ]/.test(t) && !out.has(t)) out.set(t, v); };
 add(F.intro.fa, W); add(F.ende.fa, W);
-(F.anleitung || []).forEach(x => add(x.fa, "W3")); add((F.anleitung || []).map(x => x.fa).join(" "), "W3");
+(F.anleitung || []).forEach(x => add(x.fa, "W1")); add((F.anleitung || []).map(x => x.fa).join(" "), "W1");
 F.bericht.forEach(b => add(b.fa, M));
 Object.values(F.hinweise).forEach(h => add(h.fa, M));
 F.personen.forEach(p => {
