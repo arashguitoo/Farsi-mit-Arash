@@ -70,7 +70,7 @@
   .frage-btn .de{font-size:.8rem;color:var(--tinte2);text-align:left;display:block}
   .gesperrt{border:1.5px dashed #cfcfc6;border-radius:12px;padding:8px 12px;color:var(--tinte2);font-size:.88rem}
   .lex{display:grid;grid-template-columns:auto 1fr;gap:4px 14px;margin-top:8px;align-items:center}
-  .lex .f{font-family:var(--fa);font-size:1.12rem;color:var(--lapis);text-align:right}
+  .lex .f{font-family:var(--fa);font-size:1.12rem;color:var(--lapis);text-align:right;cursor:pointer}
   /* Notizbuch */
   .notizbuch{background:#fffef8;border:1px solid #e9e1c8;border-radius:16px;padding:6px 16px}
   .notiz{padding:8px 0;border-bottom:1px solid #efe8d2}
@@ -215,6 +215,11 @@
   /* Im Modus „getrennt“ sieht man nur die eigenen Gespräche */
   const darfSehen = pid => !getrennt() || nurLesen() || istMeins(pid) || !zustaendig(pid);
   const pName = p => p.nameDat || p.name;
+  /* Vorlesen: fertige MP3 (geht in jedem Browser), sonst Gerätestimme */
+  function sprich(t) {
+    if (!t) return;
+    try { if (window.__dtAudio) window.__dtAudio.pause(); const a = new Audio(E.audioPfad(t)); window.__dtAudio = a; a.play().catch(() => F.sprich(t)); } catch (e) { F.sprich(t); }
+  }
 
   /* Persischer Text: jedes Wort antippbar (→ Wörterbuch) */
   function faHtml(text, key) {
@@ -238,7 +243,7 @@
   function personBub(p, fa, de, key, extra = "") {
     const deAn = DE.has(key);
     return `<div class="bub antw"><div class="wer">${p.emoji} ${esc(p.name)}</div><div class="fa-g">${faHtml(fa, key)}</div>${deAn && hilfe() ? `<div class="de">${esc(de)}</div>` : ""}
-      <div class="werkz nodruck">${hilfe() ? `<button class="mini" data-de="${esc(key)}">${deAn ? "DE ausblenden" : "🇩🇪 Übersetzung"}</button>` : ""}${extra}</div>${nachschlagHtml(key)}</div>`;
+      <div class="werkz nodruck"><button class="mini" data-say="${esc(fa)}">🔊 anhören</button>${hilfe() ? `<button class="mini" data-de="${esc(key)}">${deAn ? "DE ausblenden" : "🇩🇪 Übersetzung"}</button>` : ""}${extra}</div>${nachschlagHtml(key)}</div>`;
   }
 
   /* =====================================================================
@@ -420,7 +425,7 @@
           ${!frei.length && !zu.length ? `<div class="fertig">✅ Alle Fragen an ${esc(pName(p))} gestellt.</div>` : ""}</div>`;
       else if (frei.length) h += `<p class="klein muted" style="margin-top:10px">${frei.length} Frage(n) an ${esc(pName(p))} sind noch offen – ${z ? esc(Name(z)) + " ist zuständig" : "übernimm die Person"}.</p>`;
     }
-    h += `<details class="nodruck" data-merk="lex-${p.id}" style="margin-top:14px"><summary><b>📚 Wörter für das Gespräch mit ${esc(pName(p))}</b></summary><div class="lex">${p.lexikon.map(([fa, tr, de]) => `<div class="f">${esc(fa)}</div><div><b>${esc(de)}</b> <span class="klein muted"><i>${esc(tr)}</i></span></div>`).join("")}</div></details>
+    h += `<details class="nodruck" data-merk="lex-${p.id}" style="margin-top:14px"><summary><b>📚 Wörter für das Gespräch mit ${esc(pName(p))}</b></summary><div class="lex">${p.lexikon.map(([fa, tr, de]) => `<div class="f" data-say="${esc(fa)}">🔊 ${esc(fa)}</div><div><b>${esc(de)}</b> <span class="klein muted"><i>${esc(tr)}</i></span></div>`).join("")}</div></details>
       <p class="klein muted nodruck" style="margin-bottom:0">💡 Tippe auf ein persisches Wort, dann siehst du es im Wörterbuch.</p></div>`;
     return h;
   }
@@ -436,10 +441,11 @@
       h += `<div class="info-karte">${esc(b.info)}</div><div class="lueck-text">${txt}</div>${hilfe() && s.fertigDe ? `<div class="klein muted">${esc(b.textDe)}</div>` : ""}
         ${b.luecken.map((l, i) => `<div class="wahl-zeile"><span class="lnr">(${i + 1})</span>${l.o.map((o, k) => `<button class="chipw fa ${s.w[i] === k ? "an" : ""}" data-lw="${p.id}" data-i="${i}" data-k="${k}">${esc(o)}</button>`).join("")}</div>`).join("")}
         ${s.msg ? `<div class="rueck">${s.msg}</div>` : ""}<button class="btn klein" data-bpr="${p.id}" style="margin-top:6px" ${Object.keys(s.w).length === b.luecken.length ? "" : "disabled"}>✔ Plakat prüfen</button>`;
-    } else if (b.typ === "uhr") {
-      h += b.items.map((it, i) => { const perm = E.mischIdx(it.o.length, p.id + i);
-        return `<div class="hoer"><div><b>${i + 1}. ${esc(it.frage)}</b></div>
-          <div class="fa-g" style="font-size:1.15rem;margin-top:4px">${faHtml(it.fa, p.id + "_h" + i)}</div>${hilfe() && DE.has(p.id + "_h" + i) ? `<div class="klein muted">${esc(it.de)}</div>` : ""}${hilfe() ? `<button class="mini" data-de="${p.id}_h${i}">${DE.has(p.id + "_h" + i) ? "DE ausblenden" : "🇩🇪 Übersetzung"}</button>` : ""}${nachschlagHtml(p.id + "_h" + i)}
+    } else if (b.typ === "hoeren") {
+      h += b.items.map((it, i) => { const perm = E.mischIdx(it.o.length, p.id + i), zeig = s.text[i];
+        return `<div class="hoer"><div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap"><button class="btn zwei klein" data-say="${esc(it.fa)}">🔊 Satz ${i + 1} anhören</button><b>${esc(it.frage)}</b>
+          <button class="mini" data-htext="${p.id}" data-i="${i}">${zeig ? "Text ausblenden" : "📄 Text"}</button></div>
+          ${zeig ? `<div class="fa-g" style="font-size:1.15rem;margin-top:4px">${faHtml(it.fa, p.id + "_h" + i)}</div>${hilfe() && DE.has(p.id + "_h" + i) ? `<div class="klein muted">${esc(it.de)}</div>` : ""}${hilfe() ? `<button class="mini" data-de="${p.id}_h${i}">${DE.has(p.id + "_h" + i) ? "DE ausblenden" : "🇩🇪 Übersetzung"}</button>` : ""}${nachschlagHtml(p.id + "_h" + i)}` : ""}
           <div class="wahl-zeile">${perm.map(k => `<button class="chipw ${s.w[i] === k ? (s.falsch.includes(i) ? "falsch" : "an") : ""}" data-lw="${p.id}" data-i="${i}" data-k="${k}">${esc(it.o[k])}</button>`).join("")}</div></div>`; }).join("")
         + `${s.msg ? `<div class="rueck">${s.msg}</div>` : ""}<button class="btn klein" data-bpr="${p.id}" style="margin-top:8px" ${Object.keys(s.w).length === b.items.length ? "" : "disabled"}>✔ Uhrzeiten prüfen</button>`;
     } else if (b.typ === "zuordnen") {
@@ -453,7 +459,7 @@
       const fertig = b.saetze.map((x, i) => ORD["b_" + p.id + i] && ORD["b_" + p.id + i].fertig);
       b.saetze.forEach((x, i) => {
         h += `<div style="margin:10px 0"><b>Satz ${i + 1}:</b> <i>${esc(x.de)}</i>`;
-        h += fertig[i] ? `<div class="fertig fa-g" style="font-size:1.2rem">✅ ${esc(x.fa)}</div>` : ordHtml("b_" + p.id + i, E.woerter(x.fa), { extra: x.extra, ok: () => { if (b.saetze.every((y, j) => ORD["b_" + p.id + j] && ORD["b_" + p.id + j].fertig)) geholfen(p.id); else zeichne(); } });
+        h += fertig[i] ? `<div class="fertig fa-g" style="font-size:1.2rem">✅ ${esc(x.fa)} <button class="mini" data-say="${esc(x.fa)}">🔊</button></div>` : ordHtml("b_" + p.id + i, E.woerter(x.fa), { extra: x.extra, ok: () => { if (b.saetze.every((y, j) => ORD["b_" + p.id + j] && ORD["b_" + p.id + j].fertig)) geholfen(p.id); else zeichne(); } });
         h += `</div>`;
       });
     }
@@ -465,8 +471,9 @@
       const p = person(b.dataset.bpr), B = p.bitte, s = BIT[p.id], liste = B.typ === "luecke" ? B.luecken : B.items;
       s.falsch = liste.map((l, i) => s.w[i] === l.r ? -1 : i).filter(i => i >= 0);
       if (!s.falsch.length) { s.fertigDe = true; geholfen(p.id); return; }
-      s.msg = `${liste.length - s.falsch.length} von ${liste.length} richtig – schau dir die roten noch einmal an.`; zeichne();
+      s.msg = `${liste.length - s.falsch.length} von ${liste.length} richtig – ${B.typ === "hoeren" ? "hör dir die roten noch einmal an" : "schau dir die roten noch einmal an"}.`; zeichne();
     });
+    $$("[data-htext]").forEach(b => b.onclick = () => { const s = BIT[b.dataset.htext], i = +b.dataset.i; s.text[i] = !s.text[i]; zeichne(); });
     $$("[data-zw]").forEach(b => b.onclick = () => { const s = BIT[b.dataset.zw]; s.sel = +b.dataset.i; s.falschBild = null; zeichne(); });
     $$("[data-zb]").forEach(b => b.onclick = () => {
       const p = person(b.dataset.zb), s = BIT[p.id], i = +b.dataset.i;
@@ -497,7 +504,7 @@
     let h = offen.length ? `<div class="meldung nodruck">📝 <b>Noch nicht notiert:</b> ${offen.map(({ p }) => `<button class="mini" data-gehzu="${p.id}">${p.emoji} ${esc(p.name)}</button>`).join(" ")} – in diesen Antworten steckt ein Hinweis.</div>` : "";
     h += `<div class="karte"><h2 style="margin-top:0">📓 Notizbuch <span class="klein muted">${p.hinweise} von ${p.hinweiseMax} Hinweisen · 🤝 ${p.hilfe}/${p.hilfeMax} geholfen · ${p.fragen}/${p.fragenMax} Fragen</span></h2><div class="notizbuch">`;
     h += hs.length ? hs.map(([id, x]) => { const H = FALL.hinweise[id], von = FALL.personen.find(pp => pp.fragen.some(q => q.hinweis === id)), key = "nb_" + id;
-      return `<div class="notiz"><div class="t">${esc(H.titel)}</div><div class="fa-g" style="font-size:1.15rem;line-height:2">${faHtml(H.fa, key)}</div>${hilfe() ? `<div class="klein">${esc(H.text)}</div>` : ""}${nachschlagHtml(key)}<div class="q">${von ? von.emoji + " von " + esc(von.name) : ""} · notiert von ${esc(Name(x.p))} · ${uhr(x.ts)}</div></div>`; }).join("") : `<div class="leer-notiz">Noch leer. Helft den Leuten im Haus und befragt sie – wenn eine Antwort einen Hinweis enthält, erscheint „📝 Hinweis! Notieren“.</div>`;
+      return `<div class="notiz"><div class="t">${esc(H.titel)}</div><div class="fa-g" style="font-size:1.15rem;line-height:2">${faHtml(H.fa, key)} <button class="mini nodruck" data-say="${esc(H.fa)}">🔊</button></div>${hilfe() ? `<div class="klein">${esc(H.text)}</div>` : ""}${nachschlagHtml(key)}<div class="q">${von ? von.emoji + " von " + esc(von.name) : ""} · notiert von ${esc(Name(x.p))} · ${uhr(x.ts)}</div></div>`; }).join("") : `<div class="leer-notiz">Noch leer. Helft den Leuten im Haus und befragt sie – wenn eine Antwort einen Hinweis enthält, erscheint „📝 Hinweis! Notieren“.</div>`;
     return h + `</div><div class="btnreihe nodruck" style="margin-top:10px"><button class="btn zwei klein" data-drucken="1">🖨️ Notizbuch drucken</button></div></div>`;
   }
 
@@ -546,7 +553,7 @@
     FALL.bericht.forEach((b, i) => {
       const wer = ids.length ? ids[i % ids.length] : null, fertig = ber[i];
       h += `<div style="margin:12px 0"><div class="klein"><b>Satz ${i + 1}</b>${ids.length > 1 ? ` · ${wer && ME && wer === ME.id ? "🕵️ deiner" : esc(Name(wer))}` : ""}${hilfe() || fertig ? ` · <i>${esc(b.de)}</i>` : ""}</div>`;
-      h += fertig ? `<div class="fertig fa-g" style="font-size:1.2rem">✅ ${esc(b.fa)}.</div>` : ordHtml("ber" + i, E.woerter(b.fa), { ok: () => { schreib(`teams/f/bericht/${i}`, { p: ME.id, ts: Date.now() }); toast("✅ Richtig!"); } });
+      h += fertig ? `<div class="fertig fa-g" style="font-size:1.2rem">✅ ${esc(b.fa)}. <button class="mini" data-say="${esc(b.fa)}">🔊</button></div>` : ordHtml("ber" + i, E.woerter(b.fa), { ok: () => { schreib(`teams/f/bericht/${i}`, { p: ME.id, ts: Date.now() }); toast("✅ Richtig!"); } });
       h += `</div>`;
     });
     h += FALL.bericht.every((b, i) => ber[i]) ? `<div class="fertig" style="text-align:center;font-weight:800">🗂️ Fallakte geschlossen. Gute Arbeit, Detektive!</div>` : "";
@@ -576,7 +583,7 @@
     $$("[data-pers]").forEach(b => b.onclick = () => { OFFEN = b.dataset.pers; CHECK = null; NACH = null; zeichne(); window.scrollTo(0, 0); });
     $$("[data-zurueck]").forEach(b => b.onclick = () => { OFFEN = null; zeichne(); });
     $$("[data-gehzu]").forEach(b => b.onclick = () => { TAB = "befragen"; OFFEN = b.dataset.gehzu; zeichne(); });
-    $$("[data-say]").forEach(b => b.onclick = e => { e.stopPropagation(); F.sprich(b.dataset.say); });
+    $$("[data-say]").forEach(b => b.onclick = e => { e.stopPropagation(); sprich(b.dataset.say); });
     $$("[data-de]").forEach(b => b.onclick = () => { const k = b.dataset.de; DE.has(k) ? DE.delete(k) : DE.add(k); zeichne(); });
     $$("[data-wk]").forEach(s => s.onclick = () => {
       const key = s.dataset.wk, i = +s.dataset.wi;

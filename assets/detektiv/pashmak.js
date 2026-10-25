@@ -8,7 +8,7 @@
      hinweis        diese Antwort enthält einen Hinweis (id) fürs Notizbuch
      braucht        [Hinweis-ids] – Frage erst möglich, wenn diese im Notizbuch stehen
    hinweise[id]:    fa (persische Notiz, wird bei „getrennt“ geordnet), titel, text (deutsche Notiz), check (Verständnisfrage, r = Index richtig)
-   personen[].bitte: Aufgabe, bevor die Person redet – typ luecke | uhr | zuordnen | ordnen | satz
+   personen[].bitte: Aufgabe, bevor die Person redet – typ luecke | hoeren | zuordnen | ordnen | satz
    ========================================================= */
 window.DETEKTIV_FAELLE = window.DETEKTIV_FAELLE || {};
 window.DETEKTIV_FAELLE.pashmak = {
@@ -54,9 +54,9 @@ window.DETEKTIV_FAELLE.pashmak = {
           ade: "Ein Zettel? Nein … ah, hier ist er, am Kühlschrank! „Ich habe deinen Laptop ausgeliehen. Kaveh.“ Also wurde der Laptop nicht gestohlen. Nur Pashmak fehlt.", hinweis: "laptopok" }
       ] },
     { id: "kaveh", name: "Kaveh", nameFa: "کاوه", emoji: "👨🏽‍🎓", rolle: "Mitbewohner in der WG · Student",
-      bitte: { typ: "uhr", titel: "Kavehs Nachricht vom Professor",
-        de: "Kaveh hat es eilig. Sein Professor hat ihm eine Nachricht mit Uhrzeiten geschickt. Lies sie und wähle die richtigen Uhrzeiten – dann hat er Zeit für dich.",
-        fa: "بِبَخشید، خِیلی عَجَله دارَم! اُستادَم یک پَیام فِرِستاده. لُطفاً بِخوان و ساعَت‌ها را به مَن بِگو.", fade: "Entschuldige, ich habe es sehr eilig! Mein Professor hat eine Nachricht geschickt. Bitte lies sie und sag mir die Uhrzeiten.",
+      bitte: { typ: "hoeren", titel: "Kavehs Sprachnachricht",
+        de: "Kaveh hat es eilig. Sein Professor hat ihm eine Sprachnachricht geschickt. Hör die vier Sätze an (🔊) und wähle die richtigen Uhrzeiten – dann hat er Zeit für dich.",
+        fa: "بِبَخشید، خِیلی عَجَله دارَم! اُستادَم یک پَیامِ صوتی فِرِستاده. لُطفاً گوش کُن و ساعَت‌ها را به مَن بِگو.", fade: "Entschuldige, ich habe es sehr eilig! Mein Professor hat eine Sprachnachricht geschickt. Bitte hör zu und sag mir die Uhrzeiten.",
         items: [
           { fa: "اِمتِحانِ اَوَّل ساعَتِ هَشت و نیم اَست.", de: "Die erste Prüfung ist um halb neun.", frage: "Erste Prüfung", o: ["8:30", "9:30", "8:15", "7:30"], r: 0 },
           { fa: "اِمتِحانِ دُوُّم ساعَتِ دَه و رُبع اَست.", de: "Die zweite Prüfung ist um Viertel nach zehn.", frage: "Zweite Prüfung", o: ["10:45", "10:15", "12:15", "9:45"], r: 1 },
