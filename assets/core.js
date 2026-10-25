@@ -237,10 +237,26 @@
     if (stimmeHinweis) return; stimmeHinweis = true;
     toast("Auf diesem Gerät gibt es keine persische Stimme. Mit Microsoft Edge klappt es meist – sonst hilft die Umschrift.", 5200);
   }
+  /* Fertige Aufnahmen (werkzeuge/audio-erzeugen.py): Dateiname = FNV-Hash des normalisierten Textes.
+     Gleiche Normalisierung wie in werkzeuge/audio-texte.py (schluessel). */
+  function audioSchluessel(t) {
+    return String(t || "").replace(/<[^>]+>/g, "").replace(/[\u064B-\u0652\u0670\u0654\u0655]/g, "")
+      .replace(/\u200c/g, " ").replace(/ي/g, "ی").replace(/ك/g, "ک").replace(/ة/g, "ه")
+      .replace(/[«»"“”„.,،؛;:!?؟…\u2013\u2014\-()\[\]\/]/g, " ").replace(/\s+/g, " ").trim();
+  }
+  function audioHash(t) { let h = 0x811c9dc5; for (let i = 0; i < t.length; i++) { h ^= t.charCodeAt(i); h = Math.imul(h, 0x01000193) >>> 0; } return ("0000000" + h.toString(16)).slice(-8); }
+  function audioPfad(t) { const k = audioSchluessel(t); if (!k) return null; const h = audioHash(k); return "assets/audio/" + h.slice(0, 2) + "/" + h + ".mp3"; }
+  let laeuft = null;
   function sprich(text, audio) {
     if (!einst().ton || !text) return;
-    if (audio) {
-      try { const a = new Audio(audio); a.play().catch(() => tts(text)); return; } catch (e) { }
+    const url = audio || audioPfad(text);
+    if (url) {
+      try {
+        if (laeuft) laeuft.pause();
+        const a = new Audio(url); laeuft = a;
+        a.play().catch(() => tts(text));   /* keine Aufnahme vorhanden → Gerätestimme */
+        return;
+      } catch (e) { }
     }
     tts(text);
   }
@@ -335,6 +351,6 @@
     einst, setEinst, anwendenEinst,
     ladeFortschritt, ladeAlleFortschritte, speichereStation,
     ladeFreigaben, istOffen, istBereichOffen, bereichVon, testStand, sperrGrund,
-    sprich, ton, ladeJSON, ladeLektion, bidi
+    sprich, audioPfad, audioSchluessel, ton, ladeJSON, ladeLektion, bidi
   };
 })();

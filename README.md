@@ -145,7 +145,10 @@ Bei `paare` und `memory` kann mit `"links": "x"` auf beiden Seiten Persisch steh
 
 ## Aussprache / Audio
 
-Überall, wo 🔊 erscheint, wird zuerst eine **eigene MP3** gespielt, falls du beim Eintrag `"audio": "audio/aab.mp3"` angibst (Ordner `audio/` anlegen). Ohne MP3 nutzt die Seite die Sprachausgabe des Geräts – eine persische Stimme gibt es aber nicht überall (am zuverlässigsten in Microsoft Edge). Die Umschrift ist deshalb immer dabei.
+Überall, wo 🔊 erscheint, spielt die Seite eine **fertige Aufnahme** aus `assets/audio/` – das geht in jedem Browser, auch auf iPhone und Android. Die Aufnahmen sind mit den Microsoft-Stimmen Dilara und Farid erzeugt, in sechs Varianten (Tempo und Tonhöhe verändert: W1–W3, M1–M3), damit es nach verschiedenen Menschen klingt. Dialogzeilen wechseln zwischen zwei Stimmen; im Detektiv-Fall hat jede Person ihre eigene.
+- Dateiname = FNV-Hash des normalisierten Textes (ohne Vokalzeichen, Satzzeichen, ZWNJ) – gebildet in `assets/core.js` (`audioPfad`) und in `werkzeuge/audio-texte.py` (`schluessel`) auf dieselbe Weise.
+- **Neue oder geänderte Texte vertonen:** `pip install edge-tts`, dann `python3 werkzeuge/audio-erzeugen.py`. Vorhandene Dateien werden übersprungen, nicht mehr gebrauchte gelöscht. (Braucht Zugriff auf `speech.platform.bing.com`.)
+- Gibt es zu einem Text keine Aufnahme, nimmt die Seite die Gerätestimme (am zuverlässigsten in Edge). Eine eigene Aufnahme kann man weiterhin mit `"audio": "pfad.mp3"` beim Eintrag angeben.
 
 ## Schreibweise
 
@@ -289,8 +292,10 @@ Zwei Spiele mit dem Wortschatz (`ws-*.json`) aus **frei wählbaren Lektionen all
 Selbstlern-Lektion für 1–4 Personen (Niveau: Beginn Fortgeschritten, ohne Bedingungssätze). Nedas Katze Pashmak ist verschwunden. Die TN befragen fünf Personen im Haus (Neda, Kaveh, Shirin, Herr Rahimi, Bahar), notieren Hinweise im gemeinsamen Notizbuch und klagen am Ende an: **Wer? Was? Wann? Wo?**
 - **Start:** TN öffnen den Fall selbst (Aktivitäten → „🕵️ Fall öffnen / weiterspielen“), wählen *mit Hilfe* (deutsche Übersetzungen auf Knopfdruck) oder *ohne Hilfe* (nur Persisch; Wortliste und Wörterbuch bleiben) und bekommen einen Spielcode. Die anderen geben ihn ein (auch über `code.html`).
 - **Zwei Spielweisen:** *getrennt* (Standard – jede/r sieht nur die eigenen Gespräche; Ergebnisse gehen als persische Notiz ins Notizbuch, die man vorher aus Wörtern ordnet; dazu 💬 Team-Chat mit persischen Schnellsätzen) oder *zusammen* (alle lesen alles mit).
+- **Anleitung:** Vor dem Start (Lobby und einmal nach dem Start) erklärt „Bevor wir beginnen …“ das Spiel auf Persisch (vorgelesen) und Deutsch, dazu kurze Bedienhinweise.
+- **🎧 Erst hören (Standard):** Antworten und Bitten werden vorgelesen; der Text erscheint erst mit „📄 Text einblenden“. Die Verständnisfragen beim Notieren werden so zu Hörverstehen. Alternativ „📖 gleich lesen“.
 - **Erst helfen, dann fragen:** Jede Person hat zuerst eine Bitte mit eigener Aufgabenart – Neda: Suchplakat (Lückentext), Kaveh: Sprachnachricht mit Uhrzeiten (Hören; „📄 Text“ als Notlösung), Shirin: Einkaufsliste (Wort ↔ Bild), Herr Rahimi: Dialog ordnen, Bahar: zwei Sätze bauen. Daten: `personen[].bitte` in `assets/detektiv/pashmak.js`.
-- **Audio:** Alle persischen Texte des Falls liegen als MP3 in `assets/detektiv/audio/` (Microsoft-Stimmen Dilara/Farid, wie in Edge) – damit klappt 🔊 in jedem Browser. Nach Textänderungen neu erzeugen: `pip install edge-tts` und `python3 werkzeuge/detektiv-audio.py` (vorhandene Dateien werden übersprungen; Dateiname = Hash des Textes).
+- **Audio:** Alle Texte des Falls haben Aufnahmen (siehe „Aussprache / Audio“), jede Person mit eigener Stimme.
 - **Aufgaben teilen:** Die fünf Personen werden beim Start reihum verteilt (3 TN → 2/2/1). Jede/r fragt die eigenen Personen, bei den anderen kann man mitlesen; „🔄 übernehmen“ und „🔀 neu verteilen“, falls jemand fehlt.
 - **Zusammenarbeit:** Manche Fragen sind gesperrt, bis ein passender Hinweis im Notizbuch steht – oft aus dem Gespräch einer anderen Person.
 - **Notieren:** Steckt in einer Antwort ein Hinweis, erscheint „📝 Notieren“. Vorher kommt eine kurze Verständnisfrage (Deutsch); erst bei richtiger Antwort landet der Hinweis im Notizbuch.

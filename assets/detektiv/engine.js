@@ -99,9 +99,3 @@ window.DETEKTIV_ENGINE = (function () {
   }
   return { mischIdx, brauchtNichtMehr, arr, reihe, verteile, fragenStatus, offeneNotizen, fortschritt, pruefeAnklage, neueFragen, kandidaten, nachschlagen, woerter, strip };
 })();
-/* Audio: fertige MP3 je Text (werkzeuge/detektiv-audio.py), Dateiname = FNV-1a-Hash des Textes */
-(function () {
-  const E = window.DETEKTIV_ENGINE;
-  E.hash = function (t) { let h = 0x811c9dc5; t = String(t); for (let i = 0; i < t.length; i++) { h ^= t.charCodeAt(i); h = Math.imul(h, 0x01000193) >>> 0; } return ("0000000" + h.toString(16)).slice(-8); };
-  E.audioPfad = t => "assets/detektiv/audio/" + E.hash(String(t).trim()) + ".mp3";
-})();

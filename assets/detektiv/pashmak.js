@@ -22,6 +22,18 @@ window.DETEKTIV_FAELLE.pashmak = {
     fa: "سَلام! بِبَخشید که مُزاحِم شُدَم. پَشمَک، گُربه‌یِ مَن، گُم شُده! دیشَب این‌جا بود، اَمّا اِمروز صُبح نیست. شُما می‌تَوانید به مَن کُمَک کُنید؟",
     faDe: "Hallo! Entschuldigt die Störung. Pashmak, meine Katze, ist verschwunden! Gestern Abend war sie hier, aber heute Morgen ist sie nicht da. Könnt ihr mir helfen?"
   },
+  /* Anleitung vor dem Start (Persisch + Deutsch, wird vorgelesen) */
+  anleitung: [
+    { fa: "قَبل از این‌که شُروع کُنیم، چَند نُکته:", de: "Bevor wir beginnen, ein paar Hinweise:" },
+    { fa: "شُما کارآگاه هَستید. پَشمَک، گُربه‌یِ نِدا، گُم شُده.", de: "Ihr seid Detektive. Pashmak, Nedas Katze, ist verschwunden." },
+    { fa: "دَر این ساختِمان پَنج نَفَر زِندگی و کار می‌کُنَند. با آن‌ها حَرف بِزَنید.", de: "In diesem Haus wohnen und arbeiten fünf Personen. Sprecht mit ihnen." },
+    { fa: "هَر کَس اَوَّل یک کُمَک می‌خواهَد. بَعد به سُؤال‌هایِ شُما جَواب می‌دَهَد.", de: "Jede Person möchte zuerst eine kleine Hilfe. Danach beantwortet sie eure Fragen." },
+    { fa: "خوب گوش کُنید! مَتن را هَم می‌تَوانید بِبینید.", de: "Hört gut zu! Den Text könnt ihr auch ansehen." },
+    { fa: "سَرنَخ‌ها را دَر دَفتَرچه بِنِویسید.", de: "Schreibt die Spuren ins Notizbuch." },
+    { fa: "با هَم حَرف بِزَنید و کارها را تَقسیم کُنید.", de: "Sprecht miteinander und teilt die Arbeit auf." },
+    { fa: "دَر آخَر بِگویید: چه کَسی؟ چه چیزی؟ کِی؟ کُجا؟", de: "Sagt am Ende: Wer? Was? Wann? Wo?" },
+    { fa: "مُوَفَّق باشید!", de: "Viel Erfolg!" }
+  ],
   personen: [
     { id: "neda", name: "Neda", nameFa: "نِدا", emoji: "👩🏻", rolle: "Besitzerin von Pashmak · WG im 3. Stock",
       bitte: { typ: "luecke", titel: "Ein Suchplakat für Pashmak",
