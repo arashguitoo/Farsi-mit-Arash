@@ -6,7 +6,7 @@
    ========================================================= */
 (function () {
   "use strict";
-  const VERSION = "273833b0";
+  const VERSION = "a8f47d5b";
   const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const normFa = x => String(x || "").replace(/[ً-ْٰٕٔ]/g, "").replace(/[‌‍]/g, " ").replace(/[آأإ]/g, "ا").replace(/ي/g, "ی").replace(/ك/g, "ک").replace(/ة/g, "ه").replace(/\s+/g, " ").trim();
   const normDe = x => String(x || "").toLowerCase().replace(/ä/g, "a").replace(/ö/g, "o").replace(/ü/g, "u").replace(/ß/g, "ss").replace(/[^a-z0-9 ]/g, " ").replace(/\s+/g, " ").trim();
@@ -20,7 +20,7 @@
       const L = d.l.map(([id, nummer, kurz]) => ({ id, nummer, kurz }));
       const W = d.w.map(([fa, tr, de, kat, li, emoji, stamm, stammTr]) => {
         const w = { fa, tr: tr || "", de, kat: kat || "", lek: li >= 0 ? L[li].id : null, wb: li < 0, emoji: emoji || "", stamm: stamm || "", stammTr: stammTr || "" };
-        w._fa = normFa(fa); w._de = normDe(de); w._tr = normTr(tr);
+        w._fa = normFa(fa); w._fa2 = w._fa.replace(/ /g, ""); w._de = normDe(de); w._tr = normTr(tr);
         w._kern = String(de).replace(/\(.*?\)/g, "").split(/[\/,;]/).map(normDe).filter(Boolean);
         w._worte = w._de.split(" ");
         return w;
@@ -38,7 +38,7 @@
     for (const w of DATEN.W) {
       if (w.lek && offen && !offen.has(w.lek)) continue;
       let r = -1;
-      if (istFa) { if (w._fa === b) r = 0; else if (w._fa.startsWith(b)) r = 1; else if (w._fa.includes(b)) r = 2; else if (w.stamm && normFa(w.stamm).includes(b)) r = 3; }
+      if (istFa) { const b2 = b.replace(/ /g, ""); if (w._fa === b || w._fa2 === b2) r = 0; else if (w._fa.startsWith(b) || w._fa2.startsWith(b2)) r = 1; else if (w._fa.includes(b) || w._fa2.includes(b2)) r = 2; else if (w.stamm && normFa(w.stamm).replace(/ /g, "").includes(b2)) r = 3; }
       else {
         if (qd && w._kern.some(k => k === qd || k.replace(/^(der|die|das|sich|zu) /, "") === qd)) r = 0;
         else if (qd && w._worte.includes(qd)) r = 1; else if (qd && w._worte.some(x => x.startsWith(qd))) r = 2; else if (qd.length >= 3 && w._de.includes(qd)) r = 3;

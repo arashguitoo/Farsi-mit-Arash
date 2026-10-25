@@ -285,6 +285,18 @@ Zwei Spiele mit dem Wortschatz (`ws-*.json`) aus **frei wählbaren Lektionen all
 - **Eigene Runde:** „👥 Eigene Runde starten“ (mit Zugangscode, ein Tisch für alle). Mitspielen geht auch ohne Zugangscode (Code + Vorname).
 - Firebase: `live/vokabel/{code}` (keine Regeländerung nötig).
 
+### Selbstlernen: Detektiv-Fall „Wo ist Pashmak?“ (`live-detektiv.html`)
+Selbstlern-Lektion für 1–4 Personen (Niveau: Beginn Fortgeschritten, ohne Bedingungssätze). Nedas Katze Pashmak ist verschwunden. Die TN befragen fünf Personen im Haus (Neda, Kaveh, Shirin, Herr Rahimi, Bahar), notieren Hinweise im gemeinsamen Notizbuch und klagen am Ende an: **Wer? Was? Wann? Wo?**
+- **Start:** TN öffnen den Fall selbst (Aktivitäten → „🕵️ Fall öffnen / weiterspielen“), wählen *mit Hilfe* (deutsche Übersetzungen auf Knopfdruck) oder *ohne Hilfe* (nur Persisch; Wortliste und Wörterbuch bleiben) und bekommen einen Spielcode. Die anderen geben ihn ein (auch über `code.html`).
+- **Aufgaben teilen:** Die fünf Personen werden beim Start reihum verteilt (3 TN → 2/2/1). Jede/r fragt die eigenen Personen, bei den anderen kann man mitlesen; „🔄 übernehmen“ und „🔀 neu verteilen“, falls jemand fehlt.
+- **Zusammenarbeit:** Manche Fragen sind gesperrt, bis ein passender Hinweis im Notizbuch steht – oft aus dem Gespräch einer anderen Person.
+- **Notieren:** Steckt in einer Antwort ein Hinweis, erscheint „📝 Notieren“. Vorher kommt eine kurze Verständnisfrage (Deutsch); erst bei richtiger Antwort landet der Hinweis im Notizbuch.
+- **Wörterbuch:** Jedes persische Wort ist antippbar und wird – auch mit Endungen wie می‌…‌َم, ‌ها, ‌ش – in der Grundform nachgeschlagen (`assets/detektiv/engine.js`, `nachschlagen`). Dazu pro Person eine Wortliste und der Reiter 🔎 Wörterbuch.
+- **Speichern:** Alles liegt in Firebase unter `live/detektiv/{code}` und wird sofort gespeichert. Auf der Startseite der Aktivität erscheinen „Deine letzten Fälle“ zum Weiterspielen.
+- **Ende:** Lösung, Nachricht von Neda (Persisch) und ein Abschlussbericht: drei Sätze aus Wörtern bauen, auf die Spieler verteilt. Druckbar.
+- **Lehrkraft:** `live-detektiv.html?leitung=1` (in der Konsole angemeldet) zeigt alle Fälle mit Fortschritt (Hinweise, Fragen, Lösungsversuche, Fehler beim Notieren) und öffnet jeden Fall zum Mitlesen.
+- **Neuer Fall:** Datei nach dem Muster von `assets/detektiv/pashmak.js` anlegen (Personen mit Fragen/Antworten, `hinweis`, `braucht`, Hinweise mit Verständnisfrage, Anklage, Ende, Bericht) und in `live-detektiv.html` einbinden.
+
 ### Live: Wortsalat-Chat (`live-chat.html`)
 Gruppenchat im WhatsApp-Stil für 2–8 Personen (oder allein). Wer dran ist, bekommt ca. 28 persische Wort-Kacheln
 (alle Wörter der möglichen Nachrichten + Ablenkungswörter) und baut daraus eine Nachricht. Oben stehen die Möglichkeiten

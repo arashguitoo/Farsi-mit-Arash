@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Detektiv-Fall · Farsi-Lernpfad</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Vazirmatn:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css">
+<style>
+  .wrap{max-width:980px}
+  .lv-code{font-size:2.6rem;font-weight:800;letter-spacing:.2em;color:var(--lapis);line-height:1.1}
+  .lv-kopf{display:flex;gap:12px;align-items:center;flex-wrap:wrap;justify-content:space-between;margin:14px 0}
+  .fa-g{font-family:var(--fa);direction:rtl;text-align:right}
+  .meldung{background:var(--safran-hell);border:1px solid #e6d3ad;border-radius:12px;padding:10px 14px;margin:10px 0}
+  .klein-h{font-size:.78rem;font-weight:800;color:var(--tinte2);text-transform:uppercase;letter-spacing:.04em;margin:14px 0 6px}
+  .dt-leiste{display:flex;gap:8px;flex-wrap:wrap;align-items:center;justify-content:space-between;background:#fff;border:1px solid var(--linie);border-radius:14px;padding:8px 12px;margin:12px 0}
+  .chip{display:inline-flex;gap:5px;align-items:center;border:1px solid var(--linie);border-radius:999px;padding:3px 10px;font-size:.84rem;font-weight:700;background:#fff}
+  .chip.ich{border-color:var(--lapis);background:var(--lapis-hell)}
+  .chip .pkt{width:8px;height:8px;border-radius:50%;background:#3C7A55}
+  .chip.off .pkt{background:#c3c3bb}
+  .tabs{display:flex;gap:6px;flex-wrap:wrap;margin:6px 0 12px}
+  .tabs .tab{cursor:pointer;font:inherit;font-weight:800}
+  .tabs .tab .z{display:inline-block;min-width:1.4em;border-radius:999px;background:var(--safran-hell);color:#6b4b10;font-size:.75rem;padding:0 6px;margin-left:4px}
+  .tabs .tab.an .z{background:rgba(255,255,255,.25);color:#fff}
+  /* Personen */
+  .pers-gitter{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+  @media (max-width:520px){.pers-gitter{grid-template-columns:1fr 1fr;gap:8px}.pers{padding:10px}.pers .em{font-size:1.8rem}.pers .rl{font-size:.74rem}}
+  .pers{background:#fff;border:1px solid var(--linie);border-radius:16px;padding:14px;cursor:pointer;text-align:left;font:inherit;color:inherit;position:relative}
+  .pers:hover{border-color:var(--lapis)}
+  .pers .em{font-size:2.2rem;line-height:1}
+  .pers .nm{font-weight:800;font-size:1.1rem;margin-top:6px}
+  .pers .nf{font-family:var(--fa);color:var(--lapis);font-size:1.05rem}
+  .pers .rl{font-size:.8rem;color:var(--tinte2);min-height:2.2em}
+  .pers .wer{margin-top:8px;font-size:.8rem;font-weight:700}
+  .pers.meins{border:2px solid var(--lapis)}
+  .pers .neu{position:absolute;top:10px;right:10px;background:var(--safran);color:#fff;border-radius:999px;font-size:.72rem;font-weight:800;padding:2px 8px}
+  .balken{height:6px;border-radius:6px;background:var(--papier2,#eee);overflow:hidden;margin-top:6px}
+  .balken i{display:block;height:100%;background:var(--lapis)}
+  /* Verhör */
+  .verh-kopf{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+  .verh-kopf .em{font-size:2.6rem}
+  .chat{background:#f3f1ec;border:1px solid var(--linie);border-radius:16px;padding:12px;display:flex;flex-direction:column;gap:8px;margin-top:10px}
+  .bub{max-width:88%;border-radius:14px;padding:8px 12px;background:#fff;box-shadow:0 1px 1px rgba(0,0,0,.06)}
+  .bub.frage{align-self:flex-end;background:#e2efe9}
+  .bub.antw{align-self:flex-start}
+  .bub .wer{font-size:.74rem;font-weight:800;color:var(--tinte2)}
+  .bub .fa-g{font-size:1.18rem;line-height:2}
+  .bub .de{font-size:.84rem;color:#556;margin-top:4px;border-top:1px dashed var(--linie);padding-top:4px}
+  .bub .werkz{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
+  .mini{border:1px solid var(--linie);background:#fff;border-radius:9px;padding:3px 9px;font:inherit;font-size:.8rem;font-weight:700;cursor:pointer}
+  .mini:hover{border-color:var(--lapis)}
+  .mini.notiz{background:var(--safran-hell);border-color:#e3c98f}
+  .mini.ok{background:var(--gruen-hell);border-color:#b9d8c4;cursor:default}
+  .wort{cursor:pointer;border-radius:5px;padding:0 1px}
+  .wort:hover,.wort.an{background:#fff0c9}
+  .nachschl{background:#fffdf5;border:1px solid #ecdcae;border-radius:12px;padding:8px 10px;margin-top:6px;font-size:.88rem}
+  .nachschl .z{display:grid;grid-template-columns:1fr auto;gap:2px 10px;align-items:center;padding:3px 0;border-bottom:1px solid #f1e7c9;cursor:pointer}
+  .nachschl .z:last-of-type{border-bottom:0}
+  .nachschl .z .f{font-family:var(--fa);font-size:1.15rem;color:var(--lapis);font-weight:700}
+  .check{background:#fff;border:2px solid var(--safran);border-radius:14px;padding:10px 12px;margin-top:8px}
+  .check .opt{display:block;width:100%;text-align:left;margin:5px 0;border:1px solid var(--linie);background:#fff;border-radius:10px;padding:7px 10px;font:inherit;cursor:pointer}
+  .check .opt:hover{border-color:var(--lapis)}
+  .check .opt.falsch{background:var(--granat-hell);border-color:#e0b5af;cursor:default}
+  .fragen{display:grid;gap:8px;margin-top:12px}
+  .frage-btn{border:1.5px solid var(--lapis);background:#fff;border-radius:12px;padding:8px 12px;font:inherit;cursor:pointer;text-align:right}
+  .frage-btn:hover{background:var(--lapis-hell)}
+  .frage-btn .fa-g{font-size:1.15rem;display:block}
+  .frage-btn .de{font-size:.8rem;color:var(--tinte2);text-align:left;display:block}
+  .gesperrt{border:1.5px dashed #cfcfc6;border-radius:12px;padding:8px 12px;color:var(--tinte2);font-size:.88rem}
+  .lex{display:grid;grid-template-columns:auto 1fr;gap:4px 14px;margin-top:8px;align-items:center}
+  .lex .f{font-family:var(--fa);font-size:1.12rem;color:var(--lapis);text-align:right;cursor:pointer}
+  /* Notizbuch */
+  .notizbuch{background:#fffef8;border:1px solid #e9e1c8;border-radius:16px;padding:6px 16px}
+  .notiz{padding:8px 0;border-bottom:1px solid #efe8d2}
+  .notiz:last-child{border-bottom:0}
+  .notiz .t{font-weight:800}
+  .notiz .q{font-size:.78rem;color:var(--tinte2)}
+  .leer-notiz{color:var(--tinte2);padding:14px 0}
+  /* Lösung */
+  .ankl{display:grid;gap:12px}
+  .ankl .opts{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
+  .ankl .opts button{border:1.5px solid var(--linie);background:#fff;border-radius:10px;padding:6px 12px;font:inherit;cursor:pointer}
+  .ankl .opts button.an{border-color:var(--lapis);background:var(--lapis);color:#fff}
+  /* Bericht */
+  .zeile{min-height:52px;border:1.5px solid #c9d6d2;border-radius:14px;padding:6px 10px;display:flex;flex-wrap:wrap;gap:6px;direction:rtl;align-items:center;background:#fbfdfc}
+  .zeile .leer{direction:ltr;color:#99a;font-size:.86rem}
+  .wks{display:flex;flex-wrap:wrap;gap:7px;direction:rtl;margin-top:10px}
+  .wk{font-family:var(--fa);font-size:1.12rem;border:1.5px solid var(--linie);background:#fff;border-radius:10px;padding:4px 11px;cursor:pointer;line-height:1.7}
+  .wk:hover{border-color:var(--lapis)}
+  .wk.weg{visibility:hidden}
+  .zeile .wk{background:#e4f3ee;border-color:#9fc9bb}
+  .fertig{background:var(--gruen-hell);border:1px solid #b9d8c4;border-radius:12px;padding:8px 12px}
+  .tab-tabelle{width:100%;border-collapse:collapse;font-size:.9rem}
+  .tab-tabelle th,.tab-tabelle td{border-bottom:1px solid var(--linie);padding:6px 8px;text-align:left;vertical-align:top}
+  @media print{.kopf,.nodruck{display:none!important}.chat{break-inside:auto}}
+</style>
+</head>
+<body>
+<header class="kopf">
+  <div class="wrap">
+    <a href="aktivitaeten.html" class="medaillon" style="text-decoration:none">فا</a>
+    <div><h1 id="kopfTitel">Detektiv-Fall</h1><div class="unter">Selbstlernen · 1–4 Personen · Farsi-Lernpfad</div></div>
+    <div class="rechts"><span class="kopf-btn" id="kopfInfo" style="background:transparent;border-color:transparent"></span><a class="kopf-btn" href="aktivitaeten.html">← Aktivitäten</a></div>
+  </div>
+</header>
+<main class="wrap" style="padding-bottom:60px"><div id="app"><p class="muted" style="margin-top:30px">Lade …</p></div></main>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+<script src="assets/core.js"></script>
+<script src="assets/live-tools.js"></script>
+<script src="assets/woerterbuch.js"></script>
+<script src="assets/detektiv/engine.js"></script>
+<script src="assets/detektiv/pashmak.js"></script>
+<script>
+(function () {
+  const F = window.FARSI, { $, $$, esc, toast } = F, E = window.DETEKTIV_ENGINE, LT = window.LIVE_TOOLS, WB = window.WOERTERBUCH;
+  const qs = new URLSearchParams(location.search);
+  const istLK = !!qs.get("leitung");
+  let CODE = (qs.get("code") || "").replace(/\D/g, "") || null;
+  let G = null, REF = null, ME = null, FALL = null;
+  /* lokaler Ansichtszustand (nicht gespeichert) */
+  let TAB = "befragen", OFFEN = null, CHECK = null, NACH = null, WAHL = {}, BER = {}, WB_UI = null, MELD = null;
+  const DE = new Set();
+  const app = () => $("#app");
+  const gRef = c => F.ref(`live/detektiv/${c}`);
+  const LS_LETZTE = "farsi_detektiv_letzte";
+
+  /* ---------- Speicher: zuletzt gespielte Fälle (für „Weiterspielen“) ---------- */
+  function letzte() { try { return JSON.parse(localStorage.getItem(LS_LETZTE) || "[]"); } catch (e) { return []; } }
+  function merke(c) { try { const l = letzte().filter(x => x.code !== c); l.unshift({ code: c, ts: Date.now() }); localStorage.setItem(LS_LETZTE, JSON.stringify(l.slice(0, 8))); } catch (e) { } }
+
+  /* ---------- Firebase ---------- */
+  function hoere(c) {
+    if (REF) REF.off();
+    REF = gRef(c);
+    REF.on("value", s => {
+      G = s.val();
+      if (!istLK) LT.pruefeNeuLaden(G);
+      FALL = G ? (window.DETEKTIV_FAELLE || {})[G.fall || "pashmak"] : null;
+      if (LT.tipptGerade(zeichne)) return;
+      zeichne();
+    }, e => fehler(e, true));
+  }
+  function fehler(e, hart) {
+    console.error(e);
+    if (!hart && G) { toast("Das hat nicht geklappt – bitte noch einmal tippen."); return; }
+    app().innerHTML = `<div class="karte" style="margin-top:20px"><b>Das hat nicht geklappt.</b><p class="klein muted">${esc(e && e.message || e)}</p><p class="klein">Bitte die Internetverbindung prüfen und die Seite neu laden.</p></div>`;
+  }
+  const schreib = (p, w) => gRef(CODE).child(p).set(w).catch(e => fehler(e));
+  const upd = o => gRef(CODE).update(o).catch(e => fehler(e));
+
+  /* ---------- Helfer ---------- */
+  const T = () => (G && G.teams && G.teams.f) || {};
+  const SP = () => (G && G.spieler) || {};
+  const name = id => id === (ME && ME.id) ? "du" : ((SP()[id] || {}).name || "?");
+  const Name = id => id === (ME && ME.id) ? "Du" : ((SP()[id] || {}).name || "?");
+  const hilfe = () => !(G && G.hilfe === false);
+  const person = id => FALL.personen.find(p => p.id === id);
+  const zustaendig = pid => (T().verteilung || {})[pid] || null;
+  const istMeins = pid => !!ME && zustaendig(pid) === ME.id;
+  const darfStarten = () => !!ME && (!G.host || G.host === ME.id);
+  const uhr = ts => new Date(ts || Date.now()).toLocaleTimeString("de-DE", { hour: "2-digit", minute: "2-digit" });
+  const datum = ts => new Date(ts || Date.now()).toLocaleDateString("de-DE", { day: "2-digit", month: "2-digit" });
+  const gesperrtSicht = () => istLK && !ME;   /* Lehrkraft schaut nur zu */
+
+  /* Persischer Text: jedes Wort antippbar (→ Wörterbuch) */
+  function faHtml(text, key) {
+    return E.woerter(text).map((w, i) => `<span class="wort ${NACH && NACH.key === key && NACH.i === i ? "an" : ""}" data-wk="${esc(key)}" data-wi="${i}">${esc(w)}</span>`).join(" ");
+  }
+  const NAMEN = () => { const m = new Map([[E.strip("پَشمَک"), "Pashmak (Name der Katze)"]]); FALL.personen.forEach(p => E.woerter(p.nameFa).forEach(w => { const s = E.strip(w); if (s !== "آقای" && s !== "آقا") m.set(s, p.name + " (Name)"); })); return m; };
+  function nachschlagHtml(key) {
+    if (!NACH || NACH.key !== key) return "";
+    const tok = NACH.wort, nm = NAMEN().get(E.strip(tok).replace(/[‌]/g, ""));
+    let inhalt;
+    if (nm) inhalt = `<div>👤 <b>${esc(nm)}</b></div>`;
+    else if (!WB.daten) inhalt = `<div class="muted">Wörterbuch wird geladen …</div>`;
+    else {
+      const r = E.nachschlagen(tok, WB.daten.W, WB.normFa, 4);
+      inhalt = r.length ? r.map(w => `<div class="z" data-say="${esc(w.fa)}"><div><b>${esc(w.de)}</b><div class="klein muted">${w.tr ? `<i>${esc(w.tr)}</i>` : ""}${w.stamm ? ` · Präsensstamm <span class="fa">${esc(w.stamm)}</span>` : ""}</div></div><div class="f">${esc(w.fa)}</div></div>`).join("")
+        : `<div class="muted">Kein Eintrag gefunden – vielleicht steckt eine Endung dran. Probier es im Wörterbuch.</div>`;
+    }
+    return `<div class="nachschl"><div style="display:flex;justify-content:space-between;gap:8px;align-items:center"><span class="fa" style="font-size:1.2rem">${esc(tok)}</span><span><button class="mini" data-wbsuche="${esc(E.strip(tok))}">🔎 im Wörterbuch</button> <button class="mini" data-nachweg="1">✕</button></span></div>${inhalt}</div>`;
+  }
+
+  /* =====================================================================
+     START: neuer Fall / weiterspielen / Code eingeben
+     ===================================================================== */
+  async function startSpieler() {
+    if (!(await F.brauchtCode())) return;
+    const s = F.sitzung();
+    let lk = null; try { lk = localStorage.getItem("farsi_lk_spieler"); if (!lk) { lk = "lk" + Math.random().toString(36).slice(2, 7); localStorage.setItem("farsi_lk_spieler", lk); } } catch (e) { lk = "lk0"; }
+    ME = s ? { id: s.code, name: s.name || s.code } : { id: lk, name: "Lehrkraft" };
+    $("#kopfInfo").textContent = ME.name;
+    if (CODE) beitreten(CODE); else zeichneStart();
+  }
+  async function zeichneStart(meld) {
+    const Fz = window.DETEKTIV_FAELLE.pashmak, L = letzte();
+    let h = `<div class="karte" style="margin-top:18px"><div style="display:flex;gap:14px;align-items:center;flex-wrap:wrap"><div style="font-size:3rem">🕵️</div><div><h2 style="margin:0">Detektiv-Fall: ${esc(Fz.titel)} ${Fz.icon}</h2><div class="fa" style="color:var(--lapis);font-size:1.2rem">${esc(Fz.titelFa)}</div></div></div>
+      <p>${esc(Fz.intro.de)}</p>
+      <p class="klein muted">Für 1–4 Personen · ${esc(Fz.dauer)} · Niveau: Fortgeschritten (Beginn) · Jede Person spielt am eigenen Gerät. Der Spielstand wird automatisch gespeichert – ihr könnt jederzeit aufhören und später weitermachen.</p>
+      <h3 style="margin-bottom:6px">Neuen Fall öffnen</h3>
+      <div class="btnreihe"><button class="btn" data-neu="1">🛟 mit Hilfe (deutsche Übersetzungen)</button><button class="btn zwei" data-neu="0">💪 ohne Hilfe (nur Persisch)</button></div>
+      <p class="klein muted" style="margin-bottom:0">Wörterbuch und Wortlisten gibt es in beiden Versionen. Wer den Fall öffnet, bekommt einen Spielcode – den geben die anderen ein.</p></div>`;
+    h += `<div class="karte" style="margin-top:12px"><h3 style="margin-top:0">Mitspielen oder weiterspielen</h3>
+      <div style="display:flex;gap:8px;flex-wrap:wrap"><input class="feld" id="code" inputmode="numeric" maxlength="4" placeholder="0000" aria-label="Spielcode" style="max-width:160px;text-align:center;font-size:1.3rem;letter-spacing:.2em"><button class="btn" id="los">Los ➜</button></div>
+      <p class="klein" style="color:var(--granat);min-height:1em">${esc(meld || "")}</p>
+      <div id="letzteListe">${L.length ? `<div class="klein-h">Deine letzten Fälle</div><p class="muted klein">wird geladen …</p>` : ""}</div></div>`;
+    app().innerHTML = h;
+    $$("[data-neu]").forEach(b => b.onclick = () => neuerFall(b.dataset.neu === "1"));
+    $("#los").onclick = () => beitreten(String($("#code").value).replace(/\D/g, ""));
+    $("#code").onkeydown = e => { if (e.key === "Enter") $("#los").click(); };
+    if (L.length) {
+      const z = await Promise.all(L.map(async x => { try { const g = (await F.mitTimeout(gRef(x.code).once("value"), 6000)).val(); return g ? { x, g } : null; } catch (e) { return null; } }));
+      const ok = z.filter(Boolean), box = $("#letzteListe"); if (!box) return;
+      box.innerHTML = ok.length ? `<div class="klein-h">Deine letzten Fälle</div><div style="display:grid;gap:6px">${ok.map(({ x, g }) => {
+        const Fx = window.DETEKTIV_FAELLE[g.fall || "pashmak"], p = E.fortschritt(Fx, (g.teams || {}).f), geloest = (((g.teams || {}).f || {}).anklage || {}).geloest;
+        const leute = E.reihe(g.spieler).map(id => (g.spieler[id] || {}).name).join(", ");
+        return `<div class="dt-leiste" style="margin:0"><div><b>${Fx.icon} ${esc(Fx.titel)}</b> · Code <b>${x.code}</b> · ${datum(g.erstellt)}<div class="klein muted">${esc(leute)} · 📓 ${p.hinweise}/${p.hinweiseMax} Hinweise${geloest ? " · ✅ gelöst" : ""}</div></div><button class="btn klein" data-weiter="${x.code}">${geloest ? "ansehen" : "▶ weiterspielen"}</button></div>`; }).join("")}</div>` : "";
+      $$("[data-weiter]").forEach(b => b.onclick = () => beitreten(b.dataset.weiter));
+    }
+  }
+  async function neuerFall(mitHilfe) {
+    const d = { erstellt: Date.now(), phase: "lobby", fall: "pashmak", hilfe: mitHilfe, host: ME.id, spieler: { [ME.id]: { name: ME.name, ts: Date.now() } } };
+    try { CODE = await LT.neueRunde(gRef, d); } catch (e) { return fehler(e, true); }
+    merke(CODE); history.replaceState(null, "", "?code=" + CODE);
+    LT.verbindung(gRef(CODE).child("spieler/" + ME.id));
+    hoere(CODE);
+  }
+  async function beitreten(c) {
+    if (!/^\d{4}$/.test(c || "")) return zeichneStart("Der Spielcode hat vier Ziffern.");
+    let g; try { g = (await F.mitTimeout(gRef(c).once("value"), 8000)).val(); } catch (e) { return fehler(e, true); }
+    if (!g || !g.fall) return zeichneStart("Diesen Spielcode gibt es nicht.");
+    CODE = c; merke(c); history.replaceState(null, "", "?code=" + c);
+    const sp = g.spieler || {};
+    if (!sp[ME.id]) {
+      if (E.reihe(sp).length >= 4) return zeichneStart("In diesem Fall ermitteln schon 4 Personen.");
+      await gRef(c).child("spieler/" + ME.id).set({ name: ME.name, ts: Date.now() }).catch(e => fehler(e, true));
+    }
+    LT.verbindung(gRef(c).child("spieler/" + ME.id));
+    hoere(c);
+  }
+
+  /* =====================================================================
+     LOBBY
+     ===================================================================== */
+  function lobbyHtml() {
+    const ids = E.reihe(SP());
+    return `<div class="karte" style="margin-top:14px"><h2 style="margin-top:0">${FALL.icon} ${esc(FALL.titel)} <span class="fa" style="color:var(--lapis)">${esc(FALL.titelFa)}</span></h2>
+      <div class="lv-kopf" style="margin:6px 0"><div><div class="klein muted">Spielcode – für die anderen und fürs Weiterspielen</div><div class="lv-code">${CODE}</div></div>
+      <div class="klein" style="max-width:360px">Die anderen öffnen 🎮 <b>Spielcode</b> auf der Startseite (oder diese Aktivität) und geben <b>${CODE}</b> ein. Ihr könnt auch allein ermitteln.</div></div>
+      <div class="klein-h">Detektive (${ids.length}/4)</div><div class="btnreihe">${ids.map(id => `<span class="chip ${id === ME.id ? "ich" : ""}">🕵️ ${esc(Name(id))}</span>`).join("")}</div>
+      <div class="klein-h">Version</div>
+      <div class="btnreihe">${darfStarten() ? `<button class="btn ${hilfe() ? "" : "zwei"} klein" data-hilfe="1">🛟 mit Hilfe</button><button class="btn ${hilfe() ? "zwei" : ""} klein" data-hilfe="0">💪 ohne Hilfe</button>` : `<span class="chip">${hilfe() ? "🛟 mit Hilfe" : "💪 ohne Hilfe"}</span>`}</div>
+      <div class="meldung klein" style="margin-top:14px"><b>So läuft es:</b> Die fünf Personen im Haus werden unter euch aufgeteilt – jede/r befragt „seine“ Leute. Was ihr herausfindet, notiert ihr im gemeinsamen 📓 Notizbuch. Manche Fragen gehen erst, wenn jemand anderes einen passenden Hinweis gefunden hat – also redet miteinander! Zum Schluss klagt ihr gemeinsam an: Wer? Was? Wann? Wo?</div>
+      ${darfStarten() ? `<button class="btn" id="start" style="margin-top:8px">▶ Ermittlung starten${ids.length === 1 ? " (allein)" : ` (zu ${ids.length})`}</button>` : `<p class="muted">⏳ Gleich geht es los – ${esc(Name(G.host))} startet die Ermittlung.</p>`}</div>`;
+  }
+  function verdrahteLobby() {
+    $$("[data-hilfe]").forEach(b => b.onclick = () => schreib("hilfe", b.dataset.hilfe === "1"));
+    const s = $("#start"); if (s) s.onclick = () => { s.disabled = true; upd({ phase: "spiel", start: Date.now(), "teams/f/verteilung": E.verteile(FALL, E.reihe(SP())) }); };
+  }
+
+  /* =====================================================================
+     SPIEL
+     ===================================================================== */
+  function kopfHtml() {
+    const ids = E.reihe(SP()), p = E.fortschritt(FALL, T());
+    return `<div class="dt-leiste nodruck"><div class="btnreihe" style="gap:6px">${ids.map(id => {
+      const s = SP()[id], pers = FALL.personen.filter(x => zustaendig(x.id) === id).map(x => x.emoji).join("");
+      return `<span class="chip ${ME && id === ME.id ? "ich" : ""} ${s.online === false ? "off" : ""}" title="${s.online === false ? "gerade nicht da" : "online"}"><span class="pkt"></span>${esc(Name(id))} ${pers}</span>`; }).join("")}</div>
+      <div class="klein muted">💾 automatisch gespeichert · Code <b style="color:var(--lapis)">${CODE}</b> · 📓 ${p.hinweise}/${p.hinweiseMax}</div></div>`;
+  }
+  function tabsHtml() {
+    const offen = E.offeneNotizen(FALL, T()).length, p = E.fortschritt(FALL, T()), neu = Object.entries(E.neueFragen(FALL, T())).filter(([pid]) => istMeins(pid)).reduce((s, [, n]) => s + n, 0);
+    const t = (id, txt, z) => `<button class="tab ${TAB === id ? "an" : ""}" data-tab="${id}">${txt}${z ? `<span class="z">${z}</span>` : ""}</button>`;
+    return `<div class="tabs nodruck">${t("befragen", "🗣️ Befragen", neu || "")}${t("notiz", "📓 Notizbuch", offen ? "!" : p.hinweise || "")}${t("loesung", "⚖️ Lösung", "")}${t("wb", "🔎 Wörterbuch", "")}${t("fall", "📄 Der Fall", "")}</div>`;
+  }
+  function befragenHtml() {
+    if (OFFEN) return verhoerHtml(person(OFFEN));
+    const neu = E.neueFragen(FALL, T());
+    return `<p class="klein muted" style="margin-top:0">Tippe auf eine Person. Du befragst die Personen mit deinem Namen – bei den anderen kannst du mitlesen.</p>
+      <div class="pers-gitter">${FALL.personen.map(p => {
+        const st = E.fragenStatus(p, T()), g = st.filter(x => x.gestellt).length, z = zustaendig(p.id);
+        return `<button class="pers ${istMeins(p.id) ? "meins" : ""}" data-pers="${p.id}">${istMeins(p.id) && neu[p.id] ? `<span class="neu">${neu[p.id]} neu</span>` : ""}
+          <div class="em">${p.emoji}</div><div class="nm">${esc(p.name)}</div><div class="nf">${esc(p.nameFa)}</div><div class="rl">${esc(p.rolle)}</div>
+          <div class="balken"><i style="width:${Math.round(g / p.fragen.length * 100)}%"></i></div>
+          <div class="wer">${z ? (ME && z === ME.id ? "🕵️ Du befragst" : `👀 ${esc(Name(z))} befragt`) : "– noch frei –"} · ${g}/${p.fragen.length} Fragen</div></button>`; }).join("")}</div>
+      ${!gesperrtSicht() && E.reihe(SP()).length > 1 ? `<p class="klein" style="margin-top:12px"><button class="mini" id="neuVert">🔀 Personen neu verteilen</button> <span class="muted">– z. B. wenn jemand neu dazukommt oder fehlt.</span></p>` : ""}`;
+  }
+  function verhoerHtml(p) {
+    const f = T(), st = E.fragenStatus(p, f), z = zustaendig(p.id), meins = istMeins(p.id);
+    const gel = st.filter(x => x.gestellt).sort((a, b) => ((f.gelesen[p.id + "_" + a.q.id] || {}).ts || 0) - ((f.gelesen[p.id + "_" + b.q.id] || {}).ts || 0));
+    let h = `<div class="nodruck" style="margin-bottom:8px"><button class="btn zwei klein" data-zurueck="1">← alle Personen</button></div>
+      <div class="karte"><div class="verh-kopf"><div class="em">${p.emoji}</div><div><h2 style="margin:0">${esc(p.name)} <span class="fa" style="color:var(--lapis)">${esc(p.nameFa)}</span></h2><div class="klein muted">${esc(p.rolle)}</div></div>
+      <div style="margin-left:auto" class="klein">${meins ? "🕵️ <b>Du</b> befragst" : z ? `👀 <b>${esc(Name(z))}</b> befragt ${!gesperrtSicht() ? `<button class="mini" data-uebern="${p.id}">🔄 selbst übernehmen</button>` : ""}` : !gesperrtSicht() ? `<button class="mini" data-uebern="${p.id}">🕵️ übernehmen</button>` : ""}</div></div>
+      <div class="chat">`;
+    if (!gel.length) h += `<div class="klein muted" style="text-align:center;padding:8px">Noch keine Fragen gestellt.</div>`;
+    gel.forEach(({ q }) => {
+      const key = p.id + "_" + q.id, g = f.gelesen[key] || {}, deAn = DE.has(key);
+      const hn = q.hinweis, notiert = hn && f.hinweise && f.hinweise[hn];
+      h += `<div class="bub frage"><div class="wer">🕵️ ${esc(Name(g.p))} · ${uhr(g.ts)}</div><div class="fa-g">${faHtml(q.fa, key + "q")}</div>${hilfe() ? `<div class="de">${esc(q.de)}</div>` : ""}${nachschlagHtml(key + "q")}</div>
+        <div class="bub antw"><div class="wer">${p.emoji} ${esc(p.name)}</div><div class="fa-g">${faHtml(q.a, key)}</div>
+        ${deAn && hilfe() ? `<div class="de">${esc(q.ade)}</div>` : ""}
+        <div class="werkz nodruck"><button class="mini" data-say="${esc(q.a)}">🔊 anhören</button>${hilfe() ? `<button class="mini" data-de="${key}">${deAn ? "DE ausblenden" : "🇩🇪 Übersetzung"}</button>` : ""}
+        ${hn ? (notiert ? `<span class="mini ok">✅ notiert: ${esc(FALL.hinweise[hn].titel)}</span>` : gesperrtSicht() ? "" : `<button class="mini notiz" data-notiz="${hn}" data-key="${key}">📝 Hinweis! Notieren</button>`) : ""}</div>
+        ${nachschlagHtml(key)}${CHECK && CHECK.key === key ? checkHtml() : ""}</div>`;
+    });
+    h += `</div>`;
+    const frei = st.filter(x => x.frei && !x.gestellt), zu = st.filter(x => !x.frei && !x.gestellt);
+    if (meins) {
+      h += `<div class="klein-h">Deine Fragen an ${esc(p.nameDat || p.name)}</div><div class="fragen">${frei.map(({ q }) => `<button class="frage-btn" data-frage="${q.id}"><span class="fa-g">${esc(q.fa)}</span>${hilfe() ? `<span class="de">${esc(q.de)}</span>` : ""}</button>`).join("")}
+        ${zu.length ? `<div class="gesperrt">🔒 ${zu.length === 1 ? "Eine Frage ist" : zu.length + " Fragen sind"} noch gesperrt. Dafür braucht ihr erst ${zu.length === 1 ? "einen weiteren Hinweis" : "weitere Hinweise"} im Notizbuch – vielleicht von einer anderen Person.</div>` : ""}
+        ${!frei.length && !zu.length ? `<div class="fertig">✅ Alle Fragen an ${esc(p.nameDat || p.name)} gestellt.</div>` : ""}</div>`;
+    } else if (frei.length) h += `<p class="klein muted" style="margin-top:10px">${frei.length} Frage(n) an ${esc(p.nameDat || p.name)} sind noch offen – ${z ? esc(Name(z)) + " ist zuständig" : "übernimm die Person"}.</p>`;
+    h += `<details class="nodruck" data-merk="lex-${p.id}" style="margin-top:14px"><summary><b>📚 Wörter für das Gespräch mit ${esc(p.nameDat || p.name)}</b></summary><div class="lex">${p.lexikon.map(([fa, tr, de]) => `<div class="f" data-say="${esc(fa)}">${esc(fa)}</div><div><b>${esc(de)}</b> <span class="klein muted"><i>${esc(tr)}</i></span></div>`).join("")}</div></details>
+      <p class="klein muted nodruck" style="margin-bottom:0">💡 Tippe auf ein persisches Wort, dann siehst du es im Wörterbuch.</p></div>`;
+    return h;
+  }
+  function checkHtml() {
+    const H = FALL.hinweise[CHECK.hn], c = H.check;
+    return `<div class="check"><b>📝 Bevor du notierst: Hast du es verstanden?</b><div style="margin:6px 0 2px">${esc(c.frage)}</div>
+      ${c.optionen.map((o, i) => `<button class="opt ${(CHECK.falsch || []).includes(i) ? "falsch" : ""}" data-copt="${i}">${esc(o)}</button>`).join("")}
+      ${(CHECK.falsch || []).length ? `<div class="klein" style="color:var(--granat)">Noch nicht – lies die Antwort noch einmal (tippe unbekannte Wörter an).</div>` : ""}
+      <button class="mini" data-cweg="1" style="margin-top:4px">später</button></div>`;
+  }
+  function notizHtml() {
+    const f = T(), hs = Object.entries(f.hinweise || {}).sort(([, a], [, b]) => (a.ts || 0) - (b.ts || 0)), offen = E.offeneNotizen(FALL, f), p = E.fortschritt(FALL, f);
+    let h = offen.length ? `<div class="meldung nodruck">📝 <b>Noch nicht notiert:</b> ${offen.map(({ p, q }) => `<button class="mini" data-gehzu="${p.id}">${p.emoji} ${esc(p.name)}</button>`).join(" ")} – in diesen Antworten steckt ein Hinweis.</div>` : "";
+    h += `<div class="karte"><h2 style="margin-top:0">📓 Notizbuch <span class="klein muted">${p.hinweise} von ${p.hinweiseMax} Hinweisen · ${p.fragen}/${p.fragenMax} Fragen gestellt</span></h2><div class="notizbuch">`;
+    h += hs.length ? hs.map(([id, x]) => { const H = FALL.hinweise[id], von = FALL.personen.find(pp => pp.fragen.some(q => q.hinweis === id));
+      return `<div class="notiz"><div class="t">${esc(H.titel)}</div><div>${esc(H.text)}</div><div class="q">${von ? von.emoji + " von " + esc(von.name) : ""} · notiert von ${esc(Name(x.p))} · ${uhr(x.ts)}</div></div>`; }).join("") : `<div class="leer-notiz">Noch leer. Befragt die Leute im Haus – wenn eine Antwort einen Hinweis enthält, erscheint „📝 Hinweis! Notieren“.</div>`;
+    return h + `</div><div class="btnreihe nodruck" style="margin-top:10px"><button class="btn zwei klein" data-drucken="1">🖨️ Notizbuch drucken</button></div></div>`;
+  }
+  function loesungHtml() {
+    const a = T().anklage || {}, p = E.fortschritt(FALL, T());
+    let h = `<div class="karte"><h2 style="margin-top:0">⚖️ Wer? Was? Wann? Wo?</h2><p class="klein muted" style="margin-top:0">Wenn ihr euch sicher seid, wählt gemeinsam die Lösung. Ihr habt ${p.hinweise} von ${p.hinweiseMax} Hinweisen.${p.hinweise < 10 ? " Tipp: Sammelt lieber noch mehr Hinweise." : ""}</p>`;
+    if (a.letzter && !a.geloest) h += `<div class="meldung">🔍 Letzter Versuch (${esc(Name(a.letzter.p))}, ${uhr(a.letzter.ts)}): <b>${a.letzter.richtig} von ${FALL.anklage.length}</b> richtig. Ermittelt weiter!</div>`;
+    h += `<div class="ankl">${FALL.anklage.map(q => `<div><b>${esc(q.frage)}</b><div class="opts">${q.optionen.map((o, i) => `<button class="${+WAHL[q.id] === i && WAHL[q.id] != null ? "an" : ""}" data-ankl="${q.id}" data-i="${i}">${esc(o)}</button>`).join("")}</div></div>`).join("")}</div>
+      ${gesperrtSicht() ? "" : `<button class="btn" id="anklagen" style="margin-top:14px" ${FALL.anklage.every(q => WAHL[q.id] != null) ? "" : "disabled"}>⚖️ Lösung prüfen</button>`}
+      <p class="klein muted">Versuche bisher: ${a.versuche || 0}</p></div>`;
+    return h;
+  }
+  function fallHtml() {
+    const I = FALL.intro;
+    return `<div class="karte"><h2 style="margin-top:0">📄 ${esc(FALL.titel)}</h2><p>${esc(I.de)}</p>
+      <div class="chat"><div class="bub antw"><div class="wer">${FALL.personen[0].emoji} ${esc(FALL.personen[0].name)}</div><div class="fa-g">${faHtml(I.fa, "intro")}</div>${hilfe() && DE.has("intro") ? `<div class="de">${esc(I.faDe)}</div>` : ""}
+      <div class="werkz nodruck"><button class="mini" data-say="${esc(I.fa)}">🔊 anhören</button>${hilfe() ? `<button class="mini" data-de="intro">${DE.has("intro") ? "DE ausblenden" : "🇩🇪 Übersetzung"}</button>` : ""}</div>${nachschlagHtml("intro")}</div></div>
+      <div class="klein-h">Das Haus</div><div class="klein">3. Stock: WG von Neda, Kaveh und Shirin · 2. Stock: ihr · 1. Stock: Bahar · Erdgeschoss: Laden von Herrn Rahimi</div>
+      ${darfStarten() && !gesperrtSicht() ? `<div class="klein-h">Version</div><div class="btnreihe"><button class="btn ${hilfe() ? "" : "zwei"} klein" data-hilfe="1">🛟 mit Hilfe</button><button class="btn ${hilfe() ? "zwei" : ""} klein" data-hilfe="0">💪 ohne Hilfe</button></div>` : `<p class="klein muted">Version: ${hilfe() ? "🛟 mit Hilfe" : "💪 ohne Hilfe"}</p>`}</div>`;
+  }
+  function wbHtml() { return `<div class="karte"><div id="wbBox"></div></div>`; }
+
+  /* ---------- Ende: Lösung + Bericht ---------- */
+  function endeHtml() {
+    const f = T(), a = f.anklage || {}, E2 = FALL.ende, ids = E.reihe(SP()), ber = f.bericht || {};
+    const dauer = f && G.start && a.geloest ? Math.max(1, Math.round((a.geloest - G.start) / 60000)) : null, p = E.fortschritt(FALL, f);
+    let h = `<div class="karte" style="margin-top:4px;text-align:center"><div style="font-size:3rem">🎉🐈</div><h2 style="margin:4px 0">Fall gelöst!</h2><p>${esc(E2.de)}</p>
+      <div class="klein muted">${a.versuche || 1} Versuch(e) · ${p.hinweise}/${p.hinweiseMax} Hinweise · ${p.fragen}/${p.fragenMax} Fragen${dauer ? ` · ${dauer} Min. Ermittlungszeit (mit Pausen)` : ""}</div></div>
+      <div class="karte" style="margin-top:12px"><h3 style="margin-top:0">${FALL.personen[0].emoji} Neda schreibt euch:</h3><div class="chat"><div class="bub antw"><div class="fa-g">${faHtml(E2.fa, "ende")}</div>${hilfe() && DE.has("ende") ? `<div class="de">${esc(E2.faDe)}</div>` : ""}
+      <div class="werkz nodruck"><button class="mini" data-say="${esc(E2.fa)}">🔊 anhören</button>${hilfe() ? `<button class="mini" data-de="ende">${DE.has("ende") ? "DE ausblenden" : "🇩🇪 Übersetzung"}</button>` : ""}</div>${nachschlagHtml("ende")}</div></div></div>`;
+    h += `<div class="karte" style="margin-top:12px"><h3 style="margin-top:0">📝 Abschlussbericht</h3><p class="klein muted" style="margin-top:0">Baut die drei Sätze für den Polizeibericht aus den Wörtern. ${ids.length > 1 ? "Jede/r hat einen Satz – helft euch gegenseitig." : ""}</p>`;
+    FALL.bericht.forEach((b, i) => {
+      const wer = ids.length ? ids[i % ids.length] : null, fertig = ber[i];
+      h += `<div style="margin:12px 0"><div class="klein"><b>Satz ${i + 1}</b>${ids.length > 1 ? ` · ${wer && ME && wer === ME.id ? "🕵️ deiner" : esc(Name(wer))}` : ""}${hilfe() || fertig ? ` · <i>${esc(b.de)}</i>` : ""}</div>`;
+      if (fertig) { h += `<div class="fertig fa-g" style="font-size:1.2rem">✅ ${esc(b.fa)}.</div></div>`; return; }
+      const toks = E.woerter(b.fa), misch = mischFest(toks, i), st = BER[i] || (BER[i] = []);
+      h += `<div class="zeile">${st.length ? st.map((k, n) => `<button class="wk" data-braus="${i}" data-n="${n}">${esc(misch[k])}</button>`).join("") : `<span class="leer">Tippe die Wörter in der richtigen Reihenfolge an …</span>`}</div>
+        <div class="wks">${misch.map((t, k) => `<button class="wk ${st.includes(k) ? "weg" : ""}" data-brein="${i}" data-k="${k}">${esc(t)}</button>`).join("")}</div>
+        ${gesperrtSicht() ? "" : `<div class="btnreihe" style="margin-top:6px"><button class="btn klein" data-bpruef="${i}" ${st.length === toks.length ? "" : "disabled"}>✔ prüfen</button><button class="btn zwei klein" data-bleer="${i}">↺</button></div>`}</div>`;
+    });
+    const alle = FALL.bericht.every((b, i) => ber[i]);
+    h += alle ? `<div class="fertig" style="text-align:center;font-weight:800">🗂️ Fallakte geschlossen. Gute Arbeit, Detektive!</div>` : "";
+    return h + `<div class="btnreihe nodruck" style="margin-top:10px"><button class="btn zwei klein" data-drucken="1">🖨️ Drucken / als PDF</button></div></div>`;
+  }
+  function mischFest(a, seed) { a = a.slice(); let x = (seed * 7919 + 17) % 233280; for (let i = a.length - 1; i > 0; i--) { x = (x * 9301 + 49297) % 233280; const j = Math.floor(x / 233280 * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } if (a.join(" ") === E.woerter(FALL.bericht[seed].fa).join(" ")) a.push(a.shift()); return a; }
+
+  function zeichneSpiel() {
+    $("#kopfTitel").textContent = FALL.titel;
+    const geloest = (T().anklage || {}).geloest;
+    let h = kopfHtml();
+    if (MELD) h += `<div class="meldung">${MELD}</div>`;
+    if (geloest && TAB === "ende") h += `<div class="tabs nodruck"><button class="tab" data-tab="befragen">🗣️ Befragen</button><button class="tab" data-tab="notiz">📓 Notizbuch</button><button class="tab an" data-tab="ende">🎉 Ende</button></div>` + endeHtml();
+    else {
+      h += tabsHtml();
+      if (geloest) h += `<div class="fertig nodruck" style="margin-bottom:10px">🎉 Der Fall ist gelöst! <button class="mini" data-tab="ende">zum Ende & Abschlussbericht</button></div>`;
+      h += TAB === "notiz" ? notizHtml() : TAB === "loesung" ? (geloest ? endeHtml() : loesungHtml()) : TAB === "wb" ? wbHtml() : TAB === "fall" ? fallHtml() : befragenHtml();
+    }
+    LT.render(app(), h);
+    verdrahteSpiel();
+    if (TAB === "wb") { const box = $("#wbBox"); if (box) { WB_UI = WB.einbauen(box, { offen: null, sofort: true }); if (WB_UI && NACH && NACH.suche) { WB_UI.input.value = NACH.suche; NACH = null; setTimeout(() => WB_UI.zeichne(), 50); WB.laden().then(() => WB_UI.zeichne()); } } }
+  }
+  function verdrahteSpiel() {
+    $$("[data-tab]").forEach(b => b.onclick = () => { TAB = b.dataset.tab; MELD = null; OFFEN = null; zeichne(); window.scrollTo(0, 0); });
+    $$("[data-pers]").forEach(b => b.onclick = () => { OFFEN = b.dataset.pers; CHECK = null; NACH = null; zeichne(); window.scrollTo(0, 0); });
+    $$("[data-zurueck]").forEach(b => b.onclick = () => { OFFEN = null; zeichne(); });
+    $$("[data-gehzu]").forEach(b => b.onclick = () => { TAB = "befragen"; OFFEN = b.dataset.gehzu; zeichne(); });
+    $$("[data-say]").forEach(b => b.onclick = e => { e.stopPropagation(); F.sprich(b.dataset.say); });
+    $$("[data-de]").forEach(b => b.onclick = () => { const k = b.dataset.de; DE.has(k) ? DE.delete(k) : DE.add(k); zeichne(); });
+    $$("[data-wk]").forEach(s => s.onclick = () => {
+      const key = s.dataset.wk, i = +s.dataset.wi;
+      if (NACH && NACH.key === key && NACH.i === i) NACH = null; else NACH = { key, i, wort: s.textContent };
+      zeichne(); if (!WB.daten) WB.laden().then(zeichne).catch(() => { });
+    });
+    $$("[data-nachweg]").forEach(b => b.onclick = () => { NACH = null; zeichne(); });
+    $$("[data-wbsuche]").forEach(b => b.onclick = () => { NACH = { suche: b.dataset.wbsuche }; TAB = "wb"; OFFEN = null; zeichne(); });
+    $$("[data-frage]").forEach(b => b.onclick = () => frage(OFFEN, b.dataset.frage, b));
+    $$("[data-uebern]").forEach(b => b.onclick = () => { const p = person(b.dataset.uebern), z = zustaendig(p.id); if (z && !confirm(`${p.name} selbst befragen? ${Name(z)} kann dann nur noch mitlesen.`)) return; schreib(`teams/f/verteilung/${p.id}`, ME.id); });
+    const nv = $("#neuVert"); if (nv) nv.onclick = () => {
+      const ids = E.reihe(SP()).filter(id => SP()[id].online !== false); if (!ids.length) return;
+      if (confirm(`Die fünf Personen neu verteilen auf: ${ids.map(Name).join(", ")}?`)) schreib("teams/f/verteilung", E.verteile(FALL, ids));
+    };
+    $$("[data-notiz]").forEach(b => b.onclick = () => { CHECK = { key: b.dataset.key, hn: b.dataset.notiz, falsch: [] }; zeichne(); });
+    $$("[data-cweg]").forEach(b => b.onclick = () => { CHECK = null; zeichne(); });
+    $$("[data-copt]").forEach(b => b.onclick = () => {
+      const i = +b.dataset.copt, H = FALL.hinweise[CHECK.hn];
+      if (CHECK.falsch.includes(i)) return;
+      if (i === H.check.r) {
+        const hn = CHECK.hn; CHECK = null;
+        gRef(CODE).child("teams/f/hinweise/" + hn).transaction(cur => cur || { p: ME.id, ts: Date.now() }).then(() => toast("📓 Notiert: " + H.titel)).catch(e => fehler(e));
+        if (hn === "gestaendnis" || hn === "wo") MELD = "💡 Jetzt wisst ihr genug, oder? Schaut bei ⚖️ <b>Lösung</b> vorbei.";
+      } else { CHECK.falsch.push(i); gRef(CODE).child("teams/f/fehler").transaction(v => (v || 0) + 1).catch(() => { }); zeichne(); }
+    });
+    $$("[data-ankl]").forEach(b => b.onclick = () => { WAHL[b.dataset.ankl] = +b.dataset.i; zeichne(); });
+    const an = $("#anklagen"); if (an) an.onclick = () => anklagen(an);
+    $$("[data-hilfe]").forEach(b => b.onclick = () => schreib("hilfe", b.dataset.hilfe === "1"));
+    $$("[data-drucken]").forEach(b => b.onclick = () => window.print());
+    /* Bericht */
+    $$("[data-brein]").forEach(b => b.onclick = () => { const i = +b.dataset.brein; (BER[i] = BER[i] || []).push(+b.dataset.k); zeichne(); });
+    $$("[data-braus]").forEach(b => b.onclick = () => { const i = +b.dataset.braus; BER[i].splice(+b.dataset.n, 1); zeichne(); });
+    $$("[data-bleer]").forEach(b => b.onclick = () => { BER[+b.dataset.bleer] = []; zeichne(); });
+    $$("[data-bpruef]").forEach(b => b.onclick = () => {
+      const i = +b.dataset.bpruef, toks = E.woerter(FALL.bericht[i].fa), misch = mischFest(toks, i), gebaut = BER[i].map(k => misch[k]);
+      if (gebaut.join(" ") === toks.join(" ")) { schreib(`teams/f/bericht/${i}`, { p: ME.id, ts: Date.now() }); toast("✅ Richtig!"); }
+      else { const ok = gebaut.findIndex((w, n) => w !== toks[n]); toast(ok > 0 ? `🤏 Die ersten ${ok} Wörter stimmen.` : "Noch nicht – welches Wort steht am Anfang?"); }
+    });
+  }
+  function frage(pid, qid, btn) {
+    if (btn) btn.disabled = true;
+    const key = pid + "_" + qid;
+    gRef(CODE).child("teams/f/gelesen/" + key).transaction(cur => cur || { p: ME.id, ts: Date.now() }).then(() => {
+      const q = person(pid).fragen.find(x => x.id === qid);
+      setTimeout(() => { const b = $$(".bub.antw"); if (b.length) b[b.length - 1].scrollIntoView({ behavior: "smooth", block: "center" }); }, 80);
+      if (q && q.hinweis && !(T().hinweise || {})[q.hinweis]) setTimeout(() => toast("🔍 In dieser Antwort steckt ein Hinweis!"), 400);
+    }).catch(e => fehler(e));
+  }
+  function anklagen(btn) {
+    btn.disabled = true;
+    const res = E.pruefeAnklage(FALL, WAHL), w = Object.assign({}, WAHL);
+    gRef(CODE).child("teams/f/anklage").transaction(cur => {
+      cur = cur || {}; if (cur.geloest) return cur;
+      cur.versuche = (cur.versuche || 0) + 1;
+      cur.letzter = { richtig: res.richtig, p: ME.id, ts: Date.now() };
+      if (res.ok) { cur.geloest = Date.now(); cur.wahl = w; }
+      return cur;
+    }).then(() => { if (res.ok) { TAB = "ende"; zeichne(); window.scrollTo(0, 0); } else toast(`${res.richtig} von ${FALL.anklage.length} richtig – ermittelt weiter!`); })
+      .catch(e => fehler(e));
+  }
+
+  /* =====================================================================
+     LEHRKRAFT: Übersicht aller Fälle
+     ===================================================================== */
+  function startLeitung() {
+    firebase.auth().onAuthStateChanged(async u => {
+      if (!u) { app().innerHTML = `<div class="karte" style="margin-top:20px"><h2>Nur für Lehrkräfte</h2><p>Bitte zuerst in der <a href="konsole.html">Konsole</a> anmelden.</p></div>`; return; }
+      if (CODE) { hoere(CODE); return; }
+      app().innerHTML = `<p class="muted" style="margin-top:20px">Lade Fälle …</p>`;
+      let alle = {};
+      try { alle = (await F.mitTimeout(F.ref("live/detektiv").orderByChild("erstellt").limitToLast(40).once("value"), 9000)).val() || {}; } catch (e) { return fehler(e, true); }
+      const l = Object.entries(alle).sort(([, a], [, b]) => (b.erstellt || 0) - (a.erstellt || 0));
+      app().innerHTML = `<div class="karte" style="margin-top:18px"><h2 style="margin-top:0">🕵️ Detektiv-Fälle – Übersicht</h2>
+        <p class="klein muted">Die TN öffnen den Fall selbst (🎲 Aktivitäten → Detektiv-Fall) und bekommen einen Code. Hier siehst du, wie weit sie sind.</p>
+        ${l.length ? `<table class="tab-tabelle"><tr><th>Code</th><th>Datum</th><th>Detektive</th><th>Fortschritt</th><th></th></tr>${l.map(([c, g]) => {
+          const Fx = window.DETEKTIV_FAELLE[g.fall || "pashmak"], f = (g.teams || {}).f || {}, p = E.fortschritt(Fx, f), a = f.anklage || {};
+          return `<tr><td><b>${c}</b></td><td>${datum(g.erstellt)} ${uhr(g.erstellt)}</td><td>${esc(E.reihe(g.spieler).map(id => g.spieler[id].name).join(", "))}<div class="klein muted">${g.hilfe === false ? "ohne Hilfe" : "mit Hilfe"}</div></td>
+            <td>${g.phase === "lobby" ? "wartet" : `📓 ${p.hinweise}/${p.hinweiseMax} · ❓ ${p.fragen}/${p.fragenMax}<div class="klein muted">Lösungsversuche: ${a.versuche || 0}${a.geloest ? " · ✅ gelöst" : ""} · Fehler beim Notieren: ${f.fehler || 0}</div>`}</td>
+            <td><a class="btn zwei klein" href="?leitung=1&code=${c}" style="text-decoration:none">ansehen</a></td></tr>`; }).join("")}</table>` : `<p class="muted">Noch keine Fälle.</p>`}</div>`;
+    });
+  }
+
+  function zeichne() {
+    if (!G) { if (istLK) app().innerHTML = `<div class="karte" style="margin-top:20px">Diesen Fall gibt es nicht. <a href="?leitung=1">Zur Übersicht</a></div>`; else zeichneStart("Diesen Fall gibt es nicht (mehr)."); return; }
+    if (!FALL) return fehler(new Error("Fall nicht gefunden: " + G.fall), true);
+    if (!istLK && ME && !SP()[ME.id]) { app().innerHTML = `<div class="karte" style="margin-top:20px">Du bist nicht (mehr) in diesem Fall. <button class="btn klein" id="wieder">Wieder mitmachen</button></div>`; $("#wieder").onclick = () => beitreten(CODE); return; }
+    if (G.phase === "lobby") { if (istLK) { app().innerHTML = `<div class="karte" style="margin-top:20px">Fall ${CODE} wartet noch auf den Start. <a href="?leitung=1">Zur Übersicht</a></div>`; return; } LT.render(app(), lobbyHtml()); verdrahteLobby(); return; }
+    if (istLK && TAB === "befragen" && !OFFEN && !zeichne.lkInit) { zeichne.lkInit = true; TAB = "notiz"; }
+    zeichneSpiel();
+  }
+  window.DETEKTIV_APP = { zeichne, get G() { return G; }, get ME() { return ME; }, setTab(t) { TAB = t; zeichne(); }, oeffne(p) { TAB = "befragen"; OFFEN = p; zeichne(); } };
+  F.initFB();
+  istLK ? startLeitung() : startSpieler();
+})();
+</script>
+</body>
+</html>
