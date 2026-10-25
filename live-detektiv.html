@@ -92,6 +92,41 @@
   .wk.weg{visibility:hidden}
   .zeile .wk{background:#e4f3ee;border-color:#9fc9bb}
   .fertig{background:var(--gruen-hell);border:1px solid #b9d8c4;border-radius:12px;padding:8px 12px}
+  /* Bitten (Aufgaben vor dem Gespräch) */
+  .bitte{background:#fff;border:2px solid var(--lapis);border-radius:16px;padding:12px 14px;margin-top:10px}
+  .bitte h3{margin:0 0 4px}
+  .info-karte{background:var(--lapis-hell);border-radius:12px;padding:8px 12px;margin:8px 0;font-weight:700}
+  .lueck-text{font-family:var(--fa);direction:rtl;text-align:right;font-size:1.2rem;line-height:2.3;background:#fbfaf6;border:1px solid var(--linie);border-radius:12px;padding:8px 12px}
+  .lueck{display:inline-block;min-width:3.2em;border-bottom:2px solid var(--lapis);text-align:center;color:var(--lapis);font-weight:700;padding:0 4px}
+  .lueck.falsch{border-color:var(--granat);color:var(--granat)}
+  .wahl-zeile{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin:6px 0}
+  .wahl-zeile .lnr{font-weight:800;min-width:2.2em;color:var(--tinte2)}
+  .chipw{border:1.5px solid var(--linie);background:#fff;border-radius:10px;padding:3px 11px;font:inherit;cursor:pointer}
+  .chipw.fa{font-family:var(--fa);font-size:1.1rem}
+  .chipw.an{border-color:var(--lapis);background:var(--lapis);color:#fff}
+  .chipw.falsch{border-color:var(--granat);background:var(--granat-hell)}
+  .chipw.ok{border-color:#9fc9b0;background:var(--gruen-hell);cursor:default}
+  .hoer{border-bottom:1px solid var(--linie);padding:8px 0}
+  .zuord{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .zuord .sp{display:grid;gap:6px;align-content:start}
+  .zuord .emo{font-size:1.7rem;line-height:1.2}
+  .zeilen-pool{display:grid;gap:6px;margin-top:10px}
+  .zl{font-family:var(--fa);direction:rtl;text-align:right;font-size:1.08rem;border:1.5px solid var(--linie);background:#fff;border-radius:10px;padding:6px 12px;cursor:pointer;line-height:1.8}
+  .zl:hover{border-color:var(--lapis)}
+  .zl.weg{display:none}
+  .zl-gebaut{display:grid;gap:6px;min-height:52px;border:1.5px solid #c9d6d2;border-radius:14px;padding:8px;background:#fbfdfc}
+  .zl-gebaut .zl{background:#e4f3ee;border-color:#9fc9bb}
+  .zl-gebaut .leer{color:#99a;font-size:.86rem}
+  .rueck{margin-top:6px;padding:6px 10px;border-radius:10px;background:var(--safran-hell);font-weight:700;font-size:.9rem}
+  /* Team-Chat */
+  .tchat{display:flex;flex-direction:column;gap:6px;max-height:55vh;overflow-y:auto;background:#f3f1ec;border:1px solid var(--linie);border-radius:16px;padding:12px}
+  .tchat .bub{max-width:85%}
+  .tchat .bub.ich{align-self:flex-end;background:#e2efe9}
+  .tchat .t{font-size:1.02rem}
+  .tchat .t.fa{font-size:1.15rem}
+  .seg{display:inline-flex;border:1px solid var(--linie);border-radius:10px;overflow:hidden;flex-wrap:wrap}
+  .seg button{border:0;background:#fff;padding:7px 12px;font:inherit;font-size:.88rem;font-weight:700;cursor:pointer}
+  .seg button.an{background:var(--lapis);color:#fff}
   .tab-tabelle{width:100%;border-collapse:collapse;font-size:.9rem}
   .tab-tabelle th,.tab-tabelle td{border-bottom:1px solid var(--linie);padding:6px 8px;text-align:left;vertical-align:top}
   @media print{.kopf,.nodruck{display:none!important}.chat{break-inside:auto}}
@@ -123,8 +158,10 @@
   let CODE = (qs.get("code") || "").replace(/\D/g, "") || null;
   let G = null, REF = null, ME = null, FALL = null;
   /* lokaler Ansichtszustand (nicht gespeichert) */
-  let TAB = "befragen", OFFEN = null, CHECK = null, NACH = null, WAHL = {}, BER = {}, WB_UI = null, MELD = null;
-  const DE = new Set();
+  let TAB = "befragen", OFFEN = null, CHECK = null, NACH = null, WAHL = {}, WB_UI = null, MELD = null, BEKANNT = null;
+  const START = { hilfe: true, modus: "getrennt" };
+  const DE = new Set(), ORD = {}, BIT = {};
+  let ORD_OK = {};
   const app = () => $("#app");
   const gRef = c => F.ref(`live/detektiv/${c}`);
   const LS_LETZTE = "farsi_detektiv_letzte";
@@ -132,6 +169,8 @@
   /* ---------- Speicher: zuletzt gespielte Fälle (für „Weiterspielen“) ---------- */
   function letzte() { try { return JSON.parse(localStorage.getItem(LS_LETZTE) || "[]"); } catch (e) { return []; } }
   function merke(c) { try { const l = letzte().filter(x => x.code !== c); l.unshift({ code: c, ts: Date.now() }); localStorage.setItem(LS_LETZTE, JSON.stringify(l.slice(0, 8))); } catch (e) { } }
+  const chatGelesen = () => { try { return +localStorage.getItem("farsi_det_chat_" + CODE) || 0; } catch (e) { return 0; } };
+  const setChatGelesen = ts => { try { localStorage.setItem("farsi_det_chat_" + CODE, String(ts)); } catch (e) { } };
 
   /* ---------- Firebase ---------- */
   function hoere(c) {
@@ -141,9 +180,16 @@
       G = s.val();
       if (!istLK) LT.pruefeNeuLaden(G);
       FALL = G ? (window.DETEKTIV_FAELLE || {})[G.fall || "pashmak"] : null;
+      neueNotizenMelden();
       if (LT.tipptGerade(zeichne)) return;
       zeichne();
     }, e => fehler(e, true));
+  }
+  /* Neue Hinweise von anderen kurz melden – wichtig, wenn man nicht im selben Raum ist */
+  function neueNotizenMelden() {
+    const h = (G && G.teams && G.teams.f && G.teams.f.hinweise) || {};
+    if (BEKANNT && FALL && ME) Object.entries(h).forEach(([id, x]) => { if (!BEKANNT.has(id) && x.p !== ME.id) toast(`📓 ${Name(x.p)} hat notiert: ${FALL.hinweise[id].titel}`, 4200); });
+    BEKANNT = new Set(Object.keys(h));
   }
   function fehler(e, hart) {
     console.error(e);
@@ -156,16 +202,19 @@
   /* ---------- Helfer ---------- */
   const T = () => (G && G.teams && G.teams.f) || {};
   const SP = () => (G && G.spieler) || {};
-  const name = id => id === (ME && ME.id) ? "du" : ((SP()[id] || {}).name || "?");
-  const Name = id => id === (ME && ME.id) ? "Du" : ((SP()[id] || {}).name || "?");
+  const Name = id => ME && id === ME.id ? "Du" : ((SP()[id] || {}).name || "?");
   const hilfe = () => !(G && G.hilfe === false);
+  const getrennt = () => !!(G && G.modus === "getrennt");
   const person = id => FALL.personen.find(p => p.id === id);
   const zustaendig = pid => (T().verteilung || {})[pid] || null;
   const istMeins = pid => !!ME && zustaendig(pid) === ME.id;
   const darfStarten = () => !!ME && (!G.host || G.host === ME.id);
   const uhr = ts => new Date(ts || Date.now()).toLocaleTimeString("de-DE", { hour: "2-digit", minute: "2-digit" });
   const datum = ts => new Date(ts || Date.now()).toLocaleDateString("de-DE", { day: "2-digit", month: "2-digit" });
-  const gesperrtSicht = () => istLK && !ME;   /* Lehrkraft schaut nur zu */
+  const nurLesen = () => istLK && !ME;   /* Lehrkraft schaut nur zu */
+  /* Im Modus „getrennt“ sieht man nur die eigenen Gespräche */
+  const darfSehen = pid => !getrennt() || nurLesen() || istMeins(pid) || !zustaendig(pid);
+  const pName = p => p.nameDat || p.name;
 
   /* Persischer Text: jedes Wort antippbar (→ Wörterbuch) */
   function faHtml(text, key) {
@@ -185,6 +234,49 @@
     }
     return `<div class="nachschl"><div style="display:flex;justify-content:space-between;gap:8px;align-items:center"><span class="fa" style="font-size:1.2rem">${esc(tok)}</span><span><button class="mini" data-wbsuche="${esc(E.strip(tok))}">🔎 im Wörterbuch</button> <button class="mini" data-nachweg="1">✕</button></span></div>${inhalt}</div>`;
   }
+  /* Sprechblase einer Person (persisch, antippbar, 🔊, DE auf Knopfdruck) */
+  function personBub(p, fa, de, key, extra = "") {
+    const deAn = DE.has(key);
+    return `<div class="bub antw"><div class="wer">${p.emoji} ${esc(p.name)}</div><div class="fa-g">${faHtml(fa, key)}</div>${deAn && hilfe() ? `<div class="de">${esc(de)}</div>` : ""}
+      <div class="werkz nodruck"><button class="mini" data-say="${esc(fa)}">🔊 anhören</button>${hilfe() ? `<button class="mini" data-de="${esc(key)}">${deAn ? "DE ausblenden" : "🇩🇪 Übersetzung"}</button>` : ""}${extra}</div>${nachschlagHtml(key)}</div>`;
+  }
+
+  /* =====================================================================
+     ORDNEN-Baustein (Wörter oder Zeilen in Reihenfolge bringen)
+     id: eindeutig; teile: richtige Reihenfolge; opt.extra: Ablenker; opt.zeilen: ganze Zeilen
+     ===================================================================== */
+  function ordHtml(id, teile, opt = {}) {
+    const pool = teile.concat(opt.extra || []), perm = E.mischIdx(pool.length, id), st = ORD[id] || (ORD[id] = { sel: [], msg: null });
+    ORD_OK[id] = { teile, pool, perm, ok: opt.ok };
+    const txt = k => pool[perm[k]];
+    if (opt.zeilen) return `<div class="zl-gebaut">${st.sel.length ? st.sel.map((k, n) => `<button class="zl" data-oraus="${id}" data-n="${n}">${n + 1}. ${esc(txt(k))}</button>`).join("") : `<span class="leer">Tippe die Zeilen in der richtigen Reihenfolge an …</span>`}</div>
+      <div class="zeilen-pool">${perm.map((_, k) => `<button class="zl ${st.sel.includes(k) ? "weg" : ""}" data-orein="${id}" data-k="${k}">${esc(txt(k))}</button>`).join("")}</div>${ordKnoepfe(id, st, teile)}`;
+    return `<div class="zeile">${st.sel.length ? st.sel.map((k, n) => `<button class="wk" data-oraus="${id}" data-n="${n}">${esc(txt(k))}</button>`).join("") : `<span class="leer">Tippe die Wörter in der richtigen Reihenfolge an …</span>`}</div>
+      <div class="wks">${perm.map((_, k) => `<button class="wk ${st.sel.includes(k) ? "weg" : ""}" data-orein="${id}" data-k="${k}">${esc(txt(k))}</button>`).join("")}</div>${ordKnoepfe(id, st, teile)}`;
+  }
+  function ordKnoepfe(id, st, teile) {
+    if (nurLesen()) return "";
+    return `${st.msg ? `<div class="rueck">${st.msg}</div>` : ""}<div class="btnreihe" style="margin-top:6px"><button class="btn klein" data-opruef="${id}" ${st.sel.length >= teile.length ? "" : "disabled"}>✔ prüfen</button><button class="btn zwei klein" data-oleer="${id}">↺</button><button class="btn zwei klein" data-otipp="${id}">💡 Tipp</button></div>`;
+  }
+  function verdrahteOrd() {
+    $$("[data-orein]").forEach(b => b.onclick = () => { const st = ORD[b.dataset.orein]; st.sel.push(+b.dataset.k); st.msg = null; zeichne(); });
+    $$("[data-oraus]").forEach(b => b.onclick = () => { const st = ORD[b.dataset.oraus]; st.sel.splice(+b.dataset.n, 1); st.msg = null; zeichne(); });
+    $$("[data-oleer]").forEach(b => b.onclick = () => { ORD[b.dataset.oleer] = { sel: [], msg: null }; zeichne(); });
+    $$("[data-otipp]").forEach(b => b.onclick = () => {
+      const id = b.dataset.otipp, st = ORD[id], O = ORD_OK[id], txt = k => O.pool[O.perm[k]];
+      let n = 0; while (n < st.sel.length && txt(st.sel[n]) === O.teile[n]) n++;
+      st.sel = st.sel.slice(0, n);
+      if (n < O.teile.length) { const k = O.perm.map((_, k) => k).find(k => txt(k) === O.teile[n] && !st.sel.includes(k)); if (k != null) st.sel.push(k); }
+      st.msg = "💡 Der nächste Teil ist gesetzt."; zeichne();
+    });
+    $$("[data-opruef]").forEach(b => b.onclick = () => {
+      const id = b.dataset.opruef, st = ORD[id], O = ORD_OK[id], geb = st.sel.map(k => O.pool[O.perm[k]]);
+      if (geb.join("|") === O.teile.join("|")) { st.msg = null; st.fertig = true; if (O.ok) O.ok(); else zeichne(); return; }
+      const n = geb.findIndex((w, i) => w !== O.teile[i]);
+      st.msg = n > 0 ? `🤏 Die ersten ${n} stimmen schon – danach noch nicht.` : geb.length > O.teile.length ? "Da ist etwas zu viel dabei." : "Noch nicht – womit fängt es an?";
+      zeichne();
+    });
+  }
 
   /* =====================================================================
      START: neuer Fall / weiterspielen / Code eingeben
@@ -197,20 +289,27 @@
     $("#kopfInfo").textContent = ME.name;
     if (CODE) beitreten(CODE); else zeichneStart();
   }
+  function versionWahlHtml(h, m, attr) {
+    return `<div style="display:grid;gap:10px;margin:8px 0">
+      <div><div class="klein-h" style="margin:0 0 4px">Hilfe</div><div class="seg"><button class="${h ? "an" : ""}" data-${attr}hilfe="1">🛟 mit Hilfe – deutsche Übersetzungen auf Knopfdruck</button><button class="${h ? "" : "an"}" data-${attr}hilfe="0">💪 ohne Hilfe – nur Persisch</button></div></div>
+      <div><div class="klein-h" style="margin:0 0 4px">Wie spielt ihr?</div><div class="seg"><button class="${m === "getrennt" ? "an" : ""}" data-${attr}modus="getrennt">🏠 getrennt – jede/r für sich, Ergebnisse ins Notizbuch</button><button class="${m === "getrennt" ? "" : "an"}" data-${attr}modus="zusammen">👥 zusammen – alle lesen alles mit</button></div></div></div>`;
+  }
   async function zeichneStart(meld) {
     const Fz = window.DETEKTIV_FAELLE.pashmak, L = letzte();
     let h = `<div class="karte" style="margin-top:18px"><div style="display:flex;gap:14px;align-items:center;flex-wrap:wrap"><div style="font-size:3rem">🕵️</div><div><h2 style="margin:0">Detektiv-Fall: ${esc(Fz.titel)} ${Fz.icon}</h2><div class="fa" style="color:var(--lapis);font-size:1.2rem">${esc(Fz.titelFa)}</div></div></div>
       <p>${esc(Fz.intro.de)}</p>
-      <p class="klein muted">Für 1–4 Personen · ${esc(Fz.dauer)} · Niveau: Fortgeschritten (Beginn) · Jede Person spielt am eigenen Gerät. Der Spielstand wird automatisch gespeichert – ihr könnt jederzeit aufhören und später weitermachen.</p>
-      <h3 style="margin-bottom:6px">Neuen Fall öffnen</h3>
-      <div class="btnreihe"><button class="btn" data-neu="1">🛟 mit Hilfe (deutsche Übersetzungen)</button><button class="btn zwei" data-neu="0">💪 ohne Hilfe (nur Persisch)</button></div>
-      <p class="klein muted" style="margin-bottom:0">Wörterbuch und Wortlisten gibt es in beiden Versionen. Wer den Fall öffnet, bekommt einen Spielcode – den geben die anderen ein.</p></div>`;
+      <p class="klein muted">Für 1–4 Personen · ${esc(Fz.dauer)} · Niveau: Fortgeschritten (Beginn) · Jede Person spielt am eigenen Gerät – ihr müsst nicht im selben Raum sein. Der Spielstand wird automatisch gespeichert.</p>
+      <h3 style="margin-bottom:0">Neuen Fall öffnen</h3>${versionWahlHtml(START.hilfe, START.modus, "s")}
+      <button class="btn" id="neu">🕵️ Fall öffnen</button>
+      <p class="klein muted" style="margin-bottom:0">Wörterbuch und Wortlisten gibt es immer. Wer den Fall öffnet, bekommt einen Spielcode – den geben die anderen ein.</p></div>`;
     h += `<div class="karte" style="margin-top:12px"><h3 style="margin-top:0">Mitspielen oder weiterspielen</h3>
       <div style="display:flex;gap:8px;flex-wrap:wrap"><input class="feld" id="code" inputmode="numeric" maxlength="4" placeholder="0000" aria-label="Spielcode" style="max-width:160px;text-align:center;font-size:1.3rem;letter-spacing:.2em"><button class="btn" id="los">Los ➜</button></div>
       <p class="klein" style="color:var(--granat);min-height:1em">${esc(meld || "")}</p>
       <div id="letzteListe">${L.length ? `<div class="klein-h">Deine letzten Fälle</div><p class="muted klein">wird geladen …</p>` : ""}</div></div>`;
     app().innerHTML = h;
-    $$("[data-neu]").forEach(b => b.onclick = () => neuerFall(b.dataset.neu === "1"));
+    $$("[data-shilfe]").forEach(b => b.onclick = () => { START.hilfe = b.dataset.shilfe === "1"; zeichneStart(meld); });
+    $$("[data-smodus]").forEach(b => b.onclick = () => { START.modus = b.dataset.smodus; zeichneStart(meld); });
+    $("#neu").onclick = () => { $("#neu").disabled = true; neuerFall(); };
     $("#los").onclick = () => beitreten(String($("#code").value).replace(/\D/g, ""));
     $("#code").onkeydown = e => { if (e.key === "Enter") $("#los").click(); };
     if (L.length) {
@@ -223,8 +322,8 @@
       $$("[data-weiter]").forEach(b => b.onclick = () => beitreten(b.dataset.weiter));
     }
   }
-  async function neuerFall(mitHilfe) {
-    const d = { erstellt: Date.now(), phase: "lobby", fall: "pashmak", hilfe: mitHilfe, host: ME.id, spieler: { [ME.id]: { name: ME.name, ts: Date.now() } } };
+  async function neuerFall() {
+    const d = { erstellt: Date.now(), phase: "lobby", fall: "pashmak", hilfe: START.hilfe, modus: START.modus, host: ME.id, spieler: { [ME.id]: { name: ME.name, ts: Date.now() } } };
     try { CODE = await LT.neueRunde(gRef, d); } catch (e) { return fehler(e, true); }
     merke(CODE); history.replaceState(null, "", "?code=" + CODE);
     LT.verbindung(gRef(CODE).child("spieler/" + ME.id));
@@ -251,15 +350,15 @@
     const ids = E.reihe(SP());
     return `<div class="karte" style="margin-top:14px"><h2 style="margin-top:0">${FALL.icon} ${esc(FALL.titel)} <span class="fa" style="color:var(--lapis)">${esc(FALL.titelFa)}</span></h2>
       <div class="lv-kopf" style="margin:6px 0"><div><div class="klein muted">Spielcode – für die anderen und fürs Weiterspielen</div><div class="lv-code">${CODE}</div></div>
-      <div class="klein" style="max-width:360px">Die anderen öffnen 🎮 <b>Spielcode</b> auf der Startseite (oder diese Aktivität) und geben <b>${CODE}</b> ein. Ihr könnt auch allein ermitteln.</div></div>
+      <div class="klein" style="max-width:380px">Schickt den anderen den Code <b>${CODE}</b>. Sie öffnen 🎮 <b>Spielcode</b> auf der Startseite (oder diese Aktivität) und geben ihn ein. Ihr könnt auch allein ermitteln.</div></div>
       <div class="klein-h">Detektive (${ids.length}/4)</div><div class="btnreihe">${ids.map(id => `<span class="chip ${id === ME.id ? "ich" : ""}">🕵️ ${esc(Name(id))}</span>`).join("")}</div>
-      <div class="klein-h">Version</div>
-      <div class="btnreihe">${darfStarten() ? `<button class="btn ${hilfe() ? "" : "zwei"} klein" data-hilfe="1">🛟 mit Hilfe</button><button class="btn ${hilfe() ? "zwei" : ""} klein" data-hilfe="0">💪 ohne Hilfe</button>` : `<span class="chip">${hilfe() ? "🛟 mit Hilfe" : "💪 ohne Hilfe"}</span>`}</div>
-      <div class="meldung klein" style="margin-top:14px"><b>So läuft es:</b> Die fünf Personen im Haus werden unter euch aufgeteilt – jede/r befragt „seine“ Leute. Was ihr herausfindet, notiert ihr im gemeinsamen 📓 Notizbuch. Manche Fragen gehen erst, wenn jemand anderes einen passenden Hinweis gefunden hat – also redet miteinander! Zum Schluss klagt ihr gemeinsam an: Wer? Was? Wann? Wo?</div>
+      ${darfStarten() ? versionWahlHtml(hilfe(), G.modus, "g") : `<p class="klein">${hilfe() ? "🛟 mit Hilfe" : "💪 ohne Hilfe"} · ${getrennt() ? "🏠 getrennt" : "👥 zusammen"}</p>`}
+      <div class="meldung klein" style="margin-top:14px"><b>So läuft es:</b> Die fünf Personen im Haus werden unter euch aufgeteilt. Jede Person möchte zuerst, dass ihr bei etwas helft (ein Plakat, eine Sprachnachricht, eine Einkaufsliste …) – erst dann redet sie. Was ihr herausfindet, schreibt ihr ins gemeinsame 📓 Notizbuch. ${getrennt() ? "Ihr seht nur eure eigenen Gespräche – teilt eure Ergebnisse über das Notizbuch und den 💬 Team-Chat. " : ""}Manche Fragen gehen erst, wenn jemand anderes einen passenden Hinweis gefunden hat. Zum Schluss klagt ihr gemeinsam an: Wer? Was? Wann? Wo?</div>
       ${darfStarten() ? `<button class="btn" id="start" style="margin-top:8px">▶ Ermittlung starten${ids.length === 1 ? " (allein)" : ` (zu ${ids.length})`}</button>` : `<p class="muted">⏳ Gleich geht es los – ${esc(Name(G.host))} startet die Ermittlung.</p>`}</div>`;
   }
   function verdrahteLobby() {
-    $$("[data-hilfe]").forEach(b => b.onclick = () => schreib("hilfe", b.dataset.hilfe === "1"));
+    $$("[data-ghilfe]").forEach(b => b.onclick = () => schreib("hilfe", b.dataset.ghilfe === "1"));
+    $$("[data-gmodus]").forEach(b => b.onclick = () => schreib("modus", b.dataset.gmodus));
     const s = $("#start"); if (s) s.onclick = () => { s.disabled = true; upd({ phase: "spiel", start: Date.now(), "teams/f/verteilung": E.verteile(FALL, E.reihe(SP())) }); };
   }
 
@@ -271,126 +370,210 @@
     return `<div class="dt-leiste nodruck"><div class="btnreihe" style="gap:6px">${ids.map(id => {
       const s = SP()[id], pers = FALL.personen.filter(x => zustaendig(x.id) === id).map(x => x.emoji).join("");
       return `<span class="chip ${ME && id === ME.id ? "ich" : ""} ${s.online === false ? "off" : ""}" title="${s.online === false ? "gerade nicht da" : "online"}"><span class="pkt"></span>${esc(Name(id))} ${pers}</span>`; }).join("")}</div>
-      <div class="klein muted">💾 automatisch gespeichert · Code <b style="color:var(--lapis)">${CODE}</b> · 📓 ${p.hinweise}/${p.hinweiseMax}</div></div>`;
+      <div class="klein muted">💾 gespeichert · Code <b style="color:var(--lapis)">${CODE}</b> · ${getrennt() ? "🏠 getrennt" : "👥 zusammen"} · 📓 ${p.hinweise}/${p.hinweiseMax}</div></div>`;
   }
+  function chatListe() { return Object.values(T().chat || {}).filter(Boolean).sort((a, b) => (a.ts || 0) - (b.ts || 0)); }
   function tabsHtml() {
-    const offen = E.offeneNotizen(FALL, T()).length, p = E.fortschritt(FALL, T()), neu = Object.entries(E.neueFragen(FALL, T())).filter(([pid]) => istMeins(pid)).reduce((s, [, n]) => s + n, 0);
+    const offen = E.offeneNotizen(FALL, T()).filter(({ p }) => darfSehen(p.id)).length, p = E.fortschritt(FALL, T());
+    const neu = FALL.personen.filter(x => istMeins(x.id)).reduce((s, x) => s + (E.brauchtNichtMehr(x, T()) || !x.bitte ? E.neueFragen(FALL, T())[x.id] : 1), 0);
+    const ungelesen = chatListe().filter(m => m.ts > chatGelesen() && (!ME || m.p !== ME.id)).length;
     const t = (id, txt, z) => `<button class="tab ${TAB === id ? "an" : ""}" data-tab="${id}">${txt}${z ? `<span class="z">${z}</span>` : ""}</button>`;
-    return `<div class="tabs nodruck">${t("befragen", "🗣️ Befragen", neu || "")}${t("notiz", "📓 Notizbuch", offen ? "!" : p.hinweise || "")}${t("loesung", "⚖️ Lösung", "")}${t("wb", "🔎 Wörterbuch", "")}${t("fall", "📄 Der Fall", "")}</div>`;
+    return `<div class="tabs nodruck">${t("befragen", "🗣️ Befragen", neu || "")}${t("notiz", "📓 Notizbuch", offen ? "!" : p.hinweise || "")}${t("team", "💬 Team", ungelesen || "")}${t("loesung", "⚖️ Lösung", "")}${t("wb", "🔎 Wörterbuch", "")}${t("fall", "📄 Der Fall", "")}</div>`;
   }
   function befragenHtml() {
     if (OFFEN) return verhoerHtml(person(OFFEN));
     const neu = E.neueFragen(FALL, T());
-    return `<p class="klein muted" style="margin-top:0">Tippe auf eine Person. Du befragst die Personen mit deinem Namen – bei den anderen kannst du mitlesen.</p>
+    return `<p class="klein muted" style="margin-top:0">Tippe auf eine Person. Du kümmerst dich um die Personen mit deinem Namen${getrennt() ? " – die anderen kümmern sich um ihre und schreiben ihre Ergebnisse ins Notizbuch" : " – bei den anderen kannst du mitlesen"}.</p>
       <div class="pers-gitter">${FALL.personen.map(p => {
-        const st = E.fragenStatus(p, T()), g = st.filter(x => x.gestellt).length, z = zustaendig(p.id);
-        return `<button class="pers ${istMeins(p.id) ? "meins" : ""}" data-pers="${p.id}">${istMeins(p.id) && neu[p.id] ? `<span class="neu">${neu[p.id]} neu</span>` : ""}
+        const st = E.fragenStatus(p, T()), g = st.filter(x => x.gestellt).length, z = zustaendig(p.id), geh = !p.bitte || E.brauchtNichtMehr(p, T());
+        const marke = istMeins(p.id) ? (!geh ? `<span class="neu">🤝 Bitte</span>` : neu[p.id] ? `<span class="neu">${neu[p.id]} neu</span>` : "") : "";
+        return `<button class="pers ${istMeins(p.id) ? "meins" : ""}" data-pers="${p.id}">${marke}
           <div class="em">${p.emoji}</div><div class="nm">${esc(p.name)}</div><div class="nf">${esc(p.nameFa)}</div><div class="rl">${esc(p.rolle)}</div>
-          <div class="balken"><i style="width:${Math.round(g / p.fragen.length * 100)}%"></i></div>
-          <div class="wer">${z ? (ME && z === ME.id ? "🕵️ Du befragst" : `👀 ${esc(Name(z))} befragt`) : "– noch frei –"} · ${g}/${p.fragen.length} Fragen</div></button>`; }).join("")}</div>
-      ${!gesperrtSicht() && E.reihe(SP()).length > 1 ? `<p class="klein" style="margin-top:12px"><button class="mini" id="neuVert">🔀 Personen neu verteilen</button> <span class="muted">– z. B. wenn jemand neu dazukommt oder fehlt.</span></p>` : ""}`;
+          <div class="balken"><i style="width:${Math.round(((geh ? 1 : 0) + g) / (p.fragen.length + 1) * 100)}%"></i></div>
+          <div class="wer">${z ? (ME && z === ME.id ? "🕵️ Du" : `👤 ${esc(Name(z))}`) : "– noch frei –"} · ${geh ? `${g}/${p.fragen.length} Fragen` : "wartet auf Hilfe"}</div></button>`; }).join("")}</div>
+      ${!nurLesen() && E.reihe(SP()).length > 1 ? `<p class="klein" style="margin-top:12px"><button class="mini" id="neuVert">🔀 Personen neu verteilen</button> <span class="muted">– z. B. wenn jemand neu dazukommt oder fehlt.</span></p>` : ""}`;
   }
   function verhoerHtml(p) {
-    const f = T(), st = E.fragenStatus(p, f), z = zustaendig(p.id), meins = istMeins(p.id);
-    const gel = st.filter(x => x.gestellt).sort((a, b) => ((f.gelesen[p.id + "_" + a.q.id] || {}).ts || 0) - ((f.gelesen[p.id + "_" + b.q.id] || {}).ts || 0));
+    const f = T(), st = E.fragenStatus(p, f), z = zustaendig(p.id), meins = istMeins(p.id), geh = !p.bitte || E.brauchtNichtMehr(p, f);
     let h = `<div class="nodruck" style="margin-bottom:8px"><button class="btn zwei klein" data-zurueck="1">← alle Personen</button></div>
       <div class="karte"><div class="verh-kopf"><div class="em">${p.emoji}</div><div><h2 style="margin:0">${esc(p.name)} <span class="fa" style="color:var(--lapis)">${esc(p.nameFa)}</span></h2><div class="klein muted">${esc(p.rolle)}</div></div>
-      <div style="margin-left:auto" class="klein">${meins ? "🕵️ <b>Du</b> befragst" : z ? `👀 <b>${esc(Name(z))}</b> befragt ${!gesperrtSicht() ? `<button class="mini" data-uebern="${p.id}">🔄 selbst übernehmen</button>` : ""}` : !gesperrtSicht() ? `<button class="mini" data-uebern="${p.id}">🕵️ übernehmen</button>` : ""}</div></div>
-      <div class="chat">`;
-    if (!gel.length) h += `<div class="klein muted" style="text-align:center;padding:8px">Noch keine Fragen gestellt.</div>`;
+      <div style="margin-left:auto" class="klein">${meins ? "🕵️ <b>Du</b> kümmerst dich" : z ? `👤 <b>${esc(Name(z))}</b> kümmert sich ${!nurLesen() ? `<button class="mini" data-uebern="${p.id}">🔄 selbst übernehmen</button>` : ""}` : !nurLesen() ? `<button class="mini" data-uebern="${p.id}">🕵️ übernehmen</button>` : ""}</div></div>`;
+    if (!darfSehen(p.id)) return h + `<div class="meldung" style="margin-top:12px">🔒 <b>Das ist ${esc(Name(z))}s Gespräch.</b> Im Modus „getrennt“ siehst du nur deine eigenen Gespräche. Was ${esc(Name(z))} herausfindet, steht im 📓 Notizbuch – oder fragt im 💬 Team-Chat nach.</div></div>`;
+    h += `<div class="chat">`;
+    if (p.bitte) {
+      h += personBub(p, p.bitte.fa, p.bitte.fade, p.id + "_bitte");
+      if (geh) h += `<div class="bub frage"><div class="wer">🕵️ ${esc(Name(f.geholfen[p.id].p))} · ${uhr(f.geholfen[p.id].ts)}</div>✅ geholfen: ${esc(p.bitte.titel)}</div>` + personBub(p, p.bitte.danke, p.bitte.dankeDe || "", p.id + "_danke");
+    }
+    const gel = st.filter(x => x.gestellt).sort((a, b) => ((f.gelesen[p.id + "_" + a.q.id] || {}).ts || 0) - ((f.gelesen[p.id + "_" + b.q.id] || {}).ts || 0));
     gel.forEach(({ q }) => {
-      const key = p.id + "_" + q.id, g = f.gelesen[key] || {}, deAn = DE.has(key);
-      const hn = q.hinweis, notiert = hn && f.hinweise && f.hinweise[hn];
-      h += `<div class="bub frage"><div class="wer">🕵️ ${esc(Name(g.p))} · ${uhr(g.ts)}</div><div class="fa-g">${faHtml(q.fa, key + "q")}</div>${hilfe() ? `<div class="de">${esc(q.de)}</div>` : ""}${nachschlagHtml(key + "q")}</div>
-        <div class="bub antw"><div class="wer">${p.emoji} ${esc(p.name)}</div><div class="fa-g">${faHtml(q.a, key)}</div>
-        ${deAn && hilfe() ? `<div class="de">${esc(q.ade)}</div>` : ""}
-        <div class="werkz nodruck"><button class="mini" data-say="${esc(q.a)}">🔊 anhören</button>${hilfe() ? `<button class="mini" data-de="${key}">${deAn ? "DE ausblenden" : "🇩🇪 Übersetzung"}</button>` : ""}
-        ${hn ? (notiert ? `<span class="mini ok">✅ notiert: ${esc(FALL.hinweise[hn].titel)}</span>` : gesperrtSicht() ? "" : `<button class="mini notiz" data-notiz="${hn}" data-key="${key}">📝 Hinweis! Notieren</button>`) : ""}</div>
-        ${nachschlagHtml(key)}${CHECK && CHECK.key === key ? checkHtml() : ""}</div>`;
+      const key = p.id + "_" + q.id, g = f.gelesen[key] || {}, hn = q.hinweis, notiert = hn && f.hinweise && f.hinweise[hn];
+      const knopf = hn ? (notiert ? `<span class="mini ok">✅ notiert: ${esc(FALL.hinweise[hn].titel)}</span>` : nurLesen() ? "" : `<button class="mini notiz" data-notiz="${hn}" data-key="${key}">📝 Hinweis! Notieren</button>`) : "";
+      h += `<div class="bub frage"><div class="wer">🕵️ ${esc(Name(g.p))} · ${uhr(g.ts)}</div><div class="fa-g">${faHtml(q.fa, key + "q")}</div>${hilfe() ? `<div class="de">${esc(q.de)}</div>` : ""}${nachschlagHtml(key + "q")}</div>`;
+      h += personBub(p, q.a, q.ade, key, knopf).replace(/<\/div>$/, (CHECK && CHECK.key === key ? checkHtml() : "") + "</div>");
     });
     h += `</div>`;
-    const frei = st.filter(x => x.frei && !x.gestellt), zu = st.filter(x => !x.frei && !x.gestellt);
-    if (meins) {
-      h += `<div class="klein-h">Deine Fragen an ${esc(p.nameDat || p.name)}</div><div class="fragen">${frei.map(({ q }) => `<button class="frage-btn" data-frage="${q.id}"><span class="fa-g">${esc(q.fa)}</span>${hilfe() ? `<span class="de">${esc(q.de)}</span>` : ""}</button>`).join("")}
-        ${zu.length ? `<div class="gesperrt">🔒 ${zu.length === 1 ? "Eine Frage ist" : zu.length + " Fragen sind"} noch gesperrt. Dafür braucht ihr erst ${zu.length === 1 ? "einen weiteren Hinweis" : "weitere Hinweise"} im Notizbuch – vielleicht von einer anderen Person.</div>` : ""}
-        ${!frei.length && !zu.length ? `<div class="fertig">✅ Alle Fragen an ${esc(p.nameDat || p.name)} gestellt.</div>` : ""}</div>`;
-    } else if (frei.length) h += `<p class="klein muted" style="margin-top:10px">${frei.length} Frage(n) an ${esc(p.nameDat || p.name)} sind noch offen – ${z ? esc(Name(z)) + " ist zuständig" : "übernimm die Person"}.</p>`;
-    h += `<details class="nodruck" data-merk="lex-${p.id}" style="margin-top:14px"><summary><b>📚 Wörter für das Gespräch mit ${esc(p.nameDat || p.name)}</b></summary><div class="lex">${p.lexikon.map(([fa, tr, de]) => `<div class="f" data-say="${esc(fa)}">${esc(fa)}</div><div><b>${esc(de)}</b> <span class="klein muted"><i>${esc(tr)}</i></span></div>`).join("")}</div></details>
+    if (!geh) h += meins ? bitteHtml(p) : `<p class="klein muted" style="margin-top:10px">${esc(p.name)} wartet noch auf Hilfe – ${z ? esc(Name(z)) + " kümmert sich" : "übernimm die Person"}.</p>`;
+    else {
+      const frei = st.filter(x => x.frei && !x.gestellt), zu = st.filter(x => !x.frei && !x.gestellt);
+      if (meins) h += `<div class="klein-h">Deine Fragen an ${esc(pName(p))}</div><div class="fragen">${frei.map(({ q }) => `<button class="frage-btn" data-frage="${q.id}"><span class="fa-g">${esc(q.fa)}</span>${hilfe() ? `<span class="de">${esc(q.de)}</span>` : ""}</button>`).join("")}
+          ${zu.length ? `<div class="gesperrt">🔒 ${zu.length === 1 ? "Eine Frage ist" : zu.length + " Fragen sind"} noch gesperrt. Dafür braucht ihr erst ${zu.length === 1 ? "einen weiteren Hinweis" : "weitere Hinweise"} im Notizbuch – vielleicht von einer anderen Person.</div>` : ""}
+          ${!frei.length && !zu.length ? `<div class="fertig">✅ Alle Fragen an ${esc(pName(p))} gestellt.</div>` : ""}</div>`;
+      else if (frei.length) h += `<p class="klein muted" style="margin-top:10px">${frei.length} Frage(n) an ${esc(pName(p))} sind noch offen – ${z ? esc(Name(z)) + " ist zuständig" : "übernimm die Person"}.</p>`;
+    }
+    h += `<details class="nodruck" data-merk="lex-${p.id}" style="margin-top:14px"><summary><b>📚 Wörter für das Gespräch mit ${esc(pName(p))}</b></summary><div class="lex">${p.lexikon.map(([fa, tr, de]) => `<div class="f" data-say="${esc(fa)}">${esc(fa)}</div><div><b>${esc(de)}</b> <span class="klein muted"><i>${esc(tr)}</i></span></div>`).join("")}</div></details>
       <p class="klein muted nodruck" style="margin-bottom:0">💡 Tippe auf ein persisches Wort, dann siehst du es im Wörterbuch.</p></div>`;
     return h;
   }
+
+  /* ---------- Bitten: Aufgaben, bevor eine Person redet ---------- */
+  function geholfen(pid) { schreib(`teams/f/geholfen/${pid}`, { p: ME.id, ts: Date.now() }); toast("🤝 Danke! Jetzt kannst du Fragen stellen."); }
+  function bitteHtml(p) {
+    const b = p.bitte, s = BIT[p.id] || (BIT[p.id] = { w: {}, falsch: [], text: {}, ok: [], sel: null });
+    let h = `<div class="bitte"><h3>🤝 ${esc(b.titel)}</h3><p class="klein" style="margin:0 0 6px">${esc(b.de)}</p>`;
+    if (b.typ === "luecke") {
+      let n = 0;
+      const txt = esc(b.text).replace(/\{(\d)\}/g, (_, i) => { i = +i; const w = s.w[i]; return `<span class="lueck ${s.falsch.includes(i) ? "falsch" : ""}">${w != null ? esc(b.luecken[i].o[w]) : "(" + (i + 1) + ")"}</span>`; });
+      h += `<div class="info-karte">${esc(b.info)}</div><div class="lueck-text">${txt}</div>${hilfe() && s.fertigDe ? `<div class="klein muted">${esc(b.textDe)}</div>` : ""}
+        ${b.luecken.map((l, i) => `<div class="wahl-zeile"><span class="lnr">(${i + 1})</span>${l.o.map((o, k) => `<button class="chipw fa ${s.w[i] === k ? "an" : ""}" data-lw="${p.id}" data-i="${i}" data-k="${k}">${esc(o)}</button>`).join("")}</div>`).join("")}
+        ${s.msg ? `<div class="rueck">${s.msg}</div>` : ""}<button class="btn klein" data-bpr="${p.id}" style="margin-top:6px" ${Object.keys(s.w).length === b.luecken.length ? "" : "disabled"}>✔ Plakat prüfen</button>`;
+    } else if (b.typ === "hoeren") {
+      h += b.items.map((it, i) => { const perm = E.mischIdx(it.o.length, p.id + i);
+        return `<div class="hoer"><div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap"><button class="btn zwei klein" data-say="${esc(it.fa)}">🔊 Satz ${i + 1} anhören</button><b>${esc(it.frage)}:</b>
+          <button class="mini" data-htext="${p.id}" data-i="${i}">${s.text[i] ? "Text ausblenden" : "📄 Text"}</button></div>
+          ${s.text[i] ? `<div class="fa-g" style="font-size:1.15rem;margin-top:4px">${faHtml(it.fa, p.id + "_h" + i)}</div>${hilfe() ? `<div class="klein muted">${esc(it.de)}</div>` : ""}${nachschlagHtml(p.id + "_h" + i)}` : ""}
+          <div class="wahl-zeile">${perm.map(k => `<button class="chipw ${s.w[i] === k ? (s.falsch.includes(i) ? "falsch" : "an") : ""}" data-lw="${p.id}" data-i="${i}" data-k="${k}">${esc(it.o[k])}</button>`).join("")}</div></div>`; }).join("")
+        + `<p class="klein muted">Keine persische Stimme auf deinem Gerät? Dann tippe auf 📄 Text.</p>${s.msg ? `<div class="rueck">${s.msg}</div>` : ""}<button class="btn klein" data-bpr="${p.id}" ${Object.keys(s.w).length === b.items.length ? "" : "disabled"}>✔ Uhrzeiten prüfen</button>`;
+    } else if (b.typ === "zuordnen") {
+      const perm = E.mischIdx(b.paare.length, p.id);
+      h += `<div class="zuord"><div class="sp">${b.paare.map((x, i) => s.ok.includes(i) ? `<button class="chipw fa ok">${esc(x[0])} ✓</button>` : `<button class="chipw fa ${s.sel === i ? "an" : ""}" data-zw="${p.id}" data-i="${i}">${esc(x[0])}</button>`).join("")}</div>
+        <div class="sp">${perm.map(i => { const x = b.paare[i]; return s.ok.includes(i) ? `<button class="chipw ok"><span class="emo">${x[1]}</span> ${esc(x[2])}</button>` : `<button class="chipw ${s.falschBild === i ? "falsch" : ""}" data-zb="${p.id}" data-i="${i}"><span class="emo">${x[1]}</span>${hilfe() ? " " + esc(x[2]) : ""}</button>`; }).join("")}</div></div>
+        <p class="klein muted">${s.sel == null ? "Tippe zuerst links auf ein persisches Wort." : "Jetzt rechts das passende Bild antippen."} ${s.ok.length}/${b.paare.length}</p>`;
+    } else if (b.typ === "ordnen") {
+      h += ordHtml("b_" + p.id, b.zeilen.map(z => z[0] + ": " + z[1]), { zeilen: true, ok: () => geholfen(p.id) });
+    } else if (b.typ === "satz") {
+      const fertig = b.saetze.map((x, i) => ORD["b_" + p.id + i] && ORD["b_" + p.id + i].fertig);
+      b.saetze.forEach((x, i) => {
+        h += `<div style="margin:10px 0"><b>Satz ${i + 1}:</b> <i>${esc(x.de)}</i>`;
+        h += fertig[i] ? `<div class="fertig fa-g" style="font-size:1.2rem">✅ ${esc(x.fa)}</div>` : ordHtml("b_" + p.id + i, E.woerter(x.fa), { extra: x.extra, ok: () => zeichne() });
+        h += `</div>`;
+      });
+      if (fertig.every(Boolean)) h += `<div class="info-karte">🗣️ Jetzt sag beide Sätze laut – so, als stündest du vor Bahars Tür. <button class="mini" data-say="${esc(b.saetze.map(x => x.fa).join(" "))}">🔊 Vorbild anhören</button></div><button class="btn" data-laut="${p.id}">✅ Ich habe es laut gesagt</button>`;
+    }
+    return h + `</div>`;
+  }
+  function verdrahteBitten() {
+    $$("[data-lw]").forEach(b => b.onclick = () => { const s = BIT[b.dataset.lw]; const i = +b.dataset.i; s.w[i] = +b.dataset.k; s.falsch = s.falsch.filter(x => x !== i); s.msg = null; zeichne(); });
+    $$("[data-htext]").forEach(b => b.onclick = () => { const s = BIT[b.dataset.htext], i = +b.dataset.i; s.text[i] = !s.text[i]; zeichne(); });
+    $$("[data-bpr]").forEach(b => b.onclick = () => {
+      const p = person(b.dataset.bpr), B = p.bitte, s = BIT[p.id], liste = B.typ === "luecke" ? B.luecken : B.items;
+      s.falsch = liste.map((l, i) => s.w[i] === l.r ? -1 : i).filter(i => i >= 0);
+      if (!s.falsch.length) { s.fertigDe = true; geholfen(p.id); return; }
+      s.msg = `${liste.length - s.falsch.length} von ${liste.length} richtig – die roten noch einmal${B.typ === "hoeren" ? " anhören" : ""}.`; zeichne();
+    });
+    $$("[data-zw]").forEach(b => b.onclick = () => { const s = BIT[b.dataset.zw]; s.sel = +b.dataset.i; s.falschBild = null; zeichne(); });
+    $$("[data-zb]").forEach(b => b.onclick = () => {
+      const p = person(b.dataset.zb), s = BIT[p.id], i = +b.dataset.i;
+      if (s.sel == null) { toast("Tippe zuerst links auf ein persisches Wort."); return; }
+      if (s.sel === i) { s.ok.push(i); s.sel = null; s.falschBild = null; if (s.ok.length === p.bitte.paare.length) return geholfen(p.id); }
+      else { s.falschBild = i; toast("Passt nicht – schau im Wörterbuch nach 🔎"); }
+      zeichne();
+    });
+    $$("[data-laut]").forEach(b => b.onclick = () => geholfen(b.dataset.laut));
+  }
+
+  /* ---------- Notieren ---------- */
   function checkHtml() {
     const H = FALL.hinweise[CHECK.hn], c = H.check;
+    if (CHECK.phase === "satz") return `<div class="check"><b>📝 Schreib die Notiz fürs Team</b><div class="klein" style="margin:4px 0">Bring die Wörter in die richtige Reihenfolge – so lesen die anderen im Notizbuch, was du herausgefunden hast.${hilfe() ? ` <i>(${esc(H.text)})</i>` : ""}</div>${ordHtml("n_" + CHECK.hn, E.woerter(H.fa), { ok: () => notiere(CHECK.hn) })}<button class="mini" data-cweg="1" style="margin-top:4px">später</button></div>`;
     return `<div class="check"><b>📝 Bevor du notierst: Hast du es verstanden?</b><div style="margin:6px 0 2px">${esc(c.frage)}</div>
       ${c.optionen.map((o, i) => `<button class="opt ${(CHECK.falsch || []).includes(i) ? "falsch" : ""}" data-copt="${i}">${esc(o)}</button>`).join("")}
       ${(CHECK.falsch || []).length ? `<div class="klein" style="color:var(--granat)">Noch nicht – lies die Antwort noch einmal (tippe unbekannte Wörter an).</div>` : ""}
       <button class="mini" data-cweg="1" style="margin-top:4px">später</button></div>`;
   }
+  function notiere(hn) {
+    const H = FALL.hinweise[hn]; CHECK = null;
+    gRef(CODE).child("teams/f/hinweise/" + hn).transaction(cur => cur || { p: ME.id, ts: Date.now() }).then(() => toast("📓 Notiert: " + H.titel)).catch(e => fehler(e));
+    if (hn === "gestaendnis" || hn === "wo") MELD = "💡 Jetzt wisst ihr genug, oder? Schaut bei ⚖️ <b>Lösung</b> vorbei.";
+    zeichne();
+  }
   function notizHtml() {
-    const f = T(), hs = Object.entries(f.hinweise || {}).sort(([, a], [, b]) => (a.ts || 0) - (b.ts || 0)), offen = E.offeneNotizen(FALL, f), p = E.fortschritt(FALL, f);
-    let h = offen.length ? `<div class="meldung nodruck">📝 <b>Noch nicht notiert:</b> ${offen.map(({ p, q }) => `<button class="mini" data-gehzu="${p.id}">${p.emoji} ${esc(p.name)}</button>`).join(" ")} – in diesen Antworten steckt ein Hinweis.</div>` : "";
-    h += `<div class="karte"><h2 style="margin-top:0">📓 Notizbuch <span class="klein muted">${p.hinweise} von ${p.hinweiseMax} Hinweisen · ${p.fragen}/${p.fragenMax} Fragen gestellt</span></h2><div class="notizbuch">`;
-    h += hs.length ? hs.map(([id, x]) => { const H = FALL.hinweise[id], von = FALL.personen.find(pp => pp.fragen.some(q => q.hinweis === id));
-      return `<div class="notiz"><div class="t">${esc(H.titel)}</div><div>${esc(H.text)}</div><div class="q">${von ? von.emoji + " von " + esc(von.name) : ""} · notiert von ${esc(Name(x.p))} · ${uhr(x.ts)}</div></div>`; }).join("") : `<div class="leer-notiz">Noch leer. Befragt die Leute im Haus – wenn eine Antwort einen Hinweis enthält, erscheint „📝 Hinweis! Notieren“.</div>`;
+    const f = T(), hs = Object.entries(f.hinweise || {}).sort(([, a], [, b]) => (a.ts || 0) - (b.ts || 0)), offen = E.offeneNotizen(FALL, f).filter(({ p }) => darfSehen(p.id)), p = E.fortschritt(FALL, f);
+    let h = offen.length ? `<div class="meldung nodruck">📝 <b>Noch nicht notiert:</b> ${offen.map(({ p }) => `<button class="mini" data-gehzu="${p.id}">${p.emoji} ${esc(p.name)}</button>`).join(" ")} – in diesen Antworten steckt ein Hinweis.</div>` : "";
+    h += `<div class="karte"><h2 style="margin-top:0">📓 Notizbuch <span class="klein muted">${p.hinweise} von ${p.hinweiseMax} Hinweisen · 🤝 ${p.hilfe}/${p.hilfeMax} geholfen · ${p.fragen}/${p.fragenMax} Fragen</span></h2><div class="notizbuch">`;
+    h += hs.length ? hs.map(([id, x]) => { const H = FALL.hinweise[id], von = FALL.personen.find(pp => pp.fragen.some(q => q.hinweis === id)), key = "nb_" + id;
+      return `<div class="notiz"><div class="t">${esc(H.titel)}</div><div class="fa-g" style="font-size:1.15rem;line-height:2">${faHtml(H.fa, key)} <button class="mini nodruck" data-say="${esc(H.fa)}">🔊</button></div>${hilfe() ? `<div class="klein">${esc(H.text)}</div>` : ""}${nachschlagHtml(key)}<div class="q">${von ? von.emoji + " von " + esc(von.name) : ""} · notiert von ${esc(Name(x.p))} · ${uhr(x.ts)}</div></div>`; }).join("") : `<div class="leer-notiz">Noch leer. Helft den Leuten im Haus und befragt sie – wenn eine Antwort einen Hinweis enthält, erscheint „📝 Hinweis! Notieren“.</div>`;
     return h + `</div><div class="btnreihe nodruck" style="margin-top:10px"><button class="btn zwei klein" data-drucken="1">🖨️ Notizbuch drucken</button></div></div>`;
   }
+
+  /* ---------- Team-Chat ---------- */
+  const SCHNELL = [["سَلام!", "Hallo!"], ["مَن یک سَرنَخ پِیدا کَردَم!", "Ich habe eine Spur gefunden!"], ["لُطفاً دَفتَرچه را بِخوانید.", "Bitte lest das Notizbuch."], ["کُمَک لازِم دارَم.", "Ich brauche Hilfe."], ["فِکر می‌کُنَم کارِ … بود.", "Ich glaube, das war …"], ["مَن مُوافِقَم.", "Ich bin einverstanden."]];
+  function teamHtml() {
+    const l = chatListe();
+    if (l.length) setChatGelesen(l[l.length - 1].ts);
+    return `<div class="karte"><h2 style="margin-top:0">💬 Team-Chat</h2><p class="klein muted" style="margin-top:0">Hier sprecht ihr euch ab – gern auf Persisch! Die Nachrichten werden mitgespeichert.</p>
+      <div class="tchat" data-scroll="tchat">${l.length ? l.map(m => `<div class="bub ${ME && m.p === ME.id ? "ich" : ""}"><div class="wer">${esc(Name(m.p))} · ${uhr(m.ts)}</div><div class="t ${/[؀-ۿ]/.test(m.t) ? "fa fa-g" : ""}">${esc(m.t)}</div></div>`).join("") : `<div class="klein muted" style="text-align:center">Noch keine Nachrichten.</div>`}</div>
+      ${nurLesen() ? "" : `<div class="klein-h">Schnell auf Persisch</div><div class="wahl-zeile">${SCHNELL.map(([fa, de], i) => `<button class="chipw fa" data-schnell="${i}" title="${esc(de)}">${esc(fa)}</button>`).join("")}</div>
+      ${hilfe() ? `<div class="klein muted">${SCHNELL.map(([fa, de]) => esc(de)).join(" · ")}</div>` : ""}
+      <div style="display:flex;gap:8px;margin-top:8px"><input class="feld" id="chatIn" placeholder="Nachricht ans Team …" maxlength="300" style="flex:1"><button class="btn" id="chatSend">➤</button></div>`}</div>`;
+  }
+  function sendeChat(t) {
+    t = String(t || "").trim(); if (!t) return;
+    const ts = Date.now(); schreib(`teams/f/chat/${ts}_${ME.id}`, { p: ME.id, t: t.slice(0, 300), ts });
+  }
+
   function loesungHtml() {
     const a = T().anklage || {}, p = E.fortschritt(FALL, T());
-    let h = `<div class="karte"><h2 style="margin-top:0">⚖️ Wer? Was? Wann? Wo?</h2><p class="klein muted" style="margin-top:0">Wenn ihr euch sicher seid, wählt gemeinsam die Lösung. Ihr habt ${p.hinweise} von ${p.hinweiseMax} Hinweisen.${p.hinweise < 10 ? " Tipp: Sammelt lieber noch mehr Hinweise." : ""}</p>`;
+    let h = `<div class="karte"><h2 style="margin-top:0">⚖️ Wer? Was? Wann? Wo?</h2><p class="klein muted" style="margin-top:0">Wenn ihr euch sicher seid, wählt die Lösung – am besten nach Absprache im 💬 Team-Chat. Ihr habt ${p.hinweise} von ${p.hinweiseMax} Hinweisen.${p.hinweise < 10 ? " Tipp: Sammelt lieber noch mehr Hinweise." : ""}</p>`;
     if (a.letzter && !a.geloest) h += `<div class="meldung">🔍 Letzter Versuch (${esc(Name(a.letzter.p))}, ${uhr(a.letzter.ts)}): <b>${a.letzter.richtig} von ${FALL.anklage.length}</b> richtig. Ermittelt weiter!</div>`;
-    h += `<div class="ankl">${FALL.anklage.map(q => `<div><b>${esc(q.frage)}</b><div class="opts">${q.optionen.map((o, i) => `<button class="${+WAHL[q.id] === i && WAHL[q.id] != null ? "an" : ""}" data-ankl="${q.id}" data-i="${i}">${esc(o)}</button>`).join("")}</div></div>`).join("")}</div>
-      ${gesperrtSicht() ? "" : `<button class="btn" id="anklagen" style="margin-top:14px" ${FALL.anklage.every(q => WAHL[q.id] != null) ? "" : "disabled"}>⚖️ Lösung prüfen</button>`}
+    h += `<div class="ankl">${FALL.anklage.map(q => `<div><b>${esc(q.frage)}</b><div class="opts">${q.optionen.map((o, i) => `<button class="${WAHL[q.id] === i ? "an" : ""}" data-ankl="${q.id}" data-i="${i}">${esc(o)}</button>`).join("")}</div></div>`).join("")}</div>
+      ${nurLesen() ? "" : `<button class="btn" id="anklagen" style="margin-top:14px" ${FALL.anklage.every(q => WAHL[q.id] != null) ? "" : "disabled"}>⚖️ Lösung prüfen</button>`}
       <p class="klein muted">Versuche bisher: ${a.versuche || 0}</p></div>`;
     return h;
   }
   function fallHtml() {
     const I = FALL.intro;
     return `<div class="karte"><h2 style="margin-top:0">📄 ${esc(FALL.titel)}</h2><p>${esc(I.de)}</p>
-      <div class="chat"><div class="bub antw"><div class="wer">${FALL.personen[0].emoji} ${esc(FALL.personen[0].name)}</div><div class="fa-g">${faHtml(I.fa, "intro")}</div>${hilfe() && DE.has("intro") ? `<div class="de">${esc(I.faDe)}</div>` : ""}
-      <div class="werkz nodruck"><button class="mini" data-say="${esc(I.fa)}">🔊 anhören</button>${hilfe() ? `<button class="mini" data-de="intro">${DE.has("intro") ? "DE ausblenden" : "🇩🇪 Übersetzung"}</button>` : ""}</div>${nachschlagHtml("intro")}</div></div>
+      <div class="chat">${personBub(FALL.personen[0], I.fa, I.faDe, "intro")}</div>
       <div class="klein-h">Das Haus</div><div class="klein">3. Stock: WG von Neda, Kaveh und Shirin · 2. Stock: ihr · 1. Stock: Bahar · Erdgeschoss: Laden von Herrn Rahimi</div>
-      ${darfStarten() && !gesperrtSicht() ? `<div class="klein-h">Version</div><div class="btnreihe"><button class="btn ${hilfe() ? "" : "zwei"} klein" data-hilfe="1">🛟 mit Hilfe</button><button class="btn ${hilfe() ? "zwei" : ""} klein" data-hilfe="0">💪 ohne Hilfe</button></div>` : `<p class="klein muted">Version: ${hilfe() ? "🛟 mit Hilfe" : "💪 ohne Hilfe"}</p>`}</div>`;
+      ${darfStarten() && !nurLesen() ? versionWahlHtml(hilfe(), G.modus, "g") : `<p class="klein muted">${hilfe() ? "🛟 mit Hilfe" : "💪 ohne Hilfe"} · ${getrennt() ? "🏠 getrennt" : "👥 zusammen"}</p>`}</div>`;
   }
   function wbHtml() { return `<div class="karte"><div id="wbBox"></div></div>`; }
 
   /* ---------- Ende: Lösung + Bericht ---------- */
   function endeHtml() {
     const f = T(), a = f.anklage || {}, E2 = FALL.ende, ids = E.reihe(SP()), ber = f.bericht || {};
-    const dauer = f && G.start && a.geloest ? Math.max(1, Math.round((a.geloest - G.start) / 60000)) : null, p = E.fortschritt(FALL, f);
+    const dauer = G.start && a.geloest ? Math.max(1, Math.round((a.geloest - G.start) / 60000)) : null, p = E.fortschritt(FALL, f);
     let h = `<div class="karte" style="margin-top:4px;text-align:center"><div style="font-size:3rem">🎉🐈</div><h2 style="margin:4px 0">Fall gelöst!</h2><p>${esc(E2.de)}</p>
       <div class="klein muted">${a.versuche || 1} Versuch(e) · ${p.hinweise}/${p.hinweiseMax} Hinweise · ${p.fragen}/${p.fragenMax} Fragen${dauer ? ` · ${dauer} Min. Ermittlungszeit (mit Pausen)` : ""}</div></div>
-      <div class="karte" style="margin-top:12px"><h3 style="margin-top:0">${FALL.personen[0].emoji} Neda schreibt euch:</h3><div class="chat"><div class="bub antw"><div class="fa-g">${faHtml(E2.fa, "ende")}</div>${hilfe() && DE.has("ende") ? `<div class="de">${esc(E2.faDe)}</div>` : ""}
-      <div class="werkz nodruck"><button class="mini" data-say="${esc(E2.fa)}">🔊 anhören</button>${hilfe() ? `<button class="mini" data-de="ende">${DE.has("ende") ? "DE ausblenden" : "🇩🇪 Übersetzung"}</button>` : ""}</div>${nachschlagHtml("ende")}</div></div></div>`;
-    h += `<div class="karte" style="margin-top:12px"><h3 style="margin-top:0">📝 Abschlussbericht</h3><p class="klein muted" style="margin-top:0">Baut die drei Sätze für den Polizeibericht aus den Wörtern. ${ids.length > 1 ? "Jede/r hat einen Satz – helft euch gegenseitig." : ""}</p>`;
+      <div class="karte" style="margin-top:12px"><h3 style="margin-top:0">${FALL.personen[0].emoji} Neda schreibt euch:</h3><div class="chat">${personBub(FALL.personen[0], E2.fa, E2.faDe, "ende")}</div></div>`;
+    h += `<div class="karte" style="margin-top:12px"><h3 style="margin-top:0">📝 Abschlussbericht</h3><p class="klein muted" style="margin-top:0">Baut die drei Sätze für den Polizeibericht aus den Wörtern. ${ids.length > 1 ? "Jede/r hat einen Satz – wer fertig ist, kann den anderen helfen." : ""}</p>`;
     FALL.bericht.forEach((b, i) => {
       const wer = ids.length ? ids[i % ids.length] : null, fertig = ber[i];
       h += `<div style="margin:12px 0"><div class="klein"><b>Satz ${i + 1}</b>${ids.length > 1 ? ` · ${wer && ME && wer === ME.id ? "🕵️ deiner" : esc(Name(wer))}` : ""}${hilfe() || fertig ? ` · <i>${esc(b.de)}</i>` : ""}</div>`;
-      if (fertig) { h += `<div class="fertig fa-g" style="font-size:1.2rem">✅ ${esc(b.fa)}.</div></div>`; return; }
-      const toks = E.woerter(b.fa), misch = mischFest(toks, i), st = BER[i] || (BER[i] = []);
-      h += `<div class="zeile">${st.length ? st.map((k, n) => `<button class="wk" data-braus="${i}" data-n="${n}">${esc(misch[k])}</button>`).join("") : `<span class="leer">Tippe die Wörter in der richtigen Reihenfolge an …</span>`}</div>
-        <div class="wks">${misch.map((t, k) => `<button class="wk ${st.includes(k) ? "weg" : ""}" data-brein="${i}" data-k="${k}">${esc(t)}</button>`).join("")}</div>
-        ${gesperrtSicht() ? "" : `<div class="btnreihe" style="margin-top:6px"><button class="btn klein" data-bpruef="${i}" ${st.length === toks.length ? "" : "disabled"}>✔ prüfen</button><button class="btn zwei klein" data-bleer="${i}">↺</button></div>`}</div>`;
+      h += fertig ? `<div class="fertig fa-g" style="font-size:1.2rem">✅ ${esc(b.fa)}.</div>` : ordHtml("ber" + i, E.woerter(b.fa), { ok: () => { schreib(`teams/f/bericht/${i}`, { p: ME.id, ts: Date.now() }); toast("✅ Richtig!"); } });
+      h += `</div>`;
     });
-    const alle = FALL.bericht.every((b, i) => ber[i]);
-    h += alle ? `<div class="fertig" style="text-align:center;font-weight:800">🗂️ Fallakte geschlossen. Gute Arbeit, Detektive!</div>` : "";
+    h += FALL.bericht.every((b, i) => ber[i]) ? `<div class="fertig" style="text-align:center;font-weight:800">🗂️ Fallakte geschlossen. Gute Arbeit, Detektive!</div>` : "";
     return h + `<div class="btnreihe nodruck" style="margin-top:10px"><button class="btn zwei klein" data-drucken="1">🖨️ Drucken / als PDF</button></div></div>`;
   }
-  function mischFest(a, seed) { a = a.slice(); let x = (seed * 7919 + 17) % 233280; for (let i = a.length - 1; i > 0; i--) { x = (x * 9301 + 49297) % 233280; const j = Math.floor(x / 233280 * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } if (a.join(" ") === E.woerter(FALL.bericht[seed].fa).join(" ")) a.push(a.shift()); return a; }
 
   function zeichneSpiel() {
     $("#kopfTitel").textContent = FALL.titel;
+    ORD_OK = {};
     const geloest = (T().anklage || {}).geloest;
     let h = kopfHtml();
+    if (TAB === "team") { const l = chatListe(); if (l.length) setChatGelesen(l[l.length - 1].ts); }
     if (MELD) h += `<div class="meldung">${MELD}</div>`;
-    if (geloest && TAB === "ende") h += `<div class="tabs nodruck"><button class="tab" data-tab="befragen">🗣️ Befragen</button><button class="tab" data-tab="notiz">📓 Notizbuch</button><button class="tab an" data-tab="ende">🎉 Ende</button></div>` + endeHtml();
+    if (geloest && TAB === "ende") h += `<div class="tabs nodruck"><button class="tab" data-tab="befragen">🗣️ Befragen</button><button class="tab" data-tab="notiz">📓 Notizbuch</button><button class="tab" data-tab="team">💬 Team</button><button class="tab an" data-tab="ende">🎉 Ende</button></div>` + endeHtml();
     else {
       h += tabsHtml();
       if (geloest) h += `<div class="fertig nodruck" style="margin-bottom:10px">🎉 Der Fall ist gelöst! <button class="mini" data-tab="ende">zum Ende & Abschlussbericht</button></div>`;
-      h += TAB === "notiz" ? notizHtml() : TAB === "loesung" ? (geloest ? endeHtml() : loesungHtml()) : TAB === "wb" ? wbHtml() : TAB === "fall" ? fallHtml() : befragenHtml();
+      h += TAB === "notiz" ? notizHtml() : TAB === "team" ? teamHtml() : TAB === "loesung" ? (geloest ? endeHtml() : loesungHtml()) : TAB === "wb" ? wbHtml() : TAB === "fall" ? fallHtml() : befragenHtml();
     }
     LT.render(app(), h);
-    verdrahteSpiel();
-    if (TAB === "wb") { const box = $("#wbBox"); if (box) { WB_UI = WB.einbauen(box, { offen: null, sofort: true }); if (WB_UI && NACH && NACH.suche) { WB_UI.input.value = NACH.suche; NACH = null; setTimeout(() => WB_UI.zeichne(), 50); WB.laden().then(() => WB_UI.zeichne()); } } }
+    const tc = $(".tchat"); if (tc) tc.scrollTop = tc.scrollHeight;
+    verdrahteSpiel(); verdrahteOrd(); verdrahteBitten();
+    if (TAB === "wb") { const box = $("#wbBox"); if (box) { WB_UI = WB.einbauen(box, { offen: null, sofort: true }); if (WB_UI && NACH && NACH.suche) { WB_UI.input.value = NACH.suche; NACH = null; WB.laden().then(() => WB_UI.zeichne()).catch(() => { }); } } }
   }
   function verdrahteSpiel() {
     $$("[data-tab]").forEach(b => b.onclick = () => { TAB = b.dataset.tab; MELD = null; OFFEN = null; zeichne(); window.scrollTo(0, 0); });
@@ -407,35 +590,26 @@
     $$("[data-nachweg]").forEach(b => b.onclick = () => { NACH = null; zeichne(); });
     $$("[data-wbsuche]").forEach(b => b.onclick = () => { NACH = { suche: b.dataset.wbsuche }; TAB = "wb"; OFFEN = null; zeichne(); });
     $$("[data-frage]").forEach(b => b.onclick = () => frage(OFFEN, b.dataset.frage, b));
-    $$("[data-uebern]").forEach(b => b.onclick = () => { const p = person(b.dataset.uebern), z = zustaendig(p.id); if (z && !confirm(`${p.name} selbst befragen? ${Name(z)} kann dann nur noch mitlesen.`)) return; schreib(`teams/f/verteilung/${p.id}`, ME.id); });
+    $$("[data-uebern]").forEach(b => b.onclick = () => { const p = person(b.dataset.uebern), z = zustaendig(p.id); if (z && !confirm(`Dich selbst um ${p.name} kümmern? ${Name(z)} gibt die Person dann ab.`)) return; schreib(`teams/f/verteilung/${p.id}`, ME.id); });
     const nv = $("#neuVert"); if (nv) nv.onclick = () => {
       const ids = E.reihe(SP()).filter(id => SP()[id].online !== false); if (!ids.length) return;
       if (confirm(`Die fünf Personen neu verteilen auf: ${ids.map(Name).join(", ")}?`)) schreib("teams/f/verteilung", E.verteile(FALL, ids));
     };
-    $$("[data-notiz]").forEach(b => b.onclick = () => { CHECK = { key: b.dataset.key, hn: b.dataset.notiz, falsch: [] }; zeichne(); });
+    $$("[data-notiz]").forEach(b => b.onclick = () => { CHECK = { key: b.dataset.key, hn: b.dataset.notiz, falsch: [], phase: "frage" }; zeichne(); });
     $$("[data-cweg]").forEach(b => b.onclick = () => { CHECK = null; zeichne(); });
     $$("[data-copt]").forEach(b => b.onclick = () => {
       const i = +b.dataset.copt, H = FALL.hinweise[CHECK.hn];
       if (CHECK.falsch.includes(i)) return;
-      if (i === H.check.r) {
-        const hn = CHECK.hn; CHECK = null;
-        gRef(CODE).child("teams/f/hinweise/" + hn).transaction(cur => cur || { p: ME.id, ts: Date.now() }).then(() => toast("📓 Notiert: " + H.titel)).catch(e => fehler(e));
-        if (hn === "gestaendnis" || hn === "wo") MELD = "💡 Jetzt wisst ihr genug, oder? Schaut bei ⚖️ <b>Lösung</b> vorbei.";
-      } else { CHECK.falsch.push(i); gRef(CODE).child("teams/f/fehler").transaction(v => (v || 0) + 1).catch(() => { }); zeichne(); }
+      if (i === H.check.r) { if (getrennt()) { CHECK.phase = "satz"; zeichne(); } else notiere(CHECK.hn); }
+      else { CHECK.falsch.push(i); gRef(CODE).child("teams/f/fehler").transaction(v => (v || 0) + 1).catch(() => { }); zeichne(); }
     });
     $$("[data-ankl]").forEach(b => b.onclick = () => { WAHL[b.dataset.ankl] = +b.dataset.i; zeichne(); });
     const an = $("#anklagen"); if (an) an.onclick = () => anklagen(an);
-    $$("[data-hilfe]").forEach(b => b.onclick = () => schreib("hilfe", b.dataset.hilfe === "1"));
+    $$("[data-ghilfe]").forEach(b => b.onclick = () => schreib("hilfe", b.dataset.ghilfe === "1"));
+    $$("[data-gmodus]").forEach(b => b.onclick = () => schreib("modus", b.dataset.gmodus));
     $$("[data-drucken]").forEach(b => b.onclick = () => window.print());
-    /* Bericht */
-    $$("[data-brein]").forEach(b => b.onclick = () => { const i = +b.dataset.brein; (BER[i] = BER[i] || []).push(+b.dataset.k); zeichne(); });
-    $$("[data-braus]").forEach(b => b.onclick = () => { const i = +b.dataset.braus; BER[i].splice(+b.dataset.n, 1); zeichne(); });
-    $$("[data-bleer]").forEach(b => b.onclick = () => { BER[+b.dataset.bleer] = []; zeichne(); });
-    $$("[data-bpruef]").forEach(b => b.onclick = () => {
-      const i = +b.dataset.bpruef, toks = E.woerter(FALL.bericht[i].fa), misch = mischFest(toks, i), gebaut = BER[i].map(k => misch[k]);
-      if (gebaut.join(" ") === toks.join(" ")) { schreib(`teams/f/bericht/${i}`, { p: ME.id, ts: Date.now() }); toast("✅ Richtig!"); }
-      else { const ok = gebaut.findIndex((w, n) => w !== toks[n]); toast(ok > 0 ? `🤏 Die ersten ${ok} Wörter stimmen.` : "Noch nicht – welches Wort steht am Anfang?"); }
-    });
+    $$("[data-schnell]").forEach(b => b.onclick = () => sendeChat(SCHNELL[+b.dataset.schnell][0]));
+    const cs = $("#chatSend"); if (cs) { cs.onclick = () => { const i = $("#chatIn"); sendeChat(i.value); i.value = ""; }; $("#chatIn").onkeydown = e => { if (e.key === "Enter") cs.click(); }; }
   }
   function frage(pid, qid, btn) {
     if (btn) btn.disabled = true;
@@ -474,8 +648,8 @@
         <p class="klein muted">Die TN öffnen den Fall selbst (🎲 Aktivitäten → Detektiv-Fall) und bekommen einen Code. Hier siehst du, wie weit sie sind.</p>
         ${l.length ? `<table class="tab-tabelle"><tr><th>Code</th><th>Datum</th><th>Detektive</th><th>Fortschritt</th><th></th></tr>${l.map(([c, g]) => {
           const Fx = window.DETEKTIV_FAELLE[g.fall || "pashmak"], f = (g.teams || {}).f || {}, p = E.fortschritt(Fx, f), a = f.anklage || {};
-          return `<tr><td><b>${c}</b></td><td>${datum(g.erstellt)} ${uhr(g.erstellt)}</td><td>${esc(E.reihe(g.spieler).map(id => g.spieler[id].name).join(", "))}<div class="klein muted">${g.hilfe === false ? "ohne Hilfe" : "mit Hilfe"}</div></td>
-            <td>${g.phase === "lobby" ? "wartet" : `📓 ${p.hinweise}/${p.hinweiseMax} · ❓ ${p.fragen}/${p.fragenMax}<div class="klein muted">Lösungsversuche: ${a.versuche || 0}${a.geloest ? " · ✅ gelöst" : ""} · Fehler beim Notieren: ${f.fehler || 0}</div>`}</td>
+          return `<tr><td><b>${c}</b></td><td>${datum(g.erstellt)} ${uhr(g.erstellt)}</td><td>${esc(E.reihe(g.spieler).map(id => g.spieler[id].name).join(", "))}<div class="klein muted">${g.hilfe === false ? "ohne Hilfe" : "mit Hilfe"} · ${g.modus === "getrennt" ? "getrennt" : "zusammen"}</div></td>
+            <td>${g.phase === "lobby" ? "wartet" : `🤝 ${p.hilfe}/${p.hilfeMax} · 📓 ${p.hinweise}/${p.hinweiseMax} · ❓ ${p.fragen}/${p.fragenMax}<div class="klein muted">Lösungsversuche: ${a.versuche || 0}${a.geloest ? " · ✅ gelöst" : ""} · Fehler beim Notieren: ${f.fehler || 0} · Chat: ${Object.keys(f.chat || {}).length}</div>`}</td>
             <td><a class="btn zwei klein" href="?leitung=1&code=${c}" style="text-decoration:none">ansehen</a></td></tr>`; }).join("")}</table>` : `<p class="muted">Noch keine Fälle.</p>`}</div>`;
     });
   }

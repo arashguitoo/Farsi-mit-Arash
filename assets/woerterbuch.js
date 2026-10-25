@@ -6,7 +6,7 @@
    ========================================================= */
 (function () {
   "use strict";
-  const VERSION = "a8f47d5b";
+  const VERSION = "efa1a597";
   const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const normFa = x => String(x || "").replace(/[ً-ْٰٕٔ]/g, "").replace(/[‌‍]/g, " ").replace(/[آأإ]/g, "ا").replace(/ي/g, "ی").replace(/ك/g, "ک").replace(/ة/g, "ه").replace(/\s+/g, " ").trim();
   const normDe = x => String(x || "").toLowerCase().replace(/ä/g, "a").replace(/ö/g, "o").replace(/ü/g, "u").replace(/ß/g, "ss").replace(/[^a-z0-9 ]/g, " ").replace(/\s+/g, " ").trim();

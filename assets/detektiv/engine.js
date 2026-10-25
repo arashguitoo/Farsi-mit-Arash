@@ -15,10 +15,13 @@ window.DETEKTIV_ENGINE = (function () {
     return v;
   }
   const hat = (f, id) => !!(f && f.hinweise && f.hinweise[id]);
+  /* Hat schon jemand der Person bei ihrer Bitte geholfen? */
+  const brauchtNichtMehr = (p, f) => !!(f && f.geholfen && f.geholfen[p.id]);
   /* Status jeder Frage einer Person */
   function fragenStatus(person, f) {
     const gel = (f && f.gelesen) || {};
-    return person.fragen.map(q => ({ q, gestellt: !!gel[person.id + "_" + q.id], frei: (q.braucht || []).every(h => hat(f, h)) }));
+    const geholfen = !person.bitte || brauchtNichtMehr(person, f);
+    return person.fragen.map(q => ({ q, gestellt: !!gel[person.id + "_" + q.id], frei: geholfen && (q.braucht || []).every(h => hat(f, h)) }));
   }
   /* Alle Hinweise, die in gestellten Antworten stecken, aber noch nicht notiert sind */
   function offeneNotizen(fall, f) {
@@ -29,7 +32,8 @@ window.DETEKTIV_ENGINE = (function () {
   function fortschritt(fall, f) {
     const alleH = Object.keys(fall.hinweise), n = alleH.filter(h => hat(f, h)).length;
     const fr = fall.personen.reduce((s, p) => s + p.fragen.length, 0), g = Object.keys((f && f.gelesen) || {}).length;
-    return { hinweise: n, hinweiseMax: alleH.length, fragen: g, fragenMax: fr };
+    const bit = fall.personen.filter(p => p.bitte), hb = bit.filter(p => brauchtNichtMehr(p, f)).length;
+    return { hinweise: n, hinweiseMax: alleH.length, fragen: g, fragenMax: fr, hilfe: hb, hilfeMax: bit.length };
   }
   function pruefeAnklage(fall, wahl) {
     let n = 0; fall.anklage.forEach(a => { if (+wahl[a.id] === a.r) n++; });
@@ -59,10 +63,10 @@ window.DETEKTIV_ENGINE = (function () {
     const add = x => { if (x && x.length >= 2) out.add(x); };
     basis.forEach(b => {
       out.add(b);
-      const v = [b]; VOR.forEach(p => { if (b.startsWith(p) && b.length - p.length >= 2) v.push(b.slice(p.length)); });
+      const v = [b]; if (/^[نب]یا/.test(b)) v.push("آ" + b.slice(3)); VOR.forEach(p => { if (b.startsWith(p) && b.length - p.length >= 2) v.push(b.slice(p.length)); });
       v.forEach(x => {
         add(x); add(x + "ن");
-        NACH.forEach(s => { if (x.endsWith(s) && x.length - s.length >= 2) { const y = x.slice(0, -s.length); add(y); if (!y.endsWith("ی")) add(y + "ن"); else if (y.length === 2) out.add(y[0]); if (s === "ه") add(y + "دن"); } });
+        NACH.forEach(s => { if (x.endsWith(s) && x.length - s.length >= 2) { const y = x.slice(0, -s.length); if (!y.endsWith("ی")) add(y + "ن"); else if (y.length === 2) out.add(y[0]); add(y); if (s === "ه") add(y + "دن"); } });
       });
     });
     return [...out];
@@ -85,5 +89,13 @@ window.DETEKTIV_ENGINE = (function () {
   /* Persischen Satz in antippbare Wörter zerlegen (Leerzeichen trennen, ZWNJ bleibt im Wort) */
   const woerter = s => String(s || "").split(/\s+/).filter(Boolean);
 
-  return { arr, reihe, verteile, fragenStatus, offeneNotizen, fortschritt, pruefeAnklage, neueFragen, kandidaten, nachschlagen, woerter, strip };
+  /* feste, nicht-identische Mischung (gleich auf allen Geräten) */
+  function mischIdx(n, seedStr) {
+    let x = 7; for (const c of String(seedStr)) x = (x * 31 + c.charCodeAt(0)) % 233280;
+    const a = [...Array(n).keys()];
+    for (let i = n - 1; i > 0; i--) { x = (x * 9301 + 49297) % 233280; const j = Math.floor(x / 233280 * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; }
+    if (n > 1 && a.every((v, i) => v === i)) a.push(a.shift());
+    return a;
+  }
+  return { mischIdx, brauchtNichtMehr, arr, reihe, verteile, fragenStatus, offeneNotizen, fortschritt, pruefeAnklage, neueFragen, kandidaten, nachschlagen, woerter, strip };
 })();

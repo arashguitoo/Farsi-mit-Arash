@@ -7,7 +7,8 @@
      a  / ade       Antwort (Persisch) / deutsche Übersetzung
      hinweis        diese Antwort enthält einen Hinweis (id) fürs Notizbuch
      braucht        [Hinweis-ids] – Frage erst möglich, wenn diese im Notizbuch stehen
-   hinweise[id]:    titel, text (deutsche Notiz), check (Verständnisfrage, r = Index richtig)
+   hinweise[id]:    fa (persische Notiz, wird bei „getrennt“ geordnet), titel, text (deutsche Notiz), check (Verständnisfrage, r = Index richtig)
+   personen[].bitte: Aufgabe, bevor die Person redet – typ luecke | hoeren | zuordnen | ordnen | satz
    ========================================================= */
 window.DETEKTIV_FAELLE = window.DETEKTIV_FAELLE || {};
 window.DETEKTIV_FAELLE.pashmak = {
@@ -23,6 +24,14 @@ window.DETEKTIV_FAELLE.pashmak = {
   },
   personen: [
     { id: "neda", name: "Neda", nameFa: "نِدا", emoji: "👩🏻", rolle: "Besitzerin von Pashmak · WG im 3. Stock",
+      bitte: { typ: "luecke", titel: "Ein Suchplakat für Pashmak",
+        de: "Neda ist zu aufgeregt, um zu reden. Hilf ihr zuerst, ein Suchplakat zu schreiben: Wähle die passenden Wörter.",
+        fa: "وای، مَن خِیلی ناراحَتَم! لُطفاً اَوَّل کُمَک کُن یک آگَهی بِنِویسیم.", fade: "Oh, ich bin so traurig! Bitte hilf mir zuerst, eine Anzeige zu schreiben.",
+        info: "📷 Foto: kleine weiße Katze · blaue Augen · rotes Halsband mit Glöckchen · Neda wohnt im 3. Stock",
+        text: "گُربه گُم شُده! اِسمَش پَشمَک {0}. او کوچَک و {1} اَست و چِشم‌هایِ {2} دارَد. یک قَلّاده‌یِ {3} با یک زَنگوله دارَد. لُطفاً به نِدا {4} بِزَنید – طَبَقه‌یِ سِوُّم.",
+        textDe: "Katze vermisst! Sie heißt Pashmak. Sie ist klein und weiß und hat blaue Augen. Sie hat ein rotes Halsband mit einem Glöckchen. Bitte ruft Neda an – 3. Stock.",
+        luecken: [{ o: ["اَست", "هَستَم", "هَستَند"], r: 0 }, { o: ["سیاه", "سِفید", "زَرد"], r: 1 }, { o: ["آبی", "سَبز", "قَهوه‌ای"], r: 0 }, { o: ["آبی", "قِرمِز", "سِفید"], r: 1 }, { o: ["زَنگ", "نامه", "کار"], r: 0 }],
+        danke: "مِرسی! آگَهی خِیلی خوب اَست. حالا بِپُرس.", dankeDe: "Danke! Die Anzeige ist sehr gut. Jetzt frag." },
       lexikon: [["گُم شُدَن", "gom schodan", "verloren gehen, verschwinden"], ["مُبل", "mobl", "Sofa"], ["قَلّاده", "ghallāde", "Halsband"], ["زَنگوله", "zangūle", "Glöckchen"], ["لَپ‌تاپ", "laptāp", "Laptop"], ["کِلید", "kelīd", "Schlüssel"], ["صاحِب‌خانه", "sāheb-chāne", "Vermieter/in"], ["یادداشت", "yāddāscht", "Notiz, Zettel"], ["یَخچال", "yachtschāl", "Kühlschrank"]],
       fragen: [
         { id: "n1", fa: "پَشمَک کِی گُم شُد؟", de: "Wann ist Pashmak verschwunden?",
@@ -45,6 +54,15 @@ window.DETEKTIV_FAELLE.pashmak = {
           ade: "Ein Zettel? Nein … ah, hier ist er, am Kühlschrank! „Ich habe deinen Laptop ausgeliehen. Kaveh.“ Also wurde der Laptop nicht gestohlen. Nur Pashmak fehlt.", hinweis: "laptopok" }
       ] },
     { id: "kaveh", name: "Kaveh", nameFa: "کاوه", emoji: "👨🏽‍🎓", rolle: "Mitbewohner in der WG · Student",
+      bitte: { typ: "hoeren", titel: "Kavehs Sprachnachricht",
+        de: "Kaveh hat es eilig. Sein Professor hat ihm eine Sprachnachricht geschickt. Hör zu (🔊) und wähle die richtigen Uhrzeiten – dann hat er Zeit für dich.",
+        fa: "بِبَخشید، خِیلی عَجَله دارَم! اُستادَم یک پَیامِ صوتی فِرِستاده. لُطفاً گوش کُن و ساعَت‌ها را به مَن بِگو.", fade: "Entschuldige, ich habe es sehr eilig! Mein Professor hat eine Sprachnachricht geschickt. Bitte hör zu und sag mir die Uhrzeiten.",
+        items: [
+          { fa: "اِمتِحانِ اَوَّل ساعَتِ هَشت و نیم اَست.", de: "Die erste Prüfung ist um halb neun.", frage: "Erste Prüfung", o: ["8:30", "9:30", "8:15", "7:30"], r: 0 },
+          { fa: "اِمتِحانِ دُوُّم ساعَتِ دَه و رُبع اَست.", de: "Die zweite Prüfung ist um Viertel nach zehn.", frage: "Zweite Prüfung", o: ["10:45", "10:15", "12:15", "9:45"], r: 1 },
+          { fa: "کِتاب‌خانه ساعَتِ هَفت باز می‌شَوَد.", de: "Die Bibliothek öffnet um sieben Uhr.", frage: "Die Bibliothek öffnet", o: ["8:00", "6:00", "7:00", "11:00"], r: 2 },
+          { fa: "کِلاس ساعَتِ یازده کَم رُبع شُروع می‌شَوَد.", de: "Der Kurs beginnt um Viertel vor elf.", frage: "Der Kurs beginnt", o: ["11:15", "10:45", "11:45", "10:15"], r: 1 }],
+        danke: "عالی، مِرسی! حالا یک کَم وَقت دارَم. بِپُرس.", dankeDe: "Super, danke! Jetzt habe ich ein bisschen Zeit. Frag." },
       lexikon: [["کِتاب‌خانه", "ketābchāne", "Bibliothek"], ["اِمتِحان", "emtehān", "Prüfung"], ["بَرداشتَن", "bardāschtan", "nehmen, mitnehmen"], ["قَرض گِرِفتَن", "gharz gereftan", "(sich) ausleihen"], ["خَراب", "charāb", "kaputt"], ["آلِرژی", "ālerzhī", "Allergie"], ["عَجَله داشتَن", "ʿadschale dāschtan", "es eilig haben"], ["عَطسه کَردَن", "ʿatse kardan", "niesen"]],
       fragen: [
         { id: "k1", fa: "دیشَب کُجا بودی؟", de: "Wo warst du gestern Abend?",
@@ -64,6 +82,11 @@ window.DETEKTIV_FAELLE.pashmak = {
           ade: "Katzen sind hübsch, aber ich habe eine Allergie. Wenn Pashmak bei mir ist, muss ich immer niesen!" }
       ] },
     { id: "shirin", name: "Shirin", nameFa: "شیرین", emoji: "👩🏻‍🍳", rolle: "Mitbewohnerin in der WG · arbeitet im Restaurant",
+      bitte: { typ: "zuordnen", titel: "Shirins Einkaufsliste",
+        de: "Shirin ist sehr müde und muss morgen früh einkaufen. Hilf ihr: Tippe ein persisches Wort an und dann das passende Bild.",
+        fa: "سَلام … خِیلی خَسته‌اَم. فَردا صُبح بایَد خَرید کُنَم. لُطفاً لیستِ خَریدِ مَن را دُرُست کُن.", fade: "Hallo … ich bin sehr müde. Morgen früh muss ich einkaufen. Bitte bring meine Einkaufsliste in Ordnung.",
+        paare: [["گوجه‌فَرَنگی", "🍅", "Tomaten"], ["پیاز", "🧅", "Zwiebeln"], ["سیب‌زَمینی", "🥔", "Kartoffeln"], ["بِرِنج", "🍚", "Reis"], ["تُخمِ مُرغ", "🥚", "Eier"], ["نان", "🍞", "Brot"]],
+        danke: "مِرسی، خِیلی مِهرَبانی! حالا بِپُرس.", dankeDe: "Danke, sehr nett! Jetzt frag." },
       lexikon: [["رِستوران", "restūrān", "Restaurant"], ["تَعَجُّب کَردَن", "taʿadschdschob kardan", "sich wundern"], ["راه‌پِلّه", "rāhpelle", "Treppenhaus"], ["طَبَقه", "tabaghe", "Stockwerk"], ["موشِ اَسباب‌بازی", "mūsch-e asbāb-bāzī", "Spielzeugmaus"], ["مو", "mū", "Haar"], ["صِدا", "sedā", "Geräusch, Stimme"], ["میو", "miyū", "miau"]],
       fragen: [
         { id: "s1", fa: "دیشَب کِی به خانه آمَدی؟", de: "Wann bist du gestern Abend nach Hause gekommen?",
@@ -80,6 +103,15 @@ window.DETEKTIV_FAELLE.pashmak = {
           ade: "Nein, ich habe niemanden gesehen. Aber aus dem 1. Stock habe ich ein „Miau“ gehört. Seltsam, denn dort hat niemand eine Katze.", hinweis: "miau" }
       ] },
     { id: "rahimi", name: "Herr Rahimi", nameDat: "Herrn Rahimi", nameFa: "آقایِ رَحیمی", emoji: "👴🏽", rolle: "hat den kleinen Laden im Erdgeschoss",
+      bitte: { typ: "ordnen", titel: "Durcheinander im Laden",
+        de: "Herr Rahimi hat für seine Enkelin ein kurzes Gespräch auf Zettel geschrieben – jetzt sind die Zettel durcheinander. Bring das Gespräch in die richtige Reihenfolge.",
+        fa: "نَوه‌اَم فارسی یاد می‌گیرَد. بَرایَش یک گُفت‌وگو نِوِشتَم، اَمّا کاغَذها به هَم ریختَند. کُمَک می‌کُنی؟", fade: "Meine Enkelin lernt Persisch. Ich habe ihr ein Gespräch geschrieben, aber die Zettel sind durcheinandergeraten. Hilfst du mir?",
+        zeilen: [["مُشتَری", "سَلام، آقایِ رَحیمی! نانِ تازه دارید؟", "Kunde: Hallo, Herr Rahimi! Haben Sie frisches Brot?"],
+          ["رَحیمی", "سَلام! بَله، این‌جاست. چَند تا می‌خواهید؟", "Rahimi: Hallo! Ja, hier ist es. Wie viele möchten Sie?"],
+          ["مُشتَری", "دو تا، لُطفاً. چَند می‌شَوَد؟", "Kunde: Zwei, bitte. Was macht das?"],
+          ["رَحیمی", "سه یورو. چیزِ دیگَری هَم می‌خواهید؟", "Rahimi: Drei Euro. Möchten Sie noch etwas?"],
+          ["مُشتَری", "نه، مَمنون. روزِ خوبی داشته باشید!", "Kunde: Nein, danke. Einen schönen Tag noch!"]],
+        danke: "آفَرین! نَوه‌اَم خوشحال می‌شَوَد. حالا بِپُرسید.", dankeDe: "Bravo! Meine Enkelin wird sich freuen. Jetzt fragen Sie." },
       lexikon: [["مَغازه", "maghāze", "Laden, Geschäft"], ["خانُم", "chānom", "Frau (Anrede)"], ["غَذایِ گُربه", "ghazā-ye gorbe", "Katzenfutter"], ["رُبع", "robʿ", "Viertel(stunde)"], ["دَه کَم رُبع", "dah kam robʿ", "Viertel vor zehn"], ["ساختِمان", "sāchtemān", "Gebäude"], ["کیسه", "kīse", "Tüte, Beutel"], ["دَست", "dast", "Hand"]],
       fragen: [
         { id: "r1", fa: "دیشَب چیزِ عَجیبی دیدید؟", de: "Haben Sie gestern Abend etwas Seltsames gesehen?",
@@ -96,6 +128,12 @@ window.DETEKTIV_FAELLE.pashmak = {
           ade: "Nein. Nach Kaveh ist niemand mehr aus dem Haus gegangen. Ich war bis elf Uhr hier und konnte die Tür sehen.", hinweis: "drin" }
       ] },
     { id: "bahar", name: "Bahar", nameFa: "بَهار", emoji: "👩🏽", rolle: "Nachbarin im 1. Stock · Studentin",
+      bitte: { typ: "satz", titel: "Bahar öffnet die Tür nur einen Spalt",
+        de: "Bahar ist misstrauisch. Sie redet erst, wenn du dich höflich vorstellst. Bau die zwei Sätze aus den Wörtern – und sag sie danach laut.",
+        fa: "بَله؟ شُما کی هَستید؟", fade: "Ja? Wer sind Sie?",
+        saetze: [{ fa: "سَلام، مَن هَمسایه‌یِ طَبَقه‌یِ دُوُّم هَستَم.", de: "Hallo, ich bin die Nachbarin / der Nachbar aus dem 2. Stock.", extra: ["هَستی", "سِوُّم", "اَست"] },
+          { fa: "می‌تَوانَم چَند سُؤال بِپُرسَم؟", de: "Kann ich ein paar Fragen stellen?", extra: ["می‌تَوانی", "بِپُرسی", "چه"] }],
+        danke: "آه، بِبَخشید. بِفَرمایید، بِپُرسید.", dankeDe: "Ah, entschuldigen Sie. Bitte, fragen Sie." },
       lexikon: [["تَنها", "tanhā", "allein"], ["باشه", "bāsche", "okay (ugs.)"], ["شِناختَن", "schenāchtan", "kennen"], ["ناز", "nāz", "süß, niedlich"], ["راستَش را گُفتَن", "rāstasch rā goftan", "die Wahrheit sagen"], ["تَرسیدَن", "tarsīdan", "Angst haben"], ["بُردَن", "bordan", "mitnehmen, bringen"], ["حَمّام", "hammām", "Badezimmer"], ["بَرگَرداندَن", "bargardāndan", "zurückbringen"]],
       fragen: [
         { id: "b1", fa: "دیشَب کُجا بودی؟", de: "Wo warst du gestern Abend?",
@@ -116,35 +154,35 @@ window.DETEKTIV_FAELLE.pashmak = {
       ] }
   ],
   hinweise: {
-    zeit: { titel: "Zeitraum", text: "Neda war Samstag von 20:30 bis 23:30 weg. Um 20:30 schlief Pashmak auf dem Sofa.",
+    zeit: { fa: "نِدا شَنبه از ساعَتِ هَشت و نیم تا یازده و نیم خانه نَبود.", titel: "Zeitraum", text: "Neda war Samstag von 20:30 bis 23:30 weg. Um 20:30 schlief Pashmak auf dem Sofa.",
       check: { frage: "Wann hat Neda Pashmak zuletzt gesehen?", optionen: ["um 20:30 auf dem Sofa", "um 23:30 in der Küche", "am Sonntagmorgen", "um 21:00 im Treppenhaus"], r: 0 } },
-    katze: { titel: "Beschreibung", text: "Pashmak: klein, weiß, blaue Augen, rotes Halsband mit Glöckchen.",
+    katze: { fa: "پَشمَک کوچَک و سِفید اَست و یک قَلّاده‌یِ قِرمِز دارَد.", titel: "Beschreibung", text: "Pashmak: klein, weiß, blaue Augen, rotes Halsband mit Glöckchen.",
       check: { frage: "Welche Farbe hat Pashmaks Halsband?", optionen: ["blau", "rot", "weiß", "schwarz"], r: 1 } },
-    laptop: { titel: "Auch der Laptop?", text: "Neda vermisst auch ihren Laptop. Ein Dieb?",
+    laptop: { fa: "لَپ‌تاپِ نِدا هَم نیست.", titel: "Auch der Laptop?", text: "Neda vermisst auch ihren Laptop. Ein Dieb?",
       check: { frage: "Was fehlt Neda außer Pashmak?", optionen: ["ihr Schlüssel", "ihr Fahrrad", "ihr Laptop", "ihr Handy"], r: 2 } },
-    bahar: { titel: "Bahar liebt Pashmak", text: "Bahar (1. Stock) ist verliebt in Pashmak und möchte eine Katze – ihr Vermieter erlaubt es nicht.",
+    bahar: { fa: "بَهار عاشِقِ پَشمَک اَست، اَمّا صاحِب‌خانه‌اَش اِجازه نِمی‌دَهَد.", titel: "Bahar liebt Pashmak", text: "Bahar (1. Stock) ist verliebt in Pashmak und möchte eine Katze – ihr Vermieter erlaubt es nicht.",
       check: { frage: "Warum hat Bahar keine Katze?", optionen: ["Sie hat eine Allergie.", "Ihr Vermieter erlaubt es nicht.", "Sie mag keine Katzen.", "Sie hat keine Zeit."], r: 1 } },
-    laptopok: { titel: "Laptop geklärt", text: "Der Laptop wurde NICHT gestohlen: Kavehs Zettel hing am Kühlschrank.",
+    laptopok: { fa: "کاوه لَپ‌تاپ را قَرض گِرِفته و دُزد نیامَده.", titel: "Laptop geklärt", text: "Der Laptop wurde NICHT gestohlen: Kavehs Zettel hing am Kühlschrank.",
       check: { frage: "Was steht auf dem Zettel?", optionen: ["„Ich habe Pashmak mitgenommen.“", "„Ich habe deinen Laptop ausgeliehen.“", "„Die Tür ist kaputt.“", "„Ich komme spät.“"], r: 1 } },
-    kaveh: { titel: "Kaveh kurz zu Hause", text: "Kaveh war bis 21 Uhr in der Bibliothek, kam kurz nach Hause, nahm Bücher und Nedas Laptop und ging wieder.",
+    kaveh: { fa: "کاوه ساعَتِ نُه به خانه آمَد و دوباره رَفت.", titel: "Kaveh kurz zu Hause", text: "Kaveh war bis 21 Uhr in der Bibliothek, kam kurz nach Hause, nahm Bücher und Nedas Laptop und ging wieder.",
       check: { frage: "Was hat Kaveh zu Hause mitgenommen?", optionen: ["Pashmak", "seine Bücher und Nedas Laptop", "Katzenfutter", "Shirins Schlüssel"], r: 1 } },
-    notiz: { titel: "Zettel am Kühlschrank", text: "Kaveh: Sein Laptop ist kaputt, er hat Nedas Laptop ausgeliehen und einen Zettel an den Kühlschrank gehängt.",
+    notiz: { fa: "لَپ‌تاپِ کاوه خَراب اَست و او یک یادداشت نِوِشت.", titel: "Zettel am Kühlschrank", text: "Kaveh: Sein Laptop ist kaputt, er hat Nedas Laptop ausgeliehen und einen Zettel an den Kühlschrank gehängt.",
       check: { frage: "Warum hat Kaveh Nedas Laptop genommen?", optionen: ["Er wollte ihn verkaufen.", "Sein eigener Laptop ist kaputt.", "Neda hat es ihm erlaubt.", "Er wollte Filme schauen."], r: 1 } },
-    tuer: { titel: "Tür offen?", text: "Kaveh hatte es eilig – vielleicht hat er die Wohnungstür (gegen 21:10) nicht richtig zugemacht.",
+    tuer: { fa: "شاید کاوه دَر را نَبَست.", titel: "Tür offen?", text: "Kaveh hatte es eilig – vielleicht hat er die Wohnungstür (gegen 21:10) nicht richtig zugemacht.",
       check: { frage: "Was hat Kaveh vielleicht nicht richtig gemacht?", optionen: ["die Tür zugemacht", "das Licht ausgemacht", "Pashmak gefüttert", "den Zettel geschrieben"], r: 0 } },
-    shirin: { titel: "Tür um 22:30 offen", text: "Shirin kam um 22:30 von der Arbeit: Die Wohnungstür stand offen.",
+    shirin: { fa: "ساعَتِ دَه و نیم دَرِ خانه باز بود.", titel: "Tür um 22:30 offen", text: "Shirin kam um 22:30 von der Arbeit: Die Wohnungstür stand offen.",
       check: { frage: "Was hat Shirin um 22:30 bemerkt?", optionen: ["Die Tür war offen.", "Pashmak schlief auf dem Sofa.", "Der Laptop war da.", "Kaveh war zu Hause."], r: 0 } },
-    maus: { titel: "Spur im Treppenhaus", text: "Zwischen 1. und 2. Stock: Pashmaks Spielzeugmaus und weiße Haare auf den Stufen.",
+    maus: { fa: "موشِ پَشمَک رویِ پِلّه‌ها بود.", titel: "Spur im Treppenhaus", text: "Zwischen 1. und 2. Stock: Pashmaks Spielzeugmaus und weiße Haare auf den Stufen.",
       check: { frage: "Wo lag Pashmaks Spielzeugmaus?", optionen: ["vor dem Laden", "zwischen dem 1. und 2. Stock", "in Kavehs Zimmer", "auf dem Dach"], r: 1 } },
-    miau: { titel: "Miau im 1. Stock", text: "Shirin hörte ein „Miau“ aus dem 1. Stock – dort hat niemand eine Katze.",
+    miau: { fa: "شیرین از طَبَقه‌یِ اَوَّل صِدایِ میو شِنید.", titel: "Miau im 1. Stock", text: "Shirin hörte ein „Miau“ aus dem 1. Stock – dort hat niemand eine Katze.",
       check: { frage: "Woher kam das „Miau“?", optionen: ["aus dem 1. Stock", "aus dem Laden", "aus Nedas Zimmer", "von der Straße"], r: 0 } },
-    futter: { titel: "Katzenfutter!", text: "Bahar hat Samstag um 21:45 in Herrn Rahimis Laden Katzenfutter gekauft – obwohl sie keine Katze hat.",
+    futter: { fa: "بَهار ساعَتِ دَه کَم رُبع غَذایِ گُربه خَرید.", titel: "Katzenfutter!", text: "Bahar hat Samstag um 21:45 in Herrn Rahimis Laden Katzenfutter gekauft – obwohl sie keine Katze hat.",
       check: { frage: "Wann hat Bahar Katzenfutter gekauft?", optionen: ["um 20:30", "um Viertel vor zehn (21:45)", "um Viertel nach neun (21:15)", "am Sonntagmorgen"], r: 1 } },
-    drin: { titel: "Niemand ging hinaus", text: "Nach Kaveh (ca. 21:15) hat bis 23 Uhr niemand das Haus verlassen. Pashmak ist also noch im Haus!",
+    drin: { fa: "بَعد از کاوه کَسی از ساختِمان بیرون نَرَفت.", titel: "Niemand ging hinaus", text: "Nach Kaveh (ca. 21:15) hat bis 23 Uhr niemand das Haus verlassen. Pashmak ist also noch im Haus!",
       check: { frage: "Was folgt aus Herrn Rahimis Aussage?", optionen: ["Pashmak ist im Park.", "Pashmak ist noch im Haus.", "Kaveh hat Pashmak mitgenommen.", "Ein Dieb kam von draußen."], r: 1 } },
-    gestaendnis: { titel: "Bahars Geständnis", text: "Bahar fand Pashmak um 21:30 auf der Treppe und nahm sie mit in ihre Wohnung.",
+    gestaendnis: { fa: "بَهار پَشمَک را رویِ پِلّه‌ها پِیدا کَرد و به خانه‌اَش بُرد.", titel: "Bahars Geständnis", text: "Bahar fand Pashmak um 21:30 auf der Treppe und nahm sie mit in ihre Wohnung.",
       check: { frage: "Warum hat Bahar Pashmak mitgenommen?", optionen: ["Sie wollte sie verkaufen.", "Sie dachte, Pashmak hat sich verlaufen, und hat sie sehr lieb.", "Kaveh hat sie darum gebeten.", "Pashmak war krank."], r: 1 } },
-    wo: { titel: "Pashmak gefunden", text: "Pashmak schläft im Badezimmer von Bahars Wohnung.",
+    wo: { fa: "پَشمَک دَر حَمّامِ بَهار خوابیده.", titel: "Pashmak gefunden", text: "Pashmak schläft im Badezimmer von Bahars Wohnung.",
       check: { frage: "Wo ist Pashmak jetzt?", optionen: ["im Laden", "im Badezimmer von Bahars Wohnung", "in der Bibliothek", "im Café"], r: 1 } }
   },
   /* Lösung: Wer? Was? Wann? Wo? */
