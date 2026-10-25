@@ -25,6 +25,45 @@ def fnv(t):
     for i in range(0, len(b), 2):
         h ^= b[i] | (b[i + 1] << 8); h = (h * 0x01000193) & 0xffffffff
     return '%08x' % h
+# ---------- Aussprache-Hilfe nur für die Sprachausgabe (der angezeigte Text bleibt gleich) ----------
+HARAKAT = '\u064B\u064C\u064D\u064E\u064F\u0650\u0651\u0652\u0670'
+KEINE_E = {"نگه", "فربه", "ابله", "توجه", "مه", "ره"}   # hier ist das End-ه hörbar (h) oder kein -e
+_WB = None
+def woerterbuch_formen():
+    """unvokalisiertes Wort → eindeutige vokalisierte Form (aus Wörterbuch + Lektionen)"""
+    global _WB
+    if _WB is None:
+        m = {}
+        for w in json.load(open(R + '/assets/woerterbuch/suche.json'))['w']:
+            fa = w[0]
+            if ' ' in fa or not re.search('[' + HARAKAT + ']', fa): continue
+            k = re.sub('[' + HARAKAT + ']', '', fa).replace('ي', 'ی').replace('ك', 'ک')
+            m.setdefault(k, set()).add(fa)
+        _WB = {k: next(iter(v)) for k, v in m.items() if len(v) == 1}
+    return _WB
+def end_e(seg):
+    """stummes End-ه (-e) mit Kasra markieren: نَوه → نَوِه, هفته → هفتِه"""
+    roh = re.sub('[' + HARAKAT + ']', '', seg)
+    if len(roh) < 3 or not seg.endswith('ه') or roh in KEINE_E: return seg
+    vor = seg[-2]
+    if vor in HARAKAT or vor in 'اآ' or not re.match('[\u0621-\u06CC]', vor): return seg
+    if vor in 'وی':   # و/ی nur als Konsonant (نَوه, سایه), nicht als Vokal (کوه, شبیه)
+        davor = seg[-3] if len(seg) >= 3 else ''
+        if not (davor in '\u064E\u0650\u064F' or davor in 'اآ'): return seg
+    return seg[:-1] + '\u0650' + 'ه'
+NB = '[^\u0621-\u0655\u0670\u067E\u0686\u0698\u06A9\u06AF\u06CC\u200c]'
+def fuer_tts(t):
+    """Nur in (teil-)vokalisierten Texten fehlende Vokale aus dem Wörterbuch ergänzen; End-ه immer markieren."""
+    wb = woerterbuch_formen(); out = []; teilvok = bool(re.search('[' + HARAKAT + ']', t))
+    for tok in re.split(r'(\s+)', t):
+        m = re.match(r'^(' + NB + r'*)(.*?)(' + NB + r'*)$', tok)
+        if not m or not m.group(2): out.append(tok); continue
+        vor, kern, nach = m.groups()
+        if teilvok and len(kern) >= 4 and not re.search('[' + HARAKAT + ']', kern) and kern in wb: kern = wb[kern]
+        kern = '\u200c'.join(end_e(x) for x in kern.split('\u200c'))
+        out.append(vor + kern + nach)
+    return ''.join(out)
+
 def sammeln():
     S = {}
     def add(t, v=None):
@@ -60,7 +99,7 @@ def sammeln():
         if '/detektiv/' in f: continue
         for m in re.finditer(r'"((?:[^"\\\n]|\\.)*)"|`([^`$]*)`', open(f).read()):
             add(m.group(1) or m.group(2) or "")
-    return [{"t": t, "k": k, "h": fnv(k), "v": v} for k, (t, v) in S.items()]
+    return [{"t": t, "s": fuer_tts(t), "k": k, "h": fnv(k), "v": v} for k, (t, v) in S.items()]
 if __name__ == "__main__":
     L = sammeln(); import collections
     print(len(L), collections.Counter(x["v"] for x in L))
