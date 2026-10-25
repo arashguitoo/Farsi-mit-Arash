@@ -70,7 +70,7 @@
   .frage-btn .de{font-size:.8rem;color:var(--tinte2);text-align:left;display:block}
   .gesperrt{border:1.5px dashed #cfcfc6;border-radius:12px;padding:8px 12px;color:var(--tinte2);font-size:.88rem}
   .lex{display:grid;grid-template-columns:auto 1fr;gap:4px 14px;margin-top:8px;align-items:center}
-  .lex .f{font-family:var(--fa);font-size:1.12rem;color:var(--lapis);text-align:right;cursor:pointer}
+  .lex .f{font-family:var(--fa);font-size:1.12rem;color:var(--lapis);text-align:right}
   /* Notizbuch */
   .notizbuch{background:#fffef8;border:1px solid #e9e1c8;border-radius:16px;padding:6px 16px}
   .notiz{padding:8px 0;border-bottom:1px solid #efe8d2}
@@ -229,7 +229,7 @@
     else if (!WB.daten) inhalt = `<div class="muted">Wörterbuch wird geladen …</div>`;
     else {
       const r = E.nachschlagen(tok, WB.daten.W, WB.normFa, 4);
-      inhalt = r.length ? r.map(w => `<div class="z" data-say="${esc(w.fa)}"><div><b>${esc(w.de)}</b><div class="klein muted">${w.tr ? `<i>${esc(w.tr)}</i>` : ""}${w.stamm ? ` · Präsensstamm <span class="fa">${esc(w.stamm)}</span>` : ""}</div></div><div class="f">${esc(w.fa)}</div></div>`).join("")
+      inhalt = r.length ? r.map(w => `<div class="z"><div><b>${esc(w.de)}</b><div class="klein muted">${w.tr ? `<i>${esc(w.tr)}</i>` : ""}${w.stamm ? ` · Präsensstamm <span class="fa">${esc(w.stamm)}</span>` : ""}</div></div><div class="f">${esc(w.fa)}</div></div>`).join("")
         : `<div class="muted">Kein Eintrag gefunden – vielleicht steckt eine Endung dran. Probier es im Wörterbuch.</div>`;
     }
     return `<div class="nachschl"><div style="display:flex;justify-content:space-between;gap:8px;align-items:center"><span class="fa" style="font-size:1.2rem">${esc(tok)}</span><span><button class="mini" data-wbsuche="${esc(E.strip(tok))}">🔎 im Wörterbuch</button> <button class="mini" data-nachweg="1">✕</button></span></div>${inhalt}</div>`;
@@ -238,7 +238,7 @@
   function personBub(p, fa, de, key, extra = "") {
     const deAn = DE.has(key);
     return `<div class="bub antw"><div class="wer">${p.emoji} ${esc(p.name)}</div><div class="fa-g">${faHtml(fa, key)}</div>${deAn && hilfe() ? `<div class="de">${esc(de)}</div>` : ""}
-      <div class="werkz nodruck"><button class="mini" data-say="${esc(fa)}">🔊 anhören</button>${hilfe() ? `<button class="mini" data-de="${esc(key)}">${deAn ? "DE ausblenden" : "🇩🇪 Übersetzung"}</button>` : ""}${extra}</div>${nachschlagHtml(key)}</div>`;
+      <div class="werkz nodruck">${hilfe() ? `<button class="mini" data-de="${esc(key)}">${deAn ? "DE ausblenden" : "🇩🇪 Übersetzung"}</button>` : ""}${extra}</div>${nachschlagHtml(key)}</div>`;
   }
 
   /* =====================================================================
@@ -420,7 +420,7 @@
           ${!frei.length && !zu.length ? `<div class="fertig">✅ Alle Fragen an ${esc(pName(p))} gestellt.</div>` : ""}</div>`;
       else if (frei.length) h += `<p class="klein muted" style="margin-top:10px">${frei.length} Frage(n) an ${esc(pName(p))} sind noch offen – ${z ? esc(Name(z)) + " ist zuständig" : "übernimm die Person"}.</p>`;
     }
-    h += `<details class="nodruck" data-merk="lex-${p.id}" style="margin-top:14px"><summary><b>📚 Wörter für das Gespräch mit ${esc(pName(p))}</b></summary><div class="lex">${p.lexikon.map(([fa, tr, de]) => `<div class="f" data-say="${esc(fa)}">${esc(fa)}</div><div><b>${esc(de)}</b> <span class="klein muted"><i>${esc(tr)}</i></span></div>`).join("")}</div></details>
+    h += `<details class="nodruck" data-merk="lex-${p.id}" style="margin-top:14px"><summary><b>📚 Wörter für das Gespräch mit ${esc(pName(p))}</b></summary><div class="lex">${p.lexikon.map(([fa, tr, de]) => `<div class="f">${esc(fa)}</div><div><b>${esc(de)}</b> <span class="klein muted"><i>${esc(tr)}</i></span></div>`).join("")}</div></details>
       <p class="klein muted nodruck" style="margin-bottom:0">💡 Tippe auf ein persisches Wort, dann siehst du es im Wörterbuch.</p></div>`;
     return h;
   }
@@ -436,13 +436,12 @@
       h += `<div class="info-karte">${esc(b.info)}</div><div class="lueck-text">${txt}</div>${hilfe() && s.fertigDe ? `<div class="klein muted">${esc(b.textDe)}</div>` : ""}
         ${b.luecken.map((l, i) => `<div class="wahl-zeile"><span class="lnr">(${i + 1})</span>${l.o.map((o, k) => `<button class="chipw fa ${s.w[i] === k ? "an" : ""}" data-lw="${p.id}" data-i="${i}" data-k="${k}">${esc(o)}</button>`).join("")}</div>`).join("")}
         ${s.msg ? `<div class="rueck">${s.msg}</div>` : ""}<button class="btn klein" data-bpr="${p.id}" style="margin-top:6px" ${Object.keys(s.w).length === b.luecken.length ? "" : "disabled"}>✔ Plakat prüfen</button>`;
-    } else if (b.typ === "hoeren") {
+    } else if (b.typ === "uhr") {
       h += b.items.map((it, i) => { const perm = E.mischIdx(it.o.length, p.id + i);
-        return `<div class="hoer"><div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap"><button class="btn zwei klein" data-say="${esc(it.fa)}">🔊 Satz ${i + 1} anhören</button><b>${esc(it.frage)}:</b>
-          <button class="mini" data-htext="${p.id}" data-i="${i}">${s.text[i] ? "Text ausblenden" : "📄 Text"}</button></div>
-          ${s.text[i] ? `<div class="fa-g" style="font-size:1.15rem;margin-top:4px">${faHtml(it.fa, p.id + "_h" + i)}</div>${hilfe() ? `<div class="klein muted">${esc(it.de)}</div>` : ""}${nachschlagHtml(p.id + "_h" + i)}` : ""}
+        return `<div class="hoer"><div><b>${i + 1}. ${esc(it.frage)}</b></div>
+          <div class="fa-g" style="font-size:1.15rem;margin-top:4px">${faHtml(it.fa, p.id + "_h" + i)}</div>${hilfe() && DE.has(p.id + "_h" + i) ? `<div class="klein muted">${esc(it.de)}</div>` : ""}${hilfe() ? `<button class="mini" data-de="${p.id}_h${i}">${DE.has(p.id + "_h" + i) ? "DE ausblenden" : "🇩🇪 Übersetzung"}</button>` : ""}${nachschlagHtml(p.id + "_h" + i)}
           <div class="wahl-zeile">${perm.map(k => `<button class="chipw ${s.w[i] === k ? (s.falsch.includes(i) ? "falsch" : "an") : ""}" data-lw="${p.id}" data-i="${i}" data-k="${k}">${esc(it.o[k])}</button>`).join("")}</div></div>`; }).join("")
-        + `<p class="klein muted">Keine persische Stimme auf deinem Gerät? Dann tippe auf 📄 Text.</p>${s.msg ? `<div class="rueck">${s.msg}</div>` : ""}<button class="btn klein" data-bpr="${p.id}" ${Object.keys(s.w).length === b.items.length ? "" : "disabled"}>✔ Uhrzeiten prüfen</button>`;
+        + `${s.msg ? `<div class="rueck">${s.msg}</div>` : ""}<button class="btn klein" data-bpr="${p.id}" style="margin-top:8px" ${Object.keys(s.w).length === b.items.length ? "" : "disabled"}>✔ Uhrzeiten prüfen</button>`;
     } else if (b.typ === "zuordnen") {
       const perm = E.mischIdx(b.paare.length, p.id);
       h += `<div class="zuord"><div class="sp">${b.paare.map((x, i) => s.ok.includes(i) ? `<button class="chipw fa ok">${esc(x[0])} ✓</button>` : `<button class="chipw fa ${s.sel === i ? "an" : ""}" data-zw="${p.id}" data-i="${i}">${esc(x[0])}</button>`).join("")}</div>
@@ -454,21 +453,19 @@
       const fertig = b.saetze.map((x, i) => ORD["b_" + p.id + i] && ORD["b_" + p.id + i].fertig);
       b.saetze.forEach((x, i) => {
         h += `<div style="margin:10px 0"><b>Satz ${i + 1}:</b> <i>${esc(x.de)}</i>`;
-        h += fertig[i] ? `<div class="fertig fa-g" style="font-size:1.2rem">✅ ${esc(x.fa)}</div>` : ordHtml("b_" + p.id + i, E.woerter(x.fa), { extra: x.extra, ok: () => zeichne() });
+        h += fertig[i] ? `<div class="fertig fa-g" style="font-size:1.2rem">✅ ${esc(x.fa)}</div>` : ordHtml("b_" + p.id + i, E.woerter(x.fa), { extra: x.extra, ok: () => { if (b.saetze.every((y, j) => ORD["b_" + p.id + j] && ORD["b_" + p.id + j].fertig)) geholfen(p.id); else zeichne(); } });
         h += `</div>`;
       });
-      if (fertig.every(Boolean)) h += `<div class="info-karte">🗣️ Jetzt sag beide Sätze laut – so, als stündest du vor Bahars Tür. <button class="mini" data-say="${esc(b.saetze.map(x => x.fa).join(" "))}">🔊 Vorbild anhören</button></div><button class="btn" data-laut="${p.id}">✅ Ich habe es laut gesagt</button>`;
     }
     return h + `</div>`;
   }
   function verdrahteBitten() {
     $$("[data-lw]").forEach(b => b.onclick = () => { const s = BIT[b.dataset.lw]; const i = +b.dataset.i; s.w[i] = +b.dataset.k; s.falsch = s.falsch.filter(x => x !== i); s.msg = null; zeichne(); });
-    $$("[data-htext]").forEach(b => b.onclick = () => { const s = BIT[b.dataset.htext], i = +b.dataset.i; s.text[i] = !s.text[i]; zeichne(); });
     $$("[data-bpr]").forEach(b => b.onclick = () => {
       const p = person(b.dataset.bpr), B = p.bitte, s = BIT[p.id], liste = B.typ === "luecke" ? B.luecken : B.items;
       s.falsch = liste.map((l, i) => s.w[i] === l.r ? -1 : i).filter(i => i >= 0);
       if (!s.falsch.length) { s.fertigDe = true; geholfen(p.id); return; }
-      s.msg = `${liste.length - s.falsch.length} von ${liste.length} richtig – die roten noch einmal${B.typ === "hoeren" ? " anhören" : ""}.`; zeichne();
+      s.msg = `${liste.length - s.falsch.length} von ${liste.length} richtig – schau dir die roten noch einmal an.`; zeichne();
     });
     $$("[data-zw]").forEach(b => b.onclick = () => { const s = BIT[b.dataset.zw]; s.sel = +b.dataset.i; s.falschBild = null; zeichne(); });
     $$("[data-zb]").forEach(b => b.onclick = () => {
@@ -478,7 +475,6 @@
       else { s.falschBild = i; toast("Passt nicht – schau im Wörterbuch nach 🔎"); }
       zeichne();
     });
-    $$("[data-laut]").forEach(b => b.onclick = () => geholfen(b.dataset.laut));
   }
 
   /* ---------- Notieren ---------- */
@@ -501,7 +497,7 @@
     let h = offen.length ? `<div class="meldung nodruck">📝 <b>Noch nicht notiert:</b> ${offen.map(({ p }) => `<button class="mini" data-gehzu="${p.id}">${p.emoji} ${esc(p.name)}</button>`).join(" ")} – in diesen Antworten steckt ein Hinweis.</div>` : "";
     h += `<div class="karte"><h2 style="margin-top:0">📓 Notizbuch <span class="klein muted">${p.hinweise} von ${p.hinweiseMax} Hinweisen · 🤝 ${p.hilfe}/${p.hilfeMax} geholfen · ${p.fragen}/${p.fragenMax} Fragen</span></h2><div class="notizbuch">`;
     h += hs.length ? hs.map(([id, x]) => { const H = FALL.hinweise[id], von = FALL.personen.find(pp => pp.fragen.some(q => q.hinweis === id)), key = "nb_" + id;
-      return `<div class="notiz"><div class="t">${esc(H.titel)}</div><div class="fa-g" style="font-size:1.15rem;line-height:2">${faHtml(H.fa, key)} <button class="mini nodruck" data-say="${esc(H.fa)}">🔊</button></div>${hilfe() ? `<div class="klein">${esc(H.text)}</div>` : ""}${nachschlagHtml(key)}<div class="q">${von ? von.emoji + " von " + esc(von.name) : ""} · notiert von ${esc(Name(x.p))} · ${uhr(x.ts)}</div></div>`; }).join("") : `<div class="leer-notiz">Noch leer. Helft den Leuten im Haus und befragt sie – wenn eine Antwort einen Hinweis enthält, erscheint „📝 Hinweis! Notieren“.</div>`;
+      return `<div class="notiz"><div class="t">${esc(H.titel)}</div><div class="fa-g" style="font-size:1.15rem;line-height:2">${faHtml(H.fa, key)}</div>${hilfe() ? `<div class="klein">${esc(H.text)}</div>` : ""}${nachschlagHtml(key)}<div class="q">${von ? von.emoji + " von " + esc(von.name) : ""} · notiert von ${esc(Name(x.p))} · ${uhr(x.ts)}</div></div>`; }).join("") : `<div class="leer-notiz">Noch leer. Helft den Leuten im Haus und befragt sie – wenn eine Antwort einen Hinweis enthält, erscheint „📝 Hinweis! Notieren“.</div>`;
     return h + `</div><div class="btnreihe nodruck" style="margin-top:10px"><button class="btn zwei klein" data-drucken="1">🖨️ Notizbuch drucken</button></div></div>`;
   }
 
