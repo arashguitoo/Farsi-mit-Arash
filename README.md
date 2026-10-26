@@ -289,6 +289,9 @@ Zwei Spiele mit dem Wortschatz (`ws-*.json`) aus **frei wählbaren Lektionen all
 - **Eigene Runde:** „👥 Eigene Runde starten“ (mit Zugangscode, ein Tisch für alle). Mitspielen geht auch ohne Zugangscode (Code + Vorname).
 - Firebase: `live/vokabel/{code}` (keine Regeländerung nötig).
 
+### Lese-Prüfung (`lese-pruefung.html`)
+Mündliche Prüfung der Lesefähigkeit für die Alphabetisierung, mit Moderation über die Leinwand: Ein Wort erscheint groß, die Person liest vor; dann Auflösung (Umschrift, deutsche Bedeutung, 🔊) und Bewertung ✓ / ½ / ✗ (Tasten Leertaste, 1, 2, 3, H, ←/→). Namen eingeben → jede Person bekommt eigene Wörter. Quellen: Wörter aus Lektion 1 und den ersten Lektionen, Pronomen, „sein“ und „haben“ im Präsens (`assets/lesen/grammatik.json`, ca. ein Drittel der Wörter), optional Wörterbuch. Buchstaben wie im Vokabelspiel wählbar (gleiche Auswahl, ★ = neu). Ergebnis mit „noch üben“ zum Drucken; frühere Prüfungen bleiben auf dem Gerät gespeichert.
+
 ### Selbstlernen: Detektiv-Fall „Wo ist Pashmak?“ (`live-detektiv.html`)
 Selbstlern-Lektion für 1–4 Personen (Niveau: Beginn Fortgeschritten, ohne Bedingungssätze). Nedas Katze Pashmak ist verschwunden. Die TN befragen fünf Personen im Haus (Neda, Kaveh, Shirin, Herr Rahimi, Bahar), notieren Hinweise im gemeinsamen Notizbuch und klagen am Ende an: **Wer? Was? Wann? Wo?**
 - **Start:** TN öffnen den Fall selbst (Aktivitäten → „🕵️ Fall öffnen / weiterspielen“), wählen *mit Hilfe* (deutsche Übersetzungen auf Knopfdruck) oder *ohne Hilfe* (nur Persisch; Wortliste und Wörterbuch bleiben) und bekommen einen Spielcode. Die anderen geben ihn ein (auch über `code.html`).

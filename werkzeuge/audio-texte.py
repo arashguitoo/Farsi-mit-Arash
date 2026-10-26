@@ -52,6 +52,15 @@ def end_e(seg):
         if not (davor in '\u064E\u0650\u064F' or davor in 'اآ'): return seg
     return seg[:-1] + '\u0650' + 'ه'
 NB = '[^\u0621-\u0655\u0670\u067E\u0686\u0698\u06A9\u06AF\u06CC\u200c]'
+KONS = 'بپتثجچحخدذرزژسشصضطظعغفقکگلمنه'   # ohne ا و ی (können Vokale sein)
+def sukun(seg):
+    """In vokalisierten Wörtern: Konsonant ohne Zeichen vor einem Konsonanten bekommt Sukun – اَبر → اَبْر (nicht „abar“)"""
+    if not re.search('[' + HARAKAT + ']', seg): return seg
+    out = []
+    for i, c in enumerate(seg):
+        out.append(c)
+        if c in KONS and i + 1 < len(seg) and seg[i + 1] in KONS + 'ءئؤ': out.append('\u0652')
+    return ''.join(out)
 def fuer_tts(t):
     """Nur in (teil-)vokalisierten Texten fehlende Vokale aus dem Wörterbuch ergänzen; End-ه immer markieren."""
     wb = woerterbuch_formen(); out = []; teilvok = bool(re.search('[' + HARAKAT + ']', t))
@@ -60,7 +69,7 @@ def fuer_tts(t):
         if not m or not m.group(2): out.append(tok); continue
         vor, kern, nach = m.groups()
         if teilvok and len(kern) >= 4 and not re.search('[' + HARAKAT + ']', kern) and kern in wb: kern = wb[kern]
-        kern = '\u200c'.join(end_e(x) for x in kern.split('\u200c'))
+        kern = '\u200c'.join(sukun(end_e(x)) for x in kern.split('\u200c'))
         out.append(vor + kern + nach)
     return ''.join(out)
 
@@ -92,6 +101,9 @@ def sammeln():
             for v in o.values(): walk(v)
         elif isinstance(o, list): [walk(v) for v in o]
     for f in sorted(glob.glob(R + '/lektionen/*.json')): walk(json.load(open(f)))
+    # 2b) Zusatzwörter der Lese-Prüfung
+    for g in json.load(open(R + '/assets/lesen/grammatik.json'))['gruppen']:
+        for w in g['woerter']: add(w['fa'])
     # 3) Wörterbuch
     for w in json.load(open(R + '/assets/woerterbuch/suche.json'))['w']: add(w[0])
     # 4) Live-Aktivitäten (Chats, Gespräche, Quiz, Buzzer, Truhe …): persische Texte in JS-Daten

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lese-Prüfung · Farsi-Lernpfad</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Vazirmatn:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css">
+<style>
+  .wrap{max-width:1000px}
+  .klein-h{font-size:.78rem;font-weight:800;color:var(--tinte2);text-transform:uppercase;letter-spacing:.04em;margin:16px 0 6px}
+  .seg{display:inline-flex;border:1px solid var(--linie);border-radius:10px;overflow:hidden;flex-wrap:wrap}
+  .seg button{border:0;background:#fff;padding:7px 12px;font:inherit;font-size:.88rem;font-weight:700;cursor:pointer}
+  .seg button.an{background:var(--lapis);color:#fff}
+  .bw{border:1.5px solid var(--linie);background:#fff;border-radius:10px;min-width:42px;padding:3px 8px;cursor:pointer;font:inherit;position:relative}
+  .bw .fa{font-size:1.3rem}
+  .bw.g{background:var(--lapis-hell);border-color:var(--lapis)}
+  .bw.f{background:var(--safran-hell);border-color:var(--safran)}
+  .bw i{position:absolute;top:-6px;right:-4px;font-style:normal;font-size:.7rem;color:var(--safran)}
+  .quelle{display:flex;gap:8px;align-items:center;border:1px solid var(--linie);border-radius:12px;padding:8px 12px;background:#fff;cursor:pointer}
+  .quellen{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:8px}
+  textarea.feld{width:100%;min-height:90px}
+  /* Leinwand */
+  .bühne{min-height:calc(100vh - 140px);display:flex;flex-direction:column}
+  .b-kopf{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;padding:10px 0}
+  .b-name{font-size:1.6rem;font-weight:800}
+  .b-fort{color:var(--tinte2);font-weight:700}
+  .b-mitte{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:#fff;border:1px solid var(--linie);border-radius:24px;padding:20px;min-height:52vh}
+  .b-wort{font-family:var(--fa);direction:rtl;font-size:clamp(4rem,14vw,10rem);line-height:1.35;color:var(--tinte);font-weight:600}
+  .b-wort.lang{font-size:clamp(3rem,9vw,6.5rem)}
+  .b-aufl{margin-top:10px;min-height:5.5em}
+  .b-tr{font-size:clamp(1.4rem,3.5vw,2.4rem);color:var(--lapis);font-style:italic}
+  .b-de{font-size:clamp(1.5rem,4vw,2.8rem);font-weight:800;margin-top:4px}
+  .b-emo{font-size:clamp(2rem,5vw,3.4rem)}
+  .b-leiste{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:14px}
+  .b-leiste .btn{font-size:1rem;padding:10px 16px}
+  .btn.ok{background:var(--gruen)}
+  .btn.fast{background:var(--safran);color:#fff}
+  .btn.nein{background:var(--granat)}
+  .tasten{text-align:center;color:var(--tinte2);font-size:.8rem;margin-top:8px}
+  .erg-tab{width:100%;border-collapse:collapse}
+  .erg-tab th,.erg-tab td{border-bottom:1px solid var(--linie);padding:7px 8px;text-align:left;vertical-align:top}
+  .w-chip{display:inline-block;border-radius:8px;padding:1px 7px;margin:2px;font-family:var(--fa);font-size:1.05rem}
+  .w-chip.r2{background:var(--gruen-hell)}.w-chip.r1{background:var(--safran-hell)}.w-chip.r0{background:var(--granat-hell)}
+  @media print{.kopf,.nodruck{display:none!important}.karte{border:0}}
+</style>
+</head>
+<body>
+<header class="kopf nodruck">
+  <div class="wrap">
+    <a href="aktivitaeten.html" class="medaillon" style="text-decoration:none">فا</a>
+    <div><h1>Lese-Prüfung</h1><div class="unter">Wörter vorlesen · Alphabetisierung · Farsi-Lernpfad</div></div>
+    <div class="rechts"><a class="kopf-btn" href="aktivitaeten.html">← Aktivitäten</a></div>
+  </div>
+</header>
+<main class="wrap" style="padding-bottom:40px"><div id="app"><p class="muted" style="margin-top:30px">Lade …</p></div></main>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+<script src="assets/core.js"></script>
+<script>
+(function () {
+  const F = window.FARSI, { $, $$, esc, toast } = F;
+  const app = () => $("#app");
+  const LS = "farsi_lese_pruefung_v1", LSB = "farsi_buchst_wahl_v1", LSH = "farsi_lese_ergebnisse_v1";
+  const lies = (k, d) => { try { return JSON.parse(localStorage.getItem(k)) ?? d; } catch (e) { return d; } };
+  const merk = (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) { } };
+  const E = Object.assign({ namen: "", quellen: { lektion: true, pronomen: true, sein: true, haben: true, wb: false }, anzahl: 8, vokale: true, bedeutung: "nachher", nurNeu: false }, lies(LS, {}));
+  let BW = lies(LSB, {});
+  let A = null, GR = null, WB = null, P = null, L = null;   /* L = laufende Prüfung */
+
+  const normFa = x => String(x || "").replace(/[ً-ْٰٕٔ‌‍\s.,!?؟،:;«»()\-–…"'„“]/g, "")
+    .replace(/[آأإ]/g, "ا").replace(/ي/g, "ی").replace(/ك/g, "ک").replace(/ة/g, "ه").replace(/ؤ/g, "و").replace(/ئ/g, "ی").replace(/ء/g, "");
+  const ohneVok = x => String(x || "").replace(/[ً-ْٰ]/g, "");
+  function mischen(a) { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
+
+  /* ---------- Daten ---------- */
+  async function laden() {
+    const ix = await F.ladeJSON("lektionen/index.json");
+    const l1 = ix.lektionen.find(x => x.id === "01"), d = await F.ladeJSON("lektionen/" + l1.datei);
+    const stationen = [], woerter = [];
+    d.stationen.forEach((st, si) => {
+      const b = [];
+      st.karten.forEach(k => (k.typ === "buchstaben" ? k.buchstaben : []).forEach(x => {
+        if (!x.fa || x.fa[0] === "ـ") return;
+        const fa = x.fa === "آ" ? "ا" : x.fa;
+        if (!b.some(y => y.fa === fa) && !stationen.some(s => s.b.some(y => y.fa === fa))) b.push({ fa, name: x.fa === "آ" ? "Alef" : x.name, laut: x.laut });
+      }));
+      if (b.length) stationen.push({ titel: st.titel, b });
+      (function such(o) { if (!o || typeof o !== "object") return; if (Array.isArray(o)) return o.forEach(such);
+        if (typeof o.fa === "string" && typeof o.de === "string" && o.tr && !/[ـ]/.test(o.fa) && o.fa.trim().split(/\s+/).length === 1 && !/Vokal|Lücke|Zeichen|Buchstabe|Form|Laut|Endung|ohne|mit /i.test(o.de)) woerter.push({ fa: o.fa.replace(/[.!?؟]/g, ""), tr: o.tr, de: o.de, emoji: o.emoji, q: "lektion" });
+        Object.values(o).forEach(such); })(st);
+    });
+    /* Wortschatz der ersten Lektionen */
+    for (const id of ["01", "02", "ez", "03"]) {
+      const l = ix.lektionen.find(x => x.id === id); if (!l || !l.wortschatz) continue;
+      try { (await F.ladeJSON("lektionen/" + l.wortschatz)).woerter.forEach(w => woerter.push(Object.assign({}, w, { q: "lektion" }))); } catch (e) { }
+    }
+    A = { stationen, woerter };
+    GR = await F.ladeJSON("assets/lesen/grammatik.json");
+    if (!Object.keys(BW).length) A.stationen.forEach(s => s.b.forEach(x => { BW[x.fa] = "g"; }));
+  }
+  async function wbLaden() {
+    if (WB) return WB;
+    try { const d = await F.ladeJSON("assets/woerterbuch/suche.json"); WB = d.w.filter(x => x[0].trim().split(/\s+/).length === 1).map(x => ({ fa: x[0], tr: x[1] || "", de: x[2], emoji: x[5] || "", q: "wb" })); } catch (e) { WB = []; }
+    return WB;
+  }
+  /* Wortliste nach Quellen + Buchstaben */
+  async function pool() {
+    const erlaubt = new Set(Object.keys(BW)), fokus = Object.keys(BW).filter(k => BW[k] === "f");
+    const roh = [];
+    if (E.quellen.lektion) roh.push(...A.woerter);
+    GR.gruppen.forEach(g => { if (E.quellen[g.id]) g.woerter.forEach(w => roh.push(Object.assign({}, w, { q: g.id }))); });
+    if (E.quellen.wb) roh.push(...await wbLaden());
+    const gesehen = new Set(), out = [];
+    roh.forEach(w => {
+      if (!w || !w.fa || !w.de) return;
+      const n = normFa(w.fa); if (n.length < 2 || gesehen.has(n)) return;
+      if (w.q === "lektion" || w.q === "wb") { if (n.length > 9 || /\s/.test(w.fa.trim())) return; }
+      if (![...n].every(c => erlaubt.has(c))) return;
+      if (E.nurNeu && fokus.length && ![...n].some(c => fokus.includes(c))) return;
+      gesehen.add(n); out.push(w);
+    });
+    return (P = out);
+  }
+
+  /* ---------- Einrichten ---------- */
+  async function zeichneEinrichten() {
+    if (!A) { try { await laden(); } catch (e) { app().innerHTML = `<div class="karte" style="margin-top:20px">Daten konnten nicht geladen werden. ${esc(e.message)}</div>`; return; } }
+    const H = lies(LSH, []);
+    app().innerHTML = `<div class="karte" style="margin-top:18px"><h2 style="margin-top:0">📖 Lese-Prüfung</h2>
+      <p style="margin-top:0">Ein Wort erscheint groß auf der Leinwand, die Person liest es laut vor. Danach blendest du Umschrift und Bedeutung ein 🔊 und bewertest: ✓ richtig · ½ mit Hilfe · ✗ noch nicht. Am Ende gibt es eine Übersicht zum Drucken.</p>
+      <div class="klein-h">1 · Wer liest? (ein Name pro Zeile – leer lassen für eine offene Runde)</div>
+      <textarea class="feld" id="namen" placeholder="Sara&#10;Omid&#10;Lena">${esc(E.namen)}</textarea>
+      <div class="klein-h">2 · Welche Wörter?</div>
+      <div class="quellen">
+        ${[["lektion", "🔤", "Wörter aus Lektion 1 und den ersten Lektionen"], ...GR.gruppen.map(g => [g.id, g.icon, g.titel + " – " + g.woerter.length + " Formen"]), ["wb", "📖", "+ Wörterbuch (viel mehr, auch seltene Wörter)"]]
+          .map(([id, ic, t]) => `<label class="quelle"><input type="checkbox" data-q="${id}" ${E.quellen[id] ? "checked" : ""}> ${ic} ${esc(t)}</label>`).join("")}
+      </div>
+      <div class="klein-h">3 · Welche Buchstaben können sie schon? (antippen: gelernt → ★ neu → aus)</div>
+      <div id="bwahl"></div>
+      <label class="klein" style="display:block;margin-top:8px"><input type="checkbox" id="nurNeu" ${E.nurNeu ? "checked" : ""}> nur Wörter mit den ★ neuen Buchstaben</label>
+      <div class="klein-h">4 · Einstellungen</div>
+      <div style="display:grid;gap:10px">
+        <div><span class="klein">Wörter pro Person:</span> <div class="seg">${[5, 8, 10, 15, 20].map(n => `<button class="${E.anzahl === n ? "an" : ""}" data-anz="${n}">${n}</button>`).join("")}</div></div>
+        <div><span class="klein">Vokalzeichen:</span> <div class="seg"><button class="${E.vokale ? "an" : ""}" data-vok="1">mit (اَبر)</button><button class="${E.vokale ? "" : "an"}" data-vok="0">ohne (ابر)</button></div></div>
+        <div><span class="klein">Deutsche Bedeutung:</span> <div class="seg"><button class="${E.bedeutung === "nachher" ? "an" : ""}" data-bed="nachher">nach dem Lesen einblenden</button><button class="${E.bedeutung === "sofort" ? "an" : ""}" data-bed="sofort">gleich mit anzeigen</button></div></div>
+      </div>
+      <p id="info" class="klein" style="margin-top:14px"></p>
+      <button class="btn" id="los" style="font-size:1.05rem">▶ Prüfung starten</button></div>
+      ${H.length ? `<div class="karte" style="margin-top:14px"><h3 style="margin-top:0">📊 Frühere Prüfungen (auf diesem Gerät)</h3>${H.slice(0, 8).map((h, i) => `<div style="display:flex;justify-content:space-between;gap:8px;border-bottom:1px solid var(--linie);padding:6px 0"><span>${new Date(h.ts).toLocaleString("de-DE", { day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit" })} · ${esc(h.personen.map(p => p.name + " " + prozent(p) + " %").join(" · "))}</span><button class="btn zwei klein" data-alt="${i}">ansehen</button></div>`).join("")}</div>` : ""}`;
+    zeichneBuchst();
+    $("#namen").oninput = e => { E.namen = e.target.value; merk(LS, E); };
+    $$("[data-q]").forEach(c => c.onchange = () => { E.quellen[c.dataset.q] = c.checked; merk(LS, E); info(); });
+    $("#nurNeu").onchange = e => { E.nurNeu = e.target.checked; merk(LS, E); info(); };
+    $$("[data-anz]").forEach(b => b.onclick = () => { E.anzahl = +b.dataset.anz; merk(LS, E); zeichneEinrichten(); });
+    $$("[data-vok]").forEach(b => b.onclick = () => { E.vokale = b.dataset.vok === "1"; merk(LS, E); zeichneEinrichten(); });
+    $$("[data-bed]").forEach(b => b.onclick = () => { E.bedeutung = b.dataset.bed; merk(LS, E); zeichneEinrichten(); });
+    $$("[data-alt]").forEach(b => b.onclick = () => { L = H[+b.dataset.alt]; zeichneErgebnis(true); });
+    $("#los").onclick = starten;
+    info();
+  }
+  function zeichneBuchst() {
+    $("#bwahl").innerHTML = A.stationen.map(st => `<div style="display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin:5px 0">${st.b.map(b => `<button class="bw ${BW[b.fa] || ""}" data-bw="${esc(b.fa)}" title="${esc(b.name)} · ${esc(b.laut || "")}"><span class="fa">${esc(b.fa)}</span>${BW[b.fa] === "f" ? "<i>★</i>" : ""}</button>`).join("")}</div>`).join("")
+      + `<div class="btnreihe" style="margin-top:6px"><button class="btn zwei klein" id="bwAlle">alle Buchstaben</button><button class="btn zwei klein" id="bwFokusWeg">★ entfernen</button></div>`;
+    $$("[data-bw]").forEach(b => b.onclick = () => { const x = b.dataset.bw; BW[x] = !BW[x] ? "g" : BW[x] === "g" ? "f" : ""; if (!BW[x]) delete BW[x]; merk(LSB, BW); zeichneBuchst(); info(); });
+    $("#bwAlle").onclick = () => { A.stationen.forEach(s => s.b.forEach(x => { if (!BW[x.fa]) BW[x.fa] = "g"; })); merk(LSB, BW); zeichneBuchst(); info(); };
+    $("#bwFokusWeg").onclick = () => { Object.keys(BW).forEach(k => { if (BW[k] === "f") BW[k] = "g"; }); merk(LSB, BW); zeichneBuchst(); info(); };
+  }
+  async function info() {
+    const p = await pool(), n = namen().length || 1;
+    const el = $("#info"); if (!el) return;
+    el.innerHTML = `<b>${p.length} Wörter</b> passen${p.length < E.anzahl * n ? ` – <span style="color:var(--granat)">für ${n} × ${E.anzahl} Wörter werden einige wiederholt</span>` : ""}. ${p.length ? `<span class="muted">z. B. <span class="fa" style="font-size:1.1rem">${p.slice(0, 10).map(w => esc(w.fa)).join(" · ")}</span></span>` : ""}`;
+    $("#los").disabled = !p.length;
+  }
+  const namen = () => E.namen.split("\n").map(s => s.trim()).filter(Boolean);
+  const prozent = p => { const r = p.woerter.filter(w => w.r != null); return r.length ? Math.round(r.reduce((s, w) => s + w.r, 0) / (2 * r.length) * 100) : 0; };
+
+  /* ---------- Prüfung ---------- */
+  async function starten() {
+    const p = await pool(); if (!p.length) return;
+    const leute = namen().length ? namen() : ["Runde"];
+    /* jede Person bekommt eigene Wörter; Grammatik-Formen gut verteilt */
+    /* ca. ein Drittel Pronomen / sein / haben, der Rest Wörter */
+    const gram = p.filter(w => !["lektion", "wb"].includes(w.q)), rest = p.filter(w => ["lektion", "wb"].includes(w.q));
+    let vg = mischen(gram), vr = mischen(rest);
+    const nimm = (v, alle) => { if (!v.length) v.push(...mischen(alle)); return v.shift(); };
+    const personen = leute.map(name => {
+      const nG = gram.length ? (rest.length ? Math.round(E.anzahl / 3) : E.anzahl) : 0, woerter = [];
+      for (let i = 0; i < nG; i++) woerter.push(nimm(vg, gram));
+      while (woerter.length < E.anzahl) woerter.push(nimm(vr, rest));
+      return { name, woerter: mischen(woerter).map(w => Object.assign({}, w, { r: null })) };
+    });
+    L = { ts: Date.now(), vokale: E.vokale, bedeutung: E.bedeutung, personen, pi: 0, wi: 0, auf: E.bedeutung === "sofort" };
+    zeichneBuehne();
+  }
+  function aktuell() { return L.personen[L.pi].woerter[L.wi]; }
+  function zeichneBuehne() {
+    const P0 = L.personen[L.pi], w = aktuell(), fa = L.vokale ? w.fa : ohneVok(w.fa);
+    const gesamt = L.personen.reduce((s, p) => s + p.woerter.length, 0), fertig = L.personen.reduce((s, p) => s + p.woerter.filter(x => x.r != null).length, 0);
+    app().innerHTML = `<div class="bühne"><div class="b-kopf"><div class="b-name">${P0.name === "Runde" ? "📖" : "👤 " + esc(P0.name)}</div>
+      <div class="b-fort">Wort ${L.wi + 1} / ${P0.woerter.length}${L.personen.length > 1 ? ` · Person ${L.pi + 1} / ${L.personen.length}` : ""}</div>
+      <div class="nodruck"><button class="btn zwei klein" id="vollbild">⛶ Vollbild</button> <button class="btn zwei klein" id="abbruch">✕ beenden</button></div></div>
+      <div class="b-mitte"><div class="b-wort ${normFa(w.fa).length > 6 || /\s/.test(w.fa) ? "lang" : ""}">${esc(fa)}</div>
+        <div class="b-aufl">${L.auf ? `${w.emoji ? `<div class="b-emo">${w.emoji}</div>` : ""}<div class="b-tr">${esc(w.tr || "")}</div><div class="b-de">${esc(w.de)}</div>` : ""}</div></div>
+      <div class="b-leiste nodruck">
+        <button class="btn zwei" id="zurueck" ${L.pi === 0 && L.wi === 0 ? "disabled" : ""}>←</button>
+        <button class="btn zwei" id="auf">${L.auf ? "🙈 ausblenden" : "👁 Auflösung"}</button>
+        <button class="btn zwei" id="hoer">🔊 anhören</button>
+        <button class="btn ok" data-r="2">✓ richtig</button>
+        <button class="btn fast" data-r="1">½ mit Hilfe</button>
+        <button class="btn nein" data-r="0">✗ noch nicht</button>
+        <button class="btn zwei" id="weiter" title="überspringen">→</button>
+      </div>
+      <div class="tasten nodruck">Tasten: Leertaste = Auflösung · H = anhören · 1 = richtig · 2 = mit Hilfe · 3 = noch nicht · ← → blättern · ${fertig}/${gesamt} bewertet</div></div>`;
+    $("#auf").onclick = () => { L.auf = !L.auf; if (L.auf) F.sprich(w.fa); zeichneBuehne(); };
+    $("#hoer").onclick = () => F.sprich(w.fa);
+    $$("[data-r]").forEach(b => b.onclick = () => bewerte(+b.dataset.r));
+    $("#weiter").onclick = () => schritt(1);
+    $("#zurueck").onclick = () => schritt(-1);
+    $("#abbruch").onclick = () => { if (confirm("Prüfung beenden und Ergebnis zeigen?")) zeichneErgebnis(); };
+    $("#vollbild").onclick = () => { try { document.fullscreenElement ? document.exitFullscreen() : document.documentElement.requestFullscreen(); } catch (e) { } };
+  }
+  function bewerte(r) { aktuell().r = r; schritt(1); }
+  function schritt(d) {
+    const P0 = L.personen[L.pi];
+    if (d > 0) { if (L.wi < P0.woerter.length - 1) L.wi++; else if (L.pi < L.personen.length - 1) { L.pi++; L.wi = 0; toast("👤 Jetzt liest: " + L.personen[L.pi].name); } else return zeichneErgebnis(); }
+    else { if (L.wi > 0) L.wi--; else if (L.pi > 0) { L.pi--; L.wi = L.personen[L.pi].woerter.length - 1; } }
+    L.auf = L.bedeutung === "sofort";
+    zeichneBuehne();
+  }
+  document.addEventListener("keydown", e => {
+    if (!L || !$(".bühne") || e.target.matches("input,textarea")) return;
+    if (e.key === " ") { e.preventDefault(); $("#auf").click(); }
+    else if (e.key === "1") bewerte(2); else if (e.key === "2") bewerte(1); else if (e.key === "3") bewerte(0);
+    else if (e.key === "ArrowRight") schritt(1); else if (e.key === "ArrowLeft") schritt(-1);
+    else if (e.key.toLowerCase() === "h") F.sprich(aktuell().fa);
+  });
+
+  /* ---------- Ergebnis ---------- */
+  function zeichneErgebnis(alt) {
+    if (!alt) { const H = lies(LSH, []); H.unshift({ ts: L.ts, vokale: L.vokale, personen: L.personen.map(p => ({ name: p.name, woerter: p.woerter.map(w => ({ fa: w.fa, tr: w.tr, de: w.de, r: w.r })) })) }); merk(LSH, H.slice(0, 30)); }
+    const sym = r => r === 2 ? "✓" : r === 1 ? "½" : r === 0 ? "✗" : "–";
+    app().innerHTML = `<div class="karte" style="margin-top:18px"><h2 style="margin-top:0">📊 Ergebnis der Lese-Prüfung</h2>
+      <p class="klein muted">${new Date(L.ts).toLocaleString("de-DE")} · ${L.vokale ? "mit" : "ohne"} Vokalzeichen · ✓ = 2 Punkte, ½ = 1 Punkt</p>
+      <table class="erg-tab"><tr><th>Person</th><th>Punkte</th><th>Wörter</th></tr>
+      ${L.personen.map(p => { const r = p.woerter.filter(w => w.r != null), pk = r.reduce((s, w) => s + w.r, 0);
+        return `<tr><td><b>${esc(p.name)}</b></td><td><b>${pk} / ${r.length * 2}</b><div class="klein muted">${prozent(p)} %</div></td><td>${p.woerter.map(w => `<span class="w-chip r${w.r ?? ""}" title="${esc(w.tr + " – " + w.de)}">${sym(w.r)} ${esc(w.fa)}</span>`).join("")}
+          ${p.woerter.some(w => w.r === 0 || w.r === 1) ? `<div class="klein" style="margin-top:4px">Noch üben: ${p.woerter.filter(w => w.r === 0 || w.r === 1).map(w => `<span class="fa">${esc(w.fa)}</span> (${esc(w.tr)})`).join(" · ")}</div>` : ""}</td></tr>`; }).join("")}</table>
+      <div class="btnreihe nodruck" style="margin-top:14px"><button class="btn" id="neu">↺ Neue Prüfung</button><button class="btn zwei" id="druck">🖨️ Drucken / PDF</button>${alt ? "" : `<button class="btn zwei" id="nochmal">🔁 Gleiche Wörter noch einmal</button>`}</div></div>`;
+    $("#neu").onclick = () => { L = null; zeichneEinrichten(); };
+    $("#druck").onclick = () => window.print();
+    const nm = $("#nochmal"); if (nm) nm.onclick = () => { L.personen.forEach(p => p.woerter.forEach(w => { w.r = null; })); L.pi = 0; L.wi = 0; L.ts = Date.now(); L.auf = L.bedeutung === "sofort"; zeichneBuehne(); };
+  }
+
+  window.LESE_PRUEFUNG = { get L() { return L; }, pool: () => pool(), get E() { return E; } };
+  (async () => { if (!(await F.brauchtCode())) return; zeichneEinrichten(); })();
+})();
+</script>
+</body>
+</html>

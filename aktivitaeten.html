@@ -51,6 +51,9 @@
 /* Neue Aktivitäten einfach hier eintragen. */
 const AKTIVITAETEN = {
   live: [
+    { id: "lesen", datei: "lese-pruefung.html", lokal: true, icon: "📖", titel: "Lese-Prüfung (Alphabetisierung)", fa: "خواندَن",
+      text: "Mündliche Prüfung der Lesefähigkeit: Ein Wort erscheint groß auf der Leinwand, die Person liest es vor. Danach Umschrift, deutsche Bedeutung und 🔊 einblenden und bewerten (✓ · ½ · ✗). Buchstaben einzeln wählbar; dazu Pronomen, „sein“ und „haben“ im Präsens. Ergebnis zum Drucken.",
+      tags: ["mit Moderation", "Leinwand", "nach Buchstaben", "Anfänger · L1"] },
     { id: "detektiv", datei: "live-detektiv.html", selbst: true, neu: true, lkKnopf: "📊 Übersicht der Fälle", icon: "🕵️", titel: "Detektiv-Fall: Wo ist Pashmak?", fa: "پَشمَک کُجاست؟",
       text: "Selbstlern-Lektion: Nedas Katze Pashmak ist verschwunden – und ihr Laptop auch? Fünf Leute im Haus wollen erst Hilfe (Suchplakat, Sprachnachricht anhören, Einkaufsliste, Dialog ordnen, sich vorstellen), dann werden sie auf Persisch befragt. Hinweise kommen ins gemeinsame Notizbuch, dazu ein Team-Chat. Auch getrennt spielbar – jede/r an einem anderen Ort. Jedes Wort ist antippbar (Wörterbuch). Der Spielstand wird gespeichert.",
       tags: ["1–4 Personen", "Selbstlernen", "auch getrennt", "speichert", "Fortgeschritten (Beginn)", "mit / ohne Hilfe"] },
@@ -102,7 +105,7 @@ const mitQ = (datei, q) => datei + (datei.includes("?") ? "&" : "?") + q;
     : `<b>Hallo ${esc(s.name)}!</b> Hier findest du Aktivitäten für den Unterricht und zusätzliches Material.`;
   $("#live").innerHTML = AKTIVITAETEN.live.map(a => `<div class="ak"><div class="ico">${a.icon}</div><h3>${esc(a.titel)}</h3><div class="fa">${esc(a.fa)}</div>
     <div class="klein">${esc(a.text)}</div><div class="tags"><span class="tag live">LIVE</span>${a.tags.map(t => `<span class="tag">${esc(t)}</span>`).join("")}</div>
-    <div class="unten">${lehrkraft ? `<a class="btn" href="${mitQ(a.datei, (a.leitung || "?leitung=1").slice(1))}" style="text-decoration:none">${a.lkKnopf || "▶ Leitung starten"}</a>`
+    <div class="unten">${a.lokal ? `<a class="btn" href="${a.datei}" style="text-decoration:none">▶ Öffnen</a>` : lehrkraft ? `<a class="btn" href="${mitQ(a.datei, (a.leitung || "?leitung=1").slice(1))}" style="text-decoration:none">${a.lkKnopf || "▶ Leitung starten"}</a>`
       : `<div class="beitritt"><input class="feld" data-code="${a.id}" inputmode="numeric" maxlength="4" placeholder="Code"><button class="btn" data-los="${a.id}" data-datei="${a.datei}">Beitreten</button></div>
       ${a.selbst ? `<a class="btn zwei klein" href="${mitQ(a.datei, "neu=1")}" style="text-decoration:none" title="Ohne Lehrkraft spielen – du bist Host">${a.neu ? "🕵️ Fall öffnen / weiterspielen" : "👥 Eigene Runde starten"}</a>` : ""}`}
       ${a.solo ? `<a class="btn zwei klein" href="${mitQ(a.datei, "solo=1")}" style="text-decoration:none" title="Allein üben – die anderen im Chat antworten automatisch">🎧 Allein üben</a>` : ""}</div></div>`).join("");
