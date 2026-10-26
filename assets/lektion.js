@@ -168,7 +168,9 @@
     function zeige() {
       const w = k.woerter[i];
       const kacheln = mischen(w.teile.concat(w.extra || []).map((t, j) => ({ t, j })));
-      let gebaut = [], ersterVersuch = true, gesperrt = false;
+      let gebaut = [], ersterVersuch = true, gesperrt = false, fehlversuche = 0;
+      /* richtige Reihenfolgen: teile + optionale Alternativen (w.alt = [[…], …]) */
+      const loesungen = [w.teile].concat(w.alt || []);
       el.innerHTML = `<div class="karte">
         <h2 style="margin-top:0">${k.titel || (k.zeigen ? "Schreib das Wort ab" : "Baue das Wort")}</h2>
         <div class="zaehler">${k.trenner ? "Satz" : "Wort"} ${i + 1} von ${k.woerter.length}</div>
@@ -184,7 +186,7 @@
         <div class="einzeln" id="einz"></div>
         <div class="kacheln">${kacheln.map(o => `<button class="kachel ${k.trenner ? "wortk" : ""}" data-j="${o.j}" data-t="${esc(o.t)}">${esc(o.t)}</button>`).join("")}</div>
         <div class="btnreihe" style="justify-content:space-between;margin-top:14px">
-          <button class="btn zwei klein" id="zurueck">⌫ zurück</button>
+          <span class="btnreihe" style="gap:6px"><button class="btn zwei klein" id="zurueck">⌫ zurück</button><button class="btn zwei klein versteckt" id="tipp">💡 Tipp</button><button class="btn zwei klein versteckt" id="loesung">👁 Lösung</button></span>
           <div id="erg" class="klein muted">${k.trenner ? "Tippe die Wörter in der richtigen Reihenfolge – der Satz beginnt rechts." : "Tippe die Buchstaben in der richtigen Reihenfolge – das Wort beginnt rechts."}</div>
           <button class="btn safran versteckt" id="naechste">${k.trenner ? "Nächster Satz →" : "Nächstes Wort →"}</button>
         </div>
@@ -198,20 +200,38 @@
         if (gebaut.length === w.teile.length) pruefe();
       }));
       $("#zurueck", el).onclick = () => { if (gesperrt) return; const g = gebaut.pop(); if (g) g.b.disabled = false; zeichne(); };
+      /* Tipp: richtigen Anfang behalten und das nächste Teil setzen */
+      $("#tipp", el).onclick = () => {
+        if (gesperrt) return; ersterVersuch = false;
+        const ziel = loesungen.find(l => gebaut.every((g, n) => g.t === l[n])) || w.teile;
+        let n = 0; while (n < gebaut.length && gebaut[n].t === ziel[n]) n++;
+        gebaut.slice(n).forEach(g => { g.b.disabled = false; }); gebaut = gebaut.slice(0, n);
+        const b = $$(".kachel", el).find(x => !x.disabled && x.dataset.t === ziel[n]);
+        if (b) b.click(); else zeichne();
+      };
+      $("#loesung", el).onclick = () => {
+        if (gesperrt) return; ersterVersuch = false;
+        gebaut.forEach(g => { g.b.disabled = false; }); gebaut = [];
+        w.teile.forEach(t => { const b = $$(".kachel", el).find(x => !x.disabled && x.dataset.t === t); if (b) { gebaut.push({ t, b }); b.disabled = true; } });
+        zeichne(); pruefe();
+      };
       function pruefe() {
-        const richtig = gebaut.every((g, n) => g.t === w.teile[n]);
+        const richtig = loesungen.some(l => l.length === gebaut.length && gebaut.every((g, n) => g.t === l[n]));
         if (richtig) {
           gesperrt = true; ton("ok"); if (ersterVersuch) p++;
           anz.classList.add("ok"); wort.textContent = w.fa; einz.textContent = "";
           $("#erg", el).innerHTML = `✓ <b>${esc(w.tr)}</b> – ${esc(w.de)} ${hoer(w.say || w.fa, w.audio)}${w.hinweis ? `<br>${w.hinweis}` : ""}`;
           bindeSprechen($("#erg", el)); sprich(w.say || w.fa, w.audio);
-          $("#zurueck", el).classList.add("versteckt");
+          $("#zurueck", el).classList.add("versteckt"); $("#tipp", el).classList.add("versteckt"); $("#loesung", el).classList.add("versteckt");
           if (i < k.woerter.length - 1) { const n = $("#naechste", el); n.classList.remove("versteckt"); n.onclick = () => { i++; zeige(); }; }
           else fertig(p, k.woerter.length);
         } else {
-          ersterVersuch = false; ton("falsch"); gesperrt = true;
+          ersterVersuch = false; ton("falsch"); gesperrt = true; fehlversuche++;
           anz.classList.add("falsch");
-          $("#erg", el).textContent = "Noch nicht ganz – versuch es noch einmal.";
+          const gut = Math.max(...loesungen.map(l => { let n = 0; while (n < gebaut.length && gebaut[n].t === l[n]) n++; return n; }));
+          $("#erg", el).textContent = gut > 0 ? `Noch nicht ganz – die ersten ${gut} ${k.trenner ? (gut === 1 ? "Wort stimmt" : "Wörter stimmen") : (gut === 1 ? "Buchstabe stimmt" : "Buchstaben stimmen")}. Probier es mit 💡 Tipp.` : "Noch nicht ganz – womit fängt es an? Probier es mit 💡 Tipp.";
+          $("#tipp", el).classList.remove("versteckt");
+          if (fehlversuche >= 2) $("#loesung", el).classList.remove("versteckt");
           setTimeout(() => { anz.classList.remove("falsch"); gebaut.forEach(g => g.b.disabled = false); gebaut = []; zeichne(); gesperrt = false; }, 800);
         }
       }
