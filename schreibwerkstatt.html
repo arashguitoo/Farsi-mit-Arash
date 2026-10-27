@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Schreibwerkstatt · Farsi-Lernpfad</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Vazirmatn:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css">
+<style>
+  .wrap{max-width:980px}
+  .klein-h{font-size:.78rem;font-weight:800;color:var(--tinte2);text-transform:uppercase;letter-spacing:.04em;margin:16px 0 6px}
+  .fa-g{font-family:var(--fa);direction:rtl;text-align:right}
+  .auf-gitter{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+  .auf{background:#fff;border:1px solid var(--linie);border-radius:16px;padding:14px;cursor:pointer;text-align:left;font:inherit;color:inherit}
+  .auf:hover{border-color:var(--lapis)}
+  .auf .ic{font-size:2rem}
+  .status{display:inline-block;border-radius:999px;padding:2px 10px;font-size:.78rem;font-weight:800;background:var(--papier2,#eee)}
+  .status.entwurf{background:var(--safran-hell);color:#6b4b10}
+  .status.abgegeben{background:var(--lapis-hell);color:var(--lapis)}
+  .status.korrigiert{background:var(--gruen-hell);color:var(--gruen)}
+  .editor{width:100%;min-height:220px;font-family:var(--fa);direction:rtl;text-align:right;font-size:1.25rem;line-height:2;border:1.5px solid var(--linie);border-radius:14px;padding:10px 14px;background:#fff;resize:vertical}
+  .editor:focus{outline:none;border-color:var(--lapis)}
+  .editor[readonly]{background:#f7f7f3}
+  .tast{background:#eef1f0;border-radius:14px;padding:8px;margin-top:8px;user-select:none}
+  .tast .z{display:flex;gap:4px;justify-content:center;direction:rtl;margin:4px 0;flex-wrap:wrap}
+  .tast button{font-family:var(--fa);font-size:1.15rem;min-width:34px;height:40px;border:1px solid #cfd6d4;background:#fff;border-radius:8px;cursor:pointer;padding:0 6px}
+  .tast button:active{background:var(--lapis-hell)}
+  .tast .breit{min-width:120px;font-family:var(--ui);font-size:.85rem}
+  .chipw{border:1.5px solid var(--linie);background:#fff;border-radius:10px;padding:3px 11px;font:inherit;cursor:pointer;margin:3px}
+  .chipw.fa{font-family:var(--fa);font-size:1.05rem}
+  .chipw:hover{border-color:var(--lapis)}
+  .hinw{border-left:4px solid var(--safran);background:var(--safran-hell);border-radius:10px;padding:8px 12px;margin:6px 0}
+  .hinw.info{border-color:var(--lapis);background:var(--lapis-hell)}
+  .hinw.ok{border-color:var(--gruen);background:var(--gruen-hell)}
+  .diff{font-family:var(--fa);direction:rtl;text-align:right;font-size:1.22rem;line-height:2.2;background:#fff;border:1px solid var(--linie);border-radius:14px;padding:10px 14px}
+  .diff .weg{color:var(--granat);text-decoration:line-through;background:var(--granat-hell);border-radius:5px;padding:0 3px}
+  .diff .neu{color:var(--gruen);background:var(--gruen-hell);border-radius:5px;padding:0 3px;font-weight:700}
+  .zwei-sp{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:start}
+  @media (max-width:820px){.zwei-sp{grid-template-columns:1fr}}
+  .liste-tab{width:100%;border-collapse:collapse}
+  .liste-tab th,.liste-tab td{border-bottom:1px solid var(--linie);padding:7px 8px;text-align:left;vertical-align:top}
+  .liste-tab tr.klick{cursor:pointer}.liste-tab tr.klick:hover{background:#f7f7f3}
+  textarea.feld{width:100%}
+  .kommentar{background:#fff;border:1px solid var(--linie);border-radius:12px;padding:10px 12px;margin:8px 0}
+  .check-l label{display:block;margin:3px 0}
+  @media print{.kopf,.nodruck{display:none!important}}
+</style>
+</head>
+<body>
+<header class="kopf nodruck">
+  <div class="wrap">
+    <a href="index.html" class="medaillon" style="text-decoration:none">فا</a>
+    <div><h1 id="kopfTitel">✍️ Schreibwerkstatt</h1><div class="unter">Texte schreiben · Korrektur · Farsi-Lernpfad</div></div>
+    <div class="rechts"><span class="kopf-btn" id="kopfInfo" style="background:transparent;border-color:transparent"></span><a class="kopf-btn" href="index.html">← Start</a></div>
+  </div>
+</header>
+<main class="wrap" style="padding-bottom:60px"><div id="app"><p class="muted" style="margin-top:30px">Lade …</p></div></main>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+<script src="assets/core.js"></script>
+<script src="assets/woerterbuch.js"></script>
+<script src="assets/detektiv/engine.js"></script>
+<script src="assets/schreiben/werkzeuge.js"></script>
+<script>
+(function () {
+  const F = window.FARSI, { $, $$, esc, toast } = F, S = window.SCHREIB_WERKZEUGE, WB = window.WOERTERBUCH, DE = window.DETEKTIV_ENGINE;
+  const qs = new URLSearchParams(location.search), istLK = !!qs.get("leitung");
+  const app = () => $("#app");
+  let AUF = [], ME = null, MEIN = {}, OFFEN = null, HINW = null, TAST = false, REF = null;
+  const sRef = p => F.ref("schreiben" + (p ? "/" + p : ""));
+  const auf = id => AUF.find(a => a.id === id);
+  const datum = ts => ts ? new Date(ts).toLocaleString("de-DE", { day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit" }) : "";
+  const tok = t => S.tokens(t).length;
+
+  /* Status einer Aufgabe: neu | entwurf | abgegeben | korrigiert */
+  function status(d) {
+    if (!d || !d.tn) return { s: "neu", txt: "noch nicht begonnen" };
+    const n = d.tn.version || 1, lk = (d.lk || {})[n];
+    if (lk && lk.frei) return { s: "korrigiert", txt: "✅ korrigiert", n };
+    if (d.tn.status === "abgegeben") return { s: "abgegeben", txt: "📨 abgegeben – wartet auf Korrektur", n };
+    return { s: "entwurf", txt: "✏️ Entwurf", n };
+  }
+  const textVon = (d, n) => (((d || {}).tn || {}).v || {})[n] ? d.tn.v[n].text : "";
+
+  async function grund() {
+    AUF = (await F.ladeJSON("assets/schreiben/aufgaben.json")).aufgaben;
+    WB.laden().catch(() => { });
+  }
+  function hinweiseFuer(a, text) {
+    return S.pruefe(text, { W: WB.daten && WB.daten.W, normFa: WB.normFa, E: DE, min: a.min, max: a.max,
+      extra: (a.woerter || []).map(w => w[0]).concat((a.satzanfaenge || []).flatMap(x => S.tokens(x[0]))), namen: [] });
+  }
+  function hinweisHtml(H, bearbeitbar) {
+    if (!H) return "";
+    if (!H.length) return `<div class="hinw ok">✅ Keine automatischen Hinweise. Das ersetzt keine Korrektur – aber die Form sieht ordentlich aus.</div>`;
+    return H.map((h, i) => `<div class="hinw ${h.art === "info" ? "info" : ""}"><b>${esc(h.titel)}</b><div class="klein">${esc(h.erkl)}</div>
+      ${h.fix && bearbeitbar ? `<button class="mini btn zwei klein" data-fix="${i}" style="margin-top:4px">✓ automatisch korrigieren</button>` : ""}
+      ${h.woerter ? `<div style="margin-top:4px">${h.woerter.map(u => `<span class="chipw fa" style="cursor:default">${esc(u.wort)}</span>${u.vorschlag && u.vorschlag.length ? `<span class="klein muted"> → meinst du ${u.vorschlag.map(v => bearbeitbar ? `<button class="chipw fa" data-ersetz="${esc(u.wort)}" data-durch="${esc(v)}">${esc(v)}</button>` : `<span class="fa">${esc(v)}</span>`).join(" ")}?</span>` : ""}`).join(" ")}</div>` : ""}</div>`).join("");
+  }
+  function diffHtml(alt, neu) {
+    return `<div class="diff">${S.diff(alt, neu).map(x => x.art === "gleich" ? esc(x.t) : `<span class="${x.art}">${esc(x.t)}</span>`).join(" ")}</div>`;
+  }
+
+  /* =====================================================================
+     TEILNEHMENDE
+     ===================================================================== */
+  async function startTN() {
+    if (!(await F.brauchtCode())) return;
+    const s = F.sitzung();
+    if (!s) { app().innerHTML = `<div class="karte" style="margin-top:20px">Die Schreibwerkstatt ist für Teilnehmende mit Zugangscode. Als Lehrkraft: <a href="?leitung=1">✍️ Texte korrigieren</a></div>`; return; }
+    ME = { code: s.code, name: s.name };
+    $("#kopfInfo").textContent = s.name;
+    try { await grund(); } catch (e) { return fehler(e); }
+    REF = sRef(ME.code);
+    REF.on("value", x => {
+      MEIN = x.val() || {};
+      /* beim Tippen nicht neu zeichnen – außer der Status hat sich geändert (abgegeben, Korrektur da …) */
+      const ed = $("#ed");
+      if (ed && document.activeElement === ed && OFFEN && GEZEIGT === statusSchluessel(OFFEN)) return;
+      zeichneTN();
+    }, e => fehler(e));
+  }
+  function fehler(e) { console.error(e); app().innerHTML = `<div class="karte" style="margin-top:20px"><b>Das hat nicht geklappt.</b><p class="klein muted">${esc(e && e.message || e)}</p><p class="klein">Lehrkraft: Bitte prüfen, ob die Regel „schreiben“ aus <code>firebase-regeln.json</code> veröffentlicht ist.</p></div>`; }
+  function zeichneTN() { OFFEN ? zeichneAufgabe() : zeichneListe(); }
+  function zeichneListe() {
+    app().innerHTML = `<div class="karte" style="margin-top:18px"><h2 style="margin-top:0">✍️ Schreibwerkstatt</h2>
+      <p style="margin-top:0">Hier schreibst du eigene Texte auf Persisch. Beim Schreiben bekommst du sofort Hinweise zu Rechtschreibung und Form. Wenn du fertig bist, gibst du den Text ab – deine Lehrkraft korrigiert ihn, und du siehst danach genau, was sich geändert hat.</p></div>
+      <div class="auf-gitter" style="margin-top:12px">${AUF.map(a => { const st = status(MEIN[a.id]);
+        return `<button class="auf" data-auf="${a.id}"><div class="ic">${a.icon}</div><h3 style="margin:4px 0">${esc(a.titel)}</h3><div class="fa" style="color:var(--lapis)">${esc(a.titelFa)}</div>
+          <div class="klein muted" style="margin:6px 0">${esc(a.niveau)} · ${esc(a.dauer)}</div><span class="status ${st.s}">${st.s === "neu" ? "✨ neu" : st.txt}${st.n > 1 ? ` · Version ${st.n}` : ""}</span></button>`; }).join("")}</div>`;
+    $$("[data-auf]").forEach(b => b.onclick = () => { OFFEN = b.dataset.auf; HINW = null; zeichneTN(); window.scrollTo(0, 0); });
+  }
+  let speicherUhr = null, GEZEIGT = null;
+  const statusSchluessel = aid => { const d = MEIN[aid], st = status(d); return aid + "|" + st.s + "|" + (st.n || 1); };
+  function zeichneAufgabe() {
+    const a = auf(OFFEN), d = MEIN[a.id], st = status(d), n = st.n || 1, lk = ((d || {}).lk || {})[n];
+    const lokal = (() => { try { return localStorage.getItem(`farsi_schreib_${ME.code}_${a.id}_${n}`); } catch (e) { return null; } })();
+    const text = textVon(d, n) || lokal || "", bearbeitbar = st.s === "neu" || st.s === "entwurf";
+    GEZEIGT = statusSchluessel(a.id).replace("|neu|", "|entwurf|");
+    let h = `<div class="nodruck" style="margin:14px 0 8px"><button class="btn zwei klein" id="zur">← alle Aufgaben</button></div>
+      <div class="karte"><div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap"><div style="font-size:2.4rem">${a.icon}</div><div><h2 style="margin:0">${esc(a.titel)} <span class="fa" style="color:var(--lapis)">${esc(a.titelFa)}</span></h2><div class="klein muted">${esc(a.niveau)} · ${esc(a.dauer)} · ${a.min}–${a.max} Wörter</div></div><span class="status ${st.s}" style="margin-left:auto">${st.s === "neu" ? "✨ neu" : st.txt}${n > 1 ? ` · Version ${n}` : ""}</span></div>
+      <div class="kommentar"><div class="fa-g" style="font-size:1.25rem">${esc(a.auftrag.fa)} <button class="mini btn zwei klein" data-say="${esc(a.auftrag.fa)}">🔊</button></div><div>${esc(a.auftrag.de)}</div></div>`;
+    if (st.s === "korrigiert") {
+      const alt = textVon(d, n);
+      h += `<div class="klein-h">✅ Korrektur deiner Lehrkraft · Version ${n}</div>
+        <p class="klein muted" style="margin-top:0"><span style="color:var(--granat);text-decoration:line-through">rot durchgestrichen</span> = so nicht · <span style="color:var(--gruen);font-weight:700">grün</span> = so ist es richtig</p>
+        ${diffHtml(alt, lk.korrigiert || alt)}
+        ${lk.gut ? `<div class="kommentar">👍 <b>Das ist gut:</b> ${esc(lk.gut)}</div>` : ""}${lk.achten ? `<div class="kommentar">🎯 <b>Darauf achten:</b> ${esc(lk.achten)}</div>` : ""}
+        <details style="margin-top:8px"><summary><b>Korrigierter Text</b></summary><div class="diff">${esc(lk.korrigiert || alt)} <button class="mini btn zwei klein" data-say="${esc(lk.korrigiert || alt)}">🔊</button></div></details>
+        <div class="btnreihe nodruck" style="margin-top:12px"><button class="btn" id="ueberarbeiten">✍️ Überarbeiten (Version ${n + 1})</button><button class="btn zwei" id="druck">🖨️ Drucken</button></div>
+        <p class="klein muted">Beim Überarbeiten schreibst du deinen Text noch einmal – diesmal richtig. Die Korrektur oben bleibt sichtbar.</p></div>`;
+      app().innerHTML = h; verdrahteAllg();
+      $("#ueberarbeiten").onclick = () => {
+        const nn = n + 1;
+        sRef(`${ME.code}/${a.id}/tn`).update({ version: nn, status: "entwurf", [`v/${nn}`]: { text: alt, ts: Date.now() } }).catch(fehler);
+      };
+      $("#druck").onclick = () => window.print();
+      return;
+    }
+    if (n > 1) { const vk = ((d || {}).lk || {})[n - 1], vt = textVon(d, n - 1); if (vk) h += `<details class="kommentar" open><summary><b>Korrektur von Version ${n - 1}</b></summary>${diffHtml(vt, vk.korrigiert || vt)}${vk.achten ? `<div class="klein" style="margin-top:6px">🎯 ${esc(vk.achten)}</div>` : ""}</details>`; }
+    h += `<div class="zwei-sp" style="margin-top:6px"><div>
+        <div class="klein-h">Das sollte drin sein</div><div class="check-l">${a.punkte.map((p, i) => `<label><input type="checkbox"> ${esc(p)}</label>`).join("")}</div></div><div>
+        <div class="klein-h">Satzanfänge (antippen = einfügen)</div><div>${a.satzanfaenge.map(([fa, de]) => `<button class="chipw fa" data-ein="${esc(fa)}" title="${esc(de)}" ${bearbeitbar ? "" : "disabled"}>${esc(fa)}</button>`).join("")}</div>
+        <div class="klein-h">Wörter</div><div>${a.woerter.map(([fa, tr, de]) => `<button class="chipw fa" data-ein="${esc(fa)}" title="${esc(tr + " – " + de)}" ${bearbeitbar ? "" : "disabled"}>${esc(fa)} <span class="klein" style="font-family:var(--ui)">${esc(de)}</span></button>`).join("")}</div></div></div>
+      <div class="klein-h">Dein Text</div>
+      <textarea class="editor" id="ed" placeholder="اینجا بنویس …" ${bearbeitbar ? "" : "readonly"}>${esc(text)}</textarea>
+      <div style="display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;align-items:center;margin-top:6px"><span class="klein muted" id="zahl">${tok(text)} Wörter · ${bearbeitbar ? "wird automatisch gespeichert" : "abgegeben"}</span>
+        ${bearbeitbar ? `<span class="btnreihe"><button class="btn zwei klein" id="tastKn">⌨️ ${TAST ? "Tastatur aus" : "persische Tastatur"}</button><button class="btn zwei klein" id="pruef">🔍 Text prüfen</button><button class="btn" id="abgeben">📨 Abgeben</button></span>` : `<button class="btn zwei klein" id="zurueckholen">↩︎ zurückholen und weiter bearbeiten</button>`}</div>
+      ${bearbeitbar && TAST ? tastaturHtml() : ""}
+      <div id="hinwBox">${hinweisHtml(HINW, bearbeitbar)}</div>
+      <details style="margin-top:12px"><summary><b>💡 Beispieltext</b> <span class="klein muted">– am besten erst nach deinem eigenen Versuch ansehen</span></summary><div class="kommentar"><div class="fa-g" style="font-size:1.15rem;line-height:2">${esc(a.beispiel.fa)} <button class="mini btn zwei klein" data-say="${esc(a.beispiel.fa)}">🔊</button></div><div class="klein muted">${esc(a.beispiel.de)}</div></div></details></div>`;
+    app().innerHTML = h; verdrahteAllg();
+    const ed = $("#ed");
+    if (bearbeitbar) {
+      const speichern = sofort => {
+        const t = ed.value; $("#zahl").textContent = `${tok(t)} Wörter · wird gespeichert …`;
+        try { localStorage.setItem(`farsi_schreib_${ME.code}_${a.id}_${n}`, t); } catch (e) { }
+        clearTimeout(speicherUhr);
+        speicherUhr = setTimeout(() => sRef(`${ME.code}/${a.id}/tn`).update({ version: n, status: "entwurf", [`v/${n}`]: { text: t, ts: Date.now() } })
+          .then(() => { const z = $("#zahl"); if (z) z.textContent = `${tok(t)} Wörter · ✓ gespeichert`; }).catch(e => { const z = $("#zahl"); if (z) z.textContent = `${tok(t)} Wörter · nur auf diesem Gerät gespeichert`; console.warn(e); }), sofort ? 0 : 1500);
+      };
+      ed.addEventListener("input", () => speichern());
+      ed.addEventListener("blur", () => { speichern(true); });
+      $("#tastKn").onclick = () => { TAST = !TAST; zeichneAufgabe(); const e = $("#ed"); if (e) { e.focus(); e.setSelectionRange(e.value.length, e.value.length); } };
+      $$("[data-taste]").forEach(b => b.onmousedown = e => { e.preventDefault(); einfuegen(b.dataset.taste); speichern(); });
+      $$("[data-ein]").forEach(b => b.onclick = () => { einfuegen((ed.value && !/\s$/.test(ed.value.slice(0, ed.selectionStart)) ? " " : "") + b.dataset.ein.replace(/…/g, "").trim() + " "); speichern(); });
+      $("#pruef").onclick = () => { HINW = hinweiseFuer(a, ed.value); $("#hinwBox").innerHTML = hinweisHtml(HINW, true); verdrahteHinw(a, speichern); if (!WB.daten) WB.laden().then(() => { HINW = hinweiseFuer(a, $("#ed").value); $("#hinwBox").innerHTML = hinweisHtml(HINW, true); verdrahteHinw(a, speichern); }); };
+      verdrahteHinw(a, speichern);
+      $("#abgeben").onclick = async () => {
+        const t = ed.value.trim(); if (tok(t) < 3) return toast("Schreib zuerst deinen Text 🙂");
+        const H = hinweiseFuer(a, t).filter(h => h.fix);
+        if (H.length && !confirm(`Es gibt noch ${H.length} automatische Hinweise. Trotzdem abgeben?`)) { HINW = hinweiseFuer(a, t); $("#hinwBox").innerHTML = hinweisHtml(HINW, true); verdrahteHinw(a, speichern); return; }
+        clearTimeout(speicherUhr);
+        try { await sRef(`${ME.code}/${a.id}/tn`).update({ version: n, status: "abgegeben", abgegeben: Date.now(), name: ME.name, [`v/${n}`]: { text: t, ts: Date.now() } }); toast("📨 Abgegeben! Deine Lehrkraft korrigiert den Text."); HINW = null; }
+        catch (e) { fehler(e); }
+      };
+    } else {
+      $("#zurueckholen").onclick = () => sRef(`${ME.code}/${a.id}/tn/status`).set("entwurf").catch(fehler);
+    }
+    function einfuegen(x) {
+      const p = ed.selectionStart ?? ed.value.length, q = ed.selectionEnd ?? p;
+      let ins = x.startsWith("ـ") ? x.slice(1) : x;
+      if (x === "⌫") { ed.value = ed.value.slice(0, Math.max(0, p - (p === q ? 1 : 0))) + ed.value.slice(q); ed.setSelectionRange(Math.max(0, p - (p === q ? 1 : 0)), Math.max(0, p - (p === q ? 1 : 0))); return; }
+      ed.value = ed.value.slice(0, p) + ins + ed.value.slice(q); ed.setSelectionRange(p + ins.length, p + ins.length);
+    }
+  }
+  function tastaturHtml() {
+    return `<div class="tast nodruck">${S.TASTATUR.map(z => `<div class="z">${z.map(k => `<button data-taste="${esc(k)}">${esc(k)}</button>`).join("")}</div>`).join("")}
+      <div class="z"><button class="breit" data-taste="⌫">⌫ löschen</button><button class="breit" data-taste="${S.ZWNJ}">Halbabstand ‌</button><button class="breit" data-taste=" " style="min-width:200px">Leerzeichen</button></div></div>`;
+  }
+  function verdrahteHinw(a, speichern) {
+    const ed = $("#ed");
+    $$("[data-fix]").forEach(b => b.onclick = () => { const h = HINW[+b.dataset.fix]; ed.value = h.fix(ed.value); speichern(true); HINW = hinweiseFuer(a, ed.value); $("#hinwBox").innerHTML = hinweisHtml(HINW, true); verdrahteHinw(a, speichern); });
+    $$("[data-ersetz]").forEach(b => b.onclick = () => { ed.value = ed.value.split(b.dataset.ersetz).join(b.dataset.durch); speichern(true); HINW = hinweiseFuer(a, ed.value); $("#hinwBox").innerHTML = hinweisHtml(HINW, true); verdrahteHinw(a, speichern); });
+  }
+  function verdrahteAllg() {
+    const z = $("#zur"); if (z) z.onclick = () => { OFFEN = null; HINW = null; zeichneTN(); };
+    $$("[data-say]").forEach(b => b.onclick = e => { e.stopPropagation(); F.sprich(b.dataset.say); });
+  }
+
+  /* =====================================================================
+     LEHRKRAFT: Texte korrigieren und freigeben
+     ===================================================================== */
+  let ALLE = {}, TN = {}, KL = {}, FILTER = { klasse: "alle", status: "abgegeben" }, SEL = null;
+  const FEHLER = ["Ezāfe (ـِ) fehlt", "Verbendung passt nicht zum Subjekt", "Verb ans Satzende", "„را“ nach dem bestimmten Objekt", "Halbabstand (‌) bei می‌ / ‌ها", "Rechtschreibung", "Wortwahl", "Zeitform", "Präposition"];
+  function startLK() {
+    firebase.auth().onAuthStateChanged(async u => {
+      if (!u) { app().innerHTML = `<div class="karte" style="margin-top:20px"><h2>Nur für Lehrkräfte</h2><p>Bitte zuerst in der <a href="konsole.html">Konsole</a> anmelden.</p></div>`; return; }
+      $("#kopfTitel").textContent = "✍️ Schreibwerkstatt – Korrektur";
+      try { await grund(); } catch (e) { return fehler(e); }
+      F.ref("tn").on("value", s => { TN = s.val() || {}; zeichneLK(); });
+      F.ref("klassen").on("value", s => { KL = s.val() || {}; zeichneLK(); });
+      sRef().on("value", s => { ALLE = s.val() || {}; if (document.activeElement && /^(korr|gut|achten)$/.test(document.activeElement.id)) return; zeichneLK(); }, e => fehler(e));
+    });
+  }
+  function eintraege() {
+    const out = [];
+    Object.entries(ALLE).forEach(([code, auf_]) => Object.entries(auf_ || {}).forEach(([aid, d]) => {
+      const t = TN[code] || {}, st = status(d), a = auf(aid);
+      if (!a) return;
+      if (FILTER.klasse !== "alle" && t.klasse !== FILTER.klasse) return;
+      const lkN = ((d.lk || {})[st.n] || {});
+      const s2 = st.s === "abgegeben" ? (lkN.korrigiert ? "entwurf-lk" : "abgegeben") : st.s;
+      if (FILTER.status !== "alle" && FILTER.status !== s2 && !(FILTER.status === "abgegeben" && s2 === "entwurf-lk")) return;
+      out.push({ code, aid, d, st, a, name: t.name || (d.tn && d.tn.name) || code, klasse: t.klasse, ts: (d.tn && (d.tn.abgegeben || 0)) || 0, s2 });
+    }));
+    return out.sort((x, y) => (y.s2 === "abgegeben") - (x.s2 === "abgegeben") || y.ts - x.ts);
+  }
+  function zeichneLK() {
+    if (!AUF.length) return;
+    if (SEL) return zeichneKorrektur();
+    const L = eintraege(), offen = eintraege.call(null).length;
+    app().innerHTML = `<div class="karte" style="margin-top:18px"><h2 style="margin-top:0">✍️ Texte korrigieren</h2>
+      <p class="klein muted" style="margin-top:0">Die TN sehen deine Korrektur erst, wenn du sie freigibst. 🤖 Automatische Korrektur-Entwürfe (KI) können später ergänzt werden – dann erscheint hier ein Vorschlag, den du nur noch prüfst.</p>
+      <div style="display:flex;gap:10px;flex-wrap:wrap">
+        <select class="feld" id="fKl" style="max-width:260px"><option value="alle">alle Klassen</option>${Object.entries(KL).map(([id, k]) => `<option value="${id}" ${FILTER.klasse === id ? "selected" : ""}>${esc(k.name || id)}</option>`).join("")}</select>
+        <select class="feld" id="fSt" style="max-width:260px">${[["abgegeben", "📨 zu korrigieren"], ["korrigiert", "✅ freigegeben"], ["entwurf", "✏️ in Arbeit (TN)"], ["alle", "alle"]].map(([v, t]) => `<option value="${v}" ${FILTER.status === v ? "selected" : ""}>${t}</option>`).join("")}</select></div>
+      ${L.length ? `<table class="liste-tab" style="margin-top:10px"><tr><th>Person</th><th>Aufgabe</th><th>Status</th><th>Abgegeben</th></tr>${L.map((e, i) => `<tr class="klick" data-sel="${i}"><td><b>${esc(e.name)}</b><div class="klein muted">${esc((KL[e.klasse] || {}).name || "")}</div></td><td>${e.a.icon} ${esc(e.a.titel)}${e.st.n > 1 ? ` · V${e.st.n}` : ""}</td><td><span class="status ${e.st.s}">${e.s2 === "entwurf-lk" ? "📝 Korrektur begonnen" : e.st.txt}</span></td><td class="klein">${datum(e.ts)}</td></tr>`).join("")}</table>` : `<p class="muted" style="margin-top:12px">Keine Texte in dieser Auswahl.</p>`}</div>`;
+    $("#fKl").onchange = e => { FILTER.klasse = e.target.value; zeichneLK(); };
+    $("#fSt").onchange = e => { FILTER.status = e.target.value; zeichneLK(); };
+    $$("[data-sel]").forEach(r => r.onclick = () => { const e = L[+r.dataset.sel]; SEL = { code: e.code, aid: e.aid }; zeichneLK(); window.scrollTo(0, 0); });
+  }
+  function zeichneKorrektur() {
+    const d = (ALLE[SEL.code] || {})[SEL.aid]; if (!d) { SEL = null; return zeichneLK(); }
+    const a = auf(SEL.aid), st = status(d), n = st.n, text = textVon(d, n), lk = (d.lk || {})[n] || {}, name = (TN[SEL.code] || {}).name || SEL.code;
+    const korr = lk.korrigiert != null ? lk.korrigiert : text, H = hinweiseFuer(a, text);
+    app().innerHTML = `<div class="nodruck" style="margin:14px 0 8px"><button class="btn zwei klein" id="zurL">← Liste</button></div>
+      <div class="karte"><div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap"><h2 style="margin:0">${esc(name)} · ${a.icon} ${esc(a.titel)}</h2><span class="status ${st.s}">${st.txt}</span><span class="klein muted">Version ${n} · ${S.tokens(text).length} Wörter · ${datum(d.tn.abgegeben)}</span></div>
+      <div class="klein muted" style="margin-top:4px">Auftrag: ${esc(a.auftrag.de)} · sollte enthalten: ${esc(a.punkte.join(", "))}</div>
+      ${n > 1 && (d.lk || {})[n - 1] ? `<details class="kommentar"><summary>Frühere Version ${n - 1} mit Korrektur</summary>${diffHtml(textVon(d, n - 1), d.lk[n - 1].korrigiert || "")}</details>` : ""}
+      <div class="zwei-sp" style="margin-top:10px"><div><div class="klein-h" style="margin-top:0">Text der/des TN</div><div class="diff">${esc(text)}</div>
+        <div class="klein-h">🔍 Automatische Hinweise</div>${hinweisHtml(H, false)}</div>
+        <div><div class="klein-h" style="margin-top:0">Korrigierter Text (direkt im Text verbessern)</div>
+        <textarea class="editor" id="korr" style="min-height:160px">${esc(korr)}</textarea>
+        <div class="btnreihe" style="margin-top:6px"><button class="btn zwei klein" id="autoFix">✓ automatische Hinweise übernehmen</button><button class="btn zwei klein" id="kiBtn" disabled title="Noch nicht eingerichtet – siehe README">🤖 KI-Entwurf</button></div></div></div>
+      <div class="klein-h">So sieht die/der TN die Korrektur</div><div id="vorschau">${diffHtml(text, korr)}</div>
+      <div class="zwei-sp" style="margin-top:10px"><div><div class="klein-h">👍 Das ist gut</div><textarea class="feld" id="gut" rows="3" placeholder="z. B. Sehr schöne Sätze mit „haben“!">${esc(lk.gut || "")}</textarea></div>
+        <div><div class="klein-h">🎯 Darauf achten</div><textarea class="feld" id="achten" rows="3" placeholder="z. B. Ezāfe: اِسمِ مَن">${esc(lk.achten || "")}</textarea>
+        <div>${FEHLER.map(f => `<button class="chipw" data-fehler="${esc(f)}" style="font-size:.8rem">+ ${esc(f)}</button>`).join("")}</div></div></div>
+      <div class="btnreihe" style="margin-top:14px"><button class="btn zwei" id="spe">💾 Speichern (noch nicht sichtbar)</button><button class="btn" id="frei">${lk.frei ? "✅ Freigegeben – Änderungen speichern" : "✅ Freigeben"}</button>${lk.frei ? `<button class="btn zwei klein" id="zurueckziehen">Freigabe zurückziehen</button>` : ""}</div>
+      <p class="klein muted">${lk.frei ? `Freigegeben am ${datum(lk.frei)}.` : lk.ts ? `Zuletzt gespeichert ${datum(lk.ts)}.` : ""}</p></div>`;
+    const korrEl = $("#korr");
+    korrEl.oninput = () => { $("#vorschau").innerHTML = diffHtml(text, korrEl.value); };
+    $("#zurL").onclick = () => { SEL = null; zeichneLK(); };
+    $("#autoFix").onclick = () => { let t = korrEl.value; S.pruefe(t).filter(h => h.fix).forEach(h => { t = h.fix(t); }); korrEl.value = t; korrEl.oninput(); };
+    $$("[data-fehler]").forEach(b => b.onclick = () => { const x = $("#achten"); x.value = (x.value ? x.value.replace(/\s*$/, "") + "\n" : "") + "• " + b.dataset.fehler + ": "; x.focus(); });
+    const daten = frei => ({ korrigiert: korrEl.value.trim(), gut: $("#gut").value.trim(), achten: $("#achten").value.trim(), ts: Date.now(), frei: frei ? (lk.frei || Date.now()) : null });
+    $("#spe").onclick = () => sRef(`${SEL.code}/${SEL.aid}/lk/${n}`).set(daten(!!lk.frei)).then(() => toast("💾 Gespeichert")).catch(e => toast("Fehler: " + e.message));
+    $("#frei").onclick = () => sRef(`${SEL.code}/${SEL.aid}/lk/${n}`).set(daten(true)).then(() => { toast("✅ Freigegeben – die/der TN sieht die Korrektur jetzt."); SEL = null; zeichneLK(); }).catch(e => toast("Fehler: " + e.message));
+    const zz = $("#zurueckziehen"); if (zz) zz.onclick = () => sRef(`${SEL.code}/${SEL.aid}/lk/${n}/frei`).set(null).then(() => toast("Freigabe zurückgezogen"));
+  }
+
+  window.SCHREIB_APP = { get AUF() { return AUF; } };
+  F.initFB();
+  istLK ? startLK() : startTN();
+})();
+</script>
+</body>
+</html>

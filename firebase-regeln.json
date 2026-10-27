@@ -65,6 +65,18 @@
             }
           }
         }
+      },
+      "schreiben": {
+        ".read": "auth != null",
+        ".write": "auth != null",
+        "$code": {
+          ".read": true,
+          "$aufgabe": {
+            "tn": {
+              ".write": "auth != null || root.child('farsi/tn/' + $code).exists()"
+            }
+          }
+        }
       }
     }
   }

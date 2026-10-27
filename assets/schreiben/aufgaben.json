@@ -1,0 +1,63 @@
+{
+  "hinweis": "Schreibaufgaben der Schreibwerkstatt. Neue Aufgabe = neuer Eintrag in „aufgaben“ (id eindeutig, nie ändern – daran hängen die Texte der TN).",
+  "aufgaben": [
+    {
+      "id": "vorstellen",
+      "titel": "Stell dich vor",
+      "titelFa": "خودَت را مُعَرِّفی کُن",
+      "icon": "👋",
+      "niveau": "Anfänger · ab Lektion 3 (sein, haben)",
+      "dauer": "ca. 20 Minuten",
+      "min": 30, "max": 90,
+      "auftrag": {
+        "de": "Schreib einen kurzen Text über dich (5–8 Sätze). Benutze „sein“ (هَستَم، اَست …) und „haben“ (دارَم، دارَد …).",
+        "fa": "سَلام! لُطفاً خودَت را مُعَرِّفی کُن."
+      },
+      "punkte": ["Begrüßung", "dein Name", "woher du kommst", "Beruf oder Studium", "deine Familie", "etwas, das du hast"],
+      "satzanfaenge": [
+        ["سَلام! اِسمِ مَن … اَست.", "Hallo! Mein Name ist …"],
+        ["مَن اَهلِ … هَستَم.", "Ich komme aus …"],
+        ["مَن … هَستَم.", "Ich bin … (Beruf)"],
+        ["مَن یک … دارَم.", "Ich habe ein(e/n) …"],
+        ["… مَن … اَست.", "Mein(e) … ist …"]
+      ],
+      "woerter": [
+        ["اِسم", "esm", "Name"], ["اَهلِ", "ahl-e", "aus (Herkunft)"], ["دانِشجو", "dāneschdschū", "Student/in"], ["مُعَلِّم", "moʿallem", "Lehrer/in"],
+        ["خانِواده", "chānevāde", "Familie"], ["بَرادَر", "barādar", "Bruder"], ["خواهَر", "chāhar", "Schwester"], ["گُربه", "gorbe", "Katze"]
+      ],
+      "beispiel": {
+        "fa": "سَلام! اِسمِ مَن سارا اَست. مَن اَهلِ آلمان هَستَم. مَن دانِشجو هَستَم. یک بَرادَر و یک خواهَر دارَم. بَرادَرَم مُهَندِس اَست. مَن یک گُربه‌یِ کوچَک دارَم.",
+        "de": "Hallo! Mein Name ist Sara. Ich komme aus Deutschland. Ich bin Studentin. Ich habe einen Bruder und eine Schwester. Mein Bruder ist Ingenieur. Ich habe eine kleine Katze."
+      }
+    },
+    {
+      "id": "wochenende",
+      "titel": "Mein Wochenende",
+      "titelFa": "آخَرِ هَفته‌یِ مَن",
+      "icon": "📅",
+      "niveau": "Persisch I · ab Lektion 5 (Präteritum)",
+      "dauer": "ca. 30 Minuten",
+      "min": 50, "max": 130,
+      "auftrag": {
+        "de": "Was hast du am letzten Wochenende gemacht? Schreib 6–10 Sätze im Präteritum (رَفتَم، دیدَم، خوردیم …).",
+        "fa": "آخَرِ هَفته چه کار کَردی؟"
+      },
+      "punkte": ["wann (Samstag / Sonntag, morgens / abends)", "wo du warst", "mit wem", "was du gemacht hast", "mindestens 5 Verben im Präteritum", "wie es war"],
+      "satzanfaenge": [
+        ["شَنبه صُبح …", "Am Samstagmorgen …"],
+        ["بَعد …", "Danach …"],
+        ["با دوستَم …", "Mit meinem Freund / meiner Freundin …"],
+        ["عَصر …", "Am Nachmittag / Abend …"],
+        ["آخَرِ هَفته‌یِ خوبی بود!", "Es war ein schönes Wochenende!"]
+      ],
+      "woerter": [
+        ["شَنبه", "schanbe", "Samstag"], ["یِکشَنبه", "yekschanbe", "Sonntag"], ["بیدار شُدَن", "bīdār schodan", "aufwachen"], ["رَفتَن", "raftan", "gehen"],
+        ["دیدَن", "dīdan", "sehen"], ["خوردَن", "chordan", "essen, trinken"], ["زَنگ زَدَن", "zang zadan", "anrufen"], ["خوش گُذَشت", "chosch gozascht", "es war schön"]
+      ],
+      "beispiel": {
+        "fa": "شَنبه صُبح دیر بیدار شُدَم. بَعد با دوستَم به کافه رَفتیم و قَهوه خوردیم. عَصر به خانه آمَدَم و یک فیلم دیدَم. یِکشَنبه به مادَرَم زَنگ زَدَم. آخَرِ هَفته‌یِ خوبی بود!",
+        "de": "Am Samstagmorgen bin ich spät aufgewacht. Danach bin ich mit meiner Freundin ins Café gegangen, und wir haben Kaffee getrunken. Am Nachmittag bin ich nach Hause gekommen und habe einen Film gesehen. Am Sonntag habe ich meine Mutter angerufen. Es war ein schönes Wochenende!"
+      }
+    }
+  ]
+}
