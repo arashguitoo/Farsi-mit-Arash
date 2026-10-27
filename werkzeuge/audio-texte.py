@@ -3,7 +3,7 @@
 Schlüssel/Hash werden in assets/core.js genauso gebildet (FARSI.audioPfad)."""
 import json, re, os, glob, subprocess
 R = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-FA = re.compile('[؀-ۿ]')
+FA = re.compile('[\u0621-\u063A\u0641-\u064A\u067E\u0686\u0698\u06A9\u06AF\u06CC\u06F0-\u06F9]')   # mindestens ein persischer Buchstabe oder eine persische Ziffer
 # Stimmen: Microsoft-Stimme + Tempo + Tonhöhe → sechs unterscheidbare Sprecher/innen
 STIMMEN = {
   "W1": ("fa-IR-DilaraNeural", "-8%", "+0Hz"),    # Frau, mittel
@@ -104,6 +104,12 @@ def sammeln():
     # 2b) Zusatzwörter der Lese-Prüfung
     for g in json.load(open(R + '/assets/lesen/grammatik.json'))['gruppen']:
         for w in g['woerter']: add(w['fa'])
+    # 2c) Schreibwerkstatt: alle persischen Texte der Aufgaben (Auftrag, Satzanfänge, Wörter, Beispiel)
+    def alle_fa(o):
+        if isinstance(o, dict): [alle_fa(v) for v in o.values()]
+        elif isinstance(o, list): [alle_fa(v) for v in o]
+        elif isinstance(o, str) and FA.search(o): add(o)
+    for f in sorted(glob.glob(R + '/assets/schreiben/*.json')): alle_fa(json.load(open(f)))
     # 3) Wörterbuch
     for w in json.load(open(R + '/assets/woerterbuch/suche.json'))['w']: add(w[0])
     # 4) Live-Aktivitäten (Chats, Gespräche, Quiz, Buzzer, Truhe …): persische Texte in JS-Daten
