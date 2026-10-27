@@ -90,13 +90,20 @@
     WB.laden().catch(() => { });
   }
   function hinweiseFuer(a, text) {
-    return S.pruefe(text, { W: WB.daten && WB.daten.W, normFa: WB.normFa, E: DE, min: a.min, max: a.max,
-      extra: (a.woerter || []).map(w => w[0]).concat((a.satzanfaenge || []).flatMap(x => S.tokens(x[0]))), namen: [] });
+    const d = ME && MEIN[a.id], n = d && d.tn ? d.tn.version || 1 : 1, vk = n > 1 && ((d.lk || {})[n - 1] || {}).korrigiert;
+    const H = S.pruefe(text, { W: WB.daten && WB.daten.W, normFa: WB.normFa, E: DE, min: a.min, max: a.max,
+      extra: (a.woerter || []).map(w => w[0]).concat((a.satzanfaenge || []).flatMap(x => S.tokens(x[0])), vk ? S.tokens(vk) : []), namen: [] });
+    if (vk && S.tokens(text).length >= 3) {
+      const z = S.aenderungen(S.diff(text, vk));
+      H.unshift(z === 0 ? { art: "ok", titel: "✅ Genau wie die Korrektur", erkl: "Super – dein neuer Text stimmt mit der korrigierten Fassung überein." }
+        : { art: "info", titel: `Vergleich mit der Korrektur: noch ${z} Unterschied${z === 1 ? "" : "e"}`, erkl: "Schau dir die Korrektur oben noch einmal an. (Wenn du absichtlich etwas anders oder Neues geschrieben hast, ist das natürlich auch in Ordnung.)" });
+    }
+    return H;
   }
   function hinweisHtml(H, bearbeitbar) {
     if (!H) return "";
     if (!H.length) return `<div class="hinw ok">✅ Keine automatischen Hinweise. Das ersetzt keine Korrektur – aber die Form sieht ordentlich aus.</div>`;
-    return H.map((h, i) => `<div class="hinw ${h.art === "info" ? "info" : ""}"><b>${esc(h.titel)}</b><div class="klein">${esc(h.erkl)}</div>
+    return H.map((h, i) => `<div class="hinw ${h.art === "info" ? "info" : h.art === "ok" ? "ok" : ""}"><b>${esc(h.titel)}</b><div class="klein">${esc(h.erkl)}</div>
       ${h.fix && bearbeitbar ? `<button class="mini btn zwei klein" data-fix="${i}" style="margin-top:4px">✓ automatisch korrigieren</button>` : ""}
       ${h.woerter ? `<div style="margin-top:4px">${h.woerter.map(u => `<span class="chipw fa" style="cursor:default">${esc(u.wort)}</span>${u.vorschlag && u.vorschlag.length ? `<span class="klein muted"> → meinst du ${u.vorschlag.map(v => bearbeitbar ? `<button class="chipw fa" data-ersetz="${esc(u.wort)}" data-durch="${esc(v)}">${esc(v)}</button>` : `<span class="fa">${esc(v)}</span>`).join(" ")}?</span>` : ""}`).join(" ")}</div>` : ""}</div>`).join("");
   }
@@ -151,11 +158,11 @@
         ${lk.gut ? `<div class="kommentar">👍 <b>Das ist gut:</b> ${esc(lk.gut)}</div>` : ""}${lk.achten ? `<div class="kommentar">🎯 <b>Darauf achten:</b> ${esc(lk.achten)}</div>` : ""}
         <details style="margin-top:8px"><summary><b>Korrigierter Text</b></summary><div class="diff">${esc(lk.korrigiert || alt)} <button class="mini btn zwei klein" data-say="${esc(lk.korrigiert || alt)}">🔊</button></div></details>
         <div class="btnreihe nodruck" style="margin-top:12px"><button class="btn" id="ueberarbeiten">✍️ Überarbeiten (Version ${n + 1})</button><button class="btn zwei" id="druck">🖨️ Drucken</button></div>
-        <p class="klein muted">Beim Überarbeiten schreibst du deinen Text noch einmal – diesmal richtig. Die Korrektur oben bleibt sichtbar.</p></div>`;
+        <p class="klein muted">Beim Überarbeiten schreibst du deinen Text selbst noch einmal neu – diesmal richtig. Die Korrektur bleibt dabei sichtbar.</p></div>`;
       app().innerHTML = h; verdrahteAllg();
       $("#ueberarbeiten").onclick = () => {
         const nn = n + 1;
-        sRef(`${ME.code}/${a.id}/tn`).update({ version: nn, status: "entwurf", [`v/${nn}`]: { text: alt, ts: Date.now() } }).catch(fehler);
+        HINW = null; sRef(`${ME.code}/${a.id}/tn`).update({ version: nn, status: "entwurf", [`v/${nn}`]: { text: "", ts: Date.now() } }).catch(fehler);
       };
       $("#druck").onclick = () => window.print();
       return;
@@ -165,7 +172,7 @@
         <div class="klein-h">Das sollte drin sein</div><div class="check-l">${a.punkte.map((p, i) => `<label><input type="checkbox"> ${esc(p)}</label>`).join("")}</div></div><div>
         <div class="klein-h">Satzanfänge (antippen = einfügen)</div><div>${a.satzanfaenge.map(([fa, de]) => `<button class="chipw fa" data-ein="${esc(fa)}" title="${esc(de)}" ${bearbeitbar ? "" : "disabled"}>${esc(fa)}</button>`).join("")}</div>
         <div class="klein-h">Wörter</div><div>${a.woerter.map(([fa, tr, de]) => `<button class="chipw fa" data-ein="${esc(fa)}" title="${esc(tr + " – " + de)}" ${bearbeitbar ? "" : "disabled"}>${esc(fa)} <span class="klein" style="font-family:var(--ui)">${esc(de)}</span></button>`).join("")}</div></div></div>
-      <div class="klein-h">Dein Text</div>
+      <div class="klein-h">${n > 1 ? `Dein Text – Version ${n}: schreib ihn selbst neu` : "Dein Text"}</div>
       <textarea class="editor" id="ed" placeholder="اینجا بنویس …" ${bearbeitbar ? "" : "readonly"}>${esc(text)}</textarea>
       <div style="display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;align-items:center;margin-top:6px"><span class="klein muted" id="zahl">${tok(text)} Wörter · ${bearbeitbar ? "wird automatisch gespeichert" : "abgegeben"}</span>
         ${bearbeitbar ? `<span class="btnreihe"><button class="btn zwei klein" id="tastKn">⌨️ ${TAST ? "Tastatur aus" : "persische Tastatur"}</button><button class="btn zwei klein" id="pruef">🔍 Text prüfen</button><button class="btn" id="abgeben">📨 Abgeben</button></span>` : `<button class="btn zwei klein" id="zurueckholen">↩︎ zurückholen und weiter bearbeiten</button>`}</div>
