@@ -110,6 +110,9 @@ def sammeln():
         elif isinstance(o, list): [alle_fa(v) for v in o]
         elif isinstance(o, str) and FA.search(o): add(o)
     for f in sorted(glob.glob(R + '/assets/schreiben/*.json')): alle_fa(json.load(open(f)))
+    # 2d) Tischspiel „sein“: nur die richtigen Sätze / Wörter
+    if os.path.exists(R + '/assets/sein/karten.json'):
+        for k in json.load(open(R + '/assets/sein/karten.json'))['karten']: add(k['s'])
     # 3) Wörterbuch
     for w in json.load(open(R + '/assets/woerterbuch/suche.json'))['w']: add(w[0])
     # 4) Live-Aktivitäten (Chats, Gespräche, Quiz, Buzzer, Truhe …): persische Texte in JS-Daten

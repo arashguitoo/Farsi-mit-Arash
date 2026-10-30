@@ -47,7 +47,8 @@
     quiz: { titel: "Live-Quiz", icon: "🧭", url: (c, g) => `live-quiz.html?code=${c}${g && g.quiz && g.quiz !== "sprache-verstehen" ? "&quiz=" + encodeURIComponent(g.quiz) : ""}` },
     vokabel: { titel: "Vokabelspiel", icon: "🎲", url: c => `live-vokabel.html?code=${c}` },
     buzzer: { titel: "Blitz-Übersetzung", icon: "⚡", url: c => `live-buzzer.html?code=${c}` },
-    detektiv: { titel: "Detektiv-Fall", icon: "🕵️", url: c => `live-detektiv.html?code=${c}` }
+    detektiv: { titel: "Detektiv-Fall", icon: "🕵️", url: c => `live-detektiv.html?code=${c}` },
+    sein: { titel: "Tischspiel: sein", icon: "🎴", url: c => `live-sein.html?code=${c}` }
   };
   const liveRef = (s, c) => window.FARSI.ref(`live/${s}/${c}`);
   /* Spielcode in allen Aktivitäten suchen → { spiel, titel, icon, url } oder null (neueste/laufende Runde gewinnt) */

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tischspiel: sein · Farsi-Lernpfad</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Vazirmatn:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css">
+<style>
+  .wrap{max-width:980px}
+  .lv-code{font-size:3rem;font-weight:800;letter-spacing:.2em;color:var(--lapis);line-height:1.1}
+  .klein-h{font-size:.78rem;font-weight:800;color:var(--tinte2);text-transform:uppercase;letter-spacing:.04em;margin:14px 0 6px}
+  .seg{display:inline-flex;border:1px solid var(--linie);border-radius:10px;overflow:hidden;flex-wrap:wrap}
+  .seg button{border:0;background:#fff;padding:7px 12px;font:inherit;font-size:.88rem;font-weight:700;cursor:pointer}
+  .seg button.an{background:var(--lapis);color:#fff}
+  .typen label{display:block;margin:4px 0}
+  .tische{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+  .tisch{background:#fff;border:1px solid var(--linie);border-radius:16px;padding:12px}
+  .tisch h3{margin:0 0 6px}
+  .tisch .p{display:flex;justify-content:space-between;border-bottom:1px solid var(--linie);padding:3px 0}
+  .tisch .p:last-child{border-bottom:0}
+  .tisch-wahl{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+  .tisch-wahl button{width:64px;height:64px;border-radius:16px;border:2px solid var(--linie);background:#fff;font-size:1.4rem;font-weight:800;cursor:pointer}
+  .tisch-wahl button.an{border-color:var(--lapis);background:var(--lapis);color:#fff}
+  .karte-sp{background:#fff;border:2px solid var(--lapis);border-radius:20px;padding:16px;margin-top:10px;text-align:center}
+  .k-frage{font-weight:800;color:var(--tinte2);margin-bottom:8px}
+  .k-zeig{display:flex;gap:10px;justify-content:center;align-items:stretch;flex-wrap:wrap;direction:rtl}
+  .baustein{border:1.5px solid var(--linie);border-radius:14px;padding:8px 14px;min-width:110px;background:#fbfaf6}
+  .baustein .f{font-family:var(--fa);font-size:2rem;font-weight:700;line-height:1.5}
+  .baustein .e{font-size:1.6rem}
+  .baustein .d{font-size:.85rem;color:var(--tinte2);direction:ltr}
+  .plus{align-self:center;font-size:1.6rem;color:var(--tinte2)}
+  .gross{font-family:var(--fa);font-size:clamp(2.4rem,9vw,3.6rem);font-weight:700;line-height:1.5}
+  .opts{display:grid;gap:8px;margin-top:14px}
+  .opt{border:2px solid var(--linie);background:#fff;border-radius:14px;padding:10px 14px;font:inherit;cursor:pointer;text-align:center}
+  .opt .f{font-family:var(--fa);font-size:1.45rem;line-height:1.6}
+  .opt .t{font-size:.85rem;color:var(--tinte2)}
+  .opt.gewaehlt{border-color:var(--lapis);background:var(--lapis-hell)}
+  .opt.richtig{border-color:var(--gruen);background:var(--gruen-hell)}
+  .opt.falsch{border-color:var(--granat);background:var(--granat-hell)}
+  .opt .wer{font-size:.78rem;font-weight:700;color:var(--tinte2)}
+  .meldung{background:var(--safran-hell);border:1px solid #e6d3ad;border-radius:12px;padding:10px 14px;margin:10px 0}
+  .vorlesen{background:var(--lapis-hell);border-radius:14px;padding:12px;margin-top:12px}
+  .pkt{display:flex;gap:6px;flex-wrap:wrap;justify-content:center;margin:6px 0}
+  .pkt span{background:#fff;border:1px solid var(--linie);border-radius:999px;padding:3px 10px;font-size:.82rem;font-weight:700}
+  .pkt span.dran{border-color:var(--safran);box-shadow:0 0 0 2px var(--safran-hell)}
+  .rang{font-size:1.2rem}
+</style>
+</head>
+<body>
+<header class="kopf">
+  <div class="wrap">
+    <a href="aktivitaeten.html" class="medaillon" style="text-decoration:none">فا</a>
+    <div><h1>🎴 Tischspiel: sein</h1><div class="unter">Lektion 1 + „sein“ · Aktivität · Farsi-Lernpfad</div></div>
+    <div class="rechts"><span class="kopf-btn" id="kopfInfo" style="background:transparent;border-color:transparent"></span><a class="kopf-btn" href="aktivitaeten.html">← Aktivitäten</a></div>
+  </div>
+</header>
+<main class="wrap" style="padding-bottom:60px"><div id="app"><p class="muted" style="margin-top:30px">Lade …</p></div></main>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+<script src="assets/core.js"></script>
+<script src="assets/live-tools.js"></script>
+<script>
+/* ===================== Logik (rein) ===================== */
+window.SEIN_ENGINE = (function () {
+  const TYPEN = { form: ["🟰", "Welcher Satz passt?", "sein: هَستَم، هَستی …"], nein: ["✗", "Welcher Satz passt? (verneint)", "nicht sein: نیستَم …"], kurz: ["✂️", "Welche Kurzform passt?", "Kurzformen: خوبَم …"], wer: ["🔎", "Wer ist gemeint?", "Person an der Endung erkennen"], lesen: ["🔤", "Was heißt das?", "Lektion 1: Wörter lesen"] };
+  const hash = s => { let h = 2166136261; for (const c of String(s)) { h ^= c.charCodeAt(0); h = Math.imul(h, 16777619); } return h >>> 0; };
+  function rng(seed) { let a = hash(seed); return () => { a |= 0; a = a + 0x6D2B79F5 | 0; let t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+  function mischen(a, r) { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(r() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
+  /* Kartenstapel eines Tisches: gemischt aus den gewählten Typen, abwechselnd */
+  function stapel(K, typen, seed) {
+    const r = rng(seed), proTyp = typen.map(t => mischen(K.filter(k => k.typ === t), r)), out = [];
+    let i = 0; while (out.length < 400 && proTyp.some(l => l.length)) { const l = proTyp[i++ % proTyp.length]; if (l.length) out.push(l.shift()); }
+    return out;
+  }
+  const arr = v => Array.isArray(v) ? v : Object.values(v || {});
+  const reihe = (sp, tisch) => Object.entries(sp || {}).filter(([, s]) => s && s.name && (tisch == null || String(s.tisch) === String(tisch))).sort(([, a], [, b]) => (a.ts || 0) - (b.ts || 0)).map(([id]) => id);
+  /* Auflösen: Punkte für alle richtigen Antworten */
+  function aufloesen(t, karte) {
+    t.aufl = true; t.punkte = t.punkte || {};
+    Object.entries(t.antw || {}).forEach(([pid, i]) => { if (+i === karte.r) t.punkte[pid] = (t.punkte[pid] || 0) + 1; });
+    return t;
+  }
+  function weiter(t, lob) { if (lob && t.vorleser) t.punkte[t.vorleser] = (t.punkte[t.vorleser] || 0) + 1; t.zug = (t.zug || 0) + 1; t.aufl = false; t.antw = null; t.lob = null; return t; }
+  return { TYPEN, stapel, reihe, aufloesen, weiter, arr, hash };
+})();
+
+/* ===================== Seite ===================== */
+(function () {
+  const F = window.FARSI, { $, $$, esc, toast } = F, E = window.SEIN_ENGINE, LT = window.LIVE_TOOLS;
+  const qs = new URLSearchParams(location.search);
+  const MODUS = qs.get("solo") ? "solo" : qs.get("leitung") ? "leitung" : "spieler";
+  let CODE = (qs.get("code") || "").replace(/\D/g, "") || null;
+  let G = null, REF = null, ME = null, D = null, ST = {};
+  const app = () => $("#app");
+  const gRef = c => F.ref(`live/sein/${c}`);
+  const PRON = () => D.pronomen;
+  const ohneV = t => String(t).replace(/[ً-ْ]/g, "");
+  const vk = t => G && G.vokale === false ? ohneV(t) : t;
+  const hilfe = () => !(G && G.hilfe === false);
+  const SP = () => (G && G.spieler) || {};
+  const name = id => (SP()[id] || {}).name || "?";
+  const typen = () => String((G && G.typen) || "form|nein|wer|lesen").split("|").filter(Boolean);
+  function deck(tisch) { const k = tisch + "|" + G.seed + "|" + G.typen; if (!ST[k]) ST[k] = E.stapel(D.karten, typen(), G.seed + ":" + tisch); return ST[k]; }
+  const T = tisch => ((G && G.teams) || {})["t" + tisch] || { zug: 0 };
+  const karteVon = tisch => { const d = deck(tisch); return d[(T(tisch).zug || 0) % d.length]; };
+
+  async function daten() { if (!D) D = await F.ladeJSON("assets/sein/karten.json"); return D; }
+  function hoere(c) {
+    if (REF) REF.off(); REF = gRef(c);
+    REF.on("value", s => { G = s.val(); if (MODUS !== "leitung") LT.pruefeNeuLaden(G); if (LT.tipptGerade(zeichne)) return; zeichne(); }, e => fehler(e, true));
+  }
+  function fehler(e, hart) {
+    console.error(e);
+    if (!hart && G) { toast("Das hat nicht geklappt – bitte noch einmal tippen."); return; }
+    app().innerHTML = `<div class="karte" style="margin-top:20px"><b>Das hat nicht geklappt.</b><p class="klein muted">${esc(e && e.message || e)}</p></div>`;
+  }
+  const schreib = (p, w) => (MODUS === "solo" ? Promise.resolve(soloSet(p, w)) : gRef(CODE).child(p).set(w)).catch(e => fehler(e));
+  const trans = (p, fn) => MODUS === "solo" ? Promise.resolve(soloSet(p, fn(soloGet(p)))) : gRef(CODE).child(p).transaction(fn).catch(e => fehler(e));
+  function soloGet(p) { return p.split("/").reduce((o, k) => o == null ? undefined : o[k], G); }
+  function soloSet(p, w) { const ks = p.split("/"); let o = G; ks.slice(0, -1).forEach(k => { o[k] = o[k] || {}; o = o[k]; }); if (w == null) delete o[ks[ks.length - 1]]; else o[ks[ks.length - 1]] = JSON.parse(JSON.stringify(w)); zeichne(); }
+
+  /* ---------- Karte zeichnen (für Spieler und Leinwand) ---------- */
+  function karteHtml(k, tisch, nurAnsehen) {
+    const t = T(tisch), antw = t.antw || {}, meine = ME && antw[ME.id], aufl = !!t.aufl, P = PRON();
+    const [ic, frage] = E.TYPEN[k.typ];
+    let zeig;
+    if (k.typ === "lesen") zeig = `<div class="gross">${esc(vk(k.wort))}</div>${hilfe() ? `<div class="klein muted">${esc(k.tr)}</div>` : ""}${aufl && k.emo ? `<div style="font-size:2rem">${k.emo}</div>` : ""}`;
+    else if (k.typ === "wer") zeig = `<div class="gross">${esc(vk(k.satz))}</div>${hilfe() ? `<div class="klein muted">${esc(k.satzTr)}</div>` : ""}`;
+    else { const p = P[k.p], w = k.w;
+      zeig = `<div class="k-zeig"><div class="baustein"><div class="e">${p.emo}</div><div class="f">${esc(vk(p.fa))}</div>${hilfe() ? `<div class="d">${esc(p.de)}</div>` : ""}</div><div class="plus">+</div>
+        <div class="baustein"><div class="e">${w.emo}</div><div class="f">${esc(vk(w.fa))}</div>${hilfe() ? `<div class="d">${esc(w.de)}</div>` : ""}</div>${k.typ === "nein" ? `<div class="plus">+</div><div class="baustein"><div class="e">🚫</div><div class="d">nicht</div></div>` : ""}</div>`; }
+    const persisch = k.typ === "form" || k.typ === "nein" || k.typ === "kurz";
+    const wer = i => Object.entries(antw).filter(([, x]) => +x === i).map(([pid]) => name(pid));
+    const opts = k.o.map((o, i) => {
+      const cls = aufl ? (i === k.r ? "richtig" : (meine != null && +meine === i ? "falsch" : "")) : (meine != null && +meine === i ? "gewaehlt" : "");
+      return `<button class="opt ${cls}" ${nurAnsehen || aufl || meine != null ? "disabled" : `data-wahl="${i}"`}>${persisch ? `<div class="f">${esc(vk(o))}</div>${hilfe() ? `<div class="t">${esc(k.ot[i])}</div>` : ""}` : `<div style="font-weight:800;font-size:1.1rem">${esc(o)}</div>`}
+        ${aufl && wer(i).length ? `<div class="wer">${esc(wer(i).join(", "))}</div>` : ""}</button>`; }).join("");
+    return `<div class="karte-sp"><div class="k-frage">${ic} ${esc(frage)}</div>${zeig}<div class="opts">${opts}</div></div>`;
+  }
+  /* Spieleransicht an einem Tisch */
+  function tischHtml(tisch) {
+    const t = T(tisch), k = karteVon(tisch), leute = E.reihe(SP(), tisch), vorleser = leute.length ? leute[(t.zug || 0) % leute.length] : null;
+    const antw = t.antw || {}, fehlen = leute.filter(id => antw[id] == null), aufl = !!t.aufl, ichLese = ME && vorleser === ME.id;
+    let h = `<div class="pkt">${leute.map(id => `<span class="${id === vorleser ? "dran" : ""}">${id === vorleser ? "📢 " : ""}${esc(name(id))} · ${(t.punkte || {})[id] || 0}</span>`).join("")}</div>`;
+    h += karteHtml(k, tisch, false);
+    if (!aufl) {
+      h += fehlen.length ? `<p class="klein muted" style="text-align:center">⏳ Warte auf: ${esc(fehlen.map(name).join(", "))}</p>` : "";
+      if (ichLese && fehlen.length && antw[ME.id] != null) h += `<p style="text-align:center"><button class="btn zwei klein" id="aufl">⏩ Jetzt auflösen</button></p>`;
+    } else {
+      h += `<div class="vorlesen"><div class="gross" style="font-size:2rem">${esc(vk(k.s))} <button class="btn zwei klein" data-say="${esc(k.s)}">🔊</button></div><div class="klein">${esc(k.de)}</div>
+        ${ichLese ? `<p><b>📢 Du bist dran: Lies den Satz laut vor!</b></p><button class="btn" id="weiter">✓ vorgelesen – nächste Karte</button>`
+        : `<p>📢 <b>${esc(name(vorleser))}</b> liest den Satz laut vor. Hör gut zu!</p><div class="btnreihe" style="justify-content:center">${t.lob ? `<span>👍 gelobt</span>` : `<button class="btn zwei klein" id="lob">👍 gut gelesen</button>`}<button class="btn zwei klein" id="weiter" title="falls ${esc(name(vorleser))} gerade nicht da ist">⏭ weiter</button></div>`}</div>`;
+    }
+    return h;
+  }
+  function verdrahteTisch(tisch) {
+    $$("[data-wahl]").forEach(b => b.onclick = () => {
+      const i = +b.dataset.wahl, zug = T(tisch).zug || 0;
+      trans(`teams/t${tisch}`, cur => {
+        cur = cur || { zug: 0 }; if ((cur.zug || 0) !== zug || cur.aufl) return cur;
+        cur.antw = cur.antw || {}; if (cur.antw[ME.id] == null) cur.antw[ME.id] = i;
+        const leute = E.reihe(SP(), tisch); cur.vorleser = leute[(cur.zug || 0) % Math.max(1, leute.length)];
+        if (leute.every(id => cur.antw[id] != null)) E.aufloesen(cur, karteVon(tisch));
+        return cur;
+      });
+    });
+    const a = $("#aufl"); if (a) a.onclick = () => trans(`teams/t${tisch}`, cur => cur && !cur.aufl ? E.aufloesen(cur, karteVon(tisch)) : cur);
+    const w = $("#weiter"); if (w) w.onclick = () => { const zug = T(tisch).zug || 0; trans(`teams/t${tisch}`, cur => cur && (cur.zug || 0) === zug ? E.weiter(cur, false) : cur); };
+    const l = $("#lob"); if (l) l.onclick = () => trans(`teams/t${tisch}`, cur => { if (cur && !cur.lob && cur.vorleser) { cur.lob = ME.id; cur.punkte = cur.punkte || {}; cur.punkte[cur.vorleser] = (cur.punkte[cur.vorleser] || 0) + 1; } return cur; });
+    $$("[data-say]").forEach(b => b.onclick = () => F.sprich(b.dataset.say));
+  }
+
+  /* ---------- Einstellungen ---------- */
+  function einstellHtml(g, attr) {
+    const ty = String(g.typen || "form|nein|wer|lesen").split("|");
+    return `<div class="klein-h">Kartenarten</div><div class="typen">${Object.entries(E.TYPEN).map(([id, [ic, , txt]]) => `<label><input type="checkbox" data-${attr}typ="${id}" ${ty.includes(id) ? "checked" : ""}> ${ic} ${esc(txt)}</label>`).join("")}</div>
+      <div class="klein-h">Hilfe</div><div class="seg"><button class="${g.hilfe !== false ? "an" : ""}" data-${attr}hilfe="1">mit Umschrift + Deutsch</button><button class="${g.hilfe === false ? "an" : ""}" data-${attr}hilfe="0">ohne Hilfe – nur Persisch</button></div>
+      <div class="klein-h">Vokalzeichen</div><div class="seg"><button class="${g.vokale !== false ? "an" : ""}" data-${attr}vok="1">mit</button><button class="${g.vokale === false ? "an" : ""}" data-${attr}vok="0">ohne</button></div>`;
+  }
+  function verdrahteEinst(attr, setze) {
+    $$(`[data-${attr}typ]`).forEach(c => c.onchange = () => { const t = $$(`[data-${attr}typ]`).filter(x => x.checked).map(x => x.dataset[attr + "typ"]); if (!t.length) { c.checked = true; return; } setze("typen", t.join("|")); });
+    $$(`[data-${attr}hilfe]`).forEach(b => b.onclick = () => setze("hilfe", b.dataset[attr + "hilfe"] === "1"));
+    $$(`[data-${attr}vok]`).forEach(b => b.onclick = () => setze("vokale", b.dataset[attr + "vok"] === "1"));
+  }
+  const regelnHtml = () => `<div class="meldung klein"><b>So geht's:</b> Jeder Tisch spielt für sich. Alle sehen dieselbe Karte und tippen ihre Antwort an. Sobald alle geantwortet haben, kommt die Lösung – jede richtige Antwort = 1 Punkt. Dann liest die Person mit 📢 den richtigen Satz <b>laut vor</b>; die anderen hören zu und können 👍 geben (+1 Punkt). Danach ist die nächste Person dran.</div>`;
+
+  /* =====================================================================
+     LEITUNG (Leinwand)
+     ===================================================================== */
+  function startLeitung() {
+    firebase.auth().onAuthStateChanged(async u => {
+      if (!u) { app().innerHTML = `<div class="karte" style="margin-top:20px"><h2>Nur für Lehrkräfte</h2><p>Bitte zuerst in der <a href="konsole.html">Konsole</a> anmelden.</p><p><a href="?solo=1">Allein üben</a></p></div>`; return; }
+      try { await daten(); } catch (e) { return fehler(e, true); }
+      LT.verbindung(null);
+      if (CODE) hoere(CODE); else zeichneNeu();
+    });
+  }
+  const NEU = { typen: "form|nein|wer|lesen", hilfe: true, vokale: true };
+  function zeichneNeu(alsHost) {
+    app().innerHTML = `<div class="karte" style="margin-top:20px"><h2 style="margin-top:0">🎴 Tischspiel: sein + Lektion 1</h2>
+      <p>Wiederholung an Tischen (2–5 Personen, jede/r mit eigenem Gerät): Sätze mit „sein“ bilden, verneinen, Kurzformen, die Person an der Endung erkennen – und Wörter aus Lektion 1 lesen. Wer dran ist, liest den richtigen Satz laut vor.</p>
+      ${einstellHtml(NEU, "n")}
+      <p class="klein muted">Die Teilnehmenden brauchen keinen Zugangscode – nur den Spielcode und ihren Vornamen.</p>
+      <button class="btn" id="anlegen" style="margin-top:8px">▶ Runde anlegen</button></div>`;
+    verdrahteEinst("n", (k, v) => { NEU[k] = v; zeichneNeu(alsHost); });
+    $("#anlegen").onclick = async () => {
+      $("#anlegen").disabled = true;
+      const d = Object.assign({ erstellt: Date.now(), phase: "lobby", seed: String(Date.now() % 100000), tische: 4 }, NEU);
+      if (alsHost) { d.host = ME.id; d.spieler = { [ME.id]: { name: ME.name, ts: Date.now(), tisch: 1 } }; }
+      try { CODE = await LT.neueRunde(gRef, d); } catch (e) { return fehler(e, true); }
+      history.replaceState(null, "", alsHost ? `?code=${CODE}` : `?leitung=1&code=${CODE}`);
+      if (alsHost) LT.verbindung(gRef(CODE).child("spieler/" + ME.id));
+      hoere(CODE);
+    };
+  }
+  function leitungHtml(host) {
+    const n = G.tische || 4, alle = E.reihe(SP());
+    let h = `<div class="lv-kopf" style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:center;margin:14px 0"><div><div class="klein muted">Spielcode</div><div class="lv-code">${CODE}</div><div class="klein muted">${esc(location.host + location.pathname.replace(/[^/]*$/, ""))}code.html</div></div>
+      <div class="btnreihe">${G.phase === "lobby" ? `<button class="btn" id="start" ${alle.length ? "" : "disabled"}>▶ Spiel starten</button>` : G.phase === "spiel" ? `<button class="btn rot klein" id="ende">⏹ beenden & Ergebnis</button>` : `<button class="btn zwei klein" id="wieder">↺ weiterspielen</button>`}</div></div>`;
+    if (G.phase === "lobby") {
+      h += `<div class="karte"><div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap"><b>Tische:</b><div class="seg">${[1, 2, 3, 4, 5, 6].map(x => `<button class="${n === x ? "an" : ""}" data-tische="${x}">${x}</button>`).join("")}</div><button class="btn zwei klein" id="verteilen">🔀 automatisch verteilen</button></div>
+        <p class="klein muted">Die Teilnehmenden wählen ihren Tisch selbst – oder du verteilst automatisch.</p>${einstellHtml(G, "g")}</div>`;
+    }
+    h += `<div class="tische" style="margin-top:12px">${Array.from({ length: n }, (_, i) => i + 1).map(ti => {
+      const leute = E.reihe(SP(), ti), t = T(ti), sum = leute.reduce((s, id) => s + ((t.punkte || {})[id] || 0), 0);
+      return `<div class="tisch"><h3>🪑 Tisch ${ti} ${G.phase !== "lobby" ? `<span class="klein muted">· ${sum} Punkte · Karte ${(t.zug || 0) + 1}</span>` : ""}</h3>${leute.map(id => `<div class="p"><span>${SP()[id].online === false ? "⚪ " : ""}${esc(name(id))}</span><b>${G.phase !== "lobby" ? (t.punkte || {})[id] || 0 : ""}</b></div>`).join("") || `<span class="klein muted">noch leer</span>`}</div>`; }).join("")}</div>`;
+    const ohne = alle.filter(id => !SP()[id].tisch);
+    if (ohne.length) h += `<p class="klein">Noch ohne Tisch: ${esc(ohne.map(name).join(", "))}</p>`;
+    if (G.phase === "ende") {
+      const rang = Array.from({ length: n }, (_, i) => i + 1).map(ti => { const l = E.reihe(SP(), ti), t = T(ti); const s = l.reduce((a, id) => a + ((t.punkte || {})[id] || 0), 0); return { ti, s, schnitt: l.length ? s / l.length : 0, l }; }).filter(x => x.l.length).sort((a, b) => b.schnitt - a.schnitt);
+      h += `<div class="karte" style="margin-top:12px"><h2 style="margin-top:0">🏆 Ergebnis</h2>${rang.map((r, i) => `<div class="rang">${["🥇", "🥈", "🥉"][i] || "▫️"} Tisch ${r.ti}: <b>${r.s} Punkte</b> <span class="klein muted">(Ø ${r.schnitt.toFixed(1)} pro Person)</span></div>`).join("")}</div>`;
+    }
+    return h + (host ? "" : regelnHtml());
+  }
+  function verdrahteLeitung() {
+    const upd = o => (MODUS === "solo" ? null : gRef(CODE).update(o).catch(e => fehler(e)));
+    $$("[data-tische]").forEach(b => b.onclick = () => schreib("tische", +b.dataset.tische));
+    const v = $("#verteilen"); if (v) v.onclick = () => { const n = G.tische || 4, o = {}; E.reihe(SP()).forEach((id, i) => { o[`spieler/${id}/tisch`] = (i % n) + 1; }); upd(o); };
+    verdrahteEinst("g", (k, v) => schreib(k, v));
+    const s = $("#start"); if (s) s.onclick = () => upd({ phase: "spiel", start: Date.now() });
+    const e = $("#ende"); if (e) e.onclick = () => { if (confirm("Spiel beenden und Ergebnis zeigen?")) upd({ phase: "ende" }); };
+    const w = $("#wieder"); if (w) w.onclick = () => upd({ phase: "spiel" });
+  }
+  function zeichneLeitung() {
+    if (!G) { app().innerHTML = `<div class="karte" style="margin-top:20px">Diese Runde gibt es nicht (mehr). <a href="?leitung=1">Neue Runde</a></div>`; return; }
+    LT.render(app(), leitungHtml(false)); verdrahteLeitung();
+  }
+
+  /* =====================================================================
+     SPIELER
+     ===================================================================== */
+  function pid() {
+    const s = F.sitzung && F.sitzung(); if (s && s.code) return s.code;
+    let p = null; try { p = localStorage.getItem("farsi_quiz_pid"); if (!p) { p = "q" + Math.random().toString(36).slice(2, 9); localStorage.setItem("farsi_quiz_pid", p); } } catch (e) { p = "q" + Math.random().toString(36).slice(2, 9); }
+    return p;
+  }
+  function gespeicherterName() { const s = F.sitzung && F.sitzung(); if (s && s.name) return s.name; try { return localStorage.getItem("farsi_quiz_name") || ""; } catch (e) { return ""; } }
+  async function startSpieler() {
+    try { await daten(); } catch (e) { return fehler(e, true); }
+    ME = { id: pid(), name: gespeicherterName() };
+    const s = F.sitzung && F.sitzung();
+    if (CODE && ME.name) beitreten(CODE, ME.name); else if (qs.get("neu") && s) zeichneNeu(true); else zeichneBeitritt();
+  }
+  function zeichneBeitritt(meld) {
+    const s = F.sitzung && F.sitzung();
+    app().innerHTML = `<div class="karte" style="margin-top:20px;max-width:480px;margin-inline:auto;text-align:center"><div style="font-size:3rem">🎴</div><h2 style="margin:0 0 6px">Tischspiel: sein</h2>
+      <p>Gib den <b>Spielcode</b> und deinen <b>Vornamen</b> ein.</p>
+      <div style="display:grid;gap:10px;max-width:280px;margin:0 auto">
+        <input class="feld" id="code" inputmode="numeric" maxlength="4" placeholder="Spielcode" value="${esc(CODE || "")}" style="text-align:center;font-size:1.4rem;letter-spacing:.2em">
+        <input class="feld" id="name" maxlength="20" placeholder="Vorname" value="${esc(ME.name)}" style="text-align:center;font-size:1.15rem">
+        <button class="btn" id="los">Mitspielen ➜</button></div>
+      <p class="klein" style="color:var(--granat);min-height:1.2em">${meld || ""}</p>
+      <p class="klein">${s ? `<a href="?neu=1">👥 Eigene Runde ohne Lehrkraft starten</a> · ` : ""}<a href="?solo=1">🎧 Allein üben</a></p></div>`;
+    $("#los").onclick = () => beitreten($("#code").value.replace(/\D/g, ""), $("#name").value.trim());
+    $$("#code,#name").forEach(i => i.addEventListener("keydown", e => { if (e.key === "Enter") $("#los").click(); }));
+  }
+  async function beitreten(c, n) {
+    if (!/^\d{4}$/.test(c)) return zeichneBeitritt("Der Spielcode hat vier Ziffern.");
+    if (!n) return zeichneBeitritt("Bitte gib deinen Vornamen ein.");
+    n = n.split(/\s+/)[0].slice(0, 20);
+    let g; try { g = (await F.mitTimeout(gRef(c).once("value"), 8000)).val(); } catch (e) { return fehler(e, true); }
+    if (!g || !g.seed) { CODE = null; return zeichneBeitritt("Diesen Spielcode gibt es nicht."); }
+    CODE = c; ME.name = n; try { localStorage.setItem("farsi_quiz_name", n); } catch (e) { }
+    history.replaceState(null, "", "?code=" + c);
+    const alt = (g.spieler || {})[ME.id];
+    try { if (alt) await gRef(c).child(`spieler/${ME.id}/name`).set(n); else await gRef(c).child("spieler/" + ME.id).set({ name: n, ts: Date.now() }); } catch (e) { return fehler(e, true); }
+    LT.verbindung(gRef(c).child("spieler/" + ME.id));
+    hoere(c);
+  }
+  function zeichneSpieler() {
+    if (!G) return zeichneBeitritt("Diese Runde wurde beendet.");
+    const ich = SP()[ME.id];
+    if (!ich) { app().innerHTML = `<div class="karte" style="margin-top:20px;text-align:center">Du bist nicht (mehr) in dieser Runde.<br><br><button class="btn" id="nochmal">Wieder mitspielen</button></div>`; $("#nochmal").onclick = () => beitreten(CODE, ME.name); return; }
+    $("#kopfInfo").textContent = ich.name + (ich.tisch ? " · Tisch " + ich.tisch : "");
+    const host = G.host === ME.id;
+    let h = "";
+    if (G.phase === "lobby" || !ich.tisch) {
+      h = `<div class="karte" style="margin-top:20px;text-align:center"><h2 style="margin:0">Hallo ${esc(ich.name)}! An welchem Tisch sitzt du?</h2>
+        <div class="tisch-wahl" style="margin:14px 0">${Array.from({ length: G.tische || 4 }, (_, i) => i + 1).map(ti => `<button class="${+ich.tisch === ti ? "an" : ""}" data-tisch="${ti}">${ti}</button>`).join("")}</div>
+        <p class="klein muted">${Array.from({ length: G.tische || 4 }, (_, i) => i + 1).map(ti => `Tisch ${ti}: ${esc(E.reihe(SP(), ti).map(name).join(", ") || "–")}`).join(" · ")}</p>
+        ${G.phase === "lobby" ? (host ? "" : `<p>⏳ Gleich geht es los …</p>`) : ""}</div>${regelnHtml()}`;
+      if (host) h += leitungHtml(true);
+      LT.render(app(), h);
+      $$("[data-tisch]").forEach(b => b.onclick = () => schreib(`spieler/${ME.id}/tisch`, +b.dataset.tisch));
+      if (host) verdrahteLeitung();
+      return;
+    }
+    if (G.phase === "ende") { h = `<div class="karte" style="margin-top:20px;text-align:center"><h2>🏁 Ende!</h2><p>Du hast <b>${(T(ich.tisch).punkte || {})[ME.id] || 0} Punkte</b>. Schau auf die Leinwand für das Ergebnis.</p></div>`; if (host) h += leitungHtml(true); LT.render(app(), h); if (host) verdrahteLeitung(); return; }
+    h = `<div style="display:flex;justify-content:space-between;align-items:center;margin-top:10px"><b>🪑 Tisch ${ich.tisch}</b><span class="klein muted">Karte ${(T(ich.tisch).zug || 0) + 1}</span></div>` + tischHtml(ich.tisch);
+    if (host) h += `<details style="margin-top:14px"><summary>👑 Leitung</summary>${leitungHtml(true)}</details>`;
+    LT.render(app(), h); verdrahteTisch(ich.tisch); if (host) verdrahteLeitung();
+  }
+
+  /* =====================================================================
+     ALLEIN ÜBEN (ohne Firebase)
+     ===================================================================== */
+  async function startSolo() {
+    try { await daten(); } catch (e) { return fehler(e, true); }
+    ME = { id: "ich", name: (F.sitzung && F.sitzung() || {}).name || "Du" };
+    G = Object.assign({ phase: "spiel", seed: String(Date.now() % 100000), tische: 1, spieler: { ich: { name: ME.name, ts: 1, tisch: 1 } }, teams: {} }, NEU);
+    zeichne();
+  }
+  function zeichneSolo() {
+    let h = `<details class="karte" style="margin-top:12px"><summary><b>⚙️ Einstellungen</b></summary>${einstellHtml(G, "s")}</details>` + tischHtml(1);
+    LT.render(app(), h); verdrahteTisch(1);
+    verdrahteEinst("s", (k, v) => { G[k] = v; G.teams = {}; zeichne(); });
+  }
+
+  function zeichne() { if (!D) return; MODUS === "solo" ? zeichneSolo() : MODUS === "leitung" ? zeichneLeitung() : zeichneSpieler(); }
+  window.SEIN_APP = { zeichne, get G() { return G; } };
+  if (MODUS === "solo") startSolo(); else { F.initFB(); MODUS === "leitung" ? startLeitung() : startSpieler(); }
+})();
+</script>
+</body>
+</html>
