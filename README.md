@@ -143,6 +143,9 @@ Bei `paare` und `memory` kann mit `"links": "x"` auf beiden Seiten Persisch steh
 
 `richtig` zählt ab 0. In `bauen` müssen die `teile` genau die Buchstaben des Wortes ohne Vokalzeichen sein.
 
+## ⚑ Problem melden (überall)
+Auf jeder Seite für Teilnehmende steht unten links „⚑ Problem melden“ (aus `assets/core.js`; nicht in Konsole, Lehrer-Ansicht und auf der Leinwand mit `?leitung=1`). Arten: 🔤 sprachlich · 🛠️ technisch · ❓ unklar · 💡 Idee. Mitgeschickt werden markierter Text, Seite, sichtbare Überschrift, Name/Code (falls angemeldet) und Gerät. Gespeichert unter `meldungen/` (Regel `meldungen` in `firebase-regeln.json` – TN dürfen nur neue Meldungen anlegen). Lehrkraft: Konsole → „⚑ Meldungen (n)“ (`meldungen.html`): filtern, ✓ erledigt, Notiz, löschen und „📋 Offene für Claude kopieren“.
+
 ## Aussprache / Audio
 
 Überall, wo 🔊 erscheint, spielt die Seite eine **fertige Aufnahme** aus `assets/audio/` – das geht in jedem Browser, auch auf iPhone und Android. Die Aufnahmen sind mit den Microsoft-Stimmen Dilara und Farid erzeugt, in sechs Varianten (Tempo und Tonhöhe verändert: W1–W3, M1–M3), damit es nach verschiedenen Menschen klingt. Dialogzeilen wechseln zwischen zwei Stimmen; im Detektiv-Fall hat jede Person ihre eigene.

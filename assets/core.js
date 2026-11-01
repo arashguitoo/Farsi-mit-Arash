@@ -345,6 +345,69 @@
     if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", start); else start();
   }
 
+  /* ---------- „Problem melden“ – auf jeder Seite unten links ----------
+     Speichert unter meldungen/{id}: { art, text, auswahl, seite, titel, abschnitt, wer, ts, status }.
+     Ausgeblendet auf Lehrkraft-Seiten und auf der Leinwand (?leitung=1). */
+  const MELDE_ARTEN = [["sprache", "🔤 Sprachlich", "Fehler im Persischen oder Deutschen, falsche Übersetzung, falsche Aussprache"],
+    ["technik", "🛠️ Technisch", "etwas lädt nicht, ein Knopf geht nicht, die Anzeige ist kaputt"],
+    ["inhalt", "❓ Unklar", "eine Aufgabe oder Erklärung ist schwer zu verstehen"],
+    ["idee", "💡 Idee / Wunsch", "das wäre schön …"]];
+  let meldeAuswahl = "";
+  function meldeKnopf() {
+    const pfad = location.pathname.split("/").pop() || "index.html";
+    if (/^(konsole|lehrer|meldungen)\.html$/.test(pfad) || /[?&]leitung=/.test(location.search) || document.getElementById("melde-knopf")) return;
+    const st = document.createElement("style");
+    st.textContent = `#melde-knopf{position:fixed;left:12px;bottom:12px;z-index:90;border:1px solid var(--linie,#ddd);background:#fff;color:var(--tinte2,#555);border-radius:999px;padding:6px 12px;font:inherit;font-size:.8rem;font-weight:700;cursor:pointer;box-shadow:0 1px 4px rgba(0,0,0,.08);opacity:.85}
+      #melde-knopf:hover{opacity:1;border-color:var(--lapis,#2f5d62);color:var(--lapis,#2f5d62)}
+      #melde-dlg{position:fixed;inset:0;z-index:100;background:rgba(20,24,28,.35);display:flex;align-items:flex-end;justify-content:center;padding:12px}
+      #melde-dlg .box{background:#fff;border-radius:18px;max-width:520px;width:100%;padding:16px;max-height:92vh;overflow:auto;box-shadow:0 8px 30px rgba(0,0,0,.18)}
+      #melde-dlg .arten{display:grid;gap:6px;margin:10px 0}
+      #melde-dlg .art{display:flex;gap:10px;align-items:flex-start;border:1.5px solid var(--linie,#ddd);border-radius:12px;padding:8px 10px;cursor:pointer;text-align:left;background:#fff;font:inherit}
+      #melde-dlg .art.an{border-color:var(--lapis,#2f5d62);background:var(--lapis-hell,#e9f0ef)}
+      #melde-dlg .art small{display:block;color:var(--tinte2,#666);font-size:.78rem}
+      #melde-dlg textarea{width:100%;min-height:90px;border:1.5px solid var(--linie,#ddd);border-radius:12px;padding:8px 10px;font:inherit}
+      #melde-dlg .zitat{font-size:.85rem;background:#f6f6f3;border-radius:10px;padding:6px 10px;margin:6px 0}
+      @media (min-width:700px){#melde-dlg{align-items:center}}
+      @media print{#melde-knopf{display:none}}`;
+    document.head.appendChild(st);
+    const b = document.createElement("button");
+    b.id = "melde-knopf"; b.type = "button"; b.textContent = "⚑ Problem melden"; b.setAttribute("data-nobidi", "");
+    /* markierten Text merken, bevor der Klick die Markierung aufhebt */
+    b.addEventListener("pointerdown", () => { try { meldeAuswahl = String(window.getSelection() || "").trim().slice(0, 300); } catch (e) { meldeAuswahl = ""; } });
+    b.onclick = meldeDialog;
+    document.body.appendChild(b);
+  }
+  function meldeAbschnitt() {
+    /* sichtbare Überschrift der aktuellen Karte/Aufgabe als Kontext */
+    const hs = [...document.querySelectorAll("main h2, main h3, .karte h2")].filter(h => { const r = h.getBoundingClientRect(); return r.bottom > 0 && r.top < innerHeight; });
+    return (hs[0] && hs[0].textContent.trim().slice(0, 120)) || "";
+  }
+  function meldeDialog() {
+    if (document.getElementById("melde-dlg")) return;
+    const s = sitzung(); let wer = s ? (s.name || "") + " (" + s.code + ")" : ""; if (!wer) { try { wer = localStorage.getItem("farsi_quiz_name") || ""; } catch (e) { } }
+    const abschnitt = meldeAbschnitt(); let art = null;
+    const d = document.createElement("div"); d.id = "melde-dlg"; d.setAttribute("data-nobidi", "");
+    d.innerHTML = `<div class="box" role="dialog" aria-label="Problem melden"><div style="display:flex;justify-content:space-between;align-items:center"><b style="font-size:1.1rem">⚑ Problem melden</b><button type="button" class="btn zwei klein" data-x>✕</button></div>
+      <div class="klein muted" style="margin-top:4px">Danke! Deine Meldung geht direkt an deine Lehrkraft.${abschnitt ? ` Seite: <i>${esc(abschnitt)}</i>` : ""}</div>
+      <div class="arten">${MELDE_ARTEN.map(([id, t, e]) => `<button type="button" class="art" data-art="${id}"><span><b>${t}</b><small>${e}</small></span></button>`).join("")}</div>
+      ${meldeAuswahl ? `<div class="zitat">Markierter Text: <span class="fa" dir="auto">${esc(meldeAuswahl)}</span></div>` : `<div class="klein muted" style="margin-bottom:6px">Tipp: Wenn du vorher ein Wort oder einen Satz markierst, wird er mitgeschickt.</div>`}
+      <textarea id="melde-text" maxlength="1500" placeholder="Was ist dir aufgefallen? (Deutsch oder Persisch)"></textarea>
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:10px;flex-wrap:wrap"><span class="klein muted">${wer ? "von " + esc(wer) : "anonym"}</span><button type="button" class="btn" id="melde-senden" disabled>Senden</button></div></div>`;
+    document.body.appendChild(d);
+    const zu = () => d.remove(), txt = d.querySelector("#melde-text"), send = d.querySelector("#melde-senden");
+    const pruefe = () => { send.disabled = !art || txt.value.trim().length < 3; };
+    d.addEventListener("click", e => { if (e.target === d || e.target.closest("[data-x]")) zu(); });
+    d.querySelectorAll("[data-art]").forEach(x => x.onclick = () => { art = x.dataset.art; d.querySelectorAll("[data-art]").forEach(y => y.classList.toggle("an", y === x)); pruefe(); txt.focus(); });
+    txt.oninput = pruefe;
+    send.onclick = async () => {
+      send.disabled = true; send.textContent = "Wird gesendet …";
+      const m = { art, text: txt.value.trim().slice(0, 1500), auswahl: meldeAuswahl || null, seite: location.pathname.split("/").pop() + location.search, titel: document.title.slice(0, 120), abschnitt: abschnitt || null, wer: wer || null, ts: Date.now(), status: "neu", geraet: (navigator.userAgent || "").slice(0, 160) };
+      try { if (!initFB()) throw new Error("offline"); await mitTimeout(ref("meldungen").push(m), 8000); zu(); toast("✅ Danke! Deine Meldung ist angekommen."); meldeAuswahl = ""; }
+      catch (e) { console.warn(e); send.disabled = false; send.textContent = "Noch einmal senden"; toast("Senden hat nicht geklappt – bitte später noch einmal versuchen."); }
+    };
+  }
+  if (typeof document !== "undefined") { if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", meldeKnopf); else setTimeout(meldeKnopf, 0); }
+
   window.FARSI = {
     CFG, $, $$, esc, mischen, faZiffern, normCode, toast, mitTimeout,
     initFB, ref, sitzung, anmelden, abmelden, pruefeSitzung, brauchtCode, weiterleiten: u => location.replace(u),

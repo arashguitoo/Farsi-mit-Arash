@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meldungen · Farsi-Lernpfad</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Vazirmatn:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css">
+<style>
+  .wrap{max-width:900px}
+  .m{background:#fff;border:1px solid var(--linie);border-radius:14px;padding:12px 14px;margin:10px 0}
+  .m.erledigt{opacity:.6}
+  .m .kopf-z{display:flex;gap:8px;align-items:center;flex-wrap:wrap;justify-content:space-between}
+  .tag{display:inline-block;border-radius:999px;padding:2px 10px;font-size:.78rem;font-weight:800;background:var(--lapis-hell);color:var(--lapis)}
+  .tag.sprache{background:var(--safran-hell);color:#6b4b10}.tag.technik{background:var(--granat-hell);color:var(--granat)}.tag.idee{background:var(--gruen-hell);color:var(--gruen)}
+  .m .txt{font-size:1.05rem;margin:6px 0;white-space:pre-wrap}
+  .m .zitat{background:#f6f6f3;border-radius:10px;padding:6px 10px;font-size:.9rem}
+  .m .meta{font-size:.8rem;color:var(--tinte2);margin-top:6px}
+  .filter{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+  .seg{display:inline-flex;border:1px solid var(--linie);border-radius:10px;overflow:hidden;flex-wrap:wrap}
+  .seg button{border:0;background:#fff;padding:6px 11px;font:inherit;font-size:.85rem;font-weight:700;cursor:pointer}
+  .seg button.an{background:var(--lapis);color:#fff}
+</style>
+</head>
+<body>
+<header class="kopf">
+  <div class="wrap">
+    <a href="konsole.html" class="medaillon" style="text-decoration:none">فا</a>
+    <div><h1>⚑ Meldungen</h1><div class="unter">Rückmeldungen der Teilnehmenden · Farsi-Lernpfad</div></div>
+    <div class="rechts"><a class="kopf-btn" href="konsole.html">← Konsole</a></div>
+  </div>
+</header>
+<main class="wrap" style="padding-bottom:40px"><div id="app"><p class="muted" style="margin-top:30px">Lade …</p></div></main>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+<script src="assets/core.js"></script>
+<script>
+(function () {
+  const F = window.FARSI, { $, $$, esc, toast } = F;
+  const ARTEN = { sprache: "🔤 Sprachlich", technik: "🛠️ Technisch", inhalt: "❓ Unklar", idee: "💡 Idee" };
+  let M = {}, FILTER = { art: "alle", status: "neu" };
+  const datum = ts => new Date(ts).toLocaleString("de-DE", { day: "2-digit", month: "2-digit", year: "2-digit", hour: "2-digit", minute: "2-digit" });
+  F.initFB();
+  firebase.auth().onAuthStateChanged(u => {
+    if (!u) { $("#app").innerHTML = `<div class="karte" style="margin-top:20px"><h2>Nur für Lehrkräfte</h2><p>Bitte zuerst in der <a href="konsole.html">Konsole</a> anmelden.</p></div>`; return; }
+    F.ref("meldungen").on("value", s => { M = s.val() || {}; zeichne(); }, e => { $("#app").innerHTML = `<div class="karte" style="margin-top:20px"><b>Meldungen konnten nicht geladen werden.</b><p class="klein">Bitte prüfen, ob die Regel „meldungen“ aus <code>firebase-regeln.json</code> veröffentlicht ist.</p><p class="klein muted">${esc(e.message)}</p></div>`; });
+  });
+  function liste() {
+    return Object.entries(M).map(([id, m]) => Object.assign({ id }, m)).filter(m => (FILTER.art === "alle" || m.art === FILTER.art) && (FILTER.status === "alle" || (m.status || "neu") === FILTER.status)).sort((a, b) => (b.ts || 0) - (a.ts || 0));
+  }
+  function zeichne() {
+    const L = liste(), neu = Object.values(M).filter(m => (m.status || "neu") === "neu").length;
+    $("#app").innerHTML = `<div class="karte" style="margin-top:18px"><h2 style="margin-top:0">⚑ Meldungen <span class="klein muted">${neu} neu</span></h2>
+      <p class="klein muted" style="margin-top:0">Die Teilnehmenden melden über den Knopf „⚑ Problem melden“ unten links auf jeder Seite. Markierter Text, Seite und Abschnitt werden automatisch mitgeschickt.</p>
+      <div class="filter"><div class="seg">${[["alle", "alle"], ...Object.entries(ARTEN)].map(([k, t]) => `<button class="${FILTER.art === k ? "an" : ""}" data-art="${k}">${t}</button>`).join("")}</div>
+        <div class="seg">${[["neu", "offen"], ["erledigt", "erledigt"], ["alle", "alle"]].map(([k, t]) => `<button class="${FILTER.status === k ? "an" : ""}" data-st="${k}">${t}</button>`).join("")}</div>
+        <button class="btn zwei klein" id="kopieren">📋 Offene für Claude kopieren</button></div></div>
+      ${L.length ? L.map(m => `<div class="m ${m.status === "erledigt" ? "erledigt" : ""}"><div class="kopf-z"><span><span class="tag ${esc(m.art)}">${ARTEN[m.art] || esc(m.art)}</span> <b>${esc(m.wer || "anonym")}</b></span><span class="klein muted">${datum(m.ts)}</span></div>
+        <div class="txt">${esc(m.text)}</div>${m.auswahl ? `<div class="zitat">Markiert: <span class="fa">${esc(m.auswahl)}</span></div>` : ""}
+        <div class="meta">📄 <a href="${esc(m.seite)}" target="_blank">${esc(m.titel || m.seite)}</a>${m.abschnitt ? ` · ${esc(m.abschnitt)}` : ""} · <span title="${esc(m.geraet || "")}">${/iPhone|iPad/.test(m.geraet) ? "📱 iOS" : /Android/.test(m.geraet) ? "📱 Android" : /Edg\//.test(m.geraet) ? "💻 Edge" : /Chrome/.test(m.geraet) ? "💻 Chrome" : /Firefox/.test(m.geraet) ? "💻 Firefox" : /Safari/.test(m.geraet) ? "💻 Safari" : "Gerät?"}</span></div>
+        ${m.notiz ? `<div class="klein" style="margin-top:6px">📝 ${esc(m.notiz)}</div>` : ""}
+        <div class="btnreihe" style="margin-top:8px"><button class="btn ${m.status === "erledigt" ? "zwei" : ""} klein" data-erl="${m.id}">${m.status === "erledigt" ? "↺ wieder offen" : "✓ erledigt"}</button><button class="btn zwei klein" data-notiz="${m.id}">📝 Notiz</button><button class="btn zwei klein" data-weg="${m.id}">🗑</button></div></div>`).join("") : `<p class="muted">Keine Meldungen in dieser Auswahl.</p>`}`;
+    $$("[data-art]").forEach(b => b.onclick = () => { FILTER.art = b.dataset.art; zeichne(); });
+    $$("[data-st]").forEach(b => b.onclick = () => { FILTER.status = b.dataset.st; zeichne(); });
+    $$("[data-erl]").forEach(b => b.onclick = () => F.ref("meldungen/" + b.dataset.erl + "/status").set(M[b.dataset.erl].status === "erledigt" ? "neu" : "erledigt"));
+    $$("[data-notiz]").forEach(b => b.onclick = () => { const n = prompt("Notiz (nur für dich):", M[b.dataset.notiz].notiz || ""); if (n !== null) F.ref("meldungen/" + b.dataset.notiz + "/notiz").set(n.trim() || null); });
+    $$("[data-weg]").forEach(b => b.onclick = () => { if (confirm("Meldung löschen?")) F.ref("meldungen/" + b.dataset.weg).set(null); });
+    $("#kopieren").onclick = async () => {
+      const offen = Object.values(M).filter(m => (m.status || "neu") === "neu").sort((a, b) => a.ts - b.ts);
+      const t = "Meldungen der Teilnehmenden (Farsi-Lernpfad) – bitte prüfen und beheben:\n\n" + offen.map((m, i) => `${i + 1}. [${ARTEN[m.art] || m.art}] ${m.text}${m.auswahl ? `\n   Markiert: ${m.auswahl}` : ""}\n   Seite: ${m.seite}${m.abschnitt ? " · " + m.abschnitt : ""}`).join("\n\n");
+      try { await navigator.clipboard.writeText(t); toast(`📋 ${offen.length} Meldungen kopiert – einfach in den Chat mit Claude einfügen.`); } catch (e) { prompt("Zum Kopieren:", t); }
+    };
+  }
+})();
+</script>
+</body>
+</html>

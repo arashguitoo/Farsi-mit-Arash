@@ -77,6 +77,13 @@
             }
           }
         }
+      },
+      "meldungen": {
+        ".read": "auth != null",
+        ".write": "auth != null",
+        "$id": {
+          ".write": "auth != null || (!data.exists() && newData.child('text').isString() && newData.child('text').val().length <= 1500 && newData.child('status').val() === 'neu')"
+        }
       }
     }
   }
