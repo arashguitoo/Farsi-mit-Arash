@@ -49,7 +49,8 @@
     buzzer: { titel: "Blitz-Übersetzung", icon: "⚡", url: c => `live-buzzer.html?code=${c}` },
     detektiv: { titel: "Detektiv-Fall", icon: "🕵️", url: c => `live-detektiv.html?code=${c}` },
     sein: { titel: "Tischspiel: sein", icon: "🎴", url: c => `live-sein.html?code=${c}` },
-    bewerbung: { titel: "Vorstellungsgespräch-Speeddating", icon: "💼", url: c => `live-bewerbung.html?code=${c}` }
+    bewerbung: { titel: "Vorstellungsgespräch-Speeddating", icon: "💼", url: c => `live-bewerbung.html?code=${c}` },
+    scharade: { titel: "Scharade · Erklären · Malen", icon: "🎭", url: c => `live-scharade.html?code=${c}` }
   };
   const liveRef = (s, c) => window.FARSI.ref(`live/${s}/${c}`);
   /* Spielcode in allen Aktivitäten suchen → { spiel, titel, icon, url } oder null (neueste/laufende Runde gewinnt) */

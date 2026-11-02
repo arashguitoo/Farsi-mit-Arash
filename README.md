@@ -301,6 +301,9 @@ Eigener Bereich (Startseite → ✍️ Schreibwerkstatt; Lehrkraft: Konsole → 
 - **Firebase:** braucht die Regel `schreiben` aus `firebase-regeln.json` (einmal in der Firebase-Konsole veröffentlichen). Daten: `schreiben/{tn-code}/{aufgabe}/tn` (TN: Versionen, Status) und `/lk/{version}` (Lehrkraft: Korrektur, Freigabe).
 - **🤖 KI-Entwurf:** Knopf ist vorbereitet; sobald ein Weg eingerichtet ist (eigener API-Schlüssel + kleiner Vermittlungsdienst, oder geplante Claude-Aufgabe), füllt er „Korrigierter Text“ und die Kommentare vor.
 
+### Live: Scharade · Erklären · Malen (`live-scharade.html`)
+Teamspiel wie Activity, Begriffe in `assets/scharade/berufe.json` (Berufe & Berufswelt, je zwei verbotene Wörter). 2–4 Teams; wer dran ist, sieht die Begriffe auf dem eigenen Handy, würfelt die Art (🎭 Pantomime · 🗣️ auf Persisch erklären mit Tabu-Wörtern · ✏️ malen) und startet den Timer (45–120 s). ✓ erraten = 1 Punkt fürs Team, ⏭ weiter. Leinwand: Punkte, Timer, wer dran ist (ohne Begriff). Neues Thema = neue JSON-Datei nach demselben Muster.
+
 ### Live: Vorstellungsgespräch-Speeddating (`live-bewerbung.html`)
 Konversationskurs, Lektion „Arbeit, Studium & Vorstellungsgespräch“. Inhalte in `assets/bewerbung/daten.json` (Firmen, Profile, Fragen, Redemittel, Wortschatz). Ablauf: Lehrkraft legt die Runde an → TN mit Code + Vornamen → **Vorbereitung** an einem Tisch (🧠 Wortschatz, 🗣️ „Wer sagt das?“, 🧩 Sätze bauen, ✅ Checkliste für beide Rollen; Tisch-Übersicht zeigt, wer fertig ist) → sind alle fertig (oder „⏩ Rollen jetzt verteilen“), verteilt das Spiel automatisch 50 % 👔 Arbeitgeber/innen (Firma) und 50 % 🙋 Bewerber/innen (Profil) → **Speeddating**: Arbeitgeber/innen bleiben sitzen, Bewerber/innen rücken weiter, Timer pro Runde, ⭐-Bewertung beidseitig; die nächste Runde startet, wenn alle bewertet haben → **Ergebnis**: Wer bekommt den Job, 💼 Match bei gegenseitiger Bestnote.
 
