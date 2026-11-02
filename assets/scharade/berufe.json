@@ -1,47 +1,422 @@
 {
-  "titel": "Berufe & Berufswelt",
-  "begriffe": [
-    {"fa":"پزشک","tr":"pezeschk","de":"Arzt / Ärztin","tabu":["بیمارستان","مریض"]},
-    {"fa":"معلم","tr":"moʿallem","de":"Lehrer/in","tabu":["مدرسه","کلاس"]},
-    {"fa":"آشپز","tr":"āschpaz","de":"Koch / Köchin","tabu":["غذا","رستوران"]},
-    {"fa":"وکیل","tr":"vakīl","de":"Anwalt / Anwältin","tabu":["دادگاه","قانون"]},
-    {"fa":"برنامه‌نویس","tr":"barnāme-nevīs","de":"Programmierer/in","tabu":["کامپیوتر","کد"]},
-    {"fa":"خلبان","tr":"chalabān","de":"Pilot/in","tabu":["هواپیما","پرواز"]},
-    {"fa":"راننده‌ی تاکسی","tr":"rānande-ye tāksī","de":"Taxifahrer/in","tabu":["ماشین","مسافر"]},
-    {"fa":"پرستار","tr":"parastār","de":"Pfleger/in","tabu":["بیمارستان","پزشک"]},
-    {"fa":"مترجم","tr":"motardschem","de":"Übersetzer/in","tabu":["زبان","ترجمه"]},
-    {"fa":"روزنامه‌نگار","tr":"rūznāme-negār","de":"Journalist/in","tabu":["خبر","روزنامه"]},
-    {"fa":"عکاس","tr":"ʿakkās","de":"Fotograf/in","tabu":["دوربین","عکس"]},
-    {"fa":"آرایشگر","tr":"ārāyeschgar","de":"Friseur/in","tabu":["مو","قیچی"]},
-    {"fa":"نانوا","tr":"nānvā","de":"Bäcker/in","tabu":["نان","صبح"]},
-    {"fa":"کشاورز","tr":"keschāvarz","de":"Landwirt/in","tabu":["مزرعه","گندم"]},
-    {"fa":"آتش‌نشان","tr":"ātesch-neschān","de":"Feuerwehrmann / -frau","tabu":["آتش","آب"]},
-    {"fa":"پلیس","tr":"polīs","de":"Polizist/in","tabu":["دزد","ماشین"]},
-    {"fa":"فروشنده","tr":"forūschande","de":"Verkäufer/in","tabu":["مغازه","خرید"]},
-    {"fa":"حسابدار","tr":"hesābdār","de":"Buchhalter/in","tabu":["پول","عدد"]},
-    {"fa":"مهندس","tr":"mohandes","de":"Ingenieur/in","tabu":["ساختمان","دانشگاه"]},
-    {"fa":"نجار","tr":"naddschār","de":"Tischler/in","tabu":["چوب","میز"]},
-    {"fa":"دندانپزشک","tr":"dandān-pezeschk","de":"Zahnarzt / Zahnärztin","tabu":["دندان","درد"]},
-    {"fa":"خواننده","tr":"chānande","de":"Sänger/in","tabu":["آواز","موسیقی"]},
-    {"fa":"بازیگر","tr":"bāzīgar","de":"Schauspieler/in","tabu":["فیلم","تئاتر"]},
-    {"fa":"مکانیک","tr":"mekānīk","de":"Mechaniker/in","tabu":["ماشین","تعمیر"]},
-    {"fa":"گارسون","tr":"gārson","de":"Kellner/in","tabu":["رستوران","غذا"]},
-    {"fa":"دامپزشک","tr":"dām-pezeschk","de":"Tierarzt / Tierärztin","tabu":["حیوان","گربه"]},
-    {"fa":"مصاحبه","tr":"mosāhebe","de":"Vorstellungsgespräch","tabu":["کار","سؤال"]},
-    {"fa":"رزومه","tr":"rezūme","de":"Lebenslauf","tabu":["کاغذ","تجربه"]},
-    {"fa":"حقوق","tr":"hoghūgh","de":"Gehalt","tabu":["پول","ماه"]},
-    {"fa":"دورکاری","tr":"dūrkārī","de":"Homeoffice","tabu":["خانه","کامپیوتر"]},
-    {"fa":"جلسه","tr":"dschalase","de":"Besprechung","tabu":["همکار","میز"]},
-    {"fa":"مرخصی","tr":"morachasī","de":"Urlaub (vom Job)","tabu":["تعطیل","سفر"]},
-    {"fa":"اضافه‌کاری","tr":"ezāfe-kārī","de":"Überstunden","tabu":["ساعت","شب"]},
-    {"fa":"رئیس","tr":"raʾīs","de":"Chef/in","tabu":["مدیر","شرکت"]},
-    {"fa":"همکار","tr":"hamkār","de":"Kolleg/in","tabu":["دفتر","کار"]},
-    {"fa":"قرارداد","tr":"gharārdād","de":"Vertrag","tabu":["امضا","کاغذ"]},
-    {"fa":"بازنشسته شدن","tr":"bāzneschaste schodan","de":"in Rente gehen","tabu":["پیر","کار"]},
-    {"fa":"ترفیع","tr":"tarfīʿ","de":"Beförderung","tabu":["رئیس","بهتر"]},
-    {"fa":"کارآموزی","tr":"kārāmūzī","de":"Praktikum","tabu":["دانشجو","تجربه"]},
-    {"fa":"ایمیل","tr":"īmeyl","de":"E-Mail","tabu":["کامپیوتر","نامه"]},
-    {"fa":"مهلت","tr":"mohlat","de":"Frist, Deadline","tabu":["وقت","تمام"]},
-    {"fa":"ناهار کاری","tr":"nāhār-e kārī","de":"Arbeitsessen","tabu":["غذا","همکار"]}
+ "titel": "Berufe & Berufswelt",
+ "begriffe": [
+  {
+   "fa": "پزشک",
+   "tr": "pezeschk",
+   "de": "Arzt / Ärztin",
+   "tabu": [
+    "بیمارستان",
+    "مریض"
+   ]
+  },
+  {
+   "fa": "معلم",
+   "tr": "moʿallem",
+   "de": "Lehrer/in",
+   "tabu": [
+    "مدرسه",
+    "کلاس"
+   ]
+  },
+  {
+   "fa": "آشپز",
+   "tr": "āschpaz",
+   "de": "Koch / Köchin",
+   "tabu": [
+    "غذا",
+    "رستوران"
+   ]
+  },
+  {
+   "fa": "وکیل",
+   "tr": "vakīl",
+   "de": "Anwalt / Anwältin",
+   "tabu": [
+    "دادگاه",
+    "قانون"
+   ]
+  },
+  {
+   "fa": "برنامه‌نویس",
+   "tr": "barnāme-nevīs",
+   "de": "Programmierer/in",
+   "tabu": [
+    "کامپیوتر",
+    "کد"
+   ]
+  },
+  {
+   "fa": "خلبان",
+   "tr": "chalabān",
+   "de": "Pilot/in",
+   "tabu": [
+    "هواپیما",
+    "پرواز"
+   ]
+  },
+  {
+   "fa": "راننده‌ی تاکسی",
+   "tr": "rānande-ye tāksī",
+   "de": "Taxifahrer/in",
+   "tabu": [
+    "ماشین",
+    "مسافر"
+   ]
+  },
+  {
+   "fa": "پرستار",
+   "tr": "parastār",
+   "de": "Pfleger/in",
+   "tabu": [
+    "بیمارستان",
+    "پزشک"
+   ]
+  },
+  {
+   "fa": "مترجم",
+   "tr": "motardschem",
+   "de": "Übersetzer/in",
+   "tabu": [
+    "زبان",
+    "ترجمه"
+   ]
+  },
+  {
+   "fa": "روزنامه‌نگار",
+   "tr": "rūznāme-negār",
+   "de": "Journalist/in",
+   "tabu": [
+    "خبر",
+    "روزنامه"
+   ]
+  },
+  {
+   "fa": "عکاس",
+   "tr": "ʿakkās",
+   "de": "Fotograf/in",
+   "tabu": [
+    "دوربین",
+    "عکس"
+   ]
+  },
+  {
+   "fa": "آرایشگر",
+   "tr": "ārāyeschgar",
+   "de": "Friseur/in",
+   "tabu": [
+    "مو",
+    "قیچی"
+   ]
+  },
+  {
+   "fa": "نانوا",
+   "tr": "nānvā",
+   "de": "Bäcker/in",
+   "tabu": [
+    "نان",
+    "صبح"
+   ]
+  },
+  {
+   "fa": "کشاورز",
+   "tr": "keschāvarz",
+   "de": "Landwirt/in",
+   "tabu": [
+    "مزرعه",
+    "گندم"
+   ]
+  },
+  {
+   "fa": "آتش‌نشان",
+   "tr": "ātesch-neschān",
+   "de": "Feuerwehrmann / -frau",
+   "tabu": [
+    "آتش",
+    "آب"
+   ]
+  },
+  {
+   "fa": "پلیس",
+   "tr": "polīs",
+   "de": "Polizist/in",
+   "tabu": [
+    "دزد",
+    "ماشین"
+   ]
+  },
+  {
+   "fa": "فروشنده",
+   "tr": "forūschande",
+   "de": "Verkäufer/in",
+   "tabu": [
+    "مغازه",
+    "خرید"
+   ]
+  },
+  {
+   "fa": "حسابدار",
+   "tr": "hesābdār",
+   "de": "Buchhalter/in",
+   "tabu": [
+    "پول",
+    "عدد"
+   ]
+  },
+  {
+   "fa": "مهندس",
+   "tr": "mohandes",
+   "de": "Ingenieur/in",
+   "tabu": [
+    "ساختمان",
+    "دانشگاه"
+   ]
+  },
+  {
+   "fa": "نجار",
+   "tr": "naddschār",
+   "de": "Tischler/in",
+   "tabu": [
+    "چوب",
+    "میز"
+   ]
+  },
+  {
+   "fa": "دندانپزشک",
+   "tr": "dandān-pezeschk",
+   "de": "Zahnarzt / Zahnärztin",
+   "tabu": [
+    "دندان",
+    "درد"
+   ]
+  },
+  {
+   "fa": "خواننده",
+   "tr": "chānande",
+   "de": "Sänger/in",
+   "tabu": [
+    "آواز",
+    "موسیقی"
+   ]
+  },
+  {
+   "fa": "بازیگر",
+   "tr": "bāzīgar",
+   "de": "Schauspieler/in",
+   "tabu": [
+    "فیلم",
+    "تئاتر"
+   ]
+  },
+  {
+   "fa": "مکانیک",
+   "tr": "mekānīk",
+   "de": "Mechaniker/in",
+   "tabu": [
+    "ماشین",
+    "تعمیر"
+   ]
+  },
+  {
+   "fa": "گارسون",
+   "tr": "gārson",
+   "de": "Kellner/in",
+   "tabu": [
+    "رستوران",
+    "غذا"
+   ]
+  },
+  {
+   "fa": "دامپزشک",
+   "tr": "dām-pezeschk",
+   "de": "Tierarzt / Tierärztin",
+   "tabu": [
+    "حیوان",
+    "گربه"
+   ]
+  },
+  {
+   "fa": "مصاحبه",
+   "tr": "mosāhebe",
+   "de": "Vorstellungsgespräch",
+   "tabu": [
+    "کار",
+    "سؤال"
+   ]
+  },
+  {
+   "fa": "رزومه",
+   "tr": "rezūme",
+   "de": "Lebenslauf",
+   "tabu": [
+    "کاغذ",
+    "تجربه"
+   ]
+  },
+  {
+   "fa": "حقوق",
+   "tr": "hoghūgh",
+   "de": "Gehalt",
+   "tabu": [
+    "پول",
+    "ماه"
+   ]
+  },
+  {
+   "fa": "دورکاری",
+   "tr": "dūrkārī",
+   "de": "Homeoffice",
+   "tabu": [
+    "خانه",
+    "کامپیوتر"
+   ]
+  },
+  {
+   "fa": "جلسه",
+   "tr": "dschalase",
+   "de": "Besprechung",
+   "tabu": [
+    "همکار",
+    "میز"
+   ]
+  },
+  {
+   "fa": "مرخصی",
+   "tr": "morachasī",
+   "de": "Urlaub (vom Job)",
+   "tabu": [
+    "تعطیل",
+    "سفر"
+   ]
+  },
+  {
+   "fa": "اضافه‌کاری",
+   "tr": "ezāfe-kārī",
+   "de": "Überstunden",
+   "tabu": [
+    "ساعت",
+    "شب"
+   ]
+  },
+  {
+   "fa": "رئیس",
+   "tr": "raʾīs",
+   "de": "Chef/in",
+   "tabu": [
+    "مدیر",
+    "شرکت"
+   ]
+  },
+  {
+   "fa": "همکار",
+   "tr": "hamkār",
+   "de": "Kolleg/in",
+   "tabu": [
+    "دفتر",
+    "کار"
+   ]
+  },
+  {
+   "fa": "قرارداد",
+   "tr": "gharārdād",
+   "de": "Vertrag",
+   "tabu": [
+    "امضا",
+    "کاغذ"
+   ]
+  },
+  {
+   "fa": "بازنشسته شدن",
+   "tr": "bāzneschaste schodan",
+   "de": "in Rente gehen",
+   "tabu": [
+    "پیر",
+    "کار"
+   ]
+  },
+  {
+   "fa": "ترفیع",
+   "tr": "tarfīʿ",
+   "de": "Beförderung",
+   "tabu": [
+    "رئیس",
+    "بهتر"
+   ]
+  },
+  {
+   "fa": "کارآموزی",
+   "tr": "kārāmūzī",
+   "de": "Praktikum",
+   "tabu": [
+    "دانشجو",
+    "تجربه"
+   ]
+  },
+  {
+   "fa": "ایمیل",
+   "tr": "īmeyl",
+   "de": "E-Mail",
+   "tabu": [
+    "کامپیوتر",
+    "نامه"
+   ]
+  },
+  {
+   "fa": "مهلت",
+   "tr": "mohlat",
+   "de": "Frist, Deadline",
+   "tabu": [
+    "وقت",
+    "تمام"
+   ]
+  },
+  {
+   "fa": "ناهار کاری",
+   "tr": "nāhār-e kārī",
+   "de": "Arbeitsessen",
+   "tabu": [
+    "غذا",
+    "همکار"
+   ]
+  }
+ ],
+ "punkte": {
+  "pantomime": 1,
+  "erklaeren": 2,
+  "malen": 1
+ },
+ "redemittel": [
+  [
+   "این یک شغل است.",
+   "Das ist ein Beruf."
+  ],
+  [
+   "این شخص در … کار می‌کند.",
+   "Diese Person arbeitet in …"
+  ],
+  [
+   "با … کار می‌کند.",
+   "Sie arbeitet mit …"
+  ],
+  [
+   "هر روز … می‌کند.",
+   "Sie macht jeden Tag …"
+  ],
+  [
+   "برای این کار … لازم است.",
+   "Dafür braucht man …"
+  ],
+  [
+   "این چیزی است که …",
+   "Das ist etwas, das …"
+  ],
+  [
+   "مثلِ … است، ولی …",
+   "Es ist wie …, aber …"
+  ],
+  [
+   "برعکسِ … است.",
+   "Das Gegenteil von … ist es."
   ]
+ ]
 }

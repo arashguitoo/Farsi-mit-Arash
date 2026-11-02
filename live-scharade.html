@@ -56,7 +56,8 @@
   const app = () => $("#app");
   const gRef = c => F.ref(`live/scharade/${c}`);
   const TEAMS = [["A", "Team Rot", "#a8443a"], ["B", "Team Blau", "#2b6fa8"], ["C", "Team Grün", "#3c7a55"], ["D", "Team Gelb", "#b98a3e"]];
-  const MODI = { pantomime: ["🎭", "Pantomime", "Ohne Worte – nur mit dem Körper zeigen."], erklaeren: ["🗣️", "Erklären", "Auf Persisch beschreiben – das Wort und die roten Wörter sind verboten."], malen: ["✏️", "Malen", "An die Tafel / aufs Papier malen – keine Buchstaben, keine Zahlen."] };
+  const MODI = { pantomime: ["🎭", "Pantomime", "Ohne Worte – nur mit dem Körper zeigen. 1 Punkt pro Begriff."], erklaeren: ["🗣️", "Erklären", "Auf Persisch beschreiben – das Wort und die roten Wörter sind verboten. 2 Punkte pro Begriff!"], malen: ["✏️", "Malen", "An die Tafel / aufs Papier malen – keine Buchstaben, keine Zahlen. 1 Punkt pro Begriff."] };
+  const wert = m => ((D && D.punkte) || {})[m] || (m === "erklaeren" ? 2 : 1);
   const SP = () => (G && G.spieler) || {};
   const name = id => (SP()[id] || {}).name || "?";
   const Z = () => (G && G.teams && G.teams.z) || {};
@@ -104,15 +105,18 @@
       if (ichErkl && !zeitUm(z)) {
         const b = begriff(z.k || 0);
         h += `<div class="wort">${esc(b.fa)}</div>${G.hilfe !== false ? `<div class="muted">${esc(b.tr)} · ${esc(b.de)}</div>` : ""}
-          ${z.modus === "erklaeren" ? `<div class="tabu">🚫 ${b.tabu.map(t => `<span>${esc(t)}</span>`).join("")}</div>` : ""}
+          ${z.modus === "erklaeren" ? `<div class="tabu">🚫 ${b.tabu.map(t => `<span>${esc(t)}</span>`).join("")}</div>${redemittelHtml()}` : ""}
           <div class="btnreihe" style="justify-content:center;margin-top:14px"><button class="btn gross-btn" id="ok" style="background:var(--gruen)">✓ erraten!</button><button class="btn zwei gross-btn" id="skip">⏭ weiter</button></div>`;
       } else if (zeitUm(z)) {
-        h += `<p><b>Zeit um!</b> ${z.richtig || 0} Begriff(e) erraten.</p>${erratenHtml(z)}${ichErkl || ichBin === "leitung" ? `<button class="btn gross-btn" id="naechster">➡️ Nächstes Team</button>` : ""}`;
+        h += `<p><b>Zeit um!</b> ${z.richtig || 0} Begriff(e) erraten = <b>${(z.richtig || 0) * wert(z.modus)} Punkte</b>.</p>${erratenHtml(z)}${ichErkl || ichBin === "leitung" ? `<button class="btn gross-btn" id="naechster">➡️ Nächstes Team</button>` : ""}`;
       } else {
         h += `<p style="font-size:1.2rem">${info.team && ME && SP()[ME.id] && SP()[ME.id].team === info.team ? "🙋 <b>Rate mit!</b> Ruf die Lösung auf Persisch." : ichBin === "leitung" ? "Die Gruppe rät …" : "👀 Das andere Team ist dran – pass auf, dass keine verbotenen Wörter fallen!"}</p><p class="klein muted">bisher erraten: ${z.richtig || 0}</p>`;
       }
     }
     return h + `</div>`;
+  }
+  function redemittelHtml() {
+    return `<details class="redem" open style="text-align:right;margin-top:10px"><summary style="text-align:left"><b>💬 Redemittel</b></summary>${(D.redemittel || []).map(([fa, de]) => `<div style="border-bottom:1px solid var(--linie);padding:3px 0"><span class="fa" style="font-size:1.1rem">${esc(fa)}</span>${G.hilfe !== false ? ` <span class="klein muted" style="direction:ltr;display:inline-block">${esc(de)}</span>` : ""}</div>`).join("")}</details>`;
   }
   function erratenHtml(z) { const l = Object.entries(z.log || {}).filter(([, x]) => x && x.ok).map(([k]) => +k); return l.length ? `<p class="erraten">${l.map(k => esc(begriff(k).fa) + " <span class='klein muted'>(" + esc(begriff(k).de) + ")</span>").join(" · ")}</p>` : ""; }
   function verdrahteZug() {
@@ -125,7 +129,7 @@
   function karte(erraten) {
     const z = Z(), k = z.k || 0, team = zugInfo(z.nr || 0).team;
     trans("teams/z", cur => { if (!cur || (cur.k || 0) !== k) return cur; cur.log = cur.log || {}; cur.log[k] = { ok: erraten }; if (erraten) cur.richtig = (cur.richtig || 0) + 1; cur.k = k + 1; return cur; })
-      .then(() => { if (erraten) { trans("teams/p/" + team, v => (v || 0) + 1); F.ton("ok"); } });
+      .then(() => { if (erraten) { const w = wert(z.modus); trans("teams/p/" + team, v => (v || 0) + w); F.ton("ok"); } });
   }
 
   /* =====================================================================
@@ -141,7 +145,7 @@
   const NEU = { nteams: 2, sekunden: 60, hilfe: true, modi: "pantomime|erklaeren|malen" };
   function zeichneNeu() {
     app().innerHTML = `<div class="karte" style="margin-top:20px"><h2 style="margin-top:0">🎭 Scharade · Erklären · Malen</h2>
-      <p>Teamspiel zum Thema <b>${esc(D.titel)}</b> (${D.begriffe.length} Begriffe). Wer dran ist, sieht die Begriffe auf dem eigenen Handy und würfelt, <b>wie</b> erklärt wird: 🎭 Pantomime, 🗣️ auf Persisch erklären (mit verbotenen Wörtern) oder ✏️ malen. Das eigene Team rät auf Persisch – so viele Begriffe wie möglich, bis die Zeit um ist.</p>
+      <p>Erklären auf Persisch zählt <b>2 Punkte</b> pro Begriff (mit Redemitteln auf dem Handy), Pantomime und Malen je 1 Punkt.</p><p>Teamspiel zum Thema <b>${esc(D.titel)}</b> (${D.begriffe.length} Begriffe). Wer dran ist, sieht die Begriffe auf dem eigenen Handy und würfelt, <b>wie</b> erklärt wird: 🎭 Pantomime, 🗣️ auf Persisch erklären (mit verbotenen Wörtern) oder ✏️ malen. Das eigene Team rät auf Persisch – so viele Begriffe wie möglich, bis die Zeit um ist.</p>
       <div class="klein-h">Teams</div><div class="seg">${[2, 3, 4].map(n => `<button class="${NEU.nteams === n ? "an" : ""}" data-nt="${n}">${n} Teams</button>`).join("")}</div>
       <div class="klein-h">Zeit pro Zug</div><div class="seg">${[45, 60, 90, 120].map(n => `<button class="${NEU.sekunden === n ? "an" : ""}" data-sek="${n}">${n} s</button>`).join("")}</div>
       <div class="klein-h">Arten</div><div>${Object.entries(MODI).map(([k, [ic, t]]) => `<label style="margin-right:12px"><input type="checkbox" data-modus="${k}" ${NEU.modi.includes(k) ? "checked" : ""}> ${ic} ${t}</label>`).join("")}</div>
@@ -209,7 +213,7 @@
       h = `<div class="karte" style="margin-top:20px;text-align:center"><h2 style="margin:0 0 10px">Hallo ${esc(ich.name)}! In welchem Team bist du?</h2>
         <div class="wahl-team">${TEAMS.slice(0, nT()).map(([k, t, f]) => `<button class="${ich.team === k ? "an" : ""}" style="background:${f}" data-team="${k}">${t}</button>`).join("")}</div>
         ${G.phase === "lobby" ? `<p class="muted" style="margin-top:14px">⏳ Gleich geht es los …</p>` : ""}</div>
-        <div class="meldung klein"><b>So geht's:</b> Wer dran ist, sieht die Begriffe auf dem Handy und würfelt die Art: 🎭 Pantomime, 🗣️ auf Persisch erklären (das Wort und die roten Wörter sind verboten!) oder ✏️ malen. Das eigene Team ruft die Lösung <b>auf Persisch</b>. Jeder erratene Begriff = 1 Punkt.</div>`;
+        <div class="meldung klein"><b>So geht's:</b> Wer dran ist, sieht die Begriffe auf dem Handy und würfelt die Art: 🎭 Pantomime, 🗣️ auf Persisch erklären (das Wort und die roten Wörter sind verboten!) oder ✏️ malen. Das eigene Team ruft die Lösung <b>auf Persisch</b>. Erklären = <b>2 Punkte</b> pro Begriff, Pantomime und Malen = 1 Punkt.</div>`;
       LT.render(app(), h); $$("[data-team]").forEach(b => b.onclick = () => schreib(`spieler/${ME.id}/team`, b.dataset.team)); return;
     }
     if (G.phase === "ende") h = punkteHtml() + `<div class="bühne"><h2>🏁 Ende!</h2><p>Schau auf die Leinwand.</p></div>`;
