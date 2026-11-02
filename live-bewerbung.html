@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vorstellungsgespräch-Speeddating · Farsi-Lernpfad</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Vazirmatn:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css">
+<style>
+  .wrap{max-width:980px}
+  .lv-code{font-size:3rem;font-weight:800;letter-spacing:.2em;color:var(--lapis);line-height:1.1}
+  .klein-h{font-size:.78rem;font-weight:800;color:var(--tinte2);text-transform:uppercase;letter-spacing:.04em;margin:14px 0 6px}
+  .fa-g{font-family:var(--fa);direction:rtl;text-align:right}
+  .seg{display:inline-flex;border:1px solid var(--linie);border-radius:10px;overflow:hidden;flex-wrap:wrap}
+  .seg button{border:0;background:#fff;padding:7px 12px;font:inherit;font-size:.88rem;font-weight:700;cursor:pointer}
+  .seg button.an{background:var(--lapis);color:#fff}
+  .aufg-gitter{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px}
+  .aufg{background:#fff;border:1.5px solid var(--linie);border-radius:14px;padding:12px;text-align:left;font:inherit;cursor:pointer}
+  .aufg.fertig{border-color:var(--gruen);background:var(--gruen-hell)}
+  .aufg .ic{font-size:1.8rem}
+  .team{width:100%;border-collapse:collapse;margin-top:6px}
+  .team td,.team th{border-bottom:1px solid var(--linie);padding:5px 6px;text-align:center}
+  .team td:first-child,.team th:first-child{text-align:left}
+  .frage{font-family:var(--fa);font-size:2rem;text-align:center;margin:10px 0;line-height:1.6}
+  .opts{display:grid;gap:8px;grid-template-columns:1fr 1fr}
+  .opt{border:2px solid var(--linie);background:#fff;border-radius:12px;padding:10px;font:inherit;font-weight:700;cursor:pointer}
+  .opt.ok{border-color:var(--gruen);background:var(--gruen-hell)}.opt.nein{border-color:var(--granat);background:var(--granat-hell)}
+  .zeile{min-height:52px;border:1.5px solid #c9d6d2;border-radius:14px;padding:6px 10px;display:flex;flex-wrap:wrap;gap:6px;direction:rtl;align-items:center;background:#fbfdfc}
+  .wks{display:flex;flex-wrap:wrap;gap:7px;direction:rtl;margin-top:10px}
+  .wk{font-family:var(--fa);font-size:1.12rem;border:1.5px solid var(--linie);background:#fff;border-radius:10px;padding:4px 11px;cursor:pointer;line-height:1.7}
+  .wk.weg{visibility:hidden}.zeile .wk{background:#e4f3ee;border-color:#9fc9bb}
+  .rolle{border-radius:18px;padding:14px;margin-top:10px;border:2px solid var(--lapis);background:#fff}
+  .rolle.ag{border-color:#8a5400}
+  .rolle h2{margin:0 0 4px}
+  .firma{background:#fbfaf6;border:1px solid var(--linie);border-radius:14px;padding:10px 12px;margin:8px 0}
+  .firma .n{font-family:var(--fa);font-size:1.5rem;font-weight:800}
+  .liste .z{border-bottom:1px solid var(--linie);padding:6px 0;display:flex;gap:8px;align-items:flex-start}
+  .liste .z .f{font-family:var(--fa);font-size:1.15rem;direction:rtl;text-align:right;flex:1}
+  .liste .z .d{font-size:.8rem;color:var(--tinte2)}
+  .uhr{position:sticky;top:6px;z-index:10;text-align:center;background:var(--lapis);color:#fff;border-radius:12px;padding:8px;font-weight:800;font-size:1.2rem;margin:8px 0}
+  .uhr.knapp{background:var(--safran)}.uhr.aus{background:var(--granat)}
+  .sterne button{font-size:2rem;border:0;background:none;cursor:pointer;filter:grayscale(1);opacity:.5}
+  .sterne button.an{filter:none;opacity:1}
+  .paar{display:flex;justify-content:space-between;gap:8px;border:1px solid var(--linie);border-radius:12px;padding:8px 12px;background:#fff;margin:6px 0}
+  .match{background:var(--gruen-hell);border-color:#9fc9b0}
+  .meldung{background:var(--safran-hell);border:1px solid #e6d3ad;border-radius:12px;padding:10px 14px;margin:10px 0}
+</style>
+</head>
+<body>
+<header class="kopf">
+  <div class="wrap">
+    <a href="aktivitaeten.html" class="medaillon" style="text-decoration:none">فا</a>
+    <div><h1>💼 Vorstellungsgespräch-Speeddating</h1><div class="unter">Konversationskurs · Arbeit & Bewerbung · Farsi-Lernpfad</div></div>
+    <div class="rechts"><span class="kopf-btn" id="kopfInfo" style="background:transparent;border-color:transparent"></span><a class="kopf-btn" href="aktivitaeten.html">← Aktivitäten</a></div>
+  </div>
+</header>
+<main class="wrap" style="padding-bottom:60px"><div id="app"><p class="muted" style="margin-top:30px">Lade …</p></div></main>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+<script src="assets/core.js"></script>
+<script src="assets/live-tools.js"></script>
+<script>
+/* ===================== Logik (rein) ===================== */
+window.BEWERB_ENGINE = (function () {
+  const AUFGABEN = [["a1", "🧠", "Wortschatz", "10 Wörter richtig zuordnen"], ["a2", "🗣️", "Wer sagt das?", "Arbeitgeber/in oder Bewerber/in?"], ["a3", "🧩", "Sätze bauen", "4 wichtige Sätze"], ["a4", "✅", "Bereit für beide Rollen", "Checkliste"]];
+  const hash = s => { let h = 2166136261; for (const c of String(s)) { h ^= c.charCodeAt(0); h = Math.imul(h, 16777619); } return h >>> 0; };
+  function rng(seed) { let a = hash(seed); return () => { a |= 0; a = a + 0x6D2B79F5 | 0; let t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+  function mischen(a, r) { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(r() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
+  const reihe = sp => Object.entries(sp || {}).filter(([, s]) => s && s.name).sort(([, a], [, b]) => (a.ts || 0) - (b.ts || 0)).map(([id]) => id);
+  const allesFertig = (vorb, ids) => ids.length > 0 && ids.every(id => AUFGABEN.every(([a]) => ((vorb || {})[id] || {})[a]));
+  /* Rollen: 50 % Arbeitgeber/innen (bei ungerader Zahl eine/r weniger), Rest Bewerber/innen */
+  function rollen(ids, seed, nFirmen, nProfile) {
+    const r = rng(seed), m = mischen(ids, r), nAG = Math.max(1, Math.floor(m.length / 2));
+    const o = { rollen: {}, firma: {}, profil: {} };
+    m.forEach((id, i) => { if (i < nAG) { o.rollen[id] = "ag"; o.firma[id] = i % nFirmen; } else { o.rollen[id] = "an"; o.profil[id] = (i - nAG) % nProfile; } });
+    return o;
+  }
+  const listen = A => { const ag = Object.keys(A.rollen || {}).filter(id => A.rollen[id] === "ag").sort(), an = Object.keys(A.rollen || {}).filter(id => A.rollen[id] === "an").sort(); return { ag, an }; };
+  const runden = A => { const { ag, an } = listen(A); return Math.max(ag.length, an.length); };
+  /* Paare in Runde r: Arbeitgeber/innen bleiben sitzen, Bewerber/innen rücken weiter */
+  function paare(A, r) {
+    const { ag, an } = listen(A), n = Math.max(ag.length, an.length), out = [];
+    for (let j = 0; j < n; j++) { const g = ag[j] || null, b = an.length ? an[(j + r) % n] || null : null; out.push({ ag: g, an: b }); }
+    return out;
+  }
+  const partner = (A, r, id) => { const p = paare(A, r).find(x => x.ag === id || x.an === id); return p ? (p.ag === id ? p.an : p.ag) : null; };
+  function rundeFertig(A, r) { const b = ((A.bew || {})[r]) || {}; return paare(A, r).filter(p => p.ag && p.an).every(p => b[p.ag] && b[p.an]); }
+  /* Ergebnis: wer passt zu wem? (beste Bewertung beidseitig) */
+  function ergebnis(A) {
+    const { ag, an } = listen(A), nR = runden(A), noten = {};
+    for (let r = 0; r < nR; r++) Object.entries(((A.bew || {})[r]) || {}).forEach(([von, x]) => { if (x && x.an) noten[von + ">" + x.an] = x.s; });
+    const bester = (von, liste) => { let b = null, m = 0; liste.forEach(z => { const s = noten[von + ">" + z] || 0; if (s > m) { m = s; b = z; } }); return b ? { id: b, s: m } : null; };
+    return { noten, ag: ag.map(id => ({ id, best: bester(id, an) })), an: an.map(id => ({ id, best: bester(id, ag) })) };
+  }
+  return { AUFGABEN, rng, mischen, reihe, allesFertig, rollen, listen, runden, paare, partner, rundeFertig, ergebnis };
+})();
+
+/* ===================== Seite ===================== */
+(function () {
+  const F = window.FARSI, { $, $$, esc, toast } = F, E = window.BEWERB_ENGINE, LT = window.LIVE_TOOLS;
+  const qs = new URLSearchParams(location.search);
+  const MODUS = qs.get("leitung") ? "leitung" : "spieler";
+  let CODE = (qs.get("code") || "").replace(/\D/g, "") || null;
+  let G = null, REF = null, ME = null, D = null, AUF = null, LOK = {};
+  const app = () => $("#app");
+  const gRef = c => F.ref(`live/bewerbung/${c}`);
+  const SP = () => (G && G.spieler) || {};
+  const name = id => (SP()[id] || {}).name || "?";
+  const A = () => (G && G.teams && G.teams.ablauf) || {};
+  const VORB = () => (G && G.teams && G.teams.vorb) || {};
+  const hilfe = () => !(G && G.hilfe === false);
+  const say = t => `<button class="btn zwei klein" data-say="${esc(t)}" title="anhören">🔊</button>`;
+
+  async function daten() { if (!D) D = await F.ladeJSON("assets/bewerbung/daten.json"); return D; }
+  function hoere(c) {
+    if (REF) REF.off(); REF = gRef(c);
+    REF.on("value", s => { G = s.val(); if (MODUS !== "leitung") LT.pruefeNeuLaden(G); pruefeUebergang(); if (LT.tipptGerade(zeichne)) return; zeichne(); }, e => fehler(e, true));
+  }
+  function fehler(e, hart) { console.error(e); if (!hart && G) { toast("Das hat nicht geklappt – bitte noch einmal tippen."); return; } app().innerHTML = `<div class="karte" style="margin-top:20px"><b>Das hat nicht geklappt.</b><p class="klein muted">${esc(e && e.message || e)}</p></div>`; }
+  const schreib = (p, w) => gRef(CODE).child(p).set(w).catch(e => fehler(e));
+  const trans = (p, fn) => gRef(CODE).child(p).transaction(fn).catch(e => fehler(e));
+
+  /* Automatische Übergänge: alle vorbereitet → Rollen verteilen; alle bewertet → nächste Runde */
+  function pruefeUebergang() {
+    if (!G || G.phase !== "spiel" || !D) return;
+    const a = A(), ids = E.reihe(SP());
+    if ((a.stufe || "vorb") === "vorb" && E.allesFertig(VORB(), ids)) starteSpeed();
+    else if (a.stufe === "speed" && E.rundeFertig(a, a.runde || 0)) naechsteRunde(a.runde || 0);
+  }
+  function starteSpeed() {
+    const ids = E.reihe(SP());
+    trans("teams/ablauf", cur => { cur = cur || {}; if (cur.stufe === "speed" || cur.stufe === "fertig") return cur; return Object.assign(cur, E.rollen(ids, (G.seed || "x") + ids.join(), D.firmen.length, D.profile.length), { stufe: "speed", runde: 0, rundeStart: Date.now() }); });
+  }
+  function naechsteRunde(r) {
+    trans("teams/ablauf", cur => { if (!cur || cur.stufe !== "speed" || (cur.runde || 0) !== r) return cur; if (r + 1 >= E.runden(cur)) { cur.stufe = "fertig"; } else { cur.runde = r + 1; cur.rundeStart = Date.now(); } return cur; });
+  }
+
+  /* =====================================================================
+     VORBEREITUNG (Selbstarbeit, alle an einem Tisch)
+     ===================================================================== */
+  function vorbHtml() {
+    const ids = E.reihe(SP()), mein = VORB()[ME.id] || {};
+    if (AUF) return aufgabeHtml(AUF);
+    const fertig = E.AUFGABEN.filter(([a]) => mein[a]).length;
+    return `<div class="karte" style="margin-top:14px"><h2 style="margin-top:0">📋 Vorbereitung</h2>
+      <p style="margin-top:0">Ihr sitzt zusammen an einem Tisch. Jede/r macht die vier Aufgaben auf dem eigenen Gerät – <b>helft euch gegenseitig!</b> Wenn <b>alle</b> fertig sind, werden die Rollen automatisch verteilt: die Hälfte sind Arbeitgeber/innen, die Hälfte Bewerber/innen. Dann beginnt das Speeddating.</p>
+      <div class="aufg-gitter">${E.AUFGABEN.map(([a, ic, t, d]) => `<button class="aufg ${mein[a] ? "fertig" : ""}" data-aufg="${a}"><div class="ic">${ic}</div><b>${t}</b><div class="klein muted">${d}</div><div class="klein" style="margin-top:4px">${mein[a] ? "✅ erledigt" : "▶ los"}</div></button>`).join("")}</div>
+      <p class="klein muted">${fertig} von 4 erledigt</p></div>` + teamHtml(ids);
+  }
+  function teamHtml(ids) {
+    return `<div class="karte" style="margin-top:12px"><h3 style="margin-top:0">👥 Euer Tisch</h3><table class="team"><tr><th></th>${E.AUFGABEN.map(([, ic]) => `<th>${ic}</th>`).join("")}</tr>
+      ${ids.map(id => `<tr><td>${SP()[id].online === false ? "⚪ " : ""}<b>${esc(name(id))}</b></td>${E.AUFGABEN.map(([a]) => `<td>${(VORB()[id] || {})[a] ? "✅" : "·"}</td>`).join("")}</tr>`).join("")}</table></div>`;
+  }
+  function erledigt(a) { AUF = null; LOK = {}; toast("✅ Erledigt!"); schreib(`teams/vorb/${ME.id}/${a}`, true); }
+  const fertigMelden = a => { if (!LOK.fertig) { LOK.fertig = true; setTimeout(() => { erledigt(a); zeichne(); }, 0); } return `<div class="karte" style="margin-top:14px">✅ Geschafft!</div>`; };
+  function aufgabeHtml(a) {
+    const r = E.rng(ME.id + a), zur = `<button class="btn zwei klein" id="zurAuf">← Aufgaben</button>`;
+    if (a === "a1") {
+      if (!LOK.q) { LOK.q = E.mischen(D.wortschatz, r).slice(0, 10); LOK.ok = 0; }
+      if (!LOK.q.length) return fertigMelden(a);
+      const w = LOK.q[0], opts = LOK.opts || (LOK.opts = E.mischen([w[1]].concat(E.mischen(D.wortschatz.filter(x => x !== w), E.rng(w[0] + LOK.ok)).slice(0, 3).map(x => x[1])), E.rng(w[0])));
+      return `<div class="karte" style="margin-top:14px">${zur}<h3>🧠 Wortschatz <span class="klein muted">${LOK.ok} / 10</span></h3><div class="frage">${esc(w[0])} ${say(w[0])}</div>
+        <div class="opts">${opts.map((o, i) => `<button class="opt ${LOK.wahl === i ? (o === w[1] ? "ok" : "nein") : ""}" data-a1="${i}">${esc(o)}</button>`).join("")}</div></div>`;
+    }
+    if (a === "a2") {
+      if (!LOK.q) { LOK.q = E.mischen(D.fragenAG.slice(0, 6).map(x => [x, "ag"]).concat(D.satzAN.slice(1, 5).map(x => [x, "an"]), D.fragenAN.slice(0, 3).map(x => [x, "an"])), r); LOK.ok = 0; LOK.n = LOK.q.length; }
+      if (!LOK.q.length) return fertigMelden(a);
+      const [[fa, de], w] = LOK.q[0];
+      return `<div class="karte" style="margin-top:14px">${zur}<h3>🗣️ Wer sagt das? <span class="klein muted">${LOK.ok} / ${LOK.n}</span></h3><div class="frage" style="font-size:1.6rem">${esc(fa)} ${say(fa)}</div><div class="klein muted" style="text-align:center">${esc(de)}</div>
+        <div class="opts" style="margin-top:12px">${[["ag", "👔 Arbeitgeber/in"], ["an", "🙋 Bewerber/in"]].map(([k, t]) => `<button class="opt ${LOK.wahl === k ? (k === w ? "ok" : "nein") : ""}" data-a2="${k}">${t}</button>`).join("")}</div></div>`;
+    }
+    if (a === "a3") {
+      LOK.i = LOK.i || 0; if (LOK.i >= D.satzbau.length) return fertigMelden(a);
+      const [satz, de] = D.satzbau[LOK.i], teile = satz.split(" "), perm = LOK.perm || (LOK.perm = E.mischen(teile.map((_, k) => k), E.rng(satz + "x"))); LOK.sel = LOK.sel || [];
+      return `<div class="karte" style="margin-top:14px">${zur}<h3>🧩 Sätze bauen <span class="klein muted">${LOK.i + 1} / ${D.satzbau.length}</span></h3><p><b>${esc(de)}</b></p>
+        <div class="zeile">${LOK.sel.map((k, n) => `<button class="wk" data-raus="${n}">${esc(teile[k])}</button>`).join("") || `<span class="klein muted" style="direction:ltr">Tippe die Wörter in der richtigen Reihenfolge an …</span>`}</div>
+        <div class="wks">${perm.map(k => `<button class="wk ${LOK.sel.includes(k) ? "weg" : ""}" data-rein="${k}">${esc(teile[k])}</button>`).join("")}</div>
+        ${LOK.msg ? `<p class="klein" style="color:var(--granat)">${LOK.msg}</p>` : ""}<div class="btnreihe" style="margin-top:8px"><button class="btn klein" id="pruef" ${LOK.sel.length === teile.length ? "" : "disabled"}>✔ prüfen</button><button class="btn zwei klein" id="leer">↺</button></div></div>`;
+    }
+    LOK.h = LOK.h || {};
+    return `<div class="karte" style="margin-top:14px">${zur}<h3>✅ Bereit für beide Rollen?</h3><p class="klein muted" style="margin-top:0">Ihr wisst noch nicht, welche Rolle ihr bekommt. Übt beide – sprecht die Beispiele halblaut mit.</p>
+      ${D.checkliste.map(([de, fa], i) => `<div class="firma"><label><input type="checkbox" data-ch="${i}" ${LOK.h[i] ? "checked" : ""}> <b>${esc(de)}</b></label><div class="fa-g" style="font-size:1.1rem;margin-top:4px">${esc(fa)} ${say(fa)}</div></div>`).join("")}
+      <button class="btn" id="bereit" ${D.checkliste.every((_, i) => LOK.h[i]) ? "" : "disabled"}>🙋 Ich bin bereit!</button></div>`;
+  }
+  function verdrahteAufgabe() {
+    const z = $("#zurAuf"); if (z) z.onclick = () => { AUF = null; LOK = {}; zeichne(); };
+    $$("[data-aufg]").forEach(b => b.onclick = () => { AUF = b.dataset.aufg; LOK = {}; zeichne(); window.scrollTo(0, 0); });
+    $$("[data-a1]").forEach(b => b.onclick = () => {
+      if (LOK.wahl != null) return; const i = +b.dataset.a1, w = LOK.q[0]; LOK.wahl = i; zeichne();
+      setTimeout(() => { const ok = LOK.opts[i] === w[1]; LOK.q.shift(); if (ok) LOK.ok++; else LOK.q.push(w); LOK.wahl = null; LOK.opts = null; zeichne(); }, ok0(LOK.opts[i] === w[1]));
+    });
+    $$("[data-a2]").forEach(b => b.onclick = () => {
+      if (LOK.wahl != null) return; const k = b.dataset.a2, it = LOK.q[0]; LOK.wahl = k; zeichne();
+      setTimeout(() => { const ok = k === it[1]; LOK.q.shift(); if (ok) LOK.ok++; else LOK.q.push(it); LOK.wahl = null; zeichne(); }, ok0(k === it[1]));
+    });
+    $$("[data-rein]").forEach(b => b.onclick = () => { LOK.sel.push(+b.dataset.rein); LOK.msg = null; zeichne(); });
+    $$("[data-raus]").forEach(b => b.onclick = () => { LOK.sel.splice(+b.dataset.raus, 1); zeichne(); });
+    const l = $("#leer"); if (l) l.onclick = () => { LOK.sel = []; zeichne(); };
+    const p = $("#pruef"); if (p) p.onclick = () => {
+      const [satz] = D.satzbau[LOK.i], teile = satz.split(" ");
+      if (LOK.sel.map(k => teile[k]).join(" ") === satz) { F.sprich(satz); LOK.i++; LOK.sel = []; LOK.perm = null; LOK.msg = null; toast("✅ Richtig!"); }
+      else { const n = LOK.sel.findIndex((k, x) => teile[k] !== teile[x]); LOK.msg = n > 0 ? `Die ersten ${n} Wörter stimmen.` : "Noch nicht – womit fängt der Satz an?"; }
+      zeichne();
+    };
+    $$("[data-ch]").forEach(c => c.onchange = () => { LOK.h[+c.dataset.ch] = c.checked; zeichne(); });
+    const be = $("#bereit"); if (be) be.onclick = () => erledigt("a4");
+  }
+  const ok0 = ok => ok ? 500 : 1300;
+
+  /* =====================================================================
+     SPEEDDATING
+     ===================================================================== */
+  function firmaHtml(f) {
+    return `<div class="firma"><div style="display:flex;gap:10px;align-items:center"><span style="font-size:2rem">${f.icon}</span><div><div class="n">${esc(f.name)}</div>${hilfe() ? `<div class="klein muted">${esc(f.nameDe)} · ${esc(f.artDe)}</div>` : ""}</div></div>
+      <div class="liste" style="margin-top:6px"><div class="z"><span>🏢</span><div class="f">${esc(f.art)}</div></div>
+      <div class="z"><span>💼</span><div class="f">${esc(f.stelle)}${hilfe() ? `<div class="d">${esc(f.stelleDe)}</div>` : ""}</div></div>
+      <div class="z"><span>🎯</span><div class="f">${f.will.map(esc).join("، ")}${hilfe() ? `<div class="d">gesucht: ${esc(f.willDe.join(", "))}</div>` : ""}</div></div>
+      <div class="z"><span>🎁</span><div class="f">${esc(f.bietet)}${hilfe() ? `<div class="d">${esc(f.bietetDe)}</div>` : ""}</div></div></div></div>`;
+  }
+  const listeHtml = (L, titel) => `<div class="klein-h">${titel}</div><div class="liste">${L.map(([fa, de]) => `<div class="z"><div class="f">${esc(fa)}${hilfe() ? `<div class="d" style="direction:ltr;text-align:left">${esc(de)}</div>` : ""}</div>${say(fa)}</div>`).join("")}</div>`;
+  function uhrHtml() {
+    const a = A(), min = G.minuten || 6, ende = (a.rundeStart || Date.now()) + min * 60000;
+    return `<div class="uhr" data-ende="${ende}">⏱ <span class="rest">–:–</span> · Runde ${(a.runde || 0) + 1} von ${E.runden(a)}</div>`;
+  }
+  setInterval(() => $$(".uhr[data-ende]").forEach(u => { const r = Math.max(0, Math.round((+u.dataset.ende - Date.now()) / 1000)); u.querySelector(".rest").textContent = r ? Math.floor(r / 60) + ":" + String(r % 60).padStart(2, "0") : "Zeit! Bitte bewerten"; u.classList.toggle("knapp", r > 0 && r <= 60); u.classList.toggle("aus", r === 0); }), 1000);
+  function speedHtml() {
+    const a = A(), r = a.runde || 0, rolle = (a.rollen || {})[ME.id], p = E.partner(a, r, ME.id), meine = (((a.bew || {})[r]) || {})[ME.id];
+    if (!rolle) return `<div class="karte" style="margin-top:14px">Du bist später dazugekommen – schau diesmal zu oder frag deine Lehrkraft. 🙂</div>`;
+    let h = uhrHtml();
+    if (rolle === "ag") {
+      const f = D.firmen[a.firma[ME.id]];
+      h += `<div class="rolle ag"><h2>👔 Du bist Arbeitgeber/in</h2><div class="klein muted">Du bleibst sitzen – die Bewerber/innen kommen zu dir.</div>${firmaHtml(f)}
+        <div class="meldung" style="font-size:1.1rem">${p ? `🙋 Dein Gast in dieser Runde: <b>${esc(name(p))}</b>` : "☕ Diese Runde hast du keinen Gast – hör bei einem anderen Gespräch zu."}</div>
+        ${listeHtml(D.fragenAG.concat([[f.extra, f.extraDe + " (Überraschungsfrage)"]]), "Deine Fragen")}</div>`;
+    } else {
+      const pr = D.profile[a.profil[ME.id]], f = p ? D.firmen[a.firma[p]] : null;
+      h += `<div class="rolle"><h2>🙋 Du bewirbst dich</h2>${f ? `<div class="meldung" style="font-size:1.1rem">Geh zu <b>${esc(name(p))}</b> – du bewirbst dich bei:</div>${firmaHtml(f)}` : `<div class="meldung">☕ Diese Runde hast du Pause – lies dein Profil noch einmal und hör bei einem Gespräch zu.</div>`}
+        <details open><summary><b>${pr.icon} Dein Profil</b> <span class="klein muted">(du kannst auch von dir selbst erzählen)</span></summary><div class="liste">${pr.fa.map((x, i) => `<div class="z"><div class="f">${esc(x)}${hilfe() ? `<div class="d" style="direction:ltr;text-align:left">${esc(pr.de[i])}</div>` : ""}</div>${say(x)}</div>`).join("")}</div></details>
+        ${listeHtml(D.satzAN, "Das kannst du sagen")}${listeHtml(D.fragenAN, "Deine Fragen an die Firma")}</div>`;
+    }
+    if (p) h += `<div class="karte" style="margin-top:12px"><h3 style="margin-top:0">${rolle === "ag" ? `⭐ Würden Sie ${esc(name(p))} einstellen?` : `⭐ Würdest du bei ${esc(D.firmen[a.firma[p]].nameDe)} arbeiten?`}</h3>
+      <div class="sterne">${[1, 2, 3, 4, 5].map(s => `<button class="${meine && meine.s >= s ? "an" : ""}" data-stern="${s}">⭐</button>`).join("")}</div>
+      <p class="klein muted">${meine ? "✅ Bewertet – du kannst noch ändern. Die nächste Runde startet, wenn alle bewertet haben." : "Nach dem Gespräch bewerten."}</p></div>`;
+    return h;
+  }
+  function verdrahteSpeed() {
+    $$("[data-stern]").forEach(b => b.onclick = () => { const a = A(), r = a.runde || 0, p = E.partner(a, r, ME.id); schreib(`teams/ablauf/bew/${r}/${ME.id}`, { an: p, s: +b.dataset.stern }); });
+  }
+  function ergebnisHtml() {
+    const a = A(), e = E.ergebnis(a), fname = id => { const f = D.firmen[(a.firma || {})[id]]; return f ? f.icon + " " + f.nameDe : ""; };
+    const match = (x, y) => e.ag.find(g => g.id === x && g.best && g.best.id === y) && e.an.find(b => b.id === y && b.best && b.best.id === x);
+    const paare = e.ag.filter(g => g.best).map(g => ({ g, b: g.best.id, m: match(g.id, g.best.id) }));
+    return `<div class="karte" style="margin-top:14px"><h2 style="margin-top:0">🎉 Wer bekommt den Job?</h2>
+      ${paare.map(({ g, b, m }) => `<div class="paar ${m ? "match" : ""}"><span>${fname(g.id)} <span class="klein muted">(${esc(name(g.id))})</span> → 🙋 <b>${esc(name(b))}</b> ${"⭐".repeat(g.best.s)}</span><span>${m ? "💼 Match – beide wollen!" : ""}</span></div>`).join("") || "<p class='muted'>Noch keine Bewertungen.</p>"}
+      <div class="klein-h">Lieblingsfirma der Bewerber/innen</div>${e.an.map(b => `<div class="paar"><span>🙋 ${esc(name(b.id))}</span><span>${b.best ? fname(b.best.id) + " " + "⭐".repeat(b.best.s) : "–"}</span></div>`).join("")}
+      <p class="klein muted">Zum Abschluss: Jede/r sagt auf Persisch einen Satz – z. B. <span class="fa">من این شغل را می‌خواهم، چون …</span></p></div>`;
+  }
+
+  /* =====================================================================
+     LEITUNG
+     ===================================================================== */
+  function startLeitung() {
+    firebase.auth().onAuthStateChanged(async u => {
+      if (!u) { app().innerHTML = `<div class="karte" style="margin-top:20px"><h2>Nur für Lehrkräfte</h2><p>Bitte zuerst in der <a href="konsole.html">Konsole</a> anmelden.</p></div>`; return; }
+      try { await daten(); } catch (e) { return fehler(e, true); }
+      LT.verbindung(null);
+      if (CODE) hoere(CODE); else zeichneNeu();
+    });
+  }
+  const NEU = { hilfe: true, minuten: 6 };
+  function zeichneNeu() {
+    app().innerHTML = `<div class="karte" style="margin-top:20px"><h2 style="margin-top:0">💼 Vorstellungsgespräch-Speeddating</h2>
+      <p><b>1. Vorbereitung (ca. 25 Min.):</b> Alle sitzen an einem Tisch und machen vier Aufgaben auf dem eigenen Gerät – Wortschatz, „Wer sagt das?“, Sätze bauen, Checkliste für beide Rollen. Der Tisch sieht, wer schon fertig ist.</p>
+      <p><b>2. Rollen:</b> Sind alle fertig, verteilt das Spiel automatisch: 50 % Arbeitgeber/innen (jede/r mit einer Firma), 50 % Bewerber/innen (jede/r mit einem Profil).</p>
+      <p><b>3. Speeddating:</b> Die Arbeitgeber/innen bleiben sitzen, die Bewerber/innen rücken jede Runde weiter. Nach jedem Gespräch bewerten beide mit ⭐. Am Ende: Wer bekommt den Job – und wo gibt es ein 💼 Match?</p>
+      <div class="klein-h">Minuten pro Gespräch</div><div class="seg">${[4, 5, 6, 8, 10].map(m => `<button class="${NEU.minuten === m ? "an" : ""}" data-min="${m}">${m}</button>`).join("")}</div>
+      <div class="klein-h">Hilfe beim Speeddating</div><div class="seg"><button class="${NEU.hilfe ? "an" : ""}" data-hilfe="1">mit Deutsch</button><button class="${NEU.hilfe ? "" : "an"}" data-hilfe="0">nur Persisch</button></div>
+      <p class="klein muted">Die Teilnehmenden brauchen nur Spielcode und Vornamen.</p><button class="btn" id="anlegen">▶ Runde anlegen</button></div>`;
+    $$("[data-min]").forEach(b => b.onclick = () => { NEU.minuten = +b.dataset.min; zeichneNeu(); });
+    $$("[data-hilfe]").forEach(b => b.onclick = () => { NEU.hilfe = b.dataset.hilfe === "1"; zeichneNeu(); });
+    $("#anlegen").onclick = async () => {
+      $("#anlegen").disabled = true;
+      try { CODE = await LT.neueRunde(gRef, Object.assign({ erstellt: Date.now(), phase: "lobby", seed: String(Date.now() % 100000) }, NEU)); } catch (e) { return fehler(e, true); }
+      history.replaceState(null, "", `?leitung=1&code=${CODE}`); hoere(CODE);
+    };
+  }
+  function zeichneLeitung() {
+    if (!G) { app().innerHTML = `<div class="karte" style="margin-top:20px">Diese Runde gibt es nicht (mehr). <a href="?leitung=1">Neue Runde</a></div>`; return; }
+    const ids = E.reihe(SP()), a = A(), stufe = G.phase === "lobby" ? "lobby" : a.stufe || "vorb";
+    let h = `<div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:center;margin:14px 0"><div><div class="klein muted">Spielcode</div><div class="lv-code">${CODE}</div><div class="klein muted">${esc(location.host + location.pathname.replace(/[^/]*$/, ""))}code.html</div></div>
+      <div class="btnreihe">${stufe === "lobby" ? `<button class="btn" id="start" ${ids.length >= 2 ? "" : "disabled"}>▶ Vorbereitung starten</button>` : ""}
+      ${stufe === "vorb" ? `<button class="btn zwei" id="rollenJetzt" ${ids.length >= 2 ? "" : "disabled"}>⏩ Rollen jetzt verteilen</button>` : ""}
+      ${stufe === "speed" ? `<button class="btn zwei" id="naechste">⏭ nächste Runde</button>` : ""}
+      ${stufe === "speed" || stufe === "fertig" ? `<button class="btn zwei klein" id="ergebnis">🏁 ${stufe === "fertig" ? "Ergebnis" : "beenden & Ergebnis"}</button>` : ""}</div></div>`;
+    if (stufe === "lobby") h += `<div class="karte"><h3 style="margin-top:0">Angemeldet (${ids.length})</h3>${ids.map(id => esc(name(id))).join(" · ") || "<span class='muted'>noch niemand</span>"}</div>`;
+    else if (stufe === "vorb") h += teamHtml(ids);
+    else if (stufe === "speed") {
+      const r = a.runde || 0, b = ((a.bew || {})[r]) || {};
+      h += uhrHtml() + `<div class="karte"><h3 style="margin-top:0">Runde ${r + 1}: Gespräche</h3>${E.paare(a, r).map(p => `<div class="paar"><span>👔 ${p.ag ? `<b>${esc(name(p.ag))}</b> · ${esc(D.firmen[a.firma[p.ag]].icon + " " + D.firmen[a.firma[p.ag]].nameDe)}` : "–"}</span><span>🙋 ${p.an ? esc(name(p.an)) : "☕ Pause"} ${p.ag && p.an ? (b[p.ag] && b[p.an] ? "✅" : "⏳") : ""}</span></div>`).join("")}
+        ${E.listen(a).an.length > E.listen(a).ag.length ? `<p class="klein muted">Wer gerade ☕ Pause hat, hört bei einem Gespräch zu.</p>` : ""}</div>`;
+    } else h += ergebnisHtml();
+    LT.render(app(), h);
+    const s = $("#start"); if (s) s.onclick = () => gRef(CODE).update({ phase: "spiel", "teams/ablauf": { stufe: "vorb" } }).catch(fehler);
+    const rj = $("#rollenJetzt"); if (rj) rj.onclick = () => { if (confirm("Rollen jetzt verteilen, auch wenn noch nicht alle fertig sind?")) starteSpeed(); };
+    const n = $("#naechste"); if (n) n.onclick = () => naechsteRunde(a.runde || 0);
+    const e = $("#ergebnis"); if (e) e.onclick = () => schreib("teams/ablauf/stufe", "fertig");
+  }
+
+  /* =====================================================================
+     SPIELER
+     ===================================================================== */
+  function pid() {
+    const s = F.sitzung && F.sitzung(); if (s && s.code) return s.code;
+    let p = null; try { p = localStorage.getItem("farsi_quiz_pid"); if (!p) { p = "q" + Math.random().toString(36).slice(2, 9); localStorage.setItem("farsi_quiz_pid", p); } } catch (e) { p = "q" + Math.random().toString(36).slice(2, 9); }
+    return p;
+  }
+  function gespeicherterName() { const s = F.sitzung && F.sitzung(); if (s && s.name) return s.name; try { return localStorage.getItem("farsi_quiz_name") || ""; } catch (e) { return ""; } }
+  async function startSpieler() {
+    try { await daten(); } catch (e) { return fehler(e, true); }
+    ME = { id: pid(), name: gespeicherterName() };
+    if (CODE && ME.name) beitreten(CODE, ME.name); else zeichneBeitritt();
+  }
+  function zeichneBeitritt(meld) {
+    app().innerHTML = `<div class="karte" style="margin-top:20px;max-width:480px;margin-inline:auto;text-align:center"><div style="font-size:3rem">💼</div><h2 style="margin:0 0 6px">Vorstellungsgespräch-Speeddating</h2>
+      <p>Gib den <b>Spielcode</b> und deinen <b>Vornamen</b> ein.</p>
+      <div style="display:grid;gap:10px;max-width:280px;margin:0 auto"><input class="feld" id="code" inputmode="numeric" maxlength="4" placeholder="Spielcode" value="${esc(CODE || "")}" style="text-align:center;font-size:1.4rem;letter-spacing:.2em">
+        <input class="feld" id="name" maxlength="20" placeholder="Vorname" value="${esc(ME.name)}" style="text-align:center;font-size:1.15rem"><button class="btn" id="los">Mitspielen ➜</button></div>
+      <p class="klein" style="color:var(--granat);min-height:1.2em">${meld || ""}</p></div>`;
+    $("#los").onclick = () => beitreten($("#code").value.replace(/\D/g, ""), $("#name").value.trim());
+    $$("#code,#name").forEach(i => i.addEventListener("keydown", e => { if (e.key === "Enter") $("#los").click(); }));
+  }
+  async function beitreten(c, n) {
+    if (!/^\d{4}$/.test(c)) return zeichneBeitritt("Der Spielcode hat vier Ziffern.");
+    if (!n) return zeichneBeitritt("Bitte gib deinen Vornamen ein.");
+    n = n.split(/\s+/)[0].slice(0, 20);
+    let g; try { g = (await F.mitTimeout(gRef(c).once("value"), 8000)).val(); } catch (e) { return fehler(e, true); }
+    if (!g || !g.seed) { CODE = null; return zeichneBeitritt("Diesen Spielcode gibt es nicht."); }
+    CODE = c; ME.name = n; try { localStorage.setItem("farsi_quiz_name", n); } catch (e) { }
+    history.replaceState(null, "", "?code=" + c);
+    try { if ((g.spieler || {})[ME.id]) await gRef(c).child(`spieler/${ME.id}/name`).set(n); else await gRef(c).child("spieler/" + ME.id).set({ name: n, ts: Date.now() }); } catch (e) { return fehler(e, true); }
+    LT.verbindung(gRef(c).child("spieler/" + ME.id));
+    hoere(c);
+  }
+  function zeichneSpieler() {
+    if (!G) return zeichneBeitritt("Diese Runde wurde beendet.");
+    const ich = SP()[ME.id];
+    if (!ich) { app().innerHTML = `<div class="karte" style="margin-top:20px;text-align:center">Du bist nicht (mehr) in dieser Runde.<br><br><button class="btn" id="nochmal">Wieder mitspielen</button></div>`; $("#nochmal").onclick = () => beitreten(CODE, ME.name); return; }
+    const a = A(), rolle = (a.rollen || {})[ME.id];
+    $("#kopfInfo").textContent = ich.name + (rolle ? (rolle === "ag" ? " · 👔" : " · 🙋") : "");
+    let h;
+    if (G.phase === "lobby") h = `<div class="karte" style="margin-top:20px;text-align:center"><div style="font-size:3rem">💼</div><h2 style="margin:0">Hallo ${esc(ich.name)}!</h2><p>Gleich geht es mit der Vorbereitung los …</p></div>`;
+    else if ((a.stufe || "vorb") === "vorb") h = vorbHtml();
+    else if (a.stufe === "speed") h = speedHtml();
+    else h = ergebnisHtml();
+    LT.render(app(), h);
+    verdrahteAufgabe(); verdrahteSpeed();
+    $$("[data-say]").forEach(b => b.onclick = e => { e.stopPropagation(); F.sprich(b.dataset.say); });
+  }
+
+  function zeichne() { if (!D) return; MODUS === "leitung" ? zeichneLeitung() : zeichneSpieler(); }
+  window.BEWERB_APP = { zeichne, get G() { return G; } };
+  F.initFB(); MODUS === "leitung" ? startLeitung() : startSpieler();
+})();
+</script>
+</body>
+</html>
