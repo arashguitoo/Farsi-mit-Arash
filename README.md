@@ -301,6 +301,15 @@ Eigener Bereich (Startseite → ✍️ Schreibwerkstatt; Lehrkraft: Konsole → 
 - **Firebase:** braucht die Regel `schreiben` aus `firebase-regeln.json` (einmal in der Firebase-Konsole veröffentlichen). Daten: `schreiben/{tn-code}/{aufgabe}/tn` (TN: Versionen, Status) und `/lk/{version}` (Lehrkraft: Korrektur, Freigabe).
 - **🤖 KI-Entwurf:** Knopf ist vorbereitet; sobald ein Weg eingerichtet ist (eigener API-Schlüssel + kleiner Vermittlungsdienst, oder geplante Claude-Aufgabe), füllt er „Korrigierter Text“ und die Kommentare vor.
 
+### Live-Unterricht (`live-unterricht.html`)
+Zentrale Stelle für den Unterricht mit Lektionen (Konsole → 🎓 Live-Unterricht). Lektion wählen → Plan wählen → Runde anlegen; TN treten mit Spielcode + Vorname bei (auch über `code.html`).
+- **Pläne:** ausgearbeitete Pläne in `assets/unterricht/*.json` (Liste in `assets/unterricht/index.json`), sonst ein **automatischer 90-Minuten-Plan** aus den Stationen: Lehrtafel = info/text-Karten, Aufgaben = Übungskarten, Texte ab 5 Zeilen zusätzlich als „Vorlesen & ordnen“, Erklärkarten mit Fragen als Partnergespräch. Persisch I beginnt mit 10 Min. Wiederholung der vorigen Lektion, Fortgeschrittene/Konversation ohne.
+- **Block-Format:** `{id, icon, titel, minuten, tafel:[{ref:"lek/station/idx"} | Karte], aufgaben:[{ref} | {typ:"interview", vorlage} | {typ:"puzzle", quelle, gruppen} | {typ:"sprechen", saetze} | {typ:"partner", fragen, bericht}]}`.
+- **Leitung:** Zeitleiste (Soll/Ist, geplantes Ende, ± Minuten je Block), Lehrtafel blättern (optional auch auf den Handys), Aufgaben 📲 freigeben / ⏹ beenden mit Fortschritt, 🖥️ Leinwand-Modus.
+- **Interview:** Jede/r bekommt eine eigene Familienkarte (Antworten), fragt die Partnerin / den Partner und tippt die gehörten Antworten an → ✔ prüfen vergleicht mit der Karte des Gegenübers.
+- **Vorlesen & ordnen:** Der Text wird in Abschnitte geteilt und verteilt; alle lesen laut, die Gruppe einigt sich auf die Reihenfolge, die Lehrkraft tippt sie auf der Leinwand an → auflösen.
+- Firebase: `live/unterricht/{code}` (gleiche Regeln wie die anderen Live-Spiele).
+
 ### Live: Scharade · Erklären · Malen (`live-scharade.html`)
 Teamspiel wie Activity, Begriffe in `assets/scharade/berufe.json` (Berufe & Berufswelt, je zwei verbotene Wörter). 2–4 Teams; wer dran ist, sieht die Begriffe auf dem eigenen Handy, würfelt die Art (🎭 Pantomime · 🗣️ auf Persisch erklären mit Tabu-Wörtern · ✏️ malen) und startet den Timer (45–120 s). ✓ erraten = 1 Punkt fürs Team, ⏭ weiter. Leinwand: Punkte, Timer, wer dran ist (ohne Begriff). Neues Thema = neue JSON-Datei nach demselben Muster.
 

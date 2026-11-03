@@ -1,0 +1,47 @@
+{
+  "lektion": "03",
+  "titel": "haben + Familie (mit Wiederholung „sein“)",
+  "minuten": 90,
+  "bloecke": [
+    { "id": "rueck", "icon": "🔁", "titel": "Wiederholung: sein + Wörter", "minuten": 10,
+      "tafel": [
+        { "titel": "sein – بودَن", "text": "<p>Kurz wiederholen: Pronomen + Form von „sein“. Die Endungen brauchen wir gleich auch für „haben“!</p>",
+          "beispiele": [{"fa":"مَن دانِشجو هَستَم.","tr":"man dāneschdschū hastam.","de":"Ich bin Student/in."},{"fa":"تو خَستِه هَستی؟","tr":"to chaste hastī?","de":"Bist du müde?"},{"fa":"او مُعَلِّم اَست.","tr":"ū moʿallem ast.","de":"Er/Sie ist Lehrer/in."},{"fa":"ما خوشحال هَستیم.","tr":"mā choschhāl hastīm.","de":"Wir sind froh."},{"fa":"شُما پِزِشک هَستید؟","tr":"schomā pezeschk hastīd?","de":"Sind Sie Arzt/Ärztin?"},{"fa":"آنها گُرُسنِه نیستَند.","tr":"ānhā gorosne nīstand.","de":"Sie sind nicht hungrig."}] }
+      ],
+      "aufgaben": [ {"ref":"02/s02/2"}, {"ref":"02/s13/2"}, {"ref":"02/s11/2"}, {"ref":"02/s04/3"}, {"ref":"02/s06/4"}, {"ref":"02/s13/0"} ] },
+    { "id": "haben", "icon": "📖", "titel": "Neu: haben – داشتَن", "minuten": 15,
+      "tafel": [ {"ref":"03/s00/0"}, {"ref":"03/s01/0"}, {"ref":"03/s01/1"}, {"ref":"03/s02/0"}, {"ref":"03/s02/1"} ],
+      "aufgaben": [ {"ref":"03/s01/2"}, {"ref":"03/s01/3"}, {"ref":"03/s01/4"}, {"ref":"03/s02/3"}, {"ref":"03/s02/5"}, {"ref":"03/s01/5"} ] },
+    { "id": "familie", "icon": "👨‍👩‍👧", "titel": "Familie + Zahlen 1–5", "minuten": 15,
+      "tafel": [ {"ref":"03/s03/0"}, {"ref":"03/s03/1"}, {"ref":"03/s05/0"}, {"ref":"03/s06/0"} ],
+      "aufgaben": [ {"ref":"03/s03/3"}, {"ref":"03/s03/2"}, {"ref":"03/s05/4"}, {"ref":"03/s06/1"}, {"ref":"03/s03/6"}, {"ref":"03/s04/6"} ] },
+    { "id": "interview", "icon": "🗣️", "titel": "Partner-Interview: Deine Familie", "minuten": 25,
+      "tafel": [
+        { "titel": "Fragen an deine Partnerin / deinen Partner", "text": "<p>Jede/r bekommt eine <b>Familienkarte</b> auf dem Handy. Fragt euch gegenseitig – auf Persisch! – und tippt an, was ihr hört. Am Ende prüft das Spiel, ob ihr alles richtig verstanden habt.</p><p>Achtung: Bei <b>Wie viele?</b> und <b>Hast du …?</b> braucht ihr <b>haben</b>, bei <b>Wo ist …?</b> und beim <b>Beruf</b> braucht ihr <b>sein</b>!</p>",
+          "beispiele": [{"fa":"چَند بَرادَر داری؟","tr":"tschand barādar dārī?","de":"Wie viele Brüder hast du?"},{"fa":"دو بَرادَر دارَم.","tr":"do barādar dāram.","de":"Ich habe zwei Brüder."},{"fa":"مادَرِ تو کُجاست؟","tr":"mādar-e to kodschāst?","de":"Wo ist deine Mutter?"},{"fa":"مادَرِ مَن دَر تِهران اَست.","tr":"mādar-e man dar tehrān ast.","de":"Meine Mutter ist in Teheran."},{"fa":"پِدَرِ تو مُعَلِّم اَست؟","tr":"pedar-e to moʿallem ast?","de":"Ist dein Vater Lehrer?"},{"fa":"نَه، پِدَرِ مَن پِزِشک اَست.","tr":"na, pedar-e man pezeschk ast.","de":"Nein, mein Vater ist Arzt."}] }
+      ],
+      "aufgaben": [ {"typ":"interview","titel":"Familien-Interview","vorlage":"familie"} ] },
+    { "id": "sprechen", "icon": "🎤", "titel": "Sprechkette: Meine Familie", "minuten": 15,
+      "tafel": [],
+      "aufgaben": [
+        {"typ":"sprechen","titel":"Meine Familie – drei Sätze","text":"Wer gezogen wird, sagt drei Sätze über die eigene (oder eine erfundene) Familie: einen mit <b>haben</b>, einen mit <b>sein</b>, einen mit <b>nicht</b>.",
+         "saetze":[["مَن … بَرادَر / خواهَر دارَم.","Ich habe … Brüder / Schwestern."],["بَرادَرِ مَن … اَست.","Mein Bruder ist … (Beruf / Gefühl)"],["مادَرِ مَن دَر … اَست.","Meine Mutter ist in …"],["مَن … نَدارَم.","Ich habe kein(e/n) …"],["تو چَند … داری؟","Wie viele … hast du?"]]},
+        {"ref":"03/s10/1"}, {"ref":"03/s10/3"} ] },
+    { "id": "ende", "icon": "✅", "titel": "Abschluss-Check", "minuten": 10,
+      "tafel": [],
+      "aufgaben": [ {"ref":"03/s13/2"}, {"ref":"03/s13/0"}, {"ref":"03/s13/3"}, {"ref":"03/s13/4"} ] }
+  ],
+  "vorlagen": {
+    "familie": {
+      "felder": [
+        { "key": "bruder", "frage": ["چَند بَرادَر داری؟", "Wie viele Brüder hast du?"], "werte": [["هیچ بَرادَری نَدارَم.","keinen"],["یِک بَرادَر دارَم.","einen"],["دو بَرادَر دارَم.","zwei"],["سِه بَرادَر دارَم.","drei"]] },
+        { "key": "schwester", "frage": ["چَند خواهَر داری؟", "Wie viele Schwestern hast du?"], "werte": [["هیچ خواهَری نَدارَم.","keine"],["یِک خواهَر دارَم.","eine"],["دو خواهَر دارَم.","zwei"],["سِه خواهَر دارَم.","drei"]] },
+        { "key": "mutterOrt", "frage": ["مادَرِ تو کُجاست؟", "Wo ist deine Mutter?"], "werte": [["مادَرِ مَن دَر تِهران اَست.","in Teheran"],["مادَرِ مَن دَر کیل اَست.","in Kiel"],["مادَرِ مَن دَر شیراز اَست.","in Schiras"],["مادَرِ مَن دَر بَرلین اَست.","in Berlin"]] },
+        { "key": "mutterBeruf", "frage": ["شُغلِ مادَرِ تو چیست؟", "Was ist deine Mutter von Beruf?"], "werte": [["مادَرِ مَن مُعَلِّم اَست.","Lehrerin"],["مادَرِ مَن پِزِشک اَست.","Ärztin"],["مادَرِ مَن مُهَندِس اَست.","Ingenieurin"],["مادَرِ مَن پَرَستار اَست.","Pflegerin"]] },
+        { "key": "vaterOrt", "frage": ["پِدَرِ تو کُجاست؟", "Wo ist dein Vater?"], "werte": [["پِدَرِ مَن دَر اِصفَهان اَست.","in Isfahan"],["پِدَرِ مَن دَر هامبورگ اَست.","in Hamburg"],["پِدَرِ مَن دَر تِهران اَست.","in Teheran"],["پِدَرِ مَن دَر کیل اَست.","in Kiel"]] },
+        { "key": "vaterGefuehl", "frage": ["پِدَرِ تو اِمروز خوشحال اَست؟", "Ist dein Vater heute froh?"], "werte": [["بَله، خوشحال اَست.","ja, froh"],["نَه، خَستِه اَست.","nein, müde"],["نَه، مَریض اَست.","nein, krank"],["نَه، ناراحَت اَست.","nein, traurig"]] },
+        { "key": "tier", "frage": ["تو گُربِه یا سَگ داری؟", "Hast du eine Katze oder einen Hund?"], "werte": [["یِک گُربِه دارَم.","eine Katze"],["یِک سَگ دارَم.","einen Hund"],["گُربِه و سَگ نَدارَم.","weder noch"]] }
+      ]
+    }
+  }
+}

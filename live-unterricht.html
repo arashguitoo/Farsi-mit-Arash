@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Live-Unterricht · Farsi-Lernpfad</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Vazirmatn:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css">
+<style>
+  .wrap{max-width:1180px}
+  .klein-h{font-size:.78rem;font-weight:800;color:var(--tinte2);text-transform:uppercase;letter-spacing:.04em;margin:14px 0 6px}
+  .lv-code{font-size:2.2rem;font-weight:800;letter-spacing:.2em;color:var(--lapis);line-height:1.1}
+  .seg{display:inline-flex;border:1px solid var(--linie);border-radius:10px;overflow:hidden;flex-wrap:wrap}
+  .seg button{border:0;background:#fff;padding:7px 12px;font:inherit;font-size:.88rem;font-weight:700;cursor:pointer}
+  .seg button.an{background:var(--lapis);color:#fff}
+  .lek-liste{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:8px}
+  .lek{background:#fff;border:1.5px solid var(--linie);border-radius:12px;padding:10px 12px;text-align:left;font:inherit;cursor:pointer}
+  .lek:hover,.lek.an{border-color:var(--lapis)}
+  .lek .p{font-size:.75rem;font-weight:800;color:var(--gruen)}
+  .akt-liste{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:8px}
+  .akt-liste a{display:block;background:#fff;border:1px solid var(--linie);border-radius:12px;padding:10px 12px;text-decoration:none;color:inherit}
+  .akt-liste a:hover{border-color:var(--lapis)}
+  /* Zeitleiste */
+  .zeit{display:flex;gap:12px;flex-wrap:wrap;align-items:center;background:#fff;border:1px solid var(--linie);border-radius:14px;padding:8px 12px;margin:10px 0}
+  .zeit .gross{font-size:1.4rem;font-weight:800}
+  .zeit .ok{color:var(--gruen)}.zeit .warn{color:#8a5400}.zeit .rot{color:var(--granat)}
+  .balken{display:flex;height:10px;border-radius:6px;overflow:hidden;background:var(--papier2,#eee);flex:1;min-width:200px}
+  .balken i{display:block;height:100%;border-right:2px solid #fff}
+  .haupt{display:grid;grid-template-columns:270px 1fr;gap:14px;align-items:start}
+  @media (max-width:900px){.haupt{grid-template-columns:1fr}}
+  .blk{display:block;width:100%;text-align:left;background:#fff;border:1.5px solid var(--linie);border-radius:12px;padding:8px 10px;margin-bottom:6px;font:inherit;cursor:pointer}
+  .blk.an{border-color:var(--lapis);background:var(--lapis-hell)}
+  .blk.fertig{opacity:.65}
+  .blk .t{font-weight:800}
+  .blk .m{font-size:.78rem;color:var(--tinte2)}
+  .min-btn{border:1px solid var(--linie);background:#fff;border-radius:6px;padding:0 6px;font-size:.75rem;cursor:pointer}
+  .tafel-steuer{display:flex;justify-content:space-between;align-items:center;gap:8px;margin:8px 0;flex-wrap:wrap}
+  .aufg{display:flex;justify-content:space-between;align-items:center;gap:8px;background:#fff;border:1px solid var(--linie);border-radius:12px;padding:8px 12px;margin:6px 0}
+  .aufg.laeuft{border-color:var(--safran);background:var(--safran-hell)}
+  .fort{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
+  .fort span{border-radius:999px;padding:2px 10px;font-size:.8rem;font-weight:700;background:#fff;border:1px solid var(--linie)}
+  .fort span.ok{background:var(--gruen-hell);border-color:#9fc9b0}
+  .leinwand .k-info,.leinwand .karte{font-size:1.25rem}
+  .leinwand .bsp .fa,.leinwand .fa{font-size:1.15em}
+  body.lw .kopf,body.lw .nur-lk{display:none!important}
+  body.lw .haupt{grid-template-columns:1fr}
+  body.lw .wrap{max-width:1400px}
+  .lw-leiste{position:fixed;right:10px;bottom:10px;z-index:50;display:none;gap:6px}
+  body.lw .lw-leiste{display:flex}
+  .meldung{background:var(--safran-hell);border:1px solid #e6d3ad;border-radius:12px;padding:10px 14px;margin:10px 0}
+  .fa-g{font-family:var(--fa);direction:rtl;text-align:right}
+  .zeile-f{border-bottom:1px solid var(--linie);padding:6px 0}
+  .zeile-f .f{font-family:var(--fa);font-size:1.15rem;direction:rtl;text-align:right}
+  .zeile-f .d{font-size:.8rem;color:var(--tinte2)}
+  .opt-reihe{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px;direction:rtl}
+  .opt-reihe button{border:1.5px solid var(--linie);background:#fff;border-radius:10px;padding:4px 10px;font-family:var(--fa);font-size:1.02rem;cursor:pointer}
+  .opt-reihe button.an{border-color:var(--lapis);background:var(--lapis-hell)}
+  .opt-reihe button.ok{border-color:var(--gruen);background:var(--gruen-hell)}
+  .opt-reihe button.nein{border-color:var(--granat);background:var(--granat-hell)}
+  .teil{background:#fff;border:1.5px solid var(--linie);border-radius:12px;padding:10px 12px;margin:6px 0;cursor:pointer;text-align:right}
+  .teil.gewaehlt{opacity:.45}
+  .teil .wer{font-size:.8rem;font-weight:800;color:var(--tinte2);text-align:left}
+  .name-gross{font-size:3rem;font-weight:800;text-align:center;color:var(--lapis)}
+  .ich-dran{background:var(--safran);color:#fff;border-radius:14px;padding:12px;text-align:center;font-size:1.3rem;font-weight:800}
+</style>
+</head>
+<body>
+<header class="kopf">
+  <div class="wrap">
+    <a href="konsole.html" class="medaillon" style="text-decoration:none">فا</a>
+    <div><h1 id="kopfTitel">🎓 Live-Unterricht</h1><div class="unter">Lehrtafel · Aufgaben freigeben · Dialoge · Farsi-Lernpfad</div></div>
+    <div class="rechts"><span class="kopf-btn" id="kopfInfo" style="background:transparent;border-color:transparent"></span><a class="kopf-btn" href="aktivitaeten.html">← Aktivitäten</a></div>
+  </div>
+</header>
+<main class="wrap" style="padding-bottom:60px"><div id="app"><p class="muted" style="margin-top:30px">Lade …</p></div></main>
+<div class="lw-leiste"><button class="btn zwei klein" id="lwVor">◀</button><button class="btn zwei klein" id="lwNach">▶</button><button class="btn zwei klein" id="lwAus">⚙️ Steuerung</button></div>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+<script src="assets/core.js"></script>
+<script>window.OHNE_LEKTION = true;</script>
+<script src="assets/lektion.js"></script>
+<script src="assets/live-tools.js"></script>
+<script>
+/* ===================== Planung (rein) ===================== */
+window.UNTERRICHT = (function () {
+  const INTERAKTIV = ["paare", "wahl", "bauen", "sortieren", "finden", "lesen", "ordnen", "memory", "tempo", "zuordnen"];
+  const TAFEL = ["info", "text", "buchstaben"];
+  const TYP_ICON = { paare: "🔗", wahl: "☑️", bauen: "🧱", sortieren: "🗂️", finden: "🔍", lesen: "📖", ordnen: "🔢", memory: "🃏", tempo: "⚡", zuordnen: "🧩", interview: "🗣️", puzzle: "🧩", sprechen: "🎤", partner: "👥" };
+  const TYP_NAME = { paare: "Paare finden", wahl: "Quiz", bauen: "Bauen", sortieren: "Sortieren", finden: "Finden", lesen: "Lesen", ordnen: "Ordnen", memory: "Memory", tempo: "Blitz", zuordnen: "Zuordnen", interview: "Partner-Interview", puzzle: "Vorlesen & ordnen", sprechen: "Sprechrunde", partner: "Partnergespräch" };
+  const hash = s => { let h = 2166136261; for (const c of String(s)) { h ^= c.charCodeAt(0); h = Math.imul(h, 16777619); } return h >>> 0; };
+  function rng(seed) { let a = hash(seed); return () => { a |= 0; a = a + 0x6D2B79F5 | 0; let t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+  function mischen(a, r) { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(r() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
+  const runde5 = m => Math.max(5, Math.round(m / 5) * 5);
+  const istDialog = k => k.typ === "text" && (k.zeilen || []).filter(z => /^[^:،]{2,20}:/.test(z.fa)).length >= Math.min(4, k.zeilen.length);
+  /* Automatischer 90-Minuten-Plan aus einer Lektion */
+  function autoPlan(eintrag, L, vorEintrag, vorL) {
+    const main = L.stationen.filter(s => !s.zusatz), zus = L.stationen.filter(s => s.zusatz);
+    const check = main.filter(s => /check/i.test(s.titel)).pop();
+    const bl = [], ref = (st, i) => ({ ref: `${eintrag.id}/${st.id}/${i}` });
+    if (eintrag.bereich === "a" && vorL) {
+      const vc = vorL.stationen.filter(s => !s.zusatz && /check/i.test(s.titel)).pop() || vorL.stationen.filter(s => !s.zusatz).pop();
+      const auf = []; vc.karten.forEach((k, i) => { if (INTERAKTIV.includes(k.typ)) auf.push({ ref: `${vorEintrag.id}/${vc.id}/${i}` }); });
+      const intro = vorL.stationen[0].karten.findIndex(k => k.typ === "info" && k.beispiele && k.beispiele.length);
+      bl.push({ id: "rueck", icon: "🔁", titel: "Wiederholung: " + vorEintrag.titel, minuten: 10, tafel: intro >= 0 ? [{ ref: `${vorEintrag.id}/${vorL.stationen[0].id}/${intro}` }] : [], aufgaben: auf.slice(0, 5) });
+    }
+    main.filter(s => s !== check).forEach(st => {
+      const tafel = [], auf = [];
+      st.karten.forEach((k, i) => {
+        if (TAFEL.includes(k.typ)) tafel.push(ref(st, i));
+        if (INTERAKTIV.includes(k.typ)) auf.push(ref(st, i));
+        if (k.typ === "text" && (k.zeilen || []).length >= 5) auf.push({ typ: "puzzle", titel: (istDialog(k) ? "Dialog" : "Text") + " vorlesen & ordnen: " + (k.titel || st.titel), quelle: `${eintrag.id}/${st.id}/${i}` });
+        if (k.typ === "info" && (k.beispiele || []).filter(b => /[؟?]\s*$/.test(b.fa)).length >= 3) auf.push({ typ: "partner", titel: "Fragen zu zweit: " + (k.titel || st.titel), fragen: k.beispiele.filter(b => /[؟?]\s*$/.test(b.fa)).map(b => [b.fa, b.de]) });
+      });
+      if (tafel.length || auf.length) bl.push({ id: st.id, icon: "📘", titel: st.titel, gewicht: tafel.length * 2 + auf.length * 3, tafel, aufgaben: auf });
+    });
+    if (check) { const auf = []; check.karten.forEach((k, i) => { if (INTERAKTIV.includes(k.typ)) auf.push(ref(check, i)); }); bl.push({ id: "ende", icon: "✅", titel: "Abschluss: " + check.titel, minuten: 10, tafel: [], aufgaben: auf }); }
+    const fest = bl.filter(b => b.minuten).reduce((s, b) => s + b.minuten, 0), offen = bl.filter(b => !b.minuten), sumG = offen.reduce((s, b) => s + b.gewicht, 0) || 1;
+    offen.forEach(b => { b.minuten = runde5((90 - fest) * b.gewicht / sumG); });
+    if (offen.length) { const diff = 90 - bl.reduce((s, b) => s + b.minuten, 0), gr = offen.slice().sort((a, b) => b.minuten - a.minuten)[0]; gr.minuten = Math.max(5, gr.minuten + diff); }
+    if (zus.length) { const auf = []; zus.forEach(st => st.karten.forEach((k, i) => { if (INTERAKTIV.includes(k.typ)) auf.push({ ref: `${eintrag.id}/${st.id}/${i}`, gruppe: st.titel }); })); if (auf.length) bl.push({ id: "zusatz", icon: "➕", titel: "Zusatzaufgaben (Reserve)", minuten: 0, tafel: [], aufgaben: auf }); }
+    return { lektion: eintrag.id, titel: "Automatischer Plan aus der Lektion", minuten: 90, auto: true, bloecke: bl };
+  }
+  /* Paare/Kreise bilden: [{fragt: id, wird: id}] – bei ungerader Zahl ein Dreier-Kreis */
+  function paare(ids, seed) {
+    const m = mischen(ids, rng(seed)), gruppen = [];
+    for (let i = 0; i < m.length; i += 2) gruppen.push(m.slice(i, i + 2));
+    if (gruppen.length > 1 && gruppen[gruppen.length - 1].length === 1) gruppen[gruppen.length - 2].push(gruppen.pop()[0]);
+    const ziel = {}; gruppen.forEach(g => g.forEach((id, i) => { ziel[id] = g[(i + 1) % g.length]; }));
+    return { gruppen, ziel };
+  }
+  /* Familien-/Interviewkarte einer Person (immer gleich für Person + Aufgabe) */
+  function karteVon(felder, pid, id) { const r = rng(pid + "|" + id), o = {}; felder.forEach(f => { o[f.key] = Math.floor(r() * f.werte.length); }); return o; }
+  /* Puzzle: Text in Abschnitte teilen */
+  function teile(k, gruppen) {
+    const z = k.zeilen, out = []; let i = 0;
+    (gruppen && gruppen.length ? gruppen : Array.from({ length: Math.ceil(z.length / 2) }, () => 2)).forEach(n => { const s = z.slice(i, i + n); i += n; if (s.length) out.push(s); });
+    if (i < z.length) out.push(z.slice(i));
+    return out;
+  }
+  return { INTERAKTIV, TYP_ICON, TYP_NAME, autoPlan, paare, karteVon, teile, mischen, rng };
+})();
+
+/* ===================== Seite ===================== */
+(function () {
+  const F = window.FARSI, { $, $$, esc, toast } = F, LT = window.LIVE_TOOLS, LE = window.LEKTION_ENGINE, U = window.UNTERRICHT;
+  const qs = new URLSearchParams(location.search);
+  const MODUS = qs.get("leitung") ? "leitung" : "spieler";
+  let CODE = (qs.get("code") || "").replace(/\D/g, "") || null;
+  let G = null, REF = null, ME = null, IX = null, PLAN = null, PLANKEY = null, PLAENE = null;
+  const LEK = {};       /* id → {eintrag, L} */
+  let WAHL = { bereich: "a", lek: null }, LEINWAND = false, TN_KEY = null;
+  const app = () => $("#app");
+  const gRef = c => F.ref(`live/unterricht/${c}`);
+  const SP = () => (G && G.spieler) || {};
+  const name = id => (SP()[id] || {}).name || "?";
+  const reihe = () => Object.entries(SP()).filter(([, s]) => s && s.name).sort(([, a], [, b]) => (a.ts || 0) - (b.ts || 0)).map(([id]) => id);
+  const fmt = s => { s = Math.max(0, Math.round(s)); return Math.floor(s / 60) + ":" + String(s % 60).padStart(2, "0"); };
+  const uhrzeit = ts => new Date(ts).toLocaleTimeString("de-DE", { hour: "2-digit", minute: "2-digit" });
+
+  /* ---------- Daten ---------- */
+  async function index() { if (!IX) IX = await F.ladeJSON("lektionen/index.json"); return IX; }
+  async function plaene() { if (!PLAENE) { try { PLAENE = (await F.ladeJSON("assets/unterricht/index.json")).plaene; } catch (e) { PLAENE = []; } } return PLAENE; }
+  async function lektion(id) {
+    if (LEK[id]) return LEK[id];
+    const ix = await index(), e = ix.lektionen.find(l => l.id === id); if (!e) throw new Error("Lektion fehlt: " + id);
+    LEK[id] = { eintrag: e, L: await F.ladeLektion(e) }; return LEK[id];
+  }
+  function station(L, sid) { return L.stationen.find(s => s.id === sid) || L.stationen.find(s => s.id.endsWith("-" + sid)); }
+  async function karte(refStr) {
+    const [lid, sid, idx] = refStr.split("/"); const { L } = await lektion(lid), st = station(L, sid);
+    const k = st && st.karten[+idx]; return k ? Object.assign({ _st: st.titel }, k) : null;
+  }
+  async function ladePlan(lekId, planId) {
+    const key = lekId + "|" + planId; if (PLAN && PLANKEY === key) return PLAN;
+    const { eintrag, L } = await lektion(lekId); let roh;
+    if (planId === "auto") {
+      const ix = await index(), i = ix.lektionen.findIndex(l => l.id === lekId), vor = ix.lektionen[i - 1];
+      let vorL = null; if (eintrag.bereich === "a" && vor && vor.bereich === "a") { try { vorL = (await lektion(vor.id)).L; } catch (e) { } }
+      roh = U.autoPlan(eintrag, L, vor, vorL);
+    } else roh = await F.ladeJSON("assets/unterricht/" + planId + ".json");
+    /* Verweise auflösen */
+    const P = JSON.parse(JSON.stringify(roh));
+    for (const b of P.bloecke) {
+      b.tafel = (await Promise.all((b.tafel || []).map(t => t.ref ? karte(t.ref) : Object.assign({ typ: "info" }, t)))).filter(Boolean);
+      b.aufgaben = (await Promise.all((b.aufgaben || []).map(async a => {
+        if (a.ref) { const k = await karte(a.ref); return k ? Object.assign(k, { _gruppe: a.gruppe }) : null; }
+        if (a.typ === "puzzle" && a.quelle) { const k = await karte(a.quelle); return k && k.zeilen ? Object.assign({}, a, { _teile: U.teile(k, a.gruppen) }) : null; }
+        if (a.typ === "interview") return Object.assign({}, a, { _felder: (roh.vorlagen || {})[a.vorlage].felder });
+        return a;
+      }))).filter(Boolean);
+    }
+    P.titelLek = eintrag.titel; P.lekId = lekId; P.planId = planId;
+    PLAN = P; PLANKEY = key; return P;
+  }
+  const aufName = a => (a.titel || U.TYP_NAME[a.typ] || a.typ) + (a._st && a.titel !== a._st ? "" : "");
+
+  function hoere(c) {
+    if (REF) REF.off(); REF = gRef(c);
+    REF.on("value", async s => {
+      G = s.val();
+      if (MODUS !== "leitung") LT.pruefeNeuLaden(G);
+      if (G && G.lek) { try { await ladePlan(G.lek, G.plan); } catch (e) { return fehler(e, true); } }
+      if (LT.tipptGerade(zeichne)) return; zeichne();
+    }, e => fehler(e, true));
+  }
+  function fehler(e, hart) { console.error(e); if (!hart && G) { toast("Das hat nicht geklappt – bitte noch einmal tippen."); return; } app().innerHTML = `<div class="karte" style="margin-top:20px"><b>Das hat nicht geklappt.</b><p class="klein muted">${esc(e && e.message || e)}</p></div>`; }
+  const upd = o => gRef(CODE).update(o).catch(e => fehler(e));
+  const schreib = (p, w) => gRef(CODE).child(p).set(w).catch(e => fehler(e));
+
+  /* ---------- Karten anzeigen (Lehrtafel & Aufgaben aus den Lektionen) ---------- */
+  function zeigeKarte(k, el, fertig) {
+    try { LE.raeumeAuf(); } catch (e) { }
+    const r = LE.R[k.typ];
+    if (!r) { el.innerHTML = `<div class="karte">Kartentyp „${esc(k.typ)}“ gibt es hier nicht.</div>`; return; }
+    r(JSON.parse(JSON.stringify(k)), el, fertig || (() => { }));
+  }
+
+  /* =====================================================================
+     LEITUNG
+     ===================================================================== */
+  function startLeitung() {
+    firebase.auth().onAuthStateChanged(async u => {
+      if (!u) { app().innerHTML = `<div class="karte" style="margin-top:20px"><h2>Nur für Lehrkräfte</h2><p>Bitte zuerst in der <a href="konsole.html">Konsole</a> anmelden.</p></div>`; return; }
+      try { await index(); await plaene(); } catch (e) { return fehler(e, true); }
+      LT.verbindung(null);
+      if (CODE) hoere(CODE); else zeichneAuswahl();
+    });
+  }
+  function zeichneAuswahl() {
+    const B = IX.bereiche, L = IX.lektionen.filter(l => l.bereich === WAHL.bereich), hat = id => PLAENE.filter(p => p.lektion === id);
+    const lek = WAHL.lek && IX.lektionen.find(l => l.id === WAHL.lek);
+    let h = `<div class="karte" style="margin-top:18px"><h2 style="margin-top:0">🎓 Live-Unterricht</h2>
+      <p style="margin-top:0">Lektion wählen → Plan wählen → Runde anlegen. Im Unterricht zeigst du die <b>Lehrtafel</b> auf der Leinwand und gibst danach <b>Aufgaben</b> auf die Handys frei – auch Partner-Interviews, Sprechrunden und „Vorlesen & ordnen“. Die Zeitleiste zeigt, ob du im Plan bist.</p>
+      <div class="seg">${B.map(b => `<button class="${WAHL.bereich === b.id ? "an" : ""}" data-ber="${b.id}">${b.icon} ${esc(b.titel)}</button>`).join("")}</div>
+      <div class="lek-liste" style="margin-top:10px">${L.map(l => `<button class="lek ${WAHL.lek === l.id ? "an" : ""}" data-lek="${l.id}"><b>${esc(l.nummer ? "L" + l.nummer : l.id)}</b> ${esc(l.titel)}${hat(l.id).length ? `<div class="p">★ ${hat(l.id).length} ausgearbeiteter Plan</div>` : ""}</button>`).join("")}</div></div>`;
+    if (lek) h += `<div class="karte" style="margin-top:12px"><h3 style="margin-top:0">${esc(lek.titel)} – welcher Plan?</h3>
+      ${hat(lek.id).map(p => `<div class="aufg"><div><b>★ ${esc(p.titel)}</b><div class="klein muted">${p.minuten} Min. · ${esc(p.beschreibung || "")}</div></div><button class="btn klein" data-plan="${p.datei}">▶ Runde anlegen</button></div>`).join("")}
+      <div class="aufg"><div><b>⚙️ Automatischer Plan</b><div class="klein muted">90 Min. aus den Stationen der Lektion – Lehrtafel = Erklärkarten, Aufgaben = Übungen${lek.bereich === "a" ? ", mit Wiederholung der vorigen Lektion" : ""}</div></div><button class="btn zwei klein" data-plan="auto">▶ Runde anlegen</button></div></div>`;
+    h += `<div class="karte" style="margin-top:12px"><h3 style="margin-top:0">🎲 Weitere Live-Aktivitäten</h3><div class="akt-liste">${Object.entries(LT.SPIELE).filter(([k]) => k !== "unterricht").map(([k, s]) => { const b = s.url("").replace(/[?&]code=$/, ""); return `<a href="${esc(b + (b.includes("?") ? "&" : "?") + "leitung=1")}">${s.icon} ${esc(s.titel)}</a>`; }).join("")}<a href="lese-pruefung.html">📖 Lese-Prüfung</a><a href="schreibwerkstatt.html?leitung=1">✍️ Schreibwerkstatt</a></div></div>`;
+    app().innerHTML = h;
+    $$("[data-ber]").forEach(b => b.onclick = () => { WAHL.bereich = b.dataset.ber; WAHL.lek = null; zeichneAuswahl(); });
+    $$("[data-lek]").forEach(b => b.onclick = () => { WAHL.lek = b.dataset.lek; zeichneAuswahl(); window.scrollTo(0, document.body.scrollHeight); });
+    $$("[data-plan]").forEach(b => b.onclick = async () => {
+      b.disabled = true; b.textContent = "Lade …";
+      try { await ladePlan(WAHL.lek, b.dataset.plan); } catch (e) { return fehler(e, true); }
+      const d = { erstellt: Date.now(), phase: "spiel", lek: WAHL.lek, plan: b.dataset.plan, block: 0, tafel: 0, handyTafel: true };
+      try { CODE = await LT.neueRunde(gRef, d); } catch (e) { return fehler(e, true); }
+      history.replaceState(null, "", `?leitung=1&code=${CODE}`); hoere(CODE);
+    });
+  }
+  /* Zeitmanagement */
+  const minuten = i => ((G.min || {})[i] != null ? G.min[i] : PLAN.bloecke[i].minuten) || 0;
+  function zeitHtml() {
+    const P = PLAN, gesamt = P.bloecke.reduce((s, b, i) => s + minuten(i), 0);
+    if (!G.start) return `<div class="zeit"><b>⏱ Geplant: ${gesamt} Min.</b><span class="klein muted">${P.bloecke.map((b, i) => b.icon + " " + minuten(i)).join(" · ")}</span><button class="btn klein" id="beginn">▶ Unterricht beginnen</button></div>`;
+    const jetzt = Date.now(), ist = (jetzt - G.start) / 1000, b = G.block || 0, bs = ((G.bz || {})[b] || {}).start || jetzt, bIst = (jetzt - bs) / 1000;
+    const sollBisEnde = P.bloecke.slice(0, b + 1).reduce((s, x, i) => s + minuten(i), 0) * 60, sollBisStart = sollBisEnde - minuten(b) * 60;
+    const diff = Math.round((Math.max(ist, sollBisStart + bIst) - (sollBisStart + Math.min(bIst, minuten(b) * 60))) / 60);
+    const verzug = Math.round((ist - sollBisStart - Math.min(bIst, minuten(b) * 60)) / 60);
+    const ende = G.start + gesamt * 60000, rest = gesamt * 60 - ist;
+    const kl = verzug > 3 ? "rot" : verzug > 0 ? "warn" : "ok";
+    return `<div class="zeit"><div><div class="klein muted">Unterricht</div><div class="gross" data-uhr="${G.start}">${fmt(ist)}</div></div>
+      <div><div class="klein muted">Block ${b + 1}: ${esc(P.bloecke[b].titel)}</div><div class="gross ${bIst > minuten(b) * 60 ? "rot" : bIst > minuten(b) * 48 ? "warn" : ""}" data-uhr="${bs}">${fmt(bIst)}</div><div class="klein muted">von ${minuten(b)} Min.</div></div>
+      <div class="balken" title="Plan">${P.bloecke.map((x, i) => `<i style="width:${minuten(i) / gesamt * 100}%;background:${i < b ? "#9fc9b0" : i === b ? "var(--safran)" : "#d9dfdc"}"></i>`).join("")}</div>
+      <div><div class="klein muted">Ende geplant</div><div class="gross">${uhrzeit(ende)}</div><div class="klein ${kl}">${verzug > 0 ? `⚠️ ${verzug} Min. hinter Plan` : verzug < 0 ? `${-verzug} Min. Vorsprung` : "im Plan"} · Rest ${fmt(rest)}</div></div></div>`;
+  }
+  setInterval(() => { if (MODUS === "leitung" && G && G.start && $(".zeit")) { const z = $(".zeit"); const neu = document.createElement("div"); neu.innerHTML = zeitHtml(); z.replaceWith(neu.firstElementChild); verdrahteZeit(); } }, 5000);
+  function verdrahteZeit() { const b = $("#beginn"); if (b) b.onclick = () => upd({ start: Date.now(), [`bz/${G.block || 0}/start`]: Date.now() }); }
+
+  function aufgabeAktiv() { return G.aufgabe && PLAN.bloecke[G.aufgabe.b] && PLAN.bloecke[G.aufgabe.b].aufgaben[G.aufgabe.i]; }
+  function ergebnisse() { return (G.teams && G.teams.r && G.aufgabe && G.teams.r[G.aufgabe.id]) || {}; }
+  function zeichneLeitung() {
+    if (!G) { app().innerHTML = `<div class="karte" style="margin-top:20px">Diese Runde gibt es nicht (mehr). <a href="?leitung=1">Neu</a></div>`; return; }
+    if (!PLAN) return;
+    $("#kopfTitel").textContent = "🎓 " + PLAN.titelLek;
+    const b = G.block || 0, B = PLAN.bloecke[b], t = Math.min(G.tafel || 0, Math.max(0, B.tafel.length - 1)), akt = aufgabeAktiv();
+    let h = `<div class="nur-lk" style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-top:10px"><div><span class="klein muted">Spielcode </span><span class="lv-code">${CODE}</span> <span class="klein muted">· ${esc(location.host + location.pathname.replace(/[^/]*$/, ""))}code.html · ${reihe().length} TN</span></div>
+      <div class="btnreihe"><button class="btn" id="lw">🖥️ Leinwand</button><a class="btn zwei klein" href="?leitung=1" style="text-decoration:none">↺ andere Lektion</a></div></div><div class="nur-lk">${zeitHtml()}</div>
+      <div class="haupt"><div class="nur-lk"><div class="klein-h">${esc(PLAN.titel)}</div>${PLAN.bloecke.map((x, i) => `<button class="blk ${i === b ? "an" : ""} ${((G.bz || {})[i] || {}).ende && i !== b ? "fertig" : ""}" data-blk="${i}"><div class="t">${x.icon} ${esc(x.titel)}</div><div class="m">⏱ ${minuten(i)} Min. <span class="min-btn" data-min="${i}|-5">−</span> <span class="min-btn" data-min="${i}|5">+</span> · ${x.tafel.length} Tafel · ${x.aufgaben.length} Aufgaben</div></button>`).join("")}</div><div>`;
+    if (akt && LEINWAND) h += aufgabeLeinwandHtml(akt);
+    else {
+      if (B.tafel.length) h += `<div class="tafel-steuer nur-lk"><b>🧑‍🏫 Lehrtafel ${t + 1} / ${B.tafel.length}</b><span class="btnreihe"><button class="btn zwei klein" id="tVor" ${t ? "" : "disabled"}>◀</button><button class="btn zwei klein" id="tNach" ${t < B.tafel.length - 1 ? "" : "disabled"}>▶</button><label class="klein"><input type="checkbox" id="handyTafel" ${G.handyTafel !== false ? "checked" : ""}> auch auf den Handys</label></span></div><div id="tafel" class="leinwand"></div>`;
+      else h += `<div class="meldung nur-lk">Dieser Block hat keine Lehrtafel – gib gleich eine Aufgabe frei.</div>`;
+    }
+    h += `<div class="nur-lk"><div class="klein-h">📲 Aufgaben zur Auswahl</div>${B.aufgaben.map((a, i) => { const laeuft = akt && G.aufgabe.b === b && G.aufgabe.i === i;
+      return `<div class="aufg ${laeuft ? "laeuft" : ""}"><div>${U.TYP_ICON[a.typ] || "▫️"} <b>${esc(aufName(a))}</b> <span class="klein muted">${esc(U.TYP_NAME[a.typ] || "")}${a._st ? " · " + esc(a._st) : ""}${a._gruppe ? " · " + esc(a._gruppe) : ""}</span></div>
+        ${laeuft ? `<button class="btn rot klein" data-stopp="1">⏹ beenden</button>` : `<span class="btnreihe"><button class="btn zwei klein" data-vorschau="${i}">👁</button><button class="btn klein" data-frei="${i}">📲 freigeben</button></span>`}</div>`; }).join("") || `<p class="muted klein">Keine Aufgaben in diesem Block.</p>`}
+      ${akt && !(G.aufgabe.b === b) ? `<div class="meldung">Läuft noch: ${esc(aufName(akt))} <button class="btn rot klein" data-stopp="1">⏹ beenden</button></div>` : ""}
+      ${akt ? aufgabeStandHtml(akt) : ""}<div id="vorschau"></div></div></div></div>`;
+    LT.render(app(), h);
+    const tel = $("#tafel"); if (tel && B.tafel[t]) zeigeKarte(B.tafel[t], tel);
+    verdrahteLeitung(B, t);
+  }
+  function aufgabeStandHtml(a) {
+    const E = ergebnisse(), ids = reihe();
+    let h = `<div class="karte" style="margin-top:10px"><h3 style="margin-top:0">${U.TYP_ICON[a.typ] || ""} Läuft: ${esc(aufName(a))}</h3>`;
+    if (a.typ === "puzzle" || a.typ === "sprechen") h += aufgabeLeinwandHtml(a, true);
+    else if (a.typ === "interview" || a.typ === "partner") { const P = U.paare(ids, G.aufgabe.id); h += `<div class="fort">${P.gruppen.map(g => `<span>${g.map(name).join(" ↔ ")}</span>`).join("")}</div>`; }
+    const fertig = ids.filter(id => E[id] && E[id].fertig != null || E[id] && E[id].n != null);
+    if (!["puzzle", "sprechen"].includes(a.typ)) h += `<div class="fort">${ids.map(id => { const e = E[id]; return `<span class="${e && (e.n != null || e.fertig) ? "ok" : ""}">${esc(name(id))}${e && e.n ? " " + e.p + "/" + e.n : e && e.fertig ? " ✓" : ""}</span>`; }).join("")}</div><p class="klein muted">${fertig.length} von ${ids.length} fertig</p>`;
+    return h + `</div>`;
+  }
+  /* große Ansicht laufender Spezial-Aufgaben */
+  function aufgabeLeinwandHtml(a, klein) {
+    const ids = reihe();
+    if (a.typ === "puzzle") {
+      const T = a._teile, ord = (G.aufgabe.reihe || []).map(Number), aufl = !!G.aufgabe.aufl, vert = puzzleVerteilung(a, ids);
+      const label = i => esc(vert[i].map(name).join(" + ") || "–");
+      let h = `<h2 style="margin:6px 0">🧩 ${esc(a.titel)}</h2>`;
+      if (!aufl) h += `<p>📢 Alle lesen ihren Abschnitt laut vor. Dann: Welcher Abschnitt kommt zuerst? Tippe die Abschnitte in der Reihenfolge an, auf die ihr euch einigt.</p>
+        <div class="klein-h">Eure Reihenfolge</div>${ord.map((i, n) => `<div class="teil"><div class="wer">${n + 1}. Abschnitt von ${label(i)}</div><div class="fa-g">${esc(T[i][0].fa.split(" ").slice(0, 5).join(" "))} …</div></div>`).join("") || `<p class="muted klein">noch leer</p>`}
+        <div class="klein-h">Abschnitte</div>${U.mischen(T.map((_, i) => i), U.rng(G.aufgabe.id)).map(i => `<div class="teil ${ord.includes(i) ? "gewaehlt" : ""}" data-teil="${i}"><div class="wer">Abschnitt von ${label(i)}</div><div class="fa-g">${esc(T[i][0].fa.split(" ").slice(0, 5).join(" "))} …</div></div>`).join("")}
+        <div class="btnreihe"><button class="btn" id="pAufl" ${ord.length === T.length ? "" : "disabled"}>✔ auflösen</button><button class="btn zwei klein" id="pLeer">↺</button></div>`;
+      else { const ok = ord.filter((x, n) => x === n).length;
+        h += `<div class="meldung">✔ ${ok} von ${T.length} Abschnitten an der richtigen Stelle!</div>${T.map((t, i) => `<div class="teil"><div class="wer">${i + 1}. ${ord[i] === i ? "✅" : "❌"} Abschnitt von ${label(i)}</div>${t.map(z => `<div class="fa-g" style="font-size:1.15rem">${esc(z.fa)}</div><div class="klein muted">${esc(z.de)}</div>`).join("")}</div>`).join("")}`; }
+      return h;
+    }
+    if (a.typ === "sprechen") {
+      const g = G.aufgabe.gezogen || [], jetzt = g[g.length - 1];
+      return `<h2 style="margin:6px 0">🎤 ${esc(a.titel)}</h2><p>${a.text || ""}</p>${jetzt ? `<div class="name-gross">🎤 ${esc(name(jetzt))}</div>` : ""}
+        <div>${(a.saetze || []).map(([fa, de]) => `<div class="zeile-f"><div class="f">${esc(fa)}</div><div class="d">${esc(de)}</div></div>`).join("")}</div>
+        <div class="btnreihe" style="margin-top:10px"><button class="btn" id="ziehen">🎲 Nächste Person ziehen</button><span class="klein muted">${g.length} von ${ids.length} dran gewesen</span></div>`;
+    }
+    if (a.typ === "interview" || a.typ === "partner") { const P = U.paare(ids, G.aufgabe.id); return `<h2 style="margin:6px 0">${U.TYP_ICON[a.typ]} ${esc(a.titel)}</h2><div class="name-gross" style="font-size:1.6rem">${P.gruppen.map(g => g.map(name).join(" ↔ ")).join(" · ")}</div>${a.fragen ? `<div>${a.fragen.map(([fa, de]) => `<div class="zeile-f"><div class="f">${esc(fa)}</div><div class="d">${esc(de)}</div></div>`).join("")}</div>` : ""}`; }
+    return `<h2>${U.TYP_ICON[a.typ] || ""} ${esc(aufName(a))}</h2><p>Die Aufgabe ist auf den Handys. ${Object.keys(ergebnisse()).length} von ${ids.length} fertig.</p>`;
+  }
+  function puzzleVerteilung(a, ids) { const m = U.mischen(ids, U.rng(G.aufgabe.id + "v")), v = a._teile.map(() => []); if (!m.length) return v; const n = Math.max(m.length, a._teile.length); for (let k = 0; k < n; k++) v[k % a._teile.length].push(m[k % m.length]); v.forEach((l, i) => { v[i] = [...new Set(l)]; }); return v; }
+  function verdrahteLeitung(B, t) {
+    verdrahteZeit();
+    $("#lw").onclick = () => { LEINWAND = true; document.body.classList.add("lw"); zeichne(); };
+    $("#lwAus").onclick = () => { LEINWAND = false; document.body.classList.remove("lw"); zeichne(); };
+    $("#lwVor").onclick = () => { const x = $("#tVor"); if (x && !x.disabled) x.click(); };
+    $("#lwNach").onclick = () => { const x = $("#tNach"); if (x && !x.disabled) x.click(); };
+    $$("[data-blk]").forEach(x => x.onclick = e => { if (e.target.closest("[data-min]")) return; const i = +x.dataset.blk, alt = G.block || 0; if (i === alt) return; const o = { block: i, tafel: 0 }; if (G.start) { o[`bz/${alt}/ende`] = Date.now(); o[`bz/${i}/start`] = Date.now(); } upd(o); });
+    $$("[data-min]").forEach(x => x.onclick = e => { e.stopPropagation(); const [i, d] = x.dataset.min.split("|").map(Number); schreib(`min/${i}`, Math.max(0, minuten(i) + d)); });
+    const tv = $("#tVor"); if (tv) tv.onclick = () => schreib("tafel", Math.max(0, t - 1));
+    const tn = $("#tNach"); if (tn) tn.onclick = () => schreib("tafel", Math.min(B.tafel.length - 1, t + 1));
+    const ht = $("#handyTafel"); if (ht) ht.onchange = () => schreib("handyTafel", ht.checked);
+    $$("[data-frei]").forEach(x => x.onclick = () => upd({ aufgabe: { b: G.block || 0, i: +x.dataset.frei, id: "a" + Date.now() } }));
+    $$("[data-stopp]").forEach(x => x.onclick = () => schreib("aufgabe", null));
+    $$("[data-vorschau]").forEach(x => x.onclick = () => { const v = $("#vorschau"); v.innerHTML = `<div class="klein-h">👁 Vorschau (nur für dich)</div><div id="vInhalt"></div>`; const a = B.aufgaben[+x.dataset.vorschau]; if (LE.R[a.typ]) zeigeKarte(a, $("#vInhalt")); else $("#vInhalt").innerHTML = `<div class="karte">${aufgabeLeinwandHtml(a)}</div>`; });
+    /* Puzzle & Sprechrunde */
+    $$("[data-teil]").forEach(x => x.onclick = () => { const r = (G.aufgabe.reihe || []).map(Number), i = +x.dataset.teil; if (r.includes(i)) return; schreib("aufgabe/reihe", r.concat(i)); });
+    const pa = $("#pAufl"); if (pa) pa.onclick = () => schreib("aufgabe/aufl", true);
+    const pl = $("#pLeer"); if (pl) pl.onclick = () => schreib("aufgabe/reihe", null);
+    const zi = $("#ziehen"); if (zi) zi.onclick = () => { const g = G.aufgabe.gezogen || [], frei = reihe().filter(id => !g.includes(id)), pool = frei.length ? frei : reihe(); if (!pool.length) return; const n = pool[Math.floor(Math.random() * pool.length)]; schreib("aufgabe/gezogen", (frei.length ? g : []).concat(n)); };
+  }
+
+  /* =====================================================================
+     TEILNEHMENDE
+     ===================================================================== */
+  function pid() { const s = F.sitzung && F.sitzung(); if (s && s.code) return s.code; let p = null; try { p = localStorage.getItem("farsi_quiz_pid"); if (!p) { p = "q" + Math.random().toString(36).slice(2, 9); localStorage.setItem("farsi_quiz_pid", p); } } catch (e) { p = "q" + Math.random().toString(36).slice(2, 9); } return p; }
+  function gespeicherterName() { const s = F.sitzung && F.sitzung(); if (s && s.name) return s.name; try { return localStorage.getItem("farsi_quiz_name") || ""; } catch (e) { return ""; } }
+  function startSpieler() { ME = { id: pid(), name: gespeicherterName() }; if (CODE && ME.name) beitreten(CODE, ME.name); else zeichneBeitritt(); }
+  function zeichneBeitritt(meld) {
+    app().innerHTML = `<div class="karte" style="margin-top:20px;max-width:480px;margin-inline:auto;text-align:center"><div style="font-size:3rem">🎓</div><h2 style="margin:0 0 6px">Live-Unterricht</h2><p>Gib den <b>Spielcode</b> und deinen <b>Vornamen</b> ein.</p>
+      <div style="display:grid;gap:10px;max-width:280px;margin:0 auto"><input class="feld" id="code" inputmode="numeric" maxlength="4" placeholder="Spielcode" value="${esc(CODE || "")}" style="text-align:center;font-size:1.4rem;letter-spacing:.2em"><input class="feld" id="name" maxlength="20" placeholder="Vorname" value="${esc(ME.name)}" style="text-align:center;font-size:1.15rem"><button class="btn" id="los">Mitmachen ➜</button></div>
+      <p class="klein" style="color:var(--granat);min-height:1.2em">${meld || ""}</p></div>`;
+    $("#los").onclick = () => beitreten($("#code").value.replace(/\D/g, ""), $("#name").value.trim());
+    $$("#code,#name").forEach(i => i.addEventListener("keydown", e => { if (e.key === "Enter") $("#los").click(); }));
+  }
+  async function beitreten(c, n) {
+    if (!/^\d{4}$/.test(c)) return zeichneBeitritt("Der Spielcode hat vier Ziffern."); if (!n) return zeichneBeitritt("Bitte gib deinen Vornamen ein.");
+    n = n.split(/\s+/)[0].slice(0, 20);
+    let g; try { g = (await F.mitTimeout(gRef(c).once("value"), 8000)).val(); } catch (e) { return fehler(e, true); }
+    if (!g || !g.lek) { CODE = null; return zeichneBeitritt("Diesen Spielcode gibt es nicht."); }
+    CODE = c; ME.name = n; try { localStorage.setItem("farsi_quiz_name", n); } catch (e) { }
+    history.replaceState(null, "", "?code=" + c);
+    try { if ((g.spieler || {})[ME.id]) await gRef(c).child(`spieler/${ME.id}/name`).set(n); else await gRef(c).child("spieler/" + ME.id).set({ name: n, ts: Date.now() }); } catch (e) { return fehler(e, true); }
+    LT.verbindung(gRef(c).child("spieler/" + ME.id)); hoere(c);
+  }
+  const meinErg = () => ((G.teams && G.teams.r && G.aufgabe && G.teams.r[G.aufgabe.id]) || {})[ME.id] || {};
+  const ergRef = () => gRef(CODE).child(`teams/r/${G.aufgabe.id}/${ME.id}`);
+  function zeichneSpieler() {
+    if (!G) return zeichneBeitritt("Diese Runde wurde beendet.");
+    if (!PLAN) return;
+    const ich = SP()[ME.id];
+    if (!ich) { app().innerHTML = `<div class="karte" style="margin-top:20px;text-align:center">Du bist nicht (mehr) dabei.<br><br><button class="btn" id="nochmal">Wieder mitmachen</button></div>`; $("#nochmal").onclick = () => beitreten(CODE, ME.name); return; }
+    $("#kopfTitel").textContent = "🎓 " + PLAN.titelLek; $("#kopfInfo").textContent = ich.name;
+    const a = aufgabeAktiv();
+    if (a && !LE.R[a.typ]) { TN_KEY = null; return zeichneSpezial(a); }
+    if (a) {
+      const key = "a:" + G.aufgabe.id;
+      if (TN_KEY === key && $("#tnKarte")) { const e = meinErg(); const st = $("#tnStatus"); if (st) st.innerHTML = e.n != null ? `✅ Geschafft: ${e.p} von ${e.n} <button class="btn zwei klein" id="nochmalA">🔁 noch einmal</button>` : ""; verdrahteNochmal(a); return; }
+      TN_KEY = key;
+      app().innerHTML = `<div class="meldung" style="margin-top:12px">📲 <b>Aufgabe:</b> ${esc(aufName(a))}</div><div id="tnStatus" class="meldung" style="background:var(--gruen-hell);border-color:#b9d8c4;display:none"></div><div id="tnKarte"></div>`;
+      zeigeKarte(a, $("#tnKarte"), (p, n) => { ergRef().set({ p, n, ts: Date.now() }).catch(() => { }); const st = $("#tnStatus"); if (st) { st.style.display = ""; st.innerHTML = `✅ Geschafft${n ? `: ${p} von ${n}` : ""}! Warte auf die nächste Aufgabe … <button class="btn zwei klein" id="nochmalA">🔁 noch einmal</button>`; verdrahteNochmal(a); } });
+      return;
+    }
+    const B = PLAN.bloecke[G.block || 0], t = Math.min(G.tafel || 0, Math.max(0, B.tafel.length - 1)), key = "t:" + (G.block || 0) + ":" + t + ":" + (G.handyTafel !== false);
+    if (TN_KEY === key) return; TN_KEY = key;
+    if (B.tafel.length && G.handyTafel !== false) { app().innerHTML = `<div class="meldung" style="margin-top:12px">👀 <b>Schau nach vorn</b> – hier die Tafel zum Mitlesen.</div><div id="tnTafel"></div>`; zeigeKarte(B.tafel[t], $("#tnTafel")); }
+    else app().innerHTML = `<div class="karte" style="margin-top:20px;text-align:center"><div style="font-size:3rem">👀</div><h2>Schau nach vorn!</h2><p class="muted">${B.icon} ${esc(B.titel)}</p><p class="klein muted">Gleich gibt es hier die nächste Aufgabe.</p></div>`;
+  }
+  function verdrahteNochmal(a) { const b = $("#nochmalA"); if (b) b.onclick = () => { TN_KEY = null; $("#tnStatus") && ($("#tnStatus").style.display = "none"); zeigeKarte(a, $("#tnKarte"), (p, n) => { ergRef().set({ p, n, ts: Date.now() }).catch(() => { }); TN_KEY = null; zeichne(); }); TN_KEY = "a:" + G.aufgabe.id; }; }
+
+  /* ---------- Spezial-Aufgaben auf dem Handy ---------- */
+  let LOK = {};
+  function zeichneSpezial(a) {
+    const id = G.aufgabe.id, ids = reihe(); if (LOK.id !== id) LOK = { id, antw: {} };
+    let h = `<div class="meldung" style="margin-top:12px">${U.TYP_ICON[a.typ] || ""} <b>${esc(a.titel)}</b></div>`;
+    if (a.typ === "interview") {
+      const P = U.paare(ids, id), ziel = P.ziel[ME.id], felder = a._felder, mein = U.karteVon(felder, ME.id, id), e = meinErg();
+      const antw = Object.assign({}, (e.antw || {}), LOK.antw);
+      h += `<div class="karte"><h3 style="margin-top:0">🃏 Deine Familie <span class="klein muted">– so antwortest du</span></h3>${felder.map(f => { const w = f.werte[mein[f.key]]; return `<div class="zeile-f"><div class="d">${esc(f.frage[1])}</div><div class="f">${esc(w[0])} <button class="btn zwei klein" data-say="${esc(w[0])}">🔊</button></div></div>`; }).join("")}</div>`;
+      if (!ziel) h += `<div class="meldung">Warte auf eine Partnerin / einen Partner …</div>`;
+      else {
+        const zk = U.karteVon(felder, ziel, id), geprueft = e.n != null;
+        h += `<div class="karte" style="margin-top:12px"><h3 style="margin-top:0">❓ Frag ${esc(name(ziel))}</h3><p class="klein muted" style="margin-top:0">Stell die Frage auf Persisch und tippe an, was ${esc(name(ziel))} antwortet.</p>
+          ${felder.map(f => `<div class="zeile-f"><div class="f">${esc(f.frage[0])} <button class="btn zwei klein" data-say="${esc(f.frage[0])}">🔊</button></div><div class="d">${esc(f.frage[1])}</div>
+            <div class="opt-reihe">${f.werte.map((w, i) => `<button class="${geprueft ? (i === zk[f.key] ? "ok" : antw[f.key] === i ? "nein" : "") : antw[f.key] === i ? "an" : ""}" data-iw="${f.key}|${i}" ${geprueft ? "disabled" : ""}>${esc(w[0])}</button>`).join("")}</div></div>`).join("")}
+          ${geprueft ? `<div class="meldung">✅ ${e.p} von ${e.n} richtig verstanden!</div>` : `<button class="btn" id="iPruef" style="margin-top:10px" ${felder.every(f => antw[f.key] != null) ? "" : "disabled"}>✔ prüfen</button>`}</div>`;
+      }
+      app().innerHTML = h;
+      $$("[data-iw]").forEach(b => b.onclick = () => { const [k, i] = b.dataset.iw.split("|"); LOK.antw[k] = +i; ergRef().child("antw/" + k).set(+i).catch(() => { }); zeichneSpezial(a); });
+      const ip = $("#iPruef"); if (ip) ip.onclick = () => { const zk = U.karteVon(felder, ziel, id); const p = felder.filter(f => LOK.antw[f.key] === zk[f.key]).length; ergRef().update({ p, n: felder.length, fertig: true, ts: Date.now() }).catch(() => { }); };
+    } else if (a.typ === "puzzle") {
+      const vert = puzzleVerteilung(a, ids), meine = vert.map((l, i) => l.includes(ME.id) ? i : -1).filter(i => i >= 0), aufl = !!G.aufgabe.aufl;
+      if (!aufl) h += `<div class="karte"><h3 style="margin-top:0">📜 Dein Abschnitt</h3><p class="klein muted" style="margin-top:0">Lies ihn zuerst leise, dann – wenn du dran bist – <b>laut</b> vor. Danach entscheidet ihr gemeinsam die Reihenfolge.</p>
+        ${meine.map(i => `<div class="teil" style="cursor:default">${a._teile[i].map(z => `<div class="fa-g" style="font-size:1.2rem;line-height:1.9">${esc(z.fa)} <button class="btn zwei klein" data-say="${esc(z.fa)}">🔊</button></div><details><summary class="klein">Hilfe</summary><div class="klein muted">${esc(z.tr || "")} – ${esc(z.de)}</div></details>`).join("")}</div>`).join("") || "<p>Du hörst diesmal zu und hilfst beim Ordnen.</p>"}</div>`;
+      else h += `<div class="karte"><h3 style="margin-top:0">✔ Die richtige Reihenfolge</h3>${a._teile.map((t, i) => `<div class="teil" style="cursor:default"><div class="wer">${i + 1}. ${meine.includes(i) ? "⭐ dein Abschnitt" : ""}</div>${t.map(z => `<div class="fa-g" style="font-size:1.12rem">${esc(z.fa)}</div><div class="klein muted">${esc(z.de)}</div>`).join("")}</div>`).join("")}</div>`;
+      app().innerHTML = h;
+    } else if (a.typ === "sprechen") {
+      const g = G.aufgabe.gezogen || [], dran = g[g.length - 1] === ME.id;
+      h += `${dran ? `<div class="ich-dran">🎤 Du bist dran!</div>` : ""}<div class="karte" style="margin-top:10px"><p style="margin-top:0">${a.text || ""}</p>${(a.saetze || []).map(([fa, de]) => `<div class="zeile-f"><div class="f">${esc(fa)} <button class="btn zwei klein" data-say="${esc(fa)}">🔊</button></div><div class="d">${esc(de)}</div></div>`).join("")}</div>`;
+      app().innerHTML = h;
+    } else if (a.typ === "partner") {
+      const P = U.paare(ids, id), grp = P.gruppen.find(x => x.includes(ME.id)) || [], andere = grp.filter(x => x !== ME.id), e = meinErg();
+      h += `<div class="karte"><h3 style="margin-top:0">👥 Du sprichst mit: ${esc(andere.map(name).join(" und ") || "…")}</h3><p class="klein muted" style="margin-top:0">Fragt euch abwechselnd. Antwortet in ganzen Sätzen.</p>
+        ${(a.fragen || []).map(([fa, de]) => `<div class="zeile-f"><div class="f">${esc(fa)} <button class="btn zwei klein" data-say="${esc(fa)}">🔊</button></div><div class="d">${esc(de)}</div></div>`).join("")}
+        ${a.bericht ? `<div class="klein-h">Danach berichtest du im Plenum</div>${a.bericht.map(([fa, de]) => `<div class="zeile-f"><div class="f">${esc(fa)}</div><div class="d">${esc(de)}</div></div>`).join("")}` : ""}
+        ${e.fertig ? `<div class="meldung">✅ Fertig gemeldet</div>` : `<button class="btn" id="pFertig" style="margin-top:10px">✓ Wir sind fertig</button>`}</div>`;
+      app().innerHTML = h;
+      const pf = $("#pFertig"); if (pf) pf.onclick = () => ergRef().update({ fertig: true, ts: Date.now() }).catch(() => { });
+    }
+    $$("[data-say]").forEach(b => b.onclick = e => { e.stopPropagation(); F.sprich(b.dataset.say); });
+  }
+
+  function zeichne() { MODUS === "leitung" ? zeichneLeitung() : zeichneSpieler(); }
+  window.UNTERRICHT_APP = { zeichne, get G() { return G; }, get PLAN() { return PLAN; }, ladePlan };
+  F.initFB(); MODUS === "leitung" ? startLeitung() : startSpieler();
+})();
+</script>
+</body>
+</html>

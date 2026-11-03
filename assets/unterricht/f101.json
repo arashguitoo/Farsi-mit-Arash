@@ -1,0 +1,19 @@
+{
+  "lektion": "f101",
+  "titel": "Sprechen (30 Min.): Vorlesen, ordnen, interviewen",
+  "minuten": 30,
+  "bloecke": [
+    { "id": "einstieg", "icon": "☕", "titel": "Einstieg: Was frühstückst du?", "minuten": 5,
+      "tafel": [ { "titel": "صبحانه", "text": "<p>Kurze Runde im Plenum – jede/r antwortet mit einem Satz.</p>",
+        "beispiele": [{"fa":"شما صبح‌ها چه می‌خورید؟","tr":"schomā sobhhā tsche mīchorīd?","de":"Was essen Sie morgens?"},{"fa":"من معمولاً فقط قهوه می‌خورم.","tr":"man maʿmūlan faghat ghahve mīchoram.","de":"Ich trinke normalerweise nur Kaffee."},{"fa":"صبحانه برای من خیلی مهم است.","tr":"sobhāne barā-ye man cheylī mohem ast.","de":"Frühstück ist mir sehr wichtig."}] } ],
+      "aufgaben": [ {"typ":"sprechen","titel":"Blitzrunde","text":"Wer gezogen wird, antwortet in einem Satz – und stellt dann der nächsten Person eine Frage.","saetze":[["صبح‌ها چه می‌خوری؟","Was isst du morgens?"],["چای می‌خوری یا قهوه؟","Trinkst du Tee oder Kaffee?"],["صبحانه‌ی ایرانی را دوست داری؟","Magst du iranisches Frühstück?"],["آخر هفته صبحانه چه فرقی دارد؟","Was ist am Wochenende anders?"]]} ] },
+    { "id": "puzzle", "icon": "🧩", "titel": "Vorlesen & ordnen: Ein Morgen bei Familie Rahimi", "minuten": 15,
+      "tafel": [ { "titel": "So geht's", "text": "<p>Jede/r bekommt auf dem Handy <b>einen Abschnitt</b> der Geschichte. Lest eure Abschnitte nacheinander <b>laut</b> vor – in beliebiger Reihenfolge. Dann entscheidet ihr gemeinsam: <b>In welcher Reihenfolge steht die Geschichte?</b></p><p class='klein'>Tipp: Achtet auf Uhrzeiten, „zuerst“, „als er zurückkommt“ …</p>" } ],
+      "aufgaben": [ {"typ":"puzzle","titel":"Ein Morgen bei Familie Rahimi","quelle":"f101/t1/1","gruppen":[2,2,1,2,2,2]} ] },
+    { "id": "interview", "icon": "🎙️", "titel": "Partnerinterview & Bericht", "minuten": 10,
+      "tafel": [ { "titel": "Interview – dann berichten", "text": "<p>Fragt euch zu zweit (ca. 5 Min.). Danach berichtet jede/r im Plenum <b>über die Partnerin / den Partner</b> – in der 3. Person!</p>",
+        "beispiele": [{"fa":"او صبح‌ها فقط چای می‌خورد.","tr":"ū sobhhā faghat tschāy mīchorad.","de":"Er/Sie trinkt morgens nur Tee."},{"fa":"آخر هفته‌ها او با خانواده‌اش صبحانه می‌خورد.","tr":"āchar-e haftehā ū bā chānevādeasch sobhāne mīchorad.","de":"Am Wochenende frühstückt er/sie mit der Familie."}] } ],
+      "aufgaben": [ {"typ":"partner","titel":"Frühstücks-Interview","fragen":[["صبح‌ها ساعت چند بیدار می‌شوی؟","Wann stehst du morgens auf?"],["صبحانه چه می‌خوری؟","Was frühstückst du?"],["چای یا قهوه؟ چرا؟","Tee oder Kaffee? Warum?"],["صبحانه را تنها می‌خوری یا با دیگران؟","Frühstückst du allein oder mit anderen?"],["صبحانه‌ی ایرانی خورده‌ای؟ چطور بود؟","Hast du schon iranisch gefrühstückt? Wie war es?"],["آخر هفته صبحانه چه فرقی دارد؟","Was ist am Wochenende anders?"]],
+        "bericht":[["او صبح‌ها … می‌خورد.","Er/Sie isst/trinkt morgens …"],["او … را بیشتر دوست دارد، چون …","Er/Sie mag … lieber, weil …"],["آخر هفته او …","Am Wochenende … er/sie …"]]} ] }
+  ]
+}

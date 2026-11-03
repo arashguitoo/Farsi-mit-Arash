@@ -109,7 +109,7 @@ def sammeln():
         if isinstance(o, dict): [alle_fa(v) for v in o.values()]
         elif isinstance(o, list): [alle_fa(v) for v in o]
         elif isinstance(o, str) and FA.search(o): add(o)
-    for f in sorted(glob.glob(R + '/assets/schreiben/*.json') + glob.glob(R + '/assets/bewerbung/*.json') + glob.glob(R + '/assets/scharade/*.json')): alle_fa(json.load(open(f)))
+    for f in sorted(glob.glob(R + '/assets/schreiben/*.json') + glob.glob(R + '/assets/bewerbung/*.json') + glob.glob(R + '/assets/scharade/*.json') + glob.glob(R + '/assets/unterricht/*.json')): alle_fa(json.load(open(f)))
     # 2d) Tischspiel „sein“: nur die richtigen Sätze / Wörter
     if os.path.exists(R + '/assets/sein/karten.json'):
         for k in json.load(open(R + '/assets/sein/karten.json'))['karten']: add(k['s'])
