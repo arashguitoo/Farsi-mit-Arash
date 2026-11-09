@@ -64,6 +64,38 @@
   .teil .wer{font-size:.8rem;font-weight:800;color:var(--tinte2);text-align:left}
   .name-gross{font-size:3rem;font-weight:800;text-align:center;color:var(--lapis)}
   .ich-dran{background:var(--safran);color:#fff;border-radius:14px;padding:12px;text-align:center;font-size:1.3rem;font-weight:800}
+  .tm-A{--tf:#2f5d7c}.tm-B{--tf:#b5852c}.tm-C{--tf:#3c7a5a}
+  .score{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}
+  .score .s{flex:1;min-width:150px;background:#fff;border:1.5px solid var(--linie);border-top:5px solid var(--tf);border-radius:12px;padding:8px 12px}
+  .score .s .pz{font-size:1.8rem;font-weight:800;color:var(--tf);line-height:1.2}
+  .score .s .nm{font-weight:800}
+  .score .s .mt{font-size:.8rem;color:var(--tinte2)}
+  .chip{display:inline-block;border-radius:999px;padding:2px 10px;font-size:.82rem;font-weight:700;background:#fff;border:1.5px solid var(--tf,var(--linie));margin:2px;cursor:pointer}
+  .team-badge{display:inline-block;border-radius:999px;padding:2px 10px;font-weight:800;color:#fff;background:var(--tf,var(--lapis))}
+  .plan{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;background:#d9dcd6;padding:12px;border-radius:14px;direction:ltr;margin-top:8px}
+  .ort{background:#fff;border:2px solid transparent;border-radius:8px;min-height:62px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:4px 2px;cursor:pointer;font:inherit;color:inherit}
+  .ort .e{font-size:1.45rem;line-height:1.1}.ort .n{font-family:var(--fa);font-size:.88rem;line-height:1.35}
+  .ort:disabled{cursor:default;opacity:1}
+  .ort.ziel{border-color:var(--safran);background:var(--safran-hell);box-shadow:0 0 0 3px var(--safran)}
+  .ort.an{border-color:var(--lapis);background:var(--lapis-hell)}
+  .ort.ok{border-color:var(--gruen);background:var(--gruen-hell)}
+  .ort.nein{border-color:var(--granat);background:var(--granat-hell)}
+  .hier{text-align:center;font-weight:800;margin:4px 0 8px}
+  .rolle{border-left:5px solid var(--tf,var(--lapis))}
+  .mission{background:var(--safran-hell);border-radius:10px;padding:6px 10px;margin:4px 0}
+  .check{display:flex;gap:8px;align-items:center;background:#fff;border:1.5px solid var(--linie);border-radius:10px;padding:9px 10px;margin:5px 0;cursor:pointer;width:100%;text-align:left;font:inherit;color:inherit}
+  .check.an{border-color:var(--lapis);background:var(--lapis-hell)}
+  .check.ok{border-color:var(--gruen);background:var(--gruen-hell)}
+  .check.nein{border-color:var(--granat);background:var(--granat-hell)}
+  .check.verpasst{border-style:dashed;border-color:var(--gruen)}
+  #spiegelBox{max-width:1180px;margin:0 auto;padding:0 16px 40px}
+  .phones{display:flex;gap:14px;flex-wrap:wrap;margin-top:10px}
+  .phone .rahmen{width:300px;height:560px;border:8px solid #2b2f2d;border-radius:26px;overflow:hidden;background:var(--papier,#fff)}
+  .phone iframe{width:375px;height:700px;border:0;transform:scale(.8);transform-origin:0 0}
+  .phone .wer{font-weight:800;text-align:center;margin-bottom:4px}
+  body.spiegel .kopf,body.spiegel #melde-knopf{display:none!important}
+  body.spiegel.nurlesen #app{pointer-events:none}
+  body.lw #spiegelBox{display:none}
 </style>
 </head>
 <body>
@@ -75,6 +107,7 @@
   </div>
 </header>
 <main class="wrap" style="padding-bottom:60px"><div id="app"><p class="muted" style="margin-top:30px">Lade …</p></div></main>
+<div id="spiegelBox"></div>
 <div class="lw-leiste"><button class="btn zwei klein" id="lwVor">◀</button><button class="btn zwei klein" id="lwNach">▶</button><button class="btn zwei klein" id="lwAus">⚙️ Steuerung</button></div>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
@@ -88,8 +121,8 @@
 window.UNTERRICHT = (function () {
   const INTERAKTIV = ["paare", "wahl", "bauen", "sortieren", "finden", "lesen", "ordnen", "memory", "tempo", "zuordnen"];
   const TAFEL = ["info", "text", "buchstaben"];
-  const TYP_ICON = { paare: "🔗", wahl: "☑️", bauen: "🧱", sortieren: "🗂️", finden: "🔍", lesen: "📖", ordnen: "🔢", memory: "🃏", tempo: "⚡", zuordnen: "🧩", interview: "🗣️", puzzle: "🧩", sprechen: "🎤", partner: "👥" };
-  const TYP_NAME = { paare: "Paare finden", wahl: "Quiz", bauen: "Bauen", sortieren: "Sortieren", finden: "Finden", lesen: "Lesen", ordnen: "Ordnen", memory: "Memory", tempo: "Blitz", zuordnen: "Zuordnen", interview: "Partner-Interview", puzzle: "Vorlesen & ordnen", sprechen: "Sprechrunde", partner: "Partnergespräch" };
+  const TYP_ICON = { paare: "🔗", wahl: "☑️", bauen: "🧱", sortieren: "🗂️", finden: "🔍", lesen: "📖", ordnen: "🔢", memory: "🃏", tempo: "⚡", zuordnen: "🧩", interview: "🗣️", puzzle: "🧩", sprechen: "🎤", partner: "👥", weg: "🗺️", rolle: "🎭" };
+  const TYP_NAME = { paare: "Paare finden", wahl: "Quiz", bauen: "Bauen", sortieren: "Sortieren", finden: "Finden", lesen: "Lesen", ordnen: "Ordnen", memory: "Memory", tempo: "Blitz", zuordnen: "Zuordnen", interview: "Partner-Interview", puzzle: "Vorlesen & ordnen", sprechen: "Sprechrunde", partner: "Partnergespräch", weg: "Stadtplan-Spiel", rolle: "Rollenspiel mit Geheimauftrag" };
   const hash = s => { let h = 2166136261; for (const c of String(s)) { h ^= c.charCodeAt(0); h = Math.imul(h, 16777619); } return h >>> 0; };
   function rng(seed) { let a = hash(seed); return () => { a |= 0; a = a + 0x6D2B79F5 | 0; let t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
   function mischen(a, r) { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(r() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
@@ -140,14 +173,27 @@ window.UNTERRICHT = (function () {
     if (i < z.length) out.push(z.slice(i));
     return out;
   }
-  return { INTERAKTIV, TYP_ICON, TYP_NAME, autoPlan, paare, karteVon, teile, mischen, rng };
+  /* Stadtplan-Spiel: 12 Orte auf 3 × 4 Blöcken, Ziel zufällig – pro Gruppe und Runde anders */
+  const ORTE = [["🏦", "بانک", "Bank"], ["💊", "داروخانه", "Apotheke"], ["🚇", "ایستگاهِ مِترو", "U-Bahn-Station"], ["🥖", "نانوایی", "Bäckerei"], ["🏛️", "موزه", "Museum"], ["🏥", "بیمارستان", "Krankenhaus"], ["🌳", "پارک", "Park"], ["🎬", "سینَما", "Kino"], ["🏨", "هُتِل", "Hotel"], ["🍽️", "رِستوران", "Restaurant"], ["🏫", "مَدرِسه", "Schule"], ["📚", "کِتاب‌فُروشی", "Buchhandlung"], ["☕", "کافه", "Café"], ["📮", "پُست", "Post"], ["🛒", "سوپِرمارکِت", "Supermarkt"], ["🚌", "ایستگاهِ اُتوبوس", "Bushaltestelle"]];
+  function wegRunde(seed) { const r = rng(seed), orte = mischen(ORTE.map((_, i) => i), r).slice(0, 12), ziel = Math.floor(r() * 12); return { orte, ziel }; }
+  /* Rollenspiel: Rollen + je n Geheimaufträge pro Person; Checkliste fürs Publikum = echte Aufträge + 3 falsche */
+  function rollenVerteilung(a, m, seed) {
+    const out = {}; mischen(m, rng(seed + "r")).forEach((pid, i) => { const ri = Math.min(i, a.rollen.length - 1); out[pid] = { rolle: ri, missionen: mischen(a.rollen[ri].missionen.map((_, k) => k), rng(seed + pid)).slice(0, a.anzahl || 2) }; });
+    return out;
+  }
+  function rolleListe(a, m, seed) {
+    const V = rollenVerteilung(a, m, seed), echt = new Set(); Object.values(V).forEach(v => v.missionen.forEach(k => echt.add(v.rolle + "_" + k)));
+    const rest = []; [...new Set(Object.values(V).map(v => v.rolle))].forEach(ri => a.rollen[ri].missionen.forEach((_, k) => { if (!echt.has(ri + "_" + k)) rest.push(ri + "_" + k); }));
+    return { V, echt, liste: mischen([...echt].concat(mischen(rest, rng(seed + "d")).slice(0, 3)), rng(seed + "l")) };
+  }
+  return { INTERAKTIV, TYP_ICON, TYP_NAME, autoPlan, paare, karteVon, teile, mischen, rng, ORTE, wegRunde, rollenVerteilung, rolleListe };
 })();
 
 /* ===================== Seite ===================== */
 (function () {
   const F = window.FARSI, { $, $$, esc, toast } = F, LT = window.LIVE_TOOLS, LE = window.LEKTION_ENGINE, U = window.UNTERRICHT;
   const qs = new URLSearchParams(location.search);
-  const MODUS = qs.get("leitung") ? "leitung" : "spieler";
+  const MODUS = qs.get("leitung") ? "leitung" : "spieler", SPIEGEL = !!qs.get("spiegel"), PROBE = qs.get("probe");
   let CODE = (qs.get("code") || "").replace(/\D/g, "") || null;
   let G = null, REF = null, ME = null, IX = null, PLAN = null, PLANKEY = null, PLAENE = null;
   const LEK = {};       /* id → {eintrag, L} */
@@ -158,6 +204,38 @@ window.UNTERRICHT = (function () {
   const name = id => (SP()[id] || {}).name || "?";
   const reihe = () => Object.entries(SP()).filter(([, s]) => s && s.name).sort(([, a], [, b]) => (a.ts || 0) - (b.ts || 0)).map(([id]) => id);
   const fmt = s => { s = Math.max(0, Math.round(s)); return Math.floor(s / 60) + ":" + String(s % 60).padStart(2, "0"); };
+  /* ---------- Teams ---------- */
+  const TEAMS = { A: { fa: "تیمِ آزادی", de: "Team Azadi", icon: "🟦" }, B: { fa: "تیمِ تَجریش", de: "Team Tadschrisch", icon: "🟨" }, C: { fa: "تیمِ وَنَک", de: "Team Vanak", icon: "🟩" } };
+  const teamIds = () => ["A", "B", "C"].slice(0, (G && G.teamZahl) || 0);
+  const teamVon = id => ((G && G.gruppen) || {})[id];
+  const mitglieder = t => reihe().filter(id => teamVon(id) === t);
+  const teamName = t => TEAMS[t] ? TEAMS[t].icon + " " + TEAMS[t].de : t;
+  /* Gruppen für Gruppenaufgaben: die Teams – oder, ohne Teams, Paare */
+  function gruppenListe() {
+    if (teamIds().length) return teamIds().map(t => ({ id: t, m: mitglieder(t) })).filter(g => g.m.length);
+    return U.paare(reihe(), (G.aufgabe || {}).id || "x").gruppen.map((m, i) => ({ id: "P" + i, m }));
+  }
+  const gName = g => teamIds().length ? teamName(g.id) : g.m.map(name).join(" + ");
+  function verteile(n, ids) { const o = {}; U.mischen(ids, U.rng("t" + Date.now())).forEach((id, i) => { o[id] = "ABC"[i % n]; }); return o; }
+  /* Punkte: Übungen (Ø der Teammitglieder, max. 10, nur 1. Versuch) + Stadtplan + Rollenspiel/Bonus (log) */
+  function punkte() {
+    const T = teamIds(), P = {}; T.forEach(t => { P[t] = 0; }); if (!T.length) return P;
+    Object.values((G.teams && G.teams.r) || {}).forEach(E => {
+      if (!Object.values(E).some(e => e && e.n)) return;
+      T.forEach(t => { const m = mitglieder(t); if (m.length) P[t] += Math.round(10 * m.reduce((s, id) => s + (E[id] && E[id].n ? E[id].p / E[id].n : 0), 0) / m.length); });
+    });
+    Object.values((G.teams && G.teams.w) || {}).forEach(A => Object.entries(A).forEach(([t, x]) => { if (P[t] != null) P[t] += (x && x.p) || 0; }));
+    Object.values(G.log || {}).forEach(l => { if (l && P[l.t] != null) P[l.t] += l.p || 0; });
+    return P;
+  }
+  function scoreHtml(steuer) {
+    const T = teamIds(); if (!T.length) return ""; const P = punkte(), max = Math.max(...T.map(t => P[t]));
+    return `<div class="score">${T.map(t => `<div class="s tm-${t}"><div class="nm">${TEAMS[t].icon} ${esc(TEAMS[t].de)} <span class="fa">${TEAMS[t].fa}</span></div><div class="pz">${P[t]}${P[t] === max && max > 0 ? " 🏆" : ""}</div><div class="mt">${mitglieder(t).map(id => esc(name(id))).join(", ") || "–"}</div>${steuer ? `<div style="margin-top:4px"><button class="min-btn" data-pkt="${t}|-1">−1</button> <button class="min-btn" data-pkt="${t}|1">+1</button> <button class="min-btn" data-pkt="${t}|3">+3</button></div>` : ""}</div>`).join("")}</div>`;
+  }
+  /* Schreibzugriff der TN – in der Vorschau nur lokal */
+  function setzeLokal(t, v) { let o = G; for (let k = 0; k < t.length - 1; k++) o = o[t[k]] = (o[t[k]] && typeof o[t[k]] === "object") ? o[t[k]] : {}; if (v == null) delete o[t[t.length - 1]]; else o[t[t.length - 1]] = JSON.parse(JSON.stringify(v)); setTimeout(zeichne, 0); }
+  function lokal(pfad) { const t = pfad.split("/"); return { set: v => { setzeLokal(t, v); return Promise.resolve(); }, update: o => { Object.entries(o).forEach(([k, v]) => setzeLokal(t.concat(k.split("/")), v)); return Promise.resolve(); }, child: p => lokal(pfad + "/" + p) }; }
+  const tnRef = pfad => PROBE ? lokal(pfad) : gRef(CODE).child(pfad);
   const uhrzeit = ts => new Date(ts).toLocaleTimeString("de-DE", { hour: "2-digit", minute: "2-digit" });
 
   /* ---------- Daten ---------- */
@@ -238,7 +316,8 @@ window.UNTERRICHT = (function () {
       <div class="lek-liste" style="margin-top:10px">${L.map(l => `<button class="lek ${WAHL.lek === l.id ? "an" : ""}" data-lek="${l.id}"><b>${esc(l.nummer ? "L" + l.nummer : l.id)}</b> ${esc(l.titel)}${hat(l.id).length ? `<div class="p">★ ${hat(l.id).length} ausgearbeiteter Plan</div>` : ""}</button>`).join("")}</div></div>`;
     if (lek) h += `<div class="karte" style="margin-top:12px"><h3 style="margin-top:0">${esc(lek.titel)} – welcher Plan?</h3>
       ${hat(lek.id).map(p => `<div class="aufg"><div><b>★ ${esc(p.titel)}</b><div class="klein muted">${p.minuten} Min. · ${esc(p.beschreibung || "")}</div></div><button class="btn klein" data-plan="${p.datei}">▶ Runde anlegen</button></div>`).join("")}
-      <div class="aufg"><div><b>⚙️ Automatischer Plan</b><div class="klein muted">90 Min. aus den Stationen der Lektion – Lehrtafel = Erklärkarten, Aufgaben = Übungen${lek.bereich === "a" ? ", mit Wiederholung der vorigen Lektion" : ""}</div></div><button class="btn zwei klein" data-plan="auto">▶ Runde anlegen</button></div></div>`;
+      ${hat(lek.id).length ? "" : `<p class="klein">Für diese Lektion gibt es noch keinen ausgearbeiteten Plan – sag Claude Bescheid, dann wird einer gebaut.</p>`}
+      <details style="margin-top:8px"><summary class="klein">⚙️ Rohentwurf (automatisch, nur als Notlösung)</summary><div class="aufg"><div><b>⚙️ Automatischer Plan</b><div class="klein muted">Alle Karten der Lektion, nach Stationen sortiert – ohne Teams, Spiele und Dramaturgie.</div></div><button class="btn zwei klein" data-plan="auto">▶ Runde anlegen</button></div></details></div>`;
     h += `<div class="karte" style="margin-top:12px"><h3 style="margin-top:0">🎲 Weitere Live-Aktivitäten</h3><div class="akt-liste">${Object.entries(LT.SPIELE).filter(([k]) => k !== "unterricht").map(([k, s]) => { const b = s.url("").replace(/[?&]code=$/, ""); return `<a href="${esc(b + (b.includes("?") ? "&" : "?") + "leitung=1")}">${s.icon} ${esc(s.titel)}</a>`; }).join("")}<a href="lese-pruefung.html">📖 Lese-Prüfung</a><a href="schreibwerkstatt.html?leitung=1">✍️ Schreibwerkstatt</a></div></div>`;
     app().innerHTML = h;
     $$("[data-ber]").forEach(b => b.onclick = () => { WAHL.bereich = b.dataset.ber; WAHL.lek = null; zeichneAuswahl(); });
@@ -278,8 +357,8 @@ window.UNTERRICHT = (function () {
     $("#kopfTitel").textContent = "🎓 " + PLAN.titelLek;
     const b = G.block || 0, B = PLAN.bloecke[b], t = Math.min(G.tafel || 0, Math.max(0, B.tafel.length - 1)), akt = aufgabeAktiv();
     let h = `<div class="nur-lk" style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-top:10px"><div><span class="klein muted">Spielcode </span><span class="lv-code">${CODE}</span> <span class="klein muted">· ${esc(location.host + location.pathname.replace(/[^/]*$/, ""))}code.html · ${reihe().length} TN</span></div>
-      <div class="btnreihe"><button class="btn" id="lw">🖥️ Leinwand</button><a class="btn zwei klein" href="?leitung=1" style="text-decoration:none">↺ andere Lektion</a></div></div><div class="nur-lk">${zeitHtml()}</div>
-      <div class="haupt"><div class="nur-lk"><div class="klein-h">${esc(PLAN.titel)}</div>${PLAN.bloecke.map((x, i) => `<button class="blk ${i === b ? "an" : ""} ${((G.bz || {})[i] || {}).ende && i !== b ? "fertig" : ""}" data-blk="${i}"><div class="t">${x.icon} ${esc(x.titel)}</div><div class="m">⏱ ${minuten(i)} Min. <span class="min-btn" data-min="${i}|-5">−</span> <span class="min-btn" data-min="${i}|5">+</span> · ${x.tafel.length} Tafel · ${x.aufgaben.length} Aufgaben</div></button>`).join("")}</div><div>`;
+      <div class="btnreihe"><button class="btn zwei" id="zurEinsicht">📱 Einsicht</button><button class="btn" id="lw">🖥️ Leinwand</button><a class="btn zwei klein" href="?leitung=1" style="text-decoration:none">↺ andere Lektion</a></div></div><div class="nur-lk">${zeitHtml()}</div>${scoreHtml(!LEINWAND)}
+      <div class="haupt"><div class="nur-lk"><div class="klein-h">${esc(PLAN.titel)}</div>${PLAN.bloecke.map((x, i) => `<button class="blk ${i === b ? "an" : ""} ${((G.bz || {})[i] || {}).ende && i !== b ? "fertig" : ""}" data-blk="${i}"><div class="t">${x.icon} ${esc(x.titel)}</div><div class="m">⏱ ${minuten(i)} Min. <span class="min-btn" data-min="${i}|-5">−</span> <span class="min-btn" data-min="${i}|5">+</span> · ${x.tafel.length} Tafel · ${x.aufgaben.length} Aufgaben</div></button>`).join("")}${teamPanelHtml()}</div><div>`;
     if (akt && LEINWAND) h += aufgabeLeinwandHtml(akt);
     else {
       if (B.tafel.length) h += `<div class="tafel-steuer nur-lk"><b>🧑‍🏫 Lehrtafel ${t + 1} / ${B.tafel.length}</b><span class="btnreihe"><button class="btn zwei klein" id="tVor" ${t ? "" : "disabled"}>◀</button><button class="btn zwei klein" id="tNach" ${t < B.tafel.length - 1 ? "" : "disabled"}>▶</button><label class="klein"><input type="checkbox" id="handyTafel" ${G.handyTafel !== false ? "checked" : ""}> auch auf den Handys</label></span></div><div id="tafel" class="leinwand"></div>`;
@@ -293,14 +372,50 @@ window.UNTERRICHT = (function () {
     LT.render(app(), h);
     const tel = $("#tafel"); if (tel && B.tafel[t]) zeigeKarte(B.tafel[t], tel);
     verdrahteLeitung(B, t);
+    /* Neue TN automatisch ins kleinste Team */
+    if (teamIds().length) { const ohne = reihe().filter(id => !teamIds().includes(teamVon(id))); if (ohne.length) { const z = {}, o = {}; teamIds().forEach(x => { z[x] = mitglieder(x).length; }); ohne.forEach(id => { const x = teamIds().slice().sort((a, c) => z[a] - z[c])[0]; z[x]++; o["gruppen/" + id] = x; }); upd(o); } }
+    spiegel();
+  }
+  function teamPanelHtml() {
+    const n = G.teamZahl || 0;
+    return `<div class="klein-h">👥 Teams</div><div class="seg">${[0, 2, 3].map(k => `<button class="${n === k ? "an" : ""}" data-tz="${k}">${k ? k + " Teams" : "keine"}</button>`).join("")}</div>
+      ${n ? `<div style="margin-top:6px">${teamIds().map(t => `<div class="tm-${t}" style="margin:6px 0"><span class="team-badge">${TEAMS[t].icon} ${esc(TEAMS[t].de)}</span><div>${mitglieder(t).map(id => `<span class="chip" data-wechsel="${id}" title="antippen = nächstes Team">${esc(name(id))}</span>`).join("") || '<span class="klein muted">noch leer</span>'}</div></div>`).join("")}
+        <button class="btn zwei klein" data-tz="${n}">🎲 neu mischen</button><p class="klein muted" style="margin:4px 0 0">Name antippen = ins nächste Team. Neue TN kommen automatisch ins kleinste Team.</p></div>` : `<p class="klein muted" style="margin:4px 0 0">Ohne Teams arbeiten Gruppenaufgaben in Paaren.</p>`}`;
+  }
+  /* ---------- Einsicht: was die TN auf dem Handy sehen ---------- */
+  let SPG = { modus: "aus" }, SPG_KEY = null;
+  const FAKE = ["Ana", "Ben", "Cem", "Dora", "Emil", "Fari"];
+  function spiegel() {
+    const box = $("#spiegelBox"); if (!box || MODUS !== "leitung" || SPIEGEL) return;
+    if (!G || !PLAN) { box.innerHTML = ""; SPG_KEY = null; return; }
+    if (!$("#spgKopf")) { box.innerHTML = `<div class="karte" style="margin-top:14px"><div id="spgKopf"></div><div id="spgInhalt"></div></div>`; SPG_KEY = null; }
+    const ids = reihe(), basis = location.pathname.replace(/[^/]*$/, "") + "live-unterricht.html";
+    let probeA = null; if (SPG.modus === "probe") { const [b, i] = SPG.probe.split(".").map(Number); probeA = PLAN.bloecke[b] && PLAN.bloecke[b].aufgaben[i]; }
+    const probeIds = ids.length >= 2 ? ids : FAKE.map((_, k) => "x" + (k + 1)), probeName = id => ids.length >= 2 ? name(id) : FAKE[+id.slice(1) - 1];
+    $("#spgKopf").innerHTML = `<h3 style="margin-top:0">📱 Einsicht: Was haben die TN vor sich?</h3>
+      <div class="btnreihe"><span class="klein muted">Live-Ansicht:</span>${ids.map(id => `<button class="btn ${SPG.modus === "tn" && SPG.als === id ? "" : "zwei"} klein" data-spg="tn|${id}">${esc(name(id))}</button>`).join("") || '<span class="klein muted">noch niemand da</span>'}${ids.length > 1 ? `<button class="btn ${SPG.modus === "alle" ? "" : "zwei"} klein" data-spg="alle">alle</button>` : ""}${SPG.modus !== "aus" ? `<button class="btn zwei klein" data-spg="aus">✕ schließen</button>` : ""}</div>
+      ${probeA ? `<div class="meldung">👁 <b>Vorschau: ${esc(aufName(probeA))}</b> – so sieht es auf dem Handy aus. Du kannst es ausprobieren, es wird nichts gespeichert.<br><span class="klein">Ansehen als: ${probeIds.map(id => `<button class="chip" style="--tf:${SPG.als === id ? "var(--lapis)" : "var(--linie)"}" data-als="${id}">${esc(probeName(id))}${teamVon(id) ? " " + TEAMS[teamVon(id)].icon : ""}</button>`).join("")}</span></div>` : ""}
+      ${SPG.modus === "tn" || SPG.modus === "alle" ? `<p class="klein muted" style="margin:6px 0 0">Live – du siehst dieselbe Aufgabe, Tafel bzw. Rolle wie die Person. Einzelne Klicks innerhalb einer Übung werden nicht übertragen, das Ergebnis schon.</p>` : ""}
+      ${SPG.modus === "aus" ? `<p class="klein muted" style="margin:6px 0 0">Tippe einen Namen an, um sein Handy live mitzusehen, oder 👁 bei einer Aufgabe für die Vorschau – auch vor dem Unterricht.</p>` : ""}`;
+    $$("[data-spg]").forEach(b => b.onclick = () => { const [m, id] = b.dataset.spg.split("|"); SPG = { modus: m, als: id }; spiegel(); });
+    $$("[data-als]").forEach(b => b.onclick = () => { SPG.als = b.dataset.als; spiegel(); });
+    const url = id => `${basis}?spiegel=1&code=${CODE}&als=${encodeURIComponent(id)}`;
+    let frames = [];
+    if (SPG.modus === "tn" && ids.includes(SPG.als)) frames = [[name(SPG.als), url(SPG.als)]];
+    if (SPG.modus === "alle") frames = ids.map(id => [name(id), url(id)]);
+    if (probeA) { const als = probeIds.includes(SPG.als) ? SPG.als : probeIds[0]; frames = [[probeName(als), `${basis}?spiegel=1&probe=${SPG.probe}&code=${CODE}&lek=${G.lek}&plan=${G.plan}&teams=${G.teamZahl || 0}&als=${als}`]]; }
+    const key = JSON.stringify(frames); if (key === SPG_KEY) return; SPG_KEY = key;
+    $("#spgInhalt").innerHTML = frames.length ? `<div class="phones">${frames.map(([n, u]) => `<div class="phone"><div class="wer">📱 ${esc(n)}</div><div class="rahmen"><iframe src="${esc(u)}" loading="lazy" title="Handy ${esc(n)}"></iframe></div></div>`).join("")}</div>` : "";
   }
   function aufgabeStandHtml(a) {
     const E = ergebnisse(), ids = reihe();
     let h = `<div class="karte" style="margin-top:10px"><h3 style="margin-top:0">${U.TYP_ICON[a.typ] || ""} Läuft: ${esc(aufName(a))}</h3>`;
     if (a.typ === "puzzle" || a.typ === "sprechen") h += aufgabeLeinwandHtml(a, true);
+    else if (a.typ === "weg") h += wegStand(a, false);
+    else if (a.typ === "rolle") h += rolleStand(a, false);
     else if (a.typ === "interview" || a.typ === "partner") { const P = U.paare(ids, G.aufgabe.id); h += `<div class="fort">${P.gruppen.map(g => `<span>${g.map(name).join(" ↔ ")}</span>`).join("")}</div>`; }
     const fertig = ids.filter(id => E[id] && E[id].fertig != null || E[id] && E[id].n != null);
-    if (!["puzzle", "sprechen"].includes(a.typ)) h += `<div class="fort">${ids.map(id => { const e = E[id]; return `<span class="${e && (e.n != null || e.fertig) ? "ok" : ""}">${esc(name(id))}${e && e.n ? " " + e.p + "/" + e.n : e && e.fertig ? " ✓" : ""}</span>`; }).join("")}</div><p class="klein muted">${fertig.length} von ${ids.length} fertig</p>`;
+    if (!["puzzle", "sprechen", "weg", "rolle"].includes(a.typ)) h += `<div class="fort">${ids.map(id => { const e = E[id]; return `<span class="${e && (e.n != null || e.fertig) ? "ok" : ""}">${esc(name(id))}${e && e.n ? " " + e.p + "/" + e.n : e && e.fertig ? " ✓" : ""}</span>`; }).join("")}</div><p class="klein muted">${fertig.length} von ${ids.length} fertig</p>`;
     return h + `</div>`;
   }
   /* große Ansicht laufender Spezial-Aufgaben */
@@ -318,6 +433,8 @@ window.UNTERRICHT = (function () {
         h += `<div class="meldung">✔ ${ok} von ${T.length} Abschnitten an der richtigen Stelle!</div>${T.map((t, i) => `<div class="teil"><div class="wer">${i + 1}. ${ord[i] === i ? "✅" : "❌"} Abschnitt von ${label(i)}</div>${t.map(z => `<div class="fa-g" style="font-size:1.15rem">${esc(z.fa)}</div><div class="klein muted">${esc(z.de)}</div>`).join("")}</div>`).join("")}`; }
       return h;
     }
+    if (a.typ === "weg") return `<h2 style="margin:6px 0">🗺️ ${esc(a.titel)}</h2><p>🧭 Wer Guide ist, sieht das Ziel und beschreibt den Weg auf Persisch – ohne den Namen zu sagen. Die anderen tippen das Ziel an. Jede richtige Antwort = 1 Punkt.</p>${wegStand(a, true)}<div class="klein-h">So beschreibst du den Weg</div>${WEG_RM.map(([fa, de]) => `<div class="zeile-f"><div class="f">${esc(fa)}</div><div class="d">${esc(de)}</div></div>`).join("")}`;
+    if (a.typ === "rolle") return `<h2 style="margin:6px 0">🎭 ${esc(a.titel)}</h2>${rolleStand(a, true)}`;
     if (a.typ === "sprechen") {
       const g = G.aufgabe.gezogen || [], jetzt = g[g.length - 1];
       return `<h2 style="margin:6px 0">🎤 ${esc(a.titel)}</h2><p>${a.text || ""}</p>${jetzt ? `<div class="name-gross">🎤 ${esc(name(jetzt))}</div>` : ""}
@@ -326,6 +443,40 @@ window.UNTERRICHT = (function () {
     }
     if (a.typ === "interview" || a.typ === "partner") { const P = U.paare(ids, G.aufgabe.id); return `<h2 style="margin:6px 0">${U.TYP_ICON[a.typ]} ${esc(a.titel)}</h2><div class="name-gross" style="font-size:1.6rem">${P.gruppen.map(g => g.map(name).join(" ↔ ")).join(" · ")}</div>${a.fragen ? `<div>${a.fragen.map(([fa, de]) => `<div class="zeile-f"><div class="f">${esc(fa)}</div><div class="d">${esc(de)}</div></div>`).join("")}</div>` : ""}`; }
     return `<h2>${U.TYP_ICON[a.typ] || ""} ${esc(aufName(a))}</h2><p>Die Aufgabe ist auf den Handys. ${Object.keys(ergebnisse()).length} von ${ids.length} fertig.</p>`;
+  }
+  const WEG_RM = [["مُستَقیم بُرو.", "Geh geradeaus."], ["سَرِ چهارراه بِپیچ دَستِ راست.", "An der Kreuzung bieg rechts ab."], ["بِپیچ دَستِ چَپ.", "Bieg links ab."], ["دومین خیابانِ سَمتِ راست.", "Die zweite Straße rechts."], ["کِنارِ بانک است.", "Es ist neben der Bank."], ["روبه‌رویِ پارک است.", "Es ist gegenüber dem Park."], ["بِینِ کافه و سینَما است.", "Es ist zwischen Café und Kino."], ["تَهِ خیابان، سَمتِ چَپ.", "Am Ende der Straße, links."], ["بالا / پایین", "oben / unten (auf dem Plan)"]];
+  const WEG_FRAGEN = [["بِبَخشید، دوباره بِگو؟", "Entschuldigung, sag es noch einmal? (ugs.)"], ["یَعنی دَستِ راست؟", "Also rechts?"], ["کِنارِ چی؟", "Neben was? (ugs.)"]];
+  const wegStatus = (aid, gid) => ((((G.teams || {}).w || {})[aid]) || {})[gid] || {};
+  function wegStand(a, lw) {
+    const aid = G.aufgabe.id;
+    return `<div class="klein-h">🗺️ Stand je ${teamIds().length ? "Team" : "Gruppe"}</div>` + gruppenListe().map(g => {
+      const s = wegStatus(aid, g.id), r = s.r || 0, rd = U.wegRunde(aid + g.id + r), guide = g.m[r % g.m.length], ziel = U.ORTE[rd.orte[rd.ziel]], t = s.t || {};
+      return `<div class="aufg tm-${g.id}" style="display:block;border-left:5px solid var(--tf,var(--linie))"><b>${esc(gName(g))}</b> · Runde ${r + 1} · <b>${s.p || 0} Punkte</b>${lw ? ` · 🧭 ${esc(name(guide))} erklärt` : `
+        <div class="klein" style="margin-top:3px">🧭 Guide: <b>${esc(name(guide))}</b> · 🎯 Ziel: ${ziel[0]} <span class="fa">${esc(ziel[1])}</span> (${esc(ziel[2])})${s.auf ? " · aufgelöst" : ""}</div>
+        <div class="fort">${g.m.filter(id => id !== guide).map(id => { const o = t[id] != null ? U.ORTE[rd.orte[t[id]]] : null; return `<span class="${t[id] != null ? "ok" : ""}">${esc(name(id))}: ${o ? o[0] + " " + esc(o[2]) + (s.auf ? (t[id] === rd.ziel ? " ✅" : " ❌") : "") : "…"}</span>`; }).join("")}</div>`}</div>`;
+    }).join("");
+  }
+  function rolleWertung(a, g) {
+    const aid = G.aufgabe.id, { echt } = U.rolleListe(a, g.m, aid + g.id), E = ergebnisse(), P = {}, erkannt = new Set(), proPerson = {};
+    reihe().filter(id => !g.m.includes(id)).forEach(id => { const h = ((E[id] || {}).h || {})[g.id] || {}; let p = 0; Object.keys(h).forEach(k => { if (!h[k]) return; if (echt.has(k)) { p++; erkannt.add(k); } else p--; }); p = Math.max(0, p); proPerson[id] = p; const t = teamVon(id); if (t) P[t] = (P[t] || 0) + p; });
+    if (teamIds().includes(g.id)) P[g.id] = (P[g.id] || 0) + erkannt.size;
+    return { P, erkannt, proPerson, echt };
+  }
+  function rolleStand(a, lw) {
+    const aid = G.aufgabe.id, bu = G.aufgabe.buehne, aufl = !!G.aufgabe.aufl, E = ergebnisse();
+    let h = `<p style="margin:4px 0 8px">${esc(a.situation[1])}</p>`;
+    if (!lw) h += `<p class="klein muted" style="margin-top:0">Ablauf: Erst bereiten sich alle Gruppen gleichzeitig vor (Rollenkarte auf dem Handy, ca. 5 Min.). Dann tippst du „🎭 spielt vor“ – die anderen haken auf dem Handy an, welche Geheimaufträge sie gehört haben. „✔ auflösen“ verteilt die Punkte: +1 pro richtig erkanntem Auftrag (−1 für falsche), die spielende Gruppe +1 pro erkanntem Auftrag.</p>`;
+    h += gruppenListe().map(g => {
+      const { V } = U.rolleListe(a, g.m, aid + g.id), dran = bu === g.id;
+      let x = `<div class="aufg tm-${g.id}" style="display:block;border-left:5px solid var(--tf,var(--linie))"><div style="display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap"><b>${esc(gName(g))}${dran ? " – 🎭 spielt jetzt vor" : ""}</b>`;
+      if (!lw) x += dran ? (aufl ? `<b class="klein">✔ aufgelöst</b>` : `<button class="btn klein" data-raufl="${g.id}">✔ auflösen</button>`) : `<button class="btn zwei klein" data-buehne="${g.id}">🎭 spielt vor</button>`;
+      x += `</div>`;
+      x += g.m.map(id => { const v = V[id], R = a.rollen[v.rolle]; return `<div class="klein" style="margin-top:4px"><b>${esc(name(id))}</b> – ${R.icon} ${esc(R.name[1])}${lw ? "" : ": " + v.missionen.map(k => "🤫 " + esc(R.missionen[k][1])).join(" · ")}</div>`; }).join("");
+      if (dran && !lw) { const pub = reihe().filter(id => !g.m.includes(id)); x += `<div class="fort">${pub.map(id => { const n = Object.values(((E[id] || {}).h || {})[g.id] || {}).filter(Boolean).length; return `<span class="${n ? "ok" : ""}">${esc(name(id))}: ${n} angehakt</span>`; }).join("")}</div>`; }
+      if (dran && aufl) { const w = rolleWertung(a, g); x += `<div class="meldung" style="margin-bottom:0">Erkannt: ${w.erkannt.size} von ${w.echt.size} Geheimaufträgen${Object.keys(w.P).length ? " · Punkte: " + Object.entries(w.P).map(([t, p]) => teamName(t) + " +" + p).join(", ") : ""}</div>`; }
+      return x + `</div>`;
+    }).join("");
+    return h;
   }
   function puzzleVerteilung(a, ids) { const m = U.mischen(ids, U.rng(G.aufgabe.id + "v")), v = a._teile.map(() => []); if (!m.length) return v; const n = Math.max(m.length, a._teile.length); for (let k = 0; k < n; k++) v[k % a._teile.length].push(m[k % m.length]); v.forEach((l, i) => { v[i] = [...new Set(l)]; }); return v; }
   function verdrahteLeitung(B, t) {
@@ -341,7 +492,15 @@ window.UNTERRICHT = (function () {
     const ht = $("#handyTafel"); if (ht) ht.onchange = () => schreib("handyTafel", ht.checked);
     $$("[data-frei]").forEach(x => x.onclick = () => upd({ aufgabe: { b: G.block || 0, i: +x.dataset.frei, id: "a" + Date.now() } }));
     $$("[data-stopp]").forEach(x => x.onclick = () => schreib("aufgabe", null));
-    $$("[data-vorschau]").forEach(x => x.onclick = () => { const v = $("#vorschau"); v.innerHTML = `<div class="klein-h">👁 Vorschau (nur für dich)</div><div id="vInhalt"></div>`; const a = B.aufgaben[+x.dataset.vorschau]; if (LE.R[a.typ]) zeigeKarte(a, $("#vInhalt")); else $("#vInhalt").innerHTML = `<div class="karte">${aufgabeLeinwandHtml(a)}</div>`; });
+    $$("[data-vorschau]").forEach(x => x.onclick = () => { SPG = { modus: "probe", probe: (G.block || 0) + "." + x.dataset.vorschau, als: SPG.als }; spiegel(); $("#spiegelBox").scrollIntoView({ behavior: "smooth" }); });
+    const ze = $("#zurEinsicht"); if (ze) ze.onclick = () => $("#spiegelBox").scrollIntoView({ behavior: "smooth" });
+    /* Teams & Punkte */
+    $$("[data-tz]").forEach(x => x.onclick = () => { const k = +x.dataset.tz; upd({ teamZahl: k || null, gruppen: k ? verteile(k, reihe()) : null }); });
+    $$("[data-wechsel]").forEach(x => x.onclick = () => { const T = teamIds(), id = x.dataset.wechsel, i = T.indexOf(teamVon(id)); schreib("gruppen/" + id, T[(i + 1) % T.length]); });
+    $$("[data-pkt]").forEach(x => x.onclick = () => { const [t, p] = x.dataset.pkt.split("|"); gRef(CODE).child("log").push({ t, p: +p, ts: Date.now() }).catch(e => fehler(e)); });
+    /* Rollenspiel */
+    $$("[data-buehne]").forEach(x => x.onclick = () => upd({ "aufgabe/buehne": x.dataset.buehne, "aufgabe/aufl": null }));
+    $$("[data-raufl]").forEach(x => x.onclick = () => { const a = aufgabeAktiv(), g = gruppenListe().find(y => y.id === x.dataset.raufl); if (!a || !g) return; const w = rolleWertung(a, g), o = { "aufgabe/aufl": true }; Object.entries(w.P).forEach(([t, p]) => { o[`log/${G.aufgabe.id}_${g.id}_${t}`] = { t, p, grund: "Rollenspiel", ts: Date.now() }; }); upd(o); });
     /* Puzzle & Sprechrunde */
     $$("[data-teil]").forEach(x => x.onclick = () => { const r = (G.aufgabe.reihe || []).map(Number), i = +x.dataset.teil; if (r.includes(i)) return; schreib("aufgabe/reihe", r.concat(i)); });
     const pa = $("#pAufl"); if (pa) pa.onclick = () => schreib("aufgabe/aufl", true);
@@ -373,35 +532,38 @@ window.UNTERRICHT = (function () {
     LT.verbindung(gRef(c).child("spieler/" + ME.id)); hoere(c);
   }
   const meinErg = () => ((G.teams && G.teams.r && G.aufgabe && G.teams.r[G.aufgabe.id]) || {})[ME.id] || {};
-  const ergRef = () => gRef(CODE).child(`teams/r/${G.aufgabe.id}/${ME.id}`);
+  const ergRef = () => tnRef(`teams/r/${G.aufgabe.id}/${ME.id}`);
+  const ergebnisSpeichern = (p, n) => { const e = meinErg(); (e.n != null ? ergRef().update({ zuletzt: p }) : ergRef().set({ p, n, ts: Date.now() })).catch(() => { }); };
+  const teamZeile = () => { const t = teamVon(ME.id); return t && TEAMS[t] ? `<div class="tm-${t}" style="margin-top:10px"><span class="team-badge">${TEAMS[t].icon} ${esc(TEAMS[t].de)} · <span class="fa">${TEAMS[t].fa}</span></span></div>` : ""; };
   function zeichneSpieler() {
     if (!G) return zeichneBeitritt("Diese Runde wurde beendet.");
     if (!PLAN) return;
     const ich = SP()[ME.id];
+    if (!ich && SPIEGEL) { app().innerHTML = `<div class="karte" style="margin-top:20px;text-align:center">Diese Person ist (noch) nicht in der Runde.</div>`; return; }
     if (!ich) { app().innerHTML = `<div class="karte" style="margin-top:20px;text-align:center">Du bist nicht (mehr) dabei.<br><br><button class="btn" id="nochmal">Wieder mitmachen</button></div>`; $("#nochmal").onclick = () => beitreten(CODE, ME.name); return; }
-    $("#kopfTitel").textContent = "🎓 " + PLAN.titelLek; $("#kopfInfo").textContent = ich.name;
+    $("#kopfTitel").textContent = "🎓 " + PLAN.titelLek; $("#kopfInfo").textContent = ich.name + (teamVon(ME.id) && TEAMS[teamVon(ME.id)] ? " " + TEAMS[teamVon(ME.id)].icon : "");
     const a = aufgabeAktiv();
     if (a && !LE.R[a.typ]) { TN_KEY = null; return zeichneSpezial(a); }
     if (a) {
       const key = "a:" + G.aufgabe.id;
       if (TN_KEY === key && $("#tnKarte")) { const e = meinErg(); const st = $("#tnStatus"); if (st) st.innerHTML = e.n != null ? `✅ Geschafft: ${e.p} von ${e.n} <button class="btn zwei klein" id="nochmalA">🔁 noch einmal</button>` : ""; verdrahteNochmal(a); return; }
       TN_KEY = key;
-      app().innerHTML = `<div class="meldung" style="margin-top:12px">📲 <b>Aufgabe:</b> ${esc(aufName(a))}</div><div id="tnStatus" class="meldung" style="background:var(--gruen-hell);border-color:#b9d8c4;display:none"></div><div id="tnKarte"></div>`;
-      zeigeKarte(a, $("#tnKarte"), (p, n) => { ergRef().set({ p, n, ts: Date.now() }).catch(() => { }); const st = $("#tnStatus"); if (st) { st.style.display = ""; st.innerHTML = `✅ Geschafft${n ? `: ${p} von ${n}` : ""}! Warte auf die nächste Aufgabe … <button class="btn zwei klein" id="nochmalA">🔁 noch einmal</button>`; verdrahteNochmal(a); } });
+      app().innerHTML = `${teamZeile()}<div class="meldung" style="margin-top:12px">📲 <b>Aufgabe:</b> ${esc(aufName(a))}${teamIds().length ? ` <span class="klein">– zählt für dein Team (nur der 1. Versuch)</span>` : ""}</div><div id="tnStatus" class="meldung" style="background:var(--gruen-hell);border-color:#b9d8c4;display:none"></div><div id="tnKarte"></div>`;
+      zeigeKarte(a, $("#tnKarte"), (p, n) => { ergebnisSpeichern(p, n); const st = $("#tnStatus"); if (st) { st.style.display = ""; st.innerHTML = `✅ Geschafft${n ? `: ${p} von ${n}` : ""}! Warte auf die nächste Aufgabe … <button class="btn zwei klein" id="nochmalA">🔁 noch einmal</button>`; verdrahteNochmal(a); } });
       return;
     }
-    const B = PLAN.bloecke[G.block || 0], t = Math.min(G.tafel || 0, Math.max(0, B.tafel.length - 1)), key = "t:" + (G.block || 0) + ":" + t + ":" + (G.handyTafel !== false);
+    const B = PLAN.bloecke[G.block || 0], t = Math.min(G.tafel || 0, Math.max(0, B.tafel.length - 1)), key = "t:" + (G.block || 0) + ":" + t + ":" + (G.handyTafel !== false) + ":" + teamVon(ME.id) + ":" + JSON.stringify(punkte());
     if (TN_KEY === key) return; TN_KEY = key;
-    if (B.tafel.length && G.handyTafel !== false) { app().innerHTML = `<div class="meldung" style="margin-top:12px">👀 <b>Schau nach vorn</b> – hier die Tafel zum Mitlesen.</div><div id="tnTafel"></div>`; zeigeKarte(B.tafel[t], $("#tnTafel")); }
-    else app().innerHTML = `<div class="karte" style="margin-top:20px;text-align:center"><div style="font-size:3rem">👀</div><h2>Schau nach vorn!</h2><p class="muted">${B.icon} ${esc(B.titel)}</p><p class="klein muted">Gleich gibt es hier die nächste Aufgabe.</p></div>`;
+    if (B.tafel.length && G.handyTafel !== false) { app().innerHTML = `${teamZeile()}${scoreHtml(false)}<div class="meldung" style="margin-top:12px">👀 <b>Schau nach vorn</b> – hier die Tafel zum Mitlesen.</div><div id="tnTafel"></div>`; zeigeKarte(B.tafel[t], $("#tnTafel")); }
+    else app().innerHTML = `${teamZeile()}${scoreHtml(false)}<div class="karte" style="margin-top:20px;text-align:center"><div style="font-size:3rem">👀</div><h2>Schau nach vorn!</h2><p class="muted">${B.icon} ${esc(B.titel)}</p><p class="klein muted">Gleich gibt es hier die nächste Aufgabe.</p></div>`;
   }
-  function verdrahteNochmal(a) { const b = $("#nochmalA"); if (b) b.onclick = () => { TN_KEY = null; $("#tnStatus") && ($("#tnStatus").style.display = "none"); zeigeKarte(a, $("#tnKarte"), (p, n) => { ergRef().set({ p, n, ts: Date.now() }).catch(() => { }); TN_KEY = null; zeichne(); }); TN_KEY = "a:" + G.aufgabe.id; }; }
+  function verdrahteNochmal(a) { const b = $("#nochmalA"); if (b) b.onclick = () => { TN_KEY = null; $("#tnStatus") && ($("#tnStatus").style.display = "none"); zeigeKarte(a, $("#tnKarte"), (p, n) => { ergebnisSpeichern(p, n); TN_KEY = null; zeichne(); }); TN_KEY = "a:" + G.aufgabe.id; }; }
 
   /* ---------- Spezial-Aufgaben auf dem Handy ---------- */
   let LOK = {};
   function zeichneSpezial(a) {
     const id = G.aufgabe.id, ids = reihe(); if (LOK.id !== id) LOK = { id, antw: {} };
-    let h = `<div class="meldung" style="margin-top:12px">${U.TYP_ICON[a.typ] || ""} <b>${esc(a.titel)}</b></div>`;
+    let h = `${teamZeile()}<div class="meldung" style="margin-top:12px">${U.TYP_ICON[a.typ] || ""} <b>${esc(a.titel)}</b></div>`;
     if (a.typ === "interview") {
       const P = U.paare(ids, id), ziel = P.ziel[ME.id], felder = a._felder, mein = U.karteVon(felder, ME.id, id), e = meinErg();
       const antw = Object.assign({}, (e.antw || {}), LOK.antw);
@@ -436,12 +598,76 @@ window.UNTERRICHT = (function () {
       app().innerHTML = h;
       const pf = $("#pFertig"); if (pf) pf.onclick = () => ergRef().update({ fertig: true, ts: Date.now() }).catch(() => { });
     }
+    else if (a.typ === "weg") { app().innerHTML = h + wegTN(a, id); verdrahteWeg(a, id); }
+    else if (a.typ === "rolle") { app().innerHTML = h + rolleTN(a, id); verdrahteRolle(a, id); }
     $$("[data-say]").forEach(b => b.onclick = e => { e.stopPropagation(); F.sprich(b.dataset.say); });
+  }
+  const zeileFa = ([fa, de]) => `<div class="zeile-f"><div class="f">${esc(fa)} <button class="btn zwei klein" data-say="${esc(fa)}">🔊</button></div><div class="d">${esc(de)}</div></div>`;
+  function wegDaten(id) {
+    const g = gruppenListe().find(x => x.m.includes(ME.id)); if (!g) return null;
+    const s = wegStatus(id, g.id), r = s.r || 0, rd = U.wegRunde(id + g.id + r), guide = g.m[r % g.m.length], t = s.t || {}, rater = g.m.filter(x => x !== guide);
+    return { g, s, r, rd, guide, t, rater, ichGuide: guide === ME.id, mein: t[ME.id] };
+  }
+  function wegTN(a, id) {
+    const d = wegDaten(id); if (!d) return `<div class="meldung">Warte, bis du einer Gruppe zugeteilt bist …</div>`;
+    const { g, s, r, rd, guide, t, rater, ichGuide, mein } = d, ziel = U.ORTE[rd.orte[rd.ziel]], getippt = rater.filter(x => t[x] != null).length;
+    let h = `<p class="klein" style="margin:4px 0">${esc(gName(g))} · Runde ${r + 1} · <b>${s.p || 0} Punkte</b></p>`;
+    if (s.auf) { const ok = rater.filter(x => t[x] === rd.ziel); h += `<div class="meldung">🎯 Das Ziel war ${ziel[0]} <span class="fa">${esc(ziel[1])}</span> (${esc(ziel[2])}). ${ok.length} von ${rater.length} richtig → +${ok.length} ${ok.length === 1 ? "Punkt" : "Punkte"}!</div>`; }
+    else if (ichGuide) h += `<div class="ich-dran" style="font-size:1.05rem">🧭 Du bist Guide! Beschreib auf Persisch den Weg zum ⭐ – ohne den Namen zu sagen.</div><p style="margin:6px 0">🎯 Ziel: ${ziel[0]} <span class="fa">${esc(ziel[1])}</span> (${esc(ziel[2])})</p>`;
+    else h += `<div class="meldung">👂 <b>${esc(name(guide))}</b> beschreibt dir den Weg. Hör zu und tippe das Ziel an.${mein != null ? " Du kannst noch ändern." : ""}</div>`;
+    h += `<div class="plan">${rd.orte.map((o, k) => { let c = ""; if (s.auf) c = k === rd.ziel ? "ok" : (mein === k ? "nein" : ""); else if (ichGuide && k === rd.ziel) c = "ziel"; else if (!ichGuide && mein === k) c = "an"; return `<button class="ort ${c}" data-ort="${k}" ${ichGuide || s.auf ? "disabled" : ""}><span class="e">${U.ORTE[o][0]}</span><span class="n">${esc(U.ORTE[o][1])}</span></button>`; }).join("")}</div><div class="hier">⬆️<br>📍 <span class="fa">شُما اینجا هَستید</span> <span class="klein muted">(Du bist hier)</span></div>`;
+    if (s.auf) h += `<button class="btn" id="wWeiter" style="width:100%">▶ Nächste Runde – ${esc(name(g.m[(r + 1) % g.m.length]))} ist Guide</button>`;
+    else if (ichGuide) h += `<button class="btn" id="wAufl" style="width:100%" ${getippt === rater.length && rater.length ? "" : "disabled"}>✔ auflösen (${getippt} von ${rater.length} getippt)</button><details open style="margin-top:10px"><summary><b>So beschreibst du den Weg</b></summary>${WEG_RM.map(zeileFa).join("")}</details>`;
+    else h += `<details style="margin-top:10px"><summary><b>Nachfragen</b></summary>${WEG_FRAGEN.map(zeileFa).join("")}</details>`;
+    return h;
+  }
+  function verdrahteWeg(a, id) {
+    const d = wegDaten(id); if (!d) return; const pfad = `teams/w/${id}/${d.g.id}`;
+    $$("[data-ort]").forEach(b => b.onclick = () => tnRef(`${pfad}/t/${ME.id}`).set(+b.dataset.ort).catch(() => { }));
+    const au = $("#wAufl"); if (au) au.onclick = () => { const ok = d.rater.filter(x => d.t[x] === d.rd.ziel).length; tnRef(pfad).update({ auf: true, p: (d.s.p || 0) + ok }).catch(() => { }); };
+    const we = $("#wWeiter"); if (we) we.onclick = () => tnRef(pfad).update({ r: d.r + 1, auf: null, t: null }).catch(() => { });
+  }
+  function rolleKarte(a, g, V) {
+    const v = V[ME.id], R = a.rollen[v.rolle];
+    return `<div class="karte rolle tm-${g.id}" style="margin-top:10px"><div class="klein muted">${esc(a.situation[1])}</div><h3 style="margin:8px 0 4px">${R.icon} Deine Rolle: ${esc(R.name[1])} <span class="fa">${esc(R.name[0])}</span></h3><p style="margin:0 0 6px">${esc(R.aufgabe)}</p>
+      <div class="klein-h">Das könnt ihr sagen (ugs.)</div>${R.redemittel.map(zeileFa).join("")}
+      <div class="klein-h">🤫 Deine Geheimaufträge – bau sie unauffällig ein!</div>${v.missionen.map(k => `<div class="mission"><b>${esc(R.missionen[k][1])}</b><div class="fa-g" style="font-size:1.1rem">${esc(R.missionen[k][0])} <button class="btn zwei klein" data-say="${esc(R.missionen[k][0])}">🔊</button></div></div>`).join("")}
+      <div class="klein-h">In deiner Gruppe</div><div class="klein">${g.m.map(id => `${esc(name(id))}: ${a.rollen[V[id].rolle].icon} ${esc(a.rollen[V[id].rolle].name[1])}`).join(" · ")}</div></div>`;
+  }
+  function rolleTN(a, id) {
+    const g = gruppenListe().find(x => x.m.includes(ME.id)); if (!g) return `<div class="meldung">Warte, bis du einer Gruppe zugeteilt bist …</div>`;
+    const V = U.rolleListe(a, g.m, id + g.id).V, bu = G.aufgabe.buehne, aufl = !!G.aufgabe.aufl;
+    if (!bu) return `<div class="meldung">📝 Vorbereitung: Lest eure Rollen, übt das Gespräch in eurer Gruppe – und baut eure Geheimaufträge ein, ohne dass es auffällt!</div>` + rolleKarte(a, g, V);
+    const bg = gruppenListe().find(x => x.id === bu); if (!bg) return rolleKarte(a, g, V);
+    if (bg.id === g.id) { let h = `<div class="ich-dran">🎭 Ihr spielt jetzt vor!</div>`; if (aufl) { const w = rolleWertung(a, g); h += `<div class="meldung" style="margin-top:10px">Das Publikum hat ${w.erkannt.size} von ${w.echt.size} Geheimaufträgen erkannt.</div>`; } return h + rolleKarte(a, g, V); }
+    const L = U.rolleListe(a, bg.m, id + bg.id), hab = ((meinErg().h || {})[bg.id]) || {};
+    let h = `<div class="meldung">👂 <b>${esc(gName(bg))}</b> spielt vor. Welche Geheimaufträge hörst du? Hake an!</div>`;
+    h += L.liste.map(k => { const [ri, mi] = k.split("_").map(Number), R = a.rollen[ri], an = !!hab[k], echt = L.echt.has(k); let c = an ? "an" : ""; if (aufl) c = echt ? (an ? "ok" : "verpasst") : (an ? "nein" : ""); return `<button class="check ${c}" data-mis="${k}" ${aufl ? "disabled" : ""}><span>${aufl ? (echt ? (an ? "✅" : "👂") : (an ? "❌" : "▫️")) : (an ? "☑️" : "⬜")}</span><span>${R.icon} <b>${esc(R.name[1])}</b> ${esc(R.missionen[mi][1])}${aufl && echt ? `<br><span class="fa">${esc(R.missionen[mi][0])}</span>` : ""}</span></button>`; }).join("");
+    if (aufl) { const w = rolleWertung(a, bg); h += `<div class="meldung">Du bekommst ${w.proPerson[ME.id] || 0} ${w.proPerson[ME.id] === 1 ? "Punkt" : "Punkte"} für dein Team. ✅ richtig erkannt · 👂 überhört · ❌ war kein Auftrag</div>`; }
+    return h + `<details style="margin-top:10px"><summary class="klein">Meine eigene Rolle</summary>${rolleKarte(a, g, V)}</details>`;
+  }
+  function verdrahteRolle(a, id) {
+    const bu = G.aufgabe.buehne; $$("[data-mis]").forEach(b => b.onclick = () => { const k = b.dataset.mis, an = !!(((meinErg().h || {})[bu]) || {})[k]; ergRef().child(`h/${bu}/${k}`).set(an ? null : true).catch(() => { }); });
   }
 
   function zeichne() { MODUS === "leitung" ? zeichneLeitung() : zeichneSpieler(); }
   window.UNTERRICHT_APP = { zeichne, get G() { return G; }, get PLAN() { return PLAN; }, ladePlan };
-  F.initFB(); MODUS === "leitung" ? startLeitung() : startSpieler();
+  /* Einsicht/Vorschau im iframe der Leitung: ?spiegel=1&code=…&als=pid (live, nur lesen) oder &probe=b.i (Vorschau, lokal) */
+  async function startSpiegel() {
+    document.body.classList.add("spiegel"); if (!PROBE) document.body.classList.add("nurlesen");
+    ME = { id: qs.get("als") || "", name: "" };
+    if (!PROBE) { if (CODE) hoere(CODE); return; }
+    let basis = null; if (CODE) { try { basis = (await F.mitTimeout(gRef(CODE).once("value"), 8000)).val(); } catch (e) { } }
+    const [b, i] = PROBE.split(".").map(Number), fake = {}; FAKE_TN.forEach((n, k) => { fake["x" + (k + 1)] = { name: n, ts: k }; });
+    const echt = basis && basis.spieler && Object.keys(basis.spieler).length >= 2;
+    G = { phase: "spiel", lek: qs.get("lek") || (basis && basis.lek), plan: qs.get("plan") || (basis && basis.plan), block: b, tafel: 0, spieler: echt ? basis.spieler : fake, teamZahl: +qs.get("teams") || null, gruppen: echt ? basis.gruppen : null, aufgabe: { b, i, id: "probe" } };
+    if (G.teamZahl && !G.gruppen) { G.gruppen = {}; reihe().forEach((id, k) => { G.gruppen[id] = "ABC"[k % G.teamZahl]; }); }
+    if (!SP()[ME.id]) ME.id = reihe()[0];
+    try { await ladePlan(G.lek, G.plan); } catch (e) { return fehler(e, true); }
+    zeichne();
+  }
+  const FAKE_TN = ["Ana", "Ben", "Cem", "Dora", "Emil", "Fari"];
+  F.initFB(); MODUS === "leitung" ? startLeitung() : SPIEGEL ? startSpiegel() : startSpieler();
 })();
 </script>
 </body>

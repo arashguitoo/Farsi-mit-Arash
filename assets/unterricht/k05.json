@@ -1,0 +1,63 @@
+{
+  "lektion": "k05",
+  "titel": "Unterwegs in der Stadt – Teamduell (90 Min.)",
+  "minuten": 90,
+  "bloecke": [
+    { "id": "start", "icon": "🚦", "titel": "Einstieg & Teams", "minuten": 10,
+      "tafel": [ { "ref": "k05/s0/0" },
+        { "titel": "Heute: Teamduell", "text": "<p>Wir spielen in <b>Teams</b>. Punkte gibt es für die Übungen auf dem Handy (zählt der Durchschnitt des Teams – jede/r ist wichtig!), für das Stadtplan-Spiel, das Rollenspiel und das Finale.</p><p>Stellt euch kurz im Team vor – auf Persisch:</p>",
+          "beispiele": [ { "fa": "اِسمِ تیمِ ما … است.", "tr": "esm-e tīm-e mā … ast.", "de": "Unser Team heißt …" },
+            { "fa": "مَن هَر روز با مِترو می‌رَوَم سَرِ کار.", "tr": "man har rūz bā metro mīrawam sar-e kār.", "de": "Ich fahre jeden Tag mit der U-Bahn zur Arbeit." },
+            { "fa": "مَن بیشتَر پیاده می‌رَوَم.", "tr": "man bīschtar piyāde mīrawam.", "de": "Ich gehe meistens zu Fuß." } ] } ],
+      "aufgaben": [
+        { "typ": "sprechen", "titel": "Blitzrunde: Wie kommst du hin?", "text": "Wer gezogen wird, antwortet in zwei Sätzen – und stellt dann einer Person aus dem <b>anderen Team</b> eine Frage. Gute Antwort = du kannst mit +1 belohnen.",
+          "saetze": [ ["هَر روز چِطوری می‌ری سَرِ کار یا دانِشگاه؟", "Wie kommst du jeden Tag zur Arbeit oder Uni? (ugs.)"],
+            ["ماشین داری؟ دوست داری داشته باشی؟", "Hast du ein Auto? Möchtest du eins? (ugs.)"],
+            ["دوچَرخه، اُتوبوس یا پیاده؟ چِرا؟", "Fahrrad, Bus oder zu Fuß? Warum?"],
+            ["حَمل و نَقلِ عُمومی تو شَهرِت چِطوره؟", "Wie ist der Nahverkehr in deiner Stadt? (ugs.)"] ] } ] },
+
+    { "id": "woerter", "icon": "⚔️", "titel": "Wort-Duell", "minuten": 15,
+      "tafel": [ { "ref": "k05/w1/0" }, { "ref": "k05/w1/1" }, { "ref": "k05/w2/0" }, { "ref": "k05/w2/1" }, { "ref": "k05/w3/0" }, { "ref": "k05/w3/1" } ],
+      "aufgaben": [ { "ref": "k05/w1/6" }, { "ref": "k05/w2/6" }, { "ref": "k05/w3/6" }, { "ref": "k05/w3/5" }, { "ref": "k05/v/2" }, { "ref": "k05/v/3" }, { "ref": "k05/a/1" } ] },
+
+    { "id": "stadtplan", "icon": "🗺️", "titel": "Stadtplan-Spiel: Wo ist das?", "minuten": 20,
+      "tafel": [
+        { "titel": "🗺️ So beschreibst du den Weg", "text": "<p>In jedem Team ist eine Person <b>Guide</b>: Sie sieht auf dem Handy das Ziel ⭐ und beschreibt den Weg – <b>ohne den Namen zu sagen</b>. Die anderen tippen das Ziel auf ihrem Stadtplan an. Jede richtige Antwort = 1 Punkt. Danach ist die nächste Person Guide. Welches Team schafft die meisten Runden?</p>",
+          "beispiele": [ { "fa": "مُستَقیم بُرو.", "tr": "mostaghīm boro.", "de": "Geh geradeaus." },
+            { "fa": "سَرِ چهارراه بِپیچ دَستِ راست.", "tr": "sar-e tschahārrāh bepītsch dast-e rāst.", "de": "An der Kreuzung bieg rechts ab." },
+            { "fa": "دومین خیابانِ سَمتِ راست.", "tr": "dowwomīn chiyābān-e samt-e rāst.", "de": "Die zweite Straße rechts." },
+            { "fa": "کِنارِ بانک است.", "tr": "kenār-e bānk ast.", "de": "Es ist neben der Bank." },
+            { "fa": "روبه‌رویِ پارک است.", "tr": "rūberū-ye pārk ast.", "de": "Es ist gegenüber dem Park." },
+            { "fa": "بِینِ کافه و سینَما است.", "tr": "beyn-e kāfe wa sīnamā ast.", "de": "Es ist zwischen Café und Kino." } ] },
+        { "ref": "k05/w3/0" } ],
+      "aufgaben": [ { "typ": "weg", "titel": "Stadtplan-Spiel: Wo ist das?" } ] },
+
+    { "id": "reagieren", "icon": "💬", "titel": "Redemittel & schnell reagieren", "minuten": 10,
+      "tafel": [ { "ref": "k05/r1/0" }, { "ref": "k05/r1/1" }, { "ref": "k05/r1/2" }, { "ref": "k05/r2/0" } ],
+      "aufgaben": [ { "ref": "k05/r2/1" }, { "ref": "k05/r2/4" }, { "ref": "k05/r2/3" }, { "ref": "k05/r1/5" }, { "ref": "k05/r2/2" }, { "ref": "k05/b/1" } ] },
+
+    { "id": "snapp", "icon": "🚕", "titel": "Im Snapp: Rollenspiel mit Geheimauftrag", "minuten": 25,
+      "tafel": [ { "ref": "k05/d/1" }, { "ref": "k05/k/0" },
+        { "titel": "🎭 Rollenspiel mit Geheimauftrag", "text": "<p>Jede Gruppe spielt eine Snapp-Fahrt: <b>Fahrgast</b> (spät dran), <b>Fahrer/in</b> (neugierig) – und bei drei Personen die <b>Kollegin am Telefon</b>.</p><p>Jede/r hat zwei <b>Geheimaufträge</b> auf dem Handy, z. B. „nach dem Preis fragen“. Baut sie unauffällig ins Gespräch ein! Das Publikum hakt an, was es gehört hat.</p><p class='klein'>Punkte: +1 für jeden richtig erkannten Auftrag (−1 für falsche) · die spielende Gruppe +1 für jeden Auftrag, den das Publikum erkannt hat.</p>" } ],
+      "aufgaben": [ { "ref": "k05/d/4" },
+        { "typ": "rolle", "titel": "Im Snapp – Rollenspiel mit Geheimauftrag", "anzahl": 2,
+          "situation": ["تهران، ساعتِ شُلوغی", "Teheran, Rushhour: Ein Fahrgast sitzt im Snapp auf dem Weg zum Tadschrisch-Basar und hat um 10 Uhr einen wichtigen Termin."],
+          "rollen": [
+            { "icon": "🧳", "name": ["مُسافِر", "Fahrgast"], "aufgabe": "Du bist spät dran. Bitte den Fahrer / die Fahrerin um einen schnelleren Weg – und erklär am Telefon, warum du zu spät kommst.",
+              "redemittel": [ ["از کُدوم طَرَف بِریم که تِرافیک نَباشه؟", "Welchen Weg nehmen wir, damit wir nicht im Stau stehen?"], ["تو تِرافیک گیر کَردَم.", "Ich stecke im Stau."], ["دَه دَقیقه‌یِ دیگه می‌رِسَم.", "Ich bin in zehn Minuten da."], ["هَمین‌جا نِگَه دارید، لُطفاً.", "Halten Sie bitte hier."] ],
+              "missionen": [ ["کِرایه چِقَدر می‌شه؟", "fragt nach dem Preis"], ["لُطفاً کولِرو روشَن کُنید.", "bittet, die Klimaanlage anzumachen"], ["هَمین‌جا جِلویِ بانک نِگَه دارید.", "sagt, wo genau der Fahrer halten soll"], ["مَن تو کیل زِندِگی می‌کُنَم.", "erzählt, in welcher Stadt er/sie wohnt"], ["چِقَدر دیگه می‌رِسیم؟", "fragt, wie lange es noch dauert"], ["یه کَم آروم‌تَر بِرید، لُطفاً.", "bittet, langsamer zu fahren"] ] },
+            { "icon": "🚗", "name": ["راننده", "Fahrer/in"], "aufgabe": "Du fährst Snapp, bist sehr gesprächig und neugierig. Du kennst jede Abkürzung – aber du willst auch viel über Deutschland wissen.",
+              "redemittel": [ ["سَلام، بِفَرمایید.", "Hallo, bitte (steigen Sie ein)."], ["از اُتوبان بِریم یا از وَلیعَصر؟", "Über die Autobahn oder die Valiasr-Straße?"], ["الان خِیلی تِرافیکه.", "Gerade ist viel Stau."], ["رِسیدیم. کُجا نِگَه دارَم؟", "Wir sind da. Wo soll ich halten?"] ],
+              "missionen": [ ["شُما اَهلِ کُجایید؟", "fragt, woher der Fahrgast kommt"], ["فارسی‌تون خِیلی خوبه!", "lobt das Persisch des Fahrgasts"], ["از اُتوبان بِریم؟", "schlägt die Autobahn vor"], ["مَن یه پِسَرخاله تو هامبورگ دارَم.", "erzählt von einem Verwandten in Deutschland"], ["اِمروز خِیلی تِرافیکه!", "beschwert sich über den Verkehr"], ["آهَنگ گوش می‌دید؟", "fragt, ob der Fahrgast Musik hören möchte"] ] },
+            { "icon": "📞", "name": ["هَمکار", "Kollegin / Kollege am Telefon"], "aufgabe": "Du wartest im Büro auf den Fahrgast. Die Besprechung beginnt gleich. Ruf an und frag nach.",
+              "redemittel": [ ["اَلو، سَلام! کُجایی؟", "Hallo! Wo bist du?"], ["جَلَسه ساعَتِ دَه شُروع می‌شه.", "Die Besprechung beginnt um zehn."], ["باشه، مُنتَظِرِتیم.", "Okay, wir warten auf dich."] ],
+              "missionen": [ ["الان کُجایی؟", "fragt, wo der Fahrgast gerade ist"], ["جَلَسه داره شُروع می‌شه!", "sagt, dass die Besprechung gleich anfängt"], ["کِی می‌رِسی؟", "fragt, wann er/sie ankommt"], ["اِشکالی نَداره، مُنتَظِرِتیم.", "sagt, dass es kein Problem ist und alle warten"], ["رَئیس هَم هَنوز نیومَده!", "erzählt, dass der Chef auch noch nicht da ist"], ["رِسیدی، پَیام بِده.", "bittet um eine Nachricht bei Ankunft"] ] } ] } ] },
+
+    { "id": "finale", "icon": "🏆", "titel": "Finale: Die beste Ausrede", "minuten": 10,
+      "tafel": [],
+      "aufgaben": [
+        { "typ": "sprechen", "titel": "Finale: Die beste Ausrede", "text": "Jedes Team hat 2 Minuten und erfindet die beste Ausrede fürs Zuspätkommen (3 Sätze, auf Persisch). Dann trägt eine Person vor – du vergibst die Punkte mit +1 / +3.",
+          "saetze": [ ["بِبَخشید، دیر کَردَم، چون …", "Entschuldigung, ich bin spät, weil … (ugs.)"], ["تو تِرافیک گیر کَردَم.", "Ich stecke im Stau. (ugs.)"], ["مِترو خَراب بود.", "Die U-Bahn war kaputt."], ["رانَنده‌یِ اِسنَپ راهو گُم کَرد.", "Der Snapp-Fahrer hat sich verfahren. (ugs.)"], ["هَنوز نَرِسیدَم، شُروع کُنید!", "Ich bin noch nicht da, fangt schon an! (ugs.)"] ] },
+        { "ref": "k05/b/0" }, { "ref": "k05/x/1" } ] }
+  ]
+}

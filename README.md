@@ -308,6 +308,11 @@ Zentrale Stelle für den Unterricht mit Lektionen (Konsole → 🎓 Live-Unterri
 - **Leitung:** Zeitleiste (Soll/Ist, geplantes Ende, ± Minuten je Block), Lehrtafel blättern (optional auch auf den Handys), Aufgaben 📲 freigeben / ⏹ beenden mit Fortschritt, 🖥️ Leinwand-Modus.
 - **Interview:** Jede/r bekommt eine eigene Familienkarte (Antworten), fragt die Partnerin / den Partner und tippt die gehörten Antworten an → ✔ prüfen vergleicht mit der Karte des Gegenübers.
 - **Vorlesen & ordnen:** Der Text wird in Abschnitte geteilt und verteilt; alle lesen laut, die Gruppe einigt sich auf die Reihenfolge, die Lehrkraft tippt sie auf der Leinwand an → auflösen.
+- **Teams (2 oder 3):** Punktetafel mit ±-Knöpfen; Übungen zählen als Ø des Teams (nur 1. Versuch, max. 10 je Übung).
+- **Stadtplan-Spiel (`typ: "weg"`):** Pro Team ist eine Person Guide, sieht das Ziel und beschreibt den Weg; die anderen tippen an. Guide wechselt jede Runde.
+- **Rollenspiel mit Geheimauftrag (`typ: "rolle"`):** Rollen + je 2 Geheimaufträge; das Publikum hakt Gehörtes an, Punkte für beide Seiten.
+- **📱 Einsicht:** Live-Ansicht jedes TN-Handys (nur lesen) und 👁-Vorschau jeder Aufgabe als Handy – auch ohne TN (`?spiegel=1&probe=Block.Aufgabe&lek=…&plan=…`).
+- Ausgearbeitete Pläne: 03 (L4 haben), f101, k05 (Teamduell). Der automatische Plan ist nur noch ein versteckter Rohentwurf.
 - Firebase: `live/unterricht/{code}` (gleiche Regeln wie die anderen Live-Spiele).
 
 ### Live: Scharade · Erklären · Malen (`live-scharade.html`)
