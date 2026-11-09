@@ -1,0 +1,118 @@
+{
+  "lektion": "04",
+  "titel": "mögen + mein/dein (mit Wiederholung „haben“)",
+  "minuten": 90,
+  "bloecke": [
+    { "id": "haben", "icon": "🔁", "titel": "Wiederholung: haben", "minuten": 10,
+      "tafel": [ { "ref": "03/s01/0" }, { "ref": "03/s10/0" } ],
+      "aufgaben": [
+        { "typ": "sprechen", "titel": "Blitzrunde: Was hast du?", "text": "Wer gezogen wird, beantwortet eine Frage – und fragt dann die nächste Person.",
+          "saetze": [ ["چَند خواهَر و بَرادَر داری؟", "Wie viele Geschwister hast du?"], ["ماشین داری؟", "Hast du ein Auto?"], ["گُربه یا سَگ داری؟", "Hast du eine Katze oder einen Hund?"], ["اِمروز وَقت داری؟", "Hast du heute Zeit?"] ] },
+        { "ref": "03/s01/3" }, { "ref": "03/s02/4" }, { "ref": "03/s10/2" }, { "ref": "03/s13/0" } ] },
+
+    { "id": "mein", "icon": "👨‍👩‍👧", "titel": "mein Bruder, deine Mutter", "minuten": 10,
+      "tafel": [
+        { "titel": "Wessen Familie? – mit Ezāfe", "text": "<p>„mein, dein, sein …“ sagen wir mit dem <b>Ezāfe</b>: Nomen + <b>-e</b> + Pronomen. Genau wie <span class='fa'>کِتابِ مَن</span> – mein Buch.</p><p class='klein'>Nach einem Vokal: <b>-ye</b>, z. B. <span class='fa'>خانِه‌ی شُما</span> – euer Haus.</p>", "stil": "merke",
+          "beispiele": [ { "fa": "بَرادَرِ مَن", "tr": "barādar-e man", "de": "mein Bruder", "emoji": "👦" },
+            { "fa": "مادَرِ تو", "tr": "mādar-e to", "de": "deine Mutter", "emoji": "👩" },
+            { "fa": "پِدَرِ او", "tr": "pedar-e ū", "de": "sein / ihr Vater", "emoji": "👨" },
+            { "fa": "خواهَرِ ما", "tr": "chāhar-e mā", "de": "unsere Schwester", "emoji": "👧" },
+            { "fa": "خانِه‌ی شُما", "tr": "chāne-ye schomā", "de": "euer / Ihr Haus", "emoji": "🏠" },
+            { "fa": "دوستِ آنها", "tr": "dūst-e ānhā", "de": "ihr Freund (von ihnen)", "emoji": "🤝" } ] },
+        { "ref": "ez/s06/0" } ],
+      "aufgaben": [
+        { "typ": "wahl", "titel": "Wessen Familie?", "fragen": [
+          { "frage": "„meine Schwester“", "optionen": ["خواهَرِ مَن", "مَن خواهَر", "خواهَرِ تو"], "richtig": 0, "optFa": true },
+          { "frage": "„dein Vater“", "optionen": ["پِدَرِ تو", "پِدَرِ مَن", "تو پِدَر"], "richtig": 0, "optFa": true },
+          { "frage": "„unsere Mutter“", "optionen": ["مادَرِ ما", "مادَرِ شُما", "ما مادَر"], "richtig": 0, "optFa": true },
+          { "frage": "Was bedeutet <span class='fa'>بَرادَرِ او</span>?", "optionen": ["sein / ihr Bruder", "mein Bruder", "dein Bruder"], "richtig": 0 },
+          { "frage": "Was bedeutet <span class='fa'>خانِه‌ی شُما</span>?", "optionen": ["euer / Ihr Haus", "unser Haus", "ihr Haus (von ihnen)"], "richtig": 0 } ] },
+        { "ref": "ez/s06/2" }, { "ref": "ez/s06/5" }, { "ref": "ez/s06/6" }, { "ref": "ez/s06/7" } ] },
+
+    { "id": "moegen", "icon": "😋", "titel": "Neu: mögen – دوست داشتَن", "minuten": 15,
+      "tafel": [ { "ref": "04/s00/1" }, { "ref": "04/s01/0" }, { "ref": "04/s02/0" }, { "ref": "04/s02/1" } ],
+      "aufgaben": [ { "ref": "04/s01/1" }, { "ref": "04/s01/3" }, { "ref": "04/s02/3" }, { "ref": "04/s02/4" }, { "ref": "04/s01/4" }, { "ref": "04/s02/5" } ] },
+
+    { "id": "essen", "icon": "🍎", "titel": "Essen: allgemein sprechen", "minuten": 15,
+      "tafel": [ { "ref": "04/s06/0" }, { "ref": "04/s03/0" }, { "ref": "04/s07/0" }, { "ref": "04/s08/1" },
+        { "titel": "Meine Schwester mag keine Äpfel.", "text": "<p>Wenn wir <b>allgemein</b> über Essen sprechen: Einzahl, <b>ohne</b> را. Und jetzt mit der Familie:</p>", "stil": "merke",
+          "beispiele": [ { "fa": "خواهَرِ مَن سیب دوست نَدارَد.", "tr": "chāhar-e man sīb dūst nadārad.", "de": "Meine Schwester mag keine Äpfel.", "emoji": "🍎" },
+            { "fa": "بَرادَرِ تو ماهی دوست دارَد؟", "tr": "barādar-e to māhī dūst dārad?", "de": "Mag dein Bruder Fisch?", "emoji": "🐟" },
+            { "fa": "مادَرِ مَن چای خِیلی دوست دارَد.", "tr": "mādar-e man tschāy cheylī dūst dārad.", "de": "Meine Mutter mag Tee sehr.", "emoji": "🍵" },
+            { "fa": "پِدَرِ او گوشت اَصلاً دوست نَدارَد.", "tr": "pedar-e ū gūscht aslan dūst nadārad.", "de": "Sein/Ihr Vater mag gar kein Fleisch.", "emoji": "🥩" } ] } ],
+      "aufgaben": [ { "ref": "04/s06/2" }, { "ref": "04/s07/2" },
+        { "typ": "bauen", "titel": "Familie & Essen: Baue den Satz", "trenner": " ", "woerter": [
+          { "fa": "خواهَرِ مَن سیب دوست نَدارَد.", "tr": "chāhar-e man sīb dūst nadārad.", "de": "Meine Schwester mag keine Äpfel.", "emoji": "🍎", "teile": ["خواهَرِ", "مَن", "سیب", "دوست", "نَدارَد"], "extra": ["نَدارَم"] },
+          { "fa": "بَرادَرِ تو ماهی دوست دارَد؟", "tr": "barādar-e to māhī dūst dārad?", "de": "Mag dein Bruder Fisch?", "emoji": "🐟", "teile": ["بَرادَرِ", "تو", "ماهی", "دوست", "دارَد"], "extra": ["داری"] },
+          { "fa": "مادَرِ او چای خِیلی دوست دارَد.", "tr": "mādar-e ū tschāy cheylī dūst dārad.", "de": "Seine/Ihre Mutter mag Tee sehr.", "emoji": "🍵", "teile": ["مادَرِ", "او", "چای", "خِیلی", "دوست", "دارَد"], "extra": ["را"] },
+          { "fa": "پِدَرِ ما گوشت اَصلاً دوست نَدارَد.", "tr": "pedar-e mā gūscht aslan dūst nadārad.", "de": "Unser Vater mag gar kein Fleisch.", "emoji": "🥩", "teile": ["پِدَرِ", "ما", "گوشت", "اَصلاً", "دوست", "نَدارَد"], "extra": ["نَداریم"] } ] },
+        { "ref": "04/s08/4" }, { "ref": "04/s08/2" }, { "ref": "04/s09/2" } ] },
+
+    { "id": "ra", "icon": "🎨", "titel": "را: Lieblingsfarbe & Lieblingsstadt", "minuten": 15,
+      "tafel": [ { "ref": "04/s11/0" },
+        { "titel": "Eine Farbe, eine Stadt → را", "text": "<p>Eine <b>Stadt</b> oder eine <b>bestimmte Farbe</b> ist etwas Bestimmtes – darum steht <span class='fa'>را</span> dahinter.</p><p>Essen allgemein: <b>ohne</b> را · <span class='fa'>مَن سیب دوست دارَم.</span></p><p class='klein'><span class='fa'>کُدام</span> <i>kodām</i> – welche/r/s?</p>", "stil": "merke",
+          "beispiele": [ { "fa": "مَن رَنگِ آبی را دوست دارَم.", "tr": "man rang-e ābī rā dūst dāram.", "de": "Ich mag die Farbe Blau.", "emoji": "🔵" },
+            { "fa": "تو کُدام رَنگ را دوست داری؟", "tr": "to kodām rang rā dūst dārī?", "de": "Welche Farbe magst du?", "emoji": "🎨" },
+            { "fa": "مَن کیل را دوست دارَم.", "tr": "man kīl rā dūst dāram.", "de": "Ich mag Kiel.", "emoji": "⚓" },
+            { "fa": "بَرادَرِ مَن شیراز را خِیلی دوست دارَد.", "tr": "barādar-e man schīrāz rā cheylī dūst dārad.", "de": "Mein Bruder mag Schiras sehr.", "emoji": "🌹" },
+            { "fa": "تو تِهران را دوست داری؟", "tr": "to tehrān rā dūst dārī?", "de": "Magst du Teheran?", "emoji": "🏙️" } ] },
+        { "ref": "ez/s04/0" }, { "ref": "ez/s07/2" } ],
+      "aufgaben": [ { "ref": "04/s11/1" },
+        { "typ": "sortieren", "titel": "Mit oder ohne را?", "frage": "Allgemein – oder eine Stadt / eine Farbe?", "kategorien": ["🌍 allgemein (ohne را)", "👉 bestimmt (mit را)"], "items": [
+          { "fa": "مَن سیب دوست دارَم.", "k": 0, "e": "Ich mag Äpfel." },
+          { "fa": "مَن اِصفَهان را دوست دارَم.", "k": 1, "e": "Ich mag Isfahan." },
+          { "fa": "خواهَرِ مَن قَهوِه دوست نَدارَد.", "k": 0, "e": "Meine Schwester mag keinen Kaffee." },
+          { "fa": "تو رَنگِ سَبز را دوست داری؟", "k": 1, "e": "Magst du die Farbe Grün?" },
+          { "fa": "پِدَرِ او کیل را دوست دارَد.", "k": 1, "e": "Sein/Ihr Vater mag Kiel." },
+          { "fa": "ما نان دوست داریم.", "k": 0, "e": "Wir mögen Brot." } ] },
+        { "typ": "wahl", "titel": "را oder nicht?", "fragen": [
+          { "frage": "<span class='fa'>مَن هامبورگ ___ دوست دارَم.</span>", "optionen": ["را", "– (nichts)"], "richtig": 0 },
+          { "frage": "<span class='fa'>بَرادَرِ مَن موز ___ دوست دارَد.</span>", "optionen": ["– (nichts)", "را"], "richtig": 0 },
+          { "frage": "„Welche Farbe magst du?“", "optionen": ["تو کُدام رَنگ را دوست داری؟", "تو کُدام رَنگ دوست دارَم؟", "تو رَنگ را کُدام دوست داری؟"], "richtig": 0, "optFa": true },
+          { "frage": "„Meine Mutter mag die Farbe Rot.“", "optionen": ["مادَرِ مَن رَنگِ قِرمِز را دوست دارَد.", "مادَرِ مَن رَنگِ قِرمِز را دوست دارَم.", "مَن مادَر قِرمِز دوست دارَد."], "richtig": 0, "optFa": true } ] },
+        { "ref": "04/s11/2" }, { "ref": "ez/s04/2" } ] },
+
+    { "id": "interview", "icon": "🗣️", "titel": "Partner-Interview: Wer mag was?", "minuten": 15,
+      "tafel": [ { "titel": "So fragt ihr euch", "text": "<p>Jede/r bekommt auf dem Handy eine <b>Karte</b> mit den eigenen Antworten. Frag deine Partnerin / deinen Partner auf Persisch und tippe an, was sie / er antwortet. Am Ende: <b>✔ prüfen</b>.</p><p class='klein'>Danach gebe ich das Interview noch einmal frei – mit neuen Paaren und neuen Karten.</p>",
+          "beispiele": [ { "fa": "بَرادَرِ تو ماهی دوست دارَد؟", "tr": "barādar-e to māhī dūst dārad?", "de": "Mag dein Bruder Fisch?" },
+            { "fa": "نَه، بَرادَرِ مَن ماهی دوست نَدارَد.", "tr": "na, barādar-e man māhī dūst nadārad.", "de": "Nein, mein Bruder mag keinen Fisch." },
+            { "fa": "تو کُدام شَهر را دوست داری؟", "tr": "to kodām schahr rā dūst dārī?", "de": "Welche Stadt magst du?" },
+            { "fa": "مَن اِصفَهان را دوست دارَم.", "tr": "man esfahān rā dūst dāram.", "de": "Ich mag Isfahan." } ] } ],
+      "aufgaben": [ { "typ": "interview", "titel": "Partner-Interview: Wer mag was?", "vorlage": "mag", "kartenTitel": "Deine Karte" } ] },
+
+    { "id": "quiz", "icon": "🏆", "titel": "Quiz für alle", "minuten": 10,
+      "tafel": [],
+      "aufgaben": [ { "typ": "quiz", "titel": "Das große Quiz: haben, mein/dein, mögen", "sek": 20, "fragen": [
+        { "f": "„Ich habe einen Bruder.“", "o": ["مَن یِک بَرادَر دارَم.", "مَن یِک بَرادَر داری.", "مَن یِک بَرادَر هَستَم."], "r": 0, "optFa": true },
+        { "f": "Was fehlt?", "fa": "ما دو ماشین ___ .", "o": ["داریم", "دارید", "دارَند"], "r": 0, "optFa": true },
+        { "f": "„Wir haben keine Zeit.“", "o": ["ما وَقت نَداریم.", "ما وَقت نیستیم.", "ما وَقت دوست نَداریم."], "r": 0, "optFa": true },
+        { "f": "„mein Bruder“", "o": ["بَرادَرِ مَن", "مَن بَرادَر", "بَرادَرِ تو"], "r": 0, "optFa": true },
+        { "f": "Was bedeutet das?", "fa": "مادَرِ تو", "o": ["deine Mutter", "meine Mutter", "seine / ihre Mutter", "unsere Mutter"], "r": 0 },
+        { "f": "„unsere Lehrerin“", "o": ["مُعَلِّمِ ما", "مُعَلِّمِ شُما", "ما مُعَلِّم"], "r": 0, "optFa": true },
+        { "f": "„Er/Sie mag keinen Kaffee.“", "o": ["او قَهوِه دوست نَدارَد.", "او قَهوِه نَدوست دارَد.", "او قَهوِه دوست دارَد."], "r": 0, "optFa": true },
+        { "f": "„Meine Schwester mag keine Äpfel.“", "o": ["خواهَرِ مَن سیب دوست نَدارَد.", "خواهَرِ مَن سیب دوست نَدارَم.", "مَن خواهَر سیب دوست نَدارَد."], "r": 0, "optFa": true },
+        { "f": "Allgemein: „Ich mag Tomaten.“", "o": ["مَن گوجه‌فَرَنگی دوست دارَم.", "مَن گوجه‌فَرَنگی را دوست دارَم.", "مَن گوجه‌فَرَنگی دوست داری."], "r": 0, "optFa": true },
+        { "f": "Mit oder ohne را?", "fa": "مَن اِصفَهان ___ دوست دارَم.", "o": ["را", "– (nichts)"], "r": 0 },
+        { "f": "„Ich mag die Farbe Blau.“", "o": ["مَن رَنگِ آبی را دوست دارَم.", "مَن رَنگِ آبی را دوست داری.", "مَن آبی رَنگ را دوست دارَم."], "r": 0, "optFa": true },
+        { "f": "Was bedeutet das?", "fa": "بَرادَرِ او ماهی اَصلاً دوست نَدارَد.", "o": ["Sein/Ihr Bruder mag gar keinen Fisch.", "Mein Bruder mag Fisch sehr.", "Sein/Ihr Bruder hat keinen Fisch."], "r": 0 },
+        { "f": "„Magst du Kiel?“", "o": ["تو کیل را دوست داری؟", "تو کیل را دوست دارَم؟", "تو کیل هَستی؟"], "r": 0, "optFa": true },
+        { "f": "„Welche Farbe mag dein Vater?“", "o": ["پِدَرِ تو کُدام رَنگ را دوست دارَد؟", "پِدَرِ مَن کُدام رَنگ را دوست دارَد؟", "پِدَرِ تو کُدام رَنگ را دوست داری؟"], "r": 0, "optFa": true }
+      ] } ] }
+  ],
+  "vorlagen": {
+    "mag": { "felder": [
+      { "key": "bruder", "frage": ["بَرادَرِ تو ماهی دوست دارَد؟", "Mag dein Bruder Fisch?"], "werte": [
+        ["بَله، بَرادَرِ مَن ماهی دوست دارَد.", "ja"], ["بَرادَرِ مَن ماهی خِیلی دوست دارَد.", "sehr"], ["نَه، بَرادَرِ مَن ماهی دوست نَدارَد.", "nein"], ["بَرادَرِ مَن ماهی اَصلاً دوست نَدارَد.", "gar nicht"] ] },
+      { "key": "schwester", "frage": ["خواهَرِ تو سیب دوست دارَد؟", "Mag deine Schwester Äpfel?"], "werte": [
+        ["بَله، خواهَرِ مَن سیب دوست دارَد.", "ja"], ["خواهَرِ مَن سیب خِیلی دوست دارَد.", "sehr"], ["نَه، خواهَرِ مَن سیب دوست نَدارَد.", "nein"], ["خواهَرِ مَن سیب اَصلاً دوست نَدارَد.", "gar nicht"] ] },
+      { "key": "mutter", "frage": ["مادَرِ تو چای دوست دارَد یا قَهوِه؟", "Mag deine Mutter Tee oder Kaffee?"], "werte": [
+        ["مادَرِ مَن چای دوست دارَد.", "Tee"], ["مادَرِ مَن قَهوِه دوست دارَد.", "Kaffee"], ["مادَرِ مَن چای و قَهوِه دوست دارَد.", "beides"], ["مادَرِ مَن آب دوست دارَد.", "Wasser"] ] },
+      { "key": "vater", "frage": ["پِدَرِ تو چه میوه‌ای دوست دارَد؟", "Welches Obst mag dein Vater?"], "werte": [
+        ["پِدَرِ مَن موز دوست دارَد.", "Bananen"], ["پِدَرِ مَن سیب دوست دارَد.", "Äpfel"], ["پِدَرِ مَن اَنگور دوست دارَد.", "Weintrauben"], ["پِدَرِ مَن هِندِوانِه دوست دارَد.", "Wassermelone"] ] },
+      { "key": "farbe", "frage": ["تو کُدام رَنگ را دوست داری؟", "Welche Farbe magst du?"], "werte": [
+        ["مَن رَنگِ آبی را دوست دارَم.", "blau"], ["مَن رَنگِ سَبز را دوست دارَم.", "grün"], ["مَن رَنگِ قِرمِز را دوست دارَم.", "rot"], ["مَن رَنگِ زَرد را دوست دارَم.", "gelb"] ] },
+      { "key": "stadt", "frage": ["تو کُدام شَهر را دوست داری؟", "Welche Stadt magst du?"], "werte": [
+        ["مَن تِهران را دوست دارَم.", "Teheran"], ["مَن اِصفَهان را دوست دارَم.", "Isfahan"], ["مَن کیل را دوست دارَم.", "Kiel"], ["مَن هامبورگ را دوست دارَم.", "Hamburg"] ] }
+    ] }
+  }
+}

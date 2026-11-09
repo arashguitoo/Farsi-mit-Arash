@@ -312,7 +312,8 @@ Zentrale Stelle für den Unterricht mit Lektionen (Konsole → 🎓 Live-Unterri
 - **Stadtplan-Spiel (`typ: "weg"`):** Pro Team ist eine Person Guide, sieht das Ziel und beschreibt den Weg; die anderen tippen an. Guide wechselt jede Runde.
 - **Rollenspiel mit Geheimauftrag (`typ: "rolle"`):** Rollen + je 2 Geheimaufträge; das Publikum hakt Gehörtes an, Punkte für beide Seiten.
 - **📱 Einsicht:** Live-Ansicht jedes TN-Handys (nur lesen) und 👁-Vorschau jeder Aufgabe als Handy – auch ohne TN (`?spiegel=1&probe=Block.Aufgabe&lek=…&plan=…`).
-- Ausgearbeitete Pläne: 03 (L4 haben), f101, k05 (Teamduell). Der automatische Plan ist nur noch ein versteckter Rohentwurf.
+- **Quiz für alle (`typ: "quiz"`, wie Kahoot):** Frage auf der Leinwand, Antwort (Farbe + Symbol) auf dem Handy, Countdown, schnell + richtig = bis 1000 Punkte, löst automatisch auf, Zwischenstand und Endstand.
+- Ausgearbeitete Pläne: 03 (L4 haben), 04 (L5 mögen + mein/dein), f101, k05 (Teamduell). Der automatische Plan ist nur noch ein versteckter Rohentwurf.
 - Firebase: `live/unterricht/{code}` (gleiche Regeln wie die anderen Live-Spiele).
 
 ### Live: Scharade · Erklären · Malen (`live-scharade.html`)

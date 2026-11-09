@@ -96,6 +96,20 @@
   body.spiegel .kopf,body.spiegel #melde-knopf{display:none!important}
   body.spiegel.nurlesen #app{pointer-events:none}
   body.lw #spiegelBox{display:none}
+  .qz-frage{font-size:1.4rem;font-weight:800;text-align:center;margin:8px 0}
+  .qz-fa{font-family:var(--fa);direction:rtl;font-size:1.7rem;text-align:center;margin:6px 0}
+  .qz-opts{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
+  @media (max-width:520px){.qz-opts{grid-template-columns:1fr}}
+  .qz-o{display:flex;align-items:center;gap:10px;border:0;border-radius:12px;padding:14px;color:#fff;font:inherit;font-weight:700;font-size:1.05rem;text-align:left;min-height:62px;cursor:pointer}
+  .qz-o .sy{font-size:1.3rem;opacity:.9}
+  .qz-o .tx.fa{font-family:var(--fa);font-size:1.25rem;direction:rtl;flex:1;text-align:right}
+  .qz-o.c0{background:#b5525a}.qz-o.c1{background:#2f6f9a}.qz-o.c2{background:#b58a2c}.qz-o.c3{background:#3c7a5a}
+  .qz-o.aus{opacity:.3}.qz-o.richtig{box-shadow:0 0 0 4px #fff,0 0 0 7px var(--gruen)}.qz-o.gewaehlt{box-shadow:0 0 0 4px #fff,0 0 0 7px var(--tinte,#222)}
+  .qz-o:disabled{cursor:default}
+  .qz-uhr{font-size:2.2rem;font-weight:800;text-align:center;color:var(--lapis)}
+  .qz-rang{display:flex;justify-content:space-between;background:#fff;border:1px solid var(--linie);border-radius:10px;padding:8px 12px;margin:5px 0;font-weight:700}
+  .qz-rang.ich{border-color:var(--lapis);background:var(--lapis-hell)}
+  .qz-n{font-size:.85rem;opacity:.85;margin-left:auto}
 </style>
 </head>
 <body>
@@ -121,8 +135,8 @@
 window.UNTERRICHT = (function () {
   const INTERAKTIV = ["paare", "wahl", "bauen", "sortieren", "finden", "lesen", "ordnen", "memory", "tempo", "zuordnen"];
   const TAFEL = ["info", "text", "buchstaben"];
-  const TYP_ICON = { paare: "🔗", wahl: "☑️", bauen: "🧱", sortieren: "🗂️", finden: "🔍", lesen: "📖", ordnen: "🔢", memory: "🃏", tempo: "⚡", zuordnen: "🧩", interview: "🗣️", puzzle: "🧩", sprechen: "🎤", partner: "👥", weg: "🗺️", rolle: "🎭" };
-  const TYP_NAME = { paare: "Paare finden", wahl: "Quiz", bauen: "Bauen", sortieren: "Sortieren", finden: "Finden", lesen: "Lesen", ordnen: "Ordnen", memory: "Memory", tempo: "Blitz", zuordnen: "Zuordnen", interview: "Partner-Interview", puzzle: "Vorlesen & ordnen", sprechen: "Sprechrunde", partner: "Partnergespräch", weg: "Stadtplan-Spiel", rolle: "Rollenspiel mit Geheimauftrag" };
+  const TYP_ICON = { paare: "🔗", wahl: "☑️", bauen: "🧱", sortieren: "🗂️", finden: "🔍", lesen: "📖", ordnen: "🔢", memory: "🃏", tempo: "⚡", zuordnen: "🧩", interview: "🗣️", puzzle: "🧩", sprechen: "🎤", partner: "👥", weg: "🗺️", rolle: "🎭", quiz: "🏆" };
+  const TYP_NAME = { paare: "Paare finden", wahl: "Quiz", bauen: "Bauen", sortieren: "Sortieren", finden: "Finden", lesen: "Lesen", ordnen: "Ordnen", memory: "Memory", tempo: "Blitz", zuordnen: "Zuordnen", interview: "Partner-Interview", puzzle: "Vorlesen & ordnen", sprechen: "Sprechrunde", partner: "Partnergespräch", weg: "Stadtplan-Spiel", rolle: "Rollenspiel mit Geheimauftrag", quiz: "Quiz für alle (wie Kahoot)" };
   const hash = s => { let h = 2166136261; for (const c of String(s)) { h ^= c.charCodeAt(0); h = Math.imul(h, 16777619); } return h >>> 0; };
   function rng(seed) { let a = hash(seed); return () => { a |= 0; a = a + 0x6D2B79F5 | 0; let t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
   function mischen(a, r) { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(r() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
@@ -413,9 +427,10 @@ window.UNTERRICHT = (function () {
     if (a.typ === "puzzle" || a.typ === "sprechen") h += aufgabeLeinwandHtml(a, true);
     else if (a.typ === "weg") h += wegStand(a, false);
     else if (a.typ === "rolle") h += rolleStand(a, false);
+    else if (a.typ === "quiz") h += quizLeitung(a, false);
     else if (a.typ === "interview" || a.typ === "partner") { const P = U.paare(ids, G.aufgabe.id); h += `<div class="fort">${P.gruppen.map(g => `<span>${g.map(name).join(" ↔ ")}</span>`).join("")}</div>`; }
     const fertig = ids.filter(id => E[id] && E[id].fertig != null || E[id] && E[id].n != null);
-    if (!["puzzle", "sprechen", "weg", "rolle"].includes(a.typ)) h += `<div class="fort">${ids.map(id => { const e = E[id]; return `<span class="${e && (e.n != null || e.fertig) ? "ok" : ""}">${esc(name(id))}${e && e.n ? " " + e.p + "/" + e.n : e && e.fertig ? " ✓" : ""}</span>`; }).join("")}</div><p class="klein muted">${fertig.length} von ${ids.length} fertig</p>`;
+    if (!["puzzle", "sprechen", "weg", "rolle", "quiz"].includes(a.typ)) h += `<div class="fort">${ids.map(id => { const e = E[id]; return `<span class="${e && (e.n != null || e.fertig) ? "ok" : ""}">${esc(name(id))}${e && e.n ? " " + e.p + "/" + e.n : e && e.fertig ? " ✓" : ""}</span>`; }).join("")}</div><p class="klein muted">${fertig.length} von ${ids.length} fertig</p>`;
     return h + `</div>`;
   }
   /* große Ansicht laufender Spezial-Aufgaben */
@@ -435,6 +450,7 @@ window.UNTERRICHT = (function () {
     }
     if (a.typ === "weg") return `<h2 style="margin:6px 0">🗺️ ${esc(a.titel)}</h2><p>🧭 Wer Guide ist, sieht das Ziel und beschreibt den Weg auf Persisch – ohne den Namen zu sagen. Die anderen tippen das Ziel an. Jede richtige Antwort = 1 Punkt.</p>${wegStand(a, true)}<div class="klein-h">So beschreibst du den Weg</div>${WEG_RM.map(([fa, de]) => `<div class="zeile-f"><div class="f">${esc(fa)}</div><div class="d">${esc(de)}</div></div>`).join("")}`;
     if (a.typ === "rolle") return `<h2 style="margin:6px 0">🎭 ${esc(a.titel)}</h2>${rolleStand(a, true)}`;
+    if (a.typ === "quiz") return quizLeitung(a, true);
     if (a.typ === "sprechen") {
       const g = G.aufgabe.gezogen || [], jetzt = g[g.length - 1];
       return `<h2 style="margin:6px 0">🎤 ${esc(a.titel)}</h2><p>${a.text || ""}</p>${jetzt ? `<div class="name-gross">🎤 ${esc(name(jetzt))}</div>` : ""}
@@ -478,6 +494,52 @@ window.UNTERRICHT = (function () {
     }).join("");
     return h;
   }
+  /* ---------- Quiz für alle (wie Kahoot) ---------- */
+  const QZ_SYM = ["▲", "◆", "●", "■"];
+  const qzOrdnung = (a, q) => U.mischen(a.fragen[q].o.map((_, i) => i), U.rng((a.titel || "") + "|" + q));
+  const qzSek = a => a.sek || 20;
+  function qzAntworten(q) { const E = ergebnisse(), o = {}; reihe().forEach(id => { const x = ((E[id] || {}).a || {})["q" + q]; if (x) o[id] = x; }); return o; }
+  function qzPunkte(a) {
+    const Q = G.aufgabe.q, bis = G.aufgabe.zeig === "frage" ? Q - 1 : Q, P = {};
+    reihe().forEach(id => { let s = 0; for (let q = 0; q <= bis && q < a.fragen.length; q++) { const x = (((ergebnisse()[id] || {}).a) || {})["q" + q]; if (x && x.o === a.fragen[q].r) s += 500 + Math.round(500 * Math.max(0, 1 - (x.ms || 0) / (qzSek(a) * 1000))); } P[id] = s; });
+    return P;
+  }
+  function qzRangliste(a, max, ich) {
+    const P = qzPunkte(a), r = reihe().slice().sort((x, y) => P[y] - P[x]);
+    let h = r.slice(0, max || 99).map((id, i) => `<div class="qz-rang ${id === ich ? "ich" : ""}"><span>${["🥇", "🥈", "🥉"][i] || (i + 1) + "."} ${esc(name(id))}${teamVon(id) && TEAMS[teamVon(id)] ? " " + TEAMS[teamVon(id)].icon : ""}</span><span>${P[id]}</span></div>`).join("");
+    if (teamIds().length) h += `<div class="klein-h">Teams (Ø)</div>` + teamIds().map(t => { const m = mitglieder(t); return `<div class="qz-rang"><span>${teamName(t)}</span><span>${m.length ? Math.round(m.reduce((s, id) => s + P[id], 0) / m.length) : 0}</span></div>`; }).join("");
+    return h;
+  }
+  function qzOptionen(a, q, modus, gewaehlt) {
+    const f = a.fragen[q], A = modus === "aufl" ? qzAntworten(q) : {};
+    return `<div class="qz-opts">${qzOrdnung(a, q).map((oi, k) => { const n = Object.values(A).filter(x => x.o === oi).length; let c = ""; if (modus === "aufl") c = oi === f.r ? "richtig" : "aus"; if (gewaehlt === oi) c += " gewaehlt";
+      return `<button class="qz-o c${k} ${c}" data-qz="${oi}" ${modus !== "tn" || gewaehlt != null ? "disabled" : ""}><span class="sy">${QZ_SYM[k]}</span><span class="tx ${f.optFa ? "fa" : ""}">${esc(f.o[oi])}</span>${modus === "aufl" ? `<span class="qz-n">${n}×</span>` : ""}</button>`; }).join("")}</div>`;
+  }
+  const qzFrageKopf = (a, q) => { const f = a.fragen[q]; return `<div class="klein muted" style="text-align:center">Frage ${q + 1} von ${a.fragen.length}</div><div class="qz-frage">${f.f}</div>${f.fa ? `<div class="qz-fa">${esc(f.fa)}</div>` : ""}`; };
+  function quizLeitung(a, lw) {
+    const A = G.aufgabe, q = A.q, z = A.zeig, ids = reihe();
+    let h = lw ? `<h2 style="margin:6px 0">🏆 ${esc(a.titel)}</h2>` : "";
+    if (q == null) return h + `<p>${a.fragen.length} Fragen · ${qzSek(a)} Sekunden pro Frage · schnell + richtig = mehr Punkte.</p><p class="klein muted">Alle sehen die Frage auf der Leinwand und tippen die Antwort auf dem Handy (Farbe + Symbol).</p><button class="btn" data-qzgo="0">▶ Erste Frage</button>`;
+    if (z === "ende") return h + `<h3>🏁 Endstand</h3>${qzRangliste(a, 99)}`;
+    const ant = qzAntworten(q);
+    h += qzFrageKopf(a, q);
+    if (z === "frage") h += `<div class="qz-uhr" data-bis="${A.qt + qzSek(a) * 1000}">${qzSek(a)}</div><div style="text-align:center" class="klein">${Object.keys(ant).length} von ${ids.length} haben geantwortet</div>${qzOptionen(a, q, "lk")}
+      ${lw ? "" : `<div class="fort">${ids.map(id => { const x = ant[id]; return `<span class="${x ? "ok" : ""}">${esc(name(id))}${x ? " " + QZ_SYM[qzOrdnung(a, q).indexOf(x.o)] : ""}</span>`; }).join("")}</div>`}
+      <div class="btnreihe" style="margin-top:8px"><button class="btn" data-qzauf="1">✔ auflösen</button></div>`;
+    else {
+      h += qzOptionen(a, q, "aufl");
+      if (!lw) h += `<div class="fort">${ids.map(id => { const x = ant[id]; return `<span class="${x && x.o === a.fragen[q].r ? "ok" : ""}">${esc(name(id))}: ${x ? (x.o === a.fragen[q].r ? "✅" : "❌") : "–"}</span>`; }).join("")}</div>`;
+      h += `<div class="klein-h">Zwischenstand</div>${qzRangliste(a, 5)}<div class="btnreihe" style="margin-top:8px">${q + 1 < a.fragen.length ? `<button class="btn" data-qzgo="${q + 1}">▶ Nächste Frage</button>` : `<button class="btn" data-qzende="1">🏁 Endstand zeigen</button>`}</div>`;
+    }
+    return h;
+  }
+  /* Countdown & automatisches Auflösen (Zeit um oder alle haben geantwortet) */
+  setInterval(() => {
+    $$("[data-bis]").forEach(el => { el.textContent = Math.max(0, Math.ceil((+el.dataset.bis - Date.now()) / 1000)); });
+    if (MODUS !== "leitung" || !G || !G.aufgabe || G.aufgabe.zeig !== "frage") return; const a = aufgabeAktiv(); if (!a || a.typ !== "quiz") return;
+    const alle = reihe().length && Object.keys(qzAntworten(G.aufgabe.q)).length >= reihe().length;
+    if ((alle || Date.now() > G.aufgabe.qt + qzSek(a) * 1000 + 800) && !G.aufgabe._zu) { G.aufgabe._zu = true; schreib("aufgabe/zeig", "aufl"); }
+  }, 500);
   function puzzleVerteilung(a, ids) { const m = U.mischen(ids, U.rng(G.aufgabe.id + "v")), v = a._teile.map(() => []); if (!m.length) return v; const n = Math.max(m.length, a._teile.length); for (let k = 0; k < n; k++) v[k % a._teile.length].push(m[k % m.length]); v.forEach((l, i) => { v[i] = [...new Set(l)]; }); return v; }
   function verdrahteLeitung(B, t) {
     verdrahteZeit();
@@ -499,6 +561,9 @@ window.UNTERRICHT = (function () {
     $$("[data-wechsel]").forEach(x => x.onclick = () => { const T = teamIds(), id = x.dataset.wechsel, i = T.indexOf(teamVon(id)); schreib("gruppen/" + id, T[(i + 1) % T.length]); });
     $$("[data-pkt]").forEach(x => x.onclick = () => { const [t, p] = x.dataset.pkt.split("|"); gRef(CODE).child("log").push({ t, p: +p, ts: Date.now() }).catch(e => fehler(e)); });
     /* Rollenspiel */
+    $$("[data-qzgo]").forEach(x => x.onclick = () => upd({ "aufgabe/q": +x.dataset.qzgo, "aufgabe/zeig": "frage", "aufgabe/qt": Date.now() }));
+    $$("[data-qzauf]").forEach(x => x.onclick = () => schreib("aufgabe/zeig", "aufl"));
+    $$("[data-qzende]").forEach(x => x.onclick = () => schreib("aufgabe/zeig", "ende"));
     $$("[data-buehne]").forEach(x => x.onclick = () => upd({ "aufgabe/buehne": x.dataset.buehne, "aufgabe/aufl": null }));
     $$("[data-raufl]").forEach(x => x.onclick = () => { const a = aufgabeAktiv(), g = gruppenListe().find(y => y.id === x.dataset.raufl); if (!a || !g) return; const w = rolleWertung(a, g), o = { "aufgabe/aufl": true }; Object.entries(w.P).forEach(([t, p]) => { o[`log/${G.aufgabe.id}_${g.id}_${t}`] = { t, p, grund: "Rollenspiel", ts: Date.now() }; }); upd(o); });
     /* Puzzle & Sprechrunde */
@@ -567,7 +632,7 @@ window.UNTERRICHT = (function () {
     if (a.typ === "interview") {
       const P = U.paare(ids, id), ziel = P.ziel[ME.id], felder = a._felder, mein = U.karteVon(felder, ME.id, id), e = meinErg();
       const antw = Object.assign({}, (e.antw || {}), LOK.antw);
-      h += `<div class="karte"><h3 style="margin-top:0">🃏 Deine Familie <span class="klein muted">– so antwortest du</span></h3>${felder.map(f => { const w = f.werte[mein[f.key]]; return `<div class="zeile-f"><div class="d">${esc(f.frage[1])}</div><div class="f">${esc(w[0])} <button class="btn zwei klein" data-say="${esc(w[0])}">🔊</button></div></div>`; }).join("")}</div>`;
+      h += `<div class="karte"><h3 style="margin-top:0">🃏 ${esc(a.kartenTitel || "Deine Familie")} <span class="klein muted">– so antwortest du</span></h3>${felder.map(f => { const w = f.werte[mein[f.key]]; return `<div class="zeile-f"><div class="d">${esc(f.frage[1])}</div><div class="f">${esc(w[0])} <button class="btn zwei klein" data-say="${esc(w[0])}">🔊</button></div></div>`; }).join("")}</div>`;
       if (!ziel) h += `<div class="meldung">Warte auf eine Partnerin / einen Partner …</div>`;
       else {
         const zk = U.karteVon(felder, ziel, id), geprueft = e.n != null;
@@ -600,6 +665,7 @@ window.UNTERRICHT = (function () {
     }
     else if (a.typ === "weg") { app().innerHTML = h + wegTN(a, id); verdrahteWeg(a, id); }
     else if (a.typ === "rolle") { app().innerHTML = h + rolleTN(a, id); verdrahteRolle(a, id); }
+    else if (a.typ === "quiz") { app().innerHTML = h + quizTN(a); verdrahteQuiz(a); }
     $$("[data-say]").forEach(b => b.onclick = e => { e.stopPropagation(); F.sprich(b.dataset.say); });
   }
   const zeileFa = ([fa, de]) => `<div class="zeile-f"><div class="f">${esc(fa)} <button class="btn zwei klein" data-say="${esc(fa)}">🔊</button></div><div class="d">${esc(de)}</div></div>`;
@@ -646,6 +712,23 @@ window.UNTERRICHT = (function () {
     if (aufl) { const w = rolleWertung(a, bg); h += `<div class="meldung">Du bekommst ${w.proPerson[ME.id] || 0} ${w.proPerson[ME.id] === 1 ? "Punkt" : "Punkte"} für dein Team. ✅ richtig erkannt · 👂 überhört · ❌ war kein Auftrag</div>`; }
     return h + `<details style="margin-top:10px"><summary class="klein">Meine eigene Rolle</summary>${rolleKarte(a, g, V)}</details>`;
   }
+  function quizTN(a) {
+    const A = G.aufgabe, q = A.q, z = A.zeig;
+    if (q == null) return `<div class="karte" style="text-align:center"><div style="font-size:3rem">🏆</div><h2>Gleich geht’s los!</h2><p>Schau auf die Leinwand. Tippe dann so schnell wie möglich die richtige Farbe an – schnell und richtig gibt die meisten Punkte.</p></div>`;
+    if (z === "ende") { const P = qzPunkte(a), r = reihe().slice().sort((x, y) => P[y] - P[x]), platz = r.indexOf(ME.id) + 1; return `<div class="karte" style="text-align:center"><div style="font-size:3rem">${["🥇", "🥈", "🥉"][platz - 1] || "🎉"}</div><h2>Platz ${platz} von ${r.length}</h2><p><b>${P[ME.id] || 0}</b> Punkte</p></div>${qzRangliste(a, 99, ME.id)}`; }
+    const mein = ((meinErg().a || {})["q" + q]), f = a.fragen[q];
+    if (!LOK.qz || LOK.qz.q !== q) LOK.qz = { q, start: Date.now() };
+    let h = qzFrageKopf(a, q);
+    if (z === "frage") h += `<div class="qz-uhr" data-bis="${LOK.qz.start + qzSek(a) * 1000}">${qzSek(a)}</div>${qzOptionen(a, q, "tn", mein ? mein.o : null)}${mein ? `<div class="meldung" style="text-align:center;margin-top:10px">✓ Antwort gesendet – warte auf die Auflösung …</div>` : ""}`;
+    else {
+      const ok = mein && mein.o === f.r, pkt = ok ? 500 + Math.round(500 * Math.max(0, 1 - (mein.ms || 0) / (qzSek(a) * 1000))) : 0, P = qzPunkte(a), r = reihe().slice().sort((x, y) => P[y] - P[x]);
+      h += `<div class="ich-dran" style="background:${ok ? "var(--gruen)" : "var(--granat)"}">${ok ? "✅ Richtig! +" + pkt : mein ? "❌ Leider falsch" : "⏱ Keine Antwort"}</div>${qzOptionen(a, q, "aufl", mein ? mein.o : null)}<p style="text-align:center"><b>${P[ME.id] || 0}</b> Punkte · Platz ${r.indexOf(ME.id) + 1} von ${r.length}</p>`;
+    }
+    return h;
+  }
+  function verdrahteQuiz(a) {
+    const q = G.aufgabe.q; $$("[data-qz]").forEach(b => b.onclick = () => { if ((meinErg().a || {})["q" + q] || G.aufgabe.zeig !== "frage") return; const ms = Date.now() - ((LOK.qz && LOK.qz.q === q) ? LOK.qz.start : Date.now()); ergRef().child("a/q" + q).set({ o: +b.dataset.qz, ms }).catch(() => { }); if (PROBE) setTimeout(() => tnRef("aufgabe/zeig").set("aufl"), 600); });
+  }
   function verdrahteRolle(a, id) {
     const bu = G.aufgabe.buehne; $$("[data-mis]").forEach(b => b.onclick = () => { const k = b.dataset.mis, an = !!(((meinErg().h || {})[bu]) || {})[k]; ergRef().child(`h/${bu}/${k}`).set(an ? null : true).catch(() => { }); });
   }
@@ -664,6 +747,7 @@ window.UNTERRICHT = (function () {
     if (G.teamZahl && !G.gruppen) { G.gruppen = {}; reihe().forEach((id, k) => { G.gruppen[id] = "ABC"[k % G.teamZahl]; }); }
     if (!SP()[ME.id]) ME.id = reihe()[0];
     try { await ladePlan(G.lek, G.plan); } catch (e) { return fehler(e, true); }
+    const pa = PLAN.bloecke[b] && PLAN.bloecke[b].aufgaben[i]; if (pa && pa.typ === "quiz") Object.assign(G.aufgabe, { q: 0, zeig: "frage", qt: Date.now() });
     zeichne();
   }
   const FAKE_TN = ["Ana", "Ben", "Cem", "Dora", "Emil", "Fari"];
