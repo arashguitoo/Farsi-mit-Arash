@@ -3,96 +3,909 @@
   "titel": "Präteritum: von den Verben zum „gestern“",
   "minuten": 90,
   "bloecke": [
-    { "id": "verben", "icon": "🔤", "titel": "Verben: der Infinitiv auf -an", "minuten": 15,
+    {
+      "id": "verben",
+      "icon": "🔤",
+      "titel": "Verben: der Infinitiv auf -an",
+      "minuten": 15,
       "tafel": [
-        { "titel": "Der Infinitiv endet auf -an", "text": "<p>Im Wörterbuch steht jedes Verb im <b>Infinitiv</b>. Er endet <b>immer</b> auf <b>-an</b> <span class='fa'>ـَن</span> – meistens <b>-tan</b>, <b>-dan</b> oder <b>-īdan</b>.</p><p class='klein'>Zwei kennt ihr schon: <span class='fa'>بودَن</span> <i>būdan</i> – sein · <span class='fa'>داشتَن</span> <i>dāschtan</i> – haben.</p>", "stil": "merke",
-          "beispiele": [ { "fa": "رَفتَن", "tr": "raftan", "de": "gehen", "emoji": "🚶" }, { "fa": "آمَدَن", "tr": "āmadan", "de": "kommen", "emoji": "👋" }, { "fa": "خوردَن", "tr": "chordan", "de": "essen", "emoji": "🍽️" },
-            { "fa": "نوشیدَن", "tr": "nūschīdan", "de": "trinken", "emoji": "🍵" }, { "fa": "دیدَن", "tr": "dīdan", "de": "sehen", "emoji": "👀" }, { "fa": "خوابیدَن", "tr": "chābīdan", "de": "schlafen", "emoji": "😴" },
-            { "fa": "خواندَن", "tr": "chāndan", "de": "lesen", "emoji": "📖" }, { "fa": "نِوِشتَن", "tr": "neweschtan", "de": "schreiben", "emoji": "✍️" }, { "fa": "پُختَن", "tr": "pochtan", "de": "kochen", "emoji": "🍲" } ] },
-        { "titel": "Verben aus zwei Wörtern", "text": "<p>Viele persische Verben bestehen aus <b>Nomen + Verb</b>. Das Verb am Ende trägt die Endung <b>-an</b>: <span class='fa'>کار + کَردَن</span> = arbeiten (wörtlich: Arbeit machen).</p>", "stil": "merke",
-          "beispiele": [ { "fa": "کَردَن", "tr": "kardan", "de": "machen", "emoji": "🛠️" }, { "fa": "کار کَردَن", "tr": "kār kardan", "de": "arbeiten", "emoji": "💼" }, { "fa": "دَرس خواندَن", "tr": "dars chāndan", "de": "lernen", "emoji": "📚" },
-            { "fa": "بیدار شُدَن", "tr": "bīdār schodan", "de": "aufwachen", "emoji": "⏰" }, { "fa": "دوش گِرِفتَن", "tr": "dūsch gereftan", "de": "duschen", "emoji": "🚿" }, { "fa": "صُبحانِه خوردَن", "tr": "sobhāne chordan", "de": "frühstücken", "emoji": "🥐" } ] } ],
+        {
+          "titel": "Der Infinitiv endet auf -an",
+          "text": "<p>Im Wörterbuch steht jedes Verb im <b>Infinitiv</b>. Er endet <b>immer</b> auf <b>-an</b> <span class='fa'>ـَن</span> – meistens <b>-tan</b>, <b>-dan</b> oder <b>-īdan</b>.</p><p class='klein'>Zwei kennt ihr schon: <span class='fa'>بودَن</span> <i>būdan</i> – sein · <span class='fa'>داشتَن</span> <i>dāschtan</i> – haben.</p>",
+          "stil": "merke",
+          "beispiele": [
+            {
+              "fa": "رَفتَن",
+              "tr": "raftan",
+              "de": "gehen",
+              "emoji": "🚶"
+            },
+            {
+              "fa": "آمَدَن",
+              "tr": "āmadan",
+              "de": "kommen",
+              "emoji": "👋"
+            },
+            {
+              "fa": "خوردَن",
+              "tr": "chordan",
+              "de": "essen",
+              "emoji": "🍽️"
+            },
+            {
+              "fa": "نوشیدَن",
+              "tr": "nūschīdan",
+              "de": "trinken",
+              "emoji": "🍵"
+            },
+            {
+              "fa": "دیدَن",
+              "tr": "dīdan",
+              "de": "sehen",
+              "emoji": "👀"
+            },
+            {
+              "fa": "خوابیدَن",
+              "tr": "chābīdan",
+              "de": "schlafen",
+              "emoji": "😴"
+            },
+            {
+              "fa": "خواندَن",
+              "tr": "chāndan",
+              "de": "lesen",
+              "emoji": "📖"
+            },
+            {
+              "fa": "نِوِشتَن",
+              "tr": "neweschtan",
+              "de": "schreiben",
+              "emoji": "✍️"
+            },
+            {
+              "fa": "پُختَن",
+              "tr": "pochtan",
+              "de": "kochen",
+              "emoji": "🍲"
+            }
+          ]
+        },
+        {
+          "titel": "Verben aus zwei Wörtern",
+          "text": "<p>Viele persische Verben bestehen aus <b>Nomen + Verb</b>. Das Verb am Ende trägt die Endung <b>-an</b>: <span class='fa'>کار + کَردَن</span> = arbeiten (wörtlich: Arbeit machen).</p>",
+          "stil": "merke",
+          "beispiele": [
+            {
+              "fa": "کَردَن",
+              "tr": "kardan",
+              "de": "machen",
+              "emoji": "🛠️"
+            },
+            {
+              "fa": "کار کَردَن",
+              "tr": "kār kardan",
+              "de": "arbeiten",
+              "emoji": "💼"
+            },
+            {
+              "fa": "دَرس خواندَن",
+              "tr": "dars chāndan",
+              "de": "lernen",
+              "emoji": "📚"
+            },
+            {
+              "fa": "بیدار شُدَن",
+              "tr": "bīdār schodan",
+              "de": "aufwachen",
+              "emoji": "⏰"
+            },
+            {
+              "fa": "دوش گِرِفتَن",
+              "tr": "dūsch gereftan",
+              "de": "duschen",
+              "emoji": "🚿"
+            },
+            {
+              "fa": "صُبحانِه خوردَن",
+              "tr": "sobhāne chordan",
+              "de": "frühstücken",
+              "emoji": "🥐"
+            }
+          ]
+        }
+      ],
       "aufgaben": [
-        { "typ": "paare", "titel": "Verben 1: Was bedeutet das?", "links": "de", "paare": [
-          { "fa": "رَفتَن", "tr": "raftan", "de": "gehen", "emoji": "🚶" }, { "fa": "آمَدَن", "tr": "āmadan", "de": "kommen", "emoji": "👋" }, { "fa": "خوردَن", "tr": "chordan", "de": "essen", "emoji": "🍽️" },
-          { "fa": "دیدَن", "tr": "dīdan", "de": "sehen", "emoji": "👀" }, { "fa": "خوابیدَن", "tr": "chābīdan", "de": "schlafen", "emoji": "😴" }, { "fa": "نِوِشتَن", "tr": "neweschtan", "de": "schreiben", "emoji": "✍️" } ] },
-        { "typ": "paare", "titel": "Verben 2: Was bedeutet das?", "links": "de", "paare": [
-          { "fa": "نوشیدَن", "tr": "nūschīdan", "de": "trinken", "emoji": "🍵" }, { "fa": "خواندَن", "tr": "chāndan", "de": "lesen", "emoji": "📖" }, { "fa": "پُختَن", "tr": "pochtan", "de": "kochen", "emoji": "🍲" },
-          { "fa": "کار کَردَن", "tr": "kār kardan", "de": "arbeiten", "emoji": "💼" }, { "fa": "بیدار شُدَن", "tr": "bīdār schodan", "de": "aufwachen", "emoji": "⏰" }, { "fa": "دوش گِرِفتَن", "tr": "dūsch gereftan", "de": "duschen", "emoji": "🚿" } ] },
-        { "ref": "05/s04/1" }, { "ref": "05/s05/1" }, { "ref": "05/s06/1" },
-        { "typ": "wahl", "titel": "Welches Wort ist ein Infinitiv?", "fragen": [
-          { "frage": "Welches Wort ist ein <b>Infinitiv</b>?", "optionen": ["خوابیدَن", "خوابیدَم", "دیروز"], "richtig": 0, "optFa": true, "erkl": "Der Infinitiv endet auf <b>-an</b>: <span class='fa'>خوابیدَن</span> <i>chābīdan</i> – schlafen." },
-          { "frage": "Welches Wort ist ein <b>Infinitiv</b>?", "optionen": ["نِوِشتَن", "نامِه", "نِوِشتَم"], "richtig": 0, "optFa": true, "erkl": "<span class='fa'>نِوِشتَن</span> <i>neweschtan</i> – schreiben." },
-          { "frage": "Welches Wort ist ein <b>Infinitiv</b>?", "optionen": ["آمَدَن", "آمَد", "اِمروز"], "richtig": 0, "optFa": true, "erkl": "<span class='fa'>آمَدَن</span> <i>āmadan</i> – kommen." },
-          { "frage": "Welcher Teil von <span class='fa'>کار کَردَن</span> hat die Endung -an?", "optionen": ["کَردَن", "کار"], "richtig": 0, "optFa": true, "erkl": "Das Verb steht am Ende: <span class='fa'>کار + کَردَن</span>." } ] },
-        { "typ": "tempo", "titel": "Blitz: Verben", "aufgabe": "Was bedeutet das?", "modus": "de", "sekunden": 75, "ziel": 10, "woerter": [
-          { "fa": "رَفتَن", "a": "gehen" }, { "fa": "آمَدَن", "a": "kommen" }, { "fa": "خوردَن", "a": "essen" }, { "fa": "نوشیدَن", "a": "trinken" }, { "fa": "دیدَن", "a": "sehen" }, { "fa": "خوابیدَن", "a": "schlafen" },
-          { "fa": "خواندَن", "a": "lesen" }, { "fa": "نِوِشتَن", "a": "schreiben" }, { "fa": "پُختَن", "a": "kochen" }, { "fa": "کار کَردَن", "a": "arbeiten" }, { "fa": "بیدار شُدَن", "a": "aufwachen" }, { "fa": "دوش گِرِفتَن", "a": "duschen" } ] },
-        { "ref": "05/c/1" }, { "ref": "05/c/0" } ] },
-
-    { "id": "praeteritum", "icon": "⏪", "titel": "Das Präteritum bilden", "minuten": 15,
-      "tafel": [ { "ref": "05/s00/0" }, { "ref": "05/s03/0" },
-        { "titel": "Infinitiv → Stamm → ich-Form", "text": "<p>Immer gleich: <b>-an</b> weg → Stamm → Endung dran.</p>", "stil": "merke",
-          "beispiele": [ { "fa": "خوردَن · خورد · خوردَم", "tr": "chordan · chord · chordam", "de": "essen → ich aß" }, { "fa": "دیدَن · دید · دیدَم", "tr": "dīdan · dīd · dīdam", "de": "sehen → ich sah" },
-            { "fa": "خوابیدَن · خوابید · خوابیدَم", "tr": "chābīdan · chābīd · chābīdam", "de": "schlafen → ich schlief" }, { "fa": "نِوِشتَن · نِوِشت · نِوِشتَم", "tr": "neweschtan · newescht · neweschtam", "de": "schreiben → ich schrieb" },
-            { "fa": "کار کَردَن · کار کَرد · کار کَردَم", "tr": "kār kardan · kār kard · kār kardam", "de": "arbeiten → ich arbeitete" } ] },
-        { "ref": "05/s08/0" }, { "ref": "05/s03/4" } ],
-      "aufgaben": [ { "ref": "05/s03/1" }, { "ref": "05/s03/2" }, { "ref": "05/h/1" }, { "ref": "05/a/2" }, { "ref": "05/s03/3" }, { "ref": "05/s08/1" }, { "ref": "05/s08/2" }, { "ref": "05/a/0" } ] },
-
-    { "id": "tag", "icon": "⏰", "titel": "Mein Tag gestern", "minuten": 15,
-      "tafel": [ { "ref": "05/s01/0" }, { "ref": "05/s04/0" }, { "ref": "05/s05/0" }, { "ref": "05/s06/0" }, { "ref": "05/s07/1" } ],
-      "aufgaben": [ { "ref": "05/s04/3" }, { "ref": "05/s05/3" }, { "ref": "05/s06/3" }, { "ref": "05/s05/2" }, { "ref": "05/s06/2" }, { "ref": "05/s04/4" }, { "ref": "05/s05/4" }, { "ref": "05/b/0" } ] },
-
-    { "id": "nein-fragen", "icon": "🚫", "titel": "Verneinung, Fragen, war & hatte", "minuten": 15,
-      "tafel": [ { "ref": "05/s09/0" }, { "ref": "05/s09/1" }, { "ref": "05/s10/0" }, { "ref": "05/s12/0" } ],
-      "aufgaben": [ { "ref": "05/s09/2" }, { "ref": "05/s09/3" }, { "ref": "05/f/0" }, { "ref": "05/s09/4" }, { "ref": "05/s09/5" }, { "ref": "05/s10/1" }, { "ref": "05/s10/2" }, { "ref": "05/s10/3" }, { "ref": "05/s12/3" } ] },
-
-    { "id": "vertiefung", "icon": "🔍", "titel": "Vertiefung: Texte & Tagesablauf", "minuten": 10,
-      "tafel": [ { "ref": "05/a1/0" } ],
-      "aufgaben": [ { "typ": "puzzle", "titel": "Vorlesen & ordnen: Rezas Tag gestern", "quelle": "05/a1/0", "gruppen": [2, 1, 2, 2, 2] },
-        { "ref": "05/a1/1" }, { "ref": "05/a1/2" }, { "ref": "05/d1/1" }, { "ref": "05/e/0" }, { "ref": "05/i/1" }, { "ref": "05/s14/0" }, { "ref": "05/s14/1" }, { "ref": "05/a2/2" } ] },
-
-    { "id": "interview", "icon": "🗣️", "titel": "Partner-Interview: Was hast du gestern gemacht?", "minuten": 10,
-      "tafel": [ { "titel": "So fragt ihr euch", "text": "<p>Jede/r bekommt auf dem Handy eine Karte mit dem eigenen Tag. Frag deine Partnerin / deinen Partner auf Persisch und tippe an, was sie / er antwortet. Am Ende: <b>✔ prüfen</b>.</p>",
-          "beispiele": [ { "fa": "دیروز کِی بیدار شُدی؟", "tr": "dīrūz key bīdār schodī?", "de": "Wann bist du gestern aufgewacht?" }, { "fa": "ساعَتِ هَفت بیدار شُدَم.", "tr": "sāʿat-e haft bīdār schodam.", "de": "Ich bin um 7 Uhr aufgewacht." },
-            { "fa": "دیروز کار کَردی؟", "tr": "dīrūz kār kardī?", "de": "Hast du gestern gearbeitet?" }, { "fa": "نَه، کار نَکَردَم.", "tr": "na, kār nakardam.", "de": "Nein, ich habe nicht gearbeitet." } ] } ],
-      "aufgaben": [ { "typ": "interview", "titel": "Partner-Interview: Was hast du gestern gemacht?", "vorlage": "gestern", "kartenTitel": "Dein Tag gestern" } ] },
-
-    { "id": "quiz", "icon": "🏆", "titel": "Quiz für alle", "minuten": 10,
+        {
+          "typ": "paare",
+          "titel": "Verben 1: Was bedeutet das?",
+          "links": "de",
+          "paare": [
+            {
+              "fa": "رَفتَن",
+              "tr": "raftan",
+              "de": "gehen",
+              "emoji": "🚶"
+            },
+            {
+              "fa": "آمَدَن",
+              "tr": "āmadan",
+              "de": "kommen",
+              "emoji": "👋"
+            },
+            {
+              "fa": "خوردَن",
+              "tr": "chordan",
+              "de": "essen",
+              "emoji": "🍽️"
+            },
+            {
+              "fa": "دیدَن",
+              "tr": "dīdan",
+              "de": "sehen",
+              "emoji": "👀"
+            },
+            {
+              "fa": "خوابیدَن",
+              "tr": "chābīdan",
+              "de": "schlafen",
+              "emoji": "😴"
+            },
+            {
+              "fa": "نِوِشتَن",
+              "tr": "neweschtan",
+              "de": "schreiben",
+              "emoji": "✍️"
+            }
+          ]
+        },
+        {
+          "typ": "paare",
+          "titel": "Verben 2: Was bedeutet das?",
+          "links": "de",
+          "paare": [
+            {
+              "fa": "نوشیدَن",
+              "tr": "nūschīdan",
+              "de": "trinken",
+              "emoji": "🍵"
+            },
+            {
+              "fa": "خواندَن",
+              "tr": "chāndan",
+              "de": "lesen",
+              "emoji": "📖"
+            },
+            {
+              "fa": "پُختَن",
+              "tr": "pochtan",
+              "de": "kochen",
+              "emoji": "🍲"
+            },
+            {
+              "fa": "کار کَردَن",
+              "tr": "kār kardan",
+              "de": "arbeiten",
+              "emoji": "💼"
+            },
+            {
+              "fa": "بیدار شُدَن",
+              "tr": "bīdār schodan",
+              "de": "aufwachen",
+              "emoji": "⏰"
+            },
+            {
+              "fa": "دوش گِرِفتَن",
+              "tr": "dūsch gereftan",
+              "de": "duschen",
+              "emoji": "🚿"
+            }
+          ]
+        },
+        {
+          "ref": "05/s04/1"
+        },
+        {
+          "ref": "05/s05/1"
+        },
+        {
+          "ref": "05/s06/1"
+        },
+        {
+          "typ": "wahl",
+          "titel": "Welches Wort ist ein Infinitiv?",
+          "fragen": [
+            {
+              "frage": "Welches Wort ist ein <b>Infinitiv</b>?",
+              "optionen": [
+                "خوابیدَن",
+                "خوابیدَم",
+                "دیروز"
+              ],
+              "richtig": 0,
+              "optFa": true,
+              "erkl": "Der Infinitiv endet auf <b>-an</b>: <span class='fa'>خوابیدَن</span> <i>chābīdan</i> – schlafen."
+            },
+            {
+              "frage": "Welches Wort ist ein <b>Infinitiv</b>?",
+              "optionen": [
+                "نِوِشتَن",
+                "نامِه",
+                "نِوِشتَم"
+              ],
+              "richtig": 0,
+              "optFa": true,
+              "erkl": "<span class='fa'>نِوِشتَن</span> <i>neweschtan</i> – schreiben."
+            },
+            {
+              "frage": "Welches Wort ist ein <b>Infinitiv</b>?",
+              "optionen": [
+                "آمَدَن",
+                "آمَد",
+                "اِمروز"
+              ],
+              "richtig": 0,
+              "optFa": true,
+              "erkl": "<span class='fa'>آمَدَن</span> <i>āmadan</i> – kommen."
+            },
+            {
+              "frage": "Welcher Teil von <span class='fa'>کار کَردَن</span> hat die Endung -an?",
+              "optionen": [
+                "کَردَن",
+                "کار"
+              ],
+              "richtig": 0,
+              "optFa": true,
+              "erkl": "Das Verb steht am Ende: <span class='fa'>کار + کَردَن</span>."
+            }
+          ]
+        },
+        {
+          "typ": "tempo",
+          "titel": "Blitz: Verben",
+          "aufgabe": "Was bedeutet das?",
+          "modus": "de",
+          "sekunden": 75,
+          "ziel": 10,
+          "woerter": [
+            {
+              "fa": "رَفتَن",
+              "a": "gehen"
+            },
+            {
+              "fa": "آمَدَن",
+              "a": "kommen"
+            },
+            {
+              "fa": "خوردَن",
+              "a": "essen"
+            },
+            {
+              "fa": "نوشیدَن",
+              "a": "trinken"
+            },
+            {
+              "fa": "دیدَن",
+              "a": "sehen"
+            },
+            {
+              "fa": "خوابیدَن",
+              "a": "schlafen"
+            },
+            {
+              "fa": "خواندَن",
+              "a": "lesen"
+            },
+            {
+              "fa": "نِوِشتَن",
+              "a": "schreiben"
+            },
+            {
+              "fa": "پُختَن",
+              "a": "kochen"
+            },
+            {
+              "fa": "کار کَردَن",
+              "a": "arbeiten"
+            },
+            {
+              "fa": "بیدار شُدَن",
+              "a": "aufwachen"
+            },
+            {
+              "fa": "دوش گِرِفتَن",
+              "a": "duschen"
+            }
+          ]
+        },
+        {
+          "ref": "05/c/1"
+        },
+        {
+          "ref": "05/c/0"
+        }
+      ]
+    },
+    {
+      "id": "praeteritum",
+      "icon": "⏪",
+      "titel": "Das Präteritum bilden",
+      "minuten": 15,
+      "tafel": [
+        {
+          "ref": "05/s00/0"
+        },
+        {
+          "titel": "Präteritum: Stamm + Endung",
+          "stil": "merke",
+          "text": "<p><b>1.</b> Vom Infinitiv <b>-an</b> wegnehmen → Stamm: <span class='fa'>رَفتَن</span> → <span class='fa' style='color:#2f5d7c;font-weight:700'>رَفت</span> <i>raftan → raft</i> (gehen)</p><p><b>2.</b> Endung anhängen: <span style='color:#b5525a;font-weight:800'>-am</span>, <span style='color:#b5525a;font-weight:800'>-ī</span>, (–), <span style='color:#b5525a;font-weight:800'>-īm</span>, <span style='color:#b5525a;font-weight:800'>-īd</span>, <span style='color:#b5525a;font-weight:800'>-and</span> – bei <b>er/sie</b> gibt es <b>keine</b> Endung.</p><table style='width:100%;border-collapse:collapse;margin:8px 0;font-size:1.05em'><tr><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd);font-family:var(--fa);direction:rtl;text-align:right;font-size:1.35em'><span class='fa'>مَن <span style='color:#2f5d7c;font-weight:700'>رَفت‍</span><span style='color:#b5525a;font-weight:800'>‍َم</span></span></td><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd)'><i>man <b style='color:#2f5d7c'>raft</b><b style='color:#b5525a'>am</b></i></td><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd)'>ich ging</td></tr><tr><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd);font-family:var(--fa);direction:rtl;text-align:right;font-size:1.35em'><span class='fa'>تو <span style='color:#2f5d7c;font-weight:700'>رَفت‍</span><span style='color:#b5525a;font-weight:800'>‍ی</span></span></td><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd)'><i>to <b style='color:#2f5d7c'>raft</b><b style='color:#b5525a'>ī</b></i></td><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd)'>du gingst</td></tr><tr><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd);font-family:var(--fa);direction:rtl;text-align:right;font-size:1.35em'><span class='fa'>او <span style='color:#2f5d7c;font-weight:700'>رَفت</span></span></td><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd)'><i>ū <b style='color:#2f5d7c'>raft</b><b style='color:#b5525a'></b></i></td><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd)'>er / sie ging</td></tr><tr><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd);font-family:var(--fa);direction:rtl;text-align:right;font-size:1.35em'><span class='fa'>ما <span style='color:#2f5d7c;font-weight:700'>رَفت‍</span><span style='color:#b5525a;font-weight:800'>‍یم</span></span></td><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd)'><i>mā <b style='color:#2f5d7c'>raft</b><b style='color:#b5525a'>īm</b></i></td><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd)'>wir gingen</td></tr><tr><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd);font-family:var(--fa);direction:rtl;text-align:right;font-size:1.35em'><span class='fa'>شُما <span style='color:#2f5d7c;font-weight:700'>رَفت‍</span><span style='color:#b5525a;font-weight:800'>‍ید</span></span></td><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd)'><i>schomā <b style='color:#2f5d7c'>raft</b><b style='color:#b5525a'>īd</b></i></td><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd)'>ihr gingt / Sie gingen</td></tr><tr><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd);font-family:var(--fa);direction:rtl;text-align:right;font-size:1.35em'><span class='fa'>آنها <span style='color:#2f5d7c;font-weight:700'>رَفت‍</span><span style='color:#b5525a;font-weight:800'>‍َند</span></span></td><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd)'><i>ānhā <b style='color:#2f5d7c'>raft</b><b style='color:#b5525a'>and</b></i></td><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd)'>sie gingen</td></tr></table>"
+        },
+        {
+          "titel": "Infinitiv → Stamm → ich-Form",
+          "stil": "merke",
+          "text": "<p>Immer gleich: <span style='color:#9aa3a0'>-an</span> weg → <span style='color:#2f5d7c;font-weight:700'>Stamm</span> → <span style='color:#b5525a;font-weight:800'>Endung</span> dran.</p><table style='width:100%;border-collapse:collapse;margin:8px 0;font-size:1.05em'><tr><th style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd);text-align:right'>Infinitiv</th><th style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd);text-align:right'>Stamm</th><th style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd);text-align:right'>ich …</th><th style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd);text-align:left'></th></tr><tr><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd);font-family:var(--fa);direction:rtl;text-align:right;font-size:1.35em'><span class='fa'>خورد‍<span style='color:#9aa3a0'>‍َن</span></span></td><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd);font-family:var(--fa);direction:rtl;text-align:right;font-size:1.35em'><span class='fa'><span style='color:#2f5d7c;font-weight:700'>خورد</span></span></td><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd);font-family:var(--fa);direction:rtl;text-align:right;font-size:1.35em'><span class='fa'><span style='color:#2f5d7c;font-weight:700'>خورد‍</span><span style='color:#b5525a;font-weight:800'>‍َم</span></span></td><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd)'><i>chordan → <b style='color:#2f5d7c'>chord</b><b style='color:#b5525a'>am</b></i><br><span class='klein'>essen → ich aß</span></td></tr><tr><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd);font-family:var(--fa);direction:rtl;text-align:right;font-size:1.35em'><span class='fa'>دید‍<span style='color:#9aa3a0'>‍َن</span></span></td><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd);font-family:var(--fa);direction:rtl;text-align:right;font-size:1.35em'><span class='fa'><span style='color:#2f5d7c;font-weight:700'>دید</span></span></td><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd);font-family:var(--fa);direction:rtl;text-align:right;font-size:1.35em'><span class='fa'><span style='color:#2f5d7c;font-weight:700'>دید‍</span><span style='color:#b5525a;font-weight:800'>‍َم</span></span></td><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd)'><i>dīdan → <b style='color:#2f5d7c'>dīd</b><b style='color:#b5525a'>am</b></i><br><span class='klein'>sehen → ich sah</span></td></tr><tr><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd);font-family:var(--fa);direction:rtl;text-align:right;font-size:1.35em'><span class='fa'>خوابید‍<span style='color:#9aa3a0'>‍َن</span></span></td><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd);font-family:var(--fa);direction:rtl;text-align:right;font-size:1.35em'><span class='fa'><span style='color:#2f5d7c;font-weight:700'>خوابید</span></span></td><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd);font-family:var(--fa);direction:rtl;text-align:right;font-size:1.35em'><span class='fa'><span style='color:#2f5d7c;font-weight:700'>خوابید‍</span><span style='color:#b5525a;font-weight:800'>‍َم</span></span></td><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd)'><i>chābīdan → <b style='color:#2f5d7c'>chābīd</b><b style='color:#b5525a'>am</b></i><br><span class='klein'>schlafen → ich schlief</span></td></tr><tr><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd);font-family:var(--fa);direction:rtl;text-align:right;font-size:1.35em'><span class='fa'>نِوِشت‍<span style='color:#9aa3a0'>‍َن</span></span></td><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd);font-family:var(--fa);direction:rtl;text-align:right;font-size:1.35em'><span class='fa'><span style='color:#2f5d7c;font-weight:700'>نِوِشت</span></span></td><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd);font-family:var(--fa);direction:rtl;text-align:right;font-size:1.35em'><span class='fa'><span style='color:#2f5d7c;font-weight:700'>نِوِشت‍</span><span style='color:#b5525a;font-weight:800'>‍َم</span></span></td><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd)'><i>neweschtan → <b style='color:#2f5d7c'>newescht</b><b style='color:#b5525a'>am</b></i><br><span class='klein'>schreiben → ich schrieb</span></td></tr><tr><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd);font-family:var(--fa);direction:rtl;text-align:right;font-size:1.35em'><span class='fa'>پُخت‍<span style='color:#9aa3a0'>‍َن</span></span></td><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd);font-family:var(--fa);direction:rtl;text-align:right;font-size:1.35em'><span class='fa'><span style='color:#2f5d7c;font-weight:700'>پُخت</span></span></td><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd);font-family:var(--fa);direction:rtl;text-align:right;font-size:1.35em'><span class='fa'><span style='color:#2f5d7c;font-weight:700'>پُخت‍</span><span style='color:#b5525a;font-weight:800'>‍َم</span></span></td><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd)'><i>pochtan → <b style='color:#2f5d7c'>pocht</b><b style='color:#b5525a'>am</b></i><br><span class='klein'>kochen → ich kochte</span></td></tr><tr><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd);font-family:var(--fa);direction:rtl;text-align:right;font-size:1.35em'><span class='fa'>کار کَرد‍<span style='color:#9aa3a0'>‍َن</span></span></td><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd);font-family:var(--fa);direction:rtl;text-align:right;font-size:1.35em'><span class='fa'><span style='color:#2f5d7c;font-weight:700'>کار کَرد</span></span></td><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd);font-family:var(--fa);direction:rtl;text-align:right;font-size:1.35em'><span class='fa'><span style='color:#2f5d7c;font-weight:700'>کار کَرد‍</span><span style='color:#b5525a;font-weight:800'>‍َم</span></span></td><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd)'><i>kār kardan → <b style='color:#2f5d7c'>kār kard</b><b style='color:#b5525a'>am</b></i><br><span class='klein'>arbeiten → ich arbeitete</span></td></tr></table>"
+        },
+        {
+          "titel": "Alle 6 Personen auf einen Blick",
+          "text": "<p><span style='color:#2f5d7c;font-weight:700'>Stamm</span> bleibt immer gleich, nur die <span style='color:#b5525a;font-weight:800'>Endung</span> wechselt. Bei <b>او</b> (er / sie): keine Endung.</p><div style='overflow-x:auto'><table style='width:100%;border-collapse:collapse;margin:8px 0;font-size:1.05em;direction:rtl'><tr><th style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd)'></th><th style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd);font-family:var(--fa);direction:rtl;text-align:right;font-size:1.35em'><span class='fa'>رَفت‍<span style='color:#9aa3a0'>‍َن</span></span><div class='klein' style='font-family:inherit;direction:ltr;text-align:right'>gehen</div></th><th style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd);font-family:var(--fa);direction:rtl;text-align:right;font-size:1.35em'><span class='fa'>خورد‍<span style='color:#9aa3a0'>‍َن</span></span><div class='klein' style='font-family:inherit;direction:ltr;text-align:right'>essen</div></th><th style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd);font-family:var(--fa);direction:rtl;text-align:right;font-size:1.35em'><span class='fa'>دید‍<span style='color:#9aa3a0'>‍َن</span></span><div class='klein' style='font-family:inherit;direction:ltr;text-align:right'>sehen</div></th><th style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd);font-family:var(--fa);direction:rtl;text-align:right;font-size:1.35em'><span class='fa'>خوابید‍<span style='color:#9aa3a0'>‍َن</span></span><div class='klein' style='font-family:inherit;direction:ltr;text-align:right'>schlafen</div></th></tr><tr><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd)'><span class='fa' style='font-size:1.25em'>مَن</span> <span class='klein'>ich</span></td><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd);font-family:var(--fa);direction:rtl;text-align:right;font-size:1.35em'><span class='fa'><span style='color:#2f5d7c;font-weight:700'>رَفت‍</span><span style='color:#b5525a;font-weight:800'>‍َم</span></span></td><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd);font-family:var(--fa);direction:rtl;text-align:right;font-size:1.35em'><span class='fa'><span style='color:#2f5d7c;font-weight:700'>خورد‍</span><span style='color:#b5525a;font-weight:800'>‍َم</span></span></td><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd);font-family:var(--fa);direction:rtl;text-align:right;font-size:1.35em'><span class='fa'><span style='color:#2f5d7c;font-weight:700'>دید‍</span><span style='color:#b5525a;font-weight:800'>‍َم</span></span></td><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd);font-family:var(--fa);direction:rtl;text-align:right;font-size:1.35em'><span class='fa'><span style='color:#2f5d7c;font-weight:700'>خوابید‍</span><span style='color:#b5525a;font-weight:800'>‍َم</span></span></td></tr><tr><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd)'><span class='fa' style='font-size:1.25em'>تو</span> <span class='klein'>du</span></td><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd);font-family:var(--fa);direction:rtl;text-align:right;font-size:1.35em'><span class='fa'><span style='color:#2f5d7c;font-weight:700'>رَفت‍</span><span style='color:#b5525a;font-weight:800'>‍ی</span></span></td><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd);font-family:var(--fa);direction:rtl;text-align:right;font-size:1.35em'><span class='fa'><span style='color:#2f5d7c;font-weight:700'>خورد‍</span><span style='color:#b5525a;font-weight:800'>‍ی</span></span></td><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd);font-family:var(--fa);direction:rtl;text-align:right;font-size:1.35em'><span class='fa'><span style='color:#2f5d7c;font-weight:700'>دید‍</span><span style='color:#b5525a;font-weight:800'>‍ی</span></span></td><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd);font-family:var(--fa);direction:rtl;text-align:right;font-size:1.35em'><span class='fa'><span style='color:#2f5d7c;font-weight:700'>خوابید‍</span><span style='color:#b5525a;font-weight:800'>‍ی</span></span></td></tr><tr><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd)'><span class='fa' style='font-size:1.25em'>او</span> <span class='klein'>er / sie</span></td><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd);font-family:var(--fa);direction:rtl;text-align:right;font-size:1.35em'><span class='fa'><span style='color:#2f5d7c;font-weight:700'>رَفت</span></span></td><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd);font-family:var(--fa);direction:rtl;text-align:right;font-size:1.35em'><span class='fa'><span style='color:#2f5d7c;font-weight:700'>خورد</span></span></td><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd);font-family:var(--fa);direction:rtl;text-align:right;font-size:1.35em'><span class='fa'><span style='color:#2f5d7c;font-weight:700'>دید</span></span></td><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd);font-family:var(--fa);direction:rtl;text-align:right;font-size:1.35em'><span class='fa'><span style='color:#2f5d7c;font-weight:700'>خوابید</span></span></td></tr><tr><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd)'><span class='fa' style='font-size:1.25em'>ما</span> <span class='klein'>wir</span></td><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd);font-family:var(--fa);direction:rtl;text-align:right;font-size:1.35em'><span class='fa'><span style='color:#2f5d7c;font-weight:700'>رَفت‍</span><span style='color:#b5525a;font-weight:800'>‍یم</span></span></td><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd);font-family:var(--fa);direction:rtl;text-align:right;font-size:1.35em'><span class='fa'><span style='color:#2f5d7c;font-weight:700'>خورد‍</span><span style='color:#b5525a;font-weight:800'>‍یم</span></span></td><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd);font-family:var(--fa);direction:rtl;text-align:right;font-size:1.35em'><span class='fa'><span style='color:#2f5d7c;font-weight:700'>دید‍</span><span style='color:#b5525a;font-weight:800'>‍یم</span></span></td><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd);font-family:var(--fa);direction:rtl;text-align:right;font-size:1.35em'><span class='fa'><span style='color:#2f5d7c;font-weight:700'>خوابید‍</span><span style='color:#b5525a;font-weight:800'>‍یم</span></span></td></tr><tr><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd)'><span class='fa' style='font-size:1.25em'>شُما</span> <span class='klein'>ihr / Sie</span></td><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd);font-family:var(--fa);direction:rtl;text-align:right;font-size:1.35em'><span class='fa'><span style='color:#2f5d7c;font-weight:700'>رَفت‍</span><span style='color:#b5525a;font-weight:800'>‍ید</span></span></td><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd);font-family:var(--fa);direction:rtl;text-align:right;font-size:1.35em'><span class='fa'><span style='color:#2f5d7c;font-weight:700'>خورد‍</span><span style='color:#b5525a;font-weight:800'>‍ید</span></span></td><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd);font-family:var(--fa);direction:rtl;text-align:right;font-size:1.35em'><span class='fa'><span style='color:#2f5d7c;font-weight:700'>دید‍</span><span style='color:#b5525a;font-weight:800'>‍ید</span></span></td><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd);font-family:var(--fa);direction:rtl;text-align:right;font-size:1.35em'><span class='fa'><span style='color:#2f5d7c;font-weight:700'>خوابید‍</span><span style='color:#b5525a;font-weight:800'>‍ید</span></span></td></tr><tr><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd)'><span class='fa' style='font-size:1.25em'>آنها</span> <span class='klein'>sie (Pl.)</span></td><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd);font-family:var(--fa);direction:rtl;text-align:right;font-size:1.35em'><span class='fa'><span style='color:#2f5d7c;font-weight:700'>رَفت‍</span><span style='color:#b5525a;font-weight:800'>‍َند</span></span></td><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd);font-family:var(--fa);direction:rtl;text-align:right;font-size:1.35em'><span class='fa'><span style='color:#2f5d7c;font-weight:700'>خورد‍</span><span style='color:#b5525a;font-weight:800'>‍َند</span></span></td><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd);font-family:var(--fa);direction:rtl;text-align:right;font-size:1.35em'><span class='fa'><span style='color:#2f5d7c;font-weight:700'>دید‍</span><span style='color:#b5525a;font-weight:800'>‍َند</span></span></td><td style='padding:6px 8px;border-bottom:1px solid var(--linie,#ddd);font-family:var(--fa);direction:rtl;text-align:right;font-size:1.35em'><span class='fa'><span style='color:#2f5d7c;font-weight:700'>خوابید‍</span><span style='color:#b5525a;font-weight:800'>‍َند</span></span></td></tr></table></div><p class='klein'>Endungen: <span style='color:#b5525a;font-weight:800'>-am</span> · <span style='color:#b5525a;font-weight:800'>-ī</span> · – · <span style='color:#b5525a;font-weight:800'>-īm</span> · <span style='color:#b5525a;font-weight:800'>-īd</span> · <span style='color:#b5525a;font-weight:800'>-and</span> – genau wie bei <span class='fa'>هَستَم، هَستی …</span></p>"
+        },
+        {
+          "ref": "05/s08/0"
+        },
+        {
+          "ref": "05/s03/4"
+        }
+      ],
+      "aufgaben": [
+        {
+          "ref": "05/s03/1"
+        },
+        {
+          "ref": "05/s03/2"
+        },
+        {
+          "ref": "05/h/1"
+        },
+        {
+          "ref": "05/a/2"
+        },
+        {
+          "ref": "05/s03/3"
+        },
+        {
+          "ref": "05/s08/1"
+        },
+        {
+          "ref": "05/s08/2"
+        },
+        {
+          "ref": "05/a/0"
+        }
+      ]
+    },
+    {
+      "id": "tag",
+      "icon": "⏰",
+      "titel": "Mein Tag gestern",
+      "minuten": 15,
+      "tafel": [
+        {
+          "ref": "05/s01/0"
+        },
+        {
+          "ref": "05/s04/0"
+        },
+        {
+          "ref": "05/s05/0"
+        },
+        {
+          "ref": "05/s06/0"
+        },
+        {
+          "ref": "05/s07/1"
+        }
+      ],
+      "aufgaben": [
+        {
+          "ref": "05/s04/3"
+        },
+        {
+          "ref": "05/s05/3"
+        },
+        {
+          "ref": "05/s06/3"
+        },
+        {
+          "ref": "05/s05/2"
+        },
+        {
+          "ref": "05/s06/2"
+        },
+        {
+          "ref": "05/s04/4"
+        },
+        {
+          "ref": "05/s05/4"
+        },
+        {
+          "ref": "05/b/0"
+        }
+      ]
+    },
+    {
+      "id": "nein-fragen",
+      "icon": "🚫",
+      "titel": "Verneinung, Fragen, war & hatte",
+      "minuten": 15,
+      "tafel": [
+        {
+          "ref": "05/s09/0"
+        },
+        {
+          "ref": "05/s09/1"
+        },
+        {
+          "ref": "05/s10/0"
+        },
+        {
+          "ref": "05/s12/0"
+        }
+      ],
+      "aufgaben": [
+        {
+          "ref": "05/s09/2"
+        },
+        {
+          "ref": "05/s09/3"
+        },
+        {
+          "ref": "05/f/0"
+        },
+        {
+          "ref": "05/s09/4"
+        },
+        {
+          "ref": "05/s09/5"
+        },
+        {
+          "ref": "05/s10/1"
+        },
+        {
+          "ref": "05/s10/2"
+        },
+        {
+          "ref": "05/s10/3"
+        },
+        {
+          "ref": "05/s12/3"
+        }
+      ]
+    },
+    {
+      "id": "vertiefung",
+      "icon": "🔍",
+      "titel": "Vertiefung: Texte & Tagesablauf",
+      "minuten": 10,
+      "tafel": [
+        {
+          "ref": "05/a1/0"
+        }
+      ],
+      "aufgaben": [
+        {
+          "typ": "puzzle",
+          "titel": "Vorlesen & ordnen: Rezas Tag gestern",
+          "quelle": "05/a1/0",
+          "gruppen": [
+            2,
+            1,
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "ref": "05/a1/1"
+        },
+        {
+          "ref": "05/a1/2"
+        },
+        {
+          "ref": "05/d1/1"
+        },
+        {
+          "ref": "05/e/0"
+        },
+        {
+          "ref": "05/i/1"
+        },
+        {
+          "ref": "05/s14/0"
+        },
+        {
+          "ref": "05/s14/1"
+        },
+        {
+          "ref": "05/a2/2"
+        }
+      ]
+    },
+    {
+      "id": "interview",
+      "icon": "🗣️",
+      "titel": "Partner-Interview: Was hast du gestern gemacht?",
+      "minuten": 10,
+      "tafel": [
+        {
+          "titel": "So fragt ihr euch",
+          "text": "<p>Jede/r bekommt auf dem Handy eine Karte mit dem eigenen Tag. Frag deine Partnerin / deinen Partner auf Persisch und tippe an, was sie / er antwortet. Am Ende: <b>✔ prüfen</b>.</p>",
+          "beispiele": [
+            {
+              "fa": "دیروز کِی بیدار شُدی؟",
+              "tr": "dīrūz key bīdār schodī?",
+              "de": "Wann bist du gestern aufgewacht?"
+            },
+            {
+              "fa": "ساعَتِ هَفت بیدار شُدَم.",
+              "tr": "sāʿat-e haft bīdār schodam.",
+              "de": "Ich bin um 7 Uhr aufgewacht."
+            },
+            {
+              "fa": "دیروز کار کَردی؟",
+              "tr": "dīrūz kār kardī?",
+              "de": "Hast du gestern gearbeitet?"
+            },
+            {
+              "fa": "نَه، کار نَکَردَم.",
+              "tr": "na, kār nakardam.",
+              "de": "Nein, ich habe nicht gearbeitet."
+            }
+          ]
+        }
+      ],
+      "aufgaben": [
+        {
+          "typ": "interview",
+          "titel": "Partner-Interview: Was hast du gestern gemacht?",
+          "vorlage": "gestern",
+          "kartenTitel": "Dein Tag gestern"
+        }
+      ]
+    },
+    {
+      "id": "quiz",
+      "icon": "🏆",
+      "titel": "Quiz für alle",
+      "minuten": 10,
       "tafel": [],
-      "aufgaben": [ { "typ": "quiz", "titel": "Das große Quiz: Verben & Präteritum", "sek": 20, "fragen": [
-        { "f": "Welches Wort ist ein Infinitiv?", "o": ["رَفتَن", "رَفتَم", "رَفت"], "r": 0, "optFa": true },
-        { "f": "Was bedeutet das?", "fa": "خوابیدَن", "o": ["schlafen", "schreiben", "sehen", "essen"], "r": 0 },
-        { "f": "Was bedeutet das?", "fa": "نِوِشتَن", "o": ["schreiben", "lesen", "kochen", "trinken"], "r": 0 },
-        { "f": "Vergangenheitsstamm von خوردَن?", "o": ["خورد", "خوردَن", "خوردَم"], "r": 0, "optFa": true },
-        { "f": "„ich ging“", "o": ["مَن رَفتَم", "مَن رَفت", "مَن رَفتَن"], "r": 0, "optFa": true },
-        { "f": "„er / sie hat geschlafen“", "o": ["او خوابید", "او خوابیدَم", "او خوابیدَن"], "r": 0, "optFa": true },
-        { "f": "Was fehlt?", "fa": "ما دیروز فیلم ___ .", "o": ["دیدیم", "دیدَند", "دیدید"], "r": 0, "optFa": true },
-        { "f": "Wer? – خوابیدیم", "o": ["wir", "ihr", "sie (Pl.)", "ich"], "r": 0 },
-        { "f": "„Sie (Pl.) haben gekocht.“", "o": ["آنها پُختَند.", "آنها پُخت.", "آنها پُختید."], "r": 0, "optFa": true },
-        { "f": "„Ich habe nicht gearbeitet.“", "o": ["مَن کار نَکَردَم.", "مَن نَکار کَردَم.", "مَن کار کَردَم."], "r": 0, "optFa": true },
-        { "f": "„Ich bin nicht nach Hause gekommen.“", "o": ["مَن به خانِه نیامَدَم.", "مَن به خانِه نَآمَدَم.", "مَن به خانِه آمَدَم."], "r": 0, "optFa": true },
-        { "f": "Was bedeutet das?", "fa": "دیروز کُجا رَفتی؟", "o": ["Wohin bist du gestern gegangen?", "Wann bist du gestern gegangen?", "Was hast du gestern gegessen?"], "r": 0 },
-        { "f": "„Gestern war ich sehr müde.“", "o": ["دیروز خِیلی خَستِه بودَم.", "دیروز خِیلی خَستِه هَستَم.", "دیروز خِیلی خَستِه داشتَم."], "r": 0, "optFa": true },
-        { "f": "„Ich bin um 7 Uhr aufgewacht.“", "o": ["ساعَتِ هَفت بیدار شُدَم.", "ساعَتِ هَفت بیدار شُدَن.", "ساعَتِ هَفت بیدار شُد."], "r": 0, "optFa": true }
-      ] } ] }
+      "aufgaben": [
+        {
+          "typ": "quiz",
+          "titel": "Das große Quiz: Verben & Präteritum",
+          "sek": 20,
+          "fragen": [
+            {
+              "f": "Welches Wort ist ein Infinitiv?",
+              "o": [
+                "رَفتَن",
+                "رَفتَم",
+                "رَفت"
+              ],
+              "r": 0,
+              "optFa": true
+            },
+            {
+              "f": "Was bedeutet das?",
+              "fa": "خوابیدَن",
+              "o": [
+                "schlafen",
+                "schreiben",
+                "sehen",
+                "essen"
+              ],
+              "r": 0
+            },
+            {
+              "f": "Was bedeutet das?",
+              "fa": "نِوِشتَن",
+              "o": [
+                "schreiben",
+                "lesen",
+                "kochen",
+                "trinken"
+              ],
+              "r": 0
+            },
+            {
+              "f": "Vergangenheitsstamm von خوردَن?",
+              "o": [
+                "خورد",
+                "خوردَن",
+                "خوردَم"
+              ],
+              "r": 0,
+              "optFa": true
+            },
+            {
+              "f": "„ich ging“",
+              "o": [
+                "مَن رَفتَم",
+                "مَن رَفت",
+                "مَن رَفتَن"
+              ],
+              "r": 0,
+              "optFa": true
+            },
+            {
+              "f": "„er / sie hat geschlafen“",
+              "o": [
+                "او خوابید",
+                "او خوابیدَم",
+                "او خوابیدَن"
+              ],
+              "r": 0,
+              "optFa": true
+            },
+            {
+              "f": "Was fehlt?",
+              "fa": "ما دیروز فیلم ___ .",
+              "o": [
+                "دیدیم",
+                "دیدَند",
+                "دیدید"
+              ],
+              "r": 0,
+              "optFa": true
+            },
+            {
+              "f": "Wer? – خوابیدیم",
+              "o": [
+                "wir",
+                "ihr",
+                "sie (Pl.)",
+                "ich"
+              ],
+              "r": 0
+            },
+            {
+              "f": "„Sie (Pl.) haben gekocht.“",
+              "o": [
+                "آنها پُختَند.",
+                "آنها پُخت.",
+                "آنها پُختید."
+              ],
+              "r": 0,
+              "optFa": true
+            },
+            {
+              "f": "„Ich habe nicht gearbeitet.“",
+              "o": [
+                "مَن کار نَکَردَم.",
+                "مَن نَکار کَردَم.",
+                "مَن کار کَردَم."
+              ],
+              "r": 0,
+              "optFa": true
+            },
+            {
+              "f": "„Ich bin nicht nach Hause gekommen.“",
+              "o": [
+                "مَن به خانِه نیامَدَم.",
+                "مَن به خانِه نَآمَدَم.",
+                "مَن به خانِه آمَدَم."
+              ],
+              "r": 0,
+              "optFa": true
+            },
+            {
+              "f": "Was bedeutet das?",
+              "fa": "دیروز کُجا رَفتی؟",
+              "o": [
+                "Wohin bist du gestern gegangen?",
+                "Wann bist du gestern gegangen?",
+                "Was hast du gestern gegessen?"
+              ],
+              "r": 0
+            },
+            {
+              "f": "„Gestern war ich sehr müde.“",
+              "o": [
+                "دیروز خِیلی خَستِه بودَم.",
+                "دیروز خِیلی خَستِه هَستَم.",
+                "دیروز خِیلی خَستِه داشتَم."
+              ],
+              "r": 0,
+              "optFa": true
+            },
+            {
+              "f": "„Ich bin um 7 Uhr aufgewacht.“",
+              "o": [
+                "ساعَتِ هَفت بیدار شُدَم.",
+                "ساعَتِ هَفت بیدار شُدَن.",
+                "ساعَتِ هَفت بیدار شُد."
+              ],
+              "r": 0,
+              "optFa": true
+            }
+          ]
+        }
+      ]
+    }
   ],
   "vorlagen": {
-    "gestern": { "felder": [
-      { "key": "auf", "frage": ["دیروز کِی بیدار شُدی؟", "Wann bist du gestern aufgewacht?"], "werte": [
-        ["ساعَتِ شِش بیدار شُدَم.", "6 Uhr"], ["ساعَتِ هَفت بیدار شُدَم.", "7 Uhr"], ["ساعَتِ هَشت بیدار شُدَم.", "8 Uhr"], ["ساعَتِ نُه بیدار شُدَم.", "9 Uhr"] ] },
-      { "key": "fruehstueck", "frage": ["صُبحانِه چه خوردی؟", "Was hast du zum Frühstück gegessen?"], "werte": [
-        ["نان و پَنیر خوردَم.", "Brot und Käse"], ["تُخم‌مُرغ خوردَم.", "Ei"], ["قَهوِه نوشیدَم.", "Kaffee getrunken"], ["صُبحانِه نَخوردَم.", "nicht gefrühstückt"] ] },
-      { "key": "wo", "frage": ["دیروز کُجا رَفتی؟", "Wohin bist du gestern gegangen?"], "werte": [
-        ["به دانِشگاه رَفتَم.", "Uni"], ["به کِتابخانِه رَفتَم.", "Bibliothek"], ["به پارک رَفتَم.", "Park"], ["به سینِما رَفتَم.", "Kino"] ] },
-      { "key": "arbeit", "frage": ["دیروز کار کَردی؟", "Hast du gestern gearbeitet?"], "werte": [
-        ["بَله، کار کَردَم.", "ja"], ["بَله، خِیلی کار کَردَم.", "viel"], ["نَه، کار نَکَردَم.", "nein"], ["نَه، دَرس خواندَم.", "nein, gelernt"] ] },
-      { "key": "abend", "frage": ["دیشَب چه کار کَردی؟", "Was hast du gestern Abend gemacht?"], "werte": [
-        ["فیلم دیدَم.", "Film"], ["کِتاب خواندَم.", "Buch"], ["شام پُختَم.", "gekocht"], ["نامِه نِوِشتَم.", "Brief"] ] },
-      { "key": "schlafen", "frage": ["دیشَب کِی خوابیدی؟", "Wann hast du gestern geschlafen?"], "werte": [
-        ["ساعَتِ نُه خوابیدَم.", "9 Uhr"], ["ساعَتِ دَه خوابیدَم.", "10 Uhr"], ["ساعَتِ یازدَه خوابیدَم.", "11 Uhr"], ["ساعَتِ دَوازدَه خوابیدَم.", "12 Uhr"] ] },
-      { "key": "muede", "frage": ["دیروز خَستِه بودی؟", "Warst du gestern müde?"], "werte": [
-        ["بَله، خِیلی خَستِه بودَم.", "sehr"], ["نَه، خَستِه نَبودَم.", "nein"], ["نَه، خوب بودَم.", "gut"] ] }
-    ] }
+    "gestern": {
+      "felder": [
+        {
+          "key": "auf",
+          "frage": [
+            "دیروز کِی بیدار شُدی؟",
+            "Wann bist du gestern aufgewacht?"
+          ],
+          "werte": [
+            [
+              "ساعَتِ شِش بیدار شُدَم.",
+              "6 Uhr"
+            ],
+            [
+              "ساعَتِ هَفت بیدار شُدَم.",
+              "7 Uhr"
+            ],
+            [
+              "ساعَتِ هَشت بیدار شُدَم.",
+              "8 Uhr"
+            ],
+            [
+              "ساعَتِ نُه بیدار شُدَم.",
+              "9 Uhr"
+            ]
+          ]
+        },
+        {
+          "key": "fruehstueck",
+          "frage": [
+            "صُبحانِه چه خوردی؟",
+            "Was hast du zum Frühstück gegessen?"
+          ],
+          "werte": [
+            [
+              "نان و پَنیر خوردَم.",
+              "Brot und Käse"
+            ],
+            [
+              "تُخم‌مُرغ خوردَم.",
+              "Ei"
+            ],
+            [
+              "قَهوِه نوشیدَم.",
+              "Kaffee getrunken"
+            ],
+            [
+              "صُبحانِه نَخوردَم.",
+              "nicht gefrühstückt"
+            ]
+          ]
+        },
+        {
+          "key": "wo",
+          "frage": [
+            "دیروز کُجا رَفتی؟",
+            "Wohin bist du gestern gegangen?"
+          ],
+          "werte": [
+            [
+              "به دانِشگاه رَفتَم.",
+              "Uni"
+            ],
+            [
+              "به کِتابخانِه رَفتَم.",
+              "Bibliothek"
+            ],
+            [
+              "به پارک رَفتَم.",
+              "Park"
+            ],
+            [
+              "به سینِما رَفتَم.",
+              "Kino"
+            ]
+          ]
+        },
+        {
+          "key": "arbeit",
+          "frage": [
+            "دیروز کار کَردی؟",
+            "Hast du gestern gearbeitet?"
+          ],
+          "werte": [
+            [
+              "بَله، کار کَردَم.",
+              "ja"
+            ],
+            [
+              "بَله، خِیلی کار کَردَم.",
+              "viel"
+            ],
+            [
+              "نَه، کار نَکَردَم.",
+              "nein"
+            ],
+            [
+              "نَه، دَرس خواندَم.",
+              "nein, gelernt"
+            ]
+          ]
+        },
+        {
+          "key": "abend",
+          "frage": [
+            "دیشَب چه کار کَردی؟",
+            "Was hast du gestern Abend gemacht?"
+          ],
+          "werte": [
+            [
+              "فیلم دیدَم.",
+              "Film"
+            ],
+            [
+              "کِتاب خواندَم.",
+              "Buch"
+            ],
+            [
+              "شام پُختَم.",
+              "gekocht"
+            ],
+            [
+              "نامِه نِوِشتَم.",
+              "Brief"
+            ]
+          ]
+        },
+        {
+          "key": "schlafen",
+          "frage": [
+            "دیشَب کِی خوابیدی؟",
+            "Wann hast du gestern geschlafen?"
+          ],
+          "werte": [
+            [
+              "ساعَتِ نُه خوابیدَم.",
+              "9 Uhr"
+            ],
+            [
+              "ساعَتِ دَه خوابیدَم.",
+              "10 Uhr"
+            ],
+            [
+              "ساعَتِ یازدَه خوابیدَم.",
+              "11 Uhr"
+            ],
+            [
+              "ساعَتِ دَوازدَه خوابیدَم.",
+              "12 Uhr"
+            ]
+          ]
+        },
+        {
+          "key": "muede",
+          "frage": [
+            "دیروز خَستِه بودی؟",
+            "Warst du gestern müde?"
+          ],
+          "werte": [
+            [
+              "بَله، خِیلی خَستِه بودَم.",
+              "sehr"
+            ],
+            [
+              "نَه، خَستِه نَبودَم.",
+              "nein"
+            ],
+            [
+              "نَه، خوب بودَم.",
+              "gut"
+            ]
+          ]
+        }
+      ]
+    }
   }
 }
