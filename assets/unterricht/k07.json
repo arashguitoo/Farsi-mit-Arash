@@ -1,0 +1,1015 @@
+{
+ "lektion": "k07",
+ "titel": "Eine Reise planen – Konflikte lösen (90 Min.)",
+ "minuten": 90,
+ "bloecke": [
+  {
+   "id": "start",
+   "icon": "🧳",
+   "titel": "Einstieg & Teams",
+   "minuten": 10,
+   "tafel": [
+    {
+     "ref": "k07/s0/0"
+    },
+    {
+     "titel": "Heute: Reisen, streiten, einigen",
+     "text": "<p>Heute planen wir Reisen – und es gibt <b>Konflikte</b>! Zwei Rollenspiele mit Geheimaufträgen: erst unter Freunden („Wohin fahren wir?“), dann an der Hotelrezeption. Punkte gibt es fürs Zuhören, fürs Vorlesen und für gute Lösungen.</p><p class='klein'>Bitte zuerst <b>2 Teams</b> bilden (bei 6–7 TN: 3 + 3 / 3 + 4).</p>",
+     "stil": "merke"
+    }
+   ],
+   "aufgaben": [
+    {
+     "typ": "sprechen",
+     "titel": "Blitzrunde: Reisen",
+     "text": "Wer gezogen wird, antwortet in zwei, drei Sätzen – und fragt dann eine Person aus dem anderen Team.",
+     "saetze": [
+      [
+       "آخرین سفرت کجا بود؟",
+       "Wo war deine letzte Reise? (ugs.)"
+      ],
+      [
+       "با هواپیما سفر می‌کنی یا با قطار؟ چرا؟",
+       "Reist du mit dem Flugzeug oder dem Zug? Warum?"
+      ],
+      [
+       "هتل یا چادر؟",
+       "Hotel oder Zelt?"
+      ],
+      [
+       "بهترین خاطره‌ی سفرت چیه؟",
+       "Was ist deine schönste Reiseerinnerung? (ugs.)"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "woerter",
+   "icon": "⚔️",
+   "titel": "Wort-Duell",
+   "minuten": 5,
+   "tafel": [
+    {
+     "ref": "k07/w0/0"
+    },
+    {
+     "ref": "k07/w1/0"
+    },
+    {
+     "ref": "k07/w2/0"
+    },
+    {
+     "ref": "k07/w3/0"
+    }
+   ],
+   "aufgaben": [
+    {
+     "ref": "k07/w0/5"
+    },
+    {
+     "ref": "k07/w1/6"
+    },
+    {
+     "ref": "k07/w2/6"
+    },
+    {
+     "ref": "k07/w3/6"
+    },
+    {
+     "ref": "k07/a/0"
+    }
+   ]
+  },
+  {
+   "id": "redemittel",
+   "icon": "💬",
+   "titel": "Vorschlagen, zustimmen, ablehnen",
+   "minuten": 10,
+   "tafel": [
+    {
+     "ref": "k07/r1/0"
+    },
+    {
+     "ref": "k07/r1/1"
+    },
+    {
+     "ref": "k07/r1/2"
+    },
+    {
+     "ref": "k07/r2/0"
+    }
+   ],
+   "aufgaben": [
+    {
+     "ref": "k07/r1/5"
+    },
+    {
+     "ref": "k07/r2/1"
+    },
+    {
+     "ref": "k07/r2/2"
+    },
+    {
+     "ref": "k07/r2/4"
+    },
+    {
+     "ref": "k07/b/1"
+    }
+   ]
+  },
+  {
+   "id": "vorlesen",
+   "icon": "📢",
+   "titel": "Vorlesen & entscheiden: Wer reist wohin? Was tun?",
+   "minuten": 15,
+   "tafel": [
+    {
+     "titel": "📢 Eine/r liest – alle entscheiden",
+     "text": "<p>Reihum liest eine Person einen kurzen Text laut vor. Die anderen hören zu und wählen auf dem Handy. Erst: <b>Welche Reise passt zu wem?</b> Dann: <b>Ein Problem auf Reisen – was ist die beste Reaktion?</b></p><p class='klein'>Laut, langsam, deutlich lesen – wählt die Mehrheit richtig, bekommt auch das Team der vorlesenden Person einen Punkt.</p>",
+     "stil": "merke"
+    }
+   ],
+   "aufgaben": [
+    {
+     "typ": "vorlesen",
+     "titel": "Wer reist wohin? Was tun?",
+     "runden": [
+      {
+       "frage": "Welche Reise passt zu dieser Person?",
+       "optionen": [
+        {
+         "emoji": "🏜️",
+         "fa": "سه شب در یک بوم‌گردی در کویر نزدیک یزد، با شترسواری و آسمان پرستاره.",
+         "de": "Drei Nächte in einem Gästehaus in der Wüste bei Yazd, mit Kamelreiten und Sternenhimmel."
+        },
+        {
+         "emoji": "🌲",
+         "fa": "یک هفته در گیلان: جنگل، روستاهای کوهستانی و غذای محلی، نزدیک دریای خزر.",
+         "de": "Eine Woche in Gilan: Wald, Bergdörfer und lokale Küche, nahe dem Kaspischen Meer."
+        },
+        {
+         "emoji": "🏛️",
+         "fa": "تور فرهنگی اصفهان و شیراز، با هتل چهارستاره و راهنمای تور.",
+         "de": "Kulturreise Isfahan und Schiras, mit Vier-Sterne-Hotel und Reiseleitung."
+        },
+        {
+         "emoji": "🏖️",
+         "fa": "پنج روز در جزیره‌ی کیش: ساحل، غواصی و مرکز خرید.",
+         "de": "Fünf Tage auf der Insel Kisch: Strand, Tauchen und Einkaufszentren."
+        }
+       ],
+       "r": 1,
+       "text": [
+        {
+         "fa": "من و دوستم عاشق طبیعت هستیم.",
+         "tr": "man wa dūstam ʿāschegh-e tabīʿat hastīm.",
+         "de": "Mein Freund / meine Freundin und ich lieben die Natur."
+        },
+        {
+         "fa": "دوست داریم ساعت‌ها در جنگل پیاده‌روی کنیم، حتی زیر باران.",
+         "tr": "dūst dārīm sāʿathā dar dschangal piyāderawī konīm, hattā zīr-e bārān.",
+         "de": "Wir wandern gern stundenlang im Wald, sogar im Regen."
+        },
+        {
+         "fa": "غذای محلی هم برایمان خیلی مهم است.",
+         "tr": "ghazā-ye mahallī ham barāyemān cheylī mohem ast.",
+         "de": "Lokales Essen ist uns auch sehr wichtig."
+        }
+       ]
+      },
+      {
+       "frage": "Welche Reise passt zu dieser Person?",
+       "optionen": [
+        {
+         "emoji": "🏜️",
+         "fa": "سه شب در یک بوم‌گردی در کویر نزدیک یزد، با شترسواری و آسمان پرستاره.",
+         "de": "Drei Nächte in einem Gästehaus in der Wüste bei Yazd, mit Kamelreiten und Sternenhimmel."
+        },
+        {
+         "emoji": "🌲",
+         "fa": "یک هفته در گیلان: جنگل، روستاهای کوهستانی و غذای محلی، نزدیک دریای خزر.",
+         "de": "Eine Woche in Gilan: Wald, Bergdörfer und lokale Küche, nahe dem Kaspischen Meer."
+        },
+        {
+         "emoji": "🏛️",
+         "fa": "تور فرهنگی اصفهان و شیراز، با هتل چهارستاره و راهنمای تور.",
+         "de": "Kulturreise Isfahan und Schiras, mit Vier-Sterne-Hotel und Reiseleitung."
+        },
+        {
+         "emoji": "🏖️",
+         "fa": "پنج روز در جزیره‌ی کیش: ساحل، غواصی و مرکز خرید.",
+         "de": "Fünf Tage auf der Insel Kisch: Strand, Tauchen und Einkaufszentren."
+        }
+       ],
+       "r": 3,
+       "text": [
+        {
+         "fa": "ما دو بچه‌ی کوچک داریم که عاشق آب و دریا هستند.",
+         "tr": "mā do batsche-ye kūtschak dārīm ke ʿāschegh-e āb wa daryā hastand.",
+         "de": "Wir haben zwei kleine Kinder, die Wasser und Meer lieben."
+        },
+        {
+         "fa": "هوای گرم را دوست داریم و می‌خواهیم استراحت کنیم.",
+         "tr": "hawā-ye garm rā dūst dārīm wa mīchāhīm esterāhat konīm.",
+         "de": "Wir mögen warmes Wetter und wollen uns ausruhen."
+        },
+        {
+         "fa": "شاید یک روز هم برای خرید برویم.",
+         "tr": "schāyad yek rūz ham barā-ye charīd berawīm.",
+         "de": "Vielleicht gehen wir auch einen Tag einkaufen."
+        }
+       ]
+      },
+      {
+       "frage": "Welche Reise passt zu dieser Person?",
+       "optionen": [
+        {
+         "emoji": "🏜️",
+         "fa": "سه شب در یک بوم‌گردی در کویر نزدیک یزد، با شترسواری و آسمان پرستاره.",
+         "de": "Drei Nächte in einem Gästehaus in der Wüste bei Yazd, mit Kamelreiten und Sternenhimmel."
+        },
+        {
+         "emoji": "🌲",
+         "fa": "یک هفته در گیلان: جنگل، روستاهای کوهستانی و غذای محلی، نزدیک دریای خزر.",
+         "de": "Eine Woche in Gilan: Wald, Bergdörfer und lokale Küche, nahe dem Kaspischen Meer."
+        },
+        {
+         "emoji": "🏛️",
+         "fa": "تور فرهنگی اصفهان و شیراز، با هتل چهارستاره و راهنمای تور.",
+         "de": "Kulturreise Isfahan und Schiras, mit Vier-Sterne-Hotel und Reiseleitung."
+        },
+        {
+         "emoji": "🏖️",
+         "fa": "پنج روز در جزیره‌ی کیش: ساحل، غواصی و مرکز خرید.",
+         "de": "Fünf Tage auf der Insel Kisch: Strand, Tauchen und Einkaufszentren."
+        }
+       ],
+       "r": 0,
+       "text": [
+        {
+         "fa": "من عکاس هستم و دنبال آسمان شب و ستاره‌ها هستم.",
+         "tr": "man ʿakkās hastam wa donbāl-e āsemān-e schab wa setārehā hastam.",
+         "de": "Ich bin Fotograf/in und suche den Nachthimmel und die Sterne."
+        },
+        {
+         "fa": "شهرهای شلوغ را دوست ندارم؛ سکوت برایم مهم است.",
+         "tr": "schahrhā-ye scholūgh rā dūst nadāram; sokūt barāyam mohem ast.",
+         "de": "Volle Städte mag ich nicht; Stille ist mir wichtig."
+        },
+        {
+         "fa": "یک تجربه‌ی ماجراجویانه هم بد نیست.",
+         "tr": "yek tadschrobe-ye mādscharādschūyāne ham bad nīst.",
+         "de": "Ein kleines Abenteuer wäre auch nicht schlecht."
+        }
+       ]
+      },
+      {
+       "frage": "Welche Reise passt zu dieser Person?",
+       "optionen": [
+        {
+         "emoji": "🏜️",
+         "fa": "سه شب در یک بوم‌گردی در کویر نزدیک یزد، با شترسواری و آسمان پرستاره.",
+         "de": "Drei Nächte in einem Gästehaus in der Wüste bei Yazd, mit Kamelreiten und Sternenhimmel."
+        },
+        {
+         "emoji": "🌲",
+         "fa": "یک هفته در گیلان: جنگل، روستاهای کوهستانی و غذای محلی، نزدیک دریای خزر.",
+         "de": "Eine Woche in Gilan: Wald, Bergdörfer und lokale Küche, nahe dem Kaspischen Meer."
+        },
+        {
+         "emoji": "🏛️",
+         "fa": "تور فرهنگی اصفهان و شیراز، با هتل چهارستاره و راهنمای تور.",
+         "de": "Kulturreise Isfahan und Schiras, mit Vier-Sterne-Hotel und Reiseleitung."
+        },
+        {
+         "emoji": "🏖️",
+         "fa": "پنج روز در جزیره‌ی کیش: ساحل، غواصی و مرکز خرید.",
+         "de": "Fünf Tage auf der Insel Kisch: Strand, Tauchen und Einkaufszentren."
+        }
+       ],
+       "r": 2,
+       "text": [
+        {
+         "fa": "من معلم تاریخ بودم و حالا بازنشسته‌ام.",
+         "tr": "man moʿallem-e tārīch būdam wa hālā bāzneschasteam.",
+         "de": "Ich war Geschichtslehrer/in und bin jetzt in Rente."
+        },
+        {
+         "fa": "به معماری قدیمی و باغ‌های ایرانی خیلی علاقه دارم.",
+         "tr": "be meʿmārī-ye ghadīmī wa bāghhā-ye īrānī cheylī ʿalāghe dāram.",
+         "de": "Ich interessiere mich sehr für alte Architektur und persische Gärten."
+        },
+        {
+         "fa": "دوست دارم در هتل راحت بخوابم و کسی همه چیز را برایم توضیح بدهد.",
+         "tr": "dūst dāram dar hotel rāhat bechābam wa kasī hame tschīz rā barāyam tousīh bedahad.",
+         "de": "Ich schlafe gern bequem im Hotel, und jemand soll mir alles erklären."
+        }
+       ]
+      },
+      {
+       "frage": "Was ist die beste Reaktion der Rezeption?",
+       "r": 0,
+       "optionen": [
+        {
+         "emoji": "🤝",
+         "fa": "واقعاً متأسفم. در هتل نزدیک یک اتاق برایتان پیدا می‌کنم و تاکسی را هم ما حساب می‌کنیم.",
+         "de": "Es tut mir wirklich leid. Ich finde Ihnen ein Zimmer im Hotel nebenan, und wir zahlen das Taxi."
+        },
+        {
+         "emoji": "😒",
+         "fa": "مشکل خودتان است. باید زودتر می‌آمدید.",
+         "de": "Das ist Ihr Problem. Sie hätten früher kommen müssen."
+        },
+        {
+         "emoji": "🍳",
+         "fa": "صبحانه ساعت هفت تا ده است.",
+         "de": "Frühstück gibt es von sieben bis zehn."
+        },
+        {
+         "emoji": "🛏️",
+         "fa": "یک اتاق یک‌تخته داریم، ولی قیمتش دو برابر است.",
+         "de": "Wir haben ein Einzelzimmer, aber es kostet das Doppelte."
+        }
+       ],
+       "text": [
+        {
+         "fa": "سلام. من دو هفته پیش یک اتاق دوتخته رزرو کردم.",
+         "tr": "salām. man do hafte pīsch yek otāgh-e dotachte rezerw kardam.",
+         "de": "Hallo. Ich habe vor zwei Wochen ein Doppelzimmer reserviert."
+        },
+        {
+         "fa": "ولی شما می‌گویید اتاق خالی ندارید!",
+         "tr": "walī schomā mīgūyīd otāgh-e chālī nadārīd!",
+         "de": "Aber Sie sagen, Sie haben kein Zimmer frei!"
+        },
+        {
+         "fa": "ساعت یازده شب است و من خیلی خسته‌ام.",
+         "tr": "sāʿat yāzdah-e schab ast wa man cheylī chasteam.",
+         "de": "Es ist elf Uhr nachts und ich bin sehr müde."
+        }
+       ]
+      },
+      {
+       "frage": "Welcher Kompromiss passt am besten?",
+       "r": 2,
+       "optionen": [
+        {
+         "emoji": "⛺",
+         "fa": "چادر خیلی ارزان است، پس باید در چادر بخوابی.",
+         "de": "Das Zelt ist sehr billig, also musst du im Zelt schlafen."
+        },
+        {
+         "emoji": "🗳️",
+         "fa": "بیا رأی‌گیری کنیم – من و خودم موافقیم!",
+         "de": "Lass uns abstimmen – ich und ich sind dafür!"
+        },
+        {
+         "emoji": "🌌",
+         "fa": "باشه، شب‌ها در بوم‌گردی می‌خوابیم و فقط یک شب ستاره‌ها را در کویر تماشا می‌کنیم.",
+         "de": "Okay, wir schlafen im Gästehaus und schauen nur einen Abend die Sterne in der Wüste an."
+        },
+        {
+         "emoji": "✈️",
+         "fa": "پرواز ساعت شش صبح است.",
+         "de": "Der Flug ist um sechs Uhr morgens."
+        }
+       ],
+       "text": [
+        {
+         "fa": "من نمی‌خواهم در چادر بخوابم!",
+         "tr": "man nemīchāham dar tschādor bechābam!",
+         "de": "Ich will nicht im Zelt schlafen!"
+        },
+        {
+         "fa": "پارسال در کویر خیلی سردم شد و تمام شب نخوابیدم.",
+         "tr": "pārsāl dar kawīr cheylī sardam schod wa tamām-e schab nachābīdam.",
+         "de": "Letztes Jahr war mir in der Wüste sehr kalt und ich habe die ganze Nacht nicht geschlafen."
+        },
+        {
+         "fa": "ولی ستاره‌ها را خیلی دوست دارم.",
+         "tr": "walī setārehā rā cheylī dūst dāram.",
+         "de": "Aber die Sterne mag ich sehr."
+        }
+       ]
+      },
+      {
+       "frage": "Was ist eine gute Lösung?",
+       "r": 1,
+       "optionen": [
+        {
+         "emoji": "🏠",
+         "fa": "سفر را لغو می‌کنیم و به خانه برمی‌گردیم.",
+         "de": "Wir sagen die Reise ab und fahren nach Hause."
+        },
+        {
+         "emoji": "📞",
+         "fa": "به هتل زنگ می‌زنیم و می‌گوییم دیرتر می‌رسیم.",
+         "de": "Wir rufen im Hotel an und sagen, dass wir später ankommen."
+        },
+        {
+         "emoji": "🧴",
+         "fa": "در فرودگاه ضدآفتاب می‌خریم.",
+         "de": "Wir kaufen am Flughafen Sonnencreme."
+        },
+        {
+         "emoji": "😡",
+         "fa": "سر کارمند فرودگاه داد می‌زنیم.",
+         "de": "Wir schreien den Flughafenmitarbeiter an."
+        }
+       ],
+       "text": [
+        {
+         "fa": "پرواز ما چهار ساعت تأخیر دارد.",
+         "tr": "parwāz-e mā tschahār sāʿat taʾchīr dārad.",
+         "de": "Unser Flug hat vier Stunden Verspätung."
+        },
+        {
+         "fa": "ما امشب در شیراز هتل رزرو کرده‌ایم.",
+         "tr": "mā emschab dar schīrāz hotel rezerw kardeīm.",
+         "de": "Wir haben heute Nacht ein Hotel in Schiras gebucht."
+        },
+        {
+         "fa": "نمی‌خواهیم اتاقمان را از دست بدهیم.",
+         "tr": "nemīchāhīm otāghemān rā az dast bedahīm.",
+         "de": "Wir wollen unser Zimmer nicht verlieren."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "ref": "k07/x/1"
+    }
+   ]
+  },
+  {
+   "id": "konflikt1",
+   "icon": "🗺️",
+   "titel": "Konflikt 1: Wohin fahren wir?",
+   "minuten": 20,
+   "tafel": [
+    {
+     "ref": "k07/d/1"
+    },
+    {
+     "titel": "🎭 So läuft das Rollenspiel",
+     "text": "<p>Jedes Team ist eine Reisegruppe. Jede/r hat eine <b>Rolle</b> mit eigenen Wünschen – und zwei <b>Geheimaufträge</b>. Ihr habt 8 Minuten, um euch zu einigen: <b>Ziel, Unterkunft, Verkehrsmittel</b>.</p><p>Dann spielt jede Gruppe ihr Gespräch vor (3 Min.) und eine Person stellt den Plan vor: <span class='fa'>ما تصمیم گرفتیم …</span></p><p class='klein'>Das andere Team hakt an, welche Geheimaufträge es gehört hat.</p>",
+     "stil": "merke"
+    }
+   ],
+   "aufgaben": [
+    {
+     "typ": "rolle",
+     "titel": "Konflikt 1: Wohin fahren wir?",
+     "anzahl": 2,
+     "situation": [
+      "یک هفته سفر به ایران",
+      "Ihr seid Freunde und plant eine Woche Iran im Frühling. Budget: 500 Euro pro Person. Einigt euch auf Ziel, Unterkunft und Verkehrsmittel – am Ende stellt eine Person euren Plan vor: „ما تصمیم گرفتیم …“"
+     ],
+     "rollen": [
+      {
+       "icon": "🏜️",
+       "name": [
+        "ماجراجو",
+        "Abenteurer/in"
+       ],
+       "aufgabe": "Du willst Abenteuer: Wüste, Berge, im Zelt schlafen. Überzeuge die anderen – aber am Ende braucht ihr einen gemeinsamen Plan.",
+       "redemittel": [
+        [
+         "چطوره بریم یزد؟",
+         "Wie wäre es mit Yazd?"
+        ],
+        [
+         "پیشنهاد من اینه که …",
+         "Mein Vorschlag ist …"
+        ],
+        [
+         "من پایه‌م!",
+         "Ich bin dabei!"
+        ],
+        [
+         "بیا رأی‌گیری کنیم!",
+         "Lass uns abstimmen!"
+        ]
+       ],
+       "missionen": [
+        [
+         "یه شب تو کویر زیر ستاره‌ها بخوابیم!",
+         "will eine Nacht unter den Sternen in der Wüste schlafen"
+        ],
+        [
+         "هتل گرون برای چیه؟",
+         "findet teure Hotels unnötig"
+        ],
+        [
+         "من کوله‌پشتی و کیسه‌خواب دارم.",
+         "erzählt, dass er/sie Rucksack und Schlafsack hat"
+        ],
+        [
+         "بیاید با اتوبوس بریم، ماجراجویی‌تره!",
+         "will mit dem Bus fahren, weil es abenteuerlicher ist"
+        ],
+        [
+         "دماوند رو هم ببینیم!",
+         "will auch den Damavand sehen"
+        ],
+        [
+         "عکس یادگاری با شتر می‌خوام!",
+         "will ein Erinnerungsfoto mit einem Kamel"
+        ]
+       ]
+      },
+      {
+       "icon": "🏨",
+       "name": [
+        "راحت‌طلب",
+        "Komfort-Fan"
+       ],
+       "aufgabe": "Du willst Kultur und Komfort: Isfahan, Schiras, ein gutes Hotel mit Frühstück. Zelt? Auf keinen Fall!",
+       "redemittel": [
+        [
+         "راستش زیاد موافق نیستم، چون …",
+         "Ehrlich gesagt bin ich nicht ganz einverstanden, weil …"
+        ],
+        [
+         "بد نیست، ولی به نظرم … بهتره.",
+         "Nicht schlecht, aber ich finde … besser."
+        ],
+        [
+         "ترجیح می‌دم …",
+         "Ich würde lieber …"
+        ]
+       ],
+       "missionen": [
+        [
+         "من بدون دوش آب گرم نمی‌تونم!",
+         "sagt, dass er/sie ohne heiße Dusche nicht kann"
+        ],
+        [
+         "تخت جمشید رو حتماً باید ببینیم.",
+         "besteht auf Persepolis"
+        ],
+        [
+         "صبحونه هم حساب باشه.",
+         "will, dass Frühstück inklusive ist"
+        ],
+        [
+         "با هواپیما بریم، سریع‌تره.",
+         "will fliegen, weil es schneller ist"
+        ],
+        [
+         "پارسال تو چادر خیلی سردم شد.",
+         "erzählt, dass er/sie letztes Jahr im Zelt gefroren hat"
+        ],
+        [
+         "یه اتاق رو به حیاط می‌خوام.",
+         "will ein Zimmer zum Innenhof"
+        ]
+       ]
+      },
+      {
+       "icon": "💰",
+       "name": [
+        "حسابدار گروه",
+        "Sparfuchs (Kasse)"
+       ],
+       "aufgabe": "Du verwaltest das Budget – 500 Euro pro Person, mehr geht nicht. Prüfe jeden Vorschlag: Was kostet das?",
+       "redemittel": [
+        [
+         "این خیلی گرونه!",
+         "Das ist viel zu teuer!"
+        ],
+        [
+         "بودجه‌مون محدوده.",
+         "Unser Budget ist begrenzt."
+        ],
+        [
+         "هر نفر چقدر باید بده؟",
+         "Wie viel muss jede/r zahlen?"
+        ]
+       ],
+       "missionen": [
+        [
+         "مسافرخونه خیلی ارزون‌تره.",
+         "sagt, dass eine einfache Pension viel billiger ist"
+        ],
+        [
+         "بلیت رفت و برگشت ارزون‌تره.",
+         "sagt, dass Hin und zurück billiger ist"
+        ],
+        [
+         "غذا رو خودمون درست کنیم!",
+         "schlägt vor, selbst zu kochen"
+        ],
+        [
+         "بیمه‌ی مسافرتی یادتون نره!",
+         "erinnert an die Reiseversicherung"
+        ],
+        [
+         "با قطار بریم، ارزون و راحته.",
+         "schlägt den Zug vor"
+        ],
+        [
+         "من حساب همه‌ی خرج‌ها رو نگه می‌دارم.",
+         "sagt, dass er/sie alle Ausgaben aufschreibt"
+        ]
+       ]
+      },
+      {
+       "icon": "📸",
+       "name": [
+        "عکاس گروه",
+        "Fotograf/in"
+       ],
+       "aufgabe": "Du bist die Fotografin / der Fotograf der Gruppe und willst die schönsten Orte zur besten Zeit sehen – Sonnenaufgang, Sonnenuntergang …",
+       "redemittel": [
+        [
+         "برام فرقی نمی‌کنه، فقط …",
+         "Mir ist es egal, nur …"
+        ],
+        [
+         "فکر خوبیه!",
+         "Gute Idee!"
+        ],
+        [
+         "بیاید اول بریم …",
+         "Lasst uns zuerst nach … fahren."
+        ]
+       ],
+       "missionen": [
+        [
+         "باید ساعت پنج صبح بیدار شیم!",
+         "sagt, dass alle um 5 Uhr aufstehen müssen"
+        ],
+        [
+         "غروب کویر بی‌نظیره.",
+         "schwärmt vom Sonnenuntergang in der Wüste"
+        ],
+        [
+         "روستای ابیانه خیلی دیدنیه.",
+         "schlägt das Dorf Abyaneh vor"
+        ],
+        [
+         "شارژرم رو یادم رفت!",
+         "hat das Ladegerät vergessen"
+        ],
+        [
+         "بیاید یه عکس دسته‌جمعی بگیریم.",
+         "will ein Gruppenfoto machen"
+        ],
+        [
+         "منظره‌ی دریای خزر رو دوست دارم.",
+         "mag die Aussicht aufs Kaspische Meer"
+        ]
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "konflikt2",
+   "icon": "🛎️",
+   "titel": "Konflikt 2: Ärger an der Hotelrezeption",
+   "minuten": 20,
+   "tafel": [
+    {
+     "ref": "k07/d2/2"
+    },
+    {
+     "titel": "🎭 Ärger an der Rezeption",
+     "text": "<p>Neue Rollen, neue Geheimaufträge: <b>Gast</b>, <b>Rezeption</b>, <b>Hotelmanager/in</b> (und bei 4 Personen die <b>Reisebegleitung</b>). Der Konflikt muss gelöst werden – aber jede Rolle hat eigene Grenzen.</p><p class='klein'>Tipp: Erst die Rollen kurz in der Gruppe ausprobieren, dann vorspielen.</p>",
+     "stil": "merke"
+    }
+   ],
+   "aufgaben": [
+    {
+     "ref": "k07/d2/1"
+    },
+    {
+     "typ": "rolle",
+     "titel": "Konflikt 2: Ärger an der Hotelrezeption",
+     "anzahl": 2,
+     "situation": [
+      "مشکل در هتل",
+      "Schiras, 23 Uhr. Ein Gast kommt nach einer langen Reise an – aber das reservierte Zimmer ist vergeben. Findet eine Lösung, mit der alle leben können."
+     ],
+     "rollen": [
+      {
+       "icon": "😤",
+       "name": [
+        "مهمان",
+        "Gast"
+       ],
+       "aufgabe": "Du hast vor zwei Wochen ein Doppelzimmer mit Frühstück reserviert und bezahlt. Du bist müde und verärgert. Du willst heute Nacht ein gutes Zimmer – und eine Entschädigung.",
+       "redemittel": [
+        [
+         "من دو هفته پیش رزرو کردم!",
+         "Ich habe vor zwei Wochen reserviert!"
+        ],
+        [
+         "این اصلاً قابل قبول نیست.",
+         "Das ist überhaupt nicht akzeptabel."
+        ],
+        [
+         "مدیرتون کجاست؟",
+         "Wo ist Ihr Chef / Ihre Chefin?"
+        ],
+        [
+         "پس حداقل …",
+         "Dann wenigstens …"
+        ]
+       ],
+       "missionen": [
+        [
+         "کد رزرو من اینه: …",
+         "nennt die Reservierungsnummer"
+        ],
+        [
+         "فردا صبح زود پرواز دارم.",
+         "sagt, dass er/sie morgen früh einen Flug hat"
+        ],
+        [
+         "پولم رو پس می‌خوام!",
+         "will das Geld zurück"
+        ],
+        [
+         "صبحونه باید مجانی باشه.",
+         "fordert ein kostenloses Frühstück"
+        ],
+        [
+         "تو اینترنت نظر بد می‌نویسم!",
+         "droht mit einer schlechten Online-Bewertung"
+        ],
+        [
+         "اتاق کنار آسانسور نمی‌خوام، سر و صدا داره.",
+         "will kein Zimmer neben dem Aufzug"
+        ]
+       ]
+      },
+      {
+       "icon": "🛎️",
+       "name": [
+        "پذیرش",
+        "Rezeption"
+       ],
+       "aufgabe": "Das Hotel ist ausgebucht – ein Fehler im System. Bleib höflich, entschuldige dich und finde eine Lösung. Du darfst ein Upgrade oder ein Abendessen anbieten, aber kein Geld zurückgeben.",
+       "redemittel": [
+        [
+         "واقعاً متأسفم.",
+         "Es tut mir wirklich leid."
+        ],
+        [
+         "یه لحظه اجازه بدید بررسی کنم.",
+         "Einen Moment, ich prüfe das."
+        ],
+        [
+         "یه پیشنهاد دارم: …",
+         "Ich habe einen Vorschlag: …"
+        ]
+       ],
+       "missionen": [
+        [
+         "سیستم ما مشکل داشت.",
+         "erklärt, dass das System einen Fehler hatte"
+        ],
+        [
+         "یه سوئیت خالی داریم، ولی گرون‌تره.",
+         "bietet eine teurere Suite an"
+        ],
+        [
+         "شام امشب مهمون ما هستید.",
+         "lädt zum Abendessen ein"
+        ],
+        [
+         "تاکسی تا هتل بغلی رو ما حساب می‌کنیم.",
+         "bezahlt das Taxi zum Hotel nebenan"
+        ],
+        [
+         "کارت شناسایی‌تون رو لطفاً.",
+         "bittet um den Ausweis"
+        ],
+        [
+         "فردا صبح اتاقتون آماده‌ست.",
+         "verspricht ein Zimmer für morgen früh"
+        ]
+       ]
+      },
+      {
+       "icon": "👔",
+       "name": [
+        "مدیر هتل",
+        "Hotelmanager/in"
+       ],
+       "aufgabe": "Du kommst dazu. Du willst den Gast zufriedenstellen – aber das Hotel soll nicht zu viel verlieren.",
+       "redemittel": [
+        [
+         "از طرف هتل عذرخواهی می‌کنم.",
+         "Im Namen des Hotels entschuldige ich mich."
+        ],
+        [
+         "بیاید با هم یه راه حل پیدا کنیم.",
+         "Lassen Sie uns zusammen eine Lösung finden."
+        ],
+        [
+         "این بهترین پیشنهاد ماست.",
+         "Das ist unser bestes Angebot."
+        ]
+       ],
+       "missionen": [
+        [
+         "یه شب مجانی برای سفر بعدی‌تون.",
+         "bietet eine Gratis-Nacht für die nächste Reise an"
+        ],
+        [
+         "این اولین باره که این مشکل پیش اومده.",
+         "sagt, dass das zum ersten Mal passiert"
+        ],
+        [
+         "همکارم تازه‌کاره.",
+         "entschuldigt sich mit einem neuen Kollegen"
+        ],
+        [
+         "لطفاً آروم‌تر صحبت کنید، مهمون‌ها خوابن.",
+         "bittet, leiser zu sprechen, weil Gäste schlafen"
+        ],
+        [
+         "صبحونه‌ی فردا مجانیه.",
+         "sagt, dass das Frühstück morgen gratis ist"
+        ],
+        [
+         "شماره‌تون رو بدید، فردا زنگ می‌زنم.",
+         "will die Telefonnummer, um morgen anzurufen"
+        ]
+       ]
+      },
+      {
+       "icon": "👫",
+       "name": [
+        "همسفر",
+        "Reisebegleitung"
+       ],
+       "aufgabe": "Du reist mit dem Gast. Du willst nur noch schlafen – jede Lösung ist dir recht, Hauptsache schnell.",
+       "redemittel": [
+        [
+         "برام فرقی نمی‌کنه، فقط زود!",
+         "Mir egal, nur schnell!"
+        ],
+        [
+         "بیا قبول کنیم.",
+         "Lass uns annehmen."
+        ]
+       ],
+       "missionen": [
+        [
+         "من دیگه نمی‌تونم سرپا وایسم.",
+         "kann sich kaum noch auf den Beinen halten"
+        ],
+        [
+         "هتل بغلی هم خوبه.",
+         "findet das Hotel nebenan auch gut"
+        ],
+        [
+         "شام نخوردیم، گرسنه‌ایم.",
+         "sagt, dass sie noch nicht gegessen haben"
+        ],
+        [
+         "دعوا نکنیم، خواهش می‌کنم.",
+         "bittet, nicht zu streiten"
+        ],
+        [
+         "چمدونامون خیلی سنگینه.",
+         "sagt, dass die Koffer sehr schwer sind"
+        ],
+        [
+         "فردا صبحونه ساعت چنده؟",
+         "fragt, wann morgen Frühstück ist"
+        ]
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "finale",
+   "icon": "🏆",
+   "titel": "Finale: Reise-Quiz",
+   "minuten": 10,
+   "tafel": [],
+   "aufgaben": [
+    {
+     "typ": "quiz",
+     "titel": "Finale: Reise-Quiz",
+     "sek": 20,
+     "fragen": [
+      {
+       "f": "Was bedeutet das?",
+       "fa": "من پایه‌م!",
+       "o": [
+        "Ich bin dabei!",
+        "Ich bin müde!",
+        "Ich habe Hunger!"
+       ],
+       "r": 0
+      },
+      {
+       "f": "„Mir ist es egal.“",
+       "o": [
+        "برام فرقی نمی‌کنه.",
+        "فکر خوبیه!",
+        "بیا رأی‌گیری کنیم!"
+       ],
+       "r": 0,
+       "optFa": true
+      },
+      {
+       "f": "Höflich widersprechen:",
+       "o": [
+        "راستش زیاد موافق نیستم، چون …",
+        "مشکل خودتونه!",
+        "من پایه‌م!"
+       ],
+       "r": 0,
+       "optFa": true
+      },
+      {
+       "f": "Was bedeutet das?",
+       "fa": "بوم‌گردی",
+       "o": [
+        "Gästehaus (Ökotourismus)",
+        "Reiseversicherung",
+        "Rucksack",
+        "Wüste"
+       ],
+       "r": 0
+      },
+      {
+       "f": "„Hin und zurück“",
+       "o": [
+        "رفت و برگشت",
+        "یک‌طرفه",
+        "تأخیر"
+       ],
+       "r": 0,
+       "optFa": true
+      },
+      {
+       "f": "An der Rezeption: „Ist Frühstück inklusive?“",
+       "o": [
+        "صبحونه هم حسابه؟",
+        "صبحونه کجاست؟",
+        "صبحونه نخوردم."
+       ],
+       "r": 0,
+       "optFa": true
+      },
+      {
+       "f": "Was bedeutet das?",
+       "fa": "پرواز تأخیر داره؟",
+       "o": [
+        "Hat der Flug Verspätung?",
+        "Ist der Flug ausgebucht?",
+        "Wann ist der Flug?"
+       ],
+       "r": 0
+      },
+      {
+       "f": "Wo liegt die Insel Kisch?",
+       "o": [
+        "im Persischen Golf",
+        "im Kaspischen Meer",
+        "in der Wüste bei Yazd"
+       ],
+       "r": 0
+      },
+      {
+       "f": "„Lass uns abstimmen!“",
+       "o": [
+        "بیا رأی‌گیری کنیم!",
+        "بیا اول بریم شیراز.",
+        "ترجیح می‌دم …"
+       ],
+       "r": 0,
+       "optFa": true
+      },
+      {
+       "f": "Gute Reaktion auf eine Beschwerde:",
+       "o": [
+        "واقعاً متأسفم. یه لحظه اجازه بدید بررسی کنم.",
+        "مشکل خودتونه.",
+        "فردا بیاید."
+       ],
+       "r": 0,
+       "optFa": true
+      }
+     ]
+    },
+    {
+     "ref": "k07/c/0"
+    }
+   ]
+  }
+ ]
+}
