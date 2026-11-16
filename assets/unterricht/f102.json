@@ -1,0 +1,694 @@
+{
+ "lektion": "f102",
+ "titel": "Wohnen: vorlesen, entscheiden, verhandeln, erzählen",
+ "minuten": 90,
+ "bloecke": [
+  {
+   "id": "woerter",
+   "icon": "🏡",
+   "titel": "Wörter: Haus, Wohnung, Umzug",
+   "minuten": 10,
+   "tafel": [
+    {
+     "ref": "f102/w0/0"
+    },
+    {
+     "ref": "f102/w0/1"
+    },
+    {
+     "ref": "f102/w1/0"
+    },
+    {
+     "ref": "f102/w1/1"
+    },
+    {
+     "ref": "f102/w2/0"
+    },
+    {
+     "ref": "f102/w2/1"
+    }
+   ],
+   "aufgaben": [
+    {
+     "ref": "f102/w0/2"
+    },
+    {
+     "ref": "f102/w1/2"
+    },
+    {
+     "ref": "f102/w2/2"
+    },
+    {
+     "ref": "f102/b/0"
+    },
+    {
+     "ref": "f102/c/0"
+    },
+    {
+     "ref": "f102/c/1"
+    }
+   ]
+  },
+  {
+   "id": "umzug",
+   "icon": "📦",
+   "titel": "Vorlesen & ordnen: Umzug nach Teheran",
+   "minuten": 15,
+   "tafel": [
+    {
+     "ref": "f102/t1/0"
+    }
+   ],
+   "aufgaben": [
+    {
+     "typ": "puzzle",
+     "titel": "Vorlesen & ordnen: Umzug nach Teheran",
+     "quelle": "f102/t1/1",
+     "gruppen": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      1
+     ]
+    },
+    {
+     "ref": "f102/t1/2"
+    },
+    {
+     "ref": "f102/t1/3"
+    }
+   ]
+  },
+  {
+   "id": "passt",
+   "icon": "🏘️",
+   "titel": "Vorlesen & entscheiden: Welche Wohnung passt?",
+   "minuten": 20,
+   "tafel": [
+    {
+     "titel": "📢 Eine/r liest – alle entscheiden",
+     "text": "<p>In jeder Runde liest <b>eine Person</b> einen kurzen Text laut vor – mal stellt sich jemand vor, der eine Wohnung sucht, mal ist es eine Wohnungsanzeige. Alle anderen hören zu und wählen auf dem Handy: <b>Was passt?</b></p><p>Danach liest die nächste Person vor. Wichtig: laut, langsam und deutlich lesen – nur dann können die anderen richtig wählen!</p>",
+     "stil": "merke"
+    }
+   ],
+   "aufgaben": [
+    {
+     "typ": "vorlesen",
+     "titel": "Welche Wohnung passt?",
+     "runden": [
+      {
+       "frage": "Welche Wohnung passt zu dieser Person?",
+       "optionen": [
+        {
+         "emoji": "🏡",
+         "fa": "خانه‌ی قدیمی حیاط‌دار با حوض و درخت انار، در محله‌ای آرام.",
+         "de": "Altes Hofhaus mit Wasserbecken und Granatapfelbaum, in einem ruhigen Viertel."
+        },
+        {
+         "emoji": "🏙️",
+         "fa": "واحد نوساز در طبقه‌ی پانزدهم یک برج، با آسانسور.",
+         "de": "Neubauwohnung im 15. Stock eines Hochhauses, mit Aufzug."
+        },
+        {
+         "emoji": "🏢",
+         "fa": "سوئیت سی‌متری در مرکز شهر، نزدیک مترو، ارزان.",
+         "de": "30-m²-Studio im Zentrum, nahe der U-Bahn, günstig."
+        },
+        {
+         "emoji": "🌷",
+         "fa": "آپارتمان همکف سه‌خوابه با باغچه، نزدیک مدرسه.",
+         "de": "Erdgeschosswohnung, drei Schlafzimmer, mit Garten, nahe der Schule."
+        }
+       ],
+       "r": 2,
+       "text": [
+        {
+         "fa": "من دانشجو هستم و پول زیادی ندارم.",
+         "tr": "man dāneschdschū hastam wa pūl-e ziyādī nadāram.",
+         "de": "Ich bin Student/in und habe nicht viel Geld."
+        },
+        {
+         "fa": "ماشین ندارم و هر روز با مترو به دانشگاه می‌روم.",
+         "tr": "māschīn nadāram wa har rūz bā metro be dāneschgāh mīrawam.",
+         "de": "Ich habe kein Auto und fahre jeden Tag mit der U-Bahn zur Uni."
+        },
+        {
+         "fa": "یک اتاق کوچک برای من کافی است.",
+         "tr": "yek otāgh-e kūtschak barā-ye man kāfī ast.",
+         "de": "Ein kleines Zimmer reicht mir."
+        }
+       ]
+      },
+      {
+       "frage": "Welche Wohnung passt zu dieser Person?",
+       "optionen": [
+        {
+         "emoji": "🏡",
+         "fa": "خانه‌ی قدیمی حیاط‌دار با حوض و درخت انار، در محله‌ای آرام.",
+         "de": "Altes Hofhaus mit Wasserbecken und Granatapfelbaum, in einem ruhigen Viertel."
+        },
+        {
+         "emoji": "🏙️",
+         "fa": "واحد نوساز در طبقه‌ی پانزدهم یک برج، با آسانسور.",
+         "de": "Neubauwohnung im 15. Stock eines Hochhauses, mit Aufzug."
+        },
+        {
+         "emoji": "🏢",
+         "fa": "سوئیت سی‌متری در مرکز شهر، نزدیک مترو، ارزان.",
+         "de": "30-m²-Studio im Zentrum, nahe der U-Bahn, günstig."
+        },
+        {
+         "emoji": "🌷",
+         "fa": "آپارتمان همکف سه‌خوابه با باغچه، نزدیک مدرسه.",
+         "de": "Erdgeschosswohnung, drei Schlafzimmer, mit Garten, nahe der Schule."
+        }
+       ],
+       "r": 3,
+       "text": [
+        {
+         "fa": "ما سه بچه و یک سگ بزرگ داریم.",
+         "tr": "mā se batsche wa yek sag-e bozorg dārīm.",
+         "de": "Wir haben drei Kinder und einen großen Hund."
+        },
+        {
+         "fa": "بچه‌ها دوست دارند بیرون بازی کنند.",
+         "tr": "batschehā dūst dārand bīrūn bāzī konand.",
+         "de": "Die Kinder spielen gern draußen."
+        },
+        {
+         "fa": "مدرسه‌شان باید نزدیک خانه باشد.",
+         "tr": "madreseschān bāyad nazdīk-e chāne bāschad.",
+         "de": "Ihre Schule muss in der Nähe sein."
+        }
+       ]
+      },
+      {
+       "frage": "Welche Wohnung passt zu dieser Person?",
+       "optionen": [
+        {
+         "emoji": "🏡",
+         "fa": "خانه‌ی قدیمی حیاط‌دار با حوض و درخت انار، در محله‌ای آرام.",
+         "de": "Altes Hofhaus mit Wasserbecken und Granatapfelbaum, in einem ruhigen Viertel."
+        },
+        {
+         "emoji": "🏙️",
+         "fa": "واحد نوساز در طبقه‌ی پانزدهم یک برج، با آسانسور.",
+         "de": "Neubauwohnung im 15. Stock eines Hochhauses, mit Aufzug."
+        },
+        {
+         "emoji": "🏢",
+         "fa": "سوئیت سی‌متری در مرکز شهر، نزدیک مترو، ارزان.",
+         "de": "30-m²-Studio im Zentrum, nahe der U-Bahn, günstig."
+        },
+        {
+         "emoji": "🌷",
+         "fa": "آپارتمان همکف سه‌خوابه با باغچه، نزدیک مدرسه.",
+         "de": "Erdgeschosswohnung, drei Schlafzimmer, mit Garten, nahe der Schule."
+        }
+       ],
+       "r": 0,
+       "text": [
+        {
+         "fa": "من معمار هستم و عاشق خانه‌های سنتی‌ام.",
+         "tr": "man meʿmār hastam wa ʿāschegh-e chānehā-ye sonnatī-am.",
+         "de": "Ich bin Architekt/in und liebe traditionelle Häuser."
+        },
+        {
+         "fa": "دوست دارم صبح‌ها کنار حوض چای بخورم.",
+         "tr": "dūst dāram sobhhā kenār-e hous tschāy bechoram.",
+         "de": "Ich trinke morgens gern Tee am Wasserbecken."
+        },
+        {
+         "fa": "از برج‌های بلند اصلاً خوشم نمی‌آید.",
+         "tr": "az bordschhā-ye boland aslan choscham nemīāyad.",
+         "de": "Hohe Türme mag ich gar nicht."
+        }
+       ]
+      },
+      {
+       "frage": "Für wen ist diese Wohnung ideal?",
+       "optionen": [
+        {
+         "emoji": "👵",
+         "fa": "خانم رحیمی، هفتاد و پنج ساله، تنها زندگی می‌کند و نمی‌تواند از پله بالا برود.",
+         "de": "Frau Rahimi, 75, lebt allein und kann keine Treppen steigen."
+        },
+        {
+         "emoji": "🚗",
+         "fa": "آقای نادری ماشین دارد و امنیت برایش خیلی مهم است.",
+         "de": "Herr Naderi hat ein Auto; Sicherheit ist ihm sehr wichtig."
+        },
+        {
+         "emoji": "🎨",
+         "fa": "سارا نقاش است و برای کارش به نور زیاد و یک اتاق بزرگ نیاز دارد.",
+         "de": "Sara ist Malerin und braucht für ihre Arbeit viel Licht und einen großen Raum."
+        },
+        {
+         "emoji": "🎓",
+         "fa": "دو دانشجو دنبال یک آپارتمان ارزان دوخوابه هستند.",
+         "de": "Zwei Studierende suchen eine günstige Zweizimmerwohnung."
+        }
+       ],
+       "r": 1,
+       "text": [
+        {
+         "fa": "آپارتمان صدمتری در یک مجتمع نوساز.",
+         "tr": "āpārtemān-e sad-metrī dar yek modschtamaʿ-e nousāz.",
+         "de": "100-m²-Wohnung in einer neu gebauten Wohnanlage."
+        },
+        {
+         "fa": "ساختمان نگهبان شبانه‌روزی و دوربین دارد.",
+         "tr": "sāchtemān negahbān-e schabānerūzī wa dūrbīn dārad.",
+         "de": "Das Gebäude hat einen Pförtner rund um die Uhr und Kameras."
+        },
+        {
+         "fa": "هر واحد یک پارکینگ و یک انباری دارد.",
+         "tr": "har wāhed yek pārkīng wa yek anbārī dārad.",
+         "de": "Jede Wohnung hat einen Stellplatz und einen Abstellraum."
+        }
+       ]
+      },
+      {
+       "frage": "Für wen ist diese Wohnung ideal?",
+       "optionen": [
+        {
+         "emoji": "👵",
+         "fa": "خانم رحیمی، هفتاد و پنج ساله، تنها زندگی می‌کند و نمی‌تواند از پله بالا برود.",
+         "de": "Frau Rahimi, 75, lebt allein und kann keine Treppen steigen."
+        },
+        {
+         "emoji": "🚗",
+         "fa": "آقای نادری ماشین دارد و امنیت برایش خیلی مهم است.",
+         "de": "Herr Naderi hat ein Auto; Sicherheit ist ihm sehr wichtig."
+        },
+        {
+         "emoji": "🎨",
+         "fa": "سارا نقاش است و برای کارش به نور زیاد و یک اتاق بزرگ نیاز دارد.",
+         "de": "Sara ist Malerin und braucht für ihre Arbeit viel Licht und einen großen Raum."
+        },
+        {
+         "emoji": "🎓",
+         "fa": "دو دانشجو دنبال یک آپارتمان ارزان دوخوابه هستند.",
+         "de": "Zwei Studierende suchen eine günstige Zweizimmerwohnung."
+        }
+       ],
+       "r": 0,
+       "text": [
+        {
+         "fa": "آپارتمان همکف، بدون پله، با یک اتاق خواب.",
+         "tr": "āpārtemān-e hamkaf, bedūn-e pelle, bā yek otāgh-e chāb.",
+         "de": "Erdgeschosswohnung, ohne Stufen, mit einem Schlafzimmer."
+        },
+        {
+         "fa": "نزدیک داروخانه و نانوایی است.",
+         "tr": "nazdīk-e dārūchāne wa nānwāyī ast.",
+         "de": "In der Nähe von Apotheke und Bäckerei."
+        },
+        {
+         "fa": "ساختمان کوچک و خیلی آرام است.",
+         "tr": "sāchtemān kūtschak wa cheylī ārām ast.",
+         "de": "Das Haus ist klein und sehr ruhig."
+        }
+       ]
+      },
+      {
+       "frage": "Für wen ist diese Wohnung ideal?",
+       "optionen": [
+        {
+         "emoji": "👵",
+         "fa": "خانم رحیمی، هفتاد و پنج ساله، تنها زندگی می‌کند و نمی‌تواند از پله بالا برود.",
+         "de": "Frau Rahimi, 75, lebt allein und kann keine Treppen steigen."
+        },
+        {
+         "emoji": "🚗",
+         "fa": "آقای نادری ماشین دارد و امنیت برایش خیلی مهم است.",
+         "de": "Herr Naderi hat ein Auto; Sicherheit ist ihm sehr wichtig."
+        },
+        {
+         "emoji": "🎨",
+         "fa": "سارا نقاش است و برای کارش به نور زیاد و یک اتاق بزرگ نیاز دارد.",
+         "de": "Sara ist Malerin und braucht für ihre Arbeit viel Licht und einen großen Raum."
+        },
+        {
+         "emoji": "🎓",
+         "fa": "دو دانشجو دنبال یک آپارتمان ارزان دوخوابه هستند.",
+         "de": "Zwei Studierende suchen eine günstige Zweizimmerwohnung."
+        }
+       ],
+       "r": 2,
+       "text": [
+        {
+         "fa": "طبقه‌ی آخر، با پنجره‌های بزرگ و خیلی نورگیر.",
+         "tr": "tabaghe-ye āchar, bā pandscherehā-ye bozorg wa cheylī nūrgīr.",
+         "de": "Oberste Etage, mit großen Fenstern, sehr hell."
+        },
+        {
+         "fa": "یک اتاق بزرگ و دلباز با منظره‌ی کوه دارد.",
+         "tr": "yek otāgh-e bozorg wa delbāz bā manzare-ye kūh dārad.",
+         "de": "Ein großer, luftiger Raum mit Blick auf die Berge."
+        },
+        {
+         "fa": "آشپزخانه کوچک است، ولی برای یک نفر کافی است.",
+         "tr": "āschpazchāne kūtschak ast, walī barā-ye yek nafar kāfī ast.",
+         "de": "Die Küche ist klein, reicht aber für eine Person."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "ref": "f102/a/0"
+    }
+   ]
+  },
+  {
+   "id": "grammatik",
+   "icon": "🧩",
+   "titel": "Kurz: Partizip als Adjektiv & ـنده",
+   "minuten": 10,
+   "tafel": [
+    {
+     "ref": "f102/g0/0"
+    },
+    {
+     "ref": "f102/g0/1"
+    },
+    {
+     "ref": "f102/g1/0"
+    }
+   ],
+   "aufgaben": [
+    {
+     "ref": "f102/g0/3"
+    },
+    {
+     "ref": "f102/g0/5"
+    },
+    {
+     "ref": "f102/g1/3"
+    },
+    {
+     "ref": "f102/g1/4"
+    }
+   ]
+  },
+  {
+   "id": "miete",
+   "icon": "🔑",
+   "titel": "Gespräch: Mieter/in und Vermieter/in",
+   "minuten": 20,
+   "tafel": [
+    {
+     "ref": "f102/d1/2"
+    },
+    {
+     "titel": "🎭 Besichtigung mit Geheimauftrag",
+     "text": "<p>In Paaren (oder Dreiergruppen mit Makler/in): Mieter/in und Vermieter/in führen das Gespräch. Jede/r hat <b>zwei Geheimaufträge</b> auf dem Handy und baut sie unauffällig ein.</p><p>Dann spielt jede Gruppe vor – die anderen haken an, welche Aufträge sie gehört haben.</p>"
+    }
+   ],
+   "aufgaben": [
+    {
+     "ref": "f102/d1/1"
+    },
+    {
+     "typ": "rolle",
+     "titel": "Wohnungsbesichtigung – Rollenspiel mit Geheimauftrag",
+     "anzahl": 2,
+     "situation": [
+      "بازدید از آپارتمان",
+      "Wohnungsbesichtigung in Teheran: Eine 80-m²-Wohnung im 4. Stock wird vermietet."
+     ],
+     "rollen": [
+      {
+       "icon": "🔑",
+       "name": [
+        "مستأجر",
+        "Mieter/in"
+       ],
+       "aufgabe": "Du suchst eine Wohnung für dich und deine Familie. Frag nach Miete, Kaution und allem, was dir wichtig ist – und verhandle!",
+       "redemittel": [
+        [
+         "اجاره‌اش ماهی چقدر است؟",
+         "Wie hoch ist die Monatsmiete?"
+        ],
+        [
+         "ودیعه چقدر می‌خواهید؟",
+         "Wie viel Kaution möchten Sie?"
+        ],
+        [
+         "آسانسور و پارکینگ دارد؟",
+         "Gibt es Aufzug und Stellplatz?"
+        ],
+        [
+         "کمی گران است. تخفیف می‌دهید؟",
+         "Etwas teuer. Geben Sie Rabatt?"
+        ],
+        [
+         "کی می‌توانیم قرارداد ببندیم؟",
+         "Wann können wir den Vertrag machen?"
+        ]
+       ],
+       "missionen": [
+        [
+         "حیوان خانگی مجاز است؟",
+         "fragt, ob Haustiere erlaubt sind"
+        ],
+        [
+         "همسایه‌ها چطور هستند؟",
+         "fragt nach den Nachbarn"
+        ],
+        [
+         "پول آب و برق و گاز با کیست؟",
+         "fragt, wer Wasser, Strom und Gas bezahlt"
+        ],
+        [
+         "ما دو بچه‌ی کوچک داریم.",
+         "erzählt, dass sie zwei kleine Kinder haben"
+        ],
+        [
+         "من در خانه کار می‌کنم و به سکوت نیاز دارم.",
+         "erzählt, dass er/sie zu Hause arbeitet und Ruhe braucht"
+        ],
+        [
+         "می‌توانم دیوارها را رنگ کنم؟",
+         "fragt, ob er/sie die Wände streichen darf"
+        ]
+       ]
+      },
+      {
+       "icon": "🏠",
+       "name": [
+        "صاحبخانه",
+        "Vermieter/in"
+       ],
+       "aufgabe": "Du vermietest deine Wohnung. Stell sie gut dar, nenne Miete und Kaution – und finde heraus, ob der Mieter / die Mieterin zuverlässig ist.",
+       "redemittel": [
+        [
+         "بفرمایید، این آشپزخانه است.",
+         "Bitte, das ist die Küche."
+        ],
+        [
+         "آپارتمان هشتاد متر است و خیلی نورگیر است.",
+         "Die Wohnung hat 80 m² und ist sehr hell."
+        ],
+        [
+         "ماهی پانزده میلیون، ودیعه دویست میلیون.",
+         "15 Millionen im Monat, 200 Millionen Kaution."
+        ],
+        [
+         "شغل شما چیست؟",
+         "Was ist Ihr Beruf?"
+        ],
+        [
+         "قرارداد یک‌ساله است.",
+         "Der Vertrag läuft ein Jahr."
+        ]
+       ],
+       "missionen": [
+        [
+         "آشپزخانه تازه بازسازی شده است.",
+         "erzählt, dass die Küche frisch renoviert ist"
+        ],
+        [
+         "همسایه‌ی بالایی کمی پر سر و صداست.",
+         "gibt zu, dass der Nachbar oben etwas laut ist"
+        ],
+        [
+         "چند نفر هستید؟",
+         "fragt, wie viele Personen einziehen"
+        ],
+        [
+         "لطفاً در ساختمان سیگار نکشید.",
+         "bittet, im Haus nicht zu rauchen"
+        ],
+        [
+         "اجاره را باید اول هر ماه بدهید.",
+         "sagt, dass die Miete am Monatsanfang fällig ist"
+        ],
+        [
+         "پارکینگ ندارد، ولی در خیابان جای پارک هست.",
+         "sagt, dass es keinen Stellplatz gibt, aber Parkplätze auf der Straße"
+        ]
+       ]
+      },
+      {
+       "icon": "💼",
+       "name": [
+        "مشاور املاک",
+        "Makler/in"
+       ],
+       "aufgabe": "Du vermittelst die Wohnung und willst, dass der Vorvertrag heute noch unterschrieben wird.",
+       "redemittel": [
+        [
+         "این واحد خیلی مشتری دارد.",
+         "Diese Wohnung ist sehr gefragt."
+        ],
+        [
+         "محله خیلی امن و آرام است.",
+         "Das Viertel ist sehr sicher und ruhig."
+        ],
+        [
+         "قولنامه را امروز بنویسیم؟",
+         "Schreiben wir den Vorvertrag heute?"
+        ]
+       ],
+       "missionen": [
+        [
+         "دیروز سه نفر دیگر هم این آپارتمان را دیدند.",
+         "erzählt, dass gestern drei andere die Wohnung angesehen haben"
+        ],
+        [
+         "مترو فقط پنج دقیقه پیاده راه است.",
+         "sagt, dass die U-Bahn nur 5 Minuten zu Fuß entfernt ist"
+        ],
+        [
+         "کمیسیون من را فراموش نکنید!",
+         "erinnert an seine/ihre Provision"
+        ],
+        [
+         "این قیمت برای این محله ارزان است.",
+         "behauptet, der Preis sei für das Viertel günstig"
+        ],
+        [
+         "صاحبخانه آدم خیلی خوبی است.",
+         "lobt den Vermieter / die Vermieterin"
+        ],
+        [
+         "قولنامه را همین الان بنویسیم؟",
+         "will den Vorvertrag sofort schreiben"
+        ]
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "kindheit",
+   "icon": "🧸",
+   "titel": "Das Haus meiner Kindheit",
+   "minuten": 15,
+   "tafel": [
+    {
+     "titel": "Das Haus meiner Kindheit",
+     "text": "<p>Erzähle, wie du als Kind gewohnt hast. Für Gewohnheiten in der Vergangenheit: <b>می + Vergangenheitsstamm</b> – <span class='fa'>بازی می‌کردیم</span> (wir spielten immer).</p>",
+     "stil": "merke",
+     "beispiele": [
+      {
+       "fa": "خانه‌ی کودکی‌ام یک خانه‌ی قدیمی با حیاط بود.",
+       "tr": "chāne-ye kūdakīam yek chāne-ye ghadīmī bā hayāt būd.",
+       "de": "Mein Kindheitszuhause war ein altes Haus mit Hof."
+      },
+      {
+       "fa": "وسط حیاط یک حوض و یک درخت انار بود.",
+       "tr": "wasat-e hayāt yek hous wa yek derachte-anār būd.",
+       "de": "In der Mitte des Hofs gab es ein Becken und einen Granatapfelbaum."
+      },
+      {
+       "fa": "تابستان‌ها روی پشت‌بام می‌خوابیدیم.",
+       "tr": "tābestānhā rū-ye poschtbām mīchābīdīm.",
+       "de": "Im Sommer schliefen wir auf dem Dach."
+      },
+      {
+       "fa": "با بچه‌های همسایه در کوچه بازی می‌کردیم.",
+       "tr": "bā batschehā-ye hamsāye dar kūtsche bāzī mīkardīm.",
+       "de": "Wir spielten mit den Nachbarskindern in der Gasse."
+      },
+      {
+       "fa": "اتاقم کوچک بود، ولی یک پنجره‌ی رنگی داشت.",
+       "tr": "otāgham kūtschak būd, walī yek pandschere-ye rangī dāscht.",
+       "de": "Mein Zimmer war klein, aber es hatte ein Buntglasfenster."
+      }
+     ]
+    }
+   ],
+   "aufgaben": [
+    {
+     "typ": "partner",
+     "titel": "Zu zweit: Das Haus meiner Kindheit",
+     "fragen": [
+      [
+       "خانه‌ی کودکی‌ات کجا بود؟ خانه بود یا آپارتمان؟",
+       "Wo war dein Kindheitszuhause? Haus oder Wohnung?"
+      ],
+      [
+       "حیاط یا باغچه داشت؟ آنجا چه چیزی بود؟",
+       "Hatte es einen Hof oder Garten? Was gab es dort?"
+      ],
+      [
+       "اتاق خودت را داشتی؟ چه شکلی بود؟",
+       "Hattest du ein eigenes Zimmer? Wie sah es aus?"
+      ],
+      [
+       "همسایه‌ها چطور بودند؟",
+       "Wie waren die Nachbarn?"
+      ],
+      [
+       "کجای خانه را بیشتر از همه دوست داشتی؟ چرا؟",
+       "Welchen Ort im Haus mochtest du am meisten? Warum?"
+      ],
+      [
+       "آن خانه هنوز هست؟ دلت برایش تنگ می‌شود؟",
+       "Gibt es das Haus noch? Vermisst du es?"
+      ]
+     ],
+     "bericht": [
+      [
+       "خانه‌ی کودکی … در … بود.",
+       "…s Kindheitszuhause war in …"
+      ],
+      [
+       "… بیشتر از همه … را دوست داشت، چون …",
+       "… mochte am meisten …, weil …"
+      ],
+      [
+       "جالب این بود که …",
+       "Interessant war, dass …"
+      ]
+     ]
+    },
+    {
+     "typ": "sprechen",
+     "titel": "Plenum: Wer erzählt?",
+     "text": "Wer gezogen wird, erzählt in drei, vier Sätzen vom Haus der Partnerin / des Partners – die anderen stellen eine Frage dazu.",
+     "saetze": [
+      [
+       "خانه‌ی کودکی … در … بود.",
+       "…s Kindheitszuhause war in …"
+      ],
+      [
+       "… بیشتر از همه … را دوست داشت.",
+       "… mochte am meisten …"
+      ],
+      [
+       "یک سؤال: …",
+       "Eine Frage: …"
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -110,6 +110,12 @@
   .qz-rang{display:flex;justify-content:space-between;background:#fff;border:1px solid var(--linie);border-radius:10px;padding:8px 12px;margin:5px 0;font-weight:700}
   .qz-rang.ich{border-color:var(--lapis);background:var(--lapis-hell)}
   .qz-n{font-size:.85rem;opacity:.85;margin-left:auto}
+  .vl-opt{display:flex;gap:10px;align-items:center;width:100%;background:#fff;border:1.5px solid var(--linie);border-radius:12px;padding:10px 12px;margin:6px 0;font:inherit;color:inherit;text-align:right;cursor:pointer}
+  .vl-opt .e{font-size:1.6rem}.vl-opt .t{flex:1}.vl-opt .t .fa{font-size:1.15rem;line-height:1.8}
+  .vl-opt.an{border-color:var(--lapis);background:var(--lapis-hell)}.vl-opt.ok{border-color:var(--gruen);background:var(--gruen-hell)}.vl-opt.nein{border-color:var(--granat);background:var(--granat-hell)}
+  .vl-opt:disabled{cursor:default}
+  .vl-n{font-weight:800;color:var(--tinte2);font-size:.9rem;white-space:nowrap}
+  .vl-text .fa-g{font-size:1.35rem;line-height:2}
 </style>
 </head>
 <body>
@@ -135,8 +141,8 @@
 window.UNTERRICHT = (function () {
   const INTERAKTIV = ["paare", "wahl", "bauen", "sortieren", "finden", "lesen", "ordnen", "memory", "tempo", "zuordnen"];
   const TAFEL = ["info", "text", "buchstaben"];
-  const TYP_ICON = { paare: "🔗", wahl: "☑️", bauen: "🧱", sortieren: "🗂️", finden: "🔍", lesen: "📖", ordnen: "🔢", memory: "🃏", tempo: "⚡", zuordnen: "🧩", interview: "🗣️", puzzle: "🧩", sprechen: "🎤", partner: "👥", weg: "🗺️", rolle: "🎭", quiz: "🏆" };
-  const TYP_NAME = { paare: "Paare finden", wahl: "Quiz", bauen: "Bauen", sortieren: "Sortieren", finden: "Finden", lesen: "Lesen", ordnen: "Ordnen", memory: "Memory", tempo: "Blitz", zuordnen: "Zuordnen", interview: "Partner-Interview", puzzle: "Vorlesen & ordnen", sprechen: "Sprechrunde", partner: "Partnergespräch", weg: "Stadtplan-Spiel", rolle: "Rollenspiel mit Geheimauftrag", quiz: "Quiz für alle (wie Kahoot)" };
+  const TYP_ICON = { paare: "🔗", wahl: "☑️", bauen: "🧱", sortieren: "🗂️", finden: "🔍", lesen: "📖", ordnen: "🔢", memory: "🃏", tempo: "⚡", zuordnen: "🧩", interview: "🗣️", puzzle: "🧩", sprechen: "🎤", partner: "👥", weg: "🗺️", rolle: "🎭", quiz: "🏆", vorlesen: "📢" };
+  const TYP_NAME = { paare: "Paare finden", wahl: "Quiz", bauen: "Bauen", sortieren: "Sortieren", finden: "Finden", lesen: "Lesen", ordnen: "Ordnen", memory: "Memory", tempo: "Blitz", zuordnen: "Zuordnen", interview: "Partner-Interview", puzzle: "Vorlesen & ordnen", sprechen: "Sprechrunde", partner: "Partnergespräch", weg: "Stadtplan-Spiel", rolle: "Rollenspiel mit Geheimauftrag", quiz: "Quiz für alle (wie Kahoot)", vorlesen: "Vorlesen & entscheiden" };
   const hash = s => { let h = 2166136261; for (const c of String(s)) { h ^= c.charCodeAt(0); h = Math.imul(h, 16777619); } return h >>> 0; };
   function rng(seed) { let a = hash(seed); return () => { a |= 0; a = a + 0x6D2B79F5 | 0; let t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
   function mischen(a, r) { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(r() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
@@ -428,9 +434,10 @@ window.UNTERRICHT = (function () {
     else if (a.typ === "weg") h += wegStand(a, false);
     else if (a.typ === "rolle") h += rolleStand(a, false);
     else if (a.typ === "quiz") h += quizLeitung(a, false);
+    else if (a.typ === "vorlesen") h += vlLeitung(a, false);
     else if (a.typ === "interview" || a.typ === "partner") { const P = U.paare(ids, G.aufgabe.id); h += `<div class="fort">${P.gruppen.map(g => `<span>${g.map(name).join(" ↔ ")}</span>`).join("")}</div>`; }
     const fertig = ids.filter(id => E[id] && E[id].fertig != null || E[id] && E[id].n != null);
-    if (!["puzzle", "sprechen", "weg", "rolle", "quiz"].includes(a.typ)) h += `<div class="fort">${ids.map(id => { const e = E[id]; return `<span class="${e && (e.n != null || e.fertig) ? "ok" : ""}">${esc(name(id))}${e && e.n ? " " + e.p + "/" + e.n : e && e.fertig ? " ✓" : ""}</span>`; }).join("")}</div><p class="klein muted">${fertig.length} von ${ids.length} fertig</p>`;
+    if (!["puzzle", "sprechen", "weg", "rolle", "quiz", "vorlesen"].includes(a.typ)) h += `<div class="fort">${ids.map(id => { const e = E[id]; return `<span class="${e && (e.n != null || e.fertig) ? "ok" : ""}">${esc(name(id))}${e && e.n ? " " + e.p + "/" + e.n : e && e.fertig ? " ✓" : ""}</span>`; }).join("")}</div><p class="klein muted">${fertig.length} von ${ids.length} fertig</p>`;
     return h + `</div>`;
   }
   /* große Ansicht laufender Spezial-Aufgaben */
@@ -451,6 +458,7 @@ window.UNTERRICHT = (function () {
     if (a.typ === "weg") return `<h2 style="margin:6px 0">🗺️ ${esc(a.titel)}</h2><p>🧭 Wer Guide ist, sieht das Ziel und beschreibt den Weg auf Persisch – ohne den Namen zu sagen. Die anderen tippen das Ziel an. Jede richtige Antwort = 1 Punkt.</p>${wegStand(a, true)}<div class="klein-h">So beschreibst du den Weg</div>${WEG_RM.map(([fa, de]) => `<div class="zeile-f"><div class="f">${esc(fa)}</div><div class="d">${esc(de)}</div></div>`).join("")}`;
     if (a.typ === "rolle") return `<h2 style="margin:6px 0">🎭 ${esc(a.titel)}</h2>${rolleStand(a, true)}`;
     if (a.typ === "quiz") return quizLeitung(a, true);
+    if (a.typ === "vorlesen") return vlLeitung(a, true);
     if (a.typ === "sprechen") {
       const g = G.aufgabe.gezogen || [], jetzt = g[g.length - 1];
       return `<h2 style="margin:6px 0">🎤 ${esc(a.titel)}</h2><p>${a.text || ""}</p>${jetzt ? `<div class="name-gross">🎤 ${esc(name(jetzt))}</div>` : ""}
@@ -492,6 +500,47 @@ window.UNTERRICHT = (function () {
       if (dran && aufl) { const w = rolleWertung(a, g); x += `<div class="meldung" style="margin-bottom:0">Erkannt: ${w.erkannt.size} von ${w.echt.size} Geheimaufträgen${Object.keys(w.P).length ? " · Punkte: " + Object.entries(w.P).map(([t, p]) => teamName(t) + " +" + p).join(", ") : ""}</div>`; }
       return x + `</div>`;
     }).join("");
+    return h;
+  }
+  /* ---------- Vorlesen & entscheiden: eine Person liest, die anderen wählen ---------- */
+  const vlRunde = () => (G.aufgabe.rn || 0);
+  const vlLeser = rn => { const r = reihe(); return r.length ? r[rn % r.length] : null; };
+  const vlOrd = (a, rn) => U.mischen(a.runden[rn].optionen.map((_, i) => i), U.rng((a.titel || "") + "|vl" + rn));
+  const vlOpts = (a, rn) => a.runden[rn].optionen.map(o => typeof o === "number" ? (a.optionen || [])[o] : o);
+  function vlStimmen(rn) { const E = ergebnisse(), o = {}; reihe().forEach(id => { const v = ((E[id] || {}).v || {})["r" + rn]; if (v != null) o[id] = v; }); return o; }
+  function vlTreffer(a) { const P = {}; reihe().forEach(id => { P[id] = 0; }); const bis = G.aufgabe.aufl ? vlRunde() : vlRunde() - 1; for (let rn = 0; rn <= bis && rn < a.runden.length; rn++) { const S = vlStimmen(rn); Object.entries(S).forEach(([id, v]) => { if (v === a.runden[rn].r && P[id] != null) P[id]++; }); } return P; }
+  function vlWertung(a, rn) { const S = vlStimmen(rn), r = a.runden[rn].r, leser = vlLeser(rn), P = {}; let ok = 0, n = 0;
+    Object.entries(S).forEach(([id, v]) => { if (id === leser) return; n++; if (v === r) { ok++; const t = teamVon(id); if (t) P[t] = (P[t] || 0) + 1; } });
+    const tl = teamVon(leser); if (tl && n && ok * 2 >= n) P[tl] = (P[tl] || 0) + 1; return { P, ok, n }; }
+  function vlOptHtml(a, rn, modus, mein) {
+    const R = a.runden[rn], O = vlOpts(a, rn), S = modus !== "tn" && (G.aufgabe.aufl || modus === "lk") ? vlStimmen(rn) : {};
+    return vlOrd(a, rn).map((i, k) => { const o = O[i], n = Object.values(S).filter(v => v === i).length; let c = ""; if (G.aufgabe.aufl) c = i === R.r ? "ok" : (mein === i ? "nein" : ""); else if (mein === i) c = "an"; if (modus === "lk" && !G.aufgabe.aufl && i === R.r) c = "an";
+      return `<button class="vl-opt ${c}" data-vl="${i}" ${modus !== "tn" || G.aufgabe.aufl ? "disabled" : ""}><span class="vl-n">${"ABCDEF"[k]}${modus !== "tn" && (G.aufgabe.aufl || modus === "lk") ? " · " + n + "×" : ""}</span><span class="t"><span class="fa">${esc(o.fa)}</span>${o.de && (modus !== "tn" || G.aufgabe.aufl) ? `<br><span class="klein muted">${esc(o.de)}</span>` : o.de ? `<details><summary class="klein">Hilfe</summary><span class="klein muted">${esc(o.de)}</span></details>` : ""}</span><span class="e">${o.emoji || ""}</span></button>`; }).join("");
+  }
+  const vlText = (R, mitDe) => `<div class="vl-text">${R.text.map(z => `<div class="fa-g">${esc(z.fa)}</div>${mitDe ? `<div class="klein muted" style="text-align:right">${esc(z.tr || "")}${z.tr ? " – " : ""}${esc(z.de || "")}</div>` : `<details><summary class="klein">Hilfe</summary><div class="klein muted">${esc(z.tr || "")} – ${esc(z.de || "")}</div></details>`}`).join("")}</div>`;
+  function vlLeitung(a, lw) {
+    const rn = vlRunde(), R = a.runden[rn], leser = vlLeser(rn), S = vlStimmen(rn), aufl = !!G.aufgabe.aufl, ids = reihe();
+    let h = lw ? `<h2 style="margin:6px 0">📢 ${esc(a.titel)}</h2>` : "";
+    h += `<p style="margin:4px 0"><b>Runde ${rn + 1} von ${a.runden.length}</b> · 📖 <b>${esc(name(leser))}</b> liest vor · ${Object.keys(S).filter(id => id !== leser).length} von ${Math.max(0, ids.length - 1)} haben gewählt</p><div class="qz-frage" style="font-size:1.2rem">${esc(R.frage)}</div>`;
+    if (!lw || aufl) h += `<div class="karte" style="margin:8px 0">${lw ? "" : `<div class="klein-h">Was ${esc(name(leser))} vorliest</div>`}${vlText(R, true)}</div>`;
+    h += vlOptHtml(a, rn, lw ? "lw" : "lk");
+    if (!lw) h += `<div class="fort">${ids.filter(id => id !== leser).map(id => { const v = S[id]; return `<span class="${v != null ? "ok" : ""}">${esc(name(id))}${v != null ? ": " + "ABCDEF"[vlOrd(a, rn).indexOf(v)] + (aufl ? (v === R.r ? " ✅" : " ❌") : "") : ""}</span>`; }).join("")}</div>`;
+    if (aufl) { const w = vlWertung(a, rn); h += `<div class="meldung">${w.ok} von ${w.n} richtig${Object.keys(w.P).length ? " · Punkte: " + Object.entries(w.P).map(([t, p]) => teamName(t) + " +" + p).join(", ") : ""}</div>`; }
+    h += `<div class="btnreihe" style="margin-top:8px">${aufl ? (rn + 1 < a.runden.length ? `<button class="btn" data-vlnext="1">▶ Nächste Runde – ${esc(name(vlLeser(rn + 1)))} liest</button>` : `<b>🏁 Alle Runden gespielt.</b>`) : `<button class="btn" data-vlauf="1">✔ auflösen</button>`}</div>`;
+    if (aufl && rn + 1 >= a.runden.length) { const T = vlTreffer(a); h += `<div class="klein-h">Richtig erkannt</div>` + ids.slice().sort((x, y) => T[y] - T[x]).map(id => `<div class="qz-rang"><span>${esc(name(id))}</span><span>${T[id]}</span></div>`).join(""); }
+    return h;
+  }
+  function vlTN(a) {
+    const rn = vlRunde(), R = a.runden[rn], leser = vlLeser(rn), mein = ((meinErg().v || {})["r" + rn]), aufl = !!G.aufgabe.aufl;
+    let h = `<p class="klein" style="margin:4px 0">Runde ${rn + 1} von ${a.runden.length}</p>`;
+    if (leser === ME.id) {
+      h += `<div class="ich-dran">📖 Du liest vor!</div><p style="margin:8px 0">Lies den Text <b>laut und deutlich</b> vor – zweimal, wenn die anderen es wünschen. Die anderen entscheiden: <i>${esc(R.frage)}</i></p><div class="karte">${vlText(R, aufl)}</div>`;
+      if (aufl) { const w = vlWertung(a, rn); h += `<div class="meldung">${w.ok} von ${w.n} haben richtig gewählt${w.n && w.ok * 2 >= w.n ? " – gut vorgelesen! 👏" : ""}</div>`; }
+      return h;
+    }
+    h += `<div class="meldung">👂 <b>${esc(name(leser))}</b> liest vor. Hör gut zu!</div><div class="qz-frage" style="font-size:1.15rem">${esc(R.frage)}</div>${vlOptHtml(a, rn, "tn", mein)}`;
+    if (aufl) h += `<div class="ich-dran" style="background:${mein === R.r ? "var(--gruen)" : "var(--granat)"};margin-top:8px">${mein === R.r ? "✅ Richtig!" : mein != null ? "❌ Leider nicht" : "⏱ Keine Wahl"}</div><details open style="margin-top:8px"><summary><b>Der Text</b></summary>${vlText(R, true)}</details>`;
+    else if (mein != null) h += `<p class="klein muted" style="text-align:center">Du kannst bis zur Auflösung noch ändern.</p>`;
     return h;
   }
   /* ---------- Quiz für alle (wie Kahoot) ---------- */
@@ -561,6 +610,8 @@ window.UNTERRICHT = (function () {
     $$("[data-wechsel]").forEach(x => x.onclick = () => { const T = teamIds(), id = x.dataset.wechsel, i = T.indexOf(teamVon(id)); schreib("gruppen/" + id, T[(i + 1) % T.length]); });
     $$("[data-pkt]").forEach(x => x.onclick = () => { const [t, p] = x.dataset.pkt.split("|"); gRef(CODE).child("log").push({ t, p: +p, ts: Date.now() }).catch(e => fehler(e)); });
     /* Rollenspiel */
+    $$("[data-vlauf]").forEach(x => x.onclick = () => { const a = aufgabeAktiv(); if (!a) return; const w = vlWertung(a, vlRunde()), o = { "aufgabe/aufl": true }; Object.entries(w.P).forEach(([t, p]) => { o[`log/${G.aufgabe.id}_vl${vlRunde()}_${t}`] = { t, p, grund: "Vorlesen", ts: Date.now() }; }); upd(o); });
+    $$("[data-vlnext]").forEach(x => x.onclick = () => upd({ "aufgabe/rn": vlRunde() + 1, "aufgabe/aufl": null }));
     $$("[data-qzgo]").forEach(x => x.onclick = () => upd({ "aufgabe/q": +x.dataset.qzgo, "aufgabe/zeig": "frage", "aufgabe/qt": Date.now() }));
     $$("[data-qzauf]").forEach(x => x.onclick = () => schreib("aufgabe/zeig", "aufl"));
     $$("[data-qzende]").forEach(x => x.onclick = () => schreib("aufgabe/zeig", "ende"));
@@ -666,6 +717,7 @@ window.UNTERRICHT = (function () {
     else if (a.typ === "weg") { app().innerHTML = h + wegTN(a, id); verdrahteWeg(a, id); }
     else if (a.typ === "rolle") { app().innerHTML = h + rolleTN(a, id); verdrahteRolle(a, id); }
     else if (a.typ === "quiz") { app().innerHTML = h + quizTN(a); verdrahteQuiz(a); }
+    else if (a.typ === "vorlesen") { app().innerHTML = h + vlTN(a); $$("[data-vl]").forEach(b => b.onclick = () => { if (G.aufgabe.aufl) return; ergRef().child("v/r" + vlRunde()).set(+b.dataset.vl).catch(() => { }); }); }
     $$("[data-say]").forEach(b => b.onclick = e => { e.stopPropagation(); F.sprich(b.dataset.say); });
   }
   const zeileFa = ([fa, de]) => `<div class="zeile-f"><div class="f">${esc(fa)} <button class="btn zwei klein" data-say="${esc(fa)}">🔊</button></div><div class="d">${esc(de)}</div></div>`;
