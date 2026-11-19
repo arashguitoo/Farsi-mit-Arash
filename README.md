@@ -301,6 +301,12 @@ Eigener Bereich (Startseite → ✍️ Schreibwerkstatt; Lehrkraft: Konsole → 
 - **Firebase:** braucht die Regel `schreiben` aus `firebase-regeln.json` (einmal in der Firebase-Konsole veröffentlichen). Daten: `schreiben/{tn-code}/{aufgabe}/tn` (TN: Versionen, Status) und `/lk/{version}` (Lehrkraft: Korrektur, Freigabe).
 - **🤖 KI-Entwurf:** Knopf ist vorbereitet; sobald ein Weg eingerichtet ist (eigener API-Schlüssel + kleiner Vermittlungsdienst, oder geplante Claude-Aufgabe), füllt er „Korrigierter Text“ und die Kommentare vor.
 
+### Online-Test (`online-test.html`)
+Einzeltest mit Test-Code (Konsole → 📝 Online-Test). Aufgaben in `assets/test/persisch1.json` (Persisch I, L1–L6: Schrift, Hören, Wortschatz, Grammatik, Satzbau, Lesen, Schreiben; 52 automatisch bewertete Punkte + 5 Punkte Schreiben von Hand).
+- Ablauf: Test anlegen (Dauer, „Ergebnis zeigen“) → TN melden sich mit Code + Vorname an → „▶ Test freigeben“ → jede/r startet selbst; die Uhr läuft ab „Test beginnen“ und gibt bei 0 automatisch ab. Antworten werden sofort gespeichert (Neuladen ist sicher). Hören: max. 3× pro Aufnahme.
+- Leitung: Live-Tabelle (Status, Restzeit, Teil, beantwortet, +5 Min., Abgabe erzwingen) und Bericht (Durchschnitt/Median, Themen, Übersicht pro Person, Aufgabenanalyse mit häufigstem Fehler, Einzelberichte mit allen Antworten, Schreibteil bewerten, Drucken/PDF, CSV).
+- Antwortreihenfolge ist pro Person gemischt. Vorschau: `online-test.html?probe=1`. Firebase: `live/test/{code}`.
+
 ### Live-Unterricht (`live-unterricht.html`)
 Zentrale Stelle für den Unterricht mit Lektionen (Konsole → 🎓 Live-Unterricht). Lektion wählen → Plan wählen → Runde anlegen; TN treten mit Spielcode + Vorname bei (auch über `code.html`).
 - **Pläne:** ausgearbeitete Pläne in `assets/unterricht/*.json` (Liste in `assets/unterricht/index.json`), sonst ein **automatischer 90-Minuten-Plan** aus den Stationen: Lehrtafel = info/text-Karten, Aufgaben = Übungskarten, Texte ab 5 Zeilen zusätzlich als „Vorlesen & ordnen“, Erklärkarten mit Fragen als Partnergespräch. Persisch I beginnt mit 10 Min. Wiederholung der vorigen Lektion, Fortgeschrittene/Konversation ohne.

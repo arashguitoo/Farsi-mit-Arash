@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Online-Test · Farsi-Lernpfad</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Vazirmatn:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css">
+<style>
+  .wrap{max-width:900px}
+  body.lehrend .wrap{max-width:1180px}
+  .klein-h{font-size:.78rem;font-weight:800;color:var(--tinte2);text-transform:uppercase;letter-spacing:.04em;margin:16px 0 6px}
+  .lv-code{font-size:2.2rem;font-weight:800;letter-spacing:.2em;color:var(--lapis)}
+  .tleiste{position:sticky;top:0;z-index:20;background:var(--papier,#f6f6f2);border-bottom:1px solid var(--linie);padding:8px 0;margin:0 -16px 10px;padding-inline:16px;display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+  .uhr{font-size:1.5rem;font-weight:800;font-variant-numeric:tabular-nums;color:var(--lapis)}
+  .uhr.warn{color:#9a6a00}.uhr.rot{color:var(--granat)}
+  .ttabs{display:flex;gap:6px;flex-wrap:wrap;margin:6px 0 12px}
+  .ttabs button{border:1.5px solid var(--linie);background:#fff;border-radius:10px;padding:6px 10px;font:inherit;font-size:.88rem;font-weight:700;cursor:pointer}
+  .ttabs button.an{border-color:var(--lapis);background:var(--lapis-hell)}
+  .ttabs button .n{font-weight:400;color:var(--tinte2);font-size:.8rem}
+  .item{background:#fff;border:1px solid var(--linie);border-radius:14px;padding:12px 14px;margin:10px 0}
+  .item .inr{font-weight:800;color:var(--tinte2);font-size:.8rem}
+  .item .fr{font-weight:700;margin:2px 0 6px}
+  .item .tfa{font-family:var(--fa);font-size:1.8rem;direction:rtl;text-align:center;margin:6px 0}
+  .topts{display:grid;gap:6px}
+  .topt{display:flex;align-items:center;gap:10px;border:1.5px solid var(--linie);background:#fff;border-radius:10px;padding:9px 12px;font:inherit;color:inherit;text-align:left;cursor:pointer}
+  .topt.fa{font-family:var(--fa);font-size:1.25rem;direction:rtl;text-align:right;justify-content:flex-start}
+  .topt.an{border-color:var(--lapis);background:var(--lapis-hell);font-weight:700}
+  .topt.ok{border-color:var(--gruen);background:var(--gruen-hell)}.topt.nein{border-color:var(--granat);background:var(--granat-hell)}
+  .topt .kr{width:18px;height:18px;border-radius:50%;border:2px solid var(--linie);flex:none}
+  .topt.an .kr{border-color:var(--lapis);background:var(--lapis)}
+  .thoer{display:flex;gap:10px;align-items:center;margin:6px 0 8px}
+  .tbz{min-height:52px;border:1.5px dashed var(--linie);border-radius:10px;padding:6px;display:flex;flex-wrap:wrap;gap:6px;direction:rtl;margin-bottom:6px}
+  .tbp{display:flex;flex-wrap:wrap;gap:6px;direction:rtl}
+  .tk{font-family:var(--fa);font-size:1.25rem;border:1.5px solid var(--linie);background:#fff;border-radius:10px;padding:4px 12px;cursor:pointer}
+  .tk.weg{opacity:.25;cursor:default}
+  .tlese{background:#fff;border:1px solid var(--linie);border-radius:14px;padding:12px 16px;font-family:var(--fa);direction:rtl;text-align:right;font-size:1.3rem;line-height:2.1}
+  textarea.feld{width:100%;min-height:150px;font-family:var(--fa);font-size:1.25rem;direction:rtl;line-height:1.9;box-sizing:border-box}
+  .tast{background:#eef1f0;border-radius:14px;padding:8px;margin-top:8px;user-select:none}
+  .tast .z{display:flex;gap:4px;justify-content:center;direction:rtl;margin:4px 0;flex-wrap:wrap}
+  .tast button{font-family:var(--fa);font-size:1.15rem;min-width:32px;height:38px;border:1px solid #cfd6d4;background:#fff;border-radius:8px;cursor:pointer;padding:0 6px}
+  .tast .breit{min-width:110px;font-family:inherit;font-size:.85rem}
+  .navi{display:flex;justify-content:space-between;gap:8px;margin:16px 0}
+  table.rep{width:100%;border-collapse:collapse;font-size:.9rem;background:#fff}
+  table.rep th,table.rep td{border-bottom:1px solid var(--linie);padding:6px 8px;text-align:left;vertical-align:top}
+  table.rep th{font-size:.78rem;color:var(--tinte2);text-transform:uppercase;letter-spacing:.03em}
+  table.rep td.z{text-align:right;font-variant-numeric:tabular-nums}
+  .bar{height:8px;border-radius:4px;background:#e3e7e5;overflow:hidden;min-width:60px}
+  .bar i{display:block;height:100%;background:var(--gruen)}
+  .bar.mittel i{background:#c9a24a}.bar.schwach i{background:var(--granat)}
+  .pill{display:inline-block;border-radius:999px;padding:1px 9px;font-size:.78rem;font-weight:800}
+  .pill.ok{background:var(--gruen-hell);color:var(--gruen)}.pill.lauf{background:var(--safran-hell);color:#7a5200}.pill.nix{background:#eee;color:#666}.pill.rot{background:var(--granat-hell);color:var(--granat)}
+  .seg{display:inline-flex;border:1px solid var(--linie);border-radius:10px;overflow:hidden}
+  .seg button{border:0;background:#fff;padding:7px 12px;font:inherit;font-size:.88rem;font-weight:700;cursor:pointer}
+  .seg button.an{background:var(--lapis);color:#fff}
+  details.person{background:#fff;border:1px solid var(--linie);border-radius:12px;padding:8px 12px;margin:6px 0}
+  details.person summary{cursor:pointer;font-weight:800}
+  .ant{display:grid;grid-template-columns:52px 1fr 1fr 1fr;gap:4px 10px;font-size:.88rem;align-items:start;padding:3px 0;border-bottom:1px dashed #e4e7e5}
+  .ant .fa{font-size:1.05rem}
+  .kpi{display:flex;gap:10px;flex-wrap:wrap}
+  .kpi div{background:#fff;border:1px solid var(--linie);border-radius:12px;padding:8px 14px;min-width:120px}
+  .kpi b{display:block;font-size:1.5rem}
+  .min-btn{border:1px solid var(--linie);background:#fff;border-radius:6px;padding:2px 8px;font:inherit;font-size:.8rem;cursor:pointer}
+  .meldung{background:var(--safran-hell);border:1px solid #e6d3ad;border-radius:12px;padding:10px 14px;margin:10px 0}
+  @media print{ .kopf,.nodruck,#melde-knopf{display:none!important} body{background:#fff} details.person{break-inside:avoid} details.person:not([open]) > *:not(summary){display:block} .karte{box-shadow:none} }
+</style>
+</head>
+<body>
+<header class="kopf">
+  <div class="wrap">
+    <a href="konsole.html" class="medaillon" style="text-decoration:none">فا</a>
+    <div><h1 id="kopfTitel">📝 Online-Test</h1><div class="unter">Farsi-Lernpfad</div></div>
+    <div class="rechts"><span class="kopf-btn" id="kopfInfo" style="background:transparent;border-color:transparent"></span></div>
+  </div>
+</header>
+<main class="wrap" style="padding-bottom:60px"><div id="app"><p class="muted" style="margin-top:30px">Lade …</p></div></main>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+<script src="assets/core.js"></script>
+<script src="assets/live-tools.js"></script>
+<script src="assets/schreiben/werkzeuge.js"></script>
+<script>
+(function () {
+  const F = window.FARSI, { $, $$, esc, toast } = F, LT = window.LIVE_TOOLS, SW = window.SCHREIB_WERKZEUGE;
+  const qs = new URLSearchParams(location.search);
+  const MODUS = qs.get("leitung") ? "leitung" : "tn", PROBE = !!qs.get("probe");
+  let CODE = (qs.get("code") || "").replace(/\D/g, "") || null;
+  let G = null, REF = null, T = null, ME = null, TEIL = 0, LOK = { a: {}, hp: {} }, ANSICHT = "live";
+  const app = () => $("#app");
+  const gRef = c => F.ref(`live/test/${c}`);
+  const SP = () => (G && G.spieler) || {};
+  const AB = () => (G && G.teams && G.teams.ab) || {};
+  const name = id => (SP()[id] || {}).name || "?";
+  const reihe = () => Object.entries(SP()).filter(([, s]) => s && s.name).sort(([, a], [, b]) => (a.name || "").localeCompare(b.name || "", "de")).map(([id]) => id);
+  const fmt = ms => { const s = Math.max(0, Math.round(ms / 1000)); return Math.floor(s / 60) + ":" + String(s % 60).padStart(2, "0"); };
+  const uhrzeit = ts => ts ? new Date(ts).toLocaleTimeString("de-DE", { hour: "2-digit", minute: "2-digit" }) : "–";
+  const datum = ts => ts ? new Date(ts).toLocaleDateString("de-DE") : "";
+
+  /* ---------- Test-Daten & Bewertung ---------- */
+  const hash = s => { let h = 2166136261; for (const c of String(s)) { h ^= c.charCodeAt(0); h = Math.imul(h, 16777619); } return h >>> 0; };
+  function rng(seed) { let a = hash(seed); return () => { a |= 0; a = a + 0x6D2B79F5 | 0; let t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+  const mischen = (arr, r) => { const a = arr.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(r() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+  let ITEMS = [], MAX = 0;
+  async function ladeTest(id) {
+    if (T && T.id === id) return T;
+    T = await F.ladeJSON("assets/test/" + id + ".json");
+    ITEMS = []; T.teile.forEach(t => t.items.forEach(i => ITEMS.push(Object.assign({ teil: t.id }, i))));
+    MAX = ITEMS.reduce((s, i) => s + maxPunkte(i), 0);
+    return T;
+  }
+  const maxPunkte = i => i.typ === "schreiben" ? (i.punkte || 5) : 1;
+  const auto = i => i.typ !== "schreiben";
+  function richtig(i, a) {
+    if (a == null) return false;
+    if (i.typ === "bauen") return Array.isArray(a) && a.length === i.teile.length && a.map(k => i.teile[k]).join(" ") === i.teile.join(" ");
+    if (i.typ === "schreiben") return false;
+    return a === i.r;
+  }
+  const antwortText = (i, a) => { if (a == null || a === "") return "–"; if (i.typ === "bauen") return Array.isArray(a) ? a.map(k => i.teile[k]).join(" ") : "–"; if (i.typ === "schreiben") return String(a); return i.o[a] != null ? i.o[a] : "–"; };
+  const loesungText = i => i.typ === "bauen" ? i.teile.join(" ") : i.typ === "schreiben" ? "(manuell)" : i.o[i.r];
+  const istFa = (i, txt) => i.optFa || i.typ === "bauen" || i.typ === "schreiben" || /[؀-ۿ]/.test(txt || "");
+  const ordnung = (i, pid) => i.fest ? i.o.map((_, k) => k) : mischen(i.o.map((_, k) => k), rng(pid + "|" + i.id));
+  /* Auswertung einer Person */
+  function auswerten(pid) {
+    const E = AB()[pid] || {}, A = E.a || {}, bew = ((G && G.bewertung) || {})[pid] || {};
+    let p = 0; const teile = {}, themen = {}, posten = [];
+    ITEMS.forEach(i => {
+      const a = A[i.id], mx = maxPunkte(i), ok = auto(i) ? richtig(i, a) : null, pk = auto(i) ? (ok ? 1 : 0) : (bew.schreiben != null ? Math.min(mx, +bew.schreiben) : null);
+      if (pk != null) p += pk;
+      const tl = teile[i.teil] = teile[i.teil] || { p: 0, max: 0, offen: 0 }, th = themen[i.thema] = themen[i.thema] || { p: 0, max: 0 };
+      if (pk == null) tl.offen += mx; else { tl.p += pk; tl.max += mx; th.p += pk; th.max += mx; }
+      posten.push({ i, a, ok, pk, mx, hp: (E.hp || {})[i.id] || 0 });
+    });
+    const maxBewertet = ITEMS.reduce((s, i) => s + (auto(i) || bew.schreiben != null ? maxPunkte(i) : 0), 0);
+    return { p, max: maxBewertet, maxGesamt: MAX, proz: maxBewertet ? Math.round(100 * p / maxBewertet) : 0, teile, themen, posten, E, bew, beantwortet: ITEMS.filter(i => A[i.id] != null && A[i.id] !== "").length };
+  }
+  const note = pr => pr >= 90 ? "sehr gut" : pr >= 80 ? "gut" : pr >= 65 ? "befriedigend" : pr >= 50 ? "ausreichend" : "noch nicht bestanden";
+  const barKl = pr => pr >= 75 ? "" : pr >= 50 ? "mittel" : "schwach";
+  const bar = pr => `<div class="bar ${barKl(pr)}" title="${pr} %"><i style="width:${pr}%"></i></div>`;
+  /* Status einer Person */
+  function status(pid) {
+    const E = AB()[pid] || {};
+    if (E.abgabe) return { k: "fertig", t: E.auto ? "abgegeben (Zeit um)" : "abgegeben", kl: "ok" };
+    if (!E.start) return { k: "wartet", t: "noch nicht begonnen", kl: "nix" };
+    if (Date.now() > ende(E)) return { k: "fertig", t: "Zeit abgelaufen", kl: "ok" };
+    return { k: "laeuft", t: "schreibt gerade", kl: "lauf" };
+  }
+  const dauerMin = () => (G && G.dauer) || (T && T.dauer) || 60;
+  const ende = E => (E.start || Date.now()) + (dauerMin() + (E.extra || 0)) * 60000;
+
+  /* ---------- Firebase ---------- */
+  function hoere(c) {
+    if (REF) REF.off(); REF = gRef(c);
+    REF.on("value", async s => {
+      G = s.val();
+      if (G) { try { await ladeTest(G.test || "persisch1"); } catch (e) { return fehler(e, true); } }
+      if (MODUS !== "leitung") LT.pruefeNeuLaden(G);
+      if (LT.tipptGerade(zeichne)) return; zeichne();
+    }, e => fehler(e, true));
+  }
+  function fehler(e, hart) { console.error(e); if (!hart && G) { toast("Das hat nicht geklappt – bitte noch einmal tippen."); return; } app().innerHTML = `<div class="karte" style="margin-top:20px"><b>Das hat nicht geklappt.</b><p class="klein muted">${esc(e && e.message || e)}</p></div>`; }
+  const upd = o => gRef(CODE).update(o).catch(e => fehler(e));
+  /* Vorschau: alles nur lokal */
+  function setzeLokal(t, v) { let o = G; for (let k = 0; k < t.length - 1; k++) o = o[t[k]] = (o[t[k]] && typeof o[t[k]] === "object") ? o[t[k]] : {}; if (v == null) delete o[t[t.length - 1]]; else o[t[t.length - 1]] = JSON.parse(JSON.stringify(v)); setTimeout(zeichne, 0); }
+  const lokal = pfad => { const t = pfad.split("/"); return { set: v => { setzeLokal(t, v); return Promise.resolve(); }, update: o => { Object.entries(o).forEach(([k, v]) => setzeLokal(t.concat(k.split("/")), v)); return Promise.resolve(); } }; };
+  const tnRef = pfad => PROBE ? lokal(pfad) : gRef(CODE).child(pfad);
+
+  /* =====================================================================
+     TEILNEHMENDE
+     ===================================================================== */
+  function pid() { let p = null; try { p = localStorage.getItem("farsi_quiz_pid"); if (!p) { p = "q" + Math.random().toString(36).slice(2, 9); localStorage.setItem("farsi_quiz_pid", p); } } catch (e) { p = "q" + Math.random().toString(36).slice(2, 9); } return p; }
+  function gespeicherterName() { const s = F.sitzung && F.sitzung(); if (s && s.name) return s.name; try { return localStorage.getItem("farsi_quiz_name") || ""; } catch (e) { return ""; } }
+  async function startTN() {
+    if (PROBE) {
+      ME = { id: "probe", name: "Vorschau" };
+      G = { phase: "spiel", test: qs.get("test") || "persisch1", spieler: { probe: { name: "Vorschau", ts: 1 } }, teams: { ab: {} }, zeigen: true };
+      try { await ladeTest(G.test); } catch (e) { return fehler(e, true); }
+      G.dauer = T.dauer; return zeichne();
+    }
+    ME = { id: pid(), name: gespeicherterName() };
+    if (CODE && ME.name) beitreten(CODE, ME.name); else zeichneBeitritt();
+  }
+  function zeichneBeitritt(meld) {
+    app().innerHTML = `<div class="karte" style="margin-top:20px;max-width:480px;margin-inline:auto;text-align:center"><div style="font-size:3rem">📝</div><h2 style="margin:0 0 6px">Online-Test</h2><p>Gib den <b>Test-Code</b> und deinen <b>Vornamen</b> ein.</p>
+      <div style="display:grid;gap:10px;max-width:280px;margin:0 auto"><input class="feld" id="code" inputmode="numeric" maxlength="4" placeholder="Test-Code" value="${esc(CODE || "")}" style="text-align:center;font-size:1.4rem;letter-spacing:.2em"><input class="feld" id="name" maxlength="20" placeholder="Vorname" value="${esc(ME.name)}" style="text-align:center;font-size:1.15rem"><button class="btn" id="los">Weiter ➜</button></div>
+      <p class="klein" style="color:var(--granat);min-height:1.2em">${meld || ""}</p></div>`;
+    $("#los").onclick = () => beitreten($("#code").value.replace(/\D/g, ""), $("#name").value.trim());
+    $$("#code,#name").forEach(i => i.addEventListener("keydown", e => { if (e.key === "Enter") $("#los").click(); }));
+  }
+  async function beitreten(c, n) {
+    if (!/^\d{4}$/.test(c)) return zeichneBeitritt("Der Test-Code hat vier Ziffern."); if (!n) return zeichneBeitritt("Bitte gib deinen Vornamen ein.");
+    n = n.split(/\s+/)[0].slice(0, 20);
+    let g; try { g = (await F.mitTimeout(gRef(c).once("value"), 8000)).val(); } catch (e) { return fehler(e, true); }
+    if (!g || !g.test) { CODE = null; return zeichneBeitritt("Diesen Test-Code gibt es nicht."); }
+    CODE = c; ME.name = n; try { localStorage.setItem("farsi_quiz_name", n); } catch (e) { }
+    history.replaceState(null, "", "?code=" + c);
+    try { if ((g.spieler || {})[ME.id]) await gRef(c).child(`spieler/${ME.id}/name`).set(n); else await gRef(c).child("spieler/" + ME.id).set({ name: n, ts: Date.now() }); } catch (e) { return fehler(e, true); }
+    LT.verbindung(gRef(c).child("spieler/" + ME.id)); hoere(c);
+  }
+  const meinE = () => AB()[ME.id] || {};
+  const antwort = id => LOK.a[id] !== undefined ? LOK.a[id] : (meinE().a || {})[id];
+  const gehoert = id => Math.max(LOK.hp[id] || 0, (meinE().hp || {})[id] || 0);
+  function speichern(id, wert) { LOK.a[id] = wert; tnRef(`teams/ab/${ME.id}/a/${id}`).set(wert === undefined ? null : wert).catch(() => toast("⚠️ Antwort nicht gespeichert – Verbindung prüfen!")); }
+  let ABGABE_LAEUFT = false;
+  function abgeben(autom) {
+    if (ABGABE_LAEUFT) return; ABGABE_LAEUFT = true;
+    const o = { abgabe: Date.now(), auto: !!autom }; Object.entries(LOK.a).forEach(([k, v]) => { o["a/" + k] = v === undefined ? null : v; });
+    tnRef(`teams/ab/${ME.id}`).update(o).then(() => { ABGABE_LAEUFT = false; }).catch(() => { ABGABE_LAEUFT = false; toast("⚠️ Abgabe hat nicht geklappt – bitte noch einmal tippen."); });
+  }
+  function zeichneTN() {
+    if (!G) return zeichneBeitritt("Diesen Test gibt es nicht (mehr).");
+    if (!T) return;
+    const ich = SP()[ME.id];
+    if (!ich) { app().innerHTML = `<div class="karte" style="margin-top:20px;text-align:center">Du bist nicht (mehr) angemeldet.<br><br><button class="btn" id="nochmal">Wieder anmelden</button></div>`; $("#nochmal").onclick = () => beitreten(CODE, ME.name); return; }
+    $("#kopfTitel").textContent = "📝 " + T.titel; $("#kopfInfo").textContent = ich.name;
+    const E = meinE();
+    if (E.abgabe) return zeichneFertig();
+    if (G.phase === "ende") { app().innerHTML = `<div class="karte" style="margin-top:20px;text-align:center"><div style="font-size:3rem">🔒</div><h2>Der Test ist beendet.</h2><p class="muted">Deine gespeicherten Antworten sind bei deiner Lehrkraft.</p></div>`; return; }
+    if (G.phase !== "spiel") { app().innerHTML = `<div class="karte" style="margin-top:20px;text-align:center"><div style="font-size:3rem">⏳</div><h2>Gleich geht’s los</h2><p>Hallo ${esc(ich.name)}! Warte, bis deine Lehrkraft den Test freigibt.</p></div>`; return; }
+    if (!E.start) return zeichneIntro();
+    if (Date.now() > ende(E)) { abgeben(true); app().innerHTML = `<div class="karte" style="margin-top:20px;text-align:center"><div style="font-size:3rem">⏰</div><h2>Die Zeit ist um.</h2><p>Deine Antworten werden abgegeben …</p></div>`; return; }
+    zeichneTest();
+  }
+  function zeichneIntro() {
+    const n = ITEMS.length;
+    app().innerHTML = `<div class="karte" style="margin-top:20px">${PROBE ? `<div class="meldung">👁 Vorschau – nichts wird gespeichert.</div>` : ""}<h2 style="margin-top:0">${esc(T.titel)}</h2><p>${esc(T.untertitel)}</p>
+      <ul><li>⏱ Du hast <b>${dauerMin()} Minuten</b>. Die Uhr startet, wenn du auf „Test beginnen“ tippst, und läuft weiter, auch wenn du die Seite schließt.</li>
+      <li>📋 ${n} Aufgaben in ${T.teile.length} Teilen: ${T.teile.map(t => t.icon + " " + esc(t.titel)).join(" · ")}. Du kannst frei zwischen den Teilen wechseln.</li>
+      <li>🎧 Hören: Jede Aufnahme kannst du höchstens <b>${T.hoerenMax || 3}-mal</b> abspielen. Bitte Kopfhörer benutzen und laut stellen.</li>
+      <li>💾 Jede Antwort wird sofort gespeichert. Am Ende tippst du auf <b>„Abgeben“</b>. Wenn die Zeit um ist, wird automatisch abgegeben.</li>
+      <li>🙏 Bitte ohne Hilfsmittel arbeiten – der Test zeigt dir und deiner Lehrkraft, was schon gut klappt.</li></ul>
+      <button class="btn" id="beginn" style="width:100%;font-size:1.1rem">▶ Test beginnen</button></div>`;
+    $("#beginn").onclick = () => tnRef(`teams/ab/${ME.id}`).update({ start: Date.now() }).catch(e => fehler(e));
+  }
+  function itemHtml(i, nr) {
+    const a = antwort(i.id);
+    let h = `<div class="item" id="it-${i.id}"><div class="inr">${nr}.</div><div class="fr">${i.frage}</div>${i.fa ? `<div class="tfa">${esc(i.fa)}</div>` : ""}`;
+    if (i.audio) { const rest = (T.hoerenMax || 3) - gehoert(i.id); h += `<div class="thoer"><button class="btn ${rest > 0 ? "" : "zwei"} klein" data-hoer="${i.id}" ${rest > 0 ? "" : "disabled"}>▶ abspielen</button><span class="klein muted">${rest > 0 ? `noch ${rest}×` : "nicht mehr abspielbar"}</span></div>`; }
+    if (i.typ === "bauen") {
+      const pool = mischen(i.teile.map((_, k) => k), rng(ME.id + "|" + i.id)), gew = Array.isArray(a) ? a : [];
+      h += `<div class="tbz">${gew.map(k => `<span class="tk" data-bauweg="${i.id}|${k}">${esc(i.teile[k])}</span>`).join("") || `<span class="klein muted" style="direction:ltr">Tippe die Wörter unten an …</span>`}</div>
+        <div class="tbp">${pool.map(k => `<span class="tk ${gew.includes(k) ? "weg" : ""}" data-bau="${i.id}|${k}">${esc(i.teile[k])}</span>`).join("")}</div>
+        ${gew.length ? `<button class="btn zwei klein" data-baureset="${i.id}" style="margin-top:6px">↺ neu</button>` : ""}`;
+    } else if (i.typ === "schreiben") {
+      h += `<textarea class="feld" id="schreib-${i.id}" data-schreib="${i.id}" dir="rtl" placeholder="اینجا بنویس …">${esc(a || "")}</textarea>
+        <div class="tast">${SW.TASTATUR.map(z => `<div class="z">${z.map(k => `<button data-taste="${esc(k)}">${esc(k)}</button>`).join("")}</div>`).join("")}<div class="z"><button class="breit" data-taste="⌫">⌫ löschen</button><button class="breit" data-taste="${SW.ZWNJ}">Halbabstand</button><button class="breit" data-taste=" " style="min-width:180px">Leerzeichen</button></div></div>
+        <p class="klein muted">Wird automatisch gespeichert. Du kannst auch die eigene persische Tastatur benutzen.</p>`;
+    } else {
+      h += `<div class="topts">${ordnung(i, ME.id).map(k => `<button class="topt ${istFa(i, i.o[k]) ? "fa" : ""} ${a === k ? "an" : ""}" data-wahl="${i.id}|${k}"><span class="kr"></span><span>${esc(i.o[k])}</span></button>`).join("")}</div>`;
+    }
+    return h + `</div>`;
+  }
+  let NR = {};
+  function zeichneTest() {
+    const E = meinE(); NR = {}; let n = 0; ITEMS.forEach(i => { NR[i.id] = ++n; });
+    const t = T.teile[TEIL], beantw = ITEMS.filter(i => { const a = antwort(i.id); return a != null && a !== "" && !(Array.isArray(a) && !a.length); }).length;
+    const teilStand = tl => tl.items.filter(i => { const a = antwort(i.id); return a != null && a !== "" && !(Array.isArray(a) && !a.length); }).length;
+    let h = `<div class="tleiste nodruck"><div><span class="uhr" data-ende="${ende(E)}">${fmt(ende(E) - Date.now())}</span> <span class="klein muted">verbleibend</span></div><div class="klein"><b>${beantw}</b> von ${ITEMS.length} beantwortet</div><button class="btn" id="abgeben">✓ Abgeben</button></div>
+      ${PROBE ? `<div class="meldung">👁 Vorschau – nichts wird gespeichert.</div>` : ""}
+      <div class="ttabs">${T.teile.map((tl, k) => `<button class="${k === TEIL ? "an" : ""}" data-teil="${k}">${tl.icon} ${esc(tl.titel)} <span class="n">${teilStand(tl)}/${tl.items.length}</span></button>`).join("")}</div>
+      <h2 style="margin:4px 0">${t.icon} Teil ${t.id}: ${esc(t.titel)}</h2><p class="klein">${t.hinweis || ""}</p>`;
+    if (t.text) h += `<div class="tlese">${t.text.map(z => esc(z)).join("<br>")}</div>`;
+    h += t.items.map(i => itemHtml(i, NR[i.id])).join("");
+    h += `<div class="navi">${TEIL > 0 ? `<button class="btn zwei" data-teil="${TEIL - 1}">◀ ${esc(T.teile[TEIL - 1].titel)}</button>` : "<span></span>"}${TEIL < T.teile.length - 1 ? `<button class="btn" data-teil="${TEIL + 1}">${esc(T.teile[TEIL + 1].titel)} ▶</button>` : `<button class="btn" id="abgeben2">✓ Test abgeben</button>`}</div>`;
+    LT.render(app(), h);
+    verdrahteTest();
+  }
+  function verdrahteTest() {
+    $$("[data-teil]").forEach(b => b.onclick = () => { TEIL = +b.dataset.teil; if (!PROBE) tnRef(`teams/ab/${ME.id}/teil`).set(T.teile[TEIL].id).catch(() => { }); zeichne(); window.scrollTo(0, 0); });
+    $$("[data-wahl]").forEach(b => b.onclick = () => { const [id, k] = b.dataset.wahl.split("|"); speichern(id, +k); zeichne(); });
+    $$("[data-bau]").forEach(b => b.onclick = () => { const [id, k] = b.dataset.bau.split("|"); const a = Array.isArray(antwort(id)) ? antwort(id).slice() : []; if (a.includes(+k)) return; a.push(+k); speichern(id, a); zeichne(); });
+    $$("[data-bauweg]").forEach(b => b.onclick = () => { const [id, k] = b.dataset.bauweg.split("|"); const a = (antwort(id) || []).filter(x => x !== +k); speichern(id, a.length ? a : null); zeichne(); });
+    $$("[data-baureset]").forEach(b => b.onclick = () => { speichern(b.dataset.baureset, null); zeichne(); });
+    $$("[data-hoer]").forEach(b => b.onclick = () => { const id = b.dataset.hoer, i = ITEMS.find(x => x.id === id), n = gehoert(id); if (n >= (T.hoerenMax || 3)) return; LOK.hp[id] = n + 1; tnRef(`teams/ab/${ME.id}/hp/${id}`).set(n + 1).catch(() => { }); spiele(i.audio); zeichne(); });
+    let zeit = null;
+    $$("[data-schreib]").forEach(ta => { ta.oninput = () => { LOK.a[ta.dataset.schreib] = ta.value; clearTimeout(zeit); zeit = setTimeout(() => speichern(ta.dataset.schreib, ta.value), 700); }; ta.onblur = () => speichern(ta.dataset.schreib, ta.value); });
+    $$("[data-taste]").forEach(b => b.onmousedown = e => e.preventDefault());
+    $$("[data-taste]").forEach(b => b.onclick = () => { const ta = $("[data-schreib]"); if (!ta) return; const k = b.dataset.taste, s = ta.selectionStart ?? ta.value.length, e = ta.selectionEnd ?? s; let v = ta.value, pos = s;
+      if (k === "⌫") { if (s === e && s > 0) { v = v.slice(0, s - 1) + v.slice(e); pos = s - 1; } else { v = v.slice(0, s) + v.slice(e); } } else { const z = k.replace(/^ـ/, ""); v = v.slice(0, s) + z + v.slice(e); pos = s + z.length; }
+      ta.value = v; ta.focus(); ta.setSelectionRange(pos, pos); ta.oninput(); });
+    const ab = () => { const offen = ITEMS.length - ITEMS.filter(i => { const a = antwort(i.id); return a != null && a !== "" && !(Array.isArray(a) && !a.length); }).length;
+      if (confirm(offen ? `Noch ${offen} Aufgabe(n) ohne Antwort. Trotzdem abgeben?` : "Test jetzt abgeben? Danach kannst du nichts mehr ändern.")) abgeben(false); };
+    $("#abgeben").onclick = ab; const a2 = $("#abgeben2"); if (a2) a2.onclick = ab;
+  }
+  /* Audio: immer abspielen (auch wenn Ton in den Einstellungen aus ist) */
+  let AUDIO = null;
+  function spiele(text) {
+    try { if (AUDIO) AUDIO.pause(); const url = F.audioPfad(text); if (url) { AUDIO = new Audio(url); AUDIO.play().catch(() => tts(text)); return; } } catch (e) { }
+    tts(text);
+  }
+  function tts(text) { try { const u = new SpeechSynthesisUtterance(text); const v = speechSynthesis.getVoices().find(v => /^fa/i.test(v.lang)); if (v) u.voice = v; u.lang = "fa-IR"; u.rate = 0.85; speechSynthesis.cancel(); speechSynthesis.speak(u); } catch (e) { toast("Audio kann auf diesem Gerät nicht abgespielt werden."); } }
+  function zeichneFertig() {
+    const E = meinE();
+    let h = `<div class="karte" style="margin-top:20px;text-align:center"><div style="font-size:3rem">✅</div><h2>Danke, ${esc(name(ME.id))}!</h2><p>Dein Test ist ${E.auto ? "automatisch (Zeit um) " : ""}abgegeben – um ${uhrzeit(E.abgabe)} Uhr.</p></div>`;
+    if (G.zeigen || PROBE) {
+      const R = auswerten(ME.id);
+      h += `<div class="karte" style="margin-top:12px"><h3 style="margin-top:0">Dein Ergebnis: ${R.p} von ${R.max} Punkten (${R.proz} %)</h3>${R.bew.schreiben == null ? `<p class="klein muted">Der Schreibteil wird noch von deiner Lehrkraft bewertet.</p>` : ""}
+        <table class="rep">${T.teile.map(t => { const x = R.teile[t.id]; if (!x || !x.max) return ""; const pr = Math.round(100 * x.p / x.max); return `<tr><td>${t.icon} ${esc(t.titel)}</td><td class="z">${x.p}/${x.max}</td><td style="width:40%">${bar(pr)}</td></tr>`; }).join("")}</table>
+        <div class="klein-h">Diese Aufgaben schau dir noch einmal an</div>${R.posten.filter(x => x.ok === false).map(x => `<div class="ant" style="grid-template-columns:44px 1fr 1fr"><b>${x.i.id}</b><span>${x.i.frage}${x.i.fa ? ` <span class="fa">${esc(x.i.fa)}</span>` : ""}</span><span>✔ <span class="${istFa(x.i, loesungText(x.i)) ? "fa" : ""}">${esc(loesungText(x.i))}</span></span></div>`).join("") || "<p>Alles richtig – آفَرین! 🎉</p>"}</div>`;
+    }
+    app().innerHTML = h;
+  }
+
+  /* =====================================================================
+     LEHRKRAFT
+     ===================================================================== */
+  function startLeitung() {
+    document.body.classList.add("lehrend");
+    firebase.auth().onAuthStateChanged(async u => {
+      if (!u) { app().innerHTML = `<div class="karte" style="margin-top:20px"><h2>Nur für Lehrkräfte</h2><p>Bitte zuerst in der <a href="konsole.html">Konsole</a> anmelden.</p></div>`; return; }
+      LT.verbindung(null);
+      if (CODE) hoere(CODE); else zeichneAnlegen();
+    });
+  }
+  async function zeichneAnlegen() {
+    try { await ladeTest("persisch1"); } catch (e) { return fehler(e, true); }
+    app().innerHTML = `<div class="karte" style="margin-top:18px"><h2 style="margin-top:0">📝 Online-Test anlegen</h2>
+      <p><b>${esc(T.titel)}</b> – ${esc(T.untertitel)}. ${ITEMS.length} Aufgaben, ${MAX} Punkte (davon ${ITEMS.filter(i => !auto(i)).reduce((s, i) => s + maxPunkte(i), 0)} für den Schreibteil, den du selbst bewertest).</p>
+      <div style="display:grid;gap:10px;max-width:420px"><label>Dauer (Minuten) <input class="feld" id="dauer" type="number" min="10" max="180" value="${T.dauer}" style="width:90px"></label>
+      <label><input type="checkbox" id="zeigen"> Ergebnis den TN direkt nach der Abgabe zeigen</label>
+      <button class="btn" id="anlegen">▶ Test anlegen und Code erzeugen</button></div>
+      <p class="klein muted" style="margin-top:12px">Die TN öffnen <b>${esc(location.host + location.pathname.replace(/[^/]*$/, ""))}code.html</b> und geben den Code und ihren Vornamen ein. Jede/r macht den Test für sich – die Uhr startet, wenn die Person auf „Test beginnen“ tippt.</p>
+      <p><a class="btn zwei klein" href="?probe=1" target="_blank" style="text-decoration:none">👁 Test selbst ausprobieren (Vorschau)</a></p></div>`;
+    $("#anlegen").onclick = async () => {
+      const d = { erstellt: Date.now(), phase: "warten", test: "persisch1", dauer: Math.max(10, Math.min(180, +$("#dauer").value || 60)), zeigen: $("#zeigen").checked };
+      try { CODE = await LT.neueRunde(gRef, d); } catch (e) { return fehler(e, true); }
+      history.replaceState(null, "", `?leitung=1&code=${CODE}`); hoere(CODE);
+    };
+  }
+  function zeichneLeitung() {
+    if (!G) { app().innerHTML = `<div class="karte" style="margin-top:20px">Diesen Test gibt es nicht (mehr). <a href="?leitung=1">Neuen Test anlegen</a></div>`; return; }
+    if (!T) return;
+    $("#kopfTitel").textContent = "📝 " + T.titel;
+    const ids = reihe(), st = ids.map(status), fertig = st.filter(s => s.k === "fertig").length, laeuft = st.filter(s => s.k === "laeuft").length;
+    let h = `<div class="nodruck" style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-top:10px"><div><span class="klein muted">Test-Code </span><span class="lv-code">${CODE}</span> <span class="klein muted">· ${esc(location.host + location.pathname.replace(/[^/]*$/, ""))}code.html · ${dauerMin()} Min. · angelegt ${datum(G.erstellt)}</span></div>
+      <div class="btnreihe">${G.phase === "warten" ? `<button class="btn" id="freigeben">▶ Test freigeben</button>` : G.phase === "spiel" ? `<button class="btn rot" id="beenden">⏹ Test beenden</button>` : `<button class="btn zwei" id="oeffnen">↺ wieder öffnen</button>`}
+      <label class="klein"><input type="checkbox" id="zeigen" ${G.zeigen ? "checked" : ""}> Ergebnis den TN zeigen</label></div></div>
+      <div class="meldung nodruck">${G.phase === "warten" ? "⏳ Die TN können sich schon anmelden, aber noch nicht beginnen." : G.phase === "spiel" ? `🟢 Test läuft · ${laeuft} schreiben gerade · ${fertig} fertig · ${ids.length - laeuft - fertig} noch nicht begonnen` : "🔒 Test beendet – keine Antworten mehr möglich."}</div>
+      <div class="seg nodruck" style="margin:6px 0 10px"><button class="${ANSICHT === "live" ? "an" : ""}" data-ansicht="live">👥 Teilnehmende (live)</button><button class="${ANSICHT === "bericht" ? "an" : ""}" data-ansicht="bericht">📊 Bericht</button></div>`;
+    h += ANSICHT === "live" ? liveHtml(ids) : berichtHtml(ids);
+    LT.render(app(), h);
+    verdrahteLeitung();
+  }
+  function liveHtml(ids) {
+    if (!ids.length) return `<p class="muted">Noch niemand angemeldet.</p>`;
+    return `<table class="rep"><tr><th>Name</th><th>Status</th><th>Beginn</th><th>Restzeit</th><th>Teil</th><th>beantwortet</th><th>Punkte</th><th class="nodruck"></th></tr>${ids.map(id => {
+      const s = status(id), E = AB()[id] || {}, R = auswerten(id);
+      return `<tr><td><b>${esc(name(id))}</b></td><td><span class="pill ${s.kl}">${s.t}</span></td><td>${uhrzeit(E.start)}</td><td class="z">${s.k === "laeuft" ? `<span data-ende="${ende(E)}">${fmt(ende(E) - Date.now())}</span>` : "–"}${E.extra ? ` <span class="klein muted">(+${E.extra})</span>` : ""}</td><td>${E.teil ? esc(E.teil) : "–"}</td><td class="z">${R.beantwortet}/${ITEMS.length}</td><td class="z">${s.k === "fertig" ? `${R.p}/${R.max} · ${R.proz} %` : "–"}</td>
+        <td class="nodruck">${s.k === "laeuft" ? `<button class="min-btn" data-extra="${id}">+5 Min.</button> <button class="min-btn" data-zwang="${id}">abgeben</button>` : ""}${s.k === "wartet" ? `<button class="min-btn" data-weg="${id}">✕</button>` : ""}</td></tr>`; }).join("")}</table>
+      <p class="klein muted">Alle Antworten werden live gespeichert. „+5 Min.“ verlängert die Zeit für eine Person, „abgeben“ beendet den Test für sie.</p>`;
+  }
+  /* ---------- Bericht ---------- */
+  function berichtHtml(ids) {
+    const fertig = ids.filter(id => status(id).k === "fertig"), laufend = ids.filter(id => status(id).k === "laeuft");
+    const basis = fertig.length ? fertig : laufend;
+    if (!basis.length) return `<p class="muted">Sobald jemand abgegeben hat, erscheint hier der Bericht.</p>`;
+    const R = {}; basis.forEach(id => { R[id] = auswerten(id); });
+    const proz = basis.map(id => R[id].proz).sort((a, b) => a - b), mittel = Math.round(proz.reduce((s, x) => s + x, 0) / proz.length), median = proz[Math.floor((proz.length - 1) / 2)];
+    const offenSchreiben = basis.filter(id => R[id].bew.schreiben == null && ITEMS.some(i => !auto(i))).length;
+    /* Themen über alle */
+    const themen = {}; ITEMS.forEach(i => { themen[i.thema] = themen[i.thema] || { p: 0, max: 0 }; });
+    basis.forEach(id => Object.entries(R[id].themen).forEach(([k, v]) => { themen[k].p += v.p; themen[k].max += v.max; }));
+    const thProz = Object.entries(themen).filter(([, v]) => v.max).map(([k, v]) => [k, Math.round(100 * v.p / v.max)]).sort((a, b) => b[1] - a[1]);
+    const stark = thProz.filter(x => x[1] >= 80).map(x => x[0]), schwach = thProz.filter(x => x[1] < 60).map(x => x[0]);
+    let h = `<div class="nodruck btnreihe" style="margin-bottom:8px"><button class="btn zwei klein" id="drucken">🖨 Drucken / als PDF</button><button class="btn zwei klein" id="csv">⬇ CSV (Excel)</button><button class="btn zwei klein" id="alleAuf">alle Einzelberichte aufklappen</button></div>
+      <div class="karte"><h2 style="margin-top:0">📊 Bericht: ${esc(T.titel)}</h2><p class="klein muted" style="margin-top:0">Test-Code ${CODE} · ${datum(G.erstellt)} · ${dauerMin()} Min. · ${fertig.length} abgegeben${laufend.length ? `, ${laufend.length} noch dabei${fertig.length ? "" : " (vorläufiger Stand)"}` : ""}${offenSchreiben ? ` · <b>Schreibteil bei ${offenSchreiben} Person(en) noch nicht bewertet</b> – Prozente beziehen sich bis dahin auf die automatisch bewerteten Aufgaben` : ""}</p>
+      <div class="kpi"><div>Durchschnitt<b>${mittel} %</b></div><div>Median<b>${median} %</b></div><div>Spanne<b>${proz[0]}–${proz[proz.length - 1]} %</b></div><div>bestanden (≥ 50 %)<b>${proz.filter(x => x >= 50).length} / ${proz.length}</b></div></div>
+      <div class="klein-h">Kurz gesagt</div><ul>
+        ${stark.length ? `<li>💪 <b>Gut gefestigt:</b> ${stark.map(esc).join(", ")}</li>` : ""}
+        ${schwach.length ? `<li>🔁 <b>Wiederholen:</b> ${schwach.map(esc).join(", ")}</li>` : "<li>Kein Thema liegt im Durchschnitt unter 60 %.</li>"}
+        ${(() => { const h2 = thProz.find(x => x[0] === "Hören"); return h2 ? `<li>🎧 Hören: ${h2[1]} % – im Mittel ${Math.round(basis.reduce((s, id) => s + ITEMS.filter(i => i.audio).reduce((a, i) => a + ((R[id].E.hp || {})[i.id] || 0), 0), 0) / basis.length / Math.max(1, ITEMS.filter(i => i.audio).length) * 10) / 10}-mal pro Aufnahme abgespielt</li>` : ""; })()}
+      </ul>
+      <div class="klein-h">Themen (alle TN)</div><table class="rep">${thProz.map(([k, p]) => `<tr><td>${esc(k)}</td><td class="z" style="width:60px">${p} %</td><td style="width:50%">${bar(p)}</td></tr>`).join("")}</table></div>`;
+    /* Übersicht pro Person */
+    h += `<div class="karte" style="margin-top:12px"><h3 style="margin-top:0">Übersicht pro Person</h3><div style="overflow-x:auto"><table class="rep"><tr><th>Name</th><th>Punkte</th><th>%</th><th>Einschätzung</th>${T.teile.map(t => `<th title="${esc(t.titel)}">${t.icon} ${t.id}</th>`).join("")}<th>Zeit</th></tr>
+      ${basis.slice().sort((a, b) => R[b].proz - R[a].proz).map(id => { const x = R[id], E = x.E, zeit = E.start ? Math.round(((E.abgabe || Math.min(Date.now(), ende(E))) - E.start) / 60000) : 0;
+        return `<tr><td><b>${esc(name(id))}</b>${status(id).k === "laeuft" ? ' <span class="pill lauf">läuft</span>' : ""}</td><td class="z">${x.p}/${x.max}</td><td class="z"><b>${x.proz}</b></td><td>${note(x.proz)}</td>${T.teile.map(t => { const y = x.teile[t.id]; if (!y) return "<td></td>"; if (!y.max) return `<td class="klein muted">offen</td>`; const pr = Math.round(100 * y.p / y.max); return `<td class="z" style="color:${pr < 50 ? "var(--granat)" : pr < 75 ? "#8a6000" : "var(--gruen)"}">${pr}</td>`; }).join("")}<td class="z">${zeit} Min.</td></tr>`; }).join("")}</table></div>
+      <p class="klein muted">Einschätzung: ab 90 % sehr gut · ab 80 % gut · ab 65 % befriedigend · ab 50 % ausreichend.</p></div>`;
+    /* Aufgabenanalyse */
+    h += `<div class="karte" style="margin-top:12px"><h3 style="margin-top:0">Aufgabenanalyse</h3><p class="klein muted" style="margin-top:0">Wie viele haben die Aufgabe gelöst – und welche falsche Antwort kam am häufigsten?</p><div style="overflow-x:auto"><table class="rep"><tr><th>Nr.</th><th>Aufgabe</th><th>Lösung</th><th>richtig</th><th>häufigster Fehler</th></tr>
+      ${ITEMS.filter(auto).map(i => { const ant = basis.map(id => (R[id].E.a || {})[i.id]), ok = ant.filter(a => richtig(i, a)).length, pr = Math.round(100 * ok / basis.length);
+        const falsch = {}; ant.forEach(a => { if (!richtig(i, a)) { const t = antwortText(i, a); falsch[t] = (falsch[t] || 0) + 1; } }); const hf = Object.entries(falsch).sort((a, b) => b[1] - a[1])[0];
+        return `<tr><td><b>${i.id}</b></td><td>${i.frage}${i.fa ? ` <span class="fa">${esc(i.fa)}</span>` : ""}${i.audio ? ` <span class="klein muted">🎧 <span class="fa">${esc(i.audio)}</span></span>` : ""}</td><td class="${istFa(i, loesungText(i)) ? "fa" : ""}">${esc(loesungText(i))}</td><td style="min-width:110px">${pr} % ${bar(pr)}</td><td>${hf ? `<span class="${istFa(i, hf[0]) ? "fa" : ""}">${esc(hf[0])}</span> <span class="klein muted">(${hf[1]}×)</span>` : "–"}</td></tr>`; }).join("")}</table></div></div>`;
+    /* Einzelberichte */
+    h += `<div class="karte" style="margin-top:12px"><h3 style="margin-top:0">Einzelberichte</h3>${basis.map(id => einzelHtml(id, R[id])).join("")}</div>`;
+    return h;
+  }
+  function einzelHtml(id, x) {
+    const E = x.E, th = Object.entries(x.themen).filter(([, v]) => v.max).map(([k, v]) => [k, Math.round(100 * v.p / v.max)]);
+    const gut = th.filter(t => t[1] >= 80).map(t => t[0]), ueben = th.filter(t => t[1] < 60).map(t => t[0]);
+    const schreibItem = ITEMS.find(i => i.typ === "schreiben"), text = schreibItem ? (E.a || {})[schreibItem.id] : null;
+    let h = `<details class="person" data-merk="p-${id}"><summary>${esc(name(id))} – ${x.p}/${x.max} Punkte · ${x.proz} % · ${note(x.proz)}</summary>
+      <p class="klein muted">Beginn ${uhrzeit(E.start)} · Abgabe ${uhrzeit(E.abgabe)}${E.auto ? " (automatisch, Zeit um)" : ""}${E.extra ? ` · +${E.extra} Min. Verlängerung` : ""} · ${x.beantwortet}/${ITEMS.length} beantwortet</p>
+      <p>${gut.length ? `💪 <b>Stärken:</b> ${gut.map(esc).join(", ")}<br>` : ""}${ueben.length ? `🔁 <b>Üben:</b> ${ueben.map(esc).join(", ")}` : "Keine Themen unter 60 %."}</p>
+      <table class="rep" style="margin-bottom:8px">${th.map(([k, p]) => `<tr><td>${esc(k)}</td><td class="z" style="width:60px">${p} %</td><td style="width:45%">${bar(p)}</td></tr>`).join("")}</table>`;
+    if (schreibItem) h += `<div class="klein-h">✍️ Schreiben (${schreibItem.punkte || 5} P.)</div><div class="tlese" style="font-size:1.15rem">${text ? esc(text).replace(/\n/g, "<br>") : '<span class="klein muted" style="direction:ltr">(nichts geschrieben)</span>'}</div>
+      <div class="nodruck" style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:6px 0"><label class="klein">Punkte <input class="feld" type="number" min="0" max="${schreibItem.punkte || 5}" step="0.5" value="${x.bew.schreiben ?? ""}" data-bew="${id}" style="width:70px"></label><input class="feld" placeholder="Notiz für dich (optional)" value="${esc(x.bew.notiz || "")}" data-notiz="${id}" style="flex:1;min-width:200px"></div>
+      ${x.bew.schreiben != null ? `<p class="klein">Bewertet: <b>${x.bew.schreiben}</b> von ${schreibItem.punkte || 5}${x.bew.notiz ? ` · ${esc(x.bew.notiz)}` : ""}</p>` : ""}`;
+    h += `<div class="klein-h">Alle Antworten</div>${T.teile.filter(t => t.items.some(auto)).map(t => `<div class="klein" style="font-weight:800;margin-top:6px">${t.icon} ${esc(t.titel)}</div>${x.posten.filter(p => p.i.teil === t.id && auto(p.i)).map(p => `<div class="ant"><span>${p.ok ? "✅" : "❌"} <b>${p.i.id}</b></span><span>${p.i.frage}${p.i.fa ? ` <span class="fa">${esc(p.i.fa)}</span>` : ""}${p.i.audio ? ` <span class="klein muted">🎧 ${p.hp}× gehört</span>` : ""}</span><span class="${istFa(p.i, antwortText(p.i, p.a)) ? "fa" : ""}">${esc(antwortText(p.i, p.a))}</span><span class="${istFa(p.i, loesungText(p.i)) ? "fa" : ""}" style="color:var(--gruen)">${p.ok ? "" : esc(loesungText(p.i))}</span></div>`).join("")}`).join("")}`;
+    return h + `</details>`;
+  }
+  function csv(ids) {
+    const fertig = ids.filter(id => status(id).k !== "wartet"), q = s => `"${String(s).replace(/"/g, '""')}"`;
+    const kopf = ["Name", "Punkte", "Max", "Prozent", "Einschätzung"].concat(T.teile.map(t => t.titel + " %"), ITEMS.map(i => i.id), ["Schreiben (Text)", "Notiz"]);
+    const zeilen = fertig.map(id => { const x = auswerten(id); return [name(id), x.p, x.max, x.proz, note(x.proz)].concat(T.teile.map(t => { const y = x.teile[t.id]; return y && y.max ? Math.round(100 * y.p / y.max) : ""; }), x.posten.map(p => auto(p.i) ? (p.ok ? 1 : 0) : (x.bew.schreiben ?? "")), [((x.E.a || {})[(ITEMS.find(i => i.typ === "schreiben") || {}).id] || ""), x.bew.notiz || ""]); });
+    const text = "﻿" + [kopf].concat(zeilen).map(z => z.map(q).join(";")).join("\n");
+    const a = document.createElement("a"); a.href = URL.createObjectURL(new Blob([text], { type: "text/csv;charset=utf-8" })); a.download = `test-${CODE}-${datum(G.erstellt)}.csv`; document.body.appendChild(a); a.click(); a.remove();
+  }
+  function verdrahteLeitung() {
+    const fr = $("#freigeben"); if (fr) fr.onclick = () => upd({ phase: "spiel", freigabe: Date.now() });
+    const be = $("#beenden"); if (be) be.onclick = () => { const l = reihe().filter(id => status(id).k === "laeuft").length; if (confirm(l ? `${l} Person(en) schreiben noch. Ihre bisherigen Antworten bleiben gespeichert. Test wirklich beenden?` : "Test beenden? Danach kann niemand mehr antworten.")) upd({ phase: "ende" }); };
+    const oe = $("#oeffnen"); if (oe) oe.onclick = () => upd({ phase: "spiel" });
+    const ze = $("#zeigen"); if (ze) ze.onchange = () => upd({ zeigen: ze.checked });
+    $$("[data-ansicht]").forEach(b => b.onclick = () => { ANSICHT = b.dataset.ansicht; zeichne(); });
+    $$("[data-extra]").forEach(b => b.onclick = () => { const id = b.dataset.extra; upd({ [`teams/ab/${id}/extra`]: ((AB()[id] || {}).extra || 0) + 5 }); });
+    $$("[data-zwang]").forEach(b => b.onclick = () => { if (confirm(`Test für ${name(b.dataset.zwang)} jetzt beenden?`)) upd({ [`teams/ab/${b.dataset.zwang}/abgabe`]: Date.now(), [`teams/ab/${b.dataset.zwang}/auto`]: true }); });
+    $$("[data-weg]").forEach(b => b.onclick = () => { if (confirm(`${name(b.dataset.weg)} entfernen?`)) upd({ [`spieler/${b.dataset.weg}`]: null }); });
+    $$("[data-bew]").forEach(i => i.onchange = () => { const v = i.value === "" ? null : Math.max(0, Math.min(+i.max, +i.value)); upd({ [`bewertung/${i.dataset.bew}/schreiben`]: v }); });
+    $$("[data-notiz]").forEach(i => i.onchange = () => upd({ [`bewertung/${i.dataset.notiz}/notiz`]: i.value.trim() || null }));
+    const dr = $("#drucken"); if (dr) dr.onclick = () => { $$("details.person").forEach(d => d.open = true); setTimeout(() => window.print(), 100); };
+    const cs = $("#csv"); if (cs) cs.onclick = () => csv(reihe());
+    const al = $("#alleAuf"); if (al) al.onclick = () => $$("details.person").forEach(d => d.open = true);
+  }
+
+  /* Uhr: jede Sekunde aktualisieren, bei 0 automatisch abgeben */
+  setInterval(() => {
+    $$("[data-ende]").forEach(el => { const rest = +el.dataset.ende - Date.now(); el.textContent = fmt(rest); el.classList.toggle("rot", rest < 60000); el.classList.toggle("warn", rest >= 60000 && rest < 5 * 60000); });
+    if (MODUS === "tn" && G && T && ME && G.phase === "spiel") { const E = meinE(); if (E.start && !E.abgabe && Date.now() > ende(E)) { abgeben(true); } }
+  }, 1000);
+
+  function zeichne() { MODUS === "leitung" ? zeichneLeitung() : zeichneTN(); }
+  window.TEST_APP = { get G() { return G; }, auswerten, get ITEMS() { return ITEMS; } };
+  if (!PROBE) F.initFB();
+  MODUS === "leitung" ? startLeitung() : startTN();
+})();
+</script>
+</body>
+</html>
