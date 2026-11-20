@@ -88,7 +88,7 @@
   const qs = new URLSearchParams(location.search);
   const MODUS = qs.get("leitung") ? "leitung" : "tn", PROBE = !!qs.get("probe");
   let CODE = (qs.get("code") || "").replace(/\D/g, "") || null;
-  let G = null, REF = null, T = null, ME = null, TEIL = 0, LOK = { a: {}, hp: {} }, ANSICHT = "live";
+  let G = null, REF = null, T = null, ME = null, TEIL = 0, LOK = { a: {}, hp: {} }, ANSICHT = qs.get("ansicht") === "bericht" ? "bericht" : "live";
   const app = () => $("#app");
   const gRef = c => F.ref(`live/test/${c}`);
   const SP = () => (G && G.spieler) || {};
@@ -323,11 +323,41 @@
       <label><input type="checkbox" id="zeigen"> Ergebnis den TN direkt nach der Abgabe zeigen</label>
       <button class="btn" id="anlegen">▶ Test anlegen und Code erzeugen</button></div>
       <p class="klein muted" style="margin-top:12px">Die TN öffnen <b>${esc(location.host + location.pathname.replace(/[^/]*$/, ""))}code.html</b> und geben den Code und ihren Vornamen ein. Jede/r macht den Test für sich – die Uhr startet, wenn die Person auf „Test beginnen“ tippt.</p>
-      <p><a class="btn zwei klein" href="?probe=1" target="_blank" style="text-decoration:none">👁 Test selbst ausprobieren (Vorschau)</a></p></div>`;
+      <p><a class="btn zwei klein" href="?probe=1" target="_blank" style="text-decoration:none">👁 Test selbst ausprobieren (Vorschau)</a></p></div>
+      <div class="karte" style="margin-top:14px" id="archiv"><h2 style="margin-top:0">📚 Testarchiv</h2><p class="muted">Lade frühere Tests …</p></div>`;
+    zeichneArchiv();
     $("#anlegen").onclick = async () => {
       const d = { erstellt: Date.now(), phase: "warten", test: "persisch1", dauer: Math.max(10, Math.min(180, +$("#dauer").value || 60)), zeigen: $("#zeigen").checked };
       try { CODE = await LT.neueRunde(gRef, d); } catch (e) { return fehler(e, true); }
       history.replaceState(null, "", `?leitung=1&code=${CODE}`); hoere(CODE);
+    };
+  }
+  /* ---------- Testarchiv: alle bisherigen Tests mit Ergebnissen ---------- */
+  function statsFuer(g) {
+    const alt = G; G = g;
+    try {
+      const ids = reihe(), fertig = ids.filter(id => status(id).k === "fertig"), R = fertig.map(id => ({ id, name: name(id), x: auswerten(id) }));
+      const schnitt = R.length ? Math.round(R.reduce((s, r) => s + r.x.proz, 0) / R.length) : null;
+      return { ids, fertig, R, schnitt, offen: R.filter(r => r.x.bew.schreiben == null).length };
+    } finally { G = alt; }
+  }
+  let ARCHIV = null;
+  async function zeichneArchiv() {
+    const box = $("#archiv"); if (!box) return;
+    try { ARCHIV = (await F.mitTimeout(F.ref("live/test").once("value"), 10000)).val() || {}; } catch (e) { box.innerHTML = `<h2 style="margin-top:0">📚 Testarchiv</h2><p class="klein">Das Archiv konnte nicht geladen werden: ${esc(e.message || e)}</p>`; return; }
+    const liste = Object.entries(ARCHIV).filter(([, g]) => g && g.test).sort(([, a], [, b]) => (b.erstellt || 0) - (a.erstellt || 0));
+    if (!liste.length) { box.innerHTML = `<h2 style="margin-top:0">📚 Testarchiv</h2><p class="muted">Noch keine Tests. Jeder Test, den du anlegst, bleibt hier mit allen Antworten gespeichert.</p>`; return; }
+    box.innerHTML = `<h2 style="margin-top:0">📚 Testarchiv</h2><p class="klein muted" style="margin-top:0">Alle Tests bleiben mit sämtlichen Antworten gespeichert. Mit „📊 Bericht“ öffnest du den vollständigen Bericht (Drucken/PDF, CSV).</p>
+      <div style="overflow-x:auto"><table class="rep"><tr><th>Datum</th><th>Bezeichnung</th><th>Code</th><th>Status</th><th>abgegeben</th><th>Ø</th><th>Spanne</th><th></th></tr>
+      ${liste.map(([c, g]) => { const st = statsFuer(g), pr = st.R.map(r => r.x.proz);
+        return `<tr><td>${datum(g.erstellt)}</td><td>${esc(g.bezeichnung || "–")}</td><td>${c}</td><td><span class="pill ${g.phase === "spiel" ? "lauf" : g.phase === "ende" ? "ok" : "nix"}">${g.phase === "spiel" ? "läuft" : g.phase === "ende" ? "beendet" : "angelegt"}</span></td>
+          <td class="z">${st.fertig.length}/${st.ids.length}${st.offen ? `<br><span class="klein muted">${st.offen}× Schreiben offen</span>` : ""}</td><td class="z"><b>${st.schnitt != null ? st.schnitt + " %" : "–"}</b></td><td class="z">${pr.length ? Math.min(...pr) + "–" + Math.max(...pr) + " %" : "–"}</td>
+          <td><a class="btn klein" href="?leitung=1&code=${c}&ansicht=bericht" style="text-decoration:none">📊 Bericht</a></td></tr>`; }).join("")}</table></div>
+      <div class="btnreihe" style="margin-top:10px"><button class="btn zwei klein" id="csvAlle">⬇ Alle Ergebnisse als CSV (Excel)</button></div>`;
+    $("#csvAlle").onclick = () => {
+      const q = v => `"${String(v ?? "").replace(/"/g, '""')}"`, kopf = ["Datum", "Bezeichnung", "Code", "Name", "Punkte", "Max", "Prozent", "Einschätzung"].concat(T.teile.map(t => t.titel + " %"), ["Schreiben (Punkte)", "Beginn", "Abgabe"]);
+      const zeilen = []; liste.forEach(([c, g]) => { const st = statsFuer(g); st.R.forEach(r => { zeilen.push([datum(g.erstellt), g.bezeichnung || "", c, r.name, r.x.p, r.x.max, r.x.proz, note(r.x.proz)].concat(T.teile.map(t => { const y = r.x.teile[t.id]; return y && y.max ? Math.round(100 * y.p / y.max) : ""; }), [r.x.bew.schreiben ?? "", uhrzeit(r.x.E.start), uhrzeit(r.x.E.abgabe)])); }); });
+      const a = document.createElement("a"); a.href = URL.createObjectURL(new Blob(["\ufeff" + [kopf].concat(zeilen).map(z => z.map(q).join(";")).join("\n")], { type: "text/csv;charset=utf-8" })); a.download = "testarchiv-alle-ergebnisse.csv"; document.body.appendChild(a); a.click(); a.remove();
     };
   }
   function zeichneLeitung() {
@@ -337,7 +367,8 @@
     const ids = reihe(), st = ids.map(status), fertig = st.filter(s => s.k === "fertig").length, laeuft = st.filter(s => s.k === "laeuft").length;
     let h = `<div class="nodruck" style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-top:10px"><div><span class="klein muted">Test-Code </span><span class="lv-code">${CODE}</span> <span class="klein muted">· ${esc(location.host + location.pathname.replace(/[^/]*$/, ""))}code.html · ${dauerMin()} Min. · angelegt ${datum(G.erstellt)}</span></div>
       <div class="btnreihe">${G.phase === "warten" ? `<button class="btn" id="freigeben">▶ Test freigeben</button>` : G.phase === "spiel" ? `<button class="btn rot" id="beenden">⏹ Test beenden</button>` : `<button class="btn zwei" id="oeffnen">↺ wieder öffnen</button>`}
-      <label class="klein"><input type="checkbox" id="zeigen" ${G.zeigen ? "checked" : ""}> Ergebnis den TN zeigen</label></div></div>
+      <label class="klein"><input type="checkbox" id="zeigen" ${G.zeigen ? "checked" : ""}> Ergebnis den TN zeigen</label><a class="btn zwei klein" href="?leitung=1" style="text-decoration:none">📚 Archiv / neuer Test</a></div></div>
+      <div class="nodruck" style="margin:6px 0"><input class="feld" id="bezeichnung" placeholder="Bezeichnung für das Archiv, z. B. „Persisch I – WS 26/27, Gruppe Mo“" value="${esc(G.bezeichnung || "")}" style="width:100%;max-width:520px"></div>
       <div class="meldung nodruck">${G.phase === "warten" ? "⏳ Die TN können sich schon anmelden, aber noch nicht beginnen." : G.phase === "spiel" ? `🟢 Test läuft · ${laeuft} schreiben gerade · ${fertig} fertig · ${ids.length - laeuft - fertig} noch nicht begonnen` : "🔒 Test beendet – keine Antworten mehr möglich."}</div>
       <div class="seg nodruck" style="margin:6px 0 10px"><button class="${ANSICHT === "live" ? "an" : ""}" data-ansicht="live">👥 Teilnehmende (live)</button><button class="${ANSICHT === "bericht" ? "an" : ""}" data-ansicht="bericht">📊 Bericht</button></div>`;
     h += ANSICHT === "live" ? liveHtml(ids) : berichtHtml(ids);
@@ -366,7 +397,7 @@
     const thProz = Object.entries(themen).filter(([, v]) => v.max).map(([k, v]) => [k, Math.round(100 * v.p / v.max)]).sort((a, b) => b[1] - a[1]);
     const stark = thProz.filter(x => x[1] >= 80).map(x => x[0]), schwach = thProz.filter(x => x[1] < 60).map(x => x[0]);
     let h = `<div class="nodruck btnreihe" style="margin-bottom:8px"><button class="btn zwei klein" id="drucken">🖨 Drucken / als PDF</button><button class="btn zwei klein" id="csv">⬇ CSV (Excel)</button><button class="btn zwei klein" id="alleAuf">alle Einzelberichte aufklappen</button></div>
-      <div class="karte"><h2 style="margin-top:0">📊 Bericht: ${esc(T.titel)}</h2><p class="klein muted" style="margin-top:0">Test-Code ${CODE} · ${datum(G.erstellt)} · ${dauerMin()} Min. · ${fertig.length} abgegeben${laufend.length ? `, ${laufend.length} noch dabei${fertig.length ? "" : " (vorläufiger Stand)"}` : ""}${offenSchreiben ? ` · <b>Schreibteil bei ${offenSchreiben} Person(en) noch nicht bewertet</b> – Prozente beziehen sich bis dahin auf die automatisch bewerteten Aufgaben` : ""}</p>
+      <div class="karte"><h2 style="margin-top:0">📊 Bericht: ${esc(T.titel)}${G.bezeichnung ? ` – ${esc(G.bezeichnung)}` : ""}</h2><p class="klein muted" style="margin-top:0">Test-Code ${CODE} · ${datum(G.erstellt)} · ${dauerMin()} Min. · ${fertig.length} abgegeben${laufend.length ? `, ${laufend.length} noch dabei${fertig.length ? "" : " (vorläufiger Stand)"}` : ""}${offenSchreiben ? ` · <b>Schreibteil bei ${offenSchreiben} Person(en) noch nicht bewertet</b> – Prozente beziehen sich bis dahin auf die automatisch bewerteten Aufgaben` : ""}</p>
       <div class="kpi"><div>Durchschnitt<b>${mittel} %</b></div><div>Median<b>${median} %</b></div><div>Spanne<b>${proz[0]}–${proz[proz.length - 1]} %</b></div><div>bestanden (≥ 50 %)<b>${proz.filter(x => x >= 50).length} / ${proz.length}</b></div></div>
       <div class="klein-h">Kurz gesagt</div><ul>
         ${stark.length ? `<li>💪 <b>Gut gefestigt:</b> ${stark.map(esc).join(", ")}</li>` : ""}
@@ -414,6 +445,7 @@
     const be = $("#beenden"); if (be) be.onclick = () => { const l = reihe().filter(id => status(id).k === "laeuft").length; if (confirm(l ? `${l} Person(en) schreiben noch. Ihre bisherigen Antworten bleiben gespeichert. Test wirklich beenden?` : "Test beenden? Danach kann niemand mehr antworten.")) upd({ phase: "ende" }); };
     const oe = $("#oeffnen"); if (oe) oe.onclick = () => upd({ phase: "spiel" });
     const ze = $("#zeigen"); if (ze) ze.onchange = () => upd({ zeigen: ze.checked });
+    const bz = $("#bezeichnung"); if (bz) bz.onchange = () => upd({ bezeichnung: bz.value.trim().slice(0, 80) || null });
     $$("[data-ansicht]").forEach(b => b.onclick = () => { ANSICHT = b.dataset.ansicht; zeichne(); });
     $$("[data-extra]").forEach(b => b.onclick = () => { const id = b.dataset.extra; upd({ [`teams/ab/${id}/extra`]: ((AB()[id] || {}).extra || 0) + 5 }); });
     $$("[data-zwang]").forEach(b => b.onclick = () => { if (confirm(`Test für ${name(b.dataset.zwang)} jetzt beenden?`)) upd({ [`teams/ab/${b.dataset.zwang}/abgabe`]: Date.now(), [`teams/ab/${b.dataset.zwang}/auto`]: true }); });

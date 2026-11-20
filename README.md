@@ -305,6 +305,7 @@ Eigener Bereich (Startseite → ✍️ Schreibwerkstatt; Lehrkraft: Konsole → 
 Einzeltest mit Test-Code (Konsole → 📝 Online-Test). Aufgaben in `assets/test/persisch1.json` (Persisch I, L1–L6: Schrift, Hören, Wortschatz, Grammatik, Satzbau, Lesen, Schreiben; 52 automatisch bewertete Punkte + 5 Punkte Schreiben von Hand).
 - Ablauf: Test anlegen (Dauer, „Ergebnis zeigen“) → TN melden sich mit Code + Vorname an → „▶ Test freigeben“ → jede/r startet selbst; die Uhr läuft ab „Test beginnen“ und gibt bei 0 automatisch ab. Antworten werden sofort gespeichert (Neuladen ist sicher). Hören: max. 3× pro Aufnahme.
 - Leitung: Live-Tabelle (Status, Restzeit, Teil, beantwortet, +5 Min., Abgabe erzwingen) und Bericht (Durchschnitt/Median, Themen, Übersicht pro Person, Aufgabenanalyse mit häufigstem Fehler, Einzelberichte mit allen Antworten, Schreibteil bewerten, Drucken/PDF, CSV).
+- **Testarchiv** auf der Startseite (`online-test.html?leitung=1`): alle Tests mit Datum, Bezeichnung, Ø und Spanne, Link zum Bericht (`&ansicht=bericht`) und CSV aller Ergebnisse.
 - Antwortreihenfolge ist pro Person gemischt. Vorschau: `online-test.html?probe=1`. Firebase: `live/test/{code}`.
 
 ### Live-Unterricht (`live-unterricht.html`)
