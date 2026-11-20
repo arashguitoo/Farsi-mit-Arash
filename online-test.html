@@ -38,6 +38,12 @@
   .tk.weg{opacity:.25;cursor:default}
   .tlese{background:#fff;border:1px solid var(--linie);border-radius:14px;padding:12px 16px;font-family:var(--fa);direction:rtl;text-align:right;font-size:1.3rem;line-height:2.1}
   textarea.feld{width:100%;min-height:150px;font-family:var(--fa);font-size:1.25rem;direction:rtl;line-height:1.9;box-sizing:border-box}
+  body.imtest #melde-knopf{display:none!important}
+  .tzeile{display:flex;align-items:center;gap:10px;justify-content:space-between;border-bottom:1px dashed var(--linie);padding:6px 0;direction:rtl}
+  .tsub{font-family:var(--fa);font-size:1.3rem;min-width:40%}
+  .tsel{font-family:var(--fa);font-size:1.15rem;direction:rtl;padding:4px 8px;border:1.5px solid var(--lapis);border-radius:8px;background:#fff;max-width:100%}
+  .tluecke{line-height:2.6}
+  .tluecke .tsel{margin:0 4px}
   .tast{background:#eef1f0;border-radius:14px;padding:8px;margin-top:8px;user-select:none}
   .tast .z{display:flex;gap:4px;justify-content:center;direction:rtl;margin:4px 0;flex-wrap:wrap}
   .tast button{font-family:var(--fa);font-size:1.15rem;min-width:32px;height:38px;border:1px solid #cfd6d4;background:#fff;border-radius:8px;cursor:pointer;padding:0 6px}
@@ -104,38 +110,43 @@
   function rng(seed) { let a = hash(seed); return () => { a |= 0; a = a + 0x6D2B79F5 | 0; let t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
   const mischen = (arr, r) => { const a = arr.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(r() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
   let ITEMS = [], MAX = 0;
+  const TESTS = {};
   async function ladeTest(id) {
-    if (T && T.id === id) return T;
-    T = await F.ladeJSON("assets/test/" + id + ".json");
-    ITEMS = []; T.teile.forEach(t => t.items.forEach(i => ITEMS.push(Object.assign({ teil: t.id }, i))));
-    MAX = ITEMS.reduce((s, i) => s + maxPunkte(i), 0);
-    return T;
+    if (!TESTS[id]) { const t = await F.ladeJSON("assets/test/" + id + ".json"), it = []; t.teile.forEach(tl => tl.items.forEach(i => it.push(Object.assign({ teil: tl.id }, i)))); TESTS[id] = { T: t, ITEMS: it, MAX: it.reduce((s, i) => s + maxPunkte(i), 0) }; }
+    nutzeTest(id); return T;
   }
-  const maxPunkte = i => i.typ === "schreiben" ? (i.punkte || 5) : 1;
+  function nutzeTest(id) { const x = TESTS[id]; if (x) { T = x.T; ITEMS = x.ITEMS; MAX = x.MAX; } }
+  const maxPunkte = i => i.typ === "schreiben" ? (i.punkte || 5) : i.typ === "paare" ? i.paare.length : i.typ === "luecke" ? i.luecken.length : 1;
+  const teilAnz = i => i.typ === "paare" ? i.paare.length : i.typ === "luecke" ? i.luecken.length : 0;
+  const teilRichtig = (i, a, k) => a && typeof a === "object" && a["k" + k] != null && (i.typ === "paare" ? a["k" + k] === k : a["k" + k] === i.luecken[k].r);
+  const teilText = (i, k, v) => v == null ? "–" : i.typ === "paare" ? (i.paare[v] || [])[1] : i.luecken[k].o[v];
+  function punkte(i, a) { if (i.typ === "paare" || i.typ === "luecke") { let n = 0; for (let k = 0; k < teilAnz(i); k++) if (teilRichtig(i, a, k)) n++; return n; } return richtig(i, a) ? 1 : 0; }
+  const hatAntwort = a => a != null && a !== "" && !(Array.isArray(a) && !a.length) && !(typeof a === "object" && !Array.isArray(a) && !Object.keys(a).length);
   const auto = i => i.typ !== "schreiben";
   function richtig(i, a) {
     if (a == null) return false;
+    if (i.typ === "paare" || i.typ === "luecke") return punkte(i, a) === teilAnz(i);
     if (i.typ === "bauen") return Array.isArray(a) && a.length === i.teile.length && a.map(k => i.teile[k]).join(" ") === i.teile.join(" ");
     if (i.typ === "schreiben") return false;
     return a === i.r;
   }
-  const antwortText = (i, a) => { if (a == null || a === "") return "–"; if (i.typ === "bauen") return Array.isArray(a) ? a.map(k => i.teile[k]).join(" ") : "–"; if (i.typ === "schreiben") return String(a); return i.o[a] != null ? i.o[a] : "–"; };
-  const loesungText = i => i.typ === "bauen" ? i.teile.join(" ") : i.typ === "schreiben" ? "(manuell)" : i.o[i.r];
-  const istFa = (i, txt) => i.optFa || i.typ === "bauen" || i.typ === "schreiben" || /[؀-ۿ]/.test(txt || "");
+  const antwortText = (i, a) => { if (a == null || a === "") return "–"; if (i.typ === "paare") return i.paare.map((p, k) => `${p[0]} → ${teilText(i, k, (a || {})["k" + k])}`).join(" · "); if (i.typ === "luecke") return i.luecken.map((l, k) => `(${k + 1}) ${teilText(i, k, (a || {})["k" + k])}`).join(" · "); if (i.typ === "bauen") return Array.isArray(a) ? a.map(k => i.teile[k]).join(" ") : "–"; if (i.typ === "schreiben") return String(a); return i.o[a] != null ? i.o[a] : "–"; };
+  const loesungText = i => i.typ === "paare" ? i.paare.map(p => p[0] + " → " + p[1]).join(" · ") : i.typ === "luecke" ? i.luecken.map((l, k) => `(${k + 1}) ${l.o[l.r]}`).join(" · ") : i.typ === "bauen" ? i.teile.join(" ") : i.typ === "schreiben" ? "(manuell)" : i.o[i.r];
+  const istFa = (i, txt) => i.optFa || i.typ === "bauen" || i.typ === "paare" || i.typ === "luecke" || i.typ === "schreiben" || /[؀-ۿ]/.test(txt || "");
   const ordnung = (i, pid) => i.fest ? i.o.map((_, k) => k) : mischen(i.o.map((_, k) => k), rng(pid + "|" + i.id));
   /* Auswertung einer Person */
   function auswerten(pid) {
     const E = AB()[pid] || {}, A = E.a || {}, bew = ((G && G.bewertung) || {})[pid] || {};
     let p = 0; const teile = {}, themen = {}, posten = [];
     ITEMS.forEach(i => {
-      const a = A[i.id], mx = maxPunkte(i), ok = auto(i) ? richtig(i, a) : null, pk = auto(i) ? (ok ? 1 : 0) : (bew.schreiben != null ? Math.min(mx, +bew.schreiben) : null);
+      const a = A[i.id], mx = maxPunkte(i), ok = auto(i) ? richtig(i, a) : null, pk = auto(i) ? punkte(i, a) : (bew.schreiben != null ? Math.min(mx, +bew.schreiben) : null);
       if (pk != null) p += pk;
       const tl = teile[i.teil] = teile[i.teil] || { p: 0, max: 0, offen: 0 }, th = themen[i.thema] = themen[i.thema] || { p: 0, max: 0 };
       if (pk == null) tl.offen += mx; else { tl.p += pk; tl.max += mx; th.p += pk; th.max += mx; }
       posten.push({ i, a, ok, pk, mx, hp: (E.hp || {})[i.id] || 0 });
     });
     const maxBewertet = ITEMS.reduce((s, i) => s + (auto(i) || bew.schreiben != null ? maxPunkte(i) : 0), 0);
-    return { p, max: maxBewertet, maxGesamt: MAX, proz: maxBewertet ? Math.round(100 * p / maxBewertet) : 0, teile, themen, posten, E, bew, beantwortet: ITEMS.filter(i => A[i.id] != null && A[i.id] !== "").length };
+    return { p, max: maxBewertet, maxGesamt: MAX, proz: maxBewertet ? Math.round(100 * p / maxBewertet) : 0, teile, themen, posten, E, bew, beantwortet: ITEMS.filter(i => hatAntwort(A[i.id])).length };
   }
   const note = pr => pr >= 90 ? "sehr gut" : pr >= 80 ? "gut" : pr >= 65 ? "befriedigend" : pr >= 50 ? "ausreichend" : "noch nicht bestanden";
   const barKl = pr => pr >= 75 ? "" : pr >= 50 ? "mittel" : "schwach";
@@ -176,7 +187,7 @@
   async function startTN() {
     if (PROBE) {
       ME = { id: "probe", name: "Vorschau" };
-      G = { phase: "spiel", test: qs.get("test") || "persisch1", spieler: { probe: { name: "Vorschau", ts: 1 } }, teams: { ab: {} }, zeigen: true };
+      G = { phase: "spiel", test: qs.get("test") || "persisch1-v2", spieler: { probe: { name: "Vorschau", ts: 1 } }, teams: { ab: {} }, zeigen: true };
       try { await ladeTest(G.test); } catch (e) { return fehler(e, true); }
       G.dauer = T.dauer; return zeichne();
     }
@@ -211,6 +222,7 @@
     tnRef(`teams/ab/${ME.id}`).update(o).then(() => { ABGABE_LAEUFT = false; }).catch(() => { ABGABE_LAEUFT = false; toast("⚠️ Abgabe hat nicht geklappt – bitte noch einmal tippen."); });
   }
   function zeichneTN() {
+    document.body.classList.remove("imtest");
     if (!G) return zeichneBeitritt("Diesen Test gibt es nicht (mehr).");
     if (!T) return;
     const ich = SP()[ME.id];
@@ -244,6 +256,12 @@
       h += `<div class="tbz">${gew.map(k => `<span class="tk" data-bauweg="${i.id}|${k}">${esc(i.teile[k])}</span>`).join("") || `<span class="klein muted" style="direction:ltr">Tippe die Wörter unten an …</span>`}</div>
         <div class="tbp">${pool.map(k => `<span class="tk ${gew.includes(k) ? "weg" : ""}" data-bau="${i.id}|${k}">${esc(i.teile[k])}</span>`).join("")}</div>
         ${gew.length ? `<button class="btn zwei klein" data-baureset="${i.id}" style="margin-top:6px">↺ neu</button>` : ""}`;
+    } else if (i.typ === "paare") {
+      const verben = mischen(i.paare.map((_, k) => k), rng(ME.id + "|" + i.id)), aw = a || {};
+      h += `<div class="topts">${i.paare.map((p, k) => `<div class="tzeile"><span class="tsub">${esc(p[0])}</span><select class="feld tsel" data-paar="${i.id}|${k}"><option value="">– wählen –</option>${verben.map(v => `<option value="${v}" ${aw["k" + k] === v ? "selected" : ""}>${esc(i.paare[v][1])}</option>`).join("")}</select></div>`).join("")}</div>`;
+    } else if (i.typ === "luecke") {
+      const aw = a || {};
+      h += `<div class="tlese tluecke">${esc(i.text).replace(/\{(\d+)\}/g, (_, k) => { const l = i.luecken[+k], ord = mischen(l.o.map((_, j) => j), rng(ME.id + "|" + i.id + "|" + k)); return `<select class="tsel" data-lueck="${i.id}|${k}"><option value="">(${+k + 1}) …</option>${ord.map(j => `<option value="${j}" ${aw["k" + k] === j ? "selected" : ""}>${esc(l.o[j])}</option>`).join("")}</select>`; })}</div>`;
     } else if (i.typ === "schreiben") {
       h += `<textarea class="feld" id="schreib-${i.id}" data-schreib="${i.id}" dir="rtl" placeholder="اینجا بنویس …">${esc(a || "")}</textarea>
         <div class="tast">${SW.TASTATUR.map(z => `<div class="z">${z.map(k => `<button data-taste="${esc(k)}">${esc(k)}</button>`).join("")}</div>`).join("")}<div class="z"><button class="breit" data-taste="⌫">⌫ löschen</button><button class="breit" data-taste="${SW.ZWNJ}">Halbabstand</button><button class="breit" data-taste=" " style="min-width:180px">Leerzeichen</button></div></div>
@@ -255,9 +273,10 @@
   }
   let NR = {};
   function zeichneTest() {
+    document.body.classList.add("imtest");
     const E = meinE(); NR = {}; let n = 0; ITEMS.forEach(i => { NR[i.id] = ++n; });
-    const t = T.teile[TEIL], beantw = ITEMS.filter(i => { const a = antwort(i.id); return a != null && a !== "" && !(Array.isArray(a) && !a.length); }).length;
-    const teilStand = tl => tl.items.filter(i => { const a = antwort(i.id); return a != null && a !== "" && !(Array.isArray(a) && !a.length); }).length;
+    const t = T.teile[TEIL], beantw = ITEMS.filter(i => hatAntwort(antwort(i.id))).length;
+    const teilStand = tl => tl.items.filter(i => hatAntwort(antwort(i.id))).length;
     let h = `<div class="tleiste nodruck"><div><span class="uhr" data-ende="${ende(E)}">${fmt(ende(E) - Date.now())}</span> <span class="klein muted">verbleibend</span></div><div class="klein"><b>${beantw}</b> von ${ITEMS.length} beantwortet</div><button class="btn" id="abgeben">✓ Abgeben</button></div>
       ${PROBE ? `<div class="meldung">👁 Vorschau – nichts wird gespeichert.</div>` : ""}
       <div class="ttabs">${T.teile.map((tl, k) => `<button class="${k === TEIL ? "an" : ""}" data-teil="${k}">${tl.icon} ${esc(tl.titel)} <span class="n">${teilStand(tl)}/${tl.items.length}</span></button>`).join("")}</div>
@@ -274,6 +293,7 @@
     $$("[data-bau]").forEach(b => b.onclick = () => { const [id, k] = b.dataset.bau.split("|"); const a = Array.isArray(antwort(id)) ? antwort(id).slice() : []; if (a.includes(+k)) return; a.push(+k); speichern(id, a); zeichne(); });
     $$("[data-bauweg]").forEach(b => b.onclick = () => { const [id, k] = b.dataset.bauweg.split("|"); const a = (antwort(id) || []).filter(x => x !== +k); speichern(id, a.length ? a : null); zeichne(); });
     $$("[data-baureset]").forEach(b => b.onclick = () => { speichern(b.dataset.baureset, null); zeichne(); });
+    $$("[data-paar],[data-lueck]").forEach(sel => sel.onchange = () => { const [id, k] = (sel.dataset.paar || sel.dataset.lueck).split("|"), a = Object.assign({}, antwort(id) || {}); if (sel.value === "") delete a["k" + k]; else a["k" + k] = +sel.value; speichern(id, Object.keys(a).length ? a : null); zeichne(); });
     $$("[data-hoer]").forEach(b => b.onclick = () => { const id = b.dataset.hoer, i = ITEMS.find(x => x.id === id), n = gehoert(id); if (n >= (T.hoerenMax || 3)) return; LOK.hp[id] = n + 1; tnRef(`teams/ab/${ME.id}/hp/${id}`).set(n + 1).catch(() => { }); spiele(i.audio); zeichne(); });
     let zeit = null;
     $$("[data-schreib]").forEach(ta => { ta.oninput = () => { LOK.a[ta.dataset.schreib] = ta.value; clearTimeout(zeit); zeit = setTimeout(() => speichern(ta.dataset.schreib, ta.value), 700); }; ta.onblur = () => speichern(ta.dataset.schreib, ta.value); });
@@ -281,7 +301,7 @@
     $$("[data-taste]").forEach(b => b.onclick = () => { const ta = $("[data-schreib]"); if (!ta) return; const k = b.dataset.taste, s = ta.selectionStart ?? ta.value.length, e = ta.selectionEnd ?? s; let v = ta.value, pos = s;
       if (k === "⌫") { if (s === e && s > 0) { v = v.slice(0, s - 1) + v.slice(e); pos = s - 1; } else { v = v.slice(0, s) + v.slice(e); } } else { const z = k.replace(/^ـ/, ""); v = v.slice(0, s) + z + v.slice(e); pos = s + z.length; }
       ta.value = v; ta.focus(); ta.setSelectionRange(pos, pos); ta.oninput(); });
-    const ab = () => { const offen = ITEMS.length - ITEMS.filter(i => { const a = antwort(i.id); return a != null && a !== "" && !(Array.isArray(a) && !a.length); }).length;
+    const ab = () => { const offen = ITEMS.length - ITEMS.filter(i => hatAntwort(antwort(i.id))).length;
       if (confirm(offen ? `Noch ${offen} Aufgabe(n) ohne Antwort. Trotzdem abgeben?` : "Test jetzt abgeben? Danach kannst du nichts mehr ändern.")) abgeben(false); };
     $("#abgeben").onclick = ab; const a2 = $("#abgeben2"); if (a2) a2.onclick = ab;
   }
@@ -299,7 +319,7 @@
       const R = auswerten(ME.id);
       h += `<div class="karte" style="margin-top:12px"><h3 style="margin-top:0">Dein Ergebnis: ${R.p} von ${R.max} Punkten (${R.proz} %)</h3>${R.bew.schreiben == null ? `<p class="klein muted">Der Schreibteil wird noch von deiner Lehrkraft bewertet.</p>` : ""}
         <table class="rep">${T.teile.map(t => { const x = R.teile[t.id]; if (!x || !x.max) return ""; const pr = Math.round(100 * x.p / x.max); return `<tr><td>${t.icon} ${esc(t.titel)}</td><td class="z">${x.p}/${x.max}</td><td style="width:40%">${bar(pr)}</td></tr>`; }).join("")}</table>
-        <div class="klein-h">Diese Aufgaben schau dir noch einmal an</div>${R.posten.filter(x => x.ok === false).map(x => `<div class="ant" style="grid-template-columns:44px 1fr 1fr"><b>${x.i.id}</b><span>${x.i.frage}${x.i.fa ? ` <span class="fa">${esc(x.i.fa)}</span>` : ""}</span><span>✔ <span class="${istFa(x.i, loesungText(x.i)) ? "fa" : ""}">${esc(loesungText(x.i))}</span></span></div>`).join("") || "<p>Alles richtig – آفَرین! 🎉</p>"}</div>`;
+        <div class="klein-h">Diese Aufgaben schau dir noch einmal an</div>${R.posten.filter(x => x.ok === false).map(x => `<div class="ant" style="grid-template-columns:44px 1fr 1fr"><b>${x.i.id}${x.mx > 1 ? ` <span class="klein">${x.pk}/${x.mx}</span>` : ""}</b><span>${x.i.frage}${x.i.fa ? ` <span class="fa">${esc(x.i.fa)}</span>` : ""}</span><span>✔ <span class="${istFa(x.i, loesungText(x.i)) ? "fa" : ""}">${esc(loesungText(x.i))}</span></span></div>`).join("") || "<p>Alles richtig – آفَرین! 🎉</p>"}</div>`;
     }
     app().innerHTML = h;
   }
@@ -315,48 +335,52 @@
       if (CODE) hoere(CODE); else zeichneAnlegen();
     });
   }
+  let TEST_WAHL = null, TEST_LISTE = null;
   async function zeichneAnlegen() {
-    try { await ladeTest("persisch1"); } catch (e) { return fehler(e, true); }
+    try { if (!TEST_LISTE) TEST_LISTE = (await F.ladeJSON("assets/test/index.json")).tests; TEST_WAHL = TEST_WAHL || TEST_LISTE[0].id; await ladeTest(TEST_WAHL); } catch (e) { return fehler(e, true); }
     app().innerHTML = `<div class="karte" style="margin-top:18px"><h2 style="margin-top:0">📝 Online-Test anlegen</h2>
       <p><b>${esc(T.titel)}</b> – ${esc(T.untertitel)}. ${ITEMS.length} Aufgaben, ${MAX} Punkte (davon ${ITEMS.filter(i => !auto(i)).reduce((s, i) => s + maxPunkte(i), 0)} für den Schreibteil, den du selbst bewertest).</p>
-      <div style="display:grid;gap:10px;max-width:420px"><label>Dauer (Minuten) <input class="feld" id="dauer" type="number" min="10" max="180" value="${T.dauer}" style="width:90px"></label>
+      <div style="display:grid;gap:10px;max-width:420px">${TEST_LISTE.length > 1 ? `<label>Test <select class="feld" id="testwahl">${TEST_LISTE.map(t => `<option value="${t.id}" ${t.id === TEST_WAHL ? "selected" : ""}>${esc(t.titel)}</option>`).join("")}</select></label>` : ""}<label>Dauer (Minuten) <input class="feld" id="dauer" type="number" min="10" max="180" value="${T.dauer}" style="width:90px"></label>
       <label><input type="checkbox" id="zeigen"> Ergebnis den TN direkt nach der Abgabe zeigen</label>
       <button class="btn" id="anlegen">▶ Test anlegen und Code erzeugen</button></div>
       <p class="klein muted" style="margin-top:12px">Die TN öffnen <b>${esc(location.host + location.pathname.replace(/[^/]*$/, ""))}code.html</b> und geben den Code und ihren Vornamen ein. Jede/r macht den Test für sich – die Uhr startet, wenn die Person auf „Test beginnen“ tippt.</p>
-      <p><a class="btn zwei klein" href="?probe=1" target="_blank" style="text-decoration:none">👁 Test selbst ausprobieren (Vorschau)</a></p></div>
+      <p><a class="btn zwei klein" href="?probe=1&test=${TEST_WAHL}" target="_blank" style="text-decoration:none">👁 Test selbst ausprobieren (Vorschau)</a></p></div>
       <div class="karte" style="margin-top:14px" id="archiv"><h2 style="margin-top:0">📚 Testarchiv</h2><p class="muted">Lade frühere Tests …</p></div>`;
+    const tw = $("#testwahl"); if (tw) tw.onchange = () => { TEST_WAHL = tw.value; zeichneAnlegen(); };
     zeichneArchiv();
     $("#anlegen").onclick = async () => {
-      const d = { erstellt: Date.now(), phase: "warten", test: "persisch1", dauer: Math.max(10, Math.min(180, +$("#dauer").value || 60)), zeigen: $("#zeigen").checked };
+      const d = { erstellt: Date.now(), phase: "warten", test: TEST_WAHL, dauer: Math.max(10, Math.min(180, +$("#dauer").value || 60)), zeigen: $("#zeigen").checked };
       try { CODE = await LT.neueRunde(gRef, d); } catch (e) { return fehler(e, true); }
       history.replaceState(null, "", `?leitung=1&code=${CODE}`); hoere(CODE);
     };
   }
   /* ---------- Testarchiv: alle bisherigen Tests mit Ergebnissen ---------- */
   function statsFuer(g) {
-    const alt = G; G = g;
+    const alt = G, altT = T && T.id; G = g; nutzeTest(g.test || "persisch1");
     try {
       const ids = reihe(), fertig = ids.filter(id => status(id).k === "fertig"), R = fertig.map(id => ({ id, name: name(id), x: auswerten(id) }));
       const schnitt = R.length ? Math.round(R.reduce((s, r) => s + r.x.proz, 0) / R.length) : null;
       return { ids, fertig, R, schnitt, offen: R.filter(r => r.x.bew.schreiben == null).length };
-    } finally { G = alt; }
+    } finally { G = alt; if (altT) nutzeTest(altT); }
   }
   let ARCHIV = null;
   async function zeichneArchiv() {
     const box = $("#archiv"); if (!box) return;
     try { ARCHIV = (await F.mitTimeout(F.ref("live/test").once("value"), 10000)).val() || {}; } catch (e) { box.innerHTML = `<h2 style="margin-top:0">📚 Testarchiv</h2><p class="klein">Das Archiv konnte nicht geladen werden: ${esc(e.message || e)}</p>`; return; }
     const liste = Object.entries(ARCHIV).filter(([, g]) => g && g.test).sort(([, a], [, b]) => (b.erstellt || 0) - (a.erstellt || 0));
+    try { const aktiv = T && T.id; for (const id of new Set(liste.map(([, g]) => g.test))) await ladeTest(id); if (aktiv) nutzeTest(aktiv); } catch (e) { }
     if (!liste.length) { box.innerHTML = `<h2 style="margin-top:0">📚 Testarchiv</h2><p class="muted">Noch keine Tests. Jeder Test, den du anlegst, bleibt hier mit allen Antworten gespeichert.</p>`; return; }
     box.innerHTML = `<h2 style="margin-top:0">📚 Testarchiv</h2><p class="klein muted" style="margin-top:0">Alle Tests bleiben mit sämtlichen Antworten gespeichert. Mit „📊 Bericht“ öffnest du den vollständigen Bericht (Drucken/PDF, CSV).</p>
-      <div style="overflow-x:auto"><table class="rep"><tr><th>Datum</th><th>Bezeichnung</th><th>Code</th><th>Status</th><th>abgegeben</th><th>Ø</th><th>Spanne</th><th></th></tr>
+      <div style="overflow-x:auto"><table class="rep"><tr><th>Datum</th><th>Bezeichnung</th><th>Test</th><th>Code</th><th>Status</th><th>abgegeben</th><th>Ø</th><th>Spanne</th><th></th></tr>
       ${liste.map(([c, g]) => { const st = statsFuer(g), pr = st.R.map(r => r.x.proz);
-        return `<tr><td>${datum(g.erstellt)}</td><td>${esc(g.bezeichnung || "–")}</td><td>${c}</td><td><span class="pill ${g.phase === "spiel" ? "lauf" : g.phase === "ende" ? "ok" : "nix"}">${g.phase === "spiel" ? "läuft" : g.phase === "ende" ? "beendet" : "angelegt"}</span></td>
+        return `<tr><td>${datum(g.erstellt)}</td><td>${esc(g.bezeichnung || "–")}</td><td class="klein">${esc((TESTS[g.test] || {}).T ? TESTS[g.test].T.titel.replace(/^Persisch I – /, "") : g.test)}</td><td>${c}</td><td><span class="pill ${g.phase === "spiel" ? "lauf" : g.phase === "ende" ? "ok" : "nix"}">${g.phase === "spiel" ? "läuft" : g.phase === "ende" ? "beendet" : "angelegt"}</span></td>
           <td class="z">${st.fertig.length}/${st.ids.length}${st.offen ? `<br><span class="klein muted">${st.offen}× Schreiben offen</span>` : ""}</td><td class="z"><b>${st.schnitt != null ? st.schnitt + " %" : "–"}</b></td><td class="z">${pr.length ? Math.min(...pr) + "–" + Math.max(...pr) + " %" : "–"}</td>
           <td><a class="btn klein" href="?leitung=1&code=${c}&ansicht=bericht" style="text-decoration:none">📊 Bericht</a></td></tr>`; }).join("")}</table></div>
       <div class="btnreihe" style="margin-top:10px"><button class="btn zwei klein" id="csvAlle">⬇ Alle Ergebnisse als CSV (Excel)</button></div>`;
     $("#csvAlle").onclick = () => {
-      const q = v => `"${String(v ?? "").replace(/"/g, '""')}"`, kopf = ["Datum", "Bezeichnung", "Code", "Name", "Punkte", "Max", "Prozent", "Einschätzung"].concat(T.teile.map(t => t.titel + " %"), ["Schreiben (Punkte)", "Beginn", "Abgabe"]);
-      const zeilen = []; liste.forEach(([c, g]) => { const st = statsFuer(g); st.R.forEach(r => { zeilen.push([datum(g.erstellt), g.bezeichnung || "", c, r.name, r.x.p, r.x.max, r.x.proz, note(r.x.proz)].concat(T.teile.map(t => { const y = r.x.teile[t.id]; return y && y.max ? Math.round(100 * y.p / y.max) : ""; }), [r.x.bew.schreiben ?? "", uhrzeit(r.x.E.start), uhrzeit(r.x.E.abgabe)])); }); });
+      const q = v => `"${String(v ?? "").replace(/"/g, '""')}"`, alleTeile = []; Object.values(TESTS).forEach(x => x.T.teile.forEach(t => { if (!alleTeile.find(y => y.id === t.id)) alleTeile.push({ id: t.id, titel: t.titel }); }));
+      const kopf = ["Datum", "Bezeichnung", "Test", "Code", "Name", "Punkte", "Max", "Prozent", "Einschätzung"].concat(alleTeile.map(t => t.titel + " %"), ["Schreiben (Punkte)", "Beginn", "Abgabe"]);
+      const zeilen = []; liste.forEach(([c, g]) => { const st = statsFuer(g); st.R.forEach(r => { zeilen.push([datum(g.erstellt), g.bezeichnung || "", g.test, c, r.name, r.x.p, r.x.max, r.x.proz, note(r.x.proz)].concat(alleTeile.map(t => { const y = r.x.teile[t.id]; return y && y.max ? Math.round(100 * y.p / y.max) : ""; }), [r.x.bew.schreiben ?? "", uhrzeit(r.x.E.start), uhrzeit(r.x.E.abgabe)])); }); });
       const a = document.createElement("a"); a.href = URL.createObjectURL(new Blob(["\ufeff" + [kopf].concat(zeilen).map(z => z.map(q).join(";")).join("\n")], { type: "text/csv;charset=utf-8" })); a.download = "testarchiv-alle-ergebnisse.csv"; document.body.appendChild(a); a.click(); a.remove();
     };
   }
@@ -412,8 +436,8 @@
       <p class="klein muted">Einschätzung: ab 90 % sehr gut · ab 80 % gut · ab 65 % befriedigend · ab 50 % ausreichend.</p></div>`;
     /* Aufgabenanalyse */
     h += `<div class="karte" style="margin-top:12px"><h3 style="margin-top:0">Aufgabenanalyse</h3><p class="klein muted" style="margin-top:0">Wie viele haben die Aufgabe gelöst – und welche falsche Antwort kam am häufigsten?</p><div style="overflow-x:auto"><table class="rep"><tr><th>Nr.</th><th>Aufgabe</th><th>Lösung</th><th>richtig</th><th>häufigster Fehler</th></tr>
-      ${ITEMS.filter(auto).map(i => { const ant = basis.map(id => (R[id].E.a || {})[i.id]), ok = ant.filter(a => richtig(i, a)).length, pr = Math.round(100 * ok / basis.length);
-        const falsch = {}; ant.forEach(a => { if (!richtig(i, a)) { const t = antwortText(i, a); falsch[t] = (falsch[t] || 0) + 1; } }); const hf = Object.entries(falsch).sort((a, b) => b[1] - a[1])[0];
+      ${ITEMS.filter(auto).map(i => { const ant = basis.map(id => (R[id].E.a || {})[i.id]), pr = Math.round(100 * ant.reduce((s, a) => s + punkte(i, a), 0) / (basis.length * maxPunkte(i)));
+        const falsch = {}; ant.forEach(a => { if (teilAnz(i)) { for (let k = 0; k < teilAnz(i); k++) if (!teilRichtig(i, a, k)) { const t = (i.typ === "paare" ? i.paare[k][0] + " → " : `(${k + 1}) `) + teilText(i, k, (a || {})["k" + k]); falsch[t] = (falsch[t] || 0) + 1; } } else if (!richtig(i, a)) { const t = antwortText(i, a); falsch[t] = (falsch[t] || 0) + 1; } }); const hf = Object.entries(falsch).sort((a, b) => b[1] - a[1])[0];
         return `<tr><td><b>${i.id}</b></td><td>${i.frage}${i.fa ? ` <span class="fa">${esc(i.fa)}</span>` : ""}${i.audio ? ` <span class="klein muted">🎧 <span class="fa">${esc(i.audio)}</span></span>` : ""}</td><td class="${istFa(i, loesungText(i)) ? "fa" : ""}">${esc(loesungText(i))}</td><td style="min-width:110px">${pr} % ${bar(pr)}</td><td>${hf ? `<span class="${istFa(i, hf[0]) ? "fa" : ""}">${esc(hf[0])}</span> <span class="klein muted">(${hf[1]}×)</span>` : "–"}</td></tr>`; }).join("")}</table></div></div>`;
     /* Einzelberichte */
     h += `<div class="karte" style="margin-top:12px"><h3 style="margin-top:0">Einzelberichte</h3>${basis.map(id => einzelHtml(id, R[id])).join("")}</div>`;
@@ -430,13 +454,13 @@
     if (schreibItem) h += `<div class="klein-h">✍️ Schreiben (${schreibItem.punkte || 5} P.)</div><div class="tlese" style="font-size:1.15rem">${text ? esc(text).replace(/\n/g, "<br>") : '<span class="klein muted" style="direction:ltr">(nichts geschrieben)</span>'}</div>
       <div class="nodruck" style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:6px 0"><label class="klein">Punkte <input class="feld" type="number" min="0" max="${schreibItem.punkte || 5}" step="0.5" value="${x.bew.schreiben ?? ""}" data-bew="${id}" style="width:70px"></label><input class="feld" placeholder="Notiz für dich (optional)" value="${esc(x.bew.notiz || "")}" data-notiz="${id}" style="flex:1;min-width:200px"></div>
       ${x.bew.schreiben != null ? `<p class="klein">Bewertet: <b>${x.bew.schreiben}</b> von ${schreibItem.punkte || 5}${x.bew.notiz ? ` · ${esc(x.bew.notiz)}` : ""}</p>` : ""}`;
-    h += `<div class="klein-h">Alle Antworten</div>${T.teile.filter(t => t.items.some(auto)).map(t => `<div class="klein" style="font-weight:800;margin-top:6px">${t.icon} ${esc(t.titel)}</div>${x.posten.filter(p => p.i.teil === t.id && auto(p.i)).map(p => `<div class="ant"><span>${p.ok ? "✅" : "❌"} <b>${p.i.id}</b></span><span>${p.i.frage}${p.i.fa ? ` <span class="fa">${esc(p.i.fa)}</span>` : ""}${p.i.audio ? ` <span class="klein muted">🎧 ${p.hp}× gehört</span>` : ""}</span><span class="${istFa(p.i, antwortText(p.i, p.a)) ? "fa" : ""}">${esc(antwortText(p.i, p.a))}</span><span class="${istFa(p.i, loesungText(p.i)) ? "fa" : ""}" style="color:var(--gruen)">${p.ok ? "" : esc(loesungText(p.i))}</span></div>`).join("")}`).join("")}`;
+    h += `<div class="klein-h">Alle Antworten</div>${T.teile.filter(t => t.items.some(auto)).map(t => `<div class="klein" style="font-weight:800;margin-top:6px">${t.icon} ${esc(t.titel)}</div>${x.posten.filter(p => p.i.teil === t.id && auto(p.i)).map(p => `<div class="ant"><span>${p.ok ? "✅" : p.pk > 0 ? "🟡" : "❌"} <b>${p.i.id}</b>${p.mx > 1 ? ` <span class="klein">${p.pk}/${p.mx}</span>` : ""}</span><span>${p.i.frage}${p.i.fa ? ` <span class="fa">${esc(p.i.fa)}</span>` : ""}${p.i.audio ? ` <span class="klein muted">🎧 ${p.hp}× gehört</span>` : ""}</span><span class="${istFa(p.i, antwortText(p.i, p.a)) ? "fa" : ""}">${esc(antwortText(p.i, p.a))}</span><span class="${istFa(p.i, loesungText(p.i)) ? "fa" : ""}" style="color:var(--gruen)">${p.ok ? "" : esc(loesungText(p.i))}</span></div>`).join("")}`).join("")}`;
     return h + `</details>`;
   }
   function csv(ids) {
     const fertig = ids.filter(id => status(id).k !== "wartet"), q = s => `"${String(s).replace(/"/g, '""')}"`;
     const kopf = ["Name", "Punkte", "Max", "Prozent", "Einschätzung"].concat(T.teile.map(t => t.titel + " %"), ITEMS.map(i => i.id), ["Schreiben (Text)", "Notiz"]);
-    const zeilen = fertig.map(id => { const x = auswerten(id); return [name(id), x.p, x.max, x.proz, note(x.proz)].concat(T.teile.map(t => { const y = x.teile[t.id]; return y && y.max ? Math.round(100 * y.p / y.max) : ""; }), x.posten.map(p => auto(p.i) ? (p.ok ? 1 : 0) : (x.bew.schreiben ?? "")), [((x.E.a || {})[(ITEMS.find(i => i.typ === "schreiben") || {}).id] || ""), x.bew.notiz || ""]); });
+    const zeilen = fertig.map(id => { const x = auswerten(id); return [name(id), x.p, x.max, x.proz, note(x.proz)].concat(T.teile.map(t => { const y = x.teile[t.id]; return y && y.max ? Math.round(100 * y.p / y.max) : ""; }), x.posten.map(p => auto(p.i) ? p.pk : (x.bew.schreiben ?? "")), [((x.E.a || {})[(ITEMS.find(i => i.typ === "schreiben") || {}).id] || ""), x.bew.notiz || ""]); });
     const text = "﻿" + [kopf].concat(zeilen).map(z => z.map(q).join(";")).join("\n");
     const a = document.createElement("a"); a.href = URL.createObjectURL(new Blob([text], { type: "text/csv;charset=utf-8" })); a.download = `test-${CODE}-${datum(G.erstellt)}.csv`; document.body.appendChild(a); a.click(); a.remove();
   }

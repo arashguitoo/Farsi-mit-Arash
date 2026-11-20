@@ -1,0 +1,843 @@
+{
+  "id": "persisch1-v2",
+  "titel": "Persisch I – Test Lektion 1–6 (Version 2)",
+  "untertitel": "Schrift, Hören, Wortschatz, sein, Ezāfe, haben, mögen & را, Präteritum (vertieft), Satzbau, Lesen, Schreiben",
+  "dauer": 60,
+  "hoerenMax": 3,
+  "teile": [
+    {
+      "id": "A",
+      "titel": "Schrift & Lesen",
+      "icon": "🔤",
+      "hinweis": "Lies die Wörter und wähle die richtige Antwort.",
+      "items": [
+        {
+          "id": "A1",
+          "thema": "Schrift",
+          "frage": "Welches Wort ist <i>ketāb</i> (Buch)?",
+          "o": [
+            "کِتاب",
+            "کِلاس",
+            "تاکسی"
+          ],
+          "r": 0,
+          "optFa": true
+        },
+        {
+          "id": "A2",
+          "thema": "Schrift",
+          "frage": "Wie liest man das Wort?",
+          "fa": "خانِه",
+          "o": [
+            "chāne",
+            "hāne",
+            "chūne"
+          ],
+          "r": 0
+        },
+        {
+          "id": "A3",
+          "thema": "Schrift",
+          "frage": "Wie liest man das Wort?",
+          "fa": "دانِشجو",
+          "o": [
+            "dāneschdschū",
+            "dāneschgāh",
+            "dāndschū"
+          ],
+          "r": 0
+        },
+        {
+          "id": "A4",
+          "thema": "Schrift",
+          "frage": "Welches Wort ist <i>sīb</i> (Apfel)?",
+          "o": [
+            "سیب",
+            "سیر",
+            "شیر"
+          ],
+          "r": 0,
+          "optFa": true
+        },
+        {
+          "id": "A5",
+          "thema": "Schrift",
+          "frage": "Welcher Buchstabe verbindet sich <b>nicht</b> mit dem nächsten Buchstaben (nach links)?",
+          "o": [
+            "ر",
+            "ب",
+            "س",
+            "م"
+          ],
+          "r": 0,
+          "optFa": true
+        },
+        {
+          "id": "A6",
+          "thema": "Schrift",
+          "frage": "Welche Zahl ist das?",
+          "fa": "۷",
+          "o": [
+            "7",
+            "8",
+            "6"
+          ],
+          "r": 0
+        },
+        {
+          "id": "A7",
+          "thema": "Schrift",
+          "frage": "Wie viele Buchstaben hat das persische Alphabet?",
+          "o": [
+            "32",
+            "28",
+            "26"
+          ],
+          "r": 0
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "titel": "Hören",
+      "icon": "🎧",
+      "hinweis": "Tippe auf ▶ und hör gut zu. Du kannst jede Aufnahme höchstens <b>dreimal</b> abspielen.",
+      "items": [
+        {
+          "id": "B1",
+          "thema": "Hören",
+          "frage": "Welches Wort hörst du?",
+          "audio": "مادَر",
+          "o": [
+            "Mutter",
+            "Vater",
+            "Bruder",
+            "Schwester"
+          ],
+          "r": 0
+        },
+        {
+          "id": "B2",
+          "thema": "Hören",
+          "frage": "Was bedeutet der Satz?",
+          "audio": "مَن خَستِه هَستَم.",
+          "o": [
+            "Ich bin müde.",
+            "Ich bin froh.",
+            "Du bist müde."
+          ],
+          "r": 0
+        },
+        {
+          "id": "B3",
+          "thema": "Hören",
+          "frage": "Wie viele Schwestern hat er / sie?",
+          "audio": "او دو خواهَر دارَد.",
+          "o": [
+            "zwei",
+            "drei",
+            "keine"
+          ],
+          "r": 0
+        },
+        {
+          "id": "B4",
+          "thema": "Hören",
+          "frage": "Was bedeutet der Satz?",
+          "audio": "مَن سیب دوست نَدارَم.",
+          "o": [
+            "Ich mag keine Äpfel.",
+            "Ich mag Äpfel.",
+            "Ich habe keine Äpfel."
+          ],
+          "r": 0
+        },
+        {
+          "id": "B5",
+          "thema": "Hören",
+          "frage": "Was hörst du?",
+          "audio": "کیفِ قِرمِز",
+          "o": [
+            "کیفِ قِرمِز",
+            "کیفِ سَبز",
+            "کِتابِ قِرمِز"
+          ],
+          "r": 0,
+          "optFa": true
+        },
+        {
+          "id": "B6",
+          "thema": "Hören",
+          "frage": "Wann ist die Person gestern aufgewacht?",
+          "audio": "دیروز ساعَتِ هَفت بیدار شُدَم.",
+          "o": [
+            "um 7 Uhr",
+            "um 8 Uhr",
+            "um 11 Uhr"
+          ],
+          "r": 0
+        },
+        {
+          "id": "B7",
+          "thema": "Hören",
+          "frage": "Was bedeutet der Satz?",
+          "audio": "دیروز به سینِما نَرَفتَم.",
+          "o": [
+            "Ich bin gestern nicht ins Kino gegangen.",
+            "Ich bin gestern ins Kino gegangen.",
+            "Er ist gestern nicht ins Kino gegangen."
+          ],
+          "r": 0
+        },
+        {
+          "id": "B8",
+          "thema": "Hören",
+          "frage": "Sara stellt sich vor. Was ist Sara von Beruf?",
+          "audio": "سَلام. اِسمِ مَن سارا اَست. مَن اَهلِ شیراز هَستَم. مَن مُعَلِّم هَستَم و یِک بَرادَر دارَم.",
+          "o": [
+            "Lehrerin",
+            "Ärztin",
+            "Studentin"
+          ],
+          "r": 0
+        },
+        {
+          "id": "B9",
+          "thema": "Hören",
+          "frage": "Dieselbe Aufnahme: Woher kommt Sara?",
+          "audio": "سَلام. اِسمِ مَن سارا اَست. مَن اَهلِ شیراز هَستَم. مَن مُعَلِّم هَستَم و یِک بَرادَر دارَم.",
+          "o": [
+            "aus Schiras",
+            "aus Teheran",
+            "aus Isfahan"
+          ],
+          "r": 0
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "titel": "Wortschatz",
+      "icon": "📚",
+      "hinweis": "Was bedeutet das Wort?",
+      "items": [
+        {
+          "id": "C1",
+          "thema": "Wortschatz",
+          "frage": "Was bedeutet das?",
+          "fa": "پِدَر",
+          "o": [
+            "Vater",
+            "Mutter",
+            "Bruder",
+            "Großvater"
+          ],
+          "r": 0
+        },
+        {
+          "id": "C2",
+          "thema": "Wortschatz",
+          "frage": "„grün“",
+          "o": [
+            "سَبز",
+            "زَرد",
+            "آبی",
+            "سیاه"
+          ],
+          "r": 0,
+          "optFa": true
+        },
+        {
+          "id": "C3",
+          "thema": "Wortschatz",
+          "frage": "Was bedeutet das?",
+          "fa": "پِزِشک",
+          "o": [
+            "Arzt / Ärztin",
+            "Lehrer/in",
+            "Student/in",
+            "Ingenieur/in"
+          ],
+          "r": 0
+        },
+        {
+          "id": "C4",
+          "thema": "Wortschatz",
+          "frage": "„froh, glücklich“",
+          "o": [
+            "خوشحال",
+            "خَستِه",
+            "گُرُسنِه",
+            "بیمار"
+          ],
+          "r": 0,
+          "optFa": true
+        },
+        {
+          "id": "C5",
+          "thema": "Wortschatz",
+          "frage": "Was bedeutet das?",
+          "fa": "هَویج",
+          "o": [
+            "Karotte",
+            "Kartoffel",
+            "Zwiebel",
+            "Gurke"
+          ],
+          "r": 0
+        },
+        {
+          "id": "C6",
+          "thema": "Wortschatz",
+          "frage": "„Wasser“",
+          "o": [
+            "آب",
+            "نان",
+            "شیر",
+            "چای"
+          ],
+          "r": 0,
+          "optFa": true
+        },
+        {
+          "id": "C7",
+          "thema": "Wortschatz",
+          "frage": "Was bedeutet das?",
+          "fa": "دیروز",
+          "o": [
+            "gestern",
+            "heute",
+            "heute Abend",
+            "gestern Abend"
+          ],
+          "r": 0
+        },
+        {
+          "id": "C8",
+          "thema": "Wortschatz",
+          "frage": "Was bedeutet das?",
+          "fa": "خوابیدَن",
+          "o": [
+            "schlafen",
+            "schreiben",
+            "essen",
+            "sehen"
+          ],
+          "r": 0
+        },
+        {
+          "id": "C9",
+          "thema": "Wortschatz",
+          "frage": "Welches Wort passt <b>nicht</b> zu den anderen?",
+          "o": [
+            "قَهوِه",
+            "سیب",
+            "موز",
+            "پُرتِقال"
+          ],
+          "r": 0,
+          "optFa": true
+        }
+      ]
+    },
+    {
+      "id": "D",
+      "titel": "Grammatik",
+      "icon": "🧩",
+      "hinweis": "Wähle die richtige Form.",
+      "items": [
+        {
+          "id": "D1",
+          "thema": "sein",
+          "frage": "Was fehlt?",
+          "fa": "مَن دانِشجو ___ .",
+          "o": [
+            "هَستَم",
+            "هَستی",
+            "اَست"
+          ],
+          "r": 0,
+          "optFa": true
+        },
+        {
+          "id": "D2",
+          "thema": "sein",
+          "frage": "„Wir sind nicht müde.“",
+          "o": [
+            "ما خَستِه نیستیم.",
+            "ما خَستِه هَستیم.",
+            "ما خَستِه نیستَند."
+          ],
+          "r": 0,
+          "optFa": true
+        },
+        {
+          "id": "D3",
+          "thema": "sein",
+          "frage": "Kurzform: „Ich bin gut.“",
+          "o": [
+            "خوبَم.",
+            "خوبی.",
+            "خوبیم."
+          ],
+          "r": 0,
+          "optFa": true
+        },
+        {
+          "id": "D4",
+          "thema": "Ezāfe",
+          "frage": "„das große Haus“",
+          "o": [
+            "خانِه‌ی بُزُرگ",
+            "بُزُرگ خانِه",
+            "خانِه بُزُرگ اَست"
+          ],
+          "r": 0,
+          "optFa": true
+        },
+        {
+          "id": "D5",
+          "thema": "Ezāfe",
+          "frage": "„mein Bruder“",
+          "o": [
+            "بَرادَرِ مَن",
+            "مَن بَرادَر",
+            "بَرادَرِ تو"
+          ],
+          "r": 0,
+          "optFa": true
+        },
+        {
+          "id": "D6",
+          "thema": "Ezāfe",
+          "frage": "„Die Tasche ist rot.“ (ein Satz)",
+          "o": [
+            "کیف قِرمِز اَست.",
+            "کیفِ قِرمِز",
+            "قِرمِز کیف اَست."
+          ],
+          "r": 0,
+          "optFa": true
+        },
+        {
+          "id": "D7",
+          "thema": "haben",
+          "frage": "Was fehlt?",
+          "fa": "تو ماشین ___ ؟",
+          "o": [
+            "داری",
+            "دارَم",
+            "دارَد"
+          ],
+          "r": 0,
+          "optFa": true
+        },
+        {
+          "id": "D8",
+          "thema": "haben",
+          "frage": "„Ich habe keine Zeit.“",
+          "o": [
+            "وَقت نَدارَم.",
+            "وَقت نیستَم.",
+            "وَقت دارَم."
+          ],
+          "r": 0,
+          "optFa": true
+        },
+        {
+          "id": "D9",
+          "thema": "haben",
+          "frage": "Nach Zahlen: „drei Bücher“",
+          "o": [
+            "سه کِتاب",
+            "کِتاب سه",
+            "سه کِتابی"
+          ],
+          "r": 0,
+          "optFa": true
+        },
+        {
+          "id": "D10",
+          "thema": "mögen & را",
+          "frage": "„Er / Sie mag keinen Fisch.“",
+          "o": [
+            "او ماهی دوست نَدارَد.",
+            "او ماهی نَدوست دارَد.",
+            "او ماهی دوست نَدارَم."
+          ],
+          "r": 0,
+          "optFa": true
+        },
+        {
+          "id": "D11",
+          "thema": "mögen & را",
+          "frage": "Was fehlt?",
+          "fa": "مَن اِصفَهان ___ دوست دارَم.",
+          "o": [
+            "را",
+            "– (nichts)",
+            "اَست"
+          ],
+          "r": 0,
+          "optFa": true
+        },
+        {
+          "id": "D12",
+          "thema": "mögen & را",
+          "frage": "Allgemein: „Ich mag Tomaten.“",
+          "o": [
+            "مَن گوجه‌فَرَنگی دوست دارَم.",
+            "مَن گوجه‌فَرَنگی را دوست دارَم.",
+            "مَن گوجه‌فَرَنگی دوست داری."
+          ],
+          "r": 0,
+          "optFa": true
+        },
+        {
+          "id": "D13",
+          "thema": "Präteritum",
+          "frage": "Vergangenheitsstamm von <span class='fa'>دیدَن</span> (sehen)?",
+          "o": [
+            "دید",
+            "بین",
+            "دیدَن"
+          ],
+          "r": 0,
+          "optFa": true
+        },
+        {
+          "id": "D14",
+          "thema": "Präteritum",
+          "frage": "„du gingst“",
+          "o": [
+            "تو رَفتی",
+            "تو رَفتَم",
+            "تو رَفت"
+          ],
+          "r": 0,
+          "optFa": true
+        },
+        {
+          "id": "D15",
+          "thema": "Präteritum",
+          "frage": "„er / sie hat geschlafen“",
+          "o": [
+            "او خوابید",
+            "او خوابیدَم",
+            "او خوابیدَند"
+          ],
+          "r": 0,
+          "optFa": true
+        },
+        {
+          "id": "D16",
+          "thema": "Präteritum",
+          "frage": "„Ich habe nicht gearbeitet.“",
+          "o": [
+            "کار نَکَردَم.",
+            "نَکار کَردَم.",
+            "کار کَردَم."
+          ],
+          "r": 0,
+          "optFa": true
+        },
+        {
+          "id": "D17",
+          "thema": "Präteritum",
+          "frage": "„Gestern war ich müde.“",
+          "o": [
+            "دیروز خَستِه بودَم.",
+            "دیروز خَستِه هَستَم.",
+            "دیروز خَستِه داشتَم."
+          ],
+          "r": 0,
+          "optFa": true
+        },
+        {
+          "id": "D18",
+          "thema": "Präteritum",
+          "frage": "„Wohin bist du gestern gegangen?“",
+          "o": [
+            "دیروز کُجا رَفتی؟",
+            "دیروز کِی رَفتی؟",
+            "دیروز چه خوردی؟"
+          ],
+          "r": 0,
+          "optFa": true
+        }
+      ]
+    },
+    {
+      "id": "P",
+      "titel": "Präteritum: Wer hat was gemacht?",
+      "icon": "⏪",
+      "hinweis": "Links steht, <b>wer</b> etwas gemacht hat – wähle die passende Verbform. Achte auf die Endung! Jede richtige Zuordnung = 1 Punkt.",
+      "items": [
+        {
+          "id": "P1",
+          "thema": "Präteritum",
+          "typ": "paare",
+          "frage": "Wer hat was gemacht? Wähle für jede Person die passende Verbform.",
+          "paare": [
+            [
+              "مَن",
+              "رَفتَم"
+            ],
+            [
+              "خواهَرِ تو",
+              "خوابید"
+            ],
+            [
+              "تو",
+              "دیدی"
+            ],
+            [
+              "عَلی و مَن",
+              "نوشیدیم"
+            ],
+            [
+              "شُما",
+              "پُختید"
+            ],
+            [
+              "سارا و مینا",
+              "خواندَند"
+            ]
+          ]
+        },
+        {
+          "id": "P2",
+          "thema": "Präteritum",
+          "typ": "paare",
+          "frage": "Und noch einmal – andere Personen, andere Verben.",
+          "paare": [
+            [
+              "مَن",
+              "بیدار شُدَم"
+            ],
+            [
+              "تو",
+              "آمَدی"
+            ],
+            [
+              "بَرادَرِ مینا",
+              "دوش گِرِفت"
+            ],
+            [
+              "مَن و دوستِ مَن",
+              "کار کَردیم"
+            ],
+            [
+              "تو و سارا",
+              "نِوِشتید"
+            ],
+            [
+              "پِدَر و مادَرِ مَن",
+              "خوردَند"
+            ]
+          ]
+        },
+        {
+          "id": "P3",
+          "thema": "Präteritum",
+          "typ": "luecke",
+          "frage": "Lückentext: Wähle in jeder Lücke die richtige Form.",
+          "text": "دیروز صُبح مَن ساعَتِ هَفت بیدار {0}. بَعد صُبحانِه {1} و به دانِشگاه {2}. بَرادَرِ مَن دیروز کار {3}، چون بیمار {4}. شَب ما با هَم فیلم {5}.",
+          "de": "Gestern früh bin ich um sieben aufgewacht. Dann habe ich gefrühstückt und bin zur Uni gegangen. Mein Bruder hat gestern nicht gearbeitet, weil er krank war. Abends haben wir zusammen einen Film gesehen.",
+          "luecken": [
+            {
+              "o": [
+                "شُدَم",
+                "شُد",
+                "شُدیم"
+              ],
+              "r": 0
+            },
+            {
+              "o": [
+                "خوردَم",
+                "خوردی",
+                "خوردَند"
+              ],
+              "r": 0
+            },
+            {
+              "o": [
+                "رَفتَم",
+                "رَفت",
+                "رَفتید"
+              ],
+              "r": 0
+            },
+            {
+              "o": [
+                "نَکَرد",
+                "نَکَردَم",
+                "کَردَند"
+              ],
+              "r": 0
+            },
+            {
+              "o": [
+                "بود",
+                "بودَم",
+                "داشت"
+              ],
+              "r": 0
+            },
+            {
+              "o": [
+                "دیدیم",
+                "دیدَند",
+                "دید"
+              ],
+              "r": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "E",
+      "titel": "Satzbau",
+      "icon": "🧱",
+      "hinweis": "Tippe die Wörter in der richtigen Reihenfolge an. Mit ↺ fängst du neu an.",
+      "items": [
+        {
+          "id": "E1",
+          "thema": "Satzbau",
+          "typ": "bauen",
+          "frage": "„Meine Schwester mag keine Äpfel.“",
+          "teile": [
+            "خواهَرِ",
+            "مَن",
+            "سیب",
+            "دوست",
+            "نَدارَد"
+          ]
+        },
+        {
+          "id": "E2",
+          "thema": "Satzbau",
+          "typ": "bauen",
+          "frage": "„Ich habe zwei Brüder.“",
+          "teile": [
+            "مَن",
+            "دو",
+            "بَرادَر",
+            "دارَم"
+          ]
+        },
+        {
+          "id": "E3",
+          "thema": "Satzbau",
+          "typ": "bauen",
+          "frage": "„Gestern bin ich in den Park gegangen.“",
+          "teile": [
+            "دیروز",
+            "به",
+            "پارک",
+            "رَفتَم"
+          ]
+        },
+        {
+          "id": "E4",
+          "thema": "Satzbau",
+          "typ": "bauen",
+          "frage": "„Das neue Auto ist rot.“",
+          "teile": [
+            "ماشینِ",
+            "نو",
+            "قِرمِز",
+            "اَست"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F",
+      "titel": "Lesen",
+      "icon": "📖",
+      "hinweis": "Lies den Text und beantworte die Fragen.",
+      "text": [
+        "سَلام! اِسمِ مَن مینا اَست. مَن دانِشجو هَستَم و دو بَرادَر دارَم.",
+        "بَرادَرِ بُزُرگِ مَن پِزِشک اَست.",
+        "مَن چای خِیلی دوست دارَم، وَلی قَهوِه دوست نَدارَم.",
+        "دیروز ساعَتِ هَشت بیدار شُدَم، صُبحانِه خوردَم و به دانِشگاه رَفتَم.",
+        "شَب خِیلی خَستِه بودَم و ساعَتِ دَه خوابیدَم."
+      ],
+      "items": [
+        {
+          "id": "F1",
+          "thema": "Lesen",
+          "frage": "Was ist Mina?",
+          "o": [
+            "Studentin",
+            "Ärztin",
+            "Lehrerin"
+          ],
+          "r": 0
+        },
+        {
+          "id": "F2",
+          "thema": "Lesen",
+          "frage": "Wie viele Brüder hat Mina?",
+          "o": [
+            "zwei",
+            "einen",
+            "drei"
+          ],
+          "r": 0
+        },
+        {
+          "id": "F3",
+          "thema": "Lesen",
+          "frage": "Wer ist Arzt?",
+          "o": [
+            "Minas großer Bruder",
+            "Mina",
+            "Minas Vater"
+          ],
+          "r": 0
+        },
+        {
+          "id": "F4",
+          "thema": "Lesen",
+          "frage": "Was mag Mina <b>nicht</b>?",
+          "o": [
+            "Kaffee",
+            "Tee",
+            "Äpfel"
+          ],
+          "r": 0
+        },
+        {
+          "id": "F5",
+          "thema": "Lesen",
+          "frage": "Richtig oder falsch? „Mina ist gestern um zehn Uhr aufgewacht.“",
+          "o": [
+            "falsch",
+            "richtig"
+          ],
+          "r": 0,
+          "fest": true
+        }
+      ]
+    },
+    {
+      "id": "G",
+      "titel": "Schreiben",
+      "icon": "✍️",
+      "hinweis": "Diesen Teil bewertet deine Lehrkraft (bis zu 5 Punkte).",
+      "items": [
+        {
+          "id": "G1",
+          "thema": "Schreiben",
+          "typ": "schreiben",
+          "punkte": 5,
+          "frage": "Schreib 3–4 Sätze auf Persisch: Wer bist du? Was magst du (nicht)? Was hast du gestern gemacht?"
+        }
+      ]
+    }
+  ]
+}
