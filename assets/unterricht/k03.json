@@ -1,0 +1,1045 @@
+{
+ "lektion": "k03",
+ "titel": "Wohnen & Nachbarn: sprechen, streiten, einigen (90 Min.)",
+ "minuten": 90,
+ "bloecke": [
+  {
+   "id": "start",
+   "icon": "🏠",
+   "titel": "Einstieg: Wie wohnst du?",
+   "minuten": 10,
+   "tafel": [
+    {
+     "ref": "k03/s0/0"
+    },
+    {
+     "ref": "k03/w0/0"
+    },
+    {
+     "ref": "k03/w0/1"
+    }
+   ],
+   "aufgaben": [
+    {
+     "typ": "sprechen",
+     "titel": "Blitzrunde: Wie wohnst du?",
+     "text": "Wer gezogen wird, antwortet in zwei, drei Sätzen – und stellt dann jemand anderem eine Frage.",
+     "saetze": [
+      [
+       "خونه‌ت رو توصیف کن. چی‌ش رو دوست داری؟",
+       "Beschreib deine Wohnung. Was magst du an ihr? (ugs.)"
+      ],
+      [
+       "تنها زندگی می‌کنی یا با هم‌خونه؟",
+       "Wohnst du allein oder in einer WG? (ugs.)"
+      ],
+      [
+       "تا حالا با همسایه‌ها مشکل داشتی؟",
+       "Hattest du schon mal Probleme mit Nachbarn? (ugs.)"
+      ],
+      [
+       "شهر یا روستا؟ کجا دوست داری زندگی کنی؟",
+       "Stadt oder Land – wo möchtest du leben? (ugs.)"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "woerter",
+   "icon": "🛋️",
+   "titel": "Wörter-Blitz",
+   "minuten": 5,
+   "tafel": [
+    {
+     "ref": "k03/w1/0"
+    },
+    {
+     "ref": "k03/w2/0"
+    },
+    {
+     "ref": "k03/w2/1"
+    },
+    {
+     "ref": "k03/w3/0"
+    }
+   ],
+   "aufgaben": [
+    {
+     "ref": "k03/w1/6"
+    },
+    {
+     "ref": "k03/w2/6"
+    },
+    {
+     "ref": "k03/w3/6"
+    },
+    {
+     "ref": "k03/a/0"
+    }
+   ]
+  },
+  {
+   "id": "redemittel",
+   "icon": "💬",
+   "titel": "Redemittel: fragen, bitten, beschweren",
+   "minuten": 10,
+   "tafel": [
+    {
+     "ref": "k03/r1/0"
+    },
+    {
+     "ref": "k03/r1/1"
+    },
+    {
+     "ref": "k03/r1/2"
+    },
+    {
+     "ref": "k03/r2/0"
+    }
+   ],
+   "aufgaben": [
+    {
+     "ref": "k03/r1/5"
+    },
+    {
+     "ref": "k03/r2/1"
+    },
+    {
+     "ref": "k03/r2/4"
+    },
+    {
+     "ref": "k03/b/1"
+    }
+   ]
+  },
+  {
+   "id": "dialoge",
+   "icon": "🧩",
+   "titel": "Dialoge rekonstruieren & spielen",
+   "minuten": 15,
+   "tafel": [
+    {
+     "titel": "💬 Dialoge rekonstruieren",
+     "text": "<p>Zu zweit oder zu dritt: Jede/r sieht nur einen Teil der Sätze. Lest laut vor, findet die Reihenfolge – wer den nächsten Satz hat, tippt ihn an. Danach spielt ihr den Dialog mit verteilten Rollen, gern mit Gesten und Betonung!</p><p class='klein'>Tipp für dich: Teams auf „keine“ stellen – dann entstehen automatisch Zweier- (und eine Dreier-)Gruppe.</p>",
+     "stil": "merke"
+    }
+   ],
+   "aufgaben": [
+    {
+     "typ": "dialog",
+     "titel": "Dialoge: WG, Vermieter, Nachbarin",
+     "dialoge": [
+      {
+       "quelle": "k03/d/1",
+       "titel": "WG-Besichtigung"
+      },
+      {
+       "quelle": "k03/d2/2",
+       "titel": "Ein Anruf beim Vermieter"
+      },
+      {
+       "titel": "Die neue Nachbarin",
+       "de": "Im Treppenhaus: Leyla ist neu eingezogen und trifft Herrn Amini.",
+       "zeilen": [
+        {
+         "s": "لیلا",
+         "fa": "سلام! من لیلا هستم، تازه اومدم طبقه‌ی دوم.",
+         "tr": "salām! man leylā hastam, tāze ūmadam tabaghe-ye dowwom.",
+         "de": "Hallo! Ich bin Leyla, ich bin gerade in den 2. Stock gezogen."
+        },
+        {
+         "s": "آقای امینی",
+         "fa": "سلام، خوش اومدید! من امینی هستم، همسایه‌ی روبه‌رو.",
+         "tr": "salām, chosch ūmadīd! man amīnī hastam, hamsāye-ye rūberū.",
+         "de": "Hallo, willkommen! Ich bin Amini, der Nachbar gegenüber."
+        },
+        {
+         "s": "لیلا",
+         "fa": "خوشبختم. ساختمون خیلی ساکته، نه؟",
+         "tr": "choschbachtam. sāchtemūn cheylī sākete, na?",
+         "de": "Freut mich. Das Haus ist sehr ruhig, oder?"
+        },
+        {
+         "s": "آقای امینی",
+         "fa": "آره، فقط آسانسور گاهی خرابه.",
+         "tr": "āre, faghat āsānsor gāhī charābe.",
+         "de": "Ja, nur der Aufzug ist manchmal kaputt."
+        },
+        {
+         "s": "لیلا",
+         "fa": "آشغال‌ها رو کجا باید بذارم؟",
+         "tr": "āschghālhā ro kodschā bāyad bezāram?",
+         "de": "Wo muss ich den Müll hinstellen?"
+        },
+        {
+         "s": "آقای امینی",
+         "fa": "پایین، کنار پارکینگ. شب‌های سه‌شنبه می‌برن.",
+         "tr": "pāyīn, kenār-e pārkīng. schabhā-ye sesch-schanbe mībaran.",
+         "de": "Unten neben dem Parkplatz. Dienstagabends wird er abgeholt."
+        },
+        {
+         "s": "لیلا",
+         "fa": "ممنون! اگه چیزی لازم داشتید، در بزنید.",
+         "tr": "mamnūn! age tschīzī lāzem dāschtīd, dar bezanīd.",
+         "de": "Danke! Wenn Sie etwas brauchen, klopfen Sie einfach."
+        },
+        {
+         "s": "آقای امینی",
+         "fa": "حتماً. شما هم همین‌طور!",
+         "tr": "hatman. schomā ham hamīntour!",
+         "de": "Gerne. Sie auch!"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "reagieren",
+   "icon": "📢",
+   "titel": "Vorlesen & reagieren: Was sagst du?",
+   "minuten": 15,
+   "tafel": [
+    {
+     "titel": "📢 Eine/r liest – alle reagieren",
+     "text": "<p>Reihum liest eine Person eine kurze Situation laut vor – eine Nachbarin klingelt, der Mitbewohner beschwert sich, jemand sucht ein Zimmer … Alle anderen wählen die <b>beste Reaktion</b>.</p><p>Danach: Wer möchte, <b>spielt die Szene</b> kurz mit der vorlesenden Person – mit der gewählten Reaktion und ein, zwei Sätzen mehr.</p>",
+     "stil": "merke"
+    }
+   ],
+   "aufgaben": [
+    {
+     "typ": "vorlesen",
+     "titel": "Was sagst du?",
+     "runden": [
+      {
+       "frage": "Was antwortest du? Wähle die beste Reaktion.",
+       "r": 0,
+       "text": [
+        {
+         "fa": "ببخشید مزاحم می‌شم. من همسایه‌ی پایینی هستم.",
+         "tr": "bebachschīd mozāhem mīscham. man hamsāye-ye pāyīnī hastam.",
+         "de": "Entschuldigung, dass ich störe. Ich bin der Nachbar von unten."
+        },
+        {
+         "fa": "ساعت یازده شبه و صدای آهنگ شما خیلی بلنده.",
+         "tr": "sāʿat yāzdah-e schabe wa sedā-ye āhang-e schomā cheylī bolande.",
+         "de": "Es ist elf Uhr nachts und Ihre Musik ist sehr laut."
+        },
+        {
+         "fa": "من فردا صبح زود کار دارم.",
+         "tr": "man fardā sobh zūd kār dāram.",
+         "de": "Ich muss morgen früh arbeiten."
+        }
+       ],
+       "optionen": [
+        {
+         "emoji": "🤝",
+         "fa": "وای، ببخشید! الان صداش رو کم می‌کنم.",
+         "de": "Oh, Entschuldigung! Ich mache sie gleich leiser."
+        },
+        {
+         "emoji": "😒",
+         "fa": "به شما چه؟ خونه‌ی خودمه.",
+         "de": "Was geht Sie das an? Das ist meine Wohnung."
+        },
+        {
+         "emoji": "🍰",
+         "fa": "بفرمایید کیک!",
+         "de": "Bitte, nehmen Sie Kuchen!"
+        },
+        {
+         "emoji": "🔑",
+         "fa": "کلیدم رو گم کردم.",
+         "de": "Ich habe meinen Schlüssel verloren."
+        }
+       ]
+      },
+      {
+       "frage": "Was antwortest du? Wähle die beste Reaktion.",
+       "r": 2,
+       "text": [
+        {
+         "fa": "سلام آقای کریمی، پویا هستم از طبقه‌ی سوم.",
+         "tr": "salām āghā-ye karīmī, pūyā hastam az tabaghe-ye sewwom.",
+         "de": "Hallo Herr Karimi, hier ist Puya aus dem 3. Stock."
+        },
+        {
+         "fa": "شیر آب آشپزخونه از دیروز چکه می‌کنه.",
+         "tr": "schīr-e āb-e āschpazchūne az dīrūz tschekke mīkone.",
+         "de": "Der Wasserhahn in der Küche tropft seit gestern."
+        },
+        {
+         "fa": "کف آشپزخونه همه‌ش خیسه.",
+         "tr": "kaf-e āschpazchūne hamasch chīse.",
+         "de": "Der Küchenboden ist ganz nass."
+        }
+       ],
+       "optionen": [
+        {
+         "emoji": "🏖️",
+         "fa": "من این هفته مسافرتم. فعلاً!",
+         "de": "Ich bin diese Woche verreist. Bis dann!"
+        },
+        {
+         "emoji": "💸",
+         "fa": "اجاره رو دیر دادید!",
+         "de": "Sie haben die Miete zu spät bezahlt!"
+        },
+        {
+         "emoji": "🔧",
+         "fa": "ببخشید! فردا صبح لوله‌کش رو می‌فرستم.",
+         "de": "Entschuldigung! Morgen früh schicke ich den Klempner."
+        },
+        {
+         "emoji": "🛋️",
+         "fa": "مبل جدید خریدید؟",
+         "de": "Haben Sie ein neues Sofa gekauft?"
+        }
+       ]
+      },
+      {
+       "frage": "Was antwortest du? Wähle die beste Reaktion.",
+       "r": 1,
+       "text": [
+        {
+         "fa": "ببین، این هفته نوبت تو بود آشغال‌ها رو ببری.",
+         "tr": "bebīn, īn hafte noubat-e to būd āschghālhā ro bebarī.",
+         "de": "Schau mal, diese Woche warst du dran, den Müll rauszubringen."
+        },
+        {
+         "fa": "ظرف‌ها هم از دیروز موندن.",
+         "tr": "zarfhā ham az dīrūz mūndan.",
+         "de": "Und das Geschirr steht seit gestern da."
+        },
+        {
+         "fa": "آشپزخونه خیلی شلوغه.",
+         "tr": "āschpazchūne cheylī scholūghe.",
+         "de": "Die Küche ist total voll."
+        }
+       ],
+       "optionen": [
+        {
+         "emoji": "🙄",
+         "fa": "من وقت ندارم، خودت ببر.",
+         "de": "Ich habe keine Zeit, bring du ihn raus."
+        },
+        {
+         "emoji": "🙏",
+         "fa": "حق با توئه، ببخشید! الان آشغال‌ها رو می‌برم و ظرف‌ها رو می‌شورم.",
+         "de": "Du hast recht, sorry! Ich bringe gleich den Müll raus und spüle ab."
+        },
+        {
+         "emoji": "🎵",
+         "fa": "آهنگ گوش می‌دی؟",
+         "de": "Hörst du Musik?"
+        },
+        {
+         "emoji": "🛏️",
+         "fa": "اتاق من خیلی بزرگه.",
+         "de": "Mein Zimmer ist sehr groß."
+        }
+       ]
+      },
+      {
+       "frage": "Welche Wohnung passt zu dieser Person?",
+       "r": 3,
+       "text": [
+        {
+         "fa": "من دانشجو هستم و بودجه‌م کمه.",
+         "tr": "man dāneschdschū hastam wa būdschem kame.",
+         "de": "Ich bin Student/in und habe wenig Geld."
+        },
+        {
+         "fa": "دوست دارم با آدم‌های دیگه زندگی کنم، نه تنها.",
+         "tr": "dūst dāram bā ādamhā-ye dīge zendegī konam, na tanhā.",
+         "de": "Ich wohne gern mit anderen zusammen, nicht allein."
+        },
+        {
+         "fa": "یه اتاق کوچیک برام کافیه.",
+         "tr": "ye otāgh-e kūtschīk barām kāfīye.",
+         "de": "Ein kleines Zimmer reicht mir."
+        }
+       ],
+       "optionen": [
+        {
+         "emoji": "🏡",
+         "fa": "خونه‌ی بزرگ با باغ، سه خوابه، گرون.",
+         "de": "Großes Haus mit Garten, drei Schlafzimmer, teuer."
+        },
+        {
+         "emoji": "🏢",
+         "fa": "آپارتمان یه‌خوابه‌ی نوساز در مرکز شهر.",
+         "de": "Neubau-Einzimmerwohnung im Zentrum."
+        },
+        {
+         "emoji": "🛗",
+         "fa": "آپارتمان طبقه‌ی دهم با آسانسور و نگهبان.",
+         "de": "Wohnung im 10. Stock mit Aufzug und Pförtner."
+        },
+        {
+         "emoji": "🛏️",
+         "fa": "یه اتاق مبله در یه خونه‌ی مشترک با سه دانشجو، ارزون.",
+         "de": "Möbliertes Zimmer in einer WG mit drei Studierenden, günstig."
+        }
+       ]
+      },
+      {
+       "frage": "Was antwortest du? Wähle die beste Reaktion.",
+       "r": 3,
+       "text": [
+        {
+         "fa": "سلام، من همسایه‌ی بالایی هستم.",
+         "tr": "salām, man hamsāye-ye bālāyī hastam.",
+         "de": "Hallo, ich bin die Nachbarin von oben."
+        },
+        {
+         "fa": "شنبه شب تولد پسرمه و چند تا مهمون داریم.",
+         "tr": "schanbe schab tavallod-e pesarame wa tschand tā mehmūn dārīm.",
+         "de": "Samstagabend hat mein Sohn Geburtstag und wir haben Gäste."
+        },
+        {
+         "fa": "شاید یه کم سروصدا باشه.",
+         "tr": "schāyad ye kam sar-o-sedā bāsche.",
+         "de": "Vielleicht wird es ein bisschen laut."
+        }
+       ],
+       "optionen": [
+        {
+         "emoji": "📞",
+         "fa": "پلیس رو خبر می‌کنم!",
+         "de": "Ich rufe die Polizei!"
+        },
+        {
+         "emoji": "🧹",
+         "fa": "پله‌ها کثیفه.",
+         "de": "Die Treppe ist schmutzig."
+        },
+        {
+         "emoji": "🚪",
+         "fa": "من اینجا زندگی نمی‌کنم.",
+         "de": "Ich wohne hier nicht."
+        },
+        {
+         "emoji": "🎂",
+         "fa": "مشکلی نیست، ممنون که گفتید! تولدش مبارک.",
+         "de": "Kein Problem, danke, dass Sie Bescheid sagen! Alles Gute zum Geburtstag."
+        }
+       ]
+      },
+      {
+       "frage": "Was antwortest du? Wähle die beste Reaktion.",
+       "r": 0,
+       "text": [
+        {
+         "fa": "سلام! من دنبال اتاق هستم.",
+         "tr": "salām! man donbāl-e otāgh hastam.",
+         "de": "Hallo! Ich suche ein Zimmer."
+        },
+        {
+         "fa": "آگهی شما رو دیدم.",
+         "tr": "āgahī-ye schomā ro dīdam.",
+         "de": "Ich habe Ihre Anzeige gesehen."
+        },
+        {
+         "fa": "اتاق هنوز خالیه؟",
+         "tr": "otāgh hanūz chālīye?",
+         "de": "Ist das Zimmer noch frei?"
+        }
+       ],
+       "optionen": [
+        {
+         "emoji": "✅",
+         "fa": "بله، هنوز خالیه. کی می‌خواید بیاید ببینید؟",
+         "de": "Ja, es ist noch frei. Wann möchten Sie es ansehen?"
+        },
+        {
+         "emoji": "🍳",
+         "fa": "صبحونه خوردید؟",
+         "de": "Haben Sie gefrühstückt?"
+        },
+        {
+         "emoji": "🚿",
+         "fa": "شیر آب چکه می‌کنه.",
+         "de": "Der Wasserhahn tropft."
+        },
+        {
+         "emoji": "🌧️",
+         "fa": "امروز بارون میاد.",
+         "de": "Heute regnet es."
+        }
+       ]
+      },
+      {
+       "frage": "Was antwortest du? Wähle die beste Reaktion.",
+       "r": 1,
+       "text": [
+        {
+         "fa": "ببخشید، ماشین شما جلوی پارکینگ من پارکه.",
+         "tr": "bebachschīd, māschīn-e schomā dschelou-ye pārkīng-e man pārke.",
+         "de": "Entschuldigung, Ihr Auto steht vor meinem Stellplatz."
+        },
+        {
+         "fa": "من باید الان برم سر کار.",
+         "tr": "man bāyad alān beram sar-e kār.",
+         "de": "Ich muss jetzt zur Arbeit."
+        },
+        {
+         "fa": "می‌شه ماشین‌تون رو جابه‌جا کنید؟",
+         "tr": "mīsche māschīnetūn ro dschābedschā konīd?",
+         "de": "Können Sie Ihr Auto umparken?"
+        }
+       ],
+       "optionen": [
+        {
+         "emoji": "😴",
+         "fa": "الان خوابم میاد، بعداً.",
+         "de": "Ich bin jetzt müde, später."
+        },
+        {
+         "emoji": "🚗",
+         "fa": "وای، ببخشید! همین الان میام.",
+         "de": "Oh, Entschuldigung! Ich komme sofort."
+        },
+        {
+         "emoji": "🎁",
+         "fa": "این کادو برای شماست.",
+         "de": "Dieses Geschenk ist für Sie."
+        },
+        {
+         "emoji": "🏠",
+         "fa": "خونه‌ی شما خیلی قشنگه.",
+         "de": "Ihre Wohnung ist sehr schön."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "ref": "k03/x/1"
+    }
+   ]
+  },
+  {
+   "id": "rollen",
+   "icon": "🎭",
+   "titel": "Rollenspiele mit Geheimauftrag",
+   "minuten": 25,
+   "tafel": [
+    {
+     "titel": "🎭 Rollenspiele mit Konflikt",
+     "text": "<p>Zwei Szenen zur Auswahl – je nach Zeit eine oder beide:</p><ol><li><b>Party um 23 Uhr</b>: Nachbar/in unten, Gastgeber/in und Hausverwalter/in.</li><li><b>WG-Krisensitzung</b>: Putzplan, Geld, Lärm – vier Typen, ein Plan.</li></ol><p>Jede/r hat zwei <b>Geheimaufträge</b>. Erst üben die Gruppen gleichzeitig, dann spielt jede Gruppe vor – die anderen haken an, was sie gehört haben.</p><p class='klein'>Für die Rollenspiele: Teams auf „2 Teams“ oder „3 Teams“ stellen.</p>",
+     "stil": "merke"
+    }
+   ],
+   "aufgaben": [
+    {
+     "typ": "rolle",
+     "titel": "Rollenspiel 1: Party um 23 Uhr",
+     "anzahl": 2,
+     "situation": [
+      "مهمونی ساعت یازده شب",
+      "Ein Mehrfamilienhaus, 23 Uhr. In einer Wohnung wird gefeiert – die Nachbarn unten müssen morgen früh raus. Findet eine Lösung, mit der alle leben können."
+     ],
+     "rollen": [
+      {
+       "icon": "😴",
+       "name": [
+        "همسایه‌ی پایینی",
+        "Nachbar/in unten"
+       ],
+       "aufgabe": "Du schreibst morgen früh eine wichtige Prüfung. Über dir läuft laute Musik. Klingle und bitte höflich, aber bestimmt um Ruhe.",
+       "redemittel": [
+        [
+         "ببخشید مزاحم می‌شم، ولی …",
+         "Entschuldigen Sie die Störung, aber …"
+        ],
+        [
+         "صدای آهنگ خیلی بلنده.",
+         "Die Musik ist sehr laut."
+        ],
+        [
+         "می‌شه یه کم آروم‌تر باشید؟",
+         "Könnten Sie etwas leiser sein?"
+        ],
+        [
+         "خیلی ممنون که درک می‌کنید.",
+         "Danke für Ihr Verständnis."
+        ]
+       ],
+       "missionen": [
+        [
+         "فردا ساعت هشت امتحان دارم.",
+         "erzählt von der Prüfung morgen um acht"
+        ],
+        [
+         "بچه‌م تازه خوابیده.",
+         "sagt, dass das Kind gerade eingeschlafen ist"
+        ],
+        [
+         "هفته‌ی پیش هم همین‌طور بود!",
+         "beschwert sich, dass es letzte Woche genauso war"
+        ],
+        [
+         "حداقل تا ساعت دوازده تموم کنید.",
+         "fordert, um 12 Uhr Schluss zu machen"
+        ],
+        [
+         "دفعه‌ی بعد لطفاً قبلش خبر بدید.",
+         "bittet, nächstes Mal vorher Bescheid zu geben"
+        ],
+        [
+         "تولدت مبارک!",
+         "gratuliert zum Geburtstag"
+        ]
+       ]
+      },
+      {
+       "icon": "🎉",
+       "name": [
+        "صاحب مهمونی",
+        "Gastgeber/in"
+       ],
+       "aufgabe": "Du feierst deinen Geburtstag mit Freunden. Reagiere zuerst etwas genervt – dann findet ihr gemeinsam eine Lösung.",
+       "redemittel": [
+        [
+         "امشب تولدمه!",
+         "Heute ist mein Geburtstag!"
+        ],
+        [
+         "فقط یه شب در ساله.",
+         "Es ist nur einmal im Jahr."
+        ],
+        [
+         "باشه، صداش رو کم می‌کنم.",
+         "Okay, ich mache sie leiser."
+        ],
+        [
+         "مشکلی نیست، حل می‌شه.",
+         "Kein Problem, das lässt sich lösen."
+        ]
+       ],
+       "missionen": [
+        [
+         "بفرمایید تو، یه تیکه کیک بخورید!",
+         "lädt zu einem Stück Kuchen ein"
+        ],
+        [
+         "همه‌ی همسایه‌ها رو دعوت کرده بودم.",
+         "sagt, dass er/sie alle Nachbarn eingeladen hatte"
+        ],
+        [
+         "ساعت دوازده موزیک رو خاموش می‌کنیم.",
+         "verspricht, um 12 die Musik auszumachen"
+        ],
+        [
+         "پنجره‌ها رو می‌بندیم.",
+         "verspricht, die Fenster zu schließen"
+        ],
+        [
+         "کاغذ رو تو راه‌پله گذاشته بودم.",
+         "sagt, dass ein Zettel im Treppenhaus hing"
+        ],
+        [
+         "فردا براتون شیرینی میارم.",
+         "verspricht, morgen Süßes vorbeizubringen"
+        ]
+       ]
+      },
+      {
+       "icon": "🧓",
+       "name": [
+        "مدیر ساختمون",
+        "Hausverwalter/in"
+       ],
+       "aufgabe": "Du wohnst im Haus und kümmerst dich um die Hausordnung. Du hörst den Streit und kommst dazu. Du willst, dass alle zufrieden sind – und dass die Regeln gelten.",
+       "redemittel": [
+        [
+         "چی شده؟ چرا دعوا می‌کنید؟",
+         "Was ist los? Warum streitet ihr?"
+        ],
+        [
+         "طبق قانون ساختمون …",
+         "Laut Hausordnung …"
+        ],
+        [
+         "بیاید با هم حرف بزنیم.",
+         "Lasst uns miteinander reden."
+        ]
+       ],
+       "missionen": [
+        [
+         "بعد از ساعت ده باید سکوت باشه.",
+         "erinnert: nach 22 Uhr ist Ruhe"
+        ],
+        [
+         "همسایه‌ی طبقه‌ی سوم هم شکایت کرده.",
+         "sagt, dass auch der 3. Stock sich beschwert hat"
+        ],
+        [
+         "دفعه‌ی بعد جریمه داره!",
+         "droht beim nächsten Mal mit einer Strafe"
+        ],
+        [
+         "من هم جوون بودم!",
+         "sagt, dass er/sie auch mal jung war"
+        ],
+        [
+         "یه جلسه‌ی ساختمون می‌ذاریم.",
+         "schlägt ein Hausmeeting vor"
+        ],
+        [
+         "ماشین یکی از مهمون‌ها جلوی پارکینگه.",
+         "beschwert sich über ein falsch geparktes Auto eines Gastes"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "typ": "rolle",
+     "titel": "Rollenspiel 2: WG-Krisensitzung",
+     "anzahl": 2,
+     "situation": [
+      "جلسه‌ی خونه‌ی مشترک",
+      "Eure WG hat Probleme: Küche voll, Bad dreckig, Müll nicht weg, Streit ums Geld. Ihr sitzt zusammen und schreibt neue Regeln und einen Putzplan."
+     ],
+     "rollen": [
+      {
+       "icon": "🧽",
+       "name": [
+        "آدم مرتب",
+        "die / der Ordentliche"
+       ],
+       "aufgabe": "Du hältst das Chaos nicht mehr aus. Du willst einen festen Putzplan mit klaren Regeln.",
+       "redemittel": [
+        [
+         "بیا یه برنامه برای تمیزکاری بنویسیم.",
+         "Lass uns einen Putzplan schreiben."
+        ],
+        [
+         "ظرف‌ها از دیروز موندن.",
+         "Das Geschirr steht seit gestern da."
+        ],
+        [
+         "این هفته نوبت کیه؟",
+         "Wer ist diese Woche dran?"
+        ]
+       ],
+       "missionen": [
+        [
+         "حموم خیلی کثیفه.",
+         "beschwert sich über das schmutzige Bad"
+        ],
+        [
+         "هر کی ظرف کثیف کرد، خودش بشوره.",
+         "fordert: Wer Geschirr benutzt, spült es selbst"
+        ],
+        [
+         "یه جدول روی یخچال می‌ذاریم.",
+         "schlägt einen Plan am Kühlschrank vor"
+        ],
+        [
+         "من مهمون‌ها رو دوست دارم، ولی نه هر شب.",
+         "mag Gäste, aber nicht jeden Abend"
+        ],
+        [
+         "یخچال بوی بد میده.",
+         "sagt, dass der Kühlschrank stinkt"
+        ],
+        [
+         "من آشغال‌ها رو سه هفته بردم!",
+         "sagt, dass er/sie drei Wochen lang den Müll rausgebracht hat"
+        ]
+       ]
+      },
+      {
+       "icon": "🎸",
+       "name": [
+        "آدم شلخته",
+        "die / der Chaotische"
+       ],
+       "aufgabe": "Du findest, dass alles gar nicht so schlimm ist. Du bist oft weg und hast viel zu tun – Regeln magst du nicht.",
+       "redemittel": [
+        [
+         "حالا این‌قدر هم بد نیست!",
+         "So schlimm ist es doch nicht!"
+        ],
+        [
+         "من خیلی سرم شلوغه.",
+         "Ich habe sehr viel zu tun."
+        ],
+        [
+         "باشه، قبول دارم.",
+         "Okay, einverstanden."
+        ]
+       ],
+       "missionen": [
+        [
+         "من بیشتر وقت‌ها خونه نیستم.",
+         "sagt, dass er/sie meistens nicht zu Hause ist"
+        ],
+        [
+         "آخر هفته همه‌جا رو تمیز می‌کنم.",
+         "verspricht, am Wochenende alles zu putzen"
+        ],
+        [
+         "بیاید یه نفر رو برای تمیزکاری بگیریم.",
+         "schlägt vor, eine Putzkraft zu bezahlen"
+        ],
+        [
+         "گیتار زدن ممنوعه؟",
+         "fragt, ob Gitarrespielen verboten ist"
+        ],
+        [
+         "دوست دخترم / دوست پسرم فقط آخر هفته‌ها میاد.",
+         "sagt, dass der/die Partner/in nur am Wochenende kommt"
+        ],
+        [
+         "من هم یه قانون دارم: صبح‌ها سکوت!",
+         "hat selbst eine Regel: morgens Ruhe"
+        ]
+       ]
+      },
+      {
+       "icon": "💶",
+       "name": [
+        "مسئول پول",
+        "die / der Kassenwart"
+       ],
+       "aufgabe": "Du kümmerst dich um Miete und Rechnungen. Die Stromrechnung ist sehr hoch und einer hat noch nicht bezahlt.",
+       "redemittel": [
+        [
+         "قبض برق خیلی زیاد اومده.",
+         "Die Stromrechnung ist sehr hoch."
+        ],
+        [
+         "هر نفر باید … بده.",
+         "Jede/r muss … zahlen."
+        ],
+        [
+         "پول خرید خونه رو با هم تقسیم کنیم.",
+         "Lasst uns das Haushaltsgeld teilen."
+        ]
+       ],
+       "missionen": [
+        [
+         "یکی هنوز اجاره‌ی این ماه رو نداده.",
+         "sagt, dass jemand die Miete noch nicht bezahlt hat"
+        ],
+        [
+         "شوفاژ همیشه روشنه!",
+         "beschwert sich, dass die Heizung immer an ist"
+        ],
+        [
+         "یه صندوق مشترک برای خرید بذاریم.",
+         "schlägt eine gemeinsame Haushaltskasse vor"
+        ],
+        [
+         "صاحبخونه گفت اجاره بالا میره.",
+         "erzählt, dass der Vermieter die Miete erhöhen will"
+        ],
+        [
+         "مهمون‌ها هم باید سهم بدن.",
+         "findet, dass Gäste auch mitzahlen sollen"
+        ],
+        [
+         "من همه‌ی رسیدها رو نگه می‌دارم.",
+         "sagt, dass er/sie alle Belege aufhebt"
+        ]
+       ]
+      },
+      {
+       "icon": "😌",
+       "name": [
+        "آدم آروم",
+        "die / der Ruhige"
+       ],
+       "aufgabe": "Du willst keinen Streit. Du vermittelst und suchst Kompromisse – aber du hast auch ein eigenes Problem: Es ist abends zu laut.",
+       "redemittel": [
+        [
+         "آروم باشید، حل می‌شه.",
+         "Bleibt ruhig, das lässt sich lösen."
+        ],
+        [
+         "پیشنهاد من اینه که …",
+         "Mein Vorschlag ist …"
+        ],
+        [
+         "به نظرم هر دوتون حق دارید.",
+         "Ich finde, ihr habt beide recht."
+        ]
+       ],
+       "missionen": [
+        [
+         "شب‌ها نمی‌تونم بخوابم.",
+         "sagt, dass er/sie nachts nicht schlafen kann"
+        ],
+        [
+         "بیاید هر ماه یه جلسه داشته باشیم.",
+         "schlägt ein monatliches WG-Treffen vor"
+        ],
+        [
+         "من آشپزی می‌کنم، شما ظرف بشورید.",
+         "bietet an zu kochen, wenn die anderen spülen"
+        ],
+        [
+         "یه شام با هم بخوریم.",
+         "schlägt ein gemeinsames Abendessen vor"
+        ],
+        [
+         "حریم خصوصی برام مهمه.",
+         "sagt, dass ihm/ihr Privatsphäre wichtig ist"
+        ],
+        [
+         "قانون‌ها رو بنویسیم و همه امضا کنیم.",
+         "will, dass alle die Regeln unterschreiben"
+        ]
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "traum",
+   "icon": "✨",
+   "titel": "Zu zweit: Meine Traumwohnung",
+   "minuten": 10,
+   "tafel": [
+    {
+     "ref": "k03/k/0"
+    }
+   ],
+   "aufgaben": [
+    {
+     "typ": "partner",
+     "titel": "Zu zweit: Meine Traumwohnung",
+     "fragen": [
+      [
+       "خونه‌ی رؤیایی‌ت چه شکلیه؟",
+       "Wie sieht deine Traumwohnung aus? (ugs.)"
+      ],
+      [
+       "چند تا اتاق داره؟ بالکن یا باغ داره؟",
+       "Wie viele Zimmer? Balkon oder Garten?"
+      ],
+      [
+       "کجاست؟ شهر، روستا، کنار دریا؟",
+       "Wo liegt sie? Stadt, Dorf, am Meer?"
+      ],
+      [
+       "با کی زندگی می‌کنی؟",
+       "Mit wem wohnst du dort?"
+      ],
+      [
+       "به نظرت تو یه خونه‌ی مشترک چه قانون‌هایی لازمه؟",
+       "Welche Regeln braucht eine WG? (ugs.)"
+      ]
+     ],
+     "bericht": [
+      [
+       "خونه‌ی رؤیایی … …",
+       "Die Traumwohnung von … ist …"
+      ],
+      [
+       "… دوست داره با … زندگی کنه.",
+       "… möchte mit … wohnen."
+      ],
+      [
+       "جالب‌ترین چیز اینه که …",
+       "Das Interessanteste ist, dass …"
+      ]
+     ]
+    },
+    {
+     "typ": "quiz",
+     "titel": "Finale: Wohn-Quiz",
+     "sek": 20,
+     "fragen": [
+      {
+       "f": "Was bedeutet das?",
+       "fa": "هم‌خونه",
+       "o": [
+        "Mitbewohner/in",
+        "Nachbar/in",
+        "Vermieter/in"
+       ],
+       "r": 0
+      },
+      {
+       "f": "„Wie hoch ist die Miete?“",
+       "o": [
+        "اجاره‌ش چنده؟",
+        "از کی خالیه؟",
+        "قبض‌ها هم حسابه؟"
+       ],
+       "r": 0,
+       "optFa": true
+      },
+      {
+       "f": "Höflich ein Problem ansprechen:",
+       "o": [
+        "ببخشید مزاحم می‌شم، ولی …",
+        "به شما چه؟",
+        "خودت ببر!"
+       ],
+       "r": 0,
+       "optFa": true
+      },
+      {
+       "f": "Was bedeutet das?",
+       "fa": "شیر آب چکه می‌کنه.",
+       "o": [
+        "Der Wasserhahn tropft.",
+        "Die Heizung ist kalt.",
+        "Die Milch ist alle."
+       ],
+       "r": 0
+      },
+      {
+       "f": "„möbliert“",
+       "o": [
+        "مبله",
+        "شلوغ",
+        "روشن"
+       ],
+       "r": 0,
+       "optFa": true
+      },
+      {
+       "f": "„Diese Woche bist du dran.“",
+       "o": [
+        "این هفته نوبت توئه.",
+        "این هفته خالیه.",
+        "این هفته شلوغه."
+       ],
+       "r": 0,
+       "optFa": true
+      },
+      {
+       "f": "Was ist رهن in Iran?",
+       "o": [
+        "eine große Kaution statt (oder neben) monatlicher Miete",
+        "die Nebenkosten",
+        "die Maklergebühr"
+       ],
+       "r": 0
+      },
+      {
+       "f": "„Kein Problem, das lässt sich lösen.“",
+       "o": [
+        "مشکلی نیست، حل می‌شه.",
+        "مشکل خودته.",
+        "مشکل داریم."
+       ],
+       "r": 0,
+       "optFa": true
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

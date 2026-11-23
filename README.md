@@ -322,7 +322,7 @@ Zentrale Stelle für den Unterricht mit Lektionen (Konsole → 🎓 Live-Unterri
 - **Dialog rekonstruieren (`typ: "dialog"`):** Gruppen zu 2–3 (ohne Teams = Paare, bei ungerader Zahl ein Dreier); jede/r sieht nur einen Teil der Sätze, wer den nächsten Satz hat, tippt ihn an (falsche Tipps = Fehlversuche), danach mit verteilten Rollen vorspielen und weiter zum nächsten Dialog. Dialoge direkt im Plan oder `{quelle: "lek/station/idx"}` aus einem Lektionsdialog („Name: Satz“).
 - **Vorlesen & entscheiden (`typ: "vorlesen"`):** Reihum liest eine Person einen Text vor (sieht nur den Text), alle anderen wählen die passende Option; Auflösung zeigt Text mit Übersetzung, Teampunkte für richtige Wahl und für gutes Vorlesen.
 - **Quiz für alle (`typ: "quiz"`, wie Kahoot):** Frage auf der Leinwand, Antwort (Farbe + Symbol) auf dem Handy, Countdown, schnell + richtig = bis 1000 Punkte, löst automatisch auf, Zwischenstand und Endstand.
-- Ausgearbeitete Pläne: 03 (L4 haben), 04 (L5 mögen + mein/dein), 05 (L6 Präteritum), 06 (L7: Dialoge rekonstruieren + mein/dein & را), f101, f102 (Wohnen: Vorlesen & entscheiden), k07 (Reise: Konflikt-Rollenspiele), k05 (Teamduell). Der automatische Plan ist nur noch ein versteckter Rohentwurf.
+- Ausgearbeitete Pläne: 03 (L4 haben), 04 (L5 mögen + mein/dein), 05 (L6 Präteritum), 06 (L7: Dialoge rekonstruieren + mein/dein & را), f101, f102 (Wohnen: Vorlesen & entscheiden), k07 (Reise: Konflikt-Rollenspiele), k03 (Wohnen & Nachbarn), k05 (Teamduell). Der automatische Plan ist nur noch ein versteckter Rohentwurf.
 - Firebase: `live/unterricht/{code}` (gleiche Regeln wie die anderen Live-Spiele).
 
 ### Live: Scharade · Erklären · Malen (`live-scharade.html`)
