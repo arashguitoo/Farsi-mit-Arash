@@ -141,8 +141,8 @@
 window.UNTERRICHT = (function () {
   const INTERAKTIV = ["paare", "wahl", "bauen", "sortieren", "finden", "lesen", "ordnen", "memory", "tempo", "zuordnen"];
   const TAFEL = ["info", "text", "buchstaben"];
-  const TYP_ICON = { paare: "🔗", wahl: "☑️", bauen: "🧱", sortieren: "🗂️", finden: "🔍", lesen: "📖", ordnen: "🔢", memory: "🃏", tempo: "⚡", zuordnen: "🧩", interview: "🗣️", puzzle: "🧩", sprechen: "🎤", partner: "👥", weg: "🗺️", rolle: "🎭", quiz: "🏆", vorlesen: "📢" };
-  const TYP_NAME = { paare: "Paare finden", wahl: "Quiz", bauen: "Bauen", sortieren: "Sortieren", finden: "Finden", lesen: "Lesen", ordnen: "Ordnen", memory: "Memory", tempo: "Blitz", zuordnen: "Zuordnen", interview: "Partner-Interview", puzzle: "Vorlesen & ordnen", sprechen: "Sprechrunde", partner: "Partnergespräch", weg: "Stadtplan-Spiel", rolle: "Rollenspiel mit Geheimauftrag", quiz: "Quiz für alle (wie Kahoot)", vorlesen: "Vorlesen & entscheiden" };
+  const TYP_ICON = { paare: "🔗", wahl: "☑️", bauen: "🧱", sortieren: "🗂️", finden: "🔍", lesen: "📖", ordnen: "🔢", memory: "🃏", tempo: "⚡", zuordnen: "🧩", interview: "🗣️", puzzle: "🧩", sprechen: "🎤", partner: "👥", weg: "🗺️", rolle: "🎭", quiz: "🏆", vorlesen: "📢", dialog: "💬" };
+  const TYP_NAME = { paare: "Paare finden", wahl: "Quiz", bauen: "Bauen", sortieren: "Sortieren", finden: "Finden", lesen: "Lesen", ordnen: "Ordnen", memory: "Memory", tempo: "Blitz", zuordnen: "Zuordnen", interview: "Partner-Interview", puzzle: "Vorlesen & ordnen", sprechen: "Sprechrunde", partner: "Partnergespräch", weg: "Stadtplan-Spiel", rolle: "Rollenspiel mit Geheimauftrag", quiz: "Quiz für alle (wie Kahoot)", vorlesen: "Vorlesen & entscheiden", dialog: "Dialog rekonstruieren (Gruppen)" };
   const hash = s => { let h = 2166136261; for (const c of String(s)) { h ^= c.charCodeAt(0); h = Math.imul(h, 16777619); } return h >>> 0; };
   function rng(seed) { let a = hash(seed); return () => { a |= 0; a = a + 0x6D2B79F5 | 0; let t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
   function mischen(a, r) { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(r() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
@@ -286,6 +286,7 @@ window.UNTERRICHT = (function () {
       b.aufgaben = (await Promise.all((b.aufgaben || []).map(async a => {
         if (a.ref) { const k = await karte(a.ref); return k ? Object.assign(k, { _gruppe: a.gruppe }) : null; }
         if (a.typ === "puzzle" && a.quelle) { const k = await karte(a.quelle); return k && k.zeilen ? Object.assign({}, a, { _teile: U.teile(k, a.gruppen) }) : null; }
+        if (a.typ === "dialog") { const D = []; for (const d of a.dialoge) { if (d.quelle) { const k = await karte(d.quelle); if (!k || !k.zeilen) continue; D.push(Object.assign({ titel: k.titel }, d, { zeilen: k.zeilen.map(z => { const m = z.fa.match(/^([^:]{1,25}):\s*(.+)$/); return { s: m ? m[1].trim() : "", fa: m ? m[2] : z.fa, tr: z.tr, de: z.de }; }) })); } else D.push(d); } return Object.assign({}, a, { dialoge: D }); }
         if (a.typ === "interview") return Object.assign({}, a, { _felder: (roh.vorlagen || {})[a.vorlage].felder });
         return a;
       }))).filter(Boolean);
@@ -435,9 +436,10 @@ window.UNTERRICHT = (function () {
     else if (a.typ === "rolle") h += rolleStand(a, false);
     else if (a.typ === "quiz") h += quizLeitung(a, false);
     else if (a.typ === "vorlesen") h += vlLeitung(a, false);
+    else if (a.typ === "dialog") h += dlgLeitung(a, false);
     else if (a.typ === "interview" || a.typ === "partner") { const P = U.paare(ids, G.aufgabe.id); h += `<div class="fort">${P.gruppen.map(g => `<span>${g.map(name).join(" ↔ ")}</span>`).join("")}</div>`; }
     const fertig = ids.filter(id => E[id] && E[id].fertig != null || E[id] && E[id].n != null);
-    if (!["puzzle", "sprechen", "weg", "rolle", "quiz", "vorlesen"].includes(a.typ)) h += `<div class="fort">${ids.map(id => { const e = E[id]; return `<span class="${e && (e.n != null || e.fertig) ? "ok" : ""}">${esc(name(id))}${e && e.n ? " " + e.p + "/" + e.n : e && e.fertig ? " ✓" : ""}</span>`; }).join("")}</div><p class="klein muted">${fertig.length} von ${ids.length} fertig</p>`;
+    if (!["puzzle", "sprechen", "weg", "rolle", "quiz", "vorlesen", "dialog"].includes(a.typ)) h += `<div class="fort">${ids.map(id => { const e = E[id]; return `<span class="${e && (e.n != null || e.fertig) ? "ok" : ""}">${esc(name(id))}${e && e.n ? " " + e.p + "/" + e.n : e && e.fertig ? " ✓" : ""}</span>`; }).join("")}</div><p class="klein muted">${fertig.length} von ${ids.length} fertig</p>`;
     return h + `</div>`;
   }
   /* große Ansicht laufender Spezial-Aufgaben */
@@ -459,6 +461,7 @@ window.UNTERRICHT = (function () {
     if (a.typ === "rolle") return `<h2 style="margin:6px 0">🎭 ${esc(a.titel)}</h2>${rolleStand(a, true)}`;
     if (a.typ === "quiz") return quizLeitung(a, true);
     if (a.typ === "vorlesen") return vlLeitung(a, true);
+    if (a.typ === "dialog") return `<h2 style="margin:6px 0">💬 ${esc(a.titel)}</h2><p>Jede Gruppe hat einen Dialog – aber jede/r nur einen Teil der Sätze. Lest eure Sätze laut vor und findet gemeinsam die Reihenfolge. Wer den nächsten Satz hat, tippt ihn an. Danach spielt ihr den Dialog mit verteilten Rollen.</p>${dlgLeitung(a, true)}`;
     if (a.typ === "sprechen") {
       const g = G.aufgabe.gezogen || [], jetzt = g[g.length - 1];
       return `<h2 style="margin:6px 0">🎤 ${esc(a.titel)}</h2><p>${a.text || ""}</p>${jetzt ? `<div class="name-gross">🎤 ${esc(name(jetzt))}</div>` : ""}
@@ -501,6 +504,47 @@ window.UNTERRICHT = (function () {
       return x + `</div>`;
     }).join("");
     return h;
+  }
+  /* ---------- Dialog rekonstruieren: jede/r hat nur einige Sätze ---------- */
+  const dlgSeq = x => Array.isArray(x) ? x.filter(v => v != null) : Object.keys(x || {}).sort((a, b) => a - b).map(k => x[k]);
+  const dlgStatus = (aid, gid) => ((((G.teams || {}).dg || {})[aid]) || {})[gid] || {};
+  function dlgSprecher(D) { const s = []; D.zeilen.forEach(z => { if (!s.includes(z.s)) s.push(z.s); }); return s; }
+  /* wer hat welche Zeile? gleich viele Personen wie Sprecher → nach Rolle, sonst reihum */
+  function dlgBesitzer(D, m, seed) { const sp = dlgSprecher(D), mm = U.mischen(m, U.rng(seed)); return D.zeilen.map((z, i) => sp.length === mm.length ? mm[sp.indexOf(z.s)] : mm[i % mm.length]); }
+  const dlgRolle = (D, m, seed, pid) => { const sp = dlgSprecher(D), mm = U.mischen(m, U.rng(seed)); return sp.filter((_, k) => mm[k % mm.length] === pid); };
+  function dlgLeitung(a, lw) {
+    const aid = G.aufgabe.id;
+    return gruppenListe().map(g => { const st = dlgStatus(aid, g.id), d = Math.min(st.d || 0, a.dialoge.length - 1), D = a.dialoge[d], seq = dlgSeq(st.seq), alle = st.d >= a.dialoge.length;
+      return `<div class="aufg tm-${g.id}" style="display:block;border-left:5px solid var(--tf,var(--linie))"><b>${esc(gName(g))}</b> · ${alle ? "✅ alle Dialoge geschafft" : `Dialog ${d + 1} von ${a.dialoge.length}: ${esc(D.titel || "")} · ${seq.length}/${D.zeilen.length} Sätze${seq.length >= D.zeilen.length ? " – spielt jetzt vor 🎭" : ""}`} · ${st.f || 0} Fehlversuche
+        ${lw || alle ? "" : `<div class="klein" style="margin-top:4px">${D.zeilen.map((z, i) => `<div class="fa-g" style="opacity:${i < seq.length ? 1 : .35}">${i < seq.length ? "✓" : "…"} ${esc(z.s ? z.s + ": " : "")}${esc(z.fa)}</div>`).join("")}</div>`}</div>`; }).join("");
+  }
+  function dlgTN(a, id) {
+    const g = gruppenListe().find(x => x.m.includes(ME.id)); if (!g) return `<div class="meldung">Warte, bis du einer Gruppe zugeteilt bist …</div>`;
+    const st = dlgStatus(id, g.id), d = st.d || 0, andere = g.m.filter(x => x !== ME.id).map(name).join(" und ");
+    let h = `<p class="klein" style="margin:4px 0">👥 Deine Gruppe: <b>${esc(andere || "…")}</b></p>`;
+    if (d >= a.dialoge.length) return h + `<div class="ich-dran" style="background:var(--gruen)">🎉 Alle ${a.dialoge.length} Dialoge geschafft!</div><p>Spielt euren Lieblingsdialog noch einmal – diesmal ohne aufs Handy zu schauen.</p>`;
+    const D = a.dialoge[d], seq = dlgSeq(st.seq), bes = dlgBesitzer(D, g.m, id + g.id + d), fertig = seq.length >= D.zeilen.length;
+    h += `<div class="meldung">💬 <b>Dialog ${d + 1} von ${a.dialoge.length}${D.titel ? ": " + esc(D.titel) : ""}</b>${D.de ? `<br><span class="klein">${esc(D.de)}</span>` : ""}</div>`;
+    if (!fertig) {
+      const meine = D.zeilen.map((z, i) => i).filter(i => bes[i] === ME.id && !seq.includes(i)), ord = U.mischen(meine, U.rng(ME.id + id + d));
+      h += `<p class="klein" style="margin:6px 0">Lest eure Sätze <b>laut</b> vor. Wer glaubt, den <b>nächsten</b> Satz zu haben, tippt ihn an.</p>
+        <div class="karte"><div class="klein-h" style="margin-top:0">Der Dialog bis jetzt</div>${seq.map(i => `<div class="zeile-f"><div class="f">${esc(D.zeilen[i].s ? D.zeilen[i].s + ": " : "")}${esc(D.zeilen[i].fa)}</div></div>`).join("") || `<p class="muted klein">noch leer – wer fängt an?</p>`}</div>
+        <div class="klein-h">Deine Sätze</div>${ord.map(i => `<button class="check" data-dz="${i}"><span>💬</span><span class="fa" style="font-size:1.15rem;flex:1;text-align:right">${esc(D.zeilen[i].fa)}</span></button><details style="margin:-2px 0 6px"><summary class="klein">Hilfe</summary><span class="klein muted">${esc(D.zeilen[i].tr || "")}${D.zeilen[i].de ? " – " + esc(D.zeilen[i].de) : ""}</span></details>`).join("") || `<p class="muted">Du hast gerade keinen Satz – hör gut zu! 👂</p>`}
+        ${st.f ? `<p class="klein muted">${st.f} Fehlversuch${st.f > 1 ? "e" : ""}</p>` : ""}`;
+    } else {
+      const rollen = dlgRolle(D, g.m, id + g.id + d, ME.id);
+      h += `<div class="ich-dran">🎭 Geschafft! Jetzt lest den Dialog mit verteilten Rollen.</div><p style="margin:8px 0">Du sprichst: <b>${rollen.map(esc).join(" und ") || "–"}</b></p>
+        <div class="karte">${D.zeilen.map(z => `<div class="zeile-f" style="${rollen.includes(z.s) ? "background:var(--safran-hell);border-radius:8px;padding:6px 8px" : ""}"><div class="f">${esc(z.s ? z.s + ": " : "")}${esc(z.fa)}</div><div class="d">${esc(z.de || "")}</div></div>`).join("")}</div>
+        <button class="btn" id="dWeiter" style="width:100%;margin-top:10px">${d + 1 < a.dialoge.length ? "✓ Gespielt – nächster Dialog ▶" : "✓ Gespielt – fertig!"}</button>`;
+    }
+    return h;
+  }
+  function verdrahteDlg(a, id) {
+    const g = gruppenListe().find(x => x.m.includes(ME.id)); if (!g) return; const pfad = `teams/dg/${id}/${g.id}`;
+    $$("[data-dz]").forEach(b => b.onclick = () => { const st = dlgStatus(id, g.id), seq = dlgSeq(st.seq), i = +b.dataset.dz;
+      if (i === seq.length) tnRef(pfad).update({ seq: seq.concat(i), d: st.d || 0 }).catch(() => { });
+      else { tnRef(pfad).update({ f: (st.f || 0) + 1, d: st.d || 0 }).catch(() => { }); toast("Noch nicht – wer hat den nächsten Satz? Lest vor!"); } });
+    const w = $("#dWeiter"); if (w) w.onclick = () => { const st = dlgStatus(id, g.id); tnRef(pfad).update({ d: (st.d || 0) + 1, seq: null }).catch(() => { }); };
   }
   /* ---------- Vorlesen & entscheiden: eine Person liest, die anderen wählen ---------- */
   const vlRunde = () => (G.aufgabe.rn || 0);
@@ -717,6 +761,7 @@ window.UNTERRICHT = (function () {
     else if (a.typ === "weg") { app().innerHTML = h + wegTN(a, id); verdrahteWeg(a, id); }
     else if (a.typ === "rolle") { app().innerHTML = h + rolleTN(a, id); verdrahteRolle(a, id); }
     else if (a.typ === "quiz") { app().innerHTML = h + quizTN(a); verdrahteQuiz(a); }
+    else if (a.typ === "dialog") { app().innerHTML = h + dlgTN(a, id); verdrahteDlg(a, id); }
     else if (a.typ === "vorlesen") { app().innerHTML = h + vlTN(a); $$("[data-vl]").forEach(b => b.onclick = () => { if (G.aufgabe.aufl) return; ergRef().child("v/r" + vlRunde()).set(+b.dataset.vl).catch(() => { }); }); }
     $$("[data-say]").forEach(b => b.onclick = e => { e.stopPropagation(); F.sprich(b.dataset.say); });
   }
