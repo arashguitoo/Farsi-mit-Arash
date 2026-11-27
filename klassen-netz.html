@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="de" translate="no" class="notranslate">
+<head>
+<meta charset="utf-8">
+<meta name="google" content="notranslate">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Klassen-Netz · Farsi-Lernpfad</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Vazirmatn:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css">
+<style>
+  .wrap{max-width:620px}
+  body.lehrend .wrap{max-width:1250px}
+  .kn-tabs{position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid var(--linie);display:flex;z-index:30}
+  .kn-tabs button{flex:1;border:0;background:none;padding:8px 4px 12px;font:inherit;font-weight:800;font-size:.85rem;color:var(--tinte2);cursor:pointer}
+  .kn-tabs button.an{color:var(--lapis)} .kn-tabs .e{display:block;font-size:1.4rem}
+  .post{background:#fff;border:1px solid var(--linie);border-radius:16px;margin:12px 0;overflow:hidden}
+  .post .ph{padding:10px 14px;display:flex;gap:10px;align-items:center}
+  .post .av{width:38px;height:38px;border-radius:50%;background:var(--lapis-hell);display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex:none}
+  .post img{width:100%;display:block;max-height:520px;object-fit:contain;background:#1f2321}
+  .post .tx{padding:10px 14px;font-family:var(--fa);direction:rtl;text-align:right;font-size:1.3rem;line-height:1.9}
+  .post .tx .nr{font-family:inherit;color:var(--lapis);font-weight:800}
+  .post .korr{font-size:.78rem;color:var(--tinte2);font-family:var(--ui,inherit);direction:ltr;text-align:left}
+  .post .lknotiz{margin:0 14px 10px;background:var(--safran-hell);border-radius:10px;padding:6px 10px;font-size:.9rem}
+  .post .re{padding:4px 14px 10px;display:flex;gap:6px;flex-wrap:wrap}
+  .re button{border:1.5px solid var(--linie);background:#fff;border-radius:999px;padding:3px 10px;font-size:1rem;cursor:pointer}
+  .re button.an{border-color:var(--lapis);background:var(--lapis-hell)}
+  .kom{padding:0 14px 12px}
+  .kom .k{background:#f6f6f3;border-radius:10px;padding:5px 10px;margin:4px 0;font-size:.95rem}
+  .kom .k .fa{font-size:1.1rem}
+  .kom select{width:100%;margin-top:6px;border:1.5px solid var(--linie);border-radius:10px;padding:6px;font:inherit;background:#fff}
+  .typen{display:grid;gap:10px}
+  .typen button{display:flex;gap:12px;align-items:center;text-align:left;border:2px solid var(--linie);background:#fff;border-radius:14px;padding:12px;cursor:pointer;font:inherit;color:inherit}
+  .typen .e{font-size:2rem}
+  .vorschau{width:100%;border-radius:12px;margin:8px 0;max-height:360px;object-fit:contain;background:#1f2321}
+  textarea.fa-ein{width:100%;min-height:96px;font-family:var(--fa);font-size:1.25rem;direction:rtl;line-height:1.9;box-sizing:border-box;border:1.5px solid var(--linie);border-radius:12px;padding:8px 10px}
+  .anf{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0;direction:rtl}
+  .anf button{border:1px solid var(--linie);background:#f6f6f3;border-radius:999px;padding:4px 10px;font-family:var(--fa);font-size:1.02rem;cursor:pointer}
+  .hilfe{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
+  .tast{background:#eef1f0;border-radius:14px;padding:8px;margin-top:8px;user-select:none}
+  .tast .z{display:flex;gap:4px;justify-content:center;direction:rtl;margin:4px 0;flex-wrap:wrap}
+  .tast button{font-family:var(--fa);font-size:1.1rem;min-width:30px;height:38px;border:1px solid #cfd6d4;background:#fff;border-radius:8px;cursor:pointer;padding:0 6px}
+  .tast .breit{min-width:100px;font-family:inherit;font-size:.85rem}
+  .wb-box{background:#fff;border:1.5px solid var(--lapis);border-radius:14px;padding:10px;margin-top:8px}
+  .wb-box .wb-z::after{content:"＋ einfügen";grid-column:1/-1;font-size:.72rem;color:var(--lapis);text-align:right}
+  .namen{display:flex;flex-wrap:wrap;gap:6px}
+  .namen button{border:1.5px solid var(--linie);background:#fff;border-radius:999px;padding:6px 12px;font:inherit;font-weight:700;cursor:pointer}
+  .namen button.an{border-color:var(--lapis);background:var(--lapis);color:#fff}
+  .tipp{border-radius:10px;padding:6px 10px;font-weight:800;margin-top:6px}
+  .tipp.ok{background:var(--gruen-hell);color:var(--gruen)} .tipp.nein{background:var(--granat-hell);color:var(--granat)}
+  .diff{font-family:var(--fa);direction:rtl;text-align:right;font-size:1.15rem;line-height:2.1;background:#fff;border:1px solid var(--linie);border-radius:12px;padding:8px 12px}
+  .diff .weg{color:var(--granat);text-decoration:line-through;background:var(--granat-hell);border-radius:5px;padding:0 3px}
+  .diff .neu{color:var(--gruen);background:var(--gruen-hell);border-radius:5px;padding:0 3px;font-weight:700}
+  .raster{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:12px}
+  .lk-card{background:#fff;border:1px solid var(--linie);border-radius:14px;padding:12px}
+  .lk-card img{width:100%;max-height:260px;object-fit:contain;background:#1f2321;border-radius:10px;margin:6px 0}
+  .lv-code{font-size:2rem;font-weight:800;letter-spacing:.18em;color:var(--lapis)}
+  .seg{display:inline-flex;border:1px solid var(--linie);border-radius:10px;overflow:hidden;flex-wrap:wrap}
+  .seg button{border:0;background:#fff;padding:7px 12px;font:inherit;font-size:.88rem;font-weight:700;cursor:pointer}
+  .seg button.an{background:var(--lapis);color:#fff}
+  .beamer{position:fixed;inset:0;background:#1f2a2e;color:#fff;z-index:100;display:flex;flex-direction:column;padding:18px 28px}
+  .beamer .bild{flex:1;min-height:0;display:flex;align-items:center;justify-content:center}
+  .beamer img{max-width:100%;max-height:100%;border-radius:16px;object-fit:contain}
+  .beamer .txt{font-family:var(--fa);direction:rtl;text-align:center;font-size:clamp(24px,2.6vw,44px);font-weight:700;margin-top:10px}
+  .beamer .fuss{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:12px}
+  .meldung{background:var(--safran-hell);border:1px solid #e6d3ad;border-radius:12px;padding:10px 14px;margin:10px 0}
+  body.schreibt .kn-tabs{display:none}
+  #melde-knopf{bottom:84px!important}
+</style>
+</head>
+<body>
+<div id="app"><main class="wrap"><p class="muted" style="margin-top:30px">Lade …</p></main></div>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+<script src="assets/core.js"></script>
+<script src="assets/schreiben/werkzeuge.js"></script>
+<script src="assets/woerterbuch.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+/* =========================================================
+   KLASSEN-NETZ auf Persisch – kleines soziales Netzwerk nur für den Kurs
+   TN:       klassen-netz.html → Raum-Code → Vorname → Posten (Foto + persische Sätze) / Ansehen / Reagieren
+   Leitung:  klassen-netz.html?leitung=1 → Eingang prüfen, korrigieren, freigeben, Beamer
+   Daten:    farsi/netz/{RAUM}/ok · /mitglieder/{pid} · /eingang/{id} (nur schreiben) · /frei/{id} (mit Code lesbar)
+             farsi/netz/_info/code (aktueller Raum der Lehrkraft)
+   Nichts erscheint ohne Freigabe. Kommentare nur als feste persische Sätze.
+   ========================================================= */
+(function () {
+  const F = window.FARSI, { $, $$, esc, toast } = F, SW = window.SCHREIB_WERKZEUGE, WB = window.WOERTERBUCH;
+  const qs = new URLSearchParams(location.search), app = $("#app");
+  let RAUM = (qs.get("code") || "").toUpperCase().replace(/[^A-Z0-9]/g, "");
+  const R = p => F.ref(`netz/${RAUM}${p ? "/" + p : ""}`);
+  const TS = () => firebase.database.ServerValue.TIMESTAMP;
+  const TYPEN = {
+    wochenende: { e: "📸", t: "Mein Wochenende", fa: "آخِرِ هَفته‌یِ مَن", h: "2 bis 4 Fotos von deinem Wochenende. Schreib zu jedem Foto einen Satz im Präteritum: Was hast du gemacht?", story: true,
+      anf: [["روزِ شَنبه …", "Am Samstag …"], ["روزِ جُمعه …", "Am Freitag …"], ["اینجا … خوردَم.", "Hier habe ich … gegessen."], ["با … به … رَفتیم.", "Mit … sind wir nach … gegangen."], ["خِیلی خوب بود!", "Es war sehr schön!"]] },
+    lieblings: { e: "⭐", t: "Meine Lieblingsdinge", fa: "چیزهای مورِدِ عَلاقه‌یِ مَن", h: "Ein Foto von etwas, das du magst – und 2–3 Sätze dazu.", text: true,
+      anf: [["مَن … را خِیلی دوست دارَم.", "Ich mag … sehr."], ["این … مَن اَست.", "Das ist mein …"], ["رَنگَش … اَست.", "Seine Farbe ist …"], ["هَر روز …", "Jeden Tag …"], ["چون …", "weil …"]] },
+    essen: { e: "🍲", t: "Mein Essen", fa: "غَذایِ مَن", h: "Ein Foto von einem Essen oder Getränk – was ist das, und magst du es?", text: true,
+      anf: [["این … اَست.", "Das ist …"], ["مَن … دوست دارَم.", "Ich mag …"], ["خِیلی خوشمَزه اَست!", "Es ist sehr lecker!"], ["اِمروز … خوردَم.", "Heute habe ich … gegessen."], ["مادَرَم … می‌پَزَد.", "Meine Mutter kocht …"]] },
+    zimmer: { e: "🏠", t: "Mein Zimmer, meine Stadt", fa: "اُتاقِ مَن، شَهرِ مَن", h: "Ein Foto von deinem Zimmer, deinem Haus oder deiner Stadt – und 2–3 Sätze.", text: true,
+      anf: [["این اُتاقِ مَن اَست.", "Das ist mein Zimmer."], ["اُتاقَم کوچَک / بُزُرگ اَست.", "Mein Zimmer ist klein / groß."], ["مَن در … زِندِگی می‌کُنَم.", "Ich wohne in …"], ["شَهرَم خِیلی … اَست.", "Meine Stadt ist sehr …"], ["رَنگِ … را دوست دارَم.", "Ich mag die Farbe …"]] },
+    kind: { e: "👶", t: "Wer bin ich als Kind?", fa: "مَن در بَچِّگی", h: "Lade ein Foto von dir als Kind hoch. Die anderen raten, wer das ist – dein Name bleibt geheim, bis die Lehrkraft auflöst.", text: false },
+    rate: { e: "❓", t: "Rate mal!", fa: "حَدس بِزَن!", h: "Ein Foto von etwas (kein Gesicht). Die anderen raten: Was ist das? Wo ist das?", text: true,
+      anf: [["این چیست؟", "Was ist das?"], ["مَن کُجا هَستَم؟", "Wo bin ich?"], ["این دَر … اَست.", "Das ist in …"]] }
+  };
+  const REAKT = ["❤️", "😂", "😮", "👍"];
+  const KOMM = [["چه قَشَنگ!", "Wie schön!"], ["عالی!", "Super!"], ["کُجا بود؟", "Wo war das?"], ["مَن هَم!", "Ich auch!"], ["خوشمَزه!", "Lecker!"], ["آفَرین!", "Bravo!"], ["مَن هَم دوست دارَم!", "Mag ich auch!"], ["چه جالِب!", "Wie interessant!"]];
+  const zeitText = t => { const d = new Date(Number(t) || 0); return d.toLocaleDateString("de-DE", { weekday: "short", day: "numeric", month: "numeric" }) + " " + d.toLocaleTimeString("de-DE", { hour: "2-digit", minute: "2-digit" }); };
+  const diffHtml = (alt, neu) => `<div class="diff">${SW.diff(alt, neu).map(x => x.art === "gleich" ? esc(x.t) : `<span class="${x.art}">${esc(x.t)}</span>`).join(" ")}</div>`;
+  /* Bild verkleinern (max. 900 px, JPEG) */
+  function bildLesen(file, max) { return new Promise((res, rej) => { const fr = new FileReader(); fr.onload = () => { const img = new Image(); img.onload = () => { const m = max || 900; let w = img.width, h = img.height; const f = Math.min(1, m / Math.max(w, h)); w = Math.round(w * f); h = Math.round(h * f);
+    const c = document.createElement("canvas"); c.width = w; c.height = h; c.getContext("2d").drawImage(img, 0, 0, w, h); let q = .8, d = c.toDataURL("image/jpeg", q); while (d.length > 350000 && q > .35) { q -= .1; d = c.toDataURL("image/jpeg", q); } res(d); }; img.onerror = rej; img.src = fr.result; }; fr.onerror = rej; fr.readAsDataURL(file); }); }
+  /* Persische Bildschirmtastatur + Wörterbuch für ein Textfeld */
+  const tastHtml = () => `<div class="tast">${SW.TASTATUR.map(z => `<div class="z">${z.map(k => `<button type="button" data-taste="${esc(k)}">${esc(k)}</button>`).join("")}</div>`).join("")}<div class="z"><button type="button" class="breit" data-taste="⌫">⌫ löschen</button><button type="button" class="breit" data-taste="${SW.ZWNJ}">Halbabstand</button><button type="button" class="breit" data-taste=" " style="min-width:170px">Leerzeichen</button></div></div>`;
+  function einfuegen(ta, txt) { const s = ta.selectionStart ?? ta.value.length, e = ta.selectionEnd ?? s; ta.value = ta.value.slice(0, s) + txt + ta.value.slice(e); const p = s + txt.length; ta.focus(); ta.setSelectionRange(p, p); ta.dispatchEvent(new Event("input")); }
+  function verdrahteTastatur(wurzel, ziel) {
+    $$("[data-taste]", wurzel).forEach(b => { b.onmousedown = e => e.preventDefault(); b.onclick = () => { const ta = ziel(); if (!ta) return; const k = b.dataset.taste;
+      if (k === "⌫") { const s = ta.selectionStart ?? ta.value.length, e = ta.selectionEnd ?? s; if (s === e && s > 0) { ta.value = ta.value.slice(0, s - 1) + ta.value.slice(e); ta.setSelectionRange(s - 1, s - 1); } else { ta.value = ta.value.slice(0, s) + ta.value.slice(e); ta.setSelectionRange(s, s); } ta.focus(); ta.dispatchEvent(new Event("input")); }
+      else einfuegen(ta, k.replace(/^ـ/, "")); }; });
+  }
+  function wbEinbauen(el, ziel) {
+    WB.einbauen(el, { titel: "📖 Wörterbuch – antippen = einfügen", sofort: true, durchblaettern: true });
+    el.addEventListener("click", e => { const z = e.target.closest(".wb-z"); if (!z) return; e.stopPropagation(); const ta = ziel(); if (ta) { const v = ta.value; einfuegen(ta, (v && !/\s$/.test(v.slice(0, ta.selectionStart ?? v.length)) ? " " : "") + z.dataset.say + " "); toast("✓ eingefügt: " + z.dataset.say); } }, true);
+  }
+
+  /* =========================================================
+     TEILNEHMENDE
+     ========================================================= */
+  function lernende() {
+    let me = null, FREI = {}, MIT = {}, tab = "feed", neu = { typ: null, bild: null, text: "", story: [] }, fehler = "", sendet = false, hilfe = { tast: false, wb: false, ziel: null };
+    const MEKEY = "farsi_netz_me";
+    try { const m = JSON.parse(localStorage.getItem(MEKEY) || "null"); if (m && (!RAUM || m.raum === RAUM)) { me = m; RAUM = m.raum; } } catch (e) { }
+    if (me) start(); else codeScreen();
+    function codeScreen(f) {
+      const s = F.sitzung && F.sitzung();
+      app.innerHTML = `<main class="wrap"><div class="karte" style="margin-top:8vh;text-align:center"><div style="font-size:3rem">📱</div><h2 style="margin:0 0 4px">Klassen-Netz</h2><p class="fa" style="font-size:1.3rem;margin:0">شَبَکه‌یِ کِلاس</p><p class="muted">Gib den Raum-Code und deinen Vornamen ein. Den Code bekommst du von deiner Lehrkraft.</p>
+        <form id="cf" style="display:grid;gap:10px;max-width:300px;margin:0 auto"><input id="code" class="feld" maxlength="8" autocomplete="off" value="${esc(RAUM)}" placeholder="Raum-Code" style="text-align:center;font-size:1.5rem;letter-spacing:.2em;text-transform:uppercase">
+        <input id="name" class="feld" maxlength="20" placeholder="Vorname" value="${esc((s && s.name) || (() => { try { return localStorage.getItem("farsi_quiz_name") || ""; } catch (e) { return ""; } })())}" style="text-align:center;font-size:1.15rem"><button class="btn">Weiter ➜</button></form>
+        <p class="klein" style="color:var(--granat);min-height:1.2em">${esc(f || "")}</p></div></main>`;
+      $("#cf").onsubmit = async e => { e.preventDefault(); RAUM = $("#code").value.toUpperCase().replace(/[^A-Z0-9]/g, ""); const name = $("#name").value.trim().split(/\s+/)[0].slice(0, 20);
+        if (RAUM.length < 4) return codeScreen("Der Code ist zu kurz."); if (!name) return codeScreen("Bitte gib deinen Vornamen ein.");
+        let ok = null; try { ok = (await F.mitTimeout(R("ok").once("value"), 8000)).val(); } catch (x) { } if (!ok) return codeScreen("Diesen Code gibt es nicht. Frag deine Lehrkraft.");
+        let pid = null; const s2 = F.sitzung && F.sitzung(); if (s2 && s2.code) pid = s2.code; else { try { pid = localStorage.getItem("farsi_quiz_pid"); if (!pid) { pid = "q" + Math.random().toString(36).slice(2, 9); localStorage.setItem("farsi_quiz_pid", pid); } } catch (x) { pid = "q" + Math.random().toString(36).slice(2, 9); } }
+        me = { pid, name, raum: RAUM }; try { localStorage.setItem(MEKEY, JSON.stringify(me)); localStorage.setItem("farsi_quiz_name", name); } catch (x) { }
+        try { await R("mitglieder/" + pid).set({ name, ts: Date.now() }); } catch (x) { } start(); };
+    }
+    function start() {
+      R("frei").on("value", s => { FREI = s.val() || {}; male(); }, () => { try { localStorage.removeItem(MEKEY); } catch (e) { } me = null; codeScreen("Bitte gib den Code noch einmal ein."); });
+      R("mitglieder").on("value", s => { MIT = s.val() || {}; }, () => { });
+      male();
+    }
+    const meineWartend = () => { try { return JSON.parse(localStorage.getItem("farsi_netz_warte_" + RAUM) || "[]"); } catch (e) { return []; } };
+    const nameVon = p => (MIT[p] || {}).name || (Object.values(FREI).find(x => x.pid === p) || {}).name || "?";
+    function male() {
+      if (!me) return; if (tab === "neu" && document.activeElement && document.activeElement.tagName === "TEXTAREA") return;
+      const sy = window.scrollY;
+      let h = `<header class="kopf"><div class="wrap"><a href="index.html" class="medaillon" style="text-decoration:none">فا</a><div><h1>📱 Klassen-Netz</h1><div class="unter fa" style="font-size:1rem">شَبَکه‌یِ کِلاس</div></div><div class="rechts"><span class="kopf-btn" style="background:transparent;border-color:transparent">${esc(me.name)}</span></div></div></header><main class="wrap" style="padding-bottom:90px">`;
+      h += tab === "feed" ? feed() : tab === "neu" ? posten() : meins();
+      h += `</main><nav class="kn-tabs"><button data-tab="feed" class="${tab === "feed" ? "an" : ""}"><span class="e">📰</span>Alle</button><button data-tab="neu" class="${tab === "neu" ? "an" : ""}"><span class="e">➕</span>Posten</button><button data-tab="meins" class="${tab === "meins" ? "an" : ""}"><span class="e">🙋</span>Meine</button></nav>`;
+      app.innerHTML = h; binde(); if (tab === "feed") window.scrollTo(0, sy);
+    }
+    const liste = () => Object.entries(FREI).filter(([, x]) => x && x.typ).sort((a, b) => (Number(b[1].frei) || 0) - (Number(a[1].frei) || 0));
+    function postHtml(id, x, mitDiff) {
+      const T = TYPEN[x.typ] || TYPEN.lieblings, kind = x.typ === "kind", meinP = x.pid === me.pid, re = x.reakt || {}, ko = x.kom || {}, tp = x.tipps || {}, mein = tp[me.pid];
+      let h = `<div class="post"><div class="ph"><div class="av">${T.e}</div><div><b>${kind && !x.zeigen ? "❓ Wer ist das?" : esc(x.name)}</b><div class="klein muted">${esc(T.t)} · <span class="fa">${esc(T.fa)}</span> · ${zeitText(x.frei)}</div></div></div>`;
+      if (x.story) h += x.story.map((z, i) => `<img src="${z.b}" alt=""><div class="tx"><span class="nr">${i + 1}.</span> ${esc(z.t)}${mitDiff && z.o && z.o !== z.t ? diffHtml(z.o, z.t) : ""}</div>`).join("");
+      else if (x.bild) h += `<img src="${x.bild}" alt="">`;
+      if (x.text) h += `<div class="tx">${esc(x.text)}${mitDiff && x.orig && x.orig !== x.text ? `<div class="korr" style="margin-top:6px">Deine Version → korrigiert:</div>${diffHtml(x.orig, x.text)}` : ""}</div>`;
+      if (x.orig || (x.story || []).some(z => z.o && z.o !== z.t)) h += `<div class="tx" style="padding-top:0"><div class="korr">✏️ von der Lehrkraft korrigiert</div></div>`;
+      if (x.notiz) h += `<div class="lknotiz">👩‍🏫 ${esc(x.notiz)}</div>`;
+      if (kind) {
+        h += `<div style="padding:0 14px 10px">`;
+        if (x.zeigen) { const r = Object.entries(tp).filter(([, v]) => v === x.pid).map(([p]) => nameVon(p)); h += `<div class="tipp ok">👶 Das ist <b>${esc(x.name)}</b>!</div>${mein ? (mein === x.pid ? `<div class="tipp ok">✅ Du hast richtig geraten!</div>` : `<div class="tipp nein">❌ Du hast ${esc(nameVon(mein))} getippt.</div>`) : ""}<p class="klein muted">Richtig geraten: ${r.length ? r.map(esc).join(", ") : "niemand"}</p>`; }
+        else if (meinP) h += `<div class="tipp ok">🤫 Das bist du! Nicht verraten.</div><p class="klein muted">${Object.keys(tp).length} haben schon getippt.</p>`;
+        else { const ids = Object.keys(MIT).filter(p => p !== me.pid && MIT[p] && MIT[p].name).sort((a, b) => nameVon(a).localeCompare(nameVon(b), "de"));
+          h += `<p style="margin:4px 0 6px;font-weight:700">Wer ist das? <span class="fa">این کیست؟</span> ${mein ? `<span class="klein muted">(du kannst noch ändern)</span>` : ""}</p><div class="namen">${ids.map(p => `<button data-tipp="${id}|${p}" class="${mein === p ? "an" : ""}">${esc(nameVon(p))}</button>`).join("")}</div>`; }
+        h += `</div>`;
+      }
+      h += `<div class="re">${REAKT.map(e => { const n = Object.values(re).filter(v => v === e).length; return `<button data-re="${id}|${e}" class="${re[me.pid] === e ? "an" : ""}">${e} ${n || ""}</button>`; }).join("")}</div>`;
+      h += `<div class="kom">${Object.entries(ko).map(([p, k]) => KOMM[k] ? `<div class="k"><b>${esc(nameVon(p))}:</b> <span class="fa">${esc(KOMM[k][0])}</span> <span class="klein muted">${esc(KOMM[k][1])}</span></div>` : "").join("")}
+        <select data-kom="${id}"><option value="">💬 Kommentar wählen …</option>${KOMM.map((k, i) => `<option value="${i}" ${ko[me.pid] === i ? "selected" : ""}>${esc(k[0])} – ${esc(k[1])}</option>`).join("")}</select></div>`;
+      return h + `</div>`;
+    }
+    function feed() { const L = liste(); if (!L.length) return `<div class="karte" style="margin-top:14px;text-align:center"><div style="font-size:3rem">📭</div><h3>Noch keine Beiträge.</h3><p class="muted">Tippe unten auf <b>➕ Posten</b>!</p></div>`; return L.map(([id, x]) => postHtml(id, x)).join(""); }
+    function hilfeHtml(ziel) {
+      return `<div class="hilfe"><button type="button" class="btn ${hilfe.tast && hilfe.ziel === ziel ? "" : "zwei"} klein" data-hilfe="tast|${ziel}">⌨️ persische Tastatur</button><button type="button" class="btn ${hilfe.wb && hilfe.ziel === ziel ? "" : "zwei"} klein" data-hilfe="wb|${ziel}">📖 Wörterbuch</button></div>
+        ${hilfe.ziel === ziel && hilfe.tast ? tastHtml() : ""}${hilfe.ziel === ziel && hilfe.wb ? `<div class="wb-box" id="wbBox"></div>` : ""}`;
+    }
+    function posten() {
+      if (!neu.typ) return `<h2 style="margin-top:14px">Was möchtest du posten?</h2><div class="typen">${Object.entries(TYPEN).map(([k, T]) => `<button data-typ="${k}"><span class="e">${T.e}</span><span><b>${esc(T.t)}</b> <span class="fa">${esc(T.fa)}</span><br><span class="klein muted">${esc(T.h)}</span></span></button>`).join("")}</div>
+        <p class="klein muted" style="margin-top:12px">🔒 Deine Lehrkraft schaut jeden Beitrag zuerst an und korrigiert deine Sätze. Erst nach der Freigabe sehen ihn die anderen. Bitte nur Fotos von dir oder von Sachen – keine Fotos von anderen Personen ohne Erlaubnis.</p>`;
+      const T = TYPEN[neu.typ];
+      let h = `<div style="display:flex;justify-content:space-between;align-items:center;margin-top:12px"><h2 style="margin:0">${T.e} ${esc(T.t)}</h2><button class="btn zwei klein" id="zurueck">◀ zurück</button></div><div class="meldung">${esc(T.h)}</div>`;
+      const anfHtml = (z) => `<div class="klein muted">Tippe auf einen Satzanfang oder schreib selbst – auf Persisch. „…“ ist markiert: einfach drübertippen.</div><div class="anf">${T.anf.map((a, k) => `<button type="button" data-anf="${z}|${k}" title="${esc(a[1])}">${esc(a[0])}</button>`).join("")}</div>`;
+      if (T.story) {
+        h += neu.story.map((z, i) => `<div class="karte" style="margin:10px 0"><div style="display:flex;justify-content:space-between"><b>Foto ${i + 1}</b><button class="btn zwei klein" data-sweg="${i}">🗑</button></div><img class="vorschau" src="${z.b}">${anfHtml("s" + i)}
+          <textarea class="fa-ein" data-ziel="s${i}" maxlength="200" placeholder="اینجا چه کار کَردی؟">${esc(z.t)}</textarea>${hilfeHtml("s" + i)}</div>`).join("");
+        if (neu.story.length < 4) h += `<label class="btn ${neu.story.length ? "zwei" : ""}" style="width:100%;margin:6px 0 12px;display:flex;justify-content:center">📷 ${neu.story.length ? "Noch ein Foto" : "Erstes Foto wählen"} (${neu.story.length}/4)<input type="file" accept="image/*" id="sdatei" style="display:none"></label>`;
+      } else {
+        h += `<div class="karte" style="margin:10px 0"><b>1. Foto</b>${neu.bild ? `<img class="vorschau" src="${neu.bild}">` : ""}<label class="btn ${neu.bild ? "zwei" : ""}" style="width:100%;margin-top:6px;display:flex;justify-content:center">📷 ${neu.bild ? "Anderes Foto" : "Foto wählen"}<input type="file" accept="image/*" id="datei" style="display:none"></label></div>`;
+        if (T.text) h += `<div class="karte" style="margin:10px 0"><b>2. Text</b> ${anfHtml("t")}<textarea class="fa-ein" data-ziel="t" maxlength="400" placeholder="دو یا سه جُمله بِنِویس …">${esc(neu.text)}</textarea>${hilfeHtml("t")}</div>`;
+      }
+      return h + `${fehler ? `<p style="color:var(--granat);font-weight:700">${esc(fehler)}</p>` : ""}<button class="btn" id="senden" style="width:100%;min-height:52px;font-size:1.1rem;margin-bottom:20px" ${sendet ? "disabled" : ""}>${sendet ? "Wird gesendet …" : "📤 An die Lehrkraft senden"}</button>`;
+    }
+    function meins() {
+      const L = liste().filter(([, x]) => x.pid === me.pid), W = meineWartend().filter(w => !FREI[w.id]);
+      return `<p class="klein muted" style="text-align:right;margin:10px 0 0">Nicht ${esc(me.name)}? <a href="#" id="nameNeu">abmelden</a></p><h2 style="margin-top:4px">🙋 Meine Beiträge</h2>
+        ${W.length ? `<div class="karte">⏳ <b>${W.length}</b> ${W.length === 1 ? "Beitrag wartet" : "Beiträge warten"} auf die Freigabe: <span class="klein muted">${W.map(w => esc((TYPEN[w.typ] || {}).t || "")).join(" · ")}</span></div>` : ""}
+        ${L.length ? `<p class="klein muted">Hier siehst du auch, was deine Lehrkraft korrigiert hat: <span style="color:var(--granat);text-decoration:line-through">so nicht</span> → <b style="color:var(--gruen)">so richtig</b>.</p>` + L.map(([id, x]) => postHtml(id, x, true)).join("") : `<div class="karte muted">Noch nichts freigegeben.</div>`}`;
+    }
+    const zielFeld = z => $(`textarea[data-ziel="${z}"]`);
+    function binde() {
+      document.body.classList.remove("schreibt");
+      $$("[data-tab]").forEach(b => b.onclick = () => { tab = b.dataset.tab; fehler = ""; male(); window.scrollTo(0, 0); });
+      const nn = $("#nameNeu"); if (nn) nn.onclick = e => { e.preventDefault(); try { localStorage.removeItem(MEKEY); } catch (x) { } location.reload(); };
+      $$("[data-tipp]").forEach(b => b.onclick = () => { const [id, p] = b.dataset.tipp.split("|"); R(`frei/${id}/tipps/${me.pid}`).set(p).catch(() => toast("Hat nicht geklappt.")); });
+      $$("[data-re]").forEach(b => b.onclick = () => { const [id, e] = b.dataset.re.split("|"), alt = ((FREI[id] || {}).reakt || {})[me.pid]; R(`frei/${id}/reakt/${me.pid}`).set(alt === e ? null : e).catch(() => { }); });
+      $$("[data-kom]").forEach(s => s.onchange = () => R(`frei/${s.dataset.kom}/kom/${me.pid}`).set(s.value === "" ? null : Number(s.value)).catch(() => { }));
+      $$("[data-typ]").forEach(b => b.onclick = () => { neu = { typ: b.dataset.typ, bild: null, text: "", story: [] }; hilfe = { tast: false, wb: false, ziel: null }; male(); });
+      const z = $("#zurueck"); if (z) z.onclick = () => { neu = { typ: null, bild: null, text: "", story: [] }; male(); };
+      $$("textarea[data-ziel]").forEach(t => { t.oninput = () => { const k = t.dataset.ziel; if (k === "t") neu.text = t.value; else neu.story[+k.slice(1)].t = t.value; }; t.onfocus = () => document.body.classList.add("schreibt"); t.onblur = () => document.body.classList.remove("schreibt"); });
+      $$("[data-sweg]").forEach(b => b.onclick = () => { neu.story.splice(Number(b.dataset.sweg), 1); male(); });
+      $$("[data-anf]").forEach(b => b.onclick = () => { const [zz, k] = b.dataset.anf.split("|"), a = TYPEN[neu.typ].anf[+k][0].replace(/ …$/, ""); const ta = zielFeld(zz); if (!ta) return;
+        const vorher = ta.value.length + (ta.value.trim() ? 1 : 0); ta.setSelectionRange(ta.value.length, ta.value.length); einfuegen(ta, (ta.value.trim() ? " " : "") + a + " ");
+        const p = ta.value.indexOf("…", vorher); if (p >= 0) ta.setSelectionRange(p, p + 1); /* „…“ markiert → einfach drübertippen */ });
+      $$("[data-hilfe]").forEach(b => b.onclick = () => { if (document.activeElement) document.activeElement.blur(); const [art, zz] = b.dataset.hilfe.split("|"); if (hilfe.ziel !== zz) hilfe = { tast: false, wb: false, ziel: zz }; hilfe[art] = !hilfe[art]; male(); const ta = zielFeld(zz); if (ta) ta.scrollIntoView({ block: "center" }); });
+      verdrahteTastatur(app, () => hilfe.ziel && zielFeld(hilfe.ziel));
+      const wb = $("#wbBox"); if (wb) wbEinbauen(wb, () => hilfe.ziel && zielFeld(hilfe.ziel));
+      const sd = $("#sdatei"); if (sd) sd.onchange = async () => { const f = sd.files[0]; if (!f) return; fehler = ""; try { neu.story.push({ b: await bildLesen(f, 700), t: "" }); } catch (e) { fehler = "Das Foto geht leider nicht. Versuch ein anderes."; } male(); };
+      const d = $("#datei"); if (d) d.onchange = async () => { const f = d.files[0]; if (!f) return; fehler = ""; try { neu.bild = await bildLesen(f); } catch (e) { fehler = "Das Foto geht leider nicht. Versuch ein anderes."; } male(); };
+      const s = $("#senden"); if (s) s.onclick = async () => {
+        const T = TYPEN[neu.typ];
+        if (T.story) { if (neu.story.length < 2) { fehler = "Bitte wähle mindestens 2 Fotos."; return male(); } if (neu.story.some(z => z.t.trim().length < 4)) { fehler = "Bitte schreib zu jedem Foto einen Satz."; return male(); } }
+        else if (!neu.bild) { fehler = "Bitte wähle zuerst ein Foto."; return male(); }
+        if (T.text && neu.text.trim().length < 4) { fehler = "Bitte schreib noch einen Satz auf Persisch."; return male(); }
+        sendet = true; male(); const ref = R("eingang").push();
+        try { const daten = { pid: me.pid, name: me.name, typ: neu.typ, text: T.text ? neu.text.trim().slice(0, 400) : "", bild: T.story ? "story" : neu.bild, ts: TS() }; if (T.story) daten.story = neu.story.map(z => ({ b: z.b, t: z.t.trim().slice(0, 200) }));
+          await ref.set(daten); const W = meineWartend(); W.push({ id: ref.key, typ: neu.typ }); try { localStorage.setItem("farsi_netz_warte_" + RAUM, JSON.stringify(W.slice(-20))); } catch (e) { }
+          sendet = false; neu = { typ: null, bild: null, text: "", story: [] }; tab = "meins"; toast("📤 Gesendet! Deine Lehrkraft schaut es sich an."); male(); }
+        catch (e) { sendet = false; fehler = "Senden hat nicht geklappt. Versuch es noch einmal."; male(); }
+      };
+    }
+  }
+
+  /* =========================================================
+     LEHRKRAFT
+     ========================================================= */
+  function leitung() {
+    document.body.classList.add("lehrend"); let EIN = {}, FREI = {}, MIT = {}, tab = "eingang", korr = {}, notiz = {}, beamer = null, tastZiel = null;
+    firebase.auth().onAuthStateChanged(async u => {
+      if (!u) { app.innerHTML = `<main class="wrap"><div class="karte" style="margin-top:20px"><h2>Nur für Lehrkräfte</h2><p>Bitte zuerst in der <a href="konsole.html">Konsole</a> anmelden.</p></div></main>`; return; }
+      let c = null; try { c = (await F.ref("netz/_info/code").once("value")).val(); } catch (e) { }
+      if (!c) { const Z = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789"; c = Array.from({ length: 6 }, () => Z[Math.floor(Math.random() * Z.length)]).join(""); try { await F.ref("netz/_info/code").set(c); } catch (e) { } }
+      RAUM = c; try { await R("ok").set(true); } catch (e) { }
+      R("eingang").on("value", s => { EIN = s.val() || {}; male(); }, () => { app.innerHTML = `<main class="wrap"><div class="karte" style="margin-top:20px"><h2>⚠️ Regel fehlt</h2><p>Bitte die Firebase-Regeln aktualisieren: Der Abschnitt <b>„netz“</b> aus <code>firebase-regeln.json</code> muss in Firebase stehen.</p></div></main>`; });
+      R("frei").on("value", s => { FREI = s.val() || {}; male(); });
+      R("mitglieder").on("value", s => { MIT = s.val() || {}; male(); });
+    });
+    const istTipp = () => { const a = document.activeElement; return a && ["TEXTAREA", "INPUT"].includes(a.tagName); };
+    function male() {
+      if (istTipp()) return; if (beamer) return beamerMalen();
+      const E = Object.entries(EIN).filter(([, x]) => x && x.typ).sort((a, b) => (Number(a[1].ts) || 0) - (Number(b[1].ts) || 0));
+      const Fr = Object.entries(FREI).filter(([, x]) => x && x.typ).sort((a, b) => (Number(b[1].frei) || 0) - (Number(a[1].frei) || 0));
+      const url = location.origin + location.pathname;
+      let h = `<header class="kopf"><div class="wrap"><a href="konsole.html" class="medaillon" style="text-decoration:none">فا</a><div><h1>📱 Klassen-Netz – Leitung</h1><div class="unter">Fotos & persische Sätze prüfen, korrigieren, freigeben</div></div><div class="rechts"><a class="kopf-btn" href="konsole.html">← Konsole</a></div></div></header>
+        <main class="wrap" style="padding-bottom:40px"><div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;justify-content:space-between;margin-top:10px"><div><span class="klein muted">Raum-Code </span><span class="lv-code">${RAUM}</span> <span class="klein muted">· ${esc(url.replace(/^https?:\/\//, ""))} · ${Object.keys(MIT).length} Mitglieder</span></div>
+        <div class="btnreihe"><button class="btn klein" id="bKind">🎬 Beamer: Kinderfotos raten</button><button class="btn klein" id="bStory">🎬 Beamer: Wochenenden</button><button class="btn zwei klein" id="bAlle">🎬 Beamer: andere Beiträge</button></div></div>
+        <div class="seg" style="margin:12px 0"><button data-ltab="eingang" class="${tab === "eingang" ? "an" : ""}">📥 Eingang (${E.length})</button><button data-ltab="frei" class="${tab === "frei" ? "an" : ""}">✅ Freigegeben (${Fr.length})</button><button data-ltab="qr" class="${tab === "qr" ? "an" : ""}">🔗 Code & QR</button></div>`;
+      if (tab === "eingang") h += E.length ? `<p class="klein muted" style="margin-top:0">Korrigiere die Sätze direkt im Feld (⌨️ Tastatur falls nötig). Die TN sehen in „Meine“, was du geändert hast – durchgestrichen und grün.</p><div class="raster">${E.map(([id, x]) => { const T = TYPEN[x.typ] || {};
+          return `<div class="lk-card"><div style="display:flex;justify-content:space-between;gap:8px"><b>${T.e} ${esc(x.name)}</b><span class="klein muted">${esc(T.t)} · ${zeitText(x.ts)}</span></div>
+          ${x.story ? x.story.map((z, i) => `<img src="${z.b}"><textarea class="fa-ein" style="min-height:60px" data-korr="${id}|${i}">${esc(korr[id + "|" + i] !== undefined ? korr[id + "|" + i] : z.t)}</textarea>`).join("") : x.bild ? `<img src="${x.bild}">` : ""}
+          ${T.text ? `<textarea class="fa-ein" data-korr="${id}">${esc(korr[id] !== undefined ? korr[id] : x.text)}</textarea>` : ""}
+          ${T.text || x.story ? `<button class="btn zwei klein" data-tz="${id}" style="margin-top:4px">⌨️ Tastatur</button>${tastZiel && tastZiel.split("|")[0] === id ? tastHtml() : ""}` : ""}
+          <input class="feld" placeholder="Kurzer Kommentar für alle (optional), z. B. „Super, viele neue Wörter!“" data-notiz="${id}" value="${esc(notiz[id] || "")}" style="width:100%;margin-top:6px">
+          <div class="btnreihe" style="margin-top:8px"><button class="btn" data-frei="${id}">✅ Freigeben</button><button class="btn rot" data-weg="${id}">✖ Ablehnen</button></div></div>`; }).join("")}</div>`
+        : `<div class="karte muted">Keine neuen Beiträge. Neue Einreichungen erscheinen hier automatisch.</div>`;
+      if (tab === "frei") h += Fr.length ? `<div class="raster">${Fr.map(([id, x]) => { const T = TYPEN[x.typ] || {}, tp = x.tipps || {}, r = Object.values(tp).filter(v => v === x.pid).length;
+          return `<div class="lk-card"><div style="display:flex;justify-content:space-between"><b>${T.e} ${esc(x.name)}</b><span class="klein muted">${esc(T.t)}</span></div>
+          ${x.story ? `<div style="display:flex;gap:4px">${x.story.map(z => `<img src="${z.b}" style="width:24%;aspect-ratio:1;object-fit:cover;margin:6px 0">`).join("")}</div>${x.story.map((z, i) => `<div class="fa" style="font-size:1.05rem;text-align:right">${i + 1}. ${esc(z.t)}</div>`).join("")}` : x.bild ? `<img src="${x.bild}">` : ""}
+          ${x.text ? `<p class="fa" style="font-size:1.1rem;text-align:right">${esc(x.text)}</p>` : ""}${x.notiz ? `<p class="klein">👩‍🏫 ${esc(x.notiz)}</p>` : ""}
+          <div class="klein muted">${Object.keys(x.reakt || {}).length} Reaktionen · ${Object.keys(x.kom || {}).length} Kommentare${x.typ === "kind" ? ` · ${Object.keys(tp).length} Tipps, ${r} richtig` : ""}</div>
+          <div class="btnreihe" style="margin-top:8px">${x.typ === "kind" ? `<button class="btn ${x.zeigen ? "zwei" : ""} klein" data-zeig="${id}">${x.zeigen ? "🙈 Wieder verstecken" : "👶 Auflösen"}</button>` : ""}<button class="btn rot klein" data-loesch="${id}">🗑 Löschen</button></div></div>`; }).join("")}</div>`
+        : `<div class="karte muted">Noch nichts freigegeben.</div>`;
+      if (tab === "qr") h += `<div class="karte" style="text-align:center"><h2>So kommen die TN rein</h2><p style="font-size:1.3rem"><b>${esc(url.replace(/^https?:\/\//, ""))}</b><br>Raum-Code: <span class="lv-code">${RAUM}</span></p><div id="qr" style="display:inline-block;margin:10px"></div>
+        <p class="klein muted">Der Code schützt die Fotos: Ohne Code sieht niemand etwas. Ein neuer Code eröffnet einen neuen, leeren Raum (die alten Beiträge bleiben beim alten Code).</p><button class="btn zwei" id="neuCode">🔄 Neuen Raum-Code erzeugen</button>
+        <div class="klein-h" style="margin-top:16px">Mitglieder</div><p>${Object.values(MIT).map(m => esc(m.name)).sort().join(" · ") || "–"}</p></div>`;
+      app.innerHTML = h + `</main>`; binde();
+      if (tab === "qr" && window.QRCode) { try { new QRCode($("#qr"), { text: url + "?code=" + RAUM, width: 200, height: 200 }); } catch (e) { } }
+    }
+    function binde() {
+      $$("[data-ltab]").forEach(b => b.onclick = () => { tab = b.dataset.ltab; male(); });
+      $$("[data-korr]").forEach(t => { t.oninput = () => { korr[t.dataset.korr] = t.value; }; t.onfocus = () => { tastZiel = t.dataset.korr; }; t.onblur = () => setTimeout(() => { if (!istTipp()) male(); }, 150); });
+      $$("[data-notiz]").forEach(t => { t.oninput = () => { notiz[t.dataset.notiz] = t.value; }; t.onblur = () => setTimeout(() => { if (!istTipp()) male(); }, 150); });
+      $$("[data-tz]").forEach(b => b.onclick = () => { const id = b.dataset.tz; tastZiel = tastZiel && tastZiel.split("|")[0] === id ? null : (EIN[id] && EIN[id].story ? id + "|0" : id); male(); });
+      verdrahteTastatur(app, () => tastZiel && $(`[data-korr="${tastZiel}"]`));
+      $$("[data-frei]").forEach(b => b.onclick = async () => {
+        const id = b.dataset.frei, x = EIN[id]; if (!x) return; b.disabled = true;
+        const post = { pid: x.pid, name: x.name, typ: x.typ, text: "", bild: x.bild || "", ts: x.ts || null, frei: TS() };
+        if (x.text) { const t = korr[id] !== undefined ? korr[id].trim() : x.text; post.text = t; if (t !== x.text) post.orig = x.text; }
+        if (x.story) { post.bild = ""; post.story = x.story.map((z, i) => { const k = id + "|" + i, t = korr[k] !== undefined ? korr[k].trim() : z.t; delete korr[k]; return t !== z.t ? { b: z.b, t, o: z.t } : { b: z.b, t }; }); }
+        if ((notiz[id] || "").trim()) post.notiz = notiz[id].trim().slice(0, 200);
+        try { await R(`frei/${id}`).set(post); await R(`eingang/${id}`).remove(); delete korr[id]; delete notiz[id]; toast("✅ Freigegeben"); } catch (e) { b.disabled = false; toast("Hat nicht geklappt."); }
+      });
+      $$("[data-weg]").forEach(b => b.onclick = () => { if (confirm("Beitrag ablehnen und löschen?")) R(`eingang/${b.dataset.weg}`).remove(); });
+      $$("[data-zeig]").forEach(b => b.onclick = () => R(`frei/${b.dataset.zeig}/zeigen`).set(!(FREI[b.dataset.zeig] || {}).zeigen));
+      $$("[data-loesch]").forEach(b => b.onclick = () => { if (confirm("Beitrag für alle löschen?")) R(`frei/${b.dataset.loesch}`).remove(); });
+      const nc = $("#neuCode"); if (nc) nc.onclick = async () => { if (!confirm("Wirklich einen neuen Raum eröffnen?")) return; await F.ref("netz/_info/code").remove(); location.reload(); };
+      const bk = $("#bKind"); if (bk) bk.onclick = () => { beamer = { art: "kind", i: 0 }; beamerMalen(); };
+      const ba = $("#bAlle"); if (ba) ba.onclick = () => { beamer = { art: "alle", i: 0 }; beamerMalen(); };
+      const bs = $("#bStory"); if (bs) bs.onclick = () => { beamer = { art: "story", i: 0 }; beamerMalen(); };
+    }
+    function beamerMalen() {
+      const L0 = Object.entries(FREI).filter(([, x]) => x && x.typ && (beamer.art === "alle" ? !["kind", "wochenende"].includes(x.typ) : beamer.art === "story" ? x.typ === "wochenende" : x.typ === "kind")).sort((a, b) => (Number(a[1].frei) || 0) - (Number(b[1].frei) || 0));
+      const L = L0.flatMap(([id, x]) => x.story ? x.story.map((z, i) => [id, Object.assign({}, x, { bild: z.b, text: z.t, nr: `Foto ${i + 1} von ${x.story.length}` })]) : [[id, x]]);
+      if (!L.length) { beamer = null; alert("Dazu ist noch nichts freigegeben."); return male(); }
+      beamer.i = Math.max(0, Math.min(beamer.i, L.length - 1)); const [id, x] = L[beamer.i], T = TYPEN[x.typ] || {}, kind = x.typ === "kind", tp = x.tipps || {};
+      const zaehl = {}; Object.values(tp).forEach(p => { zaehl[p] = (zaehl[p] || 0) + 1; }); const top = Object.entries(zaehl).sort((a, b) => b[1] - a[1]).slice(0, 5), nm = p => (MIT[p] || {}).name || "?";
+      app.innerHTML = `<div class="beamer"><div style="display:flex;justify-content:space-between;align-items:center"><h2 style="margin:0;font-size:clamp(24px,3vw,44px)">${T.e} ${kind && !x.zeigen ? "Wer ist das? <span class='fa'>این کیست؟</span>" : esc(x.name)}${x.nr ? ` <span style="font-size:.5em;opacity:.8">· ${x.nr}</span>` : ""}</h2><span style="font-size:1.3rem">${beamer.i + 1} / ${L.length}</span></div>
+        <div class="bild">${x.bild && x.bild !== "story" ? `<img src="${x.bild}">` : ""}</div>${x.text ? `<div class="txt">${esc(x.text)}</div>` : ""}
+        ${kind ? `<div style="font-size:1.4rem;margin-top:8px">${x.zeigen ? `👶 Das ist <b style="color:#e8c26a">${esc(x.name)}</b>! · Richtig geraten: ${Object.entries(tp).filter(([, v]) => v === x.pid).map(([p]) => esc(nm(p))).join(", ") || "niemand"}` : `📱 ${Object.keys(tp).length} Tipps · ${top.map(([p, n]) => `${esc(nm(p))} (${n})`).join(" · ")}`}</div>` : ""}
+        <div class="fuss"><button class="btn zwei" id="bZur">◀</button>${kind ? `<button class="btn" id="bAuf">${x.zeigen ? "🙈 Verstecken" : "👶 Auflösen"}</button>` : ""}<button class="btn" id="bVor">Weiter ▶</button><button class="btn rot" id="bEnde" style="margin-left:auto">✖ Beamer schließen</button></div></div>`;
+      $("#bZur").onclick = () => { beamer.i--; beamerMalen(); }; $("#bVor").onclick = () => { beamer.i++; beamerMalen(); }; $("#bEnde").onclick = () => { beamer = null; male(); };
+      const a = $("#bAuf"); if (a) a.onclick = () => R(`frei/${id}/zeigen`).set(!x.zeigen);
+    }
+  }
+  F.initFB();
+  window.NETZ_TEST = { TYPEN };
+  if (qs.get("leitung")) leitung(); else lernende();
+})();
+</script>
+</body>
+</html>

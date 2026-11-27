@@ -84,6 +84,46 @@
         "$id": {
           ".write": "auth != null || (!data.exists() && newData.child('text').isString() && newData.child('text').val().length <= 1500 && newData.child('status').val() === 'neu')"
         }
+      },
+      "netz": {
+        ".read": "auth != null",
+        ".write": "auth != null",
+        "$raum": {
+          "ok": {
+            ".read": true
+          },
+          "mitglieder": {
+            ".read": true,
+            "$pid": {
+              ".write": "root.child('farsi/netz/' + $raum + '/ok').val() === true && newData.child('name').isString() && newData.child('name').val().length <= 20"
+            }
+          },
+          "frei": {
+            ".read": true,
+            "$id": {
+              "reakt": {
+                "$pid": {
+                  ".write": "!newData.exists() || (newData.isString() && newData.val().length < 8)"
+                }
+              },
+              "kom": {
+                "$pid": {
+                  ".write": "!newData.exists() || (newData.isNumber() && newData.val() >= 0 && newData.val() < 20)"
+                }
+              },
+              "tipps": {
+                "$pid": {
+                  ".write": "newData.isString() && newData.val().length < 40"
+                }
+              }
+            }
+          },
+          "eingang": {
+            "$id": {
+              ".write": "!data.exists() && root.child('farsi/netz/' + $raum + '/ok').val() === true && newData.hasChildren(['pid', 'name', 'typ', 'bild', 'ts']) && newData.child('bild').isString() && newData.child('bild').val().length < 500000 && (!newData.child('text').exists() || newData.child('text').val().length <= 400)"
+            }
+          }
+        }
       }
     }
   }
