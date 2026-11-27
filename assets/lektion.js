@@ -130,7 +130,9 @@
     function zeige() {
       const f = fragen[i];
       let ersterVersuch = true;
-      const reihenfolge = f.fest ? f.optionen.map((o, j) => j) : mischen(f.optionen.map((o, j) => j));
+      // Regel: keine Muster bei richtigen Antworten – feste Reihenfolge nur für richtig/falsch
+      const nurRF = f.optionen.length === 2 && f.optionen.every(o => /^(richtig|falsch)$/i.test(String(o)));
+      const reihenfolge = (f.fest && nurRF) ? f.optionen.map((o, j) => j) : mischen(f.optionen.map((o, j) => j));
       el.innerHTML = `<div class="karte">
         ${k.titel ? `<h2 style="margin-top:0">${k.titel}</h2>` : ""}
         <div class="zaehler">Frage ${i + 1} von ${fragen.length}</div>

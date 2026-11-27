@@ -133,7 +133,7 @@
   const antwortText = (i, a) => { if (a == null || a === "") return "–"; if (i.typ === "paare") return i.paare.map((p, k) => `${p[0]} → ${teilText(i, k, (a || {})["k" + k])}`).join(" · "); if (i.typ === "luecke") return i.luecken.map((l, k) => `(${k + 1}) ${teilText(i, k, (a || {})["k" + k])}`).join(" · "); if (i.typ === "bauen") return Array.isArray(a) ? a.map(k => i.teile[k]).join(" ") : "–"; if (i.typ === "schreiben") return String(a); return i.o[a] != null ? i.o[a] : "–"; };
   const loesungText = i => i.typ === "paare" ? i.paare.map(p => p[0] + " → " + p[1]).join(" · ") : i.typ === "luecke" ? i.luecken.map((l, k) => `(${k + 1}) ${l.o[l.r]}`).join(" · ") : i.typ === "bauen" ? i.teile.join(" ") : i.typ === "schreiben" ? "(manuell)" : i.o[i.r];
   const istFa = (i, txt) => i.optFa || i.typ === "bauen" || i.typ === "paare" || i.typ === "luecke" || i.typ === "schreiben" || /[؀-ۿ]/.test(txt || "");
-  const ordnung = (i, pid) => i.fest ? i.o.map((_, k) => k) : mischen(i.o.map((_, k) => k), rng(pid + "|" + i.id));
+  const ordnung = (i, pid) => (i.fest && i.o.length === 2 && i.o.every(o => /^(richtig|falsch)$/i.test(String(o)))) ? i.o.map((_, k) => k) : mischen(i.o.map((_, k) => k), rng(pid + "|" + i.id));
   /* Auswertung einer Person */
   function auswerten(pid) {
     const E = AB()[pid] || {}, A = E.a || {}, bew = ((G && G.bewertung) || {})[pid] || {};
